@@ -447,7 +447,7 @@ In the following figure, the **Color Picker** shows a current color value of `rg
 https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#new-css-angle-visualization-tools
 -->
 
-The **Angle Clock** provides a GUI for changing <angle>s in CSS property values.
+The **Angle Clock** provides a GUI for changing the angle amounts in CSS property values.
 
 To open the **Angle Clock**:
 

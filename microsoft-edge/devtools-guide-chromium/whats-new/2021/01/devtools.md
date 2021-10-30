@@ -151,7 +151,7 @@ You now have a new way to open more tools in the Microsoft Edge DevTools.  After
 <!--  Title: Assistive technologies now announce position and count of CSS suggestions  -->
 <!--  Subtitle: CSS suggestions are now easier to navigate using screen readers -->
 
-When you edit CSS, you get a dropdown of features.  This feature was not available to users of assistive technologies, since it is announced in Microsoft Edge version 89.  A user of assistive technologies may now navigate CSS suggestions in the **Styles** pane.  In Microsoft Edge version 88 and earlier, assistive technology announced `Suggestion` as a user navigated through the list of suggestions when editing CSS in the **Styles** pane.  In Microsoft Edge version 89, a user of assistive technology now hears the position and count of the current suggestion.  Each suggestion is announced as the user navigates through the list of suggestions, such as Suggestion 3 of 5.  To learn more about writing CSS in the DevTools, navigate to [Change CSS][DevtoolsCssReferenceChangeCss].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1157329][CR1157329].
+When you edit CSS, you get a dropdown of features.  This feature was not available to users of assistive technologies, since it is announced in Microsoft Edge version 89.  A user of assistive technologies may now navigate CSS suggestions in the **Styles** pane.  In Microsoft Edge version 88 and earlier, assistive technology announced `Suggestion` as a user navigated through the list of suggestions when editing CSS in the **Styles** pane.  In Microsoft Edge version 89, a user of assistive technology now hears the position and count of the current suggestion.  Each suggestion is announced as the user navigates through the list of suggestions, such as Suggestion 3 of 5.  To learn more about writing CSS in the DevTools, see [CSS features reference][DevtoolsCssReferenceChangeCss].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1157329][CR1157329].
 
 To view a video that displays and reads aloud several suggestions with this experiment turned on, navigate to [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.
 
@@ -437,7 +437,7 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [DevtoolsWhatsNew85]: ../../2020/06/devtools.md "What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
 
 [DevtoolsAccessibilityReferenceViewContrastRatioTextElementColorPicker]: ../../../accessibility/color-picker.md "Test text-color contrast using the Color Picker | Microsoft Docs"
-[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md#change-css "Change CSS - CSS features reference | Microsoft Docs"
+[DevtoolsCssReferenceChangeCss]: ../../../css/reference.md "CSS features reference | Microsoft Docs"
 [DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
 [DevtoolsDeviceModeDualScreenFoldablesTestFoldableDualScreenDevices]: ../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
