@@ -190,7 +190,6 @@ On desktop operating systems, Microsoft Edge is commonly identified by the `Edg`
 | Desktop (Windows/Mac/Linux) | `Edg` |
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet) | `EdgA`|
-| EdgeHTML on Windows | `Edge` |
 
 
 <!-- ====================================================================== -->
