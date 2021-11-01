@@ -27,7 +27,7 @@ These are the default keyboard shortcuts for Microsoft Edge DevTools.
 
 Tooltips often show a keyboard shortcut.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
-See also [Customize keyboard shortcuts in DevTools](../customize/shortcuts.md).
+See also [Customize keyboard shortcuts](../customize/shortcuts.md).
 
 
 <!-- ====================================================================== -->
