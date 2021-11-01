@@ -251,8 +251,8 @@
                 - name: WebSQL
                   href: devtools-guide-chromium/storage/websql.md
     # Changes
-            - name: Changes*
-              href: devtools-guide-chromium/changes/index.md
+            # - name: Changes*
+            #   href: devtools-guide-chromium/changes/index.md
     # Console (Panel or Drawer)
             - name: Console
               items:
@@ -280,8 +280,8 @@
             - name: Coverage
               href: devtools-guide-chromium/coverage/index.md
     # Developer Resources
-            - name: Developer Resources*
-              href: devtools-guide-chromium/developer-resources/index.md
+            # - name: Developer Resources*
+            #   href: devtools-guide-chromium/developer-resources/index.md
     # Elements
             - name: Elements
               items:
@@ -311,11 +311,11 @@
                 - name: Issues tool overview
                   href: devtools-guide-chromium/issues/index.md
     # JavaScript Profiler
-            - name: JavaScript Profiler*
-              href: devtools-guide-chromium/javascript-profiler/index.md
+            # - name: JavaScript Profiler*
+            #   href: devtools-guide-chromium/javascript-profiler/index.md
     # Layers
-            - name: Layers*
-              href: devtools-guide-chromium/layers/index.md
+            # - name: Layers*
+            #   href: devtools-guide-chromium/layers/index.md
     # Lighthouse
             - name: Lighthouse
               items:
@@ -340,8 +340,8 @@
                 - name: Fix memory problems
                   href: devtools-guide-chromium/memory-problems/index.md
     # Memory Inspector
-            - name: Memory Inspector*
-              href: devtools-guide-chromium/memory-inspector/index.md
+            # - name: Memory Inspector*
+            #   href: devtools-guide-chromium/memory-inspector/index.md
     # Network
             - name: Network
               items:
@@ -395,8 +395,8 @@
             - name: Security
               href: devtools-guide-chromium/security/index.md
     # Sensors
-            - name: Sensors*
-              href: devtools-guide-chromium/sensors/index.md
+            # - name: Sensors*
+            #   href: devtools-guide-chromium/sensors/index.md
     # Sources
             - name: Sources
               items:
@@ -413,14 +413,14 @@
                 - name: Disable JavaScript
                   href: devtools-guide-chromium/javascript/disable.md
     # WebAudio
-            - name: WebAudio*
-              href: devtools-guide-chromium/webaudio/index.md
+            # - name: WebAudio*
+            #   href: devtools-guide-chromium/webaudio/index.md
     # WebAuthn
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
     # Welcome
-            - name: Welcome*
-              href: devtools-guide-chromium/welcome/index.md
+            # - name: Welcome*
+            #   href: devtools-guide-chromium/welcome/index.md
         - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
 # =============================================================================
