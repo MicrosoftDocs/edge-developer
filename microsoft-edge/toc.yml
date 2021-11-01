@@ -252,7 +252,7 @@
                   href: devtools-guide-chromium/storage/websql.md
     # Changes
             # - name: Changes*
-            #   href: devtools-guide-chromium/changes/index.md
+            #   href: devtools-guide-chromium/changes/changes-tool.md
     # Console (Panel or Drawer)
             - name: Console
               items:
@@ -281,7 +281,7 @@
               href: devtools-guide-chromium/coverage/index.md
     # Developer Resources
             # - name: Developer Resources*
-            #   href: devtools-guide-chromium/developer-resources/index.md
+            #   href: devtools-guide-chromium/developer-resources/developer-resources-tool.md
     # Elements
             - name: Elements
               items:
@@ -312,10 +312,10 @@
                   href: devtools-guide-chromium/issues/index.md
     # JavaScript Profiler
             # - name: JavaScript Profiler*
-            #   href: devtools-guide-chromium/javascript-profiler/index.md
+            #   href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
     # Layers
             # - name: Layers*
-            #   href: devtools-guide-chromium/layers/index.md
+            #   href: devtools-guide-chromium/layers/layers-tool.md
     # Lighthouse
             - name: Lighthouse
               items:
@@ -341,7 +341,7 @@
                   href: devtools-guide-chromium/memory-problems/index.md
     # Memory Inspector
             # - name: Memory Inspector*
-            #   href: devtools-guide-chromium/memory-inspector/index.md
+            #   href: devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
     # Network
             - name: Network
               items:
@@ -352,11 +352,11 @@
                 - name: Inspect network activity
                   href: devtools-guide-chromium/network/index.md
     # Network conditions
-            - name: Network conditions
-              href: devtools-guide-chromium/network-conditions/index.md
+            # - name: Network conditions*
+            #   href: devtools-guide-chromium/network-conditions/network-conditions-tool.md
     # Network request blocking
-            - name: Network request blocking
-              href: devtools-guide-chromium/network-request-blocking/index.md
+            # - name: Network request blocking*
+            #   href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
     # Performance
             - name: Performance
               items:
@@ -378,7 +378,7 @@
               href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
     # Quick source
             # - name: Quick source*
-            #   href: devtools-guide-chromium/quick-source/index.md
+            #   href: devtools-guide-chromium/quick-source/quick-source-tool.md
     # Rendering
             - name: Remote devices
               href: devtools-guide-chromium/remote-debugging/local-server.md
@@ -396,7 +396,7 @@
               href: devtools-guide-chromium/security/index.md
     # Sensors
             # - name: Sensors*
-            #   href: devtools-guide-chromium/sensors/index.md
+            #   href: devtools-guide-chromium/sensors/sensors-tool.md
     # Sources
             - name: Sources
               items:
@@ -414,13 +414,13 @@
                   href: devtools-guide-chromium/javascript/disable.md
     # WebAudio
             # - name: WebAudio*
-            #   href: devtools-guide-chromium/webaudio/index.md
+            #   href: devtools-guide-chromium/webaudio/webaudio-tool.md
     # WebAuthn
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
     # Welcome
             # - name: Welcome*
-            #   href: devtools-guide-chromium/welcome/index.md
+            #   href: devtools-guide-chromium/welcome/welcome-tool.md
         - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
 # =============================================================================
