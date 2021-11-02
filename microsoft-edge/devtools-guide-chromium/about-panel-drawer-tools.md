@@ -60,5 +60,5 @@ For an overview of all of the Panel tools, Drawer tools, and a few other tools s
 
 1.  Type the name of the tool, and then select the tool.
 
-    * If the tool has "Panel" next to it in the Command Menu, the tool opens in the main toolbar at the top of DevTools.
-    * If the tool has "Drawer" next to it in the Command Menu, the tool opens in the Drawer toolbar.
+    * If the tool has **Panel** next to it in the Command Menu, the tool opens in the main toolbar at the top of DevTools.
+    * If the tool has **Drawer** next to it in the Command Menu, the tool opens in the Drawer toolbar.

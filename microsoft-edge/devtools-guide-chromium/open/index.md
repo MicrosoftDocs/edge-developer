@@ -67,7 +67,7 @@ To open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run
 <!-- ====================================================================== -->
 ## Open the previous panel
 
-To jump to the previously open panel, select `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
+To jump to the previously open panel, press `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
 
 <!-- ====================================================================== -->
 ## Auto-open DevTools on every new tab
