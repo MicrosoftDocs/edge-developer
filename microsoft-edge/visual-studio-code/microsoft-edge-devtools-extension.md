@@ -249,7 +249,7 @@ You can select from a list of different devices to emulate in the screencast nex
 
 :::image type="content" source="./media/edge-devtools-for-vscode-device-list.msft.png" alt-text="The list of devices that can be emulated open in the screencast of the extension" lightbox="./media/edge-devtools-for-vscode-device-list.msft.png":::
 
-If the device you choose to emulate is a touch device, the screencast automatically switches to the touchscreen mode. You can rotate the orientation of the simulated device by clicking the __ button next to the list.
+If the device you choose to emulate is a touch device, the screencast automatically switches to the touchscreen mode. You can rotate the orientation of the simulated device by clicking the button next to the list.
 
 :::image type="content" source="./media/edge-devtools-for-vscode-simulated-iphone.msft.png" alt-text="The screencast showing the current document in an emulated iPhone 5 in the correct size and with emulated touch interface." lightbox="./media/edge-devtools-for-vscode-simulated-iphone.msft.png":::
 
