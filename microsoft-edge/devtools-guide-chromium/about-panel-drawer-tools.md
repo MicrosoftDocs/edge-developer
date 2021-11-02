@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # About Panel and Drawer tools
 
-The **More Tools** (`+`) menu appears in two places:
+The **More Tools** (**+**) menu appears in two places:
 
 *  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
 *  On the **Drawer** toolbar (where _Drawer_ tools usually go).
@@ -26,7 +26,7 @@ For an overview of all of the Panel tools, Drawer tools, and a few other tools s
 <!-- ====================================================================== -->
 ## Opening any tool on the main toolbar at the top of DevTools
 
-*  On the main toolbar at the top of DevTools, click **More Tools** (`+`) and then select the tool.
+*  On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select the tool.
 
 
 <!-- ====================================================================== -->
@@ -34,23 +34,19 @@ For an overview of all of the Panel tools, Drawer tools, and a few other tools s
 
 1.  When DevTools has focus, press **Esc** to show or hide the Drawer.
 
-1.  On the Drawer toolbar, click **More Tools** (`+`) and then select the tool.
+1.  On the Drawer toolbar, click **More Tools** (**+**) and then select the tool.
 
 
 <!-- ====================================================================== -->
 ## Moving a tool from the Drawer toolbar to the main Toolbar
 
-1.  On the Drawer toolbar, click the `x` on the tool's tab to close the tool.
-
-1.  On the main toolbar at the top of DevTools, click **More Tools** (`+`), and then select the tool.
+*  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**.
 
 
 <!-- ====================================================================== -->
 ## Moving a tool from the main toolbar to the drawer Toolbar
 
-1.  On the main toolbar at top of DevTools, click the `x` on the tool's tab to close the tool.
-
-1.  On the Drawer toolbar, click **More Tools** (`+`), and then select the tool.
+*  On the main toolbar, right-click the tool's tab, and then select **Move to bottom**.
 
 
 <!-- ====================================================================== -->
