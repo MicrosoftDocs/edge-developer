@@ -20,7 +20,7 @@ In DevTools, use any of the following ways to open the **Changes** tool.  The **
 <!-- ====================================================================== -->
 ## Open the Changes tool by right-clicking in a changed file
 
-In the **Sources** tool, right-click any file that shows that it was changed, and then select **Local modifications**:
+In the [Sources](../sources/index.md) tool, right-click any file that shows that it was changed, and then select **Local modifications**:
 
 :::image type="content" source="../media/changes-tool/changes-tool-from-sources-reduced.msft.png" alt-text="To open the Changes tool, right-click a modified file in the Sources tool, then select the 'Local Modifications' command." lightbox="../media/changes-tool/changes-tool-from-sources.msft.png":::
 
@@ -64,15 +64,13 @@ Each modified file is listed in the side pane.  Selecting a file shows the modif
 | Added line | Each new line has a `+` in front of it and is colored green. |
 | Changed line | An adjacent pair of lines, with a `-` line and then a `+` line. |
 
-You can also see the changes represented in the two columns of line numbers (old then new).
+Changes are represented as insertion or deletion of individual lines of code, in the two columns of line numbers.  The left column represents line numbers in the old file, and the right column represents lines numbers in the new file.
 
 
 <!-- ====================================================================== -->
 ## Open a changed file in the Sources tool
 
-Clicking a modified line in the **Changes** tool opens the file in the **Sources** tool, scrolled to the line in the original file.
-
-You also get an overview <!-- in Sources tool? move this sentence into section "Interpret added lines, removed lines, and differences in a line"? --> of any insertions and deletions that you made in the current file.
+Clicking a modified line in the **Changes** tool opens the file in the [Sources](../sources/index.md) tool, scrolled to the modified line.
 
 
 <!-- ====================================================================== -->
