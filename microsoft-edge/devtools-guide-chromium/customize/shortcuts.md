@@ -1,6 +1,6 @@
 ---
 description: Customize keyboard shortcuts, including matching shortcuts from Visual Studio Code.
-title: Customize keyboard shortcuts in DevTools
+title: Customize keyboard shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 03/10/2021
@@ -8,11 +8,11 @@ ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcuts, keyboard, visual studio code
 ---
-# Customize keyboard shortcuts in DevTools
+# Customize keyboard shortcuts
 
 In the **Shortcuts** page of **Settings**, you can view the defined shortcuts for Microsoft Edge DevTools, define your own shortcut for a specific action, or use a preset to match the default shortcuts from Microsoft Visual Studio Code.
 
-For an article listing all the default shortcut settings, see [Microsoft Edge DevTools keyboard shortcuts][DevToolsShortcuts].  See also [Customize DevTools][DevToolsCustomizeSettings].
+For the default shortcut settings, see [Keyboard shortcuts][DevToolsShortcuts].  See also [Customize DevTools][DevToolsCustomizeSettings].
 
 
 <!-- ====================================================================== -->
