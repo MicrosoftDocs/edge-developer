@@ -26,7 +26,7 @@ Features:
 *  [Web Share](./how-to/share.md#sharing-content)
 *  [Share Target](./how-to/share.md#receiving-shared-content)
 
-:::image type="content" source="./media/webboard.png" alt-text="The Webboard drawing app." lightbox="./media/webboard.png":::
+:::image type="content" source="./media/webboard-reduced.png" alt-text="The Webboard drawing app." lightbox="./media/webboard.png":::
 
 
 <!-- ====================================================================== -->
