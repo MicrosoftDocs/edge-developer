@@ -29,7 +29,7 @@ The `password` input type in Microsoft Edge includes a **password reveal** contr
    :::column-end:::
 :::row-end:::
 
-By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
+By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
 
 
 <!-- ====================================================================== -->

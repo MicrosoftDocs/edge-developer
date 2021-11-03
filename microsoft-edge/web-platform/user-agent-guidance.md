@@ -27,7 +27,7 @@ This article describes the methods Microsoft Edge supports for retrieving user a
 <!-- ====================================================================== -->
 ## Feature detection
 
-Microsoft recommends [detecting if a feature is supported][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] in your browser whenever possible instead of detecting the browser.
+Microsoft recommends [detecting if a feature is supported](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) in your browser whenever possible instead of detecting the browser.
 
 If you must detect browsers, Microsoft recommends using client hints as follows.
 
@@ -37,7 +37,7 @@ If you must detect browsers, Microsoft recommends using client hints as follows.
 
 Microsoft Edge supports User-Agent Client Hints starting with version 90.
 
-User-Agent Client Hints is a cleaner, more privacy-preserving way to access browser information such as browser name, version number, platform, and more. Soon the User-Agent string will be frozen and deprecated by various browsers. For example, the Chrome Platform Status site describes the change in [Feature: Reduce User-Agent string information][ReduceUserAgentStringInformation].
+User-Agent Client Hints is a cleaner, more privacy-preserving way to access browser information such as browser name, version number, platform, and more. Soon the User-Agent string will be frozen and deprecated by various browsers. For example, the Chrome Platform Status site describes the change in [Feature: Reduce User-Agent string information](https://www.chromestatus.com/feature/5704553745874944).
 
 Employ User-Agent Client Hints when you want to:
 - Determine if new browser activity is from the expected user.
@@ -47,12 +47,12 @@ Do not use User-Agent Client Hints to:
 - Block *unsupported* browsers.
 - Restrict access to features on your site.
 
-For more information, navigate to the specification at [W3C Community Draft Report | User-Agent Client Hints][W3CCommunityDraftReportUserAgentClientHints].
+For more information, navigate to the specification at [W3C Community Draft Report | User-Agent Client Hints](https://wicg.github.io/ua-client-hints/).
 
 
 ### User-Agent Client Hints HTTPS header
 
-When Microsoft Edge sends an HTTPS request to a server, it sends a set of low entropy User-Agent Client Hints headers. For more information, navigate to [Low entropy hint table][LowEntropyHintTable]. If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
+When Microsoft Edge sends an HTTPS request to a server, it sends a set of low entropy User-Agent Client Hints headers. For more information, navigate to [Low entropy hint table](https://wicg.github.io/client-hints-infrastructure/#low-entropy-table). If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
 
 By default, Microsoft Edge sends the `Sec-CH-UA`, `Sec-CH-UA-Mobile`, and `Sec-CH-UA-Platform` request headers in the following format.
 
@@ -109,7 +109,7 @@ To receive the following response.
    uaFullVersion: "92.0.866.0"}
 ```
 
-For more information, navigate to [getHighEntropyValues()][GithubWicgUaClientHintsGethighentropyvalues].
+For more information, navigate to [getHighEntropyValues()](https://wicg.github.io/ua-client-hints#getHighEntropyValues).
 
 ### platformVersion Hint
 The operating system version token in the `User-Agent` header hasn't been updated for Windows 11, and still reports `Windows NT 10.0`.
@@ -120,7 +120,7 @@ To distinguish between Windows 10 and Windows 11, request the `platformVersion` 
 
 ### User-Agent Client Hints suggested use
 
-Combining User-Agent Client Hints with [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] is an effective way to deliver compatible web content. Microsoft recommends using this pattern to:
+Combining User-Agent Client Hints with [feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) is an effective way to deliver compatible web content. Microsoft recommends using this pattern to:
 * Improve code maintainability.
 * Reduce code fragility.
 * Reduce code breakage from changes to the User-Agent String.
@@ -142,7 +142,7 @@ function isChromium() {
 
 Use the above method to avoid hard-coding checks for brands at specific indices. Display orders of brand names can change over time.
 
-If you cannot use [feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection], don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`. [Feature detection][MdnLearnToolsTestingCrossBrowserTestingFeatureDetection] may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
+If you cannot use [feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection), don't use a hardcoded list of known Chromium-based browsers for verification. Examples of hardcoded browser names include `Microsoft Edge` and `Google Chrome`. [Feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) may not be available because a fix for a Chromium bug in later versions must be avoided and the affected browsers are difficult to detect.
 
 
 <!-- ====================================================================== -->
@@ -172,7 +172,7 @@ The response value from `navigator.userAgent` method uses the following format.
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4501.0 Safari/537.36 Edg/91.0.866.0"
 ```
 
-Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens][WindowsBlogsMsedgedev20171005MicrosoftEdgeIosAndroidDeveloper] used for iOS and Android.
+Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer) used for iOS and Android.
 
 
 <!-- ====================================================================== -->

@@ -17,7 +17,7 @@ Using JavaScript in WebView2 controls allows you to customize native apps to mee
 <!-- ====================================================================== -->
 ## Before you begin
 
-This article assumes that you already have a working project.  If you don't have a project, and want to follow along, see the [WebView2 get started guides][Webview2MainGetStarted].
+This article assumes that you already have a working project.  If you don't have a project, and want to follow along, see the [WebView2 get started guides](../index.md#get-started).
 
 
 <!-- ====================================================================== -->
@@ -27,8 +27,8 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 
 | API  | Description  |
 |:--- |:--- |
-| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model (DOM) is created. |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
+| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | Runs when the Document Object Model (DOM) is created. |
 
 
 <!-- ====================================================================== -->
@@ -118,10 +118,10 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 get started guides][Webview2MainGetStarted]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference][Webview2ApiReference]
-*  [See also][Webview2MainNextSteps] in _Introduction to Microsoft Edge WebView2_.
+*  [WebView2 get started guides](../index.md#get-started)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](../webview2-api-reference.md)
+*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ====================================================================== -->

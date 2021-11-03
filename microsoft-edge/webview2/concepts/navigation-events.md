@@ -13,7 +13,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
-Navigation events run when specific asynchronous actions occur to the content displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change using `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For a good example of navigation events, navigate to [WebView2 Get Started guide][Webview2IndexGetStarted].
+Navigation events run when specific asynchronous actions occur to the content displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change using `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For a good example of navigation events, navigate to [WebView2 Get Started guide](../index.md#get-started).
 
 <!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->
 
@@ -55,10 +55,10 @@ To monitor or cancel navigation events inside subframes in a WebView2 instance, 
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 Get Started Guides][Webview2IndexGetStarted]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
+*  [WebView2 Get Started Guides](../index.md#get-started)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ====================================================================== -->

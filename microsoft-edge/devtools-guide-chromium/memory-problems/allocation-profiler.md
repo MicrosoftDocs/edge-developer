@@ -49,7 +49,7 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 
 Complete the following actions to begin using **Allocation instrumentation on timeline**.
 
-1.  [Open the DevTools][DevtoolsOpenIndex].
+1.  [Open the DevTools](../open/index.md).
 1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.
 1.  Start recording.
 
@@ -84,7 +84,7 @@ Choosing on a specific object in the heap shows the retaining tree in the bottom
 <!-- ====================================================================== -->
 ## View memory allocation by function
 
-You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].
+You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function](./index.md#investigate-memory-allocation-by-function).
 
 
 <!-- ====================================================================== -->
@@ -101,11 +101,11 @@ You are able to view memory allocation by JavaScript function.  For more informa
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

@@ -13,7 +13,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
-The WebView2 control is based on the [Component Object Model (COM)][WindowsWin32ComTheComponentObjectModel] and must run on a [Single Threaded Apartments (STA)][WindowsWin32ComSingleThreadedApartments] thread.
+The WebView2 control is based on the [Component Object Model (COM)](/windows/win32/com/the-component-object-model) and must run on a [Single Threaded Apartments (STA)](/windows/win32/com/single-threaded-apartments) thread.
 
 
 <!-- ====================================================================== -->
@@ -153,10 +153,10 @@ private async void Button_Click(object sender, EventArgs e)
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 Get Started Guides][Webview2IndexGetStarted]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [See also][Webview2IndexNextSteps] - in _Introduction to Microsoft Edge WebView2_.
+*  [WebView2 Get Started Guides](../index.md#get-started)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [See also](../index.md#see-also) - in _Introduction to Microsoft Edge WebView2_.
 
 
 <!-- ====================================================================== -->

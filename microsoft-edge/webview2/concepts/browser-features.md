@@ -37,7 +37,7 @@ The following table displays the WebView2 features that differ from the Microsof
 *   **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
 
 > [!NOTE]
-> This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].
+> This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, navigate to [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
 
 | Feature | Default state | Configurable | Details |
 |:--- |:--- |:--- | :--- |
@@ -180,7 +180,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |
 
 > [!Note]
-> To customize any of the keys individually, use the [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] event.
+> To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
 
 
 <!-- ====================================================================== -->

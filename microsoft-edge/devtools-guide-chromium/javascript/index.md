@@ -33,7 +33,7 @@ Finding a series of actions that consistently reproduce a bug is always the firs
 
 1.  Choose the following **Open Demo** link and open the webpage in a new tab.  To open the demo in a new tab, select and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then choose **Open Demo**.
 
-    [Open Demo][OpenDebugJSDemo]
+    [Open Demo](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html)
 
 1.  Enter `5` in the **Number 1** text box.
 1.  Enter `1` in the **Number 2** text box.
@@ -230,16 +230,16 @@ This article showed two ways to set breakpoints.  DevTools also provides ways to
 *   Breakpoints on caught or uncaught exceptions.
 *   XHR breakpoints that are triggered when the requested URL matches a substring that you provide.
 
-For more information about when and how to use each type, navigate to [Pause your code with breakpoints][DevToolsJavscriptBreakpoints].
+For more information about when and how to use each type, navigate to [Pause your code with breakpoints](./breakpoints.md).
 
-A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevToolsJavascriptReferenceStepThroughCode] in the "Use the debugger features" article.
+A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code](./reference.md#step-through-code) in the "Use the debugger features" article.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
-*  [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
+*  [Use the debugger features](./reference.md) - Using the UI of the debugger in the Sources tool.
+*  [Sources tool overview](../sources/index.md) - Introduces the JavaScript debugger and code editor.
 
 
 <!-- ====================================================================== -->
@@ -255,11 +255,11 @@ A couple of code stepping controls aren't explained in this article.  For more i
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

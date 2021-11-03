@@ -25,13 +25,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
-To learn the basics, navigate to [Get Started with Viewing and Changing CSS][DevToolsCSSGetStarted].
+To learn the basics, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->
 ## Choose an element
 
-The **Elements** tool of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  For a tutorial, navigate to [View the CSS for an element][DevToolsCSSGetStartedTutorial].
+The **Elements** tool of DevTools lets you view or change the CSS of one element at a time.  The selected element is highlighted in the **DOM Tree**.  The styles of the element are shown in the **Styles** pane.  For a tutorial, navigate to [View the CSS for an element](../css/index.md#view-the-css-for-an-element).
 
 > [!NOTE]
 > In the following figure, the `h1` element that is highlighted in the **DOM Tree** is the selected element.  On the right, the styles of the element are shown in the **Styles** pane.  On the left, the element is highlighted in the viewport, but only because the mouse is currently hovering over it in the **DOM Tree**.
@@ -55,7 +55,7 @@ Use one the following actions to select an element.
 
 In the **Styles** pane, choose the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.
 
-If the stylesheet is minified, choose the **Format** (![Format](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, navigate to [Reformat a minified JavaScript file with pretty-print][DevToolsJavascriptReferenceFormat].
+If the stylesheet is minified, choose the **Format** (![Format](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, navigate to [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
 > [!NOTE]
 > In the following figure, after you choose `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.
@@ -95,7 +95,7 @@ Check the **Show All** checkbox in the **Computed** panel.  Navigate to [View on
 
 ### View the box model for an element
 
-To view [the box model][MDNBoxModel] of an element, navigate to the **Styles** panel.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
+To view [the box model](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS/Box_model) of an element, navigate to the **Styles** panel.  If your DevTools window is narrow, the **Box Model** diagram is at the bottom of the panel.
 
 Choose and edit on a value to change a value.
 
@@ -142,13 +142,13 @@ Complete the following actions to toggle a pseudo-class like `:active`, `:focus`
    Toggle the `:hover` pseudo-class
 :::image-end:::
 
-For an interactive tutorial, navigate to [Add a pseudostate to a class][DevToolsCSSGetStartedAddPseudoState].
+For an interactive tutorial, navigate to [Add a pseudostate to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
 ### View a page in print mode
 
 Complete the following actions to view a page in print mode.
 
-1.  [Open the Command Menu][DevToolsCommandMenu].
+1.  [Open the Command Menu](../command-menu/index.md).
 1.  Start typing `Rendering` and select `Show Rendering`.
 1.  For the **Emulate CSS Media** dropdown, choose **print**.
 
@@ -156,7 +156,7 @@ Complete the following actions to view a page in print mode.
 
 The **Coverage** tool shows you what CSS a page actually uses.
 
-1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) while DevTools is in focus to [open the Command Menu][DevToolsCommandMenu].
+1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) while DevTools is in focus to [open the Command Menu](../command-menu/index.md).
 1.  Start typing `coverage` and choose **Show Coverage**.  The **Coverage** tool appears.
 
     :::row:::
@@ -189,7 +189,7 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
 ### Force print preview mode
 
-Navigate to [Force DevTools into Print Preview mode][DevToolsCssPrintPreview].
+Navigate to [Force DevTools into Print Preview mode](../css/print-preview.md).
 
 
 <!-- ====================================================================== -->
@@ -204,7 +204,7 @@ The order of declarations affects how an element is styled, use the following li
 *   [Add a inline declaration](#add-an-inline-declaration).  Equivalent to adding a `style` attribute to the HTML of an element.
 *   [Add a declaration to a style rule](#add-a-declaration-to-a-style-rule).
 
-**What workflow should you use?** For most scenarios, you probably want to use the inline declaration workflow.  Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.  For more information about specificity, navigate to [Selector Types][MDNSelectorTypes].
+**What workflow should you use?** For most scenarios, you probably want to use the inline declaration workflow.  Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.  For more information about specificity, navigate to [Selector Types](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types).
 
 If you are debugging any styles of the element and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.
 
@@ -525,7 +525,7 @@ The following figure and list descries of each of the UI elements of the **Color
       **Color Palette Switcher**
    :::column-end:::
    :::column span="2":::
-      Toggle between the [Material Design palette][MaterialDesignColorSystem], a custom palette, or a page colors palette.  DevTools generates the page color palette based on the colors that it finds in your stylesheets.
+      Toggle between the [Material Design palette](https://material.io/guidelines/style/color.html#color-color-palette), a custom palette, or a page colors palette.  DevTools generates the page color palette based on the colors that it finds in your stylesheets.
    :::column-end:::
 :::row-end:::
 
@@ -560,11 +560,11 @@ When you open the **Color Picker**, the **Eyedropper** (![Eyedropper](../media/e
 [MDNSelectorTypes]: https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types "Selector Types - Specificity | MDN"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

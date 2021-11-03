@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcut
 
 In the **Shortcuts** page of **Settings**, you can view the defined shortcuts for Microsoft Edge DevTools, define your own shortcut for a specific action, or use a preset to match the default shortcuts from Microsoft Visual Studio Code.
 
-For the default shortcut settings, see [Keyboard shortcuts][DevToolsShortcuts].  See also [Customize DevTools][DevToolsCustomizeSettings].
+For the default shortcut settings, see [Keyboard shortcuts](../shortcuts/index.md).  See also [Customize DevTools](./index.md#settings).
 
 
 <!-- ====================================================================== -->
@@ -20,8 +20,8 @@ For the default shortcut settings, see [Keyboard shortcuts][DevToolsShortcuts]. 
 
 To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent action in Visual Studio Code:
 
-1.  [Open DevTools][DevtoolsOpenMain], such as by selecting `F12`.
-1.  Open [Settings][DevToolsCustomizeSettings], such as by selecting the gear icon in the main toolbar, or by selecting `Shift`+`?`.
+1.  [Open DevTools](../open/index.md), such as by selecting `F12`.
+1.  Open [Settings](./index.md#settings), such as by selecting the gear icon in the main toolbar, or by selecting `Shift`+`?`.
 1.  Select the **Shortcuts** settings page.
 1.  In the upper right, in the **Match shortcuts from preset** dropdown, select **Visual Studio Code** instead of **DevTools (Default)**.
 
@@ -33,15 +33,15 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 ### See also
 
-* [Microsoft Visual Studio Code][VisualStudioCode]
-* [Visual Studio Code Keyboard shortcuts for Windows][VisualStudioCodeShortcutsKeyboardWindows] (PDF file)
+* [Microsoft Visual Studio Code](https://code.visualstudio.com)
+* [Visual Studio Code Keyboard shortcuts for Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) (PDF file)
 
 
 <!-- ====================================================================== -->
 ## Edit the keyboard shortcut for a DevTools action
 
-1.  [Open DevTools][DevtoolsOpenMain], such as by selecting `F12`.
-1.  Open [Settings][DevToolsCustomizeSettings], such as by selecting the gear icon in the main toolbar, or by selecting `Shift`+`?`.
+1.  [Open DevTools](../open/index.md), such as by selecting `F12`.
+1.  Open [Settings](./index.md#settings), such as by selecting the gear icon in the main toolbar, or by selecting `Shift`+`?`.
 1.  Select the **Shortcuts** settings page.
 1.  Select the action you want to customize.  For example, in the **Debugger** section, select the **Pause script execution** action.
 1.  Select the **Edit** (![EditKeyboardShortcut](../media/edit-keyboard-shortcut-icon.msft.png)) icon.

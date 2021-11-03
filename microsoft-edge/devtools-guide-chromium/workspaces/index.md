@@ -28,9 +28,9 @@ This tutorial provides hands-on practice in setting up and using a Workspace.  A
 > [!IMPORTANT]
 > **Prerequisites**: Before beginning this tutorial, you should know how to perform the following actions.
 >
-> *   [Use html, CSS, and JavaScript to build a web page][MDNWebGettingStarted]
-> *   [Use DevTools to make basic changes to CSS][DevToolsCssIndex]
-> *   [Run a local HTTP web server][MDNSimpleLocalHTTPServer]
+> *   [Use html, CSS, and JavaScript to build a web page](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web)
+> *   [Use DevTools to make basic changes to CSS](../css/index.md)
+> *   [Run a local HTTP web server](https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server)
 
 
 <!-- ====================================================================== -->
@@ -50,7 +50,7 @@ With Workspaces enabled, the CSS changes that you make within DevTools are saved
 
 If you are using a modern framework, it probably transforms your source code from a format that is easy to maintain into a format that is optimized to run as quickly as possible.
 
-Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps][TreehouseBlogSourceMaps].  But there is a lot of variation between frameworks over how each framework uses source maps.  Devtools doesn't support all of the variations.
+Workspaces is usually able to map the optimized code back to your original source code with the help of [source maps](https://blog.teamtreehouse.com/introduction-source-maps).  But there is a lot of variation between frameworks over how each framework uses source maps.  Devtools doesn't support all of the variations.
 
 Workspaces is known to not work with the following framework.
 
@@ -74,7 +74,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
 
 ### Set up the demo
 
-1.  [Open the demo][GlitchWorkspacesDemo].  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->
+1.  [Open the demo](https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0).  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->
 
     :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="A Glitch project" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
        A Glitch project
@@ -109,7 +109,7 @@ Complete the following actions, to get hands-on experience with Workspaces.
        :::column-end:::
     :::row-end:::
 
-1.  Open a tab in Microsoft Edge and navigate to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number][WikiPortURLs] may be different.
+1.  Open a tab in Microsoft Edge and navigate to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        The demo
@@ -193,9 +193,9 @@ The DOM tree is not html.
 > [!NOTE]
 > This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.
 
-*   The tree of nodes that are displayed on the **Elements** tool represents the [DOM][MDNWebAPIsDOM] of the page.
+*   The tree of nodes that are displayed on the **Elements** tool represents the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) of the page.
 *   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.
-*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`][MDNCSSContent] property.
+*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`](https://developer.mozilla.org/docs/Web/CSS/content) property.
 *   The browser eventually uses the DOM to determine what content it should present to browser users.
 *   Therefore, the final state of the webpage displayed for users may be very different from the html that the browser fetched.
 *   This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.
@@ -301,11 +301,11 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

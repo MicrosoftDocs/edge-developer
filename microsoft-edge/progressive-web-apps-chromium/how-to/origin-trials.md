@@ -35,7 +35,7 @@ To turn experimental features on or off:
 
 Microsoft Edge sometimes uses origin trials to test features for specific domains or websites. You may want to use an origin trial for your website to apply a specific feature. If you're a website owner, you can enroll in an origin trial. An origin trial provides features to a percentage of Microsoft Edge users who visit your website.
 
-For more information about Origin Trials, see [Microsoft Edge Origin Trials Developer Console][MicrosoftDeveloperMicrosoftEdgeOriginTrials].
+For more information about Origin Trials, see [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 
 <!-- ====================================================================== -->
@@ -45,10 +45,10 @@ The following list describes experimental web app features that are available to
 
 | Feature | Platform |
 |:--- |:--- |
-| [URI Protocol Handling][FeatureProtocolHandling] | Windows and Linux |
-| [URL Link Handling][FeatureUrlHandling] | Windows |
-| [Window Controls Overlay for Desktop Apps][FeatureWindowControlsOverlay] | All |
-| [File Handling][FeatureFileHandling] | All Desktop |
+| [URI Protocol Handling](./handle-protocols.md) | Windows and Linux |
+| [URL Link Handling](./handle-urls.md) | Windows |
+| [Window Controls Overlay for Desktop Apps](./window-controls-overlay.md) | All |
+| [File Handling](./handle-files.md) | All Desktop |
 
 <!-- Links -->
 

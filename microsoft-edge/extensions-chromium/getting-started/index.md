@@ -58,7 +58,7 @@ The following list outlines helpful information as it relates to the architectur
 <!-- ====================================================================== -->
 ## Next steps
 
-For information on getting started with your extension, navigate to [Create an extension tutorial][CreateAnExtensionPart1].
+For information on getting started with your extension, navigate to [Create an extension tutorial](./part1-simple-extension.md).
 
 <!-- links -->
 

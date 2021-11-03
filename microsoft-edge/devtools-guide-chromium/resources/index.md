@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide teaches you how to use Microsoft Edge DevTools to view the resources of a web page.  Resources are the files that a page needs in order to display correctly.  Examples of resources include CSS, JavaScript, and HTML files, as well as images.
 
-This guide assumes that you are familiar with the basics of [web development][MDNLearnWebDevelopment] and [Microsoft Edge DevTools][MicrosoftEdgeDevTools].
+This guide assumes that you are familiar with the basics of [web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).
 
 
 <!-- ====================================================================== -->
@@ -47,7 +47,7 @@ When you know the name of the resource that you want to inspect, the **Command M
 
 ### Open resources in the Network tool
 
-Navigate to [Inspect the details of a resource][DevtoolsNetworkInspectDetailsResource].
+Navigate to [Inspect the details of a resource](../network/index.md#inspect-the-details-of-the-resource).
 
 :::image type="complex" source="../media/resources-network-response.msft.png" alt-text="Inspect a resource in the Network tool" lightbox="../media/resources-network-response.msft.png":::
    Inspect a resource in the **Network** tool
@@ -67,7 +67,7 @@ The [Browse resources](#browse-resources) section below shows you how to view re
 
 ### Browse resources in the Network panel
 
-Navigate to [Log network activity][DevtoolsNetworkLogActivity].
+Navigate to [Log network activity](../network/index.md#log-network-activity).
 
 :::image type="complex" source="../media/resources-network-resources.msft.png" alt-text="Page resources in the Network Log" lightbox="../media/resources-network-resources.msft.png":::
    Page resources in the **Network** Log
@@ -89,7 +89,7 @@ To view the resources of a webpage organized by directory:
 
     | Page item | Description |
     |:--- |:--- |
-    | `top` | The main document [browsing context][MDNInlineFrame]. |
+    | `top` | The main document [browsing context](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
     | `airhorner.com` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.j` file is probably `https://airhorner.com/scripts/comlink.global.js`. |
     | `scripts` | A directory. |
     | `(index)` | The main HTML document. |
@@ -144,7 +144,7 @@ To group resources together based on their file type:
 
 #### Browse files by type in the Network panel
 
-Navigate to [Filter by resource type][DevtoolsNetworkFilterByResourceType].
+Navigate to [Filter by resource type](../network/index.md#filter-by-resource-type).
 
 :::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filter for CSS in the Network Log" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    Filter for CSS in the **Network** Log
@@ -165,11 +165,11 @@ Navigate to [Filter by resource type][DevtoolsNetworkFilterByResourceType].
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/resources/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/resources/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

@@ -52,20 +52,20 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Show **Settings** | `?` or `F1` | `?` or `Function`+`F1` |
 | Focus the next panel | `Control`+`]` | `Command`+`]` |
 | Focus the previous panel | `Control`+`[` | `Command`+`[` |
-| Switch back to whatever [docking position][DevtoolsCustomizeIndexPlacement] you last used.  If DevTools have been in the default position for the entire session, then this shortcut undocks DevTools into a separate window | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |
-| Toggle [Device emulation][DevtoolsDeviceModeIndex] | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |
+| Switch back to whatever [docking position](../customize/index.md#change-devtools-placement) you last used.  If DevTools have been in the default position for the entire session, then this shortcut undocks DevTools into a separate window | `Control`+`Shift`+`D` | `Command`+`Shift`+`D` |
+| Toggle [Device emulation](../device-mode/index.md) | `Control`+`Shift`+`M` | `Command`+`Shift`+`M` |
 | Toggle **Inspect Element Mode** | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` |
-| Open the [Command Menu][DevtoolsCommandMenuIndex] | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |
-| Toggle the [Drawer][DevtoolsCustomizeIndexDrawer] | `Escape` | `Escape` |
+| Open the [Command Menu](../command-menu/index.md) | `Control`+`Shift`+`P` | `Command`+`Shift`+`P` |
+| Toggle the [Drawer](../customize/index.md#drawer) | `Escape` | `Escape` |
 | Normal refresh | `F5` or `Control`+`R` | `Command`+`R` |
 | Hard refresh | `Control`+`F5` or `Control`+`Shift`+`R` | `Command`+`Shift`+`R` |
 | Search for text within the current panel.  Not supported in the **Audits**, **Application**, and **Security** tools | `Control`+`F` | `Command`+`F` |
-| Opens the **Search** tab in the [Drawer][DevtoolsCustomizeIndexDrawer], which lets you search for text across all loaded resources | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |
+| Opens the **Search** tab in the [Drawer](../customize/index.md#drawer), which lets you search for text across all loaded resources | `Control`+`Shift`+`F` | `Command`+`Option`+`F` |
 | Open a file in the **Sources** tool | `Control`+`O` or `Control`+`P` | `Command`+`O` or `Command`+`P` |
 | Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |
 | Zoom out | `Control`+`-` | `Command`+`-` |
 | Restore default zoom level | `Control`+`0` | `Command`+`0` |
-| Run snippet | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `!` followed by the name of the script, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `!` followed by the name of the script, then select `Enter` |
+| Run snippet | Select `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then select `Enter` | Select `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then select `Enter` |
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->
@@ -109,13 +109,13 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Step over next function call | `F10` or `Control`+`'` | `F10` or `Command`+`'` |
 | Step into next function call | `F11` or `Control`+`;` | `F11` or `Command`+`;` |
 | Step out of current function | `Shift`+`F11` or `Control`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |
-| Continue to a [specific line of code while paused][DevtoolsJavascriptBreakpointsLOC] | Hold `Control`, then choose the line of code | Hold `Command`, then choose the line of code |
+| Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Control`, then choose the line of code | Hold `Command`, then choose the line of code |
 | Select the call frame below / above the currently selected frame | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |
 | Save changes to local modifications | `Control`+`S` | `Command`+`S` |
 | Save all changes | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | Navigate to line | `Control`+`G` | `Control`+`G` |
-| Jump to a line number of the currently open file | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:` followed by the line number, then select `Enter` |
-| Jump to a column of the currently open file (for example line 5, column 9) | Select `Control`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` | Select `Command`+`O` to open the [Command Menu][DevtoolsCommandMenuIndex], type `:`, then the line number, then another `:`, then the column number, then select `Enter` |
+| Jump to a line number of the currently open file | Select `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then select `Enter` | Select `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then select `Enter` |
+| Jump to a column of the currently open file (for example line 5, column 9) | Select `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then select `Enter` | Select `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then select `Enter` |
 | Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Select `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Select `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
 | Close the active tab | `Alt`+`W` | `Option`+`W` |
 
@@ -124,7 +124,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Action | Windows\/Linux | macOS |
 |:--- |:--- |:--- |
 | Delete all characters in the last word, up to the cursor | `Control`+`Delete` | `Option`+`Delete` |
-| Add or remove a [line-of-code breakpoint][DevtoolsJavascriptBreakpointsLOC] | Focus your cursor on the line, then select `Control`+`B` | Focus your cursor on the line, then select `Command`+`B` |
+| Add or remove a [line-of-code breakpoint](../javascript/breakpoints.md#line-of-code-breakpoints) | Focus your cursor on the line, then select `Control`+`B` | Focus your cursor on the line, then select `Command`+`B` |
 | Navigate to matching bracket | `Control`+`M` | `Control`+`M` |
 | Toggle single-line comment.  If multiple lines are selected, DevTools add a comment to the start of each line | `Control`+`/` | `Command`+`/` |
 | Turn on or off the next occurrence of whatever word the cursor is on.  Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |
@@ -177,11 +177,11 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/shortcuts) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/shortcuts) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

@@ -21,7 +21,7 @@ The prerelease SDK works together with a preview channel as follows:
 *  A prerelease version of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
 *  The preview channels of Microsoft Edge contain the Microsoft Edge binaries that are needed to run and render your app, including the implementation of the experimental APIs.
 
-For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions][WebView2ConceptsVersioning].
+For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions](../concepts/versioning.md).
 
 
 <!-- ====================================================================== -->
@@ -29,7 +29,7 @@ For more information about how SDK versions works in conjunction with the WebVie
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-To get a Microsoft Edge preview channel, navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload].
+To get a Microsoft Edge preview channel, navigate to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download).
 
 
 <!-- intro/overview of 4 approaches ======================================= -->
@@ -77,7 +77,7 @@ We'll use the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Sampl
 
 1.  Open the **WebView2APISample** project, and then in **Source Files**, open the `AppWindow.cpp` file.
 
-1.  Find where [CreateCoreWebView2EnvironmentWithOptions][Webview2RefWin32GlobalsCreateCoreWebView2EnvironmentWithOptions] is called.  For example:
+1.  Find where [CreateCoreWebView2EnvironmentWithOptions](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions) is called.  For example:
 
     ```cpp
     HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(

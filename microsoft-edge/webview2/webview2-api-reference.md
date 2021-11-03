@@ -20,12 +20,12 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 WebView2 is available for the following languages and frameworks.
 *   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)
 *   .NET
-    *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]
-    *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]
-    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]
+    *   [Core](/dotnet/api/microsoft.web.webview2.core)
+    *   [WPF](/dotnet/api/microsoft.web.webview2.wpf)
+    *   [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
 *   WinRT
-    *   [Core][WinrtMicrosoftWebWebview2CoreNamespace]
-    *   [COM Interop][WinrtComInteropInterfaces]
+    *   [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
+    *   [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
 
 
 <!-- ====================================================================== -->

@@ -125,7 +125,7 @@ You can use the `geometrychange` event and the `visible` property on the `naviga
 
 > [!NOTE]
 > The `geometrychange` is fired very frequently when the user resizes the window. To avoid running layout-changing code too often and cause performance problems in your app, it is recommended to use a `debounce` function to limit how many times the event is handled.
-> To learn more about `debounce`, see [The Difference Between Throttling and Debouncing][CssTricksThrottlingDebouncing].
+> To learn more about `debounce`, see [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/).
 
 ```javascript
 const debounce = (func, wait) => {
@@ -159,25 +159,25 @@ if ('windowControlsOverlay' in navigator) {
 My Tracks is a PWA demo app that uses the Window Controls Overlay feature.
 
 * [Enable the feature](#enable-the-feature-in-your-app) in Microsoft Edge.
-* Go to [My Tracks][MyTracksDemoApp] and install the app.
+* Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
 * Select the **Hide title bar** button from the app title bar.
 
 Notice that the app now displays content all the way to the top of the window frame, where the title bar used to be. The top area of the map is also a drag handler to let users move the window.
 
 :::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="The top area of the map can be used to move the window." lightbox="../media/my-tracks-draggable-titlebar.png":::
 
-The source code for this app can be accessed on the [My Tracks GitHub repository][MyTracksDemoAppGitHub].
+The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 
-* The [manifest.json][MyTracksDemoAppManifestJsonFile] source file declares the app's use of the Window Controls Overlay feature.
-* The [overlay.js][MyTracksDemoAppOverlayJsFile] source file uses the `navigator.windowControlsOverlay` object.
-* The [style.css][MyTracksDemoAppStyleCssFile] source file uses the `titlebar-area-height` CSS environment variable.
+* The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file declares the app's use of the Window Controls Overlay feature.
+* The [overlay.js](https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js) source file uses the `navigator.windowControlsOverlay` object.
+* The [style.css](https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css) source file uses the `titlebar-area-height` CSS environment variable.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 *   [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay]
+*   [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
 
 
 <!-- links -->

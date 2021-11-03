@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Use breakpoints to pause your JavaScript code.  This article explains each type of breakpoint available in DevTools, as well as when to use and how to set each type.
 
-For an introductory tutorial using an existing webpage, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].
+For an introductory tutorial using an existing webpage, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools](index.md).
 
 
 <!-- ====================================================================== -->
@@ -135,7 +135,7 @@ To set a DOM change breakpoint:
 Use an XHR breakpoint when you want to break when the request URL of an XHR contains a specified string.  DevTools pauses on the line of code where the XHR runs the `send()` method.
 
 > [!NOTE]
-> This feature also works with [Fetch API][MDNFetchApi] requests.
+> This feature also works with [Fetch API](https://developer.mozilla.org/docs/Web/API/Fetch_API) requests.
 
 One example of when this is helpful is when your webpage is requesting an incorrect URL, and you want to quickly find the AJAX or Fetch source code that is causing the incorrect request.
 
@@ -227,9 +227,9 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the debugger features][DevtoolsJavascriptReference] - Using the UI of the debugger in the **Sources** tool.
-*  [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex] - An introductory tutorial using an existing webpage.
-*  [Sources tool overview][DevtoolsSourcesIndex] - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
+*  [Use the debugger features](./reference.md) - Using the UI of the debugger in the **Sources** tool.
+*  [Get started with debugging JavaScript in Microsoft Edge DevTools](index.md) - An introductory tutorial using an existing webpage.
+*  [Sources tool overview](../sources/index.md) - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
 
 
 <!-- ====================================================================== -->
@@ -241,11 +241,11 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 [MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png

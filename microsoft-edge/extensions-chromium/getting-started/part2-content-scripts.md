@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, ext
 ---
 # Create an extension tutorial Part 2
 
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]
+[Completed Extension Package Source for This Part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 
 
 <!-- ====================================================================== -->

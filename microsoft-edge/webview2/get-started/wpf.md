@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 ---
 # Get started with WebView2 in WPF apps
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Wpf].
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2).  For more information on individual APIs, navigate to [API reference](/dotnet/api/microsoft.web.webview2.wpf).
 
 
 <!-- ====================================================================== -->
@@ -19,8 +19,8 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you install the following list of prerequisites before proceeding.
 
-*   The [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] must be installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
-*   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.
+*   The [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) must be installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
+*   [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ Next add a WebView to your app.
     </DockPanel>
     ```
 
-1.  To build and run the project, select `F5`  Ensure your WebView2 control displays [https://www.microsoft.com][MicrosoftMain].
+1.  To build and run the project, select `F5`  Ensure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
     :::image type="complex" source="./media/wpf-getting-started-microsoft.png" alt-text="Microsoft.com":::
        Microsoft.com
@@ -205,7 +205,7 @@ During webpage navigation, the WebView2 control raises events.  The app that hos
 *   `HistoryChanged`
 *   `NavigationCompleted`
 
-For more information, navigate to [Navigation Events][Webview2ConceptsNavigationEvents].
+For more information, navigate to [Navigation Events](../concepts/navigation-events.md).
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
    Navigation events
@@ -349,8 +349,8 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 development best practices][WV2BestPractices]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - a comprehensive example of WebView2 capabilities.
+*  [WebView2 development best practices](../concepts/developer-guide.md)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 *  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
 *  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 

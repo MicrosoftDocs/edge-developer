@@ -14,7 +14,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools:
-> [Microsoft Edge | State of the Platform][YoutubeEdgeStateOfThePlatform] - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10 or later.  Join us to learn about the latest across the Edge platform, tools, and web apps.
+> [Microsoft Edge | State of the Platform](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10 or later.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
 <!-- ====================================================================== -->
@@ -126,7 +126,7 @@ The order of content in an HTML document is important for search engine optimiza
 
 For more information, navigate to [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1094406][CR1094406].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1094406](https://crbug.com/1094406).
 
 
 <!-- ====================================================================== -->
@@ -143,22 +143,22 @@ User-Agent Client Hints are now applied for devices in the **User agent** field 
 
 For more information, navigate to [User-Agent Client Hints](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299](https://crbug.com/1174299).
 
 
 <!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
 
-The [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension version 1.1.8 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.8, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].
+The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension version 1.1.8 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.8, navigate to [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).
 
-You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
+You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
 ### In-context documentation and UI to make it easier to use the DevTools extension
 
 <!-- Title: In-context documentation and UI make it easier to get started using the Developer Tools extension -->
 <!-- Subtitle: The Microsoft Edge Developer Tools for Visual Studio Code extension now presents helpful text, buttons, and links, and opens a documentation page with guidance on how to get started. -->
 
-Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools] extension now features a simpler way to start a new instance of Microsoft Edge, by presenting instructions, buttons, links, and a documentation page to guide you.
+Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension now features a simpler way to start a new instance of Microsoft Edge, by presenting instructions, buttons, links, and a documentation page to guide you.
 
 *  When you select the **Microsoft Edge Tools** button in the **Activity Bar** of Visual Studio Code, the **Microsoft Edge Tools: Targets** panel now presents explanatory text, buttons, and links to guide you, instead of a blank panel.
 
@@ -166,7 +166,7 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code][Vis
 
 *  The **Microsoft Edge Tools: Targets** panel now has a **Generate launch.json** button and instructions, to help launch your project for debugging in Microsoft Edge.
 
-For more information, navigate to [Using the tools][GithubIoDevToolsUsing].
+For more information, navigate to [Using the tools](https://microsoft.github.io/vscode-edge-devtools/using.html).
 
 
 <!-- ====================================================================== -->
@@ -187,7 +187,7 @@ When an HTML element on your page has `display: grid` or `display: inline-grid` 
 
 <!-- screenshot uses https://jec.fyi -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1203241][CR1203241].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1203241](https://crbug.com/1203241).
 
 
 ### Support for const redeclarations in the Console
@@ -205,7 +205,7 @@ Refer to the example below. `const` redeclaration is supported across separate R
 
 To learn how to run a single REPL script or a multi-line REPL script, navigate to [The Console as a JavaScript environment](../../../console/console-javascript.md).
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1076427][CR1076427].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1076427](https://crbug.com/1076427).
 
 
 ### New shortcut to view iframe details
@@ -224,7 +224,7 @@ This displays the details about the `iframe` in the **Application** tool.  In th
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1192084][CR1192084].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1192084](https://crbug.com/1192084).
 
 
 ### Enhanced CORS debugging support
@@ -237,7 +237,7 @@ Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** t
 
 <!-- screenshot uses http://cors-errors.glitch.me -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1141824][CR1141824].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1141824](https://crbug.com/1141824).
 
 
 ### Renamed XHR filter to Fetch\/XHR
@@ -249,10 +249,10 @@ In the **Network** tool, the **XHR** filter is now renamed to **Fetch/XHR**. Thi
 :::image-end:::
 
 For more information, navigate to:
-*  [XMLHttpRequest spec][XhrSpecWhatwgOrg]
-*  [Fetch spec][FetchSpecWhatwgOrg]
+*  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
+*  [Fetch spec](https://fetch.spec.whatwg.org)
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1201398][CR1201398].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1201398](https://crbug.com/1201398).
 
 
 ### Filter Wasm resource type in the Network tool
@@ -265,7 +265,7 @@ In the **Network** tool, you can now select the new **Wasm** filter to filter th
 
 <!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1103638][CR1103638].
+To review the history of this feature in the Chromium open-source project, navigate to Issue [1103638](https://crbug.com/1103638).
 
 
 ### Compute Intersections are now included in the Performance tool
@@ -278,13 +278,13 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2][WebDevIntersectionObserverV2].  For information about using the flame chart, navigate to [Analyze a performance recording][DevtoolsEvaluatePerfRefAnalyzeAPerfRecording].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137][CR1199137].
+For more about intersection observers, navigate to [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2).  For information about using the flame chart, navigate to [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137](https://crbug.com/1199137).
 
 
 <!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
+If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->
@@ -319,11 +319,11 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 [CR1199137]: https://crbug.com/1199137 "Issue 1199137: Display IntersectionObserver cost in perf panel | Chromium bugs"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-92) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-92) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
 [CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
