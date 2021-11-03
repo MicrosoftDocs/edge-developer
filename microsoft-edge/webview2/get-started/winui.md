@@ -200,7 +200,7 @@ Apps that host WebView2 controls listen for the following events that are raised
 > [!NOTE]
 > If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
-For more information, navigate to [Navigation Events](../concepts/navigation-events.md).
+For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
 When errors occur, the following events are raised and may navigate to an error webpage.
 

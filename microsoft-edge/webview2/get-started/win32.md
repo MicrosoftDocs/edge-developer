@@ -168,9 +168,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 To build and run the app, select `F5`.  Now you have a WebView window displaying the Bing page.
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
-   Bing window
-:::image-end:::
+:::image type="content" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
 
 
 <!-- ====================================================================== -->
@@ -184,11 +182,9 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 1.  `HistoryChanged`
 1.  `NavigationCompleted`
 
-For more information, navigate to [Navigation events](../concepts/navigation-events.md).
+For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
-   Navigation events
-:::image-end:::
+:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
 
 In error cases, one or more of the following events may occur depending on whether the navigation continued to an error webpage.
 
