@@ -150,9 +150,9 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 
 
 <!-- ====================================================================== -->
-<!-- links -->
 
-<!-- external links -->
+
+
 
 
 
@@ -163,9 +163,3 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (Developer Advocate).
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-
-
-
-
-

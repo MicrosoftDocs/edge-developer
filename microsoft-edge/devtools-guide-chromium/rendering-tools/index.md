@@ -186,7 +186,7 @@ The following table describes some common paint and composite problems and poten
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 
 
 
@@ -220,9 +220,3 @@ The following table describes some common paint and composite problems and poten
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-
-
-
-
-

@@ -247,23 +247,3 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 *   [Use a development environment](./sources/index.md)
 *   [Sync changes in DevTools with the file system](./workspaces/index.md)
 *   [Override files from the web](./javascript/overrides.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- external links -->
-
-
-

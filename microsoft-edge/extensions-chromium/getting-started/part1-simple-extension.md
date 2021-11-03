@@ -157,9 +157,3 @@ That is everything you need to develop a working extension.  Now, continue on to
 <!--[ImagePart1Threedots]: ./media/part1-threedots.png "Choose Extensions"  -->
 <!--[ImagePart1DevelopermodeToggle]: ./media/part1-developermode-toggle.png "Enable Developer Mode"  -->
 <!--[ImagePart1InstalledExtension]: ./media/part1-installed-extension.png "Installed Extensions"  -->
-
-<!-- links -->
-
-
-
-

@@ -208,10 +208,3 @@ Header Parameters: Authorization: Bearer $TOKEN
 ```
 
 API reference: [Check the publishing status](addons-api-reference.md#check-the-publishing-status)
-
-
-<!-- links -->
-
-<!-- external links -->
-
-

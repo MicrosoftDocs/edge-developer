@@ -284,16 +284,3 @@ self.addEventListener('fetch', event => {
 
 *  [Integrate with the OS sharing UI with the Web Share API](https://web.dev/web-share/)
 *  [Receiving shared data with the Web Share Target API](https://web.dev/web-share-target/)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-
-
-

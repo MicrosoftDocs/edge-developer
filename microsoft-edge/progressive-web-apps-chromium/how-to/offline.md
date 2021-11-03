@@ -174,13 +174,3 @@ window.addEventListener("offline", function(){
 *   [navigator.onLine](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine)
 *   [Online and Offline Events](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events)
 *   [Request with Intent: Caching Strategies in the Age of PWAs](https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-

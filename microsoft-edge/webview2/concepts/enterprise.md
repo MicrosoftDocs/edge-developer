@@ -31,16 +31,3 @@ IT admins can use group policy objects (GPO) to configure policy settings for We
 ## See also
 
 *  [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md) - About the Evergreen, self-updating WebView2 Runtime.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-<!-- external links -->
-
-
-
-
-
-

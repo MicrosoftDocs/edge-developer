@@ -51,9 +51,3 @@ The following list describes experimental web app features that are available to
 | [File Handling](./handle-files.md) | All Desktop |
 
 <!-- Links -->
-
-
-
-
-
-

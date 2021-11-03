@@ -148,16 +148,3 @@ You can find the [source code on GitHub](https://github.com/captainbrosset/devto
 
 *  [Handling URLs in PWAs video](https://www.youtube.com/watch?v=jYc7ih9Xwqw).
 *  [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-
-
-

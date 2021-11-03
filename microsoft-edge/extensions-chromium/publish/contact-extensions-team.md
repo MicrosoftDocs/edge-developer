@@ -33,8 +33,3 @@ If you think an item in the Microsoft Edge Add-ons website violates a copyright 
 
 
 <!-- other Microsoft links -->
-
-
-
-
-

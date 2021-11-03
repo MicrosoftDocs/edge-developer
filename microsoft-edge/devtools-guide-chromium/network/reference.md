@@ -994,10 +994,10 @@ By default, DevTools displays the **Overview** pane.  To hide it, turn off the *
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 
 <!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
-<!-- external links -->
+
 
 
 
@@ -1009,8 +1009,3 @@ By default, DevTools displays the **Overview** pane.  To hide it, turn off the *
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-
-
-
-

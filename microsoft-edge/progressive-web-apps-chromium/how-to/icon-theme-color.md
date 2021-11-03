@@ -93,11 +93,3 @@ Individual web pages can also define a theme color using the [`theme-color` meta
 ## See also
 
 *   [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-

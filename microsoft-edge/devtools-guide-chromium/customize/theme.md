@@ -87,7 +87,7 @@ To use the Command Menu to change which color theme is applied to DevTools:
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 
 
 

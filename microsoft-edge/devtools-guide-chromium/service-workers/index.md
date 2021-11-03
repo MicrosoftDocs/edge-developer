@@ -85,10 +85,3 @@ To find more stack information, set a break point in the fetch handler.  The det
 ### Future work
 
 The Microsoft Edge DevTools team plans to further develop the cache detail and are investigating more ways to improve the service worker debugging experience for [Progressive Web Application](https://developer.mozilla.org/docs/Web/Progressive_web_apps) developers.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-

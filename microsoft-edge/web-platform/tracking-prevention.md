@@ -179,20 +179,3 @@ Currently, Microsoft Edge only exposes an option to disable tracking prevention 
 That being said, the **Block** and **Allow** options on the `edge://settings/content/cookies` page may be used to allow or deny specific domains access to storage such as cookies and other browser storage mechanisms.  This is useful for debugging site issues that are caused by tracking prevention enforcements blocking access to storage for a specific site.
 
 <!-- image links -->
-
-
-
-
-<!-- links -->
-
-
-
-
-
-
-
-
-
-
-
-

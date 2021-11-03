@@ -26,12 +26,3 @@ WebView2 is available for the following languages and frameworks.
 *   WinRT
     *   [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
     *   [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-

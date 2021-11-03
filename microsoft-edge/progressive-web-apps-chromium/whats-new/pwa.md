@@ -147,7 +147,7 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 
 
 <!-- ====================================================================== -->
@@ -156,7 +156,7 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 
 
-<!-- external links -->
+
 <!-- origin trials -->
 
 

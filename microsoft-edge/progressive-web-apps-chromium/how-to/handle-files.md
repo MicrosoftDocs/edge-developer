@@ -132,12 +132,3 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 
 * The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file uses the `file_handlers` array to request handling `.gpx` files.
 * The [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js) source file uses the `launchQueue` object to handle incoming files.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-

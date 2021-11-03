@@ -167,23 +167,3 @@ The **Cookies** pane in the **Application** panel is blank on Windows 10 version
 The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix the listed tools in a future update of Microsoft Edge.
 
 The file explorer does not launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-<!-- external links -->
-
-
-
-
-
-
-
-
-
-
-
-
-

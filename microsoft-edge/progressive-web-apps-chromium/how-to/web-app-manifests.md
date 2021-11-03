@@ -133,10 +133,3 @@ To learn more about using the Share Target feature, see [Share with other apps](
 ## See also
 
 *  [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-
-

@@ -97,13 +97,3 @@ The IE compatibility list is updated within a week.
 
 > [!NOTE]
 > The IE compatibility list is designed to work with public sites only.
-
-<!-- links -->
-
-
-
-
-
-
-
-

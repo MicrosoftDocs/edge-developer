@@ -991,7 +991,6 @@ Initial developer preview release.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
 
 
 
@@ -1003,7 +1002,8 @@ Initial developer preview release.
 
 
 
-<!-- external links -->
+
+
 
 
 
@@ -1387,10 +1387,3 @@ Initial developer preview release.
 
 
 [Webview2ReferenceWin32ICoreWebView2ExperimentalSettings6ViewWebview210999Prerelease]: /microsoft-edge/webview2/reference/win32/icorewebview2experimentalsettings6?view=webview2-1.0.1010-prerelease&preserve-view=true "interface ICoreWebView2ExperimentalSettings6 | Microsoft Docs"
-
-
-
-
-
-
-

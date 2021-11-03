@@ -48,19 +48,3 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
 *  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 *  [WebView2 API reference](../webview2-api-reference.md)
 *  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-
-
-
-
-
-

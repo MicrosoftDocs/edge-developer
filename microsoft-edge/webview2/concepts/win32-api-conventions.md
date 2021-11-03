@@ -142,10 +142,3 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 *  [Get started with WebView2][Webview2IndexGetStarted] - WebView2 Win32 C/C++.
 *  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-

@@ -207,17 +207,3 @@ The Microsoft Edge Canary and Dev channels don't currently receive user agent ov
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```
-
-<!-- links -->
-
-
-
-
-
-
-
-
-
-
-
-

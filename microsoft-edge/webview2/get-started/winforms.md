@@ -392,27 +392,3 @@ Congratulations, you built your first WebView2 app!
 *  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - A comprehensive example of WebView2 capabilities.
 *  [See also](../index.md#see-also) - Conceptual and how-to articles about building and deploying WebView2 apps.
 *  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-<!-- external links -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

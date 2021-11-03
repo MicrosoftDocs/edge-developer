@@ -148,31 +148,3 @@ WebView2 apps can run on the following versions of Windows.
 *  [Manage User Data Folder in WebView2 apps](./concepts/user-data-folder.md)
 *  [How to Debug with WebView2](./how-to/debug.md)
 *  [Automating and testing WebView2 with Microsoft Edge Driver](./how-to/webdriver.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- external links -->
-
-
-
-
-
-
-
-
-

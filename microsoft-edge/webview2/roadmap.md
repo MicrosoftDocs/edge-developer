@@ -55,16 +55,3 @@ The .NET SDK has reached GA.
 ### Windows UI Library 3
 
 You can access WebView2 controls in your applications using [Windows UI Library 3 (WinUI3)](/uwp/toolkits/winui3/index) with the Windows App SDK. This is currently in preview. For more information, navigate to the [Windows App SDK roadmap](https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md).
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-<!-- external links -->
-
-
-
-
-
-
-
