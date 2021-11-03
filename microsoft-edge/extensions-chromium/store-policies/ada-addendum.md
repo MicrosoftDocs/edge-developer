@@ -36,4 +36,4 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 
 <!-- links -->
 
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Add-ons website developer policies | Microsoft Docs"
+

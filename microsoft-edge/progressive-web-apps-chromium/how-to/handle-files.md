@@ -136,8 +136,8 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 
 <!-- ====================================================================== -->
 <!-- links -->
-[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
-[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"
-[TestGPXFile]: https://www.visugpx.com/download.php?id=okB1eM4fzj
-[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
-[MyTracksDemoAppFileJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/file.js
+
+
+
+
+

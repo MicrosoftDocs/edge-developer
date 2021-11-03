@@ -459,81 +459,81 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsPanel]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-panel "Deprecation of the Properties pane in the Elements panel - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"
-[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS grid debugging features - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
 
-[DevtoolsConsoleApiTable]: ../../../console/api.md#table "table - Console API reference | Microsoft Docs"
-[DevtoolsCoverageIndex]: ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCssGrid]: ../../../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../../../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analyze rendering performance with the Rendering tool - Performance Analysis Reference | Microsoft Docs"
+
+
+
+
+
+
+
+
+
+
 <!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesSourceOrderViewer]: ../../../experimental-features/index.md#source-order-viewer "Source Order Viewer - Experimental features | Microsoft Docs"
+
+
 <!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turning-on-experimental-features "Turning experimental features - Experimental features | Microsoft Docs"
-[DevtoolsMediaPanelIndex]: ../../../media-panel/index.md "View and debug media players information | Microsoft Docs"
 
-[DualScreenIntroductionHowWorkSeam]:  /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"
-[DualScreenWebCssMediaSpanning]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"
-[DualScreenWebJavascriptGetwindowsegments]: /dual-screen/web/javascript-getwindowsegments "The getWindowSegments JavaScript API for dual-screen devices | Microsoft Docs"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
 
-[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows"
 
-[MicrosoftSurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "The new Surface Duo"
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
 
-[CR174309]: https://crbug.com/174309 "DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"
-[CR384968]: https://crbug.com/384968 "Option to ignore local() fonts | Chromium bugs"
-[CR772558]: https://crbug.com/772558 "DevTools: Update to latest version of Lighthouse | Chromium bugs"
-[CR807440]: https://crbug.com/807440 "Chrome locks up with large numbers of SWs | Chromium bugs"
-[CR997694]: https://crbug.com/997694 "XHR requests with 302 status are not shown under the \"xhr\" filter in network panel | Chromium bugs"
-[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium bugs"
-[CR1051466]: https://crbug.com/1051466 "Support COOP/COEP debugging in DevTools | Chromium bugs"
-[CR1054281]: https://crbug.com/1054281 "Feature Request: DevTools should emulate foldable and dual-screen devices | Chromium bugs"
-[CR1067184]: https://crbug.com/1067184 "Feature Request: Clear filter button on Network & Elements -> Style Filter inputs | Chromium bugs"
-[CR1068116]: https://crbug.com/1068116 "☂ Ship issues panel | Chromium bugs"
-[CR1080569]: https://crbug.com/1080569 "acorn doesn't support logical assignment operators | Chromium bugs"
-[CR1080589]: https://crbug.com/1080589 "Classify issues by third-party / first-party | Chromium bugs"
-[CR1086817]: https://crbug.com/1086817 "acorn doesn't support numeric separators | Chromium bugs"
-[CR1090802]: https://crbug.com/1090802 "Simulate idle state changes from Idle Detection API | Chromium bugs"
-[CR1093227]: https://crbug.com/1093227 "DevTools: suggest closest accessible color | Chromium bugs"
-[CR1093247]: https://crbug.com/1093247 "Display info about frames in application panel | Chromium bugs"
-[CR1094406]: https://crbug.com/1094406 "Developers want a source order viewer for AT https://webwewant.fyi/wants/64/"
-[CR1096068]: https://crbug.com/1096068 "DevTools: support emulating the prefers-reduced-data media feature | Chromium bugs"
-[CR1096481]: https://crbug.com/1096481 "Issues banner placement | Chromium bugs"
-[CR1100253]: https://crbug.com/1100253 "Add screenshot node shortcut in Element context menu | Chromium bugs"
-[CR1103316]: https://crbug.com/1103316 "Elements search does not resolveNode (highlight text, etc) on first search result | Chromium bugs"
-[CR1103854]: https://crbug.com/1103854 "De-obfuscate X-Client-Data values in Developer Tools | Chromium bugs"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->
-[CR1106221]: https://crbug.com/1106221 "Add imported fonts to the font-family autocompletion in the Styles panel | Chromium bugs"
-[CR1107766]: https://crbug.com/1107766 "Display info about frames generated by 'window.open()' in frame tree | Chromium bugs"
-[CR1115011]: https://crbug.com/1115011 "When copying a table from the console the structure of the table is not preserved | Chromium bugs"
-[CR1116085]: https://crbug.com/1116085 "Please bring back the DevTools Properties inspector | Chromium bugs"
 
-[CsswgDraftsMediaqueries5DescdefMediaPrefersReducedData]: https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data "prefers-reduced-data - Media Queries Level 5 | W3C CSS Working Group Editor Drafts"
 
-[GithubGooglechromeLighthouseV620]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.2.0 "v6.2.0 - GoogleChrome/lighthouse | GitHub"
 
-[GoogleDevelopersProtocolBuffers]: https://developers.google.com/protocol-buffers "Protocol Buffers | Google Developers"
 
-[SamsungMobileGalaxyFold]: https://www.samsung.com/us/mobile/galaxy-fold "Galaxy Fold | Samsung US"
 
-[V8FeaturesLogicalAssignment]: https://v8.dev/features/logical-assignment "Logical assignment | V8"
-[V8FeaturesNumericSeparators]: https://v8.dev/features/numeric-separators "Numeric separators | V8"
 
-[WebDevCoopCoep]: https://web.dev/coop-coep "Making your website \"cross-origin isolated\" using COOP and COEP | web.dev"
-[WebDevIdleDetection]: https://web.dev/idle-detection "Detect inactive users with the Idle Detection API | web.dev"
-[WebDevNonCompositedAnimations]: https://web.dev/non-composited-animations "Avoid non-composited animations | web.dev"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -542,7 +542,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+
+
+
+

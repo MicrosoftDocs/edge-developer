@@ -152,27 +152,27 @@ WebView2 apps can run on the following versions of Windows.
 
 <!-- ====================================================================== -->
 <!-- links -->
-[Webview2ConceptsDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-[Webview2ConceptsSecurity]: ./concepts/security.md "Best practices for developing secure WebView2 apps | Microsoft Docs"
-[Webview2ConceptsUserDataFolder]: ./concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"
-[Webview2ConceptsVersioning]: ./concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"
 
-[Webview2GetStartedWin32]: ./get-started/win32.md "Get started with WebView2 in Win32 apps | Microsoft Docs"
-[Webview2GetStartedWinforms]: ./get-started/winforms.md "Get started with WebView2 in WinForms apps | Microsoft Docs"
-[Webview2GetStartedWinui2]: ./get-started/winui2.md "Get started with WebView2 in WinUI 2 apps | Microsoft Docs"
-[Webview2GetStartedWinui]: ./get-started/winui.md "Get started with WebView2 in WinUI 3 apps (Preview) | Microsoft Docs"
-[Webview2GetStartedWpf]: ./get-started/wpf.md "Get started with WebView2 in WPF apps | Microsoft Docs"
 
-[Webview2HowToDebug]: ./how-to/debug.md "Get started debugging WebView2 apps | Microsoft Docs"
-[Webview2HowToWebdriver]: ./how-to/webdriver.md "Automating and testing WebView2 with Microsoft Edge Driver | Microsoft Docs"
-[Webview2ReleaseNotes]: ./release-notes.md "Release notes for WebView2 SDK | Microsoft Docs"
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- external links -->
-[UwpToolkitsWinui3]: /uwp/toolkits/winui3/index "Windows UI Library 3 Preview 2 (July 2020) | Microsoft Docs"
-[DeployedgeMicrosoftEdgeSupportedOS]: /deployedge/microsoft-edge-supported-operating-systems "Microsoft Edge supported Operating Systems | Microsoft Docs"
 
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
-[GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"
 
-[MicrosoftedgeinsiderMain]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"
 
-[NugetPackagesMicrosoftWebWebView2]: https://www.nuget.org/packages/Microsoft.Web.WebView2 "Microsoft.Web.WebView2 | NuGet Gallery"
+
+
+
+
+
+

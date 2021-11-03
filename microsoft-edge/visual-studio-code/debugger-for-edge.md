@@ -18,5 +18,5 @@ For more information, navigate to [Browser debugging in VS Code](https://code.vi
 
 <!--links -->
 
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
-[BrowserDebuggingInVSCode]: https://code.visualstudio.com/docs/nodejs/browser-debugging "Debug Browser Apps using Visual Studio Code"
+
+

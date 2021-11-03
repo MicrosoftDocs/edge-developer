@@ -9,6 +9,6 @@ The following sections list the announcements from the Microsoft Edge DevTools t
 
 <!-- links -->
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
 
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
+
+

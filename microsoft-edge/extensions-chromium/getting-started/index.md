@@ -62,4 +62,4 @@ For information on getting started with your extension, navigate to [Create an e
 
 <!-- links -->
 
-[CreateAnExtensionPart1]: ./part1-simple-extension.md "Create an extension tutorial - Part 1 | Microsoft Docs"
+

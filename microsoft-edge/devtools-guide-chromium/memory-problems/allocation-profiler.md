@@ -90,13 +90,13 @@ You are able to view memory allocation by JavaScript function.  For more informa
 <!-- ====================================================================== -->
 <!-- links -->
 
-[DevToolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"
+
+
 
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->
 
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Download a Microsoft Edge Channel"
+
 
 
 <!-- ====================================================================== -->
@@ -107,8 +107,8 @@ You are able to view memory allocation by JavaScript function.  For more informa
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+
+
+
+
+

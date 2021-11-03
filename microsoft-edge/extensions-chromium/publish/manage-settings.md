@@ -48,4 +48,4 @@ Review the following settings in the Account settings section.
 
 <!-- links -->
 
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
+

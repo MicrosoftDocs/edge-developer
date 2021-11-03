@@ -90,16 +90,16 @@ Applications that require IE mode for the website (or app) content to function c
 
 <!-- ====================================================================== -->
 <!-- links -->
-[PlaywrightIndex]: ../../playwright/index.md "Use Playwright to automate and test in Microsoft Edge | Microsoft Edge Developer docs"
-[WebDriverIndex]: ../../webdriver-chromium/index.md "Use WebDriver to automate Microsoft Edge | Microsoft Edge Developer docs"
+
+
 <!-- external links -->
-[EnterpriseWhatIsIEMode]: /deployedge/edge-ie-mode "What is Internet Explorer (IE) mode? | Microsoft Edge Enterprise docs"
-[EnterpriseConfigureIEModePolicies]: /deployedge/edge-ie-mode-policies "Configure IE mode policies | Microsoft Edge Enterprise docs"
-[IEDocumentModes]: /internet-explorer/ie11-deploy-guide/fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list "Fix web compatibility issues using document modes and the Enterprise Mode site list | Internet Explorer docs"
 
-[BlogsWindowsExperienceFutureOfIEEdge]: https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/ "The future of Internet Explorer on Windows 10 is in Microsoft Edge | Windows Experience blog"
 
-[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Using the F12 developer tools | Archived Microsoft Edge Developer docs"
 
-[InternetExplorerObject]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85) "InternetExplorer object (Windows) | Archived Microsoft Edge Developer docs"
-[WebBrowserControl]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85) "WebBrowser Control (Internet Explorer) | Archived Microsoft Edge Developer docs"
+
+
+
+
+
+
+

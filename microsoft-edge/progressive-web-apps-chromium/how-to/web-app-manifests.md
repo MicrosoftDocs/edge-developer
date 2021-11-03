@@ -138,5 +138,5 @@ To learn more about using the Share Target feature, see [Share with other apps](
 <!-- ====================================================================== -->
 <!-- links -->
 <!-- external links -->
-[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web app manifests | MDN"
-[AaronPWAWorkshop]: https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop "Getting Started with Progressive Web Apps [Workshop]"
+
+

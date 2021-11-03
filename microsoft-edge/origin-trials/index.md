@@ -94,6 +94,6 @@ The Microsoft Edge Origin Trials portal today only supports SSL Enabled Origins,
 
 <!-- links -->
 
-[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials Developer Console | Microsoft Docs"
 
-[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Implementing feature detection | MDN"
+
+

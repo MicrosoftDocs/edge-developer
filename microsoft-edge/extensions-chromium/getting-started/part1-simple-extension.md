@@ -160,6 +160,6 @@ That is everything you need to develop a working extension.  Now, continue on to
 
 <!-- links -->
 
-[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "Completed extension package source | Microsoft Docs"
 
-[TestExtensionSideload]: ./extension-sideloading.md "Test your extension (Sideloading) | Microsoft Docs"
+
+

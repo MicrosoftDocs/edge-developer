@@ -62,4 +62,4 @@ If you want to revert DevTools to English, navigate to [DevTools Settings](./ind
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
+

@@ -92,11 +92,11 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 | msedge.userDataDir | string | The path to the user data folder used by the Microsoft Edge instance. |
 
 <!-- links -->
-[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows devices | Microsoft Docs"
-[WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver (Chromium) for test automation | Microsoft Docs"
-[WebdriverIndexAutomateMicrosoftEdge]: ./index.md#automate-microsoft-edge "Automate Microsoft Edge - WebDriver (Chromium) | Microsoft Docs"
-<!-- external links -->
-[SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"
-[SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"
 
-[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver#capabilities "Capabilities - WebDriver specification | W3C"
+
+
+<!-- external links -->
+
+
+
+

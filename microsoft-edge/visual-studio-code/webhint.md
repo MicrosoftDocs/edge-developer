@@ -100,17 +100,17 @@ To contribute to the extension, navigate to [Contributing](https://github.com/we
 
 <!-- ====================================================================== -->
 <!-- links -->
-[AccessibilityIndex]: /microsoft-edge/accessibility "Accessibility | Microsoft Docs"
-[VisualstudiocodeIndex]: /microsoft-edge/visual-studio-code/index "Visual Studio Code | Microsoft Docs"
+
+
 <!-- external links -->
-[GithubWebhintio]: https://github.com/webhintio/hint "webhint | GitHub"
-[GithubWebhintioExtensionVscodeContributing]: https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md "Contributing - webhint | GitHub"
-[GithubWebhintioIndexjson]: https://github.com/webhintio/hint/blob/master/packages/configuration-development/index.json "index.json - webhintio/hint | GitHub"
-[GithubWebhintioIssuesNew]: https://github.com/webhintio/hint/issues/new "New Issues - webhintio/hint | GitHub"
 
-[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"
 
-[OpenjsFoundation]: https://openjsf.org "OpenJS Foundation"
 
-[WebhintDocsUserguideConfiguringSummary]: https://webhint.io/docs/user-guide/configuring-webhint/summary "Configuring Webhint | webhint Documentation"
-[WebhintMain]: https://webhint.io "webhint"
+
+
+
+
+
+
+
+

@@ -288,73 +288,73 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsWhatsnew200205DevtoolsDeprecationPropertiesPaneElementsTool]: ../05/devtools.md#deprecation-of-the-properties-pane-in-the-elements-tool "Deprecation of the Properties pane in the Elements tool - What's new in DevTools (Microsoft Edge 84) | Microsoft Docs"
-[DevtoolsWhatsnew200206DevtoolsCssGridDebuggingFeatures]: ../06/devtools.md#css-grid-debugging-features "CSS grid debugging features - What's New In DevTools (Microsoft Edge 85) | Microsoft Docs"
-[DevtoolsWhatsnew200208DevtoolsAccessibleColorSuggestionStylesPane]: ../08/devtools.md#accessible-color-suggestion-in-the-styles-pane "Accessible color suggestion in the Styles pane - What's New In DevTools (Microsoft Edge 86) | Microsoft Docs"
 
-[DevtoolsConsoleIndex]: ../../../console/index.md "Use the Console | Microsoft Docs"
-[DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]:  ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen Element Or JavaScript Object - Console Utilities API Reference | Microsoft Docs"
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Edit keyboard shortcuts for any action in the DevTools | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../../../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsEvaluatePerformanceReference]: ../../../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"
-[DevtoolsExperimentalFeaturesEmulationSupportDualScreenMode]: ../../../experimental-features/index.md#emulation-support-dual-screen-mode "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"
+
+
+
+
+
+
+
+
+
+
+
 <!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | Microsoft Docs"  -->
-[DevtoolsExperimentalFeaturesEnableNewCssGridDebuggingFeatures]: ../../../experimental-features/index.md#enable-new-css-grid-debugging-features "Emulation: Support dual screen mode - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesEnableNetworkConsole]: ../../../experimental-features/index.md#enable-network-console "Enable Network Console - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesEnableSourceOrderViewer]: ../../../experimental-features/index.md#enable-source-order-viewer "Enable Source Order Viewer - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTestingOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#testing-on-foldable-and-dual-screen-devices "Testing on foldable and dual-screen devices - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turning-on-experimental-features "Turning on Experimental features - Experimental features | Microsoft Docs"
-[DevtoolsConsoleApiTable]: ../../../console/api.md#table "table - Console API reference | Microsoft Docs"
-[DevtoolsCoverageIndex]: ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tab in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCssGrid]:  ../../../css/grid.md "Inspect CSS Grid | Microsoft Docs"
-[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsEvaluatePerformanceReferenceAnalyzeRenderingPerformance]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tab "Analyze rendering performance with the Rendering tab - Performance Analysis Reference | Microsoft Docs"
-[DevtoolsMediaIndex]: ../../../media/index.md "View and debug media players information | Microsoft Docs"
-[DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties  "Filter requests by properties - Network Analysis reference | Microsoft Docs"
-[DevtoolsWebauthnIndex]: ../../../webauthn/index.md "Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools | Microsoft Docs"
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
 
-[VisualStudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"
 
-[VisualStudioCodeMarketplaceMsEdgedevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Code"
 
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
 
-[CR174309]: https://crbug.com/174309 "DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"
-[CR772558]: https://crbug.com/772558 "DevTools: Update to latest version of Lighthouse | Chromium bugs"
-[CR1034663]: https://crbug.com/1034663 "Create a front-end for the WebAuthn Testing API | Chromium bugs"
-[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium bugs"
-[CR1051466]: https://crbug.com/1051466 "Support COOP/COEP debugging in DevTools | Chromium bugs"
-[CR1073899]: https://crbug.com/1073899 "Computed style tab disappears in responsive mode | Chromium bugs"
-[CR1075732]: https://crbug.com/1075732 "DevTools personalization - Movable tabs | Chromium bugs"
-[CR1084673]: https://crbug.com/1084673 "DevTools: improve the way we present CSS custom properties ((aka). CSS variables) and their values | Chromium bugs"
-[CR1093687]: https://crbug.com/1093687 "Create tool for creating and replaying synthetic network requests | Chromium bugs"
-[CR1096230]: https://crbug.com/1096230 "Group CSS properties by categories in Computed Styles pane | Chromium bugs"
-[CR1104188]: https://crbug.com/1104188 "Network tool search does not find results when searching for full URL | Chromium bugs"
-[CR1106251]: https://crbug.com/1106251 "☂ DevTools: improve Computed Styles tab | Chromium bugs"
-[CR1120316]: https://crbug.com/1120316 "Highlight bad contrast under CSS Overview > Colors | Chromium Bugs"
-[CR1121141]: https://crbug.com/1121141 "Allow filtering by resource type in network log | Chromium bugs"
-[CR1121312]: https://crbug.com/1121312 "Settings should be removed from More Tools menu | Chromium bugs"
-[CR1136394]: https://crbug.com/1136394 "Flexbox tooling | Chromium Bugs"
-[CR1136655]: https://crbug.com/1136655 "Devtools: Localization V2 | Chromium bugs"
 
-[MdnReportingApi]: https://developer.mozilla.org/docs/Web/API/Reporting_API "Reporting API | MDN"
 
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/Microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
 
-[GithubGoogleChromeLighthouseReleasesV641]: https://github.com/GoogleChrome/lighthouse/releases/v6.4.1 "v6.4.1 - GoogleChrome/lighthouse | GitHub"
 
-[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web Authentication | GitHub"
 
-[GlitchCssOverviewAccessibleColorsDemo]: https://css-overview-accessible-colors-demo.glitch.me "Hello! | Glitch"
 
-[PostmanSchemaJsonCollectionv210Index]: https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html "Postman Collection Format v2.1.0 | Postman"
 
-[SwaggerSpecificationV2]: https://swagger.io/specification/v2 "OpenAPI Specification | Swagger"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--[JecFyiDemoPerfMark]: https://jec.fyi/demo/perf-mark "" -->
 
@@ -365,7 +365,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+
+
+
+

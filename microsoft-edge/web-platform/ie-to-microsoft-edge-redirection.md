@@ -100,10 +100,10 @@ The IE compatibility list is updated within a week.
 
 <!-- links -->
 
-[MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Send an email to ietoedge@microsoft.com"
 
-[MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"
 
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Need Microsoft Edge list v1 xml | Microsoft Edge"
 
-[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "The website you were trying to reach doesn't work with Internet Explorer | Microsoft Office Support"
+
+
+
+

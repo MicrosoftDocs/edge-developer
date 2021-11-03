@@ -151,12 +151,12 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
+
 <!-- external links -->
-[A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo page | Microsoft Docs"
-[DequeAxe]: https://www.deque.com/axe "axe Tools Overview | Deque"
-[MDNCompat]: https://github.com/mdn/browser-compat-data "MDN Browser Compatibility Data | GitHub"
-[webhintIo]: https://webhint.io "webhint.io"
+
+
+
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -164,8 +164,8 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton
+
+
+
+
+

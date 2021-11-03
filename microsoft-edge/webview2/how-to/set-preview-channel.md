@@ -254,7 +254,7 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 <!-- ====================================================================== -->
 <!-- links -->
-[WebView2ConceptsVersioning]: ../concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"
+
 <!-- external links -->
-[Webview2RefWin32GlobalsCreateCoreWebView2EnvironmentWithOptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
+
+

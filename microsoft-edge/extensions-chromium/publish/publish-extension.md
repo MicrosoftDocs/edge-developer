@@ -181,19 +181,19 @@ After your submission passes certification, your extension is published in the M
 
 <!-- ========================================================================== -->
 <!-- links -->
-[ExtensionsGettingStarted]: ../getting-started/index.md "Extension concepts and architecture | Microsoft Docs"
-[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extension developer | Microsoft Docs"
-[PortChromiumExtension]: ../developer-guide/port-chrome-extension.md "Port your Chromium extension to Microsoft Edge | Microsoft Docs"
-[MicrosoftEdgeAddonsCatalogDeveloperPolicies]: ../store-policies/developer-policies.md "Microsoft Edge Add-ons website developer policies | Microsoft Docs"
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"
+
+
+
+
+
 <!-- external links -->
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
 
-[ExtensionsSupportForm]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"
 
-[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats | YouTube Help"
 
-[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos | YouTube Help"
-[GoogleYoutubeAnswer171780]: https://support.google.com/youtube/answer/171780 "Embed videos & playlists | YouTube Help"
 
-[MailtoExtDevSupportMicrosoftCom]: mailto:ext_dev_support@microsoft.com "Send email to ext_dev_support@microsoft.com"
+
+
+
+
+
+

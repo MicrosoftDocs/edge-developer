@@ -143,20 +143,20 @@ The following products are examples of cloud-based emulators and related product
 <!-- ====================================================================== -->
 <!-- links -->
 <!-- external DMC links -->
-[ArchiveMicrosoftEdgeDevtoolsEmulation]: /archive/microsoft-edge/legacy/developer/devtools-guide/emulation "Emulation | Microsoft Docs"
-[Ie11DevToolsEmulation]: /previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85) "Emulate browsers, screen sizes, and GPS locations | Microsoft Docs"
+
+
 <!-- external non-DMC links -->
-[MicrosoftDeveloperEdgeVms]: https://developer.microsoft.com/microsoft-edge/tools/vms "Download virtual machines"
-[AndroidStudioCreateManageVirtualDevices]: https://developer.android.com/tools/devices/managing-avds.html "Create and manage virtual devices | Android Developers"
-[AndroidStudioDownload]:  https://developer.android.com/sdk/installing/studio.html "Download Android Studio and SDK tools | Android Developers"
-[AndroidStudioRunAppsAndroidEmulator]: https://developer.android.com/tools/devices/emulator.html "Run apps on the Android Emulator | Android Developers"
-[AppleSimulatorHelp]: https://help.apple.com/simulator/mac/current "Simulator Help - current | Apple"
-[MacAppStoreXcode]: https://itunes.apple.com/app/xcode/id497799835 "Xcode on the Mac App Store"
-[MDNResponsiveDesignMode]: https://developer.mozilla.org/docs/Tools/Responsive_Design_View "Responsive Design Mode | MDN"
-[MozillaFirefoxDownload]: https://www.mozilla.org/firefox/all/#product-android-beta "Download the Firefox Browser"
+
+
+
+
+
+
+
+
 <!-- cloud product links -->
 [BrowserStack]: https://www.browserstack.com/automate "BrowserStack"
-[AppExperience]: https://www.sigos.com/app-experience/ "App Experience"
+
 [LambdaTest]: https://www.lambdatest.com/ "LambdaTest"
 [SauceLabs]: https://saucelabs.com "Sauce Labs"
 [TestingBot]: https://testingbot.com/ "TestingBot"
@@ -170,9 +170,9 @@ The following products are examples of cloud-based emulators and related product
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
-[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus
+
+
+
+
+
+

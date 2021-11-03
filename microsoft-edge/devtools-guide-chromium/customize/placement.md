@@ -101,12 +101,12 @@ DevTools may be undocked to a separate window, which you may move to a separate 
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevtoolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+
+
+
+
+
 
 
 <!-- ====================================================================== -->

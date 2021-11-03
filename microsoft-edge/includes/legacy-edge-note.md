@@ -11,6 +11,6 @@ ms.date: 01/07/2021
 
 <!-- links -->
 
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge  Developer Tools | Microsoft Docs"
 
-[MicrosoftSupport44533505]: https://support.microsoft.com/help/4533505 "What is Microsoft Edge Legacy?"
+
+

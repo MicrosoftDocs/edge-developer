@@ -211,7 +211,7 @@ API reference: [Check the publishing status](addons-api-reference.md#check-the-p
 
 
 <!-- links -->
-[AddonsAPIRef]: addons-api-reference.md "Microsoft Edge Add-ons API Reference | Microsoft Docs "
+
 <!-- external links -->
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API] "Enter feedback about the Add-ons API - MicrosoftDocs/edge-developer - GitHub"
-[AzureOAuthGetToken]: /azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token "OAuth 2.0 client credentials flow on the Microsoft identity platform | Microsoft Docs"
+
+

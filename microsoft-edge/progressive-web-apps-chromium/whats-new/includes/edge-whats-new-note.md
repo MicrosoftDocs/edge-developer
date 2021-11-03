@@ -9,5 +9,5 @@ The following sections list the updates to PWAs and Web Apps from the Microsoft 
 
 <!-- links -->
 
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
+
 

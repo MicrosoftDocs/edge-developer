@@ -325,47 +325,47 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevToolsCommandMenuIndex]: ../../../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevToolsCoverageIndex]: ../../../coverage/index.md "Find unused JavaScript and CSS code with the Coverage tool in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsDeviceModeIndex]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsNetworkIndex]: ../../../network/index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Display initiators and dependencies - Network Analysis Reference | Microsoft Docs"
-[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Debugger for Microsoft Edge Visual Studio Code extension | Microsoft Docs"
-[VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Elements for Microsoft Edge Visual Studio Code extension | Microsoft Docs"
+
+
+
+
+
+
+
 <!--  [201912Webassembly]: webassembly.md "Improved WebAssembly debugging in Microsoft Edge DevTools"  -->
 <!-- external links -->
-[CR842488]: https://crbug.com/842488 "Add the Initiator field to the Headers tab | Chromium Bugs"
-[CR988253]: https://crbug.com/988253 "Bug DevTools - No Association between Network request and the Timeline Graph | Chromium Bugs"
-[CR993366]: https://crbug.com/993366 "Please show path part of URL in network panel requests list | Chromium Bugs"
-[CR1004193]: https://crbug.com/1004193 "REPL mode for V8 | Chromium Bugs"
-[CR1004203]: https://crbug.com/1004203 "Make Code Coverage awesome | Chromium Bugs"
-[CR1029031]: https://crbug.com/1029031 "UA Strings are getting outdated | Chromium Bugs"
-[CR963183]: https://crbug.com/963183 "DevTools are not WCAG compliant | Chromium Bugs"
-[CR941561]: https://crbug.com/941561 "Localizability of the DevTools | Chromium Bugs"
-[CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Bugs"
 
-[AccessibilityInsights]: https://aka.ms/a11yinsights "Accessibility Insights"
 
-[GitHubGoogleChromeDevToolsAuditsPanelThrottling]: https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling "DevTools' Audits Panel Throttling - GoogleChrome/lighthouse | GitHub"
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"
-[MicrosoftEdgeInsiderAddons]: https://aka.ms/webhint/edge-extension "Microsoft Edge Insider Addons"
-[MicrosoftVisualStudio]: https://aka.ms/vs "Visual Studio"
-[MicrosoftVisualStudioBlogDebugJavascript]: https://aka.ms/vs/debug-edge "Debug JavaScript in Microsoft Edge from Visual Studio | Visual Studio Blog"
-[MicrosoftVisualStudioDownloads]: https://aka.ms/vs/download "Download Visual Studio 2019 for Windows \& Mac"
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"
-[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
-[VisualStudioCode]: https://aka.ms/vscode "Visual Studio Code"
-[VisualStudioMarketplaceDebuggerEdge]: https://aka.ms/debugger4code "Debugger for Microsoft Edge - Visual Studio Marketplace"
-[VisualStudioMarketplaceElementsMicrosoftEdgeExtension]: https://aka.ms/elements4code "Elements for Microsoft Edge - Visual Studio Marketplace"
-[VisualStudioMarketplaceWebhintExtension]: https://aka.ms/webhint4code "webhint - Visual Studio Marketplace"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [Webhint]: https://aka.ms/webhint "webhint"
-[WebhintBrowserExtension]: https://aka.ms/webhint/browser-extension "Webhint Browser Extension | webhint documentation"
-[WebhintVisualStudioCodeExtension]: https://aka.ms/webhint/code-extension "Webhint Visual Studio Code Extension | webhint documentation"
-[TrackingPrevention]: https://aka.ms/microsoftedge/tracking-prevention-blog "Improving Tracking Prevention in Microsoft Edge blog post"
-[TheWebWeWant]: https://aka.ms/webwewant "The Web We Want"
+
+
+
+
 
 
 <!-- ====================================================================== -->
@@ -376,7 +376,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+
+
+
+

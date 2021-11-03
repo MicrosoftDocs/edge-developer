@@ -11,6 +11,6 @@ ms.date: 03/26/2020
 <!-- image links -->
 
 <!-- links -->
-[DevtoolsGuideChromium]: /microsoft-edge/devtools-guide-chromium "Microsoft Edge Developer Tools"
 
-[MicrosoftEdge]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
+
+

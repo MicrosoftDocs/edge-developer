@@ -36,11 +36,11 @@ After your extension package is ready to publish in the Microsoft Edge Add-ons w
 
 <!-- links -->
 
-[ExtensionApiSupport]: ./api-support.md "API support | Microsoft Docs"
-[ExtensionsGettingStartedExtensionSideloading]: ../getting-started/extension-sideloading.md "Sideload your extension | Microsoft Docs"
-[ExtensionsPublishCreateDevAccount]: ../publish/create-dev-account.md "Register as a Microsoft Edge extension developer | Microsoft Docs"
-[ExtensionsPublishPublishExtension]: ../publish/publish-extension.md "Publish your extension | Microsoft Docs"
 
-[ChromeDeveloperWebStorePayments]: https://developer.chrome.com/webstore/one_time_payments "One-Time Payments | Chrome Developer"
 
-[mailtoExtensionMicrosoft]: mailto:ext_dev_support@microsoft.com "ext_dev_support@microsoft.com"
+
+
+
+
+
+

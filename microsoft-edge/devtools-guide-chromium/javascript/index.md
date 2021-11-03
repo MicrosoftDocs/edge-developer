@@ -244,12 +244,12 @@ A couple of code stepping controls aren't explained in this article.  For more i
 
 <!-- ====================================================================== -->
 <!-- links -->
-[DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
-[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
-[DevToolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - Use the debugger features | Microsoft Docs"
+
+
+
+
 <!-- external links -->
-[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Open Demo | Glitch"
+
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->
 
 
@@ -261,7 +261,7 @@ A couple of code stepping controls aren't explained in this article.  For more i
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+
+
+
+

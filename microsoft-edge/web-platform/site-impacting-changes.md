@@ -55,35 +55,35 @@ Review this article often.  The Microsoft Edge team updates this article as thin
 
 <!-- links -->
 
-[DeployedgeEdgeIeMode]: /deployedge/edge-ie-mode "About IE mode | Microsoft Docs"
-[DeployedgeEdgeIeModePoliciesConfigureUsingUseEnterpriseModeIeWebsiteListPolicy]: /deployedge/edge-ie-mode-policies#configure-using-the-use-the-enterprise-mode-ie-website-list-policy "Configure using the Use the Enterprise Mode IE website list policy - Configure IE mode policies | Microsoft Docs"
-[DeployedgeMicrosoftEdgePoliciesBlockthirdpartycookies]: /deployedge/microsoft-edge-policies#blockthirdpartycookies "BlockThirdPartyCookies - Microsoft Edge - Policies | Microsoft Docs"
-[DeployedgeMicrosoftEdgePoliciesCookiesallowedforurls]: /deployedge/microsoft-edge-policies#cookiesallowedforurls "CookiesAllowedForUrls - Microsoft Edge - Policies | Microsoft Docs"
-[DeployedgeMicrosoftEdgePoliciesInsecurecontentallowedforurls]:  /deployedge/microsoft-edge-policies#insecurecontentallowedforurls "InsecureContentAllowedForUrls - Microsoft Edge - Policies | Microsoft Docs"
-[DeployedgeMicrosoftEdgePoliciesSslversionmin]: /deployedge/microsoft-edge-policies#sslversionmin "SSLVersionMin - Microsoft Edge - Policies | Microsoft Docs"
-[DeployEdgeMicrosoftEdgePoliciesInsecurePrivateNetworkRequestAllowed]: /deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowed "InsecurePrivateNetworkRequestsAllowed - Microsoft Edge - Policies | Microsoft Docs"
-[DeployEdgeMicrosoftEdgePoliciesInsecurePrivateNetworkRequestAllowedForUrls]: /deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowedforurls "InsecurePrivateNetworkRequestsAllowedForUrls - Microsoft Edge - Policies | Microsoft Docs"
 
-[ChromestatusFeaturesSchedule]: https://www.chromestatus.com/features/schedule "Release timeline | Chrome Platform Status"
-[ChromestatusFeature4664843055398912]: https://chromestatus.com/feature/4664843055398912 "Disallow sync XHR in page dismissal JavaScript | Chrome Platform Status"
-[ChromestatusFeature4926989725073408]: https://chromestatus.com/feature/4926989725073408 "Autoupgrade Image Mixed Content | Chrome Platform Status"
-[ChromestatusFeature5088147346030592]: https://chromestatus.com/feature/5088147346030592 "Cookies default to SameSite=Lax | Chrome Platform Status"
-[ChromestatusFeature6246151319715840]: https://chromestatus.com/feature/6246151319715840 "Deprecate FTP support | Chrome Platform Status"
-[ChromestatusFeature6251880185331712]: https://chromestatus.com/feature/6251880185331712 "Referrer Policy: Default to strict-origin-when-cross-origin | Chrome Platform Status"
-[ChromestatusFeature6678134168485888]: https://chromestatus.com/feature/6678134168485888 "Remove 3DES in TLS | Chrome Platform Status"
-[ChromestatusFeature5436853517811712]: https://chromestatus.com/feature/5436853517811712 "Restrict private network requests for subresources to secure contexts | Chrome Platform Status"
-[ChromestatusFeature5823036655665152]: https://www.chromestatus.com/feature/5823036655665152 "[WebRTC] Deprecate and Remove Plan B (deprecated) | Chrome Platform Status"
-[ChromiumFlashRoadmapSupportRemoved]: https://www.chromium.org/flash-roadmap#TOC-Flash-Support-Removed-from-Chromium-Target:-Chrome-88---Jan-2021- "Flash Support Removed from Chromium (Target: Chrome 88+ - Jan 2021) - Flash Roadmap | Chromium Projects"
 
-[ChromeDevelopersOrigintrialsAppCacheOriginTrial]: https://developers.chrome.com/origintrials/#/view_trial/1776670052997660673 "AppCache OriginTrial token | Chrome Developers"
-[ChromeDevelopersOrigintrialsWebRTCPlanBOriginTrial]: https://developer.chrome.com/origintrials/#/view_trial/3892235977954951169 "WebRTC Plan B Reverse Origin Trial Token | Chrome Developers"
 
-[GoogleBlogSecurity20200206]: https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html "Protecting users from insecure downloads in Google Chrome - Google Online Security Blog"
 
-[WebDevAppCacheRemoval]: https://web.dev/appcache-removal "Preparing for AppCache removal | web.dev"
 
-[PSADeprecateWebRTCPlanB]: https://groups.google.com/g/discuss-webrtc/c/UBtZfawdIAA/m/-UVQQcubBQAJ "PSA: Timeline for Plan B SDP Deprecation and Removal - Please Migrate to Unified Plan"
 
-[PSADeprecateWebRTCPlanBLimitedToCanaryInM93]: https://groups.google.com/g/discuss-webrtc/c/DRRAnej3BTE/m/EqIhrLleBgAJ "PSA: Plan B throwing is limited to Canary in M93 (not throwing in Stable)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--todo:  cleanup links  -->
