@@ -250,10 +250,8 @@
                   href: devtools-guide-chromium/storage/sessionstorage.md
                 - name: WebSQL
                   href: devtools-guide-chromium/storage/websql.md
-    # Changes
-            # - name: Changes*
-            #   href: devtools-guide-chromium/changes/changes-tool.md
-    # Console (Panel or Drawer)
+            - name: Changes
+              href: devtools-guide-chromium/changes/changes-tool.md
             - name: Console
               items:
                 - name: Console overview
