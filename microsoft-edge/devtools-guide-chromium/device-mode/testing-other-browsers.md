@@ -141,7 +141,7 @@ The following products are examples of cloud-based emulators and related product
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 <!-- external DMC links -->
 <!-- external non-DMC links -->
 <!-- cloud product links -->
@@ -158,4 +158,3 @@ The following products are examples of cloud-based emulators and related product
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-

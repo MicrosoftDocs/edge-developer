@@ -90,7 +90,3 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 |:--- |:--- |:--- |
 | msedge.msedgedriverVersion | string | The version of EdgeDriver. |
 | msedge.userDataDir | string | The path to the user data folder used by the Microsoft Edge instance. |
-
-<!-- links -->
-<!-- external links -->
-

@@ -74,12 +74,3 @@ To install the webhint extension:
 
 *  [The webhint extension for Visual Studio Code](./webhint.md) - How to use webhint in Visual Studio Code.
 *  [webhint](https://webhint.io)
-
-
-<!-- ====================================================================== -->
-<!--links -->
-<!-- external links -->
-
-
-
-

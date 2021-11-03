@@ -235,7 +235,7 @@ To build a robust, real-world PWA, consider the following web best practices:
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 <!-- todo: find how many hits in this file, move to new push .md file if 0 -->
 
 
@@ -264,6 +264,3 @@ To build a robust, real-world PWA, consider the following web best practices:
 
 
 [Webhint]: https://webhint.io "webhint"
-
-
-

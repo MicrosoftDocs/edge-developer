@@ -94,11 +94,3 @@ To prevent such a memory leak:
 ## Follow recommended WebView2 security best practices
 
 For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications](../concepts/security.md).
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-
-
-

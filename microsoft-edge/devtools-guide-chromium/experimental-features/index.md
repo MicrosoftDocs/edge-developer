@@ -252,5 +252,5 @@ To configure options for persistent overlays for CSS grids or Flexbox layouts, u
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-<!-- external links: -->
+
+<!-- external links: -->

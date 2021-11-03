@@ -178,6 +178,3 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 
 *   [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
 *   [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
-
-
-<!-- links -->

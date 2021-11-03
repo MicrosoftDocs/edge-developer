@@ -55,8 +55,3 @@ The Web We Want is a cross-browser initiative to identify missing features for w
 *  Use the links to resources.
 
 You can follow the Web We Want initiative on Twitter or LinkedIn, and participate in surveys to prioritize submitted Wants.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->

@@ -91,7 +91,3 @@ The Microsoft Edge Origin Trials portal today only supports SSL Enabled Origins,
 
 *   Register `http://localhost` as the origin for your experiments.  To use `http://localhost` today, navigate to `edge://flags` and set the experiment to **Enabled**.
 *   Use extensions with `extensions://` prefixed origins to enroll in experiments.
-
-<!-- links -->
-
-

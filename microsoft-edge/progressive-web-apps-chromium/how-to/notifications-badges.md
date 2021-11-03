@@ -331,7 +331,3 @@ To test push notifications for your PWA:
 ## See also
 
 *   [Web Push Notifications Demo](https://webpushdemo.azurewebsites.net)
-
-
-<!-- ====================================================================== -->
-<!-- external links -->

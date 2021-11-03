@@ -50,11 +50,3 @@ Service workers are available for testing in Canary.  To migrate your extensions
 The current declarative net request API implementation is available in our Stable and Beta channels. Test the changes, and provide feedback.
 
 The Microsoft Edge extensions team continues publishing updates on the blog.  You may provide your feedback on the changes through [Tech Community](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
-
-<!-- links -->
-
-
-
-
-
-

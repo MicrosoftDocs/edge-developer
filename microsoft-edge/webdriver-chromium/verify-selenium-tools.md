@@ -45,9 +45,3 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 =0iMW
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-<!-- links -->
-
-
-
-

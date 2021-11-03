@@ -86,11 +86,3 @@ Applications that require IE mode for the website (or app) content to function c
 *  [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
 *  [Configure IE mode policies](/deployedge/edge-ie-mode-policies)
 *  [Fix web compatibility issues using document modes and the Enterprise Mode site list](/internet-explorer/ie11-deploy-guide/fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-
-
-

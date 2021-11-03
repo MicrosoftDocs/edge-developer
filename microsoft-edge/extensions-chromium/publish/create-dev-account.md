@@ -151,7 +151,3 @@ To display your verification status, navigate to [Partner Center](https://partne
 ## See also
 
 *  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
-
-
-<!-- links -->
-<!-- external links -->

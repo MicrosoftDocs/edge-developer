@@ -84,13 +84,3 @@ The web is a great platform for the new class of foldable and dual-screen device
 *   [Documentation for creating apps on dual-screen devices](/dual-screen/index)
 *   [The Microsoft Edge web platform explainer for new APIs to build web experiences on foldable and dual-screen devices](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md)
 *   [Recording of Microsoft 365 Developer Day session: How to build dual-screen experiences for websites and web apps](https://youtu.be/DXrZWsqXPVc)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-<!-- external links -->
-
-
-
-

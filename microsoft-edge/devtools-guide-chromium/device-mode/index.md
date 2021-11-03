@@ -283,9 +283,9 @@ You can also set user-agent client hints in [Network Analysis reference](../netw
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
-<!-- external links -->
+
 
 
 <!-- ====================================================================== -->
@@ -295,4 +295,3 @@ You can also set user-agent client hints in [Network Analysis reference](../netw
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-

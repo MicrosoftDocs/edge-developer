@@ -277,9 +277,9 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
-<!-- external links -->
+
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
 
 
@@ -298,4 +298,3 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-

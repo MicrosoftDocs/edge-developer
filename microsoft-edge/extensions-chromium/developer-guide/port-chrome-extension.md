@@ -33,8 +33,3 @@ To port your Chrome extension, complete the following steps.
 ## Next steps
 
 After your extension package is ready to publish in the Microsoft Edge Add-ons website, [create a developer account](../publish/create-dev-account.md) and [publish your extension](../publish/publish-extension.md).
-
-<!-- links -->
-
-
-

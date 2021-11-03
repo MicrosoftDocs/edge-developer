@@ -122,19 +122,3 @@ External links:
 Extensions for Visual Studio Code rather than for Microsoft Edge:
 *  [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md)
 *  [webhint extension for Visual Studio Code](../visual-studio-code/webhint.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-<!-- external links -->
-
-
-
-
-
-
-
-
-
-

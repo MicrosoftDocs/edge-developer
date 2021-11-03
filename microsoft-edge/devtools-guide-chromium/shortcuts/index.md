@@ -165,7 +165,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->
 
@@ -177,4 +177,3 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-

@@ -250,8 +250,3 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 > [!NOTE]
 > After setting an environment variable this way, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio or log out of Windows and then log in again.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->

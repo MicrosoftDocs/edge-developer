@@ -299,15 +299,3 @@ Example native app folder structure:
         \win-x64\native\WebView2Loader.dll (x64)
         \win-x86\native\WebView2Loader.dll (x86)
 ```
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-
-
-
-
-
-
-

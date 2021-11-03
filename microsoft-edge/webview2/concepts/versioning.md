@@ -132,12 +132,3 @@ When you develop a WebView2 app using a recent version of the WebView2 SDK, if y
 If your code determines that an API is unavailable in the client's installed WebView2 Runtime, you should provide graceful fallback for the associated feature, or inform the user that they must update the WebView2 Runtime to use the feature.
 
 This technique is listed as a WebView2 development best practice, at [Test whether APIs are supported by the installed WebView2 Runtime](developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime).
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-
-
-
-

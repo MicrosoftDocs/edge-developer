@@ -29,6 +29,4 @@ keywords: microsoft edge, extensions development, browser extensions, add-ons, p
 If you think an item in the Microsoft Edge Add-ons website violates a copyright or trademark, navigate to [Notices of Infringement](https://www.microsoft.com/info/Marketplace.html) and complete the form.  The Microsoft Edge extensions team reviews your report and then takes the necessary action.
 
 <!-- links in this repo -->
-<!-- other Microsoft links -->
-
-
+<!-- other Microsoft links -->

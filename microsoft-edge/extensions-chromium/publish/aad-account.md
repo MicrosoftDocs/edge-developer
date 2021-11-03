@@ -119,7 +119,7 @@ If you need help or assistance with associating your Azure Active Directory acco
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 
 <!-- DMC/windows/uwp -->
 
@@ -128,6 +128,4 @@ If you need help or assistance with associating your Azure Active Directory acco
 
 
 
-<!-- non-DMC -->
-
-
+<!-- non-DMC -->

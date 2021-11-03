@@ -180,9 +180,3 @@ After your submission passes certification, your extension is published in the M
 
 
 <!-- ========================================================================== -->
-<!-- links -->
-<!-- external links -->
-
-
-
-

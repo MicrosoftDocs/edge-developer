@@ -118,7 +118,3 @@ The file is stored in your overrides folder.  Verify that DevTools create a fold
 ## Two-way interaction of overrides
 
 Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.
-
-
-<!-- ====================================================================== -->
-<!-- links -->

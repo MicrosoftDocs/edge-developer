@@ -339,12 +339,3 @@ All the extensions should adhere to the store policies listed above. If your ext
 | Main Complaint Type #1: Enforcement Appeal | Main Complaint Type #2: Certification Results | Other Complaint Types | Total Complaints | Overturned Complaints |
 |:--- |:--- |
 | 8 | 2 | 4 | 14 | 0 |
-
-
-<!-- links -->
-
-
-
-
-
-

@@ -305,18 +305,3 @@ For additional WebView2 functionality that isn't covered in this article, see th
 *  [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
 *  [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
 *  [WebView2 API reference](/microsoft-edge/webview2/reference/win32)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-
-
-
-
-

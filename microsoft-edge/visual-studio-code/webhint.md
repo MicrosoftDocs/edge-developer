@@ -96,11 +96,3 @@ To contribute to the extension, navigate to [Contributing](https://github.com/we
 
 *  [Accessibility](/microsoft-edge/accessibility)
 *  [Visual Studio Code](/microsoft-edge/visual-studio-code/index)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-
-
-

@@ -492,7 +492,7 @@ The following articles cover the **Debugger** pane and breakpoints:
 
 
 <!-- ====================================================================== -->
-<!-- links -->
+
 <!-- external: -->
 
 
@@ -503,4 +503,3 @@ The following articles cover the **Debugger** pane and breakpoints:
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-

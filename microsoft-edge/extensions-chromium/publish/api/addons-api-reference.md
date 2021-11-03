@@ -361,7 +361,3 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 ## See also
 
 *  [Using the Microsoft Edge Add-ons API](using-addons-api.md)
-
-
-<!-- links -->
-<!-- external links -->

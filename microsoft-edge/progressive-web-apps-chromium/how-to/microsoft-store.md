@@ -153,13 +153,3 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 *   [Update an existing Store app to a PWA](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/update-existing-app.md)
 *   [Image recommendations for PWAs in the Store](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/image-recommendations.md)
 *   [App packaging explainer](https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-

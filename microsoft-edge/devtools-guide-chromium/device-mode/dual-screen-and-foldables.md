@@ -74,14 +74,3 @@ Here are additional resources that may help you enhance your website (or app) fo
 
 *   For more information about web development on dual-screen devices, navigate to [Dual-screen web experiences](/dual-screen/web/index).
 *   Install the [Surface Duo emulator](/dual-screen/android/use-emulator).  The Surface Duo emulator is different from the emulator in Microsoft Edge, runs Android, and integrates with [Android Studio](https://developer.android.com/studio/).  For more information, navigate to [Get the Surface Duo SDK](/dual-screen/android/get-duo-sdk).
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-

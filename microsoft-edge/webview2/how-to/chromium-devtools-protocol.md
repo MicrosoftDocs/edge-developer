@@ -177,13 +177,3 @@ The Chrome DevTools Protocol is maintained by the open source Chromium project, 
 
 *  [Microsoft Edge DevTools Protocol overview](../../devtools-protocol-chromium/index.md)
 *  [WebView2 samples](https://github.com/MicrosoftEdge/WebView2Samples)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-

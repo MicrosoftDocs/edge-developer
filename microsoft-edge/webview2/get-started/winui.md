@@ -280,23 +280,3 @@ Congratulations, you built your first WebView2 app!
 *  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 *  [WebView2 spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - detailed information about the WebView2 API.
 *  [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
