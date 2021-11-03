@@ -3,7 +3,7 @@ description: Release notes for Microsoft Edge WebView2 SDK
 title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/27/2021
+ms.date: 09/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -14,10 +14,13 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 The WebView2 team updates the [WebView2 SDK][NuGetGallery] on a six-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.
 
 > [!NOTE]
-> Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends that you use the Canary preview channel of Microsoft Edge when you develop using a prerelease version of the WebView2 SDK package, and use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.  Canary is the recommended preview channel because it ships at the fastest cadence and has the newest APIs.  For more information, navigate to [Matching the Runtime version with the SDK version][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
+> Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
+> *  Use the Canary preview channel of Microsoft Edge when you develop using a prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel because it ships at the fastest cadence and has the newest APIs.
+> *  Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
+>
+> For more information, see [Matching the Runtime version with the SDK version][Webview2ConceptsVersioningMatchingWebview2RuntimeVersions].
 
-> [!NOTE]
-> WebView2 bug fixes are either Runtime-specific or SDK-specific.
+WebView2 bug fixes are either Runtime-specific or SDK-specific.
 
 
 <!-- ====================================================================== -->
@@ -27,6 +30,56 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features][SwitchToPreviewChannel].
 
+
+<!-- ====================================================================== -->
+## 1.0.1056-prerelease
+
+Release Date: October 29, 2021
+
+[NuGet package for WebView2 SDK 1.0.1056-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1056-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 97.0.1056.0 or higher.
+
+### General
+
+*   General reliability improvements.
+
+#### Experimental Features
+
+*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true).  This API enables:
+   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
+   *  Programmatically opening and closing the default download dialog.
+   *  Making changes in response to the dialog opening and closing.
+*  The [HTTP Authentication API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental10?view=webview2-1.0.1056-prerelease&preserve-view=true).
+
+#### Bug Fixes
+
+*   The real process exit code is now provided as `ExitCode` in `ICoreWebView2ProcessFailedEventArgs2` for `COREWEBVIEW2_PROCESS_FAILED_KIND_BROWSER_PROCESS_EXITED` process failure.
+*   The `--js-flags` switch is now honored in the `AdditionalBrowserArguments` that are provided in `CoreWebView2EnvironmentOptions`.
+*   Fixed access to the `name` property for host objects in JavaScript. ([Issue #641](https://github.com/MicrosoftEdge/WebView2Feedback/issues/641))
+*   Fixed an `InvalidCastException` in the WPF control when it's implicitly initialized prior to the event loop starting. ([Issue #1577](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1577))
+
+
+<!-- ====================================================================== -->
+## 1.0.1020.30
+
+Release Date: October 25, 2021
+
+[NuGet package for WebView2 SDK 1.0.1020.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1020.30)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 95.1020.30 or higher.
+
+### General
+
+#### Bug Fixes
+
+*   Updated `EnsureCoreWebView2Async` to not throw exceptions when the WPF source property is set. ([Issue #1781](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1781))
+*   Fixed a bug where WebView2 crashes after interacting with multiple windows that show a download UI. ([Issue #1723](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723))
+
+#### Promotions
+
+The following items are now stable:
+*   [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
 
 <!-- ====================================================================== -->
 ## 1.0.992.28
@@ -297,7 +350,6 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Bug Fixes
 *   Fixed a bug in WebView2 .NET controls that first header is missing when iterating `CoreWebView2WebResourceRequest` headers collection. ([Issue #1123][GithubMicrosoftedgeWebviewfeedbackIssue1123]).
-
 
 
 <!-- ====================================================================== -->

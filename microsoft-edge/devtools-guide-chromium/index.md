@@ -40,7 +40,7 @@ DevTools opens, with the **Elements** tool selected.
 
 There are two main ways to interact with DevTools.
 *   Use the mouse.
-*   Keyboard shortcuts.  These provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  See [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideShortcutsIndex].
+*   Keyboard shortcuts.  These provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  See [Keyboard shortcuts][DevtoolsGuideShortcutsIndex].
 
 See also [Open Microsoft Edge DevTools][DevtoolsGuideOpenIndex] - how to open the different features in DevTools.
 
@@ -258,7 +258,7 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 [DevtoolsGuideNetworkIndex]: ./network/index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsGuideOpenIndex]: ./open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"
-[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
+[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Keyboard shortcuts | Microsoft Docs"
 [DevtoolsGuideSourcesIndex]: ./sources/index.md "Sources tool overview | Microsoft Docs"
 [DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "View and edit session storage with Microsoft Edge DevTools | Microsoft Docs"
 [DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"

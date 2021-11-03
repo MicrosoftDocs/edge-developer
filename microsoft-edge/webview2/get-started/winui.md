@@ -200,7 +200,7 @@ Apps that host WebView2 controls listen for the following events that are raised
 > [!NOTE]
 > If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
-For more information, navigate to [Navigation Events][Webviews2ConceptsNavigationEvents].
+For more information, see [Navigation events for WebView2][Webviews2ConceptsNavigationEvents].
 
 When errors occur, the following events are raised and may navigate to an error webpage.
 
@@ -285,7 +285,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 <!-- links -->
 [WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
-[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
+[Webviews2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events for WebView2 | Microsoft Docs"
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 [Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
 
