@@ -132,3 +132,27 @@ When you develop a WebView2 app using a recent version of the WebView2 SDK, if y
 If your code determines that an API is unavailable in the client's installed WebView2 Runtime, you should provide graceful fallback for the associated feature, or inform the user that they must update the WebView2 Runtime to use the feature.
 
 This technique is listed as a WebView2 development best practice, at [Test whether APIs are supported by the installed WebView2 Runtime](developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime).
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Webview2ConceptsDistribution]: ./distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
+[Webview2ReleaseNotes]: ../release-notes.md "Release notes for WebView2 SDK | Microsoft Docs"
+[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - Release notes for WebView2 SDK | Microsoft Docs"
+[Webview2ConceptsDevguideTestAPIs]: developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime "Test whether APIs are supported by the installed WebView2 Runtime | Microsoft Docs"
+[SetPreviewChannel]: ../how-to/set-preview-channel.md "Switch to a preview channel to test upcoming APIs and features | Microsoft Docs"
+<!-- external links -->
+[DeployedgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"
+
+[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
+[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
+[DotnetApiWebview2WinformsWebview2Appliesto]: /dotnet/api/microsoft.web.webview2.winforms.webview2#applies-to "WebView2 Class | Microsoft Docs"
+[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"
+
+[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 | Microsoft Developer"
+
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"
+[GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCpp]: https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622 "AppWindow.cpp - MicrosoftEdge/WebView2Samples | GitHub"
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"

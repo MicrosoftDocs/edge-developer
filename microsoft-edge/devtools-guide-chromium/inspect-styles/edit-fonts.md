@@ -102,3 +102,10 @@ The CSS Properties editor also includes preset keywords.  To use the preset keyw
 :::image type="complex" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="Open the preset keyword interface" lightbox="../media/font-editor-preset-font-sizes.msft.png":::
    Open the preset keyword interface
 :::image-end:::
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
+[DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Experimental features | Microsoft Docs"
+[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"

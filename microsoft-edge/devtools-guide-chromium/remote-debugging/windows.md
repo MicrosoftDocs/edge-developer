@@ -167,3 +167,23 @@ The **Cookies** pane in the **Application** panel is blank on Windows 10 version
 The **Audits** tool, the **3D View** tool, the **Emulated Devices** section in **Settings**, and the **Accessibility tree** pane in the **Elements** tool are not currently working as expected.  The team plans to fix the listed tools in a future update of Microsoft Edge.
 
 The file explorer does not launch from the DevTools in the **Sources** tool or in the **Security** panel when you remote debug.  The team plans to fix the tools in a future update of Microsoft Edge.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools overview | Microsoft Docs"
+[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"
+<!-- external links -->
+[DotnetFrameworkWcfFeatureDetailsHowToViewCertificatesWithMmcSnapInViewCertificatesWithCertificateManagerTool]: /dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool "View certificates with the Certificate Manager tool - How to: View certificates with the MMC snap-in | Microsoft Docs"
+
+[WindowsAppsGetStartedEnableYourDeviceForDevelopment]: /windows/apps/get-started/enable-your-device-for-development "Enable your device for development | Microsoft Docs"
+
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview | Microsoft Docs"
+[WindowsUwpDebugTestPerfDevicePortalSetup]: /windows/uwp/debug-test-perf/device-portal#setup "Setup - Windows Device Portal overview | Microsoft Docs"
+[WindowsUwpDebugTestPerfDevicePortalDesktopRegistryBasedConfigurationForDevicePortal]: /windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal "Registry-based configuration for Device Portal - Device Portal for Windows Desktop | Microsoft Docs"
+
+[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
+
+[MicrosoftStoreAppsWindows]: https://www.microsoft.com/store/apps/windows "Windows Apps | Microsoft Store"
+
+[MicrosoftStoreApps9p6cmfv44zlt]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools for Microsoft Edge (Beta) | Microsoft Store"

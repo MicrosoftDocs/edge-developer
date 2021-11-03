@@ -283,9 +283,16 @@ You can also set user-agent client hints in [Network Analysis reference](../netw
 
 
 <!-- ====================================================================== -->
-
+<!-- links -->
+[DevToolsRemoteDebugging]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"
 <!--[DevToolsCommunity]: ../index.md#community "Join the DevTools community | Microsoft Docs"  -->
-
+<!-- external links -->
+[MDNWindowDevicePixelRatio]: https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio "Window.devicePixelRatio | MDN"
+[MDNUserAgent]: https://developer.mozilla.org/docs/Glossary/User_agent "User Agent | MDN"
+[MDNDeviceOrientaitonAlpha]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha "DeviceOrientationEvent.alpha | MDN"
+[MDNDeviceOrientaitonBeta]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta "DeviceOrientationEvent.beta | MDN"
+[MDNDeviceOrientaitonGamma]: https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma "DeviceOrientationEvent.gamma | MDN"
+[WikiApproximation]: https://en.wikipedia.org/wiki/Order_of_approximation#First-order "Order of Approximation - First-order - Wikipedia"
 
 
 <!-- ====================================================================== -->
@@ -295,3 +302,8 @@ You can also set user-agent client hints in [Network Analysis reference](../netw
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

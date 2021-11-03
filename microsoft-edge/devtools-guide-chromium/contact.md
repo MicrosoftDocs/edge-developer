@@ -55,3 +55,14 @@ The Web We Want is a cross-browser initiative to identify missing features for w
 *  Use the links to resources.
 
 You can follow the Web We Want initiative on Twitter or LinkedIn, and participate in surveys to prioritize submitted Wants.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[OpeningDevTools]: index.md#opening-devtools "OpeningDevTools - Microsoft Edge Developer Tools overview | Microsoft Edge Developer documentation"
+[WebWeWant]: ../web-we-want/index.md "The Web We Want initiative | Microsoft Edge Developer documentation"
+<!-- external links -->
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"
+[ContributeEdgeDevDocsRepo]: https://github.com/MicrosoftDocs/edge-developer#contributing "contribute to the edge-developer documentation repo | Microsoft Edge Developer documentation"

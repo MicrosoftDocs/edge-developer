@@ -35,3 +35,12 @@ Always check the Source property of the WebView before using `ExecuteScript`, `P
 When examining the result of an `ExecuteScript` method call, a `WebMessageReceived` event, always check the Source of the sender, or any other mechanism of receiving information from an HTML document in a WebView validate the URI of the HTML document is what you expect.
 
 When constructing a message to send into a WebView, prefer using `PostWebMessageAsJson` and construct the JSON string parameter using a JSON library. This avoids any potential accidents of encoding information into a JSON string or script and ensure no attacker controlled input can modify the rest of the JSON message or run arbitrary script. -->
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Webview2Main]: ../index.md "Introduction to Microsoft Edge WebView2 | Microsoft Docs"
+
+[Webview2ReferenceWin32Icorewebview2settings]: /microsoft-edge/webview2/reference/win32/icorewebview2settings "interface ICoreWebView2Settings | Microsoft Docs"
+
+[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2settings]: /dotnet/api/microsoft.web.webview2.core.corewebview2settings "CoreWebView2Settings Class (Microsoft.Web.WebView2.Core) | Microsoft Docs"

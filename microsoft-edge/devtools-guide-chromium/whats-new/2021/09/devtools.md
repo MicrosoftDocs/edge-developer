@@ -95,10 +95,17 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- ====================================================================== -->
-
+<!-- links -->
+[EdgeDevToolsExtensionForVSCode]: ../../../../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
+[LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on-the-web-from-the-console "Look up error messages on the web from the Console - Use the Console | Microsoft Docs"
+[DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
+[ApplyColorThemesToDevTools]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
+[PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
 
-
-
+<!-- external links -->
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
+
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
 
 
 <!-- ====================================================================== -->
@@ -108,3 +115,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen

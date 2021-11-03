@@ -347,7 +347,13 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 
 
 <!-- ====================================================================== -->
-
+<!-- links -->
+[DevToolsJavascriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript with Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsJavascriptGetStarted]: ./index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsJavascriptSnippets]: ./snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"
+[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
+[DevToolsCustomize]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
 
 
 <!-- ====================================================================== -->
@@ -357,3 +363,8 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

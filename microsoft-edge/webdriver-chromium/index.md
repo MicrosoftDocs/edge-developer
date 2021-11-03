@@ -406,3 +406,58 @@ By default, Microsoft Edge Driver sends diagnostic data such as the status of th
 
 *  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
 *  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsIndex]: ../devtools-guide-chromium/index.md "Microsoft Edge Developer Tools | Microsoft Docs"
+[WebdriverCapabilitiesEdgeOptions]: ./capabilities-edge-options.md "Capabilities and EdgeOptions | Microsoft Docs"
+[MicrosoftEdgePrivacyWhitepaper]: /microsoft-edge/privacy-whitepaper#microsoft-edge-driver
+
+<!-- external links -->
+[DeployedgeMicrosoftEdgePoliciesDevelopertoolsavailability]: /deployedge/microsoft-edge-policies#developertoolsavailability "DeveloperToolsAvailability - Microsoft Edge - Policies | Microsoft Docs"
+[DeployedgeMicrosoftEdgeSecurityWindowsDefenderApplicationGuard]: /deployedge/microsoft-edge-security-windows-defender-application-guard "Microsoft Edge support for Microsoft Defender Application Guard | Microsoft Docs"
+
+[WindowsSecurityThreatProtectionMicrosoftDefenderApplicationGuardWindows10]: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview "Microsoft Defender Application Guard (Windows 10) - Windows security | Microsoft Docs"
+
+[DockerHub]: https://hub.docker.com "Docker Hub"
+[DockerHubMsedgedriver]: https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description "msedgedriver | Docker hub"
+
+[GithubMicrosoftEdgeSeleniumTools]: https://github.com/microsoft/edge-selenium-tools "microsoft/edge-selenium-tools | GitHub"
+[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"
+[GithubSeleniumHq]: https://github.com/SeleniumHQ/selenium "SeleniumHQ/selenium | GitHub"
+[GithubSeleniumHqWikiIEDriver]: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver "Internet Explorer Driver - Selenium | GitHub"
+
+[JavaScriptnpm]: https://www.npmjs.com/ "npm"
+[JavaScriptSeleniumTools]: https://www.npmjs.com/package/@microsoft/edge-selenium-tools "@microsoft/edge-selenium-tools | npm"
+[JavaScriptSelenium]: https://www.npmjs.com/package/selenium-webdriver "selenium-webdriver | npm"
+
+[MicrosoftDeveloperMicrosoftEdgeToolsWebdriver]: https://developer.microsoft.com/microsoft-edge/tools/webdriver "Microsoft Edge Driver | Microsoft Edge Developer"
+
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
+
+[NugetCLI]:https://www.nuget.org/packages/NuGet.CommandLine/ "NuGet.CommandLine | NuGet Gallery"
+[NugetPackagesMicrosoftEdgeSeleniumtools]: https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools "Microsoft.Edge.SeleniumTools | NuGet Gallery"
+[NugetPackagesSeleniumWebdriver31410]: https://www.nuget.org/packages/Selenium.WebDriver/3.141.0 "Selenium.WebDriver 3.141.0 | NuGet Gallery"
+[NugetPackagesSeleniumWebdriver400beta02]: https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-beta2 "Selenium.WebDriver 4.0.0-beta2 | NuGet Gallery"
+
+[PythonPip]: https://pypi.org/project/pip/ "pip | PyPI"
+[PythonSeleniumTools]: https://pypi.org/project/msedge-selenium-tools/ "msedge-selenium-tools | PyPI"
+[PythonSelenium]: https://pypi.org/project/selenium/ "selenium | PyPI"
+
+[SeleniumHQ]: https://www.selenium.dev "SeleniumHQ"
+[SeleniumDocumentation]: https://www.selenium.dev/documentation "The Selenium Browser Automation Project | Documentation for Selenium"
+[SeleniumInstallingLibraries]: https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries "Installing Selenium libraries | Selenium"
+
+[SonatypeMavenRepositorySearch]: https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar "Sonatype Maven Central Repository Search | com.microsoft.edge:msedge-selenium-tools-java"
+
+[TwitterTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a tweet"
+
+[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
+
+[W3CWebdriver]: https://w3.org/TR/webdriver2 "WebDriver | W3C"
+[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 New Session | W3C Working Draft 24 August 2020"
+
+[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless browser | Wikipedia"

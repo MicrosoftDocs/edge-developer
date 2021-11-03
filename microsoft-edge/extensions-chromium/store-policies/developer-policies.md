@@ -339,3 +339,22 @@ All the extensions should adhere to the store policies listed above. If your ext
 | Main Complaint Type #1: Enforcement Appeal | Main Complaint Type #2: Certification Results | Other Complaint Types | Total Complaints | Overturned Complaints |
 |:--- |:--- |
 | 8 | 2 | 4 | 14 | 0 |
+
+
+<!-- links -->
+
+[MicrosoftEdgeContentSecurityPolicyRemoteScript]: ./csp.md#relaxing-the-default-policy "Relaxing the default policy - Content Security Policy (CSP) | Microsoft Docs"
+
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer Agreement | Microsoft Docs"
+[MicrosoftIdentifiesMalwareUnwantedApplications]: /windows/security/threat-protection/intelligence/criteria "How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"
+
+[GoogleYoutubeAnswer2531367Topic7072227]: https://support.google.com/youtube/answer/2531367?ref_topic=7072227 "Set your default ad formats - YouTube Help"
+[GoogleYoutubeAnswer132596]: https://support.google.com/youtube/answer/132596 "Ads on embedded videos - YouTube Help"
+[FTCChildrensPrivacy]: https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy "Children's Privacy - Federal Trade Commission"
+
+[MicrosoftAdvertisingCreativeAcceptancePolicies]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-acceptance-policies "Creative acceptance policies - Microsoft Advertising"
+[MicrosoftAdvertisingCreativeSpecifications]: https://about.ads.microsoft.com/solutions/ad-products/display-advertising/creative-specs "Creative Specifications - Microsoft Advertising"
+
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
+
+[MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"

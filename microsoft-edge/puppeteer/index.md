@@ -112,16 +112,28 @@ This is just a simple example of the automation and testing scenarios enabled by
 
 
 <!-- ====================================================================== -->
-
+<!-- links -->
+[WebdriverChromiumMain]: ../webdriver-chromium/index.md "WebDriver | Microsoft Docs"
+<!-- external links -->
+<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->
+[GithubChromedevtoolsProtocol]: https://chromedevtools.github.io/devtools-protocol "Chrome DevTools Protocol Viewer | GitHub"
 
-<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->
-
-
-
-
-
-
-
-
+[MicrosoftBlogsWindowsExperience20181206]: https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration "Microsoft Edge:  Making the web better through more open-source collaboration | Microsoft Experience Blog"
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
+
+[ChromiumHome]: https://www.chromium.org/Home "Chromium | The Chromium Projects"
+
+[NodejsMain]: https://nodejs.org "Node.js"
+
+[npmEdgePaths]: https://www.npmjs.com/package/edge-paths "Edge Paths | npm"
+
+[PuppeteerMain]: https://pptr.dev "Puppeteer"
+[PuppeteerApivscore]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-puppeteer-vs-puppeteer-core "puppeteer vs. puppeteer-core | Puppeteer"
+[PuppeteerApipagesetviewport]: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagesetviewportviewport "page.setViewport(viewport) | Puppeteer"
+
+[TwitterIntentTweetEdgedevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools - Post a Tweet | Twitter"
+
+[WikiHeadlessBrowser]: https://en.wikipedia.org/wiki/Headless_browser "Headless browser | Wikipedia"
 
 <!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->

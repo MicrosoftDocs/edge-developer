@@ -187,9 +187,15 @@ To highlight the HTML element in the **Elements** tool and scroll to it on the w
 
 
 <!-- ====================================================================== -->
-
-
-
+<!-- links -->
+[DevtoolsGuideOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
+
+[JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS grid | jec.fyi"
+[JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS grid | jec.fyi"
+
+[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS Grid Layout | MDN"
+[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Layout using named grid lines | MDN"
+[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Line-based placement with CSS Grid | MDN"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -197,3 +203,8 @@ To highlight the HTML element in the **Elements** tool and scroll to it on the w
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen

@@ -74,3 +74,27 @@ Here are additional resources that may help you enhance your website (or app) fo
 
 *   For more information about web development on dual-screen devices, navigate to [Dual-screen web experiences](/dual-screen/web/index).
 *   Install the [Surface Duo emulator](/dual-screen/android/use-emulator).  The Surface Duo emulator is different from the emulator in Microsoft Edge, runs Android, and integrates with [Android Studio](https://developer.android.com/studio/).  For more information, navigate to [Get the Surface Duo SDK](/dual-screen/android/get-duo-sdk).
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"
+
+[DualScreenWebIndex]: /dual-screen/web/index "Dual-screen web experiences | Microsoft Docs"
+[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo emulator | Microsoft Docs"
+[DualScreenIntroductionHowWorkSeam]: /dual-screen/introduction#how-to-work-with-the-seam "How to work with the seam - Introduction to dual-screen devices | Microsoft Docs"
+[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Use the Surface Duo emulator | Microsoft Docs"
+[DualScreenDocsCssMedia]: /dual-screen/web/css-media-spanning "CSS media screen-spanning feature for dual-screen detection | Microsoft Docs"
+[DualScreenDocsJSAPI]: /dual-screen/web/javascript-getwindowsegments "The getWindowSegments JavaScript API for dual-screen devices | Microsoft Docs"
+
+[RemoteDesktopClientDocs]: /windows-server/remote/remote-desktop-services/clients/remote-desktop-clients "Remote Desktop clients | Microsoft Docs"
+
+[MicrosoftEdge]: https://www.microsoft.com/edge "Microsoft Edge"
+
+[SurfaceDevicesDuo]: https://www.microsoft.com/surface/devices/surface-duo "Surface Duo | Microsoft Surface"
+
+[AndroidDeveloperStudio]: https://developer.android.com/studio/ "Android Studio"
+
+[GooglePlayMicrosoftEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge | Google Play"
+
+[SamsungMobileGalaxyFold]: https://www.samsung.com/global/galaxy/galaxy-fold "Galaxy Fold | Samsung"

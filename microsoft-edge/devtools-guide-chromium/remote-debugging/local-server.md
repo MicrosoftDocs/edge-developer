@@ -109,8 +109,12 @@ If your web server is running off of a non-standard port, remember to specify th
 
 
 <!-- ====================================================================== -->
-
-
+<!-- links -->
+[RemoteDebuggingGettingStarted]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"
+<!-- external links -->
+[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"
+[SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki Proxy Wiki"
+[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"
 
 
 <!-- ====================================================================== -->
@@ -120,3 +124,9 @@ If your web server is running off of a non-standard port, remember to specify th
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney

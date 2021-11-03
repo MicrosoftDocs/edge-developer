@@ -94,3 +94,26 @@ To prevent such a memory leak:
 ## Follow recommended WebView2 security best practices
 
 For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications](../concepts/security.md).
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
+[Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode "Details about the Fixed Version Runtime distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
+[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#test-your-app-for-forward-compatibility "Test your app for forward-compatibility - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
+[Webview2ConceptsSecurity]: ../concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"
+[Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"
+[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "Feature-detecting to test whether the installed Runtime supports recently added APIs - Understand WebView2 SDK versions | Microsoft Docs"
+[Webview2GetStartedWin32]: ../get-started/win32.md "Get started with WebView2 | Microsoft Docs"
+[Webview2GetStartedWinforms]: ../get-started/winforms.md "Get started with WebView2 in Windows Forms | Microsoft Docs"
+[Webview2GetStartedWinui]: ../get-started/winui.md "Get started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"
+[Webview2GetStartedWpf]: ../get-started/wpf.md "Get started with WebView2 in WPF | Microsoft Docs"
+<!-- external links -->
+[Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"
+
+[Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"
+[WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Microsoft Docs"
+
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
+
+[CreateCoreWebView2Environment]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment "CreateCoreWebView2Environment | Microsoft Docs"

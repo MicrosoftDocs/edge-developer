@@ -209,9 +209,45 @@ For more information about the Network Activity Log, navigate to [Network Analys
 
 If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
+
+<!-- ====================================================================== -->
+<!-- links -->
+[CustomizeDarkTheme]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
+<!-- todo: link directly to the subheading in the page, when available; test the subheading link:
+[ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
+[CustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"
+[CssReference]: ../../../css/reference.md "CSS features reference | Microsoft Docs"
+[DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
+[NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
+[ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
+[IssuesIndex]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
+[NetworkReference]: ../../../network/reference.md "Network Analysis reference | Microsoft Docs"
+
+<!-- external links -->
+[FluentUI]: https://developer.microsoft.com/en-us/fluentui#/ "Fluent UI | developer.microsoft.com"
+
+[CR1174299]: https://bugs.chromium.org/p/chromium/issues/detail?id=1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
+[CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "Issue 2882756: \[l10n\] Add setting for users to choose DevTools locale | Chromium bugs"
+[CR1223208]: https://bugs.chromium.org/p/chromium/issues/detail?id=1223208 "Inappropriate information is announced by screen reader for the Errors and Warnings in the header | Chromium bugs"
+[CR932971]: https://bugs.chromium.org/p/chromium/issues/detail?id=932971 "932971 - Network tab, Copy as Powershell == doesn't send cookies properly | Chromium bugs"
+
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
+[GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
+
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
+
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
+
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
+
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen

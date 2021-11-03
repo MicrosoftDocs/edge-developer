@@ -30,3 +30,15 @@ To enter a GitHub issue from within a documentation article, in the **Feedback**
 ## Subscribe to the WebView2Announcements repo
 
 To get the latest news, API proposals, and SDK Release announcements, subscribe to the [WebView2Announcements](https://github.com/MicrosoftEdge/WebView2Announcements) repo.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[OpeningDevTools]: ../devtools-guide-chromium/index.md#opening-devtools "OpeningDevTools - Microsoft Edge Developer Tools overview | Microsoft Edge Developer documentation"
+[IntroWebView2]: index.md "Introduction to Microsoft Edge WebView2 | Microsoft Edge Developer documentation"
+[WebWeWant]: ../web-we-want/index.md "The Web We Want initiative | Microsoft Edge Developer documentation"
+<!-- external links -->
+[ContributeEdgeDevDocsRepo]: https://github.com/MicrosoftDocs/edge-developer#contributing "contribute to the edge-developer documentation repo | Microsoft Edge Developer documentation"
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"
+[WebView2AnnouncementsRepo]: https://github.com/MicrosoftEdge/WebView2Announcements "WebView2Announcements repo | GitHub"
+[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"

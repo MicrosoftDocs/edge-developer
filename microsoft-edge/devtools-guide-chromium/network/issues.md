@@ -109,9 +109,12 @@ Do you have a network issue that should be added to this guide?
 
 
 <!-- ====================================================================== -->
-
-
-
+<!-- links -->
+[NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
+
+[MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]
+
+[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "New Issue - MicrosoftDocs/edge-developer"
 
 
 <!-- ====================================================================== -->
@@ -121,3 +124,9 @@ Do you have a network issue that should be added to this guide?
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[JonathanGarbee]: https://developers.google.com/web/resources/contributors#jonathan-garbee

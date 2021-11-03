@@ -151,3 +151,13 @@ To display your verification status, navigate to [Partner Center](https://partne
 ## See also
 
 *  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
+
+
+<!-- links -->
+[AddandManageUsers]: ./aad-account.md "Add users to the Microsoft Edge program | Microsoft Docs"
+[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Extension concepts and architecture | Microsoft Docs"
+[ExtensionsChromiumPublishExtension]: ./publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"
+[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer agreement | Microsoft Docs"
+<!-- external links -->
+[MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"
+[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"

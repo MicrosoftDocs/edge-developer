@@ -142,3 +142,10 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 
 *  [Get started with WebView2][Webview2IndexGetStarted] - WebView2 Win32 C/C++.
 *  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Microsoft Docs"
+[CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Callback Function (WRL) | Microsoft Docs"
+[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"

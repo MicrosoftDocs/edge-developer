@@ -250,3 +250,11 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 > [!NOTE]
 > After setting an environment variable this way, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio or log out of Windows and then log in again.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[WebView2ConceptsVersioning]: ../concepts/versioning.md "Understand WebView2 SDK versions | Microsoft Docs"
+<!-- external links -->
+[Webview2RefWin32GlobalsCreateCoreWebView2EnvironmentWithOptions]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions "CreateCoreWebView2EnvironmentWithOptions - Globals | Microsoft Docs"
+[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"

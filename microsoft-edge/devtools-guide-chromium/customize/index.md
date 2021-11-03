@@ -127,8 +127,11 @@ To restore the default theme, placement, tools order, and any other customized s
 
 
 <!-- ====================================================================== -->
-
-<!-- image links -->
+<!-- links -->
+[DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
+[Theme]: ./theme.md "Apply color themes to DevTools | Microsoft Docs"
+<!-- image links -->
+[ImageMoreIcon]: ../media/more-icon.msft.png
 
 
 <!-- ====================================================================== -->
@@ -138,3 +141,8 @@ To restore the default theme, placement, tools order, and any other customized s
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

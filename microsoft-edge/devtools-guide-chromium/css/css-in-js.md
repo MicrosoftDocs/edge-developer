@@ -128,9 +128,19 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 
 
 <!-- ====================================================================== -->
-
-
-
+<!-- links -->
+[CssReference]: reference.md "CSS features reference | Microsoft Docs"
+<!-- external links -->
+[BlogCssInJsInDevTools]: https://developers.google.com/web/updates/2021/02/css-in-js "CSS-in-JS support in DevTools | Google Blog "
+[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"
+[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
+[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Using shadow DOM | MDN"
+[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[AlexRudenko]: https://developers.google.com/web/resources/contributors#alex-rudenko
 
 
 <!-- ====================================================================== -->

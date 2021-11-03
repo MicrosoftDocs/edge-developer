@@ -279,23 +279,64 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
-
-
-
-
-
-
+<!-- links -->
+[WhatsNew81]: ../01/devtools.md "What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"
+[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
+[DevtoolsCssIndex]: ../../../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"
+[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker | Microsoft Docs"
+[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools  | Microsoft Docs"
+[DevtoolsCustomizePlacementsChangeMainMenu]: ../../../customize/placement.md#change-placement-from-the-main-menu "Change placement from the main menu | Microsoft Docs"
+[DevtoolsEvaluatePreformanceReferenceAnalyzeRenderingTool]: ../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool "Analyze rendering performance with the Rendering tool | Microsoft Docs"
+[DevtoolsEvaluatePerformanceReferenceViewMainThreadActivity]: ../../../evaluate-performance/reference.md#view-main-thread-activity "View main thread activity | Microsoft Docs"
+[DevtoolsJavascriptBreakpointsLineCode]: ../../../javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How To Pause Your Code With Breakpoints In Microsoft Edge DevTools | Microsoft Docs"
+[DevtoolsNetworkReferenceFilterRequestsProperties]: ../../../network/reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
+[DevtoolsRemoteDebuggingWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
+
+[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
+
+[WindowsUwpDebugTestPerfDevicePortal]: /windows/uwp/debug-test-perf/device-portal "Windows Device Portal overview"
+
+[RemoteTools]: https://www.microsoft.com/store/apps/9P6CMFV44ZLT "Remote Tools for Microsoft Edge (Beta)"
+[MicrosoftStore]: https://www.microsoft.com/store/apps/windows "Microsoft Store"
+
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
+
+[WindowsBlogStableRelease]: https://blogs.windows.com/msedgedev/2020/03/20 "Update on Stable channel releases for Microsoft Edge"
+
+[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Devtools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"
+
+[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"
+
+[VisualstudioCodeMain]: https://code.visualstudio.com "Visual Studio Code"
+
+[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
+[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
+[TheWebWeWantMain]: https://webwewant.fyi "The Web We Want"
+
+[ColorBlindnessTypes]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness "Types of Colour Blindness"
 <!-- this link must be http, not https -->
-
-
-
-
-
+
+[MDNAcceptLanguage]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language "Accept-Language | MDN"
+[MDNCookiePath]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie#Directives "Set-Cookie | MDN"
+
+[MathiasByensLocaleDemo]: https://mathiasbynens.be/demo/locale "Locale-dependent code example"
+
+[CR963183]: https://crbug.com/963183 "Issue 963183: DevTools are not WCAG compliant"
+[CR1003700]: https://crbug.com/1003700 "Issue 1003700: Add DevTools support for Color Vision Deficiency simulation"
+[CR1011679]: https://crbug.com/1011679 "Issue 1011679: Introduce 'Dock to Left' using the Command Menu"
+[CR1016501]: https://crbug.com/1016501 "Issue 1016501: Feature Request: Button to delete all local overrides"
+[CR1050999]: https://crbug.com/1050999 "Issue 1050999: Properties Tab"
+[CR1051466]: https://crbug.com/1051466 "Issue 1051466: Support COOP/COEP debugging in DevTools"
+[CR1054447]: https://crbug.com/1054447 "Issue 1054447: Update performance metrics in DevTools Timeline"
+[CR1051822]: https://crbug.com/1051822 "Issue 1051822: DevTools: add UI to emulate locale"
+[CR1041830]: https://crbug.com/1041830 "Issue 1041830: Improve colors for breakpoints"
+[CR1050855]: https://crbug.com/1050855 "Issue 1050855: Settings view is difficult to discover"
+[CR1056348]: https://crbug.com/1056348 "Issue 1056348: Infobar Component Refresh"
+
+[COOP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.tu4hyy6v12wn "COOP and COEP explained - Cross-Origin Opener Policy"
+[COEP]: https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit#bookmark=id.uo6kivyh0ge2 "COOP and COEP explained - Cross-Origin Embedder Policy"
+
+[GithubGoogleChromeLighthouse]: https://github.com/GoogleChrome/lighthouse "Lighthouse | GitHub"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -303,3 +344,8 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

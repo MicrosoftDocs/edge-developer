@@ -114,10 +114,13 @@ You may choose to hide (or show) each media player for an easier debugging exper
 
 
 <!-- ====================================================================== -->
+<!-- links -->
 
-
-
-
+[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
+
+[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"
+
+[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizing Productivity with the Edge Developer Tools | Bing Video"
 
 
 <!-- ====================================================================== -->
@@ -127,3 +130,8 @@ You may choose to hide (or show) each media player for an easier debugging exper
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen

@@ -132,3 +132,12 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 
 * The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file uses the `file_handlers` array to request handling `.gpx` files.
 * The [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js) source file uses the `launchQueue` object to handle incoming files.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
+[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"
+[TestGPXFile]: https://www.visugpx.com/download.php?id=okB1eM4fzj
+[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
+[MyTracksDemoAppFileJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/file.js

@@ -207,3 +207,17 @@ The Microsoft Edge Canary and Dev channels don't currently receive user agent ov
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```
+
+<!-- links -->
+
+[WindowsBlogsMsedgedev20171005MicrosoftEdgeIosAndroidDeveloper]: https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer "Microsoft Edge for iOS and Android: What developers need to know | Microsoft Windows Blogs"
+
+[GithubWicgUaClientHintsGethighentropyvalues]: https://wicg.github.io/ua-client-hints#getHighEntropyValues "4.1.5. getHighEntropyValues method - User-Agent Client Hints | GitHub"
+
+[MdnLearnToolsTestingCrossBrowserTestingFeatureDetection]: https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection "Implementing feature detection | MDN"
+
+[ReduceUserAgentStringInformation]: https://www.chromestatus.com/feature/5704553745874944 "Feature: Reduce User Agent string information"
+
+[W3CCommunityDraftReportUserAgentClientHints]: https://wicg.github.io/ua-client-hints/ "W3C Community Draft Report | User-Agent Client Hints"
+
+[LowEntropyHintTable]: https://wicg.github.io/client-hints-infrastructure/#low-entropy-table "Low entropy hint table"

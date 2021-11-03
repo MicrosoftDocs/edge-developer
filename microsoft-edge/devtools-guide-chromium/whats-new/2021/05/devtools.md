@@ -288,15 +288,35 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
-
-
-
-
+<!-- links -->
+[DevtoolsEvaluatePerfRefAnalyzeAPerfRecording]: ../../../evaluate-performance/reference.md#analyze-a-performance-recording "Analyze a performance recording | Microsoft Docs"
+<!-- external links -->
+[XhrSpecWhatwgOrg]: https://xhr.spec.whatwg.org "XMLHttpRequest spec | WHATWG"
+[FetchSpecWhatwgOrg]: https://fetch.spec.whatwg.org "Fetch spec | WHATWG"
+
+[WebDevIntersectionObserverV2]: https://web.dev/intersectionobserver-v2 "Trust is good, observation is better: Intersection Observer v2 | web.dev"
+
+[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
+[GithubIoDevToolsUsing]: https://microsoft.github.io/vscode-edge-devtools/using.html "Using the tools | GitHub"
+
+[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
+
+[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
+
+[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
+
+[YoutubeEdgeStateOfThePlatform]: https://www.youtube.com/watch?v=sU0WRZ0kkNo "Microsoft Edge: State of the Platform | YouTube"
+
+[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
+[CR1094406]: https://crbug.com/1094406 "Issue 1094406: Developers want a source order viewer | Chromium bugs"
+[CR1174299]: https://crbug.com/1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
+[CR1203241]: https://crbug.com/1203241 "Issue 1203241: CSS Grid editor | Chromium bugs"
+[CR1076427]: https://crbug.com/1076427 "Issue 1076427: DevTools Console should support const redeclaration | Chromium bugs"
+[CR1192084]: https://crbug.com/1192084 "Issue 1192084: Add 'Show frame details' right-click option to iframe / html tags in elements view | Chromium bugs"
+[CR1141824]: https://crbug.com/1141824 "Issue 1141824: Improve CORS error reporting in DevTools | Chromium bugs"
+[CR1201398]: https://crbug.com/1201398 "Issue 1201398: Feature Request: rename XHR type filter in Network Panel | Chromium bugs"
+[CR1103638]: https://crbug.com/1103638 "Issue 1103638: Network panel for showing WebAssembly resources | Chromium bugs"
+[CR1199137]: https://crbug.com/1199137 "Issue 1199137: Display IntersectionObserver cost in perf panel | Chromium bugs"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -304,3 +324,8 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen

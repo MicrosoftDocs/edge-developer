@@ -85,3 +85,10 @@ To find more stack information, set a break point in the fetch handler.  The det
 ### Future work
 
 The Microsoft Edge DevTools team plans to further develop the cache detail and are investigating more ways to improve the service worker debugging experience for [Progressive Web Application](https://developer.mozilla.org/docs/Web/Progressive_web_apps) developers.
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+[MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent | MDN"
+[MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "Progressive web apps (PWAs) | MDN"
+[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"

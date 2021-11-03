@@ -84,3 +84,26 @@ The web is a great platform for the new class of foldable and dual-screen device
 *   [Documentation for creating apps on dual-screen devices](/dual-screen/index)
 *   [The Microsoft Edge web platform explainer for new APIs to build web experiences on foldable and dual-screen devices](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md)
 *   [Recording of Microsoft 365 Developer Day session: How to build dual-screen experiences for websites and web apps](https://youtu.be/DXrZWsqXPVc)
+
+
+<!-- ====================================================================== -->
+<!-- links -->
+
+[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
+[ProgressiveWebAppsIndex]: ../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
+[DevtoolsRemoteDebuggingMain]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"
+[DevtoolsRemoteDebuggingIndexTroubleshootingDevtoolsIsNotDetectingAndroidDevice]: ./index.md#troubleshooting-devtools-is-not-detecting-the-android-device "Troubleshooting: DevTools is not detecting the Android device - Get started with remote debugging Android devices | Microsoft Docs"
+<!-- external links -->
+[DualScreenIndex]: /dual-screen/index "Create apps for dual-screen devices | Microsoft Docs"
+[DualScreenAndroidUseEmulator]: /dual-screen/android/use-emulator "Use the Surface DUo emulator | Microsoft Docs"
+[DualScreenAndroidGetDuoSdk]: /dual-screen/android/get-duo-sdk "Get the Surface Duo SDK | Microsoft Docs"
+
+[MicrosoftEdge]: https://www.microsoft.com/edge "Download Microsoft Edge Browser | Microsoft"
+[MicrosoftSurfaceDevicesSurfaceDuo]: https://www.microsoft.com/surface/devices/surface-duo "The new Surface Duo | Microsoft Surface"
+[MicrosoftDownload100847]: https://www.microsoft.com/download/details.aspx?id=100847 "Download Surface Duo SDK Preview Release | Microsoft Download Center"
+
+[GooglePlayStoreAppsComMicrosoftEmmx]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge: Web Browser | GooglePlay"
+
+[GithubMicrosoftedgeMsedgeexplainersFoldablesExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md "Web Platform Primitives for Enlightened Experiences on Foldable Devices - MicrosoftEdge/MSEdgeExplainers | GitHub"
+
+[YoutubeDxrzwsqxpvc]: https://youtu.be/DXrZWsqXPVc "How to build dual-screen experiences for the website and web apps | YouTube"

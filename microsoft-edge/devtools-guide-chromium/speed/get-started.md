@@ -526,11 +526,17 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
+<!-- links -->
+[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"
+<!-- external links -->
+[CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Introduction to Web Development class | Coursera"
+
+[EssentialImageOptimization]: https://images.guide "Essential Image Optimization"
+
+[MDNContentEncodingDirectives]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives "Directives - Content-Encoding | MDN"
+[MDNUserTimingApi]: https://developer.mozilla.org/docs/Web/API/User_Timing_API "User Timing API | MDN"
+
+[WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "Tree Shaking | webpack"
 
 
 <!-- ====================================================================== -->
@@ -540,3 +546,8 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques

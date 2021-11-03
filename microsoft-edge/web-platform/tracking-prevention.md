@@ -179,3 +179,20 @@ Currently, Microsoft Edge only exposes an option to disable tracking prevention 
 That being said, the **Block** and **Allow** options on the `edge://settings/content/cookies` page may be used to allow or deny specific domains access to storage such as cookies and other browser storage mechanisms.  This is useful for debugging site issues that are caused by tracking prevention enforcements blocking access to storage for a specific site.
 
 <!-- image links -->
+
+[ImageThreeSettingsTrackingPrevention]: ./media/tracking-prevention-settings.png
+[ImageBlockedTrackersPageInfoFlyout]: ./media/page-info-flyout.png
+
+<!-- links -->
+
+[MicrosoftEdgeBrowserPrivacyPromise]: https://microsoftedgewelcome.microsoft.com/privacy "Privacy - Microsoft Edge"
+
+[ChromiumDesignDocsSiteEngagement]: https://www.chromium.org/developers/design-documents/site-engagement "Site Engagement - The Chromium Projects"
+
+[DisconnectMain]: https://disconnect.me "Disconnect"
+
+[GitHubDisconnectMeTrackingProtection]: https://github.com/disconnectme/disconnect-tracking-protection "disconnectme/disconnect-tracking-protection | Github"
+[GitHubDisconnectTrackingProtectionCategories]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json "services.json - disconnectme/disconnect-tracking-protection | Github"
+[GitHubDisconnectMeTrackingProtectionEntitiesJson]: https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json "entities.json - disconnectme/disconnect-tracking-protection | Github"
+
+[GitHubMsExplainersStorageAccessApi]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/StorageAccessAPI/explainer.md "Storage Access API Explainer - MSEdgeExplainers/StorageAccessAPI | GitHub"

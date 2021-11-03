@@ -51,3 +51,9 @@ The following list describes experimental web app features that are available to
 | [File Handling](./handle-files.md) | All Desktop |
 
 <!-- Links -->
+
+[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"
+[FeatureWindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
+[FeatureUrlHandling]: ./handle-urls.md "Handle URLs in Progressive Web Apps | Microsoft Docs"
+[FeatureProtocolHandling]: ./handle-protocols.md "Handle protocols in Progressive Web Apps | Microsoft Docs"
+[FeatureFileHandling]: ./handle-files.md "Handle files in Progressive Web Apps | Microsoft Docs"

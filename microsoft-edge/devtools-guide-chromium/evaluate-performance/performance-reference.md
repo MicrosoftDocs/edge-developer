@@ -147,9 +147,14 @@ This section lists events that belong to Painting category and their properties.
 
 
 <!-- ====================================================================== -->
-
+<!-- links -->
+[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"
+[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
-
+
+[MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"
+[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"
+[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope.setTimeout() | MDN"
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -157,3 +162,10 @@ This section lists events that belong to Painting category and their properties.
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+[CCA4IL]: https://creativecommons.org/licenses/by/4.0
+[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[FlavioCopes]: https://developers.google.com/web/resources/contributors#flavio-copes
