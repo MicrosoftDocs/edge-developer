@@ -160,7 +160,7 @@ This section lists events that belong to Painting category and their properties.
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer) and [Flavio Copes][FlavioCopes] (Full Stack Developer).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0

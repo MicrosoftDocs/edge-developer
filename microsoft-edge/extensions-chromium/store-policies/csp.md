@@ -300,7 +300,7 @@ Thus, depending on how you write DOM injected scripts in your Extension, changes
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
 > The original page is found [here](https://developer.chrome.com/extensions/contentSecurityPolicy).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
 
 [CCA4IL]: https://creativecommons.org/licenses/by/4.0
