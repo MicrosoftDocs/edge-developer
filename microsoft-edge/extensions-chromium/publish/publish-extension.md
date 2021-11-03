@@ -177,6 +177,3 @@ After your submission passes certification, your extension is published in the M
 
 > [!NOTE]
 > If you encounter any issues in the submission or registration process, file a support ticket on [Extensions New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) or send an email to [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
-
-
-<!-- ========================================================================== -->
