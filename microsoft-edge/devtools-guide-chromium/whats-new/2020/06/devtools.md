@@ -330,68 +330,20 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[CssInJs]: ../../../css/css-in-js.md "Style editing for CSS-in-JS frameworks | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-[DevtoolsCommandMenu]: ../../../command-menu.md "Run Commands With The Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevtoolsCustomizeIndexDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsExperimentalFeaturesTurnOn]: ../../../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"
-[DevtoolsIssues]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevtoolsSourcesIndexUsingEditorPaneToViewEditFiles]: ../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files "Using the Editor pane to view or edit files - Sources Panel Overview | Microsoft Docs"
-[DevtoolsNetworkIndexLogActivity]: ../../../network/index.md#log-network-activity "Log network activity - Inspect Network Activity In Microsoft Edge DevTools | Microsoft Docs"
-
-[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
-[CodepenZoherghadyaliZyrjgdJ]: https://codepen.io/zoherghadyali/full/zYrjgdJ "Send duplicate messages to Console | CodePen"
-[CodepenRachelweilYzwBzKM]: https://codepen.io/hxlnt/full/YzwBzKM "CSS Grid planner example | CodePen"
-
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
-
-[CR772558]: https://crbug.com/772558 "DevTools: Update to latest version of Lighthouse | Chromium bugs"
-[CR800028]: https://crbug.com/800028 "Duplicate line shortcut in Developer Tools editor not working after Chrome update | Chromium bugs"
-[CR912581]: https://crbug.com/912581 "Expose which scripts were code-cached by V8 in DevTools/about:tracing | Chromium bugs"
-[CR946975]: https://crbug.com/946975 "DevTools Styles Sidebar doesn't work with constructed stylesheets | Chromium bugs"
-[CR955497]: https://crbug.com/955497 "App Icon Shortcut menu for PWAs | Chromium bugs"
-[CR974550]: https://crbug.com/974550 "Metric mismatch between Perf panel and performanceObserver | Chromium bugs"
-[CR1041830]: https://crbug.com/1041830 "Improve colors for breakpoints | Chromium bugs"
-[CR1055875]: https://crbug.com/1055875 "The value of the Selected context only console setting does not persist after closing and reopening Developer Tools | Chromium bugs"
-[CR1066579]: https://crbug.com/1066579 "DevTools: Show ServiceWorkers Fetch Timeline per request in Network panel | Chromium bugs"
-[CR1071432]: https://crbug.com/1071432 "Wasm Basic Developer Experience | Chromium bugs"
-[CR1073899]: https://crbug.com/1073899 "Computed style tab disappears in responsive mode | Chromium bugs"
-[CR1073903]: https://crbug.com/1073903 "DevTools: Syntax highlighting doesn't work with private fields | Chromium bugs"
-[CR1082963]: https://crbug.com/1082963 "Can't disable console's Group similar messages behavior | Chromium bugs"
-[CR1083214]: https://crbug.com/1083214 "acorn doesn't support optional chaining | Chromium bugs"
-[CR1083797]: https://crbug.com/1083797 "Pretty printing broken for nullish coalescing | Chromium bugs"
-[CR1096008]: https://crbug.com/1096008 "Remove FMP | Chromium bugs"
-[CR1047356]: https://crbug.com/1047356 "CSS Grid/Flexbox/Table tooling | Chromium bugs"
-[CR1093687]: https://crbug.com/1093687 "Create tool for creating and replaying synthetic network requests | Chromium bugs"
-[CR1070378]: https://crbug.com/1070378 "Integrate webhint into DevTools | Chromium bugs"
-[CR1069404]: https://crbug.com/1069404 "[Dev Tools] widget popups are too all narrow | Chromium bugs"
-[CR897944]: https://crbug.com/897944 "Draggable devtool panels | Chromium bugs"
-
-[GithubGoogleChromeLighthouse600]: https://github.com/GoogleChrome/lighthouse/releases/tag/v6.0.0 "v6.0.0 - GoogleChrome/lighthouse | GitHub"
-
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer"
-
-[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Using shadow DOM | MDN"
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download/ "Microsoft Edge Preview Channels"
-
-[VisualStudio]: https://visualstudio.microsoft.com/ "Visual Studio"
-[VisualStudioCode]: https://code.visualstudio.com/ "Visual Studio Code"
-
-[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"
-
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
-
-[V8DevClassFieldsPrivate]: https://v8.dev/features/class-fields#private-class-fields "Private class fields - Public and private class fields | V8.Dev"
-[V8DevCodeCaching]: https://v8.dev/blog/code-caching-for-devs "Code caching for JavaScript developers | V8.Dev"
-[V8DevNullishCoalescing]: https://v8.dev/features/nullish-coalescing "Nullish coalescing | V8.Dev"
-[V8DevOptionalChaining]: https://v8.dev/features/optional-chaining "Optional chaining | V8.Dev"
-
-[WebhintMain]: https://webhint.io "webhint"
-
-[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
+<!-- links -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--[WebDevLighthouseWhatsNew60]: https://web.dev/lighthouse-whats-new-6.0 "What's New in Lighthouse 6.0 | Web.Dev"  -->
 <!--[WebDevVitalsCoreWeb]: https://web.dev/vitals#core-web-vitals "Core Web Vitals - Web Vitals | Web.Dev"  -->
@@ -405,8 +357,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 <!--[WebDevLcp]: https://web.dev/lcp "Largest Contentful Paint (LCP) | Web.Dev"  -->
 <!--[WebDevFirstMeaningfulPaint]: https://web.dev/first-meaningful-paint "First Meaningful Paint | Web.Dev"  -->
 <!--[WhatsNew201902ConstructableStylesheets]: ../../2019/02/constructable-stylesheets.md "Constructable Stylesheets: seamless reusable styles | Microsoft Docs"  -->
-
-[TheWebWeWant]: https://webwewant.fyi/ "The Web We Want"
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -414,9 +365,4 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+

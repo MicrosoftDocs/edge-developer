@@ -164,10 +164,8 @@ To make sure that a specific update applies only to Microsoft Edge versions that
 </gupdate>
 ```
 
-<!-- links -->
-[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Update a Microsoft Edge extension | Microsoft Docs"
-
-[MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
+<!-- links -->
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -175,7 +173,4 @@ To make sure that a specific update applies only to Microsoft Edge versions that
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+

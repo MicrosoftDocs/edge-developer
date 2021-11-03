@@ -82,7 +82,5 @@ To remove an extension from the Microsoft Edge Add-ons website:
 
 The extension is now removed from the Microsoft Edge Add-ons website.  Users who already installed your extension can continue to use it, but new users don't find it.
 
-<!-- links -->
-[UsingAddonsAPI]: api/using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
-<!-- external links -->
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
+<!-- links -->
+<!-- external links -->

@@ -165,12 +165,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCommandMenuIndex]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevtoolsCustomizeIndexDrawer]: ../customize/index.md#drawer "Drawer - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeIndexPlacement]: ../customize/index.md#change-devtools-placement "Change DevTools placement - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsDeviceModeIndex]: ../device-mode/index.md "Emulate mobile devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsJavascriptBreakpointsLOC]: ../javascript/breakpoints.md#line-of-code-breakpoints "Line-of-code breakpoints - How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
+<!-- links -->
 
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->
 
@@ -182,8 +177,4 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques  
+

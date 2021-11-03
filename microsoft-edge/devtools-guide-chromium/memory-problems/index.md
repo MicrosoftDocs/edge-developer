@@ -246,11 +246,8 @@ After you have identified the problem, you are able to use an **Allocation instr
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"
-<!-- image links -->
-[ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png
-[ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png
+<!-- links -->
+<!-- image links -->
 
 <!--[RAIL]: /profile/evaluate-performance/rail  -->
 <!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->
@@ -263,8 +260,4 @@ After you have identified the problem, you are able to use an **Allocation instr
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+

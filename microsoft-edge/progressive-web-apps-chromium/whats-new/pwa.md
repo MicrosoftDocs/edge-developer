@@ -147,30 +147,19 @@ An unexpected shutdown can occur due to process failure, system restart, or powe
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[StoreandPWAs]: ../how-to/microsoft-store.md#measure-usage-of-your-store-installed-pwa "Measure usage of your Store-installed PWA - Publish your Progressive Web App to the Microsoft Store"
+<!-- links -->
 
 <!-- ====================================================================== -->
-<!-- links -->
-[ExpWCO]: ../how-to/window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
-[ExpProtocolHandlers]: ../how-to/handle-protocols.md "Handle protocols in Progressive Web Apps | Microsoft Docs"
-[ExpURLHandler]: ../how-to/handle-urls.md "Handle URLs in Progressive Web Apps | Microsoft Docs"
+<!-- links -->
 
 <!-- external links -->
-<!-- origin trials -->
-[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"
+<!-- origin trials -->
+
+
+
 
-[MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Register for Web App Protocol Handler origin trial | Microsoft Developer"
-
-[URLHandlerOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "Register for Web App URL Handler origin trial | Microsoft Edge Developer"
-
-[WCOOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay origin trial | Microsoft Edge Developer"
-
-<!-- other -->
-[mdnShareAPI]: https://developer.mozilla.org/docs/Web/API/Navigator/share "navigator.share() method of the Web Share API | MDN"
-
-[4weekReleaseBlog]: https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/ "Serving our customers more effectively with new release cycles for Microsoft Edge | Microsoft Edge Blog"
-
-[Chromium4weekM]: https://blog.chromium.org/2021/03/speeding-up-release-cycle.html "Speeding up Chrome's release cycle | Chromium Blog"
+<!-- other -->
+
+
 
 <!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps (EdgeHTML) on Windows | Microsoft Docs"  -->

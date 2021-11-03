@@ -314,59 +314,20 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsAccessibilityTab]: ../../../accessibility/accessibility-tab.md "Test accessibility using the Accessibility tab | Microsoft Docs"
-[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevtoolsConsoleReferenceFilterByLogLevel]: ../../../console/reference.md#filter-by-log-level "Filter by log level - Console features reference | Microsoft Docs"
-[DevtoolsConsoleReferenceFilterMessages]: ../../../console/reference.md#filter-messages "Filter messages - Console features reference | Microsoft Docs"
-[DevtoolsConsoleReferenceOpenConsoleSidebar]: ../../../console/reference.md#open-the-console-sidebar "Open the Console Sidebar - Console features reference | Microsoft Docs"
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeShortcuts]: ../../../customize/shortcuts.md "Customize keyboard shortcuts in DevTools | Microsoft Docs"
-[DevtoolsExperimentalFeaturesIndexEnablePlusButtonTabMenusToOpenMoreTools]: ../../../experimental-features/index.md#enable--button-tab-menus-to-open-more-tools "Enable + button tab menus to open more tools - Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../../../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"
-[DevtoolsNetworkReferenceAddRemoveColumns]: ../../../network/reference.md#add-or-remove-columns "Add or remove columns - Network Analysis reference | Microsoft Docs"
-[DevtoolsNetworkReferenceDisplayInitiatorsDependencies]: ../../../network/reference.md#display-initiators-and-dependencies "Display initiators and dependencies - Network Analysis reference | Microsoft Docs"
-
-[ProgressiveWebAppsIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows overview | Microsoft Docs"
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
-
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
-
-[ChromeDeveloperBlogImprovedPwaOfflineDetection]: https://developer.chrome.com/blog/improved-pwa-offline-detection "Improving Progressive Web App offline support detection | Chrome Developers"
-
-[ChromestatusFeature5354410980933632]: https://www.chromestatus.com/feature/5354410980933632 "color-gamut media query | Chrome Platform Status"
-
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
-[CR174309]: https://crbug.com/174309 "Issue 174309: DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"
-[CR887173]: https://crbug.com/887173 "Issue 887173: DevTools: Full Accessibility Tree Inspection | Chromium bugs"
-[CR965802]: https://crbug.com/965802 "Issue 965802: Implement more accurate service worker's offline capability detection | Chromium bugs"
-[CR1073887]: https://crbug.com/1073887 "Issue 1073887: DevTools: @media (color-gamut: ...) colorspace emulation | Chromium bugs"
-[CR1128885]: https://crbug.com/1128885 "Issue 1128885: DevTools Support for CORS-RFC1918 | Chromium bugs"
-[CR1146450]: https://crbug.com/1146450 "Issue 1146450: [Android] Implement bottom sheet installs | Chromium bugs"
-[CR1158276]: https://crbug.com/1158276 "Issue 1158276: Unable to expand/contract 'Request initiator chain' pane using arrow keys in 'Network' section of DevTools | Chromium bugs"
-[CR1158827]: https://crbug.com/1158827 "Issue 1158827: [Permissions Policy] Implement devtool support for permissions policy | Chromium bugs"
-[CR1160637]: https://crbug.com/1160637 "Issue 1160637: Focus on 'Request initiator chain' is seen incomplete in 'Network' section of 'Dev Tools' window | Chromium Bugs"
-[CR1161427]: https://crbug.com/1161427 "Issue 1161427: &#9730; Support SameParty cookie attribute debugging in DevTools | Chromium bugs"
-[CR1166710]: https://crbug.com/1166710 "Issue 1166710: turn on flexbox tooling experiment by default | Chromium bugs"
-[CR1169689]: https://crbug.com/1169689 "Issue 1169689: PWA install bottom sheet should not feature categories | Chromium bugs"
-[CR1175699]: https://crbug.com/1175699 "Issue 1175699: Flexbox editor | Chromium bugs"
-[CR1177685]: https://crbug.com/1177685 "Issue 1177685: Remove non-standard fn.displayName support | Chromium bugs"
-[CR1178530]: https://crbug.com/1178530 "Issue 1178530: Console does not escape doublequotes when printing strings | Chromium bugs"
-
-[CsswgDraftsMediaqueries4ColorGamut]: https://drafts.csswg.org/mediaqueries-4#color-gamut "Color Display Quality: the 'color-gamut' feature | CSS Working Group Editor Drafts"
-
-[GithubMicrosoftedgeMsedgeexplainersBlobMainDevtoolsFocusmodeExplainer]: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md "DevTools: Focus Mode UI - MicrosoftEdge/MSEdgeExplainers | GitHub"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
-
-[GithubPrivacycgFirstPartySets]: https://github.com/privacycg/first-party-sets "First-Party Sets | GitHub"
-
-[GithubW3cWebappsecPermissionsPolicyBlobMainPermissionsPolicyExplainer]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Permissions Policy Explainer | GitHub"
-
-[MdnJavascriptReferenceGlobalObjectsFunctionName]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name "Function.name | MDN"
+<!-- links -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -374,8 +335,4 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+

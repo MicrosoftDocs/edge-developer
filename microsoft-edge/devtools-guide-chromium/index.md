@@ -250,20 +250,5 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane | Microsoft Docs"
-[DevtoolsGuideIssuesIndex]: ./issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Override webpage resources with local copies using Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideNetworkIndex]: ./network/index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideOpenIndex]: ./open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"
-[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Keyboard shortcuts | Microsoft Docs"
-[DevtoolsGuideSourcesIndex]: ./sources/index.md "Sources tool overview | Microsoft Docs"
-[DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "View and edit session storage with Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"
-[DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Edit files with Workspaces | Microsoft Docs"
-<!-- external links -->
-[MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-[GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"
+<!-- links -->
+<!-- external links -->

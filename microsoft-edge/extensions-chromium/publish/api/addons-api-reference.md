@@ -363,8 +363,5 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 *  [Using the Microsoft Edge Add-ons API](using-addons-api.md)
 
 
-<!-- links -->
-[UsingAddonsAPI]: using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
-<!-- external links -->
-[PartnerCenterErrorCodes]: /partner-center/develop/error-codes "Partner Center REST error codes | Microsoft Docs "
-[WikipediaListOfStatusCodes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes "List of HTTP status codes | Wikipedia"
+<!-- links -->
+<!-- external links -->

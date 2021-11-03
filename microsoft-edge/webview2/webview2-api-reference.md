@@ -29,9 +29,4 @@ WebView2 is available for the following languages and frameworks.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
-[WinrtMicrosoftWebWebview2CoreNamespace]: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
-[WinrtComInteropInterfaces]: /microsoft-edge/webview2/reference/winrt/interop/index "WebView2 WinRT COM Interop Reference | Microsoft Docs"
+<!-- links -->

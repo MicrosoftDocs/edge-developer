@@ -246,13 +246,9 @@ Last, there are many ways to improve runtime performance.  This article focused 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCustomizePlacement]: ../customize/placement.md "Change DevTools Placement (Undock, Dock To Bottom, Dock To Left)"
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize Website Speed With Microsoft Edge DevTools"
-
-[TwitterEdgeDevtools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "EdgeDevTools - Post a Tweet | Twitter"
-
-[MDNWebRequestAnimationFrame]: https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame "Window.requestAnimationFrame() | MDN"
+<!-- links -->
+
+
 
 <!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
 
@@ -277,8 +273,4 @@ Last, there are many ways to improve runtime performance.  This article focused 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+

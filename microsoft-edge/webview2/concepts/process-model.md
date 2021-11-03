@@ -83,13 +83,7 @@ All processes that are associated with the browser process of your WebView2 are 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[WebView2ManageUDF]: ./user-data-folder.md "Manage the user data folder | Microsoft Docs"
-<!-- external links -->
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
-
-[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "Inside look at modern web browser (part 1)"
+<!-- links -->
+<!-- external links -->
+
+

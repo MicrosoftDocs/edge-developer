@@ -127,33 +127,22 @@ To remove a virtual authenticator, next to the authenticator, choose the **Remov
 
 <!-- ====================================================================== -->
 <!-- links -->
-
-[DevtoolsGuideOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-
-[AppspotWebauthndemo]: https://webauthndemo.appspot.com "Webauthn demo | Appspot"
-
-[FidoallianceSpecsV20Id20180227ClientToAuthenticatorProtocolHtml]: https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html "Client to Authenticator Protocol (CTAP) | fido alliance"
-[FidoallianceSpecsU2fV12Ps20170411OverviewHtml]: https://fidoalliance.org/specs/fido-u2f-v1.2-ps-20170411/fido-u2f-overview-v1.2-ps-20170411.html "Universal 2nd Factor (U2F) Overview | fido alliance"
-
-[GithubW3cWebauthn]: https://w3c.github.io/webauthn "Web Authentication:
+
+
+
+
 An API for accessing Public Key Credentials
-Level 2 | GitHub"
-[GithubW3cWebauthnAuthenticatorgetassertion]: https://w3c.github.io/webauthn#authenticatorgetassertion "The authenticatorGetAssertion Operation - Web Authentication:
+Level 2 | GitHub"
 An API for accessing Public Key Credentials
-Level 2 | GitHub"
-[GithubW3cWebauthnEnumTransport]: https://w3c.github.io/webauthn#enum-transport "Authenticator Transport Enumeration (enum AuthenticatorTransport) - Web Authentication:
+Level 2 | GitHub"
 An API for accessing Public Key Credentials
-Level 2 | W3C"
-[GithubW3cWebauthnEnumResidentkeyrequirement]: https://w3c.github.io/webauthn#enum-residentKeyRequirement "Resident Key Requirement Enumeration (enum ResidentKeyRequirement) - Web Authentication:
+Level 2 | W3C"
 An API for accessing Public Key Credentials
-Level 2 | W3C"
-[GithubW3cWebauthnEnumUserverification]: https://w3c.github.io/webauthn#user-verification "User Verification - Web Authentication:
+Level 2 | W3C"
 An API for accessing Public Key Credentials
-Level 2 | W3C"
-[GithubW3cWebauthnSctnCreatecredential]: https://w3c.github.io/webauthn#sctn-createCredential "Create a New Credential - PublicKeyCredential's [[Create]](origin, options, sameOriginWithAncestors) Method - Web Authentication:
+Level 2 | W3C"
 An API for accessing Public Key Credentials
-Level 2 | GitHub"
-[GithubW3cWebauthnSctnSignCounter]: https://w3c.github.io/webauthn/#sctn-sign-counter "Signature Counter Considerations - Web Authentication:
+Level 2 | GitHub"
 An API for accessing Public Key Credentials
 Level 2 | GitHub"
 
@@ -165,8 +154,4 @@ Level 2 | GitHub"
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+

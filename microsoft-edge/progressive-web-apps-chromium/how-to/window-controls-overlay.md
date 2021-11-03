@@ -180,11 +180,4 @@ The source code for this app can be accessed on the [My Tracks GitHub repository
 *   [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
 
 
-<!-- links -->
-[CssTricksThrottlingDebouncing]: https://css-tricks.com/the-difference-between-throttling-and-debouncing/ "The Difference Between Throttling and Debouncing  | CSS-Tricks"
-[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay/ "Customize the window controls overlay of your PWA's title bar | web.dev"
-[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
-[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"
-[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
-[MyTracksDemoAppOverlayJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js
-[MyTracksDemoAppStyleCssFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css
+<!-- links -->

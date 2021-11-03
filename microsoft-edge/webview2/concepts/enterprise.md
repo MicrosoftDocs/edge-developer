@@ -34,13 +34,6 @@ IT admins can use group policy objects (GPO) to configure policy settings for We
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[Webview2ConceptsDistribution]: ./distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-[WebView2Landing]: ../index.md "Introduction to Microsoft Edge WebView2 (Preview) | Microsoft Docs"
-<!-- external links -->
-[EdgeUpdatePolicies]: /deployedge/microsoft-edge-update-policies "Microsoft Edge - Update policies | Microsoft Docs"
-[EdgeBrowserPolicies]: /deployedge/microsoft-edge-policies "Microsoft Edge - Browser policies | Microsoft Docs"
-[ConfigureMicrosoftEdge]: /deployedge/configure-microsoft-edge "Configure Microsoft Edge policy settings on Windows | Microsoft Docs"
-[WebView2Policies]: /deployedge/microsoft-edge-webview-policies "Microsoft Edge WebView2 Policy Documentation | Microsoft Docs"
-
-[GithubMicrosoftedgeWebviewfeddback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"
+<!-- links -->
+<!-- external links -->
+

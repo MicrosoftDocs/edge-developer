@@ -115,24 +115,15 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[BabelJS]: https://babeljs.io "Babel is a JavaScript compiler"
-
-[CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"
-
-[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "A simple example of //# sourceURL eval naming"
-
-[DartMain]: https://www.dartlang.org "Dart programming language"
-
-[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/closure-compiler | GitHub"
-
-[GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"
-
-[GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Source maps: languages, tools and other info | GitHub wiki"
-
-[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Getting Started - google/traceur-compiler | GitHub wiki"
-
-[TypeScriptMain]: https://www.typescriptlang.org "TypeScript"
+<!-- links -->
+
+
+
+
+
+
+
+
 
 
 <!-- ====================================================================== -->
@@ -142,10 +133,4 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
-[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus
+

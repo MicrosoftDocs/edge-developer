@@ -35,5 +35,4 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 1.  APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES.  Section 6 of the App Developer Agreement does not apply to Extensions and is hereby deleted in its entirety.
 
 <!-- links -->
-
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Add-ons website developer policies | Microsoft Docs"
+

@@ -121,5 +121,4 @@ Use the editor provided with the **Sources** tool of DevTools or any editor you 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"
+<!-- links -->

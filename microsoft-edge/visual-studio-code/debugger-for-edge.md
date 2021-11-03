@@ -17,6 +17,4 @@ This built-in debugger lets you debug your front-end JavaScript code line-by-lin
 For more information, navigate to [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging).
 
 <!--links -->
-
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
-[BrowserDebuggingInVSCode]: https://code.visualstudio.com/docs/nodejs/browser-debugging "Debug Browser Apps using Visual Studio Code"
+

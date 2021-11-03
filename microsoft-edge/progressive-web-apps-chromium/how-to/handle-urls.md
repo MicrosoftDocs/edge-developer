@@ -151,13 +151,4 @@ You can find the [source code on GitHub](https://github.com/captainbrosset/devto
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[WICGUrlHandlerExplainer]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file "PWAs as URL Handlers | WICG"
-[OriginTrials]: ./origin-trials.md#enroll-your-site-in-an-origin-trial "Experimental features and origin trials | Microsoft Docs"
-[URLHandlingVideoTutorial]: https://www.youtube.com/watch?v=jYc7ih9Xwqw "Handle URLs natively in your Progressive Web App video tutorial | YouTube"
-[URLHandlersWebDev]: https://web.dev/pwa-url-handler/ "PWAs as URL Handlers | web.dev"
-[DemoDevToolsTips]: https://devtoolstips.org/ "DevTools Tips"
-[DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools Tips | GitHub"
-[DemoDevToolsTipsManifestJson]: https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json
-[DemoDevToolsTipsWebAppOriginAssociation]: https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association
-[ManifestFileDoc]: ./web-app-manifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
+<!-- links -->

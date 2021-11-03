@@ -87,10 +87,5 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsCustomizeSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsOpenMain]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsShortcuts]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
-<!-- external links -->
-[VisualStudioCode]: https://code.visualstudio.com "Microsoft Visual Studio Code"
-[VisualStudioCodeShortcutsKeyboardWindows]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows | Microsoft Visual Studio Code"
+<!-- links -->
+<!-- external links -->

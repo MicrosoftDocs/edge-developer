@@ -376,18 +376,9 @@ Navigate to the [Network Reference](./reference.md) to discover more DevTools fe
 
 <!-- ====================================================================== -->
 <!-- links -->
-<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
-[DevtoolsNetworkReference]: ./reference.md "Network analysis reference | Microsoft Docs"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter requests - Network analysis reference | Microsoft Docs"
-[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Hide the Overview pane - Network analysis reference | Microsoft Docs"
-[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
-[DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize website speed with Microsoft Edge DevTools | Microsoft Docs"
-
-[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo | Glitch"
-
-[MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"
+<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
+
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -395,8 +386,4 @@ Navigate to the [Network Reference](./reference.md) to discover more DevTools fe
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+

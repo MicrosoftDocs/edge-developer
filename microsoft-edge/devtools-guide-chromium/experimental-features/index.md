@@ -252,21 +252,5 @@ To configure options for persistent overlays for CSS grids or Flexbox layouts, u
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "Opening source files in Visual Studio Code"
-[Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
-[DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Edit the keyboard shortcut for a DevTools action | Microsoft Docs"
-[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code "Match keyboard shortcuts from Microsoft Visual Studio Code | Microsoft Docs"
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"
-[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
-<!-- external links: -->
-[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"
-[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"
-[WebhintMain]: https://webhint.io "webhint"
+<!-- links -->
+<!-- external links: -->

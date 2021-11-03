@@ -310,56 +310,21 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../../../device-mode/index.md#simulate-a-mobile-viewport "Simulate a mobile viewport - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsDeviceModeIndexShowDeviceFrame]: ../../../device-mode/index.md#show-device-frame "Show device frame - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCommandMenuIndex]: ../../../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevtoolsDeviceModeIndexThrottleNetworkCpu]: ../../../device-mode/index.md#throttle-the-network-and-cpu "Throttle the network and CPU - Simulate mobile devices with Device Mode in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeIndexSettings]: ../../../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsStorageCookiesFields]: ../../../storage/cookies.md#fields "Fields - View, edit, and delete cookies with Microsoft Edge DevTools | Microsoft Docs"
-
-[VisualStudioIndex]: ../../../../visual-studio/index.md "Visual Studio | Microsoft Docs"
-
-[VisualStudioCodeDebuggerEdgeExtension]: ../../../../visual-studio-code/debugger-for-edge.md "Debugger for Microsoft Edge Visual Studio Code extension | Microsoft Docs"
-[VisualStudioCodeElementEdgeExtension]: ../../../../visual-studio-code/elements-for-edge.md "Elements for Microsoft Edge Visual Studio Code extension | Microsoft Docs"
-<!-- external links -->
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
-
-[VisualStudioCode]: https://code.visualstudio.com "Visual Studio Code"
-[VisualStudioMarketplaceDebuggerEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"
-[VisualStudioMarketplaceElementsMicrosoftEdgeExtension]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Elements for Microsoft Edge | Visual Studio Marketplace"
-[VisualStudioMarketplaceWebhintExtension]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"
-
-[TrackingPrevention]: https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79 "Improving Tracking Prevention in Microsoft Edge blog post"
-
-[MicrosoftEdgeInsiderAddons]: https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee "Microsoft Edge Insider Addons"
-[MicrosoftVisualStudioDownloads]: https://visualstudio.microsoft.com/downloads "Download Visual Studio 2019 for Windows & Mac"
-
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
-
-[CR924693]: https://crbug.com/924693 "Feature Request: Add Moto G4 To Device Mode List | Chromium Bugs"
-[CR1030258]: https://crbug.com/1030258 "CR 1030258 | Chromium Bugs"
-[CR1026879]: https://crbug.com/1026879 "Cookie tab in the dev console doesn't show priority anymore | Chromium Bugs"
-[CR1029826]: https://crbug.com/1029826 "network tab -> right choose to request -> copy -> copy as fetch does not copy cookies | Chromium Bugs"
-[CR985402]: https://crbug.com/985402 "web app manifest icon error strings are confusing | Chromium Bugs"
-[CR963183]: https://crbug.com/963183 "DevTools are not WCAG compliant | Chromium Bugs"
-[CR941561]: https://crbug.com/941561 "Localizability of the DevTools | Chromium Bugs"
-[CR987787]: https://crbug.com/987787 "Dom 3D View | Chromium Bugs"
-
-[CSSContentDemo]: https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html "Demo for unescaped CSS content"
-
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer"
-
-[TheWebWeWant]: https://webwewant.fyi "The Web We Want"
-[AccessibilityInsights]: https://accessibilityinsights.io "Accessibility Insights"
-[MDNDocumentObjectModel]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model "Document Object Model (DOM) | MDN"
-[MDNZIndex]: https://developer.mozilla.org/docs/Web/CSS/z-index "z-index | MDN"
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
+<!-- links -->
+
+
+<!-- external links -->
+
+
+
+
+
+
+
+
 
 [Webhint]: https://webhint.io "webhint"
-
-[WebhintBrowserExtension]: https://webhint.io/docs/user-guide/extensions/extension-browser "Webhint Browser Extension | webhint documentation"
-[WebhintVisualStudioCodeExtension]: https://webhint.io/docs/user-guide/extensions/vscode-webhint "Webhint Visual Studio Code Extension | webhint documentation"
+
 
 
 <!-- ====================================================================== -->
@@ -369,8 +334,4 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+

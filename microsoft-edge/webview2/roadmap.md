@@ -58,13 +58,8 @@ You can access WebView2 controls in your applications using [Windows UI Library 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[ConceptDistribution]: ./concepts/distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-<!-- external links -->
-[WindowsAppSDKRoadmap]: https://github.com/microsoft/WindowsAppSDK/blob/main/docs/roadmap.md "Roadmap"
-
-[UwpToolkitsWinui3Index]: /uwp/toolkits/winui3/index "Windows UI Library 3.0 Preview 1 (May 2020) | Microsoft Docs"
-
-[GithubMicrosoftedgeWebviewfeedbackMain]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"
-
-[GithubMicrosoftUiXamlRoadmap]: https://github.com/microsoft/microsoft-ui-xaml/blob/master/docs/roadmap.md "Windows UI Library Roadmap - microsoft/microsoft-ui-xaml | GitHub"
+<!-- links -->
+<!-- external links -->
+
+
+

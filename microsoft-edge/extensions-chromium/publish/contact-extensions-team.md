@@ -28,13 +28,7 @@ keywords: microsoft edge, extensions development, browser extensions, add-ons, p
 
 If you think an item in the Microsoft Edge Add-ons website violates a copyright or trademark, navigate to [Notices of Infringement](https://www.microsoft.com/info/Marketplace.html) and complete the form.  The Microsoft Edge extensions team reviews your report and then takes the necessary action.
 
-<!-- links in this repo -->
-[ExtensionsDeveloperGuideApiSupport]: ../developer-guide/api-support.md "Supported APIs for Microsoft Edge extensions | Microsoft Docs"
-[ExtensionsDeveloperGuidePortChromeExtension]: ../developer-guide/port-chrome-extension.md "Port your extension | Microsoft Docs"
-[ExtensionsPublishPublishExtension]: ./publish-extension.md "Publish your extension | Microsoft Docs"
-<!-- other Microsoft links -->
-[MicrosoftInfoMarketplaceHtml]: https://www.microsoft.com/info/Marketplace.html "Notices of Infringement | Microsoft"
-
-[MicrosoftSupportSupportrequestformE7a381be9c9aFafbEd76262bc93fd9e4]: https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4 "Extensions New Support Request | Microsoft Support"
-
-[OfficeFormsPagesResponsepageAspxV4j5cvggr0grqy180bhbrw01uwybfaxnna1zkp3x2vun0ibsu1ymeu3vfy0vurrodewsjgwu00yry4u]: https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRw01UwyBfAxNna_1ZkP3X2VUN0lBSU1YMEU3VFY0VURRODEwSjgwU00yRy4u "Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page | Microsoft Office Forms"
+<!-- links in this repo -->
+<!-- other Microsoft links -->
+
+

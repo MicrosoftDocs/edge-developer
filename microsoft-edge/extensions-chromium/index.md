@@ -125,40 +125,16 @@ Extensions for Visual Studio Code rather than for Microsoft Edge:
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[ExtensionsGettingStartedIndex]: ./getting-started/index.md "Extension concepts and architecture | Microsoft Docs"
-[ExtensionsDeveloperGuidePortChrome]: ./developer-guide/port-chrome-extension.md "Port Chrome Extension To Microsoft Edge | Microsoft Docs"
-
-[ExtensionsPublish]: ./publish/publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"
-[EdgeDevToolsVSCode]: ../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
-[WebhintVSCode]: ../visual-studio-code/webhint.md "webhint extension for Visual Studio Code | Microsoft Docs"
-<!-- external links -->
-[ManageExtensionsEnterprise]: /deployedge/microsoft-edge-manage-extensions "Manage Microsoft Edge extensions in the enterprise | Microsoft Edge Enterprise docs"
-[MicrosoftDeveloperEdgeExtensions]: https://developer.microsoft.com/microsoft-edge/extensions "Develop extensions for Microsoft Edge | Microsoft Developer"
-[MicrosoftDeveloperRegistration]: https://developer.microsoft.com/registration "Partner Center | Microsoft Developer"
-
-[MicrosoftEdgeAddonsCategoryExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Extensions for Microsoft Edge | Microsoft Edge"
-
-[AppleDeveloperSafariservicesAppExtensions]: https://developer.apple.com/documentation/safariservices/safari_app_extensions "Safari App Extensions | Apple Developer"
-[AppleDeveloperSafariservicesAppExtensionsBuilding]: https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension "Building a Safari App Extension | Apple Developer"
-
-[ChromeDeveloperExtensions]: https://developer.chrome.com/extensions "What are extensions? | Chrome Developer"
-[ChromeDeveloperExtensionsApiIndex]: https://developer.chrome.com/extensions/api_index "Chrome APIs | Chrome Developer"
-[ChromeDeveloperExtensionsGetstarted]: https://developer.chrome.com/extensions/getstarted "Getting Started Tutorial | Chrome Developer"
-
-[ChromiumHome]: https://www.chromium.org/Home "Chromium"
-
-[ExtensionworkshopPorting]: https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension "Porting a Google Chrome extension | Extension Workshop"
-
-[GoogleChromeWebstoreCategoryExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"
-
-[MDNWebextensions]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions "Browser Extensions | MDN"
-[MDNWebextensionsYourFirst]: https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension "Your first extension | MDN"
-
-[MozillaAddonsFirefoxExtensions]: https://addons.mozilla.org/firefox/extensions "Extensions | Add-ons for Firefox"
-
-[OperaAddonsExtensions]: https://addons.opera.com/extensions "Extensions | Opera Addons"
-
-[OperaDevExtensions]: https://dev.opera.com/extensions "Extensions Documentation | Dev. Opera"
-[OperaDevExtensionsApis]: https://dev.opera.com/extensions/apis "Extension APIs Supported in Opera | Dev. Opera"
-[OperaDevExtensionsGettingStarted]: https://dev.opera.com/extensions/getting-started "Getting Started | Dev. Opera"
+<!-- links -->
+
+<!-- external links -->
+
+
+
+
+
+
+
+
+
+

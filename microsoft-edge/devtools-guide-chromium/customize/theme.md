@@ -87,16 +87,8 @@ To use the Command Menu to change which color theme is applied to DevTools:
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCommandMenu]: ../command-menu/index.md "Command Menu | Microsoft Docs"
-[WhatsNew93]: ../whats-new/2021/07/devtools.md "What's New In DevTools (Microsoft Edge 93) | Microsoft Docs"
-[VSCode]: https://code.visualstudio.com
-[AccessibilityPreferredColorSchemeSimulation]: ../accessibility/preferred-color-scheme-simulation.md "Emulate dark or light schemes in the rendered page | Microsoft Docs"
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+<!-- links -->
+
 
 
 <!-- ====================================================================== -->

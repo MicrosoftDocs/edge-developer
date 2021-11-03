@@ -407,90 +407,32 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsWhatsNew202001DevtoolsUsingDevtoolsInOtherLanguages]: ../../2020/01/devtools.md#using-the-devtools-in-other-languages "Using the DevTools in other languages - What's New In DevTools (Microsoft Edge 81) | Microsoft Docs"
-[DevtoolsWhatsNew202011Devtools]: ../../2020/11/devtools.md "What's new in DevTools (Microsoft Edge 88) | Microsoft Docs"
-[DevtoolsWhatsNew202011DevtoolsCssVariableDefinitionsInStylesPane]: ../../2020/11/devtools.md#css-variable-definitions-in-styles-pane "CSS variable definitions in Styles pane - What's New in DevTools (Microsoft Edge 88) | Microsoft Docs"
-[DevtoolsWhatsNew202102Devtools]: ../02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"
-[DevtoolsWhatsNew202102DevtoolsGroupToolsTogetherInFocusMode]: ../02/devtools.md#group-tools-together-in-focus-mode "Group tools together in Focus Mode - What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"
-
-[DevtoolsCommandMenuIndexOpenCommandMenu]: ../../../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"
-[DevtoolsConsoleApiError]: ../../../console/api.md#error "error - Console API reference | Microsoft Docs"
-[DevtoolsCustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevtoolsServiceWorkerIndex]: ../../../service-workers/index.md "Service Worker improvements | Microsoft Docs"
-[DevtoolsSourcesUsingDebuggerPaneToDebugJavascriptCode]: ../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code "Using the Debugger pane to debug JavaScript code - Sources tool overview | Microsoft Docs"
-
-[ProgressiveWebAppsServiceworkerServiceWorkerLifecycle]: ../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle "The Service Worker lifecycle - Use Service Workers to manage network requests and push notifications | Microsoft Docs"
-[ProgressiveWebAppsWebappmanifests]: ../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
+<!-- links -->
+
+
+
 <!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
-
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
-[VisualstudioMarketplaceMsjsdiagDebuggerForEdge]: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge "Debugger for Microsoft Edge | Visual Studio Marketplace"
-
-[BrotliMain]: https://www.brotli.org "Brotli"
-
-[ChromestatusFeature4752739957473280]: https://chromestatus.com/feature/4752739957473280 "Feature: accent-color CSS property | Chrome Platform Status"
-
-[CsswgDraftsCssUi4WidgetAccent]: https://drafts.csswg.org/css-ui-4/#widget-accent "Widget Accent Colors: the accent-color property - CSS Basic User Interface Module Level 4 | CSS Working Group Editor Drafts"
-
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
-[CR11374]: https://crbug.com/v8/11374 "Issue 11374: Implement ergonomic brand checking for private fields"
-[CR761019]: https://crbug.com/761019 "Issue 761019: 'Go to symbol' misses the first function and prefers a worse match if it contains all the typed chars"
-[CR862450]: https://crbug.com/862450 "Issue 862450: [css-scroll-snap] Consider adding Devtools feature for css scroll snap"
-[CR979000]: https://crbug.com/979000 "Issue 979000: Source maps with colliding sources paths don't work."
-[CR1066604]: https://crbug.com/1066604 "Issue 1066604: DevTools: See details about ServiceWorker install and activate events | Chromium bugs"
-<!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->
-[CR1076198]: https://crbug.com/1076198 "Issue 1076198: [Feature Request] Jump to computed property from `styles` tab"
-[CR1092093]: https://crbug.com/1092093 "Issue 1092093: Make form controls more color-stylable by supporting the 'accent-color' CSS property"
-[CR1136655]: https://crbug.com/1136655 "Issue 1136655: Devtools: Localization V2 | Chromium bugs"
-[CR1142705]: https://crbug.com/1142705 "Issue 1142705: breakpoints stop working when 2 sourcemaps point to the same virtual file when using webpack"
-[CR1149832]: https://crbug.com/1149832 "Issue 1149832: Feature request: image preview should also show file size"
-[CR1158827]: https://crbug.com/1158827 "Issue 1158827: [Permissions Policy] Implement devtool support for permissions policy"
-[CR1162042]: https://crbug.com/1162042 "Issue 1162042: DevTools: support disabling gzip/brotli/jxl content-encoding"
-[CR1166577]: https://crbug.com/1166577 "Issue 1166577: ☂️ Linear Memory Inspector 1.0"
-[CR1170656]: https://crbug.com/1170656 "Issue 1170656: Show intrinsic aspect-ratio"
-[CR1178305]: https://crbug.com/1178305 "Issue 1178305: Debugger doesn't show an indexed element's property value when it's hovered"
-[CR1180794]: https://crbug.com/1180794 "Issue 1180794: Breakpoints don't work with Closure Compiler inlining optimization"
-[CR1185945]: https://crbug.com/1185945 "Issue 1185945: Manifest warning implies all icons must be square | Chromium bugs"
-[CR1186049]: https://crbug.com/1186049 "Issue 1186049: Column for Vary: header in Cache Storage viewer"
-[CR1187735]: https://crbug.com/1187735 "Issue 1187735: Accessibility: MAS2.1.1: Keyboard: Unable to invoke the 'Var(..)' function using keyboard | Chromium bugs"
-[CR1189161]: https://crbug.com/1189161 "Issue 1189161: `new Error` stacktraces are not transformed via DWARF"
-[CR1191465]: https://crbug.com/1191465 "Issue 1191465: Ctrl+Shift+O broken on HTML"
-
-[GithubW3cWebappsecPermissionsPolicyPermissionsPolicyExplainerMd]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md "Permissions Policy Explainer | GitHub"
-
-[GlitchMemoryInspectorDemoJsHtml]: https://memory-inspector.glitch.me/demo-js.html "Memory in JS | Glitch"
-[GlitchMemoryInspectorDemoWasmHtml]: https://memory-inspector.glitch.me/demo-wasm.html "Memory in Wasm | Glitch"
-
-[GlitchMicrosoftEdgeChromiumDevtoolsCssDbgStoriesCssScrollSnapHtml]: https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html "Scroll Snap Demo | Glitch"
-
-[GlitchPermissionPolicyDemoMain]: http://permission-policy-demo.glitch.me "OOPIF Permissions Policy | Glitch"
-
-[GnuSoftwareGzipManual]: https://www.gnu.org/software/gzip/manual "gzip: the data compression program | GNU Operating System"
-
-[HttpwgSpecsRfc7231HtmlHeaderVary]: https://httpwg.org/specs/rfc7231.html#header.vary "Vary - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content | IETF HTTP Working Group"
-
-[JsWebpackGuidesCodeSplittingTextThereAreThreeGeneralApproachesToCodeSplittingSplitCodeViaInlineFunctionCallsWithinModules]: https://webpack.js.org/guides/code-splitting/#:~:text=There%20are%20three%20general%20approaches%20to%20code%20splitting,Split%20code%20via%20inline%20function%20calls%20within%20modules. "There are three general approaches to code splitting available:  Entry Points:  Manually split code using entry configuration.  Prevent Duplication:  Use Entry dependencies or SplitChunksPlugin to dedupe and split chunks.  Dynamic Imports:  Split code via inline function calls within modules. - Code Splitting | webpack"
-
-[MdnDocsWebCssUsingCssCustomProperties]: https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties "Using CSS custom properties (variables) | MDN"
-
-[MdnDocsWebJavascriptReferenceOperatorsIn]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/in "in operator | MDN"
-
-[PwabuilderImagegenerator]: https://www.pwabuilder.com/imageGenerator "Image Generator | PWABuilder"
-
-[RollupjsMain]: https://rollupjs.org "rollup.js"
-
-[V8DevFeaturesPrivateBrandChecks]: https://v8.dev/features/private-brand-checks "Private brand checks a.k.a. #foo in obj | V8"
-[V8DevFeaturesClassFieldsPrivateClassFields]: https://v8.dev/features/class-fields#private-class-fields "Private class fields - Public and private class fields | V8"
-
-[WebpackJsMain]: https://webpack.js.org "webpack"
+
+
+
+
+
+
+
+<!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -498,8 +440,4 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+

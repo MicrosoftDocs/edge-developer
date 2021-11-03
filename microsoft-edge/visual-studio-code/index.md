@@ -77,17 +77,9 @@ To install the webhint extension:
 
 
 <!-- ====================================================================== -->
-<!--links -->
-[VisualStudioCodeMicrosoftEdgeDevtoolsExtension]: ./microsoft-edge-devtools-extension.md "Microsoft Edge DevTools for Visual Studio Code extension | Microsoft Docs"
-[VisualStudioCodeWebhint]: ./webhint.md "The webhint extension for Visual Studio Code | Microsoft Docs"
-<!-- external links -->
-[VisualstudioCode]: https://code.visualstudio.com "Visual Studio Code"
-[VisualStudioCodeDocs]: https://code.visualstudio.com/Docs "Documentation | Visual Studio Code"
-
-[VisualstudioMarketplaceMicrosoftEdgeToolsVisualStudioCode]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Tools for Visual Studio Code | Visual Studio Marketplace"
-
-[VisualstudioMarketplaceWebhint]: https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint "webhint | Visual Studio Marketplace"
-
-[OpenjsFoundation]: https://openjsf.org "OpenJS Foundation"
-
-[WebhintMain]: https://webhint.io "webhint"
+<!--links -->
+<!-- external links -->
+
+
+
+

@@ -279,65 +279,21 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 <!-- ====================================================================== -->
 <!-- links -->
-<!--[DevtoolsWhatsNew201901Inspect]: ../../../whats-new/2019/01/devtools.md#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->
-[DevtoolsConsoleApiDir]: ../../../console/api.md#dir "dir - Console API Reference | Microsoft Docs"
-[DevtoolsConsoleUtilitiesRecentlyChosenElementJavascriptObject]: ../../../console/utilities.md#recently-chosen-element-or-javascript-object "Recently chosen element or JavaScript object - Console Utilities API Reference | Microsoft Docs"
-[DevtoolsCssReferenceColorPicker]: ../../../css/reference.md#change-colors-with-the-color-picker "Change colors with the Color Picker - CSS features reference | Microsoft Docs"
-[DevtoolsDrawer]: ../../../customize/index.md#drawer "Drawer - Customize Overview | Microsoft Docs"
-[DevtoolsIndex]: ../../../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../../../issues/index.md "Find And Fix Problems With The Microsoft Edge DevTools Issues Tab | Microsoft Docs"
-[DevtoolsNetworkDetails]: ../../../network/index.md#inspect-the-details-of-the-resource "Inspect the details of the resource | Microsoft Docs"
-[DevtoolsNetworkLog]: ../../../network/index.md#log-network-activity "Log network activity | Microsoft Docs"
-[DevtoolsRemoteDebugAndroid]: ../../../remote-debugging/index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"
-[DevtoolsRemoteDebugDuoEmulator]: ../../../remote-debugging/surface-duo-emulator.md "Get Started with Remote Debugging Surface Duo emulators | Microsoft Docs"
-[DevtoolsRemoteDebugWindows]: ../../../remote-debugging/windows.md "Get Started with Remote Debugging Windows devices | Microsoft Docs"
-
-[PwaIndex]: ../../../../progressive-web-apps-chromium/index.md "Progressive Web Apps on Windows | Microsoft Docs"
-
-[DualScreensAndroidEmulator]: /dual-screen/android/use-emulator "Use the Surface Duo emulator | Microsoft Docs"
-
-[AndroidEdge]: https://play.google.com/store/apps/details?id=com.microsoft.emmx "Microsoft Edge Android app"
-
-[CaniuseMDNSpaceSeparatedFunctionalColorNotations]: https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation "Space-separated functional color notations - MDN | Can I Use"
-
-[CRIssuesList]: https://bugs.chromium.org/p/chromium/issues/list "Chromium bugs"
-
-[CR174309]: https://crbug.com/174309 "DevTools: Allow to customize keyboard shortcuts/key bindings | Chromium bugs"
-[CR963183]: https://crbug.com/963183 "DevTools are not WCAG compliant | Chromium bugs"
-[CR1040019]: https://crbug.com/1040019 "DevTools: easily preview images and background images in Styles pane | Chromium bugs"
-[CR1040025]: https://crbug.com/1040025 "DevTools: show basic a11y info in element popover | Chromium bugs"
-[CR1048378]: https://crbug.com/1048378 "DevTools UI support for High Contrast mode | Chromium bugs"
-[CR1054381]: https://crbug.com/1054381 "CR 1054381 | Chromium bugs"
-[CR1068116]: https://crbug.com/1068116 "Ship issues panel | Chromium bugs"
-[CR1072952]: https://crbug.com/1072952 "DevTools: color picker should produce modern CSS color syntax | Chromium bugs"
-[CR1075437]: https://crbug.com/1075437 "DevTools: add support for the CSS `revert` keyword/value | Chromium bugs"
-[CR1076112]: https://crbug.com/1076112 "Devtools personalization - drawer resizer"
-[CR1081486]: https://crbug.com/1081486 "Keyboard focus not visible for navigation buttons in screencast mode | Chromium bugs"
-[CRV86751]: https://bugs.chromium.org/p/v8/issues/detail?id=6751 "PromiseStatus should be 'fulfilled', not 'resolved' | V8 bugs"
-
-[CSSWGDraftsColor4Changes3]: https://drafts.csswg.org/css-color#changes-from-3 "Changes from Colors 3 - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
-[CSSWGDraftsColor4Property]: https://drafts.csswg.org/css-color#the-color-property "3.  Foreground Color: the 'color'  - CSS Color Module Level 4 | W3C CSS Working Group Editor Drafts"
-
-[DesktopEdge]: https://www.microsoft.com/edge/ "Download Microsoft Edge Browser | Microsoft"
-
-[GithubDomenicPromiseUnwrappingStatesFates]: https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md "States and Fates - domenic/promises-unwrapping | GitHub"
-
-[MDNRevert]: https://developer.mozilla.org/docs/Web/CSS/revert "revert | MDN"
-[MDNRevertBrowserCompatibility]: https://developer.mozilla.org/docs/Web/CSS/revert#Browser_compatibility "Browser compatibility | MDN"
-
-[VisualStudioCodeMain]: https://code.visualstudio.com/ "Visual Studio Code"
-[VisualStudioCodeShortcuts]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf "Visual Studio Code Keyboard shortcuts for Windows"
-
-[WebhintHintsAxeKeyboard]: https://webhint.io/docs/user-guide/hints/hint-axe/keyboard/ "Axe: Keyboard | WebHint"
-[WebhintHintsAxeNameRoleValue]: https://webhint.io/docs/user-guide/hints/hint-axe/name-role-value/ "Axe: Name Role Value | WebHint"
-
-[MicrosoftSupportWindows10HighContrastMode]: https://support.microsoft.com/help/4026951/windows-10-turn-high-contrast-mode-on-or-off "Turn high contrast mode on or off in Windows | Windows support"
-
-[PostTweetEdgeDevTools]: https://aka.ms/tweet/edgedevtools "@EdgeDevTools | Post a Tweet"
-[EdgeDevToolsTwitterAccount]: https://aka.ms/twitter/edgedevtools "@EdgeDevTools Twitter account"
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://aka.ms/edgedevtoolsdocs/feedback "New Issue - MicrosoftDocs/edge-developer"
-[MicrosoftEdgePreviewChannels]: https://aka.ms/microsoftedge "Microsoft Edge Preview Channels"
-[TheWebWeWantMain]: https://aka.ms/webwewant "The Web We Want"
+<!--[DevtoolsWhatsNew201901Inspect]: ../../../whats-new/2019/01/devtools.md#inspect "Detailed tooltips in Inspect Mode - What's New In DevTools (Edge 73) | Microsoft Docs"  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--[WebdevAppShortcuts]: https://alphabet-dev/app-shortcuts "Get things done quickly with app shortcuts | alphabet-dev"  -->
 <!--[WebdevCls]: https://alphabet-dev/cls "Cumulative Layout Shift (CLS) | alphabet-dev"  -->
@@ -353,8 +309,4 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+

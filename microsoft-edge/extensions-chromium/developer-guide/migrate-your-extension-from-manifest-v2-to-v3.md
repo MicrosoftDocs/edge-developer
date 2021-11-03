@@ -52,18 +52,9 @@ The current declarative net request API implementation is available in our Stabl
 The Microsoft Edge extensions team continues publishing updates on the blog.  You may provide your feedback on the changes through [Tech Community](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
 
 <!-- links -->
-
-[DeployedgeMicrosoftEdgePoliciesExtensions]: /deployedge/microsoft-edge-policies#extensions "Extensions - Microsoft Edge - Policies | Microsoft Docs"
-
-[MicrosoftMicrosoftedgeAddons]: https://microsoftedge.microsoft.com/addons "Microsoft Edge Add-ons"
-
-[MicrosoftTechcommunityT5ArticlesManifestV3ChnagesAreNowAvailableInMicrosoftEdgeMP1780254]: https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254 "Manifest V3 changes are now available in Microsoft Edge | Microsoft Tech Community"
-
-[ChromeDeveloperDocsExtensionsMv2Sandboxingeval]: https://developer.chrome.com/docs/extensions/mv2/sandboxingEval "Using eval in Chrome extensions | Chrome Developers"
-[ChromeDeveloperDocsExtensionsMv3MigratingToServiceWorkers]:  https://developer.chrome.com/docs/extensions/mv3/migrating_to_service_workers "Migrating from background pages to service workers | Chrome Developers"
-[ChromeDeveloperDocsExtensionsMv3Mv3MigrationChecklist]: https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist "Manifest V3 migration checklist | Chrome Developers"
-
-[ChromeDeveloperDocsExtensionsReferenceDeclarativenetrequest]: https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest "chrome.declarativeNetRequest | Chrome Developers"
-[ChromeDeveloperDocsExtensionsReferenceWebrequest]: https://developer.chrome.com/docs/extensions/reference/webRequest "chrome.webRequest | Chrome Developers"
-
-[ChromiumHomeChromiumSecurityExtensionContentScriptFetches]: https://www.chromium.org/Home/chromium-security/extension-content-script-fetches "Changes to Cross-Origin Requests in Chrome Extension Content Scripts | The Chromium Projects"
+
+
+
+
+
+

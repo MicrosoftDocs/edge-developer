@@ -96,8 +96,4 @@ Individual web pages can also define a theme color using the [`theme-color` meta
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MDNIconManifestMember]: https://developer.mozilla.org/docs/Web/Manifest/icons "icons - Web app manifests | MDN"
-[PWABuilderImageGenerator]: https://www.pwabuilder.com/imageGenerator "Image Generator | PWABuiler.com"
-[MDNThemeColorMeta]: https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color "theme-color - HTML | MDN"
-[WindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
+<!-- links -->

@@ -289,12 +289,7 @@ Thus, depending on how you write DOM injected scripts in your Extension, changes
 <!-- image links -->
 
 <!-- links -->
-
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "An Introduction to Content Security Policy | HTML5 Rocks"
-[PublicSuffixList]: https://publicsuffix.org/list "VIEW THE PUBLIC SUFFIX LIST"
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash usage for \<script\> elements - Content Security Policy Level 2 | W3C"
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Content Security Policy Level 3 | W3C"
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-middle attack | Wikipedia"
+
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
@@ -302,7 +297,4 @@ Thus, depending on how you write DOM injected scripts in your Extension, changes
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+

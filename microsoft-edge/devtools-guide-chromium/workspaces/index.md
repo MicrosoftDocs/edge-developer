@@ -277,26 +277,18 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsCssIndex]: ../css/index.md "Get started with viewing and changing CSS | Microsoft Docs"
+<!-- links -->
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
 <!-- external links -->
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
-
-[GlitchWorkspacesDemo]: https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0 "Workspaces Demo files | Glitch"
-
-[MDNCSSContent]: https://developer.mozilla.org/docs/Web/CSS/content "Content - CSS: Cascading Style Sheets | MDN"
-[MDNWebGettingStarted]: https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web "Getting started with the Web | MDN"
-[MDNSimpleLocalHTTPServer]: https://developer.mozilla.org/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server "Running a simple local HTTP server | MDN"
-[MDNWebAPIsDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to DOM - Web APIs | MDN"
+
+
 
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
-
-[TreehouseBlogSourceMaps]: https://blog.teamtreehouse.com/introduction-source-maps "An Introduction to Source Maps | Treehouse Blog"
+
 
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
-
-[WikiPortURLs]: https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs "Port (computer networking) - Wikipedia"
+
 
 
 <!-- ====================================================================== -->
@@ -306,8 +298,4 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+

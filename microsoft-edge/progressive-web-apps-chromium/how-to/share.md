@@ -287,13 +287,4 @@ self.addEventListener('fetch', event => {
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MDNWebShareAPI]: https://developer.mozilla.org/docs/Web/API/Web_Share_API "Web Share API - Web APIs | MDN"
-[MDNFileInterface]: https://developer.mozilla.org/docs/Web/API/File "File - Web APIs | MDN"
-[W3CWebShareTargetAPI]: https://w3c.github.io/web-share-target/level-2/ "Web Share Target API | W3C"
-[BackgroundSync]: ./background-syncs.md "Synchronize and update in the background | Microsoft Docs"
-[ShareWebDev]: https://web.dev/web-share/ "Integrate with the OS sharing UI with the Web Share API | web.dev"
-[ShareTargetWebDev]: https://web.dev/web-share-target/ "Receiving shared data with the Web Share Target API | web.dev"
-[DemoDevToolsTips]: https://devtoolstips.org/ "DevTools Tips"
-[DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools Tips | GitHub"
-[DemoDevToolsTipsShareFunction]: https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38 "DevTools Tips | GitHub"
+<!-- links -->

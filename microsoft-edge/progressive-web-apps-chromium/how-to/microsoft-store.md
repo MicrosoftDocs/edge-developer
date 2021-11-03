@@ -156,24 +156,10 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[LegalWindowsAgreementsStorePolicies]: /legal/windows/agreements/store-policies "Microsoft Store Policies | Microsoft Docs"
-
-[WindowsUwpPublishAnalytics]: /windows/uwp/publish/analytics "Analyze app performance | Microsoft Docs"
-[WindowsUwpPublishAppScreenshotsImages]: /windows/uwp/publish/app-screenshots-and-images "App screenshots, images, and trailers | Microsoft Docs"
-[WindowsUwpPublishIndex]: /windows/uwp/publish/index "Publish Windows apps and games | Microsoft Docs"
-
-[MicrosoftPartnerDashboardHome]: https://partner.microsoft.com/dashboard/home "Home | Microsoft Partner Center"
-[MicrosoftPartnerDashboardWindowsOverview]: https://partner.microsoft.com/dashboard/windows/overview "Resources for partners | Microsoft Partner Center"
-
-[MicrosoftStoreAppsWindows]: https://www.microsoft.com/store/apps/windows "Windows Apps | Microsoft Store"
-
-[WindowsBlogWindowsdeveloperHostedAppModel]: https://blogs.windows.com/windowsdeveloper/hosted-app-model "Hosted App Model | Windows Developer Blog"
-
-[GithubPwaBuilderPwabuilderWindowsChromiumDocsClassicPackageMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/classic-package.md "What is a classic package? | GitHub"
-[GithubPwaBuilderPwabuilderWindowsChromiumDocsImageRecommendationsMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/image-recommendations.md "Image recommendations for Windows PWA packages | GitHub"
-[GithubPwaBuilderPwabuilderWindowsChromiumDocsNextStepsMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/next-steps.md "Next steps for getting your PWA into the Microsoft Store | GitHub"
-[GithubPwaBuilderPwabuilderWindowsChromiumDocsPublishNewAppMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/publish-new-app.md "Publish a new app to the Store | GitHub"
-[GithubPwaBuilderPwabuilderWindowsChromiumDocsUpdateExistingAppMd]: https://github.com/pwa-builder/pwabuilder-windows-chromium-docs/blob/master/update-existing-app.md "Update an existing app in the Store | GitHub"
-
-[PwabuilderMain]: https://www.pwabuilder.com "PWABuilder"
+<!-- links -->
+
+
+
+
+
+

@@ -119,27 +119,15 @@ If you need help or assistance with associating your Azure Active Directory acco
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extension developer | Microsoft Docs"
-[ContactEdgeExtensions]: ./contact-extensions-team.md "Contact Microsoft Edge extensions support | Microsoft Docs"
+<!-- links -->
 
-<!-- DMC/windows/uwp -->
-[AssociateAADWithPartnerCenterAccount]: /windows/uwp/publish/associate-azure-ad-with-partner-center
+<!-- DMC/windows/uwp -->
+
+
+
+
+
 
-[CreateNewAzureAD]: /windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account
-
-[AddAADUsersGroups]: /windows/uwp/publish/add-users-groups-and-azure-ad-applications
-
-[AssociateAzureADPC]: /windows/uwp/publish/associate-azure-ad-with-partner-center "Associate Azure Active Directory with your Partner Center account | Microsoft Docs"
-
-[AssociateAzureADPCnew]: /windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account "Create a brand new Azure AD to associate with your Partner Center account - Associate Azure Active Directory with your Partner Center account | Microsoft Docs"
-
-[AddAzure]: /windows/uwp/publish/add-users-groups-and-azure-ad-applications "Add users, groups, and Azure AD applications | Microsoft Docs"
-
-<!-- non-DMC -->
-[MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"
-
-[UserManagementPartnerCenter]: https://partner.microsoft.com/dashboard/account/v3/usermanagement
-[UserMGMT]: https://partner.microsoft.com/dashboard/account/v3/usermanagement "Microsoft Partner Center | Account settings | User management"
-
-[WindowsCommunityEverythingAboutMicrosoftAccounts]: https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Everything you need to know about Microsoft accounts | Windows Community"
+<!-- non-DMC -->
+
+

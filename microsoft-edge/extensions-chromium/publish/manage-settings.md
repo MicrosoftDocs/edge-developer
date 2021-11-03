@@ -47,5 +47,4 @@ Review the following settings in the Account settings section.
 | Agreements | Review the agreements that your account accepted. |
 
 <!-- links -->
-
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
+
