@@ -164,16 +164,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)) | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)). |
 
 
-<!-- ====================================================================== -->
-
-
-
-
-
-
-
 <!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->
-
 
 <!-- ====================================================================== -->
 > [!NOTE]

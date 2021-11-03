@@ -277,26 +277,10 @@ If you have more feedback on the topics or anything else, please use any of the 
 
 
 <!-- ====================================================================== -->
-
-
 <!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
-
 <!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
-
-
-
-
-
-
-
-
 <!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
-
-
-
 <!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
-
-
 
 
 <!-- ====================================================================== -->

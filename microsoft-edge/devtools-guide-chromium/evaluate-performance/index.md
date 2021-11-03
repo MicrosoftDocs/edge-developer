@@ -246,18 +246,8 @@ Last, there are many ways to improve runtime performance.  This article focused 
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
-
-
-
 <!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
-
 <!--[FrameAnatomy]: https://aerotwist.com/blog/the-anatomy-of-a-frame  -->
-
 <!--[RAIL]: /web/fundamentals/performance/rail  -->
 <!--[RenderingAvoidSynchronousLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts  -->
 <!--[RenderingAvoidThrashing]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing  -->
@@ -268,7 +258,6 @@ Last, there are many ways to improve runtime performance.  This article focused 
 <!--[RenderingPerformance]: /web/fundamentals/performance/rendering  -->
 <!--[RenderingReduceScope]: /web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations  -->
 <!--[RenderingSimplifyPaint]: /web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas  -->
-
 <!--[StackOverflowAlphabetBrowserDevtools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->
 
 > [!NOTE]

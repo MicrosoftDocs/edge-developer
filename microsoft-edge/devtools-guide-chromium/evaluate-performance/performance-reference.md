@@ -147,13 +147,7 @@ This section lists events that belong to Painting category and their properties.
 
 
 <!-- ====================================================================== -->
-
-
-
 <!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
-
-
-
 
 
 > [!NOTE]

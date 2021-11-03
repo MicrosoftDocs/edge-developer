@@ -88,15 +88,8 @@ You are able to view memory allocation by JavaScript function.  For more informa
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
 <!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->
 <!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->
-
-
 
 
 <!-- ====================================================================== -->

@@ -243,13 +243,6 @@ A couple of code stepping controls aren't explained in this article.  For more i
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
-
-
 <!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->
 
 

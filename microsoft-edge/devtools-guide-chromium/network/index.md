@@ -375,18 +375,7 @@ Navigate to the [Network Reference](./reference.md) to discover more DevTools fe
 
 
 <!-- ====================================================================== -->
-
 <!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-
-
-
-
-
-
-
-
-
-
 
 
 > [!NOTE]

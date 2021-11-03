@@ -249,21 +249,3 @@ To toggle persistent overlays on Flexbox layout, do either of the following:
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
 :::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
-
-
-<!-- ====================================================================== -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- external links: -->

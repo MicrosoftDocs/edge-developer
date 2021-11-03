@@ -116,24 +116,3 @@ If you need help or assistance with associating your Azure Active Directory acco
 
 *  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
 <!-- contrasts "Work and school accounts, or personal Microsoft accounts" -->
-
-
-<!-- ====================================================================== -->
-
-
-
-
-<!-- DMC/windows/uwp -->
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- non-DMC -->

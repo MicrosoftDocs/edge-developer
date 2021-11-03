@@ -148,20 +148,7 @@ You are able to interact with the screencast in the following ways.
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
-
-
-
-
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->
-
-
-
-
 
 
 <!-- ====================================================================== -->

@@ -184,13 +184,4 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
-
-
-
-
 <!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->

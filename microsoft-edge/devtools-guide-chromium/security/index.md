@@ -97,16 +97,6 @@ Choose one of the entries in the left-hand nav to view the details of the origin
 
 
 <!-- ====================================================================== -->
-
-
-
-
-
-
-
-[Webhint]: https://webhint.io "webhint"
-
-
 <!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 
