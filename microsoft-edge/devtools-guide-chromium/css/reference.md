@@ -266,7 +266,7 @@ To add a class to an element:
 To enable or disable a class on an element:
 
 1.  [Select the element](#select-an-element) in the **DOM Tree**.
-1.  Open the **Element Classes** pane.  See [Add a class to an element](#add-a-class-to-an-element).  Below the **Add New Class** text box are all of the classes that are being applied to this element.
+1.  Open the **Element Classes** pane.  See [Add a class to an element](#add-a-class-to-an-element).  Below the **Add New Class** text boxes are all of the classes that are being applied to this element.
 1.  Toggle the checkbox next to the class that you want to enable or disable.
 
 
@@ -399,7 +399,7 @@ The **Color Picker** provides a GUI for changing `color` and `background-color` 
 To open the **Color Picker**:
 
 1.  [Select an element](#select-an-element).
-1.  In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square which is a preview of the color.
+1.  In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square, which is a preview of the color.
 
     In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.
 
@@ -451,17 +451,16 @@ The **Angle Clock** provides a GUI for changing the angle amounts in CSS propert
 
 To open the **Angle Clock**:
 
-1.  Select an element with angle declaration. For example, select the text below.
+1.  Select an element which includes an angle declaration. <!-- For example, select the text below. -->
 
-1.  In the **Styles** tab, find the `transform` or `background` declaration that you want to change.  Click on the **Angle Preview** box next to the angle value.
+1.  In the **Styles** tab, find the `transform` or `background` declaration that you want to change.  Click the **Angle Preview** box next to the angle value.
 
-    <!-- Figure: The small clock to the left of `-5deg` and `0.25turn` is a preview of the angle. -->
-    <!-- :::image type="content" source="../media/__.png" alt-text="Angle preview."::: -->
-
-1.  Click the preview to open the **Angle Clock**.
-
-    <!-- Figure: The Angle Clock. -->
+    In the following figure, the small clock to the left of `100deg` is a preview of the angle.
     <!-- :::image type="content" source="../media/__.png" alt-text="The Angle Clock."::: -->
+
+1.  Click the preview to open the **Angle Clock**:
+
+    :::image type="content" source="images/css-angle.msft.png" alt-text="Angle preview.":::
 
 1.  Change the angle value by clicking on the **Angle Clock** circle, or scroll your mouse to increase or decrease the angle value by 1.
 
@@ -470,13 +469,8 @@ There are more keyboard shortcuts to change the angle value.  Find out more in t
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
