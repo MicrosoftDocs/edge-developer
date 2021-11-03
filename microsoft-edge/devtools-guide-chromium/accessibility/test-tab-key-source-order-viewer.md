@@ -46,7 +46,6 @@ To turn on the Source Order Viewer:
 1.  In the upper-right corner of the **Settings** page, select **X** to close the Settings page.  At the top of DevTools, the message **One or more settings have changed which require a reload to take effect.** is displayed.  Select the **Reload DevTools** button.
 
 
-
 To activate and use the Source Order Viewer, with the demo page:
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.

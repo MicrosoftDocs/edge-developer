@@ -64,7 +64,6 @@ The following table provides a list of APIs that you can use when building exten
 | [windows](https://developer.chrome.com/extensions/windows) | Interact with browser windows to create, modify, and rearrange windows in the browser. |
 
 
-
 <!-- ====================================================================== -->
 ## Unsupported extension APIs
 
@@ -84,9 +83,6 @@ Microsoft Edge doesn't support the following Extension APIs:
    A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 
 *  Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users.  These tokens are sent to the REST-based licensing API.
-
-
-
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -461,7 +461,6 @@ For detailed walkthrough steps, navigate to [Verify that the page is usable by p
 :::image-end:::
 
 
-
 ### Verify that the webpage is usable with blurred vision
 
 Another interesting feature of the **Rendering** tool is that you can simulate blurred vision.  If we choose the **Blurred vision** option from the **Emulate vision deficiencies** dropdown list, we can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
