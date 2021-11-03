@@ -289,7 +289,7 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 *   Run it after the creation of the global object.
 *   Run it before any other script included in the HTML document is run.
 
-1.  For example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync) method.
+1.  For example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync) method:
 
     ```csharp
     void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
