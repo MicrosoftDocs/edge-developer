@@ -35,7 +35,7 @@ To get a Microsoft Edge preview channel, navigate to [Download Microsoft Edge In
 <!-- intro/overview of 4 approaches ======================================= -->
 ## Approaches to making your app use a specific browser channel
 
-When a WebView2 is initialized, it will attempt to find a valid runtime on the machine to use. This can be the WebView2 Runtime, a preview channel of Microsoft Edge, or a specified location containing fixed version binaries. You can learn more about supported runtimes at [Distribute a WebView2 app and the WebView2 Runtime](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution).
+When a WebView2 is initialized, it will attempt to find a valid runtime on the machine to use. This can be the WebView2 Runtime, a preview channel of Microsoft Edge, or a specified location containing fixed version binaries. You can learn more about supported runtimes at [Distribute a WebView2 app and the WebView2 Runtime](../concepts/distribution.md).
 
 There are several ways to make your WebView2 app use a specified preview channel of Microsoft Edge:
 *  By calling a function.
