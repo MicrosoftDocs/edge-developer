@@ -32,7 +32,7 @@ Install the following prerequisites before proceeding.
 Start with a basic desktop project that contains a single main window.
 
 > [!IMPORTANT]
-> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)]([CppWindowsWalkthroughCreatingDesktopApplication]) for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide).
+> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp) for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide).
 
 1.  In Visual Studio, open `WebView2GettingStarted.sln`.
     If you use an older version of Visual Studio, in the **Solution Explorer** right-click **WebView2GettingStarted**, and choose **Properties**. Click **Configuration Properties** > **General**, then modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset.

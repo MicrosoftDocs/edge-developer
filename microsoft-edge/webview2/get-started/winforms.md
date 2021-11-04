@@ -114,7 +114,7 @@ Add a WebView2 control to your app.
 1.  Make sure the WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
     :::image type="complex" source="./media/winforms-hello-webview.png" alt-text="The sample app displays the Microsoft website." lightbox="./media/winforms-hello-webview.png":::
-       The sample application with WebView2 control displays the Microsoft website, http://www.microsoft.com.
+       The sample application with WebView2 control displays the Microsoft website, https://www.microsoft.com.
     :::image-end:::
 
     > [!NOTE]
@@ -386,7 +386,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 
     :::image type="complex" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
-       The application displays the URI in the address bar. The URI is http://www.microsoft.com and the Microsoft website displays in the window.
+       The application displays the URI in the address bar. The URI is https://www.microsoft.com and the Microsoft website displays in the window.
     :::image-end:::
 
 Congratulations, you built your first WebView2 app!

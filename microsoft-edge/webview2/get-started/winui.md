@@ -120,7 +120,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control 
 1.  Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
     :::image type="complex" source="./media/winui-getting-started-part-3.png" alt-text="The sample app displays the Microsoft website." lightbox="./media/winui-getting-started-part-3.png":::
-       The sample application with WebView2 control displays the Microsoft website, http://www.microsoft.com.
+       The sample application with WebView2 control displays the Microsoft website, https://www.microsoft.com.
     :::image-end:::
 
 ## Step 3 - Add navigation controls
