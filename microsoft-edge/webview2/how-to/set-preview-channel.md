@@ -52,7 +52,7 @@ One approach is to use a browser executable folder.  In this approach, you speci
 *  A preview channel of Microsoft Edge.
 *  A folder containing fixed version binaries that you have deployed to the machine yourself.
 
-If setting the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version. This is because the location includes the version as part of its path. For this reason, we recommend this approach for local testing only.
+If you set the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version. This is because the location includes the version number as part of its path. Therefore, we recommend using this approach for local testing only.
 
 ### Default channel-search order
 
