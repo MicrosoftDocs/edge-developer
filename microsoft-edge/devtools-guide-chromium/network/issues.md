@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This guide shows you how to detect network issues or optimization opportunities in the Network panel of Microsoft Edge DevTools.
 
-To learn the basics of the **Network** tool, navigate to [Get Started][NetworkPerformance].
+To learn the basics of the **Network** tool, navigate to [Get Started](./index.md).
 
 
 <!-- ====================================================================== -->
@@ -103,30 +103,15 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 
 Do you have a network issue that should be added to this guide?
 
-*   Send a tweet to [@EdgeDevTools][MicrosoftEdgeTweet].
+*   Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
 *   Choose **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
-*   [Open an issue][WebFundamentalsIssue] on the docs repo.  -->
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[NetworkPerformance]: ./index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
-
-[MicrosoftEdgeTweet]: https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]
-
-[WebFundamentalsIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D "New Issue - MicrosoftDocs/edge-developer"
+*   [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/issues) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse) and [Jonathan Garbee][JonathanGarbee] (Google Developer Expert for Web Technology).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/issues) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Jonathan Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[JonathanGarbee]: https://developers.google.com/web/resources/contributors#jonathan-garbee
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

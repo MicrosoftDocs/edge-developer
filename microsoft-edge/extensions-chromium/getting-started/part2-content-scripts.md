@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, ext
 ---
 # Create an extension tutorial Part 2
 
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]
+[Completed Extension Package Source for This Part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 
 
 <!-- ====================================================================== -->
@@ -228,10 +228,3 @@ When you select the `Display` button, you get what is below.  If you select anyw
 :::image-end:::
 
 You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars jpeg.
-
-<!-- image links -->
-
-
-<!-- links -->
-
-[ArchiveExtensionGettingStartedPart2]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2 "Completed extension package source | Microsoft Docs"

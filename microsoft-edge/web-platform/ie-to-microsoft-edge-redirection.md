@@ -10,7 +10,7 @@ keywords: microsoft edge, compatibility, web platform, internet explorer
 ---
 # Moving users to Microsoft Edge from Internet Explorer
 
-Many modern websites have designs that are incompatible with Internet Explorer (IE).  When an IE user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an IE user navigates to a website that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  To review the websites on the list, navigate to [Need Microsoft Edge list][MicrosoftEdgeNeededgeV1].
+Many modern websites have designs that are incompatible with Internet Explorer (IE).  When an IE user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an IE user navigates to a website that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  To review the websites on the list, navigate to [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1).
 
 This article describes the following concepts.
 
@@ -73,7 +73,7 @@ The website incompatibility banner provides the following details to the user.
 When a website is redirected from Internet Explorer to Microsoft Edge, one of the following actions occurs.
 
 *   If the active IE tab had no prior content, it is closed.
-*   If the active IE tab had prior content, it navigates to the [Microsoft support page that explains why the website was redirected to Microsoft Edge][MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer].
+*   If the active IE tab had prior content, it navigates to the [Microsoft support page that explains why the website was redirected to Microsoft Edge](https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554).
 
 > [!NOTE]
 > After a redirection, users may continue to use IE for websites that are not on the IE compatibility list.
@@ -82,9 +82,9 @@ When a website is redirected from Internet Explorer to Microso
 <!-- ====================================================================== -->
 ## Request an update to the IE compatibility list
 
-The IE compatibility list is an XML file on [microsoft.com][MicrosoftOfficialHome].  The list is regularly updated in response to user and website developer requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.
+The IE compatibility list is an XML file on [microsoft.com](https://www.microsoft.com).  The list is regularly updated in response to user and website developer requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.
 
-Email the following information to [ietoedge@microsoft.com][MailtoMicrosoftIetoedge] for your website to be added or removed from the IE compatibility list.
+Email the following information to [ietoedge@microsoft.com](mailto:ietoedge@microsoft.com) for your website to be added or removed from the IE compatibility list.
 
 *   Owner name
 *   Corporate title
@@ -97,13 +97,3 @@ The IE compatibility list is updated within a week.
 
 > [!NOTE]
 > The IE compatibility list is designed to work with public sites only.
-
-<!-- links -->
-
-[MailtoMicrosoftIetoedge]: mailto:ietoedge@microsoft.com "Send an email to ietoedge@microsoft.com"
-
-[MicrosoftOfficialHome]: https://www.microsoft.com "Microsoft Official Home"
-
-[MicrosoftEdgeNeededgeV1]:  https://edge.microsoft.com/neededge/v1 "Need Microsoft Edge list v1 xml | Microsoft Edge"
-
-[MicrosoftSupportOfficeTheWebsiteYouWereTryingToReachDoesntWorkWithInternetExplorer]: https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554 "The website you were trying to reach doesn't work with Internet Explorer | Microsoft Office Support"
