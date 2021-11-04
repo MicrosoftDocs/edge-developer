@@ -225,7 +225,7 @@ In error cases, one or more of the following events may occur depending on wheth
 <!-- ====================================================================== -->
 ## Step 5 - Scripting
 
-You may use host apps to inject JavaScript code into WebView2 controls at runtime. You may task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing.
+Use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing.
 
 *   Run it after the creation of the global object.
 *   Run it before any other script included in the HTML document is run.
@@ -253,7 +253,7 @@ You may use host apps to inject JavaScript code into WebView2 controls at runtim
 <!-- ====================================================================== -->
 ## Step 6 - Communication between host and web content
 
-The host and the web content may also communicate with each other through the `postMessage` method.  The web content running within a WebView2 control may post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.  Likewise, the host may message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.  The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.
+The host and the web content can also communicate with each other through the `postMessage` method.  The web content running within a WebView2 control can post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered the `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.  Similarly, the host can message the web content through `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, which is caught by handlers added from `window.chrome.webview.addEventListener` listener.  The communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.
 
 As an example to understand the mechanism, the following steps occur when you try to output the document URL in WebView.
 
