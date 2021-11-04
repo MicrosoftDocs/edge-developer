@@ -391,7 +391,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 
     :::image type="complex" source="./media/wpf-getting-started-searchbar.png" alt-text="The sample app displays the URI in the address bar and the Microsoft website.":::
-       The sample app displays the URI in the address bar and the Microsoft website http://www.microsoft.com.
+       The sample app displays the URI in the address bar and the Microsoft website https://www.microsoft.com.
     :::image-end:::
 
 Congratulations, you built your first WebView2 app.
