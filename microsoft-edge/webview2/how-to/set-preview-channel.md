@@ -47,7 +47,10 @@ These approaches are described below.
 
 ### Browser executable folder
 
-The browser executable folder option allows you to specify a known folder containing runtime binaries. This folder can be the installed location of the WebView2 Runtime, a preview channel of Microsoft Edge, or it can be a folder containing fixed version binaries that you have deployed to the machine yourself.
+One approach is to use a browser executable folder.  In this approach, you specify a folder that contains runtime binaries. This folder can be any of the following locations:
+*  The installed location of the WebView2 Runtime.
+*  A preview channel of Microsoft Edge.
+*  A folder containing fixed version binaries that you have deployed to the machine yourself.
 
 If setting the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version. This is because the location includes the version as part of its path. For this reason, we recommend this approach for local testing only.
 
