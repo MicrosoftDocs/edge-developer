@@ -27,6 +27,8 @@ Following the updated Chromium schedule, we are adjusting our schedule for upcom
 
 Here are the new features available in the DevTools in Microsoft Edge 83.
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] and [follow us on Twitter][EdgeDevToolsTwitterAccount].
@@ -59,7 +61,7 @@ Chromium issue [#1050855][CR1050855]
 
 ### New and improved infobars
 
-Informational notification bars \(infobars\) in DevTools now have an improved look and more functionality. In Microsoft Edge 83, infobars are easier to read and provide buttons so you are able to take the relevant action right away.
+Informational notification bars (infobars) in DevTools now have an improved look and more functionality. In Microsoft Edge 83, infobars are easier to read and provide buttons so you are able to take the relevant action right away.
 
 :::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Infobar for pretty-printing a minified file in Microsoft Edge 83" lightbox="../../media/2020/03/infobar.msft.png":::
    Infobar for pretty-printing a minified file in Microsoft Edge Version 83
@@ -111,6 +113,8 @@ If you use screen readers or the keyboard to navigate around the DevTools, send 
 
 Chromium issue [#963183][CR963183]
 
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.
@@ -130,10 +134,10 @@ DevTools is able to emulate blurred vision and the following [types of color vis
 | Protanopia | The inability to perceive any red light. |
 | Deuteranopia | The inability to perceive any green light. |
 | Tritanopia | The inability to perceive any blue light. |
-| Achromatopsia | The inability to perceive any color, except for shades of grey \(extremely rare\). |
+| Achromatopsia | The inability to perceive any color, except for shades of grey (extremely rare). |
 
 Less extreme versions of these color vision deficiencies exist, and in fact they are more common.
-For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light). However, these **-omaly** vision deficiencies are not as clearly defined:  every person with such a vision deficiency is different and may see things differently \(being able to perceive more/less of the relevant colors\).
+For example, protanomaly is a reduced sensitivity to red light (as opposed to protanopia, which is the complete inability to perceive red light). However, these **-omaly** vision deficiencies are not as clearly defined:  every person with such a vision deficiency is different and may see things differently (being able to perceive more/less of the relevant colors).
 
 By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.
 
@@ -185,11 +189,11 @@ Chromium issue [#1051466][CR1051466]
 
 The Sources panel has new icons for breakpoints, conditional breakpoints, and logpoints:
 
-*   Breakpoints \(![Breakpoint](../../media/2020/03/breakpoint.msft.png)\) are represented by red circles.
-*   Conditional Breakpoints \(![Conditional Breakpoint](../../media/2020/03/conditional.msft.png)\) are represented by half-red half-white circles.
-*   Logpoints \(![Logpoint](../../media/2020/03/logpoint.msft.png)\) are represented by red circles with Console icons.
+*   Breakpoints (![Breakpoint](../../media/2020/03/breakpoint.msft.png)) are represented by red circles.
+*   Conditional Breakpoints (![Conditional Breakpoint](../../media/2020/03/conditional.msft.png)) are represented by half-red half-white circles.
+*   Logpoints (![Logpoint](../../media/2020/03/logpoint.msft.png)) are represented by red circles with Console icons.
 
-The motivation for the new icons was to make the UI more consistent with other GUI debugging tools \(which usually color breakpoints red\) and to make it easier to distinguish between the 3 features at a glance.
+The motivation for the new icons was to make the UI more consistent with other GUI debugging tools (which usually color breakpoints red) and to make it easier to distinguish between the 3 features at a glance.
 
 Chromium issue [#1041830][CR1041830]
 
@@ -228,7 +232,7 @@ The DevTools team frequently got feedback from web developers that while it was 
 
 ### Delete all Local Overrides in a folder
 
-After setting up **Local Overrides** you may hover on a directory, open the contextual menu \(right-click\), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.
+After setting up **Local Overrides** you may hover on a directory, open the contextual menu (right-click), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.
 
 :::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Delete all overrides" lightbox="../../media/2020/03/overrides.msft.png":::
    Delete all overrides
@@ -267,6 +271,8 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 > [!NOTE]
 > This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)][WhatsNew81].
 
+
+<!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
@@ -334,7 +340,7 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-83) and is authored by [Kayce Basques][KayceBasques] \(Technical Writer, Chrome DevTools \& Lighthouse\).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-83) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

@@ -28,7 +28,7 @@ To install the webhint extension from within Visual Studio Code, navigate to [Th
 <!-- ====================================================================== -->
 ## Configuring webhint in Visual Studio Code
 
-This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems \(JSX/TSX, Angular, and so on\), JavaScript/TypeScript, and more.
+This extension uses a [default configuration][GithubWebhintioIndexjson] json file that activates hints and parsers for HTML, CSS, templating systems (JSX/TSX, Angular, and so on), JavaScript/TypeScript, and more.
 
 ```json
 {

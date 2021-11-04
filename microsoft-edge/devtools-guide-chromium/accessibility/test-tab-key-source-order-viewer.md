@@ -15,9 +15,10 @@ The source order of a document is important for assistive technology, and can be
 To ensure that the document has a logical order, you can use the **Source Order Viewer** to label different page elements with numbers that specify the order in the source code of the document.  The **Source Order Viewer** is in the **Accessibility** tab (near the **Styles** tab).
 
 
+<!-- ====================================================================== -->
 ## Analyzing the order of keyboard access through sections of the page
 
-The [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] has a counterintuitive tabbing order, where keyboard users access the sidebar navigation menu only after tabbing through all the **More** links.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But because you need to go through the entire page before you reach the sidebar navigation menu, that navigation menu is ineffective for keyboard users.
+The [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) has a counterintuitive tabbing order, where keyboard users access the sidebar navigation menu only after tabbing through all the **More** links.  The sidebar navigation menu is meant to be a shortcut to reach deep into the page content.  But because you need to go through the entire page before you reach the sidebar navigation menu, that navigation menu is ineffective for keyboard users.
 
 The `Tab` key order on the demo page is:
 1. The **Search** field, then the **go** button for the **Search** field.
@@ -36,7 +37,7 @@ You can test the order of page elements by using the **Source Order Viewer** in 
 
 To turn on the Source Order Viewer:
 
-1.  In DevTools, in the upper right, select the **Settings** \(![Settings button](../media/settings-button-icon.msft.png)\) button.
+1.  In DevTools, in the upper right, select the **Settings** (![Settings button](../media/settings-button-icon.msft.png)) button.
 
 1.  Below **Settings**, select **Experiments**.
 
@@ -48,7 +49,7 @@ To turn on the Source Order Viewer:
 
 To activate and use the Source Order Viewer, with the demo page:
 
-1.  Open the [accessibility-testing demo webpage][DevToolsA11yErrorsDemopage] in a new tab.  Then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
 
 1.  In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 
@@ -67,8 +68,3 @@ To activate and use the Source Order Viewer, with the demo page:
 ## See also
 
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsA11yErrorsDemopage]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo webpage | GitHub"

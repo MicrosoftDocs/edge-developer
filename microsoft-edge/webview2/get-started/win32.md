@@ -22,7 +22,7 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you install the following list of prerequisites before proceeding.
 
-*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on a supported OS \(currently Windows 10, Windows 8.1, and Windows 7\).
+*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
 
 *   [Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.
 
@@ -36,7 +36,7 @@ Start with a basic desktop project that contains a single main window.
 > To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].
 
 1.  In Visual Studio, open `WebView2GettingStarted.sln`.
-    If you use an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu \(right-click\), and choose **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset available to you.
+    If you use an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu (right-click), and choose **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset available to you.
 
 :::image type="complex" source="../media/tool-version.png" alt-text="Tool version" lightbox="../media/tool-version.png":::
    Tool version
@@ -50,7 +50,7 @@ Visual Studio may display errors, because your project is missing the WebView2 h
 
 Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
 
-1.  Hover on the project, open the contextual menu \(right-click\), and choose **Manage NuGet Packages**.
+1.  Hover on the project, open the contextual menu (right-click), and choose **Manage NuGet Packages**.
 
     :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages" lightbox="../media/manage-nuget-packages.png":::
        Manage NuGet packages
@@ -184,7 +184,7 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 1.  `HistoryChanged`
 1.  `NavigationCompleted`
 
-For more information, navigate to [Navigation events][Webview2ConceptsNavigationEvents].
+For more information, see [Navigation events for WebView2][Webview2ConceptsNavigationEvents].
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
    Navigation events
@@ -245,7 +245,7 @@ webviewWindow->ExecuteScript(L"window.document.URL;", Callback<ICoreWebView2Exec
 Now, WebView should always freeze the `Object` object and returns the page document once.
 
 > [!NOTE]
-> The script injection APIs \(and some other WebView2 APIs\) are asynchronous, you should use callbacks if code is must be run in a specific order.
+> The script injection APIs (and some other WebView2 APIs) are asynchronous, you should use callbacks if code is must be run in a specific order.
 
 
 <!-- ====================================================================== -->
@@ -258,8 +258,8 @@ As an example to understand the mechanism, the following steps occur when you tr
 1.  The host registers a handler to return received message back to the web content
 1.  The host injects a script to the web content that registers a handler to print message from the host
 1.  The host injects a script to the web content that posts the URL to the host
-1.  The handler of the host is triggered and returns the message \(the URL\) to the web content
-1.  The handler of the web content is triggered and prints message from the host \(the URL\)
+1.  The handler of the host is triggered and returns the message (the URL) to the web content
+1.  The handler of the web content is triggered and prints message from the host (the URL)
 
 Copy the following code snippet and paste into `HelloWebView.cpp`.
 
@@ -313,7 +313,7 @@ For additional WebView2 functionality that isn't covered in this article, see th
 [MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"
 
 [Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
+[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events for WebView2 | Microsoft Docs"
 
 [CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"
 [CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"

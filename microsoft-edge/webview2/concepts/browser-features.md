@@ -18,6 +18,8 @@ WebView2 is based on the Microsoft Edge browser.  You have the opportunity to ex
 *   The ability to turn on or off the feature.
 *   Guidance on keyboard shortcuts.
 
+
+<!-- ====================================================================== -->
 ## Design guidelines
 
 In the context of WebView2, browser features adhere to the following design guidelines.
@@ -25,6 +27,8 @@ In the context of WebView2, browser features adhere to the following design guid
 *   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off.
 *   WebView2 features don't include Microsoft Edge branding.
 
+
+<!-- ====================================================================== -->
 ## Browser features
 
 The following table displays the WebView2 features that differ from the Microsoft Edge browser.
@@ -61,6 +65,8 @@ The following table displays the WebView2 features that differ from the Microsof
 | Windows Defender Application Guard | Off | No | This feature is turned off.  |
 | edge:// URLs | Review Details | No | Settings for the Microsoft Edge browser are on `edge://` URLs.  Because most of these webpages have Microsoft Edge branding or don't make sense within the context of WebView2, some of these URLs are turned off.  For more information, navigate to [Blocked internal URLs](#blocked-internal-urls).  |
 
+
+<!-- ====================================================================== -->
 ## Web platform features
 
 The following table displays the WebView2 platform features that are currently unavailable.
@@ -70,6 +76,8 @@ The following table displays the WebView2 platform features that are currently u
 | Push Notifications | This feature is not implemented in WebView2. |
 | Web Payment API | This feature is turned off. |
 
+
+<!-- ====================================================================== -->
 ## Blocked internal URLs
 
 The following Microsoft Edge and Google Chrome settings webpages aren't available in WebView2.
@@ -90,6 +98,8 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 *   `edge://supervised-user-internals`
 *   `edge://version`
 
+
+<!-- ====================================================================== -->
 ## Additional keyboard shortcuts information
 
 Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.  When Microsoft Edge is updated, the default key bindings might change.  Furthermore, a keyboard shortcut that is turned off by default might instead be turned on, if the feature is now supported in WebView2.  To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.
@@ -110,7 +120,7 @@ The following shortcuts are always turned off in WebView2.  An asterisk (`*`) in
 | Select Last Tab | `Ctrl`+`9` |
 | Select Next Tab | `Ctrl`+`Tab` |
 | Select Previous Tab | `Ctrl`+`Shift`+`Tab` |
-| Select Tab \(1 - 8\) | `Ctrl`+`(1-8)` |
+| Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
 | Focus Next Pane `*` | `F6` |

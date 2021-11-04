@@ -25,8 +25,10 @@ keywords: microsoft edge, web development, f12 tools, devtools, devtools for beg
 
 This is the first in a series of tutorials that teach you the basics of web development. Learn about a set of web developer tools, named Microsoft Edge DevTools, that will increase your productivity.
 
-This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) \(DOM\). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
+This tutorial describes HTML and the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM). HTML is one of the core technologies of web development. It is the language that controls the structure and content of webpages. The DOM is also related to the structure and content of webpages, which we learn more about later.
 
+
+<!-- ====================================================================== -->
 ## Goals
 
 You're going to learn web development by building a website.  By the time you complete all of the tutorials in the **DevTools for Beginners** series, your finished site will look like the following figure.
@@ -43,18 +45,22 @@ By the end of this tutorial, you should understand the following concepts.
 
 You will also have a working website. You can use the site to host your resume or blog.
 
+
+<!-- ====================================================================== -->
 ## Prerequisites
 
 Before attempting this tutorial, complete the following prerequisites:
 
-*   If you are unfamiliar with HTML, read [Getting Started with HTML][MDNGettingStartedHtml].
-*   Download the [Microsoft Edge][MicrosoftEdgeInsider] web browser.  This tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
+*   If you are unfamiliar with HTML, read [Getting Started with HTML](https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
+*   Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser.  This tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Set up your code
 
 You are going to build a site in the Glitch online code editor.
 
-1.  Open the [source code][GlitchAlluringShockIndex]. This tab is called the **editor tab** throughout this tutorial.
+1.  Open the [source code](https://glitch.com/edit/#!/alluring-shock?path=index.html). This tab is called the **editor tab** throughout this tutorial.
 
     :::image type="complex" source="media/beginners-html-setup1.msft.png" alt-text="The editor tab" lightbox="media/beginners-html-setup1.msft.png":::
        The editor tab
@@ -80,6 +86,8 @@ You are going to build a site in the Glitch online code editor.
        The live tab
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Add content
 
 Your site needs more information. Complete the following steps to add some content.
@@ -149,6 +157,8 @@ Your site needs more information. Complete the following steps to add some conte
        The new list is visible in the live tab
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Experiment with content changes in Microsoft Edge DevTools
 
 If you are developing a page with a lot of HTML, it becomes tedious to go back-and-forth between the editor tab and the live tab to see your changes. Microsoft Edge DevTools helps you experiment with content changes without ever leaving the **live tab**.
@@ -212,7 +222,7 @@ If you want to quickly experiment with content changes without ever leaving the 
     Updating the node as HTML
 ::image-end:::
 
-1.  Select `Control`+`Enter` \(Windows, Linux\) or `Command`+`Enter` \(macOS\) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
+1.  Select `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
 
     :::image type="complex" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page" lightbox="media/beginners-html-edit3.msft.png":::
        The new content shows up immediately on the page
@@ -220,6 +230,8 @@ If you want to quickly experiment with content changes without ever leaving the 
 
 This workflow is only suitable for experimenting with content changes. If you refresh the page or close the tab, your changes are lost. If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.
 
+
+<!-- ====================================================================== -->
 ## Reorder nodes
 
 You can also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom. To move it to the top, perform the following steps.
@@ -248,6 +260,8 @@ You can also remove nodes from the DOM Tree. Perform the following steps.
        The node has been deleted
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Copy your changes
 
 You're almost done. You made a few changes to the page in DevTools, but they're not saved to your source code.
@@ -299,35 +313,18 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
     :::image-end:::
 
 
+<!-- ====================================================================== -->
 ## Next steps
 
-*   Complete the next tutorial in this series, [Get Started with CSS][DevToolsBeginnersCss], to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.
-*   Read [Introduction to the DOM][MDNIntroductionDom] to learn more about the DOM.
-*   Check out a course like [Introduction to Web Development][CourseraIntroductionToWebDevelopment] for more hands-on web development experience.
+*   Complete the next tutorial in this series, [Get Started with CSS](css.md), to learn how to style your page and experiment with style changes in Microsoft Edge DevTools.
+*   Read [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) to learn more about the DOM.
+*   Check out a course like [Introduction to Web Development](https://www.coursera.org/learn/web-development) for more hands-on web development experience.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsBeginnersCss]: ./css.md "DevTools For Beginners: Get Started with CSS | Microsoft Docs"
-
-[MicrosoftEdgeInsider]: https://www.microsoftedgeinsider.com "Microsoft Edge Insider"
-
-[CourseraIntroductionToWebDevelopment]: https://www.coursera.org/learn/web-development "Introduction to Web Development | Coursera"
-
-[GlitchAlluringShockIndex]: https://glitch.com/edit/#!/alluring-shock?path=index.html "index.html - alluring-shock | Glitch"
-
-[MDNGettingStartedHtml]: https://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/Getting_started "Getting started with HTML | MDN"
-[MDNIntroductionDom]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to the DOM | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page was found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/html) and was authored by [Katherine Jackson][KatherineJackson] \(Technical Writer Intern, Chrome DevTools\).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page was found at https://developers.google.com/web/tools/chrome-devtools/beginners/html <!-- 404 now --> and was authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[KatherineJackson]: https://developers.google.com/web/resources/contributors
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -1,6 +1,6 @@
 ---
 description: The canonical documentation for Microsoft Edge DevTools keyboard shortcuts.
-title: Microsoft Edge DevTools keyboard shortcuts
+title: Keyboard shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,14 +21,13 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Microsoft Edge DevTools keyboard shortcuts
+# Keyboard shortcuts
 
 This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
 
-You may also find shortcuts in tooltips.  Hover on a UI element of DevTools
-to display the tooltip.  If the element has a shortcut, the tooltip includes it.
+Keyboard shortcuts are shown in some tooltips in DevTools.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
-See also [Customize keyboard shortcuts in DevTools](../customize/shortcuts.md).
+See also [Customize keyboard shortcuts](../customize/shortcuts.md).
 
 
 <!-- ====================================================================== -->
@@ -100,6 +99,8 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Increment / decrement a property value by 10 | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
 | Increment / decrement a property value by 100 | Choose a value, then select `Control`+`Up Arrow` / `Control`+`Down Arrow` | Choose a value, then select `Command`+`Up Arrow` / `Command`+`Down Arrow` |
 
+
+<!-- ====================================================================== -->
 ## Sources tool keyboard shortcuts
 
 | Action | Windows\/Linux | macOS |

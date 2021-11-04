@@ -1,6 +1,6 @@
 ---
 description: Learn how to use JavaScript in complex scenarios in WebView2 apps
-title: Use JavaScript in WebView2 apps
+title: Use JavaScript in WebView for extended scenarios
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/06/2021
@@ -13,22 +13,28 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 
 Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements.  This article explores how to use JavaScript in WebView2, and reviews how to develop using advanced WebView2 features and functionality.
 
+
+<!-- ====================================================================== -->
 ## Before you begin
 
-This article assumes that you already have a working project.  If you do not have a project and want to follow along, navigate to the [WebView2 get started guides][Webview2MainGetStarted].
+This article assumes that you already have a working project.  If you don't have a project, and want to follow along, see the [WebView2 get started guides][Webview2MainGetStarted].
 
-## Basic WebView2 Functions
+
+<!-- ====================================================================== -->
+## Basic WebView2 functions
 
 Use the following functions to begin embedding JavaScript in your WebView app.
 
 | API  | Description  |
 |:--- |:--- |
 | [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model \(DOM\) is created. |
+| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model (DOM) is created. |
 
-## Scenario:  Running a dedicated script file
 
-In this section, access a dedicated JavaScript file from your WebView2 control.
+<!-- ====================================================================== -->
+## Scenario: Running a dedicated script file
+
+In this section, you access a dedicated JavaScript file from your WebView2 control.
 
 > [!NOTE]
 > Although writing JavaScript inline may be efficient for quick JavaScript commands, you lose JavaScript color themes and line formatting that makes it difficult to write large sections of code in Visual Studio.
@@ -50,21 +56,23 @@ To solve the problem, create a separate JavaScript file with your code, and then
     await webView.CoreWebView2.ExecuteScriptAsync(text);
     ```
 
-## Scenario:  Remove drag-and-drop functionality
 
-In this section, use JavaScript to remove the drag-and-drop functionality from your WebView2 control.
+<!-- ====================================================================== -->
+## Scenario: Removing drag-and-drop functionality
 
-To begin, explore the current drag-and-drop functionality.
+In this section, you use JavaScript to remove the drag-and-drop functionality from your WebView2 control.
+
+To begin, explore the current drag-and-drop functionality:
 
 1.  Create a `.txt` file in order to drag-and-drop.  For example, create a file named `contoso.txt` and add text to it.
+
 1.  Run your project.
+
 1.  Drag-and-drop the `contoso.txt` file onto the WebView control.  A new window opens, which is the result of the code in your sample project.
 
-    :::image type="complex" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt" lightbox="./media/drag-text.png":::
-       Result of dragging and dropping contoso.txt
-    :::image-end:::
+    :::image type="content" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt." lightbox="./media/drag-text.png":::
 
-Now, add code to remove the drag-and-drop functionality from the WebView2 control.
+Next, add code to remove the drag-and-drop functionality from the WebView2 control:
 
 1.  Copy and paste the following code snippet into `InitializeAsync()` in `MainWindow.xaml.cs`.
 
@@ -79,20 +87,22 @@ Now, add code to remove the drag-and-drop functionality from the WebView2 contro
     ```
 
 1.  Run your project.
-1.  Try to drag-and-drop `contoso.txt`.  Confirm that you are not able to drag-and-drop.
 
-## Scenario:  Removing the Context Menu
+1.  Try to drag-and-drop `contoso.txt`.  Confirm that you're not able to drag-and-drop.
 
-In this section, remove the default context menu from your WebView2 control.
 
-To begin, explore the current contextual menu functionality.
+<!-- ====================================================================== -->
+## Scenario: Removing the context menu
+
+In this section, you remove the default context menu (right-click menu) from your WebView2 control.
+
+To begin, explore the current functionality of the right-click menu:
 
 1.  Run your project.
-1.  Hover anywhere on the WebView2 control and open the context menu \(right-click\).  The context menu displays the default choices.
 
-    :::image type="complex" source="./media/context-menu.png" alt-text="The context menu showing the default choices" lightbox="./media/context-menu.png":::
-       The context menu showing the default choices
-    :::image-end:::
+1.  Right-click anywhere on the WebView2 control.  The context menu displays the default right-click menu commands.
+
+    :::image type="content" source="./media/context-menu.png" alt-text="The right-click menu, showing the default commands." lightbox="./media/context-menu.png":::
 
 Now add code to remove the contextual menu functionality from the WebView2 control.
 
@@ -102,7 +112,7 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
     await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
     ```
 
-1.  Run the code again.  Confirm that you're not able to open a context menu \(right-click\).
+1.  Run the code again.  Confirm that you're not able to open a context menu (right-click).
 
 
 <!-- ====================================================================== -->

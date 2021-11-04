@@ -187,19 +187,19 @@ conceptualContent:
             - url: /microsoft-edge/progressive-web-apps-chromium/index
               itemType: overview
               text: Progressive Web Apps overview
-            - url: /microsoft-edge/progressive-web-apps-chromium/get-started
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
               itemType: overview
               text: Get started with Progressive Web Apps
             - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
               itemType: overview
               text: Using DevTools with Progressive Web Apps
-            - url: /microsoft-edge/progressive-web-apps-chromium/offline
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
               itemType: concept
               text: Offline scenarios
-            - url: /microsoft-edge/progressive-web-apps-chromium/serviceworker
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
               itemType: concept
               text: Service Workers
-            - url: /microsoft-edge/progressive-web-apps-chromium/webappmanifests
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
               itemType: concept
               text: Web App Manifests
         # Card

@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studi
 ---
 # Visual Studio for web development
 
-Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment \(IDE\).   Use it to edit, debug, build, and publish your web apps.  It is a feature-rich program that can be used for many aspects of your web development.  Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.
+Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment (IDE).   Use it to edit, debug, build, and publish your web apps.  It is a feature-rich program that can be used for many aspects of your web development.  Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.
 
 *   Compilers
 *   Code completion tools
@@ -21,6 +21,8 @@ If you are not already using Visual Studio, navigate to [Download Visual Studio]
 
 Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP.NET Framework and ASP.NET Core apps.  Complete the following steps to use Visual Studio to debug Microsoft Edge.
 
+
+<!-- ====================================================================== -->
 ## Launch Microsoft Edge
 
 Visual Studio can build your ASP.NET and ASP.NET Core app, start a web server, launch Microsoft Edge, and connect the Visual Studio debugger with a single button.
@@ -97,6 +99,8 @@ Switch back to Visual Studio to set a breakpoint.
 
 The example was just a minor demonstration of the functionality available in Visual Studio.  For more information about the functionality in Visual Studio 2019, navigate to [Visual Studio documentation][VisualStudioWindowsIndex].
 
+
+<!-- ====================================================================== -->
 ## Attach to Microsoft Edge
 
 Previously, you launched Microsoft Edge from Visual Studio.  Alternatively, you can attach the Visual Studio debugger to an instance of Microsoft Edge that's already running, as follows.

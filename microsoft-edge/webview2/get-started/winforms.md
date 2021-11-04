@@ -236,7 +236,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 *   `HistoryChanged`
 *   `NavigationCompleted`
 
-For more information, see [Navigation Events](../concepts/navigation-events.md).
+For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
 :::image type="content" source="../media/navigation-events.png" alt-text="Navigation events":::
 

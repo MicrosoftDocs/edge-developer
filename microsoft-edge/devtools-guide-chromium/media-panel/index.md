@@ -25,6 +25,8 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Use the **Media** tool in Microsoft Edge DevTools to view information and debug the media players per browser tab.
 
+
+<!-- ====================================================================== -->
 ## Open the Media tool
 
 The **Media** tool is the main place in DevTools for inspecting the media player of a webpage.
@@ -36,6 +38,8 @@ The **Media** tool is the main place in DevTools for inspecting the media player
        **Media** panel
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## View media players information
 
 1.  Navigate to a webpage with a media player, such as the following webpage.
@@ -81,24 +85,28 @@ View the media players information on an Android device from your Windows or mac
     :::image-end:::
     -->
 
+
+<!-- ====================================================================== -->
 ## Hide and show media players
 
 Sometimes you run more than one media player on a webpage, or use the same browser tab to browse different webpages, each with media players.
 
-You may choose to hide \(or show\) each media player for an easier debugging experience.
+You may choose to hide (or show) each media player for an easier debugging experience.
 
 1.  Browse to several different video webpages using the same browser tab.
 1.  To hide media players, complete one of the following actions.
-    *   To hide one media player, hover on a media player, open the contextual menu \(right-click\), and choose **Hide player**.
-    *   To hide all of the other media players, hover on a media player, open the contextual menu \(right-click\), and choose **Hide all others**.
+    *   To hide one media player, hover on a media player, open the contextual menu (right-click), and choose **Hide player**.
+    *   To hide all of the other media players, hover on a media player, open the contextual menu (right-click), and choose **Hide all others**.
 
     :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Hide media players" lightbox="../media/media-panel-hide-show.msft.png":::
        Hide media players
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Export media player information
 
-1.  To download the media player info as a JSON file, hover on a media player, open the contextual menu \(right-click\), and choose **Save player info**.
+1.  To download the media player info as a JSON file, hover on a media player, open the contextual menu (right-click), and choose **Save player info**.
 
     :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Export media information" lightbox="../media/media-panel-save.msft.png":::
        Export media information
@@ -118,7 +126,7 @@ You may choose to hide \(or show\) each media player for an easier debugging exp
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen][JecelynYeen] \(Developer advocate, Chrome DevTools\).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License][CCby4Image]][CCA4IL]
 This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].

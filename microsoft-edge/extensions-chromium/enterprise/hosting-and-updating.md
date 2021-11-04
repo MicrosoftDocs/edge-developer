@@ -12,15 +12,19 @@ keywords: microsoft edge, extensions development, browser extensions, addons, pa
 
 Most extensions are published to the [Microsoft Edge Add-ons website][MicrosoftMicrosoftedgeInsiderAddonsEdgeextensions] to protect users from malicious extensions.
 
+
+<!-- ====================================================================== -->
 ## Publish options for extensions
 
-All extensions are distributed to users as a special archive \(`.zip`\) file with a `.crx` suffix.  Extensions published to the Microsoft Edge Add-ons website are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
+All extensions are distributed to users as a special archive (`.zip`) file with a `.crx` suffix.  Extensions published to the Microsoft Edge Add-ons website are uploaded as `.zip` files.  The publishing process automatically converts the `.zip` file into a `.crx` file.
 
 The following two scenarios don't require you to publish your extension in the Microsoft Edge Add-ons website.
 
 *   Extensions distributed using Enterprise policy.
 *   Using unpacked extension directories on a local machine when Microsoft Edge is in developer mode.
 
+
+<!-- ====================================================================== -->
 ## Updates to extensions
 
 The Microsoft Edge browser automatically checks for new versions of installed Extensions. Updates are installed without user intervention.

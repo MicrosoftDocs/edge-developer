@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Emulate vision deficiencies
 
-To better meet the needs of your users with [color vision deficiency][ColorblindawarenessMain] \(color blindness\) or blurred vision, [Microsoft Edge DevTools][DevtoolsIndex] allow you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories.
+To better meet the needs of your users with [color vision deficiency](https://www.colourblindawareness.org) (color blindness) or blurred vision, [Microsoft Edge DevTools](../index.md) allows you to simulate blurred vision and specific color vision deficiencies.  The **Emulate vision deficiencies** tool simulates the following categories:
 
 | Color vision deficiency | Details |
 |:--- |:--- |
@@ -24,7 +24,7 @@ To better meet the needs of your users with [color vision deficiency][Colorblind
 <!-- ====================================================================== -->
 ## Open the Rendering tool
 
-To simulate a vision deficiency being applied for your web product, open the [Rendering Tools][DevtoolsRenderingToolsIndex].
+To simulate a vision deficiency being applied for your web product, open the [Rendering Tools](../rendering-tools/index.md).
 
 1.  To open the Rendering tool, select the `...` menu item in the toolbar.
 1.  Select **More tools**.
@@ -69,7 +69,7 @@ The **Rendering** menu appears in the drawer.
 
 As an alternative approach, you can use **Command Menu** to access the different simulations.
 
-1.  Select `Ctrl`+`Shift`+`P` \(Windows/Linux\) or `Command`+`Shift`+`P` \(macOS\) to open the **Command Menu**.
+1.  Select `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
     :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
        The **Command Menu**
@@ -89,12 +89,3 @@ As an alternative approach, you can use **Command Menu** to access the different
 ## See also
 
 *  [Verify that the page is usable with blurred vision](test-blurred-vision.md)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-[DevtoolsRenderingToolsIndex]: ../rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"
-[ColorblindawarenessMain]: https://www.colourblindawareness.org "The Colour Blind Awareness organisation"
-
-[AmfcbMain]: https://www.amfcb.org "The American Foundation for the Color Blind (AFCB)"
