@@ -227,17 +227,23 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1.  In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel.
 
-    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.  `1` means use a [preview channel](https://www.microsoftedgeinsider.com/download) of Microsoft Edge (Beta, Dev, or Canary.  A value other than `1` means use the stable release of Microsoft Edge.
+    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`, as explained below.
 
 1.  Select **OK** to close the dialog boxes.
 
     :::image type="content" source="./media/env-vars-new-user-variable.png" alt-text="Adding a new environment variable, as a user variable" lightbox="./media/env-vars-new-user-variable.png":::
 
-> [!NOTE]
-> This approach sets the environment variable for all WebView2 apps, not just the app you're testing.  To set this environment variable for only the WebView2 app which you are testing, if you're running your app from the command prompt, set the environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`.  That sets the environment variable just for the current `cmd.exe` command-prompt process and for any new child processes from that `cmd.exe` instance.  Then the environment variable only applies to the WebView2 app that you're testing.
+This approach sets the environment variable for all WebView2 apps, not just the app you're testing.  To set this environment variable for only the WebView2 app which you are testing, if you're running your app from the command prompt, set the environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`.  That sets the environment variable just for the current `cmd.exe` command-prompt process and for any new child processes from that `cmd.exe` instance.  Then the environment variable only applies to the WebView2 app that you're testing.
 
-> [!NOTE]
-> After setting an environment variable this way, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio or log out of Windows and then log in again.
+After setting an environment variable this way, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio or log out of Windows and then log in again.
+
+
+### Values for WEBVIEW2_RELEASE_CHANNEL_PREFERENCE
+
+| Value | Description |
+|---|---|
+| `1` | Use a [preview channel](https://www.microsoftedgeinsider.com/download) of Microsoft Edge (Beta, Dev, or Canary). |
+| Value other than `1` | Use the stable release of Microsoft Edge. |
 
 
 <!-- ====================================================================== -->
