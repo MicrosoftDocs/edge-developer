@@ -15,7 +15,7 @@ Updates of the WebView2 Evergreen Runtime often include new APIs and features.  
 
 When you test a prerelease SDK package, you need to direct your application to use a preview channel of Microsoft Edge (Beta, Dev, or Canary), instead of defaulting to using the WebView2 Runtime.  Several approaches for doing this are explained below.
 
-The WebView2 Runtime doesn't have the experimental WebView2 APIs.  For your WebView2 code to run when using experimental APIs in a prerelease SDK, your client (on a development machine) needs to have a Microsoft Edge preview channel.  The Canary preview channel is recommended, because it is ahead of the other channels and has the latest experimental APIs.
+The WebView2 Runtime doesn't have the latest experimental WebView2 APIs.  For your WebView2 code to run when using experimental APIs in a prerelease SDK, your client (on a development machine) needs to have a Microsoft Edge preview channel.  The Canary preview channel is recommended, because it is ahead of the other channels and has the latest experimental APIs.
 
 The prerelease SDK works together with a preview channel as follows:
 *  A prerelease version of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
@@ -35,6 +35,8 @@ To get a Microsoft Edge preview channel, navigate to [Download Microsoft Edge In
 <!-- intro/overview of 4 approaches ======================================= -->
 ## Approaches to making your app use a specific browser channel
 
+When a WebView2 is initialized, it will attempt to find a valid runtime on the machine to use. This can be the WebView2 Runtime, a preview channel of Microsoft Edge, or a specified location containing fixed version binaries. You can learn more about supported runtimes at [Distribute a WebView2 app and the WebView2 Runtime](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution).
+
 There are several ways to make your WebView2 app use a specified preview channel of Microsoft Edge:
 *  By calling a function.
 *  By using a group policy.
@@ -43,9 +45,17 @@ There are several ways to make your WebView2 app use a specified preview channel
 
 These approaches are described below.
 
+### Browser executable folder
+
+The browser executable folder option allows you to specify a known folder containing runtime binaries. This folder can be the installed location of the WebView2 Runtime, a preview channel of Microsoft Edge, or it can be a folder containing fixed version binaries that you have deployed to the machine yourself.
+
+If setting the browser executable folder to a specific preview channel of Microsoft Edge, you will need to update the location when that preview channel updates to a newer version. This is because the location includes the version as part of its path. For this reason, we recommend this approach for local testing only.
+
 ### Default channel-search order
 
 This section applies to using a group policy, registry override, or environment variable.
+
+If a specific browser executable folder is not specified, then the WebView2 will attempt to load a runtime from one of the known default locations.
 
 The default channel-search order is:
 1.  The WebView2 Runtime.
@@ -53,17 +63,12 @@ The default channel-search order is:
 1.  The Dev channel of Microsoft Edge.
 1.  The Canary channel of Microsoft Edge.
 
-If you set the browser executable folder, that overrides the above search order.
-
-If you set the release channel preference by using a group policy, registry override, or environment variable, that will use the reverse of the default search order.
-
+If you set the release channel preference to `1` by using a group policy, registry override, or environment variable, that will use the reverse of the default search order.
 
 <!-- 1. Code ============================================================== -->
 ## Using code
 
-If you want to make your application use a Microsoft Edge preview channel by calling a function, complete the following steps.
-
-This approach is only useful for local testing and should not be shipped.  That's because this approach requires finding the Edge browser install path, which could change in future updates.
+If you want to make your application use a specific runtime by calling a function, complete the following steps.
 
 ### Win32\/C++
 
@@ -235,9 +240,9 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1.  In the **User variables** section of the **Environment Variables** dialog box, select **New**.
 
-1.  In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel.
+1.  In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel or fixed version binaries.
 
-    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.
+    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1` to reverse the search order and use non-stable channels first. Any value besides `1` indicates the default search order.
 
 1.  Select **OK** to close the dialog boxes.
 
