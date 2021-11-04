@@ -40,7 +40,7 @@ Port forwarding enables your Android device to access content that is being host
 
 To enable port forwarding:
 
-1.  Set up [remote debugging][RemoteDebuggingGettingStarted] between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
+1.  Set up [remote debugging](./index.md) between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
 1.  In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.
 1.  Choose **Add rule**.
 
@@ -70,7 +70,7 @@ For example, suppose that your site uses a third-party JavaScript library that o
 
 ### Set up port forwarding to proxy server
 
-To map a custom domain you must run a proxy server on your development machine.  Examples of proxy servers are [Charles][CharlesWebDebuggingProxy], [Squid][SquidCacheWiki], and [Fiddler][TelerikFiddler].
+To map a custom domain you must run a proxy server on your development machine.  Examples of proxy servers are [Charles](https://www.charlesproxy.com), [Squid](https://wiki.squid-cache.org), and [Fiddler](https://www.telerik.com/fiddler).
 
 To set up port forwarding to a proxy:
 
@@ -109,24 +109,9 @@ If your web server is running off of a non-standard port, remember to specify th
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[RemoteDebuggingGettingStarted]: ./index.md "Get started with remote debugging Android devices | Microsoft Docs"
-<!-- external links -->
-[CharlesWebDebuggingProxy]: https://www.charlesproxy.com "Charles Web Debugging Proxy"
-[SquidCacheWiki]: https://wiki.squid-cache.org "Squid Wiki Proxy Wiki"
-[TelerikFiddler]: https://www.telerik.com/fiddler "Fiddler - Free Web Debugging Proxy"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney][MegginKearney] (Technical Writer).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -11,11 +11,11 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Capabilities and EdgeOptions
 
-Capabilities are options that you can use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, navigate to [Automating Microsoft Edge][WebdriverIndexAutomateMicrosoftEdge].  This article describes all supported capabilities for Microsoft Edge and provides details about passing the capabilities to `EdgeDriver` sessions.
+Capabilities are options that you can use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, navigate to [Automating Microsoft Edge](./index.md#automate-microsoft-edge).  This article describes all supported capabilities for Microsoft Edge and provides details about passing the capabilities to `EdgeDriver` sessions.
 
-Capabilities are passed to a WebDriver session as a JSON map.  A WebDriver testing framework provides a WebDriver language binding.  WebDriver language bindings typically provide type-safe convenience methods so you don't need to configure the JSON map yourself.  Different WebDriver language bindings use different mechanisms to configure capabilities.  [Selenium][SeleniumMain] configures capabilities through the `EdgeOptions` class.
+Capabilities are passed to a WebDriver session as a JSON map.  A WebDriver testing framework provides a WebDriver language binding.  WebDriver language bindings typically provide type-safe convenience methods so you don't need to configure the JSON map yourself.  Different WebDriver language bindings use different mechanisms to configure capabilities.  [Selenium](https://www.selenium.dev) configures capabilities through the `EdgeOptions` class.
 
-To learn more about how to configure capabilities, consult the documentation for your preferred WebDriver testing framework.  For more information, navigate to [Choose a WebDriver testing framework][WebdriverIndexChooseAWebdriverTestingFramework].
+To learn more about how to configure capabilities, consult the documentation for your preferred WebDriver testing framework.  For more information, navigate to [Choose a WebDriver testing framework](./index.md#choose-a-webdriver-testing-framework).
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ options.AddAdditionalCapability("wdpAddress", "remotehost:50080");
 <!-- ====================================================================== -->
 ## Recognized Capabilities
 
-For standard capabilities that `EdgeDriver` accepts, navigate to [Selenium documentation][SharedCapabilitiesSeleniumDocumentation] and the [W3C WebDriver standard][CapabilitiesW3cWebdriver].  This article only lists capabilities specific to Microsoft Edge.
+For standard capabilities that `EdgeDriver` accepts, navigate to [Selenium documentation](https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/) and the [W3C WebDriver standard](https://www.w3.org/TR/webdriver#capabilities).  This article only lists capabilities specific to Microsoft Edge.
 
 
 <!-- ====================================================================== -->
@@ -61,7 +61,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | mobileEmulation | dictionary |  | A dictionary with either a value for `deviceName`, or values for `deviceMetrics` and `userAgent`. |
 | perfLoggingPrefs | dictionary |  | An optional dictionary that specifies performance logging preferences.  for more information, navigate to [perfLoggingPrefs object](#perfloggingprefs-object). |
 | prefs | dictionary |  | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are only applied to the user profile in use.  For examples, navigate to the `Preferences` file in the user data folder of Microsoft Edge. |
-| wdpAddress | string |  | An address of a Windows Device Portal server to which you connect, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, navigate to [Remote Debugging - Windows 10 devices][DevtoolsRemoteDebuggingWindows]. |
+| wdpAddress | string |  | An address of a Windows Device Portal server to which you connect, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, navigate to [Remote Debugging - Windows 10 devices](../devtools-guide-chromium/remote-debugging/windows.md). |
 | wdpPassword | string |  | Optional password to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
 | wdpUsername | string |  | Optional user name to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
 | windowsApp | string |  | Application user model ID of a Microsoft Edge app package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal. |
@@ -90,13 +90,3 @@ The following list contains all of the Microsoft Edge-specific capabilities that
 |:--- |:--- |:--- |
 | msedge.msedgedriverVersion | string | The version of EdgeDriver. |
 | msedge.userDataDir | string | The path to the user data folder used by the Microsoft Edge instance. |
-
-<!-- links -->
-[DevtoolsRemoteDebuggingWindows]: ../devtools-guide-chromium/remote-debugging/windows.md "Get started with Remote Debugging Windows devices | Microsoft Docs"
-[WebdriverIndexChooseAWebdriverTestingFramework]: ./index.md#choose-a-webdriver-testing-framework "Choose a WebDriver testing framework - Use WebDriver (Chromium) for test automation | Microsoft Docs"
-[WebdriverIndexAutomateMicrosoftEdge]: ./index.md#automate-microsoft-edge "Automate Microsoft Edge - WebDriver (Chromium) | Microsoft Docs"
-<!-- external links -->
-[SeleniumMain]: https://www.selenium.dev "SeleniumHQ Browser Automation"
-[SharedCapabilitiesSeleniumDocumentation]: https://www.selenium.dev/documentation/en/driver_idiosyncrasies/shared_capabilities/ "Shared capabilities | Selenium Documentation"
-
-[CapabilitiesW3cWebdriver]: https://www.w3.org/TR/webdriver#capabilities "Capabilities - WebDriver specification | W3C"

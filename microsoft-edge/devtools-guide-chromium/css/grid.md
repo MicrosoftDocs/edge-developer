@@ -15,20 +15,20 @@ This article walks you through identifying CSS grids on a website and debugging 
 
 The examples used in the figures in this article are taken from the following webpages.
 
-*   [Fruit box][JecFyiDemoCssGridFruit]
-*   [Snack box][JecFyiDemoCssGridSnack]
+*   [Fruit box](https://jec.fyi/demo/css-grid-fruit)
+*   [Snack box](https://jec.fyi/demo/css-grid-snack)
 
 
 <!-- ====================================================================== -->
 ## Before you begin
 
-CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and the many features is the [CSS Grid Layout guide][MdnCssGridLayout] on MDN.
+CSS Grid is a powerful layout paradigm for the web.  A great place to get started learning about CSS Grid and the many features is the [CSS Grid Layout guide](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout) on MDN.
 
 
 <!-- ====================================================================== -->
 ## Discover CSS grids
 
-When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements][DevtoolsGuideOpen] panel.
+When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements](../open/index.md) panel.
 
 :::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Discover grid" lightbox="../media/grid-discover-grid.msft.png":::
    Discover grid
@@ -81,7 +81,7 @@ The following sections provide details for each of the **Overlay display setting
 
 By default, the positive and negative line numbers are displayed on the grid overlay.
 
-For more information about negative numbers in the grid overlay, navigate to [Line-based placement with CSS Grid][MdnLineBasedPlacementCssGrid].
+For more information about negative numbers in the grid overlay, navigate to [Line-based placement with CSS Grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid).
 
 :::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Display line numbers" lightbox="../media/grid-show-line-numbers.msft.png":::
    Display line numbers
@@ -97,7 +97,7 @@ Choose **Hide line labels** to hide the line numbers.
 
 ### Show line names
 
-For more information about line names in the grid overlay, navigate to [Layout using named grid lines][MdnLayoutUsingNamedGridLines].
+For more information about line names in the grid overlay, navigate to [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
 
 Choose **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.
 
@@ -187,24 +187,9 @@ To highlight the HTML element in the **Elements** tool and scroll to it on the w
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsGuideOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-
-[JecFyiDemoCssGridFruit]: https://jec.fyi/demo/css-grid-fruit "CSS grid | jec.fyi"
-[JecFyiDemoCssGridSnack]: https://jec.fyi/demo/css-grid-snack "CSS grid | jec.fyi"
-
-[MdnCssGridLayout]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout "CSS Grid Layout | MDN"
-[MdnLayoutUsingNamedGridLines]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines "Layout using named grid lines | MDN"
-[MdnLineBasedPlacementCssGrid]: https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid "Line-based placement with CSS Grid | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/grid) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/grid) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

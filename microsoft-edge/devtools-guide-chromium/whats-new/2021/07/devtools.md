@@ -40,7 +40,7 @@ Dark themes:
 *  Red
 *  Tomorrow Night Blue
 
-For more information, navigate to [Apply color themes to DevTools][CustomizeDarkTheme].
+For more information, navigate to [Apply color themes to DevTools](../../../customize/theme.md).
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 
 To turn on this experiment, navigate to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**.
 
-<!-- For more information, navigate to [Detached elements][ExperimentalFeaturesDetachedElements]. -->
+<!-- For more information, navigate to [Detached elements](../../../experimental-features/index.md#detached-elements). -->
 <!-- todo: link directly to the subheading in the page, when available; test the subheading link -->
 
 
@@ -85,13 +85,13 @@ Other new features are:
 *  Several bug fixes.
 *  More detailed documentation of the extension.
 
-For more details about improvements and fixes, check the [changelog file][GithubMicrosoftVscodeEdgeDevtoolsChangelog] in the `vscode-edge-devtools` repo.
+For more details about improvements and fixes, check the [changelog file](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md) in the `vscode-edge-devtools` repo.
 
 :::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="DevTools extension integrated with Visual Studio Code Debugger workflow" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
    DevTools extension integrated with Visual Studio Code Debugger workflow
 :::image-end:::
 
-For more information, see [Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension][VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools].  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, navigate to [Update an extension manually][VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually].  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo][GithubMicrosoftVscodeEdgeDevtools].
+For more information, see [Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).  Get the [Microsoft Edge Developer Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).  Microsoft Visual Studio Code updates extensions automatically; to update this extension manually instead, navigate to [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
 
 <!-- ====================================================================== -->
@@ -100,7 +100,7 @@ For more information, see [Browser debugging with Microsoft Edge DevTools integr
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
 <!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
 
-Microsoft Edge DevTools has adopted [Fluent UI][FluentUI], giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
+Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/), giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
 
 :::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="DevTools implemented with Fluent UI design" lightbox="../../media/2021/07/fluent-ui.msft.png":::
    DevTools implemented with Fluent UI design
@@ -119,7 +119,7 @@ Previously, to change the display language in DevTools, you had to change the br
    Changing the DevTools display language directly from DevTools **Settings**
 :::image-end:::
 
-By default, DevTools matches your browser's display language.  For more information, navigate to [Change DevTools language settings][CustomizeLocalization].  To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756][CR2882756].
+By default, DevTools matches your browser's display language.  For more information, navigate to [Change DevTools language settings](../../../customize/localization.md).  To review the history of this feature in the Chromium open-source project, navigate to Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756).
 
 
 <!-- ====================================================================== -->
@@ -140,7 +140,7 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
    Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
 :::image-end:::
 
-To learn more about viewing and changing CSS, navigate to [CSS features reference][CssReference].
+To learn more about viewing and changing CSS, navigate to [CSS features reference](../../../css/reference.md).
 
 
 <!-- ====================================================================== -->
@@ -157,7 +157,7 @@ In this release, we redesigned the debugging experience so you can easily modify
    Defining User-Agent Client Hints for a custom device in **Settings**
 :::image-end:::
 
-For more information about defining hints in **Settings**, navigate to [Set user agent client hints][DeviceModeIndexSetUach].
+For more information about defining hints in **Settings**, navigate to [Set user agent client hints](../../../device-mode/index.md#set-user-agent-client-hints).
 
 You can also override User-Agent Client Hints for the current page by using the **Network conditions** tool.
 
@@ -165,7 +165,7 @@ You can also override User-Agent Client Hints for the current page by using the 
    Defining User-Agent Client Hints for a custom device in the **Network conditions** tool
 :::image-end:::
 
-For more information about defining hints in the **Network conditions** tool, navigate to [Set user agent client hints][NetworkReferenceSetUach].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299][CR1174299].
+For more information about defining hints in the **Network conditions** tool, navigate to [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299).
 
 
 <!-- ====================================================================== -->
@@ -184,7 +184,7 @@ Now in Microsoft Edge version 93, screen readers correctly announce the type and
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-For information about debugging Console errors, navigate to [Fixing JavaScript errors that are reported in the Console][ConsoleConsoleDebugJavascript].  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool][IssuesIndex].  To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208][CR1223208].
+For information about debugging Console errors, navigate to [Fixing JavaScript errors that are reported in the Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, navigate to [Find and fix problems using the Issues tool](../../../issues/index.md).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208).
 
 
 <!-- ====================================================================== -->
@@ -201,53 +201,19 @@ Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option
    The **Copy as PowerShell** command
 :::image-end:::
 
-For more information about the Network Activity Log, navigate to [Network Analysis reference][NetworkReference].  To review the history of this feature in the Chromium open-source project, navigate to Issue [932971][CR932971].
+For more information about the Network Activity Log, navigate to [Network Analysis reference](../../../network/reference.md).  To review the history of this feature in the Chromium open-source project, navigate to Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
 
 
 <!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
+If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[CustomizeDarkTheme]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
-<!-- todo: link directly to the subheading in the page, when available; test the subheading link:
-[ExperimentalFeaturesDetachedElements]: ../../../experimental-features/index.md#detached-elements "Detached elements | Microsoft Docs" -->
-[CustomizeLocalization]: ../../../customize/localization.md "Change DevTools language settings | Microsoft Docs"
-[CssReference]: ../../../css/reference.md "CSS features reference | Microsoft Docs"
-[DeviceModeIndexSetUach]: ../../../device-mode/index.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
-[NetworkReferenceSetUach]: ../../../network/reference.md#set-user-agent-client-hints "Set user agent client hints | Microsoft Docs"
-[ConsoleConsoleDebugJavascript]: ../../../console/console-debug-javascript.md "Fixing JavaScript errors that are reported in the Console | Microsoft Docs"
-[IssuesIndex]: ../../../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[NetworkReference]: ../../../network/reference.md "Network Analysis reference | Microsoft Docs"
-
-<!-- external links -->
-[FluentUI]: https://developer.microsoft.com/en-us/fluentui#/ "Fluent UI | developer.microsoft.com"
-
-[CR1174299]: https://bugs.chromium.org/p/chromium/issues/detail?id=1174299 "Issue 1174299: UA Client Hints dropped when overriding UA string via Chrome DevTools' Network conditions tab | Chromium bugs"
-[CR2882756]: https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756 "Issue 2882756: \[l10n\] Add setting for users to choose DevTools locale | Chromium bugs"
-[CR1223208]: https://bugs.chromium.org/p/chromium/issues/detail?id=1223208 "Inappropriate information is announced by screen reader for the Errors and Warnings in the header | Chromium bugs"
-[CR932971]: https://bugs.chromium.org/p/chromium/issues/detail?id=932971 "932971 - Network tab, Copy as Powershell == doesn't send cookies properly | Chromium bugs"
-
-[GithubMicrosoftVscodeEdgeDevtools]: https://github.com/microsoft/vscode-edge-devtools "microsoft/vscode-edge-devtools | GitHub"
-[GithubMicrosoftVscodeEdgeDevtoolsChangelog]: https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md "Changelog file - vscode-edge-devtools | GitHub"
-
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
-
-[VisualstudioCodeDocsEditorExtensionGalleryUpdateExtensionManually]: https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually "Update an extension manually - Extension Marketplace | Visual Studio Code"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
