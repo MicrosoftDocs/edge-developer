@@ -227,7 +227,7 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1.  In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel.
 
-    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.  `1` means use a [preview channel](https://www.microsoftedgeinsider.com/download of Microsoft Edge (Beta, Dev, or Canary.  A value other than `1` means use the stable release of Microsoft Edge.
+    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.  `1` means use a [preview channel](https://www.microsoftedgeinsider.com/download) of Microsoft Edge (Beta, Dev, or Canary.  A value other than `1` means use the stable release of Microsoft Edge.
 
 1.  Select **OK** to close the dialog boxes.
 
