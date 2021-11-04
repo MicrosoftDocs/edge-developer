@@ -185,7 +185,7 @@
             - name: Service worker troubleshooting
               href: devtools-guide-chromium/service-workers/index.md
             - name: DevTools Protocol
-              href: devtools-protocol-chromium/index.md #1
+              href: devtools-protocol-chromium/index.md
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
 # =============================================================================
@@ -513,7 +513,7 @@
     - name: Test and automation
       items:
         - name: DevTools Protocol
-          href: devtools-protocol-chromium/index.md #2
+          href: test-and-automation/devtools-protocol.md
         - name: Origin Trials
           href: origin-trials/index.md
         - name: Playwright
@@ -529,7 +529,7 @@
             - name: Verifying downloads of Selenium Tools for Microsoft Edge
               href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
-          href: visual-studio-code/webhint.md #1
+          href: test-and-automation/webhint.md
 # =============================================================================
     - name: Web platform
       items:
@@ -561,7 +561,7 @@
             - name: Microsoft Edge DevTools extension
               href: visual-studio-code/microsoft-edge-devtools-extension.md
             - name: webhint
-              href: visual-studio-code/webhint.md #2
+              href: visual-studio-code/webhint.md
 # =============================================================================
     - name: Accessibility in Microsoft Edge
       items:
