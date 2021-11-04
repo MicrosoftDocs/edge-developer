@@ -85,6 +85,8 @@ landingContent:
             url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
           - text: Using DevTools with Progressive Web Apps
             url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+          - text: What's New in Progressive Web Apps
+            url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
       - linkListType: concept
         links:
           - text: Offline scenarios

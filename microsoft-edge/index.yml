@@ -187,6 +187,9 @@ conceptualContent:
             - url: /microsoft-edge/progressive-web-apps-chromium/index
               itemType: overview
               text: Progressive Web Apps overview
+            - url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
+              itemType: overview
+              text: What's New in Progressive Web Apps
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
               itemType: overview
               text: Get started with Progressive Web Apps
