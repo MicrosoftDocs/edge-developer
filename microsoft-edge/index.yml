@@ -127,10 +127,10 @@ conceptualContent:
               text: Manage Microsoft Edge extensions in the enterprise
               url: /deployedge/microsoft-edge-manage-extensions
             - itemType: reference
-              text: Match Patterns
+              text: Match patterns
               url: /microsoft-edge/extensions-chromium/enterprise/match-patterns
             - itemType: reference
-              text: Hosting and Updating
+              text: Hosting and updating
               url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
 # =============================================================================
     - title: Microsoft Edge for Developers # < 60 chars (optional)
@@ -147,7 +147,7 @@ conceptualContent:
               text: DevTools for beginners
             - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
               itemType: how-to-guide
-              text: Command menu
+              text: Command Menu
             - url: /microsoft-edge/devtools-guide-chromium/open
               itemType: how-to-guide
               text: Open DevTools
@@ -187,15 +187,15 @@ conceptualContent:
             - url: /microsoft-edge/progressive-web-apps-chromium/index
               itemType: overview
               text: Progressive Web Apps overview
-            - url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
-              itemType: overview
-              text: What's New in Progressive Web Apps
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
               itemType: overview
               text: Get started with Progressive Web Apps
             - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
               itemType: overview
-              text: Using DevTools with Progressive Web Apps
+              text: Debug Progressive Web Apps
+            - url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
+              itemType: overview
+              text: What's New in Progressive Web Apps
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
               itemType: concept
               text: Offline scenarios
@@ -211,15 +211,21 @@ conceptualContent:
             - url: /microsoft-edge/webview2/index
               itemType: overview
               text: WebView2 overview
-            - url: /microsoft-edge/webview2/gettingstarted/win32
+            - url: /microsoft-edge/webview2/get-started/win32
               itemType: get-started
-              text: Getting Started with WebView2
-            - url: /microsoft-edge/webview2/gettingstarted/wpf
+              text: Get started with WebView2 in Win32 apps
+            - url: /microsoft-edge/webview2/get-started/winforms
               itemType: get-started
-              text: Getting started with WebView2 in WPF
-            - url: /microsoft-edge/webview2/gettingstarted/winforms
+              text: Get started with WebView2 in WinForms apps
+            - url: /microsoft-edge/webview2/get-started/winui2
               itemType: get-started
-              text: Getting started with WebView2 in Windows Forms apps
+              text: Get started with WebView2 in WinUI 2 apps
+            - url: /microsoft-edge/webview2/get-started/winui
+              itemType: get-started
+              text: Get started with WebView2 in WinUI 3 apps
+            - url: /microsoft-edge/webview2/get-started/wpf
+              itemType: get-started
+              text: Get started with WebView2 in WPF apps
             - url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
               text: Microsoft Edge WebView2 API Reference
