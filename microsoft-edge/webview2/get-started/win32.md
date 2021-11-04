@@ -174,9 +174,7 @@ In the callback, set a few more settings, resize the WebView2  to fill 100% of t
 
     Now you have a WebView2 window displaying the Bing page.
 
-    :::image type="complex" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
-       Bing window
-    :::image-end:::
+:::image type="content" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
 
 
 <!-- ====================================================================== -->
@@ -192,9 +190,7 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 
 For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
-   Navigation events
-:::image-end:::
+:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
 
 In error cases, one or more of the following events may occur depending on whether the navigation continued to an error webpage.
 
@@ -300,7 +296,7 @@ nullptr);
        The sample app with Webview2 control displays the Bing website, http://www.bing.com. The sample app also displays an OK button. Users click OK to continue to the url.
     :::image-end:::
 
-Congratulations, you built your first WebView2 app.
+Congratulations, you built your first WebView2 app!
 
 
 <!-- ====================================================================== -->
@@ -313,5 +309,3 @@ To learn more about WebView2 functions not covered in this article, see the foll
 *  [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
 *  [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
 *  [WebView2 API reference](/microsoft-edge/webview2/reference/win32)
-
-

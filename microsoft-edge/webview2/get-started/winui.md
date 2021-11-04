@@ -17,7 +17,9 @@ In this article, get started creating your first WebView2 app in WinUI 3 (Window
 ## Step 0 - Set Up Development Environment
 
 1. Follow steps 1-4 of [Set up your development environment](/windows/apps/project-reunion/set-up-your-development-environment) to install Visual Studio, configure the NuGet package source, and install the Windows App SDK Extension for Visual Studio.
+
 1. Install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge non-stable channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10 version 1803 (build 17134) or later.  For more information about Windows 10 or later, see [Windows Update: FAQ](https://support.microsoft.com/help/12373).
+
 1.  To access all developer-specific Visual Studio features, turn on [Developer Mode](/windows/uwp/get-started/enable-your-device-for-development).
 
 
@@ -46,7 +48,7 @@ Start with a basic desktop project that contains a single main window.
        The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version.
     :::image-end:::
 
-    Solution Explorer displays two projects.
+    Solution Explorer displays the two new projects that were generated:
     *   **Your project name (Desktop)**.  The Desktop project contains the code for your app.  The `App.xaml.cs` file defines an `Application` class that represents your app instance. The `MainWindow.xaml.cs` file defines a `MainWindow` class that represents the main window displayed by your app instance.  The classes derive from types in the `Microsoft.UI.Xaml` namespace of WinUI.
     *   **Your project name (Package)**.  The Package project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment. The project contains the package manifest for your app, and is the startup project for your solution by default. For more information, see [Set up your desktop application for MSIX packaging in Visual Studio](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) and [Package manifest schema reference for Windows 10](/uwp/schemas/appxpackage/uapmanifestschema/schema-root).
 
@@ -113,9 +115,9 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control 
         // myButton.Content = "Clicked";
     ```
 
-1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1.  Click **File** > **Save All (Ctrl+Shift+S)**, to save the project.
 
-1.  Press **F5** to build and run your project.
+1.  Press **F5**, to build and run the project.
 
 1.  Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
@@ -125,7 +127,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control 
 
 ## Step 3 - Add navigation controls
 
-To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to the sample app.
+To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to the sample app, as follows.
 
 1.  In the `MainWindow.xaml` file, copy and paste the following code snippet inside the `<Grid>` element that contains the `WebView2` element.
 
@@ -197,8 +199,8 @@ In this section, you add code to import the WebView2 Core library.
     using Microsoft.Web.WebView2.Core;
     ```
 
-    Apps that host WebView2 controls listen for the following events that are raised by WebView2 controls during webpage navigation.
-    
+    Apps that host WebView2 controls listen for the following events that are raised by WebView2 controls during webpage navigation:
+
     *   `NavigationStarting`
     *   `SourceChanged`
     *   `ContentLoading`
@@ -210,8 +212,8 @@ In this section, you add code to import the WebView2 Core library.
     
     For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
     
-    When errors occur, the following events are raised and may navigate to an error webpage.
-    
+    When errors occur, the following events are raised, and an error webpage might be displayed:
+
     *   `SourceChanged`
     *   `ContentLoading`
     *   `HistoryChanged`
@@ -253,12 +255,12 @@ In this section, you add code to import the WebView2 Core library.
 
 ## Step 5 - Scripting
 
-You may use host apps to inject JavaScript code into WebView2 controls at runtime. You may task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing.
+You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing, to either:
 
-*   Run it after the creation of the global object.
-*   Run it before any other script included in the HTML document runs.
+*   Run the injected JavaScript after the creation of the global object.
+*   Run the injected JavaScript before running any other script that's included in the HTML document.
 
-As an example, add scripts that send an alert when a user tries to open non-HTTPS sites.
+As an example, add scripts that send an alert when a user tries to open non-HTTPS sites, as follows:
 
 1.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync).
 
@@ -288,7 +290,7 @@ As an example, add scripts that send an alert when a user tries to open non-HTTP
    The sample app WebView2 control displays an alert dialog for non-HTTPS websites. The alert dialog displays text stating that the non-https site is not safe, try an https link.
 :::image-end:::
 
-Congratulations, you built your first WebView2 app.
+Congratulations, you built your first WebView2 app!
 
 
 <!-- ====================================================================== -->

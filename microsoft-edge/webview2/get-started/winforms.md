@@ -13,6 +13,7 @@ keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, C
 
 In this article, get started creating your first WebView2 app in WinForms, and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.winforms).
 
+
 <!-- ====================================================================== -->
 ## Step 0 - Prerequisites
 
@@ -289,9 +290,10 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript runs with specific timing.
 
-*   Run it after the creation of the global object.
-*   Run it before any other script included in the HTML document is run.
-1.  For example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync) method.
+*   Run the injected JavaScript after the creation of the global object.
+*   Run the injected JavaScript before any other script included in the HTML document is run.
+
+1.  For example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync) method, like shown below:
 
     ```csharp
     void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)

@@ -23,9 +23,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # View cache data with Microsoft Edge DevTools
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to inspect [Cache][MDNCache] data.
+This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to inspect [Cache](https://developer.mozilla.org/docs/Web/API/Cache) data.
 
-If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  Navigate to [Log network activity][DevtoolsNetworkLogActivity].
+If you are trying to inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) data, this is not the guide you want.  Look for the information in the **Size** column of the **Network Log**.  Navigate to [Log network activity](../network/index.md#log-network-activity).
 
 
 <!-- ====================================================================== -->
@@ -117,24 +117,9 @@ If you are trying to inspect [HTTP cache][MDNHTTPCaching] data, this is not the 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
-[DevtoolsNetworkLogActivity]: ../network/index.md#log-network-activity  "Log network activity | Microsoft Docs"
-<!-- external links -->
-[MDNCache]: https://developer.mozilla.org/docs/Web/API/Cache "Cache | MDN"
-[MDNHTTPCaching]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/cache) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

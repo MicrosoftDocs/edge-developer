@@ -13,6 +13,8 @@ keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView
 
 In this article, get started creating your first WebView2 app in Windows Presentation Foundation (WPF) apps, and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.wpf).
 
+
+<!-- ====================================================================== -->
 ## Step 0 - Prerequisites
 
 Install the following list of prerequisites before proceeding.
@@ -24,6 +26,8 @@ Install the following list of prerequisites before proceeding.
     > [!NOTE]
     > The WebView2 team recommends using the Canary channel and the minimum required version is 82.0.488.0.
 
+
+<!-- ====================================================================== -->
 ## Step 1 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.
@@ -37,11 +41,11 @@ Start with a basic desktop project that contains a single main window.
 1. Click the **WPF App (.NET Core)** or **WPF App (.NET Framework)** card.
 
     :::image type="complex" source="./media/wpf-getting-started-wpf-core.png" alt-text="Create a new project panel displays WPF app search results including WPF Core card.":::
-      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C sharp, XAML, Windows, and desktop. The dialog box displays a next button.
+      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C#, XAML, Windows, and desktop. The dialog box displays a next button.
     :::image-end:::
 
     :::image type="complex" source="./media/wpf-getting-started-wpf-fw.png" alt-text="Create a new project panel displays WPF app search results including WPF Framework card.":::
-      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C sharp, Windows, and desktop. The dialog box displays a next button.
+      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C#, Windows, and desktop. The dialog box displays a next button.
           :::image-end:::
 
 1.  For **WPF App (.NET Core)** enter values for **Project name** and **Location**, then click **Next**.
@@ -66,6 +70,8 @@ Start with a basic desktop project that contains a single main window.
 
     Visual Studio creates the project.
 
+
+<!-- ====================================================================== -->
 ## Step 2 - Install WebView2 SDK
 
 Use NuGet to add the WebView2 SDK to the project.
@@ -96,6 +102,8 @@ Use NuGet to add the WebView2 SDK to the project.
        The empty application window. Verifies that WebView2 is installed and working, but has nothing to display.
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 3 - Create a single WebView
 
 Add a WebView2 control to your app.
@@ -147,6 +155,8 @@ Add a WebView2 control to your app.
        Microsoft.com
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 4 - Navigation
 
 Enable users to change the URL that the WebView2 control displays by adding an address bar to the app.
@@ -236,6 +246,8 @@ Enable users to change the URL that the WebView2 control displays by adding an a
        The sample app displays the Bing website with the URL https://www.bing.com in the address bar.
     :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 5 - Navigation events
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events.
@@ -290,6 +302,8 @@ In the constructor, `EnsureHttps` is registered as the event handler on the `Nav
 
 1.  Attempt to open an HTTP site. Make sure the WebView2 control remains unchanged. However, the WebView2 control does allow you to open HTTPS sites.
 
+
+<!-- ====================================================================== -->
 ## Step 6 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime.  You may task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing.
@@ -323,6 +337,8 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
    HTTPS
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Step 7 - Communication between host and web content
 
 The host and web content may communicate in the following ways using `postMessage`.
@@ -394,12 +410,13 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
        The sample app displays the URI in the address bar and the Microsoft website https://www.microsoft.com.
     :::image-end:::
 
-Congratulations, you built your first WebView2 app.
+Congratulations, you built your first WebView2 app!
+
 
 <!-- ====================================================================== -->
 ## Next steps
 
-*  [WebView2 development best practices | Microsoft Docs](../concepts/developer-guide.md)
-*  [WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 development best practices](../concepts/developer-guide.md)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 *  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
 *  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
