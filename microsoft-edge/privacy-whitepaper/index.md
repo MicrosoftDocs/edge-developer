@@ -680,7 +680,7 @@ The Microsoft Edge Travel feature requires sharing cookie information with Bing.
 
 The Travel service is turned on by default.  To change the Travel setting in Microsoft Edge:
 1. Navigate to `edge://settings/privacy`.  One way to do this is by selecting **Settings and more** (`...`) > **Settings** > **Privacy, search, and services**.
-2. In the **Services** section at the bottom of the page, turn off the setting **Save time and money with Travel in Microsoft Edge**.
+2. In the **Services** section at the bottom of the page, turn off the setting **Show travel recommendations in Microsoft Edge**.
 
 
 <!-- ====================================================================== -->
