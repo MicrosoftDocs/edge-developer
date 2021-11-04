@@ -116,8 +116,8 @@ The `launchQueue` object queues all the launched files until a consumer is set w
 My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx` files. To try the feature with this demo app:
 
 *  [Enable the feature](#enable-the-file-handling-api) in Microsoft Edge.
-*  Go to [My Tracks][MyTracksDemoApp] and install the app.
-*  Download a GPX file on your computer. You can use this [test GPX file][TestGPXFile].
+*  Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
+*  Download a GPX file on your computer. You can use this [test GPX file](https://www.visugpx.com/download.php?id=okB1eM4fzj).
 *  Open the downloaded GPX file.
 
 Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
@@ -128,16 +128,7 @@ If you allow the app to handle the file, a new entry appears in the app's sideba
 
 :::image type="content" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app." lightbox="../media/my-tracks-new-file.png":::
 
-The source code for this app can be accessed on the [My Tracks GitHub repository][MyTracksDemoAppGitHub].
+The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 
-* The [manifest.json][MyTracksDemoAppManifestJsonFile] source file uses the `file_handlers` array to request handling `.gpx` files.
-* The [file.js][MyTracksDemoAppFileJsFile] source file uses the `launchQueue` object to handle incoming files.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
-[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"
-[TestGPXFile]: https://www.visugpx.com/download.php?id=okB1eM4fzj
-[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
-[MyTracksDemoAppFileJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/file.js
+* The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file uses the `file_handlers` array to request handling `.gpx` files.
+* The [file.js](https://github.com/captainbrosset/mytracks/blob/main/src/file.js) source file uses the `launchQueue` object to handle incoming files.

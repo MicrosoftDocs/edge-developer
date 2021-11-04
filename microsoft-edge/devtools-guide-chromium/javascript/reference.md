@@ -23,9 +23,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Use the debugger features
 
-This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].
+This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints](./breakpoints.md).
 
-To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevToolsJavascriptGetStarted], which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
+To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools](./index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
 
 
 <!-- ====================================================================== -->
@@ -72,7 +72,7 @@ To set a line-of-code breakpoint:
        A line-of-code breakpoint
     :::image-end:::
 
-Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  For more information, navigate to [Pause your code with breakpoints][DevToolsJavascriptBreakpoints].
+Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  For more information, navigate to [Pause your code with breakpoints](./breakpoints.md).
 
 
 <!-- ====================================================================== -->
@@ -319,7 +319,7 @@ To mark a script as **Library code** from the **Call Stack** pane:
 
 To mark a single script or pattern of scripts from **Settings**:
 
-1.  Open [Settings][DevToolsCustomize].
+1.  Open [Settings](../customize/index.md).
 1.  Navigate to the **Library code** setting.
 1.  Choose **Add pattern**.
 1.  Enter the script name or a regex pattern of script names to mark as **Library code**.
@@ -335,36 +335,21 @@ To mark a single script or pattern of scripts from **Settings**:
 
 If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.
 
-See [Run snippets of JavaScript on any webpage][DevToolsJavascriptSnippets].
+See [Run snippets of JavaScript on any webpage](./snippets.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Get Started With Debugging JavaScript In Microsoft Edge DevTools][DevToolsJavascriptGetStarted] - A simple, short tutorial using existing code, with screen captures.
-*  [Sources tool overview][DevToolsSourcesIndex] - The **Sources** tool includes the JavaScript debugger and editor.
-*  [Disable JavaScript with Microsoft Edge DevTools][DevToolsJavascriptDisable].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsJavascriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsJavascriptDisable]: ./disable.md "Disable JavaScript with Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsJavascriptGetStarted]: ./index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsJavascriptSnippets]: ./snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
-[DevToolsCustomize]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
+*  [Get Started With Debugging JavaScript In Microsoft Edge DevTools](./index.md) - A simple, short tutorial using existing code, with screen captures.
+*  [Sources tool overview](../sources/index.md) - The **Sources** tool includes the JavaScript debugger and editor.
+*  [Disable JavaScript with Microsoft Edge DevTools](./disable.md).
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
