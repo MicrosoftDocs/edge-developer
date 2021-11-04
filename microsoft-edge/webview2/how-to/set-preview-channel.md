@@ -145,23 +145,17 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
 1.  Expand **Local Computer Policy**, then **Computer Configuration** or **User Configuration**.  Then expand **Administrative Templates** > **Microsoft Edge WebView2**.
 
-    :::image type="complex" source="./media/local-group-policy-editor.png" alt-text="Local Group Policy Editor dialog box" lightbox="./media/local-group-policy-editor.png":::
-       **Local Group Policy Editor** dialog box
-    :::image-end:::
+    :::image type="content" source="./media/local-group-policy-editor.png" alt-text="Local Group Policy Editor dialog box" lightbox="./media/local-group-policy-editor.png":::
 
 1.  Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialog boxes.
 
-    :::image type="complex" source="./media/browser-executable-folder.png" alt-text="Setting the Browser Executable Folder" lightbox="./media/browser-executable-folder.png":::
-       Setting the **Browser Executable Folder**
-    :::image-end:::
+    :::image type="content" source="./media/browser-executable-folder.png" alt-text="Setting the Browser Executable Folder" lightbox="./media/browser-executable-folder.png":::
 
 1.  Select the **Show** button.
 
 1.  Fill-in the **Show Contents** dialog box.  In the **Value name** column, enter an asterisk to apply to all WebView2 apps, or a `.exe` filename to only affect the specified WebView2 app.  In the **Value** column, enter the path to your WebView2 app's executable file.
 
-    :::image type="complex" source="./media/show-contents.png" alt-text="The Show Contents dialog box" lightbox="./media/show-contents.png":::
-       The **Show Contents** dialog box
-    :::image-end:::
+    :::image type="content" source="./media/show-contents.png" alt-text="The Show Contents dialog box" lightbox="./media/show-contents.png":::
 
 1.  Select **OK** to close the dialog boxes.
 
@@ -223,27 +217,21 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1.  In the Windows search bar, enter "environment", and then select **Edit the system environment variables**.
 
-    :::image type="complex" source="./media/search-bar-edit-sys-env-vars.png" alt-text="Using the Windows search bar to find where to edit environment variables" lightbox="./media/search-bar-edit-sys-env-vars.png":::
-       Using the Windows search bar to find where to edit environment variables
-    :::image-end:::
+    :::image type="content" source="./media/search-bar-edit-sys-env-vars.png" alt-text="Using the Windows search bar to find where to edit environment variables" lightbox="./media/search-bar-edit-sys-env-vars.png":::
 
 1.  In the **System Properties** dialog box, select the **Advanced** tab, and then select the **Environment Variables** button.
 
-    :::image type="complex" source="./media/system-properties-env-vars.png" alt-text="The Environment Variables button in the System Properties dialog box" lightbox="./media/system-properties-env-vars.png":::
-       The **Environment Variables** button in the **System Properties** dialog box
-    :::image-end:::
+    :::image type="content" source="./media/system-properties-env-vars.png" alt-text="The Environment Variables button in the System Properties dialog box" lightbox="./media/system-properties-env-vars.png":::
 
 1.  In the **User variables** section of the **Environment Variables** dialog box, select **New**.
 
 1.  In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel.
 
-    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.
+    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1`.  `1` means use a [preview channel](https://www.microsoftedgeinsider.com/download of Microsoft Edge (Beta, Dev, or Canary.  A value other than `1` means use the stable release of Microsoft Edge.
 
 1.  Select **OK** to close the dialog boxes.
 
-    :::image type="complex" source="./media/env-vars-new-user-variable.png" alt-text="Adding a new environment variable, as a user variable" lightbox="./media/env-vars-new-user-variable.png":::
-       Adding a new environment variable, as a user variable
-    :::image-end:::
+    :::image type="content" source="./media/env-vars-new-user-variable.png" alt-text="Adding a new environment variable, as a user variable" lightbox="./media/env-vars-new-user-variable.png":::
 
 > [!NOTE]
 > This approach sets the environment variable for all WebView2 apps, not just the app you're testing.  To set this environment variable for only the WebView2 app which you are testing, if you're running your app from the command prompt, set the environment variable `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE=1`.  That sets the environment variable just for the current `cmd.exe` command-prompt process and for any new child processes from that `cmd.exe` instance.  Then the environment variable only applies to the WebView2 app that you're testing.
