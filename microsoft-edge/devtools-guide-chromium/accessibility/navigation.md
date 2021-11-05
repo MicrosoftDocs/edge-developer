@@ -156,7 +156,7 @@ Because all of the style tools connect in one way or another back to the **Style
 *   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you can use to add additional CSS properties.
 *   You can continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.
 
-For additional shortcuts, navigate to [Styles pane keyboard reference](../shortcuts/index.md#styles-panel-keyboard-shortcuts).
+For additional shortcuts, navigate to [Styles pane keyboard reference](../shortcuts/index.md#styles-pane-keyboard-shortcuts).
 
 **Known issues**
 
