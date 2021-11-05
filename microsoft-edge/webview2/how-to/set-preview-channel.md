@@ -235,7 +235,7 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1.  In the **New User Variable** dialog box, set the **Variable name** to `WEBVIEW2_BROWSER_EXECUTABLE_FOLDER`, and set the **Variable value** to the path to your preferred browser channel or fixed version binaries.
 
-    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1` to reverse the search order and use non-stable channels first. Any value besides `1` indicates the default search order.
+    Alternatively, set the **Variable name** to `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE`, and set the **Variable value** to `1` to reverse the search order, to use preview channels (Beta, Dev, or Canary) first. Any value besides `1` indicates the default search order.
 
 1.  Select **OK** to close the dialog boxes.
 
@@ -248,7 +248,9 @@ After setting an environment variable this way, the environment variable is appl
 
 ### Values for WEBVIEW2_RELEASE_CHANNEL_PREFERENCE
 
+If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you can set it to the following values.
+
 | Value | Description |
 |---|---|
-| `1` | Use a [preview channel](https://www.microsoftedgeinsider.com/download) of Microsoft Edge (Beta, Dev, or Canary). |
-| Value other than `1` | Use the stable release of Microsoft Edge. |
+| `1` | Reverses the search order, to use [preview channels](https://www.microsoftedgeinsider.com/download) first. |
+| `0` or another value other than `1` | Uses the default search order. |
