@@ -57,4 +57,3 @@ This article is about changing the appearance of the webpage under development. 
     Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started with viewing and changing CSS](../css/index.md).
 
 1.  To restore the setting, in the Command Menu, type "emulate" or "scheme" and then select **Rendering: Do not emulate CSS prefers-color-scheme**.  When you refresh the page, your own operating system or browser setting for light or dark mode preference will be applied.
-
