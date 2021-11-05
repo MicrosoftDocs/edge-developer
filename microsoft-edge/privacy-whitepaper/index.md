@@ -679,7 +679,7 @@ When you visit a website, Microsoft Edge locally determines if the website you'r
 The Microsoft Edge Travel feature requires sharing cookie information with Bing.com.  For example, cookies may be used for debugging, fraud detection, and analytics.  When you visit Bing.com in your browser and update any settings on Bing pages, Bing.com creates a cookie in your browser and stores information in the cookie.  This cookie is shared across Bing.com pages, and Microsoft Edge sends this cookie to the Microsoft Travel service to keep your experience consistent.
 
 The Travel service is turned on by default.  To change the Travel setting in Microsoft Edge:
-1. Navigate to `edge://settings/privacy`.  One way to do this is by selecting **Settings and more** (`...`) > **Settings** > **Privacy, search, and services**.
+1. Navigate to `edge://settings/privacy`.
 2. In the **Services** section at the bottom of the page, turn off the setting **Show travel recommendations in Microsoft Edge**.
 
 
