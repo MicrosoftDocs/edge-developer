@@ -78,7 +78,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1. In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**.
 
-    :::image type="complex" source="./media/wpf-getting-started-mng-nuget.png" alt-text="Contextual menu displays manage NuGet packages." lightbox="./media/wpf-getting-started-mng-nuget.png":::
+    :::image type="complex" source="./media/wpf-getting-started-mng-nuget-reduced.png" alt-text="Contextual menu displays manage NuGet packages." lightbox="./media/wpf-getting-started-mng-nuget.png":::
        The contextual menu displays many options including Manage NuGet Packages.
     :::image-end:::
 
