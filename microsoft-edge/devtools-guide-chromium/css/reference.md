@@ -543,7 +543,10 @@ When you open the **Color Picker**, the **Eyedropper** (![Eyedropper](../media/e
        Using the Eyedropper
     :::image-end:::
 
-<!--todo:  add the section on the Angle clock section for What's New 88.  -->
+<!--todo: Angle Clock: 
+Add the section on the Angle clock section for What's New 88.
+Update Nov. 4, 2021: an open PR adds the section here about angle clock.
+-->
 
 
 <!-- ====================================================================== -->
