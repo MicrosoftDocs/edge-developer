@@ -12,7 +12,7 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 [Visual Studio Code](https://code.visualstudio.com) includes a built-in debugger for Microsoft Edge, which can launch the browser or attach to an already running browser.
 
-This built-in debugger lets you debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from [Visual Studio Code](https://code.visualstudio.com).
+This built-in debugger lets you debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from Visual Studio Code.
 
 For more information, see [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging) and [Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).
 
