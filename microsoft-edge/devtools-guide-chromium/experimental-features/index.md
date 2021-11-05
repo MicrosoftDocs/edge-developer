@@ -23,13 +23,13 @@ As of Microsoft Edge 94, the following experimental features are turned on by de
 
 <!-- listed in this list in order per Settings > Experiments pane -->
 *  Source order viewer
-*  [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] is turned on by default starting with Microsoft Edge 90.
+*  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) is turned on by default starting with Microsoft Edge 90.
 *  Enable webhint
 *  Show issues in Elements
 *  Enable Composited Layers in 3D View
 *  DevTools Tooltips
 *  VS Code themes for the DevTools
-*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] is turned on by default starting with Microsoft Edge 89.
+*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
 
 
 <!-- ====================================================================== -->
@@ -37,9 +37,9 @@ As of Microsoft Edge 94, the following experimental features are turned on by de
 
 To turn on (or off) experimental features in Microsoft Edge:
 
-1.  [Open DevTools][DevtoolsOpenIndex].  To do this, in Microsoft Edge, select the **Settings and more** button, which is an ellipses (three dots).  Then hover over **More tools**, and then select **Developer tools**.
+1.  [Open DevTools](../open/index.md).  To do this, in Microsoft Edge, select the **Settings and more** button, which is an ellipses (three dots).  Then hover over **More tools**, and then select **Developer tools**.
 
-1.  Open the [Settings][DevToolsCustomizeIndexSettings] pane of DevTools.  To do this, select the **Settings** (gear) icon.
+1.  Open the [Settings](../customize/index.md#settings) pane of DevTools.  To do this, select the **Settings** (gear) icon.
 
 1.  On the left side of the **Settings** pane, select the **Experiments** section.
 
@@ -80,7 +80,7 @@ This experiment is available starting with Microsoft Edge version 86 and is turn
 <!-- keep the period per the ui string literal -->
 <!-- found in Experiments in 94 60% down main list -->
 
-You can now use the new visual [Font Editor][DevtoolsInspectStylesEditFonts] to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
+You can now use the new visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
 *   Switch between units for different font properties
 *   Switch between keywords for different font properties
@@ -92,7 +92,7 @@ To use the new visual **Font Editor**:
 1.  Open the **Styles** pane.
 1.  Select the **Font Editor** icon.
 
-For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].
+For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
    The visual **Font Editor** pane is highlighted
@@ -105,7 +105,7 @@ This experiment is available starting with Microsoft Edge version 89.
 ## Enable webhint
 <!-- on by default in 94 -->
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint][WebhintMain] includes:
+[webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
 
 *   Accessibility
 *   Cross-browser compatibility
@@ -114,7 +114,7 @@ This experiment is available starting with Microsoft Edge version 89.
 *   Progressive Web Apps (PWAs)
 *   Other common web development issues
 
-The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssuesIndex] panel.  Select an issue, to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
+The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue, to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
 :::image type="content" source="../media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../media/experiments-webhint.msft.png":::
 
@@ -167,7 +167,7 @@ After you select a folder to use as your Workspace, selecting any link to a file
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.  You can read about setting up your workspace in [Opening source files in Visual Studio Code][OpenSourcesInVSCode].
+Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.  You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 
 This experiment is available starting with Microsoft Edge version 96.
 
@@ -179,13 +179,13 @@ This experiment is available starting with Microsoft Edge version 96.
 
 These features have been promoted from Experimental to regular features, and have been removed from **Settings** > **Experiments**.
 
-*  [Turn on new CSS grid debugging features][DevtoolsCssGrid] - removed from Experimental status starting with Microsoft Edge 89.
+*  [Turn on new CSS grid debugging features](../css/grid.md) - removed from Experimental status starting with Microsoft Edge 89.
 
-*  [Match keyboard shortcuts from Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] - removed from Experimental status starting with Microsoft Edge 86.
+*  [Match keyboard shortcuts from Microsoft Visual Studio Code](../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code) - removed from Experimental status starting with Microsoft Edge 86.
 
-*  [Turn on support to move tabs between panels][DevtoolsCustomizeIndex] - removed from Experimental status starting with Microsoft Edge 85.
+*  [Turn on support to move tabs between panels](../customize/index.md) - removed from Experimental status starting with Microsoft Edge 85.
 
-*  [3D View][Devtools3dViewIndex] - removed from Experimental status starting with Microsoft Edge 83.
+*  [3D View](../3d-view/index.md) - removed from Experimental status starting with Microsoft Edge 83.
 
 *  The items in the following subsections.
 
@@ -212,7 +212,7 @@ This experiment replaces the **What's New** tool with the new **Welcome** tool. 
 
 The **Welcome** tool opens automatically after each update to Microsoft Edge.  To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
 
-If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and remove the checkbox next to **Enable Welcome tab**.
+If you prefer the original **What's New** tool, navigate to [Settings](../customize/index.md#settings) > **Experiments** and remove the checkbox next to **Enable Welcome tab**.
 
 :::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
 
@@ -249,24 +249,3 @@ To toggle persistent overlays on Flexbox layout, do either of the following:
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
 :::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "Opening source files in Visual Studio Code"
-[Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
-[DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Edit the keyboard shortcut for a DevTools action | Microsoft Docs"
-[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code "Match keyboard shortcuts from Microsoft Visual Studio Code | Microsoft Docs"
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"
-[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
-<!-- external links: -->
-[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"
-[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"
-[WebhintMain]: https://webhint.io "webhint"
