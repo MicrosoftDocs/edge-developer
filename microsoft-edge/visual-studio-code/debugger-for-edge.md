@@ -20,6 +20,6 @@ For more information, see [Browser debugging in VS Code](https://code.visualstud
 <!-- ====================================================================== -->
 ## Get in touch with the Debugger for Microsoft Edge Visual Studio Code Extension team
 
-Send your feedback by [filing an issue](https://github.com/Microsoft/vscode-edge-devtools/issues/new) in the `vscode-edge-devtools` repo.
+Send your feedback by [filing an issue](https://github.com/Microsoft/vscode-edge-devtools/issues/new) in the [vscode-edge-devtools repo](https://github.com/Microsoft/vscode-edge-devtools).
 
 Your contributions are welcome, to help make the Microsoft Edge DevTools extension better.  Find everything you need to get started in the `vscode-edge-devtools` repo.
