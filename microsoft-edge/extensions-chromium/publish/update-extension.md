@@ -21,7 +21,7 @@ You can update a submitted extension or remove a published extension listing fro
 
 To update your extension on the store:
 
-1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and select the extension that you want to update.
+1.  Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you want to update.
 
 1.  Update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version in the manifest file.
 
@@ -30,7 +30,7 @@ To update your extension on the store:
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
 
 <!-- todo: uncomment after the API is available for use.
-After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API][UsingAddonsAPI].
+After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API](api/using-addons-api.md).
 -->
 
 
@@ -39,11 +39,11 @@ After your extension has been initially created, you will be able to update it p
 
 While your extension is still in the certification stage, and before it gets published to the Microsoft Edge Add-ons website, you can update it. If your extension fails the certification process, you might also need to update your extension.
 
-To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center][MicrosoftPartnerCenter].
+To check the status of your extension, navigate to the dashboard associated with your listing on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
 
 To edit your submission:
 
-1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and select the extension that you wish to update.  The information you filled out during the previous submission is displayed.
+1.  Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you wish to update.  The information you filled out during the previous submission is displayed.
 
 1.  To open the **Extension overview** section, use the left navigation bar.  To cancel the current submission, select **Cancel submission**.
 
@@ -62,7 +62,7 @@ After your extension failed the certification process, you need to update your e
 
 To edit your extension:
 
-1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter] and select the extension that failed the certification process.
+1.  Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that failed the certification process.
 
 1.  Update either the extension package or the metadata incorporating the feedback received from the certification process.  If you update the extension package, make sure that you increase the version in the manifest file.
 
@@ -74,15 +74,10 @@ To edit your extension:
 
 To remove an extension from the Microsoft Edge Add-ons website:
 
-1.  Navigate to your [developer dashboard][MicrosoftPartnerCenter].  From the Dashboard page, select the listing to remove.
+1.  Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  From the Dashboard page, select the listing to remove.
 
 1.  Select **Extension Overview** on your listing.
 
 1.  Select **Unpublish** to remove the listing from the Microsoft Edge Add-ons website.
 
 The extension is now removed from the Microsoft Edge Add-ons website.  Users who already installed your extension can continue to use it, but new users don't find it.
-
-<!-- links -->
-[UsingAddonsAPI]: api/using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
-<!-- external links -->
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"

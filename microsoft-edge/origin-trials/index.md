@@ -11,13 +11,13 @@ keywords: edge, web development, html, css, origin trials, developer
 ---
 # Use Origin Trials in Microsoft Edge
 
-Developers may use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you do not need to go to `edge://flags` and turn on feature flags.  For more information, navigate to [experimental APIs][DeveloperMicrsoftEdgeOriginTrials].  Additionally, you may provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
+Developers may use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you do not need to go to `edge://flags` and turn on feature flags.  For more information, navigate to [experimental APIs](https://developer.microsoft.com/microsoft-edge/origin-trials).  Additionally, you may provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
 
 
 <!-- ====================================================================== -->
 ## Get started using Origin Trials
 
-For more information about the experimental APIs available in Microsoft Edge, navigate to [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials].  Ensure that you review the minimum version requirements for Microsoft Edge, and the trial end date to assess suitability of using the experimental APIs on your website.
+For more information about the experimental APIs available in Microsoft Edge, navigate to [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).  Ensure that you review the minimum version requirements for Microsoft Edge, and the trial end date to assess suitability of using the experimental APIs on your website.
 
 > [!NOTE]
 > An experiment may end earlier than planned if any of the following situations occur.
@@ -29,7 +29,7 @@ For more information about the experimental APIs available in Microsoft Edge, na
 
 Use the following steps to register for a trial of an experimental API.
 
-1.  Visit the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.
+1.  Visit the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials) page.
 1.  Choose the Register button on any of the available experiments.
 1.  Sign into the Developer Console using your GitHub username and password.
 1.  Choose **Authorize MicrosoftEdge**.
@@ -48,7 +48,7 @@ Use the following steps to register for a trial of an experimental API.
 
 ### Apply your token
 
-A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console][DeveloperMicrsoftEdgeOriginTrials] page.  To begin using the trial on your website, use either of the following methods to apply the token to your page.
+A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials) page.  To begin using the trial on your website, use either of the following methods to apply the token to your page.
 
 *   Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.
 
@@ -83,7 +83,7 @@ To opt out of an experiment, use one of the following methods to remove your tok
 
 ### Detect experimental features and provide a fallback
 
-When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that do not support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available which may result in errors.  To avoid this situation, ensure you detect features available in your browser.  For more information, navigate to [Implementing feature detection][MDNImplementingFeatureDetection].
+When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that do not support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available which may result in errors.  To avoid this situation, ensure you detect features available in your browser.  For more information, navigate to [Implementing feature detection](https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection).
 
 ### Roadmap for Allowed Origins
 
@@ -91,9 +91,3 @@ The Microsoft Edge Origin Trials portal today only supports SSL Enabled Origins,
 
 *   Register `http://localhost` as the origin for your experiments.  To use `http://localhost` today, navigate to `edge://flags` and set the experiment to **Enabled**.
 *   Use extensions with `extensions://` prefixed origins to enroll in experiments.
-
-<!-- links -->
-
-[DeveloperMicrsoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Microsoft Edge Origin Trials Developer Console | Microsoft Docs"
-
-[MDNImplementingFeatureDetection]: https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection "Implementing feature detection | MDN"

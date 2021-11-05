@@ -29,7 +29,7 @@ The `password` input type in Microsoft Edge includes a **password reveal** contr
    :::column-end:::
 :::row-end:::
 
-By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises][DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled] may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
+By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
 
 
 <!-- ====================================================================== -->
@@ -81,7 +81,3 @@ The **password reveal** button is unavailable until the user enters text into th
 If the **password reveal** button is removed, the user must delete the contents of the **password** field before the **password reveal** button displays again. This behavior prevents someone from making a minor adjustment to display the password, should the user step away from an unlocked device.
 
 The **password reveal** button is unavailable if the **password** field autofills using the password manager.
-
-<!-- links -->
-
-[DeployedgeMicrosoftEdgePoliciesPasswordrevealenabled]: /deployedge/microsoft-edge-policies#passwordrevealenabled "PasswordRevealEnabled - Microsoft Edge - Policies | Microsoft Docs"

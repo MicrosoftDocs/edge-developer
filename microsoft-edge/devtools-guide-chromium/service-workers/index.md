@@ -10,12 +10,12 @@ keywords: microsoft edge, web development, f12 tools, devtools, service worker, 
 ---
 # Service Worker improvements
 
-This article teaches you about improvements to developer tools for working with [service workers][MdnServiceWorkerApi] and the network requests that pass through each one.  The **service worker improvements** are in the **Network**, **Application**, and **Sources** tools.  The improvements simplify the following tasks.
+This article teaches you about improvements to developer tools for working with [service workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and the network requests that pass through each one.  The **service worker improvements** are in the **Network**, **Application**, and **Sources** tools.  The improvements simplify the following tasks.
 
 *   Debug based on Service Worker timelines.
     *   The start of a request and duration of the bootstrap.
     *   Update to Service worker registration.
-    *   The runtime of a request using the [fetch event][MdnFetchEvent] handler.
+    *   The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
     *   The runtime of all fetch events for loading a client.
 *   Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.
 *   Step into and out of fetch event handler with [page script information](#sources).
@@ -84,11 +84,4 @@ To find more stack information, set a break point in the fetch handler.  The det
 
 ### Future work
 
-The Microsoft Edge DevTools team plans to further develop the cache detail and are investigating more ways to improve the service worker debugging experience for [Progressive Web Application][MdnProgressiveWebApps] developers.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MdnFetchEvent]: https://developer.mozilla.org/docs/Web/API/FetchEvent "FetchEvent | MDN"
-[MdnProgressiveWebApps]: https://developer.mozilla.org/docs/Web/Progressive_web_apps "Progressive web apps (PWAs) | MDN"
-[MdnServiceWorkerApi]: https://developer.mozilla.org/docs/Web/API/Service_Worker_API "Service Worker API | MDN"
+The Microsoft Edge DevTools team plans to further develop the cache detail and are investigating more ways to improve the service worker debugging experience for [Progressive Web Application](https://developer.mozilla.org/docs/Web/Progressive_web_apps) developers.

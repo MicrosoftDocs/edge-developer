@@ -24,7 +24,7 @@ The goal for this tutorial is to build a Microsoft Edge extension, starting with
 <!-- ====================================================================== -->
 ## Before you begin
 
-To test out the completed extension that you are building in this tutorial, download the [source code][ArchiveExtensionGettingStartedPart1].
+To test out the completed extension that you are building in this tutorial, download the [source code](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1).
 
 
 <!-- ====================================================================== -->
@@ -147,7 +147,7 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
 
 <!-- ====================================================================== -->
 ## Next steps
-That is everything you need to develop a working extension.  Now, continue on to sideload and test your extension. For more information, navigate to [Sideload an extension][TestExtensionSideload].
+That is everything you need to develop a working extension.  Now, continue on to sideload and test your extension. For more information, navigate to [Sideload an extension](./extension-sideloading.md).
 
 <!-- image links -->
 
@@ -157,9 +157,3 @@ That is everything you need to develop a working extension.  Now, continue on to
 <!--[ImagePart1Threedots]: ./media/part1-threedots.png "Choose Extensions"  -->
 <!--[ImagePart1DevelopermodeToggle]: ./media/part1-developermode-toggle.png "Enable Developer Mode"  -->
 <!--[ImagePart1InstalledExtension]: ./media/part1-installed-extension.png "Installed Extensions"  -->
-
-<!-- links -->
-
-[ArchiveExtensionGettingStartedPart1]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1 "Completed extension package source | Microsoft Docs"
-
-[TestExtensionSideload]: ./extension-sideloading.md "Test your extension (Sideloading) | Microsoft Docs"
