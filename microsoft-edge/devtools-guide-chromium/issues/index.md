@@ -35,15 +35,15 @@ The **Issues** tool provides feedback in the following categories:
 *  Other.
 
 Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the **Issues** tool, navigate to:
-*  [axe Tools Overview][DequeAxe]
-*  [browser-compat-data repo][MDNCompat]
-*  [webhint][webhintIo]
+*  [axe Tools Overview](https://www.deque.com/axe)
+*  [browser-compat-data repo](https://github.com/mdn/browser-compat-data)
+*  [webhint](https://webhint.io)
 
 
 <!-- ====================================================================== -->
 ## Opening the Issues tool
 
-1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page][A11ytestingPagewitherrors] in a new tab or window.
+1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
 
 1.  Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
 
@@ -80,7 +80,7 @@ To include issues that are caused by third-party sites, at the top of the **Issu
 
 The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
 
-1.  Open the [demo page][A11ytestingPagewitherrors] in a new window or tab, and then open DevTools.
+1.  Open the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab, and then open DevTools.
 
 1.  Open the **Issues** tool by selecting the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).
 
@@ -124,7 +124,7 @@ If an element has an associated issue, the DOM tree in the **Elements** tool sho
 
 To display an issue for elements with wavy underlines in the DOM tree, perform the following steps.
 
-1.  Open a page, such as the [demo page][A11ytestingPagewitherrors], in a new tab or window.
+1.  Open a page, such as the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
 
 1.  Open DevTools and then select the **Elements** tab.
 
@@ -150,22 +150,8 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-<!-- external links -->
-[A11ytestingPagewitherrors]: https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html "Accessibility-testing demo page | Microsoft Docs"
-[DequeAxe]: https://www.deque.com/axe "axe Tools Overview | Deque"
-[MDNCompat]: https://github.com/mdn/browser-compat-data "MDN Browser Compatibility Data | GitHub"
-[webhintIo]: https://webhint.io "webhint.io"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton][SamDutton] (Developer Advocate).
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[SamDutton]: https://developers.google.com/web/resources/contributors#sam-dutton
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/issues/index) and is authored by [Sam Dutton](https://developers.google.com/web/resources/contributors#sam-dutton) (Developer Advocate).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

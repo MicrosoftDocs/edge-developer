@@ -40,9 +40,9 @@ DevTools opens, with the **Elements** tool selected.
 
 There are two main ways to interact with DevTools.
 *   Use the mouse.
-*   Keyboard shortcuts.  These provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  See [Microsoft Edge DevTools keyboard shortcuts][DevtoolsGuideShortcutsIndex].
+*   Keyboard shortcuts.  These provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  See [Keyboard shortcuts](./shortcuts/index.md).
 
-See also [Open Microsoft Edge DevTools][DevtoolsGuideOpenIndex] - how to open the different features in DevTools.
+See also [Open Microsoft Edge DevTools](./open/index.md) - how to open the different features in DevTools.
 
 
 <!-- ====================================================================== -->
@@ -129,8 +129,8 @@ There are two toolbars: the main toolbar at the top of DevTools, and the **Drawe
 Next, the following tools are always present on the toolbar and cannot be closed:
 *  **Elements**.  Allows you to edit or inspect HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
 *  [Console](console/index.md).  Allows you to display and filter log messages.  Log messages are automated logs of the browser like network requests and developer-generated logs.  You can also run JavaScript directly in the **Console** in the context of the current window or frame.
-*  [Sources][DevtoolsGuideSourcesIndex].  A code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
-*  [Network][DevtoolsGuideNetworkIndex].  Allows you to monitor and inspect requests or responses from the network and browser cache.  You can filter requests and responses to fit your needs and simulate different network conditions.
+*  [Sources](./sources/index.md).  A code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
+*  [Network](./network/index.md).  Allows you to monitor and inspect requests or responses from the network and browser cache.  You can filter requests and responses to fit your needs and simulate different network conditions.
 
 Finally, these more specialized tools (tabs) are on the toolbar by default:
 * **Performance**
@@ -163,7 +163,7 @@ The main toolbar in DevTools has the following sections:
 
 *   The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and the content of a tool can change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** (`>>`) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (`+`) button.  Each tool is introduced below.
 
-*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** (**JavaScript Errors**) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console](console/index.md) and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** (**Issues**) button is a blue message icon followed by the number of issues.  To open the [Issues][DevtoolsGuideIssuesIndex] tool, select the **Issues** button.
+*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** (**JavaScript Errors**) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console](console/index.md) and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** (**Issues**) button is a blue message icon followed by the number of issues.  To open the [Issues](./issues/index.md) tool, select the **Issues** button.
 
 *   The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, select the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.
 
@@ -211,7 +211,7 @@ In the **Preferences** section, you can change several parts of DevTools.  For e
 :::image type="content" source="media/devtools-intro-all-settings.msft.png" alt-text="Screenshot of all the settings in DevTools.":::
 
 You can also change the settings of advanced features, such as:
-*   [Workspaces][DevtoolsGuideWorkspacesIndex].
+*   [Workspaces](./workspaces/index.md).
 *   Filter library code with the **Ignore List**.
 *   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices in Microsoft Edge DevTools](device-mode/index.md).
 *   Select a network **Throttling** profile.
@@ -226,7 +226,7 @@ You can also change the settings of advanced features, such as:
 
 The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features](experimental-features/index.md), in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
 
-To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102Devtools], download [Microsoft Edge Canary][MicrosoftedgeinsiderDownload], which builds nightly.
+To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools.md), download [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/download), which builds nightly.
 
 
 <!-- ====================================================================== -->
@@ -235,35 +235,15 @@ To preview the [latest features coming to DevTools][DevtoolsGuideWhatsNew202102D
 *   [DevTools for beginners: Get Started with HTML and the DOM](beginners/html.md)
 *   [Inspect and change the current webpage](dom/index.md)
 *   [Emulate how your product behaves on different devices](device-mode/index.md)
-*   [Inspect, tweak, and change the styles of elements][DevtoolsGuideInspectStylesEditFonts]
-*   [Debug your JavaScript][DevtoolsGuideJavascriptIndex]
+*   [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
+*   [Debug your JavaScript](./javascript/index.md)
 *   [Live console](console/index.md)
-*   [Accessibility, performance, compatibility, and security issues][DevtoolsGuideIssuesIndex]
-*   [Inspect the network traffic][DevtoolsGuideNetworkIndex]
-*   [Inspect where the browser stored content][DevtoolsGuideStorageSessionstorage]
+*   [Accessibility, performance, compatibility, and security issues](./issues/index.md)
+*   [Inspect the network traffic](./network/index.md)
+*   [Inspect where the browser stored content](./storage/sessionstorage.md)
 *   [Evaluate the performance](evaluate-performance/index.md)
 *   [Memory problems](memory-problems/index.md)
-*   [Rendering issues][DevtoolsGuideRenderingToolsIndex]
-*   [Use a development environment][DevtoolsGuideSourcesIndex]
-*   [Sync changes in DevTools with the file system][DevtoolsGuideWorkspacesIndex]
-*   [Override files from the web][DevtoolsGuideJavascriptOverrides]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsGuideInspectStylesEditFonts]: ./inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane | Microsoft Docs"
-[DevtoolsGuideIssuesIndex]: ./issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevtoolsGuideJavascriptIndex]: ./javascript/index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideJavascriptOverrides]: ./javascript/overrides.md "Override webpage resources with local copies using Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideNetworkIndex]: ./network/index.md "Inspect network activity in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideOpenIndex]: ./open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideRenderingToolsIndex]: ./rendering-tools/index.md "Analyze runtime performance | Microsoft Docs"
-[DevtoolsGuideShortcutsIndex]: ./shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
-[DevtoolsGuideSourcesIndex]: ./sources/index.md "Sources tool overview | Microsoft Docs"
-[DevtoolsGuideStorageSessionstorage]: ./storage/sessionstorage.md "View and edit session storage with Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsGuideWhatsNew202102Devtools]: ./whats-new/2021/02/devtools.md "What's New In DevTools (Microsoft Edge 90) | Microsoft Docs"
-[DevtoolsGuideWorkspacesIndex]: ./workspaces/index.md "Edit files with Workspaces | Microsoft Docs"
-<!-- external links -->
-[MicrosoftEdgeAddonsExtensions]: https://microsoftedge.microsoft.com/addons/category/Edge-Extensions "Microsoft Edge Add-ons"
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-[GoogleChromeWebstoreExtensions]: https://chrome.google.com/webstore/category/extensions "Extensions | Chrome Web Store"
+*   [Rendering issues](./rendering-tools/index.md)
+*   [Use a development environment](./sources/index.md)
+*   [Sync changes in DevTools with the file system](./workspaces/index.md)
+*   [Override files from the web](./javascript/overrides.md)

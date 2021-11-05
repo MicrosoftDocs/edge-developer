@@ -11,7 +11,7 @@ keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, C
 ---
 # Get started with WebView2 in WinForms apps
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information on individual APIs, navigate to [API reference][DotnetApiMicrosoftWebWebview2Winforms].
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2).  For more information on individual APIs, navigate to [API reference](/dotnet/api/microsoft.web.webview2.winforms).
 
 
 <!-- ====================================================================== -->
@@ -19,12 +19,12 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Install the following list of prerequisites before proceeding.
 
-*   [WebView2 Runtime][MicrosoftDeveloperMicrosoftEdgeWebview2] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7).
+*   [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on supported OS (currently Windows 10, Windows 8.1, and Windows 7).
 
     > [!NOTE]
     > The WebView2 team recommends using the Canary channel and the minimum required version is 82.0.488.0.
 
-*   [Visual Studio][MicrosoftVisualstudioMain] 2017 or later.
+*   [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.
 
 
 <!-- ====================================================================== -->
@@ -116,14 +116,14 @@ Add a WebView to your app.
 
 1. Select **F5** to build and run your project.
 
-    Make sure the WebView2 control displays [https://www.microsoft.com][MicrosoftMain].
+    Make sure the WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
     :::image type="complex" source="./media/winforms-hello-webview.png" alt-text="hello webview" lightbox="./media/winforms-hello-webview.png":::
        hello webview
     :::image-end:::
 
     > [!NOTE]
-    > If you are working on a high-resolution monitor, you may have to [configure your Windows Forms app for high DPI support][DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport].
+    > If you are working on a high-resolution monitor, you may have to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 
 <!-- ====================================================================== -->
@@ -241,7 +241,7 @@ During webpage navigation, the WebView2 control raises events.  The app that hos
 *   `HistoryChanged`
 *   `NavigationCompleted`
 
-For more information, navigate to [Navigation Events][Webview2ConceptsNavigationEvents].
+For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
 :::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events":::
    Navigation events
@@ -292,7 +292,7 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 *   Run it after the creation of the global object.
 *   Run it before any other script included in the HTML document is run.
 
-As an example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync][DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync] method.
+As an example, add scripts that send an alert when a user navigates to non-HTTPS sites.  Modify the `EnsureHttps` function to inject a script into the web content that uses [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync) method.
 
 ```csharp
 void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -325,7 +325,7 @@ The communication mechanism passes messages from web content to the host using n
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.
 
-1.  In the `Form1.cs` file, update your constructor and create an `InitializeAsync` function to match the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async][DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async] because the initialization of `CoreWebView2` is asynchronous.
+1.  In the `Form1.cs` file, update your constructor and create an `InitializeAsync` function to match the following code snippet.  The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.
 
     ```csharp
     public Form1()
@@ -388,31 +388,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 development best practices][WV2BestPractices]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samplesMain] - A comprehensive example of WebView2 capabilities.
-*  [See also][Webview2IndexNextSteps] - Conceptual and how-to articles about building and deploying WebView2 apps.
-*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WinformsWebview2]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events | Microsoft Docs"
-<!-- external links -->
-[DotnetApiMicrosoftWebWebview2Winforms]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
-[DotnetApiMicrosoftWebWebview2WinformsWebview2]: /dotnet/api/microsoft.web.webview2.winforms.webview2 "WebView2 Class | Microsoft Docs"
-[DotnetApiMicrosoftWebWebview2WinformsWebview2Ensurecorewebview2async]: /dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async "WebView2.EnsureCoreWebView2Async(CoreWebView2Environment) Method | Microsoft Docs"
-[DotnetApiMicrosoftWebWebview2WinformsWebview2Executescriptasync]: /dotnet/api/microsoft.web.webview2.winforms.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method | Microsoft Docs"
-
-[DotnetFrameworkWinformsHighDpiSupportWindowsFormsConfiguringYourWindowsFormsAppForHighDpiSupport]: /dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support "Configuring your Windows Forms app for high DPI support - High DPI support in Windows Forms | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
-
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"
-
-[MicrosoftMain]: https://www.microsoft.com "Microsoft"
-
-[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"
+*  [WebView2 development best practices](../concepts/developer-guide.md)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - A comprehensive example of WebView2 capabilities.
+*  [See also](../index.md#see-also) - Conceptual and how-to articles about building and deploying WebView2 apps.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2)

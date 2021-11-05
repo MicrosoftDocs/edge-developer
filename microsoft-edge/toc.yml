@@ -78,7 +78,7 @@
                 - name: Get started with remote debugging Android WebViews
                   href: devtools-guide-chromium/remote-debugging/webviews.md
 # =============================================================================
-        - name: Features
+        - name: How to
           items:
             - name: Accessibility
               items:
@@ -213,6 +213,8 @@
                   href: devtools-guide-chromium/storage/sessionstorage.md
                 - name: WebSQL
                   href: devtools-guide-chromium/storage/websql.md
+            - name: Changes
+              href: devtools-guide-chromium/changes/changes-tool.md
             - name: Console
               items:
                 - name: Console overview
@@ -275,6 +277,8 @@
                   href: devtools-guide-chromium/rendering-tools/index.md
                 - name: Timeline events mode
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+            - name: Performance monitor
+              href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
             - name: Remote devices
               href: devtools-guide-chromium/remote-debugging/local-server.md
             - name: Rendering
@@ -285,6 +289,8 @@
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                 - name: Simulate reduced motion
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+            - name: Search
+              href: devtools-guide-chromium/search/search-tool.md
             - name: Security
               href: devtools-guide-chromium/security/index.md
             - name: Sources

@@ -71,7 +71,7 @@ Below is a manifest file that uses these manifest members:
 }
 ```
 
-To learn more about manifest members, see the [Web app manifests documentation][MDNWebAppManifests] at MDN.
+To learn more about manifest members, see the [Web app manifests documentation](https://developer.mozilla.org/docs/Web/Manifest) at MDN.
 
 Using a manifest also enables you to unlock powerful features that allow your app to behave like native apps, such as adding app shortcuts, or identifying as a share target.
 
@@ -132,11 +132,4 @@ To learn more about using the Share Target feature, see [Share with other apps](
 <!-- ====================================================================== -->
 ## See also
 
-*  [Getting Started with Progressive Web Apps (Workshop)][AaronPWAWorkshop].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-[MDNWebAppManifests]: https://developer.mozilla.org/docs/Web/Manifest "Web app manifests | MDN"
-[AaronPWAWorkshop]: https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop "Getting Started with Progressive Web Apps [Workshop]"
+*  [Getting Started with Progressive Web Apps (Workshop)](https://noti.st/aarongustafson/co3b5z/getting-started-with-progressive-web-apps-workshop).

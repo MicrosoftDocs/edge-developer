@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Search the web for your **Console** errors, from within DevTools.  In the **Console**, many errors now have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error.
 
-For more information, navigate to [Look up error messages on the web from the Console][LookupErrorsWebFromConsole].
+For more information, navigate to [Look up error messages on the web from the Console](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console).
 
 :::image type="complex" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error in the **Console**" lightbox="../../media/2021/09/search-console-icon.msft.png":::
    The **Search for this message on the Web** button on an error in the **Console**
@@ -31,8 +31,8 @@ For more information, navigate to [Look up error messages on the web from the Co
 <!-- ====================================================================== -->
 ## DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links
 
-<!-- Title: Edge DevTools for VS Code now supports themes and uses the most recent codebase -->
-<!-- Subtitle: The Edge DevTools extension for VS Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
+<!-- Title: Microsoft Edge DevTools for Visual Studio Code now supports themes and uses the most recent codebase -->
+<!-- Subtitle: The Microsoft Edge DevTools extension for Visual Studio Code now uses the same version of the Developer Tools as your Microsoft Edge browser. We also added ways to learn more and for you to tell us what we could do better from within Visual Studio Code. -->
 
 In the latest version of the Microsoft Edge DevTools extension for Visual Studio Code, we released the following updates or new features.
 *  Shares the same codebase that's used for the browser-based DevTools.
@@ -41,7 +41,7 @@ In the latest version of the Microsoft Edge DevTools extension for Visual Studio
 *  Adds a **Close instance** (`X`) button in the **Microsoft Edge Tools** > **Targets** pane, to close the browser that was opened by the extension.
 *  Adds support for JavaScript Debugger connections to remote workspaces.
 
-For more information, navigate to [Microsoft Edge DevTools extension for Visual Studio Code][EdgeDevToolsExtensionForVSCode].
+For more information, navigate to [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 :::image type="complex" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new Helpful Links sidebar" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
    The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new **Helpful Links** sidebar
@@ -60,11 +60,11 @@ Light themes from Visual Studio Code are also supported.
 <!-- Title: Breakpoint icons are now displayed when using themes from Visual Studio Code -->
 <!-- Subtitle: Setting, removing, and viewing breakpoints is now easier in Microsoft Edge. -->
 
-In Microsoft Edge version 93, you can apply themes used in Visual Studio Code to the DevTools extension.  For more information on this feature, navigate to [Apply color themes to DevTools][ApplyColorThemesToDevTools].
+In Microsoft Edge version 93, you can apply themes used in Visual Studio Code to the DevTools extension.  For more information on this feature, navigate to [Apply color themes to DevTools](../../../customize/theme.md).
 
 Previously, when using a theme from Visual Studio Code in DevTools, breakpoint icons on the left margin of the code in the **Sources** tool weren't displayed.  Starting in Microsoft Edge 94, breakpoint icons are now displayed as expected.
 
-To learn more about using breakpoints for debugging JavaScript code, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools][PauseCodeWithBreakpoints].
+To learn more about using breakpoints for debugging JavaScript code, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools](../../../javascript/breakpoints.md).
 
 :::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="Breakpoint icons are now displayed when using Visual Studio Code themes" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
    Breakpoint icons are now displayed when using Visual Studio Code themes
@@ -81,7 +81,7 @@ Previously, you couldn't navigate to the **More Tools** (`+`) button in DevTools
 
 Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
 
-To learn more about how to navigate the DevTools with the keyboard, navigate to [Microsoft Edge DevTools keyboard shortcuts][DevToolsKeyboardShortcuts].
+To learn more about how to navigate the DevTools with the keyboard, navigate to [Microsoft Edge DevTools keyboard shortcuts](../../../shortcuts/index.md).
 
 :::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="Using the arrow keys to put focus on the **More tabs** or **More Tools** button" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
    Using the arrow keys to put focus on the **More tabs** or **More Tools** button
@@ -91,32 +91,13 @@ To learn more about how to navigate the DevTools with the keyboard, navigate to 
 <!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels][MicrosoftEdgePreviewChannels] as your default development browser.  The preview channels give you access to the latest DevTools features.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[EdgeDevToolsExtensionForVSCode]: ../../../../visual-studio-code/microsoft-edge-devtools-extension.md "Microsoft Edge DevTools extension for Visual Studio Code | Microsoft Docs"
-[LookupErrorsWebFromConsole]: ../../../console/index.md#look-up-error-messages-on-the-web-from-the-console "Look up error messages on the web from the Console - Use the Console | Microsoft Docs"
-[DevToolsKeyboardShortcuts]: ../../../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
-[ApplyColorThemesToDevTools]: ../../../customize/theme.md "Apply color themes to DevTools | Microsoft Docs"
-[PauseCodeWithBreakpoints]: ../../../javascript/breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-
-<!-- external links -->
-[MicrosoftEdgePreviewChannels]: https://www.microsoftedgeinsider.com/download "Microsoft Edge Preview Channels"
-
-[VisualstudioMarketplaceMsEdgedevtoolsVscodeEdgeDevtools]: https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools "Microsoft Edge Developer Tools for Visual Studio Code | Visual Studio Marketplace"
+If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-94) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-94) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelynyeen
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
