@@ -252,5 +252,5 @@ If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you c
 
 | Value | Description |
 |---|---|
-| `1` | Reverses the search order, to use [preview channels](https://www.microsoftedgeinsider.com/download) first. |
-| `0` or another value other than `1` | Uses the default search order. |
+| `1` | Reverses the search order, to use [preview channels](https://www.microsoftedgeinsider.com/download) first, before the WebView2 Runtime. |
+| `0` or another value other than `1` | Uses the [default channel-search order](#default-channel-search order), which is to use the WebView2 Runtime before the preview channels. |
