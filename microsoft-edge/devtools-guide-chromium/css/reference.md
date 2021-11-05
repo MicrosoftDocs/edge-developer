@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
-To learn the basics, see [Get Started with Viewing and Changing CSS](../css/index.md).
+To learn the basics, see [Get started with viewing and changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->
@@ -56,8 +56,6 @@ In the **Styles** pane, click the link next to a CSS rule to open the external s
 If the stylesheet is minified, click the **Format** (![Format](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
 In the following figure, after you click `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.
-
-<!--todo:  replace "Master" phrasing in code snippet, if possible.  -->
 
 :::image type="content" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Viewing the stylesheet where a rule is defined." lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
 
@@ -134,17 +132,16 @@ The following figure shows toggling the `:hover` pseudo-class.  In the viewport,
 
 :::image type="content" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Toggle the :hover pseudo-class." lightbox="../media/css-elements-styles-hov-hover.msft.png":::
 
-See [Add a pseudostate to a class](../css/index.md#add-a-pseudostate-to-a-class) for an interactive tutorial.
+For an interactive tutorial, see [Add a pseudostate to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
 
 <!-- ====================================================================== -->
 ## View a page in print mode
 
 To view a page in print mode:
-
 1.  Open the [Command Menu](../command-menu/index.md).
 1.  Start typing `Rendering` and then select **Show Rendering**.
-1.  For the **Emulate CSS Media** dropdown, select **print**.
+1.  Click the **Emulate CSS Media** dropdown, and then select **print**.
 
 
 <!-- ====================================================================== -->
@@ -152,9 +149,8 @@ To view a page in print mode:
 
 The **Coverage** tool shows you what CSS a page actually uses.
 
-1.  [Open the Command Menu](../command-menu/index.md) by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), while DevTools has focus.
-
-1.  Start typing `coverage` and select **Show Coverage**.  The **Coverage** tab appears.
+1.  Open the [Command Menu](../command-menu/index.md) by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), while DevTools has focus.
+1.  Start typing `coverage` and choose **Show Coverage**.  The **Coverage** tool appears.
 
     Opening the Coverage tab from the Command Menu:
 
@@ -172,7 +168,7 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
 1.  To display a line-by-line breakdown of what CSS is used, click a CSS file.
 
-    In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used.
+    In the following figure, lines 145 to 147 and 149 to 151 of `b66bc881.site-ltr.css` are unused, whereas lines 163 to 166 are used:
 
     :::image type="content" source="../media/css-sources-css-coverage.msft.png" alt-text="A line-by-line breakdown of used and unused CSS." lightbox="../media/css-sources-css-coverage.msft.png":::
 
@@ -195,9 +191,9 @@ The order of declarations affects how an element is styled, use the following li
 *   [Add a inline declaration](#add-an-inline-declaration).  Equivalent to adding a `style` attribute to the HTML of an element.
 *   [Add a declaration to a style rule](#add-a-declaration-to-a-style-rule).
 
-**What workflow should you use?**  For most scenarios, you probably want to use the inline declaration workflow.  Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.  See [Selector Types](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types) for more on specificity.
+**What workflow should you use?**  For most scenarios, you probably want to use the inline declaration workflow.  Inline declarations have higher specificity than external ones, so the inline workflow ensures that the changes take effect in your expected element.  For more information about specificity, see [Selector Types](https://developer.mozilla.org/docs/Web/CSS/Specificity#Selector_Types).
 
-If you're an element's styles and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.
+If you're debugging an element's styles and you need to specifically test what happens when a declaration is defined in different places, use the other workflow.
 
 ### Add an inline declaration
 
@@ -399,6 +395,7 @@ The **Color Picker** provides a GUI for changing `color` and `background-color` 
 To open the **Color Picker**:
 
 1.  [Select an element](#select-an-element).
+
 1.  In the **Styles** panel, find the `color`, `background-color`, or similar declaration that you want to change.  To the left of the `color`, `background-color`, or similar value, there is a small square, which is a preview of the color.
 
     In the following figure, the small square to the left of `rgba(0, 0, 0, 0.7)` is a preview of that color.

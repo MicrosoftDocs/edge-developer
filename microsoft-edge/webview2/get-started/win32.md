@@ -11,10 +11,10 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Get started with WebView2 in Win32 apps
 
-In this article, get started creating your first WebView2 app and learn about the main features of [WebView2][MicrosoftDeveloperMicrosoftEdgeWebview2].  For more information about individual WebView2 APIs, navigate to [API reference][Webview2ReferenceWin32].
+In this article, get started creating your first WebView2 app and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2).  For more information about individual WebView2 APIs, navigate to [API reference](/microsoft-edge/webview2/reference/win32).
 
 > [!NOTE]
-> This tutorial refers to WebView2 samples. To view or copy sample code, navigate to [WebView2 Sample Code][GithubMicrosoftedgeWebview2samplesMain].
+> This tutorial refers to WebView2 samples. To view or copy sample code, navigate to [WebView2 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples).
 
 
 <!-- ====================================================================== -->
@@ -22,9 +22,9 @@ In this article, get started creating your first WebView2 app and learn about th
 
 Ensure you install the following list of prerequisites before proceeding.
 
-*   [WebView2 Runtime][Webview2Installer] or any [Microsoft Edge Insider (preview) Channel][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary) installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
+*   [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on a supported OS (currently Windows 10, Windows 8.1, and Windows 7).
 
-*   [Visual Studio][MicrosoftVisualstudioMain] 2015 or later with C++ support installed.
+*   [Visual Studio](https://visualstudio.microsoft.com) 2015 or later with C++ support installed.
 
 
 <!-- ====================================================================== -->
@@ -33,7 +33,7 @@ Ensure you install the following list of prerequisites before proceeding.
 Start with a basic desktop project that contains a single main window.
 
 > [!IMPORTANT]
-> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)][CppWindowsWalkthroughCreatingDesktopApplication] for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples][GithubMicrosoftedgeWebview2samplesGettingStartedGuide].
+> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true) for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide).
 
 1.  In Visual Studio, open `WebView2GettingStarted.sln`.
     If you use an older version of Visual Studio, hover on the **WebView2GettingStarted** project, open the contextual menu (right-click), and choose **Properties**.  Under **Configuration Properties** > **General**, modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset available to you.
@@ -61,7 +61,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
     1.  In the right-hand side window, choose **Install**.  NuGet downloads the library to your machine.
 
         > [!NOTE]
-        > The [Windows Implementation Library][GithubMicrosoftWilMain] and [Windows Runtime C++ Template Library][CppCxWrlTemplateLibraryVS2019] are optional and make working with COM easier for the example.
+        > The [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) are optional and make working with COM easier for the example.
 
         :::image type="complex" source="../media/wil.png" alt-text="Windows Implementation Library" lightbox="../media/wil.png":::
            Windows Implementation Library
@@ -168,9 +168,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 To build and run the app, select `F5`.  Now you have a WebView window displaying the Bing page.
 
-:::image type="complex" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
-   Bing window
-:::image-end:::
+:::image type="content" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
 
 
 <!-- ====================================================================== -->
@@ -184,11 +182,9 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 1.  `HistoryChanged`
 1.  `NavigationCompleted`
 
-For more information, see [Navigation events for WebView2][Webview2ConceptsNavigationEvents].
+For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
-:::image type="complex" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
-   Navigation events
-:::image-end:::
+:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
 
 In error cases, one or more of the following events may occur depending on whether the navigation continued to an error webpage.
 
@@ -300,39 +296,8 @@ Congratulations, you built your first WebView2 app!
 
 For additional WebView2 functionality that isn't covered in this article, see the following resources.
 
-*  [MicrosoftEdge/WebView2Samples repo][Win32GithubCode] - the code used in this tutorial.
-*  [WebView2 development best practices][WV2BestPractices]
-*  [WebView2 API Sample][GithubMicrosoftedgeWebview2samplesApisample] - a comprehensive example of WebView2 capabilities.
-*  [WebView2Browser][GithubMicrosoftedgeWebview2browser] - a WebView2 sample app.
-*  [WebView2 API reference][Webview2ReferenceWin32]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[WV2BestPractices]: ../concepts/developer-guide.md "WebView2 development best practices | Microsoft Docs"
-[MicrosoftDeveloperMicrosoftEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2 " WebView2 | Microsoft Edge Developer"
-
-[Webview2ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"
-[Webview2ConceptsNavigationEvents]: ../concepts/navigation-events.md "Navigation events for WebView2 | Microsoft Docs"
-
-[CppCxWrlTemplateLibraryVS2019]: /cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true "Windows Runtime C++ Template Library (WRL) | Microsoft Docs"
-[CppWindowsWalkthroughCreatingDesktopApplication]: /cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019&preserve-view=true "Walkthrough: Create a traditional Windows Desktop application (C++) | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2browser]: https://github.com/MicrosoftEdge/WebView2Browser "WebView2Browser - MicrosoftEdge/WebView2Browser | GitHub"
-
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"
-
-[GithubMicrosoftedgeWebview2samplesMain]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
-
-[GithubMicrosoftedgeWebview2samplesApisample]: https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md "WebView2 API Sample - MicrosoftEdge/WebView2Samples | GitHub"
-[GithubMicrosoftedgeWebview2samplesGettingStartedGuide]: https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
-
-[GithubMicrosoftWilMain]: https://github.com/Microsoft/wil "Windows Implementation Libraries (WIL) - microsoft/wil | GitHub"
-
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-
-[MicrosoftVisualstudioMain]: https://visualstudio.microsoft.com "Visual Studio"
-
-[Webview2Installer]: https://developer.microsoft.com/microsoft-edge/webview2 "WebView2 Installer"
-
-[Win32GithubCode]:https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted "Win32 WebView2 Getting Started Guide code"
+*  [MicrosoftEdge/WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
+*  [WebView2 development best practices](../concepts/developer-guide.md)
+*  [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
+*  [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
+*  [WebView2 API reference](/microsoft-edge/webview2/reference/win32)

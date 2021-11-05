@@ -10,14 +10,14 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studi
 ---
 # Visual Studio for web development
 
-Microsoft [Visual Studio][MicrosoftVisualstudioVs] is an integrated development environment (IDE).   Use it to edit, debug, build, and publish your web apps.  It is a feature-rich program that can be used for many aspects of your web development.  Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.
+Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs) is an integrated development environment (IDE).   Use it to edit, debug, build, and publish your web apps.  It is a feature-rich program that can be used for many aspects of your web development.  Over and above the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process.
 
 *   Compilers
 *   Code completion tools
 *   Graphical designers
 *   Many more
 
-If you are not already using Visual Studio, navigate to [Download Visual Studio][MicrosoftVisualstudioDownloads] to download it.
+If you are not already using Visual Studio, navigate to [Download Visual Studio](https://visualstudio.microsoft.com/downloads) to download it.
 
 Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP.NET Framework and ASP.NET Core apps.  Complete the following steps to use Visual Studio to debug Microsoft Edge.
 
@@ -61,7 +61,7 @@ With the project created, use Visual Studio to debug JavaScript.
        Turn on script debugging in Visual Studio
     :::image-end:::
 
-1.  In the same dropdown, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you are not already using one of the Microsoft Edge preview channels, navigate to [Download Microsoft Edge Insider Channels][MicrosoftedgeinsiderDownload] to download one.
+1.  In the same dropdown, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you are not already using one of the Microsoft Edge preview channels, navigate to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) to download one.
 
     :::image type="complex" source="./media/set-web-browser.png" alt-text="Select the preview channel of Microsoft Edge that you want Visual Studio to launch" lightbox="./media/set-web-browser.png":::
        Select the preview channel of Microsoft Edge that you want Visual Studio to launch
@@ -97,7 +97,7 @@ Switch back to Visual Studio to set a breakpoint.
        Visual Studio pauses JavaScript running in Microsoft Edge
     :::image-end:::
 
-The example was just a minor demonstration of the functionality available in Visual Studio.  For more information about the functionality in Visual Studio 2019, navigate to [Visual Studio documentation][VisualStudioWindowsIndex].
+The example was just a minor demonstration of the functionality available in Visual Studio.  For more information about the functionality in Visual Studio 2019, navigate to [Visual Studio documentation](/visualstudio/windows/index).
 
 
 <!-- ====================================================================== -->
@@ -139,19 +139,6 @@ The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the
 <!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Visual Studio team
 
-The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio, or tweet [@VisualStudio and @EdgeDevTools][TwitterIntentTweetViualstudioEdgdevtools].
+The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio, or tweet [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).
 
 :::image type="content" source="./media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="./media/feedback-icon.png":::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-[VisualStudioWindowsIndex]: /visualstudio/windows/index "Visual Studio documentation | Microsoft Docs"
-
-[MicrosoftVisualstudioDownloads]: https://visualstudio.microsoft.com/downloads "Download Visual Studio"
-[MicrosoftVisualstudioVs]: https://visualstudio.microsoft.com/vs "Visual Studio IDE"
-
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-
-[TwitterIntentTweetViualstudioEdgdevtools]: https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools "Tweet to @VisualStudio and @EdgeDevTools | Twitter"

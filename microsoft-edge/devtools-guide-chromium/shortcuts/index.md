@@ -65,7 +65,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |
 | Zoom out | `Control`+`-` | `Command`+`-` |
 | Restore default zoom level | `Control`+`0` | `Command`+`0` |
-| Run snippet | press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press `Enter` | press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press `Enter` |
+| Run snippet | Press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press `Enter` | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press `Enter` |
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->
@@ -118,9 +118,9 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Save changes to local modifications | `Control`+`S` | `Command`+`S` |
 | Save all changes | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | Navigate to line | `Control`+`G` | `Control`+`G` |
-| Jump to a line number of the currently open file | press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press `Enter` | press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press `Enter` |
-| Jump to a column of the currently open file (for example line 5, column 9) | press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press `Enter` | press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press `Enter` |
-| Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | press `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
+| Jump to a line number of the currently open file | Press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press `Enter` | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press `Enter` |
+| Jump to a column of the currently open file (for example line 5, column 9) | Press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press `Enter` | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press `Enter` |
+| Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Press `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
 | Close the active tab | `Alt`+`W` | `Option`+`W` |
 
 ### Code Editor keyboard shortcuts

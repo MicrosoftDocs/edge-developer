@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Override webpage resources with local copies using Microsoft Edge DevTools
 
-Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You may debug and fix all kind of problems in DevTools.  But the changes do not persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources][DevToolsSourcesTool] tool helps you solve this problem.
+Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You may debug and fix all kind of problems in DevTools.  But the changes do not persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources](../sources/index.md) tool helps you solve this problem.
 
 You may now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server.  Instead the browser replaces it with your local copy of the resource.
 
@@ -118,8 +118,3 @@ The file is stored in your overrides folder.  Verify that DevTools create a fold
 ## Two-way interaction of overrides
 
 Use the editor provided with the **Sources** tool of DevTools or any editor you want to change the files.  Changes are synced across all the products that access the files in the overrides folder.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsSourcesTool]: ../sources/index.md "Sources tool overview | Microsoft Docs"
