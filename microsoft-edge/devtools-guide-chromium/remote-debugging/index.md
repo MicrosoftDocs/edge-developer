@@ -37,7 +37,7 @@ Remote debug live content on an Android device from your Windows or macOS comput
 
 > [!NOTE]
 > Remote debugging the Microsoft Edge app on iOS devices is not currently supported.  The following guide is specifically focused on remote debugging Microsoft Edge on Android devices.
-> If you have a macOS device, follow the [Brightcove Debugging guide][BrightcoveSupportDebuggingMobileDevices] to remotely debug Microsoft Edge on an iOS device using Safari.  For more information about the Web Inspector tool in Safari, navigate to [Safari Web Development Tools][AppleDeveloperSafariTools].
+> If you have a macOS device, follow the [Brightcove Debugging guide](https://general.support.brightcove.com/developer/debugging-mobile-devices.html) to remotely debug Microsoft Edge on an iOS device using Safari.  For more information about the Web Inspector tool in Safari, navigate to [Safari Web Development Tools](https://developer.apple.com/safari/tools).
 
 
 <!-- ====================================================================== -->
@@ -45,7 +45,7 @@ Remote debug live content on an Android device from your Windows or macOS comput
 
 The workflow below works for most users.  For more help, navigate to [Troubleshooting: DevTools is not detecting the Android device](#troubleshooting-devtools-is-not-detecting-the-android-device) section.
 
-1.  Open the **Developer Options** screen on your Android.  For more information, navigate to [Configure On-Device Developer Options][AndroidDeveloperStudioDevOptions].
+1.  Open the **Developer Options** screen on your Android.  For more information, navigate to [Configure On-Device Developer Options](https://developer.android.com/studio/debug/dev-options).
 1.  Choose **Enable USB Debugging**.
 1.  On your development machine, open Microsoft Edge.
 1.  Navigate to the `edge://inspect` page in Microsoft Edge.
@@ -78,8 +78,8 @@ Use the following tips to help you troubleshoot the correct settings for your ha
 
 Use the following tips to help you verify that your software is set up correctly.
 
-*   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, navigate to [Install OEM USB Drivers][AndroidDeveloperToolsOemUsb].
-*   Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, navigate to [DevTools Devices does not detect device when plugged in][Stackoverflow21925992].
+*   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, navigate to [Install OEM USB Drivers](https://developer.android.com/tools/extras/oem-usb.html).
+*   Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, navigate to [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992).
 
 Use the following tips to help you troubleshoot if the **Allow USB Debugging** prompt is not displayed on your Android device.
 
@@ -89,10 +89,10 @@ Use the following tips to help you troubleshoot if the **Allow USB Debugging** p
     > The prompt is displayed if your Android or development machine screens are locked.
 
 *   Updating the display settings for your Android device and development machine so that each never goes to sleep.
-*   Setting the USB mode for Android to PTP.  For more information, navigate to [Galaxy S4 does not show Authorize USB debugging dialog box][StackexchangeAndroid101933].
+*   Setting the USB mode for Android to PTP.  For more information, navigate to [Galaxy S4 does not show Authorize USB debugging dialog box](https://android.stackexchange.com/questions/101933).
 *   Choose **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.
 
-If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in][Stackoverflow21925992] on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
+If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992) on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
 
 
 <!-- ====================================================================== -->
@@ -148,31 +148,13 @@ You are able to interact with the screencast in the following ways.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-<!-- external links -->
-[AndroidDeveloperStudioDevOptions]: https://developer.android.com/studio/debug/dev-options "Configure on-device developer options | Android Developer"
-[AndroidDeveloperToolsOemUsb]: https://developer.android.com/tools/extras/oem-usb.html "Install OEM USB drivers | Android Developers"
-
-[AppleDeveloperSafariTools]: https://developer.apple.com/safari/tools "Safari Web Development Tools | Apple Developer"
-
-[BrightcoveSupportDebuggingMobileDevices]: https://general.support.brightcove.com/developer/debugging-mobile-devices.html "Debugging on Mobile Devices | Brightcove Support"
-
 <!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->
-
-[StackexchangeAndroid101933]: https://android.stackexchange.com/questions/101933 "adb - Android Enthusiast Stack Exchange"
-
-[Stackoverflow21925992]: https://stackoverflow.com/questions/21925992 "DevTools Devices does not detect device when plugged in - Stack Overflow"
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -35,9 +35,9 @@ To open DevTools, use either of the following options.
     *  Choose the **Settings and more** (`...`) icon >  **More Tools** >  **Developer Tools**.
 
 *   Use the keyboard.
-    *   Select `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+    *   Press `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-See [Keyboard shortcuts][DevtoolsShortcutsIndex].
+See [Keyboard shortcuts](../shortcuts/index.md).
 
 :::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    Open DevTools from the Microsoft Edge main menu
@@ -49,25 +49,25 @@ See [Keyboard shortcuts][DevtoolsShortcutsIndex].
 
 To inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
 *   Right-click the element and select **Inspect**.
-*   Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
+*   Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
 <!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png"::: -->
-
-<!-- See [Get Started With Viewing And Changing CSS][GetStartedCSS]. -->
+<!-- See [Get started with viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css). -->
 
 
 <!-- ====================================================================== -->
 ## Open the Console panel
 
-To open the [Console][DevtoolsConsoleIndex] panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [keyboard shortcuts][DevtoolsShortcutsIndex].
+To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
-<!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
+<!-- See [Get started with the Console](/microsoft-edge/devtools-guide-chromium/console/get-started). -->
 
 
 <!-- ====================================================================== -->
 ## Open the previous panel
 
-To jump to the previously open panel, press `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
+To jump to the previously open panel, press `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
+
 
 <!-- ====================================================================== -->
 ## Auto-open DevTools on every new tab
@@ -119,30 +119,13 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
 1.  After you set the toggle to off, verify that `F12` no longer opens DevTools.
 
     > [!NOTE]
-    > After turning off **Open the DevTools when the F12 key is pressed**, perform one of the following actions to open the DevTools.
-    >
-    > *   Select `Ctrl`+`Shift`+`I`.
-    > *   Open the contextual menu (right-click) > **Inspect**.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsConsoleIndex]: ../console/index.md "Console Overview | Microsoft Docs"
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Keyboard shortcuts | Microsoft Docs"
-
-<!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->
-<!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
+    > After turning off **Open the DevTools when the F12 key is pressed**, open DevTools again.  For example, press `Ctrl`+`Shift`+`I`, or right-click a webpage and select **Inspect**.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
