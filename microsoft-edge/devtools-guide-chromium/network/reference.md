@@ -614,10 +614,7 @@ To display the cookies sent in the HTTP header of a request, use the following s
 1.  Choose the URL of the request, under the **Name** column of the Requests table.
 1.  Choose the **Cookies** panel.
 
-<!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->
-
-<!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
-<!--TODO: add link when section is available -->
+<!--For more information about each of the columns, navigate to [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
 :::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="The Cookies panel" lightbox="../media/network-network-resources-cookies.msft.png":::
    The Cookies panel
@@ -843,10 +840,7 @@ To save all network requests to a HAR file, complete the following steps.
 1.  Choose **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.
 
 Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.
-<!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->
-
-<!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->
-<!--Todo: add section link when content is available  -->
+<!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
 :::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Choose Save as HAR with Content" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    Choose **Save as HAR with Content**
@@ -992,9 +986,6 @@ By default, DevTools displays the **Overview** pane.  To hide it, turn off the *
    The **Show Overview** checkbox
 :::image-end:::
 
-
-<!-- ====================================================================== -->
-<!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
 
 <!-- ====================================================================== -->
 > [!NOTE]

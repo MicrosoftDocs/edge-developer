@@ -37,7 +37,7 @@ To open DevTools, use either of the following options.
 *   Use the keyboard.
     *   Select `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts](../shortcuts/index.md).
+For more information, see [Microsoft Edge DevTools keyboard shortcuts](../shortcuts/index.md).
 
 :::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
    Open DevTools from the Microsoft Edge main menu
@@ -56,15 +56,13 @@ Either of the following tasks allow you to inspect the styles or attributes of a
    The **Inspect** option
 :::image-end:::  -->
 
-<!--Navigate to [Get Started With Viewing And Changing CSS][GetStartedCSS].  -->
+See [DevTools for beginners: Get started with CSS](../beginners/css.md).
 
 
 <!-- ====================================================================== -->
 ## Open the Console panel
 
-To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). For more information, navigate to [Microsoft Edge DevTools keyboard shortcuts](../shortcuts/index.md).
-
-<!--Navigate to [Get Started With The Console][ConsoleGetStarted].  -->
+To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). For more information, see [Microsoft Edge DevTools keyboard shortcuts](../shortcuts/index.md).
 
 
 <!-- ====================================================================== -->
@@ -127,14 +125,6 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
     >
     > *   Select `Ctrl`+`Shift`+`I`.
     > *   Open the contextual menu (right-click) > **Inspect**.
-
-
-<!-- ====================================================================== -->
-
-
-
-<!--[ConsoleGetStarted]: /microsoft-edge/devtools-guide-chromium/console/get-started ""  -->
-<!--[GetStartedCSS]: /microsoft-edge/devtools-guide-chromium/css "CSS"  -->
 
 
 <!-- ====================================================================== -->

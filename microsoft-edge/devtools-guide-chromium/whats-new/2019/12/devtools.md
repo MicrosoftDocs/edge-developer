@@ -98,7 +98,7 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 | Russian – русский | Spanish - español |
 -->
 
-Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Select `F1` in the DevTools or navigate to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
+Go to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
 
 :::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The DevTools in German" lightbox="../../images/2019/12/localized-devtools.msft.png":::
    The DevTools in German
@@ -126,7 +126,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
    The **3D View** in the DevTools
 :::image-end:::
 
-To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
+To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
 
@@ -218,7 +218,7 @@ Chromium issue [#1004193](https://crbug.com/1004193)
 DevTools has started to support the DWARF Debugging Standard, which means increased support for stepping over code, setting breakpoints, and resolving stack traces in your source languages within DevTools.
 
 <!-- [TODO: Add this link back] -->
-<!--Check out [Improved WebAssembly debugging in Microsoft Edge DevTools][201912Webassembly] for the full story.  -->
+<!--Check out [Improved WebAssembly debugging in Microsoft Edge DevTools](201912Webassembly) for the full story.  -->
 
 <!-- [TODO: Replace this image with screenshot in Edge] -->
 <!--
@@ -237,14 +237,14 @@ You are now able to view the initiators and dependencies of a network request as
    A Request Initiator Chain in the **Initiator** panel
 :::image-end:::
 
-After [logging network activity in the Network panel](../../../network/index.md), choose a resource and then navigate to the **Initiator** panel to view the **Request Initiator Chain**:
+After [logging network activity in the Network panel](../../../network/index.md), select a resource and then go to the **Initiator** panel to view the **Request Initiator Chain**:
 
 *   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.
 *   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.
 *   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.
 
 > [!NOTE]
-> Initiator and dependency information may also be accessed by holding `Shift` and then hovering over network resources.  Navigate to [View initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).
+> Initiator and dependency information can also be accessed by holding `Shift` and then hovering over network resources.  See [View initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).
 
 Chromium issue [#842488](https://crbug.com/842488)
 
@@ -291,7 +291,7 @@ Chromium issue [#1029031](https://crbug.com/1029031)
 
 #### New configuration UI
 
-The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  For more information on the throttling UI changes, navigate to [Audits Panel Throttling](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling).
+The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  For more information on the throttling UI changes, see [Audits Panel Throttling](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling).
 
 :::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="The new configuration UI" lightbox="../../images/2019/12/start.msft.png":::
    The new configuration UI

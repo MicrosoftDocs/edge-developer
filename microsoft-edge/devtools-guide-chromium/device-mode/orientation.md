@@ -44,8 +44,8 @@ Complete the following actions to simulate different device orientations from Mi
        :::column-end:::
        :::column span="":::
           After you choose **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.
-          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->
-          <!--todo: update links to alpha, beta, and gamma section when available -->
+          <!--To understand how each axis works, navigate to [Device Orientation & Motion](). -->
+          <!--todo: update links to local copy of alpha/beta/gamma sections from https://developers.google.com/web/fundamentals/native-hardware/device-orientation#alpha , beta, and gamma section when available; see "original page" below -->
           You are also able to set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis.
 
           :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="The Orientation Model" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
