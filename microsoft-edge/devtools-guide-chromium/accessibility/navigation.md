@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Navigate Microsoft Edge DevTools with assistive technology
 
-This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools][MicrosoftEdgeDevtoolsMain].  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
+This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
 
 For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features in DevTools](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
@@ -93,7 +93,7 @@ Opening a tool this way puts focus in the content area of the tool.  In the case
 1.  Simulate a right-click on the element, to open the context menu.
 1.  Choose the **Inspect** option.  This [opens the Elements tool and focuses the element in the DOM Tree](../dom/index.md#view-dom-nodes).
 
-The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, navigate to [Navigate the **DOM Tree** with a keyboard][DevtoolsDomIndexNavigateDomTreeKeyboard].
+The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, navigate to [Navigate the **DOM Tree** with a keyboard](../dom/index.md#navigate-the-dom-tree-with-a-keyboard).
 
 ### Copy the code for an element in the DOM Tree
 
