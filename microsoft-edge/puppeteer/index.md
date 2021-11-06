@@ -97,7 +97,7 @@ This is just a simple example of the automation and testing scenarios enabled by
 ## See also
 
 *   [WebDriver](../webdriver-chromium/index.md)
-*   [WebDriver (EdgeHTML)][ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]
+*   [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/index)
 *   [Chrome DevTools Protocol Viewer on GitHub](https://chromedevtools.github.io/devtools-protocol)
 *   [Microsoft Edge:  Making the web better through more open source collaboration on Microsoft Experience Blog](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration)
 *   [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download)
@@ -109,8 +109,3 @@ This is just a simple example of the automation and testing scenarios enabled by
 *   [Headless browser on Wikipedia](https://en.wikipedia.org/wiki/Headless_browser)
 -->
 *  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using Puppeteer, puppeteer-core, and Microsoft Edge.
-
-
-<!-- ====================================================================== -->
-<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->
-<!--  [ArchiveMicrosoftEdgeLegacyDeveloperWebdriverIndex]: /archive/microsoft-edge/legacy/developer/webdriver/index "WebDriver (EdgeHTML) | Microsoft Docs"  -->
