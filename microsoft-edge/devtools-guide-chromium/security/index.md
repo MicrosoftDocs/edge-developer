@@ -63,7 +63,7 @@ If you have not set up HTTPS on your server, [Let's Encrypt](https://letsencrypt
 
 ### Mixed content
 
-**Mixed content** means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.
+**Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.
 
 :::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Mixed content" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    Mixed content
@@ -94,10 +94,6 @@ Choose one of the entries in the left-hand nav to view the details of the origin
 :::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Main origin details" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    Main origin details
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!--[mixed]: /web/fundamentals/security/prevent-mixed-content/what-is-mixed-content ""  -->
 
 
 <!-- ====================================================================== -->

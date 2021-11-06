@@ -121,9 +121,7 @@ To manually clear the browser cache at any time, open the contextual menu (right
 
 ### Emulate offline
 
-A new class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md), functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.
-
-<!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
+A new class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md), functions offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.
 
 Choose the **No throttling** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.
 

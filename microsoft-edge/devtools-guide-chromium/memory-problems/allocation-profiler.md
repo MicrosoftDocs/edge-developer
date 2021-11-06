@@ -1,6 +1,6 @@
 ---
 description: Use Allocation instrumentation on timeline to find objects that are not being properly garbage collected, and continue to retain memory.
-title: How to use Allocation instrumentation on Timeline
+title: Use Allocation instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# How to use Allocation instrumentation on Timeline
+# Use Allocation instrumentation on Timeline
 
 Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.
 
@@ -29,7 +29,7 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 <!-- ====================================================================== -->
 ## How Allocation instrumentation on timeline works
 
-**Allocation instrumentation on timeline** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
+**Allocation instrumentation on timeline** combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->
@@ -85,11 +85,6 @@ Choosing on a specific object in the heap shows the retaining tree in the bottom
 ## View memory allocation by function
 
 You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function](./index.md#investigate-memory-allocation-by-function).
-
-
-<!-- ====================================================================== -->
-<!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->
-<!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->
 
 
 <!-- ====================================================================== -->
