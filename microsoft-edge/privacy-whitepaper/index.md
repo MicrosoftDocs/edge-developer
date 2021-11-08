@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, privacy whitepaper, trust, microsoft edge privacy, browser privacy, privacy settings
@@ -530,7 +530,7 @@ The Microsoft Edge shopping feature requires sharing of cookie information with 
 
 When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.
 
-Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user’s query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
+Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user's query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
 
 :::image type="complex" source="./media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/shopping.png":::
    Shopping and coupons
@@ -546,6 +546,10 @@ The shopping service is turned on by default for all users.  To change the shopp
 **InPrivate** browsing uses the shopping setting of the profile that launched the **InPrivate** session.
 
 InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.
+
+
+<!-- ====================================================================== -->
+## Sign in and Identity
 
 Signing in to Microsoft Edge provides many features to make the browser more productive. To sign in seamlessly when you first launch Microsoft Edge, it attempts to detect your identity from the operating system. If Microsoft Edge detects your identity from the operating system but you do not want to remain signed in to Microsoft Edge, navigate to `edge://settings/profiles` and either sign out or remove your profile.
 
@@ -657,12 +661,26 @@ You may turn off list updates using the following group policy, [Enable componen
 
 In Microsoft Edge, you can browse the web and translate webpages into a language of your choice. Microsoft Edge uses [Microsoft Translator](https://azure.microsoft.com/services/cognitive-services/speech-translation/) to translate web pages. This feature at first uses a library on your device that samples certain visible portions of a webpage to detect the original language. If the detected language is not one of your preferred languages, Microsoft Edge offers to translate the webpage to your preferred language or another language you choose. You can then translate the page by selecting **Translate**. You can autotranslate all pages in that language by choosing the **Always translate the pages from \<a language\>** checkbox.
 
-Microsoft Edge does not translate a webpage without your permission. If you do decide to translate, Microsoft Edge sends the text of the webpage you want to translate, along with the *to* and *from* language and a service token to Microsoft Translator over a secure HTTPS connection. The service token doesn’t contain any user identifiable information. [Microsoft Translator](https://azure.microsoft.com/services/cognitive-services/speech-translation/) then processes the text to remove any identifiers (such as email or phone number) and stores the text for service improvement purposes. The details of this communication are covered under [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
+Microsoft Edge does not translate a webpage without your permission. If you do decide to translate, Microsoft Edge sends the text of the webpage you want to translate, along with the *to* and *from* language and a service token to Microsoft Translator over a secure HTTPS connection. The service token doesn't contain any user identifiable information. [Microsoft Translator](https://azure.microsoft.com/services/cognitive-services/speech-translation/) then processes the text to remove any identifiers (such as email or phone number) and stores the text for service improvement purposes. The details of this communication are covered under [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
 
 If you want to stop Microsoft Edge from offering to translate webpages, complete the following steps.
 
 1. Navigate to `edge://settings/languages`.
 1. Turn off the **Offer to translate pages that are not in a language you read** toggle and close the webpage.
+
+
+<!-- ====================================================================== -->
+## Travel
+
+When you do online activities related to travelling, Microsoft Edge helps you find recommendations for travel.  To help you find recommendations while planning your travel online, Microsoft Edge downloads a list of travel domains to the client from the Microsoft Travel service.
+
+When you visit a website, Microsoft Edge locally determines if the website you're on is a travel domain.  If the website is identified as a Travel-related webpage, Microsoft Edge sends the domain, flight dates, From and To locations, and passenger count, along with information about Microsoft Edge and cookies (if cookies are allowed) to the service.  This data does not include any personally identifiable information, and is sent over HTTPS.
+
+The Microsoft Edge Travel feature requires sharing cookie information with Bing.com.  For example, cookies may be used for debugging, fraud detection, and analytics.  When you visit Bing.com in your browser and update any settings on Bing pages, Bing.com creates a cookie in your browser and stores information in the cookie.  This cookie is shared across Bing.com pages, and Microsoft Edge sends this cookie to the Microsoft Travel service to keep your experience consistent.
+
+The Travel service is turned on by default.  To change the Travel setting in Microsoft Edge:
+1. Navigate to `edge://settings/privacy`.
+2. In the **Services** section at the bottom of the page, turn off the setting **Show travel recommendations in Microsoft Edge**.
 
 
 <!-- ====================================================================== -->
@@ -704,11 +722,7 @@ If WIP is turned on for your version of Microsoft Edge, the browser collects eve
 <!-- ====================================================================== -->
 ## Thank you!
 
-Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open-source project and other open-source software.  To view all of the software credits, navigate to `edge://credits`.  [Google Chrome Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) was used as a source for gathering related information about the Chromium open source project.
-
 Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open-source project and other open-source software.  To view all of the software credits, navigate to `edge://credits`.  [Google Chrome Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) was used as a source for gathering related information about the Chromium open-source project.
-
-<!-- Are we removing mentions of Chromium? Such as above? -->
 
 
 <!-- ====================================================================== -->

@@ -35,13 +35,13 @@ The following sections are a list of announcements you may have missed from the 
 
 ### Remotely debug Microsoft Edge on Windows 10 or later Devices
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) app is now available in the [Microsoft Store](https://www.microsoft.com/store/apps/windows). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal). You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets. This list of targets includes all tabs in Microsoft Edge and [PWAs][ProgressiveWebAppsChromiumIndex] open on the Windows device. Use the DevTools on your development machine against a target running on the remote Windows device.
+The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) app is now available in the [Microsoft Store](https://www.microsoft.com/store/apps/windows). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal). You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets. This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps-chromium/index.md) open on the Windows device. Use the DevTools on your development machine against a target running on the remote Windows device.
 
 :::image type="complex" source="../../media/2020/03/remote-tools.msft.png" alt-text="The Remote Tools for Microsoft Edge (Beta) app available in the Microsoft Store" lightbox="../../media/2020/03/remote-tools.msft.png":::
    The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) app available in the [Microsoft Store](https://www.microsoft.com/store/apps/windows)
 :::image-end:::
 
-[Read our guide for setting up your Windows 10 device and your development machine for remote debugging](../../../remote-debugging/windows.md).  Let us know about your remote debugging experience by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback][Contact] icon!
+[Read our guide for setting up your Windows 10 device and your development machine for remote debugging](../../../remote-debugging/windows.md).  Let us know about your remote debugging experience by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback](../../../contact.md) icon!
 
 ### New ways to access Settings
 
@@ -109,7 +109,7 @@ When you have made a change to a minified file, the **Changes tool** enables you
    In Microsoft Edge 83, you may scroll horizontally with the arrow keys to display the changes you made to your minified code in the **Changes tool**
 :::image-end:::
 
-If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) at us or choosing the [Send Feedback][Contact] icon!
+If you use screen readers or the keyboard to navigate around the DevTools, send us your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) at us or choosing the [Send Feedback](../../../contact.md) icon!
 
 Chromium issue [#963183](https://crbug.com/963183)
 
@@ -141,7 +141,7 @@ For example, protanomaly is a reduced sensitivity to red light (as opposed to pr
 
 By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.
 
-Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback][Contact] icon!
+Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback](../../../contact.md) icon!
 
 Chromium issue [#1003700](https://crbug.com/1003700)
 
@@ -181,7 +181,7 @@ The **Response Headers** section of the **Headers** tab provides more guidance o
    More guidance in the **Response Headers** section
 :::image-end:::
 
-Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback][Contact] icon!
+Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback](../../../contact.md) icon!
 
 Chromium issue [#1051466](https://crbug.com/1051466)
 
@@ -215,7 +215,7 @@ Open the [Command Menu](../../../command-menu/index.md) and run the `Dock to lef
 > [!NOTE]
 > The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu](../../../customize/placement.md#change-placement-from-the-main-menu).  The new feature in Microsoft Edge 83 is that you may now access this feature from the Command Menu.
 
-Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback][Contact] icon!
+Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback](../../../contact.md) icon!
 
 Chromium issue [#1011679](https://crbug.com/1011679)
 
@@ -238,7 +238,7 @@ After setting up **Local Overrides** you may hover on a directory, open the cont
    Delete all overrides
 :::image-end:::
 
-Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback][Contact] icon!
+Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback](../../../contact.md) icon!
 
 Chromium issue [#1016501](https://crbug.com/1016501)
 
@@ -252,7 +252,7 @@ You have been able to [visualize Long Tasks in the Performance panel](../../../e
    The new Long Task UI
 :::image-end:::
 
-Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback][Contact] icon!
+Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback](../../../contact.md) icon!
 
 Chromium issue [#1054447](https://crbug.com/1054447)
 
