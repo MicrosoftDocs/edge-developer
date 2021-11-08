@@ -259,11 +259,11 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 
 
 <!-- ====================================================================== -->
-<!--[DevToolsHeapProfilingComparison](https://developer.alphabet.com/devtools/docs/heap-profiling-comparison) -->
-<!--[DevToolsHeapProfilingContainment](https://developer.alphabet.com/devtools/docs/heap-profiling-containment) -->
-<!--[DevtoolsHeapProfilingDomLeaks](https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks) -->
-<!--[DevToolsHeapProfilingSummary](https://developer.alphabet.com/devtools/docs/heap-profiling-summary) -->
-<!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks](../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks) -->
+<!--[heap profiling comparison](https://developer.alphabet.com/devtools/docs/heap-profiling-comparison) -->
+<!--[heap profiling containment](https://developer.alphabet.com/devtools/docs/heap-profiling-containment) -->
+<!--[heap profiling DOM leaks](https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks) -->
+<!--[heap profiling summary](https://developer.alphabet.com/devtools/docs/heap-profiling-summary) -->
+<!--[narrow down causes of memory leaks](../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks) -->
 
 
 <!-- ====================================================================== -->
