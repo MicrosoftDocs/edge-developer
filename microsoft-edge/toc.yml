@@ -47,13 +47,17 @@
               href: devtools-guide-chromium/index.md
             - name: Open DevTools
               href: devtools-guide-chromium/open/index.md
-            - name: Get started with CSS # would also be relevant in Tools > Elements
+            - name: Get started with HTML and the DOM # also fits in Tools > Elements
+              href: devtools-guide-chromium/beginners/html.md
+            - name: Get started viewing and changing the DOM # also fits in Tools > Elements
+              href: devtools-guide-chromium/dom/index.md
+            - name: Get started with CSS # also fits in Tools > Elements
               href: devtools-guide-chromium/beginners/css.md
-            - name: Get started viewing and changing CSS # would also be relevant in Tools > Elements
+            - name: Get started viewing and changing CSS # also fits in Tools > Elements
               href: devtools-guide-chromium/css/index.md
             - name: Get started debugging JavaScript
               href: devtools-guide-chromium/javascript/index.md
-            - name: Get started analyzing runtime performance # would also be relevant in Tools > Performance > Performance troubleshooting
+            - name: Get started analyzing runtime performance # also fits in Tools > Performance > Performance troubleshooting
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: View page resources
               href: devtools-guide-chromium/resources/index.md
@@ -61,7 +65,7 @@
               href: devtools-guide-chromium/workspaces/index.md
             - name: Inspect network activity
               href: devtools-guide-chromium/network/index.md
-            - name: Optimize website speed # would also be relevant in Tools > Performance > Performance troubleshooting
+            - name: Optimize website speed # also fits in Tools > Performance > Performance troubleshooting
               href: devtools-guide-chromium/speed/get-started.md
             - name: Remote debugging
               items:
@@ -76,7 +80,7 @@
 # =============================================================================
         - name: How to
           items:
-            - name: Accessibility testing
+            - name: Test accessibility
               items:
                 - name: Accessibility-testing features in DevTools
                   href: devtools-guide-chromium/accessibility/reference.md
@@ -86,11 +90,10 @@
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Alt-text for images
                   items:
-                    - name: Automatically test a webpage for accessibility issues # would also be relevant in "Text contrast" & "Screen reader support"
+                    - name: Automatically test a webpage for accessibility issues # also fits in "Text contrast" & "Screen reader support"
                       href: devtools-guide-chromium/accessibility/test-issues-tool.md
                 - name: Keyboard support
                   items:
-                    # Use the Inspect tool to detect accessibility issues by hovering over the webpage - would also be relevant here
                     - name: Check for keyboard support by using the Tab and Enter keys
                       href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
                     - name: Analyze the lack of indication of keyboard focus in a sidebar menu
@@ -101,18 +104,15 @@
                       href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
                 - name: Text contrast
                   items:
-                      # Automatically test a webpage for accessibility issues - would also be relevant here
                     - name: Test text-color contrast using the Color Picker
                       href: devtools-guide-chromium/accessibility/color-picker.md
-                    # Use the Inspect tool to detect accessibility issues by hovering over the webpage - would also be relevant here
                     - name: Verify accessibility of all states of elements
                       href: devtools-guide-chromium/accessibility/test-inspect-states.md
                     - name: Check for contrast issues with dark theme and light theme
                       href: devtools-guide-chromium/accessibility/test-dark-mode.md
                 - name: Screen reader support
                   items:
-                      # Automatically test a webpage for accessibility issues - would also be relevant here
-                    - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # would also be relevant in "Keyboard support" & "Text contrast"
+                    - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # also fits in "Keyboard support" & "Text contrast"
                       href: devtools-guide-chromium/accessibility/test-inspect-tool.md
                     - name: Check the Accessibility Tree for keyboard and screen reader support
                       href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
@@ -130,7 +130,7 @@
                   items:
                     - name: Verify that the webpage layout is usable when narrow
                       href: devtools-guide-chromium/accessibility/narrow.md
-                - name: Test accessibility using Lighthouse # would also be relevant in Tools > Lighthouse
+                - name: Test accessibility using Lighthouse # also fits in Tools > Lighthouse
                   href: devtools-guide-chromium/accessibility/lighthouse.md
                 - name: Track which element has focus
                   href: devtools-guide-chromium/accessibility/focus.md
@@ -192,8 +192,10 @@
               href: devtools-guide-chromium/ie-mode/index.md
             - name: Performance troubleshooting
               items:
-                - name: Performance features reference # would also fit in Tools > Performance
+                - name: Performance features reference # also fits in Tools > Performance
                   href: devtools-guide-chromium/evaluate-performance/reference.md
+                - name: Timeline event reference # also fits in Tools > Performance
+                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: Service worker troubleshooting
               href: devtools-guide-chromium/service-workers/index.md
             - name: DevTools Protocol
@@ -253,11 +255,10 @@
                   href: devtools-guide-chromium/console/console-filters.md
             - name: Coverage
               href: devtools-guide-chromium/coverage/index.md
+#           - name: Developer Resources
             - name: Elements
               items:
-                  # Get started with CSS would also be relevant here
-                  # Get started viewing and changing CSS would also be relevant here
-                - name: CSS features
+                - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
                 - name: Edit CSS font styles and settings
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
@@ -267,19 +268,11 @@
                   href: devtools-guide-chromium/css/css-in-js.md
                 - name: Force DevTools into Print Preview mode
                   href: devtools-guide-chromium/css/print-preview.md
-                - name: DOM
-                  items:
-                    - name: Get started with HTML and the DOM
-                      href: devtools-guide-chromium/beginners/html.md
-                    - name: Get started viewing and changing the DOM
-                      href: devtools-guide-chromium/dom/index.md
             - name: Issues
-              items:
-                - name: Issues tool overview
-                  href: devtools-guide-chromium/issues/index.md
+              href: devtools-guide-chromium/issues/index.md
+#           - name: JavaScript Profiler
+#           - name: Layers
 #           - name: Lighthouse
-#             items:
-                # Test accessibility using Lighthouse - would also be relevant here
             - name: Media
               href: devtools-guide-chromium/media-panel/index.md
             - name: Memory
@@ -296,6 +289,7 @@
                   href: devtools-guide-chromium/memory-problems/memory-101.md
                 - name: Fix memory problems
                   href: devtools-guide-chromium/memory-problems/index.md
+#           - name: Memory Inspector
             - name: Network
               items:
                 - name: Overview
@@ -304,19 +298,15 @@
                   href: devtools-guide-chromium/network/issues.md
                 - name: Inspect network activity
                   href: devtools-guide-chromium/network/index.md
+#           - name: Network conditions
+#           - name: Network request blocking
             - name: Performance
               items:
                 - name: Analyze runtime performance
                   href: devtools-guide-chromium/rendering-tools/index.md
-                - name: Timeline event reference
-                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
-#               - name: Performance troubleshooting # would also be relevant here
-#                 items:
-                     # Get started analyzing runtime performance - would also be relevant here
-                     # Optimize website speed - would also be relevant here
-                     # Performance features reference - would also be relevant here
             - name: Performance monitor
               href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
+#           - name: Quick source
             - name: Remote devices
               href: devtools-guide-chromium/remote-debugging/local-server.md
             - name: Rendering
@@ -331,6 +321,7 @@
               href: devtools-guide-chromium/search/search-tool.md
             - name: Security
               href: devtools-guide-chromium/security/index.md
+#           - name: Sensors
             - name: Sources
               items:
                 - name: Sources tool overview
@@ -345,8 +336,10 @@
                   href: devtools-guide-chromium/javascript/snippets.md
                 - name: Disable JavaScript
                   href: devtools-guide-chromium/javascript/disable.md
+#           - name: WebAudio
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
+#           - name: Welcome
         - name: Contact the DevTools team
           href: devtools-guide-chromium/contact.md
 # =============================================================================
