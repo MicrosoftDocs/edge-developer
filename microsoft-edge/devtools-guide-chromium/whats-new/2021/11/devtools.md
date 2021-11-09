@@ -10,11 +10,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # What's New in DevTools (Microsoft Edge 99)
 
-[!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
+<!-- [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)] -->
+The following sections list the announcements from the Microsoft Edge DevTools team.  To try new features in the DevTools, Microsoft Visual Studio Code extensions, and more, review the announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
 
 
 <!-- ====================================================================== -->
-## 
+## Heading
 
 <!-- Title:  -->
 <!-- Subtitle:  -->
@@ -22,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 For more information, see...
 
-:::image type="content" source="../../media/2021/11/x.png" alt-text="Text.":::
+<!-- :::image type="content" source="../../media/2021/11/x.png" alt-text="Text."::: -->
 
 
 <!-- ====================================================================== -->
