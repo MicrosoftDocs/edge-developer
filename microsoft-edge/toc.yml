@@ -562,7 +562,7 @@
             - name: Visual Studio Code overview
               href: visual-studio-code/index.md
             - name: Open source files in Visual Studio Code
-              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md #dup
+              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
             - name: Debugger for Edge
               href: visual-studio-code/debugger-for-edge.md
             - name: Microsoft Edge DevTools extension
