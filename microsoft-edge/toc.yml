@@ -43,40 +43,38 @@
 # =============================================================================
         - name: Get started
           items:
-            - name: DevTools overview
-              href: devtools-guide-chromium/index.md
             - name: Open DevTools
               href: devtools-guide-chromium/open/index.md
-            - name: Get started with HTML and the DOM # also fits in Tools > Elements
+            - name: Get started with HTML and the DOM # related: Tools > Elements
               href: devtools-guide-chromium/beginners/html.md
-            - name: Get started viewing and changing the DOM # also fits in Tools > Elements
+            - name: Get started viewing and changing the DOM # related: Tools > Elements
               href: devtools-guide-chromium/dom/index.md
-            - name: Get started with CSS # also fits in Tools > Elements
+            - name: Get started with CSS # related: Tools > Elements
               href: devtools-guide-chromium/beginners/css.md
-            - name: Get started viewing and changing CSS # also fits in Tools > Elements
+            - name: Get started viewing and changing CSS # related: Tools > Elements
               href: devtools-guide-chromium/css/index.md
-            - name: Get started debugging JavaScript
+            - name: Get started debugging JavaScript # related: How to > JavaScript debugging
               href: devtools-guide-chromium/javascript/index.md
-            - name: Get started analyzing runtime performance # also fits in Tools > Performance > Performance troubleshooting
+            - name: Get started analyzing runtime performance # related: Tools > Performance > Performance troubleshooting
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: View page resources
               href: devtools-guide-chromium/resources/index.md
-            - name: Edit files with Workspaces
+            - name: Edit files with Workspaces # related: Tools > Sources
               href: devtools-guide-chromium/workspaces/index.md
-            - name: Inspect network activity
+            - name: Inspect network activity # related: Tools > Network
               href: devtools-guide-chromium/network/index.md
-            - name: Optimize website speed # also fits in Tools > Performance > Performance troubleshooting
+            - name: Optimize website speed # related: Tools > Performance > Performance troubleshooting
               href: devtools-guide-chromium/speed/get-started.md
             - name: Remote debugging
               items:
                 - name: Get started remote debugging Android devices
-                  href: devtools-guide-chromium/remote-debugging/index.md
+                  href: devtools-guide-chromium/remote-debugging/index.md # related: Tools > Remote devices
                 - name: Get started remote debugging Surface Duo
-                  href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
+                  href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md # related: Tools > Remote devices
                 - name: Get started remote debugging Windows devices
-                  href: devtools-guide-chromium/remote-debugging/windows.md
+                  href: devtools-guide-chromium/remote-debugging/windows.md # related: Tools > Remote devices
                 - name: Get started remote debugging Android WebViews
-                  href: devtools-guide-chromium/remote-debugging/webviews.md
+                  href: devtools-guide-chromium/remote-debugging/webviews.md # related: Tools > Remote devices
 # =============================================================================
         - name: How to
           items:
@@ -90,7 +88,7 @@
                   href: devtools-guide-chromium/accessibility/navigation.md
                 - name: Alt-text for images
                   items:
-                    - name: Automatically test a webpage for accessibility issues # also fits in "Text contrast" & "Screen reader support"
+                    - name: Automatically test a webpage for accessibility issues # related: "Text contrast", "Screen reader support"
                       href: devtools-guide-chromium/accessibility/test-issues-tool.md
                 - name: Keyboard support
                   items:
@@ -112,7 +110,7 @@
                       href: devtools-guide-chromium/accessibility/test-dark-mode.md
                 - name: Screen reader support
                   items:
-                    - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # also fits in "Keyboard support" & "Text contrast"
+                    - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # related: "Keyboard support" & "Text contrast"
                       href: devtools-guide-chromium/accessibility/test-inspect-tool.md
                     - name: Check the Accessibility Tree for keyboard and screen reader support
                       href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
@@ -130,7 +128,7 @@
                   items:
                     - name: Verify that the webpage layout is usable when narrow
                       href: devtools-guide-chromium/accessibility/narrow.md
-                - name: Test accessibility using Lighthouse # also fits in Tools > Lighthouse
+                - name: Test accessibility using Lighthouse # related: Tools > Lighthouse
                   href: devtools-guide-chromium/accessibility/lighthouse.md
                 - name: Track which element has focus
                   href: devtools-guide-chromium/accessibility/focus.md
@@ -164,8 +162,6 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
             - name: JavaScript debugging
               items:
-                - name: Get started with debugging JavaScript
-                  href: devtools-guide-chromium/javascript/index.md
                 - name: Use the debugger features
                   href: devtools-guide-chromium/javascript/reference.md
                 - name: Pause code with breakpoints
@@ -174,27 +170,13 @@
                   href: devtools-guide-chromium/javascript/source-maps.md
                 - name: Mark content scripts as Library Code
                   href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-            - name: Remote debugging
-              items:
-                - name: Remote devices
-                  href: devtools-guide-chromium/remote-debugging/local-server.md
-                - name: Get started with remote debugging Android devices
-                  href: devtools-guide-chromium/remote-debugging/index.md
-                - name: Get started with remote debugging with Surface Duo emulators
-                  href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
-                - name: Get started with remote debugging Windows 10 devices
-                  href: devtools-guide-chromium/remote-debugging/windows.md
-                - name: Get started with remote debugging Android WebViews
-                  href: devtools-guide-chromium/remote-debugging/webviews.md
-            - name: View page resources
-              href: devtools-guide-chromium/resources/index.md
             - name: Use DevTools in IE mode
               href: devtools-guide-chromium/ie-mode/index.md
             - name: Performance troubleshooting
               items:
-                - name: Performance features reference # also fits in Tools > Performance
+                - name: Performance features reference # related: Tools > Performance
                   href: devtools-guide-chromium/evaluate-performance/reference.md
-                - name: Timeline event reference # also fits in Tools > Performance
+                - name: Timeline event reference # related: Tools > Performance
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
             - name: Service worker troubleshooting
               href: devtools-guide-chromium/service-workers/index.md
@@ -277,7 +259,7 @@
               href: devtools-guide-chromium/media-panel/index.md
             - name: Memory
               items:
-                - name: Memory overview
+                - name: Fix memory problems
                   href: devtools-guide-chromium/memory-problems/index.md
                 - name: Record heap snapshots
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
@@ -287,8 +269,6 @@
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md
                 - name: Memory terminology
                   href: devtools-guide-chromium/memory-problems/memory-101.md
-                - name: Fix memory problems
-                  href: devtools-guide-chromium/memory-problems/index.md
 #           - name: Memory Inspector
             - name: Network
               items:
@@ -296,8 +276,6 @@
                   href: devtools-guide-chromium/network/reference.md
                 - name: Network issues guide
                   href: devtools-guide-chromium/network/issues.md
-                - name: Inspect network activity
-                  href: devtools-guide-chromium/network/index.md
 #           - name: Network conditions
 #           - name: Network request blocking
             - name: Performance
@@ -307,7 +285,7 @@
             - name: Performance monitor
               href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
 #           - name: Quick source
-            - name: Remote devices
+            - name: Remote devices # related: Get started > Remote debugging
               href: devtools-guide-chromium/remote-debugging/local-server.md
             - name: Rendering
               items:
@@ -326,10 +304,6 @@
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
-                - name: Open source files in Visual Studio Code
-                  href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
-                - name: Workspaces (Filesystem tab)
-                  href: devtools-guide-chromium/workspaces/index.md
                 - name: Overrides
                   href: devtools-guide-chromium/javascript/overrides.md
                 - name: Snippets
@@ -588,7 +562,7 @@
             - name: Visual Studio Code overview
               href: visual-studio-code/index.md
             - name: Open source files in Visual Studio Code
-              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
+              href: devtools-guide-chromium/sources/opening-sources-in-vscode.md #dup
             - name: Debugger for Edge
               href: visual-studio-code/debugger-for-edge.md
             - name: Microsoft Edge DevTools extension
