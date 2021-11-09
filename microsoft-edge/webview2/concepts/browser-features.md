@@ -48,7 +48,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Browser Task Manager | Off | No | This feature is turned off.  |
 | Collections | Off | No | This feature is turned off.  |
 | Continue-where-I-left-off prompt | Off | No | This feature is turned off.  |
-| Downloads | On | Yes | WebView2 provides an API that allows you to customize the download UI to manipulate downloads. For example, you can block, redirect, save, pause, and so on.  <!--For more information, navigate to [download API][Webview2ReferenceDownloadApi].--> |
+| Downloads | On | Yes | WebView2 provides an API that allows you to customize the download UI to manipulate downloads. For example, you can block, redirect, save, pause, and so on.  <!--For more information, see [download API](download-api.md).--> |
 | Edge Shopping | Off | No | This feature is turned off.  |
 | Family Safety | Off | No | This feature is turned off.  |
 | Favorites | Off | No | This feature is turned off.  |
@@ -181,7 +181,3 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 
 > [!Note]
 > To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
-
-
-<!-- ====================================================================== -->
-<!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->

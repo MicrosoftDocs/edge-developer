@@ -1,6 +1,6 @@
 ---
-description: Open the Sensors tool and navigate to the Orientation section.
-title: Simulate device orientation with Microsoft Edge DevTools
+description: Simulate device orientation using the Orientation section of the Sensors tool.
+title: Simulate device orientation
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Simulate device orientation with Microsoft Edge DevTools
+# Simulate device orientation
 
 Complete the following actions to simulate different device orientations from Microsoft Edge DevTools.
 

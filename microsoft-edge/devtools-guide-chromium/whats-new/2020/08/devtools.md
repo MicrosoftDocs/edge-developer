@@ -386,7 +386,7 @@ The **Properties** pane is back.  It was [deprecated in Microsoft Edge 84](../05
    **Properties** pane in the **Elements** tool
 :::image-end:::
 
-Chromium issue:  <!--  [#1105205][CR1105205],  -->  [#1116085](https://crbug.com/1116085)
+Chromium issue: <!-- [#1105205](https://crbug.com/1105205), --> [#1116085](https://crbug.com/1116085)
 
 <!--
 #### Human-readable X-Client-Data header values in the Network panel
@@ -458,10 +458,6 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 
 
 <!-- ====================================================================== -->
-<!--  [DevtoolsExperimentalFeaturesEnableExperimentalApis]: ../../../experimental-features/index.md#enable-experimental-apis "Enable experimental APIs - Experimental features | Microsoft Docs"  -->
-<!--  [DevtoolsExperimentalFeaturesTestOnFoldableDualScreenDevices]: ../../../experimental-features/index.md#test-on-foldable-and-dual-screen-devices "Test on foldable and dual-screen devices - Experimental features | Microsoft Docs"  -->
-<!--  [CR1105205]: https://crbug.com/1105205 "Issue 1105205 | Chromium bugs"  -->
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-86) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).

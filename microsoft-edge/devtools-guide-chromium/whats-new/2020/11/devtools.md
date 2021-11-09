@@ -240,9 +240,11 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
 
 ### New CSS angle visualization tools
 
-DevTools now have better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, choose the clock icon.  To change the angle, choose anywhere in the clock or drag the needle.  To change the angle value, you may also use mouse and keyboard shortcuts.  <!--  To learn more, navigate to [Angle Clock][DevtoolsCssReferenceChangeAngleValueWithAngleClock].  -->  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
-
-<!--todo:  add link when css angle clock section exists.  -->
+DevTools now have better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, choose the clock icon.  To change the angle, choose anywhere in the clock or drag the needle.  To change the angle value, you may also use mouse and keyboard shortcuts.  <!--  To learn more, see [Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock). -->  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
+<!--
+todo: add link when css angle clock section exists.
+Update Nov. 4, 2021: An open PR is now adding Angle Clock section to Css Features Reference.
+-->
 
 The following CSS angle is used for the example.
 
@@ -362,11 +364,6 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- ====================================================================== -->
-<!--  [DevtoolsExperimentalFeaturesEnableKeyboardShortcutEditor]: ../../../experimental-features/index.md#enable-keyboard-shortcut-editor "Enable keyboard shortcut editor - Experimental features | microsoft Docs"  -->
-<!--  [DevtoolsExperimentalFeaturesTurnOnCompositedLayers3dView]: ../../../experimental-features/index.md#turn-on-composited-layers-in-3d-view "Turn on Composited Layers in 3D View - Experimental features | Microsoft Docs"  -->
-<!--  [DevtoolsCssReferenceChangeAngleValueWithAngleClock]: ../../../css/reference.md#change-angle-value-with-the-angle-clock "Change angle value with the Angle Clock - CSS features reference | Microsoft Docs"  -->
-
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).

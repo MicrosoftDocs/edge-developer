@@ -1,5 +1,5 @@
 ---
-description: The canonical documentation for Microsoft Edge DevTools keyboard shortcuts.
+description: The default keyboard shortcuts for Microsoft Edge DevTools.
 title: Keyboard shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -23,9 +23,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Keyboard shortcuts
 
-This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
+These are the default keyboard shortcuts for Microsoft Edge DevTools.
 
-Keyboard shortcuts are shown in some tooltips in DevTools.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
+Tooltips often show a keyboard shortcut.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
 See also [Customize keyboard shortcuts](../customize/shortcuts.md).
 
