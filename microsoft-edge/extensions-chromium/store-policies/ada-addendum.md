@@ -14,11 +14,11 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 <!-- ====================================================================== -->
 ## Exhibit G: Terms and Conditions for Microsoft Edge Extensions
 
-These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addendum") is a supplement to the terms and conditions of the App Developer Agreement, the current version of which can be found at [https://go.microsoft.com/fwlink/p/?LinkID=221922][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies].  This Addendum applies if you have submitted or are making available Microsoft Edge Extensions (each, an "Extension") through Microsoft Edge Add-ons.  Except as expressly modified by this Extensions Addendum, all of the terms and conditions in the App Developer Agreement, which is incorporated by reference herein, apply to the offering and distribution of your Microsoft Edge Extensions.  Except where expressly modified by this Addendum, the terms and conditions that apply to an "Application" or "App" under the App Developer Agreement will apply to an Extension as defined in this Addendum and all references to "Store" or "Microsoft Store" under the App Developer Agreement will apply to Microsoft Edge Add-ons as defined in this Addendum.
+These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addendum") is a supplement to the terms and conditions of the App Developer Agreement, the current version of which can be found at [https://go.microsoft.com/fwlink/p/?LinkID=221922](./developer-policies.md).  This Addendum applies if you have submitted or are making available Microsoft Edge Extensions (each, an "Extension") through Microsoft Edge Add-ons.  Except as expressly modified by this Extensions Addendum, all of the terms and conditions in the App Developer Agreement, which is incorporated by reference herein, apply to the offering and distribution of your Microsoft Edge Extensions.  Except where expressly modified by this Addendum, the terms and conditions that apply to an "Application" or "App" under the App Developer Agreement will apply to an Extension as defined in this Addendum and all references to "Store" or "Microsoft Store" under the App Developer Agreement will apply to Microsoft Edge Add-ons as defined in this Addendum.
 
 1.  DEFINITIONS.  Capitalized terms not defined herein will have the meanings provided in the App Developer Agreement.
 
-    1.  "Certification Requirements" means the technical, functional, content, and other policy requirements provided by Microsoft (at [https://go.microsoft.com/fwlink/?linkid=2104222][ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies], or another location(s) specified by Microsoft) for Extensions offered through Microsoft Edge Add-ons.
+    1.  "Certification Requirements" means the technical, functional, content, and other policy requirements provided by Microsoft (at [https://go.microsoft.com/fwlink/?linkid=2104222](./developer-policies.md), or another location(s) specified by Microsoft) for Extensions offered through Microsoft Edge Add-ons.
 
     1.  "Microsoft Edge Add-ons" means a Microsoft owned or operated platform, however named, through which Microsoft Edge Extensions may be offered to or acquired by Customers.
 
@@ -33,7 +33,3 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 1.  AFFIRMATIVE DECLINE NOT REQUIRED.  Notwithstanding Section 4(i) of the App Developer Agreement, you are not required to affirmatively decline participation in Microsoft Store for Business and Microsoft Store for Education.  Your Extension will only be available through the Microsoft Edge Add-ons.
 
 1.  APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES.  Section 6 of the App Developer Agreement does not apply to Extensions and is hereby deleted in its entirety.
-
-<!-- links -->
-
-[ExtensionsMicrosoftEdgeAddonsCatalogDeveloperPolicies]: ./developer-policies.md "Microsoft Edge Add-ons website developer policies | Microsoft Docs"

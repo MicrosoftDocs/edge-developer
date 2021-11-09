@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Debug Background Services with Microsoft Edge DevTools
 
 The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the JavaScript APIs that enables your website to send and receive updates even when a user does not have your website open.
-A background service is functionally similar to a [background process][WikiBackgroundProcess].
+A background service is functionally similar to a [background process](https://en.wikipedia.org/wiki/Background_process).
 Microsoft Edge DevTools considers each of the following APIs to be a background service:
 
 *   [Background Fetch](#background-fetch)
@@ -47,7 +47,7 @@ The **Background Fetch API** enables a **service worker** to reliably download l
 
 <!--Todo: add background fetch api section when available -->
 
-1.  [Open DevTools][OpenDevTools].
+1.  [Open DevTools](../open/index.md).
 1.  Open the **Application** tool.
 1.  Open the **Background Fetch** panel.
 
@@ -76,7 +76,7 @@ The **Background Sync API** enables an offline **service worker** to send data t
 
 <!--Todo: add background sync api section when available -->
 
-1.  [Open DevTools][OpenDevTools].
+1.  [Open DevTools](../open/index.md).
 1.  Open the **Application** tool.
 1.  Open the **Background Sync** pane.
 
@@ -101,9 +101,9 @@ The **Background Sync API** enables an offline **service worker** to send data t
 <!-- ====================================================================== -->
 ## Notifications
 
-After a **service worker** has received a [Push Message][MDNPush] from a server, the service worker uses the [Notifications API][MDNNotifications] to display the data to a user.  To log Notifications for 3 days, even when DevTools is not open:
+After a **service worker** has received a [Push Message](https://developer.mozilla.org/docs/Web/API/Push_API) from a server, the service worker uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API) to display the data to a user.  To log Notifications for 3 days, even when DevTools is not open:
 
-1.  [Open DevTools][OpenDevTools].
+1.  [Open DevTools](../open/index.md).
 1.  Open the **Application** tool.
 1.  Open the **Notifications** pane.
 
@@ -128,9 +128,9 @@ After a **service worker** has received a [Push Message][MDNPush] from a server,
 <!-- ====================================================================== -->
 ## Push Messages
 
-To display a push notification to a user, a **service worker** must first use the [Push Message API][MDNPush] to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API][MDNNotifications].  To log Push Messages for 3 days, even when DevTools is not open:
+To display a push notification to a user, a **service worker** must first use the [Push Message API](https://developer.mozilla.org/docs/Web/API/Push_API) to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).  To log Push Messages for 3 days, even when DevTools is not open:
 
-1.  [Open DevTools][OpenDevTools].
+1.  [Open DevTools](../open/index.md).
 1.  Open the **Application** tool.
 1.  Open the **Push Messaging** panel.
 
@@ -153,23 +153,8 @@ To display a push notification to a user, a **service worker** must first use th
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-<!--[BackgroundFetchAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2018/12/background-fetch.md "Background Fetch API"  -->
-<!--[BackgroundSyncAPI]: ../../../microsoft-edge/devtools-guide-chromium/whats-new/2015/12/background-sync.md  "Background Sync API"  -->
-[OpenDevTools]: ../open/index.md "Open Microsoft Edge Developer Tools | Microsoft Docs"
-
-[MDNNotifications]: https://developer.mozilla.org/docs/Web/API/Notifications_API "Notifications API | MDN"
-[MDNPush]: https://developer.mozilla.org/docs/Web/API/Push_API "Push API | MDN"
-<!--[ServiceWorkerCacheStorage]: https://alphabet.dev/service-workers-cache-storage "Service workers and the Cache Storage API | alphabet.dev"  -->
-[WikiBackgroundProcess]: https://en.wikipedia.org/wiki/Background_process "Background process - Wikipedia"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/background-services) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

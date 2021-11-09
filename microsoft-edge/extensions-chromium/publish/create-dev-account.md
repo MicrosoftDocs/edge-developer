@@ -46,7 +46,7 @@ To create a Microsoft account (MSA):
 
 1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish Microsoft Edge extensions by using a GitHub account](github.md).
 
-1. If you aren't using your GitHub account to create the Microsoft account (MSA), navigate to [account.microsoft.com][MicrosoftAccount].
+1. If you aren't using your GitHub account to create the Microsoft account (MSA), navigate to [account.microsoft.com](https://account.microsoft.com/account).
 
 1. Select **Create a Microsoft account**.
 
@@ -88,7 +88,7 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
           **Account type**
        :::column-end:::
        :::column span="2":::
-          The Microsoft Edge program in [Partner Center][MicrosoftPartnerCenter] offers both individual and company accounts. The accounts are described in detail in the following bullets.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
+          The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts. The accounts are described in detail in the following bullets.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
 
           > [!IMPORTANT]
           > After enrollment, you are not able to change the value of this field.
@@ -130,7 +130,7 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
        :::column-end:::
     :::row-end:::
 
-1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement][MicrosoftAppDeveloperAgreement].
+1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement](/legal/windows/agreements/app-developer-agreement).
 
 1.  To complete your enrollment, select **Finish**.
 
@@ -138,26 +138,16 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 <!-- ====================================================================== -->
 ## Next steps
 
-To display your verification status, navigate to [Partner Center][MicrosoftPartnerCenter] and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To display your verification status, navigate to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
-*  [Publish an extension][ExtensionsChromiumPublishExtension]
+*  [Publish an extension](./publish-extension.md)
 
-*  [Extension concepts and architecture][ExtensionsChromiumGettingStartedIndex]
+*  [Extension concepts and architecture](../getting-started/index.md)
 
-*  [Add users to the Microsoft Edge program][AddandManageUsers] - Adding additional users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
+*  [Add users to the Microsoft Edge program](./aad-account.md) - Adding additional users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 *  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
-
-
-<!-- links -->
-[AddandManageUsers]: ./aad-account.md "Add users to the Microsoft Edge program | Microsoft Docs"
-[ExtensionsChromiumGettingStartedIndex]: ../getting-started/index.md "Extension concepts and architecture | Microsoft Docs"
-[ExtensionsChromiumPublishExtension]: ./publish-extension.md "Publish a Microsoft Edge extension | Microsoft Docs"
-[MicrosoftAppDeveloperAgreement]: /legal/windows/agreements/app-developer-agreement "App Developer agreement | Microsoft Docs"
-<!-- external links -->
-[MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"

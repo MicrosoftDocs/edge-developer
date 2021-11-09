@@ -11,7 +11,7 @@ keywords: edge-chromium, extensions development, browser extensions, addons, par
 
 # Content Security Policy (CSP)
 
-In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated the general concept of [Content Security Policy (CSP)][W3CContentSecurityPolicy].  This introduces some fairly strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that may be loaded and run by your Extensions and applications.
+In order to mitigate a large class of potential cross-site scripting issues, the Microsoft Edge Extension system has incorporated the general concept of [Content Security Policy (CSP)](https://w3c.github.io/webappsec-csp).  This introduces some fairly strict policies that make Extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that may be loaded and run by your Extensions and applications.
 
 In general, CSP works as a block/allowlisting mechanism for resources loaded or run by your Extensions.  Defining a reasonable policy for your Extension enables you to carefully consider the resources that your Extension requires, and to ask the browser to ensure that those are the only resources your Extension has access to.  The policies provide security over and above the host permissions your Extension requests; they are an additional layer of protection, not a replacement.
 
@@ -25,7 +25,7 @@ On the web, such a policy is defined via an HTTP header or `meta` element.  Insi
 }
 ```
 
-> For full details regarding the CSP syntax, please take a look at the [Content Security Policy specification][W3CContentSecurityPolicy] , and the ["An Introduction to Content Security Policy"][HTML5RocksIntroductionContentSecurityPolicy] article on HTML5Rocks.
+> For full details regarding the CSP syntax, please take a look at the [Content Security Policy specification](https://w3c.github.io/webappsec-csp) , and the ["An Introduction to Content Security Policy"](https://www.html5rocks.com/en/tutorials/security/content-security-policy) article on HTML5Rocks.
 
 
 <!-- ====================================================================== -->
@@ -193,13 +193,13 @@ Download the file, include it in your package, and write:
 
 As of Chrome 46, -->
 
-Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm (sha256, sha384 or sha512).  For an example, navigate to [Hash usage for \<script\> elements][W3CContentSecurityPolicyLevel2ScriptSrcHashUsage].
+Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm (sha256, sha384 or sha512).  For an example, navigate to [Hash usage for \<script\> elements](https://www.w3.org/TR/CSP2#script-src-hash-usage).
 
 **Remote Script**
 
-If you require some external JavaScript or object resources, you may relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and are not replaced by an active network attacker.  As [man-in-the-middle attacks][WikiManMiddleAttacks] are both trivial and undetectable over HTTP, those origins are not accepted.
+If you require some external JavaScript or object resources, you may relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and are not replaced by an active network attacker.  As [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) are both trivial and undetectable over HTTP, those origins are not accepted.
 
-Currently, developers are able to allowlist origins with the following schemes: `blob`, `filesystem`, `https`, and `extension`.  The host part of the origin must explicitly be specified for the `https` and `extension` schemes.  Generic wildcards such as https:, `https://*` and `https://*.com` are not allowed; subdomain wildcards such as `https://*.example.com` are allowed.  Domains in the [Public Suffix list][PublicSuffixList] are also viewed as generic top-level domains.  To load a resource from these domains, the subdomain must explicitly be listed.  For example, `https://*.cloudfront.net` is not valid, but `https://XXXX.cloudfront.net` and `https://*.XXXX.cloudfront.net` are able to be `allowlisted`.
+Currently, developers are able to allowlist origins with the following schemes: `blob`, `filesystem`, `https`, and `extension`.  The host part of the origin must explicitly be specified for the `https` and `extension` schemes.  Generic wildcards such as https:, `https://*` and `https://*.com` are not allowed; subdomain wildcards such as `https://*.example.com` are allowed.  Domains in the [Public Suffix list](https://publicsuffix.org/list) are also viewed as generic top-level domains.  To load a resource from these domains, the subdomain must explicitly be listed.  For example, `https://*.cloudfront.net` is not valid, but `https://XXXX.cloudfront.net` and `https://*.XXXX.cloudfront.net` are able to be `allowlisted`.
 
 For development ease, resources loaded over HTTP from servers on your local machine are able to be `allowlisted`.  You may allowlist script and object sources on any port of either `http://127.0.0.1` or `http://localhost`.
 
@@ -286,23 +286,10 @@ script.innerHTML = 'eval("alert(1);")';
 While the initial script runs, the call to `eval` is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.
 Thus, depending on how you write DOM injected scripts in your Extension, changes to the CSP of the page may affect the behavior of your Extension.  Since content scripts are not affected by the CSP of the page, this a great reason to put as much behavior as possible of your Extension into the content script rather than DOM injected scripts.
 
-<!-- image links -->
-
-<!-- links -->
-
-[HTML5RocksIntroductionContentSecurityPolicy]: https://www.html5rocks.com/en/tutorials/security/content-security-policy "An Introduction to Content Security Policy | HTML5 Rocks"
-[PublicSuffixList]: https://publicsuffix.org/list "VIEW THE PUBLIC SUFFIX LIST"
-[W3CContentSecurityPolicyLevel2ScriptSrcHashUsage]: https://www.w3.org/TR/CSP2#script-src-hash-usage "Hash usage for \<script\> elements - Content Security Policy Level 2 | W3C"
-[W3CContentSecurityPolicy]: https://w3c.github.io/webappsec-csp "Content Security Policy Level 3 | W3C"
-[WikiManMiddleAttacks]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack "Man-in-the-middle attack | Wikipedia"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/contentSecurityPolicy).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

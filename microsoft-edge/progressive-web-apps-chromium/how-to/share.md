@@ -26,7 +26,7 @@ PWAs that register as share targets feel more natively integrated into the OS an
 <!-- ====================================================================== -->
 ## Sharing content
 
-PWAs can use the [Web Share API][MDNWebShareAPI] to trigger the operating system share dialog.
+PWAs can use the [Web Share API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) to trigger the operating system share dialog.
 
 > [!NOTE]
 > Web sharing only works on sites served over HTTPS (which is the case for PWAs), and can only be invoked in response to a user action.
@@ -93,7 +93,7 @@ function shareSomeFiles(files) {
 }
 ```
 
-The `files` sharing object member must be an array of `File` objects. Learn more about the [File interface][MDNFileInterface].
+The `files` sharing object member must be an array of `File` objects. Learn more about the [File interface](https://developer.mozilla.org/docs/Web/API/File).
 
 One way to construct `File` objects is by using the `fetch` API to request a resource, and then creating a new `File` using the returned response as shown below.
 
@@ -109,23 +109,23 @@ In the above code snippet, the `getImageFileFromURL` function fetches an image u
 
 ### Demo
 
-[DevTools Tips][DemoDevToolsTips] is a PWA that uses the `navigator.share` function to share text and links.
+[DevTools Tips](https://devtoolstips.org/) is a PWA that uses the `navigator.share` function to share text and links.
 
 To test the feature:
 
-*  Go to [DevTools Tips][DemoDevToolsTips].
+*  Go to [DevTools Tips](https://devtoolstips.org/).
 *  Choose any of the tips displayed on the home page.
 *  Select **Share tip**.
 
 :::image type="content" source="../media/devtools-tips-share.png" alt-text="The Windows share dialog allows users to pick an app to share the content with." lightbox="../media/devtools-tips-share.png":::
 
-You can find the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, the app uses the Web Share API in the [share.js][DemoDevToolsTipsShareFunction] source file.
+You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/). In particular, the app uses the Web Share API in the [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) source file.
 
 
 <!-- ====================================================================== -->
 ## Receiving shared content
 
-Using the Web Share Target API, PWAs can also register to be displayed as apps in the system share dialog, and handle shared content coming from other apps. You can learn more about the Web Share Target API at the [Web Share Target API W3C specification draft][W3CWebShareTargetAPI].
+Using the Web Share Target API, PWAs can also register to be displayed as apps in the system share dialog, and handle shared content coming from other apps. You can learn more about the Web Share Target API at the [Web Share Target API W3C specification draft](https://w3c.github.io/web-share-target/level-2/).
 
 > [!NOTE]
 > Only installed PWAs can register as share targets.
@@ -223,7 +223,7 @@ self.addEventListener('fetch', event => {
 });
 ```
 
-In the above code snippet, the service worker intercepts the `POST` request, uses the data in some way (like storing the content locally for example), and redirects the user to a success page. This way, the app can work even if the network is down. It can choose to only store the content locally, or send it to the server later when connectivity is back (for example using [Background Sync][BackgroundSync]).
+In the above code snippet, the service worker intercepts the `POST` request, uses the data in some way (like storing the content locally for example), and redirects the user to a success page. This way, the app can work even if the network is down. It can choose to only store the content locally, or send it to the server later when connectivity is back (for example using [Background Sync](./background-syncs.md)).
 
 ### Handle files
 
@@ -282,18 +282,5 @@ self.addEventListener('fetch', event => {
 <!-- ====================================================================== -->
 ## See also
 
-*  [Integrate with the OS sharing UI with the Web Share API][ShareWebDev]
-*  [Receiving shared data with the Web Share Target API][ShareTargetWebDev]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MDNWebShareAPI]: https://developer.mozilla.org/docs/Web/API/Web_Share_API "Web Share API - Web APIs | MDN"
-[MDNFileInterface]: https://developer.mozilla.org/docs/Web/API/File "File - Web APIs | MDN"
-[W3CWebShareTargetAPI]: https://w3c.github.io/web-share-target/level-2/ "Web Share Target API | W3C"
-[BackgroundSync]: ./background-syncs.md "Synchronize and update in the background | Microsoft Docs"
-[ShareWebDev]: https://web.dev/web-share/ "Integrate with the OS sharing UI with the Web Share API | web.dev"
-[ShareTargetWebDev]: https://web.dev/web-share-target/ "Receiving shared data with the Web Share Target API | web.dev"
-[DemoDevToolsTips]: https://devtoolstips.org/ "DevTools Tips"
-[DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools Tips | GitHub"
-[DemoDevToolsTipsShareFunction]: https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38 "DevTools Tips | GitHub"
+*  [Integrate with the OS sharing UI with the Web Share API](https://web.dev/web-share/)
+*  [Receiving shared data with the Web Share Target API](https://web.dev/web-share-target/)

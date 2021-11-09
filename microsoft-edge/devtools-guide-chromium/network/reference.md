@@ -121,9 +121,7 @@ To manually clear the browser cache at any time, open the contextual menu (right
 
 ### Emulate offline
 
-A new class of web apps, named [Progressive Web Apps][DevtoolsProgressiveWebApps], functions offline with the help of **service workers**.  You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.
-
-<!--[ServiceWorkers]: /web/fundamentals/getting-started/primers/service-workers  -->
+A new class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md), functions offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.
 
 Choose the **No throttling** dropdown menu, search under **Presets**, and choose **Offline** to simulate an offline network experience.
 
@@ -336,7 +334,7 @@ Choose and drag left or right on the **Overview** pane to only display requests 
 
 ### Hide data URLs
 
-[Data URLs][MDNHTTPDataURIs] are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.
+[Data URLs](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) are small files embedded into other documents.  Any request that displays in the Requests table that starts with `data:` is a data URL.
 
 To hide the requests, turn off the **Hide data URLs** checkbox.
 
@@ -614,10 +612,7 @@ To display the cookies sent in the HTTP header of a request, use the following s
 1.  Choose the URL of the request, under the **Name** column of the Requests table.
 1.  Choose the **Cookies** panel.
 
-<!--For more information about each of the columns, navigate to [Fields][ManageDataCookiesFields].  -->
-
-<!--[ManageDataCookiesFields]: manage-data/cookies#fields  -->
-<!--TODO: add link when section is available -->
+<!--For more information about each of the columns, navigate to [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
 :::image type="complex" source="../media/network-network-resources-cookies.msft.png" alt-text="The Cookies panel" lightbox="../media/network-network-resources-cookies.msft.png":::
    The Cookies panel
@@ -697,7 +692,7 @@ More information about each of the phases that may display in the **Timing** pan
       **Proxy negotiation**
    :::column-end:::
    :::column span="2":::
-      The browser is negotiating the request with a [proxy server][WikiProxyServer].
+      The browser is negotiating the request with a [proxy server](https://en.wikipedia.org/wiki/Proxy_server).
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -843,10 +838,7 @@ To save all network requests to a HAR file, complete the following steps.
 1.  Choose **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You are not able to filter requests.  You are also not able to save a single request.
 
 Once you save a HAR file, you may import it back into DevTools for analysis.  Just drag-and-drop the HAR file into the Requests table.
-<!--For more information, navigate to also [HAR Analyzer][HARAnalyzer].  -->
-
-<!--[HARAnalyzer]: https://toolbox.alphabetapps.com/apps/har_analyzer  -->
-<!--Todo: add section link when content is available  -->
+<!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
 
 :::image type="complex" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Choose Save as HAR with Content" lightbox="../media/network-network-requests-save-har-content.msft.png":::
    Choose **Save as HAR with Content**
@@ -994,23 +986,9 @@ By default, DevTools displays the **Overview** pane.  To hide it, turn off the *
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsProgressiveWebApps]: ../progressive-web-apps/index.md "Debug Progressive Web Apps | Microsoft Docs"
-<!--[NetworkConditions]: /microsoft-edge/devtools-guide-chromium/network/network-conditions "Optimize Performance Under Varying Network Conditions | Microsoft Docs"  -->
-<!-- external links -->
-[MDNHTTPDataURIs]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Data_URIs "Data URLs | MDN"
-[WikiProxyServer]: https://en.wikipedia.org/wiki/Proxy_server "Proxy server - Wikipedia"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

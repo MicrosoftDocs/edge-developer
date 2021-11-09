@@ -19,7 +19,7 @@ There are several ways to get in touch with the Microsoft Edge DevTools team.
 <!-- ====================================================================== -->
 ## Use the Send Feedback window
 
-To report a bug in DevTools or to request a new feature, [open DevTools][OpeningDevTools] and then select the **Send Feedback** icon.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
+To report a bug in DevTools or to request a new feature, [open DevTools](index.md#opening-devtools) and then select the **Send Feedback** icon.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
 
 :::image type="content" source="../media/devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="../media/devtools-send-feedback.msft.png":::
 
@@ -33,19 +33,19 @@ Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
 To enter a GitHub issue from within a documentation article, in the **Feedback** section at the bottom of an article, select the **This page** button.
 
-Or you can [file an issue][GitHubMicrosoftDocsEdgeDeveloperNewIssue] against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.
+Or you can [file an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback]) against the Microsoft Edge Developer documentation, directly in the `edge-developer` repo.
 
 
 <!-- ====================================================================== -->
 ## Send a tweet to EdgeDevTools
 
-Microsoft Edge DevTools has an [EdgeDevTools Twitter account][EdgeDevToolsTwitterAccount] with news.  Regarding developing with DevTools in Microsoft Edge, you can send a tweet to [@EdgeDevTools][PostTweetEdgeDevTools].
+Microsoft Edge DevTools has an [EdgeDevTools Twitter account](https://twitter.com/EdgeDevTools) with news.  Regarding developing with DevTools in Microsoft Edge, you can send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools).
 
 
 <!-- ====================================================================== -->
 ## Submit a cross-browser suggestion to the Web We Want
 
-To make a feature request across browser teams or standards bodies, submit a request at [The Web We Want initiative][WebWeWant].
+To make a feature request across browser teams or standards bodies, submit a request at [The Web We Want initiative](../web-we-want/index.md).
 
 The Web We Want is a cross-browser initiative to identify missing features for web standards or browsers.  Use this communication channel to let browser vendors and standards groups know your request.
 
@@ -55,14 +55,3 @@ The Web We Want is a cross-browser initiative to identify missing features for w
 *  Use the links to resources.
 
 You can follow the Web We Want initiative on Twitter or LinkedIn, and participate in surveys to prioritize submitted Wants.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[OpeningDevTools]: index.md#opening-devtools "OpeningDevTools - Microsoft Edge Developer Tools overview | Microsoft Edge Developer documentation"
-[WebWeWant]: ../web-we-want/index.md "The Web We Want initiative | Microsoft Edge Developer documentation"
-<!-- external links -->
-[PostTweetEdgeDevTools]: https://twitter.com/intent/tweet?text=@EdgeDevTools "@EdgeDevTools | Post a Tweet"
-[EdgeDevToolsTwitterAccount]: https://twitter.com/EdgeDevTools "@EdgeDevTools Twitter account"
-[GitHubMicrosoftDocsEdgeDeveloperNewIssue]: https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[DevTools%20Docs%20Feedback] "New Issue - MicrosoftDocs/edge-developer - GitHub"
-[ContributeEdgeDevDocsRepo]: https://github.com/MicrosoftDocs/edge-developer#contributing "contribute to the edge-developer documentation repo | Microsoft Edge Developer documentation"

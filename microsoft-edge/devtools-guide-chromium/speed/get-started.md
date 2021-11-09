@@ -1,6 +1,6 @@
 ---
 description: Learn how to use Microsoft Edge DevTools to find ways to make your websites load faster.
-title: Optimize website speed with Microsoft Edge DevTools
+title: Optimize website speed
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Optimize website speed with Microsoft Edge DevTools
+# Optimize website speed
 
 
 <!-- ====================================================================== -->
@@ -33,7 +33,7 @@ This tutorial teaches you how to use Microsoft Edge DevTools to find ways to mak
 <!-- ====================================================================== -->
 ## Prerequisites
 
-*   You should have basic web development experience, similar to what is taught in this [Introduction to Web Development class][CourseraIntroductionWebDevelopmentClass].
+*   You should have basic web development experience, similar to what is taught in this [Introduction to Web Development class](https://www.coursera.org/learn/web-development#syllabus).
 *   You do not need to know anything about load performance.  You learn about it in this tutorial.
 
 
@@ -227,7 +227,7 @@ Check for compression by inspecting the HTTP headers of a resource:
        The **Headers** panel
     :::image-end:::
 
-1.  Search the **Response Headers** section for a `content-encoding` header.  A `content-encoding` heading is not displayed, meaning that `bundle.js` was not compressed.  When a resource is compressed, this header is usually set to `gzip`, `deflate`, or `br`.  For an explanation of the values, navigate to [Directives][MDNContentEncodingDirectives].
+1.  Search the **Response Headers** section for a `content-encoding` header.  A `content-encoding` heading is not displayed, meaning that `bundle.js` was not compressed.  When a resource is compressed, this header is usually set to `gzip`, `deflate`, or `br`.  For an explanation of the values, see [Directives](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives).
 
 Enough with the explanations.  Time to make some changes.  Enable text compression by adding a couple of lines of code:
 
@@ -322,14 +322,10 @@ The change displays only has a minor affect on the overall performance score.  H
 For a small app, doing a one-off resize like this may be good enough.  But for a large app, this obviously is not scalable.  Here are some strategies for managing images in large apps:
 
 *   Resize images during your build process.
-*   Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.
-    <!--Navigate to [Relative-sized images][relative].  -->
-
-<!--[relative]: /web/fundamentals/design-and-ux/responsive/images#relative_sized_images  -->
-
+*   Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.  <!-- See [Relative-sized images](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images#relative_sized_images). -->
 *   Use an image CDN that lets you dynamically resize an image when you request it.
 *   At the very least, optimize each image.  This may create huge savings.
-  Optimization is when you run an image through a special program that reduces the size of the image file.  For more tips, navigate to [Essential Image Optimization][EssentialImageOptimization].
+  Optimization is when you run an image through a special program that reduces the size of the image file.  For more tips, see [Essential Image Optimization](https://images.guide).
 
 ### Eliminate render-blocking resources
 
@@ -413,12 +409,10 @@ Now, remove the references to these files from the code and audit the page again
 
 The **Critical Rendering Path** refers to the code that you need to load a page.  In general, speed up page load by only shipping critical code during the page load, and then lazy-loading everything else.
 
-<!--[CRP]: /web/fundamentals/performance/critical-rendering-path/  -->
+<!-- [Critical Rendering Path](/web/fundamentals/performance/critical-rendering-path/) -->
 
-*   It is unlikely that you are able to find scripts that you are able to remove outright, but you may find many scripts that you do not need to request during the page load, and instead may be requested asynchronously.  <!--Navigate to [Using async or defer][async].  -->
-*   If you are using a framework, check if it has a production mode.  This mode may use a feature such as [tree shaking][WebpackTreeShaking] in order to eliminate unnecessary code that is blocking the critical render.
-
-<!--[async]: /web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer  -->
+*   It is unlikely that you are able to find scripts that you are able to remove outright, but you may find many scripts that you do not need to request during the page load, and instead may be requested asynchronously.  <!-- See [Using async or defer](/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#use_async_or_defer). -->
+*   If you are using a framework, check if it has a production mode.  This mode may use a feature such as [tree shaking](https://webpack.js.org/guides/tree-shaking) in order to eliminate unnecessary code that is blocking the critical render.
 
 ### Do less main thread work
 
@@ -445,7 +439,7 @@ The trace shows activity chronologically, from left to right.  The FPS, CPU, and
 
 Investigate the trace to find ways to do less JavaScript work:
 
-1.  Choose the **Timings** section to expand it.  Based on the fact that there may be a bunch of [Timings][MDNUserTimingApi] measures from React, it seems like Tony's app is using the development mode of React.  Switching to the production mode of React may yield some easy performance wins.
+1.  Choose the **Timings** section to expand it.  Based on the fact that there may be a bunch of [Timings](https://developer.mozilla.org/docs/Web/API/User_Timing_API) measures from React, it seems like Tony's app is using the development mode of React.  Switching to the production mode of React may yield some easy performance wins.
 
     :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="The Timings section" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        The **Timings** section
@@ -500,15 +494,13 @@ Reduce JavaScript activity by removing the request to `mineBitcoin`:
 Looks like that last change caused a massive jump in performance!
 
 > [!NOTE]
-> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, navigate to [Performance Analysis Reference][DevtoolsEvaluatePerformanceReference].
-
-<!--todo: add section when available -->
+> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, see [Performance features reference](../evaluate-performance/reference.md).
 
 #### Doing less main thread work in the real world
 
 In general, the **Performance** tool is the most common way to understand what activity your site does as it loads, and find ways to remove unnecessary activity.
 
-If you prefer an approach that feels more like `console.log()`, the [User Timing API][MDNUserTimingApi] enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.
+If you prefer an approach that feels more like `console.log()`, the [User Timing API](https://developer.mozilla.org/docs/Web/API/User_Timing_API) enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.
 
 
 <!-- ====================================================================== -->
@@ -517,37 +509,20 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 *   Whenever you set out to optimize the load performance of a site, always start with an audit.  The audit establishes a baseline, and gives you tips on how to improve.
 *   Make one change at a time, and audit the webpage after each change in order to display how that isolated change affects performance.
 
+
+<!-- ====================================================================== -->
 <!--
 ## Next steps
 
 *   Run audits on your own site!  If you need help interpreting your report, or finding ways to improve your load performance, check out [Feedback](#feedback) for ways to get help from the DevTools community.  Stack Overflow, the mailing list, or Twitter are probably best for these types of questions.
-*   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.
+*   Please leave [feedback](#feedback) on this tutorial.  The data is used to make better tutorials.
 -->
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsEvaluatePerformanceReference]: ../evaluate-performance/reference.md "Performance analysis reference | Microsoft Docs"
-<!-- external links -->
-[CourseraIntroductionWebDevelopmentClass]: https://www.coursera.org/learn/web-development#syllabus "Introduction to Web Development class | Coursera"
-
-[EssentialImageOptimization]: https://images.guide "Essential Image Optimization"
-
-[MDNContentEncodingDirectives]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Encoding#Directives "Directives - Content-Encoding | MDN"
-[MDNUserTimingApi]: https://developer.mozilla.org/docs/Web/API/User_Timing_API "User Timing API | MDN"
-
-[WebpackTreeShaking]: https://webpack.js.org/guides/tree-shaking "Tree Shaking | webpack"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article describes common terms used in memory analysis, and is applicable to various memory profiling tools for different languages.
 
-The terms and notions described here refer to the [Memory panel][DevtoolsMemoryProblemsHeapSnapshots].  If you have ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
+The terms and notions described here refer to the [Memory panel](./heap-snapshots.md).  If you have ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
 
 
 <!-- ====================================================================== -->
@@ -42,7 +42,7 @@ An object may hold memory in two ways:
 *   Directly by the object.
 *   Implicitly by holding references to other objects, and therefore preventing those objects from being automatically disposed by a garbage collector.
 
-When working with the [Memory][DevtoolsMemoryProblemsHeapSnapshots] panel in DevTools (a tool for investigating memory issues found under **Memory**), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?
+When working with the [Memory](./heap-snapshots.md) panel in DevTools (a tool for investigating memory issues found under **Memory**), you may find yourself looking at a few different columns of information.  Two that stand out are **Shallow Size** and **Retained Size**, but what do these represent?
 
 :::image type="complex" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Shallow and Retained Size" lightbox="../media/memory-problems-shallow-retained.msft.png":::
    Shallow and Retained Size
@@ -69,7 +69,7 @@ There are lots of internal Garbage Collector roots, most of which are not intere
 *   Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
 
 >[!TIP]
-> Before taking a heap snapshot in the [Memory][DevtoolsMemoryProblemsHeapSnapshots] tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.
+> Before taking a heap snapshot in the [Memory](./heap-snapshots.md) tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You do not control how the root object is garbage collected.
 
@@ -91,7 +91,7 @@ The heap is a network of interconnected objects.  In the mathematical world, thi
 *   **Nodes** (or **objects**) are labelled using the name of the **constructor** function that was used to build them.
 *   **Edges** are labelled using the names of **properties**.
 
-Learn [how to record a profile using the Heap Profiler][DevtoolsMemoryProblemsHeapSnapshots].  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory][DevtoolsMemoryProblemsHeapSnapshots] tool include distance:  the distance from the Garbage Collector root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.
+Learn [how to record a profile using the Heap Profiler](./heap-snapshots.md).  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory](./heap-snapshots.md) tool include distance:  the distance from the Garbage Collector root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that is something worth investigating.
 
 :::image type="complex" source="../media/memory-problems-root.msft.png" alt-text="Distance from root" lightbox="../media/memory-problems-root.msft.png":::
    Distance from root
@@ -164,7 +164,7 @@ A typical JavaScript object is stored as only one of two **array** types:
 
 When there are a small number of properties, the properties are stored internally in the JavaScript object.
 
-**Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access][V8FastProperties].
+**Map** is an object that describes both the kind of object it is and the layout. For example, maps are used to describe implicit object hierarchies for [fast property access](https://v8.dev/blog/fast-properties).
 
 ### Object groups
 
@@ -177,20 +177,9 @@ Each wrapper object holds a reference to the corresponding native object, for re
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsMemoryProblemsHeapSnapshots]: ./heap-snapshots.md "How to Record Heap Snapshots | Microsoft Docs"
-
-[V8FastProperties]: https://v8.dev/blog/fast-properties "Fast properties in V8 | V8"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

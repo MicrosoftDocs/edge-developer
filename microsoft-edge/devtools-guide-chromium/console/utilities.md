@@ -323,7 +323,7 @@ debug("debug");
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to turn off all breakpoints.
 
-For more information on breakpoints, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools](../javascript/breakpoints.md).
+For more information on breakpoints, navigate to [Pause your code with breakpoints](../javascript/breakpoints.md).
 
 ---
 

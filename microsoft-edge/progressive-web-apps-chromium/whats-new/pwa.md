@@ -52,7 +52,7 @@ We expect the [protocol handlers origin trial](#protocol-handlers-origin-trial) 
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 94
 
-Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle][4weekReleaseBlog].  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle][Chromium4weekM].
+Microsoft Edge version 94 moved to Stable on September 23, 2021. This release cycle was short—just<!-- em dash --> 3 weeks from Microsoft Edge 93 Stable to Microsoft Edge 94 Stable, as we snapped to the new [4-week release cycle](https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/).  This new release cadence matches the new cadence of Chromium milestones, described in [Speeding up Chrome's release cycle](https://blog.chromium.org/2021/03/speeding-up-release-cycle.html).
 
 Due to the shortened release cycle of Microsoft Edge version 94, we focused on stabilizing the release cycle logistics, and we shifted feature development to Microsoft Edge version 95.
 
@@ -74,29 +74,29 @@ Microsoft Edge now includes a referrer header with the request for the first nav
 
 This feature was first introduced in Microsoft Edge version 91, and we shipped a bug fix in Microsoft Edge version 93.
 
-Learn more in [Publish your Progressive Web App to the Microsoft Store][StoreandPWAs].
+Learn more in [Publish your Progressive Web App to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-store-installed-pwa).
 
 ### Window Controls Overlay origin trials
 
 To have more control over the title bar area that's currently displayed in standalone display mode, you may want to experiment with Window Controls Overlay. Window Controls Overlay (WCO) is a set of features that work together to provide just the essential controls needed for the app window. This layout frees up more space for the web content layer. WCO is available for installed desktop PWAs.
 
-Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)][ExpWCO].
+Learn more about experimenting with Window Controls Overlay at [Experimental features in Progressive Web Apps (PWAs)](../how-to/window-controls-overlay.md).
 
-Register your origin for the **Web App Window Controls Overlay** trial at our [Origin Trials Developer Console][WCOOT].
+Register your origin for the **Web App Window Controls Overlay** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/).
 
 ### URL Handlers origin trial
 
 Developers can now use the experimental feature Web App URL Handlers in origin trial. This feature allows the registration of an installed PWA to open links from other apps that refer to its scope.
 
-Learn more about experimenting with URL handlers at [Experimental features in Progressive Web Apps (PWAs)][ExpURLHandler].
+Learn more about experimenting with URL handlers at [Experimental features in Progressive Web Apps (PWAs)](../how-to/handle-urls.md).
 
-Register your domain for the **Web App URL Handlers** trial at our [Origin Trials Developer Console][URLHandlerOT].
+Register your domain for the **Web App URL Handlers** trial at our [Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/).
 
 ### Support for the Share API on macOS
 
 We have implemented support for the `navigator.share` API for macOS. The feature is rolling out to stable Microsoft Edge browsers on macOS over the coming weeks.
 
-Learn more about the [navigator.share() API][mdnShareAPI].
+Learn more about the [navigator.share() API](https://developer.mozilla.org/docs/Web/API/Navigator/share).
 
 
 <!-- ====================================================================== -->
@@ -106,9 +106,9 @@ Microsoft Edge version 92 became the stable channel of Microsoft Edge on July 22
 
 ### Protocol handlers origin trial
 
-You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the [origin trial signup page][MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration].
+You can now register your PWA to handle specific protocols with the host operating system. The Windows trial for protocol handlers is now available. You can register your origin for the **Web App Protocol Handler** trial at the [origin trial signup page](https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration).
 
-Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)][ExpProtocolHandlers].
+Learn more about using protocol handlers with your PWA at [Experimental features in Progressive Web Apps (PWAs)](../how-to/handle-protocols.md).
 
 ### Streamlined App Info menu
 
@@ -144,33 +144,3 @@ This feature is being rolled out gradually to all users.  In the meantime, if yo
 Installed sites and PWAs that were running before an unexpected shutdown will now restore (that is, they will be restarted) when the system recovers.
 
 An unexpected shutdown can occur due to process failure, system restart, or power outage. Before this change, installed sites and PWAs had indeterminate behavior upon system restore.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[StoreandPWAs]: ../how-to/microsoft-store.md#measure-usage-of-your-store-installed-pwa "Measure usage of your Store-installed PWA - Publish your Progressive Web App to the Microsoft Store"
-
-<!-- ====================================================================== -->
-<!-- links -->
-[ExpWCO]: ../how-to/window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
-[ExpProtocolHandlers]: ../how-to/handle-protocols.md "Handle protocols in Progressive Web Apps | Microsoft Docs"
-[ExpURLHandler]: ../how-to/handle-urls.md "Handle URLs in Progressive Web Apps | Microsoft Docs"
-
-<!-- external links -->
-<!-- origin trials -->
-[MicrosoftDeveloperMicrosoftEdgeOriginTrials]: https://developer.microsoft.com/microsoft-edge/origin-trials "Origin Trials | Microsoft Edge Developer"
-
-[MicrosoftDeveloperMicrosoftEdgeOriginTrialsWebAppProtocolHandlerRegistrationRegistration]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-protocol-handler-registration/registration "Register for Web App Protocol Handler origin trial | Microsoft Developer"
-
-[URLHandlerOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-url-handlers/registration/ "Register for Web App URL Handler origin trial | Microsoft Edge Developer"
-
-[WCOOT]: https://developer.microsoft.com/microsoft-edge/origin-trials/web-app-window-controls-overlay/registration/ "Register for Web App Window Controls Overlay origin trial | Microsoft Edge Developer"
-
-<!-- other -->
-[mdnShareAPI]: https://developer.mozilla.org/docs/Web/API/Navigator/share "navigator.share() method of the Web Share API | MDN"
-
-[4weekReleaseBlog]: https://blogs.windows.com/msedgedev/2021/03/12/new-release-cycles-microsoft-edge-extended-stable/ "Serving our customers more effectively with new release cycles for Microsoft Edge | Microsoft Edge Blog"
-
-[Chromium4weekM]: https://blog.chromium.org/2021/03/speeding-up-release-cycle.html "Speeding up Chrome's release cycle | Chromium Blog"
-
-<!--[ArchiveMicrosoftEdgeLegacyDeveloperPWAsIndexRequirements]: /archive/microsoft-edge/legacy/developer/progressive-web-apps/index#requirements "Requirements - Progressive Web Apps (EdgeHTML) on Windows | Microsoft Docs"  -->

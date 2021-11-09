@@ -31,7 +31,7 @@ Use the **Media** tool in Microsoft Edge DevTools to view information and debug 
 
 The **Media** tool is the main place in DevTools for inspecting the media player of a webpage.
 
-1.  [Open DevTools][DevtoolsGuideChromiumOpen].
+1.  [Open DevTools](../open/index.md).
 1.  To open the **Media** panel, choose **Customize and control DevTools** `...` > **More tools** > **Media**.
 
     :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Media panel" lightbox="../media/media-panel-empty.msft.png":::
@@ -44,7 +44,7 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 
 1.  Navigate to a webpage with a media player, such as the following webpage.
 
-    [Maximizing productivity with the Edge Developer Tools][BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]
+    [Maximizing productivity with the Edge Developer Tools](https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8)
 
 1.  Under the **Players** menu, a media player is displayed.
 1.  Choose the player.  The **Properties** panel displays the properties of the media player.
@@ -75,7 +75,7 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 
 View the media players information on an Android device from your Windows or macOS computer.
 
-1.  To set up remote debugging, navigate to [Get started with remote debugging Android devices][DevtoolsGuideChromiumRemoteDebuggingIndex].
+1.  To set up remote debugging, navigate to [Get started with remote debugging Android devices](../remote-debugging/index.md).
 1.  View the media players information remotely.
 
     <!-- TODO: recreate image using an Android device -->
@@ -114,24 +114,9 @@ You may choose to hide (or show) each media player for an easier debugging exper
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[DevtoolsGuideChromiumOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-
-[DevtoolsGuideChromiumRemoteDebuggingIndex]: ../remote-debugging/index.md "Get started with remote debugging Android devices | Microsoft Docs"
-
-[BingVideosSearchViewDetailMidE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8]: https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8 "Maximizing Productivity with the Edge Developer Tools | Bing Video"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen][JecelynYeen] (Developer advocate, Chrome DevTools).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[JecelynYeen]: https://developers.google.com/web/resources/contributors#jecelyn-yeen
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

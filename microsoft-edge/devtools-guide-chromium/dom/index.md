@@ -33,7 +33,7 @@ This tutorial assumes that you know the difference between the DOM and HTML. Nav
 
 1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and choose **DOM Examples** to open in a new tab.
 
-    [DOM Examples][GlitchDomExamples]
+    [DOM Examples](https://microsoft-edge-chromium-devtools.glitch.me/static/dom)
 
 
 <!-- ====================================================================== -->
@@ -66,7 +66,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 1.  Under **Inspect a Node**, choose the **Tokyo** text.  Now, `<li>Tokyo</li>` is highlighted in the DOM Tree.
 
-Inspecting a node is also the first step towards viewing and changing the styles of a node.  Navigate to [Get Started With Viewing And Changing CSS][DevToolsCssGetStarted].
+Inspecting a node is also the first step towards viewing and changing the styles of a node.  Navigate to [Get Started With Viewing And Changing CSS](../css/index.md).
 
 ### Navigate the DOM Tree with a keyboard
 
@@ -321,9 +321,9 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 <!-- ====================================================================== -->
 ## Next steps
 
-That covers most of the DOM-related features in DevTools.  You are able to discover the rest of the features by hovering on nodes in the DOM Tree, opening the contextual menu (right-click), and experimenting with the other options that were not covered in this tutorial.  Navigate to [Elements panel keyboard shortcuts][DevToolsShortcutsElements].
+That covers most of the DOM-related features in DevTools.  You are able to discover the rest of the features by hovering on nodes in the DOM Tree, opening the contextual menu (right-click), and experimenting with the other options that were not covered in this tutorial.  Navigate to [Elements panel keyboard shortcuts](../shortcuts/index.md#elements-tool-keyboard-shortcuts).
 
-Check out the [Microsoft Edge DevTools homepage][MicrosoftEdgeDevTools] to discover everything else you are able to do with DevTools.
+Check out the [Microsoft Edge DevTools homepage](../../devtools-guide-chromium/index.md) to discover everything else you are able to do with DevTools.
 
 <!--Navigate to [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 
@@ -397,7 +397,7 @@ This tree of objects, or nodes, representing the content of the page is called t
 
 The HTML for the page is now different than the DOM.  In other words, HTML represents initial page content, and the DOM represents current page content.  When JavaScript adds, removes, or edits nodes, the DOM becomes different than the HTML.
 
-Navigate to [Introduction to the DOM][MDNIntroductionToDOM] to learn more.
+Navigate to [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) to learn more.
 
 <!--
 
@@ -426,23 +426,9 @@ Many of the instructions in this tutorial instruct you to hover on a node in the
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-[DevToolsCssGetStarted]: ../css/index.md "Get Started With Viewing And Changing CSS | Microsoft Docs"
-[DevToolsShortcutsElements]: ../shortcuts/index.md#elements-tool-keyboard-shortcuts "Elements tool keyboard shortcuts - Microsoft Edge DevTools Keyboard Shortcuts | Microsoft Docs"
-<!-- external links -->
-[GlitchDomExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/dom "Microsoft Edge DevTools DOM Example | Glitch"
-[MDNIntroductionToDOM]: https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction "Introduction to the DOM | MDN"
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/dom/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/dom/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

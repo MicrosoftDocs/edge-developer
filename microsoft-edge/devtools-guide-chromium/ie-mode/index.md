@@ -71,11 +71,11 @@ IE mode remains unavailable until you close and restart Microsoft Edge.
 <!-- ====================================================================== -->
 ## Replace Internet Explorer automation
 
-If you have an existing application that uses the [InternetExplorer][InternetExplorerObject] object to automate Internet Explorer 11, but the Internet Explorer 11 desktop application isn't available, your application won't work.  Internet Explorer 11 will be retired on June 15, 2022.  For more information, navigate to [The future of Internet Explorer on Windows 10 is in Microsoft Edge][BlogsWindowsExperienceFutureOfIEEdge].
+If you have an existing application that uses the [InternetExplorer](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) object to automate Internet Explorer 11, but the Internet Explorer 11 desktop application isn't available, your application won't work.  Internet Explorer 11 will be retired on June 15, 2022.  For more information, navigate to [The future of Internet Explorer on Windows 10 is in Microsoft Edge](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
 
-Microsoft Edge doesn't support automating IE mode through the `InternetExplorer` object, so applications that rely on this object will need to be updated, by using one of the recommended alternatives below.  Applications that use the [WebBrowser][WebBrowserControl] control will continue to work, and won't be affected by the removal of Internet Explorer 11.
+Microsoft Edge doesn't support automating IE mode through the `InternetExplorer` object, so applications that rely on this object will need to be updated, by using one of the recommended alternatives below.  Applications that use the [WebBrowser](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)) control will continue to work, and won't be affected by the removal of Internet Explorer 11.
 
-If your automation application doesn't require IE mode for the website (or app) content to function correctly, we recommend updating your application to use Microsoft Edge instead of Internet Explorer 11.  Many available automation tools support Microsoft Edge, including WebDriver and Playwright.  To learn more about automating Microsoft Edge using WebDriver, navigate to [Use WebDriver to automate Microsoft Edge][WebDriverIndex].  To learn more about using Playwright, navigate to [Use Playwright to automate and test in Microsoft Edge][PlaywrightIndex].
+If your automation application doesn't require IE mode for the website (or app) content to function correctly, we recommend updating your application to use Microsoft Edge instead of Internet Explorer 11.  Many available automation tools support Microsoft Edge, including WebDriver and Playwright.  To learn more about automating Microsoft Edge using WebDriver, navigate to [Use WebDriver to automate Microsoft Edge](../../webdriver-chromium/index.md).  To learn more about using Playwright, navigate to [Use Playwright to automate and test in Microsoft Edge](../../playwright/index.md).
 
 Applications that require IE mode for the website (or app) content to function correctly should use the `WebBrowser` control.  The `WebBrowser` control uses the Internet Explorer platform (MSHTML/Trident) to render web content, and will work even if the Internet Explorer 11 desktop application isn't available.
 
@@ -83,23 +83,6 @@ Applications that require IE mode for the website (or app) content to function c
 <!-- ====================================================================== -->
 ## See also
 
-*  [What is Internet Explorer (IE) mode?][EnterpriseWhatIsIEMode]
-*  [Configure IE mode policies][EnterpriseConfigureIEModePolicies]
-*  [Fix web compatibility issues using document modes and the Enterprise Mode site list][IEDocumentModes]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[PlaywrightIndex]: ../../playwright/index.md "Use Playwright to automate and test in Microsoft Edge | Microsoft Edge Developer docs"
-[WebDriverIndex]: ../../webdriver-chromium/index.md "Use WebDriver to automate Microsoft Edge | Microsoft Edge Developer docs"
-<!-- external links -->
-[EnterpriseWhatIsIEMode]: /deployedge/edge-ie-mode "What is Internet Explorer (IE) mode? | Microsoft Edge Enterprise docs"
-[EnterpriseConfigureIEModePolicies]: /deployedge/edge-ie-mode-policies "Configure IE mode policies | Microsoft Edge Enterprise docs"
-[IEDocumentModes]: /internet-explorer/ie11-deploy-guide/fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list "Fix web compatibility issues using document modes and the Enterprise Mode site list | Internet Explorer docs"
-
-[BlogsWindowsExperienceFutureOfIEEdge]: https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/ "The future of Internet Explorer on Windows 10 is in Microsoft Edge | Windows Experience blog"
-
-[PreviousVersionsWindowsInternetExplorerDeveloperSamplesbg182326]: /previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v%3dvs.85) "Using the F12 developer tools | Archived Microsoft Edge Developer docs"
-
-[InternetExplorerObject]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85) "InternetExplorer object (Windows) | Archived Microsoft Edge Developer docs"
-[WebBrowserControl]: /previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85) "WebBrowser Control (Internet Explorer) | Archived Microsoft Edge Developer docs"
+*  [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
+*  [Configure IE mode policies](/deployedge/edge-ie-mode-policies)
+*  [Fix web compatibility issues using document modes and the Enterprise Mode site list](/internet-explorer/ie11-deploy-guide/fix-compat-issues-with-doc-modes-and-enterprise-mode-site-list)

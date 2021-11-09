@@ -19,7 +19,7 @@ CSS provides better support for typography in recent years.  Dozens of different
 
 To make it easier when working with typography, a visual **Font Editor** is now in the **Styles** pane.  You may change your font settings, and the changes are rendered immediately in the browser.  All without in-depth knowledge of CSS.
 
-Currently the **Enable new font editor tool within the Styles pane** feature is experimental and you need to [turn it on for Microsoft Edge Developer Tools][DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures].
+Currently the **Enable new font editor tool within the Styles pane** feature is experimental and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-on-experimental-features).
 
 Any CSS in the **Styles** pane, either font definitions or inline styles, automatically displays an icon that opens the visual **Font Editor**.  To open the visual **Font Editor**, choose the **Font Editor** icon.
 
@@ -102,10 +102,3 @@ The CSS Properties editor also includes preset keywords.  To use the preset keyw
 :::image type="complex" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="Open the preset keyword interface" lightbox="../media/font-editor-preset-font-sizes.msft.png":::
    Open the preset keyword interface
 :::image-end:::
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsIndex]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-[DevtoolsExperimentalFeaturesIndex]: ../experimental-features/index.md "Experimental features | Microsoft Docs"
-[DevtoolsExperimentalFeaturesIndexTurnOnExperimentalFeatures]: ../experimental-features/index.md#turning-on-experimental-features "Turning on experimental features - Experimental features | Microsoft Docs"

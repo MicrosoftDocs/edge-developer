@@ -31,7 +31,7 @@ Asynchronous methods in the WebView2 Win32 C++ API use a delegate interface to c
 
 The final parameter for all asynchronous methods is a pointer to a delegate interface of which you provide an implementation.
 
-The delegate interface has a single `Invoke` method that takes as a first parameter an `HRESULT` of the success or failure code.  Additionally, there may be a second parameter that is the result of the method if the method has a result.  For example, the [ICoreWebView2::CapturePreview][Webview2ReferenceWin32Icorewebview2CapturePreview] method takes as the final parameter an `ICoreWebView2CapturePreviewCompletedHandler` pointer.  To send a `CapturePreview` method request, you provide an instance of the `ICoreWebView2CapturePreviewCompletedHandler` pointer that you implement.  The following code snippet uses one method to implement.
+The delegate interface has a single `Invoke` method that takes as a first parameter an `HRESULT` of the success or failure code.  Additionally, there may be a second parameter that is the result of the method if the method has a result.  For example, the [ICoreWebView2::CapturePreview](/microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview) method takes as the final parameter an `ICoreWebView2CapturePreviewCompletedHandler` pointer.  To send a `CapturePreview` method request, you provide an instance of the `ICoreWebView2CapturePreviewCompletedHandler` pointer that you implement.  The following code snippet uses one method to implement.
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -41,7 +41,7 @@ You implement the `Invoke` method and `CoreWebView2` requests your `Invoke` meth
 
 Alternately, for `ICoreWebView2::ExecuteScript`, you provide an instance that has an `Invoke` method that provides you with the success or failure code of the `ExecuteScript` request.  Also provide the second parameter that is the JSON of the result of running the script.
 
-You may manually implement the `CompleteHandler` delegate interfaces, or you may use the [Callback function (WRL)][CppCxWrlCallbackFunction].  The [Callback function (WRL)][CppCxWrlCallbackFunction] is used throughout the following WebView2 code snippet.
+You may manually implement the `CompleteHandler` delegate interfaces, or you may use the [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl).  The [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl) is used throughout the following WebView2 code snippet.
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -81,7 +81,7 @@ For instance, the `NavigationCompleted` event on `ICoreWebView2` has the `ICoreW
 Similar to the async method completed handler delegate interface, use one of the following actions to set it up.
 
 *   Implement it directly.
-*   Use the [Callback function (WRL)][CppCxWrlCallbackFunction] function that is used in the following WebView2 code snippet.
+*   Use the [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl) function that is used in the following WebView2 code snippet.
 
 <!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->
 
@@ -140,12 +140,5 @@ Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO
 <!-- ====================================================================== -->
 ## See also
 
-*  [Get started with WebView2][Webview2IndexGetStarted] - WebView2 Win32 C/C++.
-*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Webview2ReferenceWin32Icorewebview2CapturePreview]: /microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview "CapturePreview - interface ICoreWebView2 | Microsoft Docs"
-[CppCxWrlCallbackFunction]: /cpp/cppcx/wrl/callback-function-wrl "Callback Function (WRL) | Microsoft Docs"
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"
+*  [Get started with WebView2 in Win32 apps](../get-started/win32.md) - WebView2 Win32 C/C++.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)

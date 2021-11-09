@@ -59,7 +59,7 @@ Each icon in the `icons` array should come with at least the `src` and `sizes` p
 | `type` | An optional hint for the OS to quickly detect the image type |
 | `purpose` | An optional hint for the OS to choose the right image depending on context. This can be `monochrome`, `maskable`, or `any`. |
 
-Learn more about [the icons member][MDNIconManifestMember].
+Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manifest/icons).
 
 <!-- TODO: add information about which sizes Windows require at a minimum, and which sizes are used where -->
 
@@ -83,21 +83,13 @@ The define a theme color, use the `theme_color` web app manifest member as shown
 }
 ```
 
-Individual web pages can also define a theme color using the [`theme-color` meta tag][MDNThemeColorMeta]. When this meta tag is present on the page, its defined color overrides the one found in the web app manifest.
+Individual web pages can also define a theme color using the [`theme-color` meta tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color). When this meta tag is present on the page, its defined color overrides the one found in the web app manifest.
 
 > [!NOTE]
-> You can use the [Window Controls Overlay][WindowControlsOverlay] feature to display your app content in the title bar area.
+> You can use the [Window Controls Overlay](./window-controls-overlay.md) feature to display your app content in the title bar area.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*   [PWABuilder Image Generator][PWABuilderImageGenerator]
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MDNIconManifestMember]: https://developer.mozilla.org/docs/Web/Manifest/icons "icons - Web app manifests | MDN"
-[PWABuilderImageGenerator]: https://www.pwabuilder.com/imageGenerator "Image Generator | PWABuiler.com"
-[MDNThemeColorMeta]: https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color "theme-color - HTML | MDN"
-[WindowControlsOverlay]: ./window-controls-overlay.md "Display content in the title bar | Microsoft Docs"
+*   [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator)

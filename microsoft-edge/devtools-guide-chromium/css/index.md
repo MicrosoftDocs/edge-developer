@@ -31,10 +31,10 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
 1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and choose **CSS Examples** to open in a new window.
 
-    [CSS Examples][GlitchDevToolsCssExamples]
+    [CSS Examples](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
 
     > [!NOTE]
-    > If you want to [dock your DevTools window][DevToolsCustomizePlacement] to the right of your viewport (displayed in the following figure), choose **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.
+    > If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromium/customize/placement) to the right of your viewport (displayed in the following figure), choose **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, choose **Dock to right**.
 
 
 <!-- ====================================================================== -->
@@ -158,7 +158,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 <!-- ====================================================================== -->
 ## Debugging Media Queries
 
-[Media Queries][MDNUsingMediaGueries] are a way to make your web product react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.  Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.
+[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your web product react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.  Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.
 
 If you want to debug or test the Media Queries you defined in your CSS, use the following steps.
 
@@ -188,21 +188,9 @@ If you want to debug or test the Media Queries you defined in your CSS, use the 
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsCustomizePlacement]: /microsoft-edge/devtools-guide-chromium/customize/placement "Change DevTools Placement (Undock, Dock To Bottom, Dock To Left)"
-
-[GlitchDevToolsCssExamples]: https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html "CSS Examples - Microsoft Edge DevTools | Glitch"
-
-[MDNUsingMediaGueries]: https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries "Using media queries | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
