@@ -1,5 +1,5 @@
 ---
-description: Viewing and changing CSS rules in Microsoft Edge DevTools.
+description: Features for viewing and changing CSS rules in Microsoft Edge DevTools.
 title: CSS features reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
