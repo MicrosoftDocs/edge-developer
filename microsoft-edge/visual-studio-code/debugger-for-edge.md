@@ -1,5 +1,5 @@
 ---
-description: You can debug Microsoft Edge from Visual Studio Code using the Debugger Extension
+description: You can debug Microsoft Edge from Visual Studio Code using the built in debugger
 title: Debug Microsoft Edge in Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,5 +21,3 @@ For more information, see [Browser debugging in VS Code](https://code.visualstud
 You can also inspect HTML and CSS using DevTools from within VS Code. To learn more, see [Browser debugging with Microsoft Edge Devtools integration in VS Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).
 
 Send your feedback by [filing an issue](https://github.com/microsoft/vscode-js-debug/issues/new) in the [vscode-js-debug repository](https://github.com/microsoft/vscode-js-debug).
-
-Your contributions are welcome, to help make the Microsoft Edge DevTools extension better.  Find everything you need to get started in the `vscode-edge-devtools` repo.
