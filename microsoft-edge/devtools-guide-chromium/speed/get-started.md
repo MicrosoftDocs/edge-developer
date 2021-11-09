@@ -494,7 +494,7 @@ Reduce JavaScript activity by removing the request to `mineBitcoin`:
 Looks like that last change caused a massive jump in performance!
 
 > [!NOTE]
-> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, see [Performance Analysis Reference](../evaluate-performance/reference.md).
+> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, see [Performance features reference](../evaluate-performance/reference.md).
 
 #### Doing less main thread work in the real world
 
@@ -515,7 +515,7 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 ## Next steps
 
 *   Run audits on your own site!  If you need help interpreting your report, or finding ways to improve your load performance, check out [Feedback](#feedback) for ways to get help from the DevTools community.  Stack Overflow, the mailing list, or Twitter are probably best for these types of questions.
-*   Please leave [feedback](#feedback) on this tutorial.  I really do use the data to make better tutorials for you.
+*   Please leave [feedback](#feedback) on this tutorial.  The data is used to make better tutorials.
 -->
 
 

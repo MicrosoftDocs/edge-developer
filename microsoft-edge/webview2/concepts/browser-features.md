@@ -40,7 +40,7 @@ The following table displays the WebView2 features that differ from the Microsof
 > This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, see [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
 
 | Feature | Default state | Configurable | Details |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
 | Autofill for Passwords | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
 | Autofill for Payments | Off | No | This feature is turned off. |

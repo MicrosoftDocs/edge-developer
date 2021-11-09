@@ -140,7 +140,7 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
    Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
 :::image-end:::
 
-To learn more about viewing and changing CSS, navigate to [CSS features reference](../../../css/reference.md).
+To learn more about viewing and changing CSS, see [CSS features reference](../../../css/reference.md).
 
 
 <!-- ====================================================================== -->

@@ -386,7 +386,7 @@ The **Properties** pane is back.  It was [deprecated in Microsoft Edge 84](../05
    **Properties** pane in the **Elements** tool
 :::image-end:::
 
-Chromium issue:  <!--  [#1105205](https://crbug.com/1105205),  -->  [#1116085](https://crbug.com/1116085)
+Chromium issue: <!-- [#1105205](https://crbug.com/1105205), --> [#1116085](https://crbug.com/1116085)
 
 <!--
 #### Human-readable X-Client-Data header values in the Network panel
