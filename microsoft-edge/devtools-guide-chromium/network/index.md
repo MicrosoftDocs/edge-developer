@@ -238,7 +238,7 @@ Select a resource to learn more information about it.
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.
 
-For example, suppose you want to verify that your resources are using reasonable **cache policies**.
+For example, suppose you want to verify that your resources are using reasonable **cache policies**.<!--[cache policies](../../../web/tools/lighthouse/audits/cache-policy) -->
 
 <!--TODO: add cache policies section when available  -->
 
@@ -375,9 +375,6 @@ Navigate to the [Network Reference](./reference.md) to discover more DevTools fe
 
 
 <!-- ====================================================================== -->
-<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).

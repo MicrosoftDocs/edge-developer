@@ -56,7 +56,7 @@ Workspaces is known to not work with the following framework.
 
 *   Create React App
 
-    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
 
 
 <!-- ====================================================================== -->
@@ -267,20 +267,13 @@ To open the DevTools code editor alongside other tools, do the following:
 <!-- ====================================================================== -->
 ## Next steps
 
-Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
 
 <!--
 If you have more feedback on the topics or anything else, please use any of the channels below:
-
-*   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]
-*   [Twitter][TwitterAlphabetBrowserDevTools]  -->
-
-
-<!-- ====================================================================== -->
-<!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
-<!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
-<!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
-<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
+*   [Mailing List](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools)
+*   [Twitter](https://twitter.com/alphabetbrowserdevtools)
+-->
 
 
 <!-- ====================================================================== -->

@@ -203,9 +203,10 @@ After you measured and verified that the animation is not performing well, the n
     :::image-end:::
 
     > [!NOTE]
-    > The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser does not know if each icon position changed, so it has to re-layout the icon in order to compute the new position.  <!--  > To learn more, navigate to [Avoid forced synchronous layouts][RenderingAvoidSynchronousLayouts].  -->
-
-<!-- todo: add layouts section when available -->
+    > The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser does not know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
+    <!--
+    > To learn more, see [Avoid forced synchronous layouts](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts).
+    -->
 
 That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
 
@@ -214,16 +215,14 @@ That was a lot to learn.  You now have a solid foundation in the basic workflow 
 Using the workflows and tools that you just learned, choose **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
 > [!NOTE]
-> Even the optimized version is not great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.  <!--  > For more information, navigate to [Use transform and opacity changes for animations][RenderingCompositor].  -->
-
-<!--todo: add rendering section when available -->
+> Even the optimized version is not great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.  <!--  > For more information, see [Use transform and opacity changes for animations](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#use_transform_and_opacity_changes_for_animations). todo: add rendering section when available -->
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
-To learn more, navigate to [Measure Performance With The RAIL Model][RAIL].  -->
+To learn more, navigate to [Measure Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail). -->
 
 To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, select `Alt`+`Shift`+`I` (Windows, Linux), select `Option`+`Shift`+`I` (macOS), or [tweet the DevTools team](https://twitter.com/intent/tweet?text=@EdgeDevTools).  Include screenshots or links to reproducible pages, if possible.
 
@@ -231,35 +230,21 @@ To get more comfortable with the **Performance** tool, practice makes perfect.  
    The **Send Feedback** icon in the Microsoft Edge DevTools
 :::image-end:::
 
-<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview][RenderingPerformance].  [The Anatomy Of A Frame][FrameAnatomy] dives into even more detail.  -->
+<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview](https://developers.google.com/web/fundamentals/performance/rendering).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
 
 Last, there are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour through the Performance panel, but it is only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
-*   [Optimizing JS Execution][RenderingOptimizeJS]
-*   [Reduce The Scope And Complexity Of Style Calculations][RenderingReduceScope]
-*   [Avoid Large, Complex Layouts And Layout Thrashing][RenderingAvoidThrashing]
-*   [Simplify Paint Complexity And Reduce Paint Areas][RenderingSimplifyPaint]
-*   [Stick To Compositor-Only Properties And Manage Layer Count][RenderingManageLayers]
-*   [Debounce Your Input Handlers][RenderingDebounceInputs]
+*   [Optimizing JS Execution](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
+*   [Reduce The Scope And Complexity Of Style Calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+*   [Avoid Large, Complex Layouts And Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
+*   [Simplify Paint Complexity And Reduce Paint Areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas)
+*   [Stick To Compositor-Only Properties And Manage Layer Count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count)
+*   [Debounce Your Input Handlers](/web/fundamentals/performance/rendering/debounce-your-input-handlers)
 -->
 
 
 <!-- ====================================================================== -->
-<!--[InPrivate]: https://support.microsoft.com/help/4026200/microsoft-edge-browse-inprivate "Browse InPrivate in Microsoft Edge"  -->
-<!--[FrameAnatomy]: https://aerotwist.com/blog/the-anatomy-of-a-frame  -->
-<!--[RAIL]: /web/fundamentals/performance/rail  -->
-<!--[RenderingAvoidSynchronousLayouts]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts  -->
-<!--[RenderingAvoidThrashing]: /web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing  -->
-<!--[RenderingCompositor]: /web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#use_transform_and_opacity_changes_for_animations  -->
-<!--[RenderingDebounceInputs]: /web/fundamentals/performance/rendering/debounce-your-input-handlers  -->
-<!--[RenderingManageLayers]: /web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count  -->
-<!--[RenderingOptimizeJS]: /web/fundamentals/performance/rendering/optimize-javascript-execution  -->
-<!--[RenderingPerformance]: /web/fundamentals/performance/rendering  -->
-<!--[RenderingReduceScope]: /web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations  -->
-<!--[RenderingSimplifyPaint]: /web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas  -->
-<!--[StackOverflowAlphabetBrowserDevtools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser - Stack Overflow"  -->
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).

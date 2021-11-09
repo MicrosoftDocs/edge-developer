@@ -92,7 +92,7 @@ Use the following tips to help you troubleshoot if the **Allow USB Debugging** p
 *   Setting the USB mode for Android to PTP.  For more information, navigate to [Galaxy S4 does not show Authorize USB debugging dialog box](https://android.stackexchange.com/questions/101933).
 *   Choose **Revoke USB Debugging Authorizations** from the **Developer Options** screen on your Android device to reset it to a fresh state.
 
-If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992) on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository][GitHubWebFundamentalsNewIssue]-->.
+If you find a solution that is not mentioned on this page or in [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992) on Stack Overflow, please add your solution to the Stack Overflow question<!--, or [open an issue in the webfundamentals repository](https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging]) -->.
 
 
 <!-- ====================================================================== -->
@@ -145,10 +145,6 @@ You are able to interact with the screencast in the following ways.
 > *   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Android status bar, or the Android keyboard.
 > *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 > *   If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.
-
-
-<!-- ====================================================================== -->
-<!-- [GitHubWebFundamentalsNewIssue]: https://github.com/Alphabet/webfundamentals/issues/new?title=[Remote%20Debugging] "GitHub - Web Fundamentals - New Issue"  -->
 
 
 <!-- ====================================================================== -->

@@ -216,7 +216,7 @@ Now, use the **Badge settings** in the **Elements** tool to turn on (or off) ind
 
 To display (or hide) the badges, choose (or remove) the checkbox next to the badge name.
 
-<!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772][CR1066772].  -->
+<!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772](https://crbug.com/1066772).  -->
 
 :::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="Badge settings pane in the Elements tool" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
    **Badge settings** pane in the **Elements** tool
@@ -407,10 +407,6 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 
 
 <!-- ====================================================================== -->
-<!--[GithubMicrosoftVscodeEdgeDevtoolsPullxxx]: https://github.com/microsoft/vscode-edge-devtools/pull/xxx "Pull xxx: Lorem al Ipsum | GitHub"  -->
-<!--  [CR1066772]: https://crbug.com/1066772 "Issue 1066772: "  locked  -->
-
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-91) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).

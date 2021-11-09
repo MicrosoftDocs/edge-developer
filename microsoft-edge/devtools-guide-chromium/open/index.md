@@ -47,20 +47,19 @@ See [Keyboard shortcuts](../shortcuts/index.md).
 <!-- ====================================================================== -->
 ## Open the Elements panel to inspect the DOM or CSS
 
-To inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
-*   Right-click the element and select **Inspect**.
+When you're viewing a rendered webpage in the browser, to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
+*   Right-click the element in the rendered webpage and select **Inspect**.
 *   Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
+See [DevTools for beginners: Get started with CSS](../beginners/css.md).
+
 <!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png"::: -->
-<!-- See [Get started with viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css). -->
 
 
 <!-- ====================================================================== -->
 ## Open the Console panel
 
 To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
-
-<!-- See [Get started with the Console](/microsoft-edge/devtools-guide-chromium/console/get-started). -->
 
 
 <!-- ====================================================================== -->

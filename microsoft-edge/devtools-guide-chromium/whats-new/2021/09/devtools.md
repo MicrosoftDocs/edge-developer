@@ -64,7 +64,7 @@ In Microsoft Edge version 93, you can apply themes used in Visual Studio Code to
 
 Previously, when using a theme from Visual Studio Code in DevTools, breakpoint icons on the left margin of the code in the **Sources** tool weren't displayed.  Starting in Microsoft Edge 94, breakpoint icons are now displayed as expected.
 
-To learn more about using breakpoints for debugging JavaScript code, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools](../../../javascript/breakpoints.md).
+To learn more about using breakpoints for debugging JavaScript code, navigate to [Pause your code with breakpoints](../../../javascript/breakpoints.md).
 
 :::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="Breakpoint icons are now displayed when using Visual Studio Code themes" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
    Breakpoint icons are now displayed when using Visual Studio Code themes

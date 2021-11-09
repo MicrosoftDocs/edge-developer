@@ -117,9 +117,9 @@ If you step back and think about how the app works, you may make an educated gue
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.
 
-<!--todo: add inprivate section when available -->
+<!--todo: add inprivate section when available in this repo [InPrivate](https://support.alphabet.com/alphabet-browser/answer/95464) -->
 
-**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  To learn when and how to use each type, see [Pause your code with breakpoints](breakpoints.md).
 
 
 <!-- ====================================================================== -->
@@ -240,10 +240,6 @@ A couple of code stepping controls aren't explained in this article.  For more i
 
 *  [Use the debugger features](./reference.md) - Using the UI of the debugger in the Sources tool.
 *  [Sources tool overview](../sources/index.md) - Introduces the JavaScript debugger and code editor.
-
-
-<!-- ====================================================================== -->
-<!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->
 
 
 <!-- ====================================================================== -->
