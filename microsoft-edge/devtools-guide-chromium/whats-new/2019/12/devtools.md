@@ -39,13 +39,13 @@ The DevTools team has contributed 170 changes to Chromium to address high-impact
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights](https://aka.ms/a11yinsights) and [webhint](https://aka.ms/webhint/browser-extension) extensions for Microsoft Edge to get started.
 
-If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting](https://aka.ms/tweet/edgedevtools) at us or selecting the [Send Feedback][Contact] icon!
+If you use screen readers or the keyboard to navigate around the DevTools, send your feedback by [tweeting](https://aka.ms/tweet/edgedevtools) at us or selecting the [Send Feedback](../../../contact.md) icon!
 
 Chromium issue [#963183](https://crbug.com/963183)
 
 ### Using the DevTools in other languages
 
-Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We’re excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
+Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
 
 :::row:::
    :::column span="":::
@@ -104,7 +104,7 @@ Navigate to `edge://flags` and set the **Enable localized Developer Tools** flag
    The DevTools in German
 :::image-end:::
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet](https://aka.ms/tweet/edgedevtools) at us or choose the [Send Feedback][Contact] icon.
+If you want to use the DevTools in a different language than the ones that are available, [tweet](https://aka.ms/tweet/edgedevtools) at us or choose the [Send Feedback](../../../contact.md) icon.
 
 Chromium issue [#941561](https://crbug.com/941561)
 
@@ -128,7 +128,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 To access the 3D View, navigate to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
 
-We're working on the UI and adding more functionality to the 3D View so please send us your [feedback][Contact].
+We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
 
 Chromium issue [#987787](https://crbug.com/987787)
 

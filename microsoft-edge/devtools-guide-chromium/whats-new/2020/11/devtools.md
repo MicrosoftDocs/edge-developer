@@ -240,12 +240,7 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
 
 ### New CSS angle visualization tools
 
-DevTools now have better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, choose the clock icon.  To change the angle, choose anywhere in the clock or drag the needle.  To change the angle value, you may also use mouse and keyboard shortcuts.  <!--  To learn more, see [Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock).  -->  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
-
-<!--
-todo: Angle Clock: Add link when css angle clock section exists.
-Update Nov. 4, 2021: an open PR adds the section here about angle clock.
--->
+DevTools now has better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, choose the clock icon.  To change the angle, choose anywhere in the clock or drag the needle.  To change the angle value, you may also use mouse and keyboard shortcuts.  To learn more, see [Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
 
 The following CSS angle is used for the example.
 

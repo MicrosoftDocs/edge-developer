@@ -246,10 +246,6 @@ After you have identified the problem, you are able to use an **Allocation instr
 
 
 <!-- ====================================================================== -->
-<!--[RAIL]: /profile/evaluate-performance/rail  -->
-<!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->
-<!--[hngd]: https://jsfiddle.net/kaycebasques/tmtbw8ef/  -->
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).

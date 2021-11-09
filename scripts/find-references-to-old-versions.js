@@ -41,11 +41,19 @@ async function findMatchingPatternsIn(file) {
         for (const pattern of PATTERNS_TO_LOOK_FOR) {
             let match;
             while ((match = pattern.exec(line)) !== null) {
+                const version = parseInt(match[1], 10);
+
+                if (version < 40) {
+                    // 40 is random, but it's enough for what we need here:
+                    // avoid matching Windows 10 or Windows 11.
+                    continue;
+                }
+
                 matches.push({
                     file,
                     line: i + 1,
                     match: match[0],
-                    version: parseInt(match[1], 10)
+                    version
                 });
             }
         }

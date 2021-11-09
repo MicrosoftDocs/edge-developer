@@ -35,7 +35,7 @@ To open DevTools, use either of the following options.
     *  Choose the **Settings and more** (`...`) icon >  **More Tools** >  **Developer Tools**.
 
 *   Use the keyboard.
-    *   Select `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+    *   Press `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 See [Keyboard shortcuts](../shortcuts/index.md).
 
@@ -49,17 +49,18 @@ See [Keyboard shortcuts](../shortcuts/index.md).
 
 To inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
 *   Right-click the element and select **Inspect**.
-*   Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts][DevtoolsShortcutsIndex].
+*   Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
 <!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png"::: -->
-
-<!-- See [Get Started With Viewing And Changing CSS][GetStartedCSS]. -->
+<!-- See [Get started with viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css). -->
 
 
 <!-- ====================================================================== -->
 ## Open the Console panel
 
-To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [Microsoft Edge DevTools keyboard shortcuts](../shortcuts/index.md).
+To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
+
+<!-- See [Get started with the Console](/microsoft-edge/devtools-guide-chromium/console/get-started). -->
 
 
 <!-- ====================================================================== -->
@@ -118,10 +119,7 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
 1.  After you set the toggle to off, verify that `F12` no longer opens DevTools.
 
     > [!NOTE]
-    > After turning off **Open the DevTools when the F12 key is pressed**, perform one of the following actions to open the DevTools.
-    >
-    > *   Select `Ctrl`+`Shift`+`I`.
-    > *   Open the contextual menu (right-click) > **Inspect**.
+    > After turning off **Open the DevTools when the F12 key is pressed**, open DevTools again.  For example, press `Ctrl`+`Shift`+`I`, or right-click a webpage and select **Inspect**.
 
 
 <!-- ====================================================================== -->

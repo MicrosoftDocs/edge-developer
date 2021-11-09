@@ -1,6 +1,6 @@
 ---
 description: A reference on all the ways to record and analyze performance in Microsoft Edge DevTools.
-title: Performance analysis features
+title: Performance features reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Performance analysis features
+# Performance features reference
 
 This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.
 

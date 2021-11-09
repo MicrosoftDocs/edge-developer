@@ -10,8 +10,6 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # Verify that the webpage layout is usable when narrow
 
-<!-- copied from [Overview of accessibility testing using DevTools > Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow). -->
-
 An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there is not much space left. When there is not enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
 
 By making the browser window narrow and using the arrow keys to scroll the page, you can see that the top navigation bar of the demo page has some accessibility issues.  The top navigation bar overlaps the **Search** form, as shown in the previous image, and that issue needs to be fixed.
