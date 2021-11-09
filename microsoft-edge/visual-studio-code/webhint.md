@@ -4,7 +4,7 @@ title: The webhint extension for Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, vs code, visual studio code, webhint
 ---
