@@ -36,7 +36,7 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 <!-- ====================================================================== -->
 ## Overview
 
-In the spirit of the **RAIL** performance model, the focus of your performance efforts should be your users.
+In the spirit of the **RAIL**<!-- [RAIL](/profile/evaluate-performance/rail) --> performance model, the focus of your performance efforts should be your users.
 
 <!--todo: add RAIL section when available  -->
 
@@ -89,7 +89,7 @@ You may also use the Performance panel as another starting point in your investi
 
 1.  Open the **Performance** panel on DevTools.
 1.  Enable the **Memory** checkbox.
-1.  [Make a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance).
+1.  [Make a recording](../evaluate-performance/reference.md#record-performance).
 
 > [!TIP]
 > It is a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, choose the **collect garbage** ![force garbage collection](../media/collect-garbage-icon.msft.png) button while recording.
@@ -252,3 +252,6 @@ After you have identified the problem, you are able to use an **Allocation instr
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+
+<!-- [recording](/profile/evaluate-performance/timeline-tool#make-a-recording) -->
+<!-- [hngd](https://jsfiddle.net/kaycebasques/tmtbw8ef/) -->

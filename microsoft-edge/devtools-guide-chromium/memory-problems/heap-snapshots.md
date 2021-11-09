@@ -1,6 +1,6 @@
 ---
 description: Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
-title: How to record heap snapshots
+title: Record heap snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# How to record heap snapshots
+# Record heap snapshots
 
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
 
@@ -255,15 +255,16 @@ To read more about DOM leaks and memory analysis fundamentals checkout [Finding 
 > Example: Try this **demo** to play with detached DOM trees.
 -->
 
-<!--todo: add heap profiling dom leaks section when available  -->
+<!-- todo: add heap profiling dom leaks section when available -->
 
 
 <!-- ====================================================================== -->
-<!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->
-<!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->
-<!--[DevtoolsHeapProfilingDomLeaks]: https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks ""  -->
-<!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->
-<!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->
+<!--[heap profiling comparison](https://developer.alphabet.com/devtools/docs/heap-profiling-comparison) -->
+<!--[heap profiling containment](https://developer.alphabet.com/devtools/docs/heap-profiling-containment) -->
+<!--[heap profiling DOM leaks](https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks) -->
+<!--[heap profiling summary](https://developer.alphabet.com/devtools/docs/heap-profiling-summary) -->
+<!--[narrow down causes of memory leaks](../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks) -->
+
 
 <!-- ====================================================================== -->
 > [!NOTE]

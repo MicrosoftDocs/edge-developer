@@ -98,7 +98,7 @@ Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps
 <!-- ====================================================================== -->
 ## Get started
 
-To build and test your app using the WebView2 control, you need to have <!--both [Microsoft Edge][MicrosoftedgeinsiderDownload] and -->the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) installed.  Select one of the following options to get started.
+To build and test your app using the WebView2 control, you need to have <!--both Microsoft Edge and -->the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) installed.  Select one of the following options to get started.
 
 *   [Get started with WebView2 in Win32 apps](./get-started/win32.md)
 *   [Get started with WebView2 in WPF apps](./get-started/wpf.md)

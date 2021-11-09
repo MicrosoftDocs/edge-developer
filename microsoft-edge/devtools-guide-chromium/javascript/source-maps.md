@@ -31,8 +31,11 @@ Keep your client-side code readable and debuggable even after you combine, minif
 *   Only use pre-processors capable of producing Source Maps.
 *   Verify that your web server is able to serve Source Maps.
 
-<!--todo: add link to preprocessors capable of producing Source Maps when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
+<!--
+no longer in original file:
+todo: add link to preprocessors capable of producing Source Maps when section is available
+/web/tools/setup/setup-preprocessors?#supported_preprocessors
+-->
 
 
 <!-- ====================================================================== -->
@@ -40,8 +43,11 @@ Keep your client-side code readable and debuggable even after you combine, minif
 
 This article explains how to interact with JavaScript Source Maps in the DevTools Sources tool.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->
 
-<!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->
+<!--
+no longer in original file:
+todo: add link to Set Up CSS & JS Preprocessors when section is available
+/web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content
+-->
 
 
 <!-- ====================================================================== -->
@@ -49,8 +55,11 @@ This article explains how to interact with JavaScript Source Maps in the DevTool
 
 Use a minifier that is capable of creating source maps.  <!--For the most popular options, navigate to preprocessor support section.  -->  For an extended view, navigate to [Source maps: languages, tools and other info](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) wiki page.
 
-<!--todo: add link to display the preprocessor support section when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
+<!--
+no longer in original file:
+todo: add link to display the preprocessor support section when section is available
+/web/tools/setup/setup-preprocessors?#supported_preprocessors
+-->
 
 The following types of preprocessors are commonly used in combination with Source Maps:
 
@@ -76,13 +85,10 @@ Source Maps are enabled by default<!-- (as of Microsoft Edge 39)-->, but if you 
 
 ### Debugging with Source Maps
 
-When debugging your code and Source Maps enabled, Source Maps show in two places:
+When [debugging your code](index.md#step-4-step-through-the-code) and Source Maps enabled, Source Maps show in two places:
 
 1.  In the console (the link to source should be the original file, not the generated one)
 1.  When stepping through code (the links in the call stack should open the original source file)
-
-<!--todo: add link to debugging your code when section is available -->
-<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->
 
 
 <!-- ====================================================================== -->
