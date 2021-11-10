@@ -48,7 +48,7 @@ For an overview of Panel tools, Drawer tools, and a few other tools such as the 
 
 
 <!-- ====================================================================== -->
-## Opening in tool in its default toolbar
+## Opening a tool in its default toolbar
 
 1.  Open the **Command Menu**.
 
