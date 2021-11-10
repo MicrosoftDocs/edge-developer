@@ -144,7 +144,7 @@ You can interact with the screencast in multiple ways:
 *   To scroll, use your trackpad or mouse wheel, or fling with your mouse pointer.
 
 Some notes on screencasts:
-*   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Windows 10 or later taskbar, and the Windows 10 or later keyboard.
+*   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge Address bar, the Windows 10 or later taskbar, and the Windows 10 or later keyboard.
 *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 *   If your host device screen locks, the content of your screencast disappears.  Unlock your host device screen to automatically resume the screencast.
 

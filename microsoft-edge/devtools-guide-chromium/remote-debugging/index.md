@@ -46,7 +46,7 @@ The workflow below works for most users.  For more help, see [Troubleshooting: D
 1.  Open the **Developer Options** screen on your Android.  See [Configure On-Device Developer Options](https://developer.android.com/studio/debug/dev-options).
 1.  Select **Enable USB Debugging**.
 1.  On your development machine, open Microsoft Edge.
-1.  In the address bar, go to `edge://inspect`.
+1.  In the Address bar, go to `edge://inspect`.
 
     :::image type="content" source="../media/remote-debugging-edge-inspect-no-targets.msft.png" alt-text="The edge://inspect page in Microsoft Edge." lightbox="../media/remote-debugging-edge-inspect-no-targets.msft.png":::
 
@@ -127,7 +127,7 @@ You can interact with the screencast in multiple ways:
 > [!NOTE]
 > Use the following tips to help you screencast.
 >
-> *   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge address bar, the Android status bar, or the Android keyboard.
+> *   Screencasts only display page content.  Transparent portions of the screencast represent device interfaces, such as the Microsoft Edge Address bar, the Android status bar, or the Android keyboard.
 > *   Screencasts negatively affect frame rates.  Disable screencasting while measuring scrolls or animations to get a more accurate picture of the performance of your page.
 > *   If your Android device screen locks, the content of your screencast disappears.  Unlock your Android device screen to automatically resume the screencast.
 
