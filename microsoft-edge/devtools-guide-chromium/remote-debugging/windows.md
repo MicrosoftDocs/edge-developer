@@ -28,7 +28,15 @@ The host or debuggee machine is the Windows 10 or later device that you want to 
 
 ### Install and configure Microsoft Edge
 
-If you haven't already, on the Windows 10 or later device that you want to debug, install Microsoft Edge from [this page](https://www.microsoft.com/edge).  If you are using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
+1.  If you haven't already, on the Windows 10 or later device that you want to debug, install Microsoft Edge from [this page](https://www.microsoft.com/edge).
+
+1.  If you're using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
+
+1.  Go to `edge://flags` in Microsoft Edge. 
+
+1.  In **Search flags**, type in **Enable remote debugging through Windows Device Portal**. Set that flag to **Enabled**. Then, click the **Restart** button to restart Microsoft Edge.
+
+:::image type="content" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="Setting 'Enable remote debugging through Windows Device Portal flag'." lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
 
 ### Install the Remote Tools for Microsoft Edge (Beta)
 
