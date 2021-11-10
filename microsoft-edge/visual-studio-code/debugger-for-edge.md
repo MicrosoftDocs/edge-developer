@@ -14,10 +14,8 @@ keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual 
 
 This built-in debugger lets you debug your front-end JavaScript code line-by-line and see `console.log()` statements directly from Visual Studio Code.
 
-
-
 For more information, see [Browser debugging in VS Code](https://code.visualstudio.com/docs/nodejs/browser-debugging).
 
-You can also inspect HTML and CSS using DevTools from within VS Code. To learn more, see [Browser debugging with Microsoft Edge Devtools integration in VS Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).
-
 Send your feedback by [filing an issue](https://github.com/microsoft/vscode-js-debug/issues/new) in the [vscode-js-debug repository](https://github.com/microsoft/vscode-js-debug).
+
+You can also inspect HTML and CSS using DevTools from within VS Code. To learn more, see [Browser debugging with Microsoft Edge Devtools integration in VS Code](/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code).
