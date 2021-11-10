@@ -28,9 +28,7 @@ The host or debuggee machine is the Windows 10 or later device that you want to 
 
 ### Install and configure Microsoft Edge
 
-If you haven't already, install Microsoft Edge from [this page](https://www.microsoft.com/edge).  If you are using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
-
-:::image type="content" source="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png" alt-text="Setting the Enable remote debugging through Windows Device Portal flag to Enabled." lightbox="../media/remote-debugging-windows-media-edge-flags-on-host.msft.png":::
+If you haven't already, on the Windows 10 or later device that you want to debug, install Microsoft Edge from [this page](https://www.microsoft.com/edge).  If you are using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
 
 ### Install the Remote Tools for Microsoft Edge (Beta)
 
@@ -45,9 +43,9 @@ Launch the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/st
 
 ### Activate Developer Mode and enable Device Portal
 
-If you are on a WiFi network, ensure the network is marked as either **Domain** or **Private**.  You can verify the state by opening the **Windows Security** app, selecting **Firewall & network protection** and checking if your network is listed as a **Domain** network or **Private** network.
+If you are on a WiFi network, make sure the network is marked as either **Domain** or **Private**.  You can verify the state by opening the **Windows Security** app, selecting **Firewall & network protection** and checking if your network is listed as a **Domain** network or **Private** network.
 
-If your network is listed as **Public**, navigate to **Settings** > **Network & Internet** > **Wi-Fi**, click on your network, and toggle the **Network profile** button to **Private**.
+If your network is listed as **Public**, go to **Settings** > **Network & Internet** > **Wi-Fi**, click on your network, and toggle the **Network profile** button to **Private**.
 
 Now, open the **Settings** app.  In **Find a setting**, enter `Developer settings` and select it.  Toggle on **Developer Mode**.  You can now turn on the **Device Portal** by setting **Turn on remote diagnostics over local area network connections** to **On**.  You can then optionally turn **Authentication** on so that the client (debugger) device must provide the correct credentials to connect to this device.
 
@@ -72,7 +70,7 @@ The client or debugger machine is the device you want to debug from.  This devic
 
 1.  If you're using a pre-installed version of Microsoft Edge on the host (debuggee) machine, verify that you have Microsoft Edge (Chromium) and not Microsoft Edge (EdgeHTML).  A quick way to check is to load `edge://settings/help` in the browser and confirm that the version number is 75 or higher.
 
-1.  Navigate to the `edge://inspect` page in Microsoft Edge.  By default, you should be on the **Devices** section.
+1.  Go to the `edge://inspect` page in Microsoft Edge.  By default, you should be on the **Devices** section.
 
 1.  Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host (debuggee) machine in the textbox following this pattern: http://`IP address`:`connection port`.
 
@@ -86,7 +84,7 @@ The client or debugger machine is the device you want to debug from.  This devic
 
 If you want to connect to the host (debuggee) machine using `https` instead of `http`:
 
-1.  Navigate to `http://IP address:50080/config/rootcertificate` in Microsoft Edge on the client (debugger) machine.  This automatically downloads a security certificate named `rootcertificate.cer`.
+1.  Go to `http://IP address:50080/config/rootcertificate` in Microsoft Edge on the client (debugger) machine.  This automatically downloads a security certificate named `rootcertificate.cer`.
 
 1.  Select `rootcertificate.cer`.  This opens the [Windows Certificate Manager tool](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in#view-certificates-with-the-certificate-manager-tool).
 
@@ -103,7 +101,7 @@ If you want to connect to the host (debuggee) machine using `https` instead of `
 1.  Now, when connecting to the host (debuggee) machine from the client (debugger) machine using the `edge://inspect` page, you must use a different `connection port` value.  By default, for desktop Windows, the Device Portal uses `50080` as the `connection port` for `http`.  For `https`, the Device Portal uses `50043` so follow this pattern: https://`IP address`:`50043` on the `edge://inspect` page.  [Read more about the default ports used by Device Portal](/windows/uwp/debug-test-perf/device-portal#setup).
 
 > [!NOTE]
-> The default port for `http` is `50080` and the default port for `https` is `50043` but this is not always the case as Device Portal on desktop claims ports in the ephemeral range (\>50,000) to prevent collisions with existing port claims on the device.  To learn more, navigate to the  [Port Settings](/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) section for Device Portal on Windows desktop.
+> The default port for `http` is `50080` and the default port for `https` is `50043`, but this is not always the case, because Device Portal on desktop claims ports in the ephemeral range (\>50,000) to prevent collisions with existing port claims on the device.  To learn more, see the  [Port Settings](/windows/uwp/debug-test-perf/device-portal-desktop#registry-based-configuration-for-device-portal) section for Device Portal on Windows desktop.
 
 
 <!-- ====================================================================== -->
@@ -119,7 +117,7 @@ Determine the content you want to debug, and then click **inspect**.  The Micros
 
 ### Inspect elements
 
-For example, try inspecting an element.  Navigate to the **Elements** tool of your DevTools instance on the client, and hover on an element to highlight it in the viewport of the host device.
+For example, try inspecting an element.  Go to the **Elements** tool of your DevTools instance on the client, and hover on an element to highlight it in the viewport of the host device.
 
 You can also tap an element on your host device screen to select it in the **Elements** tool.  Select **Select Element** on your DevTools instance on the client, and then tap the element on your host device screen.
 

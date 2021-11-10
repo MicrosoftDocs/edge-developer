@@ -35,7 +35,7 @@ Remote debug live content on an Android device from your Windows or macOS comput
 
 > [!NOTE]
 > Remote debugging the Microsoft Edge app on iOS devices is not currently supported.  The following guide is specifically focused on remote debugging Microsoft Edge on Android devices.
-> If you have a macOS device, follow the [Brightcove Debugging guide](https://general.support.brightcove.com/developer/debugging-mobile-devices.html) to remotely debug Microsoft Edge on an iOS device using Safari.  For more information about the Web Inspector tool in Safari, navigate to [Safari Web Development Tools](https://developer.apple.com/safari/tools).
+> If you have a macOS device, follow the [Brightcove Debugging guide](https://general.support.brightcove.com/developer/debugging-mobile-devices.html) to remotely debug Microsoft Edge on an iOS device using Safari.  For more information about the Web Inspector tool in Safari, see [Safari Web Development Tools](https://developer.apple.com/safari/tools).
 
 
 <!-- ====================================================================== -->
@@ -70,8 +70,8 @@ Use the following tips to help you troubleshoot the correct settings for your ha
 
 Use the following tips to help you verify that your software is set up correctly.
 
-*   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, navigate to [Install OEM USB Drivers](https://developer.android.com/tools/extras/oem-usb.html).
-*   Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, navigate to [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992).
+*   If your development machine is running Windows, try manually installing the USB drivers for your Android device.  For more information, see [Install OEM USB Drivers](https://developer.android.com/tools/extras/oem-usb.html).
+*   Some combinations of Windows and Android devices (especially Samsung) require additional settings.  For more information, see [DevTools Devices does not detect device when plugged in](https://stackoverflow.com/questions/21925992).
 
 If the **Allow USB Debugging** prompt isn't displayed on your Android device, try:
 
@@ -87,7 +87,7 @@ If you find a solution that is not mentioned on this page or in [DevTools Device
 ## Step 2: Debug content on your Android device from your development machine
 
 1.  Open Microsoft Edge on your Android device.
-1.  Navigate to `edge://inspect`.  The model name of your Android device is displayed, followed by the device serial number.  Below that, the version of Microsoft Edge running on the device should be displayed, with the version number in parentheses.  Each open Microsoft Edge tab gets a unique section.  You can interact with that tab from a section.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
+1.  Go to `edge://inspect`.  The model name of your Android device is displayed, followed by the device serial number.  Below that, the version of Microsoft Edge running on the device should be displayed, with the version number in parentheses.  Each open Microsoft Edge tab gets a unique section.  You can interact with that tab from a section.  <!--If there are any apps using WebView, a section for each of those apps should be displayed, too.  --><!--In [**Figure 5**](#figure-5) there are no tabs or WebViews open.  -->
 
     :::image type="content" source="../media/remote-debugging-edge-inspect-with-targets.msft.png" alt-text="A connected remote device." lightbox="../media/remote-debugging-edge-inspect-with-targets.msft.png":::
 
