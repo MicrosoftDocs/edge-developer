@@ -18,41 +18,12 @@ Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer t
 
 Any of these tools, whether labelled as a Panel tool or Drawer tool in the **Command Menu**, can be added to either the main toolbar or the Drawer toolbar.
 
+| Task | Steps |
+| --- | --- |
+| Open a tool on the main toolbar at the top of DevTools | On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select a tool. |
+| Open a tool on the Drawer toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, click **More Tools** (**+**) and then select a tool. |
+| Move a tool from the Drawer toolbar to the main Toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**. |
+| Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
+| Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type the name of the tool, and then select the tool. |
+
 For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Microsoft Edge Developer Tools overview](index.md).
-
-
-<!-- ====================================================================== -->
-## Opening any tool on the main toolbar at the top of DevTools
-
-*  On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select the tool.
-
-
-<!-- ====================================================================== -->
-## Opening any tool on the Drawer toolbar
-
-1.  When DevTools has focus, press **Esc** to show or hide the Drawer.
-
-1.  On the Drawer toolbar, click **More Tools** (**+**) and then select the tool.
-
-
-<!-- ====================================================================== -->
-## Moving a tool from the Drawer toolbar to the main Toolbar
-
-*  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**.
-
-
-<!-- ====================================================================== -->
-## Moving a tool from the main toolbar to the drawer Toolbar
-
-*  On the main toolbar, right-click the tool's tab, and then select **Move to bottom**.
-
-
-<!-- ====================================================================== -->
-## Opening a tool in its default toolbar
-
-1.  Open the **Command Menu**.
-
-1.  Type the name of the tool, and then select the tool.
-
-    * If the tool has **Panel** next to it in the Command Menu, the tool opens in the main toolbar at the top of DevTools.
-    * If the tool has **Drawer** next to it in the Command Menu, the tool opens in the Drawer toolbar.
