@@ -11,16 +11,14 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # About Panel and Drawer tools
 
-The **More Tools** (**+**) menu appears in two places:
+Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  The **More Tools** menu appears in two places:
 
 *  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
 *  On the **Drawer** toolbar (where _Drawer_ tools usually go).
 
-In Google Chrome DevTools, a given tool can only appear on the main toolbar (Panel tools) or on the Drawer toolbar (Drawer tools).  The Console tool is unique; it can appear either on the main toolbar (as a Panel tool) or on the Drawer toolbar (as a Drawer tool).
+Any of these tools, whether labelled as a Panel tool or Drawer tool in the **Command Menu**, can be added to either the main toolbar or the Drawer toolbar.
 
-The distinction between Panel tools and Drawer tools is less pronounced in Microsoft Edge than in Google Chrome DevTools.  In Microsoft Edge DevTools, any of these tools, whether labelled as a Panel tool or Drawer tool, can be added to either the main toolbar or the Drawer toolbar.
-
-For an overview of all of the Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Microsoft Edge Developer Tools overview](index.md).<!-- see [DevTools overview] -->
+For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Microsoft Edge Developer Tools overview](index.md).
 
 
 <!-- ====================================================================== -->
