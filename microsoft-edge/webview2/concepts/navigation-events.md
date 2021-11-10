@@ -63,9 +63,9 @@ To monitor or cancel navigation events inside subframes in a WebView2 instance, 
 
 ## Basic authentication
 
-An HTTP server may require [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication). In this case there is a first navigation with all the same navigation events listed above. The HTTP server returns a 401 or 407 HTTP response and so the NavigationCompleted event has a corresponding failure and the WebView2 will render a blank page. Then the WebView2 will raise the `BasicAuthenticationRequested` event and potentially prompt the end user for credentials.
+An HTTP server may require [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication). In this case there is a first navigation with all the same navigation events listed above. The HTTP server returns a 401 or 407 HTTP response and so the NavigationCompleted event has a corresponding failure. The WebView2 will then render a blank page and raise the `BasicAuthenticationRequested` event which will potentially prompt the end user for credentials.
 
-If the `BasicAuthenticationRequested` event is cancelled, then there is no subsequent navigation and the WebView2 will remain navigated to the blank page.
+If the `BasicAuthenticationRequested` event is cancelled, then there is no subsequent navigation and the WebView2 will remain displaying the blank page.
 
 If the `BasicAuthenticationRequested` event isn't cancelled, the WebView2 will perform the initial navigation again, but this time using any provided credentials and you will again see all the same navigation events listed above.
 
