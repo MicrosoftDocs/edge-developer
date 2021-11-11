@@ -28,7 +28,7 @@ As of Microsoft Edge 94, the following experimental features are turned on by de
 *  Show issues in Elements
 *  Enable Composited Layers in 3D View
 *  DevTools Tooltips
-*  VS Code themes for the DevTools
+*  Visual Studio Code themes for the DevTools
 *  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
 
 
