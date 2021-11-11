@@ -38,7 +38,7 @@ We're eager to hear your feedback about this new DevTools UI.  This is an experi
 
 <!-- video: see work item -->
 
-See also [Group tools together in Focus Mode](../02/devtools#group-tools-together-in-focus-mode).
+See also [Group tools together in Focus Mode](../02/devtools.md#group-tools-together-in-focus-mode).
 <!-- Link to existing Experimental Features doc, after that article has this section. -->
 
 
@@ -144,7 +144,7 @@ In Microsoft Edge 96, breakpoints are set in the Sources tool.
 
 <!-- video: see work item -->
 
-To learn more about how DevTools integrates with Visual Studio Code, see [Opening source files in Visual Studio Code](../../../sources/opening-sources-in-vscode).
+To learn more about how DevTools integrates with Visual Studio Code, see [Opening source files in Visual Studio Code](../../../sources/opening-sources-in-vscode.md).
 
 
 <!-- ====================================================================== -->
