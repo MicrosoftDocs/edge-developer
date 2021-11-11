@@ -76,11 +76,11 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1.  Type `Selenium.WebDriver` in the **Search** bar, and then select **Selenium.WebDriver** from the results.
 
-1.  In the detail window on the right, make sure the **Version** is set to **4.0.0-beta4** or later, and then select **Install**.  NuGet downloads Selenium to your machine.
+1.  In the detail window on the right, make sure the **Version** is set to **4.0.0** or later, and then select **Install**.  NuGet downloads Selenium to your machine.
 
     :::image type="content" source="../media/webdriver/nuget.png" alt-text="Manage NuGet package" lightbox="../media/webdriver/nuget.png":::
 
-    To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver 4.0.0-beta4](https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-beta4).
+    To learn more about the Selenium.WebDriver NuGet package, navigate to [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver).
 
 1.  Use `OpenQA.Selenium.Edge` by adding the statement `using OpenQA.Selenium.Edge;` at the beginning of the `Program.cs` file.
 
@@ -148,15 +148,14 @@ To drive WebView2 with Selenium and Microsoft Edge Driver:
 
     Next, we'll add code that does the following:
 
-    *   Configure `edgeOptions` to use Chromium and WebView2, by setting the options `UseChromium` and `UseWebView` to `true`.
+    *   Configure `edgeOptions` to use WebView2, by setting the option `UseWebView` to `true`.
     *   Set `edgeOptions.BinaryLocation` to the file path of your WebView2 app binary.
     *   Create an `EdgeDriver` object using `edgeOptions`.
 
 1.  Copy the following code and paste it below `edgeOptions`:
 
     ```csharp
-    //Set edgeOptions to use Chromium and WebView2
-    edgeOptions.UseChromium = true;
+    //Set edgeOptions to use WebView2
     edgeOptions.UseWebView = true;
 
     //Set the BinaryLocation to the filepath of the WebView2API Sample runtime
@@ -222,7 +221,6 @@ At this point, your app is running and its `--remote-debugging-port` command-lin
 
 ```csharp
 EdgeOptions edgeOptions = new EdgeOptions();
-edgeOptions.UseChromium = true;
 edgeOptions.UseWebView = true;
 edgeOptions.DebuggerAddress = "localhost:9222";
 EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);

@@ -68,7 +68,7 @@ After downloading Microsoft Edge Driver, the last component you must download is
 
 This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using a WebDriver testing framework other than Selenium, consult the official documentation for your framework of choice.
 
-If you are using Selenium, the Microsoft Edge team recommends [Selenium 4.0.0-beta2](https://www.nuget.org/packages/Selenium.WebDriver/4.0.0-beta2) or later, because that version of Selenium supports Microsoft Edge.  However, you can control Microsoft Edge in all older versions of Selenium, including the current stable Selenium 3 release.
+If you are using Selenium, the Microsoft Edge team recommends [Selenium 4](https://www.nuget.org/packages/Selenium.WebDriver) or later, because that version of Selenium supports Microsoft Edge.  However, you can control Microsoft Edge in all older versions of Selenium, including Selenium 3.
 
 ### Using Selenium 4
 
