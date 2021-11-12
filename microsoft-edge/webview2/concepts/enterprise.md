@@ -3,7 +3,7 @@ description: Understand how to manage WebView2 applications
 title: Managing WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2020
+ms.date: 11/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
