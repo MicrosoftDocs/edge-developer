@@ -28,6 +28,18 @@ IT admins can use group policy objects (GPO) to configure policy settings for We
 
 
 <!-- ====================================================================== -->
+## Windows Server Update Services (WSUS)
+
+[Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) enables information technology administrators to deploy the latest Microsoft product updates. You can use WSUS to fully manage the distribution of updates of WebView2 that are released through Microsoft Update to computers on your network.
+
+> [!NOTE]
+> The recommended way of receiving WebView2 updates is by using the default Edge updater. Any modification of update & servicing paths should be done with caution.
+
+### WebView2 Deployment & Update using WSUS
+
+WebView2 options in Configuration Manager exist under the Microsoft Edge Management node. For more information, visit [Update Microsoft Edge](/mem/configmgr/apps/deploy-use/deploy-edge?bc=https:%2F%2Fdocs.microsoft.com%2FDeployEdge%2Fbreadcrumb%2Ftoc.json&toc=https:%2F%2Fdocs.microsoft.com%2FDeployEdge%2Ftoc.json)
+
+
 ## See also
 
 *  [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md) - About the Evergreen, self-updating WebView2 Runtime.
