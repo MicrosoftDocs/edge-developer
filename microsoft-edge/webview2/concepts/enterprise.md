@@ -37,7 +37,7 @@ IT admins can use group policy objects (GPO) to configure policy settings for We
 
 ### WebView2 Deployment & Update using WSUS
 
-WebView2 options in Configuration Manager exist under the Microsoft Edge Management node. For more information, visit [Update Microsoft Edge](/mem/configmgr/apps/deploy-use/deploy-edge?bc=https:%2F%2Fdocs.microsoft.com%2FDeployEdge%2Fbreadcrumb%2Ftoc.json&toc=https:%2F%2Fdocs.microsoft.com%2FDeployEdge%2Ftoc.json)
+WebView2 options in Configuration Manager exist under the Microsoft Edge Management node. For more information, visit [Update Microsoft Edge](/mem/configmgr/apps/deploy-use/deploy-edge)
 
 
 ## See also
