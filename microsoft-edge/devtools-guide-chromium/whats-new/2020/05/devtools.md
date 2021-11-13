@@ -52,9 +52,19 @@ From your [feedback](../../../contact.md) and the [Chromium public issue tracker
    The Microsoft Edge DevTools in high contrast mode
 :::image-end:::
 
-To try the experiment, open DevTools Settings by selecting `?` or choosing the ![Devtools Settings icon](../../../media/settings-icon.msft.png) icon in the top-right corner of the DevTools.  Navigate to the **Experiments** section and check **Enable custom keyboard shortcuts settings tab (requires reload)**.  Now reload the DevTools, open Settings again, and navigate to the **Shortcuts** section.
+To try the experiment:
 
-Choose **DevTools (Default)** in the **Match shortcuts from preset** dropdown and select **Visual Studio Code**.  The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.
+1. In DevTools, open **Settings** by selecting `?` or choosing the ![Devtools Settings icon](../../../media/settings-icon.msft.png) icon in the top-right corner of DevTools.
+
+1. In the **Experiments** section, select the checkbox **Enable custom keyboard shortcuts settings tab (requires reload)**.
+
+1. Reload DevTools.
+
+1. Open **Settings** again, and select the **Shortcuts** section.
+
+1. Click the **Match shortcuts from preset** dropdown, select **DevTools (Default)**, and then select **Visual Studio Code**.  
+
+The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.
 
 For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8` but with the **Visual Studio Code** preset, that shortcut is now also `F5`.
 
@@ -262,7 +272,7 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 
 App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for [Progressive Web Apps](../../../../progressive-web-apps-chromium/index.md) that are installed on the user's desktop or mobile device.
 
-<!--For more information, navigate to [Get things done quickly with app shortcuts](https://alphabet-dev/app-shortcuts).  -->
+<!-- For more information, see [Get things done quickly with app shortcuts](https://alphabet-dev/app-shortcuts). -->
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
 

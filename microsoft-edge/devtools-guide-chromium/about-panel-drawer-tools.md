@@ -11,50 +11,23 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # About Panel and Drawer tools
 
-The **More Tools** (**+**) menu appears in two places:
+The tools that are listed in this **Tools** section can be displayed either as a Panel tool (on the main toolbar) or a Drawer tool (on the Drawer toolbar).  In the **Command Menu**, each of these tools is labelled as either a **Panel** tool or as a **Drawer** tool.  But you can add them to either the main toolbar or the Drawer toolbar, and you can use any of the following methods to open them or move them between the two toolbars.
 
+<!-- Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  The **More Tools** menu appears in two places:
 *  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
-*  On the **Drawer** toolbar (where _Drawer_ tools usually go).
+*  On the **Drawer** toolbar (where _Drawer_ tools usually go). -->
 
-In Google Chrome DevTools, a given tool can only appear on the main toolbar (Panel tools) or on the Drawer toolbar (Drawer tools).  The Console tool is unique; it can appear either on the main toolbar (as a Panel tool) or on the Drawer toolbar (as a Drawer tool).
+| Task | Steps |
+| --- | --- |
+| Open a tool on the main toolbar at the top of DevTools | On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select a tool. |
+| Open a tool on the Drawer toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, click **More Tools** (**+**) and then select a tool. |
+| Move a tool from the Drawer toolbar to the main Toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**. |
+| Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
+| Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type the name of the tool, and then select the tool. |
 
-The distinction between Panel tools and Drawer tools is less pronounced in Microsoft Edge than in Google Chrome DevTools.  In Microsoft Edge DevTools, any of these tools, whether labelled as a Panel tool or Drawer tool, can be added to either the main toolbar or the Drawer toolbar.
+For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Microsoft Edge Developer Tools overview](index.md).
 
-For an overview of all of the Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Microsoft Edge Developer Tools overview](index.md).<!-- see [DevTools overview] -->
-
-
-<!-- ====================================================================== -->
-## Opening any tool on the main toolbar at the top of DevTools
-
-*  On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select the tool.
-
-
-<!-- ====================================================================== -->
-## Opening any tool on the Drawer toolbar
-
-1.  When DevTools has focus, press **Esc** to show or hide the Drawer.
-
-1.  On the Drawer toolbar, click **More Tools** (**+**) and then select the tool.
-
-
-<!-- ====================================================================== -->
-## Moving a tool from the Drawer toolbar to the main Toolbar
-
-*  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**.
-
-
-<!-- ====================================================================== -->
-## Moving a tool from the main toolbar to the drawer Toolbar
-
-*  On the main toolbar, right-click the tool's tab, and then select **Move to bottom**.
-
-
-<!-- ====================================================================== -->
-## Opening in tool in its default toolbar
-
-1.  Open the **Command Menu**.
-
-1.  Type the name of the tool, and then select the tool.
-
-    * If the tool has **Panel** next to it in the Command Menu, the tool opens in the main toolbar at the top of DevTools.
-    * If the tool has **Drawer** next to it in the Command Menu, the tool opens in the Drawer toolbar.
+In addition to Panel tools and Drawer tools, DevTools includes the following tools:
+*  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
+*  The **Device Emulator**.  See [Emulate mobile devices in Microsoft Edge DevTools](device-mode/index.md).
+<!-- *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md). -->

@@ -236,17 +236,13 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+[!INCLUDE [Chromium What's New note](../../includes/chromium-whats-new-note.md)]
 
 ### New CSS angle visualization tools
 
-DevTools now have better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, choose the clock icon.  To change the angle, choose anywhere in the clock or drag the needle.  To change the angle value, you may also use mouse and keyboard shortcuts.  <!--  To learn more, see [Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock). -->  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
-<!--
-todo: add link when css angle clock section exists.
-Update Nov. 4, 2021: An open PR is now adding Angle Clock section to Css Features Reference.
--->
+DevTools now have better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, click the clock icon.  To change the angle, click anywhere in the clock or drag the needle.  To change the angle value, you can also use mouse and keyboard shortcuts.  To learn more, see [Change angle value with the Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock).  To view real-time updates on this feature in the Chromium open-source project, see Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
 
-The following CSS angle is used for the example.
+The following CSS angle is used for the example:
 
 ```css
 background: linear-gradient(100deg, lightblue, pink);

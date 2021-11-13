@@ -26,16 +26,16 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 *  Enable back-forward cache debugging support
 *  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) is turned on by default starting with Microsoft Edge 90.
 *  Enable experimental hide issues menu
-*  Enable CSS \<length\> authoring tool in the Styles pane (https://goo.gle/length-feedback)
+*  Enable CSS \<length\> authoring tool in the Styles pane <!-- 96 but not later has also: (https://goo.gle/length-feedback) -->
 *  Enable webhint
 *  Show issues in Elements
 *  Enable Composited Layers in 3D View
 *  DevTools Tooltips
 *  Detached Elements
-*  VS Code themes for the DevTools
+*  VS Code themes for the DevTools <!-- literal checkbox label -->
 *  Open source files in Visual Studio Code
 *  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
-<!-- *  Enable dynamic Welcome content - turned on by default in v97, not v96 -->
+<!-- *  Enable dynamic Welcome content - turned on by default in v97 & v98, not v96 -->
 
 
 <!-- ====================================================================== -->
@@ -69,42 +69,42 @@ To turn experimental features on or off in Microsoft Edge:
 
 <!-- ====================================================================== -->
 <!-- ## Allow extensions to load custom stylesheets -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Capture node creation stacks -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Automatically pretty print in the Sources Panel -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Protocol Monitor -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Show CSP Violations view -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Record coverage while performance tracing -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Show option to take heap snapshot where globals are treated as root -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 ## Source order viewer
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 **Source Order Viewer** is an experiment that displays the order of elements in the webpage source.  The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
 
@@ -121,45 +121,45 @@ This experiment is available starting with Microsoft Edge version 86 and is turn
 
 <!-- ====================================================================== -->
 <!-- ## Enable back-forward cache debugging support -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Timeline: event initiators -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Timeline: WebGL-based flamechart -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## WebAssembly Debugging: Enable DWARF support -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Emulation: Support dual screen mode -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 <!-- [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable full accessibility tree view in the Elements panel -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 ## Enable new Font Editor tool within the Styles pane.
-<!-- keep the period, to match the checkbox label -->
-<!-- present in v96 -->
+<!-- keep period, per literal checkbox label>
+<!-- present in 96, 98 -->
 
 You can now use the new visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
@@ -184,44 +184,44 @@ This experiment is available starting with Microsoft Edge version 89.
 
 <!-- ====================================================================== -->
 <!-- ## Enable automatic contrast issue reporting via the Issues Panel -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable experimental cookie features -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable experimental hide issues menu -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Allow grouping and hiding of issues by IssueKind -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable Reporting API panel in the Application panel -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable CSS \<length\> authoring tool in the Styles pane (https://goo.gle/length-feedback) -->
-<!-- present in v96 -->
-<!-- in 97 the label is shorter: -->
+<!-- present in 96, 97, 98 -->
+<!-- in 97 & 98 the label is shorter: -->
 <!-- ## Enable CSS \<length\> authoring tool in the Styles pane -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Log DevTools uncaught exceptions to Console -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 ## Enable webhint
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
 
@@ -241,12 +241,12 @@ This experiment is available starting with Microsoft Edge version 85 and is turn
 
 <!-- ====================================================================== -->
 <!-- ## Show issues in Elements -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 You can visualize Layers alongside z-indexes and the Document Object Model (DOM).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
 
@@ -263,7 +263,7 @@ This experiment is available starting with Microsoft Edge version 87 and is turn
 
 <!-- ====================================================================== -->
 ## Enable Network Console
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You can use the **Network Console** experiment to send web API requests.
 
@@ -282,27 +282,29 @@ This experiment is available starting with Microsoft Edge version 85.
 
 <!-- ====================================================================== -->
 <!-- ## Focus Mode -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
+
+<!-- todo: add section content, link to it from What's New 96 and maybe from What's New 90 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## DevTools Tooltips -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Detached Elements -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## VS Code themes for the DevTools -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
 
@@ -317,7 +319,7 @@ This experiment is available starting with Microsoft Edge version 96.
 
 <!-- ====================================================================== -->
 <!-- Microsoft Edge automatically pretty print in the Sources Panel -->
-<!-- added in v97 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
@@ -327,52 +329,52 @@ This experiment is available starting with Microsoft Edge version 96.
 
 <!-- ====================================================================== -->
 <!-- ## Ignore List for JavaScript frames on Timeline -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Input events on Timeline overview -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Live heap profile -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Sampling heap profiler timeline -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable keyboard shortcut editor -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Timeline: invalidation tracking -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Timeline: show all events -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Timeline: V8 Runtime Call Stats on Timeline -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Timeline: Replay input events -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 <!-- ## Enable dynamic Welcome content -->
-<!-- present in v96 -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
