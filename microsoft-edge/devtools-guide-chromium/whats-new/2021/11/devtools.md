@@ -77,17 +77,17 @@ For general information about this extension, see [Microsoft Edge DevTools exten
 
 ### Display your web project inside the editor, and simulate different devices
 
-The Microsoft Edge DevTools for Visual Studio Code extension now features a dockable screencast and device emulation.
+The Microsoft Edge DevTools for Visual Studio Code extension now features a dockable screencast and device emulation:
 
-:::image type="content" source="./media/edge-devtools-for-vscode-toggle-screencast.png" alt-text="Click the screencast icon to view the browser inside the editor.":::
+:::image type="content" source="../../media/2021/11/edge-devtools-for-vscode-toggle-screencast.png" alt-text="Click the screencast icon to view the browser inside of Visual Studio Code.":::
 
-You can see your web project in a dedicated tab inside the editor, and also simulate various devices:
+You can see your web project in a dedicated tab inside of Visual Studio Code, and also simulate various devices:
 
 :::image type="content" source="../../media/2021/11/edge-devtools-for-vscode-simulated-iphone-red-boxes.png" alt-text="The screencast showing the current document in an emulated iPhone 5 in the correct size and with an emulated touchscreen interface.":::
 
 <!-- videos: see work item -->
 
-For details about the dockable screencast, see [Changing to headless mode](../../../../visual-studio-code/microsoft-edge-devtools-extension#changing-to-headless-mode).  For details about device emulation, see [Device emulation in the screencast](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-emulation-in-the-screencast).
+For details about the dockable screencast, see [Changing to headless mode](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#changing-to-headless-mode).  For details about device emulation, see [Device emulation in the screencast](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-emulation-in-the-screencast).
 
 ### Live, inline issue reporting
 
