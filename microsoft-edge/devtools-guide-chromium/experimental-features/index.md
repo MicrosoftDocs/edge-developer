@@ -162,7 +162,7 @@ Placeholder.
 
 
 <!-- ====================================================================== -->
-## Webassembly Debugging: Enable DWARF support
+## WebAssembly Debugging: Enable DWARF support
 
 Placeholder.
 
