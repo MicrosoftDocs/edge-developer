@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/31/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -11,94 +11,204 @@ no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Ena
 ---
 # Experimental features
 
-Microsoft Edge DevTools provide access to experimental features that are still in development.  You can try out these features and [provide feedback](../contact.md) before each feature is released.
+Microsoft Edge DevTools provide access to experimental features that are still in development. This article describes only experimental features found in Microsoft Edge. You can try out these features and [provide feedback](../contact.md) before each feature is released.
 
-All channels of Microsoft Edge have experimental features.  You can get the latest experimental features by using the Microsoft Edge Canary channel.  This article only covers selected experimental features.  For the full list, see the **Settings** > **Experiments** page in DevTools.
+All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have experimental features. You can get the latest experimental features by using the [Microsoft Edge Canary channel](https://www.microsoftedgeinsider.com/welcome?channel=canary). To view the full list available in your version of Microsoft Edge, see the **Settings** > **Experiments** page in DevTools.
 
 
 <!-- ====================================================================== -->
-## Experimental features which are turned on by default
+## Experimental features in the current release
 
-As of Microsoft Edge 94, the following experimental features are turned on by default.  This means that these features can be used right away, without you having to change any settings.  You can turn off these default experimental features, if needed.
+The following table lists the default status of each experimental feature. The feature name links to more information.
 
-<!-- listed in this list in order per Settings > Experiments pane -->
-*  Source order viewer
-*  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) is turned on by default starting with Microsoft Edge 90.
-*  Enable webhint
-*  Show issues in Elements
-*  Enable Composited Layers in 3D View
-*  DevTools Tooltips
-*  Visual Studio Code themes for the DevTools
-*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
+| Default status | Experimental feature |
+| :---: | :--- |
+| Off | [Allow extensions to load custom stylesheets](#allow-extensions-to-load-custom-stylesheets) |
+| Off | [Capture node creation stacks](#capture-node-creation-stacks) |
+| Off | [Automatically pretty print in the Sources Panel](#automatically-pretty-print-in-the-sources-panel) |
+| Off | [Protocol Monitor](#protocol-monitor) |
+| Off | [Show CSP Violations view](#show-csp-violations-view) |
+| Off | [Record coverage while performance tracing](#record-coverage-while-performance-tracing) |
+| Off | [Show option to take heap snapshot where globals are not treated as root](#show-option-to-take-heap-snapshot-where-globals-are-not-treated-as-root) |
+| **On** | [Source order viewer](../accessibility/test-tab-key-source-order-viewer) |
+| **On** | [Enable back-forward cache debugging support](#enable-back-forward-cache-debugging-support) |
+| Off | [Timeline: event initiators](#timeline-event-initiators) |
+| Off | [Timeline: WebGL-based flamechart](#timeline-webgl-based-flamechart) |
+| Off | [Webassembly Debugging: Enable DWARF support](#webassembly-debugging-enable-dwarf-support) |
+| **On** | [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) |
+| Off | [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../whats-new/2021/01/devtools#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) |
+| Off | [Enable full accessibility tree view in the Elements panel](../whats-new/2021/02/devtools#full-accessibility-tree-view-in-the-elements-tool) |
+| Off | [Enable new Font Editor tool within the Styles Pane](../inspect-styles/edit-fonts) |
+| Off | [Enable automatic contrast issue reporting via the Issues panel](#webassembly-debugging-enable-dwarf-support) |
+| Off | [Enable experimental cookie features](#enable-experimental0-cookie-features) |
+| **On** | [Enable experimental hide issues menu](#enable-experimental-hide-issues-menu) |
+| Off | [Allow grouping and hiding of issues by IssueKind](#allow-grouping-and-hiding-of-issues-by-issuekind) |
+| Off | [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel) |
+| **On** | [Enable CSS \<Length\> authoring tool in the styles pane](#enable-css-length-authoring-tool-in-the-styles-pane) [(http://goo.gle/length-feedback)](http://goo.gle/length-feedback) | 
+| Off | [Log DevTools uncaught exceptions to Console](#log-devtools-uncaught-exceptions-to-console) |
+| **On** | [Enable webhint](#enable-webhint) |
+| **On** | [Show issues in Elements](#show-issues-in-elements) |
+| **On** | [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view) |
+| Off | [Enable Network Console](#enable-network-console) |
+| Off | [Focus Mode](#focus-mode) |
+| **On** | [DevTools Tooltips](#devtools-tooltips) |
+| **On** | [Detached Elements](#detached-elements) |
+| **On** | [VS Code themes for the DevTools](#vs-code-themes-for-the-devtools) |
+| **On** | [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code) |
+|   |   |
+|  | **The following experimental features are less stable.** |
+| Off | [Ignore list for JavaScript frames on Timeline](#ignore-list-for-javascript-frames-on-timeline) |
+| Off | [Input events on Timeline overview](#input-events-on-timeline-overview) |
+| Off | [Live heap profile](#live-heap-profile) |
+| Off | [Sampling heap profiler timeline](#sampling-heap-profiler-timeline) |
+| **On** | [Enable keyboard shortcut editor](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) |
+| Off | [Timeline: invalidation tracking](#timeline-invalidation-tracking) |
+| Off | [Timeline: show all events](#timeline-show-all-events) |
+| Off | [Timeline: V8 Runtime Call Stats on Timeline](#timeline-v8-runtime-call-stats-on-timeline) |
+| Off | [Timeline: Replay input events](#timeline-replay-input-events) |
+| Off | [Enable dynamic Welcome content](#enable-dynamic-welcome-content) |
 
+<!--| Off | [CSS Overview](../whats-new/2020/10/devtools#view-and-fix-color-contrast-issues-in-the-css-overview-tool) |-->
+<!--| Off | Empty sourcemap auto-stepping |-->
+<!--| Off | Source diff |-->
 
 <!-- ====================================================================== -->
 ## Turning on experimental features
 
 To turn on (or off) experimental features in Microsoft Edge:
 
-1.  [Open DevTools](../open/index.md).  To do this, in Microsoft Edge, select the **Settings and more** button, which is an ellipses (three dots).  Then hover over **More tools**, and then select **Developer tools**.
+1.  [Open DevTools](../open/index.md). In Microsoft Edge, click the **Settings and more** button, which is an ellipsis (three dots). Then hover over **More tools**, and click **Developer tools**.
 
-1.  Open the [Settings](../customize/index.md#settings) pane of DevTools.  To do this, select the **Settings** (gear) icon.
+1.  Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
 
-1.  On the left side of the **Settings** pane, select the **Experiments** section.
+1.  On the left side of the **Settings** pane, click the **Experiments** section.
 
     :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings" lightbox="../media/experiments-devtools.msft.png":::
 
-1.  On the **Experiments** page, scroll through the list of all available experimental features and select the checkbox next to each feature that you want to test.  Some experiments are turned on by default.
+1.  On the **Experiments** page, scroll through the list of all available experimental features. Click an empty checkbox to select each feature that you want to test. Some experiments are turned on by default.
 
-1.  Select the **X** in the upper right to close **Settings**.
+1.  Click a selected checkbox to turn off any feature you do not want to test.
 
-1.  Select the **Reload DevTools** button.
+1.  Click the **X** in the upper right to close **Settings**.
+
+1.  Click the **Reload DevTools** button.
 
 > [!NOTE]
-> Experimental features are constantly being updated and might cause performance issues.  To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.
+> Experimental features are constantly being updated and might cause performance issues. To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.
 
 
 <!-- ordering for the h2 sections below: same order as in the Experiments page.  if change to a different ordering scheme, note that scheme here. -->
 
 
 <!-- ====================================================================== -->
-## Source order viewer
-<!-- on by default in 94 -->
+## Allow extensions to load custom stylesheets
 
-**Source Order Viewer** is an experiment that displays the order of elements in the webpage source.  The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
-
-To use the **Source Order Viewer**:
-1.  Open the **Elements** tool.
-1.  To the right of the **Styles** tab, select the **Accessibility** tab.
-1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
-1.  Highlight any HTML element to display an overlay that the order in the webpage source.
-
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-
-This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
+Placeholder.
 
 
 <!-- ====================================================================== -->
-## Enable new Font Editor tool within the Styles pane.
-<!-- keep the period per the ui string literal -->
-<!-- found in Experiments in 94 60% down main list -->
+## Capture node creation stacks
 
-You can now use the new visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
+Placeholder.
 
-*   Switch between units for different font properties
-*   Switch between keywords for different font properties
-*   Convert units
-*   Generate accurate CSS code
 
-To use the new visual **Font Editor**:
-1.  Open the **Elements** tool.
-1.  Open the **Styles** pane.
-1.  Select the **Font Editor** icon.
+<!-- ====================================================================== -->
+## Automatically pretty print in the Sources Panel
 
-For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
+Placeholder.
 
-:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
-   The visual **Font Editor** pane is highlighted
-:::image-end:::
 
-This experiment is available starting with Microsoft Edge version 89.
+
+<!-- ====================================================================== -->
+## Protocol Monitor
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Show CSP Violations view
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Record coverage while performance tracing
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Show option to take heap snapshot where globals are not treated as root
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Enable back forward cache debugging support
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Timeline: event initiators
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Timeline: WebGL based flamechart
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Webassembly Debugging: Enable DWARF support
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Enable automatic contrast issue reporting via the Issues panel
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Enable experimental cookie features
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Enable experimental hide issues menu
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Allow grouping and hiding of issues by IssueKind
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Enable Reporting API panel in the Application panel
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Enable CSS \<Length\> authoring tool in the styles pane
+
+[(http://goo.gle/length-feedback)](http://goo.gle/length-feedback)
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Log DevTools uncaught exceptions to Console
+
+Placeholder.
 
 
 <!-- ====================================================================== -->
@@ -122,10 +232,18 @@ This experiment is available starting with Microsoft Edge version 85 and is turn
 
 
 <!-- ====================================================================== -->
+## Show issues in Elements
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
 <!-- on by default in 94 -->
 
-You can visualize Layers alongside z-indexes and the Document Object Model (DOM).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
+You can visualize Layers alongside z-indexes and the Document Object Model (DOM). For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
+
+This feature helps you debug without switching contexts as often. Reducing context-switching resolves a major pain point for developers. This feature makes it clear how the code you write affects your web app. 
 
 To use **Composited Layers**, complete the following steps.
 
@@ -149,8 +267,8 @@ To use the **Network Console**, complete the following steps.
 1.  Open the **Network** pane.
 1.  Find the network request that you want to change and resend.
 1.  Open the contextual menu (right-click), and select **Edit and Replay**.
-1.  When the **Network Console** opens, edit the network request information.
-1.  Select **Send**.
+1.  In the **Network Console**, edit the network request information.
+1.  Click **Send**.
 
 :::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="../media/network-network-console.msft.png":::
 
@@ -158,18 +276,102 @@ This experiment is available starting with Microsoft Edge version 85.
 
 
 <!-- ====================================================================== -->
+## Focus Mode
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## DevTools Tooltips
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Detached Elements
+
+Memory leaks in web applications are a difficult to locate and repair.
+
+The new Detached Elements panel in Microsoft Edge DevTools helps investigate and resolve a common source of memory leaks.
+
+Memory leaks occur when the JavaScript code of the application retains an increasing number of objects in memory. The JavaScript code should release these objects so that the memory space can be reused by the browser.
+
+<!-- ???more needed, probably with an image, Detached Elements tutorial is in progress??? -->
+
+
+<!-- ====================================================================== -->
+## VS Code themes for the DevTools
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
 <!-- in Experiments as of 96, at end of main list -->
 
-The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
+The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files. When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
 
-After you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code, rather than in the code editor of the Sources tool in DevTools.
+When you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code. This action previously opened the file in the code editor of the Sources tool in DevTools.
 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
-Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.  You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
+Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 
 This experiment is available starting with Microsoft Edge version 96.
+
+
+<!-- ====================================================================== -->
+## Ignore list for JavaScript frames on Timeline
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Input events on Timeline overview
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Live heap profile
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Sampling heap profiler timeline
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Timeline: invalidation tracking
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Timeline: show all events
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Timeline: V8 Runtime Call Stats on Timeline
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Timeline: Replay input events
+
+Placeholder.
+
+
+<!-- ====================================================================== -->
+## Enable dynamic Welcome content
+
+Placeholder.
 
 
 <!-- ====================================================================== -->
@@ -177,22 +379,22 @@ This experiment is available starting with Microsoft Edge version 96.
 
 <!-- todo: in a later PR, move these items from here into regular articles -->
 
-These features have been promoted from Experimental to regular features, and have been removed from **Settings** > **Experiments**.
+These features have been promoted from experimental to regular features, and have been removed from **Settings** > **Experiments**.
 
-*  [Turn on new CSS grid debugging features](../css/grid.md) - removed from Experimental status starting with Microsoft Edge 89.
+*  [Turn on new CSS grid debugging features](../css/grid.md) - removed from experimental status starting with Microsoft Edge 89.
 
-*  [Match keyboard shortcuts from Microsoft Visual Studio Code](../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code) - removed from Experimental status starting with Microsoft Edge 86.
+*  [Match keyboard shortcuts from Microsoft Visual Studio Code](../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code) - removed from experimental status starting with Microsoft Edge 86.
 
-*  [Turn on support to move tabs between panels](../customize/index.md) - removed from Experimental status starting with Microsoft Edge 85.
+*  [Turn on support to move tabs between panels](../customize/index.md) - removed from experimental status starting with Microsoft Edge 85.
 
-*  [3D View](../3d-view/index.md) - removed from Experimental status starting with Microsoft Edge 83.
+*  [3D View](../3d-view/index.md) - removed from experimental status starting with Microsoft Edge 83.
 
 *  The items in the following subsections.
 
 ### Enable + button tab menus to open more tools
 <!-- not in Experiments 94 -->
 
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+This was an experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
 You can now open more tools using the new **More Tools** (`+`) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (`+`) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you can add to the tab bar, select the **More Tools** (`+`) icon.
 
@@ -201,7 +403,7 @@ You can now open more tools using the new **More Tools** (`+`) icon.  After you 
 ### Enable Welcome tab
 <!-- not in Experiments 94 -->
 
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+The Welcome tab was an experiment starting with Microsoft Edge version 89. It is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.
 
@@ -221,7 +423,7 @@ If you prefer the original **What's New** tool, navigate to [Settings](../custom
 ### Enable new CSS Flexbox debugging features
 <!-- not in Experiments page as of 94 -->
 
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+This was an experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
 This feature provides many new visualizations to help you debug CSS Flexbox layouts.
 
