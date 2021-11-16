@@ -198,7 +198,7 @@ Placeholder.
 
 
 <!-- ====================================================================== -->
-## Enable CSS \<Length\> authoring tool in the styles pane
+## Enable CSS \<length\> authoring tool in the Styles pane
 
 [(http://goo.gle/length-feedback)](http://goo.gle/length-feedback)
 
