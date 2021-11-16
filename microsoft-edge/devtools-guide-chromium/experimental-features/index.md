@@ -34,7 +34,7 @@ The following table lists the default status of each experimental feature. The f
 | **On** | [Enable back-forward cache debugging support](#enable-back-forward-cache-debugging-support) |
 | Off | [Timeline: event initiators](#timeline-event-initiators) |
 | Off | [Timeline: WebGL-based flamechart](#timeline-webgl-based-flamechart) |
-| Off | [Webassembly Debugging: Enable DWARF support](#webassembly-debugging-enable-dwarf-support) |
+| Off | [WebAssembly Debugging: Enable DWARF support](#webassembly-debugging-enable-dwarf-support) |
 | **On** | [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) |
 | Off | [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../whats-new/2021/01/devtools#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) |
 | Off | [Enable full accessibility tree view in the Elements panel](../whats-new/2021/02/devtools#full-accessibility-tree-view-in-the-elements-tool) |
