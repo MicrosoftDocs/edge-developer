@@ -21,7 +21,7 @@ All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have exper
 
 The following table lists the default status of each experimental feature. The feature name links to more information.
 
-| Default status | Experimental feature |
+| Default state | Experimental feature |
 | :---: | :--- |
 | Off | [Allow extensions to load custom stylesheets](#allow-extensions-to-load-custom-stylesheets) |
 | Off | [Capture node creation stacks](#capture-node-creation-stacks) |
