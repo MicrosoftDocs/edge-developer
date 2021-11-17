@@ -1,6 +1,6 @@
 ---
 description: Organize resources by frame, domain, type, or other criteria.
-title: View page resources with Microsoft Edge DevTools
+title: View page resources
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,15 +21,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View page resources with Microsoft Edge DevTools
+# View page resources
 
-This guide teaches you how to use Microsoft Edge DevTools to view the resources of a web page.  Resources are the files that a page needs in order to display correctly.  Examples of resources include CSS, JavaScript, and HTML files, as well as images.
+Resources are the files that a page needs in order to display correctly.  Examples of resources include:
+*  CSS files.
+*  JavaScript files.
+*  HTML files.
+*  Image files.
+
+You can view the resources that make up a web page from within several tools, or panels.
 
 This guide assumes that you are familiar with the basics of [web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).
 
 
 <!-- ====================================================================== -->
-## Open resources
+## Open resources from the Command Menu
 
 When you know the name of the resource that you want to inspect, the **Command Menu** provides a fast way of opening the resource.
 
@@ -45,7 +51,9 @@ When you know the name of the resource that you want to inspect, the **Command M
        Type a filename in the **Open File** dialog
     :::image-end:::
 
-### Open resources in the Network tool
+
+<!-- ====================================================================== -->
+## Open resources in the Network tool
 
 Navigate to [Inspect the details of a resource](../network/index.md#inspect-the-details-of-the-resource).
 
@@ -55,7 +63,7 @@ Navigate to [Inspect the details of a resource](../network/index.md#inspect-the-
 
 ### Reveal resources in the Network tool from other panels
 
-The [Browse resources](#browse-resources) section below shows you how to view resources from various parts of the DevTools UI.  If you ever want to inspect a resource in the **Network** tool,  hover on the resource, open the contextual menu (right-click), and choose **Reveal in Network panel**.
+The next section, [Browse resources in the Network panel](#browse-resources-in-the-network-panel), shows how to view resources from various parts of the DevTools UI.  To inspect a resource in the **Network** tool, right-click the resource and select **Reveal in Network panel**.
 
 :::image type="complex" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Reveal in Network panel" lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
    **Reveal in Network panel**
@@ -63,9 +71,7 @@ The [Browse resources](#browse-resources) section below shows you how to view re
 
 
 <!-- ====================================================================== -->
-## Browse resources
-
-### Browse resources in the Network panel
+## Browse resources in the Network panel
 
 Navigate to [Log network activity](../network/index.md#log-network-activity).
 
@@ -73,13 +79,17 @@ Navigate to [Log network activity](../network/index.md#log-network-activity).
    Page resources in the **Network** Log
 :::image-end:::
 
-### Browse by directory
+
+<!-- ====================================================================== -->
+## Browse resources by directory in the Sources tool
 
 To view the resources of a webpage organized by directory:
 
 1.  Open DevTools.
-1.  Choose the **Sources** tool, and then in the **Navigator** pane in the upper left, choose the **Page** tab.
-1.  Choose the **More options** (...) button to the right of the **Page** tab, and then choose **Group by folder**.
+
+1.  Select the **Sources** tool, and then in the **Navigator** pane in the upper left, select the **Page** tab.
+
+1.  Click the **More options** (...) button to the right of the **Page** tab, and then select **Group by folder**.
 
     :::image type="complex" source="../media/resources-sources-page-empty.msft.png" alt-text="The Page tab in the Navigator pane of the Sources tool" lightbox="../media/resources-sources-page-empty.msft.png":::
        The **Page** tab in the **Navigator** pane of the **Sources** tool
@@ -95,19 +105,23 @@ To view the resources of a webpage organized by directory:
     | `(index)` | The main HTML document. |
     | `sw.js` | A service worker runtime context. |
 
-1.  Choose a resource to view it in the **Editor**.
+1.  Select a resource to view it in the **Editor**.
 
     :::image type="complex" source="../media/resources-sources-page-resource.msft.png" alt-text="View a file in the Editor" lightbox="../media/resources-sources-page-resource.msft.png":::
        View a file in the **Editor**
     :::image-end:::
 
-### Browse by filename
+
+<!-- ====================================================================== -->
+## Browse resources by filename in the Sources tool
 
 By default, the **Page** tab groups resources by directory.  To display the resources for each domain as a flat list, instead of grouping them by directory:
 
-1.  Navigate to the **Sources** tool.
-1.  In the **Navigator** pane (on the left), choose the **Page** tab.
-1.  Choose **More options** `...` and then clear the checkmark next to **Group by folder**.
+1.  Go to the **Sources** tool.
+
+1.  In the **Navigator** pane (on the left), select the **Page** tab.
+
+1.  Click **More options** `...` and then clear the **Group by folder** checkbox.
 
     :::image type="complex" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="The Group by folder option" lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
        The **Group by folder** option
@@ -119,11 +133,13 @@ By default, the **Page** tab groups resources by directory.  To display the reso
        The **Page** tab after clearing the **Group by folder** check mark
     :::image-end:::
 
-### Browse by file type
+
+<!-- ====================================================================== -->
+## Browse resources by file type in the **Application** tool
 
 To group resources together based on their file type:
 
-1.  Choose the **Application** tab.  The **Application** tool opens.  By default the **Manifest** pane usually opens first.
+1.  Select the **Application** tab.  The **Application** tool opens.  By default, the **Manifest** pane usually opens first.
 
     :::image type="complex" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="The Application tool" lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
        The **Application** tool
@@ -135,16 +151,19 @@ To group resources together based on their file type:
        The **Frames** pane
     :::image-end:::
 
-1.  Expand the sections in which you are interested.
-1.  Choose a resource to view it.
+1.  Expand the sections you're interested in.
+
+1.  Select a resource to view it.
 
     :::image type="complex" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="View a resource in the Application panel" lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
        View a resource in the **Application** panel
     :::image-end:::
 
-#### Browse files by type in the Network panel
 
-Navigate to [Filter by resource type](../network/index.md#filter-by-resource-type).
+<!-- ====================================================================== -->
+## Browse files by type in the Network panel
+
+See [Filter by resource type](../network/index.md#filter-by-resource-type).
 
 :::image type="complex" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filter for CSS in the Network Log" lightbox="../media/resources-network-resources-filter-css.msft.png":::
    Filter for CSS in the **Network** Log

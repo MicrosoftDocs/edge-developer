@@ -64,7 +64,7 @@ In Microsoft Edge version 93, you can apply themes used in Visual Studio Code to
 
 Previously, when using a theme from Visual Studio Code in DevTools, breakpoint icons on the left margin of the code in the **Sources** tool weren't displayed.  Starting in Microsoft Edge 94, breakpoint icons are now displayed as expected.
 
-To learn more about using breakpoints for debugging JavaScript code, navigate to [How to pause your code with breakpoints in Microsoft Edge DevTools](../../../javascript/breakpoints.md).
+To learn more about using breakpoints for debugging JavaScript code, navigate to [Pause your code with breakpoints](../../../javascript/breakpoints.md).
 
 :::image type="complex" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="Breakpoint icons are now displayed when using Visual Studio Code themes" lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
    Breakpoint icons are now displayed when using Visual Studio Code themes
@@ -81,7 +81,7 @@ Previously, you couldn't navigate to the **More Tools** (`+`) button in DevTools
 
 Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
 
-To learn more about how to navigate the DevTools with the keyboard, navigate to [Microsoft Edge DevTools keyboard shortcuts](../../../shortcuts/index.md).
+To learn more about how to navigate the DevTools with the keyboard, see [Keyboard shortcuts](../../../shortcuts/index.md).
 
 :::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="Using the arrow keys to put focus on the **More tabs** or **More Tools** button" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
    Using the arrow keys to put focus on the **More tabs** or **More Tools** button

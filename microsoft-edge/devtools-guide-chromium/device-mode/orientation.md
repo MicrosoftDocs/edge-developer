@@ -1,6 +1,6 @@
 ---
-description: Open the Sensors tool and navigate to the Orientation section.
-title: Simulate device orientation with Microsoft Edge DevTools
+description: Simulate device orientation using the Orientation section of the Sensors tool.
+title: Simulate device orientation
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Simulate device orientation with Microsoft Edge DevTools
+# Simulate device orientation
 
 Complete the following actions to simulate different device orientations from Microsoft Edge DevTools.
 
@@ -44,8 +44,8 @@ Complete the following actions to simulate different device orientations from Mi
        :::column-end:::
        :::column span="":::
           After you choose **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.
-          <!--To understand how each axis works, navigate to [Alpha][alpha], [Beta][beta], and [Gamma][gamma].  -->
-          <!--todo: update links to alpha, beta, and gamma section when available -->
+          <!--To understand how each axis works, navigate to [Device Orientation & Motion](). -->
+          <!--todo: update links to local copy of alpha/beta/gamma sections from https://developers.google.com/web/fundamentals/native-hardware/device-orientation#alpha , beta, and gamma section when available; see "original page" below -->
           You are also able to set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis.
 
           :::image type="complex" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="The Orientation Model" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::

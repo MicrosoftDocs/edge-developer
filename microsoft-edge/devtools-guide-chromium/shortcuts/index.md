@@ -1,5 +1,5 @@
 ---
-description: The canonical documentation for Microsoft Edge DevTools keyboard shortcuts.
+description: The default keyboard shortcuts for Microsoft Edge DevTools.
 title: Keyboard shortcuts
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -23,9 +23,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Keyboard shortcuts
 
-This article is a reference of keyboard shortcuts in Microsoft Edge DevTools.
+These are the default keyboard shortcuts for Microsoft Edge DevTools.
 
-Keyboard shortcuts are shown in some tooltips in DevTools.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
+Tooltips often show a keyboard shortcut.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
 
 See also [Customize keyboard shortcuts](../customize/shortcuts.md).
 
@@ -33,10 +33,10 @@ See also [Customize keyboard shortcuts](../customize/shortcuts.md).
 <!-- ====================================================================== -->
 ## Keyboard shortcuts for opening DevTools
 
-To open DevTools, select the following keyboard shortcuts while your cursor is focused on the browser viewport.
+To open DevTools, press the following keyboard shortcuts while your cursor is focused on the browser viewport:
 
 | Action | Windows/Linux | macOS |
-|:--- |:--- |:--- |
+|---|---|---|
 | Open whatever panel you used last | `F12` or `Control`+`Shift`+`I` | `Command`+`Option`+`I` |
 | Open the **Console** tool | `Control`+`Shift`+`J` | `Command`+`Option`+`J` |
 | Open the **Elements** tool | `Control`+`Shift`+`C` | `Command`+`Shift`+`C` or `Command`+`Option`+`C` |
@@ -45,10 +45,10 @@ To open DevTools, select the following keyboard shortcuts while your cursor is f
 <!-- ====================================================================== -->
 ## Global keyboard shortcuts
 
-The following keyboard shortcuts are available in most, if not all, DevTools panels.
+The following keyboard shortcuts are available in most DevTools panels.
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| Action | Windows/Linux | macOS |
+|---|---|---|
 | Show **Settings** | `?` or `F1` | `?` or `Function`+`F1` |
 | Focus the next panel | `Control`+`]` | `Command`+`]` |
 | Focus the previous panel | `Control`+`[` | `Command`+`[` |
@@ -65,7 +65,7 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Zoom in | `Control`+`Shift`+`+` | `Command`+`Shift`+`+` |
 | Zoom out | `Control`+`-` | `Command`+`-` |
 | Restore default zoom level | `Control`+`0` | `Command`+`0` |
-| Run snippet | Select `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then select `Enter` | Select `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then select `Enter` |
+| Run snippet | Press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press `Enter` | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `!` followed by the name of the script, then press `Enter` |
 
 <!-- TODO: make a bug about this UIPlacement link being ambiguous.  -->
 <!-- TODO: Link "Inspect Element Mode" when a good section exists.  -->
@@ -74,57 +74,61 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- ====================================================================== -->
 ## Elements tool keyboard shortcuts
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| Action | Windows/Linux | macOS |
+|---|---|---|
 | Undo change | `Control`+`Z` | `Command`+`Z` |
 | Redo change | `Control`+`Y` | `Command`+`Shift`+`Z` |
 | Select the element above / below the currently selected element | `Up Arrow` / `Down Arrow` | `Up Arrow` / `Down Arrow` |
 | Expand the currently selected node.  If the node is already expanded, this shortcut selects the element below it | `Right Arrow` | `Right Arrow` |
 | Collapse the currently selected node.  If the node is already collapsed, this shortcut selects the element above it | `Left Arrow` | `Left Arrow` |
-| Expand or collapse the currently selected node and all of the children | Hold `Control`+`Alt`, then choose the **arrow** icon next to the name of the element | Hold `Option`, then choose the **arrow** icon next to the name of the element |
+| Expand or collapse the currently selected node and all of the children | Hold `Control`+`Alt`, then click the **arrow** icon next to the name of the element | Hold `Option`, then click the **arrow** icon next to the name of the element |
 | Toggle **Edit Attributes** mode on the currently selected element | `Enter` | `Enter` |
 | Select the next / previous attribute after entering **Edit Attributes** mode | `Tab` / `Shift`+`Tab` | `Tab` / `Shift`+`Tab` |
 | Hide the currently selected element | `H` | `H` |
 | Toggle **Edit as HTML** mode on the currently selected element | `Function`+`F2` | `F2` |
 
-### Styles panel keyboard shortcuts
+### Styles pane keyboard shortcuts
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
-| Navigate to the line where a property value is declared | Hold `Control`, then select the property value | Hold `Command`, then select the property value |
-| Cycle through the RBGA, HSLA, and Hex representations of a color value | Hold `Shift`, then choose the **Color Preview** box next to the value | Hold `Shift`, then choose the **Color Preview** box next to the value |
-| Select the next / previous property or value | Choose a property name or value, then select `Tab` / `Shift`+`Tab` | Choose a property name or value, then select `Tab` / `Shift`+`Tab` |
-| Increment / decrement a property value by 0.1 | Choose a value, then select `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Choose a value, then select `Option`+`Up Arrow` / Option+Down Arrow |
-| Increment / decrement a property value by 1 | Choose a value, then select `Up Arrow` / `Down Arrow` | Choose a value, then select `Up Arrow` / `Down Arrow` |
-| Increment / decrement a property value by 10 | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Choose a value, then select `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
-| Increment / decrement a property value by 100 | Choose a value, then select `Control`+`Up Arrow` / `Control`+`Down Arrow` | Choose a value, then select `Command`+`Up Arrow` / `Command`+`Down Arrow` |
+| Action | Windows/Linux | macOS |
+|---|---|---|
+| Go to the line where a property value is declared | Hold `Control`, then click the property value | Hold `Command`, then click the property value |
+| Cycle through the RBGA, HSLA, and Hex representations of a color value | Hold `Shift`, then click the **Color Preview** box next to the value | Hold `Shift`, then click the **Color Preview** box next to the value |
+| Select the next / previous property or value | Click a property name or value, then press `Tab` / `Shift`+`Tab` | Click a property name or value, then press `Tab` / `Shift`+`Tab` |
+| Increment / decrement a property value by 0.1 | Click a value, then press `Alt`+`Up Arrow` / `Alt`+`Down Arrow` | Click a value, then press `Option`+`Up Arrow` / Option+Down Arrow |
+| Increment / decrement a property value by 1 | Click a value, then press `Up Arrow` / `Down Arrow` | Click a value, then press `Up Arrow` / `Down Arrow` |
+| Increment / decrement a property value by 10 | Click a value, then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Click a value, then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
+| Increment / decrement a property value by 100 | Click a value, then press `Control`+`Up Arrow` / `Control`+`Down Arrow` | Click a value, then press `Command`+`Up Arrow` / `Command`+`Down Arrow` |
+| Cycle through the degrees (deg), gradians (grad), radians (rad) and turns (turn) representations of an angle value | Hold `Shift` then click the **Angle Preview** box next to the value | Hold `Shift` then click the **Angle Preview** box next to the value |
+| Increment / decrement an angle value by 1 | Click the **Angle Preview** box next to the value then press `Up Arrow` / `Down Arrow` | Click the **Angle Preview** box next to the value then press `Up Arrow` / `Down Arrow` |
+| Increment / decrement an angle value by 10 | Click the **Angle Preview** box next to the value then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` | Click the **Angle Preview** box next to the value then press `Shift`+`Up Arrow` / `Shift`+`Down Arrow` |
+| Increment / decrement an angle value by 15 | Click the **Angle Preview** box next to the value then press `Shift`, click / mouse slide on the **Angle Clock Overlay** | Click the **Angle Preview** box next to the value then press `Shift`, click / mouse slide on the **Angle Clock Overlay** |
 
 
 <!-- ====================================================================== -->
 ## Sources tool keyboard shortcuts
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| Action | Windows/Linux | macOS |
+|---|---|---|
 | Pause script runtime (if currently running) or resume (if currently paused) | `F8` or `Control`+`\` | `F8` or `Command`+`\` |
 | Step over next function call | `F10` or `Control`+`'` | `F10` or `Command`+`'` |
 | Step into next function call | `F11` or `Control`+`;` | `F11` or `Command`+`;` |
 | Step out of current function | `Shift`+`F11` or `Control`+`Shift`+`;` | `Shift`+`F11` or `Command`+`Shift`+`;` |
-| Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Control`, then choose the line of code | Hold `Command`, then choose the line of code |
+| Continue to a [specific line of code while paused](../javascript/breakpoints.md#line-of-code-breakpoints) | Hold `Control`, then click the line of code | Hold `Command`, then click the line of code |
 | Select the call frame below / above the currently selected frame | `Control`+`.` / `Control`+`,` | `Control`+`.` / `Control`+`,` |
 | Save changes to local modifications | `Control`+`S` | `Command`+`S` |
 | Save all changes | `Control`+`Alt`+`S` | `Command`+`Option`+`S` |
 | Navigate to line | `Control`+`G` | `Control`+`G` |
-| Jump to a line number of the currently open file | Select `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then select `Enter` | Select `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then select `Enter` |
-| Jump to a column of the currently open file (for example line 5, column 9) | Select `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then select `Enter` | Select `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then select `Enter` |
-| Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Select `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | Select `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
+| Jump to a line number of the currently open file | Press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press `Enter` | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:` followed by the line number, then press `Enter` |
+| Jump to a column of the currently open file (for example line 5, column 9) | Press `Control`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press `Enter` | Press `Command`+`O` to open the [Command Menu](../command-menu/index.md), type `:`, then the line number, then another `:`, then the column number, then press `Enter` |
+| Navigate to a function declaration, if the current file is HTML or a script.  <br />  Navigate to a rule set, if the current file is a stylesheet.  | Press `Control`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options | press `Command`+`Shift`+`O`, then type in the name of the declaration / rule set, or select it from the list of options |
 | Close the active tab | `Alt`+`W` | `Option`+`W` |
 
 ### Code Editor keyboard shortcuts
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| Action | Windows/Linux | macOS |
+|---|---|---|
 | Delete all characters in the last word, up to the cursor | `Control`+`Delete` | `Option`+`Delete` |
-| Add or remove a [line-of-code breakpoint](../javascript/breakpoints.md#line-of-code-breakpoints) | Focus your cursor on the line, then select `Control`+`B` | Focus your cursor on the line, then select `Command`+`B` |
+| Add or remove a [line-of-code breakpoint](../javascript/breakpoints.md#line-of-code-breakpoints) | Focus your cursor on the line, then press `Control`+`B` | Focus your cursor on the line, then press `Command`+`B` |
 | Navigate to matching bracket | `Control`+`M` | `Control`+`M` |
 | Toggle single-line comment.  If multiple lines are selected, DevTools add a comment to the start of each line | `Control`+`/` | `Command`+`/` |
 | Turn on or off the next occurrence of whatever word the cursor is on.  Each occurrence is highlighted simultaneously | `Control`+`D` / `Control`+`U` | `Command`+`D` / `Command`+`U` |
@@ -133,8 +137,8 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- ====================================================================== -->
 ## Performance tool keyboard shortcuts
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| Action | Windows/Linux | macOS |
+|---|---|---|
 | Start / stop recording | `Control`+`E` | `Command`+`E` |
 | Save recording | `Control`+`S` | `Command`+`S` |
 | Load recording | `Control`+`O` | `Command`+`O` |
@@ -143,16 +147,16 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 <!-- ====================================================================== -->
 ## Memory tool keyboard shortcuts
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| Action | Windows/Linux | macOS |
+|---|---|---|
 | Start / stop recording | `Control`+`E` | `Command`+`E` |
 
 
 <!-- ====================================================================== -->
 ## Console tool keyboard shortcuts
 
-| Action | Windows\/Linux | macOS |
-|:--- |:--- |:--- |
+| Action | Windows/Linux | macOS |
+|---|---|---|
 | Accept autocomplete suggestion | `Right Arrow` or `Tab` | `Right Arrow` or `Tab` |
 | Reject autocomplete suggestion | `Escape` | `Escape` |
 | Get previous statement | `Up Arrow` | `Up Arrow` |
@@ -163,8 +167,6 @@ The following keyboard shortcuts are available in most, if not all, DevTools pan
 | Run | `Enter` | `Return` |
 | Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)) | Hold `Alt`, then click **Expand** (![Expand](../media/expand-icon.msft.png)). |
 
-
-<!--[201705ReleaseNotesContinue]: whats-new/2017/05/devtools-release-notes#continue  -->
 
 <!-- ====================================================================== -->
 > [!NOTE]

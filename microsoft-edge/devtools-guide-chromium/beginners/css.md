@@ -617,7 +617,7 @@ Congratulations, you're done!
 
 *   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
 *   To learn more about styling web pages, navigate to [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
-*   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS][DevtoolsCssIndex].
+*   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->

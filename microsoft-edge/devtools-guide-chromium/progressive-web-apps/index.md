@@ -87,7 +87,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 
 <!-- TODO: Rework content after sample app is created. -->
 
-<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via **remote debugging**, and then choose the **Add to Homescreen** button (on DevTools) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
+<!--If you want to test out the genuine mobile experience, you may connect a real mobile device to DevTools via [remote debugging](/debug/remote-debugging/remote-debugging), and then choose the **Add to Homescreen** button (on DevTools) to trigger the "add to homescreen" prompt on the connected mobile device.  -->
 
 <!--TODO:  Link Debug "remote debugging" sections when available. -->
 
@@ -101,6 +101,8 @@ Service workers are a fundamental technology in the future web platform.  They a
 
 *   [Intro to Service Workers](/web/fundamentals/primers/service-worker)
 *   [Push Notifications: Timely, Relevant, and Precise](/web/fundamentals/push-notifications)  -->
+
+<!-- [How Push Works](/web/fundamentals/push-notifications/how-push-works) -->
 
 <!--TODO:  Link to sections when available. -->
 
@@ -157,7 +159,7 @@ If you have two or more caches open, the caches display under the following **Ca
 <!-- ====================================================================== -->
 ## Quota usage
 
-Some responses within the **Cache Storage** pane may be flagged as being "opaque".  This refers to a response retrieved from a different origin, like from a **CDN** or remote API, when [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) is not enabled.
+Some responses within the **Cache Storage** pane may be flagged as being "opaque".<!-- [opaque](/web/fundamentals/glossary#opaque-response) -->  This refers to a response retrieved from a different origin, like from a **CDN**<!-- [CDN](/web/fundamentals/glossary#CDN) --> or remote API, when [CORS](https://fetch.spec.whatwg.org/#http-cors-protocol) is not enabled.
 
 <!--TODO:  Link Web "CDN" section when available. -->
 <!--TODO:  Link Web "opaque" section when available. -->
@@ -165,6 +167,7 @@ Some responses within the **Cache Storage** pane may be flagged as being "opaque
 In order to avoid leakage of cross-domain information, significant padding is added to the size of an opaque response used for calculating storage quota limits (for example whether a `QuotaExceeded` exception is thrown) and reported by the `navigator.storage` API.
 
 <!--TODO:  Link Estimating "`navigator.storage` API" sections when available. -->
+<!-- [Estimating available storage space](whats-new/2017/08/estimating-available-storage-space) -->
 
 The details of this padding vary from browser to browser, but for Microsoft Edge, this means that the **minimum size** that any single cached opaque response contributes to the overall storage usage is [approximately 7 megabytes](https://bugs.chromium.org/p/chromium/issues/detail?id=796060#c17).  Remember the padding when determining how many opaque responses you want to cache, since you may easily exceed storage quota limitations much sooner than you otherwise expect based on the actual size of the opaque resources.
 
@@ -195,15 +198,6 @@ Related Guides:
 
 *   [Inspect page resources](/iterate/manage-data/page-resources)
 *   [Inspect and manage local storage and caches](/iterate/manage-data/local-storage)  -->
-
-
-<!-- ====================================================================== -->
-<!--[WebEstimatingAvailableStorageSpace]: whats-new/2017/08/estimating-available-storage-space  -->
-<!--[RemoteDebugging]: /debug/remote-debugging/remote-debugging  -->
-
-<!--[WebHowPushWorks]: /web/fundamentals/push-notifications/how-push-works  -->
-<!--[WebGlossaryCDN]: /web/fundamentals/glossary#CDN  -->
-<!--[WebGlossaryOpaque]: /web/fundamentals/glossary#opaque-response  -->
 
 
 <!-- ====================================================================== -->
