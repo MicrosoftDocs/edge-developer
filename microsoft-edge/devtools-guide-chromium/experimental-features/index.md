@@ -31,7 +31,7 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 *  Show issues in Elements
 *  Enable Composited Layers in 3D View
 *  DevTools Tooltips
-*  Detached Elements
+<!-- *  Detached Elements - in 96 this checkmark is only present when a corpnet account is hooked up -->
 *  VS Code themes for the DevTools <!-- literal checkbox label -->
 *  Open source files in Visual Studio Code
 *  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
