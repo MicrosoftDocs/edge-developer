@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/31/2021
+ms.date: 11/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -31,10 +31,12 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 *  Show issues in Elements
 *  Enable Composited Layers in 3D View
 *  DevTools Tooltips
-<!-- *  Detached Elements - in 96 this checkmark is only present when a corpnet account is hooked up -->
 *  VS Code themes for the DevTools <!-- literal checkbox label -->
 *  Open source files in Visual Studio Code
 *  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
+
+<!-- *  Detached Elements - in 96 this checkmark is only present when a corpnet account is hooked up -->
+
 <!-- *  Enable dynamic Welcome content - turned on by default in v97 & v98, not v96 -->
 
 
