@@ -1,5 +1,5 @@
 ---
-description: A list of sample apps you can use to learn more about how to build Programmable Web Apps (PWAs).
+description: Sample apps that show how to build Progressive Web Apps (PWAs).
 title: Sample PWAs
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -10,13 +10,13 @@ keywords: progressive web apps, PWA, demos, samples
 ---
 # Sample PWAs
 
-Use this list of sample apps to learn more about how to use PWA features and APIs.
+Use this list of sample apps to learn more about how to use features and APIs for Progressive Web Apps (PWAs).
 
 
 <!-- ====================================================================== -->
 ## Webboard
 
-Intelligent whiteboarding app.
+An intelligent whiteboarding app.
 
 [App](https://webboard.app/), [source code](https://github.com/pwa-builder/web-whiteboard).
 
@@ -32,7 +32,7 @@ Features:
 <!-- ====================================================================== -->
 ## DevTools Tips
 
-List of tips and tricks for DevTools.
+Displays a list of tips and tricks for DevTools.
 
 [App](https://devtoolstips.org), [source code](https://github.com/captainbrosset/devtools-tips).
 
@@ -50,7 +50,7 @@ Features:
 <!-- ====================================================================== -->
 ## My Tracks
 
-GPS tracks visualization app.
+A GPS tracks visualization app.
 
 [App](https://captainbrosset.github.io/mytracks/), [source code](https://github.com/captainbrosset/mytracks).
 
@@ -78,6 +78,8 @@ Features:
 
 :::image type="content" source="./media/my-movies.png" alt-text="The My Movies app." lightbox="./media/my-movies.png":::
 
+
+<!-- ====================================================================== -->
 ## BPM Techno
 
 A real-time BPM counter.
