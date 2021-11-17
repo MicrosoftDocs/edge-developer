@@ -17,9 +17,9 @@ All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have exper
 
 
 <!-- ====================================================================== -->
-## Experimental features in the current release
+## Experimental features in Microsoft Edge versions 97 and 98
 
-The following table lists the default status of each experimental feature. The feature name links to more information.
+The following table lists the default state, of each experimental feature. The feature name links to more information.
 
 | Default state | Experimental feature |
 | :---: | :--- |
@@ -30,21 +30,21 @@ The following table lists the default status of each experimental feature. The f
 | Off | [Show CSP Violations view](#show-csp-violations-view) |
 | Off | [Record coverage while performance tracing](#record-coverage-while-performance-tracing) |
 | Off | [Show option to take heap snapshot where globals are not treated as root](#show-option-to-take-heap-snapshot-where-globals-are-not-treated-as-root) |
-| **On** | [Source order viewer](../accessibility/test-tab-key-source-order-viewer) |
+| **On** | [Source order viewer](#source-order-viewer) |
 | **On** | [Enable back-forward cache debugging support](#enable-back-forward-cache-debugging-support) |
 | Off | [Timeline: event initiators](#timeline-event-initiators) |
 | Off | [Timeline: WebGL-based flamechart](#timeline-webgl-based-flamechart) |
 | Off | [WebAssembly Debugging: Enable DWARF support](#webassembly-debugging-enable-dwarf-support) |
 | **On** | [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) |
-| Off | [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../whats-new/2021/01/devtools#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) |
-| Off | [Enable full accessibility tree view in the Elements panel](../whats-new/2021/02/devtools#full-accessibility-tree-view-in-the-elements-tool) |
-| Off | [Enable new Font Editor tool within the Styles Pane](../inspect-styles/edit-fonts) |
+| Off | [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) |
+| Off | [Enable full accessibility tree view in the Elements panel](../whats-new/2021/02/devtools.md#full-accessibility-tree-view-in-the-elements-tool) |
+| Off | [Enable new Font Editor tool within the Styles Pane](../inspect-styles/edit-fonts.md) |
 | Off | [Enable automatic contrast issue reporting via the Issues panel](#webassembly-debugging-enable-dwarf-support) |
-| Off | [Enable experimental cookie features](#enable-experimental0-cookie-features) |
+| Off | [Enable experimental cookie features](#enable-experimental-cookie-features) |
 | **On** | [Enable experimental hide issues menu](#enable-experimental-hide-issues-menu) |
 | Off | [Allow grouping and hiding of issues by IssueKind](#allow-grouping-and-hiding-of-issues-by-issuekind) |
 | Off | [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel) |
-| **On** | [Enable CSS \<Length\> authoring tool in the styles pane](#enable-css-length-authoring-tool-in-the-styles-pane) [(http://goo.gle/length-feedback)](http://goo.gle/length-feedback) | 
+| **On** | [Enable CSS \<Length\> authoring tool in the styles pane](#enable-css-length-authoring-tool-in-the-styles-pane) | 
 | Off | [Log DevTools uncaught exceptions to Console](#log-devtools-uncaught-exceptions-to-console) |
 | **On** | [Enable webhint](#enable-webhint) |
 | **On** | [Show issues in Elements](#show-issues-in-elements) |
@@ -141,6 +141,25 @@ Placeholder.
 ## Show option to take heap snapshot where globals are not treated as root
 
 Placeholder.
+
+
+<!-- ====================================================================== -->
+## Source order viewer
+<!-- on by default in 94 -->
+
+**Source Order Viewer** is an experiment that displays the order of elements in the webpage source. The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users. Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
+
+To use the **Source Order Viewer**:
+1.  Open the **Elements** tool.
+1.  To the right of the **Styles** tab, click the **Accessibility** tab.
+1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
+1.  Highlight any HTML element to display an overlay of the order in the webpage source.
+
+:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
+
+This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
+
+For more information see [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
 
 
 <!-- ====================================================================== -->
