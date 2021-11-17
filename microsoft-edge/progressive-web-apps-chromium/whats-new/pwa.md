@@ -14,7 +14,16 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 
 
 <!-- ====================================================================== -->
+## What's New in Microsoft Edge 97
+Microsoft Edge 96 is scheduled to become the Stable release on November 18. Edge 97 will move from Dev to Beta channel following that date.
+
+### Store apps registered as URL handlers hide custom tab UI 
+Store-installed PWAs that are participating in the [URL Handler Origin Trial](#url-handlers-origin-trial) will no longer show the Chrome Custom Tab (CCT) when redirecting from the PWA’s domain to a matching domain name with a different top level domain (TLD). This often happens in apps with locale-specific domains (e.g., redirecting contoso.com to contoso.ca for users in Canada).
+
 ## What's New in Microsoft Edge 96
+
+### URL Protocol Handlers moves to Stable!
+With the origin trial concluded and intent to ship signed off, the URL Protocol handlers capability is now shipping in Microsoft Edge 96 Stable.
 
 ### New hub design for managing your installed web apps
 
