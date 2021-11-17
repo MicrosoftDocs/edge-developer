@@ -4,7 +4,7 @@ title: What's new in DevTools (Microsoft Edge 96)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/16/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
@@ -32,7 +32,7 @@ This UI is still in development and may change in future versions of Microsoft E
 :::image type="content" source="../../media/2021/11/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
 
 See also:
-<!-- *  [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_.todo: link when that section has content -->
+*  [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_.
 *  [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
 
 
@@ -90,11 +90,13 @@ For details, see [Inline and live issue analysis](../../../../visual-studio-code
 <!-- Title: Get notified when DevTools cannot load your sourcemaps correctly -->
 <!-- Subtitle: The Sources tool now provides several places in the UI when DevTools can't fetch or parse your sourcemaps. -->
 
-In Microsoft Edge version 96, the **Sources** tool now provides several indications in the UI when DevTools cannot load your sourcemaps.  In the **Page** tab in the **Navigator** pane in the **Sources** tool, files that DevTools can't load sourcemaps for have a warning<!--todo: capture/show--> icon in place of the file<!--todo: capture/show--> icon.  
+In Microsoft Edge version 96, the **Sources** tool now provides several indications in the UI when DevTools cannot load your sourcemaps.  In the **Page** tab in the **Navigator** pane in the **Sources** tool, files that DevTools can't load sourcemaps for have a warning icon in place of the file icon.  
 
-Selecting a file with the warning icon opens the file in the Sources tool with an infobar<!--todo: capture/show--> indicating that DevTools either couldn't fetch the sourcemap correctly from the server or couldn't parse the sourcemap correctly.
+Selecting a file with the warning icon opens the file in the Sources tool with an infobar indicating that DevTools either couldn't fetch the sourcemap correctly from the server or couldn't parse the sourcemap correctly:
 
-From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools.
+:::image type="content" source="../../media/2021/11/source-map-not-found-buttons.png" alt-text="The Sources tool now notifies you in the Issues tab when sourcemaps can't be loaded.":::
+
+From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools:
 
 :::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="The Sources tool now notifies you in the Issues tab when sourcemaps can't be loaded.":::
 

@@ -4,7 +4,7 @@ title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/31/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
 no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab", "3D View", "Turn on support to move tabs between panels", "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code", "Edit keyboard shortcuts for any action in the DevTools", "Turn on new CSS grid debugging features", "Emulation: Support dual screen mode"]
@@ -26,7 +26,7 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 *  Enable back-forward cache debugging support
 *  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) is turned on by default starting with Microsoft Edge 90.
 *  Enable experimental hide issues menu
-*  Enable CSS \<length\> authoring tool in the Styles pane <!-- 96 but not later has also: (https://goo.gle/length-feedback) -->
+*  Enable CSS \<length\> authoring tool in the Styles pane
 *  Enable webhint
 *  Show issues in Elements
 *  Enable Composited Layers in 3D View
@@ -281,10 +281,15 @@ This experiment is available starting with Microsoft Edge version 85.
 
 
 <!-- ====================================================================== -->
-<!-- ## Focus Mode -->
+## Focus Mode
+
 <!-- present in 96, 98 -->
 
-<!-- todo: add section content, link to it from What's New 96 and maybe from What's New 90 -->
+The Focus Mode experiment provides an **Activity Bar**, which is a compact horizontal or vertical toolbar that keeps the DevTools UI clean and works well with a smaller window.  Pin your current main tools to the Activity Bar.
+
+:::image type="content" source="../media/experimental-features/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
+
+See also [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
 
 
 <!-- ====================================================================== -->
@@ -415,8 +420,6 @@ This experiment replaces the **What's New** tool with the new **Welcome** tool. 
 *   Option to contact the Microsoft Edge DevTools team
 
 The **Welcome** tool opens automatically after each update to Microsoft Edge.  To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
-
-If you prefer the original **What's New** tool, go to [Settings](../customize/index.md#settings) > **Experiments** and then clear the **Enable Welcome tab** checkbox.
 
 :::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
 
