@@ -21,7 +21,7 @@ Having the ability to display content where the title bar normally is can help P
 
 Many desktop applications like Visual Studio Code, Microsoft Teams, or Microsoft Edge already do this.
 
-:::image type="content" source="../media/vscode-titlebar.png" alt-text="VS Code displays content in the title bar area." lightbox="../media/vscode-titlebar.png":::
+:::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code displays content in the title bar area." lightbox="../media/vscode-titlebar.png":::
 
 The Window Controls Overlay API allows you to display web content over the entire surface area of the app, moves the critical system required window controls into an overlay, and makes it possible for your content to stay clear of this overlay.
 
