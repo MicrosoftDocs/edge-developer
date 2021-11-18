@@ -19,7 +19,7 @@ Organizations with business-critical legacy websites or apps may need to test th
 
 To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](https://www.selenium.dev/downloads/).  Ensure that the version of IEDriver that you download is `4.0.0.0` or greater.
 
-    :::image type="content" source="./media/iedriver-install.msft.png" alt-text="The IEDriver section of Downloads page for Selenium." lightbox="./media/iedriver-install.msft.png":::
+:::image type="content" source="./media/iedriver-install.msft.png" alt-text="The IEDriver section of Downloads page for Selenium." lightbox="./media/iedriver-install.msft.png":::
 
 ## Automate IE mode in Microsoft Edge
 
