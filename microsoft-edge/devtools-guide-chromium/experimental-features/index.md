@@ -115,9 +115,9 @@ We're eager to hear your feedback about experimental features.
   
 * Send us your feedback by tweeting [@EdgeDevTools](https://twitter.com/edgedevtools).
   
-* [Contact the Microsoft Edge DevTools team](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/contact).
+* [Contact the Microsoft Edge DevTools team](../contact.md).
 
-* With the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](../../../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
+* With the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
 
 
 > [!WARNING]
@@ -414,8 +414,8 @@ This experiment is available starting with Microsoft Edge version 96.
 
 
 <!-- ====================================================================== -->
-> [!WARNING]
-> These experiments are particularly unstable. Enable at your own risk.
+<!-- >> [!WARNING]
+> These experiments are particularly unstable. Enable at your own risk.-->
 
 
 <!-- ====================================================================== -->
