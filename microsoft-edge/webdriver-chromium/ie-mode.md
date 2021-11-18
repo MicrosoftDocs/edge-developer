@@ -188,34 +188,30 @@ Insert Python sample here
 <!-- ====================================================================== -->
 ## Known limitations
 
-When automating IE mode in Microsoft Edge, you must handle window management in your test code. IEDriver won't correctly return the handles of windows that were opened using [window.open](https://developer.mozilla.org/docs/Web/API/Window/open). Instead of relying on the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command, update your test code to find the new window and switch to it.
+When automating IE mode in Microsoft Edge, you must add a short wait between opening a new window with [window.open]https://developer.mozilla.org/docs/Web/API/Window/open) and getting handles to the new window with the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command.
 
-The following sample demonstrates how you must handle new windows with IEDriver.
+The following sample demonstrates how you must wait for IEDriver to register new window handles when opening new windows.
 
 ### [C#](#tab/c-sharp/)
 
 <a id="drive-ie-mode-window-handlers"></a>
 
-Define `resultFrame`, which is the new window, by using the `FindElementById` method.  Then switch IEDriver to the `resultFrame` by passing the `resultFrame` to the `SwitchTo().Frame` method:
+After the `Click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `Thread.Sleep(2000)` before getting new window handles with `reqDriver.WindowHandles`.
 
 ```csharp
-IWebElement resultFrame = 
-            reqDriver.FindElementById("<id for element in new window>");
-reqDriver.SwitchTo().Frame(resultFrame);
+reqDriver.FindElementById("<id to button that will open a new window>").Click();
+Thread.Sleep(2000);
+var newHandles = reqDriver.WindowHandles;
 ```
 
 ### [Python](#tab/python/)
 
-<a id="drive-ie-mode-ieDriver"></a>
+<a id="drive-ie-mode-windw-handlers"></a>
 
 <!-- todo -->
 Insert Python sample here
 
 * * *
-
-<!-- todo -->
-Something about a race condition?
-
 
 <!-- ====================================================================== -->
 ## See also
