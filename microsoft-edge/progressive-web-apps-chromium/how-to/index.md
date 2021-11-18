@@ -23,8 +23,8 @@ In this overview of PWA basics, you create a simple web app and extend it as a P
 <!-- ====================================================================== -->
 ## Prerequisites
 
-*   Use [Visual Studio Code](https://code.visualstudio.com) to edit your PWA source code.
-*   Use [Node.js](https://nodejs.org) as your local web server.
+*   Install [Visual Studio Code](https://code.visualstudio.com) to edit your PWA source code.
+*   Install [Node.js](https://nodejs.org) as your local web server.
 
 
 <!-- ====================================================================== -->
@@ -34,19 +34,21 @@ To create an empty web app, follow the steps in [Node Express App Generator](htt
 
 In the prompt, run the following commands.
 
-```shell
+```console
 npx express-generator --no-view
 ```
 
-```shell
+```console
 npm install
+```
+
 ```
 
 The commands create an empty web app and install any dependencies.
 
 You now have a simple, functional web app.  To start your web app, run the following command.
 
-```shell
+```console
 npm start
 ```
 
@@ -140,7 +142,7 @@ Confirm that your service worker runs, as follows:
 
 1.  Go to your web app at `http://localhost:3000`.  If your web app is not available, run the following command.
 
-    ```shell
+    ```console
     npm start
     ```
 

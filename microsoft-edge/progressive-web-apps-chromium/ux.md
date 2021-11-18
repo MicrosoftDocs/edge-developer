@@ -47,7 +47,7 @@ You can also manage PWAs in the **Apps & features** system setting, like other W
 1.  Type "apps" in the **Find a setting** search field, and then select **Add or remove programs**.
 1.  Find the PWA you want to manage in the list of apps and select it to find more information or remove it.
 
-<!-- reduced = resized 80%: -->
+<!-- reduced = resized 67%: -->
 :::image type="content" source="./media/pwa-in-apps-and-features-settings-reduced.png" alt-text="The list of installed apps on Windows also display PWAs." lightbox="./media/pwa-in-apps-and-features-settings.png":::
 
 
@@ -75,20 +75,24 @@ Learn more about [defining shortcuts](./how-to/shortcuts.md).
 
 PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Learn more about [using notifications, push messages, and badges](./how-to/notifications-badges.md).
 
-### Starting PWAs when the user logs in
+### Starting PWAs when the user signs in
 
-PWAs can launch automatically when the user logs in on Windows, so they can immediately engage with the app.
+PWAs can launch automatically when the user signs in on Windows, so the user can immediately engage with the app.
 
-To turn this feature on for an installed PWA:
+To set an already installed PWA to automatically start when you sign in to Windows:
 
 1.  Open Microsoft Edge.
 1.  Go to `edge://apps`.  The **Apps** page lists the installed apps.
-1.  Right-click an app, and then select **Start app when you sign in**.
+1.  Right-click an app, and then select **Start app when you sign in**:
 
-<!-- reduced = resized 80%: -->
-:::image type="content" source="./media/turn-on-run-on-os-login-flag-reduced.png" alt-text="Use the context menu to turn on the 'Start app when you sign in' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
+    <!-- reduced = resized 80%: -->
+    :::image type="content" source="./media/turn-on-run-on-os-login-flag-reduced.png" alt-text="Use the context menu to turn on the 'Start app when you sign in' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
 
-After installing an app, users are also given a chance to turn on the feature, in the post-installation dialog:
+During installing a PWA, users are also given a chance to set a PWA to automatically start.
+
+To set a PWA to automatically start when you sign in to Windows, while installing the PWA:
+
+1.  During installing an app, in the post-installation dialog, select **Auto-start on device login**:
 
 <!-- reduced = resized 80%: -->
 :::image type="content" source="./media/post-install-run-on-os-login-reduced.png" alt-text="The post-installation dialog automatically opens after an app is installed." lightbox="./media/post-install-run-on-os-login.png":::
@@ -97,7 +101,7 @@ After installing an app, users are also given a chance to turn on the feature, i
 <!-- ====================================================================== -->
 ## App info menu
 
-When a user selects the ellipses (**...**) button in the title bar of a Progressive Web Apps (PWA), the **App info** menu is displayed.
+When a user selects the ellipses (**...**) button in the title bar of a Progressive Web Apps (PWA), the **App info** menu is displayed:
 
 <!-- reduced = resized 80%: -->
 :::image type="content" source="./media/app-info-menu-reduced.png" alt-text="The 'App info' menu." lightbox="./media/app-info-menu.png":::

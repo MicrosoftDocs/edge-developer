@@ -208,7 +208,7 @@ You may need more time to update and test the user agent detection logic for you
 
 The overrides specify new user agent values that Microsoft Edge sends instead of the default user agent for specific websites. To display the list of user agent overrides that are currently applied:
 1. Open the Microsoft Edge Beta or Stable channel.
-1. Navigate to `edge://compat/useragent`.
+1. Go to: `edge://compat/useragent`
 
 The Microsoft Edge Canary and Dev channels don't currently receive user agent overrides. The Microsoft Edge Canary and Dev channels provide environments that use the default Microsoft Edge user agent. Use the Microsoft Edge Canary and Dev channels to reproduce issues on your website caused by the default Microsoft Edge user agent.
 
@@ -218,12 +218,12 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
 
 1. Copy the following code snippet:
 
-    ```shell
+    ```console
     --disable-domain-action-user-agent-override
     ```
 
 1. Run the Microsoft Edge app using the copied code snippet as follows:
 
-    ```shell
+    ```console
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```

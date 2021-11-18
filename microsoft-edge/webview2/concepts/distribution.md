@@ -189,7 +189,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 1.  If the WebView2 Runtime is not installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, either run the installer from an elevated process, or copy and run the following command:
 
-    ```shell
+    ```console
     MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
     ```
 
@@ -261,7 +261,7 @@ To use the Fixed Version distribution mode:
 
     1.  Run the following commands on the user's device.
 
-        ```shell
+        ```console
         icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
         icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
         ```
