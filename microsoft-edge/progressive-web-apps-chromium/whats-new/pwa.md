@@ -10,7 +10,7 @@ keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 ---
 # What's New in Progressive Web Apps
 
-[!INCLUDE [contact DevTools team note](includes/edge-whats-new-note.md)]
+This page lists the updates to PWAs and Web Apps from the Microsoft Edge Web Apps team. To try new features, review these announcements. To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).
 
 
 <!-- ====================================================================== -->

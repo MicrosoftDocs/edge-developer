@@ -3,7 +3,7 @@ description: Sample apps that show how to build Progressive Web Apps (PWAs).
 title: Sample PWAs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/28/2021
+ms.date: 11/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, demos, samples
