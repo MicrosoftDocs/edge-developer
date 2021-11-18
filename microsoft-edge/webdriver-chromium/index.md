@@ -369,12 +369,6 @@ For more information, see the [msedgedriver container on Docker Hub](https://hub
 
 
 <!-- ====================================================================== -->
-## Testing Internet Explorer
-
-To test sites that require Internet Explorer, use [Internet Explorer Driver](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver) with Internet Explorer.  Internet Explorer Driver is maintained by the Selenium project.  Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.
-
-
-<!-- ====================================================================== -->
 ## Application Guard
 
 Trusted sites that use Microsoft Defender Application Guard (Application Guard) can be automated using Microsoft Edge Driver.

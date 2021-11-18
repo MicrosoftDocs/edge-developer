@@ -533,6 +533,8 @@
           items:
             - name: WebDriver overview
               href: webdriver-chromium/index.md
+            - name: Automate IE mode
+              href: webdriver-chromium/ie-mode.md
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
             - name: Verify downloads of Selenium Tools for Microsoft Edge
