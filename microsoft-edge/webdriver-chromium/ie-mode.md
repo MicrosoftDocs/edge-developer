@@ -67,6 +67,14 @@ namespace Selenium_Web
 }
 ```
 
+#### [Python](#tab/python/)
+
+<a id="drive-ie-mode-entire-sample"></a>
+
+Insert Python sample here
+
+* * *
+
 The following sections explain the steps in this sample in more detail.
 
 ### Create an InternetExplorerDriverService
@@ -85,6 +93,14 @@ var driverexe = "IEDriverServer.exe";
 var ieService = InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
 ```
 
+#### [Python](#tab/python/)
+
+<a id="drive-ie-mode-ieService"></a>
+
+Insert Python sample here
+
+* * *
+
 ### Define InternetExplorerOptions with additional capabilities for Microsoft Edge
 
 #### [C#](#tab/c-sharp/)
@@ -101,7 +117,17 @@ ieOptions.AddAdditionalCapability("ie.edgechromium", true);
 ieOptions.AddAdditionalCapability("ie.edgepath", "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
 ```
 
+#### [Python](#tab/python/)
+
+<a id="drive-ie-mode-ieOptions"></a>
+
+Insert Python sample here
+
+* * *
+
 ### Start InternetExplorerDriver
+
+#### [C#](#tab/c-sharp/)
 
 <a id="drive-ie-mode-ieDriver"></a>
 
@@ -110,6 +136,14 @@ Finally, start `InternetExplorerDriver` and pass it the previously defined `ieSe
 ```csharp
 InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptions);
 ```
+
+#### [Python](#tab/python/)
+
+<a id="drive-ie-mode-ieOptions"></a>
+
+Insert Python sample here
+
+* * *
 
 ## Known limitations
 
