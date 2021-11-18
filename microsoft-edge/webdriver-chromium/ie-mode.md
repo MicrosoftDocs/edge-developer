@@ -11,9 +11,11 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
 
-Internet Explorer (IE) mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](https://docs.microsoft.com/deployedge/edge-ie-mode).
+Internet Explorer (IE) mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode).
+<!-- = https://docs.microsoft.com/deployedge/edge-ie-mode -->
 
-Internet Explorer 11 will no longer be supported on certain versions of Windows 10 starting **June 15, 2022**. For more information about ending support for Internet Explorer 11, read [Internet Explorer 11 desktop application ending support for certain operating systems](https://docs.microsoft.com/lifecycle/announcements/internet-explorer-11-end-of-support).
+Internet Explorer 11 will no longer be supported on certain versions of Windows 10 starting **June 15, 2022**. For more information about ending support for Internet Explorer 11, read [Internet Explorer 11 desktop application ending support for certain operating systems](/lifecycle/announcements/internet-explorer-11-end-of-support).
+<!-- = https://docs.microsoft.com/lifecycle/announcements/internet-explorer-11-end-of-support -->
 
 Organizations with business-critical legacy websites or apps may need to test their content in IE mode in Microsoft Edge.  The following sections describe how to get started with Internet Explorer Driver (IEDriver) to automate IE mode in Microsoft Edge.
 
@@ -214,6 +216,7 @@ Insert Python sample here
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use WebDriver to automate Microsoft Edge](https://docs.microsoft.com/microsoft-edge/webdriver-chromium) - An overview for automating Microsoft Edge with the WebDriver protocol.
+<!-- 1st link = https://docs.microsoft.com/microsoft-edge/webdriver-chromium -->
+*  [Use WebDriver to automate Microsoft Edge](/microsoft-edge/webdriver-chromium) - An overview for automating Microsoft Edge with the WebDriver protocol.
 *  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
 *  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
