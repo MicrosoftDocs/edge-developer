@@ -29,7 +29,7 @@ To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](http
 <!-- ====================================================================== -->
 ## Automate IE mode in Microsoft Edge
 
-The following content walks you through using Selenium to automate IE mode in Microsoft Edge.
+The following sections walk you through using Selenium to automate IE mode in Microsoft Edge.
 
 > [!NOTE]
 > This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using another framework, consult the documentation for your framework of choice.
@@ -42,9 +42,15 @@ To launch Microsoft Edge in IE mode with IEDriver:
 
 1.  Start an instance of `InternetExplorerDriver` and pass it `InternetExplorerDriverService` and `InternetExplorerOptions`.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
 
+The next section shows the complete sample, and then the subsequent sections focus on each of the main steps that are listed above.
+
+
+<!-- ====================================================================== -->
+## The complete sample
+
 The following sample launches Microsoft Edge in IE mode, navigates to [bing.com](https://www.bing.com/) and searches for "WebDriver".
 
-#### [C#](#tab/c-sharp/)
+### [C#](#tab/c-sharp/)
 
 <a id="drive-ie-mode-entire-sample"></a>
 
@@ -84,7 +90,7 @@ namespace Selenium_Web
 }
 ```
 
-#### [Python](#tab/python/)
+### [Python](#tab/python/)
 
 <a id="drive-ie-mode-entire-sample"></a>
 
@@ -95,9 +101,11 @@ Insert Python sample here
 
 The following sections explain the steps in this sample in more detail.
 
-### Create an InternetExplorerDriverService
 
-#### [C#](#tab/c-sharp/)
+<!-- ====================================================================== -->
+## Create an InternetExplorerDriverService
+
+### [C#](#tab/c-sharp/)
 
 <a id="drive-ie-mode-ieService"></a>
 
@@ -114,7 +122,7 @@ var driverexe = "IEDriverServer.exe";
 var ieService = InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
 ```
 
-#### [Python](#tab/python/)
+### [Python](#tab/python/)
 
 <a id="drive-ie-mode-ieService"></a>
 
@@ -123,9 +131,11 @@ Insert Python sample here
 
 * * *
 
-### Define InternetExplorerOptions with additional capabilities for Microsoft Edge
 
-#### [C#](#tab/c-sharp/)
+<!-- ====================================================================== -->
+## Define InternetExplorerOptions with additional capabilities for Microsoft Edge
+
+### [C#](#tab/c-sharp/)
 
 <a id="drive-ie-mode-ieOptions"></a>
 
@@ -142,7 +152,7 @@ ieOptions.AddAdditionalCapability("ie.edgepath",
        "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
 ```
 
-#### [Python](#tab/python/)
+### [Python](#tab/python/)
 
 <a id="drive-ie-mode-ieOptions"></a>
 
@@ -151,9 +161,11 @@ Insert Python sample here
 
 * * *
 
-### Start InternetExplorerDriver
 
-#### [C#](#tab/c-sharp/)
+<!-- ====================================================================== -->
+## Start InternetExplorerDriver
+
+### [C#](#tab/c-sharp/)
 
 <a id="drive-ie-mode-ieDriver"></a>
 
@@ -163,7 +175,7 @@ Finally, start `InternetExplorerDriver` and pass it the previously defined `ieSe
 InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptions);
 ```
 
-#### [Python](#tab/python/)
+### [Python](#tab/python/)
 
 <a id="drive-ie-mode-ieDriver"></a>
 
@@ -180,7 +192,7 @@ When automating IE mode in Microsoft Edge, you must handle window management in 
 
 The following sample demonstrates how you must handle new windows with IEDriver.
 
-#### [C#](#tab/c-sharp/)
+### [C#](#tab/c-sharp/)
 
 <a id="drive-ie-mode-window-handlers"></a>
 
@@ -192,7 +204,7 @@ IWebElement resultFrame =
 reqDriver.SwitchTo().Frame(resultFrame);
 ```
 
-#### [Python](#tab/python/)
+### [Python](#tab/python/)
 
 <a id="drive-ie-mode-ieDriver"></a>
 
