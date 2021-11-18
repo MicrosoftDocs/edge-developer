@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
 
-Internet Explorer (IE) mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode).
+Internet Explorer (IE) mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
 <!-- = https://docs.microsoft.com/deployedge/edge-ie-mode -->
 
 Internet Explorer 11 will no longer be supported on certain versions of Windows 10 starting **June 15, 2022**. For more information about ending support for Internet Explorer 11, read [Internet Explorer 11 desktop application ending support for certain operating systems](/lifecycle/announcements/internet-explorer-11-end-of-support).
@@ -188,7 +188,7 @@ Insert Python sample here
 <!-- ====================================================================== -->
 ## Known limitations
 
-When automating IE mode in Microsoft Edge, you must add a short wait between opening a new window with [window.open]https://developer.mozilla.org/docs/Web/API/Window/open) and getting handles to the new window with the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command.
+When automating IE mode in Microsoft Edge, you must add a short wait between opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) and getting handles to the new window with the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command.
 
 The following sample demonstrates how you must wait for IEDriver to register new window handles when opening new windows.
 
@@ -199,14 +199,14 @@ The following sample demonstrates how you must wait for IEDriver to register new
 After the `Click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `Thread.Sleep(2000)` before getting new window handles with `reqDriver.WindowHandles`.
 
 ```csharp
-reqDriver.FindElementById("<id to button that will open a new window>").Click();
+reqDriver.FindElementById("<ID of the button that will open a new window>").Click();
 Thread.Sleep(2000);
 var newHandles = reqDriver.WindowHandles;
 ```
 
 ### [Python](#tab/python/)
 
-<a id="drive-ie-mode-windw-handlers"></a>
+<a id="drive-ie-mode-window-handlers"></a>
 
 <!-- todo -->
 Insert Python sample here
@@ -217,6 +217,6 @@ Insert Python sample here
 ## See also
 
 <!-- 1st link = https://docs.microsoft.com/microsoft-edge/webdriver-chromium -->
-*  [Use WebDriver to automate Microsoft Edge](/microsoft-edge/webdriver-chromium) - An overview for automating Microsoft Edge with the WebDriver protocol.
+*  [Use WebDriver to automate Microsoft Edge](/microsoft-edge/webdriver-chromium) - An overview of automating Microsoft Edge with the WebDriver protocol.
 *  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
 *  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
