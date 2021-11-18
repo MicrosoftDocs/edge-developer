@@ -63,14 +63,17 @@ namespace Selenium_Web
             var dir = @"C:\<path to IEDriver download>";
             var driverexe = "IEDriverServer.exe";
 
-            var ieService = InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
+            var ieService = 
+                 InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
             var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
             ieOptions.PageLoadStrategy = PageLoadStrategy.Eager;
             ieOptions.AddAdditionalCapability("ie.edgechromium", true);
             //change the path accordingly
-            ieOptions.AddAdditionalCapability("ie.edgepath", "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
+            ieOptions.AddAdditionalCapability("ie.edgepath", 
+                    "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
 
-            InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptions);
+            InternetExplorerDriver reqDriver = 
+                                   new InternetExplorerDriver(ieService, ieOptions);
             reqDriver.Url = "https://bing.com";
             reqDriver.FindElementById("sb_form_q").SendKeys("WebDriver");
             reqDriver.FindElementById("sb_form").Submit();
@@ -135,7 +138,8 @@ var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
 ieOptions.PageLoadStrategy = PageLoadStrategy.Eager;
 ieOptions.AddAdditionalCapability("ie.edgechromium", true);
 //change the path accordingly
-ieOptions.AddAdditionalCapability("ie.edgepath", "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
+ieOptions.AddAdditionalCapability("ie.edgepath", 
+       "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
 ```
 
 #### [Python](#tab/python/)
@@ -183,7 +187,8 @@ The following sample demonstrates how you must handle new windows with IEDriver.
 Define `resultFrame`, which is the new window, by using the `FindElementById` method.  Then switch IEDriver to the `resultFrame` by passing the `resultFrame` to the `SwitchTo().Frame` method:
 
 ```csharp
-IWebElement resultFrame = reqDriver.FindElementById("<id for element in new window>");
+IWebElement resultFrame = 
+            reqDriver.FindElementById("<id for element in new window>");
 reqDriver.SwitchTo().Frame(resultFrame);
 ```
 
