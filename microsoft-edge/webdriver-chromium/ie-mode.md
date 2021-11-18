@@ -72,7 +72,6 @@ namespace Selenium_Web
             var ieService = 
                  InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
             var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
-            ieOptions.PageLoadStrategy = PageLoadStrategy.Eager;
             ieOptions.AddAdditionalCapability("ie.edgechromium", true);
             //change the path accordingly
             ieOptions.AddAdditionalCapability("ie.edgepath", 
@@ -145,7 +144,6 @@ Insert Python sample here
 
 ```csharp
 var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
-ieOptions.PageLoadStrategy = PageLoadStrategy.Eager;
 ieOptions.AddAdditionalCapability("ie.edgechromium", true);
 //change the path accordingly
 ieOptions.AddAdditionalCapability("ie.edgepath", 
