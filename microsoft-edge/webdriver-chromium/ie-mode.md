@@ -139,7 +139,7 @@ InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptio
 
 #### [Python](#tab/python/)
 
-<a id="drive-ie-mode-ieOptions"></a>
+<a id="drive-ie-mode-ieDriver"></a>
 
 Insert Python sample here
 
@@ -149,6 +149,8 @@ Insert Python sample here
 
 When automating IE mode in Microsoft Edge, you must handle window management in your test code. IEDriver will not correctly return the handles of windows opened with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open). Instead of relying on the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command, update your test code to find the new window and switch to it.  The following sample demonstrates how you must handle new windows with IEDriver.
 
+#### [C#](#tab/c-sharp/)
+
 <a id="drive-ie-mode-window-handlers"></a>
 
 Define `resultFrame`, the new window, with the `FindElementById` method and then switch IEDriver to the `resultFrame` by passing it to the `SwitchTo().Frame` method.
@@ -157,6 +159,14 @@ Define `resultFrame`, the new window, with the `FindElementById` method and then
 IWebElement resultFrame = reqDriver.FindElementById("<id for element in new window>");
 reqDriver.SwitchTo().Frame(resultFrame);
 ```
+
+#### [Python](#tab/python/)
+
+<a id="drive-ie-mode-ieDriver"></a>
+
+Insert Python sample here
+
+* * *
 
 Something about a race condition?
 
