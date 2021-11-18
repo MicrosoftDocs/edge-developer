@@ -19,7 +19,7 @@ All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have exper
 <!-- ====================================================================== -->
 ## Experimental features which are turned on by default
 
-As of Microsoft Edge 96, the following experimental features are turned on by default.  This means that these features can be used right away, without you having to change any settings.  You can turn off these default experimental features, if needed.
+As of Microsoft Edge 96, the following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
 
 <!-- listed in order of the Settings > Experiments pane -->
 *  Source order viewer
@@ -33,6 +33,7 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 *  VS Code themes for the DevTools <!-- literal checkbox label -->
 *  Open source files in Visual Studio Code
 *  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
+*  Enable dynamic Welcome content
 
 <!-- Remove following feature per Rachel Weil in PR 1570 edit, all other mentions deleted -->
 <!-- *  Enable CSS \<length\> authoring tool in the Styles pane -->
@@ -47,7 +48,7 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 
 To turn experimental features on or off in Microsoft Edge:
 
-1.  [Open DevTools](../open/index.md). In Microsoft Edge, click the **Settings and more** button, which is an ellipsis (three dots). Then hover over **More tools**, and click **Developer tools**. Or press **Control + Shift + I**.
+1.  [Open DevTools](../open/index.md). Click the **Settings and more** button, which is an ellipsis (three dots). Then hover over **More tools**, and click **Developer tools**. Or press **Control + Shift + I**.
 
 1.  Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
 
@@ -72,7 +73,7 @@ To turn experimental features on or off in Microsoft Edge:
 
 You can restore the default Experimental features settings.
 
-1.  [Open DevTools](../open/index.md). In Microsoft Edge, click the **Settings and more** button, which is an ellipsis (three dots). Then hover over **More tools**, and click **Developer tools**. Or press **Control + Shift + I**.
+1.  [Open DevTools](../open/index.md). Click the **Settings and more** button, which is an ellipsis (three dots). Then hover over **More tools**, and click **Developer tools**. Or press **Control + Shift + I**.
  
 1.  Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
 
@@ -119,19 +120,27 @@ We're eager to hear your feedback about experimental features.
 * With the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](../../../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
 
 
+> [!WARNING]
+> These experiments could be unstable or unreliable and may require you to restart DevTools.
+
+
 <!-- ====================================================================== -->
 <!-- Keep h2 sections in same order as Microsoft Edge DevTools > Experiments page. -->
 <!-- Include an h2 section for every checkbox that's in Microsoft Edge DevTools > Experiments page, many of them commented out.  Keep in mind which version the rendered page targets.  If a checkbox has been removed, move its section to the bottom section of this page. -->
 
 
 <!-- ====================================================================== -->
-<!-- ## Allow extensions to load custom stylesheets -->
+## Allow extensions to load custom stylesheets
 <!-- present in 96, 98 -->
+
+Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on with a theme, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
 
 
 <!-- ====================================================================== -->
-<!-- ## Capture node creation stacks -->
+## Capture node creation stacks
 <!-- present in 96, 98 -->
+
+Enable this experiment to capture JavaScript stack traces when DOM nodes are added to the DOM at runtime. The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** panel.
 
 
 <!-- ====================================================================== -->
@@ -140,8 +149,18 @@ We're eager to hear your feedback about experimental features.
 
 
 <!-- ====================================================================== -->
-<!-- ## Protocol Monitor -->
+## Protocol Monitor
 <!-- present in 96, 98 -->
+
+DevTools communicates with the inspected page using the DevTools protocol.
+
+1.  Enable the **Protocol Monitor** experiment to monitor the messages sent and received by DevTools to debug the inspected page.
+
+1.  After enabling the experiment, restart DevTools.
+
+1.  Open the **Command Menu** (**Control + Shift + P**), and type **Protocol Monitor** in the text box.
+
+1.  Select the **Show Protocol monitor** Drawer suggestion. The Protocol monitor drawer displays at the bottom of the DevTools panel.
 
 
 <!-- ====================================================================== -->
@@ -160,49 +179,6 @@ We're eager to hear your feedback about experimental features.
 
 
 <!-- ====================================================================== -->
-## Allow extensions to load custom stylesheets
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Capture node creation stacks
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Automatically pretty print in the Sources Panel
-
-Placeholder.
-
-
-
-<!-- ====================================================================== -->
-## Protocol Monitor
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Show CSP Violations view
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Record coverage while performance tracing
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Show option to take heap snapshot where globals are not treated as root
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
 ## Source order viewer
 <!-- present in 96, 98 -->
 
@@ -218,12 +194,16 @@ To use the **Source Order Viewer**:
 
 This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
 
-For more information see [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
+For more information, see [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable back-forward cache debugging support -->
+## Enable back-forward cache debugging support
 <!-- present in 96, 98 -->
+
+Back-forward cache, or *bfcache*. Makes navigating through your browsing history faster by retaining snapshots of visited web pages in memory.
+
+Certain web pages can't be cached. Enable this experiment to add the **Back-forward Cache** section to the **Application** panel.  Enabling back-forward cache debugging provides information about web pages that can't be stored in `bfcache`.
 
 
 <!-- ====================================================================== -->
@@ -242,10 +222,10 @@ For more information see [Test keyboard support using the Source Order Viewer](.
 
 
 <!-- ====================================================================== -->
-<!-- ## Emulation: Support dual screen mode -->
+## Emulation: Support dual screen mode
 <!-- present in 96, 98 -->
 
-<!-- [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) -->
+For more information, see [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
 
 
 <!-- ====================================================================== -->
@@ -261,64 +241,29 @@ For more information see [Test keyboard support using the Source Order Viewer](.
 <!-- ====================================================================== -->
 ## Enable new Font Editor tool within the Styles pane
 
-For more information about the new visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
-
 <!-- present in 96, 98 -->
 
-Placeholder.
+You can now use the new visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
+*   Switch between units for different font properties
+*   Switch between keywords for different font properties
+*   Convert units
+*   Generate accurate CSS code
 
-<!-- ====================================================================== -->
-## Timeline: event initiators
+To use the new visual **Font Editor**:
+1.  Open the **Elements** tool.
+1.  Open the **Styles** pane.
+1.  Select the **Font Editor** icon.
 
-Placeholder.
+For more information about the new visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
 
-<!-- ====================================================================== -->
-## Timeline: WebGL based flamechart
+:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
+   The visual **Font Editor** pane is highlighted
+:::image-end:::
 
-Placeholder.
+This experiment is available starting with Microsoft Edge version 89.
 
-
-<!-- ====================================================================== -->
-## WebAssembly Debugging: Enable DWARF support
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Enable automatic contrast issue reporting via the Issues panel
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Enable experimental cookie features
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Enable experimental hide issues menu
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Allow grouping and hiding of issues by IssueKind
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Enable Reporting API panel in the Application panel
-
-Placeholder.
-
-
-<!-- ====================================================================== -->
-## Log DevTools uncaught exceptions to Console
-
-Placeholder.
+For more information, see [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
 
 
 <!-- ====================================================================== -->
@@ -364,7 +309,7 @@ Placeholder.
 *   Progressive Web Apps (PWAs)
 *   Other common web development issues
 
-The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue, to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
+The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
 :::image type="content" source="../media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../media/experiments-webhint.msft.png":::
 
@@ -426,13 +371,13 @@ See also [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplai
 
 
 <!-- ====================================================================== -->
-## DevTools Tooltips
-
-Placeholder.
+<!-- ## DevTools Tooltips -->
+<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
 ## Detached Elements
+<!-- present in 96, 98 -->
 
 Memory leaks in web applications are a difficult to locate and repair.
 
@@ -441,22 +386,6 @@ The new Detached Elements panel in Microsoft Edge DevTools helps investigate and
 Memory leaks occur when the JavaScript code of the application retains an increasing number of objects in memory. The JavaScript code should release these objects so that the memory space can be reused by the browser.
 
 <!-- ???more needed, probably with an image, Detached Elements tutorial is in progress??? -->
-
-
-<!-- ====================================================================== -->
-## VS Code themes for the DevTools
-
-Placeholder.
-<!-- present in 96, 98 -->
-
-<!-- ====================================================================== -->
-<!-- ## DevTools Tooltips -->
-<!-- present in 96, 98 -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Detached Elements -->
-<!-- present in 96, 98 -->
 
 
 <!-- ====================================================================== -->
@@ -485,8 +414,8 @@ This experiment is available starting with Microsoft Edge version 96.
 
 
 <!-- ====================================================================== -->
-<!-- ====================================================================== -->
-<!-- "WARNING: These experiments are particularly unstable:" NOTE STYLE-->
+> [!WARNING]
+> These experiments are particularly unstable. Enable at your own risk.
 
 
 <!-- ====================================================================== -->
@@ -539,7 +468,7 @@ This experiment is available starting with Microsoft Edge version 96.
 <!-- present in 96, 98 -->
 
 
-<!-- ====================================================================== -->
+
 <!-- ====================================================================== -->
 ## Previously Experimental features which are now regular features
 
