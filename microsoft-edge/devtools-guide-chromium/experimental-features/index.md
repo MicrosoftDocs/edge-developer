@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/17/2021
+ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -205,7 +205,7 @@ For more information, see [Test keyboard support using the Source Order Viewer](
 ## Enable back-forward cache debugging support
 <!-- present in 96, 98 -->
 
-Back-forward cache, or *bfcache*. Makes navigating through your browsing history faster by retaining snapshots of visited web pages in memory.
+Back-forward cache, or *bfcache*. Makes navigating through your browsing history faster by saving snapshots of visited web pages in memory.
 
 Certain web pages can't be cached. Enable this experiment to add the **Back-forward Cache** section to the **Application** panel.  Enabling back-forward cache debugging provides information about web pages that can't be stored in `bfcache`.
 
@@ -304,7 +304,7 @@ Needs content.
 ## Enable Reporting API panel in the Application panel
 <!-- present in 96, 98 -->
 
-Needs content.
+Use the Reporting API to catch certain errors such as security violations or deprecated API calls. These errors happen when users visit your site and are sent to a server endpoint. Enable this experiment to add the **Reporting API** section in the **Application** panel, which lists all of the reports sent to the endpoint.
 
 <!-- ====================================================================== -->
 ## Log DevTools uncaught exceptions to Console
@@ -337,7 +337,7 @@ This experiment is available starting with Microsoft Edge version 85 and is turn
 ## Show issues in Elements
 <!-- present in 96, 98 -->
 
-Needs content.
+Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
 
 <!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
@@ -391,7 +391,7 @@ See also [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplai
 ## DevTools Tooltips
 <!-- present in 96, 98 -->
 
-Needs content.
+Enable this experiment to view tooltips for all the different tools and panes in DevTools. For more information, see [Learn about DevTools with informative tooltips](../whats-new/2021/04/devtools.md#learn-about-devtools-with-informative-tooltips).
 
 <!-- ====================================================================== -->
 ## Detached Elements
@@ -410,7 +410,8 @@ Memory leaks occur when the JavaScript code of the application retains an increa
 ## VS Code themes for the DevTools
 <!-- present in 96, 98 -->
 
-Needs content.
+Enable this experiment to use Visual Studio themes in DevTools. For more information, see [Apply color themes to DevTools](../customize/theme.md).
+
 
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
@@ -519,7 +520,7 @@ These features have been promoted from experimental to regular features, and hav
 
 ### Enable + button tab menus to open more tools
 
-This was an experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+This experiment started with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
 
 You can now open more tools using the new **More Tools** (`+`) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (`+`) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (`+`) icon.
 
