@@ -20,15 +20,15 @@ Microsoft Edge version 96 is scheduled to become the Stable release on November 
 
 ### Store apps registered as URL handlers hide custom tab UI 
 
-Store-installed PWAs that are participating in the [URL Handler Origin Trial](#url-handlers-origin-trial) will no longer show the Chrome Custom Tab (CCT) when redirecting from the PWA's domain to a matching domain name with a different top-level domain (TLD). This redirecting often happens in apps with locale-specific domains; for example, redirecting from `contoso.com` to `contoso.ca` for users in Canada. 
+Store-installed PWAs that are participating in the [URL Handler Origin Trial](#url-handlers-origin-trial) will no longer show the Chrome Custom Tab (CCT) when redirecting from the PWA's domain to a matching domain name with a different top-level domain (TLD). This redirecting often happens in apps with locale-specific domains; for example, redirecting from `contoso.com` to `contoso.ca` for users in Canada.
 
 
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 96
 
-### URL Protocol Handlers moves to Stable!
+### URL Protocol Handlers moves to Stable
 
-The origin trial has been concluded, and "intent to ship" has been signed off.  The URL Protocol Handlers capability is now shipping in Microsoft Edge 96 Stable.
+The origin trial has been concluded.  The URL Protocol Handlers capability is now shipping in Microsoft Edge 96 Stable.
 
 See also:
 *  [Protocol handlers origin trial](#protocol-handlers-origin-trial)
