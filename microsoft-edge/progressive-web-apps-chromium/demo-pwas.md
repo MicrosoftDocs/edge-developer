@@ -107,4 +107,4 @@ Features:
 
 *  [Window Controls Overlay](./how-to/window-controls-overlay.md)
 
-:::image type="content" source="./media/1div-demo.png" alt-text="The BPM Techno app." lightbox="./media/1div-demo.png":::
+:::image type="content" source="./media/1div-demo.png" alt-text="The 1DIV app." lightbox="./media/1div-demo.png":::
