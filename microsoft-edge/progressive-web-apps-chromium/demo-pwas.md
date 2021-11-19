@@ -3,7 +3,7 @@ description: A list of sample apps you can use to learn more about how to build 
 title: Sample PWAs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/28/2021
+ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, demos, samples
@@ -78,6 +78,7 @@ Features:
 
 :::image type="content" source="./media/my-movies.png" alt-text="The My Movies app." lightbox="./media/my-movies.png":::
 
+<!-- ====================================================================== -->
 ## BPM Techno
 
 A real-time BPM counter.
@@ -93,3 +94,17 @@ Features:
 *  [Share Target](./how-to/share.md#receiving-shared-content)
 
 :::image type="content" source="./media/bpm-techno.png" alt-text="The BPM Techno app." lightbox="./media/bpm-techno.png":::
+
+
+<!-- ====================================================================== -->
+## 1DIV
+
+A CSS playground.
+
+[App](https://microsoftedge.github.io/Demos/1DIV/dist/), [source code](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV).
+
+Features:
+
+*  [Window Controls Overlay](./how-to/window-controls-overlay.md)
+
+:::image type="content" source="./media/1div-demo.png" alt-text="The BPM Techno app." lightbox="./media/1div-demo.png":::
