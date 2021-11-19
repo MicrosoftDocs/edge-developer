@@ -75,15 +75,11 @@ To auto-open DevTools on every new tab, open Microsoft Edge from the command lin
 
 ### [CMD (Windows)](#tab/cmd-Windows/)
 
-<a id="auto-open-devtools-command-line"></a>
-
 ```cmd
 start msedge --auto-open-devtools-for-tabs
 ```
 
 ### [PowerShell (Windows)](#tab/powershell-Windows/)
-
-<a id="auto-open-devtools-command-line"></a>
 
 ```powershell
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
@@ -91,15 +87,11 @@ Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 
 ### [bash (macOS)](#tab/bash-macos/)
 
-<a id="auto-open-devtools-command-line"></a>
-
 ```bash
 /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```
 
 ### [bash (Linux)](#tab/bash-linux/)
-
-<a id="auto-open-devtools-command-line"></a>
 
 ```bash
 microsoft-edge-dev --auto-open-devtools-for-tabs
