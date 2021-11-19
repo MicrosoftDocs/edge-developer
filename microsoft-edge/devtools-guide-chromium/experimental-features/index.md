@@ -414,8 +414,8 @@ This experiment is available starting with Microsoft Edge version 96.
 
 
 <!-- ====================================================================== -->
->> [!WARNING]
-> These experiments are particularly unstable. Enable at your own risk.
+<!-- >> [!WARNING]
+> These experiments are particularly unstable. Enable at your own risk. -->
 
 
 <!-- ====================================================================== -->
