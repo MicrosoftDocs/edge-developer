@@ -144,10 +144,11 @@ Enable this experiment to capture JavaScript stack traces when DOM nodes are add
 
 
 <!-- ====================================================================== -->
-## Automatically pretty print in the Sources Panel
+<!-- ## Automatically pretty print in the Sources Panel -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 ## Protocol Monitor
@@ -165,22 +166,25 @@ DevTools communicates with the inspected page using the DevTools protocol.
 
 
 <!-- ====================================================================== -->
-## Show CSP Violations view
+<!-- ## Show CSP Violations view -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
-## Record coverage while performance tracing
+<!-- ## Record coverage while performance tracing -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
-## Show option to take heap snapshot where globals are treated as root
+<!-- ## Show option to take heap snapshot where globals are treated as root -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 ## Source order viewer
@@ -211,22 +215,11 @@ Certain web pages can't be cached. Enable this experiment to add the **Back-forw
 
 
 <!-- ====================================================================== -->
-## Timeline: event initiators
+<!-- ## WebAssembly Debugging: Enable DWARF support -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
 
-<!-- ====================================================================== -->
-## Timeline: WebGL-based flamechart
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## WebAssembly Debugging: Enable DWARF support
-<!-- present in 96, 98 -->
-
-Needs content.
 
 <!-- ====================================================================== -->
 ## Emulation: Support dual screen mode
@@ -236,16 +229,18 @@ For more information, see [Emulation: Support dual screen mode](../device-mode/d
 
 
 <!-- ====================================================================== -->
-## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines
+<!-- ## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
-## Enable full accessibility tree view in the Elements panel
+<!-- ## Enable full accessibility tree view in the Elements panel -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 ## Enable new Font Editor tool within the Styles pane
@@ -276,29 +271,18 @@ For more information, see [Edit CSS font styles and settings in the Styles pane 
 
 
 <!-- ====================================================================== -->
-## Enable automatic contrast issue reporting via the Issues Panel
+<!-- ## Enable automatic contrast issue reporting via the Issues Panel -->
 <!-- present in 96, 98 -->
 
-Needs content.
-
-<!-- ====================================================================== -->
-## Enable experimental cookie features
-<!-- present in 96, 98 -->
-
-Needs content.
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
-## Enable experimental hide issues menu
+<!-- ## Enable experimental cookie features -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
 
-<!-- ====================================================================== -->
-## Allow grouping and hiding of issues by IssueKind
-<!-- present in 96, 98 -->
-
-Needs content.
 
 <!-- ====================================================================== -->
 ## Enable Reporting API panel in the Application panel
@@ -307,10 +291,11 @@ Needs content.
 Use the Reporting API to catch certain errors such as security violations or deprecated API calls. These errors happen when users visit your site and are sent to a server endpoint. Enable this experiment to add the **Reporting API** section in the **Application** panel, which lists all of the reports sent to the endpoint.
 
 <!-- ====================================================================== -->
-## Log DevTools uncaught exceptions to Console
+<!-- ## Log DevTools uncaught exceptions to Console -->
 <!-- present in 96, 98 -->
 
-Needs content.
+<!-- Needs content. -->
+
 
 <!-- ====================================================================== -->
 ## Enable webhint
@@ -429,82 +414,55 @@ This experiment is available starting with Microsoft Edge version 96.
 
 
 <!-- ====================================================================== -->
-Microsoft Edge automatically pretty print in the Sources Panel
-<!-- present in 96, 98 -->
-
-Needs content.
-
-
-<!-- ====================================================================== -->
 >> [!WARNING]
 > These experiments are particularly unstable. Enable at your own risk.
 
 
 <!-- ====================================================================== -->
-## Ignore List for JavaScript frames on Timeline
+<!-- ## Ignore List for JavaScript frames on Timeline
 <!-- present in 96, 98 -->
 
-Needs content.
-
-<!-- ====================================================================== -->
-## Input events on Timeline overview
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Live heap profile
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Sampling heap profiler timeline
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Enable keyboard shortcut editor
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Timeline: invalidation tracking
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Timeline: show all events
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Timeline: V8 Runtime Call Stats on Timeline
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Timeline: Replay input events
-<!-- present in 96, 98 -->
-
-Needs content.
-
-<!-- ====================================================================== -->
-## Enable dynamic Welcome content
-<!-- present in 96, 98 -->
-
-Needs content.
+<!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
+<!-- ## Input events on Timeline overview -->
+<!-- present in 96, 98 -->
+
+<!-- Needs content. -->
+
+
+<!-- ====================================================================== -->
+<!-- ## Live heap profile -->
+<!-- present in 96, 98 -->
+
+<!-- Needs content. -->
+
+
+<!-- ====================================================================== -->
+<!-- ## Sampling heap profiler timeline -->
+<!-- present in 96, 98 -->
+
+<!-- Needs content. -->
+
+
+<!-- ====================================================================== -->
+<!-- ## Enable keyboard shortcut editor -->
+<!-- present in 96, 98 -->
+
+<!-- Needs content. -->
+
+
+<!-- ====================================================================== -->
+<!-- ## Enable dynamic Welcome content -->
+<!-- present in 96, 98 -->
+
+<!-- Needs content. -->
+
+
+<!-- ====================================================================== -->
+<!-- todo: move these sections into regular articles
 ## Previously Experimental features which are now regular features
-
-<!-- todo: move these sections into regular articles -->
 
 These features have been promoted from experimental to regular features, and have been removed from **Settings** > **Experiments**.
 
@@ -520,7 +478,7 @@ These features have been promoted from experimental to regular features, and hav
 
 ### Enable + button tab menus to open more tools
 
-This experiment started with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+This experiment started with Microsoft Edge version 89, and is a regular feature as of version 94.
 
 You can now open more tools using the new **More Tools** (`+`) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (`+`) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (`+`) icon.
 
@@ -528,7 +486,7 @@ You can now open more tools using the new **More Tools** (`+`) icon.  After you 
 
 ### Enable Welcome tab
 
-The Welcome tab was an experiment starting with Microsoft Edge version 89. It is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+The Welcome tab was an experiment starting with Microsoft Edge version 89. It is a regular feature as of version 94.
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.
 
@@ -541,11 +499,9 @@ The **Welcome** tool opens automatically after each update to Microsoft Edge.  T
 
 :::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
 
-
-<!-- ====================================================================== -->
 ### Enable new CSS Flexbox debugging features
 
-This was an experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+This was an experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.
 
 This feature provides many new visualizations to help you debug CSS Flexbox layouts.
 
@@ -573,3 +529,4 @@ To toggle persistent overlays on Flexbox layout, do either of the following:
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
 :::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
+-->
