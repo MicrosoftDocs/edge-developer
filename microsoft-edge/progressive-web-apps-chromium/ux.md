@@ -33,7 +33,7 @@ To install a PWA from the Microsoft Store, select **Get** on the app page.
 <!-- ====================================================================== -->
 ## Managing PWAs
 
-To find the list of installed PWAs in Microsoft Edge, go to `edge://apps`.  On this page, you can select any app to launch it.  To uninstall an app, select the **Delete** (![Uninstall app.](./media/uninstall-app-button.png)) icon.
+To find the list of installed PWAs in Microsoft Edge, go to `edge://apps`. On this page, you can open any app by clicking **Open**.  To learn more about an app or uninstall it, click **Details**.
 
 :::image type="content" source="./media/edge-apps-listing.png" alt-text="The list of installed apps in edge://apps." lightbox="./media/edge-apps-listing.png":::
 
@@ -63,16 +63,16 @@ PWAs can also display notifications in the operating system's own notification s
 
 ### Starting PWAs when the user logs in
 
-PWAs can launch automatically when the user logs in on Windows, so they can immediately engage with the app.
+PWAs on Windows can launch automatically when the user signs in, so they can immediately engage with the app.
 
 To turn this feature on for an installed PWA:
 
 1.  Open Microsoft Edge.
 1.  Go to `edge://apps`.
-1.  Open the context menu (right-click) on the app in the list of installed app.
-1.  Select **Start app when you sign in**.
+1.  Click the **More options** button (![More options button](./media/edge-apps-more-options.png)) on the app in the list of installed apps.
+1.  Click **Auto-start on device login**.
 
-:::image type="content" source="./media/turn-on-run-on-os-login-flag.png" alt-text="Use the context menu to turn on the 'Start app when you sign in' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
+:::image type="content" source="./media/turn-on-run-on-os-login-flag.png" alt-text="Use the more options menu to turn on the 'Auto-start on device login' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
 
 After installing an app, users are also given a chance to turn on the feature, in the post-installation dialog.
 
