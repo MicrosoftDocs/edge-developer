@@ -1,5 +1,5 @@
 ---
-title: Synchronize and update a Programmable Web App (PWA) in the background.
+title: Synchronize and update a Progressive Web App (PWA) in the background.
 description: Learn how to do work in the background, when the app is not running, to synchronize content with the server, fetch new resources, or handle long duration downloads.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, service worker, backgroun
 ---
 # Synchronize and update in the background
 
-Using a service worker, PWAs can do work in the background when users aren't even using the app. This used to be reserved to native apps but is now also available to PWAs, which makes better offline experiences possible.
+Using a service worker, Progressive Web Apps (PWAs) can do work in the background when users aren't even using the app. This used to be reserved to native apps, but is now also available to PWAs, which makes better offline experiences possible.
 
 Consider the following use cases:
 
@@ -36,7 +36,7 @@ Another example for using the Background Sync API is loading content in the back
 
 ### Check for support
 
-While this API is available in Microsoft Edge, you should make sure it is supported in the other browsers and devices your app runs in. This can be done by testing whether the `ServiceWorkerRegistration` object has a `sync` property:
+This API is available in Microsoft Edge, but you should make sure it is supported in the other browsers and devices your app runs in. This can be done by testing whether the `ServiceWorkerRegistration` object has a `sync` property:
 
 ```javascript
 navigator.serviceWorker.ready.then(registration => {
@@ -285,7 +285,7 @@ You can find more information about the `fetch` function on the [BackgroundFetch
 <!-- ====================================================================== -->
 ## Re-engage users with notifications and badges
 
-The Notifications and App Badging APIs can be used to let users know that background tasks, downloads, or fresh content have been completed, without interrupting their workflows. Using notifications and badges can increase user re-engagement with your app.
+Use the Notifications and App Badging APIs to let users know that background tasks, downloads, or fresh content have been completed, without interrupting their workflows. Using notifications and badges can increase user re-engagement with your app.
 
 With Microsoft Edge, notifications integrate with the system notification center, and badges appear on app icons in the Task Bar.
 
