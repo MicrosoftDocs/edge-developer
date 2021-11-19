@@ -12,10 +12,8 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
 
 Internet Explorer (IE) mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
-<!-- = https://docs.microsoft.com/deployedge/edge-ie-mode -->
 
 Internet Explorer 11 will no longer be supported on certain versions of Windows 10 starting **June 15, 2022**. For more information about ending support for Internet Explorer 11, read [Internet Explorer 11 desktop application ending support for certain operating systems](/lifecycle/announcements/internet-explorer-11-end-of-support).
-<!-- = https://docs.microsoft.com/lifecycle/announcements/internet-explorer-11-end-of-support -->
 
 Organizations with business-critical legacy websites or apps may need to test their content in IE mode in Microsoft Edge.  The following sections describe how to get started with Internet Explorer Driver (IEDriver) to automate IE mode in Microsoft Edge.
 
@@ -72,18 +70,17 @@ namespace Selenium_Web
             var ieService = 
                  InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
             var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
-            ieOptions.AddAdditionalCapability("ie.edgechromium", true);
+            ieOptions.AttachToEdgeChrome = true;
             //change the path accordingly
-            ieOptions.AddAdditionalCapability("ie.edgepath", 
-                    "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
+            ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
 
-            InternetExplorerDriver reqDriver = 
-                                   new InternetExplorerDriver(ieService, ieOptions);
+            InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptions);
             reqDriver.Url = "https://bing.com";
-            reqDriver.FindElementById("sb_form_q").SendKeys("WebDriver");
-            reqDriver.FindElementById("sb_form").Submit();
+            reqDriver.FindElement(By.Id("sb_form_q")).SendKeys("WebDriver");
+            reqDriver.FindElement(By.Id("sb_form")).Submit();
 
             Console.WriteLine("Done");
+            reqDriver.Quit();
         }
     }
 }
@@ -91,8 +88,58 @@ namespace Selenium_Web
 
 ### [Python](#tab/python/)
 
-<!-- todo -->
-Insert Python sample here
+```python
+from selenium import webdriver
+from selenium.webdriver.ie.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+
+ieService = Service('C:/<path to IEDriver download>')
+ieOptions = webdriver.IeOptions()
+ieOptions.attach_to_edge_chrome = True
+ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+
+browser = webdriver.Ie(options=ieOptions, service=ieService)
+
+browser.get("http://www.bing.com")
+elem = browser.find_element(By.ID, 'sb_form_q')
+elem.send_keys('WebDriver' + Keys.RETURN)
+
+print('Done')
+
+browser.quit()
+```
+
+### [JavaScript](#tab/javascript/)
+
+```javascript
+const {Builder, By, Key, until} = require('selenium-webdriver');
+const {Options, ServiceBuilder} = require('selenium-webdriver/ie');
+
+(async function IEDriverSample() {
+  let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
+  let ieOptions = await new Options()
+  await ieOptions.setEdgeChromium(true)
+  await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
+
+  let driver = await new Builder().
+                         forBrowser('ie').
+                         setIeOptions(ieOptions).
+                         setIeService(ieService).
+                         build();
+  try {
+    await driver.get('http://www.bing.com');
+    await driver.findElement(By.id('sb_form_q')).sendKeys('WebDriver', Key.RETURN);
+    await driver.wait(until.titleIs('WebDriver - Bing'), 1000);
+  } finally {
+    await driver.quit();
+  }
+})();
+```
+
+### [Java](#tab/java/)
+
+<!-- TODO: insert java sample -->
 
 * * *
 
@@ -119,8 +166,25 @@ var ieService = InternetExplorerDriverService.CreateDefaultService(dir, driverex
 
 ### [Python](#tab/python/)
 
-<!-- todo -->
-Insert Python sample here
+Define `ieService` by calling `Service` from `selenium.webdriver.ie.service` with the path to the IEDriver executable you downloaded.
+
+```python
+from selenium.webdriver.ie.service import Service
+
+ieService = Service('C:/<path to IEDriver download>')
+```
+
+### [JavaScript](#tab/javascript/)
+
+Define `ieService` by calling `ServiceBuilder` and passing it the path to the IEDriver executable you downloaded.
+
+```javascript
+let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
+```
+
+### [Java](#tab/java/)
+
+<!-- TODO: insert java sample -->
 
 * * *
 
@@ -132,20 +196,42 @@ Insert Python sample here
 
 1. Define a new variable, `ieOptions`, by instantiating `InternetExplorerOptions` with the `IgnoreZoomLevel` property set to `true`.
 
-1. Call the `AddAdditionalCapability` method, with the `ie.edgechromium` property set to `true`, and `ie.edgepath` set to the path of the Microsoft Edge executable:
+1. Set `ieOptions.AttachToEdgeChrome` property to `true`, and `ieOptions.EdgeExecutablePath` to the path of the Microsoft Edge executable:
 
 ```csharp
 var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
-ieOptions.AddAdditionalCapability("ie.edgechromium", true);
+ieOptions.AttachToEdgeChrome = true;
 //change the path accordingly
-ieOptions.AddAdditionalCapability("ie.edgepath", 
-       "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe");
+ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
 ```
 
 ### [Python](#tab/python/)
 
-<!-- todo -->
-Insert Python sample here
+1. Define a new variable, `ieOptions`, by calling `webdriver.IeOptions()`.
+
+1. Set the `ieOptions.attach_to_edge_chrome` property to `true`, and `ieOptions.edge_executable_path` to the path of the Microsoft Edge executable:
+
+```python
+ieOptions = webdriver.IeOptions()
+ieOptions.attach_to_edge_chrome = True
+ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+```
+
+### [JavaScript](#tab/javascript/)
+
+1. Define a new variable, `ieOptions`, by calling `Options()`.
+
+1. Set the `ieOptions.setEdgeChromium` property to `true` and `ieOptions.setEdgePath` to the path of the Microsoft Edge executable:
+
+```javascript
+let ieOptions = await new Options()
+await ieOptions.setEdgeChromium(true)
+await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
+```
+
+### [Java](#tab/java/)
+
+<!-- TODO: insert java sample -->
 
 * * *
 
@@ -163,8 +249,27 @@ InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptio
 
 ### [Python](#tab/python/)
 
-<!-- todo -->
-Insert Python sample here
+Finally, start IEDriver byy calling `webdriver.Ie` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+
+```python
+browser = webdriver.Ie(options=ieOptions, service=ieService)
+```
+
+### [JavaScript](#tab/javascript)
+
+Finally, start IEDriver by calling `Builder.forBrowser('ie')`, `setIeoptions(ieOptions)`, and `setIeService(ieService)`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+
+```javascript
+let driver = await new Builder().
+                       forBrowser('ie').
+                       setIeOptions(ieOptions).
+                       setIeService(ieService).
+                       build();
+```
+
+### [Java](#tab/java/)
+
+<!-- TODO: insert java sample -->
 
 * * *
 
@@ -181,17 +286,37 @@ The following sample demonstrates how you must wait for IEDriver to register new
 After the `Click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `Thread.Sleep(2000)` before getting new window handles with `reqDriver.WindowHandles`.
 
 ```csharp
-reqDriver.FindElementById("<ID of the button that will open a new window>").Click();
+reqDriver.FindElement(By.Id("<Id of the button that will open a new window>")).Click();
 Thread.Sleep(2000);
 var newHandles = reqDriver.WindowHandles;
 ```
 
 ### [Python](#tab/python/)
 
-<!-- todo -->
-Insert Python sample here
+After the `click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `browser.implicitly_wait(2.0)` before getting new window handles with `browser.window_handles`.
+
+```python
+browser.find_element(By.ID, "<Id of the button that will open a new window>").click()
+browser.implicitly_wait(2.0)
+newHandles = browser.window_handles
+```
+
+### [JavaScript](#tab/javascript/)
+
+After the `click` method is called on a button that opens a new window, IEDriver must wait with `await driver.getAllWindowHandles()`.
+
+```javascript
+await driver.findElement(By.id("<Id of the button that will open a new window>")).click();
+let newHandles = await driver.getAllWindowHandles()
+```
+
+### [Java](#tab/java/)
+
+<!-- TODO: insert java sample -->
 
 * * *
+
+Additionally, in IE mode, IEDriver can only interact with the active tab in Microsoft Edge. In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE. When automating multiple tabs in IE mode, you must manage the active tab in your test code.
 
 <!-- ====================================================================== -->
 ## See also
