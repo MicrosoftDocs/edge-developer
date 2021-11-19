@@ -144,10 +144,10 @@ Enable this experiment to capture JavaScript stack traces when DOM nodes are add
 
 
 <!-- ====================================================================== -->
-<!-- ## Automatically pretty print in the Sources Panel -->
+## Automatically pretty print in the Sources Panel
 <!-- present in 96, 98 -->
 
-<!-- Needs content. -->
+Enable this experiment to turn on by default the pretty print behavior for documents displayed in the Sources panel. Pretty print presents the contents of a file in an indented and more human readable format.
 
 
 <!-- ====================================================================== -->
