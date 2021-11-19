@@ -13,7 +13,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 This article describes features launched on [Partner Center](https://partner.microsoft.com/dashboard/home) for extension developers.
 
 > [!NOTE]
-> Released features for the Microsoft [Partner Center](https://partner.microsoft.com/dashboard/home) change often.  Partner Center continues to evolve based on market changes and customer feedback. The features described in this article are also subject to change.
+> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/home) change often.  Partner Center continues to evolve based on market changes and customer feedback. The features described in this article are also subject to change.
 
 For more information about updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
 
