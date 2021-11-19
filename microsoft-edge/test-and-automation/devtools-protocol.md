@@ -3,7 +3,7 @@ description: Use the DevTools Protocol to instrument, inspect, debug, and profil
 title: DevTools Protocol
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/09/2021
+ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ---
