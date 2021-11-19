@@ -16,10 +16,10 @@ On Windows, PWAs are just like other apps.  Any device running Microsoft Edge ge
 <!-- ====================================================================== -->
 ## Installing a PWA
 
-When Microsoft Edge determines that a website is an installable PWA, the **App available** button is displayed in the address bar.
+When Microsoft Edge determines that a website is an installable PWA, the **App available** (![The "App available" icon.](media/app-available-icon.png)) icon is displayed in the address bar.
 
-1.  Select the **App available** button to install the PWA.
-1.  Select **Install** to complete the installation and run the PWA in Windows.
+1.  Click the **App available** (![The "App available" icon.](media/app-available-icon.png)) icon to install the PWA.
+1.  Click **Install** to complete the installation and run the PWA in Windows.
 
 :::image type="content" source="./media/edge-app-install-flyout.png" alt-text="The installation prompt in Microsoft Edge." lightbox="./media/edge-app-install-flyout.png":::
 
@@ -69,8 +69,7 @@ To turn this feature on for an installed PWA:
 
 1.  Open Microsoft Edge.
 1.  Go to `edge://apps`.
-1.  Click the **More options** button (![More options button](./media/edge-apps-more-options.png)) on the app in the list of installed apps.
-1.  Click **Auto-start on device login**.
+1.  On the app you want to configure, click the **More options** (![The More options button.](./media/edge-apps-more-options.png)) button and then select **Auto-start on device login**.
 
 :::image type="content" source="./media/turn-on-run-on-os-login-flag.png" alt-text="Use the more options menu to turn on the 'Auto-start on device login' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
 
