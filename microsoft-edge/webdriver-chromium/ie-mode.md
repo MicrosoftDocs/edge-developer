@@ -54,8 +54,6 @@ The following sample launches Microsoft Edge in IE mode, navigates to [bing.com]
 
 ### [C#](#tab/c-sharp/)
 
-<a id="drive-ie-mode-entire-sample"></a>
-
 ```csharp
 using System;
 using OpenQA.Selenium;
@@ -93,8 +91,6 @@ namespace Selenium_Web
 
 ### [Python](#tab/python/)
 
-<a id="drive-ie-mode-entire-sample"></a>
-
 <!-- todo -->
 Insert Python sample here
 
@@ -107,8 +103,6 @@ The following sections explain the steps in this sample in more detail.
 ## Create an InternetExplorerDriverService
 
 ### [C#](#tab/c-sharp/)
-
-<a id="drive-ie-mode-ieService"></a>
 
 To create an `InternetExplorerDriverService`, use the `CreateDefaultService` method.  Pass in the following parameters:
 
@@ -125,8 +119,6 @@ var ieService = InternetExplorerDriverService.CreateDefaultService(dir, driverex
 
 ### [Python](#tab/python/)
 
-<a id="drive-ie-mode-ieService"></a>
-
 <!-- todo -->
 Insert Python sample here
 
@@ -137,8 +129,6 @@ Insert Python sample here
 ## Define InternetExplorerOptions with additional capabilities for Microsoft Edge
 
 ### [C#](#tab/c-sharp/)
-
-<a id="drive-ie-mode-ieOptions"></a>
 
 1. Define a new variable, `ieOptions`, by instantiating `InternetExplorerOptions` with the `IgnoreZoomLevel` property set to `true`.
 
@@ -154,8 +144,6 @@ ieOptions.AddAdditionalCapability("ie.edgepath",
 
 ### [Python](#tab/python/)
 
-<a id="drive-ie-mode-ieOptions"></a>
-
 <!-- todo -->
 Insert Python sample here
 
@@ -167,8 +155,6 @@ Insert Python sample here
 
 ### [C#](#tab/c-sharp/)
 
-<a id="drive-ie-mode-ieDriver"></a>
-
 Finally, start `InternetExplorerDriver` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```csharp
@@ -176,8 +162,6 @@ InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptio
 ```
 
 ### [Python](#tab/python/)
-
-<a id="drive-ie-mode-ieDriver"></a>
 
 <!-- todo -->
 Insert Python sample here
@@ -194,8 +178,6 @@ The following sample demonstrates how you must wait for IEDriver to register new
 
 ### [C#](#tab/c-sharp/)
 
-<a id="drive-ie-mode-window-handlers"></a>
-
 After the `Click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `Thread.Sleep(2000)` before getting new window handles with `reqDriver.WindowHandles`.
 
 ```csharp
@@ -205,8 +187,6 @@ var newHandles = reqDriver.WindowHandles;
 ```
 
 ### [Python](#tab/python/)
-
-<a id="drive-ie-mode-window-handlers"></a>
 
 <!-- todo -->
 Insert Python sample here
