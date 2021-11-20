@@ -1,5 +1,5 @@
 ---
-title: Synchronize and update a Progressive Web App (PWA) in the background.
+title: Synchronize and update a PWA in the background
 description: Learn how to do work in the background, when the app is not running, to synchronize content with the server, fetch new resources, or handle long duration downloads.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,7 +9,7 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, service worker, background, synchronization, fetch
 ---
-# Synchronize and update in the background
+# Synchronize and update a PWA in the background
 
 Using a service worker, Progressive Web Apps (PWAs) can do work in the background when users aren't even using the app. This used to be reserved to native apps, but is now also available to PWAs, which makes better offline experiences possible.
 

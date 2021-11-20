@@ -1,6 +1,6 @@
 ---
-description: An overview of the user experience of PWAs on Microsoft Edge and Windows.
 title: The user experience of PWAs
+description: An overview of the user experience of PWAs on Microsoft Edge and Windows.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/15/2021

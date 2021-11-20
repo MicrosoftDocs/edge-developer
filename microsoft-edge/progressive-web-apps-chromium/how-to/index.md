@@ -1,6 +1,6 @@
 ---
-description: An overview of the basics of Progressive Web Apps (PWAs), and tools for building Progressive Web Apps on Windows.
 title: Get started with Progressive Web Apps
+description: An overview of the basics of Progressive Web Apps (PWAs), and tools for building Progressive Web Apps on Windows.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/19/2021
@@ -210,7 +210,7 @@ Use software [Validation and testing practices](https://webhint.io).  Use code q
 
 *   [Progressive Web Apps on MDN web docs](https://developer.mozilla.org/Apps/Progressive)
 *   [Progressive Web Apps on web.dev](https://developers.google.com/web/progressive-web-apps)
-*   [Hacker News readers as Progressive Web Apps](https://hnpwa.com) - Compares different frameworks and performance patterns for implementing a sample PWA (Hacker News reader).
+*   [Hacker News readers as Progressive Web Apps](https://hnpwa.com) - Compares different frameworks and performance patterns for implementing a sample PWA.
 *   [Myth Busting PWAs](https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition)
 *   [A Progressive Roadmap for your Progressive Web App](https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app)
 *   [Offline POSTs with Progressive Web Apps](https://medium.com/web-on-the-edge/offline-posts-with-progressive-web-apps-fc2dc4ad895)

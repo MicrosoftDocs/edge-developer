@@ -1,6 +1,6 @@
 ---
-description: Progressive Web Apps (PWAs) runs natively on Windows 10 or later.  Here's everything you need to know about PWAs, as a web developer.
 title: Overview of Progressive Web Apps (PWAs)
+description: Progressive Web Apps (PWAs) runs natively on Windows 10 or later.  Here's everything you need to know about PWAs, as a web developer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/17/2021
@@ -50,46 +50,46 @@ Similar table: [Introduction to Microsoft Edge WebView2](..\webview2\index.md#we
     :::column:::
         :::image type="icon" source="./media/i_search-small.png":::  
         **[Discoverable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Discoverable)**  
-        From web search results and supporting app stores
+        From web search results and supporting app stores.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_package-small.png":::  
         **[Installable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable)**  
-        Pin and launch from the home screen, Start Menu, Taskbar, and so on
+        Pin and launch from the home screen, Start Menu, Taskbar, and so on.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_push-notification-small.png":::  
         **[Re-engageable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Re-engageable)**  
-        Send push notifications, even when the app isn't active
+        Send push notifications, even when the app isn't active.
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_offline-small.png":::  
         **[Network-independent](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Network_independent)**  
-        Works offline and in low-network conditions
+        Works offline and in low-network conditions.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_progressive-small.png":::  
         **[Progressive](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Progressive)**  
-        The user experience scales up (or down) with device capabilities
+        The user experience scales up (or down) with device capabilities.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_security-small.png":::  
         **[Safe](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Safe)**  
-        Provides a secure HTTPS endpoint and other user safeguards
+        Provides a secure HTTPS endpoint and other user safeguards.
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
         :::image type="icon" source="./media/i_responsive-small.png":::  
         **[Responsive](https://developer.mozilla.org/Apps/Progressive/Advantages#Responsive)**  
-        Adapts to the user's screen size or orientation and input method
+        Adapts to the user's screen size or orientation and input method.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/i_link-small.png":::  
         **[Linkable](https://developer.mozilla.org/Apps/Progressive/Advantages#Linkable)**  
-        Share and launch from a standard hyperlink
+        Share and launch from a standard link.
     :::column-end:::
     :::column:::
     :::column-end:::
