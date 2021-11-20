@@ -4,7 +4,7 @@ title: Microsoft Edge DevTools Protocol overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 04/06/2021
-ms.topic: reference
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ---
 # Microsoft Edge DevTools Protocol overview

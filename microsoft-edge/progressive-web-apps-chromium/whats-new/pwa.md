@@ -3,18 +3,37 @@ description: New features and origin trials for Progressive Web Apps (PWAs).
 title: What's New in Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/11/2021
-ms.topic: article
+ms.date: 11/19/2021
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 ---
 # What's New in Progressive Web Apps
 
-This page lists the updates to PWAs and Web Apps from the Microsoft Edge Web Apps team. To try new features, review these announcements. To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).
+This page lists the updates to PWAs and Web Apps from the Microsoft Edge Web Apps team.  To try new features, review these announcements.  To stay up to date with the latest and greatest features, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).
+
+
+<!-- ====================================================================== -->
+## What's New in Microsoft Edge 97
+
+Microsoft Edge version 96 is scheduled to become the Stable release on November 18, 2021.  Microsoft Edge version 97 will move from Dev to Beta preview channel following that date.
+
+### Store apps registered as URL handlers hide custom tab UI 
+
+Store-installed PWAs that are participating in the [URL Handler Origin Trial](#url-handlers-origin-trial) will no longer show the Chrome Custom Tab (CCT) when redirecting from the PWA's domain to a matching domain name with a different top-level domain (TLD). This redirecting often happens in apps with locale-specific domains; for example, redirecting from `contoso.com` to `contoso.ca` for users in Canada.
 
 
 <!-- ====================================================================== -->
 ## What's New in Microsoft Edge 96
+
+### URL Protocol Handlers moves to Stable
+
+The origin trial has been concluded.  The URL Protocol Handlers capability is now shipping in Microsoft Edge 96 Stable.
+
+See also:
+*  [Protocol handlers origin trial](#protocol-handlers-origin-trial)
+*  [Handle protocols in Progressive Web Apps](../how-to/handle-protocols.md)
+*  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)
 
 ### New hub design for managing your installed web apps
 
