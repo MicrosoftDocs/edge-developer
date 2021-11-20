@@ -4,7 +4,7 @@ title: Publish a Progressive Web App in the Microsoft Store
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 08/09/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store
 ---
@@ -140,7 +140,7 @@ When your PWA is initially launched, if the PWA was installed from the Microsoft
 Referer: app-info://platform/microsoft-store
 ```
 
-Use this feature to measure distinct traffic from your Store-installed PWA.  Based on the traffic, you can adjust your app’s content to improve the user experience.  This feature is accessible to both client and server code. To access this information on the client side, you can query `document.referrer` in your JavaScript.
+Use this feature to measure distinct traffic from your Store-installed PWA.  Based on the traffic, you can adjust your app's content to improve the user experience.  This feature is accessible to both client and server code. To access this information on the client side, you can query `document.referrer` in your JavaScript.
 
 This feature was first introduced in Microsoft Edge version 91, and the DOM API was introduced in Microsoft Edge version 93.
 

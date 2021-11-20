@@ -4,7 +4,7 @@ title: Overview of Progressive Web Apps (PWAs)
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
