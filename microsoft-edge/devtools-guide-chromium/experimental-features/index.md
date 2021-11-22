@@ -7,7 +7,7 @@ ms.date: 11/22/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
-no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab", "3D View", "Turn on support to move tabs between panels", "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code", "Edit keyboard shortcuts for any action in the DevTools", "Turn on new CSS grid debugging features", "Emulation: Support dual screen mode"]
+no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab", "3D View", "Turn on support to move tabs between panels", "Match keyboard shortcuts in DevTools to Microsoft Visual Studio Code", "Edit keyboard shortcuts for any action in DevTools", "Turn on new CSS grid debugging features", "Emulation: Support dual screen mode"]
 ---
 # Experimental features
 
@@ -30,9 +30,9 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 *  Show issues in Elements
 *  Enable Composited Layers in 3D View
 *  DevTools Tooltips
-*  VS Code themes for the DevTools <!-- literal checkbox label -->
+*  VS Code themes for DevTools <!-- literal checkbox label -->
 *  Open source files in Visual Studio Code
-*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
+*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
 *  Enable dynamic Welcome content
 
 <!-- Remove following feature. No longer active, all other mentions deleted -->
@@ -48,7 +48,7 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 
 To turn experimental features on or off in Microsoft Edge:
 
-1.  [Open DevTools](../open/index.md). Click the **Settings and more** button, which is an ellipsis (three dots). Then hover over **More tools**, and click **Developer tools**. Or press **Control + Shift + I**.
+1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
 1.  Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
 
@@ -73,12 +73,13 @@ To turn experimental features on or off in Microsoft Edge:
 
 To restore the default settings for which experimental features are turned on:
 
-1.  [Open DevTools](../open/index.md).  To do this, in Microsoft Edge, select **Settings and more** (...) > **More tools** > **Developer tools**.  Or press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
  
-1.  Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
+1.  Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Preferences**.
 
-1.  Click **Preferences** > **Restore defaults and refresh**.
+1.  Click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
 
+<!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
 
 <!-- ====================================================================== -->
@@ -86,13 +87,13 @@ To restore the default settings for which experimental features are turned on:
 
 You can filter the experimental features by text included in the title.
 
-1.  Open **Settings** > **Experiments**.
+1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Click in the **Filter** text box and enter text such as **Timeline**.
+1.  Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Experiments**.
 
-1.  The displayed features are limited to those including **Timeline** in the title.
+1.  Click in the **Filter** text box and enter text, such as **timeline**.  As you type, only the matching checkboxes are shown in the **Experiments** page.
 
-1.  Clear the text box to end filtering.
+1.  To end filtering, clear the **Filter** text box.
 
 
 <!-- ====================================================================== -->
@@ -101,7 +102,7 @@ You can filter the experimental features by text included in the title.
 We're eager to hear your feedback about experimental features.
   
 * Send us your feedback by tweeting [@EdgeDevTools](https://twitter.com/edgedevtools).
-  
+
 * [Contact the Microsoft Edge DevTools team](../contact.md).
 
 * With the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode](../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
@@ -143,13 +144,21 @@ Enable this experiment to turn on by default the pretty print behavior for docum
 
 DevTools communicates with the inspected page using the DevTools protocol.
 
-1.  Enable the **Protocol Monitor** experiment to monitor the messages sent and received by DevTools to debug the inspected page.
+To monitor the messages sent and received by DevTools to debug the inspected page:
 
-1.  After enabling the experiment, restart DevTools.
+1.  Open DevTools.
 
-1.  Open the **Command Menu** (**Control + Shift + P**), and type **Protocol Monitor** in the text box.
+1.  In DevTools, select **Settings** > **Experiments**.
 
-1.  Select the **Show Protocol monitor** Drawer suggestion. The Protocol monitor drawer displays at the bottom of the DevTools panel.
+1.  Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) to close **Settings**.
+
+1.  Open the **Command Menu** (`Control`+`Shift`+`P`), and then type **protocol** in the text box.
+
+1.  Select **Show Protocol monitor**.  The message appears: "One or more settings have changed which requires a reload to take effect."
+
+1.  Click the **Reload DevTools** button that appears next to the message.
+
+1.  The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.  If the Drawer isn't displayed, press `Esc` to display the **Drawer**.  If the Drawer doesn't have the **Protocol monitor** tab, on the **Drawer**, select **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) > **Protocol monitor**.
 
 
 <!-- ====================================================================== -->
@@ -319,7 +328,7 @@ You can visualize Layers alongside z-indexes and the Document Object Model (DOM)
 
 This feature helps you debug without switching contexts as often. Reducing context-switching resolves a major pain point for developers. This feature makes it clear how the code you write affects your web app. 
 
-To use **Composited Layers**, complete the following steps.
+To use **Composited Layers**:
 
 1.  On the **Drawer**, select the **3D View** tool.
 1.  Open the **Composited Layers** pane.
@@ -336,11 +345,10 @@ This experiment is available starting with Microsoft Edge version 87 and is turn
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You can use the **Network Console** experiment to send web API requests.
 
-To use the **Network Console**, complete the following steps.
+To use the **Network Console**:
 
 1.  Open the **Network** pane.
-1.  Find the network request that you want to change and resend.
-1.  Open the contextual menu (right-click), and select **Edit and Replay**.
+1.  Right-click the network request that you want to change and resend, and then select **Edit and Replay**.
 1.  In the **Network Console**, edit the network request information.
 1.  Click **Send**.
 
@@ -371,18 +379,18 @@ Enable this experiment to view tooltips for all the different tools and panes in
 
 Memory leaks in web applications are a difficult to locate and repair.
 
-The new Detached Elements panel in Microsoft Edge DevTools helps investigate and resolve a common source of memory leaks.
+The new **Detached Elements** panel in Microsoft Edge DevTools helps investigate and resolve a common source of memory leaks.
 
 Memory leaks occur when the JavaScript code of the application retains an increasing number of objects in memory. The JavaScript code should release these objects so that the memory space can be reused by the browser.
 
-<!-- ???more needed, probably with an image, Detached Elements tutorial is in progress??? -->
+<!-- more needed, probably with an image.  See the Detached Elements tutorial (in progress). -->
 
 
 <!-- ====================================================================== -->
-## VS Code themes for the DevTools
+## VS Code themes for DevTools
 <!-- present in 96, 98 -->
 
-Enable this experiment to use Visual Studio themes in DevTools. For more information, see [Apply color themes to DevTools](../customize/theme.md).
+To use Visual Studio themes in DevTools, enable the **VS Code themes for DevTools** experiment. For more information, see [Apply color themes to DevTools](../customize/theme.md).
 
 
 <!-- ====================================================================== -->
@@ -467,7 +475,7 @@ These features have been promoted from experimental to regular features, and hav
 
 This experiment started with Microsoft Edge version 89, and is a regular feature as of version 94.
 
-You can now open more tools using the new **More Tools** (`+`) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (`+`) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (`+`) icon.
+You can now open more tools using the new **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.
 
 :::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane." lightbox="../media/experiments-more-tools-button.msft.png":::
 
@@ -501,7 +509,7 @@ The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox 
 #### Displaying persistent overlays on Flexbox layouts
 
 In Microsoft Edge version 89 or later, the CSS Flexbox feature offers the option to turn on persistent overlays on Flexbox layouts.  Persistent overlays provide the following benefits:
-*   Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of the DevTools.
+*   Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of DevTools.
 *   Multiple persistent overlays can be used at the same time, to allow you to review several Flexbox layouts at once.
 *   Persistent overlays offer color configuration options.
 
