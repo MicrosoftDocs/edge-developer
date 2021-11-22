@@ -3,7 +3,7 @@ description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2021
+ms.date: 11/22/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -35,7 +35,7 @@ As of Microsoft Edge 96, the following experimental features are turned on by de
 *  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
 *  Enable dynamic Welcome content
 
-<!-- Remove following feature per Rachel Weil in PR 1570 edit, all other mentions deleted -->
+<!-- Remove following feature. No longer active, all other mentions deleted -->
 <!-- *  Enable CSS \<length\> authoring tool in the Styles pane -->
 
 <!-- *  Detached Elements - in 96 this checkmark is only present when a corpnet account is hooked up -->
