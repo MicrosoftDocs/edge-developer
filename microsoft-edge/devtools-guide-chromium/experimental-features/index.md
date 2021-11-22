@@ -79,19 +79,6 @@ You can restore the default Experimental features settings.
 
 1.  Click **Preferences** > **Restore defaults and refresh**.
 
-### Make sure default settings are restored
-
-1.  Open  **Settings** > **Experiments**.
-
-1.  Toggle a checkbox in **Experiments**, then close **Settings**.
-
-1.  View **Experiments** again and make sure your change persisted.
-
-1.  Close **Settings**.
-
-1.  Click **Settings** > **Preferences** > **Restore defaults and refresh**.
-
-1.  Open **Settings** > **Experiments** again to make sure see the experiment's checkbox reverted to the default state (selected or cleared).
 
 
 <!-- ====================================================================== -->
