@@ -73,7 +73,7 @@ To turn experimental features on or off in Microsoft Edge:
 
 You can restore the default Experimental features settings.
 
-1.  [Open DevTools](../open/index.md). Click the **Settings and more** button, which is an ellipsis (three dots). Then hover over **More tools**, and click **Developer tools**. Or press **Control + Shift + I**.
+1.  [Open DevTools](../open/index.md).  To do this, in Microsoft Edge, select **Settings and more** (...) > **More tools** > **Developer tools**.  Or press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
  
 1.  Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
 
