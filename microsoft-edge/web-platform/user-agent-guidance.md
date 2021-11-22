@@ -35,7 +35,7 @@ Mechanisms for browser detection:
 
 Microsoft recommends [detecting whether a feature is supported](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) in your browser whenever possible, instead of detecting the browser.
 
-If you must detect browsers, Microsoft recommends using User-Agent Client Hints, as follows.
+If you must detect browsers, Microsoft recommends using User-Agent Client Hints, as follows, [together with feature detection](#combine-user-agent-client-hints-with-feature-detection).
 
 
 <!-- ====================================================================== -->
@@ -94,9 +94,7 @@ mobile: false }
 
 Microsoft Edge includes a `GREASE` brand value that changes over time. It prevents sites from matching the entire brand list when attempting to detect a version of Microsoft Edge.
 
-To request more detailed information such as `platform`, use the following code.
-
-The following code snippet sends a request.
+To send a request for more detailed information such as `platform`, use the following code:
 
 ```javascript
 navigator.userAgentData.getHighEntropyValues(
@@ -104,7 +102,7 @@ navigator.userAgentData.getHighEntropyValues(
       .then(ua => { console.log(ua) });
 ```
 
-To receive the following response.
+The response has the following format:
 
 ```javascript
 {architecture: "x86",
@@ -122,7 +120,7 @@ The operating system version token in the `User-Agent` header hasn't been update
 
 To distinguish between Windows 10 and Windows 11, request the `platformVersion` client hint in Microsoft Edge version 95 or later. Values between and including `1.0.0` and `12.0.0` represent releases of Windows 10, while values of `14.0.0` or later represent releases of Windows 11.
 
-### User-Agent Client Hints suggested use
+### Combine User-Agent Client Hints with feature detection
 
 Combining User-Agent Client Hints with [feature detection](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection) is an effective way to deliver compatible web content. Microsoft recommends using this pattern to:
 * Improve code maintainability.
@@ -131,7 +129,7 @@ Combining User-Agent Client Hints with [feature detection](https://developer.moz
 
 If you need to check for a Chrome-like browser, Microsoft recommends detecting `Chromium`, which is the engine that powers Microsoft Edge.
 
-Use this method to verify the `Chromium` brand and apply detection to all affected Chromium-based browsers.
+Use this method to verify the `Chromium` brand and apply detection to all affected Chromium-based browsers:
 
 ```javascript
 function isChromium() {
@@ -158,19 +156,19 @@ Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser
 
 For legacy reference, the following format was used for User-Agent string.
 
-On Windows, the `User-Agent` HTTP request header uses the following format.
+On Windows, the `User-Agent` HTTP request header uses the following format:
 
 ```https
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46
 ```
 
-On Android, the `User-Agent` HTTP request header uses the following format.
+On Android, the `User-Agent` HTTP request header uses the following format:
 
 ```https
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36 Edg/90.0.818.46
+User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Mobile Safari/537.36 EdgA/90.0.818.46
 ```
 
-The response value from `navigator.userAgent` method uses the following format.
+The response value from `navigator.userAgent` method uses the following format:
 
 ```javascript
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4501.0 Safari/537.36 Edg/91.0.866.0"
@@ -184,7 +182,6 @@ Platform identifiers change based on the operating system, and version numbers i
 
 On desktop operating systems, Microsoft Edge is commonly identified by the `Edg` token in the User-Agent string.  However, a different token for Microsoft Edge is used on some device platforms, as follows:
 
-
 | Platform | Identifier token |
 |:--- |:--- |
 | Desktop (Windows/Mac/Linux) | `Edg` |
@@ -194,7 +191,6 @@ On desktop operating systems, Microsoft Edge is commonly identified by the `Edg`
 
 <!-- ====================================================================== -->
 ## Map the User-Agent string to an expanded browser name
-
 
 Map the User-Agent string tokens to human-readable browser names to use in code. This practice is common across the web. When you map the new `Edg` token to a browser name, Microsoft recommends using a different name than the one used for the legacy Microsoft EdgeHTML browser, to avoid accidentally applying legacy workarounds that don't apply to Chromium-based browsers.
 
