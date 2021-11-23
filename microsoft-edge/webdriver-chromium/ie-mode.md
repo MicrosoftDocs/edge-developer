@@ -11,9 +11,9 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
 
-If you have business-critical legacy websites or apps, you may need to test your content in IE mode in Microsoft Edge.  This article describes how to get started with Internet Explorer Driver (IEDriver) to automate IE mode in Microsoft Edge.
+If you have business-critical legacy websites or apps, you may need to test your content in Internet Explorer (IE) mode in Microsoft Edge.  This article describes how to get started with Internet Explorer Driver (IEDriver) to automate IE mode in Microsoft Edge.
 
-Internet Explorer (IE) mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
+IE mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
 
 Starting **June 15, 2022**, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. For more information, read [Internet Explorer 11 desktop application ending support for certain operating systems](/lifecycle/announcements/internet-explorer-11-end-of-support).
 
