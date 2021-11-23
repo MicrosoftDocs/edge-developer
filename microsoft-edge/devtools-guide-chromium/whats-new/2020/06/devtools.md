@@ -42,7 +42,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 :::image-end:::
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and select the checkbox next to **Enable new CSS Grid debugging features**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**.
 >
 > To try out the experiment with a sample, navigate to [CSS Grid planner example](https://codepen.io/hxlnt/full/YzwBzKM).
 
@@ -72,7 +72,7 @@ You may also use the **Network Console** to create and send HTTP requests direct
 > To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), navigate to [moving tools between panels](#move-tools-between-panels).
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable Network Console**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable Network Console**.
 >
 > Open the [Network Log](../../../network/index.md#log-network-activity), open the contextual menu (right-click), and choose **Edit and Replay**.
 
@@ -107,7 +107,7 @@ Chromium issue [#1066579](https://crbug.com/1066579)
 :::image-end:::
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable webhint**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable webhint**.
 >
 > Open the [Issues](../../../issues/index.md) panel to display feedback from webhint.
 
@@ -126,7 +126,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 :::image-end:::
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable support to move tabs between panels**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable support to move tabs between panels**.
 
 Chromium issue [#897944](https://crbug.com/897944)
 
