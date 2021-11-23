@@ -55,7 +55,7 @@ using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
 
-namespace Selenium_Web
+namespace IEDriverSample
 {
     class Program
     {
@@ -66,13 +66,12 @@ namespace Selenium_Web
             //change the path accordingly
             ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
 
-            InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieOptions);
-            reqDriver.Url = "https://bing.com";
-            reqDriver.FindElement(By.Id("sb_form_q")).SendKeys("WebDriver");
-            reqDriver.FindElement(By.Id("sb_form")).Submit();
+            var driver = new InternetExplorerDriver(ieOptions);
+            driver.Url = "https://bing.com";
+            driver.FindElement(By.Id("sb_form_q")).SendKeys("WebDriver");
+            driver.FindElement(By.Id("sb_form")).Submit();
 
-            Console.WriteLine("Done");
-            reqDriver.Quit();
+            driver.Quit();
         }
     }
 }
@@ -89,15 +88,13 @@ ieOptions = webdriver.IeOptions()
 ieOptions.attach_to_edge_chrome = True
 ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 
-browser = webdriver.Ie(options=ieOptions)
+driver = webdriver.Ie(options=ieOptions)
 
-browser.get("http://www.bing.com")
-elem = browser.find_element(By.ID, 'sb_form_q')
+driver.get("http://www.bing.com")
+elem = driver.find_element(By.ID, 'sb_form_q')
 elem.send_keys('WebDriver' + Keys.RETURN)
 
-print('Done')
-
-browser.quit()
+driver.quit()
 ```
 
 ### [Java](#tab/java/)
@@ -117,13 +114,11 @@ public class IEDriverSample {
         ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
         
         WebDriver driver = new InternetExplorerDriver(ieOptions);
-        String baseUrl = "http://www.bing.com";
-        
-        driver.get(baseUrl);
+
+        driver.get("http://www.bing.com");
         WebElement elem = driver.findElement(By.id("sb_form_q"));
         elem.sendKeys("WebDriver", Keys.RETURN);
 
-        System.out.println("Done");
         driver.close();
     }
 }
@@ -135,10 +130,10 @@ public class IEDriverSample {
 const {Builder, By, Key, until} = require('selenium-webdriver');
 const {Options} = require('selenium-webdriver/ie');
 
-(async function IEDriverSample() {
-  let ieOptions = await new Options()
-  await ieOptions.setEdgeChromium(true)
-  await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
+(async () => {
+  let ieOptions = new Options();
+  ieOptions.setEdgeChromium(true);
+  ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe');
 
   let driver = await new Builder().
                          forBrowser('ie').
@@ -180,7 +175,7 @@ ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Applicatio
 
 1. Define a new variable, `ieOptions`, by calling `webdriver.IeOptions()`.
 
-1. Set the `ieOptions.attach_to_edge_chrome` property to `true`, and `ieOptions.edge_executable_path` to the path of the Microsoft Edge executable.
+1. Set the `ieOptions.attach_to_edge_chrome` property to `True`, and `ieOptions.edge_executable_path` to the path of the Microsoft Edge executable.
 
 ```python
 ieOptions = webdriver.IeOptions()
@@ -204,9 +199,7 @@ ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Appl
 
 1. Define a new variable, `ieOptions`, by calling `Options()`.
 
-1. Set the `ieOptions.setEdgeChromium` property to `true`.
-
-1. Set `ieOptions.setEdgePath` to the path of the Microsoft Edge executable.
+1. Call `ieOptions.setEdgeChromium()` with value `true` and `ieOptions.setEdgePath()` with the path of the Microsoft Edge executable.
 
 ```javascript
 let ieOptions = await new Options()
@@ -227,7 +220,7 @@ Start IEDriver.  IEDriver launches Microsoft Edge and then loads your web conten
 Start `InternetExplorerDriver` and pass it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```csharp
-InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieOptions);
+var driver = new InternetExplorerDriver(ieOptions);
 ```
 
 ### [Python](#tab/python/)
@@ -235,7 +228,7 @@ InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieOptions);
 Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```python
-browser = webdriver.Ie(options=ieOptions)
+driver = webdriver.Ie(options=ieOptions)
 ```
 
 ### [Java](#tab/java/)
