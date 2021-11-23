@@ -326,9 +326,9 @@
         - name: What's new
           items:
             - name: Microsoft Edge Add-ons released features
-              href: whats-new/released-features.md
+              href: extensions-chromium/whats-new/released-features.md
             - name: Microsoft Edge Add-ons roadmap
-              href: whats-new/roadmap.md
+              href: extensions-chromium/whats-new/roadmap.md
         - name: Getting started
           items:
             - name: Extension architecture
