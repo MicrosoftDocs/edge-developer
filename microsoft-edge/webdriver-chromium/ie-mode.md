@@ -3,7 +3,7 @@ description: Learn how to test your legacy website or app in IE mode in Microsof
 title: Use Internet Explorer Driver to automate IE mode in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/17/2021
+ms.date: 11/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -11,11 +11,11 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
 
+If you have business-critical legacy websites or apps, you may need to test your content in IE mode in Microsoft Edge.  This article describes how to get started with Internet Explorer Driver (IEDriver) to automate IE mode in Microsoft Edge.
+
 Internet Explorer (IE) mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
 
-Internet Explorer 11 will no longer be supported on certain versions of Windows 10 starting **June 15, 2022**. For more information about ending support for Internet Explorer 11, read [Internet Explorer 11 desktop application ending support for certain operating systems](/lifecycle/announcements/internet-explorer-11-end-of-support).
-
-Organizations with business-critical legacy websites or apps may need to test their content in IE mode in Microsoft Edge.  The following sections describe how to get started with Internet Explorer Driver (IEDriver) to automate IE mode in Microsoft Edge.
+Starting **June 15, 2022**, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. For more information, read [Internet Explorer 11 desktop application ending support for certain operating systems](/lifecycle/announcements/internet-explorer-11-end-of-support).
 
 
 <!-- ====================================================================== -->
@@ -23,7 +23,7 @@ Organizations with business-critical legacy websites or apps may need to test th
 
 To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](https://www.selenium.dev/downloads/).  Make sure that the version of IEDriver that you download is `4.0.0.0` or greater.
 
-:::image type="content" source="./media/iedriver-install.msft.png" alt-text="The IEDriver section of Downloads page for Selenium." lightbox="./media/iedriver-install.msft.png":::
+:::image type="content" source="./media/iedriver-install.msft.png" alt-text="The IEDriver section of the Downloads page for Selenium." lightbox="./media/iedriver-install.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -48,7 +48,7 @@ The next section shows the complete sample, and then the subsequent sections foc
 <!-- ====================================================================== -->
 ## The complete sample
 
-The following sample launches Microsoft Edge in IE mode, navigates to [bing.com](https://www.bing.com/) and searches for "WebDriver".
+The following sample launches Microsoft Edge in IE mode, navigates to [bing.com](https://www.bing.com/), and then searches for "WebDriver".
 
 ### [C#](#tab/c-sharp/)
 
@@ -122,13 +122,13 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 
 public class IEDriverSample {
     public static void main(String[] args) {
-    	System.setProperty("webdriver.ie.driver","C:/<path to IEDriver download>");
-    	
-    	InternetExplorerOptions ieOptions = new InternetExplorerOptions();
-    	ieOptions.attachToEdgeChrome();
-    	ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
-    	
-    	WebDriver driver = new InternetExplorerDriver(ieOptions);
+        System.setProperty("webdriver.ie.driver","C:/<path to IEDriver download>");
+        
+        InternetExplorerOptions ieOptions = new InternetExplorerOptions();
+        ieOptions.attachToEdgeChrome();
+        ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+        
+        WebDriver driver = new InternetExplorerDriver(ieOptions);
         String baseUrl = "http://www.bing.com";
         
         driver.get(baseUrl);
@@ -176,6 +176,8 @@ The following sections explain the steps in this sample in more detail.
 <!-- ====================================================================== -->
 ## Create an InternetExplorerDriverService
 
+First, create an `InternetExplorerDriverService`.
+
 ### [C#](#tab/c-sharp/)
 
 To create an `InternetExplorerDriverService`, use the `CreateDefaultService` method.  Pass in the following parameters:
@@ -203,7 +205,7 @@ ieService = Service('C:/<path to IEDriver download>')
 
 ### [Java](#tab/java/)
 
-For Java, you do not need to create an InternetExplorerDriverService. You do need to specify the path to the IEDriver executable you downloaded.
+For Java, you don't need to create an `InternetExplorerDriverService`. You do need to specify the path to the IEDriver executable you downloaded.
 
 ```java
 System.setProperty("webdriver.ie.driver","C:/<path to IEDriver download>");
@@ -223,11 +225,13 @@ let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
 <!-- ====================================================================== -->
 ## Define InternetExplorerOptions with additional capabilities for Microsoft Edge
 
+Next, define `InternetExplorerOptions` with additional capabilities that point to the Microsoft Edge browser.
+
 ### [C#](#tab/c-sharp/)
 
 1. Define a new variable, `ieOptions`, by instantiating `InternetExplorerOptions` with the `IgnoreZoomLevel` property set to `true`.
 
-1. Set `ieOptions.AttachToEdgeChrome` property to `true`, and `ieOptions.EdgeExecutablePath` to the path of the Microsoft Edge executable:
+1. Set `ieOptions.AttachToEdgeChrome` property to `true`, and `ieOptions.EdgeExecutablePath` to the path of the Microsoft Edge executable.
 
 ```csharp
 var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
@@ -240,7 +244,7 @@ ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Applicatio
 
 1. Define a new variable, `ieOptions`, by calling `webdriver.IeOptions()`.
 
-1. Set the `ieOptions.attach_to_edge_chrome` property to `true`, and `ieOptions.edge_executable_path` to the path of the Microsoft Edge executable:
+1. Set the `ieOptions.attach_to_edge_chrome` property to `true`, and `ieOptions.edge_executable_path` to the path of the Microsoft Edge executable.
 
 ```python
 ieOptions = webdriver.IeOptions()
@@ -252,7 +256,7 @@ ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Applicat
 
 1. Define a new variable `ieOptions` of type `InternetExplorerOptions`, by calling `new InternetExplorerOptions()`.
 
-1. Call `ieOptions.attachToEdgeChrome()` and `ieOptions.withEdgeExecutablePath()` with the path of the Microsoft Edge executable:
+1. Call `ieOptions.attachToEdgeChrome()` and `ieOptions.withEdgeExecutablePath()` with the path of the Microsoft Edge executable.
 
 ```java
 InternetExplorerOptions ieOptions = new InternetExplorerOptions();
@@ -264,7 +268,9 @@ ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Appl
 
 1. Define a new variable, `ieOptions`, by calling `Options()`.
 
-1. Set the `ieOptions.setEdgeChromium` property to `true` and `ieOptions.setEdgePath` to the path of the Microsoft Edge executable:
+1. Set the `ieOptions.setEdgeChromium` property to `true`.
+
+1. Set `ieOptions.setEdgePath` to the path of the Microsoft Edge executable.
 
 ```javascript
 let ieOptions = await new Options()
@@ -278,9 +284,11 @@ await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/m
 <!-- ====================================================================== -->
 ## Start InternetExplorerDriver
 
+Finally, start IEDriver.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
+
 ### [C#](#tab/c-sharp/)
 
-Finally, start `InternetExplorerDriver` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start `InternetExplorerDriver` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```csharp
 InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptions);
@@ -288,7 +296,7 @@ InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptio
 
 ### [Python](#tab/python/)
 
-Finally, start IEDriver by calling `webdriver.Ie` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```python
 browser = webdriver.Ie(options=ieOptions, service=ieService)
@@ -296,7 +304,7 @@ browser = webdriver.Ie(options=ieOptions, service=ieService)
 
 ### [Java](#tab/java/)
 
-Finally, start IEDriver by calling `new InternetExplorerDriver()` and pass it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start IEDriver by calling `new InternetExplorerDriver()` and passing it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```java
 WebDriver driver = new InternetExplorerDriver(ieOptions);
@@ -304,7 +312,7 @@ WebDriver driver = new InternetExplorerDriver(ieOptions);
 
 ### [JavaScript](#tab/javascript)
 
-Finally, start IEDriver by calling `Builder.forBrowser('ie')`, `setIeoptions(ieOptions)`, and `setIeService(ieService)`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start IEDriver by calling `Builder.forBrowser('ie')`, `setIeoptions(ieOptions)`, and `setIeService(ieService)`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```javascript
 let driver = await new Builder().
@@ -320,7 +328,10 @@ let driver = await new Builder().
 <!-- ====================================================================== -->
 ## Known limitations
 
-When automating IE mode in Microsoft Edge, you must add a short wait between opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) and getting handles to the new window with the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command.
+When automating IE mode in Microsoft Edge, you must add a short wait between these two operations:
+
+1. Opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open).
+1. Getting handles to the new window with the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command.
 
 The following sample demonstrates how you must wait for IEDriver to register new window handles when opening new windows.
 
