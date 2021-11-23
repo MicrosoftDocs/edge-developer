@@ -3,7 +3,7 @@ description: Host web content in your Win32, .NET, UWP apps with the Microsoft E
 title: Introduction to Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 11/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -118,11 +118,13 @@ A General Availability (GA) or Preview version of WebView2 is available for the 
 *   .NET Framework 4.5 or later
 *   .NET Core 3.1 or later
 *   .NET 5
-*   .NET 6 (Preview)
+*   .NET 6
+*   WinUI 2.0 (Preview)
 *   [WinUI 3.0](/uwp/toolkits/winui3/index)
 
 WebView2 apps can run on the following versions of Windows.
 
+*   Windows 11
 *   Windows 10
 *   Windows 10 IoT Enterprise LTSC x32 2019
 *   Windows 10 IoT Enterprise LTSC x64 2019
@@ -136,7 +138,7 @@ WebView2 apps can run on the following versions of Windows.
 *   Windows Server 2008 R2 \*\*
 
 > [!IMPORTANT]
-> \*\* WebView2 support for Windows 7 and Windows Server 2008 R2 has the same support cycle as Microsoft Edge.  For more information, navigate to [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
+> WebView2 support for Windows 7 and Windows Server 2008 R2 will have the same support timeline as Microsoft Edge.  For more information, see [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
 
 
 <!-- ====================================================================== -->

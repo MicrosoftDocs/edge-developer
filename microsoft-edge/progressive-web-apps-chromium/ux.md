@@ -16,16 +16,16 @@ On Windows, Progressive Web Apps (PWAs) are just like other apps.  Any device ru
 <!-- ====================================================================== -->
 ## Installing a PWA
 
-When Microsoft Edge determines that a website is an installable Progressive Web App (PWA), the **App available** icon (![The "App available" icon.](media/app-available-icon.png)) appears in the address bar.
+When Microsoft Edge determines that a website is an installable Progressive Web App (PWA), the **App available** (![The "App available" icon.](media/app-available-icon.png)) icon appears in the address bar.
 
-1.  Select the **App available** icon to install the PWA.
+1.  Click the **App available** (![The "App available" icon.](media/app-available-icon.png)) icon to install the PWA.
 
     <!-- reduced = resized 67%: -->
     :::image type="content" source="./media/edge-app-install-flyout-reduced.png" alt-text="The installation prompt in Microsoft Edge." lightbox="./media/edge-app-install-flyout.png":::
 
-1.  Select **Install** to complete the installation and run the PWA in Windows.
+1.  Click **Install** to complete the installation and run the PWA in Windows.
 
-Many PWAs are also present on the Microsoft Store, and can be installed directly from there without even opening Microsoft Edge.
+Many PWAs are also present on the Microsoft Store, and can be installed directly from there, without needing to open Microsoft Edge.
 
 To install a PWA from the Microsoft Store, select **Get** on the app page:
 
@@ -36,7 +36,7 @@ To install a PWA from the Microsoft Store, select **Get** on the app page:
 <!-- ====================================================================== -->
 ## Managing PWAs
 
-To find the list of installed Progressive Web Apps (PWAs) in Microsoft Edge, go to `edge://apps`.  On this page, you can select any app to launch it.  To uninstall an app, select the **Delete** (![Uninstall app.](./media/uninstall-app-button.png)) icon.
+To find the list of installed Progressive Web Apps (PWAs) in Microsoft Edge, go to `edge://apps`.  On this page, you can open any app by clicking **Open**.  To learn more about an app or uninstall it, click **Details**.
 
 <!-- reduced = resized 80%: -->
 :::image type="content" source="./media/edge-apps-listing-reduced.png" alt-text="The list of installed apps in edge://apps." lightbox="./media/edge-apps-listing.png":::
@@ -77,16 +77,16 @@ PWAs can also display notifications in the operating system's own notification s
 
 ### Starting PWAs when the user signs in
 
-PWAs can launch automatically when the user signs in on Windows, so the user can immediately engage with the app.
+PWAs on Windows can launch automatically when the user signs in, so they can immediately engage with the app.
 
 To set an already installed PWA to automatically start when you sign in to Windows:
 
 1.  Open Microsoft Edge.
 1.  Go to `edge://apps`.  The **Apps** page lists the installed apps.
-1.  Right-click an app, and then select **Start app when you sign in**:
+1.  On the app you want to configure, click the **More options** (![The More options button.](./media/edge-apps-more-options.png)) button and then select **Auto-start on device login**.
 
-    <!-- reduced = resized 80%: -->
-    :::image type="content" source="./media/turn-on-run-on-os-login-flag-reduced.png" alt-text="Use the context menu to turn on the 'Start app when you sign in' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
+<!-- reduced = resized 80%: -->
+:::image type="content" source="./media/turn-on-run-on-os-login-flag-reduced.png" alt-text="Use the More Options menu to turn on the 'Auto-start on device login' feature in Microsoft Edge." lightbox="./media/turn-on-run-on-os-login-flag.png":::
 
 During installing a PWA, users are also given a chance to set a PWA to automatically start.
 

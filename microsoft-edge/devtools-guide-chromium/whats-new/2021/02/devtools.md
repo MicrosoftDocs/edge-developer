@@ -35,7 +35,7 @@ ms.localizationpriority: high
 
 Focus Mode is an experimental interface that allows you to group different tools together based on your own debugging scenarios.  The new **Activity Bar** displayed on the left includes predefined tool groups such as **Layout** and **Debugging**.  To customize each tool group, close tools with the **Close** (`X`) icon or add new tools with the **More tools** (`+`) icon.
 
-To turn on the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md).
+To turn on the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md).
 
 :::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="Display the Activity Bar" lightbox="../../media/2021/02/focus-mode.msft.png":::
    Display the **Activity Bar**
@@ -48,7 +48,7 @@ To turn on the experiment, navigate to [Turning on experimental features](../../
 <!-- Title: DevTools Tooltips  -->
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes.  Choose the Help (`?`) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md).
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Choose the Help (`?`) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md).
 
 :::image type="complex" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Choose the Help (?) icon in the Activity Bar to display tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
    Choose the Help (`?`) icon in the **Activity Bar** to display tooltips
@@ -291,7 +291,7 @@ After you turn on this experiment and reload the DevTools, choose one of the fol
 *   To display the full accessibility tree view , choose the **Switch to Accessibility Tree view**.
 *   To display the DOM tree view, choose the **Switch to DOM Tree view**.
 
-To turn on the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173](https://crbug.com/887173).
+To turn on the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173](https://crbug.com/887173).
 
 :::row:::
    :::column span="":::

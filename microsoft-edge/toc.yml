@@ -323,6 +323,12 @@
       items:
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
+        - name: What's new
+          items:
+            - name: Microsoft Edge Add-ons released features
+              href: extensions-chromium/whats-new/released-features.md
+            - name: Microsoft Edge Add-ons roadmap
+              href: extensions-chromium/whats-new/roadmap.md
         - name: Getting started
           items:
             - name: Extension architecture
@@ -589,3 +595,4 @@
       href: privacy-whitepaper/index.md
     - name: The Web We Want initiative
       href: web-we-want/index.md
+ 
