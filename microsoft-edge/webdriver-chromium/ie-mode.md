@@ -36,11 +36,9 @@ The following sections walk you through using Selenium to automate IE mode in Mi
 
 To launch Microsoft Edge in IE mode with IEDriver:
 
-1.  Create an `InternetExplorerDriverService`.
+1.  Define `InternetExplorerOptions` with additional properties that point to the Microsoft Edge browser.
 
-1.  Define `InternetExplorerOptions` with additional capabilities that point to the Microsoft Edge browser.
-
-1.  Start an instance of `InternetExplorerDriver` and pass it `InternetExplorerDriverService` and `InternetExplorerOptions`.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
+1.  Start an instance of `InternetExplorerDriver` and pass it `InternetExplorerOptions`.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
 
 The next section shows the complete sample, and then the subsequent sections focus on each of the main steps that are listed above.
 
@@ -63,18 +61,12 @@ namespace Selenium_Web
     {
         static void Main(string[] args)
         {
-            //change the path accordingly
-            var dir = @"C:\<path to IEDriver download>";
-            var driverexe = "IEDriverServer.exe";
-
-            var ieService = 
-                 InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
             var ieOptions = new InternetExplorerOptions();
             ieOptions.AttachToEdgeChrome = true;
             //change the path accordingly
             ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
 
-            InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptions);
+            InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieOptions);
             reqDriver.Url = "https://bing.com";
             reqDriver.FindElement(By.Id("sb_form_q")).SendKeys("WebDriver");
             reqDriver.FindElement(By.Id("sb_form")).Submit();
@@ -90,16 +82,14 @@ namespace Selenium_Web
 
 ```python
 from selenium import webdriver
-from selenium.webdriver.ie.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-ieService = Service('C:/<path to IEDriver download>')
 ieOptions = webdriver.IeOptions()
 ieOptions.attach_to_edge_chrome = True
 ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 
-browser = webdriver.Ie(options=ieOptions, service=ieService)
+browser = webdriver.Ie(options=ieOptions)
 
 browser.get("http://www.bing.com")
 elem = browser.find_element(By.ID, 'sb_form_q')
@@ -121,9 +111,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 
 public class IEDriverSample {
-    public static void main(String[] args) {
-        System.setProperty("webdriver.ie.driver","C:/<path to IEDriver download>");
-        
+    public static void main(String[] args) {        
         InternetExplorerOptions ieOptions = new InternetExplorerOptions();
         ieOptions.attachToEdgeChrome();
         ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
@@ -145,10 +133,9 @@ public class IEDriverSample {
 
 ```javascript
 const {Builder, By, Key, until} = require('selenium-webdriver');
-const {Options, ServiceBuilder} = require('selenium-webdriver/ie');
+const {Options} = require('selenium-webdriver/ie');
 
 (async function IEDriverSample() {
-  let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
   let ieOptions = await new Options()
   await ieOptions.setEdgeChromium(true)
   await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
@@ -156,7 +143,6 @@ const {Options, ServiceBuilder} = require('selenium-webdriver/ie');
   let driver = await new Builder().
                          forBrowser('ie').
                          setIeOptions(ieOptions).
-                         setIeService(ieService).
                          build();
   try {
     await driver.get('http://www.bing.com');
@@ -172,63 +158,10 @@ const {Options, ServiceBuilder} = require('selenium-webdriver/ie');
 
 The following sections explain the steps in this sample in more detail.
 
-
-<!-- ====================================================================== -->
-## Create an InternetExplorerDriverService
-
-> [!NOTE]
-> You can skip this step if you add the path to the IEDriver executable you downloaded to the `Path` environment variable.  For instructions on how to edit the `Path` environment variable, navigate to [How to Change the PATH Environment Variable on Windows](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows).  You can resume following the instructions in the next step: [Define InternetExplorerOptions with additional properties for Microsoft Edge](#define-internetexploreroptions-with-additional-properties-for-microsoft-edge).
-
-First, create an `InternetExplorerDriverService`.  
-
-### [C#](#tab/c-sharp/)
-
-To create an `InternetExplorerDriverService`, use the `CreateDefaultService` method.  Pass in the following parameters:
-
-*  `dir`, which is the directory where you downloaded IEDriver to.
-*  `driverexe`, which is the name of the IEDriver executable.
-
-```csharp
-//change the path accordingly
-var dir = @"C:\<path to IEDriver download>";
-var driverexe = "IEDriverServer.exe";
-
-var ieService = InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
-```
-
-### [Python](#tab/python/)
-
-Define `ieService` by calling `Service` from `selenium.webdriver.ie.service` with the path to the IEDriver executable you downloaded.
-
-```python
-from selenium.webdriver.ie.service import Service
-
-ieService = Service('C:/<path to IEDriver download>')
-```
-
-### [Java](#tab/java/)
-
-For Java, you don't need to create an `InternetExplorerDriverService`. You do need to specify the path to the IEDriver executable you downloaded.
-
-```java
-System.setProperty("webdriver.ie.driver","C:/<path to IEDriver download>");
-```
-
-### [JavaScript](#tab/javascript/)
-
-Define `ieService` by calling `ServiceBuilder` and passing it the path to the IEDriver executable you downloaded.
-
-```javascript
-let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
-```
-
-* * *
-
-
 <!-- ====================================================================== -->
 ## Define InternetExplorerOptions with additional properties for Microsoft Edge
 
-Next, define `InternetExplorerOptions` with additional capabilities that point to the Microsoft Edge browser.
+Define `InternetExplorerOptions` with additional properties that point to the Microsoft Edge browser.
 
 ### [C#](#tab/c-sharp/)
 
@@ -287,22 +220,22 @@ await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/m
 <!-- ====================================================================== -->
 ## Start InternetExplorerDriver
 
-Finally, start IEDriver.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
+Start IEDriver.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
 
 ### [C#](#tab/c-sharp/)
 
-Start `InternetExplorerDriver` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start `InternetExplorerDriver` and pass it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```csharp
-InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptions);
+InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieOptions);
 ```
 
 ### [Python](#tab/python/)
 
-Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```python
-browser = webdriver.Ie(options=ieOptions, service=ieService)
+browser = webdriver.Ie(options=ieOptions)
 ```
 
 ### [Java](#tab/java/)
@@ -315,13 +248,12 @@ WebDriver driver = new InternetExplorerDriver(ieOptions);
 
 ### [JavaScript](#tab/javascript)
 
-Start IEDriver by calling `Builder.forBrowser('ie')`, `setIeoptions(ieOptions)`, and `setIeService(ieService)`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start IEDriver by calling `Builder.forBrowser('ie')` and `setIeoptions(ieOptions)`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```javascript
 let driver = await new Builder().
                        forBrowser('ie').
                        setIeOptions(ieOptions).
-                       setIeService(ieService).
                        build();
 ```
 
