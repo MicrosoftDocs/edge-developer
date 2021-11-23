@@ -323,10 +323,12 @@
       items:
         - name: Overview of Microsoft Edge extensions
           href: extensions-chromium/index.md
-        - name: Microsoft Edge Add-ons released features
-          href: extensions-chromium/released-features.md
-        - name: Microsoft Edge Add-ons roadmap
-          href: extensions-chromium/roadmap.md
+        - name: What's new
+          items:
+            - name: Microsoft Edge Add-ons released features
+              href: extensions-chromium/released-features.md
+            - name: Microsoft Edge Add-ons roadmap
+              href: extensions-chromium/roadmap.md
         - name: Getting started
           items:
             - name: Extension architecture
