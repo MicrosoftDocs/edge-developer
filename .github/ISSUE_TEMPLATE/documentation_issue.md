@@ -1,5 +1,5 @@
 ---
-name: Documentation issue
+name: Documentation issues
 about: Report issues with the Microsoft Edge documentation content.
 title: ''
 labels: ''
