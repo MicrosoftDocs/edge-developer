@@ -83,13 +83,9 @@ If you're using Selenium 3, use the following steps to add the [Selenium Tools f
 
 #### [C#](#tab/c-sharp/)
 
-<a id="selenium-tools-install"></a>
-
 Add the [Microsoft.Edge.SeleniumTools](https://www.nuget.org/packages/Microsoft.Edge.SeleniumTools) and [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver/3.141.0) packages to your .NET project using the [NuGet CLI](https://www.nuget.org/packages/NuGet.CommandLine/) or [Visual Studio](https://visualstudio.microsoft.com/).
 
 #### [Python](#tab/python/)
-
-<a id="selenium-tools-install"></a>
 
 Use [pip](https://pypi.org/project/pip/) to install the [msedge-selenium-tools](https://pypi.org/project/msedge-selenium-tools/) and [selenium](https://pypi.org/project/selenium/) packages.
 
@@ -98,8 +94,6 @@ pip install msedge-selenium-tools selenium==3.141
 ```
 
 #### [Java](#tab/java/)
-
-<a id="selenium-tools-install"></a>
 
 If your Java project uses Maven, copy and paste the following dependency to your `pom.xml` file to add [msedge-selenium-tools-java](https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java/3.141.0/jar).
 
@@ -114,8 +108,6 @@ If your Java project uses Maven, copy and paste the following dependency to your
 The Java package is also available to download directly on the [Selenium Tools for Microsoft Edge Releases page](https://github.com/microsoft/edge-selenium-tools/releases).
 
 #### [JavaScript](#tab/javascript/)
-
-<a id="selenium-tools-install"></a>
 
 Use [npm](https://www.npmjs.com/) to install the [edge-selenium-tools](https://www.npmjs.com/package/@microsoft/edge-selenium-tools) and [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver) packages.
 
@@ -142,8 +134,6 @@ Selenium uses the `EdgeDriver` class to manage a Microsoft Edge session.  To sta
 
 #### [C#](#tab/c-sharp/)
 
-<a id="drive-microsoft-edge-chromium-code"></a>
-
 ```csharp
 var options = new EdgeOptions();
 options.UseChromium = true;
@@ -152,8 +142,6 @@ var driver = new EdgeDriver(options);
 ```
 
 #### [Python](#tab/python/)
-
-<a id="drive-microsoft-edge-chromium-code"></a>
 
 ```python
 options = EdgeOptions()
@@ -164,8 +152,6 @@ driver = Edge(options = options)
 
 #### [Java](#tab/java/)
 
-<a id="drive-microsoft-edge-chromium-code"></a>
-
 The `EdgeDriver` class only supports Microsoft Edge (Chromium), and doesn't support Microsoft Edge (EdgeHTML).  For basic usage, you can create an `EdgeDriver` without providing `EdgeOptions`.
 
 ```java
@@ -173,8 +159,6 @@ EdgeDriver driver = new EdgeDriver();
 ```
 
 #### [JavaScript](#tab/javascript/)
-
-<a id="drive-microsoft-edge-chromium-code"></a>
 
 ```javascript
 let options = new edge.Options();
@@ -194,8 +178,6 @@ You can start a WebDriver session with specific Microsoft Edge binaries.  For ex
 
 #### [C#](#tab/c-sharp/)
 
-<a id="choose-specific-browser-binaries-chrome-only-code"></a>
-
 ```csharp
 var options = new EdgeOptions();
 options.UseChromium = true;
@@ -205,8 +187,6 @@ var driver = new EdgeDriver(options);
 ```
 
 #### [Python](#tab/python/)
-
-<a id="choose-specific-browser-binaries-chrome-only-code"></a>
 
 ```python
 options = EdgeOptions()
@@ -218,8 +198,6 @@ driver = Edge(options = options)
 
 #### [Java](#tab/java/)
 
-<a id="choose-specific-browser-binaries-chrome-only-code"></a>
-
 ```java
 EdgeOptions options = new EdgeOptions();
 options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge Beta\\Application\\msedge.exe");
@@ -228,8 +206,6 @@ EdgeDriver driver = new EdgeDriver(options);
 ```
 
 #### [JavaScript](#tab/javascript/)
-
-<a id="choose-specific-browser-binaries-chrome-only-code"></a>
 
 ```javascript
 let options = new edge.Options();
@@ -244,8 +220,6 @@ let driver = edge.Driver.createSession(options);
 ### Customize the Microsoft Edge Driver Service
 
 #### [C#](#tab/c-sharp/)
-
-<a id="customize-microsoft-edge-driver-services-code"></a>
 
 When you use the `EdgeOptions` class to create an `EdgeDriver` class instance, it creates and launches the appropriate `EdgeDriverService` class for either legacy EdgeHTML or Microsoft Edge (Chromium).
 
@@ -266,8 +240,6 @@ using (var service = EdgeDriverService.CreateChromiumService())
 
 #### [Python](#tab/python/)
 
-<a id="customize-microsoft-edge-driver-services-code"></a>
-
 When you use Python, the `Edge` object creates and manages the `EdgeService`.  To configure the `EdgeService`, pass extra arguments to the `Edge` object as shown in the following code:
 
 ```python
@@ -276,8 +248,6 @@ driver = Edge(service_args = service_args)
 ```
 
 #### [Java](#tab/java/)
-
-<a id="customize-microsoft-edge-driver-services-code"></a>
 
 Use the `createDefaultService()` method to create an `EdgeDriverService` configured for Microsoft Edge.  Use Java system properties to customize driver services in Java.  For example, the following code uses the `"webdriver.edge.verboseLogging"` property to turn on verbose log output:
 
@@ -289,8 +259,6 @@ EdgeDriver driver = new EdgeDriver(service, options);
 ```
 
 #### [JavaScript](#tab/javascript/)
-
-<a id="customize-microsoft-edge-driver-services-code"></a>
 
 When you use JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  Optionally, you can pass the `Service` object to the `Driver` object, which starts (and stops) the service for you.  To configure the `Service`, run another method in the `ServiceBuilder` class before you use the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method:
 
@@ -307,8 +275,6 @@ If you set the `UseChromium` property to `true`, you can use the `EdgeOptions` c
 
 #### [C#](#tab/c-sharp/)
 
-<a id="use-chromium-specific-options-code"></a>
-
 ```csharp
 var options = new EdgeOptions();
 options.UseChromium = true;
@@ -317,8 +283,6 @@ options.AddArgument("disable-gpu");
 ```
 
 #### [Python](#tab/python/)
-
-<a id="use-chromium-specific-options-code"></a>
 
 ```python
 options = EdgeOptions()
@@ -329,8 +293,6 @@ options.add_argument("disable-gpu")
 
 #### [Java](#tab/java/)
 
-<a id="use-chromium-specific-options-code"></a>
-
 ```java
 EdgeOptions options = new EdgeOptions();
 options.addArguments("headless");
@@ -338,8 +300,6 @@ options.addArguments("disable-gpu");
 ```
 
 #### [JavaScript](#tab/javascript/)
-
-<a id="use-chromium-specific-options-code"></a>
 
 ```javascript
 let options = new edge.Options();
