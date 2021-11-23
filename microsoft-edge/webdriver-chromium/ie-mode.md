@@ -110,6 +110,37 @@ print('Done')
 browser.quit()
 ```
 
+### [Java](#tab/java/)
+
+```java
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+
+public class IEDriverSample {
+    public static void main(String[] args) {
+    	System.setProperty("webdriver.ie.driver","C:/<path to IEDriver download>");
+    	
+    	InternetExplorerOptions ieOptions = new InternetExplorerOptions();
+    	ieOptions.attachToEdgeChrome();
+    	ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+    	
+    	WebDriver driver = new InternetExplorerDriver(ieOptions);
+        String baseUrl = "http://www.bing.com";
+        
+        driver.get(baseUrl);
+        WebElement elem = driver.findElement(By.id("sb_form_q"));
+        elem.sendKeys("WebDriver", Keys.RETURN);
+
+        System.out.println("Done");
+        driver.close();
+    }
+}
+```
+
 ### [JavaScript](#tab/javascript/)
 
 ```javascript
@@ -136,10 +167,6 @@ const {Options, ServiceBuilder} = require('selenium-webdriver/ie');
   }
 })();
 ```
-
-### [Java](#tab/java/)
-
-<!-- TODO: insert java sample -->
 
 * * *
 
@@ -174,6 +201,14 @@ from selenium.webdriver.ie.service import Service
 ieService = Service('C:/<path to IEDriver download>')
 ```
 
+### [Java](#tab/java/)
+
+For Java, you do not need to create an InternetExplorerDriverService. You do need to specify the path to the IEDriver executable you downloaded.
+
+```java
+System.setProperty("webdriver.ie.driver","C:/<path to IEDriver download>");
+```
+
 ### [JavaScript](#tab/javascript/)
 
 Define `ieService` by calling `ServiceBuilder` and passing it the path to the IEDriver executable you downloaded.
@@ -181,10 +216,6 @@ Define `ieService` by calling `ServiceBuilder` and passing it the path to the IE
 ```javascript
 let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
 ```
-
-### [Java](#tab/java/)
-
-<!-- TODO: insert java sample -->
 
 * * *
 
@@ -217,6 +248,18 @@ ieOptions.attach_to_edge_chrome = True
 ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 ```
 
+### [Java](#tab/java/)
+
+1. Define a new variable `ieOptions` of type `InternetExplorerOptions`, by calling `new InternetExplorerOptions()`.
+
+1. Call `ieOptions.attachToEdgeChrome()` and `ieOptions.withEdgeExecutablePath()` with the path of the Microsoft Edge executable:
+
+```java
+InternetExplorerOptions ieOptions = new InternetExplorerOptions();
+ieOptions.attachToEdgeChrome();
+ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+```
+
 ### [JavaScript](#tab/javascript/)
 
 1. Define a new variable, `ieOptions`, by calling `Options()`.
@@ -228,10 +271,6 @@ let ieOptions = await new Options()
 await ieOptions.setEdgeChromium(true)
 await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
 ```
-
-### [Java](#tab/java/)
-
-<!-- TODO: insert java sample -->
 
 * * *
 
@@ -249,10 +288,18 @@ InternetExplorerDriver reqDriver = new InternetExplorerDriver(ieService, ieOptio
 
 ### [Python](#tab/python/)
 
-Finally, start IEDriver byy calling `webdriver.Ie` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Finally, start IEDriver by calling `webdriver.Ie` and pass it the previously defined `ieService` and `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```python
 browser = webdriver.Ie(options=ieOptions, service=ieService)
+```
+
+### [Java](#tab/java/)
+
+Finally, start IEDriver by calling `new InternetExplorerDriver()` and pass it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+
+```java
+WebDriver driver = new InternetExplorerDriver(ieOptions);
 ```
 
 ### [JavaScript](#tab/javascript)
@@ -266,10 +313,6 @@ let driver = await new Builder().
                        setIeService(ieService).
                        build();
 ```
-
-### [Java](#tab/java/)
-
-<!-- TODO: insert java sample -->
 
 * * *
 
@@ -301,6 +344,16 @@ browser.implicitly_wait(2.0)
 newHandles = browser.window_handles
 ```
 
+### [Java](#tab/java/)
+
+After the `click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `Thread.sleep(2000)` before getting new window handles with `driver.getWindowHandles()`.
+
+```java
+driver.findElement(By.id("<Id of the button that will open a new window>")).click();        
+Thread.sleep(2000);
+Set<String> newHandles=driver.getWindowHandles();
+```
+
 ### [JavaScript](#tab/javascript/)
 
 After the `click` method is called on a button that opens a new window, IEDriver must wait with `await driver.getAllWindowHandles()`.
@@ -309,10 +362,6 @@ After the `click` method is called on a button that opens a new window, IEDriver
 await driver.findElement(By.id("<Id of the button that will open a new window>")).click();
 let newHandles = await driver.getAllWindowHandles()
 ```
-
-### [Java](#tab/java/)
-
-<!-- TODO: insert java sample -->
 
 * * *
 
