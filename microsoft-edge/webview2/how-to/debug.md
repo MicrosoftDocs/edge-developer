@@ -15,6 +15,7 @@ The goal of the Microsoft Edge WebView2 control is to combine the best of both t
 
 
 <!-- ====================================================================== -->
+
 ## [Microsoft Edge DevTools](#tab/devtools)
 
 Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
@@ -31,6 +32,7 @@ For more information, navigate to [DevTools overview](../index.md).
 
 
 <!-- ====================================================================== -->
+
 ## [Visual Studio](#tab/visualstudio)
 
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
@@ -99,6 +101,7 @@ Complete the following actions to debug your WebView2 app.
 
 
 <!-- ====================================================================== -->
+
 ## [Visual Studio Code](#tab/visualstudiocode)
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->
