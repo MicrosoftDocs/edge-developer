@@ -1,24 +1,24 @@
 ---
-description: A list of sample apps you can use to learn more about how to build Programmable Web Apps (PWAs).
+description: Sample apps that show how to build Progressive Web Apps (PWAs).
 title: Sample PWAs
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/28/2021
+ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, demos, samples
 ---
 # Sample PWAs
 
-Use this list of sample apps to learn more about how to use PWA features and APIs.
+Use this list of sample apps to learn more about how to use features and APIs for Progressive Web Apps (PWAs).
 
 
 <!-- ====================================================================== -->
 ## Webboard
 
-Intelligent whiteboarding app.
+An intelligent whiteboarding app.
 
-[App](https://webboard.app/), [source code](https://github.com/pwa-builder/web-whiteboard).
+[App](https://webboard.app/), [source code and Readme file](https://github.com/pwa-builder/web-whiteboard).
 
 Features:
 
@@ -32,9 +32,9 @@ Features:
 <!-- ====================================================================== -->
 ## DevTools Tips
 
-List of tips and tricks for DevTools.
+Displays a list of tips and tricks for DevTools.
 
-[App](https://devtoolstips.org), [source code](https://github.com/captainbrosset/devtools-tips).
+[App](https://devtoolstips.org), [source code and Readme file](https://github.com/captainbrosset/devtools-tips).
 
 Features:
 
@@ -50,9 +50,9 @@ Features:
 <!-- ====================================================================== -->
 ## My Tracks
 
-GPS tracks visualization app.
+A GPS tracks visualization app.
 
-[App](https://captainbrosset.github.io/mytracks/), [source code](https://github.com/captainbrosset/mytracks).
+[App](https://captainbrosset.github.io/mytracks/), [source code and Readme file](https://github.com/captainbrosset/mytracks).
 
 Features:
 
@@ -78,11 +78,13 @@ Features:
 
 :::image type="content" source="./media/my-movies.png" alt-text="The My Movies app." lightbox="./media/my-movies.png":::
 
+
+<!-- ====================================================================== -->
 ## BPM Techno
 
 A real-time BPM counter.
 
-[App](https://bpmtech.no/), [source code](https://github.com/webmaxru/bpm-counter).
+[App](https://bpmtech.no/), [source code and Readme file](https://github.com/webmaxru/bpm-counter).
 
 Features:
 
@@ -93,3 +95,17 @@ Features:
 *  [Share Target](./how-to/share.md#receiving-shared-content)
 
 :::image type="content" source="./media/bpm-techno.png" alt-text="The BPM Techno app." lightbox="./media/bpm-techno.png":::
+
+
+<!-- ====================================================================== -->
+## 1DIV
+
+A CSS playground.
+
+[App](https://microsoftedge.github.io/Demos/1DIV/dist/), [source code and Readme file](https://github.com/MicrosoftEdge/Demos/tree/main/1DIV).
+
+Features:
+
+*  [Window Controls Overlay](./how-to/window-controls-overlay.md)
+
+:::image type="content" source="./media/1div-demo.png" alt-text="The 1DIV app." lightbox="./media/1div-demo.png":::
