@@ -62,7 +62,9 @@ Is the Detached Elements experiment checkbox intended to be turned on by default
 <!-- ====================================================================== -->
 ## Turning an experiment on or off
 
-To turn experimental features on or off in Microsoft Edge:
+Experimental features are constantly being updated and might cause performance issues.  This is one reason you might want to turn off an experiment.
+
+To turn an experiment on or off in Microsoft Edge:
 
 1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
@@ -72,20 +74,15 @@ To turn experimental features on or off in Microsoft Edge:
 
     :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings" lightbox="../media/experiments-devtools.msft.png":::
 
-1.  On the **Experiments** page, scroll through the list of all available experimental features. Click an empty checkbox to select each feature that you want to test. Some experiments are turned on by default.
+1.  On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1.  Click a selected checkbox to turn off any feature you do not want to test.
-
-1.  Click the **X** in the upper right to close **Settings**.
+1.  Click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
 1.  Click the **Reload DevTools** button.
 
-> [!NOTE]
-> Experimental features are constantly being updated and might cause performance issues. To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.
-
 
 <!-- ====================================================================== -->
-## Restoring defaults for which experiments are turned on
+## Restoring defaults for which experiments are selected
 
 To restore the default settings for which experimental features are turned on:
 
