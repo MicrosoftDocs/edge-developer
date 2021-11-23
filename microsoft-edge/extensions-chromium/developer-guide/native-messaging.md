@@ -173,8 +173,6 @@ The final step involves copying the native messaging host manifest file to your 
 
 ### [Windows](#tab/windows/)
 
-<a id="copy-manifest-file"></a>
-
 The manifest file may be located anywhere in the file system.  The app installer must create a registry key and set the default value of the key to the full path of the manifest file.  The following locations are examples of registry keys.
 
 ```output
@@ -230,8 +228,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 
 ### [macOS](#tab/macos/)
 
-<a id="copy-manifest-file"></a>
-
 To store the manifest file, complete one of the following actions.
 
 *   System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the manifest file must be stored in following location.
@@ -255,8 +251,6 @@ To store the manifest file, complete one of the following actions.
     When using the Stable channel, ` {Channel_Name}` isn't required.
 
 ### [Linux](#tab/linux/)
-
-<a id="copy-manifest-file"></a>
 
 To store the manifest file, complete one of the following actions.
 
