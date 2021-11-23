@@ -73,7 +73,7 @@ DevTools now supports moving tools between the top and bottom panels.  Customize
    Experimental feature
 :::image-end:::
 
-The **Network Console** tool now has improved compatibility with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.  To enable the experiment, navigate to [Turning on Experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable Network Console**.  For more information about the **Network Console**, navigate to [Enable Network Console Experimental feature](../../../experimental-features/index.md#enable-network-console).  This experiment now supports the following actions.
+The **Network Console** tool now has improved compatibility with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.  To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable Network Console**.  For more information about the **Network Console**, navigate to [Enable Network Console Experimental feature](../../../experimental-features/index.md#enable-network-console).  This experiment now supports the following actions.
 
 *   Save and export Collections and Environments.
 *   Edit and export sets of environment variables within the **Network Console** tool.
@@ -124,7 +124,7 @@ The features are turned on by default.  For more information about the features,
 
 You are now able to customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you are able to choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts](../../../customize/shortcuts.md).  Starting in Microsoft Edge version 87, you can turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
 
-To enable the experiment, navigate to [Turning on Experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#174309](https://crbug.com/174309).
+To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, navigate to [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#174309](https://crbug.com/174309).
 
 :::image type="complex" source="../../media/2020/10/custom-shortcut-pause-script.msft.png" alt-text="Custom shortcut for pausing a script" lightbox="../../media/2020/10/custom-shortcut-pause-script.msft.png":::
    Custom shortcut for pausing a script

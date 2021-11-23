@@ -61,7 +61,7 @@ To help enhance your website or app for the dual-screen and foldable devices, us
    Device emulation for Surface Duo
 :::image-end:::
 
-To turn on this experimental feature, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Emulation: Support dual screen mode**.
+To turn on this experimental feature, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Emulation: Support dual screen mode**.
 
 For more information about this feature, navigate to [Emulate dual-screen and foldable devices in Microsoft Edge DevTools](../../../device-mode/dual-screen-and-foldables.md).
 
@@ -80,7 +80,7 @@ Thank you for the positive feedback about the improved CSS grid overlays.  The C
 
 The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.
 
-To turn on this experimental feature, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.
+To turn on this experimental feature, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.
 
 For more information about this feature, navigate to [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
 
@@ -134,7 +134,7 @@ The new accessibility helper displays the order of elements in the source.
 
 This feature makes it easier to test the way screen reader and keyboard users experience your website or app.  Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.  The Source Order Viewer displays potential differences in order between the rendered page and the source code.
 
-To turn on this experimental feature, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable Source Order Viewer**.
+To turn on this experimental feature, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable Source Order Viewer**.
 
 For more information about this experiment, navigate to [Source Order Viewer](../../../experimental-features/index.md#source-order-viewer).
 
