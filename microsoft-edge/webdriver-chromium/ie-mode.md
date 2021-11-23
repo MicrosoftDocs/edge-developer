@@ -69,7 +69,7 @@ namespace Selenium_Web
 
             var ieService = 
                  InternetExplorerDriverService.CreateDefaultService(dir, driverexe);
-            var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
+            var ieOptions = new InternetExplorerOptions();
             ieOptions.AttachToEdgeChrome = true;
             //change the path accordingly
             ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
@@ -225,12 +225,12 @@ let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
 
 ### [C#](#tab/c-sharp/)
 
-1. Define a new variable, `ieOptions`, by instantiating `InternetExplorerOptions` with the `IgnoreZoomLevel` property set to `true`.
+1. Define a new variable, `ieOptions`, by calling `InternetExplorerOptions()`.
 
 1. Set `ieOptions.AttachToEdgeChrome` property to `true`, and `ieOptions.EdgeExecutablePath` to the path of the Microsoft Edge executable:
 
 ```csharp
-var ieOptions = new InternetExplorerOptions { IgnoreZoomLevel = true };
+var ieOptions = new InternetExplorerOptions();
 ieOptions.AttachToEdgeChrome = true;
 //change the path accordingly
 ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
