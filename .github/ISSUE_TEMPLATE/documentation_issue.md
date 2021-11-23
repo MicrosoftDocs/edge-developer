@@ -1,6 +1,6 @@
 ---
 name: Documentation issues
-about: Report issues with the Microsoft Edge documentation content.
+about: Report issues with the Microsoft Edge documentation.
 title: ''
 labels: ''
 assignees: ''

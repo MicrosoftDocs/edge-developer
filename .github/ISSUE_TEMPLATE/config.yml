@@ -5,4 +5,4 @@ contact_links:
     about: To submit feature requests or bug reports about Microsoft Edge DevTools, contact the DevTools team.
   - name: WebView2 issues
     url: https://github.com/MicrosoftEdge/WebView2Feedback/issues
-    about: Use the WebView2Feedback repository to submit feature suggestions or bugs about WebView2, or to search for known issues. The WebView2Feedback repository is a place for developers to share tips and best practices, report feedback, or search existing issues for WebView2.
+    about: Use the WebView2Feedback repository to report feedback, submit feature suggestions or bugs about WebView2, search for existing known issues for WebView2, or share tips and best practices.
