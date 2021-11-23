@@ -176,7 +176,10 @@ The following sections explain the steps in this sample in more detail.
 <!-- ====================================================================== -->
 ## Create an InternetExplorerDriverService
 
-First, create an `InternetExplorerDriverService`.
+> [!NOTE]
+> You can skip this step if you add the path to the IEDriver executable you downloaded to the `Path` environment variable.  For instructions on how to edit the `Path` environment variable, navigate to [How to Change the PATH Environment Variable on Windows](https://www.wikihow.com/Change-the-PATH-Environment-Variable-on-Windows).  You can resume following the instructions in the next step: [Define InternetExplorerOptions with additional properties for Microsoft Edge](#define-internetexploreroptions-with-additional-properties-for-microsoft-edge).
+
+First, create an `InternetExplorerDriverService`.  
 
 ### [C#](#tab/c-sharp/)
 
@@ -223,7 +226,7 @@ let ieService = await new ServiceBuilder('C:/<path to IEDriver download>')
 
 
 <!-- ====================================================================== -->
-## Define InternetExplorerOptions with additional capabilities for Microsoft Edge
+## Define InternetExplorerOptions with additional properties for Microsoft Edge
 
 Next, define `InternetExplorerOptions` with additional capabilities that point to the Microsoft Edge browser.
 
@@ -375,6 +378,19 @@ let newHandles = await driver.getAllWindowHandles()
 ```
 
 * * *
+
+<!--
+Todo: incorporate feedback about this requirement into this section. We need to verify this feedback with the engineering team because we were able to get a sample that was broken working with these changes.
+
+"This isn't a requirement. We do the waiting internally. The limitation is that if multiple windows are opened at nearly the same time, then our wait logic we added to the "new window" command might not be able to accurately detect which window is the one you opened.
+
+Some potential workarounds are:
+
+- Space out your new window commands and avoid page-initiated popups etc so the driver doesn't get confused.
+- Set the page load strategy to "none" and poll the window handles yourself since you (i.e. the developer) should hopefully know better than IEDriver which window is the one you are looking for.
+
+So the workarounds look a lot like what you've described here. I would just reframe it a bit that you don't need to resort to these workarounds unless your existing test code is having trouble with new window commands."
+-->
 
 Additionally, in IE mode, IEDriver can only interact with the active tab in Microsoft Edge. In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE. When automating multiple tabs in IE mode, you must manage the active tab in your test code.
 
