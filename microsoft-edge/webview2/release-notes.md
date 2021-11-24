@@ -32,6 +32,159 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to
 
 
 <!-- ====================================================================== -->
+## 1.0.1054.31
+  
+Release Date: November 29, 2021  
+  
+[NuGet package for WebView2 SDK 1.0.1054.31](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1054.31)  
+  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 96.1054.31 or higher.  
+
+### General
+*   General reliability fix.  
+
+#### Bug Fixes
+  
+*   Turn off Control-flow Enforcement Technology (CET) Shadow Stack feature for 96 WebView2 Runtime.  
+*   Fixed an issue that was causing slow startup times when launching in a .NET single-file application.  
+*   Fixed a crash caused by Microsoft Edge browser policies getting incorrectly applied to WebView2 as well.  
+*   Fixed a crash that occurred when a popup window with a download dialog was closed.  
+
+#### Promotions
+  
+ICoreWebView2_7 
+(ADDED)
+    PrintToPdf
+    CreatePrintSettings
+ICoreWebView2PrintToPdfCompletedHandler 
+(ADDED)
+ICoreWebView2PrintSettings 
+(ADDED)
+    get_Orientation
+    put_Orientation
+    get_ScaleFactor
+    put_ScaleFactor
+    get_PageWidth
+    put_PageWidth
+    get_PageHeight
+    put_PageHeight
+    get_MarginTop
+    put_MarginTop
+    get_MarginBottom
+    put_MarginBottom
+    get_MarginLeft
+    put_MarginLeft
+    get_MarginRight
+    put_MarginRight
+    get_ShouldPrintBackgrounds
+    put_ShouldPrintBackgrounds
+    get_ShouldPrintSelectionOnly
+    put_ShouldPrintSelectionOnly
+    get_ShouldPrintHeaderAndFooter
+    put_ShouldPrintHeaderAndFooter
+    get_HeaderTitle
+    put_HeaderTitle
+    get_FooterUri
+    put_FooterUri
+    get_UserDataFolder
+
+<!-- ====================================================================== -->
+## 1.0.1083-prerelease
+  
+Release Date: November 29, 2021  
+  
+[NuGet package for WebView2 SDK 1.0.1083](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1083-prerelease)  
+  
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 97.0.1083.0 or higher.  
+
+### General
+
+#### Experimental Features
+  
+ICoreWebView2ExperimentalFrame2
+(ADDED)
+    PostWebMessageAsJson
+    PostWebMessageAsString
+    add_WebMessageReceived
+    remove_WebMessageReceived
+ICoreWebView2ExperimentalFrameWebMessageReceivedEventHandler
+ (ADDED)
+ICoreWebView2ExperimentalProcessInfo 
+(ADDED)
+    get_ProcessId
+    get_Kind
+ICoreWebView2ExperimentalProcessInfoCollection 
+(ADDED)
+    get_Count
+    GetValueAtIndex
+ICoreWebView2ExperimentalProcessInfosChangedEventHandler 
+(ADDED)
+ICoreWebView2ExperimentalNavigationStartingEventArgs (ADDED)
+ICoreWebView2Experimental9 
+(REMOVED)
+    add_IsMutedChanged
+    remove_IsMutedChanged
+    get_IsMuted
+    put_IsMuted
+    add_IsDocumentPlayingAudioChanged
+    remove_IsDocumentPlayingAudioChanged
+    get_IsDocumentPlayingAudio
+    add_IsDefaultDownloadDialogOpenChanged
+    remove_IsDefaultDownloadDialogOpenChanged
+    get_IsDefaultDownloadDialogOpen
+    OpenDefaultDownloadDialog
+    CloseDefaultDownloadDialog
+    get_DefaultDownloadDialogCornerAlignment
+    put_DefaultDownloadDialogCornerAlignment
+    get_DefaultDownloadDialogMargin
+    put_DefaultDownloadDialogMargin
+ICoreWebView2ExperimentalIsDefaultDownloadDialogOpenChangedEventHandler
+ (REMOVED)
+ICoreWebView2ExperimentalIsDocumentPlayingAudioChangedEventHandler 
+(REMOVED)
+ICoreWebView2ExperimentalIsMutedChangedEventHandler (REMOVED)
+
+#### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:  
+
+ICoreWebView2_8 
+(ADDED)
+    add_IsMutedChanged
+    remove_IsMutedChanged
+    get_IsMuted
+    put_IsMuted
+    add_IsDocumentPlayingAudioChanged
+    remove_IsDocumentPlayingAudioChanged
+    get_IsDocumentPlayingAudio
+ICoreWebView2_9
+ 
+(ADDED)
+    add_IsDefaultDownloadDialogOpenChanged
+    remove_IsDefaultDownloadDialogOpenChanged
+    get_IsDefaultDownloadDialogOpen
+    OpenDefaultDownloadDialog
+    CloseDefaultDownloadDialog
+    get_DefaultDownloadDialogCornerAlignment
+    put_DefaultDownloadDialogCornerAlignment
+    get_DefaultDownloadDialogMargin
+    put_DefaultDownloadDialogMargin
+ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler
+ (ADDED)
+ICoreWebView2IsDocumentPlayingAudioChangedEventHandler (ADDED)
+ICoreWebView2IsMutedChangedEventHandler 
+(ADDED)
+
+#### Bug Fixes
+  
+*   Fixed focus issue after closing file picker dialog.  
+*   Fixed bug where WebView2 doesn't receive spatial input on initial launch  
+*   Fixes an issue that prevented single sign on in WebView2.  
+*   Resolved a bug where the download dialog was not moving with the window on WPF and WinForms.  
+*   Updates compatible command line check to prevent needing version check for optional switches.  
+*   Fixed an error that was causing "Microsoft Edge" branding to appear in the accessibility tree.  
+
+<!-- ====================================================================== -->
 ## 1.0.1056-prerelease
 
 Release Date: October 29, 2021
