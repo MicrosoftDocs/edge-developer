@@ -57,9 +57,9 @@ For icons, we recommend using:
 *   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
 *   Images that are 128 x 128 px, which are resized by the browser if necessary.
 
-The directories of your project should be similar to the following structure:
+The directories of your project should be similar to the following structure.
 
-```
+```shell
 └── part1
     ├── _manifest.json
     └── icons
@@ -69,7 +69,7 @@ The directories of your project should be similar to the following structure:
         └── nasapod128x128.png
 ```
 
-Next, add the icons to the `manifest.json` file. Update your `manifest.json` file with the icons information so that it matches the following code snippet. The `png` files listed in the following code are available in the download file mentioned earlier in this article:
+Next, add the icons to the `manifest.json` file. Update your `manifest.json` file with the icons information so that it matches the following code snippet. The `png` files listed in the following code are available in the download file mentioned earlier in this article.
 
 ```json
 {
@@ -108,9 +108,9 @@ Add the code from the following code snippet to `popup.html` to display the star
 </html>
 ```
 
-Make sure that you add the image file `images/stars.jpeg` to the `images` folder.  The directories of your project should be similar to the following structure:
+Ensure that you add the image file `images/stars.jpeg` to the images folder.  The directories of your project should be similar to the following structure.
 
-```
+```shell
 └── part1
     ├── _manifest.json
     ├── icons
