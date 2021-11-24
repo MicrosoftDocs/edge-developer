@@ -48,7 +48,7 @@ A PWA can be customized further by using other manifest members, such as the fol
 | `icons` | Array of icon image objects that are used by the OS in different contexts. |
 | `description` | What the app is about. |
 
-Below is a manifest file that uses the above manifest members:
+The following manifest file uses the above manifest members:
 
 ```json
 {
@@ -81,7 +81,9 @@ Using a manifest also enables you to unlock powerful features that allow your ap
 <!-- ====================================================================== -->
 ## Use shortcuts to provide quick access to features
 
-Most operating systems provide quick access to key app features by using shortcuts on the right-click menu that's connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.  The following code snippet shows how to define a shortcut in your web app manifest.
+Most operating systems provide quick access to key app features by using shortcuts on the right-click menu that's connected to the icon of the app.  To use shortcuts in your PWA, include the `shortcuts` property in your Web App Manifest.
+
+The following code shows how to define a shortcut in a web app manifest.
 
 ```json
 "shortcuts": [

@@ -84,7 +84,7 @@ To add an app manifest to the web app:
 
 1.  In Visual Studio Code, select **File** > **Open Folder** and then select the `MySamplePwa` directory that you created earlier.
 1.  Press `Ctrl`+`N` to create a new file.
-1.  Copy and paste the following code snippet into the new file:
+1.  Copy and paste the following code into the new file:
 
     ```json
     {
@@ -108,7 +108,7 @@ To add an app manifest to the web app:
 
 1.  Save the file as `/MySamplePwa/public/manifest.json`.
 1.  Add a 512x512 app icon image named `icon512.png` to `/MySamplePwa/public/images`.  You can use the [sample image](../media/progressive-web-app.png) for testing purposes.
-1.  In Visual Studio Code, open `/public/index.html`, and add the following code snippet inside the `<head>` tag.
+1.  In Visual Studio Code, open `/public/index.html`, and add the following code inside the `<head>` tag.
 
     ```html
     <link rel="manifest" href="/manifest.json">
@@ -136,7 +136,9 @@ To build a service worker in your project, use the **Cache-first network** servi
 
 1. Copy the source files [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js) and [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js) to the `public` folder in your web app project.
 
-1.  In Visual Studio Code, open `/public/index.html` and add the following code snippet inside the `<head>` tag.
+1.  In Visual Studio Code, open `/public/index.html`.
+
+1.  Inside the `<head>` tag, add the following code.
 
     ```html
     <script type="module" src="/pwabuilder-sw-register.js"></script>

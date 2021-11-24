@@ -52,7 +52,7 @@ function shareSomeContent(title, text, url) {
 }
 ```
 
-In the above code snippet, we first check if the browser supports Web sharing by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
+In the above code, we first check if the browser supports Web sharing by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
 
 Because a promise is used here, the above code can be rewritten as an `async` function, as follows:
 
@@ -90,7 +90,7 @@ function shareSomeFiles(files) {
   if (navigator.canShare && navigator.canShare({files})) {
     console.log('Sharing files is supported');
   } else {
-    console.error('Sharing files is not supported');
+    console.error("Sharing files isn't supported");
   }
 }
 ```
@@ -111,7 +111,7 @@ async function getImageFileFromURL(imageURL, title) {
 }
 ```
 
-In the above code snippet:
+In the above code:
 1. The `getImageFileFromURL` function fetches an image by using a URL.
 1. The `response.blob()` function converts the image into a binary large object (BLOB).
 1. The code creates a `File` object by using the BLOB.
@@ -244,7 +244,7 @@ self.addEventListener('fetch', event => {
 });
 ```
 
-In the above code snippet:
+In the above code:
 1. The service worker intercepts the `POST` request.
 1. Uses the data in some way (such as to store the content locally).
 1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or send the content to the server later when connectivity is restored (such as by using [Background Sync](./background-syncs.md)).

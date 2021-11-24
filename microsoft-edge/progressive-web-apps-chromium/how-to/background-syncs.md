@@ -1,6 +1,6 @@
 ---
 title: Synchronize and update a PWA in the background
-description: Learn how to do work in the background, when the app is not running, to synchronize content with the server, fetch new resources, or handle long duration downloads.
+description: Learn how to do work in the background, when the app isn't running, to synchronize content with the server, fetch new resources, or handle long duration downloads.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 09/14/2021
@@ -27,23 +27,25 @@ Although these APIs have similar names, they are different in nature.
 <!-- ====================================================================== -->
 ## Synchronize data with the server with the Background Sync API
 
-Allowing users to continue using the app and perform actions even when they are offline can be done with the Background Sync API. For example, an email app can let its users compose and send messages at any time. The app frontend can try to send the message right away, and if the device is offline the service worker can, in turn, catch the failed request and use the Background Sync API to defer the task until connected.
+Use the Background Sync API to allow users to continue using the app and perform actions even when they are offline.
+
+For example, an email app can let its users compose and send messages at any time.  The app frontend can try to send the message right away, and if the device is offline, the service worker can catch the failed request and use the Background Sync API to defer the task until connected.
 
 Another example for using the Background Sync API is loading content in the background for the user.
 
 > [!NOTE]
-> The Background Sync API should be used for small amounts of data. It requires the service worker to be alive for the entire duration of the data transfer. Because devices can decide to terminate service workers to preserve battery life, the API should not be used to fetch large files. Use the [Background Fetch API](#fetch-large-files-when-the-app-or-service-worker-are-not-running-with-the-background-fetch-api) instead.
+> The Background Sync API should be used for small amounts of data.   The Background Sync API requires the service worker to be alive for the entire duration of the data transfer.  The Background Sync API shouldn't be used to fetch large files, because devices can decide to terminate service workers, to preserve battery life.  Instead, use the [Background Fetch API](#fetch-large-files-when-the-app-or-service-worker-are-not-running-with-the-background-fetch-api).
 
 ### Check for support
 
-This API is available in Microsoft Edge, but you should make sure it is supported in the other browsers and devices your app runs in. This can be done by testing whether the `ServiceWorkerRegistration` object has a `sync` property:
+The Background Sync API is available in Microsoft Edge, but you should make sure that Background Sync API is supported in the other browsers and devices that your app runs in.  To make sure that the Background Sync API is supported, test whether the `ServiceWorkerRegistration` object has a `sync` property:
 
 ```javascript
 navigator.serviceWorker.ready.then(registration => {
     if (registration.sync) {
         // Background Sync is supported.
     } else {
-        // Background Sync is not supported.
+        // Background Sync isn't supported.
     }
 });
 ```
@@ -88,7 +90,7 @@ self.addEventListener('sync', event => {
 });
 ```
 
-In the example code above, a `sync` event listener is added in the service worker. When the listener is called, the code checks if the tag is the one registered in the frontend, and then calls `doTheWork`. This function is expected to return a promise.
+In the example code above, a `sync` event listener is added in the service worker. When the listener is called, the code checks if the tag is the one registered in the frontend, and then calls `doTheWork`. This function is expected to return a Promise.
 
 Typically, the `doTheWork` function will send the information to the server that couldn't be sent when the user was offline. It may be useful to store this information in [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) storage from the frontend so that it can later be retrieved from the service worker when `doTheWork` is executed.
 
@@ -100,7 +102,7 @@ For more information about the `Sync` event, the `ServiceWorkerRegistration`, an
 
 :::image type="content" source="../media/my-movie-list-pwa-demo.png" alt-text="My Movie List PWA demo app.":::
 
-To test the feature:
+To test background syncing:
 
 1.  Install the app.
 
@@ -127,24 +129,24 @@ For the sample code, go to the [source code on GitHub](https://github.com/captai
 
 ### Debug background syncs with DevTools
 
-You don't have to go offline, then online, and wait for Microsoft Edge to trigger a `sync` event to test your background sync code as DevTools lets you simulate this event.
+You don't have to go offline, then online, and wait for Microsoft Edge to trigger a `sync` event to test your background sync code, because DevTools lets you simulate this event.
 
 To simulate a `sync` event:
 
-*  Open DevTools (**F12**).
-*  Select **Application** > **Service Workers**.
-*  Type the tag name you used when registering the sync in the **Sync** input field.
-*  Select the **Sync** button.
+1. Open DevTools (**F12**).
+1. Select **Application** > **Service Workers**.
+1. Type the tag name you used when registering the sync in the **Sync** input field.
+1. Select the **Sync** button.
 
 :::image type="content" source="../media/devtools-simulate-background-sync.png" alt-text="Simulate a background sync in the Application panel.":::
 
-You can also log the background sync activity generated by your app in DevTools.
+You can also log the background sync activity generated by your app in DevTools, as follows:
 
-*  Open DevTools (**F12**).
-*  Select **Application** > **Background Sync**.
-*  Select **Start recording events**.
+1. Open DevTools (**F12**).
+1. Select **Application** > **Background Sync**.
+1. Select **Start recording events**.
 
-Sync registrations and dispatches appear in the event log table.
+Sync registrations and dispatches appear in the event log table:
 
 :::image type="content" source="../media/devtools-background-sync-log.png" alt-text="Log background sync events.":::
 
@@ -152,28 +154,30 @@ Sync registrations and dispatches appear in the event log table.
 <!-- ====================================================================== -->
 ## Regularly get fresh content with the Periodic Background Sync API
 
-The Periodic Background Sync API lets PWAs retrieve fresh content periodically, in the background, so users can immediately access it when they later open the app again. Using this API, PWAs don't have to download new content (like new articles) while the user is using the app, which could slow down the experience, and instead would retrieve it at a more convenient time.
+The Periodic Background Sync API lets PWAs retrieve fresh content periodically, in the background, so users can immediately access it when they later open the app again.
+
+Using the Periodic Background Sync API, PWAs don't have to download new content (such as new articles) while the user is using the app.  Downloading content could slow down the experience, so instead, retrieve the content at a more convenient time.
 
 > [!NOTE]
-> The periodic sync only occurs when the device is on a known network (i.e. one it has already been connected to before), and Microsoft Edge limits the frequency of the syncs to match how much the person uses the app.
+> The periodic sync only occurs when the device is on a known network (that is, the network that the device has already been connected to before).  Microsoft Edge limits the frequency of the syncs to match how often the person uses the app.
 
 ### Check for support
 
-To check if this API is supported in the browsers and devices your app runs in, test if the `ServiceWorkerRegistration` object has a `periodicSync` property:
+To check whether this API is supported in the browsers and devices that your app runs in, test whether the `ServiceWorkerRegistration` object has a `periodicSync` property:
 
 ```javascript
 navigator.serviceWorker.ready.then(registration => {
     if (registration.periodicSync) {
         // Periodic Background Sync is supported.
     } else {
-        // Periodic Background Sync is not supported.
+        // Periodic Background Sync isn't supported.
     }
 });
 ```
 
 ### Request the user permission
 
-Periodic background synchronizations require the user's permission. This will happen only once per application and is done using the Permissions API.
+Periodic background synchronizations require the user's permission. This happens only once per application, and is done by using the Permissions API.
 
 ```javascript
 const status = await navigator.permissions.query({name: 'periodic-background-sync'});
@@ -188,7 +192,7 @@ To learn more about the Permissions API, see the [Permissions API documentation]
 
 ### Register a periodic sync
 
-To register a periodic sync, you need to define a minimum interval and a unique tag name (so that multiple periodic background syncs can be registered).
+To register a periodic sync, you need to define a minimum interval and a unique tag name.  The unique tag name enables registering multiple periodic background syncs.
 
 ```javascript
 async function registerPeriodicSync() {
@@ -198,11 +202,11 @@ async function registerPeriodicSync() {
 }
 ```
 
-The `minInterval` used in the code above corresponds to 1 day in milliseconds. This is a minimum interval only and Microsoft Edge will take other factors into account before alerting your service worker with a periodic sync event such as the network connection and whether the user regularly engages with the app.
+The `minInterval` used in the code above corresponds to 1 day in milliseconds. This is a minimum interval only, and Microsoft Edge takes other factors into account before alerting your service worker with a periodic sync event, such as the network connection and whether the user regularly engages with the app.
 
 ### React to periodic sync events
 
-When Microsoft Edge decides it is a good time to run the periodic sync, it sends a `periodicsync` event to your service worker. You can handle the event using the same tag name specified when registering the sync.
+When Microsoft Edge decides it is a good time to run the periodic sync, Microsoft Edge sends a `periodicsync` event to your service worker. You can handle this `periodicsync` event by using the same tag name that was specified when registering the sync.
 
 ```javascript
 self.addEventListener('periodicsync', event => {
@@ -212,9 +216,12 @@ self.addEventListener('periodicsync', event => {
 });
 ```
 
-The `getDailyNewsInCache` function is where your service worker can fetch new content from the server and store it in cache. This function is expected to return a promise that signals if the sync succeeded or failed.
+The `getDailyNewsInCache` function is where your service worker can fetch new content from the server and store it in the cache. This function is expected to return a Promise that signals whether the sync succeeded or failed.
 
-For more information about the `PeriodicSync` event, the `ServiceWorkerRegistration`, and the `PeriodicSyncManager` interface, see [Web Periodic Background Synchronization draft specification](https://wicg.github.io/periodic-background-sync/) and [Web Periodic Background Synchronization API documentation](https://developer.mozilla.org/docs/Web/API/Web_Periodic_Background_Synchronization_API).
+For more information about the `PeriodicSync` event, the `ServiceWorkerRegistration`, and the `PeriodicSyncManager` interface, see:
+
+* [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/) - draft specification.
+* [Web Periodic Background Synchronization API](https://developer.mozilla.org/docs/Web/API/Web_Periodic_Background_Synchronization_API).
 
 ### Demo PWA
 
@@ -230,18 +237,18 @@ You can use DevTools to simulate `periodicsync` events instead of waiting for th
 
 To simulate the event:
 
-*  Open DevTools (**F12**).
-*  Select **Application** > **Service Workers**.
-*  Type the tag name you used when registering the periodic sync in the **Periodic Sync** input field.
-*  Select the **Periodic Sync** button.
+1. Open DevTools (**F12**).
+1. Select **Application** > **Service Workers**.
+1. Type the tag name you used when registering the periodic sync in the **Periodic Sync** input field.
+1. Select the **Periodic Sync** button.
 
 :::image type="content" source="../media/devtools-simulate-background-periodic-sync.png" alt-text="Simulate a periodic background sync in the Application panel.":::
 
-You can also log the periodic background sync activity generated by your app in DevTools.
+You can also log the periodic background sync activity generated by your app in DevTools:
 
-*  Open DevTools (**F12**).
-*  Select **Application** > **Periodic Background Sync**.
-*  Select **Start recording events**.
+1. Open DevTools (**F12**).
+1. Select **Application** > **Periodic Background Sync**.
+1. Select **Start recording events**.
 
 Periodic sync registrations and dispatches appear in the event log table.
 
@@ -257,13 +264,13 @@ This API is useful for apps that let users download large files (like music, mov
 
 ### Check for support
 
-To check if this API is supported, test if the `BackgroundFetchManager` constructor exists on the global object:
+To check whether this API is supported, test if the `BackgroundFetchManager` constructor exists on the global object:
 
 ```javascript
 if (self.BackgroundFetchManager) {
     // Background Fetch is supported.
 } else {
-    // Background Fetch is not supported.
+    // Background Fetch isn't supported.
 }
 ```
 

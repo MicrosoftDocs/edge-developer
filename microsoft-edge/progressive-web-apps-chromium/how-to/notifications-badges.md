@@ -11,11 +11,11 @@ keywords: progressive web apps, PWA, Edge, Windows, push, notifications, badges
 ---
 # Re-engage users with notifications, push messages, and badges
 
-Using Background Sync, Periodic Background Sync, and Background Fetch, Progressive Web Apps are able to do work when the app is not running, like updating data in the cache or sending messages when the device regains connectivity.  To re-engage the user with the app, after a background task has been completed, notifications and badges can be used.
+Using Background Sync, Periodic Background Sync, and Background Fetch, Progressive Web Apps are able to do work when the app isn't running, such as updating data in the cache, or sending messages when the device regains connectivity.  To re-engage the user with the app, after a background task has been completed, notifications and badges can be used.
 
-Notifications are useful for apps to take part in the system's notification center and display images and text information. Notifications are useful to alert the user about an important change of state in your app. Notifications tend to be disruptive to the user's workflow however, and should be used rarely.
+Notifications are useful for apps to take part in the system's notification center and display images and text information. Notifications are useful to alert the user about an important change of state in your app.  However, notifications should rarely be used, because they tend to be disruptive to the user's workflow.
 
-Badges can be more user-friendly and can therefore be used more frequently. Badges don't interrupt the user's workflow, and are useful for displaying a small amount of information, such as the number of messages received.
+Badges can be more user-friendly, and can therefore be used more frequently. Badges don't interrupt the user's workflow, and are useful for displaying a small amount of information, such as the number of messages received.
 
 
 <!-- ====================================================================== -->
@@ -25,7 +25,7 @@ PWAs can display notifications by using the [Notifications API](https://develope
 
 ### Check for support
 
-Before using the API, check that it is supported.
+Before using the API, check that it is supported, as follows.
 
 ```javascript
 if ("Notification" in window) {
@@ -35,7 +35,9 @@ if ("Notification" in window) {
 
 ### Request permission
 
-The Notifications API can only be used after having requested the user's permission to display messages. To request permission, use the `requestPermission` function. This should be done in response to a user action only. This is a best practice, to avoid interrupting the user with permission prompts while they haven't yet interacted with a feature that uses notifications.
+The Notifications API can only be used after having requested the user's permission to display messages. To request permission, use the `requestPermission` function, as shown below.
+
+Requesting permission should only be done in response to a user action. This is a best practice, to avoid interrupting the user with permission prompts when the user hasn't yet interacted with a feature that uses notifications.
 
 ```javascript
 button.addEventListener("click", () => {
@@ -76,7 +78,7 @@ const notification = new Notification("Hello World!", {
 
 :::image type="content" source="../media/notification-with-image.png" alt-text="A notification with some text and an image.":::
 
-You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function.
+You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function:
 
 ```javascript
 self.registration.showNotification("Hello from the Service Worker!");
@@ -86,7 +88,7 @@ The `showNotification` function supports the same arguments as the `Notification
 
 ### Add actions to notifications
 
-It's possible to add actions for the user to perform in a notification. This is only supported in persistent notifications shown using the `ServiceWorkerRegistration.showNotification` function.
+It's possible to add actions for the user to perform, in a notification. This is only supported in persistent notifications that are shown using the `ServiceWorkerRegistration.showNotification` function.
 
 ```javascript
 self.registration.showNotification("Your content is ready", {
@@ -135,7 +137,7 @@ PWAs can display a badge on their app icon by using the [App Badging API](https:
 
 ### Check for support
 
-Before using the App Badging API, check that it is supported in the browser engine your app runs in.
+Before using the App Badging API, check that it is supported in the browser engine your app runs in, as follows:
 
 ```javascript
 if (navigator.setAppBadge) {
@@ -157,7 +159,7 @@ navigator.setAppBadge(42);
 
 :::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="A PWA icon in the Windows Taskbar, with a badge showing the number 42":::
 
-The `setAppBadge` function returns a promise which can be used to know when the badge was added, and to catch potential errors.
+The `setAppBadge` function returns a Promise, which can be used to know when the badge was added, and to catch potential errors, as follows:
 
 ```javascript
 navigator.setAppBadge(42).then(() => {
@@ -175,9 +177,9 @@ To remove the badge on the app icon, use the following code from your frontend o
 navigator.clearAppBadge();
 ```
 
-The `clearAppBadge` also returns a promise that can be used to handle potential errors.
+The `clearAppBadge` also returns a Promise that can be used to handle potential errors.
 
-Additionally, you can also use `setAppBadge` again but passing `0` as the value.
+Another way to clear a badge is to call `setAppBadge` again, but pass `0` as the value, this time:
 
 ```javascript
 navigator.setAppBadge(0);
@@ -220,7 +222,7 @@ Before a new push subscription is created, Microsoft Edge checks whether the use
 
 If the user has not granted the PWA permission to receive notifications, the user is prompted by the browser for permission.  If the user doesn't grant permission to the browser, the request to `registration.pushManager.subscribe` throws a `DOMException`, which must be handled.  For more on permission management, go to [Push Notifications in Microsoft Edge](https://blogs.windows.com/msedgedev/2016/05/16/web-notifications-microsoft-edge#UAbvU2ymUlHO8EUV.97).
 
-In your `pwabuilder-sw-register.js` file, append the following code snippet:
+In your `pwabuilder-sw-register.js` file, append the following code:
 
 ```javascript
 // Ask the user for permission to send push notifications.
