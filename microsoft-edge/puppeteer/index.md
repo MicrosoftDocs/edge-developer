@@ -92,8 +92,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
      The following `example.png` file is produced by `example.js`:
 
-     <!-- reduced = resized to 67% -->
-     :::image type="content" source="./media/puppeteer-example-reduced.png" alt-text="The example.png file produced by example.js." lightbox="./media/puppeteer-example.png":::
+     :::image type="content" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js." lightbox="./media/puppeteer-example.png":::
 
 The above example demonstrates basic automation and testing scenarios that you can cover by using Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, check out [Puppeteer](https://pptr.dev).
 
