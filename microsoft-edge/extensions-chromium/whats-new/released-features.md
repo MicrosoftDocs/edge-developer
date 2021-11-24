@@ -35,7 +35,7 @@ This feature allows extension developers to view their extension submission from
 <!-- ====================================================================== -->
 ## Support for Manifest V3 extensions
 
-Microsoft Edge Add-ons now support extensions with Manifest V3. Check out [the blog]( https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) for more details 
+Microsoft Edge Add-ons now support extensions with Manifest V3. Check out [the blog]( https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) for more details.
 
 *Released April 2021*
 
