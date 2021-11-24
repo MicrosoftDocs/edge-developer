@@ -45,7 +45,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Bug Fixes
   
-*   Turn off Control-flow Enforcement Technology (CET) Shadow Stack feature for 96 WebView2 Runtime.  
+*   Turned off Control-flow Enforcement Technology (CET) Shadow Stack feature for 96 WebView2 Runtime.  
 *   Fixed an issue that was causing slow startup times when launching in a .NET single-file application.  
 *   Fixed a crash caused by Microsoft Edge browser policies getting incorrectly applied to WebView2 as well.  
 *   Fixed a crash that occurred when a popup window with a download dialog was closed.  
@@ -179,9 +179,9 @@ ICoreWebView2IsMutedChangedEventHandler
   
 *   Fixed focus issue after closing file picker dialog.  
 *   Fixed bug where WebView2 doesn't receive spatial input on initial launch  
-*   Fixes an issue that prevented single sign on in WebView2.  
+*   Fixed an issue that prevented single sign on in WebView2.  
 *   Resolved a bug where the download dialog was not moving with the window on WPF and WinForms.  
-*   Updates compatible command line check to prevent needing version check for optional switches.  
+*   Updated compatible command line check to prevent needing version check for optional switches.  
 *   Fixed an error that was causing "Microsoft Edge" branding to appear in the accessibility tree.  
 
 <!-- ====================================================================== -->
