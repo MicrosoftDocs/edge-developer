@@ -48,13 +48,12 @@ To create an app reservation:
     1.  Type the name of your app in the prompt.
     1.  Select `Reserve product name`.
 
-
     :::image type="content" source="../media/windows-partner-center-create-app.msft.png" alt-text="Create an app reservation in Windows Partner Center.":::
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-
-    :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center.":::
+    :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center." lightbox="../media/windows-partner-center-publisher-info.msft.png":::
+    <!-- lightbox justified because large detailed image -->
 
 1.  Copy and save the following values.
     *   **Package ID**

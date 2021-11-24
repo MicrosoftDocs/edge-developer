@@ -124,11 +124,11 @@ In the above code snippet:
 
 To test the feature:
 
-*  Go to [DevTools Tips](https://devtoolstips.org/).
-*  Choose any of the tips displayed on the home page.
-*  Select **Share tip**.
+1. Go to [DevTools Tips](https://devtoolstips.org/).
+2. Select a tip.
+3. Click **Share tip**.
 
-The Windows **Share** dialog allows users to pick an app to share the content with:
+The Windows **Share** dialog is displayed.  The user picks an app in which to share the content:
 
 :::image type="content" source="../media/devtools-tips-share.png" alt-text="The Windows Share dialog allows users to pick an app to share the content with.":::
 

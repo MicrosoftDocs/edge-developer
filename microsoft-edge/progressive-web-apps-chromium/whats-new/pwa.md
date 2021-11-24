@@ -39,22 +39,32 @@ See also:
 
 Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
 
+#### Sort order
+
 You can sort your apps by any of the following:
 *  Recently used.
 *  Alphabetically, based on title.
 *  Date of installation.
 
-You can also arrange apps in a list or grid view.
+#### List view or grid view
 
-:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge now has a new app management page.":::
+You can arrange apps in a list or grid view, by using the **View as** dropdown.  In this image, **Grid** view is selected:
 
-Additionally, you can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login.
+:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="The new, app management page in Microsoft Edge." lightbox="media/edgeapps-redesign.jpg":::
+<!-- lightbox justified because large detailed image -->
 
-Also, there's now a way to easily access the following:
+#### Pin apps, create shortcuts to apps, run app on login
+
+You can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login.
+
+#### App details page
+
+There's now an app details page, which provides way to easily access the following:
 *  Permissions and privacy details for the associated origin.
 *  More details about the application.
 
-:::image type="content" source="media/edgeapps-details.jpg" alt-text="Microsoft Edge's app details page.":::
+:::image type="content" source="media/edgeapps-details.jpg" alt-text="The app details page in Microsoft Edge." lightbox="media/edgeapps-details.jpg":::
+<!-- lightbox justified because large detailed image -->
 
 
 <!-- ====================================================================== -->
