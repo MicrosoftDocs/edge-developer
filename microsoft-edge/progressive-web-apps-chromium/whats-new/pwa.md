@@ -46,7 +46,7 @@ You can sort your apps by any of the following:
 
 You can also arrange apps in a list or grid view.
 
-:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge now has a new app management page." lightbox="media/edgeapps-redesign.jpg":::
+:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge now has a new app management page.":::
 
 Additionally, you can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login.
 
@@ -54,7 +54,7 @@ Also, there's now a way to easily access the following:
 *  Permissions and privacy details for the associated origin.
 *  More details about the application.
 
-:::image type="content" source="media/edgeapps-details.jpg" alt-text="Microsoft Edge's app details page." lightbox="media/edgeapps-details.jpg":::
+:::image type="content" source="media/edgeapps-details.jpg" alt-text="Microsoft Edge's app details page.":::
 
 
 <!-- ====================================================================== -->
@@ -134,15 +134,15 @@ Learn more about using protocol handlers with your PWA at [Experimental features
 When a user selects the ellipses (**...**) button in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
 *  Moved the app **Publisher** information to the top level and made it the first thing a user sees.
 
-   :::image type="content" source="media/app-info.png" alt-text="The new, streamlined App Info menu" lightbox="media/app-info.png":::
+   :::image type="content" source="media/app-info.png" alt-text="The new, streamlined App Info menu":::
 
 *  Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
 
-   :::image type="content" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu." lightbox="media/privacy-menu.png":::
+   :::image type="content" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu.":::
 
 *  Moved content-related tools into a dedicated 2nd-level **More tools** menu.
 
-   :::image type="content" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu." lightbox="media/more-tools.png":::
+   :::image type="content" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu.":::
 
 ### Post-install flyout dialog box
 
@@ -154,7 +154,7 @@ After a PWA is installed from the Microsoft Edge browser on Windows, users can n
 
 For convenience, this flyout dialog box is shown the first time the app is launched.
 
-:::image type="content" source="media/post-install-flyout.png" alt-text="The post-install flyout dialog box with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login" lightbox="media/post-install-flyout.png":::
+:::image type="content" source="media/post-install-flyout.png" alt-text="The post-install flyout dialog box with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login":::
 
 This feature is being rolled out gradually to all users.  In the meantime, if you'd like to use this feature, go to `edge://flags` and enable the flag **Web Apps Post Install Dialog**.
 

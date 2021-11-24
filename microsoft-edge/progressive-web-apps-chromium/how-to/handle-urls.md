@@ -28,7 +28,7 @@ URL handling is still experimental, to enable it:
 1.  Select **Search flags** and type "url handling".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="content" source="../media/enable-url-handling-experiment.png" alt-text="Enable the URL handling API experiment." lightbox="../media/enable-url-handling-experiment.png":::
+    :::image type="content" source="../media/enable-url-handling-experiment.png" alt-text="Enable the URL handling API experiment.":::
 
 URL Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
 
@@ -136,7 +136,7 @@ To test URL handling on DevTools Tips:
 
 Windows knows that your app is registered to handle this URL and asks you to choose which app you want to use. Select the DevTools Tips apps. You can also select **Remember my choice** to avoid seeing this dialog every time.
 
-:::image type="content" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="Selecting an application to handle URLs on Windows." lightbox="../media/devtools-tips-url-handling-app-selection.png":::
+:::image type="content" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="Selecting an application to handle URLs on Windows.":::
 
 The app launches and displays the tips page.
 

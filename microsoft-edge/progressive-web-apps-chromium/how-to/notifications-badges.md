@@ -63,7 +63,7 @@ Once you know that the API is supported and the user has accepted notifications,
 const notification = new Notification("Hello World!");
 ```
 
-:::image type="content" source="../media/notification-text-only.png" alt-text="A text only notification." lightbox="../media/notification-text-only.png":::
+:::image type="content" source="../media/notification-text-only.png" alt-text="A text only notification.":::
 
 The above code displays a text-only notification message, but you can also customize the message with additional properties:
 
@@ -74,7 +74,7 @@ const notification = new Notification("Hello World!", {
 });
 ```
 
-:::image type="content" source="../media/notification-with-image.png" alt-text="A notification with some text and an image." lightbox="../media/notification-with-image.png":::
+:::image type="content" source="../media/notification-with-image.png" alt-text="A notification with some text and an image.":::
 
 You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function.
 
@@ -105,7 +105,7 @@ self.registration.showNotification("Your content is ready", {
 });
 ```
 
-:::image type="content" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions" lightbox="../media/notification-with-actions.png":::
+:::image type="content" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions":::
 
 When the user clicks one of the action buttons, your PWA can handle the click by listening for the `notificationclick` event.  When a `notificationclick` event is received, close the notification and execute some code:
 
@@ -314,17 +314,17 @@ To test push notifications for your PWA:
 
 1.  Go to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.
 
-    :::image type="content" source="../media/notification-permission.png" alt-text="Permission dialog for enabling notifications." lightbox="../media/notification-permission.png":::
+    :::image type="content" source="../media/notification-permission.png" alt-text="Permission dialog for enabling notifications.":::
 
 1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
     The push notification is displayed near the taskbar.
 
-    :::image type="content" source="../media/devtools-push.png" alt-text="Push a notification from DevTools." lightbox="../media/devtools-push.png":::
+    :::image type="content" source="../media/devtools-push.png" alt-text="Push a notification from DevTools.":::
 
     If you don't select (or _activate_) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
 
-    :::image type="content" source="../media/windows-action-center.png" alt-text="Notifications in Windows Action Center." lightbox="../media/windows-action-center.png":::
+    :::image type="content" source="../media/windows-action-center.png" alt-text="Notifications in Windows Action Center.":::
 
 
 <!-- ====================================================================== -->

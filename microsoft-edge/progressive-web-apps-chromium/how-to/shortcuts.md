@@ -17,12 +17,12 @@ On mobile devices, shortcuts can usually be accessed by long-pressing an app ico
 
 The next figure shows shortcuts on Microsoft Edge on iOS:
 
-:::image type="content" source="../media/edge-ios-shortcuts.png" alt-text="Shortcuts on Microsoft Edge on iOS." lightbox="../media/edge-ios-shortcuts.png":::
+:::image type="content" source="../media/edge-ios-shortcuts.png" alt-text="Shortcuts on Microsoft Edge on iOS.":::
 
 <!-- remove/replace screenshot? -->
 The next figure shows a jumplist on the Twitter app on Windows:
 
-:::image type="content" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Jumplist on the Twitter app on Windows." lightbox="../media/pwa-shortcuts-in-taskbar.png":::
+:::image type="content" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Jumplist on the Twitter app on Windows.":::
 
 Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the [Web App Manifest](./web-app-manifests.md).
 
@@ -78,6 +78,6 @@ To test that your shortcuts are configured correctly:
 1.   In the **Application** tool, select **Manifest**.
 1.   Scroll down to reveal the list of shortcuts.
 
-:::image type="content" source="../media/devtools-debug-shortcuts.png" alt-text="Shortcuts are listed in the Application panel." lightbox="../media/devtools-debug-shortcuts.png":::
+:::image type="content" source="../media/devtools-debug-shortcuts.png" alt-text="Shortcuts are listed in the Application panel.":::
 
 To learn more about using the Application panel to debug PWAs, see [Debug Progressive Web Apps](../../devtools-guide-chromium/progressive-web-apps/index.md).

@@ -26,7 +26,7 @@ Features:
 *  [Web Share](./how-to/share.md#sharing-content)
 *  [Share Target](./how-to/share.md#receiving-shared-content)
 
-:::image type="content" source="./media/webboard-reduced.png" alt-text="Webboard is a Progressive Web App for drawing and intelligent whiteboarding." lightbox="./media/webboard.png":::
+:::image type="content" source="./media/webboard.png" alt-text="Webboard is a Progressive Web App for drawing and intelligent whiteboarding.":::
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ Features:
 *  [Periodic background sync](./how-to/background-syncs.md#regularly-get-fresh-content-with-the-periodic-background-sync-api)
 *  [Notifications](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
-:::image type="content" source="./media/devtools-tips-reduced.png" alt-text="The devtools-tips Progressive Web App displays a list of tips and tricks for DevTools." lightbox="./media/devtools-tips.png":::
+:::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips Progressive Web App displays a list of tips and tricks for DevTools.":::
 
 
 <!-- ====================================================================== -->
@@ -61,7 +61,7 @@ Features:
 *  [Shortcuts](./how-to/shortcuts.md)
 *  [File handling](./how-to/handle-files.md)
 
-:::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app." lightbox="./media/my-tracks.png":::
+:::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app.":::
 
 
 <!-- ====================================================================== -->
@@ -76,7 +76,7 @@ Features:
 *  [Background sync](./how-to/background-syncs.md#synchronize-data-with-the-server-with-the-background-sync-api)
 *  [Notifications](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
-:::image type="content" source="./media/my-movies.png" alt-text="The My Movies app." lightbox="./media/my-movies.png":::
+:::image type="content" source="./media/my-movies.png" alt-text="The My Movies app.":::
 
 
 <!-- ====================================================================== -->
@@ -94,7 +94,7 @@ Features:
 *  [Protocol handling](./how-to/handle-protocols.md)
 *  [Share Target](./how-to/share.md#receiving-shared-content)
 
-:::image type="content" source="./media/bpm-techno.png" alt-text="The BPM Techno app." lightbox="./media/bpm-techno.png":::
+:::image type="content" source="./media/bpm-techno.png" alt-text="The BPM Techno app.":::
 
 
 <!-- ====================================================================== -->
@@ -108,4 +108,4 @@ Features:
 
 *  [Window Controls Overlay](./how-to/window-controls-overlay.md)
 
-:::image type="content" source="./media/1div-demo.png" alt-text="The 1DIV app." lightbox="./media/1div-demo.png":::
+:::image type="content" source="./media/1div-demo.png" alt-text="The 1DIV app.":::

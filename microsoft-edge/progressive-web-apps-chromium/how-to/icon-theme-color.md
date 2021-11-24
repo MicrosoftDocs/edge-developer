@@ -73,7 +73,7 @@ The web content created by the PWA fills the entire surface area of the window, 
 
 The image below shows what a PWA looks like when not using a theme color and when using one that matches the main app color.
 
-:::image type="content" source="../media/app-theme-color-before-after.png" alt-text="The difference between not using and using a theme color." lightbox="../media/app-theme-color-before-after.png":::
+:::image type="content" source="../media/app-theme-color-before-after.png" alt-text="The difference between not using and using a theme color.":::
 
 The define a theme color, use the `theme_color` web app manifest member as shown below:
 
