@@ -84,11 +84,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-ieOptions = webdriver.IeOptions()
-ieOptions.attach_to_edge_chrome = True
-ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+ie_options = webdriver.IeOptions()
+ie_options.attach_to_edge_chrome = True
+ie_options.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 
-driver = webdriver.Ie(options=ieOptions)
+driver = webdriver.Ie(options=ie_options)
 
 driver.get("http://www.bing.com")
 elem = driver.find_element(By.ID, 'sb_form_q')
@@ -141,7 +141,8 @@ const {Options} = require('selenium-webdriver/ie');
                          build();
   try {
     await driver.get('http://www.bing.com');
-    await driver.findElement(By.id('sb_form_q')).sendKeys('WebDriver', Key.RETURN);
+    let elem = await driver.findElement(By.id('sb_form_q'));
+    await elem.sendKeys('WebDriver', Key.RETURN);
     await driver.wait(until.titleIs('WebDriver - Bing'), 1000);
   } finally {
     await driver.quit();
@@ -173,14 +174,14 @@ ieOptions.EdgeExecutablePath = "C:/Program Files (x86)/Microsoft/Edge/Applicatio
 
 ### [Python](#tab/python/)
 
-1. Define a new variable, `ieOptions`, by calling `webdriver.IeOptions()`.
+1. Define a new variable, `ie_options`, by calling `webdriver.IeOptions()`.
 
-1. Set the `ieOptions.attach_to_edge_chrome` property to `True`, and `ieOptions.edge_executable_path` to the path of the Microsoft Edge executable.
+1. Set the `ie_options.attach_to_edge_chrome` property to `True`, and `ie_options.edge_executable_path` to the path of the Microsoft Edge executable.
 
 ```python
-ieOptions = webdriver.IeOptions()
-ieOptions.attach_to_edge_chrome = True
-ieOptions.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+ie_options = webdriver.IeOptions()
+ie_options.attach_to_edge_chrome = True
+ie_options.edge_executable_path = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 ```
 
 ### [Java](#tab/java/)
@@ -202,9 +203,9 @@ ieOptions.withEdgeExecutablePath("C:\\Program Files (x86)\\Microsoft\\Edge\\Appl
 1. Call `ieOptions.setEdgeChromium()` with value `true` and `ieOptions.setEdgePath()` with the path of the Microsoft Edge executable.
 
 ```javascript
-let ieOptions = await new Options()
-await ieOptions.setEdgeChromium(true)
-await ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe')
+let ieOptions = new Options();
+ieOptions.setEdgeChromium(true);
+ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe');
 ```
 
 * * *
@@ -225,10 +226,10 @@ var driver = new InternetExplorerDriver(ieOptions);
 
 ### [Python](#tab/python/)
 
-Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `ieOptions`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
+Start IEDriver by calling `webdriver.Ie` and passing it the previously defined `ie_options`.  IEDriver launches Microsoft Edge in IE mode.  All page navigation and subsequent interactions occur in IE mode.
 
 ```python
-driver = webdriver.Ie(options=ieOptions)
+driver = webdriver.Ie(options=ie_options)
 ```
 
 ### [Java](#tab/java/)
@@ -256,41 +257,56 @@ let driver = await new Builder().
 <!-- ====================================================================== -->
 ## Known limitations
 
-When automating IE mode in Microsoft Edge, you must add a short wait between these two operations:
+This section covers known scenarios that previously worked with IEDriver and the IE11 desktop application but require workarounds when using IEDriver with Microsoft Edge in IE mode.
 
-1. Opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open).
-1. Getting handles to the new window with the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command.
+### Opening new windows
 
-The following sample demonstrates how you must wait for IEDriver to register new window handles when opening new windows.
+If your test code creates a new browser window using one of these methods, you may need to add a short wait operation afterwards to ensure that IEDriver has detected the new window:
+
+- Opening a new window with [window.open](https://developer.mozilla.org/docs/Web/API/Window/open) executed in page script.
+- Opening a new window with the WebDriver [New Window](https://w3c.github.io/webdriver/#new-window) command.
+
+To ensure the new window has been created successfully and IEDriver has detected it, you must continuously check the result of the [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles) command until it contains a handle to the new window.
+
+The following sample demonstrates a possible way to wait for new window handles to be detected when opening new windows.
 
 ### [C#](#tab/c-sharp/)
 
-After the `Click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `Thread.Sleep(2000)` before getting new window handles with `reqDriver.WindowHandles`.
+After the `Click` method is called on a button that opens a new window, the test code must wait until `driver.WindowHandles` contains the new window handle.
 
 ```csharp
-reqDriver.FindElement(By.Id("<Id of the button that will open a new window>")).Click();
-Thread.Sleep(2000);
-var newHandles = reqDriver.WindowHandles;
+var initialHandleCount = driver.WindowHandles.Count;
+driver.FindElement(By.Id("<Id of the button that will open a new window>")).Click();
+var newHandles = driver.WindowHandles;
+while (newHandles.Count == initialHandleCount)
+{
+    newHandles = driver.WindowHandles;
+}
 ```
 
 ### [Python](#tab/python/)
 
-After the `click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `browser.implicitly_wait(2.0)` before getting new window handles with `browser.window_handles`.
+After the `click` method is called on a button that opens a new window, the test code must wait until `driver.window_handles` contains the new window handle.
 
 ```python
-browser.find_element(By.ID, "<Id of the button that will open a new window>").click()
-browser.implicitly_wait(2.0)
-newHandles = browser.window_handles
+initial_handle_count = len(driver.window_handles)
+driver.find_element(By.ID, "<Id of the button that will open a new window>").click()
+new_handles = driver.window_handles
+while len(new_handles) == initial_handle_count:
+    new_handles = driver.window_handles
 ```
 
 ### [Java](#tab/java/)
 
-After the `click` method is called on a button that opens a new window, IEDriver must wait 2 seconds with `Thread.sleep(2000)` before getting new window handles with `driver.getWindowHandles()`.
+After the `click` method is called on a button that opens a new window, the test code must wait until `driver.getWindowHandles()` contains the new window handle.
 
 ```java
+int initialHandleCount = driver.getWindowHandles().size();
 driver.findElement(By.id("<Id of the button that will open a new window>")).click();        
-Thread.sleep(2000);
-Set<String> newHandles=driver.getWindowHandles();
+Set<string> newHandles = driver.getWindowHandles();
+while (newHandles.size() == initialHandleCount) {
+    newHandles = driver.getWindowHandles();
+}
 ```
 
 ### [JavaScript](#tab/javascript/)
@@ -298,11 +314,18 @@ Set<String> newHandles=driver.getWindowHandles();
 After the `click` method is called on a button that opens a new window, IEDriver must wait with `await driver.getAllWindowHandles()`.
 
 ```javascript
-await driver.findElement(By.id("<Id of the button that will open a new window>")).click();
-let newHandles = await driver.getAllWindowHandles()
+const initialHandleCount = (await driver.getAllWindowHandles()).length;
+const elem = await driver.findElement(By.id("<Id of the button that will open a new window>"));
+await elem.click();
+let newHandles = await driver.getAllWindowHandles();
+while (newHandles.length == initialHandleCount) {
+    newHandles = await driver.getAllWindowHandles();
+}
 ```
 
 * * *
+
+### Creating and switching between tabs
 
 <!--
 Todo: incorporate feedback about this requirement into this section. We need to verify this feedback with the engineering team because we were able to get a sample that was broken working with these changes.
@@ -317,7 +340,7 @@ Some potential workarounds are:
 So the workarounds look a lot like what you've described here. I would just reframe it a bit that you don't need to resort to these workarounds unless your existing test code is having trouble with new window commands."
 -->
 
-Additionally, in IE mode, IEDriver can only interact with the active tab in Microsoft Edge. In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE. When automating multiple tabs in IE mode, you must manage the active tab in your test code.
+If your test code switches between multiple tabs in the same Microsoft Edge window, tabs that become inactive may not be included in the list of handles returned by [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles).  In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE, regardless of activation state.  When using Microsoft Edge in IE mode, if your test switches focus away from a certain tab and you would like to be able to switch back to that tab later, you must store a copy of the tab's window handle.
 
 <!-- ====================================================================== -->
 ## See also
