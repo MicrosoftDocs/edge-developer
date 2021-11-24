@@ -28,7 +28,7 @@ To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](http
 
 ## Required Configuration
 
-To configure IEDriver, Windows, and Microsoft Edge correctly, complete the requirements in [Selenium's required configuration](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration).  
+To configure IEDriver, Windows, and Microsoft Edge correctly, complete the requirements for [Selenium's required configuration](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration).  
 
 <!-- ====================================================================== -->
 ## Automate IE mode in Microsoft Edge
