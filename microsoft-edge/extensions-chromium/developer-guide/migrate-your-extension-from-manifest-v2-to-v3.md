@@ -24,13 +24,13 @@ Developers will need to package and submit all code that is used by the extensio
 <!-- ====================================================================== -->
 ## Run-time host permissions
 
-At installation time, extensions may request blanket permissions to access all sites and content.  These permissions allow extensions to operate with minimum intervention, and so presents a risk for user privacy and security.  To improve transparency, the Microsoft Edge extensions team provides controls that enable users to allow or restrict access to websites at runtime.
+At installation time, it's possible for extensions to request blanket permissions to access all sites and content.  These permissions allow extensions to operate with minimum intervention, and so present a risk for user privacy and security.  To improve transparency, the Microsoft Edge extensions team provides controls that enable users to allow or restrict access to websites at runtime.
 
 
 <!-- ====================================================================== -->
 ## Cross-origin requests in content scripts
 
-Today, content scripts request access to any origin including origins that aren't allowed by the website.  The behavior breaks cross-origin principles.  Going forward, the Microsoft Edge extensions team requires content scripts to have the same permissions as the webpage into which the scripts are injected.  This requirement closes a potential security loophole.
+Today, content scripts can request access to any origin, including origins that aren't allowed by the website.  The behavior breaks cross-origin principles.  Going forward, the Microsoft Edge extensions team requires content scripts to have the same permissions as the webpage into which the scripts are injected.  This requirement closes a potential security loophole.
 
 To perform cross-origin requests, you need to use background scripts to relay responses back to content scripts.  These changes are available and are behind a flag.  For more information, see [Changes to Cross-Origin Requests in Chrome Extension Content Scripts](https://www.chromium.org/Home/chromium-security/extension-content-script-fetches).
 
