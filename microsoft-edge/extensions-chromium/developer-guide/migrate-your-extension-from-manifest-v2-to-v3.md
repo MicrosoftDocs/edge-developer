@@ -10,13 +10,13 @@ keywords: microsoft edge, extensions development, edge extensions, browser exten
 ---
 # Prepare to update your extensions from Manifest V2 to V3
 
-This article lists important changes being implemented as part of Manifest V3, which is the next version of the Chromium Extensions platform.  The Microsoft Edge extensions team updates this document as the implementation progresses.  For detailed guidance on migrating your extension to Manifest V3, see [Migrating to Manifest V3](https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist).
+This article lists important changes being implemented as part of Manifest V3, which is the next version of the Chromium Extensions platform.  For guidance on migrating your extension to Manifest V3, see [Migrating to Manifest V3](https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist).
 
 
 <!-- ====================================================================== -->
 ## Remotely hosted code
 
-Today, parts of the extensions code are hosted remotely, and are not included as part of the extension package during the validation process.  While this offers flexibility to change code without resubmitting the extension to the store, it's possible to exploit the code after installation.  To ensure that [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons) lists validated extensions, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
+Today, some parts of the extensions code are hosted remotely, and are not included as part of the extension package during the validation process.  While this offers flexibility to change code without resubmitting the extension to the store, it's possible to exploit the code after installation.  To ensure that [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons) lists validated extensions, the Microsoft Edge extensions team disallows extensions from using remotely hosted code.  This change makes extensions more secure.
 
 Developers will need to package and submit all code that is used by the extension, for validation.  Alternatively, you can use the `eval()` function in a [sandboxed environment](https://developer.chrome.com/docs/extensions/mv2/sandboxingEval).
 
@@ -30,7 +30,7 @@ At installation time, extensions may request blanket permissions to access all s
 <!-- ====================================================================== -->
 ## Cross-origin requests in content scripts
 
-Today, content scripts request access to any origin including origins that aren't allowed by the website.  The behavior breaks cross-origin principles.  Going forward, the Microsoft Edge extensions team requires content scripts to have the same permissions as the webpage into which the scripts are injected, closing a potential security loophole.
+Today, content scripts request access to any origin including origins that aren't allowed by the website.  The behavior breaks cross-origin principles.  Going forward, the Microsoft Edge extensions team requires content scripts to have the same permissions as the webpage into which the scripts are injected.  This requirement closes a potential security loophole.
 
 To perform cross-origin requests, you need to use background scripts to relay responses back to content scripts.  These changes are available and are behind a flag.  For more information, see [Changes to Cross-Origin Requests in Chrome Extension Content Scripts](https://www.chromium.org/Home/chromium-security/extension-content-script-fetches).
 
@@ -38,22 +38,22 @@ To perform cross-origin requests, you need to use background scripts to relay re
 <!-- ====================================================================== -->
 ## Web Request API
 
-The Microsoft Edge extensions team replaces the [Web Request API](https://developer.chrome.com/docs/extensions/reference/webRequest) by the [Declarative Net Request API](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest), but continues to keep the observational capabilities of the Web Request API.  The Microsoft Edge extensions team recommends using the Declarative Net Request (DNR) APIs only, rather than the Web Request API, except in some specific scenarios where observational capabilities of the Web Request API are required by the extension.
+The Microsoft Edge extensions team replaces the [Web Request API](https://developer.chrome.com/docs/extensions/reference/webRequest) by the [Declarative Net Request API](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest), but we continue to keep the observational capabilities of the Web Request API.  We recommend using the Declarative Net Request (DNR) APIs only, rather than the Web Request API, except in some specific scenarios where observational capabilities of the Web Request API are required by the extension.
 
-We believe this change will have positive impact on extensions that use feature-rich declarative capabilities.  As more extensions transition to the Declarative Net Request APIs, this change will improve user privacy, which contributes to trust in the use of extensions.
+This change will have positive impact on extensions that use feature-rich declarative capabilities.  As more extensions transition to the Declarative Net Request APIs, this change will improve user privacy, which contributes to trust in the use of extensions.
 
-Enterprises can continue to use the blocking behavior of the Web Request API for extensions that are managed through enterprise policies.  For more information about extension policies, see [Microsoft Edge – Policies](/deployedge/microsoft-edge-policies#extensions).
+Enterprises can continue to use the blocking behavior of the Web Request API for extensions that are managed through enterprise policies.  For more information about extension policies, see [Extensions](/deployedge/microsoft-edge-policies#extensions) in _Microsoft Edge – Policies_.
 
 
 <!-- ====================================================================== -->
 ## Background service workers
 
-Service workers are available for testing in the Canary preview channel of Microsoft Edge.  To migrate your extensions from background pages to service workers, refer to [Migrating from Background Pages to Service Workers](https://developer.chrome.com/docs/extensions/mv3/migrating_to_service_workers).  The Microsoft Edge extensions team is evaluating and investigating the impact that this change brings to both developers and users.
+Service workers are available for testing in the Canary preview channel of Microsoft Edge.  To migrate your extensions from background pages to service workers, see [Migrating from Background Pages to Service Workers](https://developer.chrome.com/docs/extensions/mv3/migrating_to_service_workers).  The Microsoft Edge extensions team is evaluating and investigating the impact that this change brings to both developers and users.
 
 
 <!-- ====================================================================== -->
 ## When are these changes available in Microsoft Edge
 
-The current Declarative Net Request API API implementation is available in Microsoft Edge Stable and in the Microsoft Edge Beta channel.  You're invited to test the changes, and provide feedback.
+The current Declarative Net Request API implementation is available in the Microsoft Edge Stable and Beta channels.  Please test the changes and provide feedback.
 
-The Microsoft Edge extensions team continues publishing updates on the blog.  You can provide your feedback on the changes through [Tech Community](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
+The Microsoft Edge extensions team publishes updates at our blog.  You can provide feedback on the changes through Microsoft Tech Community; see [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
