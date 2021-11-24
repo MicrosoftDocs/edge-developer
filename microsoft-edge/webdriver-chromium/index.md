@@ -11,12 +11,12 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 ---
 # Use WebDriver to automate Microsoft Edge
 
-WebDriver allows developers to automate Microsoft Edge by simulating user interaction.  WebDriver tests and simulations differ from JavaScript unit tests in the following ways.
+WebDriver allows developers to automate Microsoft Edge by simulating user interaction.  WebDriver tests and simulations differ from JavaScript unit tests in the following ways:
 
-*   Accesses functionality and information not available to JavaScript running in browsers.
-*   Simulates user events or OS-level events more accurately.
-*   Manages multiple windows, tabs, and webpages in a single test session.
-*   Runs multiple sessions of Microsoft Edge on a specific machine.
+*   WebDriver accesses functionality and information that's not available to JavaScript running in browsers.
+*   WebDriver simulates user events or OS-level events more accurately than JavaScript unit tests.
+*   WebDriver manages multiple windows, tabs, and webpages in a single test session.
+*   WebDriver runs multiple sessions of Microsoft Edge on a specific machine.
 
 
 <!-- ====================================================================== -->
@@ -24,11 +24,11 @@ WebDriver allows developers to automate Microsoft Edge by simulating user intera
 
 To automate Microsoft Edge with WebDriver to simulate user interaction, you need three components:
 
-*  Microsoft Edge
-*  Microsoft Edge Driver
-*  A WebDriver testing framework
+*  Microsoft Edge.
+*  Microsoft Edge Driver.
+*  A WebDriver testing framework.
 
-The functional relationship between these components is as follows.
+The functional relationship between these components is as follows:
 
 | Technology | Role |
 |---|---|
@@ -43,7 +43,7 @@ The following sections describe how to get started with WebDriver for Microsoft 
 <!-- ====================================================================== -->
 ## Download Microsoft Edge Driver
 
-To begin automating tests, make sure the WebDriver version you install matches your browser version, as follows.
+To begin automating tests, make sure the WebDriver version you install matches your browser version, as follows:
 
 1.  Go to `edge://settings/help` and note your version of Microsoft Edge.
 
@@ -326,12 +326,6 @@ docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```
 
 For more information, see the [msedgedriver container on Docker Hub](https://hub.docker.com/_/microsoft-msedge-msedgedriver?tab=description).
-
-
-<!-- ====================================================================== -->
-## Testing Internet Explorer
-
-To test sites that require Internet Explorer, use [Internet Explorer Driver](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver) with Internet Explorer.  Internet Explorer Driver is maintained by the Selenium project.  Even though Microsoft Edge supports IE Mode, you can't use Microsoft Edge Driver with Microsoft Edge to test sites in IE Mode.
 
 
 <!-- ====================================================================== -->
