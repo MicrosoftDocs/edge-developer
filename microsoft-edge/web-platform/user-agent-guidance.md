@@ -214,12 +214,12 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
 
 1. Copy the following code snippet:
 
-    ```console
+    ```shell
     --disable-domain-action-user-agent-override
     ```
 
 1. Run the Microsoft Edge app using the copied code snippet as follows:
 
-    ```console
+    ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```

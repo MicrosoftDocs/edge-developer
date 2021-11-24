@@ -59,7 +59,7 @@ For icons, we recommend using:
 
 The directories of your project should be similar to the following structure:
 
-```console
+```
 └── part1
     ├── _manifest.json
     └── icons
@@ -110,7 +110,7 @@ Add the code from the following code snippet to `popup.html` to display the star
 
 Make sure that you add the image file `images/stars.jpeg` to the `images` folder.  The directories of your project should be similar to the following structure:
 
-```console
+```
 └── part1
     ├── _manifest.json
     ├── icons

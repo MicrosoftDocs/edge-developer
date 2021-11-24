@@ -50,7 +50,7 @@ navigator.serviceWorker.ready.then(registration => {
 });
 ```
 
-To learn more about the `ServiceWorkerRegistration` interface, see the [ServiceWorkerRegistration documentation](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration).
+To learn more about the `ServiceWorkerRegistration` interface, see [ServiceWorkerRegistration](https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration) at MDN.
 
 ### Request a sync
 
@@ -94,7 +94,7 @@ In the example code above, a `sync` event listener is added in the service worke
 
 Typically, the `doTheWork` function will send the information to the server that couldn't be sent when the user was offline. It may be useful to store this information in [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) storage from the frontend so that it can later be retrieved from the service worker when `doTheWork` is executed.
 
-For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, see the [Background Synchronization draft specification](https://wicg.github.io/background-sync/spec/) and [Background Synchronization API documentation](https://developer.mozilla.org/docs/Web/API/Background_Synchronization_API).
+For more information about the `Sync` event, the `ServiceWorkerRegistration`, and the `SyncManager` interface, see the [Background Synchronization draft specification](https://wicg.github.io/background-sync/spec/) and the [Background Synchronization API documentation](https://developer.mozilla.org/docs/Web/API/Background_Synchronization_API).
 
 ### Demo PWA
 
@@ -159,7 +159,7 @@ The Periodic Background Sync API lets PWAs retrieve fresh content periodically, 
 Using the Periodic Background Sync API, PWAs don't have to download new content (such as new articles) while the user is using the app.  Downloading content could slow down the experience, so instead, retrieve the content at a more convenient time.
 
 > [!NOTE]
-> The periodic sync only occurs when the device is on a known network (that is, the network that the device has already been connected to before).  Microsoft Edge limits the frequency of the syncs to match how often the person uses the app.
+> The periodic sync only occurs when the device is on a known network (that is, a network that the device has already been connected to before).  Microsoft Edge limits the frequency of the syncs to match how often the person uses the app.
 
 ### Check for support
 
@@ -175,9 +175,11 @@ navigator.serviceWorker.ready.then(registration => {
 });
 ```
 
-### Request the user permission
+### Ask the user for permission
 
-Periodic background synchronizations require the user's permission. This happens only once per application, and is done by using the Permissions API.
+Periodic background synchronization requires the user's permission.  Requesting this permission occurs only one time, for a given application.
+
+To ask the user for permission to do periodic background synchronization, use the Permissions API, as follows:
 
 ```javascript
 const status = await navigator.permissions.query({name: 'periodic-background-sync'});
@@ -188,7 +190,7 @@ if (status.state === 'granted') {
 }
 ```
 
-To learn more about the Permissions API, see the [Permissions API documentation](https://developer.mozilla.org/docs/Web/API/Permissions_API).
+To learn more about the Permissions API, see [Permissions API](https://developer.mozilla.org/docs/Web/API/Permissions_API) at MDN.
 
 ### Register a periodic sync
 
@@ -286,7 +288,7 @@ navigator.serviceWorker.ready.then(async registration => {
 
 Above, `my-download-id` should be a unique string identifier for this background fetch. `fileUrls` is the list of files to download, this will be an array of string URLs. And `options` is an object that can be used to customize the appearance of the download activity in the browser.
 
-You can find more information about the `fetch` function on the [BackgroundFetchManager.fetch() documentation](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) and at [Introducing Background Fetch](https://developers.google.com/web/updates/2018/12/background-fetch).
+For more information about the `fetch` function, see [BackgroundFetchManager.fetch()](https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager/fetch) and [Introducing Background Fetch](https://developers.google.com/web/updates/2018/12/background-fetch).
 
 
 <!-- ====================================================================== -->
@@ -294,6 +296,6 @@ You can find more information about the `fetch` function on the [BackgroundFetch
 
 Use the Notifications and App Badging APIs to let users know that background tasks, downloads, or fresh content have been completed, without interrupting their workflows. Using notifications and badges can increase user re-engagement with your app.
 
-With Microsoft Edge, notifications integrate with the system notification center, and badges appear on app icons in the Task Bar.
+With Microsoft Edge, notifications integrate with the system notification center, and badges appear on app icons in the taskbar.
 
 To learn how to use these APIs, see [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).

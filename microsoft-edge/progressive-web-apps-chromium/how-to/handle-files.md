@@ -73,7 +73,7 @@ To check whether the File Handling API is available, test whether the `launchQue
 if ('launchQueue' in window) {
     console.log('File Handling API is supported!');
 } else {
-    console.error("File Handling API isn't supported!");
+    console.error('File Handling API is not supported!');
 }
 ```
 
@@ -93,7 +93,7 @@ if ('launchQueue' in window) {
         handleFiles(launchParams.files);
     });
 } else {
-    console.error("File Handling API isn't supported!");
+    console.error('File Handling API is not supported!');
 }
 
 async function handleFiles(files) {

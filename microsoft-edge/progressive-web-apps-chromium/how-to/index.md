@@ -14,7 +14,7 @@ keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, se
 
 Progressive Web Apps (PWAs) are web apps that are [progressively enhanced](https://en.wikipedia.org/wiki/Progressive_enhancement).  The progressive enhancements include app-like features, such as installation, offline support, and push notifications.
 
-You can also package your PWA for app stores, such as Microsoft Store, Google Play, and Mac App Store.  The Microsoft Store is the commercial app store that's built into Windows 10.
+You can also package your PWA for app stores, such as Microsoft Store, Google Play, and Mac App Store.  The Microsoft Store is the commercial app store that's built into Windows 10 and later.
 
 In this overview of PWA basics, you create a simple web app and extend it as a PWA.  The finished project works across modern browsers.
 
@@ -36,17 +36,17 @@ To create an empty web app, follow the steps in [Node Express App Generator](htt
 
 In the prompt, run the following commands, which create an empty web app and install any dependencies:
 
-```console
+```Shell
 npx express-generator --no-view
 ```
 
-```console
+```Shell
 npm install
 ```
 
 You now have a simple, functional web app.  To start your web app, run the following command:
 
-```console
+```Shell
 npm start
 ```
 
@@ -132,7 +132,7 @@ Service workers are specialized [Web Workers](https://developer.mozilla.org/docs
 
 Service workers are defined in a special JavaScript file, described in [Using Service Workers](https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers) and [Service Worker API](https://developer.mozilla.org/docs/Web/API/Service_Worker_API).
 
-To build a service worker in your project, use the **Cache-first network** service-worker recipe from PWA Builder, as follows.
+To build a service worker in your project, use the **Cache-first network** Service Worker recipe from PWA Builder, as follows.
 
 1. Copy the source files [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js) and [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js) to the `public` folder in your web app project.
 
@@ -150,7 +150,7 @@ Confirm that your service worker runs, as follows:
 
 1.  Go to your web app at `http://localhost:3000`.  If your web app isn't available, run the following command:
 
-    ```console
+    ```Shell
     npm start
     ```
 
@@ -207,7 +207,7 @@ Provide a rich [Offline experience](./offline.md).  Make the app work even if th
 
 ### Use validation and testing practices
 
-Use software [Validation and testing practices](https://webhint.io).  Use code quality tools like the [Webhint](https://webhint.io) linter to optimize the efficiency, robustness, safety, and accessibility of your app.
+Use software validation and testing practices.  Use code quality tools such as the [Webhint](https://webhint.io) linter to optimize the efficiency, robustness, safety, and accessibility of your app.
 
 
 <!-- ====================================================================== -->

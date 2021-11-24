@@ -15,14 +15,13 @@ App shortcuts let users accomplish common tasks more quickly and easily and can 
 
 On mobile devices, shortcuts can usually be accessed by long-pressing an app icon.  On Windows, shortcuts are integrated as Jumplists.  Jumplists define popup menus that appear when you right-click a tile in the Start menu, or right-click an icon in the taskbar.
 
-The next figure shows shortcuts on Microsoft Edge on iOS:
+The next figure shows shortcuts on Microsoft Edge, on iOS:
 
 :::image type="content" source="../media/edge-ios-shortcuts.png" alt-text="Shortcuts on Microsoft Edge on iOS.":::
 
-<!-- remove/replace screenshot? -->
-The next figure shows a jumplist on the Twitter app on Windows:
+The next figure shows a jumplist on the Webboard app, on Windows:
 
-:::image type="content" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="Jumplist on the Twitter app on Windows.":::
+:::image type="content" source="../media/pwa-shortcuts-in-taskbar.png" alt-text="A jumplist on the Webboard app on Windows.":::
 
 Progressive Web Apps (PWAs) can also define common tasks as shortcuts in the [Web App Manifest](./web-app-manifests.md).
 

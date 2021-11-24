@@ -23,11 +23,11 @@ If you have Microsoft Edge installed, you can use [puppeteer-core](https://pptr.
 
 You can add `puppeteer-core` to your website or app by using one of the following commands:
 
-```console
+```shell
 npm i puppeteer-core
 ```
 
-```console
+```shell
 yarn add puppeteer-core
 ```
 
@@ -36,8 +36,6 @@ yarn add puppeteer-core
 ## Launch Microsoft Edge with puppeteer-core
 
 `puppeteer-core` is similar to other browser-testing-frameworks, such as [WebDriver](../webdriver-chromium/index.md).  You create an instance of the browser, open a webpage, and then manipulate the webpage by using the Puppeteer API.
-
-Microsoft Edge (EdgeHTML) doesn't work with `puppeteer-core`.  You must install the [Microsoft Edge Insider channels](https://www.microsoftedgeinsider.com/download) to follow this example.
 
 To use `puppeteer-core` to launch Microsoft Edge:
 
@@ -66,11 +64,11 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
 1.  Or, to programmatically find the executable path, first install the [edge-paths](https://www.npmjs.com/package/edge-paths) package by running one of the following commands:
 
-    ```console
+    ```shell
     npm i edge-paths
     ```
     
-    ```console
+    ```shell
     yarn add edge-paths
     ```
     
@@ -86,7 +84,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
 1.  Run `example.js` from the command line:
 
-    ```console
+    ```shell
     node example.js
     ```
 

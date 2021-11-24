@@ -187,7 +187,7 @@ To add a registry key to the directory with the manifest key, complete one of th
 
     1.  Run the following command.
 
-        ```console
+        ```shell
         REG ADD "HKCU\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app" /ve /t REG_SZ /d "C:\path\to\nmh-manifest.json" /f
         ```
 
@@ -195,7 +195,7 @@ To add a registry key to the directory with the manifest key, complete one of th
 
     1.  Copy the following command into a `.reg` file.
 
-        ```console
+        ```shell
         Windows Registry Editor Version 5.00
         [HKEY_CURRENT_USER\Software\Microsoft\Edge\NativeMessagingHosts\com.my_company.my_app]
         @="C:\\path\\to\\nmh-manifest.json"

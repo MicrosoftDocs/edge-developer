@@ -76,7 +76,7 @@ After your emulator is booted, select the **Browser** icon, and test your site o
 
 To install the Chromium Content Shell for Android, keep your emulator running and run the following command:
 
-```console
+```shell
 git clone https://github.com/PaulKinlan/chromium-android-installer.git
 chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
@@ -98,7 +98,7 @@ Similar to the Chromium Content Shell, you are able to get an APK to install Fir
 
 To install the file onto an open emulator or connected Android device, run the following command:
 
-```console
+```shell
 adb install <path_to_APK>/fennec-XX.X.XX.android-arm.apk
 ```
 

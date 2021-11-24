@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, Windows, theme, color, icon
 ---
 # Define icons and a theme color
 
-Unlike websites, PWAs that are installed on Windows can be customized in the way they appear in the operating system (OS).  A PWA can define a set of icons and a theme color for the title bar.
+PWAs that are installed on Windows can be customized in the way they appear in the operating system (OS).  A PWA can define a set of icons and a theme color for the title bar.
 
 
 <!-- ====================================================================== -->

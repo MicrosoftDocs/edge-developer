@@ -59,7 +59,7 @@ If Internet Explorer isn't available on your computer, to debug the content of a
 
 Launch Microsoft Edge with remote debugging turned on from the command-line interface.  Microsoft Visual Studio, Microsoft Visual Studio Code, and other development tools typically run a command to launch Microsoft Edge.  The following command launches Microsoft Edge with the remote debugging port set to `9222`.
 
-```console
+```shell
 start msedge --remote-debugging-port=9222
 ```
 

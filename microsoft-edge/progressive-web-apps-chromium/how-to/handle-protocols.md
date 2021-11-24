@@ -11,7 +11,7 @@ keywords: progressive web apps, PWA, Edge, JavaScript, protocol
 ---
 # Handle protocols in Progressive Web Apps
 
-To create a more engaging experience, Progressive Web Apps can handle multiple protocols, such as `http` or `mailto`.
+To create a more engaging experience, Progressive Web Apps can handle multiple protocols, such as `mailto`, `geo` (a geolocation protocol), or `webcal` (a calendar protocol).
 
 A URL (or Uniform Resource Locator) is a string that allows clients to identify a resource on the Web.  The first part of a URL is the _protocol_, which lets clients know how to retrieve the resource.  Examples of protocols include:
 
@@ -19,6 +19,11 @@ A URL (or Uniform Resource Locator) is a string that allows clients to identify 
 |:--- |:--- |
 | `http` | http://contoso.com/ |
 | `mailto` | mailto:contact@contoso.com |
+
+<!--
+| `geo` | tbd |
+| `webcal` | tbd |
+-->
 
 With Protocol Handling, when a PWA is being installed, the PWA can register to handle certain allowed protocols.  For example, an email client app can register to handle the `mailto` protocol, or a geolocation app can register to handle the `geo` protocol.
 
