@@ -17,7 +17,7 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 *  The title of the extension.
 *  The permissions that are needed for the extension to run.
 
-The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, navigate to [Prepare to update your extensions from Manifest v2 to v3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
+The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Prepare to update your extensions from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ====================================================================== -->
