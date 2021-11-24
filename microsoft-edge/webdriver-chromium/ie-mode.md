@@ -26,6 +26,10 @@ To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](http
 :::image type="content" source="./media/iedriver-install.msft.png" alt-text="The IEDriver section of the Downloads page for Selenium." lightbox="./media/iedriver-install.msft.png":::
 
 
+## Required Configuration
+
+Complete the requirements in [Selenium's required configuration](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration) to configure IEDriver, Windows, and Microsoft Edge correctly.
+
 <!-- ====================================================================== -->
 ## Automate IE mode in Microsoft Edge
 
@@ -212,7 +216,7 @@ ieOptions.setEdgePath('C:/Program Files (x86)/Microsoft/Edge/Application/msedge.
 
 
 <!-- ====================================================================== -->
-## Start InternetExplorerDriver
+## Start IEDriver
 
 Start IEDriver.  IEDriver launches Microsoft Edge and then loads your web content in IE mode.
 
@@ -327,25 +331,11 @@ while (newHandles.length == initialHandleCount) {
 
 ### Creating and switching between tabs
 
-<!--
-Todo: incorporate feedback about this requirement into this section. We need to verify this feedback with the engineering team because we were able to get a sample that was broken working with these changes.
-
-"This isn't a requirement. We do the waiting internally. The limitation is that if multiple windows are opened at nearly the same time, then our wait logic we added to the "new window" command might not be able to accurately detect which window is the one you opened.
-
-Some potential workarounds are:
-
-- Space out your new window commands and avoid page-initiated popups etc so the driver doesn't get confused.
-- Set the page load strategy to "none" and poll the window handles yourself since you (i.e. the developer) should hopefully know better than IEDriver which window is the one you are looking for.
-
-So the workarounds look a lot like what you've described here. I would just reframe it a bit that you don't need to resort to these workarounds unless your existing test code is having trouble with new window commands."
--->
-
 If your test code switches between multiple tabs in the same Microsoft Edge window, tabs that become inactive may not be included in the list of handles returned by [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles).  In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE, regardless of activation state.  When using Microsoft Edge in IE mode, if your test switches focus away from a certain tab and you would like to be able to switch back to that tab later, you must store a copy of the tab's window handle.
 
 <!-- ====================================================================== -->
 ## See also
 
-<!-- 1st link = https://docs.microsoft.com/microsoft-edge/webdriver-chromium -->
 *  [Use WebDriver to automate Microsoft Edge](/microsoft-edge/webdriver-chromium) - An overview of automating Microsoft Edge with the WebDriver protocol.
 *  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
 *  [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
