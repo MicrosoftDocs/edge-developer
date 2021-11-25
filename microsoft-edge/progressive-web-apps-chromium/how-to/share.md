@@ -17,16 +17,16 @@ There are two directions to sharing content, and both directions can be handled 
 
 | Direction | Description |
 |---|---|
-| Sharing content | To share content, a PWA generates content (text, link, or files) and hands it off to the operating system.  The operating system lets the user decide which app they want to use to receive that content. |
+| Sharing content | To share content, a PWA generates content (such as text, links, or files) and hands off the shared content to the operating system.  The operating system lets the user decide which app they want to use to receive that content. |
 | Receiving shared content | To receive content, a PWA acts as a content target.  The PWA is registered with the operating system as a content-sharing target. |
 
-PWAs that register as share targets feel natively integrated into the OS and are more engaging to users.
+PWAs that register as share targets feel natively integrated into the OS, and are more engaging to users.
 
 
 <!-- ====================================================================== -->
 ## Sharing content
 
-PWAs can use the [Web Share API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) to trigger the operating system share dialog.
+PWAs can use the [Web Share API](https://developer.mozilla.org/docs/Web/API/Web_Share_API) to trigger displaying the operating system share dialog.
 
 > [!NOTE]
 > Web sharing only works on sites served over HTTPS (which is the case for PWAs), and can only be invoked in response to a user action.
@@ -52,9 +52,9 @@ function shareSomeContent(title, text, url) {
 }
 ```
 
-In the above code, we first check if the browser supports Web sharing by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
+In the above code, we first check whether the browser supports Web sharing, by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
 
-Because a promise is used here, the above code can be rewritten as an `async` function, as follows:
+Because a Promise is used here, the above code can be rewritten as an `async` function, as follows:
 
 ```javascript
 async function shareSomeContent(title, text, url) {
@@ -82,7 +82,7 @@ Once the user has chosen an app to receive the shared content, it is up to this 
 
 The `navigator.share` function also accepts a `files` array to share files with other apps.
 
-It is important to test whether sharing files is supported by the browser before sharing them. To check that sharing files is supported, use the `navigator.canShare` function:
+It is important to test whether sharing files is supported by the browser before sharing them. To check whether sharing files is supported, use the `navigator.canShare` function:
 
 ```javascript
 function shareSomeFiles(files) {
@@ -128,7 +128,7 @@ To test the feature:
 
 The Windows **Share** dialog is displayed.  The user picks an app in which to share the content:
 
-:::image type="content" source="../media/devtools-tips-share.png" alt-text="The Windows Share dialog allows users to pick an app to share the content with.":::
+:::image type="content" source="../media/devtools-tips-share.png" alt-text="The Windows Share dialog allows the user to pick which app should receive the shared content.":::
 
 You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).  The app uses the Web Share API in the [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) source file.
 
@@ -136,11 +136,10 @@ You can find the [source code on GitHub](https://github.com/captainbrosset/devto
 <!-- ====================================================================== -->
 ## Receiving shared content
 
-Using the Web Share Target API, PWAs can also register to be displayed as apps in the system share dialog, and handle shared content coming from other apps.  You can learn more about the Web Share Target API in the [Web Share Target API W3C specification draft](https://w3c.github.io/web-share-target/level-2/).
+By using the [Web Share Target](https://w3c.github.io/web-share-target/level-2/) API, a PWA can register to be displayed as an app in the system share dialog.  The PWA can then use the Web Share Target API to handle shared content coming in from other apps.
 
 > [!NOTE]
 > Only installed PWAs can register as share targets.
-
 
 ### Register as a target
 
@@ -180,7 +179,6 @@ If you have existing code that uses other query parameter names, you can map the
 }
 ```
 
-
 ### Handle GET shared data
 
 To handle the data shared over the GET request in your PWA code, use the `URL` constructor to extract the query parameters:
@@ -194,7 +192,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const sharedUrl = url.searchParams.get('url');
 });
 ```
-
 
 ### Handle POST shared data
 
@@ -238,10 +235,12 @@ self.addEventListener('fetch', event => {
 ```
 
 In the above code:
-1. The service worker intercepts the `POST` request.
-1. Uses the data in some way (such as to store the content locally).
-1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or send the content to the server later when connectivity is restored (such as by using [Background Sync](./background-syncs.md)).
 
+1. The service worker intercepts the `POST` request.
+
+1. Uses the data in some way (such as to store the content locally).
+
+1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](./background-syncs.md)).
 
 ### Handle shared files
 
@@ -266,7 +265,7 @@ Apps can also handle shared files. To handle files in your PWA, you must use the
 }
 ```
 
-The above manifest code tells the system that your app can accept text files with various mime types.  File name extensions, such as `.txt`, can also be passed in the `accept` array.
+The above manifest code tells the system that your app can accept text files with various MIME types.  File name extensions, such as `.txt`, can also be passed in the `accept` array.
 
 To access the shared file, use the request `formData` like before and use a `FileReader` to read the content, as follows:
 

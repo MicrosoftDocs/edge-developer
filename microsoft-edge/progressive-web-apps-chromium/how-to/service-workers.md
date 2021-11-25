@@ -94,7 +94,7 @@ Here are a few examples of what you can do within the `fetch` handler:
 <!-- ====================================================================== -->
 ## Push Notifications
 
-Service Workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, see [Re-engage users with notifications, push messages, and badges](./notifications-badges.md).
+Service Workers can push notifications to users.  Push notifications can prompt users to re-engage with your application after time has elapsed.  To learn more, see [Re-engage users with badges, notifications, and push messages](./notifications-badges.md).
 
 
 <!-- ====================================================================== -->

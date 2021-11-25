@@ -420,7 +420,7 @@
               items:
                 - name: Define icons and a theme color
                   href: progressive-web-apps-chromium/how-to/icon-theme-color.md
-                - name: Re-engage users with notifications, push messages, and badges
+                - name: Re-engage users with badges, notifications, and push messages
                   href: progressive-web-apps-chromium/how-to/notifications-badges.md
                 - name: Handle files
                   href: progressive-web-apps-chromium/how-to/handle-files.md

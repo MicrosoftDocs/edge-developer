@@ -1,5 +1,5 @@
 ---
-title: Re-engage users with notifications, push messages, and badges
+title: Re-engage users with badges, notifications, and push messages
 description: Learn how to use the Push, Notifications, and Badging APIs to provide re-engaging functionality in your Progressive Web App (PWA).
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,13 +9,79 @@ ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, Windows, push, notifications, badges
 ---
-# Re-engage users with notifications, push messages, and badges
+# Re-engage users with badges, notifications, and push messages
 
-Using Background Sync, Periodic Background Sync, and Background Fetch, Progressive Web Apps are able to do work when the app isn't running, such as updating data in the cache, or sending messages when the device regains connectivity.  To re-engage the user with the app, after a background task has been completed, notifications and badges can be used.
+Progressive Web Apps (PWAs) are able to do work when the app isn't running, such as updating data in the cache, or sending messages when the device regains connectivity.  To do this, use the following APIs, which are described in [Synchronize and update a PWA in the background](background-syncs.md):
 
-Notifications are useful for apps to take part in the system's notification center and display images and text information. Notifications are useful to alert the user about an important change of state in your app.  However, notifications should rarely be used, because they tend to be disruptive to the user's workflow.
+*  Background Sync API
+*  Periodic Background Sync API
+*  Background Fetch API
 
-Badges can be more user-friendly, and can therefore be used more frequently. Badges don't interrupt the user's workflow, and are useful for displaying a small amount of information, such as the number of messages received.
+To re-engage the user with the app after a background task has been completed, you can use notifications and badges.  To do this, use the following APIs:
+
+*  App Badging API
+*  Notifications API
+*  Push API
+
+Badges are user-friendly, and can be used frequently.  Badges don't interrupt the user's workflow, and are useful for displaying a small amount of information, such as the number of messages received.
+
+Notifications are useful for apps to take part in the system's notification center and display images and text information.  Notifications are useful to alert the user about an important change of state in your app.  However, notifications should be used rarely, because they tend to be disruptive to the user's workflow.
+
+
+<!-- ====================================================================== -->
+## Display a badge on the app icon
+
+PWAs can display a badge on their app icon by using the [App Badging API](https://developer.mozilla.org/docs/Web/API/Badging_API).  The badge can be empty or it can contain a number.
+
+### Check for support
+
+Before using the App Badging API, first check whether the App Badging API is supported in the browser engine that your app runs in, as follows:
+
+```javascript
+if (navigator.setAppBadge) {
+    console.log("The App Badging API is supported!");
+}
+```
+
+### Displaying the badge
+
+To set the badge, use the following code from your app frontend or service worker.
+
+```javascript
+// To display an empty badge
+navigator.setAppBadge();
+
+// To display a number in the badge
+navigator.setAppBadge(42);
+```
+
+:::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="A PWA icon in the Windows Taskbar, with a badge showing the number 42.":::
+
+The `setAppBadge` function returns a Promise, which can be used to know when the badge was added, and to catch potential errors, as follows:
+
+```javascript
+navigator.setAppBadge(42).then(() => {
+    console.log("The badge was added");
+}).catch(e => {
+    console.error("Error displaying the badge", e);
+});
+```
+
+### Clearing the badge
+
+To remove the badge on the app icon, use the following code from your frontend or service worker:
+
+```javascript
+navigator.clearAppBadge();
+```
+
+The `clearAppBadge` also returns a Promise that can be used to handle potential errors.
+
+Another way to clear a badge is to call `setAppBadge` again, but pass `0` as the value, this time:
+
+```javascript
+navigator.setAppBadge(0);
+```
 
 
 <!-- ====================================================================== -->
@@ -25,7 +91,7 @@ PWAs can display notifications by using the [Notifications API](https://develope
 
 ### Check for support
 
-Before using the API, check that it is supported, as follows.
+Before using the API, check that it is supported, as follows:
 
 ```javascript
 if ("Notification" in window) {
@@ -65,9 +131,9 @@ Once you know that the API is supported and the user has accepted notifications,
 const notification = new Notification("Hello World!");
 ```
 
-:::image type="content" source="../media/notification-text-only.png" alt-text="A text only notification.":::
+:::image type="content" source="../media/notification-text-only.png" alt-text="A text-only notification.":::
 
-The above code displays a text-only notification message, but you can also customize the message with additional properties:
+The above code displays a text-only notification message, but you can also customize the message by including additional `body` and `icon` properties:
 
 ```javascript
 const notification = new Notification("Hello World!", {
@@ -84,11 +150,11 @@ You can also display notifications from your app's service worker. This is usefu
 self.registration.showNotification("Hello from the Service Worker!");
 ```
 
-The `showNotification` function supports the same arguments as the `Notification` constructor used in the previous example, as well as the `actions` property described in the following section.
+The `showNotification` function supports the same arguments as the `Notification` constructor used in the previous example.  The `showNotification` function also supports the `actions` property, which is described in the following section.
 
 ### Add actions to notifications
 
-It's possible to add actions for the user to perform, in a notification. This is only supported in persistent notifications that are shown using the `ServiceWorkerRegistration.showNotification` function.
+In a notification, it's possible to add actions for the user to perform.  This is only supported in persistent notifications which are shown by using the `ServiceWorkerRegistration.showNotification` function.
 
 ```javascript
 self.registration.showNotification("Your content is ready", {
@@ -107,7 +173,7 @@ self.registration.showNotification("Your content is ready", {
 });
 ```
 
-:::image type="content" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions":::
+:::image type="content" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions.":::
 
 When the user clicks one of the action buttons, your PWA can handle the click by listening for the `notificationclick` event.  When a `notificationclick` event is received, close the notification and execute some code:
 
@@ -128,62 +194,6 @@ self.addEventListener('notificationclick', event => {
 ```
 
 To learn more about notification actions, see [NotificationAction](https://developer.mozilla.org/docs/Web/API/NotificationAction) at MDN.
-
-
-<!-- ====================================================================== -->
-## Display a badge on the app icon
-
-PWAs can display a badge on their app icon by using the [App Badging API](https://developer.mozilla.org/docs/Web/API/Badging_API). The badge can either be empty or contain a number.
-
-### Check for support
-
-Before using the App Badging API, check that it is supported in the browser engine your app runs in, as follows:
-
-```javascript
-if (navigator.setAppBadge) {
-    console.log("The App Badging API is supported!");
-}
-```
-
-### Displaying the badge
-
-To set the badge, use the following code from your app frontend or service worker.
-
-```javascript
-// To display an empty badge
-navigator.setAppBadge();
-
-// To display a number in the badge
-navigator.setAppBadge(42);
-```
-
-:::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="A PWA icon in the Windows Taskbar, with a badge showing the number 42":::
-
-The `setAppBadge` function returns a Promise, which can be used to know when the badge was added, and to catch potential errors, as follows:
-
-```javascript
-navigator.setAppBadge(42).then(() => {
-    console.log("The badge was added");
-}).catch(e => {
-    console.error("Error displaying the badge", e);
-});
-```
-
-### Clearing the badge
-
-To remove the badge on the app icon, use the following code from your frontend or service worker.
-
-```javascript
-navigator.clearAppBadge();
-```
-
-The `clearAppBadge` also returns a Promise that can be used to handle potential errors.
-
-Another way to clear a badge is to call `setAppBadge` again, but pass `0` as the value, this time:
-
-```javascript
-navigator.setAppBadge(0);
-```
 
 
 <!-- ====================================================================== -->
