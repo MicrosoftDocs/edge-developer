@@ -40,8 +40,8 @@ Features:
 
 *  [Web Share](./how-to/share.md#sharing-content)
 *  [URL handling](./how-to/handle-urls.md)
-*  [Background sync](./how-to/background-syncs.md#synchronize-data-with-the-server-with-the-background-sync-api)
-*  [Periodic background sync](./how-to/background-syncs.md#regularly-get-fresh-content-with-the-periodic-background-sync-api)
+*  [Background sync](./how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
+*  [Periodic background sync](./how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
 *  [Notifications](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
 :::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips Progressive Web App displays a list of tips and tricks for DevTools.":::
@@ -73,7 +73,7 @@ A Progressive Web App to search and store movies.
 
 Features:
 
-*  [Background sync](./how-to/background-syncs.md#synchronize-data-with-the-server-with-the-background-sync-api)
+*  [Background sync](./how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
 *  [Notifications](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
 :::image type="content" source="./media/my-movies.png" alt-text="The My Movies app.":::

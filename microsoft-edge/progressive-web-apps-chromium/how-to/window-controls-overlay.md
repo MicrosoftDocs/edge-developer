@@ -160,7 +160,7 @@ if ('windowControlsOverlay' in navigator) {
 
 My Tracks is a PWA demo app that uses the Window Controls Overlay feature.
 
-1. In Microsoft Edge, [Enable the Window Controls Overlay](#enable-the-feature-in-your-app).
+1. In Microsoft Edge, [Enable the Window Controls Overlay](#enable-the-window-controls-overlay-in-your-app).
 
 2. Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
 
