@@ -11,7 +11,7 @@ keywords: microsoft edge, web development, developer, tools, automation, test
 ---
 # Puppeteer overview
 
-[Puppeteer](https://pptr.dev) is a [Node](https://nodejs.org) library that provides a high-level API to control Microsoft Edge using the [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol).  Puppeteer launches [headless browsers](https://en.wikipedia.org/wiki/Headless_browser) by default.  Headless browsers do not display a UI, so instead you must use the command line.  You can also configure Puppeteer to run full (non-headless) Microsoft Edge as well.
+[Puppeteer](https://pptr.dev) is a [Node](https://nodejs.org) library that provides a high-level API to control Microsoft Edge using the [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol).  Puppeteer launches [headless browsers](https://en.wikipedia.org/wiki/Headless_browser) by default.  Headless browsers do not display a user interface (UI), so you must use the command line.  You can also configure Puppeteer to run full (non-headless) Microsoft Edge.
 
 By default, when you install Puppeteer, the installer downloads a recent version of [Chromium](https://www.chromium.org/Home), the open-source browser that [Microsoft Edge is also built upon](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration).
 
@@ -72,7 +72,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
     yarn add edge-paths
     ```
     
-1.  Then, if you're using `edge-paths` to find the executable path, run code like the code sample below, which uses the [edge-paths](https://www.npmjs.com/package/edge-paths) package to programmatically find the path to your installation of Microsoft Edge on your OS:
+1.  Then, if you're using `edge-paths` to find the executable path, run code like the following sample. It uses the [edge-paths](https://www.npmjs.com/package/edge-paths) package to programmatically find the path to your installation of Microsoft Edge on your OS:
 
     ```javascript
     const edgePaths = require("edge-paths");
@@ -94,7 +94,7 @@ To use `puppeteer-core` to launch Microsoft Edge:
 
      :::image type="content" source="./media/puppeteer-example.png" alt-text="The example.png file produced by example.js." lightbox="./media/puppeteer-example.png":::
 
-The above example demonstrates basic automation and testing scenarios that you can cover by using Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, check out [Puppeteer](https://pptr.dev).
+The preceding example demonstrates basic automation and testing scenarios that you can cover using Puppeteer and `puppeteer-core`.  For more information about Puppeteer and how it works, check out [Puppeteer](https://pptr.dev).
 
 
 <!-- ====================================================================== -->
