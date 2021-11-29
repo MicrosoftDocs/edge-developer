@@ -53,38 +53,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Promotions
 
-*  ICoreWebView2_7 (ADDED:)
-   *  PrintToPdf
-   *  CreatePrintSettings
-*  ICoreWebView2PrintToPdfCompletedHandler (ADDED)
-*  ICoreWebView2PrintSettings (ADDED:)
-   *  get_Orientation
-   *  put_Orientation
-   *  get_ScaleFactor
-   *  put_ScaleFactor
-   *  get_PageWidth
-   *  put_PageWidth
-   *  get_PageHeight
-   *  put_PageHeight
-   *  get_MarginTop
-   *  put_MarginTop
-   *  get_MarginBottom
-   *  put_MarginBottom
-   *  get_MarginLeft
-   *  put_MarginLeft
-   *  get_MarginRight
-   *  put_MarginRight
-   *  get_ShouldPrintBackgrounds
-   *  put_ShouldPrintBackgrounds
-   *  get_ShouldPrintSelectionOnly
-   *  put_ShouldPrintSelectionOnly
-   *  get_ShouldPrintHeaderAndFooter
-   *  put_ShouldPrintHeaderAndFooter
-   *  get_HeaderTitle
-   *  put_HeaderTitle
-   *  get_FooterUri
-   *  put_FooterUri
-   *  get_UserDataFolder
+*   [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
 
 
 <!-- ====================================================================== -->
@@ -100,66 +69,30 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental features
 
-*  ICoreWebView2ExperimentalFrame2 (ADDED:)
+* Added the following APIs to iframes in WebView2:
    *  PostWebMessageAsJson
    *  PostWebMessageAsString
    *  add_WebMessageReceived
    *  remove_WebMessageReceived
-*  ICoreWebView2ExperimentalFrameWebMessageReceivedEventHandler (ADDED)
-*  ICoreWebView2ExperimentalProcessInfo (ADDED:)
-   *  get_ProcessId
-   *  get_Kind
-*  ICoreWebView2ExperimentalProcessInfoCollection (ADDED:)
-   *  get_Count
-   *  GetValueAtIndex
-*  ICoreWebView2ExperimentalProcessInfosChangedEventHandler (ADDED)
-*  ICoreWebView2ExperimentalNavigationStartingEventArgs (ADDED)
-*  ICoreWebView2Experimental9 (REMOVED:)
-   *  add_IsMutedChanged
-   *  remove_IsMutedChanged
-   *  get_IsMuted
-   *  put_IsMuted
-   *  add_IsDocumentPlayingAudioChanged
-   *  remove_IsDocumentPlayingAudioChanged
-   *  get_IsDocumentPlayingAudio
-   *  add_IsDefaultDownloadDialogOpenChanged
-   *  remove_IsDefaultDownloadDialogOpenChanged
-   *  get_IsDefaultDownloadDialogOpen
-   *  OpenDefaultDownloadDialog
-   *  CloseDefaultDownloadDialog
-   *  get_DefaultDownloadDialogCornerAlignment
-   *  put_DefaultDownloadDialogCornerAlignment
-   *  get_DefaultDownloadDialogMargin
-   *  put_DefaultDownloadDialogMargin
-*  ICoreWebView2ExperimentalIsDefaultDownloadDialogOpenChangedEventHandler (REMOVED)
-*  ICoreWebView2ExperimentalIsDocumentPlayingAudioChangedEventHandler (REMOVED)
-*  ICoreWebView2ExperimentalIsMutedChangedEventHandler (REMOVED)
+
+* Added ProcessInfo APIs to provide more information on WebView2 processes:
+    *  ICoreWebView2ExperimentalProcessInfo
+       *  get_ProcessId
+       *  get_Kind
+    *  ICoreWebView2ExperimentalProcessInfoCollection
+       *  get_Count
+       *  GetValueAtIndex
 
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:
 
-*  ICoreWebView2_8 (ADDED:)
-   *  add_IsMutedChanged
-   *  remove_IsMutedChanged
-   *  get_IsMuted
-   *  put_IsMuted
-   *  add_IsDocumentPlayingAudioChanged
-   *  remove_IsDocumentPlayingAudioChanged
-   *  get_IsDocumentPlayingAudio
-*  ICoreWebView2_9 (ADDED:)
-   *  add_IsDefaultDownloadDialogOpenChanged
-   *  remove_IsDefaultDownloadDialogOpenChanged
-   *  get_IsDefaultDownloadDialogOpen
-   *  OpenDefaultDownloadDialog
-   *  CloseDefaultDownloadDialog
-   *  get_DefaultDownloadDialogCornerAlignment
-   *  put_DefaultDownloadDialogCornerAlignment
-   *  get_DefaultDownloadDialogMargin
-   *  put_DefaultDownloadDialogMargin
-*  ICoreWebView2IsDefaultDownloadDialogOpenChangedEventHandler (ADDED)
-*  ICoreWebView2IsDocumentPlayingAudioChangedEventHandler (ADDED)
-*  ICoreWebView2IsMutedChangedEventHandler (ADDED)
+*  The [media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
+*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true).  This API enables:
+   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
+   *  Programmatically opening and closing the default download dialog.
+   *  Making changes in response to the dialog opening and closing.
+
 
 #### Bug fixes
 
