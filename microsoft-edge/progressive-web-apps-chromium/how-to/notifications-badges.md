@@ -95,7 +95,7 @@ Before using the API, check that it is supported, as follows:
 
 ```javascript
 if ("Notification" in window) {
-    console.log("The Notifications API is support");
+    console.log("The Notifications API is supported");
 }
 ```
 
@@ -109,7 +109,7 @@ Requesting permission should only be done in response to a user action. This is 
 button.addEventListener("click", () => {
     Notifications.requestPermission().then(permission => {
         if (permission === "granted") {
-            console.log("The user accepted!");
+            console.log("The user accepted");
         }
     });
 });

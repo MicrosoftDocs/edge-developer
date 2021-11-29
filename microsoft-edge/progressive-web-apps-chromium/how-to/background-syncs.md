@@ -281,7 +281,8 @@ To start a background fetch:
 
 ```javascript
 navigator.serviceWorker.ready.then(async registration => {
-    const fetch = await registration.backgroundFetch.fetch('my-download-id', fileUrls, options);
+    const fetch = await registration.backgroundFetch.fetch('my-download-id', 
+                                                           fileUrls, options);
 });
 ```
 

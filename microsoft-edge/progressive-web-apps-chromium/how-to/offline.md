@@ -49,13 +49,15 @@ self.addEventListener( "fetch", event => {
     // If we are requesting an HTML page.
     if ( request.headers.get("Accept").includes("text/html") ) {
         event.respondWith(
-            // Check the cache first to see if the asset exists, and if it does, return the cached asset.
+            // Check the cache first to see if the asset exists, and if it does, 
+            // return the cached asset.
             caches.match( request )
                   .then( cached_result => {
                 if ( cached_result ) {
                     return cached_result;
                 }
-                // If the asset isn't in the cache, fallback to a network request for the asset, and proceed to cache the result.
+                // If the asset isn't in the cache, fall back to a network request 
+                // for the asset, and proceed to cache the result.
                 return fetch( request )
                        .then( response => {
                     const copy = response.clone();
@@ -68,7 +70,8 @@ self.addEventListener( "fetch", event => {
                     );
                     return response;
                 })
-                // If the network is unavailable to make a request, pull the offline page out of the cache.
+                // If the network is unavailable to make a request, pull the offline
+                // page out of the cache.
                 .catch(() => caches.match( "/offline/" ));
             })
         ); // end respondWith
@@ -132,7 +135,8 @@ caches.open( "pages" )
 
 function insertOfflineLink( request ) {
     var data = JSON.parse( localStorage.getItem( request.url ) );
-    // If data exists and this page isn't an offline page (assumes that offline pages have the word "offline" in the URL).
+    // If data exists and this page isn't an offline page (assumes that offline 
+    // pages have the word "offline" in the URL).
     if ( data && request.url.indexOf('offline') < 0  )
     {
         // Build a link and insert it into the page.

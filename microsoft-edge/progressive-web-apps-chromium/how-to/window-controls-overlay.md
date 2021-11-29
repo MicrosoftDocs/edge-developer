@@ -11,13 +11,13 @@ keywords: progressive web apps, PWA, Edge, JavaScript, window controls overlay, 
 ---
 # Display content in the title bar
 
-While it is possible for PWAs on mobile to define how they want to be displayed with the [display](https://developer.mozilla.org/docs/Web/Manifest/display) property in the app manifest file, desktop PWAs can't use this to create an immersive, native-like, experience.
+A PWA can define how it should be displayed on mobile platforms, by using the [display](https://developer.mozilla.org/docs/Web/Manifest/display) property in the app manifest file.  However, to create an immersive, native-like experience, _desktop_ PWAs can't use this approach.
 
-By default, the app area starts right below the reserved title bar area.
+By default, the app area starts immediately below the reserved title bar area:
 
 :::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo app.":::
 
-Displaying content where the title bar normally is can help PWAs feel more native.  Many desktop applications, such as Visual Studio Code, Microsoft Teams, and Microsoft Edge already do this.
+Displaying content where the title bar normally is can help PWAs feel more native.  Many desktop applications, such as Visual Studio Code, Microsoft Teams, and Microsoft Edge already do this:
 
 :::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code displays content in the title bar area.":::
 
