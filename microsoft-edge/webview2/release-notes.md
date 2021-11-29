@@ -30,6 +30,44 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
 
+<!-- ====================================================================== -->
+## 1.0.1083-prerelease
+
+Release Date: November 29, 2021
+
+[NuGet package for WebView2 SDK 1.0.1083-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1083-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 97.0.1083.0 or higher.
+
+### Experimental features
+
+* Added the following APIs to iframes in WebView2:
+   *  `PostWebMessageAsJson`
+   *  `PostWebMessageAsString`
+   *  `add_WebMessageReceived`
+   *  `remove_WebMessageReceived`
+
+* Added ProcessInfo APIs to provide more information on WebView2 processes and process collections.
+
+### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:
+
+*  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
+*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true).  This API enables:
+   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
+   *  Programmatically opening and closing the default download dialog.
+   *  Making changes in response to the dialog opening and closing.
+
+### Bug fixes
+
+*   Fixed a focus issue after closing the file picker dialog.
+*   Fixed a bug where WebView2 doesn't receive spatial input on initial launch.
+*   Fixed an issue that prevented single sign-on in WebView2.
+*   Resolved a bug where the download dialog was not moving with the window on WPF and WinForms.
+*   Updated compatible command line check to prevent needing a version check for optional switches.
+*   Fixed an error that was causing "Microsoft Edge" branding to appear in the accessibility tree.
+
 
 <!-- ====================================================================== -->
 ## 1.0.1054.31
@@ -42,66 +80,14 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-*   General reliability fix.
+*   General reliability fixes.
 
-#### Bug fixes
+### Bug fixes
 
 *   Turned off the Control-flow Enforcement Technology (CET) Shadow Stack feature for v96 WebView2 Runtime.
-*   Fixed an issue that was causing slow startup times when launching in a .NET single-file application.
-*   Fixed a crash caused by Microsoft Edge browser policies getting incorrectly applied to WebView2 as well.
-*   Fixed a crash that occurred when a pop-up window with a download dialog was closed.
-
-#### Promotions
-
-*   [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
-
-
-<!-- ====================================================================== -->
-## 1.0.1083-prerelease
-
-Release Date: November 29, 2021
-
-[NuGet package for WebView2 SDK 1.0.1083-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1083-prerelease)
-
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 97.0.1083.0 or higher.
-
-### General
-
-#### Experimental features
-
-* Added the following APIs to iframes in WebView2:
-   *  PostWebMessageAsJson
-   *  PostWebMessageAsString
-   *  add_WebMessageReceived
-   *  remove_WebMessageReceived
-
-* Added ProcessInfo APIs to provide more information on WebView2 processes:
-    *  ICoreWebView2ExperimentalProcessInfo
-       *  get_ProcessId
-       *  get_Kind
-    *  ICoreWebView2ExperimentalProcessInfoCollection
-       *  get_Count
-       *  GetValueAtIndex
-
-#### Promotions
-
-The following APIs are promoted to stable in this prerelease SDK:
-
-*  The [media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
-*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true).  This API enables:
-   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
-   *  Programmatically opening and closing the default download dialog.
-   *  Making changes in response to the dialog opening and closing.
-
-
-#### Bug fixes
-
-*   Fixed a focus issue after closing the file picker dialog.
-*   Fixed a bug where WebView2 doesn't receive spatial input on initial launch.
-*   Fixed an issue that prevented single sign-on in WebView2.
-*   Resolved a bug where the download dialog was not moving with the window on WPF and WinForms.
-*   Updated compatible command line check to prevent needing a version check for optional switches.
-*   Fixed an error that was causing "Microsoft Edge" branding to appear in the accessibility tree.
+*   Fixed an issue that was causing slow startup times when launching in a .NET single-file application. ([Issue #1909](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1909))
+*   Fixed a crash caused by Microsoft Edge browser policies getting incorrectly applied to WebView2 as well. ([Issue #1860](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1860))
+*   Fixed a crash that occurred when a pop-up window with a download dialog was closed. ([Issue #1765](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1765)) & ([Issue #1723](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1723))
 
 
 <!-- ====================================================================== -->
