@@ -1,9 +1,9 @@
 ---
-description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
+description: The latest experimental features in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/22/2021
+ms.date: 11/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -422,7 +422,7 @@ The new **Detached Elements** panel in Microsoft Edge DevTools helps investigate
 
 Memory leaks occur when the JavaScript code of the application retains an increasing number of objects in memory. The JavaScript code should release these objects so that the memory space can be reused by the browser.
 
-<!-- todo: add more info, probably with an image.  See the Detached Elements tutorial (in progress). -->
+For more information, see [Debug DOM memory leaks with the Detached Elements tool](../memory-problems/dom-leaks.md)
 
 
 <!-- ====================================================================== -->
