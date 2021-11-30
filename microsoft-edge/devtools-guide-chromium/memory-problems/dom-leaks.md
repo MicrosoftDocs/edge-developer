@@ -117,4 +117,12 @@ The demo app and leaks were artificial. Test the tool on your production website
 
 * In the **Detached Elements** tool, select the **Detach Elements** button to destroy the parent-child links inside a detached tree. Select **Collect garbage** to identify the culprit node in a detached tree that is causing the entire tree to be retained.
 
+:::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" lightbox="./images/detached-elements-remove-links.msft.png":::
+   The Detach Elements button destroys parent-child links inside a detached tree.
+:::image-end:::
+
 * In the **Detached Elements** tool, change the target in the **Selected target** dropdown to select a different origin. Use this dropdown to select different frames or origins for the tool.
+
+:::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
+   The target dropdown lets you select different origins.
+:::image-end:::
