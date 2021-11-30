@@ -567,9 +567,6 @@ Your identity in Microsoft Edge on macOS is shared between Microsoft apps. A sha
 
 You are not able to sign into Microsoft Edge when using **Guest** mode or **InPrivate**.
 
-You are not able to sign into Microsoft Edge when using Guest mode or InPrivate.
-
-
 <!-- ====================================================================== -->
 ## SmartScreen
 
