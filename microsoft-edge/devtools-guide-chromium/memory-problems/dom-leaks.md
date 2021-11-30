@@ -17,6 +17,8 @@ This article describes how to use the **Detached Elements** tool in Microsoft Ed
 
 For more information about heap snapshots and detached elements, read [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots).
 
+
+<!-- ====================================================================== -->
 ## Open the Detached Elements tool
 
 The **Detached Elements** tool is available by default in Microsoft Edge 97 and later. Check your version of Microsoft Edge by navigating to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
@@ -32,12 +34,14 @@ To open the **Detached Elements** tool for the demo application:
 1. Click **Detached Elements**.
 
 :::image type="complex" source="./images/open-detached-elements.msft.png" alt-text="Open the Detached Elements tool." lightbox="./images/open-detached-elements.msft.png":::
-   Open the Detached Elements tool
+   Open the Detached Elements tool.
 :::image-end:::
 
+
+<!-- ====================================================================== -->
 ## Get detached elements
 
-The **Get Detached Elements** button in the **Detached Elements** tool will find and display all of the detached elements on the page. To find detached elements in the demo application, complete the following steps:
+The **Get Detached Elements** button in the **Detached Elements** tool finds and displays all of the detached elements on a web page. To find detached elements in the demo application, complete the following steps:
 
 1. Make sure you are in **Room 1** of the demo application.
 
@@ -49,22 +53,27 @@ The **Get Detached Elements** button in the **Detached Elements** tool will find
 
 1. In the **Detached Elements** tool, click **Get Detached Elements**.
 
-:::image type="complex" source="./images/get-detached-elements.msft.png" alt-text="Get Detached Elements using the Detached Elements tool." lightbox="./images/get-detached-elements.msft.png":::
-   Get Detached Elements using the Detached Elements tool.
-:::image-end:::
+   :::image type="complex" source="./images/get-detached-elements.msft.png" alt-text="Get Detached Elements using the Detached Elements tool." 
+   lightbox="./images/get-detached-elements.msft.png":::
+      Get Detached Elements using the Detached Elements tool.
+   :::image-end:::
 
-The **Detached Elements** tool displays all of the detached elements on the page. All of the messages that were generated in **Room 1** are no longer attached to the DOM when you switch to **Room 2** in the demo application, but they are still referenced by JavaScript.  
+The **Detached Elements** tool displays all of the detached elements on the page. All of the messages that were generated in **Room 1** are no longer attached to the DOM when you switch to **Room 2** in the demo application, but they are still referenced by JavaScript.
 
+
+<!-- ====================================================================== -->
 ## Trigger Garbage Collection
 
 You can trigger garbage collection (GC) in the browser from the **Detached Elements** tool. Complete the following steps:
 
-1. In the **Detached Elements** tool, click **Collect Garbage**.
+1. In the **Detached Elements** tool, click **Collect garbage**.
 
 1. Click **Get Detached Elements**.
 
-When you select **Collect Garbage**, the browser run GC. When you select **Get Detached Elements**, the **Detached Elements** tool displays all detached elements that cannot be garbage collected. These detached elements may be memory leaks if they are not going to be reused by the application.
+When you select **Collect garbage**, the browser runs GC. When you select **Get Detached Elements**, the **Detached Elements** tool displays all detached elements that cannot be garbage collected. These detached elements may be memory leaks if they are not going to be reused by the application.
 
+
+<!-- ====================================================================== -->
 ## Identify the JavaScript code that retains detached elements
 
 Once you have found a detached element that the browser cannot GC, you can use the **Analyze** button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button will take a heap snapshot and populate the **Id** of the detached element with its location in the heap. For more information about heap snapshots, read [Record heap snapshots](heap-snapshots.md).
@@ -81,25 +90,63 @@ To identify the JavaScript code that references a detached element:
 
 1. From the **Detached Elements** tool, select the **Id** field of a detached element.
 
-The **Memory** tool in the bottom panel automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**.
+   The **Memory** tool in the bottom panel automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**.
 
-:::image type="complex" source="./images/detached-elements-heap-snapshot.msft.png" alt-text="Referencing a heap snapshot from the Detached Elements tool." lightbox="./images/detached-elements-heap-snapshot.msft.png":::
-   Referencing a heap snapshot from the Detached Elements tool.
-:::image-end:::
+   :::image type="complex" source="./images/detached-elements-heap-snapshot.msft.png" alt-text="Referencing a heap snapshot from the Detached Elements tool." 
+   lightbox="./images/detached-elements-heap-snapshot.msft.png":::
+      Referencing a heap snapshot from the Detached Elements tool.
+   :::image-end:::
 
 1. From the **Memory** tool in the bottom panel, select the link **room.js:13**.
 
-The **Sources** tool opens in the top panel to line 13 of the file **room.js**.
+   The **Sources** tool opens in the top panel to line 13 of the file **room.js**.
 
 1. In the `hide()` function of **room.js**, you can see that the JavaScript code of the demo application adds each message in the room to an `unmounted` array. The `unmounted` array is the object that is referencing the detached element.
 
-:::image type="complex" source="./images/detached-elements-javascript-retainers.msft.png" alt-text="Identifying the JavaScript that is retaining the detached element." lightbox="./images/detached-elements-javascript-retainers.msft.png":::
-   Identifying the JavaScript that is retaining the detached element.
-:::image-end:::
+   :::image type="complex" source="./images/detached-elements-javascript-retainers.msft.png" alt-text="Identifying the JavaScript that is retaining the detached element."
+   lightbox="./images/detached-elements-javascript-retainers.msft.png":::
+      Identifying the JavaScript that is retaining the detached element.
+   :::image-end:::
 
 You have now identified the retainer that is preventing the detached element from being garbage collected by the browser!
 
-## Next steps
+
+
+
+## Identify the DOM node causing others to be retained
+
+Because the DOM is a fully connected graph, when one DOM node is retained in memory by JavaScript it can cause other DOM nodes to be retained with it.
+
+To identify the culprit node in a detached tree that is causing the entire tree to be retained:
+
+1.  Click **Detach elements** to destroy the parent-child links inside the detached tree.
+
+1.  Click **Collect garbage**.
+
+   :::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" 
+   lightbox="./images/detached-elements-remove-links.msft.png":::
+      The Detach Elements button destroys parent-child links inside a detached tree.
+   :::image-end:::
+
+   Parent-child links are removed inside the detached tree.
+
+## Change the selected target to a different origin
+
+You can check for detached elements from different origins or frames using the **Selected target** dropdown. 
+
+1.  Click the **Selected target** dropdown.
+
+   :::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." 
+   lightbox="./images/detached-elements-target-dropdown.msft.png":::
+      The target dropdown lets you select different origins.
+   :::image-end:::
+
+1.  Select a different origin.
+
+   The new origin displays in the **Detached Elements** tool.
+   
+<!-- ====================================================================== -->
+## Additional considerations
 
 When looking for memory leaks, remember that leaks can depend on the context of your application. For the demo application, you found detached elements that could not be garbage collected by the browser and identified the JavaScript retaining the detached elements. However, in the context of the demo application, it makes sense to retain the list of chat messages so that if a user switches back to **Room 1**, the message log is preserved.
 
@@ -114,33 +161,3 @@ Similarly, a feed in social media might detach elements as users scroll past the
 For long-running apps, small memory leaks of only a few kilobytes can noticeably degrade performance over time. Web developers who use the React framework know that React maintains a virtualized copy of the DOM. Failing to properly unmount components can potentially lead to an application leaking large parts of the virtual DOM.
 
 The demo app and leaks were artificial. Test the tool on your production website or app to see if you can find potential problems. If you do, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** tool and memory leak debugging.
-
-## Identify the DOM node causing others to be retained
-
-Because the DOM is a fully connected graph, when one DOM node is retained in memory by JavaScript it can cause other DOM nodes to be retained with it.
-
-To identify the culprit node is a detached tree that is causing the entire tree to be retained:
-
-1.  Click **Detach elements** to destroy the parent-child links inside the detached tree.
-
-1.  Click **Collect garbage**.
-
-   :::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" lightbox="./images/detached-elements-remove-links.msft.png":::
-      The Detach Elements button destroys parent-child links inside a detached tree.
-   :::image-end:::
-
-   Parent-child links are removed inside the detached tree.
-
-## Change the selected target to a different origin
-
-You can check for detached elements from different origins or frames using the **Selected target** dropdown. 
-
-1.  Click the **Selected target** dropdown.
-
-   :::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
-      The target dropdown lets you select different origins.
-   :::image-end:::
-
-1.  Select a different origin.
-
-   The new origin displays in the **Detached Elements** tool.
