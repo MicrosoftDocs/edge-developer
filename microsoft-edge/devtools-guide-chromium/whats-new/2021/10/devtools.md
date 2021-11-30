@@ -95,14 +95,6 @@ The following are some of the additional features that are available in Microsof
 
 
 <!-- ====================================================================== -->
-## New CSS length authoring tools
-
-DevTools added an easier yet more flexible way to update lengths in CSS.  In the **Styles** pane, look for any CSS property with length, such as `height` or `padding`.  Hover over the unit type, and notice that the unit type is underlined.  Click the unit type to select a unit type from the dropdown.  <!-- mp4 video here, with no alt text -->  When you hover over the unit value, the mouse pointer changes to a horizontal cursor.  Drag horizontally to increase or decrease the value.  To adjust the value by 10, hold the `Shift` key while dragging.  <!-- mp4 video here, with no alt text -->  You can still edit the unit value as text—just<!-- em dash --> click the value and start editing.  <!-- mp4 video here, with no alt text -->
-
-For videos demonstrating this feature, see [New CSS length authoring tools](https://developer.chrome.com/blog/new-in-devtools-95/#length) at _What's New In DevTools (Chrome 95)_.  Chromium issues: [1126178](https://crbug.com/1126178), [1172993](https://crbug.com/1172993).
-
-
-<!-- ====================================================================== -->
 ## Improved the display of properties
 
 DevTools improves the display of properties by:
