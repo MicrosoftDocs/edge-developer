@@ -11,15 +11,15 @@ keywords: progressive web apps, PWA, Edge, Windows, theme, color, icon
 ---
 # Define icons and a theme color
 
-PWAs installed on Windows have abilities to customize the way they appear in the operating system that websites do not have. They can define a set of icons and a theme color for the title bar.
+PWAs that are installed on Windows can be customized in the way they appear in the operating system (OS).  A PWA can define a set of icons and a theme color for the title bar.
 
 
 <!-- ====================================================================== -->
 ## Define icons
 
-In Windows, apps are recognizable to users by their icons. Icons appear in the Taskbar, in the Start Menu, and in other places like system settings.
+In Windows, apps are recognizable to users by their icons. Icons appear in the Taskbar, in the Start Menu, and in other places such as system settings.
 
-A PWA can configure which image files the operating system should use to display an icon in these various places. Multiple images can be provided for the OS to choose, depending on the context.
+A PWA can configure which image files the operating system should use to display an icon in these various places.  Multiple images can be provided for the OS to choose, depending on the context.
 
 In the web app manifest file, app icons are defined with the `icons` member:
 
@@ -50,14 +50,14 @@ In the web app manifest file, app icons are defined with the `icons` member:
 }
 ```
 
-Each icon in the `icons` array should come with at least the `src` and `sizes` properties, but can also have the `type` and `purpose` properties.
+Each icon in the `icons` array should come with at least the `src` and `sizes` properties.  An icon can also have the `type` and `purpose` properties.
 
 | Property | Description |
 |:--- |:--- |
 | `src` | The path to the image file, which can be a relative path from the app root folder, or an absolute URL. |
 | `sizes` | A space-separated list of sizes that the corresponding image can be used for. |
-| `type` | An optional hint for the OS to quickly detect the image type |
-| `purpose` | An optional hint for the OS to choose the right image depending on context. This can be `monochrome`, `maskable`, or `any`. |
+| `type` | An optional hint for the OS to quickly detect the image type. |
+| `purpose` | An optional hint to help the OS choose the right icon image, depending on the context.  The value can be `monochrome`, `maskable`, or `any`. |
 
 Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manifest/icons).
 
@@ -67,15 +67,16 @@ Learn more about [the icons member](https://developer.mozilla.org/docs/Web/Manif
 <!-- ====================================================================== -->
 ## Choose a theme color
 
-On Windows, PWAs have their own application window, with a title bar containing the name of the app and the system critical close, maximize, and minimize buttons.
+On Windows, PWAs have their own application window, with a title bar that contains the name of the app and the system **close**, **maximize**, and **minimize** icons.
 
 The web content created by the PWA fills the entire surface area of the window, except for the title bar area, which can be customized with a theme color.
 
-The image below shows what a PWA looks like when not using a theme color and when using one that matches the main app color.
+The following image shows what a PWA's title bar looks like when not using a theme color, and when using a theme color that matches the main color of the app:
 
 :::image type="content" source="../media/app-theme-color-before-after.png" alt-text="The difference between not using and using a theme color." lightbox="../media/app-theme-color-before-after.png":::
+<!-- lightbox is justified here, to inspect parts of window -->
 
-The define a theme color, use the `theme_color` web app manifest member as shown below:
+To define a theme color, use the `theme_color` web app manifest member:
 
 ```json
 {
@@ -83,7 +84,7 @@ The define a theme color, use the `theme_color` web app manifest member as shown
 }
 ```
 
-Individual web pages can also define a theme color using the [`theme-color` meta tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color). When this meta tag is present on the page, its defined color overrides the one found in the web app manifest.
+Individual web pages can also define a theme color, by using the [`theme-color` meta tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color). When this meta tag is present on the page, its defined color overrides the color that's found in the web app manifest.
 
 > [!NOTE]
 > You can use the [Window Controls Overlay](./window-controls-overlay.md) feature to display your app content in the title bar area.
