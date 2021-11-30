@@ -21,7 +21,7 @@ For more information about heap snapshots and detached elements, read [Discover 
 
 The **Detached Elements** tool is available as an experiment beginning with Microsoft Edge version 93 and is available by default in Microsoft Edge version 97 and later. Check your version of Microsoft Edge by navigating to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](/devtools-guide-chromium/experimental-features/#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
 
-To open the **Detached Elements** tool against the demo application, complete the following steps.
+To open the **Detached Elements** tool for the demo application:
 
 1. Open the [demo application](https://microsoftedge.github.io/Demos/detached-elements/).
 
@@ -37,7 +37,7 @@ To open the **Detached Elements** tool against the demo application, complete th
 
 ## Get Detached Elements
 
-The **Get Detached Elements** button in the **Detached Elements** tool will find and display all of the detached elements on the page. To find detached elements in the demo application, complete the following steps.
+The **Get Detached Elements** button in the **Detached Elements** tool will find and display all of the detached elements on the page. To find detached elements in the demo application, complete the following steps:
 
 1. Make sure you are in **Room 1** of the demo application.
 
@@ -57,7 +57,7 @@ The **Detached Elements** tool displays all of the detached elements on the page
 
 ## Trigger Garbage Collection
 
-You can trigger garbage collection (GC) in the browser from the **Detached Elements** tool. Complete the following steps.
+You can trigger garbage collection (GC) in the browser from the **Detached Elements** tool. Complete the following steps;
 
 1. In the **Detached Elements** tool, click **Collect Garbage**.
 
@@ -73,7 +73,7 @@ Once you have found a detached element that the browser cannot GC, you can use t
    Analyze Detached Elements in the Detached Elements tool
 :::image-end:::
 
-Complete the following steps.
+Complete the following steps:
 
 1. In the **Detached Elements** tool, click **Analyze**.
 
@@ -111,7 +111,7 @@ Similarly, a feed in social media might detach elements as users scroll past the
 
 For long-running apps, small memory leaks of only a few kilobytes can noticeably degrade performance over time. Web developers who use the React framework know that React maintains a virtualized copy of the DOM. Failing to properly unmount components can potentially lead to an application leaking large parts of the virtual DOM.
 
-The demo app and leaks were artificial. Test the tool on your production website or app to see if you can find potential problems. If you do, [contact the Microsoft Edge DevTools team](../../contact.md) to send feedback about the **Detached Elements** tool and memory leak debugging.
+The demo app and leaks were artificial. Test the tool on your production website or app to see if you can find potential problems. If you do, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** tool and memory leak debugging.
 
 ## Additional features
 
