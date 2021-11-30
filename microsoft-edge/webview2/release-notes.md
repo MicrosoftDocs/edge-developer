@@ -1,6 +1,6 @@
 ---
-description: Release notes for Microsoft Edge WebView2 SDK
-title: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
+description: Release Notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms
+title: Release notes for Microsoft Edge WebView2 SDK
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 11/29/2021
