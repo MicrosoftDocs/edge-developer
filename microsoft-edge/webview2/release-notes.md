@@ -41,20 +41,20 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ### Experimental features
 
-* Added the following APIs to iframes in WebView2:
+* Added the following [APIs for iframes](microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe2?view=webview2-1.0.1083-prerelease&preserve-view=true) in WebView2:
    *  `PostWebMessageAsJson`
    *  `PostWebMessageAsString`
    *  `add_WebMessageReceived`
    *  `remove_WebMessageReceived`
 
-* Added ProcessInfo APIs to provide more information on WebView2 processes and process collections.
+* Added ProcessInfo APIs to provide more information about WebView2 [processes](microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfo?view=webview2-1.0.1083-prerelease&preserve-view=true) and [process collections](microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfocollection?view=webview2-1.0.1083-prerelease&preserve-view=true).
 
 ### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:
 
-*  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1018-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
-*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1056-prerelease&preserve-view=true).  This API enables:
+*  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental9?view=webview2-1.0.1083-prerelease&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
+*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental11?view=webview2-1.0.1083-prerelease&preserve-view=true).  This API enables:
    *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
    *  Programmatically opening and closing the default download dialog.
    *  Making changes in response to the dialog opening and closing.
