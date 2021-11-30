@@ -32,3 +32,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONTENT: ${{ steps.issues.outputs.content }}
+        with:
+          filename: .github/old_version_issue.md
