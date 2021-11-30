@@ -261,7 +261,7 @@
               href: devtools-guide-chromium/media-panel/index.md
             - name: Memory
               items:
-                - name: Detached Elements
+                - name: Find detached elements
                   href: devtools-guide-chromium/memory-problems/dom-leaks.md
                 - name: Fix memory problems
                   href: devtools-guide-chromium/memory-problems/index.md
