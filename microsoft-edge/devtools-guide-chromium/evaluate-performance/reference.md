@@ -1,6 +1,6 @@
 ---
 description: A reference on all the ways to record and analyze performance in Microsoft Edge DevTools.
-title: Performance analysis reference
+title: Performance features reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,11 +21,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Performance analysis reference
+# Performance features reference
 
 This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.
 
-Navigate to [Get Started With Analyzing Runtime Performance][DevtoolsEvaluatePerformanceGettingStarted] for a guided tutorial on how to analyze the performance of a page using [Microsoft Edge DevTools][MicrosoftEdgeDevTools].
+Navigate to [Get Started With Analyzing Runtime Performance](./index.md) for a guided tutorial on how to analyze the performance of a page using [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).
 
 
 <!-- ====================================================================== -->
@@ -249,7 +249,7 @@ After recording a page, you do not need to rely solely on the **Main** section t
 *   When you want to view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) panel.
 
 > [!NOTE]
-> The next three sections all refer to the same demo.  Run the demo yourself at [Activity Tabs Demo][ActivityTabsDemo].
+> The next three sections all refer to the same demo.  Run the demo yourself at [Activity Tabs Demo](https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html).
 
 #### Root activities
 
@@ -516,7 +516,7 @@ Use the features of the **Rendering** panel to help visualize the rendering perf
 
 To open the **Rendering** tool:
 
-1.  [Open the Command Menu][DevToolsCommandMenu].
+1.  [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
 1.  Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
 
     :::image type="complex" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="The Rendering tool" lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
@@ -560,7 +560,7 @@ To turn on Layer Borders, complete the following actions,
        **Layer Borders**
     :::image-end:::
 
-Navigate to the comments in [debug_colors.cc][DebugColors] for an explanation of the color-codings.
+Navigate to the comments in [debug_colors.cc](https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc) for an explanation of the color-codings.
 
 ### Find scroll performance issues in realtime
 
@@ -578,23 +578,9 @@ To view scroll performance issues, complete the following actions.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge Developer tools | Microsoft Docs"
-[DevToolsCommandMenu]: ../command-menu/index.md#open-the-command-menu "Open the Command Menu - Run commands with the Microsoft Edge DevTools Command Menu | Microsoft Docs"
-[DevtoolsEvaluatePerformanceGettingStarted]: ./index.md "Get started with analyzing runtime performance | Microsoft Docs"
-
-[ActivityTabsDemo]: https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html "Activity Tabs Demo | glitch"
-
-[DebugColors]: https://cs.chromium.org/chromium/src/cc/debug/debug_colors.cc "debug_colors.cc - Code Search"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

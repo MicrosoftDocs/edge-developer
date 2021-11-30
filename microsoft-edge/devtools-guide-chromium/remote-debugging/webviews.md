@@ -31,13 +31,13 @@ On Android 4.4 (KitKat) or later, use DevTools to debug WebView content in nativ
 
 *   Turn on Android WebView debugging in your native Android app; debug Android WebViews in Microsoft Edge DevTools.
 *   To display the list of the Android WebViews with debugging turned on, navigate to `edge://inspect`.
-*   Debug Android WebViews in the same way you debug a webpage through [remote debugging][RemoteDebuggingGettingStarted].
+*   Debug Android WebViews in the same way you debug a webpage through [remote debugging](./index.md).
 
 
 <!-- ====================================================================== -->
 ## Configure Android WebViews to debug
 
-Android WebView debugging must be turned on within your app.  To turn on Android WebView debugging, run the [setWebContentsDebuggingEnabled][AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled] static method on the `WebView` class.
+Android WebView debugging must be turned on within your app.  To turn on Android WebView debugging, run the [setWebContentsDebuggingEnabled](https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean)) static method on the `WebView` class.
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -84,22 +84,9 @@ Your Android WebViews aren't displayed on the `edge://inspect` page?
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[RemoteDebuggingGettingStarted]: ./index.md "Get Started with Remote Debugging Android Devices | Microsoft Docs"
-<!-- external links -->
-[AndroidDeveloperWebViewsSetWebContentsDebuggingEnabled]: https://developer.android.com/reference/android/webkit/WebView.html#setWebContentsDebuggingEnabled(boolean) "setWebContentsDebuggingEnabled - WebView | Android Developers"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: http://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).

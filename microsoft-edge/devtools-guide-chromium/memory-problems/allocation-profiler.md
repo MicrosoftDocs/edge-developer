@@ -1,6 +1,6 @@
 ---
 description: Use Allocation instrumentation on timeline to find objects that are not being properly garbage collected, and continue to retain memory.
-title: How to use Allocation instrumentation on Timeline
+title: Use Allocation instrumentation on Timeline
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# How to use Allocation instrumentation on Timeline
+# Use Allocation instrumentation on Timeline
 
 Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.
 
@@ -29,7 +29,7 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 <!-- ====================================================================== -->
 ## How Allocation instrumentation on timeline works
 
-**Allocation instrumentation on timeline** combines the detailed snapshot information of the **heap profiler** with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
+**Allocation instrumentation on timeline** combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->
 <!--todo: add profile evaluate performance (Performance panel) section when available  -->
@@ -49,7 +49,7 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 
 Complete the following actions to begin using **Allocation instrumentation on timeline**.
 
-1.  [Open the DevTools][DevtoolsOpenIndex].
+1.  [Open the DevTools](../open/index.md).
 1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.
 1.  Start recording.
 
@@ -84,31 +84,13 @@ Choosing on a specific object in the heap shows the retaining tree in the bottom
 <!-- ====================================================================== -->
 ## View memory allocation by function
 
-You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function][DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-[DevToolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsMemoryProblemsIndexInvestigateMemoryAllocationFunction]: ./index.md#investigate-memory-allocation-by-function "Investigate memory allocation by function - Fix Memory Problems | Microsoft Docs"
-
-<!--[HeapProfiler]: ./heap-snapshots.md "How to Record Heap Snapshots"  -->
-<!--[PerformancePanel]: ../profile/evaluate-performance/timeline-tool ""  -->
-
-[MicrosoftEdgeChannel]: https://www.microsoftedgeinsider.com/download "Download a Microsoft Edge Channel"
+You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function](./index.md#investigate-memory-allocation-by-function).
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

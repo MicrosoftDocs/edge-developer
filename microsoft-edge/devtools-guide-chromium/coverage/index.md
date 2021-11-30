@@ -36,7 +36,7 @@ The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScri
 <!-- ====================================================================== -->
 ## Overview
 
-Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use [Bootstrap button component][BootstrapButtons] on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:
+Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use [Bootstrap button component](https://getbootstrap.com/docs/4.3/components/buttons) on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:
 
 ```html
 ...
@@ -50,16 +50,14 @@ Shipping unused JavaScript or CSS is a common problem in web development.  For e
 
 This stylesheet does not just include the code for the button component.  It contains the CSS for **all** of the Bootstrap components.  But you are not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it does not need.  This extra CSS is a problem for the following reasons.
 
-*   The extra code slows down your page load.  <!--Navigate to [Render-Blocking CSS][render].  -->
+*   The extra code slows down your page load.  <!--Navigate to [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css).  -->
 *   If a user accesses the page on a mobile device, the extra code uses up their cellular data.
-
-<!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->
 
 
 <!-- ====================================================================== -->
 ## Open the Coverage panel
 
-1.  [Open the Command Menu][DevToolsCommandMenu].
+1.  [Open the Command Menu](../command-menu/index.md).
 1.  Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.  The **Coverage** panel opens in the **Drawer**.
 
     :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage panel" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
@@ -93,18 +91,9 @@ The table in the **Coverage** panel displays the resources that were analyzed, a
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsCommandMenu]: ../command-menu/index.md "Run commands with the Microsoft Edge DevTools Command menu | Microsoft Docs"
-[BootstrapButtons]: https://getbootstrap.com/docs/4.3/components/buttons "Buttons - Bootstrap"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

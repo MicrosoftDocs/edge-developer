@@ -30,13 +30,13 @@ URL handling is still experimental, to enable it:
 
     :::image type="content" source="../media/enable-url-handling-experiment.png" alt-text="Enable the URL handling API experiment." lightbox="../media/enable-url-handling-experiment.png":::
 
-URL Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial][OriginTrials].
+URL Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 
 <!-- ====================================================================== -->
 ## Define which URLs your app handles
 
-The first thing to do is declare which URLs your app handles. This is done in your app [manifest file][ManifestFileDoc], using the `url_handlers` array member.
+The first thing to do is declare which URLs your app handles. This is done in your app [manifest file](./web-app-manifests.md), using the `url_handlers` array member.
 
 Each entry in the `url_handlers` array contains a `origin` string, which is a pattern for matching origins.
 
@@ -102,7 +102,7 @@ Let's take the example of a PWA hosted at `https://app.contoso.com` trying to ha
     }
     ```
 
-To learn more about the valid members in `web-app-origin-association`, see the [URL Handlers explainer][WICGUrlHandlerExplainer].
+To learn more about the valid members in `web-app-origin-association`, see the [URL Handlers explainer](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file).
 
 
 <!-- ====================================================================== -->
@@ -123,12 +123,12 @@ To test the feature, send yourself a URL in a chat message app, or a desktop ema
 <!-- ====================================================================== -->
 ## Demo
 
-[DevTools Tips][DemoDevToolsTips] is a PWA that handles URLs to its own domain so that the app opens instead of the website when one is used.
+[DevTools Tips](https://devtoolstips.org/) is a PWA that handles URLs to its own domain so that the app opens instead of the website when one is used.
 
 To test URL handling on DevTools Tips:
 
 *  [Enable the feature](#enable-url-handling) in Microsoft Edge.
-*  Go to [DevTools Tips][DemoDevToolsTips].
+*  Go to [DevTools Tips](https://devtoolstips.org/).
 *  Install the app locally.
 *  Press `Windows logo key` + `R` to open the Windows Run app.
 *  Enter a URL to one of the tips on the site such as https://devtoolstips.org/tips/en/find-css-changes/
@@ -140,24 +140,11 @@ Windows knows that your app is registered to handle this URL and asks you to cho
 
 The app launches and displays the tips page.
 
-You can find the [source code on GitHub][DemoDevToolsTipsGitHub]. In particular, the app registers the handled URLs in the [manifest.json][DemoDevToolsTipsManifestJson] file and the website establishes the app's ownership in the [web-app-origin-association][DemoDevToolsTipsWebAppOriginAssociation] file.
+You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/). In particular, the app registers the handled URLs in the [manifest.json](https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json) file and the website establishes the app's ownership in the [web-app-origin-association](https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association) file.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Handling URLs in PWAs video][URLHandlingVideoTutorial].
-*  [PWAs as URL Handlers][URLHandlersWebDev].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[WICGUrlHandlerExplainer]: https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file "PWAs as URL Handlers | WICG"
-[OriginTrials]: ./origin-trials.md#enroll-your-site-in-an-origin-trial "Experimental features and origin trials | Microsoft Docs"
-[URLHandlingVideoTutorial]: https://www.youtube.com/watch?v=jYc7ih9Xwqw "Handle URLs natively in your Progressive Web App video tutorial | YouTube"
-[URLHandlersWebDev]: https://web.dev/pwa-url-handler/ "PWAs as URL Handlers | web.dev"
-[DemoDevToolsTips]: https://devtoolstips.org/ "DevTools Tips"
-[DemoDevToolsTipsGitHub]: https://github.com/captainbrosset/devtools-tips/ "DevTools Tips | GitHub"
-[DemoDevToolsTipsManifestJson]: https://github.com/captainbrosset/devtools-tips/blob/main/src/manifest.json
-[DemoDevToolsTipsWebAppOriginAssociation]: https://github.com/captainbrosset/devtools-tips/blob/main/src/.well-known/web-app-origin-association
-[ManifestFileDoc]: ./web-app-manifests.md "Use the Web App Manifest to integrate your Progressive Web App into the Operating System | Microsoft Docs"
+*  [Handling URLs in PWAs video](https://www.youtube.com/watch?v=jYc7ih9Xwqw).
+*  [PWAs as URL Handlers](https://web.dev/pwa-url-handler/).

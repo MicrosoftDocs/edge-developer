@@ -31,8 +31,11 @@ Keep your client-side code readable and debuggable even after you combine, minif
 *   Only use pre-processors capable of producing Source Maps.
 *   Verify that your web server is able to serve Source Maps.
 
-<!--todo: add link to preprocessors capable of producing Source Maps when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
+<!--
+no longer in original file:
+todo: add link to preprocessors capable of producing Source Maps when section is available
+/web/tools/setup/setup-preprocessors?#supported_preprocessors
+-->
 
 
 <!-- ====================================================================== -->
@@ -40,23 +43,29 @@ Keep your client-side code readable and debuggable even after you combine, minif
 
 This article explains how to interact with JavaScript Source Maps in the DevTools Sources tool.  <!--For a first overview of what preprocessors are, how each may help, and how Source Maps work; navigate to Set Up CSS & JS Preprocessors.  -->
 
-<!--todo: add link to Set Up CSS & JS Preprocessors when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content ""  -->
+<!--
+no longer in original file:
+todo: add link to Set Up CSS & JS Preprocessors when section is available
+/web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content
+-->
 
 
 <!-- ====================================================================== -->
 ## Use a supported preprocessor
 
-Use a minifier that is capable of creating source maps.  <!--For the most popular options, navigate to preprocessor support section.  -->  For an extended view, navigate to [Source maps: languages, tools and other info][GitHubWikiSourceMapsLanguagesTools] wiki page.
+Use a minifier that is capable of creating source maps.  <!--For the most popular options, navigate to preprocessor support section.  -->  For an extended view, navigate to [Source maps: languages, tools and other info](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) wiki page.
 
-<!--todo: add link to display the preprocessor support section when section is available -->
-<!--[]: /web/tools/setup/setup-preprocessors?#supported_preprocessors ""  -->
+<!--
+no longer in original file:
+todo: add link to display the preprocessor support section when section is available
+/web/tools/setup/setup-preprocessors?#supported_preprocessors
+-->
 
 The following types of preprocessors are commonly used in combination with Source Maps:
 
-*   Transpilers ([Babel][BabelJS], [Traceur][GitHubWikiGoogleTraceurCompiler])
-*   Compilers ([Closure Compiler][GitHubGoogleClosureCompiler], [TypeScript][TypeScriptMain], [CoffeeScript][CoffeeScriptMain], [Dart][DartMain])
-*   Minifiers ([UglifyJS][GitHubMishooUglifyJS])
+*   Transpilers ([Babel](https://babeljs.io), [Traceur](https://github.com/google/traceur-compiler/wiki/Getting-Started))
+*   Compilers ([Closure Compiler](https://github.com/google/closure-compiler), [TypeScript](https://www.typescriptlang.org), [CoffeeScript](https://coffeescript.org), [Dart](https://www.dartlang.org))
+*   Minifiers ([UglifyJS](https://github.com/mishoo/UglifyJS))
 
 
 <!-- ====================================================================== -->
@@ -76,13 +85,10 @@ Source Maps are enabled by default<!-- (as of Microsoft Edge 39)-->, but if you 
 
 ### Debugging with Source Maps
 
-When debugging your code and Source Maps enabled, Source Maps show in two places:
+When [debugging your code](index.md#step-4-step-through-the-code) and Source Maps enabled, Source Maps show in two places:
 
 1.  In the console (the link to source should be the original file, not the generated one)
 1.  When stepping through code (the links in the call stack should open the original source file)
-
-<!--todo: add link to debugging your code when section is available -->
-<!--[DebugBreakpointsStepCode]: ../debug/breakpoints/step-code.md ""  -->
 
 
 <!-- ====================================================================== -->
@@ -98,7 +104,7 @@ By including the following special comment in your code, which is evaled, you ar
 
 Navigate to the following page.
 
-*   [demo][CssNinjaDemoSourceMapping]
+*   [demo](https://www.thecssninja.com/demo/source_mapping/compile.html)
 
 Complete the following actions.
 
@@ -115,37 +121,9 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[BabelJS]: https://babeljs.io "Babel is a JavaScript compiler"
-
-[CoffeeScriptMain]: https://coffeescript.org "CoffeeScript"
-
-[CssNinjaDemoSourceMapping]: https://www.thecssninja.com/demo/source_mapping/compile.html "A simple example of //# sourceURL eval naming"
-
-[DartMain]: https://www.dartlang.org "Dart programming language"
-
-[GitHubGoogleClosureCompiler]: https://github.com/google/closure-compiler "google/closure-compiler | GitHub"
-
-[GitHubMishooUglifyJS]: https://github.com/mishoo/UglifyJS "mishoo/UglifyJS | GitHub"
-
-[GitHubWikiSourceMapsLanguagesTools]: https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info "Source maps: languages, tools and other info | GitHub wiki"
-
-[GitHubWikiGoogleTraceurCompiler]: https://github.com/google/traceur-compiler/wiki/Getting-Started "Getting Started - google/traceur-compiler | GitHub wiki"
-
-[TypeScriptMain]: https://www.typescriptlang.org "TypeScript"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer) and [Paul Bakaus][PaulBakaus] (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
-[PaulBakaus]: https://developers.google.com/web/resources/contributors#paul-bakaus
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

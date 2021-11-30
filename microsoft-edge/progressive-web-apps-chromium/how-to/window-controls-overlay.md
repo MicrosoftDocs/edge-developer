@@ -21,7 +21,7 @@ Having the ability to display content where the title bar normally is can help P
 
 Many desktop applications like Visual Studio Code, Microsoft Teams, or Microsoft Edge already do this.
 
-:::image type="content" source="../media/vscode-titlebar.png" alt-text="VS Code displays content in the title bar area." lightbox="../media/vscode-titlebar.png":::
+:::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code displays content in the title bar area." lightbox="../media/vscode-titlebar.png":::
 
 The Window Controls Overlay API allows you to display web content over the entire surface area of the app, moves the critical system required window controls into an overlay, and makes it possible for your content to stay clear of this overlay.
 
@@ -125,7 +125,7 @@ You can use the `geometrychange` event and the `visible` property on the `naviga
 
 > [!NOTE]
 > The `geometrychange` is fired very frequently when the user resizes the window. To avoid running layout-changing code too often and cause performance problems in your app, it is recommended to use a `debounce` function to limit how many times the event is handled.
-> To learn more about `debounce`, see [The Difference Between Throttling and Debouncing][CssTricksThrottlingDebouncing].
+> To learn more about `debounce`, see [The Difference Between Throttling and Debouncing](https://css-tricks.com/the-difference-between-throttling-and-debouncing/).
 
 ```javascript
 const debounce = (func, wait) => {
@@ -159,32 +159,22 @@ if ('windowControlsOverlay' in navigator) {
 My Tracks is a PWA demo app that uses the Window Controls Overlay feature.
 
 * [Enable the feature](#enable-the-feature-in-your-app) in Microsoft Edge.
-* Go to [My Tracks][MyTracksDemoApp] and install the app.
+* Go to [My Tracks](https://captainbrosset.github.io/mytracks/) and install the app.
 * Select the **Hide title bar** button from the app title bar.
 
 Notice that the app now displays content all the way to the top of the window frame, where the title bar used to be. The top area of the map is also a drag handler to let users move the window.
 
 :::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="The top area of the map can be used to move the window." lightbox="../media/my-tracks-draggable-titlebar.png":::
 
-The source code for this app can be accessed on the [My Tracks GitHub repository][MyTracksDemoAppGitHub].
+The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 
-* The [manifest.json][MyTracksDemoAppManifestJsonFile] source file declares the app's use of the Window Controls Overlay feature.
-* The [overlay.js][MyTracksDemoAppOverlayJsFile] source file uses the `navigator.windowControlsOverlay` object.
-* The [style.css][MyTracksDemoAppStyleCssFile] source file uses the `titlebar-area-height` CSS environment variable.
+* The [manifest.json](https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json) source file declares the app's use of the Window Controls Overlay feature.
+* The [overlay.js](https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js) source file uses the `navigator.windowControlsOverlay` object.
+* The [style.css](https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css) source file uses the `titlebar-area-height` CSS environment variable.
 
 
 <!-- ====================================================================== -->
 ## See also
 
 *   [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
-*   [Customize the window controls overlay of your PWA's title bar][WebDevWindowControlsOverlay]
-
-
-<!-- links -->
-[CssTricksThrottlingDebouncing]: https://css-tricks.com/the-difference-between-throttling-and-debouncing/ "The Difference Between Throttling and Debouncing  | CSS-Tricks"
-[WebDevWindowControlsOverlay]: https://web.dev/window-controls-overlay/ "Customize the window controls overlay of your PWA's title bar | web.dev"
-[MyTracksDemoApp]: https://captainbrosset.github.io/mytracks/ "My Tracks"
-[MyTracksDemoAppGitHub]: https://github.com/captainbrosset/mytracks "Sample web app to demonstrate PWA desktop features | GitHub"
-[MyTracksDemoAppManifestJsonFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/manifest.json
-[MyTracksDemoAppOverlayJsFile]: https://github.com/captainbrosset/mytracks/blob/main/src/overlay.js
-[MyTracksDemoAppStyleCssFile]: https://github.com/captainbrosset/mytracks/blob/main/mytracks/style.css
+*   [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)

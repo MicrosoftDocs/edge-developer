@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, privacy whitepaper, trust, microsoft edge privacy, browser privacy, privacy settings
@@ -44,13 +44,13 @@ You can configure Microsoft Edge to collect diagnostic data about the address ba
 
 Typed characters and the websites you visit are stored locally on the device per profile.  To delete the data, navigate to `edge://settings/clearBrowserData`. In the **Clear browsing data** window, select the **Browsing history** checkbox, and select the **Clear now** button.
 
-If Bing is your default search provider and you are signed in, you may delete your searches through the [Microsoft Privacy dashboard][MicrosoftAccountPrivacy].  You can clear your browsing history and delete websites from appearing as suggestions in the address bar. Navigate to `edge://history`, and select **Clear browsing data**.  You can delete the data Microsoft collects from the address bar and search suggestions features on Windows 10 and later. Open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**. In **Delete diagnostic data**, select **Delete**.  All other data is deleted after 36 months.
+If Bing is your default search provider and you are signed in, you may delete your searches through the [Microsoft Privacy dashboard](https://account.microsoft.com/privacy/).  You can clear your browsing history and delete websites from appearing as suggestions in the address bar. Navigate to `edge://history`, and select **Clear browsing data**.  You can delete the data Microsoft collects from the address bar and search suggestions features on Windows 10 and later. Open **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**. In **Delete diagnostic data**, select **Delete**.  All other data is deleted after 36 months.
 
 <!-- Deleting diagnostic data could use rewrite -->
 
 Account-specific search functions are available if you are signed in to Microsoft Edge with a Microsoft work or school account, and Microsoft Search is available. Microsoft may send an anonymous token with your query, to provide account-specific functions, such as results specific to your company.
 
-All data is transmitted securely over HTTPS.  If [Bing][BingMain] is your default search provider, the searches and typed characters are saved for up to six months.
+All data is transmitted securely over HTTPS.  If [Bing](https://bing.com) is your default search provider, the searches and typed characters are saved for up to six months.
 
 If you search for a single word in the address box, Microsoft Edge may send the single word to your DNS server. Sending a single word is a check to see whether it corresponds to a host on your network. If so, Microsoft Edge may try to connect to the corresponding host. This option lets you navigate to the specific host instead of searching.  For example, if your router uses the hostname `router` and you type `router` in the address bar, you can navigate to `https://router`, or search for the word `router`.  The feature is not controlled by the **Show me search and site suggestions using my typed characters** setting because it does not involve sending data to your default search engine.
 
@@ -124,7 +124,7 @@ Crash dumps are stored on secure Microsoft servers for up to 30 days, and then d
 
 You can clear the crash diagnostic data stored locally on a device. Navigate to `edge://crashes` and select the **Clear all** button.
 
-To turn off crash diagnostic data collection on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**.  For versions of Microsoft Edge on all other platforms, navigate to `edge://settings/privacy` and turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. You can manage diagnostic data collection at the enterprise level. Navigate to [group policies managed by your organization][DeployedgeEnterprisePrivacySettings].
+To turn off crash diagnostic data collection on Windows 10 and later, open **Start** > **Settings** > **Privacy** and select **Diagnostics & feedback**.  For versions of Microsoft Edge on all other platforms, navigate to `edge://settings/privacy` and turn off the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting. You can manage diagnostic data collection at the enterprise level. Navigate to [group policies managed by your organization](/deployedge/microsoft-edge-enterprise-privacy-settings).
 
 
 <!-- ====================================================================== -->
@@ -138,7 +138,7 @@ Microsoft Edge Developer Tools help with website debugging and testing. Open **S
 
 Microsoft uses diagnostic data to improve products and services. Diagnostic data is also used to keep products secure, up to date, and performing as expected. Microsoft believes in and practices information collection minimization. We strive to gather only the information we need, and to store it for only as long as needed to improve products and services.
 
-Microsoft Edge collects a set of required diagnostic data needed to keep the product secure, up to date, and performing properly. The required diagnostic data includes device connectivity, configuration information, software setup, and inventory. Microsoft uses this diagnostic data to troubleshoot issues and keep Microsoft products and services reliable, secure, and operating normally. For more information about diagnostic data on managed devices, navigate to [Configure Windows diagnostic data in your organization][WindowsPrivacyConfigureDiagnosticDataOrganization] and [Microsoft Edge diagnostic data group policy](/deployedge/microsoft-edge-enterprise-privacy-settings).
+Microsoft Edge collects a set of required diagnostic data needed to keep the product secure, up to date, and performing properly. The required diagnostic data includes device connectivity, configuration information, software setup, and inventory. Microsoft uses this diagnostic data to troubleshoot issues and keep Microsoft products and services reliable, secure, and operating normally. For more information about diagnostic data on managed devices, navigate to [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) and [Microsoft Edge diagnostic data group policy](/deployedge/microsoft-edge-enterprise-privacy-settings).
 
 :::image type="complex" source="./media/diagnostic-data2.png" alt-text="Diagnostic data" lightbox="./media/diagnostic-data2.png":::
    Diagnostic data
@@ -160,7 +160,7 @@ If you're using Windows 10 version 1803 (April 2018 Update) or later, to view pr
 
 For other platforms or versions of Windows 10 version 1803 and earlier, navigate to `edge://data-viewer` to view diagnostic data. To view the data that's periodically sent to Microsoft since the last time the viewer was opened, navigate to `edge://data-viewer`. To see what data has been sent to Microsoft for your specific session, refresh the viewer. The data used to populate `edge://data-viewer` is stored locally on the device. To clear the data in the viewer, close the `edge://data-viewer` tab.
 
-To help us improve Microsoft products and services, diagnostic data is aggregated, with personal identifiers removed, and stored for up to two years. Because the diagnostic data is not collected from or stored with your Microsoft account, the diagnostic data may not be viewed or deleted from your [Microsoft privacy dashboard][MicrosoftAccountPrivacy]. To delete the diagnostic data on Windows 10 and later, navigate to **Start** > **Settings** > **Privacy** > **Diagnostics & feedback** and select **Delete** under **Delete diagnostic data**. The delete diagnostic data functionality is only supported on Windows 10 version 1803 or later. For more information, navigate to [Diagnostics, feedback, and privacy in Windows 10 and later][MicrosoftSupport4468236].
+To help us improve Microsoft products and services, diagnostic data is aggregated, with personal identifiers removed, and stored for up to two years. Because the diagnostic data is not collected from or stored with your Microsoft account, the diagnostic data may not be viewed or deleted from your [Microsoft privacy dashboard](https://account.microsoft.com/privacy/). To delete the diagnostic data on Windows 10 and later, navigate to **Start** > **Settings** > **Privacy** > **Diagnostics & feedback** and select **Delete** under **Delete diagnostic data**. The delete diagnostic data functionality is only supported on Windows 10 version 1803 or later. For more information, navigate to [Diagnostics, feedback, and privacy in Windows 10 and later](https://support.microsoft.com/help/4468236).
 
 For Microsoft Edge on Windows 10 and later, sending Optional diagnostic data is determined by your Windows diagnostic data setting. The setting is reflected in `edge://settings/privacy`. Change the Windows settings by going to **Start** > **Settings** > **Privacy** > **Diagnostics & feedback**. On all other platforms, to control the collection of diagnostic data, navigate to `edge://settings/privacy` and turn on or off **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports**. The setting is used for all profiles associated with the installation of Microsoft Edge on your device.  The setting is not synced across devices. The setting applies to **InPrivate** browsing and Guest mode. Information about websites you visit is never sent while browsing **InPrivate** or in **Guest** mode. If your device is managed with group policies set by your organization, it is described in `edge://settings/privacy`.
 
@@ -170,9 +170,9 @@ For Microsoft Edge on Windows 10 and later, sending Optional diagnostic data is 
 
 When a website offers media content that is protected by Digital Rights Management (DRM), Microsoft Edge uses a secure playback pipeline to make sure the content is not improperly viewed or copied. As part of the feature, Microsoft Edge may store DRM-related data on your device, including a unique identifier and media licenses. Microsoft Edge may also transmit the unique identifier to a media licensing server specified by the content provider. When you use the website, Microsoft Edge retrieves the DRM information to make sure you have permission to use the content. The data helps to validate access to the protected content and ensure a seamless media experience.
 
-Microsoft Edge supports DRM using the Encrypted Media Extensions API (EME API) for HTML5 sites.  The EME API allows websites to communicate with a DRM provider called a Content Decryption Module (CDM). Different DRM systems, such as Widevine by Google or PlayReady by Microsoft, may be supported by the CDM implementation of the developer.  Content providers may choose to support one or more potential DRM systems. Providers may use the function of the EME API to decide which DRM system to use for a specific client. For more information about EME privacy, navigate to [Encrypted Media Extensions Privacy][W3cEncryptedMediaPrivacy].
+Microsoft Edge supports DRM using the Encrypted Media Extensions API (EME API) for HTML5 sites.  The EME API allows websites to communicate with a DRM provider called a Content Decryption Module (CDM). Different DRM systems, such as Widevine by Google or PlayReady by Microsoft, may be supported by the CDM implementation of the developer.  Content providers may choose to support one or more potential DRM systems. Providers may use the function of the EME API to decide which DRM system to use for a specific client. For more information about EME privacy, navigate to [Encrypted Media Extensions Privacy](https://w3.org/TR/encrypted-media#privacy).
 
-Microsoft Edge supports PlayReady DRM only on Windows 10 and later. PlayReady is a DRM implementation to deliver media experiences such as 4K video and Dolby Atmos audio.  Microsoft Edge uses the Windows Platform Media Foundation APIs to support PlayReady.  To validate access to protected content, Microsoft Edge uses the Windows 10 or Windows 11 operating system. Windows uses a unique identifier (ID) and communicates the ID with the PlayReady service.  All EME, CDM, and browser data for PlayReady that persists on the device is stored and maintained on Microsoft Edge.  For more information about PlayReady, navigate to [Simple End to End System][PlayreadyOverviewSimpleEndSystem].
+Microsoft Edge supports PlayReady DRM only on Windows 10 and later. PlayReady is a DRM implementation to deliver media experiences such as 4K video and Dolby Atmos audio.  Microsoft Edge uses the Windows Platform Media Foundation APIs to support PlayReady.  To validate access to protected content, Microsoft Edge uses the Windows 10 or Windows 11 operating system. Windows uses a unique identifier (ID) and communicates the ID with the PlayReady service.  All EME, CDM, and browser data for PlayReady that persists on the device is stored and maintained on Microsoft Edge.  For more information about PlayReady, navigate to [Simple End to End System](/playready/overview/simple-end-to-end-system).
 
 Microsoft Edge supports Widevine by Google DRM and the option is on by default.  Microsoft Edge periodically fetches updates for Widevine from Google servers.  The use of Widevine may include communications to Google.  To opt-out of using Widevine in Microsoft Edge, navigate to `edge://flags/#edge-widevine-drm` and turn off the Widevine DRM setting.  Widevine has the capability to create a unique device identifier and transmit it to Google.  For more specific information on Widevine and privacy, navigate to the Google privacy policy.
 
@@ -231,23 +231,23 @@ Within a family group, there are family settings that should be enabled for chil
 
 Web filtering protects children in the family group from going to mature websites or websites blocked by the family organizer.
 
-Activity reporting records information about the websites children visit. Records also include searches, screen time, devices used, and attempt to visit blocked sites. The family group organizer may see the information at [family.microsoft.com][MicrosoftAccountFamilyMain]. The data is collected, encrypted in transit, sent to Microsoft, and stored on secure Microsoft storage servers. The data is collected with the child's Microsoft account so it may be properly managed. Activity reports are stored on [family.microsoft.com][MicrosoftAccountFamilyMain] for up to 30 days and then deleted after.
+Activity reporting records information about the websites children visit. Records also include searches, screen time, devices used, and attempt to visit blocked sites. The family group organizer may see the information at [family.microsoft.com](https://account.microsoft.com/family). The data is collected, encrypted in transit, sent to Microsoft, and stored on secure Microsoft storage servers. The data is collected with the child's Microsoft account so it may be properly managed. Activity reports are stored on [family.microsoft.com](https://account.microsoft.com/family) for up to 30 days and then deleted after.
 
-Safe search adds a safe keyword to the header request to search engines. Bing reads the safe keyword and filters search results returned to the child. Other search engines may return filtered results due to the keyword. All of the child's searches are collected and made available for the family organizer to view in activity reports or at [family.microsoft.com][MicrosoftAccountFamilyMain]. The data is collected with the child's Microsoft account so it may be properly managed.
+Safe search adds a safe keyword to the header request to search engines. Bing reads the safe keyword and filters search results returned to the child. Other search engines may return filtered results due to the keyword. All of the child's searches are collected and made available for the family organizer to view in activity reports or at [family.microsoft.com](https://account.microsoft.com/family). The data is collected with the child's Microsoft account so it may be properly managed.
 
-The child's browsing data is stored on secure Microsoft servers and made available to parents for up to 30 days, then immediately deleted.  The data may be deleted at any time from the [Microsoft privacy dashboard][MicrosoftAccountPrivacy]. To clear browsing data stored locally on a device, navigate to `edge://settings/clearBrowserData`.  Choose a **Time range**, select checkboxes as needed, then select **Clear now**.
+The child's browsing data is stored on secure Microsoft servers and made available to parents for up to 30 days, then immediately deleted.  The data may be deleted at any time from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/). To clear browsing data stored locally on a device, navigate to `edge://settings/clearBrowserData`.  Choose a **Time range**, select checkboxes as needed, then select **Clear now**.
 
 Collecting child browsing data and sharing it with the family group organizer requires two things. 1.\) The child must be signed in to Windows 10 and later with a Microsoft account. 2.\) The activity reporting setting must be turned on by the family organizer. The child does not need to be signed in to Microsoft Edge to collect browsing data. If family safety features are not available on your version of Windows, update to the most recent version of Windows.
 
 **Guest** mode and **InPrivate** browsing are not available if web filtering or activity reporting is turned on.
 
-The family group organizer may stop the data collection from the family safety portal.  For more information about Microsoft family safety features, navigate to [What is a Microsoft family group?][MicrosoftSupport12413]
+The family group organizer may stop the data collection from the family safety portal.  For more information about Microsoft family safety features, navigate to [What is a Microsoft family group?](https://support.microsoft.com/help/12413)
 
 
 <!-- ====================================================================== -->
 ## Geolocation
 
-Microsoft Edge supports the [Geolocation API][W3cGeolocationApiMain], which allows websites to access your location information with your permission.  Websites may ask for your location, for example, when trying to find the closest coffee shop near you.  Microsoft Edge always asks for your permission before granting websites access to your location.  To manage the permission or to always block sites from accessing your location, navigate to `edge://settings/content/location`.
+Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your location information with your permission.  Websites may ask for your location, for example, when trying to find the closest coffee shop near you.  Microsoft Edge always asks for your permission before granting websites access to your location.  To manage the permission or to always block sites from accessing your location, navigate to `edge://settings/content/location`.
 
 On the right side of the address bar, Microsoft Edge indicates when your location is or is not being shared.
 
@@ -259,7 +259,7 @@ If you allow sharing of your location with a site, Microsoft Edge sends local ne
 
 You can allow Microsoft Edge to provide the requesting site with a more precise location on Windows 10 and later. Open **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings.
 
- If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, Microsoft Edge provides an approximate location to the requesting site. The information is only shared with a requesting site if you previously allowed sharing of your location. For more information about Windows location settings, navigate to [Windows location service and privacy][MicrosoftSupport4468240].
+ If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, Microsoft Edge provides an approximate location to the requesting site. The information is only shared with a requesting site if you previously allowed sharing of your location. For more information about Windows location settings, navigate to [Windows location service and privacy](https://support.microsoft.com/help/4468240).
 
 Microsoft Edge generates a new random ID when making requests to the location service.  Microsoft Edge location service does not store your geolocation coordinates.
 
@@ -291,7 +291,7 @@ When you install or update Microsoft Edge, device information is sent to Microso
 
 Microsoft Edge pings the Microsoft Edge updater service about the progress of installation and update.  If an installation or update fails and crash reporting is turned on, a log is created and sent to Microsoft.  For more information about sending crash reports to Microsoft, navigate to the [Crashes](#crashes) section.  Microsoft collects information about how you downloaded Microsoft Edge, the success of the installation, and any uninstalls to better understand the success of Microsoft Edge downloads.
 
-Automatic updates are turned on by default for all Microsoft Edge users.  On all platforms, Microsoft Edge checks for updates on startup and periodically while running.  On macOS devices, Microsoft AutoUpdate checks for updates for Microsoft products periodically as well.  More controls and configurations are available for organizations.  For more information about controls and configurations, navigate to [Update][DeployedgeUpdatePoliciesUpdate].
+Automatic updates are turned on by default for all Microsoft Edge users.  On all platforms, Microsoft Edge checks for updates on startup and periodically while running.  On macOS devices, Microsoft AutoUpdate checks for updates for Microsoft products periodically as well.  More controls and configurations are available for organizations.  For more information about controls and configurations, navigate to [Update](/deployedge/microsoft-edge-update-policies#update).
 
 
 <!-- ====================================================================== -->
@@ -305,7 +305,7 @@ Microsoft Edge offers a simplified experience with the integration of Internet E
 
 Microsoft Edge downloads the list of sites from a location defined by the administrator through a policy, and caches the file that determines which sites must be opened in IE mode.  Depending on your Windows or IE 11 settings, Microsoft Edge collects diagnostic data about the use of IE mode. Collected data includes which sites users visit, performance data, reliability data, and feature usage data.  On Windows 10 and later, the diagnostic data is collected according to your Windows Diagnostic data setting.  On Windows 8.1, website information is collected if the user has opted into the Flip Ahead or Suggested Sites feature in IE.  IE mode may not follow the same data collection settings in the Microsoft Edge Privacy settings.
 
-If your administrator turned on Enterprise Site Discovery, browsing history data is collected periodically to help administrators review the sites that users visit and ensure that system upgrades continue to support those sites.  For more information about Enterprise Site Discovery in IE11, navigate to [Collect data using Enterprise Site Discovery][InternetExplorer11DeployGuideCollectDataEnterpriseSiteDiscovery].
+If your administrator turned on Enterprise Site Discovery, browsing history data is collected periodically to help administrators review the sites that users visit and ensure that system upgrades continue to support those sites.  For more information about Enterprise Site Discovery in IE11, navigate to [Collect data using Enterprise Site Discovery](/internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery).
 
 Non-enterprise users on Windows devices may also access IE mode.  To turn on IE mode, navigate to `edge://settings/defaultBrowser` and select the **Allow sites to be reloaded in Internet Explorer mode** setting.  To open tabs in IE mode, open **Settings and more (...)** > **More tools** and select **Reload in Internet Explorer mode**.  After you turn on IE mode, Microsoft Edge periodically requests a list of unsupported sites from a Microsoft service.  The request is sent over HTTPS and does not contain any identifiers.
 
@@ -323,7 +323,7 @@ To provide a better browsing experience, Microsoft Edge offers to block advertis
 
 The jump list in Microsoft Edge lets you easily find your most recently closed sites by hovering on the Microsoft Edge icon in the task bar and opening a contextual menu (right-click). The last three closed tabs are stored locally for each profile.  To delete sites from the jump list in Windows 10 and later, hover on each site and open a contextual menu (right-click).
 
-You can clear or change the display of your recently closed tabs in the jump list. Navigate to `edge://settings/privacy`, and select the **Choose what to clear every time you close the browser** setting. When using an **InPrivate** window, Microsoft Edge does not add closed tab information to the jump list.  When using **Guest** mode, the jump list is not available.  For more information about clearing your browsing data, navigate to [View and delete browser history in Microsoft Edge][MicrosoftSupport10607].
+You can clear or change the display of your recently closed tabs in the jump list. Navigate to `edge://settings/privacy`, and select the **Choose what to clear every time you close the browser** setting. When using an **InPrivate** window, Microsoft Edge does not add closed tab information to the jump list.  When using **Guest** mode, the jump list is not available.  For more information about clearing your browsing data, navigate to [View and delete browser history in Microsoft Edge](https://support.microsoft.com/help/10607).
 
 
 <!-- ====================================================================== -->
@@ -335,7 +335,7 @@ Kids Mode is a convenient browsing mode designed for kids inside Microsoft Edge.
    Kids Mode
 :::image-end:::
 
-Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com][MicrosoftAccountFamilyMain] since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced, if sync is turned on, to the profile in which Kids Mode was launched.
+Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com](https://account.microsoft.com/family) since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced, if sync is turned on, to the profile in which Kids Mode was launched.
 
 To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the header request to Microsoft Bing and Microsoft News.  The safe keyword helps filter out inappropriate search results and news.  Kids Mode sets preferences for Microsoft Edge settings such as setting tracking prevention to Strict to block most trackers on websites.  Clear browsing data on close has also been turned on which clears things like Cookies and other website data when Kids Mode closes.  To clear browsing data at any time within Kids Mode, complete the following actions.
 
@@ -348,7 +348,7 @@ Kids Mode does not collect data for personalization of the news feed or other Mi
 <!-- ====================================================================== -->
 ## Microsoft Edge Driver
 
-Microsoft Edge Driver allows developers to drive the Microsoft Edge browser using the [WebDriver protocol][WebDriverProtocol].  The Microsoft Edge Driver is an executable file `msedgedriver.exe` separate from Microsoft Edge. Developers can call the driver from  client code, such as a test script.  By default, Microsoft Edge Driver sends diagnostic data such as the status of the [New Session WebDriver command][WebDriverProtocolNewSession] to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about Microsoft Edge Driver, navigate to [Use WebDriver to automate Microsoft Edge automation][WebDriverDoc].
+Microsoft Edge Driver allows developers to drive the Microsoft Edge browser using the [WebDriver protocol](https://www.w3.org/TR/webdriver2/).  The Microsoft Edge Driver is an executable file `msedgedriver.exe` separate from Microsoft Edge. Developers can call the driver from  client code, such as a test script.  By default, Microsoft Edge Driver sends diagnostic data such as the status of the [New Session WebDriver command](https://www.w3.org/TR/webdriver2/#new-session) to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about Microsoft Edge Driver, navigate to [Use WebDriver to automate Microsoft Edge automation](/microsoft-edge/webdriver-chromium).
 
 
 <!-- ====================================================================== -->
@@ -360,9 +360,9 @@ Microsoft Edge uses a Microsoft network time service to track time from an exter
 <!-- ====================================================================== -->
 ## New tab page
 
-Microsoft Edge provides an engaging and user-centric new tab page with a search box powered by [Bing][BingMain]. Microsoft Edge also provides quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365. You can change the appearance of the new tab page by selecting the **customize** button. Your new tab page preferences are set for each profile and stored locally on your device. The preferences are not synced across devices.
+Microsoft Edge provides an engaging and user-centric new tab page with a search box powered by [Bing](https://bing.com). Microsoft Edge also provides quick link tiles for the sites you visit most frequently, and relevant content from Microsoft News or Office 365. You can change the appearance of the new tab page by selecting the **customize** button. Your new tab page preferences are set for each profile and stored locally on your device. The preferences are not synced across devices.
 
-To speed up load times for the Microsoft new tab page, the page may be loaded in the background. The content that is loaded might include cookies, if you allow cookies. You can turn off background loading for the Microsoft new tab page. Navigate to `edge://settings/newTabPage` and turn off the **Preload the new tab page for a faster experience** setting.
+To speed up load times for the Microsoft Edge new tab page, the page may be loaded in the background. The content that is loaded might include cookies, if you allow cookies. You can turn off background loading for the Microsoft new tab page. Navigate to `edge://settings/newTabPage` and turn off the **Preload the new tab page for a faster experience** setting.
 
 :::image type="complex" source="./media/n-t-p1.png" alt-text="New tab page" lightbox="./media/n-t-p1.png":::
    New tab page
@@ -372,11 +372,11 @@ To speed up load times for the Microsoft new tab page, the page may be loaded in
 
 To tailor content to your interactions and preferences, the new tab page in Microsoft Edge stores cookies with randomly generated identifiers on the device.  A scrubbed version of your IP address is also used to tailor the content to your general region.  TO clear the cookies that persist on your device, navigate to `edge://settings/siteData`.
 
-To prevent ads from being personalized, navigate to [Ad settings][MicrosoftAccountPrivacyAdSettings] on the [Microsoft privacy dashboard][MicrosoftAccountPrivacy]. Turn off the **See personalized ads in your browser** setting.  To turn off the quick link tiles, open **customize button** > **Custom** and turn off the **Show quick links** setting. Microsoft Edge uses your local browsing history to personalize the quick link tiles. You can delete or create new tiles. The data is only stored locally on the device, per profile.
+To prevent ads from being personalized, navigate to [Ad settings](https://account.microsoft.com/privacy/ad-settings) on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/). Turn off the **See personalized ads in your browser** setting.  To turn off the quick link tiles, open **customize button** > **Custom** and turn off the **Show quick links** setting. Microsoft Edge uses your local browsing history to personalize the quick link tiles. You can delete or create new tiles. The data is only stored locally on the device, per profile.
 
 The search box on the new tab page runs a Bing search based on the query you type.  To automatically provide search suggestions and results, Microsoft Edge shares your typed characters, search query, IP address, and search identifiers with Bing. The search box may be configured with group policies to provide search results from Microsoft Search. The results can include information from your organization such as documents and intranet content. To provide an integrated search experience, Microsoft Edge stores cookies locally on the device.
 
-If you are signed in to Microsoft Edge with your Microsoft account, you may manage your browsing activity associated with the new tab page from the [Microsoft privacy dashboard][MicrosoftAccountPrivacyAdSettings].
+If you are signed in to Microsoft Edge with your Microsoft account, you may manage your browsing activity associated with the new tab page from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/ad-settings).
 
 Microsoft Edge collects diagnostic data about how you use the new tab page, such as interactions with the search box and selections on quick link tiles.  To enable collection of diagnostic data about how you use the new tab page, navigate to `edge://settings/privacy` and turn on the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting.  The browser sends diagnostic data about how you use the Microsoft News page to Microsoft to help understand user interactions with news content and improve Microsoft products.  You may turn off Microsoft News content by selecting the **customize** button on the new tab page.  News data is sent to Microsoft using HTTPS and stored for up to 13 months, after which it is aggregated and the personal identifiers are removed.
 
@@ -384,7 +384,7 @@ The new tab page also lets you set a custom image as the background. The image i
 
 ### Office 365
 
-If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Office 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers, under the [Microsoft Online Services Terms (OST)][MicrosoftLicensingProductProducts]. For more information about privacy for Office 365, navigate to [Overview of privacy controls for Microsoft 365 Apps for enterprise][DeployedgePrivacyOverviewControls].
+If you are signed in to Microsoft Edge with a work or school account, your organization may turn on Office 365 as an option for page content on the new tab page. The feature is currently available only for commercial customers, under the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products). For more information about privacy for Office 365, navigate to [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls).
 
 **InPrivate** browsing and **Guest** mode offer alternative new tab page experiences.
 
@@ -428,7 +428,7 @@ If you previously saved payment information to your Microsoft account, it is als
 
 The feature is only available for users with a non-child Microsoft account.  The feature is not available for users signed into Microsoft Edge with a work or school account.
 
-If you allow personalization, the Microsoft Edge team collects and uses your Microsoft Edge browsing history to personalize experiences and advertising on [Bing][BingMain], Microsoft News, and other Microsoft services.  Personalization provides more relevant and useful search results, ads, and news content.  For example, if the Microsoft Edge team determines based on your browsing that you prefer a particular store, the ads you see may be for that store.  Similarly, if you frequently look at travel blogs and read travel articles, your news feed may include news content about traveling.
+If you allow personalization, the Microsoft Edge team collects and uses your Microsoft Edge browsing history to personalize experiences and advertising on [Bing](https://bing.com), Microsoft News, and other Microsoft services.  Personalization provides more relevant and useful search results, ads, and news content.  For example, if the Microsoft Edge team determines based on your browsing that you prefer a particular store, the ads you see may be for that store.  Similarly, if you frequently look at travel blogs and read travel articles, your news feed may include news content about traveling.
 
 The personalization feature is only available for users with a non-child Microsoft account. The feature is not available for users signed in to Microsoft Edge with a work or school account.
 
@@ -439,12 +439,12 @@ Your browsing history is collected and used for personalization only if all four
 * Your group policies managed by an organization (employer, school, and so on) allow personalization.
 * You not using the browser in **Guest** or **InPrivate** modes.
 
-Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard][MicrosoftAccountPrivacy].  Your browsing history is stored on secure Microsoft servers for up to 45 days.  After 45 days, the data is deleted and not used for personalization.
+Your browsing history and other data are transferred over HTTPS and attached to your Microsoft account information.  Your browsing history is stored on secure Microsoft servers.  You may view and delete previously shared browsing history by going to the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).  Your browsing history is stored on secure Microsoft servers for up to 45 days.  After 45 days, the data is deleted and not used for personalization.
 
-You may modify your interests or opt-out of personalized ads from the [Ad settings][MicrosoftAccountPrivacyAdSettings] on the [Microsoft privacy dashboard][MicrosoftAccountPrivacy].
+You may modify your interests or opt-out of personalized ads from the [Ad settings](https://account.microsoft.com/privacy/ad-settings) on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
 > [!NOTE]
-> Opting out of personalized ads on the [Microsoft privacy dashboard][MicrosoftAccountPrivacy] does not turn off the collection and use of your browsing history for personalization of search results and content in your news feed. You can turn off the collection and use of your Microsoft Edge browsing history for personalized search results and news. Navigate to `edge://settings/privacy`. In **Personalize your web experience** turn off the **Improve your web experience by allowing Microsoft to use your browsing history from the account for personalizing advertising, search, news and other Microsoft services** setting. If you stop sharing the data, Microsoft no longer collects and uses your browsing history to personalize ads, search results, and news. For more information about personalization in Microsoft Edge, navigate to [Microsoft Edge browsing history for personalized advertising and experiences][MicrosoftSupport4532583].
+> Opting out of personalized ads on the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/) does not turn off the collection and use of your browsing history for personalization of search results and content in your news feed. You can turn off the collection and use of your Microsoft Edge browsing history for personalized search results and news. Navigate to `edge://settings/privacy`. In **Personalize your web experience** turn off the **Improve your web experience by allowing Microsoft to use your browsing history from the account for personalizing advertising, search, news and other Microsoft services** setting. If you stop sharing the data, Microsoft no longer collects and uses your browsing history to personalize ads, search results, and news. For more information about personalization in Microsoft Edge, navigate to [Microsoft Edge browsing history for personalized advertising and experiences](https://support.microsoft.com/help/4532583).
 
 
 <!-- ====================================================================== -->
@@ -460,7 +460,7 @@ You may also print webpages and files to a PDF using Microsoft Print to PDF, whi
 
 Profiles in Microsoft Edge allow you to separate your browsing data into independent profiles.  Data associated with one profile is separate from data associated with other profiles.  Your personal favorites and history, for example, are not synchronized with your work account if you set each up in different profiles.
 
-However, users are able to easily switch between existing profiles in Microsoft Edge without the need for passwords.  If users have access to the same device, users may create another profile on the same version of Microsoft Edge without the permission of the current profile owner.  Removing the profile from Microsoft Edge settings permanently deletes browsing data for the specific profile stored on the device, such as browsing history, favorites, form fill data, and passwords.  Data synced to your account may still be stored in the Microsoft cloud and may be cleared from the [Microsoft privacy dashboard][MicrosoftAccountPrivacy].
+However, users are able to easily switch between existing profiles in Microsoft Edge without the need for passwords.  If users have access to the same device, users may create another profile on the same version of Microsoft Edge without the permission of the current profile owner.  Removing the profile from Microsoft Edge settings permanently deletes browsing data for the specific profile stored on the device, such as browsing history, favorites, form fill data, and passwords.  Data synced to your account may still be stored in the Microsoft cloud and may be cleared from the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
 **Guest** mode is a temporary instance of a fresh profile.  It allows you to browse on another user's device without modifying the signed-in profile. Browsing data from **Guest** mode such as favorites, browsing history, passwords, and form fill data does not persist after you close all **Guest** mode windows.  Downloaded files are stored on the device, but the history of the downloads is deleted.
 
@@ -470,15 +470,15 @@ However, users are able to easily switch between existing profiles in Microsoft 
 
 By default, while browsing **InPrivate**, Microsoft does not collect any information about websites you visit for product improvement purposes. Your school, workplace, or internet service provider may still be able to see your browsing activity.
 
-Browsing data for the specific **InPrivate** session is cleared after all **InPrivate** windows are closed.  When using the Windows Input Method Editor (IME) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.  You can stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing. Open **Start** > **Settings** > **Privacy** and turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, navigate to [Browse InPrivate in Microsoft Edge][MicrosoftSupport4533513].
+Browsing data for the specific **InPrivate** session is cleared after all **InPrivate** windows are closed.  When using the Windows Input Method Editor (IME) keyboard for typing and inking, data may be collected to improve language recognition and suggestion capabilities.  You can stop inking and typing data from being collected by Microsoft while using the Windows IME keyboard during **InPrivate** and normal browsing. Open **Start** > **Settings** > **Privacy** and turn off **Inking & typing personalization**.  For more information about **InPrivate** browsing, navigate to [Browse InPrivate in Microsoft Edge](https://support.microsoft.com/help/4533513).
 
 
 <!-- ====================================================================== -->
 ## Read aloud
 
-Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, hover anywhere on the page and open the contextual menu (right-click) or open **Settings and more (...)** and select **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later][OfficeSupport4c83a8d8748642f78e462b0fdf753130] under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, navigate to `edge://settings/clearBrowserData`.
+Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, hover anywhere on the page and open the contextual menu (right-click) or open **Settings and more (...)** and select **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later](https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130) under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, navigate to `edge://settings/clearBrowserData`.
 
-When you start Read aloud, Microsoft Edge uses the [Web Speech API][GithubW3cIncubatorCommunityGroupSpeechApi]. Depending on the voice you select, the contents of the page are converted from text to speech using either a platform-supplied, client-side library (for example, one specific to your operating system) or a server-side library powered by Azure Cognitive Services.
+When you start Read aloud, Microsoft Edge uses the [Web Speech API](https://wicg.github.io/speech-api). Depending on the voice you select, the contents of the page are converted from text to speech using either a platform-supplied, client-side library (for example, one specific to your operating system) or a server-side library powered by Azure Cognitive Services.
 
 If your content is converted to speech using a client-side library, no information is sent to Microsoft servers. If your content is converted to speech using Azure Cognitive Services (as indicated by the word "Online" in any of the voice names), the text, along with a randomly generated token, is sent to Microsoft.  Once conversion is complete, the service returns the spoken text in an audio file to your device.  All data is encrypted while being transferred from your device to Microsoft and vice versa.  The text that is sent to Microsoft and the audio file that is generated are both deleted immediately after conversion occurs; no other data about your web content is stored for any period of time.
 
@@ -490,7 +490,7 @@ To improve Microsoft Edge, the Microsoft Edge team is always learning from users
 
 To enable new functions for randomly selected users, Microsoft Edge regularly sends required information about your operating system, channel, version, country or region, and other device configuration data to the Microsoft Edge configuration service.  The data is sent with a resettable identifier unique to your browser.  Data is transmitted to the service over HTTPS.  The data is used for receiving updates to enable new functionality, to keep Microsoft Edge up to date and performing properly, and to improve Microsoft products and services.
 
-More controls and configurations are available for organizations.  For more information about controls and configurations for organizations, navigate to [Microsoft Edge configurations and experimentation][DeployedgeConfigurationExperiments].
+More controls and configurations are available for organizations.  For more information about controls and configurations for organizations, navigate to [Microsoft Edge configurations and experimentation](/deployedge/edge-configuration-and-experiments).
 
 As a user, you are not able to turn off the browser updates controlled or configured by your organization. You can control whether your product usage data is sent to Microsoft. Navigate to `edge://settings/privacy`, and change the **Optional diagnostic data** settings.
 
@@ -530,7 +530,7 @@ The Microsoft Edge shopping feature requires sharing of cookie information with 
 
 When you're applying coupons, cookies are stored on your device to correctly attribute the coupon provider.  Cookies are saved by Microsoft-trusted coupon providers only after a coupon is successfully applied on the cart.  After the coupons are applied, information about the success of the coupons is sent back to the Microsoft shopping service to help understand which coupons succeeded or failed.
 
-Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user’s query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
+Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user's query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
 
 :::image type="complex" source="./media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/shopping.png":::
    Shopping and coupons
@@ -547,15 +547,19 @@ The shopping service is turned on by default for all users.  To change the shopp
 
 InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.
 
+
+<!-- ====================================================================== -->
+## Sign in and Identity
+
 Signing in to Microsoft Edge provides many features to make the browser more productive. To sign in seamlessly when you first launch Microsoft Edge, it attempts to detect your identity from the operating system. If Microsoft Edge detects your identity from the operating system but you do not want to remain signed in to Microsoft Edge, navigate to `edge://settings/profiles` and either sign out or remove your profile.
 
 If a new identity is added to the operating system and your Microsoft Edge profile does not currently have an identity, Microsoft Edge adds the specific identity to your profile. If you sign into Microsoft Edge with a Microsoft account or a work or school account and do not have an identity on your Windows profile, the account is added to your Windows profile unless you choose to not add it to Windows while signing in.
 
 If a new identity is added to the operating system and your Microsoft Edge profile does not currently have an identity, Microsoft Edge adds the specific identity to your profile.  If you sign into Microsoft Edge with a Microsoft account or a work or school account and do not have an identity on your Windows 10 profile, the specific account is added to your Windows 10 profile unless you specifically choose to not add it to Windows 10 while signing in.
 
-Being signed in to Microsoft Edge enables single sign-on. You are automatically signed in to certain websites such as Bing, and other identity-powered experiences such as Sync. If you want to limit sign-in to Microsoft Edge and not other Microsoft sites such as [Bing][BingMain], you may sign out of the specific site. Microsoft Edge creates a sign-out cookie that tells Microsoft Edge not to sign into the specific site for future visits.
+Being signed in to Microsoft Edge enables single sign-on. You are automatically signed in to certain websites such as Bing, and other identity-powered experiences such as Sync. If you want to limit sign-in to Microsoft Edge and not other Microsoft sites such as [Bing](https://bing.com), you may sign out of the specific site. Microsoft Edge creates a sign-out cookie that tells Microsoft Edge not to sign into the specific site for future visits.
 
-To sign into specific sites again using your user name and password or clear your cookies, navigate to `edge://settings/privacy`. For more information about clearing browsing data, navigate to [View and delete browser history in Microsoft Edge][MicrosoftSupport10607].
+To sign into specific sites again using your user name and password or clear your cookies, navigate to `edge://settings/privacy`. For more information about clearing browsing data, navigate to [View and delete browser history in Microsoft Edge](https://support.microsoft.com/help/10607).
 
 To prevent any identity from being associated with Microsoft Edge, remove your Microsoft Edge profile or sign out of Microsoft Edge. To delete all data associated with your Microsoft Edge profile from your device, you must remove your Microsoft Edge profile. Deleting all data does not delete previously synced data associated with the identity.
 
@@ -587,15 +591,15 @@ SmartScreen uses three types of reputation checks.
 
 The SmartScreen service stores data about the reputation checks and builds a database of known malicious URLs and files.  The data is stored on secure Microsoft servers and is used only for Microsoft security services.  The data is never used to identify or target you in any way.  Clearing your browsing cache clears all locally stored SmartScreen URL data.  Clearing your download history removes any locally stored SmartScreen data about file downloads.
 
-SmartScreen is turned on by default for Microsoft Edge.  To disable SmartScreen, navigate to `edge://settings/privacy` and under **Security** turn off the **Microsoft Defender SmartScreen** setting.  The setting is the same for all profiles associated with the installation of Microsoft Edge on your device.  The setting is not synced across devices.  The setting applies to InPrivate browsing and Guest mode.  If your device is managed with group policies set by your organization, the setting is reflected in Microsoft Edge.  To view the setting, navigate to `edge://settings/privacy`.  For more information about SmartScreen, navigate to [SmartScreen: FAQ][MicrosoftSupport17443].
+SmartScreen is turned on by default for Microsoft Edge.  To disable SmartScreen, navigate to `edge://settings/privacy` and under **Security** turn off the **Microsoft Defender SmartScreen** setting.  The setting is the same for all profiles associated with the installation of Microsoft Edge on your device.  The setting is not synced across devices.  The setting applies to InPrivate browsing and Guest mode.  If your device is managed with group policies set by your organization, the setting is reflected in Microsoft Edge.  To view the setting, navigate to `edge://settings/privacy`.  For more information about SmartScreen, navigate to [SmartScreen: FAQ](https://support.microsoft.com/help/17443).
 
-Optionally, SmartScreen checks the URLs of files you download to see if any are categorized as potentially unwanted apps.  Blocking potentially unwanted apps helps deliver more productive, performant, and delightful Windows experiences.  The setting is turned off by default and is only available on Windows 10 and later devices.  To enable the feature, navigate to `edge://settings/privacy` and turn on the **Block potentially unwanted apps** setting.  For more information about how potentially unwanted apps are categorized, navigate to [Potentially unwanted application (PUA)][WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted].  For more information about how to configure the setting, navigate to [Detect and block potentially unwanted applications][WindowsSecurityThreatProtectionWindowsDefender].
+Optionally, SmartScreen checks the URLs of files you download to see if any are categorized as potentially unwanted apps.  Blocking potentially unwanted apps helps deliver more productive, performant, and delightful Windows experiences.  The setting is turned off by default and is only available on Windows 10 and later devices.  To enable the feature, navigate to `edge://settings/privacy` and turn on the **Block potentially unwanted apps** setting.  For more information about how potentially unwanted apps are categorized, navigate to [Potentially unwanted application (PUA)](/windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua).  For more information about how to configure the setting, navigate to [Detect and block potentially unwanted applications](/windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
 
 <!-- ====================================================================== -->
 ## Speech recognition
 
-To convert your speech into text, Microsoft Edge supports the [Web Speech API][GithubW3cIncubatorCommunityGroupSpeechApi].  If a website includes a web feature that requires capture and translation of your speech to text and requests access to your microphone, Microsoft Edge sends the captured audio to a Microsoft service where it is translated into text.  The recorded audio is sent with a randomly generated token over a secure HTTPS connection to the Microsoft Azure Cognitive Services.  The recorded audio content is not stored for any purposes.  The text is sent back to your device and then sent to the website.
+To convert your speech into text, Microsoft Edge supports the [Web Speech API](https://wicg.github.io/speech-api).  If a website includes a web feature that requires capture and translation of your speech to text and requests access to your microphone, Microsoft Edge sends the captured audio to a Microsoft service where it is translated into text.  The recorded audio is sent with a randomly generated token over a secure HTTPS connection to the Microsoft Azure Cognitive Services.  The recorded audio content is not stored for any purposes.  The text is sent back to your device and then sent to the website.
 
 To turn off speech translated to text, you may deny microphone access from any site that prompts for permission.  To turn off the Microphone permission for all sites, navigate to `edge://settings/content/microphone`.
 
@@ -625,7 +629,7 @@ Favorites include any tabs you previously set aside in previous versions of Micr
    Sync setting is on
 :::image-end:::
 
-For sync to function, all device connectivity and configuration data needed to provide the sync experience is sent to Microsoft. Sync data includes the name of your device, make, and model. To delete sync data, navigate to [Microsoft device dashboard][MicrosoftAccountDevices]. To manage your synced favorites, navigate to `edge://favorites`. To manage all other data types, navigate to `edge://settings/profiles`.
+For sync to function, all device connectivity and configuration data needed to provide the sync experience is sent to Microsoft. Sync data includes the name of your device, make, and model. To delete sync data, navigate to [Microsoft device dashboard](https://account.microsoft.com/devices). To manage your synced favorites, navigate to `edge://favorites`. To manage all other data types, navigate to `edge://settings/profiles`.
 
 All synced data is encrypted in transit over HTTPS when transferred between the browser and Microsoft servers.  The synced data is also stored in an encrypted state in Microsoft servers.  Sensitive data types such as addresses and passwords are further encrypted on the device before being synced.  If you are using a work or school account, all data types are further encrypted before being synced using Microsoft Information Protection.  All other synced data types are stored until you delete the data, the account is deleted, or the account becomes inactive.  An account ID is attached to all synced data, as the ID is necessary to perform sync across multiple devices.
 
@@ -643,9 +647,9 @@ This data is not sent during InPrivate browsing or Guest mode.
 <!-- ====================================================================== -->
 ## Tracking prevention
 
-Microsoft Edge is designed to detect and block known trackers.  Users may choose from three levels of tracking prevention: Basic, Balanced, and Strict.  To protect user privacy, Balanced is selected by default.  Microsoft Edge detects trackers before any are loaded on the page by using an open-source list of known trackers.  The list is downloaded to the device periodically as the list is updated.  The number of trackers blocked and names of those trackers are stored locally on the device for statistical purposes.  To clear the data, navigate to `edge://settings/privacy/blockedTrackers`.  The detection and blocking of trackers occurs locally on the device.  To disable tracking prevention, navigate to `edge://settings/privacy`.  For more information about Tracking prevention, navigate to [Learn about tracking prevention in Microsoft Edge][MicrosoftAccount4533959].
+Microsoft Edge is designed to detect and block known trackers.  Users may choose from three levels of tracking prevention: Basic, Balanced, and Strict.  To protect user privacy, Balanced is selected by default.  Microsoft Edge detects trackers before any are loaded on the page by using an open-source list of known trackers.  The list is downloaded to the device periodically as the list is updated.  The number of trackers blocked and names of those trackers are stored locally on the device for statistical purposes.  To clear the data, navigate to `edge://settings/privacy/blockedTrackers`.  The detection and blocking of trackers occurs locally on the device.  To disable tracking prevention, navigate to `edge://settings/privacy`.  For more information about Tracking prevention, navigate to [Learn about tracking prevention in Microsoft Edge](https://support.microsoft.com/help/4533959).
 
-You may turn off list updates using the following group policy, [Enable component updates in Microsoft Edge][DeployedgePoliciesComponentupdatesenabled].
+You may turn off list updates using the following group policy, [Enable component updates in Microsoft Edge](/deployedge/microsoft-edge-policies#componentupdatesenabled).
 
 :::image type="complex" source="./media/tracking-prevention.png" alt-text="Tracking prevention" lightbox="./media/tracking-prevention.png":::
    Tracking prevention
@@ -655,14 +659,28 @@ You may turn off list updates using the following group policy, [Enable componen
 <!-- ====================================================================== -->
 ## Translate
 
-In Microsoft Edge, you can browse the web and translate webpages into a language of your choice. Microsoft Edge uses [Microsoft Translator][MicrosoftSpeechTranslator] to translate web pages. This feature at first uses a library on your device that samples certain visible portions of a webpage to detect the original language. If the detected language is not one of your preferred languages, Microsoft Edge offers to translate the webpage to your preferred language or another language you choose. You can then translate the page by selecting **Translate**. You can autotranslate all pages in that language by choosing the **Always translate the pages from \<a language\>** checkbox.
+In Microsoft Edge, you can browse the web and translate webpages into a language of your choice. Microsoft Edge uses [Microsoft Translator](https://azure.microsoft.com/services/cognitive-services/speech-translation/) to translate web pages. This feature at first uses a library on your device that samples certain visible portions of a webpage to detect the original language. If the detected language is not one of your preferred languages, Microsoft Edge offers to translate the webpage to your preferred language or another language you choose. You can then translate the page by selecting **Translate**. You can autotranslate all pages in that language by choosing the **Always translate the pages from \<a language\>** checkbox.
 
-Microsoft Edge does not translate a webpage without your permission. If you do decide to translate, Microsoft Edge sends the text of the webpage you want to translate, along with the *to* and *from* language and a service token to Microsoft Translator over a secure HTTPS connection. The service token doesn’t contain any user identifiable information. [Microsoft Translator][MicrosoftSpeechTranslator] then processes the text to remove any identifiers (such as email or phone number) and stores the text for service improvement purposes. The details of this communication are covered under [Microsoft Privacy Statement – Microsoft privacy][MicrosoftPrivacyStatement].
+Microsoft Edge does not translate a webpage without your permission. If you do decide to translate, Microsoft Edge sends the text of the webpage you want to translate, along with the *to* and *from* language and a service token to Microsoft Translator over a secure HTTPS connection. The service token doesn't contain any user identifiable information. [Microsoft Translator](https://azure.microsoft.com/services/cognitive-services/speech-translation/) then processes the text to remove any identifiers (such as email or phone number) and stores the text for service improvement purposes. The details of this communication are covered under [Microsoft Privacy Statement – Microsoft privacy](https://privacy.microsoft.com/privacystatement).
 
 If you want to stop Microsoft Edge from offering to translate webpages, complete the following steps.
 
 1. Navigate to `edge://settings/languages`.
 1. Turn off the **Offer to translate pages that are not in a language you read** toggle and close the webpage.
+
+
+<!-- ====================================================================== -->
+## Travel
+
+When you do online activities related to travelling, Microsoft Edge helps you find recommendations for travel.  To help you find recommendations while planning your travel online, Microsoft Edge downloads a list of travel domains to the client from the Microsoft Travel service.
+
+When you visit a website, Microsoft Edge locally determines if the website you're on is a travel domain.  If the website is identified as a Travel-related webpage, Microsoft Edge sends the domain, flight dates, From and To locations, and passenger count, along with information about Microsoft Edge and cookies (if cookies are allowed) to the service.  This data does not include any personally identifiable information, and is sent over HTTPS.
+
+The Microsoft Edge Travel feature requires sharing cookie information with Bing.com.  For example, cookies may be used for debugging, fraud detection, and analytics.  When you visit Bing.com in your browser and update any settings on Bing pages, Bing.com creates a cookie in your browser and stores information in the cookie.  This cookie is shared across Bing.com pages, and Microsoft Edge sends this cookie to the Microsoft Travel service to keep your experience consistent.
+
+The Travel service is turned on by default.  To change the Travel setting in Microsoft Edge:
+1. Navigate to `edge://settings/privacy`.
+2. In the **Services** section at the bottom of the page, turn off the setting **Show travel recommendations in Microsoft Edge**.
 
 
 <!-- ====================================================================== -->
@@ -698,17 +716,13 @@ Windows Information Protection (WIP) helps prevent accidental leaking of corpora
    Windows Information Protection
 :::image-end:::
 
-If WIP is turned on for your version of Microsoft Edge, the browser collects event logs and sends them to your organization.  If WIP is turned on, you are not able to opt out of the data collection.  WIP is only available on releases of Windows 10 from August 2016 or later.  For more information about the event logs captured by WIP, navigate to [How to collect Windows Information Protection (WIP) audit event logs][WindowsSecurityInformationProtectionCollectAuditEventLogs].
+If WIP is turned on for your version of Microsoft Edge, the browser collects event logs and sends them to your organization.  If WIP is turned on, you are not able to opt out of the data collection.  WIP is only available on releases of Windows 10 from August 2016 or later.  For more information about the event logs captured by WIP, navigate to [How to collect Windows Information Protection (WIP) audit event logs](/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs).
 
 
 <!-- ====================================================================== -->
 ## Thank you!
 
-Microsoft Edge is made possible by the [Chromium][ChromiumMain] open-source project and other open-source software.  To view all of the software credits, navigate to `edge://credits`.  [Google Chrome Privacy Whitepaper][GoogleChromePrivacyWhitepaper] was used as a source for gathering related information about the Chromium open source project.
-
-Microsoft Edge is made possible by the [Chromium][ChromiumMain] open-source project and other open-source software.  To view all of the software credits, navigate to `edge://credits`.  [Google Chrome Privacy Whitepaper][GoogleChromePrivacyWhitepaper] was used as a source for gathering related information about the Chromium open-source project.
-
-<!-- Are we removing mentions of Chromium? Such as above? -->
+Microsoft Edge is made possible by the [Chromium](https://www.chromium.org) open-source project and other open-source software.  To view all of the software credits, navigate to `edge://credits`.  [Google Chrome Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) was used as a source for gathering related information about the Chromium open-source project.
 
 
 <!-- ====================================================================== -->
@@ -718,64 +732,4 @@ The Microsoft Edge team is always listening to customers and values your feedbac
 
 If an email is detected from your Microsoft Edge profile, it is pre-populated with the URL of the current site and relevant diagnostic data. The diagnostic data can include data about Microsoft Edge features you turned on and your browser use. You may optionally include a screenshot, files from your device, and recording of your browser may also be optionally included. If you provide optional content, it can include personal data. The data is only used for diagnostic and product improvement purposes.
 
-User feedback is securely sent to Microsoft using HTTPS and stored on secure Microsoft servers.  If you include your email address and the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting is turned on in your Microsoft Edge privacy settings, an identifier unique to your browser installation on your device is associated with your feedback.  If you're signed in to Microsoft Edge with your Microsoft account, your feedback is associated with your account.  All diagnostic data, including diagnostic logs, recordings, and attachments, are stored for up to 30 days.  The remaining feedback data, including an optional screenshot, is stored for up to 15 months.  Make a [request][MicrosoftConcernPrivacy] to delete your feedback if you provided an email with your feedback item.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DeployedgeConfigurationExperiments]: /deployedge/edge-configuration-and-experiments "Microsoft Edge configurations and experimentation | Microsoft Docs"
-[DeployedgePoliciesComponentupdatesenabled]: /deployedge/microsoft-edge-policies#componentupdatesenabled "ComponentUpdatesEnabled - Microsoft Edge - Policies | Microsoft Docs"
-[DeployedgeUpdatePoliciesUpdate]: /deployedge/microsoft-edge-update-policies#update "Update - Microsoft Edge - Update policies | Microsoft Docs"
-[DeployedgeEnterprisePrivacySettings]: /deployedge/microsoft-edge-enterprise-privacy-settings "Configure Microsoft Edge policies to support enterprise privacy | Microsoft Docs"
-[DeployedgePrivacyOverviewControls]: /deployoffice/privacy/overview-privacy-controls "Overview of privacy controls for Microsoft 365 Apps for enterprise | Microsoft Docs"
-
-[InternetExplorer11DeployGuideCollectDataEnterpriseSiteDiscovery]: /internet-explorer/ie11-deploy-guide/collect-data-using-enterprise-site-discovery "Collect data using Enterprise Site Discovery | Microsoft Docs"
-
-[PlayreadyOverviewSimpleEndSystem]: /playready/overview/simple-end-to-end-system "Simple End to End System | Microsoft Docs"
-
-[WindowsPrivacyConfigureDiagnosticDataOrganization]: /windows/privacy/configure-windows-diagnostic-data-in-your-organization "Configure Windows diagnostic data in your organization | Microsoft Docs"
-
-[WindowsSecurityInformationProtectionCollectAuditEventLogs]: /windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs "How to collect Windows Information Protection (WIP) audit event logs | Microsoft Docs"
-[WindowsSecurityThreatProtectionIntelligenceCriteriaPotentiallyUnwanted]: /windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua "Potentially unwanted application (PUA) - How Microsoft identifies malware and potentially unwanted applications | Microsoft Docs"
-[WindowsSecurityThreatProtectionWindowsDefender]: /windows/security/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus "Detect and block potentially unwanted applications | Microsoft Docs"
-
-[WebDriverDoc]: /microsoft-edge/webdriver-chromium "Use WebDriver to automate Microsoft Edge | Microsoft Docs"
-
-[BingMain]: https://bing.com "Bing"
-
-[ChromiumMain]: https://www.chromium.org "The Chromium Projects"
-
-[GithubW3cIncubatorCommunityGroupSpeechApi]: https://wicg.github.io/speech-api "Web Speech API Draft Report | W3C Incubator Community Group"
-
-[GoogleChromePrivacyWhitepaper]: https://www.google.com/chrome/privacy/whitepaper.html "Google Chrome Privacy Whitepaper"
-
-[MicrosoftAccountDevices]: https://account.microsoft.com/devices "Devices | Microsoft Account"
-[MicrosoftAccountFamilyMain]: https://account.microsoft.com/family "Family | Microsoft Account"
-[MicrosoftAccountPrivacy]:  https://account.microsoft.com/privacy/ "Privacy | Microsoft Account"
-[MicrosoftAccountPrivacyAdSettings]: https://account.microsoft.com/privacy/ad-settings "Add settings - Privacy | Microsoft Account"
-
-[MicrosoftConcernPrivacy]: https://www.microsoft.com/concern/privacy "Report a Privacy Concern | Microsoft"
-[MicrosoftLicensingProductProducts]: https://www.microsoft.com/licensing/product-licensing/products "Licensing terms | Microsoft Volume Licensing"
-
-[MicrosoftSupport10607]: https://support.microsoft.com/help/10607 "View and delete browser history in Microsoft Edge | Microsoft Edge support"
-[MicrosoftSupport12413]: https://support.microsoft.com/help/12413 "What is a Microsoft family group? | Microsoft Account support"
-[MicrosoftSupport17443]: https://support.microsoft.com/help/17443 "SmartScreen: FAQ | Microsoft Edge support"
-[MicrosoftSupport4468236]: https://support.microsoft.com/help/4468236 "Diagnostics, feedback, and privacy in Windows 10 | Microsoft Privacy support"
-[MicrosoftSupport4468240]: https://support.microsoft.com/help/4468240 "Windows 10 location service and privacy | Microsoft Privacy support"
-[MicrosoftSupport4532583]: https://support.microsoft.com/help/4532583 "Microsoft Edge browsing history for personalized advertising and experiences | Microsoft Privacy support"
-[MicrosoftSupport4533513]: https://support.microsoft.com/help/4533513 "Browse InPrivate in Microsoft Edge | Microsoft Edge support"
-[MicrosoftAccount4533959]: https://support.microsoft.com/help/4533959 "Learn about tracking prevention in Microsoft Edge | Microsoft Privacy support"
-
-[OfficeSupport4c83a8d8748642f78e462b0fdf753130]: https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130 "Download voices for Immersive Reader, Read Mode, and Read Aloud | Office support"
-
-[W3cEncryptedMediaPrivacy]: https://w3.org/TR/encrypted-media#privacy "11. Privacy - Encrypted Media Extensions | W3C"
-[W3cGeolocationApiMain]: https://w3.org/TR/geolocation-api "Geolocation API Specification 2nd Edition | W3C"
-
-[WebDriverProtocol]: https://www.w3.org/TR/webdriver2/ "WebDriver | W3C Working Draft 24 August 2020"
-[WebDriverProtocolNewSession]: https://www.w3.org/TR/webdriver2/#new-session "8.1 New Session | W3C Working Draft 24 August 2020"
-
-[TwitterMsedgedev]: https://www.twitter.com/MSEdgeDev "Microsoft Edge Dev | Twitter"
-
-[MicrosoftPrivacyStatement]: https://privacy.microsoft.com/privacystatement "Microsoft Privacy Statement – Microsoft privacy"
-
-[MicrosoftSpeechTranslator]: https://azure.microsoft.com/services/cognitive-services/speech-translation/ "Speech Translation | Microsoft Azure"
+User feedback is securely sent to Microsoft using HTTPS and stored on secure Microsoft servers.  If you include your email address and the **Help improve Microsoft products by sending optional diagnostic data about how you use the browser, websites you visit, and crash reports** setting is turned on in your Microsoft Edge privacy settings, an identifier unique to your browser installation on your device is associated with your feedback.  If you're signed in to Microsoft Edge with your Microsoft account, your feedback is associated with your account.  All diagnostic data, including diagnostic logs, recordings, and attachments, are stored for up to 30 days.  The remaining feedback data, including an optional screenshot, is stored for up to 15 months.  Make a [request](https://www.microsoft.com/concern/privacy) to delete your feedback if you provided an email with your feedback item.

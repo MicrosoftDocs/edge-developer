@@ -1,6 +1,6 @@
 ---
-description: Learn about all the ways you are able to pause your code in Microsoft Edge DevTools.
-title: How to pause your code with breakpoints in Microsoft Edge DevTools
+description: Learn all the ways to pause your code in Microsoft Edge DevTools.
+title: Pause your code with breakpoints
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,11 +21,11 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# How to pause your code with breakpoints in Microsoft Edge DevTools
+# Pause your code with breakpoints
 
 Use breakpoints to pause your JavaScript code.  This article explains each type of breakpoint available in DevTools, as well as when to use and how to set each type.
 
-For an introductory tutorial using an existing webpage, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex].
+For an introductory tutorial using an existing webpage, navigate to [Get started with debugging JavaScript](index.md).
 
 
 <!-- ====================================================================== -->
@@ -135,7 +135,7 @@ To set a DOM change breakpoint:
 Use an XHR breakpoint when you want to break when the request URL of an XHR contains a specified string.  DevTools pauses on the line of code where the XHR runs the `send()` method.
 
 > [!NOTE]
-> This feature also works with [Fetch API][MDNFetchApi] requests.
+> This feature also works with [Fetch API](https://developer.mozilla.org/docs/Web/API/Fetch_API) requests.
 
 One example of when this is helpful is when your webpage is requesting an incorrect URL, and you want to quickly find the AJAX or Fetch source code that is causing the incorrect request.
 
@@ -227,27 +227,15 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the debugger features][DevtoolsJavascriptReference] - Using the UI of the debugger in the **Sources** tool.
-*  [Get started with debugging JavaScript in Microsoft Edge DevTools][DevtoolsJavascriptIndex] - An introductory tutorial using an existing webpage.
-*  [Sources tool overview][DevtoolsSourcesIndex] - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
+*  [Use the debugger features](./reference.md) - Using the UI of the debugger in the **Sources** tool.
+*  [Get started with debugging JavaScript in Microsoft Edge DevTools](index.md) - An introductory tutorial using an existing webpage.
+*  [Sources tool overview](../sources/index.md) - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
-[DevtoolsJavascriptIndex]: index.md "Get started with debugging JavaScript in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
-
-[MDNFetchApi]: https://developer.mozilla.org/docs/Web/API/Fetch_API "Fetch API | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

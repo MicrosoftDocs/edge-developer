@@ -79,15 +79,15 @@ This section lists events that belong to the Scripting category and their proper
 | Animation Frame Fired | A scheduled animation frame fired, and its callback handler invoked. |
 | Cancel Animation Frame |  A scheduled animation frame was canceled. |
 | GC Event |  Garbage collection occurred. |
-| DOMContentLoaded |  The [DOMContentLoaded event][MDNWindowDOMContentLoadedEvent] was fired by the browser.  This event is fired when all of the DOM content of the page is loaded and parsed. |
+| DOMContentLoaded |  The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded) was fired by the browser.  This event is fired when all of the DOM content of the page is loaded and parsed. |
 | Evaluate Script | A script was evaluated. |
 | Event | A JavaScript event (for example, `mousedown`, or `key`). |
 | Function Call | A top-level JavaScript function call was made (only appears when browser enters JavaScript engine). |
-| Install Timer | A timer was created with [setInterval()][MDNWindowOrWorkerGlobalScopeSetInterval] or [setTimeout()][MDNWindowOrWorkerGlobalScopeSetTimeout]. |
+| Install Timer | A timer was created with [setInterval()](https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval) or [setTimeout()](https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout). |
 | Request Animation Frame | A `requestAnimationFrame()` call scheduled a new frame. |
 | Remove Timer | A previously created timer was cleared. |
-| Time |  A script called [console.time()][ConsoleApiTime]. |
-| Time End | A script called [console.timeEnd()][ConsoleApiTimeEnd]. |
+| Time |  A script called [console.time()](/microsoft-edge/devtools-guide-chromium/console/api#time). |
+| Time End | A script called [console.timeEnd()](/microsoft-edge/devtools-guide-chromium/console/api#timeend). |
 | Timer Fired | A timer fired that was scheduled with `setInterval()` or `setTimeout()`. |
 | XHR Ready State Change | The ready state of an XMLHTTPRequest changed. |
 | XHR Load | An `XMLHTTPRequest` finished loading. |
@@ -147,25 +147,9 @@ This section lists events that belong to Painting category and their properties.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[ConsoleApiTime]: /microsoft-edge/devtools-guide-chromium/console/api#time "time - Console API Reference"
-[ConsoleApiTimeEnd]: /microsoft-edge/devtools-guide-chromium/console/api#timeend "timeEnd - Console API Reference"
-<!--[EvaluatePerformanceTimelineTool]: timeline-tool "How to Use the Timeline Tool"  -->
-
-[MDNWindowDOMContentLoadedEvent]: https://developer.mozilla.org/docs/Web/Events/DOMContentLoaded "Window: DOMContentLoaded event | MDN"
-[MDNWindowOrWorkerGlobalScopeSetInterval]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval "WindowOrWorkerGlobalScope.setInterval() | MDN"
-[MDNWindowOrWorkerGlobalScopeSetTimeout]: https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout "WindowOrWorkerGlobalScope.setTimeout() | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer) and [Flavio Copes][FlavioCopes] (Full Stack Developer).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Flavio Copes](https://developers.google.com/web/resources/contributors#flavio-copes) (Full Stack Developer).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
-[FlavioCopes]: https://developers.google.com/web/resources/contributors#flavio-copes
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

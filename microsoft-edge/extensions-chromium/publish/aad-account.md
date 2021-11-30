@@ -45,7 +45,7 @@ First, determine whether you have a Partner Center account.  If you have a Partn
 
 ### If you don't have a Partner Center account
 
-1.  Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer][DeveloperRegistration].<!-- = create-dev-account.md-->  As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
+1.  Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer](./create-dev-account.md).<!-- = create-dev-account.md-->  As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
@@ -58,11 +58,11 @@ To determine whether the Primary Owner of your Partner Center account is a Micro
 
 1. Use the Microsoft account (MSA) which corresponds with your Partner Center commercial account to sign in to your Partner Center commercial account.
 
-1. Navigate to **Account settings** > [User management][UserMGMT] at Partner Center.
+1. Navigate to **Account settings** > [User management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) at Partner Center.
 
 1. Check whether the Primary Owner of the Partner Center account is a Microsoft account (MSA).  If the Primary Owner isn't a Microsoft account (MSA), that means that this is a Partner Center _commercial_ account rather than a Partner Center _developer_ account.
 
-1. Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Microsoft account (MSA)) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md-->.
+1. Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Microsoft account (MSA)) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md)<!-- = create-dev-account.md-->.
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
@@ -73,13 +73,13 @@ Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Prog
 
 1. Use the Microsoft account (MSA) which corresponds with your Partner Center developer account to sign in to your Partner Center developer account.
 
-1. Navigate to **Account settings** > [User management][UserMGMT] at Partner Center.
+1. Navigate to **Account settings** > [User management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) at Partner Center.
 
 1. Find out who is the Primary Owner of the Partner Center developer account.
 
 1. Verify that the Primary Owner of the Partner Center developer account is a Microsoft account (MSA) user.  This must not be a work Microsoft account (MSA) or a school Microsoft account (MSA).
 
-1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer][DeveloperRegistration]<!-- = create-dev-account.md-->.
+1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md)<!-- = create-dev-account.md-->.
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
@@ -89,12 +89,12 @@ Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Prog
 
 Next, you'll link your Azure Active Directory tenants (Azure AD tenants) with your Microsoft Edge Program account, to enable managing Microsoft Edge extensions.  You can use Azure Active Directory to add users to your Microsoft Edge Program account and manage those users in that account.  You can add individual users, groups of users, or Azure Active Directory applications.
 
-To be able to add users to your Microsoft Edge Program account, and to manage those users in that account, you must first associate your Microsoft Edge Program account with your organization's Azure Active Directory tenant (Azure AD tenant).  If your organization already uses Office 365 or other business services from Microsoft, you already have an Azure AD tenant.  Otherwise, you can create a new Azure AD tenant for free.  To create an AD tenant, see [Create a brand new Azure AD to associate with your Partner Center account][AssociateAzureADPCnew] in the article _Associate Azure Active Directory with your Partner Center account_.
+To be able to add users to your Microsoft Edge Program account, and to manage those users in that account, you must first associate your Microsoft Edge Program account with your organization's Azure Active Directory tenant (Azure AD tenant).  If your organization already uses Office 365 or other business services from Microsoft, you already have an Azure AD tenant.  Otherwise, you can create a new Azure AD tenant for free.  To create an AD tenant, see [Create a brand new Azure AD to associate with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) in the article _Associate Azure Active Directory with your Partner Center account_.
 
-Also see [Associate Azure Active Directory with your Partner Center account][AssociateAzureADPC], in the Windows UWP documentation.  Associating an Azure AD tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
+Also see [Associate Azure Active Directory with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center), in the Windows UWP documentation.  Associating an Azure AD tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
 
 > [!IMPORTANT]
-> If you have added users after associating your Azure AD tenant with your Microsoft account on Partner Center, note that changing roles or permissions of users is not currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management][UserManagementPartnerCenter] section to locate admins of specific roles.
+> If you have added users after associating your Azure AD tenant with your Microsoft account on Partner Center, note that changing roles or permissions of users is not currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
 
 
 <!-- ====================================================================== -->
@@ -102,13 +102,13 @@ Also see [Associate Azure Active Directory with your Partner Center account][Ass
 
 After you've set up the Azure Active Directory association, on the Partner Center you can add users at **Account settings** > **User management**.  Each user has full access the extensions available in the program.  You can also add groups of users, or add Azure Active Directory applications, to grant them access to your Partner Center account.
 
-For more information about adding users, see [Add users, groups, and Azure AD applications][AddAzure] in the Windows UWP documentation.
+For more information about adding users, see [Add users, groups, and Azure AD applications](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) in the Windows UWP documentation.
 
 
 <!-- ====================================================================== -->
 ## Contact us
 
-If you need help or assistance with associating your Azure Active Directory account or other related queries, navigate to [Contact Microsoft Edge extensions support][ContactEdgeExtensions].
+If you need help or assistance with associating your Azure Active Directory account or other related queries, navigate to [Contact Microsoft Edge extensions support](./contact-extensions-team.md).
 
 
 <!-- ====================================================================== -->
@@ -116,30 +116,3 @@ If you need help or assistance with associating your Azure Active Directory acco
 
 *  [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) - General information about Azure Active Directory (Azure AD) tenants, in the Active Directory documentation.
 <!-- contrasts "Work and school accounts, or personal Microsoft accounts" -->
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DeveloperRegistration]: ./create-dev-account.md "Register as a Microsoft Edge extension developer | Microsoft Docs"
-[ContactEdgeExtensions]: ./contact-extensions-team.md "Contact Microsoft Edge extensions support | Microsoft Docs"
-
-<!-- DMC/windows/uwp -->
-[AssociateAADWithPartnerCenterAccount]: /windows/uwp/publish/associate-azure-ad-with-partner-center
-
-[CreateNewAzureAD]: /windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account
-
-[AddAADUsersGroups]: /windows/uwp/publish/add-users-groups-and-azure-ad-applications
-
-[AssociateAzureADPC]: /windows/uwp/publish/associate-azure-ad-with-partner-center "Associate Azure Active Directory with your Partner Center account | Microsoft Docs"
-
-[AssociateAzureADPCnew]: /windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account "Create a brand new Azure AD to associate with your Partner Center account - Associate Azure Active Directory with your Partner Center account | Microsoft Docs"
-
-[AddAzure]: /windows/uwp/publish/add-users-groups-and-azure-ad-applications "Add users, groups, and Azure AD applications | Microsoft Docs"
-
-<!-- non-DMC -->
-[MicrosoftAccount]: https://account.microsoft.com/account "Microsoft account"
-
-[UserManagementPartnerCenter]: https://partner.microsoft.com/dashboard/account/v3/usermanagement
-[UserMGMT]: https://partner.microsoft.com/dashboard/account/v3/usermanagement "Microsoft Partner Center | Account settings | User management"
-
-[WindowsCommunityEverythingAboutMicrosoftAccounts]: https://community.windows.com/stories/everything-you-need-to-know-about-microsoft-accounts "Everything you need to know about Microsoft accounts | Windows Community"

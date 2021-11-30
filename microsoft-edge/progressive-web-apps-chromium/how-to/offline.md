@@ -17,7 +17,7 @@ For many years, organizations were reluctant to invest heavily in web-based soft
 <!-- ====================================================================== -->
 ## Use caching to improve PWA performance
 
-With the introduction of [Service Workers][MDNServiceWorker], the web platform added the `Cache` API to provide access to managed cached resources. This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.
+With the introduction of [Service Workers](https://developer.mozilla.org/docs/Web/API/ServiceWorker), the web platform added the `Cache` API to provide access to managed cached resources. This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.
 
 One common use for the `Cache` API is to pre-cache critical resources when a Service Worker is installed, as shown in the following code snippet.
 
@@ -86,7 +86,7 @@ This simple introduction shows how to use caching in your progressive web app (P
 <!-- ====================================================================== -->
 ## Use IndexedDB in your PWA to store structured data
 
-`IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous. This means you can use it in the main thread, or with Web Workers such as Service Workers. Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects.  See [MDN primer on using IndexedDB][MDNIndexeddbApiUsing].
+`IndexedDB` is an API for storing structured data. Similar to the `Cache` API, it is also asynchronous. This means you can use it in the main thread, or with Web Workers such as Service Workers. Use the `IndexedDB` API for storing a significant amount of structured data on the client, or binary data, such as encrypted media objects.  See [MDN primer on using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB).
 
 
 <!-- ====================================================================== -->
@@ -168,19 +168,9 @@ window.addEventListener("offline", function(){
 ## See also
 
 *   [Cache](https://developer.mozilla.org/docs/Web/API/Cache)
-*   [IndexedDB][MDNIndexeddbApi]
-*   [Service Worker][MDNServiceWorker]
-*   [Web Storage][MDNWebStorageApi]
-*   [navigator.onLine][MDNNavigatoronline]
-*   [Online and Offline Events][MDNNavigatoronlineOfflineEvents]
+*   [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)
+*   [Service Worker](https://developer.mozilla.org/docs/Web/API/ServiceWorker)
+*   [Web Storage](https://developer.mozilla.org/docs/Web/API/Web_Storage_API)
+*   [navigator.onLine](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine)
+*   [Online and Offline Events](https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events)
 *   [Request with Intent: Caching Strategies in the Age of PWAs](https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas)
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[MDNIndexeddbApi]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"
-[MDNIndexeddbApiUsing]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexDb - IndexDB API | MDN"
-[MDNServiceWorker]: https://developer.mozilla.org/docs/Web/API/ServiceWorker "ServiceWorker | MDN"
-[MDNWebStorageApi]: https://developer.mozilla.org/docs/Web/API/Web_Storage_API "Web Storage API | MDN"
-[MDNNavigatoronline]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine "NavigatorOnLine | MDN"
-[MDNNavigatoronlineOfflineEvents]: https://developer.mozilla.org/docs/Web/API/NavigatorOnLine/Online_and_offline_events "Online and offline events - NavigatorOnLine | MDN"
