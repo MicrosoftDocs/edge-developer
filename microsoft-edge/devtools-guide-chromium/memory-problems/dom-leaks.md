@@ -1,9 +1,9 @@
 ---
-description: Use the Detached Elements tool in the Microsoft Edge DevTools to find and fix DOM memory leaks.
 title: Debug DOM memory leaks
+description: Use the Detached Elements tool in the Microsoft Edge DevTools to find and fix DOM memory leaks.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/29/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, detached elements, document object model, dom, memory, leak, node
@@ -15,17 +15,17 @@ A memory leak can occur in your application when an element is no longer attache
 
 This article describes how to use the **Detached Elements** tool in Microsoft Edge DevTools to find detached elements that the browser cannot GC in a demo application and identify the JavaScript that is still referencing the detached element. By changing your JavaScript to release the element, you reduce the number of detached elements on your page.
 
-For more information about heap snapshots and detached elements, read [Discover detached DOM tree memory leaks with Heap Snapshots](/devtools-guide-chromium/memory-problems/#discover-detached-dom-tree-memory-leaks-with-heap-snapshots).
+For more information about heap snapshots and detached elements, read [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots).
 
 ## Open the Detached Elements tool
 
-The **Detached Elements** tool is available as an experiment beginning with Microsoft Edge version 93 and is available by default in Microsoft Edge version 97 and later. Check your version of Microsoft Edge by navigating to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](/devtools-guide-chromium/experimental-features/#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
+The **Detached Elements** tool is available by default in Microsoft Edge 97 and later. Check your version of Microsoft Edge by navigating to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
 
 To open the **Detached Elements** tool for the demo application:
 
 1. Open the [demo application](https://microsoftedge.github.io/Demos/detached-elements/).
 
-1. [Open DevTools](/devtools-guide-chromium/#opening-devtools).
+1. [Open DevTools](../open/index.md).
 
 1. Click the **+** button in the toolbar.
 
@@ -35,7 +35,7 @@ To open the **Detached Elements** tool for the demo application:
    Open the Detached Elements tool
 :::image-end:::
 
-## Get Detached Elements
+## Get detached elements
 
 The **Get Detached Elements** button in the **Detached Elements** tool will find and display all of the detached elements on the page. To find detached elements in the demo application, complete the following steps:
 
@@ -57,7 +57,7 @@ The **Detached Elements** tool displays all of the detached elements on the page
 
 ## Trigger Garbage Collection
 
-You can trigger garbage collection (GC) in the browser from the **Detached Elements** tool. Complete the following steps;
+You can trigger garbage collection (GC) in the browser from the **Detached Elements** tool. Complete the following steps:
 
 1. In the **Detached Elements** tool, click **Collect Garbage**.
 
@@ -65,21 +65,21 @@ You can trigger garbage collection (GC) in the browser from the **Detached Eleme
 
 When you select **Collect Garbage**, the browser run GC. When you select **Get Detached Elements**, the **Detached Elements** tool displays all detached elements that cannot be garbage collected. These detached elements may be memory leaks if they are not going to be reused by the application.
 
-## Analyze
+## Identify the JavaScript code that retains detached elements
 
-Once you have found a detached element that the browser cannot GC, you can use the **Analyze** button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button will take a heap snapshot and populate the **ID** of the detached element with its location in the heap. For more information about heap snapshots, read [Record heap snapshots](/devtools-guide-chromium/memory-problems/heap-snapshots).
+Once you have found a detached element that the browser cannot GC, you can use the **Analyze** button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button will take a heap snapshot and populate the **Id** of the detached element with its location in the heap. For more information about heap snapshots, read [Record heap snapshots](heap-snapshots.md).
 
 :::image type="complex" source="./images/analyze-detached-elements.msft.png" alt-text="Analyze Detached Elements in the Detached Elements tool." lightbox="./images/analyze-detached-elements.msft.png":::
    Analyze Detached Elements in the Detached Elements tool
 :::image-end:::
 
-Complete the following steps:
+To identify the JavaScript code that references a detached element:
 
 1. In the **Detached Elements** tool, click **Analyze**.
 
-The **Memory** tool opens in the bottom panel of DevTools.
+    The **Memory** tool opens in the bottom panel of DevTools.
 
-1. From the **Detached Elements** tool, select the **ID** field of a detached element.
+1. From the **Detached Elements** tool, select the **Id** field of a detached element.
 
 The **Memory** tool in the bottom panel automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**.
 
@@ -103,6 +103,8 @@ You have now identified the retainer that is preventing the detached element fro
 
 When looking for memory leaks, remember that leaks can depend on the context of your application. For the demo application, you found detached elements that could not be garbage collected by the browser and identified the JavaScript retaining the detached elements. However, in the context of the demo application, it makes sense to retain the list of chat messages so that if a user switches back to **Room 1**, the message log is preserved.
 
+The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**. 
+
 :::image type="complex" source="./images/detached-elements-reattached.msft.png" alt-text="The detached elements are reattached to the DOM when switching back to Room 1." lightbox="./images/detached-elements-reattached.msft.png":::
    The detached elements are reattached to the DOM when switching back to Room 1.
 :::image-end:::
@@ -113,16 +115,32 @@ For long-running apps, small memory leaks of only a few kilobytes can noticeably
 
 The demo app and leaks were artificial. Test the tool on your production website or app to see if you can find potential problems. If you do, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** tool and memory leak debugging.
 
-## Additional features
+## Identify the DOM node causing others to be retained
 
-* In the **Detached Elements** tool, select the **Detach Elements** button to destroy the parent-child links inside a detached tree. Select **Collect garbage** to identify the culprit node in a detached tree that is causing the entire tree to be retained.
+Because the DOM is a fully connected graph, when one DOM node is retained in memory by JavaScript it can cause other DOM nodes to be retained with it.
 
-:::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" lightbox="./images/detached-elements-remove-links.msft.png":::
-   The Detach Elements button destroys parent-child links inside a detached tree.
-:::image-end:::
+To identify the culprit node is a detached tree that is causing the entire tree to be retained:
 
-* In the **Detached Elements** tool, change the target in the **Selected target** dropdown to select a different origin. Use this dropdown to select different frames or origins for the tool.
+1.  Click **Detach elements** to destroy the parent-child links inside the detached tree.
 
-:::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
-   The target dropdown lets you select different origins.
-:::image-end:::
+1.  Click **Collect garbage**.
+
+   :::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" lightbox="./images/detached-elements-remove-links.msft.png":::
+      The Detach Elements button destroys parent-child links inside a detached tree.
+   :::image-end:::
+
+   Parent-child links are removed inside the detached tree.
+
+## Change the selected target to a different origin
+
+You can check for detached elements from different origins or frames using the **Selected target** dropdown. 
+
+1.  Click the **Selected target** dropdown.
+
+   :::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
+      The target dropdown lets you select different origins.
+   :::image-end:::
+
+1.  Select a different origin.
+
+   The new origin displays in the **Detached Elements** tool.
