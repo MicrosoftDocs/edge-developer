@@ -10,11 +10,9 @@ keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # What's New in DevTools (Microsoft Edge 95)
 
-The top of this page lists announcements from the Microsoft Edge DevTools team, and then the bottom of this page describes selected features from the Chromium project.  To try new features in Microsoft Edge DevTools, including in the DevTools extension for Visual Studio Code, read these announcements.
+The top of this page lists announcements from the Microsoft Edge DevTools team, and then the bottom of this page describes selected features from the Chromium project.  To try new features in Microsoft Edge DevTools and in the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.
 
-To stay up to date with the latest and greatest features, follow the Microsoft Edge DevTools team on [Twitter](https://twitter.com/EdgeDevTools).
-
-If you are on Windows, Linux, or macOS, consider using the [Canary preview channel of Microsoft Edge](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.
+To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  Whether you are on Windows, Linux, or macOS, consider using one of the preview channels of Microsoft Edge as your default development browser.
 
 
 <!-- ====================================================================== -->
@@ -99,38 +97,21 @@ The following are some of the additional features that are available in Microsof
 <!-- ====================================================================== -->
 ## New CSS length authoring tools
 
-DevTools added an easier yet more flexible way to update lengths in CSS.
+DevTools added an easier yet more flexible way to update lengths in CSS.  In the **Styles** pane, look for any CSS property with length, such as `height` or `padding`.  Hover over the unit type, and notice that the unit type is underlined.  Click the unit type to select a unit type from the dropdown.  <!-- mp4 video here, with no alt text -->  When you hover over the unit value, the mouse pointer changes to a horizontal cursor.  Drag horizontally to increase or decrease the value.  To adjust the value by 10, hold the `Shift` key while dragging.  <!-- mp4 video here, with no alt text -->  You can still edit the unit value as text—just<!-- em dash --> click the value and start editing.  <!-- mp4 video here, with no alt text -->
 
-In the Styles pane, look for any CSS property with length, such as `height` or `padding`.
-
-Hover over the unit type, and notice that the unit type is underlined.  Click the unit type to select a unit type from the dropdown.
-
-<!-- mp4 video here, with no alt text -->
-
-When you hover over the unit value, the mouse pointer changes to a horizontal cursor.  Drag horizontally to increase or decrease the value.  To adjust the value by 10, hold the `Shift` key while dragging.
-
-<!-- mp4 video here, with no alt text -->
-
-You can still edit the unit value as text—just<!-- em dash --> click the value and start editing.
-
-<!-- mp4 video here, with no alt text -->
-
-For videos demonstrating this feature, see [New CSS length authoring tools](https://developer.chrome.com/blog/new-in-devtools-95/#length) at _What's New In DevTools (Chrome 95)_.
-
-Chromium issues: [1126178](https://crbug.com/1126178), [1172993](https://crbug.com/1172993).
+For videos demonstrating this feature, see [New CSS length authoring tools](https://developer.chrome.com/blog/new-in-devtools-95/#length) at _What's New In DevTools (Chrome 95)_.  Chromium issues: [1126178](https://crbug.com/1126178), [1172993](https://crbug.com/1172993).
 
 
 <!-- ====================================================================== -->
 ## Improved the display of properties
 
 DevTools improves the display of properties by:
-*  Always bolding and sorting own properties first, in the **Console**, **Sources** panel, and **Properties** pane.
+*  Always bolding and sorting own properties first, in the **Console**, **Sources** panel, and **Properties** pane.  (An _own property_ is a property that's defined directly on the object.)
 *  Flattening the properties display in the **Properties** pane.
 
 For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`.
 
 ```javascript
-/* example.js */
 const link = new URL('https://goo.gle/devtools-blog');
 link.user = { id: 1, name: 'Jane Doe' };
 link.access = 'admin';
@@ -141,13 +122,11 @@ Try logging `link` in the **Console**.  Own properties are now bold and are firs
 
 <!-- image here, with alt text = "Own properties are bold and sorted first" -->
 
-Apart from these changes, the properties in the Properties pane are also flattened now for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction).
+In the **Properties** pane, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction).
 
 <!-- image here, with alt text = "Flatten properties" -->
 
-For Chrome screen captures, see [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New In DevTools (Chrome 95)_.
-
-Chromium issues: [1076820](https://crbug.com/1076820), [1119900](https://crbug.com/1119900).
+For Chrome screen captures, see [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New In DevTools (Chrome 95)_.  Chromium issues: [1076820](https://crbug.com/1076820), [1119900](https://crbug.com/1119900).
 
 
 <!-- ====================================================================== -->
@@ -155,31 +134,19 @@ Chromium issues: [1076820](https://crbug.com/1076820), [1119900](https://crbug.c
 
 Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphabetically.  Previously, the snippets weren't sorted.
 
-Use the snippets feature to run commands quicker.  Watch this video for a tip!  [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176)
-
 <!-- image here, with alt text = "Sorted snippets in the Sources panel" -->
 
-For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md).
-
-For Chrome screen captures, see [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New In DevTools (Chrome 95)_.
-
-Chromium issue: [1243976](https://crbug.com/1243976).
+For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For Chrome screen captures, see [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New In DevTools (Chrome 95)_.  Chromium issue: [1243976](https://crbug.com/1243976).
 
 
 <!-- ====================================================================== -->
 ## Improved UI for DevTools command menu
 
-Do you find it hard to search for a file in the [Command Menu](../../../command-menu/index.md)?  Good news: the **Command Menu** user interface has been enhanced.
-
-Open the **Command Menu** to search for a file with keyboard shortcut `Control+P` in Windows and Linux, or `Command+P` in macOS.
-
-The UI improvements of the Command Menu are still ongoing; stay tuned for more updates.
+Do you find it hard to search for a file in the [Command Menu](../../../command-menu/index.md)?  Good news: the **Command Menu** user interface has been enhanced.  Open the **Command Menu** to search for a file with keyboard shortcut `Control+P` in Windows and Linux, or `Command+P` in macOS.  The UI improvements of the Command Menu are still ongoing; stay tuned for more updates.
 
 <!-- image here, with alt text = "Command Menu" -->
 
-For Chrome screen captures, see [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New In DevTools (Chrome 95)_.
-
-Chromium issue: [1201997](https://crbug.com/1201997).
+For Chrome screen captures, see [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New In DevTools (Chrome 95)_.  Chromium issue: [1201997](https://crbug.com/1201997).
 
 
 <!-- ====================================================================== -->
