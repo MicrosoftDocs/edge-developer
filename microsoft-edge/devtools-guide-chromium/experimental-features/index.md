@@ -416,7 +416,7 @@ Enable this experiment to view tooltips for all the different tools and panes in
 
 <!-- maintainers: see notes about this experiment, in the list of experiments which are turned on by default, at top of article -->
 
-Memory leaks in web applications are a difficult to locate and repair.
+Memory leaks in web applications can be difficult to locate and repair.
 
 The new **Detached Elements** panel in Microsoft Edge DevTools helps investigate and resolve a common source of memory leaks.
 
