@@ -111,8 +111,7 @@ To identify the JavaScript code that references a detached element:
 You have now identified the retainer that is preventing the detached element from being garbage collected by the browser!
 
 
-
-
+<!-- ====================================================================== -->
 ## Identify the DOM node causing others to be retained
 
 Because the DOM is a fully connected graph, when one DOM node is retained in memory by JavaScript it can cause other DOM nodes to be retained with it.
@@ -130,17 +129,19 @@ To identify the culprit node in a detached tree that is causing the entire tree 
 
    Parent-child links are removed inside the detached tree.
 
+
+<!-- ====================================================================== -->
 ## Change the selected target to a different origin
 
 You can check for detached elements from different origins or frames using the **Selected target** dropdown. 
 
 1.  Click the **Selected target** dropdown.
-
+    
    :::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." 
    lightbox="./images/detached-elements-target-dropdown.msft.png":::
-      The target dropdown lets you select different origins.
+   The target dropdown lets you select different origins.
    :::image-end:::
-
+   
 1.  Select a different origin.
 
    The new origin displays in the **Detached Elements** tool.
