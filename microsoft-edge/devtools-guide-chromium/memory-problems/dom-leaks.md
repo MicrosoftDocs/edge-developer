@@ -122,10 +122,10 @@ To identify the culprit node in a detached tree that is causing the entire tree 
 
 1.  Click **Collect garbage**.
 
-    :::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" 
-    lightbox="./images/detached-elements-remove-links.msft.png":::
-    The Detach Elements button destroys parent-child links inside a detached tree.
-    :::image-end:::
+   :::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" 
+   lightbox="./images/detached-elements-remove-links.msft.png":::
+   The Detach Elements button destroys parent-child links inside a detached tree.
+   :::image-end:::
 
    Parent-child links are removed inside the detached tree.
 
@@ -135,14 +135,14 @@ To identify the culprit node in a detached tree that is causing the entire tree 
 
 You can check for detached elements from different origins or frames using the **Selected target** dropdown. 
 
-1.    Click the **Selected target** dropdown.
+1.  Click the **Selected target** dropdown.
 
     :::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." 
     lightbox="./images/detached-elements-target-dropdown.msft.png":::
-    The target dropdown lets you select different origins.
+    The target dropdown lets you select different origins.z
     :::image-end:::
 
-1.    Select a different origin.
+1.  Select a different origin.
 
    The new origin displays in the **Detached Elements** tool.
    
