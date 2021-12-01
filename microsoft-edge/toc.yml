@@ -459,12 +459,22 @@
               href: webview2/get-started/wpf.md
         - name: Sample code
           href: webview2/code-samples-links.md
-        - name: Concepts
+        - name: Concepts and How-To
           items:
+            - name: Automate with Edge Driver
+              href: webview2/how-to/webdriver.md
+            - name: Debug WebView2
+              href: webview2/how-to/debug.md
+            - name: Development best practices
+              href: webview2/concepts/developer-guide.md
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
             - name: Distribute a WebView2 app and Runtime
               href: webview2/concepts/distribution.md
+            - name: Embed web content into native applications
+              href: webview2/how-to/communicate-btwn-web-native.md
+            - name: Extended JavaScript scenarios in WebView2
+              href: webview2/how-to/javascript.md
             - name: Manage the user data folder
               href: webview2/concepts/user-data-folder.md
             - name: Managing WebView2 applications
@@ -475,30 +485,18 @@
               href: webview2/concepts/process-model.md
             - name: Security best practices
               href: webview2/concepts/security.md
-            - name: Versioning
-              href: webview2/concepts/versioning.md
-            - name: Threading model
-              href: webview2/concepts/threading-model.md
-            - name: Development best practices
-              href: webview2/concepts/developer-guide.md
-            - name: Win32 API conventions
-              href: webview2/concepts/win32-api-conventions.md
-        - name: How to
-          items:
-            - name: Extended JavaScript scenarios in WebView2
-              href: webview2/how-to/javascript.md
             - name: Statically link loader
               href: webview2/how-to/static.md
-            - name: Debug WebView2
-              href: webview2/how-to/debug.md
-            - name: Automate with Edge Driver
-              href: webview2/how-to/webdriver.md
-            - name: Use Chrome DevTools Protocol in WebView2
-              href: webview2/how-to/chromium-devtools-protocol.md
             - name: Switch to a preview channel
               href: webview2/how-to/set-preview-channel.md
-            - name: Embed web content into native applications
-              href: webview2/how-to/communicate-btwn-web-native.md
+            - name: Threading model
+              href: webview2/concepts/threading-model.md
+            - name: Use Chrome DevTools Protocol in WebView2
+              href: webview2/how-to/chromium-devtools-protocol.md
+            - name: Versioning
+              href: webview2/concepts/versioning.md
+            - name: Win32 API conventions
+              href: webview2/concepts/win32-api-conventions.md
         - name: Release notes
           href: webview2/release-notes.md
         - name: Roadmap
