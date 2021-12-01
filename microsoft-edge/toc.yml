@@ -459,7 +459,7 @@
               href: webview2/get-started/wpf.md
         - name: Sample code
           href: webview2/code-samples-links.md
-        - name: Concepts and How-to
+        - name: How to
           items:
             - name: Automate with Edge Driver
               href: webview2/how-to/webdriver.md
