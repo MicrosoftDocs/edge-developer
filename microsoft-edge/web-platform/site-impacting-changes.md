@@ -12,9 +12,9 @@ keywords: microsoft edge, compatibility, web platform
 
 The web platform is a collection of technologies used for building webpages.  The technologies include HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.  For more information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://www.chromestatus.com/features/schedule).
 
-Microsoft Edge adopts nearly all of the upstream changes to the web platform from the Chromium project.  This adoption is for reasons including functionality and compatibility.  Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes.  The Microsoft Edge team decides if the change benefits browser users.
+For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes.  The Microsoft Edge team decides if the change benefits browser users.
 
-Microsoft Edge plans to deviate from the following Chromium changes to timing or behavior.  This table also highlights high-impact changes that the Microsoft Edge team is tracking.
+Feature areas where Microsoft Edge plans to deviate from Chromium changes to timing or behavior are noted in the following table.  This table also highlights high-impact changes that the Microsoft Edge team is tracking.
 
 Review this article often.  The Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
 
@@ -50,8 +50,8 @@ This article uses the following notation for browser release numbers.
 | Notation | Description |
 | --- | --- |
 | v123 | The feature or change ships in Microsoft Edge version 123. |
-| v123 (Chrome+1) | The feature or change ships in Microsoft Edge version 123, which is one release after Chrome. |
-| v123 (Chrome+2) | The feature or change ships in Microsoft Edge version 123, which is two releases after Chrome. |
+| v123 (Chrome+1) | The feature or change ships in Microsoft Edge version 123, which is one release after the feature or change ships in Chrome version 122. |
+| v123 (Chrome+2) | The feature or change ships in Microsoft Edge version 123, which is two releases after the feature or change ships in Chrome version 121. |
 | Beta v123 | The feature or change ships in version 123 of the Beta preview channel of Microsoft Edge. | 
 | Dev v123 | The feature or change ships in version 123 of the Dev preview channel of Microsoft Edge. | 
 | Canary v123 | The feature or change ships in version 123 of the Canary preview channel of Microsoft Edge. | 
