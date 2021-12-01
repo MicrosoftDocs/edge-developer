@@ -45,11 +45,13 @@ Review this article often.  The Microsoft Edge team updates this article as thin
 <!-- ====================================================================== -->
 ## Notation for browser versions
 
+This article uses the following notation for browser release numbers.
+
 | Notation | Description |
 | --- | --- |
 | v123 | The feature or change ships in Microsoft Edge version 123. |
 | v123 (Chrome+1) | The feature or change ships in Microsoft Edge version 123, which is one release after Chrome. |
 | v123 (Chrome+2) | The feature or change ships in Microsoft Edge version 123, which is two releases after Chrome. |
-| Beta v123 | Version 123 of the Beta preview channel of Microsoft Edge. | 
-| Dev v123 | Version 123 of the Dev preview channel of Microsoft Edge. | 
-| Canary v123 | Version 123 of the Canary preview channel of Microsoft Edge. | 
+| Beta v123 | The feature or change ships in version 123 of the Beta preview channel of Microsoft Edge. | 
+| Dev v123 | The feature or change ships in version 123 of the Dev preview channel of Microsoft Edge. | 
+| Canary v123 | The feature or change ships in version 123 of the Canary preview channel of Microsoft Edge. | 
