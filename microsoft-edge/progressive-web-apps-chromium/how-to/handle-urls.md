@@ -28,7 +28,7 @@ URL handling is still experimental, to enable it:
 1.  Select **Search flags** and type "url handling".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="content" source="../media/enable-url-handling-experiment.png" alt-text="Enable the URL handling API experiment." lightbox="../media/enable-url-handling-experiment.png":::
+    :::image type="content" source="../media/enable-url-handling-experiment.png" alt-text="Enable the URL handling API experiment.":::
 
 URL Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
 
@@ -62,7 +62,7 @@ In the above example, the app is registered to handle URLs that have their origi
 <!-- ====================================================================== -->
 ## Verify the origin ownership
 
-Microsoft Edge needs to verify the PWA's ownership of the handled URLs to successfully launch the app. This is required when the handled URL and the PWA are both on the same origin and when they're not. In most cases, the PWA will handle URLs that have the same origin, but this is not required.
+Microsoft Edge needs to verify the PWA's ownership of the handled URLs to successfully launch the app. This is required when the handled URL and the PWA are both on the same origin and when they're not. In most cases, the PWA will handle URLs that have the same origin, but this isn't required.
 
 Origin ownership is established with the `web-app-origin-association` JSON file, which is used by Microsoft Edge to validate the handshake between the PWA and the URL.
 
@@ -136,7 +136,7 @@ To test URL handling on DevTools Tips:
 
 Windows knows that your app is registered to handle this URL and asks you to choose which app you want to use. Select the DevTools Tips apps. You can also select **Remember my choice** to avoid seeing this dialog every time.
 
-:::image type="content" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="Selecting an application to handle URLs on Windows." lightbox="../media/devtools-tips-url-handling-app-selection.png":::
+:::image type="content" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="Selecting an application to handle URLs on Windows.":::
 
 The app launches and displays the tips page.
 
