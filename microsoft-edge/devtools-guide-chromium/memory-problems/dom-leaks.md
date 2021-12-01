@@ -41,7 +41,7 @@ To open the **Detached Elements** tool:
 
 The **Get Detached Elements** (![The Get Detached Elements icon.](images/get-detached-elements-icon-light-mode.png)) button in the **Detached Elements** tool finds and displays all of the detached elements on a web page.
 
-To find detached elements in the demo application:
+To find detached elements:
 
 1. In the demo application, click the **Room 1** button.
 
