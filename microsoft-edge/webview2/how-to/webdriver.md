@@ -217,7 +217,7 @@ At this point, your app is running and its `--remote-debugging-port` command-lin
 
 ### Attaching Microsoft Edge Driver to the launched WebView2 app
 
-1. Use the `DebuggerAddress` property of `EdgeOptions` to tell Microsoft Edge Driver to connect to the remote debugging port that you specified previously, instead of launching a new application:
+1. Use the `EdgeOptions.DebuggerAddress` property to tell Microsoft Edge Driver to connect to the remote debugging port that you specified previously, instead of launching a new application:
 
 ```csharp
 EdgeOptions eo = new EdgeOptions();
