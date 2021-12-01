@@ -21,7 +21,7 @@ For more information about heap snapshots and detached elements, read [Discover 
 <!-- ====================================================================== -->
 ## Open the Detached Elements tool
 
-The **Detached Elements** tool is available by default in Microsoft Edge 97 and later. Check your version of Microsoft Edge by navigating to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
+The **Detached Elements** tool is available by default in Microsoft Edge 97 and later. Check your version of Microsoft Edge by going to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
 
 To open the **Detached Elements** tool for the demo application:
 
@@ -33,15 +33,15 @@ To open the **Detached Elements** tool for the demo application:
 
 1. Click **Detached Elements**.
 
-:::image type="complex" source="./images/open-detached-elements.msft.png" alt-text="Open the Detached Elements tool." lightbox="./images/open-detached-elements.msft.png":::
-   Open the Detached Elements tool.
-:::image-end:::
+:::image type="content" source="./images/open-detached-elements.msft.png" alt-text="Open the Detached Elements tool." lightbox="./images/open-detached-elements.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Get detached elements
 
-The **Get Detached Elements** button in the **Detached Elements** tool finds and displays all of the detached elements on a web page. To find detached elements in the demo application, complete the following steps:
+The **Get Detached Elements** button in the **Detached Elements** tool finds and displays all of the detached elements on a web page.
+
+To find detached elements in the demo application:
 
 1. Make sure you are in **Room 1** of the demo application.
 
@@ -53,10 +53,7 @@ The **Get Detached Elements** button in the **Detached Elements** tool finds and
 
 1. In the **Detached Elements** tool, click **Get Detached Elements**.
 
-   :::image type="complex" source="./images/get-detached-elements.msft.png" alt-text="Get Detached Elements using the Detached Elements tool." 
-   lightbox="./images/get-detached-elements.msft.png":::
-      Get Detached Elements using the Detached Elements tool.
-   :::image-end:::
+:::image type="content" source="./images/get-detached-elements.msft.png" alt-text="Get Detached Elements using the Detached Elements tool." lightbox="./images/get-detached-elements.msft.png":::
 
 The **Detached Elements** tool displays all of the detached elements on the page. All of the messages that were generated in **Room 1** are no longer attached to the DOM when you switch to **Room 2** in the demo application, but they are still referenced by JavaScript.
 
@@ -78,9 +75,7 @@ When you select **Collect garbage**, the browser runs GC. When you select **Get 
 
 Once you have found a detached element that the browser cannot GC, you can use the **Analyze** button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button will take a heap snapshot and populate the **Id** of the detached element with its location in the heap. For more information about heap snapshots, read [Record heap snapshots](heap-snapshots.md).
 
-:::image type="complex" source="./images/analyze-detached-elements.msft.png" alt-text="Analyze Detached Elements in the Detached Elements tool." lightbox="./images/analyze-detached-elements.msft.png":::
-   Analyze Detached Elements in the Detached Elements tool
-:::image-end:::
+:::image type="content" source="./images/analyze-detached-elements.msft.png" alt-text="Analyze Detached Elements in the Detached Elements tool." lightbox="./images/analyze-detached-elements.msft.png":::
 
 To identify the JavaScript code that references a detached element:
 
@@ -92,23 +87,17 @@ To identify the JavaScript code that references a detached element:
 
    The **Memory** tool in the bottom panel automatically selects the object in the heap that is referencing the detached element. We call these objects **Retainers**.
 
-   :::image type="complex" source="./images/detached-elements-heap-snapshot.msft.png" alt-text="Referencing a heap snapshot from the Detached Elements tool." 
-   lightbox="./images/detached-elements-heap-snapshot.msft.png":::
-      Referencing a heap snapshot from the Detached Elements tool.
-   :::image-end:::
+   :::image type="content" source="./images/detached-elements-heap-snapshot.msft.png" alt-text="Referencing a heap snapshot from the Detached Elements tool." lightbox="./images/detached-elements-heap-snapshot.msft.png":::
 
 1. From the **Memory** tool in the bottom panel, select the link **room.js:13**.
 
    The **Sources** tool opens in the top panel to line 13 of the file **room.js**.
 
-1. In the `hide()` function of **room.js**, you can see that the JavaScript code of the demo application adds each message in the room to an `unmounted` array. The `unmounted` array is the object that is referencing the detached element.
+1. In the `hide()` function of **room.js**, the JavaScript code of the demo application adds each message in the room to an `unmounted` array. The `unmounted` array is the object that is referencing the detached element.
 
-   :::image type="complex" source="./images/detached-elements-javascript-retainers.msft.png" alt-text="Identifying the JavaScript that is retaining the detached element."
-   lightbox="./images/detached-elements-javascript-retainers.msft.png":::
-      Identifying the JavaScript that is retaining the detached element.
-   :::image-end:::
+:::image type="content" source="./images/detached-elements-javascript-retainers.msft.png" alt-text="Identifying the JavaScript that is retaining the detached element." lightbox="./images/detached-elements-javascript-retainers.msft.png":::
 
-You have now identified the retainer that is preventing the detached element from being garbage collected by the browser!
+You have now identified the retainer that is preventing the detached element from being garbage-collected by the browser!
 
 
 <!-- ====================================================================== -->
@@ -122,12 +111,9 @@ To identify the culprit node in a detached tree that is causing the entire tree 
 
 1.  Click **Collect garbage**.
 
-   :::image type="complex" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool" 
-   lightbox="./images/detached-elements-remove-links.msft.png":::
-   The Detach Elements button destroys parent-child links inside a detached tree.
-   :::image-end:::
+:::image type="content" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool." lightbox="./images/detached-elements-remove-links.msft.png":::
 
-   Parent-child links are removed inside the detached tree.
+Parent-child links are removed inside the detached tree.
 
 
 <!-- ====================================================================== -->
@@ -147,16 +133,14 @@ The new origin is displayed in the **Detached Elements** tool.
 <!-- ====================================================================== -->
 ## Additional considerations
 
-When looking for memory leaks, remember that leaks can depend on the context of your application. For the demo application, you found detached elements that could not be garbage collected by the browser and identified the JavaScript retaining the detached elements. However, in the context of the demo application, it makes sense to retain the list of chat messages so that if a user switches back to **Room 1**, the message log is preserved.
+When looking for memory leaks, remember that leaks can depend on the context of your application. For the demo application, you found detached elements that could not be garbage collected by the browser, and you identified the JavaScript that's retaining the detached elements. However, in the context of the demo application, it makes sense to retain the list of chat messages, so that if a user switches back to **Room 1**, the message log is preserved.
 
 The following image shows detached elements in the form of messages that are reattached when a user navigates from **Room 2** back to **Room 1**. 
 
-:::image type="complex" source="./images/detached-elements-reattached.msft.png" alt-text="The detached elements are reattached to the DOM when switching back to Room 1." lightbox="./images/detached-elements-reattached.msft.png":::
-   The detached elements are reattached to the DOM when switching back to Room 1.
-:::image-end:::
+:::image type="content" source="./images/detached-elements-reattached.msft.png" alt-text="The detached elements are reattached to the DOM when switching back to Room 1." lightbox="./images/detached-elements-reattached.msft.png":::
 
-Similarly, a feed in social media might detach elements as users scroll past them and reattach them to the DOM when users scroll back up. Detached elements are not always an indication of a memory leak and memory leaks are not always caused by detached elements.
+Similarly, a feed in social media might detach elements as users scroll past them, and reattach them to the DOM when users scroll back up. Detached elements are not always an indication of a memory leak, and memory leaks are not always caused by detached elements.
 
 For long-running apps, small memory leaks of only a few kilobytes can noticeably degrade performance over time. Web developers who use the React framework know that React maintains a virtualized copy of the DOM. Failing to properly unmount components can potentially lead to an application leaking large parts of the virtual DOM.
 
-The demo app and leaks were artificial. Test the tool on your production website or app to see if you can find potential problems. If you do, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** tool and memory leak debugging.
+This demo app and its leaks are artificial. Test the Detached Elements tool on your production website or app. If you find potential problems with the Detached Elements tool, [contact the Microsoft Edge DevTools team](../contact.md) to send feedback about the **Detached Elements** tool and memory leak debugging.
