@@ -160,7 +160,7 @@ To drive WebView2 with Selenium and Microsoft Edge Driver:
 
     //Set the BinaryLocation to the filepath of the WebView2API Sample runtime
     edgeOptions.BinaryLocation = @"C:\path\to\your\webview2\project.exe";
-    EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);
+    EdgeDriver e = new EdgeDriver(edgeOptions);
     ```
 
 1.  In the above code, specify the correct file path of your project runtime and the Microsoft Edge Driver runtime on your machine.
