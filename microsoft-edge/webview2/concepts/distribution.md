@@ -235,7 +235,7 @@ To use the Fixed Version distribution mode:
 
 1.  Decompress the WebView2 Runtime package using the command-line command `expand {path to the package} -F:* {path to the destination folder}` or by using a decompression tool such as WinRAR.  Avoid decompressing through the File Explorer, because that approach might not generate the correct folder structure.
 
-1.  Include all of the decompressed Fixed Version binaries in your project.
+1.  Include all of the decompressed Fixed Version binaries in your app package, to be deployed on the target machine during your app's installation.
 
 1.  Indicate the path to the Fixed Version binaries when creating the WebView2 environment.
 
