@@ -137,14 +137,12 @@ You can check for detached elements from different origins or frames using the *
 
 1.  Click the **Selected target** dropdown.
 
-    :::image type="complex" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The target dropdown lets you select different origins." 
-    lightbox="./images/detached-elements-target-dropdown.msft.png":::
-    The target dropdown lets you select different origins.z
-    :::image-end:::
+    :::image type="content" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The 'Selected target' dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
 
 1.  Select a different origin.
 
-   The new origin displays in the **Detached Elements** tool.
+The new origin is displayed in the **Detached Elements** tool.
+
    
 <!-- ====================================================================== -->
 ## Additional considerations
