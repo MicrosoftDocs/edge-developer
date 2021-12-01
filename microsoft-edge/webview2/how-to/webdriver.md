@@ -150,7 +150,7 @@ To drive WebView2 with Selenium and Microsoft Edge Driver:
 
     *   Configure the `EdgeOptions` instance to use WebView2, by setting the `UseWebView` option to `true`.
     *   Set `eo.BinaryLocation` to the file path of your WebView2 app binary.
-    *   Create an `EdgeDriver` object using the EdgeOptions instance.
+    *   Create an `EdgeDriver` object using the `EdgeOptions` instance.
 
 1.  Copy the following code and paste it below the `eo` declaration line:
 
