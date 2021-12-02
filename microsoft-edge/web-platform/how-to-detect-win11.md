@@ -24,7 +24,7 @@ Websites can use user agent information sent from the browser to detect brand, v
 
 For details about these two approaches, see [Detecting Microsoft Edge from your website](user-agent-guidance.md).
 
-Starting in Microsoft Edge version 94 and Chrome version 95, sites can differentiate between users on Windows 11 and Windows 10 via User-Agent Client Hints (UA-CH). This information can be found in the following UA-CH request headers:
+In Microsoft Edge and Chrome, sites can differentiate between users on Windows 11 and Windows 10 via User-Agent Client Hints (UA-CH). This information can be found in the following UA-CH request headers:
 
 | Header field | Values that indicate Windows 10 | Values that indicate Windows 11 |
 | --- | --- | --- |
