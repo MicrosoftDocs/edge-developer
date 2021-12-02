@@ -11,10 +11,23 @@ keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWeb
 ---
 # Get started with WebView2 in WinUI 2 apps (public preview)
 
-In this article, get started creating your first WebView2 app in WinUI 2, and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
+In this article, you will get started creating your first WebView2 app in WinUI 2, and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
 
 > [!NOTE]
-> The WinUI 2 package depends on a prerelease WebView2 package. For full API compatibility, use a preview browser channel as your runtime such as the Beta, Dev, or Canary channel of Microsoft Edge.
+> The [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001) takes a dependency on a prerelease WebView2 package. For full API compatibility, use a preview browser channel as your runtime such as the Beta, Dev, or Canary channel of Microsoft Edge.
+
+> [!Important]
+> The WebView2 WinUI Control is actively being developed. There are some features that will be missing or broken. Some of these include:
+> * Download UI -- Note: in order to maintain compatability, developers should manually disable this feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs?view=webview2-winrt-1.0.1054.31).
+> * Autofill UI
+> * File Picker Dialog
+> * Save Screenshot
+> * Background Audio
+> * Print to PDF
+> * Print Preview
+> * Adding COM Objects (WinRT AddHostObject)
+> * Playready DRM
+> * Service Workers on Windows devices before 20H2
 
 ## Step 0 - Prerequisites
 
@@ -156,7 +169,6 @@ Now you can change the content of the WebView2 control to add your own content.
 ## Next steps
 
 *  [WebView2 development best practices](../concepts/developer-guide.md)
-*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
 *  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-*  [WebView2 spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - detailed information about the WebView2 API.
 *  [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
