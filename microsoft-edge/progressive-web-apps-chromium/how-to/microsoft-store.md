@@ -117,7 +117,7 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 
 
 <!-- ====================================================================== -->
-## Use multiple locale-specific domains without displaying them in the UI
+## Use locale-specific domains without displaying them
 
 By default, store-installed PWAs display an unexpected additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
 
@@ -131,7 +131,7 @@ Customers who install the PWA from Microsoft Edge would therefore install the PW
 
 Store-installed PWAs, however, have a hard-coded start URL that is pointed at the principal domain.  When the PWA is launched, the PWA initially navigates to the principal domain, and then a customer may (as necessary) be redirected to their locale-specific domain. If that redirection occurs, the navigation is considered "out of scope" and the app UI will display the URL and title at the top of the web page.
 
-This is a security feature to ensure that users are aware that they have left the context of the app.  That makes sense when a user is loading a page from another website in the context of the PWA, but can be surprising when a user is moving between domains that are all part of the same website.
+This is a security feature to ensure that users are aware that they have left the context of the app.  That makes sense when a user is loading a page from another website in the context of the PWA, but may be inappropriate when a user moves among domains that are all part of the same website.
 
 ### Prevent the locale-specific URL and title from being displayed
 
