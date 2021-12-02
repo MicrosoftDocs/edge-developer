@@ -223,7 +223,7 @@ At this point, your app is running and its `--remote-debugging-port` command-lin
 EdgeOptions eo = new EdgeOptions();
 eo.UseWebView = true;
 eo.DebuggerAddress = "localhost:9222";
-EdgeDriver edgeDriver = new EdgeDriver(eo);
+EdgeDriver e = new EdgeDriver(eo);
 ```
 
 At `localhost:9222` above, the port number given on this line should match the port number that you chose when setting `--remote-debugging-port` above.
