@@ -32,21 +32,21 @@ These experiments could be unstable or unreliable and may require you to restart
 <!-- ====================================================================== -->
 ## Experiments which are turned on by default
 
-As of Microsoft Edge 96, the following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
+The following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
 
 <!-- listed in order of the Settings > Experiments pane -->
-*  Source order viewer
-*  Enable back-forward cache debugging support
-*  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md) is turned on by default starting with Microsoft Edge 90.
-*  Enable experimental hide issues menu
-*  Enable webhint
-*  Show issues in Elements
-*  Enable Composited Layers in 3D View
-*  DevTools Tooltips
-*  VS Code themes for the DevTools <!-- preserve literal UI string, including "VS" & "the" -->
-*  Open source files in Visual Studio Code
-*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) is turned on by default starting with Microsoft Edge 89.
-*  Enable dynamic Welcome content - in version 96, this experiment is turned off by default.  In version 97 & 98, this experiment is turned on by default.
+*  Source order viewer.
+*  Enable back-forward cache debugging support.
+*  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
+*  Enable experimental hide issues menu.
+*  Enable webhint.
+*  Show issues in Elements.
+*  Enable Composited Layers in 3D View.
+*  DevTools Tooltips.
+*  VS Code themes for the DevTools. <!-- preserve literal UI string, including "VS" & "the" -->
+*  Open source files in Visual Studio Code.
+*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
+*  Enable dynamic Welcome content, off by default now but on by default in Microsoft Edge version 97.
 
 <!-- don't place a comment line between list item lines, above; that would create a gap -->
 
@@ -217,7 +217,7 @@ To use the **Source Order Viewer**:
 
 :::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
 
-This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
+This experiment is turned on by default.
 
 For more information, see [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
 
@@ -287,8 +287,6 @@ For more information about the new visual **Font Editor**, see [Edit CSS font st
    The visual **Font Editor** pane is highlighted
 :::image-end:::
 
-This experiment is available starting with Microsoft Edge version 89.
-
 For more information, see [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
 
 
@@ -336,7 +334,7 @@ The [webhint](https://webhint.io) experiment displays the webhint feedback in th
 
 :::image type="content" source="../media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../media/experiments-webhint.msft.png":::
 
-This experiment is available starting with Microsoft Edge version 85 and is turned on by default.
+This experiment is turned on by default.
 
 
 <!-- ====================================================================== -->
@@ -368,7 +366,7 @@ To use **Composited Layers**:
 
 :::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../media/experiments-layers.msft.png":::
 
-This experiment is available starting with Microsoft Edge version 87 and is turned on by default.
+This experiment is turned on by default.
 
 
 <!-- ====================================================================== -->
@@ -391,8 +389,6 @@ To use the **Network Console**:
 
 :::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="../media/network-network-console.msft.png":::
 
-This experiment is available starting with Microsoft Edge version 85.
-
 
 <!-- ====================================================================== -->
 ## Focus Mode
@@ -409,6 +405,7 @@ See also [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplai
 <!-- present in 96, 98 -->
 
 Enable this experiment to view tooltips for all the different tools and panes in DevTools. For more information, see [Learn about DevTools with informative tooltips](../whats-new/2021/04/devtools.md#learn-about-devtools-with-informative-tooltips).
+
 
 <!-- ====================================================================== -->
 ## Detached Elements
@@ -444,8 +441,6 @@ When you select a folder to use as your Workspace, selecting any link to a file 
 :::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
-
-This experiment is available starting with Microsoft Edge version 96.
 
 
 <!-- ====================================================================== -->

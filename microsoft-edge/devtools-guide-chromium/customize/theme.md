@@ -26,9 +26,6 @@ You can apply various color themes to Microsoft Edge DevTools, including several
    Various DevTools color themes
 :::image-end:::
 
-> [!NOTE]
-> Prior to [Microsoft Edge 93](../whats-new/2021/07/devtools.md), DevTools only had a light and dark theme.
-
 This article is about changing the appearance of DevTools.  To instead change how the webpage under development is displayed, navigate to [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md).
 
 
