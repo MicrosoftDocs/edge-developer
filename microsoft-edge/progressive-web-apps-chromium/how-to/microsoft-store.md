@@ -103,7 +103,7 @@ After you complete your submission, your app is reviewed, typically within 24 to
 
 
 <!-- ====================================================================== -->
-## Measure usage of your Store-installed PWA
+## Measure usage of your PWA installed from the Microsoft Store
 
 When your PWA is initially launched, if the PWA was installed from the Microsoft Store, Microsoft Edge includes the following `Referer` header with the request for the first navigation of your web app:
 
@@ -111,7 +111,7 @@ When your PWA is initially launched, if the PWA was installed from the Microsoft
 Referer: app-info://platform/microsoft-store
 ```
 
-Use this feature to measure distinct traffic from your Store-installed PWA.  Based on the traffic, you can adjust your app's content to improve the user experience.  This feature is accessible to both client and server code. To access this information on the client side, you can query `document.referrer` in your JavaScript.
+Use this feature to measure distinct traffic from your PWA that was installed from the Microsoft Store.  Based on the traffic, you can adjust your app's content to improve the user experience.  This feature is accessible to both client and server code. To access this information on the client side, you can query `document.referrer` in your JavaScript.
 
 This feature was first introduced in Microsoft Edge version 91, and the DOM API was introduced in Microsoft Edge version 93.
 
@@ -119,7 +119,7 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 <!-- ====================================================================== -->
 ## Use locale-specific domains without displaying them
 
-By default, Store-installed PWAs display an unexpected additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
+By default, PWAs that are installed from the Microsoft Store display an unexpected additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
 
 ### Domain redirection with browser-installed PWAs
 
@@ -127,15 +127,15 @@ A Web App Manifest is tied to a single domain.  However, some PWAs use locale-sp
 
 Customers who install the PWA from Microsoft Edge would therefore install the PWA from the locale-specific domain.  Subsequent launches of the PWA go directly to that locale-specific domain, instead of first going to the principal domain.
 
-### Domain redirection with Store-installed PWAs
+### Domain redirection with PWAs installed from the Microsoft Store
 
-Store-installed PWAs, however, have a hard-coded start URL that is pointed at the principal domain.  When the PWA is launched, the PWA initially navigates to the principal domain, and then a customer may (as necessary) be redirected to their locale-specific domain. If that redirection occurs, the navigation is considered "out of scope" and the app UI will display the URL and title at the top of the web page.
+PWAs that are installed from the Microsoft Store have a hard-coded start URL that is pointed at the principal domain.  When the PWA is launched, the PWA initially navigates to the principal domain, and then a customer may (as necessary) be redirected to their locale-specific domain. If that redirection occurs, the navigation is considered "out of scope" and the app UI will display the URL and title at the top of the web page.
 
 This is a security feature to ensure that users are aware that they have left the context of the app.  That makes sense when a user is loading a page from another website in the context of the PWA, but may be inappropriate when a user moves among domains that are all part of the same website.
 
 ### Prevent the locale-specific URL and title from being displayed
 
-To prevent the additional UI from being shown, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the Store-installed PWA to span multiple locale-specific domains.  There are two steps to enabling a PWA to handle navigations for multiple domains:
+To prevent the additional UI from being shown, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the PWA installed from the Microsoft Store to span multiple locale-specific domains.  There are two steps to enabling a PWA to handle navigations for multiple domains:
 
 1. Within the PWA's Web App Manifest, use [the `url_handlers` member](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#manifest-changes) to specify an array of origins that are associated with that app.
 1. On each of the referenced origins, include [a `web-app-origin-association` file](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file) that attests to the PWA's association with that domain.
