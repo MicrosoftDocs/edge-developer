@@ -117,9 +117,12 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 
 
 <!-- ====================================================================== -->
-## Use locale-specific domains without displaying them
+## Redirect to locale-specific domains without displaying additional UI
 
-By default, PWAs that are installed from the Microsoft Store display an unexpected additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
+By default, PWAs that are installed from the Microsoft Store display an additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
+
+:::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="The additional UI with URL and title when the app is redirected to a locale-specific domain.":::
+
 
 ### Domain redirection with browser-installed PWAs
 
