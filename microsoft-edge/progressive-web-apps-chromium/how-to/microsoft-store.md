@@ -87,7 +87,7 @@ Your download is a `.zip` archive that contains an `.msixbundle` file and a `.cl
 
 ### Submit your app package to the Store
 
-To submit your app to the Store:
+To submit your app to the Microsoft Store:
 
 1.  Go to [Windows Partner Center](https://partner.microsoft.com/dashboard/windows/overview)
 1.  Select your app.
@@ -105,7 +105,7 @@ After you complete your submission, your app is reviewed, typically within 24 to
 <!-- ====================================================================== -->
 ## Measure usage of your Store-installed PWA
 
-When your PWA is initially launched, if the PWA was installed from the Microsoft Store, Microsoft Edge includes the following `Referer` header with the request for the first navigation of your web app.
+When your PWA is initially launched, if the PWA was installed from the Microsoft Store, Microsoft Edge includes the following `Referer` header with the request for the first navigation of your web app:
 
 ```
 Referer: app-info://platform/microsoft-store
@@ -119,7 +119,7 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 <!-- ====================================================================== -->
 ## Use locale-specific domains without displaying them
 
-By default, store-installed PWAs display an unexpected additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
+By default, Store-installed PWAs display an unexpected additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
 
 ### Domain redirection with browser-installed PWAs
 
@@ -127,7 +127,7 @@ A Web App Manifest is tied to a single domain.  However, some PWAs use locale-sp
 
 Customers who install the PWA from Microsoft Edge would therefore install the PWA from the locale-specific domain.  Subsequent launches of the PWA go directly to that locale-specific domain, instead of first going to the principal domain.
 
-### Domain redirection with store-installed PWAs
+### Domain redirection with Store-installed PWAs
 
 Store-installed PWAs, however, have a hard-coded start URL that is pointed at the principal domain.  When the PWA is launched, the PWA initially navigates to the principal domain, and then a customer may (as necessary) be redirected to their locale-specific domain. If that redirection occurs, the navigation is considered "out of scope" and the app UI will display the URL and title at the top of the web page.
 
@@ -135,7 +135,7 @@ This is a security feature to ensure that users are aware that they have left th
 
 ### Prevent the locale-specific URL and title from being displayed
 
-To prevent the additional UI from being shown, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the Store PWA to span multiple locale-specific domains.  There are two steps to enabling a PWA to handle navigations for multiple domains:
+To prevent the additional UI from being shown, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the Store-installed PWA to span multiple locale-specific domains.  There are two steps to enabling a PWA to handle navigations for multiple domains:
 
 1. Within the PWA's Web App Manifest, use [the `url_handlers` member](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#manifest-changes) to specify an array of origins that are associated with that app.
 1. On each of the referenced origins, include [a `web-app-origin-association` file](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file) that attests to the PWA's association with that domain.
