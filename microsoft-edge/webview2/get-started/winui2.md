@@ -18,7 +18,7 @@ In this article, you will get started creating your first WebView2 app in WinUI 
 
 > [!Important]
 > The WebView2 WinUI Control is actively being developed. There are some features that will be missing or broken. Some of these include:
-> * Download UI -- Note: in order to maintain compatability, developers should manually disable this feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs?view=webview2-winrt-1.0.1054.31).
+> * Download UI -- To maintain compatibility, developers should manually disable this feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs?view=webview2-winrt-1.0.1054.31).
 > * Autofill UI
 > * File Picker Dialog
 > * Save Screenshot
