@@ -1,12 +1,12 @@
 ---
+title: Automate and test WebView2 apps with Microsoft Edge Driver
 description: Automate and test the WebView2 Control using Microsoft Edge Driver
-title: Automating and Testing WebView2 apps with Microsoft Edge Driver
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
+ms.date: 12/01/2021
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
 ---
 # Automate and test WebView2 apps with Microsoft Edge Driver
@@ -143,24 +143,24 @@ To drive WebView2 with Selenium and Microsoft Edge Driver:
     ```csharp
     static void Main(string[] args)
     {
-        EdgeOptions edgeOptions = new EdgeOptions();
+        EdgeOptions eo = new EdgeOptions();
     ```
 
     Next, we'll add code that does the following:
 
-    *   Configure `edgeOptions` to use WebView2, by setting the `UseWebView` option to `true`.
-    *   Set `edgeOptions.BinaryLocation` to the file path of your WebView2 app binary.
-    *   Create an `EdgeDriver` object using `edgeOptions`.
+    *   Configure the `EdgeOptions` instance to use WebView2, by setting the `UseWebView` option to `true`.
+    *   Set `eo.BinaryLocation` to the file path of your WebView2 app binary.
+    *   Create an `EdgeDriver` object using the `EdgeOptions` instance.
 
-1.  Copy the following code and paste it below `edgeOptions`:
+1.  Copy the following code and paste it below the `eo` declaration line:
 
     ```csharp
-    //Set edgeOptions to use WebView2
-    edgeOptions.UseWebView = true;
+    //Set the EdgeOptions instance to use WebView2
+    eo.UseWebView = true;
 
     //Set the BinaryLocation to the filepath of the WebView2API Sample runtime
-    edgeOptions.BinaryLocation = @"C:\path\to\your\webview2\project.exe";
-    EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);
+    eo.BinaryLocation = @"C:\path\to\your\webview2\project.exe";
+    EdgeDriver e = new EdgeDriver(eo);
     ```
 
 1.  In the above code, specify the correct file path of your project runtime and the Microsoft Edge Driver runtime on your machine.
@@ -220,10 +220,10 @@ At this point, your app is running and its `--remote-debugging-port` command-lin
 1. Use the `EdgeOptions.DebuggerAddress` property to tell Microsoft Edge Driver to connect to the remote debugging port that you specified previously, instead of launching a new application:
 
 ```csharp
-EdgeOptions edgeOptions = new EdgeOptions();
-edgeOptions.UseWebView = true;
-edgeOptions.DebuggerAddress = "localhost:9222";
-EdgeDriver edgeDriver = new EdgeDriver(edgeOptions);
+EdgeOptions eo = new EdgeOptions();
+eo.UseWebView = true;
+eo.DebuggerAddress = "localhost:9222";
+EdgeDriver e = new EdgeDriver(eo);
 ```
 
 At `localhost:9222` above, the port number given on this line should match the port number that you chose when setting `--remote-debugging-port` above.
