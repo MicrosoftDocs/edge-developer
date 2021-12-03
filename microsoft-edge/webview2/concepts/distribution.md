@@ -225,6 +225,8 @@ For constrained environments with strict compatibility requirements, consider us
 
 In the Fixed Version distribution mode, you control the timing of updating the WebView2 Runtime for your app.  You download a specific version of the WebView2 Runtime and then package it with your WebView2 app.  The WebView2 Runtime on the client isn't automatically updated.  Instead, you periodically update the WebView2 Runtime that's packaged and distributed together with your updated app.  The Fixed Version approach doesn't use a registry key for the WebView2 Runtime.
 
+The Fixed Version binaries are over 250 MB and will make your app package larger by that amount.
+
 To use the Fixed Version distribution mode:
 
 1.  Download the Fixed Version of the WebView2 Runtime from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section), as a package.
@@ -233,7 +235,7 @@ To use the Fixed Version distribution mode:
 
 1.  Decompress the WebView2 Runtime package using the command-line command `expand {path to the package} -F:* {path to the destination folder}` or by using a decompression tool such as WinRAR.  Avoid decompressing through the File Explorer, because that approach might not generate the correct folder structure.
 
-1.  Include the decompressed Fixed Version binaries in your project.
+1.  Include all of the decompressed Fixed Version binaries in your app package, to be deployed on the target machine during your app's installation.
 
 1.  Indicate the path to the Fixed Version binaries when creating the WebView2 environment.
 
