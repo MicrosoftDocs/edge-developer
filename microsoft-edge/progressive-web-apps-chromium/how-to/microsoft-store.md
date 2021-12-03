@@ -1,15 +1,15 @@
 ---
-title: Publish a Progressive Web App in the Microsoft Store
-description: Make your PWA more discoverable by publishing in the Microsoft Store.
+title: Publish a Progressive Web App to the Microsoft Store
+description: Make your PWA more discoverable by publishing it in the Microsoft Store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-ms.date: 12/01/2021
 keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store
+ms.date: 12/03/2021
 ---
-# Publish your Progressive Web App to the Microsoft Store
+# Publish a Progressive Web App to the Microsoft Store
 
 Publishing your Progressive Web App (PWA) to the [Microsoft Store](/windows/uwp/publish/index) brings the following advantages:
 
