@@ -49,7 +49,7 @@ To find detached elements:
 
 1. After some messages are generated in the demo application, click the **Stop** button in the demo application.
 
-    :::image type="content" source="./images/detached-elements-demo-app.msft.png" alt-text="Generating some messages in the demo application." lightbox="./images/detached-elements-demo-app.msft.png":::
+:::image type="content" source="./images/detached-elements-demo-app.msft.png" alt-text="Generating some messages in the demo application." lightbox="./images/detached-elements-demo-app.msft.png":::
 
 1. Click the **Room 2** button.
 
