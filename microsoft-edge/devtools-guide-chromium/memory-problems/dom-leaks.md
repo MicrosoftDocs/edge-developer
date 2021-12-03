@@ -49,6 +49,8 @@ To find detached elements:
 
 1. After some messages are generated in the demo application, click the **Stop** button in the demo application.
 
+    :::image type="content" source="./images/detached-elements-demo-app.msft.png" alt-text="Generating some messages in the demo application." lightbox="./images/detached-elements-demo-app.msft.png":::
+
 1. Click the **Room 2** button.
 
 1. In the **Detached Elements** tool, click the **Get Detached Elements** (![The Get Detached Elements icon.](images/get-detached-elements-icon-light-mode.png)) icon.
