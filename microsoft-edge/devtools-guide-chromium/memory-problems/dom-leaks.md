@@ -43,11 +43,11 @@ The **Get Detached Elements** (![The Get Detached Elements icon.](images/get-det
 
 To find detached elements:
 
-1. In the demo application, click the **Room 1** button.
+1. In the demo application, make sure that the **Room 1** button is selected.
 
 1. In the demo application, click the **Simulate high traffic** button.
 
-1. After some messages are generated in the demo application, click the **Stop** button in the demo application.
+1. After some messages are generated and displayed in the demo application, click the demo's **Stop** button.
 
 :::image type="content" source="./images/detached-elements-demo-app.msft.png" alt-text="Generating some messages in the demo application." lightbox="./images/detached-elements-demo-app.msft.png":::
 
