@@ -59,7 +59,7 @@ The **Detached Elements** tool displays all of the detached elements of the page
 
 
 <!-- ====================================================================== -->
-## Trigger Garbage Collection
+## Trigger garbage collection
 
 Next, trigger garbage collection (GC) in the browser:
 
