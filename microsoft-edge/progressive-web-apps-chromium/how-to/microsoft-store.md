@@ -144,7 +144,7 @@ To prevent the additional UI from being shown in a PWA that's installed from the
 To prevent displaying the URL and page title:
 
 1. Within the PWA's Web App Manifest, use [the `url_handlers` member](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#manifest-changes) to specify an array of origins that are associated with that app.
-1. On each of the referenced origins, include a [`web-app-origin-association` file](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file) that specifies the PWA's association with that domain.
+1. On each of the referenced origins, include a [`web-app-origin-association` file](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file) that associates the PWA with that domain.
 
 When these domain lists are in place, Microsoft Edge no longer shows the additional UI when the principal domain is redirected to the locale-specific domains.
 
