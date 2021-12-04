@@ -123,7 +123,7 @@ By default, a PWA that's installed from the Microsoft Store displays an addition
 
 The following figure shows the UI that is introduced when a user moves outside the scope of a PWA:
 
-:::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="The additional UI with URL and page title when the app is redirected to a locale-specific domain.":::
+:::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="The additional UI with URL and page title when the app is redirected to another domain.":::
 
 ### Domain redirection with browser-installed PWAs
 
