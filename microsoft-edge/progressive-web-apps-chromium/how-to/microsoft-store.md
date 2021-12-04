@@ -1,6 +1,6 @@
 ---
 title: Publish a Progressive Web App to the Microsoft Store
-description: Make your PWA more discoverable by publishing it in the Microsoft Store.
+description: Make your Progressive Web App (PWA) more discoverable by publishing it in the Microsoft Store.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -95,7 +95,7 @@ To submit your app to the Microsoft Store:
 
     :::image type="content" source="../media/windows-partner-center-start-submission.msft.png" alt-text="Start a new app submission on Windows Partner Center.":::
 
-1.  When you are prompted, provide information about your app, such as pricing and age rating.
+1.  When you're prompted, provide information about your app, such as pricing and age rating.
 
 1.  On the **Packages** prompt, select the `.msixbundle` and the `.classic.appxbundle` files you generated in the [Package your PWA](#package-your-pwa-for-the-store) section.
 
@@ -119,10 +119,11 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 <!-- ====================================================================== -->
 ## Redirect to locale-specific domains without displaying additional UI
 
-By default, PWAs that are installed from the Microsoft Store display an additional UI showing the URL and page title when the app is redirected to a locale-specific domain.  This happens because the navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
+By default, a PWA that's installed from the Microsoft Store displays an additional UI when the app is redirected to a locale-specific domain.  The added UI shows the URL and page title.  This UI is added because navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
 
-:::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="The additional UI with URL and title when the app is redirected to a locale-specific domain.":::
+The following figure shows the UI that is introduced when a user moves outside the scope of a PWA:
 
+:::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="The additional UI with URL and page title when the app is redirected to a locale-specific domain.":::
 
 ### Domain redirection with browser-installed PWAs
 
@@ -132,20 +133,22 @@ Customers who install the PWA from Microsoft Edge would therefore install the PW
 
 ### Domain redirection with PWAs installed from the Microsoft Store
 
-PWAs that are installed from the Microsoft Store have a hard-coded start URL that is pointed at the principal domain.  When the PWA is launched, the PWA initially navigates to the principal domain, and then a customer may (as necessary) be redirected to their locale-specific domain. If that redirection occurs, the navigation is considered "out of scope" and the app UI will display the URL and title at the top of the web page.
+PWAs that are installed from the Microsoft Store have a hard-coded start URL that is pointed at the principal domain.  When the PWA is launched, the PWA initially navigates to the principal domain, and then a customer may (as necessary) be redirected to their locale-specific domain. If that redirection occurs, the navigation is considered "out of scope".  As a result, the app displays the URL and page title at the top of the page.
 
-This is a security feature to ensure that users are aware that they have left the context of the app.  That makes sense when a user is loading a page from another website in the context of the PWA, but may be inappropriate when a user moves among domains that are all part of the same website.
+Displaying the URL and page title is a security feature to ensure that users know they have left the context of the PWA.  This added UI makes sense when a user loads a page from another website in the context of the PWA.  However, that added UI may be inappropriate when a user moves among domains that are all part of the same website.
 
 ### Prevent the locale-specific URL and title from being displayed
 
-To prevent the additional UI from being shown, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the PWA installed from the Microsoft Store to span multiple locale-specific domains.  There are two steps to enabling a PWA to handle navigations for multiple domains:
+To prevent the additional UI from being shown in a PWA that's installed from the Microsoft Store, you can use [URL Handlers](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md) to enable the PWA to span multiple locale-specific domains.
+
+To prevent displaying the URL and page title:
 
 1. Within the PWA's Web App Manifest, use [the `url_handlers` member](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#manifest-changes) to specify an array of origins that are associated with that app.
-1. On each of the referenced origins, include [a `web-app-origin-association` file](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file) that attests to the PWA's association with that domain.
+1. On each of the referenced origins, include a [`web-app-origin-association` file](https://github.com/WICG/pwa-url-handler/blob/main/explainer.md#web-app-origin-association-file) that specifies the PWA's association with that domain.
 
 When these domain lists are in place, Microsoft Edge no longer shows the additional UI when the principal domain is redirected to the locale-specific domains.
 
-Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), but that spec is still in development.  Once finalized, this same behavior will apply for domains that are included within an app's extended scope.
+Eventually, the `url_handlers` feature will be replaced by [`scope_extensions`](https://github.com/WICG/manifest-incubations/blob/gh-pages/scope_extensions-explainer.md), but that spec is still in development.  `scope_extensions` will produce the same result as `url_handlers`.
 
 This feature was first introduced in Microsoft Edge version 97.
 
