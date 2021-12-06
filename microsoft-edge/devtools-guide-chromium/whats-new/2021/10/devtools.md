@@ -144,7 +144,7 @@ The [Command Menu](../../../command-menu/index.md) has been enhanced to make it 
 
 :::image type="content" source="../../media/2021/10/command-menu-filenames-bold-icons.png" alt-text="Command Menu showing filenames in bold with an icon indicating the file type.":::
 
-For this history of this feature, see Chromium issue [1201997](https://crbug.com/1201997).
+For this history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
 
 
 <!-- ====================================================================== -->
