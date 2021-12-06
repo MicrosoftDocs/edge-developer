@@ -97,6 +97,8 @@ The following are some of the additional features that are available in Microsof
 <!-- ====================================================================== -->
 ## Improved the display of properties
 
+<!-- Chromium What's New entry: [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New In DevTools (Chrome 95)_. -->
+
 DevTools improves the display of properties by:
 *  Always bolding and sorting own properties first, in the **Console**, **Sources** panel, and **Properties** pane.  (An _own property_ is a property that's defined directly on the object.)
 *  Flattening the properties display in the **Properties** pane.
@@ -104,41 +106,45 @@ DevTools improves the display of properties by:
 For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`.
 
 ```javascript
-const link = new URL('https://goo.gle/devtools-blog');
-link.user = { id: 1, name: 'Jane Doe' };
+const link = new URL('https://blogs.windows.com/msedgedev/');
+link.user = { id: 1, name: 'Amelie Garner' };
 link.access = 'admin';
 link.search = `?access=${link.access}`;
 ```
 
-Try logging `link` in the **Console**.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (such as `URL`) that have many inherited properties.
+After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (such as `URL`) that have many inherited properties.
 
-<!-- image here, with alt text = "Own properties are bold and sorted first" -->
+:::image type="content" source="../../media/2021/10/improved-display-properties.png" alt-text="Own properties are bold and sorted first.":::
 
 In the **Properties** pane, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction).
 
-<!-- image here, with alt text = "Flatten properties" -->
+:::image type="content" source="../../media/2021/10/flattened-list-of-properties.png" alt-text="Flattened list of properties.":::
 
-For Chrome screen captures, see [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New In DevTools (Chrome 95)_.  Chromium issues: [1076820](https://crbug.com/1076820), [1119900](https://crbug.com/1119900).
+For this history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
 
 
 <!-- ====================================================================== -->
 ## Snippets are now sorted in the Sources panel
 
+<!-- Chromium What's New entry: [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New In DevTools (Chrome 95)_. -->
+
 Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphabetically.  Previously, the snippets weren't sorted.
 
-<!-- image here, with alt text = "Sorted snippets in the Sources panel" -->
+:::image type="content" source="../../media/2021/10/snippets-sorted-alphbetically.png" alt-text="Sorted snippets in the Sources panel.":::
 
-For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For Chrome screen captures, see [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New In DevTools (Chrome 95)_.  Chromium issue: [1243976](https://crbug.com/1243976).
+For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For this history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
 
 
 <!-- ====================================================================== -->
 ## Improved UI for DevTools command menu
 
-Do you find it hard to search for a file in the [Command Menu](../../../command-menu/index.md)?  Good news: the **Command Menu** user interface has been enhanced.  Open the **Command Menu** to search for a file with keyboard shortcut `Control+P` in Windows and Linux, or `Command+P` in macOS.  The UI improvements of the Command Menu are still ongoing; stay tuned for more updates.
+<!-- Chromium What's New entry: [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New In DevTools (Chrome 95)_. -->
 
-<!-- image here, with alt text = "Command Menu" -->
+The [Command Menu](../../../command-menu/index.md) has been enhanced to make it easier to search for a file.  When you press `Ctrl`+`P` in Windows and Linux or `Command+P` in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type.
 
-For Chrome screen captures, see [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New In DevTools (Chrome 95)_.  Chromium issue: [1201997](https://crbug.com/1201997).
+:::image type="content" source="../../media/2021/10/command-menu-filenames-bold-icons.png" alt-text="Command Menu showing filenames in bold with an icon indicating the file type.":::
+
+For this history of this feature, see Chromium issue [1201997](https://crbug.com/1201997).
 
 
 <!-- ====================================================================== -->
