@@ -120,7 +120,7 @@ In the **Properties** pane, the list of properties is now flattened for a better
 
 :::image type="content" source="../../media/2021/10/flattened-list-of-properties.png" alt-text="Flattened list of properties.":::
 
-For this history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
+For the history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
 
 
 <!-- ====================================================================== -->
@@ -132,7 +132,7 @@ Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphab
 
 :::image type="content" source="../../media/2021/10/snippets-sorted-alphbetically.png" alt-text="Sorted snippets in the Sources panel.":::
 
-For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For this history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
+For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
 
 
 <!-- ====================================================================== -->
@@ -144,7 +144,7 @@ The [Command Menu](../../../command-menu/index.md) has been enhanced to make it 
 
 :::image type="content" source="../../media/2021/10/command-menu-filenames-bold-icons.png" alt-text="Command Menu showing filenames in bold with an icon indicating the file type.":::
 
-For this history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
+For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
 
 
 <!-- ====================================================================== -->
