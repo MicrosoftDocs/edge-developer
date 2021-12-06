@@ -91,7 +91,7 @@ You can access User-Agent Client Hints using JavaScript on the client side. When
 { brands:
     [ {brand: "Chromium","version":"91"},   
     {brand: "Microsoft Edge","version":"91"},  
-    {brand: "GREASE","version":"99"}, ]  
+    {brand: "GREASE","version":"99"} ]  
 mobile: false }
 ```
 
