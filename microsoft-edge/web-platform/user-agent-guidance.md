@@ -121,7 +121,8 @@ For more information, navigate to [getHighEntropyValues()](https://wicg.github.i
 
 The operating system version token in the `User-Agent` header hasn't been updated for Windows 11, and still reports `Windows NT 10.0`.
 
-To distinguish between Windows 10 and Windows 11, request the `platformVersion` client hint at Microsoft Edge. Values between and including `1.0.0` and `12.0.0` represent releases of Windows 10, while values of `14.0.0` or later represent releases of Windows 11.
+To distinguish between Windows 10 and Windows 11, request the `platformVersion` client hint in Microsoft Edge. Values between and including `1.0.0` and `12.0.0` represent releases of Windows 10, while values of `14.0.0` or later represent releases of Windows 11.
+
 
 ### Combine User-Agent Client Hints with feature detection
 
