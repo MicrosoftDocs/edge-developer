@@ -10,7 +10,7 @@ keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 ---
 # Customize the password reveal button
 
-The `password` input type in Microsoft Edge includes a **password reveal** control.  A user may choose the **password input** button to reveal the **password** field.  The revealed **password** field helps the user verify if the password is correctly.  After a user has entered text in the **password** field, a user may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of the input.
+The `password` input type in Microsoft Edge includes a **password reveal** control.  A user may choose the **password input** button to reveal the **password** field.  The revealed **password** field helps the user verify if the password is correct.  After a user has entered text in the **password** field, a user may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of the input.
 
 :::row:::
    :::column span="":::
