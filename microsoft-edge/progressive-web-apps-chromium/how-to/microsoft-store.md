@@ -105,7 +105,7 @@ After you complete your submission, your app is reviewed, typically within 24 to
 <!-- ====================================================================== -->
 ## Measure usage of your PWA installed from the Microsoft Store
 
-When your PWA is initially launched, if the PWA was installed from the Microsoft Store, Microsoft Edge includes the following `Referer` header with the request for the first navigation of your web app:
+When your PWA is initially launched, if the PWA was installed from the Microsoft Store, Microsoft Edge includes the following `Referer` header with the request of the first navigation of your web app.
 
 ```
 Referer: app-info://platform/microsoft-store
