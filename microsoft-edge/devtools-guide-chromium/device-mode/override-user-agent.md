@@ -39,7 +39,7 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
     :::image-end:::
 
 1. Choose a user agent from the drop-down list or enter a custom user agent.
-1. Choose **User agent client hints** to view and  change these values as described in [Network Analysis reference](../network/reference.md).
+1. Choose **User agent client hints** to view and change these values as described in [Network features reference](../network/reference.md).
 
 
 <!-- ====================================================================== -->

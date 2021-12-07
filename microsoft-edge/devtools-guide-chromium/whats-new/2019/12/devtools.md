@@ -1,12 +1,12 @@
 ---
-description: Accessibility improvements, using the DevTools in other languages, and more.
 title: What's new in DevTools (Microsoft Edge 80)
+description: Accessibility improvements, using the DevTools in other languages, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/11/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -47,46 +47,16 @@ Chromium issue [#963183](https://crbug.com/963183)
 
 Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
 
-:::row:::
-   :::column span="":::
-      Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
-   :::column-end:::
-   :::column span="":::
-      Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      French – fran&#231;ais
-   :::column-end:::
-   :::column span="":::
-      German - deutsch
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Italian - italiano
-   :::column-end:::
-   :::column span="":::
-      Japanese - &#26085;&#26412;&#35486;
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Korean - &#54620;&#44397;&#50612;
-   :::column-end:::
-   :::column span="":::
-      Portuguese - portugu&#234;s
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
-   :::column-end:::
-   :::column span="":::
-      Spanish - espa&#241;ol
-   :::column-end:::
-:::row-end:::
+* Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+* Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+* French – fran&#231;ais
+* German - deutsch
+* Italian - italiano
+* Japanese - &#26085;&#26412;&#35486;
+* Korean - &#54620;&#44397;&#50612;
+* Portuguese - portugu&#234;s
+* Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+* Spanish - espa&#241;ol
 
 <!--
 |  |  |
