@@ -121,7 +121,7 @@ This feature was first introduced in Microsoft Edge version 91, and the DOM API 
 
 By default, a PWA that's installed from the Microsoft Store displays an additional UI when the app is redirected to a locale-specific domain.  The added UI shows the URL and page title.  This UI is added because navigation to the locale-specific domain is considered "out-of-scope".  However, you can prevent this UI from being displayed, by specifying locale-specific origins that are associated with the PWA.
 
-The following figure shows the UI that is introduced when a user moves outside the scope of a PWA: 
+The following figure shows the UI that is introduced when a user moves outside the scope of a PWA. 
 
 :::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="The additional UI with URL and page title when the app is redirected to another domain.":::
 
