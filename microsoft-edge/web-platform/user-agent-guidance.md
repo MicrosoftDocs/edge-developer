@@ -3,7 +3,7 @@ description: This article describes how to detect Microsoft Edge data with User-
 title: Detecting Microsoft Edge from your website
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/22/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, detect microsoft edge, detecting microsoft edge
@@ -88,11 +88,23 @@ The following table shows all available hints request headers with sample values
 You can access User-Agent Client Hints using JavaScript on the client side. When you call the default `navigator.userAgentData`, it returns the following response.
 
 ```JSON
-{ brands:
-    [ {brand: "Chromium","version":"91"},   
-    {brand: "Microsoft Edge","version":"91"},  
-    {brand: "GREASE","version":"99"} ]  
-mobile: false }
+{
+  "brands": [
+    {
+      "brand": "Chromium",
+      "version":"91"
+    },
+    {
+      "brand": "Microsoft Edge",
+      "version":"91"
+    },
+    {
+      "brand": "GREASE",
+      "version":"99"
+    }
+  ],
+  "mobile": false 
+}
 ```
 
 Microsoft Edge includes a `GREASE` brand value that changes over time. It prevents sites from matching the entire brand list when attempting to detect a version of Microsoft Edge.
@@ -182,12 +194,7 @@ User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N)
 
 The response value from `navigator.userAgent` method uses the following format:
 
-```javascript
-"Mozilla/5.0 (Windows NT 10.0; Win64; x64)  
-AppleWebKit/537.36 (KHTML, like Gecko)  
-Chrome/91.0.4501.0  
-Safari/537.36  
-Edg/91.0.866.0"
+```javascript "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4501.0 Safari/537.36 Edg/91.0.866.0"
 ```
 
 Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer) used for iOS and Android.
