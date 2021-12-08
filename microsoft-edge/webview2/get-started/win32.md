@@ -1,9 +1,9 @@
 ---
-description: Get started guide with WebView2 for Win32 apps
 title: Get started with WebView2 in Win32 apps
+description: Get started building WebView2 for Win32 by working with sample apps and the WebView2 SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
+ms.date: 12/09/2021
 ms.topic: tutorial
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -55,6 +55,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
     :::image-end:::
 
 1.  Install the Windows Implementation Library.
+    1.  In the **Nuget** window click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Windows.ImplementationLibrary` > choose **Microsoft.Windows.ImplementationLibrary**.
     1.  In the right-hand side window, choose **Install**.  NuGet downloads the library to your machine.
 
@@ -66,6 +67,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
         :::image-end:::
 
 1.  Install the WebView2 SDK.
+    1.  In the **Nuget** window click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.
     1.  In the right-hand side window, click **Install**.  NuGet downloads the SDK to your machine.
 
