@@ -33,16 +33,14 @@ Simulate different device orientations from Microsoft Edge DevTools.
 
 1.  Type `sensors`, choose **Show Sensors**, and select `Enter`.  The **Sensors** tool opens at the bottom of your DevTools window.
 
-1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or choose **Custom orientation** to provide your own exact orientation.
-
-Selecting `Portrait upside down` from the **Orientation** list:
+1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.
 
 :::image type="content" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Choose Portrait upside down from the Orientation list" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
 
-After you select **Custom orientation**, the `alpha`, `beta`, and `gamma` fields are enabled.
-<!--To understand how each axis works, navigate to [Device Orientation & Motion](). -->
-<!--todo: update links to local copy of alpha/beta/gamma sections from https://developers.google.com/web/fundamentals/native-hardware/device-orientation#alpha , beta, and gamma section when available; see "original page" below -->
-You can also set a custom orientation by dragging the **Orientation Model**.  Hold `Shift` before dragging to rotate along the `alpha` axis:
+If you select **Custom orientation**, the `alpha`, `beta`, and `gamma` rotational axis fields are enabled.
+<!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://developers.google.com/web/fundamentals/native-hardware/device-orientation#rotation_data). -->
+<!-- todo: link to a local copy of that article section when available; see "original page" below -->
+You can also set a custom orientation by dragging the **Orientation Model**.  For example, to rotate along the `alpha` axis, hold `Shift` before dragging:
 
 :::image type="content" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="The Orientation Model" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
 

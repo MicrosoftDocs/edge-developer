@@ -41,16 +41,23 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 ## View the CSS for an element
 
 1.  [Open CSS Examples](#open-css-examples).
+
 1.  Right-click the `Inspect Me!` text, and then click **Inspect**.
+
     1.  In DevTools, on the **Elements** tool, in the **DOM Tree** panel, the `Inspect Me!` element is highlighted.
 
         :::image type="content" source="../media/css-elements-inspect-me.msft.png" alt-text="The inspected element is highlighted in the DOM Tree." lightbox="../media/css-elements-inspect-me.msft.png":::
 
     1.  In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
+
 1.  On the page, in the **Value of `data-message`:** textbox, enter the value.
+
 1.  Right-click the `Inspect Me!` text, and then click **Inspect**.
+
     1.  In DevTools, on the **Elements** tool, select the **Styles** panel.
+
     1.  In the **Styles** panel, the `Inspect Me!` element is highlighted.
+
     1.  In the `Inspect Me!` element, find the `aloha` class rule.
 
         > [!NOTE]
@@ -72,9 +79,13 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
 1.  [Open CSS Examples](#open-css-examples).
+
 1.  Right-click the `Add A Background Color To Me!` text, and then click **Inspect**.
+
 1.  Select `element.style` near the top of the **Styles** panel.
+
 1.  Type `background-color` and select `Enter`.
+
 1.  Type `honeydew` and select `Enter`.  In the **DOM Tree**, an inline style declaration applied to the element is displayed.
 
     The `background-color:honeydew` declaration is applied to the element using the `element.style` section of the **Styles** panel:
@@ -91,8 +102,11 @@ To display how an element looks when a CSS class is applied to or removed from a
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
 1.  [Open CSS Examples](#open-css-examples).
+
 1.  Right-click the `Add A Class To Me!` text, and then click **Inspect**.
+
 1.  Click **.cls**.  DevTools reveals a text box where you can add classes to the selected element.
+
 1.  Type `color_me` in the **Add new class** text box and then select `Enter`.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.
 
 The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
@@ -109,9 +123,13 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
 1.  [Open CSS Examples](#open-css-examples).
+
 1.  Hover on the `Hover Over Me!` text.  The background color changes.
+
 1.  Right-click the `Hover Over Me!` text, and then click **Inspect**.
+
 1.  In the **Styles** panel, click **:hov**.
+
 1.  Select the **:hover** checkbox.  The background color changes like before, even though you are not actually hovering over the element.
 
 Toggling the `:hover` pseudostate on an element:
@@ -128,22 +146,25 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
 1.  [Open CSS Examples](#open-css-examples).
+
 1.  Right-click the `Change My Margin!` text, and then click **Inspect**.
-1.  In the **Box Model** diagram in the **Styles** panel, hover on **padding**.  The padding of an element is highlighted in the viewport.
+
+1.  In the **Box Model** diagram in the **Styles** panel, hover on **padding**.  The element's padding is highlighted in the viewport.
 
     > [!NOTE]
     > Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** panel to display the **Box Model**.
 
-1.  Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element does not have a left-margin.
+1.  Double-click the left margin in the **Box Model**, which currently has a value of `-` meaning that the element does not have a `margin-left`.
+
 1.  Type `100px` and select `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.
 
-    Hovering on the padding of the element:
+    Hovering over the element's padding:
 
-    :::image type="content" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Hovering on the padding of the element." lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
+    :::image type="content" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Hovering over the element's padding." lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
 
-    Changing the left-margin of the element:
+    Changing the element's left margin:
 
-    :::image type="content" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Changing the left-margin of the element." lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
+    :::image type="content" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Changing the element's left margin." lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
 
 
 <!-- ====================================================================== -->

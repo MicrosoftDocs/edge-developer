@@ -10,7 +10,7 @@ ms.date: 04/13/2021
 ---
 # Fixing JavaScript errors that are reported in the Console
 
-This article is about resolving JavaScript errors that are reported in the Console.  For general use of the **Console** to display and resolve error messages, see [Use the Console](index.md).
+This article is about resolving JavaScript errors that are reported in the Console.  For general use of the **Console** to display and resolve error messages, see [Console overview](index.md).
 
 
 <!-- ====================================================================== -->
@@ -38,7 +38,7 @@ Other errors that the **Console** reports are network errors.  To display it in 
 
 :::image type="content" source="../media/console-debug-network-error.msft.png" alt-text="Console displays a Network and a JavaScript error." lightbox="../media/console-debug-network-error.msft.png":::
 
-The table displays `loading`, but nothing changes on the webpage because the data is never retrieved.  In the **Console**, the following two errors occurred:
+The table displays `loading`, but nothing changes on the webpage, because the data is never retrieved.  In the **Console**, the following two errors occurred:
 
 *   A network error that starts with `GET` HTTP method followed by a URI.
 *   An `Uncaught (in promise) TypeError: data.forEach is not a function` error.

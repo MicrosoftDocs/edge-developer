@@ -1,5 +1,5 @@
 ---
-title: Edit CSS font styles and settings in the Styles pane in DevTools
+title: Edit CSS font styles and settings in the Styles pane
 description: Learn how to change CSS font styles and settings using the Styles pane in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -13,17 +13,15 @@ ms.date: 03/11/2021
 
 :::image type="icon" source="../media/experimental-tag-14px.msft.png":::
 
-Typography on the web is an important part of the user experience.  You want to ensure you meet corporate brand guidelines, and your content displays as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.  For situations when specific fonts are not available on a user device, you should provide fallback font options.
+Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.  For situations when specific fonts are not available on a user device, you should provide fallback font options.
 
-CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  You also have several CSS properties that affect font-size, spacing, line height, and other typographic features.
+CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  You also have several CSS properties that affect font size, spacing, line height, and other typographical features.
 
 To make it easier when working with typography, a visual **Font Editor** is now in the **Styles** pane.  You can change your font settings, and the changes are rendered immediately in the browser.  All without in-depth knowledge of CSS.
 
 Currently the **Enable new font editor tool within the Styles pane** feature is experimental and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
 
-Any CSS in the **Styles** pane, either font definitions or inline styles, automatically displays an icon that opens the visual **Font Editor**.  To open the visual **Font Editor**, choose the **Font Editor** icon.
-
-The icon in the **Styles** pane to edit font settings:
+Any CSS in the **Styles** pane, either font definitions or inline styles, has a **Font Editor** icon.  To open the visual **Font Editor**, click the **Font Editor** icon.
 
 :::image type="content" source="../media/font-editor-icon.msft.png" alt-text="The icon in the Styles pane to edit font settings" lightbox="../media/font-editor-icon.msft.png":::
 
@@ -39,7 +37,7 @@ The **Font Editor** consists of two parts:  the Font Family selector, and the CS
 <!-- ====================================================================== -->
 ## The Font Family selector
 
-The Font Family selector is the upper part of the visual **Font Editor**.  To choose the fonts of the CSS rule, in the CSS editor, use the **Font Family** selector.  You can choose main and fallback fonts for each CSS rule.
+The Font Family selector is the upper part of the visual **Font Editor**.  To select the fonts of the CSS rule, in the CSS editor, use the **Font Family** selector.  You can select main and fallback fonts for each CSS rule.
 
 The **Font Editor** open on top of the **Styles** pane with the **Font Family** selector highlighted:
 
@@ -75,7 +73,7 @@ The **Font Editor** open on top of the **Styles** pane with the CSS properties h
 
 :::image type="content" source="../media/font-editor-css-properties.msft.png" alt-text="The font editor open on top of the Styles pane with the CSS properties highlighted" lightbox="../media/font-editor-css-properties.msft.png":::
 
-You can also convert CSS units using the visual **Font Editor**.  For example, you can use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, use the unit dropdown and choose the value `em`.  The `1 em` displayed is equal to `16 pixels`.
+You can also convert CSS units using the visual **Font Editor**.  For example, you can use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, use the unit dropdown and select the value `em`.  The `1 em` displayed is equal to `16 pixels`.
 
 Changing the font size to `16 pixels`:
 

@@ -33,11 +33,13 @@ DevTools docked to the bottom of the window:
 
 :::image type="content" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="DevTools docked to the bottom of the window." lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
 
-DevTools can be undocked to a separate window, which you can move to a separate monitor:
+DevTools can be undocked to a separate window, which you can move to a separate monitor.  The browser then has its own dedicated window without DevTools, which has been undocked:
 
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Browser in separate window." lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
+:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Browser in its own dedicated window without DevTools, which has been undocked." lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
 
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools undocked in a separate window." lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+DevTools is then undocked into its own separate, dedicated window:
+
+:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools undocked into its own separate, dedicated window." lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
 
 
 <!-- ====================================================================== -->

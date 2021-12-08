@@ -236,7 +236,7 @@ Use the new **Path** and **URL** columns in the **Network** tool to display the 
    The new Path and URL columns in the **Network** tool
 :::image-end:::
 
-To display the new columns, hover on the **Waterfall** table header, open the contextual menu (righ-click), and choose **Path** or **URL**.
+To display the new columns, hover on the **Waterfall** table header, open the contextual menu (right-click), and choose **Path** or **URL**.
 
 Chromium issue [#993366](https://crbug.com/993366)
 

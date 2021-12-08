@@ -313,13 +313,13 @@ The **Inspect** tool reports accessibility issues for one state at a time.  Firs
 
 ### Checking text color contrast in the default state
 
-In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
+In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.
 
-For example, the links in the sidebar navigation menu have enough contrast.  But the green **Dogs** list item in the **Donation status** section doesn't have enough contrast, as shown in the **Inspect** overlay:
+A green check mark icon indicates there's enough contrast, and an orange alert icon indicates not enough contrast.  For example, the links in the sidebar navigation menu have enough contrast, as indicated by a green check mark icon:
 
 :::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay." lightbox="../media/a11y-testing-enough-contrast.msft.png":::
 
-An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay:
+An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay.  For example, the green **Dogs** list item in the **Donation status** section doesn't have enough contrast, as indicated in the **Inspect** overlay.  The overlay shows an orange circled exclamation mark:
 
 :::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay." lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
 

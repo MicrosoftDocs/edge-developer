@@ -1,5 +1,5 @@
 ---
-title: Use the Console
+title: Console overview
 description: An introduction to the Console tool inside the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,9 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 04/13/2021
 ---
-# Use the Console
+# Console overview
 
-The **Console** tool of the DevTools helps you with several tasks.  The following list includes some of the tasks.
+The **Console** tool of the DevTools helps you with several tasks:
 
 *   Find out why something isn't working in the current project and [track down problems](console-debug-javascript.md).
 *   [Get information about the web project](console-filters.md) in the browser as log messages.
