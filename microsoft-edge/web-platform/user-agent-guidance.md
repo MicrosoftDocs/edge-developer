@@ -172,24 +172,24 @@ Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser
 
 For legacy reference, the following format was used for User-Agent string.
 
-On Windows, the `User-Agent` HTTP request header uses the following format:
+On Windows, the `User-Agent` HTTP request header includes:
 
-```https
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)  
-    AppleWebKit/537.36 (KHTML, like Gecko)  
-    Chrome/90.0.4430.85  
-    Safari/537.36  
-    Edg/90.0.818.46
+```
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)  
+AppleWebKit/537.36 (KHTML, like Gecko)  
+Chrome/90.0.4430.85  
+Safari/537.36  
+Edg/90.0.818.46
 ```
 
-On Android, the `User-Agent` HTTP request header uses the following format:
+On Android, the `User-Agent` HTTP request header includes:
 
-```https
-User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N)  
-    AppleWebKit/537.36 (KHTML, like Gecko)  
-    Chrome/90.0.4430.85  
-    Mobile Safari/537.36  
-    EdgA/90.0.818.46
+```
+Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N)  
+AppleWebKit/537.36 (KHTML, like Gecko)  
+Chrome/90.0.4430.85  
+Mobile Safari/537.36  
+EdgA/90.0.818.46
 ```
 
 The response value from `navigator.userAgent` method uses the following format:
@@ -236,13 +236,13 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
 
 1. Open a command prompt.  For example, enter **cmd** in the Windows search text box and select the **Command Prompt** app.
 
-1. Copy the following code snippet:
+1. Copy the following code:
 
     ```shell
     --disable-domain-action-user-agent-override
     ```
 
-1. Run the Microsoft Edge app using the copied code snippet as follows:
+1. Run the Microsoft Edge app using the copied code as follows:
 
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
