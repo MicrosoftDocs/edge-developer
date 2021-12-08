@@ -55,7 +55,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
     :::image-end:::
 
 1.  Install the Windows Implementation Library.
-    1.  In the **Nuget** window click the **Browse** tab.
+    1.  In the **NuGet** window click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Windows.ImplementationLibrary` > choose **Microsoft.Windows.ImplementationLibrary**.
     1.  In the right-hand side window, choose **Install**.  NuGet downloads the library to your machine.
 
@@ -67,7 +67,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
         :::image-end:::
 
 1.  Install the WebView2 SDK.
-    1.  In the **Nuget** window click the **Browse** tab.
+    1.  In the **NuGet** window click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.
     1.  In the right-hand side window, click **Install**.  NuGet downloads the SDK to your machine.
 
