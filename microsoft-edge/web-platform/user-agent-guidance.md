@@ -170,7 +170,7 @@ User-Agent strings are outdated and have a long history of causing website compa
 
 Wherever possible, Microsoft recommends minimizing use of Microsoft Edge browser detection logic based on the User-Agent string. If you have a good reason to detect the browser, the Microsoft Edge team recommends using [User-Agent Client Hints](#user-agent-client-hints) as the primary detection logic. [User-Agent Client Hints](#user-agent-client-hints) also reduces the complexity of browser detection code.
 
-For legacy reference, the following format was used for User-Agent string.
+For legacy reference, the following information was included in User-Agent string.
 
 On Windows, the `User-Agent` HTTP request header includes:
 
