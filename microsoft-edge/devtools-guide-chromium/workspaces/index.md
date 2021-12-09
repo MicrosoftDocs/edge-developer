@@ -73,23 +73,20 @@ Workspaces is known to not work with the following framework.
 ### Set up the demo
 
 1.  [Open the demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
+
 1.  Create an `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
+
 1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.
 
-    :::row:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m SimpleHTTPServer # Python 2
-          ```
-       :::column-end:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m http.server # Python 3
-          ```
-       :::column-end:::
-    :::row-end:::
+   ```bash
+   cd ~/Desktop/app
+   python -m SimpleHTTPServer # Python 2
+   ```
+   
+   ```bash
+   cd ~/Desktop/app
+   python -m http.server # Python 3
+   ```
 
 1.  Open a tab in Microsoft Edge and navigate to the locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
 

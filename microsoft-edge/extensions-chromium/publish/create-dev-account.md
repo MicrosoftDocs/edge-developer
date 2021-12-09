@@ -1,12 +1,12 @@
 ---
-description: Learn how to register a Partner Center developer account to publish extensions to the Microsoft Edge Add-ons website.
 title: Register as a Microsoft Edge extension developer
+description: Learn how to register a Partner Center developer account to publish extensions to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 08/27/2021
 ---
 # Register as a Microsoft Edge extension developer
 
@@ -69,70 +69,53 @@ If you have a Partner Center account for which the Primary Owner is a Microsoft 
 
 1.  If you don't have a Microsoft account (MSA), either create a new Microsoft account (MSA) directly, or login to Partner Center by using your GitHub account using the next step.  The Partner Center account must have a Primary Owner that's a Microsoft account (MSA).  If you want to login to Partner Center by using your existing personal GitHub account, open the article [Publish Microsoft Edge extensions by using a GitHub account](github.md) in a new tab or window, and follow the steps.  Your GitHub account will be linked to an automatically created Microsoft account (MSA) whose credentials you can use to register for the Microsoft Edge program.
 
-1.  After you sign in, a registration form is displayed, to enroll in the Microsoft Edge program.  Use the following table to help you fill in the registration form.
-
-    :::row:::
-       :::column span="1":::
-          **Account country/region**
-       :::column-end:::
-       :::column span="2":::
-          This field is either where you live or your business is located.
-
-          > [!IMPORTANT]
-          > After enrollment, the value of this field is read-only.
-
-       :::column-end:::
-    :::row-end:::
-    :::row:::
-       :::column span="1":::
-          **Account type**
-       :::column-end:::
-       :::column span="2":::
-          The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts. The accounts are described in detail in the following bullets.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
-
-          > [!IMPORTANT]
-          > After enrollment, you are not able to change the value of this field.
-
-          *   **Individual account**
-              An individual account is appropriate for a developer not associated with a company. The account verification process is shorter, and involves verifying that the publisher display name is available.
-
-          *   **Company account**
-              A company account is associated with an organization or business. The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
-
-       :::column-end:::
-    :::row-end:::
-    :::row:::
-       :::column span="1":::
-          **Publisher display name**
-       :::column-end:::
-       :::column span="2":::
-          This field contains the name that's displayed in the Microsoft Edge Add-ons website.  To use a particular name, that name must be available and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
-
-          > [!NOTE]
-          > The maximum length for this field is fifty (50) characters.
-
-       :::column-end:::
-    :::row-end:::
-    :::row:::
-       :::column span="1":::
-          **Contact details**
-       :::column-end:::
-       :::column span="2":::
-          This field contains any contact information that Microsoft uses to contact you about any account issues. After registration is complete, you receive an email confirmation. For a company account, you must use the registered email address associated with your organization.
-       :::column-end:::
-    :::row-end:::
-    :::row:::
-       :::column span="1":::
-          **Company approver**
-       :::column-end:::
-       :::column span="2":::
-          For a company account, you must provide the contact information of your company approver.  The contact information includes name, email address, and phone number.  As a part of the verification process, Microsoft contacts the specified company approver, to make sure that your extension belongs to your organization.
-       :::column-end:::
-    :::row-end:::
+1.  After you sign in, a registration form is displayed, to enroll in the Microsoft Edge program.  To help you fill in the registration form, see the next section.
 
 1.  Before submitting your registration form, read and accept the terms and conditions of the [Microsoft Edge Developer Agreement](/legal/windows/agreements/app-developer-agreement).
 
 1.  To complete your enrollment, select **Finish**.
+
+
+<!-- ====================================================================== -->
+## Filling in the registration form
+
+Fill in the fields of the registration form as follows.
+
+### Account country/region
+
+This field is either where you live or your business is located.
+
+> [!IMPORTANT]
+> After enrollment, the value of this field is read-only.
+
+### Account type
+
+The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
+
+> [!IMPORTANT]
+> After enrollment, you are not able to change the value of this field.
+
+#### Individual account
+
+An individual account is appropriate for a developer not associated with a company.  The account verification process is shorter, and involves verifying that the publisher display name is available.
+
+#### Company account
+
+A company account is associated with an organization or business.  The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
+
+### Publisher display name
+
+This field contains the name that's displayed in the Microsoft Edge Add-ons website.  To use a particular name, that name must be available and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
+
+The maximum length for this field is fifty (50) characters.
+
+### Contact details
+
+This field contains any contact information that Microsoft uses to contact you about any account issues.  After registration is complete, you receive an email confirmation.  For a company account, you must use the registered email address associated with your organization.
+
+### Company approver
+
+For a company account, you must provide the contact information of your company approver.  The contact information includes name, email address, and phone number.  As a part of the verification process, Microsoft contacts the specified company approver, to make sure that your extension belongs to your organization.
 
 
 <!-- ====================================================================== -->
