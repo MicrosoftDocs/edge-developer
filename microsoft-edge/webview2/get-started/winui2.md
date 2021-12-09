@@ -17,13 +17,8 @@ In this article, you will get started creating your first WebView2 app in WinUI 
 > The [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001) takes a dependency on a prerelease WebView2 package. For full API compatibility, use a preview browser channel as your runtime such as the Beta, Dev, or Canary channel of Microsoft Edge.
 
 > [!Important]
-<<<<<<< HEAD
 > The WebView2 WinUI 2 Control is actively being developed. There are some features that will be missing or broken. Some of these include:
 > * Download UI -- Note: This feature currently doesn't work, but might show up automatically in your App UI once the issue is fixed. In order to maintain compatability, developers should manually disable this feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs?view=webview2-winrt-1.0.1054.31).
-=======
-> The WebView2 WinUI Control is actively being developed. There are some features that will be missing or broken. Some of these include:
-> * Download UI -- To maintain compatibility, developers should manually disable this feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs?view=webview2-winrt-1.0.1054.31).
->>>>>>> 4113160370ba8c860fa30a80c7266d2ec1899c8f
 > * Autofill UI
 > * File Picker Dialog
 > * Background Audio
