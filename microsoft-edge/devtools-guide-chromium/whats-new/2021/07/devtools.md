@@ -201,7 +201,7 @@ Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option
    The **Copy as PowerShell** command
 :::image-end:::
 
-For more information about the Network Activity Log, navigate to [Network Analysis reference](../../../network/reference.md).  To review the history of this feature in the Chromium open-source project, navigate to Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
+For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).  For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
 
 
 <!-- ====================================================================== -->

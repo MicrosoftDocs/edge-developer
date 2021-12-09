@@ -279,7 +279,7 @@ If your site employs [user-agent client hints](../../web-platform/user-agent-gui
 
 1. Select **Add**. The new device displays in a selected state at the top of the **Emulated Devices** list.
 
-You can also set user-agent client hints in [Network Analysis reference](../network/reference.md).
+You can also set user-agent client hints in the **Network** tool; see [Network features reference](../network/reference.md).
 
 
 <!-- ====================================================================== -->

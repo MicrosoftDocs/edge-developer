@@ -78,26 +78,17 @@ Flexbox debugging features are in active development.  To turn on the experiment
 
 In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox containers in your code.  Choose the Flexbox (flex) icon to turn on or off the overlay effect that outlines a Flexbox container.  You may customize the color of the overlay in the **Layout** pane, which is located next to **Styles** and **Computed**.
 
-:::row:::
-   :::column span="":::
-      To turn on and off the overlay effect that outlines the Flexbox container, choose the Flexbox (`flex`) icon.
-   :::column-end:::
-   :::column span="":::
-      You may customize the color of the overlay in the **Layout** pane next to **Styles** and **Computed**.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="The Flexbox (flex) icon and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
-         The **Flexbox** (`flex`) icon and webpage highlighted
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="The Flexbox overlays highlighted in the Layout pane" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
-         The **Flexbox overlays** highlighted in the **Layout** pane
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+To turn on and off the overlay effect that outlines the Flexbox container, choose the Flexbox (`flex`) icon.
+
+You can customize the color of the overlay in the **Layout** pane next to **Styles** and **Computed**.
+
+The **Flexbox** (`flex`) icon and webpage highlighted:
+
+:::image type="content" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="The Flexbox (flex) icon and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
+
+The **Flexbox overlays** highlighted in the **Layout** pane:
+
+:::image type="content" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="The Flexbox overlays highlighted in the Layout pane" lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
 
 ### Display alignment icons and visual guides when Flexbox layouts change using CSS properties
 
@@ -108,26 +99,17 @@ In the **Elements** tool, the new Flexbox (flex) icon helps you identify Flexbox
 
 When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** pane now displays helpful icons next to relevant Flexbox properties.  To try this new feature, open the **Elements** tool and select a flex container.  Then add or change a property on that container in the **Styles** pane.
 
-:::row:::
-   :::column span="":::
-      The autocomplete menu now displays icons that indicate the effect of alignment properties such as `align-content` and `align-items`.
-   :::column-end:::
-   :::column span="":::
-      Additionally, DevTools now displays a guiding line to help you better review the `align-items` CSS property.  The `gap` CSS property is supported as well.  In the following figure, the `gap` CSS property is set to `gap: 12px;` and the hatching pattern for each gap is displayed.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Autocomplete menu highlighted for CSS properties that start with align-" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
-         Autocomplete menu highlighted for CSS properties that start with `align-`
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="Flexbox gap in CSS properties and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
-         Flexbox `gap` in CSS properties and webpage highlighted
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+The autocomplete menu now displays icons that indicate the effect of alignment properties such as `align-content` and `align-items`.
+
+Additionally, DevTools now displays a guiding line to help you better review the `align-items` CSS property.  The `gap` CSS property is supported as well.  In the following figure, the `gap` CSS property is set to `gap: 12px;` and the hatching pattern for each gap is displayed.
+
+Autocomplete menu highlighted for CSS properties that start with `align-`:
+
+:::image type="content" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Autocomplete menu highlighted for CSS properties that start with align-" lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+
+Flexbox `gap` in CSS properties and webpage highlighted:
+
+:::image type="content" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="Flexbox gap in CSS properties and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -215,18 +197,13 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 
 You may now use DevTools to force the [:target](https://developer.mozilla.org/docs/web/css/:target) CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo](https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1156628](https://crbug.com/1156628).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-none-forced.msft.png" alt-text="The webpage highlighted with no forced CSS" lightbox="../../media/2021/01/elements-styles-none-forced.msft.png":::
-         Webpage highlighted with no forced CSS
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-target-forced.msft.png" alt-text=":target CSS forced and webpage highlighted" lightbox="../../media/2021/01/elements-styles-target-forced.msft.png":::
-         `:target` CSS forced and webpage highlighted
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Webpage highlighted with no forced CSS:
+
+:::image type="content" source="../../media/2021/01/elements-styles-none-forced.msft.png" alt-text="The webpage highlighted with no forced CSS" lightbox="../../media/2021/01/elements-styles-none-forced.msft.png":::
+
+`:target` CSS forced and webpage highlighted:
+
+:::image type="content" source="../../media/2021/01/elements-styles-target-forced.msft.png" alt-text=":target CSS forced and webpage highlighted" lightbox="../../media/2021/01/elements-styles-target-forced.msft.png":::
 
 #### Use Duplicate elements to copy elements
 
@@ -248,38 +225,25 @@ The **Styles** pane now displays color pickers for custom CSS properties.  To cy
 
 You may now copy CSS properties quicker with a few new options in the contextual menu.  In the **Elements** tool, choose an element.  To copy the value, in the **Styles** pane, hover on a CSS class or a CSS property, open a contextual menu (right-click), and choose the copy option.
 
-:::row:::
-   :::column span="":::
-      Copy options for a CSS class.
+Copy options for a CSS class in the right-click menu:
 
-      | Option | Details |
-      |:--- |:--- |
-      | **Copy selector** | Copy the current selector name. |
-      | **Copy rule** | Copy the rule of the current selector. |
-      | **Copy all declarations** | Copy all declarations under the current rule, including non-valid and prefixed properties. |
-   :::column-end:::
-   :::column span="":::
-      Copy options for a CSS property.
+| Option | Details |
+|:--- |:--- |
+| **Copy selector** | Copy the current selector name. |
+| **Copy rule** | Copy the rule of the current selector. |
+| **Copy all declarations** | Copy all declarations under the current rule, including non-valid and prefixed properties. |
 
-      | Option | Details |
-      |:--- |:--- |
-      | **Copy declaration** | Copy the declaration of the current line. |
-      | **Copy property** | Copy the property of the current line. |
-      | **Copy value** | Copy the value of the current line. |
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/copy-css-class.msft.png" alt-text="Copy options for a CSS class in the contextual menu" lightbox="../../media/2021/01/copy-css-class.msft.png":::
-         Copy options for a CSS class in the contextual menu
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="Copy options for a CSS property in the contextual menu" lightbox="../../media/2021/01/copy-css-property.msft.png":::
-         Copy options for a CSS property in the contextual menu
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../../media/2021/01/copy-css-class.msft.png" alt-text="Copy options for a CSS class in the right-click menu" lightbox="../../media/2021/01/copy-css-class.msft.png":::
+
+Copy options for a CSS property in the right-click menu:
+
+| Option | Details |
+|:--- |:--- |
+| **Copy declaration** | Copy the declaration of the current line. |
+| **Copy property** | Copy the property of the current line. |
+| **Copy value** | Copy the value of the current line. |
+
+:::image type="content" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="Copy options for a CSS property in the right-click menu" lightbox="../../media/2021/01/copy-css-property.msft.png":::
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1152391](https://crbug.com/1152391).
 
@@ -337,51 +301,25 @@ The network emulation option **Online** is now renamed to **No Throttling**.  To
 
 You may now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1148353](https://crbug.com/1148353) and [1149859](https://crbug.com/1149859).
 
-:::row:::
-   :::column span="":::
-      In the **Console** tool, hover on an object, open the contextual menu (right-click), and then choose **Copy object**.
-   :::column-end:::
-   :::column span="":::
-      In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, highlight an object, open the contextual menu (right-click), and then choose **Copy object**.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/console-copy-object.msft.png" alt-text="Copy object in the Console" lightbox="../../media/2021/01/console-copy-object.msft.png":::
-         Copy object in the **Console**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Copy object in Sources" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
-         Copy object in **Sources**
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+In the **Console** tool, hover on an object, open the contextual menu (right-click), and then choose **Copy object**.
+
+:::image type="content" source="../../media/2021/01/console-copy-object.msft.png" alt-text="Copy object in the Console" lightbox="../../media/2021/01/console-copy-object.msft.png":::
+
+In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, highlight an object, open the contextual menu (right-click), and then choose **Copy object**.
+
+:::image type="content" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Copy object in Sources" lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
 
 #### Copy file name in the Sources tool and Styles pane
 
 You may now copy a file name using the contextual menu.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1155120](https://crbug.com/1155120).
 
-:::row:::
-   :::column span="":::
-      In the **Sources** tool, hover on a file name, open the contextual menu (right-click), and then choose **Copy file name**.
-   :::column-end:::
-   :::column span="":::
-      In the **Elements** tool > **Styles** pane, hover on a file name, open the contextual menu (right-click), and then choose **Copy file name**.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Copy file name in Sources" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
-         Copy file name in **Sources**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="Copy file name in Styles pane" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
-         Copy file name in **Styles** pane
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+In the **Sources** tool, hover on a file name, open the contextual menu (right-click), and then choose **Copy file name**.
+
+:::image type="content" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Copy file name in Sources" lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
+
+In the **Elements** tool > **Styles** pane, hover on a file name, open the contextual menu (right-click), and then choose **Copy file name**.
+
+:::image type="content" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="Copy file name in Styles pane" lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
 
 ### Updates to Frame details
 

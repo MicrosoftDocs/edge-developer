@@ -27,21 +27,16 @@ The normal sequence of navigation events is:
 
 The following events describe the state of WebView2 during each navigation action:
 
-:::row:::
-   :::column span="1":::
-      :::image type="content" source="../media/navigation-graph.png" alt-text="The Microsoft Edge WebView2 Navigation Events." lightbox="../media/navigation-graph.png":::
-   :::column-end:::
-   :::column span="2":::
-      | Sequence | Event name | Details |
-      |:--- |:--- |:--- |
-      | 1 | `NavigationStarting` |  WebView2 starts to navigate and the navigation results in a network request.  The host may disallow the request during the event. |
-      | 2 | `SourceChanged` |  The source of WebView2 changes to a new URL.  The event may result from a navigation action that does not cause a network request such as a fragment navigation. |
-      | 3 | `ContentLoading` |  WebView2 starts loading content for the new page. |
-      | 4 | `HistoryChanged` |  The navigation causes the history of WebView2 to update. |
-      | 5 | `DOMContentLoaded` |  WebView2 finishes parsing the DOM content but hasn't finished loading all images, script, and other content on the page. |
-      | 6 | `NavigationCompleted` |  WebView2 completes loading content on the new page. |
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/navigation-graph.png" alt-text="WebView2 Navigation Events." lightbox="../media/navigation-graph.png":::
+
+| Sequence | Event name | Details |
+| --- | --- | --- |
+| 1 | `NavigationStarting` |  WebView2 starts to navigate and the navigation results in a network request.  The host may disallow the request during the event. |
+| 2 | `SourceChanged` |  The source of WebView2 changes to a new URL.  The event may result from a navigation action that does not cause a network request such as a fragment navigation. |
+| 3 | `ContentLoading` |  WebView2 starts loading content for the new page. |
+| 4 | `HistoryChanged` |  The navigation causes the history of WebView2 to update. |
+| 5 | `DOMContentLoaded` |  WebView2 finishes parsing the DOM content but hasn't finished loading all images, script, and other content on the page. |
+| 6 | `NavigationCompleted` |  WebView2 completes loading content on the new page. |
 
 The above figure shows navigation events that have the same `NavigationId` property on the respective event argument.
 
