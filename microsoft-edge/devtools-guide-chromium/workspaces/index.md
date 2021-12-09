@@ -92,22 +92,18 @@ Complete the following actions, to get hands-on experience with Workspaces.
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->
 
 1.  Create an `app` directory on your desktop.  Save copies of the files from the `workspaces-demo` directory to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
-1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.
 
-    :::row:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m SimpleHTTPServer # Python 2
-          ```
-       :::column-end:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m http.server # Python 3
-          ```
-       :::column-end:::
-    :::row-end:::
+1. Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you can use whatever server you prefer.
+
+   ```bash
+   cd ~/Desktop/app
+   python -m SimpleHTTPServer # Python 2
+   ```
+
+   ```bash
+   cd ~/Desktop/app
+   python -m http.server # Python 3
+   ```
 
 1.  Open a tab in Microsoft Edge and navigate to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
 

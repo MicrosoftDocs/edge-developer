@@ -48,22 +48,13 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 
 DevTools now supports moving tools between the top and bottom panels.  Customize your DevTools and improve your productivity by viewing any combination of two tools at the same time.  For example, view the **Elements** and the **Sources** tools at the same time (by moving the **Sources** tool to the bottom).  To review the history of this feature in the Chromium open-source project, navigate to Issue [#1075732](https://crbug.com/1075732).
 
-:::row:::
-   :::column span="":::
-      To move any top tool to the bottom, hover on a tab, open the contextual menu (right-click), and choose **Move to bottom**.
+To move any top tool to the bottom, hover on a tab, open the contextual menu (right-click), and choose **Move to bottom**.
 
-      :::image type="complex" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Move to bottom" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
-         Move to bottom
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      To move any bottom tool to the top, hover on a tab, open the contextual menu (right-click), and choose **Move to top**.
+:::image type="content" source="../../media/2020/10/move-to-bottom.msft.png" alt-text="Move to bottom" lightbox="../../media/2020/10/move-to-bottom.msft.png":::
 
-      :::image type="complex" source="../../media/2020/10/move-to-top.msft.png" alt-text="Move to top" lightbox="../../media/2020/10/move-to-top.msft.png":::
-         Move to top
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+To move any bottom tool to the top, hover on a tab, open the contextual menu (right-click), and choose **Move to top**.
+
+:::image type="content" source="../../media/2020/10/move-to-top.msft.png" alt-text="Move to top" lightbox="../../media/2020/10/move-to-top.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -80,18 +71,13 @@ The **Network Console** tool now has improved compatibility with the [Postman v2
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1093687](https://crbug.com/1093687).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Enter name for the new environment" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
-         Enter name for the new environment
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Choose format for the new environment" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
-         Choose format for the new environment
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Entering a name for the new environment:
+
+:::image type="content" source="../../media/2020/10/network-console-environments-new-name.msft.png" alt-text="Entering a name for the new environment" lightbox="../../media/2020/10/network-console-environments-new-name.msft.png":::
+
+Selecting the format for the new environment:
+
+:::image type="content" source="../../media/2020/10/network-console-environments-new-format.msft.png" alt-text="Selecting the format for the new environment" lightbox="../../media/2020/10/network-console-environments-new-format.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -144,18 +130,13 @@ The **Elements for Visual Studio Code** and **Network for Visual Studio Code** e
 
 With the extension, launch Microsoft Edge, connect to an existing instance of the browser, or use a headless browser directly from your editor.  To start contributing and filing issues with your feedback about this extension, navigate to the [Microsoft Edge Developer Tools for Visual Studio Code](https://github.com/Microsoft/vscode-edge-devtools) repo on GitHub.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Using the extension in full browser mode screenshot" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
-         Using the extension in full browser mode screenshot
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Using the extension in headless mode screenshot" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
-         Using the extension in headless mode screenshot
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Using the extension in full browser mode:
+
+:::image type="content" source="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png" alt-text="Using the extension in full browser mode" lightbox="../../media/2020/10/microsoft-edge-tools-full-browser.msft.png":::
+
+Using the extension in headless mode:
+
+:::image type="content" source="../../media/2020/10/microsoft-edge-tools-headless.msft.png" alt-text="Using the extension in headless mode" lightbox="../../media/2020/10/microsoft-edge-tools-headless.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -175,18 +156,13 @@ For more information about the **WebAuthn** feature, navigate to [Emulate authen
 
 You are able to emulate authenticators and debug the [Web Authentication API](https://w3c.github.io/webauthn) with the new [WebAuthn](../../../webauthn/index.md) tool.  To open the **WebAuthn** tool, choose **the Customize and control DevTools** (`...`) icon > **More tools** > **WebAuthn**.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1034663](https://crbug.com/1034663).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Open the WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
-         Open the **WebAuthn** tool
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="WebAuthn tool" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
-         **WebAuthn** tool
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Opening the **WebAuthn** tool:
+
+:::image type="content" source="../../media/2020/10/more-tools-webauthn.msft.png" alt-text="Opening the WebAuthn tool" lightbox="../../media/2020/10/more-tools-webauthn.msft.png":::
+
+The **WebAuthn** tool:
+
+:::image type="content" source="../../media/2020/10/webauthn-enable-virtual-auth.msft.png" alt-text="The WebAuthn tool" lightbox="../../media/2020/10/webauthn-enable-virtual-auth.msft.png":::
 
 ### Elements tool updates
 
@@ -194,18 +170,13 @@ You are able to emulate authenticators and debug the [Web Authentication API](ht
 
 Toggle the **Computed** pane in the **Styles** pane.  The **Computed** pane in the **Styles** pane is collapsed by default.  To toggle it, choose the button.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1073899](https://crbug.com/1073899).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Open the Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
-         Open the **Computed sidebar** pane
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
-         **Computed sidebar** pane
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Opening the **Computed sidebar** pane:
+
+:::image type="content" source="../../media/2020/10/computed-sidebar-pane.msft.png" alt-text="Opening the Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane.msft.png":::
+
+The **Computed sidebar** pane:
+
+:::image type="content" source="../../media/2020/10/computed-sidebar-pane-open.msft.png" alt-text="Computed sidebar pane" lightbox="../../media/2020/10/computed-sidebar-pane-open.msft.png":::
 
 #### Grouping CSS properties in the Computed panel
 

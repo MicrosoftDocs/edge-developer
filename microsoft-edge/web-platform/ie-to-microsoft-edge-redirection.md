@@ -31,32 +31,25 @@ The IE compatibility List only adds a website when the following actions occur.
 <!-- ====================================================================== -->
 ## Redirection experience
 
-On redirection to Microsoft Edge, the user is shown the one-time dialog in the next screenshot.  The dialog provides the user with the following information.
+On redirection to Microsoft Edge, the user is shown the one-time dialog in the next screenshot.  The dialog provides the user with the following information:
+*  It explains why the website is being redirected.
+*  It prompts the user for consent to copy browsing data and preferences from IE to Microsoft Edge.
 
-*   It explains why the website is being redirected.
-*   It prompts the user for consent to copy browsing data and preferences from IE to Microsoft Edge.
+The following browsing data is imported:
+*  Favorites
+*  Passwords
+*  Search engines
+*  Open tabs
+*  History
+*  Settings
+*  Cookies
+*  The Home Page
 
-:::row:::
-   :::column span="":::
-      The following browsing data is imported.
+Browsing notification and prompt to import data and preferences:
 
-      *   Favorites
-      *   Passwords
-      *   Search engines
-      *   Open tabs
-      *   History
-      *   Settings
-      *   Cookies
-      *   The Home Page
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/neededge-dialog1.msft.png" alt-text="Browsing notification and prompt to import data and preferences" lightbox="../media/neededge-dialog1.msft.png":::
-         Browsing notification and prompt to import data and preferences
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/neededge-dialog1.msft.png" alt-text="Browsing notification and prompt to import data and preferences" lightbox="../media/neededge-dialog1.msft.png":::
 
-If the user does not consent by choosing the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.
+If the user doesn't consent by selecting the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.
 
 Finally, a website incompatibility banner is displayed under the address bar for each redirection.  An example of a website incompatibility banner is displayed in following figure.
 

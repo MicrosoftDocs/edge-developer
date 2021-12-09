@@ -1,12 +1,12 @@
 ---
+title: Override the user agent string
 description: Open the Network conditions tool, disable Select automatically, and choose from the list or enter a custom string.
-title: Override the user agent string from Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/19/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,25 +21,23 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Override the user agent string from Microsoft Edge DevTools
+# Override the user agent string
 
 To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_agent) string from Microsoft Edge DevTools:
 
-1. Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-    :::image type="complex" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
-       The **Command Menu**
-    :::image-end:::
+   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu":::
+    
+1. Type `network conditions`, select **Show Network conditions**, and then press `Enter` to open the **Network conditions** tool.
 
-1. Type `network conditions`, choose **Show Network conditions**, and select `Enter` to open the **Network conditions** tool.
 1. In the **User agent** section, clear the **Use browser default** checkbox.
 
-    :::image type="complex" source="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png" alt-text="Turn off Select automatically" lightbox="../media/device-mode-console-network-conditions-user-agent-select-automatically-deselected.msft.png":::
-       Clear **Use browser default** checkbox
-    :::image-end:::
+   :::image type="content" source="../media/clear-use-browser-default-checkbox.png" alt-text="Clearing the 'Use browser default' checkbox.":::
 
-1. Choose a user agent from the drop-down list or enter a custom user agent.
-1. Choose **User agent client hints** to view and  change these values as described in [Network Analysis reference](../network/reference.md).
+1. Select a user agent from the dropdown, or enter a custom user agent.
+
+1. Click **User agent client hints** to view and change these values as described in [Network features reference](../network/reference.md).
 
 
 <!-- ====================================================================== -->

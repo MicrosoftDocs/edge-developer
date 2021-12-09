@@ -35,64 +35,23 @@ Hybrid apps allow developers to enjoy the best of both worlds: the ubiquity and 
 <!-- ====================================================================== -->
 ## WebView2 benefits
 
-<!--
-In the below table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated.
-Similar table: [Overview of Progressive Web Apps (PWAs)](..\progressive-web-apps-chromium\index.md#characteristics-of-a-pwa)
--->
+*  **Web ecosystem & skillset**.  Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.
 
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-web-ecosystem-skillset-small.msft.png":::  
-        **Web ecosystem & skillset**  
-        Utilize the entire web platform, libraries, tooling, and talent that exists within the web ecosystem.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-rapid-innovation-small.msft.png":::  
-        **Rapid innovation**  
-        Web development allows for faster deployment and iteration.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-windows-7-8-10-support-small.msft.png":::  
-        **Windows 7, 8, and 10 support**  
-        Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-native-capabilities-small.msft.png":::  
-        **Native capabilities**  
-        Access the full set of Native APIs.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-code-sharing-small.msft.png":::  
-        **Code-sharing**  
-        Add web code to your codebase allows for increased reuse across multiple platforms.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-microsoft-support-small.msft.png":::  
-        **Microsoft support**  
-        Microsoft provides support and adds new feature requests when WebView2 releases at Generally Availability (GA).
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-evergreen-small.msft.png":::  
-        **Evergreen distribution**  
-        Rely on an up-to-date version of Chromium with regular platform updates and security patches.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-fixed-small.msft.png":::  
-        **Fixed Version distribution**  
-        Optionally package a specific version of the Chromium bits in your app.
-    :::column-end:::
-    :::column:::
-        :::image type="icon" source="./media/webview-reasons-incremental-adoption-small.msft.png":::  
-        **Incremental adoption**  
-        Add web components piece-by-piece to your app.
-    :::column-end:::
-:::row-end:::
+*  **Rapid innovation**.  Web development allows for faster deployment and iteration.
 
-<!-- In the above table, keep two trailing spaces after each image line and after each heading line, to keep card elements tight but not concatenated. -->
+*  **Windows 7, 8, and 10 support**.  Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.
+
+*  **Native capabilities**.  Access the full set of Native APIs.
+
+*  **Code-sharing**.  Add web code to your codebase allows for increased reuse across multiple platforms.
+
+*  **Microsoft support**.  Microsoft provides support and adds new feature requests when WebView2 releases at General Availability (GA).
+
+*  **Evergreen distribution**.  Rely on an up-to-date version of Chromium with regular platform updates and security patches.
+
+*  **Fixed Version distribution**.  Optionally package a specific version of the Chromium bits in your app.
+
+*  **Incremental adoption**.  Add web components piece-by-piece to your app.
 
 
 <!-- ====================================================================== -->
