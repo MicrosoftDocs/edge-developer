@@ -514,17 +514,17 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 <!-- ====================================================================== -->
 ## Search results data for product improvement 
-In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, we collect and use data from your web searches in Microsoft Edge. We'll use your search results activity to make everyone’s web and search experience better, more relevant, and useful. The data we collect is from searches you do across the web, including sites Microsoft doesn’t own or operate.
+In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone’s web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn’t own or operate.
 
 * Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
 
-* We don't use any information we collect to personalize or provide ads to you. 
+* Microsoft doesn't use any information we collect to personalize or provide ads to you. 
 
-* The data we collect is never associated with your account or your device. 
+* The data Microsoft collects is never associated with your account or your device. 
 
 * This data collection and setting is not available on managed devices. 
 
-The data we collect may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. We may also collect demographic data. 
+The data Microsoft collects may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. Microsoft may also collect demographic data. 
 
 To manage the collection and use of your search results activity for product improvement, do the following: 
 
@@ -536,7 +536,7 @@ To manage the collection and use of your search results activity for product imp
 
 1. Under **Search and service improvement**, turn on or off the setting for **Help improve Microsoft products by sending the results from searches on the web**. 
 
-If you stop sharing your data, we may continue to use previously collected search results data, but it will still be de-identified and not associated with you or your device.
+If you stop sharing your data, Microsoft may continue to use previously collected search results data, but it will still be de-identified and not associated with you or your device.
 
 
 <!-- ====================================================================== -->
