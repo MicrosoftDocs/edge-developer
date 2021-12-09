@@ -90,33 +90,23 @@ Chromium issue: [#1047356](https://crbug.com/1047356)
 
 In Microsoft Edge 85 or earlier, the formatting of a copied `console.table` was lost.  If you copied the output from the [table](../../../console/api.md#table) Console API, and pasted it, only the text of the table was kept.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta.msft.png" alt-text="table Console API output in Microsoft Edge 85 or earlier" lightbox="../../media/2020/08/console-table-beta.msft.png":::
-         `table` Console API output in Microsoft Edge 85 or earlier
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="table Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
-         `table` Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+`table` Console API output in Microsoft Edge 85 or earlier:
+
+:::image type="content" source="../../media/2020/08/console-table-beta.msft.png" alt-text="table Console API output in Microsoft Edge 85 or earlier" lightbox="../../media/2020/08/console-table-beta.msft.png":::
+
+`table` Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code:
+
+:::image type="content" source="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png" alt-text="table Console API output from Microsoft Edge 85 or earlier pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-beta-paste-visual-studio-code.msft.png":::
 
 In Microsoft Edge 86 or later, when you copy a table from the **Console**, the formatting is now preserved.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary.msft.png" alt-text="table Console API output in Microsoft Edge 86 or later" lightbox="../../media/2020/08/console-table-canary.msft.png":::
-         `table` Console API output in Microsoft Edge 86 or later
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="table Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
-         `table` Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+`table` Console API output in Microsoft Edge 86 or later:
+
+:::image type="content" source="../../media/2020/08/console-table-canary.msft.png" alt-text="table Console API output in Microsoft Edge 86 or later" lightbox="../../media/2020/08/console-table-canary.msft.png":::
+
+`table` Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code:
+
+:::image type="content" source="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png" alt-text="table Console API output from Microsoft Edge 86 or later pasted into Visual Studio Code" lightbox="../../media/2020/08/console-table-canary-paste-visual-studio-code.msft.png":::
 
 Chromium issue: [#1115011](https://crbug.com/1115011)
 
@@ -145,18 +135,13 @@ Chromium issue: [#1094406](https://crbug.com/1094406)
 
 Your feedback and internal discoveries uncovered which text strings used in the Microsoft Edge feedback should remain untranslated or create confusion when translated.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
-         Microsoft Edge DevTools 85 and earlier in Traditional Chinese
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
-         Microsoft Edge DevTools 86  or later in Traditional Chinese
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Microsoft Edge DevTools 85 and earlier in Traditional Chinese:
+
+:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-stable.msft.png" alt-text="Microsoft Edge DevTools in Traditional Chinese" lightbox="localization-improvements-chinese-complex-stable.msft.png":::
+
+Microsoft Edge DevTools 86 or later in Traditional Chinese:
+
+:::image type="content" source="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png" alt-text="Microsoft Edge DevTools in Japanese" lightbox="../../media/2020/08/localization-improvements-chinese-complex-canary.msft.png":::
 
 To meet your translation needs, the Microsoft Edge DevTools team is focused on improving translation quality.
 
@@ -317,18 +302,13 @@ DevTools now recalculate and display a summary of coverage information dynamical
 
 In the first of the following figures, the summary initially displays `344 kB of 1.7 MB (20%) used so far.  1.4 MB unused.` and in the second of the following figures, the summary displays `26.8 kB of 408 kB (7%) used so far.  381 kB unused.` after CSS filtering is applied.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Coverage summary" lightbox="../../media/2020/08/coverage-compare.msft.png":::
-         Coverage summary
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Coverage summary for filtered items" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
-         Coverage summary for filtered items
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Coverage summary:
+
+:::image type="content" source="../../media/2020/08/coverage-compare.msft.png" alt-text="Coverage summary" lightbox="../../media/2020/08/coverage-compare.msft.png":::
+
+Coverage summary for filtered items:
+
+:::image type="content" source="../../media/2020/08/coverage-compare-css-filter.msft.png" alt-text="Coverage summary for filtered items" lightbox="../../media/2020/08/coverage-compare-css-filter.msft.png":::
 
 Chromium issue: [#1061385](https://crbug.com/1090802)
 
@@ -435,18 +415,13 @@ The following text boxes now have **Clear** buttons.
 
 Choose the **Clear** button to remove any inputted text.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Clear buttons in the Elements panels" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
-         Clear buttons in the **Elements** tools
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Clear buttons in the Network panels" lightbox="../../media/2020/08/clear-button-network.msft.png":::
-         Clear buttons in the  **Network** tools
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+**Clear** buttons in the **Elements** tools:
+
+:::image type="complex" source="../../media/2020/08/clear-button-elements.msft.png" alt-text="Clear buttons in the Elements panels" lightbox="../../media/2020/08/clear-button-elements.msft.png":::
+
+**Clear** buttons in the  **Network** tools:
+
+:::image type="complex" source="../../media/2020/08/clear-button-network.msft.png" alt-text="Clear buttons in the Network panels" lightbox="../../media/2020/08/clear-button-network.msft.png":::
 
 Chromium issue: [#1067184](https://crbug.com/1067184)
 

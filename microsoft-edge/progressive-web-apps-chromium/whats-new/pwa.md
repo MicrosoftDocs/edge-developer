@@ -103,7 +103,7 @@ Microsoft Edge now includes a referrer header with the request for the first nav
 
 This feature was first introduced in Microsoft Edge version 91, and we shipped a bug fix in Microsoft Edge version 93.
 
-Learn more in [Publish your Progressive Web App to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-store-installed-pwa).
+Learn more in [Publish a Progressive Web App to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store).
 
 ### Window Controls Overlay origin trials
 

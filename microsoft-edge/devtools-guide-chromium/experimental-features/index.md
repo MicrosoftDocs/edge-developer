@@ -1,9 +1,9 @@
 ---
-description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
+description: The latest experimental features in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/22/2021
+ms.date: 11/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, experiment
@@ -281,13 +281,13 @@ To use the new visual **Font Editor**:
 
 1.  Select the **Font Editor** icon.
 
-For more information about the new visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
+For more information about the new visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
 :::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
    The visual **Font Editor** pane is highlighted
 :::image-end:::
 
-For more information, see [Edit CSS font styles and settings in the Styles pane in DevTools](../inspect-styles/edit-fonts.md).
+For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
 
 <!-- ====================================================================== -->
@@ -413,13 +413,13 @@ Enable this experiment to view tooltips for all the different tools and panes in
 
 <!-- maintainers: see notes about this experiment, in the list of experiments which are turned on by default, at top of article -->
 
-Memory leaks in web applications are a difficult to locate and repair.
+Memory leaks in web applications can be difficult to locate and repair.
 
 The new **Detached Elements** panel in Microsoft Edge DevTools helps investigate and resolve a common source of memory leaks.
 
 Memory leaks occur when the JavaScript code of the application retains an increasing number of objects in memory. The JavaScript code should release these objects so that the memory space can be reused by the browser.
 
-<!-- todo: add more info, probably with an image.  See the Detached Elements tutorial (in progress). -->
+For more information, see [Debug DOM memory leaks with the Detached Elements tool](../memory-problems/dom-leaks.md)
 
 
 <!-- ====================================================================== -->

@@ -1,22 +1,20 @@
 ---
-description: How to log messages and run JavaScript in the Microsoft Edge DevTools Console.
 title: Log messages in the Console tool
+description: How to log messages and run JavaScript in the Microsoft Edge DevTools Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 04/13/2021
 ---
 # Log messages in the Console tool
 
-Ever since browsers started to offer developer tools, the **Console** is a favorite.  The reason is simple.
+Ever since browsers started to offer developer tools, the **Console** is a favorite.  The reason is simple: in most programming courses, you learn to output some kind of print command to gain insights about what happens.
 
-*   In most programming courses, you learn to output some kind of print command to gain insights about what happens.
+Before DevTools, you were limited to an `alert()` or `document.write()` statement to debug in the browser.
 
-Before the DevTools, you were limited to an `alert()` or `document.write()` statement to debug in the browser.
-
-If you want to log information in the **Console**, lots of methods are available to you.  Review all of available methods in the [API reference](api.md).  The following code snippet lists the most important methods.
+To log information in the **Console**, many methods are available, listed in [Console API reference](api.md).  The following code lists the most important methods:
 
 ```javascript
 // prints the text to the console as  a log message
@@ -29,11 +27,11 @@ console.error('This is an error')
 console.warn('This is a warning')
 ```
 
-Copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html).  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
+Copy and paste the previous code into the **Console**, or see [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html).  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
 
-:::image type="complex" source="../media/console-log-examples.msft.png" alt-text="The Console displays the messages from different log APIs" lightbox="../media/console-log-examples.msft.png":::
-   The **Console** displays the messages from different log APIs
-:::image-end:::
+The **Console** displays the messages from different log APIs:
+
+:::image type="content" source="../media/console-log-examples.msft.png" alt-text="The Console displays the messages from different log APIs." lightbox="../media/console-log-examples.msft.png":::
 
 It is, however, still a good idea to use `info()` and `log()` for different log tasks as that allows you to [filter using type in the Console](console-filters.md).
 
@@ -41,7 +39,7 @@ It is, however, still a good idea to use `info()` and `log()` for different log 
 <!-- ====================================================================== -->
 ## Different types of logs
 
-Instead of log text you may send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code snippet in the **Console** or to display the results, navigate to [Console messages examples: logging different types](https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html).
+Instead of log text, you can send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code into the **Console**.  Or, to display formatted results, see [Console messages examples: logging different types](https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html).
 
 ```javascript
 let x = 2;
@@ -60,24 +58,19 @@ console.log(w3techs);
 
 Each result is displayed in a different way.  Use the triangles to toggle the information and analyze each one in more detail.  The curly brace characters `{}` around the `x` variable are a nice little trick to avoid lots of log messages where you only get a value but you don't know where it originated.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../media/console-log-types.msft.png" alt-text="Log variables of different types in the console" lightbox="../media/console-log-types.msft.png":::
-         Log variables of different types in the **Console**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/console-log-types-expanded.msft.png" alt-text="Log variables of different types in the console with expanded extra information" lightbox="../media/console-log-types-expanded.msft.png":::
-         Log variables of different types in the **Console** with expanded extra information
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Log variables of different types in the **Console**:
+
+:::image type="content" source="../media/console-log-types.msft.png" alt-text="Log variables of different types in the console." lightbox="../media/console-log-types.msft.png":::
+
+Log variables of different types in the **Console** with expanded extra information:
+
+:::image type="content" source="../media/console-log-types-expanded.msft.png" alt-text="Log variables of different types in the console with expanded extra information." lightbox="../media/console-log-types-expanded.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Format and convert values with specifiers
 
-A special feature of all the log methods is that you may use specifiers in your log message.  Specifiers are part of a log message and start with a percentage sign (`%`) character and allow you to log certain values in different formats and even convert each.
+A special feature of all the log methods is that you can use specifiers in your log message.  Specifiers are part of a log message and start with a percentage sign (`%`) character and allow you to log certain values in different formats and even convert each.
 
 *   `%s` logs as Strings
 *   `%i` or `%d` logs as Integers
@@ -101,26 +94,21 @@ console.log('%O', document.body);
 console.log('%cImportant message follows','color:red;font-size:40px');
 ```
 
-The first example displays that the order of replacement of specifiers is the parameter order following the string.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html).  Expand the information in the log to display the huge difference between `%o` and `%O`.
+The first example displays that the order of replacement of specifiers is the parameter order following the string.  To display the results, copy and paste the previous code in the **Console** or see [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../media/console-log-specifiers.msft.png" alt-text="Use specifiers to log and convert values" lightbox="../media/console-log-specifiers.msft.png":::
-         Use specifiers to log and convert values
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/console-log-specifiers-expanded.msft.png" alt-text="Expand the results displays the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body" lightbox="../media/console-log-specifiers-expanded.msft.png":::
-        Expand the results displays the difference between the `%O` and `%o` specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Use specifiers to log and convert values:
+
+:::image type="content" source="../media/console-log-specifiers.msft.png" alt-text="Use specifiers to log and convert values." lightbox="../media/console-log-specifiers.msft.png":::
+
+Expand the information in the log to display the huge difference between `%o` and `%O`.  Expanding the results displays the difference between the `%O` and `%o` specifier.  The body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body:
+
+:::image type="content" source="../media/console-log-specifiers-expanded.msft.png" alt-text="Expand the results displays the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body." lightbox="../media/console-log-specifiers-expanded.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Group log messages
 
-If you log much information, you may use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups may be nested and named to make the data much easier to understand.
+If you log much information, you can use the `group` and `groupCollapsed` methods to display log messages as expandable and collapsible groups in the **Console**.  Groups can be nested and named to make the data much easier to understand.
 
 ```javascript
 console.group("Passengers: Heart of Gold");
@@ -145,26 +133,21 @@ for (tech in technologies) {
 }
 ```
 
-Also in the second example, the group names may be optionally generated.  To display the results, copy and paste the previous code snippet in the **Console** or navigate to [Console messages examples: grouping logs](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html).  You may expand and collapse each of the sections.
+Also in the second example, the group names can be optionally generated.  To display the results, copy and paste the previous code in the **Console** or see [Console messages examples: grouping logs](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html).  You can expand and collapse each of the sections.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../media/console-log-groups.msft.png" alt-text="Log lots of values as groups" lightbox="../media/console-log-groups.msft.png":::
-         Log lots of values as groups
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../media/console-log-groups-expanded.msft.png" alt-text="Each group may be expanded and collapsed" lightbox="../media/console-log-groups-expanded.msft.png":::
-        Each group may be expanded and collapsed
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Log lots of values as groups:
+
+:::image type="content" source="../media/console-log-groups.msft.png" alt-text="Log lots of values as groups." lightbox="../media/console-log-groups.msft.png":::
+
+Each group can be expanded and collapsed:
+
+:::image type="content" source="../media/console-log-groups-expanded.msft.png" alt-text="Each group can be expanded and collapsed." lightbox="../media/console-log-groups-expanded.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Display complex data as tables
 
-The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you may sort using different headers.  A sorted table makes it much easier for people to review the information.  To display it in an example, navigate to [Console messages examples: Using table](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html).
+The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you can sort using different headers.  A sorted table makes it much easier for people to review the information.  To display it in an example, see [Console messages examples: Using table](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html).
 
 ```javascript
 let technologies = {
@@ -184,15 +167,15 @@ console.log(bodyDimensions);
 console.table(bodyDimensions);
 ```
 
-:::image type="complex" source="../media/console-log-table.msft.png" alt-text="Display data with console.table to make it much easier to read" lightbox="../media/console-log-table.msft.png":::
-   Display data with `console.table` to make it much easier to read
-:::image-end:::
+Display data with `console.table` to make it much easier to read:
+
+:::image type="content" source="../media/console-log-table.msft.png" alt-text="Display data with console.table to make it much easier to read." lightbox="../media/console-log-table.msft.png":::
 
 The output of `console.table` has a table format not only when it displays in the **Console**.    For example, if you copy and paste a table into Excel, Word, or any other product that supports tabular data, the structure remains intact.
 
 <!--  The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  -->
 
-If the data has named parameters, the `console.table()` method also allows you to specify an `Array` of columns for each property to display as a second parameter.  The following example displays how to specify an array of columns that is more readable.
+If the data has named parameters, the `console.table()` method also allows you to specify an `Array` of columns for each property to display as a second parameter.  The following example shows how to specify an array of columns that is more readable:
 
 ```javascript
 // get all the h1, p and script elements
@@ -203,8 +186,8 @@ console.table(contentElements)
 console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 ```
 
-:::image type="complex" source="../media/console-log-table-filtered.msft.png" alt-text="Filter information that console.table displays and provide an array of properties to display as a second parameter" lightbox="../media/console-log-table-filtered.msft.png":::
-   Filter information that `console.table` displays and provide an array of properties to display as a second parameter
-:::image-end:::
+Filter information that `console.table` displays, and provide an array of properties to display as a second parameter:
+
+:::image type="content" source="../media/console-log-table-filtered.msft.png" alt-text="Filter information that console.table displays and provide an array of properties to display as a second parameter." lightbox="../media/console-log-table-filtered.msft.png":::
 
 You may be tempted to use the log methods as your main means to debug webpages, because log methods are simple to use.  Consider the result of any `console.log()` request.  Live products shouldn't use any log that was used to debug.  It may reveal inside information to people.  And the noise created in the **Console** is overwhelming.  When you use [Breakpoint Debugging](../javascript/breakpoints.md) or [Live Expressions](live-expressions.md), you may find that your workflows are more effective and you get better results.
