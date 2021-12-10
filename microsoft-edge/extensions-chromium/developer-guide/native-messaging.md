@@ -67,92 +67,17 @@ The browser reads and validates the native messaging host manifest.  The browser
 }
 ```
 
-The host manifest file must be a valid JSON file that contains the following keys.
+The host manifest file must be a valid JSON file that contains the following keys:
 
-:::row:::
-   :::column span="1":::
-      **Key**
-   :::column-end:::
-   :::column span="3":::
-      **Details**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
+| Key | Details |
+| --- | --- |
+| `name` | Specifies the name of the native messaging host.  Clients pass the string to `runtime.connectNative` or `runtime.sendNativeMessage`.<br/>  The value must only contain lowercase alphanumeric characters, underscores, and dots.<br/> The value must not start or end with a dot, and a dot must not be followed by another dot. |
+| `description` | Describes the app. |
+| `path` | Specifies the path to the native messaging host binary.<br/> On Windows devices, you may use relative paths to the directory that contains the manifest file.<br/>  On macOS and Linux, the path must be absolute.<br/>  The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory (`C:\App\`). |
+| `type` | Specifies the type of the interface used to communicate with the native messaging host.  The value instructs Microsoft Edge to use `stdin` and `stdout` to communicate with the host.  The only acceptable value is `stdio`. |
+| `allowed_origins` | Specifies the list of extensions that have access to the native messaging host.  To turn on your app to identify and communicate with an extension, in your native messaging host manifest file, set the following value:<br/> `"allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]`|
 
-      `name`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the name of the native messaging host.  Clients pass the string to `runtime.connectNative` or `runtime.sendNativeMessage`.
-
-      *   The value must only contain lowercase alphanumeric characters, underscores, and dots.
-      *   The value must not start or end with a dot, and a dot must not be followed by another dot.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `description`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Describes the app.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `path`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the path to the native messaging host binary.
-
-      *   On Windows devices, you may use relative paths to the directory that contains the manifest file.
-      *   On macOS and Linux, the path must be absolute.
-
-      The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory (`C:\App\`).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `type`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the type of the interface used to communicate with the native messaging host.  The value instructs Microsoft Edge to use `stdin` and `stdout` to communicate with the host.
-      The only acceptable value is `stdio`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `allowed_origins`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the list of extensions that have access to the native messaging host.  To turn on your app to identify and communicate with an extension, in your native messaging host manifest file set the following value.
-
-      ```json
-      "allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]
-      ```
-   :::column-end:::
-:::row-end:::
-
-Sideload your extension to test native messaging with the host.
-To sideload your extension during development and retrieve `microsoft_catalog_extension_id`, complete the following actions.
+Sideload your extension to test native messaging with the host.  To sideload your extension during development and retrieve `microsoft_catalog_extension_id`:
 
 1.  Navigate to `edge://extensions`, and then turn on the Developer mode toggle button.
 1.  Choose **Load unpacked**, and then choose your extension package to sideload.

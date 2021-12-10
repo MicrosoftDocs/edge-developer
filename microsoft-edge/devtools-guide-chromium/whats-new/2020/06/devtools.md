@@ -189,32 +189,13 @@ Chromium issue [#1096008](https://crbug.com/1096008)
 
 ### Support for new JavaScript features
 
-DevTools now has better support for some of the latest JavaScript language features.
+DevTools now has better support for some of the latest JavaScript language features:
 
-:::row:::
-   :::column span="1":::
-      [Optional chaining](https://v8.dev/features/optional-chaining) syntax autocompletion
-   :::column-end:::
-   :::column span="2":::
-      Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Syntax highlighting for [private fields](https://v8.dev/features/class-fields#private-class-fields)
-   :::column-end:::
-   :::column span="2":::
-      private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Syntax highlighting for [Nullish coalescing operator](https://v8.dev/features/nullish-coalescing)
-   :::column-end:::
-   :::column span="2":::
-      DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.
-   :::column-end:::
-:::row-end:::
+* [Optional chaining](https://v8.dev/features/optional-chaining) syntax autocompletion.  Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.
+
+*  Syntax highlighting for [private fields](https://v8.dev/features/class-fields#private-class-fields).  Private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.
+
+*  Syntax highlighting for [Nullish coalescing operator](https://v8.dev/features/nullish-coalescing).  DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.
 
 Chromium issues [#1073903](https://crbug.com/1073903), [#1083214](https://crbug.com/1083214), [#1083797](https://crbug.com/1083797)
 

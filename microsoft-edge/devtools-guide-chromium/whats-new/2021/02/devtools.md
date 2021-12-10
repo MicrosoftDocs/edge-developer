@@ -85,26 +85,13 @@ For more information about customizing and editing shortcuts, navigate to [Custo
 
 The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the **DevTools Console** under **Output** of Microsoft Visual Studio Code.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, navigate to [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You may file issues and contribute to the extension on the [vscode-edge-devtools](https://github.com/microsoft/vscode-edge-devtools) GitHub repo.
 
-:::row:::
-   :::column span="":::
-      The following figure displays messages from an example webpage logged in the **Console** tool in Microsoft Edge.
-   :::column-end:::
-   :::column span="":::
-      The following figure displays the same messages from the example webpage logged in the **DevTools Console** under **Output** of Microsoft Visual Studio Code.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Display a message in Console in Microsoft Edge DevTools" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
-         Display a message in Console in Microsoft Edge DevTools
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Display the same message in the DevTools Console under Output of Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
-         Display the same message in the DevTools Console under Output of Microsoft Visual Studio Code
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+The following figure displays messages from an example webpage logged in the **Console** tool in Microsoft Edge:
+
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Displaying a message in Console in Microsoft Edge DevTools" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
+
+The following figure displays the same messages from the example webpage logged in the **DevTools Console** under **Output** of Microsoft Visual Studio Code:
+
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Displaying the same message in the DevTools Console under Output of Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -115,26 +102,13 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 
 DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon displays next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, choose the `flex` icon.  To review the history of this feature in the Chromium open-source project, navigate to Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
 
-:::row:::
-   :::column span="":::
-      To open the **Flexbox** editor, navigate to the **Styles** pane and choose the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.
-   :::column-end:::
-   :::column span="":::
-      In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You may toggle the overlay of each element.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS flexbox debugging tools" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
-         CSS flexbox debugging tools
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Flexbox section in the Layout pane" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
-         **Flexbox** section in the **Layout** pane
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+To open the **Flexbox** editor, navigate to the **Styles** pane and choose the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.
+
+:::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS flexbox debugging tools" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
+
+In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You may toggle the overlay of each element.
+
+:::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Flexbox section in the Layout pane" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -147,18 +121,13 @@ Previously, you were not able to expand or collapse the chain of requests using 
 
 In Microsoft Edge version 90, you may expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, navigate to [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).  To review the history of this feature in the Chromium open-source project, navigate to Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Choose a Network request and choose the Initiator pane" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
-         Choose a Network request and choose the **Initiator** pane
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expand or collapse the request initiator chain and follow the highlighted row" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
-         Expand or collapse the request initiator chain and follow the highlighted row
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Choose a Network request and choose the **Initiator** pane:
+
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Choose a Network request and choose the Initiator pane" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+
+Expand or collapse the request initiator chain and follow the highlighted row:
+
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expand or collapse the request initiator chain and follow the highlighted row" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -169,18 +138,13 @@ In Microsoft Edge version 90, you may expand or collapse the chain of requests u
 
 While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown are not available.  Previously, the **Log Levels** dropdown highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown no longer highlights when you hover on it while a filter from the **Console Sidebar** is chosen.  To learn more about filtering in the **Console**, navigate to [Filter Messages](../../../console/reference.md#filter-messages).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Previously, if you open the Console sidebar and hover on Default levels it was highlighted" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
-         Previously, if you open the **Console sidebar** and hover on **Default levels** it was highlighted
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="Starting in Microsoft Edge 90, if you choose the Console sidebar and hover on Default levels, it does not highlight" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
-         Starting in Microsoft Edge 90, if you choose the **Console sidebar** and hover on **Default levels**, it does not highlight
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Previously, if you open the **Console sidebar** and hover on **Default levels**, it was highlighted:
+
+:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Previously, if you open the Console sidebar and hover on Default levels it was highlighted" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
+
+Starting in Microsoft Edge 90, if you choose the **Console sidebar** and hover on **Default levels**, it doesn't highlight:
+
+:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="Starting in Microsoft Edge 90, if you choose the Console sidebar and hover on Default levels, it does not highlight" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -244,18 +208,13 @@ The new **Remote Address Space** column displays the network IP address space of
 
 The Requests table now displays a new column with the header named **Remote Address Space**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1128885](https://crbug.com/1128885).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="In the contextual menu, choose Remote Address Space" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
-         In the contextual menu, choose the **Remote Address Space**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="The Requests table now displays the Remote Address Space column" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
-         The Requests table now displays the **Remote Address Space** column
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+In the contextual menu, choose the **Remote Address Space**:
+
+:::image type="complex" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="In the contextual menu, choose Remote Address Space" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+
+The Requests table now displays the **Remote Address Space** column:
+
+:::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="The Requests table now displays the Remote Address Space column" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
 
 ### Display allowed and disallowed features in the Frame details view
 
@@ -293,18 +252,13 @@ After you turn on this experiment and reload the DevTools, choose one of the fol
 
 To turn on the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [887173](https://crbug.com/887173).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Display the DOM Tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
-         Display the **DOM Tree view**
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Display the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
-         Display the **Full Accessibility Tree view**
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Displaying the **DOM Tree view**:
+
+:::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Displaying the DOM Tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+
+Displaying the **Full Accessibility Tree view**:
+
+:::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Displaying the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
 
 
 <!-- ====================================================================== -->

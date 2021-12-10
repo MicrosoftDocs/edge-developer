@@ -200,35 +200,30 @@ In Visual Studio Code, complete the following actions to debug your code.
 
     1.  Add `trace` parameter.
 
-        :::row:::
-           :::column span="":::
-              ```json
-                "name": "Hello debugging world",
-                "type": "pwa-msedge",
-                "port": 9222,
-                "request": "attach",
-                "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
-                "env": {
-                "Path": "%path%;e:/path/to/your/build/location; "
-                },
-                "useWebView": true
-                ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
-              ```
+        ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222,
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+        "env": {
+        "Path": "%path%;e:/path/to/your/build/location; "
+        },
+        "useWebView": true
+        ,"trace": true  // Turn on debug tracing, and save the output to a log file.
+        ```
 
-              :::image type="complex" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
-                 Save debug output to a log file
-              :::image-end:::
-           :::column-end:::
-           :::column span="":::
-              ```json
-              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
-              ```
+        Saving debug output to a log file:
 
-              :::image type="complex" source="./media/verbose.png" alt-text=" Verbose Output" lightbox="./media/verbose.png":::
-                 Visual Studio Code Debug Output with verbose tracing turned on
-              :::image-end:::
-           :::column-end:::
-        :::row-end:::
+        :::image type="content" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
+            
+        ```json
+        ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
+        ```
+
+        Visual Studio Code Debug Output with verbose tracing turned on:
+
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on" lightbox="./media/verbose.png":::
 
 *   Debug Office Add-ins.
 
