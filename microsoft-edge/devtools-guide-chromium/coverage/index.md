@@ -50,10 +50,8 @@ Shipping unused JavaScript or CSS is a common problem in web development.  For e
 
 This stylesheet does not just include the code for the button component.  It contains the CSS for **all** of the Bootstrap components.  But you are not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it does not need.  This extra CSS is a problem for the following reasons.
 
-*   The extra code slows down your page load.  <!--Navigate to [Render-Blocking CSS][render].  -->
+*   The extra code slows down your page load.  <!--Navigate to [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css).  -->
 *   If a user accesses the page on a mobile device, the extra code uses up their cellular data.
-
-<!--[render]: /web/fundamentals/performance/critical-rendering-path/render-blocking-css  -->
 
 
 <!-- ====================================================================== -->
@@ -93,10 +91,6 @@ The table in the **Coverage** panel displays the resources that were analyzed, a
 
 
 <!-- ====================================================================== -->
-
-
-
-
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).

@@ -240,7 +240,7 @@ You can select from a list of different devices to emulate in the screencast nex
 
 :::image type="content" source="./media/edge-devtools-for-vscode-device-list.msft.png" alt-text="The list of devices that can be emulated open in the screencast of the extension" lightbox="./media/edge-devtools-for-vscode-device-list.msft.png":::
 
-If the device you choose to emulate is a touch device, the screencast automatically switches to the touchscreen mode. You can rotate the orientation of the simulated device by clicking the button next to the list.
+If the device you choose to emulate is a touch device, the screencast automatically switches to the touchscreen mode. You can rotate the orientation of the simulated device by clicking the button next to the list:
 
 :::image type="content" source="./media/edge-devtools-for-vscode-simulated-iphone.msft.png" alt-text="The screencast showing the current document in an emulated iPhone 5 in the correct size and with emulated touch interface." lightbox="./media/edge-devtools-for-vscode-simulated-iphone.msft.png":::
 
@@ -248,11 +248,11 @@ If the device you choose to emulate is a touch device, the screencast automatica
 <!-- ====================================================================== -->
 ## Inline and live issue analysis
 
-Issues in your source code are highlighted with wavy underline. You can inspect the issue and get detailed information about what the problem is, how to fix it, and where to find more information.
+Issues in your source code are highlighted with wavy underline. You can inspect the issue and get detailed information about what the problem is, how to fix it, and where to find more information.  To inspect the issue, select the code that has the wavy underline:
 
-:::image type="content" source="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png" alt-text="An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information" lightbox="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png":::
+:::image type="content" source="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png" alt-text="An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information." lightbox="./media/edge-devtools-for-vscode-inline-issue-reporting.msft.png":::
 
-To see all the issues in the file, select the **View Issue** option.
+To see all the issues in the file, select **View Problem**.
 
 :::image type="content" source="./media/edge-devtools-for-vscode-navigating-issues.msft.png" alt-text="A highlighted issue in the source code with a navigation bar explaining the problem and buttons to move to the next and previous issues." lightbox="./media/edge-devtools-for-vscode-navigating-issues.msft.png":::
 

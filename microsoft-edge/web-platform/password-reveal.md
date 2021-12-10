@@ -10,24 +10,15 @@ keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 ---
 # Customize the password reveal button
 
-The `password` input type in Microsoft Edge includes a **password reveal** control.  A user may choose the **password input** button to reveal the **password** field.  The revealed **password** field helps the user verify if the password is correctly.  After a user has entered text in the **password** field, a user may choose the **password reveal** button or select `Alt`+`F8` to toggle visibility of the input.
+The `password` input type in Microsoft Edge includes a **password reveal** control.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.
 
-:::row:::
-   :::column span="":::
-      A **password** field with dots hiding the characters entered by a user.  The **password reveal** button appears to the right of the **password** field.
+A **password** field with dots hiding the characters entered by a user.  The **password reveal** button appears to the right of the **password** field.  The eye-shaped icon appears next to the dots that hide the password text:
 
-      :::image type="complex" source="./media/mdn-demo-password-reveal-off.msft.png" alt-text="The eye-shaped icon appears next to the dots that hide the password text" lightbox="./media/mdn-demo-password-reveal-off.msft.png":::
-         The eye-shaped icon appears next to the dots that hide the password text
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      Toggle the **password reveal** button to change the eye icon to an eye icon with a slash through it, and to reveal the original password text.
+:::image type="complex" source="./media/mdn-demo-password-reveal-off.msft.png" alt-text="The eye-shaped icon appears next to the dots that hide the password text" lightbox="./media/mdn-demo-password-reveal-off.msft.png":::
 
-      :::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="The The eye-shaped icon has a slash on it and the original password text is displayed" lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
-         The The eye-shaped icon has a slash on it and the original password text is displayed
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Toggle the **password reveal** button to change the eye icon to an eye icon with a slash through it, and to reveal the original password text.  The eye-shaped icon has a slash on it and the original password text is displayed:
+
+:::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="The The eye-shaped icon has a slash on it and the original password text is displayed" lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
 
 By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
 

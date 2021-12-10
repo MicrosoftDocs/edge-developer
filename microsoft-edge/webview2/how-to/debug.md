@@ -15,6 +15,7 @@ The goal of the Microsoft Edge WebView2 control is to combine the best of both t
 
 
 <!-- ====================================================================== -->
+
 ## [Microsoft Edge DevTools](#tab/devtools)
 
 Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
@@ -31,6 +32,7 @@ For more information, navigate to [DevTools overview](../index.md).
 
 
 <!-- ====================================================================== -->
+
 ## [Visual Studio](#tab/visualstudio)
 
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
@@ -99,6 +101,7 @@ Complete the following actions to debug your WebView2 app.
 
 
 <!-- ====================================================================== -->
+
 ## [Visual Studio Code](#tab/visualstudiocode)
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->
@@ -197,35 +200,30 @@ In Visual Studio Code, complete the following actions to debug your code.
 
     1.  Add `trace` parameter.
 
-        :::row:::
-           :::column span="":::
-              ```json
-                "name": "Hello debugging world",
-                "type": "pwa-msedge",
-                "port": 9222,
-                "request": "attach",
-                "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
-                "env": {
-                "Path": "%path%;e:/path/to/your/build/location; "
-                },
-                "useWebView": true
-                ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
-              ```
+        ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222,
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+        "env": {
+        "Path": "%path%;e:/path/to/your/build/location; "
+        },
+        "useWebView": true
+        ,"trace": true  // Turn on debug tracing, and save the output to a log file.
+        ```
 
-              :::image type="complex" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
-                 Save debug output to a log file
-              :::image-end:::
-           :::column-end:::
-           :::column span="":::
-              ```json
-              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
-              ```
+        Saving debug output to a log file:
 
-              :::image type="complex" source="./media/verbose.png" alt-text=" Verbose Output" lightbox="./media/verbose.png":::
-                 Visual Studio Code Debug Output with verbose tracing turned on
-              :::image-end:::
-           :::column-end:::
-        :::row-end:::
+        :::image type="content" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
+            
+        ```json
+        ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
+        ```
+
+        Visual Studio Code Debug Output with verbose tracing turned on:
+
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on" lightbox="./media/verbose.png":::
 
 *   Debug Office Add-ins.
 

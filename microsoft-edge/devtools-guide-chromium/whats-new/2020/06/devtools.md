@@ -42,7 +42,7 @@ The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team 
 :::image-end:::
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and select the checkbox next to **Enable new CSS Grid debugging features**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**.
 >
 > To try out the experiment with a sample, navigate to [CSS Grid planner example](https://codepen.io/hxlnt/full/YzwBzKM).
 
@@ -72,7 +72,7 @@ You may also use the **Network Console** to create and send HTTP requests direct
 > To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), navigate to [moving tools between panels](#move-tools-between-panels).
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable Network Console**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable Network Console**.
 >
 > Open the [Network Log](../../../network/index.md#log-network-activity), open the contextual menu (right-click), and choose **Edit and Replay**.
 
@@ -107,7 +107,7 @@ Chromium issue [#1066579](https://crbug.com/1066579)
 :::image-end:::
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable webhint**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable webhint**.
 >
 > Open the [Issues](../../../issues/index.md) panel to display feedback from webhint.
 
@@ -126,7 +126,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 :::image-end:::
 
 > [!NOTE]
-> To enable the experiment, navigate to [Turning on experimental features](../../../experimental-features/index.md#turning-on-experimental-features) and choose the checkbox next to **Enable support to move tabs between panels**.
+> To enable the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable support to move tabs between panels**.
 
 Chromium issue [#897944](https://crbug.com/897944)
 
@@ -180,7 +180,7 @@ Chromium issue [#772558](https://crbug.com/772558)
 
 #### First Meaningful Paint deprecation
 
-First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint][WebDevFirstMeaningfulPaint].  -->
+First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, navigate to [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
 
 <!--todo: add Largest Contentful Paint when section available  -->
 <!--todo: add First Meaningful Paint link and note when available  -->
@@ -189,32 +189,13 @@ Chromium issue [#1096008](https://crbug.com/1096008)
 
 ### Support for new JavaScript features
 
-DevTools now has better support for some of the latest JavaScript language features.
+DevTools now has better support for some of the latest JavaScript language features:
 
-:::row:::
-   :::column span="1":::
-      [Optional chaining](https://v8.dev/features/optional-chaining) syntax autocompletion
-   :::column-end:::
-   :::column span="2":::
-      Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Syntax highlighting for [private fields](https://v8.dev/features/class-fields#private-class-fields)
-   :::column-end:::
-   :::column span="2":::
-      private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      Syntax highlighting for [Nullish coalescing operator](https://v8.dev/features/nullish-coalescing)
-   :::column-end:::
-   :::column span="2":::
-      DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.
-   :::column-end:::
-:::row-end:::
+* [Optional chaining](https://v8.dev/features/optional-chaining) syntax autocompletion.  Property auto-completion in the **Console** now supports optional chaining syntax, for example,  `name?.` now works in addition to `name.` and `name[`.
+
+*  Syntax highlighting for [private fields](https://v8.dev/features/class-fields#private-class-fields).  Private class fields are now properly syntax-highlighted and pretty-printed in the **Sources** panel.
+
+*  Syntax highlighting for [Nullish coalescing operator](https://v8.dev/features/nullish-coalescing).  DevTools now properly pretty-prints the nullish coalescing operator in the **Sources** panel.
 
 Chromium issues [#1073903](https://crbug.com/1073903), [#1083214](https://crbug.com/1083214), [#1083797](https://crbug.com/1083797)
 
@@ -329,24 +310,11 @@ Chromium issue [#1041830](https://crbug.com/1041830)
 If you are on Windows or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download/) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
-<!--[WebDevLighthouseWhatsNew60]: https://web.dev/lighthouse-whats-new-6.0 "What's New in Lighthouse 6.0 | Web.Dev"  -->
-<!--[WebDevVitalsCoreWeb]: https://web.dev/vitals#core-web-vitals "Core Web Vitals - Web Vitals | Web.Dev"  -->
-<!--[WebdevAppShortcuts]: https://alphabet-dev/app-shortcuts "Get things done quickly with app shortcuts | alphabet-dev"  -->
-<!--[WebdevCls]: https://alphabet-dev/cls "Cumulative Layout Shift (CLS) | alphabet-dev"  -->
-<!--[WebdevControlFocus]: https://alphabet-dev/control-focus-with-tabindex "Control focus with tabindex | alphabet-dev"  -->
-<!--[WebdevMeasureSpeedLabField]: https://alphabet-dev/how-to-measure-speed#lab-data-vs-field-data "Lab data vs Field data - How to measure speed? | alphabet-dev"  -->
-<!--[WebdevLabelsText]: https://alphabet-dev/labels-and-text-alternatives "Labels and text alternatives | alphabet-dev"  -->
-<!--[WebdevTbt]: https://alphabet-dev/tbt "Total Blocking Time (TBT) | alphabet-dev"  -->
-<!--[WebFundamentalComponentsShadowdom]: /web/fundamentals/web-components/shadowdom  -->
-<!--[WebDevLcp]: https://web.dev/lcp "Largest Contentful Paint (LCP) | Web.Dev"  -->
-<!--[WebDevFirstMeaningfulPaint]: https://web.dev/first-meaningful-paint "First Meaningful Paint | Web.Dev"  -->
-<!--[WhatsNew201902ConstructableStylesheets]: ../../2019/02/constructable-stylesheets.md "Constructable Stylesheets: seamless reusable styles | Microsoft Docs"  -->
-
-
-
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-85) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+

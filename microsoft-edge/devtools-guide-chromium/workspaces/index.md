@@ -56,7 +56,7 @@ Workspaces is known to not work with the following framework.
 
 *   Create React App
 
-    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+    <!-- If you run into issues while using Workspaces with your framework of choice, or you get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
 
 
 <!-- ====================================================================== -->
@@ -92,22 +92,18 @@ Complete the following actions, to get hands-on experience with Workspaces.
     <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->
 
 1.  Create an `app` directory on your desktop.  Save copies of the files from the `workspaces-demo` directory to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
-1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.
 
-    :::row:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m SimpleHTTPServer # Python 2
-          ```
-       :::column-end:::
-       :::column span="":::
-          ```bash
-          cd ~/Desktop/app
-          python -m http.server # Python 3
-          ```
-       :::column-end:::
-    :::row-end:::
+1. Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you can use whatever server you prefer.
+
+   ```bash
+   cd ~/Desktop/app
+   python -m SimpleHTTPServer # Python 2
+   ```
+
+   ```bash
+   cd ~/Desktop/app
+   python -m http.server # Python 3
+   ```
 
 1.  Open a tab in Microsoft Edge and navigate to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
 
@@ -267,20 +263,13 @@ To open the DevTools code editor alongside other tools, do the following:
 <!-- ====================================================================== -->
 ## Next steps
 
-Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list][AlphabetGroupsAlphabetBrowserDevTools] or [ask a question on Stack Overflow][StackOverflowAlphabetBrowserDevTools] to share your knowledge with the rest of the DevTools community.  -->
+Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
 
 <!--
 If you have more feedback on the topics or anything else, please use any of the channels below:
-
-*   [Mailing List][AlphabetGroupsAlphabetBrowserDevTools]
-*   [Twitter][TwitterAlphabetBrowserDevTools]  -->
-
-
-<!-- ====================================================================== -->
-<!--[LocalOverrides]: ../whats-new/2018/01/devtools#overrides -->
-<!--[AlphabetGroupsAlphabetBrowserDevTools]: https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools "Alphabet Browser DevTools - Alphabet Groups"  -->
-<!--[StackOverflowAlphabetBrowserDevTools]: https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools "Alphabet Browser DevTools - Stack Overflow"  -->
-<!-- [TwitterAlphabetBrowserDevTools]: https://twitter.com/alphabetbrowserdevtools "Alphabet Browser DevTools (@AlphabetBrowserDevTools) | Twitter"  -->
+*   [Mailing List](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools)
+*   [Twitter](https://twitter.com/alphabetbrowserdevtools)
+-->
 
 
 <!-- ====================================================================== -->

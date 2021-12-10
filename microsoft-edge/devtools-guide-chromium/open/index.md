@@ -47,20 +47,19 @@ See [Keyboard shortcuts](../shortcuts/index.md).
 <!-- ====================================================================== -->
 ## Open the Elements panel to inspect the DOM or CSS
 
-To inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
-*   Right-click the element and select **Inspect**.
+When you're viewing a rendered webpage in the browser, to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
+*   Right-click the element in the rendered webpage and select **Inspect**.
 *   Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
+See [DevTools for beginners: Get started with CSS](../beginners/css.md).
+
 <!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png"::: -->
-<!-- See [Get started with viewing and changing CSS](/microsoft-edge/devtools-guide-chromium/css). -->
 
 
 <!-- ====================================================================== -->
 ## Open the Console panel
 
 To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
-
-<!-- See [Get started with the Console](/microsoft-edge/devtools-guide-chromium/console/get-started). -->
 
 
 <!-- ====================================================================== -->
@@ -76,15 +75,11 @@ To auto-open DevTools on every new tab, open Microsoft Edge from the command lin
 
 ### [CMD (Windows)](#tab/cmd-Windows/)
 
-<a id="auto-open-devtools-command-line"></a>
-
 ```cmd
 start msedge --auto-open-devtools-for-tabs
 ```
 
 ### [PowerShell (Windows)](#tab/powershell-Windows/)
-
-<a id="auto-open-devtools-command-line"></a>
 
 ```powershell
 Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
@@ -92,15 +87,11 @@ Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
 
 ### [bash (macOS)](#tab/bash-macos/)
 
-<a id="auto-open-devtools-command-line"></a>
-
 ```bash
 /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
 ```
 
 ### [bash (Linux)](#tab/bash-linux/)
-
-<a id="auto-open-devtools-command-line"></a>
 
 ```bash
 microsoft-edge-dev --auto-open-devtools-for-tabs
