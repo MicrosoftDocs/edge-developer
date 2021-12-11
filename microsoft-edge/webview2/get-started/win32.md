@@ -55,7 +55,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
     :::image-end:::
 
     > [!WARNING]
-    > If you do not see the expected search results in the following steps, check the NuGet source location. Click **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**. Make sure that in **Package sources** there is a **nuget.com** route pointing to https://api.nuget.org/v3/index.json. If not, enter `nuget.com` in the **Name** text box and `https://api.nuget.org/v3/index.json` in the **Source** text box. Then click **Update** and **OK**.
+    > If you don't see the expected search results in the following steps, check the NuGet source location. Click **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**. Make sure that in **Package sources** there is a **nuget.com** route pointing to `https://api.nuget.org/v3/index.json`. If **Package sources** doesn't contain that route, enter `nuget.com` in the **Name** text box and `https://api.nuget.org/v3/index.json` in the **Source** text box. Then click **Update** and **OK**.
 
 1.  Install the Windows Implementation Library.
     1.  In the **NuGet** window, click the **Browse** tab.
