@@ -3,7 +3,7 @@ description: Accessibility improvements, using the DevTools in other languages, 
 title: What's new in DevTools (Microsoft Edge 80)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -33,9 +33,7 @@ The following sections are a list of announcements you may have missed from the 
 
 The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.
 
-:::image type="complex" source="../../images/2019/12/a11y-performance-tool.msft.gif" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements" lightbox="../../images/2019/12/a11y-performance-tool.msft.gif":::
-   The **Performance** tool in the DevTools with the keyboard navigation and screen reader improvements
-:::image-end:::
+![The Performance tool in the DevTools with keyboard navigation and screen reader improvements.](../../media/2019/12/a11y-performance-tool.msft.png)
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights](https://aka.ms/a11yinsights) and [webhint](https://aka.ms/webhint/browser-extension) extensions for Microsoft Edge to get started.
 

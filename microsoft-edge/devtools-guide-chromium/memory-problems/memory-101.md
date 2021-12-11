@@ -3,7 +3,7 @@ description: This section describes common terms used in memory analysis, and is
 title: Memory terminology
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
@@ -115,11 +115,31 @@ In the following figure, the following statement are true.
    Dominator tree structure
 :::image-end:::
 
-In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.
+In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector (GC) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.
 
-:::image type="complex" source="../media/memory-problems-dominators.msft.gif" alt-text="Animated dominator illustration" lightbox="../media/memory-problems-dominators.msft.gif":::
-   Animated dominator illustration
-:::image-end:::
+Node `GC` dominates nodes `#1`, `#3`, and `#11`.
+
+![Node GC dominates nodes #1, #3, and #11.](../media/memory-problems-dominators-00.msft.png)
+ 
+Node `#3` is dominated by node `GC` and dominates node `#7`.
+
+![Node #3 is dominated by node GC and dominates node #7.](../media/memory-problems-dominators-01.msft.png)
+ 
+Node `#7` is dominated by node `#3` and dominates nodes `#8`, `#9`, and `#10`.
+
+![Node #7 is dominated by node #3 and dominates nodes #8, #9, and #10.](../media/memory-problems-dominators-02.msft.png)
+ 
+Node `#8` is dominated by node `#7` and does not dominate any nodes.
+
+![Node #8 is dominated by node #7 and does not dominate any nodes.](../media/memory-problems-dominators-03.msft.png)
+ 
+Node `#10` is dominated by node `#7` and does not dominate any nodes.
+
+![Node #10 is dominated by node #7 and does not dominate any nodes.](../media/memory-problems-dominators-04.msft.png)
+ 
+Node `#11` is dominated by node `#1` and does not dominate any nodes.
+
+![Node #11 is dominated by node #1 and does not dominate any nodes.](../media/memory-problems-dominators-05.msft.png)
 
 
 <!-- ====================================================================== -->
