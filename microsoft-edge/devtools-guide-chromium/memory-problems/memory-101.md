@@ -115,7 +115,7 @@ In the following figure, the following statement are true.
    Dominator tree structure
 :::image-end:::
 
-In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector (GC) to `#10`.  Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.
+In the following figure, node `#3` is the dominator of `#10`, but `#7` also exists in every simple path from Garbage Collector (GC) to `#10`. Therefore, an object B is a dominator of an object A if B exists in every simple path from the root to the object A.
 
 Node `GC` dominates nodes `#1`, `#3`, and `#11`.
 
