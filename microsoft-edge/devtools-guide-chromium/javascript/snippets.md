@@ -29,26 +29,21 @@ Snippets are an alternative to [bookmarklets](https://en.wikipedia.org/wiki/Book
 
 Using Snippets is an excellent way to change a few things in a third-party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, navigate to [Overrides](./overrides.md).
 
-:::row:::
-   :::column span="":::
-      For example, in the following figure shows the DevTools homepage on the left and some Snippet source code on the right.
+The following figure shows the DevTools homepage on the left and some Snippet source code on the right.
 
-      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="The before running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
-         The webpage before running the Snippet
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      The Snippet source code from the webpage before running the Snippet.
+The webpage before running the Snippet:
 
-      ```javascript
-      console.log('Hello, Snippets!');
-      document.body.innerHTML = '';
-      var p = document.createElement('p');
-      p.textContent = 'Hello, Snippets!';
-      document.body.appendChild(p);
-      ```
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="The webpage before running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+
+The Snippet source code from the webpage before running the Snippet:
+
+```javascript
+console.log('Hello, Snippets!');
+document.body.innerHTML = '';
+var p = document.createElement('p');
+p.textContent = 'Hello, Snippets!';
+document.body.appendChild(p);
+```
 
 In the following figure, the webpage appears after running the Snippet.  The **Console Drawer** pops up to display the `Hello, Snippets!` message that the Snippet logs, and the content of the webpage changes completely.
 

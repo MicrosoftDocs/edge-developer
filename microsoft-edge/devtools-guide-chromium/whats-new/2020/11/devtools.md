@@ -96,18 +96,13 @@ In the **Styles** pane, [CSS variables](https://developer.mozilla.org/docs/Web/C
 1.  In the **Styles** pane, choose `var(--theme-body-background)`.
 1.  The **Styles** pane now displays the definition of the `--theme-body-background` CSS variable.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/css-variable-support.msft.png" alt-text="CSS variable linked to the style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
-         CSS variable linked to the style
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="CSS variable linked to style target" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
-         CSS variable linked to style target
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+A CSS variable linked to the style:
+
+:::image type="content" source="../../media/2020/11/css-variable-support.msft.png" alt-text="A CSS variable linked to the style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
+
+A CSS variable linked to a style target:
+
+:::image type="content" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="A CSS variable linked to a style target" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -165,18 +160,13 @@ In previous versions of Microsoft Edge, the level of depth in the call stack was
 
 To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures starts with the JavaScript code in your service worker and displays a reference to the original webpage request as `(index):157`.  In the second figure, the reference is chosen and opened the initiator that made the request.  The initiator in the second figure is the webpage.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting request originator" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
-         The `service-worker.js` file and call stack highlighting request originator
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="The (index) webpage is the request initiator" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
-         The `(index)` webpage is the request initiator
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+The `service-worker.js` file and call stack highlighting the request originator:
+
+:::image type="content" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting the request originator" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+
+The `(index)` webpage is the request initiator:
+
+:::image type="content" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="The (index) webpage is the request initiator" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -190,20 +180,15 @@ In the **Network** tool, copy the property value of a network request using the 
 *   Highlight the entire text and copy it.
 *   Store the value as global variable, as applicable, and copy it from the DevTools [Console](../../../console/index.md).
 
-To copy the property value to your clipboard, navigate to [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1132084](https://crbug.com/1132084).
+To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard).  To review the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copy property value in DevTools" lightbox="../../media/2020/11/copy-property-value.msft.png":::
-         Copy property value in DevTools
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Paste property value in Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
-         Paste property value in Microsoft Visual Studio Code
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Copying a property value in DevTools:
+
+:::image type="content" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copying a property value in DevTools" lightbox="../../media/2020/11/copy-property-value.msft.png":::
+
+Pasting a property value in Microsoft Visual Studio Code:
+
+:::image type="content" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Pasting a property value in Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
 
 
 <!-- ====================================================================== -->

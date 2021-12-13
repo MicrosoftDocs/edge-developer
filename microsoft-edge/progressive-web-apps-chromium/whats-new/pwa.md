@@ -3,7 +3,7 @@ description: New features and origin trials for Progressive Web Apps (PWAs).
 title: What's New in Progressive Web Apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/17/2021
+ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
@@ -39,22 +39,32 @@ See also:
 
 Microsoft Edge Canary reached version 96 on October 5, 2021.  With a subset of our users, we're testing a new design to better manage your installed web apps.  When you go to `edge://apps` in your browser, it now displays a redesigned hub that lists installed PWAs and websites as apps.
 
+#### Sort order
+
 You can sort your apps by any of the following:
 *  Recently used.
 *  Alphabetically, based on title.
 *  Date of installation.
 
-You can also arrange apps in a list or grid view.
+#### List view or grid view
 
-:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="Microsoft Edge now has a new app management page." lightbox="media/edgeapps-redesign.jpg":::
+You can arrange apps in a list or grid view, by using the **View as** dropdown.  In this image, **Grid** view is selected:
 
-Additionally, you can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login.
+:::image type="content" source="media/edgeapps-redesign.jpg" alt-text="The new, app management page in Microsoft Edge." lightbox="media/edgeapps-redesign.jpg":::
+<!-- lightbox justified because large detailed image -->
 
-Also, there's now a way to easily access the following:
+#### Pin apps, create shortcuts to apps, run app on login
+
+You can easily pin apps to the taskbar or **Start** menu.  You can create a shortcut, and enable apps to run on user login.
+
+#### App details page
+
+There's now an app details page, which provides way to easily access the following:
 *  Permissions and privacy details for the associated origin.
 *  More details about the application.
 
-:::image type="content" source="media/edgeapps-details.jpg" alt-text="Microsoft Edge's app details page." lightbox="media/edgeapps-details.jpg":::
+:::image type="content" source="media/edgeapps-details.jpg" alt-text="The app details page in Microsoft Edge." lightbox="media/edgeapps-details.jpg":::
+<!-- lightbox justified because large detailed image -->
 
 
 <!-- ====================================================================== -->
@@ -93,7 +103,7 @@ Microsoft Edge now includes a referrer header with the request for the first nav
 
 This feature was first introduced in Microsoft Edge version 91, and we shipped a bug fix in Microsoft Edge version 93.
 
-Learn more in [Publish your Progressive Web App to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-store-installed-pwa).
+Learn more in [Publish a Progressive Web App to the Microsoft Store](../how-to/microsoft-store.md#measure-usage-of-your-pwa-installed-from-the-microsoft-store).
 
 ### Window Controls Overlay origin trials
 
@@ -134,15 +144,15 @@ Learn more about using protocol handlers with your PWA at [Experimental features
 When a user selects the ellipses (**...**) button in the app's title bar, the **App info** menu is displayed.  We've updated the **App info** menu and streamlined the user experience in the following ways, to provide a user experience that's more like a desktop app than a browser UI:
 *  Moved the app **Publisher** information to the top level and made it the first thing a user sees.
 
-   :::image type="content" source="media/app-info.png" alt-text="The new, streamlined App Info menu" lightbox="media/app-info.png":::
+   :::image type="content" source="media/app-info.png" alt-text="The new, streamlined App Info menu":::
 
 *  Moved the privacy information and controls into a dedicated 2nd-level **Privacy** menu.
 
-   :::image type="content" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu." lightbox="media/privacy-menu.png":::
+   :::image type="content" source="media/privacy-menu.png" alt-text="Privacy controls in the dedicated Privacy menu.":::
 
 *  Moved content-related tools into a dedicated 2nd-level **More tools** menu.
 
-   :::image type="content" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu." lightbox="media/more-tools.png":::
+   :::image type="content" source="media/more-tools.png" alt-text="Content-related tools are now found in the More Tools menu.":::
 
 ### Post-install flyout dialog box
 
@@ -154,7 +164,7 @@ After a PWA is installed from the Microsoft Edge browser on Windows, users can n
 
 For convenience, this flyout dialog box is shown the first time the app is launched.
 
-:::image type="content" source="media/post-install-flyout.png" alt-text="The post-install flyout dialog box with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login" lightbox="media/post-install-flyout.png":::
+:::image type="content" source="media/post-install-flyout.png" alt-text="The post-install flyout dialog box with options for Pin to Taskbar, Pin to Start, Create Desktop Shortcut, and Auto-Start on Device Login":::
 
 This feature is being rolled out gradually to all users.  In the meantime, if you'd like to use this feature, go to `edge://flags` and enable the flag **Web Apps Post Install Dialog**.
 

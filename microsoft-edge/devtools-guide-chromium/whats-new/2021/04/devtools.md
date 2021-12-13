@@ -42,18 +42,13 @@ To open the **Issues** tool and learn more about the issue and how to fix it, co
     1.  Open the contextual menu (right-click).
     1.  Choose **Show in Issues**.
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="Choose the underlined error in the Elements tool" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
-         Choose the underlined error in the **Elements** tool
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png" alt-text="Display error details in the Issues tool" lightbox="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png":::
-         Display error details in the **Issues** tool
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+Selecting the underlined error in the **Elements** tool:
+
+:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="Selecting the underlined error in the Elements tool" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
+
+Displaying error details in the **Issues** tool:
+
+:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png" alt-text="Displaying error details in the Issues tool" lightbox="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -112,18 +107,13 @@ In [Microsoft Edge version 90](../02/devtools.md) or earlier, if the Web App Man
 Most operating systems require square icons.  Please include at least one square icon in the array.
 ```
 
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="In Microsoft Edge version 90 or earlier, an error displays for each icon that is non-square" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
-         In Microsoft Edge version 90 or earlier, an error displays for each icon that is non-square
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="In Microsoft Edge version 91 or later, no error displays when you provide at least one square icon" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
-         In Microsoft Edge version 91 or later, no error displays when you provide at least one square icon
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+In Microsoft Edge version 90 or earlier, an error is displayed for each icon that is non-square:
+
+:::image type="content" source="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png" alt-text="In Microsoft Edge version 90 or earlier, an error is displayed for each icon that is non-square" lightbox="../../media/2021/04/edge89-application-manifest-errors-and-warnings.msft.png":::
+
+In Microsoft Edge version 91 or later, no error is displayed when you provide at least one square icon:
+
+:::image type="content" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="In Microsoft Edge version 91 or later, no error is displayed when you provide at least one square icon" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
 
 To review errors and warnings in your Web App Manifest, navigate to the **Application** tool and choose the **Manifest** section.  Errors and warnings are listed under the **Errors and Warnings** heading.  For more information about the Web App Manifest, navigate to [Use the Web App Manifest to integrate your Progressive Web App into the Operating System](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md).  To create icons to include in your Web App Manifest, navigate to the [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [1185945](https://crbug.com/1185945).
 
@@ -234,26 +224,13 @@ Image previews in the DevTools have been enhanced to display more information, i
 
 The  information helps you better understand your images and apply optimization.  The image aspect ratio information is also available in the **Network** tool, when you choose an image preview.
 
-:::row:::
-   :::column span="":::
-      In the **Elements** tool, image preview now displays more information about the image.
-   :::column-end:::
-   :::column span="":::
-      Also, the image aspect ratio information is available in the **Network** tool, when you choose an image preview.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="Image preview with aspect ratio information in the Element tool" lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
-         Image preview with aspect ratio information in the **Element** tool
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="Image aspect ratio information in the Network tool" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
-         Image aspect ratio information in the **Network** tool
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+In the **Elements** tool, image preview now displays more information about the image, including aspect ratio:
+
+:::image type="content" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="Image preview with aspect ratio information in the Element tool" lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
+
+Also, the image aspect ratio information is available in the **Network** tool, when you choose an image preview:
+
+:::image type="content" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="Image aspect ratio information in the Network tool" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
 
 To review the history of this feature in the Chromium open-source project, navigate to Issues [1149832](https://crbug.com/1149832) and [1170656](https://crbug.com/1170656).
 
@@ -376,26 +353,13 @@ In Microsoft Edge version 90 or earlier, DevTools only displayed generic Wasm re
 
 In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays proper error stack traces for Wasm debugging.
 
-:::row:::
-   :::column span="":::
-      In Microsoft Edge version 90 and earlier, the source location doesn't display in the Error stack traces.  Source locations include `dsquare`.
-   :::column-end:::
-   :::column span="":::
-      In Microsoft Edge version 91 and later, the source location displays in the Error stack traces.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png" alt-text="Previous error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png":::
-         Proper error stack traces for Wasm debugging
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      :::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Proper error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
-         Proper error stack traces for Wasm debugging
-      :::image-end:::
-   :::column-end:::
-:::row-end:::
+In Microsoft Edge version 90 and earlier, the source location isn't displayed in the Error stack traces.  Source locations include `dsquare`.  Previous error stack traces for Wasm debugging:
+
+:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png" alt-text="Previous error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png":::
+
+In Microsoft Edge version 91 and later, the source location is displayed in the Error stack traces.  Proper error stack traces for Wasm debugging:
+
+:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Proper error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1189161](https://crbug.com/1189161).
 

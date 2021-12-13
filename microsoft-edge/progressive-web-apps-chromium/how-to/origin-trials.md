@@ -27,7 +27,7 @@ To turn experimental features on or off:
 1.  Navigate to the relevant experiment.
 1.  Select the dropdown menu next to the experiment description and select **Enabled** to turn on the feature or **Disabled** to turn it off.
 
-    :::image type="content" source="../media/turn-on-experimental-flag.png" alt-text="Select Enabled to turn on an experiment." lightbox="../media/turn-on-experimental-flag.png":::
+    :::image type="content" source="../media/turn-on-experimental-flag.png" alt-text="Select Enabled to turn on an experiment.":::
 
 
 <!-- ====================================================================== -->

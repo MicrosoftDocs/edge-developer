@@ -19,7 +19,7 @@ For many years, organizations were reluctant to invest heavily in web-based soft
 
 With the introduction of [Service Workers](https://developer.mozilla.org/docs/Web/API/ServiceWorker), the web platform added the `Cache` API to provide access to managed cached resources. This Promise-based API allows developers to store and retrieve many web resources—HTML, CSS, JavaScript, images, JSON, and so on. Usually, the Cache API is used within the context of a Service Worker, but it is also available in the main thread on the `window` object.
 
-One common use for the `Cache` API is to pre-cache critical resources when a Service Worker is installed, as shown in the following code snippet.
+One common use for the `Cache` API is to pre-cache critical resources when a Service Worker is installed, as shown in the following code.
 
 ```javascript
 self.addEventListener( "install", function( event ){
@@ -37,7 +37,9 @@ self.addEventListener( "install", function( event ){
 });
 ```
 
-This code runs during the Service Worker `install` life cycle event, and opens a cache named `static-cache`. When it has a pointer to the cache, it adds four resources to the cache using the `addAll()` method.  This approach is often coupled with cache retrieval during a `fetch` event.
+The above code runs during the Service Worker `install` life cycle event, and opens a cache named `static-cache`. When it has a pointer to the cache, it adds four resources to the cache using the `addAll()` method.
+
+The above approach is often coupled with cache retrieval during a `fetch` event, as follows:
 
 ```javascript
 self.addEventListener( "fetch", event => {
@@ -47,13 +49,15 @@ self.addEventListener( "fetch", event => {
     // If we are requesting an HTML page.
     if ( request.headers.get("Accept").includes("text/html") ) {
         event.respondWith(
-            // Check the cache first to see if the asset exists, and if it does, return the cached asset.
+            // Check the cache first to see if the asset exists, and if it does, 
+            // return the cached asset.
             caches.match( request )
                   .then( cached_result => {
                 if ( cached_result ) {
                     return cached_result;
                 }
-                // If the asset is not in the cache, fallback to a network request for the asset, and proceed to cache the result.
+                // If the asset isn't in the cache, fall back to a network request 
+                // for the asset, and proceed to cache the result.
                 return fetch( request )
                        .then( response => {
                     const copy = response.clone();
@@ -66,7 +70,8 @@ self.addEventListener( "fetch", event => {
                     );
                     return response;
                 })
-                // If the network is unavailable to make a request, pull the offline page out of the cache.
+                // If the network is unavailable to make a request, pull the offline
+                // page out of the cache.
                 .catch(() => caches.match( "/offline/" ));
             })
         ); // end respondWith
@@ -74,7 +79,7 @@ self.addEventListener( "fetch", event => {
 });
 ```
 
-The code snippet runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see whether the file already exists in any cache, by using the `match()` method:
+The above code runs within the Service Worker whenever the browser makes a `fetch` request for this site. Within that event, there is a conditional statement that runs if the request is for an HTML file. The Service Worker checks to see whether the file already exists in any cache, by using the `match()` method:
 
 *  If the request exists in the cache, that cached result is returned.
 *  If the request doesn't exist in the cache, a new `fetch` for that resource is run, a copy of the response is cached for later, and the response is returned.
@@ -95,14 +100,14 @@ This simple introduction shows how to use caching in your progressive web app (P
 Sometimes you might need to store small amounts of data in order to provide a better offline experience for your users. If that is the case, you might find that the simplicity of the key-value pair system of Web Storage meets your needs.
 
 > [!IMPORTANT]
-> Web Storage is a synchronous process and is not available for use within worker threads such as Service Workers. Heavy usage may create performance issues for your application.
+> Web Storage is a synchronous process, and isn't available for use within worker threads, such as Service Workers. Heavy usage of Web Storage may create performance issues for your application.
 
-There are two types of Web Storage: `localStorage` and `sessionStorage`. Each type of Web Storage is maintained as a separate data store isolated to the domain that created it.
+There are two types of Web Storage: `localStorage` and `sessionStorage`. Each type of Web Storage is maintained as a separate data store that's isolated to the domain that created it.
 
 *  `sessionStorage` persists only for the duration of the browsing session. For example, while the browser is open, which includes refresh and restores.
 *  `localStorage` persists until the data is removed by the code, the user, or the browser. For example, when there is limited storage available.
 
-The following code snippet shows how to use `localStorage`, which is similar to how `sessionStorage` is used.
+The following code shows how to use `localStorage`, which is similar to how `sessionStorage` is used:
 
 ```javascript
 var data = {
@@ -112,9 +117,9 @@ var data = {
 localStorage.setItem( window.location, JSON.stringify(data) );
 ```
 
-This code snippet grabs metadata about the current page and stores it in a JavaScript object. Then it stores that value as JSON in `localStorage` using the `setItem()` method, and assigns a key equal to the current `window.location` URL. You can retrieve the information from `localStorage` by using the `getItem()` method.
+The above code grabs metadata about the current page and stores it in a JavaScript object. Then it stores that value as JSON in `localStorage` using the `setItem()` method, and assigns a key equal to the current `window.location` URL. You can retrieve the information from `localStorage` by using the `getItem()` method.
 
-The following code snippet shows how to use caching with `localstorage` to enumerate cached pages and extract metadata to perform a task, such as building a list of links.
+The following code shows how to use caching with `localstorage` to enumerate cached pages and extract metadata to perform a task, such as building a list of links.
 
 ```javascript
 caches.open( "pages" )
@@ -130,7 +135,8 @@ caches.open( "pages" )
 
 function insertOfflineLink( request ) {
     var data = JSON.parse( localStorage.getItem( request.url ) );
-    // If data exists and this page is not an offline page, assuming that offline pages have the word offline in the URL.
+    // If data exists and this page isn't an offline page (assumes that offline 
+    // pages have the word "offline" in the URL).
     if ( data && request.url.indexOf('offline') < 0  )
     {
         // Build a link and insert it into the page.
@@ -144,7 +150,9 @@ The `insertOfflineLink()` method passes the URL of the request into the `localSt
 <!-- ====================================================================== -->
 ## Test for network connections in your PWA
 
-In addition to storing information for offline use, it's helpful to know when a network connection is available, in order to synchronize data or inform users that the network status has changed. Use the following options to test for network connectivity.
+In addition to storing information for offline use, it's helpful to know when a network connection is available, in order to synchronize data or inform users that the network status has changed.
+
+Use the following options to test for network connectivity:
 
 ### navigator.onLine
 
