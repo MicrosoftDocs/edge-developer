@@ -75,6 +75,24 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
 
 ```
 
+## Optimizing detection performance
+Since `Sec-CH-UA-Platform-Version` is not a field sent by `Accept-CH` by default, determining this information typically requires a roundtrip every time: 
+1. Client sends `Accept-CH` header by default 
+2. Server requests high-entropy values, e.g. `Sec-CH-UA-Platform-Version`
+3. Client responds with requested value 
+
+However, starting in Microsoft Edge version 96, a new `Critical-CH` header can be used to reduce this roundtrip for subsequent requests. The new flow with `Critical-CH` might look like: 
+
+**Initial request**: 
+1. Client sends `Accept-CH` header by default 
+2. Server requests a `Critical-CH` field, e.g. `Sec-CH-UA-Platform-Version`
+3. Client responds with requested value and caches requested `Critical-CH` field
+
+**Subsequent requests**: 
+1. Client sends `Accept-CH` header by default, along with previously requested `Critical-CH` field 
+
+Please note that  `Critical-CH` preferences will persist until session cookies are cleared, or until a user clears site data or cookies for a given origin. For more information on `Critical-CH`, please refer to its documentation [here](https://github.com/WICG/client-hints-infrastructure/blob/main/reliability.md). 
+
 
 <!-- ====================================================================== -->
 ## Detecting specific Windows versions
