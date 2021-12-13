@@ -3,7 +3,7 @@ description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/03/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, privacy whitepaper, trust, microsoft edge privacy, browser privacy, privacy settings
@@ -267,6 +267,13 @@ Microsoft Edge generates a new random ID when making requests to the location se
 
 
 <!-- ====================================================================== -->
+## Image Enhancement
+To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits images to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The images are cached for 30 days to improve performance. 
+
+To control Image Enhancement, navigate to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
+
+
+<!-- ====================================================================== -->
 ## Import browser data
 
 Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time.  You can import your browser data to Microsoft Edge from another browser.  During import, you can either keep your existing data, or delete it and start fresh.  The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.
@@ -506,6 +513,33 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 
 <!-- ====================================================================== -->
+## Search results data for product improvement 
+In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone’s web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn’t own or operate.
+
+* Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
+
+* Microsoft doesn't use any information we collect to personalize or provide ads to you. 
+
+* The data Microsoft collects is never associated with your account or your device. 
+
+* This data collection and setting is not available on managed devices. 
+
+The data Microsoft collects may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. Microsoft may also collect demographic data. 
+
+To manage the collection and use of your search results activity for product improvement, do the following: 
+
+1. Open Microsoft Edge.
+
+1. Select **Settings and more** > **Settings**. 
+
+1. Select **Privacy, search, and services**. 
+
+1. Under **Search and service improvement**, turn on or off the setting for **Help improve Microsoft products by sending the results from searches on the web**. 
+
+If you stop sharing your data, Microsoft may continue to use previously collected search results data, but it will still be de-identified and not associated with you or your device.
+
+
+<!-- ====================================================================== -->
 ## Secure DNS
 
 When navigating to a website, the browser needs to look up the network address, such as `93.184.216.34`, to resolve the host name, such as `example.com`. Secure DNS performs this lookup using a service over an HTTPS connection to the DNS service provider. Secure DNS protects the lookups from modification or eavesdropping by attackers on the network.
@@ -557,7 +591,7 @@ If a new identity is added to the operating system and your Microsoft Edge profi
 
 If a new identity is added to the operating system and your Microsoft Edge profile does not currently have an identity, Microsoft Edge adds the specific identity to your profile.  If you sign into Microsoft Edge with a Microsoft account or a work or school account and do not have an identity on your Windows 10 profile, the specific account is added to your Windows 10 profile unless you specifically choose to not add it to Windows 10 while signing in.
 
-Being signed in to Microsoft Edge enables single sign-on. You are automatically signed in to certain websites such as Bing, and other identity-powered experiences such as Sync. If you want to limit sign-in to Microsoft Edge and not other Microsoft sites such as [Bing](https://bing.com), you may sign out of the specific site. Microsoft Edge creates a sign-out cookie that tells Microsoft Edge not to sign into the specific site for future visits.
+Being signed in to Microsoft Edge enables single sign-on. You are automatically signed in to certain websites such as Bing, and other identity-powered experiences such as Sync. If you want to limit automatic sign-in to Microsoft sites such as [Bing](https://bing.com), you may sign out of the browser.
 
 To sign into specific sites again using your user name and password or clear your cookies, navigate to `edge://settings/privacy`. For more information about clearing browsing data, navigate to [View and delete browser history in Microsoft Edge](https://support.microsoft.com/help/10607).
 

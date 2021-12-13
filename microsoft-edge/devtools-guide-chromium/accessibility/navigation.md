@@ -33,7 +33,7 @@ DevTools is divided into a series of tools.  (Within the **Command Menu**, tools
 
 The following are examples of tools:
 *   The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
-*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, navigate to [Use the Console](../console/index.md).
+*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md).
 
 Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
 

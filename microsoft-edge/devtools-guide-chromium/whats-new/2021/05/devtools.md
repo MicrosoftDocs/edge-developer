@@ -66,18 +66,13 @@ Tabs for each tool have been reformatted to reduce the chance of accidentally cl
 
 For example, when you are in the **Performance** tool and you hover over the **Network** tool's tab, these improvements help prevent accidentally closing the **Network** tool.
 
-:::row:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="Tabs before reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
-           Tabs before reformatting
-        :::image-end:::
-    :::column-end:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="Tabs after reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
-           Tabs after reformatting
-        :::image-end:::
-    :::column-end:::
-:::row-end:::
+Tabs before reformatting:
+
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="Tabs before reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
+
+Tabs after reformatting:
+
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="Tabs after reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
 
 These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close.
 
@@ -96,18 +91,13 @@ We also made it easier to re-add a tool that you closed by adding a [More Tools 
 
 Prior to Microsoft Edge version 92, in the **Console**, assistive technologies such as screen readers didn't announce autocomplete suggestions or the results of evaluated expressions. This has been fixed now.
 
-:::row:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png" alt-text="In the Console, screen readers now announce the currently selected autocomplete suggestion" lightbox="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png":::
-           In the **Console**, screen readers now announce the currently selected autocomplete suggestion
-        :::image-end:::
-    :::column-end:::
-    :::column:::
-        :::image type="complex" source="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png" alt-text="In the Console, screen readers now announce the result of an evaluated expression" lightbox="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png":::
-           In the **Console**, screen readers now announce the result of an evaluated expression
-        :::image-end:::
-    :::column-end:::
-:::row-end:::
+In the **Console**, screen readers now announce the currently selected autocomplete suggestion:
+
+:::image type="content" source="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png" alt-text="In the Console, screen readers now announce the currently selected autocomplete suggestion" lightbox="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png":::
+
+In the **Console**, screen readers now announce the result of an evaluated expression:
+
+:::image type="content" source="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png" alt-text="In the Console, screen readers now announce the result of an evaluated expression" lightbox="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png":::
 
 
 <!-- ====================================================================== -->
