@@ -27,13 +27,15 @@ The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries
 
 1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-    ![Opening the command menu](../media/print-preview-open-command-menu.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opening the command menu](../media/print-preview-open-command-menu.png)
 
 1.  Type `rendering`, select the **Show Rendering** option, and press `Enter`.
 1.  The **Rendering** panel opens in the **Drawer**.
 1.  Under **Emulate CSS media type**, choose **print**.
 
-    ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
+    > [!div class="mx-imgBorder"]
+    > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
 
 From here, you may display and change your CSS, like any other web page.  Navigate to [Get Started With Viewing And Changing CSS](./index.md).
 
