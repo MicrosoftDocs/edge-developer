@@ -1,13 +1,13 @@
 ---
-description: Learn how to test your website or app in Microsoft Edge or automate the browser with WebDriver
 title: Use WebDriver to automate Microsoft Edge
+description: Learn how to test your website or app in Microsoft Edge, and how to automate the browser with WebDriver.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/24/2021
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
+ms.date: 08/24/2021
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -54,6 +54,8 @@ To begin automating tests, make sure the WebDriver version you install matches y
 1.  In the **Get the latest version** section of the page, click a platform in the channel that matches your version number of Microsoft Edge.
 
     :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The `Get the latest version` section of the Microsoft Edge Driver webpage." lightbox="./media/microsoft-edge-driver-install.msft.png":::
+
+1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
 
 <!-- ====================================================================== -->
@@ -160,7 +162,19 @@ EdgeDriver driver = new EdgeDriver();
 
 #### [JavaScript](#tab/javascript/)
 
+For Selenium 4:
+
 ```javascript
+const edge = require('selenium-webdriver/edge');
+
+let driver = edge.Driver.createSession(options);
+```
+
+For Selenium 3:
+
+```javascript
+const edge = require("@microsoft/edge-selenium-tools");
+
 let options = new edge.Options();
 options.setEdgeChromium(true);
 
