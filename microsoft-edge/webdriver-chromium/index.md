@@ -162,16 +162,20 @@ EdgeDriver driver = new EdgeDriver();
 
 #### [JavaScript](#tab/javascript/)
 
+For Selenium 3.
+
 ```javascript
-// For Selenium 3
 const edge = require("@microsoft/edge-selenium-tools");
 
 let options = new edge.Options();
 options.setEdgeChromium(true);
 
 let driver = edge.Driver.createSession(options);
+```
 
-// For Selenium 4
+For Selenium 4.
+
+```
 const edge = require('selenium-webdriver/edge');
 
 let driver = edge.Driver.createSession(options);
