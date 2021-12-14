@@ -55,6 +55,8 @@ To begin automating tests, make sure the WebDriver version you install matches y
 
     :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The `Get the latest version` section of the Microsoft Edge Driver webpage." lightbox="./media/microsoft-edge-driver-install.msft.png":::
 
+1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
+
 
 <!-- ====================================================================== -->
 ## Choose a WebDriver testing framework
@@ -161,8 +163,16 @@ EdgeDriver driver = new EdgeDriver();
 #### [JavaScript](#tab/javascript/)
 
 ```javascript
+// For Selenium 3
+const edge = require("@microsoft/edge-selenium-tools");
+
 let options = new edge.Options();
 options.setEdgeChromium(true);
+
+let driver = edge.Driver.createSession(options);
+
+// For Selenium 4
+const edge = require('selenium-webdriver/edge');
 
 let driver = edge.Driver.createSession(options);
 ```
