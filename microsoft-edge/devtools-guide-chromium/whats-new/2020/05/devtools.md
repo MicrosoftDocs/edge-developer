@@ -92,11 +92,11 @@ Choose **inspect** for the tab or PWA that you want to debug to open the [Micros
 
 ### Resize the DevTools drawer more easily
 
-In Microsoft Edge 83 or earlier, you resized the [Devtools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the drawer. The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it. The following image displays how resizing the drawer worked in Microsoft Edge version 83 or earlier.
+In Microsoft Edge 83 or earlier, you resized the [Devtools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the drawer. The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it. The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
 
 ![Resizing the DevTools Drawer in Microsoft Edge 83.](../../media/2020/05/drawer-83.msft.png)
 
-Starting with Microsoft Edge 84, you can resize the drawer by hovering over the border. This change aligns the behavior for resizing the DevTools drawer with other panes in DevTools. The following image displays how resizing the drawer works in Microsoft Edge 84.
+Starting with Microsoft Edge 84, you can resize the drawer by hovering over the border. This change aligns the behavior for resizing the DevTools drawer with other panes in DevTools. The following image shows how resizing the drawer works in Microsoft Edge 84 or later:
 
 ![Resizing the DevTools Drawer in Microsoft Edge 84.](../../media/2020/05/drawer-84.msft.png)
 
