@@ -30,6 +30,24 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 | [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
 | [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | Runs when the Document Object Model (DOM) is created. |
 
+<!-- ====================================================================== -->
+## Scenario: ExecuteScript JSON Encoded Results
+
+Because the result of is ExecuteScriptAsync is JSON encoded, if the result evaluating the JavaScript is a string, then you will receive a JSON encoded string and not the value of the string. For example the following script will result in a string with the following value including the quotes at the start and end, and the escaping slashes. 
+ * Script: "example \" \' \\ "; 
+ * Result: "example \" ' \\ "
+Note that the script is returning a string and ExecuteScript JSON encodes that for you. If you call JSON.stringify yourself in script then the result will be double encoded as a JSON encoded string the value of which is a JSON encoded string.
+
+Only the properties on the result will be included in the JSON encoded object, and not inherited properties. Most DOM objects inherit all of their properties and so you'll need to explicitly copy their values on to another object to return. For example:
+
+Script              | Result
+---                 | ---
+performance.memory  | {}
+(() => { const {totalJSHeapSize, usedJSHeapSize} = performance.memory; return {totalJSHeapSize, usedJSHeapSize}; })(); |  {"totalJSHeapSize":4434368,"usedJSHeapSize":2832912}
+
+When we return just performance.memory we don't see any of its properties in the result because all of its properties are inherited. If instead we copy particular property values off of performance.memory and into our own new object to return on which the properties are directly set, then we do see those properties in the result.
+
+When executing script via ExecuteScriptAsync that script is run in the global context. It is a good idea to have your script in an anonymous function so that any variables you define aren't polluting the global context. For example if you run the script `const example = 10;` more than once, the subsequent times you run the script will throw an exception because example was defined the first time you ran it. If you instead run the script `(() => { const example = 10; })();` the example variable is defined in the context of that anonymous function and so is not polluting the global context and can be run more than once.
 
 <!-- ====================================================================== -->
 ## Scenario: Running a dedicated script file
