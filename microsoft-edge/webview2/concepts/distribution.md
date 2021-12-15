@@ -3,7 +3,7 @@ description: Distribution options when releasing an app using Microsoft Edge Web
 title: Distribute a WebView2 app and the WebView2 Runtime
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
+ms.date: 12/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -123,7 +123,8 @@ Only one installation of the Evergreen WebView2 Runtime is needed for all Evergr
 
 *   For offline clients: _WebView2 Runtime Standalone Installer_ is a full installer that installs the Evergreen WebView2 Runtime in offline environments.
 
-Currently, both the bootstrapper and standalone installer only support per-machine installs, which requires elevation of permissions.  If an installer is run without elevation, the user is prompted to elevate permissions.
+> [!NOTE]
+> The latest bootstrapper and standalone installer support both per-machine and per-user installs. If the installer is run with elevation, the Runtime will be installed per-system. Otherwise, the Runtime will be installed as per-user and and per-user install may be automatically replaced by a per-system install if a per-system Edge Updater (which should come with a non-Canary Edge browser) is in place.
 
 Use the following online deployment workflow or offline deployment workflow to ensure that the Runtime is already installed before your app launches.  You can adjust your workflow depending on your scenario.  Sample code is available in the [Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment).
 
@@ -147,11 +148,11 @@ If you have an online-only deployment scenario where users are assumed to have i
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```
 
-    *   Alternatively, run [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and evaluate whether the `versionInfo` is `NULL`.  `NULL` indicates that the Runtime isn't installed.
+    *   Alternatively, run [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and evaluate whether the `versionInfo` is `nullptr`.  `nullptr` indicates that the Runtime isn't installed. Note that the API will return version info for non-Stable Edge channels as well if installed, and non-Stable Edge channels can be used for WebView2.
 
 1.  If the Runtime is not installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
 
-1.  Invoke the WebView2 Runtime Bootstrapper from an elevated process or command prompt by issuing the command `MicrosoftEdgeWebview2Setup.exe /silent /install`.
+1.  Invoke the WebView2 Runtime Bootstrapper by issuing the command `MicrosoftEdgeWebview2Setup.exe /silent /install`. Note that running the commmand from an elevated process or command prompt will trigger a per-system install, otherwise a per-machine install will take place and may be automatically replaced by a per-system install if a per-system Edge Updater (which should come with a non-Canary Edge browser) is in place.
 
 The above workflow has several benefits:
 *   The Runtime is installed only when needed.
@@ -185,9 +186,9 @@ If you have an offline deployment scenario, where app deployment has to work ent
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```
 
-    *   Alternatively, call [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the `versionInfo` is `NULL`.  If `versionInfo` is `NULL`, the WebView2 Runtime isn't currently installed on the client.
+    *   Alternatively, call [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the `versionInfo` is `nullptr`.  If `versionInfo` is `nullptr`, the WebView2 Runtime isn't currently installed on the client. Note that the API will return version info for non-Stable Edge channels as well if installed, and non-Stable Edge channels can be used for WebView2.
 
-1.  If the WebView2 Runtime is not installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, either run the installer from an elevated process, or copy and run the following command:
+1.  If the WebView2 Runtime is not installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the command below. Note that running the commmand from an elevated process or command prompt will trigger a per-system install, otherwise a per-machine install will take place and may be automatically replaced by a per-system install if a per-system Edge Updater (which should come with a non-Canary Edge browser) is in place.
 
     ```shell
     MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
