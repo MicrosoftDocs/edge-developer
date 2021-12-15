@@ -77,6 +77,10 @@ When distributing your WebView2 app, make sure that the WebView2 Runtime is pres
 
 If you want to use the Fixed Version distribution mode, you can skip the next couple of sections and navigate to [Details about the Fixed Version runtime distribution mode](#details-about-the-fixed-version-runtime-distribution-mode).
 
+## Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
+
+Please refer to the WSUS section of the (Managing WebView2 applications)[https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/enterprise#windows-server-update-services-wsus] article.
+
 ### Runtime or browser support during development or production
 
 During development and testing, a WebView2 app can use either option as the backing web platform:
