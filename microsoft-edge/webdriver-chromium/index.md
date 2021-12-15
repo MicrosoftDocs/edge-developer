@@ -138,8 +138,6 @@ Selenium uses the `EdgeDriver` class to manage a Microsoft Edge session.  To sta
 
 ```csharp
 var options = new EdgeOptions();
-options.UseChromium = true;
-
 var driver = new EdgeDriver(options);
 ```
 
@@ -194,7 +192,6 @@ You can start a WebDriver session with specific Microsoft Edge binaries.  For ex
 
 ```csharp
 var options = new EdgeOptions();
-options.UseChromium = true;
 options.BinaryLocation = @"C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe";
 
 var driver = new EdgeDriver(options);
@@ -291,7 +288,6 @@ If you set the `UseChromium` property to `true`, you can use the `EdgeOptions` c
 
 ```csharp
 var options = new EdgeOptions();
-options.UseChromium = true;
 options.AddArgument("headless");
 options.AddArgument("disable-gpu");
 ```
