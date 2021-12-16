@@ -51,7 +51,7 @@ The **Accessibility** section of the **Inspect** overlay displays information ab
 * The name and the role of the element that's reported to assistive technology.
 * Whether the element is keyboard focusable.
 
-For example, in the demo page, for the `Bad Contrast` button, the **Inspect** overlay has a warning icon next to the contrast value of 1.77.  The **Inspect** overlay also shows that the button isn't focusable via keyboard.  The button can't be navigated to via keyboard, because the button is implemented as a `<div>` element with a class of `button`, instead of being implemented as a `<button>` element.
+For example, in the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page, for the `Bad Contrast` button, the **Inspect** overlay has a warning icon next to the contrast value of 1.77.  The **Inspect** overlay also shows that the button isn't focusable via keyboard.  The button can't be navigated to via keyboard, because the button is implemented as a `<div>` element with a class of `button`, instead of being implemented as a `<button>` element.
 
 ![Elements that lack sufficient contrast have a warning icon.](images/inspect-tool-bad-contrast.msft.png)
 
@@ -59,13 +59,13 @@ For example, in the demo page, for the `Bad Contrast` button, the **Inspect** ov
 <!-- ====================================================================== -->
 ## Inspecting non-accessible elements
 
-Elements that have the CSS property of `pointer-events: none` aren't available to the **Inspect** tool.  In the demo page, hover over the `Overlay Button` and you will see that the parent element (`div.wrapper`) is shown instead.
+Elements that have the CSS property of `pointer-events: none` aren't available to the **Inspect** tool.  In the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page, hover over the `Overlay Button` and you will see that the parent element (`div.wrapper`) is shown instead of the `Overlay Button`.
 
 ![An element that has a CSS property of 'pointer events: none' can't be selected.](images/inspect-tool-element-element-without-pointer-events.msft.png)
 
-To inspect elements that have the CSS property of `pointer-events: none`, press `Shift` while hovering over the element.  There's also a color overlay showing you that you are in an advanced selection mode.
+To inspect elements that have the CSS property of `pointer-events: none`, press `Shift` while hovering over the element.  There's also a color overlay on page layout regions, indicating that you are in an advanced selection mode.
 
-![Pressing the Shift key while selecting elements on the page allows you to access more elements, including elements that have a CSS style property of 'pointer-events: none'.](images/inspect-tool-with-shift.msft.png)
+![Pressing the Shift key while selecting elements on the page allows you to select elements that have a CSS style property of 'pointer-events: none'.](images/inspect-tool-with-shift.msft.png)
 
 
 <!-- ====================================================================== -->
