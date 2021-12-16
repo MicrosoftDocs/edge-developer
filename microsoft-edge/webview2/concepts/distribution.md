@@ -124,7 +124,7 @@ Only one installation of the Evergreen WebView2 Runtime is needed for all Evergr
 *   For offline clients: _WebView2 Runtime Standalone Installer_ is a full installer that installs the Evergreen WebView2 Runtime in offline environments.
 
 > [!NOTE]
-> The latest bootstrapper and standalone installer support both per-machine and per-user installs. If the installer is run with elevation, the Runtime will be installed as "per-system". Otherwise, the Runtime will be installed as "per-user".  Per-user install is automatically replaced by a per-system install if a per-system Edge Updater is in place.  A per-system Edge Updater is included as part of the Edge browser, except for Canary.
+> The latest bootstrapper and standalone installer support both per-machine and per-user installs. If the installer is run with elevation, the Runtime will be installed as "per-machine". Otherwise, the Runtime will be installed as "per-user".  Per-user install is automatically replaced by a per-machine install if a per-machine Edge Updater is in place.  A per-machine Edge Updater is included as part of the Edge browser, except for Canary.
 
 Use the following online deployment workflow or offline deployment workflow to ensure that the Runtime is already installed before your app launches.  You can adjust your workflow depending on your scenario.  Sample code is available in the [Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment).
 
@@ -152,7 +152,7 @@ If you have an online-only deployment scenario where users are assumed to have i
 
 1.  If the Runtime is not installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
 
-1.  Invoke the WebView2 Runtime Bootstrapper by issuing the command `MicrosoftEdgeWebview2Setup.exe /silent /install`. Note that running the commmand from an elevated process or command prompt will trigger a per-system install, otherwise a per-machine install will take place and may be automatically replaced by a per-system install if a per-system Edge Updater (which should come with a non-Canary Edge browser) is in place.
+1.  Invoke the WebView2 Runtime Bootstrapper by issuing the command `MicrosoftEdgeWebview2Setup.exe /silent /install`. Note that running the commmand from an elevated process or command prompt will trigger a per-machine install, otherwise a per-machine install will take place and may be automatically replaced by a per-machine install if a per-machine Edge Updater (which should come with a non-Canary Edge browser) is in place.
 
 The above workflow has several benefits:
 *   The Runtime is installed only when needed.
@@ -188,7 +188,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
     *   Alternatively, call [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the `versionInfo` is `nullptr`.  If `versionInfo` is `nullptr`, the WebView2 Runtime isn't currently installed on the client. If a preview channel of Microsoft Edge is installed, such as Beta, Dev, or Canary, the API returns version info for that preview channel.   Preview channels of Microsoft Edge can be used for WebView2.
 
-1.  If the WebView2 Runtime is not installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the command below. Note that running the commmand from an elevated process or command prompt will trigger a per-system install, otherwise a per-machine install will take place and may be automatically replaced by a per-system install if a per-system Edge Updater (which should come with a non-Canary Edge browser) is in place.
+1.  If the WebView2 Runtime is not installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the command below. Note that running the commmand from an elevated process or command prompt will trigger a per-machine install, otherwise a per-machine install will take place and may be automatically replaced by a per-machine install if a per-machine Edge Updater (which should come with a non-Canary Edge browser) is in place.
 
     ```shell
     MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
