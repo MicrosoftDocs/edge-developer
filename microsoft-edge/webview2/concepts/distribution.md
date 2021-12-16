@@ -79,7 +79,7 @@ If you want to use the Fixed Version distribution mode, you can skip the next co
 
 ## Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
 
-Please refer to the WSUS section of the (Managing WebView2 applications)[https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/enterprise#windows-server-update-services-wsus] article.
+Refer to the Windows Server Update Services (WSUS) section of the (Managing WebView2 applications)[enterprise.md#windows-server-update-services-wsus] article.
 
 ### Runtime or browser support during development or production
 
