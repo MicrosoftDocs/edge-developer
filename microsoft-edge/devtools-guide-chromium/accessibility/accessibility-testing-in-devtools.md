@@ -91,7 +91,7 @@ You can simulate a narrow viewport by resizing the browser window, but a better 
 *  Do visual testing by simulating different devices, zoom levels, and pixel ratios.
 *  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
 
-To learn more about the **Device Emulation** tool, see [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md).
+To learn more about the **Device Emulation** tool, see [Emulate mobile devices](../device-mode/index.md).
 
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues

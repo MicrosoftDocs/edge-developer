@@ -213,7 +213,7 @@ In the **Preferences** section, you can change several parts of DevTools.  For e
 You can also change the settings of advanced features, such as:
 *   [Workspaces](./workspaces/index.md).
 *   Filter library code with the **Ignore List**.
-*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices in Microsoft Edge DevTools](device-mode/index.md).
+*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices](device-mode/index.md).
 *   Select a network **Throttling** profile.
 *   Define simulated **Locations**.
 *   Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.

@@ -70,7 +70,7 @@ To test your webpages for accessibility, first make a checklist of accessibility
 
 | Accessibility aspect to check | Feature of DevTools | Article or subheading |
 |---|---|---|
-| Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow), and [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md) |
+| Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow), and [Emulate mobile devices](../device-mode/index.md) |
 
 
 <!-- ====================================================================== -->
