@@ -74,4 +74,3 @@ If you click on any of the elements, the **Inspect** tool deactivates, the DOM n
 :::image type="complex" source="images/inspect-tool-highlighted-styles.msft.png" alt-text="Once you clicked on the element you selected, the Styles tool will show the styles applied to this element" lightbox="images/inspect-tool-highlighted-styles.msft.png":::
    Once you clicked on the element you selected, the Styles tool will show the styles applied to this element
 :::image-end:::
-
