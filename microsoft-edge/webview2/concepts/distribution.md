@@ -124,7 +124,7 @@ Only one installation of the Evergreen WebView2 Runtime is needed for all Evergr
 *   For offline clients: _WebView2 Runtime Standalone Installer_ is a full installer that installs the Evergreen WebView2 Runtime in offline environments.
 
 > [!NOTE]
-> The latest bootstrapper and standalone installer support both per-machine and per-user installs. If the installer is run with elevation, the Runtime will be installed per-system. Otherwise, the Runtime will be installed as per-user and and per-user install may be automatically replaced by a per-system install if a per-system Edge Updater (which should come with a non-Canary Edge browser) is in place.
+> The latest bootstrapper and standalone installer support both per-machine and per-user installs. If the installer is run with elevation, the Runtime will be installed as "per-system". Otherwise, the Runtime will be installed as "per-user".  Per-user install is automatically replaced by a per-system install if a per-system Edge Updater is in place.  A per-system Edge Updater is included as part of the Edge browser, except for Canary.
 
 Use the following online deployment workflow or offline deployment workflow to ensure that the Runtime is already installed before your app launches.  You can adjust your workflow depending on your scenario.  Sample code is available in the [Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#webview2-deployment).
 
