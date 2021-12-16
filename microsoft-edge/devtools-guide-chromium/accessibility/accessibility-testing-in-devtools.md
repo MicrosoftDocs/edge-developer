@@ -135,8 +135,7 @@ The Inspect tool's **Accessibility** section includes a **Contrast** line, when 
 
 :::image type="content" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool's Accessibility section includes a Contrast line, when applicable." lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
 
-For detailed walkthrough steps, see [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).
-<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->
+For detailed walkthrough steps, see [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->  The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 The upper section of the **Inspect** tool's information overlay displays the following information:
 
@@ -176,7 +175,7 @@ When using the **Inspect** tool, clicking an element on the rendered page opens 
 
 When using the **Inspect** tool, as you hover over different parts of the rendered page with **Elements** open, you'll notice that the DOM tree automatically refreshes.
 
-For detailed walkthrough steps, see [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).
+For detailed walkthrough steps, see [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).  The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 
 <!-- ====================================================================== -->
