@@ -11,7 +11,7 @@ ms.date: 12/16/2021
 
 # Analyze HTML pages using the Inspect tool
 
-This article shows how to use the **Inspect** tool to preview information about and element, and how to select an element in the current document.  To try out the **Inspect** tool now, open the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page in a different tab or window while reading this article.
+This article shows how to use the **Inspect** tool to preview information about an element, and how to select an element in the current document.  To try out the **Inspect** tool now, open the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page in a different tab or window while reading this article.
 
 The **Inspect** tool button is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
