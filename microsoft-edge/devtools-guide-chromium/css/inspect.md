@@ -1,9 +1,9 @@
 ---
-description: Learn how to use Microsoft Edge DevTools to view and change the CSS of a page CSS.
-title: Inspect CSS Grid in Microsoft Edge DevTools
+description: Learn how to use Microsoft Edge DevTools to analyze HTML pages using the Inspect tool 
+title: Inspect Tool in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
+ms.date: 12/16/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
