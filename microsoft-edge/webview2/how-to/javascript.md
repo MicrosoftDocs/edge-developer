@@ -33,7 +33,7 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 <!-- ====================================================================== -->
 ## Scenario: ExecuteScript JSON Encoded Results
 
-Because the result of is ExecuteScriptAsync is JSON encoded, if the result evaluating the JavaScript is a string, then you will receive a JSON encoded string and not the value of the string. For example the following script will result in a string with the following value including the quotes at the start and end, and the escaping slashes. 
+Because the result of `ExecuteScriptAsync` is JSON encoded, if the result evaluating the JavaScript is a string you will receive a JSON encoded string and not the value of the string. For example, the following script results in a string with the following value including the quotes at the start and end, and the escaping slashes. 
  * Script: "example \" \' \\ "; 
  * Result: "example \" ' \\ "
 The script returns a string that `ExecuteScript` JSON encodes for you. If you call `JSON.stringify` from your script, then the result is doubly encoded as a JSON string the value of which is a JSON string.
