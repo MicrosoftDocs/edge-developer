@@ -13,7 +13,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article shows you how to use the **Inspect** tool to preview information about and select an element from the current document. You can try it out yourself by checking the [Inspect Demo Page](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html).
 
-The **Inspect** tool button (![Inspect](../media/inspect-icon.msft.png)) is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
+The **Inspect** tool button is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
 :::image type="complex" source="images/inspect-tool-button.msft.png" alt-text="The inspect tool button on the upper left of the Developer Tools" lightbox="images/inspect-tool-button.msft.png":::
    The inspect tool button on the upper left of the Developer Tools
