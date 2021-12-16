@@ -252,6 +252,8 @@
                   href: devtools-guide-chromium/css/css-in-js.md
                 - name: Force DevTools into Print Preview mode
                   href: devtools-guide-chromium/css/print-preview.md
+            - name: Inspect tool
+              href: devtools-guide-chromium/css/inspect.md
             - name: Issues
               href: devtools-guide-chromium/issues/index.md
 #           - name: JavaScript Profiler

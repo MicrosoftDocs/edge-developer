@@ -78,3 +78,10 @@ When you click an element in the rendered page:
 *  The **Styles** tool shows the CSS that's applied to the element.
 
 ![When you click an element in the rendered page, the Styles tool shows the styles that are applied to the element.](images/inspect-tool-highlighted-styles.msft.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../accessibility/test-inspect-tool.md)
+* [Overview of accessibility testing using DevTools](../accessibility/accessibility-testing-in-devtools.md) - long article that's a superset of the above linked article.
