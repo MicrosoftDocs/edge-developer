@@ -38,7 +38,7 @@ Because the result of is ExecuteScriptAsync is JSON encoded, if the result evalu
  * Result: "example \" ' \\ "
 The script returns a string that `ExecuteScript` JSON encodes for you. If you call `JSON.stringify` from your script, then the result is doubly encoded as a JSON string the value of which is a JSON string.
 
-Only the properties on the result will be included in the JSON encoded object, and not inherited properties. Most DOM objects inherit all of their properties and so you'll need to explicitly copy their values on to another object to return. For example:
+Only the properties in the result will be included in the JSON encoded object, not inherited properties. Most DOM objects inherit all properties, so you'll need to explicitly copy their values on to another object to return. For example:
 
 Script              | Result
 ---                 | ---
