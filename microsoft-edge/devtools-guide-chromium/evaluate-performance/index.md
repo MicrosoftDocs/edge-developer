@@ -102,31 +102,29 @@ When you ran the optimized version of the page, the blue icons move faster.  Why
        The results of the profile
     :::image-end:::
 
-Wow, that is an overwhelming amount of data.  do not worry, soon the process makes more sense.
+Wow, that's an overwhelming amount of data. Don't worry, it'll all make more sense shortly.
 
 
 <!-- ====================================================================== -->
 ## Analyze the results
 
-After you record the performance of the page, measure the quality of the performance of the page and find the any causes.
+Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
 ### Analyze frames per second
 
 The main metric for measuring the performance of any animation is frames per second (FPS).  Users are happy when animations run at 60 FPS.
 
-1.  Review the **FPS** chart.  Whenever a red bar is displayed above **FPS**, it means that the framerate dropped so low that it is probably harming the user experience.  In general, the higher the green bar, the higher the FPS.
+1.  Look at the **FPS** chart, shown below.  Whenever a red bar is displayed above **FPS**, it means that the framerate dropped so low that it's probably harming the user experience.  In general, the higher the green bar, the higher the FPS.
 
     :::image type="complex" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="The FPS chart" lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
        The **FPS** chart
     :::image-end:::
 
-1.  Below the **FPS** chart, the **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the Performance panel.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU maxed out for long periods, it is an indicator that you should find ways to do less work.
+1.  Below the **FPS** chart, the **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the Performance panel.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that you should find ways to do less work.
 
-    :::image type="complex" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The CPU chart and Summary panel" lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
-       The **CPU** chart and **Summary** panel
-    :::image-end:::
+    :::image type="content" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The CPU chart and Summary panel." lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
 
-1.  Hover on the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is referenced as scrubbing, and it is useful for manually analyzing the progression of animations.
+1.  Hover over the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of animations.
 
     :::image type="complex" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="View a screenshot of the page around the 2500ms mark of the recording" lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
        View a screenshot of the page around the 2500ms mark of the recording
