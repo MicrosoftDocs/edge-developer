@@ -1,76 +1,72 @@
 ---
-description: Learn how to use Microsoft Edge DevTools to analyze HTML pages using the Inspect tool 
-title: Inspect Tool in Microsoft Edge DevTools
+title: Analyze HTML pages using the Inspect tool
+description: Learn how to use Microsoft Edge DevTools to analyze HTML pages using the Inspect tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/16/2021
 ms.topic: article
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 12/16/2021
 ---
 
-# Analyze HTML pages using the Inspect tool 
+# Analyze HTML pages using the Inspect tool
 
-This article shows you how to use the **Inspect** tool to preview information about and select an element from the current document. You can try it out yourself by checking the [Inspect Demo Page](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html).
+This article shows how to use the **Inspect** tool to preview information about and element, and how to select an element in the current document.  To try out the **Inspect** tool now, open the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page in a different tab or window while reading this article.
 
 The **Inspect** tool button is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
-:::image type="complex" source="images/inspect-tool-button.msft.png" alt-text="The inspect tool button on the upper left of the Developer Tools" lightbox="images/inspect-tool-button.msft.png":::
-   The inspect tool button on the upper left of the Developer Tools
-:::image-end:::
+![The Inspect tool button in the upper left of DevTools.](images/inspect-tool-button.msft.png)
 
-Alternatively you press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS) to activate it. 
+Or, press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), to activate the **Inspect** tool.
 
+
+<!-- ====================================================================== -->
 ## Getting element information from the Inspect overlay
 
-When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay. This overlay displays general and accessibility information about that element.  
+When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay.  The **Inspect** overlay displays general and accessibility information about that element.
 
-:::image type="complex" source="images/inspect-tool-padding-margin.msft.png" alt-text="The inspector overlay showing the information of a heading in the browser":::
-   The inspector overlay showing the information of a heading in the browser
-:::image-end:::
+![The inspector overlay showing the information of a heading in the browser.](images/inspect-tool-padding-margin.msft.png)
 
-As you move around the screen, the source view showing the DOM of the document updates and highlights the element you are hovering on in the document tree. 
+When you hover over a page element on the rendered page, the DOM tree automatically expands to highlight the element that you are hovering over.
 
-The **Inspect** overlay shows the following information, depending on the type of element and the styles applied to it:
+The **Inspect** overlay shows the following information about the element:
 
-* The name of the element
-* Its dimensions in pixels
-* Its color as a hexidecimal value and a color swatch
-* Its font settings
-* Its margin and padding in pixels
+* The name of the element.
+* The element's dimensions, in pixels.
+* The element's color, as a hexadecimal value and a color swatch.
+* The element's font settings.
+* The element's margin and padding, in pixels.
 
-If the element is positioned using CSS grid or CSS flexbox, a different icon is displayed next to the element's name
+Which information is shown depends on the type of element and the styles applied to it.  If the element is positioned using CSS grid or CSS flexbox, a different icon appears next to the element's name in the Inspect overlay:
 
-:::image type="complex" source="images/inspect-tool-flexbox-element.msft.png" alt-text="An element displayed using CSS flexbox showing an extra icon next to its name in the Inspect overlay" lightbox="images/inspect-tool-flexbox-element.msft.png":::
-   An element displayed using CSS flexbox showing an extra icon next to its name in the Inspect overlay
-:::image-end:::
+![An element that uses CSS flexbox has an extra icon next to its name in the Inspect overlay.](images/inspect-tool-flexbox-element.msft.png)
 
-The **Accessibility** section of the **Inspect** overlay displays information about text-color contrast, the name and the role of the element reported to assistive technoloy and whether the element is keyboard focusable or not. 
+The **Accessibility** section of the **Inspect** overlay displays information about:
 
-For example, in the demo page, the `Bad Contrast` button shows a warning icon next to the contrast value of 1.77. It also shows that the button is not focusable via keyboard as it is a `DIV` element with a class of button instead of a `BUTTON` element.
+* Text-color contrast.
+* The name and the role of the element that's reported to assistive technology.
+* Whether the element is keyboard focusable.
 
-:::image type="complex" source="images/inspect-tool-bad-contrast.msft.png" alt-text="Elements without sufficient contrast show a warning icon" lightbox="images/inspect-tool-bad-contrast.msft.png":::
-   Elements without sufficient contrast show a warning icon
-:::image-end:::
+For example, in the demo page, for the `Bad Contrast` button, the **Inspect** overlay has a warning icon next to the contrast value of 1.77.  The **Inspect** overlay also shows that the button isn't focusable via keyboard.  The button can't be navigated to via keyboard, because the button is implemented as a `<div>` element with a class of `button`, instead of being implemented as a `<button>` element.
 
+![Elements without sufficient contrast have a warning icon.](images/inspect-tool-bad-contrast.msft.png)
+
+
+<!-- ====================================================================== -->
 ## Inspecting non-accessible elements
 
-Elements that have the CSS property of `pointer-events: none` are not available to the **Inspect** tool. In the demo page, try to hover over the `Overlay Button` and you will see that the parent element - in this case `div.wrapper` is shown instead.
+Elements that have the CSS property of `pointer-events: none` aren't available to the **Inspect** tool.  In the demo page, hover over the `Overlay Button` and you will see that the parent element (`div.wrapper`) is shown instead.
 
-:::image type="complex" source="images/inspect-tool-element-element-without-pointer-events.msft.png" alt-text="Trying to select an element with pointer `events: none` is not possible." lightbox="images/inspect-tool-element-element-without-pointer-events.msft.png":::
-   Trying to select an element with `pointer events: none` is not possible.
-:::image-end:::
+![An element that has `pointer events: none` can't be selected.](images/inspect-tool-element-element-without-pointer-events.msft.png)
 
-If you want to inspect elements like that, you need to press `Shift` whilst hovering over elements. There is also a color overlay showing you that you are in an advanced selection mode.
+To inspect elements that have the CSS property of `pointer-events: none`, press `Shift` while hovering over the element.  There's also a color overlay showing you that you are in an advanced selection mode.
 
-:::image type="complex" source="images/inspect-tool-with-shift.msft.png" alt-text="Pressing the Shift key whilst selecting elements on the page allows you to access elements more elements, even those with a `pointer-events: none` style setting" lightbox="images/inspect-tool-with-shift.msft.png":::
-   Pressing the Shift key whilst selecting elements on the page allows you to access elements more elements, even those with a `pointer-events: none` style setting
-:::image-end:::
+![Pressing the Shift key while selecting elements on the page allows you to access elements more elements, including elements that have a `pointer-events: none` style setting.](images/inspect-tool-with-shift.msft.png)
 
+
+<!-- ====================================================================== -->
 ## Selecting the element and terminating Inspect mode
 
-If you click on any of the elements, the **Inspect** tool deactivates, the DOM node is highlighted and the **Styles** tool shows the CSS applied to the element.
+If you click any element, the **Inspect** tool deactivates, the DOM node is highlighted, and the **Styles** tool shows the CSS that's applied to the element:
 
-:::image type="complex" source="images/inspect-tool-highlighted-styles.msft.png" alt-text="Once you clicked on the element you selected, the Styles tool will show the styles applied to this element" lightbox="images/inspect-tool-highlighted-styles.msft.png":::
-   Once you clicked on the element you selected, the Styles tool will show the styles applied to this element
-:::image-end:::
+![When you click an element, the Styles tool shows the styles that are applied to the element.](images/inspect-tool-highlighted-styles.msft.png)
