@@ -186,7 +186,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
         ```
 
-    *   Alternatively, call [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the `versionInfo` is `nullptr`.  If `versionInfo` is `nullptr`, the WebView2 Runtime isn't currently installed on the client. Note that the API will return version info for non-Stable Edge channels as well if installed, and non-Stable Edge channels can be used for WebView2.
+    *   Alternatively, call [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the `versionInfo` is `nullptr`.  If `versionInfo` is `nullptr`, the WebView2 Runtime isn't currently installed on the client. If a preview channel of Microsoft Edge is installed, such as Beta, Dev, or Canary, the API returns version info for that preview channel.   Preview channels of Microsoft Edge can be used for WebView2.
 
 1.  If the WebView2 Runtime is not installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the command below. Note that running the commmand from an elevated process or command prompt will trigger a per-system install, otherwise a per-machine install will take place and may be automatically replaced by a per-system install if a per-system Edge Updater (which should come with a non-Canary Edge browser) is in place.
 
