@@ -15,10 +15,9 @@ This article shows you how to use the **Inspect** tool to preview information ab
 
 The **Inspect** tool button (![Inspect](../media/inspect-icon.msft.png)) is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
-:::image type="complex" source="images/inspect-tool-button.msft.png" alt-text="The inspect tool button on the top right of the Developer Tools" lightbox="images/inspect-tool-button.msft.png":::
-   The inspect tool button on the top right of the Developer Tools
+:::image type="complex" source="images/inspect-tool-button.msft.png" alt-text="The inspect tool button on the upper left of the Developer Tools" lightbox="images/inspect-tool-button.msft.png":::
+   The inspect tool button on the upper left of the Developer Tools
 :::image-end:::
-
 
 Alternatively you press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS) to activate it. 
 
@@ -40,11 +39,7 @@ The **Inspect** overlay shows the following information, depending on the type o
 * Its font settings
 * Its margin and padding in pixels
 
-If the element has been positioned using CSS grid or CSS flexbox you get different icons displayed next to its name.
-
-:::image type="complex" source="images/inspect-tool-grid-element.msft.png" alt-text="An element displayed using CSS grid layout showing an extra icon next to its name in the Inspect overlay" lightbox="images/inspect-tool-grid-element.msft.png":::
-   An element displayed using CSS grid layout showing an extra icon next to its name in the Inspect overlay
-:::image-end:::
+If the element is positioned using CSS grid or CSS flexbox, a different icon is displayed next to the element's name
 
 :::image type="complex" source="images/inspect-tool-flexbox-element.msft.png" alt-text="An element displayed using CSS flexbox showing an extra icon next to its name in the Inspect overlay" lightbox="images/inspect-tool-flexbox-element.msft.png":::
    An element displayed using CSS flexbox showing an extra icon next to its name in the Inspect overlay
@@ -60,7 +55,7 @@ For example, in the demo page, the `Bad Contrast` button shows a warning icon ne
 
 ## Inspecting non-accessible elements
 
-Elements that are covered by other elements or have the CSS property of `pointer-events: hidden` are not available to the **Inspect** tool. In the demo page, try to hover over the `Overlay Button` and you will see that the parent element - in this case `div.wrapper` is shown instead.
+Elements that have the CSS property of `pointer-events: none` are not available to the **Inspect** tool. In the demo page, try to hover over the `Overlay Button` and you will see that the parent element - in this case `div.wrapper` is shown instead.
 
 :::image type="complex" source="images/inspect-tool-element-element-without-pointer-events.msft.png" alt-text="Trying to select an element with pointer `events: none` is not possible." lightbox="images/inspect-tool-element-element-without-pointer-events.msft.png":::
    Trying to select an element with `pointer events: none` is not possible.
@@ -68,13 +63,13 @@ Elements that are covered by other elements or have the CSS property of `pointer
 
 If you want to inspect elements like that, you need to press `Shift` whilst hovering over elements. There is also a color overlay showing you that you are in an advanced selection mode.
 
-:::image type="complex" source="images/inspect-tool-with-shift.msft.png" alt-text="Pressing the Shift key whilst selecting elements on the page allows you to access elements more elements, even those with a pointer-events: none style setting" lightbox="images/inspect-tool-with-shift.msft.png":::
-   Pressing the Shift key whilst selecting elements on the page allows you to access elements more elements, even those with a pointer-events: none style setting
+:::image type="complex" source="images/inspect-tool-with-shift.msft.png" alt-text="Pressing the Shift key whilst selecting elements on the page allows you to access elements more elements, even those with a `pointer-events: none` style setting" lightbox="images/inspect-tool-with-shift.msft.png":::
+   Pressing the Shift key whilst selecting elements on the page allows you to access elements more elements, even those with a `pointer-events: none` style setting
 :::image-end:::
 
 ## Selecting the element and terminating Inspect mode
 
-If you click on any of the elements, the **Styles** tool shows the CSS applied to the element and the **Inspect** tool deactivates.
+If you click on any of the elements, the **Inspect** tool deactivates, the DOM node is highlighted and the **Styles** tool shows the CSS applied to the element.
 
 :::image type="complex" source="images/inspect-tool-highlighted-styles.msft.png" alt-text="Once you clicked on the element you selected, the Styles tool will show the styles applied to this element" lightbox="images/inspect-tool-highlighted-styles.msft.png":::
    Once you clicked on the element you selected, the Styles tool will show the styles applied to this element
