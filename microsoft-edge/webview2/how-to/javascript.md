@@ -45,7 +45,7 @@ Script              | Result
 performance.memory  | {}
 (() => { const {totalJSHeapSize, usedJSHeapSize} = performance.memory; return {totalJSHeapSize, usedJSHeapSize}; })(); |  {"totalJSHeapSize":4434368,"usedJSHeapSize":2832912}
 
-When we return just performance.memory we don't see any of its properties in the result because all of its properties are inherited. If instead we copy particular property values off of performance.memory and into our own new object to return on which the properties are directly set, then we do see those properties in the result.
+When we return just `performance.memory` we don't see any of its properties in the result because all properties are inherited. If instead we copy particular property values from `performance.memory` into our own new object to return which properties are directly set, then we do see those properties in the result.
 
 When executing script via ExecuteScriptAsync that script is run in the global context. It is a good idea to have your script in an anonymous function so that any variables you define aren't polluting the global context. For example if you run the script `const example = 10;` more than once, the subsequent times you run the script will throw an exception because example was defined the first time you ran it. If you instead run the script `(() => { const example = 10; })();` the example variable is defined in the context of that anonymous function and so is not polluting the global context and can be run more than once.
 
