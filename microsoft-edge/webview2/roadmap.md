@@ -25,6 +25,7 @@ The WebView2 team is planning the following major efforts for future updates.
 
 * UWP Preview
 * MacOS Preview
+* Linux Preview
 * Xbox Preview
 * HoloLens Preview
 
