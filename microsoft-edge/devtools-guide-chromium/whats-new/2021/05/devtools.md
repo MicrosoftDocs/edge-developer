@@ -6,6 +6,7 @@ ms.author: msedgedevrel
 ms.date: 06/02/2021
 ms.topic: article
 ms.prod: microsoft-edge
+ms.localizationpriority: high
 keywords: microsoft edge, web development, f12 tools, devtools
 ---
 # What's New In DevTools (Microsoft Edge 92)
