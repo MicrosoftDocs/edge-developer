@@ -1,5 +1,5 @@
 ---
-title: Roadmap for Microsoft Edge WebView2
+title: WebView2 roadmap
 description: Learn about what's coming next for WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,11 +9,11 @@ ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ms.date: 01/07/2021
 ---
-# Roadmap for Microsoft Edge WebView2
+# WebView2 roadmap
 
 Last Updated: July 2021
 
-The WebView2 control allows you to embed web technologies in your native applications.  This article outlines the prospective roadmap for WebView2.
+The Microsoft Edge WebView2 control allows you to embed web technologies in your native applications.  This article outlines the prospective roadmap for WebView2.
 
 WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here are not exhaustive and are subject to change.
 
