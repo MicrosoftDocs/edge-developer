@@ -6,6 +6,7 @@ ms.author: msedgedevrel
 ms.date: 11/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
+ms.localizationpriority: high
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
 ---
