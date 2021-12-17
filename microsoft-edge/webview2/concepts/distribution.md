@@ -155,12 +155,16 @@ If you have an online-only deployment scenario where users are assumed to have i
 
 1.  If the Runtime is not installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
 
-1.  Invoke the WebView2 Runtime Bootstrapper by issuing the command `MicrosoftEdgeWebview2Setup.exe /silent /install`.
+1.  Invoke the WebView2 Runtime Bootstrapper by issuing the following command.
 
     <!-- keep the 3 instances or variants of this passage in sync: -->
 
-    If you run that command from an elevated process or command prompt, it triggers a _per-machine_ install.  If you don't run the command from an elevated process or command prompt, a _per-user_ install will take place.  However, a _per-user_ install is automatically replaced by a _per-machine_ install, if a _per-machine_<!--if updater is always per-machine, strike that "per-machine" qualifier, and break out a separate statement or phrase, that the updater is per-machine--> Microsoft Edge Updater is in place.  A _per-machine_<!--strike "A _per-machine_" if updater is always per-machine--> Microsoft Edge Updater is provided as part of Microsoft Edge, except for the Canary preview channel of Microsoft Edge.
+    If you run the following command from an elevated process or command prompt, it triggers a _per-machine_ install.  If you don't run the command from an elevated process or command prompt, a _per-user_ install will take place.  However, a _per-user_ install is automatically replaced by a _per-machine_ install, if a _per-machine_<!--if updater is always per-machine, strike that "per-machine" qualifier, and break out a separate statement or phrase, that the updater is per-machine--> Microsoft Edge Updater is in place.  A _per-machine_<!--strike "A _per-machine_" if updater is always per-machine--> Microsoft Edge Updater is provided as part of Microsoft Edge, except for the Canary preview channel of Microsoft Edge.
 
+    ```Shell
+    MicrosoftEdgeWebview2Setup.exe /silent /install
+    ```
+    
 The above workflow has several benefits:
 *   The Runtime is installed only when needed.
 *   You aren't required to package a Runtime installer with your WebView2 app.
@@ -195,13 +199,13 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
     *   Alternatively, call [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and check whether the `versionInfo` is `nullptr`.  If `versionInfo` is `nullptr`, that means that the WebView2 Runtime isn't installed on the client. If a preview channel of Microsoft Edge is installed (such as Beta, Dev, or Canary), the API returns version info for that preview channel.
 
-1.  If the WebView2 Runtime isn't installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the command below.
+1.  If the WebView2 Runtime isn't installed, run the Evergreen Standalone Installer.  If you want to run a silent installation, you can run the following command.
 
     <!-- keep the 3 instances or variants of this passage in sync: -->
 
-    If you run the command from an elevated process or command prompt, it triggers a _per-machine_ install.  If you don't run the command from an elevated process or command prompt, a _per-user_ install will take place.  However, a _per-user_ install is automatically replaced by a _per-machine_ install, if a _per-machine_<!--if updater is always per-machine, strike that "per-machine" qualifier, and break out a separate statement or phrase, that the updater is per-machine--> Microsoft Edge Updater is in place.  A _per-machine_<!--strike "A _per-machine_" if updater is always per-machine--> Microsoft Edge Updater is provided as part of Microsoft Edge, except for the Canary preview channel of Microsoft Edge.
+    If you run the following command from an elevated process or command prompt, it triggers a _per-machine_ install.  If you don't run the command from an elevated process or command prompt, a _per-user_ install will take place.  However, a _per-user_ install is automatically replaced by a _per-machine_ install, if a _per-machine_<!--if updater is always per-machine, strike that "per-machine" qualifier, and break out a separate statement or phrase, that the updater is per-machine--> Microsoft Edge Updater is in place.  A _per-machine_<!--strike "A _per-machine_" if updater is always per-machine--> Microsoft Edge Updater is provided as part of Microsoft Edge, except for the Canary preview channel of Microsoft Edge.
 
-    ```shell
+    ```Shell
     MicrosoftEdgeWebView2RuntimeInstaller{X64/X86/ARM64}.exe /silent /install
     ```
 
