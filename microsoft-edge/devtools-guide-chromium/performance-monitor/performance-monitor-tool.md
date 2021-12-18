@@ -1,12 +1,12 @@
 ---
-description: The Performance monitor tool provides real-time performance metrics to help investigate performance issues.
 title: Performance monitor
+description: The Performance monitor tool in DevTools provides real-time performance metrics to help investigate performance issues.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 10/28/2021
 ---
 # Performance monitor
 

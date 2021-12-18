@@ -1,12 +1,12 @@
 ---
-description: The architecture of Microsoft Edge extensions, and core concepts to build extensions.
 title: Extension concepts and architecture
+description: The architecture of Microsoft Edge extensions, and core concepts to build extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, html, css, javascript, developer, extensions
+ms.date: 01/07/2021
 ---
 # Extension concepts and architecture
 

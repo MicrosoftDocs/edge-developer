@@ -1,12 +1,12 @@
 ---
-description: Managing a Partner Center account for the Microsoft Edge program.
 title: Manage account settings
+description: Managing a Partner Center account for the Microsoft Edge program.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+ms.date: 02/17/2021
 ---
 # Manage account settings
 

@@ -1,12 +1,12 @@
 ---
-description: Remote debug live content on an Android device from a Windows or macOS computer.
 title: Get started with remote debugging Android devices
+description: Remote debug live content on an Android device from a Windows or macOS computer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 

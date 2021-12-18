@@ -1,13 +1,13 @@
 ---
-description: Resources for inclusive design tools and best practices.
 title: Designing accessible websites
+description: Resources for inclusive design tools and best practices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+ms.date: 10/27/2020
 ---
 # Designing accessible websites
 

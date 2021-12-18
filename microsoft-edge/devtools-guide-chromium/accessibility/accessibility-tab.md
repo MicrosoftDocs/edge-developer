@@ -1,12 +1,12 @@
 ---
-description: Testing accessibility using the Accessibility tab.
 title: Test accessibility using the Accessibility tab
+description: Testing accessibility using the Accessibility tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques

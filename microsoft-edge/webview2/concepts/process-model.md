@@ -1,13 +1,13 @@
 ---
-description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
 title: The WebView2 process model
+description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 09/21/2021
 ---
 # The WebView2 process model
 

@@ -3,7 +3,7 @@ title: Override the user agent string
 description: Open the Network conditions tool, disable Select automatically, and choose from the list or enter a custom string.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 07/19/2021

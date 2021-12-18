@@ -1,13 +1,13 @@
 ---
-description: A reference for WebDriver capabilities and Microsoft Edge-specific options supported by EdgeDriver.
 title: Capabilities and EdgeOptions
+description: A reference for WebDriver capabilities and Microsoft Edge-specific options supported by EdgeDriver.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
+ms.date: 02/10/2021
 ---
 # Capabilities and EdgeOptions
 

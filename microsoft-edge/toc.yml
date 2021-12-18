@@ -120,11 +120,11 @@
                       href: devtools-guide-chromium/accessibility/accessibility-tab.md
                 - name: Vision deficiencies
                   items:
-                    - name: Verify that the page is usable by people with color blindness
+                    - name: Verify that a page is usable by people with color blindness
                       href: devtools-guide-chromium/accessibility/test-color-blindness.md
-                    - name: Verify that the page is usable with blurred vision
+                    - name: Verify that a page is usable with blurred vision
                       href: devtools-guide-chromium/accessibility/test-blurred-vision.md
-                    - name: Verify that the page is usable with UI animation turned off
+                    - name: Verify that a page is usable with UI animation turned off
                       href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
                 - name: Usable when narrow
                   items:

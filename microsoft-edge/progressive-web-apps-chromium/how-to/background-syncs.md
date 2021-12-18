@@ -1,13 +1,13 @@
 ---
 title: Synchronize and update a PWA in the background
-description: Learn how to do work in the background, when the app isn't running, to synchronize content with the server, fetch new resources, or handle long duration downloads.
+description: How to do work in the background when the app isn't running, to synchronize content with the server, fetch new resources, or handle long-duration downloads.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/14/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, service worker, background, synchronization, fetch
+ms.date: 09/14/2021
 ---
 # Synchronize and update a PWA in the background
 
