@@ -1,12 +1,12 @@
 ---
-description: Automatically test a webpage for accessibility issues by using the Accessibility section of the Issues tool.
 title: Automatically test a webpage for accessibility issues
+description: Automatically test a webpage for accessibility issues by using the Accessibility section of the Issues tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Automatically test a webpage for accessibility issues
 

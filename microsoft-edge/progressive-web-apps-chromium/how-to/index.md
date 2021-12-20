@@ -1,12 +1,12 @@
 ---
 title: Get started with Progressive Web Apps
-description: An overview of the basics of Progressive Web Apps (PWAs), and tools for building Progressive Web Apps on Windows.
+description: Overview of the basics of Progressive Web Apps (PWAs), and tools for building Progressive Web Apps on Windows.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
+ms.date: 11/19/2021
 ---
 # Get started with Progressive Web Apps
 

@@ -1,12 +1,12 @@
 ---
-description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 title: What's new in DevTools (Microsoft Edge 81)
+description: 3D View, Visual Studio integration with Microsoft Edge, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 

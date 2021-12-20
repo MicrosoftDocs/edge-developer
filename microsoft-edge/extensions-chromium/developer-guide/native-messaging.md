@@ -1,18 +1,18 @@
 ---
-description: Native messaging documentation
-title: Native Messaging
+title: Native messaging
+description: To communicate with a native Win32 app that's installed on a user's device, an extension uses the message-passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/31/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
+ms.date: 03/31/2021
 ---
 # Native messaging
 
-Extensions communicate with a native Win32 app installed on a user's device using message passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.  Extensions using native messaging are installed in Microsoft Edge similar to any other extension.  However, native apps are not installed or managed by Microsoft Edge.
+To communicate with a native Win32 app that's installed on a user's device, an extension uses the message-passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.  Extensions using native messaging are installed in Microsoft Edge similar to any other extension.  However, native apps are not installed or managed by Microsoft Edge.
 
-To acquire the extension and native app host, you have two distribution models.
+To acquire the extension and native app host, there are two distribution models:
 
 *   Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
 *   Install your extension using the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home), and your extension prompts users to install the host.

@@ -1,14 +1,14 @@
 ---
-ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
-description: How best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
 title: Resources about building accessible websites
+description: How best practices and Accessible Rich Internet Applications (ARIA) can come together to create an accessible website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/11/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+ms.assetid: 1b3ebc25-d023-4f23-bbba-dce066c20de8
 ms.custom: seodec18
+ms.date: 05/11/2021
 ---
 # Resources about building accessible websites
 

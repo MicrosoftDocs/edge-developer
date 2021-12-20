@@ -1,12 +1,12 @@
 ---
-description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar panel.
 title: What's new in DevTools (Microsoft Edge 87)
+description: New CSS Grid debugging tools, Webauthn tool, moveable tools, and Computed sidebar panel.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen
 
@@ -152,7 +152,7 @@ In earlier versions of Microsoft Edge, there was no native WebAuthn debugging su
 *   Customize attributes of authenticators
 *   Inspect states of authenticators
 
-For more information about the **WebAuthn** feature, navigate to [Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools](../../../webauthn/index.md).
+For more information about the **WebAuthn** feature, see [Emulate authenticators and debug WebAuthn](../../../webauthn/index.md).
 
 You are able to emulate authenticators and debug the [Web Authentication API](https://w3c.github.io/webauthn) with the new [WebAuthn](../../../webauthn/index.md) tool.  To open the **WebAuthn** tool, choose **the Customize and control DevTools** (`...`) icon > **More tools** > **WebAuthn**.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [#1034663](https://crbug.com/1034663).
 

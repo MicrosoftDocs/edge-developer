@@ -1,13 +1,13 @@
 ---
 title: Share content with other apps
-description: Learn how to share content from your PWA with other apps and accept shared content from other apps.
+description: How to share content from your PWA with other apps and accept shared content from other apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, share
+ms.date: 09/27/2021
 ---
 # Share content with other apps
 

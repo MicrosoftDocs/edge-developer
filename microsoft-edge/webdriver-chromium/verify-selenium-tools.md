@@ -1,13 +1,13 @@
 ---
-description: Information about verifying the GPG signature for Selenium Tools for Microsoft Edge releases.
 title: Verifying downloads of Selenium Tools for Microsoft Edge
+description: How to verify the GPG signature for Selenium Tools for Microsoft Edge releases.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
+ms.date: 01/29/2021
 ---
 # Verify downloads of Selenium Tools for Microsoft Edge
 

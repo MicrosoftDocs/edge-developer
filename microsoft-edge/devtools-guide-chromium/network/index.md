@@ -1,12 +1,12 @@
 ---
+title: Inspect network activity
 description: A tutorial on the most popular network-related features in Microsoft Edge DevTools.
-title: Inspect network activity in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,12 +21,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Inspect network activity in Microsoft Edge DevTools
+# Inspect network activity
 
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.
 
-If you want to browse features, navigate to [Network Reference](./reference.md).
+If you want to browse features, see [Network features reference](./reference.md).
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -45,7 +45,7 @@ In general, use the Network panel when you need to make sure that resources are 
 *   Making sure that resources are actually being uploaded or downloaded at all.
 *   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.
 
-If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  Navigate to [Optimize Website Speed](../speed/get-started.md).
+If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  See [Optimize website speed](../speed/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -53,7 +53,7 @@ If you are looking for ways to improve page load performance, **do not** start w
 
 To get the most out of this tutorial, open up the demo and try out the features on the demo page.
 
-1.  Open the [Get Started Demo](https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html).
+1.  Open the [Get Started Demo](https://microsoftedge.github.io/Demos/network-tutorial/).
 
     :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="The demo" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
        The demo
@@ -197,7 +197,7 @@ Screenshots display how a webpage looks over time while it loads.
 
 Select a resource to learn more information about it.
 
-1.  Select `getstarted.html`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers.
+1.  Select `network-tutorial/`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers.
 
     :::image type="complex" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers panel" lightbox="../media/network-glitch-network-resources-headers.msft.png":::
        The **Headers** panel
@@ -298,7 +298,7 @@ The **Filter** text box supports many different types of filtering.
        A negative filter
     :::image-end:::
 
-1.  Type `domain:cdn.glitch.com` into the **Filter** text box.  DevTools filters out any resource with a URL that does not match this domain.
+1.  Type `larger-than:1000` into the **Filter** text box.  DevTools filters out any resource with responses that are smaller than 1000 bytes.
 
     :::image type="complex" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="A property filter" lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
        A property filter
@@ -335,11 +335,6 @@ For other filtering workflows, navigate to [Filter requests](./reference.md#filt
 How does a page look and behave when some of the page resources are not available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
 
 1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
-
-    :::image type="complex" source="../media/network-glitch-network-cli-empty.msft.png" alt-text="The Command Menu" lightbox="../media/network-glitch-network-cli-empty.msft.png":::
-       The **Command Menu**
-    :::image-end:::
-
 1.  Type `block`, select **Show Request Blocking**, and select `Enter`.
 
     :::image type="complex" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Show Request Blocking" lightbox="../media/network-glitch-network-cli-block.msft.png":::
@@ -369,9 +364,9 @@ How does a page look and behave when some of the page resources are not availabl
 <!-- ====================================================================== -->
 ## Conclusion
 
-Congratulations, you have completed the tutorial.  You now know how to use the **Network** tool in the Microsoft Edge DevTools!
+Congratulations, you have completed the tutorial!  You now know how to use the **Network** tool in Microsoft Edge DevTools.
 
-Navigate to the [Network Reference](./reference.md) to discover more DevTools features related to inspecting network activity.
+To discover more DevTools features related to inspecting network activity, see [Network features reference](./reference.md).
 
 
 <!-- ====================================================================== -->

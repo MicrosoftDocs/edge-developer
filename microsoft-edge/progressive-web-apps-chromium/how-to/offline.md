@@ -1,13 +1,13 @@
 ---
 title: Offline and network connectivity support in Progressive Web Apps
-description: Learn how to use supporting technologies to create resilient experiences to cater for different network conditions.
+description: How to use supporting technologies to create resilient experiences to cater for different network conditions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+ms.date: 01/07/2021
 ---
 # Offline and network connectivity support in Progressive Web Apps
 

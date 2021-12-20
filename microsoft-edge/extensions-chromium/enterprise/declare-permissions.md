@@ -1,12 +1,12 @@
 ---
-description: Learn how to declare permissions for APIs in your manifest
 title: Declare API permissions in extension manifests
+description: Learn how to declare permissions for APIs in your manifest.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/17/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 03/17/2021
 ---
 <!-- Copyright A. W. Fuchs
 

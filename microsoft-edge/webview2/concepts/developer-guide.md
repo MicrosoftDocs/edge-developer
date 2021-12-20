@@ -1,13 +1,13 @@
 ---
-description: Learn about development best practices to use when developing your WebView2 application.
 title: WebView2 development best practices
+description: Learn about development best practices to use when developing your WebView2 application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, edge, best practices
+ms.date: 08/03/2021
 ---
 # WebView2 development best practices
 
