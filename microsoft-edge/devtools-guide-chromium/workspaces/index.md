@@ -1,12 +1,12 @@
 ---
-description: Learn how to save changes made within DevTools to disk.
 title: Edit files with Workspaces
+description: How to save changes made within DevTools to disk.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 

@@ -1,12 +1,12 @@
 ---
-description: Copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.  Edit style rules that were initially defined by a CSSOM function.
 title: Style editing for CSS-in-JS frameworks
+description: Copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.  Edit style rules that were initially defined by a CSSOM function.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
+ms.date: 08/25/2021
 ---
 <!-- Copyright Alex Rudenko
 

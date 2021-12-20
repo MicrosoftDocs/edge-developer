@@ -1,12 +1,12 @@
 ---
-description: Moving users to Microsoft Edge from Internet Explorer
 title: Moving users to Microsoft Edge from Internet Explorer
+description: Moving users to Microsoft Edge from Internet Explorer.
 author: MSEdgeTeam
-ms.date: 11/13/2020
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, internet explorer
+ms.date: 11/13/2020
 ---
 # Moving users to Microsoft Edge from Internet Explorer
 

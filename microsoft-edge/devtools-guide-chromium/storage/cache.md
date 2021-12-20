@@ -1,12 +1,12 @@
 ---
+title: View Cache data
 description: How to view Cache data from the Application panel of Microsoft Edge DevTools.
-title: View cache data with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View cache data with Microsoft Edge DevTools
+# View Cache data
 
 This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to inspect [Cache](https://developer.mozilla.org/docs/Web/API/Cache) data.
 

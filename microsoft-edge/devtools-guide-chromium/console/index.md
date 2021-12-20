@@ -3,7 +3,7 @@ title: Console overview
 description: An introduction to the Console tool inside the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 04/13/2021

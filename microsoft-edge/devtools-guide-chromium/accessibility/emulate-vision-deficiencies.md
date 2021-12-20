@@ -1,9 +1,9 @@
 ---
-title: Emulate vision deficiencies in Microsoft Edge DevTools (color blindness)
-description: Emulate vision deficiencies in Microsoft Edge DevTools.
+title: Emulate vision deficiencies
+description: Emulating vision deficiencies in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
@@ -61,4 +61,4 @@ As an alternative approach, you can use the **Command Menu** to access the diffe
 <!-- ====================================================================== -->
 ## See also
 
-*  [Verify that the page is usable with blurred vision](test-blurred-vision.md)
+*  [Verify that a page is usable with blurred vision](test-blurred-vision.md)

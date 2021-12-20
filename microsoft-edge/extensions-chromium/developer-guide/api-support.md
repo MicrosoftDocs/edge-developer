@@ -1,16 +1,16 @@
 ---
-description: List of supported APIs to use when building Microsoft Edge extensions.
 title: Supported APIs for Microsoft Edge extensions
+description: List of supported APIs to use when building Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, extension api , developer, web development
+ms.date: 01/07/2021
 ---
 # Supported APIs for Microsoft Edge extensions
 
-The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge browser.
+When building extensions for the Microsoft Edge browser, you can use the following APIs.
 
 | API                                   | Description
 |---------------------------------------|----------------------------------------------------------|

@@ -1,12 +1,12 @@
 ---
+title: Manifest file format for extensions
 description: Learn about the format of the manifest file in an extension package.
-title: Manifest file format
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
+ms.date: 06/07/2021
 ---
 
 # Manifest file format for extensions

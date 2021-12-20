@@ -1,14 +1,14 @@
 ---
+title: The Search panel
 description: The Search tool in Microsoft Edge DevTools helps find source files.
-title: Search
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 10/28/2021
 ---
-# Search
+# The Search panel
 
 Use the **Search** tool to find specific source files for a webpage.
 

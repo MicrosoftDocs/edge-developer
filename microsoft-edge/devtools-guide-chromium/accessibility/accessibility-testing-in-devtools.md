@@ -1,9 +1,9 @@
 ---
 title: Overview of accessibility testing using DevTools
-description: Getting started testing for accessibility problems using DevTools
+description: Getting started testing for accessibility problems using DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
@@ -375,7 +375,7 @@ When switching to a light theme in the **Rendering** tool, the following issues 
 
 ### Verify that the webpage is usable by people with color blindness
 
-The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that the page is usable by people with color blindness](test-color-blindness.md).
+The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that a page is usable by people with color blindness](test-color-blindness.md).
 
 :::image type="content" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the page as someone with protanopia (red color blindness) would see it." lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
 
@@ -383,7 +383,7 @@ The different donation states use color (red, green, yellow) as the only means t
 ### Verify that the webpage is usable with blurred vision
 
 Another interesting feature of the **Rendering** tool is that you can simulate blurred vision.  If we select the **Blurred vision** option from the **Emulate vision deficiencies** dropdown list, we can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
-For detailed walkthrough steps, see [Verify that the page is usable with blurred vision](test-blurred-vision.md).
+For detailed walkthrough steps, see [Verify that a page is usable with blurred vision](test-blurred-vision.md).
 
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="Simulating a blurred page can reveal accessibility issues." lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
@@ -406,7 +406,7 @@ In the demo page here, turning off animations will stop the smooth scrolling of 
 
 This CSS media query conditionally runs the "smooth scrolling" animation.  But the animation of the top navigation bar, sidebar navigation menu, and **More** links still run, even when the user doesn't want to see animations. Those other animations need to be conditionally run, such as by adding additional media queries.
 
-For detailed walkthrough steps, see [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md).
+For detailed walkthrough steps, see [Verify that a page is usable with UI animation turned off](test-reduced-ui-motion.md).
 
 
 <!-- ====================================================================== -->

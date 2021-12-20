@@ -1,15 +1,15 @@
 ---
-description: Learn about what's coming next for WebView2
-title: Roadmap for Microsoft Edge WebView 2
+title: WebView2 roadmap
+description: Learn about what's coming next for WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 01/07/2021
 ---
-# Microsoft Edge WebView2 roadmap
+# WebView2 roadmap
 
 > [!NOTE]
 > Last Updated:  July 2021

@@ -3,7 +3,7 @@ title: Simulate device orientation
 description: Simulate device orientation using the Orientation section of the Sensors tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/04/2021
