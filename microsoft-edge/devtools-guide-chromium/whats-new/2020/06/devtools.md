@@ -1,12 +1,12 @@
 ---
-description: CSS grid debugging features, Edit and Replay requests with the Network Console, and more.
 title: What's new in DevTools (Microsoft Edge 85)
+description: CSS grid debugging features, Edit and Replay requests with the Network Console, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen
 

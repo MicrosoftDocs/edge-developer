@@ -1,12 +1,12 @@
 ---
-description: Identify expensive functions using the Microsoft Edge DevTools Memory panel.
 title: Speed up JavaScript runtime
+description: Identify expensive, inefficient functions by using the Memory panel of Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -38,7 +38,7 @@ Identify expensive functions using the **Memory** tool.
 <!-- ====================================================================== -->
 ## Record a Sampling Profile
 
-If you notice jank in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
+If you notice jank (interruptions of rendering) in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
 
 1.  Navigate to the **Memory** tool of DevTools.
 1.  Choose the **Allocation sampling** radio button.

@@ -1,12 +1,12 @@
 ---
-description: The Changes tool tracks any changes you have made to CSS or JavaScript in DevTools.
 title: Changes tool
+description: The Changes tool tracks any changes you have made to CSS or JavaScript in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, changes
+ms.date: 10/28/2021
 ---
 # Changes tool
 

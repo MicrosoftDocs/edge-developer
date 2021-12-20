@@ -1,13 +1,13 @@
 ---
 title: Handle URLs in Progressive Web Apps
-description: Learn how to register your PWA as a URL handler to more deeply integrate it in the operating system with other applications.
+description: How to register your PWA as a URL handler to more deeply integrate it in the operating system with other applications.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, URL
+ms.date: 09/29/2021
 ---
 # Handle URLs in Progressive Web Apps
 

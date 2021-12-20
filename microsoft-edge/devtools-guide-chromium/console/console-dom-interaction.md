@@ -1,12 +1,12 @@
 ---
-description: An overview how to interact with the current webpage in the browser using the Console tool
 title: Use the Console to interact with the DOM
+description: How to interact with the current webpage in the browser using the Console tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 04/13/2021
 ---
 # Use the Console to interact with the DOM
 

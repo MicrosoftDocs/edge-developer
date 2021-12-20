@@ -3,11 +3,11 @@ title: Display content in the title bar
 description: Learn how to use the Window Controls Overlay API to make use of the entire window area for your app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/02/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, window controls overlay, API
+ms.date: 09/02/2021
 ---
 # Display content in the title bar
 
