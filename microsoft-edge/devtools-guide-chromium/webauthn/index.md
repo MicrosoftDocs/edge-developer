@@ -1,14 +1,16 @@
 ---
-description: Emulate Authenticators and Debug WebAuthn in Microsoft Edge DevTools.
-title: Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools
+title: Emulate authenticators and debug WebAuthn
+description: Emulate Authenticators and Debug WebAuthn in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
-# Emulate authenticators and debug WebAuthn in Microsoft Edge DevTools
+# Emulate authenticators and debug WebAuthn
+
+<!--todo: remove notice at bottom, or add notice here?-->
 
 Instead of debugging Web Authentication in your website or app with physical authenticators, use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.
 
@@ -124,6 +126,8 @@ To remove a virtual authenticator, next to the authenticator, choose the **Remov
    Remove authenticator
 :::image-end:::
 
+
+<!--todo: remove this notice, or add notice at top?-->
 
 <!-- ====================================================================== -->
 > [!NOTE]

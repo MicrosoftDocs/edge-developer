@@ -1,12 +1,12 @@
 ---
-description: To quickly see the tab order of the sections of a page, use the Source Order Viewer in the Accessibility tool, to the right of the Styles tab.
 title: Test keyboard support using the Source Order Viewer
+description: To quickly see the tab order of the sections of a page, use the Source Order Viewer in the Accessibility tool, to the right of the Styles tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Test keyboard support using the Source Order Viewer
 

@@ -3,7 +3,7 @@ title: Fixing JavaScript errors that are reported in the Console
 description: Debugging and resolving JavaScript-related errors that are reported in the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 04/13/2021

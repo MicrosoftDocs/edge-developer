@@ -1,12 +1,12 @@
 ---
-description: If you find yourself typing the same JavaScript expressions into the Console repeatedly, try Live Expressions instead.
-title: Watch JavaScript expression values in real time with Live Expressions
+title: Monitor changes in JavaScript using Live Expressions
+description: Watch JavaScript expression values in real time with Live Expressions.  If you find yourself typing the same JavaScript expressions into the Console repeatedly, try Live Expressions instead.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 04/13/2021
 ---
 # Monitor changes in JavaScript using Live Expressions
 

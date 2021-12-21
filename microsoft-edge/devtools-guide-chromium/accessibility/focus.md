@@ -1,12 +1,12 @@
 ---
-description: Open the Console, create a Live Expression, and set the expression to document.activeElement.
 title: Track which element has focus
+description: Open the Console, create a Live Expression, and set the expression to document.activeElement.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 <!-- Copyright Kayce Basques
 

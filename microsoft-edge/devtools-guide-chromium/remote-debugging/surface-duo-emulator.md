@@ -1,12 +1,12 @@
 ---
-description: Get started with Remote Debugging Surface Duo emulators.
-title: Get started with Remote Debugging Surface Duo emulators
+title: Get started with remote debugging Surface Duo emulators
+description: Get started with remote debugging of Surface Duo emulators.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/25/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, android, surface duo
+ms.date: 03/25/2021
 ---
 # Get started with remote debugging Surface Duo emulators
 

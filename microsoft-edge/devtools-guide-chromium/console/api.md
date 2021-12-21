@@ -1,12 +1,12 @@
 ---
-description: Use the Console API to write messages to the Console.
 title: Console API reference
+description: Use the Console API to write messages to the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 

@@ -1,12 +1,12 @@
 ---
-description: Use the Media tool to view information and debug the media players per browser tab.
 title: View and debug media players information
+description: Use the Media tool to view information and debug the media players per browser tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen
 

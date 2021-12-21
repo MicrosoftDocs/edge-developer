@@ -1,12 +1,12 @@
 ---
+title: 3D View
 description: How to use 3D View, including navigating the canvas, Z-index, 3D DOM, and composited layers.
-title: 3D View overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/03/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 12/03/2020
 ---
 # 3D View
 

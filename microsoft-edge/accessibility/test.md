@@ -1,13 +1,13 @@
 ---
-ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
-description: Check out tools and testing procedures that help evaluate a website's accessibility.
 title: Resources for accessibility testing
+description: Check out tools and testing procedures that help evaluate a website's accessibility.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
+ms.assetid: 737ac54c-ad89-4b3f-bbe2-4e4169d3f364
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+ms.date: 01/07/2021
 ---
 # Resources for accessibility testing
 

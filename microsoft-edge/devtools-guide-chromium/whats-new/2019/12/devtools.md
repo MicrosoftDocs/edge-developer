@@ -3,7 +3,7 @@ title: What's new in DevTools (Microsoft Edge 80)
 description: Accessibility improvements, using the DevTools in other languages, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/11/2021

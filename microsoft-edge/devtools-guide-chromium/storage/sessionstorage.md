@@ -1,12 +1,12 @@
 ---
+title: View and edit session storage
 description: How to view and edit sessionStorage with the Session Storage pane and the Console.
-title: View and edit Session Storage with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View and edit Session Storage with Microsoft Edge DevTools
+# View and edit session storage
 
 This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) key-value pairs.
 

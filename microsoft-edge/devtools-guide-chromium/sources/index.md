@@ -1,12 +1,12 @@
 ---
-description: Use the Sources tool to view, modify, and debug JavaScript that's returned by the server, and to inspect the resources that make up the current webpage.  To use the Sources tool as a development environment, add source files to a Workspace.
 title: Sources tool overview
+description: Use the Sources tool to view, modify, and debug JavaScript that's returned by the server, and to inspect the resources that make up the current webpage.  To use the Sources tool as a development environment, add source files to a Workspace.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/20/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 04/20/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -179,7 +179,7 @@ Snippets are similar to bookmarklets.
 
 #### See also
 
-*   [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../javascript/snippets.md)
+*   [Run snippets of JavaScript on any webpage](../javascript/snippets.md)
 
 ### Using the Command Menu to open files
 
@@ -484,7 +484,7 @@ For more information, see [Visual Studio Code overview](../../visual-studio-code
 
 The following articles cover the **Debugger** pane and breakpoints:
 
-*   [Get started with debugging JavaScript in Microsoft Edge DevTools](../javascript/index.md) - A tutorial (with screen captures), using an existing, simple project.
+*   [Get started with debugging JavaScript](../javascript/index.md) - A tutorial (with screen captures), using an existing, simple project.
 
 *   [Use the debugger features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
 

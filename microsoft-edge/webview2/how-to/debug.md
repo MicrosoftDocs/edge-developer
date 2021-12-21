@@ -1,13 +1,13 @@
 ---
+title: Get started debugging WebView2 apps
 description: Learn how to debug WebView2 controls.
-title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2021
-ms.topic: how-to
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 09/15/2021
 ---
 # Get started debugging WebView2 apps
 
