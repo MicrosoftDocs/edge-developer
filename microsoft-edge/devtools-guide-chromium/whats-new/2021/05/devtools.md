@@ -5,6 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
+ms.localizationpriority: high
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/02/2021
 ---
