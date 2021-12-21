@@ -1,12 +1,12 @@
 ---
-description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 title: Debug Progressive Web Apps
+description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 

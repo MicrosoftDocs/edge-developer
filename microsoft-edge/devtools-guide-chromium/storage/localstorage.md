@@ -1,12 +1,12 @@
 ---
-description: How to view and edit localStorage with the Local Storage pane and the Console.
-title: View And Edit Local Storage With Microsoft Edge DevTools
+title: View and edit local storage
+description: How to view and edit localStorage key-value pairs by using the Local Storage pane and the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# View and edit local storage with Microsoft Edge DevTools
+# View and edit local storage
 
 This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) key-value pairs.
 

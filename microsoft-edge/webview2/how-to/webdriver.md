@@ -1,19 +1,15 @@
 ---
 title: Automate and test WebView2 apps with Microsoft Edge Driver
-description: Automate and test the WebView2 Control using Microsoft Edge Driver
+description: Automate and test the WebView2 Control using Microsoft Edge Driver.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 12/01/2021
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Selenium, Microsoft Edge Driver
+ms.date: 12/01/2021
 ---
 # Automate and test WebView2 apps with Microsoft Edge Driver
-<!-- Should this article be titled:
-# Automate and test WebView2 with Microsoft Edge Driver, Selenium, and WebDriver
-this filename is webdriver.md, should the title include "WebDriver"?
--->
 
 This article explains how to automate and test your WebView2 app with Microsoft Edge Driver, by using the Selenium framework for browser test automation.
 

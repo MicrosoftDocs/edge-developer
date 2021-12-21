@@ -1,12 +1,12 @@
 ---
+title: Find unused JavaScript and CSS code with the Coverage panel
 description: How to find and analyze unused JavaScript and CSS code in Microsoft Edge DevTools.
-title: Find unused JavaScript and CSS Code with the Coverage panel in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Find unused JavaScript and CSS code with the Coverage panel in Microsoft Edge DevTools
+# Find unused JavaScript and CSS code with the Coverage panel
 
 The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.
 

@@ -1,17 +1,16 @@
 ---
-ms.assetid:
+title: Use Origin Trials in Microsoft Edge
 description: Safely experiment for a fixed period of time and provide feedback on new platform features.
-title: Origin Trials
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, web development, html, css, origin trials, developer
+ms.date: 01/07/2021
 ---
 # Use Origin Trials in Microsoft Edge
 
-Developers may use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you do not need to go to `edge://flags` and turn on feature flags.  For more information, navigate to [experimental APIs](https://developer.microsoft.com/microsoft-edge/origin-trials).  Additionally, you may provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
+Developers can use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you don't need to go to `edge://flags` and turn on feature flags.  For more information, navigate to [experimental APIs](https://developer.microsoft.com/microsoft-edge/origin-trials).  You can also provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
 
 
 <!-- ====================================================================== -->

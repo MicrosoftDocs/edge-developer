@@ -1,12 +1,12 @@
 ---
-description: Customize keyboard shortcuts, including matching shortcuts from Visual Studio Code.
 title: Customize keyboard shortcuts
+description: Customize keyboard shortcuts, including matching shortcuts from Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcuts, keyboard, visual studio code
+ms.date: 03/10/2021
 ---
 # Customize keyboard shortcuts
 

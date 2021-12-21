@@ -1,13 +1,13 @@
 ---
-description: Learn how to build, design, and test accessible websites within Microsoft Edge.
 title: Accessibility overview
+description: Learn how to build, design, and test accessible websites within Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/16/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+ms.date: 04/16/2020
 ---
 # Accessibility overview
 

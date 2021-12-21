@@ -1,9 +1,9 @@
 ---
 title: "DevTools for beginners: Get started with CSS"
-description: Get Started with CSS
+description: A DevTools tutorial to get started with CSS.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 07/26/2021
@@ -21,7 +21,6 @@ ms.date: 07/26/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # DevTools for beginners: Get started with CSS
 
 In this tutorial, you learn how to use CSS to style a web page.  You also learn how to use Microsoft Edge DevTools to experiment with CSS changes.

@@ -3,11 +3,11 @@ title: Get started with WebView2 in Win32 apps
 description: Get started building WebView2 for Win32 by working with sample apps and the WebView2 SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/13/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+ms.date: 12/13/2021
 ---
 # Get started with WebView2 in Win32 apps
 

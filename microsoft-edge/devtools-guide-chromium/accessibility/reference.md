@@ -1,12 +1,12 @@
 ---
-description: Webpage accessibility aspects to test, and the corresponding features in Microsoft DevTools.
 title: Accessibility-testing features in DevTools
+description: Webpage accessibility aspects to test, and the corresponding features in Microsoft DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Accessibility-testing features in DevTools
 
@@ -60,9 +60,9 @@ To test your webpages for accessibility, first make a checklist of accessibility
 
 | Accessibility aspect to check | Feature of DevTools | Article or subheading |
 |---|---|---|
-| Verify that the webpage is usable by people with color blindness | **Rendering** tool > **Emulate vision deficiencies** dropdown list | [Verify that the page is usable by people with color blindness](test-color-blindness.md) |
-| Verify that the webpage is usable with blurred vision | **Rendering** tool > **Emulate vision deficiencies** dropdown list | [Verify that the page is usable with blurred vision](test-blurred-vision.md) |
-| Verify that the webpage is usable with UI animation turned off (reduced motion) | **Rendering** tool > **Emulate CSS media feature prefers-reduced-motion** | [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md) |
+| Verify that the webpage is usable by people with color blindness | **Rendering** tool > **Emulate vision deficiencies** dropdown list | [Verify that a page is usable by people with color blindness](test-color-blindness.md) |
+| Verify that the webpage is usable with blurred vision | **Rendering** tool > **Emulate vision deficiencies** dropdown list | [Verify that a page is usable with blurred vision](test-blurred-vision.md) |
+| Verify that the webpage is usable with UI animation turned off (reduced motion) | **Rendering** tool > **Emulate CSS media feature prefers-reduced-motion** | [Verify that a page is usable with UI animation turned off](test-reduced-ui-motion.md) |
 
 
 <!-- ====================================================================== -->

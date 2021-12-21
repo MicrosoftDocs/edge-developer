@@ -3,7 +3,7 @@ title: Get started with viewing and changing the DOM
 description: How to view nodes, search for nodes, edit nodes, reference nodes in the Console, break on node changes, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/29/2021

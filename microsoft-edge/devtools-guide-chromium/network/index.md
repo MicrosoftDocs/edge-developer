@@ -1,12 +1,12 @@
 ---
+title: Inspect network activity
 description: A tutorial on the most popular network-related features in Microsoft Edge DevTools.
-title: Inspect network activity in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,12 +21,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Inspect network activity in Microsoft Edge DevTools
+# Inspect network activity
 
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.
 
-If you want to browse features, navigate to [Network Reference](./reference.md).
+If you want to browse features, see [Network features reference](./reference.md).
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -45,7 +45,7 @@ In general, use the Network panel when you need to make sure that resources are 
 *   Making sure that resources are actually being uploaded or downloaded at all.
 *   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.
 
-If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  Navigate to [Optimize Website Speed](../speed/get-started.md).
+If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  See [Optimize website speed](../speed/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -364,9 +364,9 @@ How does a page look and behave when some of the page resources are not availabl
 <!-- ====================================================================== -->
 ## Conclusion
 
-Congratulations, you have completed the tutorial.  You now know how to use the **Network** tool in the Microsoft Edge DevTools!
+Congratulations, you have completed the tutorial!  You now know how to use the **Network** tool in Microsoft Edge DevTools.
 
-Navigate to the [Network Reference](./reference.md) to discover more DevTools features related to inspecting network activity.
+To discover more DevTools features related to inspecting network activity, see [Network features reference](./reference.md).
 
 
 <!-- ====================================================================== -->

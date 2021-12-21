@@ -1,6 +1,6 @@
 ---
 title: WebView2 roadmap
-description: Learn about what's coming next for WebView2
+description: Learn about what's coming next for WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual

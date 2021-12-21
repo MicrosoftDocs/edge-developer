@@ -1,12 +1,12 @@
 ---
-description: Learn how to filter console messages
-title: Get started with filtering messages in the Console
+title: Filter Console messages
+description: How to filter console messages.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 04/13/2021
 ---
 # Filter Console messages
 

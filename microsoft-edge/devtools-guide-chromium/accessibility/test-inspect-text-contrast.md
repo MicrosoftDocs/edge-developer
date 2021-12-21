@@ -1,12 +1,12 @@
 ---
-description: Check text color contrast in the default state by using the Inspect tool's information overlay on the page, which has an Accessibility section that includes Contrast information.
 title: Check text-color contrast in the default state using the Inspect tool
+description: Check text color contrast in the default state by using the Inspect tool's information overlay on the page, which has an Accessibility section that includes Contrast information.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Check text-color contrast in the default state using the Inspect tool
 
