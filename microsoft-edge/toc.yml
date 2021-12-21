@@ -285,52 +285,53 @@
             - name: Animations
               href: devtools-guide-chromium/inspect-styles/animations.md
             - name: Application
-              href: devtools-guide-chromium/storage/application-panel-tool.md # new jump page
+              href: devtools-guide-chromium/storage/application-panel-tool.md # new ui intro/jump page
             - name: Changes
               href: devtools-guide-chromium/changes/changes-tool.md
             - name: Command Menu
-              href: devtools-guide-chromium/command-menu/command-menu.md # new jump page
+              href: devtools-guide-chromium/command-menu/command-menu.md # new ui intro/jump page
             - name: Console
-              href: devtools-guide-chromium/console/console-panel-tool.md # new jump page
+              href: devtools-guide-chromium/console/console-panel-tool.md # new ui intro/jump page
             - name: Coverage
               href: devtools-guide-chromium/coverage/index.md
             - name: Device emulation
-              href: devtools-guide-chromium/
+              href: devtools-guide-chromium/device-mode/device-emulation-tool.md # new ui intro/jump page
 #           - name: Developer Resources
             - name: Elements
-              href: devtools-guide-chromium/css/elements-panel-tool.md # new jump page
+              href: devtools-guide-chromium/css/elements-panel-tool.md # new ui intro/jump page
             - name: Inspect
               href: devtools-guide-chromium/css/inspect.md
             - name: Issues
               href: devtools-guide-chromium/issues/index.md
 #           - name: JavaScript Profiler
 #           - name: Layers
-#           - name: Lighthouse
+            - name: Lighthouse
+              href: devtools-guide-chromium/accessibility/lighthouse-panel-tool.md # new ui intro/jump page
             - name: Media
               href: devtools-guide-chromium/media-panel/index.md
             - name: Memory
-              href: devtools-guide-chromium/memory-problems/memory-panel-tool.md # new jump page
+              href: devtools-guide-chromium/memory-problems/memory-panel-tool.md # new ui intro/jump page
 #           - name: Memory Inspector
             - name: Network
-              href: devtools-guide-chromium/network/network-panel-tool.md # new jump page
+              href: devtools-guide-chromium/network/network-panel-tool.md # new ui intro/jump page
 #           - name: Network conditions
 #           - name: Network request blocking
             - name: Performance
-              href: devtools-guide-chromium/rendering-tools/performance-panel-tool.md # new jump page
+              href: devtools-guide-chromium/rendering-tools/performance-panel-tool.md # new ui intro/jump page
             - name: Performance monitor
               href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
 #           - name: Quick source
             - name: Remote devices # related: Get started > Remote debugging
               href: devtools-guide-chromium/remote-debugging/local-server.md
             - name: Rendering
-              href: devtools-guide-chromium/rendering-tools/rendering-drawer-tool.md # new jump page
+              href: devtools-guide-chromium/rendering-tools/rendering-drawer-tool.md # new ui intro/jump page
             - name: Search
               href: devtools-guide-chromium/search/search-tool.md
             - name: Security
               href: devtools-guide-chromium/security/index.md
 #           - name: Sensors
             - name: Sources
-              href: devtools-guide-chromium/sources/sources-panel-tool.md # new jump page
+              href: devtools-guide-chromium/sources/sources-panel-tool.md # new ui intro/jump page
 #           - name: WebAudio
             - name: WebAuthn
               href: devtools-guide-chromium/webauthn/index.md
