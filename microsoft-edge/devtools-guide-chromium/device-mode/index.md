@@ -1,12 +1,12 @@
 ---
+title: Emulate mobile devices
 description: Use virtual devices in Microsoft Edge to build mobile-first websites.
-title: Emulate mobile devices in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/19/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
+ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,9 +21,9 @@ keywords: microsoft edge, web development, f12 tools, devtools, emulation, devic
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Emulate mobile devices in Microsoft Edge DevTools
+# Emulate mobile devices
 
-Use **Device emulation** to approximate how your page looks and responds on a mobile device.  The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.  The collection includes the following features.
+Use **Device emulation** to approximate how your page looks and responds on a mobile device.  The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.  The collection includes the following features:
 
 *   [Simulate a mobile viewport](#simulate-a-mobile-viewport)
 *   [Throttle the network](#throttle-the-network-only)

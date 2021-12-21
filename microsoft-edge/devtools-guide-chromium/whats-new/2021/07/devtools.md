@@ -1,12 +1,12 @@
 ---
-description: Apply color themes from Visual Studio Code, debug DOM node memory leaks with the new Detached Elements tool, Microsoft Edge Developer Tools for Visual Studio Code now integrates with the Visual Studio Code Debugger workflow, and more.
 title: What's new in DevTools (Microsoft Edge 93)
+description: Apply color themes from Visual Studio Code, debug DOM node memory leaks with the new Detached Elements tool, Microsoft Edge Developer Tools for Visual Studio Code now integrates with the Visual Studio Code Debugger workflow, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 07/30/2021
 ---
 # What's New In DevTools (Microsoft Edge 93)
 

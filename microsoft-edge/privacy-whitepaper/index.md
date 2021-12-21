@@ -1,14 +1,14 @@
 ---
-description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
+description: Microsoft Edge Privacy Whitepaper.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, privacy whitepaper, trust, microsoft edge privacy, browser privacy, privacy settings
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
+ms.date: 12/10/2021
 ---
 # Microsoft Edge Privacy Whitepaper
 

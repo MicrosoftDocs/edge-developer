@@ -1,12 +1,12 @@
 ---
+title: Force print preview mode
 description: Open the "Rendering" tool and select Emulate CSS media > print.
-title: Force Microsoft Edge DevTools into Print Preview mode (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,22 +21,21 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Force Microsoft Edge DevTools into Print Preview mode
+# Force print preview mode
 
 The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) controls how your page looks when printed.  To force your page into print preview mode:
 
-1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="The Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-       The **Command Menu**
-    :::image-end:::
+    > [!div class="mx-imgBorder"]
+    > ![Opening the command menu](../media/print-preview-open-command-menu.png)
 
-1.  Type `rendering`, choose **Show Rendering**, and then select `Enter`.
-1.  Under **Emulate CSS media**, choose **print**.
+1.  Type `rendering`, select the **Show Rendering** option, and press `Enter`.
+1.  The **Rendering** panel opens in the **Drawer**.
+1.  Under **Emulate CSS media type**, choose **print**.
 
-    :::image type="complex" source="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png" alt-text="Print preview mode" lightbox="../media/css-elements-styles-qs-rendering-emulate-css-media-print.msft.png":::
-       Print preview mode
-    :::image-end:::
+    > [!div class="mx-imgBorder"]
+    > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
 
 From here, you may display and change your CSS, like any other web page.  Navigate to [Get Started With Viewing And Changing CSS](./index.md).
 

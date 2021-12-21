@@ -1,12 +1,12 @@
 ---
+title: Using the Microsoft Edge Add-ons API (under development)
 description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
-title: Using the Microsoft Edge Add-ons API
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons api, publish api
+ms.date: 08/19/2021
 ---
 # Using the Microsoft Edge Add-ons API (under development)
 

@@ -1,12 +1,12 @@
 ---
-description: All about Service Worker improvements and how to use each one.
 title: Service Worker improvements
+description: How to use each Service Worker improvement.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/19/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, service worker, PWA
+ms.date: 02/19/2021
 ---
 # Service Worker improvements
 

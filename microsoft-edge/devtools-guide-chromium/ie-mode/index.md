@@ -1,12 +1,12 @@
 ---
-description: IE mode and Microsoft Edge DevTools.
 title: Use DevTools in Internet Explorer mode
+description: IE mode and Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
+ms.date: 09/10/2021
 ---
 # Use DevTools in Internet Explorer mode
 

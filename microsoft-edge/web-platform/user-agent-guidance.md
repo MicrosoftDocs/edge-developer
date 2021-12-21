@@ -1,12 +1,12 @@
 ---
-description: This article describes how to detect Microsoft Edge data with User-Agent Client Hints and the User-Agent string.
 title: Detecting Microsoft Edge from your website
+description: How to detect Microsoft Edge data with User-Agent Client Hints and the User-Agent string.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/09/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, ua overrides, user-agent client hints, user agent client hints, ua client hints, ua ch, feature detection, browser identification, browser detection, header, https header, detect microsoft edge, detecting microsoft edge
+ms.date: 12/09/2021
 ---
 # Detecting Microsoft Edge from your website
 

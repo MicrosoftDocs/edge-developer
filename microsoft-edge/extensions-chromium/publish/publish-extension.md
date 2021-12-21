@@ -1,12 +1,12 @@
 ---
-description: Publish Microsoft Edge extensions to Microsoft Edge Add-ons website
 title: Publish a Microsoft Edge extension
+description: Publishing a Microsoft Edge extension to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
+ms.date: 08/25/2021
 ---
 # Publish a Microsoft Edge extension
 

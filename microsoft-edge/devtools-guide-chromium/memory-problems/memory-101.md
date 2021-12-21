@@ -1,6 +1,6 @@
 ---
 title: Memory terminology
-description: This section describes common terms used in memory analysis, and is applicable to a variety of memory profiling tools for different languages.
+description: Common terms used in memory analysis, applicable to a variety of memory profiling tools for different languages.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual

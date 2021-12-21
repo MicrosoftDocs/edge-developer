@@ -1,13 +1,13 @@
 ---
-description: Debugging support for CSS Flexbox, performance heads-up display on the webpage, issues tool updates and more
 title: What's new in DevTools (Microsoft Edge 90)
+description: Debugging support for CSS Flexbox, performance heads-up display on the webpage, issues tool updates, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.localizationpriority: high
+ms.date: 05/04/2021
 ---
 <!-- Copyright Jecelyn Yeen
 
