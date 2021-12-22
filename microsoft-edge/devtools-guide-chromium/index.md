@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge Developer Tools overview
+title: Overview of DevTools
 description: Get to know the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,7 +9,7 @@ ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools, microsoft edge developer tools
 ms.date: 09/23/2021
 ---
-# Microsoft Edge Developer Tools overview
+# Overview of DevTools
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects.  The Developer Tools that are shipped with Microsoft Edge are partly based on the tools in the Chromium open-source project, so you may already be familiar with some of these tools.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
 

@@ -25,7 +25,7 @@ The tools that are listed in this **Tools** section can be displayed either as a
 | Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
 | Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type the name of the tool, and then select the tool. |
 
-For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Microsoft Edge Developer Tools overview](index.md).
+For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Overview of DevTools](index.md).
 
 In addition to Panel tools and Drawer tools, DevTools includes the following tools:
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).

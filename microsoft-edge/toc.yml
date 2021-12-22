@@ -4,7 +4,7 @@
 # =============================================================================
     - name: Microsoft Edge DevTools
       items:
-        - name: DevTools overview
+        - name: Overview of DevTools
           href: devtools-guide-chromium/index.md
         - name: What's new
           items:
@@ -275,25 +275,33 @@
                   href: devtools-guide-chromium/customize/localization.md
                 - name: Customize keyboard shortcuts
                   href: devtools-guide-chromium/customize/shortcuts.md
+            - name: 3D View
+              href: devtools-guide-chromium/3d-view/index.md
+            - name: Animations
+              href: devtools-guide-chromium/inspect-styles/animations.md
+            - name: Changes
+              href: devtools-guide-chromium/changes/changes-tool.md
+            - name: Coverage
+              href: devtools-guide-chromium/coverage/index.md
 # =============================================================================
         - name: Tools
           items:
             - name: About Panel and Drawer tools
               href: devtools-guide-chromium/about-panel-drawer-tools.md
             - name: 3D View
-              href: devtools-guide-chromium/3d-view/index.md
+              href: devtools-guide-chromium/3d-view/3d-view-drawer-tool.md # new ui intro/jump page
             - name: Animations
-              href: devtools-guide-chromium/inspect-styles/animations.md
+              href: devtools-guide-chromium/inspect-styles/animations-drawer-tool.md # new ui intro/jump page
             - name: Application
               href: devtools-guide-chromium/storage/application-panel-tool.md # new ui intro/jump page
             - name: Changes
-              href: devtools-guide-chromium/changes/changes-tool.md
+              href: devtools-guide-chromium/changes/changes-drawer-tool.md # new ui intro/jump page
             - name: Command Menu
               href: devtools-guide-chromium/command-menu/command-menu.md # new ui intro/jump page
             - name: Console
               href: devtools-guide-chromium/console/console-panel-tool.md # new ui intro/jump page
             - name: Coverage
-              href: devtools-guide-chromium/coverage/index.md
+              href: devtools-guide-chromium/coverage/coverage-drawer-tool.md # new ui intro/jump page
             - name: Device emulation
               href: devtools-guide-chromium/device-mode/device-emulation-tool.md # new ui intro/jump page
 #           - name: Developer Resources
