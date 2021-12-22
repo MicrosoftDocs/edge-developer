@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
-ms.date: 05/04/2021
+ms.date: 12/13/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -92,21 +92,13 @@ Choose **inspect** for the tab or PWA that you want to debug to open the [Micros
 
 ### Resize the DevTools drawer more easily
 
-In Microsoft Edge 83 or earlier, you were only able to resize the [Devtools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the Drawer.  The Drawer behaved differently than the other resize controls for panes in the DevTools where you hover on the border of the pane to resize it.  Choose the following image to display how resizing the Drawer worked in version 83 or earlier of Microsoft Edge.
+In Microsoft Edge 83 or earlier, you resized the [Devtools Drawer](../../../customize/index.md#drawer) by hovering inside the toolbar of the drawer. The drawer behaved differently than the other resize controls for panes in DevTools where you hover on the border of the pane to resize it. The following image shows how resizing the drawer worked in Microsoft Edge version 83 or earlier:
 
-:::image type="complex" source="../../media/2020/05/drawer-83.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 83" lightbox="../../media/2020/05/drawer-83.msft.gif":::
-   Resizing the DevTools Drawer in Microsoft Edge 83
-:::image-end:::
+![Resizing the DevTools Drawer in Microsoft Edge 83.](../../media/2020/05/drawer-83.msft.png)
 
-<!--todo:  create png that represents the gif information  -->
+Starting with Microsoft Edge 84, you can resize the drawer by hovering over the border. This change aligns the behavior for resizing the DevTools drawer with other panes in DevTools. The following image shows how resizing the drawer works in Microsoft Edge 84 or later:
 
-Starting with Microsoft Edge 84, you are now able to resize the Drawer by hovering over the border of the Drawer.  This change aligns the behavior resizing the DevTools Drawer with the way you resize other panes in the DevTools.  Choose the following image to display resizing in action in Microsoft Edge 84.
-
-:::image type="complex" source="../../media/2020/05/drawer-84.msft.png" alt-text="Resizing the DevTools Drawer in Microsoft Edge 84" lightbox="../../media/2020/05/drawer-84.msft.gif":::
-   Resizing the DevTools Drawer in Microsoft Edge 84
-:::image-end:::
-
-<!--todo:  create png that represents the gif information  -->
+![Resizing the DevTools Drawer in Microsoft Edge 84.](../../media/2020/05/drawer-84.msft.png)
 
 Chromium issue [#1076112](https://crbug.com/1076112)
 
