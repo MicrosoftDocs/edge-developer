@@ -310,8 +310,8 @@
 #           - name: Sensors
 #           - name: WebAudio
 #           - name: Welcome
-    - name: Contact the Microsoft Edge DevTools team
-      href: devtools-guide-chromium/contact.md
+        - name: Contact the Microsoft Edge DevTools team
+          href: devtools-guide-chromium/contact.md
 # =============================================================================
     - name: Microsoft Edge extensions
       items:
