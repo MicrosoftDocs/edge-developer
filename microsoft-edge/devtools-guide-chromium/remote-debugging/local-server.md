@@ -23,6 +23,8 @@ ms.date: 05/11/2021
    limitations under the License.  -->
 # Access local servers
 
+<!-- # Access local servers using the Remote devices panel/tab/tool -->
+
 Host a site on a development machine web server, then access the content from an Android device.
 
 With a USB cable and Microsoft Edge DevTools, run a site from a development machine and then view the site on an Android device.

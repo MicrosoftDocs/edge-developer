@@ -1,5 +1,5 @@
 ---
-title: Use Allocation instrumentation on Timeline
+title: Use Allocation instrumentation on timeline
 description: Use Allocation instrumentation on timeline to find objects that are not being properly garbage collected, and continue to retain memory.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,9 +21,12 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# Use Allocation instrumentation on Timeline
+# Use Allocation instrumentation on timeline
 
-Use **Allocation instrumentation on timeline** to find objects that are not being properly garbage collected, and continue to retain memory.
+<!-- title in other repo:
+How to Use the Allocation Profiler Tool -->
+
+In the **Memory** tool (or _panel_), use the **Allocation instrumentation on timeline** radio button to find objects that are not being properly garbage collected, and continue to retain memory.
 
 
 <!-- ====================================================================== -->
@@ -36,7 +39,7 @@ Use **Allocation instrumentation on timeline** to find objects that are not bein
 
 **Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording (as frequently as every 50 ms) and one final snapshot at the end of the recording.
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Allocation instrumentation on timeline" lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
+:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Allocation instrumentation on timeline." lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
    **Allocation instrumentation on timeline**
 :::image-end:::
 
@@ -53,7 +56,7 @@ Complete the following actions to begin using **Allocation instrumentation on ti
 1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.
 1.  Start recording.
 
-    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler" lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+    :::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler.  Use the 'Allocation instrumentation on timeline' radio button in the Memory tool (or panel)." lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
        Record heap allocations profiler
     :::image-end:::
 

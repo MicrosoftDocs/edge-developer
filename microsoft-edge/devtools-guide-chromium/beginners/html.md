@@ -1,6 +1,6 @@
 ---
-title: "DevTools for beginners: Get started with HTML and the DOM"
-description: Get Started with HTML and the DOM.
+title: Get started with HTML and the DOM
+description: Get started with HTML and the DOM.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.date: 08/06/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# DevTools for beginners: Get started with HTML and the DOM
+# Get started with HTML and the DOM
 
 This is the first in a series of tutorials that teach you the basics of web development. Learn about a set of web developer tools, named Microsoft Edge DevTools, that will increase your productivity.
 

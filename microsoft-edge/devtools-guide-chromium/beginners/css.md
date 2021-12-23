@@ -1,5 +1,5 @@
 ---
-title: "DevTools for beginners: Get started with CSS"
+title: Get started with CSS
 description: A DevTools tutorial to get started with CSS.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 07/26/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# DevTools for beginners: Get started with CSS
+# Get started with CSS
 
 In this tutorial, you learn how to use CSS to style a web page.  You also learn how to use Microsoft Edge DevTools to experiment with CSS changes.
 
@@ -509,7 +509,7 @@ Congratulations, you're done!
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css)<!-- redirects to https://developer.chrome.com/docs/devtools/css/ by Kayce Basques --> and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

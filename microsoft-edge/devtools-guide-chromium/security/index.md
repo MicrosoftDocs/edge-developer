@@ -23,6 +23,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Understand security issues
 
+<!-- title combining task & ui:
+# Understand security issues using the Security tool -->
+
 <!--Use the **Security** Panel in [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->
 
 <!--todo: add section when why-https is available -->

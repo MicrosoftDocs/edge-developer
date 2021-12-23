@@ -232,7 +232,7 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 <!-- ====================================================================== -->
 ## See also
 
-*   [DevTools for beginners: Get Started with HTML and the DOM](beginners/html.md)
+*   [Get started with HTML and the DOM](beginners/html.md)
 *   [Inspect and change the current webpage](dom/index.md)
 *   [Emulate how your product behaves on different devices](device-mode/index.md)
 *   [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)

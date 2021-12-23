@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 04/13/2021
 ---
-# Fixing JavaScript errors that are reported in the Console
+# Fix JavaScript errors that are reported in the Console
 
 This article is about resolving JavaScript errors that are reported in the Console.  For general use of the **Console** to display and resolve error messages, see [Console overview](index.md).
 

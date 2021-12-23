@@ -1,5 +1,5 @@
 ---
-title: Pause your code with breakpoints
+title: Pause code with breakpoints
 description: Learn all the ways to pause your code in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Pause your code with breakpoints
+# Pause code with breakpoints
 
 Use breakpoints to pause your JavaScript code.  This article explains each type of breakpoint available in DevTools, as well as when to use and how to set each type.
 
