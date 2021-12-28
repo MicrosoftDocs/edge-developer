@@ -1,5 +1,5 @@
 ---
-title: Find unused JavaScript and CSS code with the Coverage panel
+title: Find unused JavaScript and CSS code with the Coverage tool
 description: How to find and analyze unused JavaScript and CSS code in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,22 +21,22 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Find unused JavaScript and CSS code with the Coverage panel
+# Find unused JavaScript and CSS code with the Coverage tool
 
-The **Coverage** panel in Microsoft Edge DevTools helps you find unused JavaScript and CSS code.  Removing unused code may speed up your page load and save your mobile users cellular data.
+The Coverage tool in Microsoft Edge DevTools can help you find unused JavaScript and CSS code.  Removing unused code can speed up your page load and save your mobile users cellular data.  The **Coverage** tool is also called the _Coverage panel_ or _Coverage tab_.
 
 :::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Analyzing code coverage
 :::image-end:::
 
 > [!WARNING]
-> Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.  This guide does not cover how to refactor a codebase to avoid unused code because these refactors depend highly on your technology stack.
+> Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.  This guide doesn't cover how to refactor a codebase to avoid unused code, because these refactors depend highly on your technology stack.
 
 
 <!-- ====================================================================== -->
 ## Overview
 
-Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use [Bootstrap button component](https://getbootstrap.com/docs/4.3/components/buttons) on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:
+Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use the [Bootstrap button component](https://getbootstrap.com/docs/4.3/components/buttons) on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:
 
 ```html
 ...

@@ -227,7 +227,7 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the debugger features](./reference.md) - Using the UI of the debugger in the **Sources** tool.
+*  [JavaScript debugging features](./reference.md) - Using the UI of the debugger in the **Sources** tool.
 *  [Get started with debugging JavaScript](index.md) - An introductory tutorial using an existing webpage.
 *  [Sources tool overview](../sources/index.md) - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
 

@@ -1,5 +1,5 @@
 ---
-title: Accessibility-testing features in DevTools
+title: Accessibility-testing features
 description: Webpage accessibility aspects to test, and the corresponding features in Microsoft DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
 ---
-# Accessibility-testing features in DevTools
+# Accessibility-testing features
 
 To test your webpages for accessibility, first make a checklist of accessibility aspects to test, and then use the relevant DevTools features to check each aspect.
 

@@ -412,7 +412,7 @@ For detailed walkthrough steps, see [Verify that a page is usable with UI animat
 <!-- ====================================================================== -->
 ## What to do next?
 
-We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features in DevTools](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
+We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
 
 None of these tools can replace a proper round of testing your products with people that use assistive technologies and following a plan to check for all the required tests. You can also use the [Assessments](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/) feature of [Accessibility Insights](https://accessibilityinsights.io).  You may need to perform additional checks such as:
 

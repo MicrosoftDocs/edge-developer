@@ -486,7 +486,7 @@ The following articles cover the **Debugger** pane and breakpoints:
 
 *   [Get started with debugging JavaScript](../javascript/index.md) - A tutorial (with screen captures), using an existing, simple project.
 
-*   [Use the debugger features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
+*   [JavaScript debugging features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
 
 *   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and specialized breakpoints in the debugger.
 

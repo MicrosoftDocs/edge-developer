@@ -230,15 +230,15 @@ This article showed two ways to set breakpoints.  DevTools also provides ways to
 *   Breakpoints on caught or uncaught exceptions.
 *   XHR breakpoints that are triggered when the requested URL matches a substring that you provide.
 
-For more information about when and how to use each type, navigate to [Pause your code with breakpoints](./breakpoints.md).
+For more information about when and how to use each type, see [Pause your code with breakpoints](./breakpoints.md).
 
-A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code](./reference.md#step-through-code) in the "Use the debugger features" article.
+A couple of code stepping controls aren't explained in this article.  For more information, see [Step over line of code](./reference.md#step-through-code) in "JavaScript debugging features".
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the debugger features](./reference.md) - Using the UI of the debugger in the Sources tool.
+*  [JavaScript debugging features](./reference.md) - Using the UI of the debugger in the Sources tool.
 *  [Sources tool overview](../sources/index.md) - Introduces the JavaScript debugger and code editor.
 
 
