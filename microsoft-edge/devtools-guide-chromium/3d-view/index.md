@@ -28,6 +28,16 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 
 <!-- ====================================================================== -->
+## Opening the 3D View panel
+
+To open the **3D View** panel, in DevTools, do either of the following:
+
+* Click **More Tools** (+) on the main toolbar and then select **3D View**.
+
+* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type "3d", and then select **3D View [Drawer]**.
+
+
+<!-- ====================================================================== -->
 ## Navigating the canvas
 
 :::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View" lightbox="../media/3d-view-canvas.msft.png":::

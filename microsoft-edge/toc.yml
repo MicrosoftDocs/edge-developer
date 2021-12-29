@@ -11,6 +11,9 @@
           href: devtools-guide-chromium/about-panel-drawer-tools.md
         - name: Open Microsoft Edge DevTools
           href: devtools-guide-chromium/open/index.md
+# Default tools/panels/tabs ===================================================
+# Welcome tool/panel/tab (default tab 1) --------------------------------------
+#         add "welcome" to the TOC title of an existing article, or create a page with that in the TOC title
         - name: What's new
           items:
             - name: Experimental features
@@ -47,10 +50,8 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-            # panel with no article (find an associated article & add tool name to its title):
-#           - name: Welcome
-# =============================================================================
-        - name: CSS
+# Elements tool/panel/tab (default tab 2) -------------------------------------
+        - name: CSS (Elements panel)
           items:
             - name: Get started with CSS # ui: Elements tool
               href: devtools-guide-chromium/beginners/css.md
@@ -58,8 +59,10 @@
               href: devtools-guide-chromium/css/index.md
             - name: CSS features reference
               href: devtools-guide-chromium/css/reference.md
+# Animations tool/panel/tab
             - name: Inspect animations
               href: devtools-guide-chromium/inspect-styles/animations.md
+# Elements tool con't
             - name: Inspect CSS Grid
               href: devtools-guide-chromium/css/grid.md
             - name: Force print preview mode
@@ -68,17 +71,19 @@
               href: devtools-guide-chromium/inspect-styles/edit-fonts.md
             - name: Style editing for CSS-in-JS frameworks # ui: Elements tool # additional article from blog
               href: devtools-guide-chromium/css/css-in-js.md
-        - name: Get started with HTML and the DOM # ui: Elements tool.  "here" link is 404
+        - name: Get started with HTML and the DOM (Elements panel) # ui: Elements tool.  "here" link is 404
           href: devtools-guide-chromium/beginners/html.md
         - name: Analyze pages using the Inspect tool # additional article
           href: devtools-guide-chromium/css/inspect.md
-        - name: Get started with viewing and changing the DOM # ui: Elements tool
+        - name: Get started with viewing and changing the DOM (Elements panel) # ui: Elements tool
           href: devtools-guide-chromium/dom/index.md
+# 3D View tool/panel/tab
         - name: Navigate z-index, DOM, and layers using the 3D View tool # additional article
           href: devtools-guide-chromium/3d-view/index.md
-            # panel with no article (find an associated article & add tool name to its title):
-          # - name: Layers (wrapped by 3D View tool)
-        - name: Console
+# Layers tool/panel/tab
+#         add "Layers" to the TOC title of an existing article, or create a page with that in the TOC title.  Layers panel is wrapped by 3D View panel
+# Console tool/panel/tab (default tab 3) --------------------------------------
+        - name: Console (Console panel)
           items:
             - name: Console overview
               href: devtools-guide-chromium/console/index.md
@@ -100,55 +105,8 @@
               href: devtools-guide-chromium/console/console-dom-interaction.md
             - name: Filter Console messages # ui: Console tool # additional article
               href: devtools-guide-chromium/console/console-filters.md
-        - name: Find unused JavaScript and CSS code with the Coverage tool
-          href: devtools-guide-chromium/coverage/index.md
-        - name: Network
-          items:
-            - name: Inspect network activity
-              href: devtools-guide-chromium/network/index.md
-            - name: Network issues guide # additional article
-              href: devtools-guide-chromium/network/issues.md
-            - name: Network features reference
-              href: devtools-guide-chromium/network/reference.md
-          #   panel with no article (find an associated article & add tool name to its title):
-          # - name: Network conditions # related article: "Network features reference"
-          #   panel with no article (find an associated article & add tool name to its title):
-          # - name: Network request blocking # not found by fts
-        - name: Storage (Application panel)
-          items:
-            - name: View, edit, and delete cookies
-              href: devtools-guide-chromium/storage/cookies.md
-            - name: View and edit local storage
-              href: devtools-guide-chromium/storage/localstorage.md
-            - name: View and change IndexedDB data
-              href: devtools-guide-chromium/storage/indexeddb.md
-            - name: View and edit session storage
-              href: devtools-guide-chromium/storage/sessionstorage.md
-          # - name: View Application Cache data # not in this repo, deprecated
-          #   href: devtools-guide-chromium/storage/application.md # not in this repo, deprecated
-            - name: View Web SQL data
-              href: devtools-guide-chromium/storage/websql.md
-            - name: View Cache data
-              href: devtools-guide-chromium/storage/cache.md
-        - name: Find and fix problems using the Issues tool
-          href: devtools-guide-chromium/issues/index.md
-        - name: Run commands in the Command Menu
-          href: devtools-guide-chromium/command-menu/index.md
-        - name: Mobile device emulation # orig: "Mobile simulation"
-          items:
-            - name: Emulate and test other browsers
-              href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-            - name: Emulate mobile devices
-              href: devtools-guide-chromium/device-mode/index.md
-            - name: Override the user agent string
-              href: devtools-guide-chromium/device-mode/override-user-agent.md
-            - name: Override geolocation with the Sensors tool
-              href: devtools-guide-chromium/device-mode/geolocation.md
-            - name: Simulate device orientation
-              href: devtools-guide-chromium/device-mode/orientation.md
-            - name: Emulate dual-screen and foldable devices # ui: device emulation # additional article
-              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-        - name: JavaScript
+# Sources tool/panel/tab (default tab 4) --------------------------------------
+        - name: JavaScript (Sources panel)
           items:
             - name: Get started with debugging JavaScript
               href: devtools-guide-chromium/javascript/index.md
@@ -160,8 +118,11 @@
               href: devtools-guide-chromium/javascript/snippets.md
             - name: Sources tool overview
               href: devtools-guide-chromium/sources/index.md
-          #   panel with no article (typing "quick source" in "Filter by title" should immed find a TOC entry)
-          # - name: Quick source - covered in "Sources tool overview > Displaying source files when using a different tool" & "Edit files with Workspaces > Step 4: Save a JavaScript change to disk"; pick which article title to maybe add tool name to
+# Quick source tool/panel/tab
+#             add "Quick source" to the TOC title of an existing article, or create a page with that in the TOC title.  covered in:
+#             "Sources tool overview > Displaying source files when using a different tool"
+#             "Edit files with Workspaces > Step 4: Save a JavaScript change to disk"
+# Sources tool con't
             - name: Debug background services
               href: devtools-guide-chromium/javascript/background-services.md
             - name: Mark content scripts as Library Code
@@ -170,24 +131,126 @@
               href: devtools-guide-chromium/javascript/disable.md
             - name: Map preprocessed code to source code
               href: devtools-guide-chromium/javascript/source-maps.md
-          #   panel with no article:
-          # - name: JavaScript Profiler # not found by fts  # deprecated per https://developer.chrome.com/blog/devtools-javascript-cpu-profile-migration/#old
-        - name: Performance
+# JavaScript Profiler tool/panel/tab
+#         deprecated
+# Coverage tool/panel/tab
+        - name: Find unused JavaScript and CSS code with the Coverage tool
+          href: devtools-guide-chromium/coverage/index.md
+# Sources tool con't
+        - name: Editing and managing files # added container
+          items:
+            - name: View page resources # ui: Sources tool
+              href: devtools-guide-chromium/resources/index.md
+# Search tool/panel/tab
+            - name: Find source files for a page using the Search tool # additional article
+              href: devtools-guide-chromium/search/search-tool.md
+# Changes tool/panel/tab
+            - name: Track changes to files using the Changes tool # additional article
+              href: devtools-guide-chromium/changes/changes-tool.md
+# Sources tool con't
+            - name: Edit files with Workspaces (Sources > Filesystem) # ui: Sources tool
+              href: devtools-guide-chromium/workspaces/index.md
+            - name: Override webpage resources with local copies # ui: Sources tool  # additional article
+              href: devtools-guide-chromium/javascript/overrides.md
+# Network tool/panel/tab (default tab 5) --------------------------------------
+        - name: Network (Network panel)
+          items:
+            - name: Inspect network activity
+              href: devtools-guide-chromium/network/index.md
+            - name: Network issues guide # additional article
+              href: devtools-guide-chromium/network/issues.md
+            - name: Network features reference
+              href: devtools-guide-chromium/network/reference.md
+# Network conditions tool/panel/tab -------------------------------------------
+#         add "Network conditions" to the TOC title of an existing article, or create a page with that in the TOC title.  related article: "Network features reference"
+# Network request blocking tool/panel/tab -------------------------------------
+#         add "Network request blocking" to the TOC title of an existing article, or create a page with that in the title
+# Performance tool/panel/tab (default tab 6) ----------------------------------
+        - name: Performance (Performance panel)
           items:
             - name: Get started analyzing runtime performance # ui: Performance tool
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: Analyze runtime performance
               href: devtools-guide-chromium/rendering-tools/index.md
+# Performance monitor tool/panel/tab
             - name: Measure runtime performance of a page using the Performance monitor tool # additional article
               href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
+# Performance tool con't
             - name: Speed up JavaScript runtime
               href: devtools-guide-chromium/rendering-tools/js-runtime.md
             - name: Optimize website speed # ui: Performance tool
               href: devtools-guide-chromium/speed/get-started.md
-            - name: Performance features reference # ui: Performance tool
+# Rendering tool/panel/tab
+            - name: Performance features reference # ui: Performance tool, Rendering tool
               href: devtools-guide-chromium/evaluate-performance/reference.md
+# Performance tool con't
             - name: Timeline event reference # ui: Performance tool
               href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+# Memory tool/panel/tab (default tab 7) ---------------------------------------
+        - name: Memory
+          items:
+            - name: Fix memory problems
+              href: devtools-guide-chromium/memory-problems/index.md
+            - name: Memory terminology
+              href: devtools-guide-chromium/memory-problems/memory-101.md
+            - name: Record heap snapshots
+              href: devtools-guide-chromium/memory-problems/heap-snapshots.md
+            - name: Use Allocation instrumentation on timeline
+              href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+# Detached Elements tool/panel/tab --------------------------------------------
+            - name: Debug DOM memory leaks with the Detached Elements tool # additional article
+              href: devtools-guide-chromium/memory-problems/dom-leaks.md
+# Memory Inspector tool/panel/tab ---------------------------------------------
+#           - name: Inspect JavaScript ArrayBuffer with the Memory Inspector # pending
+#             href: devtools-guide-chromium/memory-inspector/index.md # pending
+# Application tool/panel/tab (default tab 8) ----------------------------------
+        - name: Storage (Application tool)
+          items:
+            - name: View, edit, and delete cookies
+              href: devtools-guide-chromium/storage/cookies.md
+            - name: View and edit local storage
+              href: devtools-guide-chromium/storage/localstorage.md
+            - name: View and change IndexedDB data
+              href: devtools-guide-chromium/storage/indexeddb.md
+            - name: View and edit session storage
+              href: devtools-guide-chromium/storage/sessionstorage.md
+          # - name: View Application Cache data # deprecated
+          #   href: devtools-guide-chromium/storage/application.md # deprecated
+            - name: View Web SQL data
+              href: devtools-guide-chromium/storage/websql.md
+            - name: View Cache data
+              href: devtools-guide-chromium/storage/cache.md
+# Security tool/panel/tab (default tab 9) -------------------------------------
+        - name: Understand security issues
+          href: devtools-guide-chromium/security/index.md
+# CSS Overview tool/panel/tab (default tab 11) --------------------------------
+#       - name: Identify potential CSS improvements # pending
+#         href: devtools-guide-chromium/issues/index.md # pending
+# Issues tool/panel/tab -------------------------------------------------------
+        - name: Find and fix problems using the Issues tool
+          href: devtools-guide-chromium/issues/index.md
+# Non-default tools/panels/tabs ===============================================
+# Command Menu ----------------------------------------------------------------
+        - name: Run commands in the Command Menu
+          href: devtools-guide-chromium/command-menu/index.md
+# Device Emulator -------------------------------------------------------------
+        - name: Mobile device emulation # orig: "Mobile simulation"
+          items:
+            - name: Emulate and test other browsers
+              href: devtools-guide-chromium/device-mode/testing-other-browsers.md
+            - name: Emulate mobile devices
+              href: devtools-guide-chromium/device-mode/index.md
+            - name: Override the user agent string
+              href: devtools-guide-chromium/device-mode/override-user-agent.md
+# Sensors tool/panel/tab
+            - name: Override geolocation with the Sensors tool
+              href: devtools-guide-chromium/device-mode/geolocation.md
+# Device Emulator con't
+            - name: Simulate device orientation
+              href: devtools-guide-chromium/device-mode/orientation.md
+            - name: Emulate dual-screen and foldable devices # ui: device emulation # additional article
+              href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+# ~Elements tool/panel/tab > Accessibility tab -------------------------------------------
         - name: Accessibility
           items:
             - name: Accessibility-testing features
@@ -196,6 +259,7 @@
               href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
             - name: Test accessibility using the Accessibility tab # Testing accessibility > Screen reader support.  ui: Elements tool > Accessibility tab  # orig: was part of "Accessibility features reference"
               href: devtools-guide-chromium/accessibility/accessibility-tab.md
+# Lighthouse tool/panel/tab (default tab 10) ----------------------------------
             - name: Test accessibility using Lighthouse # ui: Lighthouse tool  # Testing accessibility > Usable when narrow  # orig: was part of "Accessibility features reference"
               href: devtools-guide-chromium/accessibility/lighthouse.md
             - name: Navigate Microsoft Edge DevTools with assistive technology
@@ -246,6 +310,7 @@
               items:
                 - name: Verify that the webpage layout is usable when narrow # Testing accessibility > Usable when narrow  # additional article
                   href: devtools-guide-chromium/accessibility/narrow.md
+# Remote Debugger -------------------------------------------------------------
         - name: Remote debugging
           items:
             - name: Remotely debug Android devices
@@ -258,40 +323,15 @@
               href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Remotely debug Windows devices
               href: devtools-guide-chromium/remote-debugging/windows.md
-        - name: Memory
-          items:
-#           - name: Inspect JavaScript ArrayBuffer with the Memory Inspector (not in this repo, probably need to add, Aug 2020)
-#             href: devtools-guide-chromium/memory-inspector/index.md (not in this repo)
-            - name: Fix memory problems
-              href: devtools-guide-chromium/memory-problems/index.md
-            - name: Memory terminology
-              href: devtools-guide-chromium/memory-problems/memory-101.md
-            - name: Record heap snapshots
-              href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-            - name: Use Allocation instrumentation on timeline
-              href: devtools-guide-chromium/memory-problems/allocation-profiler.md
-            - name: Debug DOM memory leaks with the Detached Elements tool # additional article
-              href: devtools-guide-chromium/memory-problems/dom-leaks.md
+# Media tool/panel/tab --------------------------------------------------------
         - name: View and debug media players information
           href: devtools-guide-chromium/media-panel/index.md
+# WebAuthn tool/panel/tab --------------------------------------------------------
         - name: Emulate authenticators and debug WebAuthn
           href: devtools-guide-chromium/webauthn/index.md
-        - name: Editing and managing files # added container
-          items:
-            - name: View page resources # ui: Sources tool
-              href: devtools-guide-chromium/resources/index.md
-            - name: Find source files for a page using the Search tool # additional article
-              href: devtools-guide-chromium/search/search-tool.md
-            - name: Track changes to files using the Changes tool # additional article
-              href: devtools-guide-chromium/changes/changes-tool.md
-            - name: Edit files with Workspaces # ui: Sources tool
-              href: devtools-guide-chromium/workspaces/index.md
-            - name: Override webpage resources with local copies # ui: Sources tool  # additional article
-              href: devtools-guide-chromium/javascript/overrides.md
         - name: Debug Progressive Web Apps
           href: devtools-guide-chromium/progressive-web-apps/index.md
-        - name: Understand security issues
-          href: devtools-guide-chromium/security/index.md
+# Misc ------------------------------------------------------------------------
         - name: Keyboard shortcuts
           href: devtools-guide-chromium/shortcuts/index.md
         - name: Customization
@@ -310,16 +350,19 @@
               href: devtools-guide-chromium/customize/shortcuts.md
         - name: Use DevTools in IE mode  # additional article
           href: devtools-guide-chromium/ie-mode/index.md
+# Network, Application, & Sources tools/panels/tabs ---------------------------
         - name: Service Worker improvements # additional article  # improvements in Network, Application, Sources tools
           href: devtools-guide-chromium/service-workers/index.md
+# Misc ------------------------------------------------------------------------
         - name: Microsoft Edge DevTools Protocol # additional article
           href: devtools-protocol-chromium/index.md
         - name: Contact the Microsoft Edge DevTools team # additional article
           href: devtools-guide-chromium/contact.md
-      #   panel with no article (should be able to type into "Filter by title" to find a TOC entry):
-      # - name: Developer Resources  # not found by fts in either repo
-      #   panel with no article (should be able to type into "Filter by title" to find a TOC entry):
-      # - name: WebAudio  # no article in either repo
+# Developer Resources tool/panel/tab ------------------------------------------
+#         no article
+# WebAudio tool/panel/tab ------------------------------------------
+#         no article
+# end of DevTools TOC
 # =============================================================================
     - name: Microsoft Edge extensions
       items:
