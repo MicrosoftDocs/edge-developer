@@ -1,4 +1,3 @@
-# goal: "Filter by title" should find a TOC entry for every tool name per Command Menu > show & per "More Tools" menu, also Inspect, Device Emulation, & Command Menu.
 - name: Microsoft Edge Developer documentation # landing page
   href: developer/index.yml
   items:
@@ -11,9 +10,9 @@
           href: devtools-guide-chromium/about-panel-drawer-tools.md
         - name: Open Microsoft Edge DevTools
           href: devtools-guide-chromium/open/index.md
-# Default tools/panels/tabs ===================================================
-# Welcome tool/panel/tab (default tab 1) --------------------------------------
-#         add "welcome" to the TOC title of an existing article, or create a page with that in the TOC title
+# Default tools ===============================================================
+# Welcome tool (default tab 1) ------------------------------------------------
+#         add "welcome" to a TOC title or create a page
         - name: What's new
           items:
             - name: Experimental features
@@ -50,16 +49,16 @@
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-# Elements tool/panel/tab (default tab 2) -------------------------------------
-        - name: CSS (Elements panel)
+# Elements tool (default tab 2) -----------------------------------------------
+        - name: CSS (Elements tool)
           items:
-            - name: Get started with CSS # ui: Elements tool
+            - name: Get started with CSS
               href: devtools-guide-chromium/beginners/css.md
-            - name: Get started with viewing and changing CSS # ui: Elements tool
+            - name: Get started with viewing and changing CSS
               href: devtools-guide-chromium/css/index.md
             - name: CSS features reference
               href: devtools-guide-chromium/css/reference.md
-# Animations tool/panel/tab
+# Animations tool
             - name: Inspect animations
               href: devtools-guide-chromium/inspect-styles/animations.md
 # Elements tool con't
@@ -67,23 +66,25 @@
               href: devtools-guide-chromium/css/grid.md
             - name: Force print preview mode
               href: devtools-guide-chromium/css/print-preview.md
-            - name: Edit CSS font styles and settings in the Styles pane # ui: Elements tool # additional article
+            - name: Edit CSS font styles and settings in the Styles pane # additional article
               href: devtools-guide-chromium/inspect-styles/edit-fonts.md
-            - name: Style editing for CSS-in-JS frameworks # ui: Elements tool # additional article from blog
+            - name: Style editing for CSS-in-JS frameworks # additional article from blog
               href: devtools-guide-chromium/css/css-in-js.md
-        - name: Get started with HTML and the DOM (Elements panel) # ui: Elements tool.  "here" link is 404
+        - name: Get started with HTML and the DOM # orig article is 404
           href: devtools-guide-chromium/beginners/html.md
+# Inspect tool # 1 of 2
         - name: Analyze pages using the Inspect tool # additional article
           href: devtools-guide-chromium/css/inspect.md
-        - name: Get started with viewing and changing the DOM (Elements panel) # ui: Elements tool
+# Elements tool con't
+        - name: Get started with viewing and changing the DOM
           href: devtools-guide-chromium/dom/index.md
-# 3D View tool/panel/tab
+# 3D View tool
         - name: Navigate z-index, DOM, and layers using the 3D View tool # additional article
           href: devtools-guide-chromium/3d-view/index.md
-# Layers tool/panel/tab
-#         add "Layers" to the TOC title of an existing article, or create a page with that in the TOC title.  Layers panel is wrapped by 3D View panel
-# Console tool/panel/tab (default tab 3) --------------------------------------
-        - name: Console (Console panel)
+# Layers tool
+#         add "Layers" to a TOC title or create a page.  Layers panel is wrapped by 3D View panel
+# Console tool (default tab 3) ------------------------------------------------
+        - name: Console tool
           items:
             - name: Console overview
               href: devtools-guide-chromium/console/index.md
@@ -99,14 +100,14 @@
               href: devtools-guide-chromium/console/utilities.md
             - name: Monitor changes in JavaScript using Live Expressions
               href: devtools-guide-chromium/console/live-expressions.md
-            - name: Fix JavaScript errors that are reported in the Console # ui: Console tool then Sources tool or Network tool # additional article
+            - name: Fix JavaScript errors that are reported in the Console # Console tool, then Sources tool or Network tool  # additional article
               href: devtools-guide-chromium/console/console-debug-javascript.md
-            - name: Use the Console to interact with the DOM # ui: Console tool # additional article
+            - name: Use the Console to interact with the DOM # additional article
               href: devtools-guide-chromium/console/console-dom-interaction.md
-            - name: Filter Console messages # ui: Console tool # additional article
+            - name: Filter Console messages # additional article
               href: devtools-guide-chromium/console/console-filters.md
-# Sources tool/panel/tab (default tab 4) --------------------------------------
-        - name: JavaScript (Sources panel)
+# Sources tool (default tab 4) ------------------------------------------------
+        - name: JavaScript (Sources tool)
           items:
             - name: Get started with debugging JavaScript
               href: devtools-guide-chromium/javascript/index.md
@@ -118,8 +119,8 @@
               href: devtools-guide-chromium/javascript/snippets.md
             - name: Sources tool overview
               href: devtools-guide-chromium/sources/index.md
-# Quick source tool/panel/tab
-#             add "Quick source" to the TOC title of an existing article, or create a page with that in the TOC title.  covered in:
+# Quick source tool
+#             add "Quick source" to a TOC title or create a page.  covered in:
 #             "Sources tool overview > Displaying source files when using a different tool"
 #             "Edit files with Workspaces > Step 4: Save a JavaScript change to disk"
 # Sources tool con't
@@ -131,29 +132,29 @@
               href: devtools-guide-chromium/javascript/disable.md
             - name: Map preprocessed code to source code
               href: devtools-guide-chromium/javascript/source-maps.md
-# JavaScript Profiler tool/panel/tab
+# JavaScript Profiler tool
 #         deprecated
-# Coverage tool/panel/tab
+# Coverage tool
         - name: Find unused JavaScript and CSS code with the Coverage tool
           href: devtools-guide-chromium/coverage/index.md
 # Sources tool con't
         - name: Editing and managing files # added container
           items:
-            - name: View page resources # ui: Sources tool
+            - name: View page resources # Command Menu, Network, Sources, Application, Network
               href: devtools-guide-chromium/resources/index.md
-# Search tool/panel/tab
+# Search tool
             - name: Find source files for a page using the Search tool # additional article
               href: devtools-guide-chromium/search/search-tool.md
-# Changes tool/panel/tab
+# Changes tool
             - name: Track changes to files using the Changes tool # additional article
               href: devtools-guide-chromium/changes/changes-tool.md
 # Sources tool con't
-            - name: Edit files with Workspaces (Sources > Filesystem) # ui: Sources tool
+            - name: Edit files with Workspaces (Filesystem tab)
               href: devtools-guide-chromium/workspaces/index.md
-            - name: Override webpage resources with local copies # ui: Sources tool  # additional article
+            - name: Override webpage resources with local copies (Overrides tab) # additional article
               href: devtools-guide-chromium/javascript/overrides.md
-# Network tool/panel/tab (default tab 5) --------------------------------------
-        - name: Network (Network panel)
+# Network tool (default tab 5) ------------------------------------------------
+        - name: Network tool
           items:
             - name: Inspect network activity
               href: devtools-guide-chromium/network/index.md
@@ -161,33 +162,33 @@
               href: devtools-guide-chromium/network/issues.md
             - name: Network features reference
               href: devtools-guide-chromium/network/reference.md
-# Network conditions tool/panel/tab -------------------------------------------
-#         add "Network conditions" to the TOC title of an existing article, or create a page with that in the TOC title.  related article: "Network features reference"
-# Network request blocking tool/panel/tab -------------------------------------
-#         add "Network request blocking" to the TOC title of an existing article, or create a page with that in the title
-# Performance tool/panel/tab (default tab 6) ----------------------------------
-        - name: Performance (Performance panel)
+# Network conditions tool -----------------------------------------------------
+#         add "Network conditions" to a TOC title or create a page
+# Network request blocking tool -----------------------------------------------
+#         add "Network request blocking" to a TOC title or create a page
+# Performance tool (default tab 6) --------------------------------------------
+        - name: Performance tool
           items:
-            - name: Get started analyzing runtime performance # ui: Performance tool
+            - name: Get started analyzing runtime performance
               href: devtools-guide-chromium/evaluate-performance/index.md
             - name: Analyze runtime performance
               href: devtools-guide-chromium/rendering-tools/index.md
-# Performance monitor tool/panel/tab
+# Performance monitor tool
             - name: Measure runtime performance of a page using the Performance monitor tool # additional article
               href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
 # Performance tool con't
             - name: Speed up JavaScript runtime
               href: devtools-guide-chromium/rendering-tools/js-runtime.md
-            - name: Optimize website speed # ui: Performance tool
+            - name: Optimize website speed
               href: devtools-guide-chromium/speed/get-started.md
-# Rendering tool/panel/tab
-            - name: Performance features reference # ui: Performance tool, Rendering tool
+# Rendering tool
+            - name: Performance features reference (Performance tool, Rendering tool) # Performance tool, Rendering tool
               href: devtools-guide-chromium/evaluate-performance/reference.md
 # Performance tool con't
-            - name: Timeline event reference # ui: Performance tool
+            - name: Timeline event reference
               href: devtools-guide-chromium/evaluate-performance/performance-reference.md
-# Memory tool/panel/tab (default tab 7) ---------------------------------------
-        - name: Memory
+# Memory tool (default tab 7) -------------------------------------------------
+        - name: Memory tool
           items:
             - name: Fix memory problems
               href: devtools-guide-chromium/memory-problems/index.md
@@ -197,13 +198,13 @@
               href: devtools-guide-chromium/memory-problems/heap-snapshots.md
             - name: Use Allocation instrumentation on timeline
               href: devtools-guide-chromium/memory-problems/allocation-profiler.md
-# Detached Elements tool/panel/tab --------------------------------------------
+# Detached Elements tool ------------------------------------------------------
             - name: Debug DOM memory leaks with the Detached Elements tool # additional article
               href: devtools-guide-chromium/memory-problems/dom-leaks.md
-# Memory Inspector tool/panel/tab ---------------------------------------------
+# Memory Inspector tool -------------------------------------------------------
 #           - name: Inspect JavaScript ArrayBuffer with the Memory Inspector # pending
 #             href: devtools-guide-chromium/memory-inspector/index.md # pending
-# Application tool/panel/tab (default tab 8) ----------------------------------
+# Application tool (default tab 8) --------------------------------------------
         - name: Storage (Application tool)
           items:
             - name: View, edit, and delete cookies
@@ -220,21 +221,21 @@
               href: devtools-guide-chromium/storage/websql.md
             - name: View Cache data
               href: devtools-guide-chromium/storage/cache.md
-# Security tool/panel/tab (default tab 9) -------------------------------------
-        - name: Understand security issues
+# Security tool (default tab 9) -----------------------------------------------
+        - name: Understand security issues (Security tool)
           href: devtools-guide-chromium/security/index.md
-# CSS Overview tool/panel/tab (default tab 11) --------------------------------
+# CSS Overview tool (default tab 11) ------------------------------------------
 #       - name: Identify potential CSS improvements # pending
 #         href: devtools-guide-chromium/issues/index.md # pending
-# Issues tool/panel/tab -------------------------------------------------------
+# Issues tool -----------------------------------------------------------------
         - name: Find and fix problems using the Issues tool
           href: devtools-guide-chromium/issues/index.md
-# Non-default tools/panels/tabs ===============================================
+# Non-default tools, in order of orig TOC =====================================
 # Command Menu ----------------------------------------------------------------
         - name: Run commands in the Command Menu
           href: devtools-guide-chromium/command-menu/index.md
 # Device Emulator -------------------------------------------------------------
-        - name: Mobile device emulation # orig: "Mobile simulation"
+        - name: Mobile device emulation # orig: Mobile simulation
           items:
             - name: Emulate and test other browsers
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
@@ -242,73 +243,75 @@
               href: devtools-guide-chromium/device-mode/index.md
             - name: Override the user agent string
               href: devtools-guide-chromium/device-mode/override-user-agent.md
-# Sensors tool/panel/tab
+# Sensors tool
             - name: Override geolocation with the Sensors tool
               href: devtools-guide-chromium/device-mode/geolocation.md
 # Device Emulator con't
             - name: Simulate device orientation
               href: devtools-guide-chromium/device-mode/orientation.md
-            - name: Emulate dual-screen and foldable devices # ui: device emulation # additional article
+            - name: Emulate dual-screen and foldable devices # additional article
               href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-# ~Elements tool/panel/tab > Accessibility tab -------------------------------------------
+# ~Elements tool > Accessibility tab ------------------------------------------
         - name: Accessibility
           items:
-            - name: Accessibility-testing features
+            - name: Accessibility-testing features # orig: Accessibility features reference (broken up & replaced)
               href: devtools-guide-chromium/accessibility/reference.md
             - name: Overview of accessibility testing using DevTools # additional article
               href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
-            - name: Test accessibility using the Accessibility tab # Testing accessibility > Screen reader support.  ui: Elements tool > Accessibility tab  # orig: was part of "Accessibility features reference"
-              href: devtools-guide-chromium/accessibility/accessibility-tab.md
-# Lighthouse tool/panel/tab (default tab 10) ----------------------------------
-            - name: Test accessibility using Lighthouse # ui: Lighthouse tool  # Testing accessibility > Usable when narrow  # orig: was part of "Accessibility features reference"
+# Inspect tool # 2 of 2
+            - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # tests Screen reader support, Keyboard support, Text contrast # additional article
+              href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+# Lighthouse tool (default tab 10)
+            - name: Test accessibility using Lighthouse # was part of "Accessibility features reference"
               href: devtools-guide-chromium/accessibility/lighthouse.md
+# ~Elements tool > Accessibility tab con't
             - name: Navigate Microsoft Edge DevTools with assistive technology
               href: devtools-guide-chromium/accessibility/navigation.md
-            - name: Track which element has focus # Testing accessibility > Usable when narrow  # orig: was part of "Accessibility features reference"?  and/or, = orig article "Track element focus"
+            - name: Track which element has focus # orig: "Track element focus"
               href: devtools-guide-chromium/accessibility/focus.md
             - name: Alt-text for images
               items:
-                - name: Automatically test a webpage for accessibility issues # Testing accessibility > Alt-text for images  # additional article
+                - name: Automatically test a webpage for accessibility issues (Issues tool) # additional article
                   href: devtools-guide-chromium/accessibility/test-issues-tool.md
             - name: Keyboard support
               items:
-                - name: Check for keyboard support by using the Tab and Enter keys # Testing accessibility > Keyboard support  # additional article
+                - name: Check for keyboard support by using the Tab and Enter keys # additional article
                   href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
-                - name: Analyze the lack of indication of keyboard focus in a sidebar menu # Testing accessibility > Keyboard support  # additional article
+                - name: Analyze the lack of indication of keyboard focus in a sidebar menu # additional article
                   href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
-                - name: Analyze keyboard support on forms # Testing accessibility > Keyboard support  # additional article
+                - name: Analyze keyboard support on forms # additional article
                   href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
-                - name: Test keyboard support using the Source Order Viewer # Testing accessibility > Keyboard support  # additional article
+                - name: Test keyboard support using the Source Order Viewer # additional article
                   href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
             - name: Text contrast
               items:
-                - name: Test text-color contrast using the Color Picker # Testing accessibility > Text contrast  # orig: was part of "Accessibility features reference"
+                - name: Test text-color contrast using the Color Picker # was part of "Accessibility features reference"
                   href: devtools-guide-chromium/accessibility/color-picker.md
-                - name: Verify accessibility of all states of elements # Testing accessibility > Text contrast  # additional article
+                - name: Verify accessibility of all states of elements # additional article
                   href: devtools-guide-chromium/accessibility/test-inspect-states.md
-                - name: Check for contrast issues with dark theme and light theme # Testing accessibility > Text contrast  # additional article
+                - name: Check for contrast issues with dark theme and light theme # additional article
                   href: devtools-guide-chromium/accessibility/test-dark-mode.md
             - name: Screen reader support
               items:
-                - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage #  # Testing accessibility > Screen reader support.   related: "Keyboard support" & "Text contrast"  # additional article
-                  href: devtools-guide-chromium/accessibility/test-inspect-tool.md
-                - name: Check the Accessibility Tree for keyboard and screen reader support # Testing accessibility > Screen reader support  # additional article
+                - name: Test accessibility using the Accessibility tab # was part of "Accessibility features reference"
+                  href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                - name: Check the Accessibility Tree for keyboard and screen reader support # additional article
                   href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
             - name: Vision deficiencies
               items:
                 - name: Emulate vision deficiencies # additional article
                   href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: Verify that a page is usable by people with color blindness # Testing accessibility > Vision deficiencies  # additional article
+                - name: Verify that a page is usable by people with color blindness # additional article
                   href: devtools-guide-chromium/accessibility/test-color-blindness.md
-                - name: Verify that a page is usable with blurred vision # Testing accessibility > Vision deficiencies  # additional article
+                - name: Verify that a page is usable with blurred vision # additional article
                   href: devtools-guide-chromium/accessibility/test-blurred-vision.md
                 - name: Simulate reduced motion # additional article
                   href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-                - name: Verify that a page is usable with UI animation turned off # Testing accessibility > Vision deficiencies  # additional article
+                - name: Verify that a page is usable with UI animation turned off # additional article
                   href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
             - name: Usable when narrow
               items:
-                - name: Verify that the webpage layout is usable when narrow # Testing accessibility > Usable when narrow  # additional article
+                - name: Verify that the webpage layout is usable when narrow # additional article
                   href: devtools-guide-chromium/accessibility/narrow.md
 # Remote Debugger -------------------------------------------------------------
         - name: Remote debugging
@@ -323,11 +326,11 @@
               href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
             - name: Remotely debug Windows devices
               href: devtools-guide-chromium/remote-debugging/windows.md
-# Media tool/panel/tab --------------------------------------------------------
-        - name: View and debug media players information
+# Media tool ------------------------------------------------------------------
+        - name: View and debug media players information (Media tool)
           href: devtools-guide-chromium/media-panel/index.md
-# WebAuthn tool/panel/tab --------------------------------------------------------
-        - name: Emulate authenticators and debug WebAuthn
+# WebAuthn tool ---------------------------------------------------------------
+        - name: Emulate authenticators and debug WebAuthn (WebAuthn tool)
           href: devtools-guide-chromium/webauthn/index.md
         - name: Debug Progressive Web Apps
           href: devtools-guide-chromium/progressive-web-apps/index.md
@@ -350,19 +353,19 @@
               href: devtools-guide-chromium/customize/shortcuts.md
         - name: Use DevTools in IE mode  # additional article
           href: devtools-guide-chromium/ie-mode/index.md
-# Network, Application, & Sources tools/panels/tabs ---------------------------
-        - name: Service Worker improvements # additional article  # improvements in Network, Application, Sources tools
+# Network, Application, & Sources tools ---------------------------------------
+        - name: Service Worker improvements # additional article
           href: devtools-guide-chromium/service-workers/index.md
 # Misc ------------------------------------------------------------------------
         - name: Microsoft Edge DevTools Protocol # additional article
           href: devtools-protocol-chromium/index.md
         - name: Contact the Microsoft Edge DevTools team # additional article
           href: devtools-guide-chromium/contact.md
-# Developer Resources tool/panel/tab ------------------------------------------
+# Developer Resources tool ----------------------------------------------------
 #         no article
-# WebAudio tool/panel/tab ------------------------------------------
+# WebAudio tool ---------------------------------------------------------------
 #         no article
-# end of DevTools TOC
+# /DevTools
 # =============================================================================
     - name: Microsoft Edge extensions
       items:
