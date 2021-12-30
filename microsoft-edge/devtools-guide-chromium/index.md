@@ -46,45 +46,6 @@ See also [Open Microsoft Edge DevTools](./open/index.md) - how to open the diffe
 
 
 <!-- ====================================================================== -->
-<!-- ## Tools in DevTools -->
-<!-- pending PR 1504, which adds destination articles -->
-<!-- Tools are also called panels.  Most tools have a tab on the toolbar.
-
-| Tool | Purpose | Article |
-|---|---|---|
-| Welcome |  |  |
-| Elements |  |  |
-| Console |  |  |
-| Sources |  |  |
-| Network |  |  |
-| Performance |  |  |
-| Memory |  |  |
-| Application |  |  |
-| Security |  |  |
-| Lighthouse |  |  |
-| 3D View |  |  |
-| Animations |  |  |
-| Changes |  |  |
-| Coverage |  |  |
-| Developer Resources |  |  |
-| Issues |  |  |
-| JavaScript Profiler |  |  |
-| Layers |  |  |
-| Media |  |  |
-| Memory Inspector |  |  |
-| Network conditions |  |  |
-| Network request blocking |  |  |
-| Performance monitor |  |  |
-| Quick source |  |  |
-| Rendering |  |  |
-| Search |  |  |
-| Sensors |  |  |
-| WebAudio |  |  |
-| WebAuthn |  |  |
-| Inspect |  |  | -->
- 
-
-<!-- ====================================================================== -->
 ## Changing where DevTools is docked in the browser
 
 To change where DevTools is placed within the browser window:
@@ -170,6 +131,88 @@ The main toolbar in DevTools has the following sections:
 *   The **Send Feedback** button displays a torso with a chat bubble next to it.  To open the **Send Feedback** dialog, select the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use **Send Feedback** to connect with DevTools team to report problems, issues, or suggest ideas.
 
 *   The **Customize and control DevTools** (`...`) button opens a dropdown menu.  It allows you to define where to dock DevTools, search, open different tools, and much more.
+
+
+<!-- ====================================================================== -->
+## List of all the tools
+
+There are default tools (panels with tabs on a toolbar), some tools that aren't a panel with a tab on the toolbar, and some optional tools that you can open on a toolbar (as tabs).
+
+### Default tools
+
+* Welcome
+* Elements
+* Console
+* Sources
+* Network
+* Performance
+* Memory
+* Application
+* Security
+* Lighthouse
+* CSS Overview
+
+### Non-tab tools
+
+* Inspect tool
+* Device Emulation
+* Command Menu
+
+### Non-default tools
+
+* 3D View
+* Animations
+* Changes
+* Coverage
+* Detached Elements
+* Developer Resources
+* Issues
+* JavaScript Profiler
+* Layers
+* Media
+* Memory Inspector
+* Network conditions
+* Network request blocking
+* Performance monitor
+* Quick source
+* Rendering
+* Search
+* Sensors
+* WebAudio
+* WebAuthn
+ 
+<!-- | Tool | Purpose | Article |
+|---|---|---|
+| Welcome |  |  |
+| Elements |  |  |
+| Console |  |  |
+| Sources |  |  |
+| Network |  |  |
+| Performance |  |  |
+| Memory |  |  |
+| Application |  |  |
+| Security |  |  |
+| Lighthouse |  |  |
+| 3D View |  |  |
+| Animations |  |  |
+| Changes |  |  |
+| Coverage |  |  |
+| Developer Resources |  |  |
+| Issues |  |  |
+| JavaScript Profiler |  |  |
+| Layers |  |  |
+| Media |  |  |
+| Memory Inspector |  |  |
+| Network conditions |  |  |
+| Network request blocking |  |  |
+| Performance monitor |  |  |
+| Quick source |  |  |
+| Rendering |  |  |
+| Search |  |  |
+| Sensors |  |  |
+| WebAudio |  |  |
+| WebAuthn |  |  |
+| Inspect |  |  | -->
 
 
 <!-- ====================================================================== -->
