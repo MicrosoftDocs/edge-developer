@@ -70,14 +70,15 @@
               href: devtools-guide-chromium/inspect-styles/edit-fonts.md
             - name: Style editing for CSS-in-JS frameworks # additional article from blog
               href: devtools-guide-chromium/css/css-in-js.md
-        - name: Get started with HTML and the DOM # orig article is 404
-          href: devtools-guide-chromium/beginners/html.md
+        - name: HTML and the DOM (Elements tool)
+          items:
+            - name: Get started with HTML and the DOM # orig article is 404
+              href: devtools-guide-chromium/beginners/html.md
+            - name: Get started with viewing and changing the DOM
+              href: devtools-guide-chromium/dom/index.md
 # Inspect tool # 1 of 2
         - name: Analyze pages using the Inspect tool # additional article
           href: devtools-guide-chromium/css/inspect.md
-# Elements tool con't
-        - name: Get started with viewing and changing the DOM
-          href: devtools-guide-chromium/dom/index.md
 # 3D View tool
         - name: Navigate z-index, DOM, and layers using the 3D View tool # additional article
           href: devtools-guide-chromium/3d-view/index.md
