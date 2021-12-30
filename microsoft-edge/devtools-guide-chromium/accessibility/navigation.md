@@ -1,5 +1,5 @@
 ---
-title: Navigate Microsoft Edge DevTools with assistive technology
+title: Navigate DevTools with assistive technology
 description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 06/07/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Navigate Microsoft Edge DevTools with assistive technology
+# Navigate DevTools with assistive technology
 
 This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
 

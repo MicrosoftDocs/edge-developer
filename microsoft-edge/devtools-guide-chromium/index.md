@@ -93,7 +93,7 @@ To change where DevTools is placed within the browser window:
 
 :::image type="content" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools.":::
 
-**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [emulate mobile devices](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
+**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [Emulate mobile devices (Device Emulation)](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
 **Dock to right** is the default placement of DevTools:
 
@@ -157,7 +157,7 @@ The main toolbar in DevTools has the following sections:
 
     :::image type="content" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="The Inspect tool while hovering over with the first headline of this article.":::
 
-*   The [Device Emulation](device-mode/index.md) tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
+*   The [Device Emulation](device-mode/index.md) tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.  See [Emulate mobile devices (Device Emulation)](device-mode\index.md).
 
     :::image type="content" source="./media/devtools-intro-device-emulation.msft.png" alt-text="DevTools display of this article in an emulated mobile phone.":::
 
@@ -213,7 +213,7 @@ In the **Preferences** section, you can change several parts of DevTools.  For e
 You can also change the settings of advanced features, such as:
 *   [Workspaces](./workspaces/index.md).
 *   Filter library code with the **Ignore List**.
-*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices in Microsoft Edge DevTools](device-mode/index.md).
+*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *   Select a network **Throttling** profile.
 *   Define simulated **Locations**.
 *   Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.

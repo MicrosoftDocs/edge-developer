@@ -1,5 +1,5 @@
 ---
-title: Understand security issues
+title: Understand security issues using the Security tool
 description: How to use the Security panel in DevTools to make sure that a page is fully protected by HTTPS.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,12 +21,9 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Understand security issues
+# Understand security issues using the Security tool
 
-<!-- title combining task & ui:
-# Understand security issues using the Security tool -->
-
-<!--Use the **Security** Panel in [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to make sure HTTPS is properly implemented on a page.  Navigate to **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that do not handle sensitive user data.  -->
+<!--Use the **Security** Panel in [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to make sure HTTPS is properly implemented on a page.  See **Why HTTPS Matters** to learn why every website should be protected with HTTPS, even sites that don't handle sensitive user data.  -->
 
 <!--todo: add section when why-https is available -->
 

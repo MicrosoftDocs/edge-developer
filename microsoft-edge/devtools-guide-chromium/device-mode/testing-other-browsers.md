@@ -1,6 +1,6 @@
 ---
 title: Emulate and test other browsers
-description: Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though Device Mode can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
+description: Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though Device Emulation (Device Mode) can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -23,12 +23,14 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Emulate and test other browsers
 
-Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though **Device Mode** can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
+Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though [Device Emulation](index.md) can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
 
 ### Summary
 
 *   When you don't have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.
+
 *   Device emulators and simulators enable you to mimic your development site on a range of devices, from your workstation.
+
 *   Cloud-based emulators enable you to automate unit tests for your site across different platforms.
 
 

@@ -490,7 +490,7 @@ Reduce JavaScript activity by removing the request to `mineBitcoin`:
 Looks like that last change caused a massive jump in performance!
 
 > [!NOTE]
-> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, see [Performance features reference](../evaluate-performance/reference.md).
+> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, see [Performance features reference (Performance tool, Rendering tool)](../evaluate-performance/reference.md).
 
 #### Doing less main thread work in the real world
 

@@ -20,6 +20,8 @@ To better meet the needs of your users with [color vision deficiency](https://ww
 | Tritanopia | The user is unable to perceive any blue light. |
 | Achromatopsia | The user is unable to perceive any color, which reduces all color to a shade of grey. |
 
+The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should give you a good first step to avoid problems.
+
 
 <!-- ====================================================================== -->
 ## Open the Rendering tool
@@ -42,6 +44,7 @@ To simulate how a person with a vision deficiency would see your web page, open 
     > [!div class="mx-imgBorder"]
     > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency](../media/accessibility-blurred-vision-emulation.msft.png)
 
+
 <!-- ====================================================================== -->
 ## Use the Command Menu
 
@@ -53,9 +56,6 @@ As an alternative approach, you can use the **Command Menu** to access the diffe
 
     > [!div class="mx-imgBorder"]
     > ![The command menu showing the different types of vision deficiencies](../media/accessibility-emulation-command-menu-results.msft.png)
-
-> [!IMPORTANT]
-> The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.
 
 
 <!-- ====================================================================== -->

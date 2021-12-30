@@ -245,8 +245,7 @@ You may now override storage quota size in the **Storage** pane.  This feature a
 1.  Turn on the **Simulate custom storage quota** checkbox.
 1.  Enter a valid number.
 
-For more information about how to emulate mobile devices and other features in the DevTools, navigate to [Emulate mobile devices in Microsoft Edge DevTools
-](../../../device-mode/index.md).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
+For more information about how to emulate mobile devices and other features in the DevTools, see [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
 :::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="Simulate storage quota size" lightbox="../../media/2020/11/storage-quota.msft.png":::
    Simulate storage quota size

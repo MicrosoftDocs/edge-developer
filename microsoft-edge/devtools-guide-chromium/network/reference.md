@@ -38,6 +38,7 @@ By default, DevTools records all network requests in the **Network** tool, so lo
 To stop recording requests:
 
 1.  On the **Network** tool, click **Stop recording network log** (![Stop recording network log](../media/record-on-icon.msft.png)).  It turns grey to indicate that DevTools is no longer recording requests.
+
 1.  Press `Control`+`E` (Windows, Linux) or `Command`+`E` (macOS) while the **Network** tool is in focus.
 
 ### Clear requests
@@ -67,8 +68,11 @@ Enabling **Capture screenshots**:
 To capture screenshots, refresh the page while the **Network** tool is in focus.
 
 After capturing a screenshot, you interact with it in the following ways:
+
 *   Hover on a screenshot to display the point at which that screenshot was captured.  A yellow line is displayed on the **Overview** pane.
+
 *   Click the thumbnail of a screen to filter out any requests that occurred after the screenshot was captured.
+
 *   Double-click a thumbnail to zoom into it.
 
 Hovering on a screenshot:
@@ -97,10 +101,10 @@ The **Disable Cache** checkbox:
 
 #### Disable the browser cache from the Network Conditions drawer
 
-If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer.
+If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer:
 
-1.  Open the **Network Conditions** drawer.
-1.  Turn on (or off) the **Disable cache** checkbox.
+1. Open the **Network Conditions** drawer.
+1. Select or clear the **Disable cache** checkbox.
 
 <!--todo: add network condition section when available -->
 
@@ -154,7 +158,9 @@ To manually clear browser cookies at any time, hover anywhere in the Requests ta
 To manually override the user agent, use the following steps.
 
 1.  Open the **Network Conditions** drawer.
+
 1.  Clear the **Select automatically** checkbox.
+
 1.  Select a user agent option from the menu, or enter a custom user agent in the text box.
 
 
@@ -164,12 +170,15 @@ To manually override the user agent, use the following steps.
 If your site employs [user agent client hints](../../web-platform/user-agent-guidance.md), use the **Network conditions** panel to provide different user agent client hints.
 
 1. Right-click the webpage and select **Inspect**.
+
 1. Select **Network** > **Network conditions**.
+
 1. In the User agent panel clear the **Use browser default** checkbox, then select **User agent client hints**.
 
     :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Setting user agent client hints." lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
 
 1. Accept the default value of **Custom...** or choose a pre-defined browser and device from the drop-down list.
+
 1. For either choice, set User agent client hints as follows.
     * **Brand** and **Version** such as *Edge* and *92*.  Click **+ Add Brand** to add multiple brand and version pairs.
     * **Full Browser Version** such as *92.0.1111.0*.
@@ -181,13 +190,16 @@ If your site employs [user agent client hints](../../web-platform/user-agent-gui
     > Set or change any of the user agent client hints. There are no required values.
 
 1. Select **Update**.
+
 1. To verify changes, click **Console** and type `navigator.userAgentData`. Expand the results as needed to view changes to user agent data.
 
-You can also set user agent client hints in [Emulate mobile devices in Microsoft Edge](../device-mode/index.md).
+You can also set user agent client hints in [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
 
 <!-- ====================================================================== -->
 ## Filter requests
+
+You can filter requests by properties, by type, or by time, and you can hide data URLs.
 
 ### Filter requests by properties
 

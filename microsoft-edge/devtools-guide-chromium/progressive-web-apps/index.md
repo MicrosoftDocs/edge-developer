@@ -1,5 +1,5 @@
 ---
-title: Debug Progressive Web Apps
+title: Debug Progressive Web Apps (PWAs)
 description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,25 +21,22 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Debug Progressive Web Apps
+# Debug Progressive Web Apps (PWAs)
 
 Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 
-<!--Related Guides:
+This article only discusses the Progressive Web App features of the **Application** panel.  For help on the other panes in the **Application** panel, see [View page resources](../resources/index.md) and [View and edit local storage](../storage/localstorage.md).
 
-*   [Progressive Web Apps](/web/progressive-web-apps)  -->
-
-<!--TODO:  Link web "Progressive Web Apps" section when available. -->
-
-This guide only discusses the Progressive Web App features of the **Application** panel.  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
-
-<!--TODO:  Link to sections when available. -->
+See also [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md).
 
 ### Summary
 
 *   Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.
+
 *   Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.
+
 *   View your service worker cache from the **Cache Storage** pane.
+
 *   Unregister a service worker and clear all storage and caches with a single button choose from the **Clear storage** pane.
 
 
@@ -63,7 +60,9 @@ After you have your manifest set up, you may use the **Manifest** pane of the **
 
 *   To look at the manifest source, choose the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure).
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
+
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.
+
 *   The **Icons** section displays every icon that you've specified.
 
 <!--### Simulate Add to Homescreen events  -->
@@ -83,7 +82,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 > [!Tip]
 > Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
-<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
+<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
 <!-- TODO: Rework content after sample app is created. -->
 
@@ -113,15 +112,25 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 :::image-end:::
 
 *   If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
+
 *   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
+
 *   The **Update on reload** checkbox forces the service worker to update on every page load.
+
 *   The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
+
 *   The **Update** button performs a one-time update of the specified service worker.
+
 *   The **Push** button emulates a push notification without a payload (also known as a **tickle**).
+
 *   The **Sync** button emulates a background sync event.
+
 *   The **Unregister** button unregisters the specified service worker.  Check out [Clear storage](#clear-storage) for a way to unregister a service worker and wipe storage and caches with a single button choose.
+
 *   The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
+
 *   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in previous figure) is for the currently active Service Worker.  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+
 *   The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you choose on the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
 If the service worker causes any errors, a new label called **Errors** shows

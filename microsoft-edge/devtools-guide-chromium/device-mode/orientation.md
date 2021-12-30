@@ -1,5 +1,5 @@
 ---
-title: Simulate device orientation
+title: Simulate device orientation with the Sensors tool
 description: Simulate device orientation using the Orientation section of the Sensors tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,9 +21,9 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Simulate device orientation
+# Simulate device orientation with the Sensors tool
 
-Simulate different device orientations from Microsoft Edge DevTools.
+Simulate different device orientations from within DevTools.
 
 <!--todo: update device orientation section when available -->
 
@@ -31,7 +31,7 @@ Simulate different device orientations from Microsoft Edge DevTools.
 
     :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
 
-1.  Type `sensors`, choose **Show Sensors**, and select `Enter`.  The **Sensors** tool opens at the bottom of your DevTools window.
+1.  Type `sensors`, choose **Show Sensors**, and select `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
 
 1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.
 

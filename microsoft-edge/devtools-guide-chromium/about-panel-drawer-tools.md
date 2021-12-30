@@ -29,5 +29,5 @@ For an overview of Panel tools, Drawer tools, and a few other tools such as the 
 
 In addition to Panel tools and Drawer tools, DevTools includes the following tools:
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
-*  The **Device Emulator**.  See [Emulate mobile devices in Microsoft Edge DevTools](device-mode/index.md).
+*  The **Device Emulator**.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 <!-- *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md). -->
