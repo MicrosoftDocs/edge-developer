@@ -50,7 +50,7 @@ See also [Open Microsoft Edge DevTools](./open/index.md) - how to open the diffe
 
 To change where DevTools is placed within the browser window:
 
-1. Click the **Customize and control DevTools** (![](media/customize-and-control-devtools-icon-light-mode.png)) button.
+1. Click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button.
 
 1. To the right of **Placement of DevTools relative to the page** (**Dock side**), select a layout option.
 
@@ -235,7 +235,7 @@ The tools that are listed in the **More Tools** can be displayed either as a Pan
 
 Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  A **More Tools** menu appears in multiple places:
 
-*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![](media/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
+*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
 
 *  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
 
