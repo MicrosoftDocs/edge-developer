@@ -101,7 +101,7 @@
               href: devtools-guide-chromium/console/live-expressions.md
             - name: Fix JavaScript errors that are reported in the Console # Console tool, then Sources tool or Network tool  # added article
               href: devtools-guide-chromium/console/console-debug-javascript.md
-            - name: Use the Console to interact with the DOM # added article
+            - name: Interact with the DOM using the Console # added article
               href: devtools-guide-chromium/console/console-dom-interaction.md
             - name: Filter Console messages # added article
               href: devtools-guide-chromium/console/console-filters.md

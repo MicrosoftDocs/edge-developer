@@ -110,4 +110,4 @@ copy(await (await fetch(
 )).json())
 ```
 
-Use the **Console** as a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  You can [use the Console to interact with the DOM](console-dom-interaction.md).
+Use the **Console** as a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  You can [Interact with the DOM using the Console](console-dom-interaction.md).

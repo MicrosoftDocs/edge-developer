@@ -1,5 +1,5 @@
 ---
-title: Use the Console to interact with the DOM
+title: Interact with the DOM using the Console
 description: How to interact with the current webpage in the browser using the Console tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 04/13/2021
 ---
-# Use the Console to interact with the DOM
+# Interact with the DOM using the Console
 
 The **Console** tool isn't only for [logging information](console-log.md) or to [run arbitrary JavaScript](console-javascript.md).  It also is a great way to interact with the webpage in the browser.  Consider it a script-environment version of the **Inspect** tool.
 
