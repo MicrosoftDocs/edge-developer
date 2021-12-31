@@ -28,7 +28,7 @@ People with low vision might not see areas that are very bright or very dark.  E
 
 Contrast ratio measures the difference in brightness between the foreground and background of text.  If your text has a low contrast ratio, then people with low vision might experience your site as a blank screen.
 
-In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, from the **Styles** tab.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
+In DevTools, one way to view the contrast ratio of a text element is to use the Color Picker, from the **Styles** tab of the **Elements** tool.  The Color Picker helps you verify that your text meets recommended contrast ratio levels.
 
 **To check the text-color contrast using the Color Picker:**
 

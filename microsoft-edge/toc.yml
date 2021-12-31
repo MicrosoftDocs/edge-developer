@@ -6,8 +6,6 @@
       items:
         - name: Overview of DevTools
           href: devtools-guide-chromium/index.md
-        - name: About Panel and Drawer tools # added article
-          href: devtools-guide-chromium/about-panel-drawer-tools.md
         - name: Open Microsoft Edge DevTools
           href: devtools-guide-chromium/open/index.md
 # Default tools ===============================================================

@@ -49,8 +49,10 @@ See also [Open Microsoft Edge DevTools](./open/index.md) - how to open the diffe
 ## Changing where DevTools is docked in the browser
 
 To change where DevTools is placed within the browser window:
-1.  Select the **Customize and control DevTools** (`...`) button.
-1.  To the right of **Placement of DevTools relative to the page** (**Dock side**), select a layout option.
+
+1. Click the **Customize and control DevTools** (![](media/customize-and-control-devtools-icon-light-mode.png)) button.
+
+1. To the right of **Placement of DevTools relative to the page** (**Dock side**), select a layout option.
 
 :::image type="content" source="./media/devtools-intro-docking-menu.msft.png" alt-text="Screenshot of the Dock side menu in DevTools.":::
 
@@ -106,15 +108,24 @@ Finally, these more specialized tools (tabs) are on the toolbar by default:
 Often the words "tool", "tab", or "panel" can be used interchangeably.  In the command menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.  There's a **More Tools** button and list, and there's a **More tabs** button on the toolbar, both of which are used to select tools, which are also called _panels_.
 
 
-### Sections of the toolbar
+### Sections of the main toolbar
 
 The main toolbar in DevTools has the following sections:
+*  The Inspect tool.
+*  The Device Emulation tool.
+*  Tabs for each open tool.  By default, these are Welcome, Elements, Console, Sources, Network, Performance, and several more.
+*  The **More tabs** (`>>`) button.
+*  The **More Tools** (`+`) button.
+*  The **JavaScript errors** counter.
+*  The **Issues** counter.
+*  The **Settings** button.
+*  The **Send feedback** button.
+*  The **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button.
+*  The **Close** (`X`) button to close DevTools.
 
-:::image type="complex" source="./media/devtools-intro-menu-bar.msft.png" alt-text="The menu bar of DevTools with labels that explain the different sections.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize, and Close." lightbox="./media/devtools-intro-menu-bar.msft.png":::
-   The menu bar of DevTools with labels that explain the different sections.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript Errors, Issues, Settings, Feedback, Customize, and Close.
-:::image-end:::
+:::image type="content" source="./media/devtools-intro-menu-bar.msft.png" alt-text="The main toolbar of DevTools, with labels that identify the items on the toolbar." lightbox="./media/devtools-intro-menu-bar.msft.png":::
 
-*   When you select the **Inspect** tool, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, and a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
+*   When you select the **Inspect** tool, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, along with a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
 
     :::image type="content" source="./media/devtools-intro-inspect-tool.msft.png" alt-text="The Inspect tool while hovering over with the first headline of this article.":::
 
@@ -122,21 +133,23 @@ The main toolbar in DevTools has the following sections:
 
     :::image type="content" source="./media/devtools-intro-device-emulation.msft.png" alt-text="DevTools display of this article in an emulated mobile phone.":::
 
-*   The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and the content of a tool can change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** (`>>`) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (`+`) button.  Each tool is introduced below.
+*  The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and the content of a tool can change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** (`>>`) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (`+`) button.  Each tool is introduced below.
 
-*   Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** (**JavaScript Errors**) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console](console/index.md) and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** (**Issues**) button is a blue message icon followed by the number of issues.  To open the [Issues](./issues/index.md) tool, select the **Issues** button.
+*  Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** (**JavaScript Errors**) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console](console/index.md) and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** (**Issues**) button is a blue message icon followed by the number of issues.  To open the [Issues](./issues/index.md) tool, select the **Issues** button.
 
-*   The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, select the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.
+*  The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, select the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.
 
-*   The **Send Feedback** button displays a torso with a chat bubble next to it.  To open the **Send Feedback** dialog, select the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use **Send Feedback** to connect with DevTools team to report problems, issues, or suggest ideas.
+*  The **Send Feedback** button displays a torso with a chat bubble next to it.  To open the **Send Feedback** dialog, select the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use **Send Feedback** to connect with DevTools team to report problems, issues, or suggest ideas.
 
-*   The **Customize and control DevTools** (`...`) button opens a dropdown menu.  It allows you to define where to dock DevTools, search, open different tools, and much more.
+*  The **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, search, open different tools, and more.
 
 
 <!-- ====================================================================== -->
 ## List of all the tools
 
 There are default tools (panels with tabs on a toolbar), some tools that aren't a panel with a tab on the toolbar, and some optional tools that you can open on a toolbar (as tabs).
+
+<!-- todo: tableize, with 1 link per tool.  ok to leave cells blank after 50% of cells in column 2 & 3 are filled in -->
 
 ### Default tools
 
@@ -216,20 +229,53 @@ There are default tools (panels with tabs on a toolbar), some tools that aren't 
 
 
 <!-- ====================================================================== -->
+## About Panel and Drawer tools
+
+The tools that are listed in the **More Tools** can be displayed either as a Panel tool (on the main toolbar) or a Drawer tool (on the Drawer toolbar).  In the **Command Menu**, each of these tools is labelled as either a **Panel** tool or as a **Drawer** tool.  But you can add them to either the main toolbar or the Drawer toolbar, and you can use any of the following methods to open them or move them between the two toolbars.
+
+Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  A **More Tools** menu appears in multiple places:
+
+*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![](media/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
+
+*  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
+
+*  On the **Drawer** toolbar (where _Drawer_ tools usually go).
+
+
+| Task | Steps |
+| --- | --- |
+| Open a tool on the main toolbar at the top of DevTools | On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select a tool. |
+| Open a tool on the Drawer toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, click **More Tools** (**+**) and then select a tool. |
+| Move a tool from the Drawer toolbar to the main Toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**. |
+| Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
+| Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type the name of the tool, and then select the tool. |
+
+For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Overview of DevTools](index.md).
+
+In addition to Panel tools and Drawer tools, DevTools includes the following tools:
+*  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
+*  The **Device Emulator**.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
+*  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
+
+
+<!-- ====================================================================== -->
 ## Power tip: Use the command menu
 
 DevTools provides lots of features and functionality to use with your web product.  You can access the different parts of DevTools in many ways, but often a fast way is to use the command menu.
 
 In the command menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
-To open the command menu, do any of the following:
+To open the command menu, do either of the following:
 
-*   Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
-*   Click **Customize and control DevTools** (`...`), and then select **Run command**.
+*  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+
+*  Click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
 
 :::image type="content" source="./media/devtools-intro-command-menu.msft.png" alt-text="Screenshot of the command menu in DevTools.":::
 
-The command menu allows you to type commands to display, hide, or run features in DevTools.  With the command menu open, enter the word **changes**, and then select **Drawer: Show Changes**.  The **Changes** tool opens, which is useful when you edit CSS.  In this case, the command menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
+The command menu allows you to type commands to display, hide, or run features in DevTools.  With the command menu open, enter the word **changes**, and then select **Drawer: Show Changes**.
+
+The **Changes** tool opens, which is useful when you edit CSS.  In this case, the command menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
 
 The command menu displays the options after you type `changes`:
 
