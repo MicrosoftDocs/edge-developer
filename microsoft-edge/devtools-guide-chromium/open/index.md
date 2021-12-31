@@ -1,5 +1,5 @@
 ---
-title: Open Microsoft Edge DevTools
+title: Open DevTools
 description: All of the ways that you can open Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,27 +21,19 @@ ms.date: 07/01/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License. -->
-# Open Microsoft Edge DevTools
+# Open DevTools
 
-There are many ways to open Microsoft Edge DevTools, helping you quickly access different parts of the DevTools UI.
-
-
-<!-- ====================================================================== -->
-## Open Microsoft Edge DevTools
-
-To open DevTools, use either of the following options.
+There are several ways to open Microsoft Edge DevTools, to quickly access different parts of the DevTools UI:
 
 *   Use the Microsoft Edge UI.
-    *  Choose the **Settings and more** (`...`) icon >  **More Tools** >  **Developer Tools**.
+    *  In Microsoft Edge, select **Settings and more** (`...`) >  **More Tools** >  **Developer Tools**.
 
 *   Use the keyboard.
     *   Press `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-See [Keyboard shortcuts](../shortcuts/index.md).
+See also [Keyboard shortcuts](../shortcuts/index.md).
 
-:::image type="complex" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
-   Open DevTools from the Microsoft Edge main menu
-:::image-end:::
+:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -105,7 +97,7 @@ microsoft-edge-dev --auto-open-devtools-for-tabs
 
 To change the `F12` keyboard shortcut setting that opens the DevTools, complete the following actions:
 
-1.  Navigate to `edge://settings/system`.
+1.  Go to `edge://settings/system`.
 1.  In `Developer Tools`, choose **Open the DevTools when the F12 key is pressed** to toggle the setting to off or on. Toggle the setting to off to stop the `F12` keyboard shortcut from opening DevTools.
 1.  After you set the toggle to off, verify that `F12` no longer opens DevTools.
 

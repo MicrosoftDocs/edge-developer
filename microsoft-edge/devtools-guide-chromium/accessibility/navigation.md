@@ -47,7 +47,7 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 <!-- ====================================================================== -->
 ## Open DevTools
 
-To get started, navigate to [Open Microsoft Edge DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+To get started, navigate to [Open DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
 
 
 <!-- ====================================================================== -->

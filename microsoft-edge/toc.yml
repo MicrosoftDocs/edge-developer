@@ -6,7 +6,7 @@
       items:
         - name: Overview of DevTools
           href: devtools-guide-chromium/index.md
-        - name: Open Microsoft Edge DevTools
+        - name: Open DevTools
           href: devtools-guide-chromium/open/index.md
 # Default tools ===============================================================
 # Welcome tool (default tab 1) ------------------------------------------------

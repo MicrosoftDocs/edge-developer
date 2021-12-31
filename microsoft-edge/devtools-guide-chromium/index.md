@@ -42,7 +42,7 @@ There are two main ways to interact with DevTools.
 *   Use the mouse.
 *   Keyboard shortcuts.  These provide a quick way to access functionality and are needed for accessibility.  The Microsoft Edge DevTools team works hard to make all the tools available using the keyboard and assistive technologies such as screen readers.  See [Keyboard shortcuts](./shortcuts/index.md).
 
-See also [Open Microsoft Edge DevTools](./open/index.md) - how to open the different features in DevTools.
+See also [Open DevTools](./open/index.md) - how to open the different features in DevTools.
 
 
 <!-- ====================================================================== -->
