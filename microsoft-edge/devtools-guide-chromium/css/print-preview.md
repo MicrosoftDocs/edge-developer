@@ -37,7 +37,7 @@ The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries
     > [!div class="mx-imgBorder"]
     > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
 
-From here, you may display and change your CSS, like any other web page.  Navigate to [Get Started With Viewing And Changing CSS](./index.md).
+From here, you may display and change your CSS, like any other web page.  See [Get started viewing and changing CSS](./index.md).
 
 
 <!-- ====================================================================== -->

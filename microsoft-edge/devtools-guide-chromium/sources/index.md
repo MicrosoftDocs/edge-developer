@@ -451,7 +451,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 #### See also
 
-*   [Get started with debugging JavaScript](../javascript/index.md) - a tutorial using an existing, simple webpage that contains a few form controls.
+*   [Get started debugging JavaScript](../javascript/index.md) - a tutorial using an existing, simple webpage that contains a few form controls.
 
 ### Advantages of the debugger\'s Watch and Scope over console\.log
 
@@ -483,7 +483,7 @@ For more information, see [Visual Studio Code overview](../../visual-studio-code
 
 The following articles cover the **Debugger** pane and breakpoints:
 
-*   [Get started with debugging JavaScript](../javascript/index.md) - A tutorial (with screen captures), using an existing, simple project.
+*   [Get started debugging JavaScript](../javascript/index.md) - A tutorial (with screen captures), using an existing, simple project.
 
 *   [JavaScript debugging features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
 

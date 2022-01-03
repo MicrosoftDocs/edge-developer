@@ -25,7 +25,7 @@ ms.date: 10/29/2021
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
-To learn the basics, see [Get started with viewing and changing CSS](../css/index.md).
+To learn the basics, see [Get started viewing and changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->

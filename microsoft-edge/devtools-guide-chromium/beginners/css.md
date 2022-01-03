@@ -28,7 +28,7 @@ In this tutorial, you learn how to use CSS to style a web page.  You also learn 
 This article is part of a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You don't have to complete the previous tutorials before doing this one.  [Set up your code](#set-up-your-code) shows you how to get set up.
 
 > [!NOTE]
-> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
+> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, see [Get started viewing and changing CSS](../css/index.md).
 
 At the beginning of the tutorial, your site should look like the following figure.
 
@@ -503,7 +503,7 @@ Congratulations, you're done!
 
 *   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
 *   To learn more about styling web pages, navigate to [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
-*   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
+*   To learn more about how to experiment with CSS in DevTools, see [Get started viewing and changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->

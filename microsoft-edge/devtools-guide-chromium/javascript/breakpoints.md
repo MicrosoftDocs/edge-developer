@@ -25,7 +25,7 @@ ms.date: 05/04/2021
 
 Use breakpoints to pause your JavaScript code.  This article explains each type of breakpoint available in DevTools, as well as when to use and how to set each type.
 
-For an introductory tutorial using an existing webpage, navigate to [Get started with debugging JavaScript](index.md).
+For an introductory tutorial using an existing webpage, see [Get started debugging JavaScript](index.md).
 
 
 <!-- ====================================================================== -->
@@ -228,7 +228,7 @@ Ensuring the target function is in scope is tricky if you are running the `debug
 ## See also
 
 *  [JavaScript debugging features](./reference.md) - Using the UI of the debugger in the **Sources** tool.
-*  [Get started with debugging JavaScript](index.md) - An introductory tutorial using an existing webpage.
+*  [Get started debugging JavaScript](index.md) - An introductory tutorial using an existing webpage.
 *  [Sources tool overview](../sources/index.md) - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
 
 
