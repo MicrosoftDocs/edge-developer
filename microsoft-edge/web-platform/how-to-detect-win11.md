@@ -77,29 +77,50 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
 
 
 <!-- ====================================================================== -->
-## Optimizing detection performance
+## Optimizing detection performance with `Critical-CH`
 
-The `Accept-CH` header specifies which client hints headers a client should include in subsequent requests.
+Currently, servers (websites) must send the `Accept-CH` response header to the client (browser) to request higher entropy fields not sent in the `Sec-CH-UA` header by default. For example,
 
-The `Accept-CH` header is optional and does not automatically include any fields. Determining field values such as `Sec-CH-UA-Platform-Version` typically requires a roundtrip every time. For example:
+```HTML
+Client                                  Server
+-------------------------------------------------
+Request Headers ----------------------->
+user-agent: &lt;UA string&gt;
+sec-ch-ua: ...
+sec-ch-ua-mobile: ...
+...
 
-1. Client sends `Accept-CH` header by default.
-1. Server requests high-entropy values, such as `Sec-CH-UA-Platform-Version`.
-1. Client responds with requested value.
+                <---------------------- Response Headers
+                                        Accept-CH: sec-ch-ua-platform         
+```
 
-The new `Critical-CH` header can be used to specify a particular client hints header if it was not received but could have been sent. Then a new request can be made to include the specific Client Hint header.
+During this initial request, the client will record the `Accept-CH` preferences and on subsequent requests include `sec-ch-ua-platform` by default. 
 
-Starting in Microsoft Edge version 96, you can use the new `Critical-CH` header to reduce this roundtrip for subsequent requests. A new flow using both `Accept-CH` and `Critical-CH` can optimize detection performance. For example: 
+In order to further optimize this flow, the new `Critical-CH` header can be used in addition to the `Accept-CH` header to reissue the request header immediately, without the need for a page reload: 
 
-**Initial request**
-1. Client sends `Accept-CH` header by default.
-1. Server requests a `Critical-CH` field, such as `Sec-CH-UA-Platform-Version`.
-1. Client responds with requested value and caches requested `Critical-CH` field.
+```HTML
+Client                                  Server
+-------------------------------------------------
+Request Headers ----------------------->
+user-agent: &lt;UA string&gt;
+sec-ch-ua: ...
+sec-ch-ua-mobile: ...
+...
 
-**Subsequent requests**
-1. Client sends `Accept-CH` header by default, along with previously requested `Critical-CH` field.
+                <---------------------- Response Headers
+                                        Accept-CH: sec-ch-ua-platform
+                                        Critical-CH: sec-ch-ua-platform    
 
-Remember that `Critical-CH` preferences persist until session cookies are cleared, or until a user clears site data or cookies for a given origin. For more information about `Critical-CH`, refer to [Client Hint Reliability](https://github.com/WICG/client-hints-infrastructure/blob/main/reliability.md).
+Request Headers ----------------------->
+user-agent: &lt;UA string&gt;
+sec-ch-ua: ...
+sec-ch-ua-mobile: ...  
+sec-ch-ua-platform: ...      
+```
+
+Starting in Microsoft Edge version 96, you can use the new `Critical-CH` header to receive desired high entropy headers with optimized performance. 
+
+Remember that `Critical-CH` and `Accept-CH` preferences persist until session cookies are cleared, or until a user clears site data or cookies for a given origin. For more information about `Critical-CH`, refer to [Client Hint Reliability](https://github.com/WICG/client-hints-infrastructure/blob/main/reliability.md).
 
 
 <!-- ====================================================================== -->
