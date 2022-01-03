@@ -81,42 +81,13 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
 
 Currently, servers (websites) must send the `Accept-CH` response header to the client (browser) to request higher entropy fields not sent in the `Sec-CH-UA` header by default. For example,
 
-```HTML
-Client                                  Server
--------------------------------------------------
-Request Headers ----------------------->
-user-agent: &lt;UA string&gt;
-sec-ch-ua: ...
-sec-ch-ua-mobile: ...
-...
-
-                <---------------------- Response Headers
-                                        Accept-CH: sec-ch-ua-platform         
-```
+![Requests using only Accept-CH](./acceptCH.svg)
 
 During this initial request, the client will record the `Accept-CH` preferences and on subsequent requests include `sec-ch-ua-platform` by default. 
 
 In order to further optimize this flow, the new `Critical-CH` header can be used in addition to the `Accept-CH` header to reissue the request header immediately, without the need for a page reload: 
 
-```HTML
-Client                                  Server
--------------------------------------------------
-Request Headers ----------------------->
-user-agent: &lt;UA string&gt;
-sec-ch-ua: ...
-sec-ch-ua-mobile: ...
-...
-
-                <---------------------- Response Headers
-                                        Accept-CH: sec-ch-ua-platform
-                                        Critical-CH: sec-ch-ua-platform    
-
-Request Headers ----------------------->
-user-agent: &lt;UA string&gt;
-sec-ch-ua: ...
-sec-ch-ua-mobile: ...  
-sec-ch-ua-platform: ...      
-```
+![Requests using Critical-CH and Accept-CH](./criticalCH.svg)
 
 Starting in Microsoft Edge version 96, you can use the new `Critical-CH` header to receive desired high entropy headers with optimized performance. 
 

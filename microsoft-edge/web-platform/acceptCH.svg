@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="337.5px" preserveAspectRatio="none" style="width:490px;height:337px;background:#00000000;" version="1.1" viewBox="0 0 490 337" width="490.625px" zoomAndPan="magnify"><defs><filter height="300%" id="fg05x0w8n0dd3" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0833333333333335"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.166666666666667" dy="4.166666666666667" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><line style="stroke:#CCCCCC;stroke-width:1.0416666666666667;stroke-dasharray:5.0,5.0;" x1="136.4583" x2="136.4583" y1="66.9759" y2="268.986"/><line style="stroke:#CCCCCC;stroke-width:1.0416666666666667;stroke-dasharray:5.0,5.0;" x1="393.75" x2="393.75" y1="66.9759" y2="268.986"/><rect filter="url(#fg05x0w8n0dd3)" height="52.3926" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;fill:none;" width="155.2083" x="57.2917" y="10.4167"/><text fill="#2196F3" font-family="&quot;Verdana&quot;" font-size="14.5833" lengthAdjust="spacing" textLength="119.7917" x="75" y="41.6616">Client (Browser)</text><rect filter="url(#fg05x0w8n0dd3)" height="52.3926" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;fill:none;" width="155.2083" x="57.2917" y="267.9443"/><text fill="#2196F3" font-family="&quot;Verdana&quot;" font-size="14.5833" lengthAdjust="spacing" textLength="119.7917" x="75" y="299.1892">Client (Browser)</text><rect filter="url(#fg05x0w8n0dd3)" height="52.3926" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;fill:none;" width="161.4583" x="311.4583" y="10.4167"/><text fill="#2196F3" font-family="&quot;Verdana&quot;" font-size="14.5833" lengthAdjust="spacing" textLength="126.0417" x="329.1667" y="41.6616">Server (Website)</text><rect filter="url(#fg05x0w8n0dd3)" height="52.3926" rx="4.1667" ry="4.1667" style="stroke:#2196F3;stroke-width:1.0416666666666667;fill:none;" width="161.4583" x="311.4583" y="267.9443"/><text fill="#2196F3" font-family="&quot;Verdana&quot;" font-size="14.5833" lengthAdjust="spacing" textLength="126.0417" x="329.1667" y="299.1892">Server (Website)</text><polygon fill="#2196F3" points="381.25,179.126,391.6667,183.2926,381.25,187.4593,385.4167,183.2926" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;" x1="136.4583" x2="387.5" y1="183.2926" y2="183.2926"/><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" font-weight="bold" lengthAdjust="spacing" textLength="134.375" x="154.1667" y="104.5456">Request Headers</text><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" lengthAdjust="spacing" textLength="0" x="292.7083" y="104.5456"/><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" lengthAdjust="spacing" textLength="163.5417" x="158.3333" y="120.3089">user-agent: &lt;UA string&gt;</text><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" lengthAdjust="spacing" textLength="87.5" x="158.3333" y="136.0723">sec-ch-ua: ...</text><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" lengthAdjust="spacing" textLength="137.5" x="158.3333" y="151.8356">sec-ch-ua-mobile: ...</text><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" lengthAdjust="spacing" textLength="12.5" x="158.3333" y="167.599">...</text><polygon fill="#2196F3" points="147.9167,246.0693,137.5,250.236,147.9167,254.4027,143.75,250.236" style="stroke:#2196F3;stroke-width:1.0416666666666667;"/><line style="stroke:#2196F3;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="141.6667" x2="392.7083" y1="250.236" y2="250.236"/><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" font-weight="bold" lengthAdjust="spacing" textLength="144.7917" x="164.5833" y="218.779">Response Headers</text><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" lengthAdjust="spacing" textLength="0" x="313.5417" y="218.779"/><text fill="#222222" font-family="&quot;Verdana&quot;" font-size="13.5417" lengthAdjust="spacing" textLength="207.2917" x="168.75" y="234.5423">Accept-CH: sec-ch-ua-platform</text><!--MD5=[321522e905523d3c20893e9b8dc473c5]
+@startuml
+!theme materia-outline
+participant "Client (Browser)" as c
+participant "Server (Website)" as s
+c -> s: **Request Headers** \n user-agent: <UA string> \n sec-ch-ua: ... \n sec-ch-ua-mobile: ... \n ...
+s- -> c: **Response Headers** \n Accept-CH: sec-ch-ua-platform
+@enduml
+
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor transparent
+    FontColor #2196F3
+    HyperLinkColor #fd7e14
+    LineColor #1a78c2
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+  node {
+   Padding 15
+   roundcorner 20
+   BackgroundColor transparent
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  groupHeader {
+    BackgroundColor #fff
+    FontColor #9C27B0
+    FontStyle bold
+  }
+  header {
+    LineThickness 0
+  }
+  referenceHeader {
+    BackgroundColor transparent
+    FontColor #222
+    FontStyle bold
+  }
+  separator {
+    BackgroundColor #222
+    FontColor transparent
+    FontStyle bold
+  }
+  title {
+	FontSize 20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor  transparent
+	FontColor #2196F3
+	BorderColor #fff
+  }
+  nwdiagDiagram {
+	network {
+			FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent    
+		LineColor #2196F3
+		LineThickness 1.0
+		FontColor #1a78c2
+	}
+	server {
+			FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	}
+	arrow {
+		FontColor #1a78c2
+		LineColor #1a78c2
+	}
+	group {
+		BackGroundColor #fff
+		LineColor $LIGHT_DARK
+		LineThickness 2.0
+		Margin 5
+		Padding 5
+	}
+  }
+  ganttDiagram {
+	task {
+			FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+		LineColor #2196F3
+		Margin 10
+		Padding 6
+	}
+	note {
+		FontColor #9C27B0
+		LineColor #7D1F8D
+		BackGroundColor transparent
+	}
+	separator {
+		LineColor #cccccc
+		BackGroundColor transparent
+		FontColor #cccccc
+	}
+	milestone {
+		FontColor #9C27B0
+		FontSize 16
+		FontStyle italic
+		BackGroundColor #fff
+		LineColor #cccccc
+	}
+	timeline {
+		BackgroundColor #fff
+		FontColor #cccccc
+	}
+	closed {
+		BackgroundColor #CC7A00
+		FontColor #ff9800
+	}
+  }
+</style>
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             true
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               10 
+skinparam TitleFontColor	    #222
+skinparam TitleFontSize	    	20
+skinparam TitleBorderThickness 	0
+skinparam ArrowColor            #666
+skinparam stereotype {
+    CBackgroundColor #fff
+    CBorderColor #cccccc
+    ABackgroundColor #70bf73
+    ABorderColor #3D8C40
+    IBackgroundColor #B7161C
+    IBorderColor $DANGER_DARK
+    EBackgroundColor #ffad33
+    EBorderColor #CC7A00
+    NBackgroundColor #b052c0
+    NBorderColor #7D1F8D
+}
+skinparam title {
+	FontColor	                 #2196F3
+	BorderColor	                 #cccccc
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              transparent
+}
+
+skinparam legend {
+	BackgroundColor transparent
+	BorderColor #cccccc
+	FontColor #222
+}
+
+skinparam swimlane {
+	BorderColor #9C27B0
+	BorderThickness 2
+	TitleBackgroundColor  #fff-#fff
+	TitleFontColor #2196F3
+}
+
+
+skinparam activity {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	BarColor #4CAF50
+	StartColor #9C27B0
+	EndColor #9C27B0
+	DiamondBackgroundColor transparent
+  	DiamondBorderColor #cccccc
+	DiamondFontColor #cccccc
+}
+
+
+skinparam participant {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2196F3
+	FontColor #222
+}
+
+
+skinparam sequence {
+	BorderColor #2196F3
+	TitleFontColor #2196F3
+	BackgroundColor transparent
+	StartColor #2196F3
+	EndColor #2196F3
+	BoxBackgroundColor transparent
+	BoxBorderColor #666
+	BoxFontColor #222
+	DelayFontColor #222
+	LifeLineBorderColor #cccccc
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor transparent
+	GroupBorderColor #666
+	GroupFontColor #222
+	GroupHeaderFontColor #9C27B0
+	DividerBackgroundColor transparent
+    DividerBorderColor #666
+    DividerBorderThickness 2
+    DividerFontColor #222
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #666
+	ReferenceFontColor #222
+	ReferenceHeaderFontColor #9C27B0
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam partition {
+	BorderColor #2196F3
+	FontColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam control {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam entity {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam boundary {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam agent {
+	BackgroundColor transparent
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor transparent
+	BorderColor #9C27B0
+	FontColor #9C27B0
+}
+
+
+skinparam artifact {
+	BackgroundColor transparent
+	BorderColor #666
+	FontColor #666
+}
+
+
+skinparam component {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam interface {
+	BackgroundColor  transparent
+	BorderColor  #e51c23
+	FontColor #222
+}
+
+
+skinparam storage {
+	BackgroundColor transparent
+  	BorderColor #ff9800
+	FontColor #ff9800
+}
+
+
+skinparam node {
+	BackgroundColor transparent
+	BorderColor #222
+	FontColor #222
+}
+
+
+skinparam cloud {
+	BackgroundColor #F2FCFE-#eeeeee
+	BorderColor #F2FCFE
+	FontColor #222
+}
+
+
+skinparam database {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam class {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	FontColor #fff
+	HeaderBackgroundColor #2196F3-#1a78c2
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #222
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	StereotypeFontColor #222
+	BorderThickness 1
+	AttributeFontColor #cccccc
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam rectangle {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2196F3
+}
+
+
+skinparam package {
+	BackgroundColor transparent
+  	BorderColor #2196F3
+	FontColor #2196F3
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor transparent
+  	BorderColor #ff9800
+	FontColor #ff9800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor transparent
+  	BorderColor #9C27B0
+	FontColor #9C27B0
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+	StartColor #9C27B0
+	EndColor #9C27B0
+	AttributeFontColor #cccccc
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+
+
+skinparam card {
+	BackgroundColor transparent
+	BorderColor #9C27B0
+	FontColor #9C27B0
+}
+
+
+skinparam file {
+	BackgroundColor transparent
+	BorderColor #666
+	FontColor #666
+
+}
+
+
+skinparam stack {
+		FontColor #2196F3
+	BorderColor #2196F3
+	BackgroundColor transparent
+}
+participant "Client (Browser)" as c
+participant "Server (Website)" as s
+c -> s: **Request Headers** \n user-agent: <UA string> \n sec-ch-ua: ... \n sec-ch-ua-mobile: ... \n ...
+s- -> c: **Response Headers** \n Accept-CH: sec-ch-ua-platform
+@enduml
+
+PlantUML version 1.2021.17beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
