@@ -1,9 +1,9 @@
 ---
-description: Distribution options when releasing an app using Microsoft Edge WebView2
 title: Distribute a WebView2 app and the WebView2 Runtime
+description: Distribution options when releasing an app using Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
+ms.date: 12/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -79,7 +79,7 @@ If you want to use the Fixed Version distribution mode, you can skip the next co
 
 ## Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
 
-Refer to the Windows Server Update Services (WSUS) section of the (Managing WebView2 applications)[enterprise.md#windows-server-update-services-wsus] article.
+Refer to the Windows Server Update Services (WSUS) section of the [Managing WebView2 applications](enterprise.md#windows-server-update-services-wsus) article.
 
 ### Runtime or browser support during development or production
 
