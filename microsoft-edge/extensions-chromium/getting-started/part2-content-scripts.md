@@ -1,32 +1,32 @@
 ---
-description: Dynamically Insert NASA Picture Below The Page Body Tag Using Content Scripts
 title: Create an extension tutorial Part 2
+description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, html, css, javascript, developer, extensions
+ms.date: 01/07/2021
 ---
 # Create an extension tutorial Part 2
 
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]
+[Completed extension package source for this part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 
 
 <!-- ====================================================================== -->
 ## Overview
 
-This tutorial covers the following extension technologies.
-*   Injecting JavaScript libraries into extension
-*   Exposing extension assets to browser tabs
-*   Including content pages in existing browser tabs
-*   Having content pages listen for messages from pop-ups and respond
+This tutorial covers the following extension technologies:
+*   Injecting JavaScript libraries into an extension.
+*   Exposing extension assets to browser tabs.
+*   Including content pages in existing browser tabs.
+*   Having content pages listen for messages from pop-ups and respond.
 
 You'll learn to update your pop-up menu to replace your static stars image with a title and a standard HTML button.  That button, when selected, passes that stars image, which is embedded in the extension, to the content page.  That image, is inserted into the active browser tab. Follow the below steps for further details.
 
-1.  Remove the image from the pop-up and replace it with a button
+1.  Remove the image from the pop-up and replace it with a button.
 
-First, update your `popup.html` file with some straight forward markup that displays a title and a button.  You'll program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is update HTML.
+First, update your `popup.html` file with some straightforward markup that displays a title and a button.  You'll program that button shortly, but for now, just include a reference to an empty JavaScript file `popup.js`.  Here is the updated HTML:
 
 ```html
 <html>
@@ -61,7 +61,7 @@ After updating and opening the extension, a pop-up opens with a display button.
    popup.html display after selecting the Extension icon
 :::image-end:::
 
-<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->
+<!--![popup.html display after selecting the Extension icon] -->
 
 2.  Update strategy to display image at the top of the browser tab
 
@@ -219,7 +219,7 @@ Now, when you browse to any page and select your **Extension** icon, the pop-up 
    popup.html display after selecting the Extension icon
 :::image-end:::
 
-<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->
+<!-- ![popup.html display after selecting the Extension icon] -->
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
@@ -227,11 +227,4 @@ When you select the `Display` button, you get what is below.  If you select anyw
    The image showing in browser
 :::image-end:::
 
-You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars jpeg.
-
-<!-- image links -->
-
-
-<!-- links -->
-
-[ArchiveExtensionGettingStartedPart2]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2 "Completed extension package source | Microsoft Docs"
+You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.

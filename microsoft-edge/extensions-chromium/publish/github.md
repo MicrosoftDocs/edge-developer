@@ -1,12 +1,12 @@
 ---
-description: Optionally login to Partner Center by using your GitHub account credentials.
 title: Publish Microsoft Edge extensions by using a GitHub account
+description: Optionally login to Partner Center by using your GitHub account credentials.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 08/27/2021
 ---
 # Publish Microsoft Edge extensions by using a GitHub account
 

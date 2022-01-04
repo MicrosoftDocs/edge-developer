@@ -1,12 +1,12 @@
 ---
-description: Render a webpage emulating the user's dark or light scheme operating-system setting or browser setting, without having to change your own machine's setting.  Use a CSS media query for prefers-color-scheme, together with a DevTools rendering option.
 title: Emulate dark or light schemes in the rendered page
+description: Render a webpage emulating the user's dark or light scheme operating-system setting or browser setting, without having to change your own machine's setting.  Use a CSS media query for prefers-color-scheme, together with a DevTools rendering option.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 08/03/2021
 ---
 # Emulate dark or light schemes in the rendered page
 
@@ -57,4 +57,3 @@ This article is about changing the appearance of the webpage under development. 
     Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started with viewing and changing CSS](../css/index.md).
 
 1.  To restore the setting, in the Command Menu, type "emulate" or "scheme" and then select **Rendering: Do not emulate CSS prefers-color-scheme**.  When you refresh the page, your own operating system or browser setting for light or dark mode preference will be applied.
-

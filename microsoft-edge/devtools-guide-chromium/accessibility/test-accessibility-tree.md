@@ -1,12 +1,12 @@
 ---
-description: Checking the Accessibility Tree for keyboard and screen reader support.
 title: Check the Accessibility Tree for keyboard and screen reader support
+description: Checking the Accessibility Tree for keyboard and screen reader support.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Check the Accessibility Tree for keyboard and screen reader support
 

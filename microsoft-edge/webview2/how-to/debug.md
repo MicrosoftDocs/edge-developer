@@ -1,13 +1,13 @@
 ---
+title: Get started debugging WebView2 apps
 description: Learn how to debug WebView2 controls.
-title: Get started debugging WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2021
-ms.topic: how-to
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 09/15/2021
 ---
 # Get started debugging WebView2 apps
 
@@ -15,15 +15,16 @@ The goal of the Microsoft Edge WebView2 control is to combine the best of both t
 
 
 <!-- ====================================================================== -->
+
 ## [Microsoft Edge DevTools](#tab/devtools)
 
-Use [Microsoft Edge Developer Tools][DevtoolsGuideChromiumMain] to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
+Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
 
 *   Select `F12`.
 *   Select `Ctrl`+`Shift`+`I`.
 *   Open the context menu (right-click) and choose `Inspect`.
 
-For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain].
+For more information, navigate to [DevTools overview](../index.md).
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
    DevTools debugging
@@ -31,6 +32,7 @@ For more information, navigate to [DevTools overview][DevtoolsGuideChromiumMain]
 
 
 <!-- ====================================================================== -->
+
 ## [Visual Studio](#tab/visualstudio)
 
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
@@ -95,10 +97,11 @@ Complete the following actions to debug your WebView2 app.
     :::image-end:::
 
 > [!NOTE]
-> If you use the WebView2 [SetVirtualHostNameToFolderMapping][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping] method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.  This source path mapping works when you use the debugger in Visual Studio Code.
+> If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.  This source path mapping works when you use the debugger in Visual Studio Code.
 
 
 <!-- ====================================================================== -->
+
 ## [Visual Studio Code](#tab/visualstudiocode)
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!--Ensure that you're using Visual Studio Code version [insert build here] or later.  -->
@@ -197,35 +200,30 @@ In Visual Studio Code, complete the following actions to debug your code.
 
     1.  Add `trace` parameter.
 
-        :::row:::
-           :::column span="":::
-              ```json
-                "name": "Hello debugging world",
-                "type": "pwa-msedge",
-                "port": 9222,
-                "request": "attach",
-                "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
-                "env": {
-                "Path": "%path%;e:/path/to/your/build/location; "
-                },
-                "useWebView": true
-                ,"trace": true  // Turn on  debug tracing, and save the output to a log file.
-              ```
+        ```json
+        "name": "Hello debugging world",
+        "type": "pwa-msedge",
+        "port": 9222,
+        "request": "attach",
+        "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+        "env": {
+        "Path": "%path%;e:/path/to/your/build/location; "
+        },
+        "useWebView": true
+        ,"trace": true  // Turn on debug tracing, and save the output to a log file.
+        ```
 
-              :::image type="complex" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
-                 Save debug output to a log file
-              :::image-end:::
-           :::column-end:::
-           :::column span="":::
-              ```json
-              ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
-              ```
+        Saving debug output to a log file:
 
-              :::image type="complex" source="./media/verbose.png" alt-text=" Verbose Output" lightbox="./media/verbose.png":::
-                 Visual Studio Code Debug Output with verbose tracing turned on
-              :::image-end:::
-           :::column-end:::
-        :::row-end:::
+        :::image type="content" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
+            
+        ```json
+        ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
+        ```
+
+        Visual Studio Code Debug Output with verbose tracing turned on:
+
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on" lightbox="./media/verbose.png":::
 
 *   Debug Office Add-ins.
 
@@ -240,7 +238,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     You may encounter the following scenarios when using the debugger.
 
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
-    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet][Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments] and [additionalBrowserArguments for Win32][Webview2ReferenceWin32Webview2IdlParameters].
+    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
 
 * * *
@@ -249,22 +247,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 Get Started Guides][Webview2MainGetStarted]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference][Webview2ApiReference]
-*  [See also][Webview2MainNextSteps] in _Introduction to Microsoft Edge WebView2_.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-
-[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2Setvirtualhostnametofoldermapping]: /dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping "CoreWebView2.SetVirtualHostNameToFolderMapping(String, String, CoreWebView2HostResourceAccessKind) Method (Microsoft.Web.WebView2.Core) | Microsoft Docs"
-[Webview2ReferenceDotnetMicrosoftWebWebview2CoreCorewebview2environmentoptionsAdditionalbrowserarguments]: /dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments "CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property (Microsoft.Web.WebView2.Core) | Microsoft Docs"
-[Webview2ReferenceWin32Webview2IdlParameters]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions  "CreateCoreWebView2Environment - Globals | Microsoft Docs"
-[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"
-[Webview2MainNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
+*  [WebView2 Get Started Guides](../index.md#get-started)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](../webview2-api-reference.md)
+*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

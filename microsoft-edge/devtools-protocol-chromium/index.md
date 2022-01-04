@@ -1,18 +1,18 @@
 ---
-description: Update to the Microsoft Edge DevTools Protocol
 title: Microsoft Edge DevTools Protocol overview
+description: Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/06/2021
-ms.topic: reference
+ms.topic: conceptual
 ms.prod: microsoft-edge
+ms.date: 04/06/2021
 ---
 # Microsoft Edge DevTools Protocol overview
 
-Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For reference documentation, navigate to [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).
+Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For reference documentation, go to [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).
 
 > [!NOTE]
-> With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) will not be receiving any further updates.  The Microsoft Edge DevTools Protocol will match the APIs of the Chrome DevTools Protocol going forward.
+> With the shift in the underlying web platform of Microsoft Edge to Chromium, the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) won't be receiving any further updates.  Going forward, the Microsoft Edge DevTools Protocol will match the APIs of the Chrome DevTools Protocol.
 >
 > Any methods that were prefixed with `ms` in the [Microsoft Edge (EdgeHTML) DevTools Protocol](/archive/microsoft-edge/legacy/developer/devtools-protocol/index) are no longer supported in the Microsoft Edge DevTools Protocol.
 
@@ -124,7 +124,7 @@ Target ID
 **Return object**
 
 ```
-String(“Target is closing”)
+String("Target is closing")
 ```
 
 

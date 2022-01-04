@@ -1,15 +1,14 @@
 ---
-description: Check for keyboard support by using the Tab and Enter keys.
 title: Check for keyboard support by using the Tab and Enter keys
+description: Check for keyboard support by using the Tab and Enter keys.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Check for keyboard support by using the Tab and Enter keys
-
 
 Not all users have a pointer or touch device, and not all users can see the web projects we create.  This is why it is important that the user interface works at least with a keyboard.  Ensure you can use the `Tab` key to move the focus to each form control on a webpage, and ensure you can use the `Enter` key to submit forms.
 
