@@ -262,7 +262,7 @@
 # Memory Inspector tool -------------------------------------------------------
 #           - name: Inspect JavaScript ArrayBuffer with the Memory Inspector # pending
 #             href: devtools-guide-chromium/memory-inspector/index.md # pending
-              displayName: Memory Inspector tool
+#             displayName: Memory Inspector tool
 # Application tool (default tab 8) --------------------------------------------
         - name: Storage (Application tool)
           items:
@@ -280,7 +280,7 @@
               displayName: Application tool
           # - name: View Application Cache data # deprecated
           #   href: devtools-guide-chromium/storage/application.md # deprecated
-              displayName: Application tool
+          #   displayName: Application tool
             - name: View Web SQL data
               href: devtools-guide-chromium/storage/websql.md
               displayName: Application tool
