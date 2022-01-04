@@ -1,12 +1,12 @@
 ---
+title: Get started with debugging JavaScript
 description: Learn how to use Microsoft Edge DevTools to find and fix JavaScript bugs.
-title: Get started with debugging JavaScript in Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Get started with debugging JavaScript in Microsoft Edge DevTools
+# Get started with debugging JavaScript
 
 This article teaches you the basic workflow for debugging any JavaScript issue in DevTools.
 

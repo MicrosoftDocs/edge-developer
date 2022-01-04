@@ -1,12 +1,12 @@
 ---
-description: Get started with Remote Debugging WebViews in your native Android apps using Microsoft Edge Developer Tools.
 title: Get started with remote debugging Android WebViews
+description: Get started with remote debugging WebViews in native Android apps using Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Meggin Kearney
 

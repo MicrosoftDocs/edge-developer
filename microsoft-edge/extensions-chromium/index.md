@@ -1,12 +1,12 @@
 ---
-description: An overview of building and publishing Microsoft Edge Extensions.
 title: Overview of Microsoft Edge extensions
+description: An overview of building and publishing Microsoft Edge Extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
+ms.date: 08/25/2021
 ---
 # Overview of Microsoft Edge extensions
 

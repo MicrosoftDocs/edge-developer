@@ -1,13 +1,13 @@
 ---
-description: Contacting the Microsoft Edge DevTools team to submit feature requests or bug reports of issues about developing for Microsoft Edge.
 title: Contact the Microsoft Edge DevTools team
+description: Contacting the Microsoft Edge DevTools team to submit feature requests or bug reports of issues about developing for Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 09/29/2021
 ---
 # Contact the Microsoft Edge DevTools team
 

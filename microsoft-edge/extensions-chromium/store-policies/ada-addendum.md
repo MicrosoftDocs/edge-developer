@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge developer ADA Addendum
-title: ADA Addendum
+title: App Developer Agreement Addendum for Microsoft Edge program users
+description: Microsoft Edge developer ADA Addendum.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+ms.date: 02/17/2021
 ---
 # App Developer Agreement Addendum for Microsoft Edge program users
 

@@ -1,14 +1,13 @@
 ---
-description: If you work on a local project and you have Microsoft Visual Studio Code installed, you can open files in this one instead of the sources tool and sync changes from the DevTools live to your source files.
 title: Opening source files in Visual Studio Code
+description: If you work on a local project and you have Microsoft Visual Studio Code installed, you can open files in this one instead of the sources tool and sync changes from the DevTools live to your source files.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/22/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 09/22/2021
 ---
-
 # Opening source files in Visual Studio Code
 
 The `Open source files in Visual Studio Code` experiment allows you to use Microsoft Edge DevTools but then edit your files in Visual Studio Code instead of in the code editor of the DevTools Sources tool.

@@ -1,12 +1,12 @@
 ---
-description: Learn how to save changes made within DevTools to disk.
 title: Edit files with Workspaces
+description: How to save changes made within DevTools to disk.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -70,42 +70,25 @@ Workspaces is known to not work with the following framework.
 <!-- ====================================================================== -->
 ## Step 1: Set up
 
-Complete the following actions, to get hands-on experience with Workspaces.
-
 ### Set up the demo
 
-1.  [Open the demo](https://glitch.com/edit/#!/microsoft-edge-chromium-devtools?path=workspaces-demo/index.html:1:0).  <!--In the top-left of the editor, a randomly-generated project name is displayed.  -->
+1.  [Open the demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-    :::image type="complex" source="../media/workspaces-glitch-workspaces-demo-source.msft.png" alt-text="A Glitch project" lightbox="../media/workspaces-glitch-workspaces-demo-source.msft.png":::
-       A Glitch project
-    :::image-end:::
+1.  Create an `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
 
-    <!--1.  Choose the project name.  -->
-    <!--1.  Choose **Advanced Options** > **Download Project**.
-
-    :::image type="complex" source="../media/workspaces-glitch-advanced-options-download-project.msft.png" alt-text="The Download Project button" lightbox="../media/workspaces-glitch-advanced-options-download-project.msft.png":::
-       The Download Project button
-    :::image-end:::
-
-    -->
-    <!--1.  Close the tab.  -->
-    <!--1.  Unzip the source code and move the unzipped `app` directory to your desktop.  For the rest of this tutorial the unzipped directory is referred to as `~/Desktop/app`.  -->
-
-1.  Create an `app` directory on your desktop.  Save copies of the files from the `workspaces-demo` directory to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
-
-1. Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you can use whatever server you prefer.
+1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.
 
    ```bash
    cd ~/Desktop/app
    python -m SimpleHTTPServer # Python 2
    ```
-
+   
    ```bash
    cd ~/Desktop/app
    python -m http.server # Python 3
    ```
 
-1.  Open a tab in Microsoft Edge and navigate to locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
+1.  Open a tab in Microsoft Edge and navigate to the locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
 
     :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo" lightbox="../media/workspaces-workspaces-demo.msft.png":::
        The demo
@@ -263,13 +246,7 @@ To open the DevTools code editor alongside other tools, do the following:
 <!-- ====================================================================== -->
 ## Next steps
 
-Use what you have learned in this tutorial to set up Workspaces in your own project.  <!-- If you run into any issues or are able to get it working after some custom configuration, please [start a thread in the mailing list](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools) or [ask a question on Stack Overflow](https://stackoverflow.com/questions/ask?tags=alphabet-browser-devtools) to share your knowledge with the rest of the DevTools community.  -->
-
-<!--
-If you have more feedback on the topics or anything else, please use any of the channels below:
-*   [Mailing List](https://groups.alphabet.com/forum/#!forum/alphabet-browser-developer-tools)
-*   [Twitter](https://twitter.com/alphabetbrowserdevtools)
--->
+Use what you have learned in this tutorial to set up Workspaces in your own project.
 
 
 <!-- ====================================================================== -->

@@ -1,12 +1,12 @@
 ---
+title: Force print preview mode
 description: Open the "Rendering" tool and select Emulate CSS media > print.
-title: Force Microsoft Edge DevTools into Print Preview mode (CSS Print Media Type)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Force Microsoft Edge DevTools into Print Preview mode
+# Force print preview mode
 
 The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) controls how your page looks when printed.  To force your page into print preview mode:
 

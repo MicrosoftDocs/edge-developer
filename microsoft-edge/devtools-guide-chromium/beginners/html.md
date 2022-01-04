@@ -1,12 +1,12 @@
 ---
-description: Get Started with HTML and the DOM
 title: "DevTools for beginners: Get started with HTML and the DOM"
+description: Get Started with HTML and the DOM.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/06/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, devtools for beginners, devtools HTML for beginners, devtools DOM for beginners, devtools html tutorial, devtools DOM tutorial, devtools document object model tutorial
+ms.date: 08/06/2021
 ---
 <!-- Copyright Katherine Jackson
 

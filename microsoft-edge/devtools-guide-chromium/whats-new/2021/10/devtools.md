@@ -1,12 +1,12 @@
 ---
-description: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.  All console errors and warnings now have a Search Web icon.  Improved keyboard access for defining User-Agent Client Hints.  Improved filtering for grouped messages in the Console.
 title: What's new in DevTools (Microsoft Edge 95)
+description: Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.  All console errors and warnings now have a Search Web icon.  Improved keyboard access for defining User-Agent Client Hints.  Improved filtering for grouped messages in the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/20/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 10/20/2021
 ---
 # What's New in DevTools (Microsoft Edge 95)
 
@@ -132,7 +132,7 @@ Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphab
 
 :::image type="content" source="../../media/2021/10/snippets-sorted-alphbetically.png" alt-text="Sorted snippets in the Sources panel.":::
 
-For more information about snippets, see [Run snippets of JavaScript on any webpage with Microsoft Edge DevTools](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
+For more information about snippets, see [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
 
 
 <!-- ====================================================================== -->

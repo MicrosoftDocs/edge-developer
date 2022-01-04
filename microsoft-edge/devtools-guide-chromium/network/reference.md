@@ -3,7 +3,7 @@ title: Network features reference
 description: A comprehensive reference of Microsoft Edge DevTools Network panel features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 07/19/2021

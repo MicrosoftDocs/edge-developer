@@ -1,14 +1,14 @@
 ---
+title: Analyze keyboard support on forms
 description: Analyzing the lack of keyboard support on a form that uses the div element with the Inspect tool and Event Listeners tab.
-title: Analyze keyboard support on forms using the DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
-# Analyze keyboard support on forms using the DevTools
+# Analyze keyboard support on forms
 
 This article uses the **Inspect** tool and **Event Listeners** tab to analyze the lack of keyboard support on a demo page which has buttons that use the `div` element.
 

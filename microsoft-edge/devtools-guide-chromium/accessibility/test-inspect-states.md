@@ -3,7 +3,7 @@ title: Verify the accessibility of all states of elements
 description: Inspect accessibility of all states of elements, such as text contrast during the hover state, in the Styles pane using Toggle Element State.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021

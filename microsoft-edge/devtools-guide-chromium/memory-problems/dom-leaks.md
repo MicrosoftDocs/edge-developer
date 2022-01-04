@@ -1,12 +1,12 @@
 ---
-title: Debug DOM memory leaks
+title: Debug DOM memory leaks with the Detached Elements tool
 description: Use the Detached Elements tool in the Microsoft Edge DevTools to find and fix DOM memory leaks.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/30/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, detached elements, document object model, dom, memory, leak, node
+ms.date: 11/30/2021
 ---
 
 # Debug DOM memory leaks with the Detached Elements tool

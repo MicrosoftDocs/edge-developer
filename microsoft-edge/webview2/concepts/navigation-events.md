@@ -1,13 +1,13 @@
 ---
-description: "Navigation events for WebView2: NavigationStarting, SourceChanged, ContentLoading, HistoryChanged, DOMContentLoaded, and NavigationCompleted."
 title: Navigation events for WebView2
+description: "Navigation events for WebView2: NavigationStarting, SourceChanged, ContentLoading, HistoryChanged, DOMContentLoaded, and NavigationCompleted."
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 10/28/2021
 ---
 # Navigation events for WebView2
 

@@ -1,13 +1,13 @@
 ---
-description: How to use the Chrome DevTools Protocol in your WebView2 app by using the Microsoft Edge WebView2 Chrome DevTools Protocol NuGet package.
 title: Use the Chrome DevTools Protocol in WebView2
+description: How to use the Chrome DevTools Protocol in your WebView2 app by using the Microsoft Edge WebView2 Chrome DevTools Protocol NuGet package.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Chrome DevTools Protocol
+ms.date: 05/06/2021
 ---
 # Use the Chrome DevTools Protocol in WebView2
 

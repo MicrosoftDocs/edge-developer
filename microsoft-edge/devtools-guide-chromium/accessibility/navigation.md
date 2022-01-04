@@ -1,12 +1,12 @@
 ---
-description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 title: Navigate Microsoft Edge DevTools with assistive technology
+description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 <!-- Copyright Rob Dodson
 
