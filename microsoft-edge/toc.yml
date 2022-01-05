@@ -41,24 +41,6 @@
             - name: Get started viewing and changing the DOM
               href: devtools-guide-chromium/dom/index.md
               displayName: Elements tool
-            - name: Track which element has focus # orig: "Track element focus"
-              href: devtools-guide-chromium/accessibility/focus.md
-              displayName: Elements tool, Accessibility tab
-            - name: Test keyboard support using the Source Order Viewer # added article
-              href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
-              displayName: Elements tool, Accessibility tab
-            - name: Test text-color contrast using the Color Picker # was part of "Accessibility features reference"
-              href: devtools-guide-chromium/accessibility/color-picker.md
-              displayName: Elements tool, Styles tab, Color Picker
-            - name: Verify accessibility of all states of elements # Elements > Styles > :hov (Toggle Element State)  # added article
-              href: devtools-guide-chromium/accessibility/test-inspect-states.md
-              displayName: Elements tool, Styles tab, hov Toggle Element State
-            - name: Test accessibility using the Accessibility tab # was part of "Accessibility features reference"
-              href: devtools-guide-chromium/accessibility/accessibility-tab.md
-              displayName: Elements tool, Accessibility tab, screen readers
-            - name: Check the Accessibility Tree for keyboard and screen reader support # Elements > Accessibility  # added article
-              href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
-              displayName: Elements tool, Accessibility tab, screen readers
 # Console tool (default tab 3) ------------------------------------------------
         - name: Console tool
           items:
@@ -146,9 +128,6 @@
             - name: Analyze pages using the Inspect tool # added article
               href: devtools-guide-chromium/css/inspect.md
               displayName: Inspect tool
-            - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # tests Screen reader support, Keyboard support, Text contrast # added article
-              href: devtools-guide-chromium/accessibility/test-inspect-tool.md
-              displayName: Inspect tool
 # Device Emulation -------------------------------------------------------------
         - name: Device Emulation # orig: Mobile simulation
           items:
@@ -163,9 +142,6 @@
               displayName: Device Emulation, Device Emulator
             - name: Emulate and test other browsers # orig: Emulate and Test Other Browsers (orphaned)
               href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-              displayName: Device Emulation, Device Emulator
-            - name: Verify that the webpage layout is usable when narrow # added article
-              href: devtools-guide-chromium/accessibility/narrow.md
               displayName: Device Emulation, Device Emulator
 # Closable tools in alpha order ===============================================
 # 3D View tool ----------------------------------------------------------------
@@ -240,9 +216,6 @@
             - name: Find and fix problems using the Issues tool
               href: devtools-guide-chromium/issues/index.md
               displayName: Issues tool
-            - name: Automatically test a webpage for accessibility issues # added article
-              href: devtools-guide-chromium/accessibility/test-issues-tool.md
-              displayName: Issues tool
 # JavaScript Profiler tool ----------------------------------------------------
         #   deprecated
         # - name: JavaScript Profiler tool
@@ -252,11 +225,9 @@
         # - name: Layers tool
         #   items:
 # Lighthouse tool (default tab 10) --------------------------------------------
-        - name: Lighthouse tool
-          items:
-            - name: Test accessibility using Lighthouse # was part of "Accessibility features reference"
-              href: devtools-guide-chromium/accessibility/lighthouse.md
-              displayName: Lighthouse tool
+        #   1 article, in Accessibility
+        # - name: Lighthouse tool
+        #   items:
 # Media tool ------------------------------------------------------------------
         - name: Media tool
           items:
@@ -337,6 +308,12 @@
         #   find elsewhere in TOC, two h2 sections
         # - name: Quick source tool
         #   items:
+# Recorder tool ---------------------------------------------------------------
+        # - name: Recorder tool
+        #   items:
+        #     - name: __ # pending
+        #       href: __ # pending
+        #       displayName: Recorder tool
 # Remote Debugger -------------------------------------------------------------
         - name: Remote debugging
           items:
@@ -356,26 +333,9 @@
               href: devtools-guide-chromium/remote-debugging/windows.md
               displayName: Remote debugging, remote debugger
 # Rendering tool --------------------------------------------------------------
-        - name: Rendering tool
-          items:
-            - name: Emulate vision deficiencies # Rendering tool  # added article
-              href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-              displayName: Rendering tool
-            - name: Verify that a page is usable by people with color blindness # Rendering tool  # added article
-              href: devtools-guide-chromium/accessibility/test-color-blindness.md
-              displayName: Rendering tool
-            - name: Verify that a page is usable with blurred vision # Rendering tool  # added article
-              href: devtools-guide-chromium/accessibility/test-blurred-vision.md
-              displayName: Rendering tool
-            - name: Simulate reduced motion # added article
-              href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-              displayName: Rendering tool
-            - name: Verify that a page is usable with UI animation turned off # added article
-              href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
-              displayName: Rendering tool
-            - name: Check for contrast issues with dark theme and light theme # added article
-              href: devtools-guide-chromium/accessibility/test-dark-mode.md
-              displayName: Rendering tool, dark mode, light mode, dark scheme, light scheme
+        #   articles are in Accessibility section
+        # - name: Rendering tool
+        #   items:
 # Search tool -----------------------------------------------------------------
         - name: Search tool
           items:
@@ -487,28 +447,94 @@
           items:
             - name: Accessibility-testing features # orig: Accessibility features reference (broken up & replaced)
               href: devtools-guide-chromium/accessibility/reference.md
-              displayName: Elements tool, Accessibility tab # many tools
+              displayName: Elements tool, Accessibility tab
+
             - name: Overview of accessibility testing using DevTools # added article
               href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
               displayName: Elements tool, Accessibility tab # many tools
+# Inspect tool # 2 of 2
+            - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # tests Screen reader support, Keyboard support, Text contrast # added article
+              href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+              displayName: Inspect tool
+# Lighthouse tool (default tab 10)
+            - name: Test accessibility using Lighthouse # was part of "Accessibility features reference"
+              href: devtools-guide-chromium/accessibility/lighthouse.md
+              displayName: Lighthouse tool
+# ~Elements tool > Accessibility tab con't
             - name: Navigate DevTools with assistive technology
               href: devtools-guide-chromium/accessibility/navigation.md
               displayName: Elements tool, Accessibility tab # many tools
+            - name: Track which element has focus # orig: "Track element focus"
+              href: devtools-guide-chromium/accessibility/focus.md
+              displayName: Elements tool, Accessibility tab
+            - name: Alt-text for images
+              items:
+                - name: Automatically test a webpage for accessibility issues # added article
+                  href: devtools-guide-chromium/accessibility/test-issues-tool.md
+                  displayName: Issues tool
+            - name: Keyboard support
+              items:
+                - name: Check for keyboard support by using the Tab and Enter keys # added article
+                  href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
+                  displayName: keyboard support
+                - name: Analyze the lack of indication of keyboard focus in a sidebar menu # added article
+                  href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
+                  displayName: keyboard focus
+                - name: Analyze keyboard support on forms # added article
+                  href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
+                  displayName: keyboard support
+                - name: Test keyboard support using the Source Order Viewer # added article
+                  href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+                  displayName: Elements tool, Accessibility tab
+            - name: Text contrast
+              items:
+                - name: Test text-color contrast using the Color Picker # was part of "Accessibility features reference"
+                  href: devtools-guide-chromium/accessibility/color-picker.md
+                  displayName: Elements tool, Styles tab, Color Picker
+                - name: Verify accessibility of all states of elements # Elements > Styles > :hov (Toggle Element State)  # added article
+                  href: devtools-guide-chromium/accessibility/test-inspect-states.md
+                  displayName: Elements tool, Styles tab, hov Toggle Element State
+                - name: Check for contrast issues with dark theme and light theme # Rendering tool  # added article
+                  href: devtools-guide-chromium/accessibility/test-dark-mode.md
+                  displayName: Rendering tool, dark mode, light mode, dark scheme, light scheme
+            - name: Screen reader support
+              items:
+                - name: Test accessibility using the Accessibility tab # was part of "Accessibility features reference"
+                  href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                  displayName: Elements tool, Accessibility tab, screen readers
+                - name: Check the Accessibility Tree for keyboard and screen reader support # Elements > Accessibility  # added article
+                  href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
+                  displayName: Elements tool, Accessibility tab, screen readers
+# Rendering tool (additional)
+            - name: Vision deficiencies (Rendering tool)
+              items:
+                - name: Emulate vision deficiencies # Rendering tool  # added article
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+                  displayName: Rendering tool
+                - name: Verify that a page is usable by people with color blindness # Rendering tool  # added article
+                  href: devtools-guide-chromium/accessibility/test-color-blindness.md
+                  displayName: Rendering tool
+                - name: Verify that a page is usable with blurred vision # Rendering tool  # added article
+                  href: devtools-guide-chromium/accessibility/test-blurred-vision.md
+                  displayName: Rendering tool
+                - name: Simulate reduced motion # added article
+                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                  displayName: Rendering tool
+                - name: Verify that a page is usable with UI animation turned off # added article
+                  href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+                  displayName: Rendering tool
+# Device Emulation (additional)
+            - name: Usable when narrow (Device Emulation)
+              items:
+                - name: Verify that the webpage layout is usable when narrow # added article
+                  href: devtools-guide-chromium/accessibility/narrow.md
+                  displayName: Device Emulation, Device Emulator
 # Keyboard support ------------------------------------------------------------
         - name: Keyboard support
           items:
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
               displayName: Keyboard shortcuts
-            - name: Check for keyboard support by using the Tab and Enter keys # added article
-              href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
-              displayName: keyboard support
-            - name: Analyze the lack of indication of keyboard focus in a sidebar menu # added article
-              href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
-              displayName: keyboard focus
-            - name: Analyze keyboard support on forms # added article
-              href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
-              displayName: keyboard support
 # IE mode ---------------------------------------------------------------------
         - name: Use DevTools in IE mode # added article
           href: devtools-guide-chromium/ie-mode/index.md
