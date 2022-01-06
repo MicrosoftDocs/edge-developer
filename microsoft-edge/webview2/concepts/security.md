@@ -26,6 +26,7 @@ The [WebView2 control](../index.md) allows developers to host web content in the
     1.	To prevent your application from navigating to certain pages, use the events to check and then block page or frame navigation.
     1.	When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2settings) or [CoreWebView2Settings (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2settings) as previously described.
 1.  When navigating to a new document, use the `ContentLoading` event to remove exposed host objects using `RemoveHostObjectFromScript`.
+1.  Webview2 doesn't allow the ability to be run as a system user, which blocks scenarios like building a Credential Provider.
 
 <!--## Security
 
