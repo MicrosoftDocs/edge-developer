@@ -249,6 +249,29 @@ To use the Fixed Version distribution mode:
 
 1.  Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
 
+### Fixed Versioning with WinUI/UWP apps
+
+1. Download the corresponding fixed version binaries from the [WebView2 download](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) site.
+    :::image type="content" source="../media/fixedversioning.png" alt-text="WebView2 Fixed Version." lightbox="../media/fixedversioning.png":::
+1. Extract the file contents (same as above steps), and copy to a directory under the project. Ex. ProjectName\95.0.1020.53
+1. Open the project file (.csproj) in a code editor and add the following code snippet within the project tags:
+    1. ```xml
+        <Content Include="FixedRuntime\95.0.1020.53\\**\*.*">
+        <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
+        </Content>
+    ```
+1. Rebuild your project and verify that the `bin\ **designated architecture**\Release` folder has a matching FixedRuntime\95.0.1020.53 folder with the runtime files in it
+1. Ensure the app has access to the folder by specifying the installed location and setting the environment variable for runtime path.
+    1. One way to do so is by adding the following c charp code to your app. 
+    ```csharp
+    StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+    String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\95.0.1020.53");
+    Debug.WriteLine($"Launch path [{localFolder.Path}]");
+    Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
+    Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
+    ```
+1. Rebuild project and deploy.
+
 ### Known issues for Fixed Version
 
 *   Currently, Fixed Version cannot be run from a network location or UNC path.
