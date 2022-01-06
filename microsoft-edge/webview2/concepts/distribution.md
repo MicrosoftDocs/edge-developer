@@ -278,7 +278,8 @@ To use the Fixed Version distribution mode:
             Permission for PlayReady
         :::image-end:::
 
-### Files to ship with the app
+<!-- ====================================================================== -->
+## Files to ship with the app
 
 The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture.
 
