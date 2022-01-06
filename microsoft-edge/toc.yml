@@ -325,8 +325,9 @@
               displayName: Network tool, Application tool, Sources tool
 # Network conditions tool -----------------------------------------------------
         #   mentioned in many articles
-        # - name: Network conditions tool
-        #   items:
+        - name: Network conditions tool # new jump page
+          items: devtools-guide-chromium/network-conditions/network-conditions-tool.md
+          displayName: Network conditions tool
 # Network request blocking tool -----------------------------------------------
         # - name: Network request blocking tool
         #   items:
