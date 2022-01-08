@@ -1,12 +1,12 @@
 ---
-description: How to differentiate Windows 10 and Windows 11 using User-Agent Client Hints
 title: Detecting Windows 11 using User-Agent Client Hints
+description: How to differentiate Windows 10 and Windows 11 using User-Agent Client Hints.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, user-agent client hints, user agent client hints, ua client hints, ua ch, windows 11, win11, detecting windows 11, windows detection
+ms.date: 10/15/2021
 ---
 # Detecting Windows 11 using User-Agent Client Hints
 
@@ -24,7 +24,7 @@ Websites can use user agent information sent from the browser to detect brand, v
 
 For details about these two approaches, see [Detecting Microsoft Edge from your website](user-agent-guidance.md).
 
-Starting in Microsoft Edge version 94 and Chrome version 95, sites can differentiate between users on Windows 11 and Windows 10 via User-Agent Client Hints (UA-CH). This information can be found in the following UA-CH request headers:
+In Microsoft Edge and Chrome, sites can differentiate between users on Windows 11 and Windows 10 via User-Agent Client Hints (UA-CH). This information can be found in the following UA-CH request headers:
 
 | Header field | Values that indicate Windows 10 | Values that indicate Windows 11 |
 | --- | --- | --- |

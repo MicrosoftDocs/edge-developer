@@ -1,9 +1,9 @@
 ---
-description: Learn how to use JavaScript in complex scenarios in WebView2 apps
 title: Use JavaScript in WebView for extended scenarios
+description: Learn how to use JavaScript in complex scenarios in WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/06/2021
+ms.date: 1/5/2022
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
@@ -11,13 +11,13 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edg
 ---
 # Use JavaScript in WebView for extended scenarios
 
-Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements.  This article explores how to use JavaScript in WebView2, and reviews how to develop using advanced WebView2 features and functionality.
+Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements. This article explores how to use JavaScript in WebView2, and reviews how to develop using advanced WebView2 features and functions.
 
 
 <!-- ====================================================================== -->
 ## Before you begin
 
-This article assumes that you already have a working project.  If you don't have a project, and want to follow along, see the [WebView2 get started guides][Webview2MainGetStarted].
+This article assumes that you already have a working project. If you don't have a project, and want to follow along, see the [WebView2 get started guides](../index.md#get-started).
 
 
 <!-- ====================================================================== -->
@@ -27,9 +27,31 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 
 | API  | Description  |
 |:--- |:--- |
-| [ExecuteScriptAsync][Webview2ReferenceWpfMicrosoftWebExecutescriptasync] | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
-| [OnDocumentCreatedAsync][Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated] | Runs when the Document Object Model (DOM) is created. |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
+| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | Runs when the Document Object Model (DOM) is created. |
 
+
+<!-- ====================================================================== -->
+## Scenario: ExecuteScript JSON-encoded results
+
+
+Because the result of `ExecuteScriptAsync` is JSON-encoded, if the result of evaluating the JavaScript is a string, you will receive a JSON-encoded string and not the value of the string. For example, the following script results in a string with the following value, including the quotes at the start and end, and the escaping slashes:
+
+ * Script: ```var result = await webView22.CoreWebView2.ExecuteScriptAsync(@"'example'");``` 
+ * Result: ```"\"example\"";```
+
+The script returns a string that `ExecuteScript` JSON-encodes for you. If you call `JSON.stringify` from your script, then the result is doubly encoded as a JSON string the value of which is a JSON string.
+
+Only the properties that are directly in the result are included in the JSON-encoded object; inherited properties are not included in the JSON-encoded object. Most DOM objects inherit all properties, so you'll need to explicitly copy their values into another object to return. For example:
+
+Script              | Result
+---                 | ---
+`performance.memory`  | `{}`
+`(() => { const {totalJSHeapSize, usedJSHeapSize} = performance.memory; return {totalJSHeapSize, usedJSHeapSize}; })();` |  `{"totalJSHeapSize":4434368,"usedJSHeapSize":2832912}`
+
+When we return just `performance.memory` we don't see any of its properties in the result because all properties are inherited. If instead we copy particular property values from `performance.memory` into our own new object to return, then we do see those properties in the result.
+
+When executing script via `ExecuteScriptAsync` that script is run in the global context. It helps to have your script in an anonymous function so that any variables you define aren't polluting the global context. For example, if you run the script `const example = 10;` more than once, the subsequent times you run the script will throw an exception because `example` was defined the first time you ran it. If you instead run the script `(() => { const example = 10; })();` the `example` variable is defined in the context of that anonymous function. That way it is not polluting the global context and can be run more than once.
 
 <!-- ====================================================================== -->
 ## Scenario: Running a dedicated script file
@@ -118,22 +140,7 @@ Now add code to remove the contextual menu functionality from the WebView2 contr
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 get started guides][Webview2MainGetStarted]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference][Webview2ApiReference]
-*  [See also][Webview2MainNextSteps] in _Introduction to Microsoft Edge WebView2_.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsGuideChromiumMain]: ../index.md "Microsoft Edge Developer Tools | Microsoft Docs"
-
-[Webview2ApiReference]: ../webview2-api-reference.md "Microsoft Edge WebView2 API Reference | Microsoft Docs"
-[Webview2MainGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2MainNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-
-[Webview2ReferenceWin32Icorewebview2Addscripttoexecuteondocumentcreated]: /microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated "AddScriptToExecuteOnDocumentCreated - 0.9.579 - interface ICoreWebView2 | Microsoft Docs"
-
-[Webview2ReferenceWpfMicrosoftWebExecutescriptasync]: /dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync "WebView2.ExecuteScriptAsync(String) Method (Microsoft.Web.WebView2.Wpf) | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
+*  [WebView2 get started guides](../index.md#get-started)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](../webview2-api-reference.md)
+*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

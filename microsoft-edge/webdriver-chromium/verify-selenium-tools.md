@@ -1,21 +1,21 @@
 ---
-description: Information about verifying the GPG signature for Selenium Tools for Microsoft Edge releases.
 title: Verifying downloads of Selenium Tools for Microsoft Edge
+description: How to verify the GPG signature for Selenium Tools for Microsoft Edge releases.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/29/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
+ms.date: 01/29/2021
 ---
 # Verify downloads of Selenium Tools for Microsoft Edge
 
-This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases].
+This article provides the public key to use when verifying the signature of releases of the [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools/releases).
 
-The [Java releases][MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava] of [Selenium Tools for Microsoft Edge][GithubMicrosoftEdgeSeleniumToolsReleases] are signed using [GPG][Gnupg].
+The [Java releases](https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java) of [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools/releases) are signed using [GPG](https://gnupg.org).
 
-Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team][TwitterEdgeDevTools].
+Use the following keys to verify the signature of packages provided by the [Microsoft Edge Developer Tools team](https://twitter.com/edgedevtools).
 
 
 <!-- ====================================================================== -->
@@ -45,13 +45,3 @@ ptJfPKT84TtqmRoJApBgxAsnD4t4JiuvnHkYHgzAzwcXFiofj2cCeJZf1tzIk6+Z
 =0iMW
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-<!-- links -->
-
-[GithubMicrosoftEdgeSeleniumToolsReleases]: https://github.com/microsoft/edge-selenium-tools/releases "microsoft/edge-selenium-tools | GitHub"
-
-[Gnupg]: https://gnupg.org "The GNU Privacy Guard | GnuPG"
-
-[MavernSearchArtifactComMicrosoftEdgeMsedgeSeleniumToolsJava]:https://search.maven.org/artifact/com.microsoft.edge/msedge-selenium-tools-java "com.microsoft.edge:msedge-selenium-tools-java | sonatype Maven Central Repository Search"
-
-[TwitterEdgeDevTools]: https://twitter.com/edgedevtools "Microsoft Edge DevTools | Twitter"

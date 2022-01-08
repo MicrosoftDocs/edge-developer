@@ -1,12 +1,12 @@
 ---
+title: Microsoft Edge Add-ons API Reference (under development)
 description: The Add-ons API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
-title: Microsoft Edge Add-ons API Reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons api, publish api
+ms.date: 08/19/2021
 ---
 # Microsoft Edge Add-ons API Reference (under development)
 
@@ -15,7 +15,7 @@ keywords: edge-chromium, extensions development, browser extensions, add-ons, pa
 
 This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
-For an overview, navigate to [Using the Microsoft Edge Add-ons API][UsingAddonsAPI].
+For an overview, see [Using the Microsoft Edge Add-ons API](using-addons-api.md).
 
 
 <!-- ====================================================================== -->
@@ -338,7 +338,7 @@ This API has the following expected status codes.
 <!-- ====================================================================== -->
 ## Error codes
 
-Here are a list of common error codes and possible reasons.  For a full list, navigate to [Partner Center REST error codes][PartnerCenterErrorCodes] or [List of HTTP status codes][WikipediaListOfStatusCodes].
+Here are a list of common error codes and possible reasons.  For a full list, see [Partner Center REST error codes](/partner-center/develop/error-codes) or [List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 ### 4xx: Client error
 
@@ -360,11 +360,4 @@ Here are a list of common error codes and possible reasons.  For a full list, na
 <!-- ====================================================================== -->
 ## See also
 
-*  [Using the Microsoft Edge Add-ons API][UsingAddonsAPI]
-
-
-<!-- links -->
-[UsingAddonsAPI]: using-addons-api.md "Using the Microsoft Edge Add-ons API | Microsoft Docs"
-<!-- external links -->
-[PartnerCenterErrorCodes]: /partner-center/develop/error-codes "Partner Center REST error codes | Microsoft Docs "
-[WikipediaListOfStatusCodes]: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes "List of HTTP status codes | Wikipedia"
+*  [Using the Microsoft Edge Add-ons API](using-addons-api.md)

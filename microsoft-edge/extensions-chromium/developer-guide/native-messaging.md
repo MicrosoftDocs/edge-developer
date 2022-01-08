@@ -1,21 +1,21 @@
 ---
-description: Native messaging documentation
-title: Native Messaging
+title: Native messaging
+description: To communicate with a native Win32 app that's installed on a user's device, an extension uses the message-passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/31/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
+ms.date: 03/31/2021
 ---
 # Native messaging
 
-Extensions communicate with a native Win32 app installed on a user's device using message passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.  Extensions using native messaging are installed in Microsoft Edge similar to any other extension.  However, native apps are not installed or managed by Microsoft Edge.
+To communicate with a native Win32 app that's installed on a user's device, an extension uses the message-passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.  Extensions using native messaging are installed in Microsoft Edge similar to any other extension.  However, native apps are not installed or managed by Microsoft Edge.
 
-To acquire the extension and native app host, you have two distribution models.
+To acquire the extension and native app host, there are two distribution models:
 
 *   Package your extension and the host together.  When a user installs the package, both the extension and the host are installed.
-*   Install your extension using the [Microsoft Edge Add-ons website][MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome], and your extension prompts users to install the host.
+*   Install your extension using the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home), and your extension prompts users to install the host.
 
 To create your extension to send and receive messages with native app hosts, complete the following steps.
 
@@ -67,92 +67,17 @@ The browser reads and validates the native messaging host manifest.  The browser
 }
 ```
 
-The host manifest file must be a valid JSON file that contains the following keys.
+The host manifest file must be a valid JSON file that contains the following keys:
 
-:::row:::
-   :::column span="1":::
-      **Key**
-   :::column-end:::
-   :::column span="3":::
-      **Details**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
+| Key | Details |
+| --- | --- |
+| `name` | Specifies the name of the native messaging host.  Clients pass the string to `runtime.connectNative` or `runtime.sendNativeMessage`.<br/>  The value must only contain lowercase alphanumeric characters, underscores, and dots.<br/> The value must not start or end with a dot, and a dot must not be followed by another dot. |
+| `description` | Describes the app. |
+| `path` | Specifies the path to the native messaging host binary.<br/> On Windows devices, you may use relative paths to the directory that contains the manifest file.<br/>  On macOS and Linux, the path must be absolute.<br/>  The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory (`C:\App\`). |
+| `type` | Specifies the type of the interface used to communicate with the native messaging host.  The value instructs Microsoft Edge to use `stdin` and `stdout` to communicate with the host.  The only acceptable value is `stdio`. |
+| `allowed_origins` | Specifies the list of extensions that have access to the native messaging host.  To turn on your app to identify and communicate with an extension, in your native messaging host manifest file, set the following value:<br/> `"allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]`|
 
-      `name`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the name of the native messaging host.  Clients pass the string to `runtime.connectNative` or `runtime.sendNativeMessage`.
-
-      *   The value must only contain lowercase alphanumeric characters, underscores, and dots.
-      *   The value must not start or end with a dot, and a dot must not be followed by another dot.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `description`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Describes the app.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `path`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the path to the native messaging host binary.
-
-      *   On Windows devices, you may use relative paths to the directory that contains the manifest file.
-      *   On macOS and Linux, the path must be absolute.
-
-      The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory (`C:\App\`).
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `type`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the type of the interface used to communicate with the native messaging host.  The value instructs Microsoft Edge to use `stdin` and `stdout` to communicate with the host.
-      The only acceptable value is `stdio`.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="1":::
-      ---
-
-      `allowed_origins`
-   :::column-end:::
-   :::column span="3":::
-      ---
-
-      Specifies the list of extensions that have access to the native messaging host.  To turn on your app to identify and communicate with an extension, in your native messaging host manifest file set the following value.
-
-      ```json
-      "allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]
-      ```
-   :::column-end:::
-:::row-end:::
-
-Sideload your extension to test native messaging with the host.
-To sideload your extension during development and retrieve `microsoft_catalog_extension_id`, complete the following actions.
+Sideload your extension to test native messaging with the host.  To sideload your extension during development and retrieve `microsoft_catalog_extension_id`:
 
 1.  Navigate to `edge://extensions`, and then turn on the Developer mode toggle button.
 1.  Choose **Load unpacked**, and then choose your extension package to sideload.
@@ -172,8 +97,6 @@ The final step involves copying the native messaging host manifest file to your 
 > Ensure that you provide read permissions on the manifest file, and run permissions on the host runtime.
 
 ### [Windows](#tab/windows/)
-
-<a id="copy-manifest-file"></a>
 
 The manifest file may be located anywhere in the file system.  The app installer must create a registry key and set the default value of the key to the full path of the manifest file.  The following locations are examples of registry keys.
 
@@ -230,8 +153,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Google\Chrome\NativeMessagingHosts\
 
 ### [macOS](#tab/macos/)
 
-<a id="copy-manifest-file"></a>
-
 To store the manifest file, complete one of the following actions.
 
 *   System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  For example, the manifest file must be stored in following location.
@@ -256,8 +177,6 @@ To store the manifest file, complete one of the following actions.
 
 ### [Linux](#tab/linux/)
 
-<a id="copy-manifest-file"></a>
-
 To store the manifest file, complete one of the following actions.
 
 *   System-wide native messaging hosts, which are available to all users, are stored in a fixed location.  The manifest file must be stored in following location.
@@ -274,17 +193,10 @@ To store the manifest file, complete one of the following actions.
 
 * * *
 
-<!-- links -->
-
-[MicrosoftMicrosoftedgeAddonsMicrosoftEdgeExtensionsHome]: https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home "Microsoft Edge Add-ons"
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/nativeMessaging).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
