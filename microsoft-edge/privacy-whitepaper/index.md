@@ -247,9 +247,9 @@ The family group organizer may stop the data collection from the family safety p
 <!-- ====================================================================== -->
 ## Geolocation
 
-While you browse the web, websites may request your device’s location from Microsoft Edge. Data about your device’s location can be either precise or imprecise. For example, precise location is requested to provide driving direction to/from your specific location. Imprecise location may be requested to provide search results, news, and weather relevant to your general location.
+While you browse the web, websites may request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is requested to provide driving directions to or from your specific location. An imprecise location may be requested to provide search results, news, and weather relevant to your general location.
 
-Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your precise location with your permission. Microsoft Edge always asks for your permission before granting websites access to your precise location. To manage the site-specific permissions or to always block sites from accessing your precise location, navigate to `edge://settings/content/location`.
+Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your precise location with your permission. Microsoft Edge always asks for your permission before granting websites access to your precise location. To manage the site-specific permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
 
 Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
 
@@ -261,9 +261,9 @@ If you allow sharing of your precise location with a site, Microsoft Edge sends 
 
 You can allow Microsoft Edge to provide the requesting site with a precise location on Windows 10 and Windows 11. Open **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings.
 
- If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, some sites can use information such as your IP address to determine your device’s imprecise location. For more information about Windows location settings, navigate to [Windows location service and privacy](https://support.microsoft.com/help/4468240).
+If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, some sites can use information such as your IP address to determine your device's imprecise location. For more information about Windows location settings, navigate to [Windows location service and privacy](https://support.microsoft.com/help/4468240).
 
-Microsoft Edge does not store your geolocation coordinates. When making requests to the Microsoft location service, Microsoft Edge generates a new random ID for each request.
+Microsoft Edge doesn't store your geolocation coordinates. When making requests to the Microsoft location service, Microsoft Edge generates a new random ID for each request.
 
 **InPrivate** browsing uses the precise location permission setting of the profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting the site your precise location.
 
