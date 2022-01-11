@@ -49,7 +49,7 @@ The current version of the Microsoft Edge DevTools extension for Visual Studio C
 
 *  Device emulation now adds the correct user agent string, to trigger the correct display.
 
-*  You now get a warning when you use a deprecated launch version of Microsoft Edge, indicating that you'd miss out on features by using a deprecated version of Microsoft Edge.
+*  You now get a warning when you use a deprecated launch version of Microsoft Edge, indicating that you'd miss out on features.
 
 *  You can now provide arguments for the launched browser instance, in case you need to have a special setup:
 
