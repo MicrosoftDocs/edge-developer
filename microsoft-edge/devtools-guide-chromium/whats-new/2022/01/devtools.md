@@ -62,13 +62,15 @@ The current version of the Microsoft Edge DevTools extension for Visual Studio C
 <!-- Title: Have you tried Focus Mode? -->
 <!-- Subtitle: To de-clutter and simplify the DevTools interface to focus on debugging web apps, enable Focus Mode in DevTools settings. -->
 
-Thanks to your early feedback, we've continued to make improvements and bug fixes on the new Focus Mode interface for Microsoft Edge DevTools.  Focus Mode is a new UI option that allows you to dock tools at the top or side of the DevTools window, and removes clutter from the toolbar.  When using Focus Mode, all the same tools and [custom themes](../../../customize/theme.md) are available as in the existing DevTools UI.  Learn more about the [Focus Mode UI](../../../experimental-features/index.md#focus-mode), or try it for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
+Thanks to your early feedback, we've continued to make improvements and bug fixes on the new Focus Mode interface for Microsoft Edge DevTools.  Focus Mode is a new UI option that allows you to dock tools at the top or side of the DevTools window, and removes clutter from the toolbar.
+
+When using Focus Mode, all the same tools and [custom themes](../../../customize/theme.md) are available as in the existing DevTools UI.  Learn more about the [Focus Mode UI](../../../experimental-features/index.md#focus-mode), or try it for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
 
 ![The Focus Mode UI.](../../media/2022/01/focus-mode.png)
 
 
 <!-- ====================================================================== -->
-## 3D View tool now supports changing color themes in DevTools
+## 3D View tool supports changing color themes in DevTools
 
 <!-- Title: 3D View better integrates with different themes in DevTools -->
 <!-- Subtitle: The 3D View tool now works when you select a different color theme in DevTools. -->
@@ -81,9 +83,13 @@ For more information about the issue that was fixed, see [Bug 36842109: 3D View 
 
 
 <!-- ====================================================================== -->
-> [!NOTE]
+## Announcements from the Chromium project
+
+Microsoft Edge 97 also has the updates from the Chromium project.  See [What's New In DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97).
+
+<!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page for announcements from the Chromium project is [What's New In DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
