@@ -29,7 +29,7 @@ The **Detached Elements** tool was initially available as an experiment in [Micr
 ![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png)
 
 See also:
-* [Debug DOM memory leaks with the Detached Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks)
+* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool - YouTube](https://www.youtube.com/watch?v=v2iy17ptmBk&ab_channel=MicrosoftEdge)
 
 
