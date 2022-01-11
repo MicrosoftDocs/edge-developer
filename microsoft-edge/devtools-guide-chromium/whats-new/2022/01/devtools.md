@@ -34,10 +34,26 @@ See also:
 
 
 <!-- ====================================================================== -->
-<!-- ## Item 2 -->
+## Microsoft Edge DevTools extension for Visual Studio Code
 
-<!-- Title: xyz -->
-<!-- Subtitle: xyz. -->
+For general information about this extension, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
+
+### Screencast enhancements, deprecation warnings, and new launch options for Microsoft Edge
+
+<!-- Title: Screeencast improvements and launch options for Microsoft Edge in the Visual Studio Code extension -->
+<!-- Subtitle: The correct list of emulated devices is shown for the screeencast, the correct device emulation is displayed, and there are now launch arguments for the browser. -->
+
+The current version of the Microsoft Edge DevTools extension for Visual Studio Code fixes several issues that were reported by the community:
+
+*  The list of emulated devices in the screencast is now the same as the list of emulated devices in the browser.
+
+*  Device emulation now adds the correct user agent string, to trigger the correct display.
+
+*  You now get a warning when you use a deprecated launch version of Microsoft Edge, indicating that you'd miss out on features by using a deprecated version of Microsoft Edge.
+
+*  You can now provide arguments for the launched browser instance, in case you need to have a special setup:
+
+![Extension settings to specify launch arguments for Microsoft Edge.](../../media/2022/01/extension-settings-launch-arguments.png)
 
 
 <!-- ====================================================================== -->
@@ -62,17 +78,6 @@ In previous versions of Microsoft Edge, changing the theme in DevTools and then 
 ![The 3D View tool now supports changing color themes.](../../media/2022/01/3d-view-with-color-theme.png)
 
 For more information about the issue that was fixed, see [Bug 36842109: 3D View panel blank after DevTools reload](https://dev.azure.com/microsoft/Edge/_workitems/edit/36842109/) and [Pull request 6615892: Fix for blank screen in 3D View after tools reloaded](https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/6615892).
-
-
-<!-- ====================================================================== -->
-<!-- ## Microsoft Edge DevTools Visual Studio Code extension -->
-
-<!-- For general information about this extension, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md). -->
-
-<!-- Title: xyz -->
-<!-- Subtitle: xyz. --> 
-
-<!-- ### xyz -->
 
 
 <!-- ====================================================================== -->
