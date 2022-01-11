@@ -79,13 +79,11 @@ In previous versions of Microsoft Edge, changing the theme in DevTools and then 
 
 ![The 3D View tool now supports changing color themes.](../../media/2022/01/3d-view-with-color-theme.png)
 
-For more information about the issue that was fixed, see [Bug 36842109: 3D View panel blank after DevTools reload](https://dev.azure.com/microsoft/Edge/_workitems/edit/36842109/) and [Pull request 6615892: Fix for blank screen in 3D View after tools reloaded](https://dev.azure.com/microsoft/Edge/_git/chromium.devtools-frontend/pullrequest/6615892).
-
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-Microsoft Edge 97 also has the updates from the Chromium project.  See [What's New In DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97).
+Microsoft Edge version 97 also includes selected updates from the Chromium project.  See [What's New In DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97).
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
