@@ -3,12 +3,12 @@ title: Distribute a WebView2 app and the WebView2 Runtime
 description: Distribution options when releasing an app using Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 12/30/2021
+ms.date: 1/10/2022
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-ms.date: 1/10/2022
+
 ---
 # Distribute a WebView2 app and the WebView2 Runtime
 
