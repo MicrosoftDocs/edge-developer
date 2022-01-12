@@ -35,7 +35,7 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 ## Scenario: ExecuteScript JSON-encoded results
 
 
-Because the result of `ExecuteScriptAsync` is JSON-encoded, if the result of evaluating the JavaScript is a string, you will receive a JSON-encoded string and not the value of the string. For example, the following code executes script that results in a string including the quotes at the start and end and the escaping slashes:
+Because the result of `ExecuteScriptAsync` is JSON-encoded, if the result of evaluating the JavaScript is a string, you will receive a JSON-encoded string and not the value of the string. For example, the following code executes script that results in a string.  The resulting string includes a quote at the start, a quote at the end, and escaping slashes:
 
 ```c#
 string result = await coreWebView2.ExecuteScriptAsync(@"'example'");
