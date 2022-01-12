@@ -83,7 +83,26 @@ In previous versions of Microsoft Edge, changing the theme in DevTools and then 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-Microsoft Edge version 97 also includes selected updates from the Chromium project.  See [What's New In DevTools (Chrome 97)](https://developer.chrome.com/blog/new-in-devtools-97).
+Microsoft Edge version 97 also includes the following updates from the Chromium project.
+
+
+<!-- ====================================================================== -->
+## Refresh device list in Device Mode
+
+See [Refresh device list in Device Mode](https://developer.chrome.com/blog/new-in-devtools-97/#device).
+
+
+<!-- ====================================================================== -->
+## Autocomplete with Edit as HTML
+
+See [Autocomplete with Edit as HTML](https://developer.chrome.com/blog/new-in-devtools-97/#code-completion).
+
+
+<!-- ====================================================================== -->
+## Improved code debugging experience
+
+See [Improved code debugging experience](https://developer.chrome.com/blog/new-in-devtools-97/#debugging).
+
 
 <!-- > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
