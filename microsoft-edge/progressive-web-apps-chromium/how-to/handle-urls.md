@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, URL
-ms.date: 09/29/2021
+ms.date: 01/12/2022
 ---
 # Handle URLs in Progressive Web Apps
 
@@ -16,13 +16,15 @@ Native applications on many operating systems can be associated with URLs. They 
 Progressive Web Apps can also handle URLs in the same way, and doing so can create a more engaging experience.
 
 > [!NOTE]
-> At the moment, in-browser page navigation doesn't trigger PWA URL handling.
+> Support for the experimental `url_handlers` manifest member documented below is being phased out.
+> The feature is being replaced by the new `handle_links` manifest member which is still being standardized and implemented at the moment.
+> Go to the `handle_links` [explainer](https://github.com/WICG/pwa-url-handler/blob/main/handle_links/explainer.md) to learn more about it.
 
 
 <!-- ====================================================================== -->
 ## Enable URL handling
 
-URL handling is still experimental, to enable it:
+URL handling is experimental, to enable it:
 
 1.  Go to `edge://flags` in Microsoft Edge.
 1.  Select **Search flags** and type "url handling".

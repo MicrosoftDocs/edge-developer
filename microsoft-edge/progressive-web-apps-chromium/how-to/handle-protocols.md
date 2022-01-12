@@ -21,20 +21,6 @@ To learn more about other existing protocols, see [List of URI schemes](https://
 
 
 <!-- ====================================================================== -->
-## Enable protocol handling
-
-Protocol Handling is an experimental feature.  To turn on protocol handling:
-
-1.  Go to `edge://flags` in Microsoft Edge.
-1.  Select **Search flags**, and then type "protocol handling".
-1.  Select **Default** > **Enabled** > **Restart**.
-
-:::image type="content" source="../media/enable-protocol-handling-experiment.png" alt-text="Enable the 'Protocol handling' API experiment.":::
-
-Protocol Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
-
-
-<!-- ====================================================================== -->
 ## Register protocols to handle
 
 To use Protocol Handling, declare which protocols your app handles. This is done in your app [manifest file](./web-app-manifests.md), by using the `protocol_handlers` array member.
