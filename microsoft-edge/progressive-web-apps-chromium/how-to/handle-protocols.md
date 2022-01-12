@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, protocol
-ms.date: 09/29/2021
+ms.date: 01/12/2022
 ---
 # Handle protocols in Progressive Web Apps
 
