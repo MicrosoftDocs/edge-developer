@@ -27,13 +27,13 @@ The [WebView2 control](../index.md) allows developers to host web content in the
 
     *  Set `IsWebMessageEnabled` to `false`, if you don't expect the web content to post web messages to your native application.
 
-    *  Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static html content).
+    *  Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static HTML content).
 
     *  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialog boxes.
 
 *  Update settings based on the origin of the new page:
 
-    *  To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation and then to conditionally block page or frame navigation.
+    *  To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
 
     *  When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2settings) or [CoreWebView2Settings (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2settings), as previously described.
 
