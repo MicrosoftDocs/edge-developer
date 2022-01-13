@@ -34,7 +34,7 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, go to [Swit
 
 ## 1.0.1072.54
   
-Release Date: January 13, 2022  
+Release Date: January 13, 2022
   
 [NuGet package for WebView2 SDK 1.0.1072.54](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1072.54-release)  
   
@@ -47,7 +47,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 The following items are now stable:
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2_9?view=webview2-1.0.1072.54&preserve-view=true).  This API enables:
-   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position which is the top-right corner.
+   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
    *  Programmatically open and close the default download dialog.
    *  Make changes in response to the dialog opening and closing.
 *  * The following [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1072.54&preserve-view=true) in WebView2:
@@ -104,19 +104,18 @@ The following APIs are promoted to stable in this prerelease SDK:
    *  `add_WebMessageReceived`
    *  `remove_WebMessageReceived`
 
-*  The ProcessInfo APIs provides more information about WebView2 [processes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfo?view=webview2-1.0.1133-prerelease&preserve-view=true) and [process collections](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfocollection?view=webview2-1.0.1133-prerelease&preserve-view=true).
+*  The ProcessInfo APIs provide more information about WebView2 [processes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfo?view=webview2-1.0.1133-prerelease&preserve-view=true) and [process collections](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfocollection?view=webview2-1.0.1133-prerelease&preserve-view=true).
 
 *  The [HTTP Authentication API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental10?view=webview2-1.0.1133-prerelease&preserve-view=true).
 
 #### Bug Fixes
   
-*   Fixes a bug that prevented Set-Cookies header from showing up in the WebResourceResponseReceived event.  
-*   Resolved a bug where pop-ups and owned windows would jump to a different position before closing instead of closing 
-along with the app window. This bug was only active for a very short window of time.  
+*   Fixes a bug that prevented Set-Cookies header from showing up in the `WebResourceResponseReceived` event.  
+*   Resolved a bug where pop-ups and owned windows would jump to a different position before closing instead of closing along with the app window. This bug was only active for a very short window of time.  
 *   Fixed focus issue after closing file picker dialog.  
 *   Fixed bug where Find on Page UI visibility did not change with WebView2 visibility.  
-*   Fixed bug where GetAvailableBrowserVersionString() fails to locate/load 'WebView2Loader.dll'([Issue #1236](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1236))
-*   Fixed size and position of the new window created with window.open when NewWindowRequested event was not 
+*   Fixed bug where `GetAvailableBrowserVersionString()` fails to locate/load 'WebView2Loader.dll'([Issue #1236](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1236))
+*   Fixed size and position of the new window created with window.open when `NewWindowRequested` event was not 
 handled.([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1343))
 *   Fixed bug where mini menu was still displaying on selected text when context menus were disabled. This change is Runtime-specific.([Issue #1345](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1345))
 *   Fixed bug where focus returns to wrong location after switching apps in WinForms.   -->
