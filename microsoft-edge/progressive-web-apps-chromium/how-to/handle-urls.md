@@ -136,7 +136,7 @@ To test URL handling on DevTools Tips:
 *  Enter a URL to one of the tips on the site such as https://devtoolstips.org/tips/en/find-css-changes/
 *  Press `Enter`.
 
-Windows knows that your app is registered to handle this URL and asks you to choose which app you want to use. Select the DevTools Tips apps. You can also select **Remember my choice** to avoid seeing this dialog every time.
+Windows knows that your app can handle URLs, but since there may be other apps that can too, it asks you to choose which one you want to use. Select the **DevTools Tips** apps. If you want to avoid seeing this dialog every time, select **Remember my choice**.
 
 :::image type="content" source="../media/devtools-tips-url-handling-app-selection.png" alt-text="Selecting an application to handle URLs on Windows.":::
 
