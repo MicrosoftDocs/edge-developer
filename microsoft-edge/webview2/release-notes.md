@@ -28,13 +28,13 @@ WebView2 bug fixes are either Runtime-specific or SDK-specific.
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a prerelease SDK along with a Microsoft Edge preview channel, navigate to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
+To use a prerelease SDK along with a Microsoft Edge preview channel, go to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
 
 <!-- ====================================================================== -->
 
 ## 1.0.1072.54
   
-Release Date: January 10, 2022  
+Release Date: January 13, 2022  
   
 [NuGet package for WebView2 SDK 1.0.1072.54](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1072.54-release)  
   
@@ -45,11 +45,11 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 #### Promotions
   
 The following items are now stable:
-*  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
+*  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2_9?view=webview2-1.0.1072.54&preserve-view=true).  This API enables:
-   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
-   *  Programmatically opening and closing the default download dialog.
-   *  Making changes in response to the dialog opening and closing.
+   *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position which is the top-right corner.
+   *  Programmatically open and close the default download dialog.
+   *  Make changes in response to the dialog opening and closing.
 *  * The following [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1072.54&preserve-view=true) in WebView2:
    *  `PostWebMessageAsJson`
    *  `PostWebMessageAsString`
@@ -71,34 +71,28 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 #### Experimental Features
 
 *  Added support for theming:
-ICoreWebView2ExperimentalProfile2
- (ADDED)
-     get_PreferredColorScheme
-     put_PreferredColorScheme
+   * `ICoreWebView2ExperimentalProfile2` (ADDED)
+      * `get_PreferredColorScheme`
+      * `put_PreferredColorScheme`
 
 *  Added a way to set default download path:
-ICoreWebView2ExperimentalProfile3 
-(ADDED)
-     get_DefaultDownloadFolderPath
-     put_DefaultDownloadFolderPath
+   * `ICoreWebView2ExperimentalProfile3` (ADDED)
+      * `get_DefaultDownloadFolderPath`
+      * `put_DefaultDownloadFolderPath`
 
 *  Added support for clearing browser data:
-ICoreWebView2ExperimentalProfile4 
-(ADDED)
-     ClearBrowsingData
-     ClearBrowsingDataInTimeRange
-     ClearBrowsingDataAll
-ICoreWebView2ExperimentalClearBrowsingDataCompletedHandler
- (ADDED)
+   * `ICoreWebView2ExperimentalProfile4` (ADDED)
+      * `ClearBrowsingData`
+      * `ClearBrowsingDataInTimeRange`
+      * `ClearBrowsingDataAll`
+   * `ICoreWebView2ExperimentalClearBrowsingDataCompletedHandler` (ADDED)
 
 *  Added permission requested support for iframes:
-ICoreWebView2ExperimentalFrame3 
-(ADDED)
-     add_PermissionRequested
-     remove_PermissionRequested
-ICoreWebView2ExperimentalFramePermissionRequestedEventHandler
- (ADDED)
-ICoreWebView2ExperimentalPermissionRequestedEventArgs (ADDED)
+   * `ICoreWebView2ExperimentalFrame3` (ADDED)
+      * `add_PermissionRequested`
+      * `remove_PermissionRequested`
+   * `ICoreWebView2ExperimentalFramePermissionRequestedEventHandler` (ADDED)
+   * `ICoreWebView2ExperimentalPermissionRequestedEventArgs` (ADDED)
 
 #### Promotions
 
