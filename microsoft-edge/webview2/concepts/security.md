@@ -11,23 +11,40 @@ ms.date: 10/14/2020
 ---
 # Best practices for developing secure WebView2 applications
 
-The [WebView2 control](../index.md) allows developers to host web content in the native applications. When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, sharing code cross-platform, and so on.  To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application.
+The [WebView2 control](../index.md) allows developers to host web content in the native applications.  When used correctly, hosting web content offers several advantages, such as using web-based UI, accessing features of the web platform, sharing code cross-platform, and so on.  To avoid vulnerabilities that can arise from hosting web content, make sure to design your WebView2 application to closely monitor interactions between the web content and the host application.
 
-1.  Treat all web content as insecure.
-    *   Validate web messages and host object parameters before consuming each, because web messages and parameters can be malformed (unintentionally or maliciously) and cause the app to behave unexpectedly.
-    *   Always check the origin of the document running inside WebView2 and assess the trustworthiness of the content.
-1.  Design specific web messages and host object interactions instead of using generic proxies.
-1.  Set the following options to restrict web content functionality by modifying [ICoreWebView2Settings (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2settings) or [CoreWebView2Settings (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2settings).
-    *   Set `AreHostObjectsAllowed` to `false`, if you do not expect the web content to access host objects.
-    *   Set `IsWebMessageEnabled` to `false`, if you do not expect the web content to post web messages to your native application.
-    *   Set `IsScriptEnabled` to `false`, if you do not expect the web content to run scripts (for example, when showing static html content).
-    *   Set `AreDefaultScriptDialogsEnabled` to `false`, if you do not expect the web content to show `alert` or `prompt` dialog boxes.
-1.	In the following steps, use the `NavigationStarting` and `FrameNavigationStarting` events to update settings based on the origin of the new page.
-    1.	To prevent your application from navigating to certain pages, use the events to check and then block page or frame navigation.
-    1.	When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2settings) or [CoreWebView2Settings (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2settings) as previously described.
-1.  When navigating to a new document, use the `ContentLoading` event to remove exposed host objects using `RemoveHostObjectFromScript`.
+*  Treat all web content as insecure:
 
-<!--## Security
+    *  Validate web messages and host object parameters before consuming them, because web messages and parameters can be malformed (unintentionally or maliciously) and can cause the app to behave unexpectedly.
+
+    *  Always check the origin of the document that's running inside WebView2, and assess the trustworthiness of the content.
+
+*  Design specific web messages and host object interactions, instead of using generic proxies.
+
+*  Set the following options to restrict web content functionality, by modifying [ICoreWebView2Settings (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2settings) or [CoreWebView2Settings (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2settings):
+
+    *  Set `AreHostObjectsAllowed` to `false`, if you don't expect the web content to access host objects.
+
+    *  Set `IsWebMessageEnabled` to `false`, if you don't expect the web content to post web messages to your native application.
+
+    *  Set `IsScriptEnabled` to `false`, if you don't expect the web content to run scripts (for example, when showing static HTML content).
+
+    *  Set `AreDefaultScriptDialogsEnabled` to `false`, if you don't expect the web content to show `alert` or `prompt` dialog boxes.
+
+*  Update settings based on the origin of the new page:
+
+    *  To prevent your application from navigating to certain pages, use the `NavigationStarting` and `FrameNavigationStarting` events to check page or frame navigation, and then conditionally block the navigation.
+
+    *  When navigating to a new page, you may need to adjust the property values on [ICoreWebView2Settings (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2settings) or [CoreWebView2Settings (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2settings), as previously described.
+
+*  When navigating to a new document, use the `ContentLoading` event and `RemoveHostObjectFromScript` to remove exposed host objects.
+
+*  WebView2 cannot be run as a system user.  This restriction blocks scenarios such as building a Credential Provider.
+
+
+<!-- ====================================================================== -->
+<!--
+## Security
 
 Always check the Source property of the WebView before using `ExecuteScript`, `PostWebMessageAsJson`, `PostWebMessageAsString`, or any other method to send information into the WebView. The WebView may have navigated to another page via the end user interacting with the page or script in the page causing navigation. Similarly, be very careful with `AddScriptToExecuteOnDocumentCreated`. All future `navigations` run the same script and if it provides access to information intended only for a certain origin, any HTML document may have access.
 
