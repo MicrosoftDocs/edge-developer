@@ -50,7 +50,7 @@ The following items are now stable:
    *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
    *  Programmatically open and close the default download dialog.
    *  Make changes in response to the dialog opening and closing.
-*  * The following [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1072.54&preserve-view=true) in WebView2:
+*  The following [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1072.54&preserve-view=true) in WebView2:
    *  `PostWebMessageAsJson`
    *  `PostWebMessageAsString`
    *  `add_WebMessageReceived`
