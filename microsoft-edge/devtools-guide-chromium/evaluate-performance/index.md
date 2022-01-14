@@ -1,12 +1,12 @@
 ---
-description: Learn how to evaluate runtime performance in Microsoft Edge DevTools.
 title: Get started with analyzing Runtime performance
+description: How to evaluate runtime performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,7 +24,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 # Get started with analyzing Runtime performance
 
 > [!NOTE]
-> To learn how to make your pages load faster, navigate to [Optimize Website Speed](../speed/get-started.md).
+> To learn how to make your pages load faster, see [Optimize website speed](../speed/get-started.md).
 
 Runtime performance is how your page performs when it is running, as opposed to loading.  The following tutorial article teaches you how to use the Microsoft Edge DevTools Performance panel to analyze runtime performance.  In terms of the **RAIL** model, the skills you learn in this tutorial are useful for analyzing the Response, Animation, and Idle phases of your page.
 

@@ -1,15 +1,15 @@
 ---
-title: Use a Web App Manifest to integrate a Progressive Web App into the Operating System
-description: Learn how to use the Web App Manifest to integrate your Progressive Web App into your operating system.
+title: Use a Web App Manifest to integrate a Progressive Web App into the operating system
+description: How to use the Web App Manifest to integrate your Progressive Web App into your operating system.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+ms.date: 01/07/2021
 ---
-# Use a Web App Manifest to integrate a Progressive Web App into the Operating System
+# Use a Web App Manifest to integrate a Progressive Web App into the operating system
 
 A Web App Manifest of a website governs how your Progressive Web App (PWA) looks and behaves when installed on a device. The Web App Manifest provides information such as the name of your app, the file location of icons that represent your app in system menus, and the theme colors that the operating system (OS) uses in the title bar.
 

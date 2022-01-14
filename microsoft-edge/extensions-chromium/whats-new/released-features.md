@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge Add-ons released features provides information about features launched on Partner Center for extension developers.
 title: Microsoft Edge Add-ons released features
+description: Microsoft Edge Add-ons released features provides information about features launched on Partner Center for extension developers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, add-ons released features, add-ons new features, add-ons features launched
+ms.date: 11/24/2021
 ---
 # Microsoft Edge Add-ons released features
 

@@ -1,12 +1,12 @@
 ---
-description: Use the Issues tool to identify and fix problems with the current webpage.
 title: Find and fix problems using the Issues tool
+description: Use the Issues tool to identify and fix problems with the current webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/24/2021
 ---
 <!-- Copyright Sam Dutton
 

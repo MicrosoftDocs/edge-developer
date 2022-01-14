@@ -1,13 +1,13 @@
 ---
-description: About Panel and Drawer tools.
 title: About Panel and Drawer tools
+description: About Panel and Drawer tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 10/07/2021
 ---
 # About Panel and Drawer tools
 

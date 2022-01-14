@@ -1,12 +1,12 @@
 ---
+title: Visual Studio Code overview
 description: Microsoft Edge and Visual Studio Code.
-title: Visual Studio Code
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools, vs code, visual studio code, debugger, webhint
+ms.date: 08/24/2021
 ---
 # Visual Studio Code overview
 

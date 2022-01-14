@@ -1,12 +1,12 @@
 ---
-description: Check for contrast issues with dark theme and light theme (for dark mode and light mode) using the \"Emulate CSS media feature prefers-color-scheme\" dropdown list in the Rendering tool.
 title: Check for contrast issues with dark theme and light theme
+description: Check for contrast issues with dark theme and light theme (for dark mode and light mode) using the \"Emulate CSS media feature prefers-color-scheme\" dropdown list in the Rendering tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Check for contrast issues with dark theme and light theme
 

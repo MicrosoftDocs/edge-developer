@@ -1,14 +1,14 @@
 ---
+title: Verify that a page is usable with blurred vision
 description: To verify that a webpage is usable with blurred vision, in the Rendering tool, use the Emulate vision deficiencies dropdown list.
-title: Verify that the page is usable with blurred vision
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
-# Verify that the page is usable with blurred vision
+# Verify that a page is usable with blurred vision
 
 <!-- Rendering tool: Emulate vision deficiencies: Blurred vision -->
 

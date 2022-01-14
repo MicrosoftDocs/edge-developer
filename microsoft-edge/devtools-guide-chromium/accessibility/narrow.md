@@ -1,12 +1,12 @@
 ---
-description: Verifying that the webpage layout is usable when narrow, as part of accessibility testing.
 title: Verify that the webpage layout is usable when narrow
+description: Verifying that the webpage layout is usable when narrow, as part of accessibility testing.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/19/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 10/19/2021
 ---
 # Verify that the webpage layout is usable when narrow
 

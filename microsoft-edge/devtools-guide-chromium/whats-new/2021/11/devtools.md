@@ -1,12 +1,12 @@
 ---
-description: Focus Mode and a vertical Activity Bar.  Auto-minimizing of the Console.  Display a webpage in Visual Studio Code, emulate devices, and see issues while editing.  Sources tool notifies you when sourcemaps can't be loaded.  If Sources is open, it's used rather than Visual Studio Code.
 title: What's new in DevTools (Microsoft Edge 96)
+description: Focus Mode and a vertical Activity Bar.  Auto-minimizing of the Console.  Display a webpage in Visual Studio Code, emulate devices, and see issues while editing.  Sources tool notifies you when sourcemaps can't be loaded.  If Sources is open, it's used rather than Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/16/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 11/16/2021
 ---
 # What's New in DevTools (Microsoft Edge 96)
 

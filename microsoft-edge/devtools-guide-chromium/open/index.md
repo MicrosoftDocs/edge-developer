@@ -1,12 +1,12 @@
 ---
-description: All of the ways that you open the Microsoft Edge DevTools.
 title: Open Microsoft Edge DevTools
+description: All of the ways that you can open Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/01/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 07/01/2021
 ---
 <!-- Copyright Kayce Basques
 

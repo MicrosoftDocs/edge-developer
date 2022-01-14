@@ -1,12 +1,12 @@
 ---
-description: Analyzing the lack of indication of keyboard focus in a sidebar menu, due to lacking a CSS pseudo-class rule for the focus state on a link, combined with the link having no outline setting.
 title: Analyze the lack of indication of keyboard focus in a sidebar menu
+description: Analyzing the lack of indication of keyboard focus in a sidebar menu, due to lacking a CSS pseudo-class rule for the focus state on a link, combined with the link having no outline setting.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Analyze the lack of indication of keyboard focus in a sidebar menu
 

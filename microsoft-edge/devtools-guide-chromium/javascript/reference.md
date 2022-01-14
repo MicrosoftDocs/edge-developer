@@ -1,12 +1,12 @@
 ---
-description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
 title: Use the debugger features
+description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -25,7 +25,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 
 This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints](./breakpoints.md).
 
-To learn the basics of debugging, navigate to [Get started with debugging JavaScript in Microsoft Edge DevTools](./index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
+To learn the basics of debugging, see [Get started with debugging JavaScript](./index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
 
 
 <!-- ====================================================================== -->
@@ -341,9 +341,9 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 <!-- ====================================================================== -->
 ## See also
 
-*  [Get Started With Debugging JavaScript In Microsoft Edge DevTools](./index.md) - A simple, short tutorial using existing code, with screen captures.
+*  [Get Started With Debugging JavaScript](./index.md) - A simple, short tutorial using existing code, with screen captures.
 *  [Sources tool overview](../sources/index.md) - The **Sources** tool includes the JavaScript debugger and editor.
-*  [Disable JavaScript with Microsoft Edge DevTools](./disable.md).
+*  [Disable JavaScript](./disable.md).
 
 
 <!-- ====================================================================== -->

@@ -1,13 +1,13 @@
 ---
-description: Get to know the Microsoft Edge Developer Tools
 title: Microsoft Edge Developer Tools overview
+description: Get to know the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, f12 tools, devtools, microsoft edge developer tools
+ms.date: 09/23/2021
 ---
 # Microsoft Edge Developer Tools overview
 

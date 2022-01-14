@@ -1,12 +1,12 @@
 ---
-description: How to apply different color themes to Microsoft Edge DevTools.
 title: Apply color themes to DevTools
+description: How to apply different color themes to Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 08/03/2021
 ---
 <!-- Copyright Kayce Basques
    Licensed under the Apache License, Version 2.0 (the "License");

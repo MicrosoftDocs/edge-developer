@@ -3,7 +3,7 @@ title: Console Utilities API reference
 description: A reference of convenience commands available in the Microsoft Edge DevTools Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/04/2021

@@ -1,13 +1,13 @@
 ---
-description: Version Models used for Microsoft Edge WebView2
 title: Understand WebView2 SDK versions
+description: Version models used for Microsoft Edge WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/03/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 08/03/2021
 ---
 # Understand WebView2 SDK versions
 
@@ -53,7 +53,7 @@ For more information about automatic updating of the Evergreen Runtime, navigate
 <!-- ====================================================================== -->
 ## Release cadence
 
-New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge browser, which has been approximately every six weeks.  This cadence is planned to change to every four weeks starting with Microsoft Edge version 94.
+New versions of the WebView2 SDK are shipped at the same general cadence as the Microsoft Edge browser, which is approximately every four weeks.
 
 
 <!-- ====================================================================== -->
