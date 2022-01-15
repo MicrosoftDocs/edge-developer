@@ -31,10 +31,9 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 To use a prerelease SDK along with a Microsoft Edge preview channel, go to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
 
 <!-- ====================================================================== -->
-
 ## 1.0.1072.54
   
-Release Date: January 13, 2022
+Release Date: January 13, 2022  
   
 [NuGet package for WebView2 SDK 1.0.1072.54](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1072.54)  
   
@@ -45,19 +44,14 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 #### Promotions
   
 The following items are now stable:
-*  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
-*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2_9?view=webview2-1.0.1072.54&preserve-view=true) enables:
+*  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
+*  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2_9?view=webview2-1.0.1072.54&preserve-view=true).  This API enables:
    *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
-   *  Programmatically open and close the default download dialog.
+   *  Programmatically opening and closing the default download dialog.
    *  Making changes in response to the dialog opening and closing.
-*  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1072.54&preserve-view=true):
-   *  `PostWebMessageAsJson`
-   *  `PostWebMessageAsString`
-   *  `add_WebMessageReceived`
-   *  `remove_WebMessageReceived`
 
 <!-- ====================================================================== -->
-<!-- 
+
 ## 1.0.1133-prerelease
   
 Release Date: January 13, 2022  
@@ -70,29 +64,10 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental Features
 
-*  Added support for theming:
-   * `ICoreWebView2ExperimentalProfile2` (ADDED)
-      * `get_PreferredColorScheme`
-      * `put_PreferredColorScheme`
-
-*  Added a way to set default download path:
-   * `ICoreWebView2ExperimentalProfile3` (ADDED)
-      * `get_DefaultDownloadFolderPath`
-      * `put_DefaultDownloadFolderPath`
-
-*  Added support for clearing browser data:
-   * `ICoreWebView2ExperimentalProfile4` (ADDED)
-      * `ClearBrowsingData`
-      * `ClearBrowsingDataInTimeRange`
-      * `ClearBrowsingDataAll`
-   * `ICoreWebView2ExperimentalClearBrowsingDataCompletedHandler` (ADDED)
-
-*  Added permission requested support for iframes:
-   * `ICoreWebView2ExperimentalFrame3` (ADDED)
-      * `add_PermissionRequested`
-      * `remove_PermissionRequested`
-   * `ICoreWebView2ExperimentalFramePermissionRequestedEventHandler` (ADDED)
-   * `ICoreWebView2ExperimentalPermissionRequestedEventArgs` (ADDED)
+*  Added support for [theming](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile2?view=webview2-1.0.1133-prerelease&preserve-view=true) (overall color scheme - light, dark, system) of WebView2.
+*  Added a way to set [default download path](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile3?view=webview2-1.0.1133-prerelease&preserve-view=true).
+*  Added support for [clearing browser data](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4?view=webview2-1.0.1133-prerelease&preserve-view=true).
+*  Added [permission requested](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalframe3?view=webview2-1.0.1133-prerelease&preserve-view=true) support for iframes.
 
 #### Promotions
 
@@ -103,22 +78,22 @@ The following APIs are promoted to stable in this prerelease SDK:
    *  `PostWebMessageAsString`
    *  `add_WebMessageReceived`
    *  `remove_WebMessageReceived`
-
-*  The ProcessInfo APIs provide more information about WebView2 [processes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfo?view=webview2-1.0.1133-prerelease&preserve-view=true) and [process collections](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfocollection?view=webview2-1.0.1133-prerelease&preserve-view=true).
-
+*  The ProcessInfo APIs provides more information about WebView2 [processes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfo?view=webview2-1.0.1133-prerelease&preserve-view=true) and [process collections](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfocollection?view=webview2-1.0.1133-prerelease&preserve-view=true).
 *  The [HTTP Authentication API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental10?view=webview2-1.0.1133-prerelease&preserve-view=true).
 
 #### Bug Fixes
   
-*   Fixes a bug that prevented Set-Cookies header from showing up in the `WebResourceResponseReceived` event.  
-*   Resolved a bug where pop-ups and owned windows would jump to a different position before closing instead of closing along with the app window. This bug was only active for a very short window of time.  
+*   Fixed a bug that prevented Set-Cookies header from showing up in the `WebResourceResponseReceived` event.  
+*   Resolved a bug where pop-ups and owned windows would jump to a different position before closing instead of closing 
+along with the app window. This bug was only active for a very short window of time.  
 *   Fixed focus issue after closing file picker dialog.  
 *   Fixed bug where Find on Page UI visibility did not change with WebView2 visibility.  
-*   Fixed bug where `GetAvailableBrowserVersionString()` fails to locate/load 'WebView2Loader.dll'([Issue #1236](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1236))
-*   Fixed size and position of the new window created with window.open when `NewWindowRequested` event was not 
-handled.([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1343))
+*   Fixed bug where `GetAvailableBrowserVersionString()` fails to locate/load `WebView2Loader.dll` ([Issue #1236](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1236))
+*   Fixed size and position of the new window created with window.open when NewWindowRequested event was not 
+handled. ([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1343))
 *   Fixed bug where mini menu was still displaying on selected text when context menus were disabled. This change is Runtime-specific.([Issue #1345](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1345))
-*   Fixed bug where focus returns to wrong location after switching apps in WinForms.   -->
+*   Fixed bug where focus returns to wrong location after switching apps in WinForms.   
+
 
 <!-- ====================================================================== -->
 
