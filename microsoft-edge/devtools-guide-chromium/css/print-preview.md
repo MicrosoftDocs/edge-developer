@@ -37,7 +37,21 @@ The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries
     > [!div class="mx-imgBorder"]
     > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
 
-From here, you may display and change your CSS, like any other web page.  See [Get started viewing and changing CSS](./index.md).
+From here, you can display and change your CSS, like any other web page.  See [Get started viewing and changing CSS](./index.md).
+
+
+<!-- ====================================================================== -->
+## See also
+
+The Rendering tool also is used for the following:
+
+* [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)
+* [Verify that a page is usable by people with color blindness](../accessibility/test-color-blindness.md)
+* [Verify that a page is usable with blurred vision](../accessibility/test-blurred-vision.md)
+* [Verify that a page is usable with UI animation turned off](../accessibility/test-reduced-ui-motion.md)
+* [Emulate vision deficiencies](../accessibility/emulate-vision-deficiencies.md)
+* [Emulate dark or light schemes in the rendered page](../accessibility/preferred-color-scheme-simulation.md)
+* [Simulate reduced motion](../accessibility/reduced-motion-simulation.md)
 
 
 <!-- ====================================================================== -->

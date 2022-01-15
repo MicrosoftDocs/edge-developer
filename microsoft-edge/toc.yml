@@ -88,9 +88,6 @@
                 - name: Inspect CSS Grid
                   href: devtools-guide-chromium/css/grid.md
                   displayName: Elements tool
-                - name: Force print preview mode
-                  href: devtools-guide-chromium/css/print-preview.md
-                  displayName: Elements tool
                 - name: Edit CSS font styles and settings in the Styles pane # added article
                   href: devtools-guide-chromium/inspect-styles/edit-fonts.md
                   displayName: Elements tool
@@ -372,9 +369,12 @@
             #       href: devtools-guide-chromium/recorder/recorder-tool.md # pending
             #       displayName: Recorder tool
 # Rendering tool --------------------------------------------------------------
-            #   articles are in Accessibility section
-            # - name: Rendering tool
-            #   items:
+            #   some articles are in Accessibility section
+            - name: Rendering tool
+              items:
+                - name: Force print preview mode
+                  href: devtools-guide-chromium/css/print-preview.md
+                  displayName: Rendering tool
 # Search tool -----------------------------------------------------------------
             - name: Search tool
               items:
