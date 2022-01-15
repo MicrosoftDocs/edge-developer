@@ -23,21 +23,23 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Force print preview mode
 
-The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) controls how your page looks when printed.  To force your page into print preview mode:
+The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) controls how a page looks when printed.  To force a page into print preview mode:
 
-1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Opening the command menu](../media/print-preview-open-command-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Opening the command menu](../media/print-preview-open-command-menu.png)
 
-1.  Type `rendering`, select the **Show Rendering** option, and press `Enter`.
-1.  The **Rendering** panel opens in the **Drawer**.
-1.  Under **Emulate CSS media type**, choose **print**.
+1. Type `rendering`, select **Show Rendering**, and then press `Enter`.
 
-    > [!div class="mx-imgBorder"]
-    > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
+   The **Rendering** panel opens in the **Drawer**.
 
-From here, you may display and change your CSS, like any other web page.  Navigate to [Get Started With Viewing And Changing CSS](./index.md).
+1. Under **Emulate CSS media type**, select **print**.
+
+   > [!div class="mx-imgBorder"]
+   > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
+
+From here, you can display and change your CSS, like any other web page.  See [Get started viewing and changing CSS](./index.md).
 
 
 <!-- ====================================================================== -->
