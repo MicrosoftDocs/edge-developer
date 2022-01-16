@@ -1,13 +1,13 @@
 ---
 title: Distribute a WebView2 app and the WebView2 Runtime
-description: Distribution options when releasing an app using Microsoft Edge WebView2.
+description: Distribution options when releasing an app using Microsoft Edge WebView2
 author: MSEdgeTeam
 ms.author: msedgedevrel
+ms.date: 12/30/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
-ms.date: 08/03/2021
 ---
 # Distribute a WebView2 app and the WebView2 Runtime
 
@@ -76,6 +76,10 @@ The Evergreen distribution mode is recommended for most apps.
 When distributing your WebView2 app, make sure that the WebView2 Runtime is present on the client machine.  This requirement applies to both the Evergreen and Fixed Version distribution modes.
 
 If you want to use the Fixed Version distribution mode, you can skip the next couple of sections and navigate to [Details about the Fixed Version runtime distribution mode](#details-about-the-fixed-version-runtime-distribution-mode).
+
+### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
+
+Refer to the Windows Server Update Services (WSUS) section of the [Managing WebView2 applications](enterprise.md#windows-server-update-services-wsus) article.
 
 ### Runtime or browser support during development or production
 
@@ -274,7 +278,8 @@ To use the Fixed Version distribution mode:
             Permission for PlayReady
         :::image-end:::
 
-### Files to ship with the app
+<!-- ====================================================================== -->
+## Files to ship with the app
 
 The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture.
 
