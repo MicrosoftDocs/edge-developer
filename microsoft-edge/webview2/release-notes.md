@@ -32,17 +32,17 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, go to [Swit
 
 <!-- ====================================================================== -->
 ## 1.0.1072.54
-  
-Release Date: January 13, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1072.54](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1072.54)  
-  
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 97.1072.54 or higher.  
+
+Release Date: January 13, 2022
+
+[NuGet package for WebView2 SDK 1.0.1072.54](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1072.54)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 97.0.1072.54 or higher.
 
 ### General
 
 #### Promotions
-  
+
 The following items are now stable:
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within the WebView.
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2_9?view=webview2-1.0.1072.54&preserve-view=true).  This API enables:
@@ -53,12 +53,12 @@ The following items are now stable:
 <!-- ====================================================================== -->
 
 ## 1.0.1133-prerelease
-  
-Release Date: January 13, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1133](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1133-prerelease)  
-  
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 99.0.1133.0 or higher.  
+
+Release Date: January 13, 2022
+
+[NuGet package for WebView2 SDK 1.0.1133](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1133-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 99.0.1133.0 or higher.
 
 ### General
 
@@ -82,17 +82,17 @@ The following APIs are promoted to stable in this prerelease SDK:
 *  The [HTTP Authentication API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental10?view=webview2-1.0.1133-prerelease&preserve-view=true).
 
 #### Bug Fixes
-  
-*   Fixed a bug that prevented `Set-Cookies` header from showing up in the `WebResourceResponseReceived` event.  
-*   Resolved a bug where pop-ups and owned windows would jump to a different position before closing instead of closing 
-along with the app window. This bug was only active for a very short window of time.  
-*   Fixed focus issue after closing file picker dialog.  
-*   Fixed bug where Find on Page UI visibility did not change with WebView2 visibility.  
+
+*   Fixed a bug that prevented `Set-Cookies` header from showing up in the `WebResourceResponseReceived` event.
+*   Resolved a bug where pop-ups and owned windows would jump to a different position before closing instead of closing
+along with the app window. This bug was only active for a very short window of time.
+*   Fixed focus issue after closing file picker dialog.
+*   Fixed bug where Find on Page UI visibility did not change with WebView2 visibility.
 *   Fixed bug where `GetAvailableBrowserVersionString()` fails to locate/load `WebView2Loader.dll` ([Issue #1236](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1236))
-*   Fixed size and position of the new window created with `window.open` when `NewWindowRequested` event was not 
+*   Fixed size and position of the new window created with `window.open` when `NewWindowRequested` event was not
 handled. ([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1343))
 *   Fixed bug where mini menu was still displaying on selected text when context menus were disabled. This change is Runtime-specific.([Issue #1345](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1345))
-*   Fixed bug where focus returns to wrong location after switching apps in WinForms.   
+*   Fixed bug where focus returns to wrong location after switching apps in WinForms.
 
 
 <!-- ====================================================================== -->
@@ -192,7 +192,7 @@ Release Date: October 25, 2021
 
 [NuGet package for WebView2 SDK 1.0.1020.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1020.30)
 
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 95.1020.30 or higher.
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 95.0.1020.30 or higher.
 
 ### General
 
