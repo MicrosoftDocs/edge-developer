@@ -116,4 +116,5 @@ To detect specific versions of Windows, use the following values for `platformVe
 | Win10 2004 | 10 |
 | Win10 20H2 | 10 |
 | Win10 21H1 | 10 |
+| Win10 21H2 | 10 |
 | Win11 | 13+ |
