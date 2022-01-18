@@ -79,14 +79,14 @@
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool
               items:
+                - name: CSS features reference
+                  href: devtools-guide-chromium/css/reference.md
+                  displayName: Elements tool
                 - name: Get started with CSS
                   href: devtools-guide-chromium/beginners/css.md
                   displayName: Elements tool
                 - name: Get started viewing and changing CSS
                   href: devtools-guide-chromium/css/index.md
-                  displayName: Elements tool
-                - name: CSS features reference
-                  href: devtools-guide-chromium/css/reference.md
                   displayName: Elements tool
                 - name: Inspect CSS Grid
                   href: devtools-guide-chromium/css/grid.md
@@ -109,14 +109,14 @@
                 - name: Console overview
                   href: devtools-guide-chromium/console/index.md
                   displayName: Console tool
+                - name: Console features reference
+                  href: devtools-guide-chromium/console/reference.md
+                  displayName: Console tool
                 - name: Log messages in the Console tool
                   href: devtools-guide-chromium/console/console-log.md
                   displayName: Console tool
                 - name: Run JavaScript in the Console
                   href: devtools-guide-chromium/console/console-javascript.md
-                  displayName: Console tool
-                - name: Console features reference
-                  href: devtools-guide-chromium/console/reference.md
                   displayName: Console tool
                 - name: Console API reference
                   href: devtools-guide-chromium/console/api.md
@@ -139,6 +139,9 @@
 # Sources tool ----------------------------------------------------------------
             - name: Sources tool
               items:
+                - name: Sources tool overview
+                  href: devtools-guide-chromium/sources/index.md
+                  displayName: Quick source tool, Sources tool # Quick source tool is covered in section "Displaying source files when using a different tool"
                 - name: Get started debugging JavaScript
                   href: devtools-guide-chromium/javascript/index.md
                   displayName: Sources tool
@@ -151,12 +154,6 @@
                 - name: Run snippets of JavaScript on any webpage
                   href: devtools-guide-chromium/javascript/snippets.md
                   displayName: Sources tool
-                - name: Sources tool overview
-                  href: devtools-guide-chromium/sources/index.md
-                  displayName: Quick source tool, Sources tool # Quick source tool is covered in section "Displaying source files when using a different tool"
-                - name: View page resources
-                  href: devtools-guide-chromium/resources/index.md
-                  displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
                 - name: Edit files with Workspaces (Filesystem tab)
                   href: devtools-guide-chromium/workspaces/index.md
                   displayName: Sources tool, Quick source tool # Quick source tool is covered in section "Step 4: Save a JavaScript change to disk"
@@ -315,12 +312,15 @@
                 - name: Inspect network activity
                   href: devtools-guide-chromium/network/index.md
                   displayName: Network tool
-                - name: Network issues guide # added article
-                  href: devtools-guide-chromium/network/issues.md
-                  displayName: Network tool
                 - name: Network features reference
                   href: devtools-guide-chromium/network/reference.md
                   displayName: Network tool
+                - name: Network issues guide # added article
+                  href: devtools-guide-chromium/network/issues.md
+                  displayName: Network tool
+                - name: View page resources
+                  href: devtools-guide-chromium/resources/index.md
+                  displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
                 - name: Service Worker improvements # added article
                   href: devtools-guide-chromium/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
@@ -516,7 +516,7 @@
               items:
                 - name: Test accessibility using the Accessibility tab # was part of "Accessibility features reference"
                   href: devtools-guide-chromium/accessibility/accessibility-tab.md
-                  displayName: Elements tool, Accessibility tab, screen readers
+                  displayName: Elements tool, Accessibility tab, screen readers, Accessibility Tree, ARIA attributes, Computed Properties
                 - name: Check the Accessibility Tree for keyboard and screen reader support # added article
                   href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
                   displayName: Elements tool, Accessibility tab, screen readers
