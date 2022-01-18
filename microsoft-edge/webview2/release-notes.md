@@ -88,7 +88,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 along with the app window. This bug was only active for a very short window of time.
 *   Fixed focus issue after closing file picker dialog.
 *   Fixed bug where Find on Page UI visibility did not change with WebView2 visibility.
-*   Fixed bug where `GetAvailableBrowserVersionString()` fails to locate/load `WebView2Loader.dll` ([Issue #1236](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1236))
+*   Fixed bug where `GetAvailableBrowserVersionString()` fails to locate/load `WebView2Loader.dll`. ([Issue #1236](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1236))
 *   Fixed size and position of the new window created with `window.open` when `NewWindowRequested` event was not
 handled. ([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1343))
 *   Fixed bug where mini menu was still displaying on selected text when context menus were disabled. This change is Runtime-specific.([Issue #1345](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1345))
