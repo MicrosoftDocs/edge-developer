@@ -33,7 +33,7 @@ Finding a series of actions that consistently reproduce a bug is always the firs
 
 1.  Choose the following **Open Demo** link and open the webpage in a new tab.  To open the demo in a new tab, select and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then choose **Open Demo**.
 
-    [Open Demo](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html)
+    [Open Demo](https://microsoftedge.github.io/Demos/devtools-js-get-started/)
 
 1.  Enter `5` in the **Number 1** text box.
 1.  Enter `1` in the **Number 2** text box.

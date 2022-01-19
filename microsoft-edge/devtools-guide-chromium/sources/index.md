@@ -428,7 +428,7 @@ To troubleshoot JavaScript code, you can insert `console.log()` statements in th
 
 To use a debugger on a webpage, you typically set a breakpoint and then send a form from the webpage, as follows:
 
-1.  Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html).
+1.  Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/).
 
 1.  Select `F12` to open the **DevTools** window, and then select the **Sources** tab.
 

@@ -225,7 +225,7 @@ After recording a page, you do not need to rely solely on the **Main** section t
 *   When you want to view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) panel.
 
 > [!NOTE]
-> The next three sections all refer to the same demo.  Run the demo yourself at [Activity Tabs Demo](https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html).
+> The next three sections all refer to the same demo.  Run the demo yourself at [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/).
 
 #### Root activities
 

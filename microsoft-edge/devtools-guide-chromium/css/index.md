@@ -31,7 +31,7 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 
 1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and click **CSS Examples** to open in a new window.
 
-    [CSS Examples](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
+    [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/)
 
     > [!NOTE]
     > If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromium/customize/placement) to the right of your viewport (displayed in the following figure), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.

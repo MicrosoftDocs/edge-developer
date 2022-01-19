@@ -62,7 +62,7 @@ Choose **Clear all profiles** icon to remove snapshots (both from DevTools and a
 Closing the DevTools window does not delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
 > [!NOTE]
-> Try out this example of [scattered objects](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+> Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
 
 
 <!-- ====================================================================== -->
@@ -192,7 +192,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 > -->
 >
 > > [!NOTE]
-> > Try out this example of [why `eval` is evil](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html).
+> > Try out this example of [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html).
 >
 
 
@@ -246,7 +246,7 @@ The `#leaf` maintains a reference to the relevant parent (parentNode) and recurs
 :::image-end:::
 
 > [!NOTE]
-> Examples:  Try this example of a [leaking DOM node](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html) to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html).
+> Examples:  Try this example of a [leaking DOM node](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).
 
 To read more about DOM leaks and memory analysis fundamentals checkout [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 
