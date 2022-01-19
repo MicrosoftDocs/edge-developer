@@ -248,24 +248,24 @@ To use the Fixed Version distribution mode:
 
         *   Alternatively, use `EnsureCoreWebView2Async` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async)/[WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) to indicate the path to the Fixed Version binaries.
 
+    * For WinUI, ensure the app has access to the folder by specifying the installed location and setting the environment variable for runtime path.
+        1. One way to do so is by adding the following C# code to your app. 
+        ```csharp
+        StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+        String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\(version number)");
+        Debug.WriteLine($"Launch path [{localFolder.Path}]");
+        Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
+        Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
+        ```
+1.  Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
+
     * For WinUI this might include opening the project file (.csproj) in a code editor and add the following code snippet within the project tags:
         ```xml
         <Content Include="FixedRuntime\(version number)\\**\*.*">
         <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
         </Content>
         ```
-    2. Verify that the `bin\ **designated architecture**\Release` folder has a matching FixedRuntime\95.0.1020.53 folder with the runtime files in it
-
-1. (**WinUI Only**) Ensure the app has access to the folder by specifying the installed location and setting the environment variable for runtime path.
-    1. One way to do so is by adding the following C# code to your app. 
-    ```csharp
-    StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-    String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\(version number)");
-    Debug.WriteLine($"Launch path [{localFolder.Path}]");
-    Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
-    Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
-    ```
-1.  Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
+        Verify that the `bin\ **designated architecture**\Release` folder has a matching FixedRuntime\95.0.1020.53 folder with the runtime files in it
 
 ### Known issues for Fixed Version
 
