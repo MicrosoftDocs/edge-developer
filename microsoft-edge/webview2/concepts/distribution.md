@@ -265,7 +265,7 @@ To use the Fixed Version distribution mode:
         <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
         </Content>
         ```
-        Verify that the `bin\ **designated architecture**\Release` folder has a matching FixedRuntime\95.0.1020.53 folder with the runtime files in it
+        Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\(version number) folder with the runtime files in it.
 
 ### Known issues for Fixed Version
 
