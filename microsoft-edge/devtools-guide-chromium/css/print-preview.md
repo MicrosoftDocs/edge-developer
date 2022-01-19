@@ -43,7 +43,7 @@ From here, you can display and change your CSS, like any other web page.  See [G
 <!-- ====================================================================== -->
 ## See also
 
-The Rendering tool also is used for the following:
+The Rendering tool is also used for the following:
 
 * [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)
 * [Verify that a page is usable by people with color blindness](../accessibility/test-color-blindness.md)
