@@ -23,55 +23,55 @@
 # What's New pages ------------------------------------------------------------
             - name: Microsoft Edge 97
               href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 96
               href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 95
               href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 93
               href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
 # TOOLS =======================================================================
         - name: Tools
           items:
@@ -223,7 +223,7 @@
                   href: devtools-guide-chromium/storage/sessionstorage.md
                   displayName: Application tool
               # - name: View Application Cache data # deprecated
-              #   href: devtools-guide-chromium/storage/application.md # deprecated
+              #   href: devtools-guide-chromium/storage/application.md # deprecated feature  # keep comment for inventory while article remains in other repo's TOC
               #   displayName: Application tool
                 - name: View Web SQL data
                   href: devtools-guide-chromium/storage/websql.md
@@ -247,7 +247,7 @@
                   href: devtools-guide-chromium/coverage/index.md
                   displayName: Coverage tool
 # CSS Overview tool -----------------------------------------------------------
-            # - name: CSS Overview tool
+            # - name: CSS Overview tool  # un-comment node when add article to repo
             #   items:
             #     - name: Identify potential CSS improvements # pending
             #       href: devtools-guide-chromium/issues/index.md # pending
@@ -259,8 +259,9 @@
                   href: devtools-guide-chromium/memory-problems/dom-leaks.md
                   displayName: Detached Elements tool
 # Developer Resources tool ----------------------------------------------------
-            # - name: Developer Resources tool
+            # - name: Developer Resources tool  # un-comment node when add article or jump page to repo
             #   items:
+            #       displayName: Developer Resources tool
 # Issues tool -----------------------------------------------------------------
             - name: Issues tool
               items:
@@ -268,17 +269,15 @@
                   href: devtools-guide-chromium/issues/index.md
                   displayName: Issues tool
 # JavaScript Profiler tool ----------------------------------------------------
-            #   deprecated
-            # - name: JavaScript Profiler tool
-            #   items:
+            #   deprecated  # keep commented-out node while tool remains in More Tools menu
 # Layers tool -----------------------------------------------------------------
-            #   layers panel is wrapped by 3D View panel
-            # - name: Layers tool
+            # - name: Layers tool  # un-comment node when add article or jump page to repo
             #   items:
+            #       displayName: Layers tool
 # Lighthouse tool -------------------------------------------------------------
-            #   1 article, in Accessibility
-            # - name: Lighthouse tool
+            # - name: Lighthouse tool  # un-comment node if add article or jump page to repo  # article is in Accessibility
             #   items:
+            #       displayName: Lighthouse tool
 # Media tool ------------------------------------------------------------------
             - name: Media tool
               items:
@@ -301,7 +300,7 @@
                   href: devtools-guide-chromium/memory-problems/allocation-profiler.md
                   displayName: Memory tool
 # Memory Inspector tool -------------------------------------------------------
-            # - name: Memory Inspector tool
+            # - name: Memory Inspector tool  # un-comment node when add article to repo
             #   items:
             #     - name: Inspect JavaScript ArrayBuffer with the Memory Inspector # pending
             #       href: devtools-guide-chromium/memory-inspector/index.md # pending
@@ -325,15 +324,15 @@
                   href: devtools-guide-chromium/service-workers/index.md
                   displayName: Network tool, Application tool, Sources tool
 # Network conditions tool -----------------------------------------------------
-            #   mentioned in many articles
             - name: Network conditions tool
               items:
                 - name: Network conditions tool # new jump page
                   href: devtools-guide-chromium/network-conditions/network-conditions-tool.md
                   displayName: Network conditions tool
 # Network request blocking tool -----------------------------------------------
-            # - name: Network request blocking tool
+            # - name: Network request blocking tool  # un-comment node when add article or jump page to repo
             #   items:
+            #       displayName: Network request blocking tool
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
               items:
@@ -362,22 +361,22 @@
                   href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
                   displayName: Performance monitor tool
 # Quick source tool -----------------------------------------------------------
-            #   find elsewhere in TOC, two h2 sections
-            # - name: Quick source tool
+            # - name: Quick source tool  # un-comment node when add article or jump page to repo
             #   items:
+            #       displayName: Quick source tool  # indexed elsewhere in this file
 # Recorder tool ---------------------------------------------------------------
-            # - name: Recorder tool
+            # - name: Recorder tool  # un-comment node when add article to repo
             #   items:
             #     - name: Record, replay and measure user flows # pending
             #       href: devtools-guide-chromium/recorder/recorder-tool.md # pending
             #       displayName: Recorder tool
 # Rendering tool --------------------------------------------------------------
-            #   some articles are in Accessibility section
             - name: Rendering tool
               items:
                 - name: Force print preview mode
                   href: devtools-guide-chromium/css/print-preview.md
                   displayName: Rendering tool
+              # some articles are in Accessibility section
 # Search tool -----------------------------------------------------------------
             - name: Search tool
               items:
@@ -400,8 +399,9 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
                   displayName: Sensors tool, Device Emulation
 # WebAudio tool ---------------------------------------------------------------
-            # - name: WebAudio tool
+            # - name: WebAudio tool  # un-comment node when add article or jump page to repo
             #   items:
+            #      displayName: WebAudio tool
 # WebAuthn tool ---------------------------------------------------------------
             - name: WebAuthn tool
               items:
@@ -409,8 +409,9 @@
                   href: devtools-guide-chromium/webauthn/index.md
                   displayName: WebAuthn tool
 # Welcome tool ----------------------------------------------------------------
-            # - name: Welcome tool
+            # - name: Welcome tool  # un-comment node when add article or jump page to repo
             #   items:
+            #     displayName: Welcome tool
 # /Tools bucket
 # LOWER NON-TOOL NODES ========================================================
 # Command Menu ----------------------------------------------------------------
@@ -550,7 +551,7 @@
           href: devtools-guide-chromium/shortcuts/index.md
           displayName: Keyboard shortcuts
 # IE mode ---------------------------------------------------------------------
-        - name: Use DevTools in IE mode # added article
+        - name: Use DevTools in Internet Explorer mode (IE mode) # added article
           href: devtools-guide-chromium/ie-mode/index.md
           displayName: IE mode
 # DevTools Protocol -----------------------------------------------------------
