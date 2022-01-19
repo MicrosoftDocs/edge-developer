@@ -10,7 +10,7 @@ ms.date: 1/20/2022
 ---
 # Distribute a WebView2 app and the WebView2 Runtime
 
-When releasing an app that uses Microsoft Edge WebView2, you need distribute the WebView2 Runtime, either by distributing the automatically updated Evergreen Runtime, or by distributing a Fixed Version of the WebView2 Runtime.
+When releasing an app that uses Microsoft Edge WebView2, you need distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
 
 A WebView2 app depends on the WebView2 Runtime on client machines.  When you distribute your WebView2 app, you need to take into account how the WebView2 Runtime is distributed to and updated on client machines.
 
@@ -145,23 +145,27 @@ If you have an online-only deployment scenario where users are assumed to have i
 
 1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed.  To verify that the Runtime is installed, use either of the following approaches:
 
-    * Inspect the `pv (REG_SZ)` regkey for the WebView2 Runtime at both of the following two locations.  The `HKEY_LOCAL_MACHINE` regkey indicates per-machine install, and the `HKEY_CURRENT_USE` regkey indicates per-user install. Either will suffice for WebView2 applications. If neither regkey exists, or if exists and is `null` or an empty string, this means that the WebView2 Runtime isn't installed on the client.  Use the regkeys to detect whether the WebView2 Runtime is installed, and to get the version of the WebView2 Runtime.  Find `pv (REG_SZ)` at the following locations:
+    *  Approach 1: Inspect the `pv (REG_SZ)` regkey for the WebView2 Runtime at both of the following registry locations.  The `HKEY_LOCAL_MACHINE` regkey is used for _per-machine_ install.  The `HKEY_CURRENT_USE` regkey is used for _per-user_ install.
 
-       On 64-bit Windows:
+       For WebView2 applications, at least one of these regkeys must be present and defined.  If neither regkey exists, or if only one of these regkeys exists but its value is `null` or an empty string, this means that the WebView2 Runtime isn't installed on the client.  Inspect these regkeys to detect whether the WebView2 Runtime is installed, and to get the version of the WebView2 Runtime.  Find `pv (REG_SZ)` at the following two locations.
+
+       The two registry locations to inspect on 64-bit Windows:
 
        ```
        HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+
        HKEY_CURRENT_USER\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
        ```
 
-       On 32-bit Windows:
+       The two registry locations to inspect on 32-bit Windows:
 
        ```
        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
+
        HKEY_CURRENT_USER\Software\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}
        ```
 
-    * Or, run [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and evaluate whether the `versionInfo` is `nullptr`.  `nullptr` indicates that the WebView2 Runtime isn't installed.  This API returns version information for the WebView2 Runtime or for any installed preview channels of Microsoft Edge (Beta, Dev, or Canary).
+    * Approach 2: Run [GetAvailableCoreWebView2BrowserVersionString](/microsoft-edge/webview2/reference/win32/webview2-idl#getavailablecorewebview2browserversionstring) and evaluate whether the `versionInfo` is `nullptr`.  `nullptr` indicates that the WebView2 Runtime isn't installed.  This API returns version information for the WebView2 Runtime or for any installed preview channels of Microsoft Edge (Beta, Dev, or Canary).
 
 1. If the Runtime isn't installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
 
