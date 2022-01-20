@@ -256,7 +256,7 @@ For more information, navigate to [Feature-detecting to test whether the install
 
 For constrained environments with strict compatibility requirements, consider using the Fixed Version distribution mode.  The Fixed Version distribution mode was previously called _bring-your-own_.
 
-In the Fixed Version distribution mode, you control the timing of updating the WebView2 Runtime for your app.  You download a specific version of the WebView2 Runtime and then package it with your WebView2 app.  The WebView2 Runtime on the client isn't automatically updated.  Instead, you periodically update the WebView2 Runtime that's packaged and distributed together with your updated app.  The Fixed Version approach doesn't use a registry key for the WebView2 Runtime.
+In the Fixed Version distribution mode, you control the timing of updates to the WebView2 Runtime for your app.  You download a specific version of the WebView2 Runtime and then package it with your WebView2 app.  The WebView2 Runtime on the client isn't automatically updated.  Instead, you periodically update the WebView2 Runtime that's packaged and distributed together with your updated app.  The Fixed Version approach doesn't use a registry key for the WebView2 Runtime.
 
 The Fixed Version binaries are over 250 MB and will make your app package larger by that amount.
 
@@ -264,9 +264,9 @@ To use the Fixed Version distribution mode:
 
 1. Download the Fixed Version of the WebView2 Runtime from [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section), as a package.
 
-   The most-patched version of the latest and second-latest major release are available for download at this site.  Keep an archived copy of any versions you need.
+   The most-patched version of the latest and second-latest major releases are available for download at this site.  Keep an archived copy of any versions you need.
 
-1. Decompress the WebView2 Runtime package using the command-line command `expand {path to the package} -F:* {path to the destination folder}` or by using a decompression tool such as WinRAR.  Avoid decompressing through the File Explorer, because that approach might not generate the correct folder structure.
+1. Decompress the WebView2 Runtime package using the command-line command `expand {path to the package} -F:* {path to the destination folder}` or by using a decompression tool such as WinRAR.  Avoid decompressing through File Explorer, because that approach might not generate the correct folder structure.
 
 1. Include all of the decompressed Fixed Version binaries in your app package, to be deployed on the target machine during your app's installation.
 
@@ -280,7 +280,28 @@ To use the Fixed Version distribution mode:
 
        *  Alternatively, use `EnsureCoreWebView2Async` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async)/[WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) to indicate the path to the Fixed Version binaries.
 
+    * For WinUI, make sure the app has access to the folder by specifying the installed location and setting the environment variable for runtime path.
+
+        *  One way to do this is by adding the following C# code to your app:
+        
+        ```csharp
+        StorageFolder localFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+        String fixedPath = Path.Combine(localFolder.Path, "FixedRuntime\\(version number)");
+        Debug.WriteLine($"Launch path [{localFolder.Path}]");
+        Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
+        Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
+        ```
 1. Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
+
+    * For WinUI this might include opening the project file (.csproj) in a code editor, and then add the following code snippet within the project tags:
+
+        ```xml
+        <Content Include="FixedRuntime\(version number)\\**\*.*">
+        <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
+        </Content>
+        ```
+
+        Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\\(version number) folder with the runtime files in it.
 
 ### Known issues for Fixed Version
 
