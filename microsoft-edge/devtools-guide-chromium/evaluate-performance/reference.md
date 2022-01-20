@@ -1,5 +1,5 @@
 ---
-title: Performance features reference (Performance tool, Rendering tool)
+title: Performance features reference
 description: A reference on all the ways to record and analyze performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Performance features reference (Performance tool, Rendering tool)
+# Performance features reference
 
 This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.
 

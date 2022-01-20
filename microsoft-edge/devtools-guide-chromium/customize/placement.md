@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -25,13 +24,19 @@ ms.date: 05/04/2021
 
 By default, Microsoft Edge DevTools is docked to the right of your viewport (window).  You can also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.
 
-DevTools docked to the left side of the window:
+
+<!-- ====================================================================== -->
+## Examples of the various placements of DevTools
+
+### Dock to left
 
 :::image type="content" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="DevTools docked to the left side of the window." lightbox="../media/customize-elements-styles-right-docked.msft.png":::
 
-DevTools docked to the bottom of the window:
+### Dock to bottom
 
 :::image type="content" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="DevTools docked to the bottom of the window." lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+
+### Undock into separate window
 
 DevTools can be undocked to a separate window, which you can move to a separate monitor.  The browser then has its own dedicated window without DevTools, which has been undocked:
 

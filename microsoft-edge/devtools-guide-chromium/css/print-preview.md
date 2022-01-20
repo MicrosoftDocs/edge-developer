@@ -43,6 +43,8 @@ From here, you can display and change your CSS, like any other web page.  See [G
 <!-- ====================================================================== -->
 ## See also
 
+* [Analyze rendering performance with the Rendering tool](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_
+
 The Rendering tool is also used for the following:
 
 * [Check for contrast issues with dark theme and light theme](../accessibility/test-dark-mode.md)

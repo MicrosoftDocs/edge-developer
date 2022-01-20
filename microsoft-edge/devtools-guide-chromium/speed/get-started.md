@@ -489,12 +489,11 @@ Reduce JavaScript activity by removing the request to `mineBitcoin`:
 
 Looks like that last change caused a massive jump in performance!
 
-> [!NOTE]
-> This section provided a rather brief introduction to the Performance panel.  To learn more about how to analyze page performance, see [Performance features reference (Performance tool, Rendering tool)](../evaluate-performance/reference.md).
+This section provided a rather brief introduction to the Performance tool.  To learn more about how to analyze page performance, see [Performance features reference)](../evaluate-performance/reference.md).
 
 #### Doing less main thread work in the real world
 
-In general, the **Performance** tool is the most common way to understand what activity your site does as it loads, and find ways to remove unnecessary activity.
+The **Performance** tool is the most common way to understand what activity your site does as it loads, and to find ways to remove unnecessary activity.
 
 If you prefer an approach that feels more like `console.log()`, the [User Timing API](https://developer.mozilla.org/docs/Web/API/User_Timing_API) enables you to arbitrarily mark up certain phases of your app lifecycle, in order to track how long each of those phases takes.
 
