@@ -44,4 +44,5 @@ In the above example, the app is registered to handle the `mailto` protocol.  Wh
 <!-- ====================================================================== -->
 ## See also
 
+*  [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
 *  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)
