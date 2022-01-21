@@ -394,9 +394,9 @@ By default, Microsoft Edge Driver sends diagnostic data such as the status of th
 
 
 <!-- ====================================================================== -->
-## Known issues
+## Troubleshooting
 
-These are known issues with using WebDriver to automate Microsoft Edge.
+These are known troubleshooting considerations when using WebDriver to automate Microsoft Edge.
 
 ### Developer Tools Availability policy
 
