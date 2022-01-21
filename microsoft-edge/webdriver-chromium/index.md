@@ -207,11 +207,13 @@ const { Builder, By } = require('selenium-webdriver');
 
 * * *
 
-### Manage and Configure the Microsoft Edge Driver Service
+### Manage and configure the Microsoft Edge Driver service
 
-When you create a new `EdgeDriver` object to start a Microsoft Edge session, Selenium launches a new Microsoft Edge Driver process that the `EdgeDriver` object communicates with.  The Microsoft Edge Driver process is closed when you call the `EdgeDriver` object's `Quit` method.  This can be inefficient if you have many tests, because each test creates its own driver process and waits for the driver process to launch.  Instead, you can create a single Microsoft Edge Driver process and reuse it for multiple tests.
+When you create a new `EdgeDriver` object to start a Microsoft Edge session, Selenium launches a new Microsoft Edge Driver process that the `EdgeDriver` object communicates with.  The Microsoft Edge Driver process is closed when you call the `EdgeDriver` object's `Quit` method.  Calling the `Quit` method in each test can be inefficient if you have many tests, because each test creates its own driver process and then waits for the driver process to launch.  Instead, you can create a single Microsoft Edge Driver process and then reuse it for multiple tests.
 
-Selenium uses the `EdgeDriverService` class to manage a Microsoft Edge Driver process.  You can create an `EdgeDriverService` once before running your tests, and pass the `EdgeDriverService` object to the `EdgeDriver` constructor when creating a new `EdgeDriver` object.  When you pass an `EdgeDriverService` to the `EdgeDriver` constructor, the `EdgeDriver` object will use this `EdgeDriverService` instead of creating a new one.  You can also use `EdgeDriverService` to configure command-line options for the Microsoft Edge Driver process, as shown below.
+Selenium uses the `EdgeDriverService` class to manage a Microsoft Edge Driver process.  You can create an `EdgeDriverService` once before running your tests, and then pass this `EdgeDriverService` object to the `EdgeDriver` constructor when creating a new `EdgeDriver` object.  When you pass an `EdgeDriverService` to the `EdgeDriver` constructor, the `EdgeDriver` object will use this `EdgeDriverService`, instead of creating a new one.
+
+You can also use `EdgeDriverService` to configure command-line options for the Microsoft Edge Driver process, as shown below.
 
 The following snippet creates a new `EdgeDriverService` and enables verbose log output:
 
