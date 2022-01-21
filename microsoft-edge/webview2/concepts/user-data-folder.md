@@ -7,11 +7,21 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html, user data folder
-ms.date: 05/06/2021
+ms.date: 01/21/2022
 ---
 # Manage the user data folder
 
+As a WebView2 developer, you need to know about the user data folder, including how it's created, how it's used, and how you need to handle it.
+
 WebView2 applications interact with user data folders to store browser data, such as cookies, permissions, and cached resources.  Each instance of a WebView2 control is associated with a user data folder.  Each user data folder is unique to a user.
+
+
+<!-- ====================================================================== -->
+## Default creation location
+
+
+<!-- ====================================================================== -->
+## Specifying another location
 
 
 <!-- ====================================================================== -->
