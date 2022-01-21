@@ -209,7 +209,7 @@ const { Builder, By } = require('selenium-webdriver');
 
 ### Manage and configure the Microsoft Edge Driver service
 
-When you create a new `EdgeDriver` object to start a Microsoft Edge session, Selenium launches a new Microsoft Edge Driver process that the `EdgeDriver` object communicates with.  The Microsoft Edge Driver process is closed when you call the `EdgeDriver` object's `Quit` method.  Letting each `EdgeDriver` object manage its own driver process can be inneficient if you have many tests, because each test must wait for a new driver process to launch.  Instead, you can create a single Microsoft Edge Driver process and then reuse it for multiple tests.
+When you create a new `EdgeDriver` object to start a Microsoft Edge session, Selenium launches a new Microsoft Edge Driver process that the `EdgeDriver` object communicates with.  The Microsoft Edge Driver process is closed when you call the `EdgeDriver` object's `Quit` method.  Letting each `EdgeDriver` object manage its own driver process can be inefficient if you have many tests, because each test must wait for a new driver process to launch.  Instead, you can create a single Microsoft Edge Driver process and then reuse it for multiple tests.
 
 Selenium uses the `EdgeDriverService` class to manage a Microsoft Edge Driver process.  You can create an `EdgeDriverService` once before running your tests, and then pass this `EdgeDriverService` object to the `EdgeDriver` constructor when creating a new `EdgeDriver` object.  When you pass an `EdgeDriverService` to the `EdgeDriver` constructor, the `EdgeDriver` object will use this `EdgeDriverService`, instead of creating a new one.
 
@@ -396,7 +396,7 @@ By default, Microsoft Edge Driver sends diagnostic data such as the status of th
 <!-- ====================================================================== -->
 ## Troubleshooting
 
-These are known troubleshooting considerations when using WebDriver to automate Microsoft Edge.
+These are troubleshooting considerations when using WebDriver to automate Microsoft Edge.
 
 ### Developer Tools Availability policy
 
