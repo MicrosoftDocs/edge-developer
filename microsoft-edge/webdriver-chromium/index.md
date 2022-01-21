@@ -394,9 +394,11 @@ By default, Microsoft Edge Driver sends diagnostic data such as the status of th
 
 
 <!-- ====================================================================== -->
-## Known Issues
+## Known issues
 
-### Developer Tools Availability
+These are known issues with using WebDriver to automate Microsoft Edge.
+
+### Developer Tools Availability policy
 
 If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`,  [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/index.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
 
