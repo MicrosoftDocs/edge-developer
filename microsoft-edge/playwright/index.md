@@ -76,7 +76,7 @@ const config: PlaywrightTestConfig = {
     {
       name: 'Microsoft Edge',
       use: {
-        // Supported Microsoft Edge channels are: msedge, msedge-beta, msedge-dev, msedge-canary
+        // Supported Microsoft Edge channels are: msedge, msedge-beta, msedge-dev
         channel: 'msedge-beta',
       },
     },
