@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, remote debugging, android, surface duo
 ms.date: 03/25/2021
 ---
 # Get started with remote debugging Surface Duo emulators

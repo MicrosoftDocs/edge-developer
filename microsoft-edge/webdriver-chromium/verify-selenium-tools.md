@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
 ms.date: 01/29/2021
 ---
 # Verify downloads of Selenium Tools for Microsoft Edge

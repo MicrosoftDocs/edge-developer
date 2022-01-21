@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, Windows, theme, color, icon
 ms.date: 09/27/2021
 ---
 # Define icons and a theme color

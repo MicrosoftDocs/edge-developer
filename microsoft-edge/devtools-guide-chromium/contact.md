@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 09/29/2021
 ---
 # Contact the Microsoft Edge DevTools team

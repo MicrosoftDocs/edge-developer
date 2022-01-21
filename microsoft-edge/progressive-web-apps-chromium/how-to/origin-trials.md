@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Microsoft Edge, experimental, origin trials
 ms.date: 09/15/2021
 ---
 # Experimental features and origin trials

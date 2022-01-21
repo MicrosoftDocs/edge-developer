@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, extensions development, browser extensions, add-ons, partner center, developer
 ms.date: 08/27/2021
 ---
 # Register as a Microsoft Edge extension developer
