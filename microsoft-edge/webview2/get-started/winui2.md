@@ -1,5 +1,5 @@
 ---
-title: Get started with WebView2 in WinUI 2 apps (public preview)
+title: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 description: Get started guide with WebView2 for WinUI 2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,9 +9,9 @@ ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
 ms.date: 11/05/2021
 ---
-# Get started with WebView2 in WinUI 2 apps (public preview)
+# Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 
-In this article, you will get started creating your first WebView2 app in WinUI 2, and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
+In this article, you start creating your first WebView2 app in WinUI 2 (UWP), and learn about the main features of WebView2. For more information about individual WebView2 APIs, see [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links. Note that WinUI2 only supports UWP.
 
 > [!NOTE]
 > The [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001) takes a dependency on a prerelease WebView2 package. For full API compatibility, use a preview browser channel as your runtime such as the Beta, Dev, or Canary channel of Microsoft Edge.

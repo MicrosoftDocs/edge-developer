@@ -18,54 +18,57 @@
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
+            - name: Microsoft Edge 97
+              href: devtools-guide-chromium/whats-new/2022/01/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 96
               href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 95
               href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 93
               href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-              displayName: Welcome tool
+              displayName: what's new
 # Elements tool (default tab 2) -----------------------------------------------
         - name: CSS, HTML, and the DOM (Elements tool)
           items:
