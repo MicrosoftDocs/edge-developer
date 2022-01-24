@@ -69,12 +69,12 @@ Cases where the WebView2 runtime doesn't change the default location:
 
 To retrieve the UDF location for an existing WebView2 app, use either of the following API items:
 
-* Existing method: [CoreWebView2Environment.CreateAsync(String, String, CoreWebView2EnvironmentOptions) Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) - You can use the `userDataFolder` parameter.
+* Existing method: [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) - You can use the `userDataFolder` parameter.
 <!-- verbose link, probably don't need:
-https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync?view=webview2-dotnet-1.0.1072.54#microsoft-web-webview2-core-corewebview2environment-createasync(system-string-system-string-microsoft-web-webview2-core-corewebview2environmentoptions) -->
-* New property: [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder) - You can use this read-only property to see what the UDF was set to.  This property returns the existing UDF location.
+/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync?view=webview2-dotnet-1.0.1072.54#microsoft-web-webview2-core-corewebview2environment-createasync(system-string-system-string-microsoft-web-webview2-core-corewebview2environmentoptions) -->
+* New property: [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder) - You can use this read-only property to see what the UDF was set to.  This property returns the existing UDF location.
 <!-- verbose link, probably don't need:
-https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1072.54
+/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1072.54
 -->
 
 
@@ -100,15 +100,15 @@ Add code like the following code, such as try/catch code, to handle the error.
 
 There's a new API to query where the UDF is, so you can more easily delete the UDF, by getting the calculated value of the UDF location.
 
-*  Win32: https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment7?view=webview2-1.0.1054.31#get_userdatafolder
+*  Win32: [ICoreWebView2Environment7.get_UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2environment7?view=webview2-1.0.1054.31#get_userdatafolder)
 
 *  WPF: link tbd
 
 *  WinForms: same as the WPF link.<!--which is __-->
 
-*  WinUI 2 & WinUI3: For WinUI 2 & WinUI3, there's no such link; you have to use an environment variable instead: `WEBVIEW2_USER_DATA_FOLDER="\<folder path\>"`.  See [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+*  WinUI 2 & WinUI3: For WinUI 2 & WinUI3, there's no such link; you have to use an environment variable instead: `WEBVIEW2_USER_DATA_FOLDER="\<folder path\>"`.  See [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 <!-- verbose link, delete?
-https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1083-prerelease -->
+/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1083-prerelease -->
 
 
 <!-- ====================================================================== -->
