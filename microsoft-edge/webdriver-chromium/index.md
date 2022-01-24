@@ -80,7 +80,7 @@ If you're using [Selenium Tools for Microsoft Edge](https://github.com/microsoft
 
 1. Update your tests to use the built-in `EdgeDriver` and related classes that Selenium 4 provides instead.
 
-1. Remove all usages of the `EdgeOptions.UseChromium` property.  This property no longer exists in Selenium 4, because Selenium 4 supports Chromium-based Microsoft Edge only.
+1. Remove all usages of the `EdgeOptions.UseChromium` property.  This property no longer exists in Selenium 4, because Selenium 4 supports only Microsoft Edge (Chromium).
 
 * * *
 
