@@ -94,11 +94,11 @@ In Microsoft Edge version 96, the **Sources** tool now provides several indicati
 
 Selecting a file with the warning icon opens the file in the Sources tool with an infobar indicating that DevTools either couldn't fetch the sourcemap correctly from the server or couldn't parse the sourcemap correctly:
 
-:::image type="content" source="../../media/2021/11/source-map-not-found-buttons.png" alt-text="The Sources tool now notifies you in the Issues tab when sourcemaps can't be loaded.":::
+:::image type="content" source="../../media/2021/11/source-map-not-found-buttons.png" alt-text="Screenshot of the Sources tool displaying an issue that reads 'DevTools failed to load source map'.":::
 
 From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools:
 
-:::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="The Sources tool now notifies you in the Issues tab when sourcemaps can't be loaded.":::
+:::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="Screenshot of the Issues tool in the Drawer, displaying the issue as 'Source map not found', along with information on how to resolve this issue.":::
 
 To prevent the infobar about sourcemaps from cluttering the **Sources** tool, select the **Don't show again** button.  To prevent issues related to sourcemaps from cluttering the **Issues** tool, clear the **Include third-party issues** checkbox in the **Issues** tool.  To learn more about how DevTools fetches and parses sourcemaps, see [Map preprocessed code to source code](../../../javascript/source-maps.md).
 
