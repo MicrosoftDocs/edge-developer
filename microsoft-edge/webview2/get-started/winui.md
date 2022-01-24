@@ -294,6 +294,12 @@ Congratulations, you built your first WebView2 app!
 
 
 <!-- ====================================================================== -->
+## See also
+
+* [Manage the user data folder](../concepts/user-data-folder.md)
+
+
+<!-- ====================================================================== -->
 ## Next steps
 
 *  [WebView2 development best practices](../concepts/developer-guide.md)

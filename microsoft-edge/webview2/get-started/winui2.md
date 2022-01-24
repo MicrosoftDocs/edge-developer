@@ -165,6 +165,12 @@ Now you can change the content of the WebView2 control to add your own content.
 
 
 <!-- ====================================================================== -->
+## See also
+
+* [Manage the user data folder](../concepts/user-data-folder.md)
+
+
+<!-- ====================================================================== -->
 ## Next steps
 
 *  [WebView2 development best practices](../concepts/developer-guide.md)

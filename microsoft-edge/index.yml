@@ -208,27 +208,33 @@ conceptualContent:
         # Card
         - title: WebView2
           links:
-            - url: /microsoft-edge/webview2/index
+            - text: WebView2 overview
+              url: /microsoft-edge/webview2/index
               itemType: overview
-              text: WebView2 overview
-            - url: /microsoft-edge/webview2/get-started/win32
+
+            - text: Feature differences between Microsoft Edge and WebView2
+              url: /microsoft-edge/webview2/concepts/browser-features
+              itemType: concept
+
+            - text: WebView2 development best practices
+              url: /microsoft-edge/webview2/concepts/developer-guide
+              itemType: concept
+
+            - text: Get started with WebView2
+              url: /microsoft-edge/webview2/get-started/get-started
               itemType: get-started
-              text: Get started with WebView2 in Win32 apps
-            - url: /microsoft-edge/webview2/get-started/winforms
-              itemType: get-started
-              text: Get started with WebView2 in WinForms apps
-            - url: /microsoft-edge/webview2/get-started/winui2
-              itemType: get-started
-              text: Get started with WebView2 in WinUI 2 apps
-            - url: /microsoft-edge/webview2/get-started/winui
-              itemType: get-started
-              text: Get started with WebView2 in WinUI 3 apps
-            - url: /microsoft-edge/webview2/get-started/wpf
-              itemType: get-started
-              text: Get started with WebView2 in WPF apps
-            - url: /microsoft-edge/webview2/webview2-api-reference
+
+            - text: WebView2 sample code
+              url: /microsoft-edge/webview2/code-samples-links
+              itemType: download
+
+            - text: Release notes for WebView2 SDK
+              url: /microsoft-edge/webview2/release-notes
+              itemType: whats-new
+
+            - text: Microsoft Edge WebView2 API Reference
+              url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
-              text: Microsoft Edge WebView2 API Reference
         # Card
         - title: Test and automation
           links:

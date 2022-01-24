@@ -453,6 +453,8 @@
           href: webview2/index.md
         - name: Get started
           items:
+            - name: Get started with WebView2
+              href: webview2/get-started/get-started.md
             - name: Win32
               href: webview2/get-started/win32.md
             - name: WinForms

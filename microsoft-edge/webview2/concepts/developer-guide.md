@@ -66,7 +66,7 @@ When a new version of the runtime is available, your app can automatically take 
 <!-- ====================================================================== -->
 ## Manage the lifetime of the user data folder
 
-WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, navigate to [Managing the user data folder](../concepts/user-data-folder.md).
+WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, see [Manage the user data folder](../concepts/user-data-folder.md).
 
 
 <!-- ====================================================================== -->

@@ -117,7 +117,7 @@ The project is ready to use and build against the WebView2 API.
 
 Add a WebView2 control to the main window.
 
-Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge browser powering the control.  You may also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, user folder, browser flags, and so on, instead of using the default setting.  Upon the completion of the `CreateCoreWebView2Environment` method, run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.
+Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge browser powering the control.  You can also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, [user data folder](../concepts/user-data-folder.md), browser flags, and so on, instead of using the default setting.  Upon the completion of the `CreateCoreWebView2Environment` method, run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.
 
 In the callback, set a few more settings, resize the WebView2  to fill 100% of the parent window, and display Bing.
 
@@ -299,6 +299,12 @@ nullptr);
     :::image-end:::
 
 Congratulations, you built your first WebView2 app!
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Manage the user data folder](../concepts/user-data-folder.md)
 
 
 <!-- ====================================================================== -->
