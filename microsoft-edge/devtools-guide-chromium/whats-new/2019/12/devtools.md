@@ -33,7 +33,7 @@ The following sections are a list of announcements you may have missed from the 
 
 The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.
 
-![The Performance tool in the DevTools with keyboard navigation and screen reader improvements.](../../media/2019/12/a11y-performance-tool.msft.png)
+![The Performance tool in the DevTools with keyboard navigation and screen reader improvements..](../../media/2019/12/a11y-performance-tool.msft.png)
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights](https://aka.ms/a11yinsights) and [webhint](https://aka.ms/webhint/browser-extension) extensions for Microsoft Edge to get started.
 
@@ -68,7 +68,7 @@ Many developers use other developer tools, like StackOverflow and Visual Studio 
 
 Go to `edge://flags` and set the **Enable localized Developer Tools** flag to **Enabled**.  Also set the **Developer Tools experiments** flag to **Enabled**.  Restart Microsoft Edge and open the DevTools.  <!-- Select `F1` in the DevTools or go to Settings > Experiments and check the **Match browser language** checkbox.  -->  The DevTools match the language you use for Microsoft Edge in `edge://settings/languages`.
 
-:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The DevTools in German" lightbox="../../images/2019/12/localized-devtools.msft.png":::
+:::image type="complex" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The DevTools in German." lightbox="../../images/2019/12/localized-devtools.msft.png":::
    The DevTools in German
 :::image-end:::
 
@@ -80,7 +80,7 @@ Chromium issue [#941561](https://crbug.com/941561)
 
 The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://aka.ms/webhint).
 
-:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="The Hints tool in the DevTools when the webhint browser extension is installed" lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
+:::image type="complex" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="The Hints tool in the DevTools when the webhint browser extension is installed." lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
    The **Hints** tool in the DevTools when the webhint browser extension is installed
 :::image-end:::
 
@@ -90,7 +90,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.
 
-:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="The 3D View in the DevTools" lightbox="../../images/2019/12/3dview.msft.png":::
+:::image type="complex" source="../../images/2019/12/3dview.msft.png" alt-text="The 3D View in the DevTools." lightbox="../../images/2019/12/3dview.msft.png":::
    The **3D View** in the DevTools
 :::image-end:::
 
@@ -108,7 +108,7 @@ The DevTools team has also released some extensions for [Visual Studio Code](htt
 
 Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge ](https://aka.ms/elements4code) Visual Studio Code extension.
 
-:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension" lightbox="../../images/2019/12/elements-for-edge.msft.png":::
+:::image type="complex" source="../../images/2019/12/elements-for-edge.msft.png" alt-text="The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension." lightbox="../../images/2019/12/elements-for-edge.msft.png":::
    The **Elements** tool in Visual Studio Code using the Elements for Microsoft Edge extension
 :::image-end:::
 
@@ -118,7 +118,7 @@ For more information, check out [Elements for Microsoft Edge Visual Studio Code 
 
 With the [Debugger for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
 
-:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="The Debugger for Microsoft Edge Extension in Visual Studio Code" lightbox="../../images/2019/12/vscode-debugger.msft.png":::
+:::image type="complex" source="../../images/2019/12/vscode-debugger.msft.png" alt-text="The Debugger for Microsoft Edge Extension in Visual Studio Code." lightbox="../../images/2019/12/vscode-debugger.msft.png":::
    The Debugger for Microsoft Edge Extension in Visual Studio Code
 :::image-end:::
 
@@ -128,7 +128,7 @@ For more information, check out [how to debug Microsoft Edge from Visual Studio 
 
 The [webhint](https://aka.ms/webhint4code) Visual Studio Code extension uses `webhint` to improve your web page while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.
 
-:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code" lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
+:::image type="complex" source="../../images/2019/12/webhint-vscode-extension.msft.png" alt-text="The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code." lightbox="../../images/2019/12/webhint-vscode-extension.msft.png":::
    The webhint Visual Studio Code extension analyzing a `.tsx` file in Visual Studio Code
 :::image-end:::
 
@@ -148,7 +148,7 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 
 Tracking prevention is a unique feature in Microsoft Edge that blocks you from being tracked by a website before you visited it.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, The Microsoft Edge team added warning messages in the **Console** when a tracker is blocked.
 
-:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="Messages in the Console when tracking prevention blocks access to storage for a tracker" lightbox="../../images/2019/12/tracking-prevention.msft.png":::
+:::image type="complex" source="../../images/2019/12/tracking-prevention.msft.png" alt-text="Messages in the Console when tracking prevention blocks access to storage for a tracker." lightbox="../../images/2019/12/tracking-prevention.msft.png":::
    Messages in the **Console** when tracking prevention blocks access to storage for a tracker
 :::image-end:::
 
@@ -169,13 +169,13 @@ The **Console** now supports redeclarations of `let` and `class` statements.  Th
 
 For example, previously, when re-declaring a local variable with `let`, the Console threw an error:
 
-:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="The Console in Microsoft Edge 79 showing that the let redeclaration fails" lightbox="../../images/2019/12/letbefore.msft.png":::
+:::image type="complex" source="../../images/2019/12/letbefore.msft.png" alt-text="The Console in Microsoft Edge 79 showing that the let redeclaration fails." lightbox="../../images/2019/12/letbefore.msft.png":::
    The **Console** in Microsoft Edge 79 showing that the let re-declaration fails
 :::image-end:::
 
 Now, the Console allows the redeclaration:
 
-:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="The Console in Microsoft Edge 80 showing that the let redeclaration succeeds" lightbox="../../images/2019/12/letafter.msft.png":::
+:::image type="complex" source="../../images/2019/12/letafter.msft.png" alt-text="The Console in Microsoft Edge 80 showing that the let redeclaration succeeds." lightbox="../../images/2019/12/letafter.msft.png":::
    The **Console** in Microsoft Edge 80 showing that the let re-declaration succeeds
 :::image-end:::
 
@@ -190,7 +190,7 @@ DevTools has started to support the DWARF Debugging Standard, which means increa
 
 <!-- [TODO: Replace this image with screenshot in Edge] -->
 <!--
-:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="The new DWARF-powered WebAssembly debugging" lightbox="../../images/2019/12/wasm.msft.png":::
+:::image type="complex" source="../../images/2019/12/wasm.msft.png" alt-text="The new DWARF-powered WebAssembly debugging." lightbox="../../images/2019/12/wasm.msft.png":::
    The new DWARF-powered WebAssembly debugging
 :::image-end:::
 -->
@@ -201,7 +201,7 @@ DevTools has started to support the DWARF Debugging Standard, which means increa
 
 You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource (such as a script) caused.
 
-:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="A Request Initiator Chain in the Initiator panel" lightbox="../../images/2019/12/initiators.msft.png":::
+:::image type="complex" source="../../images/2019/12/initiators.msft.png" alt-text="A Request Initiator Chain in the Initiator panel." lightbox="../../images/2019/12/initiators.msft.png":::
    A Request Initiator Chain in the **Initiator** panel
 :::image-end:::
 
@@ -220,7 +220,7 @@ Chromium issue [#842488](https://crbug.com/842488)
 
 After you choose a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.
 
-:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="The Overview pane highlighting the inspected resource" lightbox="../../images/2019/12/overview.msft.png":::
+:::image type="complex" source="../../images/2019/12/overview.msft.png" alt-text="The Overview pane highlighting the inspected resource." lightbox="../../images/2019/12/overview.msft.png":::
    The **Overview** pane highlighting the inspected resource
 :::image-end:::
 
@@ -230,7 +230,7 @@ Chromium issue [#988253](https://crbug.com/988253)
 
 Use the new **Path** and **URL** columns in the **Network** tool to display the absolute path or full URL of each network resource.
 
-:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="The new Path and URL columns in the Network panel" lightbox="../../images/2019/12/columns.msft.png":::
+:::image type="complex" source="../../images/2019/12/columns.msft.png" alt-text="The new Path and URL columns in the Network panel." lightbox="../../images/2019/12/columns.msft.png":::
    The new Path and URL columns in the **Network** tool
 :::image-end:::
 
@@ -244,7 +244,7 @@ DevTools supports setting a custom User-Agent string through the **Network Condi
 
 The predefined User-Agent strings have been updated to reflect modern browser versions.
 
-:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="The User Agent menu in the Network Conditions panel" lightbox="../../images/2019/12/useragent.msft.png":::
+:::image type="complex" source="../../images/2019/12/useragent.msft.png" alt-text="The User Agent menu in the Network Conditions panel." lightbox="../../images/2019/12/useragent.msft.png":::
    The User Agent menu in the **Network Conditions** panel
 :::image-end:::
 
@@ -261,7 +261,7 @@ Chromium issue [#1029031](https://crbug.com/1029031)
 
 The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  For more information on the throttling UI changes, see [Audits Panel Throttling](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling).
 
-:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="The new configuration UI" lightbox="../../images/2019/12/start.msft.png":::
+:::image type="complex" source="../../images/2019/12/start.msft.png" alt-text="The new configuration UI." lightbox="../../images/2019/12/start.msft.png":::
    The new configuration UI
 :::image-end:::
 
@@ -274,7 +274,7 @@ The [Coverage](../../../coverage/index.md) tool has a new dropdown menu that let
 > [!CAUTION]
 > You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.
 
-:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="The coverage mode dropdown menu" lightbox="../../images/2019/12/modes.msft.png":::
+:::image type="complex" source="../../images/2019/12/modes.msft.png" alt-text="The coverage mode dropdown menu." lightbox="../../images/2019/12/modes.msft.png":::
    The coverage mode dropdown menu
 :::image-end:::
 
@@ -296,5 +296,5 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-80) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

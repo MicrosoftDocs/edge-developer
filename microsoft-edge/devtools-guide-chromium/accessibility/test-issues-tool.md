@@ -13,7 +13,7 @@ ms.date: 06/07/2021
 The **Issues** tool includes an **Accessibility** section that automatically reports issues such as missing alternative text on images, missing labels on form fields, and insufficient contrast of text colors.  The **Issues** tool is within the **Drawer** at the bottom of DevTools.  This article uses the accessibility-testing demo webpage to step through using the **Accessibility** section of the **Issues** tool.
 
 There are several ways to open the **Issues** tool, such as:
-*  Select the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) in the upper right of DevTools.
+*  Select the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) in the upper right of DevTools.
 *  In the **Elements** tool, in the DOM tree, **Shift+click** a wavy underline on an element.
 *  In the **Command Menu**, type `issues`, and then select **Show Issues**.
 
@@ -21,7 +21,7 @@ There are several ways to open the **Issues** tool, such as:
 <!-- ====================================================================== -->
 ## View the Accessibility section of the Issues tool
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter in DevTools, indicating how many problems there are in the current document" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         The **Issues counter** in DevTools, indicating how many problems there are in the current document
@@ -31,7 +31,7 @@ There are several ways to open the **Issues** tool, such as:
 
 1.  Select the **Issues counter**.  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
-    :::image type="complex" source="../media/a11y-testing-accessibility-issues.msft.png" alt-text="Accessibility warnings displayed in the Issues tool" lightbox="../media/a11y-testing-accessibility-issues.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-accessibility-issues.msft.png" alt-text="Accessibility warnings displayed in the Issues tool." lightbox="../media/a11y-testing-accessibility-issues.msft.png":::
         Accessibility warnings displayed in the Issues tool
     :::image-end:::
 
@@ -45,7 +45,7 @@ To check whether input fields have labels connected to them, use the **Issues** 
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  In the upper right, select the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
+1.  In the upper right, select the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
 1.  On the **Issues** tab, expand the **Accessibility** section.
 
@@ -53,7 +53,7 @@ To check whether input fields have labels connected to them, use the **Issues** 
 
 1. Select the **Open in Elements** link.
 
-    :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after selecting the link in the Issues tool" lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-inspect-problematic-element.msft.png" alt-text="Elements tool showing the problematic HTML after selecting the link in the Issues tool." lightbox="../media/a11y-testing-inspect-problematic-element.msft.png":::
         Elements tool showing the problematic HTML after selecting the link in the **Issues** tool
     :::image-end:::
 
@@ -75,7 +75,7 @@ To check whether input fields have labels connected to them, use the **Issues** 
 
 1.  In the **Issues tool**, select **Further reading** to learn more about the issue.  To open the link in a new tab, **Ctrl**+**click** the link on Windows/Linux, or **Command**+**click** the link on macOS.
 
-    :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="Link on the Issues tab pointing to more in-depth information about the issue" lightbox="../media/a11y-testing-more-information-links.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-more-information-links.msft.png" alt-text="Link on the Issues tab pointing to more in-depth information about the issue." lightbox="../media/a11y-testing-more-information-links.msft.png":::
         Link on the **Issues** tab pointing to more in-depth information about the issue
     :::image-end:::
 
@@ -93,7 +93,7 @@ To automatically check whether alt text is provided for images, use the **Issues
 
 1.  On the **Issues** tab, expand the warning `Images must have alternate text: Element has no title attribute`.  There are four instances of images that lack alt text.
 
-    :::image type="complex" source="../media/a11y-testing-images-without-alt.msft.png" alt-text="The Issues tool reporting images that are missing alternative text" lightbox="../media/a11y-testing-images-without-alt.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-images-without-alt.msft.png" alt-text="The Issues tool reporting images that are missing alternative text." lightbox="../media/a11y-testing-images-without-alt.msft.png":::
         The Issues tool reporting images that are missing alternative text
     :::image-end:::
 
@@ -109,7 +109,7 @@ To automatically check whether text colors have enough contrast, use the **Issue
 
 1.  To open the **Issues** tool, select the **Issues** counter in the upper right of DevTools.  You may receive warnings that two elements on the demo webpage don't have enough contrast.
 
-    :::image type="complex" source="../media/a11y-testing-contrast-issues.msft.png" alt-text="Contrast problems reported in the Issues tool" lightbox="../media/a11y-testing-contrast-issues.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-contrast-issues.msft.png" alt-text="Contrast problems reported in the Issues tool." lightbox="../media/a11y-testing-contrast-issues.msft.png":::
         Contrast problems reported in the Issues tool
     :::image-end:::
 
@@ -118,7 +118,7 @@ To automatically check whether text colors have enough contrast, use the **Issue
 
 1.  Select the `li.high` element.  In the rendered webpage, the **Dogs** link in the **Donate** section is highlighted, displaying a small information overlay.  This is the same overlay that appears when you hover over an element in the DOM tree in the **Elements** tool.
 
-    :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the webpage highlighted after selecting a link in the Affected Resources section" lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the webpage highlighted after selecting a link in the Affected Resources section." lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
         Element in the webpage highlighted after selecting a link in the **Affected Resources** section
     :::image-end:::
 
@@ -129,7 +129,7 @@ The DOM tree in the **Elements** tool flags issues directly in the HTML with wav
 
 1.  In the **Elements** tool, in the DOM tree, **Shift+click** the element `<input type="search">`, which has a wavy line under `input`.  The **Issues tool** is displayed, and shows the issue for that element.
 
-    :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="An element that has a wavy underline in the DOM view has an issue" lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-wavy-underlines.msft.png" alt-text="An element that has a wavy underline in the DOM view has an issue." lightbox="../media/a11y-testing-wavy-underlines.msft.png":::
         An element that has a wavy underline in the DOM view has an issue
     :::image-end:::
 

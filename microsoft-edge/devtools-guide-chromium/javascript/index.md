@@ -51,19 +51,19 @@ DevTools provides many different tools for different tasks.  Different tasks inc
 
 1.  To open the **Console** tool in DevTools, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
-    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="The Console tool" lightbox="../media/javascript-console-empty.msft.png":::
+    :::image type="complex" source="../media/javascript-console-empty.msft.png" alt-text="The Console tool." lightbox="../media/javascript-console-empty.msft.png":::
        The **Console** tool
     :::image-end:::
 
 1.  Choose the **Sources** tool.
 
-    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="The Sources tool" lightbox="../media/javascript-sources-sections.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-sections.msft.png" alt-text="The Sources tool." lightbox="../media/javascript-sources-sections.msft.png":::
        The **Sources** tool
     :::image-end:::
 
 The **Sources** tool UI has three parts.
 
-:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="The 3 parts of the Sources tool UI" lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+:::image type="complex" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="The 3 parts of the Sources tool UI." lightbox="../media/javascript-sources-sections-annotated.msft.png":::
    The 3 parts of the **Sources** tool UI
 :::image-end:::
 
@@ -99,10 +99,10 @@ In short, breakpoints may help you find and fix bugs faster than the `console.lo
 If you step back and think about how the app works, you may make an educated guess that the incorrect sum (`5 + 1 = 51`) is computed in the `click` event listener associated with the **Add Number 1 and Number 2** button.  So, you probably want to pause the code around the time that the `click` listener runs.  **Event Listener Breakpoints** let you do exactly that:
 
 1.  In the **Debugger** pane, choose **Event Listener Breakpoints** to expand the section.  DevTools reveals a list of expandable event categories, such as **Animation** and **Clipboard**.
-1.  Next to the **Mouse** event category, choose **Expand** (![Expand icon](../media/expand-icon.msft.png)).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
+1.  Next to the **Mouse** event category, choose **Expand** (![Expand icon.](../media/expand-icon.msft.png)).  DevTools reveals a list of mouse events, such as **click** and **mousedown**.  Each event has a checkbox next to it.
 1.  Choose the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.
 
-    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Choose the checkbox next to click" lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Choose the checkbox next to click." lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
        Choose the checkbox next to **click**
     :::image-end:::
 
@@ -112,7 +112,7 @@ If you step back and think about how the app works, you may make an educated gue
     if (inputsAreEmpty()) {
     ```
 
-    If you pause on a different line of code, choose **Resume Script Execution** (![Resume Script Execution](../media/resume-script-run-icon.msft.png)) until you pause on the correct line.
+    If you pause on a different line of code, choose **Resume Script Execution** (![Resume Script Execution.](../media/resume-script-run-icon.msft.png)) until you pause on the correct line.
 
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.
@@ -127,7 +127,7 @@ If you step back and think about how the app works, you may make an educated gue
 
 One common cause of bugs is when a script runs in the wrong order.  Stepping through your code allows you to walk through the runtime of your code.  You walk through one line at a time to help you figure out exactly where your code is running in a different order than you expect.  Try it now:
 
-1.  Choose **Step over next function call** (![Step over next function call](../media/step-over-icon.msft.png)).  DevTools runs the following code without stepping into it.
+1.  Choose **Step over next function call** (![Step over next function call.](../media/step-over-icon.msft.png)).  DevTools runs the following code without stepping into it.
 
     ```javascript
     if (inputsAreEmpty()) {
@@ -136,7 +136,7 @@ One common cause of bugs is when a script runs in the wrong order.  Stepping thr
     > [!NOTE]
     > DevTools skips a few lines of code.  This is because `inputsAreEmpty()` evaluates as false, so the block of code for the `if` statement does not run.
 
-1.  On the **Sources** tool of DevTools, choose **Step into next function call** (![Step into next function call](../media/step-into-icon.msft.png)) to step through the runtime of the `updateLabel()` function, one line at a time.
+1.  On the **Sources** tool of DevTools, choose **Step into next function call** (![Step into next function call.](../media/step-into-icon.msft.png)) to step through the runtime of the `updateLabel()` function, one line at a time.
 
 Reviewing one line at a time is the basic idea of stepping through code.  If you review the code in `get-started.js`, the bug is probably somewhere in the `updateLabel()` function.  Rather than stepping through every line of code, you may use another type of breakpoint to pause the code closer to the probable location of the bug.
 
@@ -153,9 +153,9 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     ```
 
 1.  On the left, the number of this particular line of code is displayed as **34**.  Choose line **34**.  DevTools displays a red icon to the left of **34**.  The red icon indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
-1.  Choose **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.
+1.  Choose **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.
 
-    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 34" lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 34." lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
        DevTools pauses on the line-of-code breakpoint on line 34
     :::image-end:::
 
@@ -169,7 +169,7 @@ The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are w
 
 If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="The Scope pane" lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="The Scope pane." lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
    The **Scope** pane
 :::image-end:::
 
@@ -178,14 +178,14 @@ If you pause on a line of code, the **Scope** pane displays the local and global
 The **Watch** pane allows you to monitor the values of variables (such as `sum`) or expressions (such as `typeof sum`).  You may store any valid JavaScript expression in a Watch Expression.
 
 1.  Choose the **Watch** pane.
-1.  Choose **Add watch expression** (![Add watch expression](../media/add-expression-icon.msft.png)).
+1.  Choose **Add watch expression** (![Add watch expression.](../media/add-expression-icon.msft.png)).
 1.  Type `typeof sum`.
 1.  Select `Enter`.  DevTools displays `typeof sum: "string"`.  The value to the right of the colon is the result of your Watch Expression.
 
 > [!NOTE]
 > In the following figure, the `typeof sum` Watch Expression is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
 
-:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch pane" lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+:::image type="complex" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch pane." lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
    The **Watch** pane
 :::image-end:::
 
@@ -209,10 +209,10 @@ The **Console** allows you to view `console.log()` output.  You can also use the
 
 We've identified a possible fix for the bug.  Next, edit the JavaScript code directly within the DevTools UI and then rerun the demo to test the fix, as follows.
 
-1.  Choose **Resume script execution** (![Resume script execution](../media/resume-script-run-icon.msft.png)).
+1.  Choose **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).
 1.  In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.
 1.  Select `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
-1.  Choose **Deactivate breakpoints** (![Deactivate breakpoints](../media/deactivate-breakpoints-button-icon.msft.png)).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set.
+1.  Choose **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set.
 1.  Try out the demo with different values.  The demo now calculates correctly.
 
 > [!CAUTION]
@@ -247,5 +247,5 @@ A couple of code stepping controls aren't explained in this article.  For more i
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

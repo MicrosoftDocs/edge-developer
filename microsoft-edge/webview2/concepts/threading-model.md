@@ -76,7 +76,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 > 1.  In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
 > 1.  Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
 
-:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="Enabling native code debugging in Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
+:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="Enabling native code debugging in Visual Studio." lightbox="../media/webview-enable-native-debug.png":::
    Enabling native code debugging in Visual Studio
 :::image-end:::
 

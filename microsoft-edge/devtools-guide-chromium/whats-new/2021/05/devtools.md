@@ -26,7 +26,7 @@ ms.date: 06/02/2021
 
 In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools isn't displayed when the DevTools viewport is narrow.  In Microsoft Edge version 92, the **Close** button in the DevTools is always present, regardless of the DevTools viewport width.
 
-:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="The Close DevTools button is now present even when the viewport is narrow" lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
+:::image type="complex" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="The Close DevTools button is now present even when the viewport is narrow." lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
    The **Close** DevTools button is now present even when the viewport is narrow
 :::image-end:::
 
@@ -43,11 +43,11 @@ To reorder the tabs on either toolbar, select and drag the tabs.
 
 The **More Tools** menu was available as an experiment in Microsoft Edge version 89, and is now always present.
 
-:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar and drawer toolbar" lightbox="../../media/2021/05/more-tools-button.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar and drawer toolbar." lightbox="../../media/2021/05/more-tools-button.msft.png":::
    The **More Tools** button on the upper toolbar and drawer toolbar
 :::image-end:::
 
-:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="The More Tools menu" lightbox="../../media/2021/05/more-tools-menu.msft.png":::
+:::image type="complex" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="The More Tools menu." lightbox="../../media/2021/05/more-tools-menu.msft.png":::
    The **More Tools** menu
 :::image-end:::
 
@@ -69,15 +69,15 @@ For example, when you are in the **Performance** tool and you hover over the **N
 
 Tabs before reformatting:
 
-:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="Tabs before reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="Tabs before reformatting." lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
 
 Tabs after reformatting:
 
-:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="Tabs after reformatting" lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
+:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="Tabs after reformatting." lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
 
 These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close.
 
-:::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="Localized DevTools with narrow tabs" lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
+:::image type="complex" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="Localized DevTools with narrow tabs." lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
    Localized DevTools with narrow tabs
 :::image-end:::
 
@@ -111,7 +111,7 @@ You can now view the order of source elements overlaid on the rendered webpage, 
 
 The order of content in an HTML document is important for search engine optimization and accessibility.  CSS allows developers to create content that looks different in its on-screen order than the order in the HTML source document.  This is an accessibility problem, because screen-reader users could get a confusing experience.
 
-:::image type="complex" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page" lightbox="../../media/2021/05/source-order-viewer.msft.png":::
+:::image type="complex" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page." lightbox="../../media/2021/05/source-order-viewer.msft.png":::
    Activating the **Source Order Viewer** shows the order of the elements in the source as overlays on the page
 :::image-end:::
 
@@ -128,7 +128,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 User-Agent Client Hints are now applied for devices in the **User agent** field in the **Network conditions** tool.  User-Agent Client Hints are a new expansion to the Client Hints API that enables you to access information about a user's browser in an ergonomic way that preserves privacy.
 
-:::image type="complex" source="../../media/2021/05/user-agent.msft.png" alt-text="User agent" lightbox="../../media/2021/05/user-agent.msft.png":::
+:::image type="complex" source="../../media/2021/05/user-agent.msft.png" alt-text="User agent." lightbox="../../media/2021/05/user-agent.msft.png":::
    User agent
 :::image-end:::
 
@@ -172,7 +172,7 @@ You can now preview and author CSS Grid layouts, using the new CSS Grid editor.
 
 When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a grid icon is displayed next to it in the **Styles** tab. Click the grid icon to display or hide the CSS grid editor. In the CSS grid editor, select any of the icons (such as `justify-content: space-around`) to preview the layout in the rendered page.  Flex layout works similarly.
 
-:::image type="complex" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS Grid editor" lightbox="../../media/2021/05/css-grid-editor.msft.png":::
+:::image type="complex" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS Grid editor." lightbox="../../media/2021/05/css-grid-editor.msft.png":::
    CSS Grid editor
 :::image-end:::
 
@@ -190,7 +190,7 @@ Refer to the example below. `const` redeclaration is supported across separate R
 *  `const` redeclaration of page scripts is not allowed in REPL scripts.
 *  `const` redeclaration within the same REPL script is not allowed (refer to variable `b`).
 
-:::image type="complex" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="Redeclaring a const variable is allowed in the console" lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
+:::image type="complex" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="Redeclaring a const variable is allowed in the console." lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
    Redeclaring a const variable is allowed in the console
 :::image-end:::
 
@@ -203,13 +203,13 @@ To review the history of this feature in the Chromium open-source project, navig
 
 To quickly view `iframe` details, you can now right-click an `iframe` element in the **Elements** tool, and then select **Show iframe details**.
 
-:::image type="complex" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe details view" lightbox="../../media/2021/05/show-iframe-details.msft.png":::
+:::image type="complex" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe details view." lightbox="../../media/2021/05/show-iframe-details.msft.png":::
    iframe details view
 :::image-end:::
 
 This displays the details about the `iframe` in the **Application** tool.  In the **Application** tool, you can examine document details, security and isolation status, permissions policy, and more, to debug potential issues.
 
-:::image type="complex" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="Frame details in the Application tool" lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
+:::image type="complex" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="Frame details in the Application tool." lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
    Frame details in the **Application** tool
 :::image-end:::
 
@@ -222,7 +222,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tab.  There are various potential causes of CORS errors.  Click to expand each issue to understand the potential causes and solutions.
 
-:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="CORS issues in the Issues tab" lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
+:::image type="complex" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="CORS issues in the Issues tab." lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
    CORS issues in the Issues tab
 :::image-end:::
 
@@ -235,7 +235,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 In the **Network** tool, the **XHR** filter is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
 
-:::image type="complex" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="The Network tool now shows Fetch/XHR instead of XHR" lightbox="../../media/2021/05/fetch-xhr.msft.png":::
+:::image type="complex" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="The Network tool now shows Fetch/XHR instead of XHR." lightbox="../../media/2021/05/fetch-xhr.msft.png":::
    The **Network** tool now shows **Fetch/XHR** instead of **XHR**
 :::image-end:::
 
@@ -250,7 +250,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 In the **Network** tool, you can now select the new **Wasm** filter to filter the WebAssembly network requests.
 
-:::image type="complex" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="Filter by Wasm" lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
+:::image type="complex" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="Filter by Wasm." lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
    Filter by Wasm
 :::image-end:::
 
@@ -263,7 +263,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 In the **Performance** tool, DevTools now displays **Compute Intersections** in the flame chart. These changes help you identify intersection observers events and debug the potential performance overhead of intersection observers.
 
-:::image type="complex" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="Compute Intersections in the Performance tool" lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
+:::image type="complex" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="Compute Intersections in the Performance tool." lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
    Compute Intersections in the **Performance** tool
 :::image-end:::
 
@@ -283,5 +283,5 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-92) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

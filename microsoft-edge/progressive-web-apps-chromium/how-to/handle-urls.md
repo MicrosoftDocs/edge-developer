@@ -33,7 +33,7 @@ URL handling is an experimental feature. To enable the URL handling experiment:
 1. Change the setting from **Default** to **Enabled**, and then click the **Restart** button.
 
    > [!div class="mx-imgBorder"]
-   > ![Enabling the 'Desktop PWA URL handling' experiment.](../media/enable-url-handling-experiment.png)
+   > ![Enabling the 'Desktop PWA URL handling' experiment..](../media/enable-url-handling-experiment.png)
 
 URL handling is an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
 
@@ -136,7 +136,7 @@ To test URL handling on the DevTools Tips demo:
 
 1. Go to the [DevTools Tips](https://devtoolstips.org/) PWA.
 
-1. Click the **App available. Install DevTools Tips** (![The 'App available. Install DevTools Tips' icon.](../media/app-available-icon.png)) icon in the Address bar to install the DevTools Tips app locally.
+1. Click the **App available. Install DevTools Tips** (![The 'App available. Install DevTools Tips' icon..](../media/app-available-icon.png)) icon in the Address bar to install the DevTools Tips app locally.
 
 1. Press `Windows logo key` + `R` to open the Windows **Run** dialog.
 
@@ -147,7 +147,7 @@ To test URL handling on the DevTools Tips demo:
 Windows knows that your app can handle URLs, but since there may be other apps that can handle URLs, Windows asks you which app to use. Select the **DevTools Tips** app. If you want to avoid seeing this dialog every time, select **Remember my choice**.
 
 > [!div class="mx-imgBorder"]
-> ![Selecting an application to handle URLs on Windows.](../media/devtools-tips-url-handling-app-selection.png)
+> ![Selecting an application to handle URLs on Windows..](../media/devtools-tips-url-handling-app-selection.png)
 
 The DevTools Tips app launches and displays the Tips page.
 

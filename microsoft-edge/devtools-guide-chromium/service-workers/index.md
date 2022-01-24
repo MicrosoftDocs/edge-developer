@@ -30,7 +30,7 @@ The experiences span three different developer tools.
 <!-- ====================================================================== -->
 ## Network
 
-:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="Service worker timeline in the Network tool" lightbox="../media/sw-network-timeline.msft.png":::
+:::image type="complex" source="../media/sw-network-timeline.msft.png" alt-text="Service worker timeline in the Network tool." lightbox="../media/sw-network-timeline.msft.png":::
    Network view
 :::image-end:::
 
@@ -54,7 +54,7 @@ To learn more about the `respondWith` fetch events, choose the dropdown arrow to
 <!-- ====================================================================== -->
 ## Application
 
-:::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="Application view" lightbox="../media/sw-application-timeline.msft.png":::
+:::image type="complex" source="../media/sw-application-timeline.msft.png" alt-text="Application view." lightbox="../media/sw-application-timeline.msft.png":::
    Application view
 :::image-end:::
 
@@ -76,7 +76,7 @@ The **Network** tool displays the network requests that went through the service
 <!-- ====================================================================== -->
 ## Sources
 
-:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM tree" lightbox="../media/sw-sources.msft.png":::
+:::image type="complex" source="../media/sw-sources.msft.png" alt-text="DOM tree." lightbox="../media/sw-sources.msft.png":::
    DOM tree
 :::image-end:::
 

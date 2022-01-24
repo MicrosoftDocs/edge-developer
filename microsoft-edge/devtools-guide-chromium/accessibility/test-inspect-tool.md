@@ -13,7 +13,7 @@ ms.date: 06/07/2021
 The **Inspect** tool displays information about individual elements as you hover over the rendered webpage, including accessibility information.
 In contrast, the **Issues** tool automatically reports issues for the entire webpage.
 
-The **Inspect** tool button (![Inspect](../media/inspect-icon.msft.png)) is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
+The **Inspect** tool button (![Inspect.](../media/inspect-icon.msft.png)) is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
 
 When the **Inspect** tool is active, hovering over any element on the rendered webpage displays the **Inspect** overlay. This overlay displays general information and accessibility information about that element.  The **Accessibility** section of the **Inspect** overlay displays information about text-color contrast, screen reader text, and keyboard support.
 
@@ -31,7 +31,7 @@ The main article about the Inspect tool is [Analyze HTML pages using the Inspect
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Select the **Inspect** (![Inspect](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** (![Inspect.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
     :::image type="complex" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="To turn on the Inspect tool, select the Inspect button" lightbox="../media/a11y-testing-basics-inspector.msft.png":::
         To turn on the **Inspect** tool, select the **Inspect** button
@@ -63,7 +63,7 @@ The bottom part of the **Inspect** overlay has an **Accessibility** section that
 
 The top part of the **Inspect** overlay, which is above the **Accessibility** section, lists the following details of the element.
 
-*   Layout type. If the element is positioned using a flexbox or grid, an icon (![Grid layout icon](../media/grid-icon.msft.png)) is displayed.
+*   Layout type. If the element is positioned using a flexbox or grid, an icon (![Grid layout icon.](../media/grid-icon.msft.png)) is displayed.
 *   Name of the element, such as `h1`, `h2`, or `div`.
 *   The dimensions of the element in pixels.
 *   The color as a color swatch (or a small, colored square) and as a string (such as `#336699`).
@@ -80,11 +80,11 @@ In addition to the information overlay, the **Inspect** tool also provides regio
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Select the **Inspect** button (![Inspect tool icon](../media/inspect-icon.msft.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
+1.  Select the **Inspect** button (![Inspect tool icon.](../media/inspect-icon.msft.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
 1.  Hover over different parts of the rendered demo webpage.  Each element in the webpage now displays with a multicolor overlay. This multicolor overlay can display nested regions inside of an element. For example, hover over the left margin of **Cats**.  The **Inspect** tool highlights several rectangular portions of the **Cats** section with different colors, showing the layout that results from the CSS flexbox definitions on your webpage.
 
-:::image type="complex" source="../media/inspect-tool-flexbox-overlay.msft.png" alt-text="Multicolor flexbox overlay and information overlay when using the Inspect tool" lightbox="../media/inspect-tool-flexbox-overlay.msft.png":::
+:::image type="complex" source="../media/inspect-tool-flexbox-overlay.msft.png" alt-text="Multicolor flexbox overlay and information overlay when using the Inspect tool." lightbox="../media/inspect-tool-flexbox-overlay.msft.png":::
     Multicolor flexbox overlay and information overlay when using the **Inspect** tool
 :::image-end:::
 
@@ -98,7 +98,7 @@ To configure the grid overlay or flexbox overlay, in the **Elements** tool, sele
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Select the **Inspect** button (![the Inspect tool](../media/inspect-icon.msft.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
+1.  Select the **Inspect** button (![the Inspect tool.](../media/inspect-icon.msft.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
 1.  Select the **Elements** tool.
 
@@ -106,7 +106,7 @@ To configure the grid overlay or flexbox overlay, in the **Elements** tool, sele
 
 1.  Now select any element within the rendered webpage.  The **Elements** tool automatically opens and displays the HTML of the element in the DOM tree. The tool also displays the applied CSS on the element in the **Styles** pane.  Selecting an element on the rendered webpage turns off the **Inspect** tool.
 
-:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="Details about the selected element are displayed in the Elements tool" lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
+:::image type="complex" source="../media/a11y-testing-basics-inspector-selected-element.msft.png" alt-text="Details about the selected element are displayed in the Elements tool." lightbox="../media/a11y-testing-basics-inspector-selected-element.msft.png":::
     Details about the selected element are displayed in the **Elements** tool
 :::image-end:::
 

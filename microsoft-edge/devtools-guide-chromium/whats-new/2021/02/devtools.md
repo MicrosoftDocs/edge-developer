@@ -37,7 +37,7 @@ Focus Mode is an experimental interface that allows you to group different tools
 
 To turn on the experiment, navigate to [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, navigate to [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md).
 
-:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="Display the Activity Bar" lightbox="../../media/2021/02/focus-mode.msft.png":::
+:::image type="complex" source="../../media/2021/02/focus-mode.msft.png" alt-text="Display the Activity Bar." lightbox="../../media/2021/02/focus-mode.msft.png":::
    Display the **Activity Bar**
 :::image-end:::
 
@@ -66,13 +66,13 @@ You may now customize the keyboard shortcut for any action in the DevTools.  To 
 
 1.  Open the DevTools, and then choose **Settings** > **Shortcuts**.
 1.  Choose the action you want to customize.
-1.  Choose the Edit (![Edit Keyboard Shortcut icon](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) icon.
+1.  Choose the Edit (![Edit Keyboard Shortcut icon.](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) icon.
 1.  Select the keys you want to bind to the action.
-1.  Choose the checkmark (![Checkmark Keyboard Shortcut icon](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) icon.
+1.  Choose the checkmark (![Checkmark Keyboard Shortcut icon.](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) icon.
 
 For more information about customizing and editing shortcuts, navigate to [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [174309](https://crbug.com/174309).
 
-:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode" lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
+:::image type="complex" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode." lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
    Customize keyboard shortcuts in the [DevTools Settings](../../../customize/index.md#settings) on Shortcuts with a shortcut in edit mode
 :::image-end:::
 
@@ -87,11 +87,11 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 
 The following figure displays messages from an example webpage logged in the **Console** tool in Microsoft Edge:
 
-:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Displaying a message in Console in Microsoft Edge DevTools" lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Displaying a message in Console in Microsoft Edge DevTools." lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
 
 The following figure displays the same messages from the example webpage logged in the **DevTools Console** under **Output** of Microsoft Visual Studio Code:
 
-:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Displaying the same message in the DevTools Console under Output of Microsoft Visual Studio Code" lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
+:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Displaying the same message in the DevTools Console under Output of Microsoft Visual Studio Code." lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -104,11 +104,11 @@ DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` 
 
 To open the **Flexbox** editor, navigate to the **Styles** pane and choose the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.
 
-:::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS flexbox debugging tools" lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
+:::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS flexbox debugging tools." lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
 
 In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You may toggle the overlay of each element.
 
-:::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Flexbox section in the Layout pane" lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+:::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Flexbox section in the Layout pane." lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -123,11 +123,11 @@ In Microsoft Edge version 90, you may expand or collapse the chain of requests u
 
 Choose a Network request and choose the **Initiator** pane:
 
-:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Choose a Network request and choose the Initiator pane" lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Choose a Network request and choose the Initiator pane." lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
 
 Expand or collapse the request initiator chain and follow the highlighted row:
 
-:::image type="content" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expand or collapse the request initiator chain and follow the highlighted row" lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expand or collapse the request initiator chain and follow the highlighted row." lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -173,7 +173,7 @@ To emulate the CSS color-gamut media feature, complete the following actions.
 
 To learn more about the `color-gamut` feature, navigate to [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1073887](https://crbug.com/1073887).
 
-:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emulate the CSS color-gamut media feature" lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
+:::image type="complex" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emulate the CSS color-gamut media feature." lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
    Emulate the CSS color-gamut media feature
 :::image-end:::
 
@@ -183,7 +183,7 @@ To learn more about the `color-gamut` feature, navigate to [Color Display Qualit
 
 The **Console** now displays a more detailed [Progressive Web Apps (PWA)](../../../../progressive-web-apps-chromium/index.md) installability warning message with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).
 
-:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="PWA installability warning in Console tool" lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
+:::image type="complex" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="PWA installability warning in Console tool." lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
    PWA installability warning in **Console** tool
 :::image-end:::
 
@@ -191,7 +191,7 @@ The **Console** now displays a more detailed [Progressive Web Apps (PWA)](../../
 
 The **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters.
 
-:::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA description truncate warning" lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA description truncate warning." lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
    PWA description truncate warning
 :::image-end:::
 
@@ -214,13 +214,13 @@ In the contextual menu, choose the **Remote Address Space**:
 
 The Requests table now displays the **Remote Address Space** column:
 
-:::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="The Requests table now displays the Remote Address Space column" lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+:::image type="complex" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="The Requests table now displays the Remote Address Space column." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
 
 ### Display allowed and disallowed features in the Frame details view
 
 The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md).  Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827](https://crbug.com/1158827).
 
-:::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Allowed and disallowed features based on the Permission Policy" lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Allowed and disallowed features based on the Permission Policy." lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
    Allowed and disallowed features based on the Permission Policy
 :::image-end:::
 
@@ -228,7 +228,7 @@ The Frame details view now displays a list of allowed and disallowed browser fea
 
 The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie.  The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1161427](https://crbug.com/1161427).
 
-:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty column in the Cookies pane" lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+:::image type="complex" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty column in the Cookies pane." lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
    **SameParty** column in the **Cookies** pane
 :::image-end:::
 
@@ -236,7 +236,7 @@ The **Cookies** pane in the **Application** tool now displays the `SameParty` at
 
 Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  Use the standard `Object.defineProperty` method to define the `fn.name` property.  To learn more about `fn.name`, navigate to [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1177685](https://crbug.com/1177685).
 
-:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="An example of the fn.name property to control debug names for functions" lightbox="../../media/2021/02/console-display-name-name.msft.png":::
+:::image type="complex" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="An example of the fn.name property to control debug names for functions." lightbox="../../media/2021/02/console-display-name-name.msft.png":::
    An example of the `fn.name` property to control debug names for functions
 :::image-end:::
 
@@ -254,11 +254,11 @@ To turn on the experiment, navigate to [Turning an experiment on or off](../../.
 
 Displaying the **DOM Tree view**:
 
-:::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Displaying the DOM Tree view" lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+:::image type="complex" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Displaying the DOM Tree view." lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
 
 Displaying the **Full Accessibility Tree view**:
 
-:::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Displaying the full accessibility tree view" lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
+:::image type="complex" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Displaying the full accessibility tree view." lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -272,5 +272,5 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-90) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

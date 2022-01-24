@@ -37,7 +37,7 @@ The simplified workflow allows you to debug JavaScript that runs in Microsoft Ed
 
 1.  Select **ASP.NET Core with React.js** from the list of templates and then **Next**.
 
-:::image type="complex" source="./media/create-new-project.png" alt-text="Create a new ASP.NET Core Web app with React.js" lightbox="./media/create-new-project.png":::
+:::image type="complex" source="./media/create-new-project.png" alt-text="Create a new ASP.NET Core Web app with React.js." lightbox="./media/create-new-project.png":::
    Create a new ASP.NET Core Web app with React.js
 :::image-end:::
 
@@ -51,25 +51,25 @@ With the project created, use Visual Studio to debug JavaScript.
 
 1.  Select the dropdown next to the green **Play** button and **IIS Express**.
 
-    :::image type="complex" source="./media/vs-dropdown.png" alt-text="The dropdown next to the green Play button and IIS Express" lightbox="./media/vs-dropdown.png":::
+    :::image type="complex" source="./media/vs-dropdown.png" alt-text="The dropdown next to the green Play button and IIS Express." lightbox="./media/vs-dropdown.png":::
        The dropdown next to the green **Play** button and **IIS Express**
     :::image-end:::
 
 1.  Select **Script Debugging** > **Enabled**.
 
-    :::image type="complex" source="./media/enable-script-debugging.png" alt-text="Turn on script debugging in Visual Studio" lightbox="./media/enable-script-debugging.png":::
+    :::image type="complex" source="./media/enable-script-debugging.png" alt-text="Turn on script debugging in Visual Studio." lightbox="./media/enable-script-debugging.png":::
        Turn on script debugging in Visual Studio
     :::image-end:::
 
 1.  In the same dropdown, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you are not already using one of the Microsoft Edge preview channels, navigate to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) to download one.
 
-    :::image type="complex" source="./media/set-web-browser.png" alt-text="Select the preview channel of Microsoft Edge that you want Visual Studio to launch" lightbox="./media/set-web-browser.png":::
+    :::image type="complex" source="./media/set-web-browser.png" alt-text="Select the preview channel of Microsoft Edge that you want Visual Studio to launch." lightbox="./media/set-web-browser.png":::
        Select the preview channel of Microsoft Edge that you want Visual Studio to launch
     :::image-end:::
 
 1.  Select the green **Play** button.  Visual Studio builds your app, starts the web server, launches Microsoft Edge, and navigates to `https://localhost:44362/` or whatever port is specified in `launchSettings.json`.
 
-    :::image type="complex" source="./media/edge-launch.png" alt-text="Microsoft Edge launches from Visual Studio" lightbox="./media/edge-launch.png":::
+    :::image type="complex" source="./media/edge-launch.png" alt-text="Microsoft Edge launches from Visual Studio." lightbox="./media/edge-launch.png":::
        Microsoft Edge launches from Visual Studio
     :::image-end:::
 
@@ -79,7 +79,7 @@ Switch back to Visual Studio to set a breakpoint.
 
 1.  In `Counter.js`, set a breakpoint on Line 13 by selecting the gutter next to the line.
 
-    :::image type="complex" source="./media/set-breakpoint.png" alt-text="Select the gutter next to Line 13 in Counter.js to set a breakpoint in Visual Studio" lightbox="./media/set-breakpoint.png":::
+    :::image type="complex" source="./media/set-breakpoint.png" alt-text="Select the gutter next to Line 13 in Counter.js to set a breakpoint in Visual Studio." lightbox="./media/set-breakpoint.png":::
        Select the gutter next to Line 13 in `Counter.js` to set a breakpoint in Visual Studio
     :::image-end:::
 
@@ -87,13 +87,13 @@ Switch back to Visual Studio to set a breakpoint.
 
 1.  Select **Counter** in the navigation menu at the top of the webpage and then select **Increment**.
 
-    :::image type="complex" source="./media/edge-counter.png" alt-text="The Counter page in our ASP.NET Core web app" lightbox="./media/edge-counter.png":::
+    :::image type="complex" source="./media/edge-counter.png" alt-text="The Counter page in our ASP.NET Core web app." lightbox="./media/edge-counter.png":::
        The Counter page in our ASP.NET Core web app
     :::image-end:::
 
 1.  The JavaScript debugger in Visual Studio hits the breakpoint you set in `Counter.js`.  Visual Studio now pauses the runtime of the JavaScript running in Microsoft Edge and you can step through the script line-by-line.
 
-    :::image type="complex" source="./media/hit-breakpoint.png" alt-text="Visual Studio pauses JavaScript running in Microsoft Edge" lightbox="./media/hit-breakpoint.png":::
+    :::image type="complex" source="./media/hit-breakpoint.png" alt-text="Visual Studio pauses JavaScript running in Microsoft Edge." lightbox="./media/hit-breakpoint.png":::
        Visual Studio pauses JavaScript running in Microsoft Edge
     :::image-end:::
 
@@ -115,7 +115,7 @@ Previously, you launched Microsoft Edge from Visual Studio.  Alternatively, you 
 
 1.  In Visual Studio, select **Debug** > **Attach to Process** or `Ctrl`+`Alt`+`P`.
 
-    :::image type="complex" source="./media/attach-to-process.png" alt-text="Select Attach to Process in Visual Studio" lightbox="./media/attach-to-process.png":::
+    :::image type="complex" source="./media/attach-to-process.png" alt-text="Select Attach to Process in Visual Studio." lightbox="./media/attach-to-process.png":::
        Select **Attach to Process** in Visual Studio
     :::image-end:::
 
@@ -125,7 +125,7 @@ Previously, you launched Microsoft Edge from Visual Studio.  Alternatively, you 
 
 1.  Review the list of open tabs you have in Microsoft Edge listed out in the **Available processes** section.
 
-    :::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="Configure the Attach to Process dialog in Visual Studio" lightbox="./media/attach-to-process-dialog.png":::
+    :::image type="complex" source="./media/attach-to-process-dialog.png" alt-text="Configure the Attach to Process dialog in Visual Studio." lightbox="./media/attach-to-process-dialog.png":::
        Configure the **Attach to Process** dialog in Visual Studio
     :::image-end:::
 
@@ -141,4 +141,4 @@ The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the
 
 The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio, or tweet [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).
 
-:::image type="content" source="./media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio" lightbox="./media/feedback-icon.png":::
+:::image type="content" source="./media/feedback-icon.png" alt-text="The Send Feedback icon in Visual Studio." lightbox="./media/feedback-icon.png":::

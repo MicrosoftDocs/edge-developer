@@ -26,7 +26,7 @@ Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed
 
 For more information, navigate to [DevTools overview](../index.md).
 
-:::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
+:::image type="complex" source="./media/f12.png" alt-text="DevTools debugging." lightbox="./media/f12.png":::
    DevTools debugging
 :::image-end:::
 
@@ -54,7 +54,7 @@ Install and set up the script debugger tools in Visual Studio.
     1.  In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.
     1.  In Visual Studio, under **Workloads**, choose the **Desktop Development in C++** setting.
 
-        :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen" lightbox="./media/workloads.png":::
+        :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen." lightbox="./media/workloads.png":::
             Visual Studio Modifying Workloads Screen
         :::image-end:::
 
@@ -63,7 +63,7 @@ Install and set up the script debugger tools in Visual Studio.
     1.  Choose the **JavaScript diagnostics** setting.
     1.  Choose **Modify**.
 
-        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indiv-comp.png":::
+        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab." lightbox="./media/indiv-comp.png":::
            Visual Studio Modifying Individual Components Tab
         :::image-end:::
 
@@ -72,7 +72,7 @@ Install and set up the script debugger tools in Visual Studio.
     1.  Under the **Configuration Properties**, choose **Debugging**.
     1.  Under the **Debugger Type**, choose **JavaScript (WebView2)**.
 
-        :::image type="complex" source="./media/enb-js.png" alt-text="Visual Studio Debugging Configuration Property" lightbox="./media/enb-js.png":::
+        :::image type="complex" source="./media/enb-js.png" alt-text="Visual Studio Debugging Configuration Property." lightbox="./media/enb-js.png":::
            Visual Studio **Debugging** Configuration Property
         :::image-end:::
 
@@ -80,7 +80,7 @@ Complete the following actions to debug your WebView2 app.
 
 1.  To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.  The JS/TS debug adapter does not perform source path mapping.  You must open the exact same path associated with your WebView2.
 
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio add breakpoint" lightbox="./media/breakpoint.png":::
+    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio add breakpoint." lightbox="./media/breakpoint.png":::
        Visual Studio add breakpoint
     :::image-end:::
 
@@ -92,7 +92,7 @@ Complete the following actions to debug your WebView2 app.
 
 1.  In the **Debug Console**, find the output from the debugger.
 
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debug Console" lightbox="./media/console.png":::
+    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debug Console." lightbox="./media/console.png":::
        Visual Studio **Debug Console**
     :::image-end:::
 
@@ -131,7 +131,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 1.  To set a breakpoint in your source code, hover on the line, and select `F9`
 
-    :::image type="complex" source="./media/breakpoint-vs.png" alt-text="Breakpoint is set in Visual Studio Code" lightbox="./media/breakpoint-vs.png":::
+    :::image type="complex" source="./media/breakpoint-vs.png" alt-text="Breakpoint is set in Visual Studio Code." lightbox="./media/breakpoint-vs.png":::
        Breakpoint is set in Visual Studio Code
     :::image-end:::
 
@@ -139,13 +139,13 @@ In Visual Studio Code, complete the following actions to debug your code.
     1.  On the **Run** tab, choose the launch configuration from the dropdown menu.
     1.  To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.
 
-        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/run-vs.png":::
+        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code Run tab." lightbox="./media/run-vs.png":::
            Visual Studio Code Run tab
         :::image-end:::
 
 1.  Open **Debug Console** to view the debug output and errors.
 
-    :::image type="complex" source="./media/results-vs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/results-vs.png":::
+    :::image type="complex" source="./media/results-vs.png" alt-text=" Visual Studio Code Debug Console." lightbox="./media/results-vs.png":::
        Visual Studio Code Debug Console
     :::image-end:::
 
@@ -223,7 +223,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
         Visual Studio Code Debug Output with verbose tracing turned on:
 
-        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on" lightbox="./media/verbose.png":::
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on." lightbox="./media/verbose.png":::
 
 *   Debug Office Add-ins.
 

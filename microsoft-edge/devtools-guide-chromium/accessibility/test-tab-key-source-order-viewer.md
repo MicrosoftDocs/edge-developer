@@ -37,7 +37,7 @@ You can test the order of page elements by using the **Source Order Viewer** in 
 
 To turn on the Source Order Viewer:
 
-1.  In DevTools, in the upper right, select the **Settings** (![Settings button](../media/settings-button-icon.msft.png)) button.
+1.  In DevTools, in the upper right, select the **Settings** (![Settings button.](../media/settings-button-icon.msft.png)) button.
 
 1.  Below **Settings**, select **Experiments**.
 
@@ -57,7 +57,7 @@ To activate and use the Source Order Viewer, with the demo page:
 
 1.  In the DOM tree in the **Elements** tool, select a major layout element, such as the `header` element.  Numeric overlays are now displayed on sections of the rendered page, which indicate the source order of the different elements.
 
-    :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page" lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page." lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
         Activating the **Source Order Viewer** shows the order of the elements in the source as overlays on the page
     :::image-end:::
 

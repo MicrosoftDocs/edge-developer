@@ -30,7 +30,7 @@ This article is about changing the appearance of the webpage under development. 
 
 1.  In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: dark** or **prefers-color-scheme: light**.
 
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool." lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
        Emulating dark or light mode using the **Rendering** tool
     :::image-end:::
 

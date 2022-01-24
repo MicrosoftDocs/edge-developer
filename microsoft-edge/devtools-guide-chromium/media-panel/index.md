@@ -34,7 +34,7 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 1.  [Open DevTools](../open/index.md).
 1.  To open the **Media** panel, choose **Customize and control DevTools** `...` > **More tools** > **Media**.
 
-    :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Media panel" lightbox="../media/media-panel-empty.msft.png":::
+    :::image type="complex" source="../media/media-panel-empty.msft.png" alt-text="Media panel." lightbox="../media/media-panel-empty.msft.png":::
        **Media** panel
     :::image-end:::
 
@@ -49,25 +49,25 @@ The **Media** tool is the main place in DevTools for inspecting the media player
 1.  Under the **Players** menu, a media player is displayed.
 1.  Choose the player.  The **Properties** panel displays the properties of the media player.
 
-    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Media properties" lightbox="../media/media-panel-view.msft.png":::
+    :::image type="complex" source="../media/media-panel-view.msft.png" alt-text="Media properties." lightbox="../media/media-panel-view.msft.png":::
        Media properties
     :::image-end:::
 
 1.  To view all the media player events, choose the **Events** panel.
 
-    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Media events" lightbox="../media/media-panel-events.msft.png":::
+    :::image type="complex" source="../media/media-panel-events.msft.png" alt-text="Media events." lightbox="../media/media-panel-events.msft.png":::
        Media events
     :::image-end:::
 
 1.  To view the media player message logs, choose the **Messages** panel.  You may filter the messages by log level or string.
 
-    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Media messages" lightbox="../media/media-panel-messages.msft.png":::
+    :::image type="complex" source="../media/media-panel-messages.msft.png" alt-text="Media messages." lightbox="../media/media-panel-messages.msft.png":::
        Media messages
     :::image-end:::
 
 1.  On the **Timeline** panel, the media playback and buffer status is displayed live.
 
-    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Media timeline" lightbox="../media/media-panel-timeline.msft.png":::
+    :::image type="complex" source="../media/media-panel-timeline.msft.png" alt-text="Media timeline." lightbox="../media/media-panel-timeline.msft.png":::
        Media timeline
     :::image-end:::
 
@@ -80,7 +80,7 @@ View the media players information on an Android device from your Windows or mac
 
     <!-- TODO: recreate image using an Android device -->
     <!--
-    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging" lightbox="../media/media-panel-remote-debug.msft.png":::
+    :::image type="complex" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging." lightbox="../media/media-panel-remote-debug.msft.png":::
        Remote debugging
     :::image-end:::
     -->
@@ -98,7 +98,7 @@ You may choose to hide (or show) each media player for an easier debugging exper
     *   To hide one media player, hover on a media player, open the contextual menu (right-click), and choose **Hide player**.
     *   To hide all of the other media players, hover on a media player, open the contextual menu (right-click), and choose **Hide all others**.
 
-    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Hide media players" lightbox="../media/media-panel-hide-show.msft.png":::
+    :::image type="complex" source="../media/media-panel-hide-show.msft.png" alt-text="Hide media players." lightbox="../media/media-panel-hide-show.msft.png":::
        Hide media players
     :::image-end:::
 
@@ -108,7 +108,7 @@ You may choose to hide (or show) each media player for an easier debugging exper
 
 1.  To download the media player info as a JSON file, hover on a media player, open the contextual menu (right-click), and choose **Save player info**.
 
-    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Export media information" lightbox="../media/media-panel-save.msft.png":::
+    :::image type="complex" source="../media/media-panel-save.msft.png" alt-text="Export media information." lightbox="../media/media-panel-save.msft.png":::
        Export media information
     :::image-end:::
 
@@ -118,5 +118,5 @@ You may choose to hide (or show) each media player for an easier debugging exper
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/media-panel/index) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

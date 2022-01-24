@@ -28,14 +28,14 @@ The [print media query](https://developer.mozilla.org/docs/Web/CSS/Media_Queries
 1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
     > [!div class="mx-imgBorder"]
-    > ![Opening the command menu](../media/print-preview-open-command-menu.png)
+    > ![Opening the command menu.](../media/print-preview-open-command-menu.png)
 
 1.  Type `rendering`, select the **Show Rendering** option, and press `Enter`.
 1.  The **Rendering** panel opens in the **Drawer**.
 1.  Under **Emulate CSS media type**, choose **print**.
 
     > [!div class="mx-imgBorder"]
-    > ![The Rendering panel with the print CSS media type selected](../media/print-preview-css-media-type.png)
+    > ![The Rendering panel with the print CSS media type selected.](../media/print-preview-css-media-type.png)
 
 From here, you may display and change your CSS, like any other web page.  Navigate to [Get Started With Viewing And Changing CSS](./index.md).
 
@@ -45,5 +45,5 @@ From here, you may display and change your CSS, like any other web page.  Naviga
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/print-preview) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

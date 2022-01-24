@@ -30,17 +30,17 @@ To simulate how a person with a vision deficiency would see your web page, open 
 1.  Go to **More tools** > **Rendering** to open the **Rendering** panel in the drawer.
 
     > [!div class="mx-imgBorder"]
-    > ![Opening the Rendering panel from the More tools menu](../media/getting-to-the-rendering-tools.msft.png)
+    > ![Opening the Rendering panel from the More tools menu.](../media/getting-to-the-rendering-tools.msft.png)
 
 1.  Scroll down to the **Emulate vision deficiencies** section, click the **No emulation** drop-down and choose one of the options.
 
     > [!div class="mx-imgBorder"]
-    > ![The Emulate vision deficiencies section in the Rendering panel](../media/accessibility-emulate-vision-menu-options.msft.png)
+    > ![The Emulate vision deficiencies section in the Rendering panel.](../media/accessibility-emulate-vision-menu-options.msft.png)
 
 1.  The browser window simulates the chosen vision deficiency on the current page.
 
     > [!div class="mx-imgBorder"]
-    > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency](../media/accessibility-blurred-vision-emulation.msft.png)
+    > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency.](../media/accessibility-blurred-vision-emulation.msft.png)
 
 <!-- ====================================================================== -->
 ## Use the Command Menu
@@ -52,7 +52,7 @@ As an alternative approach, you can use the **Command Menu** to access the diffe
 1.  Type `emulate`, then choose the type of vision deficiency you want to simulate, and press `Enter`.
 
     > [!div class="mx-imgBorder"]
-    > ![The command menu showing the different types of vision deficiencies](../media/accessibility-emulation-command-menu-results.msft.png)
+    > ![The command menu showing the different types of vision deficiencies.](../media/accessibility-emulation-command-menu-results.msft.png)
 
 > [!IMPORTANT]
 > The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should  give you a good first step to avoid problems.

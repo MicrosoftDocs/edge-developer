@@ -25,7 +25,7 @@ With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can u
 *   Update the layout.
 *   Fix styling issues.
 
-:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code" lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
+:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code." lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
    The **Microsoft Edge DevTools** extension for Visual Studio Code
 :::image-end:::
 
@@ -33,7 +33,7 @@ To install the Microsoft Edge DevTools extension:
 1. In Visual Studio Code, navigate to **Extensions** (select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS).
 1. Search the Marketplace for the extension **Microsoft Edge Tools for VS Code**, select the extension, and then select **Install**.
 
-:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge DevTools extension for Visual Studio Code" lightbox="./media/vscode-edge-tools-install.png":::
+:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge DevTools extension for Visual Studio Code." lightbox="./media/vscode-edge-tools-install.png":::
    Installing the **Microsoft Edge DevTools** extension for Visual Studio Code
 :::image-end:::
 
@@ -58,7 +58,7 @@ The webhint tool checks your code for coding practices and common errors.  The w
 
 Identify and fix problems in your website by adding the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint).  Hints examine HTML, CSS, JavaScript, TypeScript, and more.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane.
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code" lightbox="./media/webhint-extension.png":::
+:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code." lightbox="./media/webhint-extension.png":::
    The **webhint** extension for Visual Studio Code
 :::image-end:::
 
@@ -66,7 +66,7 @@ To install the webhint extension:
 1. In Visual Studio Code, navigate to **Extensions** (select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS).
 1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
 
-:::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint Visual Studio Code extension" lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
+:::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint Visual Studio Code extension." lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
    The **webhint** Visual Studio Code extension
 :::image-end:::
 

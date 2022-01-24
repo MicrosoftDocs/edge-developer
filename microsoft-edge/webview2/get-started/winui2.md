@@ -92,7 +92,7 @@ In this article, you start creating your first WebView2 app in WinUI 2 (UWP), an
 
     Visual studio displays the solution and project.
 
-    :::image type="complex" source="media/new-project-created.msft.png" alt-text="The resulting project" lightbox="media/new-project-created.msft.png":::
+    :::image type="complex" source="media/new-project-created.msft.png" alt-text="The resulting project." lightbox="media/new-project-created.msft.png":::
         The resulting project
     :::image-end:::
 
@@ -106,7 +106,7 @@ In this article, you start creating your first WebView2 app in WinUI 2 (UWP), an
 
 1.  In the **Search** box, enter `Microsoft.UI.Xaml`, and then select **Microsoft.UI.Xaml**.  Make sure that the **Version** is the latest prerelease, and then select **Install**.
 
-    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager" lightbox="media/winui2-nuget-package.msft.png":::
+    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager." lightbox="media/winui2-nuget-package.msft.png":::
        The NuGet package manager
     :::image-end:::
 
@@ -141,7 +141,7 @@ In this article, you start creating your first WebView2 app in WinUI 2 (UWP), an
 
 1.  Save the file. Above the `MainPage.xaml` file in the code editor, a preview of the WebView2 content is displayed.
 
-    :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="Preview of the WebView2 content" lightbox="media/winui2-getting-started-preview-webview2-content.png":::
+    :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="Preview of the WebView2 content." lightbox="media/winui2-getting-started-preview-webview2-content.png":::
        Preview of the WebView2 content
     :::image-end:::
 
