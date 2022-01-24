@@ -45,7 +45,9 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
 1. In the **Publish APIs** page, select the **Create API credentials** button to generate the API credentials.  This step may take a few minutes.  After the APIs are enabled, the **Client ID**, **Client Secret**, and **Auth Token URL** are displayed on this page.
 
-1. Note the **ClientID**, **Client Secret** and the **Auth Token URL**.  You'll use them in the next step to get an access token.
+1. Note the **ClientID**, **Client Secret** and the **Auth Token URL**. You'll use them in the next step to get an access token. Note that client secret is visible only once, after enabling or renewing the API. 
+
+![image](https://user-images.githubusercontent.com/11265822/150777593-42cb9d37-0c1f-4ef4-9de6-9c4bc1166b96.png)
 
 
 <!-- ====================================================================== -->
@@ -57,7 +59,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Auth Token URL.  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
 ```rest
-Endpoint: https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
+Endpoint: https://login.microsoftonline.com/msedgeaddonsapi.onmicrosoft.com/oauth2/v2.0/token
 Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
 ```
@@ -73,7 +75,7 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 -d "client_secret={$Client_Secret}" \
 -d "grant_type=client_credentials" \
 -v \
-https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
+https://login.microsoftonline.com/msedgeaddonsapi.onmicrosoft.com/oauth2/v2.0/token
 ```
 
 ### Sample response
@@ -97,7 +99,7 @@ Once you have an access token, you can use the Microsoft Edge Add-ons API.  This
 > [!NOTE]
 > There is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
 
-The examples below use the domain `https://addons.edge.microsoft.com/api`, which is a placeholder and might be replaced when the API is available in production.
+The API is available at the endpoint https://api.addons.microsoftedge.microsoft.com
 
 
 <!-- ====================================================================== -->
@@ -112,11 +114,7 @@ Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
-`$productID` is the ID of the Microsoft Edge Add-on that you want to update.  You can get the product ID in either of the following ways:
-
-*  Login to Microsoft Partner Center.  Navigate to **Microsoft Edge > Overview**, and then select the extension you want the product ID for.  The extension overview page opens.  The GUID in the URL is the product ID.
-
-*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, navigate to [Get the list of products](addons-api-reference.md#get-the-list-of-products).
+`$productID` is the ID of the Microsoft Edge Add-on that you want to update. To get the product ID login to Microsoft Partner Center.  Navigate to **Microsoft Edge > Overview**, and then select the extension you want the product ID for.  The extension overview page opens.  The product ID key is available in the extension identity section.
 
 ### Sample request
 
@@ -127,10 +125,10 @@ Body content: the package file to upload
 -X PUT \
 -T $FILE_NAME \
 -v \
-https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/package
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package
 ```
 
-If the request succeeded and the update process began, you receive a `202 Accepted` response status code with a `Location` header.  To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
+If the request succeeded and the update process began, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the operationID which is required for checking the status of the update operation.
 
 API reference: [Upload a package to update an existing submission](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
@@ -153,7 +151,7 @@ Header Parameters: Authorization: Bearer $TOKEN
 -H "Authorization: Bearer $TOKEN" \
 -X GET \
 -v \
-https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/package/operations/$operationID
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
 ```
 
 API reference: [Check the status of a package upload](addons-api-reference.md#check-the-status-of-a-package-upload)
@@ -179,10 +177,10 @@ Body content: Notes for certification, in plain text format
 -X POST \
 -d "certificationNotes=text value" \
 -v \
-https://addons.edge.microsoft.com/api/v1/products/$productID/submissions
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
 
-If the request succeeded and the publishing process began, you receive a `202 Accepted` response status code with a `Location` header.   To find out the status of the operation, make `GET` requests to the URL in the `Location` header.
+If the request succeeded and the publishing process began, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the operationID which is required for checking the status of the publish operation.
 
 API reference: [Publish the product draft submission](addons-api-reference.md#publish-the-product-draft-submission)
 
@@ -204,7 +202,7 @@ Header Parameters: Authorization: Bearer $TOKEN
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X GET \
--v \ https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/operations/{operationID}
+-v \ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
 
 API reference: [Check the publishing status](addons-api-reference.md#check-the-publishing-status)
