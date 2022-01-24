@@ -17,71 +17,6 @@ This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This AP
 
 For an overview, see [Using the Microsoft Edge Add-ons API](using-addons-api.md).
 
-
-<!-- ====================================================================== -->
-## Get the list of products
-
-Gets a list of all products that belong to the account.
-
-### Request
-
-| Method | Request URI |
-|---|---|
-| `GET` | `/products` |
-
-#### URI parameters
-
-None.
-
-#### Request headers
-
-* Required.  `Authorization: Bearer <auth token>`
-
-#### Request body
-
-None.
-
-### Response
-
-The response includes a list of products, with details for each product.  The template for this response is as follows.
-
-```json
-[
-    {
-        "id": "<productID1>",
-        "name": "<Name of Product 1>",
-        "status": "In review",
-        "lastUpdatedDate": "7/19/2021"
-    },
-    {
-        "id": "<productID2>",
-        "name": "<Name of Product 2>",
-        "status": "In the store",
-        "lastUpdatedDate": "5/21/2021"
-    }
-]
-```
-
-For the first version of a product, the status field has the following values:
-*  In Draft
-*  In Review
-*  In the Store, or Failed
-
-For subsequent submissions, you'll receive either of the following values:
-*  In Review
-*  In the Store, or Failed
-
-#### Status codes
-
-This API has the following expected status codes.
-
-| HTTP status code | Description |
-|---|---|
-| 200 | The request is OK |
-| 4XX | For more details see [Error codes](#error-codes). |
-| 5XX | For more details see [Error codes](#error-codes). |
-
-
 <!-- ====================================================================== -->
 ## Upload a package to update an existing submission
 
@@ -91,7 +26,7 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 | Method | Request URI |
 |---|---|
-| `PUT` | `/products/{productID}/submissions/draft/package` |
+| `POST` | `/products/{productID}/submissions/draft/package` |
 
 #### URI parameters
 
@@ -113,7 +48,7 @@ Uploads a package to update an existing draft submission of an add-on product.
 
 #### Response headers
 
-*  Location: `/products/{productID}/submissions/draft/package/operations/{operationID}`
+*  Location: `{operationID}`
 
 #### Status codes
 
@@ -159,9 +94,13 @@ There are several responses, for different scenarios.
 
 ```json
 {
-    "id": "{operationID}",
-    "status": "IN-PROGRESS",
-    "message": "The package upload is in progress. Please check the status after some time."
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "InProgress",
+    "message": null,
+    "errorCode": null,
+    "errors": null
 }
 ```
 
@@ -169,29 +108,27 @@ There are several responses, for different scenarios.
 
 ```json
 {
-    "id": "{operationID}",
-    "status": "SUCCESS",
-    "message": "Package upload successfully completed. Please proceed with publishing."
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "Succeeded",
+    "message": "Successfully updated package to {fileName}.zip",
+    "errorCode": "",
+    "errors": null
 }
 ```
 
 #### Response when the operation fails with errors
 
 ```json
-{
-    "id": "{operationID}",
-    "status": "FAILED",
-    "message": "The package upload failed. Please fix the errors and make the request again.",
-    "errors": [
-       {
-           "id": "MANIFEST_FILE_MISSING",
-           "message": "Zip file must contain a manifest.json file."
-       },
-       {
-           "id": "SIZE_LIMIT_EXCEEDED",
-           "message": "Zip file size must not exceed 500MB."
-       }
-    ]
+ {
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "Failed",
+    "message": "Error Message.",
+    "errorCode": "Error Code",
+    "errors": ["list of errors"]
 }
 ```
 
@@ -240,7 +177,7 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 #### Response headers
 
-* Location: `/products/{productID}/submissions/operations/{operationID}`
+* Location: `{operationID}`
 
 #### Status codes
 
@@ -280,13 +217,31 @@ None.
 
 A `GET` operation status API can be called in the following scenarios.  In all valid scenarios, `200 OK` is returned, with different status messages.
 
+#### Response when a new product is published
+
+```json
+{
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Only update is allowed.",
+    "errorCode": "CreateNotAllowed",
+    "errors": null
+}
+```
+
 #### Response when there is nothing new to be published
 
 ```json
 {
-    "id": "{operationID}",
-    "status": "NOTHING-TO-PUBLISH",
-    "message": "There is no draft available to publish. Please update the draft before publishing."
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Nothing to publish.",
+    "errorCode": "NoModulesUpdated",
+    "errors": null
 }
 ```
 
@@ -294,9 +249,45 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{operationID}",
-    "status": "CONFLICT",
-    "message": "There is another in-review submission for this product. Please wait for that submission to be completed before triggering a new publish."
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Submission in progress.",
+    "errorCode": "InProgressSubmission",
+    "errors": null    
+}
+```
+
+#### Response when there is an ongoing unpublish submission for the same product
+
+```json
+{
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Unpublish in progress.",
+    "errorCode": "UnpublishInProgress",
+    "errors": null    
+}
+```
+
+#### Response where any of module(s) are invalid
+
+```json
+{
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Modules invalid.",
+    "errorCode": "ModuleStateUnPublishable",
+    "errors": [
+        {
+            "message": "Invalid module : <Modules>"
+        }
+    ]
 }
 ```
 
@@ -304,9 +295,13 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{operationID}",
-    "status": "IN-REVIEW",
-    "message": "The draft has been successfully submitted and is in review. The review may take up to 7 business days."
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": "Date Time",
+    "status": "Succeeded",
+    "message": "Successfully created submission with ID {submission.Id}",
+    "errorCode": "",
+    "errors": null
 }
 ```
 
@@ -314,9 +309,13 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{operationID}",
-    "status": "FAILED",
-    "message": "The operation failed due to an unknown error. Please re-trigger the publish call."
+    "id": "{OperationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "An error occurred while performing the operation",
+    "errorCode": null,
+    "errors": null
 }
 ```
 
