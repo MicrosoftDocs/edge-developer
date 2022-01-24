@@ -25,7 +25,6 @@ Create an instance of `EdgeOptions`, which provides convenience methods to set M
 
 ```csharp
 var options = new EdgeOptions();
-options.UseChromium = true;
 options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```
