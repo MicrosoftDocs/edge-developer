@@ -76,7 +76,7 @@ The Microsoft Edge team recommends upgrading existing Selenium 3 tests to Seleni
 
 If you're using [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) to add Microsoft Edge (Chromium) support to your Selenium 3 browser tests, update your tests as follows:
 
-1. Remove [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) from your project.  It isn't necessary to use Selenium Tools for Microsoft Edge with Selenium 4, because Selenium 4 already has built-in support for Microsoft Edge.
+1. Remove [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) from your project.  You don't need to use Selenium Tools for Microsoft Edge with Selenium 4, because Selenium 4 already has built-in support for Microsoft Edge (Chromium).
 
 1. Update your tests to use the built-in `EdgeDriver` and related classes that Selenium 4 provides instead.
 
