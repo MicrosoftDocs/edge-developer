@@ -100,7 +100,7 @@ Add code like the following code, such as try/catch code, to handle the error.
 
 There's a new API to query where the UDF is, so you can more easily delete the UDF, by getting the calculated value of the UDF location.
 
-*  Win32: [ICoreWebView2Environment7.get_UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2environment7?view=webview2-1.0.1054.31#get_userdatafolder)
+*  Win32: [ICoreWebView2Environment7.get_UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)
 
 *  WPF: link tbd
 
