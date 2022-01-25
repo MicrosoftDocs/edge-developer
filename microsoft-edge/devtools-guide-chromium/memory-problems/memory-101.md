@@ -122,27 +122,27 @@ In the following figure, node `#3` is the dominator of node `#10`.  But node `#7
 
 Node `GC` dominates nodes `#1`, `#3`, and `#11`:
 
-![Node GC dominates nodes #1, #3, and #11..](../media/memory-problems-dominators-00.msft.png)
+![Node GC dominates nodes #1, #3, and #11.](../media/memory-problems-dominators-00.msft.png)
  
 Node `#3` is dominated by node `GC` and dominates node `#7`:
 
-![Node #3 is dominated by node GC and dominates node #7..](../media/memory-problems-dominators-01.msft.png)
+![Node #3 is dominated by node GC and dominates node #7.](../media/memory-problems-dominators-01.msft.png)
  
 Node `#7` is dominated by node `#3` and dominates nodes `#8`, `#9`, and `#10`:
 
-![Node #7 is dominated by node #3 and dominates nodes #8, #9, and #10..](../media/memory-problems-dominators-02.msft.png)
+![Node #7 is dominated by node #3 and dominates nodes #8, #9, and #10.](../media/memory-problems-dominators-02.msft.png)
  
 Node `#8` is dominated by node `#7` and doesn't dominate any nodes:
 
-![Node #8 is dominated by node #7 and doesn't dominate any nodes..](../media/memory-problems-dominators-03.msft.png)
+![Node #8 is dominated by node #7 and doesn't dominate any nodes.](../media/memory-problems-dominators-03.msft.png)
  
 Node `#10` is dominated by node `#7` and doesn't dominate any nodes:
 
-![Node #10 is dominated by node #7 and doesn't dominate any nodes..](../media/memory-problems-dominators-04.msft.png)
+![Node #10 is dominated by node #7 and doesn't dominate any nodes.](../media/memory-problems-dominators-04.msft.png)
  
 Node `#11` is dominated by node `#1` and doesn't dominate any nodes:
 
-![Node #11 is dominated by node #1 and doesn't dominate any nodes..](../media/memory-problems-dominators-05.msft.png)
+![Node #11 is dominated by node #1 and doesn't dominate any nodes.](../media/memory-problems-dominators-05.msft.png)
 
 
 <!-- ====================================================================== -->

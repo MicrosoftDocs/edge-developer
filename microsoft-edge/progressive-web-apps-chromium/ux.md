@@ -75,7 +75,7 @@ To set an already installed PWA to automatically start when you sign in to Windo
 
 1.  Open Microsoft Edge.
 1.  Go to `edge://apps`.  The **Apps** page lists the installed apps.
-1.  On the app you want to configure, click the **More options** (![The More options button..](./media/edge-apps-more-options.png)) button and then select **Auto-start on device login**.
+1.  On the app you want to configure, click the **More options** (![The More options button.](./media/edge-apps-more-options.png)) button and then select **Auto-start on device login**.
 
 :::image type="content" source="./media/turn-on-run-on-os-login-flag.png" alt-text="Use the More Options menu to turn on the 'Auto-start on device login' feature in Microsoft Edge.":::
 

@@ -75,7 +75,7 @@ To turn an experiment on or off in Microsoft Edge:
 
 1.  On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1.  Click **Close** (![The Close icon in DevTools > Settings..](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1.  Click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
 1.  Click the **Reload DevTools** button.
 
@@ -87,9 +87,9 @@ To restore the default settings for which experimental features are turned on:
 
 1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Select **Settings** (![The Settings icon in DevTools..](../media/settings-gear-icon-light-mode.png)) > **Preferences**.
+1.  Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Preferences**.
 
-1.  Click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings..](../media/settings-close-icon-light-theme.png)).
+1.  Click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -101,7 +101,7 @@ You can filter the experimental features by text included in the title.
 
 1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Select **Settings** (![The Settings icon in DevTools..](../media/settings-gear-icon-light-mode.png)) > **Experiments**.
+1.  Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Experiments**.
 
 1.  Click in the **Filter** text box and enter text, such as **timeline**.  As you type, only the matching checkboxes are shown in the **Experiments** page.
 
@@ -164,7 +164,7 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1.  In DevTools, select **Settings** > **Experiments**.
 
-1.  Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings..](../media/settings-close-icon-light-theme.png)) to close **Settings**.
+1.  Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) to close **Settings**.
 
 1.  Open the **Command Menu** (`Control`+`Shift`+`P`), and then type **protocol** in the text box.
 
@@ -509,7 +509,7 @@ These features have been promoted from experimental to regular features, and hav
 
 This experiment started with Microsoft Edge version 89, and is a regular feature as of version 94.
 
-You can now open more tools using the new **More Tools** (![The 'More Tools' icon..](../media/more-tools-icon-light-theme.png)) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (![The 'More Tools' icon..](../media/more-tools-icon-light-theme.png)) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (![The 'More Tools' icon..](../media/more-tools-icon-light-theme.png)) icon.
+You can now open more tools using the new **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.
 
 :::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane." lightbox="../media/experiments-more-tools-button.msft.png":::
 

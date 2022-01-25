@@ -26,7 +26,7 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 
 The **Detached Elements** tool was initially available as an experiment in [Microsoft Edge version 93](../../2021/07/devtools.md#debug-dom-node-memory-leaks-with-the-new-detached-elements-tool).  The tool is now available by default in Microsoft Edge version 97.
 
-![The Detached Elements tool..](../../media/2022/01/detached-elements-tool.png)
+![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png)
 
 See also:
 * [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
@@ -53,7 +53,7 @@ The current version of the Microsoft Edge DevTools extension for Visual Studio C
 
 *  You can now provide arguments for the launched browser instance, in case you need to have a special setup:
 
-![Extension settings to specify launch arguments for Microsoft Edge..](../../media/2022/01/extension-settings-launch-arguments.png)
+![Extension settings to specify launch arguments for Microsoft Edge.](../../media/2022/01/extension-settings-launch-arguments.png)
 
 
 <!-- ====================================================================== -->
@@ -66,7 +66,7 @@ Thanks to your early feedback, we've continued to make improvements and bug fixe
 
 When using Focus Mode, all the same tools and [custom themes](../../../customize/theme.md) are available as in the existing DevTools UI.  Learn more about the [Focus Mode UI](../../../experimental-features/index.md#focus-mode), or try it for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
 
-![The Focus Mode UI..](../../media/2022/01/focus-mode.png)
+![The Focus Mode UI.](../../media/2022/01/focus-mode.png)
 
 
 <!-- ====================================================================== -->
@@ -77,7 +77,7 @@ When using Focus Mode, all the same tools and [custom themes](../../../customize
 
 In previous versions of Microsoft Edge, changing the theme in DevTools and then opening the 3D View tool resulted in a blank panel.  This issue has now been fixed, in Microsoft Edge 97.  To learn more, see [Apply color themes to DevTools](../../../customize/theme.md) and [3D View](../../../3d-view/index.md).
 
-![The 3D View tool now supports changing color themes..](../../media/2022/01/3d-view-with-color-theme.png)
+![The 3D View tool now supports changing color themes.](../../media/2022/01/3d-view-with-color-theme.png)
 
 
 <!-- ====================================================================== -->
