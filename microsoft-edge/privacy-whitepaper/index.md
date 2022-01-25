@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, privacy, whitepaper, privacy whitepaper, trust, microsoft edge privacy, browser privacy, privacy settings
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
 ms.date: 12/10/2021
@@ -516,7 +515,7 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 <!-- ====================================================================== -->
 ## Search results data for product improvement 
-In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone’s web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn’t own or operate.
+In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone's web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn't own or operate.
 
 * Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
 

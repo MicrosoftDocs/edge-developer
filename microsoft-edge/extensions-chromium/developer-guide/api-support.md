@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, extension api , developer, web development
 ms.date: 01/07/2021
 ---
 # Supported APIs for Microsoft Edge extensions

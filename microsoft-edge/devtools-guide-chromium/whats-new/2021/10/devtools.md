@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 10/20/2021
 ---
 # What's New in DevTools (Microsoft Edge 95)

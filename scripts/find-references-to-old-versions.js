@@ -1,7 +1,6 @@
 const glob = require('glob');
 const fs = require('fs').promises;
 const path = require('path');
-const fetch = require('node-fetch');
 
 const FILES_TO_INCLUDE = '../microsoft-edge/**/*.md';
 const FILES_TO_IGNORE = [
@@ -21,6 +20,8 @@ const PATTERNS_TO_LOOK_FOR = [
     /Edge ([0-9]{2,3}) /g,
     / ([0-9]{2,3}) or later/g,
 ];
+
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 function getAllSourceFiles() {
     return new Promise(resolve => {
