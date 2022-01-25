@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 no-loc: ["Enable new font editor tool within the Styles pane"]
 ms.date: 03/11/2021
 ---
