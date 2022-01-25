@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 ms.date: 04/29/2021
 ---
 # Customize the password reveal button

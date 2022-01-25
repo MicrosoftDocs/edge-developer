@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, UWP, Microsoft Store
 ms.date: 11/17/2021
 ---
 # Overview of Progressive Web Apps (PWAs)
