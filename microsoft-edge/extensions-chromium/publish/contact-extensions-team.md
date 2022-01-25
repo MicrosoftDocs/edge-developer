@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, extensions development, browser extensions, add-ons, partner center, developer, support
 ms.date: 02/17/2021
 ---
 # Contact Microsoft Edge extensions support

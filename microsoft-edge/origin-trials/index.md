@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, origin trials, developer
 ms.date: 01/07/2021
 ---
 # Use Origin Trials in Microsoft Edge

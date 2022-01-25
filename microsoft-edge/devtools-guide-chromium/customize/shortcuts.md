@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, custom, shortcuts, keyboard, visual studio code
 ms.date: 03/10/2021
 ---
 # Customize keyboard shortcuts

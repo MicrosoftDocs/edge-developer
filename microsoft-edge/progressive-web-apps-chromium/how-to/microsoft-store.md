@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, Windows, Microsoft Store
 ms.date: 12/03/2021
 ---
 # Publish a Progressive Web App to the Microsoft Store

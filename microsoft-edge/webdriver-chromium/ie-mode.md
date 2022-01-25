@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test, ie, internet explorer, ie mode
 ms.date: 11/23/2021
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge

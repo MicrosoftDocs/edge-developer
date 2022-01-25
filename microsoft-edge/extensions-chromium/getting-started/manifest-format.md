@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
 ms.date: 06/07/2021
 ---
 

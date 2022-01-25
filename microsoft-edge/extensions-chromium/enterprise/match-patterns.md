@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
 ms.date: 03/17/2021
 ---
 <!-- Copyright A. W. Fuchs
