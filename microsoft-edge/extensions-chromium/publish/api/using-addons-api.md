@@ -111,11 +111,17 @@ Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
-`$productID` is the ID of the Microsoft Edge Add-on that you want to update.  You can get the product ID in either of the following ways:
+`$productID` is the ID of the Microsoft Edge Add-on that you want to update.
 
-*  Login to Microsoft Partner Center.  Navigate to **Microsoft Edge > Overview**, and then select the extension you want the product ID for.  The extension overview page opens.  The GUID in the URL is the product ID.
+To get the product ID:
 
-*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, navigate to [Get the list of products](addons-api-reference.md#get-the-list-of-products).
+1. Login to Microsoft Partner Center.
+1. Navigate to **Microsoft Edge > Overview**.
+1. Select the extension you want the product ID for.
+
+   The extension overview page opens.  The GUID in the URL is the product ID.
+
+1. In the address bar, select and copy the GUID.
 
 ### Sample request
 
