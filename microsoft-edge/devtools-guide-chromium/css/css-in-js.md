@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
 ms.date: 08/25/2021
 ---
 <!-- Copyright Alex Rudenko

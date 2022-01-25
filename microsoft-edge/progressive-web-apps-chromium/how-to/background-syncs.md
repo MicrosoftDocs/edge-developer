@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, service worker, background, synchronization, fetch
 ms.date: 09/14/2021
 ---
 # Synchronize and update a PWA in the background

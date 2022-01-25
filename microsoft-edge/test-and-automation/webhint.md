@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, vs code, visual studio code, webhint
 ms.date: 11/19/2021
 ---
 # webhint extension for Visual Studio Code
