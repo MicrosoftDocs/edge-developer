@@ -57,9 +57,4 @@ Your Developer Tools matches your browser language by default, if it is one of t
    DevTools in Chinese
 :::image-end:::
 
-If you want to revert DevTools to English, navigate to [DevTools Settings][DevtoolsCustomizeIndexSettings] or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsCustomizeIndexSettings]: ./index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
+If you want to revert DevTools to English, navigate to [DevTools Settings](./index.md#settings) or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.

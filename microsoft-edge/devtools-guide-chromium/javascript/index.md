@@ -33,7 +33,7 @@ Finding a series of actions that consistently reproduce a bug is always the firs
 
 1.  Choose the following **Open Demo** link and open the webpage in a new tab.  To open the demo in a new tab, select and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then choose **Open Demo**.
 
-    [Open Demo][OpenDebugJSDemo]
+    [Open Demo](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html)
 
 1.  Enter `5` in the **Number 1** text box.
 1.  Enter `1` in the **Number 2** text box.
@@ -117,9 +117,9 @@ If you step back and think about how the app works, you may make an educated gue
     > [!NOTE]
     > If you paused on a different line, you have a browser extension that registers a `click` event listener on every webpage that you visit.  You are paused in the `click` listener of the extension.  If you use InPrivate Mode to **browse in private**, which disables all extensions, you may see that you pause on the desired line of code every time.
 
-<!--todo: add inprivate section when available -->
+<!--todo: add inprivate section when available in this repo [InPrivate](https://support.alphabet.com/alphabet-browser/answer/95464) -->
 
-**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  <!--  To learn when and how to use each type, navigate to [Pause your code with breakpoints][JSBreakpoints].  -->
+**Event Listener Breakpoints** are just one of many types of breakpoints available in DevTools.  Memorize all the different types to help you debug different scenarios as quickly as possible.  To learn when and how to use each type, see [Pause your code with breakpoints](breakpoints.md).
 
 
 <!-- ====================================================================== -->
@@ -230,38 +230,22 @@ This article showed two ways to set breakpoints.  DevTools also provides ways to
 *   Breakpoints on caught or uncaught exceptions.
 *   XHR breakpoints that are triggered when the requested URL matches a substring that you provide.
 
-For more information about when and how to use each type, navigate to [Pause your code with breakpoints][DevToolsJavscriptBreakpoints].
+For more information about when and how to use each type, navigate to [Pause your code with breakpoints](./breakpoints.md).
 
-A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code][DevToolsJavascriptReferenceStepThroughCode] in the "Use the debugger features" article.
+A couple of code stepping controls aren't explained in this article.  For more information, navigate to [Step over line of code](./reference.md#step-through-code) in the "Use the debugger features" article.
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the debugger features][DevToolsJavascriptReference] - Using the UI of the debugger in the Sources tool.
-*  [Sources tool overview][DevToolsSourcesIndex] - Introduces the JavaScript debugger and code editor.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DevToolsJavascriptReference]: ./reference.md "Use the debugger features | Microsoft Docs"
-[DevToolsSourcesIndex]: ../sources/index.md "Sources tool overview | Microsoft Docs"
-[DevToolsJavscriptBreakpoints]: ./breakpoints.md "How to pause your code with breakpoints in Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsJavascriptReferenceStepThroughCode]: ./reference.md#step-through-code "Step through code - Use the debugger features | Microsoft Docs"
-<!-- external links -->
-[OpenDebugJSDemo]: https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html "Open Demo | Glitch"
-<!--[inPrivate]: https://support.alphabet.com/alphabet-browser/answer/95464  -->
+*  [Use the debugger features](./reference.md) - Using the UI of the debugger in the Sources tool.
+*  [Sources tool overview](../sources/index.md) - Introduces the JavaScript debugger and code editor.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

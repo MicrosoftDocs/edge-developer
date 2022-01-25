@@ -99,7 +99,7 @@ To close a tool, select the **Close** (![Close Tool](../media/close-tab-icon.png
 <!-- ====================================================================== -->
 ## Change DevTools placement
 
-Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsPlacement].
+Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)](./placement.md).
 
 :::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
    Undocked DevTools
@@ -109,7 +109,7 @@ Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)][D
 <!-- ====================================================================== -->
 ## Color themes
 
-Navigate to [Apply color themes to DevTools][Theme].
+Navigate to [Apply color themes to DevTools](./theme.md).
 
 :::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme" lightbox="./media/customize-theme-setting.png":::
    Selecting a different color theme
@@ -127,22 +127,9 @@ To restore the default theme, placement, tools order, and any other customized s
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
-[Theme]: ./theme.md "Apply color themes to DevTools | Microsoft Docs"
-<!-- image links -->
-[ImageMoreIcon]: ../media/more-icon.msft.png
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

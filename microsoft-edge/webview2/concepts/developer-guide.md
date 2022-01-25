@@ -19,15 +19,15 @@ Every development team follows different practices when building their applicati
 
 We generally recommend using the Evergreen WebView2 Runtime.  Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements.  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime.
 
-If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  For more information, navigate to [Deploying the Evergreen WebView2 Runtime][Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime].
+If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  For more information, navigate to [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
 
 
 <!-- ====================================================================== -->
 ## Run compatibility tests regularly when using the Evergreen Runtime
 
-When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels][MicrosoftedgeinsiderDownload] (Beta, Dev, or Canary).
+When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary).
 
-This guidance is similar to the guidance that we give to web developers.  For more information, navigate to [Test your app for forward-compatibility][Webview2ConceptsDistributionStayCompatibleEvergreenMode].
+This guidance is similar to the guidance that we give to web developers.  For more information, navigate to [Test your app for forward-compatibility](../concepts/distribution.md#test-your-app-for-forward-compatibility).
 
 
 <!-- ====================================================================== -->
@@ -44,13 +44,13 @@ To solve this situation, before your code calls a recently added WebView2 API, t
 *   `QueryInterface` in C/C++.
 *   A `try/catch` block in .NET or WinUI.
 
-For more information, navigate to [Feature-detecting to test whether the installed Runtime supports recently added APIs][Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement].
+For more information, navigate to [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
 
 
 <!-- ====================================================================== -->
 ## Update the Fixed Version Runtime
 
-If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using 3rd-party content in Webview2 apps, always consider the content to be untrusted.  For more information, navigate to [Fixed Version distribution mode][Webview2ConceptsDistributionFixedVersionDistributionMode].
+If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using 3rd-party content in Webview2 apps, always consider the content to be untrusted.  For more information, navigate to [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ If you use the Fixed Version WebView2 Runtime, make sure you regularly update th
 
 When a new version of the Evergreen WebView2 Runtime is downloaded to the client, any WebView2 apps that are running continue to use the previous version of the runtime, until the browser process is released.  This behavior allows apps to run continuously, and prevents the previous runtime from being deleted.  To use the new version of the runtime, you need to either release all references to the previous WebView2 environment objects, or restart your app.  The next time your app creates a new WebView2 environment, the app will use the new version of the runtime.
 
-When a new version of the runtime is available, your app can automatically take action, such as notifying the user to restart the app.  To detect that a new version of the runtime is available, you can use the [add_NewBrowserVersionAvailable (Win32)][Webview2ReferenceaddNewBrowserVersionAvailable] or [CoreWebView2Environment.NewBrowserVersionAvailable (.NET)][Webview2ReferenceNewBrowserVersionAvailable] event in your code.  If your code handles restarting the app, consider saving the user state before the WebView2 app exits.
+When a new version of the runtime is available, your app can automatically take action, such as notifying the user to restart the app.  To detect that a new version of the runtime is available, you can use the [add_NewBrowserVersionAvailable (Win32)](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) or [CoreWebView2Environment.NewBrowserVersionAvailable (.NET)](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) event in your code.  If your code handles restarting the app, consider saving the user state before the WebView2 app exits.
 
 <!-- are the Ref links enough, or link to a regular article or article subsection? -->
 
@@ -66,7 +66,7 @@ When a new version of the runtime is available, your app can automatically take 
 <!-- ====================================================================== -->
 ## Manage the lifetime of the user data folder
 
-WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, navigate to [Managing the user data folder][Webview2ConceptsUserDataFolder].
+WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, navigate to [Managing the user data folder](../concepts/user-data-folder.md).
 
 
 <!-- ====================================================================== -->
@@ -74,7 +74,7 @@ WebView2 apps create a user data folder to store data such as cookies, credentia
 
 Your WebView2 app should listen for and handle the `ProcessFailed` event, so the app can recover from failures of runtime processes that support the WebView2 app process.
 
-WebView2 apps are supported by a collection of runtime processes that run alongside the app process.  These supporting runtime processes can fail for various reasons, such as running out of memory, or being terminated by the user.  When a supporting runtime process fails, WebView2 notifies the app by raising the [ProcessFailed event][WebView2ProcessFailedEvent].
+WebView2 apps are supported by a collection of runtime processes that run alongside the app process.  These supporting runtime processes can fail for various reasons, such as running out of memory, or being terminated by the user.  When a supporting runtime process fails, WebView2 notifies the app by raising the [ProcessFailed event](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs).
 
 <!-- is the Ref link enough, or link to a long section in regular docs? -->
 
@@ -82,7 +82,7 @@ WebView2 apps are supported by a collection of runtime processes that run alongs
 <!-- ====================================================================== -->
 ## Event handlers on the environment object
 
-If any of your app's event handlers on the [environment object][CreateCoreWebView2Environment] hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
+If any of your app's event handlers on the [environment object](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
 
 To prevent such a memory leak:
 *  For any added event handler, remove the event handler before releasing the environment object.
@@ -93,27 +93,4 @@ To prevent such a memory leak:
 <!-- ====================================================================== -->
 ## Follow recommended WebView2 security best practices
 
-For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications][Webview2ConceptsSecurity].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Webview2ConceptsDistributionDeployingEvergreenWebview2Runtime]: ../concepts/distribution.md#deploying-the-evergreen-webview2-runtime "Deploying the Evergreen WebView2 Runtime - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-[Webview2ConceptsDistributionFixedVersionDistributionMode]: ../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode "Details about the Fixed Version Runtime distribution mode - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-[Webview2ConceptsDistributionStayCompatibleEvergreenMode]: ../concepts/distribution.md#test-your-app-for-forward-compatibility "Test your app for forward-compatibility - Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-[Webview2ConceptsSecurity]: ../concepts/security.md "Best practices for developing secure WebView2 applications | Microsoft Docs"
-[Webview2ConceptsUserDataFolder]: ../concepts/user-data-folder.md "Manage the user data folder | Microsoft Docs"
-[Webview2ConceptsVersioningDetermineWebview2RuntimeRequirement]: ../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis "Feature-detecting to test whether the installed Runtime supports recently added APIs - Understand WebView2 SDK versions | Microsoft Docs"
-[Webview2GetStartedWin32]: ../get-started/win32.md "Get started with WebView2 | Microsoft Docs"
-[Webview2GetStartedWinforms]: ../get-started/winforms.md "Get started with WebView2 in Windows Forms | Microsoft Docs"
-[Webview2GetStartedWinui]: ../get-started/winui.md "Get started with WebView2 in WinUI 3 (Preview) | Microsoft Docs"
-[Webview2GetStartedWpf]: ../get-started/wpf.md "Get started with WebView2 in WPF | Microsoft Docs"
-<!-- external links -->
-[Webview2ReferenceaddNewBrowserVersionAvailable]: /microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable "add_NewBrowserVersionAvailable | Microsoft Docs"
-
-[Webview2ReferenceNewBrowserVersionAvailable]: /dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable "CoreWebView2Environment.NewBrowserVersionAvailable Event | Microsoft Docs"
-[WebView2ProcessFailedEvent]: /microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs "ICoreWebView2ProcessFailedEventArgs | Microsoft Docs"
-
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
-
-[CreateCoreWebView2Environment]: /microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment "CreateCoreWebView2Environment | Microsoft Docs"
+For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications](../concepts/security.md).

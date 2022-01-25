@@ -36,7 +36,7 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 <!-- ====================================================================== -->
 ## Overview
 
-In the spirit of the **RAIL** performance model, the focus of your performance efforts should be your users.
+In the spirit of the **RAIL**<!-- [RAIL](/profile/evaluate-performance/rail) --> performance model, the focus of your performance efforts should be your users.
 
 <!--todo: add RAIL section when available  -->
 
@@ -89,10 +89,10 @@ You may also use the Performance panel as another starting point in your investi
 
 1.  Open the **Performance** panel on DevTools.
 1.  Enable the **Memory** checkbox.
-1.  [Make a recording][DevtoolsEvaluatePerformanceReferenceRecord].
+1.  [Make a recording](../evaluate-performance/reference.md#record-performance).
 
 > [!TIP]
-> It is a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, choose the **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button while recording.
+> It is a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, choose the **collect garbage** ![force garbage collection](../media/collect-garbage-icon.msft.png) button while recording.
 
 To demonstrate memory recordings, consider the code below:
 
@@ -115,7 +115,7 @@ Every time that the button referenced in the code is chosen, ten thousand `div` 
 
 First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap (same as **HEAP** graph in the **Overview** pane), documents, DOM nodes, listeners, and GPU memory.  Turn off a checkbox to hide it from the graph.
 
-Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (choose the  **collect garbage** ![force garbage collection][ImageForceGarbageCollectionIcon] button).  As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.
+Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.  The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (choose the  **collect garbage** ![force garbage collection](../media/collect-garbage-icon.msft.png) button).  As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.  The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.
 
 <!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
 
@@ -193,7 +193,7 @@ document.getElementById('grow').addEventListener('click', grow);
 
 Every time that the button referenced in the code is pushed, a string of one million characters is added to the `x` array.
 
-To record an Allocation instrumentation on timeline, open DevTools, navigate to the **Memory** panel, choose the **Allocation instrumentation on timeline** radio button, choose the **Start** button, perform the action that you suspect is causing the memory leak, and then choose the **Stop recording heap profile** ![stop recording][ImageStopRecordingIcon] button when you are done.
+To record an Allocation instrumentation on timeline, open DevTools, navigate to the **Memory** panel, choose the **Allocation instrumentation on timeline** radio button, choose the **Start** button, perform the action that you suspect is causing the memory leak, and then choose the **Stop recording heap profile** ![stop recording](../media/stop-recording-icon.msft.png) button when you are done.
 
 As you are recording, notice if any blue bars show up on the Allocation instrumentation on timeline, like in the following figure.
 
@@ -246,25 +246,12 @@ After you have identified the problem, you are able to use an **Allocation instr
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsEvaluatePerformanceReferenceRecord]: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-performance "Record performance - Performance Analysis Reference"
-<!-- image links -->
-[ImageForceGarbageCollectionIcon]: ../media/collect-garbage-icon.msft.png
-[ImageStopRecordingIcon]: ../media/stop-recording-icon.msft.png
-
-<!--[RAIL]: /profile/evaluate-performance/rail  -->
-<!--[recording]: /profile/evaluate-performance/timeline-tool#make-a-recording ""  -->
-
-<!--[hngd]: https://jsfiddle.net/kaycebasques/tmtbw8ef/  -->
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+<!-- [recording](/profile/evaluate-performance/timeline-tool#make-a-recording) -->
+<!-- [hngd](https://jsfiddle.net/kaycebasques/tmtbw8ef/) -->

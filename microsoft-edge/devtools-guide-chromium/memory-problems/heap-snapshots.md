@@ -1,6 +1,6 @@
 ---
 description: Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
-title: How to record heap snapshots
+title: Record heap snapshots
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 05/04/2021
@@ -21,12 +21,12 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# How to record heap snapshots
+# Record heap snapshots
 
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
 
 The Microsoft Edge DevTools heap profiler shows memory distribution by the JavaScript objects and related DOM nodes
-of your page.  Use it to take JavaScript heap (JS heap) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  Navigate to [Objects retaining tree][DevtoolsMemoryProblems101ObjectsRetainingTree].
+of your page.  Use it to take JavaScript heap (JS heap) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  Navigate to [Objects retaining tree](./memory-101.md#objects-retaining-tree).
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ On the **Memory** panel, choose **Take snapshot**, then choose **Start**.  You m
 
 **Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you choose on the snapshot icon to view it.
 
-After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects][DevtoolsMemoryProblems101ObjectSizes].
+After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](./memory-101.md#object-sizes).
 
 :::image type="complex" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Total size of reachable objects" lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
    Total size of reachable objects
@@ -62,7 +62,7 @@ Choose **Clear all profiles** icon to remove snapshots (both from DevTools and a
 Closing the DevTools window does not delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
 > [!NOTE]
-> Try out this example of [scattered objects][GlitchDevtoolsMemoryExample03] and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+> Try out this example of [scattered objects](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
 
 
 <!-- ====================================================================== -->
@@ -101,8 +101,8 @@ Top-level entries are "total" lines.
 |:--- |:--- |
 | **Constructor** | Represents all objects created using this constructor.  |
 | **Distance** | displays the distance to the root using the shortest simple path of nodes.  |
-| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  Navigate to [Object sizes][DevtoolsMemoryProblems101ObjectSizes].  |
-| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you are able to free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  Navigate to [Object sizes][DevtoolsMemoryProblems101ObjectSizes].  |
+| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  Navigate to [Object sizes](./memory-101.md#object-sizes).  |
+| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you are able to free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  Navigate to [Object sizes](./memory-101.md#object-sizes).  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -192,7 +192,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 > -->
 >
 > > [!NOTE]
-> > Try out this example of [why `eval` is evil][GlitchDevtoolsMemoryExample07] to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations][GlitchDevtoolsMemoryExample08].
+> > Try out this example of [why `eval` is evil](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html).
 >
 
 
@@ -246,49 +246,30 @@ The `#leaf` maintains a reference to the relevant parent (parentNode) and recurs
 :::image-end:::
 
 > [!NOTE]
-> Examples:  Try this example of a [leaking DOM node][GlitchDevtoolsMemoryExample06] to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected][GlitchDevtoolsMemoryExample09].
+> Examples:  Try this example of a [leaking DOM node](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html) to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html).
 
-To read more about DOM leaks and memory analysis fundamentals checkout [Finding and debugging memory leaks with the Microsoft Edge DevTools][GonzaloRuizdeVillaMemory] by Gonzalo Ruiz de Villa.
+To read more about DOM leaks and memory analysis fundamentals checkout [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 
 <!--
 > [!NOTE]
 > Example: Try this **demo** to play with detached DOM trees.
 -->
 
-<!--todo: add heap profiling dom leaks section when available  -->
+<!-- todo: add heap profiling dom leaks section when available -->
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevtoolsMemoryProblems101ObjectSizes]: ./memory-101.md#object-sizes "Object sizes - Memory Terminology | Microsoft Docs"
-[DevtoolsMemoryProblems101ObjectsRetainingTree]: ./memory-101.md#objects-retaining-tree "Objects retaining tree - Memory Terminology | Microsoft Docs"
-
-<!--[DevToolsHeapProfilingComparison]: https://developer.alphabet.com/devtools/docs/heap-profiling-comparison ""  -->
-<!--[DevToolsHeapProfilingContainment]: https://developer.alphabet.com/devtools/docs/heap-profiling-containment ""  -->
-<!--[DevtoolsHeapProfilingDomLeaks]: https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks ""  -->
-<!--[DevToolsHeapProfilingSummary]: https://developer.alphabet.com/devtools/docs/heap-profiling-summary ""  -->
-<!--[DevtoolsProfileMemoryProblemsDiagnosisCausesMemoryLeaks]: ../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks ""  -->
-
-[GlitchDevtoolsMemoryExample03]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html "example-03.html - Microsoft Edge DevTools | Glitch"
-[GlitchDevtoolsMemoryExample06]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html "example-06.html - Microsoft Edge DevTools | Glitch"
-[GlitchDevtoolsMemoryExample07]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html "example-07.html - Microsoft Edge DevTools | Glitch"
-[GlitchDevtoolsMemoryExample08]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html "example-08.html - Microsoft Edge DevTools | Glitch"
-[GlitchDevtoolsMemoryExample09]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html "example-09.html - Microsoft Edge DevTools | Glitch"
-[GlitchDevtoolsMemoryExample10]: https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-10.html "example-10.html - Microsoft Edge DevTools | Glitch"
-
-[GonzaloRuizdeVillaMemory]: https://slid.es/gruizdevilla/memory "memory | Slides"
+<!--[heap profiling comparison](https://developer.alphabet.com/devtools/docs/heap-profiling-comparison) -->
+<!--[heap profiling containment](https://developer.alphabet.com/devtools/docs/heap-profiling-containment) -->
+<!--[heap profiling DOM leaks](https://developer.alphabet.com/devtools/docs/heap-profiling-dom-leaks) -->
+<!--[heap profiling summary](https://developer.alphabet.com/devtools/docs/heap-profiling-summary) -->
+<!--[narrow down causes of memory leaks](../profile/memory-problems/memory-diagnosis#narrow-down-causes-of-memory-leaks) -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) and is authored by [Meggin Kearney][MegginKearney] (Technical Writer).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
-[MegginKearney]: https://developers.google.com/web/resources/contributors#meggin-kearney
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

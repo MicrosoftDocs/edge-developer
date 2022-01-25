@@ -33,7 +33,7 @@ When you use a WebView2 SDK _prerelease_ package, use a Microsoft Edge preview c
 
 The SDK _prerelease_ package is a superset of the SDK release package, with method signatures for more, [Experimental APIs](#experimental-apis).  Preview channels provide the implementations of the experimental WebView2 APIs.  The experimental APIs are subject to change based on your feedback.  Avoid using the SDK prerelease package to build production apps.
 
-For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, navigate to [Switch to a preview channel to test upcoming APIs and features][SetPreviewChannel].
+For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, navigate to [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 
 <!-- ====================================================================== -->
@@ -44,10 +44,10 @@ When you use a WebView2 SDK _release_ package, use the WebView2 Evergreen _Runti
 The SDK _release_ package contains all of the stable Win32 C/C++ and .NET APIs, and doesn't include method signatures for experimental APIs.  All of the APIs that are in an SDK release package are fully supported, in an equal or higher build number of the WebView2 Runtime.
 
 The SDK release package contains the following components:
-*  [Win32 C/C++ APIs][ReferenceWin32].
-*  .NET APIs:  [WPF][DotnetMicrosoftWebWebview2WpfNamespace], [WinForms][DotnetMicrosoftWebWebview2WinformsNamespace], and [Core][DotnetMicrosoftWebWebview2CoreNamespace].
+*  [Win32 C/C++ APIs](/microsoft-edge/webview2/reference/win32).
+*  .NET APIs:  [WPF](/dotnet/api/microsoft.web.webview2.wpf), [WinForms](/dotnet/api/microsoft.web.webview2.winforms), and [Core](/dotnet/api/microsoft.web.webview2.core).
 
-For more information about automatic updating of the Evergreen Runtime, navigate to [Distribute a WebView2 app and the WebView2 Runtime][Webview2ConceptsDistribution].
+For more information about automatic updating of the Evergreen Runtime, navigate to [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md).
 
 
 <!-- ====================================================================== -->
@@ -97,7 +97,7 @@ The APIs that are in an SDK _release_ version are forward-compatible.  For more 
 
 The WebView2 team is seeking feedback on experimental WebView2 APIs that might be promoted to Stable in future releases.
 The experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation.
-To help you evaluate the experimental APIs and share your feedback, navigate to the [WebView feedback repo][GithubMicrosoftedgeWebviewfeedback].
+To help you evaluate the experimental APIs and share your feedback, navigate to the [WebView feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback).
 
 Avoid using the experimental APIs in production apps.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.  After the release of an API as stable and public, the experimental version of that API is supported for two releases in a deprecated state.
 
@@ -109,11 +109,11 @@ In the Evergreen distribution approach, the client's WebView2 Runtime automatica
 However, a user or IT admin might choose to prevent automatic updating of the WebView2 Runtime.
 The resulting outdated Runtime on the client might cause compatibility issues with your updated WebView2 app that uses new APIs from a recent SDK.
 
-In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the [WebView2 Runtime][MicrosoftDeveloperEdgeWebview2] that is required by your app.
+In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) that is required by your app.
 The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.
 The latest Runtime supports all APIs that are in the latest SDK release build.
 
-To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, navigate to [Release notes for WebView2 SDK][Webview2ReleaseNotes].
+To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, navigate to [Release notes for WebView2 SDK](../release-notes.md).
 
 
 <!-- ====================================================================== -->
@@ -125,34 +125,10 @@ If your app uses the Evergreen Runtime rather than Fixed Version, you should wra
 
 When you develop a WebView2 app using a recent version of the WebView2 SDK, if you use a recently added API, you should test or "feature-detect" whether that API is present in the client's installed WebView2 Runtime.  How your app programmatically tests for API support depends on the coding platform.
 
-*   **Win32 C/C++**.  When requesting the DLL export `CreateCoreWebView2Environment` and when running `QueryInterface` on any `CoreWebView2` object, test for a return value of `E_NOINTERFACE`.  That return value likely indicates that the client's WebView2 Runtime is an older version that doesn't support that interface.  For an example of checking for the existence of specific WebView2 APIs in the Runtime, find `try_query` in [AppWindow.cpp][GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCpp].  This file wraps WebView2 API calls in the `CHECK_FAILURE` macro function, defined in `CheckFailure.h`.
+*   **Win32 C/C++**.  When requesting the DLL export `CreateCoreWebView2Environment` and when running `QueryInterface` on any `CoreWebView2` object, test for a return value of `E_NOINTERFACE`.  That return value likely indicates that the client's WebView2 Runtime is an older version that doesn't support that interface.  For an example of checking for the existence of specific WebView2 APIs in the Runtime, find `try_query` in [AppWindow.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622).  This file wraps WebView2 API calls in the `CHECK_FAILURE` macro function, defined in `CheckFailure.h`.
 
 *   **.NET and WinUI**.  Use `try/catch` and check for a `No such interface supported` exception when using methods, properties, and events that were added to more recent versions of the WebView2 SDK.  This exception likely indicates that the client's WebView2 Runtime is an older version that doesn't support that API.
 
 If your code determines that an API is unavailable in the client's installed WebView2 Runtime, you should provide graceful fallback for the associated feature, or inform the user that they must update the WebView2 Runtime to use the feature.
 
-This technique is listed as a WebView2 development best practice, at [Test whether APIs are supported by the installed WebView2 Runtime][Webview2ConceptsDevguideTestAPIs].
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Webview2ConceptsDistribution]: ./distribution.md "Distribute a WebView2 app and the WebView2 Runtime | Microsoft Docs"
-[Webview2ReleaseNotes]: ../release-notes.md "Release notes for WebView2 SDK | Microsoft Docs"
-[Webview2ReleaseNotes1062222]: ../release-notes.md#1062222 "1.0.622.22 - Release notes for WebView2 SDK | Microsoft Docs"
-[Webview2ConceptsDevguideTestAPIs]: developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime "Test whether APIs are supported by the installed WebView2 Runtime | Microsoft Docs"
-[SetPreviewChannel]: ../how-to/set-preview-channel.md "Switch to a preview channel to test upcoming APIs and features | Microsoft Docs"
-<!-- external links -->
-[DeployedgeChannels]: /deployedge/microsoft-edge-channels "Overview of the Microsoft Edge channels | Microsoft Docs"
-
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
-[DotnetApiWebview2WinformsWebview2Appliesto]: /dotnet/api/microsoft.web.webview2.winforms.webview2#applies-to "WebView2 Class | Microsoft Docs"
-[ReferenceWin32]: /microsoft-edge/webview2/reference/win32 "WebView2 Win32 C++ Reference | Microsoft Docs"
-
-[MicrosoftDeveloperEdgeWebview2]: https://developer.microsoft.com/microsoft-edge/webview2/ "Microsoft Edge WebView2 | Microsoft Developer"
-
-[GithubMicrosoftedgeWebviewfeedback]: https://github.com/MicrosoftEdge/WebViewFeedback "WebView Feedback - MicrosoftEdge/WebViewFeedback | GitHub"
-[GithubMicrosoftedgeWebview2samplesSampleappsWebview2apisampleAppwindowCpp]: https://github.com/MicrosoftEdge/WebView2Samples/blob/8ec7de9d3e80a942bc7025cffad98eee75e11e64/SampleApps/WebView2APISample/AppWindow.cpp#L622 "AppWindow.cpp - MicrosoftEdge/WebView2Samples | GitHub"
-
-[MicrosoftedgeinsiderDownload]: https://www.microsoftedgeinsider.com/download "Download Microsoft Edge Insider Channels"
+This technique is listed as a WebView2 development best practice, at [Test whether APIs are supported by the installed WebView2 Runtime](developer-guide.md#test-whether-newer-apis-are-supported-by-the-installed-webview2-runtime).

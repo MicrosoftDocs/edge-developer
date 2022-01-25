@@ -10,7 +10,7 @@ keywords: microsoft edge, web development, html, css, javascript, developer, ext
 ---
 # Create an extension tutorial Part 2
 
-[Completed Extension Package Source for This Part][ArchiveExtensionGettingStartedPart2]
+[Completed Extension Package Source for This Part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 
 
 <!-- ====================================================================== -->
@@ -61,7 +61,7 @@ After updating and opening the extension, a pop-up opens with a display button.
    popup.html display after selecting the Extension icon
 :::image-end:::
 
-<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->
+<!--![popup.html display after selecting the Extension icon] -->
 
 2.  Update strategy to display image at the top of the browser tab
 
@@ -219,7 +219,7 @@ Now, when you browse to any page and select your **Extension** icon, the pop-up 
    popup.html display after selecting the Extension icon
 :::image-end:::
 
-<!--![popup.html display after selecting the Extension icon][ImagePart2Popupdialog]  -->
+<!-- ![popup.html display after selecting the Extension icon] -->
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
@@ -228,10 +228,3 @@ When you select the `Display` button, you get what is below.  If you select anyw
 :::image-end:::
 
 You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars jpeg.
-
-<!-- image links -->
-
-
-<!-- links -->
-
-[ArchiveExtensionGettingStartedPart2]: https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2 "Completed extension package source | Microsoft Docs"

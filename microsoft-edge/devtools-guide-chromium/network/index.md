@@ -26,7 +26,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
 This is a hands-on tutorial of some of the most commonly-used DevTools features related
 to inspecting network activity for a page.
 
-If you want to browse features, navigate to [Network Reference][DevtoolsNetworkReference].
+If you want to browse features, navigate to [Network Reference](./reference.md).
 
 <!--TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
 
@@ -45,7 +45,7 @@ In general, use the Network panel when you need to make sure that resources are 
 *   Making sure that resources are actually being uploaded or downloaded at all.
 *   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.
 
-If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  Navigate to [Optimize Website Speed][DevtoolsSpeedGetStarted].
+If you are looking for ways to improve page load performance, **do not** start with the **Network** tool.  There are many types of load performance issues that are not related to network activity.  Start with the Audits panel because it gives you targeted suggestions on how to improve your page.  Navigate to [Optimize Website Speed](../speed/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -53,7 +53,7 @@ If you are looking for ways to improve page load performance, **do not** start w
 
 To get the most out of this tutorial, open up the demo and try out the features on the demo page.
 
-1.  Open the [Get Started Demo][GlitchNetworkGetStarted].
+1.  Open the [Get Started Demo](https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html).
 
     :::image type="complex" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="The demo" lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
        The demo
@@ -67,14 +67,14 @@ To get the most out of this tutorial, open up the demo and try out the features 
     :::image-end:::
     -->
 
-1.  To [Open DevTools][DevToolsOpen], select `Control`+`Shift`+`J` (Windows, Linux) or
+1.  To [Open DevTools](../open/index.md), select `Control`+`Shift`+`J` (Windows, Linux) or
    `Command`+`Option`+`J` (macOS).  The **Console** tool opens.
 
     :::image type="complex" source="../media/network-glitch-console.msft.png" alt-text="The Console" lightbox="../media/network-glitch-console.msft.png":::
        The **Console**
     :::image-end:::
 
-    You might prefer to [dock DevTools to the bottom of your window][DevToolsCustomizePlacement].
+    You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md).
 
     :::image type="complex" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools docked to the bottom of the window" lightbox="../media/network-glitch-console-bottom.msft.png":::
        DevTools docked to the bottom of the window
@@ -111,7 +111,7 @@ To view the network activity that a page causes:
     *   **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover on a Waterfall.
 
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you can hide it.  Navigate to [Hide the Overview pane][DevtoolsReferenceHideOverview].
+    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you can hide it.  Navigate to [Hide the Overview pane](./reference.md#hide-the-overview-pane).
 
 1.  After you open DevTools, it records network activity in the Network Log.
     To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.
@@ -158,7 +158,7 @@ The network connection of the computer that you use to build sites is probably f
        **Empty Cache And Hard Reload**
     :::image-end:::
 
-    On repeat visits, the browser usually serves some files from the [cache][MDNHTTPCache], which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.
+    On repeat visits, the browser usually serves some files from the [cache](https://developer.mozilla.org/docs/Web/HTTP/Caching), which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.
 
     > [!NOTE]
     > The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.
@@ -238,7 +238,7 @@ Select a resource to learn more information about it.
 
 Use the **Search** pane when you need to search the HTTP headers and responses of all resources for a certain string or regular expression.
 
-For example, suppose you want to verify that your resources are using reasonable **cache policies**.
+For example, suppose you want to verify that your resources are using reasonable **cache policies**.<!--[cache policies](../../../web/tools/lighthouse/audits/cache-policy) -->
 
 <!--TODO: add cache policies section when available  -->
 
@@ -304,7 +304,7 @@ The **Filter** text box supports many different types of filtering.
        A property filter
     :::image-end:::
 
-    For the full list of filterable properties, navigate to [Filter requests by properties][DevtoolsReferenceProperty].
+    For the full list of filterable properties, navigate to [Filter requests by properties](./reference.md#filter-requests-by-properties).
 
 1.  Clear the **Filter** text box of any text.
 
@@ -326,7 +326,7 @@ To focus in on a certain type of file, such as stylesheets:
 
 1.  To remove the filters and display all resources again, select **All**.
 
-For other filtering workflows, navigate to [Filter requests][DevtoolsNetworkReferenceFilter].
+For other filtering workflows, navigate to [Filter requests](./reference.md#filter-requests).
 
 
 <!-- ====================================================================== -->
@@ -371,32 +371,13 @@ How does a page look and behave when some of the page resources are not availabl
 
 Congratulations, you have completed the tutorial.  You now know how to use the **Network** tool in the Microsoft Edge DevTools!
 
-Navigate to the [Network Reference][DevtoolsNetworkReference] to discover more DevTools features related to inspecting network activity.
+Navigate to the [Network Reference](./reference.md) to discover more DevTools features related to inspecting network activity.
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-<!--[CachePolicies]: ../../../web/tools/lighthouse/audits/cache-policy ""  -->
-[DevToolsCustomizePlacement]: ../customize/placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
-[DevtoolsNetworkReference]: ./reference.md "Network analysis reference | Microsoft Docs"
-[DevtoolsNetworkReferenceFilter]: ./reference.md#filter-requests "Filter requests - Network analysis reference | Microsoft Docs"
-[DevtoolsReferenceHideOverview]: ./reference.md#hide-the-overview-pane "Hide the Overview pane - Network analysis reference | Microsoft Docs"
-[DevtoolsReferenceProperty]: ./reference.md#filter-requests-by-properties "Filter requests by properties - Network analysis reference | Microsoft Docs"
-[DevToolsOpen]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsSpeedGetStarted]: ../speed/get-started.md "Optimize website speed with Microsoft Edge DevTools | Microsoft Docs"
-
-[GlitchNetworkGetStarted]: https://microsoft-edge-chromium-devtools.glitch.me/static/network/getstarted.html "Inspect Network Activity Demo | Glitch"
-
-[MDNHTTPCache]: https://developer.mozilla.org/docs/Web/HTTP/Caching "HTTP caching | MDN"
-
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

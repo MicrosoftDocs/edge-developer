@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # View and change IndexedDB data with Microsoft Edge DevTools
 
-This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools] to view and change [IndexedDB][MDNIndexedDBAPI] data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, navigate to [Using IndexedDB][MDNUsingIndexedDB].
+This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, navigate to [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB).
 
 
 <!-- ====================================================================== -->
@@ -43,10 +43,10 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
 
     *   (![Database icon](../media/database-icon.msft.png)) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.
     *   (![Object Store icon](../media/object-store-icon.msft.png)) `notes` is an object store.
-    *   **title** and **body** are [indexes][MDNUsingIndexedDBUsingIndex].
+    *   **title** and **body** are [indexes](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index).
 
     > [!NOTE]
-    > **Known Limitation**  Third-party databases are not visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network is not be visible.  Navigate to [issue #943770][ChromiumIssue943770].
+    > **Known Limitation**  Third-party databases are not visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network is not be visible.  Navigate to [issue #943770](https://crbug.com/943770).
 
 1.  Choose a database to review the origin and version number.
 
@@ -64,7 +64,7 @@ This guide shows you how to use [Microsoft Edge DevTools][MicrosoftEdgeDevTools]
     :::image-end:::
 
     *   **Total entries** is the total number of key-value pairs in the object store.
-    *   **Key generator value** is the next available key.  The field is only shown when using [key generators][MDNBasicConceptsKeyGenerator].
+    *   **Key generator value** is the next available key.  The field is only shown when using [key generators](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator).
 
 1.  Choose a cell in the **Value** column to expand the value.
 
@@ -96,7 +96,7 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 
 ### Edit IndexedDB data with Snippets
 
-[Snippets][DevtoolsJavascriptSnippets] are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You may use a Snippet to run JavaScript code to edit an IndexedDB database.
+[Snippets](../javascript/snippets.md) are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You may use a Snippet to run JavaScript code to edit an IndexedDB database.
 
 :::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Use a Snippet to interact with IndexedDB" lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
    Use a Snippet to interact with IndexedDB
@@ -152,28 +152,9 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-
-[MicrosoftEdgeDevTools]: ../../devtools-guide-chromium/index.md "Microsoft Edge  Developer tools | Microsoft Docs"
-[DevtoolsJavascriptSnippets]: ../javascript/snippets.md "Run snippets of JavaScript on any page with Microsoft Edge DevTools | Microsoft Docs"
-<!-- external links -->
-[ChromiumIssue943770]: https://crbug.com/943770 "943770 - DevTools: Show iframe IndexedDB databases - chromium - Monorail"
-
-[MDNBasicConceptsKeyGenerator]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator "Key Generator - Basic Concepts | MDN"
-[MDNIndexedDBAPI]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API "IndexedDB API | MDN"
-[MDNUsingIndexedDB]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB "Using IndexedDB | MDN"
-[MDNUsingIndexedDBUsingIndex]: https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index "Using an index - Using IndexedDB | MDN"
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

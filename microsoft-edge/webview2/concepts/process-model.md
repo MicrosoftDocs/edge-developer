@@ -13,7 +13,7 @@ keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, I
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
-The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture].
+The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture).
 
 
 <!-- ====================================================================== -->
@@ -42,7 +42,7 @@ The logic that controls when these extra processes are created depends on the Ch
 
 All processes in a WebView2 Runtime processes collection are tied to the browser process, which in turn is associated with a single user data folder (UDF).  If an application makes use of multiple user data folders, a collection of WebView2 Runtime processes will be created for each of these user data folders.
 
-A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage the user data folder][WebView2ManageUDF].
+A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage the user data folder](./user-data-folder.md).
 
 :::image type="complex" source="../media/process-model-2.png" alt-text="Process 2" lightbox="../media/process-model-2.png":::
    Process 2
@@ -75,21 +75,8 @@ All processes that are associated with the browser process of your WebView2 are 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Inside look at modern web browser (part 1)][GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture] - the browser process model that's used by the WebView2 Runtime and the Microsoft Edge browser.
-*  [WebView2 Get Started Guides][Webview2IndexGetStarted]
-*  [WebView2Samples repo][GithubMicrosoftedgeWebview2samples] - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference][DotnetApiMicrosoftWebWebview2WpfWebview2]
-*  [See also][Webview2IndexNextSteps] in _Introduction to Microsoft Edge WebView2_.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[Webview2IndexGetStarted]: ../index.md#get-started "Get started - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[Webview2IndexNextSteps]: ../index.md#see-also "See also - Introduction to Microsoft Edge WebView2 | Microsoft Docs"
-[WebView2ManageUDF]: ./user-data-folder.md "Manage the user data folder | Microsoft Docs"
-<!-- external links -->
-[DotnetApiMicrosoftWebWebview2WpfWebview2]: /dotnet/api/microsoft.web.webview2.wpf.webview2 "WebView2 Class | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2samples]: https://github.com/MicrosoftEdge/WebView2Samples "WebView2 Samples - MicrosoftEdge/WebView2Samples | GitHub"
-
-[GoogleDeveloperWebUpdates201809InsideBrowserPart1BrowserArchitecture]: https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture "Inside look at modern web browser (part 1)"
+*  [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture) - the browser process model that's used by the WebView2 Runtime and the Microsoft Edge browser.
+*  [WebView2 Get Started Guides](../index.md#get-started)
+*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

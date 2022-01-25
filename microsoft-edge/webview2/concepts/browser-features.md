@@ -37,33 +37,33 @@ The following table displays the WebView2 features that differ from the Microsof
 *   **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
 
 > [!NOTE]
-> This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, navigate to [List of Chromium Command Line Switches][PeterExperimentsChromiumCommandLineSwitches].
+> This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, see [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
 
 | Feature | Default state | Configurable | Details |
-|:--- |:--- |:--- | :--- |
-| Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs.  |
-| Autofill for Passwords | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs.  |
-| Autofill for Payments | Off | No | This feature is turned off.  |
-| Browser Extensions | Off | No | This feature is turned off.  |
-| Browser Task Manager | Off | No | This feature is turned off.  |
-| Collections | Off | No | This feature is turned off.  |
-| Continue-where-I-left-off prompt | Off | No | This feature is turned off.  |
-| Downloads | On | Yes | WebView2 provides an API that allows you to customize the download UI to manipulate downloads. For example, you can block, redirect, save, pause, and so on.  <!--For more information, navigate to [download API][Webview2ReferenceDownloadApi].--> |
-| Edge Shopping | Off | No | This feature is turned off.  |
-| Family Safety | Off | No | This feature is turned off.  |
-| Favorites | Off | No | This feature is turned off.  |
+| --- | --- | --- | --- |
+| Autofill for Addresses | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
+| Autofill for Passwords | On | Yes | This feature is turned on by default.  You can turn this feature on or off by using the WebView2 Autofill APIs. |
+| Autofill for Payments | Off | No | This feature is turned off. |
+| Browser Extensions | Off | No | This feature is turned off. |
+| Browser Task Manager | Off | No | This feature is turned off. |
+| Collections | Off | No | This feature is turned off. |
+| Continue-where-I-left-off prompt | Off | No | This feature is turned off. |
+| Downloads | On | Yes | WebView2 provides an API that allows you to customize the download UI to manipulate downloads. For example, you can block, redirect, save, pause, and so on.  For more information, see [Download API](/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.902-prerelease&preserve-view=true#add_downloadstarting). |
+| Edge Shopping | Off | No | This feature is turned off. |
+| Family Safety | Off | No | This feature is turned off. |
+| Favorites | Off | No | This feature is turned off. |
 | IE Mode | Off | No | This feature is turned off. WebView2 doesn't support IE mode and has differences in behavior compared to IE (such as MHT or BIN support). |
-| Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off.  |
-| Intrusive Ads | Off | No | This feature is turned off.  |
-| Keyboard Shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You cannot turn these shortcuts off or on.  Instead, you can listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, navigate to [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |
-| PDF Annotations | Off | No | This feature is turned off. The PDF viewing feature is enabled, but drawing, inking, and highlighting in a PDF are not enabled. For more information, navigate to [Disabling Feature: PDF Annotations Support](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21). |
-| Read Aloud | Off | No | This feature is turned off.  |
-| Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you can turn off Smart Screen by using a command-line switch.  |
-| Translate | Off | No | This feature is turned off.  |
-| Tracking Prevention | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Tracking prevention is always set to balanced.|
-| Profile and Identity | Off | No | The feature that syncs your favorites, cookies, and so on, is turned off.  |
-| Windows Defender Application Guard | Off | No | This feature is turned off.  |
-| edge:// URLs | Review Details | No | Settings for the Microsoft Edge browser are on `edge://` URLs.  Because most of these webpages have Microsoft Edge branding or don't make sense within the context of WebView2, some of these URLs are turned off.  For more information, navigate to [Blocked internal URLs](#blocked-internal-urls).  |
+| Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off. |
+| Intrusive Ads | Off | No | This feature is turned off. |
+| Keyboard Shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You cannot turn these shortcuts off or on.  Instead, you can listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, see [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |
+| PDF Annotations | Off | No | This feature is turned off. The PDF viewing feature is enabled, but drawing, inking, and highlighting in a PDF are not enabled. For more information, see [Disabling Feature: PDF Annotations Support](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21). |
+| Read Aloud | Off | No | This feature is turned off. |
+| Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you can turn off Smart Screen by using a command-line switch. |
+| Translate | Off | No | This feature is turned off. |
+| Tracking Prevention | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Tracking prevention is always set to balanced. |
+| Profile and Identity | Off | No | The feature that syncs your favorites, cookies, and so on, is turned off. |
+| Windows Defender Application Guard | Off | No | This feature is turned off. |
+| edge:// URLs | Review Details | No | Settings for the Microsoft Edge browser are on `edge://` URLs.  Because most of these webpages have Microsoft Edge branding or don't make sense within the context of WebView2, some of these URLs are turned off.  For more information, see [Blocked internal URLs](#blocked-internal-urls). |
 
 
 <!-- ====================================================================== -->
@@ -180,17 +180,4 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |
 
 > [!Note]
-> To customize any of the keys individually, use the [AcceleratorKeyPressed][DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444] event.
-
-
-<!-- ====================================================================== -->
-<!-- links -->
-[DotnetApiMicrosoftWebWebview2CoreCorewebview2controllerAcceleratorkeypressedViewWebview2Dotnet1077444]: /dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true "CoreWebView2Controller.AcceleratorKeyPressed Event | Microsoft Docs"
-
-[DevtoolsShortcutsIndex]: ../../devtools-guide-chromium/shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
-
-[GithubMicrosoftedgeWebview2feedbackIssues308]: https://github.com/MicrosoftEdge/WebView2Feedback/issues/308 "Add support for HTML5 Notification API (#308) | GitHub"
-
-[PeterExperimentsChromiumCommandLineSwitches]: https://peter.sh/experiments/chromium-command-line-switches "List of Chromium Command Line Switches | Peter Beverloo"
-
-<!-- [Webview2ReferenceDownloadApi]: ./download-api.md "download API | Microsoft Docs" -->
+> To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
