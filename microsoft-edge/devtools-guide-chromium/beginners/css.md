@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 07/26/2021
 ---
 <!-- Copyright Katherine Jackson
@@ -283,7 +282,7 @@ To edit existing declarations in DevTools
 
 To add new rulesets in DevTools
 
-1.  Select **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
+1.  Select **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
 
     :::image type="content" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule." lightbox="../media/beginners-css-rule1.msft.png":::
 
@@ -511,5 +510,5 @@ Congratulations, you're done!
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

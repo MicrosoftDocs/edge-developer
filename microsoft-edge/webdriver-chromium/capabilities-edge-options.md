@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test
 ms.date: 02/10/2021
 ---
 # Capabilities and EdgeOptions
@@ -25,7 +24,6 @@ Create an instance of `EdgeOptions`, which provides convenience methods to set M
 
 ```csharp
 var options = new EdgeOptions();
-options.UseChromium = true;
 options.AddExtensions("/path/to/extension.crx");
 var driver = new EdgeDriver(options);
 ```

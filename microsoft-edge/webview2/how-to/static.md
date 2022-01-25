@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ms.date: 05/06/2021
 ---
 # Statically link the WebView2 loader library
@@ -22,7 +21,7 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
 
 1.  Locate the section in the code where you include the WebView2 NuGet package target files.  The location in the code is highlighted in the following figure.
 
-    :::image type="complex" source="./media/insert-here.png" alt-text="Project Files code snippet" lightbox="./media/insert-here.png":::
+    :::image type="complex" source="./media/insert-here.png" alt-text="Project Files code snippet." lightbox="./media/insert-here.png":::
        Project Files code snippet
     :::image-end:::
 
@@ -34,7 +33,7 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
     </PropertyGroup>
     ```
 
-    :::image type="complex" source="./media/static-lib.png" alt-text="Inserted code snippet" lightbox="./media/static-lib.png":::
+    :::image type="complex" source="./media/static-lib.png" alt-text="Inserted code snippet." lightbox="./media/static-lib.png":::
        Inserted code snippet
     :::image-end:::
 

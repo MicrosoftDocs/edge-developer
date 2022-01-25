@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
 ms.date: 02/17/2021
 ---
 # Submission states for extensions in the Microsoft Edge Add-ons website

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform, password reveal, eye icon
 ms.date: 04/29/2021
 ---
 # Customize the password reveal button
@@ -14,11 +13,11 @@ The `password` input type in Microsoft Edge includes a **password reveal** contr
 
 A **password** field with dots hiding the characters entered by a user.  The **password reveal** button appears to the right of the **password** field.  The eye-shaped icon appears next to the dots that hide the password text:
 
-:::image type="complex" source="./media/mdn-demo-password-reveal-off.msft.png" alt-text="The eye-shaped icon appears next to the dots that hide the password text" lightbox="./media/mdn-demo-password-reveal-off.msft.png":::
+:::image type="complex" source="./media/mdn-demo-password-reveal-off.msft.png" alt-text="The eye-shaped icon appears next to the dots that hide the password text." lightbox="./media/mdn-demo-password-reveal-off.msft.png":::
 
 Toggle the **password reveal** button to change the eye icon to an eye icon with a slash through it, and to reveal the original password text.  The eye-shaped icon has a slash on it and the original password text is displayed:
 
-:::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="The The eye-shaped icon has a slash on it and the original password text is displayed" lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
+:::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="The The eye-shaped icon has a slash on it and the original password text is displayed." lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
 
 By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) may disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
 

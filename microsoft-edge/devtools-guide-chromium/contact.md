@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 09/29/2021
 ---
 # Contact the Microsoft Edge DevTools team
@@ -21,11 +20,11 @@ There are several ways to get in touch with the Microsoft Edge DevTools team.
 
 To report a bug in DevTools or to request a new feature, [open DevTools](index.md#opening-devtools) and then select the **Send Feedback** icon.  Or, in DevTools, select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
 
-:::image type="content" source="../media/devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools" lightbox="../media/devtools-send-feedback.msft.png":::
+:::image type="content" source="../media/devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in Microsoft Edge DevTools." lightbox="../media/devtools-send-feedback.msft.png":::
 
 Selecting the **Send Feedback** icon opens a **Send Feedback** window.
 
-:::image type="content" source="../media/send-feedback-dbox.msft.png" alt-text="The Send Feedback window" lightbox="../media/send-feedback-dbox.msft.png":::
+:::image type="content" source="../media/send-feedback-dbox.msft.png" alt-text="The Send Feedback window." lightbox="../media/send-feedback-dbox.msft.png":::
 
 
 <!-- ====================================================================== -->

@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, edge, ICoreWebView2, ICoreWebView2Controller, Chrome DevTools Protocol
 ms.date: 05/06/2021
 ---
 # Use the Chrome DevTools Protocol in WebView2
@@ -75,7 +74,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 1.  Open the `geolocation.html` file.
 1.  To display your latitude and longitude coordinates, choose the **Display Location** button.  To verify and compare your geolocation, copy and paste your coordinates in [https://www.bing.com/maps](https://www.bing.com/maps).
 
-    :::image type="complex" source="./media/geolocater-browser.png" alt-text="Display the geolocation coordinates of the user in Microsoft Edge" lightbox="./media/geolocater-browser.png":::
+    :::image type="complex" source="./media/geolocater-browser.png" alt-text="Display the geolocation coordinates of the user in Microsoft Edge." lightbox="./media/geolocater-browser.png":::
        Display the geolocation coordinates of the user in Microsoft Edge
     :::image-end:::
 
@@ -95,7 +94,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1.  Ensure the `geolocation.html` file displays in your WebView2 control app.
 
-    :::image type="complex" source="./media/initial-geolocate.png" alt-text="Display the geolocater.html file in your WebView2 control app" lightbox="./media/initial-geolocate.png":::
+    :::image type="complex" source="./media/initial-geolocate.png" alt-text="Display the geolocater.html file in your WebView2 control app." lightbox="./media/initial-geolocate.png":::
        Display the `geolocation.html` file in your WebView2 control app
     :::image-end:::
 
@@ -108,7 +107,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 1.  Choose **Project** > **Manage NuGet Packages** > **Browse**.
 1.  Type `Microsoft.Web.WebView2.DevToolsProtocolExtension` and choose **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **Install**.
 
-:::image type="complex" source="./media/cdp-nuget.png" alt-text="Ensure Microsoft.Web.WebView2.DevToolsProtocolExtension displays in the Visual Studio NuGet Package Manager" lightbox="./media/cdp-nuget.png":::
+:::image type="complex" source="./media/cdp-nuget.png" alt-text="Ensure Microsoft.Web.WebView2.DevToolsProtocolExtension displays in the Visual Studio NuGet Package Manager." lightbox="./media/cdp-nuget.png":::
    Ensure **Microsoft.Web.WebView2.DevToolsProtocolExtension** displays in the Visual Studio NuGet Package Manager
 :::image-end:::
 
@@ -157,7 +156,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 1.  Run your app.
 1.  To display the coordinates of Paris, France, choose the **Display Location** button.
 
-    :::image type="complex" source="./media/final-location-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris" lightbox="./media/final-location-cdp.png":::
+    :::image type="complex" source="./media/final-location-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris." lightbox="./media/final-location-cdp.png":::
        Display the `.html` file in a WebView2 control with the coordinates for Paris
     :::image-end:::
 

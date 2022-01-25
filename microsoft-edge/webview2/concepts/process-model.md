@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
 ms.date: 09/21/2021
 ---
 # The WebView2 process model
@@ -24,7 +23,7 @@ A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A Web
 *  One or more renderer processes.
 *  Other helper processes, such as the GPU process and the Audio service process.
 
-:::image type="complex" source="../media/process-model-1.png" alt-text="Process 1" lightbox="../media/process-model-1.png":::
+:::image type="complex" source="../media/process-model-1.png" alt-text="Process 1." lightbox="../media/process-model-1.png":::
    Process 1
 :::image-end:::
 
@@ -44,7 +43,7 @@ All processes in a WebView2 Runtime processes collection are tied to the browser
 
 A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage the user data folder](./user-data-folder.md).
 
-:::image type="complex" source="../media/process-model-2.png" alt-text="Process 2" lightbox="../media/process-model-2.png":::
+:::image type="complex" source="../media/process-model-2.png" alt-text="Process 2." lightbox="../media/process-model-2.png":::
    Process 2
 :::image-end:::
 

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
 ---
 # Check text-color contrast in the default state using the Inspect tool
@@ -28,7 +27,7 @@ As an example, on the demo page, the blue links of the sidebar navigation menu h
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** (![Inspect button](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1.  Select the **Inspect** (![Inspect button.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1.  In the rendered webpage, hover over the blue **Cats** link of the sidebar navigation menu.  The **Inspect** tool's information overlay appears.  In the **Accessibility** section of the information overlay, a green checkmark appears on the **Contrast** row, indicating that this element has enough contrast of text color versus background color.
 

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
@@ -79,7 +78,7 @@ When running Source Maps in DevTools, you should notice that the JavaScript is n
 
 Source Maps are enabled by default<!-- (as of Microsoft Edge 39)-->, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** (`...`) > **Settings**.  On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.  You may also turn on the **Enable CSS Source Maps**.
 
-:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enable Source Maps" lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+:::image type="complex" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enable Source Maps." lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
    **Enable JavaScript Source Maps**
 :::image-end:::
 
@@ -115,7 +114,7 @@ Complete the following actions.
 
 If you expand the **Sources** sub-panel you now display a new file with the custom filename you entered earlier.  If you double-click to view this file, it contains the compiled JavaScript for the original source.  On the last line, however, is a `// @sourceURL` comment indicating the original source file.  This may help you with debugging while working with language abstractions.
 
-:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Work with sourceURL" lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
+:::image type="complex" source="../media/javascript-sources-page-coffeeeeeeee.msft.png" alt-text="Work with sourceURL." lightbox="../media/javascript-sources-page-coffeeeeeeee.msft.png":::
    Work with `sourceURL`
 :::image-end:::
 
@@ -125,5 +124,5 @@ If you expand the **Sources** sub-panel you now display a new file with the cust
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate, Google: Tools, Performance, Animation, and UX).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

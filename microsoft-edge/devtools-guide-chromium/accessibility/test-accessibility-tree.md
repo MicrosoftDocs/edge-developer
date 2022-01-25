@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
 ---
 # Check the Accessibility Tree for keyboard and screen reader support
@@ -20,7 +19,7 @@ To explore using the Accessibility Tree with the demo page:
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** (![the Inspect icon](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1.  Select the **Inspect** (![the Inspect icon.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1.  In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
 
@@ -28,7 +27,7 @@ To explore using the Accessibility Tree with the demo page:
 
 1.  To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded.
 
-:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="Donation form button in the Accessibility Tree tool" lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
+:::image type="complex" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="Donation form button in the Accessibility Tree tool." lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
     Donation form button in the Accessibility Tree tool
 :::image-end:::
 

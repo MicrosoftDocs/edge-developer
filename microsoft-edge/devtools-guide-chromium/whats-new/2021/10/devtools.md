@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 10/20/2021
 ---
 # What's New in DevTools (Microsoft Edge 95)
@@ -60,7 +59,7 @@ In Microsoft Edge version 95, this issue has been fixed.  Selecting the **User a
 
 To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
-:::image type="content" source="../../media/2021/10/keyboard-define-ua-client-hints.png" alt-text="Description" lightbox="../../media/2021/10/keyboard-define-ua-client-hints.png":::
+:::image type="content" source="../../media/2021/10/keyboard-define-ua-client-hints.png" alt-text="Description." lightbox="../../media/2021/10/keyboard-define-ua-client-hints.png":::
 
 To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
 
@@ -151,5 +150,5 @@ For the history of this feature, see Chromium issue [1201997](https://crbug.com/
 > [!NOTE]
 > The "Announcements from the Chromium project" section of this page is a modification based on work that is created and shared by Google per [Site Policies](https://developers.google.com/terms/site-policies), and is used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).  The original page for the Announcements from the Chromium project is [What's New In DevTools (Chrome 95)](https://developer.chrome.com/blog/new-in-devtools-95), authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen), a Developer advocate working on Chrome DevTools at Google.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

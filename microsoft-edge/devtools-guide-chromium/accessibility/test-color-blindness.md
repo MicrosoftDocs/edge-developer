@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
 ---
 # Verify that a page is usable by people with color blindness
@@ -30,7 +29,7 @@ To check whether a webpage is usable by people with color blindness:
 
 1.  In the **Emulate vision deficiencies** dropdown list, select **Protanopia**.  _Protanopia_ is reduced sensitivity to red light, making it hard to differentiate green, red, and yellow.
 
-    :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the document as someone with protanopia would see it" lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the document as someone with protanopia would see it." lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
         Showing the document as someone with protanopia would see it
     :::image-end:::
 

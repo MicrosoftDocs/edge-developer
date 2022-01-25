@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -57,7 +56,7 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 After you have your manifest set up, you may use the **Manifest** pane of the **Application** panel to inspect it.
 
-:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="The Manifest Pane" lightbox="../media/manifest-pane.msft.png":::
+:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="The Manifest Pane." lightbox="../media/manifest-pane.msft.png":::
    The **Manifest** Pane
 :::image-end:::
 
@@ -74,7 +73,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You may test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--
-:::image type="complex" source="../media/io.msft.png" alt-text="Add to desktop shelf" lightbox="../media/io.msft.png":::
+:::image type="complex" source="../media/io.msft.png" alt-text="Add to desktop shelf." lightbox="../media/io.msft.png":::
    Add to desktop shelf
 :::image-end:::
 -->
@@ -108,7 +107,7 @@ Service workers are a fundamental technology in the future web platform.  They a
 
 The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="The Service Workers pane" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="The Service Workers pane." lightbox="../media/service-workers-pane.msft.png":::
    The **Service Workers** pane
 :::image-end:::
 
@@ -128,7 +127,7 @@ If the service worker causes any errors, a new label called **Errors** shows
 up.
 
 <!--
-:::image type="complex" source="../media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="../media/sw-error.msft.png":::
+:::image type="complex" source="../media/sw-error.msft.png" alt-text="Service worker with errors." lightbox="../media/sw-error.msft.png":::
    Service worker with errors
 :::image-end:::
 -->
@@ -142,7 +141,7 @@ up.
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache).
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane." lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    The **Cache Storage** Pane
 :::image-end:::
 
@@ -151,7 +150,7 @@ The **Cache Storage** pane provides a read-only list of resources that have been
 
 If you have two or more caches open, the caches display under the following **Cache Storage** dropdown.
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown" lightbox="../media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown." lightbox="../media/cache-pane-cache-storage.msft.png":::
    The **Cache Storage** dropdown
 :::image-end:::
 
@@ -205,5 +204,5 @@ Related Guides:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform, internet explorer
 ms.date: 11/13/2020
 ---
 # Moving users to Microsoft Edge from Internet Explorer
@@ -47,13 +46,13 @@ The following browsing data is imported:
 
 Browsing notification and prompt to import data and preferences:
 
-:::image type="content" source="../media/neededge-dialog1.msft.png" alt-text="Browsing notification and prompt to import data and preferences" lightbox="../media/neededge-dialog1.msft.png":::
+:::image type="content" source="../media/neededge-dialog1.msft.png" alt-text="Browsing notification and prompt to import data and preferences." lightbox="../media/neededge-dialog1.msft.png":::
 
 If the user doesn't consent by selecting the **Always bring over my browsing data and preferences from Internet Explorer** checkbox, the user may choose **Continue browsing** to continue the browsing session.
 
 Finally, a website incompatibility banner is displayed under the address bar for each redirection.  An example of a website incompatibility banner is displayed in following figure.
 
-:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge" lightbox="../media/neededge-banner.msft.png":::
+:::image type="complex" source="../media/neededge-banner.msft.png" alt-text="Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge." lightbox="../media/neededge-banner.msft.png":::
    Notification about modern sites and prompt to set Microsoft Edge as default browser or explore Microsoft Edge
 :::image-end:::
 

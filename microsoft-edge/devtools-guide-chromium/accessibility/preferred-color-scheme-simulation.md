@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 08/03/2021
 ---
 # Emulate dark or light schemes in the rendered page
@@ -30,7 +29,7 @@ This article is about changing the appearance of the webpage under development. 
 
 1.  In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: dark** or **prefers-color-scheme: light**.
 
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool." lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
        Emulating dark or light mode using the **Rendering** tool
     :::image-end:::
 

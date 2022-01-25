@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
 ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques
@@ -47,7 +46,7 @@ Use [Remote Debugging](../remote-debugging/index.md) to interact with the code o
 <!-- ====================================================================== -->
 ## Simulate a mobile viewport
 
-Select **Toggle device emulation**  (![Toggle Device Toolbar](../media/toggle-device-toolbar-dark-icon.msft.png)) or select **Customize and control DevTools** (`...`) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.
+Select **Toggle device emulation**  (![Toggle Device Toolbar.](../media/toggle-device-toolbar-dark-icon.msft.png)) or select **Customize and control DevTools** (`...`) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -97,7 +96,7 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 Test your webpage in landscape orientation.
 
-*   To rotate the viewport to landscape orientation, select **Rotate** (![Rotate](../media/rotate-dark-icon.msft.png)).
+*   To rotate the viewport to landscape orientation, select **Rotate** (![Rotate.](../media/rotate-dark-icon.msft.png)).
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page displayed in landscape orientation." lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
 
@@ -174,7 +173,7 @@ All of the throttling is based upon the normal capability of your laptop or desk
 
 To throttle the CPU only and not the network:
 
-1.  Select the **Performance** panel, and select **Capture Settings** (![Capture Settings](../media/capture-settings-icon.msft.png)).
+1.  Select the **Performance** panel, and select **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).
 1.  Select **CPU** > **4x slowdown** or **6x slowdown**.
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="The CPU list in the Performance panel." lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
@@ -193,7 +192,7 @@ To throttle the network only and not the CPU:
 
 You can also set network throttling from the **Performance** panel:
 
-1.  Select **Capture Settings** (![Capture Settings](../media/capture-settings-icon.msft.png)) and select the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.
+1.  Select **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)) and select the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.
 
     :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Setting network throttling from the Performance panel." lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
@@ -285,5 +284,5 @@ You can also set user-agent client hints in the **Network** tool; see [Network f
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, privacy, whitepaper, privacy whitepaper, trust, microsoft edge privacy, browser privacy, privacy settings
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
 ms.date: 12/10/2021
@@ -24,7 +23,7 @@ This whitepaper focuses on the desktop version of Microsoft Edge. Parts of the d
 
 The address bar allows you to enter website URLs and search the web.  By default, the address bar provides search and site suggestions using the characters you type.  Suggestions come from your favorites, browsing history, previous searches, and default search provider.
 
-:::image type="complex" source="./media/address-bar.png" alt-text="Address bar" lightbox="./media/address-bar.png":::
+:::image type="complex" source="./media/address-bar.png" alt-text="Address bar." lightbox="./media/address-bar.png":::
    Address bar
 :::image-end:::
 
@@ -112,7 +111,7 @@ Collections are not available when using **InPrivate** or **Guest** modes.
 
 If optional diagnostic data, including crash reports, are turned on, diagnostic data is collected when Microsoft Edge crashes or closes unexpectedly. The diagnostic data is used to diagnose and fix problems with Microsoft Edge and other Microsoft products and services.
 
-:::image type="complex" source="./media/crashes2.png" alt-text="Crashes" lightbox="./media/crashes2.png":::
+:::image type="complex" source="./media/crashes2.png" alt-text="Crashes." lightbox="./media/crashes2.png":::
    Crashes
 :::image-end:::
 
@@ -140,7 +139,7 @@ Microsoft uses diagnostic data to improve products and services. Diagnostic da
 
 Microsoft Edge collects a set of required diagnostic data needed to keep the product secure, up to date, and performing properly. The required diagnostic data includes device connectivity, configuration information, software setup, and inventory. Microsoft uses this diagnostic data to troubleshoot issues and keep Microsoft products and services reliable, secure, and operating normally. For more information about diagnostic data on managed devices, navigate to [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) and [Microsoft Edge diagnostic data group policy](/deployedge/microsoft-edge-enterprise-privacy-settings).
 
-:::image type="complex" source="./media/diagnostic-data2.png" alt-text="Diagnostic data" lightbox="./media/diagnostic-data2.png":::
+:::image type="complex" source="./media/diagnostic-data2.png" alt-text="Diagnostic data." lightbox="./media/diagnostic-data2.png":::
    Diagnostic data
 :::image-end:::
 
@@ -253,7 +252,7 @@ Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api)
 
 Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
 
-:::image type="complex" source="./media/geolocation2.png" alt-text="Location" lightbox="./media/geolocation2.png":::
+:::image type="complex" source="./media/geolocation2.png" alt-text="Location." lightbox="./media/geolocation2.png":::
    Location
 :::image-end:::
 
@@ -282,7 +281,7 @@ Microsoft Edge offers an interactive and seamless experience when you launch the
 
 Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.  With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you agree to sync your browsing data.
 
-:::image type="complex" source="./media/migration.png" alt-text="Import" lightbox="./media/migration.png":::
+:::image type="complex" source="./media/migration.png" alt-text="Import." lightbox="./media/migration.png":::
    Import
 :::image-end:::
 
@@ -308,7 +307,7 @@ Automatic updates are turned on by default for all Microsoft Edge users.  On all
 
 Microsoft Edge offers a simplified experience with the integration of Internet Explorer (IE).  Microsoft Edge only supports IE 11, and IE mode is only available on Windows.  The IE mode feature is available for organizations through group policies.  The administrator chooses to open certain sites in IE mode in Microsoft Edge.
 
-:::image type="complex" source="./media/ie-mode.png" alt-text="IE mode" lightbox="./media/ie-mode.png":::
+:::image type="complex" source="./media/ie-mode.png" alt-text="IE mode." lightbox="./media/ie-mode.png":::
    IE mode
 :::image-end:::
 
@@ -340,7 +339,7 @@ You can clear or change the display of your recently closed tabs in the jump lis
 
 Kids Mode is a convenient browsing mode designed for kids inside Microsoft Edge.  With the kid-friendly features and safety guardrails in place, Kids Mode is a great place for children to safely explore the web.  Kids Mode includes features like custom browser themes, kid-friendly content, browsing based on an allowlist, Bing SafeSearch set to strict, and a password requirement to exit.  Kids Mode doesn't require a child account or profile, therefore you are not able to sign into Kids Mode.
 
-:::image type="complex" source="./media/kids-mode.png" alt-text="Kids Mode" lightbox="./media/kids-mode.png":::
+:::image type="complex" source="./media/kids-mode.png" alt-text="Kids Mode." lightbox="./media/kids-mode.png":::
    Kids Mode
 :::image-end:::
 
@@ -373,7 +372,7 @@ Microsoft Edge provides an engaging and user-centric new tab page with a search 
 
 To speed up load times for the Microsoft Edge new tab page, the page may be loaded in the background. The content that is loaded might include cookies, if you allow cookies. You can turn off background loading for the Microsoft new tab page. Navigate to `edge://settings/newTabPage` and turn off the **Preload the new tab page for a faster experience** setting.
 
-:::image type="complex" source="./media/n-t-p1.png" alt-text="New tab page" lightbox="./media/n-t-p1.png":::
+:::image type="complex" source="./media/n-t-p1.png" alt-text="New tab page." lightbox="./media/n-t-p1.png":::
    New tab page
 :::image-end:::
 
@@ -516,7 +515,7 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 <!-- ====================================================================== -->
 ## Search results data for product improvement 
-In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone’s web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn’t own or operate.
+In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone's web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn't own or operate.
 
 * Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
 
@@ -568,7 +567,7 @@ When you're applying coupons, cookies are stored on your device to correctly att
 
 Data sent to the Microsoft shopping service is sent over HTTPS with a randomly generated identifier that changes per coupon lookup. Microsoft Edge partners with Bing Shopping to provide coupons relevant to the user's query. In some instances, Microsoft may receive revenue for use of the coupons. Whether a revenue share payment may be received is not factored into the ranking of coupons shown to users.
 
-:::image type="complex" source="./media/shopping.png" alt-text="Shopping and coupons" lightbox="./media/shopping.png":::
+:::image type="complex" source="./media/shopping.png" alt-text="Shopping and coupons." lightbox="./media/shopping.png":::
    Shopping and coupons
 :::image-end:::
 
@@ -608,7 +607,7 @@ You are not able to sign into Microsoft Edge when using **Guest** mode or **InPr
 
 SmartScreen is designed to help you safely browse the web.  When you go to websites or download files, SmartScreen checks the reputation of the URL or file.  If SmartScreen determines that the site or file is malicious, it blocks you from going to the site or downloading the file.
 
-:::image type="complex" source="./media/smart-screen.png" alt-text="SmartScreen" lightbox="./media/smart-screen.png":::
+:::image type="complex" source="./media/smart-screen.png" alt-text="SmartScreen." lightbox="./media/smart-screen.png":::
    SmartScreen
 :::image-end:::
 
@@ -658,7 +657,7 @@ Signing into Microsoft Edge with a Microsoft account allows you to sync browsing
 
 Favorites include any tabs you previously set aside in previous versions of Microsoft Edge, which sync along with the rest of your favorites. Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, navigate to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
-:::image type="complex" source="./media/sync.png" alt-text="Image of sync setting being set to on" lightbox="./media/sync.png":::
+:::image type="complex" source="./media/sync.png" alt-text="Image of sync setting being set to on." lightbox="./media/sync.png":::
    Sync setting is on
 :::image-end:::
 
@@ -684,7 +683,7 @@ Microsoft Edge is designed to detect and block known trackers.  Users may choose
 
 You may turn off list updates using the following group policy, [Enable component updates in Microsoft Edge](/deployedge/microsoft-edge-policies#componentupdatesenabled).
 
-:::image type="complex" source="./media/tracking-prevention.png" alt-text="Tracking prevention" lightbox="./media/tracking-prevention.png":::
+:::image type="complex" source="./media/tracking-prevention.png" alt-text="Tracking prevention." lightbox="./media/tracking-prevention.png":::
    Tracking prevention
 :::image-end:::
 
@@ -745,7 +744,7 @@ With your permission, WDAG also collects information about how you use the brows
 
 Windows Information Protection (WIP) helps prevent accidental leaking of corporate information. It is only available for organizations through group policies managed by your organization. WIP is enabled for those sites identified as corporate assets. Identify which sites are corporate assets from the management icon in the address bar. WIP prevents copying and pasting from the browser or uploading certain files to sites outside your organization.
 
-:::image type="complex" source="./media/w-i-p.png" alt-text="Windows Information Protection" lightbox="./media/w-i-p.png":::
+:::image type="complex" source="./media/w-i-p.png" alt-text="Windows Information Protection." lightbox="./media/w-i-p.png":::
    Windows Information Protection
 :::image-end:::
 

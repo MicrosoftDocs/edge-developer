@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, vs code, visual studio code, webhint
 ms.date: 08/24/2021
 ---
 # The webhint extension for Visual Studio Code
@@ -14,7 +13,7 @@ Use [webhint](https://webhint.io), a customizable linting tool, to improve the a
 
 Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the webhint extension for Visual Studio Code.  Hints appear as inline underlines and are summarized in the **Problems** pane.
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code":::
+:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code.":::
    The webhint extension for Visual Studio Code
 :::image-end:::
 

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform, tracking prevention, trackers, cookies, storage, ad blocking, tracker blocking, tracking protection
 ms.date: 01/07/2021
 ---
 # Tracking prevention in Microsoft Edge
@@ -14,7 +13,7 @@ The tracking prevention feature in Microsoft Edge protects users from online tra
 
 Microsoft Edge currently offers users three levels of tracking prevention, which are selected by navigating to `edge://settings/privacy`.
 
-![Three settings of tracking prevention](./media/tracking-prevention-settings.png)
+![Three settings of tracking prevention.](./media/tracking-prevention-settings.png)
 
 1.  **Basic** - The least restrictive level of tracking prevention that is designed for users who enjoy personalized advertisements and who do not mind being tracked on the web.  Basic only protects users against malicious trackers such as fingerprinters and cryptominers.
 1.  **Balanced (Default)** - The default level of tracking prevention that is designed for users who want to see less personalized advertisements while minimizing the risk of compatibility issues as they browse the web.  Balanced aims to block trackers from sites that users never engage with.
@@ -61,7 +60,7 @@ To provide protection from tracking actions on the web, Microsoft Edge takes two
 
 A user may choose the page info flyout icon on the left side of the address bar to find out which trackers were blocked on a specific page:
 
-![Blocked trackers in the page info flyout](./media/page-info-flyout.png)
+![Blocked trackers in the page info flyout.](./media/page-info-flyout.png)
 
 How the enforcements are applied depends on what level of tracking prevention the user selected and the mitigations that may apply.
 

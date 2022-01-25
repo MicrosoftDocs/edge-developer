@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, ie11, internet explorer 11, ie mode
 ms.date: 09/10/2021
 ---
 # Use DevTools in Internet Explorer mode
@@ -20,7 +19,7 @@ Support for the following technologies is included in IE mode:
 
 In IE mode, the rendering process is based on Internet Explorer 11.  The Microsoft Edge process manager handles the lifetime of the rendering process.  The rendering process is constrained to the lifetime of the tab for a specific site (or app).  When a tab renders in IE mode, the IE mode indicator icon appears in the address bar for the specific tab.
 
-:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="The IE mode indicator icon in the address bar" lightbox="../media/ie-mode-badge.msft.png":::
+:::image type="complex" source="../media/ie-mode-badge.msft.png" alt-text="The IE mode indicator icon in the address bar." lightbox="../media/ie-mode-badge.msft.png":::
    The IE mode indicator icon in the address bar
 :::image-end:::
 
@@ -32,7 +31,7 @@ IE mode is available on Windows 10 Version 1903 (May 2019 Update), and is coming
 
 The IE mode indicator icon appears in the address bar if the Enterprise admin has configured the website to appear in IE mode.  To view the document mode of a website in IE mode, select the IE mode indicator icon in the address bar.
 
-:::image type="complex" source="../media/ie-mode-badge-doc-mode.msft.png" alt-text="View document mode using the IE mode indicator icon" lightbox="../media/ie-mode-badge-doc-mode.msft.png":::
+:::image type="complex" source="../media/ie-mode-badge-doc-mode.msft.png" alt-text="View document mode using the IE mode indicator icon." lightbox="../media/ie-mode-badge-doc-mode.msft.png":::
    View document mode using the IE mode indicator icon
 :::image-end:::
 
@@ -43,7 +42,7 @@ If a tab uses IE mode, the tab has the following limitations:
 *  Opening the contextual menu (right-click) and selecting **View Source** launches Notepad.
 *  Selecting `F12` or `Ctrl`+`Shift`+`I` opens a blank instance of the Microsoft Edge DevTools and displays the following message: **Developer Tools are not available in Internet Explorer mode.  To debug the page, open it in Internet Explorer 11.**
 
-:::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="DevTools launched in IE mode" lightbox="../media/ie-mode-devtools.msft.png":::
+:::image type="complex" source="../media/ie-mode-devtools.msft.png" alt-text="DevTools launched in IE mode." lightbox="../media/ie-mode-devtools.msft.png":::
    DevTools launched in IE mode
 :::image-end:::
 

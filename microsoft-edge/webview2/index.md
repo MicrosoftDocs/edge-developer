@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
 ms.date: 11/12/2021
 ---
 # Introduction to Microsoft Edge WebView2
@@ -26,7 +25,7 @@ Developers must often decide between building a web app or a native app.  This d
 *  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
 *  To access all the capabilities of a native platform, use a native app.
 
-:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native" lightbox="./media/WebView2/web-native.png":::
+:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native." lightbox="./media/WebView2/web-native.png":::
    Web native
 :::image-end:::
 

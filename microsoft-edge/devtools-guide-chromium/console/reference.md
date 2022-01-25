@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -37,13 +36,13 @@ You may open the **Console** as a [tool in the upper pane](#open-the-console-too
 
 Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
-:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console tool" lightbox="../media/console-hello-console.msft.png":::
+:::image type="complex" source="../media/console-hello-console.msft.png" alt-text="The Console tool." lightbox="../media/console-hello-console.msft.png":::
    The **Console** tool
 :::image-end:::
 
 To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Panel** badge next to it.
 
-:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the Console tool" lightbox="../media/console-command-menu-show-console.msft.png":::
+:::image type="complex" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the Console tool." lightbox="../media/console-command-menu-show-console.msft.png":::
    Run the command to display the **Console** tool
 :::image-end:::
 
@@ -51,13 +50,13 @@ To open the **Console** tool from the [Command Menu](../command-menu/index.md), 
 
 Select `Esc` or choose **Customize and control DevTools** (`...`) and then choose **Show console drawer**.
 
-:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer" lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
+:::image type="complex" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer." lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
    **Show console drawer**
 :::image-end:::
 
 The Drawer pops up at the bottom of your DevTools window, with the **Console** tool open.
 
-:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tool in the Drawer" lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
+:::image type="complex" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tool in the Drawer." lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
    The **Console** tool in the **Drawer**
 :::image-end:::
 
@@ -69,9 +68,9 @@ To open the **Console** tool from the [Command Menu](../command-menu/index.md), 
 
 ### Open Console Settings
 
-Choose the **Console Settings** (![Console Settings icon](../media/settings-button-icon.msft.png)) button.
+Choose the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button.
 
-:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings" lightbox="../media/console-settings-group-similar-empty.msft.png":::
+:::image type="complex" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings." lightbox="../media/console-settings-group-similar-empty.msft.png":::
    **Console Settings**
 :::image-end:::
 
@@ -88,9 +87,9 @@ The following links explain each setting.
 
 ### Open the Console Sidebar
 
-To display the **Sidebar**, choose **Show console sidebar** (![Show console sidebar](../media/show-console-sidebar-icon.msft.png)).  The **Sidebar** is helps you filter.
+To display the **Sidebar**, choose **Show console sidebar** (![Show console sidebar.](../media/show-console-sidebar-icon.msft.png)).  The **Sidebar** is helps you filter.
 
-:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar" lightbox="../media/console-sidebar-drawer-empty.msft.png":::
+:::image type="complex" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar." lightbox="../media/console-sidebar-drawer-empty.msft.png":::
    **Console Sidebar**
 :::image-end:::
 
@@ -108,7 +107,7 @@ To turn off the default message grouping behavior of the **Console**, [open Cons
 
 To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, [open Console Settings](#open-console-settings) and choose the checkbox next to **Log XMLHttpRequests**.
 
-:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Log XMLHttpRequest and Fetch requests" lightbox="../media/console-xhr-fetch.msft.png":::
+:::image type="complex" source="../media/console-xhr-fetch.msft.png" alt-text="Log XMLHttpRequest and Fetch requests." lightbox="../media/console-xhr-fetch.msft.png":::
    Log `XMLHttpRequest` and `Fetch` requests
 :::image-end:::
 
@@ -117,7 +116,7 @@ The top message in previous figure displays the default grouping behavior of the
 <!--
 > ##### Old Figure 9
 > How the logged `XMLHttpRequest` and `Fetch` requests look after ungrouping
-> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping" lightbox="../media/console-xhr-fetch-all.msft.png":::
+> :::image type="complex" source="../media/console-xhr-fetch-all.msft.png" alt-text="How the logged XMLHttpRequest and Fetch requests look after ungrouping." lightbox="../media/console-xhr-fetch-all.msft.png":::
 >    How the logged XMLHttpRequest and Fetch requests look after ungrouping
 > :::image-end:::
 -->
@@ -132,7 +131,7 @@ When you load a new webpage, the default action clears the **Console**.  To pers
 
 The default action for Microsoft Edge is to logs network messages to the **Console**.  In the following figure, the chosen message represents an HTTP status code of `429`.
 
-:::image type="complex" source="../media/console-show-network.msft.png" alt-text="A 429 message in the Console" lightbox="../media/console-show-network.msft.png":::
+:::image type="complex" source="../media/console-show-network.msft.png" alt-text="A 429 message in the Console." lightbox="../media/console-show-network.msft.png":::
    A `429` message in the **Console**
 :::image-end:::
 
@@ -151,7 +150,7 @@ Many ways exist to filter out messages in the **Console**.
 
 [Open the Console Sidebar](#open-the-console-sidebar) and choose **# user messages** to only display messages that came from the JavaScript of the webpage.
 
-:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Display user messages" lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
+:::image type="complex" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Display user messages." lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
    Display user messages
 :::image-end:::
 
@@ -168,13 +167,13 @@ For example, `console.log()` is in the `Info` group, but `console.error()` is in
 
 To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown" lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown." lightbox="../media/console-log-level-default-levels.msft.png":::
    The **Log Levels** dropdown
 :::image-end:::
 
 To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then choose **Errors**, **Warnings**, **Info**, or **Verbose**.
 
-:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Use the Sidebar to view warnings" lightbox="../media/console-sidebar-warnings.msft.png":::
+:::image type="complex" source="../media/console-sidebar-warnings.msft.png" alt-text="Use the Sidebar to view warnings." lightbox="../media/console-sidebar-warnings.msft.png":::
    Use the Sidebar to view warnings
 :::image-end:::
 
@@ -182,7 +181,7 @@ To use the log level to filter, [open the Console Sidebar](#open-the-console-sid
 
 Type `url:` followed by a URL to only view messages that came from that URL.  After you type `url:`, DevTools displays all relevant URLs.  Domains also work.  For example, if `https://example.com/a.js` and `https://example.com/b.js` are logging messages, `url:https://example.com` allows you to focus on the messages from these two scripts.
 
-:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="A URL filter" lightbox="../media/console-filter-text.msft.png":::
+:::image type="complex" source="../media/console-filter-text.msft.png" alt-text="A URL filter." lightbox="../media/console-filter-text.msft.png":::
    A URL filter
 :::image-end:::
 
@@ -198,7 +197,7 @@ To display messages from a single URL, complete the following actions.
 1.  Expand the **# user messages** section.
 1.  Choose the URL of the script that contains the messages on which you want to focus.
 
-:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Display the messages that came from wp-ad.min.js" lightbox="../media/console-filter-text-specified.msft.png":::
+:::image type="complex" source="../media/console-filter-text-specified.msft.png" alt-text="Display the messages that came from wp-ad.min.js." lightbox="../media/console-filter-text-specified.msft.png":::
    Display the messages that came from `wp-ad.min.js`
 :::image-end:::
 
@@ -242,7 +241,7 @@ As you type out an expression, the autocomplete popup window for the **Console**
 > [!NOTE]
 > In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.
 
-:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="The autocomplete popup menu displays expressions from history" lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+:::image type="complex" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="The autocomplete popup menu displays expressions from history." lightbox="../media/console-filter-text-autofilter-history.msft.png":::
    The autocomplete popup menu displays expressions from history
 :::image-end:::
 
@@ -250,13 +249,13 @@ As you type out an expression, the autocomplete popup window for the **Console**
 
 The default option for the **JavaScript Context** dropdown is **top**, which represents the [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context) of the main webpage.
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown" lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown." lightbox="../media/console-dom-level-top.msft.png":::
    The **JavaScript Context** dropdown
 :::image-end:::
 
 Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to run JavaScript to tweak the DOM of the ad.  First, choose the browsing context of the ad from the **JavaScript Context** dropdown.
 
-:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choose a different JavaScript context" lightbox="../media/console-dom-level-multiple.msft.png":::
+:::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choose a different JavaScript context." lightbox="../media/console-dom-level-multiple.msft.png":::
    Choose a different JavaScript context
 :::image-end:::
 
@@ -266,7 +265,7 @@ Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to r
 
 To clear the **Console**, complete any of the following workflows.
 
-*   Choose the **Clear Console** (![Clear Console](../media/clear-console-button-icon.msft.png)) button.
+*   Choose the **Clear Console** (![Clear Console.](../media/clear-console-button-icon.msft.png)) button.
 *   Hover on a message, open the contextual menu (right-click), and choose **Clear Console**.
 *   Enter `clear()` in the **Console** and select `Enter`.
 *   Run `console.clear()` from the JavaScript for your webpage.
@@ -278,5 +277,5 @@ To clear the **Console**, complete any of the following workflows.
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

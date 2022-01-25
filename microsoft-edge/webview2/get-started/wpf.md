@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
 ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WPF apps
@@ -151,7 +150,7 @@ Add a WebView2 control to your app.
 
 1.  Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
-    :::image type="complex" source="./media/wpf-getting-started-microsoft.png" alt-text="Microsoft.com":::
+    :::image type="complex" source="./media/wpf-getting-started-microsoft.png" alt-text="Microsoft.com.":::
        Microsoft.com
     :::image-end:::
 
@@ -333,7 +332,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 1.  Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
 
-:::image type="complex" source="./media/wpf-getting-started-https.png" alt-text="HTTPS":::
+:::image type="complex" source="./media/wpf-getting-started-https.png" alt-text="HTTPS.":::
    HTTPS
 :::image-end:::
 

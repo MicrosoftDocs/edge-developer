@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, html, css, javascript, developer, extensions
 ms.date: 09/24/2020
 ---
 # Sideload an extension

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
 ---
 # Analyze the lack of indication of keyboard focus in a sidebar menu
@@ -22,7 +21,7 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
 
-1.  Select the **Inspect** (![Inspect icon](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1.  Select the **Inspect** (![Inspect icon.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1.  Hover over the blue **Cats** link in the sidebar navigation menu.  The Inspect overlay appears, showing that the `a` element is keyboard-focusable.  But the overlay doesn't show that there's no visual indication when the link has focus.
 
@@ -32,13 +31,13 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1.  Select the **Styles** tab.  The CSS rule `#sidebar nav li a` appears, along with a link to a line number in `styles.css`.
 
-    :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the menu" lightbox="../media/a11y-testing-menu-link.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the menu." lightbox="../media/a11y-testing-menu-link.msft.png":::
         Inspecting the source code and the applied styles of a link in the menu
     :::image-end:::
 
 1.  Select the link to the CSS file.  The CSS file opens within the **Sources** tool.
 
-    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="The styles applied to the link in the Sources tool" lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="The styles applied to the link in the Sources tool." lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
         The styles applied to the link in the Sources tool
     :::image-end:::
 

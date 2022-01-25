@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
 ms.date: 08/25/2021
 ---
 # Overview of Microsoft Edge extensions
@@ -22,7 +21,7 @@ An extension is structured similar to a regular web app.  An extension should in
 
 To work directly with part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge extension" lightbox="./media/example-extension-screenshot.png":::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge extension." lightbox="./media/example-extension-screenshot.png":::
   A Microsoft Edge extension
 :::image-end:::
 

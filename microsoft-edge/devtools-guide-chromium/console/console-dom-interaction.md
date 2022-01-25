@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 04/13/2021
 ---
 # Use the Console to interact with the DOM
@@ -32,7 +31,7 @@ To reference the header of the webpage, complete the following actions.
 
 If you select `Shift`+`Tab` or move your mouse cursor over the HTML result, DevTools highlights the header for you.
 
-:::image type="complex" source="../media/console-dom-highlight-element.msft.png" alt-text="DevTools highlights the section you choose in the Console" lightbox="../media/console-dom-highlight-element.msft.png":::
+:::image type="complex" source="../media/console-dom-highlight-element.msft.png" alt-text="DevTools highlights the section you choose in the Console." lightbox="../media/console-dom-highlight-element.msft.png":::
     DevTools highlights the section you choose in the **Console**
 :::image-end:::
 
@@ -52,7 +51,7 @@ document.querySelector('header').style.border = '2em solid green'
 
 Depending on the complexity of the webpage, It may be daunting to find the right element to manipulate.  But you may use the **Inspect** tool to help you.  Say you want to manipulate the `Documentation` part in the header.
 
-:::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="Display the element that you inspect on the screen" lightbox="../media/console-dom-highlight-documentation.msft.png":::
+:::image type="complex" source="../media/console-dom-highlight-documentation.msft.png" alt-text="Display the element that you inspect on the screen." lightbox="../media/console-dom-highlight-documentation.msft.png":::
     Display the element that you inspect on the screen
 :::image-end:::
 
@@ -73,7 +72,7 @@ To get a direct reference to the element to manipulate, complete the following a
 
 1.  Open the contextual menu and choose `Copy` > `Copy JS Path`.
 
-    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM tree of the Elements tool" lightbox="../media/console-dom-copy-JS-path.msft.png":::
+    :::image type="complex" source="../media/console-dom-copy-JS-path.msft.png" alt-text="Copy the JavaScript path from an element in the DOM tree of the Elements tool." lightbox="../media/console-dom-copy-JS-path.msft.png":::
         Copy the JavaScript path from an element in the DOM tree of the **Elements** tool
     :::image-end:::
 
@@ -81,7 +80,7 @@ To get a direct reference to the element to manipulate, complete the following a
 
 To change the text of the link to `My Playground`, add `.textContent = "My Playground"` to the command you previously pasted.
 
-:::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="Use the Console to change the content of an element" lightbox="../media/console-dom-change-content.msft.png":::
+:::image type="complex" source="../media/console-dom-change-content.msft.png" alt-text="Use the Console to change the content of an element." lightbox="../media/console-dom-change-content.msft.png":::
     Use the **Console** to change the content of an element
 :::image-end:::
 
@@ -108,7 +107,7 @@ For example, the following code snippet retrieves all the links in the webpage (
 console.table($$('a'),['href','text']);
 ```
 
-:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="Get all links in the webpage and display the result as a table" lightbox="../media/console-dom-get-all-links.msft.png":::
+:::image type="complex" source="../media/console-dom-get-all-links.msft.png" alt-text="Get all links in the webpage and display the result as a table." lightbox="../media/console-dom-get-all-links.msft.png":::
     Get all links in the webpage and display the result as a table
 :::image-end:::
 
@@ -194,7 +193,7 @@ console.log(out);
 
 The result is text that contains content for each heading followed by the full URL that points to it.
 
-:::image type="complex" source="../media/console-dom-get-generated-headings.msft.png" alt-text="Get all the headings and the generated URLs from the webpage" lightbox="../media/console-dom-get-generated-headings.msft.png":::
+:::image type="complex" source="../media/console-dom-get-generated-headings.msft.png" alt-text="Get all the headings and the generated URLs from the webpage." lightbox="../media/console-dom-get-generated-headings.msft.png":::
     Get all the headings and the generated URLs from the webpage
 :::image-end:::
 
@@ -221,7 +220,7 @@ To list all of the event listener assigned to the first form in the webpage, com
     getEventListeners($('form'));
     ```
 
-:::image type="complex" source="../media/console-dom-get-form-events.msft.png" alt-text="Get all events listeners for the first form in the webpage" lightbox="../media/console-dom-get-form-events.msft.png":::
+:::image type="complex" source="../media/console-dom-get-form-events.msft.png" alt-text="Get all events listeners for the first form in the webpage." lightbox="../media/console-dom-get-form-events.msft.png":::
     Get all events listeners for the first form in the webpage
 :::image-end:::
 
@@ -237,13 +236,13 @@ To get a notification in the **Console** every time you scroll, resize the windo
     monitorEvents($0, 'keyup');
     ```
 
-:::image type="complex" source="../media/console-dom-monitor-events.msft.png" alt-text="Console displays every scroll event that happens on the Window" lightbox="../media/console-dom-monitor-events.msft.png":::
+:::image type="complex" source="../media/console-dom-monitor-events.msft.png" alt-text="Console displays every scroll event that happens on the Window." lightbox="../media/console-dom-monitor-events.msft.png":::
     **Console** displays every scroll event that happens on the Window
 :::image-end:::
 
 To log any key action on the currently chosen element, focus on the search form in the header and select some keys.
 
-:::image type="complex" source="../media/console-dom-monitor-key-events.msft.png" alt-text="Console displays keyup events that happen on the form" lightbox="../media/console-dom-monitor-key-events.msft.png":::
+:::image type="complex" source="../media/console-dom-monitor-key-events.msft.png" alt-text="Console displays keyup events that happen on the form." lightbox="../media/console-dom-monitor-key-events.msft.png":::
     **Console** displays `keyup` events that happen on the form
 :::image-end:::
 
