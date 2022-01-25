@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ms.date: 01/07/2021
 ---
 # Offline and network connectivity support in Progressive Web Apps

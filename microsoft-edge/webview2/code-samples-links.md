@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, source code, sample code, samples, code samples, WebView sample code, WebView2 sample code
 ms.date: 10/21/2021
 ---
 # WebView2 sample code

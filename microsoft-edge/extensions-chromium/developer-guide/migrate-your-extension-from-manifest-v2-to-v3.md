@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, extensions development, edge extensions, browser extensions, addons, developer, manifest v3, migrate to manifest v3
 ms.date: 11/24/2021
 ---
 # Prepare to update your extensions from Manifest V2 to V3

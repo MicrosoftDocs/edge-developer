@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, edge, best practices
 ms.date: 08/03/2021
 ---
 # WebView2 development best practices
