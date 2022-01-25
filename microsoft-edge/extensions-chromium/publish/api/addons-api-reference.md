@@ -176,7 +176,7 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 #### Response headers
 
-* Location: `{operationID}`
+* Location: `{OperationID}`
 
 #### Status codes
 
