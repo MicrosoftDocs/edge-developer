@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, Edge, Windows, desktop, installation, integration, microsoft store, ux
 ms.date: 09/15/2021
 ---
 # The user experience of PWAs

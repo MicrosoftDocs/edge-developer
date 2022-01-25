@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, roadmap, add-ons roadmap
 ms.date: 11/24/2021
 ---
 # Microsoft Edge Add-ons roadmap

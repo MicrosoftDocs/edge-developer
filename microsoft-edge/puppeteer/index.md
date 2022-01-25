@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, developer, tools, automation, test
 ms.date: 11/17/2021
 ---
 # Puppeteer overview
