@@ -1,12 +1,12 @@
 ---
-description: Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
 title: Analyze runtime performance
+description: Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance, for interactive and smooth pages.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques and Meggin Kearney
 
@@ -23,7 +23,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    limitations under the License.  -->
 # Analyze runtime performance
 
-Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank.  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
+Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
 
 ### Summary
 

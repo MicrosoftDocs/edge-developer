@@ -1,13 +1,13 @@
 ---
-description: Get started guide with WebView2 for WinUI 3 (Windows App SDK) apps.
 title: Get started with WebView2 in WinUI 3 (Windows App SDK)
+description: Get started guide with WebView2 for WinUI 3 (Windows App SDK) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
+ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK)
 
@@ -299,5 +299,4 @@ Congratulations, you built your first WebView2 app!
 *  [WebView2 development best practices](../concepts/developer-guide.md)
 *  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 *  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-*  [WebView2 spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - detailed information about the WebView2 API.
 *  [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.

@@ -1,12 +1,12 @@
 ---
-description: Use the Inspect tool to detect accessibility issues by hovering over the webpage.
 title: Use the Inspect tool to detect accessibility issues by hovering over the webpage
+description: Using the Inspect tool to detect accessibility issues by hovering over the webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Use the Inspect tool to detect accessibility issues by hovering over the webpage
 
@@ -20,6 +20,8 @@ When the **Inspect** tool is active, hovering over any element on the rendered w
 :::image type="complex" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay" lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
     The **Inspect** tool, showing the element's area as a multicolor overlay, and showing the element's details as a large information overlay
 :::image-end:::
+
+The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 
 <!-- ====================================================================== -->
@@ -114,6 +116,7 @@ After selecting an element in the rendered page, you could then use the **Access
 <!-- ====================================================================== -->
 ## See also
 
+*  [Analyze HTML pages using the Inspect tool](../css/inspect.md)
 *  [Inspect a node](../dom/index.md#inspect-a-node)
 *  [Check text-color contrast in the default state using the Inspect tool](test-inspect-text-contrast.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

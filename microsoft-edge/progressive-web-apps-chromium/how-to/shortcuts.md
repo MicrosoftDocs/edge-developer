@@ -1,13 +1,13 @@
 ---
 title: Define app shortcuts
-description: Learn how to make your app's common tasks available in the Windows Taskbar's context menu.
+description: How to make your app's common tasks available in the Windows Taskbar's context menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
 keywords: progressive web apps, PWA, Edge, Windows, Taskbar, jumplist, shortcut
+ms.date: 09/13/2021
 ---
 # Define app shortcuts
 

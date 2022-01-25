@@ -1,12 +1,12 @@
 ---
+title: Run snippets of JavaScript on any webpage
 description: Snippets are small scripts that you may author and run within the Sources tool of Microsoft Edge DevTools.  You may access and run resources from any webpage.  When you run a Snippet, it runs from the context of the currently open webpage.
-title: Run snippets of JavaScript on any webpage with Microsoft Edge DevTools
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +21,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Run snippets of JavaScript on any webpage with Microsoft Edge DevTools
+# Run snippets of JavaScript on any webpage
 
 If you are running the same code in the [Console](../console/index.md) repeatedly, consider saving the code as a Snippet instead.  Snippets are scripts that you author in the [Sources](../sources/index.md) tool.  Snippets have access to the JavaScript context of the webpage, and you may run snippets on any webpage.  The security settings of most webpages block from loading other scripts in Snippets.  For that reason, you must include all your code in one file.
 
@@ -29,26 +29,21 @@ Snippets are an alternative to [bookmarklets](https://en.wikipedia.org/wiki/Book
 
 Using Snippets is an excellent way to change a few things in a third-party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, navigate to [Overrides](./overrides.md).
 
-:::row:::
-   :::column span="":::
-      For example, in the following figure shows the DevTools homepage on the left and some Snippet source code on the right.
+The following figure shows the DevTools homepage on the left and some Snippet source code on the right.
 
-      :::image type="complex" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="The before running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
-         The webpage before running the Snippet
-      :::image-end:::
-   :::column-end:::
-   :::column span="":::
-      The Snippet source code from the webpage before running the Snippet.
+The webpage before running the Snippet:
 
-      ```javascript
-      console.log('Hello, Snippets!');
-      document.body.innerHTML = '';
-      var p = document.createElement('p');
-      p.textContent = 'Hello, Snippets!';
-      document.body.appendChild(p);
-      ```
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="The webpage before running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+
+The Snippet source code from the webpage before running the Snippet:
+
+```javascript
+console.log('Hello, Snippets!');
+document.body.innerHTML = '';
+var p = document.createElement('p');
+p.textContent = 'Hello, Snippets!';
+document.body.appendChild(p);
+```
 
 In the following figure, the webpage appears after running the Snippet.  The **Console Drawer** pops up to display the `Hello, Snippets!` message that the Snippet logs, and the content of the webpage changes completely.
 

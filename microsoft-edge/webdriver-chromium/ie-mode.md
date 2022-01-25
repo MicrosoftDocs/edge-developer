@@ -1,13 +1,13 @@
 ---
-description: Learn how to test your legacy website or app in IE mode in Microsoft Edge.
 title: Use Internet Explorer Driver to automate IE mode in Microsoft Edge
+description: How to test your legacy website or app in IE mode in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/23/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
 keywords: microsoft edge, web development, html, css, javascript, developer, webdriver, selenium, testing, tools, automation, test, ie, internet explorer, ie mode
+ms.date: 11/23/2021
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
 
@@ -15,7 +15,7 @@ If you have business-critical legacy websites or apps, you may need to test your
 
 IE mode in Microsoft Edge is a feature for organizations that still need Internet Explorer 11 for backward compatibility for legacy websites or apps.  To learn more about IE mode, read [What is Internet Explorer (IE) mode?](/deployedge/edge-ie-mode)
 
-Starting **June 15, 2022**, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. For more information, read [Internet Explorer 11 desktop application ending support for certain operating systems](/lifecycle/announcements/internet-explorer-11-end-of-support).
+Starting **June 15, 2022**, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. For more information, read [Internet Explorer 11 desktop app retirement FAQ](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549).
 
 
 <!-- ====================================================================== -->

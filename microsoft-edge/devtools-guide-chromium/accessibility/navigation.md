@@ -1,12 +1,12 @@
 ---
-description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 title: Navigate Microsoft Edge DevTools with assistive technology
+description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 <!-- Copyright Rob Dodson
 
@@ -33,7 +33,7 @@ DevTools is divided into a series of tools.  (Within the **Command Menu**, tools
 
 The following are examples of tools:
 *   The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
-*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, navigate to [Use the Console](../console/index.md).
+*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md).
 
 Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
 

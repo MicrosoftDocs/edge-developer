@@ -1,12 +1,12 @@
 ---
-description: Apply color themes from Visual Studio Code, debug DOM node memory leaks with the new Detached Elements tool, Microsoft Edge Developer Tools for Visual Studio Code now integrates with the Visual Studio Code Debugger workflow, and more.
 title: What's new in DevTools (Microsoft Edge 93)
+description: Apply color themes from Visual Studio Code, debug DOM node memory leaks with the new Detached Elements tool, Microsoft Edge Developer Tools for Visual Studio Code now integrates with the Visual Studio Code Debugger workflow, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 07/30/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 07/30/2021
 ---
 # What's New In DevTools (Microsoft Edge 93)
 
@@ -201,7 +201,7 @@ Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option
    The **Copy as PowerShell** command
 :::image-end:::
 
-For more information about the Network Activity Log, navigate to [Network Analysis reference](../../../network/reference.md).  To review the history of this feature in the Chromium open-source project, navigate to Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
+For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).  For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
 
 
 <!-- ====================================================================== -->

@@ -1,14 +1,14 @@
 ---
-description: How to differentiate Windows 10 and Windows 11 using User-Agent Client Hints
-title: Detecting Windows 11 using User-Agent Client Hints
+title: Detect Windows 11 using User-Agent Client Hints
+description: How to differentiate Windows 10 and Windows 11 using User-Agent Client Hints.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
-ms.topic: article
+ms.date: 01/04/2022
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, user-agent client hints, user agent client hints, ua client hints, ua ch, windows 11, win11, detecting windows 11, windows detection
 ---
-# Detecting Windows 11 using User-Agent Client Hints
+# Detect Windows 11 using User-Agent Client Hints
 
 <!--
 Restrict the lexicon to these forms:
@@ -79,19 +79,19 @@ navigator.userAgentData.getHighEntropyValues(["platformVersion"])
 <!-- ====================================================================== -->
 ## Optimizing detection performance with `Critical-CH`
 
-Currently, servers (websites) must send the `Accept-CH` response header to the client (browser) to request higher entropy fields not sent in the `Sec-CH-UA` header by default. For example,
+Currently, website servers must send the `Accept-CH` response header to the browser client to request higher entropy fields not sent in the `Sec-CH-UA` header by default. The following diagram shows the browser sending request headers to the server including `user agent: <UA string>` and receiving response headers including `Accept-CH: sec-ch-ua-platform`.
 
-[comment]: <> (To edit SVG go to link: http://www.plantuml.com/plantuml/uml/LOrDIWD144RtVOeogpZGSu11Gc8sMIlYnasbyvaqz4zRLQtNTsH0CgiFwZtgxTLOhEVa7ko63CfiaCY-TaknmBKPnn0R5wFDCKNCktsM-gEGnmsnKbWxhv1l26tVSTPeM1nrWVoETA9XUC5NXngTm1U83WDz5EeAyNn5iOcUtWwa9h5STtz84Nou-SuJZUEuklXSpp7X7ypZrC-Xi8IqrQ9ObmuXe9a_dgQxFosnVLR9RezowJdz0W00)
-![Requests using only Accept-CH](./acceptCH.svg)
+<!-- To edit SVG go to link: http://www.plantuml.com/plantuml/uml/LOrDIWD144RtVOeogpZGSu11Gc8sMIlYnasbyvaqz4zRLQtNTsH0CgiFwZtgxTLOhEVa7ko63CfiaCY-TaknmBKPnn0R5wFDCKNCktsM-gEGnmsnKbWxhv1l26tVSTPeM1nrWVoETA9XUC5NXngTm1U83WDz5EeAyNn5iOcUtWwa9h5STtz84Nou-SuJZUEuklXSpp7X7ypZrC-Xi8IqrQ9ObmuXe9a_dgQxFosnVLR9RezowJdz0W00 -->
+![Requests using only Accept-CH header](./acceptCH.svg)
 
 During this initial request, the client will record the `Accept-CH` preferences and on subsequent requests include `sec-ch-ua-platform` by default. 
 
-In order to further optimize this flow, the new `Critical-CH` header can be used in addition to the `Accept-CH` header to reissue the request header immediately, without the need for a page reload: 
+To further optimize this flow, the new `Critical-CH` header can be used in addition to the `Accept-CH` header to reissue the request header immediately, without the need for a page reload. The following diagram shows the browser sending request headers to the server including `user agent: <UA string>` and receiving response headers including `Accept-CH: sec-ch-ua-platform` and `Critical-CH: sec-ch-ua-platform`. The browser then sends request headers to the server immediately.
 
-[comment]: <> (To edit SVG go to link: http://www.plantuml.com/plantuml/uml/lOz1ImCn48Nl-ol6dkf2-WCMAQrxwLaHBrwcwRCD9DauCz6_RvQYk8XNJmFpFjx7swcnM4snkx4B4YYnGGAxgLeC6LrfSV2XS3PQZJ6WtVMzJ1yAkLqHA_abymXvXz3w6KSDXYkZdIUt9Hsexn_mLg561_09edrFBvcgGXoVM_j0TqzxKfEGpzivKdZdBwxoG9lDPl5nQJg6YE-WdKvT4_chICkK5KlJtdiKS-DX-D5J8jlh96a6HWbj3SU_aF-Pybly5SqZTyYdck8d)
-![Requests using Critical-CH and Accept-CH](./criticalCH.svg)
+<!-- To edit SVG go to link: http://www.plantuml.com/plantuml/uml/lOz1ImCn48Nl-ol6dkf2-WCMAQrxwLaHBrwcwRCD9DauCz6_RvQYk8XNJmFpFjx7swcnM4snkx4B4YYnGGAxgLeC6LrfSV2XS3PQZJ6WtVMzJ1yAkLqHA_abymXvXz3w6KSDXYkZdIUt9Hsexn_mLg561_09edrFBvcgGXoVM_j0TqzxKfEGpzivKdZdBwxoG9lDPl5nQJg6YE-WdKvT4_chICkK5KlJtdiKS-DX-D5J8jlh96a6HWbj3SU_aF-Pybly5SqZTyYdck8d -->
+![Requests using Critical-CH and Accept-CH headers](./criticalCH.svg)
 
-Starting in Microsoft Edge version 96, you can use the new `Critical-CH` header to receive desired high entropy headers with optimized performance. 
+Starting with Microsoft Edge version 96, you can use the new `Critical-CH` header to receive desired high entropy headers with optimized performance. 
 
 Remember that `Critical-CH` and `Accept-CH` preferences persist until session cookies are cleared, or until a user clears site data or cookies for a given origin. For more information about `Critical-CH`, refer to [Client Hint Reliability](https://github.com/WICG/client-hints-infrastructure/blob/main/reliability.md).
 
@@ -116,4 +116,5 @@ To detect specific versions of Windows, use the following values for `platformVe
 | Win10 2004 | 10 |
 | Win10 20H2 | 10 |
 | Win10 21H1 | 10 |
+| Win10 21H2 | 10 |
 | Win11 | 13+ |

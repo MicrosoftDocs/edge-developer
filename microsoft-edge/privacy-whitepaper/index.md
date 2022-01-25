@@ -1,14 +1,14 @@
 ---
-description: Microsoft Edge Privacy Whitepaper
 title: Microsoft Edge Privacy Whitepaper
+description: Microsoft Edge Privacy Whitepaper.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/03/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, privacy, whitepaper, privacy whitepaper, trust, microsoft edge privacy, browser privacy, privacy settings
 ms.localizationpriority: high
 no-loc: [Cast, Google Cast]
+ms.date: 12/10/2021
 ---
 # Microsoft Edge Privacy Whitepaper
 
@@ -247,23 +247,32 @@ The family group organizer may stop the data collection from the family safety p
 <!-- ====================================================================== -->
 ## Geolocation
 
-Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your location information with your permission.  Websites may ask for your location, for example, when trying to find the closest coffee shop near you.  Microsoft Edge always asks for your permission before granting websites access to your location.  To manage the permission or to always block sites from accessing your location, navigate to `edge://settings/content/location`.
+While you browse the web, websites may request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is requested to provide driving directions to or from your specific location. An imprecise location may be requested to provide search results, news, and weather relevant to your general location.
 
-On the right side of the address bar, Microsoft Edge indicates when your location is or is not being shared.
+Microsoft Edge supports the [Geolocation API](https://w3.org/TR/geolocation-api), which allows websites to access your precise location with your permission. Microsoft Edge always asks for your permission before granting websites access to your precise location. To manage the site-specific permissions or to always block sites from accessing your precise location, go to `edge://settings/content/location`.
+
+Microsoft Edge indicates when your precise location is being shared on the right side of the address bar. 
 
 :::image type="complex" source="./media/geolocation2.png" alt-text="Location" lightbox="./media/geolocation2.png":::
    Location
 :::image-end:::
 
-If you allow sharing of your location with a site, Microsoft Edge sends local network information to the Microsoft location service. Information includes your IP address and nearby Wi-Fi access points. The Microsoft service uses this information to estimate your geolocation coordinates. The geolocation estimate is shared with the site with which you agreed to share your location.
+If you allow sharing of your precise location with a site, Microsoft Edge sends local network information to the Microsoft location service. This information includes your IP address and nearby Wi-Fi access points. The Microsoft location service uses this information to estimate your geolocation coordinates. The geolocation estimate is shared with the site with which you agreed to share your precise location.
 
-You can allow Microsoft Edge to provide the requesting site with a more precise location on Windows 10 and later. Open **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings.
+You can allow Microsoft Edge to provide the requesting site with a precise location on Windows 10 and Windows 11. Open **Settings** > **Privacy** > **Location** and turn on the **Allow access to location on this device** and **Allow apps to access your location** settings.
 
- If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, Microsoft Edge provides an approximate location to the requesting site. The information is only shared with a requesting site if you previously allowed sharing of your location. For more information about Windows location settings, navigate to [Windows location service and privacy](https://support.microsoft.com/help/4468240).
+If you turn off the **Allow access to location on this device** and **Allow apps to access your location** settings, some sites can use information such as your IP address to determine your device's imprecise location. For more information about Windows location settings, navigate to [Windows location service and privacy](https://support.microsoft.com/help/4468240).
 
-Microsoft Edge generates a new random ID when making requests to the location service.  Microsoft Edge location service does not store your geolocation coordinates.
+Microsoft Edge doesn't store your geolocation coordinates. When making requests to the Microsoft location service, Microsoft Edge generates a new random ID for each request.
 
-**InPrivate** browsing uses the location permission setting of the profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting the site your location.
+**InPrivate** browsing uses the precise location permission setting of the profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting the site your precise location.
+
+
+<!-- ====================================================================== -->
+## Image Enhancement
+To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits images to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The images are cached for 30 days to improve performance. 
+
+To control Image Enhancement, navigate to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
 
 
 <!-- ====================================================================== -->
@@ -506,6 +515,33 @@ If Microsoft Edge detects SSL connection timeouts, certificate errors, or other 
 
 
 <!-- ====================================================================== -->
+## Search results data for product improvement 
+In order to improve your experience in Microsoft Edge, Microsoft Bing, Microsoft News, and other Microsoft services, when the setting for this feature is enabled, Microsoft Edge will collect and use data from your web searches in Microsoft Edge. Microsoft will use your search results activity to make everyone’s web and search experience better, more relevant, and useful. The data Microsoft collects is from searches you do across the web, including sites Microsoft doesn’t own or operate.
+
+* Microsoft Edge will scrub and de-identify the data by removing data identifying the person or device from which it was collected. 
+
+* Microsoft doesn't use any information we collect to personalize or provide ads to you. 
+
+* The data Microsoft collects is never associated with your account or your device. 
+
+* This data collection and setting is not available on managed devices. 
+
+The data Microsoft collects may include the search query, the search results that are displayed to you, and the interaction you have with those search results, such as the links you click. Microsoft may also collect demographic data. 
+
+To manage the collection and use of your search results activity for product improvement, do the following: 
+
+1. Open Microsoft Edge.
+
+1. Select **Settings and more** > **Settings**. 
+
+1. Select **Privacy, search, and services**. 
+
+1. Under **Search and service improvement**, turn on or off the setting for **Help improve Microsoft products by sending the results from searches on the web**. 
+
+If you stop sharing your data, Microsoft may continue to use previously collected search results data, but it will still be de-identified and not associated with you or your device.
+
+
+<!-- ====================================================================== -->
 ## Secure DNS
 
 When navigating to a website, the browser needs to look up the network address, such as `93.184.216.34`, to resolve the host name, such as `example.com`. Secure DNS performs this lookup using a service over an HTTPS connection to the DNS service provider. Secure DNS protects the lookups from modification or eavesdropping by attackers on the network.
@@ -557,7 +593,7 @@ If a new identity is added to the operating system and your Microsoft Edge profi
 
 If a new identity is added to the operating system and your Microsoft Edge profile does not currently have an identity, Microsoft Edge adds the specific identity to your profile.  If you sign into Microsoft Edge with a Microsoft account or a work or school account and do not have an identity on your Windows 10 profile, the specific account is added to your Windows 10 profile unless you specifically choose to not add it to Windows 10 while signing in.
 
-Being signed in to Microsoft Edge enables single sign-on. You are automatically signed in to certain websites such as Bing, and other identity-powered experiences such as Sync. If you want to limit sign-in to Microsoft Edge and not other Microsoft sites such as [Bing](https://bing.com), you may sign out of the specific site. Microsoft Edge creates a sign-out cookie that tells Microsoft Edge not to sign into the specific site for future visits.
+Being signed in to Microsoft Edge enables single sign-on. You are automatically signed in to certain websites such as Bing, and other identity-powered experiences such as Sync. If you want to limit automatic sign-in to Microsoft sites such as [Bing](https://bing.com), you may sign out of the browser.
 
 To sign into specific sites again using your user name and password or clear your cookies, navigate to `edge://settings/privacy`. For more information about clearing browsing data, navigate to [View and delete browser history in Microsoft Edge](https://support.microsoft.com/help/10607).
 

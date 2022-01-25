@@ -1,12 +1,12 @@
 ---
-description: Microsoft Edge Add-ons store developer policies
 title: Microsoft Edge Add-ons store developer policies
+description: Microsoft Edge Add-ons store developer policies.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+ms.date: 02/17/2021
 ---
 # Microsoft Edge Add-ons store developer policies
 

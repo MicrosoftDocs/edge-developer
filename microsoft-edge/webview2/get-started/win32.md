@@ -1,13 +1,13 @@
 ---
-description: Get started guide with WebView2 for Win32 apps
 title: Get started with WebView2 in Win32 apps
+description: Get started building WebView2 for Win32 by working with sample apps and the WebView2 SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control, edge html
+ms.date: 12/13/2021
 ---
 # Get started with WebView2 in Win32 apps
 
@@ -54,7 +54,11 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
        Manage NuGet packages
     :::image-end:::
 
+    > [!WARNING]
+    > If you don't see the expected search results in the following steps, check the NuGet source location. Click **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**. Make sure that in **Package sources** there is a **nuget.com** source pointing to `https://api.nuget.org/v3/index.json`. If **Package sources** doesn't contain that source, enter `nuget.com` in the **Name** text box and `https://api.nuget.org/v3/index.json` in the **Source** text box. Then click **Update** and **OK**.
+
 1.  Install the Windows Implementation Library.
+    1.  In the **NuGet** window, click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Windows.ImplementationLibrary` > choose **Microsoft.Windows.ImplementationLibrary**.
     1.  In the right-hand side window, choose **Install**.  NuGet downloads the library to your machine.
 
@@ -66,6 +70,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
         :::image-end:::
 
 1.  Install the WebView2 SDK.
+    1.  In the **NuGet** window, click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.
     1.  In the right-hand side window, click **Install**.  NuGet downloads the SDK to your machine.
 
@@ -75,27 +80,22 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
 
 1.  Add WebView2 header to your project.
 
-    :::row:::
-       :::column span="1":::
-          In the `HelloWebView.cpp` file, copy the following code snippet and paste it after the last `#include` line.
+    In the `HelloWebView.cpp` file, copy the following code snippet and paste it after the last `#include` line:
 
-          ```cpp
-          // include WebView2 header
-          #include "WebView2.h"
-          ```
-       :::column-end:::
-       :::column span="1":::
-          The include section should look similar to the following code snippet.
+    ```cpp
+    // include WebView2 header
+    #include "WebView2.h"
+    ```
 
-          ```cpp
-          ...
-          #include <wrl.h>
-          #include <wil/com.h>
-          // include WebView2 header
-          #include "WebView2.h"
-          ```
-       :::column-end:::
-    :::row-end:::
+    The `include` section should look similar to the following code:
+
+    ```cpp
+    ...
+    #include <wrl.h>
+    #include <wil/com.h>
+    // include WebView2 header
+    #include "WebView2.h"
+    ```
 
 The project is ready to use and build against the WebView2 API.
 

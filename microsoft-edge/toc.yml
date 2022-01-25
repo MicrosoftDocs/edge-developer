@@ -10,6 +10,8 @@
           items:
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+            - name: Microsoft Edge 97
+              href: devtools-guide-chromium/whats-new/2022/01/devtools.md
             - name: Microsoft Edge 96
               href: devtools-guide-chromium/whats-new/2021/11/devtools.md
             - name: Microsoft Edge 95
@@ -120,11 +122,11 @@
                       href: devtools-guide-chromium/accessibility/accessibility-tab.md
                 - name: Vision deficiencies
                   items:
-                    - name: Verify that the page is usable by people with color blindness
+                    - name: Verify that a page is usable by people with color blindness
                       href: devtools-guide-chromium/accessibility/test-color-blindness.md
-                    - name: Verify that the page is usable with blurred vision
+                    - name: Verify that a page is usable with blurred vision
                       href: devtools-guide-chromium/accessibility/test-blurred-vision.md
-                    - name: Verify that the page is usable with UI animation turned off
+                    - name: Verify that a page is usable with UI animation turned off
                       href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
                 - name: Usable when narrow
                   items:
@@ -252,6 +254,8 @@
                   href: devtools-guide-chromium/css/css-in-js.md
                 - name: Force DevTools into Print Preview mode
                   href: devtools-guide-chromium/css/print-preview.md
+            - name: Inspect
+              href: devtools-guide-chromium/css/inspect.md
             - name: Issues
               href: devtools-guide-chromium/issues/index.md
 #           - name: JavaScript Profiler
@@ -543,8 +547,6 @@
               href: webdriver-chromium/ie-mode.md
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-            - name: Verify downloads of Selenium Tools for Microsoft Edge
-              href: webdriver-chromium/verify-selenium-tools.md
         - name: webhint
           href: test-and-automation/webhint.md
 # =============================================================================

@@ -1,12 +1,12 @@
 ---
-description: Getting started testing for accessibility problems using DevTools
 title: Overview of accessibility testing using DevTools
+description: Getting started testing for accessibility problems using DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
 # Overview of accessibility testing using DevTools
 
@@ -135,8 +135,7 @@ The Inspect tool's **Accessibility** section includes a **Contrast** line, when 
 
 :::image type="content" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool's Accessibility section includes a Contrast line, when applicable." lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
 
-For detailed walkthrough steps, see [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).
-<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->
+For detailed walkthrough steps, see [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->  The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 The upper section of the **Inspect** tool's information overlay displays the following information:
 
@@ -176,7 +175,7 @@ When using the **Inspect** tool, clicking an element on the rendered page opens 
 
 When using the **Inspect** tool, as you hover over different parts of the rendered page with **Elements** open, you'll notice that the DOM tree automatically refreshes.
 
-For detailed walkthrough steps, see [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).
+For detailed walkthrough steps, see [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).  The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 
 <!-- ====================================================================== -->
@@ -313,18 +312,15 @@ The **Inspect** tool reports accessibility issues for one state at a time.  Firs
 
 ### Checking text color contrast in the default state
 
-In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.  A green check mark icon indicates there's enough contrast, and a yellow alert icon indicates not enough contrast.
+In addition to the automatic color-contrast tests in the **Issues** tool, you can also use the **Inspect** tool to check whether individual page elements have enough contrast.  If contrast information is available, the **Inspect** overlay shows the contrast ratio and a checkbox item.
 
-For example, the links in the sidebar navigation menu have enough contrast, but the green **Dogs** list item in the **Donation status** section doesn't.  An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay.
+A green check mark icon indicates there's enough contrast, and an orange alert icon indicates not enough contrast.  For example, the links in the sidebar navigation menu have enough contrast, as indicated by a green check mark icon:
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay." lightbox="../media/a11y-testing-enough-contrast.msft.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay." lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
-    :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay." lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+
+An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay.  For example, the green **Dogs** list item in the **Donation status** section doesn't have enough contrast, as indicated in the **Inspect** overlay.  The overlay shows an orange circled exclamation mark:
+
+:::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay." lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
 
 Using the **Inspect** tool in this way doesn't fully test your elements. Elements on the page may have different states, all of which need to be tested. For example, if you hover the mouse over the sidebar navigation menu, notice the animation which changes the color of the links.
 
@@ -366,26 +362,20 @@ This demo page has a light and a dark theme.  You can test both themes without c
 
 For detailed walkthrough steps, see [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
+When switching to a light theme in the **Rendering** tool, the following issues are reported:
 
-When switching to a light theme in the **Rendering** tool, notice the following items.
+*  New contrast issues are detected because of the change to light theme:
 
-*  New contrast issues are detected because of the change to light theme.
-*  The entire **Donation Status** section of the page is unreadable in light mode.
+   :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme." lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme." lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The donation status items flagged as contrast issues when in light mode." lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
-    :::column-end:::
-:::row-end:::
+*  The **Donation Status** section of the page is unreadable in light mode, due to contrast issues:
+
+   :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The donation status items flagged as contrast issues when in light mode." lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
 
 
 ### Verify that the webpage is usable by people with color blindness
 
-The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.
-For detailed walkthrough steps, see [Verify that the page is usable by people with color blindness](test-color-blindness.md).
+The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that a page is usable by people with color blindness](test-color-blindness.md).
 
 :::image type="content" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the page as someone with protanopia (red color blindness) would see it." lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
 
@@ -393,7 +383,7 @@ For detailed walkthrough steps, see [Verify that the page is usable by people wi
 ### Verify that the webpage is usable with blurred vision
 
 Another interesting feature of the **Rendering** tool is that you can simulate blurred vision.  If we select the **Blurred vision** option from the **Emulate vision deficiencies** dropdown list, we can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
-For detailed walkthrough steps, see [Verify that the page is usable with blurred vision](test-blurred-vision.md).
+For detailed walkthrough steps, see [Verify that a page is usable with blurred vision](test-blurred-vision.md).
 
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="Simulating a blurred page can reveal accessibility issues." lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
@@ -416,7 +406,7 @@ In the demo page here, turning off animations will stop the smooth scrolling of 
 
 This CSS media query conditionally runs the "smooth scrolling" animation.  But the animation of the top navigation bar, sidebar navigation menu, and **More** links still run, even when the user doesn't want to see animations. Those other animations need to be conditionally run, such as by adding additional media queries.
 
-For detailed walkthrough steps, see [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md).
+For detailed walkthrough steps, see [Verify that a page is usable with UI animation turned off](test-reduced-ui-motion.md).
 
 
 <!-- ====================================================================== -->

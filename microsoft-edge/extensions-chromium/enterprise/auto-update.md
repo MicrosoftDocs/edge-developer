@@ -1,12 +1,12 @@
 ---
-description: Learn about automatic updates to extensions in Microsoft Edge
 title: Automatically update extensions in Microsoft Edge
+description: Learn about automatic updates to extensions in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 04/13/2021
 ---
 <!-- Copyright A. W. Fuchs
 
