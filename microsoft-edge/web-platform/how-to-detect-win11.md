@@ -3,10 +3,9 @@ title: Detect Windows 11 using User-Agent Client Hints
 description: How to differentiate Windows 10 and Windows 11 using User-Agent Client Hints.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/04/2022
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, compatibility, web platform, user-agent string, ua string, user-agent client hints, user agent client hints, ua client hints, ua ch, windows 11, win11, detecting windows 11, windows detection
+ms.date: 01/04/2022
 ---
 # Detect Windows 11 using User-Agent Client Hints
 
@@ -116,4 +115,5 @@ To detect specific versions of Windows, use the following values for `platformVe
 | Win10 2004 | 10 |
 | Win10 20H2 | 10 |
 | Win10 21H1 | 10 |
+| Win10 21H2 | 10 |
 | Win11 | 13+ |

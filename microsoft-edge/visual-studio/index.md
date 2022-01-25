@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, vs, visual studio, debugger
 ms.date: 07/27/2021
 ---
 # Visual Studio for web development

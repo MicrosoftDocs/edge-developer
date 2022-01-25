@@ -960,6 +960,12 @@
         "redirect_url": "/dotnet/api/microsoft.web.webview2.wpf.webview2",
         "redirect_document_id": false
       },
+      /* redirects to edge-selenium-tools github */
+      {
+        "source_path": "microsoft-edge/webdriver-chromium/verify-selenium-tools.md",
+        "redirect_url": "https://github.com/microsoft/edge-selenium-tools/wiki/using-gpg-to-verify-selenium-tools-for-microsoft-edge-releases",
+        "redirect_document_id": false
+      },
       /* redirect to devtools */
       {
         "source_path": "microsoft-edge/devtools-guide-chromium/console/javascript.md",
