@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, developer, tools, automation, test, playwright, node, javascript, npm
 ms.date: 11/24/2020
 ---
 # Use Playwright to automate and test in Microsoft Edge

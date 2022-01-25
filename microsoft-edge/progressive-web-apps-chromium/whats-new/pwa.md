@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
 ms.date: 11/19/2021
 ---
 # What's New in Progressive Web Apps
