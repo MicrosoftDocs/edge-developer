@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, Windows, Taskbar, jumplist, shortcut
 ms.date: 09/13/2021
 ---
 # Define app shortcuts

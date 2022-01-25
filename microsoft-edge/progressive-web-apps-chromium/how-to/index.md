@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: progressive web apps, PWA, Edge, Windows, PWABuilder, web manifest, service worker, push
 ms.date: 11/19/2021
 ---
 # Get started with Progressive Web Apps

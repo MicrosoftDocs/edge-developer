@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, emulation, device, simulation, mobile
 ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques
