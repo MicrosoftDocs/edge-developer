@@ -25,7 +25,7 @@ Developers must often decide between building a web app or a native app.  This d
 *  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
 *  To access all the capabilities of a native platform, use a native app.
 
-:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native" lightbox="./media/WebView2/web-native.png":::
+:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native." lightbox="./media/WebView2/web-native.png":::
    Web native
 :::image-end:::
 

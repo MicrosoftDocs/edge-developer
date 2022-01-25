@@ -65,7 +65,7 @@ To display a list of the Android WebViews with debugging turned on that run on y
 To start debugging, under the Android WebView you want to debug, choose **inspect**.  Use DevTools in the same way that you do a remote browser tab.
 
 <!--
-:::image type="complex" source=".images/webview-debugging.msft.png" alt-text="Inspecting elements in an Android WebView" lightbox=".images/webview-debugging.msft.png":::
+:::image type="complex" source=".images/webview-debugging.msft.png" alt-text="Inspecting elements in an Android WebView." lightbox=".images/webview-debugging.msft.png":::
    Inspecting elements in an Android WebView
 :::image-end:::
 
@@ -87,5 +87,5 @@ Your Android WebViews aren't displayed on the `edge://inspect` page?
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/webviews) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).
