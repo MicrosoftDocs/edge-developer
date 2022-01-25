@@ -18,7 +18,7 @@ Every development team follows different practices when building their applicati
 
 We generally recommend using the Evergreen WebView2 Runtime.  Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements.  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime.
 
-If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  For more information, navigate to [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
+If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  See [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
 
 
 <!-- ====================================================================== -->
@@ -26,7 +26,7 @@ If you use the Evergreen runtime, before running your WebView2 app, test whether
 
 When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary).
 
-This guidance is similar to the guidance that we give to web developers.  For more information, navigate to [Test your app for forward-compatibility](../concepts/distribution.md#test-your-app-for-forward-compatibility).
+This guidance is similar to the guidance that we give to web developers.  See [Test your app for forward-compatibility](../concepts/distribution.md#test-your-app-for-forward-compatibility).
 
 
 <!-- ====================================================================== -->
@@ -36,20 +36,22 @@ This guidance is similar to the guidance that we give to web developers.  For mo
 
 To run a WebView2 app that was developed with a particular version of the Webview2 SDK, the client must have a compatible version of the WebView2 Runtime installed.  Because APIs are continually being added to WebView2, new versions of the runtime are also released to support the new APIs.  Use feature-detection to make sure that the newer APIs that are used by your WebView2 app are supported by the WebView2 Runtime that's installed on the client.
 
-If you use the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version.  For example, if a client doesn't have internet access, the runtime isn't automatically updated.  Additionally, some group policies pause updating of the runtime.  When you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.
+If you use the Evergreen WebView2 Runtime, there are some scenarios where the runtime on a client hasn't been automatically updated to the latest version.  For example, if a client doesn't have internet access, the runtime isn't automatically updated.
+
+Additionally, some group policies pause updating of the runtime.  When you push an update to your WebView2 app, the app might not work if it tries to call newer APIs that aren't available in the client's installed runtime.
 
 To solve this situation, before your code calls a recently added WebView2 API, test whether that API is available in the client's installed runtime.  This test for newer functionality is similar to other web development best practices that detect supported features before using new web APIs.  To test for API availability in the installed runtime, use either:
 
 *   `QueryInterface` in C/C++.
 *   A `try/catch` block in .NET or WinUI.
 
-For more information, navigate to [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
+See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
 
 
 <!-- ====================================================================== -->
 ## Update the Fixed Version Runtime
 
-If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using 3rd-party content in Webview2 apps, always consider the content to be untrusted.  For more information, navigate to [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
+If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using 3rd-party content in Webview2 apps, always consider the content to be untrusted.  See [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
 
 
 <!-- ====================================================================== -->
@@ -92,4 +94,4 @@ To prevent such a memory leak:
 <!-- ====================================================================== -->
 ## Follow recommended WebView2 security best practices
 
-For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications](../concepts/security.md).
+For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  See [Best practices for developing secure WebView2 applications](../concepts/security.md).

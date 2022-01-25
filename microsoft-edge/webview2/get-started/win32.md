@@ -10,10 +10,10 @@ ms.date: 12/13/2021
 ---
 # Get started with WebView2 in Win32 apps
 
-In this article, get started creating your first WebView2 app in Win32. Learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information about individual WebView2 APIs, navigate to [API reference](/microsoft-edge/webview2/reference/win32).
+In this article, get started creating your first WebView2 app in Win32. Learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information about individual WebView2 APIs, see [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32).
 
-> [!NOTE]
-> This tutorial refers to WebView2 samples. To view or copy sample code, navigate to [WebView2 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples).
+This tutorial refers to WebView2 samples.  To view or copy sample code, see the [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo.
+
 
 <!-- ====================================================================== -->
 ## Step 0 - Prerequisites
@@ -31,16 +31,15 @@ Install the following prerequisites before proceeding.
 Start with a basic desktop project that contains a single main window.
 
 > [!IMPORTANT]
-> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp) for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide).
+> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp) for your sample app.  To download the modified sample and get started, see the [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide) repo.
 
 1.  In Visual Studio, open `WebView2GettingStarted.sln`.
     If you use an older version of Visual Studio, in the **Solution Explorer** right-click **WebView2GettingStarted**, and choose **Properties**. Click **Configuration Properties** > **General**, then modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset.
 
-:::image type="complex" source="../media/tool-version.png" alt-text="Tool version" lightbox="../media/tool-version.png":::
-   Tool version
-:::image-end:::
+:::image type="content" source="../media/tool-version.png" alt-text="Tool version" lightbox="../media/tool-version.png":::
 
 Visual Studio may display errors, because your project is missing the WebView2 header file. The errors resolve after completing [Section 2 - Install WebView2 SDK](#step-2---install-webview2-sdk).
+
 
 <!-- ====================================================================== -->
 ## Step 2 - Install WebView2 SDK
@@ -49,9 +48,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
 
 1.  In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**.
 
-    :::image type="complex" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages" lightbox="../media/manage-nuget-packages.png":::
-       Manage NuGet packages
-    :::image-end:::
+    :::image type="content" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages" lightbox="../media/manage-nuget-packages.png":::
 
     > [!WARNING]
     > If you don't see the expected search results in the following steps, check the NuGet source location. Click **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**. Make sure that in **Package sources** there is a **nuget.com** source pointing to `https://api.nuget.org/v3/index.json`. If **Package sources** doesn't contain that source, enter `nuget.com` in the **Name** text box and `https://api.nuget.org/v3/index.json` in the **Source** text box. Then click **Update** and **OK**.
@@ -64,18 +61,14 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
         > [!NOTE]
         > The [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) are optional and make working with COM easier for the example.
 
-        :::image type="complex" source="../media/wil.png" alt-text="Windows Implementation Library" lightbox="../media/wil.png":::
-           Windows Implementation Library
-        :::image-end:::
+        :::image type="content" source="../media/wil.png" alt-text="Windows Implementation Library" lightbox="../media/wil.png":::
 
 1.  Install the WebView2 SDK.
     1.  In the **NuGet** window, click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.
     1.  In the right-hand side window, click **Install**.  NuGet downloads the SDK to your machine.
 
-        :::image type="complex" source="../media/nuget.png" alt-text="NuGet Package Manager" lightbox="../media/nuget.png":::
-           NuGet Package Manager
-        :::image-end:::
+        :::image type="content" source="../media/nuget.png" alt-text="NuGet Package Manager" lightbox="../media/nuget.png":::
 
 1.  Add WebView2 header to your project.
 
@@ -106,9 +99,7 @@ The project is ready to use and build against the WebView2 API.
 
  The sample app displays an empty window.
 
-:::image type="complex" source="../media/empty-app.png" alt-text="Sample app displays an empty window." lightbox="../media/empty-app.png":::
-   The sample app displays an empty window.
-:::image-end:::
+:::image type="content" source="../media/empty-app.png" alt-text="The sample app displays an empty window." lightbox="../media/empty-app.png":::
 
 
 <!-- ====================================================================== -->
@@ -116,7 +107,9 @@ The project is ready to use and build against the WebView2 API.
 
 Add a WebView2 control to the main window.
 
-Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge browser powering the control.  You can also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, [user data folder](../concepts/user-data-folder.md), browser flags, and so on, instead of using the default setting.  Upon the completion of the `CreateCoreWebView2Environment` method, run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.
+Use the `CreateCoreWebView2Environment` method to set up the environment and locate the Microsoft Edge browser powering the control.  You can also use the `CreateCoreWebView2EnvironmentWithOptions` method if you want to specify browser location, [user data folder](../concepts/user-data-folder.md), browser flags, and so on, instead of using the default setting.
+
+Upon completion of the `CreateCoreWebView2Environment` method, run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback and run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.
 
 In the callback, set a few more settings, resize the WebView2  to fill 100% of the parent window, and display Bing.
 
@@ -291,11 +284,9 @@ nullptr);
 
 1.  Press **F5** to build and run the project.
 
-    The URL appears in a pop-up window before navigating to a webpage.
+    The URL appears in a pop-up window before navigating to a webpage.  The sample app with Webview2 control displays the Bing website, http://www.bing.com. The sample app also displays an OK button. Users click OK to continue to the URL:
 
-    :::image type="complex" source="../media/show-url.png" alt-text="The sample app displays the Bing website." lightbox="../media/show-url.png":::
-       The sample app with Webview2 control displays the Bing website, http://www.bing.com. The sample app also displays an OK button. Users click OK to continue to the url.
-    :::image-end:::
+:::image type="content" source="../media/show-url.png" alt-text="The sample app displays the Bing website." lightbox="../media/show-url.png":::
 
 Congratulations, you built your first WebView2 app!
 

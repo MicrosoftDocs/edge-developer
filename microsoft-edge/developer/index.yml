@@ -100,7 +100,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: WebView2 overview
+          - text: Introduction to Microsoft Edge WebView2
             url: /microsoft-edge/webview2/index
       - linkListType: concept
         links:

@@ -10,90 +10,81 @@ ms.date: 09/15/2021
 ---
 # Get started debugging WebView2 apps
 
-The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.  When you develop your WebView2 app, you should debug your app.  This article outlines the different tools to use to debug both your web and native code in your WebView2 app.
+The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.  When you develop your WebView2 app, you should debug your app.
+
+This article outlines the different tools to use to debug both your web code and native code in your WebView2 app.
 
 
 <!-- ====================================================================== -->
 
 ## [Microsoft Edge DevTools](#tab/devtools)
 
-Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
+Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed in WebView2 controls, in the same way that you can debug another webpage that's displayed in Microsoft Edge.
 
-*   Select `F12`.
-*   Select `Ctrl`+`Shift`+`I`.
-*   Open the context menu (right-click) and choose `Inspect`.
+To open DevTools when you're viewing a WebView2 app, put focus on the WebView control and then do one of the following:
 
-For more information, navigate to [DevTools overview](../index.md).
+*  Press `F12`.
+*  Press `Ctrl`+`Shift`+`I`.
+*  Right-click the page and then select `Inspect`.
 
-:::image type="complex" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
-   DevTools debugging
-:::image-end:::
+See [DevTools overview](../index.md).
+
+<!-- keep lightbox -->
+:::image type="content" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
 
 
 <!-- ====================================================================== -->
 
 ## [Visual Studio](#tab/visualstudio)
 
-Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
+Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available, as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
 
 > [!IMPORTANT]
-> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu (right-click) to avoid the situation.
+> When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid this, press `Ctrl`+`Shift`+`I`, or right-click.<!-- clarify what to right-click -->
 
-Before you begin, ensure the following requirements are met.
+Before you begin, make sure the following requirements are met:
 
-*   To debug scripts, the app must be launched from within Visual Studio.
-*   You cannot attach a debugger to a running WebView2 process.
-*   Install Visual Studio 2019 version 16.4 Preview 2 or later.
+*  To debug scripts, the app must be launched from within Visual Studio.
+*  You cannot attach a debugger to a running WebView2 process.
+*  Install Visual Studio 2019 version 16.4 Preview 2 or later.
 
-Install and set up the script debugger tools in Visual Studio.
+Install and set up the script debugger tools in Visual Studio:
 
-1.  Complete the following actions to install the **JavaScript diagnostics** component in **Desktop development with C++**.
+1.  Install the **JavaScript diagnostics** component in **Desktop development with C++**, as follows:
     1.  In the Windows Explorer bar, type `Visual Studio Installer`.
-    1.  Choose **Visual Studio Installer** to open it.
-    1.  In the Visual Studio Installer, on the installed version, choose the **More** button, and then choose **Modify**.
-    1.  In Visual Studio, under **Workloads**, choose the **Desktop Development in C++** setting.
+    1.  Select **Visual Studio Installer** to open it.
+    1.  In the Visual Studio Installer, on the installed version, click the **More** button, and then select **Modify**.
+    1.  In Visual Studio, under **Workloads**, select the **Desktop Development in C++** setting.
 
-        :::image type="complex" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen" lightbox="./media/workloads.png":::
-            Visual Studio Modifying Workloads Screen
-        :::image-end:::
+        :::image type="content" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen" lightbox="./media/workloads.png":::
 
-    1.  Choose **Individual components**.
+    1.  Select **Individual components**.
     1.  In the search box, enter `JavaScript diagnostics`.
-    1.  Choose the **JavaScript diagnostics** setting.
-    1.  Choose **Modify**.
+    1.  Select the **JavaScript diagnostics** setting.
+    1.  Click **Modify**.
 
-        :::image type="complex" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indiv-comp.png":::
-           Visual Studio Modifying Individual Components Tab
-        :::image-end:::
+        :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indiv-comp.png":::
 
 1.  Enable script debugging for WebView2 apps.
-    1.  In your WebView2 project, open the context menu (right-click), and choose **Properties**.
-    1.  Under the **Configuration Properties**, choose **Debugging**.
-    1.  Under the **Debugger Type**, choose **JavaScript (WebView2)**.
+    1.  Right-click your WebView2 project, and then select **Properties**.
+    1.  Under the **Configuration Properties**, select **Debugging**.
+    1.  Under the **Debugger Type**, select **JavaScript (WebView2)**.
 
-        :::image type="complex" source="./media/enb-js.png" alt-text="Visual Studio Debugging Configuration Property" lightbox="./media/enb-js.png":::
-           Visual Studio **Debugging** Configuration Property
-        :::image-end:::
+        :::image type="content" source="./media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
 
-Complete the following actions to debug your WebView2 app.
+To debug a WebView2 app:
 
-1.  To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.  The JS/TS debug adapter does not perform source path mapping.  You must open the exact same path associated with your WebView2.
+1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
-    :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio add breakpoint" lightbox="./media/breakpoint.png":::
-       Visual Studio add breakpoint
-    :::image-end:::
+    :::image type="content" source="./media/breakpoint.png" alt-text="Adding a breakpoint in Visual Studio." lightbox="./media/breakpoint.png":::
 
-1.  To run the debugger, choose the bit size of the platform, and then choose the green play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.
+1. To run the debugger, select the bit size of the platform, and then click the green Play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.
 
-    :::image type="complex" source="./media/run.png" alt-text=" Visual Studio Local Windows Debugger" lightbox="./media/run.png":::
-       Visual Studio **Local Windows Debugger**
-    :::image-end:::
+    :::image type="content" source="./media/run.png" alt-text="The Local Windows Debugger in Visual Studio." lightbox="./media/run.png":::
 
 1.  In the **Debug Console**, find the output from the debugger.
 
-    :::image type="complex" source="./media/console.png" alt-text=" Visual Studio Debug Console" lightbox="./media/console.png":::
-       Visual Studio **Debug Console**
-    :::image-end:::
+    :::image type="content" source="./media/console.png" alt-text="Debug Console in Visual Studio." lightbox="./media/console.png":::
 
 > [!NOTE]
 > If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.  This source path mapping works when you use the debugger in Visual Studio Code.
@@ -128,25 +119,19 @@ In Visual Studio Code, complete the following actions to debug your code.
     > [!NOTE]
     > Visual Studio Code source path mapping now requires the URL, so your app now receives a command-line parameter when it starts.  You may safely ignore the `url` parameter if needed.
 
-1.  To set a breakpoint in your source code, hover on the line, and select `F9`
+1.  To set a breakpoint in your source code, click a line of code and then press `F9`:
 
-    :::image type="complex" source="./media/breakpoint-vs.png" alt-text="Breakpoint is set in Visual Studio Code" lightbox="./media/breakpoint-vs.png":::
-       Breakpoint is set in Visual Studio Code
-    :::image-end:::
+    :::image type="content" source="./media/breakpoint-vs.png" alt-text="A breakpoint that's set in Visual Studio Code" lightbox="./media/breakpoint-vs.png":::
 
-1.  Run the code.
-    1.  On the **Run** tab, choose the launch configuration from the dropdown menu.
-    1.  To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.
+1.  Run the code, as follows:
+    1.  On the **Run** tab, select the launch configuration from the dropdown menu.
+    1.  To start debugging your app, click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
-        :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code Run tab" lightbox="./media/run-vs.png":::
-           Visual Studio Code Run tab
-        :::image-end:::
+        :::image type="content" source="./media/run-vs.png" alt-text="The Run tab in Visual Studio Code." lightbox="./media/run-vs.png":::
 
 1.  Open **Debug Console** to view the debug output and errors.
 
-    :::image type="complex" source="./media/results-vs.png" alt-text=" Visual Studio Code Debug Console" lightbox="./media/results-vs.png":::
-       Visual Studio Code Debug Console
-    :::image-end:::
+    :::image type="content" source="./media/results-vs.png" alt-text="The Debug Console in Visual Studio Code." lightbox="./media/results-vs.png":::
 
 **Advanced Settings**:
 
@@ -237,8 +222,8 @@ In Visual Studio Code, complete the following actions to debug your code.
     You may encounter the following scenarios when using the debugger.
 
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
-    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
+    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  See [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
 * * *
 

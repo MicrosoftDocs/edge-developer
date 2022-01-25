@@ -26,7 +26,7 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 
 | API  | Description  |
 |:--- |:--- |
-| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control. For more information, navigate to the Get Started tutorial. |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control.  See [Get started with WebView2](../get-started/get-started.md). |
 | [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | Runs when the Document Object Model (DOM) is created. |
 
 

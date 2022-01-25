@@ -20,7 +20,7 @@ The prerelease SDK works together with a preview channel as follows:
 *  A prerelease version of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
 *  The preview channels of Microsoft Edge contain the Microsoft Edge binaries that are needed to run and render your app, including the implementation of the experimental APIs.
 
-For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, navigate to [Understand WebView2 SDK versions](../concepts/versioning.md).
+For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, see [Understand WebView2 SDK versions](../concepts/versioning.md).
 
 
 <!-- ====================================================================== -->
@@ -28,7 +28,7 @@ For more information about how SDK versions works in conjunction with the WebVie
 
 To use experimental APIs, download a prerelease version of the WebView2 SDK from [Microsoft.Web.WebView2 package](https://www.nuget.org/packages/Microsoft.Web.WebView2).
 
-To get a Microsoft Edge preview channel, navigate to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download).
+To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download).
 
 
 <!-- intro/overview of 4 approaches ======================================= -->

@@ -10,8 +10,7 @@ ms.date: 08/16/2021
 ---
 # Microsoft Edge WebView2 API Reference
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using Chromium-based [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](./get-started/win32.md).
-<!-- linking to a parent node of the TOC ("Get started with WebView2") isn't supported, so the above link goes to the first child article, but with link text of the parent TOC node. -->
+The Microsoft Edge WebView2 control enables you to host web content in your application using Chromium-based [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine.  See [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](./get-started/get-started.md).
 
 
 <!-- ====================================================================== -->
