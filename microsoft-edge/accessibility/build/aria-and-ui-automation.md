@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
 ms.assetid: ffd1bc60-2ef1-4f11-8156-b63544cede77
 ms.custom: seodec18
 ms.date: 03/05/2020

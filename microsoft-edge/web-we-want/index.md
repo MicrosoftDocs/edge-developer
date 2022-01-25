@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, developer, web we want
 ms.date: 03/15/2021
 ---
 # The Web We Want initiative

@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, JavaScript, web development, f12 tools, devtools
 ms.date: 04/13/2021
 ---
 # Run JavaScript in the Console
