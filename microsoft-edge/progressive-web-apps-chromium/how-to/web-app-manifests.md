@@ -6,7 +6,6 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
 ms.date: 01/07/2021
 ---
 # Use a Web App Manifest to integrate a Progressive Web App into the operating system

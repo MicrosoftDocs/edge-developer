@@ -3,11 +3,10 @@ title: Use JavaScript in WebView for extended scenarios
 description: Learn how to use JavaScript in complex scenarios in WebView2 apps
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 1/5/2022
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 1/5/2022
 ---
 # Use JavaScript in WebView for extended scenarios
 
@@ -35,10 +34,12 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 ## Scenario: ExecuteScript JSON-encoded results
 
 
-Because the result of `ExecuteScriptAsync` is JSON-encoded, if the result of evaluating the JavaScript is a string, you will receive a JSON-encoded string and not the value of the string. For example, the following script results in a string with the following value, including the quotes at the start and end, and the escaping slashes:
+Because the result of `ExecuteScriptAsync` is JSON-encoded, if the result of evaluating the JavaScript is a string, you will receive a JSON-encoded string and not the value of the string. For example, the following code executes script that results in a string.  The resulting string includes a quote at the start, a quote at the end, and escaping slashes:
 
- * Script: ```var result = await webView22.CoreWebView2.ExecuteScriptAsync(@"'example'");``` 
- * Result: ```"\"example\"";```
+```csharp
+string result = await coreWebView2.ExecuteScriptAsync(@"'example'");
+Debug.Assert(result == "\"example\"");
+```
 
 The script returns a string that `ExecuteScript` JSON-encodes for you. If you call `JSON.stringify` from your script, then the result is doubly encoded as a JSON string the value of which is a JSON string.
 
