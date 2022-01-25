@@ -58,33 +58,33 @@ Install and set up the script debugger tools in Visual Studio:
 
         :::image type="content" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen" lightbox="./media/workloads.png":::
 
-    1.  Select **Individual components**.
-    1.  In the search box, enter `JavaScript diagnostics`.
-    1.  Select the **JavaScript diagnostics** setting.
-    1.  Click **Modify**.
+    1. Select **Individual components**.
+    1. In the search box, enter `JavaScript diagnostics`.
+    1. Select the **JavaScript diagnostics** setting.
+    1. Click **Modify**.
 
-        :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indiv-comp.png":::
+       :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indiv-comp.png":::
 
-1.  Enable script debugging for WebView2 apps.
-    1.  Right-click your WebView2 project, and then select **Properties**.
-    1.  Under the **Configuration Properties**, select **Debugging**.
-    1.  Under the **Debugger Type**, select **JavaScript (WebView2)**.
+1. Enable script debugging for WebView2 apps.
+    1. Right-click your WebView2 project, and then select **Properties**.
+    1. Under the **Configuration Properties**, select **Debugging**.
+    1. Under the **Debugger Type**, select **JavaScript (WebView2)**.
 
-        :::image type="content" source="./media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
+       :::image type="content" source="./media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
 
 To debug a WebView2 app:
 
 1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
-    :::image type="content" source="./media/breakpoint.png" alt-text="Adding a breakpoint in Visual Studio." lightbox="./media/breakpoint.png":::
+   :::image type="content" source="./media/breakpoint.png" alt-text="Adding a breakpoint in Visual Studio." lightbox="./media/breakpoint.png":::
 
 1. To run the debugger, select the bit size of the platform, and then click the green Play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.
 
-    :::image type="content" source="./media/run.png" alt-text="The Local Windows Debugger in Visual Studio." lightbox="./media/run.png":::
+   :::image type="content" source="./media/run.png" alt-text="The Local Windows Debugger in Visual Studio." lightbox="./media/run.png":::
 
 1.  In the **Debug Console**, find the output from the debugger.
 
-    :::image type="content" source="./media/console.png" alt-text="Debug Console in Visual Studio." lightbox="./media/console.png":::
+   :::image type="content" source="./media/console.png" alt-text="Debug Console in Visual Studio." lightbox="./media/console.png":::
 
 > [!NOTE]
 > If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.  This source path mapping works when you use the debugger in Visual Studio Code.
@@ -98,7 +98,7 @@ Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.
 
 In Visual Studio Code, complete the following actions to debug your code.
 
-1.  Your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, copy the following code snippet and create a new `launch.json` file.
+1.  Your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, create a new `launch.json` file and copy the following code into it:
 
     ```json
         "name": "Hello debug world",
@@ -178,11 +178,11 @@ In Visual Studio Code, complete the following actions to debug your code.
 
     Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.
 
-*   Debug tracing options
+*  Debug tracing options
 
-    Add the `trace` parameter to launch.json to enable debug tracing.
+   Add the `trace` parameter to launch.json to enable debug tracing, as follows:
 
-    1.  Add `trace` parameter.
+   1. Add the `trace` parameter.
 
         ```json
         "name": "Hello debugging world",
@@ -209,21 +209,21 @@ In Visual Studio Code, complete the following actions to debug your code.
 
         :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on" lightbox="./media/verbose.png":::
 
-*   Debug Office Add-ins.
+*  Debug Office Add-ins.
 
-    If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open launch.json in your WebView2 app and add the following code snippet to attach the debugger to the Office add-in.
+   If you're debugging Office Add-ins, open the add-in source code in a separate instance of Visual Studio Code.  Open `launch.json` in your WebView2 app.  Add the following code into `launch.json`, to attach the debugger to the Office add-in:
 
-    ```json
-    ,"debugServer": 4711
-    ```
+   ```json
+   ,"debugServer": 4711
+   ```
 
-*   Troubleshooting the debugger
+* Troubleshooting the debugger
 
-    You may encounter the following scenarios when using the debugger.
+   You may encounter the following scenarios when using the debugger:
 
-    *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
+   *  The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
 
-    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  See [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
+   *  You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Make sure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  See [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
 * * *
 
@@ -231,7 +231,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 Get Started Guides](../index.md#get-started)
-*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference](../webview2-api-reference.md)
-*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+* [Get started with WebView2](../get-started/get-started.md)
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+* [WebView2 API reference](../webview2-api-reference.md)
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

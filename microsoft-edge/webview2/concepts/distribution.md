@@ -280,7 +280,7 @@ To use the Fixed Version distribution mode:
 
        *  Alternatively, use `EnsureCoreWebView2Async` ([WPF](/dotnet/api/microsoft.web.webview2.wpf.webview2.ensurecorewebview2async)/[WinForms](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async)) to specify the environment.  Use the `browserExecutableFolder` parameter in [CoreWebView2Environment.CreateAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) to indicate the path to the Fixed Version binaries.
 
-    * For WinUI, make sure the app has access to the folder by specifying the installed location and setting the environment variable for runtime path.
+   *  For WinUI, make sure the app has access to the folder by specifying the installed location and setting the environment variable for runtime path.
 
         *  One way to do this is by adding the following C# code to your app:
         
@@ -291,47 +291,55 @@ To use the Fixed Version distribution mode:
         Debug.WriteLine($"FixedRuntime path [{fixedPath}]");
         Environment.SetEnvironmentVariable("WEBVIEW2_BROWSER_EXECUTABLE_FOLDER", fixedPath);
         ```
+
 1. Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
 
-    * For WinUI this might include opening the project file (.csproj) in a code editor, and then add the following code snippet within the project tags:
+    *  For WinUI, this might include opening the project file (`.csproj`) in a code editor, and then add the following code within the project tags:
 
-        ```xml
-        <Content Include="FixedRuntime\(version number)\\**\*.*">
-        <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
-        </Content>
-        ```
+       ```xml
+       <Content Include="FixedRuntime\(version number)\\**\*.*">
+       <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
+       </Content>
+       ```
 
-        Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\\(version number) folder with the runtime files in it.
+       Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\\(version number) folder with the runtime files in it.
 
 ### Known issues for Fixed Version
 
 *  Currently, Fixed Version cannot be run from a network location or UNC path.
 
-*  Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady](https://www.microsoft.com/playready) to stop working.  Fix the PlayReady setup as follows.
+*  Installing the Fixed Version of the WebView2 Runtime on the client causes [Microsoft PlayReady](https://www.microsoft.com/playready) to stop working.  Fix the PlayReady setup as follows:
 
    1. Locate the path where you deploy the Fixed Version package on the user's device, such as the following location:
 
-       ```text
-       D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64
-       ```
+      ```text
+      D:\myapp\Microsoft.WebView2.FixedVersionRuntime.87.0.664.8.x64
+      ```
 
    1. Run the following commands on the user's device:
 
-       ```shell
-       icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
-       icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
-       ```
+      ```shell
+      icacls {Fixed Version path} /grant *S-1-15-2-2:(OI)(CI)(RX)
+      icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
+      ```
 
    1. PlayReady should be working now on the user's device.  To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below:
 
-       :::image type="content" source="../media/play-ready-permission.png" alt-text="Permission for PlayReady." lightbox="../media/play-ready-permission.png":::
+![Permission for PlayReady.](../media/play-ready-permission.png)
+
 
 <!-- ====================================================================== -->
 ## Files to ship with the app
 
 The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture.
 
-`WebView2Loader.dll` is a native and architecture-specific binary, so you need to include all flavors of this binary that you expect your app to run in.  For example, for x86 you would include the x86 version of `WebView2Loader.dll`, and for AnyCPU you would include the x86, x64, and arm64 versions of `WebView2Loader.dll`.  For a managed app, the correct version of `WebView2Loader.dll` is loaded from the appropriate architecture-specific folder.
+`WebView2Loader.dll` is a native and architecture-specific binary, so you need to include all flavors of this binary that you expect your app to run in.  For example:
+
+*  For x86, you would include the x86 version of `WebView2Loader.dll`.
+
+*  For AnyCPU you would include the x86, x64, and arm64 versions of `WebView2Loader.dll`.
+
+*  For a managed app, the correct version of `WebView2Loader.dll` is loaded from the appropriate architecture-specific folder.
 
 Example native app folder structure:
 

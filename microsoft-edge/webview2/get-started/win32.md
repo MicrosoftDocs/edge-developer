@@ -72,7 +72,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
 
 1.  Add WebView2 header to your project.
 
-    In the `HelloWebView.cpp` file, copy the following code snippet and paste it after the last `#include` line:
+    In the `HelloWebView.cpp` file, copy the following code and paste it after the last `#include` line:
 
     ```cpp
     // include WebView2 header
@@ -113,7 +113,7 @@ Upon completion of the `CreateCoreWebView2Environment` method, run the `ICoreWeb
 
 In the callback, set a few more settings, resize the WebView2  to fill 100% of the parent window, and display Bing.
 
-1.  Copy the following code snippet and paste into `HelloWebView.cpp` after the `// <-- WebView2 sample code starts here -->` comment and before the `// <-- WebView2 sample code ends here -->` comment.
+1.  Copy the following code and paste into `HelloWebView.cpp`.  Paste the code after the `// <-- WebView2 sample code starts here -->` comment and before the `// <-- WebView2 sample code ends here -->` comment.
 
     ```cpp
     // 3 - Create a single WebView2 control in the parent window
@@ -193,7 +193,7 @@ In error cases, one or more of the following events may occur depending on wheth
 > [!NOTE]
 > If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
-1.  As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.  Copy the following code snippet and paste into `HelloWebView.cpp`.
+1.  As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.  Copy the following code and paste it into `HelloWebView.cpp`:
 
     ```cpp
     // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
@@ -222,7 +222,7 @@ Use host apps to inject JavaScript code into WebView2 controls at runtime. You c
 *   Run it after the creation of the global object.
 *   Run it before any other script included in the HTML document is run.
 
-1.  Copy the following code snippet and paste into `HelloWebView.cpp`.
+1.  Copy the following code and paste it into `HelloWebView.cpp`:
 
     ```cpp
     // Schedule an async task to add initialization script that freezes the Object object
@@ -257,7 +257,7 @@ As an example to understand the mechanism, the following steps occur when you tr
 1.  The handler of the host is triggered and returns the message (the URL) to the web content.
 1.  The handler of the web content is triggered and prints message from the host (the URL).
 
-Copy the following code snippet and paste into `HelloWebView.cpp`.
+Copy the following code and paste it into `HelloWebView.cpp`:
 
 ```cpp
 // Set an event handler for the host to return received message back to the web content

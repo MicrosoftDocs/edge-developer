@@ -113,12 +113,9 @@ Add a WebView2 control to your app.
 
 1.  Make sure the WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
-    :::image type="complex" source="./media/winforms-hello-webview.png" alt-text="The sample app displays the Microsoft website." lightbox="./media/winforms-hello-webview.png":::
-       The sample application with WebView2 control displays the Microsoft website, https://www.microsoft.com.
-    :::image-end:::
+    :::image type="content" source="./media/winforms-hello-webview.png" alt-text="The sample app displays the Microsoft website." lightbox="./media/winforms-hello-webview.png":::
 
-    > [!NOTE]
-    > If you are working on a high-resolution monitor, you may need to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+If you are working on a high-resolution monitor, you may need to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 
 <!-- ====================================================================== -->
@@ -163,7 +160,7 @@ Add more controls to your Windows forms from the toolbox, and then process windo
     }
     ```
 
-1.  Copy and paste this code snippet in the same location.
+1.  Copy and paste this code in the same location:
 
     ```csharp
     public Form1()
@@ -254,7 +251,7 @@ When an error occurs, the following events are raised and may depend on navigati
 
 To demonstrate how to use the events, start by registering a handler for `NavigationStarting` that cancels any requests not using HTTPS.
 
-1.  In the `Form1.cs` file, update the constructor to match the following code snippet and add the `EnsureHttps` function as follows.
+1.  In the `Form1.cs` file, update the constructor to match the following code, adding the `EnsureHttps` function as follows:
 
     ```csharp
     public Form1()
@@ -327,7 +324,7 @@ The communication mechanism passes messages from web content to the host using n
 
 In your project, when the WebView2 control navigates to a URL, it displays the URL in the address bar and alerts the user of the URL displayed in the WebView2 control.
 
-1.  In the `Form1.cs` file, update the constructor and create an `InitializeAsync` function to match the following code snippet:
+1.  In the `Form1.cs` file, update the constructor and create an `InitializeAsync` function to match the following code:
 
     ```csharp
     public Form1()
@@ -346,7 +343,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
     The `InitializeAsync` function awaits [EnsureCoreWebView2Async](/dotnet/api/microsoft.web.webview2.winforms.webview2.ensurecorewebview2async) because the initialization of `CoreWebView2` is asynchronous.
 
-1.  After `CoreWebView2` is initialized, register an event handler to respond to `WebMessageReceived`.  In the `Form1.cs` file, update `InitializeAsync` and add `UpdateAddressBar` using the following code snippet.
+1.  After `CoreWebView2` is initialized, register an event handler to respond to `WebMessageReceived`.  In the `Form1.cs` file, update `InitializeAsync` and add `UpdateAddressBar` using the following code:
 
     ```csharp
     async void InitializeAsync()
@@ -367,7 +364,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
     1.  Send the URL to the host using `postMessage`.
     1.  Register an event handler to print a message sent from the host.
 
-1. In the `Form1.cs` file, update `InitializeAsync` to match the following code snippet:
+1. In the `Form1.cs` file, update `InitializeAsync` to match the following code:
 
     ```csharp
     async void InitializeAsync()
@@ -386,9 +383,9 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 
-    :::image type="complex" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
-       The application displays the URI in the address bar. The URI is https://www.microsoft.com and the Microsoft website displays in the window.
-    :::image-end:::
+    The application displays the URI in the address bar.  The URI is https://www.microsoft.com, and the Microsoft website is displayed in the window.
+
+    :::image type="content" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
 
 Congratulations, you built your first WebView2 app!
 
