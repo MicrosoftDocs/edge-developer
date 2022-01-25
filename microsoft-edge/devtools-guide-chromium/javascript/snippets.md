@@ -32,7 +32,7 @@ The following figure shows the DevTools homepage on the left and some Snippet so
 
 The webpage before running the Snippet:
 
-:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="The webpage before running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
+:::image type="content" source="../media/javascript-sources-snippets-split-screen.msft.png" alt-text="The webpage before running the Snippet." lightbox="../media/javascript-sources-snippets-split-screen.msft.png":::
 
 The Snippet source code from the webpage before running the Snippet:
 
@@ -46,7 +46,7 @@ document.body.appendChild(p);
 
 In the following figure, the webpage appears after running the Snippet.  The **Console Drawer** pops up to display the `Hello, Snippets!` message that the Snippet logs, and the content of the webpage changes completely.
 
-:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="The webpage after running the Snippet" lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-split-screen-after.msft.png" alt-text="The webpage after running the Snippet." lightbox="../media/javascript-sources-snippets-split-screen-after.msft.png":::
    The webpage after running the Snippet
 :::image-end:::
 
@@ -56,7 +56,7 @@ In the following figure, the webpage appears after running the Snippet.  The **C
 
 The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets.  When you want to edit a Snippet, you need to open it from the **Snippets** tab.
 
-:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="The Snippets tab" lightbox="../media/javascript-sources-snippets-pane.msft.png":::
+:::image type="complex" source="../media/javascript-sources-snippets-pane.msft.png" alt-text="The Snippets tab." lightbox="../media/javascript-sources-snippets-pane.msft.png":::
    The **Snippets** tab
 :::image-end:::
 
@@ -64,11 +64,11 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 
 1.  Select the **Sources** tab.  The **Sources** tool appears.
 
-    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="The Sources tool with the Page tab open on the left" lightbox="../media/javascript-sources-page-pane.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-page-pane.msft.png" alt-text="The Sources tool with the Page tab open on the left." lightbox="../media/javascript-sources-page-pane.msft.png":::
        The **Sources** tool with the **Page** tab open on the left
     :::image-end:::
 
-1.  In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you may need to select **More tabs** (![More tabs](../media/more-tabs-icon.msft.png)).
+1.  In the **Navigator** pane (on the left), select the **Snippets** tab.  To access the **Snippets** option, you may need to select **More tabs** (![More tabs.](../media/more-tabs-icon.msft.png)).
 
 ### Open the Snippets tab with the Command Menu
 
@@ -76,7 +76,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
 1.  Type `Snippets`, select **Show Snippets**, and then select `Enter` to run the command.
 
-    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="The Show Snippets command" lightbox="../media/javascript-search-show-snippets.msft.png":::
+    :::image type="complex" source="../media/javascript-search-show-snippets.msft.png" alt-text="The Show Snippets command." lightbox="../media/javascript-search-show-snippets.msft.png":::
        The **Show Snippets** command
     :::image-end:::
 
@@ -90,7 +90,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 1.  Select **New snippet**.
 1.  Enter a name for your Snippet, and then select `Enter`.
 
-    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Name a Snippet" lightbox="../media/javascript-sources-snippets-naming.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-naming.msft.png" alt-text="Name a Snippet." lightbox="../media/javascript-sources-snippets-naming.msft.png":::
        Name a Snippet
     :::image-end:::
 
@@ -100,7 +100,7 @@ The **Snippets** tab, in the **Navigator** pane on the left, lists your Snippets
 1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
 1.  Type `Snippet`, select **Create new snippet**, then select `Enter` to run the command.
 
-    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="The command for creating a new Snippet" lightbox="../media/javascript-search-create-new-snippet.msft.png":::
+    :::image type="complex" source="../media/javascript-search-create-new-snippet.msft.png" alt-text="The command for creating a new Snippet." lightbox="../media/javascript-search-create-new-snippet.msft.png":::
        The command for creating a new Snippet
     :::image-end:::
 
@@ -113,14 +113,14 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 1.  [Open the Snippets tab](#open-the-snippets-tab).
 1.  In the **Snippets** tab, choose the name of the Snippet that you want to edit.  It opens in the **Code Editor**.
 
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="The Code Editor" lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-saved.msft.png" alt-text="The Code Editor." lightbox="../media/javascript-sources-snippets-editor-saved.msft.png":::
        The **Code Editor**
     :::image-end:::
 
 1.  Use the **Code Editor** to add JavaScript to your Snippet.
 1.  When an asterisk appears next to the name of your Snippet, it means you have unsaved code.  Select `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save.
 
-    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="An asterisk next to the Snippet name indicates unsaved code" lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
+    :::image type="complex" source="../media/javascript-sources-snippets-editor-unsaved.msft.png" alt-text="An asterisk next to the Snippet name indicates unsaved code." lightbox="../media/javascript-sources-snippets-editor-unsaved.msft.png":::
        An asterisk next to the Snippet name indicates unsaved code
     :::image-end:::
 
@@ -132,7 +132,7 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 
 1.  [Open the Snippets tab](#open-the-snippets-tab).
 1.  Choose the name of the Snippet that you want to run.  The Snippet opens in the **Code Editor**.
-1.  Select **Run snippet** (![Run Snippet](../media/run-snippet-icon.msft.png)).
+1.  Select **Run snippet** (![Run Snippet.](../media/run-snippet-icon.msft.png)).
 
 ### Run a Snippet with the Command Menu
 
@@ -140,7 +140,7 @@ To rename your new Snippet with a custom name, navigate to [Rename Snippets](#re
 1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu.
 1.  Delete the `>` character and type the `!` character followed by the name of the Snippet that you want to run.
 
-    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Running a Snippet from the Command Menu" lightbox="../media/javascript-search-run-command.msft.png":::
+    :::image type="complex" source="../media/javascript-search-run-command.msft.png" alt-text="Running a Snippet from the Command Menu." lightbox="../media/javascript-search-run-command.msft.png":::
        Running a Snippet from the **Command Menu**
     :::image-end:::
 
@@ -176,5 +176,5 @@ By default, Snippets are only available within DevTools, but you can also save t
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/snippets) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

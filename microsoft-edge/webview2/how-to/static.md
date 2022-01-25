@@ -21,7 +21,7 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
 
 1.  Locate the section in the code where you include the WebView2 NuGet package target files.  The location in the code is highlighted in the following figure.
 
-    :::image type="complex" source="./media/insert-here.png" alt-text="Project Files code snippet" lightbox="./media/insert-here.png":::
+    :::image type="complex" source="./media/insert-here.png" alt-text="Project Files code snippet." lightbox="./media/insert-here.png":::
        Project Files code snippet
     :::image-end:::
 
@@ -33,7 +33,7 @@ For apps that don't want to ship a `WebView2Loader.dll`, complete the following 
     </PropertyGroup>
     ```
 
-    :::image type="complex" source="./media/static-lib.png" alt-text="Inserted code snippet" lightbox="./media/static-lib.png":::
+    :::image type="complex" source="./media/static-lib.png" alt-text="Inserted code snippet." lightbox="./media/static-lib.png":::
        Inserted code snippet
     :::image-end:::
 

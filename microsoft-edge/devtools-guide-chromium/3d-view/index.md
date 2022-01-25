@@ -29,7 +29,7 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 <!-- ====================================================================== -->
 ## Navigating the canvas
 
-:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View" lightbox="../media/3d-view-canvas.msft.png":::
+:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View." lightbox="../media/3d-view-canvas.msft.png":::
    Canvas of 3D View
 :::image-end:::
 
@@ -49,7 +49,7 @@ To zoom, drag two fingers across the touchpad or use the scroll wheel on your mo
 
 ### On-screen controls
 
-:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls" lightbox="../media/3d-view-controls-small.msft.png":::
+:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls." lightbox="../media/3d-view-controls-small.msft.png":::
    On-screen controls
 :::image-end:::
 
@@ -61,7 +61,7 @@ To refresh the canvas, such as when the browser changed or you switched to a dev
 <!-- ====================================================================== -->
 ## Z-index
 
-:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view" lightbox="../media/3d-view-z-index-view-box.msft.png":::
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view." lightbox="../media/3d-view-z-index-view-box.msft.png":::
    Z-index view
 :::image-end:::
 
@@ -99,7 +99,7 @@ This approach improves the z-index debugging experience.  The radio buttons allo
 <!-- ====================================================================== -->
 ## 3D DOM
 
-:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view" lightbox="../media/3d-view-dom-purple-box.msft.png":::
+:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view." lightbox="../media/3d-view-dom-purple-box.msft.png":::
    DOM view
 :::image-end:::
 
@@ -131,7 +131,7 @@ The **Use screen texture** option adds context to your debugging experience.  It
 <!-- ====================================================================== -->
 ## Composited layers
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane." lightbox="../media/experiments-layers.msft.png":::
    **Composited Layers** pane
 :::image-end:::
 

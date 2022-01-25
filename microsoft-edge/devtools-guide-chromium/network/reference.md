@@ -36,12 +36,12 @@ By default, DevTools records all network requests in the **Network** tool, so lo
 
 To stop recording requests:
 
-1.  On the **Network** tool, click **Stop recording network log** (![Stop recording network log](../media/record-on-icon.msft.png)).  It turns grey to indicate that DevTools is no longer recording requests.
+1.  On the **Network** tool, click **Stop recording network log** (![Stop recording network log.](../media/record-on-icon.msft.png)).  It turns grey to indicate that DevTools is no longer recording requests.
 1.  Press `Control`+`E` (Windows, Linux) or `Command`+`E` (macOS) while the **Network** tool is in focus.
 
 ### Clear requests
 
-Click the **Clear** (![Clear](../media/clear-requests-icon.msft.png)) button on the **Network** tool to clear all requests from the Requests table.
+Click the **Clear** (![Clear.](../media/clear-requests-icon.msft.png)) button on the **Network** tool to clear all requests from the Requests table.
 
 :::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="The Clear button." lightbox="../media/network-network-clear-button.msft.png":::
 
@@ -629,7 +629,7 @@ You may expand or collapse sections of the **Network** tool UI to focus importan
 
 ### Hide the Filters pane
 
-By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter](../media/filter-icon.msft.png)).
+By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter.](../media/filter-icon.msft.png)).
 
 :::image type="content" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Hide Filters button." lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
 
@@ -653,5 +653,5 @@ By default, DevTools displays the **Overview** pane.  To hide the **Overview** p
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -56,7 +56,7 @@ First, update your `popup.html` file with some straightforward markup that displ
 
 After updating and opening the extension, a pop-up opens with a display button.
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon":::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon.":::
    popup.html display after selecting the Extension icon
 :::image-end:::
 
@@ -214,7 +214,7 @@ When an event is processed by the listener, the function that is the first param
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows.
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon":::
+:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon.":::
    popup.html display after selecting the Extension icon
 :::image-end:::
 
@@ -222,7 +222,7 @@ Now, when you browse to any page and select your **Extension** icon, the pop-up 
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="The image showing in browser":::
+:::image type="complex" source="./media/part2-showingimage.png" alt-text="The image showing in browser.":::
    The image showing in browser
 :::image-end:::
 

@@ -52,7 +52,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
         :::image type="content" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Highlighting the Michelangelo node." lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
 
-        1.  Click the **Inspect** (![Inspect](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.
+        1.  Click the **Inspect** (![Inspect.](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.
 
             :::image type="content" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="The Inspect icon." lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
 
@@ -305,13 +305,13 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
            **Break on attribute modifications**
         :::image-end:::
 
-    1.  In the next step, you are going to be instructed to click a button that pauses the code of the page.  After the page is paused, you can no longer scroll the page.  To make the page scrollable again, select **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
+    1.  In the next step, you are going to be instructed to click a button that pauses the code of the page.  After the page is paused, you can no longer scroll the page.  To make the page scrollable again, select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)).
 
         :::image type="content" source="../media/dom-break-attribute-modifications-sources-paused-on.msft.png" alt-text="Where to resume script running." lightbox="../media/dom-break-attribute-modifications-sources-paused-on.msft.png":::
 
     1.  Click the **Set Background** button above.  This sets the `style` attribute of the node to `background-color:thistle`.  DevTools pauses the page and highlights the code that caused the attribute to change.
 
-    1.  Select **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)), as mentioned earlier.
+    1.  Select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)), as mentioned earlier.
 
 ### Break on node removal
 
@@ -325,7 +325,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
     1.  Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.
 
-    1.  Select **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
+    1.  Select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)).
 
 ### Break on subtree modifications
 
@@ -339,7 +339,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
     1.  Click **Add Child**.  The code pauses because a `<li>` node was added to the list.
 
-    1.  Select **Resume Script** (![Resume Script](../media/resume-script-icon.msft.png)).
+    1.  Select **Resume Script** (![Resume Script.](../media/resume-script-icon.msft.png)).
 
 
 <!-- ====================================================================== -->
@@ -437,5 +437,5 @@ Many of the instructions in this tutorial instruct you to right-click a node in 
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/dom/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
