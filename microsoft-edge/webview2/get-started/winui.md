@@ -58,7 +58,7 @@ Start with a basic desktop project that contains a single main window.
 
     *   **Your project name (Package)**.  The Package project is a Windows Application Packaging Project that is configured to build the app into an MSIX package for deployment. The project contains the package manifest for your app, and is the startup project for your solution by default.  For more information, see [Set up your desktop application for MSIX packaging in Visual Studio](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) and [Package manifest schema reference for Windows 10](/uwp/schemas/appxpackage/uapmanifestschema/schema-root).
 
-1.  In Solution Explorer, open the `MainWindow.xaml` file to display the code.
+1.  In Solution Explorer, open `MainWindow.xaml`.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 

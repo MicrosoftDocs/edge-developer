@@ -27,7 +27,7 @@ Developers must often decide between building a web app or a native app.  This d
 *  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
 *  To access all the capabilities of a native platform, use a native app.
 
-The following diagram shows the spectrum of apps, from maximum reach, to maximum power.
+The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 *  Wide **reach** includes websites and Progressive Web Apps.
 *  In the middle are hybrid apps, such as WebViews and Electron.
 *  Maximum **power** is native apps.

@@ -12,7 +12,7 @@ ms.date: 05/06/2021
 
 You may want to distribute your application with a single executable file, instead of a package of many files. To create a single executable file, or to reduce the size of your package, you should statically link the WebView2Loader files. The WebView2 SDK contains a header file, `WebView2Loader.dll`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime, or Microsoft Edge preview channels, on the device.
 
-For an app that doesn't ship a `WebView2Loader.dll`, do the following:
+For an app that doesn't ship `WebView2Loader.dll`, do the following:
 
 1. Open the `.vcxproj` project file for your app in a text editor, such as Visual Studio Code.
 

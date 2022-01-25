@@ -111,13 +111,13 @@ Visual studio displays the solution and project.
 
    :::image type="content" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager" lightbox="media/winui2-nuget-package.msft.png":::
 
-   The **Preview Changes** dialog box displays.
+   The **Preview Changes** dialog appears.
 
 1. Click **OK**. The WebView2 SDK dependency is installed with WinUI 2.
 
    <!-- "Microsoft.UI.Xaml" here is equiv to WinUI 2; same team -->
 
-1. The **License Acceptance** dialog box displays. Click**I Accept**.  The `readme.txt` displays.
+1. The **License Acceptance** dialog is displayed.  Click **I Accept**.  The `readme.txt` file is displayed.
 
 <!-- note: install halted after only WinUI 2 component, it didn't seem to install WebView2 even though that was the 2nd item listed.  assume that's ok now on test machine. -->
 
