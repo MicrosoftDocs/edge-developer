@@ -226,7 +226,7 @@ When JS samples are disabled, only high-level events such as `Event: click` and 
 
 After recording a page, you don't need to rely solely on the **Main** section to analyze activities.  DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
-*   When you want to view the root activities that cause the most work, use the [Call Tree](#the-call-tree-panel) tab.
+*   When you want to view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
 
 *   When you want to view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
 
@@ -243,7 +243,7 @@ Root activities are those which cause the browser to do some work.  For example,
 
 In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** panels, root activities are the top-level items.
 
-See the [Call Tree](#the-call-tree-panel) tab for an example of root activities.
+See the [Call Tree](#the-call-tree-tab) tab for an example of root activities.
 
 #### The Call Tree tab
 
