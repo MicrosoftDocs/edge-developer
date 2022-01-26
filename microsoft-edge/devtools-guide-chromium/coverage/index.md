@@ -22,71 +22,71 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Find unused JavaScript and CSS code with the Coverage tool
 
-The Coverage tool in Microsoft Edge DevTools can help you find unused JavaScript and CSS code.  Removing unused code can speed up your page load and save your mobile users cellular data.  The **Coverage** tool is also called the _Coverage panel_ or _Coverage tab_.
+The Coverage tool can help you find unused JavaScript and CSS code.  Removing unused code can speed up your page load and save your mobile users cellular data.
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage." lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
-   Analyzing code coverage
-:::image-end:::
+:::image type="content" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage." lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
 
-> [!WARNING]
-> Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs may be difficult.  This guide doesn't cover how to refactor a codebase to avoid unused code, because these refactors depend highly on your technology stack.
+Caution: Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs can be difficult.  This guide doesn't cover how to refactor a codebase to avoid unused code, because this refactoring depends on your technology stack.
 
 
 <!-- ====================================================================== -->
 ## Overview
 
-Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use the [Bootstrap button component](https://getbootstrap.com/docs/4.3/components/buttons) on your page.  To use the button component you need to add a link to the Bootstrap stylesheet in your HTML, like this:
+Shipping unused JavaScript or CSS is a common problem in web development.  For example, suppose that you want to use the [Bootstrap button component](https://getbootstrap.com/docs/4.3/components/buttons) on your page.  To use the button component, you need to add a link to the Bootstrap stylesheet in your HTML, like this:
 
 ```html
-...
 <head>
     ...
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     ...
 </head>
-...
 ```
 
-This stylesheet does not just include the code for the button component.  It contains the CSS for **all** of the Bootstrap components.  But you are not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it does not need.  This extra CSS is a problem for the following reasons.
+This stylesheet doesn't just include the code for the button component.  It contains the CSS for _all_ of the Bootstrap components.  But you're not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it doesn't need.  This extra CSS is a problem for the following reasons:
 
-*   The extra code slows down your page load.  <!--Navigate to [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css).  -->
+*   The extra code slows down your page load.  <!-- See [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css). -->
 *   If a user accesses the page on a mobile device, the extra code uses up their cellular data.
 
 
 <!-- ====================================================================== -->
-## Open the Coverage panel
+## Open the Coverage tool
 
 1.  [Open the Command Menu](../command-menu/index.md).
-1.  Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.  The **Coverage** panel opens in the **Drawer**.
+1.  Start typing `coverage`, select the **Show Coverage** command, and then press `Enter`.  The **Coverage** tool opens in the **Drawer**.
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage panel." lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
-       The **Coverage** panel
-    :::image-end:::
+:::image type="content" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage tool." lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Record code coverage
 
-1.  Choose one of the following buttons in the **Coverage** panel.
-    *   Choose **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page.](../media/reload-icon.msft.png)) if you want to review what code is needed to load the page.
-    *   Choose **Instrument Coverage** (![Instrument Coverage.](../media/record-icon.msft.png)) if you want to review what code is used after interacting with the page.
-1.  Choose **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results.](../media/stop-icon.msft.png)) when you want to stop recording code coverage.
+1.  Click one of the following buttons in the **Coverage** tool:
+
+    *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page.](../media/reload-icon.msft.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
+
+    *  Click **Instrument Coverage** (![Instrument Coverage](../media/record-icon.msft.png)) if you want to see what code is used after interacting with the page.
+
+1.  Click **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png))<!--todo: check UI string--> when you want to stop recording code coverage.
 
 
 <!-- ====================================================================== -->
 ## Analyze code coverage
 
-The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** tool and review a line-by-line breakdown of used code and unused code.
+The table in the **Coverage** tool displays the resources that were analyzed, and how much code is used within each resource.  Click a row to open that resource in the **Sources** tool and display a line-by-line breakdown of used code and unused code.
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report." lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
-   A code coverage report
-:::image-end:::
+A code coverage report:
 
-*   The **URL** column is the URL of the resource that was analyzed.
-*   The **Type** column says whether the resource contains CSS, JavaScript, or both.
-*   The **Total Bytes** column is the total size of the resource in bytes.
-*   The **Unused Bytes** column is the number of bytes that were not used.
-*   The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes.
+:::image type="content" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report." lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+
+Columns in the code coverage report:
+
+| Column | Description |
+| --- | --- |
+| **URL** | The URL of the resource that was analyzed. |
+| **Type** | Whether the resource contains CSS, JavaScript, or both. |
+| **Total Bytes** | The total size of the resource in bytes. |
+| **Unused Bytes** | The number of bytes that weren't used. |
+| Last, unnamed column | A visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes. |
 
 
 <!-- ====================================================================== -->

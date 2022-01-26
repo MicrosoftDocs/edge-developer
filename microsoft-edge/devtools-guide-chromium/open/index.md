@@ -32,7 +32,7 @@ There are several ways to open Microsoft Edge DevTools, to quickly access differ
 
 See also [Keyboard shortcuts](../shortcuts/index.md).
 
-:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu." lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Opening DevTools from the Microsoft Edge main menu." lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
 
 
 <!-- ====================================================================== -->

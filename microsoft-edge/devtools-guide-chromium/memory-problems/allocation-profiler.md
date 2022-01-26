@@ -25,16 +25,16 @@ ms.date: 05/04/2021
 <!-- title in other repo:
 How to Use the Allocation Profiler Tool -->
 
-In the **Memory** tool (or _panel_), use the **Allocation instrumentation on timeline** radio button to find objects that are not being properly garbage collected, and continue to retain memory.
+In the **Memory** tool, use the **Allocation instrumentation on timeline** radio button to find objects that are not being properly garbage collected, and continue to retain memory.
 
 
 <!-- ====================================================================== -->
 ## How Allocation instrumentation on timeline works
 
-**Allocation instrumentation on timeline** combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** panel.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
+**Allocation instrumentation on timeline** combines the detailed snapshot information of the [heap profiler](heap-snapshots.md) with the incremental updating and tracking of the **Performance** tool.  Similarly, tracking heap allocation for objects involves starting a recording, performing a sequence of actions, and stopping the recording for analysis.
 
 <!--todo: add profile memory problems (heap profiler) section when available  -->
-<!--todo: add profile evaluate performance (Performance panel) section when available  -->
+<!--todo: add profile evaluate performance (Performance tool) section when available  -->
 
 **Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording (as frequently as every 50 ms) and one final snapshot at the end of the recording.
 
@@ -49,11 +49,14 @@ In the **Memory** tool (or _panel_), use the **Allocation instrumentation on tim
 <!-- ====================================================================== -->
 ## Enable Allocation Instrumentation on Timeline
 
-Complete the following actions to begin using **Allocation instrumentation on timeline**.
+To begin using **Allocation instrumentation on timeline**:
 
-1.  [Open the DevTools](../open/index.md).
-1.  Open the **Memory** panel, select the **Allocation instrumentation on timeline** radio button.
-1.  Start recording.
+1. [Open DevTools](../open/index.md).
+1. Open the **Memory** tool.
+1. Select the **Allocation instrumentation on timeline** radio button.
+1. Start recording.
+
+The record heap allocations profiler:
 
 :::image type="content" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler." lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
 

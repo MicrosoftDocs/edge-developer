@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License. -->
 # Speed up JavaScript runtime
 
-Identify expensive functions using the **Memory** tool.
+To identify expensive functions, use the **Memory** tool.
 
 :::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sample Profiles." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
    Sample Profiles

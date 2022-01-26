@@ -216,32 +216,28 @@ If you want to save a change to the HTML of the webpage, use the **Sources** too
 <!-- ====================================================================== -->
 ## Step 4: Save a JavaScript change to disk
 
-The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while editing files.  The **Quick Source** tool gives you just the editor from the **Sources** tool, while any tool is open.
+The main place to use the code editor of DevTools is the **Sources** tool.  But sometimes you need to access other tools, such as the **Elements** tool or the **Console** panel, while editing files.  The **Quick source** tool gives you just the editor from the **Sources** tool, while any tool is open.
 
 To open the DevTools code editor alongside other tools, do the following:
 
 1.  Navigate to the **Elements** tool.
 
-1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
+1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
 
-1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
+1.  Type `quick`, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source tool by using the Command Menu." lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
-       Open the **Quick Source** tool by using the **Command Menu**
-    :::image-end:::
+    :::image type="content" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the 'Quick source' tool by using the Command Menu." lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
 
-1.  Select `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.  Review the following figure.
+1.  Press `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, as shown below.
 
 1.  Type `script`, then choose **app/script.js**.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog." lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
-       Open `script.js` using the **Open File** dialog
-    :::image-end:::
+    :::image type="content" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog." lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
 
     > [!NOTE]
     > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.
 
-1.  Add the following code to the bottom of **script.js** using the **Quick Source** tool.
+1.  Add the following code to the bottom of **script.js** using the **Quick source** tool.
 
     ```javascript
     console.log('greetings from script.js');

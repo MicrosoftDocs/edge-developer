@@ -385,12 +385,19 @@ For more information, see [Run commands with the Microsoft Edge DevTools Command
 
 ### Displaying source files when using a different tool
 
-The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  Use the **Quick Sources** tool in the [Drawer](../customize/index.md#drawer).
+The main place to view source files in the DevTools is within the **Sources** tool.  But sometimes you need to access other tools, such as **Elements** or **Console**, while viewing or editing your source files.  You use the **Quick source** tool in the [Drawer](../customize/index.md#drawer), which appears at the bottom of DevTools.
+
+To use the **Quick source** tool:
 
 1.  Select a tool other than the **Sources** tool, such as the **Elements** tool.
-1.  Select `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
-1.  Type `Quick Source`, and then select **Show Quick Source**.  At the bottom of the DevTools window, the Drawer appears, with the **Quick Source** panel selected.  The **Quick Source** panel contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
-1.  Select `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
+
+1.  Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
+
+1.  Type `quick`, and then select **Show Quick source**.
+
+    At the bottom of the DevTools window, the Drawer appears, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
+
+1.  Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
 
 
 <!-- ====================================================================== -->

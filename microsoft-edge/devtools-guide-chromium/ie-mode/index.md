@@ -1,13 +1,13 @@
 ---
-title: Use DevTools in IE mode
-description: IE mode and Microsoft Edge DevTools.
+title: Use DevTools in Internet Explorer mode (IE mode)
+description: Using Microsoft Edge DevTools in Internet Explorer mode (IE mode).
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/10/2021
 ---
-# Use DevTools in IE mode
+# Use DevTools in Internet Explorer mode (IE mode)
 
 Internet Explorer mode (IE mode) integrates with Microsoft Edge DevTools.   IE mode allows enterprises to specify a list of websites that only work in Internet Explorer 11.  When you navigate to these websites in Microsoft Edge, an instance of Internet Explorer 11 runs and renders the site in a tab.  IE mode allows enterprises to manage compatibility with technologies that are currently not compatible with any modern web browsers.
 

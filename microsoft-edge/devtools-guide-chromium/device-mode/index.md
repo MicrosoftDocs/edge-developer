@@ -251,6 +251,10 @@ Next to **User agent**, clear the **Use browser default** checkbox.  Then, selec
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Setting the user agent string to Microsoft Edge on macOS." lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
 
+### See also
+
+* [Override the user agent string](override-user-agent.md)
+
 
 <!-- ====================================================================== -->
 ## Set user-agent client hints
