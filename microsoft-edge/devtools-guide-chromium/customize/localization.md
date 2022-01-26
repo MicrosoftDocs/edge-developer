@@ -24,7 +24,7 @@ Your Developer Tools matches your browser language by default, if it is one of t
 
 DevTools in Chinese:
 
-:::image type="content" source="../media/localization-zh.msft.png" alt-text="DevTools in Chinese" lightbox="../media/localization-zh.msft.png":::
+:::image type="content" source="../media/localization-zh.msft.png" alt-text="DevTools in Chinese." lightbox="../media/localization-zh.msft.png":::
 
 
 <!-- ====================================================================== -->

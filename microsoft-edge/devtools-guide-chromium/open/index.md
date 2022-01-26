@@ -32,7 +32,7 @@ There are several ways to open Microsoft Edge DevTools, to quickly access differ
 
 See also [Keyboard shortcuts](../shortcuts/index.md).
 
-:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Open DevTools from the Microsoft Edge main menu" lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
+:::image type="content" source="../media/bing-customize-more-tools-developer-tools-transparent.msft.png" alt-text="Opening DevTools from the Microsoft Edge main menu." lightbox="../media/bing-customize-more-tools-developer-tools-transparent.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -44,7 +44,7 @@ When you're viewing a rendered webpage in the browser, to inspect the styles or 
 
 See [DevTools for beginners: Get started with CSS](../beginners/css.md).
 
-<!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option" lightbox="../media/bing-right-click-inspect.msft.png"::: -->
+<!-- :::image type="content" source="../media/bing-right-click-inspect.msft.png" alt-text="The Inspect option." lightbox="../media/bing-right-click-inspect.msft.png"::: -->
 
 
 <!-- ====================================================================== -->
@@ -109,5 +109,5 @@ To change the `F12` keyboard shortcut setting that opens the DevTools, complete 
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/open) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

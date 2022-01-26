@@ -21,7 +21,7 @@ An extension is structured similar to a regular web app.  An extension should in
 
 To work directly with part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge extension" lightbox="./media/example-extension-screenshot.png":::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge extension." lightbox="./media/example-extension-screenshot.png":::
   A Microsoft Edge extension
 :::image-end:::
 

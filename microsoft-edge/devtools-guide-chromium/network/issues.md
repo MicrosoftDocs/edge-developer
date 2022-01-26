@@ -37,7 +37,7 @@ Six requests are downloading simultaneously.  After that, a series of requests a
 
 In the **Waterfall** in the following figure, the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.
 
-:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="An example of a queued or stalled series in the Network panel" lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
+:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="An example of a queued or stalled series in the Network panel." lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
    An example of a queued or stalled series in the **Network** tool
 :::image-end:::
 
@@ -61,7 +61,7 @@ A request spends a long time waiting to receive the first byte from the server.
 
 In the following figure, the long, green bar in the **Waterfall** indicates that the request was waiting a long time.  This was simulated using a profile to restrict network speed and add a delay.
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="An example of a request with a slow Time To First Byte" lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
+:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="An example of a request with a slow Time To First Byte." lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
    An example of a request with a slow Time To First Byte
 :::image-end:::
 
@@ -85,7 +85,7 @@ A request takes a long time to download.
 
 In the following figure, the long, blue bar in the **Waterfall** next to the png means it took a long time to download.
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="An example of a request that takes a long time to download" lightbox="../media/network-network-resources-edge-devtools.msft.png":::
+:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="An example of a request that takes a long time to download." lightbox="../media/network-network-resources-edge-devtools.msft.png":::
    An example of a request that takes a long time to download
 :::image-end:::
 
@@ -104,7 +104,7 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 Do you have a network issue that should be added to this guide?
 
 *   Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
-*   Choose **Send Feedback** (![Send Feedback](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
+*   Choose **Send Feedback** (![Send Feedback.](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
 *   [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
 
 
@@ -114,5 +114,5 @@ Do you have a network issue that should be added to this guide?
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/network/issues)<!-- redirects to https://developer.chrome.com/docs/devtools/network/ --> and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Jonathan Garbee](https://developers.google.com/web/resources/contributors#jonathan-garbee) (Google Developer Expert for Web Technology).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

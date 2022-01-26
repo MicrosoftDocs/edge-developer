@@ -62,11 +62,11 @@ This stylesheet doesn't just include the code for the button component.  It cont
 
 1.  Click one of the following buttons in the **Coverage** tool:
 
-    *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png)) if you want to see what code is needed to load the page.
+    *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page.](../media/reload-icon.msft.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
 
     *  Click **Instrument Coverage** (![Instrument Coverage](../media/record-icon.msft.png)) if you want to see what code is used after interacting with the page.
 
-1.  Click **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)) when you want to stop recording code coverage.
+1.  Click **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png))<!--todo: check UI string--> when you want to stop recording code coverage.
 
 
 <!-- ====================================================================== -->
@@ -78,11 +78,15 @@ A code coverage report:
 
 :::image type="content" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report." lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
 
-*  The **URL** column is the URL of the resource that was analyzed.
-*  The **Type** column says whether the resource contains CSS, JavaScript, or both.
-*  The **Total Bytes** column is the total size of the resource in bytes.
-*  The **Unused Bytes** column is the number of bytes that weren't used.
-*  The last, unnamed column is a visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes.
+Columns in the code coverage report:
+
+| Column | Description |
+| --- | --- |
+| **URL** | The URL of the resource that was analyzed. |
+| **Type** | Whether the resource contains CSS, JavaScript, or both. |
+| **Total Bytes** | The total size of the resource in bytes. |
+| **Unused Bytes** | The number of bytes that weren't used. |
+| Last, unnamed column | A visualization of the **Total Bytes** and **Unused Bytes** columns.  The red section of the bar is unused bytes.  The green section is used bytes. |
 
 
 <!-- ====================================================================== -->
@@ -90,5 +94,5 @@ A code coverage report:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

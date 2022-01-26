@@ -40,7 +40,7 @@ There are many ways to select an element:
 
 *   In a rendered webpage, right-click a page element, and then click **Inspect**.
 
-*   In DevTools, click **Select an element** (![Select an element](../media/select-an-element-icon.msft.png)) or press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), and then click the element in the viewport.
+*   In DevTools, click **Select an element** (![Select an element.](../media/select-an-element-icon.msft.png)) or press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), and then click the element in the viewport.
 
 *   In DevTools, click the element in the **DOM Tree**.
 
@@ -52,7 +52,7 @@ There are many ways to select an element:
 
 In the **Styles** pane, click the link next to a CSS rule to open the external stylesheet that defines the rule.  The stylesheet opens in the **Editor** pane of the **Sources** tool.
 
-If the stylesheet is minified, click the **Format** (![Format](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
+If the stylesheet is minified, click the **Format** (![Format.](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
 In the following figure, after you click `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.
 
@@ -159,7 +159,7 @@ The **Coverage** tool shows you what CSS a page actually uses.
 
     :::image type="content" source="../media/css-console-qs-coverage-empty.msft.png" alt-text="The Coverage tab." lightbox="../media/css-console-qs-coverage-empty.msft.png":::
 
-1.  Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page](../media/refresh-icon.msft.png)).  The page refreshes and the **Coverage** tab provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
+1.  Click **Start instrumenting coverage and refresh the page** (![Start instrumenting coverage and refresh the page.](../media/refresh-icon.msft.png)).  The page refreshes and the **Coverage** tab provides an overview of how much CSS (and JavaScript) is used from each file that the browser loads.  Green represents used CSS.  Red represents unused CSS.
 
     An overview of how much CSS (and JavaScript) is used and unused:
 
@@ -271,7 +271,7 @@ To enable or disable a class on an element:
 To add a new style rule:
 
 1.  [Select an element](#select-an-element).
-1.  Click **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)).  DevTools inserts a new rule beneath the **element.style** rule.
+1.  Click **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)).  DevTools inserts a new rule beneath the **element.style** rule.
 
 In the following figure, DevTools adds the `h1.devsite-page-title` style rule after you click **New Style Rule**.
 
@@ -279,7 +279,7 @@ In the following figure, DevTools adds the `h1.devsite-page-title` style rule af
 
 ### Choose which stylesheet to add a rule to
 
-When [adding a new style rule](#add-a-style-rule), click and hold **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)) to choose which stylesheet to add the style rule to.
+When [adding a new style rule](#add-a-style-rule), click and hold **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)) to choose which stylesheet to add the style rule to.
 
 :::image type="content" source="../media/css-elements-styles-style-new-select-existing.msft.png" alt-text="Choose a stylesheet." lightbox="../media/css-elements-styles-style-new-select-existing.msft.png":::
 
@@ -291,7 +291,7 @@ To add a style rule to a specific location in the **Styles** panel:
 
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
 
-1.  Select **Insert Style Rule Below** (![Insert Style Rule Below icon](../media/new-style-rule-icon.msft.png)).
+1.  Select **Insert Style Rule Below** (![Insert Style Rule Below icon.](../media/new-style-rule-icon.msft.png)).
 
 :::image type="content" source="../media/css-elements-styles-insert-style-rule-below.msft.png" alt-text="Insert Style Rule Below." lightbox="../media/css-elements-styles-insert-style-rule-below.msft.png":::
 
@@ -327,7 +327,7 @@ To add a `background-color` declaration to an element:
 
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
 
-1.  Click **Add Background Color** (![Add Background Color icon](../media/add-background-color-icon.msft.png)).
+1.  Click **Add Background Color** (![Add Background Color icon.](../media/add-background-color-icon.msft.png)).
 
 :::image type="content" source="../media/css-elements-styles-rule-add-background-color.msft.png" alt-text="Add Background Color." lightbox="../media/css-elements-styles-rule-add-background-color.msft.png":::
 
@@ -341,7 +341,7 @@ To add a `color` declaration to an element:
 
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
 
-1.  Click **Add Color** (![Add Color icon](../media/add-color-icon.msft.png)).
+1.  Click **Add Color** (![Add Color icon.](../media/add-color-icon.msft.png)).
 
 :::image type="content" source="../media/css-elements-styles-rule-add-color.msft.png" alt-text="Add Color." lightbox="../media/css-elements-styles-rule-add-color.msft.png":::
 
@@ -353,7 +353,7 @@ To add a `box-shadow` declaration to an element:
 
 1.  Hover on the style rule that you want to add the `box-shadow` declaration to.
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-1.  Click **Add Box Shadow** (![Add Box Shadow icon](../media/add-box-shadow-icon.msft.png)).
+1.  Click **Add Box Shadow** (![Add Box Shadow icon.](../media/add-box-shadow-icon.msft.png)).
 
 :::image type="content" source="../media/css-elements-styles-rule-add-box-shadow.msft.png" alt-text="Add Box Shadow." lightbox="../media/css-elements-styles-rule-add-box-shadow.msft.png":::
 
@@ -365,7 +365,7 @@ To add a `text-shadow` declaration to an element:
 
 1.  Hover on the style rule that you want to add the `text-shadow` declaration to.
 1.  [Reveal the **More Actions** toolbar](#reveal-the-more-actions-toolbar).
-1.  Click **Add Text Shadow** (![Add Text Shadow icon](../media/add-text-shadow-icon.msft.png)).
+1.  Click **Add Text Shadow** (![Add Text Shadow icon.](../media/add-text-shadow-icon.msft.png)).
 
 :::image type="content" source="../media/css-elements-styles-rule-add-text-shadow.msft.png" alt-text="Add Text Shadow." lightbox="../media/css-elements-styles-rule-add-text-shadow.msft.png":::
 
@@ -423,7 +423,7 @@ The following figure and list describes of each of the UI elements of the **Colo
 
 ### Sample a color off the page with the Eyedropper
 
-When you open the **Color Picker**, the **Eyedropper** (![Eyedropper](../media/eyedropper-icon.msft.png)) is on by default.
+When you open the **Color Picker**, the **Eyedropper** (![Eyedropper.](../media/eyedropper-icon.msft.png)) is on by default.
 
 To change the selected color to some other color on the page:
 
@@ -464,5 +464,5 @@ There are more keyboard shortcuts to change the angle value.  Find out more in t
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/css/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
