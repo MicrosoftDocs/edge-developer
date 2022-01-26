@@ -36,7 +36,7 @@ Start with a basic desktop project that contains a single main window.
 1.  In Visual Studio, open `WebView2GettingStarted.sln`.
     If you use an older version of Visual Studio, in the **Solution Explorer** right-click **WebView2GettingStarted**, and choose **Properties**. Click **Configuration Properties** > **General**, then modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset.
 
-:::image type="content" source="../media/tool-version.png" alt-text="Tool version" lightbox="../media/tool-version.png":::
+:::image type="content" source="../media/tool-version.png" alt-text="Tool version." lightbox="../media/tool-version.png":::
 
 Visual Studio may display errors, because your project is missing the WebView2 header file. The errors resolve after completing [Section 2 - Install WebView2 SDK](#step-2---install-webview2-sdk).
 
@@ -48,7 +48,7 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
 
 1.  In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**.
 
-    :::image type="content" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages" lightbox="../media/manage-nuget-packages.png":::
+    :::image type="content" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages." lightbox="../media/manage-nuget-packages.png":::
 
     > [!WARNING]
     > If you don't see the expected search results in the following steps, check the NuGet source location. Click **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**. Make sure that in **Package sources** there is a **nuget.com** source pointing to `https://api.nuget.org/v3/index.json`. If **Package sources** doesn't contain that source, enter `nuget.com` in the **Name** text box and `https://api.nuget.org/v3/index.json` in the **Source** text box. Then click **Update** and **OK**.
@@ -61,14 +61,14 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
         > [!NOTE]
         > The [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) are optional and make working with COM easier for the example.
 
-        :::image type="content" source="../media/wil.png" alt-text="Windows Implementation Library" lightbox="../media/wil.png":::
+        :::image type="content" source="../media/wil.png" alt-text="Windows Implementation Library." lightbox="../media/wil.png":::
 
 1.  Install the WebView2 SDK.
     1.  In the **NuGet** window, click the **Browse** tab.
     1.  In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.
     1.  In the right-hand side window, click **Install**.  NuGet downloads the SDK to your machine.
 
-        :::image type="content" source="../media/nuget.png" alt-text="NuGet Package Manager" lightbox="../media/nuget.png":::
+        :::image type="content" source="../media/nuget.png" alt-text="NuGet Package Manager." lightbox="../media/nuget.png":::
 
 1.  Add WebView2 header to your project.
 
@@ -166,7 +166,7 @@ In the callback, set a few more settings, resize the WebView2  to fill 100% of t
 
     Now you have a WebView2 window displaying the Bing page.
 
-:::image type="content" source="../media/bing-window.png" alt-text="Bing window" lightbox="../media/bing-window.png":::
+:::image type="content" source="../media/bing-window.png" alt-text="Bing window." lightbox="../media/bing-window.png":::
 
 
 <!-- ====================================================================== -->
@@ -182,7 +182,7 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 
 For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
-:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events" lightbox="../media/navigation-events.png":::
+:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events." lightbox="../media/navigation-events.png":::
 
 In error cases, one or more of the following events may occur depending on whether the navigation continued to an error webpage.
 

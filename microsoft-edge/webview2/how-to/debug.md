@@ -30,7 +30,7 @@ To open DevTools when you're viewing a WebView2 app, put focus on the WebView co
 See [DevTools overview](../index.md).
 
 <!-- keep lightbox -->
-:::image type="content" source="./media/f12.png" alt-text="DevTools debugging" lightbox="./media/f12.png":::
+:::image type="content" source="./media/f12.png" alt-text="DevTools debugging." lightbox="./media/f12.png":::
 
 
 <!-- ====================================================================== -->
@@ -51,23 +51,33 @@ Before you begin, make sure the following requirements are met:
 Install and set up the script debugger tools in Visual Studio:
 
 1.  Install the **JavaScript diagnostics** component in **Desktop development with C++**, as follows:
+
     1.  In the Windows Explorer bar, type `Visual Studio Installer`.
+
     1.  Select **Visual Studio Installer** to open it.
+
     1.  In the Visual Studio Installer, on the installed version, click the **More** button, and then select **Modify**.
+
     1.  In Visual Studio, under **Workloads**, select the **Desktop Development in C++** setting.
 
-        :::image type="content" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen" lightbox="./media/workloads.png":::
+        :::image type="content" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen." lightbox="./media/workloads.png":::
 
     1. Select **Individual components**.
+
     1. In the search box, enter `JavaScript diagnostics`.
+
     1. Select the **JavaScript diagnostics** setting.
+
     1. Click **Modify**.
 
-       :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio Modifying Individual Components Tab" lightbox="./media/indiv-comp.png":::
+       :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio: Modifying values in the 'Individual components' tab." lightbox="./media/indiv-comp.png":::
 
 1. Enable script debugging for WebView2 apps.
+
     1. Right-click your WebView2 project, and then select **Properties**.
+
     1. Under the **Configuration Properties**, select **Debugging**.
+
     1. Under the **Debugger Type**, select **JavaScript (WebView2)**.
 
        :::image type="content" source="./media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
@@ -121,15 +131,17 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 1.  To set a breakpoint in your source code, click a line of code and then press `F9`:
 
-    :::image type="content" source="./media/breakpoint-vs.png" alt-text="A breakpoint that's set in Visual Studio Code" lightbox="./media/breakpoint-vs.png":::
+    :::image type="content" source="./media/breakpoint-vs.png" alt-text="A breakpoint that's set in Visual Studio Code." lightbox="./media/breakpoint-vs.png":::
 
 1.  Run the code, as follows:
+
     1.  On the **Run** tab, select the launch configuration from the dropdown menu.
+
     1.  To start debugging your app, click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
         :::image type="content" source="./media/run-vs.png" alt-text="The Run tab in Visual Studio Code." lightbox="./media/run-vs.png":::
 
-1.  Open **Debug Console** to view the debug output and errors.
+1. Open **Debug Console** to view the debug output and errors.
 
     :::image type="content" source="./media/results-vs.png" alt-text="The Debug Console in Visual Studio Code." lightbox="./media/results-vs.png":::
 
@@ -142,6 +154,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     Open `launch.json` and complete the following actions to use targeted Webview debugging.
 
     1.  Confirm that the `useWebview` parameter is set to `true`.
+
     1.  Add the `urlFilter` parameter.  When the WebView2 control navigates to a URL, the `urlFilter` parameter value is used to compare strings that appear in the URL.
 
     ```json
@@ -207,7 +220,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
         Visual Studio Code Debug Output with verbose tracing turned on:
 
-        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on" lightbox="./media/verbose.png":::
+        :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on." lightbox="./media/verbose.png":::
 
 *  Debug Office Add-ins.
 

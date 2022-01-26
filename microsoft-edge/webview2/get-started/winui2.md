@@ -114,7 +114,7 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
 Visual studio displays the solution and project.
 
-:::image type="content" source="media/new-project-created.msft.png" alt-text="The resulting project" lightbox="media/new-project-created.msft.png":::
+:::image type="content" source="media/new-project-created.msft.png" alt-text="The resulting project." lightbox="media/new-project-created.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -128,7 +128,7 @@ Visual studio displays the solution and project.
 
 1. In the **Search** box, enter `Microsoft.UI.Xaml`, and then select **Microsoft.UI.Xaml**.  Make sure that the **Version** is the latest prerelease, and then select **Install**.
 
-   :::image type="content" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager" lightbox="media/winui2-nuget-package.msft.png":::
+   :::image type="content" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager." lightbox="media/winui2-nuget-package.msft.png":::
 
    The **Preview Changes** dialog appears.
 
@@ -162,7 +162,7 @@ Visual studio displays the solution and project.
 
 1. Save the file. Above the `MainPage.xaml` file in the code editor, a preview of the WebView2 content is displayed.
 
-   :::image type="content" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="Preview of the WebView2 content" lightbox="media/winui2-getting-started-preview-webview2-content.png":::
+   :::image type="content" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="Preview of the WebView2 content." lightbox="media/winui2-getting-started-preview-webview2-content.png":::
 
 ### Build and test the WebView2 project
 

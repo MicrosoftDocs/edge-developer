@@ -34,13 +34,13 @@ To check the demo page for accessibility issues by using a keyboard rather than 
 
 1.  Notice the URL in the bottom left.  If you look to the bottom left of the screen (or if you use a screen reader), you realize that you are on the sidebar navigation menu with blue links, because the browser shows the URL that the **Cats** link points to (`#cats`).
 
-    :::image type="complex" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen" lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen." lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
         A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen.
     :::image-end:::
 
 1.  Select `Tab` again, to get to the entry field in the donation form.  However, you can't reach the buttons above the textbox by selecting `Tab`. You can't use the keyboard to put focus on the **50**, **100**, or **200** buttons and then select them.  Also, selecting `Enter` doesn't submit the donation form.
 
-    :::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="The only keyboard-accessible element in the donation form is the text entry field" lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
+    :::image type="complex" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="The only keyboard-accessible element in the donation form is the text entry field." lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
         The only keyboard-accessible element in the donation form is the text entry field
     :::image-end:::
 

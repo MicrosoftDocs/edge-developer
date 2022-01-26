@@ -36,7 +36,7 @@ Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE dist
 
 If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, navigate to [Microsoft Edge Driver Downloads page](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads).  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, navigate to [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
 
-:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux" lightbox="../../media/2020/11/edge-on-linux.msft.png":::
+:::image type="complex" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux." lightbox="../../media/2020/11/edge-on-linux.msft.png":::
    DevTools in Microsoft Edge on Linux
 :::image-end:::
 
@@ -64,7 +64,7 @@ To help you review issues revealed by [webhint](https://webhint.io), the **Issue
 *   Links to other relevant panels.
 *   Links to documentation to help you fix problems in your website.
 
-:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Issues tool" lightbox="../../media/2020/11/issues-webhints.msft.png":::
+:::image type="complex" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Issues tool." lightbox="../../media/2020/11/issues-webhints.msft.png":::
    **Issues** tool
 :::image-end:::
 
@@ -79,7 +79,7 @@ To help you review issues revealed by [webhint](https://webhint.io), the **Issue
 
 You may now visualize **Layers** content alongside z-index values and the Document Object Model (DOM).  This feature helps you debug without switching between the [3D view](../../../3d-view/index.md) and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined](../../../3d-view/index.md).
 
-:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../../media/2020/11/experiments-layers.msft.png":::
+:::image type="complex" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane." lightbox="../../media/2020/11/experiments-layers.msft.png":::
    **Composited Layers** pane
 :::image-end:::
 
@@ -97,11 +97,11 @@ In the **Styles** pane, [CSS variables](https://developer.mozilla.org/docs/Web/C
 
 A CSS variable linked to the style:
 
-:::image type="content" source="../../media/2020/11/css-variable-support.msft.png" alt-text="A CSS variable linked to the style" lightbox="../../media/2020/11/css-variable-support.msft.png":::
+:::image type="content" source="../../media/2020/11/css-variable-support.msft.png" alt-text="A CSS variable linked to the style." lightbox="../../media/2020/11/css-variable-support.msft.png":::
 
 A CSS variable linked to a style target:
 
-:::image type="content" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="A CSS variable linked to a style target" lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
+:::image type="content" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="A CSS variable linked to a style target." lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -124,19 +124,19 @@ View all service worker request routing information with the new **Network reque
 1.  Navigate to **Application** > **Service Workers**.
 1.  Choose **Network requests**.
 
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Open Network tool from the Service Workers pane" lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Open Network tool from the Service Workers pane." lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
        Open **Network** tool from the **Service Workers** pane
     :::image-end:::
 
 1.  The **Network** tool opens in the **drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`.
 
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Network tool in drawer" lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="Network tool in drawer." lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
        **Network** tool in **drawer**
     :::image-end:::
 
 1. To return the **Network** tool to the top panel, close the **drawer**.
 
-    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Close the drawer to return Network tool" lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+    :::image type="complex" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Close the drawer to return Network tool." lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
        Close the **drawer** to return **Network** tool
     :::image-end:::
 
@@ -149,7 +149,7 @@ Debug network requests that run through service workers.  You may also open netw
 *   The runtime of a `fetch` event handler.
 *   The runtime of all `fetch` events for loading a client.
 
-:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Timing pane" lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+:::image type="complex" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Timing pane." lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
    **Timing** pane
 :::image-end:::
 
@@ -161,7 +161,7 @@ To locate the initiator of the request, use the call stack of your JavaScript co
 
 The `service-worker.js` file and call stack highlighting the request originator:
 
-:::image type="content" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting the request originator" lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+:::image type="content" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting the request originator." lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
 
 The `(index)` webpage is the request initiator:
 
@@ -183,11 +183,11 @@ To copy the property value to your clipboard, see [Copy formatted response JSON 
 
 Copying a property value in DevTools:
 
-:::image type="content" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copying a property value in DevTools" lightbox="../../media/2020/11/copy-property-value.msft.png":::
+:::image type="content" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copying a property value in DevTools." lightbox="../../media/2020/11/copy-property-value.msft.png":::
 
 Pasting a property value in Microsoft Visual Studio Code:
 
-:::image type="content" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Pasting a property value in Microsoft Visual Studio Code" lightbox="../../media/2020/11/paste-property-value.msft.png":::
+:::image type="content" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Pasting a property value in Microsoft Visual Studio Code." lightbox="../../media/2020/11/paste-property-value.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -202,7 +202,7 @@ Pasting a property value in Microsoft Visual Studio Code:
 
 For example, the red highlight displays a multi-press keyboard shortcut customized for the **Start recording events** action.  To review real-time updates on this feature in the Chromium open-source project, navigate to [Issue #174309](https://crbug.com/174309).
 
-:::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts" lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts." lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
    Multi-press keyboard shortcuts
 :::image-end:::
 
@@ -212,7 +212,7 @@ For example, the red highlight displays a multi-press keyboard shortcut customiz
 
 In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings](../../../customize/index.md#settings), DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  For more information about the **Match browser language** DevTools Setting, navigate to [Change DevTools language settings](../../../customize/localization.md).
 
-:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Match browser language DevTools setting in Japanese" lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+:::image type="complex" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Match browser language DevTools setting in Japanese." lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
    **Match browser language** DevTools setting in Japanese
 :::image-end:::
 
@@ -232,7 +232,7 @@ The following CSS angle is used for the example:
 background: linear-gradient(100deg, lightblue, pink);
 ```
 
-:::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS angle" lightbox="../../media/2020/11/css-angle.msft.png":::
+:::image type="complex" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS angle." lightbox="../../media/2020/11/css-angle.msft.png":::
    CSS angle
 :::image-end:::
 
@@ -247,7 +247,7 @@ You may now override storage quota size in the **Storage** pane.  This feature a
 For more information about how to emulate mobile devices and other features in the DevTools, navigate to [Emulate mobile devices in Microsoft Edge DevTools
 ](../../../device-mode/index.md).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
-:::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="Simulate storage quota size" lightbox="../../media/2020/11/storage-quota.msft.png":::
+:::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="Simulate storage quota size." lightbox="../../media/2020/11/storage-quota.msft.png":::
    Simulate storage quota size
 :::image-end:::
 
@@ -255,7 +255,7 @@ For more information about how to emulate mobile devices and other features in t
 
 Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [1141824](https://crbug.com/1141824).
 
-:::image type="complex" source="../../media/2020/11/cors-err.msft.png" alt-text="CORS errors" lightbox="../../media/2020/11/cors-err.msft.png":::
+:::image type="complex" source="../../media/2020/11/cors-err.msft.png" alt-text="CORS errors." lightbox="../../media/2020/11/cors-err.msft.png":::
    CORS errors
 :::image-end:::
 
@@ -265,7 +265,7 @@ Try out this feature by navigating to [CORS error demo](https://cors-errors.glit
 
 The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers may be shared using `postMessage()`.  A deprecation warning displays if the SAB and `postMessage()` is currently available, but the context is not cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, navigate to [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).  To review real-time updates of this feature in the Chromium open-source project, navigate to Issue [1139899](https://crbug.com/1139899).
 
-:::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Cross-origin information" lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
+:::image type="complex" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Cross-origin information." lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
    Cross-origin information
 :::image-end:::
 
@@ -280,7 +280,7 @@ DevTools now organizes web workers under the relevant parent frame.  For example
 
 To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1122507](https://crbug.com/1122507) and [1051466](https://crbug.com/1051466).
 
-:::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web workers information" lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
+:::image type="complex" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web workers information." lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
    Web workers information
 :::image-end:::
 
@@ -302,7 +302,7 @@ The details are displayed about which frame caused the opening of another `Windo
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1107766](https://crbug.com/1107766).
 
-:::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="Opened frame details" lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
+:::image type="complex" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="Opened frame details." lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
    Opened frame details
 :::image-end:::
 
@@ -315,7 +315,7 @@ To copy the stacktrace to your clipboard, complete the following actions.
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1139615](https://crbug.com/1139615).
 
-:::image type="complex" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="Copy stacktrace" lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
+:::image type="complex" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="Copy stacktrace." lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
    Copy stacktrace
 :::image-end:::
 
@@ -323,7 +323,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 Use this feature to review the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
 
-:::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Preview Wasm variable on mouseover" lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
+:::image type="complex" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Preview Wasm variable on mouseover." lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
    Preview Wasm variable on mouseover
 :::image-end:::
 
@@ -348,5 +348,5 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-88) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

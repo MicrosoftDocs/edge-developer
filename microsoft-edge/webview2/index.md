@@ -32,7 +32,7 @@ The following diagram shows the spectrum of apps, from maximum reach, to maximum
 *  In the middle are hybrid apps, such as WebViews and Electron.
 *  Maximum **power** is native apps.
 
-![Horizontal diagram of the spectrum of apps, from maximum reach, to maximum power.](media/webview2/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](media/webview2/web-native.png)
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 

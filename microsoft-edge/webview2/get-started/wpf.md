@@ -146,7 +146,7 @@ Add a WebView2 control to your app.
 
 1. Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com):
 
-   :::image type="content" source="./media/wpf-getting-started-microsoft.png" alt-text="Microsoft.com":::
+   :::image type="content" source="./media/wpf-getting-started-microsoft.png" alt-text="The WebView2 control, displaying Microsoft.com.":::
 
 
 <!-- ====================================================================== -->
@@ -331,7 +331,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 1. Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
 
-:::image type="content" source="./media/wpf-getting-started-https.png" alt-text="HTTPS":::
+:::image type="content" source="./media/wpf-getting-started-https.png" alt-text="Message showing that an http: URL is not safe, and recommending trying an https: URL instead.":::
 
 
 <!-- ====================================================================== -->

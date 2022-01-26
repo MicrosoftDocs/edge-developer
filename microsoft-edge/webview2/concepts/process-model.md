@@ -23,7 +23,7 @@ A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A Web
 *  One or more renderer processes.
 *  Other helper processes, such as the GPU process and the Audio service process.
 
-:::image type="content" source="../media/process-model-1.png" alt-text="Process 1" lightbox="../media/process-model-1.png":::
+:::image type="content" source="../media/process-model-1.png" alt-text="Process 1." lightbox="../media/process-model-1.png":::
 
 The number and presence of processes in a WebView2 process group can change as a WebView2 application makes use of WebView2 features.  (However, there's only a single, specific browser process in a WebView2 process group.)  For example, creating a new WebView from the same `CoreWebView2Environment`, but with a different domain in the `Source` property, will usually start a new renderer process.
 
@@ -41,7 +41,7 @@ All processes in a WebView2 Runtime processes collection are tied to the browser
 
 A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage the user data folder](./user-data-folder.md).
 
-:::image type="content" source="../media/process-model-2.png" alt-text="Process 2" lightbox="../media/process-model-2.png":::
+:::image type="content" source="../media/process-model-2.png" alt-text="Process 2." lightbox="../media/process-model-2.png":::
 
 To make use of multiple user data folders, a WebView2 application needs to create different `CoreWebView2Environment` objects.  A `WebView2` instance is created for a given user data folder through the configured `CoreWebView2Environment` object.  Each `CoreWebView2Environment` object needs to be configured with a different user data folder value.
 

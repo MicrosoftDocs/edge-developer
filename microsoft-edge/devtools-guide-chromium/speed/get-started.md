@@ -37,7 +37,7 @@ This tutorial teaches you how to use Microsoft Edge DevTools to find ways to mak
 
 This is Tony.  Tony is very famous in cat society.  He has built a website so that his fans are able to learn about his favorite foods.  His fans love the site, but Tony keeps hearing complaints that the site loads slowly.  Tony has asked you to help him speed the site up.
 
-:::image type="complex" source="../media/speed-tony.msft.png" alt-text="Tony the cat" lightbox="../media/speed-tony.msft.png":::
+:::image type="complex" source="../media/speed-tony.msft.png" alt-text="Tony the cat." lightbox="../media/speed-tony.msft.png":::
    Tony the cat
 :::image-end:::
 
@@ -57,32 +57,32 @@ First, you must set up the site so that you are able to make changes to it later
 
 1.  [Open the source code for the site](https://glitch.com/edit/#!/tony).  This tab is referred to as the **editor tab**.
 
-    :::image type="complex" source="../media/speed-glitch-tony-server-js.msft.png" alt-text="The editor tab" lightbox="../media/speed-glitch-tony-server-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-server-js.msft.png" alt-text="The editor tab." lightbox="../media/speed-glitch-tony-server-js.msft.png":::
        The **editor tab**
     :::image-end:::
 
 1.  Choose **tony**.  A menu appears.
 
-    :::image type="complex" source="../media/speed-glitch-tony-server-js-remix-project.msft.png" alt-text="The menu that appears after choosing tony" lightbox="../media/speed-glitch-tony-server-js-remix-project.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-server-js-remix-project.msft.png" alt-text="The menu that appears after choosing tony." lightbox="../media/speed-glitch-tony-server-js-remix-project.msft.png":::
        The menu that appears after choosing **tony**
     :::image-end:::
 
 1.  Choose **Remix Project**.  The name of the project changes from **tony** to some randomly-generated name.  You now have your own editable copy of the code.  Later on, you may make changes to this code.
 1.  Choose **Show** and choose **In a New Window**.  The demo opens in a new tab.  This tab is be referred to as the **demo tab**.  It may take a while for the site to load.
 
-    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="The demo tab" lightbox="../media/speed-glitch-tony-show-live.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-show-live.msft.png" alt-text="The demo tab." lightbox="../media/speed-glitch-tony-show-live.msft.png":::
        The demo tab
     :::image-end:::
 
 1.  Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  Microsoft Edge DevTools opens up alongside the demo.
 
-    :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools and the demo" lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools and the demo." lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
        DevTools and the demo
     :::image-end:::
 
 For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, typing `Undock`, and then selecting **Undock into separate window**.
 
-:::image type="complex" source="../media/speed-console.msft.png" alt-text="Undocked DevTools" lightbox="../media/speed-console.msft.png":::
+:::image type="complex" source="../media/speed-console.msft.png" alt-text="Undocked DevTools." lightbox="../media/speed-console.msft.png":::
    Undocked DevTools
 :::image-end:::
 
@@ -90,11 +90,11 @@ For the rest of the screenshots in this tutorial, DevTools is shown in a separat
 
 The baseline is a record of how the site performed before you made any performance improvements.
 
-1.  Choose the **Audits** tool.  It may be hidden behind the **More Panels** (![More Panels](../media/more-panels-icon.msft.png)) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.
+1.  Choose the **Audits** tool.  It may be hidden behind the **More Panels** (![More Panels.](../media/more-panels-icon.msft.png)) button.  There is a Lighthouse on this panel because the project that powers the Audits panel is named **Lighthouse**.
 
     [!INCLUDE [audits-panel-note](../includes/audits-panel-note.md)]
 
-    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="The Audits tool" lightbox="../media/speed-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-audits-performance.msft.png" alt-text="The Audits tool." lightbox="../media/speed-audits-performance.msft.png":::
        The **Audits** tool
     :::image-end:::
 
@@ -110,7 +110,7 @@ The baseline is a record of how the site performed before you made any performan
 
 1.  Choose **Run Audits**.  After 10 to 30 seconds, the **Audits** panel displays a report of the performance of the site.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png" alt-text="The report for the Audits panel of the performance of the site" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png" alt-text="The report for the Audits panel of the performance of the site." lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed.msft.png":::
        The report for the Audits panel of the performance of the site
     :::image-end:::
 
@@ -120,7 +120,7 @@ If you ever get an error in your Audits panel report, try running the demo tab f
 
 <!--todo: add screen capture for error in audit -->
 <!--
-:::image type="complex" source="../media/speed-.msft.png" alt-text="A report that errored" lightbox="../media/speed-.msft.png":::
+:::image type="complex" source="../media/speed-.msft.png" alt-text="A report that errored." lightbox="../media/speed-.msft.png":::
    A report that errored
 :::image-end:::
 -->
@@ -129,55 +129,55 @@ If you ever get an error in your Audits panel report, try running the demo tab f
 
 The number at the top of your report is the overall performance score for the site.  Later, as you make changes to the code, the number displayed should rise.  A higher score means better performance.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png" alt-text="The overall performance score" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png" alt-text="The overall performance score." lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-metrics-highlighted.msft.png":::
    The overall performance score
 :::image-end:::
 
 The **Metrics** section provides quantitative measurements of the performance of the site.  Each metric provides insight into a different aspect of the performance.  For example, **First Contentful Paint** tells you when content is first painted to the screen, which is an important milestone in the user's perception of the page load, whereas **Time To Interactive** marks the point at which the page appears ready enough to handle user interactions.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="The Metrics section" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png" alt-text="The Metrics section." lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-collapsed-highlighted.msft.png":::
    The **Metrics** section
 :::image-end:::
 
 Choose the highlighted toggle button in the following figure to display a description for each metric, and choose **Learn More** to read documentation about it.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Choose the highlighted toggle button to expand the Metrics items" lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png" alt-text="Choose the highlighted toggle button to expand the Metrics items." lightbox="../media/speed-glitch-tony-remix-audits-performance-metrics-expanded.msft.png":::
    Choose the highlighted toggle button to expand the Metrics items
 :::image-end:::
 
 Below Metrics is a collection of screenshots that show you how the page looked as it loaded.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="Screenshots of how the page looked while loading" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="Screenshots of how the page looked while loading." lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
    Screenshots of how the page looked while loading
 :::image-end:::
 
 The **Opportunities** section provides specific tips on how to improve the load performance of this specific page.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="The Opportunities section" lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png" alt-text="The Opportunities section." lightbox="../media/speed-glitch-tony-remix-audits-performance-view-trace.msft.png":::
    The **Opportunities** section
 :::image-end:::
 
 Choose an opportunity to learn more about it.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png" alt-text="Eliminate render-blocking resources opportunity" lightbox="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png" alt-text="Eliminate render-blocking resources opportunity." lightbox="../media/speed-glitch-tony-remix-audits-performance-opportunities-expanded.msft.png":::
    **Eliminate render-blocking resources** opportunity
 :::image-end:::
 
 Choose **Learn More** to display documentation about why an opportunity is important, and specific recommendations on how to fix it.
 
-:::image type="complex" source="../media/speed-web-dev-performance-audits.msft.png" alt-text="Documentation for the Eliminate render-blocking resources opportunity" lightbox="../media/speed-web-dev-performance-audits.msft.png":::
+:::image type="complex" source="../media/speed-web-dev-performance-audits.msft.png" alt-text="Documentation for the Eliminate render-blocking resources opportunity." lightbox="../media/speed-web-dev-performance-audits.msft.png":::
    Documentation for the **Eliminate render-blocking resources** opportunity
 :::image-end:::
 
 The **Diagnostics** section provides more information about factors that contribute to the load time of the page.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="The Diagnostics section" lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png" alt-text="The Diagnostics section." lightbox="../media/speed-glitch-tony-remix-audits-performance-diagnostics.msft.png":::
    The **Diagnostics** section
 :::image-end:::
 
 The **Passed Audits** section shows you what the site is doing correctly.  Choose to expand the section.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="The Passed Audits section" lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png" alt-text="The Passed Audits section." lightbox="../media/speed-glitch-tony-remix-audits-performance-passed-audits.msft.png":::
    The **Passed Audits** section
 :::image-end:::
 
@@ -197,14 +197,14 @@ Before you enable compression, here are a couple of ways to manually check wheth
 
 1.  Choose the **Network** tool.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="The Network panel" lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network.msft.png" alt-text="The Network panel." lightbox="../media/speed-glitch-tony-remix-network.msft.png":::
        The **Network** tool
     :::image-end:::
 
 1.  Choose the **Network setting** icon.
 1.  Choose the **Use Large Request Rows** checkbox.  The height of the rows in the table of network requests increases.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Large rows in the network requests table" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png" alt-text="Large rows in the network requests table." lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows.msft.png":::
        Large rows in the network requests table
     :::image-end:::
 
@@ -218,7 +218,7 @@ Check for compression by inspecting the HTTP headers of a resource:
 1.  Choose `bundle.js`.
 1.  Choose the **Headers** panel.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="The Headers panel" lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png" alt-text="The Headers panel." lightbox="../media/speed-glitch-tony-remix-network-use-large-request-rows-bundle-js.msft.png":::
        The **Headers** panel
     :::image-end:::
 
@@ -228,7 +228,7 @@ Enough with the explanations.  Time to make some changes.  Enable text compressi
 
 1.  In the editor tab, choose **server.js**.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Edit server.js" lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js.msft.png" alt-text="Edit server.js." lightbox="../media/speed-glitch-tony-remix-server-js.msft.png":::
        Edit `server.js`
     :::image-end:::
 
@@ -254,7 +254,7 @@ Enough with the explanations.  Time to make some changes.  Enable text compressi
 1.  Wait for Glitch to deploy the new build of the site.  The fancy animation next to **Tools** means that the site is getting rebuilt and redeployed.  The change is ready when the animation next to **Tools** goes away.  Choose **Show** and choose **In a New Window** again.
 
     <!--
-    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js-edited.msft.png" alt-text="The animation that indicates that the site is getting built" lightbox="../media/speed-glitch-tony-remix-server-js-edited.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-server-js-edited.msft.png" alt-text="The animation that indicates that the site is getting built." lightbox="../media/speed-glitch-tony-remix-server-js-edited.msft.png":::
        The animation that indicates that the site is getting built
     :::image-end:::
     -->
@@ -263,24 +263,24 @@ Use the workflows that you learned earlier to manually check that the compressio
 
 1.  Go back to the demo tab and refresh the page.  The **Size** column should now show 2 different values for text resources like `bundle.js`.  In the figure after the following, the top value of `256 KB` for `bundle.js` is the size of the file that was sent over the network, and the bottom value of `1.2 MB` is the uncompressed file size.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-main.msft.png" alt-text="The Size column now shows 2 different values for text resources" lightbox="../media/speed-glitch-tony-remix-network-main.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-main.msft.png" alt-text="The Size column now shows 2 different values for text resources." lightbox="../media/speed-glitch-tony-remix-network-main.msft.png":::
        The **Size** column now shows 2 different values for text resources
     :::image-end:::
 
 1.  The **Response Headers** section for `bundle.js` should now include a `content-encoding: gzip` header.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="The Response Headers section now contains a content-encoding header" lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png" alt-text="The Response Headers section now contains a content-encoding header." lightbox="../media/speed-glitch-tony-remix-network-bundle-js-headers-response.msft.png":::
        The **Response Headers** section now contains a content-encoding header
     :::image-end:::
 
 Audit the page again to measure what kind of impact text compression has on the load performance of the page:
 
 1.  Choose the **Audits** tool.
-1.  Choose **Perform an audit** (![Perform an audit](../media/perform-icon.msft.png)).
+1.  Choose **Perform an audit** (![Perform an audit.](../media/perform-icon.msft.png)).
 1.  Leave the settings the same as before.
 1.  Choose **Run audit**.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="An Audits report after enabling text compression" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png" alt-text="An Audits report after enabling text compression." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance.msft.png":::
        An Audits report after enabling text compression
     :::image-end:::
 
@@ -297,7 +297,7 @@ Your report indicates that avoiding enormous network payloads is one of the top 
 1.  In your report, choose **Avoid enormous network payloads** to display which images should be resized.  It looks like 2 of the jpg files are over 2000 KB, which is bigger than necessary.
 
     <!--
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Details about the properly size images opportunity" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png" alt-text="Details about the properly size images opportunity." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-opportunities-expanded.msft.png":::
        Details about the properly size images opportunity
     :::image-end:::
     -->
@@ -306,7 +306,7 @@ Your report indicates that avoiding enormous network payloads is one of the top 
 1.  Replace `const dir = 'big'` with `const dir = 'small'`.  This directory contains copies of the same images which have been resized.
 1.  Audit the page again to display how the change affects load performance.
 
-    :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="An Audits report after resizing images" lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-compression-small-images-audits-performance.msft.png" alt-text="An Audits report after resizing images." lightbox="../media/speed-glitch-compression-small-images-audits-performance.msft.png":::
        An Audits report after resizing images
     :::image-end:::
 
@@ -333,29 +333,29 @@ The first task, then, is to find code that you do not need to run on page load.
 1.  Choose **Eliminate render-blocking resources** to display the resources that are blocking:
     `lodash.js` and `jquery.js`.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="More information about the Eliminate render-blocking resources opportunity" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="More information about the Eliminate render-blocking resources opportunity." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
        More information about the **Eliminate render-blocking resources** opportunity
     :::image-end:::
 
 1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then choose **Show Coverage**.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Open the Command Menu from the Audits panel" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Open the Command Menu from the Audits panel." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
        Open the Command Menu from the **Audits** panel
     :::image-end:::
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="The Coverage tool" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png" alt-text="The Coverage tool." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage.msft.png":::
        The **Coverage** tool
     :::image-end:::
 
-1.  Choose **Refresh** (![Refresh](../media/reload-icon.msft.png)).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.
+1.  Choose **Refresh** (![Refresh.](../media/reload-icon.msft.png)).  The **Coverage** tool provides an overview of how much of the code in `bundle.js`, `jquery.js`, and `lodash.js` runs while the page loads.  In the figure after the following, about 76% and 30% of the jQuery and Lodash files are not used, respectively.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="The Coverage report" lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png" alt-text="The Coverage report." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-drawer-coverage-reloaded.msft.png":::
        The Coverage report
     :::image-end:::
 
 1.  Choose the `jquery.js` row.  DevTools opens the file in the **Sources** tool.  If a line of code ran, a blue bar appears next to it.  A red bar means the line of code was not run, and is definitely not needed on load of the webpage.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Viewing the jQuery file in the Sources tool" lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png" alt-text="Viewing the jQuery file in the Sources tool." lightbox="../media/speed-glitch-tony-remix-updated-sources-drawer-coverage-reloaded-jquery-js.msft.png":::
        Viewing the jQuery file in the **Sources** tool
     :::image-end:::
 
@@ -369,23 +369,23 @@ Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **R
 1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu again.
 1.  Start typing `blocking` and then choose **Show Request Blocking**.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="The Request blocking tool" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png" alt-text="The Request blocking tool." lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-empty.msft.png":::
        The **Request blocking** tool
     :::image-end:::
 
-1.  Choose **Add Pattern** (![Add Pattern](../media/add-pattern-icon.msft.png)), type `/libs/*`, and then select `Enter` to confirm.
+1.  Choose **Add Pattern** (![Add Pattern.](../media/add-pattern-icon.msft.png)), type `/libs/*`, and then select `Enter` to confirm.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Add a pattern to block any request to the libs directory" lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png" alt-text="Add a pattern to block any request to the libs directory." lightbox="../media/speed-glitch-tony-remix-updated-network-drawer-request-blocking-added.msft.png":::
        Add a pattern to block any request to the `libs` directory
     :::image-end:::
 
 1.  Refresh the page.  The jQuery and Lodash requests are red, meaning that the requests were blocked.   The page still loads and is interactive, so it looks like these resources are not needed whatsoever!
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="The Network panel shows that the requests have been blocked" lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png" alt-text="The Network panel shows that the requests have been blocked." lightbox="../media/speed-glitch-tony-remix-updated-network-reloaded-drawer-request-blocking-added.msft.png":::
        The **Network** tool shows that the requests have been blocked
     :::image-end:::
 
-1.  Choose **Remove all patterns** (![Remove all patterns](../media/remove-icon.msft.png)) to delete the `/libs/*` blocking pattern.
+1.  Choose **Remove all patterns** (![Remove all patterns.](../media/remove-icon.msft.png)) to delete the `/libs/*` blocking pattern.
 
 In general, the **Request blocking** tool is useful for simulating how your page behaves when any given resource is not available.
 
@@ -396,7 +396,7 @@ Now, remove the references to these files from the code and audit the page again
 1.  Wait for the site to re-build and re-deploy.
 1.  Audit the page again from the **Audits** tool.  Your overall score should have improved again.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="An Audits report after removing the render-blocking resources" lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png" alt-text="An Audits report after removing the render-blocking resources." lightbox="../media/speed-glitch-tony-remix-updated-2-audits-performance.msft.png":::
        An **Audits** report after removing the render-blocking resources
     :::image-end:::
 
@@ -418,17 +418,17 @@ The main thread is where the browser does most of the work needed to display a p
 The goal is to use the Performance panel to analyze what work the main thread is doing while the page loads, and find ways to defer or remove unnecessary work.
 
 1.  Choose the **Performance** tool.
-1.  Choose **Capture Settings** (![Capture Settings](../media/capture-icon.msft.png)).
+1.  Choose **Capture Settings** (![Capture Settings.](../media/capture-icon.msft.png)).
 1.  Set **Network** to **Slow 3G** and **CPU** to **6x slowdown**.  Mobile devices typically have more hardware constraints than laptops or desktops, so these settings let you experience the page load as if you were using a less powerful device.
-1.  Choose **Refresh** (![Refresh](../media/reload-icon.msft.png)).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.
+1.  Choose **Refresh** (![Refresh.](../media/reload-icon.msft.png)).  DevTools refreshes the page and then produces a visualization of all the work performed in order to load the page.  This visualization is referred to as the **trace**.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="The Performance tool trace of the page load" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png" alt-text="The Performance tool trace of the page load." lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu.msft.png":::
        The **Performance** tool trace of the page load
     :::image-end:::
 
 The trace shows activity chronologically, from left to right.  The FPS, CPU, and NET charts at the top give you an overview of frames per second, CPU activity, and network activity.  The block of yellow highlighted in the figure after the next, the CPU was completely busy with scripting activity.  This is a clue that you may be able to speed up page load by doing less JavaScript work.
 
-:::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="The Overview section of the trace" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
+:::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png" alt-text="The Overview section of the trace." lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main-highlight.msft.png":::
    The Overview section of the trace
 :::image-end:::
 
@@ -436,20 +436,20 @@ Investigate the trace to find ways to do less JavaScript work:
 
 1.  Choose the **Timings** section to expand it.  Based on the fact that there may be a bunch of [Timings](https://developer.mozilla.org/docs/Web/API/User_Timing_API) measures from React, it seems like Tony's app is using the development mode of React.  Switching to the production mode of React may yield some easy performance wins.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="The Timings section" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png" alt-text="The Timings section." lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings.msft.png":::
        The **Timings** section
     :::image-end:::
 
 1.  Choose **Timings** again to collapse that section.
 1.  Browse the **Main** section.  This section shows a chronological log of main thread activity, from left to right.  The y-axis (top to bottom) shows why events occurred.  For example, in the figyre after the following, the `Evaluate Script` event caused the `(anonymous)` function to run, which caused `(anonymous)` to run, which caused `__webpack__require__` to run, and so on.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="The Main section" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png" alt-text="The Main section." lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-main.msft.png":::
        The **Main** section
     :::image-end:::
 
 1.  Scroll down to the bottom of the **Main** section.  When you use a framework, most of the upper activity is caused by the framework, which is usually out of your control.  The activity caused by your app is usually at the bottom.  In this app, it seems like a function named `App` is causing a lot of requests to a `mineBitcoin` function.  It sounds like Tony may be using the devices of his fans to mine cryptocurrency...
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png" alt-text="Hover on the mineBitcoin activity" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png" alt-text="Hover on the mineBitcoin activity." lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-minebitcoin.msft.png":::
        Hover on the `mineBitcoin` activity
     :::image-end:::
 
@@ -458,7 +458,7 @@ Investigate the trace to find ways to do less JavaScript work:
 
 1.  Expand the **Bottom-Up** section.  This tab breaks down what activities took up the most time.  If nothing is displayed in the Bottom-Up section, choose the label for **Main** section.  The **Bottom-Up** section only shows information for whatever activity, or group of activity, you have currently selected.  For example, if you chose one of the `mineBitcoin` activities, the **Bottom-Up** section is only going to show information for that one activity.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="The Bottom-Up tab" lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png" alt-text="The Bottom-Up tab." lightbox="../media/speed-glitch-tony-remix-performance-slow-network-slow-cpu-timings-summary-minebitcoin.msft.png":::
        The **Bottom-Up** tab
     :::image-end:::
 
@@ -471,7 +471,7 @@ Time to review whether using production mode and reducing JavaScript activity ma
 1.  Wait for the new build to deploy.
 1.  Audit the page again.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png" alt-text="An Audits report after configuring webpack to use production mode" lightbox="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png" alt-text="An Audits report after configuring webpack to use production mode." lightbox="../media/speed-glitch-tony-remix-updated-3-audits-performance.msft.png":::
        An Audits report after configuring webpack to use production mode
     :::image-end:::
 
@@ -482,7 +482,7 @@ Reduce JavaScript activity by removing the request to `mineBitcoin`:
 1.  Wait for the new build to deploy.
 1.  Audit the page again.
 
-    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png" alt-text="An Audits report after removing unnecessary JavaScript work" lightbox="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png":::
+    :::image type="complex" source="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png" alt-text="An Audits report after removing unnecessary JavaScript work." lightbox="../media/speed-glitch-tony-remix-updated-4-audits-performance.msft.png":::
        An Audits report after removing unnecessary JavaScript work
     :::image-end:::
 
@@ -519,5 +519,5 @@ If you prefer an approach that feels more like `console.log()`, the [User Timing
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/speed/get-started) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

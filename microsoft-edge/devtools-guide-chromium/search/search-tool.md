@@ -93,10 +93,10 @@ A webpage can continue to request resources after it has finished loading, so th
 
 To update the search results, do either of the following:
 *  Search again by typing a term in the search input field.
-*  Click the **Refresh** (![Refresh search button](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
+*  Click the **Refresh** (![Refresh search button.](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
 
 
 <!-- ====================================================================== -->
 ## Clear a search
 
-To clear the search results, click the **Clear** (![Clear search button](../media/search-tool/search-tool-clear.png)) button in the toolbar.
+To clear the search results, click the **Clear** (![Clear search button.](../media/search-tool/search-tool-clear.png)) button in the toolbar.

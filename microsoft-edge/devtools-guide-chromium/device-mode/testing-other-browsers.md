@@ -55,7 +55,7 @@ Device simulators and emulators simulate not just the browser environment but th
 ### Android emulator
 
 <!--
-:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator" lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
+:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator." lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
    Stock Browser in Android Emulator
 :::image-end:::
 -->
@@ -68,7 +68,7 @@ After your emulator is booted, select the **Browser** icon, and test your site o
 #### Chromium content shell on Android
 
 <!--
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell" lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
+:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell." lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
    Android Emulator Content Shell
 :::image-end:::
 -->
@@ -86,7 +86,7 @@ Now you are able to test your site with the Chromium Content Shell.
 #### Firefox on Android
 
 <!--
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator" lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
+:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator." lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
    Firefox Icon on Android Emulator
 :::image-end:::
 -->
@@ -112,7 +112,7 @@ When you are done, learn how to work with the simulator through [Apple Developer
 
 ### Microsoft Edge (EdgeHTML)
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Modern IE VM" lightbox="../media/device-mode-modern-ie-vm.msft.png":::
+:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Modern IE VM." lightbox="../media/device-mode-modern-ie-vm.msft.png":::
    Modern IE VM
 :::image-end:::
 
@@ -144,5 +144,5 @@ The following products are examples of cloud-based emulators and related product
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer) and [Paul Bakaus](https://developers.google.com/web/resources/contributors#paul-bakaus) (Open Web Developer Advocate at Google | Tools, Performance, Animation, UX).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
