@@ -1,5 +1,5 @@
 ---
-title: Emulate mobile devices
+title: Emulate mobile devices (Device Emulation)
 description: Use virtual devices in Microsoft Edge to build mobile-first websites.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,10 +20,9 @@ ms.date: 07/19/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Emulate mobile devices
+# Emulate mobile devices (Device Emulation)
 
-Use **Device emulation** to approximate how your page looks and responds on a mobile device.  The Microsoft Edge DevTools provide a collection of features to help you emulate mobile devices.  The collection includes the following features:
-
+Use **Device Emulation** to approximate how your page looks and responds on a mobile device.  DevTools provides a collection of features to help you emulate mobile devices:
 *   [Simulate a mobile viewport](#simulate-a-mobile-viewport)
 *   [Throttle the network](#throttle-the-network-only)
 *   [Throttle the CPU](#throttle-the-cpu-only)
@@ -36,7 +35,7 @@ Use **Device emulation** to approximate how your page looks and responds on a mo
 <!-- ====================================================================== -->
 ## Limitations
 
-**Device emulation** is a [first-order approximation](https://en.wikipedia.org/wiki/Order_of_approximation#First-order) of the look and feel of your page on a mobile device.  **Device emulation** doesn't actually run your code on a mobile device.  Instead, you simulate the mobile user experience from your laptop or desktop.
+**Device Emulation** is a [first-order approximation](https://en.wikipedia.org/wiki/Order_of_approximation#First-order) of the look and feel of your page on a mobile device.  **Device Emulation** doesn't actually run your code on a mobile device.  Instead, you simulate the mobile user experience from your laptop or desktop.
 
 Some aspects of mobile devices are never emulated in DevTools.  For example, the architecture of mobile CPUs is different than the architecture of laptop or desktop CPUs.  When in doubt, your best bet is to actually run your page on a mobile device.
 
@@ -46,7 +45,7 @@ Use [Remote Debugging](../remote-debugging/index.md) to interact with the code o
 <!-- ====================================================================== -->
 ## Simulate a mobile viewport
 
-Select **Toggle device emulation**  (![Toggle Device Toolbar.](../media/toggle-device-toolbar-dark-icon.msft.png)) or select **Customize and control DevTools** (`...`) > **Device emulation** to open the UI that enables you to simulate a mobile viewport.
+Select **Toggle device emulation** (![Toggle Device Toolbar.](../media/toggle-device-toolbar-dark-icon.msft.png)) or select **Customize and control DevTools** (`...`) > **Device Emulation** to open the UI that enables you to simulate a mobile viewport.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
 
@@ -251,6 +250,10 @@ If your page depends on the user agent string from a mobile device to render pro
 Next to **User agent**, clear the **Use browser default** checkbox.  Then, select **Custom** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Setting the user agent string to Microsoft Edge on macOS." lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+
+### See also
+
+* [Override the user agent string](override-user-agent.md)
 
 
 <!-- ====================================================================== -->

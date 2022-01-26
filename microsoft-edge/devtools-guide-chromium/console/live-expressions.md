@@ -9,13 +9,16 @@ ms.date: 04/13/2021
 ---
 # Monitor changes in JavaScript using Live Expressions
 
-**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.    Instead of having many Console messages to read and navigate, you may pin your specific JavaScript expressions to the top of the **Console**.
+<!-- very short article in other repo:
+Watch JavaScript values in real-time with Live Expressions -->
+
+**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.    Instead of having many Console messages to read and navigate, you can pin your specific JavaScript expressions to the top of the **Console**.
 
 
 <!-- ====================================================================== -->
 ## Add a new live expression
 
-To start, choose the **Create live expression** (eye) button next to the **Filter** textbox.  After you choose it, a textbox is displayed for you to enter your new expression in it.
+To start, click the **Create live expression** (eye) icon next to the **Filter** textbox.  After you click it, a textbox is displayed for you to enter your new expression in it.
 
 :::image type="complex" source="../media/console-live-expressions-new.msft.png" alt-text="Choose the New live expression button to open a textbox to type an expression." lightbox="../media/console-live-expressions-new.msft.png":::
     Choose the `New live expression` button to open a textbox to type an expression

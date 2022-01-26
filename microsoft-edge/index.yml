@@ -279,7 +279,7 @@ conceptualContent:
           links:
             - url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
               itemType: overview
-              text: Accessibility-testing features in DevTools
+              text: Accessibility-testing features
             - url: /microsoft-edge/accessibility/
               itemType: overview
               text: Accessibility overview

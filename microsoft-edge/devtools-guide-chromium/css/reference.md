@@ -24,7 +24,7 @@ ms.date: 10/29/2021
 
 Discover new workflows in the following comprehensive reference of Microsoft Edge DevTools features related to viewing and changing CSS.
 
-To learn the basics, see [Get started with viewing and changing CSS](../css/index.md).
+To learn the basics, see [Get started viewing and changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->
@@ -438,10 +438,6 @@ In the following figure, the **Color Picker** shows a current color value of `rg
 
 <!-- ====================================================================== -->
 ## Change angle value with the Angle Clock
-
-<!--todo: finish formatting this section on the Angle clock.  Add 2 captures.  See What's New 88:
-https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#new-css-angle-visualization-tools
--->
 
 The **Angle Clock** provides a GUI for changing the angle amounts in CSS property values.
 

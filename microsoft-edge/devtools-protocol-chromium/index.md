@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge DevTools Protocol overview
+title: Microsoft Edge DevTools Protocol
 description: Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/06/2021
 ---
-# Microsoft Edge DevTools Protocol overview
+# Microsoft Edge DevTools Protocol
 
 Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.  For reference documentation, go to [Chrome DevTools Protocol Viewer](https://chromedevtools.github.io/devtools-protocol/tot).
 
