@@ -28,20 +28,20 @@ Simulate different device orientations from within DevTools.
 
 1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu" lightbox="../media/device-mode-console-command-menu.msft.png":::
+    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu." lightbox="../media/device-mode-console-command-menu.msft.png":::
 
 1.  Type `sensors`, choose **Show Sensors**, and select `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
 
 1.  From the **Orientation** list, select one of the preset orientations, such as `Portrait upside down`, or select **Custom orientation** to provide your own exact orientation.
 
-:::image type="content" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Choose Portrait upside down from the Orientation list" lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
+:::image type="content" source="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png" alt-text="Choose Portrait upside down from the Orientation list." lightbox="../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png":::
 
 If you select **Custom orientation**, the `alpha`, `beta`, and `gamma` rotational axis fields are enabled.
 <!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://developers.google.com/web/fundamentals/native-hardware/device-orientation#rotation_data). -->
 <!-- todo: link to a local copy of that article section when available; see "original page" below -->
 You can also set a custom orientation by dragging the **Orientation Model**.  For example, to rotate along the `alpha` axis, hold `Shift` before dragging:
 
-:::image type="content" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="The Orientation Model" lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
+:::image type="content" source="../media/device-mode-console-sensors-orientation-custom.msft.png" alt-text="The Orientation Model." lightbox="../media/device-mode-console-sensors-orientation-custom.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -49,5 +49,5 @@ You can also set a custom orientation by dragging the **Orientation Model**.  Fo
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/orientation) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

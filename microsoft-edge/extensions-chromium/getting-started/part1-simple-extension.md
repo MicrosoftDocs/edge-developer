@@ -48,7 +48,7 @@ The following code snippet outlines the basic information needed in your `manife
 
 Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.
 
-:::image type="complex" source="./media/part1-badge1.png" alt-text="Icon on the toolbar to open your extension":::
+:::image type="complex" source="./media/part1-badge1.png" alt-text="Icon on the toolbar to open your extension.":::
    Icon on the toolbar to open your extension
 :::image-end:::
 

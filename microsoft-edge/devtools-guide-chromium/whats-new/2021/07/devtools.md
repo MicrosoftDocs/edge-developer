@@ -20,7 +20,7 @@ ms.date: 07/30/2021
 
 In addition to the existing light and dark themes, Microsoft Edge DevTools now supports some of the most popular color themes from Visual Studio Code.  To select a color theme, navigate to **Settings** and then select a theme from the **Theme** dropdown list.
 
-:::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="Color themes for DevTools" lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
+:::image type="complex" source="../../media/2021/07/all-devtools-themes.msft.png" alt-text="Color themes for DevTools." lightbox="../../media/2021/07/all-devtools-themes.msft.png":::
    Color themes for DevTools
 :::image-end:::
 
@@ -54,7 +54,7 @@ A DOM node is considered "detached" when it is no longer attached to any element
 
 The new **Detached Elements** tool finds all of the detached elements on your page and displays them. You can expand and collapse a detached element to see the parent and child nodes that are also being retained. You can trigger the browser's garbage collection by selecting **Collect garbage** and validate that you have a memory leak when a detached element cannot be garbage-collected. Finally, you can jump into JavaScript that's referencing the detached element by taking a heap snapshot with the **Analyze** button.
 
-:::image type="complex" source="../../media/2021/07/detached-elements-tool.msft.png" alt-text="The Detached Elements tool" lightbox="../../media/2021/07/detached-elements-tool.msft.png":::
+:::image type="complex" source="../../media/2021/07/detached-elements-tool.msft.png" alt-text="The Detached Elements tool." lightbox="../../media/2021/07/detached-elements-tool.msft.png":::
 
    The **Detached Elements** tool
 :::image-end:::
@@ -73,7 +73,7 @@ To turn on this experiment, navigate to **Settings** > **Experiments** and s
 
 If you use JavaScript debugging in Visual Studio Code, you can now launch the **Microsoft Edge Developer Tools for Visual Studio Code** extension by selecting the **Inspect** button.
 
-:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="The Inspect button in Visual Studio Code to launch the DevTools extension" lightbox="../../media/2021/07/inspect-button.msft.png":::
+:::image type="complex" source="../../media/2021/07/inspect-button.msft.png" alt-text="The Inspect button in Visual Studio Code to launch the DevTools extension." lightbox="../../media/2021/07/inspect-button.msft.png":::
    The **Inspect** button in Visual Studio Code to launch the DevTools extension
 :::image-end:::
 
@@ -86,7 +86,7 @@ Other new features are:
 
 For more details about improvements and fixes, check the [changelog file](https://github.com/microsoft/vscode-edge-devtools/blob/main/CHANGELOG.md) in the `vscode-edge-devtools` repo.
 
-:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="DevTools extension integrated with Visual Studio Code Debugger workflow" lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
+:::image type="complex" source="../../media/2021/07/extension-integrated-debugger.msft.png" alt-text="DevTools extension integrated with Visual Studio Code Debugger workflow." lightbox="../../media/2021/07/extension-integrated-debugger.msft.png":::
    DevTools extension integrated with Visual Studio Code Debugger workflow
 :::image-end:::
 
@@ -101,7 +101,7 @@ For more information, see [Browser debugging with Microsoft Edge DevTools integr
 
 Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/), giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
 
-:::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="DevTools implemented with Fluent UI design" lightbox="../../media/2021/07/fluent-ui.msft.png":::
+:::image type="complex" source="../../media/2021/07/fluent-ui.msft.png" alt-text="DevTools implemented with Fluent UI design." lightbox="../../media/2021/07/fluent-ui.msft.png":::
    DevTools implemented with Fluent UI design
 :::image-end:::
 
@@ -152,7 +152,7 @@ User-Agent Client Hints makes browser information more accessible than a semicol
 
 In this release, we redesigned the debugging experience so you can easily modify User-Agent Client Hints through a UI with multiple separate fields and controls.  Also, you can now test your custom User-Agent Client Hints and a User-Agent string simultaneously.  You can now define User-Agent Client Hints for a custom device in **Settings** or in the **Network conditions** tool.
 
-:::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in Settings" lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-settings.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in Settings." lightbox="../../media/2021/07/ua-client-hints-in-settings.msft.png":::
    Defining User-Agent Client Hints for a custom device in **Settings**
 :::image-end:::
 
@@ -160,7 +160,7 @@ For more information about defining hints in **Settings**, navigate to [Set user
 
 You can also override User-Agent Client Hints for the current page by using the **Network conditions** tool.
 
-:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in the Network conditions tool" lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
+:::image type="complex" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in the Network conditions tool." lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
    Defining User-Agent Client Hints for a custom device in the **Network conditions** tool
 :::image-end:::
 
@@ -196,7 +196,7 @@ Previously, in the **Network** tool, the **Copy** > **Copy as PowerShell** conte
 
 Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option correctly sets the User-Agent string and cookies that were observed by DevTools.  The generated PowerShell command can now successfully make the same network request that was observed by DevTools, even to servers that depend on cookies.
 
-:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="The Copy as PowerShell command" lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
+:::image type="complex" source="../../media/2021/07/copy-as-powershell.msft.png" alt-text="The Copy as PowerShell command." lightbox="../../media/2021/07/copy-as-powershell.msft.png":::
    The **Copy as PowerShell** command
 :::image-end:::
 
@@ -214,5 +214,5 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-93) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -89,7 +89,7 @@ We'll set up the demo and then set up DevTools.
 
 1.  Open a tab in Microsoft Edge and navigate to the locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo" lightbox="../media/workspaces-workspaces-demo.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo." lightbox="../media/workspaces-workspaces-demo.msft.png":::
        The demo
     :::image-end:::
 
@@ -97,7 +97,7 @@ We'll set up the demo and then set up DevTools.
 
 1.  Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="The Console panel" lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="The Console panel." lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
        The **Console** panel
     :::image-end:::
 
@@ -105,7 +105,7 @@ We'll set up the demo and then set up DevTools.
 
 1.  In the **Navigator** pane (on the left), choose the **Filesystem** tab.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem tab" lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem tab." lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
        The **Filesystem** tab
     :::image-end:::
 
@@ -117,7 +117,7 @@ We'll set up the demo and then set up DevTools.
 
     In the **Filesystem** tab, a green dot now appears next to `index.html`, `script.js`, and `styles.css`.  A green dot indicates that DevTools has established a mapping between a network resource of the page, and the file in `~/Desktop/app`.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="The Filesystem tab now indicates a mapping between the local files and the network ones" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png" alt-text="The Filesystem tab now indicates a mapping between the local files and the network ones." lightbox="../media/workspaces-workspaces-demo-sources-filesystem-folder.msft.png":::
        The **Filesystem** tab now indicates a mapping between the local files and the network ones
     :::image-end:::
 
@@ -130,7 +130,7 @@ We'll set up the demo and then set up DevTools.
     > [!NOTE]
     > The `color` property of `h1` elements is set to `fuchsia`.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="View styles.css in a text editor" lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png" alt-text="View styles.css in a text editor." lightbox="../media/workspaces-workspaces-demo-sources-filesystem-css.msft.png":::
        View `styles.css` in a text editor
     :::image-end:::
 
@@ -139,7 +139,7 @@ We'll set up the demo and then set up DevTools.
 1.  Change the value of the `color` property of the `<h1>` element to your favorite color.
     Remember that you need to choose the `<h1>` element in the **DOM Tree** in order to display the CSS rules applied to it in the **Styles** pane.  The green dot next to `styles.css:1` means that any change that you make are mapped to `~/Desktop/app/styles.css`.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="The green indicator that the file is linked" lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-css.msft.png" alt-text="The green indicator that the file is linked." lightbox="../media/workspaces-workspaces-demo-elements-styles-css.msft.png":::
        The green indicator that the file is linked
     :::image-end:::
 
@@ -168,7 +168,7 @@ The DOM tree is not the HTML source tagging.
 1.  Choose the **Elements** tool.
 1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel" lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel." lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
        Attempt to change html from the DOM Tree of the **Elements** tool
     :::image-end:::
 
@@ -206,7 +206,7 @@ If you want to save a change to the HTML of the webpage, use the **Sources** too
 
 1.  Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool" lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool." lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
        Change HTML from the **Sources** tool
     :::image-end:::
 
@@ -226,7 +226,7 @@ To open the DevTools code editor alongside other tools, do the following:
 
 1.  Type `Quick Source`, and then choose **Show Quick Source**.  At the bottom of the DevTools window, the **Quick Source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source tool by using the Command Menu" lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the Quick Source tool by using the Command Menu." lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
        Open the **Quick Source** tool by using the **Command Menu**
     :::image-end:::
 
@@ -234,7 +234,7 @@ To open the DevTools code editor alongside other tools, do the following:
 
 1.  Type `script`, then choose **app/script.js**.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog" lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog." lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
        Open `script.js` using the **Open File** dialog
     :::image-end:::
 
@@ -255,7 +255,7 @@ To open the DevTools code editor alongside other tools, do the following:
     > [!NOTE]
     > The link on the page is now italicized.
 
-    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="The link on the page is now italicized" lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
+    :::image type="complex" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="The link on the page is now italicized." lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
        The link on the page is now italicized
     :::image-end:::
 
@@ -271,5 +271,5 @@ Use what you have learned in this tutorial to set up Workspaces in your own proj
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/workspaces/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

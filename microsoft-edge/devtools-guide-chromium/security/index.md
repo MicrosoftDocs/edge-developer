@@ -35,7 +35,7 @@ The **Security** panel is the main place in DevTools for inspecting the security
 1.  [Open DevTools](../open/index.md).
 1.  Choose the **Security** tab to open the **Security** tool.
 
-    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel" lightbox="../media/security-security-overview-secure.msft.png":::
+    :::image type="complex" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel." lightbox="../media/security-security-overview-secure.msft.png":::
        The **Security** panel
     :::image-end:::
 
@@ -47,7 +47,7 @@ The **Security** panel is the main place in DevTools for inspecting the security
 
 When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.
 
-:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="A non-secure page" lightbox="../media/security-security-overview-non-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-non-secure.msft.png" alt-text="A non-secure page." lightbox="../media/security-security-overview-non-secure.msft.png":::
    A non-secure page
 :::image-end:::
 
@@ -64,13 +64,13 @@ If you have not set up HTTPS on your server, [Let's Encrypt](https://letsencrypt
 
 **Mixed content**<!--[mixed content](/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)--> means that the main origin of a page is secure, but the page requested resources from non-secure origins.  Mixed content pages are only partially protected because the HTTP content is accessible to sniffers and vulnerable to man-in-the-middle attacks.
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Mixed content" lightbox="../media/security-security-overview-mixed-secure.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Mixed content." lightbox="../media/security-security-overview-mixed-secure.msft.png":::
    Mixed content
 :::image-end:::
 
 In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.
 
-:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Mixed resources in the Network Log" lightbox="../media/security-network-filter.msft.png":::
+:::image type="complex" source="../media/security-network-filter.msft.png" alt-text="Mixed resources in the Network Log." lightbox="../media/security-network-filter.msft.png":::
    Mixed resources in the **Network Log**
 :::image-end:::
 
@@ -82,7 +82,7 @@ In the previous figure, choose **View 1 request in Network panel** to open the *
 
 From the **Security Overview**, choose **View certificate** to quickly inspect the certificate for the main origin.
 
-:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="A main origin certificate" lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
+:::image type="complex" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="A main origin certificate." lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
    A main origin certificate
 :::image-end:::
 
@@ -90,7 +90,7 @@ From the **Security Overview**, choose **View certificate** to quickly inspect t
 
 Choose one of the entries in the left-hand nav to view the details of the origin.  From the details page you are able to view connection and certificate information.  Certificate transparency information is also shown when available.
 
-:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Main origin details" lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
+:::image type="complex" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Main origin details." lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
    Main origin details
 :::image-end:::
 
@@ -100,5 +100,5 @@ Choose one of the entries in the left-hand nav to view the details of the origin
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/security/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 The Coverage tool in Microsoft Edge DevTools can help you find unused JavaScript and CSS code.  Removing unused code can speed up your page load and save your mobile users cellular data.  The **Coverage** tool is also called the _Coverage panel_ or _Coverage tab_.
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage" lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage." lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
    Analyzing code coverage
 :::image-end:::
 
@@ -59,7 +59,7 @@ This stylesheet does not just include the code for the button component.  It con
 1.  [Open the Command Menu](../command-menu/index.md).
 1.  Start typing `coverage`, select the **Show Coverage** command, and then select `Enter` to run the command.  The **Coverage** panel opens in the **Drawer**.
 
-    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage panel" lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+    :::image type="complex" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage panel." lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
        The **Coverage** panel
     :::image-end:::
 
@@ -68,9 +68,9 @@ This stylesheet does not just include the code for the button component.  It con
 ## Record code coverage
 
 1.  Choose one of the following buttons in the **Coverage** panel.
-    *   Choose **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page](../media/reload-icon.msft.png)) if you want to review what code is needed to load the page.
-    *   Choose **Instrument Coverage** (![Instrument Coverage](../media/record-icon.msft.png)) if you want to review what code is used after interacting with the page.
-1.  Choose **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png)) when you want to stop recording code coverage.
+    *   Choose **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page.](../media/reload-icon.msft.png)) if you want to review what code is needed to load the page.
+    *   Choose **Instrument Coverage** (![Instrument Coverage.](../media/record-icon.msft.png)) if you want to review what code is used after interacting with the page.
+1.  Choose **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results.](../media/stop-icon.msft.png)) when you want to stop recording code coverage.
 
 
 <!-- ====================================================================== -->
@@ -78,7 +78,7 @@ This stylesheet does not just include the code for the button component.  It con
 
 The table in the **Coverage** panel displays the resources that were analyzed, and how much code is used within each resource.  Choose a row to open that resource in the **Sources** tool and review a line-by-line breakdown of used code and unused code.
 
-:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report" lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
+:::image type="complex" source="../media/coverage-sources-resource-drawer-coverage-selected.msft.png" alt-text="A code coverage report." lightbox="../media/coverage-sources-resource-drawer-coverage-selected.msft.png":::
    A code coverage report
 :::image-end:::
 
@@ -94,5 +94,5 @@ The table in the **Coverage** panel displays the resources that were analyzed, a
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/coverage/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
