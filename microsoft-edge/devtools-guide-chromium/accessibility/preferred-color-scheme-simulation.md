@@ -11,7 +11,7 @@ ms.date: 08/03/2021
 
 Many operating systems have a way to display any application in darker or lighter colors.  Having a web product that has a light scheme in a dark-mode operating system can be hard to read and can be an accessibility issue for some users.
 
-To test how a webpage will render when the user has selected dark or light mode, instead of changing your own machine's dark-mode or light-mode setting, you can select **Emulate CSS prefers-color-scheme: dark** or **light** in Microsoft Edge DevTools.  You can do this from the **Command Menu** or from the **Rendering** tool, as described below.
+To test how a webpage will render when the user has selected dark or light mode, instead of changing your own machine's dark-mode or light-mode setting, you can select **Emulate CSS prefers-color-scheme: dark** or **light** in Microsoft Edge DevTools.  You can do this from the **Rendering** tool or from the **Command Menu**, as described below.
 
 Alternatively, you can make your webpage automatically select dark or light mode based on your own preferred settings on your machine, by selecting **No emulation**, which is the default.
 
@@ -29,13 +29,13 @@ This article is about changing the appearance of the webpage under development. 
 
 1.  In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: dark** or **prefers-color-scheme: light**.
 
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool" lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
+    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool." lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
        Emulating dark or light mode using the **Rendering** tool
     :::image-end:::
 
 1.  Refresh the page to display the rendered result.
 
-    Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started with viewing and changing CSS](../css/index.md).
+    Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started viewing and changing CSS](../css/index.md).
 
 1.  To restore the setting, in the **Rendering** tool, in the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **No emulation**.  When you refresh the page, your own operating system or browser setting for light or dark mode preference will be applied.
 
@@ -55,6 +55,21 @@ This article is about changing the appearance of the webpage under development. 
 
 1.  Refresh the page to display the rendered result.
 
-    Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started with viewing and changing CSS](../css/index.md).
+    Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started viewing and changing CSS](../css/index.md).
 
 1.  To restore the setting, in the Command Menu, type "emulate" or "scheme" and then select **Rendering: Do not emulate CSS prefers-color-scheme**.  When you refresh the page, your own operating system or browser setting for light or dark mode preference will be applied.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Analyze rendering performance with the Rendering tool](../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_
+
+The Rendering tool is also used for the following:
+
+* [Check for contrast issues with dark theme and light theme](test-dark-mode.md)
+* [Verify that a page is usable by people with color blindness](test-color-blindness.md)
+* [Verify that a page is usable with blurred vision](test-blurred-vision.md)
+* [Verify that a page is usable with UI animation turned off](test-reduced-ui-motion.md)
+* [Emulate vision deficiencies](emulate-vision-deficiencies.md)
+* [Simulate reduced motion](reduced-motion-simulation.md)

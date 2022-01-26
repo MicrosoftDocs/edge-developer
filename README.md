@@ -136,7 +136,7 @@ The following versions of alerts are available.  Replace the plain text with you
 > Dangerous certain consequences of an action.
 ```
 
-![Note patterns](./media/notes.png)
+![Note patterns.](./media/notes.png)
 
 For multi-line blockquote notes, use a greater-than (`>`) character in front of each line of the notes:
 

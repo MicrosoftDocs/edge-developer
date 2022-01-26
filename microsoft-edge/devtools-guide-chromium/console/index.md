@@ -191,7 +191,7 @@ Manipulating a selection of elements using the **Console**:
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the Console to interact with the DOM](console-dom-interaction.md).
+*  [Interact with the DOM using the Console](console-dom-interaction.md).
 *  [Console features reference](reference.md)
 *  [Console Utilities API reference](utilities.md)
 *  [Console API reference](api.md)
