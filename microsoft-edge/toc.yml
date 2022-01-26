@@ -1,329 +1,651 @@
-- name: Microsoft Edge Developer documentation #landing page
+- name: Microsoft Edge Developer documentation  # landing page
   href: developer/index.yml
   items:
 # =============================================================================
     - name: Microsoft Edge DevTools
       items:
-        - name: DevTools overview
+# UPPER NON-TOOLS NODES =======================================================
+# Overview of DevTools --------------------------------------------------------
+        - name: Overview of DevTools
           href: devtools-guide-chromium/index.md
+          displayName: DevTools
+# Opening DevTools ------------------------------------------------------------
+        - name: Open DevTools
+          href: devtools-guide-chromium/open/index.md
+          displayName: DevTools
+# What's New ------------------------------------------------------------------
         - name: What's new
           items:
+# Experimental features -------------------------------------------------------
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
+              displayName: Experimental features, settings
+# What's New pages ------------------------------------------------------------
             - name: Microsoft Edge 97
               href: devtools-guide-chromium/whats-new/2022/01/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 96
               href: devtools-guide-chromium/whats-new/2021/11/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 95
               href: devtools-guide-chromium/whats-new/2021/10/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 93
               href: devtools-guide-chromium/whats-new/2021/07/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
+              displayName: what's new
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-# =============================================================================
-        - name: Get started
-          items:
-            - name: Open DevTools
-              href: devtools-guide-chromium/open/index.md
-            - name: Get started with HTML and the DOM # related: Tools > Elements
-              href: devtools-guide-chromium/beginners/html.md
-            - name: Get started viewing and changing the DOM # related: Tools > Elements
-              href: devtools-guide-chromium/dom/index.md
-            - name: Get started with CSS # related: Tools > Elements
-              href: devtools-guide-chromium/beginners/css.md
-            - name: Get started viewing and changing CSS # related: Tools > Elements
-              href: devtools-guide-chromium/css/index.md
-            - name: Get started debugging JavaScript # related: How to > JavaScript debugging
-              href: devtools-guide-chromium/javascript/index.md
-            - name: Get started analyzing runtime performance # related: Tools > Performance > Performance troubleshooting
-              href: devtools-guide-chromium/evaluate-performance/index.md
-            - name: View page resources
-              href: devtools-guide-chromium/resources/index.md
-            - name: Edit files with Workspaces # related: Tools > Sources
-              href: devtools-guide-chromium/workspaces/index.md
-            - name: Inspect network activity # related: Tools > Network
-              href: devtools-guide-chromium/network/index.md
-            - name: Optimize website speed # related: Tools > Performance > Performance troubleshooting
-              href: devtools-guide-chromium/speed/get-started.md
-            - name: Remote debugging
-              items:
-                - name: Get started remote debugging Android devices
-                  href: devtools-guide-chromium/remote-debugging/index.md # related: Tools > Remote devices
-                - name: Get started remote debugging Surface Duo
-                  href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md # related: Tools > Remote devices
-                - name: Get started remote debugging Windows devices
-                  href: devtools-guide-chromium/remote-debugging/windows.md # related: Tools > Remote devices
-                - name: Get started remote debugging Android WebViews
-                  href: devtools-guide-chromium/remote-debugging/webviews.md # related: Tools > Remote devices
-# =============================================================================
-        - name: How to
-          items:
-            - name: Test accessibility
-              items:
-                - name: Accessibility-testing features in DevTools
-                  href: devtools-guide-chromium/accessibility/reference.md
-                - name: Overview of accessibility testing using DevTools
-                  href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
-                - name: Navigate DevTools with assistive technology
-                  href: devtools-guide-chromium/accessibility/navigation.md
-                - name: Alt-text for images
-                  items:
-                    - name: Automatically test a webpage for accessibility issues # related: "Text contrast", "Screen reader support"
-                      href: devtools-guide-chromium/accessibility/test-issues-tool.md
-                - name: Keyboard support
-                  items:
-                    - name: Check for keyboard support by using the Tab and Enter keys
-                      href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
-                    - name: Analyze the lack of indication of keyboard focus in a sidebar menu
-                      href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
-                    - name: Analyze the lack of keyboard support in a form
-                      href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
-                    - name: Test keyboard support using the Source Order Viewer
-                      href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
-                - name: Text contrast
-                  items:
-                    - name: Test text-color contrast using the Color Picker
-                      href: devtools-guide-chromium/accessibility/color-picker.md
-                    - name: Verify accessibility of all states of elements
-                      href: devtools-guide-chromium/accessibility/test-inspect-states.md
-                    - name: Check for contrast issues with dark theme and light theme
-                      href: devtools-guide-chromium/accessibility/test-dark-mode.md
-                - name: Screen reader support
-                  items:
-                    - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage # related: "Keyboard support" & "Text contrast"
-                      href: devtools-guide-chromium/accessibility/test-inspect-tool.md
-                    - name: Check the Accessibility Tree for keyboard and screen reader support
-                      href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
-                    - name: Test accessibility using the Accessibility tab
-                      href: devtools-guide-chromium/accessibility/accessibility-tab.md
-                - name: Vision deficiencies
-                  items:
-                    - name: Verify that a page is usable by people with color blindness
-                      href: devtools-guide-chromium/accessibility/test-color-blindness.md
-                    - name: Verify that a page is usable with blurred vision
-                      href: devtools-guide-chromium/accessibility/test-blurred-vision.md
-                    - name: Verify that a page is usable with UI animation turned off
-                      href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
-                - name: Usable when narrow
-                  items:
-                    - name: Verify that the webpage layout is usable when narrow
-                      href: devtools-guide-chromium/accessibility/narrow.md
-                - name: Test accessibility using Lighthouse # related: Tools > Lighthouse
-                  href: devtools-guide-chromium/accessibility/lighthouse.md
-                - name: Track which element has focus
-                  href: devtools-guide-chromium/accessibility/focus.md
-            - name: Command Menu
-              href: devtools-guide-chromium/command-menu/index.md
-            - name: Customize DevTools
-              items:
-                - name: Overview
-                  href: devtools-guide-chromium/customize/index.md
-                - name: Apply a color theme
-                  href: devtools-guide-chromium/customize/theme.md
-                - name: Change DevTools placement
-                  href: devtools-guide-chromium/customize/placement.md
-                - name: Match browser language
-                  href: devtools-guide-chromium/customize/localization.md
-                - name: Customize keyboard shortcuts
-                  href: devtools-guide-chromium/customize/shortcuts.md
-            - name: Device testing and emulation
-              items:
-                - name: Emulation overview
-                  href: devtools-guide-chromium/device-mode/index.md
-                - name: Emulate dual-screen and foldable devices
-                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-                - name: Emulate and test other browsers
-                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-                - name: Override the user agent string
-                  href: devtools-guide-chromium/device-mode/override-user-agent.md
-                - name: Override geolocation
-                  href: devtools-guide-chromium/device-mode/geolocation.md
-                - name: Simulate device orientation
-                  href: devtools-guide-chromium/device-mode/orientation.md
-            - name: JavaScript debugging
-              items:
-                - name: Use the debugger features
-                  href: devtools-guide-chromium/javascript/reference.md
-                - name: Pause code with breakpoints
-                  href: devtools-guide-chromium/javascript/breakpoints.md
-                - name: Map pre-processed code to source code
-                  href: devtools-guide-chromium/javascript/source-maps.md
-                - name: Mark content scripts as Library Code
-                  href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
-            - name: Use DevTools in IE mode
-              href: devtools-guide-chromium/ie-mode/index.md
-            - name: Performance troubleshooting
-              items:
-                - name: Performance features reference # related: Tools > Performance
-                  href: devtools-guide-chromium/evaluate-performance/reference.md
-                - name: Timeline event reference # related: Tools > Performance
-                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
-            - name: Service worker troubleshooting
-              href: devtools-guide-chromium/service-workers/index.md
-            - name: DevTools Protocol
-              href: devtools-protocol-chromium/index.md
-            - name: Keyboard shortcuts
-              href: devtools-guide-chromium/shortcuts/index.md
-# =============================================================================
+              displayName: what's new
+# TOOLS =======================================================================
         - name: Tools
           items:
-            - name: About Panel and Drawer tools
-              href: devtools-guide-chromium/about-panel-drawer-tools.md
-            - name: 3D View
-              href: devtools-guide-chromium/3d-view/index.md
-            - name: Animations
-              href: devtools-guide-chromium/inspect-styles/animations.md
-            - name: Application
-              items:
-                - name: Cache
-                  href: devtools-guide-chromium/storage/cache.md
-                - name: Cookies
-                  href: devtools-guide-chromium/storage/cookies.md
-                - name: Debug background services
-                  href: devtools-guide-chromium/javascript/background-services.md
-                - name: Debug PWAs
-                  href: devtools-guide-chromium/progressive-web-apps/index.md
-                - name: IndexedDB
-                  href: devtools-guide-chromium/storage/indexeddb.md
-                - name: Local storage
-                  href: devtools-guide-chromium/storage/localstorage.md
-                - name: Session storage
-                  href: devtools-guide-chromium/storage/sessionstorage.md
-                - name: WebSQL
-                  href: devtools-guide-chromium/storage/websql.md
-            - name: Changes
-              href: devtools-guide-chromium/changes/changes-tool.md
-            - name: Console
-              items:
-                - name: Console overview
-                  href: devtools-guide-chromium/console/index.md
-                - name: Log messages
-                  href: devtools-guide-chromium/console/console-log.md
-                - name: Run JavaScript in the Console
-                  href: devtools-guide-chromium/console/console-javascript.md
-                - name: Console features reference
-                  href: devtools-guide-chromium/console/reference.md
-                - name: Console API reference
-                  href: devtools-guide-chromium/console/api.md
-                - name: Console Utilities API reference
-                  href: devtools-guide-chromium/console/utilities.md
-                - name: Watch JavaScript expressions in real time
-                  href: devtools-guide-chromium/console/live-expressions.md
-                - name: Fix JavaScript Console errors
-                  href: devtools-guide-chromium/console/console-debug-javascript.md
-                - name: Interact with the DOM
-                  href: devtools-guide-chromium/console/console-dom-interaction.md
-                - name: Filter Console messages
-                  href: devtools-guide-chromium/console/console-filters.md
-            - name: Coverage
-              href: devtools-guide-chromium/coverage/index.md
-#           - name: Developer Resources
-            - name: Elements
+# Non-closable panel tools, in default order ==================================
+# Elements tool ---------------------------------------------------------------
+            - name: Elements tool
               items:
                 - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
-                - name: Edit CSS font styles and settings
-                  href: devtools-guide-chromium/inspect-styles/edit-fonts.md
-                - name: Inspect CSS grid
+                  displayName: Elements tool
+
+                - name: Get started with CSS
+                  href: devtools-guide-chromium/beginners/css.md
+                  displayName: Elements tool
+
+                - name: Get started viewing and changing CSS
+                  href: devtools-guide-chromium/css/index.md
+                  displayName: Elements tool
+
+                - name: Inspect CSS Grid
                   href: devtools-guide-chromium/css/grid.md
-                - name: CSS-in-JS
+                  displayName: Elements tool
+
+                - name: Edit CSS font styles and settings in the Styles pane  # added article
+                  href: devtools-guide-chromium/inspect-styles/edit-fonts.md
+                  displayName: Elements tool
+
+                - name: Style editing for CSS-in-JS frameworks  # added article from blog
                   href: devtools-guide-chromium/css/css-in-js.md
-                - name: Force DevTools into Print Preview mode
-                  href: devtools-guide-chromium/css/print-preview.md
-            - name: Inspect
-              href: devtools-guide-chromium/css/inspect.md
-            - name: Issues
-              href: devtools-guide-chromium/issues/index.md
-#           - name: JavaScript Profiler
-#           - name: Layers
-#           - name: Lighthouse
-            - name: Media
-              href: devtools-guide-chromium/media-panel/index.md
-            - name: Memory
+                  displayName: Elements tool
+
+                - name: Get started with HTML and the DOM  # orig article is 404
+                  href: devtools-guide-chromium/beginners/html.md
+                  displayName: Elements tool
+
+                - name: Get started viewing and changing the DOM
+                  href: devtools-guide-chromium/dom/index.md
+                  displayName: Elements tool
+# Console tool ----------------------------------------------------------------
+            - name: Console tool
               items:
-                - name: Find detached elements
-                  href: devtools-guide-chromium/memory-problems/dom-leaks.md
-                - name: Fix memory problems
-                  href: devtools-guide-chromium/memory-problems/index.md
-                - name: Record heap snapshots
-                  href: devtools-guide-chromium/memory-problems/heap-snapshots.md
-                - name: Speed up JavaScript runtime
-                  href: devtools-guide-chromium/rendering-tools/js-runtime.md
-                - name: Use allocation instrumentation on timeline
-                  href: devtools-guide-chromium/memory-problems/allocation-profiler.md
-                - name: Memory terminology
-                  href: devtools-guide-chromium/memory-problems/memory-101.md
-#           - name: Memory Inspector
-            - name: Network
-              items:
-                - name: Overview
-                  href: devtools-guide-chromium/network/reference.md
-                - name: Network issues guide
-                  href: devtools-guide-chromium/network/issues.md
-#           - name: Network conditions
-#           - name: Network request blocking
-            - name: Performance
-              items:
-                - name: Analyze runtime performance
-                  href: devtools-guide-chromium/rendering-tools/index.md
-            - name: Performance monitor
-              href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
-#           - name: Quick source
-            - name: Remote devices # related: Get started > Remote debugging
-              href: devtools-guide-chromium/remote-debugging/local-server.md
-            - name: Rendering
-              items:
-                - name: Emulate vision deficiencies
-                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
-                - name: Emulate dark or light scheme
-                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
-                - name: Simulate reduced motion
-                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
-            - name: Search
-              href: devtools-guide-chromium/search/search-tool.md
-            - name: Security
-              href: devtools-guide-chromium/security/index.md
-#           - name: Sensors
-            - name: Sources
+                - name: Console overview
+                  href: devtools-guide-chromium/console/index.md
+                  displayName: Console tool
+
+                - name: Console features reference
+                  href: devtools-guide-chromium/console/reference.md
+                  displayName: Console tool
+
+                - name: Log messages in the Console tool
+                  href: devtools-guide-chromium/console/console-log.md
+                  displayName: Console tool
+
+                - name: Run JavaScript in the Console
+                  href: devtools-guide-chromium/console/console-javascript.md
+                  displayName: Console tool
+
+                - name: Console API reference
+                  href: devtools-guide-chromium/console/api.md
+                  displayName: Console tool
+
+                - name: Console Utilities API reference
+                  href: devtools-guide-chromium/console/utilities.md
+                  displayName: Console tool
+
+                - name: Monitor changes in JavaScript using Live Expressions
+                  href: devtools-guide-chromium/console/live-expressions.md
+                  displayName: Console tool
+
+                - name: Fix JavaScript errors that are reported in the Console  # added article
+                  href: devtools-guide-chromium/console/console-debug-javascript.md
+                  displayName: Console tool, Sources tool, Network tool
+
+                - name: Interact with the DOM using the Console  # added article
+                  href: devtools-guide-chromium/console/console-dom-interaction.md
+                  displayName: Console tool
+
+                - name: Filter Console messages  # added article
+                  href: devtools-guide-chromium/console/console-filters.md
+                  displayName: Console tool
+# Sources tool ----------------------------------------------------------------
+            - name: Sources tool
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
-                - name: Overrides
-                  href: devtools-guide-chromium/javascript/overrides.md
-                - name: Snippets
+                  displayName: Quick source tool, Sources tool  # Quick source tool is covered in section "Displaying source files when using a different tool"
+
+                - name: Get started debugging JavaScript
+                  href: devtools-guide-chromium/javascript/index.md
+                  displayName: Sources tool
+
+                - name: Pause code with breakpoints
+                  href: devtools-guide-chromium/javascript/breakpoints.md
+                  displayName: Sources tool
+
+                - name: JavaScript debugging features  # orig: "JavaScript debugging reference"
+                  href: devtools-guide-chromium/javascript/reference.md
+                  displayName: Sources tool
+
+                - name: Run snippets of JavaScript on any webpage
                   href: devtools-guide-chromium/javascript/snippets.md
+                  displayName: Sources tool
+
+                - name: Edit files with Workspaces (Filesystem tab)
+                  href: devtools-guide-chromium/workspaces/index.md
+                  displayName: Sources tool, Quick source tool  # Quick source tool is covered in section "Step 4: Save a JavaScript change to disk"
+
+                - name: Override webpage resources with local copies (Overrides tab)  # added article
+                  href: devtools-guide-chromium/javascript/overrides.md
+                  displayName: Sources tool
+
+                - name: Mark content scripts as Library Code
+                  href: devtools-guide-chromium/javascript/guides/mark-content-scripts-library-code.md
+                  displayName: Sources tool
+
                 - name: Disable JavaScript
                   href: devtools-guide-chromium/javascript/disable.md
-#           - name: WebAudio
-            - name: WebAuthn
-              href: devtools-guide-chromium/webauthn/index.md
-#           - name: Welcome
-        - name: Contact the DevTools team
+                  displayName: Sources tool
+
+                - name: Map preprocessed code to source code
+                  href: devtools-guide-chromium/javascript/source-maps.md
+                  displayName: Sources tool
+# Non-panel tools on toolbar ==================================================
+# Inspect tool ----------------------------------------------------------------
+            - name: Inspect tool
+              items:
+                - name: Analyze pages using the Inspect tool  # added article
+                  href: devtools-guide-chromium/css/inspect.md
+                  displayName: Inspect tool
+# Device Emulation ------------------------------------------------------------
+            - name: Device Emulation  # orig: Mobile simulation
+              items:
+                - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
+                  href: devtools-guide-chromium/device-mode/index.md
+                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
+
+                - name: Emulate dual-screen and foldable devices  # added article
+                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+                  displayName: Device Emulation, Device Emulator, Device Mode
+
+                - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
+                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
+                  displayName: Device Emulation, Device Emulator, Device Mode
+# Closable panel tools, in alpha order ========================================
+# 3D View tool ----------------------------------------------------------------
+            - name: 3D View tool
+              items:
+                - name: Navigate z-index, DOM, and layers using the 3D View tool  # added article
+                  href: devtools-guide-chromium/3d-view/index.md
+                  displayName: 3D View tool, Layers tool
+# Animations tool -------------------------------------------------------------
+            - name: Animations tool
+              items:
+                - name: Inspect animations
+                  href: devtools-guide-chromium/inspect-styles/animations.md
+                  displayName: Animations tool
+# Application tool ------------------------------------------------------------
+            - name: Application tool
+              items:
+                - name: View, edit, and delete cookies
+                  href: devtools-guide-chromium/storage/cookies.md
+                  displayName: Application tool
+
+                - name: View and edit local storage
+                  href: devtools-guide-chromium/storage/localstorage.md
+                  displayName: Application tool
+
+                - name: View and change IndexedDB data
+                  href: devtools-guide-chromium/storage/indexeddb.md
+                  displayName: Application tool
+
+                - name: View and edit session storage
+                  href: devtools-guide-chromium/storage/sessionstorage.md
+                  displayName: Application tool
+
+              # - name: View Application Cache data  # deprecated
+              #   href: devtools-guide-chromium/storage/application.md  # deprecated feature  # keep comment for inventory while article remains in other repo's TOC
+              #   displayName: Application tool
+
+                - name: View Web SQL data
+                  href: devtools-guide-chromium/storage/websql.md
+                  displayName: Application tool
+
+                - name: View Cache data
+                  href: devtools-guide-chromium/storage/cache.md
+                  displayName: Application tool
+
+                - name: Debug Progressive Web Apps (PWAs)
+                  href: devtools-guide-chromium/progressive-web-apps/index.md
+                  displayName: Application tool
+
+                - name: Debug background services
+                  href: devtools-guide-chromium/javascript/background-services.md
+                  displayName: Application tool
+# Changes tool ----------------------------------------------------------------
+            - name: Changes tool
+              items:
+                - name: Track changes to files using the Changes tool  # added article
+                  href: devtools-guide-chromium/changes/changes-tool.md
+                  displayName: Changes tool
+# Coverage tool ---------------------------------------------------------------
+            - name: Coverage tool
+              items:
+                - name: Find unused JavaScript and CSS code with the Coverage tool
+                  href: devtools-guide-chromium/coverage/index.md
+                  displayName: Coverage tool
+# CSS Overview tool -----------------------------------------------------------
+            # - name: CSS Overview tool  # un-comment node when add article to repo
+            #   items:
+            #     - name: Identify potential CSS improvements  # pending
+            #       href: devtools-guide-chromium/issues/index.md  # pending
+            #       displayName: CSS Overview tool
+# Detached Elements tool ------------------------------------------------------
+            - name: Detached Elements tool
+              items:
+                - name: Debug DOM memory leaks with the Detached Elements tool # added article
+                  href: devtools-guide-chromium/memory-problems/dom-leaks.md
+                  displayName: Detached Elements tool
+# Developer Resources tool ----------------------------------------------------
+            # - name: Developer Resources tool  # un-comment node when add article or jump page to repo
+            #   items:
+            #       displayName: Developer Resources tool
+# Issues tool -----------------------------------------------------------------
+            - name: Issues tool
+              items:
+                - name: Find and fix problems using the Issues tool
+                  href: devtools-guide-chromium/issues/index.md
+                  displayName: Issues tool
+# JavaScript Profiler tool ----------------------------------------------------
+            #   deprecated  # keep commented-out node while tool remains in More Tools menu
+# Layers tool -----------------------------------------------------------------
+            # - name: Layers tool  # un-comment node when add article or jump page to repo
+            #   items:
+            #       displayName: Layers tool
+# Lighthouse tool -------------------------------------------------------------
+            - name: Lighthouse tool  # new jump page  # main article is in Accessibility
+              items:
+                - name: Lighthouse tool
+                  href: devtools-guide-chromium/lighthouse/lighthouse-tool.md
+                  displayName: Lighthouse tool
+# Media tool ------------------------------------------------------------------
+            - name: Media tool
+              items:
+                - name: View and debug media players information
+                  href: devtools-guide-chromium/media-panel/index.md
+                  displayName: Media tool
+# Memory tool -----------------------------------------------------------------
+            - name: Memory tool
+              items:
+                - name: Fix memory problems
+                  href: devtools-guide-chromium/memory-problems/index.md
+                  displayName: Memory tool
+
+                - name: Memory terminology
+                  href: devtools-guide-chromium/memory-problems/memory-101.md
+                  displayName: Memory tool
+
+                - name: Record heap snapshots
+                  href: devtools-guide-chromium/memory-problems/heap-snapshots.md
+                  displayName: Memory tool
+
+                - name: Use Allocation instrumentation on timeline
+                  href: devtools-guide-chromium/memory-problems/allocation-profiler.md
+                  displayName: Memory tool
+
+                - name: Speed up JavaScript runtime
+                  href: devtools-guide-chromium/rendering-tools/js-runtime.md
+                  displayName: Memory tool
+# Memory Inspector tool -------------------------------------------------------
+            # - name: Memory Inspector tool  # un-comment node when add article to repo
+            #   items:
+            #     - name: Inspect JavaScript ArrayBuffer with the Memory Inspector  # pending
+            #       href: devtools-guide-chromium/memory-inspector/index.md  # pending
+            #       displayName: Memory Inspector tool
+# Network tool ----------------------------------------------------------------
+            - name: Network tool
+              items:
+                - name: Inspect network activity
+                  href: devtools-guide-chromium/network/index.md
+                  displayName: Network tool
+
+                - name: Network features reference
+                  href: devtools-guide-chromium/network/reference.md
+                  displayName: Network tool
+
+                - name: Network issues guide  # added article
+                  href: devtools-guide-chromium/network/issues.md
+                  displayName: Network tool
+
+                - name: View page resources
+                  href: devtools-guide-chromium/resources/index.md
+                  displayName: Command Menu, Network tool, Sources tool, Application tool, Network tool
+
+                - name: Service Worker improvements  # added article
+                  href: devtools-guide-chromium/service-workers/index.md
+                  displayName: Network tool, Application tool, Sources tool
+# Network conditions tool -----------------------------------------------------
+            - name: Network conditions tool
+              items:
+                - name: Network conditions tool  # new jump page
+                  href: devtools-guide-chromium/network-conditions/network-conditions-tool.md
+                  displayName: Network conditions tool
+
+                - name: Override the user agent string
+                  href: devtools-guide-chromium/device-mode/override-user-agent.md
+                  displayName: Network Conditions tool, Device Emulation, Device Emulator
+# Network request blocking tool -----------------------------------------------
+            # - name: Network request blocking tool  # un-comment node when add article or jump page to repo
+            #   items:
+            #       displayName: Network request blocking tool
+# Performance tool ------------------------------------------------------------
+            - name: Performance tool
+              items:
+                - name: Get started analyzing runtime performance
+                  href: devtools-guide-chromium/evaluate-performance/index.md
+                  displayName: Performance tool
+
+                - name: Analyze runtime performance
+                  href: devtools-guide-chromium/rendering-tools/index.md
+                  displayName: Performance tool
+
+                - name: Optimize website speed
+                  href: devtools-guide-chromium/speed/get-started.md
+                  displayName: Performance tool, Lighthouse tool, Network tool
+
+                - name: Performance features reference
+                  href: devtools-guide-chromium/evaluate-performance/reference.md
+                  displayName: Performance tool, Rendering tool
+
+                - name: Timeline event reference
+                  href: devtools-guide-chromium/evaluate-performance/performance-reference.md
+                  displayName: Performance tool
+# Performance monitor tool ----------------------------------------------------
+            - name: Performance monitor tool
+              items:
+                - name: Measure runtime performance of a page using the Performance monitor tool  # added article
+                  href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
+                  displayName: Performance monitor tool
+# Quick source tool -----------------------------------------------------------
+            - name: Quick source tool  # new jump page
+              items:
+                - name: Display or edit source files using the Quick source tool
+                  href: devtools-guide-chromium/quick-source/quick-source-tool.md
+                  displayName: Quick source tool  # also indexed elsewhere in this file
+# Recorder tool ---------------------------------------------------------------
+            # - name: Recorder tool  # un-comment node when add article to repo
+            #   items:
+            #     - name: Record, replay and measure user flows  # pending
+            #       href: devtools-guide-chromium/recorder/recorder-tool.md  # pending
+            #       displayName: Recorder tool
+# Rendering tool --------------------------------------------------------------
+            - name: Rendering tool
+              items:
+                - name: Emulate dark or light schemes in the rendered page  # added article
+                  href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
+                  displayName: Rendering tool
+
+                - name: Force print preview mode
+                  href: devtools-guide-chromium/css/print-preview.md
+                  displayName: Rendering tool
+              # some articles are in Accessibility section
+# Search tool -----------------------------------------------------------------
+            - name: Search tool
+              items:
+                - name: Find source files for a page using the Search tool  # added article
+                  href: devtools-guide-chromium/search/search-tool.md
+                  displayName: Search tool
+# Security tool ---------------------------------------------------------------
+            - name: Security tool
+              items:
+                - name: Understand security issues using the Security tool
+                  href: devtools-guide-chromium/security/index.md
+                  displayName: Security tool
+# Sensors tool ----------------------------------------------------------------
+            - name: Sensors tool
+              items:
+                - name: Override geolocation with the Sensors tool  # orig: was in "Mobile simulation"
+                  href: devtools-guide-chromium/device-mode/geolocation.md
+                  displayName: Sensors tool, Device Emulation
+
+                - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
+                  href: devtools-guide-chromium/device-mode/orientation.md
+                  displayName: Sensors tool, Device Emulation
+# WebAudio tool ---------------------------------------------------------------
+            # - name: WebAudio tool  # un-comment node when add article or jump page to repo
+            #   items:
+            #      displayName: WebAudio tool
+# WebAuthn tool ---------------------------------------------------------------
+            - name: WebAuthn tool
+              items:
+                - name: Emulate authenticators and debug WebAuthn
+                  href: devtools-guide-chromium/webauthn/index.md
+                  displayName: WebAuthn tool
+# Welcome tool ----------------------------------------------------------------
+            # - name: Welcome tool  # un-comment node when add article or jump page to repo
+            #   items:
+            #     displayName: Welcome tool
+# /Tools bucket
+# LOWER NON-TOOL NODES ========================================================
+# Command Menu ----------------------------------------------------------------
+        - name: Command Menu
+          items:
+            - name: Run commands in the Command Menu
+              href: devtools-guide-chromium/command-menu/index.md
+              displayName: Command Menu
+# Settings pages and Customize menu -------------------------------------------
+        - name: Settings and customization UI
+          items:
+            - name: Customize DevTools  # orig: "Customization"
+              href: devtools-guide-chromium/customize/index.md
+              displayName: settings
+
+            - name: Apply a color theme to DevTools  # orig: "Enable dark theme"
+              href: devtools-guide-chromium/customize/theme.md
+              displayName: Settings, Preferences
+
+            - name: Change DevTools placement (Undock, Dock to bottom, Dock to left)
+              href: devtools-guide-chromium/customize/placement.md
+              displayName: settings
+
+            - name: Change DevTools language settings  # added article
+              href: devtools-guide-chromium/customize/localization.md
+              displayName: Settings, Preferences
+
+            - name: Customize keyboard shortcuts  # added article
+              href: devtools-guide-chromium/customize/shortcuts.md
+              displayName: Settings, Shortcuts
+# Remote debugging ------------------------------------------------------------
+        - name: Remote debugging
+          items:
+            - name: Remotely debug Android devices
+              href: devtools-guide-chromium/remote-debugging/index.md
+              displayName: Remote debugging, remote debugger
+
+            - name: Access local servers
+              href: devtools-guide-chromium/remote-debugging/local-server.md
+              displayName: Remote debugging, remote debugger
+
+            - name: Remotely debug Android WebViews
+              href: devtools-guide-chromium/remote-debugging/webviews.md
+              displayName: Remote debugging, remote debugger
+
+            - name: Remotely debug Surface Duo emulators
+              href: devtools-guide-chromium/remote-debugging/surface-duo-emulator.md
+              displayName: Remote debugging, remote debugger
+
+            - name: Remotely debug Windows devices
+              href: devtools-guide-chromium/remote-debugging/windows.md
+              displayName: Remote debugging, remote debugger
+# Accessibility testing & features --------------------------------------------
+        - name: Accessibility
+          items:
+            - name: Accessibility-testing features  # orig: Accessibility features reference (broken up & replaced)
+              href: devtools-guide-chromium/accessibility/reference.md
+              displayName: Elements tool, Accessibility tab
+
+            - name: Overview of accessibility testing using DevTools  # added article
+              href: devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md
+              displayName: Elements tool, Accessibility tab  # many tools
+
+# Inspect tool (distinct from Tools > Inspect tool bucket)
+            - name: Use the Inspect tool to detect accessibility issues by hovering over the webpage  # added article
+              href: devtools-guide-chromium/accessibility/test-inspect-tool.md
+              displayName: Inspect tool  # tests Screen reader support, Keyboard support, Text contrast 
+
+# Lighthouse tool (distinct from Tools > Lighthouse tool bucket)
+            - name: Test accessibility using Lighthouse  # was part of "Accessibility features reference"
+              href: devtools-guide-chromium/accessibility/lighthouse.md
+              displayName: Lighthouse tool
+
+# ~Elements tool > Accessibility tab
+            - name: Navigate DevTools with assistive technology
+              href: devtools-guide-chromium/accessibility/navigation.md
+              displayName: Elements tool, Accessibility tab  # many tools
+
+            - name: Track which element has focus  # orig: "Track element focus"
+              href: devtools-guide-chromium/accessibility/focus.md
+              displayName: Elements tool, Accessibility tab
+
+            - name: Alt-text for images
+              items:
+                - name: Automatically test a webpage for accessibility issues  # added article
+                  href: devtools-guide-chromium/accessibility/test-issues-tool.md
+                  displayName: Issues tool
+
+            - name: Keyboard support
+              items:
+                - name: Check for keyboard support by using the Tab and Enter keys  # added article
+                  href: devtools-guide-chromium/accessibility/test-tab-enter-keys.md
+                  displayName: keyboard support
+
+                - name: Analyze the lack of indication of keyboard focus in a sidebar menu  # added article
+                  href: devtools-guide-chromium/accessibility/test-analyze-no-focus-indicator.md
+                  displayName: keyboard focus
+
+                - name: Analyze keyboard support on forms  # added article
+                  href: devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support.md
+                  displayName: keyboard support
+
+                - name: Test keyboard support using the Source Order Viewer  # added article
+                  href: devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer.md
+                  displayName: Elements tool, Accessibility tab
+
+            - name: Text contrast
+              items:
+                - name: Test text-color contrast using the Color Picker  # was part of "Accessibility features reference"
+                  href: devtools-guide-chromium/accessibility/color-picker.md
+                  displayName: Elements tool, Styles tab, Color Picker
+
+                - name: Verify accessibility of all states of elements  # added article
+                  href: devtools-guide-chromium/accessibility/test-inspect-states.md
+                  displayName: Elements tool, Styles tab, hov Toggle Element State
+
+                - name: Check for contrast issues with dark theme and light theme  # added article
+                  href: devtools-guide-chromium/accessibility/test-dark-mode.md
+                  displayName: Rendering tool, dark mode, light mode, dark scheme, light scheme
+
+            - name: Screen reader support
+              items:
+                - name: Test accessibility using the Accessibility tab  # was part of "Accessibility features reference"
+                  href: devtools-guide-chromium/accessibility/accessibility-tab.md
+                  displayName: Elements tool, Accessibility tab, screen readers, Accessibility Tree, ARIA attributes, Computed Properties
+
+                - name: Check the Accessibility Tree for keyboard and screen reader support  # added article
+                  href: devtools-guide-chromium/accessibility/test-accessibility-tree.md
+                  displayName: Elements tool, Accessibility tab, screen readers
+
+# Rendering tool (distinct from Tools > Rendering tool)
+            - name: Vision deficiencies (Rendering tool)
+              items:
+                - name: Emulate vision deficiencies  # added article
+                  href: devtools-guide-chromium/accessibility/emulate-vision-deficiencies.md
+                  displayName: Rendering tool
+
+                - name: Verify that a page is usable by people with color blindness  # added article
+                  href: devtools-guide-chromium/accessibility/test-color-blindness.md
+                  displayName: Rendering tool
+
+                - name: Verify that a page is usable with blurred vision  # added article
+                  href: devtools-guide-chromium/accessibility/test-blurred-vision.md
+                  displayName: Rendering tool
+
+                - name: Simulate reduced motion  # added article
+                  href: devtools-guide-chromium/accessibility/reduced-motion-simulation.md
+                  displayName: Rendering tool
+
+                - name: Verify that a page is usable with UI animation turned off  # added article
+                  href: devtools-guide-chromium/accessibility/test-reduced-ui-motion.md
+                  displayName: Rendering tool
+
+# Device Emulation (distinct from Tools > Device Emulation)
+            - name: Usable when narrow (Device Emulation)
+              items:
+                - name: Verify that the webpage layout is usable when narrow  # added article
+                  href: devtools-guide-chromium/accessibility/narrow.md
+                  displayName: Device Emulation, Device Emulator
+# /Accessibility
+# Keyboard shortcuts ----------------------------------------------------------
+        - name: Keyboard shortcuts
+          href: devtools-guide-chromium/shortcuts/index.md
+          displayName: Keyboard shortcuts
+# IE mode ---------------------------------------------------------------------
+        - name: Use DevTools in Internet Explorer mode (IE mode)  # added article
+          href: devtools-guide-chromium/ie-mode/index.md
+          displayName: IE mode
+# DevTools Protocol -----------------------------------------------------------
+        - name: Microsoft Edge DevTools Protocol  # added article
+          href: devtools-protocol-chromium/index.md
+          displayName: DevTools Protocol
+# Contact ---------------------------------------------------------------------
+        - name: Contact the Microsoft Edge DevTools team  # added article
           href: devtools-guide-chromium/contact.md
+          displayName: contact
+# /DevTools
 # =============================================================================
     - name: Microsoft Edge extensions
       items:

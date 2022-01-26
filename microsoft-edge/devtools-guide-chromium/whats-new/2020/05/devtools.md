@@ -32,7 +32,7 @@ The following sections are a list of announcements you may have missed from the 
 
 The Microsoft Edge DevTools are now displayed in high contrast mode when Windows is in high contrast mode.
 
-:::image type="complex" source="../../media/2020/05/high-contrast.msft.png" alt-text="The Microsoft Edge DevTools in high contrast mode" lightbox="../../media/2020/05/high-contrast.msft.png":::
+:::image type="complex" source="../../media/2020/05/high-contrast.msft.png" alt-text="The Microsoft Edge DevTools in high contrast mode." lightbox="../../media/2020/05/high-contrast.msft.png":::
    The Microsoft Edge DevTools in high contrast mode
 :::image-end:::
 
@@ -47,13 +47,13 @@ Chromium issue [#1048378](https://crbug.com/1048378)
 
 From your [feedback](../../../contact.md) and the [Chromium public issue tracker](https://bugs.chromium.org/p/chromium/issues/list), the Microsoft Edge DevTools team learned that you wanted the ability to customize keyboard shortcuts in the DevTools.  In Microsoft Edge 84, you are now able to match keyboard shortcuts in the DevTools to [Visual Studio Code](https://code.visualstudio.com/), which is just one of the features the team is working on for shortcut customization.
 
-:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code" lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
+:::image type="complex" source="../../media/2020/05/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code." lightbox="../../media/2020/05/keyboard-shortcut.msft.png":::
    The Microsoft Edge DevTools in high contrast mode
 :::image-end:::
 
 To try the experiment:
 
-1. In DevTools, open **Settings** by selecting `?` or choosing the ![Devtools Settings icon](../../../media/settings-icon.msft.png) icon in the top-right corner of DevTools.
+1. In DevTools, open **Settings** by selecting `?` or choosing the ![Devtools Settings icon.](../../../media/settings-icon.msft.png) icon in the top-right corner of DevTools.
 
 1. In the **Experiments** section, select the checkbox **Enable custom keyboard shortcuts settings tab (requires reload)**.
 
@@ -77,7 +77,7 @@ You are now able to remotely debug your web content running in the [Surface Duo 
 
 With the [Surface Duo emulator](/dual-screen/android/use-emulator), you are able to test how your web content renders on a new class of foldable and dual-screen devices.  The emulator runs the Android operating system and provides the [Microsoft Edge Android app](https://play.google.com/store/apps/details?id=com.microsoft.emmx).  Load your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) and debug it with the [Microsoft Edge DevTools](../../../index.md).
 
-:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="The Microsoft Edge app running on the Surface Duo emulator" lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
+:::image type="complex" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="The Microsoft Edge app running on the Surface Duo emulator." lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
    The Microsoft Edge app on the Surface Duo emulator
 :::image-end:::
 
@@ -103,7 +103,7 @@ Chromium issue [#1076112](https://crbug.com/1076112)
 
 ### Screencasting navigation buttons display focus
 
-When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you are able to toggle screencasting with the ![Toggle Screencast](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
+When remote debugging an [Android device](../../../remote-debugging/index.md), a [Windows 10 or later device](../../../remote-debugging/windows.md), or a [Surface Duo emulator](../../../remote-debugging/surface-duo-emulator.md), you are able to toggle screencasting with the ![Toggle Screencast.](../../../media/toggle-screencast-icon.msft.png) icon in the top-left corner of the DevTools.  With screencasting enabled, you are able to navigate the tab in Microsoft Edge on the remote device from the DevTools window.  In Microsoft Edge 84, these navigation buttons are now also keyboard accessible.
 
 :::image type="complex" source="../../media/2020/05/screencasting-nav.msft.png" alt-text="Select Shift+Tab from the screencasted URL bar shows focus on the Refresh button" lightbox="../../media/2020/05/screencasting-nav.msft.png":::
    Select `Shift`+`Tab` from the screencasted URL bar shows focus on the **Refresh** button
@@ -115,7 +115,7 @@ Chromium issue [#1081486](https://crbug.com/1081486)
 
 In Microsoft Edge 84, the [Details pane](../../../network/index.md#inspect-the-details-of-the-resource) in the **Network** tool now takes focus when you open it for a resource in the [Network Log](../../../network/index.md#log-network-activity).  This change allows screen readers to read out and interact with the content of the **Details** pane.
 
-:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="The Details pane in the Network panel takes focus when opened" lightbox="../../media/2020/05/network-details.msft.png":::
+:::image type="complex" source="../../media/2020/05/network-details.msft.png" alt-text="The Details pane in the Network panel takes focus when opened." lightbox="../../media/2020/05/network-details.msft.png":::
    The **Details** pane in the **Network** tool takes focus when opened
 :::image-end:::
 
@@ -133,7 +133,7 @@ The new **Issues** tool in the DevTools Drawer was built to help reduce the noti
 
 To get started, navigate to [Find and fix problems using the Issues tool](../../../issues/index.md).
 
-:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="The Issues tool in the DevTools Drawer" lightbox="../../media/2020/05/issues.msft.png":::
+:::image type="complex" source="../../media/2020/05/issues.msft.png" alt-text="The Issues tool in the DevTools Drawer." lightbox="../../media/2020/05/issues.msft.png":::
    The **Issues** tool in the DevTools Drawer
 :::image-end:::
 
@@ -148,7 +148,7 @@ The **Inspect Mode** tooltip now indicates whether the element has an accessible
 <!--todo:  add link name and role (WebdevLabelsText) when section is live  -->
 <!--todo:  add link keyboard-focusable (WebdevControlFocus) when section is live  -->
 
-:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="The Inspect Mode tooltip with accessibility information" lightbox="../../media/2020/05/a11y.msft.png":::
+:::image type="complex" source="../../media/2020/05/a11y.msft.png" alt-text="The Inspect Mode tooltip with accessibility information." lightbox="../../media/2020/05/a11y.msft.png":::
   The **Inspect Mode** tooltip with accessibility information
 :::image-end:::
 
@@ -164,13 +164,13 @@ After recording your load performance, the **Performance** panel now shows Total
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 
-To get Total Blocking Time information, do not use the **Refresh Page** ![Refresh page icon](../../../media/refresh-page-icon.msft.png) workflow for recording page load performance.
+To get Total Blocking Time information, do not use the **Refresh Page** ![Refresh page icon.](../../../media/refresh-page-icon.msft.png) workflow for recording page load performance.
 
-Instead, select **Record** ![Record icon](../../../media/record-icon.msft.png), manually reload the page, wait for the page to load, and then stop recording.
+Instead, select **Record** ![Record icon.](../../../media/record-icon.msft.png), manually reload the page, wait for the page to load, and then stop recording.
 
 If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did not get the required information from the internal profiling data in Microsoft Edge.
 
-:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Total Blocking Time information in the footer of a Performance panel recording" lightbox="../../media/2020/05/tbt.msft.png":::
+:::image type="complex" source="../../media/2020/05/tbt.msft.png" alt-text="Total Blocking Time information in the footer of a Performance panel recording." lightbox="../../media/2020/05/tbt.msft.png":::
    Total Blocking Time information in the footer of a **Performance** panel recording
 :::image-end:::
 
@@ -185,7 +185,7 @@ The new **Experience** section of the **Performance** panel helps you detect lay
 
 Choose the **Layout Shift** event to display the details of the layout shift in the **Summary** pane.  Hover on the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.
 
-:::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="The details of a layout shift" lightbox="../../media/2020/05/cls.msft.png":::
+:::image type="complex" source="../../media/2020/05/cls.msft.png" alt-text="The details of a layout shift." lightbox="../../media/2020/05/cls.msft.png":::
    The details of a layout shift
 :::image-end:::
 
@@ -193,13 +193,13 @@ Choose the **Layout Shift** event to display the details of the layout shift in 
 
 When logging a `Promise`, the **Console** incorrectly provided `PromiseStatus` value set to `resolved`.
 
-:::image type="complex" source="../../media/2020/05/resolved.msft.png" alt-text="An example of the Console using the old resolved terminology" lightbox="../../media/2020/05/resolved.msft.png":::
+:::image type="complex" source="../../media/2020/05/resolved.msft.png" alt-text="An example of the Console using the old resolved terminology." lightbox="../../media/2020/05/resolved.msft.png":::
    An example of the **Console** using the old `resolved` terminology
 :::image-end:::
 
 The **Console** now uses the term `fulfilled`, which aligns with the `Promise` specification.  For more information about the `Promise` specification, navigate to [States and Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).
 
-:::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="An example of the Console using the new fulfilled terminology" lightbox="../../media/2020/05/fulfilled.msft.png":::
+:::image type="complex" source="../../media/2020/05/fulfilled.msft.png" alt-text="An example of the Console using the new fulfilled terminology." lightbox="../../media/2020/05/fulfilled.msft.png":::
   An example of the **Console** using the new `fulfilled` terminology
 :::image-end:::
 
@@ -211,7 +211,7 @@ V8 issue [#6751](https://bugs.chromium.org/p/v8/issues/detail?id=6751)
 
 The autocomplete UI of the **Styles** pane now detects the [revert](https://developer.mozilla.org/docs/Web/CSS/revert) CSS keyword, which reverts the cascaded value of a property to the previous value applied to the styling of the element.
 
-:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Setting the value of a property to revert" lightbox="../../media/2020/05/revert.msft.png":::
+:::image type="complex" source="../../media/2020/05/revert.msft.png" alt-text="Setting the value of a property to revert." lightbox="../../media/2020/05/revert.msft.png":::
   Setting the value of a property to revert
 :::image-end:::
 
@@ -221,7 +221,7 @@ Chromium issue [#1075437](https://crbug.com/1075437)
 
 Hover on a `background-image` value in the **Styles** pane to display a preview of the image in a tooltip.
 
-:::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Hovering over a background-image value" lightbox="../../media/2020/05/image-preview.msft.png":::
+:::image type="complex" source="../../media/2020/05/image-preview.msft.png" alt-text="Hovering over a background-image value." lightbox="../../media/2020/05/image-preview.msft.png":::
   Hovering over a `background-image` value
 :::image-end:::
 
@@ -234,7 +234,7 @@ arguments.  For example, `rgb(0, 0, 0)` is equivalent to `rbg(0 0 0)`.
 
 When you choose colors with the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.
 
-:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Using space-separated arguments in the Styles pane" lightbox="../../media/2020/05/color.msft.png":::
+:::image type="complex" source="../../media/2020/05/color.msft.png" alt-text="Using space-separated arguments in the Styles pane." lightbox="../../media/2020/05/color.msft.png":::
   Using space-separated arguments in the **Styles** pane
 :::image-end:::
 
@@ -250,7 +250,7 @@ Chromium issue [#1072952](https://crbug.com/1072952)
 
 The **Properties** pane in the **Elements** tool is deprecated.  Run `console.dir($0)` in the **Console** instead.
 
-:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="The deprecated Properties pane" lightbox="../../media/2020/05/properties.msft.png":::
+:::image type="complex" source="../../media/2020/05/properties.msft.png" alt-text="The deprecated Properties pane." lightbox="../../media/2020/05/properties.msft.png":::
    The deprecated **Properties** pane
 :::image-end:::
 
@@ -267,7 +267,7 @@ App shortcuts help users quickly start common or recommended tasks within a web 
 
 <!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
 
-:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App shortcuts in the Manifest pane" lightbox="../../media/2020/05/app-shortcuts.msft.png":::
+:::image type="complex" source="../../media/2020/05/app-shortcuts.msft.png" alt-text="App shortcuts in the Manifest pane." lightbox="../../media/2020/05/app-shortcuts.msft.png":::
   App shortcuts in the **Manifest** pane
 :::image-end:::
 
@@ -283,5 +283,5 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-84) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

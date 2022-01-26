@@ -1,5 +1,5 @@
 ---
-title: 3D View
+title: Navigate z-index, DOM, and layers using the 3D View tool
 description: How to use 3D View, including navigating the canvas, Z-index, 3D DOM, and composited layers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/03/2020
 ---
-# 3D View
+# Navigate z-index, DOM, and layers using the 3D View tool
 
 Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.  Use **3D View** to do the following:
 *   [Explore the web page translated into a 3D perspective](#3d-dom).
@@ -16,7 +16,7 @@ Use the **3D View** to debug your web app by navigating through the [Document Ob
 *   [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration).
 *   [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type).
 
-To explore an early prototype of 3D View project and run the code yourself, navigate to [3D View Sample](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView).
+To explore an early prototype for the 3D View project and run the code yourself, go to [3D View Sample](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView).
 
 On the left side, there are three panes that you can use for your debugging experience:
 *   The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.
@@ -27,9 +27,19 @@ On the right side, the canvas displays your selections from the [Z-index](#z-ind
 
 
 <!-- ====================================================================== -->
+## Opening the 3D View panel
+
+To open the **3D View** panel, in DevTools, do either of the following:
+
+* Click **More Tools** (+) on the main toolbar and then select **3D View**.
+
+* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type "3d", and then select **3D View [Drawer]**.
+
+
+<!-- ====================================================================== -->
 ## Navigating the canvas
 
-:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View" lightbox="../media/3d-view-canvas.msft.png":::
+:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View." lightbox="../media/3d-view-canvas.msft.png":::
    Canvas of 3D View
 :::image-end:::
 
@@ -49,7 +59,7 @@ To zoom, drag two fingers across the touchpad or use the scroll wheel on your mo
 
 ### On-screen controls
 
-:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls" lightbox="../media/3d-view-controls-small.msft.png":::
+:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls." lightbox="../media/3d-view-controls-small.msft.png":::
    On-screen controls
 :::image-end:::
 
@@ -61,7 +71,7 @@ To refresh the canvas, such as when the browser changed or you switched to a dev
 <!-- ====================================================================== -->
 ## Z-index
 
-:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view" lightbox="../media/3d-view-z-index-view-box.msft.png":::
+:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view." lightbox="../media/3d-view-z-index-view-box.msft.png":::
    Z-index view
 :::image-end:::
 
@@ -99,7 +109,7 @@ This approach improves the z-index debugging experience.  The radio buttons allo
 <!-- ====================================================================== -->
 ## 3D DOM
 
-:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view" lightbox="../media/3d-view-dom-purple-box.msft.png":::
+:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view." lightbox="../media/3d-view-dom-purple-box.msft.png":::
    DOM view
 :::image-end:::
 
@@ -131,7 +141,7 @@ The **Use screen texture** option adds context to your debugging experience.  It
 <!-- ====================================================================== -->
 ## Composited layers
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane" lightbox="../media/experiments-layers.msft.png":::
+:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane." lightbox="../media/experiments-layers.msft.png":::
    **Composited Layers** pane
 :::image-end:::
 

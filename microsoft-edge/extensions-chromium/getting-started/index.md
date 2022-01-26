@@ -19,7 +19,7 @@ The following list outlines helpful information to understand before building yo
 
 1.  Each browser tab is isolated from every other tab.  Each tab runs in a separate thread that is isolated from other browser tabs and threads.
 
-    :::image type="complex" source="./media/index-image1-browsertabs.png" alt-text="One thread per browser tab" lightbox="./media/index-image1-browsertabs.png":::
+    :::image type="complex" source="./media/index-image1-browsertabs.png" alt-text="One thread per browser tab." lightbox="./media/index-image1-browsertabs.png":::
        One thread per browser tab
     :::image-end:::
 
@@ -29,7 +29,7 @@ The following list outlines helpful information to understand before building yo
 
 1.  The extension model uses a different communication model.  Similar to a tab page, an extension runs in an individual thread that is isolated from other tab page threads.  A tab sends single GET requests to remote servers, and then renders the page.  However, an extension works similar to a remote server.  Installing an extension in a browser creates a standalone web server in the browser.  The extension is isolated from all tab pages.
 
-    :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="Extensions use a different communication model" lightbox="./media/index-image3-upsidedown.png":::
+    :::image type="complex" source="./media/index-image3-upsidedown.png" alt-text="Extensions use a different communication model." lightbox="./media/index-image3-upsidedown.png":::
        Extensions use a different communication model
     :::image-end:::
 

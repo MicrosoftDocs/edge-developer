@@ -1,5 +1,5 @@
 ---
-title: Debug Progressive Web Apps
+title: Debug Progressive Web Apps (PWAs)
 description: Use the Application panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,25 +20,22 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Debug Progressive Web Apps
+# Debug Progressive Web Apps (PWAs)
 
 Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
 
-<!--Related Guides:
+This article only discusses the Progressive Web App features of the **Application** panel.  For help on the other panes in the **Application** panel, see [View page resources](../resources/index.md) and [View and edit local storage](../storage/localstorage.md).
 
-*   [Progressive Web Apps](/web/progressive-web-apps)  -->
-
-<!--TODO:  Link web "Progressive Web Apps" section when available. -->
-
-This guide only discusses the Progressive Web App features of the **Application** panel.  <!--If you're looking for help on the other panes, check out the last section of this guide, [Other Application panel guides](#other-application-panel-guides).  -->
-
-<!--TODO:  Link to sections when available. -->
+See also [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md).
 
 ### Summary
 
 *   Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.
+
 *   Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.
+
 *   View your service worker cache from the **Cache Storage** pane.
+
 *   Unregister a service worker and clear all storage and caches with a single button choose from the **Clear storage** pane.
 
 
@@ -56,13 +53,15 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 After you have your manifest set up, you may use the **Manifest** pane of the **Application** panel to inspect it.
 
-:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="The Manifest Pane" lightbox="../media/manifest-pane.msft.png":::
+:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="The Manifest Pane." lightbox="../media/manifest-pane.msft.png":::
    The **Manifest** Pane
 :::image-end:::
 
 *   To look at the manifest source, choose the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure).
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
+
 *   The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.
+
 *   The **Icons** section displays every icon that you've specified.
 
 <!--### Simulate Add to Homescreen events  -->
@@ -73,7 +72,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You may test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--
-:::image type="complex" source="../media/io.msft.png" alt-text="Add to desktop shelf" lightbox="../media/io.msft.png":::
+:::image type="complex" source="../media/io.msft.png" alt-text="Add to desktop shelf." lightbox="../media/io.msft.png":::
    Add to desktop shelf
 :::image-end:::
 -->
@@ -82,7 +81,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 > [!Tip]
 > Keep the **Console** drawer open while simulating Add to Homescreen events.  The Console tells you if your manifest has any issues and logs other information about the Add to Homescreen lifecycle.  -->
 
-<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode.  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
+<!--The **Add to Homescreen** feature may not yet simulate the workflow for mobile devices.  Notice how the "add to shelf" prompt was triggered in the screenshot above, even though DevTools is in Device Mode (Device Emulation).  However, if you may successfully add your app to your desktop shelf, then it works for mobile, too.  -->
 
 <!-- TODO: Rework content after sample app is created. -->
 
@@ -107,27 +106,37 @@ Service workers are a fundamental technology in the future web platform.  They a
 
 The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="The Service Workers pane" lightbox="../media/service-workers-pane.msft.png":::
+:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="The Service Workers pane." lightbox="../media/service-workers-pane.msft.png":::
    The **Service Workers** pane
 :::image-end:::
 
 *   If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
+
 *   The **Offline** checkbox puts DevTools into offline mode.  This is equivalent to the offline mode available from the **Network** tool, or the `Go offline` option in the [Command Menu](../command-menu/index.md).
+
 *   The **Update on reload** checkbox forces the service worker to update on every page load.
+
 *   The **Bypass for network** checkbox bypasses the service worker and forces the browser to go to the network for requested resources.
+
 *   The **Update** button performs a one-time update of the specified service worker.
+
 *   The **Push** button emulates a push notification without a payload (also known as a **tickle**).
+
 *   The **Sync** button emulates a background sync event.
+
 *   The **Unregister** button unregisters the specified service worker.  Check out [Clear storage](#clear-storage) for a way to unregister a service worker and wipe storage and caches with a single button choose.
+
 *   The **Source** line tells you when the currently running service worker was installed.  The link is the name of the source file of the service worker.  Choosing on the link sends you to the source of the service worker.
+
 *   The **Status** line tells you the status of the service worker.  The ID number next to the green status indicator (`#36` in previous figure) is for the currently active Service Worker.  Next to the status, a **start** button (if the service worker is stopped) or a **stop** button (if the service worker is running) is displayed.  Service workers are designed to be stopped and started by the browser at any time.  Explicitly stopping your service worker using the **stop** button may simulate that.  Stopping your service worker is a great way to test how your code behaves when the service worker starts back up again.  It frequently reveals bugs due to faulty assumptions about persistent global state.
+
 *   The **Clients** line tells you the origin that the service worker is scoped to.  The **focus** button is mostly useful when you've enabled the **show all** checkbox.  When that checkbox is enabled, all registered service workers are listed.  If you choose on the **focus** button next to a service worker that is running in a different tab, Microsoft Edge focuses on that tab.
 
 If the service worker causes any errors, a new label called **Errors** shows
 up.
 
 <!--
-:::image type="complex" source="../media/sw-error.msft.png" alt-text="Service worker with errors" lightbox="../media/sw-error.msft.png":::
+:::image type="complex" source="../media/sw-error.msft.png" alt-text="Service worker with errors." lightbox="../media/sw-error.msft.png":::
    Service worker with errors
 :::image-end:::
 -->
@@ -141,7 +150,7 @@ up.
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache).
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane" lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane." lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
    The **Cache Storage** Pane
 :::image-end:::
 
@@ -150,7 +159,7 @@ The **Cache Storage** pane provides a read-only list of resources that have been
 
 If you have two or more caches open, the caches display under the following **Cache Storage** dropdown.
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown" lightbox="../media/cache-pane-cache-storage.msft.png":::
+:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown." lightbox="../media/cache-pane-cache-storage.msft.png":::
    The **Cache Storage** dropdown
 :::image-end:::
 
@@ -204,5 +213,5 @@ Related Guides:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/progressive-web-apps) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
