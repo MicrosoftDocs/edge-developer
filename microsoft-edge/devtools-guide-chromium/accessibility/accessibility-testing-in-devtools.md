@@ -86,11 +86,14 @@ By making the browser window narrow and using the arrow keys to scroll the page,
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 
 *  Without resizing the browser window, resize the page and test whether your [CSS media queries](../device-mode/index.md#show-media-queries) trigger a change in layout.
-*  Check for dependencies that use a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work.
+
+*  Check for dependencies that use a mouse. By default, **Device Emulation** assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work.
+
 *  Do visual testing by simulating different devices, zoom levels, and pixel ratios.
+
 *  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
 
-To learn more about the **Device Emulation** tool, see [Emulate mobile devices](../device-mode/index.md).
+To learn more about the **Device Emulation** tool, see [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
@@ -411,7 +414,7 @@ For detailed walkthrough steps, see [Verify that a page is usable with UI animat
 <!-- ====================================================================== -->
 ## What to do next?
 
-We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features in DevTools](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
+We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
 
 None of these tools can replace a proper round of testing your products with people that use assistive technologies and following a plan to check for all the required tests. You can also use the [Assessments](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/) feature of [Accessibility Insights](https://accessibilityinsights.io).  You may need to perform additional checks such as:
 

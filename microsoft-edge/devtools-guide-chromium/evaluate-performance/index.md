@@ -1,6 +1,6 @@
 ---
-title: Get started with analyzing Runtime performance
-description: How to evaluate runtime performance in Microsoft Edge DevTools.
+title: Get started analyzing runtime performance
+description: Tutorial about how to evaluate runtime performance in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -20,7 +20,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Get started with analyzing Runtime performance
+# Get started analyzing runtime performance
 
 > [!NOTE]
 > To learn how to make your pages load faster, see [Optimize website speed](../speed/get-started.md).

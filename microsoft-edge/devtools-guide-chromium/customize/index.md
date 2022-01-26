@@ -1,5 +1,5 @@
 ---
-title: Customize Microsoft Edge DevTools
+title: Customize DevTools
 description: A list of ways to customize Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,7 +20,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Customize Microsoft Edge DevTools
+# Customize DevTools
 
 This page lists the ways to customize Microsoft Edge DevTools.
 
@@ -108,7 +108,7 @@ Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)](.
 <!-- ====================================================================== -->
 ## Color themes
 
-Navigate to [Apply color themes to DevTools](./theme.md).
+See [Apply a color theme to DevTools](./theme.md).
 
 :::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme." lightbox="./media/customize-theme-setting.png":::
    Selecting a different color theme

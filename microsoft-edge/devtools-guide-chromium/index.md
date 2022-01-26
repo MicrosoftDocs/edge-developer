@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge Developer Tools overview
+title: Overview of DevTools
 description: Get to know the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,9 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 09/23/2021
 ---
-# Microsoft Edge Developer Tools overview
+# Overview of DevTools
+
+<!-- probably needs cleanup of some dup sections.  this branch did extensive work like changing bullet list to sections, then merged Main which had tweaks of older design. favor this branch.  esp sections of main toolbar: added h3 for each item on toolbar; favor that design, remove dup from main -->
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects.  The Developer Tools that are shipped with Microsoft Edge are partly based on the tools in the Chromium open-source project, so you may already be familiar with some of these tools.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
 
@@ -56,15 +58,174 @@ There are two main ways to interact with DevTools:
 *  Use the mouse.
 *  Keyboard shortcuts.  These provide a quick way to access functionality, and are needed for accessibility.  Various tools are increasingly accessible through the keyboard and assistive technologies such as screen readers.  See [Keyboard shortcuts](./shortcuts/index.md).
 
-See also [Open Microsoft Edge DevTools](./open/index.md) - how to open the different features in DevTools.
+See also [Open DevTools](./open/index.md) - how to open the different features in DevTools.
 
 
 <!-- ====================================================================== -->
-<!-- ## Tools in DevTools -->
-<!-- pending PR 1504, which adds destination articles -->
-<!-- Tools are also called panels.  Most tools have a tab on the toolbar.
+## Changing where DevTools is docked in the browser
 
-| Tool | Purpose | Article |
+To change where DevTools is placed within the browser window:
+
+*  Click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, and then in the **Dock side** section, select a layout option.
+
+![Screenshot of the Dock side menu in DevTools.](media/devtools-intro-docking-menu.msft.png)
+
+**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [Emulate mobile devices (Device Emulation)](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
+
+**Dock to right** is the default placement of DevTools:
+
+![Screenshot of DevTools docked to the right.](media/devtools-intro-docking-right.msft.png)
+
+**Dock to left** is another side-by-side option:
+
+![Screenshot of DevTools docked to the left.](media/devtools-intro-docking-left.msft.png)
+
+**Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**:
+
+![Screenshot of DevTools docked to the bottom.](media/devtools-intro-docking-bottom.msft.png)
+
+**Undock into separate window** helps you work with several monitors or if you need to work on a full-screen app:
+
+![Screenshot of DevTools undocked into a separate window.](media/devtools-intro-docking-own-window.msft.png)
+
+See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](customize/placement.md).
+
+
+<!-- ====================================================================== -->
+## The main tools on the toolbar
+
+DevTools give you an amazing amount of power to inspect, debug, and change the web product currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
+
+DevTools also allows you to change web-based third-party products on your computer.
+
+There are two toolbars: the main toolbar at the top of DevTools, and the **Drawer** at the bottom if you select `Esc`.  The main toolbar normally has the following tabs (or tools, or panels):
+
+*  **Welcome**.  Includes information about the new features of DevTools, how to contact the team, and provides information about certain features.  This tool is placed first.
+
+Next, the following tools are always present on the toolbar and cannot be closed:
+
+*  **Elements**.  Allows you to edit or inspect HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
+
+*  [Console](console/index.md).  Allows you to display and filter log messages.  Log messages are automated logs of the browser like network requests and developer-generated logs.  You can also run JavaScript directly in the **Console** in the context of the current window or frame.
+
+*  [Sources](./sources/index.md).  A code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
+
+*  [Network](./network/index.md).  Allows you to monitor and inspect requests or responses from the network and browser cache.  You can filter requests and responses to fit your needs and simulate different network conditions.
+
+Finally, these more specialized tools are on the toolbar by default:
+* **Performance**
+* **Memory**
+* **Application**
+* **Security**
+* **Lighthouse**
+* **CSS Overview**
+
+
+### Tool, tab, or panel
+
+Often the words "tool", "tab", or "panel" can be used interchangeably.  In the Command Menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.  There's a **More Tools** (**+**) button and list, and there's a **More tabs** button on the toolbar, both of which are used to select tools, which are also called _panels_.
+
+
+### Sections of the main toolbar
+
+The main toolbar in DevTools has the following sections:
+
+![Annotated screenshot of the menu bar of DevTools, with labels that identify the items on the toolbar.](media/devtools-intro-menu-bar.msft.png)
+
+*  The **Inspect tool**.
+*  The **Device Emulation** tool.
+*  Tabs for each open tool.  By default, these are Welcome, Elements, Console, Sources, Network, Performance, and several more.
+*  The **More tabs** (`>>`) button.
+*  The **More Tools** (**+**) button.
+*  The **JavaScript errors** counter.
+*  The **Issues** counter.
+*  The **Settings** button.
+*  The **Send feedback** button.
+*  The **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button.
+*  The **Close** (`X`) button to close DevTools.
+
+
+<!-- might need to remove some dup content merged in from main, merged into the redesign in this branch: -->
+
+
+#### Inspect tool
+
+When you select the **Inspect** tool, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, along with a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
+
+![The Inspect tool while hovering over with the first headline of this article.](media/devtools-intro-inspect-tool.msft.png)
+
+
+#### Device Emulation
+
+The **Device Emulation** tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
+
+![DevTools display of this article in an emulated mobile phone.](media/devtools-intro-device-emulation.msft.png)
+
+See [Emulate mobile devices (Device Emulation)](device-mode\index.md).
+
+
+*  The main toolbar contains tabs for tools that are used in various scenarios.  You can customize each of the tools, and the content of a tool can change based on the context.  To show a tool that is on a tab that's hidden, select the **More tabs** (`>>`) button.   To add a tool to the main toolbar or to the drawer's toolbar, select the **More tools** (**+**) button.  Each tool is introduced below.
+
+*  Next to the Tools tab group are optional error and issues shortcuts.  The shortcuts display when JavaScript errors or issues occur on the current webpage.  The **Open Console to view # errors, # warnings** (**JavaScript Errors**) button displays a red circle with an `X`, followed by the number of JavaScript errors.  To open the [Console](console/index.md) and learn about the error, select the **JavaScript Errors** button.  The **Open Issues to view # issues** (**Issues**) button is a blue message icon followed by the number of issues.  To open the [Issues](./issues/index.md) tool, select the **Issues** button.
+
+*  The **Settings** button displays a gear icon.  To open DevTools **Settings** webpage, select the **Settings** button.  The **Settings** webpage displays a menu to change **Preferences**, turn on **Experiments**, and much more.
+
+*  The **Send Feedback** button displays a torso with a chat bubble next to it.  To open the **Send Feedback** dialog, select the **Send Feedback** button.  The **Send Feedback** dialog allows you to enter information to describe what happened and automatically includes a screenshot.  Use **Send Feedback** to connect with DevTools team to report problems, issues, or suggest ideas.
+
+*  The **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button opens a dropdown menu that enables you to define where to dock DevTools, search, open different tools, and more.
+
+
+<!-- ====================================================================== -->
+## List of all the tools
+
+There are default tools (panels with tabs on a toolbar), some tools that aren't a panel with a tab on the toolbar, and some optional tools that you can open on a toolbar (as tabs).
+
+<!-- todo: tableize, with 1 link per tool.  ok to leave cells blank after 50% of cells in column 2 & 3 are filled in -->
+
+### Default tools
+
+* Welcome
+* Elements
+* Console
+* Sources
+* Network
+* Performance
+* Memory
+* Application
+* Security
+* Lighthouse
+* CSS Overview
+
+### Non-tab tools
+
+* Inspect tool
+* Device Emulation
+* Command Menu
+
+### Non-default tools
+
+* 3D View
+* Animations
+* Changes
+* Coverage
+* Detached Elements
+* Developer Resources
+* Issues
+* JavaScript Profiler
+* Layers
+* Media
+* Memory Inspector
+* Network conditions
+* Network request blocking
+* Performance monitor
+* Quick source
+* Rendering
+* Search
+* Sensors
+* WebAudio
+* WebAuthn
+ 
+<!-- | Tool | Purpose | Article |
 |---|---|---|
 | Welcome |  |  |
 | Elements |  |  |
@@ -96,95 +257,36 @@ See also [Open Microsoft Edge DevTools](./open/index.md) - how to open the diffe
 | WebAudio |  |  |
 | WebAuthn |  |  |
 | Inspect |  |  | -->
- 
-
-<!-- ====================================================================== -->
-## Changing where DevTools is docked in the browser
-
-To change where DevTools is placed within the browser window:
-
-*  Click the **Customize and control DevTools** (`...`) button, and then in the **Dock side** section, select a layout option.
-
-![Screenshot of the Dock side menu in DevTools.](media/devtools-intro-docking-menu.msft.png)
-
-**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [emulate mobile devices](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
-
-**Dock to right** is the default placement of DevTools:
-
-![Screenshot of DevTools docked to the right.](media/devtools-intro-docking-right.msft.png)
-
-**Dock to left** is another side-by-side option:
-
-![Screenshot of DevTools docked to the left.](media/devtools-intro-docking-left.msft.png)
-
-**Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**:
-
-![Screenshot of DevTools docked to the bottom.](media/devtools-intro-docking-bottom.msft.png)
-
-**Undock into separate window** helps you work with several monitors or if you need to work on a full-screen app:
-
-![Screenshot of DevTools undocked into a separate window.](media/devtools-intro-docking-own-window.msft.png)
-
-See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](customize/placement.md).
 
 
 <!-- ====================================================================== -->
-## The main tools on the toolbar
+## About Panel and Drawer tools
 
-DevTools give you an amazing amount of power to inspect, debug, and change the web product currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
+The tools that are listed in the **More Tools** (**+**) can be displayed either as a Panel tool (on the main toolbar) or a Drawer tool (on the Drawer toolbar).  In the **Command Menu**, each of these tools is labelled as either a **Panel** tool or as a **Drawer** tool.  But you can add them to either the main toolbar or the Drawer toolbar, and you can use any of the following methods to open them or move them between the two toolbars.
 
-DevTools also allows you to change web-based third-party products on your computer.
+Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer tools.  A **More Tools** menu appears in multiple places:
 
+*  In the upper right of DevTools, on the main toolbar, click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, hover over the **More tools** command, and then select a tool.
 
-### Main tools (tabs) on the toolbar
+*  On the main toolbar at the top of DevTools (where _Panel_ tools usually go).
 
-There are two toolbars: the main toolbar at the top of DevTools, and the **Drawer** at the bottom if you select `Esc`.  The main toolbar normally has the following tabs (or tools, or panels):
-
-*  **Welcome**.  Includes information about the new features of DevTools, how to contact the team, and provides information about certain features.  This tool is placed first.
-
-Next, the following tools are always present on the toolbar and cannot be closed:
-
-*  **Elements**.  Allows you to edit or inspect HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
-
-*  [Console](console/index.md).  Allows you to display and filter log messages.  Log messages are automated logs of the browser like network requests and developer-generated logs.  You can also run JavaScript directly in the **Console** in the context of the current window or frame.
-
-*  [Sources](./sources/index.md).  A code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
-
-*  [Network](./network/index.md).  Allows you to monitor and inspect requests or responses from the network and browser cache.  You can filter requests and responses to fit your needs and simulate different network conditions.
-
-Finally, these more specialized tools (tabs) are on the toolbar by default:
-* **Performance**
-* **Memory**
-* **Application**
-* **Security**
-* **Lighthouse**
+*  On the **Drawer** toolbar (where _Drawer_ tools usually go).
 
 
-### Tool, tab, or panel
+| Task | Steps |
+| --- | --- |
+| Open a tool on the main toolbar at the top of DevTools | On the main toolbar at the top of DevTools, click **More Tools** (**+**) and then select a tool. |
+| Open a tool on the Drawer toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, click **More Tools** (**+**) and then select a tool. |
+| Move a tool from the Drawer toolbar to the main Toolbar | When DevTools has focus, press **Esc** to show the Drawer.  On the Drawer toolbar, right-click the tool's tab, and then select **Move to top**. |
+| Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
+| Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type the name of the tool, and then select the tool. |
 
-Often the words "tool", "tab", or "panel" can be used interchangeably.  In the Command Menu, the tools are called _panels_; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.  There's a **More Tools** button and list, and there's a **More tabs** button on the toolbar, both of which are used to select tools, which are also called _panels_.
+For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Overview of DevTools](index.md).
 
-
-### Sections of the toolbar
-
-The main toolbar in DevTools has the following sections:
-
-![The menu bar of DevTools with labels that explain the different sections.  In order: Inspect tool, Device Emulation tool, Tools tab group, JavaScript errors, Issues, Settings, Feedback, Customize, and Close.](media/devtools-intro-menu-bar.msft.png)
-
-
-#### Inspect tool
-
-When you select the **Inspect** tool, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, and a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
-
-![The Inspect tool while hovering over with the first headline of this article.](media/devtools-intro-inspect-tool.msft.png)
-
-
-#### Device Emulation
-
-The [Device Emulation](device-mode/index.md) tool displays the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
-
-![DevTools display of this article in an emulated mobile phone.](media/devtools-intro-device-emulation.msft.png)
-
+In addition to Panel tools and Drawer tools, DevTools includes the following tools:
+*  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
+*  The **Device Emulator**.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
+*  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
 
 #### Tool tabs
 
@@ -194,6 +296,9 @@ The main toolbar contains tabs for tools that are used in various scenarios.  Yo
 
 <!-- differentiate Errors vs Issues -->
 #### Errors icon button
+
+
+<!-- the next few sections are added by a redesign in this branch; merging from main might have added shorter dup section(s) to remove: -->
 
 Next to the Tools tab group, an **Errors** icon button appears when there are JavaScript _errors_ on the current webpage.
 
@@ -236,15 +341,20 @@ The **Customize and control DevTools** (`...`) button opens a dropdown menu.  It
 
 DevTools provides lots of features and functionality to use with your web product.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
 
+![Screenshot of the Command Menu in DevTools.](media/devtools-intro-command-menu.msft.png)
+
 In the Command Menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
 To open the Command Menu, do either of the following:
-*   Click **Customize and control DevTools** (`...`), and then select **Run command**.
-*   Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
 
-![Screenshot of the Command Menu in DevTools.](media/devtools-intro-command-menu.msft.png)
+*  Click the **Customize and control DevTools** (![Customize and control DevTools](media/customize-and-control-devtools-icon-light-mode.png)) button, and then select **Run command**.
 
-The Command Menu allows you to type commands to display, hide, or run features in DevTools.  With the Command Menu open, enter the word **changes**, and then select **Drawer: Show Changes**.  The **Changes** tool opens, which is useful when you edit CSS.  In this case, the Command Menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
+*  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+
+
+The Command Menu allows you to type commands to display, hide, or run features in DevTools.  With the Command Menu open, enter the word **changes**, and then select **Drawer: Show Changes**.
+
+The **Changes** tool opens, which is useful when you edit CSS.  In this case, the Command Menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
 
 After you type `changes`, the Command Menu displays the options:
 
@@ -271,7 +381,7 @@ In the **Preferences** section, you can change several parts of DevTools.  For e
 You can also change the settings of advanced features, such as:
 *   Add local files to a [Workspace](./workspaces/index.md).
 *   Filter library code with the **Ignore List**.
-*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices](device-mode/index.md).
+*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *   Select a network **Throttling** profile.
 *   Define simulated **Locations**.
 *   Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
@@ -290,7 +400,7 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 <!-- ====================================================================== -->
 ## See also
 
-*   [DevTools for beginners: Get Started with HTML and the DOM](beginners/html.md)
+*   [Get started with HTML and the DOM](beginners/html.md)
 *   [Inspect and change the current webpage](dom/index.md)
 *   [Emulate how your product behaves on different devices](device-mode/index.md)
 *   [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)

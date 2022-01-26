@@ -1,5 +1,5 @@
 ---
-title: Get started with viewing and changing the DOM
+title: Get started viewing and changing the DOM
 description: How to view nodes, search for nodes, edit nodes, reference nodes in the Console, break on node changes, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,7 +20,7 @@ ms.date: 06/29/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Get started with viewing and changing the DOM
+# Get started viewing and changing the DOM
 
 Follow these interactive tutorials to learn the basics of viewing and changing the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) of a page using Microsoft Edge DevTools.
 
@@ -60,7 +60,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
 1. Under **Inspect a Node**, click the **Tokyo** text.  Now, `<li>Tokyo</li>` is highlighted in the DOM Tree.
 
-Inspecting a node is also the first step towards viewing and changing the styles of a node.  See [Get Started With Viewing And Changing CSS](../css/index.md).
+Inspecting a node is also the first step towards viewing and changing the styles of a node.  See [Get started viewing and changing CSS](../css/index.md).
 
 ### Navigate the DOM Tree with a keyboard
 

@@ -80,7 +80,7 @@ Previously, you couldn't navigate to the **More Tools** (`+`) button in DevTools
 
 Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the **More Tools** button can be selected by using the arrow keys, when focus is on the toolbar.
 
-To learn more about how to navigate the DevTools with the keyboard, see [Keyboard shortcuts](../../../shortcuts/index.md).
+To learn more about how to navigate DevTools with a keyboard, see [Keyboard shortcuts](../../../shortcuts/index.md).
 
 :::image type="complex" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="Using the arrow keys to put focus on the **More tabs** or **More Tools** button" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
    Using the arrow keys to put focus on the **More tabs** or **More Tools** button

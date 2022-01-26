@@ -224,7 +224,7 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
 
 ### New CSS angle visualization tools
 
-DevTools now have better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, click the clock icon.  To change the angle, click anywhere in the clock or drag the needle.  To change the angle value, you can also use mouse and keyboard shortcuts.  To learn more, see [Change angle value with the Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock).  To view real-time updates on this feature in the Chromium open-source project, see Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
+DevTools now has better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, click the clock icon.  To change the angle, click anywhere in the clock, drag the needle, or use mouse and keyboard shortcuts.  To learn more, see [Change angle value with the Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock).  For updates on this feature in the Chromium open-source project, see Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
 
 The following CSS angle is used for the example:
 
@@ -244,7 +244,7 @@ You may now override storage quota size in the **Storage** pane.  This feature a
 1.  Turn on the **Simulate custom storage quota** checkbox.
 1.  Enter a valid number.
 
-For more information about how to emulate mobile devices and other features in the DevTools, see [Emulate mobile devices](../../../device-mode/index.md).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
+For more information about how to emulate mobile devices, and about other DevTools features, see [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md).  To see updates on this feature in the Chromium open-source project, see Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
 :::image type="complex" source="../../media/2020/11/storage-quota.msft.png" alt-text="Simulate storage quota size." lightbox="../../media/2020/11/storage-quota.msft.png":::
    Simulate storage quota size

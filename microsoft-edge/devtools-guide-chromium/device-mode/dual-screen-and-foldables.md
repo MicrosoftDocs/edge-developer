@@ -1,5 +1,5 @@
 ---
-title: Emulate dual-screen and foldable devices in Microsoft Edge DevTools
+title: Emulate dual-screen and foldable devices
 description: Use virtual devices in Microsoft Edge to enhance your website for dual-screen and foldable devices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/04/2021
 ---
-# Emulate dual-screen and foldable devices in Microsoft Edge DevTools
+# Emulate dual-screen and foldable devices
 
 You can emulate the following dual-screen and foldable devices in Microsoft Edge DevTools.
 
