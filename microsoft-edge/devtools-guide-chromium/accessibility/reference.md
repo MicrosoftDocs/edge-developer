@@ -1,5 +1,5 @@
 ---
-title: Accessibility-testing features in DevTools
+title: Accessibility-testing features
 description: Webpage accessibility aspects to test, and the corresponding features in Microsoft DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
 ---
-# Accessibility-testing features in DevTools
+# Accessibility-testing features
 
 To test your webpages for accessibility, first make a checklist of accessibility aspects to test, and then use the relevant DevTools features to check each aspect.
 
@@ -69,14 +69,14 @@ To test your webpages for accessibility, first make a checklist of accessibility
 
 | Accessibility aspect to check | Feature of DevTools | Article or subheading |
 |---|---|---|
-| Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow), and [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md) |
+| Verify that the webpage layout is usable when narrow | **Device Emulation** tool | [Verify that the webpage layout is usable when narrow](accessibility-testing-in-devtools.md#verify-that-the-webpage-layout-is-usable-when-narrow), and [Emulate mobile devices (Device Emulation)](../device-mode/index.md) |
 
 
 <!-- ====================================================================== -->
 ## See also
 
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)
-*  [Navigate Microsoft Edge DevTools with assistive technology](navigation.md)
+*  [Navigate DevTools with assistive technology](navigation.md)
 *  [Accessibility testing](../../accessibility/test.md)
 *  [Accessibility principles and best practices](https://developer.mozilla.org/docs/Web/Accessibility)
 *  [Screen reader](https://developer.mozilla.org/docs/Glossary/Screen_reader)

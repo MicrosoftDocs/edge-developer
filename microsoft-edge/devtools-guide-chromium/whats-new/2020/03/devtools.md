@@ -46,7 +46,7 @@ The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/app
 
 There are tons of settings for the DevTools that you are able to customize to make the DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings](../../../customize/index.md#settings) in the DevTools is now much easier.  Open Settings with the gear icon next to Console alerts and the main menu.
 
-:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="The gear icon opens Settings in the DevTools" lightbox="../../media/2020/03/settings.msft.png":::
+:::image type="complex" source="../../media/2020/03/settings.msft.png" alt-text="The gear icon opens Settings in the DevTools." lightbox="../../media/2020/03/settings.msft.png":::
    The gear icon opens **Settings** in the DevTools
 :::image-end:::
 
@@ -62,7 +62,7 @@ Chromium issue [#1050855](https://crbug.com/1050855)
 
 Informational notification bars (infobars) in DevTools now have an improved look and more functionality. In Microsoft Edge 83, infobars are easier to read and provide buttons so you are able to take the relevant action right away.
 
-:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Infobar for pretty-printing a minified file in Microsoft Edge 83" lightbox="../../media/2020/03/infobar.msft.png":::
+:::image type="complex" source="../../media/2020/03/infobar.msft.png" alt-text="Infobar for pretty-printing a minified file in Microsoft Edge 83." lightbox="../../media/2020/03/infobar.msft.png":::
    Infobar for pretty-printing a minified file in Microsoft Edge Version 83
 :::image-end:::
 
@@ -72,7 +72,7 @@ Chromium issue [#1056348](https://crbug.com/1056348)
 
 The [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) is a GUI in the [Elements panel](../../../css/index.md) for changing `color` and `background-color` declarations.  In previous versions of Microsoft Edge, you were not able to navigate the **Shades** section of the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) with the keyboard.
 
-:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="You are now able to use your keyboard to move the selector in the Shades section of the Color Picker" lightbox="../../media/2020/03/color-picker.msft.png":::
+:::image type="complex" source="../../media/2020/03/color-picker.msft.png" alt-text="You are now able to use your keyboard to move the selector in the Shades section of the Color Picker." lightbox="../../media/2020/03/color-picker.msft.png":::
    You are now able to use your keyboard to move the selector in the **Shades** section of the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker)
 :::image-end:::
 
@@ -122,7 +122,7 @@ The following sections announce additional features available in Microsoft Edge 
 
 Open the [Rendering tab](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) and use the new **Emulate vision deficiencies** feature to get a better idea of how people with different types of vision deficiencies experience your site.
 
-:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulating blurred vision" lightbox="../../media/2020/03/vision.msft.png":::
+:::image type="complex" source="../../media/2020/03/vision.msft.png" alt-text="Emulating blurred vision." lightbox="../../media/2020/03/vision.msft.png":::
    Emulating blurred vision
 :::image-end:::
 
@@ -156,7 +156,7 @@ Emulate locales by setting a location in **Sensors** > **Location**. [Open the *
 > [!NOTE]
 > Updates to `navigator.language` and `navigator.languages` are not visible immediately, but only after the next navigation or page refresh.  Changes to the `Accept-Language` HTTP header are only reflected for subsequent requests.
 
-:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emulating a locale" lightbox="../../media/2020/03/locale.msft.png":::
+:::image type="complex" source="../../media/2020/03/locale.msft.png" alt-text="Emulating a locale." lightbox="../../media/2020/03/locale.msft.png":::
    Emulating a locale
 :::image-end:::
 
@@ -176,7 +176,7 @@ The **Status** column now provides a quick explanation of why a request was bloc
 
 The **Response Headers** section of the **Headers** tab provides more guidance on how to resolve the issues:
 
-:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="More guidance in the Response Headers section" lightbox="../../media/2020/03/guidance.msft.png":::
+:::image type="complex" source="../../media/2020/03/guidance.msft.png" alt-text="More guidance in the Response Headers section." lightbox="../../media/2020/03/guidance.msft.png":::
    More guidance in the **Response Headers** section
 :::image-end:::
 
@@ -188,9 +188,9 @@ Chromium issue [#1051466](https://crbug.com/1051466)
 
 The Sources panel has new icons for breakpoints, conditional breakpoints, and logpoints:
 
-*   Breakpoints (![Breakpoint](../../media/2020/03/breakpoint.msft.png)) are represented by red circles.
-*   Conditional Breakpoints (![Conditional Breakpoint](../../media/2020/03/conditional.msft.png)) are represented by half-red half-white circles.
-*   Logpoints (![Logpoint](../../media/2020/03/logpoint.msft.png)) are represented by red circles with Console icons.
+*   Breakpoints (![Breakpoint.](../../media/2020/03/breakpoint.msft.png)) are represented by red circles.
+*   Conditional Breakpoints (![Conditional Breakpoint.](../../media/2020/03/conditional.msft.png)) are represented by half-red half-white circles.
+*   Logpoints (![Logpoint.](../../media/2020/03/logpoint.msft.png)) are represented by red circles with Console icons.
 
 The motivation for the new icons was to make the UI more consistent with other GUI debugging tools (which usually color breakpoints red) and to make it easier to distinguish between the 3 features at a glance.
 
@@ -207,7 +207,7 @@ like `cookie-path`.
 
 Open the [Command Menu](../../../command-menu/index.md) and run the `Dock to left` command to move DevTools to the left of your viewport.
 
-:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools docked to the left of the viewport" lightbox="../../media/2020/03/dock-to-left.msft.png":::
+:::image type="complex" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools docked to the left of the viewport." lightbox="../../media/2020/03/dock-to-left.msft.png":::
    DevTools docked to the left of the viewport
 :::image-end:::
 
@@ -222,7 +222,7 @@ Chromium issue [#1011679](https://crbug.com/1011679)
 
 The DevTools team frequently got feedback from web developers that while it was possible to run [Lighthouse](https://github.com/GoogleChrome/lighthouse) from DevTools, when they tried it out they were not able to find the "Lighthouse" panel, so the **Audits** panel is now the **Lighthouse** panel.
 
-:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="The Lighthouse panel" lightbox="../../media/2020/03/lighthouse.msft.png":::
+:::image type="complex" source="../../media/2020/03/lighthouse.msft.png" alt-text="The Lighthouse panel." lightbox="../../media/2020/03/lighthouse.msft.png":::
    The Lighthouse panel
 :::image-end:::
 
@@ -233,7 +233,7 @@ The DevTools team frequently got feedback from web developers that while it was 
 
 After setting up **Local Overrides** you may hover on a directory, open the contextual menu (right-click), and choose the new **Delete all overrides** option to delete all Local Overrides in that folder.
 
-:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Delete all overrides" lightbox="../../media/2020/03/overrides.msft.png":::
+:::image type="complex" source="../../media/2020/03/overrides.msft.png" alt-text="Delete all overrides." lightbox="../../media/2020/03/overrides.msft.png":::
    Delete all overrides
 :::image-end:::
 
@@ -247,7 +247,7 @@ A **Long Task** is JavaScript code that monopolizes the main thread for a long t
 
 You have been able to [visualize Long Tasks in the Performance panel](../../../evaluate-performance/reference.md#view-main-thread-activity) for a while now, but in Microsoft Edge 83 the Long Task visualization UI in the Performance panel has been updated.  The Long Task portion of a task is now colored with a striped red background.
 
-:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="The new Long Task UI" lightbox="../../media/2020/03/long-task.msft.png":::
+:::image type="complex" source="../../media/2020/03/long-task.msft.png" alt-text="The new Long Task UI." lightbox="../../media/2020/03/long-task.msft.png":::
    The new Long Task UI
 :::image-end:::
 
@@ -263,7 +263,7 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 
 <!-- Check out [Are my current icons ready?] to learn more.  -->
 
-:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Show only the minimum safe area for maskable icons checkbox" lightbox="../../media/2020/03/maskable-icons.msft.png":::
+:::image type="complex" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Show only the minimum safe area for maskable icons checkbox." lightbox="../../media/2020/03/maskable-icons.msft.png":::
    The **Show only the minimum safe area for maskable icons** checkbox
 :::image-end:::
 
@@ -282,5 +282,5 @@ If you are on Windows or macOS, consider using the [Microsoft Edge preview chann
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-83) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

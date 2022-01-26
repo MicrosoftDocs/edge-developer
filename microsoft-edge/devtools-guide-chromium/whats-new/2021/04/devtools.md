@@ -43,11 +43,11 @@ To open the **Issues** tool and learn more about the issue and how to fix it, co
 
 Selecting the underlined error in the **Elements** tool:
 
-:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="Selecting the underlined error in the Elements tool" lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues.msft.png" alt-text="Selecting the underlined error in the Elements tool." lightbox="../../media/2021/04/elements-iframe-highlight-issues.msft.png":::
 
 Displaying error details in the **Issues** tool:
 
-:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png" alt-text="Displaying error details in the Issues tool" lightbox="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png" alt-text="Displaying error details in the Issues tool." lightbox="../../media/2021/04/elements-iframe-highlight-issues-focus.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#gr
 
 To display more information about how to use the DevTools, turn on Tooltips, and then hover on each outlined region of the DevTools.
 
-:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="Hover on anywhere in the highlighted region of the Issues tool to display more details" lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png" alt-text="Hover on anywhere in the highlighted region of the Issues tool to display more details." lightbox="../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png":::
    Hover on anywhere in the highlighted region of the **Issues** tool to display more details
 :::image-end:::
 
@@ -87,7 +87,7 @@ In Microsoft Edge version 91 or later, if you're a Progressive Web App or Servic
 *   **Wait**
 *   **Activate**
 
-:::image type="complex" source="../../media/2021/04/application-service-workers-update-cycle-version-73-focus.msft.png" alt-text="Review the Timeline in the Update Cycle for your Service Worker" lightbox="../../media/2021/04/application-service-workers-update-cycle-version-73-focus.msft.png":::
+:::image type="complex" source="../../media/2021/04/application-service-workers-update-cycle-version-73-focus.msft.png" alt-text="Review the Timeline in the Update Cycle for your Service Worker." lightbox="../../media/2021/04/application-service-workers-update-cycle-version-73-focus.msft.png":::
    Review the **Timeline** in the **Update Cycle** for your Service Worker
 :::image-end:::
 
@@ -125,7 +125,7 @@ To review errors and warnings in your Web App Manifest, navigate to the **Applic
 
 Starting in [Microsoft Edge version 81](../../2020/01/devtools.md#using-the-devtools-in-other-languages), Microsoft Edge DevTools displays in your own language.  Many developers use other developer tools like StackOverflow and Visual Studio Code in their native language, not just in English.  The Microsoft Edge DevTools team, Chrome DevTools team, and the Google Lighthouse team collaborated to provide the same experience in all Chromium-based browsers.  For more information about how to use DevTools in your language, navigate to [Change DevTools language settings](../../../customize/localization.md).  For more information about the collaboration on this feature in the Chromium open-source project, navigate to [1136655](https://crbug.com/1136655).
 
-:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge browser and DevTools set to Japanese" lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
+:::image type="complex" source="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png" alt-text="Microsoft Edge browser and DevTools set to Japanese." lightbox="../../media/2021/04/japanese-browser-japanese-navigation-elements-3d-view.msft.png":::
    Microsoft Edge browser and DevTools set to Japanese
 :::image-end:::
 
@@ -138,7 +138,7 @@ Starting in [Microsoft Edge version 81](../../2020/01/devtools.md#using-the-devt
 
 Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you may use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then select `Enter`.  For more information about CSS variables, navigate to [Using CSS custom properties (variables)](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties).  To review real-time updates on this feature in the Chromium open-source project, navigate to Issue [1187735](https://crbug.com/1187735).
 
-:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="The --theme-body-background CSS variable highlighted in the Styles pane" lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="The --theme-body-background CSS variable highlighted in the Styles pane." lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
    The `--theme-body-background` CSS variable highlighted in the **Styles** pane
 :::image-end:::
 
@@ -151,7 +151,7 @@ Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-d
 
 The **Issues** tool displays recommendations to improve your website, including accessibility, performance, security, and so on. Based on your feedback, issues are now automatically sorted by severity.  In each feedback category, each issue marked as an **Error** appears first, followed each issue marked as a **Warning**, then each issue marked as a **Tip**.  To help you refine your issues, extra filter options are planned for a future update.  For more information about how to review issues, navigate to [Find and fix problems using the Issues tool](../../../issues/index.md).
 
-:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="The Issues tool displays sorted issues by severity" lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-issues-ordered-issues.msft.png" alt-text="The Issues tool displays sorted issues by severity." lightbox="../../media/2021/04/elements-issues-ordered-issues.msft.png":::
    The **Issues** tool displays sorted issues by severity
 :::image-end:::
 
@@ -181,7 +181,7 @@ To manually update to version 1.1.7, navigate to [Update an extension manually](
 
 You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Choose the badge to turn on (or off) the display of a scroll-snap overlay on the webpage.  To review an example webpage, navigate to [Scroll Snap Demo](https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html).  In the example, dots display on snap edges.  The scroll port has a solid outline while the snap items have dash outlines.  The scroll padding is filled in green while the scroll margin is filled in orange.  To review the history of this feature in the Chromium open-source project, navigate to Issue [862450](https://crbug.com/862450).
 
-:::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap" lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap." lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap
 :::image-end:::
 
@@ -191,7 +191,7 @@ Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript 
 
 To learn more about debugging in the **Sources** tool, navigate to [Using the Debugger pane to debug JavaScript code](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1166577](https://crbug.com/1166577).
 
-:::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Memory Inspector tool" lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png" alt-text="Memory Inspector tool." lightbox="../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png":::
    **Memory inspector** tool
 :::image-end:::
 
@@ -207,7 +207,7 @@ To display (or hide) the badges, choose (or remove) the checkbox next to the bad
 
 <!--  To review the history of this feature in the Chromium open-source project, navigate to Issue [1066772](https://crbug.com/1066772).  -->
 
-:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="Badge settings pane in the Elements tool" lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png" alt-text="Badge settings pane in the Elements tool." lightbox="../../media/2021/04/elements-contextual-menu-badge-settings.msft.png":::
    **Badge settings** pane in the **Elements** tool
 :::image-end:::
 
@@ -225,11 +225,11 @@ The  information helps you better understand your images and apply optimization.
 
 In the **Elements** tool, image preview now displays more information about the image, including aspect ratio:
 
-:::image type="content" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="Image preview with aspect ratio information in the Element tool" lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
+:::image type="content" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="Image preview with aspect ratio information in the Element tool." lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
 
 Also, the image aspect ratio information is available in the **Network** tool, when you choose an image preview:
 
-:::image type="content" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="Image aspect ratio information in the Network tool" lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
+:::image type="content" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="Image aspect ratio information in the Network tool." lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
 
 To review the history of this feature in the Chromium open-source project, navigate to Issues [1149832](https://crbug.com/1149832) and [1170656](https://crbug.com/1170656).
 
@@ -243,7 +243,7 @@ In the **Network** tool, choose the new **More network conditions...** button ne
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1162042](https://crbug.com/1162042).
 
-:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="New More network conditions... button opens the Network Conditions tool to configure Content-Encoding" lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
+:::image type="complex" source="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png" alt-text="New More network conditions... button opens the Network Conditions tool to configure Content-Encoding." lightbox="../../media/2021/04/network-more-network-conditions-accepted-content-encodings.msft.png":::
    New **More network conditions...** button opens the **Network conditions** tool to configure `Content-Encoding`
 :::image-end:::
 
@@ -259,7 +259,7 @@ Now, to display the computed CSS value in the **Styles** pane, complete the foll
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1076198](https://crbug.com/1076198).
 
-:::image type="complex" source="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png" alt-text="New shortcut to display computed value" lightbox="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png" alt-text="New shortcut to display computed value." lightbox="../../media/2021/04/elements-styles-highlight-view-computed-value.msft.png":::
    New shortcut to display computed value
 :::image-end:::
 
@@ -267,7 +267,7 @@ To review the history of this feature in the Chromium open-source project, navig
 
 The autocomplete UI of the **Styles** pane now detects the `accent-color` CSS keyword, which allows you to specify the accent color for UI controls generated by the element.  Examples of UI controls that are generated by an element include checkboxes or radio buttons. For more information about the status of the Chromium implementation, navigate to [Feature: accent-color CSS property](https://chromestatus.com/feature/4752739957473280).  To turn on this feature, navigate to `edge://flags#enable-experimental-web-platform-features` and set the checkbox to **Enabled**.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1092093](https://crbug.com/1092093).
 
-:::image type="complex" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="accent-color CSS keyword" lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
+:::image type="complex" source="../../media/2021/04/elements-styles-accent-color.msft.png" alt-text="accent-color CSS keyword." lightbox="../../media/2021/04/elements-styles-accent-color.msft.png":::
    `accent-color` CSS keyword
 :::image-end:::
 
@@ -286,7 +286,7 @@ Permissions Policy is a web platform API that gives a website the ability to all
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1158827](https://crbug.com/1158827).
 
-:::image type="complex" source="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png" alt-text="Blocked features in the Frame details view" lightbox="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png":::
+:::image type="complex" source="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png" alt-text="Blocked features in the Frame details view." lightbox="../../media/2021/04/application-frames-top-permission-policy-disabled-features-show-details-highlight.msft.png":::
    Blocked features in the Frame details view
 :::image-end:::
 
@@ -299,7 +299,7 @@ Find experiments quicker with the new experiment filter.  For example, to turn o
 1.  Navigate to the **Filter** textbox.
 1.  Type `issues`.
 
-:::image type="complex" source="../../media/2021/04/settings-experiments-filter-by-issues.msft.png" alt-text="Filter experiments in the Experiments setting" lightbox="../../media/2021/04/settings-experiments-filter-by-issues.msft.png":::
+:::image type="complex" source="../../media/2021/04/settings-experiments-filter-by-issues.msft.png" alt-text="Filter experiments in the Experiments setting." lightbox="../../media/2021/04/settings-experiments-filter-by-issues.msft.png":::
    Filter experiments in the **Experiments** setting
 :::image-end:::
 
@@ -307,7 +307,7 @@ Find experiments quicker with the new experiment filter.  For example, to turn o
 
 Use the new `Vary Header` column in the **Cache Storage** pane to display the [Vary](https://httpwg.org/specs/rfc7231.html#header.vary) HTTP response header values.  To review the history of this feature in the Chromium open-source project, navigate to Issue [1186049](https://crbug.com/1186049).
 
-:::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="Vary Header column" lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
+:::image type="complex" source="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png" alt-text="Vary Header column." lightbox="../../media/2021/04/application-cache-cache-storage-highlighted-vary-header.msft.png":::
    Vary Header column
 :::image-end:::
 
@@ -322,7 +322,7 @@ DevTools now support the new [Private brand checks a.k.a. #foo in obj](https://v
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [11374](https://crbug.com/v8/11374).
 
-:::image type="complex" source="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png" alt-text="JavaScript private brand checks" lightbox="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png" alt-text="JavaScript private brand checks." lightbox="../../media/2021/04/sources-page-pen-js-breakpoint-scope-script-dog.msft.png":::
    JavaScript private brand checks
 :::image-end:::
 
@@ -342,7 +342,7 @@ DevTools now support hover preview on JavaScript member expressions that use the
 
 DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, select `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  In the following figure, DevTools now correctly list all functions in the outline.  Previously, DevTools only displayed some of the functions.  To review the history of this feature in the Chromium open-source project, navigate to Issues [761019](https://crbug.com/761019) and [1191465](https://crbug.com/1191465).
 
-:::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" Improved outline of HTML files" lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" Improved outline of HTML files." lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
    Improved outline of HTML files
 :::image-end:::
 
@@ -354,11 +354,11 @@ In Microsoft Edge version 91 or later, DevTools resolves inline function request
 
 In Microsoft Edge version 90 and earlier, the source location isn't displayed in the Error stack traces.  Source locations include `dsquare`.  Previous error stack traces for Wasm debugging:
 
-:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png" alt-text="Previous error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png" alt-text="Previous error stack traces for Wasm debugging." lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error-old.msft.png":::
 
 In Microsoft Edge version 91 and later, the source location is displayed in the Error stack traces.  Proper error stack traces for Wasm debugging:
 
-:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Proper error stack traces for Wasm debugging" lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
+:::image type="complex" source="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png" alt-text="Proper error stack traces for Wasm debugging." lightbox="../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png":::
 
 To review the history of this feature in the Chromium open-source project, navigate to Issue [1189161](https://crbug.com/1189161).
 
@@ -374,5 +374,5 @@ If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge previ
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/blog/new-in-devtools-91) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelyn-yeen) (Developer advocate, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

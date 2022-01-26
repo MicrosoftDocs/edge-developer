@@ -25,7 +25,7 @@ To try it:
 
 If you press `Enter`, the **Console** runs the JavaScript command, gives you the result, and allows you to write the next command.
 
-:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession" lightbox="../media/console-javascript-several-expressions.msft.png":::
+:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
    Run several JavaScript expressions in succession
 :::image-end:::
 
@@ -44,7 +44,7 @@ To try it:
 1.  Press `Tab` to enter `document.body`.
 1.  Type another `.` to get a large list of possible properties and methods available on the body of the current webpage.
 
-:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions" lightbox="../media/console-javascript-autocomplete.msft.png":::
+:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions." lightbox="../media/console-javascript-autocomplete.msft.png":::
    **Console** autocompletion of JavaScript expressions
 :::image-end:::
 
@@ -70,7 +70,7 @@ By default, the **Console** only gives you one line to write your JavaScript exp
 
 If you start a multiline statement in the **Console**, it gets automatically recognized and indented.  For example, if you start a block statement with a curly brace.
 
-:::image type="complex" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="Console already recognizes multiline expressions using curly braces and indents each for you" lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
+:::image type="complex" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="Console already recognizes multiline expressions using curly braces and indents each for you." lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
     **Console** already recognizes multiline expressions using curly braces and indents each for you
 :::image-end:::
 
@@ -91,13 +91,13 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
     )).json();
     ```
 
-:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request" lightbox="../media/console-javascript-top-level-await.msft.png":::
+:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request." lightbox="../media/console-javascript-top-level-await.msft.png":::
     **Console** displays the result of a top-level async `fetch` request
 :::image-end:::
 
 The 10 entries are hard to recognize, since a lot of information is displayed.  You can use the `console.table()` log method to only receive the information in which you're interested.
 
-:::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Display the last result in a human readable format using console.table" lightbox="../media/console-javascript-filtered-with-table.msft.png":::
+:::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Display the last result in a human readable format using console.table." lightbox="../media/console-javascript-filtered-with-table.msft.png":::
     Display the last result in a human readable format using `console.table`
 :::image-end:::
 
@@ -109,4 +109,4 @@ copy(await (await fetch(
 )).json())
 ```
 
-Use the **Console** as a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  You can [use the Console to interact with the DOM](console-dom-interaction.md).
+Use the **Console** as a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  You can [Interact with the DOM using the Console](console-dom-interaction.md).

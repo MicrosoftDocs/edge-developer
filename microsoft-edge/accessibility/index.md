@@ -30,7 +30,7 @@ The [Microsoft Windows UI Automation blog](/archive/blogs/winuiautomation/) has 
 
 The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer.
 
-:::image type="content" source="./media/accessibilityarchitecture.png" alt-text="Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation":::
+:::image type="content" source="./media/accessibilityarchitecture.png" alt-text="Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation.":::
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.
 
@@ -40,7 +40,7 @@ For information on which new HTML features are accessibly supported by Microsoft
 <!-- ====================================================================== -->
 ## See also
 
-*  [Accessibility-testing features in DevTools](../devtools-guide-chromium/accessibility/reference.md) - a list of accessibility aspects to test and the corresponding DevTools features.
+*  [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md) - a list of accessibility aspects to test and the corresponding DevTools features.
 *  [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - a walkthrough of testing a demo page for accessibility by using the DevTools features.
 
 W3C articles:

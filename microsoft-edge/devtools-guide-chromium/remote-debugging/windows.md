@@ -1,5 +1,5 @@
 ---
-title: Get started with remote debugging Windows devices
+title: Remotely debug Windows devices
 description: Get started with remote debugging of Windows devices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/23/2021
 ---
-# Get started with remote debugging Windows devices
+# Remotely debug Windows devices
 
 Remote debug live content on a Windows 10 or later device from your Windows or macOS computer.  This tutorial teaches you the following tasks:
 
