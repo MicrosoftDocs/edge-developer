@@ -1,5 +1,5 @@
 ---
-title: Reduced motion simulation
+title: Simulate reduced motion
 description: Simulate reduced motion using developer tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
 ---
-# Reduced motion simulation
+# Simulate reduced motion
 
 Animation in web products may be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.
 
@@ -29,12 +29,12 @@ To simulate the operating system's reduced motion setting, without having to cha
 1.  Type `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.
     
     > [!div class="mx-imgBorder"]
-    > ![Opening the command menu](../media/reduced-motion-open-command-menu.png)
+    > ![Opening the command menu.](../media/reduced-motion-open-command-menu.png)
 
 1.  Type `reduced`, to turn the simulation on and off.  Select the **Emulate CSS prefers-reduced-motion** option and press `Enter`.
 
     > [!div class="mx-imgBorder"]
-    > ![The Emulate CSS prefers-reduced-motion option in the Command menu](../media/reduced-motion-command-menu-entry.png)
+    > ![The Emulate CSS prefers-reduced-motion option in the Command menu.](../media/reduced-motion-command-menu-entry.png)
 
 1.  Refresh the webpage and check whether your animations run.
 

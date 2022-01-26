@@ -1,5 +1,5 @@
 ---
-title: Get started with remote debugging Android devices
+title: Remotely debug Android devices
 description: Remote debug live content on an Android device from a Windows or macOS computer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,7 +20,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Get started with remote debugging Android devices
+# Remotely debug Android devices
 
 Remote debug live content on an Android device from your Windows or macOS computer.  The following tutorial page teaches you how to complete the following actions.
 
@@ -107,14 +107,14 @@ Select **focus tab**, **reload**, or **close** next to the tab that you want to 
 
 Go to the **Elements** tool of your DevTools instance, and hover over an element to highlight it in the viewport of your Android device.
 
-You can also tap an element on your Android device screen to select it in the **Elements** tool.  Click **Select Element** (![Select Element](../media/select-element-icon.msft.png)) icon on your DevTools instance, and then select the element on your Android device screen.
+You can also tap an element on your Android device screen to select it in the **Elements** tool.  Click **Select Element** (![Select Element.](../media/select-element-icon.msft.png)) icon on your DevTools instance, and then select the element on your Android device screen.
 
 > [!NOTE]
 > **Select Element** is disabled after the first selection, so you need to re-enable it every time you want to use this feature.
 
 ### Screencast your Android screen to your development machine
 
-Click the **Toggle Screencast** (![Toggle Screencast](../media/toggle-screencast-icon.msft.png)) icon to view the content of your Android device in your DevTools instance.
+Click the **Toggle Screencast** (![Toggle Screencast.](../media/toggle-screencast-icon.msft.png)) icon to view the content of your Android device in your DevTools instance.
 
 You can interact with the screencast in multiple ways:
 
@@ -136,5 +136,5 @@ You can interact with the screencast in multiple ways:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/remote-debugging/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

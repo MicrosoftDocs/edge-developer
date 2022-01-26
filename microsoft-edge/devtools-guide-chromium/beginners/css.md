@@ -1,5 +1,5 @@
 ---
-title: "DevTools for beginners: Get started with CSS"
+title: Get started with CSS
 description: A DevTools tutorial to get started with CSS.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,14 +20,14 @@ ms.date: 07/26/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# DevTools for beginners: Get started with CSS
+# Get started with CSS
 
 In this tutorial, you learn how to use CSS to style a web page.  You also learn how to use Microsoft Edge DevTools to experiment with CSS changes.
 
 This article is part of a series of tutorials that teaches you the basics of web development and Microsoft Edge DevTools.  You gain hands-on experience by actually building your own website.  You don't have to complete the previous tutorials before doing this one.  [Set up your code](#set-up-your-code) shows you how to get set up.
 
 > [!NOTE]
-> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
+> This tutorial is designed for absolute beginners and focuses on both the **fundamentals of web development** and the basics of using DevTools to experiment with CSS.  If you want a tutorial that only focuses on DevTools, see [Get started viewing and changing CSS](../css/index.md).
 
 At the beginning of the tutorial, your site should look like the following figure.
 
@@ -282,7 +282,7 @@ To edit existing declarations in DevTools
 
 To add new rulesets in DevTools
 
-1.  Select **New Style Rule** (![New Style Rule](../media/new-style-rule-icon.msft.png)) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
+1.  Select **New Style Rule** (![New Style Rule.](../media/new-style-rule-icon.msft.png)) which is next to **.cls**.  An empty ruleset appears with `a` as the selector.
 
     :::image type="content" source="../media/beginners-css-rule1.msft.png" alt-text="Add a new rule." lightbox="../media/beginners-css-rule1.msft.png":::
 
@@ -502,13 +502,13 @@ Congratulations, you're done!
 
 *   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
 *   To learn more about styling web pages, navigate to [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
-*   To learn more about how to experiment with CSS in DevTools, navigate to [Get Started with Viewing and Changing CSS](../css/index.md).
+*   To learn more about how to experiment with CSS in DevTools, see [Get started viewing and changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css) and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/beginners/css)<!-- redirects to https://developer.chrome.com/docs/devtools/css/ by Kayce Basques --> and is authored by [Katherine Jackson](https://developers.google.com/web/resources/contributors#katherine-jackson) (Technical Writer Intern, Chrome DevTools).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

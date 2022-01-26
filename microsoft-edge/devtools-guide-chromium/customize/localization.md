@@ -24,6 +24,14 @@ Your Developer Tools matches your browser language by default, if it is one of t
 
 DevTools in Chinese:
 
-:::image type="content" source="../media/localization-zh.msft.png" alt-text="DevTools in Chinese" lightbox="../media/localization-zh.msft.png":::
+:::image type="content" source="../media/localization-zh.msft.png" alt-text="DevTools in Chinese." lightbox="../media/localization-zh.msft.png":::
 
-If you want to revert DevTools to English, navigate to [DevTools Settings](./index.md#settings) or select `F1`, choose **Preferences**, and turn off the **Match browser language** checkbox.
+
+<!-- ====================================================================== -->
+## Reverting DevTools to English
+
+To revert DevTools to English:
+
+1. In DevTools, click the **Settings** (gear) icon, or press `F1`.
+
+1. In the **Preferences** page, clear the **Match browser language** checkbox.

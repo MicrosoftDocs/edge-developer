@@ -1,5 +1,5 @@
 ---
-title: Navigate Microsoft Edge DevTools with assistive technology
+title: Navigate DevTools with assistive technology
 description: A guide on navigating Microsoft Edge DevTools using assistive technology like screen readers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,11 +20,11 @@ ms.date: 06/07/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Navigate Microsoft Edge DevTools with assistive technology
+# Navigate DevTools with assistive technology
 
 This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
 
-For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features in DevTools](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
+For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
 This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
 
@@ -46,7 +46,7 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 <!-- ====================================================================== -->
 ## Open DevTools
 
-To get started, navigate to [Open Microsoft Edge DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+To get started, navigate to [Open DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
 
 
 <!-- ====================================================================== -->
@@ -249,5 +249,5 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

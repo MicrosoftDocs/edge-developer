@@ -1,5 +1,5 @@
 ---
-title: The Search panel
+title: Find source files for a page using the Search tool
 description: The Search tool in Microsoft Edge DevTools helps find source files.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 10/28/2021
 ---
-# The Search panel
+# Find source files for a page using the Search tool
 
 Use the **Search** tool to find specific source files for a webpage.
 
@@ -93,10 +93,10 @@ A webpage can continue to request resources after it has finished loading, so th
 
 To update the search results, do either of the following:
 *  Search again by typing a term in the search input field.
-*  Click the **Refresh** (![Refresh search button](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
+*  Click the **Refresh** (![Refresh search button.](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
 
 
 <!-- ====================================================================== -->
 ## Clear a search
 
-To clear the search results, click the **Clear** (![Clear search button](../media/search-tool/search-tool-clear.png)) button in the toolbar.
+To clear the search results, click the **Clear** (![Clear search button.](../media/search-tool/search-tool-clear.png)) button in the toolbar.
