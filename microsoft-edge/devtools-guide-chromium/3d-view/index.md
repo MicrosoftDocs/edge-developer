@@ -1,5 +1,5 @@
 ---
-title: 3D View
+title: Navigate z-index, DOM, and layers using the 3D View tool
 description: How to use 3D View, including navigating the canvas, Z-index, 3D DOM, and composited layers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 12/03/2020
 ---
-# 3D View
+# Navigate z-index, DOM, and layers using the 3D View tool
 
 Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.  Use **3D View** to do the following:
 *   [Explore the web page translated into a 3D perspective](#3d-dom).
@@ -16,7 +16,7 @@ Use the **3D View** to debug your web app by navigating through the [Document Ob
 *   [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration).
 *   [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type).
 
-To explore an early prototype of 3D View project and run the code yourself, navigate to [3D View Sample](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView).
+To explore an early prototype for the 3D View project and run the code yourself, go to [3D View Sample](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView).
 
 On the left side, there are three panes that you can use for your debugging experience:
 *   The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.
@@ -24,6 +24,16 @@ On the left side, there are three panes that you can use for your debugging expe
 *   The [Composited Layers](#composited-layers) pane.  Add another 3D element to create a more comprehensive experience from a layers perspective.  To access the pane, select the **Composited Layers** pane next to the **DOM** pane.
 
 On the right side, the canvas displays your selections from the [Z-index](#z-index), [3D DOM](#3d-dom), or [Composited Layers](#composited-layers).
+
+
+<!-- ====================================================================== -->
+## Opening the 3D View panel
+
+To open the **3D View** panel, in DevTools, do either of the following:
+
+* Click **More Tools** (+) on the main toolbar and then select **3D View**.
+
+* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type "3d", and then select **3D View [Drawer]**.
 
 
 <!-- ====================================================================== -->

@@ -1,5 +1,5 @@
 ---
-title: Reduced motion simulation
+title: Simulate reduced motion
 description: Simulate reduced motion using developer tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 06/07/2021
 ---
-# Reduced motion simulation
+# Simulate reduced motion
 
 Animation in web products may be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.
 

@@ -367,6 +367,8 @@ To use **Composited Layers**:
 
 This experiment is turned on by default.
 
+See also [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/index.md).
+
 
 <!-- ====================================================================== -->
 ## Enable Network Console
@@ -501,7 +503,7 @@ These features have been promoted from experimental to regular features, and hav
 
 *  [Turn on support to move tabs between panels](../customize/index.md) - removed from experimental status starting with Microsoft Edge 85.
 
-*  [3D View](../3d-view/index.md) - removed from experimental status starting with Microsoft Edge 83.
+*  [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/index.md) - removed from experimental status starting with Microsoft Edge 83.
 
 *  The items in the following subsections.
 

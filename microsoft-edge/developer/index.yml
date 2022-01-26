@@ -168,7 +168,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Accessibility-testing features in DevTools
+          - text: Accessibility-testing features
             url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
           - text: Accessibility overview
             url: /microsoft-edge/accessibility/

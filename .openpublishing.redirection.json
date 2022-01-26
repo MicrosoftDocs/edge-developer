@@ -987,6 +987,11 @@
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/customize/theme",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/devtools-guide-chromium/about-panel-drawer-tools.md",
+        "redirect_url": "/microsoft-edge/devtools-guide-chromium/index",
+        "redirect_document_id": false
+      },
       /* redirect to extensions */
       {
         "source_path": "microsoft-edge/extensions-chromium/publish/contact-us.md",

@@ -22,12 +22,13 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Disable JavaScript
 
-To review how your webpage renders when a browser doesn't have JavaScript support, temporarily turn off JavaScript.
+To see how your webpage renders and behaves when a browser doesn't have JavaScript support, temporarily turn off JavaScript.
 
-Complete the following actions to examine how a webpage displays and behaves when you turn off JavaScript.
+To turn off JavaScript:
 
-1.  [Open Microsoft Edge DevTools](../open/index.md).
-1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1.  [Open DevTools](../open/index.md).
+
+1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
     :::image type="complex" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu." lightbox="../media/javascript-console-command.msft.png":::
        The **Command Menu**
@@ -47,12 +48,11 @@ Complete the following actions to examine how a webpage displays and behaves whe
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 
-You may want to refresh the page to review if and how the webpage depends on JavaScript while loading.
+To see whether the page depends on JavaScript while loading, refresh the page.
 
-To re-enable JavaScript, complete the following actions.
-
-*   Open the **Command Menu** again and run the `Enable JavaScript` command.
-*   Close DevTools.
+To re-enable JavaScript:
+1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Select the **Enable JavaScript** command.
 
 
 <!-- ====================================================================== -->
