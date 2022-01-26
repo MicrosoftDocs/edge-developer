@@ -250,7 +250,7 @@ The predefined User-Agent strings have been updated to reflect modern browser ve
 To access **Network Conditions**, [open the Command Menu](../../../command-menu/index.md) and run the `Show Network Conditions` command.
 
 > [!NOTE]
-> You may also [set User-Agent strings in Device Mode](../../../device-mode/index.md#simulate-a-mobile-viewport).
+> You can also [set User-Agent strings in Device Mode](../../../device-mode/index.md#simulate-a-mobile-viewport).
 
 Chromium issue [#1029031](https://crbug.com/1029031)
 

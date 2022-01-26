@@ -22,12 +22,14 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Analyze runtime performance
 
-Users expects interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
+<!-- not able to find this article or its strings in other repo; the link redirects.  "todo" items might not be actionable -->
+
+Users expect interactive and smooth pages.  Each stage in the pixel pipeline represents an opportunity to introduce jank (interruptions of rendering).  Learn about tools and strategies to identify and fix common problems that slow down runtime performance.
 
 ### Summary
 
-*   Do not write JavaScript that forces the browser to recalculate layout.  Separate read and write functions, and perform reads first.
-*   Do not over-complicate your CSS.  Use less CSS and keep your CSS selectors simple.
+*   Don't write JavaScript that forces the browser to recalculate layout.  Separate read and write functions, and perform reads first.
+*   Don't over-complicate your CSS.  Use less CSS and keep your CSS selectors simple.
 *   Avoid layout as much as possible.  Choose CSS that does not trigger layout at all.
 *   Painting may take up more time than any other rendering activity.  Watch out for paint bottlenecks.
 
@@ -35,7 +37,7 @@ Users expects interactive and smooth pages.  Each stage in the pixel pipeline re
 <!-- ====================================================================== -->
 ## JavaScript
 
-JavaScript calculations, especially ones that trigger extensive visual changes, may stall application performance.  Do not let badly-timed or long-running JavaScript interfere with user interactions.
+JavaScript calculations, especially ones that trigger extensive visual changes, may stall application performance.  Don't let badly-timed or long-running JavaScript interfere with user interactions.
 
 ### JavaScript: Tools
 
@@ -57,7 +59,7 @@ The following table describes some common JavaScript problems and potential solu
 | Long-running JavaScript affecting response.  | The [DOMContentLoaded event](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers) stalls as it is swamped with JS work.  | Move pure computational work to [Web Workers](https://developer.mozilla.org/docs/Web/API/Web_Workers_API/Using_web_workers).  If you need DOM access, use `requestAnimationFrame`.  <!--See [Optimize JavaScript Execution](/web/fundamentals/performance/rendering/optimize-javascript-execution).  -->  |
 | Garbage-y scripts affecting response or animation.  | Garbage collection may happen anywhere.  | Write less garbage-y scripts.  See [Garbage Collection in Animation in Paul Lewis' runtime performance checklist](https://calendar.perfplanet.com/2013/the-runtime-performance-checklist/).  |
 
-<!--todo: add Optimize JavaScript runtime section when available  -->
+<!--todo: add "Optimize JavaScript runtime" section when available  -->
 
 
 <!-- ====================================================================== -->
@@ -189,7 +191,7 @@ The following table describes some common paint and composite problems and poten
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/rendering-tools/index)<!-- redirects to https://developer.chrome.com/docs/devtools/evaluate-performance/ --> and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse) and [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
 [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

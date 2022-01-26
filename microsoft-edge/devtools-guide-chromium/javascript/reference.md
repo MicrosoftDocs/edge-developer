@@ -1,5 +1,5 @@
 ---
-title: Use the debugger features
+title: JavaScript debugging features
 description: Discover new debugging workflows in this comprehensive reference of Microsoft Edge DevTools debugging features.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,11 +20,11 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Use the debugger features
+# JavaScript debugging features
 
 This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints](./breakpoints.md).
 
-To learn the basics of debugging, see [Get started with debugging JavaScript](./index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
+To learn the basics of debugging, see [Get started debugging JavaScript](./index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
 
 
 <!-- ====================================================================== -->
@@ -340,7 +340,7 @@ See [Run snippets of JavaScript on any webpage](./snippets.md).
 <!-- ====================================================================== -->
 ## See also
 
-*  [Get Started With Debugging JavaScript](./index.md) - A simple, short tutorial using existing code, with screen captures.
+*  [Get started debugging JavaScript](./index.md) - A simple, short tutorial using existing code, with screen captures.
 *  [Sources tool overview](../sources/index.md) - The **Sources** tool includes the JavaScript debugger and editor.
 *  [Disable JavaScript](./disable.md).
 
