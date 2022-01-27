@@ -186,7 +186,7 @@ To display messages from a single URL:
 
 ### Filter out messages from different contexts
 
-Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#choose-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and choose the checkbox next to **Selected Context Only**.
+Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and choose the checkbox next to **Selected Context Only**.
 
 ### Filter out messages that don't match a regular expression pattern
 
