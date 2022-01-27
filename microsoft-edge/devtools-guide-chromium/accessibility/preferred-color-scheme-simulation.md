@@ -17,7 +17,7 @@ Alternatively, you can make your webpage automatically select dark or light mode
 
 To specify the CSS to use for both light and dark schemes, use the [prefers-color-scheme](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-color-scheme) CSS media query to detect whether the user prefers to display your product in a dark or light color scheme, and then automatically select your own custom light- or dark-mode CSS.  Example CSS code is shown in [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
-This article is about changing the appearance of the webpage under development.  To instead change how DevTools appears, navigate to [Apply color themes to DevTools](../customize/theme.md).
+This article is about changing the appearance of the webpage under development.  To instead change how DevTools appears, see [Apply color themes to DevTools](../customize/theme.md).
 
 
 <!-- ====================================================================== -->
@@ -29,13 +29,11 @@ This article is about changing the appearance of the webpage under development. 
 
 1.  In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: dark** or **prefers-color-scheme: light**.
 
-    :::image type="complex" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool." lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
-       Emulating dark or light mode using the **Rendering** tool
-    :::image-end:::
+    :::image type="content" source="../media/css-elements-styles-qs-simulated-light-mode.msft.png" alt-text="Emulating dark or light mode using the Rendering tool." lightbox="../media/css-elements-styles-qs-simulated-light-mode.msft.png":::
 
 1.  Refresh the page to display the rendered result.
 
-    Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started viewing and changing CSS](../css/index.md).
+    Now you can modify your CSS and view the rendered result the same way as for any other web page.  See [Get started viewing and changing CSS](../css/index.md).
 
 1.  To restore the setting, in the **Rendering** tool, in the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **No emulation**.  When you refresh the page, your own operating system or browser setting for light or dark mode preference will be applied.
 
@@ -45,17 +43,15 @@ This article is about changing the appearance of the webpage under development. 
 
 1.  When DevTools has focus, open the **Command Menu** by selecting `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
 
-1.  Type "dark", "light", or "emulate".  Then select **Rendering: Emulate CSS prefers-color-scheme: dark** or **Rendering: Emulate CSS prefers-color-scheme: light**, and select **Enter**.
+1.  Type "dark", "light", or "emulate", select **Rendering: Emulate CSS prefers-color-scheme: dark** or **Rendering: Emulate CSS prefers-color-scheme: light**, and then press **Enter**.
 
-    :::image type="complex" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Emulating dark or light mode using the 'Rendering: Emulate CSS prefers-color-scheme' commands on the Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
-        Emulating dark or light mode using the **Rendering: Emulate CSS prefers-color-scheme** commands on the Command Menu
-    :::image-end:::
+    :::image type="content" source="../media/css-console-command-menu-rendering.msft.png" alt-text="Emulating dark or light mode using the 'Rendering: Emulate CSS prefers-color-scheme' commands on the Command Menu" lightbox="../media/css-console-command-menu-rendering.msft.png":::
 
     Select a **Rendering** command rather than an **Appearance** command.  The **Rendering** commands affect the rendered webpage under development.  The **Appearance** commands instead affect the DevTools part of the window.
 
 1.  Refresh the page to display the rendered result.
 
-    Now you can modify your CSS and view the rendered result the same way as for any other web page.  For more information, navigate to [Get started viewing and changing CSS](../css/index.md).
+    Now you can modify your CSS and view the rendered result the same way as for any other web page.  See [Get started viewing and changing CSS](../css/index.md).
 
 1.  To restore the setting, in the Command Menu, type "emulate" or "scheme" and then select **Rendering: Do not emulate CSS prefers-color-scheme**.  When you refresh the page, your own operating system or browser setting for light or dark mode preference will be applied.
 

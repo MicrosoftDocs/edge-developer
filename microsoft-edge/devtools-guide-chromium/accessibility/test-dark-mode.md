@@ -17,7 +17,6 @@ Most operating systems come with a dark mode and a light mode.  Your webpage can
 
 As an example, the accessibility-testing demo page includes a light theme and a dark theme.  The demo page inherits the dark or light theme setting from the operating system.  If we use DevTools to simulate the operating system being set to a light scheme and then refresh the demo webpage, the **Issues** tool shows six color-contrast problems instead of two.  (You might see different numbers.)
 
-
 To emulate a user's selection of preferred color theme:
 
 1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
@@ -26,23 +25,15 @@ To emulate a user's selection of preferred color theme:
 
 1.  In the **Emulate CSS media feature prefers-color-scheme** dropdown list, select **prefers-color-scheme: light**.      The webpage is re-rendered using `light-theme.css`.
 
-
-    :::image type="complex" source="../media/a11y-testing-simulating-light-mode.msft.png" alt-text="Using the Rendering tool to simulate a light mode and triggering the other theme of the document." lightbox="../media/a11y-testing-simulating-light-mode.msft.png":::
-        Using the Rendering tool to simulate a light mode and triggering the other theme of the document
-    :::image-end:::
-
+    :::image type="content" source="../media/a11y-testing-simulating-light-mode.msft.png" alt-text="Using the Rendering tool to simulate a light mode and triggering the other theme of the document." lightbox="../media/a11y-testing-simulating-light-mode.msft.png":::
 
 1.  Select the **Issues** tool, and then expand the **Accessibility** section.  Depending on various factors, you might get `Insufficient color contrast` warnings. Notice in **AFFECTED RESOURCES** there are 6 elements with insufficient color contrast.
 
-    :::image type="complex" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme." lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
-        New contrast issues detected because of the change to light theme
-    :::image-end:::
+    :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme." lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
 
     On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change.
 
-    :::image type="complex" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The Donation Status section has contrast issues in light mode." lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
-        The **Donation Status** section has contrast issues in light mode
-    :::image-end:::
+    :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The Donation Status section has contrast issues in light mode." lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
 
 1.  In DevTools, select the **Elements** tool, and then select **Ctrl+F** on Windows/Linux or **Command+F** on macOS.  The **Find** textbox appears, to search within the HTML DOM tree.
 

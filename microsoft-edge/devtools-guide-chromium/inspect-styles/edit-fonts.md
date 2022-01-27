@@ -55,9 +55,7 @@ The **Font Editor** open on top of the **Styles** pane with the **Font Family** 
 
 After you select a font, another dropdown menu is displayed for you to select fallback fonts.  You can select up to eight fallback fonts.  To remove a font, click the **Delete Font Family** icon.
 
-<!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::
-   The **Font Editor** with a defined list of fonts and fallback fonts highlighted
-:::image-end:::  -->
+<!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::-->
 
 > [!NOTE]
 > If you select a global value for font family, you do not get another dropdown, since there is no fallback for it in CSS.

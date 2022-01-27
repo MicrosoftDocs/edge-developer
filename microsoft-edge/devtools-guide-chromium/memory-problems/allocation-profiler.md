@@ -25,7 +25,7 @@ ms.date: 05/04/2021
 <!-- title in other repo:
 How to Use the Allocation Profiler Tool -->
 
-In the **Memory** tool, use the **Allocation instrumentation on timeline** radio button to find objects that are not being properly garbage collected, and continue to retain memory.
+In the **Memory** tool, use the **Allocation instrumentation on timeline** radio button to find objects that are not being properly garbage-collected, and continue to retain memory.
 
 
 <!-- ====================================================================== -->
@@ -38,9 +38,7 @@ In the **Memory** tool, use the **Allocation instrumentation on timeline** radio
 
 **Allocation instrumentation on timeline** takes heap snapshots periodically throughout the recording (as frequently as every 50 ms) and one final snapshot at the end of the recording.
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Allocation instrumentation on timeline." lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
-   **Allocation instrumentation on timeline**
-:::image-end:::
+:::image type="content" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png" alt-text="Allocation instrumentation on timeline." lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted.msft.png":::
 
 > [!NOTE]
 > The number after the `@` is an object ID that persists across the multiple snapshots taken during the recording session.  The persistent object ID enables precise comparison between heap states.  Objects are moved during garbage collections, so displaying the address of an object makes no sense.
@@ -52,13 +50,16 @@ In the **Memory** tool, use the **Allocation instrumentation on timeline** radio
 To begin using **Allocation instrumentation on timeline**:
 
 1. [Open DevTools](../open/index.md).
+
 1. Open the **Memory** tool.
+
 1. Select the **Allocation instrumentation on timeline** radio button.
+
 1. Start recording.
 
 The record heap allocations profiler:
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler.  Use the 'Allocation instrumentation on timeline' radio button in the Memory tool." lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
+:::image type="content" source="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png" alt-text="Record heap allocations profiler.  Use the 'Allocation instrumentation on timeline' radio button in the Memory tool." lightbox="../media/memory-problems-memory-allocation-instrumentation-on-timeline-selected.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -68,18 +69,14 @@ The heap allocation timeline shows where objects are being created and identifie
 
 The height of each bar corresponds to the size of the recently allocated objects, and the color of the bars indicate whether or not those objects are still live in the final heap snapshot.  Blue bars indicate objects that are still live at the end of the timeline, Gray bars indicate objects that were allocated during the timeline, but have since been garbage collected.
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Allocation instrumentation on timeline snapshot." lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
-   **Allocation instrumentation on timeline** snapshot
-:::image-end:::
+:::image type="content" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Allocation instrumentation on timeline snapshot." lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
 
 <!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->
 <!--todo: redo figure 4 with multiple choose actions  -->
 
 You are able to use the sliders in the timeline above to zoom into that particular snapshot and review the objects that were recently allocated at that point:
 
-:::image type="complex" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zoom into snapshot." lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
-   Zoom into snapshot
-:::image-end:::
+:::image type="content" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zoom into snapshot." lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
 
 Choosing on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.
 
@@ -87,7 +84,7 @@ Choosing on a specific object in the heap shows the retaining tree in the bottom
 <!-- ====================================================================== -->
 ## View memory allocation by function
 
-You are able to view memory allocation by JavaScript function.  For more information, navigate to [Investigate memory allocation by function](./index.md#investigate-memory-allocation-by-function).
+You can view memory allocation by JavaScript function.  See [Investigate memory allocation by function](./index.md#investigate-memory-allocation-by-function).
 
 
 <!-- ====================================================================== -->

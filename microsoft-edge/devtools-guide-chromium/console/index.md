@@ -172,7 +172,7 @@ Write text to the DOM in the **Console**:
 
 :::image type="content" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in the Console." lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
 
-You changed the main heading of the webpage to **Rocking the Console**.  The **Console Utility** methods make it easy to access and manipulate the current webpage.  For more information, see [Console Utilities API reference](utilities.md).
+You changed the main heading of the webpage to **Rocking the Console**.  The **Console Utility** methods make it easy to access and manipulate the current webpage.  For more information, see [Console Utilities API Reference](utilities.md).
 
 For example, to add a green border around all the links in the current webpage:
 
@@ -193,5 +193,5 @@ Manipulating a selection of elements using the **Console**:
 
 *  [Interact with the DOM using the Console](console-dom-interaction.md).
 *  [Console features reference](reference.md)
-*  [Console Utilities API reference](utilities.md)
+*  [Console Utilities API Reference](utilities.md)
 *  [Console API reference](api.md)

@@ -501,7 +501,7 @@ Complete the following steps to use other Bootstrap classes that are useful for 
 Congratulations, you're done!
 
 *   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
-*   To learn more about styling web pages, navigate to [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
+*   To learn more about styling web pages, see [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
 *   To learn more about how to experiment with CSS in DevTools, see [Get started viewing and changing CSS](../css/index.md).
 
 

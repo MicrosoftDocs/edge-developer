@@ -31,15 +31,11 @@ To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link 
 
 1.  Select the **Styles** tab.  The CSS rule `#sidebar nav li a` appears, along with a link to a line number in `styles.css`.
 
-    :::image type="complex" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the menu." lightbox="../media/a11y-testing-menu-link.msft.png":::
-        Inspecting the source code and the applied styles of a link in the menu
-    :::image-end:::
+    :::image type="content" source="../media/a11y-testing-menu-link.msft.png" alt-text="Inspecting the source code and the applied styles of a link in the menu." lightbox="../media/a11y-testing-menu-link.msft.png":::
 
 1.  Select the link to the CSS file.  The CSS file opens within the **Sources** tool.
 
-    :::image type="complex" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="The styles applied to the link in the Sources tool." lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
-        The styles applied to the link in the Sources tool
-    :::image-end:::
+    :::image type="content" source="../media/a11y-testing-menu-link-styles.msft.png" alt-text="The styles applied to the link in the Sources tool." lightbox="../media/a11y-testing-menu-link-styles.msft.png":::
 
 The styles of the page have a CSS pseudo-class rule for the `hover` state that indicates which menu item you are on when you use a mouse: `#sidebar nav li a:hover`.  However, there is no CSS pseudo-class rule for the `focus` state to visually indicate which menu item you are on when you use a keyboard, such as `#sidebar nav li a:focus`.
 

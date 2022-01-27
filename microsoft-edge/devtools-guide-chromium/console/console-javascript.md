@@ -19,15 +19,11 @@ To try it:
 
     The **Console** immediately displays the result `4` on the next line while you type.  The `Eager evaluation` feature helps you write valid JavaScript.  It displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
-:::image type="complex" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of 2 + 2 live as you type it" lightbox="../media/console-javascript-eager-evaluation.msft.png":::
-   **Console** displays the result of `2 + 2` live as you type it
-:::image-end:::
+:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of the expression '2 + 2', live as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
 If you press `Enter`, the **Console** runs the JavaScript command, gives you the result, and allows you to write the next command.
 
-:::image type="complex" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
-   Run several JavaScript expressions in succession
-:::image-end:::
+:::image type="content" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -35,18 +31,21 @@ If you press `Enter`, the **Console** runs the JavaScript command, gives you the
 
 The **Console** helps you write complex JavaScript using autocompletion.  This feature is a great way to learn about methods you didn't know before.
 
-To try it:
+To try autocompletion while writing complex expressions:
 
 1.  Type `doc`.
+
 1.  Press the arrow keys to highlight `document` on the dropdown menu.
+
 1.  Press the `Tab` key to select `document`.
+
 1.  Type `.bo`.
+
 1.  Press `Tab` to enter `document.body`.
+
 1.  Type another `.` to get a large list of possible properties and methods available on the body of the current webpage.
 
-:::image type="complex" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions." lightbox="../media/console-javascript-autocomplete.msft.png":::
-   **Console** autocompletion of JavaScript expressions
-:::image-end:::
+:::image type="content" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions." lightbox="../media/console-javascript-autocomplete.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -56,9 +55,7 @@ As with many other command-line experiences, you also have a history of commands
 
 Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 
-:::image type="complex" source="../media/console-javascript-console-history.msft.png" alt-text="The $_ expression in the Console always contains the last result" lightbox="../media/console-javascript-console-history.msft.png":::
-    The `$_` expression in the **Console** always contains the last result
-:::image-end:::
+:::image type="content" source="../media/console-javascript-console-history.msft.png" alt-text="The $_ expression in the Console always contains the last result." lightbox="../media/console-javascript-console-history.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -66,13 +63,11 @@ Also, the **Console** also offers quite a few [utility methods](utilities.md) th
 
 By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you press `Enter`. The one line limitation may frustrate you.  To work around the one line limitation, press `Shift`+`Enter` instead of `Enter`.  In the following example, the value displayed is the result of all the lines run in order.
 
-:::image type="content" source="../media/console-javascript-multiline.msft.png" alt-text="Press Shift+Enter to write several lines of JavaScript and the resulting value is run in order" lightbox="../media/console-javascript-multiline.msft.png":::
+:::image type="content" source="../media/console-javascript-multiline.msft.png" alt-text="Press Shift+Enter to write several lines of JavaScript.  The resulting value is output." lightbox="../media/console-javascript-multiline.msft.png":::
 
-If you start a multiline statement in the **Console**, it gets automatically recognized and indented.  For example, if you start a block statement with a curly brace.
+If you start a multiline statement in the **Console**, it is automatically recognized and indented.  For example, if you start a block statement, by entering a curly brace, the next line is automatically indented:
 
-:::image type="complex" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="Console already recognizes multiline expressions using curly braces and indents each for you." lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
-    **Console** already recognizes multiline expressions using curly braces and indents each for you
-:::image-end:::
+:::image type="content" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="The Console recognizes multiline expressions using curly braces and indents." lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -91,17 +86,13 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
     )).json();
     ```
 
-:::image type="complex" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request." lightbox="../media/console-javascript-top-level-await.msft.png":::
-    **Console** displays the result of a top-level async `fetch` request
-:::image-end:::
+:::image type="content" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request." lightbox="../media/console-javascript-top-level-await.msft.png":::
 
 The 10 entries are hard to recognize, since a lot of information is displayed.  You can use the `console.table()` log method to only receive the information in which you're interested.
 
-:::image type="complex" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Display the last result in a human readable format using console.table." lightbox="../media/console-javascript-filtered-with-table.msft.png":::
-    Display the last result in a human readable format using `console.table`
-:::image-end:::
+:::image type="content" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Displaying the last result in a human-readable format using 'console.table'." lightbox="../media/console-javascript-filtered-with-table.msft.png":::
 
-To reuse the data returned from an expression, you can use the `copy()` utility method of the **Console**.  The following code snippet sends the request and copies the data from the response to the clipboard.
+To reuse the data returned from an expression, you can use the `copy()` utility method of the **Console**.  The following code sends the request and copies the data from the response to the clipboard:
 
 ```javascript
 copy(await (await fetch(
@@ -109,4 +100,4 @@ copy(await (await fetch(
 )).json())
 ```
 
-Use the **Console** as a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  You can [Interact with the DOM using the Console](console-dom-interaction.md).
+Use the **Console** as a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  See [Interact with the DOM using the Console](console-dom-interaction.md).

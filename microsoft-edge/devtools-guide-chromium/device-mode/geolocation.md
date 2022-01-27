@@ -26,7 +26,7 @@ Many websites take advantage of user location in order to provide a more relevan
 
 <!--todo: add link to user location section when available -->
 
-If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.  To override your geolocation in Microsoft Edge DevTools, complete the following actions.
+If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.  To override your geolocation in Microsoft Edge DevTools:
 
 1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 

@@ -1,5 +1,5 @@
 ---
-title: Console Utilities API reference
+title: Console Utilities API Reference
 description: A reference of convenience commands available in the Microsoft Edge DevTools Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,10 +20,10 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Console Utilities API reference
+# Console Utilities API Reference
 
 The Console Utilities API contains a collection of convenience functions for performing common tasks, such as:
-*   Choosing and inspecting DOM elements.
+*   Selecting and inspecting DOM elements.
 *   Displaying data in a readable format.
 *   Stopping and starting the profiler.
 *   Monitoring DOM events.
@@ -31,7 +31,7 @@ The Console Utilities API contains a collection of convenience functions for per
 > [!WARNING]
 > The following commands only work in the Microsoft Edge DevTools **Console**.  The commands don't work if run from your scripts.
 
-For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, navigate to [Console API Reference](api.md).
+For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, see [Console API Reference](api.md).
 
 
 <!-- ====================================================================== -->
@@ -50,8 +50,6 @@ $_
 In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value.
 
 :::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ is the most recently evaluated expression." lightbox="../media/console-arithmatic.msft.png":::
-   `$_` is the most recently evaluated expression
-:::image-end:::
 
 In the following figure, the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` becomes the latest evaluated expression, `4`.
 
@@ -276,12 +274,10 @@ debug("debug");
 ```
 
 :::image type="content" source="../media/console-debug-text.msft.png" alt-text="Breaking inside a method with debug()." lightbox="../media/console-debug-text.msft.png":::
-   Breaking inside a method with `debug()`
-:::image-end:::
 
 Use `undebug(method)` to stop breaking on the method, or use the UI to turn off all breakpoints.
 
-For more information on breakpoints, navigate to [Pause your code with breakpoints](../javascript/breakpoints.md).
+For more information on breakpoints, see [Pause your code with breakpoints](../javascript/breakpoints.md).
 
 ---
 
@@ -308,11 +304,9 @@ document.head;
 dir(document.head);
 ```
 
-:::image type="content" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Logging document.head with dir() method." lightbox="../media/console-dir-document-head-expanded.msft.png":::
-   Logging `document.head` with `dir()` method
-:::image-end:::
+:::image type="content" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Logging 'document.head' with the 'dir()' method." lightbox="../media/console-dir-document-head-expanded.msft.png":::
 
-For more information, navigate to [console.dir()](api.md#dir) in the Console API.
+For more information, see [console.dir()](api.md#dir) in the Console API.
 
 ---
 
@@ -381,8 +375,6 @@ getEventListeners(document);
 ```
 
 :::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="Output of using getEventListeners(document)." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
-   The result of using `getEventListeners(document)`
-:::image-end:::
 
 If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `click` event:
 
@@ -512,7 +504,7 @@ In the following figure, the sample output after typing a character in the text 
 <!-- ====================================================================== -->
 ## profile
 
-`profile()` starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!--Navigate to [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+`profile()` starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Syntax
 
@@ -548,7 +540,7 @@ profileEnd('B');
 <!-- ====================================================================== -->
 ## profileEnd
 
-`profileEnd()` completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+`profileEnd()` completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Syntax
 

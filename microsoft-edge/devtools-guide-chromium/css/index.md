@@ -95,7 +95,7 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 <!-- ====================================================================== -->
 ## Add a CSS class to an element
 
-To display how an element looks when a CSS class is applied to or removed from an element, navigate to the **Styles** panel.
+To display how an element looks when a CSS class is applied to or removed from an element, see the **Styles** panel.
 
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.

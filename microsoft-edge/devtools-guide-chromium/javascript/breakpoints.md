@@ -55,9 +55,7 @@ To set a line-of-code breakpoint in DevTools:
 1.  Go the line of code.
 1.  To the left of the line of code is the line number column.  Choose it.  A red icon appears next to the line number column.
 
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
-       A line-of-code breakpoint
-    :::image-end:::
+    :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
 
 ### Line-of-code breakpoints in your code
 
@@ -84,25 +82,21 @@ To set a conditional line-of-code breakpoint:
 1.  Enter your condition in the dialog.
 1.  Select `Enter` to activate the breakpoint.  An icon next to the line number column.
 
-    :::image type="complex" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="A conditional line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
-       A conditional line-of-code breakpoint
-    :::image-end:::
+    :::image type="content" source="../media/javascript-sources-page-js-conditional-breakpoint.msft.png" alt-text="A conditional line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-conditional-breakpoint.msft.png":::
 
 ### Manage line-of-code breakpoints
 
 Use the **Breakpoints** pane to disable or remove line-of-code breakpoints from a single location.
 
-:::image type="complex" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="The Breakpoints panel." lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
-   The **Breakpoints** panel
-:::image-end:::
+:::image type="content" source="../media/javascript-sources-page-js-breakpoints-16-33.msft.png" alt-text="The Breakpoints panel." lightbox="../media/javascript-sources-page-js-breakpoints-16-33.msft.png":::
 
 *   Check the checkbox next to an entry to disable that breakpoint.
-*   Hover on an entry and open the contextual menu (right-click) to remove that breakpoint.
-*   Hover anywhere in the **Breakpoints** pane and open the contextual menu (right-click) to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
 
-    :::image type="complex" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Deactivated breakpoints in the Breakpoints pane." lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
-       Deactivated breakpoints in the **Breakpoints** pane
-    :::image-end:::
+*   Hover on an entry and open the contextual menu (right-click) to remove that breakpoint.
+
+*   Right-click anywhere in the **Breakpoints** pane to deactivate all breakpoints, disable all breakpoints, or remove all breakpoints.  Disabling all breakpoints is equivalent to unchecking each one.  Deactivating all breakpoints instructs DevTools to ignore all line-of-code breakpoints, but to also maintain the enabled state so that each are in the same state as before when you reactivate each one.
+
+    :::image type="content" source="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png" alt-text="Deactivated breakpoints in the Breakpoints pane." lightbox="../media/javascript-sources-page-js-breakpoints-deactivate-breakpoints.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -117,14 +111,14 @@ To set a DOM change breakpoint:
 1.  Hover on the element and open the contextual menu (right-click).
 1.  Hover on **Break on**, then choose **Subtree modifications**, **Attribute modifications**, or **Node removal**.
 
-    :::image type="complex" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="The context menu for creating a DOM change breakpoint." lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
-       The context menu for creating a DOM change breakpoint
-    :::image-end:::
+    :::image type="content" source="../media/javascript-elements-break-on-subtree-modifications.msft.png" alt-text="The context menu for creating a DOM change breakpoint." lightbox="../media/javascript-elements-break-on-subtree-modifications.msft.png":::
 
 ### Types of DOM change breakpoints
 
 *   **Subtree modifications**.  Triggered when a child of the currently-selected node is removed or added, or the contents of a child are changed.  Not triggered on child node attribute changes, or on any changes to the currently-selected node.
+
 *   **Attributes modifications**: Triggered when an attribute is added or removed on the currently-selected node, or when an attribute value changes.
+
 *   **Node Removal**: Triggered when the currently-selected node is removed.
 
 
@@ -146,9 +140,7 @@ To set an XHR breakpoint:
 1.  Enter the string which you want to break on.  DevTools pauses when this string is present anywhere in an XHR request URL.
 1.  Select `Enter` to confirm.
 
-    :::image type="complex" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="Create an XHR breakpoint." lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
-       Create an XHR breakpoint
-    :::image-end:::
+    :::image type="content" source="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png" alt-text="Create an XHR breakpoint." lightbox="../media/javascript-sources-page-js-xhr-fetch-breakpoints-org.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -160,9 +152,7 @@ Use event listener breakpoints when you want to pause on the event listener code
 1.  Expand the **Event Listener Breakpoints** panel.  DevTools shows a list of event categories, such as **Animation**.
 1.  Check one of these categories to pause whenever any event from that category is fired, or expand the category and check a specific event.
 
-    :::image type="complex" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Create an event listener breakpoint." lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
-       Create an event listener breakpoint
-    :::image-end:::
+    :::image type="content" source="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png" alt-text="Create an event listener breakpoint." lightbox="../media/javascript-sources-page-js-event-listener-breakpoints-device-deviceorientation.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -173,15 +163,11 @@ Use exception breakpoints when you want to pause on the line of code that is thr
 1.  Choose the **Sources** tool.
 1.  Choose **Pause on exceptions** (![Pause on exceptions.](../media/pause-on-exceptions-icon.msft.png)).  The icon turns blue when enabled.
 
-    :::image type="complex" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="The Pause on exceptions button." lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
-       The **Pause on exceptions** button
-    :::image-end:::
+    :::image type="content" source="../media/javascript-sources-page-js-pause-on-exceptions.msft.png" alt-text="The Pause on exceptions button." lightbox="../media/javascript-sources-page-js-pause-on-exceptions.msft.png":::
 
 1.  **Optional**.  Check the **Pause On Caught Exceptions** checkbox if you also want to pause on caught exceptions, in addition to uncaught ones.
 
-    :::image type="complex" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Paused on an uncaught exception." lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
-       Paused on an uncaught exception
-    :::image-end:::
+    :::image type="content" source="../media/javascript-sources-page-js-paused-on-exception.msft.png" alt-text="Paused on an uncaught exception." lightbox="../media/javascript-sources-page-js-paused-on-exception.msft.png":::
 
 
 <!-- ====================================================================== -->

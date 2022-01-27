@@ -25,7 +25,7 @@ ms.date: 05/04/2021
 
 This guide shows you how to detect network issues or optimization opportunities in the Network panel of Microsoft Edge DevTools.
 
-To learn the basics of the **Network** tool, navigate to [Get Started](./index.md).
+To learn the basics of the **Network** tool, see [Inspect network activity](index.md).
 
 
 <!-- ====================================================================== -->
@@ -37,9 +37,7 @@ Six requests are downloading simultaneously.  After that, a series of requests a
 
 In the **Waterfall** in the following figure, the first six requests for the `edge-iconx1024.msft.png` asset start simultaneously.  The subsequent requests are stalled until one of the original six finishes.
 
-:::image type="complex" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="An example of a queued or stalled series in the Network panel." lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
-   An example of a queued or stalled series in the **Network** tool
-:::image-end:::
+:::image type="content" source="../media/network-network-disabled-cache-resources-queue.msft.png" alt-text="An example of a queued or stalled series in the Network panel." lightbox="../media/network-network-disabled-cache-resources-queue.msft.png":::
 
 **Causes**
 
@@ -61,9 +59,7 @@ A request spends a long time waiting to receive the first byte from the server.
 
 In the following figure, the long, green bar in the **Waterfall** indicates that the request was waiting a long time.  This was simulated using a profile to restrict network speed and add a delay.
 
-:::image type="complex" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="An example of a request with a slow Time To First Byte." lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
-   An example of a request with a slow Time To First Byte
-:::image-end:::
+:::image type="content" source="../media/network-network-resources-using-dial-up-profile.msft.png" alt-text="An example of a request with a slow Time To First Byte." lightbox="../media/network-network-resources-using-dial-up-profile.msft.png":::
 
 **Causes**
 
@@ -85,9 +81,7 @@ A request takes a long time to download.
 
 In the following figure, the long, blue bar in the **Waterfall** next to the png means it took a long time to download.
 
-:::image type="complex" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="An example of a request that takes a long time to download." lightbox="../media/network-network-resources-edge-devtools.msft.png":::
-   An example of a request that takes a long time to download
-:::image-end:::
+:::image type="content" source="../media/network-network-resources-edge-devtools.msft.png" alt-text="An example of a request that takes a long time to download." lightbox="../media/network-network-resources-edge-devtools.msft.png":::
 
 **Causes**
 

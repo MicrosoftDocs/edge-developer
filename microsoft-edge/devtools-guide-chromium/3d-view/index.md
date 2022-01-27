@@ -39,9 +39,7 @@ To open the **3D View** panel, in DevTools, do either of the following:
 <!-- ====================================================================== -->
 ## Navigating the canvas
 
-:::image type="complex" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View." lightbox="../media/3d-view-canvas.msft.png":::
-   Canvas of 3D View
-:::image-end:::
+:::image type="content" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View." lightbox="../media/3d-view-canvas.msft.png":::
 
 ### Keyboard shortcuts
 
@@ -59,9 +57,7 @@ To zoom, drag two fingers across the touchpad or use the scroll wheel on your mo
 
 ### On-screen controls
 
-:::image type="complex" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls." lightbox="../media/3d-view-controls-small.msft.png":::
-   On-screen controls
-:::image-end:::
+:::image type="content" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls." lightbox="../media/3d-view-controls-small.msft.png":::
 
 To reset the canvas view to the original view, select the **Reset camera** button, or select the **Reset elements in view and re-center camera** (sideways refresh icon) button.
 
@@ -71,9 +67,7 @@ To refresh the canvas, such as when the browser changed or you switched to a dev
 <!-- ====================================================================== -->
 ## Z-index
 
-:::image type="complex" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view." lightbox="../media/3d-view-z-index-view-box.msft.png":::
-   Z-index view
-:::image-end:::
+:::image type="content" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view." lightbox="../media/3d-view-z-index-view-box.msft.png":::
 
 While the **Z-index** pane has shared features with the **3D DOM** pane, the panes still have elements that are unique to the pane.
 
@@ -109,9 +103,7 @@ This approach improves the z-index debugging experience.  The radio buttons allo
 <!-- ====================================================================== -->
 ## 3D DOM
 
-:::image type="complex" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view." lightbox="../media/3d-view-dom-purple-box.msft.png":::
-   DOM view
-:::image-end:::
+:::image type="content" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view." lightbox="../media/3d-view-dom-purple-box.msft.png":::
 
 If you want to take more of a general debugging view, rather than the z-index experience, the **3D DOM** gives an overall look of the DOM.  Since the z-index context is removed, the DOM is stacked more closely and cleanly.  The **3D DOM** pane has similar functionality, but there are a few nuances.
 
@@ -141,8 +133,6 @@ The **Use screen texture** option adds context to your debugging experience.  It
 <!-- ====================================================================== -->
 ## Composited layers
 
-:::image type="complex" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane." lightbox="../media/experiments-layers.msft.png":::
-   **Composited Layers** pane
-:::image-end:::
+:::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane." lightbox="../media/experiments-layers.msft.png":::
 
 The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  You can still access the details of each of the layers and have the **Slow scroll rects** and **Paint**.

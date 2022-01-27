@@ -40,11 +40,9 @@ To copy a style rule as JavaScript:
 
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
-:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands" lightbox="images/copy-declaration-as-js.msft.png":::
-   Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
-:::image-end:::
+:::image type="content" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands." lightbox="images/copy-declaration-as-js.msft.png":::
 
-This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, navigate to [CSS features reference](reference.md).
+This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
 
 
 <!-- ====================================================================== -->
@@ -75,9 +73,7 @@ function addStyle() {
 
 This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` color is initially set by calling a CSS Object Model function, and then can be changed from `pink` to `lightblue` by using the **Styles** pane.
 
-:::image type="complex" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue." lightbox="../media/css-in-js.msft.png":::
-   Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
-:::image-end:::
+:::image type="content" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'." lightbox="../media/css-in-js.msft.png":::
 
 Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).
 

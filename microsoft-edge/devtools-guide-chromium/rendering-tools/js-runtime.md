@@ -24,13 +24,12 @@ ms.date: 05/04/2021
 
 To identify expensive functions, use the **Memory** tool.
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sample Profiles." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Sample Profiles
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Sample Profiles." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
 
 ### Summary
 
 *   Record exactly which functions were called and how much memory each requires with Allocation Sampling in the **Memory** tool.
+
 *   Visualize your profiles as a flame chart.
 
 
@@ -39,14 +38,17 @@ To identify expensive functions, use the **Memory** tool.
 
 If you notice jank (interruptions of rendering) in your JavaScript, collect a Sampling Profile.  Sampling Profiles show where running time is spent on functions in your page.
 
-1.  Navigate to the **Memory** tool of DevTools.
-1.  Choose the **Allocation sampling** radio button.
-1.  Choose **Start**.
-1.  Depending on what you are trying to analyze, you may either refresh the page, interact with the page, or just let the page run.
-1.  Choose the **Stop** button when you are finished.
+1. In DevTools, go to the **Memory** tool.
 
-> [!NOTE]
-> You may also use the [Console Utilities API](../console/utilities.md) to record and group profiles from the command line.
+1. Click the **Allocation sampling** radio button.
+
+1. Click **Start**.
+
+1. Depending on what you are trying to analyze, you can either refresh the page, interact with the page, or just let the page run.
+
+1. When you're finished, click the **Stop** button.
+
+You can also use the [Console Utilities API](../console/utilities.md) to record and group profiles from the command line.
 
 
 <!-- ====================================================================== -->
@@ -62,21 +64,15 @@ To change the sorting order, select the dropdown menu next to the **focus select
 
 **Chart**.  Displays a chronological chart of the recording.
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Flame chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   Flame chart
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Flame chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
 
 **Heavy (Bottom Up)**.  Lists functions by impact on performance and enables you to examine the calling paths to the functions.  This is the default view.
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Heavy chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
-   Heavy chart
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png" alt-text="Heavy chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-heavy-bottom-up.msft.png":::
 
 **Tree (Top Down)**.  Shows an overall picture of the calling structure, starting at the top of the call stack.
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Tree chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
-   Tree chart
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png" alt-text="Tree chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-tree-top-down.msft.png":::
 
 ### Exclude functions
 
@@ -88,15 +84,13 @@ Choose the **restore all functions** (![restore all functions.](../media/restore
 <!-- ====================================================================== -->
 ## View Sampling Profile as Chart
 
-The Chart view provides a visual representation of the Sampling Profile over time.
+The **Chart** view provides a visual representation of the Sampling Profile over time.
 
 After you [record a Sampling Profile](#record-a-sampling-profile), view the recording as a flame chart by [changing the sort order](#change-sort-order) to **Chart**.
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Flame chart view." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
-   Flame chart view
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png" alt-text="Flame chart view." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart.msft.png":::
 
-The flame chart is split into two parts.
+The flame chart is split into two parts:
 
 | index | Part | Description |
 | --- |:--- |:--- |
@@ -105,25 +99,21 @@ The flame chart is split into two parts.
 
 Functions are colored randomly.  There is no correlation to the colors used in the other panels.  However, functions are always colored the same across invocations so that you may observe patterns in each runtime.
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Annotated flame chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
-   Annotated flame chart
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png" alt-text="Annotated flame chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-highlighted.msft.png":::
 
 A tall call stack is not necessarily significant, it just means that a lot of functions were called.  But a wide bar means that a function took a long time to complete.  These are candidates for optimization.
 
 ### Zoom in on specific parts of recording
 
-Choose, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.
+Click, hold, and drag your mouse left and right across the overview to zoom in on particular parts of the call stack.  After you zoom, the call stack automatically displays the portion of the recording that you selected.
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Chart zoomed." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
-   Chart zoomed
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png" alt-text="Chart zoomed." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-zoomed.msft.png":::
 
 ### View function details
 
-Choose a function to view the definition in the **Sources** tool.
+Click a function, to view it in the **Sources** tool.
 
-Hover on a function to display the name and timing data.  The following information is provided.
+Hover on a function to display the name and timing data:
 
 | Detail | Description |
 |:--- |:--- |
@@ -135,9 +125,7 @@ Hover on a function to display the name and timing data.  The following informat
 <!--*   **Aggregated total time**.  Aggregate total time for all invocations of the function, including functions called by this function.  -->
 <!--*   **Not optimized**.  If the profiler has detected a potential optimization for the function it lists it here.  -->
 
-:::image type="complex" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="View functions details in chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
-   View functions details in chart
-:::image-end:::
+:::image type="content" source="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png" alt-text="View functions details in the profiles chart." lightbox="../media/rendering-tools-gh-nodejs-benchmarks-run-memory-sampling-profiles-chart-hover.msft.png":::
 
 
 <!-- ====================================================================== -->

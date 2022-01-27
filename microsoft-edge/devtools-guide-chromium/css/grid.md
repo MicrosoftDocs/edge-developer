@@ -28,36 +28,30 @@ CSS Grid is a powerful layout paradigm for the web.  A great place to get starte
 
 When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a `grid` badge is displayed next to it in the [Elements](../open/index.md) panel.
 
-:::image type="complex" source="../media/grid-discover-grid.msft.png" alt-text="Discover grid." lightbox="../media/grid-discover-grid.msft.png":::
-   Discover grid
-:::image-end:::
+:::image type="content" source="../media/grid-discover-grid.msft.png" alt-text="Discover grid." lightbox="../media/grid-discover-grid.msft.png":::
 
 Choose the badge to toggle the display of a grid overlay on the page.  The overlay appears over the element, laid out like a grid to display the position of the grid lines and tracks:
 
-:::image type="complex" source="../media/grid-highlight-grid.msft.png" alt-text="Toggle grid badge." lightbox="../media/grid-highlight-grid.msft.png":::
-   Toggle grid badge
-:::image-end:::
+:::image type="content" source="../media/grid-highlight-grid.msft.png" alt-text="Toggle grid badge." lightbox="../media/grid-highlight-grid.msft.png":::
 
 Open the **Layout** pane.  When grids are included on a page, the **Layout** pane includes a **Grid** section containing a number of options for viewing the grids.
 
-:::image type="complex" source="../media/grid-layout-pane.msft.png" alt-text="Layout pane." lightbox="../media/grid-layout-pane.msft.png":::
-   **Layout** pane
-:::image-end:::
+:::image type="content" source="../media/grid-layout-pane.msft.png" alt-text="Layout pane." lightbox="../media/grid-layout-pane.msft.png":::
 
-The **Grid** section in the **Layout** pane contains the following 2 sub-sections.
+The **Grid** section in the **Layout** pane contains the following 2 sub-sections:
 
-*   Overlay display settings
-*   Grid overlays
+*  Overlay display settings
+*  Grid overlays
 
-<!--todo: @zoher verify the details for each of the sub-sections.  -->
+<!--todo: verify the details for each of the sub-sections -->
 
 
 <!-- ====================================================================== -->
 ## Overlay display settings
 
-The **Overlay display settings** consists of following 2 parts.
+The **Overlay display settings** consists of two parts:
 
-*   Choose one of the following options from the dropdown menu.
+*  Select one of the following options from the dropdown menu:
 
     | Line option | Details |
     |:--- |:--- |
@@ -65,7 +59,7 @@ The **Overlay display settings** consists of following 2 parts.
     | **Show line numbers** | Display the numbers of the lines for each grid overlay (selected by default). |
     | **Show line names** | Display the names of the lines for each grid overlay when names are provided. |
 
-*  Choose the checkbox next the following options.
+*  Select the checkbox next the following options:
 
     | Option | Details |
     |:--- |:--- |
@@ -79,31 +73,25 @@ The following sections provide details for each of the **Overlay display setting
 
 By default, the positive and negative line numbers are displayed on the grid overlay.
 
-For more information about negative numbers in the grid overlay, navigate to [Line-based placement with CSS Grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid).
+For more information about negative numbers in the grid overlay, see [Line-based placement with CSS Grid](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid).
 
-:::image type="complex" source="../media/grid-show-line-numbers.msft.png" alt-text="Display line numbers." lightbox="../media/grid-show-line-numbers.msft.png":::
-   Display line numbers
-:::image-end:::
+:::image type="content" source="../media/grid-show-line-numbers.msft.png" alt-text="Display line numbers." lightbox="../media/grid-show-line-numbers.msft.png":::
 
 ### Hide line labels
 
 Choose **Hide line labels** to hide the line numbers.
 
-:::image type="complex" source="../media/grid-hide-line-labels.msft.png" alt-text="Hide line labels." lightbox="../media/grid-hide-line-labels.msft.png":::
-   Hide line labels
-:::image-end:::
+:::image type="content" source="../media/grid-hide-line-labels.msft.png" alt-text="Hide line labels." lightbox="../media/grid-hide-line-labels.msft.png":::
 
 ### Show line names
 
-For more information about line names in the grid overlay, navigate to [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
+For more information about line names in the grid overlay, see [Layout using named grid lines](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
 
 Choose **Show line names** to view the line names instead of numbers.  In the example, 4 lines have names: `left`, `middle1`, `middle2`, and `right`.
 
 <!--In the demo, **orange** element spans from left to right, with `grid-column: left` and `grid-column: right` CSS.  Showing line names makes it easier to visualize the start and end position of the element.  -->
 
-:::image type="complex" source="../media/grid-show-line-names.msft.png" alt-text="Show line names." lightbox="../media/grid-show-line-names.msft.png":::
-   **Show line names**
-:::image-end:::
+:::image type="content" source="../media/grid-show-line-names.msft.png" alt-text="Show line names." lightbox="../media/grid-show-line-names.msft.png":::
 
 ### Show track sizes
 
@@ -130,25 +118,19 @@ The row line labels display only computed sizes, since there are no row sizes de
 | **80px** | &nbsp;| 80px |
 | **80px** | &nbsp;| 80px |
 
-:::image type="complex" source="../media/grid-show-track-sizes.msft.png" alt-text="Show track sizes." lightbox="../media/grid-show-track-sizes.msft.png":::
-   **Show track sizes**
-:::image-end:::
+:::image type="content" source="../media/grid-show-track-sizes.msft.png" alt-text="Show track sizes." lightbox="../media/grid-show-track-sizes.msft.png":::
 
 ### Show area names
 
 To view the area names, enable the **Show area names** checkbox.  In the example, there are 3 areas in the grid: **top**, **bottom1** and **bottom2**.
 
-:::image type="complex" source="../media/grid-show-area-names.msft.png" alt-text="Show area names." lightbox="../media/grid-show-area-names.msft.png":::
-   **Show area names**
-:::image-end:::
+:::image type="content" source="../media/grid-show-area-names.msft.png" alt-text="Show area names." lightbox="../media/grid-show-area-names.msft.png":::
 
 ### Extend grid lines
 
 Enable the **Extend grid lines** checkbox to extend the grid lines to the edge of the viewport along each axis.
 
-:::image type="complex" source="../media/grid-extend-grid-lines.msft.png" alt-text="Extend grid lines." lightbox="../media/grid-extend-grid-lines.msft.png":::
-   **Extend grid lines**
-:::image-end:::
+:::image type="content" source="../media/grid-extend-grid-lines.msft.png" alt-text="Extend grid lines." lightbox="../media/grid-extend-grid-lines.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -163,25 +145,19 @@ To display the overlay grid for multiple grids, choose the checkbox next to each
 *   `main`
 *   `div.snack-box`
 
-:::image type="complex" source="../media/grid-grid-overlays.msft.png" alt-text="Enable overlay views of multiple grids." lightbox="../media/grid-grid-overlays.msft.png":::
-   Enable overlay views of multiple grids
-:::image-end:::
+:::image type="content" source="../media/grid-grid-overlays.msft.png" alt-text="Enable overlay views of multiple grids." lightbox="../media/grid-grid-overlays.msft.png":::
 
 ### Customize the grid overlay color
 
 To open the color picker and customize the grid overlay color, choose the box next to the name of the grid overlay.
 
-:::image type="complex" source="../media/grid-grid-overlays-color.msft.png" alt-text="Customize the grid overlay color." lightbox="../media/grid-grid-overlays-color.msft.png":::
-   Customize the grid overlay color
-:::image-end:::
+:::image type="content" source="../media/grid-grid-overlays-color.msft.png" alt-text="Customize the grid overlay color." lightbox="../media/grid-grid-overlays-color.msft.png":::
 
 ### Highlight the grid
 
 To highlight the HTML element in the **Elements** tool and scroll to it on the webpage, choose the **Show element in the Elements panel** (![Show element in the Elements panel icon.](../media/show-element-in-element-panel-icon.msft.png)) icon.
 
-:::image type="complex" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Highlight the grid." lightbox="../media/grid-grid-overlays-highlight.msft.png":::
-   Highlight the grid
-:::image-end:::
+:::image type="content" source="../media/grid-grid-overlays-highlight.msft.png" alt-text="Highlight the grid." lightbox="../media/grid-grid-overlays-highlight.msft.png":::
 
 
 <!-- ====================================================================== -->

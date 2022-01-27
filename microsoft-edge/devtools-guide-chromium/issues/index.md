@@ -33,7 +33,7 @@ The **Issues** tool provides feedback in the following categories:
 *  Security.
 *  Other.
 
-Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the **Issues** tool, navigate to:
+Feedback in the **Issues** tool is provided by several sources, including the Chromium platform, Deque axe, MDN browser compatibility data, and webhint.  For information about these sources of feedback that populate the **Issues** tool, see:
 *  [axe Tools Overview](https://www.deque.com/axe)
 *  [browser-compat-data repo](https://github.com/mdn/browser-compat-data)
 *  [webhint](https://webhint.io)
@@ -42,32 +42,28 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 <!-- ====================================================================== -->
 ## Opening the Issues tool
 
-1.  Navigate to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
+1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
 
-1.  Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
+1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
 
-1.  Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
+1. Refresh the page, because some issues are reported based on network requests.  Notice the updated count in the **Issues counter**.
 
-1.  Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
+1. Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
 
-    :::image type="complex" source="../media/issues-tool-categories.msft.png" alt-text="Categories of issues in the Issues tool on the demo page." lightbox="../media/issues-tool-categories.msft.png":::
-       Categories of issues in the Issues tool on the demo page
-    :::image-end:::
+   :::image type="content" source="../media/issues-tool-categories.msft.png" alt-text="Categories of issues in the Issues tool on the demo page." lightbox="../media/issues-tool-categories.msft.png":::
 
 ### Other ways to open the Issues tool
 
 There are several additional ways to open the **Issues** tool:
-*  Select the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.
+*  Click the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
-*  In the DOM tree in the **Elements** tool, select `Shift` and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
+*  In the DOM tree in the **Elements** tool, press `Shift` and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
 
 ### Issues are automatically ordered by severity
 
 Within each category of issues, first the errors are listed, then warnings, and then tips.
 
-:::image type="complex" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays Performance issues sorted by severity." lightbox="../media/issues-ordered-by-severity.msft.png":::
-   The **Issues** tool displays Performance issues sorted by severity
-:::image-end:::
+:::image type="content" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays Performance issues sorted by severity." lightbox="../media/issues-ordered-by-severity.msft.png":::
 
 ### Include third-party issues
 
@@ -85,9 +81,7 @@ The **Issues** tool presents additional documentation and recommended fixes to a
 
 1.  Select an issue to expand the issue.
 
-    :::image type="complex" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool displaying additional information on how to fix the issue." lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
-       The **Issues** tool displaying additional information on how to fix the issue
-    :::image-end:::
+    :::image type="content" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool, displaying additional information on how to fix the issue." lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
 
 Each displayed issue has the following components:
 *   A headline describing the issue.
@@ -105,15 +99,11 @@ An issue in the **Issues** tool may include one or more links that open differen
 
 1.  In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool.
 
-    :::image type="complex" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool to open an affected resource from within the Issues tool." lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
-       Select a tool to open an affected resource from within the Issues tool
-    :::image-end:::
+    :::image type="content" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool, to open an affected resource from within the Issues tool." lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
 
     An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool.
 
-    :::image type="complex" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link." lightbox="../media/issues-tab-view-issue.msft.png":::
-    The **Network** tool opens when you select a **Network** resource link
-    :::image-end:::
+    :::image type="content" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link." lightbox="../media/issues-tab-view-issue.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -123,23 +113,19 @@ If an element has an associated issue, the DOM tree in the **Elements** tool sho
 
 To display an issue for elements with wavy underlines in the DOM tree, perform the following steps.
 
-1.  Open a page, such as the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
+1. Open a page, such as the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
 
-1.  Open DevTools and then select the **Elements** tab.
+1. Open DevTools and then select the **Elements** tab.
 
-1.  In the DOM tree, expand `<body>` > `<header>` > `<form>`.  Notice that the `<input>` element has a wavy underline.
+1. In the DOM tree, expand `<body>` > `<header>` > `<form>`.  Notice that the `<input>` element has a wavy underline.
 
-    :::image type="complex" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Wavy-underlined issues in the DOM tree in the Elements tool." lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
-       Wavy-underlined issues in the **DOM tree** in the **Elements** tool
-    :::image-end:::
+    :::image type="content" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Wavy-underlined issues in the DOM tree in the Elements tool." lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
 
-1.  Hover over the `<input>` element.  A tooltip displays information about the issue.
+1. Hover over the `<input>` element.  A tooltip displays information about the issue.
 
-1.  Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
+1. Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
 
-    :::image type="complex" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues on a wavy-underlined element in the DOM tree." lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
-       Details about issues on a wavy-underlined element in the **DOM tree**
-    :::image-end:::
+    :::image type="content" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues on a wavy-underlined element in the DOM tree." lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
 
 
 <!-- ====================================================================== -->

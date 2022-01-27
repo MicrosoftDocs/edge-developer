@@ -103,6 +103,7 @@ The **Disable Cache** checkbox:
 If you want to disable the cache while working in other DevTools panels, use the Network Conditions drawer:
 
 1. Open the **Network Conditions** drawer.
+
 1. Select or clear the **Disable cache** checkbox.
 
 <!--todo: add network condition section when available -->
@@ -142,6 +143,7 @@ DevTools displays a warning icon next to the **Network** tool to remind you that
 If you want to throttle the network connection while working in other DevTools panels, use the Network Conditions drawer.
 
 1.  Open the **Network Conditions** drawer.
+
 1.  Select your connection speed from the **Throttling** menu.
 
 <!--todo: add network condition section when available -->
@@ -309,8 +311,6 @@ So long as DevTools are open, it logs all requests in the **Network** tool.  Use
 Use the **Requests** table to display a log of all requests made while DevTools have been open.  To reveal more information about each item, click or hover on requests.
 
 :::image type="content" source="../media/network-network-requests-table.msft.png" alt-text="The Requests table." lightbox="../media/network-network-requests-table.msft.png":::
-   The Requests table
-:::image-end:::
 
 The Requests table displays the following columns by default:
 
@@ -359,8 +359,6 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 <!--
 :::image type="content" source="../media/network-frames.msft.png" alt-text="The Frames panel." lightbox="../media/network-frames.msft.png":::
-   The **Frames** panel
-:::image-end:::
 -->
 
 <!--The table contains the following three columns.
@@ -401,6 +399,7 @@ To display the response body to a request, use the following steps.
 To display HTTP header data about a request, use the following steps.
 
 1.  Click the URL of the request, under the **Name** column of the Requests table.
+
 1.  Click the **Headers** tab.
 
 :::image type="content" source="../media/network-resources-headers.msft.png" alt-text="The Headers panel." lightbox="../media/network-resources-headers.msft.png":::
@@ -410,6 +409,7 @@ To display HTTP header data about a request, use the following steps.
 By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received, use the following steps.
 
 1.  Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
+
 1.  Click **view source**, next to the **Request Header** or **Response Header** section.
 
 ### Display query string parameters
@@ -417,6 +417,7 @@ By default, the **Headers** panel shows header names alphabetically.  To display
 To display the query string parameters of a URL in a human-readable format, use the following steps.
 
 1.  Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
+
 1.  Navigate to the **Query String Parameters** section.
 
 :::image type="content" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Query String Parameters section." lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
@@ -426,6 +427,7 @@ To display the query string parameters of a URL in a human-readable format, use 
 To display the query string parameter source of a request, use the following steps.
 
 1.  Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
+
 1.  Select **view source**.
 
 #### Display URL-encoded query string parameters
@@ -433,6 +435,7 @@ To display the query string parameter source of a request, use the following ste
 To display query string parameters in a human-readable format, but with encodings preserved, use the following steps.
 
 1.  Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
+
 1.  Click **view URL encoded**.
 
 ### Display cookies

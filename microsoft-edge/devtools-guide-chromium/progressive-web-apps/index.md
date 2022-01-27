@@ -53,9 +53,7 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 After you have your manifest set up, you may use the **Manifest** pane of the **Application** panel to inspect it.
 
-:::image type="complex" source="../media/manifest-pane.msft.png" alt-text="The Manifest Pane." lightbox="../media/manifest-pane.msft.png":::
-   The **Manifest** Pane
-:::image-end:::
+:::image type="content" source="../media/manifest-pane.msft.png" alt-text="The Manifest Pane." lightbox="../media/manifest-pane.msft.png":::
 
 *   To look at the manifest source, choose the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure).
 <!-- *   Choose the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
@@ -72,9 +70,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You may test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--
-:::image type="complex" source="../media/io.msft.png" alt-text="Add to desktop shelf." lightbox="../media/io.msft.png":::
-   Add to desktop shelf
-:::image-end:::
+:::image type="content" source="../media/io.msft.png" alt-text="Add to desktop shelf." lightbox="../media/io.msft.png":::
 -->
 
 <!--
@@ -106,9 +102,7 @@ Service workers are a fundamental technology in the future web platform.  They a
 
 The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.
 
-:::image type="complex" source="../media/service-workers-pane.msft.png" alt-text="The Service Workers pane." lightbox="../media/service-workers-pane.msft.png":::
-   The **Service Workers** pane
-:::image-end:::
+:::image type="content" source="../media/service-workers-pane.msft.png" alt-text="The Service Workers pane." lightbox="../media/service-workers-pane.msft.png":::
 
 *   If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
 
@@ -136,9 +130,7 @@ If the service worker causes any errors, a new label called **Errors** shows
 up.
 
 <!--
-:::image type="complex" source="../media/sw-error.msft.png" alt-text="Service worker with errors." lightbox="../media/sw-error.msft.png":::
-   Service worker with errors
-:::image-end:::
+:::image type="content" source="../media/sw-error.msft.png" alt-text="Service worker with errors." lightbox="../media/sw-error.msft.png":::
 -->
 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
@@ -150,18 +142,14 @@ up.
 
 The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache).
 
-:::image type="complex" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane." lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
-   The **Cache Storage** Pane
-:::image-end:::
+:::image type="content" source="../media/cache-pane-cache-storage-resources.msft.png" alt-text="The Cache Storage Pane." lightbox="../media/cache-pane-cache-storage-resources.msft.png":::
 
 > [!NOTE]
 > The first time you open a cache and add a resource to it, DevTools may not detect the change.  Refresh the page and to display the cache.
 
 If you have two or more caches open, the caches display under the following **Cache Storage** dropdown.
 
-:::image type="complex" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown." lightbox="../media/cache-pane-cache-storage.msft.png":::
-   The **Cache Storage** dropdown
-:::image-end:::
+:::image type="content" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown." lightbox="../media/cache-pane-cache-storage.msft.png":::
 
 
 <!-- ====================================================================== -->
