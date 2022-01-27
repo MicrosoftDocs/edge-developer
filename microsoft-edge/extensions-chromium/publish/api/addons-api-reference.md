@@ -93,7 +93,7 @@ There are several responses, for different scenarios.
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": "Date Time",
     "status": "InProgress",
@@ -107,7 +107,7 @@ There are several responses, for different scenarios.
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": "Date Time",
     "status": "Succeeded",
@@ -121,7 +121,7 @@ There are several responses, for different scenarios.
 
 ```json
  {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": "Date Time",
     "status": "Failed",
@@ -176,7 +176,7 @@ Publishes the current draft of the product to Microsoft Edge Add-ons.
 
 #### Response headers
 
-* Location: `{OperationID}`
+* Location: `{operationID}`
 
 #### Status codes
 
@@ -220,7 +220,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
@@ -234,7 +234,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
@@ -248,7 +248,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
@@ -262,7 +262,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
@@ -276,7 +276,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
@@ -294,7 +294,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": "Date Time",
     "status": "Succeeded",
@@ -308,7 +308,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 
 ```json
 {
-    "id": "{OperationID}",
+    "id": "{operationID}",
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
