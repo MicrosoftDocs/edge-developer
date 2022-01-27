@@ -129,7 +129,7 @@ To get the product ID:
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -H "Content-Type: application/zip" \
--X PUT \
+-X POST \
 -T $FILE_NAME \
 -v \
 https://addons.edge.microsoft.com/api/v1/products/$productID/submissions/draft/package
