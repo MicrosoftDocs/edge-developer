@@ -127,7 +127,7 @@ Body content: the package file to upload
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package
 ```
 
-If the request succeeded and the update process began, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the operationID which is required for checking the status of the update operation.
+If the request succeeds and the update process begins, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` which is required for checking the status of the update operation.
 
 ### See also
 
