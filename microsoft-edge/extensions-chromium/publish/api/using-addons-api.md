@@ -183,7 +183,7 @@ Body content: Notes for certification, in plain text format
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
 
-If the request succeeded and the publishing process began, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the operationID which is required for checking the status of the publish operation.
+If the request succeeds and the publishing process begins, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the `operationID` which is required for checking the status of the publish operation.
 
 ### See also
 
