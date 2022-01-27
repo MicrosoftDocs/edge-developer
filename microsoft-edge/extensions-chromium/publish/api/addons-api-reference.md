@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2021
 ---
-# Microsoft Edge Add-ons API Reference (under development)
+# Microsoft Edge Add-ons API Reference (in private preview)
 
 > [!NOTE]
 > This article is a Request for Comments.  The Microsoft Edge Add-ons API is currently in private preview, and the Publish APIs page is not yet available at Partner Center for everyone.  The Microsoft Edge Add-ons API is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here are not exhaustive and are subject to change.
