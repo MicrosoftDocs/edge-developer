@@ -129,7 +129,9 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 If the request succeeded and the update process began, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the operationID which is required for checking the status of the update operation.
 
-API reference: [Upload a package to update an existing submission](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
+### See also
+
+*  API Reference: [Upload a package to update an existing submission](addons-api-reference.md#upload-a-package-to-update-an-existing-submission)
 
 
 <!-- ====================================================================== -->
@@ -153,7 +155,9 @@ Header Parameters: Authorization: Bearer $TOKEN
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package/operations/$operationID
 ```
 
-API reference: [Check the status of a package upload](addons-api-reference.md#check-the-status-of-a-package-upload)
+### See also
+
+*  API Reference: [Check the status of a package upload](addons-api-reference.md#check-the-status-of-a-package-upload)
 
 
 <!-- ====================================================================== -->
@@ -181,7 +185,9 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 If the request succeeded and the publishing process began, you receive a `202 Accepted` response status code with a `Location` header.  This location header contains the operationID which is required for checking the status of the publish operation.
 
-API reference: [Publish the product draft submission](addons-api-reference.md#publish-the-product-draft-submission)
+### See also
+
+*  API Reference: [Publish the product draft submission](addons-api-reference.md#publish-the-product-draft-submission)
 
 
 <!-- ====================================================================== -->
@@ -204,4 +210,6 @@ Header Parameters: Authorization: Bearer $TOKEN
 -v \ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
 
-API reference: [Check the publishing status](addons-api-reference.md#check-the-publishing-status)
+### See also
+
+*  API Reference: [Check the publishing status](addons-api-reference.md#check-the-publishing-status)
