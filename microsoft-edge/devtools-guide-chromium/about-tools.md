@@ -9,13 +9,7 @@ ms.date: 01/28/2021
 ---
 # About the list of tools in DevTools
 
-These are interesting things of note about the tools that make up DevTools, which are not immediately obvious.
-
-
-<!-- ====================================================================== -->
-## Count of tools
-
-What is the list of tools in DevTools?  If we don't count features that are within a tool, there are currently around 30 tools in DevTools.
+There are currently around 30 tools in DevTools, not counting features that are within a tool.  There are:
 
 * Three non-closeable tools (Elements, Console, Sources).
 
@@ -29,17 +23,19 @@ The **Command Menu** isn't considered a tool, but is a way to select and use the
 
 
 <!-- ====================================================================== -->
-## The three More Tools menus
+## The More Tools menus
 
-The **Customize and control DevTools** > **More tools** menu is more complete than the toolbar > **More Tools** (**+**) menus, because it includes every non-closeable tool.  This **More tools** menu only omits the three non-closeable tools (**Elements**, **Console**, **Sources**) and the toolbar icon tools (**Inspect tool**, **Device Emulation**).
+The three **More tools** menus omit the non-closeable tools (**Elements**, **Console**, **Sources**) and the toolbar icon tools (**Inspect tool**, **Device Emulation**).
 
-The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar only lists tools that aren't open already, and it doesn't list the toolbar icon tools (**Inspect tool**, **Device Emulation**).  If a closeable tool is open, it is removed from the toolbar **More Tools** (**+**) menu, but that tool remains in the **Customize** > **More tools** menu.
+The **More Tools** (**+**) menu on the main toolbar and Drawer toolbar contain the same tools, regardless of whether they are Panel tools or Drawer tools.  Open tools are omitted.  In contrast, the **Customize and control DevTools** > **More tools** menu includes tools that are already open.
 
-The **More Tools** (**+**) menu on the main toolbar and the Drawer toolbar have the same list of tools (the non-open tools), regardless of whether they are Panel tools or Drawer tools.
+<!-- detail: which toolbar the tool opens in.  Different behavior for the 3 More Tools menus. -->
 
 
 <!-- ====================================================================== -->
 ## Panel tools vs. Drawer tools
+
+In the **Command Menu**:
 
 * _Panel tools_ are tools which open in the main toolbar, which is at the top of DevTools by default, or in the **Activity Bar** when using **Focus Mode**.
 
@@ -57,7 +53,7 @@ The main toolbar can be (in effect), converted to showing icons rather than tabs
 
 The Activity Bar can be placed vertically or horizontally.
 
-To switch to **Focus Mode** to show the **Activity Bar** instead of the main toolbar with labeled tabs, select **Settings** > **Experiments** > **Focus Mode** checkbox.
+To switch to **Focus Mode** to show the **Activity Bar** instead of the main toolbar with labeled tabs, select the **Settings** > **Experiments** > **Focus Mode** checkbox.
 
 
 <!-- ====================================================================== -->
