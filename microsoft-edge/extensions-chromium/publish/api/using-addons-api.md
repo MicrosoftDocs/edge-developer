@@ -38,7 +38,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 > [!NOTE]
 > The **Publish API** page is only present at Partner Center for participants of the private preview.
 
-1. Visit Microsoft Partner Center and login to the account from which you have already published an add-on.
+1. Visit Microsoft Partner Center and sign in to the account from which you have already published an add-on.
 
 1. Under the **Microsoft Edge** program, select **Publish API**.
 
@@ -124,7 +124,7 @@ Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
-`$productID` is the product ID of the Microsoft Edge Add-on that you want to update. To get the product ID, login to Microsoft Partner Center. Go to **Microsoft Edge** > **Overview**, and then select the extension of the product ID you need.  The extension overview page opens.  The product ID key is available in the **Extension Identity** section.
+`$productID` is the product ID of the Microsoft Edge Add-on that you want to update. To get the product ID, sign in to Microsoft Partner Center. Go to **Microsoft Edge** > **Overview**, and then select the extension of the product ID you need.  The extension overview page opens.  The product ID key is available in the **Extension Identity** section.
 
 ### Sample request
 
