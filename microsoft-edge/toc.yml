@@ -393,7 +393,7 @@
                   href: devtools-guide-chromium/rendering-tools/index.md
                   displayName: Performance tool
 
-                - name: Optimize website speed
+                - name: Optimize website speed using Lighthouse
                   href: devtools-guide-chromium/speed/get-started.md
                   displayName: Performance tool, Lighthouse tool, Network tool
 

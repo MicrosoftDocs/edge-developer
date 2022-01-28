@@ -9,7 +9,7 @@ ms.date: 06/07/2021
 ---
 # Overview of accessibility testing using DevTools
 
-In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in a demo page, and we discuss how to fix them.  Open the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab to try it out yourself and you can test along.
+In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in a demo page, and we discuss how to fix them.  Open the [accessibility testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab to try it out yourself and you can test along.
 
 :::image type="content" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page used in this article with a few accessibility issues." lightbox="../media/a11y-testing-basics-demopage.msft.png":::
 

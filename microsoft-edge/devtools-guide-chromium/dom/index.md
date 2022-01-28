@@ -28,14 +28,6 @@ This tutorial assumes that you know the difference between the DOM and HTML. See
 
 
 <!-- ====================================================================== -->
-## Open DOM examples
-
-To open the DOM Examples demo page for this tutorial:
-
-1. Right-click [DOM Examples](https://microsoft-edge-chromium-devtools.glitch.me/static/dom) and open that page in a new tab or window.
-
-
-<!-- ====================================================================== -->
 ## View DOM nodes
 
 The DOM Tree of the Elements panel is where you do all DOM-related activities in DevTools.
@@ -44,7 +36,7 @@ The DOM Tree of the Elements panel is where you do all DOM-related activities in
 
 When you are interested in a particular DOM node, **Inspect** is a fast way to open DevTools and investigate that node.
 
-1. If it's not open already, open the [DOM Examples](#open-dom-examples) demo page in a new tab or window.
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.  To do this, right-click the link, or press and hold `Control` (Windows, Linux) or `Command` (macOS) and then click the link.
 
 1. Under **Inspect a Node**, right-click **Michelangelo** and then select **Inspect**.
 
@@ -66,7 +58,7 @@ Inspecting a node is also the first step towards viewing and changing the styles
 
 Once you have selected a node in the DOM Tree, you can navigate the DOM Tree with your keyboard.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Navigate the DOM Tree with a Keyboard**, right-click **Ringo** and then select **Inspect**.  `<li>Ringo</li>` is selected in the DOM Tree.
 
@@ -88,7 +80,7 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 When viewing the DOM Tree, you may find yourself interested in a DOM node that is not currently in the viewport.  For example, suppose that you scrolled to the bottom of the page, and you are interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you can review the node.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Scroll into View**, right-click **Magritte** and then select **Inspect**.
 
@@ -124,7 +116,7 @@ You can edit the DOM on the fly and review how the changes affect the page.
 
 To edit the content of a node, double-click the content in the DOM Tree.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Edit Content**, right-click **Michelle** and then select **Inspect**.
 
@@ -138,7 +130,7 @@ To edit the content of a node, double-click the content in the DOM Tree.
 
 To edit attributes, double-click the attribute name or value.  Follow the instructions to learn how to add attributes to a node.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Edit Attributes**, right-click **Howard** and then select **Inspect**.
 
@@ -154,7 +146,7 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 To edit the type of a node, double-click the type and then type in the new type.<!--do the following steps do that?-->
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Edit Node Type**, right-click **Hank** and then select **Inspect**.
 
@@ -168,7 +160,7 @@ To edit the type of a node, double-click the type and then type in the new type.
 
 Drag nodes to reorder them.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Reorder DOM Nodes**, right-click **Elvis Presley** and then select **Inspect**.
 
@@ -180,7 +172,7 @@ Drag nodes to reorder them.
 
 You can force nodes to remain in states including `:active`, `:hover`, `:focus`, `:visited`, and `:focus-within`:
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Force state**, hover on **The Lord of the Flies**.  The background color becomes orange.
 
@@ -192,7 +184,7 @@ You can force nodes to remain in states including `:active`, `:hover`, `:focus`,
 
 Press `H` to hide a node, as follows:
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Hide a node**, right-click **The Stars My Destination** and then select **Inspect**.
 
@@ -206,7 +198,7 @@ Press `H` to hide a node, as follows:
 
 Press `Delete` to delete a node, as follows:
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Delete a Node**, right-click **Foundation** and then select **Inspect**.  Inspect the following nodes:
     * The Illustrated Man
@@ -227,7 +219,7 @@ DevTools provides a few shortcuts for accessing DOM nodes from the Console, or g
 
 When you inspect a node, the `== $0` text next to the node means that you can reference this node in the Console with the variable `$0`.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Reference the currently-selected node with $0**, right-click **The Left Hand of Darkness** and then select **Inspect**.
 
@@ -247,7 +239,7 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 If you need to refer back to a node many times, store it as a global variable.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Store as global variable**, right-click **The Big Sleep**, and then select **Inspect**.
 
@@ -261,7 +253,7 @@ If you need to refer back to a node many times, store it as a global variable.
 
 Copy the JavaScript path to a node when you need to reference it in an automated test.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Copy JS path**, right-click **The Brothers Karamazov**, and then select **Inspect**.
 
@@ -285,7 +277,7 @@ DevTools enables you to pause the JavaScript of a page when the JavaScript modif
 
 Use attribute modification breakpoints when you want to pause the JavaScript that causes any attribute of a node to change.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Break on attribute modifications**, right-click **Sauerkraut** and then select **Inspect**.
 
@@ -305,7 +297,7 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 If you want to pause when a particular node is removed, use node removal breakpoints.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Break on Node Removal**, right-click **Neuromancer** and then select **Inspect**.
 
@@ -319,7 +311,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 After you put a subtree modification breakpoint on a node, DevTools pauses the page when any of the descendants of the node are added or removed.
 
-1. [Open DOM Examples](#open-dom-examples).
+1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
 1. Under **Break on Subtree Modifications**, right-click **A Fire Upon The Deep** and then select **Inspect**.
 

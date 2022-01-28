@@ -20,7 +20,6 @@ ms.date: 06/24/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-
 # Find and fix problems using the Issues tool
 
 In Microsoft Edge DevTools, the **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues.
@@ -75,7 +74,7 @@ To include issues that are caused by third-party sites, at the top of the **Issu
 
 The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
 
-1.  Open the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab, and then open DevTools.
+1.  Open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab, and then open DevTools.
 
 1.  Open the **Issues** tool by selecting the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)).
 
@@ -113,7 +112,7 @@ If an element has an associated issue, the DOM tree in the **Elements** tool sho
 
 To display an issue for elements with wavy underlines in the DOM tree, perform the following steps.
 
-1. Open a page, such as the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
+1. Open a page, such as the [accessibility testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
 
 1. Open DevTools and then select the **Elements** tab.
 

@@ -25,7 +25,7 @@ In some cases, contrast is affected by setting the browser to light theme or dar
 
 As an example, on the demo page, the blue links of the sidebar navigation menu have enough contrast, but the green **Dogs** link in the **Donation status** section does not have enough contrast.  Review those elements using the **Inspect** tool, as follows:
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.  Then select **F12** to open DevTools.
 
 1.  Select the **Inspect** (![Inspect button.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 

@@ -28,18 +28,15 @@ Complete these interactive tutorials to learn the basics of viewing and changing
 <!-- ====================================================================== -->
 ## Open CSS Examples
 
-1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and click **CSS Examples** to open in a new window.
+Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.  To do this, right-click the link, or press and hold `Control` (Windows, Linux) or `Command` (macOS) and then click the link.
 
-    [CSS Examples](https://microsoft-edge-chromium-devtools.glitch.me/static/css/examples/ecma.html)
-
-    > [!NOTE]
-    > If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromium/customize/placement) to the right of your viewport (displayed in the following figure), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.
+If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromium/customize/placement) to the right of your viewport (displayed in the following figure), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.
 
 
 <!-- ====================================================================== -->
 ## View the CSS for an element
 
-1.  [Open CSS Examples](#open-css-examples).
+1.  Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
 
 1.  Right-click the `Inspect Me!` text, and then click **Inspect**.
 
@@ -100,7 +97,7 @@ To display how an element looks when a CSS class is applied to or removed from a
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
-1.  [Open CSS Examples](#open-css-examples).
+1.  Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
 
 1.  Right-click the `Add A Class To Me!` text, and then click **Inspect**.
 
@@ -121,7 +118,7 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
-1.  [Open CSS Examples](#open-css-examples).
+1.  Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
 
 1.  Hover on the `Hover Over Me!` text.  The background color changes.
 
@@ -144,7 +141,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 > [!NOTE]
 > Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
 
-1.  [Open CSS Examples](#open-css-examples).
+1.  Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
 
 1.  Right-click the `Change My Margin!` text, and then click **Inspect**.
 

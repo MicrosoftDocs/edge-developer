@@ -217,11 +217,9 @@ DevTools now display the `report-only` label for COEP and COOP that are set to `
 
 :::image type="content" source="../../media/2020/06/experimental-tag-14px.msft.png" alt-text="Experimental feature.":::
 
-The **CSS Overview** tool now displays a list of elements on your page that have color contrast issues.  The following demo page has an example of a color contrast issue.
+The **CSS Overview** tool now displays a list of elements on your page that have color contrast issues.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
 
-[CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me)
-
-To enable this experiment, under **Settings** > **Experiments**, choose the **CSS Overview** checkbox.  To view a list of elements that have a color contrast issue, on **Contrast issues**, choose **Text**.  To open the element in the **Elements** tool, choose an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).  To review real-time updates on this feature in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
+To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox.  To view a list of elements that have a color contrast issue, on **Contrast issues**, choose **Text**.  To open the element in the **Elements** tool, choose an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).  To review real-time updates on this feature in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
 
 :::image type="content" source="../../media/2020/10/css-overview.msft.png" alt-text="Low color contrast issues." lightbox="../../media/2020/10/css-overview.msft.png":::
 

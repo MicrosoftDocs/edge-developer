@@ -44,7 +44,7 @@ In general, use the Network panel when you need to make sure that resources are 
 
 *   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.
 
-If you're looking for ways to improve page load performance, don't start with the **Network** tool.  There are many types of load performance issues that aren't related to network activity.  Start with the **Lighthouse** tool, because it gives you targeted suggestions on how to improve your page.  See [Optimize website speed](../speed/get-started.md).
+If you're looking for ways to improve page load performance, don't start with the **Network** tool.  There are many types of load performance issues that aren't related to network activity.  Start with the **Lighthouse** tool, because it gives you targeted suggestions on how to improve your page.  See [Optimize website speed using Lighthouse](../speed/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -52,7 +52,7 @@ If you're looking for ways to improve page load performance, don't start with th
 
 To get the most out of this tutorial, open the demo and try out the features on the demo page.
 
-1. Open the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) in a new browser window or tab.
+1. Open the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) in a new tab or window.
 
     :::image type="content" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="The demo." lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
 

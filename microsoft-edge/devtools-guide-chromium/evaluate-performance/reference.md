@@ -22,9 +22,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Performance features reference
 
-This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.
+This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
-See [Get Started With Analyzing Runtime Performance](./index.md) for a guided tutorial on how to analyze the performance of a page using DevTools.
+For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Get started analyzing runtime performance](./index.md).
 
 
 <!-- ====================================================================== -->
@@ -134,7 +134,7 @@ To learn how to interact with the paint information, see [View layers](#view-lay
 <!-- ====================================================================== -->
 ## Save a recording
 
-To save a recording, open the contextual menu (right-click), and click **Save Profile**.
+To save a recording, right-click the recording and then select **Save Profile**.
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="Save Profile." lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
 
@@ -142,7 +142,7 @@ To save a recording, open the contextual menu (right-click), and click **Save Pr
 <!-- ====================================================================== -->
 ## Load a recording
 
-To load a recording, open the contextual menu (right-click), and click **Load Profile**.
+To load a recording, right-click the recording and then select **Load Profile**.
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="Load Profile." lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
 
@@ -188,13 +188,13 @@ Select `Control`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the searc
 
 To navigate activities that match your query:
 
-*  Click the **Previous** (![Previous.](../media/previous-icon.msft.png)) and **Next** (![Next.](../media/next-icon.msft.png)) buttons.
+1. Click the **Previous** (![Previous.](../media/previous-icon.msft.png)) and **Next** (![Next.](../media/next-icon.msft.png)) buttons.
 
-*  To select the next activity, press `Enter`.  To select the previous activity, press `Shift`+`Enter`.
+1. To select the next activity, press `Enter`.  To select the previous activity, press `Shift`+`Enter`.
 
 To modify query settings:
 
-*  To make the query case sensitive, click the **Case sensitive** (![Case sensitive.](../media/search-case-icon.msft.png)) button.
+*  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive.](../media/search-case-icon.msft.png)) button.
 
 *  To use a regular expression in your query, click the **Regex** (![Regex.](../media/search-regex-icon.msft.png)) button.
 
@@ -226,26 +226,27 @@ When JS samples are disabled, only high-level events such as `Event: click` and 
 
 After recording a page, you don't need to rely solely on the **Main** section to analyze activities.  DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
-*   When you want to view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
+*  When you want to view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
 
-*   When you want to view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
+*  When you want to view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
 
-*   When you want to view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
-
-> [!NOTE]
-> The next three sections all refer to the same demo.  You can run the demo yourself at [Activity Tabs Demo](https://microsoft-edge-chromium-devtools.glitch.me/perf/activitytabs.html).
+*  When you want to view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
 
 #### Root activities
 
+This section uses the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) page.
+
 Here's an explanation of the **root activities** concept that is mentioned in the **Call Tree** panel, **Bottom-Up** panel, and **Event Log** panel.
 
-Root activities are those which cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.
+_Root activities_ are those which cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.
 
 In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** panels, root activities are the top-level items.
 
-See the [Call Tree](#the-call-tree-tab) tab for an example of root activities.
+For an example of root activities, see the next section, "The Call Tree tab".
 
 #### The Call Tree tab
+
+This section uses the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) page.
 
 Use the **Call Tree** tab to view which [root activities](#root-activities) cause the most work.
 
@@ -266,6 +267,8 @@ By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping*
 Click **Show Heaviest Stack** (![Show Heaviest Stack.](../media/show-heaviest-stack-icon.msft.png)) to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.
 
 #### The Bottom-Up panel
+
+This section uses the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) page.
 
 Use the **Bottom-Up** panel to view which activities directly took up the most time in aggregate.
 
