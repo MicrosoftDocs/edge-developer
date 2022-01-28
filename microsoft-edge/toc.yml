@@ -75,6 +75,8 @@
 # TOOLS =======================================================================
         - name: Tools
           items:
+            - name: About the list of tools in DevTools
+              href: devtools-guide-chromium/about-tools.md
 # Non-closable panel tools, in default order ==================================
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
