@@ -77,7 +77,7 @@
           items:
 # Non-closable panel tools, in default order ==================================
 # Elements tool ---------------------------------------------------------------
-            - name: Elements tool
+            - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
@@ -153,7 +153,7 @@
                   href: devtools-guide-chromium/console/console-filters.md
                   displayName: Console tool
 # Sources tool ----------------------------------------------------------------
-            - name: Sources tool
+            - name: Sources tool, for JavaScript debugging
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
@@ -229,7 +229,7 @@
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
-            - name: Application tool
+            - name: Application tool, for Storage
               items:
                 - name: View, edit, and delete cookies
                   href: devtools-guide-chromium/storage/cookies.md
@@ -472,7 +472,7 @@
 # /Tools bucket
 # LOWER NON-TOOL NODES ========================================================
 # Command Menu ----------------------------------------------------------------
-        - name: Command Menu
+        - name: Command Menu and keyboard shortcuts
           items:
             - name: Run commands in the Command Menu
               href: devtools-guide-chromium/command-menu/index.md
