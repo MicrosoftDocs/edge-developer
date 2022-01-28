@@ -33,27 +33,38 @@ The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatic
 <!-- ====================================================================== -->
 ## Before you begin
 
-To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center.
+To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials.
 
 > [!NOTE]
-> The **Publish APIs** UI is not yet present at Partner Center.
+> The **Publish API** page is only present at Partner Center for participants of the private preview.
 
 1. Visit Microsoft Partner Center and login to the account from which you have already published an add-on.
 
-1. Under the **Microsoft Edge** program, select **Publish APIs**.
+1. Under the **Microsoft Edge** program, select **Publish API**.
 
-1. In the **Publish APIs** page, select the **Create API credentials** button to generate the API credentials.  This step may take a few minutes.  After the APIs are enabled, the **Client ID**, **Client Secret**, and **Auth Token URL** are displayed on this page.
+1. In the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes.
 
-1. Note the **ClientID**, **Client Secret** and the **Auth Token URL**. You'll use them in the next step to get an access token. Note that client secret is visible only once, after enabling or renewing the API. 
+   > [!div class="mx-imgBorder"]
+   > ![The 'Publish API' page at Partner Center, with a 'Create API credentials' button.](https://user-images.githubusercontent.com/11265822/150777593-42cb9d37-0c1f-4ef4-9de6-9c4bc1166b96.png)
 
-![image](https://user-images.githubusercontent.com/11265822/150777593-42cb9d37-0c1f-4ef4-9de6-9c4bc1166b96.png)
+   <!-- make window smaller before capture.  make fresh capture.  save .png in present repo as ../media/create-api-credentials-button.png, replacing path in parens -->
+
+   The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client Secret**, and **Auth Token URL** are now displayed on the Publish APIs page.
+
+   <!-- possibly add a screenshot here, with fake data with the correct number of characters, or value strings blurred out or erased -->
+
+1. Write down the **Client ID**, **Client Secret** and the **Auth Token URL**.  You'll use these values in the next step, to get an access token.
+
+> [!IMPORTANT]
+> Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).
 
 
 <!-- ====================================================================== -->
 ## Retrieving the access token
 
 > [!NOTE]
-> The Microsoft Edge Add-ons API is not yet available for testing.
+> The Microsoft Edge Add-ons API is currently available only for participants of the private preview.
+
 
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Auth Token URL.  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
