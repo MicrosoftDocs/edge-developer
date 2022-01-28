@@ -23,19 +23,23 @@ What is the list of tools in DevTools?  If we don't count features that are with
 
 * 11 default tools (tabs on the main toolbar), including the three non-closable tools.
 
-* Around 30 tools on the **Customize and control DevTools** > More tools menu.
+* Around 30 tools on the **Customize and control DevTools** > **More tools** menu.
 
 The **Command Menu** isn't considered a tool, but is a way to select and use the tools, including directly using individual features of tools.
 
 
 <!-- ====================================================================== -->
-## Viewing lists of tools in the UI
+## The three More Tools menus
 
-The **Customize and control DevTools** > **More tools** menu is more complete than the toolbar > **More Tools** (+) menus, because it includes every non-closeable tool; it only omits the three non-closeable tools and the two toolbar icon tools (Inspect tool, Device Emulation).
+The **Customize and control DevTools** > **More tools** menu is more complete than the toolbar > **More Tools** (**+**) menus, because it includes every non-closeable tool.  This **More tools** menu only omits the three non-closeable tools (**Elements**, **Console**, **Sources**) and the toolbar icon tools (**Inspect tool**, **Device Emulation**).
 
-The **More Tools** (**+**) menu on the main toolbar (and on the Drawer toolbar) only lists tools that aren't open already.  If a tool is open, it is removed from the toolbar **More Tools** (+) menu, but that tool remains in the **Customize** > **More tools** menu.  The main toolbar and the Drawer toolbar have the same list of tools (the non-open tools), regardless of whether they are Panel tools or Drawer tools.
+The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar only lists tools that aren't open already, and it doesn't list the toolbar icon tools (**Inspect tool**, **Device Emulation**).  If a closeable tool is open, it is removed from the toolbar **More Tools** (**+**) menu, but that tool remains in the **Customize** > **More tools** menu.
 
-### Panel tools vs. Drawer tools
+The **More Tools** (**+**) menu on the main toolbar and the Drawer toolbar have the same list of tools (the non-open tools), regardless of whether they are Panel tools or Drawer tools.
+
+
+<!-- ====================================================================== -->
+## Panel tools vs. Drawer tools
 
 * _Panel tools_ are tools which open in the main toolbar, which is at the top of DevTools by default, or in the **Activity Bar** when using **Focus Mode**.
 
