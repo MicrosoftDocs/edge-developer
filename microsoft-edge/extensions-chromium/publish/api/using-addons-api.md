@@ -36,7 +36,7 @@ The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatic
 To use the Microsoft Edge Add-ons API, you need to enable the API for your project in the Microsoft Partner Center, by creating API credentials.
 
 > [!NOTE]
-> The **Publish API** page is only present at Partner Center for participants of the private preview.
+> The **Publish APIs** UI is not yet present at Partner Center.
 
 1. Visit Microsoft Partner Center and sign in to the account from which you have already published an add-on.
 
@@ -63,7 +63,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 ## Retrieving the access token
 
 > [!NOTE]
-> The Microsoft Edge Add-ons API is currently available only for participants of the private preview.
+> The Microsoft Edge Add-ons API is not yet available for testing.
 
 
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Auth Token URL.  The tenant information is available in the URL that you received in the **Before you begin** steps above.
