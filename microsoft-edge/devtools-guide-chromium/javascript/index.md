@@ -30,9 +30,9 @@ This article teaches you the basic workflow for debugging any JavaScript issue i
 
 Finding a series of actions that consistently reproduce a bug is always the first step to debugging.
 
-1.  Choose the following **Open Demo** link and open the webpage in a new tab.  To open the demo in a new tab, select and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then choose **Open Demo**.
+1. Open the [Debugging demo page](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new tab or window.  To do this, right-click, or press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click the link.
 
-    [Open Demo](https://microsoftedge.github.io/Demos/devtools-js-get-started/)
+   If you want to see the source code, see [Source files for the Debugging demo](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started).
 
 1.  Enter `5` in the **Number 1** text box.
 1.  Enter `1` in the **Number 2** text box.

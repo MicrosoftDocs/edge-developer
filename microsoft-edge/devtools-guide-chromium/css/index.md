@@ -35,6 +35,8 @@ Complete these interactive tutorials to learn the basics of viewing and changing
     > [!NOTE]
     > If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromium/customize/placement) to the right of your viewport (displayed in the following figure), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.
 
+[Source files for the CSS Examples demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started)
+
 
 <!-- ====================================================================== -->
 ## View the CSS for an element

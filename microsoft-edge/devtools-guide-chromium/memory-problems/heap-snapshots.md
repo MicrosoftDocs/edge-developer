@@ -27,6 +27,8 @@ Learn how to record heap snapshots with the Microsoft Edge DevTools heap profile
 The Microsoft Edge DevTools heap profiler shows memory distribution by the JavaScript objects and related DOM nodes
 of your page.  Use it to take JavaScript heap (JS heap) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  Navigate to [Objects retaining tree](./memory-101.md#objects-retaining-tree).
 
+[Source files for the "Record heap snapshots" demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot)
+
 
 <!-- ====================================================================== -->
 ## Take a snapshot
@@ -61,7 +63,8 @@ Choose **Clear all profiles** icon to remove snapshots (both from DevTools and a
 Closing the DevTools window does not delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
 > [!NOTE]
-> Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+> Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.  [Source files for the "Record heap snapshots" demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot).
+
 
 
 <!-- ====================================================================== -->
@@ -191,7 +194,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 > -->
 >
 > > [!NOTE]
-> > Try out this example of [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html).
+> > Try out this example of [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html).  [Source files for the "Record heap snapshots" demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot).
 >
 
 
@@ -238,16 +241,16 @@ leafRef = null;
 //#NOW able to be #tree GC
 ```
 
-The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when leafRef is nullified is the WHOLE tree under `#tree` a candidate for GC.
+The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for GC.
 
 :::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM subtrees." lightbox="../media/memory-problems-tree-gc.msft.png":::
    DOM subtrees
 :::image-end:::
 
 > [!NOTE]
-> Examples:  Try this example of a [leaking DOM node](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).
+> Examples:  Try this example of a [leaking DOM node](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where it may leak and how to detect it.  You can also try this example of [DOM leaks being bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).  [Source files for the "Record heap snapshots" demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot).
 
-To read more about DOM leaks and memory analysis fundamentals checkout [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
+To read more about DOM leaks and memory analysis fundamentals, check out [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 
 <!--
 > [!NOTE]

@@ -435,6 +435,8 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 1.  Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/).
 
+   If you want to see the source code, see [Source files for the demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started).
+
 1.  Select `F12` to open the **DevTools** window, and then select the **Sources** tab.
 
 1.  In the **Navigator** pane (on the left), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.

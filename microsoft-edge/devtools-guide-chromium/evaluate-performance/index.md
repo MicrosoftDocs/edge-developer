@@ -45,6 +45,8 @@ In the following tutorial, you open DevTools on a live page and use the **Perfor
     https://microsoftedge.github.io/Demos/devtools-performance-get-started/
     ```
 
+    [Source files for the "Sluggish Animation" demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started)
+
 1.  Select `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open DevTools.
 
     :::image type="complex" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
