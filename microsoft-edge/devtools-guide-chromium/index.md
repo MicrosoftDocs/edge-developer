@@ -256,6 +256,10 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 *  The **Device Emulator**.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
 
+### See also
+
+* [About the list of tools in DevTools](about-tools.md)
+
 
 <!-- ====================================================================== -->
 ## Power tip: Use the command menu
@@ -320,18 +324,19 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 <!-- ====================================================================== -->
 ## See also
 
-*   [Get started with HTML and the DOM](beginners/html.md)
-*   [Inspect and change the current webpage](dom/index.md)
-*   [Emulate how your product behaves on different devices](device-mode/index.md)
-*   [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
-*   [Debug your JavaScript](./javascript/index.md)
-*   [Live console](console/index.md)
-*   [Accessibility, performance, compatibility, and security issues](./issues/index.md)
-*   [Inspect the network traffic](./network/index.md)
-*   [Inspect where the browser stored content](./storage/sessionstorage.md)
-*   [Evaluate the performance](evaluate-performance/index.md)
-*   [Memory problems](memory-problems/index.md)
-*   [Rendering issues](./rendering-tools/index.md)
-*   [Use a development environment](./sources/index.md)
-*   [Sync changes in DevTools with the file system](./workspaces/index.md)
-*   [Override files from the web](./javascript/overrides.md)
+* [About the list of tools in DevTools](about-tools.md)
+* [Get started with HTML and the DOM](beginners/html.md)
+* [Inspect and change the current webpage](dom/index.md)
+* [Emulate how your product behaves on different devices](device-mode/index.md)
+* [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
+* [Debug your JavaScript](./javascript/index.md)
+* [Live console](console/index.md)
+* [Accessibility, performance, compatibility, and security issues](./issues/index.md)
+* [Inspect the network traffic](./network/index.md)
+* [Inspect where the browser stored content](./storage/sessionstorage.md)
+* [Evaluate the performance](evaluate-performance/index.md)
+* [Memory problems](memory-problems/index.md)
+* [Rendering issues](./rendering-tools/index.md)
+* [Use a development environment](./sources/index.md)
+* [Sync changes in DevTools with the file system](./workspaces/index.md)
+* [Override files from the web](./javascript/overrides.md)
