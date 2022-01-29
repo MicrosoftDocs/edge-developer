@@ -74,7 +74,7 @@ When you select **Collect garbage**, the browser runs garbage collection. When y
 <!-- ====================================================================== -->
 ## Identify the JavaScript code that retains detached elements
 
-Once you have found a detached element that cannot be garbage-collected, you can use the **Analyze** button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button takes a heap snapshot and populates the **Id** of the detached element with its location in the heap. For more information about heap snapshots, read [Record heap snapshots](heap-snapshots.md).
+Once you have found a detached element that cannot be garbage-collected, you can use the **Analyze** button in the **Detached Elements** tool to identify the JavaScript code running on the page that is still referencing the detached element. The **Analyze** button takes a heap snapshot and populates the **ID** of the detached element with its location in the heap. For more information about heap snapshots, read [Record heap snapshots using the Memory tool](heap-snapshots.md).
 
 :::image type="content" source="./images/analyze-detached-elements.msft.png" alt-text="Analyze Detached Elements in the Detached Elements tool." lightbox="./images/analyze-detached-elements.msft.png":::
 
@@ -82,7 +82,7 @@ To identify the JavaScript code that references a detached element:
 
 1. In the **Detached Elements** tool, click the **Analyze** (![The Analyze icon.](images/analyze-icon-light-mode.png)) icon.
 
-    The **Memory** tool opens in the bottom panel of DevTools.
+   The **Memory** tool opens in the bottom panel of DevTools.
 
 1. From the **Detached Elements** tool, select the **Id** field of a detached element.
 
@@ -108,11 +108,11 @@ Because the DOM is a fully connected graph, when one DOM node is retained in mem
 
 To identify the culprit node in a detached tree that is causing the entire tree to be retained:
 
-1.  Click the **Detach Elements** (![The Detach Elements icon.](images/detach-elements-icon-light-mode.png)) icon to destroy the parent-child links inside the detached tree.
+1. Click the **Detach Elements** (![The Detach Elements icon.](images/detach-elements-icon-light-mode.png)) icon to destroy the parent-child links inside the detached tree.
 
-    :::image type="content" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool." lightbox="./images/detached-elements-remove-links.msft.png":::
+   :::image type="content" source="./images/detached-elements-remove-links.msft.png" alt-text="The Detach Elements button in the Detached Elements tool." lightbox="./images/detached-elements-remove-links.msft.png":::
 
-1.  Click the **Collect garbage** (![The 'Collect garbage' icon.](images/collect-garbage-icon-light-mode.png)) icon.
+1. Click the **Collect garbage** (![The 'Collect garbage' icon.](images/collect-garbage-icon-light-mode.png)) icon.
 
 Parent-child links are removed inside the detached tree.
 
@@ -122,11 +122,11 @@ Parent-child links are removed inside the detached tree.
 
 You can check for detached elements from different origins or frames using the **Selected target** dropdown. 
 
-1.  Click the **Selected target** dropdown.
+1. Click the **Selected target** dropdown.
 
-    :::image type="content" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The 'Selected target' dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
+   :::image type="content" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The 'Selected target' dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
 
-1.  Select a different origin.
+1. Select a different origin.
 
 The new origin is displayed in the **Detached Elements** tool.
 

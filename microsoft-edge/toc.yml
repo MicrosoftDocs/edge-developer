@@ -329,7 +329,7 @@
                   href: devtools-guide-chromium/memory-problems/memory-101.md
                   displayName: Memory tool
 
-                - name: Record heap snapshots
+                - name: Record heap snapshots using the Memory tool
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
                   displayName: Memory tool
 

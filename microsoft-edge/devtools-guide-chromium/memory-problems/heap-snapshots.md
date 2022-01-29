@@ -1,6 +1,6 @@
 ---
-title: Record heap snapshots
-description: How to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
+title: Record heap snapshots using the Memory tool
+description: How to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks, using the Memory tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -20,22 +20,33 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Record heap snapshots
+# Record heap snapshots using the Memory tool
 
-Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
+Use the heap profiler in the **Memory** tool to do the following:
+*  Record JavaScript heap (JS heap) snapshots.
+*  Analyze memory graphs.
+*  Compare snapshots.
+*  Find memory leaks.
 
-The Microsoft Edge DevTools heap profiler shows memory distribution by the JavaScript objects and related DOM nodes
-of your page.  Use it to take JavaScript heap (JS heap) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  See [Objects retaining tree](./memory-101.md#objects-retaining-tree).
+The DevTools heap profiler shows memory distribution used by your page's JavaScript objects and related DOM nodes.  See also [Objects retaining tree](./memory-101.md#objects-retaining-tree)) in _Memory terminology_.
 
 
 <!-- ====================================================================== -->
 ## Take a snapshot
 
-In the **Memory** tool, select **Take snapshot** > **Start**.  You can also press `Ctrl`+`E` (Windows, Linux) or `Cmd`+`E` (macOS).
+<!--
+1. Open the __ demo page in a new tab or window.
+-->
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Choose profiling type." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+1. In DevTools, open the **Memory** tool.
 
-**Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you choose on the snapshot icon to view it.
+1. In the **Select profiling type** section, select the **Heap snapshot** option button.
+
+1. Click the **Take snapshot** button, and then click **Start**.  Or, press `Ctrl`+`E` (Windows, Linux) or `Cmd`+`E` (macOS).
+
+:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Selecting the 'Heap snapshot' profiling type in the Memory tool." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+
+**Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click the snapshot icon to view it.
 
 After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](./memory-101.md#object-sizes).
 
@@ -48,14 +59,16 @@ After the snapshot has been loaded into DevTools and has been parsed, the number
 <!-- ====================================================================== -->
 ## Clear snapshots
 
-Choose **Clear all profiles** icon to remove snapshots (both from DevTools and any memory associated with the renderer process).
+Click the **Clear all profiles** icon to remove snapshots (both from DevTools and any memory associated with the renderer process).
 
 :::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Remove snapshots." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
 
-Closing the DevTools window does not delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
+Closing the DevTools window doesn't delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
 > [!NOTE]
-> Try out this example of [scattered objects](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+> Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+
+<!-- [Repo source file location](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) -->
 
 
 <!-- ====================================================================== -->
@@ -63,7 +76,7 @@ Closing the DevTools window does not delete profiles from the memory associated 
 
 View snapshots from different perspectives for different tasks.
 
-**Summary view** shows objects grouped by the constructor name.  Use it to hunt down objects (and the memory use) based on type grouped by constructor name.  It is particularly helpful for **tracking down DOM leaks**.
+**Summary view** shows objects grouped by the constructor name.  Use it to hunt down objects (and the memory use) based on type grouped by constructor name.  **Summary view** is particularly helpful for **tracking down DOM leaks**.
 
 <!--todo: add profile memory problems memory diagnosis (tracking down DOM leaks) section when available  -->
 
@@ -76,11 +89,11 @@ To switch between views, use the selector at the top of the view.
 :::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Switch views selector." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
 
 > [!NOTE]
-> Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code are not captured.  Also, non-string values such as numbers are not captured.
+> Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code aren't captured.  Also, non-string values such as numbers aren't captured.
 
 ### Summary view
 
-Initially, a snapshot opens in the Summary view, displaying object totals, which may be expanded to show instances:
+Initially, a snapshot opens in the Summary view, displaying object totals, which can be expanded to show instances:
 
 :::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Summary view." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
 
@@ -97,7 +110,8 @@ Top-level entries are "total" lines.
 
 After expanding a total line in the upper view, all of the instances are displayed.  For each instance, the shallow and retained sizes are displayed in the corresponding columns.  The number after the `@` character is the unique ID of the object, allowing you to compare heap snapshots on per-object basis.
 
-Remember that yellow objects have JavaScript references and red objects are detached nodes which are referenced from one with a yellow background.
+* Yellow objects have JavaScript references.
+* Red objects are detached nodes.  A detached node is referenced from a node that has a yellow background.
 
 **What do the various constructor (group) entries in the Heap profiler correspond to?**
 
@@ -105,18 +119,18 @@ Remember that yellow objects have JavaScript references and red objects are deta
 
 | Constructor (group) entry | Description |
 |:--- |:--- |
-| **(global property)** | The intermediate objects between a global object (like `window`) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path may be represented as `[global] > (global property) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance reasons.  Globals are modified regularly and property access optimizations do a good job for non-global objects are not applicable for globals.  |
-| **(roots)** | The root entries in the retaining tree view are the entities that have references to the selected object.  The entries may also be references created by the engine for engine-specific purposes.  The engine has caches which reference objects, but all such references are weak and do not prevent an object from being collected given that there are no truly strong references.  |
-| **(closure)** | A count of references to a group of objects through function closures.  |
-| **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression.  |
-| **(compiled code)** | Everything related to compiled code.  Script is similar to a function, but corresponds to a `<script>` body.  SharedFunctionInfos (SFI) are objects standing between functions and compiled code.  Functions usually have a context, while SFIs do not.  |
-| **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**, and so on.  | References to elements or document objects of a particular type referenced by your code.  |
+| **(global property)** | The intermediate objects between a global object (like `window`) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path would be represented as `[global] > (global property) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance.  Globals are modified regularly and property access optimizations do a good job for non-global objects are not applicable for globals.  |
+| **(roots)** | The root entries in the retaining tree view are the entities that have references to the selected object.  These can also be references created by the engine for its own purposes.  The engine has caches which reference objects, but all such references are weak and don't prevent an object from being collected, given that there are no truly strong references.  |
+| **(closure)** | A count of references to a group of objects through function closures. |
+| **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression. |
+| **(compiled code)** | Everything related to compiled code.  Script is similar to a function, but corresponds to a `<script>` body.  SharedFunctionInfos (SFI) are objects standing between functions and compiled code.  Functions usually have a context, while SFIs do not. |
+| **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**, and so on.  | References to elements or document objects of a particular type referenced by your code. |
 
 <!--todo: add heap profiling summary section when available -->
 
 ### Comparison view
 
-Find leaked objects by comparing multiple snapshots to each other.  To verify that a certain application operation does not create leaks (for example, usually a pair of direct and reverse operations, like opening a document, and then closing it, should not leave any garbage), you may follow the scenario below:
+Find leaked objects by comparing multiple snapshots to each other.  To verify that a certain application operation does not create leaks (for example, usually a pair of direct and reverse operations, like opening a document, and then closing it, should not leave any garbage), you can follow the scenario below:
 
 1.  Take a heap snapshot before performing an operation.
 
@@ -173,7 +187,9 @@ function createLargeClosure() {
 }
 ```
 
-Try out this example of [why `eval` is evil](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html).
+Try out this example of [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html).
+
+<!-- [Repo source file location](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) -->
 
 <!--
 :::image type="content" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
@@ -183,7 +199,7 @@ Try out this example of [why `eval` is evil](https://microsoft-edge-chromium-dev
 <!-- ====================================================================== -->
 ## Look up color coding
 
-Properties and property values of objects have different types and are colored accordingly.  Each property has one of four types.
+Properties and property values of objects have different types and are colored accordingly.  Each property has one of four types:
 
 | Property Type | Description |
 |:--- |:--- |
@@ -198,39 +214,42 @@ Objects designated as `System` do not have a corresponding JavaScript type.  Eac
 <!-- ====================================================================== -->
 ## Find a specific object
 
-To find an object in the collected heap you may search using `Ctrl`+`F` and give the object ID.
+To find an object in the collected heap, you can search using `Ctrl`+`F` and give the object ID.
 
 
 <!-- ====================================================================== -->
 ## Uncover DOM leaks
 
-The heap profiler has the ability to reflect bidirectional dependencies between browser native objects (DOM nodes, CSS rules) and JavaScript objects.
-This helps to discover otherwise invisible leaks happening due to forgotten detached DOM subtrees floating around.
+The heap profiler has the ability to reflect bidirectional dependencies between browser native objects (DOM nodes, CSS rules) and JavaScript objects.  This helps to discover otherwise invisible leaks happening due to forgotten detached DOM subtrees floating around.
 
-DOM leaks may be bigger than you think.  Consider the following sample.  When is the #tree GC?
+DOM leaks may be bigger than you think.  Consider the following sample.  When is the `#tree` garbage-collected?
 
 ```javascript
 var select = document.querySelector;
 var treeRef = select("#tree");
 var leafRef = select("#leaf");
 var body = select("body");
+
 body.removeChild(treeRef);
+
 //#tree in not GC yet due to treeRef
 treeRef = null;
-//#tree is not GC yet due to indirect
-//reference from leafRef
+
+//#tree is not GC yet due to indirect reference from leafRef
+
 leafRef = null;
-//#NOW able to be #tree GC
+//#NOW can be #tree GC
 ```
 
-The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when leafRef is nullified is the WHOLE tree under `#tree` a candidate for GC.
+The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for garbage-collection (GC).
 
 :::image type="content" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM subtrees." lightbox="../media/memory-problems-tree-gc.msft.png":::
 
-> [!NOTE]
-> Examples:  Try this example of a [leaking DOM node](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html) to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html).
+Try out this example of [Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where DOM nodes can leak and how to detect such leakage. You can follow it up by also looking at this example of [DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).
 
-To read more about DOM leaks and memory analysis fundamentals checkout [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
+<!-- [Repo source file location](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) -->
+
+To read more about DOM leaks and memory analysis fundamentals, check out [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 
 <!-- Example: Try this **demo** to play with detached DOM trees. -->
 
