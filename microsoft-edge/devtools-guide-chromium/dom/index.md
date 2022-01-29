@@ -32,7 +32,7 @@ This tutorial assumes that you know the difference between the DOM and HTML. See
 
 1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and click [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) to open that page in a new tab.
 
-[Source files for the DOM Examples demo page](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started)
+<!-- You can view the source files for the DOM Examples demo page at the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
 
 <!-- ====================================================================== -->

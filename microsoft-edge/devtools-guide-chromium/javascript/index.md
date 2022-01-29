@@ -32,7 +32,7 @@ Finding a series of actions that consistently reproduce a bug is always the firs
 
 1. Open the [Debugging demo page](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new tab or window.  To do this, right-click, or press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click the link.
 
-   If you want to see the source code, see [Source files for the Debugging demo](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started).
+   <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
 1.  Enter `5` in the **Number 1** text box.
 1.  Enter `1` in the **Number 2** text box.

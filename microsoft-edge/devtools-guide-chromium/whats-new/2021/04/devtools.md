@@ -183,11 +183,13 @@ You can now toggle the `scroll-snap` badge in the **Elements** tool to inspect t
 
 For an example webpage, see [Scroll Snap Demo](https://mathiasbynens.github.io/css-dbg-stories/css-scroll-snap.html).  In the example, dots appear on snap edges.  The scroll port has a solid outline, while the snap items have dashed outlines.  The scroll padding is filled-in green, while the scroll margin is filled-in orange.
 
+<!-- You can view the source files for the Scroll Snap demo at the [mathiasbynens/css-dbg-stories](https://github.com/mathiasbynens/css-dbg-stories) repo. -->
+
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap." lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap
 :::image-end:::
 
-[Source files for the Scroll Snap Demo](https://github.com/mathiasbynens/css-dbg-stories).  To view the history of this feature in the Chromium open-source project, navigate to Issue [862450](https://crbug.com/862450).
+To view the history of this feature in the Chromium open-source project, navigate to Issue [862450](https://crbug.com/862450).
 
 ### New Memory Inspector tool
 
