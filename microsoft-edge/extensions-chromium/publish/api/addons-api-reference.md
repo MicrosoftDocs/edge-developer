@@ -224,7 +224,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
-    "message": "Only update is allowed.",
+    "message": "Can't create new extension.",
     "errorCode": "CreateNotAllowed",
     "errors": null
 }
@@ -238,7 +238,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
-    "message": "Nothing to publish.",
+    "message": "Can't publish extension since there are no updates, please try again after updating the package.",
     "errorCode": "NoModulesUpdated",
     "errors": null
 }
@@ -252,7 +252,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
-    "message": "Submission in progress.",
+    "message": "Can't publish extension as your extension submission is in progress. Please try again later.",
     "errorCode": "InProgressSubmission",
     "errors": null    
 }
@@ -266,7 +266,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
-    "message": "Unpublish in progress.",
+    "message": "Can't publish extension as your extension is being unpublished. Please try after you've unpublished.",
     "errorCode": "UnpublishInProgress",
     "errors": null    
 }
@@ -280,13 +280,27 @@ A `GET` operation status API can be called in the following scenarios.  In all v
     "createdTime": "Date Time",
     "lastUpdatedTime": " Date Time ",
     "status": "Failed",
-    "message": "Modules invalid.",
+    "message": "Can't publish extension as your extension has modules that are not valid. Fix the modules with errors and try to publish again.",
     "errorCode": "ModuleStateUnPublishable",
     "errors": [
         {
             "message": "Invalid module : <Modules>"
         }
     ]
+}
+```
+
+#### Response when there are validation error(s) in submission
+
+```json
+{
+    "id": "{operationID}",
+    "createdTime": "Date Time",
+    "lastUpdatedTime": " Date Time ",
+    "status": "Failed",
+    "message": "Extension can't be published as there are submission validation failures. Fix these errors and try again later.",
+    "errorCode": "SubmissionValidationError",
+    "errors": ["{list of errors}"]
 }
 ```
 
