@@ -45,7 +45,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 1. In the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes.
 
    > [!div class="mx-imgBorder"]
-   > ![The 'Publish API' page at Partner Center, with a 'Create API credentials' button.](https://user-images.githubusercontent.com/11265822/150777593-42cb9d37-0c1f-4ef4-9de6-9c4bc1166b96.png)
+   > ![The 'Publish API' page at Partner Center, with a 'Create API credentials' button.](../../media/create-api-credentials-button.png)
 
    <!-- make window smaller before capture.  make fresh capture.  save .png in present repo as ../media/create-api-credentials-button.png, replacing path in parens -->
 
