@@ -1,5 +1,5 @@
 ---
-title: Create an extension tutorial Part 2
+title: Create an extension tutorial, part 2
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
 ---
-# Create an extension tutorial Part 2
+# Create an extension tutorial, part 2
 
 [Completed extension package source for this part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 

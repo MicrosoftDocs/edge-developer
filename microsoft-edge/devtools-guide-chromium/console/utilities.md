@@ -28,10 +28,7 @@ The Console Utilities API contains a collection of convenience functions for per
 *   Stopping and starting the profiler.
 *   Monitoring DOM events.
 
-> [!WARNING]
-> The following commands only work in the Microsoft Edge DevTools **Console**.  The commands don't work if run from your scripts.
-
-For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, see [Console API Reference](api.md).
+These commands only work by entering them directly into the DevTools **Console**; you can't call these commands from scripts.
 
 
 <!-- ====================================================================== -->
@@ -721,6 +718,12 @@ values(object);
 ```
 
 ---
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Console object API Reference](api.md) - `console.*` methods, such as `console.log()` and `console.error()`.
 
 
 <!-- ====================================================================== -->

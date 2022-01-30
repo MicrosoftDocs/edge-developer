@@ -133,7 +133,7 @@ When the debugger steps into code that you don't recognize, you might want to ma
 #### See also
 
 *   [Content scripts](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
-*   [Create an extension tutorial Part 2](../../extensions-chromium/getting-started/part2-content-scripts.md)
+*   [Create an extension tutorial, part 2](../../extensions-chromium/getting-started/part2-content-scripts.md)
 
 ### Using the Snippets tab to run JavaScript code snippets on any webpage
 

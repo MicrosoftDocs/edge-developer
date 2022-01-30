@@ -68,7 +68,7 @@ Closing the DevTools window doesn't delete profiles from the memory associated w
 > [!NOTE]
 > Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
 
-<!-- [Repo source file location](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) -->
+<!-- You can view the source files for the Scattered Objects demo in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
 <!-- ====================================================================== -->
@@ -189,7 +189,7 @@ function createLargeClosure() {
 
 Try out this example of [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html).
 
-<!-- [Repo source file location](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) -->
+<!-- You can view the source files for these demos in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
 :::image type="content" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
@@ -247,7 +247,7 @@ The `#leaf` maintains a reference to the relevant parent (parentNode) and recurs
 
 Try out this example of [Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where DOM nodes can leak and how to detect such leakage. You can follow it up by also looking at this example of [DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).
 
-<!-- [Repo source file location](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) -->
+<!-- You can view the source files for these demos in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 To read more about DOM leaks and memory analysis fundamentals, check out [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 

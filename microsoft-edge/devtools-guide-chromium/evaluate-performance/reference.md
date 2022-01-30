@@ -236,6 +236,8 @@ After recording a page, you don't need to rely solely on the **Main** section to
 
 This section uses the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) page.
 
+<!-- You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
+
 Here's an explanation of the **root activities** concept that is mentioned in the **Call Tree** panel, **Bottom-Up** panel, and **Event Log** panel.
 
 _Root activities_ are those which cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.

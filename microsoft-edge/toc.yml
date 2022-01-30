@@ -129,7 +129,7 @@
                   href: devtools-guide-chromium/console/console-javascript.md
                   displayName: Console tool
 
-                - name: Console API reference
+                - name: Console object API Reference
                   href: devtools-guide-chromium/console/api.md
                   displayName: Console tool
 
@@ -581,6 +581,10 @@
                   href: devtools-guide-chromium/accessibility/color-picker.md
                   displayName: Elements tool, Styles tab, Color Picker
 
+                - name: Check text-color contrast in the default state using the Inspect tool  # added article
+                  href: devtools-guide-chromium/accessibility/test-inspect-text-contrast.md
+                  displayName: Inspect tool
+
                 - name: Verify accessibility of all states of elements  # added article
                   href: devtools-guide-chromium/accessibility/test-inspect-states.md
                   displayName: Elements tool, Styles tab, hov Toggle Element State
@@ -659,13 +663,13 @@
               href: extensions-chromium/whats-new/roadmap.md
         - name: Getting started
           items:
-            - name: Extension architecture
+            - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
-            - name: Create an extension tutorial (part 1)
+            - name: Create an extension tutorial, part 1
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Create an extension tutorial (part 2)
+            - name: Create an extension tutorial, part 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
-            - name: Manifest file format
+            - name: Manifest file format for extensions
               href: extensions-chromium/getting-started/manifest-format.md
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md

@@ -22,9 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Console features reference
 
-This article is a reference of features related to the Microsoft Edge DevTools Console.  It assumes you're already familiar with using the Console to view logged messages and run JavaScript.  If not, see [Get started with running JavaScript in the Console](console-javascript.md) and [Get started with logging messages in the Console](console-log.md).
-
-If you're looking for the API reference on functions like `console.log()`, see [Console API Reference](api.md).  For the reference on functions like `monitorEvents()`, see [Console Utilities API Reference](utilities.md).
+This article is an outline of the features of the **Console**.
 
 **Contents:**
 
@@ -156,7 +154,7 @@ DevTools assigns each `console.*` method one of the four severity levels.
 *   `Verbose`
 *   `Warning`
 
-For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.
+For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console object API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.
 
 To filter the messages, click the **Log Levels** dropdown and then select `Verbose`, `Info`, `Warning`, or `Error`.
 
@@ -249,6 +247,15 @@ To clear the Console, use any of the following approaches:
 *  Call `console.clear()` from your webpage's JavaScript.
 
 *  Press `Control`+`L` while the Console is in focus.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Log messages in the Console tool](console-log.md) - How to filter log messages such as Info, Warnings, and Errors in the Console.
+* [Get started with running JavaScript in the Console](console-javascript.md) - Steps to walk you through issuing JavaScript statements and expressions in the Console.
+* [Console object API Reference](api.md) - Functions and expressions that you can enter in the Console to write messages to the Console, such as `console.log()`.
+* [Console Utilities API Reference](utilities.md) - Convenience functions that you can enter in the Console, such as`monitorEvents()`. <!--A reference of convenience commands available in the Microsoft Edge DevTools Console.-->
 
 
 <!-- ====================================================================== -->

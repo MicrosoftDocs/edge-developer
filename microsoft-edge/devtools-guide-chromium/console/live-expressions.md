@@ -12,7 +12,7 @@ ms.date: 04/13/2021
 <!-- very short article in other repo:
 Watch JavaScript values in real-time with Live Expressions -->
 
-**Live Expressions** are an excellent way to monitor JavaScript expressions that change a lot.    Instead of having many Console messages to read and navigate, you can pin your specific JavaScript expressions to the top of the **Console**.
+**Live Expressions** are a great way to monitor JavaScript expressions that change a lot.  Instead of generating many **Console** messages to read and navigate, you can pin your specific JavaScript expressions to the top of the **Console**.
 
 
 <!-- ====================================================================== -->
@@ -30,9 +30,7 @@ To try using **Live Expressions**:
 
 1. Type `document.activeElement`.
 
-1. To save the expression, either:
-   *  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).
-   *  Click outside of the **Live Expression** textbox.
+1. To save the expression, press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** textbox.
 
 The expression is now live, and displays `body` as the result:
 
@@ -60,20 +58,36 @@ A **Live Expression** is available as long as you keep it active.  To get rid of
 
 You can create as many Live Expressions as you want, and persist each Live Expression across browser sessions and windows.  Live Expressions are a way to cut down on noise in your debugging workflow.
 
-For example, suppose you want to monitor the mouse movement in the current webpage.  Go to the [Logging Mouse Movement demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html), open the DevTools **Console**, and then move your mouse around to display the logs with a lot of information.
+### Using Console logging to display mouse coordinates
+
+For example, suppose you want to monitor the mouse movement in the current webpage.
+
+1. Open the [Logging Mouse Movement demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html) in a new tab or window.
+
+1. Open the DevTools **Console**, and then move your mouse around to display the logs with a lot of information.
+
+<!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > mousemove.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/mousemove.html). -->
 
 :::image type="content" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="The Console displays much information about the mouse position." lightbox="../media/console-live-expression-mouse-logging.msft.png":::
 
-The large amount of information not only slows your debug process, but also makes it easy to miss the changes you want to review.  As the **Console** displays more messages and you move your mouse, the values you want to see scroll off the screen.
+The large amount of information slows down your debugging process, and makes it hard to see the changes that you're trying to monitor.  As the **Console** displays more messages when you move your mouse, the values that you want to see scroll off the screen.
 
-Use **Live Expressions**, as an alternative:
+### Using Live Expressions to display mouse coordinates
 
-1. In another browser window or tab, go to the [Mouse movement without logging demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html).
+As an alternative to verbose **Console** message logging as shown above, use **Live Expressions**:
 
-1. Create Live Expressions for `x` and `y`.<!-- state how to do that in the ui -->
+1. Open the [Mouse movement without logging demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html) in a new tab or window.
 
-When you use **Live Expressions**, you always get the information on the same part of your screen, and keep **Console** logs for values that don't change as much.
+   <!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > mousemove-no-log.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/mousemove-no-log.html). -->
+
+1. Open the DevTools **Console**.
+
+1. Create Live Expressions for `x` and `y`.  To do this, see [Add a new live expression](#add-a-new-live-expression), above.
+
+Displaying the `x` and `y` coordinates of the mouse as Live Expressions:
 
 :::image type="content" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Displaying the 'x' and 'y' coordinates of the mouse as Live Expressions." lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+
+When you use **Live Expressions**, you always get the information on the same part of your screen, and keep **Console** logs for values that don't change as much.
 
 **Live Expressions** run exclusively on your computer, and you don't need to change anything in your code to display the expression and its result.  **Live Expressions** are a great way to ensure that you only display the information that you want to debug.  Live Expressions also help you limit the noise on your users' computers.

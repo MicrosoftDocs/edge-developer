@@ -22,27 +22,23 @@ ms.date: 05/04/2021
    limitations under the License. -->
 # Inspect network activity
 
-This is a hands-on tutorial of some of the most commonly-used DevTools features that are related to inspecting network activity for a page.
+This is a step-by-step tutorial walkthrough of the **Network** tool, for inspecting network activity for a page.
 
-If you want to browse features, see [Network features reference](./reference.md).
+For an overview of the network-related DevTools features, see [Network features reference](./reference.md).
 
-<!-- TODO: This entire section needs a Microsoft Edge DevTools re-write  -->
+<!-- TODO: entire section needs a Microsoft Edge DevTools rewrite  -->
 
-<!-- Read on, or watch the video version of this tutorial:  -->
-
-<!--
-> [!VIDEO embed/e1gAyQuIFQo]
--->
+<!-- Read on, or watch the video version of this tutorial: [!VIDEO embed/e1gAyQuIFQo] -->
 
 
 <!-- ====================================================================== -->
 ## When to use the Network panel
 
-In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.  The most common use cases for the Network panel are:
+In general, use the Network panel when you need to make sure that resources are being downloaded or uploaded as expected.  The most common use cases for the **Network** panel are:
 
-*   Making sure that resources are actually being uploaded or downloaded at all.
+*  Making sure that resources are actually being uploaded or downloaded at all.
 
-*   Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.
+*  Inspecting the properties of an individual resource, such as the HTTP headers, content, size, and so on.
 
 If you're looking for ways to improve page load performance, don't start with the **Network** tool.  There are many types of load performance issues that aren't related to network activity.  Start with the **Lighthouse** tool, because it gives you targeted suggestions on how to improve your page.  See [Optimize website speed using Lighthouse](../speed/get-started.md).
 
@@ -54,23 +50,25 @@ To get the most out of this tutorial, open the demo and try out the features on 
 
 1. Open the [Inspect Network Activity Demo](https://microsoftedge.github.io/Demos/network-tutorial/) in a new tab or window.
 
-    :::image type="content" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="The demo." lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
+   :::image type="content" source="../media/network-glitch-inspect-network-activity-demo.msft.png" alt-text="The demo." lightbox="../media/network-glitch-inspect-network-activity-demo.msft.png":::
 
-    <!--
-    :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
-    -->
+   <!-- You can view the source files for this demo in the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/network-tutorial) repo folder. -->
 
-1.  To [Open DevTools](../open/index.md), press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens.
+   <!--
+   :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
+   -->
 
-    :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="The Console." lightbox="../media/network-glitch-console.msft.png":::
+1. To [Open DevTools](../open/index.md), press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens.
 
-    You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md):
+   :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="The Console." lightbox="../media/network-glitch-console.msft.png":::
 
-    :::image type="content" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools docked to the bottom of the window." lightbox="../media/network-glitch-console-bottom.msft.png":::
+   You might prefer to [dock DevTools to the bottom of your window](../customize/placement.md):
 
-1.  Open the **Network** tool.
+   :::image type="content" source="../media/network-glitch-console-bottom.msft.png" alt-text="DevTools docked to the bottom of the window." lightbox="../media/network-glitch-console-bottom.msft.png":::
 
-    :::image type="content" source="../media/network-glitch-network-bottom.msft.png" alt-text="Network tool in DevTools, with DevTools docked to the bottom of the window." lightbox="../media/network-glitch-network-bottom.msft.png":::
+1. Open the **Network** tool.
+
+:::image type="content" source="../media/network-glitch-network-bottom.msft.png" alt-text="Network tool in DevTools, with DevTools docked to the bottom of the window." lightbox="../media/network-glitch-network-bottom.msft.png":::
 
 Right now the **Network** tool is empty.  DevTools only logs network activity after you open it, and no network activity has occurred since you opened DevTools.
 
@@ -82,33 +80,34 @@ To view the network activity that a page causes:
 
 1. Refresh the webpage.  The Network panel logs all network activity in the **Network Log**.
 
-    :::image type="content" source="../media/network-glitch-network.msft.png" alt-text="The Network Log." lightbox="../media/network-glitch-network.msft.png":::
+   :::image type="content" source="../media/network-glitch-network.msft.png" alt-text="The Network Log." lightbox="../media/network-glitch-network.msft.png":::
 
-    Each row of the **Network Log** represents a resource.  By default the resources are listed chronologically.  The top resource is usually the main HTML document.  The bottom resource is whatever was requested last.
+   Each row of the **Network Log** represents a resource.  By default the resources are listed chronologically.  The top resource is usually the main HTML document.  The bottom resource is whatever was requested last.
 
-    Each column represents information about a resource.  In the previous figure the default columns are displayed.
+   Each column represents information about a resource.  In the previous figure, the default columns are displayed.
 
-    *   **Status**.  The HTTP status code for response.
+    *  **Status**.  The HTTP status code for response.
 
-    *   **Type**.  The resource type.
+    *  **Type**.  The resource type.
 
-    *   **Initiator**.  The cause of the resource request.  CHoosing a link in the Initiator column takes you to the source code that caused the request.
+    *  **Initiator**.  The cause of the resource request.  CHoosing a link in the Initiator column takes you to the source code that caused the request.
 
-    *   **Time**.  The duration of the request.
+    *  **Time**.  The duration of the request.
 
-    *   **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover on a Waterfall.
+    *  **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover on a Waterfall.
 
     > [!NOTE]
     > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you can hide it.  See [Hide the Overview pane](./reference.md#hide-the-overview-pane).
 
-1.  After you open DevTools, it records network activity in the Network Log.
-    To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.
+   After you open DevTools, it records network activity in the Network Log.
 
-1.  Now, select the **Get Data** button in the demo.
+1. To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.
 
-1.  Look at the bottom of the **Network Log** again.  A new resource named `getstarted.json` is displayed.
+1. Now, click the **Get Data** button in the demo.
 
-    :::image type="content" source="../media/network-glitch-network-new-resource.msft.png" alt-text="A new resource in the Network Log." lightbox="../media/network-glitch-network-new-resource.msft.png":::
+1. Look at the bottom of the **Network Log** again.  A new resource named `getstarted.json` is displayed:
+
+:::image type="content" source="../media/network-glitch-network-new-resource.msft.png" alt-text="A new resource in the Network Log." lightbox="../media/network-glitch-network-new-resource.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -118,9 +117,9 @@ The columns of the Network Log are configurable.  You can hide columns that you 
 
 1. Right-click the header of the Network Log table, and then select **Domain**.  The domain of each resource is now shown.
 
-    :::image type="content" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Enable the Domain column." lightbox="../media/network-glitch-network-edit-column.msft.png":::
+:::image type="content" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Enable the Domain column." lightbox="../media/network-glitch-network-edit-column.msft.png":::
 
-To review the full URL of a resource, hover on the cell in the **Name** column.
+1. To see the full URL of a resource, hover over its cell in the **Name** column.
 
 
 <!-- ====================================================================== -->
@@ -132,15 +131,15 @@ The network connection of the computer that you use to build sites is probably f
 
 1. Select **Slow 3G**.
 
-    :::image type="content" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Select Slow 3G." lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-throttling-slow-3g.msft.png" alt-text="Select Slow 3G." lightbox="../media/network-glitch-network-throttling-slow-3g.msft.png":::
 
 1. Long-press **Reload** (![Reload.](../media/refresh-icon.msft.png)) and select **Empty Cache And Hard Reload**.
 
-    :::image type="content" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Empty Cache And Hard Reload." lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
+:::image type="content" source="../media/network-glitch-empty-cache-and-hard-reset.msft.png" alt-text="Empty Cache And Hard Reload." lightbox="../media/network-glitch-empty-cache-and-hard-reset.msft.png":::
 
-    On repeat visits, the browser usually serves some files from the [cache](https://developer.mozilla.org/docs/Web/HTTP/Caching), which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.
+On repeat visits, the browser usually serves some files from the [cache](https://developer.mozilla.org/docs/Web/HTTP/Caching), which speeds up the page load.  **Empty Cache And Hard Reload** forces the browser to go the network for all resources.  Use it to display how a first-time visitor experiences a page load.
 
-    The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.
+The **Empty Cache And Hard Reload** workflow is only available when DevTools is open.
 
 
 <!-- ====================================================================== -->
@@ -148,23 +147,23 @@ The network connection of the computer that you use to build sites is probably f
 
 Screenshots display how a webpage looks over time while it loads.
 
-1.  Select (![Network settings.](../media/settings-icon.msft.png)) and turn on the **Capture screenshots** checkbox.
+1. Click the (![Network settings.](../media/settings-icon.msft.png)) button and then select the **Capture screenshots** checkbox.
 
-    :::image type="content" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="The Capture Screenshot checkbox in the Network settings." lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-screenshots-setting.msft.png" alt-text="The Capture Screenshot checkbox in the Network settings." lightbox="../media/network-glitch-network-screenshots-setting.msft.png":::
 
-1.  Refresh the page again using the **Empty Cache And Hard Reload** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.
+1. Refresh the page again using the **Empty Cache And Hard Reload** workflow.  See [Simulate a slower connection](#simulate-a-slower-network-connection) if you need a reminder on how to do this.
 
-    The **Screenshots** panel provides thumbnails of how the page looked at various points during the loading process:
+   The **Screenshots** panel provides thumbnails of how the page looked at various points during the loading process:
 
-    :::image type="content" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Screenshots of the page load." lightbox="../media/network-glitch-network-screenshots.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-screenshots.msft.png" alt-text="Screenshots of the page load." lightbox="../media/network-glitch-network-screenshots.msft.png":::
 
-1.  Select the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.
+1. Click the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.
 
     :::image type="content" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="The network activity that was happening during the first screenshot." lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
 
-1.  Select (![Network settings.](../media/settings-icon.msft.png)) again and turn off the **Capture screenshots** checkbox to close the **Screenshots** pane.
+1. Click (![Network settings.](../media/settings-icon.msft.png)) again and turn off the **Capture screenshots** checkbox to close the **Screenshots** pane.
 
-1.  Refresh the page again.
+1. Refresh the page again.
 
 
 <!-- ====================================================================== -->
@@ -285,18 +284,17 @@ How does a page look and behave when some of the page resources are not availabl
 
 1. Click **Add Pattern** (![Add Pattern.](../media/add-icon.msft.png)).
 
-1.  Type `main.css`.
+1. Type `main.css`.
 
-    :::image type="content" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocking 'main.css'." lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-cli-block-add-pattern.msft.png" alt-text="Blocking 'main.css'." lightbox="../media/network-glitch-network-cli-block-add-pattern.msft.png":::
 
 1. Click **Add**.
 
 1. Refresh the page.  As expected, the styling of the page is slightly messed up, because the main stylesheet has been blocked.
 
-    > [!NOTE]
-    > In the `main.css` row in the Network Log, the red text means that the resource was blocked.
+   In the `main.css` row in the Network Log, the red text means that the resource was blocked.
 
-    :::image type="content" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="main.css has been blocked." lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-cli-block-main-css.msft.png" alt-text="main.css has been blocked." lightbox="../media/network-glitch-network-cli-block-main-css.msft.png":::
 
 1. Clear the **Enable request blocking** checkbox.
 

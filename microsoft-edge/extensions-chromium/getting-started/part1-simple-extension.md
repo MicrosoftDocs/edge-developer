@@ -1,5 +1,5 @@
 ---
-title: Create an extension tutorial - Part 1
+title: Create an extension tutorial, part 1
 description: Build an extension that pops up the NASA picture of the day.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
 ---
-# Create an extension tutorial - Part 1
+# Create an extension tutorial, part 1
 
 
 <!-- ====================================================================== -->

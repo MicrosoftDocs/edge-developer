@@ -1,5 +1,5 @@
 ---
-title: Console API reference
+title: Console object API Reference
 description: Use the Console API to write messages to the Console.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,12 +20,11 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Console API reference
+# Console object API Reference
 
-The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, see [Get started with logging messages to the Console](console-log.md).  For more information on the convenience methods in the **Console**, see [Console Utilities API Reference](utilities.md).
+The `Console` object has methods that are helpful for various tasks in DevTools.  `Console` object methods are available to include in your scripts.
 
 ---
-
 
 <!-- ====================================================================== -->
 ## assert
@@ -425,6 +424,13 @@ console.warn('warn');
 :::image type="content" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
 
 ---
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Get started with logging messages to the Console](console-log.md)
+* [Console Utilities API Reference](utilities.md) - **Console**-only utility methods, such as `debug()` and `monitorEvents()`.
 
 
 <!-- ====================================================================== -->

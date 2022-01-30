@@ -7,12 +7,11 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/30/2021
 ---
-
 # Debug DOM memory leaks with the Detached Elements tool
 
-A memory leak can occur in your application when an element is no longer attached to the Document Object Model (DOM) tree, but is still referenced by some JavaScript running on the page. These elements are called *detached elements*. For the browser to garbage collect (GC) the detached element, the element must not be referenced from either the DOM tree or JavaScript code.
+A memory leak can occur in your application when an element is no longer attached to the Document Object Model (DOM) tree, but is still referenced by some JavaScript running on the page. These elements are called *detached elements*. For the browser to garbage-collect (GC) the detached element, the element must not be referenced from either the DOM tree or JavaScript code.
 
-This article describes how to use the **Detached Elements** tool in Microsoft Edge DevTools to find detached elements that the browser cannot GC in a demo application and identify the JavaScript that is still referencing the detached element. By changing your JavaScript to release the element, you reduce the number of detached elements on your page.
+This article describes how to use the **Detached Elements** tool in Microsoft Edge DevTools to find detached elements that the browser cannot GC in a demo application and identify the JavaScript that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page.
 
 For more information about heap snapshots and detached elements, read [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots).
 
@@ -22,9 +21,11 @@ For more information about heap snapshots and detached elements, read [Discover 
 
 The **Detached Elements** tool is available by default in Microsoft Edge 97 and later. Check your version of Microsoft Edge by going to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
 
-To open the **Detached Elements** tool:
+To open the **Detached Elements** tool and load the demo page:
 
-1. Open the [demo application](https://microsoftedge.github.io/Demos/detached-elements/).
+1. Open the [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/).
+
+   <!-- You can view the source files for the Detached Elements demo in the [MicrosoftEdge/Demos > detached-elements](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) repo folder. -->
 
 1. [Open DevTools](../open/index.md).
 
