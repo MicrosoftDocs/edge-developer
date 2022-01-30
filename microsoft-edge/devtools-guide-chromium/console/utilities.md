@@ -1,6 +1,6 @@
 ---
-title: Console Utilities API Reference
-description: A reference of convenience commands available in the Microsoft Edge DevTools Console.
+title: Console tool utility functions and selectors
+description: Convenience utility functions, commands, and DOM selectors that are available in the Console tool in Microsoft Edge DevTools, but not through JavaScript source files.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -20,7 +20,11 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Console Utilities API Reference
+# Console tool utility functions and selectors
+<!-- orig:
+# Console Utilities API reference
+-->
+
 
 The Console Utilities API contains a collection of convenience functions for performing common tasks, such as:
 *   Selecting and inspecting DOM elements.
@@ -723,6 +727,8 @@ values(object);
 <!-- ====================================================================== -->
 ## See also
 
+<!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
+* [Console features reference](reference.md)
 * [Console object API Reference](api.md) - `console.*` methods, such as `console.log()` and `console.error()`.
 
 

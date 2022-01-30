@@ -106,7 +106,7 @@ The order of content in an HTML document is important for search engine optimiza
 
 See [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1094406](https://crbug.com/1094406).
+To review the history of this feature in the Chromium open-source project, see Issue [1094406](https://crbug.com/1094406).
 
 
 <!-- ====================================================================== -->
@@ -121,7 +121,7 @@ User-Agent Client Hints are now applied for devices in the **User agent** field 
 
 See [User-Agent Client Hints](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1174299](https://crbug.com/1174299).
+To review the history of this feature in the Chromium open-source project, see Issue [1174299](https://crbug.com/1174299).
 
 
 <!-- ====================================================================== -->
@@ -163,7 +163,7 @@ When an HTML element on your page has `display: grid` or `display: inline-grid` 
 
 <!-- screenshot uses https://jec.fyi -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1203241](https://crbug.com/1203241).
+To review the history of this feature in the Chromium open-source project, see Issue [1203241](https://crbug.com/1203241).
 
 
 ### Support for const redeclarations in the Console
@@ -179,7 +179,7 @@ Refer to the example below. `const` redeclaration is supported across separate R
 
 To learn how to run a single REPL script or a multi-line REPL script, see [Run JavaScript in the Console](../../../console/console-javascript.md).
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1076427](https://crbug.com/1076427).
+To review the history of this feature in the Chromium open-source project, see Issue [1076427](https://crbug.com/1076427).
 
 
 ### New shortcut to view iframe details
@@ -194,7 +194,7 @@ This displays the details about the `iframe` in the **Application** tool.  In th
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1192084](https://crbug.com/1192084).
+To review the history of this feature in the Chromium open-source project, see Issue [1192084](https://crbug.com/1192084).
 
 
 ### Enhanced CORS debugging support
@@ -205,7 +205,7 @@ Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** t
 
 <!-- screenshot uses http://cors-errors.glitch.me -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1141824](https://crbug.com/1141824).
+To review the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
 
 ### Renamed XHR filter to Fetch\/XHR
@@ -218,7 +218,7 @@ See:
 *  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
 *  [Fetch spec](https://fetch.spec.whatwg.org)
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1201398](https://crbug.com/1201398).
+To review the history of this feature in the Chromium open-source project, see Issue [1201398](https://crbug.com/1201398).
 
 
 ### Filter Wasm resource type in the Network tool
@@ -229,7 +229,7 @@ In the **Network** tool, you can now select the new **Wasm** filter to filter th
 
 <!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
-To review the history of this feature in the Chromium open-source project, navigate to Issue [1103638](https://crbug.com/1103638).
+To review the history of this feature in the Chromium open-source project, see Issue [1103638](https://crbug.com/1103638).
 
 
 ### Compute Intersections are now included in the Performance tool
@@ -240,7 +240,7 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-For more about intersection observers, see [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2).  For information about using the flame chart, see [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1199137](https://crbug.com/1199137).
+For more about intersection observers, see [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2).  For information about using the flame chart, see [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording).  To review the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
 
 
 <!-- ====================================================================== -->

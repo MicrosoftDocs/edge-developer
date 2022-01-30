@@ -192,7 +192,7 @@ Download the file, include it in your package, and write:
 
 As of Chrome 46, -->
 
-Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm (sha256, sha384 or sha512).  For an example, navigate to [Hash usage for \<script\> elements](https://www.w3.org/TR/CSP2#script-src-hash-usage).
+Inline scripts are able to be allowed by specifying the base64-encoded hash of the source code in the policy.  This hash must be prefixed by the used hash algorithm (sha256, sha384 or sha512).  For an example, see [W3C > Hash usage for \<script\> elements](https://www.w3.org/TR/CSP2#script-src-hash-usage).
 
 **Remote Script**
 

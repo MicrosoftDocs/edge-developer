@@ -34,7 +34,7 @@ The accessibility system in Microsoft Edge inherently supports modern web standa
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.
 
-For information on which new HTML features are accessibly supported by Microsoft Edge, navigate to [HTML5Accessibility](https://html5accessibility.com).
+For information on which new HTML features are accessibly supported by Microsoft Edge, see [HTML5Accessibility](https://html5accessibility.com).
 
 
 <!-- ====================================================================== -->

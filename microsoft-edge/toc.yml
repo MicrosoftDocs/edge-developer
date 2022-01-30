@@ -131,11 +131,11 @@
 
                 - name: Console object API Reference
                   href: devtools-guide-chromium/console/api.md
-                  displayName: Console tool
+                  displayName: Console tool, API Reference
 
-                - name: Console Utilities API reference
+                - name: Console tool utility functions and selectors
                   href: devtools-guide-chromium/console/utilities.md
-                  displayName: Console tool
+                  displayName: Console tool, API Reference, DOM selectors
 
                 - name: Monitor changes in JavaScript using Live Expressions
                   href: devtools-guide-chromium/console/live-expressions.md

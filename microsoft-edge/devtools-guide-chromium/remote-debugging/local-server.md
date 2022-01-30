@@ -74,7 +74,7 @@ To set up port forwarding to a proxy:
     > [!NOTE]
     > The proxy server and your web server must run on different ports.
 
-1.  Set up [port forwarding](#set-up-port-forwarding) to your Android device.  For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.  For example, if it is running on port `8000`, navigate to `localhost:8000`.  In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.
+1.  Set up [port forwarding](#set-up-port-forwarding) to your Android device.  For the **local address** field, enter `localhost:` followed by the port that your proxy server is running on.  For example, if it is running on port `8000`, go to `localhost:8000`.  In the **device port** field enter the number that you want your Android device to listen on, such as `3333`.
 
 ### Configure proxy settings on your device
 

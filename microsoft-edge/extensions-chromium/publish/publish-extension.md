@@ -9,7 +9,7 @@ ms.date: 08/25/2021
 ---
 # Publish a Microsoft Edge extension
 
-After you develop and test your Microsoft Edge extension, you're ready to distribute your extension. Use the Microsoft Edge Add-ons website to distribute your extension.  To release your existing Chromium extension for Microsoft Edge users, navigate to [port your existing Chromium extension](../developer-guide/port-chrome-extension.md).
+After you develop and test your Microsoft Edge extension, you're ready to distribute your extension. Use the Microsoft Edge Add-ons website to distribute your extension.  To release your existing Chromium extension for Microsoft Edge users, see [port your existing Chromium extension](../developer-guide/port-chrome-extension.md).
 
 Publish your extension to the Microsoft Edge Add-ons website to increase the reach of it and make it available other Microsoft Edge users.  This article provides the process to submit your extension to the Microsoft Edge Add-ons website.
 
@@ -19,7 +19,7 @@ Publish your extension to the Microsoft Edge Add-ons website to increase the rea
 
 You should have a working prototype of your extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
 
-To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, navigate to [Developer registration](./create-dev-account.md).
+To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, see [Developer registration](./create-dev-account.md).
 
 Create a zip file that represents your extension package.  Your extension package must include the following files.
 
@@ -49,7 +49,7 @@ Details about these steps are below.
 <!-- ========================================================================== -->
 ## Step 1:  Start a new submission
 
-Navigate to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Create new extension** on the **Overview** webpage.
+Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Create new extension** on the **Overview** webpage.
 
 
 <!-- ========================================================================== -->
@@ -95,11 +95,11 @@ On the **Properties** webpage, enter the following information to specify proper
 | Extension property name | Description |
 |:--- |:--- |
 | Category (required) | The category that best describes your extension.  Listing your extension in the right category helps users find your extension easily and understand more about it.  |
-| Privacy policy requirements (required) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension might fail the certification step if you select **Yes** and you don't provide a `Privacy policy URL`.  |
-| Privacy policy URL | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, navigate to [Microsoft Edge Developer Agreement](/legal/windows/agreements/app-developer-agreement) and [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md).  |
-| Website URL | A webpage that provides additional information about your extension.  The `Website URL` must point to a webpage on your own website, not the web listing for your extension in the Microsoft Edge Add-ons website.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information.  |
-| Support contact details | The URL to your support webpage, or the email address to contact your support team.  |
-| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, navigate to [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md).  |
+| Privacy policy requirements (required) | Indicate if your extension accesses, collects, or transmits any personal information.  Your extension might fail the certification step if you select **Yes** and you don't provide a `Privacy policy URL`. |
+| Privacy policy URL | A valid privacy policy URL to communicate how your extension follows privacy laws and regulations.  You're responsible for ensuring your extension follows privacy laws and regulations.  You're also responsible for providing a privacy policy URL if any personal information is being accessed, transmitted, or collected by your extension.  To determine if your extension requires a privacy policy, see [Microsoft Edge Developer Agreement](/legal/windows/agreements/app-developer-agreement) and [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md). |
+| Website URL | A webpage that provides additional information about your extension.  The `Website URL` must point to a webpage on your own website, not the web listing for your extension in the Microsoft Edge Add-ons website.  The `Website URL` helps users learn more about your extension, its features, and any other relevant information. |
+| Support contact details | The URL to your support webpage, or the email address to contact your support team. |
+| Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, see [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md). |
 
 Select **Save** to continue to the **Store listings** section.
 
@@ -135,8 +135,8 @@ The information provided in the following section is displayed to users who revi
 Make sure your video meets the following requirements.
 
 *   Verify that the content of the YouTube video follows the [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md).
-*   Turn off advertisements on your video.  For more information, navigate to [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
-*   Turn on embedding for your videos.  For more information, navigate to [Embed videos & playlists](https://support.google.com/youtube/answer/171780).
+*   Turn off advertisements on your video.  For more information, see [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
+*   Turn on embedding for your videos.  For more information, see [Embed videos & playlists](https://support.google.com/youtube/answer/171780).
 
 To submit the YouTube video URL of your video, complete the following steps.
 

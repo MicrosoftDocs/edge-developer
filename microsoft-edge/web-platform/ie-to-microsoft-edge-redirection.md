@@ -9,22 +9,24 @@ ms.date: 11/13/2020
 ---
 # Moving users to Microsoft Edge from Internet Explorer
 
-Many modern websites have designs that are incompatible with Internet Explorer (IE).  When an IE user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.  To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an IE user navigates to a website that is incompatible with IE, Windows automatically redirects the user to Microsoft Edge.  To review the websites on the list, navigate to [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1).
+Many modern websites have designs that are incompatible with Internet Explorer.  When an Internet Explorer user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.
 
-This article describes the following concepts.
+To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows automatically redirects the user to Microsoft Edge.  For the list of websites that are redirected, see [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1).
 
-*   Why a website is added to the list
-*   The user experience for redirection
-*   Request an update to the list
+This article describes the following concepts:
+
+*  Why a website is added to the redirection list.
+*  The User Experience for redirection.
+*  Requesting an update to the list.
 
 
 <!-- ====================================================================== -->
-## Why is a website added to the IE compatibility list?
+## Why is a website added to the Internet Explorer compatibility list?
 
-The IE compatibility List only adds a website when the following actions occur.
+The Internet Explorer compatibility List only adds a website when the following actions occur.
 
-*   Shows an IE user a message suggesting the user should use a different browser for compatibility reasons.
-*   Owner requests to add the website to the IE compatibility list.
+*   Shows an Internet Explorer user a message suggesting the user should use a different browser for compatibility reasons.
+*   Owner requests to add the website to the Internet Explorer compatibility list.
 
 
 <!-- ====================================================================== -->
@@ -32,7 +34,7 @@ The IE compatibility List only adds a website when the following actions occur.
 
 On redirection to Microsoft Edge, the user is shown the one-time dialog in the next screenshot.  The dialog provides the user with the following information:
 *  It explains why the website is being redirected.
-*  It prompts the user for consent to copy browsing data and preferences from IE to Microsoft Edge.
+*  It prompts the user for consent to copy browsing data and preferences from Internet Explorer to Microsoft Edge.
 
 The following browsing data is imported:
 *  Favorites
@@ -64,19 +66,19 @@ The website incompatibility banner provides the following details to the user.
 
 When a website is redirected from Internet Explorer to Microsoft Edge, one of the following actions occurs.
 
-*   If the active IE tab had no prior content, it is closed.
-*   If the active IE tab had prior content, it navigates to the [Microsoft support page that explains why the website was redirected to Microsoft Edge](https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554).
+*   If the active Internet Explorer tab had no prior content, it is closed.
+*   If the active Internet Explorer tab had prior content, it navigates to the [Microsoft support page that explains why the website was redirected to Microsoft Edge](https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554).
 
 > [!NOTE]
-> After a redirection, users may continue to use IE for websites that are not on the IE compatibility list.
+> After a redirection, users may continue to use Internet Explorer for websites that are not on the Internet Explorer compatibility list.
 
 
 <!-- ====================================================================== -->
-## Request an update to the IE compatibility list
+## Request an update to the Internet Explorer compatibility list
 
-The IE compatibility list is an XML file on [microsoft.com](https://www.microsoft.com).  The list is regularly updated in response to user and website developer requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.
+The Internet Explorer compatibility list is an XML file on [microsoft.com](https://www.microsoft.com).  The list is regularly updated in response to user and website developer requests to have websites added or removed.  Updates to the list are automatically downloaded to user machines.
 
-Email the following information to [ietoedge@microsoft.com](mailto:ietoedge@microsoft.com) for your website to be added or removed from the IE compatibility list.
+Email the following information to [ietoedge@microsoft.com](mailto:ietoedge@microsoft.com) for your website to be added or removed from the Internet Explorer compatibility list.
 
 *   Owner name
 *   Corporate title
@@ -85,7 +87,7 @@ Email the following information to [ietoedge@microsoft.com](mailto:ietoedge@micr
 *   Street address
 *   Website address
 
-The IE compatibility list is updated within a week.
+The Internet Explorer compatibility list is updated within a week.
 
 > [!NOTE]
-> The IE compatibility list is designed to work with public sites only.
+> The Internet Explorer compatibility list is designed to work with public sites only.

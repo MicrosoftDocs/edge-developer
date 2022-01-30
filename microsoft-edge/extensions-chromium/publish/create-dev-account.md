@@ -45,7 +45,7 @@ To create a Microsoft account (MSA):
 
 1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish Microsoft Edge extensions by using a GitHub account](github.md).
 
-1. If you aren't using your GitHub account to create the Microsoft account (MSA), navigate to [account.microsoft.com](https://account.microsoft.com/account).
+1. If you aren't using your GitHub account to create the Microsoft account (MSA), see [account.microsoft.com](https://account.microsoft.com/account).
 
 1. Select **Create a Microsoft account**.
 
@@ -120,7 +120,7 @@ For a company account, you must provide the contact information of your company 
 <!-- ====================================================================== -->
 ## Next steps
 
-To display your verification status, navigate to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To display your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
 *  [Publish an extension](./publish-extension.md)
 

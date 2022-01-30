@@ -32,7 +32,7 @@ When you use a WebView2 SDK _prerelease_ package, use a Microsoft Edge preview c
 
 The SDK _prerelease_ package is a superset of the SDK release package, with method signatures for more, [Experimental APIs](#experimental-apis).  Preview channels provide the implementations of the experimental WebView2 APIs.  The experimental APIs are subject to change based on your feedback.  Avoid using the SDK prerelease package to build production apps.
 
-For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, navigate to [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
+For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ The SDK release package contains the following components:
 *  [Win32 C/C++ APIs](/microsoft-edge/webview2/reference/win32).
 *  .NET APIs:  [WPF](/dotnet/api/microsoft.web.webview2.wpf), [WinForms](/dotnet/api/microsoft.web.webview2.winforms), and [Core](/dotnet/api/microsoft.web.webview2.core).
 
-For more information about automatic updating of the Evergreen Runtime, navigate to [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md).
+For more information about automatic updating of the Evergreen Runtime, see [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md).
 
 
 <!-- ====================================================================== -->
@@ -96,7 +96,7 @@ The APIs that are in an SDK _release_ version are forward-compatible.  For more 
 
 The WebView2 team is seeking feedback on experimental WebView2 APIs that might be promoted to Stable in future releases.
 The experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation.
-To help you evaluate the experimental APIs and share your feedback, navigate to the [WebView feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback).
+To help you evaluate the experimental APIs and share your feedback, use the [WebView feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback).
 
 Avoid using the experimental APIs in production apps.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.  After the release of an API as stable and public, the experimental version of that API is supported for two releases in a deprecated state.
 
@@ -112,7 +112,7 @@ In case updating the WebView2 Runtime is prevented on the client, make sure that
 The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.
 The latest Runtime supports all APIs that are in the latest SDK release build.
 
-To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, navigate to [Release notes for WebView2 SDK](../release-notes.md).
+To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release notes for WebView2 SDK](../release-notes.md).
 
 
 <!-- ====================================================================== -->

@@ -72,7 +72,7 @@ The Microsoft Edge team recommends [Selenium 4](https://www.nuget.org/packages/S
 
 ### Upgrading from Selenium 3
 
-The Microsoft Edge team recommends upgrading existing Selenium 3 tests to Selenium 4, because the Selenium project no longer maintains Selenium 3.  To learn more about upgrading to Selenium 4, navigate to [Upgrade to Selenium 4](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/).
+The Microsoft Edge team recommends upgrading existing Selenium 3 tests to Selenium 4, because the Selenium project no longer maintains Selenium 3.  To learn more about upgrading to Selenium 4, see [Upgrade to Selenium 4](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/).
 
 If you're using [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) to add Microsoft Edge (Chromium) support to your Selenium 3 browser tests, update your tests as follows:
 
@@ -101,7 +101,7 @@ The following section walks you through using Selenium 4 to start a WebDriver se
 
 Selenium uses the `EdgeDriver` class to manage a Microsoft Edge session.  The following code:
 1. Starts a Microsoft Edge session.
-1. Instructs Microsoft Edge to navigate to Bing.
+1. Instructs Microsoft Edge to go to Bing.
 1. Searches for "WebDriver".
 1. Sleeps for a few seconds so you can see the results.
 

@@ -17,13 +17,13 @@ The goal of the Microsoft Edge WebView2 control is to combine the best of both t
 
 ## [Microsoft Edge DevTools](#tab/devtools)
 
-Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
+Use Microsoft Edge Developer Tools to debug web content that's displayed in a WebView2 control, in the same way that you can debug a webpage that's displayed in Microsoft Edge.  To open DevTools, put focus on the WebView control and then do any of the following:
 
-*   Select `F12`.
-*   Select `Ctrl`+`Shift`+`I`.
-*   Open the context menu (right-click) and choose `Inspect`.
+* Press `F12`.
+* Press `Ctrl`+`Shift`+`I`.
+* Right-click an item in a rendered webpage and then select **Inspect**.
 
-For more information, navigate to [DevTools overview](../index.md).
+For more information, see [Overview of DevTools](../../devtools-guide-chromium/index.md).
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools debugging." lightbox="./media/f12.png":::
    DevTools debugging
@@ -37,7 +37,7 @@ For more information, navigate to [DevTools overview](../index.md).
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
 
 > [!IMPORTANT]
-> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu (right-click) to avoid the situation.
+> When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`, or right-click.
 
 Before you begin, ensure the following requirements are met.
 
@@ -237,7 +237,7 @@ In Visual Studio Code, complete the following actions to debug your code.
     You may encounter the following scenarios when using the debugger.
 
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
-    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
+    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, see [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
 
 * * *

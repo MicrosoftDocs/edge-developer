@@ -85,7 +85,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
 }
 ```
 
-For more information, navigate to [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token).
+For more information, see [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token).
 
 
 <!-- ====================================================================== -->
@@ -113,9 +113,9 @@ Body content: the package file to upload
 
 `$productID` is the ID of the Microsoft Edge Add-on that you want to update.  You can get the product ID in either of the following ways:
 
-*  Login to Microsoft Partner Center.  Navigate to **Microsoft Edge > Overview**, and then select the extension you want the product ID for.  The extension overview page opens.  The GUID in the URL is the product ID.
+*  Login to Microsoft Partner Center.  Go to **Microsoft Edge > Overview**, and then select the extension you want the product ID for.  The extension overview page opens.  The GUID in the URL is the product ID.
 
-*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, navigate to [Get the list of products](addons-api-reference.md#get-the-list-of-products).
+*  Call the `/products` API to get a list of all products and their product IDs.  For more information about the `/products` API, see [Get the list of products](addons-api-reference.md#get-the-list-of-products).
 
 ### Sample request
 

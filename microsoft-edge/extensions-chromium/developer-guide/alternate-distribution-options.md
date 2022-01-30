@@ -23,7 +23,7 @@ Extensions that are not loaded from the Edge Add-ons store are referred to as ex
 <!-- ====================================================================== -->
 ## Before you begin
 
-Ensure that you publish your extension in the Microsoft Edge Add-ons website, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_URL`, ensure you can navigate to your extension at that URL.
+Ensure that you publish your extension in the Microsoft Edge Add-ons website, or package a `.crx` file and ensure that it installs successfully on your computer.  If you install the `.crx` file using the `update_URL`, make sure you can navigate to your extension at that URL.
 
 Also, ensure that you have the following information.
 

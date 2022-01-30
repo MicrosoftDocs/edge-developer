@@ -142,11 +142,11 @@ In a previous code, an inline style applied a style to a single `<p>` tag:
 
 What if you wanted all of the `<p>` elements on your webpage to be styled the same way?  You'd have to copy and paste the code into every single `<p>` tag on your site, which would require a lot of time and effort.  If you needed to make an edit, you'd have to change every tag again.  Instead, in the next steps, you use an **Internal stylesheet** to write your CSS once, so that it applies to multiple elements.
 
-1. In the live tab, select **Contact** to navigate to the contact page.  Notice the font of the **Home** and **Contact** links.
+1. In the live tab, click **Contact** to go to the contact page.  Notice the font of the **Home** and **Contact** links.
 
    :::image type="content" source="../media/beginners-css-internal1.msft.png" alt-text="The Contact page." lightbox="../media/beginners-css-internal1.msft.png":::
 
-1.  In the **editor tab**, open `contact.html`.
+1. In the **editor tab**, open `contact.html`.
 
 1. Add the following code to `contact.html`.
 

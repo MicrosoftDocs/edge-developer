@@ -33,7 +33,7 @@ Previously, non-store based extensions were supported.  Also, you updated the na
 Now, the Microsoft Edge Add-ons website hosts your extensions and you update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.  Be careful when you update extensions that have a dependency on native binaries.
 
 > [!NOTE]
-> This article does not apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, navigate to [Update a Microsoft Edge extension](../publish/update-extension.md).
+> This article does not apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
 
 
 <!-- ====================================================================== -->
@@ -78,7 +78,7 @@ The following table describes attributes of the updated manifest XML file.
 
 | Attribute | Details |
 |:--- |:--- |
-| `appid` | The extension ID is generated based on a hash of the public key.  To find the ID of an extension, open Microsoft Edge and navigate to `edge://extensions`. |
+| `appid` | The extension ID is generated based on a hash of the public key.  To find the ID of an extension, open Microsoft Edge and see `edge://extensions`. |
 | `codebase` | A URL to the `.crx` file. |
 | `version` | This attribute value is used by Microsoft Edge to determine whether it should download the `.crx` file specified by `codebase`.  It should match the value of `version` in the `manifest.json` file of the `.crx` file. |
 
@@ -88,7 +88,7 @@ The update manifest XML file may contain information about multiple extensions b
 <!-- ====================================================================== -->
 ## Testing
 
-The default update check frequency is several hours.  To force an update, navigate to `edge://extensions` and choose the **Update extensions now** button.
+The default update check frequency is several hours.  To force an update, see `edge://extensions` and choose the **Update extensions now** button.
 
 
 <!-- ====================================================================== -->

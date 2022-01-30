@@ -141,14 +141,17 @@ In Microsoft Edge 79, the default behavior was to apply Strict mode protections 
 <!-- ====================================================================== -->
 ## Determining whether/how a particular URL is classified
 
-The easiest way to determine whether a specific URL is classified as a known tracker is to perform the following steps.
+To determine whether a specific URL is classified as a known tracker:
 
-1.  Open DevTools and navigate to the Console tab.
-1.  Refresh the webpage.
-    1.  You may want to clear **Cookies and other site data** first to reset site engagement scores and ensure a completely clean slate.
-1.  Look for any messages that read `Tracking Prevention blocked access to storage for <URL>`.
-    1.  You may expand the messages to see the individual URLs that were blocked.
-1.  If you need to determine which category a specific blocked site is in, the easiest way to do this is to search for it on the [Disconnect services.json list](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json).  The entries are alphabetized, so scrolling to the top of a block of site entries enables you to find the specific category for a particular site.
+1. Open DevTools and open the **Console** tool.
+
+1. Refresh the webpage.
+
+   You may want to clear **Cookies and other site data** first to reset site engagement scores and ensure a completely clean slate.
+
+1. Look for any messages that read `Tracking Prevention blocked access to storage for <URL>`.  You can expand the messages to see the individual URLs that were blocked.
+
+1. If you need to determine which category a specific blocked site is in, the easiest way to do this is to search for it on the [Disconnect services.json list](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/services.json).  The entries are alphabetized, so scrolling to the top of a block of site entries enables you to find the specific category for a particular site.
 
 > [!TIP]
 > If you need to access the tracking prevention lists that are stored on disk, each may be found in one of two locations.

@@ -10,19 +10,20 @@ ms.date: 12/13/2021
 ---
 # Get started with WebView2 in Win32 apps
 
-In this article, get started creating your first WebView2 app in Win32. Learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information about individual WebView2 APIs, navigate to [API reference](/microsoft-edge/webview2/reference/win32).
+In this article, get started creating your first WebView2 app in Win32. Learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information about individual WebView2 APIs, see [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32).
 
 > [!NOTE]
-> This tutorial refers to WebView2 samples. To view or copy sample code, navigate to [WebView2 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples).
+> This tutorial refers to WebView2 samples.  To view or copy sample code, see the [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo.
+
 
 <!-- ====================================================================== -->
 ## Step 0 - Prerequisites
 
-Install the following prerequisites before proceeding.
+First, install the following prerequisites:
 
-1.  [Visual Studio](https://visualstudio.microsoft.com) 2015 or later with C++ support installed.
+1. [Visual Studio](https://visualstudio.microsoft.com) 2015 or later, with **C++ support** installed.
 
-1.  [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2), or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on a supported operating system (OS). The currently supported OS list is Windows 11, Windows 10, Windows 8.1, and Windows 7.
+1. [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2), or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on a supported operating system (OS). The currently supported OS list is Windows 11, Windows 10, Windows 8.1, and Windows 7.
 
 
 <!-- ====================================================================== -->
@@ -31,10 +32,11 @@ Install the following prerequisites before proceeding.
 Start with a basic desktop project that contains a single main window.
 
 > [!IMPORTANT]
-> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp) for your sample app.  To download the modified sample and get started, navigate to [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide).
+> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp) for your sample app.  To download the modified sample and get started, see the [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide) repo.
 
-1.  In Visual Studio, open `WebView2GettingStarted.sln`.
-    If you use an older version of Visual Studio, in the **Solution Explorer** right-click **WebView2GettingStarted**, and choose **Properties**. Click **Configuration Properties** > **General**, then modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset.
+1. In Visual Studio, open `WebView2GettingStarted.sln`.
+
+   If you use an older version of Visual Studio, in the **Solution Explorer** right-click **WebView2GettingStarted**, and choose **Properties**. Click **Configuration Properties** > **General**, then modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset.
 
 :::image type="complex" source="../media/tool-version.png" alt-text="Tool version." lightbox="../media/tool-version.png":::
    Tool version

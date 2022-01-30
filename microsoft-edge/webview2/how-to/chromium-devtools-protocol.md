@@ -115,14 +115,14 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
 <!-- ====================================================================== -->
 ## Step 4: Use DevTools Protocol Helper
 
-1.  Add the `DevToolsProtocolExtension` namespace to your project.
+1.  Add the `DevToolsProtocolExtension` namespace to your project:
 
     ```csharp
     using Microsoft.Web.WebView2.Core;
     using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
     ```
 
-1.  Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocation.html`.
+1.  Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocation.html`:
 
     ```csharp
     async void InitializeAsync()
@@ -134,7 +134,7 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
     }
     ```
 
-1.  Run the [setGeoLocationOverrideAsync](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride) method.  For more information, navigate to [setGeolocationOverride](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride).
+1.  Run the [setGeoLocationOverrideAsync](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride) method.  For more information, see [setGeolocationOverride](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride).
 
     ```csharp
     async void InitializeAsync()
@@ -154,7 +154,8 @@ Use NuGet to download `Microsoft.Web.WebView2.DevToolsProtocolExtension`.  To in
     ```
 
 1.  Run your app.
-1.  To display the coordinates of Paris, France, choose the **Display Location** button.
+
+1.  To display the coordinates of Paris, France, click the **Display Location** button.
 
     :::image type="complex" source="./media/final-location-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris." lightbox="./media/final-location-cdp.png":::
        Display the `.html` file in a WebView2 control with the coordinates for Paris

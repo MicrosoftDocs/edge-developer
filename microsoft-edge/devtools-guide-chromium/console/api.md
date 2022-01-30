@@ -21,8 +21,11 @@ ms.date: 05/04/2021
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Console object API Reference
+<!-- orig:
+# Console API reference
+-->
 
-The `Console` object has methods that are helpful for various tasks in DevTools.  `Console` object methods are available to include in your scripts.
+The `console` object has methods that are helpful for various tasks in DevTools.  You can use `Console` object methods in your scripts or enter them in the **Console** tool.
 
 ---
 
@@ -429,8 +432,10 @@ console.warn('warn');
 <!-- ====================================================================== -->
 ## See also
 
+<!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
+* [MDN Web Docs > `console` object Reference](https://developer.mozilla.org/en-US/docs/Web/API/Console).
 * [Get started with logging messages to the Console](console-log.md)
-* [Console Utilities API Reference](utilities.md) - **Console**-only utility methods, such as `debug()` and `monitorEvents()`.
+* [Console tool utility functions and selectors](utilities.md) - **Console**-only utility methods, such as `debug()` and `monitorEvents()`.
 
 
 <!-- ====================================================================== -->

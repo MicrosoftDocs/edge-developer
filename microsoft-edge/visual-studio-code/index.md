@@ -29,7 +29,9 @@ With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can u
 :::image-end:::
 
 To install the Microsoft Edge DevTools extension:
-1. In Visual Studio Code, navigate to **Extensions** (select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS).
+
+1. In Visual Studio Code, navigate to **Extensions**.  To do this, you can press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.
+
 1. Search the Marketplace for the extension **Microsoft Edge Tools for VS Code**, select the extension, and then select **Install**.
 
 :::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge DevTools extension for Visual Studio Code." lightbox="./media/vscode-edge-tools-install.png":::

@@ -252,10 +252,11 @@ To clear the Console, use any of the following approaches:
 <!-- ====================================================================== -->
 ## See also
 
+<!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
 * [Log messages in the Console tool](console-log.md) - How to filter log messages such as Info, Warnings, and Errors in the Console.
 * [Get started with running JavaScript in the Console](console-javascript.md) - Steps to walk you through issuing JavaScript statements and expressions in the Console.
 * [Console object API Reference](api.md) - Functions and expressions that you can enter in the Console to write messages to the Console, such as `console.log()`.
-* [Console Utilities API Reference](utilities.md) - Convenience functions that you can enter in the Console, such as`monitorEvents()`. <!--A reference of convenience commands available in the Microsoft Edge DevTools Console.-->
+* [Console tool utility functions and selectors](utilities.md) - Convenience functions that you can enter in the **Console** tool, such as`monitorEvents()`.
 
 
 <!-- ====================================================================== -->
