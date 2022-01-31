@@ -39,7 +39,7 @@ These commands only work by entering them directly into the DevTools **Console**
 
 | Function | Description |
 |---|---|
-| [$_](#recent-expression-value)](#Recently evaluated expression) | Returns the value of the most recently evaluated expression. |
+| [$_](#recently-evaluated-expression)] | Returns the value of the most recently evaluated expression. |
 | [$0 - $4](#recently-selected-element-or-javascript-object) | Returns a recently selected element or JavaScript object. |
 | [$(selector)](#query-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
 | [$$(selector, [startNode])](#query-selector-all) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
@@ -620,7 +620,7 @@ profileEnd([name])
     profileEnd("My profile")
     ```
 
-For more information, see [profile([name])](#profilename), above.
+For more information, see [profile](#profile), above.
 
 ---
 

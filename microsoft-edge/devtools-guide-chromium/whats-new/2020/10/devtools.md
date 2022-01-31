@@ -33,9 +33,9 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 *  The strings in the **Lighthouse** tool.
 *  The term `service worker`.
 *  Some of the **Network** tool filters such as `URL`, `XHR`, `JS`, and `CSS`.
-*  The [$0](../../../console/utilities.md#recently-chosen-element-or-javascript-object) Console Utilities API.
+*  The [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object) Console Utilities API.
 
-[$0](../../../console/utilities.md#recently-chosen-element-or-javascript-object) is now available in the [Console](../../../console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](../../../contact.md) to improve support for DevTools in all locales.  For real-time updates on this feature in the Chromium open-source project, see Issue [#1136655](https://crbug.com/1136655).
+[$0](../../../console/utilities.md#recently-selected-element-or-javascript-object) is now available in the [Console](../../../console/index.md) for users on localized versions of the DevTools.   Thank you to the global developer community for helping improve localization of the Microsoft Edge DevTools.  Continue to [send feedback on localization quality](../../../contact.md) to improve support for DevTools in all locales.  For real-time updates on this feature in the Chromium open-source project, see Issue [#1136655](https://crbug.com/1136655).
 
 :::image type="content" source="../../media/2020/10/bing-network-japanese.msft.png" alt-text="Network tool with non-localized filters." lightbox="../../media/2020/10/bing-network-japanese.msft.png":::
 

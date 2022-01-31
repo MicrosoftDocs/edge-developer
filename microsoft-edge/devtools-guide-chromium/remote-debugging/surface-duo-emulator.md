@@ -69,7 +69,7 @@ You can now use the Microsoft Edge DevTools to debug your web content on the [Su
 
 If **SurfaceDuoEmulator** isn't displayed on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on the [Surface Duo Emulator](/dual-screen/android/use-emulator).
 
-For additional troubleshooting steps, see [troubleshooting section for Android devices](./index.md#troubleshooting-devtools-is-not-detecting-the-android-device).
+For additional troubleshooting steps, see [troubleshooting section for Android devices](./index.md#troubleshooting-devtools-isnt-detecting-the-android-device).
 
 ### How the hinge impacts the layout of your web content
 

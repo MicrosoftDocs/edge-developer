@@ -227,7 +227,7 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 #### References
 
 * [console.dir()](../../../console/api.md#dir)
-* [$0](../../../console/utilities.md#recently-chosen-element-or-javascript-object)
+* [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
 
 ### App shortcuts support in the Manifest pane
 
