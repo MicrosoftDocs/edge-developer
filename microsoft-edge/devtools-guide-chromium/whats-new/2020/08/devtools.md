@@ -30,13 +30,13 @@ ms.date: 05/04/2021
 
 ### Match keyboard shortcuts in DevTools to Visual Studio Code
 
-In Microsoft Edge 86, you may match keyboard shortcuts in the DevTools to your shortcuts in [Microsoft Visual Studio Code](https://code.visualstudio.com).
+In Microsoft Edge 86, you can match keyboard shortcuts in the DevTools to your shortcuts in [Microsoft Visual Studio Code](https://code.visualstudio.com).
 
 :::image type="content" source="../../media/2020/08/keyboard-shortcut.msft.png" alt-text="Match keyboard shortcuts in the DevTools to Visual Studio Code." lightbox="../../media/2020/08/keyboard-shortcut.msft.png":::
 
 To activate this feature, see [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).
 
-For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you choose the **Visual Studio Code** preset, that shortcut is now also `F5`.
+For example, the keyboard shortcut for pausing or continuing running a script in [Visual Studio Code](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) is `F5`.  With the **DevTools (Default)** preset, that same shortcut in the DevTools is `F8`, but when you select the **Visual Studio Code** preset, that shortcut is now also `F5`.
 
 Chromium issue [#174309](https://crbug.com/174309)
 
@@ -46,15 +46,17 @@ Chromium issue [#174309](https://crbug.com/174309)
 
 You are now able to test the look and feel of your website or app on two new devices:  [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
 
-To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device](../../../device-mode/index.md).
+To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device](../../../device-mode/index.md):
 
-*   [Spanning](../../../device-mode/dual-screen-and-foldables.md), which is when your website (or app) appears across both screens.
-*   [Rendering the seam](/dual-screen/introduction#how-to-work-with-the-seam), which is the space between the two screens.
-*   Enabling experimental Web Platform APIs to access the new [CSS media screen-spanning feature](/dual-screen/web/css-media-spanning) and [JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments).
+* [Spanning](../../../device-mode/dual-screen-and-foldables.md), which is when your website (or app) appears across both screens.
+
+* [Rendering the seam](/dual-screen/introduction#how-to-work-with-the-seam), which is the space between the two screens.
+
+*  Enabling experimental Web Platform APIs to access the new [CSS media screen-spanning feature](/dual-screen/web/css-media-spanning) and [JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments).
 
 :::image type="content" source="../../media/2020/08/surface-duo-device-emulation.msft.png" alt-text="Device emulation for Surface Duo." lightbox="../../media/2020/08/surface-duo-device-emulation.msft.png":::
 
-To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Emulation: Support dual screen mode**.
+To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Emulation: Support dual screen mode**.
 
 For more information about this feature, see [Emulate dual-screen and foldable devices in Microsoft Edge DevTools](../../../device-mode/dual-screen-and-foldables.md).
 
@@ -62,7 +64,7 @@ Chromium issue: [#1054281](https://crbug.com/1054281)
 
 ### CSS grid overlay improvements and new experimental grid features
 
-Thank you for the positive feedback about the improved CSS grid overlays.  The CSS grid overlays are now enabled by default and do not require you to turn on an experiment.
+Thank you for the positive feedback about the improved CSS grid overlays.  The CSS grid overlays are now enabled by default and don't require you to turn on an experiment.
 
 :::image type="content" source="../../media/2020/08/css-grid-overlay-article.msft.png" alt-text="CSS grid overlay for article element." lightbox="../../media/2020/08/css-grid-overlay-article.msft.png":::
 
@@ -71,7 +73,7 @@ Thank you for the positive feedback about the improved CSS grid overlays.  The C
 
 The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.
 
-To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.
+To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.
 
 For more information about this feature, see [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
 
@@ -111,7 +113,7 @@ The new accessibility helper displays the order of elements in the source.
 
 This feature makes it easier to test the way screen reader and keyboard users experience your website or app.  Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.  The Source Order Viewer displays potential differences in order between the rendered page and the source code.
 
-To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable Source Order Viewer**.
+To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Source Order Viewer**.
 
 For more information about this experiment, see [Source Order Viewer](../../../experimental-features/index.md#source-order-viewer).
 
@@ -165,14 +167,14 @@ Before the new **Media** tool in DevTools, the logging and debug information abo
 
 View live content and inspect potential issues more quickly, including the following examples.
 
-*   Why frames are dropped?
-*   Why JavaScript is interacting with the player in an unexpected way?
+*  Why frames are dropped?
+*  Why JavaScript is interacting with the player in an unexpected way?
 
 ### Capture node screenshots using the Elements tool context menu
 
-You may now capture node screenshots using the context menu in the **Elements** tool.
+You can now capture node screenshots using the context menu in the **Elements** tool.
 
-For example, to take a screenshot of the table of contents, hover on the element, open the contextual menu (right-click), and select **Capture node screenshot**.
+For example, to take a screenshot of the table of contents, right-click the element, and then select **Capture node screenshot**.
 
 :::image type="content" source="../../media/2020/08/capture-node-screenshot.msft.png" alt-text="Capture node screenshots." lightbox="../../media/2020/08/capture-node-screenshot.msft.png":::
 
@@ -204,20 +206,20 @@ When **Disable local fonts** is enabled, DevTools ignores the `local()` fonts an
 
 If you use two different copies of the same font during development, such as the following examples.
 
-*   A local font for your design tools.
-*   A web font for your code.
+*  A local font for your design tools.
+*  A web font for your code.
 
-Use **Disable local fonts** to make it easier for you to complete the following tasks.
+Use **Disable local fonts** to make it easier to:
 
-*   Debug and measure loading performance and optimization of web fonts.
-*   Verify accuracy of your CSS `@font-face` rules.
-*   Discover differences between local versions installed on your device and a web font.
+*  Debug and measure loading performance and optimization of web fonts.
+*  Verify accuracy of your CSS `@font-face` rules.
+*  Discover differences between local versions installed on your device and a web font.
 
 Chromium issue: [#384968](https://crbug.com/384968)
 
 ### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You may open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
+The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
 
 :::image type="content" source="../../media/2020/08/emulate-idle.msft.png" alt-text="Emulate inactive users." lightbox="../../media/2020/08/emulate-idle.msft.png":::
 
@@ -230,7 +232,7 @@ Chromium issue: [#1090802](https://crbug.com/1090802)
 
 The [prefers-reduced-data](https://drafts.csswg.org/mediaqueries-5#descdef-media-prefers-reduced-data) media query detects user content preferences for reduced data.  If selected, the user receives alternate page content that uses less data.
 
-You may now use DevTools to emulate the `prefers-reduced-data` media query.
+You can now use DevTools to emulate the `prefers-reduced-data` media query.
 
 :::image type="content" source="../../media/2020/08/emulate-prefers-reduced-data.msft.png" alt-text="Emulate prefers-reduced-data." lightbox="../../media/2020/08/emulate-prefers-reduced-data.msft.png":::
 
@@ -281,7 +283,7 @@ Chromium issue: [#1061385](https://crbug.com/1090802)
 
 ### New frame details view in Application panel
 
-DevTools now show a detailed view for each frame.  To access it, choose a frame under the **Frames** menu in the **Application** tool.
+DevTools now show a detailed view for each frame.  To access the detailed view, click a frame under the **Frames** menu in the **Application** tool.
 
 :::image type="content" source="../../media/2020/08/frame-details.msft.png" alt-text="New detailed view for a frame in Application panel." lightbox="../../media/2020/08/frame-details.msft.png":::
 
@@ -311,7 +313,7 @@ Chromium issue: [#1051466](https://crbug.com/1051466)
 
 DevTools now provides color suggestions for low color contrast text.
 
-In the example below, `h1` has low contrast text.  To fix it, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Choose the suggested color to apply the color.
+In the example below, `h1` has low contrast text.  To fix it, open the color picker of the `color` property in the **Styles** pane.  After you expand the **Contrast ratio** section, DevTools provides AA and AAA color suggestions.  Select the suggested color, to apply the color.
 
 :::image type="content" source="../../media/2020/08/contrast-color-suggestion.msft.png" alt-text="Color picker suggests AA and AAA color suggestions." lightbox="../../media/2020/08/contrast-color-suggestion.msft.png":::
 
@@ -361,8 +363,8 @@ Chromium issue: [#997694](https://crbug.com/997694)
 
 The following text boxes now have **Clear** buttons:
 
-*   The filter text boxes in the **Styles** pane and **Network** tool.
-*   The DOM search text box in the **Elements** tool.
+*  The filter text boxes in the **Styles** pane and **Network** tool.
+*  The DOM search text box in the **Elements** tool.
 
 Click the **Clear** button to remove any inputted text.
 

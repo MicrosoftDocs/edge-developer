@@ -26,7 +26,7 @@ This article is an outline of the features of the **Console**.
 
 **Contents:**
 
-* [Open the Console](#Open the Console)
+* [Open the Console](#open-the-console)
    * [Open the Console tool](#open-the-console-tool)
    * [Open the Console tool in the Drawer](#open-the-console-tool-in-the-drawer)
    * [Open Console Settings](#open-console-settings)
@@ -54,11 +54,11 @@ This article is an outline of the features of the **Console**.
 <!-- ====================================================================== -->
 ## Open the Console
 
-You may open the **Console** as a [tool in the upper pane](#open-the-console-tool) or as a [tool in the Drawer](#open-the-console-tool-in-the-drawer).
+You can open the **Console** as a [tool in the upper pane](#open-the-console-tool) or as a [tool in the Drawer](#open-the-console-tool-in-the-drawer).
 
 ### Open the Console tool
 
-Select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 :::image type="content" source="../media/console-hello-console.msft.png" alt-text="The Console tool." lightbox="../media/console-hello-console.msft.png":::
 
@@ -68,11 +68,11 @@ To open the **Console** tool from the [Command Menu](../command-menu/index.md), 
 
 ### Open the Console tool in the Drawer
 
-Select `Esc` or choose **Customize and control DevTools** (`...`) and then choose **Show console drawer**.
+Press `Esc`.  Or, click **Customize and control DevTools** (`...`) and then select **Show console drawer**.
 
 :::image type="content" source="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png" alt-text="Show console drawer." lightbox="../media/console-elements-customize-control-devtools-show-console-drawer.msft.png":::
 
-The Drawer pops up at the bottom of your DevTools window, with the **Console** tool open.
+The Drawer pops up in the bottom of the DevTools window, with the **Console** tool open.
 
 :::image type="content" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tool in the Drawer." lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
 
@@ -88,7 +88,7 @@ Click the **Console Settings** (![Console Settings icon.](../media/settings-butt
 
 ### Open the Console Sidebar
 
-To display the **Sidebar**, choose **Show console sidebar** (![Show console sidebar.](../media/show-console-sidebar-icon.msft.png)).  The **Sidebar** is helps you filter.
+To display the **Sidebar**, click **Show console sidebar** (![Show console sidebar.](../media/show-console-sidebar-icon.msft.png)).  The **Sidebar** helps you filter.
 
 :::image type="content" source="../media/console-sidebar-drawer-empty.msft.png" alt-text="Console Sidebar." lightbox="../media/console-sidebar-drawer-empty.msft.png":::
 
@@ -100,11 +100,11 @@ This section contains features that change how messages are presented in the Con
 
 ### Turn off message grouping
 
-To turn off the default message grouping behavior of the **Console**, [open Console Settings](#open-console-settings) and choose the checkbox next to **Group similar**.  For an example, see [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).
+To turn off the default message grouping behavior of the **Console**, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Group similar**.  For an example, see [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).
 
 ### Log XHR and Fetch requests
 
-To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, [open Console Settings](#open-console-settings) and choose the checkbox next to **Log XMLHttpRequests**.
+To log all `XMLHttpRequest` and `Fetch` requests to the **Console** as each happens, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Log XMLHttpRequests**.
 
 :::image type="content" source="../media/console-xhr-fetch.msft.png" alt-text="Logging XMLHttpRequest and Fetch requests." lightbox="../media/console-xhr-fetch.msft.png":::
 
@@ -120,17 +120,17 @@ The top message in previous figure displays the default grouping behavior of the
 
 ### Persist messages across page loads
 
-When you load a new webpage, the default action clears the **Console**.  To persist messages across page loads, [open Console Settings](#open-console-settings) and choose the checkbox next to **Preserve Log**.
+When you load a new webpage, the default action clears the **Console**.  To persist messages across page loads, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Preserve Log**.
 
 ### Hide network messages
 
-The default action for Microsoft Edge is to logs network messages to the **Console**.  In the following figure, the chosen message represents an HTTP status code of `429`.
+The default action for Microsoft Edge is to logs network messages to the **Console**.  In the following figure, the selected message represents an HTTP status code of `429`.
 
 :::image type="content" source="../media/console-show-network.msft.png" alt-text="A '429' message in the Console." lightbox="../media/console-show-network.msft.png":::
 
 To hide network messages:
 
-1. [Open Console Settings](#open-console-settings).
+1. Click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button.
 1. Select the checkbox next to **Hide Network**.
 
 
@@ -141,7 +141,7 @@ There are many ways to filter out messages in the **Console**.
 
 ### Filter out browser messages
 
-[Open the Console Sidebar](#open-the-console-sidebar) and choose **# user messages** to only display messages that came from the JavaScript of the webpage.
+To only display messages that came from the JavaScript of the webpage, [Open the Console Sidebar](#open-the-console-sidebar) and then click **# user messages**.
 
 :::image type="content" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Displaying user messages." lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
 
@@ -149,10 +149,10 @@ There are many ways to filter out messages in the **Console**.
 
 DevTools assigns each `console.*` method one of the four severity levels.
 
-*   `Error`
-*   `Info`
-*   `Verbose`
-*   `Warning`
+*  `Error`
+*  `Info`
+*  `Verbose`
+*  `Warning`
 
 For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console object API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.
 
@@ -160,7 +160,7 @@ To filter the messages, click the **Log Levels** dropdown and then select `Verbo
 
 :::image type="content" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown." lightbox="../media/console-log-level-default-levels.msft.png":::
 
-To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then choose **Errors**, **Warnings**, **Info**, or **Verbose**.
+To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then select **Errors**, **Warnings**, **Info**, or **Verbose**.
 
 :::image type="content" source="../media/console-sidebar-warnings.msft.png" alt-text="Use the Sidebar to view warnings." lightbox="../media/console-sidebar-warnings.msft.png":::
 
@@ -176,19 +176,21 @@ To hide messages from a URL, type `-url:`.  It's a negative URL filter.
 
 To display messages from a single URL:
 
-1.  [Open the Console Sidebar](#open-the-console-sidebar).
-1.  Expand the **# user messages** section.
-1.  Choose the URL of the script that contains the messages on which you want to focus.
+1. [Open the Console Sidebar](#open-the-console-sidebar).
+
+1. Expand the **# user messages** section.
+
+1. Select the URL of the script that contains the messages that you want to focus on.
 
 :::image type="content" source="../media/console-filter-text-specified.msft.png" alt-text="Displaying the messages that came from wp-ad.min.js." lightbox="../media/console-filter-text-specified.msft.png":::
 
 ### Filter out messages from different contexts
 
-Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to [open Console Settings](#open-console-settings) and choose the checkbox next to **Selected Context Only**.
+Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Selected Context Only**.
 
 ### Filter out messages that don't match a regular expression pattern
 
-Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to filter out any messages that don't match that pattern.  DevTools checks if the pattern is found in the message text or the script that caused the message to be logged.
+Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
 
 :::image type="content" source="../media/console-filter-regex.msft.png" alt-text="Filtering out any messages that don't match the regex expression." lightbox="../media/console-filter-regex.msft.png":::
 
@@ -210,15 +212,14 @@ If you find yourself typing the same JavaScript expression in the **Console** re
 
 **Eager Evaluation** displays a preview of the return value as you type JavaScript expressions in the **Console**.  To turn off the return value previews:
 
-1. [Open Console Settings](#open-console-settings).
+1. Click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button.
 1. Clear the checkbox next to **Eager Evaluation**.
 
 ### Turn off autocomplete from history
 
-As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, [open Console Settings](#open-console-settings) and remove the checkbox next to **Autocomplete From History** checkbox.
+As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then clear the checkbox next to **Autocomplete From History** checkbox.
 
-> [!NOTE]
-> In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.
+In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.
 
 :::image type="content" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="The autocomplete popup menu displays expressions from history." lightbox="../media/console-filter-text-autofilter-history.msft.png":::
 
@@ -228,7 +229,7 @@ By default, the **JavaScript Context** dropdown is set to **top**, which represe
 
 :::image type="content" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown." lightbox="../media/console-dom-level-top.msft.png":::
 
-Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to run JavaScript to tweak the DOM of the ad.  First, choose the browsing context of the ad from the **JavaScript Context** dropdown.
+Suppose you have an ad on your webpage embedded in an `<iframe>`, and you want to run JavaScript to tweak the DOM of the ad.  Click the **JavaScript Context** dropdown and then select the browsing context of the ad:
 
 :::image type="content" source="../media/console-dom-level-multiple.msft.png" alt-text="Selecting a different JavaScript context." lightbox="../media/console-dom-level-multiple.msft.png":::
 

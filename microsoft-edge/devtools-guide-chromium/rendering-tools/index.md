@@ -28,10 +28,13 @@ Users expect interactive and smooth pages.  Each stage in the pixel pipeline rep
 
 ### Summary
 
-*   Don't write JavaScript that forces the browser to recalculate layout.  Separate read and write functions, and perform reads first.
-*   Don't over-complicate your CSS.  Use less CSS and keep your CSS selectors simple.
-*   Avoid layout as much as possible.  Choose CSS that does not trigger layout at all.
-*   Painting may take up more time than any other rendering activity.  Watch out for paint bottlenecks.
+*  Don't write JavaScript that forces the browser to recalculate layout.  Separate read and write functions, and perform reads first.
+
+*  Don't over-complicate your CSS.  Use less CSS and keep your CSS selectors simple.
+
+*  Avoid layout as much as possible.  Choose CSS that doesn't trigger layout at all.
+
+*  Painting may take up more time than any other rendering activity.  Watch out for paint bottlenecks.
 
 
 <!-- ====================================================================== -->
@@ -41,7 +44,7 @@ JavaScript calculations, especially ones that trigger extensive visual changes, 
 
 ### JavaScript: Tools
 
-Take a recording in the **Performance** tool and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you are able to enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
+Take a recording in the **Performance** tool and look for suspiciously long `Evaluate Script` events.  <!--If you find any, you can enable the **JS Profiler** and re-do your recording to get more detailed information about exactly which JavaScript functions were used and how long each took.  -->
 
 <!--todo: add Recording section when available  -->
 <!--todo: add Profile JavaScript (JS Profiler) section when available  -->
@@ -69,7 +72,7 @@ Style changes are costly, especially if those changes affect more than one eleme
 
 <!--Related Guides:
 
-*   [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
+* [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
 -->
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
@@ -80,14 +83,14 @@ Take a recording in the **Performance** tool.  Check the recording for large `Re
 
 <!--todo: add Recording section when available  -->
 
-Choose a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.
+Select a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.
 
 :::image type="content" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Long recalculate style." lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
 
 To reduce the impact of `Recalculate Style` events:
 
-*   Use the [CSS Triggers](https://csstriggers.com) to learn which CSS properties trigger layout, paint, and composite.  These properties have the worst impact on rendering performance.
-*   Switch to properties that have less impact.  <!--For more guidance, See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
+*  Use the [CSS Triggers](https://csstriggers.com) to learn which CSS properties trigger layout, paint, and composite.  These properties have the worst impact on rendering performance.
+*  Switch to properties that have less impact.  <!--For more guidance, See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
 
 <!--todo: add Stick to compositor-only properties and manage layer count section when available -->
 
@@ -105,7 +108,7 @@ The following table describes some common style problems and potential solutions
 
 <!--Related Guides:
 
-*   [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)  -->
+* [Reduce the Scope and Complexity of Styles Calculations](/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)  -->
 
 <!--todo: add Reduce the Scope and Complexity of Styles Calculations section when available -->
 
@@ -119,8 +122,8 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 
 <!--Related Guides:
 
-*   [Avoid Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
-*   [Diagnose Forced Synchronous Layouts](rendering-tools/forced-synchronous-layouts.md)  -->
+* [Avoid Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
+* [Diagnose Forced Synchronous Layouts](rendering-tools/forced-synchronous-layouts.md)  -->
 
 <!--todo: add Avoid CSS that triggers layouts (Avoid Layout Thrashing) section when available -->
 <!--todo: add Diagnose Forced Synchronous Layouts section when available  -->
@@ -148,7 +151,7 @@ The following table describes some common layout problems and potential solution
 <!-- ====================================================================== -->
 ## Paint and composite
 
-Paint is the process of filling in pixels.  It is often the most costly part of the rendering process.  If you noticed that your page is not working as designed in any way, it is likely that you have paint problems.
+Paint is the process of filling in pixels.  It is often the most costly part of the rendering process.  If you noticed that your page isn't working as designed in any way, it is likely that you have paint problems.
 
 Compositing is where the painted parts of the page are put together for displaying on screen.  For the most part, if you stick to compositor-only properties and avoid paint altogether, you should notice a major improvement in performance, but you need to watch out for excessive layer counts.  <!--See [Stick to compositor-only properties and manage layer count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count).  -->
 
@@ -163,7 +166,7 @@ Want to know how long painting takes or how often painting occurs?  Check the [E
 -->
 
 <!--
-Check out the **Rendering** panel for further configurations that are able to help you diagnose paint problems.
+Check out the **Rendering** panel for further configurations that can help you diagnose paint problems.
 todo: link Rendering panel in ../evaluate-performance/timeline-tool  sub-section when live.
 The Timeline Tool page is deprecated.
 -->

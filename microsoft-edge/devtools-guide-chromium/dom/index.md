@@ -80,7 +80,7 @@ Once you have selected a node in the DOM Tree, you can navigate the DOM Tree wit
 
 ### Scroll into view
 
-When viewing the DOM Tree, you may find yourself interested in a DOM node that is not currently in the viewport.  For example, suppose that you scrolled to the bottom of the page, and you are interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you can review the node.
+When viewing the DOM Tree, you may find yourself interested in a DOM node that isn't currently in the viewport.  For example, suppose that you scrolled to the bottom of the page, and you are interested in the `<h1>` node at the top of the page.  **Scroll into view** lets you quickly reposition the viewport so that you can review the node.
 
 1. Open the [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) demo page in a new tab or window.
 
@@ -138,11 +138,11 @@ To edit attributes, double-click the attribute name or value.  Follow the instru
 
 1. Double-click `<li>`.  The text is highlighted to indicate that the node is selected.
 
-    :::image type="content" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="Edit the node." lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
+   :::image type="content" source="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png" alt-text="Edit the node." lightbox="../media/dom-elements-highlighted-edit-attributes-highlighted.msft.png":::
 
 1. Select the `Right` arrow key, add a space, type `style="background-color:gold"`, and then press `Enter`.  The background color of the node changes to gold.
 
-    :::image type="content" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Add a style attribute to the node." lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
+   :::image type="content" source="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png" alt-text="Add a style attribute to the node." lightbox="../media/dom-elements-highlighted-edit-attributes-inline-css.msft.png":::
 
 ### Edit node type
 
@@ -180,7 +180,7 @@ You can force nodes to remain in states including `:active`, `:hover`, `:focus`,
 
 1. Right-click **The Lord of the Flies**, and then select **Inspect**.
 
-1. Right-click `<li class="demo--hover">The Lord of the Flies</li>`, and then select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.  The background color remains orange even though you aren't actually hovering over the node.
+1. Right-click `<li class="demo--hover">The Lord of the Flies</li>`, and then select **Force State** > **:hover**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.  The background color remains orange even though you aren't actually hovering over the node.
 
 ### Hide a node
 
@@ -209,7 +209,7 @@ Press `Delete` to delete a node, as follows:
 
 1. Select the `Delete` key.  The node is deleted.
 
-1. Select `Control`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
+1. Press `Control`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
 
 
 <!-- ====================================================================== -->
@@ -233,7 +233,7 @@ When you inspect a node, the `== $0` text next to the node means that you can re
 
 1. Hover on the result.  The node is highlighted in the viewport.
 
-1. Select `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then select `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`:
+1. Click `<li>Dune</li>` in the DOM Tree, type `$0` in the Console again, and then press `Enter` again.  Now, `$0` evaluates to `<li>Dune</li>`:
 
 :::image type="content" source="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png" alt-text="The result of the second $0 expression in the Console." lightbox="../media/dom-elements-highlighted-reference-currently-selected-node-console-2.msft.png":::
 
@@ -245,9 +245,9 @@ If you need to refer back to a node many times, store it as a global variable.
 
 1. Under **Store as global variable**, right-click **The Big Sleep**, and then select **Inspect**.
 
-1. Right-click `<li>The Big Sleep</li>` in the DOM Tree, and then select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
+1. Right-click `<li>The Big Sleep</li>` in the DOM Tree, and then select **Store as global variable**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
-1. Type `temp1` in the Console and then select `Enter`.  The result of the expression shows that the variable evaluates to the node.
+1. Type `temp1` in the Console and then press `Enter`.  The result of the expression shows that the variable evaluates to the node.
 
 :::image type="content" source="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png" alt-text="The result of the temp1 expression." lightbox="../media/dom-elements-highlighted-store-global-variable-console-temp1.msft.png":::
 
@@ -283,7 +283,7 @@ Use attribute modification breakpoints when you want to pause the JavaScript tha
 
 1. Under **Break on attribute modifications**, right-click **Sauerkraut** and then select **Inspect**.
 
-1. In the DOM Tree, right-click `<li id="target">Sauerkraut</li>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
+1. In the DOM Tree, right-click `<li id="target">Sauerkraut</li>`, and then select **Break On** > **Attribute Modifications**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
    :::image type="content" source="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png" alt-text="Break on attribute modifications." lightbox="../media/dom-elements-highlighted-break-attribute-modifications-break-on-attribute-modifications.msft.png":::
 
@@ -303,7 +303,7 @@ If you want to pause when a particular node is removed, use node removal breakpo
 
 1. Under **Break on Node Removal**, right-click **Neuromancer** and then select **Inspect**.
 
-1. In the DOM Tree, hover on `<li id="target">Neuromancer</li>`, open the contextual menu (right-click), and choose **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if the option is not displayed.
+1. In the DOM Tree, right-click `<li id="target">Neuromancer</li>`, and then select **Break On** > **Node Removal**.  See [Appendix: Missing options](#appendix-missing-options) if the option isn't displayed.
 
 1. Click the **Delete** button above.  DevTools pauses the page and highlights the code that caused the node to be removed.
 
@@ -329,7 +329,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 That covers most of the DOM-related features in DevTools.  You can discover the rest of the features by right-clicking nodes in the DOM Tree, and experimenting with the other options that were not covered in this tutorial.  See [Elements panel keyboard shortcuts](../shortcuts/index.md#elements-tool-keyboard-shortcuts).
 
-Check out the [Microsoft Edge DevTools homepage](../../devtools-guide-chromium/index.md) to discover everything else you are able to do with DevTools.
+Check out the [Microsoft Edge DevTools homepage](../../devtools-guide-chromium/index.md) to discover everything else you can do with DevTools.
 
 <!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 
@@ -411,7 +411,7 @@ This is a continuation of the [Scroll into view](#scroll-into-view) section.  Fo
 
 Many of the instructions in this tutorial instruct you to right-click a node in the DOM Tree and then select an option from the context menu that pops up. If you don't see the specified option in the context menu, try right-clicking away from the node text.
 
-:::image type="content" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Where to click if all of the options are not displayed." lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
+:::image type="content" source="../media/dom-elements-highlighted-right-click-right-side.msft.png" alt-text="Where to click if all of the options aren't displayed." lightbox="../media/dom-elements-highlighted-right-click-right-side.msft.png":::
 
 
 <!-- ====================================================================== -->

@@ -45,9 +45,11 @@ Too many requests are being made on a single domain.  On HTTP/1.0 or HTTP/1.1 co
 
 **Fixes**
 
-*   Implement domain sharding if you must use HTTP/1.0 or HTTP/1.1.
-*   Use HTTP/2.  Do not use domain sharding with HTTP/2.
-*   Remove or defer unnecessary requests so that critical requests download earlier.
+*  Implement domain sharding<!-- (splitting resources across multiple domains)--> if you must use HTTP/1.0 or HTTP/1.1.
+
+*  Use HTTP/2.  Don't use domain sharding with HTTP/2.
+
+*  Remove or defer unnecessary requests so that critical requests download earlier.
 
 
 <!-- ====================================================================== -->
@@ -63,13 +65,15 @@ In the following figure, the long, green bar in the **Waterfall** indicates that
 
 **Causes**
 
-*   The connection between the client and server is slow.
-*   The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte (TTFB) when accessing a local server, then the server is slow.
+*  The connection between the client and server is slow.
+
+*  The server is slow to respond.  Host the server locally to determine if it is the connection or server that is slow.  If you still get a slow Time To First Byte (TTFB) when accessing a local server, then the server is slow.
 
 **Fixes**
 
-*   If the connection is slow, consider hosting your content on a CDN or changing hosting providers.
-*   If the server is slow, consider optimizing database queries, implementing a cache, or modifying your server configuration.
+*  If the connection is slow, consider hosting your content on a CDN or changing hosting providers.
+
+*  If the server is slow, consider optimizing database queries, implementing a cache, or modifying your server configuration.
 
 
 <!-- ====================================================================== -->
@@ -85,21 +89,23 @@ In the following figure, the long, blue bar in the **Waterfall** next to the png
 
 **Causes**
 
-*   The connection between the client and server is slow.
-*   A lot of content is being downloaded.
+*  The connection between the client and server is slow.
+
+*  A lot of content is being downloaded.
 
 **Fixes**
 
-*   Consider hosting your content on a CDN or changing hosting providers.
-*   Send fewer bytes by optimizing your requests.
+*  Consider hosting your content on a CDN or changing hosting providers.
+
+*  Send fewer bytes by optimizing your requests.
 
 <!-- ## Contribute knowledge  / Getting in touch
 
 Do you have a network issue that should be added to this guide?
 
-*   Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
-*   Choose **Send Feedback** (![Send Feedback.](../media/smile-icon.msft.png)) in the DevTools or select `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
-*   [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
+*  Send a tweet to [@EdgeDevTools](https://twitter.com/intent/tweet?text=@EdgeDevTools%20[Network%20Issues%20Guide%20Suggestion]).
+*  Click **Send Feedback** (![Send Feedback.](../media/smile-icon.msft.png)) in the DevTools or press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS) to provide feedback or feature requests.
+*  [Open an issue](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=%5BDevTools%20Network%20Issues%20Guide%20Suggestion%5D) on the docs repo.  -->
 
 
 <!-- ====================================================================== -->

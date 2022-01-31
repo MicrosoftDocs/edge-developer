@@ -39,14 +39,14 @@ To register for a trial of an experimental API:
 
 1. Complete the form.
 
-    > [!NOTE]
-    > To enroll a single or all subdomains, choose set the `Do you need to match all subdomains for the provided origin?` setting to `Yes`.  For example, `https://dev.contoso.com` is a single domain, and `https://*.contoso.com` uses a wildcard to represent all subdomains.
+   > [!NOTE]
+   > To enroll a single or all subdomains, choose set the `Do you need to match all subdomains for the provided origin?` setting to `Yes`.  For example, `https://dev.contoso.com` is a single domain, and `https://*.contoso.com` uses a wildcard to represent all subdomains.
 
-    > [!IMPORTANT]
-    > The following origin formats are not allowed.
-    > *   Specifying a subfolder on the origin.  For example, `https://contoso.com/path/subfolder`
-    >
-    > *   Using an origin with query string parameters.  For example, `https://contoso.com/path/feature?query_parameter=12345`
+   > [!IMPORTANT]
+   > The following origin formats aren't allowed.
+   > *   Specifying a subfolder on the origin.  For example, `https://contoso.com/path/subfolder`
+   >
+   > *   Using an origin with query string parameters.  For example, `https://contoso.com/path/feature?query_parameter=12345`
 
 1. Click **ACCEPT and REGISTER**.
 
@@ -54,17 +54,17 @@ To register for a trial of an experimental API:
 
 A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials) page.  To begin using the trial on your website, use either of the following methods to apply the token to your page:
 
-*   Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.
+*  Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.
 
-    ```html
-    <meta http-equiv="origin-trial" content="replace-with-your-token">
-    ```
+   ```html
+   <meta http-equiv="origin-trial" content="replace-with-your-token">
+   ```
 
-*   Add `Origin-Trial` to the HTTP response header of your server.
+*  Add `Origin-Trial` to the HTTP response header of your server.
 
-    ```json
-    Origin-Trial: replace-with-your-token
-    ```
+   ```json
+   Origin-Trial: replace-with-your-token
+   ```
 
 > [!NOTE]
 > Your token is valid for 6 weeks.  Before your trial ends, reminder emails are sent to you that ask for your feedback and ask you to consider renewing your trial before your token expires.
@@ -73,21 +73,23 @@ A token is instantly generated and displayed on the [Microsoft Edge Origin Trial
 
 To opt out of an experiment, use one of the following methods to remove your token.
 
-*   Remove the `meta` tag from every page that used the experimental API.
+*  Remove the `meta` tag from every page that used the experimental API.
 
-    ```html
-    <meta http-equiv="origin-trial" content="your-token">
-    ```
+   ```html
+   <meta http-equiv="origin-trial" content="your-token">
+   ```
 
-*   Remove `Origin-Trial` from the HTTP response header of your server.
+*  Remove `Origin-Trial` from the HTTP response header of your server.
 
-    ```json
-    Origin-Trial: your-token
-    ```
+   ```json
+   Origin-Trial: your-token
+   ```
 
 ### Detect experimental features and provide a fallback
 
-When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that do not support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available which may result in errors.  To avoid this situation, ensure you detect features available in your browser.  For more information, see [Implementing feature detection](https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection).
+When using experimental APIs, ensure you provide a working experience to all visitors of your website.  Visitors may use browsers that don't support the experimental APIs that you added to your code.  Additionally, if your token expires before you renew it, the experimental API is no longer available, which may result in errors.
+
+To avoid this situation, make sure you detect features available in your browser.  For more information, see [Implementing feature detection](https://developer.mozilla.org/docs/learn/tools_and_testing/cross_browser_testing/feature_detection).
 
 ### Roadmap for Allowed Origins
 

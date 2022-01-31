@@ -59,15 +59,21 @@ For more information about this feature, or to comment with questions and ideas,
 <!-- TODO:  Rachel's feedback is about the fact that this experimental feature is turned on by default, may have separate section in What's New for experimental features)  -->
 <!-- Subtitle: Make DevTools work better for you by creating new keyboard shortcuts for any action in the DevTools.  -->
 
-You may now customize the keyboard shortcut for any action in the DevTools.  To edit a keyboard shortcut:
+You can now customize the keyboard shortcut for any action in the DevTools.
 
-1.  Open the DevTools, and then select **Settings** > **Shortcuts**.
-1.  Select the action you want to customize.
-1.  Click the Edit (![Edit Keyboard Shortcut icon.](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) icon.
-1.  Press the keys you want to bind to the action.
-1.  Click the checkmark (![Checkmark Keyboard Shortcut icon.](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) icon.
+To edit a keyboard shortcut:
 
-For more information about customizing and editing shortcuts, see [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).  To review real-time updates on this feature in the Chromium open-source project, see Issue [174309](https://crbug.com/174309).
+1. Open DevTools, and then select **Settings** > **Shortcuts**.
+
+1. Select the action you want to customize.
+
+1. Click the **Edit** (![Edit icon.](../../media/2021/02/edit-keyboard-shortcut-icon.msft.png)) icon.
+
+1. Press the keys you want to bind to the action.
+
+1. Click the checkmark (![Checkmark icon.](../../media/2021/02/checkmark-keyboard-shortcut-icon.msft.png)) icon.
+
+For more information about customizing and editing shortcuts, see [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).  For real-time updates on this feature in the Chromium open-source project, see Issue [174309](https://crbug.com/174309).
 
 :::image type="content" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode." lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
 
@@ -78,7 +84,7 @@ For more information about customizing and editing shortcuts, see [Customize key
 <!-- Title: Edge Devtools for Visual Studio code extension update 1.1.4  -->
 <!-- Subtitle: Latest changes including a favicon is displayed next to each of the instances and console messages from the browser are displayed in the console of Visual Studio Code.  -->
 
-The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the **DevTools Console** under **Output** of Microsoft Visual Studio Code.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You may file issues and contribute to the extension on the [vscode-edge-devtools](https://github.com/microsoft/vscode-edge-devtools) GitHub repo.
+The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension version 1.1.4 for Microsoft Visual Studio Code now displays a favicon next to each of the DevTools instances.  Console messages from Microsoft Edge now display in the **DevTools Console** under **Output** of Microsoft Visual Studio Code.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.4, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You can file issues and contribute to the extension on the [vscode-edge-devtools](https://github.com/microsoft/vscode-edge-devtools) GitHub repo.
 
 The following figure displays messages from an example webpage logged in the **Console** tool in Microsoft Edge:
 
@@ -93,15 +99,15 @@ The following figure displays the same messages from the example webpage logged 
 ## Improved CSS flexbox editing with visual flexbox editor and multiple overlays
 
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
-<!-- Subtitle: In the Styles pane, choose the icon that appears next to display: flex to try different layout properties for flex containers.  -->
+<!-- Subtitle: In the Styles pane, click the icon that appears next to display: flex to try different layout properties for flex containers.  -->
 
-DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon displays next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, choose the `flex` icon.  To review the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
+DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon displays next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the `flex` icon.  To review the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
 
 To open the **Flexbox** editor, go to the **Styles** pane and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.
 
 :::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS flexbox debugging tools." lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
 
-In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You may toggle the overlay of each element.
+In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You can toggle the overlay of each element.
 
 :::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Flexbox section in the Layout pane." lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
 
@@ -114,11 +120,11 @@ In addition, the **Flexbox** section in the **Layout** pane displays all of the 
 
 Previously, you were not able to expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  When a network request is selected in the **Network** tool, the **Initiator** pane displays the chain of requests that initiated the currently selected request.
 
-In Microsoft Edge version 90, you may expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, see [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).  To review the history of this feature in the Chromium open-source project, see Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
+In Microsoft Edge version 90, you can expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, see [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).  To review the history of this feature in the Chromium open-source project, see Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
 
-Choose a Network request and choose the **Initiator** pane:
+Click a Network request and then click the **Initiator** pane:
 
-:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Choose a Network request and choose the Initiator pane." lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Click a Network request and then click the Initiator pane." lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
 
 Expand or collapse the request initiator chain and follow the highlighted row:
 
@@ -131,15 +137,15 @@ Expand or collapse the request initiator chain and follow the highlighted row:
 <!-- Title: Console improvements make filtering more consistent  -->
 <!-- Subtitle: The Log Levels dropdown is more clearly disabled when using filters in the Console sidebar.  -->
 
-While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown are not available.  Previously, the **Log Levels** dropdown highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown no longer highlights when you hover on it while a filter from the **Console Sidebar** is chosen.  To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages).
+While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown aren't available.  Previously, the **Log Levels** dropdown highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown no longer highlights when you hover on it while a filter from the **Console Sidebar** is chosen.  To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages).
 
 Previously, if you open the **Console sidebar** and hover on **Default levels**, it was highlighted:
 
-:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Previously, if you open the Console sidebar and hover on Default levels it was highlighted" lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
+:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Previously, if you open the Console sidebar and hover on Default levels it was highlighted." lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
 
-Starting in Microsoft Edge 90, if you choose the **Console sidebar** and hover on **Default levels**, it doesn't highlight:
+Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on **Default levels**, it doesn't highlight:
 
-:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="Starting in Microsoft Edge 90, if you choose the Console sidebar and hover on Default levels, it does not highlight" lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
+:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="Starting in Microsoft Edge 90, if you click the Console sidebar and hover on Default levels, it doesn't highlight." lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -151,18 +157,18 @@ Starting in Microsoft Edge 90, if you choose the **Console sidebar** and hover o
 
 Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote (`"`) characters.  To review the history of this feature in the Chromium open-source project, see Issue [1178530](https://crbug.com/1178530).
 
-:::image type="content" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (&#0022;) characters" lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
+:::image type="content" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (&#0022;) characters." lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
 
 ### Emulate the CSS color-gamut media feature
 
-The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media query emulates the approximate range of colors supported by the browser and the device you are testing.  The dropdown under **Emulate CSS media feature color-gamut** contains color spaces that DevTools may emulate.  For example, to trigger a `color-gamut: p3` media query, choose **color-gamut: p3** from the dropdown.
+The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media query emulates the approximate range of colors supported by the browser and the device you are testing.  The dropdown under **Emulate CSS media feature color-gamut** contains color spaces that DevTools may emulate.  For example, to trigger a `color-gamut: p3` media query, select **color-gamut: p3** from the dropdown.
 
 To emulate the CSS color-gamut media feature:
 
-1.  Open the [Command Menu](../../../command-menu/index.md).
-1.  Type `Rendering`.
-1.  Run the **Show Rendering** command.
-1.  Go to **Emulate CSS media feature color-gamut** and then click an option.
+1. Open the [Command Menu](../../../command-menu/index.md).
+1. Type `Rendering`.
+1. Run the **Show Rendering** command.
+1. Go to **Emulate CSS media feature color-gamut** and then click an option.
 
 To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).  To review the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
 
@@ -186,7 +192,7 @@ To review the history of this feature in the Chromium open-source project, see I
 
 ### New Remote Address Space column in the Network tool
 
-<!-- does not work in canary 90.0.813.0 -->
+<!-- doesn't work in canary 90.0.813.0 -->
 The new **Remote Address Space** column displays the network IP address space of each network resource.  To display the new Remote Address Space column:
 
 1. In DevTools, open the **Network** tool.
@@ -195,11 +201,11 @@ The new **Remote Address Space** column displays the network IP address space of
 
 1. Click **Remote Address Space**.
 
-The Requests table now displays a new column with the header named **Remote Address Space**.  To review the history of this feature in the Chromium open-source project, see Issue [1128885](https://crbug.com/1128885).
+The Requests table now displays a new column with the header named **Remote Address Space**.  To view the history of this feature in the Chromium open-source project, see Issue [1128885](https://crbug.com/1128885).
 
-In the contextual menu, choose the **Remote Address Space**:
+Right-click and then select **Remote Address Space**:
 
-:::image type="content" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="In the contextual menu, choose Remote Address Space" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+:::image type="content" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="In the right-click menu, select Remote Address Space" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
 
 The Requests table now displays the **Remote Address Space** column:
 
@@ -228,12 +234,12 @@ Previously, the `fn.displayName` property allowed you to control debug names for
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
 This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility](../../../accessibility/accessibility-tab.md) pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.
-After you turn on this experiment and reload the DevTools, choose one of the following buttons to switch the display in the Elements tool for all elements on the webpage.
+After you turn on this experiment and reload the DevTools, click one of the following buttons to switch the display in the Elements tool for all elements on the webpage.
 
-*   To display the full accessibility tree view , choose the **Switch to Accessibility Tree view**.
-*   To display the DOM tree view, choose the **Switch to DOM Tree view**.
+*  To display the full accessibility tree view, click the **Switch to Accessibility Tree view** button.
+*  To display the DOM tree view, click the **Switch to DOM Tree view** button.
 
-To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable full accessibility tree view in Elements pane**.  To review the history of this feature in the Chromium open-source project, see Issue [887173](https://crbug.com/887173).
+To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable full accessibility tree view in Elements pane**.  For the history of this feature in the Chromium open-source project, see Issue [887173](https://crbug.com/887173).
 
 Displaying the **DOM Tree view**:
 

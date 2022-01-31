@@ -70,7 +70,7 @@ You'll build a site in the Glitch online code editor.
 
    :::image type="content" source="media/beginners-html-setup3.msft.png" alt-text="The remixed project." lightbox="media/beginners-html-setup3.msft.png":::
 
-1. If you plan to complete the next tutorial in this series, select **Sign In** to Glitch using your Facebook, GitHub, or Google account; or email yourself a magic link. If you choose not to sign in to an account, you cannot edit the project after closing the editor tab.
+1. If you plan to complete the next tutorial in this series, select **Sign In** to Glitch using your Facebook, GitHub, or Google account; or email yourself a magic link. If you don't sign in to an account, you can't edit the project after closing the editor tab.
 
 1. Select **Show** > **In a New Window**.  A new tab opens, showing the live page.  This tab is called the **live tab** throughout this tutorial.
 
@@ -80,7 +80,7 @@ You'll build a site in the Glitch online code editor.
 <!-- ====================================================================== -->
 ## Add content
 
-Your site needs more information. Complete the following steps to add some content.
+Your site needs more information.  To add some content:
 
 1. In the **editor tab**, replace `<!-- You're "About Me" will go here.  -->` with `<h1>About Me</h1>`.
 
@@ -92,11 +92,11 @@ Your site needs more information. Complete the following steps to add some conte
             </main>
     ```
 
-    :::image type="content" source="media/beginners-html-add1.msft.png" alt-text="The new code is highlighted in the editor tab." lightbox="media/beginners-html-add1.msft.png":::
+   :::image type="content" source="media/beginners-html-add1.msft.png" alt-text="The new code is highlighted in the editor tab." lightbox="media/beginners-html-add1.msft.png":::
 
-1. View your changes in the **live tab**. The text `About Me` is visible on the page. The text is larger than the surrounding text because the `<h1>` element represents a Heading 1.  Your web browser automatically styles headings in larger font sizes.
+1. View your changes in the **live tab**. The text `About Me` is visible on the page. The text is larger than the surrounding text because the `<h1>` element represents a Heading 1. Your web browser automatically styles headings in larger font sizes.
 
-    :::image type="content" source="media/beginners-html-add2.msft.png" alt-text="The new heading is visible in the live tab." lightbox="media/beginners-html-add2.msft.png":::
+   :::image type="content" source="media/beginners-html-add2.msft.png" alt-text="The new heading is visible in the live tab." lightbox="media/beginners-html-add2.msft.png":::
 
 1. Back in the **editor tab**, insert `<p>I am learning web development. Recent accomplishments:</p>` on the line below  `<h1>About Me</h1>`.
 
@@ -109,7 +109,7 @@ Your site needs more information. Complete the following steps to add some conte
             </main>
     ```
 
-    :::image type="content" source="media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab." lightbox="media/beginners-html-add3.msft.png":::
+   :::image type="content" source="media/beginners-html-add3.msft.png" alt-text="The updated code is highlighted in the editor tab." lightbox="media/beginners-html-add3.msft.png":::
 
 1. View your change in the **live tab**.
 
@@ -125,11 +125,11 @@ Your site needs more information. Complete the following steps to add some conte
       </ul>
    ```
 
-    :::image type="content" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab." lightbox="media/beginners-html-add4.msft.png":::
+   :::image type="content" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab." lightbox="media/beginners-html-add4.msft.png":::
 
 1. View the **live tab** to make sure that the new content displays correctly.
 
-    :::image type="content" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab." lightbox="media/beginners-html-add5.msft.png":::
+   :::image type="content" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab." lightbox="media/beginners-html-add5.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -144,13 +144,13 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
 1. Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.
 
     <!--
-        :::image type="content" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page, the text 'A new element!?!' is displayed." lightbox="media/beginners-html-dom1.msft.png":::
+      :::image type="content" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page, the text 'A new element!?!' is displayed." lightbox="media/beginners-html-dom1.msft.png":::
     -->
 
-1. Open the **editor tab** and try to find the text in `index.html`. The text does not display in this view.
+1. Open the **editor tab** and try to find the text in `index.html`. The text doesn't appear in this view.
 
     <!--
-        :::image type="content" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text 'A new element!?!' isn't found in index.html." lightbox="media/beginners-html-dom2.msft.png":::
+      :::image type="content" source="media/beginners-html-dom2.msft.png" alt-text="The mystery text 'A new element!?!' isn't found in index.html." lightbox="media/beginners-html-dom2.msft.png":::
     -->
 
 1. Open the **live tab**, right-click `A new element!?!`, and then select **Inspect**.

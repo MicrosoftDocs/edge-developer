@@ -30,10 +30,7 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 **Settings** > **Preferences** contains many options for customizing DevTools.
 
-There are two ways to open Settings.
-
-*   Select the **Settings** icon (![Settings icon.](../media/settings-icon-dark.msft.png)).
-*   While DevTools has focus, select `F1`.
+To open Settings, in DevTools, click the **Settings** icon (![Settings icon.](../media/settings-icon-dark.msft.png)).  Or, while DevTools has focus, press `F1`.
 
 :::image type="content" source="../media/customize-settings-preferences.msft.png" alt-text="Settings." lightbox="../media/customize-settings-preferences.msft.png":::
 
@@ -41,21 +38,21 @@ There are two ways to open Settings.
 <!-- ====================================================================== -->
 ## Drawer
 
-The **Drawer** is a second panel where you can choose which tools to display.
+In the **Drawer** toolbar in the bottom of DevTools, you can select which tools to display.
 
-To open (or close) the **Drawer**, select `Escape`.
+To open (or close) the **Drawer**, press `Escape`.
 
 :::image type="content" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer." lightbox="../media/customize-drawer-open.msft.png":::
 
 You can move tools between the main panel and the drawer.
 
-*   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu (right-click) and select **Move to top**.
+*  To move a tool from the drawer to the main panel, right-click a tool, and then select **Move to top**.
 
-    :::image type="content" source="../media/move-from-drawer.msft.png" alt-text="Moving a tool from the Drawer to the main toolbar." lightbox="../media/move-from-drawer.msft.png":::
+   :::image type="content" source="../media/move-from-drawer.msft.png" alt-text="Moving a tool from the Drawer to the main toolbar." lightbox="../media/move-from-drawer.msft.png":::
 
-*   To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu (right-click) and select **Move to bottom**.
+*  To move a tool from the main panel to the drawer, right-click a tool, and then select **Move to bottom**.
 
-    :::image type="content" source="../media/move-to-drawer.msft.png" alt-text="Moving a tool from the main toolbar to the Drawer." lightbox="../media/move-to-drawer.msft.png":::
+   :::image type="content" source="../media/move-to-drawer.msft.png" alt-text="Moving a tool from the main toolbar to the Drawer." lightbox="../media/move-to-drawer.msft.png":::
 
 
 <!-- ====================================================================== -->

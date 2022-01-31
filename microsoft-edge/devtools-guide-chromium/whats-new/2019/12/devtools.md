@@ -69,7 +69,7 @@ Go to `edge://flags` and set the **Enable localized Developer Tools** flag to **
 
 :::image type="content" source="../../images/2019/12/localized-devtools.msft.png" alt-text="The DevTools in German." lightbox="../../images/2019/12/localized-devtools.msft.png":::
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet](https://aka.ms/tweet/edgedevtools) at us or choose the [Send Feedback](../../../contact.md) icon.
+If you want to use the DevTools in a different language than the ones that are available, [tweet](https://aka.ms/tweet/edgedevtools) at us or click the [Send Feedback](../../../contact.md) icon.
 
 Chromium issue [#941561](https://crbug.com/941561)
 
@@ -79,7 +79,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 
 :::image type="content" source="../../images/2019/12/webhint-browser-extension.msft.png" alt-text="The Hints tool in the DevTools when the webhint browser extension is installed." lightbox="../../images/2019/12/webhint-browser-extension.msft.png":::
 
-[Try the webhint browser extension in Microsoft Edge](https://aka.ms/webhint/edge-extension).  Once you install the extension, open the DevTools and choose the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io](https://aka.ms/webhint/browser-extension) to learn more.
+[Try the webhint browser extension in Microsoft Edge](https://aka.ms/webhint/edge-extension).  Once you install the extension, open DevTools and then select the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io](https://aka.ms/webhint/browser-extension) to learn more.
 
 ### 3D View
 
@@ -87,7 +87,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 :::image type="content" source="../../images/2019/12/3dview.msft.png" alt-text="The 3D View in the DevTools." lightbox="../../images/2019/12/3dview.msft.png":::
 
-To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
+To access the 3D View, go to `edge://flags` and ensure that the **Developer Tools experiments** flag is set to **Enabled**.  Restart Microsoft Edge and open the DevTools.  Select `F1` in the DevTools or open the **Settings** > **Experiments** section, and turn on the **Enable 3D View** checkbox.  Now, press `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
 
 We're working on the UI and adding more functionality to the 3D View so please send us your [feedback](../../../contact.md).
 
@@ -182,9 +182,9 @@ You are now able to view the initiators and dependencies of a network request as
 
 After [logging network activity in the Network panel](../../../network/index.md), select a resource and then go to the **Initiator** panel to view the **Request Initiator Chain**:
 
-*   The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.
-*   The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.
-*   The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.
+*  The **inspected resource** is bold.  In the screenshot above, `ai.2.min.js` is the inspected resource.
+*  The resources above the inspected resource are the **initiators**.  In the screenshot above, `https://www.microsoftedgeinsider.com` is the initiator of `ai.2.min.js`.  In other words, `https://www.microsoftedgeinsider.com` caused the network request for `ai.2.min.js`.
+*  The resources below the inspected resource are the **dependencies**.  In the screenshot above, `https://dc.services.visualstudio.com/v2/track` is a dependency of `ai.2.min.js`.  In other words, `ai.2.min.js` caused the network request for `https://dc.services.visualstudio.com/v2/track`.
 
 > [!NOTE]
 > Initiator and dependency information can also be accessed by holding `Shift` and then hovering over network resources.  See [View initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).
@@ -193,7 +193,7 @@ Chromium issue [#842488](https://crbug.com/842488)
 
 #### Highlight the selected network request in the Overview
 
-After you choose a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This is able to help you detect if the network request is happening earlier or later than expected.
+After you select a network resource in order to inspect it, the Network panel now puts a blue border around that resource in the **Overview**.  This can help you detect if the network request is happening earlier or later than expected.
 
 :::image type="content" source="../../images/2019/12/overview.msft.png" alt-text="The Overview pane highlighting the inspected resource." lightbox="../../images/2019/12/overview.msft.png":::
 
@@ -205,7 +205,7 @@ Use the new **Path** and **URL** columns in the **Network** tool to display the 
 
 :::image type="content" source="../../images/2019/12/columns.msft.png" alt-text="The new Path and URL columns in the Network panel." lightbox="../../images/2019/12/columns.msft.png":::
 
-To display the new columns, hover on the **Waterfall** table header, open the contextual menu (right-click), and choose **Path** or **URL**.
+To display the new columns, right-click the **Waterfall** table header, and then select **Path** or **URL**.
 
 Chromium issue [#993366](https://crbug.com/993366)
 
@@ -239,7 +239,7 @@ The configuration UI has a new, responsive design, and the throttling configurat
 The [Coverage](../../../coverage/index.md) tool has a new dropdown menu that lets you specify whether code coverage data should be collected **per function** or **per block**.  **Per block** coverage is more detailed but also far more expensive to collect.  DevTools uses **per function** coverage by default now.
 
 > [!CAUTION]
-> You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all then DevTools marks the entire script as used code.  Only if the script does not run at all does DevTools mark the script as unused code.
+> You may notice large code coverage differences in HTML files depending on whether you use **per function** or **per block** mode.  When using **per function** mode, inline scripts in HTML files are treated as functions.  If the script runs at all, DevTools marks the entire script as used code.  If the script doesn't run at all, DevTools marks the script as unused code.
 
 :::image type="content" source="../../images/2019/12/modes.msft.png" alt-text="The coverage mode dropdown menu." lightbox="../../images/2019/12/modes.msft.png":::
 

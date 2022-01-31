@@ -57,13 +57,13 @@ If you set the browser executable folder to a specific preview channel of Micros
 
 This section applies to using a group policy, registry override, or environment variable.
 
-If a specific browser executable folder is not specified, then the WebView2 will attempt to load a runtime from one of the known default locations.
+If a specific browser executable folder isn't specified, then the WebView2 will attempt to load a runtime from one of the known default locations.
 
 The default channel-search order is:
-1.  The WebView2 Runtime.
-1.  The Beta channel of Microsoft Edge.
-1.  The Dev channel of Microsoft Edge.
-1.  The Canary channel of Microsoft Edge.
+1. The WebView2 Runtime.
+1. The Beta channel of Microsoft Edge.
+1. The Dev channel of Microsoft Edge.
+1. The Canary channel of Microsoft Edge.
 
 If you set the release channel preference to `1` by using a group policy, registry override, or environment variable, that will use the reverse of the default search order.
 
@@ -253,4 +253,4 @@ If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you c
 
 ### Applying the new environment variable to running processes
 
-After setting an environment variable, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio or log out of Windows and then log in again.
+After setting an environment variable, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio, or log out of Windows and then log in again.

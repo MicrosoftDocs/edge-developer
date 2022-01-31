@@ -104,7 +104,7 @@ Top-level entries are "total" lines.
 | **Constructor** | Represents all objects created using this constructor.  |
 | **Distance** | displays the distance to the root using the shortest simple path of nodes.  |
 | **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Object sizes](./memory-101.md#object-sizes).  |
-| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you are able to free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Object sizes](./memory-101.md#object-sizes).  |
+| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Object sizes](./memory-101.md#object-sizes).  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -119,7 +119,7 @@ After expanding a total line in the upper view, all of the instances are display
 
 | Constructor (group) entry | Description |
 |:--- |:--- |
-| **(global property)** | The intermediate objects between a global object (like `window`) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path would be represented as `[global] > (global property) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance.  Globals are modified regularly and property access optimizations do a good job for non-global objects are not applicable for globals.  |
+| **(global property)** | The intermediate objects between a global object (like `window`) and an object referenced by it.  If an object is created using a constructor `Person` and is held by a global object, the retaining path would be represented as `[global] > (global property) > Person`.  This contrasts with the norm, where objects directly reference each other.  Intermediate objects exist for performance.  Globals are modified regularly and property access optimizations do a good job for non-global objects aren't applicable for globals.  |
 | **(roots)** | The root entries in the retaining tree view are the entities that have references to the selected object.  These can also be references created by the engine for its own purposes.  The engine has caches which reference objects, but all such references are weak and don't prevent an object from being collected, given that there are no truly strong references.  |
 | **(closure)** | A count of references to a group of objects through function closures. |
 | **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression. |
@@ -130,15 +130,17 @@ After expanding a total line in the upper view, all of the instances are display
 
 ### Comparison view
 
-Find leaked objects by comparing multiple snapshots to each other.  To verify that a certain application operation does not create leaks (for example, usually a pair of direct and reverse operations, like opening a document, and then closing it, should not leave any garbage), you can follow the scenario below:
+Find leaked objects by comparing multiple snapshots to each other.  Usually, a pair of direct and reverse operations, such as opening a document and then closing it, shouldn't leave any garbage.
 
-1.  Take a heap snapshot before performing an operation.
+To verify that a certain application operation doesn't create leaks:
 
-1.  Perform an operation (interact with a page in some way that you believe to be causing a leak).
+1. Take a heap snapshot before performing an operation.
 
-1.  Perform a reverse operation (do the opposite interaction and repeat it a few times).
+1. Perform an operation.  That is, interact with a page in some way that might be causing a leak.
 
-1.  Take a second heap snapshot and change the view of this one to **Comparison**, comparing it to **Snapshot 1**.
+1. Perform a reverse operation.  That is, do the opposite interaction and repeat it a few times.
+
+1. Take a second heap snapshot and change the view of this one to **Comparison**, comparing it to **Snapshot 1**.
 
 In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.
 
@@ -163,7 +165,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 
 ### Closures
 
-Name the functions so you are able to easily distinguish between closures in the snapshot.  For example, this example doesn't use named functions:
+Name the functions, so that you can easily distinguish between closures in the snapshot.  For example, this example doesn't use named functions:
 
 ```javascript
 function createLargeClosure() {
@@ -208,7 +210,7 @@ Properties and property values of objects have different types and are colored a
 | **a: context var** |  A variable in a function context, accessible by the variable name from inside a function closure.  |
 | **a: system prop** | A property added by the JavaScript VM, not accessible from JavaScript code.  |
 
-Objects designated as `System` do not have a corresponding JavaScript type.  Each is part of the object system implementation of the Javascript VM.  V8 allocates most of the internal objects in the same heap as the user's JS objects.  So these are just V8 internals.
+Objects designated as `System` don't have a corresponding JavaScript type.  Each is part of the object system implementation of the Javascript VM.  V8 allocates most of the internal objects in the same heap as the user's JS objects.  So these are just V8 internals.
 
 
 <!-- ====================================================================== -->

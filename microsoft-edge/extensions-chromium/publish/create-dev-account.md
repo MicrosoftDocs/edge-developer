@@ -54,7 +54,7 @@ To create a Microsoft account (MSA):
 If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that a Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
 
 > [!NOTE]
-> The Microsoft Edge program does not currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
+> The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
 
 
 <!-- ====================================================================== -->
@@ -92,7 +92,7 @@ This field is either where you live or your business is located.
 The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
 
 > [!IMPORTANT]
-> After enrollment, you are not able to change the value of this field.
+> After enrollment, you aren't able to change the value of this field.
 
 #### Individual account
 

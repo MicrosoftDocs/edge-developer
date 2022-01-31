@@ -88,7 +88,7 @@ To capture a screenshot:
 
 <!--  ### Replay XHR request  -->
 
-<!--  To replay an XHR request, hover over the request in the Requests table, open the contextual menu (right-click), and click **Replay XHR**.  -->
+<!--  To replay an XHR request, right-click the request in the Requests table, and then click **Replay XHR**.  -->
 
 <!--
 :::image type="content" source="../media/network-replay-xhr.msft.png" alt-text="Click Replay XHR." lightbox="../media/network-replay-xhr.msft.png":::
@@ -118,7 +118,7 @@ If you want to disable the cache while working in other DevTools panels, use the
 
 ### Manually clear the browser cache
 
-To manually clear the browser cache at any time, open the contextual menu (right-click) anywhere in the Requests table and click **Clear Browser Cache**.
+To manually clear the browser cache at any time, right-click anywhere in the Requests table, and then click **Clear Browser Cache**.
 
 Selecting **Clear Browser Cache**:
 
@@ -126,7 +126,7 @@ Selecting **Clear Browser Cache**:
 
 ### Emulate offline
 
-A new class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md), functions offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection when you are building this type of app.
+A new class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md), functions offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection, when you are building this type of app.
 
 To simulate an offline network experience, select the **No throttling** dropdown menu > **Presets** > **Offline**.
 
@@ -150,15 +150,15 @@ DevTools displays a warning icon next to the **Network** tool to remind you that
 
 If you want to throttle the network connection while working in other DevTools panels, use the **Network Conditions** drawer tool:
 
-1.  Open the **Network Conditions** drawer.
+1. Open the **Network Conditions** drawer.
 
-1.  Select your connection speed from the **Throttling** menu.
+1. Select your connection speed from the **Throttling** menu.
 
 <!--todo: add network condition section when available -->
 
 ### Manually clear browser cookies
 
-To manually clear browser cookies at any time, hover anywhere in the Requests table, open the contextual menu (right-click), and select **Clear Browser Cookies**.
+To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear Browser Cookies**.
 
 :::image type="content" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Selecting 'Clear Browser Cookies'." lightbox="../media/network-network-clear-browser-cookies.msft.png":::
 
@@ -184,7 +184,7 @@ If your site employs [user agent client hints](../../web-platform/user-agent-gui
 
 1. In the User agent panel clear the **Use browser default** checkbox, then select **User agent client hints**.
 
-    :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Setting user agent client hints." lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+   :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Setting user agent client hints." lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
 
 1. Accept the default value of **Custom...**, or select a predefined browser and device from the drop-down list.
 
@@ -214,7 +214,7 @@ You can filter requests by properties, by type, or by time, and you can hide dat
 
 Use the **Filter** text box to filter requests by properties, such as the domain or size of the request.
 
-If the text box is not displayed, the **Filters** pane is probably hidden.
+If the text box isn't displayed, the **Filters** pane is probably hidden.
 For more information, see [Hide the Filters pane](#hide-the-filters-pane).
 
 The **Filter** text box:
@@ -362,8 +362,8 @@ The Waterfall column of the **Requests** pane:
 
 <!--To view the frames of a WebSocket connection:
 
-1.  Click the URL of the WebSocket connection, under the **Name** column of the Requests table.
-1.  Click the **Frames** panel.  The table shows the last 100 frames.
+1. Click the URL of the WebSocket connection, under the **Name** column of the Requests table.
+1. Click the **Frames** panel.  The table shows the last 100 frames.
 
 To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
@@ -373,23 +373,23 @@ To refresh the table, re-select the name of the WebSocket connection under the *
 
 <!--The table contains the following three columns.
 
-*   **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: Continuation Frame, Binary Frame, Connection Close Frame, Ping Frame, and Pong Frame.
-*   **Length**.  The length of the message payload, in bytes.
-*   **Time**.  The time when the message was received or sent.  -->
+*  **Data**.  The message payload.  If the message is plain text, it is displayed here.  For binary opcodes, this column displays the name and code of the opcode.  The following opcodes are supported: Continuation Frame, Binary Frame, Connection Close Frame, Ping Frame, and Pong Frame.
+*  **Length**.  The length of the message payload, in bytes.
+*  **Time**.  The time when the message was received or sent.  -->
 
 <!--Messages are color-coded according to each type.
 
-*   Outgoing text messages are light-green.
-*   Incoming text messages are white.
-*   WebSocket opcodes are light-yellow.
-*   Errors are light-red.  -->
+*  Outgoing text messages are light-green.
+*  Incoming text messages are white.
+*  WebSocket opcodes are light-yellow.
+*  Errors are light-red.  -->
 
 ### Display a preview of a response body
 
 To display a preview of a response body, use the following steps.
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.
-1.  Select the **Preview** tab.
+1. Click the URL of the request, under the **Name** column of the Requests table.
+1. Select the **Preview** tab.
 
 The Preview tab is mostly useful to display images.
 
@@ -399,8 +399,8 @@ The Preview tab is mostly useful to display images.
 
 To display the response body to a request, use the following steps.
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.
-1.  Click the **Response** tab.
+1. Click the URL of the request, under the **Name** column of the Requests table.
+1. Click the **Response** tab.
 
 :::image type="content" source="../media/network-network-resources-response.msft.png" alt-text="The Response panel." lightbox="../media/network-network-resources-response.msft.png":::
 
@@ -408,9 +408,9 @@ To display the response body to a request, use the following steps.
 
 To display HTTP header data about a request, use the following steps.
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.
+1. Click the URL of the request, under the **Name** column of the Requests table.
 
-1.  Click the **Headers** tab.
+1. Click the **Headers** tab.
 
 :::image type="content" source="../media/network-resources-headers.msft.png" alt-text="The Headers panel." lightbox="../media/network-resources-headers.msft.png":::
 
@@ -418,17 +418,17 @@ To display HTTP header data about a request, use the following steps.
 
 By default, the **Headers** panel shows header names alphabetically.  To display the HTTP header names in the order received, use the following steps.
 
-1.  Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
+1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
 
-1.  Click **view source**, next to the **Request Header** or **Response Header** section.
+1. Click **view source**, next to the **Request Header** or **Response Header** section.
 
 ### Display query string parameters
 
 To display the query string parameters of a URL in a human-readable format, use the following steps.
 
-1.  Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
+1. Open the **Headers** panel for the request that interests you.  For more information, see [Display HTTP headers](#display-http-headers).
 
-1.  Navigate to the **Query String Parameters** section.
+1. Navigate to the **Query String Parameters** section.
 
 :::image type="content" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Query String Parameters section." lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
 
@@ -436,24 +436,24 @@ To display the query string parameters of a URL in a human-readable format, use 
 
 To display the query string parameter source of a request, use the following steps.
 
-1.  Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
+1. Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
 
-1.  Select **view source**.
+1. Select **view source**.
 
 #### Display URL-encoded query string parameters
 
 To display query string parameters in a human-readable format, but with encodings preserved, use the following steps.
 
-1.  Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
+1. Navigate to the **Query String Parameters** section.  For more information, see [Display query string parameters](#display-query-string-parameters).
 
-1.  Click **view URL encoded**.
+1. Click **view URL encoded**.
 
 ### Display cookies
 
 To display the cookies sent in the HTTP header of a request, use the following steps.
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.
-1.  Click the **Cookies** tab.
+1. Click the URL of the request, under the **Name** column of the Requests table.
+1. Click the **Cookies** tab.
 
 <!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
@@ -463,8 +463,8 @@ To display the cookies sent in the HTTP header of a request, use the following s
 
 To display the timing breakdown of a request, use the following steps.
 
-1.  Click the URL of the request, under the **Name** column of the Requests table.
-1.  Click the **Timing** tab.
+1. Click the URL of the request, under the **Name** column of the Requests table.
+1. Click the **Timing** tab.
 
 For a faster way to access the data, see [Preview a timing breakdown](#preview-a-timing-breakdown).
 
@@ -546,7 +546,7 @@ The locations of the `DOMContentLoaded` and `load` events on the **Network** too
 The total number of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
 
 > [!CAUTION]
-> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests are not counted.
+> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, those requests aren't counted.
 
 The total number of requests since DevTools were opened
 
@@ -557,7 +557,7 @@ The total number of requests since DevTools were opened
 The total download size of requests is listed in the **Summary** pane, at the bottom of the **Network** tool.
 
 > [!CAUTION]
-> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests are not counted.
+> This number only tracks requests that have been logged since DevTools was opened.  If other requests occurred before DevTools was opened, the previous requests aren't counted.
 
 The total download size of requests:
 
@@ -605,7 +605,7 @@ The following is an example of uncompressed resources.  The compressed size of t
 
 To save all network requests to a HAR file:
 
-1.  In the **Requests** table, right-click a request and then select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You can't filter requests, and you can't save a single request.
+1. In the **Requests** table, right-click a request and then select **Save as HAR with Content**.  DevTools saves all requests that have occurred since you opened DevTools to the HAR file.  You can't filter requests, and you can't save a single request.
 
 Once you save a HAR file, you can import it back into DevTools for analysis.  Drag-and-drop the HAR file into the **Requests** table.
 <!--For more information, see also [HAR Analyzer](https://toolbox.alphabetapps.com/apps/har_analyzer)  Todo: add section link when content is available  -->
@@ -646,22 +646,22 @@ Pasting the formatted response JSON in Microsoft Visual Studio Code:
 
 To copy property values from network requests to your clipboard:
 
-1.  Open the **Headers** pane.
+1. Open the **Headers** pane.
 
-1.  Open one of the following header sections.
-    *   Request payload (JSON)
-    *   Form Data
-    *   Query String Parameters
-    *   Request Headers
-    *   Response Headers
+1. Open one of the following header sections.
+    *  Request payload (JSON)
+    *  Form Data
+    *  Query String Parameters
+    *  Request Headers
+    *  Response Headers
 
-1.  Right-click a value and then select **Copy value**.  You can now paste the value into any editor to review it.
+1. Right-click a value and then select **Copy value**.  You can now paste the value into any editor to review it.
 
 
 <!-- ====================================================================== -->
 ## Change the layout of the Network panel
 
-You may expand or collapse sections of the **Network** tool UI to focus important information.
+You can expand or collapse sections of the **Network** tool UI to focus important information.
 
 ### Hide the Filters pane
 

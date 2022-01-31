@@ -53,7 +53,7 @@ You are now able to use **Edit and Replay** on requests in the [Network Log](../
 
 A new panel, the **Network Console** opens in the [DevTools Drawer](../../../customize/index.md#drawer) and automatically populates with information for the HTTP request.  To display the response returned from the server, edit the request (if needed) and select **Send**.
 
-You may also use the **Network Console** to create and send HTTP requests directly from the DevTools.
+You can also use the **Network Console** to create and send HTTP requests directly from the DevTools.
 
 :::image type="content" source="../../media/2020/06/experiments-network-console.msft.png" alt-text="The Network Console panel." lightbox="../../media/2020/06/experiments-network-console.msft.png":::
 
@@ -61,9 +61,9 @@ You may also use the **Network Console** to create and send HTTP requests direct
 > To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), see [moving tools between panels](#move-tools-between-panels).
 
 > [!NOTE]
-> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable Network Console**.
+> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**.
 >
-> Open the [Network Log](../../../network/index.md#log-network-activity), open the contextual menu (right-click), and choose **Edit and Replay**.
+> Open the [Network Log](../../../network/index.md#log-network-activity), right-click, and then select **Edit and Replay**.
 
 Chromium issue [#1093687](https://crbug.com/1093687)
 
@@ -88,7 +88,7 @@ Chromium issue [#1066579](https://crbug.com/1066579)
 :::image type="content" source="../../media/2020/06/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel." lightbox="../../media/2020/06/experiments-webhint.msft.png":::
 
 > [!NOTE]
-> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable webhint**.
+> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable webhint**.
 >
 > Open the [Issues](../../../issues/index.md) panel to display feedback from webhint.
 
@@ -103,7 +103,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 :::image type="content" source="../../media/2020/06/experiments-move-panels.msft.png" alt-text="Move tools between panels." lightbox="../../media/2020/06/experiments-move-panels.msft.png":::
 
 > [!NOTE]
-> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and choose the checkbox next to **Enable support to move tabs between panels**.
+> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**.
 
 Chromium issue [#897944](https://crbug.com/897944)
 
@@ -179,7 +179,7 @@ Chromium issues [#1073903](https://crbug.com/1073903), [#1083214](https://crbug.
 The **Manifest** pane now shows warnings for the following conditions.
 
 * The app shortcut icons are smaller than 96x96 pixels
-* The app shortcut icons and manifest icons are not square (since the icons are ignored)
+* The app shortcut icons and manifest icons aren't square (since the icons are ignored)
 
 :::image type="content" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="App shortcut warnings." lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
 

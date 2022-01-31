@@ -71,7 +71,7 @@ Microsoft Edge doesn't support the following Extension APIs:
 
 * `chrome.gcm`.
 * `chrome.identity.getAccounts`.
-* `chrome.identity.getAuthToken` - As an alternate, you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
+* `chrome.identity.getAuthToken` - As an alternate, you can use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
 * `chrome.instanceID`.
 
 

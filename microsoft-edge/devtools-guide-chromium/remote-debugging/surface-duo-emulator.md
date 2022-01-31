@@ -67,7 +67,7 @@ You can now use the Microsoft Edge DevTools to debug your web content on the [Su
 
 ### Troubleshooting
 
-If **SurfaceDuoEmulator** is not displayed on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on the [Surface Duo Emulator](/dual-screen/android/use-emulator).
+If **SurfaceDuoEmulator** isn't displayed on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on the [Surface Duo Emulator](/dual-screen/android/use-emulator).
 
 For additional troubleshooting steps, see [troubleshooting section for Android devices](./index.md#troubleshooting-devtools-is-not-detecting-the-android-device).
 
@@ -81,7 +81,7 @@ To understand how the hinge impacts the layout of your web content, use the [Sur
 <!-- ====================================================================== -->
 ## Additional Resources
 
-The web is a great platform for the new class of foldable and dual-screen devices because you may write your HTML, CSS, and JavaScript once and have it look great across single-screen, dual-screen, and foldable devices.  See the following additional resources to get started building web content for these new devices.
+The web is a great platform for the new class of foldable and dual-screen devices, because you can write your HTML, CSS, and JavaScript once, and have it look great across single-screen, dual-screen, and foldable devices.  See the following additional resources to get started building web content for these new devices.
 
 *  [Surface Duo developer documentation](/dual-screen/index) - Documentation for creating apps on dual-screen devices.
 

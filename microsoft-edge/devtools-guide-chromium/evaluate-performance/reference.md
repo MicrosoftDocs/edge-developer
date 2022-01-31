@@ -118,7 +118,7 @@ To throttle the CPU while recording:
 
 1. Set **CPU** to the desired level of throttling.
 
-Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than normal.  DevTools do not truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.
+Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than normal.  DevTools don't truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.
 
 ### Turn on advanced paint instrumentation
 
@@ -182,7 +182,7 @@ To scroll a long flame chart in the **Main** section or any of the neighbors, cl
 
 ### Search activities
 
-Select `Control`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the search box at the bottom of the **Performance** panel.
+Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the search box at the bottom of the **Performance** panel.
 
 :::image type="content" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="The search box." lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
 
@@ -332,9 +332,9 @@ Click an interaction to view more information about it in the **Summary** panel.
 
 DevTools provides numerous ways to analyze frames per second:
 
-*   Use [the FPS chart](#the-fps-chart) to get an overview of FPS over the duration of the recording.
-*   Use [the Frames section](#the-frames-section) to view how long a particular frame took.
-*   Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter).
+*  Use [the FPS chart](#the-fps-chart) to get an overview of FPS over the duration of the recording.
+*  Use [the Frames section](#the-frames-section) to view how long a particular frame took.
+*  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter).
 
 #### The FPS chart
 
@@ -364,10 +364,10 @@ Expand the **Network** section to view a waterfall of network requests that occu
 :::image type="content" source="../media/evaluate-performance-performance-network.msft.png" alt-text="The Network section." lightbox="../media/evaluate-performance-performance-network.msft.png":::
 
 Requests are color-coded as follows:
-*   HTML: Blue
-*   CSS: Purple
-*   JS: Yellow
-*   Images: Green
+*  HTML: Blue
+*  CSS: Purple
+*  JS: Yellow
+*  Images: Green
 
 Click on a request to view more information about it in the **Summary** tab.  For example, in the previous figure, the **Summary** tab is displaying more information about the blue request that is selected in the **Network** section.
 
@@ -377,13 +377,13 @@ In the first figure below, the request for `www.bing.com` is represented by a li
 
 Here's how these two representations map to each other:
 
-*   The left line is everything up to the `Connection Start` group of events, inclusive.  In other words, it's everything before `Request Sent`, exclusive.
+*  The left line is everything up to the `Connection Start` group of events, inclusive.  In other words, it's everything before `Request Sent`, exclusive.
 
-*   The light portion of the bar is `Request Sent` and `Waiting (TTFB)`.
+*  The light portion of the bar is `Request Sent` and `Waiting (TTFB)`.
 
-*   The dark portion of the bar is `Content Download`.
+*  The dark portion of the bar is `Content Download`.
 
-*   The right line is essentially time spent waiting for the main thread.  This is not represented in the **Timing** tab.
+*  The right line is essentially time spent waiting for the main thread.  This isn't represented in the **Timing** tab.
 
 The line-bar representation of the `www.bing.com` request:
 
@@ -421,7 +421,7 @@ Hover over the **Overview** to view a screenshot of how the page looked during t
 
 :::image type="content" source="../media/evaluate-performance-performance-screenshots-hover.msft.png" alt-text="Viewing a screenshot." lightbox="../media/evaluate-performance-performance-screenshots-hover.msft.png":::
 
-You can also view screenshots by choosing a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** panel.
+You can also view screenshots by selecting a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** panel.
 
 :::image type="content" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Viewing a screenshot in the Summary panel." lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
 
@@ -445,11 +445,11 @@ Hover over a layer to highlight it in the diagram.
 
 To move the diagram:
 
-*   Select **Pan Mode** (![Pan Mode.](../media/pan-mode-icon.msft.png)) to move along the X and Y axes.
+*  Select **Pan Mode** (![Pan Mode.](../media/pan-mode-icon.msft.png)) to move along the X and Y axes.
 
-*   Select **Rotate Mode** (![Rotate Mode.](../media/rotate-mode-icon.msft.png)) to rotate along the Z axis.
+*  Select **Rotate Mode** (![Rotate Mode.](../media/rotate-mode-icon.msft.png)) to rotate along the Z axis.
 
-*   Select **Reset Transform** (![Reset Transform.](../media/reset-transform-icon.msft.png)) to reset the diagram to the original position.
+*  Select **Reset Transform** (![Reset Transform.](../media/reset-transform-icon.msft.png)) to reset the diagram to the original position.
 
 ### View paint profiler
 
@@ -471,9 +471,9 @@ Use the features of the **Rendering** panel to help visualize the rendering perf
 
 To open the **Rendering** tool:
 
-1.  [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
+1. [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
 
-1.  Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
+1. Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
 
 :::image type="content" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="The Rendering tool." lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
 
@@ -481,9 +481,9 @@ To open the **Rendering** tool:
 
 The **FPS meter** is an overlay that appears in the top-right corner of your viewport.  It provides a realtime estimate of FPS as the page runs.  To open the **FPS meter**:
 
-1.  Open the **Rendering** tool.  [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool).
+1. Open the **Rendering** tool.  [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool).
 
-1.  Select the **FPS Meter** checkbox.
+1. Select the **FPS Meter** checkbox.
 
 :::image type="content" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="The FPS meter." lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
 

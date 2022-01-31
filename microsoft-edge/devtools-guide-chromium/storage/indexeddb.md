@@ -33,7 +33,7 @@ This article assumes you are familiar with:
 <!-- ====================================================================== -->
 ## View IndexedDB data
 
-1. Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
+1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
 
    :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest-empty.msft.png":::
 
@@ -48,7 +48,7 @@ This article assumes you are familiar with:
    *  **title** and **body** are [indexes](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index).
 
    > [!NOTE]
-   > **Known Limitation**  Third-party databases are not visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network is not be visible.  See [issue #943770](https://crbug.com/943770).
+   > **Known Limitation**  Third-party databases aren't visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network isn't visible.  See [issue #943770](https://crbug.com/943770).
 
 1. Select a database, to see the origin and version number.
 
@@ -102,41 +102,41 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 ### Delete an IndexedDB key-value pair
 
-1.  [View an IndexedDB object store](#view-indexeddb-data).
+1. [View an IndexedDB object store](#view-indexeddb-data).
 
-1.  Choose the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
+1. Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Choose a key-value pair in order to delete it." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Click a key-value pair in order to delete it." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
 
-1.  Select the `Delete` key or choose **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
+1. Press `Delete` or click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
 
    :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="How the object store looks after the key-value pair has been deleted." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
 
 ### Delete all key-value pairs in an object store
 
-1.  [View an IndexedDB object store](#view-indexeddb-data).
+1. [View an IndexedDB object store](#view-indexeddb-data).
 
    :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="View an object store." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
 
-1.  Choose **Clear object store** (![Clear object store.](../media/clear-icon.msft.png)).
+1. Click **Clear object store** (![Clear object store.](../media/clear-icon.msft.png)).
 
 ### Delete an IndexedDB database
 
-1.  [View the IndexedDB database](#view-indexeddb-data) that you want to delete.
+1. [View the IndexedDB database](#view-indexeddb-data) that you want to delete.
 
-1.  Choose **Delete database**.
+1. Click **Delete database**.
 
-    :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="The Delete database button." lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="The Delete database button." lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
 
 ### Delete all IndexedDB storage
 
-1.  Open the **Clear storage** pane.
+1. Open the **Clear storage** pane.
 
-1.  Make sure that the **IndexedDB** checkbox is enabled.
+1. Make sure that the **IndexedDB** checkbox is enabled.
 
-1.  Choose **Clear site data**.
+1. Click **Clear site data**.
 
-    :::image type="content" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Clear storage pane." lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+   :::image type="content" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Clear storage pane." lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
 
 
 <!-- ====================================================================== -->

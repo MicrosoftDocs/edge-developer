@@ -31,7 +31,7 @@ For web developers, certain HTML elements are mapped to UI Automation objects, s
 
 Check out [ARIA and UI automation in Microsoft Edge](./aria-and-ui-automation.md) for more information.  Accessible Universal Windows Platform (UWP) apps are explained at [Accessibility](/windows/uwp/design/accessibility/accessibility) in Windows Dev Center.
 
-Many common accessibility issues with dynamic content can be addressed by good coding practice.  The [WCAG 2.0](https://www.w3.org/TR/WCAG20) documentation includes many techniques and best practices to help you create more accessible dynamic web applications.  Even when coded properly, however, dynamic content is not necessarily accessible.  [Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.
+Many common accessibility issues with dynamic content can be addressed by good coding practice.  The [WCAG 2.0](https://www.w3.org/TR/WCAG20) documentation includes many techniques and best practices to help you create more accessible dynamic web applications.  Even when coded properly, however, dynamic content isn't necessarily accessible.  [Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.
 
 For more information on web accessibility, check out the [Introduction to Web Accessibility](https://www.w3.org/WAI/intro/accessibility.php) by the [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI).
 
@@ -99,11 +99,11 @@ Under macOS, if you want to test with an assistive technology only available for
 [Android Studio](https://developer.android.com/sdk/installing/studio.html) includes an emulator that for you to test assistive technologies in the [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback).  Follow the instructions to [set up a virtual device](https://developer.android.com/tools/devices/managing-avds.html) and [start the emulator](https://developer.android.com/tools/devices/emulator.html), then install [Android Accessibility Suite](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback) from the GooglePlay store.
 
 > [!NOTE]
-> The iOS Simulator does not currently include VoiceOver.
+> The iOS Simulator doesn't currently include VoiceOver.
 
 ### Cloud-based testing tools
 
-If an assistive technology is not available on your OS or you not possible to install one on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.
+If an assistive technology isn't available on your OS or you not possible to install one on a virtual machine or emulator, cloud-based assistive technology testing tools are the next best thing.
 
 *  [Assistiv Labs](https://assistivlabs.com) (a commercial product) enables you to manually test with assistive technologies through any modern web browser.  Select an assistive technology and browser and it connects you with a virtual machine, emulator, or real device that you can interact with.
 

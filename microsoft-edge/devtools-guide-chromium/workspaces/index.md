@@ -59,7 +59,7 @@ The Workspaces feature doesn't work with the Create React App framework.
 <!-- ====================================================================== -->
 ## Related feature: Local overrides
 
-**Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you do not care about mapping your changes to the source code of the webpage.
+**Local Overrides** is another DevTools feature that is similar to Workspaces.  Use Local Overrides when you want to experiment with changes to a webpage, and you need to display the changes across webpage loads, but you don't care about mapping your changes to the source code of the webpage.
 
 <!--Todo: add section when content is ready  -->
 
@@ -71,11 +71,11 @@ We'll set up the demo and then set up DevTools.
 
 ### Set up the demo
 
-1.  [Open the demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
+1. [Open the demo source code](https://github.com/MicrosoftEdge/Demos/tree/main/workspaces).
 
-1.  Create an `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
+1. Create an `app` directory on your desktop.  Save copies of the `index.html`, `styles.css`, and `script.js` files from the demo source code to the `app` directory.  For the rest of the tutorial, the directory is referred to as `~/Desktop/app`.
 
-1.  Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you may use whatever server you prefer.
+1. Start a local web server in `~/Desktop/app`.  Below is some sample code for starting up `SimpleHTTPServer`, but you can use whatever server you prefer.
 
    ```bash
    cd ~/Desktop/app
@@ -87,27 +87,27 @@ We'll set up the demo and then set up DevTools.
    python -m http.server # Python 3
    ```
 
-1.  Open a tab in Microsoft Edge and navigate to the locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) may be different.
+1. Open a tab in Microsoft Edge and navigate to the locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
 
-    :::image type="content" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo." lightbox="../media/workspaces-workspaces-demo.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo." lightbox="../media/workspaces-workspaces-demo.msft.png":::
 
 ### Set up DevTools
 
-1.  Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
+1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) to open the **Console** panel of DevTools.
 
-    :::image type="content" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="The Console panel." lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-console.msft.png" alt-text="The Console panel." lightbox="../media/workspaces-workspaces-demo-console.msft.png":::
 
-1.  Navigate to the **Sources** tool.
+1. Navigate to the **Sources** tool.
 
-1.  In the **Navigator** pane (on the left), click the **Filesystem** tab.
+1. In the **Navigator** pane (on the left), click the **Filesystem** tab.
 
-    :::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem tab." lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-sources-filesystem.msft.png" alt-text="The Filesystem tab." lightbox="../media/workspaces-workspaces-demo-sources-filesystem.msft.png":::
 
-1.  Click **Add Folder To Workspace**.
+1. Click **Add Folder To Workspace**.
 
-1.  Type `~/Desktop/app`.
+1. Type `~/Desktop/app`.
 
-1.  Click **Allow** to give DevTools permission to read and write to the directory.
+1. Click **Allow** to give DevTools permission to read and write to the directory.
 
 In the **Filesystem** tab, a green dot now appears next to `index.html`, `script.js`, and `styles.css`.  A green dot indicates that DevTools has established a mapping between a network resource of the page, and the file in `~/Desktop/app`.
 
@@ -144,34 +144,34 @@ You can change HTML tagging using the Elements tool, but to be able to save the 
 
 ### Change HTML from the Elements Panel
 
-You can make changes to the HTML content in the Element tool, but your changes to the DOM tree are not saved to disk, and only affect the current browser session.
+You can make changes to the HTML content in the Element tool, but your changes to the DOM tree aren't saved to disk, and only affect the current browser session.
 
 The DOM tree is not the HTML source tagging.
 
 <!--### Try changing HTML from the Elements panel
 
 > [!WARNING]
-> The workflow that you are about to try does not work.  You are trying it now so that you do not waste time later trying to figure out why it is not working.
+> The workflow that you are about to try doesn't work.  You are trying it now so that you don't waste time later trying to figure out why it isn't working.
 
-1.  Choose the **Elements** tool.
-1.  Choose and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
+1. Select the **Elements** tool.
+1. Select and edit the text content of the `h1` element, which says `Workspaces Demo`, and replace it with `I ❤️  Cake`.
 
-    :::image type="content" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel." lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-change-h1.msft.png" alt-text="Attempt to change html from the DOM Tree of the Elements panel." lightbox="../media/workspaces-workspaces-demo-change-h1.msft.png":::
 
-1.  Open `~/Desktop/app/index.html` in a text editor.  The change that you just made does not appear.
-1.  Refresh the page.  The page reverts to the original title.
+1. Open `~/Desktop/app/index.html` in a text editor.  The change that you just made doesn't appear.
+1. Refresh the page.  The page reverts to the original title.
 
-#### Optional: Why it is not working
+#### Optional: Why it isn't working
 
 > [!NOTE]
-> This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) does not work.  You should skip this section if you do not care why.
+> This section describes why the workflow from [Try changing html from the Elements panel](#try-changing-html-from-the-elements-panel) doesn't work.  You should skip this section if you don't care why.
 
-*   The tree of nodes that are displayed on the **Elements** tool represents the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) of the page.
-*   To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.
-*   If the page has any JavaScript, that JavaScript may add, delete, or change DOM nodes.  CSS may change the DOM, too, using the [`content`](https://developer.mozilla.org/docs/Web/CSS/content) property.
-*   The browser eventually uses the DOM to determine what content it should present to browser users.
-*   Therefore, the final state of the webpage displayed for users may be very different from the html that the browser fetched.
-*   This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.
+*  The tree of nodes that are displayed on the **Elements** tool represents the [DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) of the page.
+*  To display a page, a browser fetches html over the network, parses the html, and then converts it into a tree of DOM nodes.
+*  If the page has any JavaScript, that JavaScript can add, delete, or change DOM nodes.  CSS can change the DOM, too, by using the [`content`](https://developer.mozilla.org/docs/Web/CSS/content) property.
+*  The browser eventually uses the DOM to determine what content it should present to browser users.
+*  Therefore, the final state of the webpage displayed for users may be very different from the HTML that the browser fetched.
+*  This makes it difficult for DevTools to resolve where a change made in the **Elements** tool should be saved, because the DOM is affected by HTML, JavaScript, and CSS.
 
 In short, the **DOM Tree** `!==` HTML.
 -->
@@ -180,21 +180,21 @@ In short, the **DOM Tree** `!==` HTML.
 
 If you want to save a change to the HTML of the webpage, use the **Sources** tool.
 
-1.  Navigate to the **Sources** tool.
+1. Navigate to the **Sources** tool.
 
-1.  In the **Navigator** pane (on the left), click the **Page** tab.
+1. In the **Navigator** pane (on the left), click the **Page** tab.
 
-1.  Click **(index)**.  The HTML for the page opens.
+1. Click **(index)**.  The HTML for the page opens.
 
-1.  Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.
+1. Replace `<h1>Workspaces Demo</h1>` with `<h1>I ❤️  Cake</h1>`.  Review the following figure.
 
-1.  Press `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
+1. Press `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
 
-1.  Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
+1. Refresh the page.  The `<h1>` element continues to display the new text after the page is refreshed.
 
-    :::image type="content" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool." lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-sources-page-h1.msft.png" alt-text="Change HTML from the Sources tool." lightbox="../media/workspaces-workspaces-demo-sources-page-h1.msft.png":::
 
-1.  Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.
+1. Open `~/Desktop/app/index.html`.  The `<h1>` element contains the new text.
 
 
 <!-- ====================================================================== -->
@@ -204,33 +204,33 @@ The main place to use the code editor of DevTools is the **Sources** tool.  But 
 
 To open the DevTools code editor alongside other tools:
 
-1.  Navigate to the **Elements** tool.
+1. Navigate to the **Elements** tool.
 
-1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
+1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The **Command Menu** opens.
 
-1.  Type `quick`, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
+1. Type `quick`, and then select **Show Quick source**.  At the bottom of the DevTools window, the **Quick source** tool appears, displaying the contents of `index.html`, which is the last file you edited in the **Sources** tool.
 
-    :::image type="content" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the 'Quick source' tool by using the Command Menu." lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png" alt-text="Open the 'Quick source' tool by using the Command Menu." lightbox="../media/workspaces-workspaces-demo-search-show-quick-source.msft.png":::
 
-1.  Press `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, as shown below.
+1. Press `Control`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog, as shown below.
 
-1.  Type `script`, then choose **app/script.js**.
+1. Type `script`, then select **app/script.js**.
 
-    :::image type="content" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog." lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
+   :::image type="content" source="../media/workspaces-workspaces-demo-search-script.msft.png" alt-text="Open script.js using the Open File dialog." lightbox="../media/workspaces-workspaces-demo-search-script.msft.png":::
 
-    > [!NOTE]
-    > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.
+   > [!NOTE]
+   > The `Save Changes To Disk With Workspaces` link in the demo is styled regularly.
 
-1.  Add the following code to the bottom of **script.js** using the **Quick source** tool.
+1. Add the following code to the bottom of **script.js** using the **Quick source** tool.
 
     ```javascript
     console.log('greetings from script.js');
     document.querySelector('a').style = 'font-style:italic';
     ```
 
-1.  Press `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
+1. Press `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change.
 
-1.  Refresh the page.  The link on the page is now italicized.
+1. Refresh the page.  The link on the page is now italicized.
 
 :::image type="content" source="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png" alt-text="The link on the page is now italicized." lightbox="../media/workspaces-workspaces-demo-elements-styles-quick-source-script.msft.png":::
 

@@ -33,11 +33,11 @@ This article shows how to use DevTools to inspect Web SQL data.
 
 1. In DevTools, open the **Application** tool.  The **Manifest** pane usually opens by default.
 
-    :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest.msft.png":::
+   :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest.msft.png":::
 
-1.  Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.
+1. Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.
 
-    :::image type="content" source="../media/storage-application-storage-web-sql.msft.png" alt-text="The Web SQL pane." lightbox="../media/storage-application-storage-web-sql.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-web-sql.msft.png" alt-text="The Web SQL pane." lightbox="../media/storage-application-storage-web-sql.msft.png":::
 
 1. Click a table to view the data for that table.
 
@@ -89,7 +89,7 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
    :::image type="content" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="The Web SQL checkbox." lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
 
-1. Choose **Clear site data**.
+1. Click **Clear site data**.
 
    :::image type="content" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="The Clear Site Data button." lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
 

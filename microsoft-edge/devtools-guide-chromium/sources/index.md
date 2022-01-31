@@ -53,12 +53,12 @@ Use the **Navigator** pane (on the left) to navigate among the resources that ar
 To access any hidden tabs of the Navigator pane, select ![More tabs.](../media/more-tabs-icon.msft.png) (**More tabs**).
 
 The following subsections cover the Navigator pane:
-*   [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-*   [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
-*   [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
-*   [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
-*   [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
-*   [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
+* [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
+* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
+* [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
+* [Using the Snippets tab to run JavaScript code snippets on any page](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
+* [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
 
 ### Using the Page tab to explore resources that construct the current webpage
 
@@ -75,10 +75,10 @@ To load a file into a new tab of the browser, or to display other actions, right
 #### Icons in the Page tab
 
 The **Page** tab uses the following icons:
-*   The **window** icon, along with the label `top`, represents the main document frame, which is an [HTML frame](https://w3.org/TR/html401/present/frames.html).
-*   The **cloud** icon represents an [origin](https://html.spec.whatwg.org/multipage/origin.html#origin).
-*   The **folder** icon represents a directory.
-*   The **page** icon represents a resource.
+*  The **window** icon, along with the label `top`, represents the main document frame, which is an [HTML frame](https://w3.org/TR/html401/present/frames.html).
+*  The **cloud** icon represents an [origin](https://html.spec.whatwg.org/multipage/origin.html#origin).
+*  The **folder** icon represents a directory.
+*  The **page** icon represents a resource.
 
 #### Group files by folder or as a flat list
 
@@ -86,8 +86,8 @@ The **Page** tab displays files or resources grouped by server and directory, or
 
 To change how resources are grouped:
 
-1.  Next to the tabs on the Navigator pane (on the left), select the **...** (**More options**) button.  A menu appears.
-1.  Select or clear the **Group by folder** option.
+1. Next to the tabs on the Navigator pane (on the left), select the **...** (**More options**) button.  A menu appears.
+1. Select or clear the **Group by folder** option.
 
 ### Using the Filesystem tab to define a local Workspace
 
@@ -132,8 +132,8 @@ When the debugger steps into code that you don't recognize, you might want to ma
 
 #### See also
 
-*   [Content scripts](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
-*   [Create an extension tutorial, part 2](../../extensions-chromium/getting-started/part2-content-scripts.md)
+* [Content scripts](https://developer.mozilla.org/Add-ons/WebExtensions/Content_scripts)
+* [Create an extension tutorial, part 2](../../extensions-chromium/getting-started/part2-content-scripts.md)
 
 ### Using the Snippets tab to run JavaScript code snippets on any webpage
 
@@ -151,24 +151,24 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you select `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
+Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
-*   In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button.](../media/run-snippet-icon.msft.png)).
-*   When DevTools has focus, select `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu](../command-menu/index.md), and then type `!`.
+*  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button.](../media/run-snippet-icon.msft.png)).
+*  When DevTools has focus, press `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu](../command-menu/index.md), and then type `!`.
 
 Snippets are similar to bookmarklets.
 
 #### See also
 
-*   [Run snippets of JavaScript on any webpage](../javascript/snippets.md)
+* [Run snippets of JavaScript on any webpage](../javascript/snippets.md)
 
 ### Using the Command Menu to open files
 
 To open a file, in addition to using the **Navigator** pane within the **Sources** tool, you can use the Command Menu from anywhere within DevTools.
 
-*   From anywhere in DevTools, select `Ctrl`+`P` on Windows/Linux or `Command`+`P` on macOS.  The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
-*   Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.
+*  From anywhere in DevTools, press `Ctrl`+`P` on Windows/Linux or `Command`+`P` on macOS.  The Command Menu appears, and lists all the resources that are in the tabs of the **Navigator** pane of the **Sources** tool.
+*  Or, next to the tabs of the **Navigator** pane in the **Sources** tool, select the **...** (**More options**) button, and then select **Open File**.
 
 To display and pick from a list of all .js files, type `.js`.
 
@@ -198,14 +198,14 @@ The **Editor** pane has the following level of support for various file types:
 By default, edits are discarded when you refresh the webpage.  For information about how to save the changes to your file system, see [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace), above.
 
 The following subsections cover the Editor pane:
-*   [Editing a JavaScript file](#editing-a-javascript-file)
-*   [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
-*   [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
-*   [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
-*   [Editing a CSS file](#editing-a-css-file)
-*   [Editing an HTML file](#editing-an-html-file)
-*   [Going to a line number or function](#going-to-a-line-number-or-function)
-*   [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
+* [Editing a JavaScript file](#editing-a-javascript-file)
+* [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
+* [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
+* [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
+* [Editing a CSS file](#editing-a-css-file)
+* [Editing an HTML file](#editing-an-html-file)
+* [Going to a line number or function](#going-to-a-line-number-or-function)
+* [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
 
 ### Editing a JavaScript file
 
@@ -217,17 +217,17 @@ To load a file into the Editor pane, use the **Page** tab in the **Navigator** p
 
 #### Save and Undo
 
-For JavaScript changes to take effect, select `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS).
+For JavaScript changes to take effect, press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS).
 
 If you change a file, an asterisk appears next to the file name.
-*   To save changes, select `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.
-*   To undo a change, select `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
+*  To save changes, press `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.
+*  To undo a change, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
 By default, your edits are discarded when you refresh the webpage.  For more information about how to save the changes in your local file system, see [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md).
 
 #### Find and Replace
 
-To find text in the current file, select the **Editor** pane to give it focus, and then select `Ctrl`+`F` on Windows/Linux, or `Command`+`F` on macOS.
+To find text in the current file, select the **Editor** pane to give it focus, and then press `Ctrl`+`F` on Windows/Linux, or `Command`+`F` on macOS.
 
 :::image type="content" source="../media/find-replace.msft.png" alt-text="Find and Replace, in the Editor pane of the Sources tool" lightbox="../media/find-replace.msft.png":::
 
@@ -244,13 +244,13 @@ The **Drawer** opens at the bottom of DevTools, showing your changes within the 
 #### Changes inside a function take effect
 
 DevTools doesn't re-run a script, so the only JavaScript changes that take effect are changes that you make within functions.  For example, in the following figure, we added the following code to the JavaScript that is returned by the server:
-*   We added the statement `console.log('A')` outside of any function.
-*   We added the statement `console.log('B')` inside an `onClick` function.
+*  We added the statement `console.log('A')` outside of any function.
+*  We added the statement `console.log('B')` inside an `onClick` function.
 We then saved the changes, entered numbers into the form, and then selected the form button to send the form.
 
 After submitting the form, `console.log('A')`, which is at global scope, doesn't run, but `console.log('B')`, inside an `onClick` function, does run, outputting `B` to the Console:
 
-:::image type="content" source="../media/edit-js.msft.png" alt-text="Global-scope JavaScript is not re-run." lightbox="../media/edit-js.msft.png":::
+:::image type="content" source="../media/edit-js.msft.png" alt-text="Global-scope JavaScript isn't re-run." lightbox="../media/edit-js.msft.png":::
 
 ### Reformatting a minified JavaScript file with pretty-print
 
@@ -263,9 +263,9 @@ The reformatted file appears in a new tab, with `:formatted` appended to the fil
 :::image type="content" source="../media/pretty-printed.msft.png" alt-text="A pretty-printed (reformatted) JavaScript file" lightbox="../media/pretty-printed.msft.png":::
 
 To make the reformatted file scroll to the code that you select in the minified file:
-1.   If the reformatted file tab is open, close it.
-1.   Select some code in the minified file in the Editor pane.
-1.   Select the **Pretty print** button.
+1.  If the reformatted file tab is open, close it.
+1.  Select some code in the minified file in the Editor pane.
+1.  Select the **Pretty print** button.
 The formatted code appears in a new tab, scrolled to the code that you selected.
 
 For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
@@ -290,8 +290,8 @@ In this scenario, the **Sources** tool is useful for inspecting and stepping-thr
 ### Editing a CSS file
 
 There are two ways to edit CSS in DevTools:
-*   In the **Elements** tool, you work with one CSS setting at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
-*   In the **Sources** tool, you use a text editor.
+*  In the **Elements** tool, you work with one CSS setting at a time, through user interface controls.  This approach is recommended in most cases.  For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
+*  In the **Sources** tool, you use a text editor.
 
 The Sources tool supports directly editing a CSS file.  For example, if you edit the CSS file from the tutorial [Edit files with Workspaces (Filesystem tab)](../workspaces/index.md) to match the style rule below, the `H1` element in the upper left of the rendered webpage changes to green:
 
@@ -307,27 +307,27 @@ CSS changes take effect immediately; you don't need to manually save the changes
 
 #### See also
 
-*   [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
+* [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
 
-*   [DevTools for beginners: Get started with CSS](../beginners/css.md) - tutorial
+* [DevTools for beginners: Get started with CSS](../beginners/css.md) - tutorial
 
 ### Editing an HTML file
 
 There are two ways to edit HTML in DevTools:
-*   In the **Elements** tool, you work with one HTML element at a time, through user interface controls.
-*   In the **Sources** tool, you use a text editor.
+*  In the **Elements** tool, you work with one HTML element at a time, through user interface controls.
+*  In the **Sources** tool, you use a text editor.
 
 :::image type="content" source="../media/sources-html-editor.msft.png" alt-text="The HTML editor of the Sources tool." lightbox="../media/sources-html-editor.msft.png":::
 
 Unlike a JavaScript or CSS file, an HTML file that is returned by the web server cannot be directly edited in the Sources tool.  To edit an HTML file using the Editor of the Sources tool, the HTML file must be in a Workspace or on the **Overrides** tab.  See these subsections of the current article:
-*   [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
-*   [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
+* [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+* [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
 
-To save changes, select `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.  An edited file is marked by an asterisk.
+To save changes, press `Ctrl`+`S` on Windows/Linux or `Command`+`S` on macOS.  An edited file is marked by an asterisk.
 
-To find text, select `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.
+To find text, press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.
 
-To undo an edit, select `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
+To undo an edit, press `Ctrl`+`Z` on Windows/Linux or `Command`+`Z` on macOS.
 
 To view other commands while editing an HTML file, in the Editor pane, right-click the HTML file.
 
@@ -337,8 +337,8 @@ You can also edit HTML by using an HTML editor, rather than DevTools.  For examp
 
 To go to a line number or symbol (such as a function name) in the file which is open in the Editor pane, you can use the Command Menu, rather than scrolling through the file.
 
-1.   In the **Navigator** pane, select the ellipses (...) (**More options**), and then select **Open File**.  The Command Menu appears.
-1.   Type one of the following characters:
+1.  In the **Navigator** pane, select the ellipses (...) (**More options**), and then select **Open File**.  The Command Menu appears.
+1.  Type one of the following characters:
 
 | Character | Command name | Purpose |
 |---|---|---|
@@ -353,15 +353,15 @@ The main place to view source files in the DevTools is within the **Sources** to
 
 To use the **Quick source** tool:
 
-1.  Select a tool other than the **Sources** tool, such as the **Elements** tool.
+1. Select a tool other than the **Sources** tool, such as the **Elements** tool.
 
-1.  Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  The Command Menu opens.
 
-1.  Type `quick`, and then select **Show Quick source**.
+1. Type `quick`, and then select **Show Quick source**.
 
     At the bottom of the DevTools window, the Drawer appears, with the **Quick source** tool selected.  The **Quick source** tool contains the last file you edited in the **Sources** tool, within a compact version of the DevTools code editor.
 
-1.  Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
+1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the **Open File** dialog.
 
 
 <!-- ====================================================================== -->
@@ -375,19 +375,19 @@ With the debugger, you step through the code, while watching any JavaScript expr
 :::image type="content" source="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png" alt-text="The Debugger pane of the Sources tool  ." lightbox="../media/sources-paused-breakpoint-highlight-debug-pane.msft.png":::
 
 The debugger supports standard debugging actions, such as:
-*   Setting breakpoints, to pause code.
-*   Stepping through code.
-*   Viewing and editing properties and variables.
-*   Watching the values of JavaScript expressions.
-*   Viewing the call stack (the sequence of function calls so far).
+*  Setting breakpoints, to pause code.
+*  Stepping through code.
+*  Viewing and editing properties and variables.
+*  Watching the values of JavaScript expressions.
+*  Viewing the call stack (the sequence of function calls so far).
 
 The debugger in DevTools is designed to look, feel, and work like [the debugger in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging) and [the debugger in Visual Studio](/visualstudio/debugger/navigating-through-code-with-the-debugger).
 
 The following subsections cover debugging:
-*   [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
-*   [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
-*   [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
-*   [Articles about debugging](#articles-about-debugging)
+* [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
+* [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
+* [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
+* [Articles about debugging](#articles-about-debugging)
 
 ### The basic approach to using a debugger
 
@@ -395,37 +395,37 @@ To troubleshoot JavaScript code, you can insert `console.log()` statements in th
 
 To use a debugger on a webpage, you typically set a breakpoint and then send a form from the webpage, as follows:
 
-1.  Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html).
+1. Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html).
 
-1.  Select `F12` to open the **DevTools** window, and then select the **Sources** tab.
+1. Select `F12` to open the **DevTools** window, and then select the **Sources** tab.
 
-1.  In the **Navigator** pane (on the left), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.
+1. In the **Navigator** pane (on the left), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.
 
-1.  In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.
+1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.
 
-1.  In the webpage, enter values and submit the form.  For example, enter numbers, such as `5` and `1`, then select the button **Add Number 1 and Number 2**.
+1. In the webpage, enter values and submit the form.  For example, enter numbers, such as `5` and `1`, then select the button **Add Number 1 and Number 2**.
 
     The debugger runs the JavaScript code and then pauses at the breakpoint.  The debugger is now in Paused mode, so you can inspect the values of the properties that are in-scope, and step through the code.
 
-    :::image type="content" source="../media/sources-paused-breakpoint-highlights.msft.png" alt-text="Entering Paused mode of the debugger." lightbox="../media/sources-paused-breakpoint-highlights.msft.png":::
+   :::image type="content" source="../media/sources-paused-breakpoint-highlights.msft.png" alt-text="Entering Paused mode of the debugger." lightbox="../media/sources-paused-breakpoint-highlights.msft.png":::
 
     In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
 
-1.  Examine the values in the **Scope** pane, which shows all variables or properties that are in-scope for the current breakpoint, and their values.  Or, add expressions in the **Watch** pane.  These expressions are the same expressions that you would write within a `console.log` statement to debug your code.  To run JavaScript commands to manipulate data in the current context, use the **Console**.  To open the console, select `Esc`.
+1. Examine the values in the **Scope** pane, which shows all variables or properties that are in-scope for the current breakpoint, and their values.  Or, add expressions in the **Watch** pane.  These expressions are the same expressions that you would write within a `console.log` statement to debug your code.  To run JavaScript commands to manipulate data in the current context, use the **Console**.  To open the console, press `Esc`.
 
-1.  Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** (`F9`).
+1. Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** (`F9`).
 
 #### See also
 
-*   [Get started debugging JavaScript](../javascript/index.md) - a tutorial using an existing, simple webpage that contains a few form controls.
+* [Get started debugging JavaScript](../javascript/index.md) - a tutorial using an existing, simple webpage that contains a few form controls.
 
 ### Advantages of the debugger\'s Watch and Scope over console\.log
 
 These three approaches are equivalent:
 
-*   Temporarily adding the statements `console.log(sum)` and `console.log(typeof sum)` in the code, where `sum` is in-scope.
-*   Issuing the statements `sum` and `console.log(typeof sum)` in the **Console** pane of the DevTools, when the debugger is paused where `sum` is in-scope.
-*   Setting the **Watch** expressions `sum` and `typeof sum` in the **Debugger** pane.
+*  Temporarily adding the statements `console.log(sum)` and `console.log(typeof sum)` in the code, where `sum` is in-scope.
+*  Issuing the statements `sum` and `console.log(typeof sum)` in the **Console** pane of the DevTools, when the debugger is paused where `sum` is in-scope.
+*  Setting the **Watch** expressions `sum` and `typeof sum` in the **Debugger** pane.
 
 When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the **Debugger** pane, and are also overlaid in the Editor pane where `sum` is calculated.  So you probably wouldn't need to define a Watch expression for `sum`.
 
@@ -447,11 +447,11 @@ For more information, see [Visual Studio Code overview](../../visual-studio-code
 
 The following articles cover the **Debugger** pane and breakpoints:
 
-*   [Get started debugging JavaScript](../javascript/index.md) - A tutorial (with screen captures), using an existing, simple project.
+* [Get started debugging JavaScript](../javascript/index.md) - A tutorial (with screen captures), using an existing, simple project.
 
-*   [JavaScript debugging features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
+* [JavaScript debugging features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
 
-*   [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and specialized breakpoints in the debugger.
+* [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and specialized breakpoints in the debugger.
 
 
 <!-- ====================================================================== -->

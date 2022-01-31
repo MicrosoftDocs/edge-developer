@@ -71,7 +71,7 @@ Chromium issue [#174309](https://crbug.com/174309)
 
 You are now able to remotely debug your web content running in the [Surface Duo emulator](/dual-screen/android/use-emulator) using the full power of the [Microsoft Edge DevTools](../../../index.md).
 
-With the [Surface Duo emulator](/dual-screen/android/use-emulator), you are able to test how your web content renders on a new class of foldable and dual-screen devices.  The emulator runs the Android operating system and provides the [Microsoft Edge Android app](https://play.google.com/store/apps/details?id=com.microsoft.emmx).  Load your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) and debug it with the [Microsoft Edge DevTools](../../../index.md).
+With the [Surface Duo emulator](/dual-screen/android/use-emulator), you can test how your web content renders on a new class of foldable and dual-screen devices.  The emulator runs the Android operating system and provides the [Microsoft Edge Android app](https://play.google.com/store/apps/details?id=com.microsoft.emmx).  Load your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) and debug it with the [Microsoft Edge DevTools](../../../index.md).
 
 :::image type="content" source="../../media/2020/05/surface-duo-emulator.msft.png" alt-text="The Microsoft Edge app running on the Surface Duo emulator." lightbox="../../media/2020/05/surface-duo-emulator.msft.png":::
 
@@ -144,13 +144,13 @@ Chromium issue [#1040025](https://crbug.com/1040025)
 
 #### View Total Blocking Time information in the footer
 
-After recording your load performance, the **Performance** panel now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  It essentially measures how long a page appears to be usable (because the content is rendered to the screen); but is not actually usable, because JavaScript is blocking the main thread and therefore the page does not respond to user input.  TBT is the main metric for approximating First Input Delay.
+After recording your load performance, the **Performance** panel now shows Total Blocking Time (TBT) information in the footer.  TBT is a load performance metric that helps quantify how long a page takes to become usable.  TBT essentially measures how long a page only _appears_ to be usable (because the content is rendered to the screen); but the page isn't actually usable, because JavaScript is blocking the main thread and therefore the page doesn't respond to user input.  TBT is the main metric for approximating First Input Delay.
 
 <!--todo:  add link Total Blocking Time (TBT) (WebdevTbt) when section is live  -->
 <!--todo:  add link lab metric (WebdevMeasureSpeedLabField) when section is live  -->
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 
-To get Total Blocking Time information, do not use the **Refresh Page** ![Refresh page icon.](../../../media/refresh-page-icon.msft.png) workflow for recording page load performance.
+To get Total Blocking Time information, don't use the **Refresh Page** ![Refresh page icon.](../../../media/refresh-page-icon.msft.png) workflow for recording page load performance.
 
 Instead, select **Record** ![Record icon.](../../../media/record-icon.msft.png), manually reload the page, wait for the page to load, and then stop recording.
 
@@ -167,7 +167,7 @@ The new **Experience** section of the **Performance** panel helps you detect lay
 <!--todo:  add link Core Web Vitals (WebdevCoreWebVitals) when section is live  -->
 <!--todo:  add link layout shifts (WebdevCls) when section is live  -->
 
-Choose the **Layout Shift** event to display the details of the layout shift in the **Summary** pane.  Hover on the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.
+Click the **Layout Shift** event to display the details of the layout shift in the **Summary** pane.  Hover on the **Moved from** and **Moved to** fields to visualize where the layout shift occurred.
 
 :::image type="content" source="../../media/2020/05/cls.msft.png" alt-text="The details of a layout shift." lightbox="../../media/2020/05/cls.msft.png":::
 
@@ -206,13 +206,13 @@ Chromium issue [#1040019](https://crbug.com/1040019)
 [CSS Color Module Level 4](https://drafts.csswg.org/css-color#changes-from-3) specifies that color functions, such as `rgb()`, should support space-separated
 arguments.  For example, `rgb(0, 0, 0)` is equivalent to `rbg(0 0 0)`.
 
-When you choose colors with the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.
+When you select colors with the [Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) or alternate between color representations in the **Styles** pane by holding `Shift` and selecting the `background-color` value, the space-separated argument syntax is displayed.
 
 :::image type="content" source="../../media/2020/05/color.msft.png" alt-text="Using space-separated arguments in the Styles pane." lightbox="../../media/2020/05/color.msft.png":::
 
 You should also display the syntax in the **Computed** pane and the **Inspect Mode** tooltip.
 
-Microsoft Edge DevTools is using the new syntax because upcoming CSS features such as [color()](https://drafts.csswg.org/css-color#the-color-property) do not support the deprecated comma-separated argument syntax.
+Microsoft Edge DevTools is using the new syntax because upcoming CSS features such as [color()](https://drafts.csswg.org/css-color#the-color-property) don't support the deprecated comma-separated argument syntax.
 
 The space-separated argument syntax has been supported in most browsers for a while.  See [Can I use: Space-separated functional color notations?](https://caniuse.com/#feat=mdn-css_types_color_space_separated_functional_notation)
 
@@ -226,8 +226,8 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 
 #### References
 
-*   [console.dir()](../../../console/api.md#dir)
-*   [$0](../../../console/utilities.md#recently-chosen-element-or-javascript-object)
+* [console.dir()](../../../console/api.md#dir)
+* [$0](../../../console/utilities.md#recently-chosen-element-or-javascript-object)
 
 ### App shortcuts support in the Manifest pane
 

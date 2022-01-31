@@ -26,10 +26,10 @@ Learn how to use Microsoft Edge and DevTools to find memory issues that affect p
 
 ### Summary
 
-*   Find out how much memory your page is currently using with the Microsoft Edge Browser Task Manager.
-*   Visualize memory usage over time with the **Memory** panel.
-*   Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
-*   Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
+*  Find out how much memory your page is currently using with the Microsoft Edge Browser Task Manager.
+*  Visualize memory usage over time with the **Memory** panel.
+*  Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
+*  Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
 
 
 <!-- ====================================================================== -->
@@ -41,18 +41,17 @@ In the spirit of the **RAIL**<!-- [RAIL](/profile/evaluate-performance/rail) -->
 
 Memory issues are important because they are often perceivable by users.  Users may perceive memory issues in the following ways:
 
-*   **The performance of a page gets progressively worse over time**.  This is possibly a symptom of a memory leak.  A memory leak is when a bug in the page causes the page to progressively use more and more memory over time.
+*  **The performance of a page gets progressively worse over time**.  This is possibly a symptom of a memory leak.  A memory leak is when a bug in the page causes the page to progressively use more and more memory over time.
 
-*   **The performance of a page is consistently bad**.  This is possibly a symptom of memory bloat.  Memory bloat is when a page uses more memory than is necessary for optimal page speed.
+*  **The performance of a page is consistently bad**.  This is possibly a symptom of memory bloat.  Memory bloat is when a page uses more memory than is necessary for optimal page speed.
 
-*   **The performance of a page is delayed or appears to pause frequently**.  This is possibly a symptom of frequent garbage collections.  Garbage collection is when the browser reclaims memory.  The browser decides when this happens.  During collections, all script running is paused.  So if the browser is garbage collecting a lot, script runtime is going to get paused a lot.
+*  **The performance of a page is delayed or appears to pause frequently**.  This is possibly a symptom of frequent garbage collections.  Garbage collection is when the browser reclaims memory.  The browser decides when this happens.  During collections, all script running is paused.  So if the browser is garbage collecting a lot, script runtime is going to get paused a lot.
 
 ### Memory bloat: how much is "too much"?
 
 A memory leak is easy to define.  If a site is progressively using more and more memory, then you have a leak.  But memory bloat is a bit harder to pin down.  What qualifies as "using too much memory"?
 
-There are no hard numbers here, because different devices and browsers have different capabilities.  The same page that
-runs smoothly on a high-end smartphone may crash on a low-end smartphone.
+There are no hard numbers here, because different devices and browsers have different capabilities.  The same page that runs smoothly on a high-end smartphone may crash on a low-end smartphone.
 
 The key here is to use the RAIL model and focus on your users.  Find out what devices are popular with your users, and then test out your page on those devices.  If the experience is consistently bad, the page may be exceeding the memory capabilities of those devices.
 
@@ -64,11 +63,11 @@ Use the Microsoft Edge Browser Task Manager as a starting point to your memory i
 
 1. Press `Shift`+`Esc` or go to the Microsoft Edge main menu and select **More tools** > **Browser Task Manager** to open the Microsoft Edge Browser Task Manager.
 
-    :::image type="content" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Opening the Microsoft Edge Browser Task Manager." lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
+   :::image type="content" source="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png" alt-text="Opening the Microsoft Edge Browser Task Manager." lightbox="../media/memory-problems-bing-settings-more-tools-browser-task-manager.msft.png":::
 
 1. Right-click the table header of the Microsoft Edge Browser Task Manager, and then enable **JavaScript memory**.
 
-    :::image type="content" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Enabling JavaScript memory." lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
+   :::image type="content" source="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png" alt-text="Enabling JavaScript memory." lightbox="../media/memory-problems-bing-browser-task-manager-javascript-memory.msft.png":::
 
 These two columns tell you different things about how your page is using memory:
 
@@ -76,20 +75,21 @@ These two columns tell you different things about how your page is using memory:
 
 *  The **JavaScript Memory** column represents the JS heap.  This column contains two values.  The value you are interested in is the live number (the number in parentheses).  The live number represents how much memory the reachable objects on your page are using.  If this number is increasing, either new objects are being created, or the existing objects are growing.
 
-<!--*   live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->
+<!--*  live number reference: https://groups.google.com/d/msg/google-chrome-developer-tools/aTMVGoNM0VY/bLmf3l2CpJ8J  -->
 
 
 <!-- ====================================================================== -->
 ## Visualize memory leaks with Performance panel
 
-You may also use the Performance panel as another starting point in your investigation.  The Performance panel helps you visualize the memory use of a page over time.
+You can also use the Performance panel as another starting point in your investigation.  The Performance panel helps you visualize the memory use of a page over time.
 
 1. In DevTools, open the **Performance** tool.
+
 1. Select the **Memory** checkbox.
+
 1. [Make a recording](../evaluate-performance/reference.md#record-performance).
 
-> [!TIP]
-> It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, choose the **collect garbage** ![force garbage collection.](../media/collect-garbage-icon.msft.png) button while recording.
+It's a good practice to start and end your recording with a forced garbage collection.  To force garbage collection, click the **collect garbage** ![force garbage collection.](../media/collect-garbage-icon.msft.png) button while recording.
 
 To demonstrate memory recordings, consider the following code:
 
@@ -110,15 +110,15 @@ Every time that the button referenced in the code is clicked, 10,000 `div` nodes
 
 First, an explanation of the user interface.  The **HEAP** graph in the **Overview** pane (below **NET**) represents the JS heap.  Below the **Overview** pane is the **Counter** pane.  The memory usage is broken down by JS heap (same as **HEAP** graph in the **Overview** pane), documents, DOM nodes, listeners, and GPU memory.  Clear a checkbox to hide it from the graph.
 
-Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You may presume that each increase in the node count is a call to `grow()`.
+Now, an analysis of the code compared with the previous figure.  If you review the node counter (the green graph), it matches up cleanly with the code.  The node count increases in discrete steps.  You can presume that each increase in the node count is a call to `grow()`.
 
-The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (choose the  **collect garbage** ![force garbage collection.](../media/collect-garbage-icon.msft.png) button).
+The JS heap graph (the blue graph) is not as straightforward.  In keeping with best practices, the first dip is actually a forced garbage collection (click the  **collect garbage** ![force garbage collection.](../media/collect-garbage-icon.msft.png) button).
 
-As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected:  the JavaScript code is creating the DOM nodes on every button you choose and doing a lot of work when it creates the string of one million characters.
+As the recording progresses, the JS heap size spikes are displayed.  This is natural and expected: the JavaScript code is creating the DOM nodes on every button you click, and is doing a lot of work when it creates the string of one million characters.
 
-The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it may potentially define a memory leak.
+The key thing here is the fact that the JS heap ends higher than it began (the "beginning" here being the point after the forced garbage collection).  In the real world, if you saw this pattern of increasing JS heap size or node size, it would potentially indicate a memory leak.
 
-<!--todo: the Heap snapshots and Profiles panel are not found in Edge  -->
+<!--todo: the Heap snapshots and Profiles panel aren't found in Edge  -->
 
 
 <!-- ====================================================================== -->
@@ -144,7 +144,7 @@ function create() {
 document.getElementById('create').addEventListener('click', create);
 ```
 
-Clicking the button referenced in the code creates a `ul` node with ten `li` children.  The nodes are referenced by the code but do not exist in the DOM tree, so each node is detached.
+Clicking the button referenced in the code creates a `ul` node with ten `li` children.  The nodes are referenced by the code, but they don't exist in the DOM tree, so each node is detached.
 
 Heap snapshots are one way to identify detached nodes.  As the name implies, heap snapshots show you how memory is distributed among the JS objects and DOM nodes for your page at the point of time of the snapshot.
 
@@ -152,7 +152,7 @@ To create a snapshot:
 
 1. Open DevTools and go to the **Memory** panel.
 
-1. Click the **Heap snapshot** radio button, and then click the **Take snapshot** button.
+1. Click the **Heap snapshot** radio button, and then click the **Take snapshot** button at the bottom of the panel.
 
    :::image type="content" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png" alt-text="Taking a heap snapshot." lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot.msft.png":::
 
@@ -160,15 +160,17 @@ To create a snapshot:
 
 1. After the snapshot is finished, select it from the left-hand panel (it's named **HEAP SNAPSHOTS**).
 
-1. To search for detached DOM trees, type `Detached` in the **Class filter** textbox.
+1. In the **Class filter** textbox, type `Detached`, to search for detached DOM trees:
 
    :::image type="content" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Filtering for detached nodes." lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
 
-1. Expand the carats to investigate a detached tree.
+1. Expand the carats to investigate a detached tree:
 
    :::image type="content" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png" alt-text="Investigating the detached tree." lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded.msft.png":::
 
-   <!--Nodes that are highlighted yellow have direct references to them from the JavaScript code.  Nodes highlighted red do not have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node is not alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.  -->
+   <!--
+   Nodes that are highlighted yellow have direct references to them from the JavaScript code.  Nodes that are highlighted in red don't have direct references.  They are only alive because they are part of the tree for the yellow node.  In general, you want to focus on the yellow nodes.  Fix your code so that the yellow node isn't alive for longer than it needs to be, and you also get rid of the red nodes that are part of the tree for the yellow node.
+   -->
 
 1. Click a node to investigate it further.
 
@@ -178,7 +180,7 @@ To create a snapshot:
 
 :::image type="content" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png" alt-text="Investigating a node." lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached-expanded-selected.msft.png":::
 
-<!--todo: the allocation timeline does not appear in the DevTools in Edge  -->
+<!--todo: the allocation timeline doesn't appear in the DevTools in Edge  -->
 
 
 <!-- ====================================================================== -->

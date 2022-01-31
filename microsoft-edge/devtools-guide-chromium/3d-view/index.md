@@ -10,18 +10,18 @@ ms.date: 12/03/2020
 # Navigate z-index, DOM, and layers using the 3D View tool
 
 Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.  Use **3D View** to do the following:
-*   [Explore the web page translated into a 3D perspective](#3d-dom).
-*   [Debug based on z-index stacking context](#z-index).
-*   [Access the Layers tool functionality from 3D View with composited layers](#composited-layers).
-*   [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration).
-*   [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type).
+* [Explore the web page translated into a 3D perspective](#3d-dom).
+* [Debug based on z-index stacking context](#z-index).
+* [Access the Layers tool functionality from 3D View with composited layers](#composited-layers).
+* [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration).
+* [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type).
 
 To explore an early prototype for the 3D View project and run the code yourself, go to [3D View Sample](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/3DView).
 
 On the left side, there are three panes that you can use for your debugging experience:
-*   The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.
-*   The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements easily accessible.  To access the pane, select the **DOM** pane next to the **Z-index** pane.
-*   The [Composited Layers](#composited-layers) pane.  Add another 3D element to create a more comprehensive experience from a layers perspective.  To access the pane, select the **Composited Layers** pane next to the **DOM** pane.
+*  The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.
+*  The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements easily accessible.  To access the pane, select the **DOM** pane next to the **Z-index** pane.
+*  The [Composited Layers](#composited-layers) pane.  Add another 3D element to create a more comprehensive experience from a layers perspective.  To access the pane, select the **Composited Layers** pane next to the **DOM** pane.
 
 On the right side, the canvas displays your selections from the [Z-index](#z-index), [3D DOM](#3d-dom), or [Composited Layers](#composited-layers).
 
@@ -89,7 +89,7 @@ To display the element and the parents that have a new stacking context on the c
 
 To display the element you selected on the canvas, turn off both the settings and then select **Isolate selected element** button.
 
-At the bottom of the **3D DOM** pane, locate the **Hide elements with the same paint order as their parent** checkbox.  Choosing and deselecting the checkbox refreshes the elements based on your choice.  When this checkbox is selected, elements that share paint order are flattened to the parent.
+At the bottom of the **3D DOM** pane, locate the **Hide elements with the same paint order as their parent** checkbox.  Selecting and clearing the checkbox refreshes the elements based on your choice.  When this checkbox is selected, elements that share paint order are flattened to the parent.
 
 The options reduce the clutter that complex web pages create in your canvas.
 
@@ -120,12 +120,12 @@ A slider on the control pane named **Nesting level for page** with a number next
 ### DOM color type
 
 The **3D DOM** pane has the following options:
-*   Three different colorways:
-    *   **Heatmap - Purple to White**
-    *   **Heatmap - Blue to Yellow**
-    *   **Heatmap - Rainbow**
-*   **Use background color**
-*   **Use screen texture**
+*  Three different colorways:
+    *  **Heatmap - Purple to White**
+    *  **Heatmap - Blue to Yellow**
+    *  **Heatmap - Rainbow**
+*  **Use background color**
+*  **Use screen texture**
 
 The **Use screen texture** option adds context to your debugging experience.  It directly displays the content from the webpage onto the elements.
 

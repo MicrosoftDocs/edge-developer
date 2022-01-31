@@ -1,6 +1,6 @@
 ---
 title: Filter Console messages
-description: How to filter console messages.
+description: Use the filter options of the DevTools Console to reduce the noise from excessive console log messages, to better see the type of log messages that you're looking for.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,7 +9,15 @@ ms.date: 04/13/2021
 ---
 # Filter Console messages
 
-When you surf the web, you may find the **Console** is flooded with all kinds of information.  Often the information isn't relevant to you.  Such as information about the live project that another developer logged while you debug.  Or more information about violations and warnings about the performance of the current site that you aren't able to change.  It makes sense to use the filter options of **Console** to reduce the noise.
+Use the filter options of the DevTools **Console** to reduce the noise from excessive console log messages, to better see the type of log messages that you're looking for.
+
+When you go to various webpages, you may find that the **Console** is flooded with all kinds of information.  Often the information isn't relevant to you, such as information about the page that another developer logged.  Or you might see logged information about violations and warnings about the performance of the current site, that you aren't able to change.  
+
+You can filter console log messages in various ways:
+*  Filter by log level.
+*  Filter by text.
+*  Filter by regular expression.
+*  Filter by message source.
 
 
 <!-- ====================================================================== -->
@@ -69,4 +77,4 @@ You can define what kind of messages you want to display, and where each message
 
 1. Individual sources are revealed and listed.  Select a source, to display only messages that originate from that source:
 
-   :::image type="content" source="../media/console-filter-user-message-by-source.msft.png" alt-text="Choose any of the new options to filter using type and source." lightbox="../media/console-filter-user-message-by-source.msft.png":::
+   :::image type="content" source="../media/console-filter-user-message-by-source.msft.png" alt-text="Select any of the revealed options to filter messages by message type and source." lightbox="../media/console-filter-user-message-by-source.msft.png":::

@@ -28,14 +28,18 @@ Many websites take advantage of user location in order to provide a more relevan
 
 If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.  To override your geolocation in Microsoft Edge DevTools:
 
-1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="Screenshot of the Command Menu.":::
+   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="Screenshot of the Command Menu.":::
 
-1.  Type `sensors`, select **Panel: Show Sensors**, and then select `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
-1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or choose **Custom location** to enter custom longitude and latitude coordinates, or choose **Location unavailable** to display how your site behaves when the user's location is not available.
+1. Type `sensors`, select **Panel: Show Sensors**, and then press `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
 
-    :::image type="content" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Screenshot of selecting Tokyo from the Geolocation list.":::
+1. Click the **Geolocation** list, and then:
+   *  Select a city, such as `Tokyo`.
+   *  Click **Other** to enter custom longitude and latitude coordinates.
+   *  Click **Location unavailable** to see how your site behaves when the user's location isn't available.
+
+   :::image type="content" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Screenshot of selecting Tokyo from the Geolocation list.":::
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 

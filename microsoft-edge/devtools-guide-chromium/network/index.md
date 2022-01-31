@@ -159,7 +159,7 @@ Screenshots display how a webpage looks over time while it loads.
 
 1. Click the first thumbnail.  DevTools shows you what network activity was occurring at that moment in time.
 
-    :::image type="content" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="The network activity that was happening during the first screenshot." lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-screenshots-first.msft.png" alt-text="The network activity that was happening during the first screenshot." lightbox="../media/network-glitch-network-screenshots-first.msft.png":::
 
 1. Click (![Network settings.](../media/settings-icon.msft.png)) again and turn off the **Capture screenshots** checkbox to close the **Screenshots** pane.
 
@@ -171,30 +171,30 @@ Screenshots display how a webpage looks over time while it loads.
 
 Select a resource to learn more information about it.
 
-1.  Select `network-tutorial/`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers.
+1. Select `network-tutorial/`.  The **Headers** panel is shown.  Use this panel to inspect HTTP headers.
 
-    :::image type="content" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers panel." lightbox="../media/network-glitch-network-resources-headers.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-resources-headers.msft.png" alt-text="The Headers panel." lightbox="../media/network-glitch-network-resources-headers.msft.png":::
 
-1.  Select the **Preview** panel.  A basic rendering of the HTML is shown.
+1. Select the **Preview** panel.  A basic rendering of the HTML is shown.
 
-    :::image type="content" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview panel." lightbox="../media/network-glitch-network-resources-preview.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-resources-preview.msft.png" alt-text="The Preview panel." lightbox="../media/network-glitch-network-resources-preview.msft.png":::
 
     The panel is helpful when an API returns an error code in HTML.  You might find it easier to read the rendered HTML than the HTML source code, or when you inspect images.
 
-1.  Select the **Response** panel.  The HTML source code is shown.
+1. Select the **Response** panel.  The HTML source code is shown.
 
-    :::image type="content" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response panel." lightbox="../media/network-glitch-network-resources-response.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-resources-response.msft.png" alt-text="The Response panel." lightbox="../media/network-glitch-network-resources-response.msft.png":::
 
     > [!TIP]
     > When a file is minified, select the **Format** (![Format.](../media/format-icon.msft.png)) button at the bottom of the **Response** panel to re-format the contents of the file for readability.
 
-1.  Select the **Timing** panel.  A breakdown of the network activity for the resource is displayed.
+1. Select the **Timing** panel.  A breakdown of the network activity for the resource is displayed.
 
-    :::image type="content" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing panel." lightbox="../media/network-glitch-network-resources-timing.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-resources-timing.msft.png" alt-text="The Timing panel." lightbox="../media/network-glitch-network-resources-timing.msft.png":::
 
-1.  Click **Close** (![Close.](../media/close-icon.msft.png)) to view the Network Log again.
+1. Click **Close** (![Close.](../media/close-icon.msft.png)) to view the Network Log again.
 
-    :::image type="content" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="The Close button." lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-resources-close-tabs.msft.png" alt-text="The Close button." lightbox="../media/network-glitch-network-resources-close-tabs.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -208,15 +208,15 @@ For example, suppose you want to verify that your resources are using reasonable
 
 1. Select **Search** (![Search.](../media/search-icon.msft.png)).  The Search pane opens to the left of the Network log.
 
-    :::image type="content" source="../media/network-glitch-network-search-empty.msft.png" alt-text="The Search pane." lightbox="../media/network-glitch-network-search-empty.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-search-empty.msft.png" alt-text="The Search pane." lightbox="../media/network-glitch-network-search-empty.msft.png":::
 
-1. Type `no-cache` and select `Enter`.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content.
+1. Type `no-cache` and press `Enter`.  The Search pane lists all instances of `no-cache` that it finds in resource headers or content.
 
-    :::image type="content" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Search results for no-cache." lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-search-cache-control.msft.png" alt-text="Search results for no-cache." lightbox="../media/network-glitch-network-search-cache-control.msft.png":::
 
 1. Click a result to view the resource in which the result was found.  If you are looking at the details of the resource, select a result to go directly to it.  For example, if the query was found in a header, the **Headers** panel opens.   If the query was found in content, the **Response** panel opens.
 
-    :::image type="content" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers panel." lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png" alt-text="A search result highlighted in the Headers panel." lightbox="../media/network-glitch-network-search-cache-control-headers-response-headers.msft.png":::
 
 1. Close the Search pane and the **Headers** panel.
 
@@ -224,7 +224,7 @@ For example, suppose you want to verify that your resources are using reasonable
 <!-- ====================================================================== -->
 ## Filter resources
 
-DevTools provides numerous workflows for filtering out resources that are not relevant to the task at hand.
+DevTools provides numerous workflows for filtering out resources that aren't relevant to the task at hand.
 
 :::image type="content" source="../media/network-glitch-network-filter-empty.msft.png" alt-text="The Filters toolbar." lightbox="../media/network-glitch-network-filter-empty.msft.png":::
 
@@ -234,39 +234,39 @@ The **Filters** toolbar should be turned on by default.  If the **Filters** tool
 
 The **Filter** text box supports many different types of filtering.
 
-1.  Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images.
+1. Type `png` into the **Filter** text box.  Only the files that contain the text `png` are shown.  In this case the only files that match the filter are the PNG images.
 
-    :::image type="content" source="../media/network-glitch-network-filter-png.msft.png" alt-text="A string filter." lightbox="../media/network-glitch-network-filter-png.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-filter-png.msft.png" alt-text="A string filter." lightbox="../media/network-glitch-network-filter-png.msft.png":::
 
-1.  Type `/.*\.[cj]s+$/`.  DevTools filters out any resource with a filename that does not end with a `j` or a `c` followed by 1 or more `s` characters.
+1. Type `/.*\.[cj]s+$/`.  DevTools filters out any resource with a filename that doesn't end with a `j` or a `c` followed by 1 or more `s` characters.
 
-    :::image type="content" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="A regular expression filter." lightbox="../media/network-glitch-network-filter-regex.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="A regular expression filter." lightbox="../media/network-glitch-network-filter-regex.msft.png":::
 
-1.  Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it is also filtered out.
+1. Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it is also filtered out.
 
-    :::image type="content" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="A negative filter." lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="A negative filter." lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
 
-1.  Type `larger-than:1000` into the **Filter** text box.  DevTools filters out any resource with responses that are smaller than 1000 bytes.
+1. Type `larger-than:1000` into the **Filter** text box.  DevTools filters out any resource with responses that are smaller than 1000 bytes.
 
-    :::image type="content" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="A property filter." lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="A property filter." lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
 
-    For the full list of filterable properties, see [Filter requests by properties](./reference.md#filter-requests-by-properties).
+   For the full list of filterable properties, see [Filter requests by properties](./reference.md#filter-requests-by-properties).
 
-1.  Clear the **Filter** text box of any text.
+1. Clear the **Filter** text box of any text.
 
 ### Filter by resource type
 
 To focus in on a certain type of file, such as stylesheets:
 
-1.  Select **CSS**.  All other file types are filtered out.
+1. Select **CSS**.  All other file types are filtered out.
 
-    :::image type="content" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Show CSS files only." lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Show CSS files only." lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
 
-1.  To also display scripts, select and hold `Control` (Windows, Linux) or `Command` (macOS) and then select **JS**.
+1. To also display scripts, press and hold `Control` (Windows, Linux) or `Command` (macOS), and then click **JS**.
 
-    :::image type="content" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only." lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only." lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
 
-1.  To remove the filters and display all resources again, select **All**.
+1. To remove the filters and display all resources again, select **All**.
 
 For other filtering workflows, see [Filter requests](./reference.md#filter-requests).
 
@@ -274,13 +274,13 @@ For other filtering workflows, see [Filter requests](./reference.md#filter-reque
 <!-- ====================================================================== -->
 ## Block requests
 
-How does a page look and behave when some of the page resources are not available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
+How does a page look and behave when some of the page resources aren't available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
 
 1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
 1. Type `block`, select **Show Request Blocking**, and then press `Enter`.
 
-    :::image type="content" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Show Request Blocking." lightbox="../media/network-glitch-network-cli-block.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-cli-block.msft.png" alt-text="Show Request Blocking." lightbox="../media/network-glitch-network-cli-block.msft.png":::
 
 1. Click **Add Pattern** (![Add Pattern.](../media/add-icon.msft.png)).
 

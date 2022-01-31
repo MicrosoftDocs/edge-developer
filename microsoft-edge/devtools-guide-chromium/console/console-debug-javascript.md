@@ -39,8 +39,8 @@ Other errors that the **Console** reports are network errors.  To display it in 
 
 The table displays `loading`, but nothing changes on the webpage, because the data is never retrieved.  In the **Console**, the following two errors occurred:
 
-*   A network error that starts with `GET` HTTP method followed by a URI.
-*   An `Uncaught (in promise) TypeError: data.forEach is not a function` error.
+*  A network error that starts with `GET` HTTP method followed by a URI.
+*  An `Uncaught (in promise) TypeError: data.forEach is not a function` error.
 
 Select the link to the webpage and line of code where the error occurs, to open the Sources tool.  In this example, select the `network-error.html:40` link in the **Console**:
 
@@ -52,8 +52,8 @@ The **Sources** tool opens.  The problematic line of code is highlighted and fol
 
 In the example, the error informs you that the requested URL isn't found.  Next, open the **Network** tool, as follows:
 
-1.  Open the **Console**.
-1.  Select the URI that's associated with the error.
+1. Open the **Console**.
+1. Select the URI that's associated with the error.
 
 The Console displays an HTTP status code of the error after a resource isn't loaded:
 
@@ -81,8 +81,8 @@ The example without any errors loads information from GitHub and displays it:
 
 Use defensive coding techniques to avoid the previous user experiences.  Make sure your code catches errors and displays each error in the **Console**.  see [Network error reporting in Console and UI](https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html) and review the following items.
 
-*   Provide UI to the user to indicate that something went wrong.
-*   In the **Console**, provide helpful information about the **Network** error from your code.
+*  Provide UI to the user to indicate that something went wrong.
+*  In the **Console**, provide helpful information about the **Network** error from your code.
 
 An example that catches and reports errors:
 
@@ -136,15 +136,15 @@ first('Microsoft Edge Canary');
 
 You have three functions that request each other in succession:
 
-*   `first()`
-*   `second()`
-*   `third()`
+*  `first()`
+*  `second()`
+*  `third()`
 
 Each function sends a `name` argument to the other.  In the `third()` function, you check if the `name` argument exists and if it doesn't, you log an error that name isn't defined.  If `name` is defined, you use the `assert()` method to check if the `name` argument is fewer than eight letters long.  You request the `first()` function three times, with the following parameters.
 
-*   No argument that triggers the `console.error()` method in the `third()` function.
-*   The term `Console` as a parameter to the `first()` function doesn't cause an error because `name` argument exists and is shorter than eight letters.
-*   The phrase `Microsoft Edge Canary` as a parameter to `first()` function causes the `console.assert()` method to report an error, because the parameter is longer than eight letters.
+*  No argument that triggers the `console.error()` method in the `third()` function.
+*  The term `Console` as a parameter to the `first()` function doesn't cause an error because `name` argument exists and is shorter than eight letters.
+*  The phrase `Microsoft Edge Canary` as a parameter to `first()` function causes the `console.assert()` method to report an error, because the parameter is longer than eight letters.
 
 Use the `console.assert()` method to create conditional error reports.  The following two examples have the same result, but one needs an extra `if{}` statement.
 

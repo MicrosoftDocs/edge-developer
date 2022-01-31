@@ -64,7 +64,7 @@ Identify and fix problems in your website by adding the [webhint extension for V
 :::image-end:::
 
 To install the webhint extension:
-1. In Visual Studio Code, navigate to **Extensions** (select `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS).
+1. In Visual Studio Code, navigate to **Extensions**.  To do this, you can press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.
 1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
 
 :::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint Visual Studio Code extension." lightbox="./media/visual-studio-code-extension-webhint.msft.png":::

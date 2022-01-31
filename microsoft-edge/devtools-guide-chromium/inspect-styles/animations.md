@@ -1,6 +1,6 @@
 ---
 title: Inspect animations
-description: Inspect and modify animations with the Microsoft Edge DevTools  Animation Inspector.
+description: Inspect and modify animations with the Animations tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -22,51 +22,51 @@ ms.date: 05/11/2021
    limitations under the License.  -->
 # Inspect animations
 
-Inspect and modify animations with the Microsoft Edge DevTools Animation Inspector.
+Inspect and modify animations with the **Animations** tool in Microsoft Edge DevTools.  The **Animations** tool contains the _Animation Inspector_; they are synonymous.
 
-:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="animation inspector." lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
+:::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="The Animations tool." lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
 
 ### Summary
 
-*   Capture animations by opening the Animation Inspector.  The Animation Inspector automatically detects and sorts animations into groups.
+*  Capture animations by opening the **Animations** tool.  The **Animations** tool automatically detects and sorts animations into groups.
 
-*   Inspect animations by slowing down each one, replaying each one, or viewing the source code.
+*  Inspect animations by slowing down each one, replaying each one, or viewing the source code.
 
-*   Modify animations by changing the timing, delay, duration, or keyframe offsets.
+*  Modify animations by changing the timing, delay, duration, or keyframe offsets.
 
 
 <!-- ====================================================================== -->
 ## Overview
 
-The Microsoft Edge DevTools Animation Inspector has two main purposes.
+The **Animations** tool has two main purposes:
 
-*   Inspecting animations.  You want to slow down, replay, or inspect the source code for an Animation Group.
+*  Inspecting animations.  You can slow down, replay, or inspect the source code for an Animation Group.
 
-*   Modifying animations.  You want to modify the timing, delay, duration, or keyframe offsets of an Animation Group.  Bezier editing and keyframe editing are currently not supported.
+*  Modifying animations.  You want to modify the timing, delay, duration, or keyframe offsets of an Animation Group.  Bezier editing and keyframe editing are currently not supported.
 
 The Animation Inspector supports CSS animations, CSS transitions, and web animations.  `requestAnimationFrame` animations are currently not supported.
 
-### What is an Animation Group?
+### What's an Animation Group?
 
-An Animation Group is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time (excluding delays, and so on).  The Animation Inspector also groups the animations side-by-side.
+An _Animation Group_ is a group of animations that may be related to each other.  Currently, the web has no real concept of a group animation, so motion designers and developers have to compose and time individual animations so that the animations render as one coherent visual effect.  The Animation Inspector predicts which animations are related based on start time (excluding delays, and so on).  The Animation Inspector also groups the animations side-by-side.
+
 In other words, a set of animations that are all triggered in the same script block are grouped together.  If an animation is asynchronous, it is placed in a separate group.
 
 
 <!-- ====================================================================== -->
 ## Get started
 
-There are two ways to open the Animation Inspector:
+To open the Animation Inspector, use any of these approaches, in DevTools:
 
-*   Open the **Customize and Control DevTools** menu
-    1.  Navigate to the **More tools** sub-menu.
-    1.  Choose **Animations**:
+*  From the **main toolbar** or on the **Drawer**: click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select **Animations**.
 
-        :::image type="content" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations using Main Menu." lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
+   :::image type="content" source="../media/inspect-styles-elements-styles-more-tools-animations.msft.png" alt-text="Animations using Main Menu." lightbox="../media/inspect-styles-elements-styles-more-tools-animations.msft.png":::
 
-*   Open the **Command Menu**
-    1.  Type `Drawer: Show Animations`.
+*  From the **Customize** menu: Click the **Customize and control DevTools** (![Customize icon.](../media/customize-devtools-icon-light-theme.png)) menu button, point to the **More tools** sub-menu, and then select **Animations**.
 
-The Animation Inspector opens next to the **Console** tool.  Since the Animation Inspector is a Drawer tool, you may use the Animation Inspector from any DevTools panel.
+*  From the **Command Menu**:  When DevTools has focus, press `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**, start typing `animations`, and then select **Drawer: Show Animations**.
+
+By default, the **Animations** tool opens in the **Drawer**, next to the **Console** tool.  By using the **Animations** tool on the **Drawer**, you can use it at the same time as using another tools on the main toolbar.
 
 :::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations.msft.png" alt-text="Empty Animation Inspector." lightbox="../media/inspect-styles-elements-styles-drawer-animations.msft.png":::
 
@@ -74,8 +74,8 @@ The Animation Inspector is grouped into four main sections (or panes).  This gui
 
 | Index | Pane | Description |
 |:--- |:--- |:--- |
-| 1 | **Controls** | From here you may clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |
-| 2 | **Overview** | Choose an Animation Group here to inspect and modify it in the **Details** pane. |
+| 1 | **Controls** | From here you can clear all currently captured Animation Groups, or change the speed of the currently selected Animation Group. |
+| 2 | **Overview** | Select an Animation Group here to inspect and modify it in the **Details** pane. |
 | 3 | **Timeline** | Pause and start an animation from here, or jump to a specific point in the animation. |
 | 4 | **Details** | Inspect and modify the currently selected Animation Group. |
 
@@ -95,25 +95,25 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 After you capture an animation, there are a few ways to replay it:
 
-*   Hover on the thumbnail in the **Overview** pane to view a preview of it.
-*   Choose the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane) and choose the **replay** (![replay icon.](../media/replay-button-icon.msft.png)) icon.  The animation is replayed in the viewport.  Choose the **animation speed** (![animation speed icons.](../media/animation-speed-buttons-icon.msft.png)) icons to change the preview speed of the currently selected Animation Group.  You may use the red vertical bar to change your current position.
-*   Choose and drag the red vertical bar to scrub the viewport animation.
+*  Hover on the thumbnail in the **Overview** pane to view a preview of it.
+*  Select the Animation Group from the **Overview** pane (so that it is displayed in the **Details** pane), and then click the **replay** (![replay icon.](../media/replay-button-icon.msft.png)) icon.  The animation is replayed in the viewport.  Click the **animation speed** (![animation speed icons.](../media/animation-speed-buttons-icon.msft.png)) icons to change the preview speed of the currently selected Animation Group.  You can use the red vertical bar to change your current position.
+*  Click and drag the red vertical bar to scrub the viewport animation.
 
 ### View animation details
 
-After you capture an Animation Group, choose on it from the **Overview** pane to view the details.  In the **Details** pane each individual animation is assigned the a row.
+After you capture an Animation Group, click on it from the **Overview** pane to view the details.  In the **Details** pane, each individual animation is assigned to a row.
 
 :::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Animation Group details." lightbox="../media/inspect-styles-elements-styles-drawer-animations-selected-completed.msft.png":::
 
-Hover on an animation to highlight it in the viewport.  Choose the animation to select it in the **Elements** tool.
+Hover on an animation to highlight it in the viewport.  Click on the animation to select it in the **Elements** tool.
 
 :::image type="content" source="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png" alt-text="Hover on the animation to highlight it in viewport." lightbox="../media/inspect-styles-split-elements-styles-drawer-animations-selected-completed.msft.png":::
 
-The leftmost, darker section of an animation is the definition.  The right, more faded section represents iterations.  For example, in the following figure, sections two and three represent iterations of section one.
+The leftmost, darker section of an animation is its definition.  The right, more faded section represents iterations.  For example, in the following figure, sections two and three represent iterations of section one:
 
 :::image type="content" source="../media/inspect-styles-glitch-display-animations-highlight.msft.png" alt-text="Diagram of animation iterations." lightbox="../media/inspect-styles-glitch-display-animations-highlight.msft.png":::
 
-If two elements have the same animation applied, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in the following figure, the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation (`spinrightleft`) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.
+If two elements have the same animation applied to them, the Animation Inspector assigns the same color to the elements.  The color is random and has no significance.  For example, in the following figure, the two elements `div.cwccw.earlier` and `div.cwccw.later` have the same animation (`spinrightleft`) applied, as do the `div.ccwcw.earlier` and `div.ccwcw.later` elements.
 
 :::image type="content" source="../media/inspect-styles-glitch-display-animations.msft.png" alt-text="Color-coded animations." lightbox="../media/inspect-styles-glitch-display-animations.msft.png":::
 
@@ -121,25 +121,25 @@ If two elements have the same animation applied, the Animation Inspector assigns
 <!-- ====================================================================== -->
 ## Modify animations
 
-There are three ways you are able to modify an animation with the Animation Inspector.
+There are three ways you can modify an animation with the Animation Inspector:
 
-*   Animation duration.
-*   Keyframe timings.
-*   Start time delay.
+*  Animation duration.
+*  Keyframe timings.
+*  Start time delay.
 
-In the following figure, the original animation is represented.
+For this section, suppose that the screenshot below represents the original animation:
 
 :::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png" alt-text="Original animation before modification." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations.msft.png":::
 
-To change the duration of an animation, choose and drag the first or last circle.
+To change the duration of an animation, click and drag the first or last circle.
 
 :::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png" alt-text="Modified duration." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-shorter.msft.png":::
 
-If the animation defines any keyframe rules, then these are represented as white inner circles.  Choose and drag one of these to change the timing of the keyframe.
+If the animation defines any keyframe rules, then these are represented as white-filled inner circles.  Click and drag a white-filled inner circle to change the timing of the keyframe:
 
 :::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png" alt-text="Modified keyframe." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-keyframe-modification.msft.png":::
 
-To add a delay to an animation, choose and drag it anywhere except the circles.
+To add a delay to an animation, click the animation anywhere except the circles, and drag it:
 
 :::image type="content" source="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png" alt-text="Modified delay." lightbox="../media/inspect-styles-glitch-spin-animations-console-animations-delay.msft.png":::
 

@@ -52,9 +52,9 @@ Start by creating the `icons` directory in your project to store the icon image 
    Icon on the toolbar to open your extension
 :::image-end:::
 
-For icons, we recommend using:
-*   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
-*   Images that are 128 x 128 px, which are resized by the browser if necessary.
+For icons:
+*  We recommend using `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
+*  We recommend using images that are 128 x 128 px, which are resized by the browser if necessary.
 
 The directories of your project should be similar to the following structure.
 

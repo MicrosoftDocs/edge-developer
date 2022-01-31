@@ -32,9 +32,9 @@ ms.date: 05/04/2021
 
 The **Security** panel is the main place in DevTools for inspecting the security of a page.
 
-1.  [Open DevTools](../open/index.md).
+1. [Open DevTools](../open/index.md).
 
-1.  Choose the **Security** tab to open the **Security** tool.
+1. Click the **Security** tab to open the **Security** tool.
 
 :::image type="content" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel." lightbox="../media/security-security-overview-secure.msft.png":::
 
@@ -44,7 +44,7 @@ The **Security** panel is the main place in DevTools for inspecting the security
 
 ### Non-secure main origins
 
-When the main origin of a page is not secure, the **Security Overview** says **This page is not secure**.
+When the main origin of a page isn't secure, the **Security Overview** says **This page is not secure**.
 
 :::image type="content" source="../media/security-security-overview-non-secure.msft.png" alt-text="A non-secure page." lightbox="../media/security-security-overview-non-secure.msft.png":::
 
@@ -52,10 +52,10 @@ This problem occurs when the URL that you visited was requested over HTTP.  To m
 
 If you already set up HTTPS on your server, all you need to do to fix this problem is configure your server to redirect all HTTP requests to HTTPS.
 
-If you have not set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.org) provides a free and relatively-easy way to start the process.  Or, you may consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.
+If you haven't set up HTTPS on your server, [Let's Encrypt](https://letsencrypt.org) provides a free and relatively-easy way to start the process.  Or, you might consider hosting your site on a CDN.  Most major CDNs host sites on HTTPS by default now.
 
 > [!TIP]
-> The [Use HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) hint in [webhint](https://webhint.io) may help automate the process of making sure that all HTTP requests are directed to HTTPS.
+> The [Use HTTPS](https://webhint.io/docs/user-guide/hints/hint-https-only) hint in [webhint](https://webhint.io) can help automate the process of making sure that all HTTP requests are directed to HTTPS.
 
 ### Mixed content
 
@@ -63,7 +63,7 @@ If you have not set up HTTPS on your server, [Let's Encrypt](https://letsencrypt
 
 :::image type="content" source="../media/security-security-overview-mixed-secure.msft.png" alt-text="Mixed content." lightbox="../media/security-security-overview-mixed-secure.msft.png":::
 
-In the previous figure, choose **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.
+In the previous figure, select **View 1 request in Network panel** to open the **Network** tool and apply the `mixed-content:displayed` filter so that the **Network Log** only shows non-secure resources.
 
 :::image type="content" source="../media/security-network-filter.msft.png" alt-text="Mixed resources in the Network Log." lightbox="../media/security-network-filter.msft.png":::
 
@@ -73,13 +73,13 @@ In the previous figure, choose **View 1 request in Network panel** to open the *
 
 ### View main origin certificate
 
-From the **Security Overview**, choose **View certificate** to quickly inspect the certificate for the main origin.
+From the **Security Overview**, click **View certificate** to quickly inspect the certificate for the main origin.
 
 :::image type="content" source="../media/security-security-overview-secure-view-certificate.msft.png" alt-text="A main origin certificate." lightbox="../media/security-security-overview-secure-view-certificate.msft.png":::
 
 ### View origin details
 
-Choose one of the entries in the left-hand nav to view the details of the origin.  From the details page you are able to view connection and certificate information.  Certificate transparency information is also shown when available.
+Click one of the entries in the left-hand nav to view the details of the origin.  From the details page you can view connection and certificate information.  Certificate transparency information is also shown when available.
 
 :::image type="content" source="../media/security-security-overview-mixed-secure-main-origin.msft.png" alt-text="Main origin details." lightbox="../media/security-security-overview-mixed-secure-main-origin.msft.png":::
 

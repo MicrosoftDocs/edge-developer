@@ -74,19 +74,19 @@ To include issues that are caused by third-party sites, at the top of the **Issu
 
 The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
 
-1.  Open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab, and then open DevTools.
+1. Open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab, and then open DevTools.
 
-1.  Open the **Issues** tool by selecting the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)).
+1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)).
 
-1.  Select an issue to expand the issue.
+1. Select an issue to expand the issue.
 
-    :::image type="content" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool, displaying additional information on how to fix the issue." lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+   :::image type="content" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool, displaying additional information on how to fix the issue." lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
 
 Each displayed issue has the following components:
-*   A headline describing the issue.
-*   A description providing more context and proposed solutions.
-*   An **AFFECTED RESOURCES** section that links to resources in DevTools, such as the **Elements**, **Sources**, or **Network** tool.
-*   Links to further documentation.
+*  A headline describing the issue.
+*  A description providing more context and proposed solutions.
+*  An **AFFECTED RESOURCES** section that links to resources in DevTools, such as the **Elements**, **Sources**, or **Network** tool.
+*  Links to further documentation.
 
 
 <!-- ====================================================================== -->
@@ -94,21 +94,21 @@ Each displayed issue has the following components:
 
 An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool. You can open one of these tools to perform additional troubleshooting steps. To open a linked tool from the **Issues** tool, perform the following steps.
 
-1.  As described in the previous section, open the demo page and then expand an issue in the **Issues** tool.
+1. As described in the previous section, open the demo page and then expand an issue in the **Issues** tool.
 
-1.  In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool.
+1. In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool.
 
-    :::image type="content" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool, to open an affected resource from within the Issues tool." lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+   :::image type="content" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool, to open an affected resource from within the Issues tool." lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
 
     An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool.
 
-    :::image type="content" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link." lightbox="../media/issues-tab-view-issue.msft.png":::
+   :::image type="content" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link." lightbox="../media/issues-tab-view-issue.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Open issues from the DOM tree
 
-If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  You can open the context menu (right-click) on the element and then select **View issues**, or select `Shift` and left-click the element with the wavy underline.
+If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  Right-click the element and then select **View issues**.  Or, press and hold `Shift` and then click the element with the wavy underline.
 
 To display an issue for elements with wavy underlines in the DOM tree, perform the following steps.
 
@@ -118,13 +118,13 @@ To display an issue for elements with wavy underlines in the DOM tree, perform t
 
 1. In the DOM tree, expand `<body>` > `<header>` > `<form>`.  Notice that the `<input>` element has a wavy underline.
 
-    :::image type="content" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Wavy-underlined issues in the DOM tree in the Elements tool." lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
+   :::image type="content" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Wavy-underlined issues in the DOM tree in the Elements tool." lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
 
 1. Hover over the `<input>` element.  A tooltip displays information about the issue.
 
 1. Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
 
-    :::image type="content" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues on a wavy-underlined element in the DOM tree." lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+   :::image type="content" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues on a wavy-underlined element in the DOM tree." lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
 
 
 <!-- ====================================================================== -->

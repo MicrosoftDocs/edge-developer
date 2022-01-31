@@ -26,9 +26,9 @@ Keep your client-side code readable and debuggable even after you combine, minif
 
 ### Summary
 
-*   Use Source Maps to map minified code to source code.  You are then able to read and debug compiled code in the original source.
-*   Only use pre-processors capable of producing Source Maps.
-*   Verify that your web server is able to serve Source Maps.
+*  Use Source Maps to map minified code to source code.  You are then able to read and debug compiled code in the original source.
+*  Only use pre-processors capable of producing Source Maps.
+*  Verify that your web server is able to serve Source Maps.
 
 <!--
 no longer in original file:
@@ -72,13 +72,21 @@ The following types of preprocessors are commonly used in combination with Sourc
 
 Source Maps from preprocessors cause DevTools to load your original files in addition to your minified ones.  You then use the originals to set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.  The running of the code gives you the illusion of running a development site in production.
 
-When running Source Maps in DevTools, you should notice that the JavaScript is not compiled and all of the individual JavaScript files it references are displayed.  Source Maps in DevTools is using source mapping, but the underlying functionality actually runs the compiled code.
+When running Source Maps in DevTools, you should notice that the JavaScript isn't compiled, and all of the individual JavaScript files that it references are displayed.  Source Maps in DevTools is using source mapping, but the underlying functionality actually runs the compiled code.
 
 Any errors, logs, and breakpoints map to the dev code, for awesome debugging.  So in effect, it gives you the illusion that you are running a dev site in production.
 
 ### Enable Source Maps in settings
 
-Source Maps are enabled by default<!-- (as of Microsoft Edge 39)-->, but if you want to double-check or enable them; first open DevTools, choose **Customize and control DevTools** (`...`) > **Settings**.  On the **Preferences** pane, under **Sources**, turn on **Enable JavaScript Source Maps**.  You may also turn on the **Enable CSS Source Maps**.
+Source Maps are enabled by default.<!-- (as of Microsoft Edge 39)-->
+
+To make sure that Source Maps are enabled:
+
+1. Open DevTools.
+
+1. Select **Customize and control DevTools** (`...`) > **Settings**.
+
+1. On the **Preferences** pane, under **Sources**, select **Enable JavaScript Source Maps**.  You can also turn on the **Enable CSS Source Maps**.
 
 :::image type="content" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enabling Source Maps." lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
 
@@ -96,7 +104,7 @@ When [debugging your code](index.md#step-4-step-through-the-code) and Source Map
 
 Although it's not part of the Source Map spec, the `@sourceURL` allows you to make development much easier when working with evals.  The helper is displayed similar to the `//# sourceMappingURL` property and is mentioned in the Source Map V3 specifications.
 
-By including the following special comment in your code, which is evaled, you are able to name evals and inline scripts and styles so each appears as more logical names in your DevTools.
+By including the following special comment in your code, which is evaled, you can name evals and inline scripts and styles so each appears as more logical names in your DevTools.
 
 ```javascript
 //# sourceURL=source.coffee

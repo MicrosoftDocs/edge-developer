@@ -33,13 +33,11 @@ ms.date: 05/06/2021
 
 In most modern IDEs, wavy underlines under text indicate syntax errors.   In Microsoft Edge version 91 or later, wavy underlines display under HTML in the **DOM** view of the **Elements** tool.  The wavy underlines indicate code issues and suggestions related to accessibility, compatibility, performance, and so on.  For more information about how to review and edit issues, see [Find and fix problems using the Issues tool](../../../issues/index.md).
 
-To open the **Issues** tool and learn more about the issue and how to fix it, complete one of the following actions.
+To open the **Issues** tool and learn more about the issue and how to fix it:
 
-*   Select and hold `Shift`, and then choose any wavy underline.
-*   Complete the following actions.
-    1.  Hover on any wavy underline.
-    1.  Open the contextual menu (right-click).
-    1.  Choose **Show in Issues**.
+* Press and hold `Shift`, and then click a wavy underline.
+
+* Or, right-click a wavy underline, and then select **Show in Issues**.
 
 Selecting the underlined error in the **Elements** tool:
 
@@ -58,13 +56,13 @@ Displaying error details in the **Issues** tool:
 <!--  Title: Learn more about DevTools with DevTools Tooltips  -->
 <!--  Subtitle: Informative overlays are now available in the default DevTools interface.  -->
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes in DevTools.  To turn off Tooltips, select `Esc`.  To turn on Tooltips, complete one of the following actions.
+The DevTools Tooltips feature helps you learn about all the different tools and panes in DevTools.  To turn off Tooltips, press `Esc`.  To turn on Tooltips, do one of the following: 
 
-*   Select `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
-*   [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
-*   Choose **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
+*  Press `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
+*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
 
-Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you may also choose the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**.
+Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**.
 
 To display more information about how to use the DevTools, turn on Tooltips, and then hover on each outlined region of the DevTools.
 
@@ -81,13 +79,13 @@ To display more information about how to use the DevTools, turn on Tooltips, and
 
 In Microsoft Edge version 91 or later, if you're a Progressive Web App or Service Worker developer, display the update lifecycle of your Service Workers as a timeline in the **Application** tool.  This feature helps you understand the time your Service Worker spends in each of the following stages.
 
-*   **Install**
-*   **Wait**
-*   **Activate**
+*  **Install**
+*  **Wait**
+*  **Activate**
 
 :::image type="content" source="../../media/2021/04/application-service-workers-update-cycle-version-73-focus.msft.png" alt-text="View the Timeline in the Update Cycle for your Service Worker." lightbox="../../media/2021/04/application-service-workers-update-cycle-version-73-focus.msft.png":::
 
-For more information about the lifecycle of your Service Workers, see [The Service Worker lifecycle](../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle).  For more information about debugging tools for Progressive Web Apps and Service Workers in the DevTools, see [Service Worker improvements](../../../service-workers/index.md).  To review real-time updates on this feature in the Chromium open-source project, see Issue [1066604](https://crbug.com/1066604).
+For more information about the lifecycle of your Service Workers, see [The Service Worker lifecycle](../../../../progressive-web-apps-chromium/how-to/service-workers.md#the-service-worker-lifecycle).  For more information about debugging tools for Progressive Web Apps and Service Workers in the DevTools, see [Service Worker improvements](../../../service-workers/index.md).  For real-time updates on this feature in the Chromium open-source project, see Issue [1066604](https://crbug.com/1066604).
 
 
 <!-- ====================================================================== -->
@@ -110,7 +108,7 @@ In Microsoft Edge version 91 or later, no error is displayed when you provide at
 
 :::image type="content" source="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png" alt-text="In Microsoft Edge version 91 or later, no error is displayed when you provide at least one square icon" lightbox="../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png":::
 
-To review errors and warnings in your Web App Manifest, navigate to the **Application** tool and choose the **Manifest** section.  Errors and warnings are listed under the **Errors and Warnings** heading.  For more information about the Web App Manifest, see [Use the Web App Manifest to integrate your Progressive Web App into the Operating System](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md).  To create icons to include in your Web App Manifest, go to the [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator).  To review real-time updates on this feature in the Chromium open-source project, see Issue [1185945](https://crbug.com/1185945).
+To review errors and warnings in your Web App Manifest, select **Application** tool > **Application** section > **Manifest**.  Errors and warnings are listed under the **Errors and Warnings** heading.  For more information about the Web App Manifest, see [Use the Web App Manifest to integrate your Progressive Web App into the Operating System](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md).  To create icons to include in your Web App Manifest, go to the [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator).  For real-time updates on this feature in the Chromium open-source project, see Issue [1185945](https://crbug.com/1185945).
 
 
 <!-- ====================================================================== -->
@@ -128,9 +126,9 @@ Starting in [Microsoft Edge version 81](../../2020/01/devtools.md#using-the-devt
 ## Use the keyboard to navigate to CSS variables
 
 <!--  Title: Navigate to CSS variables with the arrow keys  -->
-<!--  Subtitle: In the Styles pane, use the arrow keys to choose CSS variables.  Select `Enter` to see the variable definition.  -->
+<!--  Subtitle: In the Styles pane, use the arrow keys to select CSS variables.  Press `Enter` to see the variable definition.  -->
 
-Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you may use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then select `Enter`.  For more information about CSS variables, see [Using CSS custom properties (variables)](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties).  To review real-time updates on this feature in the Chromium open-source project, see Issue [1187735](https://crbug.com/1187735).
+Starting in [Microsoft Edge version 88](../../2020/11/devtools.md#css-variable-definitions-in-styles-pane), the **Styles** pane displays CSS variables and provides a link directly to the definition of each variable.  In Microsoft Edge version 91 or later, you can use the arrow keys to easily navigate to CSS variables.  To open the definition in the **Styles** pane, hover on a variable, and then press `Enter`.  For more information about CSS variables, see [Using CSS custom properties (variables)](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties).  For real-time updates on this feature in the Chromium open-source project, see Issue [1187735](https://crbug.com/1187735).
 
 :::image type="content" source="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png" alt-text="The --theme-body-background CSS variable highlighted in the Styles pane." lightbox="../../media/2021/04/elements-styles-body-background-color-theme-body-background.msft.png":::
 
@@ -150,19 +148,19 @@ The **Issues** tool displays recommendations to improve your website, including 
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.7
 
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->
-<!-- Subtitle: Increased target closure reliability, automatically update the side panel, new contextual menu for settings and Changelog, and more. -->
+<!-- Subtitle: Increased target closure reliability, automatically update the side panel, new right-click menu for settings and Changelog, and more. -->
 
 The [Microsoft Edge Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) version 1.1.7 provides the DevTools from [Microsoft Edge version 88](../../2020/11/devtools.md).  This extension now supports ARM devices and no longer depends on the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) extension.  Version 1.1.7 includes the following bug fixes and improvements.
 
-*   Updated the reliability of target closure.
+*  Updated the reliability of target closure.
 
-*   Updated the side panel to automatically refreshes when you debug targets that are created or destroyed.
+*  Updated the side panel to automatically refreshes when you debug targets that are created or destroyed.
 
-*   Added a new contextual menu that gives you faster access to the extension settings and the latest Changelog.
+*  Added a new right-click menu that gives you faster access to the extension settings and the latest Changelog.
 
-*   Updated and simplified the release of extension documentation including the newest features.
+*  Updated and simplified the release of extension documentation including the newest features.
 
-To manually update to version 1.1.7, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You may file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
+To manually update to version 1.1.7, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
 
 <!-- ====================================================================== -->
@@ -172,13 +170,13 @@ To manually update to version 1.1.7, see [Update an extension manually](https://
 
 ### Visualize CSS scroll-snap
 
-You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Choose the badge to turn on (or off) the display of a scroll-snap overlay on the webpage.  For an example webpage, see [Scroll Snap Demo](https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html).  In the example, dots display on snap edges.  The scroll port has a solid outline while the snap items have dash outlines.  The scroll padding is filled in green while the scroll margin is filled in orange.  To review the history of this feature in the Chromium open-source project, see Issue [862450](https://crbug.com/862450).
+You can now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Click the badge to turn on (or off) the display of a scroll-snap overlay on the webpage.  For an example webpage, see [Scroll Snap Demo](https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html).  In the example, dots display on snap edges.  The scroll port has a solid outline while the snap items have dash outlines.  The scroll padding is filled in green while the scroll margin is filled in orange.  To review the history of this feature in the Chromium open-source project, see Issue [862450](https://crbug.com/862450).
 
 :::image type="content" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap." lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
 
 ### New Memory Inspector tool
 
-Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory.  Open the [Memory in JS](https://memory-inspector.glitch.me/demo-js.html) demo webpage.  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.  Refresh the webpage.  Expand the **Scope** section in the debugger pane.  The new icon is displayed next to the **buffer** value.  Choose it to open the new **Memory Inspector** tool.
+Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory.  Open the [Memory in JS](https://memory-inspector.glitch.me/demo-js.html) demo webpage.  In the **Sources** tool, open the `memory-write-wasm` file, and set a breakpoint at line `0x03c`.  Refresh the webpage.  Expand the **Scope** section in the debugger pane.  The new icon is displayed next to the **buffer** value.  Click it to open the new **Memory Inspector** tool.
 
 To learn more about debugging in the **Sources** tool, see [Using the Debugger pane to debug JavaScript code](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code).  To review the history of this feature in the Chromium open-source project, see Issue [1166577](https://crbug.com/1166577).
 
@@ -200,11 +198,11 @@ Now, use the **Badge settings** in the **Elements** tool to turn on (or off) ind
 
 Image previews in the DevTools have been enhanced to display more information, including the following details:
 
-*   Rendered size
-*   Rendered aspect ratio
-*   Intrinsic size
-*   Intrinsic aspect ratio
-*   File size
+*  Rendered size
+*  Rendered aspect ratio
+*  Intrinsic size
+*  Intrinsic aspect ratio
+*  File size
 
 The  information helps you better understand your images and apply optimization.  The image aspect ratio information is also available in the **Network** tool, when you click an image preview.
 
@@ -212,7 +210,7 @@ In the **Elements** tool, image preview now displays more information about the 
 
 :::image type="content" source="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png" alt-text="Image preview with aspect ratio information in the Element tool." lightbox="../../media/2021/04/elements-inspect-image-src-hover-preview.msft.png":::
 
-Also, the image aspect ratio information is available in the **Network** tool, when you choose an image preview:
+Also, the image aspect ratio information is available in the **Network** tool, when you click an image preview:
 
 :::image type="content" source="../../media/2021/04/network-img-name-filters-preview.msft.png" alt-text="Image aspect ratio information in the Network tool." lightbox="../../media/2021/04/network-img-name-filters-preview.msft.png":::
 
@@ -220,7 +218,7 @@ To review the history of this feature in the Chromium open-source project, see I
 
 ### New options to configure Content-Encodings in the Network conditions tool
 
-In the **Network** tool, choose the new **More network conditions...** button next to the **Throttling** dropdown menu to open the **Network conditions** tool.  To test if server responses are correctly encoded for browsers that don't support [gzip](https://www.gnu.org/software/gzip/manual), [brotli](https://www.brotli.org), or another future `Content-Encoding`:
+In the **Network** tool, click the new **More network conditions...** button next to the **Throttling** dropdown menu to open the **Network conditions** tool.  To test if server responses are correctly encoded for browsers that don't support [gzip](https://www.gnu.org/software/gzip/manual), [brotli](https://www.brotli.org), or another future `Content-Encoding`:
 
 1. Open the **Network conditions** tool
 
@@ -272,8 +270,8 @@ To view the history of this feature in the Chromium open-source project, see Iss
 Find experiments quicker with the new experiment filter.  For example, to turn on new experiments for code issues:
 ``
 
-1.  Select **Settings** > **Experiments**.
-1.  In the **Filter** textbox, type `issues`.
+1. Select **Settings** > **Experiments**.
+1. In the **Filter** textbox, type `issues`.
 
 :::image type="content" source="../../media/2021/04/settings-experiments-filter-by-issues.msft.png" alt-text="Filter experiments in the Experiments setting." lightbox="../../media/2021/04/settings-experiments-filter-by-issues.msft.png":::
 
@@ -289,8 +287,8 @@ Use the new `Vary Header` column in the **Cache Storage** pane to display the [V
 
 DevTools now support the new [Private brand checks a.k.a. #foo in obj](https://v8.dev/features/private-brand-checks) JavaScript language feature.  The private brand checks feature extends the [in operator](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/in) to support [Private class fields](https://v8.dev/features/class-fields#private-class-fields) on a specific object.  Try it in the **Console** and **Sources** tools.  Also, to inspect the private fields:
 
-1.  Navigate to **debugger** pane.
-1.  Navigate to the **Scope** section.
+1. Navigate to **debugger** pane.
+1. Navigate to the **Scope** section.
 
 To review the history of this feature in the Chromium open-source project, see Issue [11374](https://crbug.com/v8/11374).
 
@@ -308,7 +306,7 @@ DevTools now support hover preview on JavaScript member expressions that use the
 
 #### Improved outline of HTML files
 
-DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, select `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  In the following figure, DevTools now correctly list all functions in the outline.  Previously, DevTools only displayed some of the functions.  To review the history of this feature in the Chromium open-source project, see Issues [761019](https://crbug.com/761019) and [1191465](https://crbug.com/1191465).
+DevTools now has better outline support for `.html` files.  In the **Sources** tool, open the `.html` file.  To turn on (or off) the code outline, press `Ctrl`+`Shift`+`O` on Windows/Linux or `Cmd`+`Shift`+`O` on macOS.  In the following figure, DevTools now correctly list all functions in the outline.  Previously, DevTools only displayed some of the functions.  To review the history of this feature in the Chromium open-source project, see Issues [761019](https://crbug.com/761019) and [1191465](https://crbug.com/1191465).
 
 :::image type="content" source="../../media/2021/04/sources-page-jobobbx-at.msft.png" alt-text=" Improved outline of HTML files." lightbox="../../media/2021/04/sources-page-jobobbx-at.msft.png":::
 

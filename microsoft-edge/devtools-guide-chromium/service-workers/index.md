@@ -13,13 +13,13 @@ This article explains improvements to developer tools for working with [service 
 
 The improvements to service workers simplify the following tasks:
 
-*   Debug based on Service Worker timelines.
-    *   The start of a request and duration of the bootstrap.
-    *   Update to Service worker registration.
-    *   The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
-    *   The runtime of all fetch events for loading a client.
-*   Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.
-*   Step into and out of fetch event handler with [page script information](#sources).
+*  Debug based on Service Worker timelines.
+    *  The start of a request and duration of the bootstrap.
+    *  Update to Service worker registration.
+    *  The runtime of a request using the [fetch event](https://developer.mozilla.org/docs/Web/API/FetchEvent) handler.
+    *  The runtime of all fetch events for loading a client.
+*  Explore the runtime details of fetch event handlers, install event handlers, and activate event handlers.
+*  Step into and out of fetch event handler with [page script information](#sources).
 
 The improved experiences span three different developer tools:
 

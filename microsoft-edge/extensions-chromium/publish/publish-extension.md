@@ -21,26 +21,34 @@ You should have a working prototype of your extension ready.  For information on
 
 To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, see [Developer registration](./create-dev-account.md).
 
-Create a zip file that represents your extension package.  Your extension package must include the following files.
+Create a zip file that represents your extension package.  Your extension package must include the following files:
 
-*   The extension manifest that specifies details like the name of the extension, short description, permissions, and default language.
-*   Images and other files required by your extension.
+*  The extension manifest that specifies details like the name of the extension, short description, permissions, and default language.
+
+*  Images and other files required by your extension.
 
 The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.  Make sure the field values match your preferred display on the store details webpage before you upload your package to Partner Center.  For an example of the code required for the manifest file, review the manifest file basics.
 
 *   `Name` field in the manifest file, which is the **Display name** on the store details webpage.
+
 *   `Description` field in the manifest file, which is the **Short description** on the store details webpage.  Provide a short, catchy description to display at the top of the listing for your extension.  If you include the short description in the extension manifest file, it displays in your store listing.  If you don't include a short description in the manifest file, the first few lines of `Description` display in your store listing.  Provide a brief description to avoid content repetition on your store listing webpage.
 
 
 <!-- ========================================================================== -->
 ## Submit your extension to the Microsoft Edge Add-ons website
 
-To submit your extension to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), do the following steps:
+To submit your extension to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd):
+
 1. Start a new submission.
+
 1. Upload the extension package.
+
 1. Provide Availability details.
+
 1. Select Properties for your extension.
+
 1. Add Store listing details for your extension.
+
 1. Complete your submission.
 
 Details about these steps are below.
@@ -69,22 +77,19 @@ On the **Availability** webpage, enter the following information about the avail
 
 Select one of the following visibility options to define whether your extension is discoverable in the Microsoft Edge Add-ons website.
 
-*   `Public` (default)
-    Public allows everyone to discover your extension through search, browsing in the Microsoft Edge Add-ons website, or using the listing URL to your extension in the Microsoft Edge Add-ons website.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** webpage.
-*   `Hidden`
-    Hidden removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
+*  `Public` (default) - Allows everyone to discover your extension through search, browsing in the Microsoft Edge Add-ons website, or using the listing URL to your extension in the Microsoft Edge Add-ons website.  The listing URL is available on your Partner Center dashboard on the Extension **Overview** webpage.
 
-> [!NOTE]
-> You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
+*  `Hidden` - Removes extensions from search results or browsing in the Microsoft Edge Add-ons website.  To distribute hidden extensions in the Microsoft Edge Add-ons website, you must share the listing URL to the extension with your customers.
+
+You can change the visibility of your extension from **Public** to **Hidden**.  Users who installed your extension while the visibility was set to public retain access to your extension and receive any updates you make available through the Microsoft Edge Add-ons website.
 
 ### Markets
 
 Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets and that includes any future markets that are added later.  To choose specific markets, select **Change markets**.  Toggle individual markets to exclude each one, or select **Unselect all** and then add individual markets of your choice.
 
-> [!NOTE]
-> You can change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user does not have access to any future updates submitted to the Microsoft Edge Add-ons website.
+You can change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
 
-Select **Save** to continue to the **Properties** section.
+Click **Save**, to continue to the **Properties** section.
 
 
 <!-- ========================================================================== -->

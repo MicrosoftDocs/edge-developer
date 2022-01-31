@@ -78,7 +78,7 @@ You can submit and seek browser extensions in the following browser stores.
 *   [Opera addons](https://addons.opera.com/extensions)
 *   [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions)
 
-Some stores allow you to download listed extensions from other browsers.  However, cross-browser access is not guaranteed by browser stores.  To make sure your users find your extension in different browsers, you should maintain a listing on each browser extension store.
+Some stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by browser stores.  To make sure your users find your extension in different browsers, you should maintain a listing on each browser extension store.
 
 Users might need to install your extension in different browsers. In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
@@ -102,7 +102,7 @@ To submit your extension to the store, you need to provide the following items:
 > [!NOTE]
 > Different stores might have different submission requirements.  The above list summarizes the [requirements](./publish/publish-extension.md) to publish an extension for Microsoft Edge.
 
-After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.
+After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners aren'tified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.
 
 
 <!-- ====================================================================== -->

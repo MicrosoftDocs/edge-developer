@@ -60,7 +60,7 @@ The **Authenticator** section includes a **Credentials** table.  The table is em
 <!-- ====================================================================== -->
 ## Register a new credential
 
-To register a new credential, complete the following steps.  For more information about what the [Web Authentication API](https://w3c.github.io/webauthn) is doing when registering a new credential, see [Create a New Credential](https://w3c.github.io/webauthn#sctn-createCredential).
+To register a new credential:
 
 1. On the demo website, click **Register new credential**.
 
@@ -69,6 +69,8 @@ To register a new credential, complete the following steps.  For more informatio
    :::image type="content" source="../media/webauthn-view-cred.msft.png" alt-text="View credentials." lightbox="../media/webauthn-view-cred.msft.png":::
 
 On the demo website, click the **Authenticate** button.  Verify that the [Sign Count](https://w3c.github.io/webauthn/#sctn-sign-counter) of the credential in the **Credentials** table increased by 1, which marks a successful [authenticatorGetAssertion](https://w3c.github.io/webauthn#authenticatorgetassertion) operation.
+
+For more information about what the [Web Authentication API](https://w3c.github.io/webauthn) is doing when registering a new credential, see [Create a New Credential](https://w3c.github.io/webauthn#sctn-createCredential).
 
 
 <!-- ====================================================================== -->
@@ -94,9 +96,9 @@ To rename an authenticator:
 <!-- ====================================================================== -->
 ## Set the active authenticator
 
-A newly created authenticator is automatically activated.  To use another virtual authenticator, choose the **Active** radio button next to the authenticator.
+A newly created authenticator is automatically activated.  To use another virtual authenticator, click the **Active** radio button next to the authenticator.
 
-DevTools supports only one active virtual authenticator at any point of time.  If you remove the active authenticator, another authenticator is not automatically activated.
+DevTools supports only one active virtual authenticator at any point of time.  If you remove the active authenticator, another authenticator isn't automatically activated.
 
 :::image type="content" source="../media/webauthn-set-active.msft.png" alt-text="Setting the active authenticator." lightbox="../media/webauthn-set-active.msft.png":::
 

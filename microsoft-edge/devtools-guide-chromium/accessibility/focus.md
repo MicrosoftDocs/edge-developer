@@ -26,15 +26,15 @@ Suppose that you're testing the keyboard navigation accessibility of a page.  Wh
 
 To track the focused element in DevTools:
 
-1.  Open the **Console**.
+1. Open the **Console**.
 
-1.  Click **Create live expression** (![Create live expression.](../media/create-live-expression-icon.msft.png)).
+1. Click **Create live expression** (![Create live expression.](../media/create-live-expression-icon.msft.png)).
 
-    :::image type="content" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression." lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+   :::image type="content" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression." lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
 
-1.  Type `document.activeElement`.
+1. Type `document.activeElement`.
 
-1.  Click outside of the **Live Expression** UI to save.
+1. Click outside of the **Live Expression** UI to save.
 
 The value displayed below `document.activeElement` is the result of the expression.
 

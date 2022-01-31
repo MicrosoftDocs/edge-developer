@@ -70,7 +70,7 @@ When a website is redirected from Internet Explorer to Microso
 *   If the active Internet Explorer tab had prior content, it navigates to the [Microsoft support page that explains why the website was redirected to Microsoft Edge](https://support.microsoft.com/office/the-website-you-were-trying-to-reach-doesn-t-work-with-internet-explorer-8f5fc675-cd47-414c-9535-12821ddfc554).
 
 > [!NOTE]
-> After a redirection, users may continue to use Internet Explorer for websites that are not on the Internet Explorer compatibility list.
+> After a redirection, users may continue to use Internet Explorer for websites that aren't on the Internet Explorer compatibility list.
 
 
 <!-- ====================================================================== -->

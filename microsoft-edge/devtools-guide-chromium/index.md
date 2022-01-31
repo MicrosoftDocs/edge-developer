@@ -411,12 +411,12 @@ In the **Settings** > **Preferences** page, you can change several parts of DevT
 ![Screenshot of all the settings in DevTools.](media/devtools-intro-all-settings.msft.png)
 
 You can also change the settings of advanced features, such as:
-*   Add local files to a [Workspace](./workspaces/index.md).
-*   Filter library code with the **Ignore List**.
-*   Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
-*   Select a network **Throttling** profile.
-*   Define simulated **Locations**.
-*   Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
+*  Add local files to a [Workspace](./workspaces/index.md).
+*  Filter library code with the **Ignore List**.
+*  Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
+*  Select a network **Throttling** profile.
+*  Define simulated **Locations**.
+*  Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
 ![Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code.](media/devtools-intro-match-keys.msft.png)
 

@@ -11,7 +11,7 @@ ms.date: 06/07/2021
 
 This article uses the **Inspect** tool and **Event Listeners** tab to analyze the lack of keyboard support on a demo page which has buttons that use the `div` element.
 
-On the **Donate** form, the amount buttons and **Donate** button doesn't work with a keyboard.  Debugging the donation form requires understanding why the lack of focus styling isn't flagged as a problem with automatic testing tools like the **Issues** tool.  In this example, the buttons are implemented using `div` elements, which are not recognized by these tools as a control on a form.
+On the **Donate** form, the amount buttons and **Donate** button doesn't work with a keyboard.  Debugging the donation form requires understanding why the lack of focus styling isn't flagged as a problem with automatic testing tools like the **Issues** tool.  In this example, the buttons are implemented using `div` elements, which aren't recognized by these tools as a control on a form.
 
 To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard support on the demo page:
 

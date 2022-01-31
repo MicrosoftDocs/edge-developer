@@ -17,15 +17,15 @@ The **Accessibility Tree** is a subset of the DOM tree, which contains elements 
 
 To explore using the Accessibility Tree:
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
 
-1.  Select the **Inspect** (![the Inspect icon.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1. Select the **Inspect** (![the Inspect icon.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
-1.  In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
+1. In the rendered webpage, in the **Donation** section, hover over the **100** button.  The **Inspect** tool overlay appears.
 
-1.  In the rendered webpage, select the **100** button.  In DevTools, the **Elements** tool is displayed.  The DOM tree shows the `div` element for the **100** button.  The **Styles** pane shows the CSS settings for the element.
+1. In the rendered webpage, select the **100** button.  In DevTools, the **Elements** tool is displayed.  The DOM tree shows the `div` element for the **100** button.  The **Styles** pane shows the CSS settings for the element.
 
-1.  To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded.
+1. To the right of the **Styles** tab, select the **Accessibility** tab.  The **Accessibility Tree** for the element is displayed, and is expanded.
 
 :::image type="content" source="../media/a11y-testing-accessibility-tree.msft.png" alt-text="Donation form button in the Accessibility Tree tool." lightbox="../media/a11y-testing-accessibility-tree.msft.png":::
 

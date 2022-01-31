@@ -45,7 +45,7 @@ Your extension must have a single purpose with narrow functionality.
 
 #### 1.1.2 Describe your extension
 
-All aspects of your extension should accurately describe the functions, features and any important limitations of your extension, including required or supported input devices.  The value proposition of your extension must be clear during the first run experience.  Your extension may not use a name or icon similar to that of other extensions, and must not claim to represent a company, government body, or other entity if you do not have permission to make that representation.
+All aspects of your extension should accurately describe the functions, features and any important limitations of your extension, including required or supported input devices.  The value proposition of your extension must be clear during the first run experience.  Your extension may not use a name or icon similar to that of other extensions, and must not claim to represent a company, government body, or other entity if you don't have permission to make that representation.
 
 #### 1.1.3 Functionality
 
@@ -65,7 +65,7 @@ Your extension must not negatively impact the performance or stability of Micros
 
 #### 1.1.7 Obfuscation
 
-Extensions with obfuscated code are not allowed.  This includes code within your extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.
+Extensions with obfuscated code aren't allowed.  This includes code within your extension package as well as any external code or resource fetched from the web.  You may be asked to refactor parts of your code if it is not reviewable.
 
 #### 1.1.8 Altering Browser Settings
 
@@ -166,7 +166,7 @@ Your extension must only request those permissions that are necessary for functi
 ### 1.7 Localization
 
 You should localize your extension for all languages that your extension claims to support.  The text of the description of your extension should be localized in each language that you declare.
-If your extension is localized such that some features are not available in a localized version, you must clearly state or display the limits of localization in your extension description. The experience provided by an Extension must be reasonably similar in all languages that it supports.
+If your extension is localized such that some features aren't available in a localized version, you must clearly state or display the limits of localization in your extension description. The experience provided by an Extension must be reasonably similar in all languages that it supports.
 
 ### 1.8 Financial Transactions
 
@@ -212,7 +212,7 @@ You must not include in a notification any information users may reasonably cons
 
 #### 1.9.4 Purpose of notifications
 
-Notifications sent from your extension must relate to that extension or to other extensions you publish in Microsoft Edge Add-ons store and must not include promotional messages of any kind that are not related to your extensions.
+Notifications sent from your extension must relate to that extension or to other extensions you publish in Microsoft Edge Add-ons store and must not include promotional messages of any kind that aren't related to your extensions.
 
 ### 1.10 Advertising Conduct and Content
 
@@ -252,8 +252,7 @@ The following policies apply to content and metadata (including publisher name, 
 
 ### 2.1 Content Requirements for Microsoft Edge Addon Catalog Listing
 
-Metadata and other content you submit to accompany your extension may not contain mature content.
-Submissions that do not meet Microsoft Edge Add-ons store listings requirements are rejected or promptly removed.
+Metadata and other content you submit to accompany your extension may not contain mature content.  Submissions that don't meet Microsoft Edge Add-ons store listings requirements are rejected or promptly removed.
 
 ### 2.2 Content Including Names, Logos, Original, and Third-party
 
@@ -317,7 +316,7 @@ Content that is offensive in any country/region to which your extension is targe
 
 #### 2.12.1 Mature Content
 
-When you submit your extension to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), you must indicate whether your extension displays content that should be marked "Mature".  When determining the rating for your extension, consider all the content in your app, including user generated content and ads, and to the content that your extension links.  If you indicate that your extension does not contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your extension, it must still adhere to all the content requirements of Microsoft Edge Add-ons Developer policies
+When you submit your extension to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd), you must indicate whether your extension displays content that should be marked "Mature".  When determining the rating for your extension, consider all the content in your app, including user generated content and ads, and to the content that your extension links.  If you indicate that your extension doesn't contain any "Mature" content, you are responsible for maintaining the accuracy of this rating.  Regardless of the rating given to your extension, it must still adhere to all the content requirements of Microsoft Edge Add-ons Developer policies
 
 #### 2.12.2 Ratings Change
 

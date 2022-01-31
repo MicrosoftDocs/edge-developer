@@ -72,7 +72,7 @@ This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-c
 
 1. Click the key-value pair that you want to delete.  DevTools highlights it blue to indicate that it is selected.
 
-1. Press the `Delete` key or choose **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
+1. Press `Delete` or click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
 
 
 <!-- ====================================================================== -->
@@ -86,7 +86,7 @@ This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-c
 <!-- ====================================================================== -->
 ## Interact with sessionStorage from the Console
 
-Since you may run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it's possible to interact with `sessionStorage` from the **Console**.
+Since you can run JavaScript in the **Console**, and since the **Console** has access to the JavaScript contexts of the page, it's possible to interact with `sessionStorage` from the **Console**.
 
 1. Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `sessionStorage` key-value pairs of a domain other than the page you are on.
 

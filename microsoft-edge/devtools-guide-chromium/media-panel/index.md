@@ -30,49 +30,49 @@ Use the **Media** tool in Microsoft Edge DevTools to view information and debug 
 
 The **Media** tool is the main place in DevTools for inspecting the media player of a webpage.
 
-1.  [Open DevTools](../open/index.md).
+1. [Open DevTools](../open/index.md).
 
-1.  To open the **Media** panel, choose **Customize and control DevTools** `...` > **More tools** > **Media**.
+1. To open the **Media** panel, select **Customize and control DevTools** `...` > **More tools** > **Media**.
 
-    :::image type="content" source="../media/media-panel-empty.msft.png" alt-text="Media panel." lightbox="../media/media-panel-empty.msft.png":::
+   :::image type="content" source="../media/media-panel-empty.msft.png" alt-text="Media panel." lightbox="../media/media-panel-empty.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## View media players information
 
-1.  Navigate to a webpage with a media player, such as the following webpage.
+1. Navigate to a webpage with a media player, such as the following webpage.
 
     [Maximizing productivity with the Edge Developer Tools](https://www.bing.com/videos/search?view=detail&mid=DE0BA14EC0E0D18C06C8DE0BA14EC0E0D18C06C8)
 
-1.  Under the **Players** menu, a media player is displayed.
+1. Under the **Players** menu, a media player is displayed.
 
-1.  Choose the player.  The **Properties** panel displays the properties of the media player.
+1. Click the player.  The **Properties** panel displays the properties of the media player.
 
-    :::image type="content" source="../media/media-panel-view.msft.png" alt-text="Media properties." lightbox="../media/media-panel-view.msft.png":::
+   :::image type="content" source="../media/media-panel-view.msft.png" alt-text="Media properties." lightbox="../media/media-panel-view.msft.png":::
 
-1.  To view all the media player events, choose the **Events** panel.
+1. To view all the media player events, click the **Events** panel.
 
-    :::image type="content" source="../media/media-panel-events.msft.png" alt-text="Media events." lightbox="../media/media-panel-events.msft.png":::
+   :::image type="content" source="../media/media-panel-events.msft.png" alt-text="Media events." lightbox="../media/media-panel-events.msft.png":::
 
-1.  To view the media player message logs, choose the **Messages** panel.  You may filter the messages by log level or string.
+1. To view the media player message logs, click the **Messages** panel.  You can filter the messages by log level or string.
 
-    :::image type="content" source="../media/media-panel-messages.msft.png" alt-text="Media messages." lightbox="../media/media-panel-messages.msft.png":::
+   :::image type="content" source="../media/media-panel-messages.msft.png" alt-text="Media messages." lightbox="../media/media-panel-messages.msft.png":::
 
-1.  On the **Timeline** panel, the media playback and buffer status is displayed live.
+1. On the **Timeline** panel, the media playback and buffer status is displayed live.
 
-    :::image type="content" source="../media/media-panel-timeline.msft.png" alt-text="Media timeline." lightbox="../media/media-panel-timeline.msft.png":::
+   :::image type="content" source="../media/media-panel-timeline.msft.png" alt-text="Media timeline." lightbox="../media/media-panel-timeline.msft.png":::
 
 ### Remote debugging
 
 View the media players information on an Android device from your Windows or macOS computer.
 
-1.  To set up remote debugging, see [Get started with remote debugging Android devices](../remote-debugging/index.md).
+1. To set up remote debugging, see [Get started with remote debugging Android devices](../remote-debugging/index.md).
 
-1.  View the media players information remotely.
+1. View the media players information remotely.
 
     <!-- TODO: recreate image using an Android device -->
     <!--
-    :::image type="content" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging." lightbox="../media/media-panel-remote-debug.msft.png":::
+   :::image type="content" source="../media/media-panel-remote-debug.msft.png" alt-text="Remote debugging." lightbox="../media/media-panel-remote-debug.msft.png":::
     -->
 
 
@@ -83,11 +83,11 @@ Sometimes you run more than one media player on a webpage, or use the same brows
 
 You can hide (or show) each media player, for an easier debugging experience:
 
-1.  Browse to several different video webpages using the same browser tab.
+1. Browse to several different video webpages using the same browser tab.
 
-1.  To hide media players:
-    *   To hide a single media player, right-click a media player, and then select **Hide player**.
-    *   To hide all of the other media players, right-click a media player, and then select **Hide all others**.
+1. To hide media players:
+    *  To hide a single media player, right-click a media player, and then select **Hide player**.
+    *  To hide all of the other media players, right-click a media player, and then select **Hide all others**.
 
 :::image type="content" source="../media/media-panel-hide-show.msft.png" alt-text="Hide media players." lightbox="../media/media-panel-hide-show.msft.png":::
 

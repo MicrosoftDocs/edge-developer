@@ -26,19 +26,19 @@ To see how your webpage renders and behaves when a browser doesn't have JavaScri
 
 To turn off JavaScript:
 
-1.  [Open DevTools](../open/index.md).
+1. [Open DevTools](../open/index.md).
 
-1.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
    :::image type="content" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu." lightbox="../media/javascript-console-command.msft.png":::
 
-1.  Start typing `javascript`, choose **Disable JavaScript**, and then select `Enter` to run the command.  JavaScript is now disabled.
+1. Start typing `javascript`, select **Disable JavaScript**, and then press `Enter` to run the command.  JavaScript is now disabled.
 
-    :::image type="content" source="../media/javascript-console-command-javascript.msft.png" alt-text="Choose Disable JavaScript in the Command Menu." lightbox="../media/javascript-console-command-javascript.msft.png":::
+   :::image type="content" source="../media/javascript-console-command-javascript.msft.png" alt-text="Select 'Disable JavaScript' in the Command Menu." lightbox="../media/javascript-console-command-javascript.msft.png":::
 
     The yellow warning icon next to **Sources** reminds you that JavaScript is disabled.
 
-    :::image type="content" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The warning icon next to Sources." lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
+   :::image type="content" source="../media/javascript-console-javascript-disabled-warning.msft.png" alt-text="The warning icon next to Sources." lightbox="../media/javascript-console-javascript-disabled-warning.msft.png":::
 
 JavaScript remains disabled in the tab for as long as you have DevTools open.
 

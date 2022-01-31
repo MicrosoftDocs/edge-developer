@@ -149,8 +149,8 @@ The **Grid overlays** section contains a list of grids that are present on the p
 
 To display the overlay grid for multiple grids, select the checkbox next to each name of the grid.  In the example, there are 2 grid overlays enabled, that are each represented with different colors:
 
-*   `main`
-*   `div.snack-box`
+*  `main`
+*  `div.snack-box`
 
 :::image type="content" source="../media/grid-grid-overlays.msft.png" alt-text="Enable overlay views of multiple grids." lightbox="../media/grid-grid-overlays.msft.png":::
 

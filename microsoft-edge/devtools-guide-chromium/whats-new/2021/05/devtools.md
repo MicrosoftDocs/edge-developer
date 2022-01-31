@@ -170,10 +170,10 @@ To review the history of this feature in the Chromium open-source project, see I
 
 The Console now supports redeclaration of `const` variables across separate REPL scripts (such as when you run a statement in the Console), in addition to the existing `let` and `class` redeclarations.  This support allows you to experiment with different declarations for `const` variables without refreshing the page.  Previously, DevTools threw a syntax error if you redeclared a `const` binding.
 
-Refer to the example below. `const` redeclaration is supported across separate REPL scripts (refer to variable `a`).  Note that the following scenarios are not supported, by design:
+Refer to the example below. `const` redeclaration is supported across separate REPL scripts (refer to variable `a`).  Note that the following scenarios aren't supported, by design:
 
-*  `const` redeclaration of page scripts is not allowed in REPL scripts.
-*  `const` redeclaration within the same REPL script is not allowed (refer to variable `b`).
+*  `const` redeclaration of page scripts isn't allowed in REPL scripts.
+*  `const` redeclaration within the same REPL script isn't allowed (refer to variable `b`).
 
 :::image type="content" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="Redeclaring a const variable is allowed in the console." lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
 

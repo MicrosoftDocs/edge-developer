@@ -42,9 +42,9 @@ After you complete the tutorial, your site should look like the following figure
 
 Follow this tutorial to better understand the following concepts and tasks:
 
-*   How to use CSS to style a web page.
-*   How to use Microsoft Edge DevTools to experiment with CSS.
-*   The difference between CSS and CSS frameworks.
+*  How to use CSS to style a web page.
+*  How to use Microsoft Edge DevTools to experiment with CSS.
+*  The difference between CSS and CSS frameworks.
 
 You're building a real website.
 
@@ -263,7 +263,7 @@ To add a declaration to an existing ruleset:
 
    :::image type="content" source="../media/beginners-css-add5.msft.png" alt-text="Type 'color'." lightbox="../media/beginners-css-add5.msft.png":::
 
-1. Type `magenta` and select `Enter`.  All of the text on the contact page is now magenta.
+1. Type `magenta` and press `Enter`.  All of the text on the contact page is now magenta.
 
    :::image type="content" source="../media/beginners-css-add6.msft.png" alt-text="Type 'magenta'." lightbox="../media/beginners-css-add6.msft.png":::
 
@@ -295,11 +295,11 @@ To add new rulesets in DevTools:
 
 1. Click the empty area between the brackets to add a new declaration.
 
-1. Type `background-color` for the declaration name and select `Enter`.
+1. Type `background-color` for the declaration name and press `Enter`.
 
    :::image type="content" source="../media/beginners-css-rule3.msft.png" alt-text="Type 'background-color'." lightbox="../media/beginners-css-rule3.msft.png":::
 
-1. Type `green` for the declaration value and select `Enter`.
+1. Type `green` for the declaration value and press `Enter`.
 
    :::image type="content" source="../media/beginners-css-rule4.msft.png" alt-text="Type 'green'." lightbox="../media/beginners-css-rule4.msft.png":::
 
@@ -365,9 +365,9 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
 
    Make sure you've created an external stylesheet. Your HTML isn't aware that it exists.
 
-1.  Open `index.html`.
+1. Open `index.html`.
 
-1.  Add `<link rel="stylesheet" href="style.css">` to your HTML.
+1. Add `<link rel="stylesheet" href="style.css">` to your HTML.
 
    ```html
    <head>
@@ -395,7 +395,7 @@ What if you wanted to style `index.html` the same way?  What if you had a large 
 <!-- ====================================================================== -->
 ## Use a CSS framework
 
-**CSS frameworks** are collections of styles built by other developers that make it easier to create attractive web sites.  Instead of defining styles yourself, a framework provides you a collection of styles that you are able to use on your page elements.
+**CSS frameworks** are collections of styles built by other developers that make it easier to create attractive web sites.  Instead of defining styles yourself, a framework provides you a collection of styles that you can use on your page elements.
 
 Add the Bootstrap CSS framework to your page, as follows:
 
@@ -497,11 +497,11 @@ Use other Bootstrap classes that are useful for aligning elements, as follows:
 
 Congratulations, you're done!
 
-*   The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
+*  The best way to get better at web development is to build more sites.  Don't worry about breaking stuff.  Just have fun and learn as much as possible along the way.
 
-*   To learn more about styling web pages, see [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
+*  To learn more about styling web pages, see [Introduction to CSS](https://developer.mozilla.org/docs/Learn/CSS/Introduction_to_CSS).
 
-*   To learn more about how to experiment with CSS in DevTools, see [Get started viewing and changing CSS](../css/index.md).
+*  To learn more about how to experiment with CSS in DevTools, see [Get started viewing and changing CSS](../css/index.md).
 
 
 <!-- ====================================================================== -->

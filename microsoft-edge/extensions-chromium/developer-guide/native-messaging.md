@@ -9,7 +9,7 @@ ms.date: 03/31/2021
 ---
 # Native messaging
 
-To communicate with a native Win32 app that's installed on a user's device, an extension uses the message-passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.  Extensions using native messaging are installed in Microsoft Edge similar to any other extension.  However, native apps are not installed or managed by Microsoft Edge.
+To communicate with a native Win32 app that's installed on a user's device, an extension uses the message-passing APIs.  The native app host sends and receives messages with extensions using standard input and standard output.  Extensions using native messaging are installed in Microsoft Edge similar to any other extension.  However, native apps aren't installed or managed by Microsoft Edge.
 
 To acquire the extension and native app host, there are two distribution models:
 
@@ -72,7 +72,7 @@ The host manifest file must be a valid JSON file that contains the following key
 | --- | --- |
 | `name` | Specifies the name of the native messaging host.  Clients pass the string to `runtime.connectNative` or `runtime.sendNativeMessage`.<br/>  The value must only contain lowercase alphanumeric characters, underscores, and dots.<br/> The value must not start or end with a dot, and a dot must not be followed by another dot. |
 | `description` | Describes the app. |
-| `path` | Specifies the path to the native messaging host binary.<br/> On Windows devices, you may use relative paths to the directory that contains the manifest file.<br/>  On macOS and Linux, the path must be absolute.<br/>  The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory (`C:\App\`). |
+| `path` | Specifies the path to the native messaging host binary.<br/> On Windows devices, you can use relative paths to the directory that contains the manifest file.<br/>  On macOS and Linux, the path must be absolute.<br/>  The host process starts with the current directory set to the directory that contains the host binary.  For example (Windows), if the parameter is set to `C:\App\nm_host.exe`, the binary is started using the current directory (`C:\App\`). |
 | `type` | Specifies the type of the interface used to communicate with the native messaging host.  The value instructs Microsoft Edge to use `stdin` and `stdout` to communicate with the host.  The only acceptable value is `stdio`. |
 | `allowed_origins` | Specifies the list of extensions that have access to the native messaging host.  To turn on your app to identify and communicate with an extension, in your native messaging host manifest file, set the following value:<br/> `"allowed_origins": ["chrome-extension://{microsoft_catalog_extension_id}"]`|
 
@@ -84,7 +84,7 @@ Sideload your extension to test native messaging with the host.  To sideload you
 1.  Navigate to `edge://extensions` page and verify your extension is listed.
 1.  Copy the key from `microsoft_catalog_extension_id` (ID) from the extension listing on the page.
 
-When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons website.  The extension ID of the published extension may differ from the ID used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.
+When you're ready to distribute your extension to users, publish your extension to the Microsoft Edge Add-ons website.  The extension ID of the published extension might differ from the ID that's used while sideloading your extension.  If the ID changed, update `allowed_origins` in the host manifest file with the ID of your published extension.
 
 
 <!-- ====================================================================== -->

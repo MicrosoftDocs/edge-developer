@@ -71,9 +71,9 @@ If you want Microsoft Edge to be in one language and your DevTools to remain in 
 
 :::image type="content" source="../../images/2020/01/localized-devtools.msft.png" alt-text="The DevTools in German." lightbox="../../images/2020/01/localized-devtools.msft.png":::
 
-**Console** messages are not localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
+**Console** messages aren't localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
 
-If you want to use the DevTools in a different language than the ones that are available, [tweet](https://twitter.com/intent/tweet?text=@EdgeDevTools) at us or choose the **Send Feedback** icon.
+If you want to use the DevTools in a different language than the ones that are available, [tweet](https://twitter.com/intent/tweet?text=@EdgeDevTools) at us or click the **Send Feedback** icon.
 
 Chromium issue [#941561](https://crbug.com/941561)
 
@@ -83,7 +83,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 
 :::image type="content" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="The Hints tool in the DevTools when the webhint browser extension is installed." lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
 
-[Try the webhint browser extension in Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee).  Once you install the extension, open the DevTools and choose the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io](https://webhint.io/docs/user-guide/extensions/extension-browser) to learn more.
+[Try the webhint browser extension in Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee).  Once you install the extension, open the DevTools and select the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io](https://webhint.io/docs/user-guide/extensions/extension-browser) to learn more.
 
 ### 3D View
 
@@ -91,7 +91,7 @@ Use the **3D View** to debug your web application by navigating through the [Doc
 
 :::image type="content" source="../../images/2020/01/3dview.msft.png" alt-text="The 3D View in the DevTools." lightbox="../../images/2020/01/3dview.msft.png":::
 
-To access the 3D View, select `Ctrl` + `Shift` + `P`, type in **3D View** and select **Show 3D View**.
+To access the 3D View, press `Ctrl`+`Shift`+`P` to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
 
 The Microsoft Edge team is working with the Chromium team on the UI and adding more functionality to the 3D View, so please use the **Send Feedback** icon!
 
@@ -153,14 +153,14 @@ After [enabling the Device Toolbar](../../../device-mode/index.md#simulate-a-mob
 
 :::image type="content" source="../../images/2020/01/motog4.msft.png" alt-text="Simulating a Moto G4 viewport." lightbox="../../images/2020/01/motog4.msft.png":::
 
-Choose [Show Device Frame](../../../device-mode/index.md#show-device-frame) to show the Moto G4 hardware around the viewport.
+Click [Show Device Frame](../../../device-mode/index.md#show-device-frame) to show the Moto G4 hardware around the viewport.
 
 :::image type="content" source="../../images/2020/01/motog4frame.msft.png" alt-text="Showing the Moto G4 hardware." lightbox="../../images/2020/01/motog4frame.msft.png":::
 
 Related features:
 
-*   Open the [Command Menu](../../../command-menu/index.md) and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).
-*   [Throttle the network and CPU](../../../device-mode/index.md#throttle-the-network-and-cpu) to more accurately simulate a mobile user's web browsing conditions.
+*  Open the [Command Menu](../../../command-menu/index.md) and run the `Capture screenshot` command to take a screenshot of the viewport that includes the Moto G4 hardware (after enabling **Show Device Frame**).
+* [Throttle the network and CPU](../../../device-mode/index.md#throttle-the-network-and-cpu) to more accurately simulate a mobile user's web browsing conditions.
 
 Chromium issue [#924693](https://crbug.com/924693)
 

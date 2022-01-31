@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 When you use the **Sources** tool to step through code, sometimes you pause on code that you don't recognize.  You're probably paused on code for one of the Microsoft Edge Extensions that you installed.  To avoid pausing on extension code:
 
-1.  In DevTools, in the upper right, click the **Settings** (![Settings icon.](../../media/settings-gear-icon-light-theme.png)) button.
+1. In DevTools, in the upper right, click the **Settings** (![Settings icon.](../../media/settings-gear-icon-light-theme.png)) button.
 
 1. In the **Settings** > **Library Code** page, select the **Mark content scripts as Library Code** checkbox.
 

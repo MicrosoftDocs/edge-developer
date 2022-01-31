@@ -17,7 +17,7 @@ To make it easier when working with typography, a visual **Font Editor** is now 
 *  The **Font Family** selector.
 *  The **CSS Properties** editor.
 
-Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.  For situations when specific fonts are not available on a user device, you should provide fallback font options.
+Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.  For situations when specific fonts aren't available on a user device, you should provide fallback font options.
 
 CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  Several CSS properties are available to control the font size, spacing, line height, and other typographical features.
 
@@ -43,7 +43,7 @@ The **Font Editor** open on top of the **Styles** pane with the **Font Family** 
 
 :::image type="content" source="../media/font-editor-font-family.msft.png" alt-text="The Font Editor open on top of the Styles pane with the Font Family selector highlighted." lightbox="../media/font-editor-font-family.msft.png":::
 
-Use the **Font Family** dropdown to choose from a list of fonts.  Fonts are organized into four groups:
+Use the **Font Family** dropdown to select a font.  Fonts are organized into four groups:
 
 *  **Computed fonts**, which are the fonts available in the stylesheet in the **Styles** pane.
 *  **System fonts**, which are the fonts that are available on the current operating system.
@@ -59,7 +59,7 @@ After you select a font, another dropdown menu is displayed for you to select fa
 <!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::-->
 
 > [!NOTE]
-> If you select a global value for font family, you do not get another dropdown, since there is no fallback for it in CSS.
+> If you select a global value for font family, you don't get another dropdown, since there is no fallback for it in CSS.
 
 
 <!-- ====================================================================== -->

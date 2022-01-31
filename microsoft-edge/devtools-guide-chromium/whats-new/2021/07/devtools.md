@@ -120,8 +120,10 @@ Previously, when using CSS-in-JS libraries, you were not able to copy CSS declar
 
 Now in Microsoft Edge version 93, you can copy a single CSS declaration or all the declarations in a style rule and paste them directly into a JavaScript file without having syntax issues. To try this feature:
 
-1. In the **Styles** pane of the **Elements** tool, open the contextual menu (right-click) on a declaration in a style rule.
+1. In the **Styles** pane of the **Elements** tool, right-click a declaration in a style rule.
+
 1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
+
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
 :::image type="content" source="../../media/2021/07/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands" lightbox="../../media/2021/07/copy-declaration-as-js.msft.png":::

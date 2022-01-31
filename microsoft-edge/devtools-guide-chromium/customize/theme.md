@@ -52,11 +52,11 @@ Dark themes:
 <!-- ====================================================================== -->
 ## Changing the color theme from Settings
 
-1.  Open DevTools, and then select **Settings** (the gear icon).
+1. Open DevTools, and then select **Settings** (the gear icon).
 
-    :::image type="content" source="./media/setting-button.png" alt-text="The Settings (gear) icon" lightbox="./media/setting-button.png":::
+   :::image type="content" source="./media/setting-button.png" alt-text="The Settings (gear) icon" lightbox="./media/setting-button.png":::
 
-1.  Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.
+1. Select **Preferences**, and then in the **Appearance** section, select a theme from the **Theme** dropdown list.
 
 :::image type="content" source="./media/customize-theme-setting.png" alt-text="Selecting a theme in Preferences." lightbox="./media/customize-theme-setting.png":::
 

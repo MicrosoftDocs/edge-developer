@@ -68,9 +68,9 @@ To set a line-of-code breakpoint:
 
 1. Click the area to the left of the line number for the line of code.  Or, right-click the line number and then select **Add breakpoint**.  A red circle then appears next to the line number, indicating a breakpoint.
 
-    :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
+   :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
 
-Line-of-code breakpoints may be inefficient to set, especially if you do not know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  See [Pause your code with breakpoints](./breakpoints.md).
+Line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  See [Pause your code with breakpoints](./breakpoints.md).
 
 
 <!-- ====================================================================== -->
@@ -239,7 +239,7 @@ Click an entry to jump to the line of code where that function was called.  The 
 ### Copy stack trace
 
 <!--
-This should be moved to an "Export debug data" H2 section when there is enough content for that, but there is not right now, so it is here.
+This should be moved to an "Export debug data" H2 section when there is enough content for that, but there isn't right now, so it is here.
 -->
 
 To copy the current call stack to the clipboard, right-click the **Call Stack** pane, and then select **Copy stack trace**.
@@ -260,7 +260,7 @@ onClick (get-started.js:15)
 
 Mark a script as Library code when you want to ignore that script while debugging.  When marked as Library code, a script is obscured in the **Call Stack** pane, and you never step into the functions of the script when you step through your code.
 
-For example, in the following code snippet, line `A` uses `lib`, which is a third-party library.  If you are confident that the problem you are debugging is not related to that third-party library, then it makes sense to mark the script as **Library code**.
+For example, in the following code snippet, line `A` uses `lib`, which is a third-party library.  If you are confident that the problem you are debugging isn't related to that third-party library, then it makes sense to mark the script as **Library code**.
 
 ```javascript
 function animate() {
@@ -278,7 +278,7 @@ To mark a script as **Library code** from the **Editor** pane:
 
 1. Right-click anywhere in the file and then select **Add script to ignore list** (previously shown as **Mark as Library code**).
 
-    :::image type="content" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Marking a script as Library code from the Editor pane." lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
+   :::image type="content" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png" alt-text="Marking a script as Library code from the Editor pane." lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-editor-mark-as-library-code.msft.png":::
 
 ### Mark a script as Library code from the Call Stack pane
 
@@ -286,7 +286,7 @@ To mark a script as **Library code** from the **Call Stack** pane:
 
 *  Right-click a function in the script and then select **Add script to ignore list** (previously shown as **Mark as Library code**).
 
-    :::image type="content" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Marking a script as Library code from the Call Stack pane." lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
+   :::image type="content" source="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png" alt-text="Marking a script as Library code from the Call Stack pane." lightbox="../media/javascript-glitch-debug-js-sources-get-started-inputs-are-empty-call-stack-mark-as-library-code.msft.png":::
 
 ### Mark a script as Library code from Settings
 
@@ -302,7 +302,7 @@ To mark a single script or pattern of scripts from **Settings**:
 
 1. Click **Add**.
 
-    :::image type="content" source="../media/javascript-framework-library-code.msft.png" alt-text="Marking a script as Library code from Settings." lightbox="../media/javascript-framework-library-code.msft.png":::
+   :::image type="content" source="../media/javascript-framework-library-code.msft.png" alt-text="Marking a script as Library code from Settings." lightbox="../media/javascript-framework-library-code.msft.png":::
 
 
 <!-- ====================================================================== -->

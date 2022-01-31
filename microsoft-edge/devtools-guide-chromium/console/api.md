@@ -25,7 +25,20 @@ ms.date: 05/04/2021
 # Console API reference
 -->
 
-The `console` object has methods that are helpful for various tasks in DevTools.  You can use `Console` object methods in your scripts or enter them in the **Console** tool.
+Use the `console` object's methods to write messages to the **Console** from your JavaScript.
+
+You can also enter these methods into the **Console**.  For example, in the **Console**, to enter a `console` method that takes a variable:
+
+1. In the **Sources** tool, in the Debugger, set a breakpoint in your JavaScript code.
+
+1. In the Debugger, step through your code.
+
+1. When you are in a valid context so that the desired variable is in-scope, enter a method of the `console` object into the **Console** tool.  The result is displayed in the **Console**.
+
+* See [Get started with logging messages to the Console](console-log.md) for an interactive introduction.
+* See [Console tool utility functions and selectors](utilities.md) if you're looking for the **Console** tool methods such as `debug(function)` or `monitorEvents(node)` which are only available from the **Console**.
+* [MDN Web Docs > `console` object Reference](https://developer.mozilla.org/en-US/docs/Web/API/Console) - has a summary overview of the methods, and has one page per method, with additional syntax details.
+
 
 ---
 
@@ -68,7 +81,7 @@ console.clear()
 
 ### See also
 
-*   [Clear the Console](reference.md#clear-the-console)
+* [Clear the Console](reference.md#clear-the-console)
 
 ---
 
@@ -433,8 +446,8 @@ console.warn('warn');
 ## See also
 
 <!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
-* [MDN Web Docs > `console` object Reference](https://developer.mozilla.org/en-US/docs/Web/API/Console).
-* [Get started with logging messages to the Console](console-log.md)
+* [MDN Web Docs > `console` object Reference](https://developer.mozilla.org/en-US/docs/Web/API/Console) - Has a summary overview of the methods, and has one page per method, with additional syntax details.
+* [Get started with logging messages to the Console](console-log.md) - An interactive introduction.
 * [Console tool utility functions and selectors](utilities.md) - **Console**-only utility methods, such as `debug()` and `monitorEvents()`.
 
 

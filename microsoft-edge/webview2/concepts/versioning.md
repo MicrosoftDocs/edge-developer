@@ -72,7 +72,7 @@ You can update your WebView2 app to use the latest APIs from the most recent rel
 The WebView2 APIs in an SDK _release_ package are stable and forward-compatible.  A WebView2 API works when using a WebView2 Runtime that has an equal or higher build number as the SDK build number in which the API was introduced.  The build number is the third part of the four-part version number for the Webview2 SDK, and of the four-part version number for Microsoft Edge and the WebView2 Runtime.
 
 *  When you use a WebView2 SDK that has a build number _equal to or less than_ the WebView2 Runtime, every API that you have access to in that SDK works with that version of the Runtime.
-*  When you use a WebView2 SDK that has a build number _greater than_ the WebView2 Runtime, the newer APIs' implementations are not available in the Runtime.
+*  When you use a WebView2 SDK that has a build number _greater than_ the WebView2 Runtime, the newer APIs' implementations aren't available in the Runtime.
 
 <!-- create diagram showing 3 SDK releases on a timeline, which ones would work w/ a given runtime -->
 For example, if an API is introduced in SDK 1.0.**900**.0, that API would work with Runtime 94.0.**900+**.0, but not with Runtime 90.0.**700**.0.
@@ -86,12 +86,12 @@ For full support for the latest APIs in a release version of the SDK, the Runtim
 <!-- ====================================================================== -->
 ## Experimental APIs
 
-The experimental APIs in a WebView2 SDK _prerelease_ package are not guaranteed to be forward-compatible and might be removed in future Runtime updates.
+The experimental APIs in a WebView2 SDK _prerelease_ package aren't guaranteed to be forward-compatible and might be removed in future Runtime updates.
 When a _prerelease_ version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  Soon after that, the prerelease SDK also works with the Beta and Dev channels.
 Use a prerelease SDK to try out new APIs early and provide feedback before the new APIs are promoted to become stable, forward-compatible APIs.
 
 For full support of experimental APIs, use a Microsoft Edge preview channel, not the WebView2 Evergreen Runtime.
-Any experimental APIs that are in a prerelease SDK are not guaranteed to be forward-compatible.
+Any experimental APIs that are in a prerelease SDK aren't guaranteed to be forward-compatible.
 The APIs that are in an SDK _release_ version are forward-compatible.  For more information, see [Forward compatibility of APIs](#forward-compatibility-of-apis) above.
 
 The WebView2 team is seeking feedback on experimental WebView2 APIs that might be promoted to Stable in future releases.
@@ -120,7 +120,7 @@ To check the compatibility between specific build numbers of the SDK and the Run
 
 <!-- this is the main section about QI; other articles should have a couple paragraphs only, and link to here -->
 
-If your app uses the Evergreen Runtime rather than Fixed Version, you should wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.  There are edge cases where a client's Evergreen Runtime is not the latest build and therefore falls behind the SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline.
+If your app uses the Evergreen Runtime rather than Fixed Version, you should wrap any calls to relatively new WebView2 APIs by using `QueryInterface` or `try-catch`.  There are edge cases where a client's Evergreen Runtime isn't the latest build and therefore falls behind the SDK build number, because the Admin might have turned off updating of the WebView2 Runtime, or the client might be offline.
 
 When you develop a WebView2 app using a recent version of the WebView2 SDK, if you use a recently added API, you should test or "feature-detect" whether that API is present in the client's installed WebView2 Runtime.  How your app programmatically tests for API support depends on the coding platform.
 

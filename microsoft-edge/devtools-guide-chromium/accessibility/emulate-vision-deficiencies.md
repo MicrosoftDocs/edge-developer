@@ -19,7 +19,7 @@ To better meet the needs of your users with [color vision deficiency](https://ww
 | Tritanopia | The user is unable to perceive any blue light. |
 | Achromatopsia | The user is unable to perceive any color, which reduces all color to a shade of grey. |
 
-The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools are not a full accessibility assessment of your product.  Instead, the **Emulate vision deficiencies** tools should give you a good first step to avoid problems.
+The **Emulate vision deficiencies** tools simulate approximations of how a person with each deficiency may see your product.  Each person is different, therefore vision deficiencies vary in severity from person to person.  To better meet the needs of your users, avoid any color combination that may be an issue.  The **Emulate vision deficiencies** tools don't provide a full accessibility assessment of your product, but provide a good first step to avoid problems.
 
 
 <!-- ====================================================================== -->
@@ -27,21 +27,22 @@ The **Emulate vision deficiencies** tools simulate approximations of how a perso
 
 To simulate how a person with a vision deficiency would see your web page, open the [Rendering Tools](../rendering-tools/index.md).
 
-1.  Click **Customize and control DevTools** (`...`) in the toolbar.
-1.  Go to **More tools** > **Rendering** to open the **Rendering** panel in the drawer.
+1. Click **Customize and control DevTools** (`...`) in the toolbar.
 
-    > [!div class="mx-imgBorder"]
-    > ![Opening the Rendering panel from the More tools menu.](../media/getting-to-the-rendering-tools.msft.png)
+1. Go to **More tools** > **Rendering** to open the **Rendering** panel in the drawer.
 
-1.  Scroll down to the **Emulate vision deficiencies** section, click the **No emulation** drop-down and choose one of the options.
+   > [!div class="mx-imgBorder"]
+   > ![Opening the Rendering panel from the More tools menu.](../media/getting-to-the-rendering-tools.msft.png)
 
-    > [!div class="mx-imgBorder"]
-    > ![The Emulate vision deficiencies section in the Rendering panel.](../media/accessibility-emulate-vision-menu-options.msft.png)
+1. Scroll down to the **Emulate vision deficiencies** section, click the **No emulation** drop-down and select an option.
 
-1.  The browser window simulates the chosen vision deficiency on the current page.
+   > [!div class="mx-imgBorder"]
+   > ![The Emulate vision deficiencies section in the Rendering panel.](../media/accessibility-emulate-vision-menu-options.msft.png)
 
-    > [!div class="mx-imgBorder"]
-    > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency.](../media/accessibility-blurred-vision-emulation.msft.png)
+1. The browser window simulates the chosen vision deficiency on the current page.
+
+   > [!div class="mx-imgBorder"]
+   > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency.](../media/accessibility-blurred-vision-emulation.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -49,12 +50,12 @@ To simulate how a person with a vision deficiency would see your web page, open 
 
 As an alternative approach, you can use the **Command Menu** to access the different simulations.
 
-1.  Press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-1.  Type `emulate`, then choose the type of vision deficiency you want to simulate, and press `Enter`.
+1. Type `emulate`, select the type of vision deficiency you want to simulate, and then press `Enter`.
 
-    > [!div class="mx-imgBorder"]
-    > ![The command menu showing the different types of vision deficiencies.](../media/accessibility-emulation-command-menu-results.msft.png)
+   > [!div class="mx-imgBorder"]
+   > ![The command menu showing the different types of vision deficiencies.](../media/accessibility-emulation-command-menu-results.msft.png)
 
 
 <!-- ====================================================================== -->

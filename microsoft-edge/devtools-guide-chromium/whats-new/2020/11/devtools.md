@@ -47,20 +47,20 @@ If you are using a Linux environment in your continuous integration and delivery
 
 An open-source tool, [webhint](https://webhint.io), provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85](../06/devtools.md#webhint-feedback-in-the-issues-panel), review webhint feedback in the [Issues](../../../issues/index.md) tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.
 
-*   [Accessibility](https://webhint.io/docs/user-guide/hints/accessibility)
-*   [Compatibility](https://webhint.io/docs/user-guide/hints/compatibility)
-*   [Performance](https://webhint.io/docs/user-guide/hints/performance)
-*   [Pitfalls](https://webhint.io/docs/user-guide/hints/pitfalls)
-*   [PWA](https://webhint.io/docs/user-guide/hints/pwa)
-*   [Security](https://webhint.io/docs/user-guide/hints/security)
+* [Accessibility](https://webhint.io/docs/user-guide/hints/accessibility)
+* [Compatibility](https://webhint.io/docs/user-guide/hints/compatibility)
+* [Performance](https://webhint.io/docs/user-guide/hints/performance)
+* [Pitfalls](https://webhint.io/docs/user-guide/hints/pitfalls)
+* [PWA](https://webhint.io/docs/user-guide/hints/pwa)
+* [Security](https://webhint.io/docs/user-guide/hints/security)
 
 You are now able to filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.
 
 To help you review issues revealed by [webhint](https://webhint.io), the **Issues** tool now displays the following information.
 
-*   Improved code snippets.
-*   Links to other relevant panels.
-*   Links to documentation to help you fix problems in your website.
+*  Improved code snippets.
+*  Links to other relevant panels.
+*  Links to documentation to help you fix problems in your website.
 
 :::image type="content" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Issues tool." lightbox="../../media/2020/11/issues-webhints.msft.png":::
 
@@ -73,7 +73,7 @@ To help you review issues revealed by [webhint](https://webhint.io), the **Issue
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-You may now visualize **Layers** content alongside z-index values and the Document Object Model (DOM).  This feature helps you debug without switching between the [3D view](../../../3d-view/index.md) and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined](../../../3d-view/index.md).
+You can now visualize **Layers** content alongside z-index values and the Document Object Model (DOM).  This feature helps you debug without switching between the [3D view](../../../3d-view/index.md) and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined](../../../3d-view/index.md).
 
 :::image type="content" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane." lightbox="../../media/2020/11/experiments-layers.msft.png":::
 
@@ -82,12 +82,12 @@ You may now visualize **Layers** content alongside z-index values and the Docume
 ## CSS variable definitions in Styles pane
 
 <!-- Title: Jump to CSS variable definitions  -->
-<!-- Subtitle: Choose any CSS variable to navigate directly to the definition in the Styles tool. -->
+<!-- Subtitle: Click any CSS variable to navigate directly to the definition in the Styles tool. -->
 
-In the **Styles** pane, [CSS variables](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) now link directly to each definition.  Choose the variable to easily view or change the CSS variable definition.  In the example, DevTools displays the CSS attributes for the `body` element.  To display the variable definition for the `--theme-body-background` CSS variable:
+In the **Styles** pane, [CSS variables](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) now link directly to each definition.  Click the variable to easily view or change the CSS variable definition.  In the example, DevTools displays the CSS attributes for the `body` element.  To display the variable definition for the `--theme-body-background` CSS variable:
 
-1.  In the **Styles** pane, choose `var(--theme-body-background)`.
-1.  The **Styles** pane now displays the definition of the `--theme-body-background` CSS variable.
+1. In the **Styles** pane, click `var(--theme-body-background)`.
+1. The **Styles** pane now displays the definition of the `--theme-body-background` CSS variable.
 
 A CSS variable linked to the style:
 
@@ -115,7 +115,7 @@ Request routing displays the `startup` and `fetch` events based on the network r
 
 View all service worker request routing information with the new **Network requests** link.  To display additional context when debugging the service worker:
 
-1.  Navigate to **Application** > **Service Workers**.
+1. Navigate to **Application** > **Service Workers**.
 
 1. Select **Network requests**.
 
@@ -123,20 +123,20 @@ View all service worker request routing information with the new **Network reque
 
 1. The **Network** tool opens in the **drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`.
 
-    :::image type="content" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="The Network tool in the Drawer." lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+   :::image type="content" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="The Network tool in the Drawer." lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
 
 1. To return the **Network** tool to the top panel, close the **Drawer**.
 
-    :::image type="content" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Close the Drawer to return the Network tool to the main toolbar." lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+   :::image type="content" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Close the Drawer to return the Network tool to the main toolbar." lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
 
 ### Network tool
 
-Debug network requests that run through service workers.  You may also open network requests from the **Application** tool.  For each request, DevTools display the following information in the [Timing](../../../network/reference.md#display-the-timing-breakdown-of-a-request) pane.
+Debug network requests that run through service workers.  You can also open network requests from the **Application** tool.  For each request, DevTools display the following information in the [Timing](../../../network/reference.md#display-the-timing-breakdown-of-a-request) pane.
 
-*   The start of a request and duration of the bootstrap.
-*   Changes to service worker registration.
-*   The runtime of a `fetch` event handler.
-*   The runtime of all `fetch` events for loading a client.
+*  The start of a request and duration of the bootstrap.
+*  Changes to service worker registration.
+*  The runtime of a `fetch` event handler.
+*  The runtime of all `fetch` events for loading a client.
 
 :::image type="content" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Timing pane." lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
 
@@ -158,13 +158,13 @@ The `(index)` webpage is the request initiator:
 <!-- ====================================================================== -->
 ## Copy property value of a network request
 
-<!-- Title: Copy response JSON in Network tool using the contextual menu  -->
-<!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the contextual menu.  -->
+<!-- Title: Copy response JSON in Network tool using the right-click menu  -->
+<!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the right-click menu.  -->
 
 In the **Network** tool, copy the property value of a network request using the new **Copy value** option.  The property value is copied as a decoded JSON value.  In previous versions of Microsoft Edge, you had to copy a value using one of the following actions.
 
-*   Highlight the entire text and copy it.
-*   Store the value as global variable, as applicable, and copy it from the DevTools [Console](../../../console/index.md).
+*  Highlight the entire text and copy it.
+*  Store the value as global variable, as applicable, and copy it from the DevTools [Console](../../../console/index.md).
 
 To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard).  To review the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
 
@@ -185,9 +185,9 @@ Pasting a property value in Microsoft Visual Studio Code:
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-[Since Microsoft Edge version 87](../10/devtools.md#customize-keyboard-shortcuts-in-settings), you may customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you may now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, see [Settings](../../../customize/index.md#settings) > **Experiments**  and choose the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, see [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
+[Since Microsoft Edge version 87](../10/devtools.md#customize-keyboard-shortcuts-in-settings), you can customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you can now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, see [Settings](../../../customize/index.md#settings) > **Experiments**  and select the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, see [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
 
-For example, the red highlight displays a multi-press keyboard shortcut customized for the **Start recording events** action.  To review real-time updates on this feature in the Chromium open-source project, see [Issue #174309](https://crbug.com/174309).
+For example, the red highlight displays a multi-press keyboard shortcut customized for the **Start recording events** action.  For real-time updates on this feature in the Chromium open-source project, see [Issue #174309](https://crbug.com/174309).
 
 :::image type="content" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts." lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
 
@@ -219,11 +219,11 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ### Simulate storage quota size in the Storage pane
 
-You may now override storage quota size in the **Storage** pane.  This feature allows you to simulate different devices and test the behavior of your website or app in low disk availability scenarios.  To simulate the storage quota:
+You can now override storage quota size in the **Storage** pane.  This feature allows you to simulate different devices and test the behavior of your website or app in low disk availability scenarios.  To simulate the storage quota:
 
-1.  Navigate to **Application** > **Storage**.
-1.  Turn on the **Simulate custom storage quota** checkbox.
-1.  Enter a valid number.
+1. Navigate to **Application** > **Storage**.
+1. Turn on the **Simulate custom storage quota** checkbox.
+1. Enter a valid number.
 
 For more information about how to emulate mobile devices, and about other DevTools features, see [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md).  To see updates on this feature in the Chromium open-source project, see Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
@@ -231,7 +231,7 @@ For more information about how to emulate mobile devices, and about other DevToo
 
 ### Report CORS errors in the Network tool
 
-Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.  To review real-time updates on this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
+Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.  For real-time updates on this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
 :::image type="content" source="../../media/2020/11/cors-err.msft.png" alt-text="CORS errors." lightbox="../../media/2020/11/cors-err.msft.png":::
 
@@ -239,7 +239,7 @@ Try out this feature by navigating to [CORS error demo](https://cors-errors.glit
 
 #### Cross-origin isolation information in the Frame details view
 
-The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers may be shared using `postMessage()`.  A deprecation warning displays if the SAB and `postMessage()` is currently available, but the context is not cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, see [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).  To review real-time updates of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
+The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers can be shared using `postMessage()`.  A deprecation warning displays if the SAB and `postMessage()` is currently available, but the context isn't cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, see [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).  To review real-time updates of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
 
 :::image type="content" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Cross-origin information." lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
 
@@ -247,12 +247,12 @@ The cross-origin isolated status is now displayed under the **Security & Isolati
 
 DevTools now organizes web workers under the relevant parent frame.  For example, if the `someName` frame creates `worker.js`, then `worker.js` appears under `someName` in the **Frames** list.  To view the details of the web worker:
 
-1.  Open **Application** tool.
-1.  Expand a frame that contains web workers.
-1.  Expand the **Workers** tree.
+1. Open **Application** tool.
+1. Expand a frame that contains web workers.
+1. Expand the **Workers** tree.
 1. Click a worker.
 
-To review real-time updates on this feature in the Chromium open-source project, see Issues [1122507](https://crbug.com/1122507) and [1051466](https://crbug.com/1051466).
+For real-time updates on this feature in the Chromium open-source project, see Issues [1122507](https://crbug.com/1122507) and [1051466](https://crbug.com/1051466).
 
 :::image type="content" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web workers information." lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
 
@@ -262,15 +262,15 @@ DevTools now organizes opened [Windows](https://developer.mozilla.org/docs/Web/A
 
 To reveal the frame responsible for opening another Window in the **Elements** tool:
 
-1.  Open the **Frames** tree.
-1.  Expand **Opened Windows** and choose the `Window` for the parent frame you want to know.
-1.  Click the **Opener Frame** link.
+1. Open the **Frames** tree.
+1. Expand **Opened Windows** and click the `Window` for the parent frame you want to know about.
+1. Click the **Opener Frame** link.
 
 The details are displayed about which frame caused the opening of another `Window`.  To reveal the opener in the **Elements** tool:
 
-1.  Open the **Frames** tree.
-1.  Click an opened window to open the `Window` details.
-1.  Click the **Opener Frame** link.
+1. Open the **Frames** tree.
+1. Click an opened window to open the `Window` details.
+1. Click the **Opener Frame** link.
 
 To review the history of this feature in the Chromium open-source project, see Issue [1107766](https://crbug.com/1107766).
 
@@ -286,7 +286,7 @@ To review the history of this feature in the Chromium open-source project, see I
 
 ### Preview Wasm variable value on mouseover
 
-Use this feature to review the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  To review real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
+Use this feature to review the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
 
 :::image type="content" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Preview Wasm variable on mouseover." lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
 
@@ -294,8 +294,8 @@ Use this feature to review the value of a WebAssembly (Wasm) variable when your 
 
 DevTools now consistently use `kB` for displaying sizes of files and memory.  Previously DevTools mixed `kB` and `KiB`.
 
-*   `kB` or kilobyte (10^3 or 1000 bytes)
-*   `KiB` or kibibyte (2^10 or 1024 bytes)
+*  `kB` or kilobyte (10^3 or 1000 bytes)
+*  `KiB` or kibibyte (2^10 or 1024 bytes)
 
 For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.  To review the history of this feature in the Chromium open-source project, see Issue [1035309](https://crbug.com/1035309).
 

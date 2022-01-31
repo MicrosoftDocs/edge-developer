@@ -37,29 +37,29 @@ You can test the order of page elements by using the **Source Order Viewer** in 
 
 To turn on the Source Order Viewer:
 
-1.  In DevTools, in the upper right, select the **Settings** (![Settings button.](../media/settings-button-icon.msft.png)) button.
+1. In DevTools, in the upper right, select the **Settings** (![Settings button.](../media/settings-button-icon.msft.png)) button.
 
-1.  Below **Settings**, select **Experiments**.
+1. Below **Settings**, select **Experiments**.
 
-1.  Select the **Source Order Viewer** checkbox.
+1. Select the **Source Order Viewer** checkbox.
 
-1.  In the upper-right corner of the **Settings** page, select **X** to close the Settings page.  At the top of DevTools, the message **One or more settings have changed which require a reload to take effect.** is displayed.  Select the **Reload DevTools** button.
+1. In the upper-right corner of the **Settings** page, click **X** to close the Settings page.  At the top of DevTools, the message **One or more settings have changed which require a reload to take effect.** is displayed.  Click the **Reload DevTools** button.
 
 ### Activating and using the Source Order Viewer
 
 To activate and use the Source Order Viewer, with the demo page:
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
 
-1.  In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
+1. In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 
-1.  In the **Source Order Viewer** section, select the **Show source order** checkbox.  In the rendered webpage, numbers appear, indicating the `Tab` order as controlled by the order of lines of code in the source file.
+1. In the **Source Order Viewer** section, select the **Show source order** checkbox.  In the rendered webpage, numbers appear, indicating the `Tab` order as controlled by the order of lines of code in the source file.
 
-1.  In the DOM tree in the **Elements** tool, select a major layout element, such as the `header` element.  Numeric overlays are now displayed on sections of the rendered page, which indicate the source order of the different elements.
+1. In the DOM tree in the **Elements** tool, select a major layout element, such as the `header` element.  Numeric overlays are now displayed on sections of the rendered page, which indicate the source order of the different elements.
 
-    :::image type="content" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page." lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+   :::image type="content" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page." lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
 
-1.  Scroll the page to see all of the numeric overlays, including on the page footer section.
+1. Scroll the page to see all of the numeric overlays, including on the page footer section.
 
 
 <!-- ====================================================================== -->

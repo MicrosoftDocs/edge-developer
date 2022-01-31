@@ -27,7 +27,7 @@ To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent 
 
 1. In the upper right, in the **Match shortcuts from preset** dropdown, select **Visual Studio Code** instead of **DevTools (Default)**.
 
-    :::image type="content" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Matching keyboard shortcuts in DevTools to Visual Studio Code." lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
+   :::image type="content" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Matching keyboard shortcuts in DevTools to Visual Studio Code." lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
 
 For example, to pause or continue running a script in Visual Studio Code, you select `F5`.  But with the **DevTools (Default)** preset, to pause or continue running a script, you press `F8`.  When you change the preset to **Visual Studio Code**, you now also press `F5` in DevTools, just like in Visual Studio Code.
 
@@ -50,19 +50,19 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 1. Click the **Edit** (![EditKeyboardShortcut.](../media/edit-keyboard-shortcut-icon.msft.png)) icon.
 
-    :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in Settings." lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
+   :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in Settings." lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
 
-1.  To bind the shortcut keys to the action, ensure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind the shortcut keys to the action, ensure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
 
-1.  To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
 
-    :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+   :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
 
-1.  To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut.](../media/checkmark-keyboard-shortcut-icon.msft.png)) icon.
+1. To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut.](../media/checkmark-keyboard-shortcut-icon.msft.png)) icon.
 
-    :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Select the checkmark icon to save your new keyboard shortcut." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
+   :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png" alt-text="Select the checkmark icon to save your new keyboard shortcut." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
 
-1.  Select your new keyboard shortcut to trigger the action in DevTools.
+1. Select your new keyboard shortcut to trigger the action in DevTools.
 
 
 ### Icons and buttons

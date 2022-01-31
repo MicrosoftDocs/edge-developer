@@ -1,6 +1,6 @@
 ---
 title: Use Allocation instrumentation on timeline
-description: Use Allocation instrumentation on timeline to find objects that are not being properly garbage collected, and continue to retain memory.
+description: Use Allocation instrumentation on timeline to find objects that aren't being properly garbage collected, and continue to retain memory.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -25,7 +25,7 @@ ms.date: 05/04/2021
 <!-- title in other repo:
 How to Use the Allocation Profiler Tool -->
 
-In the **Memory** tool, use the **Allocation instrumentation on timeline** radio button to find objects that are not being properly garbage-collected, and continue to retain memory.
+In the **Memory** tool, use the **Allocation instrumentation on timeline** radio button to find objects that aren't being properly garbage-collected, and continue to retain memory.
 
 
 <!-- ====================================================================== -->
@@ -71,14 +71,14 @@ The height of each bar corresponds to the size of the recently allocated objects
 
 :::image type="content" source="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png" alt-text="Allocation instrumentation on timeline snapshot." lightbox="../media/memory-problems-memory-allocation-timelines-snapshot.msft.png":::
 
-<!--In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem.  -->
-<!--todo: redo figure 4 with multiple choose actions  -->
+<!-- In the following figure, an action was performed 3 times.  The sample program caches five objects, so the last five blue bars are expected.  But the left-most blue bar indicates a potential problem. -->
+<!-- todo: redo figure 4 with multiple click actions -->
 
-You are able to use the sliders in the timeline above to zoom into that particular snapshot and review the objects that were recently allocated at that point:
+You can use the sliders in the timeline above to zoom into that particular snapshot and review the objects that were recently allocated at that point:
 
 :::image type="content" source="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png" alt-text="Zoom into snapshot." lightbox="../media/memory-problems-memory-allocation-timeline-snapshot-highlighted-annotated.msft.png":::
 
-Choosing on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.
+Clicking on a specific object in the heap shows the retaining tree in the bottom portion of the heap snapshot.  Examining the retaining path to the object should give you enough information to understand why the object was not collected, and you should make the necessary code changes to remove the unnecessary reference.
 
 
 <!-- ====================================================================== -->
