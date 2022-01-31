@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge Add-ons API Reference (under development)
+title: Microsoft Edge Add-ons API Reference (in private preview)
 description: The Add-ons API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,10 +7,10 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/19/2021
 ---
-# Microsoft Edge Add-ons API Reference (under development)
+# Microsoft Edge Add-ons API Reference (in private preview)
 
 > [!NOTE]
-> This article is a Request for Comments.  The Microsoft Edge Add-ons API is not yet available for testing, and the Publish APIs page is not yet available at Partner Center.  The Microsoft Edge Add-ons API is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here are not exhaustive and are subject to change.
+> The Microsoft Edge Add-ons API is currently in private preview.  The **Publish API** page is present at Partner Center only for participants of the private preview.  The Microsoft Edge Add-ons API is under active development, and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive, and are subject to change.
 
 This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
