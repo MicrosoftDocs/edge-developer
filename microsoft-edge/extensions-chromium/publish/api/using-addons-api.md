@@ -44,15 +44,15 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
 1. In the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes.
 
-   :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="The Publish API page at the Microsoft Partner Center showing the Create API credentials button." lightbox="../../media/create-api-credentials-button.png":::
+   :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL." lightbox="../../media/create-api-credentials-button.png":::
 
    <!-- make window smaller before capture.  make fresh capture.  save .png in present repo as ../media/create-api-credentials-button.png, replacing path in parens -->
 
-   The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client Secret**, and **Auth Token URL** are now displayed on the Publish APIs page.
+   The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret**, **Expiry date**, and **Access token URL** are now displayed on the Publish APIs page.
 
    <!-- possibly add a screenshot here, with fake data with the correct number of characters, or value strings blurred out or erased -->
 
-1. Write down the **Client ID**, **Client Secret** and the **Auth Token URL**.  You'll use these values in the next step, to get an access token.
+1. Write down the **Client ID**, **Client secret** and the **Access token URL**.  You'll use these values in the next step, to get an access token.
 
 > [!IMPORTANT]
 > Be sure to write down the client secret now, because it's only visible immediately after enabling or renewing the API (that is, after creating API credentials).
@@ -65,7 +65,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 > The Microsoft Edge Add-ons API is not yet available for testing.
 
 
-After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Auth Token URL.  The tenant information is available in the URL that you received in the **Before you begin** steps above.
+After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
 ```rest
 Endpoint: https://login.microsoftonline.com/msedgeaddonsapi.onmicrosoft.com/oauth2/v2.0/token
