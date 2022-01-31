@@ -715,9 +715,9 @@
                   href: extensions-chromium/store-policies/developer-policies.md
             - name: Microsoft Edge Add-ons API
               items:
-                - name: Using the Add-ons API
+                - name: Using the Microsoft Edge Add-ons API (in private preview)
                   href: extensions-chromium/publish/api/using-addons-api.md
-                - name: Add-ons API Reference
+                - name: Microsoft Edge Add-ons API Reference (in private preview)
                   href: extensions-chromium/publish/api/addons-api-reference.md
         - name: Extensions for enterprise
           items:
