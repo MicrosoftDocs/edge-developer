@@ -123,7 +123,19 @@ Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
 
-`$productID` is the product ID of the Microsoft Edge Add-on that you want to update. To get the product ID, sign in to Microsoft Partner Center. Go to **Microsoft Edge** > **Overview**, and then select the extension of the product ID you need.  The extension overview page opens.  The product ID key is available in the **Extension Identity** section.
+`$productID` is the product ID of the Microsoft Edge Add-on that you want to update. 
+
+To get the product ID:
+
+1. Sign in to Microsoft Partner Center.
+
+1. Go to **Microsoft Edge** > **Overview**.
+
+1. Select the extension for which you want the product ID.
+
+   The **Extension overview** page opens.  The product ID is shown in the page.  (The product ID is also shown as the GUID in the URL in the Address bar, between `microsoftedge/` and `/packages`.)
+ 
+1. In the **Extension identity** section (or from the Address bar), select and copy the **Product ID**.
 
 ### Sample request
 
@@ -131,7 +143,7 @@ Body content: the package file to upload
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -H "Content-Type: application/zip" \
--X PUT \
+-X POST \
 -T $FILE_NAME \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/draft/package
