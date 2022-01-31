@@ -115,7 +115,7 @@ Body content: the package file to upload
 
 To get the product ID:
 
-1. Login to Microsoft Partner Center.
+1. Sign in to Microsoft Partner Center.
 1. Navigate to **Microsoft Edge > Overview**.
 
 1. Select the extension for which you want the product ID.
