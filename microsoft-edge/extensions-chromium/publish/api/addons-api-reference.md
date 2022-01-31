@@ -14,7 +14,7 @@ ms.date: 08/19/2021
 
 This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
-For an overview, see [Using the Microsoft Edge Add-ons API](using-addons-api.md).
+For an overview, see [Using the Microsoft Edge Add-ons API (in private preview)](using-addons-api.md).
 
 <!-- ====================================================================== -->
 ## Upload a package to update an existing submission
@@ -388,4 +388,4 @@ Here are a list of common error codes and possible reasons.  For a full list, se
 <!-- ====================================================================== -->
 ## See also
 
-*  [Using the Microsoft Edge Add-ons API](using-addons-api.md)
+*  [Using the Microsoft Edge Add-ons API (in private preview)](using-addons-api.md)
