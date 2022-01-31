@@ -272,7 +272,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
-#### Response where any of module(s) are invalid
+#### Response where any of the modules are invalid
 
 ```json
 {
