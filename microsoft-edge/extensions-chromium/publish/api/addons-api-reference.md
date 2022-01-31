@@ -290,7 +290,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
-#### Response when there are validation error(s) in submission
+#### Response when there are validation errors in submission
 
 ```json
 {
