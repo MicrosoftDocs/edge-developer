@@ -59,6 +59,10 @@ This API has the following expected status codes.
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
 
+### See also
+
+*  Introduction: [Uploading a package to update an existing submission](using-addons-api.md#uploading-a-package-to-update-an-existing-submission)
+
 
 <!-- ====================================================================== -->
 ## Check the status of a package upload
@@ -145,6 +149,10 @@ This API has the following expected status codes.
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
 
+### See also
+
+*  Introduction: [Checking the status of a package upload](using-addons-api.md#checking-the-status-of-a-package-upload)
+
 
 <!-- ====================================================================== -->
 ## Publish the product draft submission
@@ -187,6 +195,10 @@ This API has the following expected status codes.
 | 202 | The request is accepted for processing, but the processing isn't complete. |
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
+
+### See also
+
+*  Introduction: [Publishing the submission](using-addons-api.md#publishing-the-submission)
 
 
 <!-- ====================================================================== -->
@@ -331,6 +343,10 @@ This API has the following expected status codes.
 | 200 | The request is OK. |
 | 4XX | See [Error codes](#error-codes). |
 | 5XX | See [Error codes](#error-codes). |
+
+### See also
+
+*  Introduction: [Checking the publishing status](using-addons-api.md#checking-the-publishing-status)
 
 
 <!-- ====================================================================== -->
