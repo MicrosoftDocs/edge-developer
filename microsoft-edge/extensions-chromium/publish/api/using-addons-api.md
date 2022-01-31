@@ -117,7 +117,8 @@ To get the product ID:
 
 1. Login to Microsoft Partner Center.
 1. Navigate to **Microsoft Edge > Overview**.
-1. Select the extension you want the product ID for.
+
+1. Select the extension for which you want the product ID.
 
    The extension overview page opens.  The GUID in the URL is the product ID.
 
