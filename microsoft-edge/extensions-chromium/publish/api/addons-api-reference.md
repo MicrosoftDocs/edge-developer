@@ -258,7 +258,7 @@ A `GET` operation status API can be called in the following scenarios.  In all v
 }
 ```
 
-#### Response when there is an ongoing unpublish submission for the same product
+#### Response when there is an ongoing unpublished submission for the same product
 
 ```json
 {
