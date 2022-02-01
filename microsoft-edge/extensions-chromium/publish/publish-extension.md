@@ -23,21 +23,29 @@ To publish your extension to the Microsoft Edge Add-ons website, use your active
 
 Create a zip file that represents your extension package.  Your extension package must include the following files:
 
-*  The extension manifest that specifies details like the name of the extension, short description, permissions, and default language.
+*  The extension manifest that specifies details such as the name of the extension, short description, permissions, and default language.
 
 *  Images and other files required by your extension.
 
-The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.  Make sure the field values match your preferred display on the store details webpage before you upload your package to Partner Center.  For an example of the code required for the manifest file, review the manifest file basics.
+The following fields in the manifest are automatically included in your store listing details.  The fields are read-only on the **Store listings** webpage.  The store listings webpage is described later in this article.  Before uploading your package to Partner Center, make sure that the field values match your preferred display on the store details webpage, as follows.
 
-*   `Name` field in the manifest file, which is the **Display name** on the store details webpage.
+In the manifest file, review these fields:
 
-*   `Description` field in the manifest file, which is the **Short description** on the store details webpage.  Provide a short, catchy description to display at the top of the listing for your extension.  If you include the short description in the extension manifest file, it displays in your store listing.  If you don't include a short description in the manifest file, the first few lines of `Description` display in your store listing.  Provide a brief description to avoid content repetition on your store listing webpage.
+*  The `Name` field, which populates the **Display name** on the store details webpage.
+
+*  The `Description` field, which populates the **Short description** on the store details webpage.<!--todo: confirm "description" vs "short description" in manifest vs. store page-->
+   
+   Fill in the `Description` field, to explicitly provide a catchy description that will be displayed at the top of the listing for your extension.
+
+   *  If you include a `short description` in the extension manifest file, that short description is displayed in your store listing.
+
+   *  If you don't include a `short description` in the manifest file, the first few lines of the `Description` are displayed in your store listing.  We recommend providing a `short description`, to avoid content repetition on your store listing webpage.
 
 
 <!-- ========================================================================== -->
 ## Submit your extension to the Microsoft Edge Add-ons website
 
-To submit your extension to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd):
+To submit your extension to Partner Center:
 
 1. Start a new submission.
 
@@ -139,23 +147,29 @@ The information provided in the following section is displayed to users who revi
 
 Make sure your video meets the following requirements.
 
-*   Verify that the content of the YouTube video follows the [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md).
-*   Turn off advertisements on your video.  For more information, see [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
-*   Turn on embedding for your videos.  For more information, see [Embed videos & playlists](https://support.google.com/youtube/answer/171780).
+*  Verify that the content of the YouTube video follows the [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md).
 
-To submit the YouTube video URL of your video, complete the following steps.
+*  Turn off advertisements on your video.  For more information, see [Set your default ad formats](https://support.google.com/youtube/answer/2531367?ref_topic=7072227) and [Ads on embedded videos](https://support.google.com/youtube/answer/132596).
 
-1.  On YouTube, locate the video that you want to add to your store listing webpage.
-1.  Under the video, select **Share** > **Embed**.
-1.  Copy the HTML code that is displayed.
-1.  On the store listing details webpage, paste the HTML code in the `YouTube video URL` field.
+*  Turn on embedding for your videos.  For more information, see [Embed videos & playlists](https://support.google.com/youtube/answer/171780).
+
+To submit the YouTube video URL of your video:
+
+1. On YouTube, locate the video that you want to add to your store listing webpage.
+
+1. Under the video, select **Share** > **Embed**.
+
+1. Copy the HTML code that is displayed.
+
+1. On the store listing details webpage, paste the HTML code in the `YouTube video URL` field.
 
 ### Search terms requirements
 
-Search terms must meet the following requirements.
+Search terms must meet the following requirements:
 
-*   You can enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you're only allowed a maximum of 21 words.
-*   Up to a maximum of seven search terms:  single word or phrases.  Each search term has a character limit of 30 characters.
+*  You can enter search terms to use up to a maximum of 21 words.  Whether used as single words, phrases, or a combination of both, you're only allowed a maximum of 21 words.
+
+*  Up to a maximum of seven search terms:  single word or phrases.  Each search term has a character limit of 30 characters.
 
 
 <!-- ========================================================================== -->
@@ -167,12 +181,16 @@ On the **Submit your extension** webpage, add notes for certification to help te
 
 When you submit your extension, use the **Notes for certification** webpage to provide additional information to the certification testers.  The additional information helps ensure that your extension is tested correctly.  If your extension isn't fully tested, it might fail certification.
 
-Make sure you include the following information, as necessary.
+Make sure you include the following information, as necessary:
 
 *   User names and passwords for test accounts.
+
 *   Steps to access hidden or locked features.
+
 *   Expected differences in functionality based on region or other user settings.
+
 *   If your submission is an update to an existing extension, include information about the changes made to the extension.
+
 *   Any additional information that testers must understand about your submission.
 
 After you provide the information, select **Publish** to submit your extension to the Microsoft Edge Add-ons website.  Your submission proceeds to the certification step.  The certification process can take up to seven business days after your submission.

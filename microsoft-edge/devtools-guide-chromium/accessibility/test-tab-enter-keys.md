@@ -16,7 +16,7 @@ You can test the usability of a webpage for keyboard users in several ways:
 *  Check for keyboard support for an individual element by using the **Inspect** tool.  The Inspect tool's information overlay includes an **Accessibility** section that includes a **Keyboard-focusable** row.
 *  Check the **Issues** report's **Accessibility** section for keyboard support issues.
 
-To check the demo page for accessibility issues by using a keyboard rather than a mouse, perform the following steps:
+To check the demo page for accessibility issues by using a keyboard rather than a mouse:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
 

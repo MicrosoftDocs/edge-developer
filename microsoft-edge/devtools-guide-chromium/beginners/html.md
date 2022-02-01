@@ -194,7 +194,9 @@ This workflow is only suitable for experimenting with content changes. If you re
 <!-- ====================================================================== -->
 ## Reorder nodes
 
-You can also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom.  To move the navigation menu to the top:
+You can also change the order of DOM nodes. For example, on your web page the navigation menu is near the bottom.
+
+Move the navigation menu to the top:
 
 1. Find the `<nav>` node in the **DOM Tree** of DevTools.
 
@@ -206,7 +208,7 @@ You can also change the order of DOM nodes. For example, on your web page the na
 
 ### Delete a node
 
-You can also remove nodes from the DOM Tree. Perform the following steps.
+Remove a node from the DOM Tree:
 
 1. In the **DOM Tree**, select `<div>A new element!?!</div>`. DevTools highlights the node.
 
@@ -270,7 +272,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
 
 *  Read [Introduction to the DOM](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) to learn more about the DOM.
 
-*  Check out a course like [Introduction to Web Development](https://www.coursera.org/learn/web-development) for more hands-on web development experience.
+*  Check out a course such as [Introduction to Web Development](https://www.coursera.org/learn/web-development), to gain additional hands-on experience with web development.
 
 
 <!-- ====================================================================== -->

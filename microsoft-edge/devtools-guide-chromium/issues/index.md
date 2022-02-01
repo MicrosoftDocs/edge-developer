@@ -83,24 +83,30 @@ The **Issues** tool presents additional documentation and recommended fixes to a
    :::image type="content" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool, displaying additional information on how to fix the issue." lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
 
 Each displayed issue has the following components:
+
 *  A headline describing the issue.
+
 *  A description providing more context and proposed solutions.
+
 *  An **AFFECTED RESOURCES** section that links to resources in DevTools, such as the **Elements**, **Sources**, or **Network** tool.
+
 *  Links to further documentation.
 
 
 <!-- ====================================================================== -->
 ## View issues in context of an associated tool
 
-An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool. You can open one of these tools to perform additional troubleshooting steps. To open a linked tool from the **Issues** tool, perform the following steps.
+An issue in the **Issues** tool may include one or more links that open different tools, such as the **Elements**, **Sources**, or **Network** tool. You can open one of these tools to perform additional troubleshooting steps.
+
+To open a linked tool from the **Issues** tool:
 
 1. As described in the previous section, open the demo page and then expand an issue in the **Issues** tool.
 
-1. In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool.
+1. In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool:
 
    :::image type="content" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool, to open an affected resource from within the Issues tool." lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
 
-    An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool.
+    An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool:
 
    :::image type="content" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link." lightbox="../media/issues-tab-view-issue.msft.png":::
 
@@ -110,7 +116,7 @@ An issue in the **Issues** tool may include one or more links that open differen
 
 If an element has an associated issue, the DOM tree in the **Elements** tool shows a wavy underline under the element name.  Right-click the element and then select **View issues**.  Or, press and hold `Shift` and then click the element with the wavy underline.
 
-To display an issue for elements with wavy underlines in the DOM tree, perform the following steps.
+To display an issue for elements with wavy underlines in the DOM tree:
 
 1. Open a page, such as the [accessibility testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
 

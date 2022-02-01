@@ -18,7 +18,7 @@ Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs) is an integrate
 
 If you aren't already using Visual Studio, go to [Download Visual Studio](https://visualstudio.microsoft.com/downloads) to download it.
 
-Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP.NET Framework and ASP.NET Core apps.  Complete the following steps to use Visual Studio to debug Microsoft Edge.
+Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP.NET Framework and ASP.NET Core apps. To use Visual Studio to debug Microsoft Edge, do the following steps.
 
 
 <!-- ====================================================================== -->

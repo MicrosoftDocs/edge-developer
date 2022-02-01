@@ -13,8 +13,6 @@ ms.date: 06/07/2021
 
 Check text color contrast in the default state by using the **Inspect** tool.  The **Inspect** tool's information overlay on the webpage has an **Accessibility** section that includes **Contrast** information.
 
-To check text-color contrast in the default state using the Inspect tool's information overlay, perform the following steps.
-
 <!-- Inspect tool -->
 For elements that have text, the **Inspect** tool's information overlay shows the following:
 *  The contrast ratio of text versus background colors.

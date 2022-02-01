@@ -33,7 +33,9 @@ The green **Dogs** list item in the **Donation status** section doesn't have eno
 <!-- ====================================================================== -->
 ## Hovering when the Inspect tool is active doesn't show the text-color contrast for the hover state
 
-The **Inspect** tool's information overlay only represents a single state.  Elements on the page can have different states, all of which need to be tested.  For example, when you hover the mouse pointer over the menu of the accessibility-testing demo page, you get an animation that changes the colors. Perform the following steps.
+The **Inspect** tool's information overlay only represents a single state.  Elements on the page can have different states, all of which need to be tested.  For example, when you hover the mouse pointer over the menu of the accessibility-testing demo page, you get an animation that changes the colors.
+
+To view the animations:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.
 
@@ -43,7 +45,7 @@ The **Inspect** tool's information overlay only represents a single state.  Elem
 
 Now, use the Inspect tool. When the Inspect tool is used, animations on the menu items won't run when you hover over them.  When using the Inspect tool, you can't reach the `hover` state on menu items to test the contrast ratio, because the `hover` state in your styles isn't triggered.
 
-To confirm that your animations don't run, perform the following steps.
+To confirm that your animations don't run:
 
 1. Select the **Inspect** (![the Inspect button.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 

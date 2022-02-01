@@ -27,11 +27,13 @@ The **Accessibility** tab is where you view the accessibility tree, ARIA attribu
 
 To open the **Accessibility** tab:
 
-1. Select the **Elements** tool.
+1. In a rendered webpage, right-click an element and then select **Inspect**.
 
-1. In the **DOM Tree**, select the element which you want to inspect.
+   DevTools opens, with the **Elements** tool selected.  The DOM tree opens to show the element that you right-clicked.
 
-1. Select the **Accessibility** tab.  You might need to first select the **More tabs** (![the More tabs button.](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
+1. In the **DOM Tree**, click the element that you want to inspect.  You can use the arrow keys to move through the DOM tree.
+
+1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button.](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
 
 :::image type="content" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility tab." lightbox="../media/accessibility-elements-accessibility.msft.png":::
 

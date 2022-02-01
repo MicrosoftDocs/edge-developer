@@ -31,11 +31,11 @@ You can use Lighthouse from within DevTools to audit the accessibility of a page
 
 The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
 
-To audit a page using the Lighthouse tool, perform the following steps.
+To audit a page using the Lighthouse tool:
 
 1. Go to the URL that you want to audit.
 
-1. In DevTools, select the **Lighthouse** tool.  Configuration options are displayed.
+1. In DevTools, select the **Lighthouse** tool.  Configuration options are displayed:
 
    :::image type="content" source="../media/accessibility-lighthouse.msft.png" alt-text="Lighthouse configuration options." lightbox="../media/accessibility-lighthouse.msft.png":::
 
@@ -43,7 +43,7 @@ To audit a page using the Lighthouse tool, perform the following steps.
 
 1. In the **Categories** section, select **Accessibility**.
 
-1. Click **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page.
+1. Click **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page:
 
    :::image type="content" source="../media/accessibility-lighthouse-result.msft.png" alt-text="A Lighthouse report for the Accessibility category." lightbox="../media/accessibility-lighthouse-result.msft.png":::
 
@@ -51,7 +51,7 @@ To audit a page using the Lighthouse tool, perform the following steps.
 
    :::image type="content" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="An expanded issue in a Lighthouse report." lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
 
-1. Click the **Learn more** link to view the documentation of the issue.
+1. Click the **Learn more** link to view the documentation of the issue:
 
    :::image type="content" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an issue." lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
 
