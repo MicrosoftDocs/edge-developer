@@ -69,7 +69,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 
 These articles or article sections walk you through using this demo page:
 
-* [The basic approach to using a debugger](../sources/index.md#the-basic-approach-to-using-a-debugger/index.md) in _Sources tool overview_.  This article section briefly walks you through the steps to use the JavaScript debugger in the **Sources** tool, to find the bug in the demo page.  To fix the bug, you convert the input strings to numbers before adding them.
+* [The basic approach to using a debugger](../sources/index.md#the-basic-approach-to-using-a-debugger) in _Sources tool overview_.  This article section briefly walks you through the steps to use the JavaScript debugger in the **Sources** tool, to find the bug in the demo page.  To fix the bug, you convert the input strings to numbers before adding them.
 
 * [Get started debugging JavaScript](../javascript/index.md) - A more in-depth walkthrough of using the demo page along with the debugger, demonstrating various features of the debugger, and setting different kinds of breakpoints.
 
