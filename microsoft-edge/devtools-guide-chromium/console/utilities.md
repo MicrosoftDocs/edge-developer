@@ -57,7 +57,7 @@ These commands only work by entering them directly into the DevTools **Console**
 | [profile([name])](#profile) | Starts a JavaScript CPU profiling session with an optional name. |
 | [profileEnd([name])](#profileend) | Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool. |
 | [queryObjects(Constructor)](#queryobjects) | Returns an array of the objects that were created by the specified constructor. |
-| [table(data[, columns])](#table) | Logs object data with table formatting based upon the data object in with optional column headings. |
+| [table(data[, columns])](#table) | Logs object data, formatted as a table with column headings, for the specified data object. |
 | [undebug(function)](#undebug) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
 | [unmonitor(function)](#unmonitor) | Stops the monitoring of the specified function. |
 | [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
@@ -80,13 +80,11 @@ $_
 
 ### Example
 
-In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value.
+In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value:
 
 :::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ is the most recently evaluated expression." lightbox="../media/console-arithmatic.msft.png":::
 
-In the following figure, the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` becomes the latest evaluated expression, `4`.
-
-`$_` changes when new commands are evaluated:
+In the following figure, the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` now becomes the latest evaluated expression, `4`:
 
 :::image type="content" source="../media/console-array-length.msft.png" alt-text="$_ changes when new commands are evaluated." lightbox="../media/console-array-length.msft.png":::
 
@@ -148,19 +146,27 @@ In the following figure, `$('img')` returns a reference to the first `<img>` ele
 
 Right-click the returned result and then select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.
 
+### Example
+
 The following example returns a reference to the currently selected element and displays its `src` property:
 
 ```javascript
 $('img').src
 ```
 
+Result:
+
 :::image type="content" source="../media/console-element-selector-image-source.msft.png" alt-text="The result of $('img').src." lightbox="../media/console-element-selector-image-source.msft.png":::
 
 This function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
-In the following figure, the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned.
+### Example
 
-The result of `$('img', document.querySelector('title--image')).src`:
+```javascript
+$('img', document.querySelector('title--image')).src
+```
+
+Result: the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned:
 
 :::image type="content" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="The result of $('img', document.querySelector('title--image')).src." lightbox="../media/console-element-selector-image-filter-source.msft.png":::
 
@@ -198,11 +204,13 @@ for (each in images) {
 }
 ```
 
-Using `$$()` to select all images in the webpage and display the sources:
+The following image shows the result of using `$$()` to select all images in the webpage and display the sources:
 
 :::image type="content" source="../media/console-element-selector-image-all.msft.png" alt-text="Using $$() to select all images in the webpage and display the sources." lightbox="../media/console-element-selector-image-all.msft.png":::
 
 This function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
+
+### Example
 
 The following, modified version of the previous example uses `$$()` to create an array of all `<img>` elements that appear in the current webpage after the selected node:
 
@@ -213,7 +221,7 @@ for (each in images) {
 }
 ```
 
-Using `$$()` to select all images that appear after the specified `<div>` element in the webpage and display the sources:
+Here's the result of using `$$()` to select all images that appear after the specified `<div>` element in the webpage and display the sources:
 
 :::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources." lightbox="../media/console-element-selector-image-filter-all.msft.png":::
 
@@ -241,29 +249,29 @@ $x(path, [startNode])
 
 ### Example
 
-In the following code sample and figure, all of the `<p>` elements on the webpage are returned.
+In the following example, all of the `<p>` elements on the webpage are returned:
 
 ```javascript
 $x("//p")
 ```
 
-Using an XPath selector:
+Result:
 
 :::image type="content" source="../media/console-array-xpath.msft.png" alt-text="Using an XPath selector." lightbox="../media/console-array-xpath.msft.png":::
 
-In the following code sample and figure, all of the `<p>` elements that contain `<a>` elements are returned.
+### Example
+
+In the following example, all of the `<p>` elements that contain `<a>` elements are returned:
 
 ```javascript
 $x("//p[a]")
 ```
 
-Using a more complicated XPath selector:
+Result:
 
 :::image type="content" source="../media/console-array-xpath-sub-element.msft.png" alt-text="Using a more complicated XPath selector." lightbox="../media/console-array-xpath-sub-element.msft.png":::
 
-Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements.
-
-Using an XPath selector with `startNode`:
+Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements:
 
 :::image type="content" source="../media/console-array-xpath-startnode.msft.png" alt-text="Using an XPath selector with startNode." lightbox="../media/console-array-xpath-startnode.msft.png":::
 
@@ -342,6 +350,8 @@ debug(function)
 debug("debug");
 ```
 
+Result:
+
 :::image type="content" source="../media/console-debug-text.msft.png" alt-text="Breaking inside a function with debug()." lightbox="../media/console-debug-text.msft.png":::
 
 Use `undebug(function)` to stop breaking on the function, or use the UI to turn off all breakpoints.
@@ -371,12 +381,14 @@ Evaluate `document.head` in the **Console** to display the HTML between the `<he
 
 ### Example
 
-In the following code sample and figure, an object-style listing is displayed after using `console.dir()` in the **Console**.
+In the following example, an object-style listing is displayed after using `console.dir()` in the **Console**:
 
 ```javascript
 document.head;
 dir(document.head);
 ```
+
+Result:
 
 :::image type="content" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Logging 'document.head' with the 'dir()' function." lightbox="../media/console-dir-document-head-expanded.msft.png":::
 
@@ -423,7 +435,7 @@ inspect(object/function)
 
 ### Example
 
-In the following code sample and figure, the `document.body` opens in the **Elements** tool.
+In the following example, the `document.body` opens in the **Elements** tool:
 
 ### Example
 
@@ -431,7 +443,7 @@ In the following code sample and figure, the `document.body` opens in the **Elem
 inspect(document.body);
 ```
 
-Inspecting an element with `inspect()`:
+Result:
 
 :::image type="content" source="../media/console-inspect-document-body.msft.png" alt-text="Inspecting an element with inspect()." lightbox="../media/console-inspect-document-body.msft.png":::
 
@@ -458,11 +470,13 @@ getEventListeners(object)
 
 ### Example
 
-In the following code and figure, all of the event listeners registered on the `document` object are listed.
+In the following example, all of the event listeners that are registered on the `document` object are listed:
 
 ```javascript
 getEventListeners(document);
 ```
+
+Result:
 
 :::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="Output of using getEventListeners(document)." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
 
@@ -495,13 +509,13 @@ keys(object)
 
 ### Example
 
-For example, suppose your application defined the following object.
+Suppose your application defines the following object:
 
 ```javascript
 var player1 = {"name": "Ted", "level": 42}
 ```
 
-In the following code samples and figure, the result assumes `player1` was defined in the global namespace (for simplicity) before you type `keys(player1)` and `values(player1)` in the console.
+In the following code, the result assumes `player1` was defined in the global namespace (for simplicity) before you type `keys(player1)` and `values(player1)` in the console:
 
 ```javascript
 keys(player1)
@@ -509,7 +523,7 @@ keys(player1)
 values(player1)
 ```
 
-The `keys()` and `values()` commands:
+Result:
 
 :::image type="content" source="../media/console-keys-values.msft.png" alt-text="The keys() and values() commands." lightbox="../media/console-keys-values.msft.png":::
 
@@ -540,9 +554,9 @@ function sum(x, y) {
 monitor(sum);
 ```
 
-The `monitor()` function:
+Result:
 
-:::image type="content" source="../media/console-function-monitor-sum.msft.png" alt-text="The monitor() function." lightbox="../media/console-function-monitor-sum.msft.png":::
+:::image type="content" source="../media/console-function-monitor-sum.msft.png" alt-text="Result of the monitor() function." lightbox="../media/console-function-monitor-sum.msft.png":::
 
 To end monitoring, use `unmonitor(function)`.
 
@@ -567,23 +581,27 @@ monitorEvents(object[, events])
 
 ### Example
 
-The following monitors all resize events on the window object.
+The following code monitors all resize events on the window object:
 
 ```javascript
 monitorEvents(window, "resize");
 ```
 
-Monitoring window resize events:
+Result:
 
 :::image type="content" source="../media/console-monitor-events-resize-window.msft.png" alt-text="Monitoring window resize events." lightbox="../media/console-monitor-events-resize-window.msft.png":::
 
-The following code defines an array to monitor both `resize` and `scroll` events on the window object.
+### Example
+
+The following code defines an array to monitor both `resize` and `scroll` events on the window object:
 
 ```javascript
 monitorEvents(window, ["resize", "scroll"]);
 ```
 
-You can also specify one of the available types of events, strings that map to predefined sets of events.  The following table displays the available event types and the associated event mappings.
+### Specifying an event type
+
+You can also specify one of the available types of events, strings that map to predefined sets of events.  The following table shows the available event types and the associated event mappings:
 
 | Event type | Corresponding mapped events |
 |:--- |:--- |
@@ -592,13 +610,15 @@ You can also specify one of the available types of events, strings that map to p
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |
 | `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |
 
+### Example
+
 In the following code, the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** tool:
 
 ```javascript
 monitorEvents($0, "key");
 ```
 
-In the following figure, the sample output after typing a character in the text field is displayed.  Monitoring key events:
+Here's the sample output after typing a character in the text field:
 
 :::image type="content" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Monitoring key events." lightbox="../media/console-monitor-events-type-t-y.msft.png":::
 
@@ -713,9 +733,10 @@ queryObjects(Constructor)
 <!-- ## table(data\[, columns\]) -->
 
 <!-- summary to bubble up: -->
-Logs object data with table formatting based upon the data object in with optional column headings.
+Logs object data, formatted as a table with column headings, for the specified data object.
 
 <!-- add'l info: n/a -->
+For example, using this function, you can display a list of people's names as a table, in the **Console**.
 
 ### Syntax
 
@@ -725,11 +746,11 @@ table(data[, columns])
 
 ### Example
 
-The following code displays a list of names using a table in the console:
+The following code displays a list of names using a table in the console, with the column headings defaulting to the variable names:
 
 ```javascript
 var names = {
-    0:  {
+    0: {
         firstName:  "John",
         lastName:  "Smith"
     },
@@ -741,7 +762,7 @@ var names = {
 table(names);
 ```
 
-The result of the `table()` function:
+Result:
 
 :::image type="content" source="../media/console-table-display.msft.png" alt-text="The result of the table() function." lightbox="../media/console-table-display.msft.png":::
 
@@ -820,7 +841,7 @@ The following code stops all event monitoring on the `window` object:
 unmonitorEvents(window);
 ```
 
-You can also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events (perhaps to reduce noise in the console output).
+You can also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events (perhaps to reduce noise in the console output):
 
 ```javascript
 monitorEvents($0, "mouse");
