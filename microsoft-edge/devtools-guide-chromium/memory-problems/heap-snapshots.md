@@ -24,8 +24,9 @@ ms.date: 05/04/2021
 
 Learn how to record heap snapshots with the Microsoft Edge DevTools heap profiler and find memory leaks.
 
-The Microsoft Edge DevTools heap profiler shows memory distribution by the JavaScript objects and related DOM nodes
-of your page.  Use it to take JavaScript heap (JS heap) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  Navigate to [Objects retaining tree](./memory-101.md#objects-retaining-tree).
+The Microsoft Edge DevTools heap profiler shows memory distribution by the JavaScript objects and related DOM nodes of your page.  Use it to take JavaScript heap (JS heap) snapshots, analyze memory graphs, compare snapshots, and find memory leaks.  Navigate to [Objects retaining tree](./memory-101.md#objects-retaining-tree).
+
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
 <!-- ====================================================================== -->
@@ -61,7 +62,9 @@ Choose **Clear all profiles** icon to remove snapshots (both from DevTools and a
 Closing the DevTools window does not delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
 > [!NOTE]
-> Try out this example of [scattered objects](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+> Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
+
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
 <!-- ====================================================================== -->
@@ -159,40 +162,41 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 
 <!--todo: add heap profiling containment section when available  -->
 
-> [!TIP]
-> A tip about closures.  Name the functions so you are able to easily distinguish between closures in the snapshot.  For example, this example does not use named functions.
->
-> ```javascript
-> function createLargeClosure() {
->     var largeStr = new Array(1000000).join('x');
->     var lC = function() { // this is NOT a named function
->         return largeStr;
->     };
->     return lC;
-> }
-> ```
->
-> The followingcode snippet uses named functions.
->
-> ```javascript
-> function createLargeClosure() {
->     var largeStr = new Array(1000000).join('x');
->     var lC = function lC() { // this IS a named function
->         return largeStr;
->     };
->     return lC;
-> }
-> ```
->
-> <!--
-> :::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
->    Name functions to distinguish between closures
-> :::image-end:::
-> -->
->
-> > [!NOTE]
-> > Try out this example of [why `eval` is evil](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-08.html).
->
+### Naming functions to differentiate between closures in the snapshot
+
+Tip: Name the functions so you are able to easily distinguish between closures in the snapshot.  For example, this example doesn't use named functions:
+
+```javascript
+function createLargeClosure() {
+    var largeStr = new Array(1000000).join('x');
+    var lC = function() { // this is NOT a named function
+        return largeStr;
+    };
+    return lC;
+}
+```
+
+The following code uses named functions, to easily distinguish between closures in the snapshot:
+
+```javascript
+function createLargeClosure() {
+    var largeStr = new Array(1000000).join('x');
+    var lC = function lC() { // this IS a named function
+        return largeStr;
+    };
+    return lC;
+}
+```
+
+<!--
+:::image type="complex" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
+    Name functions to distinguish between closures
+:::image-end:::
+-->
+
+Try out this example of [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html).
+
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
 <!-- ====================================================================== -->
@@ -238,16 +242,18 @@ leafRef = null;
 //#NOW able to be #tree GC
 ```
 
-The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when leafRef is nullified is the WHOLE tree under `#tree` a candidate for GC.
+The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for GC.
 
 :::image type="complex" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM subtrees." lightbox="../media/memory-problems-tree-gc.msft.png":::
    DOM subtrees
 :::image-end:::
 
 > [!NOTE]
-> Examples:  Try this example of a [leaking DOM node](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-06.html) to understand where it may leak and how to detect it.  You may also look at this example of [DOM leaks being bigger than expected](https://microsoft-edge-chromium-devtools.glitch.me/static/memory/example-09.html).
+> Examples:  Try this example of a [leaking DOM node](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where it may leak and how to detect it.  You can also try this example of [DOM leaks being bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).
 
-To read more about DOM leaks and memory analysis fundamentals checkout [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+
+To read more about DOM leaks and memory analysis fundamentals, check out [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 
 <!--
 > [!NOTE]
