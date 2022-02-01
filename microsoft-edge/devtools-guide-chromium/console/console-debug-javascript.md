@@ -23,7 +23,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Right-click in the webpage and select **Inspect** to open DevTools.  The **Open Console to view errors** button on the top right displays an error about the webpage.
 
-1.  Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
+1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
 
    :::image type="content" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console." lightbox="../media/console-debug-displays-error.msft.png":::
 
