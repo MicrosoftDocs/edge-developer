@@ -297,8 +297,8 @@ To use the Fixed Version distribution mode:
     *  For WinUI, this might include opening the project file (`.csproj`) in a code editor, and then add the following code within the project tags:
 
        ```xml
-       <Content Include="FixedRuntime\(version number)\\**\*.*">
-       <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
+       <Content include="FixedRuntime\(version number)\\**\*.*">
+       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
        </Content>
        ```
 
