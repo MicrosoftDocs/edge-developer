@@ -29,7 +29,7 @@ WebView2 applications interact with user data folders to store browser data, suc
 ### UDF location for each platform
 
 Get the UDF location for each platform from the Getting started article for that platform.<!-- correct? if so, extract those here. -->
-List of platforms, specifying the default start folder for each platform: [Get started with WebView2](../get-started/get-started.md).
+List of platforms, specifying the default start folder for each platform: <!-- [Get started with WebView2](../get-started/get-started.md). article is being added in PR 1690 soon, then merge main into this branch -->
 
 
 ### Runtime flag
