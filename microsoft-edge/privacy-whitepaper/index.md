@@ -74,7 +74,7 @@ Addresses and other form entries are saved by default.  To control saving and au
 
 You can prevent Microsoft Edge from prompting you to save passwords. Navigate to `edge://settings/passwords`. Toggle off the **Offer to save passwords** setting.  You can prevent Microsoft Edge from using autofill for saved passwords and delete saved passwords. Navigate to `edge://settings/passwords` and select **Saved passwords**.  To delete all autofill data, navigate to `edge://settings/clearBrowserData`, select **Autofill form data**, select the desired time range, and then select **Clear now**.
 
-If sync is on for your profile, autofill data is synced across all versions of Microsoft Edge where you are signed in with the same credentials.  When sync is on, all autofill data is stored on encrypted Microsoft servers.  The autofill data stored on Microsoft servers is used only for sync purposes.  You can turn off syncing of your autofill data. Navigate to `edge://settings/profiles/sync`. Select the **Turn off sync** button. If you turned on sync for autofill, deleting autofill data from a device while you are signed in to Microsoft Edge removes the data from all other devices that you are signed in to with the same credentials.
+If you are signed in and syncing, your autofill data is synced across all versions of Microsoft Edge where you are signed in with the same credentials.  When syncing, all autofill data is stored on encrypted Microsoft servers.  The autofill data stored on Microsoft servers is used only for sync purposes.  You can turn off syncing of your autofill data by navigating to `edge://settings/profiles/sync` and deselecting the **Basic info** toggle. If sync is on for autofill, deleting autofill data from a device while you are signed in to Microsoft Edge removes the data from all other devices that you are signed in to with the same credentials.
 
 When you visit a webpage and submit a form, Microsoft Edge sends information about the form to the Microsoft form fill service. This information includes a hash of the hostname and autofill entry types. For example, text box 1 expects an email address, text box 2 expects a password, and so on.  No user-entered information or user identifiers are sent to the service.  The information helps Microsoft Edge correctly identify forms across different webpages.  The data is used to help match your saved autofill data to the form.
 
@@ -211,7 +211,7 @@ You may install extensions in Microsoft Edge to add functions to the browser. Wh
 
 Comments and reviews from users are public on the Add-ons website and are also shared with the developers. If you are signed in to Microsoft Edge, installed extensions from the Microsoft Edge Add-ons website are associated with your account to provide extension recommendations. The data is used in aggregate to understand the popularity of extensions.
 
-You can sync extensions and preferences across all your signed-in syncing versions of Microsoft Edge. Navigate to `edge://settings/profiles/sync`, and select the **turn on sync** button.
+You can sync extensions and preferences across all your signed-in syncing versions of Microsoft Edge. Navigate to `edge://settings/profiles/sync`, and select the **Sign in to sync data** button.
 
 Installing extensions is optional. To uninstall any extension at any time, navigate to `edge://extensions`. When an extension is installed, it specifies what user data it needs to access. Microsoft Edge asks for your permission before installing the extension. Make sure an extension is credible and secure before installing it. Review the privacy policy of the developer for the specific extension.
 
@@ -278,7 +278,7 @@ To control Image Enhancement, navigate to `edge://settings/privacy` and turn on 
 
 Microsoft Edge offers an interactive and seamless experience when you launch the browser for the first time.  You can import your browser data to Microsoft Edge from another browser.  During import, you can either keep your existing data, or delete it and start fresh.  The data includes your favorites, browsing history, autofill data, extensions, settings, and other browsing data.
 
-Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.  With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you agree to sync your browsing data.
+Your browsing data from older versions of Microsoft Edge is automatically imported when you update Microsoft Edge.  With your confirmation, Microsoft Edge imports browser data from other browsers such as Google Chrome, Mozilla Firefox, or Internet Explorer. Microsoft Edge imports data from your most used browser as defined by your operating system.  Importing your data is completed locally on your device, and is stored locally, and is not sent to Microsoft unless you sign in and sync your browsing data.
 
 :::image type="complex" source="./media/migration.png" alt-text="Import" lightbox="./media/migration.png":::
    Import
@@ -342,7 +342,7 @@ Kids Mode is a convenient browsing mode designed for kids inside Microsoft Edge.
    Kids Mode
 :::image-end:::
 
-Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com](https://account.microsoft.com/family) since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced, if sync is turned on, to the profile in which Kids Mode was launched.
+Browsing in Kids Mode is limited to a default list of kid-friendly websites.  Upon navigation, the website is compared to a local list of allowed websites.  The websites visited in Kids Mode are not viewable on [family.microsoft.com](https://account.microsoft.com/family) since the browsing in Kids Mode is not associated with any account.  Allowed website exceptions may be added through the profile in which Kids Mode was launched.  Those exceptions are synced to the profile in which Kids Mode was launched, if that user is signed in.
 
 To enhance the Kids Mode experience, Microsoft Edge adds a safe keyword to the header request to Microsoft Bing and Microsoft News.  The safe keyword helps filter out inappropriate search results and news.  Kids Mode sets preferences for Microsoft Edge settings such as setting tracking prevention to Strict to block most trackers on websites.  Clear browsing data on close has also been turned on which clears things like Cookies and other website data when Kids Mode closes.  To clear browsing data at any time within Kids Mode, complete the following actions.
 
@@ -589,8 +589,6 @@ Signing in to Microsoft Edge provides many features to make the browser more pro
 
 If a new identity is added to the operating system and your Microsoft Edge profile does not currently have an identity, Microsoft Edge adds the specific identity to your profile. If you sign into Microsoft Edge with a Microsoft account or a work or school account and do not have an identity on your Windows profile, the account is added to your Windows profile unless you choose to not add it to Windows while signing in.
 
-If a new identity is added to the operating system and your Microsoft Edge profile does not currently have an identity, Microsoft Edge adds the specific identity to your profile.  If you sign into Microsoft Edge with a Microsoft account or a work or school account and do not have an identity on your Windows 10 profile, the specific account is added to your Windows 10 profile unless you specifically choose to not add it to Windows 10 while signing in.
-
 Being signed in to Microsoft Edge enables single sign-on. You are automatically signed in to certain websites such as Bing, and other identity-powered experiences such as Sync. If you want to limit automatic sign-in to Microsoft sites such as [Bing](https://bing.com), you may sign out of the browser.
 
 To sign into specific sites again using your user name and password or clear your cookies, navigate to `edge://settings/privacy`. For more information about clearing browsing data, navigate to [View and delete browser history in Microsoft Edge](https://support.microsoft.com/help/10607).
@@ -652,7 +650,7 @@ To help resolve URL typos in the address bar that result in a website error, Mic
 <!-- ====================================================================== -->
 ## Sync
 
-Signing into Microsoft Edge with a Microsoft account allows you to sync browsing data across all signed-in versions of Microsoft Edge. You may sync your browsing history, favorites, settings, form fill data including addresses and more, passwords, extensions, open tabs, and collections. You can choose whether or not sync runs in Microsoft Edge. You can individually control each synced data type.
+Signing into Microsoft Edge with a Microsoft account will enable syncing your browsing data across all signed-in versions of Microsoft Edge. You can sync your browsing history, favorites, settings, form fill data including addresses and more, passwords, extensions, open tabs, and collections. Each synced data type may be turned on or off individually.
 
 Favorites include any tabs you previously set aside in previous versions of Microsoft Edge, which sync along with the rest of your favorites. Deleted or modified favorites or other data from one signed-in version of Microsoft Edge sync to all other signed-in versions of Microsoft Edge where sync is turned on.  To manage sync configurations, navigate to `edge://settings/profiles/sync`.  Your sync settings may be managed by your organization.
 
@@ -662,9 +660,11 @@ Favorites include any tabs you previously set aside in previous versions of Micr
 
 For sync to function, all device connectivity and configuration data needed to provide the sync experience is sent to Microsoft. Sync data includes the name of your device, make, and model. To delete sync data, navigate to [Microsoft device dashboard](https://account.microsoft.com/devices). To manage your synced favorites, navigate to `edge://favorites`. To manage all other data types, navigate to `edge://settings/profiles`.
 
+When you sign into Microsoft Edge with your Microsoft account or work or school account, Microsoft Edge will store your preferences for your data privacy settings in Microsoft's servers. Microsoft Edge will only use the stored settings to make it easier for you to migrate your experience when you start using Microsoft Edge on a different device, or when you sign in to Microsoft Edge.
+
 All synced data is encrypted in transit over HTTPS when transferred between the browser and Microsoft servers.  The synced data is also stored in an encrypted state in Microsoft servers.  Sensitive data types such as addresses and passwords are further encrypted on the device before being synced.  If you are using a work or school account, all data types are further encrypted before being synced using Microsoft Information Protection.  All other synced data types are stored until you delete the data, the account is deleted, or the account becomes inactive.  An account ID is attached to all synced data, as the ID is necessary to perform sync across multiple devices.
 
-InPrivate and Guest mode browsing data does not sync to your Microsoft account.  However, favorites created during InPrivate sessions are synced across your signed-in versions of Microsoft Edge where sync is turned on.
+InPrivate and Guest mode browsing data does not sync to your Microsoft account.  However, favorites created during InPrivate sessions are synced across your signed-in versions of Microsoft Edge.
 
 
 <!-- ====================================================================== -->
