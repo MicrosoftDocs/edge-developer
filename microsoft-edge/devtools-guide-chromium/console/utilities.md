@@ -63,7 +63,7 @@ These commands only work by entering them directly into the DevTools **Console**
 | [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
 | [values(object)](#values) | Returns an array containing the values of all properties belonging to the specified object. |
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -91,7 +91,7 @@ In the following figure, the evaluated expression initially contains an array of
 
 :::image type="content" source="../media/console-array-length.msft.png" alt-text="$_ changes when new commands are evaluated." lightbox="../media/console-array-length.msft.png":::
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -122,7 +122,7 @@ The following image shows a different element selected in the same webpage.  The
 
 :::image type="content" source="../media/console-image-highlighted-$1.msft.png" alt-text="The $1 command." lightbox="../media/console-image-highlighted-$1.msft.png":::
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -178,7 +178,7 @@ Result: the first `img` element after the `title--image` element is found, and t
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -234,7 +234,7 @@ Here's the result.  `$$()` selects all images that appear after the specified `<
 > [!NOTE]
 > Press `Shift`+`Enter` in the **Console** to start a new line without running the script.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -282,7 +282,7 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 
 :::image type="content" source="../media/console-array-xpath-startnode.msft.png" alt-text="Using an XPath selector with startNode." lightbox="../media/console-array-xpath-startnode.msft.png":::
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -308,7 +308,7 @@ clear()
 clear()
 ```
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -333,7 +333,7 @@ copy(object)
 copy($0)
 ```
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -370,7 +370,7 @@ Use `undebug(function)` to stop breaking on the function, or use the UI to turn 
 
 For more information on breakpoints, see [Pause your code with breakpoints](../javascript/breakpoints.md).
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -407,7 +407,7 @@ Result:
 
 For more information, see [console.dir()](api.md#dir) in the Console API.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -427,7 +427,7 @@ This function is equivalent to [console.dirxml()](https://developer.mozilla.org/
 dirxml(object)
 ```
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -462,7 +462,7 @@ Result:
 
 When passing a function to inspect, the function opens the webpage in the **Sources** tool for you to inspect.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -502,7 +502,7 @@ You can further expand each of the following objects to explore their properties
 
 :::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="Expanded view of listener object." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -542,7 +542,7 @@ Result:
 
 :::image type="content" source="../media/console-keys-values.msft.png" alt-text="The keys() and values() commands." lightbox="../media/console-keys-values.msft.png":::
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -576,7 +576,7 @@ Result:
 
 To end monitoring, use `unmonitor(function)`.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -639,7 +639,7 @@ Here's the sample output after typing a character in the text field:
 
 :::image type="content" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Monitoring key events." lightbox="../media/console-monitor-events-type-t-y.msft.png":::
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -685,7 +685,7 @@ The result is the same, regardless of the order.  The result appears as a Heap S
 > [!NOTE]
 > Multiple CPU profiles can operate at the same time, and you aren't required to close-out each profile in creation order.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -717,7 +717,7 @@ profileEnd([name])
 
 For more information, see [profile](#profile), above.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -745,7 +745,7 @@ queryObjects(Constructor)
 
 *  `queryObjects(functionName)` returns all objects that were instantiated using `new functionName()`.
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -787,7 +787,7 @@ Result:
 
 :::image type="content" source="../media/console-table-display.msft.png" alt-text="The result of the table() function." lightbox="../media/console-table-display.msft.png":::
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -812,7 +812,7 @@ undebug(function)
 undebug(getData);
 ```
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -838,7 +838,7 @@ unmonitor(function)
 unmonitor(getData);
 ```
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -872,7 +872,7 @@ monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```
 
-</br></br>
+<br/><br/>
 
 ---
 
@@ -897,7 +897,7 @@ values(object)
 values(object);
 ```
 
-</br></br>
+<br/><br/>
 
 ---
 
