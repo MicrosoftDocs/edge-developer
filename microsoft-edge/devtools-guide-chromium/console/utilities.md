@@ -39,7 +39,7 @@ These commands only work by entering them directly into the DevTools **Console**
 
 | Function | Description |
 |---|---|
-| [$_](#recently-evaluated-expression)] | Returns the value of the most recently evaluated expression. |
+| [$_](#recently-evaluated-expression) | Returns the value of the most recently evaluated expression. |
 | [$0 - $4](#recently-selected-element-or-javascript-object) | Returns a recently selected element or JavaScript object. |
 | [$(selector)](#query-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
 | [$$(selector, [startNode])](#query-selector-all) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
@@ -50,15 +50,15 @@ These commands only work by entering them directly into the DevTools **Console**
 | [dir(object)](#dir) | Displays an object-style listing of all of the properties for the specified object, like `console.dir()`. |
 | [dirxml(object)](#dirxml) | Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`. |
 | [inspect(object/function)](#inspect) | Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool. |
-| [getEventListeners(object)](#geteventlisteners) | Returns the event listeners registered on the specified object. |
+| [getEventListeners(object)](#geteventlisteners) | Returns the event listeners that are registered on the specified object. |
 | [keys(object)](#keys) | Returns an array containing the names of the properties belonging to the specified object. |
 | [monitor(function)](#monitor) | Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request. |
 | [monitorEvents(object[, events])](#monitorevents) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
 | [profile([name])](#profile) | Starts a JavaScript CPU profiling session with an optional name. |
 | [profileEnd([name])](#profileend) | Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool. |
-| [queryObjects(Constructor)](#queryobjects) | Returns an array of objects created with the specified constructor, for the current runtime context in the **Console**. |
+| [queryObjects(Constructor)](#queryobjects) | Returns an array of the objects that were created by the specified constructor. |
 | [table(data[, columns])](#table) | Logs object data with table formatting based upon the data object in with optional column headings. |
-| [undebug(function)](#undebug) | Stops the debug of the specified function.  When the function is requested, the debugger is no longer invoked. |
+| [undebug(function)](#undebug) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
 | [unmonitor(function)](#unmonitor) | Stops the monitoring of the specified function. |
 | [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
 | [values(object)](#values) | Returns an array containing the values of all properties belonging to the specified object. |
@@ -69,7 +69,8 @@ These commands only work by entering them directly into the DevTools **Console**
 <!-- planned new heading to troubleshoot: -->
 <!-- ## $_ (Recent expression value) -->
 
-`$_` returns the value of the most recently evaluated expression.
+<!-- summary to bubble up: -->
+Returns the value of the most recently evaluated expression.
 
 ### Syntax
 
@@ -97,9 +98,11 @@ In the following figure, the evaluated expression initially contains an array of
 <!-- planned new heading to troubleshoot: -->
 <!-- ## $0 - $4 -->
 
-The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements that were inspected within the **Elements** tool, or the last five JavaScript heap objects that were selected in the **Memory** tool.
+<!-- summary to bubble up: -->
+Returns a recently selected element or JavaScript object.
 
-`$0` returns the most recently selected element or JavaScript object, `$1` returns the second most recently selected one, and so on.
+<!-- add'l info -->
+`$0` returns the most recently selected element or JavaScript object, `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements that were inspected within the **Elements** tool, or the last five JavaScript heap objects that were selected in the **Memory** tool.
 
 ### Syntax
 
@@ -125,7 +128,11 @@ The following image shows a different element selected in the same webpage.  The
 <!-- planned new heading to troubleshoot: -->
 <!-- ## $(selector) -->
 
-`$(selector)` returns the reference to the first DOM element with the specified CSS selector.  This function is an alias for the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) function.
+<!-- summary to bubble up: -->
+Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`.
+
+<!-- add'l info -->
+This function is an alias for the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) function.
 
 ### Syntax
 
@@ -168,7 +175,11 @@ The result of `$('img', document.querySelector('title--image')).src`:
 <!-- planned new heading to troubleshoot: -->
 <!-- ## \$\$(selector, \[startNode\]) -->
 
-`$$(selector)` returns an array of elements that match the specified CSS selector.  This function is equivalent to running the [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll) function.
+<!-- summary to bubble up: -->
+Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`.
+
+<!-- add'l info -->
+This function is equivalent to [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll).
 
 ### Syntax
 
@@ -217,7 +228,10 @@ Using `$$()` to select all images that appear after the specified `<div>` elemen
 <!-- planned new heading to troubleshoot: -->
 <!-- ## \$x(path, \[startNode\]) -->
 
-`$x(path)` returns an array of DOM elements that match the specified XPath expression.
+<!-- summary to bubble up: -->
+Returns an array of DOM elements that match the specified XPath expression.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
@@ -261,7 +275,10 @@ Using an XPath selector with `startNode`:
 <!-- planned new heading to troubleshoot: -->
 <!-- ## clear() -->
 
-`clear()` clears the console of its history.
+<!-- summary to bubble up: -->
+Clears the console of its history.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
@@ -280,7 +297,10 @@ clear()
 ## copy
 <!-- ## copy(object) -->
 
-`copy(object)` copies a string representation of the specified object to the clipboard.
+<!-- summary to bubble up: -->
+Copies a string representation of the specified object to the clipboard.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
@@ -301,7 +321,11 @@ copy($0)
 ## debug
 <!-- ## debug(function) -->
 
-When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel.  You can then step through the code and debug it.
+<!-- summary to bubble up: -->
+When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel.
+
+<!-- add'l info -->
+After the debugger is paused, you can then step through the code and debug it.
 
 ### Syntax
 
@@ -331,7 +355,11 @@ For more information on breakpoints, see [Pause your code with breakpoints](../j
 ## dir
 <!-- ## dir(object) -->
 
-`dir(object)` displays an object-style listing of all of the properties for the specified object.  This function is an alias for the [console.dir()](https://developer.mozilla.org/docs/Web/API/Console/dir) function.
+<!-- summary to bubble up: -->
+Displays an object-style listing of all of the properties for the specified object, like `console.dir()`.
+
+<!-- add'l info -->
+This function is an alias for [console.dir()](https://developer.mozilla.org/docs/Web/API/Console/dir).
 
 ### Syntax
 
@@ -361,7 +389,11 @@ For more information, see [console.dir()](api.md#dir) in the Console API.
 ## dirxml
 <!-- ## dirxml(object) -->
 
-`dirxml(object)` prints an XML representation of the specified object, as displayed in the **Elements** tool.  This function is equivalent to the [console.dirxml()](https://developer.mozilla.org/docs/Web/API/Console/dirxml) function.
+<!-- summary to bubble up: -->
+Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`.
+
+<!-- add'l info -->
+This function is equivalent to [console.dirxml()](https://developer.mozilla.org/docs/Web/API/Console/dirxml).
 
 ### Syntax
 
@@ -376,11 +408,12 @@ dirxml(object)
 ## inspect
 <!-- ## inspect(object/function) -->
 
-<!-- 1-line summary:
+<!-- summary to bubble up: -->
 Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool.
--->
 
-`inspect(object/function)` opens and selects the specified element or object in the appropriate panel: either the **Elements** tool for DOM elements, or the **Memory** tool for JavaScript heap objects.
+<!-- add'l info -->
+* For a DOM element, this function opens and selects the specified DOM element in the **Elements** tool.
+* For a JavaScript heap object, this function opens the specified JavaScript heap object in the **Memory** tool.
 
 ### Syntax
 
@@ -411,7 +444,11 @@ When passing a function to inspect, the function opens the webpage in the **Sour
 ## getEventListeners
 <!-- ## getEventListeners(object) -->
 
-`getEventListeners(object)` returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The members of each array are objects that describe the listener registered for each type.
+<!-- summary to bubble up: -->
+Returns the event listeners that are registered on the specified object.
+
+<!-- add'l info -->
+The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The members of each array are objects that describe the listener registered for each type.
 
 ### Syntax
 
@@ -444,7 +481,11 @@ You can further expand each of the following objects to explore their properties
 ## keys
 <!-- ## keys(object) -->
 
-`keys(object)` returns an array containing the names of the properties belonging to the specified object.  To get the associated values of the same properties, use `values()`.
+<!-- summary to bubble up: -->
+Returns an array containing the names of the properties belonging to the specified object.
+
+<!-- add'l info -->
+To get the associated values of the same properties, use `values()`.
 
 ### Syntax
 
@@ -479,7 +520,10 @@ The `keys()` and `values()` commands:
 ## monitor
 <!-- ## monitor(function) -->
 
-`monitor(function)` logs a message to the console that indicates the function name along with the arguments passed to the function as part of a request.
+<!-- summary to bubble up: -->
+Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
@@ -509,7 +553,11 @@ To end monitoring, use `unmonitor(function)`.
 ## monitorEvents
 <!-- ## monitorEvents(object\[, events\]) -->
 
-When one of the specified events occurs on the specified object, the event object is logged to the console.  You can specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.
+<!-- summary to bubble up: -->
+When one of the specified events occurs on the specified object, the event object is logged to the console.
+
+<!-- add'l info -->
+You can specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.
 
 ### Syntax
 
@@ -561,7 +609,11 @@ In the following figure, the sample output after typing a character in the text 
 ## profile
 <!-- ## profile([name]) -->
 
-`profile()` starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) function completes the profile and displays the results in the **Memory** tool.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+<!-- summary to bubble up: -->
+Starts a JavaScript CPU profiling session with an optional name.
+
+<!-- add'l info -->
+To complete the profile and display the results in the **Memory** tool, call [profileEnd()](#profileend).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Syntax
 
@@ -602,7 +654,11 @@ The result is the same, regardless of the order.  The result appears as a Heap S
 ## profileEnd
 <!-- ## profileEnd([name]) -->
 
-`profileEnd()` completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+<!-- summary to bubble up: -->
+Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.
+
+<!-- add'l info -->
+To call this function, you must be running the [profile()](#profile) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Syntax
 
@@ -629,7 +685,11 @@ For more information, see [profile](#profile), above.
 ## queryObjects
 <!-- ## queryObjects(Constructor) -->
 
-`queryObjects(Constructor)` returns an array of objects created with the specified constructor.  The scope of `queryObjects()` is the currently selected runtime context in the **Console**.
+<!-- summary to bubble up: -->
+Returns an array of the objects that were created by the specified constructor.
+
+<!-- add'l info -->
+The scope of `queryObjects()` is the currently selected runtime context in the **Console**.
 
 ### Syntax
 
@@ -652,7 +712,10 @@ queryObjects(Constructor)
 ## table
 <!-- ## table(data\[, columns\]) -->
 
-`table(data[, columns])` logs object data with table formatting based upon the data object in with optional column headings.
+<!-- summary to bubble up: -->
+Logs object data with table formatting based upon the data object in with optional column headings.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
@@ -689,7 +752,10 @@ The result of the `table()` function:
 ## undebug
 <!-- ## undebug(function) -->
 
-`undebug(function)` stops the debug of the specified function. So when the function is requested, the debugger is no longer invoked.
+<!-- summary to bubble up: -->
+Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
@@ -710,7 +776,11 @@ undebug(getData);
 ## unmonitor
 <!-- ## unmonitor(function) -->
 
-`unmonitor(function)` stops the monitoring of the specified function.  This function is used in concert with the [monitor()](#monitor) function.
+<!-- summary to bubble up: -->
+Stops the monitoring of the specified function.
+
+<!-- add'l info -->
+This function is used together with [monitor()](#monitor).
 
 ### Syntax
 
@@ -731,7 +801,10 @@ unmonitor(getData);
 ## unmonitorEvents
 <!-- ## unmonitorEvents(object\[, events\]) -->
 
-`unmonitorEvents(object[, events])` stops monitoring events for the specified object and events.
+<!-- summary to bubble up: -->
+Stops monitoring events for the specified object and events.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
@@ -761,7 +834,10 @@ unmonitorEvents($0, "mousemove");
 ## values
 <!-- ## values(object) -->
 
-`values(object)` returns an array containing the values of all properties belonging to the specified object.
+<!-- summary to bubble up: -->
+Returns an array containing the values of all properties belonging to the specified object.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
