@@ -179,11 +179,17 @@ To manually update to version 1.1.7, navigate to [Update an extension manually](
 
 ### Visualize CSS scroll-snap
 
-You may now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge displays next to it in the **Elements** tool.  Choose the badge to turn on (or off) the display of a scroll-snap overlay on the webpage.  To review an example webpage, navigate to [Scroll Snap Demo](https://microsoft-edge-chromium-devtools.glitch.me/css-dbg-stories/css-scroll-snap.html).  In the example, dots display on snap edges.  The scroll port has a solid outline while the snap items have dash outlines.  The scroll padding is filled in green while the scroll margin is filled in orange.  To review the history of this feature in the Chromium open-source project, navigate to Issue [862450](https://crbug.com/862450).
+You can now toggle the `scroll-snap` badge in the **Elements** tool to inspect the CSS scroll-snap alignment.  When an HTML element on your webpage has `scroll-snap-type` applied to it, a `scroll-snap` badge is displayed next to it in the **Elements** tool.  Click the badge to turn on (or off) the display of a scroll-snap overlay on the webpage.
+
+For an example webpage, see [Scroll Snap Demo](https://mathiasbynens.github.io/css-dbg-stories/css-scroll-snap.html).  In the example, dots appear on snap edges.  The scroll port has a solid outline, while the snap items have dashed outlines.  The scroll padding is filled-in green, while the scroll margin is filled-in orange.
+
+<!-- You can view the source files for the Scroll Snap demo at the [mathiasbynens/css-dbg-stories](https://github.com/mathiasbynens/css-dbg-stories) repo. -->
 
 :::image type="complex" source="../../media/2021/04/elements-scroll-snap-highlight.msft.png" alt-text="CSS scroll-snap." lightbox="../../media/2021/04/elements-scroll-snap-highlight.msft.png":::
    CSS scroll-snap
 :::image-end:::
+
+To view the history of this feature in the Chromium open-source project, navigate to Issue [862450](https://crbug.com/862450).
 
 ### New Memory Inspector tool
 
