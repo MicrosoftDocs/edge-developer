@@ -63,6 +63,9 @@ These commands only work by entering them directly into the DevTools **Console**
 | [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
 | [values(object)](#values) | Returns an array containing the values of all properties belonging to the specified object. |
 
+</br></br>
+
+---
 
 <!-- ====================================================================== -->
 ## Recently evaluated expression
@@ -88,8 +91,9 @@ In the following figure, the evaluated expression initially contains an array of
 
 :::image type="content" source="../media/console-array-length.msft.png" alt-text="$_ changes when new commands are evaluated." lightbox="../media/console-array-length.msft.png":::
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## Recently selected element or JavaScript object
@@ -118,8 +122,9 @@ The following image shows a different element selected in the same webpage.  The
 
 :::image type="content" source="../media/console-image-highlighted-$1.msft.png" alt-text="The $1 command." lightbox="../media/console-image-highlighted-$1.msft.png":::
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## Query selector
@@ -173,8 +178,9 @@ Result: the first `img` element after the `title--image` element is found, and t
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## Query selector all
@@ -195,7 +201,7 @@ $$(selector, [startNode])
 
 ### Example
 
-In the following code and figure, use `$$()` to create an array of all `<img>` elements in the current webpage and display the value of the `src` property for each element.
+In the following example, `$$()` creates an array of all `<img>` elements in the current webpage, and displays the value of the `src` property for each element:
 
 ```javascript
 var images = $$('img');
@@ -204,11 +210,11 @@ for (each in images) {
 }
 ```
 
-The following image shows the result of using `$$()` to select all images in the webpage and display the sources:
+Result:
 
 :::image type="content" source="../media/console-element-selector-image-all.msft.png" alt-text="Using $$() to select all images in the webpage and display the sources." lightbox="../media/console-element-selector-image-all.msft.png":::
 
-This function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
+This query selector function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
 ### Example
 
@@ -221,15 +227,16 @@ for (each in images) {
 }
 ```
 
-Here's the result of using `$$()` to select all images that appear after the specified `<div>` element in the webpage and display the sources:
+Here's the result.  `$$()` selects all images that appear after the specified `<div>` element in the webpage, and displays the sources:
 
 :::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources." lightbox="../media/console-element-selector-image-filter-all.msft.png":::
 
 > [!NOTE]
 > Press `Shift`+`Enter` in the **Console** to start a new line without running the script.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## XPath
@@ -275,8 +282,9 @@ Similar to the other selector commands, `$x(path)` has an optional second parame
 
 :::image type="content" source="../media/console-array-xpath-startnode.msft.png" alt-text="Using an XPath selector with startNode." lightbox="../media/console-array-xpath-startnode.msft.png":::
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## clear
@@ -300,6 +308,9 @@ clear()
 clear()
 ```
 
+</br></br>
+
+---
 
 <!-- ====================================================================== -->
 ## copy
@@ -322,8 +333,9 @@ copy(object)
 copy($0)
 ```
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## debug
@@ -358,8 +370,9 @@ Use `undebug(function)` to stop breaking on the function, or use the UI to turn 
 
 For more information on breakpoints, see [Pause your code with breakpoints](../javascript/breakpoints.md).
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## dir
@@ -394,8 +407,9 @@ Result:
 
 For more information, see [console.dir()](api.md#dir) in the Console API.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## dirxml
@@ -413,8 +427,9 @@ This function is equivalent to [console.dirxml()](https://developer.mozilla.org/
 dirxml(object)
 ```
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## inspect
@@ -437,8 +452,6 @@ inspect(object/function)
 
 In the following example, the `document.body` opens in the **Elements** tool:
 
-### Example
-
 ```javascript
 inspect(document.body);
 ```
@@ -449,8 +462,9 @@ Result:
 
 When passing a function to inspect, the function opens the webpage in the **Sources** tool for you to inspect.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## getEventListeners
@@ -488,8 +502,9 @@ You can further expand each of the following objects to explore their properties
 
 :::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="Expanded view of listener object." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## keys
@@ -527,8 +542,9 @@ Result:
 
 :::image type="content" source="../media/console-keys-values.msft.png" alt-text="The keys() and values() commands." lightbox="../media/console-keys-values.msft.png":::
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## monitor
@@ -560,8 +576,9 @@ Result:
 
 To end monitoring, use `unmonitor(function)`.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## monitorEvents
@@ -622,8 +639,9 @@ Here's the sample output after typing a character in the text field:
 
 :::image type="content" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Monitoring key events." lightbox="../media/console-monitor-events-type-t-y.msft.png":::
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## profile
@@ -667,8 +685,9 @@ The result is the same, regardless of the order.  The result appears as a Heap S
 > [!NOTE]
 > Multiple CPU profiles can operate at the same time, and you aren't required to close-out each profile in creation order.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## profileEnd
@@ -698,8 +717,9 @@ profileEnd([name])
 
 For more information, see [profile](#profile), above.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## queryObjects
@@ -725,8 +745,9 @@ queryObjects(Constructor)
 
 *  `queryObjects(functionName)` returns all objects that were instantiated using `new functionName()`.
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## table
@@ -766,8 +787,9 @@ Result:
 
 :::image type="content" source="../media/console-table-display.msft.png" alt-text="The result of the table() function." lightbox="../media/console-table-display.msft.png":::
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## undebug
@@ -790,8 +812,9 @@ undebug(function)
 undebug(getData);
 ```
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## unmonitor
@@ -815,8 +838,9 @@ unmonitor(function)
 unmonitor(getData);
 ```
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## unmonitorEvents
@@ -848,8 +872,9 @@ monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## values
@@ -872,8 +897,9 @@ values(object)
 values(object);
 ```
 
----
+</br></br>
 
+---
 
 <!-- ====================================================================== -->
 ## See also
