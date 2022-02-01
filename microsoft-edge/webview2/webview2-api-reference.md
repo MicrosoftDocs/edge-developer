@@ -27,9 +27,12 @@ WebView2 is available for the following languages and frameworks:
    * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
    * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
 
-* WinRT
+* WinRT (for WinUI 2/UWP)
    * [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
    * [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
+
+* WinUI 3 (for Windows App SDK)
+   * [API reference](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- listed at top of [Get started with WebView2 in WinUI 3 (Windows App SDK)](get-started/winui.md) -->
 
 
 <!-- ====================================================================== -->
