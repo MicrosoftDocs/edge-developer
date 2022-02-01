@@ -9,12 +9,17 @@ ms.date: 02/01/2022
 ---
 # Sample code for DevTools
 
+Most of the sample code that's used by the DevTools documentation is stored in the following GitHub repos.
+
+
+<!-- ====================================================================== -->
+## GitHub repos for samples
+
 The [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos) repo contains most of the demo pages or sample code that's used by the documentation.
 
 The [MicrosoftEdge/DevToolsSamples](https://github.com/MicrosoftEdge/DevToolsSamples) repo contains several demos that are used by the documentation, including for **3D View**, **Inspect tool**, **Console**, and accessibility testing.
 
-The demo pages below are useful for exploring tools such as **Elements** and **Sources**.
-<!-- (and for creating screenshots) -->
+The demo pages below are stored in those repos, and are useful for exploring tools such as **Elements** and **Sources**.
 
 
 <!-- ====================================================================== -->
@@ -34,7 +39,7 @@ These articles walk you through using this demo page:
 
 * [Use the Inspect tool to detect accessibility issues by hovering over the webpage](../accessibility/test-inspect-tool.md) - One of several short articles that are derived from sections of the above article.
 
-* [Accessibility-testing features](devtools-guide-chromium/accessibility/reference.md) - A list of accessibility testing features of DevTools, with links to several articles that use the "Demo page with accessibility issues".
+* [Accessibility-testing features](../accessibility/reference.md) - A list of accessibility testing features of DevTools, with links to several articles that use the "Demo page with accessibility issues".
 
 ### Source code repo
 
@@ -64,7 +69,7 @@ This demo webpage is useful for exploring the **Sources** tool, especially the J
 
 These articles or article sections walk you through using this demo page:
 
-* [The basic approach to using a debugger](../sources/#the-basic-approach-to-using-a-debugger/index.md) in _Sources tool overview_.  This article section briefly walks you through the steps to use the JavaScript debugger in the **Sources** tool, to find the bug in the demo page.  To fix the bug, you convert the input strings to numbers before adding them.
+* [The basic approach to using a debugger](../sources/index.md#the-basic-approach-to-using-a-debugger/index.md) in _Sources tool overview_.  This article section briefly walks you through the steps to use the JavaScript debugger in the **Sources** tool, to find the bug in the demo page.  To fix the bug, you convert the input strings to numbers before adding them.
 
 * [Get started debugging JavaScript](../javascript/index.md) - A more in-depth walkthrough of using the demo page along with the debugger, demonstrating various features of the debugger, and setting different kinds of breakpoints.
 
