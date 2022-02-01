@@ -395,9 +395,13 @@ To troubleshoot JavaScript code, you can insert `console.log()` statements in th
 
 To use a debugger on a webpage, you typically set a breakpoint and then send a form from the webpage, as follows:
 
-1. Open the webpage in a new tab of the browser.  For example, open this form webpage in a new tab: [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html).
+1. Open this [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/) webpage in a new window or tab.
 
-1. Select `F12` to open the **DevTools** window, and then select the **Sources** tab.
+   <!-- You can view the source code for the demo page at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
+
+1. Right-click anywhere in the webpage, and then select **Inspect**.  Or, press `F12`.  The **DevTools** window opens, next to the demo webpage.
+
+1. In DevTools, select the **Sources** tab.
 
 1. In the **Navigator** pane (on the left), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.
 
@@ -411,9 +415,31 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
     In the above figure, we added the Watch expressions `sum` and `typeof sum`, and stepped two lines past the breakpoint.
 
-1. Examine the values in the **Scope** pane, which shows all variables or properties that are in-scope for the current breakpoint, and their values.  Or, add expressions in the **Watch** pane.  These expressions are the same expressions that you would write within a `console.log` statement to debug your code.  To run JavaScript commands to manipulate data in the current context, use the **Console**.  To open the console, press `Esc`.
+1. Examine the values in the **Scope** pane, which shows all variables or properties that are in-scope for the current breakpoint, and their values.
+
+   At this point, you could add expressions in the **Watch** pane.  These expressions are the same expressions that you would write within a `console.log` statement to debug your code.
+
+   To run JavaScript commands to manipulate data in the current context, you use the **Console**.  If you want to open the console in the Drawer at the bottom of DevTools, press `Esc`.
 
 1. Step through the code by using the controls at the top of the **Debugger** pane, such as **Step** (`F9`).
+
+    The bug in this demo is that you need to first convert the input data from strings to numbers.
+
+1.  To fix the bug, refresh the page to reset the webpage form, and then change the line:
+
+    ```javascript
+    var sum = addend1 + addend2;
+    ```
+
+    to:
+
+    ```javascript
+    var sum = parseInt(addend1) + parseInt(addend2);
+    ```
+
+1.  Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save the change in the local cached file.
+
+1.  Enter `5` and `1` into the webpage and then click the **Add** button.  Now **Scope** > **Local** > **sum:** is the number 6, instead of the string "51".
 
 #### See also
 

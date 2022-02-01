@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Get started analyzing runtime performance
 
-_Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial article teaches you how to use the Microsoft Edge DevTools **Performance** tool to analyze runtime performance.
+_Runtime performance_ is how your page performs when it's running, as opposed to loading.  The following tutorial teaches you how to use the DevTools **Performance** tool to analyze runtime performance.
 
 In terms of the **RAIL** model, the skills you learn in this tutorial are useful for analyzing the Response, Animation, and Idle phases of your page.
 
@@ -43,14 +43,17 @@ In the following tutorial, you open DevTools on a "Sluggish Animation" demo page
 1. Load the following "Sluggish Animation" demo page in your InPrivate window.  You'll profile this page, which shows a variable number of icons moving up and down.
 
    ```https
-   https://microsoft-edge-chromium-devtools.glitch.me/sluggish/
+   https://microsoftedge.github.io/Demos/devtools-performance-get-started/
    ```
+
+    <!-- You can view the source files for the "Sluggish Animation" demo page at the [MicrosoftEdge/Demos > devtools-performance-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-get-started) repo folder. -->
 
 1. Press `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open DevTools.
 
    :::image type="content" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
 
-   For the rest of the figures, DevTools is [undocked to a separate window](../customize/placement.md) to better focus on the contents.
+For the rest of the screenshots below, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
+
 
 ### Simulate a mobile CPU
 
@@ -68,6 +71,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
    When testing other pages; if you want to ensure that each page works well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
+
 ### Set up the demo
 
 It's hard to create a runtime performance demo that works consistently for all readers of the website.  The following section lets you customize the demo to make sure that your experience is relatively consistent with the screenshots and descriptions, regardless of your particular setup.
@@ -79,6 +83,7 @@ It's hard to create a runtime performance demo that works consistently for all r
 1. To better display a difference between the optimized and un-optimized versions, click the **Subtract 10** button a few times and try again.  If you add too many blue icons, you might max out the CPU, and then you might not observe a major difference in the results for the two versions.
 
 1. Click **Un-Optimize**.  The blue icons move slower and with more sluggishness again.
+
 
 ### Record runtime performance
 
@@ -102,6 +107,7 @@ That's an overwhelming amount of data, but it'll all make more sense shortly.
 
 Once you have a recording of the page's performance, you can assess the page's performance and find the cause of any performance issues.
 
+
 ### Analyze frames per second
 
 The main metric for measuring the performance of any animation is frames per second (FPS).  Users are happy when animations run at 60 FPS.
@@ -124,6 +130,7 @@ The main metric for measuring the performance of any animation is frames per sec
 
 The display indicates that the webpage isn't performing well.  In real scenarios, it may not be so clear whether the page is performing well, so having all of the tools to make measurements comes in handy.
 
+
 #### Bonus: Open the FPS meter
 
 Another handy tool is the FPS meter, which provides real-time estimates for FPS as the page runs.
@@ -137,6 +144,7 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
    :::image type="content" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="The FPS meter." lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
 
 1. Turn off the **FPS Meter** and press `Escape` to close the **Rendering** tool.  You aren't using **FPS Meter** in this tutorial.
+
 
 ### Find the bottleneck
 
@@ -180,6 +188,7 @@ After you measured and verified that the animation isn't performing well, the ne
    -->
 
 That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
+
 
 ### Bonus: Analyze the optimized version
 

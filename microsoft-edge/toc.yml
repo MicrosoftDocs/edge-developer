@@ -633,6 +633,10 @@
                   href: devtools-guide-chromium/accessibility/narrow.md
                   displayName: Device Emulation, Device Emulator
 # /Accessibility
+# Sample code -----------------------------------------------------------------
+        - name: Sample code for DevTools
+          href: devtools-guide-chromium/sample-code/sample-code.md
+          displayName: sample code, demo
 # Keyboard shortcuts ----------------------------------------------------------
         - name: Keyboard shortcuts
           href: devtools-guide-chromium/shortcuts/index.md

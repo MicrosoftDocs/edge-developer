@@ -30,6 +30,9 @@ Use the heap profiler in the **Memory** tool to do the following:
 
 The DevTools heap profiler shows memory distribution used by your page's JavaScript objects and related DOM nodes.  See also [Objects retaining tree](./memory-101.md#objects-retaining-tree)) in _Memory terminology_.
 
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+<!-- 21 hits on "devtools-memory-heap-snapshot" in this article -->
+
 
 <!-- ====================================================================== -->
 ## Take a snapshot
@@ -68,7 +71,7 @@ Closing the DevTools window doesn't delete profiles from the memory associated w
 > [!NOTE]
 > Try out this example of [scattered objects](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-03.html) and profile it using the Heap Profiler.  A number of (object) item allocations are displayed.
 
-<!-- You can view the source files for the Scattered Objects demo in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 
 <!-- ====================================================================== -->
@@ -162,8 +165,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 
 <!--todo: add heap profiling containment section when available  -->
 
-
-### Closures
+### Naming functions to differentiate between closures in the snapshot
 
 Name the functions, so that you can easily distinguish between closures in the snapshot.  For example, this example doesn't use named functions:
 
@@ -177,7 +179,7 @@ function createLargeClosure() {
 }
 ```
 
-The following code snippet uses named functions:
+The following code uses named functions, to easily distinguish between closures in the snapshot:
 
 ```javascript
 function createLargeClosure() {
@@ -189,9 +191,17 @@ function createLargeClosure() {
 }
 ```
 
-Try out this example of [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) to analyze the impact of closures on memory.  You may also be interested in following it up with this example that takes you through recording [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html).
+#### Demo: Impact of closures on memory
 
-<!-- You can view the source files for these demos in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+To analyze the impact of closures on memory, try out this example: open the demo webpage [why `eval` is evil](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-07.html) in a new window or tab.
+
+<!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+
+#### Demo: Recording heap allocations
+
+You may also be interested in following up the above demo with this example that takes you through recording heap allocations: open the demo webpage [heap allocations](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-08.html) in a new window or tab.
+
+<!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
 :::image type="content" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
@@ -247,9 +257,20 @@ The `#leaf` maintains a reference to the relevant parent (parentNode) and recurs
 
 :::image type="content" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM subtrees." lightbox="../media/memory-problems-tree-gc.msft.png":::
 
-Try out this example of [Leaking DOM nodes](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where DOM nodes can leak and how to detect such leakage. You can follow it up by also looking at this example of [DOM leaks bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).
 
-<!-- You can view the source files for these demos in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+### Example: Leaking DOM nodes
+
+Try this example of a [leaking DOM node](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-06.html) to understand where DOM nodes might leak, and how to detect such leakage.
+
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+
+
+### Example: DOM leaks being bigger than expected
+
+Also try this example of [DOM leaks being bigger than expected](https://microsoftedge.github.io/Demos/devtools-memory-heap-snapshot/example-09.html).
+
+<!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
+
 
 To read more about DOM leaks and memory analysis fundamentals, check out [Finding and debugging memory leaks with the Microsoft Edge DevTools](https://slid.es/gruizdevilla/memory) by Gonzalo Ruiz de Villa.
 

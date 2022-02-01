@@ -28,9 +28,11 @@ This article teaches you the basic workflow for debugging any JavaScript issue i
 <!-- ====================================================================== -->
 ## Step 1: Reproduce the bug
 
-Finding a series of actions that consistently reproduce a bug is always the first step to debugging.
+The first step in debugging is to find a series of actions that consistently reproduce a bug.
 
-1. Open the [Get Started Debugging JavaScript](https://microsoft-edge-chromium-devtools.glitch.me/debug-js/get-started.html) demo in a new browser window or tab.
+1. Open the demo webpage [Get Started Debugging JavaScript](https://microsoftedge.github.io/Demos/devtools-js-get-started/) in a new window or tab.  To do this, right-click the link.  Or, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click the link.
+
+   <!-- You can view the source files for the Debugging demo at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
 1. Enter `5` in the **Number 1** text box.
 

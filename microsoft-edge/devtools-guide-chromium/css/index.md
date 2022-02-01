@@ -22,25 +22,17 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Get started viewing and changing CSS
 
-Complete these interactive tutorials to learn the basics of viewing and changing the CSS for a page using Microsoft Edge DevTools.
-
-
-<!-- ====================================================================== -->
-## Open CSS Examples
-
-Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.  To do this, right-click the link, or press and hold `Control` (Windows, Linux) or `Command` (macOS) and then click the link.
-
-If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromium/customize/placement) to the right of your viewport (displayed in the following figure), click **Customize and control DevTools** `...`.  On the **Customize and control DevTools** drop-down menu, in the **Dock side** section, select **Dock to right**.
-
-<!-- You can view the source files for the CSS Examples demo in the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
+Follow these interactive tutorial sections to learn the basics of viewing and changing the CSS for a page by using DevTools.
 
 
 <!-- ====================================================================== -->
 ## View the CSS for an element
 
-1. Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.  To do this, right-click the link, or press and hold `Control` (Windows, Linux) or `Command` (macOS) and then click the link.
 
-1. Right-click the `Inspect Me!` text, and then click **Inspect**.
+   <!-- You can view the source files for the CSS Examples demo page at the [MicrosoftEdge/Demos > devtools-css-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-css-get-started) repo folder. -->
+
+1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
     1. In DevTools, on the **Elements** tool, in the **DOM Tree** panel, the `Inspect Me!` element is highlighted.
 
@@ -50,7 +42,7 @@ If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromi
 
 1. On the page, in the **Value of `data-message`:** textbox, enter the value.
 
-1. Right-click the `Inspect Me!` text, and then click **Inspect**.
+1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
     1. In DevTools, on the **Elements** tool, select the **Styles** panel.
 
@@ -73,12 +65,11 @@ If you want to [dock your DevTools window](/microsoft-edge/devtools-guide-chromi
 
 Use the **Styles** panel when you want to change or add CSS declarations to an element.
 
-> [!NOTE]
-> Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
+1. First, we recommend doing the [View the CSS for an element](#view-the-css-for-an-element) tutorial section, above.
 
-1. [Open CSS Examples](#open-css-examples).
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
-1. Right-click the `Add A Background Color To Me!` text, and then click **Inspect**.
+1. Right-click the `Add A Background Color To Me!` text, and then select **Inspect**.
 
 1. Click `element.style` near the top of the **Styles** panel.
 
@@ -96,14 +87,13 @@ Use the **Styles** panel when you want to change or add CSS declarations to an e
 
 To display how an element looks when a CSS class is applied to or removed from an element, see the **Styles** panel.
 
-> [!NOTE]
-> Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
+1. First, we recommend doing the [View the CSS for an element](#view-the-css-for-an-element) tutorial section, above.
 
-1. Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
-1. Right-click the `Add A Class To Me!` text, and then click **Inspect**.
+1. Right-click the `Add A Class To Me!` text, and then select **Inspect**.
 
-1. Click **.cls**.  DevTools reveals a text box where you can add classes to the selected element.
+1. Click **.cls**.  DevTools reveals a text box where you can add CSS classes to the page element that you're inspecting.
 
 1. Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.
 
@@ -117,14 +107,13 @@ The `color_me` class is applied to the element using the **.cls** section of the
 
 Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  DevTools supports `:active`, `:focus`, `:hover`, and `:visited`.
 
-> [!NOTE]
-> Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
+1. First, we recommend doing the [View the CSS for an element](#view-the-css-for-an-element) tutorial section, above.
 
-1. Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
 1. Hover on the `Hover Over Me!` text.  The background color changes.
 
-1. Right-click the `Hover Over Me!` text, and then click **Inspect**.
+1. Right-click the `Hover Over Me!` text, and then select **Inspect**.
 
 1. In the **Styles** panel, click **:hov**.
 
@@ -140,12 +129,11 @@ Toggling the `:hover` pseudostate on an element:
 
 Use the **Box Model** interactive diagram in the **Styles** panel to change the width, height, padding, margin, or border length of an element.
 
-> [!NOTE]
-> Complete the [View the CSS for an element](#view-the-css-for-an-element) tutorial before doing this one.
+1. First, we recommend doing the [View the CSS for an element](#view-the-css-for-an-element) tutorial section, above.
 
-1. Open [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) in a new tab or window.
+1. Open the [CSS Examples](https://microsoftedge.github.io/Demos/devtools-css-get-started/) demo page in a new window or tab.
 
-1. Right-click the `Change My Margin!` text, and then click **Inspect**.
+1. Right-click the `Change My Margin!` text, and then select **Inspect**.
 
 1. In the **Box Model** diagram in the **Styles** panel, hover on **padding**.  The element's padding is highlighted in the viewport.
 
@@ -172,21 +160,25 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 If you want to debug or test the Media Queries you defined in your CSS, use the following steps.
 
-1. Open the developer tools and select the **Toggle device toolbar** icon second on the top-left, or press `Ctrl`+`Shift`+`M` (`Cmd`+`Shift`+`M` on macOS).
+1. Open DevTools.  To do this, you can right-click in a webpage and then select **Inspect**.
 
-    Opening the device toolbar:
+1. Click the **Toggle device emulation** (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`M` (`Cmd`+`Shift`+`M` on macOS).
+
+   <!-- todo: update to show new tooltip: -->
 
    :::image type="content" source="../media/css-elements-media-queries-open-device-toolbar.msft.png" alt-text="Opening the device toolbar." lightbox="../media/css-elements-media-queries-open-device-toolbar.msft.png":::
 
-1. With the device toolbar open, select the `...` menu on the top-right and then click **View Media Queries**.  The colored bars displayed above the webpage represent the different media queries.
+1. With the device toolbar open, click the `...` menu on the top-right and then select **Show media queries**:
 
    :::image type="content" source="../media/css-elements-media-queries-showing-mq.msft.png" alt-text="Showing Media Queries in the Device Toolbar." lightbox="../media/css-elements-media-queries-showing-mq.msft.png":::
+
+   The colored bars above the webpage represent the different media queries.
        
 1. Hover on the boundaries in the bars to display the values of the different media queries.  Click each media query value to resize the web page to match.
 
-   :::image type="content" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Select Media Query from the preview bar." lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
+   :::image type="content" source="../media/css-elements-media-queries-select-bar.msft.png" alt-text="Selecting a media query from the preview bar." lightbox="../media/css-elements-media-queries-select-bar.msft.png":::
 
-1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment and then click `reveal in source code`.
+1. To debug media queries and open the CSS file in the `Sources` editor, right-click a bar segment and then select `reveal in source code`.
 
    :::image type="content" source="../media/css-elements-media-queries-reveal-in-sources.msft.png" alt-text="Reveal Media Queries in Sources Editor." lightbox="../media/css-elements-media-queries-reveal-in-sources.msft.png":::
 

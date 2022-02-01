@@ -218,23 +218,25 @@ In the previous figure, a `click` event caused a `Function Call` in `activitytab
 
 DevTools assigns scripts random colors.  In the previous figure, function requests from one script are colored light green.  Requests from another script are colored beige.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.
 
-See [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript requests.
-<!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
+If you want to hide the detailed flame chart of JavaScript requests, see [Disable JavaScript samples](#disable-javascript-samples), above.
 When JS samples are disabled, only high-level events such as `Event: click` and `Function Call` from the previous figure <!--`str` (?)--> are displayed.
+<!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
+
 
 ### View activities in a table
 
 After recording a page, you don't need to rely solely on the **Main** section to analyze activities.  DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
-*  When you want to view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
+*  To view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
 
-*  When you want to view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
+*  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
 
-*  When you want to view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
+*  To view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
+
 
 #### Root activities
 
-This section uses the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) page.
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
 <!-- You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
 
@@ -248,7 +250,7 @@ For an example of root activities, see the next section, "The Call Tree tab".
 
 #### The Call Tree tab
 
-This section uses the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) page.
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
 Use the **Call Tree** tab to view which [root activities](#root-activities) cause the most work.
 
@@ -270,7 +272,7 @@ Click **Show Heaviest Stack** (![Show Heaviest Stack.](../media/show-heaviest-st
 
 #### The Bottom-Up panel
 
-This section uses the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) page.
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
 Use the **Bottom-Up** panel to view which activities directly took up the most time in aggregate.
 
