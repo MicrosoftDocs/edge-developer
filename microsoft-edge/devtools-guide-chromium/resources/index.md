@@ -50,7 +50,10 @@ When you know the name of the resource that you want to inspect, the **Command M
 <!-- ====================================================================== -->
 ## Open resources in the Network tool
 
-See [Inspect the details of a resource](../network/index.md#inspect-the-details-of-the-resource).
+See [Inspect the details of a resource](../network/index.md#inspect-the-details-of-the-resource) in _Inspect network activity_.
+<!--why?-->
+
+<!-- need lead-in -->
 
 :::image type="content" source="../media/resources-network-response.msft.png" alt-text="Inspect a resource in the Network tool." lightbox="../media/resources-network-response.msft.png":::
 
@@ -64,7 +67,16 @@ The next section, [Browse resources in the Network panel](#browse-resources-in-t
 <!-- ====================================================================== -->
 ## Browse resources in the Network panel
 
-See [Log network activity](../network/index.md#log-network-activity).
+<!-- to do x, -->
+
+1. Open [Log network activity](../network/index.md#log-network-activity) (in the article  _Inspect network activity_) in a new tab or window.
+
+<!-- 1. Do the steps in that section, and then continue below. -->
+
+ <!-- open [link] in a new tab or window, and then continue below.. -->
+<!--why?-->
+
+<!-- need lead-in -->
 
 :::image type="content" source="../media/resources-network-resources.msft.png" alt-text="Page resources in the Network Log." lightbox="../media/resources-network-resources.msft.png":::
 
