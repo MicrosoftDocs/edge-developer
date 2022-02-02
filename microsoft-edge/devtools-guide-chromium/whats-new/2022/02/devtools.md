@@ -46,7 +46,7 @@ in the bottom pane, you can see the Summary view breaks down time with colors re
 Now navigate to the Event Log
 Hover over any of the activity icons (the color boxes) for each event and you'll see a tooltip that matches the colors/activities from the Summary section -->
 
-For more info on recording a performance profile, read [Record runtime performance](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#record-runtime-performance).
+For more info on recording a performance profile, read [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance).
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ Take a heap snapshot
 Note that the shallow size reported as a percentage now shows some decimal values
 If you have time, repeat this in Microsoft Edge 97 in Stable (before it updates on 2/3) and you should see the past behavior. -->
 
-To learn more about heap snapshots in the Memory tool, read [Record heap snapshots](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/memory-problems/heap-snapshots).
+To learn more about heap snapshots in the Memory tool, read [Record heap snapshots](../../../memory-problems/heap-snapshots.md).
 
 
 <!-- ====================================================================== -->
@@ -84,7 +84,7 @@ Resize the Search sidebar
 Note that the size of the textbox doesn't change as you resize the sidebar/pane
 Repeat steps 1-5 in Microsoft Edge Canary, or Beta, anything v98+ and you'll see that now the Search textbox resizes as the pane is resized. Refer to the PR and bug in the comments for more info. -->
 
-To learn more about how to use the Search pane in the Network tool, read [Search network headers and responses](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/network/#search-network-headers-and-responses).
+To learn more about how to use the Search pane in the Network tool, read [Search network headers and responses](../../../network/#search-network-headers-and-responses.md).
 
 
 <!-- ====================================================================== -->
@@ -97,7 +97,7 @@ In previous versions of Microsoft Edge, the icons in the Service Workers section
 
 <!-- [insert service worker update cycle picture] -->
 
-Additionally, in the **Elements** tool, the **Expand** icon for <script> tags was also misaligned.  This issue has also been fixed in Microsoft Edge 97.
+Additionally, in the **Elements** tool, the **Expand** icon for `<script>` tags was also misaligned.  This issue has also been fixed in Microsoft Edge 97.
 
 <!-- [insert Elements tool picture] -->
 
