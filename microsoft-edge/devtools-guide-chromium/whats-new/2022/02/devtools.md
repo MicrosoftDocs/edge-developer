@@ -84,7 +84,7 @@ Resize the Search sidebar
 Note that the size of the textbox doesn't change as you resize the sidebar/pane
 Repeat steps 1-5 in Microsoft Edge Canary, or Beta, anything v98+ and you'll see that now the Search textbox resizes as the pane is resized. Refer to the PR and bug in the comments for more info. -->
 
-To learn more about how to use the Search pane in the Network tool, read [Search network headers and responses](../../../network/#search-network-headers-and-responses.md).
+To learn more about how to use the Search pane in the Network tool, read [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses).
 
 
 <!-- ====================================================================== -->
