@@ -398,7 +398,10 @@ The Focus Mode experiment provides an **Activity Bar**, which is a compact horiz
 
 :::image type="content" source="../media/experimental-features/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
 
-See also [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
+See also:
+
+* [The Activity Bar in Focus Mode](../about-tools.md#the-activity-bar-in-focus-mode) in _About the list of tools_.
+* [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) - draft documentation of this experimental feature, in the Explainers repo.
 
 
 <!-- ====================================================================== -->

@@ -9,7 +9,7 @@ ms.date: 02/02/2022
 ---
 # About the list of tools
 
-There are currently around 35 tools in DevTools, not counting features that are within a tool.  There are:
+There are currently 35 tools in DevTools, not counting features that are within a tool.  There are:
 
 *  2 toolbar icons: the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)).
 
@@ -36,11 +36,9 @@ These are not considered tools, but are ways to access tools:
 <!-- ====================================================================== -->
 ## The More Tools menus
 
-The three **More tools** menus omit the non-closable tools (**Elements**, **Console**, **Sources**) and the toolbar icon tools (**Inspect tool**, **Device Emulation**).
+The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
-The **More Tools** (**+**) menu on the main toolbar and Drawer toolbar contain the same tools, regardless of whether they are Panel tools or Drawer tools.  Open tools are omitted.  In contrast, the **Customize and control DevTools** > **More tools** menu includes tools that are already open.
-
-<!-- detail: which toolbar the tool opens in.  Different behavior for the 3 More Tools menus. -->
+The **Customize and control DevTools** > **More tools** menu is static: it always lists all tab tools except for **Elements**, **Console**, **Sources**.  The selected tool opens in the main toolbar if its a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
 
 
 <!-- ====================================================================== -->
@@ -48,19 +46,17 @@ The **More Tools** (**+**) menu on the main toolbar and Drawer toolbar contain t
 
 In the **Command Menu**:
 
-* _Panel tools_ are tools which open in the main toolbar by default, or in the **Activity Bar** when using **Focus Mode**.
+* _Panel tools_ are tools which open in the main toolbar by default.
 
 * _Drawer tools_ are tools which open in the Drawer toolbar by default, at the bottom of DevTools.  Press `Esc` to show or hide the Drawer.
 
+The **Command Menu** first lists the Panel tools, and then the Drawer tools:
+
 ![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools.](media/command-menu-panel-vs-drawer-tools.png)
 
-The three **More tools** menus list all the Panel tools and Drawer tools in alphabetical order, without differentiating Panel tools vs. Drawer tools.  In contrast, the **Command Menu** first lists the Panel tools, and then the Drawer tools.
-
-You can move any closable tab tool from the Panel (main) toolbar to the Drawer tool, or vice versa.  Right-click the tool's tab and then select **Move to bottom** or **Move to top**.
+To move a tool to the other toolbar, right-click the tool's tab and then select **Move to bottom** or **Move to top**.
 
 To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).  Or, click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
-
-In **Focus Mode**, the UI is simpler; the only tool on the **Drawer** is the **Console** tool.  Even if you use the **Command Menu** to open a Drawer tool, the tool isn't opened on the Drawer, and can only be pinned to the Activity Bar, not placed next to the Console 
 
 
 <!-- ====================================================================== -->
@@ -69,6 +65,8 @@ In **Focus Mode**, the UI is simpler; the only tool on the **Drawer** is the **C
 :::image type="icon" source="whats-new/media/2020/06/experimental-tag-14px.msft.png":::
 
 The main toolbar can be (in effect) converted to showing icons rather than tabs with text, by switching to **Focus Mode**, where it becomes the **Activity Bar**.  The main toolbar shows tools as labelled tabs.  In contrast, the **Activity Bar** in **Focus Mode** shows tools as icons.
+
+In Focus Mode, when you use the **Command Menu** to open a tool, regardless of whether it's a Panel or Drawer tool, the tool is opened, but isn't automatically added to the Activity Bar.
 
 The **Activity Bar** is a compact toolbar that works well with a smaller window.  Pin your current main tools to the **Activity Bar**.  The **Activity Bar** can be placed vertically or horizontally.
 
@@ -82,13 +80,18 @@ To switch to Focus Mode to show the Activity Bar instead of the main toolbar wit
 
 1. Click the **Close** (**X**) button in the upper right, and then click the **Reload DevTools** button.
 
-   The Activity Bar appears on the left.  The main toolbar goes away.  The Drawer toolbar is replaced by a **Quick View** list of the tools, instead of tabs.
+   The Activity Bar appears on the left.  The main toolbar goes away.
+
+   The Drawer toolbar is replaced by a **Quick View** list of the tools, instead of tabs.  All of the tab tools are available in the **Quick View** list (including **Elements**, **Console**, and **Sources**).
 
 :::image type="content" source="media/experimental-features/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
 
-For draft documentation of this experimental feature, see [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) in the Explainers repo.
+See also:
 
-<!-- See also [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_. -->
+* [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) - draft documentation of this experimental feature, in the Explainers repo.
+<!--
+* [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_.
+-->
 
 
 <!-- ====================================================================== -->
