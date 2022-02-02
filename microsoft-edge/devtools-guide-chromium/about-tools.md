@@ -27,6 +27,10 @@ By this accounting, DevTools provides 35 tools:
 
 ![All the tools of DevTools, including 2 toolbar icons, 11 default tool tabs, and 30 'More tools' menu items.](media/all-tools.png)
 
+Zoomable image:
+
+:::image type="content" source="media/all-tools.png" alt-text="All the tools of DevTools, including 2 toolbar icons, 11 default tool tabs, and 30 'More tools' menu items." lightbox="media/all-tools.png":::
+
 These are not considered tools, but are ways to access tools:
 *  The **Drawer** is an additional toolbar for tool tabs.
 *  The **Command Menu** is a way to directly use features of tools.
@@ -64,11 +68,13 @@ To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Comma
 <!-- ====================================================================== -->
 ## The Activity Bar in Focus Mode
 
-The main toolbar can be (in effect), converted to showing icons rather than tabs with text, by switching to **Focus Mode**, where it becomes the **Activity Bar**.  The main toolbar shows tools as labelled tabs.  In contrast, the **Activity Bar** in **Focus Mode** shows tools as icons.
+The main toolbar can be (in effect) converted to showing icons rather than tabs with text, by switching to **Focus Mode**, where it becomes the **Activity Bar**.  The main toolbar shows tools as labelled tabs.  In contrast, the **Activity Bar** in **Focus Mode** shows tools as icons.
 
 The Activity Bar can be placed vertically or horizontally.
 
 To switch to **Focus Mode** to show the **Activity Bar** instead of the main toolbar with labeled tabs, select the **Settings** > **Experiments** > **Focus Mode** checkbox.
+
+See [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_.
 
 
 <!-- ====================================================================== -->
