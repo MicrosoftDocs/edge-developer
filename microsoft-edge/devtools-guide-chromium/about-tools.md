@@ -60,41 +60,6 @@ To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Comma
 
 
 <!-- ====================================================================== -->
-## The Activity Bar in Focus Mode
-
-:::image type="icon" source="whats-new/media/2020/06/experimental-tag-14px.msft.png":::
-
-The main toolbar can be (in effect) converted to showing icons rather than tabs with text, by switching to **Focus Mode**, where it becomes the **Activity Bar**.  The main toolbar shows tools as labelled tabs.  In contrast, the **Activity Bar** in **Focus Mode** shows tools as icons.
-
-In Focus Mode, when you use the **Command Menu** to open a tool, regardless of whether it's a Panel or Drawer tool, the tool is opened, but isn't automatically added to the Activity Bar.
-
-The **Activity Bar** is a compact toolbar that works well with a smaller window.  Pin your current main tools to the **Activity Bar**.  The **Activity Bar** can be placed vertically or horizontally.
-
-To remove a tool, right-click its icon and then select **Remove from activity bar**.  However, the **Elements**, **Console**, and **Sources** tools are always present on the **Activity Bar**.
-
-To switch to Focus Mode to show the Activity Bar instead of the main toolbar with labeled tabs:
-
-1. In DevTools, select **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) > **Experiments**.
-
-1. Select the **Focus Mode** checkbox.
-
-1. Click the **Close** (**X**) button in the upper right, and then click the **Reload DevTools** button.
-
-   The Activity Bar appears on the left.  The main toolbar goes away.
-
-   The Drawer toolbar is replaced by a **Quick View** list of the tools, instead of tabs.  All of the tab tools are available in the **Quick View** list (including **Elements**, **Console**, and **Sources**).
-
-:::image type="content" source="media/experimental-features/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
-
-See also:
-
-* [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) - draft documentation of this experimental feature, in the Explainers repo.
-<!--
-* [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_.
--->
-
-
-<!-- ====================================================================== -->
 ## Closing all the tabs at once
 
 To close all of the optional tabs at once:
@@ -122,3 +87,4 @@ To restore all the default tabs on the main toolbar:
 ## See also
  
 * [Overview of DevTools](index.md) - Similar to the present article, but broader coverage, with a top-level introduction of DevTools.
+* [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_.  In **Focus Mode**, the **Activity Bar** is a compact replacement for the main toolbar, and the **Quick View** list is a replacement for the tabs on the Drawer toolbar.

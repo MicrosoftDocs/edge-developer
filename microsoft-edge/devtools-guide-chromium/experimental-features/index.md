@@ -394,13 +394,39 @@ To use the **Network Console**:
 <!-- ====================================================================== -->
 ## Focus Mode
 
-The Focus Mode experiment provides an **Activity Bar**, which is a compact horizontal or vertical toolbar that keeps the DevTools UI clean and works well with a smaller window.  Pin your current main tools to the Activity Bar.
+The Focus Mode experiment provides an **Activity Bar**, which is a compact horizontal or vertical toolbar that works well in a smaller window.  The activity bar contains small icons instead of tabs with text labels, and it replaces the main toolbar.
 
-:::image type="content" source="../media/experimental-features/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
+*  The **Activity Bar** is a compact replacement for the main toolbar.
+*  The **Quick View** list is a replacement for the tabs on the Drawer toolbar.
+
+![Focus Mode, including the Activity Bar.](../media/experimental-features/focus-mode.png)
+
+To add a tool to the activity bar, open the tool.
+
+To remove a tool from the Activity Bar:
+
+*  Right-click its icon and then select **Remove from activity bar**.
+
+The following tools are always present on the **Activity Bar**, and cannot be removed:
+
+*  The **Inspect** tool and Device Emulation.
+*  The **Elements**, **Console**, and **Sources** tools.
+
+To switch to Focus Mode to show the Activity Bar instead of the main toolbar:
+
+1. In DevTools, select **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) > **Experiments**.
+
+1. Select the **Focus Mode** checkbox.
+
+1. Click the **Close** (**X**) button in the upper right, and then click the **Reload DevTools** button.
+
+   The Activity Bar appears on the left.  The main toolbar goes away.
+
+   The Drawer toolbar is replaced by a **Quick View** list of the tools, instead of tabs.  All of the tab tools are available in the **Quick View** list (including **Elements**, **Console**, and **Sources**).  Drag the Drawer up to expand it.
 
 See also:
 
-* [The Activity Bar in Focus Mode](../about-tools.md#the-activity-bar-in-focus-mode) in _About the list of tools_.
+* [About the list of tools](../about-tools.md).
 * [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) - draft documentation of this experimental feature, in the Explainers repo.
 
 
