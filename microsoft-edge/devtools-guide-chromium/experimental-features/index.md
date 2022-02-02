@@ -414,7 +414,7 @@ The following tools are always present on the **Activity Bar**, and cannot be re
 
 To switch to Focus Mode to show the Activity Bar instead of the main toolbar:
 
-1. In DevTools, select **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) > **Experiments**.
+1. In DevTools, select **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Experiments**.
 
 1. Select the **Focus Mode** checkbox.
 
