@@ -1,31 +1,42 @@
 ---
-title: About the list of tools in DevTools
+title: About the list of tools
 description: About the list of tools in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/28/2021
+ms.date: 02/02/2022
 ---
-# About the list of tools in DevTools
+# About the list of tools
 
-There are currently around 30 tools in DevTools, not counting features that are within a tool.  There are:
+There are currently around 35 tools in DevTools, not counting features that are within a tool.  There are:
 
-* Three non-closeable tools (Elements, Console, Sources).
+*  2 toolbar icons: the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)).
 
-* Two toolbar icon tools (the **Inspect tool** (icon) and **Device Emulation** (icon)).
+*  11 tabs on the toolbar by default:
+   *  3 tool tabs that are always open: **Elements**, **Console**, and **Sources**.
+   *  8 tool tabs that can be closed.
 
-* 11 default tools (tabs on the main toolbar), including the three non-closable tools.
+*  30 tools in the **Customize** > **More tools** menu.
+   *  Lists the tabs that can be closed.
 
-* Around 30 tools on the **Customize and control DevTools** > **More tools** menu.
+By this accounting, DevTools provides 35 tools:
+*  2 toolbar icons.
+*  3 non-closable tabs.
+*  30 closable tabs.
 
-The **Command Menu** isn't considered a tool, but is a way to select and use the tools, including directly using individual features of tools.
+![All the tools of DevTools, including 2 toolbar icons, 11 default tool tabs, and 30 'More tools' menu items.](media/all-tools.png)
+
+These are not considered tools, but are ways to access tools:
+*  The **Drawer** is an additional toolbar for tool tabs.
+*  The **Command Menu** is a way to directly use features of tools.
+*  **Settings** pages.
 
 
 <!-- ====================================================================== -->
 ## The More Tools menus
 
-The three **More tools** menus omit the non-closeable tools (**Elements**, **Console**, **Sources**) and the toolbar icon tools (**Inspect tool**, **Device Emulation**).
+The three **More tools** menus omit the non-closable tools (**Elements**, **Console**, **Sources**) and the toolbar icon tools (**Inspect tool**, **Device Emulation**).
 
 The **More Tools** (**+**) menu on the main toolbar and Drawer toolbar contain the same tools, regardless of whether they are Panel tools or Drawer tools.  Open tools are omitted.  In contrast, the **Customize and control DevTools** > **More tools** menu includes tools that are already open.
 
@@ -37,13 +48,17 @@ The **More Tools** (**+**) menu on the main toolbar and Drawer toolbar contain t
 
 In the **Command Menu**:
 
-* _Panel tools_ are tools which open in the main toolbar, which is at the top of DevTools by default, or in the **Activity Bar** when using **Focus Mode**.
+* _Panel tools_ are tools which open in the main toolbar by default, or in the **Activity Bar** when using **Focus Mode**.
 
-* _Drawer tools_ are tools which open in the Drawer by default, at the bottom of DevTools.
+* _Drawer tools_ are tools which open in the Drawer toolbar by default, at the bottom of DevTools.  Press `Esc` to show or hide the Drawer.
+
+![The Command Menu, showing the Panel tools grouped together, and then the Drawer tools.](media/command-menu-panel-vs-drawer-tools.png)
 
 The three **More tools** menus list all the Panel tools and Drawer tools in alphabetical order, without differentiating Panel tools vs. Drawer tools.  In contrast, the **Command Menu** first lists the Panel tools, and then the Drawer tools.
 
-You can move any tool from the Panel (main) toolbar to the Drawer tool, or vice versa, except for the toolbar icon tools, which are always on the main toolbar.  Right-click the tool's tab.  <!-- can you do that in Activity Bar/Focus Mode? -->
+You can move any closable tab tool from the Panel (main) toolbar to the Drawer tool, or vice versa.  Right-click the tool's tab and then select **Move to bottom** or **Move to top**.  <!-- can you do that in Activity Bar/Focus Mode? -->
+
+To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).  Or, click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
 
 
 <!-- ====================================================================== -->
@@ -57,6 +72,28 @@ To switch to **Focus Mode** to show the **Activity Bar** instead of the main too
 
 
 <!-- ====================================================================== -->
+## Closing all the tabs at once
+
+To close all of the optional tabs at once:
+
+*  Right-click an optional tab on the toolbar (a tab that has an **x** button), and then select **Close all**.
+
+   Only the **Elements**, **Console**, and **Sources** remain on the main toolbar.  (The **Drawer** toolbar is unaffected.)
+
+   If you closed all tabs on the **Drawer**, only the **Console** tab remains on the **Drawer** toolbar.  (The main toolbar is unaffected.)
+
+
+<!-- ====================================================================== -->
+## Restoring all the default tabs at once
+
+To restore all the default tabs on the main toolbar:
+
+*  In DevTools, select **Settings** > **Preferences** > **Restore defaults and refresh**.
+
+   The main toolbar again has all of the default tabs.  (And the **Drawer** then has only the **Console** tab.)
+
+
+<!-- ====================================================================== -->
 ## See also
  
-* [Overview of DevTools](index.md)
+* [Overview of DevTools](index.md) - Similar to the present article, but broader coverage, with a top-level introduction of DevTools.
