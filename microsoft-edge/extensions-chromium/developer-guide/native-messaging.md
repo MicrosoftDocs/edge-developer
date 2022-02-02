@@ -206,6 +206,8 @@ To store the manifest file:
    ~/.config/microsoft-edge/NativeMessagingHosts
    ```
 
+* * *
+
 
 <!-- ====================================================================== -->
 > [!NOTE]

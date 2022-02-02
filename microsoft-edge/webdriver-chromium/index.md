@@ -13,8 +13,11 @@ ms.date: 01/20/2022
 WebDriver allows you to automate Microsoft Edge by simulating user interaction.  WebDriver tests and simulations differ from JavaScript unit tests in the following ways:
 
 *   WebDriver accesses functionality and information that's not available to JavaScript running in browsers.
+
 *   WebDriver simulates user events or OS-level events more accurately than JavaScript unit tests.
+
 *   WebDriver manages multiple windows, tabs, and webpages in a single test session.
+
 *   WebDriver runs multiple sessions of Microsoft Edge on a specific machine.
 
 
@@ -81,6 +84,8 @@ If you're using [Selenium Tools for Microsoft Edge](https://github.com/microsoft
 1. Update your tests to use the built-in `EdgeDriver` and related classes that Selenium 4 provides instead.
 
 1. Remove all usages of the `EdgeOptions.UseChromium` property.  This property no longer exists in Selenium 4, because Selenium 4 supports only Microsoft Edge (Chromium).
+
+<!-- apparently decorative only; not a tab-end indicator: -->
 
 * * *
 

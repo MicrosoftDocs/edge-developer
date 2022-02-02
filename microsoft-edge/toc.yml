@@ -863,21 +863,21 @@
       items:
         - name: DevTools Protocol
           href: test-and-automation/devtools-protocol.md
-        - name: Origin Trials
+        - name: Use Origin Trials in Microsoft Edge
           href: origin-trials/index.md
-        - name: Playwright
+        - name: Use Playwright to automate and test in Microsoft Edge
           href: playwright/index.md
-        - name: Puppeteer
+        - name: Puppeteer overview
           href: puppeteer/index.md
         - name: WebDriver
           items:
-            - name: WebDriver overview
+            - name: Use WebDriver to automate Microsoft Edge
               href: webdriver-chromium/index.md
-            - name: Automate IE mode
+            - name: Use Internet Explorer Driver to automate IE mode in Microsoft Edge
               href: webdriver-chromium/ie-mode.md
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-        - name: webhint
+        - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
 # =============================================================================
     - name: Web platform

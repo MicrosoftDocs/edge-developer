@@ -1,13 +1,13 @@
 ---
-title: Moving users to Microsoft Edge from Internet Explorer
-description: Moving users to Microsoft Edge from Internet Explorer.
+title: Move users to Microsoft Edge from Internet Explorer
+description: Move users to Microsoft Edge from Internet Explorer.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 11/13/2020
 ---
-# Moving users to Microsoft Edge from Internet Explorer
+# Move users to Microsoft Edge from Internet Explorer
 
 Many modern websites have designs that are incompatible with Internet Explorer.  When an Internet Explorer user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.
 
