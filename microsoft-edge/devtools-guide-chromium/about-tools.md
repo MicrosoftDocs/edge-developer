@@ -25,16 +25,12 @@ By this accounting, DevTools provides 35 tools:
 *  3 non-closable tabs.
 *  30 closable tabs.
 
-![All the tools of DevTools, including 2 toolbar icons, 11 default tool tabs, and 30 'More tools' menu items.](media/all-tools.png)
-
-Zoomable image:
-
-:::image type="content" source="media/all-tools.png" alt-text="All the tools of DevTools, including 2 toolbar icons, 11 default tool tabs, and 30 'More tools' menu items." lightbox="media/all-tools.png":::
+:::image type="content" source="media/all-tools.png" alt-text="All the tools of DevTools, including 2 toolbar icons, 3 permanent tool tabs, and 30 'More tools' tabs." lightbox="media/all-tools.png":::
 
 These are not considered tools, but are ways to access tools:
 *  The **Drawer** is an additional toolbar for tool tabs.
 *  The **Command Menu** is a way to directly use features of tools.
-*  **Settings** pages.
+*  The **Settings** pages.
 
 
 <!-- ====================================================================== -->
@@ -60,21 +56,39 @@ In the **Command Menu**:
 
 The three **More tools** menus list all the Panel tools and Drawer tools in alphabetical order, without differentiating Panel tools vs. Drawer tools.  In contrast, the **Command Menu** first lists the Panel tools, and then the Drawer tools.
 
-You can move any closable tab tool from the Panel (main) toolbar to the Drawer tool, or vice versa.  Right-click the tool's tab and then select **Move to bottom** or **Move to top**.  <!-- can you do that in Activity Bar/Focus Mode? -->
+You can move any closable tab tool from the Panel (main) toolbar to the Drawer tool, or vice versa.  Right-click the tool's tab and then select **Move to bottom** or **Move to top**.
 
 To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).  Or, click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) button and then select **Run command**.
+
+In **Focus Mode**, the UI is simpler; the only tool on the **Drawer** is the **Console** tool.  Even if you use the **Command Menu** to open a Drawer tool, the tool isn't opened on the Drawer, and can only be pinned to the Activity Bar, not placed next to the Console 
 
 
 <!-- ====================================================================== -->
 ## The Activity Bar in Focus Mode
 
+:::image type="icon" source="whats-new/media/2020/06/experimental-tag-14px.msft.png":::
+
 The main toolbar can be (in effect) converted to showing icons rather than tabs with text, by switching to **Focus Mode**, where it becomes the **Activity Bar**.  The main toolbar shows tools as labelled tabs.  In contrast, the **Activity Bar** in **Focus Mode** shows tools as icons.
 
-The Activity Bar can be placed vertically or horizontally.
+The **Activity Bar** is a compact toolbar that works well with a smaller window.  Pin your current main tools to the **Activity Bar**.  The **Activity Bar** can be placed vertically or horizontally.
 
-To switch to **Focus Mode** to show the **Activity Bar** instead of the main toolbar with labeled tabs, select the **Settings** > **Experiments** > **Focus Mode** checkbox.
+To remove a tool, right-click its icon and then select **Remove from activity bar**.  However, the **Elements**, **Console**, and **Sources** tools are always present on the **Activity Bar**.
 
-See [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_.
+To switch to Focus Mode to show the Activity Bar instead of the main toolbar with labeled tabs:
+
+1. In DevTools, select **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) > **Experiments**.
+
+1. Select the **Focus Mode** checkbox.
+
+1. Click the **Close** (**X**) button in the upper right, and then click the **Reload DevTools** button.
+
+   The Activity Bar appears on the left.  The main toolbar goes away.  The Drawer toolbar is replaced by a **Quick View** list of the tools, instead of tabs.
+
+:::image type="content" source="media/experimental-features/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
+
+For draft documentation of this experimental feature, see [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) in the Explainers repo.
+
+<!-- See also [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_. -->
 
 
 <!-- ====================================================================== -->
@@ -94,9 +108,11 @@ To close all of the optional tabs at once:
 
 To restore all the default tabs on the main toolbar:
 
-*  In DevTools, select **Settings** > **Preferences** > **Restore defaults and refresh**.
+1. In DevTools, select **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) > **Preferences**.
 
-   The main toolbar again has all of the default tabs.  (And the **Drawer** then has only the **Console** tab.)
+1. Click the **Restore defaults and refresh** button.
+
+   The main toolbar again has all of the default tabs.  The **Drawer** then has only the **Console** tab.
 
 
 <!-- ====================================================================== -->
