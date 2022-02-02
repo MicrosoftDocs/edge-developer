@@ -69,7 +69,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 After you've acquired the necessary authorization for your application, get access tokens for APIs.  To get a token using the client credentials grant, send a POST request to the Access token URL (the OAuth token).  The tenant information is available in the URL that you received in the **Before you begin** steps above.
 
 ```rest
-Endpoint: https://login.microsoftonline.com/msedgeaddonsapi.onmicrosoft.com/oauth2/v2.0/token
+Endpoint: https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
 Type: POST
 Header Parameters: Content-Type: application/x-www-form-urlencoded
 ```
@@ -85,7 +85,7 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 -d "client_secret={$Client_Secret}" \
 -d "grant_type=client_credentials" \
 -v \
-https://login.microsoftonline.com/msedgeaddonsapi.onmicrosoft.com/oauth2/v2.0/token
+https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2.0/token
 ```
 
 ### Sample response
