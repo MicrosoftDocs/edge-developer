@@ -68,42 +68,37 @@ Scenarios for using user data folder, in general; not changing:
 * Uninstalling the app and you want to clean up the data.
 * Deleting the user data folder; resetting the WebView2. -->
 
-Cases where the WebView2 runtime doesn't change the default location:
 
-*  If your WebView2 app already specifies the location of the user data folder, the WebView2 Runtime doesn't change the default location.
-<!-- better?
-*  If your WebView2 app already specifies the location of the user data folder, the WebView2 Runtime doesn't change the location to use the default location instead.
+<!--
+Cases where the WebView2 runtime doesn't use the default location:
+
+*  If your WebView2 app specifies the location of the user data folder, the WebView2 Runtime uses that location rather than the default location.
+
+*  If you don't update your WebView2 SDK, the WebView2 Runtime uses the existing location of the user data folder, rather than the default location.
+
+*  If you run your WebView2 app before this change, and WebView2 created the user data folder for you, the WebView2 Runtime uses that existing user data folder location.  The WebView2 Runtime doesn't change the user data folder location.
+
+possible rewrite of the above:
 -->
 
-*  If you don't update your WebView2 SDK, the WebView2 Runtime doesn't change the default location.
-<!-- better?
-If you don't update your WebView2 SDK, the WebView2 Runtime doesn't change the location to use the default location instead.
--->
+For any new user data folders that are created:
 
-*  If you run your WebView2 app before the change<!-- clarify --> and WebView2 created the user data folder for you, the WebView2 Runtime uses that user data folder location;
-   the WebView2 Runtime doesn't change the default user data folder location.
-   <!-- better?:
-   the WebView2 Runtime doesn't change the location of the user data folder to use the default location instead.
-   -->
+*  If your app specifies the user data folder location, WebView2 creates the new user data folder in your specified location.
+
+*  If your app doesn't specify the user data folder location, WebView2 creates the new user data folder in the default location.
+
+WebView2 doesn't change the location of any existing user data folders.
 
 
 ### APIs to retrieve the user data folder location
 
-To retrieve the user data folder location for an existing WebView2 app, use either of the following API items:
-
-* Existing method: [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync) - You can use the `userDataFolder` parameter.
-<!-- verbose link, probably don't need:
-/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync?view=webview2-dotnet-1.0.1072.54#microsoft-web-webview2-core-corewebview2environment-createasync(system-string-system-string-microsoft-web-webview2-core-corewebview2environmentoptions) -->
-* New property: [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder) - You can use this read-only property to see what the user data folder was set to.  This property returns the existing user data folder location.
-<!-- verbose link, probably don't need:
-/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1072.54
--->
+To find out what the user data folder was set to, use the [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).  This read-only property returns the user data folder location for an existing WebView2 app.
 
 
 <!-- ====================================================================== -->
 ## Specifying another location
 
-tbd
+You can override the default location where new user data folders will be created.  Set the location where new user data folders will be created, by calling the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), which takes a `userDataFolder` parameter.
 
 
 <!-- ====================================================================== -->
@@ -147,6 +142,8 @@ User data folders are created automatically by WebView2.  WebView2 developers co
 
 <!-- ====================================================================== -->
 ## Create user data folders
+
+By default, WebView2 creates a user data folder in the default location.  The default location works well for most apps.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate read and write permissions for the WebView2 application runtime.
 
 To specify the location of the user data folder, include the `userDataFolder` parameter when calling [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.  When `userDataFolder` is not specified, WebView2 creates user data folders at default locations as follows:
 
