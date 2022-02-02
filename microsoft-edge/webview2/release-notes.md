@@ -10,7 +10,7 @@ ms.date: 11/29/2021
 ---
 # Release notes for WebView2 SDK
 
-The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence.  Review the following content for up-to-date information on product announcements, additions, modifications, and breaking changes to the APIs.
+The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
 > [!NOTE]
 > Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:

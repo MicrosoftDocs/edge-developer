@@ -16,11 +16,11 @@ To use the Chrome DevTools Protocol API in a WebView2 app, do either of the foll
 
 *  Install and use the [Microsoft.Web.WebView2.DevToolsProtocolExtension (Preview)](https://www.nuget.org/packages/Microsoft.Web.WebView2.DevToolsProtocolExtension) NuGet package (.NET).
 
-*  Run one of the following methods:
+*  Or, run one of the following methods:
 
-    *  .NET: [CallDevToolsProtocolAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_), [GetDevToolsProtocolEventReceiver](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true).
+   *  .NET: [CallDevToolsProtocolAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync?view=webview2-dotnet-1.0.774.44&preserve-view=true#Microsoft_Web_WebView2_Core_CoreWebView2_CallDevToolsProtocolMethodAsync_System_String_System_String_), [GetDevToolsProtocolEventReceiver](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver?view=webview2-dotnet-1.0.774.44&preserve-view=true).
 
-    *  Win32 C/C++: [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.774.44&preserve-view=true#calldevtoolsprotocolmethod), [ICoreWebView2DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44&preserve-view=true).
+   *  Win32 C/C++: [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.774.44&preserve-view=true#calldevtoolsprotocolmethod), [ICoreWebView2DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver?view=webview2-1.0.774.44&preserve-view=true).
 
 
 <!-- ====================================================================== -->
@@ -43,36 +43,36 @@ To create an `HTML file` to find your geolocation, complete following the action
 
 1. Copy and paste the following code in your new `.html` file:
 
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Geolocation Finder</title>
-    </head>
-    <body>
-        <button id="display">Display Location</button>
-        <div id="message"></div>
-    </body>
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <title>Geolocation Finder</title>
+   </head>
+   <body>
+      <button id="display">Display Location</button>
+      <div id="message"></div>
+   </body>
 
-    <script>
-        const btn = document.getElementById('display');
-        // Find the user location.
-        btn.addEventListener('click', function () {
-            navigator.geolocation.getCurrentPosition(onSuccess, onError);
-        });
+   <script>
+      const btn = document.getElementById('display');
+      // Find the user location.
+      btn.addEventListener('click', function () {
+         navigator.geolocation.getCurrentPosition(onSuccess, onError);
+      });
 
-        // Update message to display the latitude and longitude coordinates.
-        function onSuccess(position) {
-            const {latitude, longitude} = position.coords;
-            message.textContent = `Your location: (${latitude},${longitude})`;
-        }
+      // Update message to display the latitude and longitude coordinates.
+      function onSuccess(position) {
+         const {latitude, longitude} = position.coords;
+         message.textContent = `Your location: (${latitude},${longitude})`;
+      }
 
-        function onError() {
-            message.textContent = `Operation Failed`;
-        }
-    </script>
-    </html>
-    ```
+      function onError() {
+         message.textContent = `Operation Failed`;
+      }
+   </script>
+   </html>
+   ```
 
 1. Save the `.html` file with the filename `geolocation.html`.
 
@@ -92,13 +92,13 @@ To create an `HTML file` to find your geolocation, complete following the action
     * [Get started with WebView2](../get-started/get-started.md)
     * [WebView2 samples](https://github.com/MicrosoftEdge/WebView2Samples)
 
-1. Set the initial navigation of the WebView2 control to `geolocation.html`.
+1. Set the initial navigation of the WebView2 control to `geolocation.html`:
 
    ```csharp
    webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
    ```
 
-1. Make sure the `geolocation.html` file is displayed in your WebView2 control app.
+1. Make sure the `geolocation.html` file is displayed in your WebView2 control app:
 
    :::image type="content" source="./media/initial-geolocate.png" alt-text="The geolocation.html file, displayed in your WebView2 control app." lightbox="./media/initial-geolocate.png":::
 
@@ -122,47 +122,49 @@ To install the package:
 <!-- ====================================================================== -->
 ## Step 4: Use DevTools Protocol Helper
 
-1. Add the `DevToolsProtocolExtension` namespace to your project.
+1. Add the `DevToolsProtocolExtension` namespace to your project:
 
-    ```csharp
-    using Microsoft.Web.WebView2.Core;
-    using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
-    ```
+   ```csharp
+   using Microsoft.Web.WebView2.Core;
+   using Microsoft.Web.WebView2.Core.DevToolsProtocolExtension;
+   ```
 
-1. Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocation.html`.
+1. Instantiate the `DevToolsProtocolHelper` object and navigate to `geolocation.html`:
 
-    ```csharp
-    async void InitializeAsync()
-    {
-        await webView.EnsureCoreWebView2Async(null);
-        DevToolsProtocolHelper helper = webView.CoreWebView2.GetDevToolsProtocolHelper();
+   ```csharp
+   async void InitializeAsync()
+   {
+      await webView.EnsureCoreWebView2Async(null);
+      DevToolsProtocolHelper helper = webView.CoreWebView2.GetDevToolsProtocolHelper();
 
-        webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
-    }
-    ```
+      webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
+   }
+   ```
 
-1. Run the [setGeoLocationOverrideAsync](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride) method.  See [setGeolocationOverride](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride).
+1. Run the [setGeoLocationOverrideAsync](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride) method:
 
-    ```csharp
-    async void InitializeAsync()
-    {
-        await webView.EnsureCoreWebView2Async(null);
-        DevToolsProtocolHelper helper = webview.CoreWebView2.GetDevToolsProtocolHelper();
+   ```csharp
+   async void InitializeAsync()
+   {
+      await webView.EnsureCoreWebView2Async(null);
+      DevToolsProtocolHelper helper = webview.CoreWebView2.GetDevToolsProtocolHelper();
 
-        webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
+      webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
 
-        // Latitude and longitude for Paris, France.
-        double latitude = 48.857024082572565;
-        double longitude = 2.3161581601457386;
-        double accuracy = 1;
-        await helper.Emulation.setGeolocationOverrideAsync(latitude, longitude, accuracy);
+      // Latitude and longitude for Paris, France.
+      double latitude = 48.857024082572565;
+      double longitude = 2.3161581601457386;
+      double accuracy = 1;
+      await helper.Emulation.setGeolocationOverrideAsync(latitude, longitude, accuracy);
 
-    }
-    ```
+   }
+   ```
+
+   For more information about the method, see [setGeolocationOverride](https://chromedevtools.github.io/devtools-protocol/tot/Emulation/#method-setGeolocationOverride).
 
 1. Run your app.
 
-1. To display the coordinates of Paris, France, choose the **Display Location** button.
+1. To display the coordinates of Paris, France, click the **Display Location** button:
 
 :::image type="content" source="./media/final-location-cdp.png" alt-text="Display the .html file in a WebView2 control with the coordinates for Paris." lightbox="./media/final-location-cdp.png":::
 

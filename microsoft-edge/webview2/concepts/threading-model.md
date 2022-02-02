@@ -22,8 +22,7 @@ The WebView2 must be created on a UI thread that uses a message pump.  All callb
 
 The only exception is for the `Content` property of `CoreWebView2WebResourceRequest`.  The `Content` property stream is read from a background thread.  The stream should be agile or should be created from a background STA, to prevent performance degradation of the UI thread.
 
-> [!NOTE]
-> Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookies' properties (such as `c.Domain`) after such a call will throw an exception.
+Object properties are single-threaded.  For example, calling `CoreWebView2CookieManager.GetCookiesAsync(null)` from a thread other than `Main` will succeed (that is, cookies are returned); however, attempting to access the cookies' properties (such as `c.Domain`) after such a call will throw an exception.
 
 
 <!-- ====================================================================== -->
@@ -31,7 +30,7 @@ The only exception is for the `Content` property of `CoreWebView2WebResourceRequ
 
 Callbacks, including event handlers and completion handlers, run serially.  After you run an event handler and begin a message loop, an event handler or completion callback cannot be run in a re-entrant manner.  If a WebView2 app tries to create a nested message loop or modal UI synchronously within a WebView event handler, this approach leads to attempted reentrancy.  Such reentrancy isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
 
-For example, the following coding approach isn't supported.
+For example, the following coding approach isn't supported:
 
 ```csharp
 private void Btn_Click(object sender, EventArgs e)
@@ -51,7 +50,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 }
 ```
 
-Instead, schedule the appropriate work to take place after completion of the event handler, as shown in the following code.
+Instead, schedule the appropriate work to take place after completion of the event handler, as shown in the following code:
 
 ```csharp
 private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessageReceivedEventArgs e)
@@ -70,10 +69,10 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 ```
 
 > [!NOTE]
-> For WinForms and WPF apps, to get the full call stack for debugging purposes, you must turn on native code debugging for WebView2 apps, as follows.
-> 1.  Open your WebView2 project in Visual Studio.
-> 1.  In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
-> 1.  Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
+> For WinForms and WPF apps, to get the full call stack for debugging purposes, you must turn on native code debugging for WebView2 apps, as follows:
+> 1. Open your WebView2 project in Visual Studio.
+> 1. In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
+> 1. Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
 
 :::image type="content" source="../media/webview-enable-native-debug.png" alt-text="Enabling native code debugging in Visual Studio." lightbox="../media/webview-enable-native-debug.png":::
 

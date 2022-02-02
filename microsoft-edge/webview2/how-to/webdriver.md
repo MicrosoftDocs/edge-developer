@@ -134,7 +134,7 @@ Use this "launch" approach if you have a simple app that creates a single WebVie
 
 To drive WebView2 with Selenium and Microsoft Edge Driver:
 
-1.  Create an `EdgeOptions` object, by copying and pasting the following code:
+1. Create an `EdgeOptions` object, by copying and pasting the following code:
 
     ```csharp
     static void Main(string[] args)

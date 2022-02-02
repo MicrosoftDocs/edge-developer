@@ -42,8 +42,8 @@ Additionally, some group policies pause updating of the runtime.  When you push 
 
 To solve this situation, before your code calls a recently added WebView2 API, test whether that API is available in the client's installed runtime.  This test for newer functionality is similar to other web development best practices that detect supported features before using new web APIs.  To test for API availability in the installed runtime, use either:
 
-*   `QueryInterface` in C/C++.
-*   A `try/catch` block in .NET or WinUI.
+*  `QueryInterface` in C/C++.
+*  A `try/catch` block in .NET or WinUI.
 
 See [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
 
@@ -86,8 +86,11 @@ WebView2 apps are supported by a collection of runtime processes that run alongs
 If any of your app's event handlers on the [environment object](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environment) hold a reference to the environment object, and the app simply releases the reference to the environment and event handlers without removing the event handlers, there might be a circular reference between the environment object and handler objects, which will leak memory.
 
 To prevent such a memory leak:
+
 *  For any added event handler, remove the event handler before releasing the environment object.
+
 *  Avoid holding a reference to the environment object in an event handler.  Instead, the event handler can access the environment object from the `sender` argument of the "event completed" callback.
+
 *  If you want the app to hold a reference to a WebView2 object, use a weak reference whenever possible.
 
 

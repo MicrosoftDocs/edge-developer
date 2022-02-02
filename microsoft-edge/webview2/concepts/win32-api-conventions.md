@@ -85,13 +85,15 @@ Every event handler delegate interface has a single `Invoke` method that has a s
 
 For instance, the `NavigationCompleted` event on `ICoreWebView2` has the `ICoreWebView2::add_NavigationCompleted` and `ICoreWebView2::remove_NavigationCompleted` method pair.  When you send a request, you provide an instance of `ICoreWebView2NavigationCompletedEventHandler` in which you previously implemented `Invoke` method.
 
-When the `NavigationCompleted` event runs, your `Invoke` method is requested.
+When the `NavigationCompleted` event runs, your `Invoke` method is requested:
 
 *  The first parameter runs the `NavigationCompleted` event.
 *  The second parameter contains information about whether the navigation completed successfully, and so on.
 
 Similar to the async method completed handler delegate interface, use one of the following actions to set it up:
+
 *  Implement it directly.
+
 *  Use the [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl) function that is used in the following WebView2 code:
 
 <!-- todo:  what is async method completed handler delegate interface?  Is there a shorter name for it?  -->

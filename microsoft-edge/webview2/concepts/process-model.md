@@ -28,8 +28,10 @@ A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A Web
 The number and presence of processes in a WebView2 process group can change as a WebView2 application makes use of WebView2 features.  (However, there's only a single, specific browser process in a WebView2 process group.)  For example, creating a new WebView from the same `CoreWebView2Environment`, but with a different domain in the `Source` property, will usually start a new renderer process.
 
 The number of renderer processes can vary based on the following conditions:
-*   Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
-*   The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
+
+*  Use of the _Site Isolation_ feature in the WebView2 Runtime.  See [Per-frame renderer processes - Site Isolation](https://developers.google.com/web/updates/2018/09/inside-browser-part1#site-isolation).
+
+*  The number of distinct disconnected origins that are rendered in instances of WebView2 that use the same user data folder.
 
 The logic that controls when these extra processes are created depends on the Chromium architecture, and is beyond the scope of the WebView2 Runtime.
 
@@ -60,9 +62,7 @@ To react to crashes and hangs in the browser and renderer processes, use the `Pr
 
 To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.
 
-To open the **Browser Task Manager** window from the **DevTools** window of a WebView2 instance, do either of the following:
-*   Select `Shift`+`Escape`.
-*   Hover on the DevTools window title bar, open the contextual menu (right-click), and select `Browser task manager`.
+To open the **Browser Task Manager** window from the **DevTools** window of a WebView2 instance, right-click the DevTools window title bar, and then select `Browser task manager`.  Or, press `Shift`+`Escape`.
 
 All processes that are associated with the browser process of your WebView2 are displayed, including their associated purposes.
 

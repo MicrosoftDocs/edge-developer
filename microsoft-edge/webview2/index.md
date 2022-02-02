@@ -24,12 +24,17 @@ To start building a WebView2 app, see [Get started with WebView2](get-started/ge
 ## Hybrid app approach
 
 Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power.
+
 *  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
+
 *  To access all the capabilities of a native platform, use a native app.
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
+
 *  Wide **reach** includes websites and Progressive Web Apps.
+
 *  In the middle are hybrid apps, such as WebViews and Electron.
+
 *  Maximum **power** is native apps.
 
 ![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](media/webview2/web-native.png)
@@ -64,34 +69,30 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 A General Availability (GA) or Preview version of WebView2 is available for the following programming environments:
 
-*   Win32 C/C++ (GA)
-*   .NET Framework 4.5 or later
-*   .NET Core 3.1 or later
-*   .NET 5
-*   .NET 6
-*   WinUI 2.0 (Preview)
-*   [WinUI 3.0](/uwp/toolkits/winui3/index)
+*  Win32 C/C++ (GA)
+*  .NET Framework 4.5 or later
+*  .NET Core 3.1 or later
+*  .NET 5
+*  .NET 6
+*  WinUI 2.0 (Preview)
+*  [WinUI 3.0](/uwp/toolkits/winui3/index)
 
 WebView2 apps can run on the following versions of Windows:
 
-*   Windows 11
-*   Windows 10
-*   Windows 10 IoT Enterprise LTSC x32 2019
-*   Windows 10 IoT Enterprise LTSC x64 2019
-*   Windows 10 IoT Enterprise 21h1 x64
-*   Windows 8.1
-*   Windows 7 \*\*
-*   Windows Server 2019
-*   Windows Server 2016
-*   Windows Server 2012
-*   Windows Server 2012 R2
-*   Windows Server 2008 R2 \*\*
+*  Windows 11
+*  Windows 10
+*  Windows 10 IoT Enterprise LTSC x32 2019
+*  Windows 10 IoT Enterprise LTSC x64 2019
+*  Windows 10 IoT Enterprise 21h1 x64
+*  Windows 8.1
+*  Windows 7 \*\*
+*  Windows Server 2019
+*  Windows Server 2016
+*  Windows Server 2012
+*  Windows Server 2012 R2
+*  Windows Server 2008 R2 \*\*
 
-
-<!-- ====================================================================== -->
-## Support for Windows 7 and Windows Server 2008 R2
-
-WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.  See [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
+\*\*WebView2 support for Windows 7 and Windows Server 2008 R2 have the same support timeline as Microsoft Edge.  See [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
 
 
 <!-- ====================================================================== -->

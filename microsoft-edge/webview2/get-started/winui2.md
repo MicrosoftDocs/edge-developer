@@ -58,15 +58,15 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 <!-- ====================================================================== -->
 ## Step 2 - Install UWP tools
 
-1.  Open Microsoft Visual Studio.
+1. Open Microsoft Visual Studio.
  
-1.  Click **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens.
+1. Click **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens.
 
-1.  On the **Workloads** tab, click **.NET Desktop Development**.
+1. On the **Workloads** tab, click **.NET Desktop Development**.
 
-1.  Click **Desktop development with C++**.
+1. Click **Desktop development with C++**.
 
-1.  Click **Universal Windows Platform development**.
+1. Click **Universal Windows Platform development**.
 
 1. On the right, expand **Installation Details** > **Universal Windows Platform development**, and then click **C++ (v142) Universal Windows Platform tools**.
 
@@ -74,7 +74,7 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
    :::image type="content" source="media/winui2-getting-started-install-workloads.png" alt-text="The 'Modifying Visual Studio 2019' dialog displays cards and installation details." lightbox="media/winui2-getting-started-install-workloads.png":::
 
-1.  Click **Modify**.  Visual Studio installs the selected features.
+1. Click **Modify**.  Visual Studio installs the selected features.
 
 
 <!-- ====================================================================== -->
@@ -104,13 +104,13 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
    :::image type="content" source="media/winui2-getting-started-config-new-project.png" alt-text="The Configure your new project dialog box displays text boxes for a Blank App (Universal Windows)." lightbox="media/winui2-getting-started-config-new-project.png":::
 
-1.  Click **Create**.  The **New Universal Windows Platform Project** dialog box appears.
+1. Click **Create**.  The **New Universal Windows Platform Project** dialog box appears.
 
-1.  Click **OK**.  The **Settings** window might open, if you haven't done the following couple of steps yet.
+1. Click **OK**.  The **Settings** window might open, if you haven't done the following couple of steps yet.
 
-1.  In the **Developer Mode** section, click **On**.  The **Use developer features** dialog box opens, to confirm turning on developer mode.
+1. In the **Developer Mode** section, click **On**.  The **Use developer features** dialog box opens, to confirm turning on developer mode.
 
-1.  Click **Yes**, then close the **Settings** window.
+1. Click **Yes**, then close the **Settings** window.
 
 Visual studio displays the solution and project.
 
@@ -176,7 +176,7 @@ Visual studio displays the solution and project.
 
    :::image type="content" source="media/winui2-getting-started-webview2-with-content.png" alt-text="The sample app displays the Bing website." lightbox="media/winui2-getting-started-webview2-with-content.png":::
 
-1.  In Visual Studio, click **Debug** > **Stop Debugging** to close the app window.
+1. In Visual Studio, click **Debug** > **Stop Debugging** to close the app window.
 
 Now you can change the content of the WebView2 control to add your own content.
 
