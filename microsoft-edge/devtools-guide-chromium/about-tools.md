@@ -60,7 +60,14 @@ To open the **Command Menu**, press `Ctrl`+`Shift`+`P` (Windows/Linux) or `Comma
 
 
 <!-- ====================================================================== -->
-## Closing all the tabs at once
+## Closing tool tabs
+
+To close a tool tab that's on a toolbar:
+
+*  Click the **x** on the tab.
+
+   The **Elements**, **Console**, and **Sources** tool tabs cannot be closed.
+
 
 To close all of the optional tabs at once:
 
@@ -72,7 +79,7 @@ To close all of the optional tabs at once:
 
 
 <!-- ====================================================================== -->
-## Restoring all the default tabs at once
+## Restoring the default tool tabs
 
 To restore all the default tabs on the main toolbar:
 
