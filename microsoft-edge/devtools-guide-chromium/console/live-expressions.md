@@ -18,32 +18,44 @@ Watch JavaScript values in real-time with Live Expressions -->
 <!-- ====================================================================== -->
 ## Add a new live expression
 
-To start, click the **Create live expression** (eye) icon next to the **Filter** textbox.  After you click it, a textbox is displayed for you to enter your new expression in it.
 
-:::image type="content" source="../media/console-live-expressions-new.msft.png" alt-text="Click the New live expression button to open a textbox to type an expression." lightbox="../media/console-live-expressions-new.msft.png":::
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-**Live Expressions** can be any valid JavaScript expression.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
+1. In DevTools, open the Console.
 
-To try using **Live Expressions**:
+1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** textbox.
 
-1. Open the **Live Expression** textbox.
+   A textbox opens:
 
-1. Type `document.activeElement`.
+   :::image type="content" source="../media/console-live-expressions-new.msft.png" alt-text="Click the New live expression button to open a textbox to type an expression." lightbox="../media/console-live-expressions-new.msft.png":::
+
+1. Enter the JavaScript expression `document.activeElement` into the textbox.  A **Live Expression** can be any valid JavaScript expression.
 
 1. To save the expression, press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** textbox.
 
    The expression is now live, and displays `body` as the result:
 
+   <!-- update the captures, they assume that you're not reading the present article or accessibility demo page, but are reading the Dev Tools Overview article: -->
+
    :::image type="content" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="The Live Expression for document.activeElement displays 'body' as the result." lightbox="../media/console-live-expressions-document-active-element.msft.png":::
 
-   If you navigate around the webpage, the value changes.
+1. Click different parts of the webpage, or press `Tab` and `Shift`+`Tab` to move around in the webpage, the `document.activeElement` Live Expression value changes.
 
-1. Open the search menu in the webpage.  The expression now displays `button.nav-bar-button.focus-visible` as the value:
+   In the accessibility-testing demo webpage, when you `Tab` to put focus on the **Other** text box in the **Donation** section, the Live Expression value reads `input#freedonation.smallinput`.
+
+   <!-- revise the step & the capture after it: -->
+
+1. In that same window, go to the webpage [Overview of DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/), and then click the **Docs** button in the upper left.
+
+   The Live Expression value changes to `button.nav-bar-button.focus-visible`:
 
    :::image type="content" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="To change the value of the Live Expression, interact with different elements on the webpage." lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
 
-1. To change the value again, open and click the **Search** textbox on the webpage:
+1. To change the value again, open and click the **Search** textbox on the webpage.
+
+   The Live Expression value changes to `input#site-search-input.autocomplete-input.input.is-small.focus-visible`:
 
    :::image type="content" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigate to a different element in the webpage to update the Live Expression." lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
 
@@ -68,13 +80,13 @@ You can create as many Live Expressions as you want, and persist each Live Expre
 
 To monitor the mouse movement in the current webpage:
 
-1. Open the [Logging Mouse Movement demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html) in a new window or tab.
+1. Open the demo webpage [Logging Mouse Movement demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove.html) in a new window or tab.
 
-1. Right-click anywhere in the demo webpage, and then select **Inspect**.  The DevTools **Console** opens.
+1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
 
-1. Move your mouse around over the rendered demo webpage.  Many log messages are output, displayed in the **Console**..
+1. Move your mouse around over the rendered demo webpage.
 
-<!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > mousemove.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/mousemove.html). -->
+   Many log messages are output, displayed in the **Console**:
 
    :::image type="content" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="The Console displays an overwhelming number of messages about the mouse position." lightbox="../media/console-live-expression-mouse-logging.msft.png":::
 
@@ -83,19 +95,25 @@ The large amount of information slows down your debugging process, and makes it 
 
 ### Using Live Expressions to display mouse coordinates
 
-As an alternative to verbose **Console** message logging as shown above, use **Live Expressions**.
+Use Live Expressions to monitor the mouse movement in the current webpage, without relying on verbose log messages.
 
 To use Live Expressions to avoid excessive Console log messages:
 
-1. Open the [Mouse movement without logging demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html) in a new tab or window.
+1. Open the demo webpage [Mouse movement without logging demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove-no-log.html) in a new window or tab.
 
-   <!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > mousemove-no-log.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/mousemove-no-log.html). -->
+1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
 
-1. Open the DevTools **Console**.
+1. Move your mouse around.  No log messages are output.
 
-1. Create Live Expressions for `x` and `y`.  To do this, see [Add a new live expression](#add-a-new-live-expression), above.
+   Enter two Live Expressions: the expression `x`, and the expression `y`, as follows:
 
-   Displaying the `x` and `y` coordinates of the mouse as Live Expressions:
+1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** textbox.
+
+1. Enter the JavaScript expression `x` into the textbox, and then click outside of the **Live Expression** textbox.  Repeat for `y`.  If needed, see [Add a new live expression](#add-a-new-live-expression), above.
+
+1. Move your mouse around.
+
+   Now in the DevTools Console, the Live Expression value is updated, below the Live Expression, showing the `x` and `y` coordinates of the mouse:
 
    :::image type="content" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Displaying the 'x' and 'y' coordinates of the mouse as Live Expressions." lightbox="../media/console-live-expressions-x-and-y.msft.png":::
 

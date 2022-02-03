@@ -17,11 +17,14 @@ This article walks you through six demo pages to demonstrate resolving JavaScrip
 
 The first experience you have with the **Console** is likely to be errors in scripts.
 
+
 ### Demo page: JavaScript error reported in the Console tool
 
-1. Open the demo page [JavaScript error reported in the Console tool](https://microsoftedge.github.io/DevToolsSamples/console/error.html) in a new window or tab.
+1. Open the demo webpage [JavaScript error reported in the Console tool](https://microsoftedge.github.io/Demos/devtools-console/error.html) in a new window or tab.
 
-1. Right-click in the webpage and select **Inspect** to open DevTools.  The **Open Console to view errors** button on the top right displays an error about the webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+   In the top right of DevTools, the **Open Console to view errors** button displays an error about the webpage.
 
 1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
 
@@ -41,11 +44,14 @@ The first experience you have with the **Console** is likely to be errors in scr
 <!-- ====================================================================== -->
 ## Find and debug network issues
 
-Other errors that the **Console** reports are network errors.
+The **Console** also reports network errors.
+
 
 ### Demo page: Network error reported in Console
 
-1. Open the demo page [Network error reported in Console](https://microsoftedge.github.io/DevToolsSamples/console/network-error.html) in a new window or tab.
+1. Open the demo webpage [Network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error.html) in a new window or tab.
+
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
    :::image type="content" source="../media/console-debug-network-error.msft.png" alt-text="Console displays a Network and a JavaScript error." lightbox="../media/console-debug-network-error.msft.png":::
 
@@ -83,31 +89,34 @@ Other errors that the **Console** reports are network errors.
 
    What was the problem?  Two slash characters (`//`) occur in the requested URI after the word `repos`.
 
-1. Open the **Sources** tool and inspect line 26.  A trailing slash character (`/`) occurs at the end of the base URI.
-
-   The **Sources** tool displays the line of code with the error:
+1. Open the **Sources** tool and inspect line 26.  A trailing slash character (`/`) occurs at the end of the base URI.  The **Sources** tool displays the line of code with the error:
 
    :::image type="content" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The Sources tool displays the line of code with the error." lightbox="../media/console-debug-network-error-code-error.msft.png":::
 
+
 ### Viewing the resulting page when there are no errors in the Console
 
-Next, to see the resulting page when there are no errors in the **Console**:
+Next, we'll look at the resulting page when there are no errors in the **Console**.
+
 
 #### Demo page: Fixed network error reported in Console
 
-1. Open the demo page [Fixed network error reported in Console](https://microsoftedge.github.io/DevToolsSamples/console/network-error-fixed.html) in a new window or tab.
+1. Open the demo webpage [Fixed network error reported in Console](https://microsoftedge.github.io/Demos/devtools-console/network-error-fixed.html) in a new window or tab.
 
    The example without any errors loads information from GitHub and displays it:
 
    :::image type="content" source="../media/console-debug-network-error-fixed.msft.png" alt-text="The example without any errors loads information from GitHub and displays it." lightbox="../media/console-debug-network-error-fixed.msft.png":::
 
+
 #### Demo page: Network error reporting in Console and UI
 
 Use defensive coding techniques to avoid the previous user experiences.  Make sure your code catches errors and displays each error in the **Console**, as follows:
 
-1. Open the demo page [Network error reporting in Console and UI](https://microsoftedge.github.io/DevToolsSamples/console/network-error-reported.html) in a new window or tab.
+1. Open the demo webpage [Network error reporting in Console and UI](https://microsoftedge.github.io/Demos/devtools-console/network-error-reported.html) in a new window or tab.
 
-   The page demonstrates:
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+   The example webpage demonstrates these practices:
 
    *  Provide a UI to the user to indicate that something went wrong.
 
@@ -138,11 +147,14 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 
 Besides the `throw Error` example in the previous section, you can also create different errors and trace problems in the **Console**.
 
+
 ### Demo page: Creating error reports and assertions in Console
 
 To display two created error messages in the **Console**:
 
-1. Open the demo page [Creating error reports and assertions in Console](https://microsoftedge.github.io/DevToolsSamples/console/error-assert.html) in a new window or tab.
+1. Open the demo page [Creating error reports and assertions in Console](https://microsoftedge.github.io/Demos/devtools-console/error-assert.html) in a new window or tab.
+
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
    Error messages appear in the **Console**:
 
@@ -192,25 +204,33 @@ To display two created error messages in the **Console**:
     console.assert(x >= 40, `${x} is too small`)
     ```
 
-   The second and third lines of the code perform the same test.  Because the assertion needs to record a negative result, you test for `x < 40` in the `if` case and `x >= 40` for the assertion.
+   The second and third lines of the code perform the same test.  Because the assertion needs to record a negative result:
+
+   *  You test for `x < 40` in the `if` case.
+   *  You test for `x >= 40` for the assertion.
+
 
 ### Demo page: Creating traces in Console
 
-If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested to get to the current one.
+If you aren't sure which function requests another function, use the `console.trace()` method to track which functions are requested in order to get to the current function.
 
 To display the trace in the **Console**:
 
-1. Open the demo page [Creating traces in Console](https://microsoftedge.github.io/DevToolsSamples/console/trace.html) in a new window or tab.  The page uses this code:
+1. Open the demo page [Creating traces in Console](https://microsoftedge.github.io/Demos/devtools-console/trace.html) in a new window or tab.
 
-    ```javascript
-    function here() {there()}
-    function there() {everywhere()}
-    function everywhere() {
-        console.trace();
-    }
-    here();
-    there();
-    ```
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+   The page uses this code:
+
+   ```javascript
+   function here() {there()}
+   function there() {everywhere()}
+   function everywhere() {
+      console.trace();
+   }
+   here();
+   there();
+   ```
     
    The result is a trace to display that `here()` is named `there()` and then `everywhere()`, and in the second example to display that it's named `everywhere()`.
 

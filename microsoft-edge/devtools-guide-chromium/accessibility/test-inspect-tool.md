@@ -26,9 +26,9 @@ The main article about the Inspect tool is [Analyze HTML pages using the Inspect
 
 <!-- Inspect tool: Accessibility section of overlay -->
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click an item in the rendered webpage, and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the rendered webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
 1. Click the **Inspect** (![Inspect.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -73,9 +73,9 @@ The top part of the **Inspect** overlay, which is above the **Accessibility** se
 
 In addition to the information overlay, the **Inspect** tool also provides region-coloring that's similar to hovering in the DOM tree in the **Elements** tool.
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click an item in the rendered webpage, and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the rendered webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
 1. Click the **Inspect** button (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
@@ -97,9 +97,9 @@ If you want to configure the grid overlay or flexbox overlay, in the **Elements*
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Right-click an item in the rendered webpage, and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the rendered webpage.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
 1. In DevTools, click the **Inspect** button (![the Inspect tool.](../media/inspect-tool-icon-light-theme.png)) in the top-left corner, so that the button is highlighted (blue).
 

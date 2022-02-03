@@ -37,9 +37,11 @@ The **Inspect** tool's information overlay only represents a single state.  Elem
 
 First, confirm that your animations run when not using the Inspect tool:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Hover over the blue menu items in the sidebar navigation menu.  Notice that each item has an animation.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+1. In the rendered webpage, hover over the blue menu items in the sidebar navigation menu.  Notice that each item has an animation.
 
    :::image type="content" source="../media/a11y-testing-hover.msft.png" alt-text="The menu item showing different colors when the mouse pointer is over it." lightbox="../media/a11y-testing-hover.msft.png":::
 
@@ -65,9 +67,11 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
 
 To turn on the hover state while using the Inspect tool:
 
-1. If it's not open already, open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then press `F12` to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Select the **Inspect** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+1. Click the **Inspect** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1. In the rendered webpage, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
@@ -81,7 +85,7 @@ To turn on the hover state while using the Inspect tool:
 
    :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="The state simulation tool showing all the options." lightbox="../media/a11y-testing-state-simulation.msft.png":::
 
-1. Select the **:hover** checkbox.  In the DOM, to the left of the element `<a href="#cats">Cats</a>`, a yellow dot appears, indicating that the element has a simulated state.  The **Cats** menu item now appears in the webpage as if the pointer were hovering over it.  The animation on the menu item might run.
+1. Click the **:hover** checkbox.  In the DOM, to the left of the element `<a href="#cats">Cats</a>`, a yellow dot appears, indicating that the element has a simulated state.  The **Cats** menu item now appears in the webpage as if the pointer were hovering over it.  The animation on the menu item might run.
 
    :::image type="content" source="../media/a11y-testing-hover-simulated.msft.png" alt-text="DevTools simulating a hover state." lightbox="../media/a11y-testing-hover-simulated.msft.png":::
 

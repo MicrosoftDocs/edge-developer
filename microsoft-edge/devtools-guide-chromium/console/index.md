@@ -73,28 +73,60 @@ DevTools with a **Console** full of messages:
 <!-- ====================================================================== -->
 ## Log information to display in the Console
 
-The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it:
+The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.
+
+
+### Example code
+
+```javascript
+// prints the text to the console as  a log message
+console.log('This is a log message');
+
+// prints the text to the console as an informational message
+console.info('This is some information'); 
+
+// prints the text to the console as an error message
+console.error('This is an error');
+
+// prints the text to the console as a warning
+console.warn('This is a warning');
+
+// prints the geometry of the document body as an object
+console.log(document.body.getBoundingClientRect());
+
+// prints the geometry of the document body as a table
+console.table(document.body.getBoundingClientRect());
+
+// shows a list of techologies as a collapsed group
+let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
+console.groupCollapsed('Technolgies');
+technologies.forEach(tech => {console.info(tech);})
+console.groupEnd('Technolgies');
+```
+
+<!-- typos in the demo page are preserved above, at `Technolgies` -->
+
+
+To log information to display in the Console:
+
+1. Open the demo webpage [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html) in a new window or tab.
 
 1. To open the **Console**, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
-1. See [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html), or copy and run the following code in the **Console**:
-
-   ```javascript
-   console.log('This is a log message');
-   console.info('This is some information');
-   console.error('This is an error');
-   console.warn('This is a warning');
-   console.log(document.body.getBoundingClientRect());
-   console.table(document.body.getBoundingClientRect());
-   let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
-   console.groupCollapsed('Technologies');
-   technologies.forEach(tech => {console.info(tech);})
-   console.groupEnd('Technologies');
-   ```
-   
-1. The **Console** displays the resulting messages that are caused by the demo code:
+   The **Console** displays the resulting messages that are caused by the demo code:
 
    :::image type="content" source="../media/console-intro-logging.msft.png" alt-text="Console full of messages caused by demo code." lightbox="../media/console-intro-logging.msft.png":::
+
+1. Paste the above code into the **Console**, and then press `Enter`.
+
+
+   If you get a message: `Uncaught SyntaxError: Identifier 'technologies' has already been declared`:
+
+1. Open a new tab or window.
+
+1. To open the **Console**, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+
+1. Paste the above code into the **Console**, and then press `Enter`.
 
 Many useful methods are available when you work with the **Console**.  For more information, see [Log messages in the Console tool](console-log.md).
 

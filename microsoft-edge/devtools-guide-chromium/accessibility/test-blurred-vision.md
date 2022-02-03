@@ -15,9 +15,11 @@ To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision 
 
 To check whether a webpage is usable with blurred vision:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then press `F12` to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** icon at the top of the Drawer to display the list of tools, and then select **Rendering**.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+1. Press **Esc** to open the Drawer at the bottom of DevTools.  Click the **+** icon at the top of the Drawer to display the list of tools, and then select **Rendering**.
 
 1. In the **Emulate vision deficiencies** dropdown list, select **Blurred vision**.
 

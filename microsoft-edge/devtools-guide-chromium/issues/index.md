@@ -41,7 +41,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 <!-- ====================================================================== -->
 ## Opening the Issues tool
 
-1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window.
+1. Go to a webpage that contains issues to fix.  For example, open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab or window.
 
 1. Open DevTools.  After a few seconds, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears in the upper right corner of DevTools.
 
@@ -51,12 +51,14 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
    :::image type="content" source="../media/issues-tool-categories.msft.png" alt-text="Categories of issues in the Issues tool on the demo page." lightbox="../media/issues-tool-categories.msft.png":::
 
+
 ### Other ways to open the Issues tool
 
 There are several additional ways to open the **Issues** tool:
 *  Click the **More Tools** (**+**) menu in the main panel or the **Drawer**, and then select **Issues**.
 *  Select **Customize and control DevTools** > **More tools** > **Issues**.
 *  In the DOM tree in the **Elements** tool, press `Shift` and then click a wavy-underlined element name.  Or, open the context menu on a wavy-underlined element and then select **View issues**.
+
 
 ### Issues are automatically ordered by severity
 
@@ -74,11 +76,11 @@ To include issues that are caused by third-party sites, at the top of the **Issu
 
 The **Issues** tool presents additional documentation and recommended fixes to apply to each issue.  To expand an issue to get this additional information, select an issue, as follows.
 
-1. Open the [accessibility-testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab, and then open DevTools.
+1. Open the [accessibility-testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab, and then open DevTools.
 
 1. Open the **Issues** tool by selecting the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)).
 
-1. Select an issue to expand the issue.
+1. Select an issue, to expand the issue.
 
    :::image type="content" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool, displaying additional information on how to fix the issue." lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
 
@@ -118,9 +120,11 @@ If an element has an associated issue, the DOM tree in the **Elements** tool sho
 
 To display an issue for elements with wavy underlines in the DOM tree:
 
-1. Open a page, such as the [accessibility testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html), in a new tab or window.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1. Open DevTools and then select the **Elements** tab.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+1. In DevTools, select the **Elements** tab.
 
 1. In the DOM tree, expand `<body>` > `<header>` > `<form>`.  Notice that the `<input>` element has a wavy underline.
 
