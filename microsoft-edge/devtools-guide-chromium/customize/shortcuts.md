@@ -11,7 +11,7 @@ ms.date: 03/10/2021
 
 In the **Shortcuts** page of **Settings**, you can view the defined shortcuts for Microsoft Edge DevTools, define your own shortcut for a specific action, or use a preset to match the default shortcuts from Microsoft Visual Studio Code.
 
-For the default keyboard shortcuts, see [Keyboard shortcuts](../shortcuts/index.md).  See also [Customize DevTools](./index.md#settings).
+For the default keyboard shortcuts, see [Keyboard shortcuts](../shortcuts/index.md).
 
 
 <!-- ====================================================================== -->
@@ -83,3 +83,12 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 > [!NOTE]
 > If a keyboard shortcut is currently assigned to one action, you are blocked from saving it to another action.  Instead, delete the keyboard shortcut from the previous action, and then add it to the new action.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Keyboard shortcuts](../shortcuts/index.md)
+* [Navigate DevTools with assistive technology](../accessibility/navigation.md)
+* [Run commands in the Command Menu](../command-menu/index.md)
+* [Customize DevTools](index.md#settings)

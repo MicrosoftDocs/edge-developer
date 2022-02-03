@@ -25,7 +25,7 @@ By this accounting, DevTools provides 35 tools:
 *  3 non-closable tabs.
 *  30 closable tabs.
 
-:::image type="content" source="media/all-tools.png" alt-text="All the tools of DevTools, including 2 toolbar icons, 3 permanent tool tabs, and 30 'More tools' tabs." lightbox="media/all-tools.png":::
+![All the tools of DevTools, including 2 toolbar icons, 3 permanent tool tabs, and 30 'More tools' tabs.](media/all-tools.png)
 
 These are not considered tools, but are ways to access tools:
 *  The **Drawer** is an additional toolbar for tool tabs.

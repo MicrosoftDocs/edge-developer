@@ -10,6 +10,8 @@ ms.date: 09/23/2021
 ---
 # Overview of DevTools
 
+<!-- (![The Inspect tool icon is blue when active.](media/inspect-tool-icon-blue-light-theme.png)) -->
+
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects.  The Developer Tools that are shipped with Microsoft Edge are partly based on the tools in the Chromium open-source project, so you may already be familiar with some of these tools.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
 
 With DevTools, you can do the following:

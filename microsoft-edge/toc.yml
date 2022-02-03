@@ -231,7 +231,7 @@
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
-            - name: Application tool, for Storage
+            - name: Application tool, for storage
               items:
                 - name: View, edit, and delete cookies
                   href: devtools-guide-chromium/storage/cookies.md
@@ -479,6 +479,14 @@
             - name: Run commands in the Command Menu
               href: devtools-guide-chromium/command-menu/index.md
               displayName: Command Menu
+# Keyboard shortcuts ----------------------------------------------------------
+            - name: Keyboard shortcuts
+              href: devtools-guide-chromium/shortcuts/index.md
+              displayName: Keyboard shortcuts
+
+            - name: Customize keyboard shortcuts  # added article
+              href: devtools-guide-chromium/customize/shortcuts.md
+              displayName: Settings, Shortcuts
 # Settings pages and Customize menu -------------------------------------------
         - name: Settings and customization UI
           items:
@@ -497,10 +505,6 @@
             - name: Change DevTools language settings  # added article
               href: devtools-guide-chromium/customize/localization.md
               displayName: Settings, Preferences
-
-            - name: Customize keyboard shortcuts  # added article
-              href: devtools-guide-chromium/customize/shortcuts.md
-              displayName: Settings, Shortcuts
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
@@ -631,10 +635,6 @@
                   href: devtools-guide-chromium/accessibility/narrow.md
                   displayName: Device Emulation, Device Emulator
 # /Accessibility
-# Keyboard shortcuts ----------------------------------------------------------
-        - name: Keyboard shortcuts
-          href: devtools-guide-chromium/shortcuts/index.md
-          displayName: Keyboard shortcuts
 # IE mode ---------------------------------------------------------------------
         - name: Use DevTools in Internet Explorer mode (IE mode)  # added article
           href: devtools-guide-chromium/ie-mode/index.md
