@@ -47,7 +47,7 @@ Watch JavaScript values in real-time with Live Expressions -->
 
    <!-- revise the step & the capture after it: -->
 
-1. In that same window, go to the webpage [Overview of DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/), and then click the **Docs** button in the upper left.
+1. In that same window, go to the webpage [Overview of DevTools](../index.md), and then click the **Docs** button in the upper left.
 
    The Live Expression value changes to `button.nav-bar-button.focus-visible`:
 
