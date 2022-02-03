@@ -302,11 +302,9 @@ As an example to understand the mechanism, the following steps occur when you tr
 
 1. Press **F5** to build and run the project.
 
-   The URL appears in a pop-up window before navigating to a webpage.
+   The URL appears in a pop-up window before navigating to a webpage.  The sample app with a Webview2 control displays the Bing website, `http://www.bing.com`.  The sample app also displays an **OK* button.  Users click **OK** to continue to the URL.
 
-   :::image type="complex" source="../media/show-url.png" alt-text="The sample app displays the Bing website." lightbox="../media/show-url.png":::
-      The sample app with Webview2 control displays the Bing website, http://www.bing.com. The sample app also displays an OK button. Users click OK to continue to the url.
-   :::image-end:::
+   :::image type="content" source="../media/show-url.png" alt-text="The sample app displays the Bing website." lightbox="../media/show-url.png":::
 
 Congratulations, you built your first WebView2 app!
 

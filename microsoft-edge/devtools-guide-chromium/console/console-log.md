@@ -13,7 +13,9 @@ ms.date: 04/13/2021
 
 Ever since browsers started to offer developer tools, the **Console** is a favorite, because in most programming courses, you learn to output some kind of `print` or `log` command, to gain insights about what happens in your code.
 
-Before DevTools, for JavaScript, you were limited to an `alert()` or `document.write()` statement to debug in the browser.  With DevTools, to log information in the **Console**, many methods of the `Console` object are available in the **Console**, listed in [Console object API Reference](api.md).  The following code lists the most important methods of the `Console` object:
+Before DevTools, for JavaScript, you were limited to an `alert()` or `document.write()` statement to debug in the browser.  With DevTools, to log information in the **Console**, many methods of the `Console` object are available in the **Console**, listed in [Console object API Reference](api.md).
+
+The `Console` object has several levels of message-logging methods:
 
 ```javascript
 // Prints the text to the console as  a log message.
@@ -29,13 +31,15 @@ console.error('This is an error')
 console.warn('This is a warning')
 ```
 
-Copy and paste the previous code into the **Console**, or see [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html).  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
+1. Copy and paste the previous code into the **Console**, or see [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html).
 
-<!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > logging-examples.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/logging-examples.html). -->
+   When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
 
-The **Console** displays the messages from different log APIs:
+   <!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > logging-examples.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/logging-examples.html). -->
 
-:::image type="content" source="../media/console-log-examples.msft.png" alt-text="The Console displays the messages from different log APIs." lightbox="../media/console-log-examples.msft.png":::
+   The **Console** displays the messages from different log APIs:
+
+   :::image type="content" source="../media/console-log-examples.msft.png" alt-text="The Console displays the messages from different log APIs." lightbox="../media/console-log-examples.msft.png":::
 
 Use `info()` and `log()` for different log tasks, because that allows you to [filter Console messages](console-filters.md), to display only a subset of log entries.
 
@@ -71,19 +75,22 @@ Instead of log text, you can send any valid JavaScript or DOM references to the 
 
 1. Click the triangles to toggle the information and analyze each result in more detail.
 
-Suppose you get many log messages that only display a value, but you don't know where the value originated.  Add curly braces `{}` around the `x` variable, to provide better grouping.
+   Suppose you get many log messages that only display a value, but you don't know where the value originated.
 
-Logging variables of different types in the **Console**:
+1. Add curly braces `{}` around the `x` variable, to provide better grouping.
 
-:::image type="content" source="../media/console-log-types.msft.png" alt-text="Log variables of different types in the console." lightbox="../media/console-log-types.msft.png":::
+   Logging variables of different types in the **Console**:
 
-Logging variables of different types in the **Console** with expanded extra information:
+   :::image type="content" source="../media/console-log-types.msft.png" alt-text="Log variables of different types in the console." lightbox="../media/console-log-types.msft.png":::
 
-:::image type="content" source="../media/console-log-types-expanded.msft.png" alt-text="Log variables of different types in the console with expanded extra information." lightbox="../media/console-log-types-expanded.msft.png":::
+   Logging variables of different types in the **Console** with expanded extra information:
+
+   :::image type="content" source="../media/console-log-types-expanded.msft.png" alt-text="Log variables of different types in the console with expanded extra information." lightbox="../media/console-log-types-expanded.msft.png":::
 
 To display formatted results, see [Console messages examples: logging different types](https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html).
 
 <!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > logging-types.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/logging-types.html). -->
+
 
 <!-- ====================================================================== -->
 ## Format and convert values with specifiers
@@ -97,38 +104,40 @@ A special feature of all the log methods is that you can use specifiers in your 
 *  `%O` logs as an expandable JavaScript object.
 *  `%c` allows you to style you message with CSS.
 
+
 ### Pasting into the Console
 
 To view various specifier formatting and data types by pasting code into the Console:
 
 1. Open DevTools, 
 
-1. Copy and paste the following code into the **Console**, and then press `Enter`.
+1. Paste the following code into the **Console**, and then press `Enter`:
 
-```javascript
-// Logs "10x console developer".
-console.log('%ix %s developer', 10, 'console');
-
-// Logs PI => 3.141592653589793.
-console.log(Math.PI);
-
-// Logs PI as an integer = 3.
-console.log('%i', Math.PI);
-
-// Logs the webpage body as a DOM node.
-console.log('%o', document.body);
-
-// Logs the body of the webpage as a JavaScript object with all properties.
-console.log('%O', document.body);
-
-// Displays the message as red and large.
-console.log('%cImportant message follows','color:red;font-size:40px');
-```
-
+   ```javascript
+   // Logs "10x console developer".
+   console.log('%ix %s developer', 10, 'console');
+   
+   // Logs PI => 3.141592653589793.
+   console.log(Math.PI);
+   
+   // Logs PI as an integer = 3.
+   console.log('%i', Math.PI);
+   
+   // Logs the webpage body as a DOM node.
+   console.log('%o', document.body);
+   
+   // Logs the body of the webpage as a JavaScript object with all properties.
+   console.log('%O', document.body);
+   
+   // Displays the message as red and large.
+   console.log('%cImportant message follows','color:red;font-size:40px');
+   ```
+   
 The result is displayed in the **Console**.  See the steps (such as Step 3) in the following section for details on how to view and expand the results.
 
-<!-- wordsmith: -->
+<!-- todo: read the rendered article and then wordsmith: -->
 The first statement demonstrates that the order of replacement of specifiers (`'%ix %s developer'`) is the parameter order (`10, 'console'`) following the formatting string.
+
 
 ### Using the demo webpage
 
@@ -205,37 +214,43 @@ Each group can be expanded and collapsed:
 
 The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you can sort using different headers.  A sorted table makes it much easier for people to review the information.
 
-To display the following code by loading an existing demo page, see [Console messages examples: Using table](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html).  Right-click the page, select **Inspect** to open DevTools, open the **Console**, and then click the expander triangles.
+To display complex data as tables:
 
-<!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > logging-with-table.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/logging-with-table.html). -->
+1. Open the demo page [Console messages examples: Using table](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html) in a new window or tab.
 
-Copy and paste this code into the **Console**, press `Enter`, and then click the expander triangles:
+   <!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > logging-with-table.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/logging-with-table.html). -->
 
-```javascript
-let technologies = {
-  "Standards": ["HTML", "CSS", "SVG", "ECMAScript"],
-  "Others": ["jQuery", "Markdown", "Textile", "Sass", "Pug"]
-}
-// Log technologies as an object.
-console.log(technologies);
-// Display technologies as a table.
-console.table(technologies);
+1. Right-click anywhere in the page, and then select **Inspect**.  DevTools opens.
 
-// Get the dimensions of the webpage body.
-let bodyDimensions = document.body.getBoundingClientRect();
-// Display dimensions as an object.
-console.log(bodyDimensions);
-// Display dimensions as a table.
-console.table(bodyDimensions);
-```
+1. Click in DevTools to put focus on it, and the press `Esc` to open the **Console**.
 
-Displaying data with `console.table` makes it easier to read:
+1. In the **Console**, click the expander triangles.
 
-:::image type="content" source="../media/console-log-table.msft.png" alt-text="Display data with console.table to make it easier to read." lightbox="../media/console-log-table.msft.png":::
+1. Paste the following code into the **Console**, and then press `Enter`:
 
-The output of `console.table` has a table format not only when it displays in the **Console**.    For example, if you copy and paste a table into Excel, Word, or any other product that supports tabular data, the structure remains intact.
+   ```javascript
+   let technologies = {
+   "Standards": ["HTML", "CSS", "SVG", "ECMAScript"],
+   "Others": ["jQuery", "Markdown", "Textile", "Sass", "Pug"]
+   }
+   // Log technologies as an object.
+   console.log(technologies);
+   // Display technologies as a table.
+   console.table(technologies);
+   
+   // Get the dimensions of the webpage body.
+   let bodyDimensions = document.body.getBoundingClientRect();
+   // Display dimensions as an object.
+   console.log(bodyDimensions);
+   // Display dimensions as a table.
+   console.table(bodyDimensions);
+   ```
 
-<!--  The output of `console.table` has a table format not only when it displays in the **Console**.  For example, copy and paste a table in Excel, Word, or any other products that support tabular data.  -->
+1. Click the expander triangles.  Displaying data with `console.table` help makes the data easier to read:
+
+   :::image type="content" source="../media/console-log-table.msft.png" alt-text="Display data with console.table to make it easier to read." lightbox="../media/console-log-table.msft.png":::
+
+The output of `console.table` has a table format.  The output has a table format not only when the output is displayed in the **Console**, but also, if you copy and paste a table into Microsoft Excel, Microsoft Word, or any other product that supports tabular data, the structure of the output remains intact.
 
 If the data has named parameters, the `console.table()` method also allows you to specify an `Array` of columns for each property to display as a second parameter.  The following example shows how to specify an array of columns that is more readable:
 
@@ -248,10 +263,11 @@ console.table(contentElements)
 console.table(contentElements,['nodeName', 'innerText', 'offsetHeight'])
 ```
 
-<!-- wordsmith after reading the above: -->
-The below image shows filtering information that the `console.table()` method displays, and providing an array of properties to display as a second parameter:
+<!-- wordsmith after reading the rendered article: -->
+The image below shows filtering information that the `console.table()` method displays, and shows providing an array of properties to display, as a second parameter:
 
-:::image type="content" source="../media/console-log-table-filtered.msft.png" alt-text="Filter information that console.table displays and provide an array of properties to display as a second parameter." lightbox="../media/console-log-table-filtered.msft.png":::
+:::image type="content" source="../media/console-log-table-filtered.msft.png" alt-text="Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter." lightbox="../media/console-log-table-filtered.msft.png":::
+
 
 ### Log statements vs. breakpoint debugging and Live Expressions
 

@@ -70,6 +70,6 @@ The **password reveal** button is unavailable until the user enters text into th
 
 *   If scripts modify the **password** field, the browser removes the **password reveal** button.
 
-If the **password reveal** button is removed, the user must delete the contents of the **password** field before the **password reveal** button displays again. This behavior prevents someone from making a minor adjustment to display the password, should the user step away from an unlocked device.
+If the **password reveal** button is removed, the user must delete the contents of the **password** field to make the **password reveal** button appear again. This behavior prevents someone from making a minor adjustment to display the password, should the user step away from an unlocked device.
 
 The **password reveal** button is unavailable if the **password** field autofills by using the password manager.

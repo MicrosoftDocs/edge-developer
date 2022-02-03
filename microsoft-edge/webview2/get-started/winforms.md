@@ -386,9 +386,9 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 
-    :::image type="complex" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
-       The application displays the URI in the address bar. The URI is https://www.microsoft.com and the Microsoft website displays in the window.
-    :::image-end:::
+    The application displays the URI `https://www.microsoft.com` in the address bar.  The Microsoft website appears in the window.
+
+    :::image type="content" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
 
 Congratulations, you built your first WebView2 app!
 

@@ -49,7 +49,7 @@ When you are interested in a particular DOM node, **Inspect** is a fast way to o
 
    :::image type="content" source="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png" alt-text="Highlighting the Michelangelo node." lightbox="../media/dom-glitch-dom-examples-michelangelo-elements-highlighted.msft.png":::
 
-1. Click the **Inspect** (![Inspect.](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.
+1. Click the **Inspect** (![Inspect.](../media/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.
 
    :::image type="content" source="../media/dom-elements-highlighted-select-element-page-inspect.msft.png" alt-text="The Inspect icon." lightbox="../media/dom-elements-highlighted-select-element-page-inspect.msft.png":::
 

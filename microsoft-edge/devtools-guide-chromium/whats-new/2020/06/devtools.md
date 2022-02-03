@@ -178,8 +178,8 @@ Chromium issues [#1073903](https://crbug.com/1073903), [#1083214](https://crbug.
 
 The **Manifest** pane now shows warnings for the following conditions.
 
-* The app shortcut icons are smaller than 96x96 pixels
-* The app shortcut icons and manifest icons aren't square (since the icons are ignored)
+*  When the app shortcut icons are smaller than 96x96 pixels.
+*  When the app shortcut icons and manifest icons aren't square (since the icons are ignored).
 
 :::image type="content" source="../../media/2020/06/app-shortcut-warnings.msft.png" alt-text="App shortcut warnings." lightbox="../../media/2020/06/app-shortcut-warnings.msft.png":::
 
@@ -187,16 +187,15 @@ Chromium issue [#955497](https://crbug.com/955497)
 
 ### Consistent display of the Computed pane
 
-The **Computed** pane in the **Elements** tool now displays consistently as a pane across all viewport sizes.  Previously the **Computed** pane merged inside the **Styles** pane when the width of the DevTools viewport was narrow.
+The **Computed** pane in the **Elements** tool is now displayed consistently as a pane across all viewport sizes.  Previously, the **Computed** pane merged inside of the **Styles** pane when DevTools was narrow.
 
-:::image type="content" source="../../media/2020/06/computed-pane.msft.png" alt-text="The Computed pane consistently displays as a separate pane even when the DevTools are narrow." lightbox="../../media/2020/06/computed-pane.msft.png":::
+:::image type="content" source="../../media/2020/06/computed-pane.msft.png" alt-text="The Computed pane is consistently displayed as a separate pane, even when DevTools is narrow." lightbox="../../media/2020/06/computed-pane.msft.png":::
 
 Chromium issue [#1073899](https://crbug.com/1073899)
 
 ### Bytecode offsets for WebAssembly files
 
-DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.
-The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.
+DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.  The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.
 
 Chromium issue [#1071432](https://crbug.com/1071432)
 

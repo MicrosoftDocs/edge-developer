@@ -77,22 +77,22 @@ The most popular use case for the **Console** is logging information from your s
 
 1. To open the **Console**, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
-1. See [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html), or copy and run the following code in the **Console**.
+1. See [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html), or copy and run the following code in the **Console**:
 
-```javascript
-console.log('This is a log message');
-console.info('This is some information');
-console.error('This is an error');
-console.warn('This is a warning');
-console.log(document.body.getBoundingClientRect());
-console.table(document.body.getBoundingClientRect());
-let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
-console.groupCollapsed('Technolgies');
-technologies.forEach(tech => {console.info(tech);})
-console.groupEnd('Technolgies');
-```
-
-1. The **Console** displays the resulting messages caused by demo code:
+   ```javascript
+   console.log('This is a log message');
+   console.info('This is some information');
+   console.error('This is an error');
+   console.warn('This is a warning');
+   console.log(document.body.getBoundingClientRect());
+   console.table(document.body.getBoundingClientRect());
+   let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
+   console.groupCollapsed('Technologies');
+   technologies.forEach(tech => {console.info(tech);})
+   console.groupEnd('Technologies');
+   ```
+   
+1. The **Console** displays the resulting messages that are caused by the demo code:
 
    :::image type="content" source="../media/console-intro-logging.msft.png" alt-text="Console full of messages caused by demo code." lightbox="../media/console-intro-logging.msft.png":::
 
@@ -146,48 +146,68 @@ Autocompletion of JavaScript expressions in the **Console**:
 <!-- ====================================================================== -->
 ## Interact with the current webpage in the browser
 
-The **Console** has access to the [Window](https://developer.mozilla.org/docs/Web/API/Window) object of the browser.  You can write scripts that interact with the current webpage.
+The **Console** has access to the [Window](https://developer.mozilla.org/docs/Web/API/Window) object of the browser.  You can write scripts that interact with the current webpage, by reading data from the DOM and assigning data to DOM elements.
 
-To try writing a script that interacts with the current page:
+
+### Reading from the DOM tree in the Console
+
+To use a JavaScript expression to read from the current page by reading a selected element from the DOM tree:
 
 1. Open the **Console**.
-1. Copy and paste the following code:
+
+1. Paste the following code into the **Console**, and then press `Enter`:
 
    ```javascript
    document.querySelector('h1').innerHTML
    ```
 
-Copying the top heading (`h1`) content from the DOM and displaying the expression evaluation result in the **Console**:
+   This expression selects the first heading-level 1 from the DOM and then selects the HTML content that's contained between the `<h1>` start and end tags.  The **Console** displays the output of the expression, which is the text of the heading:
 
-:::image type="content" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copying the top heading (h1) content from the DOM and displaying the expression evaluation result in the Console." lightbox="../media/console-intro-reading-DOM.msft.png":::
+   :::image type="content" source="../media/console-intro-reading-DOM.msft.png" alt-text="The Console displays the output of the expression, which is the text of the heading." lightbox="../media/console-intro-reading-DOM.msft.png":::
 
-Instead of only reading from the webpage, you can also change the page.  To try changing the webpage:
+You have read from the DOM representation of the webpage, by entering a JavaScript expression in the **Console** and displaying the output in the **Console**.
+
+
+### Writing to the DOM tree and webpage from the Console
+
+You can also change the rendered webpage, by changing the DOM (or _writing to_ the DOM), from within the **Console**.
+
+To change the rendered webpage:
 
 1. Open the **Console**.
-1. Copy and paste the following code:
+
+1. Paste the following code into the **Console**, and then press `Enter`:
 
    ```javascript
    document.querySelector('h1').innerHTML = 'Rocking the Console';
    ```
 
-Write text to the DOM in the **Console**:
+   The above JavaScript expression uses the `=` sign to assign a value to the selected DOM item.  The evaluated value of the expression is a string for a heading, in this example.  The expression's value (the heading string) is shown both in the **Console** and in the rendered webpage:
 
-:::image type="content" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in the Console." lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+   :::image type="content" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in the Console." lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
 
-You changed the main heading of the webpage to **Rocking the Console**.  The **Console Utility** methods make it easy to access and manipulate the current webpage.  For more information, see [Console tool utility functions and selectors](utilities.md).
+   You changed the main heading of the webpage to **Rocking the Console**.
+
+
+### Using the $$ Console utility method to 
+
+The **Console Utility** methods make it easy to access and manipulate the current webpage.
 
 For example, to add a green border around all the links in the current webpage:
 
 1. Open the **Console**.
-1. Copy and paste the following code:
+
+1. Paste the following code into the **Console**, and then press `Enter`:
 
    ```javascript
    $$('a').forEach(a => a.style.border='1px solid lime');
    ```
 
-Manipulating a selection of elements using the **Console**:
+   The `$$(selector)` console utility function is "Query selector all".  This DOM query selector function returns an array of all the elements that match the specified CSS selector, like the JavaScript function `document.querySelectorAll()`.  In this example, we select all the `<a>` hyperlink elements and then apply a green box around them:
 
-:::image type="content" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using the Console." lightbox="../media/console-intro-changing-styles.msft.png":::
+   :::image type="content" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using the Console." lightbox="../media/console-intro-changing-styles.msft.png":::
+
+For more information, see [Console tool utility functions and selectors](utilities.md).
 
 
 <!-- ====================================================================== -->

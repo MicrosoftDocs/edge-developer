@@ -115,7 +115,7 @@ To display the selected element and the parents of the element, turn off the **I
 
 If you turn on the **Include children** setting and turn off the **Include parents** setting and then select the **Isolate selected element** button, the canvas displays the element and any children.  If you turn off both settings and then select the **Isolate selected element** button, the canvas only displays the element you previously selected.
 
-A slider on the control pane named **Nesting level for page** with a number next to it.  The number indicates the number of layers for the document.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to `1`, which displays only the furthest back element in the DOM.  To remove some of the clutter, drag the slider.  It helps you get a closer look at what is happening in the lower levels.
+A slider on the control pane named **Nesting level for page** with a number next to it.  The number indicates the number of layers for the document.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to `1`, which displays only the furthest-back element in the DOM.  To remove some of the clutter, drag the slider.  It helps you get a closer look at what is happening in the lower levels.
 
 ### DOM color type
 

@@ -74,7 +74,7 @@ You'll build a site in the Glitch online code editor.
 
 1. Select **Show** > **In a New Window**.  A new tab opens, showing the live page.  This tab is called the **live tab** throughout this tutorial.
 
-:::image type="content" source="media/beginners-html-setup4.msft.png" alt-text="The live tab." lightbox="media/beginners-html-setup4.msft.png":::
+   :::image type="content" source="media/beginners-html-setup4.msft.png" alt-text="The live tab." lightbox="media/beginners-html-setup4.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ Your site needs more information.  To add some content:
 
    :::image type="content" source="media/beginners-html-add4.msft.png" alt-text="The updated code is also highlighted in the editor tab." lightbox="media/beginners-html-add4.msft.png":::
 
-1. View the **live tab** to make sure that the new content displays correctly.
+1. View the **live tab** to make sure that the new content is displayed correctly.
 
    :::image type="content" source="media/beginners-html-add5.msft.png" alt-text="The new list is visible in the live tab." lightbox="media/beginners-html-add5.msft.png":::
 
@@ -141,7 +141,7 @@ If you are developing a page with a lot of HTML, it becomes tedious to go back-a
 
 Before editing content from Microsoft Edge DevTools, let's understand the difference between HTML and the DOM. Proceed with the following steps to learn from an example.
 
-1. Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` displays.
+1. Navigate to the **live tab**. At the bottom of your page, the text `A new element!?!` is displayed.
 
     <!--
       :::image type="content" source="media/beginners-html-dom1.msft.png" alt-text="At the bottom of the page, the text 'A new element!?!' is displayed." lightbox="media/beginners-html-dom1.msft.png":::
@@ -157,15 +157,15 @@ Before editing content from Microsoft Edge DevTools, let's understand the differ
 
    :::image type="content" source="media/beginners-html-dom3.msft.png" alt-text="Inspecting some text." lightbox="media/beginners-html-dom3.msft.png":::
 
-   DevTools opens up alongside your page. `<div>A new element!?!</div>` is highlighted. Although this structure in DevTools looks like HTML, it is the **DOM Tree**.
+   DevTools opens alongside your page.  `<div>A new element!?!</div>` is highlighted.  Although this structure in DevTools looks like HTML, it's actually the **DOM Tree**.
 
    :::image type="content" source="media/beginners-html-dom4.msft.png" alt-text="DevTools is open alongside the page." lightbox="media/beginners-html-dom4.msft.png":::
 
-When your page loads, the browser uses the HTML to create the initial content of the page. The DOM represents the current content of the page, which can change over time.
+When your page loads, the browser uses the HTML to create the initial content of the page.  The DOM represents the current content of the page, which can change over time.
 
-The `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML. This tag causes some JavaScript code to run. Learn more about JavaScript in a [later tutorial](../javascript/index.md).
+The `<div>A new element!?!</div>` content is added to your page because of the `<script src="new.js"></script>` tag at the bottom of your HTML.  This tag causes some JavaScript code to run. Learn more about JavaScript in a [later tutorial](../javascript/index.md).
 
-For now, think of it as a scripting language that can change the content of your page. In this case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is displayed in the **live** tab, but not in the HTML.
+For now, think of it as a scripting language that can change the content of your page.  In this case, JavaScript code adds `<div>A new element!?!</div>` to your page. That is why this text is displayed in the **live** tab, but not in the HTML.
 
 ### Edit the DOM
 
@@ -181,14 +181,14 @@ To quickly experiment with content changes without leaving the live tab:
       <button>Download my resume</button>
    </header>
    ```
-   
-:::image type="content" source="media/beginners-html-edit2.msft.png" alt-text="Updating the node as HTML." lightbox="media/beginners-html-edit2.msft.png":::
+
+   :::image type="content" source="media/beginners-html-edit2.msft.png" alt-text="Updating the node as HTML." lightbox="media/beginners-html-edit2.msft.png":::
 
 1. Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
 
-:::image type="content" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page." lightbox="media/beginners-html-edit3.msft.png":::
+   :::image type="content" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page." lightbox="media/beginners-html-edit3.msft.png":::
 
-This workflow is only suitable for experimenting with content changes. If you refresh the page or close the tab, your changes are lost. If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.
+This workflow is only suitable for experimenting with content changes.  If you refresh the page or close the tab, your changes are lost.  If you want to save your changes, manually copy the code to your HTML file. The next couple of sections show you some more ways to change content from the DOM Tree.
 
 
 <!-- ====================================================================== -->
@@ -214,7 +214,7 @@ Remove a node from the DOM Tree:
 
 1. Press `Delete`.  The `<div>A new element!?!</div>` node is removed from the DOM Tree.
 
-:::image type="content" source="media/beginners-html-delete2.msft.png" alt-text="The node has been deleted." lightbox="media/beginners-html-delete2.msft.png":::
+   :::image type="content" source="media/beginners-html-delete2.msft.png" alt-text="The node has been deleted." lightbox="media/beginners-html-delete2.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -262,7 +262,7 @@ You're almost done. You made a few changes to the page in DevTools, but they're 
     
 1. Go back to the **editor tab** and replace the content of your `index.html` file with the code that you copied.
 
-:::image type="content" source="media/beginners-html-copy2.msft.png" alt-text="How your index.html file should look." lightbox="media/beginners-html-copy2.msft.png":::
+   :::image type="content" source="media/beginners-html-copy2.msft.png" alt-text="How your index.html file should look." lightbox="media/beginners-html-copy2.msft.png":::
 
 
 <!-- ====================================================================== -->

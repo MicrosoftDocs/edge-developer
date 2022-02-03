@@ -49,7 +49,7 @@ To turn on the Source Order Viewer:
 
 To activate and use the Source Order Viewer, with the demo page:
 
-1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then press `F12` to open DevTools.
 
 1. In the **Elements** tool, to the right of the **Styles** tab, select the **Accessibility** tab.
 

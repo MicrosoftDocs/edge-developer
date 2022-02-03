@@ -343,7 +343,7 @@ Chromium issue: [#1103854](https://crbug.com/1103854)
 
 Imported font faces are now added to the list of CSS autocompletion when editing the `font-family` property in the **Styles** pane.
 
-For example, if `monospace` is a custom font installed on the local machine, it displays in the CSS completion list.  In previous versions of Microsoft Edge, the font was not displayed.
+For example, if `monospace` is a custom font installed on the local machine, it appears in the CSS completion list.  In previous versions of Microsoft Edge, the font was not displayed.
 
 :::image type="content" source="../../media/2020/08/font-auto-complete.msft.png" alt-text="Autocomplete custom fonts." lightbox="../../media/2020/08/font-auto-complete.msft.png":::
 

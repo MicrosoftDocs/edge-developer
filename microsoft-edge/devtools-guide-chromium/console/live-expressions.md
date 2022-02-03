@@ -24,6 +24,7 @@ To start, click the **Create live expression** (eye) icon next to the **Filter**
 
 **Live Expressions** can be any valid JavaScript expression.
 
+
 To try using **Live Expressions**:
 
 1. Open the **Live Expression** textbox.
@@ -32,25 +33,29 @@ To try using **Live Expressions**:
 
 1. To save the expression, press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** textbox.
 
-The expression is now live, and displays `body` as the result:
+   The expression is now live, and displays `body` as the result:
 
-:::image type="content" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="The Live Expression for document.activeElement displays 'body' as the result." lightbox="../media/console-live-expressions-document-active-element.msft.png":::
+   :::image type="content" source="../media/console-live-expressions-document-active-element.msft.png" alt-text="The Live Expression for document.activeElement displays 'body' as the result." lightbox="../media/console-live-expressions-document-active-element.msft.png":::
 
-If you navigate around the webpage, the value changes.  For example, in the following figure, you open the search menu in the webpage, and the expression now displays `button.nav-bar-button.focus-visible` as the value:
+   If you navigate around the webpage, the value changes.
 
-:::image type="content" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="To change the value of the Live Expression, interact with different elements on the webpage." lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
+1. Open the search menu in the webpage.  The expression now displays `button.nav-bar-button.focus-visible` as the value:
 
-To change the value again, open and click the **Search** textbox on the webpage:
+   :::image type="content" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="To change the value of the Live Expression, interact with different elements on the webpage." lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
 
-:::image type="content" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigate to a different element in the webpage to update the Live Expression." lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
+1. To change the value again, open and click the **Search** textbox on the webpage:
+
+   :::image type="content" source="../media/console-live-expressions-document-active-element-search.msft.png" alt-text="Navigate to a different element in the webpage to update the Live Expression." lightbox="../media/console-live-expressions-document-active-element-search.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Remove Live Expressions
 
-A **Live Expression** is available as long as you keep it active.  To get rid of a **Live Expression**, click the `x` next to it.
+A **Live Expression** is available as long as you keep it active.
 
-:::image type="content" source="../media/console-live-expressions-remove.msft.png" alt-text="To remove Live Expressions, click the 'x' next to it." lightbox="../media/console-live-expressions-remove.msft.png":::
+*  To get rid of a **Live Expression**, click the `x` next to it.
+
+   :::image type="content" source="../media/console-live-expressions-remove.msft.png" alt-text="To remove Live Expressions, click the 'x' next to it." lightbox="../media/console-live-expressions-remove.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -58,23 +63,29 @@ A **Live Expression** is available as long as you keep it active.  To get rid of
 
 You can create as many Live Expressions as you want, and persist each Live Expression across browser sessions and windows.  Live Expressions are a way to cut down on noise in your debugging workflow.
 
+
 ### Using Console logging to display mouse coordinates
 
-For example, suppose you want to monitor the mouse movement in the current webpage.
+To monitor the mouse movement in the current webpage:
 
-1. Open the [Logging Mouse Movement demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html) in a new tab or window.
+1. Open the [Logging Mouse Movement demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove.html) in a new window or tab.
 
-1. Open the DevTools **Console**, and then move your mouse around to display the logs with a lot of information.
+1. Right-click anywhere in the demo webpage, and then select **Inspect**.  The DevTools **Console** opens.
+
+1. Move your mouse around over the rendered demo webpage.  Many log messages are output, displayed in the **Console**..
 
 <!-- You can view the source file for this demo at [MicrosoftEdge/DevToolsSamples > mousemove.html](https://github.com/MicrosoftEdge/DevToolsSamples/blob/master/docs/console/mousemove.html). -->
 
-:::image type="content" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="The Console displays much information about the mouse position." lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+   :::image type="content" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="The Console displays an overwhelming number of messages about the mouse position." lightbox="../media/console-live-expression-mouse-logging.msft.png":::
 
 The large amount of information slows down your debugging process, and makes it hard to see the changes that you're trying to monitor.  As the **Console** displays more messages when you move your mouse, the values that you want to see scroll off the screen.
 
+
 ### Using Live Expressions to display mouse coordinates
 
-As an alternative to verbose **Console** message logging as shown above, use **Live Expressions**:
+As an alternative to verbose **Console** message logging as shown above, use **Live Expressions**.
+
+To use Live Expressions to avoid excessive Console log messages:
 
 1. Open the [Mouse movement without logging demo](https://microsoftedge.github.io/DevToolsSamples/console/mousemove-no-log.html) in a new tab or window.
 
@@ -84,9 +95,9 @@ As an alternative to verbose **Console** message logging as shown above, use **L
 
 1. Create Live Expressions for `x` and `y`.  To do this, see [Add a new live expression](#add-a-new-live-expression), above.
 
-Displaying the `x` and `y` coordinates of the mouse as Live Expressions:
+   Displaying the `x` and `y` coordinates of the mouse as Live Expressions:
 
-:::image type="content" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Displaying the 'x' and 'y' coordinates of the mouse as Live Expressions." lightbox="../media/console-live-expressions-x-and-y.msft.png":::
+   :::image type="content" source="../media/console-live-expressions-x-and-y.msft.png" alt-text="Displaying the 'x' and 'y' coordinates of the mouse as Live Expressions." lightbox="../media/console-live-expressions-x-and-y.msft.png":::
 
 When you use **Live Expressions**, you always get the information on the same part of your screen, and keep **Console** logs for values that don't change as much.
 

@@ -169,7 +169,7 @@ What if you wanted all of the `<p>` elements on your webpage to be styled the sa
 
 1. Click **Contact** to go back to the contact page.  Notice that the font of the **Home** and **Contact** links has changed:
 
-:::image type="content" source="../media/beginners-css-internal2.msft.png" alt-text="The font of the Home and Contact links has changed." lightbox="../media/beginners-css-internal2.msft.png":::
+   :::image type="content" source="../media/beginners-css-internal2.msft.png" alt-text="The font of the Home and Contact links has changed." lightbox="../media/beginners-css-internal2.msft.png":::
 
 ### Understand internal stylesheets
 
@@ -229,7 +229,7 @@ The following steps describe how you can use commas to add multiple selectors to
 
 1. Click the **Contact** link to go back to the contact page.  Now, **Contact Me!** has the same font as the navigation links:
 
-:::image type="content" source="../media/beginners-css-multiple1.msft.png" alt-text="The text 'Contact Me!' now has the same font as the Home and Contact links." lightbox="../media/beginners-css-multiple1.msft.png":::
+   :::image type="content" source="../media/beginners-css-multiple1.msft.png" alt-text="The text 'Contact Me!' now has the same font as the Home and Contact links." lightbox="../media/beginners-css-multiple1.msft.png":::
 
 
 <!-- ====================================================================== -->

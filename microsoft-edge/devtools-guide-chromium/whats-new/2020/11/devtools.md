@@ -56,7 +56,7 @@ An open-source tool, [webhint](https://webhint.io), provides real-time feedback 
 
 You are now able to filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.
 
-To help you review issues revealed by [webhint](https://webhint.io), the **Issues** tool now displays the following information.
+To help you review issues revealed by [webhint](https://webhint.io), the **Issues** tool now displays the following information:
 
 *  Improved code snippets.
 *  Links to other relevant panels.
@@ -239,7 +239,7 @@ Try out this feature by navigating to [CORS error demo](https://cors-errors.glit
 
 #### Cross-origin isolation information in the Frame details view
 
-The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers can be shared using `postMessage()`.  A deprecation warning displays if the SAB and `postMessage()` is currently available, but the context isn't cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, see [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).  To review real-time updates of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
+The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers can be shared using `postMessage()`.  A deprecation warning appears if the SAB and `postMessage()` is currently available, but the context isn't cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, see [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).  To review real-time updates of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
 
 :::image type="content" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Cross-origin information." lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
 

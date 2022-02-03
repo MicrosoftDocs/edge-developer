@@ -97,7 +97,7 @@ To create an `HTML file` to find your geolocation, complete following the action
     webView.CoreWebView2.Navigate(@"C:\{path\to\file}\geolocation.html");
     ```
 
-1.  Ensure the `geolocation.html` file displays in your WebView2 control app.
+1.  Ensure the `geolocation.html` file is displayed in your WebView2 control app.
 
     :::image type="complex" source="./media/initial-geolocate.png" alt-text="Display the geolocater.html file in your WebView2 control app." lightbox="./media/initial-geolocate.png":::
        Display the `geolocation.html` file in your WebView2 control app

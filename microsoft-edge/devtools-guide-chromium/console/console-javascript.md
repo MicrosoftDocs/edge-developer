@@ -17,19 +17,22 @@ The **Console**:
 1. Prints out the result of your expression.
 1. Loops back to the first step.
 
-To try entering JavaScript statements and expressions interactively in the **Console**:
 
-1. In DevTools, open the **Console**.  For example, press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\).
+To enter JavaScript statements and expressions interactively in the Console:
 
-1. Click in the **Console**, and then type `2 + 2`.
+1. Right-click in a webpage and then select **Inspect**.  DevTools opens.  Or, press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\), to directly open the DevTools console.
+
+1. If necessary, click in DevTools to give it focus, and then press `Esc` to open the **Console**.
+
+1. Click in the **Console**, and then type `2+2`, without pressing `Enter`.
 
    The **Console** immediately displays the result `4` on the next line while you type.  The `Eager evaluation` feature helps you write valid JavaScript.  The **Console** displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
    :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of the expression '2 + 2', interactively as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
-1. When you press `Enter`, the **Console** runs the JavaScript command (expression or statement), displays the result, and allows you to enter the next JavaScript command.
+1. When you press `Enter`, the **Console** runs the JavaScript command (expression or statement), displays the result, and then moves the cursor down to allow you to enter the next JavaScript command.
 
-:::image type="content" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
+   :::image type="content" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -51,7 +54,7 @@ To try autocompletion while writing multi-part expressions:
 
 1. Type another `.` to get a large list of possible properties and methods available on the body of the current webpage.
 
-:::image type="content" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions." lightbox="../media/console-javascript-autocomplete.msft.png":::
+   :::image type="content" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions." lightbox="../media/console-javascript-autocomplete.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -95,18 +98,24 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
    )).json();
    ```
 
-:::image type="content" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request." lightbox="../media/console-javascript-top-level-await.msft.png":::
+   :::image type="content" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request." lightbox="../media/console-javascript-top-level-await.msft.png":::
 
-The 10 entries are hard to recognize, since a lot of information is displayed.  You can use the `console.table()` log method to only receive the information in which you're interested:
+   The 10 entries are hard to recognize, since a lot of information is displayed.
 
-:::image type="content" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Displaying the last result in a human-readable format using 'console.table'." lightbox="../media/console-javascript-filtered-with-table.msft.png":::
+1. Optionally, use the `console.table()` log method to only receive the information in which you're interested:
 
-To reuse the data returned from an expression, use the `copy()` utility method of the **Console**.  The following code sends the request and copies the data from the response to the clipboard:
+   :::image type="content" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Displaying the last result in a human-readable format using 'console.table'." lightbox="../media/console-javascript-filtered-with-table.msft.png":::
 
-```javascript
-copy(await (await fetch(
-'https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1'
-)).json())
-```
+   To reuse the data returned from an expression, use the `copy()` utility method of the **Console**.
 
+   <!-- todo: test: -->
+
+1. Paste the following code.  It sends the request and copies the data from the response to the clipboard:
+
+   ```javascript
+   copy(await (await fetch(
+   'https://api.github.com/repos/microsoft/vscode-edge-devtools/issues?state=all&per_page=50&page=1'
+   )).json())
+   ```
+   
 The **Console** is a great way to practice JavaScript and to do some quick calculations.  The real power is the fact that you have access to the [window](https://developer.mozilla.org/docs/Web/API/Window) object.  See [Interact with the DOM using the Console](console-dom-interaction.md).

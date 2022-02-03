@@ -58,7 +58,7 @@ DevTools saves all requests until you disable **Preserve log**.
 
 ### Capture screenshots during page load
 
-Capture screenshots to analyze what displays for users while waiting for your page to load.
+You can capture screenshots to analyze what's displayed for users while waiting for your page to load.
 
 To enable screenshots:
 

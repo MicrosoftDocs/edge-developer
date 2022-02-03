@@ -35,7 +35,7 @@ The green **Dogs** list item in the **Donation status** section doesn't have eno
 
 The **Inspect** tool's information overlay only represents a single state.  Elements on the page can have different states, all of which need to be tested.  For example, when you hover the mouse pointer over the menu of the accessibility-testing demo page, you get an animation that changes the colors.
 
-To view the animations:
+First, confirm that your animations run when not using the Inspect tool:
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.
 
@@ -43,13 +43,15 @@ To view the animations:
 
    :::image type="content" source="../media/a11y-testing-hover.msft.png" alt-text="The menu item showing different colors when the mouse pointer is over it." lightbox="../media/a11y-testing-hover.msft.png":::
 
-Now, use the Inspect tool. When the Inspect tool is used, animations on the menu items won't run when you hover over them.  When using the Inspect tool, you can't reach the `hover` state on menu items to test the contrast ratio, because the `hover` state in your styles isn't triggered.
+Next, confirm that your animations don't run when using the Inspect tool:
 
-To confirm that your animations don't run:
+1. Click the **Inspect** tool (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools.
 
-1. Select the **Inspect** (![the Inspect button.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+   The **Inspect** tool icon is highlighted; for example, it changes from gray to blue.
 
-1. Hover over the blue links on the sidebar navigation menu.  The animations for the menu items don't run. Instead, the menu items are displayed using colors and highlights for the flexbox overlay.
+   When the Inspect tool is used, animations on the menu items won't run when you hover over them.  When using the Inspect tool, you can't reach the `hover` state on menu items to test the contrast ratio, because the `hover` state in your styles isn't triggered.
+
+1. In the rendered webpage, hover over the blue links on the sidebar navigation menu.  The animations for the menu items don't run.  Instead, the menu items are displayed using color highlighting for the flexbox overlay.
 
 Checking for sufficient text contrast this way isn't enough, because the elements on the page could have different states.
 
@@ -63,9 +65,9 @@ When the **Inspect** tool is active, instead of hovering over an animated elemen
 
 To turn on the hover state while using the Inspect tool:
 
-1. If it's not open already, open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then select **F12** to open DevTools.
+1. If it's not open already, open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab.  Then press `F12` to open DevTools.
 
-1. Select the **Inspect** (![Inspect tool button.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Select the **Inspect** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1. In the rendered webpage, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
@@ -85,7 +87,7 @@ To turn on the hover state while using the Inspect tool:
 
     After the simulated state is applied, you can use the **Inspect** tool again to check the contrast of the element when the user hovers over it, as follows.
 
-1. Select the **Inspect** (![Inspector icon.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
+1. Select the **Inspect** (![Inspector icon.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
 1. Hover over the blue **Cats** link in the sidebar navigation menu.  The link is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 

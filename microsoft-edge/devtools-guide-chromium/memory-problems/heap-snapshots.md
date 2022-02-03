@@ -105,7 +105,7 @@ Top-level entries are "total" lines.
 | Top-level entries | Description |
 |:--- |:--- |
 | **Constructor** | Represents all objects created using this constructor.  |
-| **Distance** | displays the distance to the root using the shortest simple path of nodes.  |
+| **Distance** | Displays the distance to the root using the shortest simple path of nodes.  |
 | **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Object sizes](./memory-101.md#object-sizes).  |
 | **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Object sizes](./memory-101.md#object-sizes).  |
 

@@ -277,7 +277,7 @@ script.innerHTML = 'alert(1);'
 document.getElementById('body').appendChild(script);
 ```
 
-In this case, the script runs and the alert displays.  However, consider this case:
+In this case, the script runs, and the alert appears.  However, consider this case:
 
 ```javascript
 var script = document.createElement('script');
@@ -285,8 +285,7 @@ script.innerHTML = 'eval("alert(1);")';
 =document.getElementById('body').appendChild(script);
 ```
 
-While the initial script runs, the call to `eval` is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.
-Thus, depending on how you write DOM injected scripts in your Extension, changes to the CSP of the page might affect the behavior of your Extension.
+While the initial script runs, the call to `eval` is blocked.  That is, while the initial script runtime is allowed, the behavior within the script is regulated by the CSP of the page.  Thus, depending on how you write DOM injected scripts in your Extension, changes to the CSP of the page might affect the behavior of your Extension.
 
 Since content scripts aren't affected by the CSP of the page, this a great reason to put as much behavior as possible of your Extension into the content script, rather than DOM injected scripts.
 

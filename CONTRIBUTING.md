@@ -38,10 +38,10 @@ To make substantial changes to an existing article, add or change images, or con
 
 2. Click the green **Clone or download** button, copy to your clipboard, then run the following code at your command prompt:
 
-```shell
-git clone {paste_your_repo_clone_link}
-```
-
+   ```Shell
+   git clone {paste_your_repo_clone_link}
+   ```
+   
 For more info, see [Fork a Repo](https://help.github.com/github/getting-started-with-github/fork-a-repo).
 
 If you are unfamiliar with using Git, visit [Lynda.com Git Essentials training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html).

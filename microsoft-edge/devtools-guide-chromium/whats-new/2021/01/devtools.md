@@ -119,7 +119,7 @@ Flexbox `gap` in CSS properties and webpage highlighted:
 
 :::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
 
-You now have a new way to open more tools in the Microsoft Edge DevTools.  After you turn on this experiment, the **More Tools** icon displays as a plus sign (`+`) to the right of the main panel.  To display a list of other tools to add to the main panel, click the **More Tools** (`+`) icon.  To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments**, and then select the checkbox next to **Enable + button tab menus to open more tools**.
+You now have a new way to open more tools in the Microsoft Edge DevTools.  After you turn on this experiment, the **More Tools** icon appears, as a plus sign (`+`) to the right of the main panel.  To show a list of other tools that you can add to the main panel, click the **More Tools** (`+`) icon.  To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments**, and then select the checkbox next to **Enable + button tab menus to open more tools**.
 
 :::image type="content" source="../../media/2021/01/more-tools.msft.png" alt-text="More Tools highlighted in DevTools." lightbox="../../media/2021/01/more-tools.msft.png":::
 

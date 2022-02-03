@@ -26,7 +26,7 @@ The Coverage tool can help you find unused JavaScript and CSS code.  Removing un
 
 :::image type="content" source="../media/coverage-sources-resource-drawer-coverage.msft.png" alt-text="Analyzing code coverage." lightbox="../media/coverage-sources-resource-drawer-coverage.msft.png":::
 
-Caution: Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs can be difficult.  This guide doesn't cover how to refactor a codebase to avoid unused code, because this refactoring depends on your technology stack.
+Finding unused code is relatively easy.  But refactoring a codebase so that each page only ships the JavaScript and CSS that it needs can be difficult.  This guide doesn't cover how to refactor a codebase to avoid unused code, because this refactoring depends on your technology stack.
 
 
 <!-- ====================================================================== -->
@@ -42,9 +42,12 @@ Shipping unused JavaScript or CSS is a common problem in web development.  For e
 </head>
 ```
 
-This stylesheet doesn't just include the code for the button component.  It contains the CSS for _all_ of the Bootstrap components.  But you're not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it doesn't need.  This extra CSS is a problem for the following reasons:
+This stylesheet doesn't just include the code for the button component.  It contains the CSS for _all_ of the Bootstrap components.  But you're not using any of the other Bootstrap components.  So your page is downloading a bunch of CSS that it doesn't need.
+
+This extra CSS is a problem for the following reasons:
 
 *  The extra code slows down your page load.  <!-- See [Render-Blocking CSS](/web/fundamentals/performance/critical-rendering-path/render-blocking-css). -->
+
 *  If a user accesses the page on a mobile device, the extra code uses up their cellular data.
 
 
@@ -52,9 +55,10 @@ This stylesheet doesn't just include the code for the button component.  It cont
 ## Open the Coverage tool
 
 1. [Open the Command Menu](../command-menu/index.md).
+
 1. Start typing `coverage`, select the **Show Coverage** command, and then press `Enter`.  The **Coverage** tool opens in the **Drawer**.
 
-:::image type="content" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage tool." lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
+   :::image type="content" source="../media/coverage-console-drawer-coverage-empty.msft.png" alt-text="The Coverage tool." lightbox="../media/coverage-console-drawer-coverage-empty.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -62,9 +66,9 @@ This stylesheet doesn't just include the code for the button component.  It cont
 
 1. Click one of the following buttons in the **Coverage** tool:
 
-    *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page.](../media/reload-icon.msft.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
+   *  Click **Start Instrumenting Coverage And Reload Page** (![Start Instrumenting Coverage And Reload Page.](../media/reload-icon.msft.png))<!--todo: check UI string--> if you want to see what code is needed to load the page.
 
-    *  Click **Instrument Coverage** (![Instrument Coverage](../media/record-icon.msft.png)) if you want to see what code is used after interacting with the page.
+   *  Click **Instrument Coverage** (![Instrument Coverage](../media/record-icon.msft.png)) if you want to see what code is used after interacting with the page.
 
 1. Click **Stop Instrumenting Coverage And Show Results** (![Stop Instrumenting Coverage And Show Results](../media/stop-icon.msft.png))<!--todo: check UI string--> when you want to stop recording code coverage.
 

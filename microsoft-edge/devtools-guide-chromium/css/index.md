@@ -34,28 +34,23 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
-    1. In DevTools, on the **Elements** tool, in the **DOM Tree** panel, the `Inspect Me!` element is highlighted.
+   In DevTools, on the **Elements** tool, in the **DOM Tree** panel, the `Inspect Me!` element is highlighted.
 
-       :::image type="content" source="../media/css-elements-inspect-me.msft.png" alt-text="The inspected element is highlighted in the DOM Tree." lightbox="../media/css-elements-inspect-me.msft.png":::
+   :::image type="content" source="../media/css-elements-inspect-me.msft.png" alt-text="The inspected element is highlighted in the DOM Tree." lightbox="../media/css-elements-inspect-me.msft.png":::
 
-    1. In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
+1. In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
 
 1. On the page, in the **Value of `data-message`:** textbox, enter the value.
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
-    1. In DevTools, on the **Elements** tool, select the **Styles** panel.
+1. In DevTools, on the **Elements** tool, select the **Styles** panel.  In the **Styles** panel, the `Inspect Me!` element is highlighted.
 
-    1. In the **Styles** panel, the `Inspect Me!` element is highlighted.
+1. In the `Inspect Me!` element, find the `aloha` class rule.  This rule is displayed, because it is being applied to the `Inspect Me!` element.
 
-    1. In the `Inspect Me!` element, find the `aloha` class rule.
+1. In the `aloha` class, find the value for the `padding` style and copy it.
 
-        > [!NOTE]
-        > This rule is displayed, because it is being applied to the `Inspect Me!` element.
-
-    1. In the `aloha` class, find the value for the `padding` style and copy it.
-
-       :::image type="content" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS classes is applied to the inspected element are highlighted in the Styles panel." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
+   :::image type="content" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS classes is applied to the inspected element are highlighted in the Styles panel." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
 
 1. On the page, in the **Value of `padding`:** textbox, enter the value.
 
@@ -97,9 +92,9 @@ To display how an element looks when a CSS class is applied to or removed from a
 
 1. Type `color_me` in the **Add new class** text box and then press `Enter`.  A checkbox appears below the **Add new class** text box, where you can toggle the class on and off.  If the `Add A Class To Me!` element has any other classes applied to it, you are also able to toggle each from here.
 
-The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
+   The `color_me` class is applied to the element using the **.cls** section of the **Styles** panel:
 
-:::image type="content" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Apply the color_me class to the element." lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
+   :::image type="content" source="../media/css-elements-add-a-class-to-me-styles-cls.msft.png" alt-text="Apply the color_me class to the element." lightbox="../media/css-elements-add-a-class-to-me-styles-cls.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -119,9 +114,9 @@ Use the **Styles** panel to permanently apply a CSS pseudostate to an element.  
 
 1. Select the **:hover** checkbox.  The background color changes like before, even though you aren't actually hovering over the element.
 
-Toggling the `:hover` pseudostate on an element:
+   Here's the result of toggling the `:hover` pseudostate on an element:
 
-:::image type="content" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Toggling the hover pseudostate on an element." lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
+   :::image type="content" source="../media/css-elements-hover-over-me-styles-hov-hover.msft.png" alt-text="Toggling the hover pseudostate on an element." lightbox="../media/css-elements-hover-over-me-styles-hov-hover.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -137,18 +132,17 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 
 1. In the **Box Model** diagram in the **Styles** panel, hover on **padding**.  The element's padding is highlighted in the viewport.
 
-    > [!NOTE]
-    > Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** panel to display the **Box Model**.
+   Depending on the size of your DevTools window, you may need to scroll to the bottom of the **Styles** panel to display the **Box Model**.
 
 1. Double-click the left margin in the **Box Model**, which currently has a value of `-`, meaning that the element doesn't have a `margin-left`.
 
 1. Type `100px` and press `Enter`.  The **Box Model** defaults to pixels, but it also accepts other values, such as `25%`, or `10vw`.
 
-    Hovering over the element's padding:
+   Hovering over the element's padding:
 
    :::image type="content" source="../media/css-elements-change-my-margin-styles-padding.msft.png" alt-text="Hovering over the element's padding." lightbox="../media/css-elements-change-my-margin-styles-padding.msft.png":::
 
-    Changing the element's left margin:
+   Changing the element's left margin:
 
    :::image type="content" source="../media/css-elements-change-my-margin-styles-margin-edit.msft.png" alt-text="Changing the element's left margin." lightbox="../media/css-elements-change-my-margin-styles-margin-edit.msft.png":::
 
@@ -156,9 +150,11 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 <!-- ====================================================================== -->
 ## Debugging Media Queries
 
-[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your web product react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.  Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.
+[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your web product react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.
 
-If you want to debug or test the Media Queries you defined in your CSS, use the following steps.
+Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.
+
+To debug or test the Media Queries you defined in your CSS:
 
 1. Open DevTools.  To do this, you can right-click in a webpage and then select **Inspect**.
 

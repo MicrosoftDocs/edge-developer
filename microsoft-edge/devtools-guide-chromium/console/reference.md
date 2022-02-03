@@ -56,6 +56,7 @@ This article is an outline of the features of the **Console**.
 
 You can open the **Console** as a [tool in the upper pane](#open-the-console-tool) or as a [tool in the Drawer](#open-the-console-tool-in-the-drawer).
 
+
 ### Open the Console tool
 
 Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
@@ -65,6 +66,7 @@ Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Panel** badge next to it.
 
 :::image type="content" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the Console tool." lightbox="../media/console-command-menu-show-console.msft.png":::
+
 
 ### Open the Console tool in the Drawer
 
@@ -80,11 +82,13 @@ To open the **Console** tool from the [Command Menu](../command-menu/index.md), 
 
 :::image type="content" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the **Console** tool in the Drawer." lightbox="../media/console-command-menu-show-console.msft.png":::
 
+
 ### Open Console Settings
 
 Click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button.
 
 :::image type="content" source="../media/console-settings-group-similar-empty.msft.png" alt-text="Console Settings." lightbox="../media/console-settings-group-similar-empty.msft.png":::
+
 
 ### Open the Console Sidebar
 
@@ -98,9 +102,11 @@ To display the **Sidebar**, click **Show console sidebar** (![Show console sideb
 
 This section contains features that change how messages are presented in the Console.  For a hands-on walkthrough, see [View messages](index.md#inspect-and-filter-information-on-the-current-webpage).
 
+
 ### Turn off message grouping
 
 To turn off the default message grouping behavior of the **Console**, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Group similar**.  For an example, see [Log XHR and Fetch requests](#log-xhr-and-fetch-requests).
+
 
 ### Log XHR and Fetch requests
 
@@ -118,9 +124,11 @@ The top message in previous figure displays the default grouping behavior of the
 
 <!--todo: add example for ungrouping console items  -->
 
+
 ### Persist messages across page loads
 
 When you load a new webpage, the default action clears the **Console**.  To persist messages across page loads, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Preserve Log**.
+
 
 ### Hide network messages
 
@@ -131,13 +139,15 @@ The default action for Microsoft Edge is to logs network messages to the **Conso
 To hide network messages:
 
 1. Click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button.
+
 1. Select the checkbox next to **Hide Network**.
 
 
 <!-- ====================================================================== -->
 ## Filter messages
 
-There are many ways to filter out messages in the **Console**.
+There are multiple ways to filter out messages in the **Console**.
+
 
 ### Filter out browser messages
 
@@ -145,16 +155,19 @@ To only display messages that came from the JavaScript of the webpage, [Open the
 
 :::image type="content" source="../media/console-sidebar-drawer-user-messages.msft.png" alt-text="Displaying user messages." lightbox="../media/console-sidebar-drawer-user-messages.msft.png":::
 
+
 ### Filter by log level
 
-DevTools assigns each `console.*` method one of the four severity levels.
+DevTools assigns each `console.*` method one of the four severity levels:
 
 *  `Error`
 *  `Info`
 *  `Verbose`
 *  `Warning`
 
-For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console object API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.
+For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console object API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.
+
+You can hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you can hide the other three groups.
 
 To filter the messages, click the **Log Levels** dropdown and then select `Verbose`, `Info`, `Warning`, or `Error`.
 
@@ -163,6 +176,7 @@ To filter the messages, click the **Log Levels** dropdown and then select `Verbo
 To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then select **Errors**, **Warnings**, **Info**, or **Verbose**.
 
 :::image type="content" source="../media/console-sidebar-warnings.msft.png" alt-text="Use the Sidebar to view warnings." lightbox="../media/console-sidebar-warnings.msft.png":::
+
 
 ### Filter messages by URL
 
@@ -184,9 +198,11 @@ To display messages from a single URL:
 
 :::image type="content" source="../media/console-filter-text-specified.msft.png" alt-text="Displaying the messages that came from wp-ad.min.js." lightbox="../media/console-filter-text-specified.msft.png":::
 
+
 ### Filter out messages from different contexts
 
 Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded in an `<iframe>` and generates many messages in your **Console**.  Because the ad is running in a different [JavaScript context](#select-javascript-context), one way to hide the messages is to click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then select the checkbox next to **Selected Context Only**.
+
 
 ### Filter out messages that don't match a regular expression pattern
 
@@ -200,13 +216,16 @@ Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to 
 
 This section contains features related to running JavaScript in the **Console**.  For a hands-on walkthrough, see [Run JavaScript](console-javascript.md).
 
+
 ### Rerun expressions from history
 
 Press `Up Arrow` to cycle through the history of JavaScript expressions that you ran earlier in the **Console**.  Press `Enter` to run that expression again.
 
+
 ### Watch the value of an expression in real time with Live Expressions
 
-If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you may find it easier to create a **Live Expression**.  With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions](live-expressions.md).
+If you find yourself typing the same JavaScript expression in the **Console** repeatedly, you might find it easier to create a **Live Expression**.  With **Live Expressions**, you type an expression once and then pin it to the top of your **Console**.  The value of the expression updates in near real time.  See [Watch JavaScript Expression Values In Real-Time With Live Expressions](live-expressions.md).
+
 
 ### Turn off Eager Evaluation
 
@@ -215,6 +234,7 @@ If you find yourself typing the same JavaScript expression in the **Console** re
 1. Click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button.
 1. Clear the checkbox next to **Eager Evaluation**.
 
+
 ### Turn off autocomplete from history
 
 As you type out an expression, the autocomplete popup window for the **Console** displays expressions that you ran earlier.  The expressions are pre-pended with the `>` character.  To stop displaying expressions from your history, click the **Console Settings** (![Console Settings icon.](../media/settings-button-icon.msft.png)) button and then clear the checkbox next to **Autocomplete From History** checkbox.
@@ -222,6 +242,7 @@ As you type out an expression, the autocomplete popup window for the **Console**
 In the following figure, `document.querySelector('a')` and `document.querySelector('img')` are expressions that were evaluated earlier.
 
 :::image type="content" source="../media/console-filter-text-autofilter-history.msft.png" alt-text="The autocomplete popup menu displays expressions from history." lightbox="../media/console-filter-text-autofilter-history.msft.png":::
+
 
 ### Select JavaScript context
 

@@ -316,7 +316,7 @@ The first task, then, is to find code that you don't need to run on page load.
 
 In short, when you're working with your own code, the **Coverage** tool helps you analyze your code, line-by-line, and only ship the code that's needed for page load.
 
-Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **Request blocking** tool displays what happens when resources aren't available:
+Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **Request blocking** tool shows what happens when resources aren't available:
 
 1. Select the **Network** tool.
 

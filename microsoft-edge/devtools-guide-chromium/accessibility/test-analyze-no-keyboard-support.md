@@ -19,7 +19,7 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
 
 1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab or window, and then press **F12** to open DevTools.
 
-1. Click the **Inspect** (![Inspect icon.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
+1. Click the **Inspect** (![Inspect icon.](../media/inspect-tool-icon-light-theme.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
 1. Hover over the **50**, **100**, and **200** donation buttons.  The Inspect tool appears on the webpage, as an overlay.  The **keyboard-focusable** row of the Inspect overlay shows that none of the donation amount buttons are keyboard-accessible, as indicated by a gray circle with diagonal line.  The buttons have no name, and have a role of `generic` because they are `div` elements, which means that the buttons aren't accessible to assistive technology.
 
@@ -56,22 +56,24 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
 
    :::image type="content" source="../media/a11y-testing-form-handling-javascript.msft.png" alt-text="The JavaScript responsible for the donation form's functionality, shown in the Sources tool." lightbox="../media/a11y-testing-form-handling-javascript.msft.png":::
 
-```javascript
-donations.addEventListener('click', e => {
-  let t = e.target;
-  if (t.classList.contains('donationbutton')) {
-    if (currentbutton) { currentbutton.classList.remove('current'); }
-    t.classList.add('current');
-    currentbutton = t;
-    e.preventDefault();
-  }
-  if (t.classList.contains('submitbutton')) {
-    alert('Thanks for your donation!')
-  }
-})
-```
+   Here's a code listing of the applied JavaScript:
 
-Using a `click` event to read the buttons is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, because a `div` element isn't keyboard-accessible, and this **Donate** button is implemented as a `div` element (`<div class="submitbutton">Donate</div>`), this JavaScript functionality never runs unless you use a mouse or another source of a `click` event, such as a special button available on some keyboards.
+    ```javascript
+    donations.addEventListener('click', e => {
+      let t = e.target;
+      if (t.classList.contains('donationbutton')) {
+        if (currentbutton) { currentbutton.classList.remove('current'); }
+        t.classList.add('current');
+        currentbutton = t;
+        e.preventDefault();
+      }
+      if (t.classList.contains('submitbutton')) {
+        alert('Thanks for your donation!')
+      }
+    })
+    ```
+    
+   Using a `click` event to read the buttons is good practice, because a `click` event fires both on mouse pointer and keyboard interaction.  However, because a `div` element isn't keyboard-accessible, and this **Donate** button is implemented as a `div` element (`<div class="submitbutton">Donate</div>`), this JavaScript functionality never runs unless you use a mouse or another source of a `click` event, such as a special button available on some keyboards.
 
 This is a classic example where JavaScript was added to create functionality that `button` elements provide natively.  Simulating the functionality of buttons with `div` elements ended up producing an inaccessible experience.
 
