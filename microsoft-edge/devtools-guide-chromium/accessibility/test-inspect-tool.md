@@ -28,7 +28,7 @@ The main article about the Inspect tool is [Analyze HTML pages using the Inspect
 
 <!-- Inspect tool: Accessibility section of overlay -->
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** (![Inspect.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the icon is highlighted (blue).
 
@@ -77,7 +77,7 @@ The top part of the **Inspect** overlay, which is above the **Accessibility** se
 
 In addition to the information overlay, the **Inspect** tool also provides region-coloring that's similar to hovering in the DOM tree in the **Elements** tool.
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** button (![Inspect tool icon.](../media/inspect-icon.msft.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
 
@@ -95,7 +95,7 @@ To configure the grid overlay or flexbox overlay, in the **Elements** tool, sele
 
 <!-- general info about the Inspect tool, not particularly focused on accessibility -->
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** button (![the Inspect tool.](../media/inspect-icon.msft.png)) in the top-left corner of DevTools, so that the button is highlighted (blue).
 

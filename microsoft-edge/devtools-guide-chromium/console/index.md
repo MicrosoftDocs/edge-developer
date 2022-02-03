@@ -76,7 +76,7 @@ DevTools with a **Console** full of messages:
 The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it:
 
 1.  To open the **Console**, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
-1.  See [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html), or copy and run the following code in the **Console**.
+1.  See [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html), or copy and run the following code in the **Console**.
 
     ```javascript
     console.log('This is a log message');
