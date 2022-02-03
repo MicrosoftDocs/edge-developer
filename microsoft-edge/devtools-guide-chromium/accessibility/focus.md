@@ -33,7 +33,9 @@ As you `Tab` through the page, the DOM tree doesn't automatically update to sele
 
 To track the `Tab`-focused element in the **Console** in DevTools by using a Live Expression:
 
-1. Open the demo webpage [Accessibility testing page with errors](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
 1. In DevTools, open the **Console**.
 

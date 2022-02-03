@@ -395,7 +395,7 @@ To troubleshoot JavaScript code, you can insert `console.log()` statements in th
 
 To use a debugger on a webpage, you typically set a breakpoint and then send a form from the webpage, as follows:
 
-1. Open this [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/) webpage in a new window or tab.
+1. Open the [Demo: Get Started Debugging JavaScript with Microsoft Edge DevTools](https://microsoftedge.github.io/Demos/devtools-js-get-started/) webpage in a new window or tab.
 
    <!-- You can view the source code for the demo page at the [MicrosoftEdge/Demos > devtools-js-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-js-get-started) repo folder. -->
 
@@ -445,19 +445,23 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 * [Get started debugging JavaScript](../javascript/index.md) - a tutorial using an existing, simple webpage that contains a few form controls.
 
-### Advantages of the debugger\'s Watch and Scope over console\.log
+
+### Advantages of the debugger's Watch and Scope over console.log
 
 These three approaches are equivalent:
 
 *  Temporarily adding the statements `console.log(sum)` and `console.log(typeof sum)` in the code, where `sum` is in-scope.
+
 *  Issuing the statements `sum` and `console.log(typeof sum)` in the **Console** pane of the DevTools, when the debugger is paused where `sum` is in-scope.
+
 *  Setting the **Watch** expressions `sum` and `typeof sum` in the **Debugger** pane.
 
 When the variable `sum` is in-scope, `sum` and its value are automatically shown in the **Scope** section of the **Debugger** pane, and are also overlaid in the Editor pane where `sum` is calculated.  So you probably wouldn't need to define a Watch expression for `sum`.
 
-The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.  You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.  (To display the Console, select **Esc**.)
+The debugger gives a richer, more flexible display and environment than a `console.log` statement.  For example, in the debugger, as you step through the code, you can display and change the values of all currently defined properties and variables.  You can also issue JavaScript statements in the **Console**, such as to change values in an array that's in-scope.  (To show the Console, press `Esc`.)
 
 Breakpoints and Watch expressions are preserved when you refresh the webpage.
+
 
 ### Debug from Visual Studio Code directly
 
@@ -468,6 +472,7 @@ To use the more full-featured debugger of Visual Studio Code instead of the DevT
 This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools, from within Microsoft Visual Studio Code.
 
 For more information, see [Visual Studio Code overview](../../visual-studio-code/index.md) and the GitHub Readme page, [Microsoft Edge Developer Tools for Visual Studio Code](https://github.com/microsoft/vscode-edge-devtools).
+
 
 ### Articles about debugging
 

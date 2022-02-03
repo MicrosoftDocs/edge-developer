@@ -9,9 +9,21 @@ ms.date: 10/19/2021
 ---
 # Verify that the webpage layout is usable when narrow
 
-An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there isn't much space left. When there isn't enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
+An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there isn't much space left.
 
-By making the browser window narrow and using the arrow keys to scroll the page, you can see that the top navigation bar of the [accessibility testing demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) has some accessibility issues.  The top navigation bar overlaps the **Search** form, as shown in the previous image, and that issue needs to be fixed.
+When there isn't enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
+
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
+
+1. Make the browser window narrow.
+
+1. Use the arrow keys to scroll the page.
+
+   The top navigation bar of the webpage has some accessibility issues.  The top navigation bar overlaps the **Search** form, and that issue needs to be fixed:
+
+   :::image type="content" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the page highlighted after clicking the link to it." lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
 
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 
