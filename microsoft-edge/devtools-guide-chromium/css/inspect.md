@@ -21,7 +21,7 @@ Use the **Inspect** tool to see information about an item within a rendered webp
 
 To try out the **Inspect** tool:
 
-1. Open the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page in a new window or tab.
+1. Open the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page in a new window or tab.
 
 1. Right-click anywhere in the demo webpage and then select **Inspect**, to open DevTools.
 
@@ -65,7 +65,7 @@ The **Accessibility** section of the **Inspect** overlay displays information ab
 * The name and the role of the element that's reported to assistive technology.
 * Whether the element is keyboard focusable.
 
-For example, in the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page, for the `Bad Contrast` button, the **Inspect** overlay has a warning icon next to the contrast value of 1.77.  The **Inspect** overlay also shows that the button isn't focusable via keyboard.  The button can't be navigated to via keyboard, because the button is implemented as a `<div>` element with a class of `button`, instead of being implemented as a `<button>` element.
+For example, in the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page, for the `Bad Contrast` button, the **Inspect** overlay has a warning icon next to the contrast value of 1.77.  The **Inspect** overlay also shows that the button isn't focusable via keyboard.  The button can't be navigated to via keyboard, because the button is implemented as a `<div>` element with a class of `button`, instead of being implemented as a `<button>` element.
 
 ![Elements that lack sufficient contrast have a warning icon.](images/inspect-tool-bad-contrast.msft.png)
 
@@ -73,7 +73,7 @@ For example, in the [Inspect Demo](https://microsoftedge.github.io/DevToolsSampl
 <!-- ====================================================================== -->
 ## Inspecting non-accessible elements
 
-Elements that have the CSS property of `pointer-events: none` aren't available to the **Inspect** tool.  In the [Inspect Demo](https://microsoftedge.github.io/DevToolsSamples/inspector/inspector-demo.html) page, hover over the `Overlay Button` and you will see that the parent element (`div.wrapper`) is shown instead of the `Overlay Button`.
+Elements that have the CSS property of `pointer-events: none` aren't available to the **Inspect** tool.  In the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page, hover over the `Overlay Button` and you will see that the parent element (`div.wrapper`) is shown instead of the `Overlay Button`.
 
 ![An element that has a CSS property of 'pointer events: none' can't be selected.](images/inspect-tool-element-element-without-pointer-events.msft.png)
 

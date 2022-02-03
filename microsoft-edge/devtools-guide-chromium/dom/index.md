@@ -30,7 +30,9 @@ This tutorial assumes that you know the difference between the DOM and HTML. See
 <!-- ====================================================================== -->
 ## Open DOM examples
 
-1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and click [DOM Examples](https://microsoft-edge-chromium-devtools.glitch.me/static/dom) to open that page in a new tab.
+1.  Hold `Control` (Windows, Linux) or `Command` (macOS) and click [DOM Examples](https://microsoftedge.github.io/Demos/devtools-dom-get-started/) to open that page in a new tab.
+
+<!-- You can view the source files for the DOM Examples demo page at the [MicrosoftEdge/Demos > devtools-dom-get-started](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-dom-get-started) repo folder. -->
 
 
 <!-- ====================================================================== -->

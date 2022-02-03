@@ -194,7 +194,7 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 
 #### Support forcing the :target CSS state
 
-You may now use DevTools to force the [:target](https://developer.mozilla.org/docs/web/css/:target) CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo](https://microsoftedge.github.io/DevToolsSamples/whats-new/89/target-css-demo.html#section-1).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1156628](https://crbug.com/1156628).
+You may now use DevTools to force the [:target](https://developer.mozilla.org/docs/web/css/:target) CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/#section-1).  To review the history of this feature in the Chromium open-source project, navigate to Issue [1156628](https://crbug.com/1156628).
 
 Webpage highlighted with no forced CSS:
 

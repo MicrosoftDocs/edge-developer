@@ -19,7 +19,7 @@ This analysis finds that the lack of indication of keyboard focus in the links o
 
 To navigate to the CSS, we'll use the **Inspect** tool to highlight a blue link on the page's sidebar navigation menu, and then view the DOM tree and CSS for the `a` element that defines that link.
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  Select the **Inspect** (![Inspect icon.](../media/inspect-icon.msft.png)) button in the top-left corner of DevTools so that the button is highlighted (blue).
 
