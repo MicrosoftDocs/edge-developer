@@ -9,7 +9,7 @@ ms.date: 04/13/2021
 ---
 # Interact with the DOM using the Console
 
-The **Console** tool is a great way to interact with the webpage in the browser.<!-- todo: add intro explanation -->  The **Console** is like a script-environment version of the [Inspect tool](devtools-guide-chromium/css/inspect.md).<!-- todo: add intro explanation -->
+The **Console** tool is a great way to interact with the webpage in the browser.<!-- todo: add intro explanation -->  The **Console** is like a script-environment version of the [Inspect tool](../css/inspect.md).<!-- todo: add intro explanation -->
 
 
 <!-- ====================================================================== -->
