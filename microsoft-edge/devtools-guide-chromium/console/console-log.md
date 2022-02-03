@@ -26,7 +26,7 @@ console.error('This is an error')
 console.warn('This is a warning')
 ```
 
-Copy and paste the previous code into the **Console**, or see [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-examples.html).  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
+Copy and paste the previous code into the **Console**, or see [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-examples.html).  When you try any method in the **Console**, the `log()` and `info()` methods seem to do the same thing, while the `error()` and `warn()` methods display an icon next to the message and a way to inspect the [stack trace](https://en.wikipedia.org/wiki/Stack_trace) of the message.
 
 The **Console** displays the messages from different log APIs:
 
@@ -38,7 +38,7 @@ It is, however, still a good idea to use `info()` and `log()` for different log 
 <!-- ====================================================================== -->
 ## Different types of logs
 
-Instead of log text, you can send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code into the **Console**.  Or, to display formatted results, see [Console messages examples: logging different types](https://microsoftedge.github.io/DevToolsSamples/console/logging-types.html).
+Instead of log text, you can send any valid JavaScript or DOM references to the **Console**.  The **Console** is elegant and it determines the type that you send it.  It then gives you the best possible representation.  Copy and paste the following code into the **Console**.  Or, to display formatted results, see [Console messages examples: logging different types](https://microsoftedge.github.io/Demos/devtools-console/logging-types.html).
 
 ```javascript
 let x = 2;
@@ -93,7 +93,7 @@ console.log('%O', document.body);
 console.log('%cImportant message follows','color:red;font-size:40px');
 ```
 
-The first example displays that the order of replacement of specifiers is the parameter order following the string.  To display the results, copy and paste the previous code in the **Console** or see [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-specifiers.html).
+The first example displays that the order of replacement of specifiers is the parameter order following the string.  To display the results, copy and paste the previous code in the **Console** or see [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html).
 
 Use specifiers to log and convert values:
 
@@ -132,7 +132,7 @@ for (tech in technologies) {
 }
 ```
 
-Also in the second example, the group names can be optionally generated.  To display the results, copy and paste the previous code in the **Console** or see [Console messages examples: grouping logs](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-groups.html).  You can expand and collapse each of the sections.
+Also in the second example, the group names can be optionally generated.  To display the results, copy and paste the previous code in the **Console** or see [Console messages examples: grouping logs](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html).  You can expand and collapse each of the sections.
 
 Log lots of values as groups:
 
@@ -146,7 +146,7 @@ Each group can be expanded and collapsed:
 <!-- ====================================================================== -->
 ## Display complex data as tables
 
-The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you can sort using different headers.  A sorted table makes it much easier for people to review the information.  To display it in an example, see [Console messages examples: Using table](https://microsoftedge.github.io/DevToolsSamples/console/logging-with-table.html).
+The `console.table()` method logs complex data not as a collapsible and expandable object, but as a table that you can sort using different headers.  A sorted table makes it much easier for people to review the information.  To display it in an example, see [Console messages examples: Using table](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html).
 
 ```javascript
 let technologies = {
