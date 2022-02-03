@@ -260,7 +260,7 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 
 ### See also
 
-* [About the list of tools in DevTools](about-tools.md)
+* [About the list of tools](about-tools.md)
 
 
 <!-- ====================================================================== -->
@@ -326,7 +326,7 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 <!-- ====================================================================== -->
 ## See also
 
-* [About the list of tools in DevTools](about-tools.md)
+* [About the list of tools](about-tools.md)
 * [Get started with HTML and the DOM](beginners/html.md)
 * [Inspect and change the current webpage](dom/index.md)
 * [Emulate how your product behaves on different devices](device-mode/index.md)
