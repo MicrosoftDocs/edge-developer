@@ -20,7 +20,7 @@ There are several ways to open the **Issues** tool, such as:
 <!-- ====================================================================== -->
 ## View the Accessibility section of the Issues tool
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.  In the upper right, the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) appears.  The **Issues counter** is a speech-bubble icon along with the number of automatically detected issues.
 
     :::image type="complex" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter in DevTools, indicating how many problems there are in the current document" lightbox="../media/a11y-testing-issues-tracker.msft.png":::
         The **Issues counter** in DevTools, indicating how many problems there are in the current document
@@ -42,7 +42,7 @@ There are several ways to open the **Issues** tool, such as:
 
 To check whether input fields have labels connected to them, use the **Issues** tool, which automatically checks the entire webpage and reports this issue in the **Accessibility** section.
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  In the upper right, select the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)).  The **Issues** tool opens, in the **Drawer** at the bottom of DevTools.
 
@@ -86,7 +86,7 @@ Basic accessibility testing requires making sure alternative text (also called _
 
 To automatically check whether alt text is provided for images, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  To open the **Issues** tool, select the **Issues** counter in the upper right of DevTools.
 
@@ -104,7 +104,7 @@ For more information, navigate to [Images must have alternate text](https://dequ
 
 To automatically check whether text colors have enough contrast, use the **Issues** tool, which has an **Accessibility** section.  The **Issues** tool is located in the **Drawer** at the bottom of DevTools.
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new tab of the browser, and then select **F12** to open DevTools.
 
 1.  To open the **Issues** tool, select the **Issues** counter in the upper right of DevTools.  You may receive warnings that two elements on the demo webpage don't have enough contrast.
 

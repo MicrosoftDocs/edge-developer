@@ -9,17 +9,9 @@ ms.date: 02/01/2022
 ---
 # Sample code for DevTools
 
-Most of the sample code that's used by the DevTools documentation is stored in the following GitHub repos.
+Most of the sample code that's used by the DevTools documentation is stored in the [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos) GitHub repository.
 
-
-<!-- ====================================================================== -->
-## GitHub repos for samples
-
-The [MicrosoftEdge/Demos](https://github.com/MicrosoftEdge/Demos) repo contains most of the demo pages or sample code that's used by the documentation.
-
-The [MicrosoftEdge/DevToolsSamples](https://github.com/MicrosoftEdge/DevToolsSamples) repo contains several demos that are used by the documentation, including for **3D View**, **Inspect tool**, **Console**, and accessibility testing.
-
-The demo pages below are stored in those repos, and are useful for exploring tools such as **Elements** and **Sources**.
+The demo pages below are stored in this repos, and are useful for exploring tools such as **Elements** and **Sources**.
 
 
 <!-- ====================================================================== -->
@@ -27,7 +19,7 @@ The demo pages below are stored in those repos, and are useful for exploring too
 
 This demo webpage is useful for exploring various DevTools features, such as the **Elements** and **Sources** tools.
 
-* Open the [Demo page with accessibility issues](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new window or tab.  Right-click any item in the rendered webpage, and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the demo webpage.
+* Open the [Demo page with accessibility issues](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.  Right-click any item in the rendered webpage, and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the demo webpage.
 
 ![The 'Demo page with accessibility issues'.](../media/demo-page-with-accessibility-issues.png)
 
@@ -45,9 +37,9 @@ These articles walk you through using this demo page:
 
 This is the source code repo and its directory which stores the files for this demo webpage:
 
-* [MicrosoftEdge/DevToolsSamples > a11y-testing](https://github.com/MicrosoftEdge/DevToolsSamples/tree/master/docs/a11y-testing) - Contains files including:
+* [MicrosoftEdge/Demos > devtools-a11y-testing](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-a11y-testing) - Contains files including:
 
-   * `page-with-errors.html` - The demo webpage, including page sections and input forms that send data to the `buttons.js` JavaScript file.  To view the rendered webpage, use the demo webpage link above.
+   * `index.html` - The demo webpage, including page sections and input forms that send data to the `buttons.js` JavaScript file.  To view the rendered webpage, use the demo webpage link above.
 
    * `buttons.js` - Contains the JavaScript code that's used by the demo webpage.
 
