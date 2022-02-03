@@ -296,9 +296,11 @@ To use the Fixed Version distribution mode:
     * For WinUI this might include opening the project file (.csproj) in a code editor, and then add the following code snippet within the project tags:
 
         ```xml
-        <Content Include="FixedRuntime\(version number)\\**\*.*">
-        <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirector>
-        </Content>
+        <ItemGroup>
+          <Content Include="FixedRuntime\(version number)\\**\*.*">
+            <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirectory>
+          </Content>
+        </ItemGroup>
         ```
 
         Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\\(version number) folder with the runtime files in it.
