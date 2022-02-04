@@ -24,19 +24,15 @@ ms.date: 05/04/2021
 
 The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks.  The Command Menu is similar to the [Command Palette in Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
-:::image type="complex" source="../media/command-menu-run-command-java.msft.png" alt-text="Using the Command Menu to disable JavaScript." lightbox="../media/command-menu-run-command-java.msft.png":::
-   Using the Command Menu to disable JavaScript
-:::image-end:::
+:::image type="content" source="../media/command-menu-run-command-java.msft.png" alt-text="Using the Command Menu to disable JavaScript." lightbox="../media/command-menu-run-command-java.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Open the Command Menu
 
-Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS). Or choose **Customize And Control DevTools** (`...`) > **Run Command**.
+Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Or, select **Customize And Control DevTools** (`...`) > **Run Command**.
 
-:::image type="complex" source="../media/command-menu-options-run-command.msft.png" alt-text="Run Command." lightbox="../media/command-menu-options-run-command.msft.png":::
-   Run Command
-:::image-end:::
+:::image type="content" source="../media/command-menu-options-run-command.msft.png" alt-text="The Run Command." lightbox="../media/command-menu-options-run-command.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -44,15 +40,11 @@ Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS). 
 
 If you use the workflow outlined in [Open the Command Menu](#open-the-command-menu), the Command Menu opens with a `>` character pre-pended to the Command Menu text box.
 
-:::image type="complex" source="../media/command-menu-run-command.msft.png" alt-text="The command character." lightbox="../media/command-menu-run-command.msft.png":::
-   The command character
-:::image-end:::
+:::image type="content" source="../media/command-menu-run-command.msft.png" alt-text="The command character." lightbox="../media/command-menu-run-command.msft.png":::
 
 Delete the `>` character and type `?` to display other actions that are available from the Command Menu.
 
-:::image type="complex" source="../media/command-menu-help.msft.png" alt-text="Other available actions." lightbox="../media/command-menu-help.msft.png":::
-   Other available actions
-:::image-end:::
+:::image type="content" source="../media/command-menu-help.msft.png" alt-text="Other available actions." lightbox="../media/command-menu-help.msft.png":::
 
 
 <!-- ====================================================================== -->

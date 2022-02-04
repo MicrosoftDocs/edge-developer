@@ -1,5 +1,5 @@
 ---
-title: Create an extension tutorial - Part 1
+title: Create an extension tutorial, part 1
 description: Build an extension that pops up the NASA picture of the day.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
 ---
-# Create an extension tutorial - Part 1
+# Create an extension tutorial, part 1
 
 
 <!-- ====================================================================== -->
@@ -52,9 +52,9 @@ Start by creating the `icons` directory in your project to store the icon image 
    Icon on the toolbar to open your extension
 :::image-end:::
 
-For icons, we recommend using:
-*   `PNG` format for icons, but you may also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
-*   Images that are 128 x 128 px, which are resized by the browser if necessary.
+For icons:
+*  We recommend using `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
+*  We recommend using images that are 128 x 128 px, which are resized by the browser if necessary.
 
 The directories of your project should be similar to the following structure.
 
@@ -146,4 +146,5 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
 
 <!-- ====================================================================== -->
 ## Next steps
-That is everything you need to develop a working extension.  Now, continue on to sideload and test your extension. For more information, navigate to [Sideload an extension](./extension-sideloading.md).
+
+That's everything you need to develop a working extension.  Now, continue on to sideload and test your extension.  For more information, see [Sideload an extension](./extension-sideloading.md).

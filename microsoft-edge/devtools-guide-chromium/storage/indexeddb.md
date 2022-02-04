@@ -22,84 +22,79 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and change IndexedDB data
 
-This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) data.  It assumes you are familiar with DevTools.  It also assumes you are familiar with IndexedDB.  If not, navigate to [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB).
+This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) data.
+
+This article assumes you are familiar with:
+
+*  DevTools.
+*  IndexedDB.  See [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB).
 
 
 <!-- ====================================================================== -->
 ## View IndexedDB data
 
-1.  Choose the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
+1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
 
-    :::image type="complex" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest-empty.msft.png":::
-       The **Manifest** pane
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest-empty.msft.png":::
 
-1.  Expand the **IndexedDB** menu to review which databases are available.
+1. Expand the **IndexedDB** menu to review which databases are available.
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="The IndexedDB menu." lightbox="../media/storage-application-storage-indexeddb.msft.png":::
-       The **IndexedDB** menu
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="The IndexedDB menu." lightbox="../media/storage-application-storage-indexeddb.msft.png":::
 
-    *   (![Database icon.](../media/database-icon.msft.png)) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.
-    *   (![Object Store icon.](../media/object-store-icon.msft.png)) `notes` is an object store.
-    *   **title** and **body** are [indexes](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index).
+   * (![Database icon.](../media/database-icon.msft.png)) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.
 
-    > [!NOTE]
-    > **Known Limitation**  Third-party databases are not visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network is not be visible.  Navigate to [issue #943770](https://crbug.com/943770).
+   * (![Object Store icon.](../media/object-store-icon.msft.png)) `notes` is an object store.
 
-1.  Choose a database to review the origin and version number.
+   *  **title** and **body** are [indexes](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB#Using_an_index).
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="The notes database." lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
-       The **notes** database
-    :::image-end:::
+   > [!NOTE]
+   > **Known Limitation**  Third-party databases aren't visible.  For example, if you use an `<iframe>` to embed an ad on your page, and your ad network uses IndexedDB, the IndexedDB data for your ad network isn't visible.  See [issue #943770](https://crbug.com/943770).
 
-1.  Choose an object store to review the key-value pairs.
+1. Select a database, to see the origin and version number.
 
-    > [!NOTE]
-    > IndexedDB data does not update in real-time.  Navigate to [Refresh IndexedDB data](#refresh-indexeddb-data).
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="The notes database." lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="The notes object store." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
-       The **notes** object store
-    :::image-end:::
+1. Click an object store, to see the key-value pairs.
 
-    *   **Total entries** is the total number of key-value pairs in the object store.
-    *   **Key generator value** is the next available key.  The field is only shown when using [key generators](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator).
+   > [!NOTE]
+   > IndexedDB data doesn't update in real-time.  See [Refresh IndexedDB data](#refresh-indexeddb-data).
 
-1.  Choose a cell in the **Value** column to expand the value.
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="The notes object store." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="View an IndexedDB value." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
-       View an **IndexedDB** value
-    :::image-end:::
+   *  **Total entries** is the total number of key-value pairs in the object store.
 
-1.  Choose an index, such as **title** or **body** in the following figure, to sort the object store according to the values of that index.
+   *  **Key generator value** is the next available key.  The field is only shown when using [key generators](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_keygenerator).
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Sort an object store by an index." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
-       Sort an object store by an index
-    :::image-end:::
+1. Click a cell in the **Value** column to expand the value.
+
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="View an IndexedDB value." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+
+1. Click an index, such as **title** or **body** in the following figure, to sort the object store according to the values of that index.
+
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Sort an object store by an index." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Refresh IndexedDB data
 
-IndexedDB values in the **Application** tool do not update in real-time.  Choose **Refresh** (![Refresh.](../media/reload-icon.msft.png)) when viewing an object store to refresh the data, or view a database and choose **Refresh database** to refresh all data.
+IndexedDB values in the **Application** tool don't update in real-time.
 
-:::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="View a database." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
-   View a database
-:::image-end:::
+*  To refresh the data, view an object store and then click **Refresh** (![Refresh.](../media/reload-icon.msft.png)).
+*  To refresh all data, view a database and click **Refresh database**.
+
+:::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="View a database." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
 
 
 <!-- ====================================================================== -->
 ## Edit IndexedDB data
 
-IndexedDB keys and values are not editable from the **Application** tool.  Since DevTools has access to page context, however, you may run JavaScript code within DevTools to edit IndexedDB data.
+IndexedDB keys and values aren't editable from the **Application** tool.  However, since DevTools has access to page context, you can run JavaScript code within DevTools to edit IndexedDB data.
 
 ### Edit IndexedDB data with Snippets
 
-[Snippets](../javascript/snippets.md) are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You may use a Snippet to run JavaScript code to edit an IndexedDB database.
+[Snippets](../javascript/snippets.md) are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You can use a Snippet to run JavaScript code to edit an IndexedDB database.
 
-:::image type="complex" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Use a Snippet to interact with IndexedDB." lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
-   Use a Snippet to interact with IndexedDB
-:::image-end:::
+:::image type="content" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Using a Snippet to interact with IndexedDB." lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -107,47 +102,41 @@ IndexedDB keys and values are not editable from the **Application** tool.  Since
 
 ### Delete an IndexedDB key-value pair
 
-1.  [View an IndexedDB object store](#view-indexeddb-data).
-1.  Choose the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
+1. [View an IndexedDB object store](#view-indexeddb-data).
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Choose a key-value pair in order to delete it." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
-       Choose a key-value pair in order to delete it
-    :::image-end:::
+1. Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
 
-1.  Select the `Delete` key or choose **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Click a key-value pair in order to delete it." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="How the object store looks after the key-value pair has been deleted." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
-       How the object store looks after the key-value pair has been deleted
-    :::image-end:::
+1. Press `Delete` or click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
+
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="How the object store looks after the key-value pair has been deleted." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
 
 ### Delete all key-value pairs in an object store
 
-1.  [View an IndexedDB object store](#view-indexeddb-data).
+1. [View an IndexedDB object store](#view-indexeddb-data).
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="View an object store." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
-       View an object store
-    :::image-end:::
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="View an object store." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
 
-1.  Choose **Clear object store** (![Clear object store.](../media/clear-icon.msft.png)).
+1. Click **Clear object store** (![Clear object store.](../media/clear-icon.msft.png)).
 
 ### Delete an IndexedDB database
 
-1.  [View the IndexedDB database](#view-indexeddb-data) that you want to delete.
-1.  Choose **Delete database**.
+1. [View the IndexedDB database](#view-indexeddb-data) that you want to delete.
 
-    :::image type="complex" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="The Delete database button." lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
-       The **Delete database** button
-    :::image-end:::
+1. Click **Delete database**.
+
+   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="The Delete database button." lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
 
 ### Delete all IndexedDB storage
 
-1.  Open the **Clear storage** pane.
-1.  Make sure that the **IndexedDB** checkbox is enabled.
-1.  Choose **Clear site data**.
+1. Open the **Clear storage** pane.
 
-    :::image type="complex" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Clear storage pane." lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
-       The **Clear storage** pane
-    :::image-end:::
+1. Make sure that the **IndexedDB** checkbox is enabled.
+
+1. Click **Clear site data**.
+
+   :::image type="content" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Clear storage pane." lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
 
 
 <!-- ====================================================================== -->

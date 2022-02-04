@@ -12,7 +12,7 @@ ms.date: 01/07/2021
 
 The Microsoft Edge WebView2 control allows you to embed web technologies in your native applications.  This article outlines the prospective roadmap for WebView2.
 
-WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here are not exhaustive and are subject to change.
+WebView2 is under active development and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive and are subject to change.
 
 If you have concerns or questions about the Roadmap, provide your feedback in the [feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback).
 

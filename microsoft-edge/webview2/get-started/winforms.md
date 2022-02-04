@@ -118,7 +118,7 @@ Add a WebView2 control to your app.
     :::image-end:::
 
     > [!NOTE]
-    > If you are working on a high-resolution monitor, you may need to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+    > If you are working on a high-resolution monitor, you might need to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 
 <!-- ====================================================================== -->
@@ -223,7 +223,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 1.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Make sure the WebView2 control navigates to the URL.
 
 > [!NOTE]
-> Enter a complete URL in the address bar.  An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
+> Enter a complete URL in the address bar.  An `ArgumentException` is thrown if the URL doesn't start with `http://` or `https://`
 
 :::image type="content" source="./media/winforms-bing.png" alt-text="bing.com." lightbox="./media/winforms-bing.png":::
 
@@ -386,9 +386,9 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 
-    :::image type="complex" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
-       The application displays the URI in the address bar. The URI is https://www.microsoft.com and the Microsoft website displays in the window.
-    :::image-end:::
+    The application displays the URI `https://www.microsoft.com` in the address bar.  The Microsoft website appears in the window.
+
+    :::image type="content" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
 
 Congratulations, you built your first WebView2 app!
 

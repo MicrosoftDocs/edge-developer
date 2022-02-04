@@ -1,5 +1,5 @@
 ---
-title: Create an extension tutorial Part 2
+title: Create an extension tutorial, part 2
 description: Dynamically inserting a NASA picture below the page body tag by using content scripts.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 01/07/2021
 ---
-# Create an extension tutorial Part 2
+# Create an extension tutorial, part 2
 
 [Completed extension package source for this part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
 
@@ -83,9 +83,9 @@ if (sendMessageId) {
 
 In the `onclick` event, find the current browser tab.  Then, use the `chrome.tabs.sendmessage` Extension API to send a message to that tab.
 
-In that message you must include the URL to the image you want to display. Also, send a unique ID to assign to the inserted image.  You may choose to let the content insertion JavaScript generate that, but for reasons that become apparent later, generate that unique ID here in `popup.js` and pass it to the not-yet-created content script.
+In that message, you must include the URL to the image you want to display.  Also, send a unique ID to assign to the inserted image.  You could let the content insertion JavaScript generate that image ID, but for reasons that become apparent later, you'll generate that unique ID here in `popup.js`, and then pass that ID to the not-yet-created content script.
 
-The following code snippet outlines the updated code in `popup/popup.js`.  Also, pass in the current tab ID, which is used later in this article.
+The following code outlines the updated code in `popup/popup.js`.  You also pass in the current tab ID, which is used later in this article.
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
