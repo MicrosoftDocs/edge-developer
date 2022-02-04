@@ -55,7 +55,7 @@ The following table displays the WebView2 features that differ from the Microsof
 | Immersive Reader | Off | No | This feature depends on the browser UI for interaction.  This feature is turned off. |
 | Intrusive Ads | Off | No | This feature is turned off. |
 | Keyboard Shortcuts | Review Details | Review Details | The keyboard shortcuts that are turned off by default either don't make sense or cause problems in WebView2.  You cannot turn these shortcuts off or on.  Instead, you can listen for a key combination using the `AcceleratorKeyPressed` event and create a custom response if needed.  For more information, see [Additional keyboard shortcuts information](#additional-keyboard-shortcuts-information). |
-| PDF Annotations | Off | No | This feature is turned off. The PDF viewing feature is enabled, but drawing, inking, and highlighting in a PDF are not enabled. For more information, see [Disabling Feature: PDF Annotations Support](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21). |
+| PDF Annotations | Off | No | This feature is turned off. The PDF viewing feature is enabled, but drawing, inking, and highlighting in a PDF aren't enabled. For more information, see [Disabling Feature: PDF Annotations Support](https://github.com/MicrosoftEdge/WebView2Announcements/issues/21). |
 | Read Aloud | Off | No | This feature is turned off. |
 | Smart Screen | On`*` | No | `*` The UI for this feature has been removed, however the underlying functionality is still available.  Additionally, you can turn off Smart Screen by using a command-line switch. |
 | Translate | Off | No | This feature is turned off. |
@@ -72,7 +72,7 @@ The following table displays the WebView2 platform features that are currently u
 
 | Feature | Details |
 |:--- | :--- |
-| Push Notifications | This feature is not implemented in WebView2. |
+| Push Notifications | This feature isn't implemented in WebView2. |
 | Web Payment API | This feature is turned off. |
 
 

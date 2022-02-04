@@ -17,13 +17,13 @@ The goal of the Microsoft Edge WebView2 control is to combine the best of both t
 
 ## [Microsoft Edge DevTools](#tab/devtools)
 
-Use [Microsoft Edge Developer Tools](../index.md) to debug web content displayed in WebView2 controls, in the same way that you may debug for another webpage displayed in Microsoft Edge.  To open the DevTools, set focus on the WebView control and then use one of the following actions.
+Use Microsoft Edge Developer Tools to debug web content that's displayed in a WebView2 control, in the same way that you can debug a webpage that's displayed in Microsoft Edge.  To open DevTools, put focus on the WebView control and then do any of the following:
 
-*   Select `F12`.
-*   Select `Ctrl`+`Shift`+`I`.
-*   Open the context menu (right-click) and choose `Inspect`.
+* Press `F12`.
+* Press `Ctrl`+`Shift`+`I`.
+* Right-click an item in a rendered webpage and then select **Inspect**.
 
-For more information, navigate to [DevTools overview](../index.md).
+For more information, see [Overview of DevTools](../../devtools-guide-chromium/index.md).
 
 :::image type="complex" source="./media/f12.png" alt-text="DevTools debugging." lightbox="./media/f12.png":::
    DevTools debugging
@@ -37,7 +37,7 @@ For more information, navigate to [DevTools overview](../index.md).
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
 
 > [!IMPORTANT]
-> When you debug your app in Visual Studio with the native debugger attached, selecting `F12` may trigger the native debugger instead of Developer Tools.  Select `Ctrl`+`Shift`+`I`, or use the context menu (right-click) to avoid the situation.
+> When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`, or right-click.
 
 Before you begin, ensure the following requirements are met.
 
@@ -77,7 +77,7 @@ Install and set up the script debugger tools in Visual Studio.
 
 Complete the following actions to debug your WebView2 app.
 
-1.  To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.  The JS/TS debug adapter does not perform source path mapping.  You must open the exact same path associated with your WebView2.
+1.  To set a breakpoint in your source code, hover to the left of the line number, and choose to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
     :::image type="complex" source="./media/breakpoint.png" alt-text="Visual Studio add breakpoint." lightbox="./media/breakpoint.png":::
        Visual Studio add breakpoint
@@ -126,17 +126,17 @@ In Visual Studio Code, complete the following actions to debug your code.
     ```
 
     > [!NOTE]
-    > Visual Studio Code source path mapping now requires the URL, so your app now receives a command-line parameter when it starts.  You may safely ignore the `url` parameter if needed.
+    > Visual Studio Code source path mapping now requires the URL, so your app now receives a command-line parameter when it starts.  You can safely ignore the `url` parameter, if needed.
 
-1.  To set a breakpoint in your source code, hover on the line, and select `F9`
+1.  To set a breakpoint in your source code, hover on the line, and select `F9`:
 
     :::image type="complex" source="./media/breakpoint-vs.png" alt-text="Breakpoint is set in Visual Studio Code." lightbox="./media/breakpoint-vs.png":::
        Breakpoint is set in Visual Studio Code
     :::image-end:::
 
 1.  Run the code.
-    1.  On the **Run** tab, choose the launch configuration from the dropdown menu.
-    1.  To start debugging your app, choose Start Debugging, which is the green triangle next to the launch configuration drop down.
+    1.  On the **Run** tab, select the launch configuration from the dropdown menu.
+    1.  To start debugging your app, click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
         :::image type="complex" source="./media/run-vs.png" alt-text=" Visual Studio Code Run tab." lightbox="./media/run-vs.png":::
            Visual Studio Code Run tab
@@ -152,7 +152,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 *   Targeted Webview debugging.
 
-    In some WebView2 apps, you may use more than one WebView2 control. To pick the WebView2 control to debug in this situation you can use targeted webview2 debugging
+    In some WebView2 apps, you might use more than one WebView2 control.  To pick which WebView2 control to debug in this situation, you can use targeted WebView2 debugging.
 
     Open `launch.json` and complete the following actions to use targeted Webview debugging.
 
@@ -170,14 +170,14 @@ In Visual Studio Code, complete the following actions to debug your code.
     urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.
     ```
 
-    When debugging your app, you may need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
+    When debugging your app, you might need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
 
     > [!IMPORTANT]
     > After the first match is found in the URL, the debugger stops.  You cannot debug two WebView2 controls at the same time because the CDP port is shared by all WebView2 controls, and uses a single port number.
 
 *   Debug running processes
 
-    You may need to attach the debugger to running WebView2 processes. To do that, in `launch.json`, update the `request` parameter to `attach`.
+    You might need to attach the debugger to running WebView2 processes.  To do that, in `launch.json`, update the `request` parameter, changing its value to `attach`:
 
     ```json
         "name": "Hello debugging world",
@@ -234,10 +234,11 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 *   Troubleshooting the debugger
 
-    You may encounter the following scenarios when using the debugger.
+    You may encounter the following scenarios when using the debugger:
 
     *   The debugger doesn't stop at the breakpoint, and you have debug output.  To solve the issue, confirm that the file with the breakpoint is the same file that's used by the WebView2 control.  The debugger doesn't perform source path mapping.
-    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, navigate to [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
+
+    *   You can't attach to a running process, and you get a timeout error.  To solve the issue, confirm that the WebView2 control opened the CDP port.  Ensure your `additionalBrowserArguments` value in the registry is correct, or the options are correct.  For more information, see [additionalBrowserArguments for dotnet](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments) and [additionalBrowserArguments for Win32](/microsoft-edge/webview2/reference/win32/webview2-idl#createcorewebview2environmentwithoptions).
 
 
 * * *

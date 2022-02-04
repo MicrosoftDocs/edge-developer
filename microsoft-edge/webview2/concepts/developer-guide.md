@@ -18,7 +18,7 @@ Every development team follows different practices when building their applicati
 
 We generally recommend using the Evergreen WebView2 Runtime.  Fixed Version runtime distribution is only recommended for apps that have strict compatibility requirements.  The Evergreen runtime updates automatically on the client, so that the latest features and security patches are available to your WebView2 app.  The Evergreen runtime also requires less storage space on the disk than the Fixed Version runtime.
 
-If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  For more information, navigate to [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
+If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  For more information, see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
 
 
 <!-- ====================================================================== -->
@@ -26,7 +26,7 @@ If you use the Evergreen runtime, before running your WebView2 app, test whether
 
 When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary).
 
-This guidance is similar to the guidance that we give to web developers.  For more information, navigate to [Test your app for forward-compatibility](../concepts/distribution.md#test-your-app-for-forward-compatibility).
+This guidance is similar to the guidance that we give to web developers.  For more information, see [Test your app for forward-compatibility](../concepts/distribution.md#test-your-app-for-forward-compatibility).
 
 
 <!-- ====================================================================== -->
@@ -43,13 +43,13 @@ To solve this situation, before your code calls a recently added WebView2 API, t
 *   `QueryInterface` in C/C++.
 *   A `try/catch` block in .NET or WinUI.
 
-For more information, navigate to [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
+For more information, see [Feature-detecting to test whether the installed Runtime supports recently added APIs](../concepts/versioning.md#feature-detecting-to-test-whether-the-installed-runtime-supports-recently-added-apis).
 
 
 <!-- ====================================================================== -->
 ## Update the Fixed Version Runtime
 
-If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using 3rd-party content in Webview2 apps, always consider the content to be untrusted.  For more information, navigate to [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
+If you use the Fixed Version WebView2 Runtime, make sure you regularly update the WebView2 Runtime that's packaged with your app, to reduce security risks.  When using 3rd-party content in Webview2 apps, always consider the content to be untrusted.  For more information, see [Fixed Version distribution mode](../concepts/distribution.md#details-about-the-fixed-version-runtime-distribution-mode).
 
 
 <!-- ====================================================================== -->
@@ -65,7 +65,7 @@ When a new version of the runtime is available, your app can automatically take 
 <!-- ====================================================================== -->
 ## Manage the lifetime of the user data folder
 
-WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, navigate to [Managing the user data folder](../concepts/user-data-folder.md).
+WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, see [Managing the user data folder](../concepts/user-data-folder.md).
 
 
 <!-- ====================================================================== -->
@@ -92,4 +92,4 @@ To prevent such a memory leak:
 <!-- ====================================================================== -->
 ## Follow recommended WebView2 security best practices
 
-For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, navigate to [Best practices for developing secure WebView2 applications](../concepts/security.md).
+For any WebView2 app, make sure to follow our recommended WebView2 security best practices.  For more information, see [Best practices for developing secure WebView2 applications](../concepts/security.md).

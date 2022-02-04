@@ -30,7 +30,9 @@ Asynchronous methods in the WebView2 Win32 C++ API use a delegate interface to c
 
 The final parameter for all asynchronous methods is a pointer to a delegate interface of which you provide an implementation.
 
-The delegate interface has a single `Invoke` method that takes as a first parameter an `HRESULT` of the success or failure code.  Additionally, there may be a second parameter that is the result of the method if the method has a result.  For example, the [ICoreWebView2::CapturePreview](/microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview) method takes as the final parameter an `ICoreWebView2CapturePreviewCompletedHandler` pointer.  To send a `CapturePreview` method request, you provide an instance of the `ICoreWebView2CapturePreviewCompletedHandler` pointer that you implement.  The following code snippet uses one method to implement.
+The delegate interface has a single `Invoke` method that takes as a first parameter an `HRESULT` of the success or failure code.  Additionally, there could be a second parameter that is the result of the method, if the method has a result.  For example, the [ICoreWebView2::CapturePreview](/microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview) method takes as the final parameter an `ICoreWebView2CapturePreviewCompletedHandler` pointer.  To send a `CapturePreview` method request, you provide an instance of the `ICoreWebView2CapturePreviewCompletedHandler` pointer that you implement.
+
+The following code uses one method that you implement:
 
 ```cpp
 HRESULT Invoke(HRESULT result)
@@ -40,7 +42,7 @@ You implement the `Invoke` method and `CoreWebView2` requests your `Invoke` meth
 
 Alternately, for `ICoreWebView2::ExecuteScript`, you provide an instance that has an `Invoke` method that provides you with the success or failure code of the `ExecuteScript` request.  Also provide the second parameter that is the JSON of the result of running the script.
 
-You may manually implement the `CompleteHandler` delegate interfaces, or you may use the [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl).  The [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl) is used throughout the following WebView2 code snippet.
+You can manually implement the `CompleteHandler` delegate interfaces, or you can use the [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl).  The [Callback function (WRL)](/cpp/cppcx/wrl/callback-function-wrl) is used throughout the following WebView2 code snippet.
 
 ```cpp
 void ScriptComponent::InjectScript()
@@ -127,9 +129,9 @@ String input parameters are `LPCWSTR` null-terminated strings.  The requester en
 
 Various methods provide or accept URIs and JSON as strings.  Use your preferred library for parsing and generating the strings.
 
-If WinRT is available for your app, you may use the `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` methods to parse or produce JSON strings or `RuntimeClass_Windows_Foundation_Uri` and `IUriRuntimeClassFactory` methods to parse and produce URIs.  Both of methods work in Win32 apps.
+If WinRT is available for your app, you can use the `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` methods to parse or produce JSON strings, or `RuntimeClass_Windows_Foundation_Uri` and `IUriRuntimeClassFactory` methods to parse and produce URIs.  Both of these approaches work in Win32 apps.
 
-If you use `IUri` and `CreateUri` to parse URIs, you may want to use the following URI creation flags to have `CreateUri` behavior more closely match the URI parsing in the WebView.
+If you use `IUri` and `CreateUri` to parse URIs, you may want to use the following URI creation flags, to have `CreateUri` behavior more closely match the URI parsing in the WebView:
 
 ```json
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO

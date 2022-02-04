@@ -74,7 +74,7 @@ You can use `console.group()` to label a group of messages and provide some orga
 
 In Microsoft Edge version 95, these problems have been fixed.  Filtering to a label now displays the group label and the individual messages inside of the group.  When the filter doesn't match the group label, the entire group is hidden.
 
-To learn more about the `group()` API for the Console in DevTools, navigate to [Console API reference: group](../../../../devtools-guide-chromium/console/api.md#group).
+To learn more about the `group()` API for the Console in DevTools, see [group](../../../../devtools-guide-chromium/console/api.md#group) in _Console object API Reference_.
 
 When the filter string matches a group label, the group and its members are displayed:
 

@@ -26,11 +26,11 @@ Your job doesn't end with making sure your site runs great across Microsoft Edge
 
 ### Summary
 
-*   When you don't have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.
+*  When you don't have a particular device, or want to do a spot check on something, the best option is to emulate the device right inside your browser.
 
-*   Device emulators and simulators enable you to mimic your development site on a range of devices, from your workstation.
+*  Device emulators and simulators enable you to mimic your development site on a range of devices, from your workstation.
 
-*   Cloud-based emulators enable you to automate unit tests for your site across different platforms.
+*  Cloud-based emulators enable you to automate unit tests for your site across different platforms.
 
 
 <!-- ====================================================================== -->
@@ -57,9 +57,7 @@ Device simulators and emulators simulate not just the browser environment but th
 ### Android emulator
 
 <!--
-:::image type="complex" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator." lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
-   Stock Browser in Android Emulator
-:::image-end:::
+:::image type="content" source="../media/device-mode-android-emulator-stock-browser.msft.png" alt-text="Stock Browser in Android Emulator." lightbox="../media/device-mode-android-emulator-stock-browser.msft.png":::
 -->
 
 At the moment, there is no way to install Microsoft Edge on an Android emulator.  However, you can use the Android Browser, the Chromium Content Shell, and Firefox for Android, which we review later in this article.  Chromium Content Shell runs the same Chromium rendering engine as Microsoft Edge, but comes without browser-specific features.
@@ -70,9 +68,7 @@ After your emulator is booted, select the **Browser** icon, and test your site o
 #### Chromium content shell on Android
 
 <!--
-:::image type="complex" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell." lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
-   Android Emulator Content Shell
-:::image-end:::
+:::image type="content" source="../media/device-mode-android-avd-contentshell.msft.png" alt-text="Android Emulator Content Shell." lightbox="../media/device-mode-android-avd-contentshell.msft.png":::
 -->
 
 To install the Chromium Content Shell for Android, keep your emulator running and run the following command:
@@ -83,17 +79,15 @@ chmod u+x ./chromium-android-installer/*.sh
 ./chromium-android-installer/install-chromeandroid.sh
 ```
 
-Now you are able to test your site with the Chromium Content Shell.
+Now you can test your site with the Chromium Content Shell.
 
 #### Firefox on Android
 
 <!--
-:::image type="complex" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator." lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
-   Firefox Icon on Android Emulator
-:::image-end:::
+:::image type="content" source="../media/device-mode-ff-on-android-emulator.msft.png" alt-text="Firefox Icon on Android Emulator." lightbox="../media/device-mode-ff-on-android-emulator.msft.png":::
 -->
 
-Similar to the Chromium Content Shell, you are able to get an APK to install Firefox onto the emulator.
+Similar to the Chromium Content Shell, you can get an APK to install Firefox onto the emulator.
 
 [Download the correct .apk file](https://www.mozilla.org/firefox/all/#product-android-beta).
 
@@ -110,13 +104,11 @@ The iOS simulator for Mac OS X comes with Xcode, which you [install from the App
 When you are done, learn how to work with the simulator through [Apple Developer documentation](https://help.apple.com/simulator/mac/current).
 
 > [!NOTE]
-> To avoid having to open Xcode every time you want to use the iOS Simulator, open it, hover on the iOS Simulator icon in your dock, open the contextual menu (right-click), and choose **Keep in Dock**.  Now just choose the icon whenever you need it.
+> To avoid having to open Xcode every time you want to use the iOS Simulator, open <!--Xcode, or iOS Simulator?-->it, right-click the iOS Simulator icon in your dock, and then select **Keep in Dock**.  Now just click the icon whenever you need it.
 
 ### Microsoft Edge (EdgeHTML)
 
-:::image type="complex" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="Modern IE VM." lightbox="../media/device-mode-modern-ie-vm.msft.png":::
-   Modern IE VM
-:::image-end:::
+:::image type="content" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="modern.IE VM." lightbox="../media/device-mode-modern-ie-vm.msft.png":::
 
 Microsoft Edge (EdgeHTML) Virtual Machines (VMs) enable you to access different versions of EdgeHTML and Internet Explorer on your computer through VirtualBox (or VMWare).  Select a [virtual machine on the download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
 
@@ -128,15 +120,15 @@ If you aren't able to use the emulators and you don't have access to real device
 
 The following products are examples of cloud-based emulators and related products.  These descriptions are from the products' information sites and serve as examples of features or capabilities to consider.
 
-*   [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
+* [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
-*   [Device Anywhere](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you are able to control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+* [Device Anywhere](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
 
-*   [LambdaTest](https://www.lambdatest.com/) helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  You can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  You can speed-up your testing by running tests in parallel.
+* [LambdaTest](https://www.lambdatest.com/) helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  You can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  You can speed-up your testing by running tests in parallel.
 
-*   [SauceLabs](https://saucelabs.com) enables you to run unit tests inside of an emulator, which can be useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You can also do manual testing with your site.
+* [SauceLabs](https://saucelabs.com) enables you to run unit tests inside of an emulator, which can be useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You can also do manual testing with your site.
 
-*   [TestingBot](https://testingbot.com/) helps you do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
+* [TestingBot](https://testingbot.com/) helps you do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
 
 (This list is closed for additions.)
 

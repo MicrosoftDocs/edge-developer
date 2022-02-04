@@ -22,15 +22,21 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Mark content scripts as Library code
 
-When you use the **Sources** tool to [step through code](../index.md#step-4-step-through-the-code), sometimes you pause on code that you don't recognize.  You probably paused on code for one of the Microsoft Edge Extensions that you installed.  To not pause on extension code, complete the following actions.
+When you use the **Sources** tool to step through code, sometimes you pause on code that you don't recognize.  You're probably paused on code for one of the Microsoft Edge Extensions that you installed.  To avoid pausing on extension code:
 
-1.  In DevTools, in the upper right, choose the gear icon (**Settings**).  The **Settings** page appears.
-1.  Below **Settings**, choose **Ignore List**.  The **Framework Library Code** section of **Settings** appears.
-1.  Turn on the **Mark content scripts as Library code** checkbox.
+1. In DevTools, in the upper right, click the **Settings** (![Settings icon.](../../media/settings-gear-icon-light-theme.png)) button.
 
-    :::image type="complex" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enable the Mark content scripts as Library code checkbox." lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
-       Enable the **Mark content scripts as Library code** checkbox
-    :::image-end:::
+1. In the **Settings** > **Library Code** page, select the **Mark content scripts as Library Code** checkbox.
+
+   :::image type="content" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enabling the 'Mark content scripts as Library code' checkbox." lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+
+1. Click the **Close** DevTools (![Close DevTools icon.](../../media/close-devtools-icon-light-theme.png)) button.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Step 4: Step through the code](../index.md#step-4-step-through-the-code) in _Get started debugging JavaScript_
 
 
 <!-- ====================================================================== -->
