@@ -1,45 +1,44 @@
 ---
-title: Override webpage resources with local copies
-description: The Overrides feature is a feature within the Sources tool of Microsoft Edge DevTools that allows you to copy webpage resources to your hard drive.  When you refresh the webpage, DevTools do not load the resource but replace it with your local copy instead.
+title: Override webpage resources with local copies (Overrides tab)
+description: The Overrides feature is a feature within the Sources tool of Microsoft Edge DevTools that allows you to copy webpage resources to your hard drive.  When you refresh the webpage, DevTools doesn't load the resource, but replaces it with your local copy instead.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 12/11/2020
 ---
-# Override webpage resources with local copies
+# Override webpage resources with local copies (Overrides tab)
 
-Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You can debug and fix all kind of problems in DevTools.  But the changes do not persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources](../sources/index.md) tool helps you solve this problem.
+Sometimes you need to try out some possible fixes for a webpage, but you don't have access to the source files, or changing the page requires a slow and complex build process.  You can debug and fix all kind of problems in DevTools.  But the changes don't persist; after you refresh the local file, all your work is gone.  The Overrides feature in the [Sources](../sources/index.md) tool helps you solve this problem.
 
-You can now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser does not load the resource from the server.  Instead, the browser replaces the server resource with your local copy of the resource.
+You can now take a resource of the current webpage and store it locally.  When you refresh the webpage, the browser doesn't load the resource from the server.  Instead, the browser replaces the server resource with your local copy of the resource.
 
 
 <!-- ====================================================================== -->
 ## Setting up your local folder to store Overrides
 
-1.  Navigate to the **Sources** tool.
-1.  In the **Navigator** pane (on the left), click the **Overrides** tab.  If the **Overrides** tab isn't displayed, click the <code>&#x0226B;</code><!--`≫`--> icon.
+1. Navigate to the **Sources** tool.
+1. In the **Navigator** pane (on the left), click the **Overrides** tab.  If the **Overrides** tab isn't displayed, click the <code>&#x0226B;</code><!--`≫`--> icon.
 
     The **Sources** tool with insufficient space to display the **Overrides** tab:
 
-    :::image type="content" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Sources tool with insufficient space to show the overrides option." lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-overflow-menu.msft.png" alt-text="Sources tool with insufficient space to show the overrides option." lightbox="../media/javascript-overrides-overflow-menu.msft.png":::
 
     Selecting the **Overrides** tab:
 
-    :::image type="content" source="../media/javascript-overrides-menu.msft.png" alt-text="Selecting the Overrides tab." lightbox="../media/javascript-overrides-menu.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-menu.msft.png" alt-text="Selecting the Overrides tab." lightbox="../media/javascript-overrides-menu.msft.png":::
 
-1.  Select a folder on your local computer to store the resource files that you want to replace.  To search for a folder, click **+ Select folder for overrides**.
+1. Select a folder on your local computer to store the resource files that you want to replace.  To search for a folder, click **+ Select folder for overrides**.
 
-    :::image type="content" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Selecting a folder to use for overrides." lightbox="../media/javascript-overrides-select-folder.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-select-folder.msft.png" alt-text="Selecting a folder to use for overrides." lightbox="../media/javascript-overrides-select-folder.msft.png":::
 
-1.  DevTools warns you that must have full access to the folder and that you should not reveal any sensitive information.  Select **Allow** to grant access.
+1. DevTools warns you that must have full access to the folder and that you should not reveal any sensitive information.  Select **Allow** to grant access.
 
-    :::image type="content" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="Granting DevTools access to a folder." lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-give-access-to-folder.msft.png" alt-text="Granting DevTools access to a folder." lightbox="../media/javascript-overrides-give-access-to-folder.msft.png":::
 
-1.  In the **Overrides** tab, a checkbox is shown next to **Enable Local Overrides**.  To the right of **Enable Local Overrides** is a **Clear configuration** icon that allows you to delete your local overrides settings.  You are now done setting up your folder, and are ready to replace live resources with local resources.
+1. In the **Overrides** tab, a checkbox is shown next to **Enable Local Overrides**.  To the right of **Enable Local Overrides** is a **Clear configuration** icon that allows you to delete your local overrides settings.  You are now done setting up your folder, and are ready to replace live resources with local resources.
 
-    :::image type="content" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful setup of an overrides folder." lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
+   :::image type="content" source="../media/javascript-overrides-folder-setup-complete.msft.png" alt-text="Successful setup of an overrides folder." lightbox="../media/javascript-overrides-folder-setup-complete.msft.png":::
 
 
 <!-- ====================================================================== -->

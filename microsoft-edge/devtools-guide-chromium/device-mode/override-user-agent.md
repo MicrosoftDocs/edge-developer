@@ -1,11 +1,10 @@
 ---
 title: Override the user agent string
-description: Open the Network conditions tool, disable Select automatically, and choose from the list or enter a custom string.
+description: Open the Network conditions tool, disable 'Select automatically', and then select from the list or enter a custom string.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 07/19/2021
 ---
 <!-- Copyright Kayce Basques
@@ -27,7 +26,7 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 
 1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu":::
+   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="The Command Menu.":::
     
 1. Type `network conditions`, select **Show Network conditions**, and then press `Enter` to open the **Network conditions** tool.
 
@@ -41,9 +40,15 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 
 
 <!-- ====================================================================== -->
+## See also
+
+* [Set the user agent string](index.md#set-the-user-agent-string) in _Emulate mobile devices (Device Emulation)_
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/override-user-agent) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

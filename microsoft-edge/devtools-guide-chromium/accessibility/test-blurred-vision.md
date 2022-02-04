@@ -1,14 +1,13 @@
 ---
+title: Verify that a page is usable with blurred vision
 description: To verify that a webpage is usable with blurred vision, in the Rendering tool, use the Emulate vision deficiencies dropdown list.
-title: Verify that the page is usable with blurred vision
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 06/07/2021
 ---
-# Verify that the page is usable with blurred vision
+# Verify that a page is usable with blurred vision
 
 <!-- Rendering tool: Emulate vision deficiencies: Blurred vision -->
 
@@ -16,19 +15,19 @@ To simulate blurred vision, in the **Rendering** tool, use the **Emulate vision 
 
 To check whether a webpage is usable with blurred vision:
 
-1.  Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab of the browser, and then select **F12** to open DevTools.
+1. Open the [accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
-1.  Select **Esc** to open the Drawer at the bottom of DevTools.  Select the **+** icon at the top of the Drawer to display the list of tools, and then select **Rendering**.
+1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
-1.  In the **Emulate vision deficiencies** dropdown list, select **Blurred vision**.
+1. Press **Esc** to open the Drawer at the bottom of DevTools.  Click the **+** icon at the top of the Drawer to display the list of tools, and then select **Rendering**.
 
-    :::image type="complex" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="Simulating a blurred page" lightbox="../media/a11y-testing-simulating-blur.msft.png":::
-        Simulating a blurred page
-    :::image-end:::
+1. In the **Emulate vision deficiencies** dropdown list, select **Blurred vision**.
 
-    Notice that the `text-shadow` CSS property makes the text of the menu items difficult to read on the upper menu. For example, review the **Home**, **Adopt a Pet**, and other menu items.
+   :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="Simulating a blurred page." lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
-1.  In the **Rendering** tool, in **Emulate vision deficiencies**, select **No emulation** to remove the blurred vision simulation.
+    Notice that the `text-shadow` CSS property makes the text of the menu items difficult to read on the upper menu. For example, see the **Home**, **Adopt a Pet**, and other menu items.
+
+1. In the **Rendering** tool, in **Emulate vision deficiencies**, select **No emulation** to remove the blurred vision simulation.
 
 
 <!-- ====================================================================== -->

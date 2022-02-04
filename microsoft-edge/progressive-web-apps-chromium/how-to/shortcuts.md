@@ -1,13 +1,12 @@
 ---
 title: Define app shortcuts
-description: Learn how to make your app's common tasks available in the Windows Taskbar's context menu.
+description: How to make your app's common tasks available in the Windows Taskbar's context menu.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, Windows, Taskbar, jumplist, shortcut
+ms.date: 09/13/2021
 ---
 # Define app shortcuts
 
@@ -79,4 +78,4 @@ To test that your shortcuts are configured correctly:
 
 :::image type="content" source="../media/devtools-debug-shortcuts.png" alt-text="Shortcuts are listed in the Application panel.":::
 
-To learn more about using the Application panel to debug PWAs, see [Debug Progressive Web Apps](../../devtools-guide-chromium/progressive-web-apps/index.md).
+To learn more about using the Application panel to debug PWAs, see [Debug Progressive Web Apps (PWAs)](../../devtools-guide-chromium/progressive-web-apps/index.md).

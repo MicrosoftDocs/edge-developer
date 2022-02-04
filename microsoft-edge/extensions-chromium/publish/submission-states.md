@@ -1,12 +1,11 @@
 ---
+title: Submission states for extensions in the Microsoft Edge Add-ons website
 description: Learn about the different states when submitting extensions to the Microsoft Edge Add-ons website.
-title: Submission states for extensions in the store
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+ms.date: 02/17/2021
 ---
 # Submission states for extensions in the Microsoft Edge Add-ons website
 
@@ -14,8 +13,8 @@ The overview page on the Partner Center displays the state of your extension in 
 
 | # |  State |  Details |
 |:--- |:--- |:--- |
-| 1 |  In draft |  You create your submission and save a draft to your account.  You have not submitted your extension package and your submission form details to publish to the Microsoft Edge Add-ons website.  Your extension is not available to users in this state.  |
-| 2|  In review |  You have submitted your extension.  Your extension package and your submission form details are reviewed by Microsoft.  Your extension is not available to users in this state.  |
+| 1 |  In draft |  You create your submission and save a draft to your account.  You have not submitted your extension package and your submission form details to publish to the Microsoft Edge Add-ons website.  Your extension isn't available to users in this state.  |
+| 2|  In review |  You have submitted your extension.  Your extension package and your submission form details are reviewed by Microsoft.  Your extension isn't available to users in this state.  |
 | 3|  Waiting to publish |  Your submission is in this state after your extension review is complete, and your extension is being prepared for publishing in the Microsoft Edge Add-ons website.  This state is an intermediate state between `In review` and `In the store`.  This state might not appear for all submissions.  |
 | 4|  In the store |  The review is now complete, and your extension is published on the Microsoft Edge Add-ons website.  Your extension is available on the Microsoft Edge Add-ons website in the markets that you specified.  |
 | 5 |  In the store.  Update in review |  Your extension is published to the Microsoft Edge Add-ons website and you have submitted an update that is under review by Microsoft.  |

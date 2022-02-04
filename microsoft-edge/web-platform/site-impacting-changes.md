@@ -3,10 +3,9 @@ title: Site compatibility-impacting changes coming to Microsoft Edge
 description: Summary of high-impact changes that are planned for Microsoft Edge that may impact website compatibility.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/01/2021
-keywords: microsoft edge, compatibility, web platform
+ms.date: 01/24/2022
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
@@ -14,7 +13,7 @@ The web platform is a collection of technologies used for building webpages.  Th
 
 For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes.  The Microsoft Edge team decides if the change benefits browser users.
 
-Feature areas where Microsoft Edge plans to deviate from Chromium in release timing or behavior are noted in the following table.  This table also highlights high-impact changes that the Microsoft Edge team is tracking.
+Feature areas where Microsoft Edge plans to deviate from Chromium in release timing or behavior aren'ted in the following table.  This table also highlights high-impact changes that the Microsoft Edge team is tracking.
 
 Review this article often.  The Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
 
@@ -39,7 +38,8 @@ Review this article often.  The Microsoft Edge team updates this article as thin
 | Restrict private network requests to secure contexts | v94 | | Starting with v94, access to resources on local (intranet) networks from pages on the internet requires that those pages be delivered over HTTPS.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5436853517811712).  Two compatibility policies are available to support scenarios that need to preserve compatibility with non-secure pages: [InsecurePrivateNetworkRequestAllowed](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowed) and [InsecurePrivateNetworkRequestAllowedForUrls](/deployedge/microsoft-edge-policies#insecureprivatenetworkrequestsallowedforurls). |
 | Block mixed content downloads | v94 | | Downloading of files from HTTP URLs will be blocked on HTTPS pages.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see the [Google security blog entry](https://security.googleblog.com/2020/02/protecting-users-from-insecure_6.html). |
 | Block WebSQL in 3rd-party contexts | v97 | | Use of the legacy WebSQL feature will be blocked from 3rd-party frames.  An Enterprise policy [WebSQLInThirdPartyContextEnabled](/deployedge/microsoft-edge-policies#websqlinthirdpartycontextenabled) will be available as an opt-out until v101.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see the [Chrome Platform Status entry](https://chromestatus.com/feature/5684870116278272). |
-| Removal of cross-origin subframe JavaScript dialogs | v99 (Chrome+1) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iFrames.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
+| Three-digit version number in the User-Agent string | v100 | | Starting with v100, Microsoft Edge will send a three-digit version number in the User-Agent header, such as `Edg/100`. This may confuse scripts or server-side analytics that use a buggy parser to determine the User-Agent string version number. Starting with v97, site owners can emulate this condition before v100 by enabling the experiment flag `#force-major-version-to-100` in `edge://flags`. |
+| Removal of cross-origin subframe JavaScript dialogs | v103 (Chrome+1) | | Removes `window.alert`, `window.prompt`, and `window.confirm` from cross-origin iframes.  This change is happening in the Chromium project, on which Microsoft Edge is based.  For more information, see [Intent to Remove: Cross origin subframe JS Dialogs](https://groups.google.com/a/chromium.org/g/blink-dev/c/hTOXiBj3D6A/m/JtkdpDd1BAAJ). |
 
 
 <!-- ====================================================================== -->

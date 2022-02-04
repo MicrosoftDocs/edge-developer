@@ -1,12 +1,11 @@
 ---
-description: Host and publish extensions in the enterprise for Microsoft Edge.
 title: Publish and update extensions in the Microsoft Edge Add-ons website
+description: Host and publish extensions in the enterprise for Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/10/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, extensions development, browser extensions, addons, partner center, developer
+ms.date: 02/10/2021
 ---
 # Publish and update extensions in the Microsoft Edge Add-ons website
 
@@ -34,5 +33,5 @@ The Microsoft Edge browser automatically checks for new versions of installed Ex
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/extensions/hosting).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

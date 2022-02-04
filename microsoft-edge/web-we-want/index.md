@@ -1,12 +1,11 @@
 ---
+title: The Web We Want initiative
 description: A cross-browser initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.
-title: Web We Want overview
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 03/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge, web development, html, css, developer, web we want
+ms.date: 03/15/2021
 ---
 # The Web We Want initiative
 

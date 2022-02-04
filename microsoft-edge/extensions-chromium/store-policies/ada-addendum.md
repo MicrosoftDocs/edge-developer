@@ -1,12 +1,11 @@
 ---
-description: Microsoft Edge developer ADA Addendum
-title: ADA Addendum
+title: App Developer Agreement Addendum for Microsoft Edge program users
+description: Microsoft Edge developer ADA Addendum.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+ms.date: 02/17/2021
 ---
 # App Developer Agreement Addendum for Microsoft Edge program users
 
@@ -30,6 +29,6 @@ These Terms and Conditions for Microsoft Edge Extensions (the "Extensions Addend
 
     1.  Initial Certification.  Microsoft will test each Extension (including any updates) you submit for compliance with this Agreement (which includes the applicable Certification Requirements) and other policies made available to you (if any).  Microsoft will not make any Extension available through Microsoft Edge Add-ons unless and until the Extension is Certified.
 
-1.  AFFIRMATIVE DECLINE NOT REQUIRED.  Notwithstanding Section 4(i) of the App Developer Agreement, you are not required to affirmatively decline participation in Microsoft Store for Business and Microsoft Store for Education.  Your Extension will only be available through the Microsoft Edge Add-ons.
+1.  AFFIRMATIVE DECLINE NOT REQUIRED.  Notwithstanding Section 4(i) of the App Developer Agreement, you aren't required to affirmatively decline participation in Microsoft Store for Business and Microsoft Store for Education.  Your Extension will only be available through the Microsoft Edge Add-ons.
 
 1.  APP PRICING, PAYMENTS, TRANSACTIONS AND TAXES.  Section 6 of the App Developer Agreement does not apply to Extensions and is hereby deleted in its entirety.

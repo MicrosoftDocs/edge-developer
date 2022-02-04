@@ -1,13 +1,12 @@
 ---
-description: Get started guide with WebView2 for WinUI 3 (Windows App SDK) apps.
 title: Get started with WebView2 in WinUI 3 (Windows App SDK)
+description: Get started guide with WebView2 for WinUI 3 (Windows App SDK) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
+ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK)
 
@@ -183,7 +182,7 @@ To allow users to control the webpage that is displayed in your WebView2 control
 1.  Enter a new URL in the address bar, and then choose **Go**.  For example, enter `https://www.bing.com`.
 
     > [!NOTE]
-    > Make sure you enter complete URLs in the address bar.  `ArgumentException` exceptions are thrown if the URL does not start with `http://` or `https://`.
+    > Make sure you enter complete URLs in the address bar.  `ArgumentException` exceptions are thrown if the URL doesn't start with `http://` or `https://`.
 
     :::image type="complex" source="./media/winui-getting-started-bing.png" alt-text="The sample app displays the Bing website." lightbox="./media/winui-getting-started-bing.png":::
        The sample app displays the Bing website. The address bar displays the URL https://www.bing.com.

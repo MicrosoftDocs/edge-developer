@@ -3,38 +3,37 @@ title: Console overview
 description: An introduction to the Console tool inside the Microsoft Edge Developer Tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 04/13/2021
 ---
 # Console overview
 
-The **Console** tool of the DevTools helps you with several tasks:
+The **Console** is like an intelligent, rich command line within DevTools, and is great companion tool to use with others tools.  The **Console** provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript.
 
-*   Find out why something isn't working in the current project and [track down problems](console-debug-javascript.md).
-*   [Get information about the web project](console-filters.md) in the browser as log messages.
-*   [Log information](console-log.md) in scripts for debugging purposes.
-*   [Try JavaScript expressions](console-javascript.md) live in a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.
-*   [Interact with the web project in the browser](console-dom-interaction.md) using JavaScript.
+The **Console** tool helps with several tasks, which are covered in more detail in the following articles:
 
-The **Console** is a great companion tool to use with others tools.  The **Console** provides a powerful way to script functionality, inspect, and manipulate the current webpage using JavaScript.
+* **Track down problems** to find out why something isn't working in the current project.  See [Fix JavaScript errors that are reported in the Console](console-debug-javascript.md).
+* **Get information about the web project** in the browser as log messages.  See [Filter Console messages](console-filters.md).
+* **Log information** in scripts for debugging purposes.  See [Log messages in the Console tool](console-log.md).
+* **Try JavaScript expressions** live in a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
+* **Interact with the web project in the browser** using JavaScript.  See [Interact with the DOM using the Console](console-dom-interaction.md).
 
-The **Console** tool open in the upper panel:
+You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the main toolbar:
 
 :::image type="content" source="../media/console-intro-console-main.msft.png" alt-text="The Console tool open in the upper panel." lightbox="../media/console-intro-console-main.msft.png":::
 
-The **Console** in the lower panel with the **Elements** tool open above it:
+The **Console** is shown here in the lower part of DevTools (the **Drawer**), with the **Elements** tool open above it:
 
 :::image type="content" source="../media/console-intro-console-panel.msft.png" alt-text="The Console in the lower panel with the Elements tool open above it." lightbox="../media/console-intro-console-panel.msft.png":::
 
-The fastest way to directly open the **Console** is to select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+The fastest way to directly open the **Console** is to press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 
 <!-- ====================================================================== -->
 ## Error reports and the Console
 
-The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Select the **Issues counter** to open the **Issues** tool and display the problem.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
+The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Click the **Issues counter** to open the **Issues** tool and display the problem.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
 
 DevTools gives detailed information about the error in the **Console**:
 
@@ -44,7 +43,7 @@ DevTools gives detailed information about the error in the **Console**:
 <!-- ====================================================================== -->
 ## Look up error messages on the web from the Console
 
-Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass.  When you select the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message.
+Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass.  When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message.
 
 The **Search for this message on the Web** button on an error message in the **Console**:
 
@@ -74,27 +73,60 @@ DevTools with a **Console** full of messages:
 <!-- ====================================================================== -->
 ## Log information to display in the Console
 
-The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.  To try it:
+The most popular use case for the **Console** is logging information from your scripts using the `console.log()` method or other similar methods.
 
-1.  To open the **Console**, select `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
-1.  See [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/DevToolsSamples/console/logging-demo.html), or copy and run the following code in the **Console**.
 
-    ```javascript
-    console.log('This is a log message');
-    console.info('This is some information');
-    console.error('This is an error');
-    console.warn('This is a warning');
-    console.log(document.body.getBoundingClientRect());
-    console.table(document.body.getBoundingClientRect());
-    let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
-    console.groupCollapsed('Technolgies');
-    technologies.forEach(tech => {console.info(tech);})
-    console.groupEnd('Technolgies');
-    ```
+### Example code
 
-1.  The **Console** displays the resulting messages caused by demo code:
+```javascript
+// prints the text to the console as  a log message
+console.log('This is a log message');
 
-    :::image type="content" source="../media/console-intro-logging.msft.png" alt-text="Console full of messages caused by demo code." lightbox="../media/console-intro-logging.msft.png":::
+// prints the text to the console as an informational message
+console.info('This is some information'); 
+
+// prints the text to the console as an error message
+console.error('This is an error');
+
+// prints the text to the console as a warning
+console.warn('This is a warning');
+
+// prints the geometry of the document body as an object
+console.log(document.body.getBoundingClientRect());
+
+// prints the geometry of the document body as a table
+console.table(document.body.getBoundingClientRect());
+
+// shows a list of techologies as a collapsed group
+let technologies = ["HTML", "CSS", "SVG", "ECMAScript"];
+console.groupCollapsed('Technolgies');
+technologies.forEach(tech => {console.info(tech);})
+console.groupEnd('Technolgies');
+```
+
+<!-- typos in the demo page are preserved above, at `Technolgies` -->
+
+
+To log information to display in the Console:
+
+1. Open the demo webpage [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html) in a new window or tab.
+
+1. To open the **Console**, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+
+   The **Console** displays the resulting messages that are caused by the demo code:
+
+   :::image type="content" source="../media/console-intro-logging.msft.png" alt-text="Console full of messages caused by demo code." lightbox="../media/console-intro-logging.msft.png":::
+
+1. Paste the above code into the **Console**, and then press `Enter`.
+
+
+   If you get a message: `Uncaught SyntaxError: Identifier 'technologies' has already been declared`:
+
+1. Open a new tab or window.
+
+1. To open the **Console**, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+
+1. Paste the above code into the **Console**, and then press `Enter`.
 
 Many useful methods are available when you work with the **Console**.  For more information, see [Log messages in the Console tool](console-log.md).
 
@@ -106,8 +138,9 @@ The **Console** isn't only a place to log information.  The **Console** is a [RE
 
 To try running JavaScript in the Console:
 
-1.  Open the **Console**.
-1.  Type `2 + 2`.
+1. Open the **Console**.
+
+1. Type `2 + 2`.
 
 The **Console** displays the result of `2 + 2` live as you type it, displaying the result `4` on the following line:
 
@@ -115,25 +148,25 @@ The **Console** displays the result of `2 + 2` live as you type it, displaying t
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 
-To run the JavaScript expression in the **Console** and optionally display a result, select `Enter`.  Then, you can write the next JavaScript code to run in the **Console**.
+To run the JavaScript expression in the **Console** and optionally display a result, press `Enter`.  Then, you can write the next JavaScript code to run in the **Console**.
 
 Running several lines of JavaScript code in succession:
 
 :::image type="content" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several lines of JavaScript code in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
 
-By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then select `Enter`.  To work around the single-line limitation, select `Shift`+`Enter` instead of `Enter`.
+By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press `Enter`.  To work around the single-line limitation, press `Shift`+`Enter` instead of `Enter`.
 
-Similar to other command-line experiences, to access your previous JavaScript commands, select `Arrow-Up`.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.
+Similar to other command-line experiences, to access your previous JavaScript commands, press `Arrow-Up`.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.
 
 To try autocompletion:
 
-1.  Open the **Console**.
-1.  Type `doc`.
-1.  Select `document` from the dropdown menu.
-1.  Select the `tab` key to choose it.
-1.  Type `.bo`.
-1.  Select `tab` to get `document.body`.
-1.  Type another `.` to display the complete list of properties and methods available on the body of the current webpage.
+1. Open the **Console**.
+1. Type `doc`.
+1. Select `document` from the dropdown menu.
+1. Press `Tab` to select `document`.
+1. Type `.bo`.
+1. Press `Tab` to select `document.body`.
+1. Type another `.` to display the complete list of properties and methods available on the body of the current webpage.
 
 For more information about all the ways to work with **Console**, see [Console as a JavaScript environment](console-javascript.md).
 
@@ -145,54 +178,75 @@ Autocompletion of JavaScript expressions in the **Console**:
 <!-- ====================================================================== -->
 ## Interact with the current webpage in the browser
 
-The **Console** has access to the [Window](https://developer.mozilla.org/docs/Web/API/Window) object of the browser.  You can write scripts that interact with the current webpage.
+The **Console** has access to the [Window](https://developer.mozilla.org/docs/Web/API/Window) object of the browser.  You can write scripts that interact with the current webpage, by reading data from the DOM and assigning data to DOM elements.
 
-To try writing a script that interacts with the current page:
 
-1.  Open the **Console**.
-1.  Copy and paste the following code:
+### Reading from the DOM tree in the Console
 
-    ```javascript
-    document.querySelector('h1').innerHTML
-    ```
+To use a JavaScript expression to read from the current page by reading a selected element from the DOM tree:
 
-Copying the top heading (`h1`) content from the DOM and displaying the expression evaluation result in the **Console**:
+1. Open the **Console**.
 
-:::image type="content" source="../media/console-intro-reading-DOM.msft.png" alt-text="Copying the top heading (h1) content from the DOM and displaying the expression evaluation result in the Console." lightbox="../media/console-intro-reading-DOM.msft.png":::
+1. Paste the following code into the **Console**, and then press `Enter`:
 
-Instead of only reading from the webpage, you can also change the page.  To try changing the webpage:
+   ```javascript
+   document.querySelector('h1').innerHTML
+   ```
 
-1.  Open the **Console**.
-1.  Copy and paste the following code:
+   This expression selects the first heading-level 1 from the DOM and then selects the HTML content that's contained between the `<h1>` start and end tags.  The **Console** displays the output of the expression, which is the text of the heading:
 
-    ```javascript
-    document.querySelector('h1').innerHTML = 'Rocking the Console';
-    ```
+   :::image type="content" source="../media/console-intro-reading-DOM.msft.png" alt-text="The Console displays the output of the expression, which is the text of the heading." lightbox="../media/console-intro-reading-DOM.msft.png":::
 
-Write text to the DOM in the **Console**:
+You have read from the DOM representation of the webpage, by entering a JavaScript expression in the **Console** and displaying the output in the **Console**.
 
-:::image type="content" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in the Console." lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
 
-You changed the main heading of the webpage to **Rocking the Console**.  The **Console Utility** methods make it easy to access and manipulate the current webpage.  For more information, see [Console Utilities API reference](utilities.md).
+### Writing to the DOM tree and webpage from the Console
+
+You can also change the rendered webpage, by changing the DOM (or _writing to_ the DOM), from within the **Console**.
+
+To change the rendered webpage:
+
+1. Open the **Console**.
+
+1. Paste the following code into the **Console**, and then press `Enter`:
+
+   ```javascript
+   document.querySelector('h1').innerHTML = 'Rocking the Console';
+   ```
+
+   The above JavaScript expression uses the `=` sign to assign a value to the selected DOM item.  The evaluated value of the expression is a string for a heading, in this example.  The expression's value (the heading string) is shown both in the **Console** and in the rendered webpage:
+
+   :::image type="content" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in the Console." lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+
+   You changed the main heading of the webpage to **Rocking the Console**.
+
+
+### Using the $$ Console utility method to 
+
+The **Console Utility** methods make it easy to access and manipulate the current webpage.
 
 For example, to add a green border around all the links in the current webpage:
 
-1.  Open the **Console**.
-1.  Copy and paste the following code:
+1. Open the **Console**.
 
-    ```javascript
-    $$('a').forEach(a => a.style.border='1px solid lime');
-    ```
+1. Paste the following code into the **Console**, and then press `Enter`:
 
-Manipulating a selection of elements using the **Console**:
+   ```javascript
+   $$('a').forEach(a => a.style.border='1px solid lime');
+   ```
 
-:::image type="content" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using the Console." lightbox="../media/console-intro-changing-styles.msft.png":::
+   The `$$(selector)` console utility function is "Query selector all".  This DOM query selector function returns an array of all the elements that match the specified CSS selector, like the JavaScript function `document.querySelectorAll()`.  In this example, we select all the `<a>` hyperlink elements and then apply a green box around them:
+
+   :::image type="content" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using the Console." lightbox="../media/console-intro-changing-styles.msft.png":::
+
+For more information, see [Console tool utility functions and selectors](utilities.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the Console to interact with the DOM](console-dom-interaction.md).
-*  [Console features reference](reference.md)
-*  [Console Utilities API reference](utilities.md)
-*  [Console API reference](api.md)
+<!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
+* [Interact with the DOM using the Console](console-dom-interaction.md).
+* [Console features reference](reference.md)
+* [Console object API Reference](api.md)
+* [Console tool utility functions and selectors](utilities.md)

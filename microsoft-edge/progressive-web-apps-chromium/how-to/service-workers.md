@@ -3,11 +3,10 @@ title: Use Service Workers to manage network requests and push notifications
 description: Service Workers are Web Workers that help improve performance, respond to varying network conditions, and increase connectivity with your web application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, Windows, UWP, Microsoft Store
+ms.date: 01/07/2021
 ---
 # Use Service Workers to manage network requests and push notifications
 

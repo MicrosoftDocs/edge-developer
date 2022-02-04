@@ -1,16 +1,15 @@
 ---
-description: List of supported APIs to use when building Microsoft Edge extensions.
 title: Supported APIs for Microsoft Edge extensions
+description: List of supported APIs to use when building Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, extension api , developer, web development
+ms.date: 01/07/2021
 ---
 # Supported APIs for Microsoft Edge extensions
 
-The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge browser.
+When building extensions for the Microsoft Edge browser, you can use the following APIs.
 
 | API                                   | Description
 |---------------------------------------|----------------------------------------------------------|
@@ -72,7 +71,7 @@ Microsoft Edge doesn't support the following Extension APIs:
 
 * `chrome.gcm`.
 * `chrome.identity.getAccounts`.
-* `chrome.identity.getAuthToken` - As an alternate, you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
+* `chrome.identity.getAuthToken` - As an alternate, you can use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
 * `chrome.instanceID`.
 
 
@@ -92,5 +91,5 @@ Microsoft Edge doesn't support the following Extension APIs:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/apps/external_extensions).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

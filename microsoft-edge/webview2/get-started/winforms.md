@@ -1,13 +1,12 @@
 ---
-description: Get started guide with WebView2 for WinForms apps
 title: Get started with WebView2 in WinForms apps
+description: Getting started guide for using WebView2 for WinForms apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, winforms apps, winforms, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET, windows forms
+ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinForms apps
 
@@ -65,11 +64,11 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1.  In the search bar, type `WebView2` and then click **Microsoft.Web.WebView2**.
 
-    :::image type="content" source="./media/install-nuget.png" alt-text="NuGet" lightbox="./media/install-nuget.png":::
+    :::image type="content" source="./media/install-nuget.png" alt-text="NuGet." lightbox="./media/install-nuget.png":::
 
 1.  Accept the default version and then select **Install**.
 
-    :::image type="content" source="./media/winforms-install-webview2-preview.png" alt-text="Preview Changes" lightbox="./media/winforms-install-webview2-preview.png":::
+    :::image type="content" source="./media/winforms-install-webview2-preview.png" alt-text="Preview Changes." lightbox="./media/winforms-install-webview2-preview.png":::
 
 1.  Click **OK** to continue.
 
@@ -100,11 +99,11 @@ Add a WebView2 control to your app.
 
 1.  Drag the **WebView2** control into the Windows Forms App.
 
-    :::image type="content" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2" lightbox="./media/winforms-toolbox.png":::
+    :::image type="content" source="./media/winforms-toolbox.png" alt-text="Toolbox displaying WebView2." lightbox="./media/winforms-toolbox.png":::
 
 1.  In the **Properties** panel, set the **(Name)** property to **webView**. Use the **Categorized** and **Alphabetical** sort options as needed to find properties.
 
-    :::image type="content" source="./media/winforms-properties.png" alt-text="Properties of the WebView2 control" lightbox="./media/winforms-properties.png":::
+    :::image type="content" source="./media/winforms-properties.png" alt-text="Properties of the WebView2 control." lightbox="./media/winforms-properties.png":::
 
 1.  The **Source** property sets the initial URI displayed in the WebView2 control. Set the **Source** property to `https://www.microsoft.com`.
 
@@ -119,7 +118,7 @@ Add a WebView2 control to your app.
     :::image-end:::
 
     > [!NOTE]
-    > If you are working on a high-resolution monitor, you may need to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+    > If you are working on a high-resolution monitor, you might need to [configure your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 
 <!-- ====================================================================== -->
@@ -145,11 +144,11 @@ Add more controls to your Windows forms from the toolbox, and then process windo
 
 1.  Arrange the text box to the left of the button, aligned by the text as shown.
 
-    :::image type="content" source="./media/winforms-designer.png" alt-text="WinForms designer" lightbox="./media/winforms-designer.png":::
+    :::image type="content" source="./media/winforms-designer.png" alt-text="WinForms designer." lightbox="./media/winforms-designer.png":::
 
 1.  Resize the text box as shown.
 
-    :::image type="content" source="./media/winforms-designer-txtbtn.png" alt-text="WinForms designer textbox and button" lightbox="./media/winforms-designer-txtbtn.png":::
+    :::image type="content" source="./media/winforms-designer-txtbtn.png" alt-text="WinForms designer textbox and button." lightbox="./media/winforms-designer-txtbtn.png":::
 
 1. Click **View** > **Code** to open the `Form1.cs` file.
 
@@ -187,7 +186,7 @@ Add more controls to your Windows forms from the toolbox, and then process windo
 
     Make sure the app looks like the following image.
 
-:::image type="content" source="./media/winforms-app.png" alt-text="app" lightbox="./media/winforms-app.png":::
+:::image type="content" source="./media/winforms-app.png" alt-text="app." lightbox="./media/winforms-app.png":::
 
 
 <!-- ====================================================================== -->
@@ -224,9 +223,9 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 1.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Make sure the WebView2 control navigates to the URL.
 
 > [!NOTE]
-> Enter a complete URL in the address bar.  An `ArgumentException` is thrown if the URL does not start with `http://` or `https://`
+> Enter a complete URL in the address bar.  An `ArgumentException` is thrown if the URL doesn't start with `http://` or `https://`
 
-:::image type="content" source="./media/winforms-bing.png" alt-text="bing.com" lightbox="./media/winforms-bing.png":::
+:::image type="content" source="./media/winforms-bing.png" alt-text="bing.com." lightbox="./media/winforms-bing.png":::
 
 
 <!-- ====================================================================== -->
@@ -242,7 +241,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 
 For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
-:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events":::
+:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events.":::
 
 When an error occurs, the following events are raised and may depend on navigation to an error webpage.
 
@@ -313,7 +312,7 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 
 1.  Make sure the app displays an alert when you go to a website that doesn't use HTTPS.
 
-:::image type="content" source="./media/winforms-https.png" alt-text="https" lightbox="./media/winforms-https.png":::
+:::image type="content" source="./media/winforms-https.png" alt-text="https." lightbox="./media/winforms-https.png":::
 
 
 <!-- ====================================================================== -->
@@ -387,9 +386,9 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 
-    :::image type="complex" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
-       The application displays the URI in the address bar. The URI is https://www.microsoft.com and the Microsoft website displays in the window.
-    :::image-end:::
+    The application displays the URI `https://www.microsoft.com` in the address bar.  The Microsoft website appears in the window.
+
+    :::image type="content" source="./media/winforms-final-app.png" alt-text="The application displays the URI in the address bar.":::
 
 Congratulations, you built your first WebView2 app!
 

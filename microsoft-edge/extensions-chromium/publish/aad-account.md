@@ -1,12 +1,11 @@
 ---
-description: Adding and managing users from your organization onto the Microsoft Edge program to help manage the Partner Center account.  Enable your other team members to publish Microsoft Edge extensions to the Microsoft Edge Add-ons website using your Partner Center account.
 title: Add users to the Microsoft Edge program
+description: Adding and managing users from your organization onto the Microsoft Edge program to help manage the Partner Center account.  Enable your other team members to publish Microsoft Edge extensions to the Microsoft Edge Add-ons website using your Partner Center account.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 08/27/2021
 ---
 # Add users to the Microsoft Edge program
 
@@ -89,12 +88,14 @@ Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Prog
 
 Next, you'll link your Azure Active Directory tenants (Azure AD tenants) with your Microsoft Edge Program account, to enable managing Microsoft Edge extensions.  You can use Azure Active Directory to add users to your Microsoft Edge Program account and manage those users in that account.  You can add individual users, groups of users, or Azure Active Directory applications.
 
-To be able to add users to your Microsoft Edge Program account, and to manage those users in that account, you must first associate your Microsoft Edge Program account with your organization's Azure Active Directory tenant (Azure AD tenant).  If your organization already uses Office 365 or other business services from Microsoft, you already have an Azure AD tenant.  Otherwise, you can create a new Azure AD tenant for free.  To create an AD tenant, see [Create a brand new Azure AD to associate with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) in the article _Associate Azure Active Directory with your Partner Center account_.
+To be able to add users to your Microsoft Edge Program account, and to manage those users in that account, you must first associate your Microsoft Edge Program account with your organization's Azure Active Directory tenant (Azure AD tenant).  If your organization already uses Office 365 or other business services from Microsoft, you already have an Azure AD tenant.  Otherwise, you can create a new Azure AD tenant for free.
+
+To create an AD tenant, see [Create a brand new Azure AD to associate with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center#create-a-brand-new-azure-ad-to-associate-with-your-partner-center-account) in the article _Associate Azure Active Directory with your Partner Center account_.
 
 Also see [Associate Azure Active Directory with your Partner Center account](/windows/uwp/publish/associate-azure-ad-with-partner-center), in the Windows UWP documentation.  Associating an Azure AD tenant with a Microsoft Edge Program account at Partner Center works the same way as associating a tenant with the Windows apps developer program.
 
 > [!IMPORTANT]
-> If you have added users after associating your Azure AD tenant with your Microsoft account on Partner Center, note that changing roles or permissions of users is not currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
+> If you have added users after associating your Azure AD tenant with your Microsoft account on Partner Center, note that changing roles or permissions of users isn't currently supported.  However, you can continue to add as many users as you require and use the filter option of the [user management](https://partner.microsoft.com/dashboard/account/v3/usermanagement) section to locate admins of specific roles.
 
 
 <!-- ====================================================================== -->
@@ -108,7 +109,7 @@ For more information about adding users, see [Add users, groups, and Azure AD ap
 <!-- ====================================================================== -->
 ## Contact us
 
-If you need help or assistance with associating your Azure Active Directory account or other related queries, navigate to [Contact Microsoft Edge extensions support](./contact-extensions-team.md).
+If you need help or assistance with associating your Azure Active Directory account or other related queries, [Contact Microsoft Edge extensions support](./contact-extensions-team.md).
 
 
 <!-- ====================================================================== -->

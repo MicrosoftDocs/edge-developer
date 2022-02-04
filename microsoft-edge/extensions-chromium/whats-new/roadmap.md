@@ -1,12 +1,11 @@
 ---
-description: The latest updates about new Partner Center features for Microsoft Edge extensions.
 title: Microsoft Edge Add-ons roadmap
+description: The latest updates about new Partner Center features for Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer, roadmap, add-ons roadmap
+ms.date: 11/24/2021
 ---
 # Microsoft Edge Add-ons roadmap
 

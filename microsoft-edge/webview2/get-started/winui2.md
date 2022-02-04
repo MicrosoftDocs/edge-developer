@@ -1,17 +1,16 @@
 ---
+title: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 description: Get started guide with WebView2 for WinUI 2 apps.
-title: Get started with WebView2 in WinUI 2 apps (public preview)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, winui apps, winui, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
+ms.date: 11/05/2021
 ---
-# Get started with WebView2 in WinUI 2 apps (public preview)
+# Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 
-In this article, you will get started creating your first WebView2 app in WinUI 2, and learn about the main features of WebView2. For more information about individual WebView2 APIs, navigate to [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links.
+In this article, you start creating your first WebView2 app in WinUI 2 (UWP), and learn about the main features of WebView2. For more information about individual WebView2 APIs, see [Microsoft Edge WebView2 API Reference](../webview2-api-reference.md) and then select the WinRT reference links. Note that WinUI2 only supports UWP.
 
 > [!NOTE]
 > The [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001) takes a dependency on a prerelease WebView2 package. For full API compatibility, use a preview browser channel as your runtime such as the Beta, Dev, or Canary channel of Microsoft Edge.
@@ -37,28 +36,28 @@ In this article, you will get started creating your first WebView2 app in WinUI 
 
 ## Step 1 - Install workloads
 
-1.  Open Microsoft Visual Studio.
+1. Open Microsoft Visual Studio.
  
-1.  Click **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens.
+1. Click **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** window opens.
 
-1.  On the **Workloads** tab, click **.NET Desktop Development**.
+1. On the **Workloads** tab, click **.NET Desktop Development**.
 
-1.  Click **Desktop development with C++**.
+1. Click **Desktop development with C++**.
 
-1.  Click **Universal Windows Platform development**.
+1. Click **Universal Windows Platform development**.
 
 1. On the right, expand **Installation Details** > **Universal Windows Platform development**, and then click **C++ (v142) Universal Windows Platform tools**.
 
-    :::image type="complex" source="media/winui2-getting-started-install-workloads.png" alt-text="The modifying visual studio 2019 dialog box displays cards and installation details." lightbox="media/winui2-getting-started-install-workloads.png":::
-       The modifying visual studio 2019 dialog box displays cards and installation details. Installation details for universal windows platform development  display included and optional items.
-    :::image-end:::
+   The modifying Visual Studio 2019 dialog box displays cards and installation details.  Installation details for Universal Windows Platform development show the included and optional items.
 
-1.  Click **Modify**. Visual Studio installs the selected features.
+   :::image type="content" source="media/winui2-getting-started-install-workloads.png" alt-text="The 'Modifying Visual Studio 2019' dialog box displays cards and installation details." lightbox="media/winui2-getting-started-install-workloads.png":::
+
+1. Click **Modify**.  Visual Studio installs the selected features.
 
 
 ## Step 2 - Create a UWP app
 
-1.  In Visual Studio, click **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box displays.
+1.  In Visual Studio, click **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box appears.
 
 1.  On the **All languages** dropdown list, click **C#**.
 
@@ -69,12 +68,12 @@ In this article, you will get started creating your first WebView2 app in WinUI 
 1.  In the list of app templates, click **Blank App (Universal Windows)**.
 
     :::image type="complex" source="media/winui2-getting-started-create-project.png" alt-text="The Create a new project dialog box displays the blank app (universal windows) card." lightbox="media/winui2-getting-started-create-project.png":::
-       The Create a new project dialog box displays. The filter criteria are highlighted in red. The blank app (universal windows) card is highlighted in red.
+       The Create a new project dialog box appears.  The filter criteria are highlighted in red. The blank app (universal windows) card is highlighted in red.
     :::image-end:::
 
 1.  Click **Next**.
 
-    The **Configure your new project** dialog displays, for a **Blank App (Universal Windows)**.
+    The **Configure your new project** dialog appears, for a **Blank App (Universal Windows)**.
 
 1.  In the **Project name** text box, enter a project name such as `UWPSampleProject`.
 
@@ -82,7 +81,7 @@ In this article, you will get started creating your first WebView2 app in WinUI 
        The Configure your new project dialog box displays text boxes for a Blank App (Universal Windows). Text boxes displayed are project name, location, solution, and solution name.
     :::image-end:::
 
-1.  Click **Create**.  The **New Universal Windows Platform Project** dialog box displays.
+1.  Click **Create**.  The **New Universal Windows Platform Project** dialog box appears.
 
 1.  Click **OK**.  The **Settings** window might open, if you haven't done the following couple of steps yet.
 
@@ -92,7 +91,7 @@ In this article, you will get started creating your first WebView2 app in WinUI 
 
     Visual studio displays the solution and project.
 
-    :::image type="complex" source="media/new-project-created.msft.png" alt-text="The resulting project" lightbox="media/new-project-created.msft.png":::
+    :::image type="complex" source="media/new-project-created.msft.png" alt-text="The resulting project." lightbox="media/new-project-created.msft.png":::
         The resulting project
     :::image-end:::
 
@@ -106,17 +105,17 @@ In this article, you will get started creating your first WebView2 app in WinUI 
 
 1.  In the **Search** box, enter `Microsoft.UI.Xaml`, and then select **Microsoft.UI.Xaml**.  Make sure that the **Version** is the latest prerelease, and then select **Install**.
 
-    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager" lightbox="media/winui2-nuget-package.msft.png":::
+    :::image type="complex" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager." lightbox="media/winui2-nuget-package.msft.png":::
        The NuGet package manager
     :::image-end:::
 
-    The **Preview Changes** dialog box displays.
+    The **Preview Changes** dialog box appears.
 
 1.  Click **OK**. The WebView2 SDK dependency is installed with WinUI 2.
 
     <!-- "Microsoft.UI.Xaml" here is equiv to WinUI 2; same team -->
 
-1.  The **License Acceptance** dialog box displays. Click**I Accept**.  The `readme.txt` displays.
+1.  The **License Acceptance** dialog box appears.  Click **I Accept**.  The `readme.txt` is displayed.
 
 <!-- note: install halted after only WinUI 2 component, it didn't seem to install WebView2 even though that was the 2nd item listed.  assume that's ok now on my machine. -->
 
@@ -141,7 +140,7 @@ In this article, you will get started creating your first WebView2 app in WinUI 
 
 1.  Save the file. Above the `MainPage.xaml` file in the code editor, a preview of the WebView2 content is displayed.
 
-    :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="Preview of the WebView2 content" lightbox="media/winui2-getting-started-preview-webview2-content.png":::
+    :::image type="complex" source="media/winui2-getting-started-preview-webview2-content.png" alt-text="Preview of the WebView2 content." lightbox="media/winui2-getting-started-preview-webview2-content.png":::
        Preview of the WebView2 content
     :::image-end:::
 

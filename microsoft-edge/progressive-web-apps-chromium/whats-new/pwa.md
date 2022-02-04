@@ -1,12 +1,11 @@
 ---
-description: New features and origin trials for Progressive Web Apps (PWAs).
 title: What's New in Progressive Web Apps
+description: New features and origin trials for Progressive Web Apps (PWAs).
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/19/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, pwas, pwa, progressive web apps, origin trials
+ms.date: 11/19/2021
 ---
 # What's New in Progressive Web Apps
 

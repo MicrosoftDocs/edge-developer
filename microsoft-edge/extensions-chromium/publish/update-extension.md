@@ -1,12 +1,11 @@
 ---
-description: Updating or removing extensions from the Microsoft Edge Add-ons website.
 title: Update a Microsoft Edge extension
+description: Updating or removing extensions from the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 02/17/2021
 ---
 # Update a Microsoft Edge extension
 
@@ -30,7 +29,7 @@ To update your extension on the store:
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
 
 <!-- todo: uncomment after the API is available for use.
-After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API](api/using-addons-api.md).
+After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API (in private preview)](api/using-addons-api.md).
 -->
 
 

@@ -3,9 +3,8 @@ title: Change DevTools placement (Undock, Dock to bottom, Dock to left)
 description: How to move Microsoft Edge DevTools to the bottom or left of your viewport, or to a separate window.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
@@ -25,13 +24,19 @@ ms.date: 05/04/2021
 
 By default, Microsoft Edge DevTools is docked to the right of your viewport (window).  You can also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.
 
-DevTools docked to the left side of the window:
+
+<!-- ====================================================================== -->
+## Examples of the various placements of DevTools
+
+### Dock to left
 
 :::image type="content" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="DevTools docked to the left side of the window." lightbox="../media/customize-elements-styles-right-docked.msft.png":::
 
-DevTools docked to the bottom of the window:
+### Dock to bottom
 
 :::image type="content" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="DevTools docked to the bottom of the window." lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
+
+### Undock into separate window
 
 DevTools can be undocked to a separate window, which you can move to a separate monitor.  The browser then has its own dedicated window without DevTools, which has been undocked:
 
@@ -45,7 +50,7 @@ DevTools is then undocked into its own separate, dedicated window:
 <!-- ====================================================================== -->
 ## Change placement from the main menu
 
-1.  Click **Customize and control DevTools** (`...`) and then select **Undock into separate window** (![Undock](../media/undock-icon.msft.png)), **Dock to bottom** (![Dock to bottom](../media/bottom-icon.msft.png)), or **Dock to left** (![Dock to left](../media/left-icon.msft.png)).
+1. Click **Customize and control DevTools** (`...`) and then select **Undock into separate window** (![Undock.](../media/undock-icon.msft.png)), **Dock to bottom** (![Dock to bottom.](../media/bottom-icon.msft.png)), or **Dock to left** (![Dock to left.](../media/left-icon.msft.png)).
 
 :::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Selecting Undock Into Separate Window." lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
 
@@ -53,8 +58,8 @@ DevTools is then undocked into its own separate, dedicated window:
 <!-- ====================================================================== -->
 ## Change placement from the Command Menu
 
-1.  [Open the Command Menu](../command-menu/index.md), by selecting `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
-1.  After the `>` character, enter `dock`, and then select one of the following commands:
+1. [Open the Command Menu](../command-menu/index.md).  To do this, you can press `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
+1. After the `>` character, enter `dock`, and then select one of the following commands:
 
     *  **Dock to bottom**
     *  **Dock to left**
@@ -64,7 +69,7 @@ DevTools is then undocked into its own separate, dedicated window:
 
     You can also access these commands from the [main menu](#change-placement-from-the-main-menu).
 
-    :::image type="content" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The Undock command." lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+   :::image type="content" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The Undock command." lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -72,5 +77,5 @@ DevTools is then undocked into its own separate, dedicated window:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/placement) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

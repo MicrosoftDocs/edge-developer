@@ -1,24 +1,27 @@
 ---
 title: Overview of accessibility testing using DevTools
-description: Getting started testing for accessibility problems using DevTools
+description: Getting started testing for accessibility problems using DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
 ms.date: 06/07/2021
 ---
 # Overview of accessibility testing using DevTools
 
-In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in a demo page, and we discuss how to fix them.  Open the [demo page](https://microsoftedge.github.io/DevToolsSamples/a11y-testing/page-with-errors.html) in a new tab to try it out yourself and you can test along.
+In this article, we cover some of the features you can use in DevTools to test for accessibility problems.  We go through using different features of DevTools to detect the accessibility problems in a demo page, and we discuss how to fix them.
 
-:::image type="content" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page used in this article with a few accessibility issues." lightbox="../media/a11y-testing-basics-demopage.msft.png":::
+1. Open the [accessibility testing demo page](https://microsoftedge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
+
+   :::image type="content" source="../media/a11y-testing-basics-demopage.msft.png" alt-text="The demo page used in this article with a few accessibility issues." lightbox="../media/a11y-testing-basics-demopage.msft.png":::
+
+1. Right-click anywhere in the demo webpage and then select **Inspect**.  DevTools opens next to the webpage.
 
 
 <!-- ====================================================================== -->
 ## Automated testing by using the Issues tool
 
-When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Click the **Issues counter** (![Issues counter](../media/issues-counter-icon.msft.png)) to open the [Issues tool][DevToolsIssuesTool] to view the issues and more information.
+When you open the demo page in the browser and open DevTools, notice that some issues are automatically detected in the **Issues counter**.  Click the **Issues counter** (![Issues counter.](../media/issues-counter-icon.msft.png)) to open the **Issues** tool to view the issues and more information.
 
 :::image type="content" source="../media/a11y-testing-issues-tracker.msft.png" alt-text="The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool." lightbox="../media/a11y-testing-issues-tracker.msft.png":::
 
@@ -80,18 +83,21 @@ For detailed walkthrough steps, see [Verify that text colors have enough contras
 
 <!-- corresponding how-to article: narrow.md -->
 
-An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there is not much space left. When there is not enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
+An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there isn't much space left.  When there isn't enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
 
 By making the browser window narrow and using the arrow keys to scroll the page, you can see that the top navigation bar of the demo page has some accessibility issues.  The top navigation bar overlaps the **Search** form, as shown in the previous image, and that issue needs to be fixed.
 
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 
 *  Without resizing the browser window, resize the page and test whether your [CSS media queries](../device-mode/index.md#show-media-queries) trigger a change in layout.
-*  Check for dependencies that use a mouse. By default, device emulation assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work.
+
+*  Check for dependencies that use a mouse. By default, **Device Emulation** assumes a touch device. This means that any functionality of your product that relies on hover interaction will not work.
+
 *  Do visual testing by simulating different devices, zoom levels, and pixel ratios.
+
 *  Test how your product behaves on unreliable connections or when the user is offline.  Showing the most important interactions to a user on a slow connection is also an accessibility consideration.
 
-To learn more about the **Device Emulation** tool, see [Emulate mobile devices in Microsoft Edge DevTools](../device-mode/index.md).
+To learn more about the **Device Emulation** tool, see [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
 
 
 ### Wavy underlines in the DOM tree indicate automatically detected issues
@@ -123,7 +129,7 @@ One of those issues is the donation form.  When you use a mouse, you can click t
 <!-- ====================================================================== -->
 ## Using the Inspect tool to detect accessibility issues
 
-Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** (![Inspect](../media/inspect-icon.msft.png)) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by clicking the **Inspect** tool button.
+Use the **Inspect** tool to detect accessibility issues by hovering over parts of the webpage.  The **Inspect** (![Inspect.](../media/inspect-tool-icon-light-theme.png)) tool is in the top-left corner of DevTools.  Turn on the Inspect tool by clicking the **Inspect** tool button.
 
 :::image type="content" source="../media/a11y-testing-basics-inspector.msft.png" alt-text="Turn on the Inspect tool by clicking the Inspect tool button." lightbox="../media/a11y-testing-basics-inspector.msft.png":::
 
@@ -135,12 +141,11 @@ The Inspect tool's **Accessibility** section includes a **Contrast** line, when 
 
 :::image type="content" source="../media/a11y-testing-basics-inspector-overlay.msft.png" alt-text="The Inspect tool's Accessibility section includes a Contrast line, when applicable." lightbox="../media/a11y-testing-basics-inspector-overlay.msft.png":::
 
-For detailed walkthrough steps, see [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).
-<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->
+For detailed walkthrough steps, see [Identify nested regions using color highlighting](test-inspect-tool.md#identify-nested-regions-using-color-highlighting).<!-- = test-inspect-tool.md##identify-nested-regions-using-color-highlighting -->  The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 The upper section of the **Inspect** tool's information overlay displays the following information:
 
-* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon (![Grid layout icon](../media/grid-icon.msft.png)).
+* Layout type; if the element is positioned using a flexbox or grid, you see an appropriate icon (![Grid layout icon.](../media/grid-icon.msft.png)).
 * The name of the element, such as **a**, **h1**, or **div**.
 * The dimensions of the element, in pixels.
 * The color, as a color swatch (a small, colored square) and as a formatted value (such as `#336699`).
@@ -154,16 +159,16 @@ The **Accessibility** part of the **Inspect** overlay is described in the follow
 
 The **Accessibility** section of the **Inspect** overlay contains the following rows:
 
-*   **Contrast** defines whether an element can be understood by people with low vision.
-    *   The [contrast ratio](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) as defined by the [WCAG Guidelines](https://www.w3.org/TR/WCAG21/) indicates whether there is enough contrast between text and background colors.  A green check mark icon indicates there's enough contrast, and an orange exclamation-point icon indicates there's not enough contrast.
+*  **Contrast** defines whether an element can be understood by people with low vision.
+    *  The [contrast ratio](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) as defined by the [WCAG Guidelines](https://www.w3.org/TR/WCAG21/) indicates whether there is enough contrast between text and background colors.  A green check mark icon indicates there's enough contrast, and an orange exclamation-point icon indicates there's not enough contrast.
 
-*   **Name** and **Role** indicate what information assistive technology, such as screen readers, will report about the element.
-    *   The **Name** is the text content of an `a` element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is "About Us".
-    *   The **Role** of the element.  The **Role** is usually the element name, such as `article`, `img` , `link`, or `heading`.  The `div` and `span` elements are represented as `generic`.
+*  **Name** and **Role** indicate what information assistive technology, such as screen readers, will report about the element.
+    *  The **Name** is the text content of an `a` element.  For the element `<a href="/">About Us</a>`, the **Name** shown in the Inspect tool is "About Us".
+    *  The **Role** of the element.  The **Role** is usually the element name, such as `article`, `img` , `link`, or `heading`.  The `div` and `span` elements are represented as `generic`.
 
-*   **Keyboard-focusable** indicates whether users can reach the element using input devices other than a mouse.
-    *   A green check mark icon indicates that the element is keyboard-focusable.
-    *   A gray circle with diagonal line indicates that the element isn't keyboard-focusable.
+*  **Keyboard-focusable** indicates whether users can reach the element using input devices other than a mouse.
+    *  A green check mark icon indicates that the element is keyboard-focusable.
+    *  A gray circle with diagonal line indicates that the element isn't keyboard-focusable.
 
 For detailed walkthrough steps, see [Check individual elements for text contrast, screen reader text, and keyboard support](test-inspect-tool.md#check-individual-elements-for-text-contrast-screen-reader-text-and-keyboard-support).
 
@@ -176,7 +181,7 @@ When using the **Inspect** tool, clicking an element on the rendered page opens 
 
 When using the **Inspect** tool, as you hover over different parts of the rendered page with **Elements** open, you'll notice that the DOM tree automatically refreshes.
 
-For detailed walkthrough steps, see [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).
+For detailed walkthrough steps, see [Use the Inspect tool to hover over the webpage to highlight the DOM and CSS](test-inspect-tool.md#use-the-inspect-tool-to-hover-over-the-webpage-to-highlight-the-dom-and-css).  The main article about the Inspect tool is [Analyze HTML pages using the Inspect tool](../css/inspect.md).
 
 
 <!-- ====================================================================== -->
@@ -238,7 +243,7 @@ For detailed walkthrough steps, see [Analyze the lack of indication of keyboard 
 
 ### Analyzing the lack of keyboard support in the donation form
 
-The buttons on the donation form are implemented using the `div` element, which is not recognized by automated testing tools as a control on a form.
+The buttons on the donation form are implemented using the `div` element, which isn't recognized by automated testing tools as a control on a form.
 
 To investigate this, you can use the **Inspect** tool to hover over the donation form's buttons.  The result is that none of them are keyboard-accessible, as indicated by the gray ring on the **Keyboard-focusable** line of the information overlay.  As shown in the **Name** and **Role** lines of the information overlay, the buttons of the donation form also have no name, and have a role of `generic` (representing `div` or `span` elements), which means they aren't accessible to assistive technology.
 
@@ -337,7 +342,7 @@ Turn on the **Inspect** tool and then in the rendered page, click the blue **Cat
 
 :::image type="content" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="Inspecting the element that has a hover state in the Elements tool." lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
 
-On the **Styles** tab, click the **\:hov (Toggle Element State)** button.  Then use the **Force element state** checkboxes to choose which state to simulate.
+On the **Styles** tab, click the **\:hov (Toggle Element State)** button.  Then use the **Force element state** checkboxes to select which state to simulate.
 
 :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="The state simulation feature showing all the options." lightbox="../media/a11y-testing-state-simulation.msft.png":::
 
@@ -376,7 +381,7 @@ When switching to a light theme in the **Rendering** tool, the following issues 
 
 ### Verify that the webpage is usable by people with color blindness
 
-The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this is not good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that the page is usable by people with color blindness](test-color-blindness.md).
+The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this isn't good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that a page is usable by people with color blindness](test-color-blindness.md).
 
 :::image type="content" source="../media/a11y-testing-simulating-protanopia.msft.png" alt-text="Showing the page as someone with protanopia (red color blindness) would see it." lightbox="../media/a11y-testing-simulating-protanopia.msft.png":::
 
@@ -384,7 +389,7 @@ The different donation states use color (red, green, yellow) as the only means t
 ### Verify that the webpage is usable with blurred vision
 
 Another interesting feature of the **Rendering** tool is that you can simulate blurred vision.  If we select the **Blurred vision** option from the **Emulate vision deficiencies** dropdown list, we can see that the drop shadow on the text in the upper menu makes it hard to read the menu items.
-For detailed walkthrough steps, see [Verify that the page is usable with blurred vision](test-blurred-vision.md).
+For detailed walkthrough steps, see [Verify that a page is usable with blurred vision](test-blurred-vision.md).
 
 :::image type="content" source="../media/a11y-testing-simulating-blur.msft.png" alt-text="Simulating a blurred page can reveal accessibility issues." lightbox="../media/a11y-testing-simulating-blur.msft.png":::
 
@@ -407,13 +412,13 @@ In the demo page here, turning off animations will stop the smooth scrolling of 
 
 This CSS media query conditionally runs the "smooth scrolling" animation.  But the animation of the top navigation bar, sidebar navigation menu, and **More** links still run, even when the user doesn't want to see animations. Those other animations need to be conditionally run, such as by adding additional media queries.
 
-For detailed walkthrough steps, see [Verify that the page is usable with UI animation turned off](test-reduced-ui-motion.md).
+For detailed walkthrough steps, see [Verify that a page is usable with UI animation turned off](test-reduced-ui-motion.md).
 
 
 <!-- ====================================================================== -->
 ## What to do next?
 
-We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features in DevTools](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
+We've covered quite a few tools you can use to make sure that you catch accessibility problems in your products.  Such tools range from automated checks and manual detail checks to simulation of different states and environments.  These tools are summarized in [Accessibility-testing features](reference.md).  Automated tools can't find all the problems in a product, because many of the accessibility barriers show up only during interactive use.
 
 None of these tools can replace a proper round of testing your products with people that use assistive technologies and following a plan to check for all the required tests. You can also use the [Assessments](https://accessibilityinsights.io/docs/en/web/getstarted/assessment/) feature of [Accessibility Insights](https://accessibilityinsights.io).  You may need to perform additional checks such as:
 

@@ -1,17 +1,17 @@
 ---
-description: Host web content in your Win32, .NET, UWP apps with the Microsoft Edge WebView2 control
 title: Introduction to Microsoft Edge WebView2
+description: Host web content in your Win32, .NET, UWP apps with the Microsoft Edge WebView2 control.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
+ms.localizationpriority: high
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, CoreWebView2, ICoreWebView2Host, browser control, edge html, Windows Forms, WinForms, WPF, .NET, WinUI, Project Reunion
+ms.date: 11/12/2021
 ---
 # Introduction to Microsoft Edge WebView2
 
-The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, navigate to [Get Started](#get-started).
+The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native apps.  With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.  For information on how to start building a WebView2 app, see [Get started](#get-started).
 
 :::image type="complex" source="./media/WebView2/what-webview.png" alt-text="What is WebView?" lightbox="./media/WebView2/what-webview.png":::
    What is WebView?
@@ -25,7 +25,7 @@ Developers must often decide between building a web app or a native app.  This d
 *  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
 *  To access all the capabilities of a native platform, use a native app.
 
-:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native" lightbox="./media/WebView2/web-native.png":::
+:::image type="complex" source="./media/WebView2/web-native.png" alt-text="Web native." lightbox="./media/WebView2/web-native.png":::
    Web native
 :::image-end:::
 

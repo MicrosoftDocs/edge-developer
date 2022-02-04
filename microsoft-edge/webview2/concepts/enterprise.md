@@ -1,15 +1,13 @@
 ---
-description: Understand how to manage WebView2 applications
 title: Managing WebView2 applications
+description: Understand how to manage WebView2 applications
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/12/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html, enterprise, group policy, manageability
+ms.date: 11/12/2021
 ---
-
 # Managing WebView2 applications
 
 [WebView2](../index.md) is a component that developers use to build their applications, and the developers can deploy a self-updating Evergreen WebView2 Runtime onto user devices to power their applications.  This document discusses how IT admins can manage WebView2 applications and the WebView2 Runtime.  Feedback from both IT admins and developers is welcome on [WebView2 Feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback).

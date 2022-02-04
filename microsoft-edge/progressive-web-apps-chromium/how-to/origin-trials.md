@@ -1,13 +1,12 @@
 ---
 title: Experimental features and origin trials
-description: Learn how to test experimental PWA features in Microsoft Edge and enroll your site in origin trials to use these features in production with your users.
+description: How to test experimental PWA features in Microsoft Edge and enroll your site in origin trials to use these features in production with your users.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Microsoft Edge, experimental, origin trials
+ms.date: 09/15/2021
 ---
 # Experimental features and origin trials
 

@@ -1,13 +1,12 @@
 ---
 title: Handle protocols in Progressive Web Apps
-description: Learn how to register your PWA as a protocol handler to more deeply integrate it in the operating system with other applications.
+description: How to register your PWA as a protocol handler to more deeply integrate it in the operating system with other applications.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, protocol
+ms.date: 01/12/2022
 ---
 # Handle protocols in Progressive Web Apps
 
@@ -18,20 +17,6 @@ With Protocol Handling, when a PWA is being installed, the PWA can register to h
 Custom protocols can also be handled, if a PWA registers a protocol that starts with the `web+` prefix.
 
 To learn more about other existing protocols, see [List of URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes).
-
-
-<!-- ====================================================================== -->
-## Enable protocol handling
-
-Protocol Handling is an experimental feature.  To turn on protocol handling:
-
-1.  Go to `edge://flags` in Microsoft Edge.
-1.  Select **Search flags**, and then type "protocol handling".
-1.  Select **Default** > **Enabled** > **Restart**.
-
-:::image type="content" source="../media/enable-protocol-handling-experiment.png" alt-text="Enable the 'Protocol handling' API experiment.":::
-
-Protocol Handling is also an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 
 <!-- ====================================================================== -->
@@ -58,4 +43,5 @@ In the above example, the app is registered to handle the `mailto` protocol.  Wh
 <!-- ====================================================================== -->
 ## See also
 
+*  [Getting started with Protocol Handlers for your web app](https://blogs.windows.com/msedgedev/2022/01/20/getting-started-url-protocol-handlers-microsoft-edge/)
 *  [URL protocol handler registration for PWAs](https://web.dev/url-protocol-handler/)

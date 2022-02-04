@@ -3,11 +3,10 @@ title: Display content in the title bar
 description: Learn how to use the Window Controls Overlay API to make use of the entire window area for your app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/02/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: pwa
-keywords: progressive web apps, PWA, Edge, JavaScript, window controls overlay, API
+ms.date: 09/02/2021
 ---
 # Display content in the title bar
 
@@ -147,7 +146,7 @@ if ('windowControlsOverlay' in navigator) {
         // Detect if the Window Controls Overlay is visible.
         const isOverlayVisible = navigator.windowControlsOverlay.visible;
         // Get the size and position of the title bar area.
-        const titleBarRect = e.boundingRect;
+        const titleBarRect = e.titlebarAreaRect;
 
         console.log(`The overlay is ${isOverlayVisible ? 'visible' : 'hidden'}, the title bar width is ${titleBarRect.width}px`);
     }, 200));
@@ -184,3 +183,4 @@ The source code for this app is in the [My Tracks](https://github.com/captainbro
 
 *   [Window Controls Overlay video tutorial](https://www.youtube.com/watch?v=NvClp35dFVI)
 *   [Customize the window controls overlay of your PWA's title bar](https://web.dev/window-controls-overlay/)
+*   [Breaking Out of the Box](https://alistapart.com/article/breaking-out-of-the-box/)

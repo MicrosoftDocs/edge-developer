@@ -1,13 +1,12 @@
 ---
-description: Embed web content into native applications using WebView2
 title: Embed web content into native applications
+description: Embed web content into native applications using WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/15/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview, WebView2 messages, WebView2 JavaScript, WebView2 native objects
+ms.date: 10/15/2021
 ---
 # Embed web content into native applications
 

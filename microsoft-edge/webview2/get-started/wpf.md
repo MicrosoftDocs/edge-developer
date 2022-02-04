@@ -1,13 +1,12 @@
 ---
-description: Get started guide with WebView2 for Windows Presentation Foundation (WPF) apps
 title: Get started with WebView2 in WPF apps
+description: Get started guide with WebView2 for Windows Presentation Foundation (WPF) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/05/2021
-ms.topic: tutorial
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: WebView2, webview2, WebView, webview, wpf apps, wpf, edge, CoreWebView2, browser control, edge html, get started, Get Started, .NET
+ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WPF apps
 
@@ -41,29 +40,29 @@ Start with a basic desktop project that contains a single main window.
 1. Click the **WPF App (.NET Core)** or **WPF App (.NET Framework)** card.
 
     :::image type="complex" source="./media/wpf-getting-started-wpf-core.png" alt-text="Create a new project panel displays WPF app search results including WPF Core card.":::
-      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C#, XAML, Windows, and desktop. The dialog box displays a next button.
+      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C#, XAML, Windows, and desktop. The dialog box displays a Next button.
     :::image-end:::
 
     :::image type="complex" source="./media/wpf-getting-started-wpf-fw.png" alt-text="Create a new project panel displays WPF app search results including WPF Framework card.":::
-      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C#, Windows, and desktop. The dialog box displays a next button.
+      The create a new project panel displays WPF app search results. The highlighted button is WPF app .NET core Windows Presentation Foundation client application for C#, Windows, and desktop. The dialog box displays a Next button.
           :::image-end:::
 
 1.  For **WPF App (.NET Core)** enter values for **Project name** and **Location**, then click **Next**.
 
     :::image type="complex" source="./media/wpf-getting-started-create-core.png" alt-text="Configure your new project WPF application dialog box displays project name, location, and solution name text boxes.":::
-      The configure your new project WPF application dialog box displays project name, location, and solution name text boxes. The dialog box displays back and next buttons.
+      The configure your new project WPF application dialog box displays project name, location, and solution name text boxes. The dialog box displays Back and Next buttons.
     :::image-end:::
 
     1.  Choose **.NET Core 3.1** or later.
 
         :::image type="complex" source="./media/wpf-getting-started-create-core-add-info.png" alt-text="Additional information dialog box displays a drop-down menu for target framework.":::
-          The Additional information dialog box displays a drop-down menu for target framework. Choices are .NET core 3.0, 3.1. and 5.0. The dialog box displays back and creates buttons.
+          The Additional information dialog box displays a drop-down menu for target framework. Choices are .NET core 3.0, 3.1. and 5.0. The dialog box displays Back and Create buttons.
         :::image-end:::
 
 1. For **WPF App (.NET Framework)** enter values for **Project name** and **Location**, then choose **.NET Framework 4.6.2** or later.
  
     :::image type="complex" source="./media/wpf-getting-started-create-fw.png" alt-text="Configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes.":::
-      The configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes. The framework drop-down menu displays .NET framework versions including 4.6.1 and 4.7.2. The dialog box displays back and create buttons.
+      The configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes. The framework drop-down menu displays .NET framework versions including 4.6.1 and 4.7.2. The dialog box displays Back and Create buttons.
     :::image-end:::
 
 1.  Click **Create** to continue.
@@ -78,14 +77,12 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1. In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**.
 
-    :::image type="complex" source="./media/wpf-getting-started-mng-nuget-reduced.png" alt-text="Contextual menu displays manage NuGet packages." lightbox="./media/wpf-getting-started-mng-nuget.png":::
-       The contextual menu displays many options including Manage NuGet Packages.
-    :::image-end:::
+    :::image type="content" source="./media/wpf-getting-started-mng-nuget-reduced.png" alt-text="The right-click menu displays manage NuGet packages." lightbox="./media/wpf-getting-started-mng-nuget.png":::
 
 1.  Click **Browse**. In the search bar, type `Microsoft.Web.WebView2`, then choose **Microsoft.Web.WebView2**.
 
     :::image type="complex" source="./media/install-nuget.png" alt-text="NuGet package manager dialog box displays the Microsoft.Web.WebView2 card." lightbox="./media/install-nuget.png":::
-       The NuGet package manager dialog box displays search results including Microsoft.Web.WebView2 card. The dialog box displays the version and install button.
+       The NuGet package manager dialog box displays search results including Microsoft.Web.WebView2 card. The dialog box displays the version and and Install button.
     :::image-end:::
 
 1.  Accept the default version and then click **Install**.
@@ -151,7 +148,7 @@ Add a WebView2 control to your app.
 
 1.  Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
-    :::image type="complex" source="./media/wpf-getting-started-microsoft.png" alt-text="Microsoft.com":::
+    :::image type="complex" source="./media/wpf-getting-started-microsoft.png" alt-text="Microsoft.com.":::
        Microsoft.com
     :::image-end:::
 
@@ -333,7 +330,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 1.  Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
 
-:::image type="complex" source="./media/wpf-getting-started-https.png" alt-text="HTTPS":::
+:::image type="complex" source="./media/wpf-getting-started-https.png" alt-text="HTTPS.":::
    HTTPS
 :::image-end:::
 

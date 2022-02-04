@@ -1,13 +1,12 @@
 ---
-description: In the WebView2 threading model, the WebView2 must be created on a UI thread with a message pump.
 title: Threading model for WebView2
+description: In the WebView2 threading model, the WebView2 must be created on a UI thread with a message pump.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/21/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, wpf apps, wpf, edge, ICoreWebView2, ICoreWebView2Host, browser control, edge html
+ms.date: 09/21/2021
 ---
 # Threading model for WebView2
 
@@ -76,7 +75,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 > 1.  In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
 > 1.  Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
 
-:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="Enabling native code debugging in Visual Studio" lightbox="../media/webview-enable-native-debug.png":::
+:::image type="complex" source="../media/webview-enable-native-debug.png" alt-text="Enabling native code debugging in Visual Studio." lightbox="../media/webview-enable-native-debug.png":::
    Enabling native code debugging in Visual Studio
 :::image-end:::
 

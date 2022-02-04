@@ -5,7 +5,6 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, extensions development, browser extensions, add-ons, partner center, developer
 ms.date: 08/27/2021
 ---
 # Register as a Microsoft Edge extension developer
@@ -46,7 +45,7 @@ To create a Microsoft account (MSA):
 
 1. Decide if you want to use your existing GitHub account to create a Microsoft account (MSA).  See [Publish Microsoft Edge extensions by using a GitHub account](github.md).
 
-1. If you aren't using your GitHub account to create the Microsoft account (MSA), navigate to [account.microsoft.com](https://account.microsoft.com/account).
+1. If you aren't using your GitHub account to create the Microsoft account (MSA), see [account.microsoft.com](https://account.microsoft.com/account).
 
 1. Select **Create a Microsoft account**.
 
@@ -55,7 +54,7 @@ To create a Microsoft account (MSA):
 If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that a Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
 
 > [!NOTE]
-> The Microsoft Edge program does not currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
+> The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
 
 
 <!-- ====================================================================== -->
@@ -93,7 +92,7 @@ This field is either where you live or your business is located.
 The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) offers both individual and company accounts.  The accounts are described in detail in the following sections.  Both account types enable you to publish extensions to the Microsoft Edge Add-ons website.
 
 > [!IMPORTANT]
-> After enrollment, you are not able to change the value of this field.
+> After enrollment, you aren't able to change the value of this field.
 
 #### Individual account
 
@@ -121,7 +120,7 @@ For a company account, you must provide the contact information of your company 
 <!-- ====================================================================== -->
 ## Next steps
 
-To display your verification status, navigate to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To display your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
 *  [Publish an extension](./publish-extension.md)
 

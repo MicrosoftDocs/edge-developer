@@ -1,14 +1,13 @@
 ---
+title: Find source files for a page using the Search tool
 description: The Search tool in Microsoft Edge DevTools helps find source files.
-title: Search
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 10/28/2021
 ---
-# Search
+# Find source files for a page using the Search tool
 
 Use the **Search** tool to find specific source files for a webpage.
 
@@ -22,9 +21,9 @@ In the **Sources** tool, the **Page** tab of the [Navigator pane](../sources/ind
 
 To quickly open the **Search** tool:
 
-1.  [Open DevTools](../open/index.md) (`F12`).
+1. [Open DevTools](../open/index.md) (`F12`).
 
-1.  Press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
+1. Press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
 
 The **Search** tool appears in the **Drawer**, and shows the search toolbar:
 
@@ -38,11 +37,11 @@ See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-short
 
 To open the **Search** tool from the **Command Menu**:
 
-1.  [Open DevTools](../open/index.md) (`F12`).
+1. [Open DevTools](../open/index.md) (`F12`).
 
-1.  Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
+1. Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
 
-1.  Type `search`, and then press `Enter`.
+1. Type `search`, and then press `Enter`.
 
 :::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected.":::
 
@@ -52,9 +51,8 @@ To open the **Search** tool from the **Command Menu**:
 
 To search for text in the current webpage and its resource files:
 
-1. Focus the search input field.
-1. Type the text you want to search.
-1. Press `Enter`.
+1. Put focus the search input field.
+1. Enter the text that you want to search for, and then press `Enter`.
 
 The **Search** tool shows the list of matching resources, and highlights the corresponding lines of text.  The number of matching files and lines is also indicated at the bottom of the tool.
 
@@ -66,7 +64,7 @@ The **Search** tool shows the list of matching resources, and highlights the cor
 <!-- ====================================================================== -->
 ## Match case (lowercase or uppercase characters)
 
-By default, the **Search** tool is not case-sensitive.  A search for a term matches occurrences of that term, regardless of lowercase or uppercase characters.
+By default, the **Search** tool isn't case-sensitive.  A search for a term matches occurrences of that term, regardless of lowercase or uppercase characters.
 
 To only find results that match a particular case (lowercase or uppercase characters), click the **Match Case** (`Aa`) button in the search toolbar.
 
@@ -94,10 +92,10 @@ A webpage can continue to request resources after it has finished loading, so th
 
 To update the search results, do either of the following:
 *  Search again by typing a term in the search input field.
-*  Click the **Refresh** (![Refresh search button](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
+*  Click the **Refresh** (![Refresh search button.](../media/search-tool/search-tool-refresh.png)) button in the toolbar.
 
 
 <!-- ====================================================================== -->
 ## Clear a search
 
-To clear the search results, click the **Clear** (![Clear search button](../media/search-tool/search-tool-clear.png)) button in the toolbar.
+To clear the search results, click the **Clear** (![Clear search button.](../media/search-tool/search-tool-clear.png)) button in the toolbar.
