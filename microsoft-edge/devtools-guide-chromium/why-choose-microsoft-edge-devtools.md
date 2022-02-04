@@ -43,7 +43,7 @@ ms.date: 02/04/2022
 
 As a demo tour of Microsoft Edge DevTools, open these demo webpages and follow the steps in the linked articles:
 
-* [Sample code for DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sample-code/sample-code.md)
+* [Sample code for DevTools](sample-code/sample-code.md)
 
 <!--
 * [Demo tour of DevTools](demo-tour/demo-tour-of-microsoft-edge-devtools.md)
