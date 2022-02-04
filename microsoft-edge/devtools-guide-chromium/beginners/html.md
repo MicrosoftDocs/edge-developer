@@ -204,7 +204,7 @@ Move the navigation menu to the top:
 
 1. Drag the `<nav>` node to the top, so that the node is the first child after the `<body>` node.
 
-:::image type="content" source="media/beginners-html-reorder3.msft.png" alt-text="The nav node is at the top of the page." lightbox="media/beginners-html-reorder3.msft.png":::
+   :::image type="content" source="media/beginners-html-reorder3.msft.png" alt-text="The nav node is at the top of the page." lightbox="media/beginners-html-reorder3.msft.png":::
 
 ### Delete a node
 

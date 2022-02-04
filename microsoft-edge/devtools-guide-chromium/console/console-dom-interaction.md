@@ -35,7 +35,9 @@ To reference the header of the webpage:
 <!-- ====================================================================== -->
 ## Manipulate the DOM
 
-You can manipulate the webpage from the **Console**, as follows:
+You can manipulate the webpage from the **Console**, as follows.  In this example, you set a value in the DOM by using the Console, to affect the webpage styling: you add a green border around the header.
+
+1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the present webpage.
 
 1. Paste the following code into the **Console**:
 
@@ -46,6 +48,9 @@ You can manipulate the webpage from the **Console**, as follows:
    A green border appears around the header:
 
    :::image type="content" source="../media/console-dom-add-border.msft.png" alt-text="Adding a border to an element by using the Console." lightbox="../media/console-dom-add-border.msft.png":::
+
+
+### Get a direct reference an element
 
 Depending on the complexity of the webpage, it can be daunting to find the right element to manipulate.  But you can use the **Inspect** tool to help you.  Suppose you want to manipulate the **Documentation** region within the header of the rendered page:
 
