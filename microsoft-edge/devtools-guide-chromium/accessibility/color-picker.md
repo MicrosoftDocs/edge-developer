@@ -31,32 +31,25 @@ In DevTools, one way to view the contrast ratio of a text element is to use the 
 
 **To check the text-color contrast using the Color Picker:**
 
-1.  In DevTools, select the **Elements** tool.
-1.  In the **DOM Tree**, select the text element that you want to inspect.
+1. In DevTools, select the **Elements** tool.
 
-    :::image type="complex" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspect a paragraph in the DOM Tree." lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
-       Inspect a paragraph in the **DOM Tree**
-    :::image-end:::
+1. In the **DOM Tree**, select the text element that you want to inspect.
 
-1.  On the **Styles** tab, locate the **color** property that's applied to the element, and then select the color square next to the **color** property.
+   :::image type="content" source="../media/accessibility-elements-paragraph-highlight.msft.png" alt-text="Inspecting a paragraph in the DOM Tree." lightbox="../media/accessibility-elements-paragraph-highlight.msft.png":::
 
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="The color property of the element." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
-       The `color` property of the element
-    :::image-end:::
+1. On the **Styles** tab, locate the **color** property that's applied to the element, and then select the color square next to the **color** property.
 
-1.  Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).  Two check marks means that it meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
+   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png" alt-text="The 'color' property of the element." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color.msft.png":::
 
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The Contrast Ratio section of the Color Picker shows 2 check marks and a value of 13.97." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
-       The **Contrast Ratio** section of the Color Picker shows 2 check marks and a value of `13.97`
-    :::image-end:::
+1. Examine the **Contrast Ratio** section of the Color Picker.  One check mark means that the element meets the [minimum recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum).  Two check marks means that it meets the [enhanced recommendation](https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced).
 
-1.  For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color does not meet recommendations, then anything on the same side also does not meet recommendations.
+   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png" alt-text="The 'Contrast Ratio' section of the Color Picker shows two check marks and a value of 13.97." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker.msft.png":::
 
-    :::image type="complex" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="The Contrast Ratio Line in the visual picker." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
-       The **Contrast Ratio** Line in the visual picker
-    :::image-end:::
+1. For more information, select the **Contrast ratio** section to expand it.  In the visual picker at the top of the Color Picker, two lines appear, running across the visual picker, along with a circle for the current color.  If the current color meets recommendations, then anything on the same side of the line also meets recommendations.  If the current color doesn't meet recommendations, then anything on the same side also doesn't meet recommendations.
 
-1. To try different colors, select within the visual picker, or select a color swatch at the bottom of the Color Picker.
+   :::image type="content" source="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png" alt-text="The 'Contrast Ratio' Line in the visual picker." lightbox="../media/accessibility-elements-styles-paragraph-highlight-color-picker-contrast-ratio-details.msft.png":::
+
+1. To try different colors, click within the visual picker, or select a color swatch at the bottom of the Color Picker.
 
 
 <!-- ====================================================================== -->

@@ -31,7 +31,7 @@ The following events describe the state of WebView2 during each navigation actio
 | Sequence | Event name | Details |
 | --- | --- | --- |
 | 1 | `NavigationStarting` |  WebView2 starts to navigate and the navigation results in a network request.  The host may disallow the request during the event. |
-| 2 | `SourceChanged` |  The source of WebView2 changes to a new URL.  The event may result from a navigation action that does not cause a network request such as a fragment navigation. |
+| 2 | `SourceChanged` |  The source of WebView2 changes to a new URL.  The event may result from a navigation action that doesn't cause a network request such as a fragment navigation. |
 | 3 | `ContentLoading` |  WebView2 starts loading content for the new page. |
 | 4 | `HistoryChanged` |  The navigation causes the history of WebView2 to update. |
 | 5 | `DOMContentLoaded` |  WebView2 finishes parsing the DOM content but hasn't finished loading all images, script, and other content on the page. |

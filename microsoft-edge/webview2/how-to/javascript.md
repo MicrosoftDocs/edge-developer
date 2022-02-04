@@ -43,7 +43,7 @@ Debug.Assert(result == "\"example\"");
 
 The script returns a string that `ExecuteScript` JSON-encodes for you. If you call `JSON.stringify` from your script, then the result is doubly encoded as a JSON string the value of which is a JSON string.
 
-Only the properties that are directly in the result are included in the JSON-encoded object; inherited properties are not included in the JSON-encoded object. Most DOM objects inherit all properties, so you'll need to explicitly copy their values into another object to return. For example:
+Only the properties that are directly in the result are included in the JSON-encoded object; inherited properties aren't included in the JSON-encoded object. Most DOM objects inherit all properties, so you'll need to explicitly copy their values into another object to return. For example:
 
 Script              | Result
 ---                 | ---
@@ -52,7 +52,7 @@ Script              | Result
 
 When we return just `performance.memory` we don't see any of its properties in the result because all properties are inherited. If instead we copy particular property values from `performance.memory` into our own new object to return, then we do see those properties in the result.
 
-When executing script via `ExecuteScriptAsync` that script is run in the global context. It helps to have your script in an anonymous function so that any variables you define aren't polluting the global context. For example, if you run the script `const example = 10;` more than once, the subsequent times you run the script will throw an exception because `example` was defined the first time you ran it. If you instead run the script `(() => { const example = 10; })();` the `example` variable is defined in the context of that anonymous function. That way it is not polluting the global context and can be run more than once.
+When executing script via `ExecuteScriptAsync` that script is run in the global context. It helps to have your script in an anonymous function so that any variables you define aren't polluting the global context. For example, if you run the script `const example = 10;` more than once, the subsequent times you run the script will throw an exception because `example` was defined the first time you ran it. If you instead run the script `(() => { const example = 10; })();` the `example` variable is defined in the context of that anonymous function. That way, it isn't polluting the global context, and can be run more than once.
 
 <!-- ====================================================================== -->
 ## Scenario: Running a dedicated script file
@@ -127,7 +127,7 @@ To begin, explore the current functionality of the right-click menu:
 
     :::image type="content" source="./media/context-menu.png" alt-text="The right-click menu, showing the default commands." lightbox="./media/context-menu.png":::
 
-Now add code to remove the contextual menu functionality from the WebView2 control.
+Now add code to remove the right-click menu functionality from the WebView2 control.
 
 1.  Copy and paste the following code snippet into `InitializeAsync()` in `MainWindow.xaml.cs`.
 

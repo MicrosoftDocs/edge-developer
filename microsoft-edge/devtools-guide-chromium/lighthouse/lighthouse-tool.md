@@ -15,4 +15,4 @@ The Lighthouse tool was previously called the _Audits_ tool.
 
 See:
 * [Test accessibility using Lighthouse](../accessibility/lighthouse.md)
-* [Establish a baseline](../speed/get-started.md#establish-a-baseline) in _Optimize website speed_
+* [Establish a baseline](../speed/get-started.md#establish-a-baseline) in _Optimize website speed using Lighthouse_
