@@ -483,11 +483,8 @@
             - name: Keyboard shortcuts
               href: devtools-guide-chromium/shortcuts/index.md
               displayName: Keyboard shortcuts
-
-            - name: Customize keyboard shortcuts  # added article
-              href: devtools-guide-chromium/customize/shortcuts.md
-              displayName: Settings, Shortcuts
 # Settings pages and Customize menu -------------------------------------------
+# Experimental features could go here
         - name: Settings and customization UI
           items:
             - name: Customize DevTools  # orig: "Customization"
@@ -505,6 +502,10 @@
             - name: Change DevTools language settings  # added article
               href: devtools-guide-chromium/customize/localization.md
               displayName: Settings, Preferences
+
+            - name: Customize keyboard shortcuts  # added article
+              href: devtools-guide-chromium/customize/shortcuts.md
+              displayName: Settings, Shortcuts
 # Remote debugging ------------------------------------------------------------
         - name: Remote debugging
           items:
