@@ -10,14 +10,14 @@ ms.date: 05/06/2021
 ---
 # Statically link the WebView2 loader library
 
-You may want to distribute your application with a single executable file, instead of a package of many files. To create a single executable file, or to reduce the size of your package, you should statically link the WebView2Loader files. The WebView2 SDK contains a header file, `WebView2Loader.dll`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime, or Microsoft Edge preview channels, on the device.
+You may want to distribute your application with a single executable file, instead of a package of many files.  To create a single executable file, or to reduce the size of your package, you should statically link the WebView2Loader files.  The WebView2 SDK contains a header file, `WebView2Loader.dll`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime, or Microsoft Edge preview channels, on the device.
 
 For apps that don't want to ship a `WebView2Loader.dll`, complete the following steps.
 
 1.  Open the `.vcxproj` project file for your app in a text editor, such as Visual Studio Code.
 
     > [!NOTE]
-    > The `.vcproj` project file may be a hidden file, meaning it does not display in Visual Studio.  Use the command-line to find hidden files.
+    > The `.vcproj` project file may be a hidden file, meaning that it isn't shown in Visual Studio.  Use the command line to find hidden files.
 
 1.  Locate the section in the code where you include the WebView2 NuGet package target files.  The location in the code is highlighted in the following figure.
 

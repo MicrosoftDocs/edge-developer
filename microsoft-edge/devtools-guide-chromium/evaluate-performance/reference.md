@@ -22,9 +22,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Performance features reference
 
-This page is a comprehensive reference of Microsoft Edge DevTools features related to analyzing performance.
+This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
-See [Get Started With Analyzing Runtime Performance](./index.md) for a guided tutorial on how to analyze the performance of a page using DevTools.
+For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Get started analyzing runtime performance](./index.md).
 
 
 <!-- ====================================================================== -->
@@ -118,7 +118,7 @@ To throttle the CPU while recording:
 
 1. Set **CPU** to the desired level of throttling.
 
-Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than normal.  DevTools do not truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.
+Throttling is relative to the capabilities of your computer.  For example, the **2x slowdown** option makes your CPU operate 2 times slower than normal.  DevTools don't truly simulate the CPUs of mobile devices, because the architecture of mobile devices is very different from that of desktops and laptops.
 
 ### Turn on advanced paint instrumentation
 
@@ -134,7 +134,7 @@ To learn how to interact with the paint information, see [View layers](#view-lay
 <!-- ====================================================================== -->
 ## Save a recording
 
-To save a recording, open the contextual menu (right-click), and click **Save Profile**.
+To save a recording, right-click the recording and then select **Save Profile**.
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png" alt-text="Save Profile." lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-save-profile.msft.png":::
 
@@ -142,7 +142,7 @@ To save a recording, open the contextual menu (right-click), and click **Save Pr
 <!-- ====================================================================== -->
 ## Load a recording
 
-To load a recording, open the contextual menu (right-click), and click **Load Profile**.
+To load a recording, right-click the recording and then select **Load Profile**.
 
 :::image type="content" source="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png" alt-text="Load Profile." lightbox="../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png":::
 
@@ -182,19 +182,19 @@ To scroll a long flame chart in the **Main** section or any of the neighbors, cl
 
 ### Search activities
 
-Select `Control`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the search box at the bottom of the **Performance** panel.
+Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS) to open the search box at the bottom of the **Performance** panel.
 
 :::image type="content" source="../media/evaluate-performance-performance-search-regex.msft.png" alt-text="The search box." lightbox="../media/evaluate-performance-performance-search-regex.msft.png":::
 
 To navigate activities that match your query:
 
-*  Click the **Previous** (![Previous.](../media/previous-icon.msft.png)) and **Next** (![Next.](../media/next-icon.msft.png)) buttons.
+1. Click the **Previous** (![Previous.](../media/previous-icon.msft.png)) and **Next** (![Next.](../media/next-icon.msft.png)) buttons.
 
-*  To select the next activity, press `Enter`.  To select the previous activity, press `Shift`+`Enter`.
+1. To select the next activity, press `Enter`.  To select the previous activity, press `Shift`+`Enter`.
 
 To modify query settings:
 
-*  To make the query case sensitive, click the **Case sensitive** (![Case sensitive.](../media/search-case-icon.msft.png)) button.
+*  To make the query case-sensitive, click the **Case sensitive** (![Case sensitive.](../media/search-case-icon.msft.png)) button.
 
 *  To use a regular expression in your query, click the **Regex** (![Regex.](../media/search-regex-icon.msft.png)) button.
 
@@ -218,34 +218,39 @@ In the previous figure, a `click` event caused a `Function Call` in `activitytab
 
 DevTools assigns scripts random colors.  In the previous figure, function requests from one script are colored light green.  Requests from another script are colored beige.  The darker yellow represents scripting activity, and the purple event represents rendering activity.  These darker yellow and purple events are consistent across all recordings.
 
-See [Disable JavaScript samples](#disable-javascript-samples) if you want to hide the detailed flame chart of JavaScript requests.
-<!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
+If you want to hide the detailed flame chart of JavaScript requests, see [Disable JavaScript samples](#disable-javascript-samples), above.
 When JS samples are disabled, only high-level events such as `Event: click` and `Function Call` from the previous figure <!--`str` (?)--> are displayed.
+<!--When JS samples are disabled, you only see high-level events such as `Event (click)` and `Function Call` (script_foot_closure.js:53) from Figure 16.-->
+
 
 ### View activities in a table
 
 After recording a page, you don't need to rely solely on the **Main** section to analyze activities.  DevTools also provides three tabular views for analyzing activities.  Each view gives you a different perspective on the activities:
 
-*   When you want to view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
+*  To view the root activities that cause the most work, use the [Call Tree](#the-call-tree-tab) tab.
 
-*   When you want to view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
+*  To view the activities where the most time was directly spent, use the [Bottom-Up](#the-bottom-up-panel) tab.
 
-*   When you want to view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
+*  To view the activities in the order in which they occurred during the recording, use the [Event Log](#the-event-log-panel) tab.
 
-> [!NOTE]
-> The next three sections all refer to the same demo.  You can run the demo yourself at [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/).  <!-- You can view the source files for the "Activity Tabs Demo" page at the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
 
 #### Root activities
 
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
+
+<!-- You can view the source files for the Activity Tabs Demo in the [MicrosoftEdge/Demos > devtools-performance-activitytabs](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-performance-activitytabs) repo folder. -->
+
 Here's an explanation of the **root activities** concept that is mentioned in the **Call Tree** panel, **Bottom-Up** panel, and **Event Log** panel.
 
-Root activities are those which cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.
+_Root activities_ are those which cause the browser to do some work.  For example, when you click a webpage, the browser runs an `Event` activity as the root activity.  That `Event` may cause a handler to run, and so on.
 
 In the flame chart of the **Main** section, root activities are at the top of the chart.  In the **Call Tree** and **Event Log** panels, root activities are the top-level items.
 
-See the [Call Tree](#the-call-tree-tab) tab for an example of root activities.
+For an example of root activities, see the next section, "The Call Tree tab".
 
 #### The Call Tree tab
+
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
 Use the **Call Tree** tab to view which [root activities](#root-activities) cause the most work.
 
@@ -266,6 +271,8 @@ By default the **Grouping** menu is set to **No Grouping**.  Use the **Grouping*
 Click **Show Heaviest Stack** (![Show Heaviest Stack.](../media/show-heaviest-stack-icon.msft.png)) to reveal another table to the right of the **Activity** table.  Click on an activity to populate the **Heaviest Stack** table.  The **Heaviest Stack** table displays which children of the selected activity took the longest time to run.
 
 #### The Bottom-Up panel
+
+Open the [Activity Tabs Demo](https://microsoftedge.github.io/Demos/devtools-performance-activitytabs/) webpage in a new window or tab.
 
 Use the **Bottom-Up** panel to view which activities directly took up the most time in aggregate.
 
@@ -327,9 +334,9 @@ Click an interaction to view more information about it in the **Summary** panel.
 
 DevTools provides numerous ways to analyze frames per second:
 
-*   Use [the FPS chart](#the-fps-chart) to get an overview of FPS over the duration of the recording.
-*   Use [the Frames section](#the-frames-section) to view how long a particular frame took.
-*   Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter).
+*  Use [the FPS chart](#the-fps-chart) to get an overview of FPS over the duration of the recording.
+*  Use [the Frames section](#the-frames-section) to view how long a particular frame took.
+*  Use the **FPS meter** for a realtime estimate of FPS as the page runs.  See [View frames per second in realtime with the FPS meter](#view-frames-per-second-in-realtime-with-the-fps-meter).
 
 #### The FPS chart
 
@@ -359,10 +366,10 @@ Expand the **Network** section to view a waterfall of network requests that occu
 :::image type="content" source="../media/evaluate-performance-performance-network.msft.png" alt-text="The Network section." lightbox="../media/evaluate-performance-performance-network.msft.png":::
 
 Requests are color-coded as follows:
-*   HTML: Blue
-*   CSS: Purple
-*   JS: Yellow
-*   Images: Green
+*  HTML: Blue
+*  CSS: Purple
+*  JS: Yellow
+*  Images: Green
 
 Click on a request to view more information about it in the **Summary** tab.  For example, in the previous figure, the **Summary** tab is displaying more information about the blue request that is selected in the **Network** section.
 
@@ -372,13 +379,13 @@ In the first figure below, the request for `www.bing.com` is represented by a li
 
 Here's how these two representations map to each other:
 
-*   The left line is everything up to the `Connection Start` group of events, inclusive.  In other words, it's everything before `Request Sent`, exclusive.
+*  The left line is everything up to the `Connection Start` group of events, inclusive.  In other words, it's everything before `Request Sent`, exclusive.
 
-*   The light portion of the bar is `Request Sent` and `Waiting (TTFB)`.
+*  The light portion of the bar is `Request Sent` and `Waiting (TTFB)`.
 
-*   The dark portion of the bar is `Content Download`.
+*  The dark portion of the bar is `Content Download`.
 
-*   The right line is essentially time spent waiting for the main thread.  This is not represented in the **Timing** tab.
+*  The right line is essentially time spent waiting for the main thread.  This isn't represented in the **Timing** tab.
 
 The line-bar representation of the `www.bing.com` request:
 
@@ -416,7 +423,7 @@ Hover over the **Overview** to view a screenshot of how the page looked during t
 
 :::image type="content" source="../media/evaluate-performance-performance-screenshots-hover.msft.png" alt-text="Viewing a screenshot." lightbox="../media/evaluate-performance-performance-screenshots-hover.msft.png":::
 
-You can also view screenshots by choosing a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** panel.
+You can also view screenshots by selecting a frame in the **Frames** section.  DevTools displays a small version of the screenshot in the **Summary** panel.
 
 :::image type="content" source="../media/evaluate-performance-performance-summary-preview.msft.png" alt-text="Viewing a screenshot in the Summary panel." lightbox="../media/evaluate-performance-performance-summary-preview.msft.png":::
 
@@ -440,11 +447,11 @@ Hover over a layer to highlight it in the diagram.
 
 To move the diagram:
 
-*   Select **Pan Mode** (![Pan Mode.](../media/pan-mode-icon.msft.png)) to move along the X and Y axes.
+*  Select **Pan Mode** (![Pan Mode.](../media/pan-mode-icon.msft.png)) to move along the X and Y axes.
 
-*   Select **Rotate Mode** (![Rotate Mode.](../media/rotate-mode-icon.msft.png)) to rotate along the Z axis.
+*  Select **Rotate Mode** (![Rotate Mode.](../media/rotate-mode-icon.msft.png)) to rotate along the Z axis.
 
-*   Select **Reset Transform** (![Reset Transform.](../media/reset-transform-icon.msft.png)) to reset the diagram to the original position.
+*  Select **Reset Transform** (![Reset Transform.](../media/reset-transform-icon.msft.png)) to reset the diagram to the original position.
 
 ### View paint profiler
 
@@ -466,9 +473,9 @@ Use the features of the **Rendering** panel to help visualize the rendering perf
 
 To open the **Rendering** tool:
 
-1.  [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
+1. [Open the Command Menu](../command-menu/index.md#open-the-command-menu).
 
-1.  Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
+1. Start typing `Rendering` and select `Show Rendering`.  DevTools displays the **Rendering** tool at the bottom of your DevTools window.
 
 :::image type="content" source="../media/evaluate-performance-console-drawer-rendering.msft.png" alt-text="The Rendering tool." lightbox="../media/evaluate-performance-console-drawer-rendering.msft.png":::
 
@@ -476,9 +483,9 @@ To open the **Rendering** tool:
 
 The **FPS meter** is an overlay that appears in the top-right corner of your viewport.  It provides a realtime estimate of FPS as the page runs.  To open the **FPS meter**:
 
-1.  Open the **Rendering** tool.  [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool).
+1. Open the **Rendering** tool.  [Analyze rendering performance with the Rendering tool](#analyze-rendering-performance-with-the-rendering-tool).
 
-1.  Select the **FPS Meter** checkbox.
+1. Select the **FPS Meter** checkbox.
 
 :::image type="content" source="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png" alt-text="The FPS meter." lightbox="../media/evaluate-performance-jank-console-rendering-frame-rate.msft.png":::
 

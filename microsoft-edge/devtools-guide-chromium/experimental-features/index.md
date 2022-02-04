@@ -65,19 +65,19 @@ Experimental features are constantly being updated and might cause performance i
 
 To turn an experiment on or off in Microsoft Edge:
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
+1. Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
 
-1.  On the left side of the **Settings** pane, click the **Experiments** section.
+1. On the left side of the **Settings** pane, click the **Experiments** section.
 
-    :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings." lightbox="../media/experiments-devtools.msft.png":::
+   :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings." lightbox="../media/experiments-devtools.msft.png":::
 
-1.  On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
+1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1.  Click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
+1. Click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
-1.  Click the **Reload DevTools** button.
+1. Click the **Reload DevTools** button.
 
 
 <!-- ====================================================================== -->
@@ -85,11 +85,11 @@ To turn an experiment on or off in Microsoft Edge:
 
 To restore the default settings for which experimental features are turned on:
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Preferences**.
+1. Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Preferences**.
 
-1.  Click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
+1. Click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -99,13 +99,13 @@ To restore the default settings for which experimental features are turned on:
 
 You can filter the experimental features by text included in the title.
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Experiments**.
+1. Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Experiments**.
 
-1.  Click in the **Filter** text box and enter text, such as **timeline**.  As you type, only the matching checkboxes are shown in the **Experiments** page.
+1. Click in the **Filter** text box and enter text, such as **timeline**.  As you type, only the matching checkboxes are shown in the **Experiments** page.
 
-1.  To end filtering, clear the **Filter** text box.
+1. To end filtering, clear the **Filter** text box.
 
 
 <!-- ====================================================================== -->
@@ -160,19 +160,19 @@ DevTools communicates with the inspected page using the DevTools protocol.
 
 To monitor the messages sent and received by DevTools to debug the inspected page:
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  In DevTools, select **Settings** > **Experiments**.
+1. In DevTools, select **Settings** > **Experiments**.
 
-1.  Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) to close **Settings**.
+1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) to close **Settings**.
 
-1.  Open the **Command Menu** (`Control`+`Shift`+`P`), and then type **protocol** in the text box.
+1. Open the **Command Menu** (`Control`+`Shift`+`P`), and then type **protocol** in the text box.
 
-1.  Select **Show Protocol monitor**.  The message appears: "One or more settings have changed which requires a reload to take effect."
+1. Select **Show Protocol monitor**.  The message appears: "One or more settings have changed which requires a reload to take effect."
 
-1.  Click the **Reload DevTools** button that appears next to the message.
+1. Click the **Reload DevTools** button that appears next to the message.
 
-1.  The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.
+1. The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.
 
 
 <!-- ====================================================================== -->
@@ -204,15 +204,15 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 To use the **Source Order Viewer**:
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Open the **Elements** tool.
+1. Open the **Elements** tool.
 
-1.  To the right of the **Styles** tab, click the **Accessibility** tab.
+1. To the right of the **Styles** tab, click the **Accessibility** tab.
 
-1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
+1. Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
 
-1.  Highlight any HTML element to display an overlay of the order in the webpage source.
+1. Highlight any HTML element to display an overlay of the order in the webpage source.
 
 :::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane." lightbox="../media/experiments-source-order-viewer.msft.png":::
 
@@ -265,26 +265,24 @@ For more information, see [Emulation: Support dual screen mode](../device-mode/d
 
 You can now use the new visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
-*   Switch between units for different font properties
-*   Switch between keywords for different font properties
-*   Convert units
-*   Generate accurate CSS code
+*  Switch between units for different font properties
+*  Switch between keywords for different font properties
+*  Convert units
+*  Generate accurate CSS code
 
 To use the new visual **Font Editor**:
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Open the **Elements** tool.
+1. Open the **Elements** tool.
 
-1.  Open the **Styles** pane.
+1. Open the **Styles** pane.
 
-1.  Select the **Font Editor** icon.
+1. Select the **Font Editor** icon.
 
 For more information about the new visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
-:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted." lightbox="../media/font-editor-open.msft.png":::
-   The visual **Font Editor** pane is highlighted
-:::image-end:::
+:::image type="content" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted." lightbox="../media/font-editor-open.msft.png":::
 
 For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
@@ -322,12 +320,12 @@ Use the Reporting API to catch certain errors such as security violations or dep
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
 
-*   Accessibility
-*   Cross-browser compatibility
-*   Security
-*   Performance
-*   Progressive Web Apps (PWAs)
-*   Other common web development issues
+*  Accessibility
+*  Cross-browser compatibility
+*  Security
+*  Performance
+*  Progressive Web Apps (PWAs)
+*  Other common web development issues
 
 The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
@@ -353,15 +351,15 @@ This feature helps you debug without switching contexts as often. Reducing conte
 
 To use **Composited Layers**:
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Press `Esc` to display the **Drawer**.
+1. Press `Esc` to display the **Drawer**.
 
-1.  On the **Drawer**, select the **3D View** tool.
+1. On the **Drawer**, select the **3D View** tool.
 
-1.  Open the **Composited Layers** pane.
+1. Open the **Composited Layers** pane.
 
-1.  All of the painted layers of the app are displayed.  Try this feature with your own web apps.
+1. All of the painted layers of the app are displayed.  Try this feature with your own web apps.
 
 :::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane." lightbox="../media/experiments-layers.msft.png":::
 
@@ -378,15 +376,15 @@ See also [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/i
 
 To use the **Network Console**:
 
-1.  [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
 
-1.  Open the **Network** pane.
+1. Open the **Network** pane.
 
-1.  Right-click the network request that you want to change and resend, and then select **Edit and Replay**.
+1. Right-click the network request that you want to change and resend, and then select **Edit and Replay**.
 
-1.  In the **Network Console**, edit the network request information.
+1. In the **Network Console**, edit the network request information.
 
-1.  Click **Send**.
+1. Click **Send**.
 
 :::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer." lightbox="../media/network-network-console.msft.png":::
 
@@ -521,10 +519,10 @@ The Welcome tab was an experiment starting with Microsoft Edge version 89. It is
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.
 
-*   Links to developer docs
-*   Latest features
-*   Release notes
-*   Option to contact the Microsoft Edge DevTools team
+*  Links to developer docs
+*  Latest features
+*  Release notes
+*  Option to contact the Microsoft Edge DevTools team
 
 The **Welcome** tool opens automatically after each update to Microsoft Edge.  To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
 
@@ -538,20 +536,20 @@ This feature provides many new visualizations to help you debug CSS Flexbox layo
 
 #### Displaying persistent overlays on Flexbox layouts with the Inspect tool
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect.](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
+The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect.](../media/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
 
 :::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool." lightbox="../media/flexbox-hover.msft.png":::
 
 #### Displaying persistent overlays on Flexbox layouts
 
 In Microsoft Edge version 89 or later, the CSS Flexbox feature offers the option to turn on persistent overlays on Flexbox layouts.  Persistent overlays provide the following benefits:
-*   Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of DevTools.
-*   Multiple persistent overlays can be used at the same time, to allow you to review several Flexbox layouts at once.
-*   Persistent overlays offer color configuration options.
+*  Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of DevTools.
+*  Multiple persistent overlays can be used at the same time, to allow you to review several Flexbox layouts at once.
+*  Persistent overlays offer color configuration options.
 
 To toggle persistent overlays on Flexbox layout, do either of the following:
-*   Select the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.
-*   Open the new **Layout** panel located in the **Elements** tool, and select the checkbox next to each Flexbox container you want to highlight.
+*  Select the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.
+*  Open the new **Layout** panel located in the **Elements** tool, and select the checkbox next to each Flexbox container you want to highlight.
 
 :::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools." lightbox="../media/flexbox-overlay.msft.png":::
 

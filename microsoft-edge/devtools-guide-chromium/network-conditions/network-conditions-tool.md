@@ -42,7 +42,7 @@ See:
 <!-- ====================================================================== -->
 ## Set Content-Encodings, such as deflate, gzip, and br
 
-See [Enable text compression](../speed/get-started.md#enable-text-compression) in _Optimize website speed_.
+See [Enable text compression](../speed/get-started.md#enable-text-compression) in _Optimize website speed using Lighthouse_.
 
 
 <!-- ====================================================================== -->

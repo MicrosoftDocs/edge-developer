@@ -30,7 +30,7 @@ In Microsoft Edge and Chrome, sites can differentiate between users on Windows 1
 | `Sec-CH-UA-Platform` | `Windows` | `Windows` |
 | `Sec-CH-UA-Platform-Version` | values between `1.0.0` and `10.0.0` | `13.0.0` and above |
 
-User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10.  We don't recommend using User-Agent strings to retrieve user agent data.  Browsers that do not support User-Agent Client Hints will not be able to differentiate between Windows 11 and Windows 10.
+User-Agent strings won't be updated to differentiate between Windows 11 and Windows 10.  We don't recommend using User-Agent strings to retrieve user agent data.  Browsers that don't support User-Agent Client Hints won't be able to differentiate between Windows 11 and Windows 10.
 
 
 <!-- ====================================================================== -->

@@ -12,7 +12,6 @@ ms.date: 08/19/2021
 > [!NOTE]
 > The Microsoft Edge Add-ons API is currently in private preview.  The **Publish API** page is present at Partner Center only for participants of the private preview.  The Microsoft Edge Add-ons API is under active development, and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive, and are subject to change.
 
-<!-- shortened title ok in mid-sentence link -->
 This article, along with the [Microsoft Edge Add-ons API Reference](addons-api-reference.md), provides an overview of the proposed Microsoft Edge Add-ons API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback as an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
 The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
@@ -47,11 +46,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
    :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL." lightbox="../../media/create-api-credentials-button.png":::
 
-   <!-- make window smaller before capture.  make fresh capture.  save .png in present repo as ../media/create-api-credentials-button.png, replacing path in parens -->
-
    The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret**, **Expiry date**, and **Access token URL** are now displayed on the Publish APIs page.
-
-   <!-- possibly add a screenshot here, with fake data with the correct number of characters, or value strings blurred out or erased -->
 
 1. Write down the **Client ID**, **Client secret** and the **Access token URL**.  You'll use these values in the next step, to get an access token.
 
@@ -98,7 +93,7 @@ https://login.microsoftonline.com/5c9eedce-81bc-42f3-8823-48ba6258b391/oauth2/v2
 }
 ```
 
-For more information, navigate to [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token).
+For more information, see [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token).
 
 
 <!-- ====================================================================== -->
