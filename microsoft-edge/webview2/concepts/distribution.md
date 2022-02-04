@@ -298,7 +298,7 @@ To use the Fixed Version distribution mode:
         ```xml
         <ItemGroup>
           <Content Include="FixedRuntime\(version number)\\**\*.*">
-            <CopyToOutputDirectory>PreserveNewest<CopyToOutputDirectory>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
           </Content>
         </ItemGroup>
         ```
