@@ -112,13 +112,13 @@ To learn more about the valid members in `web-app-origin-association`, see the [
 <!-- ====================================================================== -->
 ## Testing URL handling
 
-Testing your app's URL handling from a web browser won't work since in-browser page navigation does not trigger URL handling at the OS level.
+Testing your app's URL handling from a web browser won't work, since in-browser page navigation doesn't trigger URL handling at the OS level.
 
 To test the feature, send yourself a URL in a chat message app, or a desktop email client like Windows Mail. You can also use the Windows Run app:
 
-*  Press `Windows logo key` + `R`.
-*  Enter a URL your app handles.
-*  Press `Enter`.
+1. Press `Windows logo key`+`R`.
+1. Enter a URL that your app handles.
+1. Press `Enter`.
 
 > [!NOTE]
 > At the moment, only PWAs that were installed from the default system browser can handle URLs.

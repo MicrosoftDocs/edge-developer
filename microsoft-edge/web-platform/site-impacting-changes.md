@@ -13,7 +13,7 @@ The web platform is a collection of technologies used for building webpages.  Th
 
 For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes.  The Microsoft Edge team decides if the change benefits browser users.
 
-Feature areas where Microsoft Edge plans to deviate from Chromium in release timing or behavior are noted in the following table.  This table also highlights high-impact changes that the Microsoft Edge team is tracking.
+Feature areas where Microsoft Edge plans to deviate from Chromium in release timing or behavior aren'ted in the following table.  This table also highlights high-impact changes that the Microsoft Edge team is tracking.
 
 Review this article often.  The Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
 

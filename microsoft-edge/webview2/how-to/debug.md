@@ -40,7 +40,8 @@ See [DevTools overview](../index.md).
 Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available, as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
 
 > [!IMPORTANT]
-> When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid this, press `Ctrl`+`Shift`+`I`, or right-click.<!-- clarify what to right-click -->
+> When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`, or right-click.
+
 
 Before you begin, make sure the following requirements are met:
 
@@ -49,6 +50,7 @@ Before you begin, make sure the following requirements are met:
 *  You cannot attach a debugger to a running WebView2 process.
 
 *  Install Visual Studio 2019 version 16.4 Preview 2 or later.
+
 
 Install and set up the script debugger tools in Visual Studio:
 
@@ -60,7 +62,7 @@ Install and set up the script debugger tools in Visual Studio:
 
    1. In the Visual Studio Installer, on the installed version, click the **More** button, and then select **Modify**.
 
-   1. In Visual Studio, under **Workloads**, select the **Desktop Development in C++** setting.
+   1. In Visual Studio, under **Workloads**, select the **Desktop Development with C++** setting:
 
       :::image type="content" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen." lightbox="./media/workloads.png":::
 
@@ -84,7 +86,8 @@ Install and set up the script debugger tools in Visual Studio:
 
       :::image type="content" source="./media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
 
-To debug a WebView2 app:
+
+To debug your WebView2 app:
 
 1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
@@ -129,7 +132,9 @@ In Visual Studio Code, complete the following actions to debug your code.
     ```
 
     > [!NOTE]
-    > Visual Studio Code source path mapping now requires the URL, so your app now receives a command-line parameter when it starts.  You may safely ignore the `url` parameter if needed.
+    > Visual Studio Code source path mapping now requires the URL, so your app now receives a command-line parameter when it starts.  You can safely ignore the `url` parameter, if needed.
+
+
 
 1. To set a breakpoint in your source code, click a line of code and then press `F9`:
 
@@ -149,9 +154,9 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 **Advanced Settings**:
 
-*   Targeted Webview debugging.
+*  Targeted Webview debugging.
 
-   In some WebView2 apps, you may use more than one WebView2 control. To pick the WebView2 control to debug in this situation you can use targeted webview2 debugging
+   In some WebView2 apps, you might use more than one WebView2 control.  To pick which WebView2 control to debug in this situation, you can use targeted WebView2 debugging.
 
    Open `launch.json` and complete the following actions to use targeted Webview debugging.
 
@@ -164,20 +169,19 @@ In Visual Studio Code, complete the following actions to debug your code.
    "urlFilter": "*index.ts",
 
    // Other urlFilter options.
-
    urlFilter="*index.ts"    // Match any url that ends with index.ts, and ignore all leading characters.
    urlFilter="*index*"      // Match any url that contains the string index anywhere in the URL.
    urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.
    ```
 
-   When debugging your app, you may need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
+   When debugging your app, you might need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
 
    > [!IMPORTANT]
    > After the first match is found in the URL, the debugger stops.  You cannot debug two WebView2 controls at the same time because the CDP port is shared by all WebView2 controls, and uses a single port number.
 
 *  Debug running processes
 
-   You may need to attach the debugger to running WebView2 processes. To do that, in `launch.json`, update the `request` parameter to `attach`.
+   You might need to attach the debugger to running WebView2 processes.  To do that, in `launch.json`, update the `request` parameter, changing its value to `attach`:
 
    ```json
       "name": "Hello debugging world",

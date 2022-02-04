@@ -23,21 +23,21 @@ To start building a WebView2 app, see [Get started with WebView2](get-started/ge
 <!-- ====================================================================== -->
 ## Hybrid app approach
 
-Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power.
+Developers must often decide between building a web app or a native app.  This decision hinges on the tradeoff between reach and power:
 
 *  Web apps allow for a broad reach.  As a Web developer, you can reuse most of your code across different platforms.
 
-*  To access all the capabilities of a native platform, use a native app.
+*  To access all the powerful capabilities of a native platform, use a native app.
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
+
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](media/webview2/web-native.png)
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
 *  In the middle are hybrid apps, such as WebViews and Electron.
 
 *  Maximum **power** is native apps.
-
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](media/webview2/web-native.png)
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 

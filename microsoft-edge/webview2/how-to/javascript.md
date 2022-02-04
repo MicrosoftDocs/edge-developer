@@ -132,7 +132,9 @@ To begin, explore the current functionality of the right-click menu:
 
    :::image type="content" source="./media/context-menu.png" alt-text="The right-click menu, showing the default commands." lightbox="./media/context-menu.png":::
 
-1. Now add code to remove the right-click menu functionality from the WebView2 control.  Paste the following code into `InitializeAsync()` in `MainWindow.xaml.cs`.
+   Next, add code to remove the right-click menu functionality from the WebView2 control.
+
+1. Paste the following code into `InitializeAsync()` in `MainWindow.xaml.cs`:
 
    ```csharp
    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");

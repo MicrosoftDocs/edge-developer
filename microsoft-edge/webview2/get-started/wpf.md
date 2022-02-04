@@ -22,7 +22,7 @@ Install the following list of prerequisites before proceeding.
 
 1. [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2), or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on a supported operating system (OS). The currently supported OS list is Windows 11, Windows 10, Windows 8.1, and Windows 7.
 
-   The WebView2 team recommends using the Canary channel, and the minimum required version is 82.0.488.0.
+   The WebView2 team recommends using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
 
 
 <!-- ====================================================================== -->
@@ -32,39 +32,43 @@ Start with a basic desktop project that contains a single main window.
 
 1. Open Microsoft Visual Studio. 
 
-1. In the opening panel click **Create new project**, or in the application click **File** > **New** > **Project**.
+1. In the opening panel click **Create new project**.  Or, in the main Visual Studio window, select **File** > **New** > **Project**.
 
-1. Search for WPF App.
+1. Search for `WPF App`.
  
-1. Click the **WPF App (.NET Core)** or **WPF App (.NET Framework)** card.
+   The **Create a new project** panel shows filtered results for `WPF App` search results.
 
-   The **Create a new project** panel displays WPF app search results. The highlighted button is <!-- add bold ui formatting--> WPF app .NET core Windows Presentation Foundation client application for C#, XAML, Windows, and desktop. The dialog box displays a **Next** button.
+1. Click either the **WPF App (.NET Core)** card (shown first below) or the **WPF App (.NET Framework)** card (shown second below), and then click **Next**:
 
-   :::image type="content" source="./media/wpf-getting-started-wpf-core.png" alt-text="The 'Create a new project' panel displays WPF app search results including WPF Core card.":::
+   The highlighted card in the following image is **WPF Application: .NET Core WPF Application**:
+    
+   ![The 'Create a new project' panel with the card selected, 'WPF Application: .NET Core WPF Application'.](media/wpf-getting-started-wpf-core.png)
 
-   The **Create a new project** panel displays WPF app search results.  The highlighted button is <!-- todo: add bold ui formatting--> WPF app .NET core Windows Presentation Foundation client application for C#, Windows, and desktop.  The dialog box displays a **Next** button.
+   Alternatively, the highlighted card in the following image is **WPF App (.NET Framework): Windows Presentation Foundation client application**:
 
-   :::image type="content" source="./media/wpf-getting-started-wpf-fw.png" alt-text="Create a new project panel displays WPF app search results including WPF Framework card.":::
+   ![The 'Create a new project' panel with the card selected, 'WPF App (.NET Framework): Windows Presentation Foundation client application'.](media/wpf-getting-started-wpf-fw.png)
 
-1. For **WPF App (.NET Core)** enter values for **Project name** and **Location**, then click **Next**.
+   The **Configure your new project** WPF application dialog box appears.
 
-   The **Configure your new project** WPF application dialog box displays <!-- todo: add bold ui formatting--> project name, location, and solution name text boxes. The dialog box displays <!-- todo: add bold ui formatting--> back and next buttons.
+   ![The 'Configure your new project' WPF application dialog box.](media/wpf-getting-started-create-core.png)
 
-   :::image type="content" source="./media/wpf-getting-started-create-core.png" alt-text="Configure your new project WPF application dialog box displays project name, location, and solution name text boxes.":::
-      
-   1. Select **.NET Core 3.1** or later.
+1.  Enter values for **Project name** and **Location**, and then click **Next**.
 
-      The **Additional information** dialog box displays a dropdown menu to select the target framework.  Choices are .NET core 3.0, 3.1. and 5.0.  The dialog displays **Back** and **Create** buttons.<!-- todo: add bold ui formatting, check UI strings -->
+   The **Additional information** dialog box appears, with a **Target Framework** dropdown list.  Choices are **.NET Core 3.0**, **3.1**, and **5.0**:
 
-      :::image type="content" source="./media/wpf-getting-started-create-core-add-info.png" alt-text="The 'Additional information' dialog displays a drop-down menu for target framework.":::
+   ![The 'Additional information' dialog with a drop-down menu for target framework.](media/wpf-getting-started-create-core-add-info.png)
 
-1. For **WPF App (.NET Framework)** enter values for **Project name** and **Location**, then choose **.NET Framework 4.6.2** or later.
- 
-   The configure your new project WPF app .NET framework dialog box displays <!-- todo: add bold ui formatting, check UI strings -->project name, location, and solution name text boxes.  The framework drop-down menu displays .NET framework versions including 4.6.1 and 4.7.2. The dialog box displays **Back** and **Create** buttons.
+1. Select **.NET Core 3.1**, or later (not **3.0**).  Then click **Next**.
 
-   :::image type="content" source="./media/wpf-getting-started-create-fw.png" alt-text="Configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes.":::
+   The **Configure your new project** dialog box appears, for **WPF App (.NET framework)**:
 
-1. Click **Create** to continue.
+   ![Configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes.](media/wpf-getting-started-create-fw.png)
+
+1. Enter values for **Project name** and **Location**.
+
+1. In the Framework dropdown list, select **.NET Framework 4.6.2** or later.
+
+1. Click the **Create** button.
 
    Visual Studio creates the project.
 
@@ -78,23 +82,23 @@ Use NuGet to add the WebView2 SDK to the project.
 
    :::image type="content" source="./media/wpf-getting-started-mng-nuget-reduced.png" alt-text="The 'Manage NuGet packages' command on the right-click menu.":::
 
-1. Click **Browse**. In the search bar, type `Microsoft.Web.WebView2`, then choose **Microsoft.Web.WebView2**.
+1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** card.
 
    The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** card.  The dialog box has a version number and **Install** button.
    
    :::image type="content" source="./media/install-nuget.png" alt-text="NuGet package manager dialog box displays the Microsoft.Web.WebView2 card." lightbox="./media/install-nuget.png":::
 
-1. Accept the default version and then click **Install**.
+1. Accept the default version, and then click the **Install** button.
 
-1. In the Preview Changes dialog box, click **OK**.
+1. In the **Preview Changes** dialog box, click **OK**.
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** to save the project.
 
 1. Press **F5** to build and run the project.
 
-The running project displays an empty window.  This verifies that WebView2 is installed and working, but has nothing to display:
+   The project runs, and displays an empty window.  This verifies that WebView2 is installed and working, although WebView2 has no content to display yet:
 
-:::image type="content" source="./media/winforms-empty-app.png" alt-text="Empty app window." lightbox="./media/winforms-empty-app.png":::
+   :::image type="content" source="./media/winforms-empty-app.png" alt-text="Empty app window." lightbox="./media/winforms-empty-app.png":::
 
 
 <!-- ====================================================================== -->
@@ -139,7 +143,7 @@ Add a WebView2 control to your app.
    </DockPanel>
    ```
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** to save the project.
 
 1. Press **F5** to build and run the project.
 
@@ -223,7 +227,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
    }
    ```
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** to save the project.
 
 1. Press **F5** to build and run the project.
 
@@ -233,9 +237,9 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
    Make sure you enter a complete URL in the address bar.  The app generates an `ArgumentException` if the URL doesn't start with `http://` or `https://`.
 
-The sample app displays the Bing website with the URL `https://www.bing.com` in the address bar:
+   The sample app displays the Bing website with the URL `https://www.bing.com` in the address bar:
 
-:::image type="content" source="./media/wpf-getting-started-bing.png" alt-text="The app displays the Bing website.":::
+   :::image type="content" source="./media/wpf-getting-started-bing.png" alt-text="The app displays the Bing website.":::
 
 
 <!-- ====================================================================== -->
@@ -243,59 +247,76 @@ The sample app displays the Bing website with the URL `https://www.bing.com` in 
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events:
 
-*   `NavigationStarting`
-*   `SourceChanged`
-*   `ContentLoading`
-*   `HistoryChanged`
-*   `NavigationCompleted`
+*  `NavigationStarting`
+*  `SourceChanged`
+*  `ContentLoading`
+*  `HistoryChanged`
+*  `NavigationCompleted`
 
-For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
+![Navigation events, from new document, to navigation starting, through navigation completed.](../media/navigation-events.png)
 
-Navigation events starting with a new document.  The failure path proceeds directly from navigation starting, to navigation completed.  A successful path includes the following:
+The above diagram shows the event sequence.  Navigation events start with a new document.
+
+### Success path
+
+A successful path includes the full sequence of events:
 1. Navigation starting.
 1. Source changed, with possible input from the same document.
 1. Content loading.
 1. History changes.
 1. Navigation completed.
 
-:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events, from new document, to navigation starting, through navigation completed.":::
+For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
 
-When an error occurs, the following events are raised and may depend on navigation to an error webpage:
+
+### Failure path
+
+If theres a failure, the failure path proceeds directly from navigation starting, to navigation completed, skipping the intervening events.
+
+When an error occurs, the following events are raised, and may depend on navigation to an error webpage:
 
 * `SourceChanged`
 * `ContentLoading`
 * `HistoryChanged`
 
+
+### Redirection
+
 If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
-To demonstrate how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests.
 
-In the `MainWindow.xaml.cs` file, modify the constructor to match the following code and add the `EnsureHttps` function:
+### Example demonstrating navigation events
 
-```csharp
-public MainWindow()
-{
-    InitializeComponent();
-    webView.NavigationStarting += EnsureHttps;
-}
+To demonstrate how to use the events, register a handler for `NavigationStarting` that cancels any non-HTTPS requests, as follows.
 
-void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
-{
-    String uri = args.Uri;
-    if (!uri.StartsWith("https://"))
+1. In the `MainWindow.xaml.cs` file, modify the constructor to match the top part of the following code.  Below the constructor, add the `EnsureHttps` function:
+
+    ```csharp
+    public MainWindow()
     {
-        args.Cancel = true;
+        InitializeComponent();
+        webView.NavigationStarting += EnsureHttps;
     }
-}
-```
+    
+    void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
+    {
+        String uri = args.Uri;
+        if (!uri.StartsWith("https://"))
+        {
+            args.Cancel = true;
+        }
+    }
+    ```
+    
+   In the constructor, `EnsureHttps` is registered as the event handler on the `NavigationStarting` event on the WebView2 control.
 
-In the constructor, `EnsureHttps` is registered as the event handler on the `NavigationStarting` event on the WebView2 control.
-
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** to save the project.
 
 1. Press **F5** to build and run the project.
 
-1. Attempt to open an HTTP site.  Make sure the WebView2 control remains unchanged.  However, the WebView2 control does allow you to open HTTPS sites.
+1. Attempt to open an HTTP site.  Make sure the WebView2 control remains unchanged.<!--clarify, blocks site?  what happens in UI?-->
+
+1. Attempt to open an HTTPS site.  The WebView2 control allows you to open HTTPS sites.
 
 
 <!-- ====================================================================== -->
@@ -324,7 +345,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
    }
    ```
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** to save the project.
 
 1. Press **F5** to build and run the project.
 
@@ -396,7 +417,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
    }
    ```
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** to save the project.
 
 1. Press **F5** to build and run the project.
 

@@ -12,7 +12,7 @@ See [Microsoft Open Source Code of Conduct](CODE_OF_CONDUCT.md).
 
 Microsoft and any contributors grant you a license to the Microsoft documentation and other content in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode) (see [LICENSE](./LICENSE)), and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT) (see [LICENSE-CODE](./LICENSE-CODE)).
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.  The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.  Microsoft general trademark guidelines can be found at [https://go.microsoft.com/fwlink/?LinkID=254653](https://go.microsoft.com/fwlink/?LinkID=254653).
+Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.  The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.  Microsoft general trademark guidelines can be found at [Microsoft Trademark and Brand Guidelines](https://go.microsoft.com/fwlink/?LinkID=254653).
 
 Privacy information can be found at [https://privacy.microsoft.com](https://privacy.microsoft.com).
 
@@ -22,7 +22,7 @@ Microsoft and any contributors reserve all others rights, whether under their re
 <!-- ====================================================================== -->
 ## Contributing
 
-This repo, `edge-developer`, is the repository for the source Markdown files for the Microsoft Edge Developer documentation.  The resulting rendered documentation is hosted at [Microsoft Edge documentation](https://docs.microsoft.com/microsoft-edge/developer/).  This repo also includes the hub page for the Microsoft Edge Enterprise documentation and the Microsoft Edge Developer documentation.  The source files for the Microsoft Edge Enterprise documentation are not in this repo, but are in the [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) repo.
+This repo, `edge-developer`, is the repository for the source Markdown files for the Microsoft Edge Developer documentation.  The resulting rendered documentation is hosted at [Microsoft Edge documentation](https://docs.microsoft.com/microsoft-edge/developer/).  This repo also includes the hub page for the Microsoft Edge Enterprise documentation and the Microsoft Edge Developer documentation.  The source files for the Microsoft Edge Enterprise documentation aren't in this repo, but are in the [Edge-Enterprise](https://github.com/MicrosoftDocs/Edge-Enterprise) repo.
 
 If you want to include new coverage or have feedback, consider [contributing](CONTRIBUTING.md).  You can edit the existing content, add new content, or report new [issues](https://github.com/MicrosoftDocs/edge-developer/issues).  The Microsoft Edge team reviews a look at your suggestions and works to incorporate the suggestions into the docs.
 
@@ -30,9 +30,11 @@ Find the data for the [Status](https://developer.microsoft.com/microsoft-edge/st
 
 ### File names and directories
 
-*   When adding a webpage (an article implemented as a .md file), you must add an entry for the new webpage in [toc.yml](./microsoft-edge/toc.yml), for the article to appear in the Table of Contents.
-*   A directory can contain more directories or `readme.md` files.
-*   Folder/directory names are dash-separated (for example, `f12-tools`) and lowercase.  Directories are used in URLs on the `docs.microsoft.com` site.  Avoid using underscores, PascalCase, or camelCase.
+*  When adding a webpage (an article implemented as a .md file), you must add an entry for the new webpage in [toc.yml](./microsoft-edge/toc.yml), for the article to appear in the Table of Contents.
+
+*  A directory can contain more directories or `readme.md` files.
+
+*  Folder/directory names are dash-separated (for example, `f12-tools`) and lowercase.  Directories are used in URLs on the `docs.microsoft.com` site.  Avoid using underscores, PascalCase, or camelCase.
 
 
 <!-- ====================================================================== -->
@@ -40,23 +42,23 @@ Find the data for the [Status](https://developer.microsoft.com/microsoft-edge/st
 
 This repo uses simple Markdown tagging that's standard for docs.microsoft.com per the _Docs Contributor Guide_.
 
-*  [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) - in _Docs Contributor Guide_.
-*  [Writing on GitHub](https://docs.github.com/en/github/writing-on-github) - GitHub Flavored Markdown, in _GitHub Docs_.
+* [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) - in _Docs Contributor Guide_.
+* [Writing on GitHub](https://docs.github.com/en/github/writing-on-github) - GitHub Flavored Markdown, in _GitHub Docs_.
 
 
 ### Lists
 
 These other text elements have styling available:
 
-*   Unordered lists
-*   Have regular bullets
-    *   You can also nest bullets.
-    *   Bullets lists should have more than one entry.
-*   Standard arrangement
+*  Unordered lists
+*  Have regular bullets
+   *  You can also nest bullets.
+   *  Bullets lists should have more than one entry.
+*  Standard arrangement
 
-1.  Ordered lists.
-1.  Use regular western-style numbering.
-1.  Should be used only when a list truly has order.
+1. Ordered lists.
+1. Use regular western-style numbering.
+1. Should be used only when a list truly has order.
 
 See [Lists (Numbered, Bulleted, Checklist)](https://docs.microsoft.com/en-us/contribute/markdown-reference#lists-numbered-bulleted-checklist) in the _Docs Contributor Guide_.
 
@@ -166,4 +168,6 @@ See [Images](https://docs.microsoft.com/en-us/contribute/markdown-reference#imag
 
 ### Horizontal rules (divider lines)
 
-To create a horizontal rule, use three hyphens alone on a line; `---`.  Use horizontal rules sparingly.  Avoid using a horizontal rule immediately above or below a heading; some headings already use line styles for visual hierarchy.
+To create a horizontal rule, use three hyphens alone on a line; `---`.  In this repo, these are rarely used; they are used between API function sections.
+
+An equivalent Markdown tagging of `* * *` is used in a few files in this repo to demarcate the end of a set of tabs, to produce documentation for one programming language per tab.

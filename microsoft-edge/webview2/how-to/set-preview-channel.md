@@ -17,7 +17,9 @@ When you test a prerelease SDK package, you need to direct your application to u
 The WebView2 Runtime doesn't have the latest experimental WebView2 APIs.  For your WebView2 code to run when using experimental APIs in a prerelease SDK, your client (on a development machine) needs to have a Microsoft Edge preview channel.  The Canary preview channel is recommended, because it is ahead of the other channels and has the latest experimental APIs.
 
 The prerelease SDK works together with a preview channel as follows:
+
 *  A prerelease version of the WebView2 SDK contains the method signatures for experimental APIs, which allow you to write code using the experimental WebView2 APIs in your app.
+
 *  The preview channels of Microsoft Edge contain the Microsoft Edge binaries that are needed to run and render your app, including the implementation of the experimental APIs.
 
 For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, see [Understand WebView2 SDK versions](../concepts/versioning.md).
@@ -254,4 +256,4 @@ If you use the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable, you c
 
 ### Applying the new environment variable to running processes
 
-After setting an environment variable, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio or log out of Windows and then log in again.
+After setting an environment variable, the environment variable is applied to any new processes that are created.  The environment variable doesn't apply to processes which are already running.  To ensure that all processes use the new environment variable, you may need to restart Visual Studio, or log out of Windows and then log in again.

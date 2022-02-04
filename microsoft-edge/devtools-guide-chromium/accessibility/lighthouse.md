@@ -25,42 +25,37 @@ ms.date: 06/07/2021
 
 You can use Lighthouse from within DevTools to audit the accessibility of a page and generate a report. You can use the Lighthouse tool to determine:
 
-*   Whether a page is properly marked up for screen readers.
-*   Whether the text elements on a page have sufficient contrast ratios using the Color Picker. For more information, navigate to [Test text-color contrast using the Color Picker](color-picker.md).
+*  Whether a page is properly marked up for screen readers.
 
-> [!NOTE]
-> The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
+*  Whether the text elements on a page have sufficient contrast ratios using the Color Picker. See [Test text-color contrast using the Color Picker](color-picker.md).
 
-To audit a page using the Lighthouse tool, perform the following steps.
+The **Lighthouse** tool provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data that may be collected.
 
-1.  Navigate to the URL that you want to audit.
-1.  In DevTools, select the **Lighthouse** tool.  Configuration options are displayed.
+To audit a page using the Lighthouse tool:
 
-    :::image type="complex" source="../media/accessibility-lighthouse.msft.png" alt-text="Lighthouse configuration options." lightbox="../media/accessibility-lighthouse.msft.png":::
-       Lighthouse configuration options
-    :::image-end:::
+1. Go to the URL that you want to audit.
 
-1.  For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
-1.  In the **Categories** section, select **Accessibility**.
-1.  Select **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page.
+1. In DevTools, select the **Lighthouse** tool.  Configuration options are displayed:
 
-    :::image type="complex" source="../media/accessibility-lighthouse-result.msft.png" alt-text="A Lighthouse report for the Accessibility category." lightbox="../media/accessibility-lighthouse-result.msft.png":::
-       A Lighthouse report for the **Accessibility** category
-    :::image-end:::
+   :::image type="content" source="../media/accessibility-lighthouse.msft.png" alt-text="Lighthouse configuration options." lightbox="../media/accessibility-lighthouse.msft.png":::
 
-1.  Select an item in the report to learn more about it.
+1. For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
 
-    :::image type="complex" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="An expanded issue in a Lighthouse report." lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
-       An expanded issue in a Lighthouse report
-    :::image-end:::
+1. In the **Categories** section, select **Accessibility**.
 
-1.  Select the **Learn more** link to view the documentation of the issue.
+1. Click **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page:
 
-    :::image type="complex" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an issue." lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
-       View the documentation of an issue
-    :::image-end:::
+   :::image type="content" source="../media/accessibility-lighthouse-result.msft.png" alt-text="A Lighthouse report for the Accessibility category." lightbox="../media/accessibility-lighthouse-result.msft.png":::
 
-1.  To return to the configuration options, in DevTools, select **Perform an audit** (`+`).
+1. Select an item in the report to learn more about it.
+
+   :::image type="content" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="An expanded issue in a Lighthouse report." lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
+
+1. Click the **Learn more** link to view the documentation of the issue:
+
+   :::image type="content" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an issue." lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+
+1. To return to the configuration options, in DevTools, click **Perform an audit** (`+`).
 
 
 <!-- ====================================================================== -->

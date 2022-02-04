@@ -80,7 +80,7 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 <!-- ====================================================================== -->
 ## Step 3 - Create a UWP app
 
-1. In Visual Studio, click **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog opens.
+1. In Visual Studio, select **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box opens.
 
 1. On the **All languages** dropdown list, click **C#**.
 
@@ -98,23 +98,21 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
    The **Configure your new project** dialog appears, for a **Blank App (Universal Windows)**.
 
-1. In the **Project name** text box, enter a project name such as `UWPSampleProject`.
-
-   The **Configure your new project** dialog box displays text boxes for a Blank App (Universal Windows).  Text boxes displayed are project name, <!--bold UI tagging?--> location, solution, and solution name.
-
    :::image type="content" source="media/winui2-getting-started-config-new-project.png" alt-text="The Configure your new project dialog box displays text boxes for a Blank App (Universal Windows)." lightbox="media/winui2-getting-started-config-new-project.png":::
 
-1. Click **Create**.  The **New Universal Windows Platform Project** dialog box appears.
+   <!-- Text boxes displayed are **Project name**, **Location**, **Solution**, and **Solution name**. -->
 
-1. Click **OK**.  The **Settings** window might open, if you haven't done the following couple of steps yet.
+1. In the **Project name** text box, enter a project name such as `UWPSampleProject`.
+
+1. Click **Create**.  The **New Universal Windows Platform Project** dialog box appears.
 
 1. In the **Developer Mode** section, click **On**.  The **Use developer features** dialog box opens, to confirm turning on developer mode.
 
 1. Click **Yes**, then close the **Settings** window.
 
-Visual studio displays the solution and project.
+   Visual studio displays the solution and project.
 
-:::image type="content" source="media/new-project-created.msft.png" alt-text="The resulting project." lightbox="media/new-project-created.msft.png":::
+   :::image type="content" source="media/new-project-created.msft.png" alt-text="The resulting project." lightbox="media/new-project-created.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -130,13 +128,13 @@ Visual studio displays the solution and project.
 
    :::image type="content" source="media/winui2-nuget-package.msft.png" alt-text="The NuGet package manager." lightbox="media/winui2-nuget-package.msft.png":::
 
-   The **Preview Changes** dialog appears.
+   The **Preview Changes** dialog box appears.
 
 1. Click **OK**. The WebView2 SDK dependency is installed with WinUI 2.
 
    <!-- "Microsoft.UI.Xaml" here is equiv to WinUI 2; same team -->
 
-1. The **License Acceptance** dialog is displayed.  Click **I Accept**.  The `readme.txt` file is displayed.
+1. The **License Acceptance** dialog box appears.  Click **I Accept**.  The `readme.txt` file is displayed.
 
 <!-- note: install halted after only WinUI 2 component, it didn't seem to install WebView2 even though that was the 2nd item listed.  assume that's ok now on test machine. -->
 

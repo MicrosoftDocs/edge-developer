@@ -20,6 +20,8 @@ We generally recommend using the Evergreen WebView2 Runtime.  Fixed Version runt
 
 If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  See [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
 
+If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
+
 
 <!-- ====================================================================== -->
 ## Run compatibility tests regularly when using the Evergreen Runtime
@@ -67,7 +69,7 @@ When a new version of the runtime is available, your app can automatically take 
 <!-- ====================================================================== -->
 ## Manage the lifetime of the user data folder
 
-WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  For more information, see [Manage the user data folder](../concepts/user-data-folder.md).
+WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  See [Manage the user data folder](../concepts/user-data-folder.md).
 
 
 <!-- ====================================================================== -->

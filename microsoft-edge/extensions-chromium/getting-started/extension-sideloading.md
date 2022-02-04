@@ -26,5 +26,7 @@ To sideload an extension:
    :::image type="content" source="./media/part1-installed-extension.png" alt-text="Installed extensions page, showing a sideloaded extension.":::
 
 During development, you may also need to do the following:
+
 * Update the extension.  Go to `edge://extensions`, and then select **Reload** to update your extension.
+
 * Remove the extension from your browser.  Go to `edge://extensions`, and then select `Remove` on your extension.

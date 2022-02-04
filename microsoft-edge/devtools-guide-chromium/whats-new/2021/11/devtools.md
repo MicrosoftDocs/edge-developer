@@ -45,7 +45,7 @@ Since [Microsoft Edge version 87](../../2020/10/devtools.md#move-tools-between-t
 
 The **Console** can be opened in the bottom panel (the **Drawer**) while another tool is open:
 
-:::image type="content" source="../../media/2021/11/console-displayed-when-elements-tab-selected.png" alt-text="When a tool other than the Console is selected in the main toolbar, the Drawer opens and displays the Console.":::
+:::image type="content" source="../../media/2021/11/console-displayed-when-elements-tab-selected.png" alt-text="When a tool other than the Console is selected in the main toolbar, the Drawer opens and shows the Console.":::
 
 When **Console** is selected in the top panel, the bottom panel is automatically minimized, if the bottom panel was displaying the **Console**:
 

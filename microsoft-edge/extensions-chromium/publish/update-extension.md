@@ -29,7 +29,7 @@ To update your extension on the store:
 1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
 
 <!-- todo: uncomment after the API is available for use.
-After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API](api/using-addons-api.md).
+After your extension has been initially created, you will be able to update it programmatically by [Using the Microsoft Edge Add-ons API (in private preview)](api/using-addons-api.md).
 -->
 
 

@@ -6,7 +6,7 @@ Thank you for your interest in the Microsoft Edge Developer documentation.  The 
 <!-- ====================================================================== -->
 ## Sign a CLA
 
-If you want to contribute more than a couple lines and you are not a Microsoft employee, you must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.opensource.microsoft.com).
+If you want to contribute more than a couple lines and you aren't a Microsoft employee, you must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.opensource.microsoft.com).
 
 If you are a Microsoft Employee, follow the internal guidance.
 
@@ -18,7 +18,7 @@ To suggest a change to the docs:
 
 1.  If you are viewing the [docs.microsoft.com/microsoft-edge](https://docs.microsoft.com/microsoft-edge) page, click the **Edit** button in the upper right of the page.  You are redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/edge-developer).  If you are already in the GitHub repo, navigate to the source file that you are changing.
 
-1.  If you do not already have a GitHub account, click **Sign Up** in the upper-right corner and create a new account.
+1.  If you don't already have a GitHub account, click **Sign Up** in the upper-right corner and create a new account.
 
 1.  From the GitHub page you are changing, click the **pencil** icon.
 
@@ -38,10 +38,10 @@ To make substantial changes to an existing article, add or change images, or con
 
 2. Click the green **Clone or download** button, copy to your clipboard, then run the following code at your command prompt:
 
-```shell
-git clone {paste_your_repo_clone_link}
-```
-
+   ```Shell
+   git clone {paste_your_repo_clone_link}
+   ```
+   
 For more info, see [Fork a Repo](https://help.github.com/github/getting-started-with-github/fork-a-repo).
 
 If you are unfamiliar with using Git, visit [Lynda.com Git Essentials training](https://www.lynda.com/Git-tutorials/Git-Essential-Training/100222-2.html).

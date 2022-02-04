@@ -52,11 +52,11 @@ Don't use User-Agent Client Hints to:
 - Block *unsupported* browsers.
 - Restrict access to features on your site.
 
-For more information, navigate to the specification at [W3C Community Group Draft Report: User-Agent Client Hints](https://wicg.github.io/ua-client-hints/).
+For more information, see the specification at [W3C Community Group Draft Report: User-Agent Client Hints](https://wicg.github.io/ua-client-hints/).
 
 ### User-Agent Client Hints HTTPS header
 
-When Microsoft Edge sends an HTTPS request to a server, it sends a set of low entropy User-Agent Client Hints headers. For more information, navigate to [Low entropy hint table](https://wicg.github.io/client-hints-infrastructure/#low-entropy-table). If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
+When Microsoft Edge sends an HTTPS request to a server, it sends a set of low entropy User-Agent Client Hints headers. For more information, see [Low entropy hint table](https://wicg.github.io/client-hints-infrastructure/#low-entropy-table). If the server requires more granular information about the browser, its response includes an `Accept-CH` header. The value of that response header is a comma-separated list of all the Client Hints request headers the server wants from the browser, such as `Accept-CH: Sec-CH-UA-Full-Version,Sec-CH-UA-Platform-Version`. The next Microsoft Edge HTTPS request to the server will include the specified User-Agent Client Hints headers.
 
 By default, Microsoft Edge sends the `Sec-CH-UA`, `Sec-CH-UA-Mobile`, and `Sec-CH-UA-Platform` request headers in the following format.
 
@@ -126,7 +126,7 @@ The response has the following format:
    uaFullVersion: "92.0.866.0"}
 ```
 
-For more information, navigate to [getHighEntropyValues()](https://wicg.github.io/ua-client-hints#getHighEntropyValues).
+For more information, see [getHighEntropyValues()](https://wicg.github.io/ua-client-hints#getHighEntropyValues).
 
 ### platformVersion Hint
 
@@ -226,8 +226,10 @@ Sometimes, a website doesn't recognize the Microsoft Edge user agent. As a resul
 You may need more time to update and test the user agent detection logic for your website to address the issues reported by Microsoft. To maximize compatibility for your users, the Microsoft Edge Beta and Stable channels use a list of user agent overrides. Use the user agent overrides while you update your website. The list of user agent overrides is provided by Microsoft.
 
 The overrides specify new user agent values that Microsoft Edge sends instead of the default user agent for specific websites. To display the list of user agent overrides that are currently applied:
+
 1. Open the Microsoft Edge Beta or Stable channel.
-1. Navigate to `edge://compat/useragent`.
+
+1. Go to `edge://compat/useragent`.
 
 The Microsoft Edge Canary and Dev channels don't currently receive user agent overrides. The Microsoft Edge Canary and Dev channels provide environments that use the default Microsoft Edge user agent. Use the Microsoft Edge Canary and Dev channels to reproduce issues on your website caused by the default Microsoft Edge user agent.
 
