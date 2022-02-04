@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 98)
-description: Detached Elements tool is now on by default.  Improvements and bug fixes for Focus Mode.  3D View tool now supports changing color themes in DevTools.
+description: Emulate forced colors mode.  Activity icons in the Event Log of the Performance tool now have tooltips.  Shallow sizes in the Memory tool are now represented as decimal values.  The Search textbox in the Network tool can now be resized.  Icons for service workers and script tags in the Elements tool are now aligned.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
