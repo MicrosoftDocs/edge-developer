@@ -4,8 +4,12 @@
 # =============================================================================
     - name: Microsoft Edge DevTools
       items:
-        - name: DevTools documentation
+        - name: Microsoft Edge DevTools documentation
           href: devtools-guide-chromium/devtools.yml
+          displayName: DevTools
+
+        - name: Why choose Microsoft Edge DevTools?
+          href: devtools-guide-chromium/why-choose-microsoft-edge-devtools.md
           displayName: DevTools
 # UPPER NON-TOOLS NODES =======================================================
 # Overview of DevTools --------------------------------------------------------
