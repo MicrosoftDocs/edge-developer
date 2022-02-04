@@ -31,8 +31,10 @@ This guide walks you through the tools and tabs which are the most accessible, a
 DevTools is divided into a series of tools.  (Within the **Command Menu**, tools are referred to as _panels_.)  Tools are organized into an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist) on the main toolbar and on the drawer toolbar.
 
 The following are examples of tools:
-*   The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
-*   The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md).
+
+*  The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
+
+*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md).
 
 Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
 
@@ -46,7 +48,7 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 <!-- ====================================================================== -->
 ## Open DevTools
 
-To get started, navigate to [Open DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+To get started, see [Open DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
 
 
 <!-- ====================================================================== -->
@@ -56,29 +58,34 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by keyboard
 
-*   With DevTools open, select `Control`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
-*   Select `Control`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
-*   Select `Tab` or `Shift`+`Tab` repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
+*  With DevTools open, press `Control`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
+*  Press `Control`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
+*  Press `Tab` or `Shift`+`Tab` repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
 
-**Known issues**
+#### Known issues
 
-*   Some tools, such as the **Console** and **Performance** tools, may move focus into the tool's content area as soon as the tool is selected.  This may make navigating by arrow keys difficult.
-*   The name of the selected tool is announced, but only after announcing the focused content in the tool.  This sequence of announcements may make it easy to miss the name of the tool.
+*  Some tools, such as the **Console** and **Performance** tools, may move focus into the tool's content area as soon as the tool is selected.  This may make navigating by arrow keys difficult.
+
+*  The name of the selected tool is announced, but only after announcing the focused content in the tool.  This sequence of announcements may make it easy to miss the name of the tool.
 
 ### Navigate by Command Menu
 
-To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _panel_.
+To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _panel_ or _drawer_ item.
 
-1.  With DevTools open, select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
-    The **Command Menu** is a fuzzy-search autocomplete combobox.
-1.  Type the name of a panel (tool), and then use the `Down Arrow` on the keyboard to navigate to the correct option.
-1.  Select `Enter` to run a command.
+1. With DevTools open, press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+
+   The **Command Menu** is a fuzzy-search autocomplete combobox.
+
+1. Type the name of a panel (tool), and then use the `Down Arrow` on the keyboard to navigate to the correct option.
+
+1. Press `Enter` to run a command.
+
 
 To open the **Elements** tool:
 
-1.  Open the **Command Menu**.
-1.  Type `E` then `L`.  The **Panel > Show Elements** option is selected.
-1.  Select `Enter`.
+1. Open the **Command Menu**.
+
+1. Start typing `elements`, select the **Panel > Show Elements** command, and then press `Enter`.
 
 Opening a tool this way puts focus in the content area of the tool.  In the case of the **Elements** tool, focus moves into the **DOM Tree**.
 
@@ -88,39 +95,45 @@ Opening a tool this way puts focus in the content area of the tool.  In the case
 
 ### Inspect an element on the page
 
-1.  Navigate to the element you want to inspect, using the cursor in the screen reader.
-1.  Simulate a right-click on the element, to open the context menu.
-1.  Choose the **Inspect** option.  This [opens the Elements tool and focuses the element in the DOM Tree](../dom/index.md#view-dom-nodes).
+1. Go to the element you want to inspect, using the cursor in the screen reader.
 
-The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, navigate to [Navigate the **DOM Tree** with a keyboard](../dom/index.md#navigate-the-dom-tree-with-a-keyboard).
+1. Right-click the element and then select the **Inspect** option.  This [opens the Elements tool and focuses the element in the DOM Tree](../dom/index.md#view-dom-nodes).
+
+The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, see [Navigate the **DOM Tree** with a keyboard](../dom/index.md#navigate-the-dom-tree-with-a-keyboard).
 
 ### Copy the code for an element in the DOM Tree
 
-1.  With focus on a node in the **DOM Tree**, hover on the node and open the contextual menu (right-click).
-1.  Expand the **Copy** option.
-1.  Choose **Copy outerHTML**.
+1. Right-click a node in the **DOM Tree**.
 
-**Known issues**
+1. Expand the **Copy** option.
 
-*   **Copy outerHTML** often does not select the current node but instead selects the parent node.  However, the contents of the element should still be in the copied outerHTML.
+1. Select **Copy outerHTML**.
+
+#### Known issues
+
+*  **Copy outerHTML** often doesn't select the current node, but instead selects the parent node.  However, the contents of the element should still be in the copied `outerHTML`.
 
 ### Modify the attributes of an element in the DOM Tree
 
-*   With focus on a node in the **DOM Tree**, select `Enter` to make it editable.
-*   Select `Tab` to move between attribute values.  When you hear "space" you are inside of an empty text input and are able to type a new attribute value.
-*   Select `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change and hear the entire contents of the element.
+*  With focus on a node in the **DOM Tree**, press `Enter` to make it editable.
 
-**Known issues**
+*  Press `Tab` to move between attribute values.  When you hear "space", you're inside of an empty text input, and can type a new attribute value.
 
-*   When you type into the text input, you get no feedback.  If you make a typo and use the arrow keys to explore your input, you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.
+*  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change and hear the entire contents of the element.
+
+#### Known issues
+
+*  When you type into the text input, you get no feedback.  If you make a typo and use the arrow keys to explore your input, you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.
 
 ### Edit the HTML of an element in the DOM Tree
 
-*   With focus on a node in the **DOM Tree**, select `Enter` to make it editable.
-*   Select `Tab` to move between attribute values.  When you hear the name of the element, for instance, `h2`, you are inside of a text input and may change the type of the element.
-*   Select `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
+*  With focus on a node in the **DOM Tree**, press `Enter` to make it editable.
 
-For example, when you type `h3` and select `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
+*  Press `Tab` to move between attribute values.  When you hear the name of the element, for instance, `h2`, you're inside of a text input, and you can change the type of the element.
+
+*  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
+
+For example, when you type `h3` and then press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
 
 
 <!-- ====================================================================== -->
@@ -128,87 +141,104 @@ For example, when you type `h3` and select `Control`+`Enter` (Windows, Linux) or
 
 The **Elements** tool contains additional tabs for inspecting things like the CSS applied to an element or the relevant place in the accessibility tree.
 
-*   With focus on a node in the **DOM Tree**, select `Tab` until you hear that the **Styles** tab is selected.
-*   Use the `Right Arrow` to explore other available tabs.
+*  With focus on a node in the **DOM Tree**, press `Tab` until you hear that the **Styles** pane is selected.
 
-The **DOM Tree** turns elements with `href` attributes into focusable links, so you may need to select `Tab` more than once to reach the **Styles** pane.
+*  Press `Right Arrow` to explore other available tabs.
 
-**Known issues**
+The **DOM Tree** turns elements with `href` attributes into focusable links, so you may need to press `Tab` more than once to reach the **Styles** pane.
 
-The **DOM Breakpoints** and **Properties** tabs are not keyboard-accessible.
+### Known issues
+
+The **DOM Breakpoints** and **Properties** tabs aren't keyboard-accessible.
+
 
 ### Styles pane
 
-In the **Styles** pane find controls for filtering styles, toggling element states (such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)), toggling classes, and adding new classes.  There is also a powerful style inspection tool to explore and modify styles currently applied to the element that is in focus in the **DOM Tree**.
+The **Styles** pane has controls to filter styles, toggle element states (such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)), toggle classes, and add new classes.  There's also a powerful style inspection tool to explore and modify styles currently applied to the element that has focus in the **DOM Tree**.
 
-The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you are done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.  You may find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node (such as a link within the footer), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you are interested.
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you're done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.
+
+You might find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node (such as a link within the footer), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you're interested.
 
 #### Navigate the Styles pane
 
 Because all of the style tools connect in one way or another back to the **Styles** pane, it makes sense to become an expert in this tool first.
 
-*   With focus on the **Styles** pane, select `Tab` to move focus inside and explore the contents.
-*   Select `Tab` until the first style becomes active.  If you are using a screen reader this first style is
-  announced as `element.style {}`.
-*   Select `Down Arrow` to navigate the list of styles in order of specificity.  A screen reader announces each style starting with the name of the CSS file, the line number on which the style appears, and the name of the style.  For example, `main.css:233 .card__img {}`.
-*   Select `Enter` to inspect a style in more detail.  Focus begins on an editable version of the style name.
-*   Select `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you can use to add additional CSS properties.
-*   You can continue to select `Tab` to move through the list of styles, or select `Escape` to exit the mode and go back to navigating by arrow keys.
+*  With focus on the **Styles** pane, press `Tab` to move focus inside and explore the contents.
 
-For additional shortcuts, navigate to [Styles pane keyboard reference](../shortcuts/index.md#styles-pane-keyboard-shortcuts).
+*  Press `Tab` until the first style becomes active.  If you're using a screen reader, this first style is announced as `element.style {}`.
 
-**Known issues**
+*  Press `Down Arrow` to navigate the list of styles in order of specificity.  A screen reader announces each style starting with the name of the CSS file, the line number on which the style appears, and the name of the style.  For example, `main.css:233 .card__img {}`.
 
-*   If you use the **Filter** editable text field, you are no longer be able to navigate the list of styles.
+*  Press `Enter` to inspect a style in more detail.  Focus begins on an editable version of the style name.
+
+*  Press `Tab` to move between editable versions of each CSS property and the corresponding values.  At the end of each style block is a blank editable text field which you can use to add additional CSS properties.
+
+*  You can continue to press `Tab` to move through the list of styles, or press `Escape` to exit the mode and go back to navigating by arrow keys.
+
+For additional shortcuts, see [Styles pane keyboard reference](../shortcuts/index.md#styles-pane-keyboard-shortcuts).
+
+##### Known issues
+
+*  If you use the **Filter** editable text field, you can't navigate the list of styles.
 
 #### Toggle element state
 
 To toggle the state of an element, such as `:active` or `:focus`:
 
-1.  Navigate to the **Styles** pane and select `Tab` until the **Toggle Element State** button has focus.
-1.  Select `Enter` to expand the collection of element states.  The element states are presented as a group of checkboxes.
-1.  Select `Tab` until the first state, `:active`, has focus.
-1.  Select `Space` to enable it.  If the currently-selected element in the DOM Tree has an `:active` style, it is now applied.
-1.  Hold `Tab` to explore all of the available states.
+1. Go to the **Styles** pane and press `Tab` until the **Toggle Element State** button has focus.
+
+1. Press `Enter` to expand the collection of element states.  The element states are presented as a group of checkboxes.
+
+1. Press `Tab` until the first state, `:active`, has focus.
+
+1. Press `Spacebar` to enable it.  If the currently-selected element in the DOM Tree has an `:active` style, it is now applied.
+
+1. Hold `Tab` to explore all of the available states.
 
 #### Add an existing class
 
-Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, select `Tab` and then select `Enter`.  Focus moves into an edit text field labeled **Add new class**.
+Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, press `Tab` and then press `Enter`.  Focus moves into an edit text field labeled **Add new class**.
 
-The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can select `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and select `Enter` to apply it.
+The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can press `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and press `Enter` to apply it.
 
 #### Add a new style rule
 
-Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, select `Tab` and then select `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.
-You can type any class name you want into this field and then select `Tab` to assign CSS properties to it.
+Adjacent to the **Element Classes** button is the **New Style Rule** button.  To move the focus to it, press `Tab` and then press `Enter`.  Focus moves into an editable text field inside of the style inspector.  The initial text content of the field is the tag name of the element that is selected in the **DOM Tree**.
+You can type any class name you want into this field and then press `Tab` to assign CSS properties to it.
+
 
 ### Computed tab
 
-With focus on the **Computed** tab, select `Tab` to move focus inside and explore the contents.  Within the **Computed** tab there are controls for exploring which CSS properties are actually applied to an element in order of specificity.
+With focus on the **Computed** tab, press `Tab` to move focus inside and explore the contents.  Within the **Computed** tab there are controls for exploring which CSS properties are actually applied to an element in order of specificity.
 
 <!--todo: add Computed tab section when available  -->
 
 #### Explore all computed styles
 
-Select `Tab` until you reach the collection of computed styles.  These are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.
+Press `Tab` until you reach the collection of computed styles.  Computed styles are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  Expanding a listbox reveals which CSS selectors are applying the computed style.  These selectors are organized by specificity.  A screen reader announces the computed value, which CSS selector is currently matching, the filename of the stylesheet that contains the selector, and the line number for the selector.
 
 **Known issues**
 
-*   If you use the **Filter** text field, you are no longer able to inspect styles.
+*  If you use the **Filter** text field, you're no longer able to inspect styles.
+
 
 ### Event Listeners tab
 
 To inspect the event listeners that are applied to an element, select the **Elements** tool and then select the **Event Listeners** tab (grouped with the **Styles** tab).
 
+When focus is on the **Styles** tab, press `Right Arrow` to navigate to the **Event Listeners** tab.
+
 #### Explore event listeners
 
 Event listeners are presented as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  You can use the arrow keys to navigate them.  A screen reader announces the name of the DOM object that the event listener is attached to, as well as the file name where the event listener is defined and the line number.
+
 
 ### Accessibility tab
 
 Select the `Tab` key to move around within the **Accessibility** tab in the **Elements** tool.
 
-The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  For more information, navigate to [Test accessibility using the Accessibility tab](accessibility-tab.md).
+The **Accessibility** tab is near the **Styles** tab. On the Accessibility tab, there are controls for exploring the accessibility tree, the ARIA attributes applied to an element, and the computed accessibility properties.  See [Test accessibility using the Accessibility tab](accessibility-tab.md).
 
 #### Accessibility Tree
 
@@ -216,8 +246,8 @@ The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/
 
 **Known issues**
 
-*   The type of [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree) used by the **Accessibility** tab may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) to be informed about progress on this issue.
-*   Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree), but each does not currently have focus management and is not keyboard operable.
+*  The type of [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree) used by the **Accessibility** tab may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) to be informed about progress on this issue.
+*  Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree), but each section doesn't currently have focus management, and isn't keyboard-operable.
 
 
 <!-- ====================================================================== -->
@@ -227,15 +257,18 @@ The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/
 
 ### Configure and generate a report
 
-1.  When the **Lighthouse** tool is first opened in DevTools, focus is placed on the **Generate report** button.  By default, the form is configured to run reports for every category using mobile emulation on a simulated 3G connection.
-1.  To change the report settings, use `Shift`+`Tab` to put focus on **Lighthouse settings**, or navigate back in Browse mode.
-1.  When you are ready to run the report, navigate back to the **Generate report** button and select `Enter`.
-1.  Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.
+1. When the **Lighthouse** tool is first opened in DevTools, focus is placed on the **Generate report** button.  By default, the form is configured to run reports for every category using mobile emulation on a simulated 3G connection.
 
-**Known issues**
+1. To change the report settings, use `Shift`+`Tab` to put focus on **Lighthouse settings**, or navigate back in Browse mode.
 
-*   The different sections of the configuration form are not currently marked up with a `fieldset` element.  It may be easier to navigate them in Browse mode to figure out which controls are associated with each section.
-*   There is no earcon or live region announcement when the audit is finished running.  Generally the audit takes about 30 seconds, after which you should be able to navigate to the results.  Using Browse mode may be the easiest way to reach the results.
+1. When you're ready to run the report, navigate back to the **Generate report** button and press `Enter`.
+
+1. Focus moves into a modal window with a **Cancel** button which allows you to exit the audit.  You may hear a series of earcons as the audit runs and refreshes the page multiple times.
+
+#### Known issues
+
+*  The different sections of the configuration form aren't currently marked up with a `fieldset` element.  It may be easier to navigate them in Browse mode to figure out which controls are associated with each section.
+*  There is no earcon or live region announcement when the audit is finished running.  Generally the audit takes about 30 seconds, after which you should be able to navigate to the results.  Using Browse mode may be the easiest way to reach the results.
 
 ### Navigate the Lighthouse report
 

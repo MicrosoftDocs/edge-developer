@@ -1,6 +1,6 @@
 ---
 title: Override the user agent string
-description: Open the Network conditions tool, disable Select automatically, and choose from the list or enter a custom string.
+description: Open the Network conditions tool, disable 'Select automatically', and then select from the list or enter a custom string.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual

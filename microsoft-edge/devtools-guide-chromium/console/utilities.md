@@ -1,6 +1,6 @@
 ---
-title: Console Utilities API reference
-description: A reference of convenience commands available in the Microsoft Edge DevTools Console.
+title: Console tool utility functions and selectors
+description: Convenience utility functions, commands, and DOM selectors that are available in the Console tool in Microsoft Edge DevTools, but not through JavaScript source files.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -20,80 +20,126 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# Console tool utility functions and selectors
+<!-- orig:
 # Console Utilities API reference
+-->
 
 The Console Utilities API contains a collection of convenience functions for performing common tasks, such as:
-*   Choosing and inspecting DOM elements.
-*   Displaying data in a readable format.
-*   Stopping and starting the profiler.
-*   Monitoring DOM events.
+*  Selecting and inspecting DOM elements.
+*  Displaying data in a readable format.
+*  Stopping and starting the profiler.
+*  Monitoring DOM events.
 
-> [!WARNING]
-> The following commands only work in the Microsoft Edge DevTools **Console**.  The commands don't work if run from your scripts.
-
-For more information about the `console.log()` and `console.error()` methods and the rest of the `console.*` methods, navigate to [Console API Reference](api.md).
+These commands only work by entering them directly into the DevTools **Console**; you can't call these commands from scripts.
 
 
 <!-- ====================================================================== -->
-## Recently evaluated expression
+## Summary
 
-`$_` returns the value of the most recently evaluated expression.
+| Function | Description |
+|---|---|
+| [$_](#recently-evaluated-expression) | Returns the value of the most recently evaluated expression. |
+| [$0 - $4](#recently-selected-element-or-javascript-object) | Returns a recently selected element or JavaScript object. |
+| [$(selector)](#query-selector) | Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`. |
+| [$$(selector, [startNode])](#query-selector-all) | Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`. |
+| [$x(path, [startNode])](#xpath) | Returns an array of DOM elements that match the specified XPath expression. |
+| [clear()](#clear) | Clears the console of its history. |
+| [copy(object)](#copy) | Copies a string representation of the specified object to the clipboard. |
+| [debug(function)](#debug) | When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel. |
+| [dir(object)](#dir) | Displays an object-style listing of all of the properties for the specified object, like `console.dir()`. |
+| [dirxml(object)](#dirxml) | Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`. |
+| [inspect(object/function)](#inspect) | Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool. |
+| [getEventListeners(object)](#geteventlisteners) | Returns the event listeners that are registered on the specified object. |
+| [keys(object)](#keys) | Returns an array containing the names of the properties belonging to the specified object. |
+| [monitor(function)](#monitor) | Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request. |
+| [monitorEvents(object[, events])](#monitorevents) | When one of the specified events occurs on the specified object, the event object is logged to the console. |
+| [profile([name])](#profile) | Starts a JavaScript CPU profiling session with an optional name. |
+| [profileEnd([name])](#profileend) | Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool. |
+| [queryObjects(Constructor)](#queryobjects) | Returns an array of the objects that were created by the specified constructor. |
+| [table(data[, columns])](#table) | Logs object data, formatted as a table with column headings, for the specified data object. |
+| [undebug(function)](#undebug) | Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked. |
+| [unmonitor(function)](#unmonitor) | Stops the monitoring of the specified function. |
+| [unmonitorEvents(object[, events])](#unmonitorevents) | Stops monitoring events for the specified object and events. |
+| [values(object)](#values) | Returns an array containing the values of all properties belonging to the specified object. |
+
+<br/><br/>
+
+---
+
+<!-- ====================================================================== -->
+## Recently evaluated expression
+<!-- planned new heading to troubleshoot: -->
+<!-- ## $_ (Recent expression value) -->
+
+<!-- summary to bubble up: -->
+Returns the value of the most recently evaluated expression.
 
 ### Syntax
 
-```console
+```javascript
 $_
 ```
 
 ### Example
 
-In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value.
+In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value:
 
 :::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ is the most recently evaluated expression." lightbox="../media/console-arithmatic.msft.png":::
-   `$_` is the most recently evaluated expression
-:::image-end:::
 
-In the following figure, the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` becomes the latest evaluated expression, `4`.
-
-`$_` changes when new commands are evaluated:
+In the following figure, the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` now becomes the latest evaluated expression, `4`:
 
 :::image type="content" source="../media/console-array-length.msft.png" alt-text="$_ changes when new commands are evaluated." lightbox="../media/console-array-length.msft.png":::
 
+<br/><br/>
+
 ---
 
-
 <!-- ====================================================================== -->
-## Recently chosen element or JavaScript object
+## Recently selected element or JavaScript object
+<!-- planned new heading to troubleshoot: -->
+<!-- ## $0 - $4 -->
 
-`$0` returns the most recently chosen element or JavaScript object.  `$1` returns the second most recently chosen one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements inspected within the **Elements** tool or the last five JavaScript heap objects chosen in the **Memory** tool.
+<!-- summary to bubble up: -->
+Returns a recently selected element or JavaScript object.
+
+<!-- add'l info -->
+`$0` returns the most recently selected element or JavaScript object, `$1` returns the second most recently selected one, and so on.  The `$0`, `$1`, `$2`, `$3`, and `$4` commands work as a historical reference to the last five DOM elements that were inspected within the **Elements** tool, or the last five JavaScript heap objects that were selected in the **Memory** tool.
 
 ### Syntax
 
-```console
+```javascript
 $0
 ```
 
 ### Example
 
-In the following figure, an `img` element is chosen in the **Elements** tool.  In the **Console** drawer, `$0` has been evaluated and displays the same element:
+In the following figure, an `img` element is selected in the **Elements** tool.  In the **Console** drawer, `$0` has been evaluated and displays the same element:
 
 :::image type="content" source="../media/console-image-highlighted-$0.msft.png" alt-text="The $0 command." lightbox="../media/console-image-highlighted-$0.msft.png":::
 
-In the following figure, the image displays a different element chosen in the same webpage.  The `$0` now refers to the newly chosen element, while `$1` returns the previously chosen one.
+The following image shows a different element selected in the same webpage.  The `$0` now refers to the newly selected element, while `$1` returns the previously selected element:
 
 :::image type="content" source="../media/console-image-highlighted-$1.msft.png" alt-text="The $1 command." lightbox="../media/console-image-highlighted-$1.msft.png":::
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## Query selector
+<!-- planned new heading to troubleshoot: -->
+<!-- ## $(selector) -->
 
-`$(selector)` returns the reference to the first DOM element with the specified CSS selector.  This method is an alias for the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) method.
+<!-- summary to bubble up: -->
+Query selector; returns the reference to the first DOM element with the specified CSS selector, like `document.querySelector()`.
+
+<!-- add'l info -->
+This function is an alias for the [document.querySelector()](https://developer.mozilla.org/docs/Web/API/Document/querySelector) function.
 
 ### Syntax
 
-```console
+```javascript
 $(selector, [startNode])
 ```
 
@@ -103,167 +149,208 @@ In the following figure, `$('img')` returns a reference to the first `<img>` ele
 
 :::image type="content" source="../media/console-element-selector-image.msft.png" alt-text="$('img') returns a reference to the first <img> element in the webpage." lightbox="../media/console-element-selector-image.msft.png":::
 
-To find the first element in the DOM, or to find and display it on the webpage:
+Right-click the returned result and then select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.
 
-1.  Right-click the returned result.
-1.  Click **Reveal in Elements Panel**.
+### Example
 
-In the following figure, a reference to the currently chosen element is returned and the `src` property is displayed:
+The following example returns a reference to the currently selected element and displays its `src` property:
 
-The result of `$('img').src`:
+```javascript
+$('img').src
+```
+
+Result:
 
 :::image type="content" source="../media/console-element-selector-image-source.msft.png" alt-text="The result of $('img').src." lightbox="../media/console-element-selector-image-source.msft.png":::
 
-This method also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
+This function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
-In the following figure, the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned.
+### Example
 
-The result of `$('img', document.querySelector('title--image')).src`:
+```javascript
+$('img', document.querySelector('title--image')).src
+```
+
+Result: the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned:
 
 :::image type="content" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="The result of $('img', document.querySelector('title--image')).src." lightbox="../media/console-element-selector-image-filter-source.msft.png":::
 
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## Query selector all
+<!-- planned new heading to troubleshoot: -->
+<!-- ## \$\$(selector, \[startNode\]) -->
 
-`$$(selector)` returns an array of elements that match the specified CSS selector.  This method is equivalent to running the [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll) method.
+<!-- summary to bubble up: -->
+Query selector all; returns an array of elements that match the specified CSS selector, like `document.querySelectorAll()`.
+
+<!-- add'l info -->
+This function is equivalent to [document.querySelectorAll()](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll).
 
 ### Syntax
 
-```console
+```javascript
 $$(selector, [startNode])
 ```
 
 ### Example
 
-In the following code and figure, use `$$()` to create an array of all `<img>` elements in the current webpage and display the value of the `src` property for each element.
+In the following example, `$$()` creates an array of all `<img>` elements in the current webpage, and displays the value of the `src` property for each element:
 
-```console
+```javascript
 var images = $$('img');
 for (each in images) {
     console.log(images[each].src);
 }
 ```
 
-Using `$$()` to choose all images in the webpage and display the sources:
+Result:
 
-:::image type="content" source="../media/console-element-selector-image-all.msft.png" alt-text="Using $$() to choose all images in the webpage and display the sources." lightbox="../media/console-element-selector-image-all.msft.png":::
+:::image type="content" source="../media/console-element-selector-image-all.msft.png" alt-text="Using $$() to select all images in the webpage and display the sources." lightbox="../media/console-element-selector-image-all.msft.png":::
 
-This method also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
+This query selector function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
-In the following code sample and figure, a modified version of the previous code sample and figure uses `$$()` to create an array of all `<img>` elements that appear in the current webpage after the chosen node.
+### Example
 
-```console
+The following, modified version of the previous example uses `$$()` to create an array of all `<img>` elements that appear in the current webpage after the selected node:
+
+```javascript
 var images = $$('img', document.querySelector(`title--image`));
 for (each in images) {
    console.log(images[each].src);
 }
 ```
 
-Using `$$()` to choose all images that appear after the specified `<div>` element in the webpage and display the sources:
+Here's the result.  `$$()` selects all images that appear after the specified `<div>` element in the webpage, and displays the sources:
 
-:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Using $$() to choose all images that appear after the specified <div> element in the webpage and display the sources." lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources." lightbox="../media/console-element-selector-image-filter-all.msft.png":::
 
 > [!NOTE]
-> Select `Shift`+`Enter` in the **Console** to start a new line without running the script.
+> Press `Shift`+`Enter` in the **Console** to start a new line without running the script.
+
+<br/><br/>
 
 ---
 
-
 <!-- ====================================================================== -->
 ## XPath
+<!-- planned new heading to troubleshoot: -->
+<!-- ## \$x(path, \[startNode\]) -->
 
-`$x(path)` returns an array of DOM elements that match the specified XPath expression.
+<!-- summary to bubble up: -->
+Returns an array of DOM elements that match the specified XPath expression.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
-```console
+```javascript
 $x(path, [startNode])
 ```
 
 ### Example
 
-In the following code sample and figure, all of the `<p>` elements on the webpage are returned.
+In the following example, all of the `<p>` elements on the webpage are returned:
 
-```console
+```javascript
 $x("//p")
 ```
 
-Using an XPath selector:
+Result:
 
 :::image type="content" source="../media/console-array-xpath.msft.png" alt-text="Using an XPath selector." lightbox="../media/console-array-xpath.msft.png":::
 
-In the following code sample and figure, all of the `<p>` elements that contain `<a>` elements are returned.
+### Example
 
-```console
+In the following example, all of the `<p>` elements that contain `<a>` elements are returned:
+
+```javascript
 $x("//p[a]")
 ```
 
-Using a more complicated XPath selector:
+Result:
 
 :::image type="content" source="../media/console-array-xpath-sub-element.msft.png" alt-text="Using a more complicated XPath selector." lightbox="../media/console-array-xpath-sub-element.msft.png":::
 
-Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements.
-
-Using an XPath selector with `startNode`:
+Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements:
 
 :::image type="content" source="../media/console-array-xpath-startnode.msft.png" alt-text="Using an XPath selector with startNode." lightbox="../media/console-array-xpath-startnode.msft.png":::
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## clear
+<!-- planned new heading to troubleshoot: -->
+<!-- ## clear() -->
 
-`clear()` clears the console of its history.
+<!-- summary to bubble up: -->
+Clears the console of its history.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
-```console
+```javascript
 clear()
 ```
 
 ### Example
 
-```console
+```javascript
 clear()
 ```
 
+<br/><br/>
+
+---
 
 <!-- ====================================================================== -->
 ## copy
+<!-- ## copy(object) -->
 
-`copy(object)` copies a string representation of the specified object to the clipboard.
+<!-- summary to bubble up: -->
+Copies a string representation of the specified object to the clipboard.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
-```console
+```javascript
 copy(object)
 ```
 
 ### Example
 
-```console
+```javascript
 copy($0)
 ```
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## debug
+<!-- ## debug(function) -->
 
-When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel.  You can then step through the code and debug it.
+<!-- summary to bubble up: -->
+When the specified function is called, the debugger is invoked and breaks inside the function on the Sources panel.
+
+<!-- add'l info -->
+After the debugger is paused, you can then step through the code and debug it.
 
 ### Syntax
 
-```console
-debug(method)
+```javascript
+debug(function)
 ```
 
 >[!NOTE]
@@ -271,29 +358,35 @@ debug(method)
 
 ### Example
 
-```console
+```javascript
 debug("debug");
 ```
 
-:::image type="content" source="../media/console-debug-text.msft.png" alt-text="Breaking inside a method with debug()." lightbox="../media/console-debug-text.msft.png":::
-   Breaking inside a method with `debug()`
-:::image-end:::
+Result:
 
-Use `undebug(method)` to stop breaking on the method, or use the UI to turn off all breakpoints.
+:::image type="content" source="../media/console-debug-text.msft.png" alt-text="Breaking inside a function with debug()." lightbox="../media/console-debug-text.msft.png":::
 
-For more information on breakpoints, navigate to [Pause your code with breakpoints](../javascript/breakpoints.md).
+Use `undebug(function)` to stop breaking on the function, or use the UI to turn off all breakpoints.
+
+For more information on breakpoints, see [Pause your code with breakpoints](../javascript/breakpoints.md).
+
+<br/><br/>
 
 ---
 
-
 <!-- ====================================================================== -->
 ## dir
+<!-- ## dir(object) -->
 
-`dir(object)` displays an object-style listing of all of the properties for the specified object.  This method is an alias for the [console.dir()](https://developer.mozilla.org/docs/Web/API/Console/dir) method.
+<!-- summary to bubble up: -->
+Displays an object-style listing of all of the properties for the specified object, like `console.dir()`.
+
+<!-- add'l info -->
+This function is an alias for [console.dir()](https://developer.mozilla.org/docs/Web/API/Console/dir).
 
 ### Syntax
 
-```console
+```javascript
 dir(object)
 ```
 
@@ -301,88 +394,105 @@ Evaluate `document.head` in the **Console** to display the HTML between the `<he
 
 ### Example
 
-In the following code sample and figure, an object-style listing is displayed after using `console.dir()` in the **Console**.
+In the following example, an object-style listing is displayed after using `console.dir()` in the **Console**:
 
-```console
+```javascript
 document.head;
 dir(document.head);
 ```
 
-:::image type="content" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Logging document.head with dir() method." lightbox="../media/console-dir-document-head-expanded.msft.png":::
-   Logging `document.head` with `dir()` method
-:::image-end:::
+Result:
 
-For more information, navigate to [console.dir()](api.md#dir) in the Console API.
+:::image type="content" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Logging 'document.head' with the 'dir()' function." lightbox="../media/console-dir-document-head-expanded.msft.png":::
+
+For more information, see [console.dir()](api.md#dir) in the Console API.
+
+<br/><br/>
 
 ---
-
 
 <!-- ====================================================================== -->
 ## dirxml
+<!-- ## dirxml(object) -->
 
-`dirxml(object)` prints an XML representation of the specified object, as displayed in the **Elements** tool.  This method is equivalent to the [console.dirxml()](https://developer.mozilla.org/docs/Web/API/Console/dirxml) method.
+<!-- summary to bubble up: -->
+Prints an XML representation of the specified object, as displayed in the **Elements** tool, like `console.dirxml()`.
+
+<!-- add'l info -->
+This function is equivalent to [console.dirxml()](https://developer.mozilla.org/docs/Web/API/Console/dirxml).
 
 ### Syntax
 
-```console
+```javascript
 dirxml(object)
 ```
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## inspect
+<!-- ## inspect(object/function) -->
 
-`inspect(object/method)` opens and chooses the specified element or object in the appropriate panel:  either the **Elements** tool for DOM elements or the **Memory** tool for JavaScript heap objects.
+<!-- summary to bubble up: -->
+Opens and selects the specified DOM element in the **Elements** tool, or the specified JavaScript heap object in the **Memory** tool.
+
+<!-- add'l info -->
+* For a DOM element, this function opens and selects the specified DOM element in the **Elements** tool.
+* For a JavaScript heap object, this function opens the specified JavaScript heap object in the **Memory** tool.
 
 ### Syntax
 
-```console
-inspect(object/method)
+```javascript
+inspect(object/function)
 ```
 
 ### Example
 
-In the following code sample and figure, the `document.body` opens in the **Elements** tool.
+In the following example, the `document.body` opens in the **Elements** tool:
 
-### Example
-
-```console
+```javascript
 inspect(document.body);
 ```
 
-Inspecting an element with `inspect()`:
+Result:
 
 :::image type="content" source="../media/console-inspect-document-body.msft.png" alt-text="Inspecting an element with inspect()." lightbox="../media/console-inspect-document-body.msft.png":::
 
-When passing a method to inspect, the method opens the webpage in the **Sources** tool for you to inspect.
+When passing a function to inspect, the function opens the webpage in the **Sources** tool for you to inspect.
+
+<br/><br/>
 
 ---
 
-
 <!-- ====================================================================== -->
 ## getEventListeners
+<!-- ## getEventListeners(object) -->
 
-`getEventListeners(object)` returns the event listeners registered on the specified object.  The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The members of each array are objects that describe the listener registered for each type.
+<!-- summary to bubble up: -->
+Returns the event listeners that are registered on the specified object.
+
+<!-- add'l info -->
+The return value is an object that contains an array for each registered event type (such as `click` or `keydown`).  The members of each array are objects that describe the listener registered for each type.
 
 ### Syntax
 
-```console
+```javascript
 getEventListeners(object)
 ```
 
 ### Example
 
-In the following code and figure, all of the event listeners registered on the `document` object are listed.
+In the following example, all of the event listeners that are registered on the `document` object are listed:
 
-```console
+```javascript
 getEventListeners(document);
 ```
 
+Result:
+
 :::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="Output of using getEventListeners(document)." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
-   The result of using `getEventListeners(document)`
-:::image-end:::
 
 If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `click` event:
 
@@ -392,102 +502,123 @@ You can further expand each of the following objects to explore their properties
 
 :::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="Expanded view of listener object." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## keys
+<!-- ## keys(object) -->
 
-`keys(object)` returns an array containing the names of the properties belonging to the specified object.  To get the associated values of the same properties, use `values()`.
+<!-- summary to bubble up: -->
+Returns an array containing the names of the properties belonging to the specified object.
+
+<!-- add'l info -->
+To get the associated values of the same properties, use `values()`.
 
 ### Syntax
 
-```console
+```javascript
 keys(object)
 ```
 
 ### Example
 
-For example, suppose your application defined the following object.
+Suppose your application defines the following object:
 
-```console
+```javascript
 var player1 = {"name": "Ted", "level": 42}
 ```
 
-In the following code samples and figure, the result assumes `player1` was defined in the global namespace (for simplicity) before you type `keys(player1)` and `values(player1)` in the console.
+In the following code, the result assumes `player1` was defined in the global namespace (for simplicity) before you type `keys(player1)` and `values(player1)` in the console:
 
-```console
+```javascript
 keys(player1)
 
 values(player1)
 ```
 
-The `keys()` and `values()` commands:
+Result:
 
 :::image type="content" source="../media/console-keys-values.msft.png" alt-text="The keys() and values() commands." lightbox="../media/console-keys-values.msft.png":::
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## monitor
+<!-- ## monitor(function) -->
 
-`monitor(method)` logs a message to the console that indicates the method name along with the arguments passed to the method as part of a request.
+<!-- summary to bubble up: -->
+Logs a message to the console that indicates the function name, along with the arguments passed to the function as part of a request.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
-```console
-monitor(method)
+```javascript
+monitor(function)
 ```
 
 ### Example
 
-```console
+```javascript
 function sum(x, y) {
     return x + y;
 }
 monitor(sum);
 ```
 
-The `monitor()` method:
+Result:
 
-:::image type="content" source="../media/console-function-monitor-sum.msft.png" alt-text="The monitor() method." lightbox="../media/console-function-monitor-sum.msft.png":::
+:::image type="content" source="../media/console-function-monitor-sum.msft.png" alt-text="Result of the monitor() function." lightbox="../media/console-function-monitor-sum.msft.png":::
 
-To end monitoring, use `unmonitor(method)`.
+To end monitoring, use `unmonitor(function)`.
+
+<br/><br/>
 
 ---
 
-
 <!-- ====================================================================== -->
 ## monitorEvents
+<!-- ## monitorEvents(object\[, events\]) -->
 
-When one of the specified events occurs on the specified object, the event object is logged to the console.  You can specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.
+<!-- summary to bubble up: -->
+When one of the specified events occurs on the specified object, the event object is logged to the console.
+
+<!-- add'l info -->
+You can specify a single event to monitor, an array of events, or one of the generic events types that are mapped to a predefined collection of events.
 
 ### Syntax
 
-```console
+```javascript
 monitorEvents(object[, events])
 ```
 
 ### Example
 
-The following monitors all resize events on the window object.
+The following code monitors all resize events on the window object:
 
-```console
+```javascript
 monitorEvents(window, "resize");
 ```
 
-Monitoring window resize events:
+Result:
 
 :::image type="content" source="../media/console-monitor-events-resize-window.msft.png" alt-text="Monitoring window resize events." lightbox="../media/console-monitor-events-resize-window.msft.png":::
 
-The following code defines an array to monitor both `resize` and `scroll` events on the window object.
+### Example
 
-```console
+The following code defines an array to monitor both `resize` and `scroll` events on the window object:
+
+```javascript
 monitorEvents(window, ["resize", "scroll"]);
 ```
 
-You can also specify one of the available types of events, strings that map to predefined sets of events.  The following table displays the available event types and the associated event mappings.
+### Specifying an event type
+
+You can also specify one of the available types of events, strings that map to predefined sets of events.  The following table shows the available event types and the associated event mappings:
 
 | Event type | Corresponding mapped events |
 |:--- |:--- |
@@ -496,102 +627,113 @@ You can also specify one of the available types of events, strings that map to p
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |
 | `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |
 
-In the following code, the `key` event type corresponding to `key` events on an input text field are currently chosen in the **Elements** tool.
+### Example
 
-```console
+In the following code, the `key` event type corresponding to `key` events on an input text field are currently selected in the **Elements** tool:
+
+```javascript
 monitorEvents($0, "key");
 ```
 
-In the following figure, the sample output after typing a character in the text field is displayed.  Monitoring key events:
+Here's the sample output after typing a character in the text field:
 
 :::image type="content" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Monitoring key events." lightbox="../media/console-monitor-events-type-t-y.msft.png":::
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## profile
+<!-- ## profile([name]) -->
 
-`profile()` starts a JavaScript CPU profiling session with an optional name.  The [profileEnd()](#profileend) method completes the profile and displays the results in the **Memory** tool.  <!--Navigate to [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+<!-- summary to bubble up: -->
+Starts a JavaScript CPU profiling session with an optional name.
+
+<!-- add'l info -->
+To complete the profile and display the results in the **Memory** tool, call [profileEnd()](#profileend).  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Syntax
 
-```console
+```javascript
 profile([name])
 ```
 
 ### Example
 
-1.  Run the `profile()` method to start profiling.
+To start profiling, call `profile()`:
 
-    ```console
-    profile("My profile")
-    ```
+```javascript
+profile("My profile")
+```
 
-1.  Run the [profileEnd()](#profileend) method to stop profiling and display the results in the **Memory** tool.
+To stop profiling and display the results in the **Memory** tool, call [profileEnd()](#profileend).
 
-Profiles can also be nested.  In the following code and figure, the result is the same whatever the order.
+Profiles can also be nested:
 
-```console
+```javascript
 profile('A');
 profile('B');
 profileEnd('A');
 profileEnd('B');
 ```
 
+The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **Memory** tool, with grouped profiles:
+
+:::image type="content" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="Grouped profiles." lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
+
 > [!NOTE]
 > Multiple CPU profiles can operate at the same time, and you aren't required to close-out each profile in creation order.
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## profileEnd
+<!-- ## profileEnd([name]) -->
 
-`profileEnd()` completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.  You must be running the [profile()](#profile) method.  <!--Navigate to [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
+<!-- summary to bubble up: -->
+Completes a JavaScript CPU profiling session and displays the results in the **Memory** tool.
+
+<!-- add'l info -->
+To call this function, you must be running the [profile()](#profile) function.  <!-- See [Speed Up JavaScript Runtime](../rendering-tools/js-runtime.md).  -->
 
 ### Syntax
 
-```console
+```javascript
 profileEnd([name])
 ```
 
 ### Example
 
-1.  Run the [profile()](#profile) method to start profiling.
-1.  Run the `profileEnd()` method to stop profiling and display the results in the **Memory** tool.
+1. Run the [profile()](#profile) function to start profiling.
 
-    ```console
+1. Run the `profileEnd()` function to stop profiling and display the results in the **Memory** tool:
+
+    ```javascript
     profileEnd("My profile")
     ```
 
-Profiles can also be nested.  In the following code, the result is the same whatever the order.
+For more information, see [profile](#profile), above.
 
-```console
-profile('A');
-profile('B');
-profileEnd('A');
-profileEnd('B');
-```
-
-The result appears as a Heap Snapshot in the **Memory** tool, with grouped profiles:
-
-:::image type="content" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="Grouped profiles." lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
-
-> [!NOTE]
-> Multiple CPU profiles can operate at the same time and you are not required to close-out each one in creation order.
+<br/><br/>
 
 ---
 
-
 <!-- ====================================================================== -->
 ## queryObjects
+<!-- ## queryObjects(Constructor) -->
 
-`queryObjects(Constructor)` returns an array of objects created with the specified constructor.  The scope of `queryObjects()` is the currently chosen runtime context in the **Console**.
+<!-- summary to bubble up: -->
+Returns an array of the objects that were created by the specified constructor.
+
+<!-- add'l info -->
+The scope of `queryObjects()` is the currently selected runtime context in the **Console**.
 
 ### Syntax
 
-```console
+```javascript
 queryObjects(Constructor)
 ```
 
@@ -603,27 +745,33 @@ queryObjects(Constructor)
 
 *  `queryObjects(functionName)` returns all objects that were instantiated using `new functionName()`.
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## table
+<!-- ## table(data\[, columns\]) -->
 
-`table(data[, columns])` logs object data with table formatting based upon the data object in with optional column headings.
+<!-- summary to bubble up: -->
+Logs object data, formatted as a table with column headings, for the specified data object.
+
+<!-- add'l info: n/a -->
+For example, using this function, you can display a list of people's names as a table, in the **Console**.
 
 ### Syntax
 
-```console
+```javascript
 table(data[, columns])
 ```
 
 ### Example
 
-The following code displays a list of names using a table in the console:
+The following code displays a list of names using a table in the console, with the column headings defaulting to the variable names:
 
-```console
+```javascript
 var names = {
-    0:  {
+    0: {
         firstName:  "John",
         lastName:  "Smith"
     },
@@ -635,61 +783,77 @@ var names = {
 table(names);
 ```
 
-The result of the `table()` method:
+Result:
 
-:::image type="content" source="../media/console-table-display.msft.png" alt-text="The result of the table() method." lightbox="../media/console-table-display.msft.png":::
+:::image type="content" source="../media/console-table-display.msft.png" alt-text="The result of the table() function." lightbox="../media/console-table-display.msft.png":::
+
+<br/><br/>
 
 ---
-
 
 <!-- ====================================================================== -->
 ## undebug
+<!-- ## undebug(function) -->
 
-`undebug(method)` stops the debug of the specified method. So when the method is requested, the debugger is no longer invoked.
+<!-- summary to bubble up: -->
+Stops the debug of the specified function, so that when the function is requested, the debugger is no longer invoked.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
-```console
-undebug(method)
+```javascript
+undebug(function)
 ```
 
 ### Example
 
-```console
+```javascript
 undebug(getData);
 ```
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## unmonitor
+<!-- ## unmonitor(function) -->
 
-`unmonitor(method)` stops the monitoring of the specified method.  This method is used in concert with the [monitor()](#monitor) method.
+<!-- summary to bubble up: -->
+Stops the monitoring of the specified function.
+
+<!-- add'l info -->
+This function is used together with [monitor()](#monitor).
 
 ### Syntax
 
-```console
-unmonitor(method)
+```javascript
+unmonitor(function)
 ```
 
 ### Example
 
-```console
+```javascript
 unmonitor(getData);
 ```
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## unmonitorEvents
+<!-- ## unmonitorEvents(object\[, events\]) -->
 
-`unmonitorEvents(object[, events])` stops monitoring events for the specified object and events.
+<!-- summary to bubble up: -->
+Stops monitoring events for the specified object and events.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
-```console
+```javascript
 unmonitorEvents(object[, events])
 ```
 
@@ -697,38 +861,52 @@ unmonitorEvents(object[, events])
 
 The following code stops all event monitoring on the `window` object:
 
-```console
+```javascript
 unmonitorEvents(window);
 ```
 
-You can also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently chosen element, and then stops monitoring `mousemove` events (perhaps to reduce noise in the console output).
+You can also selectively stop monitoring specific events on an object.  For example, the following code starts monitoring all `mouse` events on the currently selected element, and then stops monitoring `mousemove` events (perhaps to reduce noise in the console output):
 
-```console
+```javascript
 monitorEvents($0, "mouse");
 unmonitorEvents($0, "mousemove");
 ```
 
----
+<br/><br/>
 
+---
 
 <!-- ====================================================================== -->
 ## values
+<!-- ## values(object) -->
 
-`values(object)` returns an array containing the values of all properties belonging to the specified object.
+<!-- summary to bubble up: -->
+Returns an array containing the values of all properties belonging to the specified object.
+
+<!-- add'l info: n/a -->
 
 ### Syntax
 
-```console
+```javascript
 values(object)
 ```
 
 ### Example
 
-```console
+```javascript
 values(object);
 ```
 
+<br/><br/>
+
 ---
+
+<!-- ====================================================================== -->
+## See also
+
+<!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
+* [Console features reference](reference.md)
+* [Console object API Reference](api.md) - `console.*` functions, such as `console.log()` and `console.error()`.
 
 
 <!-- ====================================================================== -->

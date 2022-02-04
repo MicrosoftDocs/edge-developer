@@ -36,9 +36,9 @@ Think of memory as a graph with primitive types (like numbers and strings) and o
 
 An object can hold memory in two ways:
 
-*   Directly; the memory is held by the object itself.
+*  Directly; the memory is held by the object itself.
 
-*   Implicitly, by holding references to other objects.  An object holding references to other objects prevents those objects from being automatically disposed by a garbage collector (GC).
+*  Implicitly, by holding references to other objects.  An object holding references to other objects prevents those objects from being automatically disposed by a garbage collector (GC).
 
 The [Memory](./heap-snapshots.md) panel in DevTools is a tool for investigating memory issues.
 
@@ -66,11 +66,11 @@ _Garbage-collection roots_ are made up of _handles_ that are created (as either 
 
 There are many internal GC roots, most of which aren't interesting for the users.  From the applications standpoint, there are the following kinds of roots:
 
-*   Window global object (in each iframe).  In the heap snapshots, the `distance` field indicates the number of property references on the shortest retaining path from the window.
+*  Window global object (in each iframe).  In the heap snapshots, the `distance` field indicates the number of property references on the shortest retaining path from the window.
 
-*   The document DOM tree, consisting of all native DOM nodes that are reachable by traversing the document.  Not all of the nodes have JavaScript wrappers, but if a node has a wrapper, the node is alive while the document is alive.
+*  The document DOM tree, consisting of all native DOM nodes that are reachable by traversing the document.  Not all of the nodes have JavaScript wrappers, but if a node has a wrapper, the node is alive while the document is alive.
 
-*   Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
+*  Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
 
 >[!TIP]
 > Before taking a heap snapshot in the [Memory](./heap-snapshots.md) tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.
@@ -79,7 +79,7 @@ The memory graph starts with a root, which may be the `window` object of the bro
 
 :::image type="content" source="../media/memory-problems-dontcontrol.msft.png" alt-text="You can't control how the root object is garbage-collected." lightbox="../media/memory-problems-dontcontrol.msft.png":::
 
-Whatever is not reachable from the root gets garbage-collected.
+Whatever isn't reachable from the root gets garbage-collected.
 
 > [!NOTE]
 > The number that's shown in the [Shallow size](#shallow-size) and [Retained size](#retained-size) columns is the number of bytes.
@@ -92,9 +92,9 @@ The heap is a network of interconnected objects.  In the mathematical world, thi
 
 Nodes and edges in a graph are given labels as follows:
 
-*   _Nodes_ (or _objects_) are labelled using the name of the _constructor_ function that was used to build them.
+*  _Nodes_ (or _objects_) are labelled using the name of the _constructor_ function that was used to build them.
 
-*   _Edges_ are labelled using the names of _properties_.
+*  _Edges_ are labelled using the names of _properties_.
 
 Learn [how to record a profile using the Heap Profiler](./heap-snapshots.md).  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory](./heap-snapshots.md) tool include **Distance**, which is the distance from the garbage-collection root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that's something worth investigating.
 
@@ -110,11 +110,11 @@ Dominator objects are comprised of a tree structure, because each object has exa
 
 In the following figure:
 
-*   Node 1 dominates node 2.
-*   Node 2 dominates nodes 3, 4 and 6.
-*   Node 3 dominates node 5.
-*   Node 5 dominates node 8.
-*   Node 6 dominates node 7.
+*  Node 1 dominates node 2.
+*  Node 2 dominates nodes 3, 4 and 6.
+*  Node 3 dominates node 5.
+*  Node 5 dominates node 8.
+*  Node 6 dominates node 7.
 
 :::image type="content" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Dominator tree structure." lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
 
@@ -154,23 +154,23 @@ When profiling memory, it is helpful to understand why heap snapshots look a cer
 
 In JavaScript, there are three primitive types:
 
-*   Numbers (such as `3.14159...`).
-*   Booleans (`true` or `false`).
-*   Strings (such as `"Werner Heisenberg"`).
+*  Numbers (such as `3.14159...`).
+*  Booleans (`true` or `false`).
+*  Strings (such as `"Werner Heisenberg"`).
 
 Primitives cannot reference other values, and are always leaf nodes (also called _terminating nodes_).
 
 **Numbers** can be stored as either:
 
-*   Immediate 31-bit integer values that are called **small integers** (_SMIs_).
+*  Immediate 31-bit integer values that are called **small integers** (_SMIs_).
 
-*   Heap objects, referred to as **heap numbers**.  Heap numbers are used for storing values that don't fit into the SMI form, such as **doubles**, or when a value needs to be **boxed**, such as setting properties on it.
+*  Heap objects, referred to as **heap numbers**.  Heap numbers are used for storing values that don't fit into the SMI form, such as **doubles**, or when a value needs to be **boxed**, such as setting properties on it.
 
 **Strings** can be stored in either:
 
-*   The **VM heap**.
+*  The **VM heap**.
 
-*   Externally in the **renderer's memory**.  A _wrapper object_ is created and used for accessing external storage where, for example, script sources and other content that is received from the Web is stored, rather than copied onto the VM heap.
+*  Externally in the **renderer's memory**.  A _wrapper object_ is created and used for accessing external storage where, for example, script sources and other content that is received from the Web is stored, rather than copied onto the VM heap.
 
 Memory for new JavaScript objects is allocated from a dedicated JavaScript heap (or _VM heap_).  These objects are managed by VM V8's garbage collector, and therefore, these objects stay alive as long as there is at least one strong reference<!-- undefined term --> to them.
 

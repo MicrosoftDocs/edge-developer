@@ -34,17 +34,15 @@ When using CSS-in-JS libraries, you can copy CSS declarations (a CSS property an
 
 To copy a style rule as JavaScript:
 
-1. In the **Styles** pane of the **Elements** tool, open the contextual menu (right-click) on a declaration in a style rule.
+1. In DevTools, open the **Elements** tool, and then click the **Styles** tab.
 
-1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
+1. Right-click a declaration in a style rule, and then select **Copy declaration as JS** or **Copy all declarations as JS**.
 
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
-:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands" lightbox="images/copy-declaration-as-js.msft.png":::
-   Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
-:::image-end:::
+   :::image type="content" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands." lightbox="images/copy-declaration-as-js.msft.png":::
 
-This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, navigate to [CSS features reference](reference.md).
+This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
 
 
 <!-- ====================================================================== -->
@@ -75,9 +73,7 @@ function addStyle() {
 
 This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` color is initially set by calling a CSS Object Model function, and then can be changed from `pink` to `lightblue` by using the **Styles** pane.
 
-:::image type="complex" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue." lightbox="../media/css-in-js.msft.png":::
-   Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
-:::image-end:::
+:::image type="content" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'." lightbox="../media/css-in-js.msft.png":::
 
 Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).
 
@@ -89,7 +85,9 @@ This section is an excerpt from the blog post [CSS-in-JS support in DevTools](ht
 
 Here's what we mean by _CSS-in-JS_, and how it's different from regular CSS.  The definition of _CSS-in-JS_ is somewhat vague.  In a broad sense, it's an approach for managing CSS code using JavaScript.  For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
 
-In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page by the CSS Object Model APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.  A special case here is that the content of a `<style>` element can be updated by using the CSS Object Model API, causing the source to become out of sync with the actual CSS stylesheet.
+In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page by the CSS Object Model APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.
+
+A special case here is that the content of a `<style>` element can be updated by using the CSS Object Model API, causing the source to become out of sync with the actual CSS stylesheet.
 
 If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSS Object Model APIs under the hood, depending on the mode of development and the browser.
 
