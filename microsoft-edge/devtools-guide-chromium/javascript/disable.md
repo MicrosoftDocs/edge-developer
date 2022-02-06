@@ -28,7 +28,7 @@ To turn off JavaScript:
 
 1. [Open DevTools](../open/index.md).
 
-1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
    :::image type="content" source="../media/javascript-console-command.msft.png" alt-text="The Command Menu." lightbox="../media/javascript-console-command.msft.png":::
 
@@ -46,7 +46,7 @@ To see whether the page depends on JavaScript while loading, refresh the page.
 
 To re-enable JavaScript:
 
-1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
 1. Select the **Enable JavaScript** command.
 

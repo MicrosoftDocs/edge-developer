@@ -120,7 +120,7 @@ Previously, you launched Microsoft Edge from Visual Studio.  Alternatively, you 
 
 1.  In the **Attach to Process** dialog, set **Connection type** to **Chrome devtools protocol websocket (no authentication)**.
 
-1.  In the **Connecting target** textbox, type `http://localhost:9222/` and select `Enter`.
+1.  In the **Connecting target** textbox, type `http://localhost:9222/` and press `Enter`.
 
 1.  Review the list of open tabs you have in Microsoft Edge listed out in the **Available processes** section.
 

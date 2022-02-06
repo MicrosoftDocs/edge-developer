@@ -28,7 +28,7 @@ There are several ways to open Microsoft Edge DevTools, to quickly access differ
     *  In Microsoft Edge, select **Settings and more** (`...`) >  **More Tools** >  **Developer Tools**.
 
 *  Use the keyboard.
-    *  Press `F12` or `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+    *  Press `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 See also [Keyboard shortcuts](../shortcuts/index.md).
 
@@ -40,7 +40,7 @@ See also [Keyboard shortcuts](../shortcuts/index.md).
 
 When you're viewing a rendered webpage in the browser, to inspect the styles or attributes of a [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) node, do either of the following:
 *  Right-click the element in the rendered webpage and select **Inspect**.
-*  Press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
+*  Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
 See [DevTools for beginners: Get started with CSS](../beginners/css.md).
 
@@ -50,13 +50,13 @@ See [DevTools for beginners: Get started with CSS](../beginners/css.md).
 <!-- ====================================================================== -->
 ## Open the Console panel
 
-To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
+To open the [Console](../console/index.md) panel to view logged messages or run JavaScript, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
 
 <!-- ====================================================================== -->
 ## Open the previous panel
 
-To jump to the previously open panel, press `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
+To jump to the previously open panel, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
 
 
 <!-- ====================================================================== -->

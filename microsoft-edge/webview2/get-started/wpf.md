@@ -91,7 +91,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
     The running project displays an empty window.
 
@@ -144,7 +144,7 @@ Add a WebView2 control to your app.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
@@ -230,7 +230,7 @@ Enable users to change the URL that the WebView2 control displays by adding an a
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Type a new URL in the address bar and choose **Go**.  For example, type `https://www.bing.com`.
 
@@ -295,7 +295,7 @@ In the constructor, `EnsureHttps` is registered as the event handler on the `Nav
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Attempt to open an HTTP site. Make sure the WebView2 control remains unchanged. However, the WebView2 control does allow you to open HTTPS sites.
 
@@ -326,7 +326,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
 
@@ -399,7 +399,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 

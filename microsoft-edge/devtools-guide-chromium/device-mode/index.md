@@ -206,7 +206,7 @@ You can also set network throttling from the **Performance** panel:
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors for geolocation." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-    Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors` and then select **Show Sensors**.
+    Or, open the Command Menu by selecting `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors` and then select **Show Sensors**.
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Showing Sensors for geolocation, from the Command Menu." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
@@ -224,7 +224,7 @@ If your page depends on orientation information from a mobile device to render p
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="The Sensors command on the More tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-1. Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
+1. Or, open the Command Menu by selecting `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
@@ -242,7 +242,7 @@ If your page depends on the user agent string from a mobile device to render pro
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions entry in the More Tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
-1. Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
+1. Or, open the Command Menu by selecting `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Showing network conditions." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
 

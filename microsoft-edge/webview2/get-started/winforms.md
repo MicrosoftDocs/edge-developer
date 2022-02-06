@@ -74,7 +74,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
     The running project displays an empty window.
 
@@ -109,7 +109,7 @@ Add a WebView2 control to your app.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Make sure the WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
@@ -182,7 +182,7 @@ Add more controls to your Windows forms from the toolbox, and then process windo
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
     Make sure the app looks like the following image.
 
@@ -218,7 +218,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Enter a new URL in the address bar, and select **Go**.  For example, enter `https://www.bing.com`.  Make sure the WebView2 control navigates to the URL.
 
@@ -279,7 +279,7 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Make sure the WebView2 control remains unchanged when navigating to an HTTP site. Go to an HTTPS site and notice that WebView2 opens HTTPS sites.
 
@@ -308,7 +308,7 @@ You can use host apps to inject JavaScript code into WebView2 controls at runtim
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Make sure the app displays an alert when you go to a website that doesn't use HTTPS.
 
@@ -382,7 +382,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1. Press **F5** to build and run the project.
+1. Press `F5` to build and run the project.
 
 1.  When you open a new URI, the WebView2 control displays it in the address bar.
 

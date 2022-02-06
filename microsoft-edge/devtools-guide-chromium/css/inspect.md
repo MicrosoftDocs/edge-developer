@@ -19,7 +19,7 @@ The **Inspect** tool button is in the upper-left corner of DevTools.  When you s
 
 ![The Inspect tool button in the upper left of DevTools.](images/inspect-tool-button.msft.png)
 
-Or, press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), to activate the **Inspect** tool.
+Or, press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), to activate the **Inspect** tool.
 
 
 <!-- ====================================================================== -->

@@ -30,7 +30,7 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 <!-- ====================================================================== -->
 ## Open the Command Menu
 
-Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Or, select **Customize And Control DevTools** (`...`) > **Run Command**.
+Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Or, select **Customize And Control DevTools** (`...`) > **Run Command**.
 
 :::image type="content" source="../media/command-menu-options-run-command.msft.png" alt-text="The Run Command." lightbox="../media/command-menu-options-run-command.msft.png":::
 

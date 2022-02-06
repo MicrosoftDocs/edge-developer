@@ -33,7 +33,7 @@ Watch JavaScript values in real-time with Live Expressions -->
 
 1. Enter the JavaScript expression `document.activeElement` into the textbox.  A **Live Expression** can be any valid JavaScript expression.
 
-1. To save the expression, press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** textbox.
+1. To save the expression, press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** textbox.
 
    The expression is now live, and displays `body` as the result:
 
@@ -82,7 +82,7 @@ To monitor the mouse movement in the current webpage:
 
 1. Open the demo webpage [Logging Mouse Movement demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove.html) in a new window or tab.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
 
 1. Move your mouse around over the rendered demo webpage.
 
@@ -101,7 +101,7 @@ To use Live Expressions to avoid excessive Console log messages:
 
 1. Open the demo webpage [Mouse movement without logging demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove-no-log.html) in a new window or tab.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
 
 1. Move your mouse around.  No log messages are output.
 

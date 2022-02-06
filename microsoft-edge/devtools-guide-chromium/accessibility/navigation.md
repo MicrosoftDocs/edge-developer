@@ -58,8 +58,8 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by keyboard
 
-*  With DevTools open, press `Control`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
-*  Press `Control`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
+*  With DevTools open, press `Ctrl`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
+*  Press `Ctrl`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
 *  Press `Tab` or `Shift`+`Tab` repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
 
 #### Known issues
@@ -72,7 +72,7 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _panel_ or _drawer_ item.
 
-1. With DevTools open, press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. With DevTools open, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
    The **Command Menu** is a fuzzy-search autocomplete combobox.
 
@@ -119,7 +119,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  Press `Tab` to move between attribute values.  When you hear "space", you're inside of an empty text input, and can type a new attribute value.
 
-*  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change and hear the entire contents of the element.
+*  Press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change and hear the entire contents of the element.
 
 #### Known issues
 
@@ -131,9 +131,9 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  Press `Tab` to move between attribute values.  When you hear the name of the element, for instance, `h2`, you're inside of a text input, and you can change the type of the element.
 
-*  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
+*  Press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
 
-For example, when you type `h3` and then press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
+For example, when you type `h3` and then press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
 
 
 <!-- ====================================================================== -->

@@ -58,7 +58,7 @@ To get the most out of this tutorial, open the demo and try out the features on 
    :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
    -->
 
-1. To [Open DevTools](../open/index.md), press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens.
+1. To [Open DevTools](../open/index.md), press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens.
 
    :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="The Console." lightbox="../media/network-glitch-console.msft.png":::
 
@@ -262,7 +262,7 @@ To focus in on a certain type of file, such as stylesheets:
 
    :::image type="content" source="../media/network-glitch-network-filter-file-type-css.msft.png" alt-text="Show CSS files only." lightbox="../media/network-glitch-network-filter-file-type-css.msft.png":::
 
-1. To also display scripts, press and hold `Control` (Windows, Linux) or `Command` (macOS), and then click **JS**.
+1. To also display scripts, press and hold `Ctrl` (Windows, Linux) or `Command` (macOS), and then click **JS**.
 
    :::image type="content" source="../media/network-glitch-network-filter-file-type-css-js.msft.png" alt-text="Show CSS and JS files only." lightbox="../media/network-glitch-network-filter-file-type-css-js.msft.png":::
 
@@ -276,7 +276,7 @@ For other filtering workflows, see [Filter requests](./reference.md#filter-reque
 
 How does a page look and behave when some of the page resources aren't available?  Does it fail completely, or is it still somewhat functional?  Block requests to find out:
 
-1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
 1. Type `block`, select **Show Request Blocking**, and then press `Enter`.
 

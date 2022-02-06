@@ -37,9 +37,9 @@ Start with a basic desktop project that contains a single main window.
 1.  Enter a project name.
 1.  Change **Location** and **Solution name** default values as needed.
 1.  Click **Create**.
-1.  In **New Universal Windows Platform Project**, choose the following values.
-    *   **Target version**:  **Windows 10, version 1903 (build 18362)** or later
-    *   **Minimum version**:  **Windows 10, version 1803 (build 17134)**
+1.  In **New Universal Windows Platform Project**, select the following values:
+    *   **Target version**:  **Windows 10, version 1903 (build 18362)** or later.
+    *   **Minimum version**:  **Windows 10, version 1803 (build 17134)**.
 
 1. Click **OK**.
 
@@ -55,7 +55,7 @@ Start with a basic desktop project that contains a single main window.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 ## Step 2 - Add a WebView2 control to your project
 
@@ -116,7 +116,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control 
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)**, to save the project.
 
-1.  Press **F5**, to build and run the project.
+1.  Press `F5`, to build and run the project.
 
 1.  Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com).
 
@@ -177,7 +177,7 @@ To allow users to control the webpage that is displayed in your WebView2 control
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Enter a new URL in the address bar, and then choose **Go**.  For example, enter `https://www.bing.com`.
 
@@ -244,7 +244,7 @@ In this section, you add code to import the WebView2 Core library.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1.  Make sure navigation is blocked to HTTP sites, and allowed for HTTPS sites.
 
@@ -281,7 +281,7 @@ As an example, add scripts that send an alert when a user tries to open non-HTTP
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
 1. Try to open a non-HTTPS site such as `http://www.bing.com`. Make sure the app displays an alert when you attempt to open a non-HTTPS website.
 

@@ -270,7 +270,9 @@ Issues are evaluated live while you edit your code.  As you type, you get feedba
 JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger.
 
 1.  To start debugging, do either of the following:
-    * Select **F5**, or on the menu bar select the **Debug** icon and then select **Run and debug**.
+
+    * Press `F5`, or on the menu bar select the **Debug** icon and then select **Run and debug**.
+
     * Open the Visual Studio Code command palette and then select **Debug: Open Link**.
 
     :::image type="content" source="./media/edge-devtools-for-vscode-start-session.png" alt-text="Start Microsoft Edge DevTools from the JavaScript debugger." lightbox="./media/edge-devtools-for-vscode-start-session.png":::

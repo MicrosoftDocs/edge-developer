@@ -23,7 +23,7 @@ To quickly open the **Search** tool:
 
 1. [Open DevTools](../open/index.md) (`F12`).
 
-1. Press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
+1. Press `Ctrl`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
 
 The **Search** tool appears in the **Drawer**, and shows the search toolbar:
 
@@ -39,7 +39,7 @@ To open the **Search** tool from the **Command Menu**:
 
 1. [Open DevTools](../open/index.md) (`F12`).
 
-1. Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
+1. Open the [Command Menu](../command-menu/index.md), by pressing `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
 
 1. Type `search`, and then press `Enter`.
 

@@ -105,7 +105,7 @@ The project is ready to use and build against the WebView2 API.
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
  The sample app displays an empty window.
 
@@ -172,7 +172,7 @@ In the callback, set a few more settings, resize the WebView2  to fill 100% of t
 
 1.  Click **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1.  Press **F5** to build and run the project.
+1.  Press `F5` to build and run the project.
 
     Now you have a WebView2 window displaying the Bing page.
 
@@ -300,7 +300,7 @@ As an example to understand the mechanism, the following steps occur when you tr
     
 1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
-1. Press **F5** to build and run the project.
+1. Press `F5` to build and run the project.
 
    The URL appears in a pop-up window before navigating to a webpage.  The sample app with a Webview2 control displays the Bing website, `http://www.bing.com`.  The sample app also displays an **OK* button.  Users click **OK** to continue to the URL.
 

@@ -625,7 +625,7 @@ You can also specify one of the available types of events, strings that map to p
 | `mouse` | "click", "dblclick", "mousedown", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel" |
 | `key` | "keydown", "keypress", "keyup", "textInput" |
 | `touch` | "touchcancel", "touchend", "touchmove", "touchstart" |
-| `control` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |
+| `Ctrl` | "blur", "change", "focus", "reset", "resize", "scroll", "select", "submit", "zoom" |
 
 ### Example
 

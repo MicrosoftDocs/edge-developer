@@ -17,7 +17,7 @@ The **Console** tool is a great way to interact with the webpage in the browser.
 
 To reference the header of the webpage:
 
-1. Open the DevTools **Console**.  To do this from a webpage, you can press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. Open the DevTools **Console**.  To do this from a webpage, you can press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 1. Type or paste the following code into the **Console**, and then press `Enter`:
 
@@ -37,7 +37,7 @@ To reference the header of the webpage:
 
 You can manipulate the webpage from the **Console**, as follows.  In this example, you set a value in the DOM by using the Console, to affect the webpage styling: you add a green border around the header.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the present webpage.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the present webpage.
 
 1. Paste the following code into the **Console**:
 

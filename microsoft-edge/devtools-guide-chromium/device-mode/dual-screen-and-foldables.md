@@ -9,12 +9,12 @@ ms.date: 05/04/2021
 ---
 # Emulate dual-screen and foldable devices
 
-You can emulate the following dual-screen and foldable devices in Microsoft Edge DevTools.
+You can emulate the following dual-screen and foldable devices in Microsoft Edge DevTools, using the Device Emulation feature of DevTools:
 
 * [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)
 * [Samsung Galaxy Fold](https://www.samsung.com/global/galaxy/galaxy-fold)
 
-Emulate the devices and toggle between the following postures.
+Emulate the devices and toggle between the following postures:
 
 *  Single-screen or folded posture
 *  Dual-screen or unfolded posture
