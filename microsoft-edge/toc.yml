@@ -77,7 +77,7 @@
           items:
             - name: About the list of tools
               href: devtools-guide-chromium/about-tools.md
-# Non-panel tools on toolbar ==================================================
+# Icon tools ==================================================================
 # Inspect tool ----------------------------------------------------------------
             - name: Inspect tool
               items:
@@ -98,7 +98,7 @@
                 - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
                   href: devtools-guide-chromium/device-mode/testing-other-browsers.md
                   displayName: Device Emulation, Device Emulator, Device Mode
-# Non-closable panel tools, in default order ==================================
+# Permanent tool tabs =========================================================
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
@@ -220,20 +220,20 @@
 # More tools ==================================================================
             - name: More tools
               items:
-# Closable panel tools, in alpha order ========================================
-    # 3D View tool ----------------------------------------------------------------
+# Optional tool tabs ==========================================================
+# 3D View tool ----------------------------------------------------------------
                 - name: 3D View tool
                   items:
                     - name: Navigate z-index, DOM, and layers using the 3D View tool  # added article
                       href: devtools-guide-chromium/3d-view/index.md
                       displayName: 3D View tool, Layers tool
-    # Animations tool -------------------------------------------------------------
+# Animations tool -------------------------------------------------------------
                 - name: Animations tool
                   items:
                     - name: Inspect animations
                       href: devtools-guide-chromium/inspect-styles/animations.md
                       displayName: Animations tool
-    # Application tool ------------------------------------------------------------
+# Application tool ------------------------------------------------------------
                 - name: Application tool, for storage
                   items:
                     - name: View, edit, and delete cookies
@@ -271,59 +271,59 @@
                     - name: Debug background services
                       href: devtools-guide-chromium/javascript/background-services.md
                       displayName: Application tool
-    # Changes tool ----------------------------------------------------------------
+# Changes tool ----------------------------------------------------------------
                 - name: Changes tool
                   items:
                     - name: Track changes to files using the Changes tool  # added article
                       href: devtools-guide-chromium/changes/changes-tool.md
                       displayName: Changes tool
-    # Coverage tool ---------------------------------------------------------------
+# Coverage tool ---------------------------------------------------------------
                 - name: Coverage tool
                   items:
                     - name: Find unused JavaScript and CSS code with the Coverage tool
                       href: devtools-guide-chromium/coverage/index.md
                       displayName: Coverage tool
-    # CSS Overview tool -----------------------------------------------------------
+# CSS Overview tool -----------------------------------------------------------
                 # - name: CSS Overview tool  # un-comment node when add article to repo
                 #   items:
                 #     - name: Identify potential CSS improvements  # pending
                 #       href: devtools-guide-chromium/issues/index.md  # pending
                 #       displayName: CSS Overview tool
-    # Detached Elements tool ------------------------------------------------------
+# Detached Elements tool ------------------------------------------------------
                 - name: Detached Elements tool
                   items:
                     - name: Debug DOM memory leaks with the Detached Elements tool # added article
                       href: devtools-guide-chromium/memory-problems/dom-leaks.md
                       displayName: Detached Elements tool
-    # Developer Resources tool ----------------------------------------------------
+# Developer Resources tool ----------------------------------------------------
                 # - name: Developer Resources tool  # un-comment node when add article or jump page to repo
                 #   items:
                 #       displayName: Developer Resources tool
-    # Issues tool -----------------------------------------------------------------
+# Issues tool -----------------------------------------------------------------
                 - name: Issues tool
                   items:
                     - name: Find and fix problems using the Issues tool
                       href: devtools-guide-chromium/issues/index.md
                       displayName: Issues tool
-    # JavaScript Profiler tool ----------------------------------------------------
+# JavaScript Profiler tool ----------------------------------------------------
                 #   deprecated  # keep commented-out node while tool remains in More Tools menu
-    # Layers tool -----------------------------------------------------------------
+# Layers tool -----------------------------------------------------------------
                 # - name: Layers tool  # un-comment node when add article or jump page to repo
                 #   items:
                 #       displayName: Layers tool
-    # Lighthouse tool -------------------------------------------------------------
+# Lighthouse tool -------------------------------------------------------------
                 - name: Lighthouse tool  # new jump page  # main article is in Accessibility
                   items:
                     - name: Lighthouse tool
                       href: devtools-guide-chromium/lighthouse/lighthouse-tool.md
-                      displayName: Lighthouse tool
-    # Media tool ------------------------------------------------------------------
+                      displayName: Lighthouse tool, Audits tool
+# Media tool ------------------------------------------------------------------
                 - name: Media tool
                   items:
                     - name: View and debug media players information
                       href: devtools-guide-chromium/media-panel/index.md
                       displayName: Media tool
-    # Memory tool -----------------------------------------------------------------
+# Memory tool -----------------------------------------------------------------
                 - name: Memory tool
                   items:
                     - name: Fix memory problems
@@ -345,13 +345,13 @@
                     - name: Speed up JavaScript runtime
                       href: devtools-guide-chromium/rendering-tools/js-runtime.md
                       displayName: Memory tool
-    # Memory Inspector tool -------------------------------------------------------
+# Memory Inspector tool -------------------------------------------------------
                 # - name: Memory Inspector tool  # un-comment node when add article to repo
                 #   items:
                 #     - name: Inspect JavaScript ArrayBuffer with the Memory Inspector  # pending
                 #       href: devtools-guide-chromium/memory-inspector/index.md  # pending
                 #       displayName: Memory Inspector tool
-    # Network tool ----------------------------------------------------------------
+# Network tool ----------------------------------------------------------------
                 - name: Network tool
                   items:
                     - name: Inspect network activity
@@ -373,7 +373,7 @@
                     - name: Service Worker improvements  # added article
                       href: devtools-guide-chromium/service-workers/index.md
                       displayName: Network tool, Application tool, Sources tool
-    # Network conditions tool -----------------------------------------------------
+# Network conditions tool -----------------------------------------------------
                 - name: Network conditions tool
                   items:
                     - name: Network conditions tool  # new jump page
@@ -383,11 +383,11 @@
                     - name: Override the user agent string
                       href: devtools-guide-chromium/device-mode/override-user-agent.md
                       displayName: Network Conditions tool, Device Emulation, Device Emulator
-    # Network request blocking tool -----------------------------------------------
+# Network request blocking tool -----------------------------------------------
                 # - name: Network request blocking tool  # un-comment node when add article or jump page to repo
                 #   items:
                 #       displayName: Network request blocking tool
-    # Performance tool ------------------------------------------------------------
+# Performance tool ------------------------------------------------------------
                 - name: Performance tool
                   items:
                     - name: Get started analyzing runtime performance
@@ -409,25 +409,25 @@
                     - name: Timeline event reference
                       href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                       displayName: Performance tool
-    # Performance monitor tool ----------------------------------------------------
+# Performance monitor tool ----------------------------------------------------
                 - name: Performance monitor tool
                   items:
                     - name: Measure runtime performance of a page using the Performance monitor tool  # added article
                       href: devtools-guide-chromium/performance-monitor/performance-monitor-tool.md
                       displayName: Performance monitor tool
-    # Quick source tool -----------------------------------------------------------
+# Quick source tool -----------------------------------------------------------
                 - name: Quick source tool  # new jump page
                   items:
                     - name: Display or edit source files using the Quick source tool
                       href: devtools-guide-chromium/quick-source/quick-source-tool.md
                       displayName: Quick source tool  # also indexed elsewhere in this file
-    # Recorder tool ---------------------------------------------------------------
+# Recorder tool ---------------------------------------------------------------
                 # - name: Recorder tool  # un-comment node when add article to repo
                 #   items:
                 #     - name: Record, replay and measure user flows  # pending
                 #       href: devtools-guide-chromium/recorder/recorder-tool.md  # pending
                 #       displayName: Recorder tool
-    # Rendering tool --------------------------------------------------------------
+# Rendering tool --------------------------------------------------------------
                 - name: Rendering tool
                   items:
                     - name: Emulate dark or light schemes in the rendered page  # added article
@@ -438,19 +438,19 @@
                       href: devtools-guide-chromium/css/print-preview.md
                       displayName: Rendering tool
                   # some articles are in Accessibility section
-    # Search tool -----------------------------------------------------------------
+# Search tool -----------------------------------------------------------------
                 - name: Search tool
                   items:
                     - name: Find source files for a page using the Search tool  # added article
                       href: devtools-guide-chromium/search/search-tool.md
                       displayName: Search tool
-    # Security tool ---------------------------------------------------------------
+# Security tool ---------------------------------------------------------------
                 - name: Security tool
                   items:
                     - name: Understand security issues using the Security tool
                       href: devtools-guide-chromium/security/index.md
                       displayName: Security tool
-    # Sensors tool ----------------------------------------------------------------
+# Sensors tool ----------------------------------------------------------------
                 - name: Sensors tool
                   items:
                     - name: Override geolocation with the Sensors tool  # orig: was in "Mobile simulation"
@@ -460,21 +460,21 @@
                     - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
                       href: devtools-guide-chromium/device-mode/orientation.md
                       displayName: Sensors tool, Device Emulation
-    # WebAudio tool ---------------------------------------------------------------
+# WebAudio tool ---------------------------------------------------------------
                 # - name: WebAudio tool  # un-comment node when add article or jump page to repo
                 #   items:
                 #      displayName: WebAudio tool
-    # WebAuthn tool ---------------------------------------------------------------
+# WebAuthn tool ---------------------------------------------------------------
                 - name: WebAuthn tool
                   items:
                     - name: Emulate authenticators and debug WebAuthn
                       href: devtools-guide-chromium/webauthn/index.md
                       displayName: WebAuthn tool
-    # Welcome tool ----------------------------------------------------------------
+# Welcome tool ----------------------------------------------------------------
                 # - name: Welcome tool  # un-comment node when add article or jump page to repo
                 #   items:
                 #     displayName: Welcome tool
-    # /Tools bucket
+# /Tools bucket
 # LOWER NON-TOOL NODES ========================================================
 # Command Menu ----------------------------------------------------------------
         - name: Command Menu and keyboard shortcuts
