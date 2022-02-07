@@ -123,6 +123,7 @@ In the following figure, the **Computed** panel is filtered to only show declara
 ## Toggle a pseudo-class
 
 To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
+<!-- :focus-within, :focus-visible, :target. -->
 
 1. [Select an element](#select-an-element).
 
@@ -136,7 +137,7 @@ To toggle a pseudo-class, such as `:active`, `:focus`, `:hover`, or `:visited`:
 
    :::image type="content" source="../media/css-elements-styles-hov-hover.msft.png" alt-text="Toggle the :hover pseudo-class." lightbox="../media/css-elements-styles-hov-hover.msft.png":::
 
-For an interactive tutorial, see [Add a pseudostate to a class](../css/index.md#add-a-pseudostate-to-a-class).
+For an interactive tutorial, see [Add a pseudo-state to a class](../css/index.md#add-a-pseudostate-to-a-class).
 
 
 <!-- ====================================================================== -->

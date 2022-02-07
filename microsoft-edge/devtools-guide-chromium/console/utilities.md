@@ -75,21 +75,75 @@ These commands only work by entering them directly into the DevTools **Console**
 <!-- summary to bubble up: -->
 Returns the value of the most recently evaluated expression.
 
-### Syntax
+**Syntax:**
 
 ```javascript
 $_
 ```
 
-### Example
+### Example 1
 
-In the following figure, a simple expression (`2 + 2`) is evaluated.  The `$_` property is then evaluated, which contains the same value:
+1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
 
-:::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ is the most recently evaluated expression." lightbox="../media/console-arithmatic.msft.png":::
+1. Click in the **Console**, type the expression `2+2`, and then press `Enter`:
 
-In the following figure, the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` now becomes the latest evaluated expression, `4`:
+   ```javascript
+   2+2
+   ```
+   
+   The simple expression (`2+2`) is evaluated as you type, and the Console outputs the number `4`.  The `$_` property takes on the value `4`.
 
-:::image type="content" source="../media/console-array-length.msft.png" alt-text="$_ changes when new commands are evaluated." lightbox="../media/console-array-length.msft.png":::
+1. Type the expression `$_`, and then press `Enter`:
+
+   ```javascript
+   $_
+   ```
+
+   The value of the `$_` property is the value of the previously evaluated expression; the number 4.
+
+   ![$_ represents the most recently evaluated expression, which is the number 4 from the previously entered statement.](../media/console-arithmatic.msft.png)
+
+
+### Example 2
+
+1. To open the **Console** tool: In Edge, click **Settings and more**, hover over **More tools**, and then select **Developer tools**.  DevTools opens next to the present webpage.  Click the **Console** tab.
+
+1. Paste the following code into the **Console**, and then press `Enter`:
+
+   ```javascript
+   ["john", "paul", "george", "ringo"]
+   ```
+   
+   The evaluated expression is an array of names.
+
+1. Type the following code into the **Console**, and then press `Enter`:
+
+   ```javascript
+   $_
+   ```
+
+   `$_` represents the previously evaluated expression, which is an array of names.
+
+   
+1. Type the following code into the **Console**, and then press `Enter`:
+
+   ```javascript
+   $_.length
+   ```
+
+   The expression `$_.length` is evaluated to find the length of the array, which is the number 4.  `$_` now takes on the value 4, instead of an array of names.
+   
+1. Type the following code into the **Console**, and then press `Enter`:
+
+   ```javascript
+   $_
+   ```
+   
+   `$_` represents the previously evaluated expression, which is now the number 4.
+
+
+   ![The value of $_ changes to the value of the previously evaluated expression.](../media/console-array-length.msft.png)
+
 
 <br/><br/>
 
