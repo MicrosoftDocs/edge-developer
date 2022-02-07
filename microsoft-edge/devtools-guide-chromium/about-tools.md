@@ -9,28 +9,17 @@ ms.date: 02/02/2022
 ---
 # About the list of tools
 
-There are currently 35 tools in DevTools, not counting features that are within a tool.  There are:
+DevTools provides 35 tools:
+*  2 toolbar icons, for the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)).
+*  3 permanent toolbar tabs, for the **Elements**, **Console**, and **Sources** tools.
+*  30 optional toolbar tabs, for the optional tools.
 
-*  2 toolbar icons: the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) and **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)).
+![All the tools of DevTools, including 2 toolbar icons, 3 permanent toolbar tabs, and 30 'More tools' tabs.](media/all-tools.png)
 
-*  11 tabs on the toolbar by default:
-   *  3 tool tabs that are always open: **Elements**, **Console**, and **Sources**.
-   *  8 tool tabs that can be closed.
-
-*  30 tools in the **Customize** > **More tools** menu.
-   *  Lists the tabs that can be closed.
-
-By this accounting, DevTools provides 35 tools:
-*  2 toolbar icons.
-*  3 non-closable tabs.
-*  30 closable tabs.
-
-![All the tools of DevTools, including 2 toolbar icons, 3 permanent tool tabs, and 30 'More tools' tabs.](media/all-tools.png)
-
-These are not considered tools, but are ways to access tools:
-*  The **Drawer** is an additional toolbar for tool tabs.
+The following features are additional ways to access the tools:
+*  The **Drawer** is an additional toolbar and area to hold tool tabs.
 *  The **Command Menu** is a way to directly use features of tools.
-*  The **Settings** pages.
+*  The **Settings** pages can turn on additional features of tools.
 
 
 <!-- ====================================================================== -->
@@ -38,7 +27,7 @@ These are not considered tools, but are ways to access tools:
 
 The **More Tools** (**+**) menu on the main toolbar and on the Drawer toolbar is dynamic: it omits any tab tools that are open on that toolbar.
 
-The **Customize and control DevTools** > **More tools** menu is static: it always lists all tab tools except for **Elements**, **Console**, **Sources**.  The selected tool opens in the main toolbar if its a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
+The **More tools** menu in the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) menu is static: it always lists all of the optional tools.  The selected tool opens in the main toolbar if it's a Panel tool, or on the Drawer if it's a Drawer tool.  You can right-click the tool's tab to move it to the other toolbar.
 
 
 <!-- ====================================================================== -->
@@ -81,7 +70,7 @@ To close all of the optional tabs at once:
 <!-- ====================================================================== -->
 ## Restoring the default tool tabs
 
-To restore all the default tabs on the main toolbar:
+To restore all of the default tabs on the main toolbar:
 
 1. In DevTools, select **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) > **Preferences**.
 

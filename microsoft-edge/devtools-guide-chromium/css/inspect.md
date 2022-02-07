@@ -29,7 +29,7 @@ To try out the **Inspect** tool:
 
    ![The Inspect tool button in the upper left of DevTools.](images/inspect-tool-button.msft.png)
 
-   The button icon turns blue (![Inspect tool icon.](../media/inspect-tool-icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
+   The button icon turns blue (![The Inspect icon.](../media/inspect-tool-icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
 
 1. In the rendered webpage, hover over items and watch the information overlay and grid highlighting.
 

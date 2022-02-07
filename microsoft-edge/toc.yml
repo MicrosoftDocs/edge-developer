@@ -77,7 +77,28 @@
           items:
             - name: About the list of tools
               href: devtools-guide-chromium/about-tools.md
-# Non-closable panel tools, in default order ==================================
+# Icon tools ==================================================================
+# Inspect tool ----------------------------------------------------------------
+            - name: Inspect tool
+              items:
+                - name: Analyze pages using the Inspect tool  # added article
+                  href: devtools-guide-chromium/css/inspect.md
+                  displayName: Inspect tool
+# Device Emulation ------------------------------------------------------------
+            - name: Device Emulation  # orig: Mobile simulation
+              items:
+                - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
+                  href: devtools-guide-chromium/device-mode/index.md
+                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
+
+                - name: Emulate dual-screen and foldable devices  # added article
+                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+                  displayName: Device Emulation, Device Emulator, Device Mode
+
+                - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
+                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
+                  displayName: Device Emulation, Device Emulator, Device Mode
+# Permanent tool tabs =========================================================
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
@@ -196,28 +217,7 @@
                 - name: Map preprocessed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
                   displayName: Sources tool
-# Non-panel tools on toolbar ==================================================
-# Inspect tool ----------------------------------------------------------------
-            - name: Inspect tool
-              items:
-                - name: Analyze pages using the Inspect tool  # added article
-                  href: devtools-guide-chromium/css/inspect.md
-                  displayName: Inspect tool
-# Device Emulation ------------------------------------------------------------
-            - name: Device Emulation  # orig: Mobile simulation
-              items:
-                - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
-                  href: devtools-guide-chromium/device-mode/index.md
-                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
-
-                - name: Emulate dual-screen and foldable devices  # added article
-                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-                  displayName: Device Emulation, Device Emulator, Device Mode
-
-                - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
-                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-                  displayName: Device Emulation, Device Emulator, Device Mode
-# Closable panel tools, in alpha order ========================================
+# Optional tool tabs ==========================================================
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
               items:
