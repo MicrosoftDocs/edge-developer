@@ -32,6 +32,8 @@ In 2021, developer tooling for Microsoft Edge has taken a massive leap forward. 
 
 Catch up on all of this news and more in our year-in-review blog post, [Looking back at Microsoft Edge for developers in 2021](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/).
 
+[![Blog post: Looking back at Microsoft Edge for developers in 2021.](../../media/2022/02/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
+
 
 <!-- ====================================================================== -->
 <!-- 2 -->
