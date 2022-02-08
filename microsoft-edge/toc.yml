@@ -9,7 +9,7 @@
           displayName: DevTools
 
         - name: Why use Microsoft Edge DevTools?
-          href: devtools-guide-chromium/why-choose-microsoft-edge-devtools.md
+          href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md
           displayName: DevTools
 # UPPER NON-TOOLS NODES =======================================================
 # Overview of DevTools --------------------------------------------------------
