@@ -343,9 +343,11 @@ To use the Fixed Version distribution mode:
       icacls {Fixed Version path} /grant *S-1-15-2-1:(OI)(CI)(RX)
       ```
 
-   1. PlayReady should be working now on the user's device.  To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below:
+      PlayReady should be working now on the user's device.
 
-   ![Permission for PlayReady.](../media/play-ready-permission.png)
+   1. To confirm that PlayReady is installed correctly, in the **Security** tab of the **Fixed Version** folder, make sure permissions are granted for `ALL APPLICATION PACKAGES` and `ALL RESTRICTED APPLICATION PACKAGES`, as shown below:
+
+      ![Permission for PlayReady.](../media/play-ready-permission.png)
 
 
 <!-- ====================================================================== -->
