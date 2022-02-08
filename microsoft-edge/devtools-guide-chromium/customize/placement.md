@@ -50,7 +50,7 @@ DevTools is then undocked into its own separate, dedicated window:
 <!-- ====================================================================== -->
 ## Change placement from the main menu
 
-1.  Click **Customize and control DevTools** (`...`) and then select **Undock into separate window** (![Undock.](../media/undock-icon.msft.png)), **Dock to bottom** (![Dock to bottom.](../media/bottom-icon.msft.png)), or **Dock to left** (![Dock to left.](../media/left-icon.msft.png)).
+1. Click **Customize and control DevTools** (`...`) and then select **Undock into separate window** (![Undock.](../media/undock-icon.msft.png)), **Dock to bottom** (![Dock to bottom.](../media/bottom-icon.msft.png)), or **Dock to left** (![Dock to left.](../media/left-icon.msft.png)).
 
 :::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Selecting Undock Into Separate Window." lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
 
@@ -58,8 +58,8 @@ DevTools is then undocked into its own separate, dedicated window:
 <!-- ====================================================================== -->
 ## Change placement from the Command Menu
 
-1.  [Open the Command Menu](../command-menu/index.md), by selecting `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
-1.  After the `>` character, enter `dock`, and then select one of the following commands:
+1. [Open the Command Menu](../command-menu/index.md).  To do this, you can press `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
+1. After the `>` character, enter `dock`, and then select one of the following commands:
 
     *  **Dock to bottom**
     *  **Dock to left**
@@ -69,7 +69,7 @@ DevTools is then undocked into its own separate, dedicated window:
 
     You can also access these commands from the [main menu](#change-placement-from-the-main-menu).
 
-    :::image type="content" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The Undock command." lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
+   :::image type="content" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The Undock command." lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
 
 
 <!-- ====================================================================== -->
