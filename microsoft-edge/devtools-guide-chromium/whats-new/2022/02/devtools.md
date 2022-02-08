@@ -92,22 +92,19 @@ To learn more about heap snapshots in the Memory tool, see [Record heap snapshot
 ## Fix: The Search textbox in the Network tool can now be resized
 
 <!-- Title: Fix: the Resize the Search textbox in the Network tool -->
-<!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search textbox. -->
+<!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search textbox, so that the Refresh and Clear buttons remain visible. -->
 
-In previous versions of Microsoft Edge, the Search text box in the Network tool would not resize when changing the size of the pane.  In Microsoft Edge 97, this issue has been fixed.
+In previous versions of Microsoft Edge, in the **Network** tool, the **Search** text box doesn't resize when you change the width of the pane.  When the pane is narrow, the **Refresh** and **Clear** buttons aren't displayed.  In Microsoft Edge 97, this issue has been fixed.
 
 <!--
+before:
 ![__.](../../media/2022/02/__.png)
-<!--
-In Microsoft Edge 97, in Stable before 98 is promoted to Stable on 2/3:
-Navigate to: Microsoft Edge documentation - Microsoft Edge Development | Microsoft DocsE
-Open DevTools > Network
-Select the Search icon (the magnifying glass) in the Network tool
-Resize the Search sidebar
-Note that the size of the textbox doesn't change as you resize the sidebar/pane
-Repeat steps 1-5 in Microsoft Edge Canary, or Beta, anything v98+ and you'll see that now the Search textbox resizes as the pane is resized. Refer to the PR and bug in the comments for more info. -->
+see work item, PR, & bug for steps/info.
+-->
 
-To learn more about how to use the **Search** pane in the **Network** tool, see [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
+![In the Network tool, the Search text box now resizes to display the Refresh and Clear buttons, even when the pane is narrow.](../../media/2022/02/network-tool-search-text-box-resizes.png)
+
+To learn about the **Search** pane in the **Network** tool, see [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
 
 
 <!-- ====================================================================== -->
@@ -124,14 +121,16 @@ To learn more about how to use the **Search** pane in the **Network** tool, see 
 In previous versions of Microsoft Edge, the icons in the Service Workers section of the Application tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icon.  In Microsoft Edge 97, this issue has been fixed.
 
 <!--
-before:
+see work item re: "before" capture:
 ![The icons in the Service Workers section of the Application tool were not aligned.  The version number in the Update Cycle table was cutting off the Expand icon.](../../media/2022/02/__.png)
+-->
+
+<!--
 after:
-![The icons in the Service Workers section of the Application tool are now aligned.  The Expand icon is fully visible.](../../media/2022/02/__.png)
-
+![The icons in the Service Workers section of the Application tool are now aligned, so the Expand icon is now fully visible.](../../media/2022/02/service-worker-icons-aligned-expand-icon-visible.png)
+-->
+<!--
 The following instructions work for getting the NEW behavior.
-To get screenshots of the old behavior, recommend using Stable (before it updates to 88) [Stable has been updated to 98].  Or, get images from the PRs and bugs.
-
 1. Navigate to The Air Horner.
 2. Open DevTools.
 3. Go to the Application tool > Service Worker.
