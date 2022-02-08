@@ -59,8 +59,7 @@ To turn on forced-colors emulation, in DevTools, open the **Rendering** tool, an
 
 ![The 'Emulate CSS media feature forced-colors' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors-not-applied.png)
 
-
-![Emulate forced-colors, applied to the webpage to apply the user's reduced the color pallette ' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors-applied.png)
+<!-- ![Emulate forced-colors, applied to the webpage to apply the user's reduced the color pallette ' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors-applied.png) -->
 
 
 <!-- ====================================================================== -->
