@@ -1,6 +1,6 @@
 ---
 title: Manage the user data folder
-description: How to manage the user data folder in a WebView2 application.
+description: How to manage user data folders in a WebView2 application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -148,7 +148,9 @@ User data folders are created automatically by WebView2.  WebView2 developers co
 
 By default, WebView2 creates a user data folder in the default location.  The default location works well for most apps.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate read and write permissions for the WebView2 application runtime.
 
-To specify the location of the user data folder, include the `userDataFolder` parameter when calling [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.  When `userDataFolder` is not specified, WebView2 creates user data folders at default locations as follows:
+To specify the location of the user data folder, include the `userDataFolder` parameter when calling [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
+
+When `userDataFolder` isn't specified, WebView2 creates user data folders at default locations as follows:
 
 *  For packaged Windows Store apps, the default user folder is the `ApplicationData\LocalFolder` subfolder in the package's folder.
 
@@ -178,7 +180,9 @@ Files in user data folders might still be in use after the WebView2 application 
 WebView2 controls can share the same user data folders, to do the following:
 
 *  Optimize system resources by running in one browser process.  See [The WebView2 process model](../concepts/process-model.md).
+
 *  Share browser history and cached resources.
+
 
 Consider the following when sharing user data folders:
 
@@ -186,6 +190,9 @@ Consider the following when sharing user data folders:
 
 *  WebView2 controls that share the same user data folder must use the same options for [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  If not, the WebView2 creation will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`.
 
-To isolate different parts of your application, or when sharing data between WebView2 controls isn't needed, you can use different user data folders.  For example, an application could consist of two WebView2 controls: one for displaying an advertisement, and the other for displaying application content.  You can use different user data folders for each WebView2 control.
+
+### Avoid running too many folders at once
+
+To isolate different parts of your application, or when sharing data between WebView2 controls isn't needed, you can use different user data folders.  For example, an application can consist of two WebView2 controls, one for displaying an advertisement and the other for displaying application content.  You can use different user data folders for each WebView2 control.
 
 Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different user data folders at the same time.
