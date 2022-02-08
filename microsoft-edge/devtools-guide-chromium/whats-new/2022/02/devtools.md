@@ -42,7 +42,7 @@ Catch up on all of this news and more in our year-in-review blog post, [Looking 
 <!-- Title: New support for automating IE mode -->
 <!-- Subtitle: Test your legacy websites and apps by automating IE mode with Internet Explorer Driver. -->
 
-Starting June 15, 2022, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. IE mode is a feature of Microsoft Edge for organizations that still need Internet Explorer 11 for compatibility with legacy websites or apps. To support testing of those legacy websites and apps you can now automate IE mode with Selenium 4 and Internet Explorer Driver. To get started, see [Use Internet Explorer Driver to automate IE mode in Microsoft Edge](../../../../webdriver-chromium/ie-mode.md).
+Starting June 15, 2022, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. IE mode is a feature of Microsoft Edge for organizations that still need Internet Explorer 11 for compatibility with legacy websites or apps. To support testing of those legacy websites and apps, you can now automate IE mode with Selenium 4 and Internet Explorer Driver. To get started, see [Use Internet Explorer Driver to automate IE mode in Microsoft Edge](../../../../webdriver-chromium/ie-mode.md).
 
 
 <!-- ====================================================================== -->
