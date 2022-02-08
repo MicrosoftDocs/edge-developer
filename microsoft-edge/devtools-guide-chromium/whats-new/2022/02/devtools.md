@@ -68,9 +68,7 @@ To turn on this "forced colors" emulation, in DevTools, open the **Rendering** t
 
 In previous versions of Microsoft Edge, the **Event Log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 97, tooltips have been added to the activity events in the **Event Log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
 
-<!-- todo: check double quotes in alt-text -->
-
-![Activity icon tooltip in the Event Log tab of the Performance tool.  This green box for the Activity event has a tooltip that reads "Painting".](../../media/2022/02/activity-event-tooltip.png)
+![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting".](../../media/2022/02/activity-event-tooltip.png)
 
 For more info on recording a performance profile, see [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance).
 
@@ -84,14 +82,7 @@ For more info on recording a performance profile, see [Record runtime performanc
 
 In previous versions of Microsoft Edge, the shallow size in a heap snapshot in the Memory tool is commonly reported as 0%, because the shallow size is so small, relative to the total size of the heap.  In Microsoft Edge 97, shallow size is now reported as a decimal value, if the size is between 0% and 1% of the heap.
 
-<!--
-![__.](../../media/2022/02/__.png)
-<!--
-Navigate to The Air Horner
-Open DevTools > Memory tool
-Take a heap snapshot
-Note that the shallow size reported as a percentage now shows some decimal values
-If you have time, repeat this in Microsoft Edge 97 in Stable (before it updates on 2/3) and you should see the past behavior. -->
+![In a heap snapshot, the Shallow Size column values between 0% and 1% of the heap are now shown as decimal values with one or two decimal places.](../../media/2022/02/shallow-size-decimal-values.png)
 
 To learn more about heap snapshots in the Memory tool, see [Record heap snapshots](../../../memory-problems/heap-snapshots.md).
 
@@ -109,7 +100,7 @@ In previous versions of Microsoft Edge, the Search text box in the Network tool 
 ![__.](../../media/2022/02/__.png)
 <!--
 In Microsoft Edge 97, in Stable before 98 is promoted to Stable on 2/3:
-Navigate to: Microsoft Edge documentation - Microsoft Edge Development | Microsoft Docs
+Navigate to: Microsoft Edge documentation - Microsoft Edge Development | Microsoft DocsE
 Open DevTools > Network
 Select the Search icon (the magnifying glass) in the Network tool
 Resize the Search sidebar
