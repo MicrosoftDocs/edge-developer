@@ -31,7 +31,7 @@ In 2021, developer tooling for Microsoft Edge has taken a massive leap forward. 
 
 Catch up on all of this news and more in our year-in-review blog post, [Looking back at Microsoft Edge for developers in 2021](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/).
 
-[![Blog post: Looking back at Microsoft Edge for developers in 2021.](../../media/2022/02/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
+[![Screenshot of the blog post: Looking back at Microsoft Edge for developers in 2021.](../../media/2022/02/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
 
 
 <!-- ====================================================================== -->
@@ -74,7 +74,7 @@ In previous versions of Microsoft Edge, the **Event Log** tab in the **Performan
 
 ![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting".](../../media/2022/02/activity-event-tooltip.png)
 
-For more info on recording a performance profile, see [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance).
+For more information on recording a performance profile, see [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance).
 
 
 <!-- ====================================================================== -->
