@@ -80,15 +80,15 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1. Use `OpenQA.Selenium.Edge` by adding the statement `using OpenQA.Selenium.Edge;` at the beginning of the file `Program.cs`:
 
-    ```csharp
-    using OpenQA.Selenium.Edge;
+   ```csharp
+   using OpenQA.Selenium.Edge;
 
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    ```
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using System.Text;
+   using System.Threading.Tasks;
+   ```
 
 You've now set up an empty Visual Studio project that's suitable for Selenium testing.  Next, configure Selenium to drive WebView2 by using either the "launch" approach or the "attach" approach.
 
@@ -136,17 +136,17 @@ To drive WebView2 with Selenium and Microsoft Edge Driver:
 
 1. Create an `EdgeOptions` object, by copying and pasting the following code:
 
-    ```csharp
-    static void Main(string[] args)
-    {
-        EdgeOptions eo = new EdgeOptions();
-    ```
+   ```csharp
+   static void Main(string[] args)
+   {
+      EdgeOptions eo = new EdgeOptions();
+   ```
 
-    Next, we'll add code that does the following:
+   Next, we'll add code that does the following:
 
-    *  Configure the `EdgeOptions` instance to use WebView2, by setting the `UseWebView` option to `true`.
-    *  Set `eo.BinaryLocation` to the file path of your WebView2 app binary.
-    *  Create an `EdgeDriver` object using the `EdgeOptions` instance.
+   *  Configure the `EdgeOptions` instance to use WebView2, by setting the `UseWebView` option to `true`.
+   *  Set `eo.BinaryLocation` to the file path of your WebView2 app binary.
+   *  Create an `EdgeDriver` object using the `EdgeOptions` instance.
 
 1. Copy the following code and paste it below the `eo` declaration line:
 
@@ -165,16 +165,16 @@ To drive WebView2 with Selenium and Microsoft Edge Driver:
 
 1. Verify that Selenium can drive WebView2.  To do this, set a breakpoint on the line `e.Url = @"https://www.microsoft.com";`, and then run the project.
 
-    ```csharp
-        //Navigate the WebView2API Sample from bing.com to microsoft.com
-        e.Url = @"https://www.microsoft.com";
+   ```csharp
+      //Navigate the WebView2API Sample from bing.com to microsoft.com
+      e.Url = @"https://www.microsoft.com";
 
-        //Exit Microsoft Edge Driver
-        e.Quit();
-    }
-    ```
+      //Exit Microsoft Edge Driver
+      e.Quit();
+   }
+   ```
 
-:::image type="content" source="../media/webdriver/microsoft.png" alt-text="Selenium running WebView2." lightbox="../media/webdriver/microsoft.png":::
+   :::image type="content" source="../media/webdriver/microsoft.png" alt-text="Selenium running WebView2." lightbox="../media/webdriver/microsoft.png":::
 
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge Driver, per the "launch" approach.
 

@@ -10,7 +10,7 @@ ms.date: 09/21/2021
 ---
 # Threading model for WebView2
 
-Supported platforms: Win32, Windows Forms, WinUi, WPF.
+Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
 The WebView2 control is based on the [Component Object Model (COM)](/windows/win32/com/the-component-object-model) and must run on a [Single Threaded Apartments (STA)](/windows/win32/com/single-threaded-apartments) thread.
 

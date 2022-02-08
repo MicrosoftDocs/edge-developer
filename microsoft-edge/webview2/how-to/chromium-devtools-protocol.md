@@ -116,9 +116,9 @@ To install the package:
 
 1. Type `Microsoft.Web.WebView2.DevToolsProtocolExtension` and then select **Microsoft.Web.WebView2.DevToolsProtocolExtension** > **Install**.
 
-1. Make sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager:
+1. Make sure **Microsoft.Web.WebView2.DevToolsProtocolExtension** is displayed in the Visual Studio NuGet Package Manager:
 
-:::image type="content" source="./media/cdp-nuget.png" alt-text="Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager." lightbox="./media/cdp-nuget.png":::
+   :::image type="content" source="./media/cdp-nuget.png" alt-text="Making sure Microsoft.Web.WebView2.DevToolsProtocolExtension is displayed in the Visual Studio NuGet Package Manager." lightbox="./media/cdp-nuget.png":::
 
 
 <!-- ====================================================================== -->

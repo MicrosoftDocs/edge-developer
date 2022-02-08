@@ -52,7 +52,7 @@ Start with a basic desktop project that contains a single main window.
 
    ![The 'Configure your new project' WPF application dialog box.](media/wpf-getting-started-create-core.png)
 
-1.  Enter values for **Project name** and **Location**, and then click **Next**.
+1. Enter values for **Project name** and **Location**, and then click **Next**.
 
    The **Additional information** dialog box appears, with a **Target Framework** dropdown list.  Choices are **.NET Core 3.0**, **3.1**, and **5.0**:
 
