@@ -87,8 +87,8 @@ The `webviewOptions` dictionary is used to configure the WebView2 environment wh
 
 | Key | Type | Default value | Details |
 |:--- |:--- |:--- |:--- |
-| browserExecutableFolder | string | (empty) | Path to a folder containing a fixed version WebView2 runtime to use. For more information about using a fixed version runtime distribution with WebView2, see [Distribute a WebView2 app and the WebView2 Runtime](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution#the-fixed-version-runtime-distribution-mode). |
-| userDataFolder | string | (empty) | Path to the user data folder that WebView2 will use. If `userDataFolder` isn't specified, Microsoft Edge Driver will create a temporary user data folder. For more information about managing the user data folder with WebView2, see [Manage the user data folder](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/user-data-folder). |
+| browserExecutableFolder | string | (empty) | Path to a folder containing a fixed version WebView2 runtime to use. For more information about using a fixed version runtime distribution with WebView2, see [Distribute a WebView2 app and the WebView2 Runtime](../webview2/concepts/distribution#the-fixed-version-runtime-distribution-mode). |
+| userDataFolder | string | (empty) | Path to the user data folder that WebView2 will use. If `userDataFolder` isn't specified, Microsoft Edge Driver will create a temporary user data folder. For more information about managing the user data folder with WebView2, see [Manage the user data folder](../webview2/concepts/user-data-folder). |
 | additionalBrowserArguments | list of strings |  | List of command-line arguments that WebView2 will pass to the browser process on launch. Arguments with an associated value should be separated by a `=` sign (for example, `['start-maximized', 'log-level=0']`). |
 | releaseChannelPreference | string |  | Preferred WebView2 evergreen runtime distribution to use. Can be `"stable"` or `"canary"`. |
 
