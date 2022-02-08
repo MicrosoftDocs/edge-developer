@@ -50,16 +50,11 @@ Starting June 15, 2022, Internet Explorer 11 will no longer be supported on cert
 <!-- Title: Emulation of forced colors in the Rendering tool -->
 <!-- Subtitle: You can now do a spot check what your product will look like on a device running in forced colors mode without having to change your operating system settings. -->
 
-In addition to emulating dark, light and print mode of the current document, you can now also see what the currently open web product appears like to users who have a forced colours enabled.  This is an accessibility feature of the operating system and this emulation allows you to do a spot check without having to change your own system. You can access the emulation in the Rendering tool of DevTools. 
+In addition to emulating dark, light and print mode of the current document, you can now also see what the currently open web product appears like to users who have "forced colors" enabled.  This is an accessibility feature of the operating system.  This emulation allows you to do a spot check without having to change your own system's settings.
 
-<!--
-![__.](../../media/2022/02/__.png)
+To turn on this "forced colors" emulation, in DevTools, open the **Rendering** tool, and then in the **Emulate CSS media feature forced-colors** dropdown list, select **forced-colors: active**.
 
-Instructions for screenshot:
-1. Go to a web site.
-2. Open the Rendering Menu.
-3. Scroll down to "Emulate CSS media feature 'forced-colors' and select 'forced-colors: active'.
--->
+![The 'Emulate CSS media feature forced-colors' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors.png)
 
 
 <!-- ====================================================================== -->
@@ -67,22 +62,15 @@ Instructions for screenshot:
 ## Activity icons in the Event Log of the Performance tool now have tooltips
 
 <!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
-<!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event: scripting, rendering, or painting. -->
+<!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event: Scripting, Rendering, or Painting. -->
 
 <!-- todo: check rewording of subtitle after capture -->
 
-In previous versions of Microsoft Edge, the Event Log in the Performance tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what activity is represented by each color.  In Microsoft Edge 97, tooltips have been added to the activity icons, representing Scripting, Rendering, Painting, System, and Idle time, for the events in the Event Log.
+In previous versions of Microsoft Edge, the **Event Log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 97, tooltips have been added to the activity events in the **Event Log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
 
-<!--
-![__.](../../media/2022/02/__.png)
-<!-- In Microsoft Edge Canary, or any channel v98+:
-Navigate to The Air Horner
-Open DevTools > Performance
-Start recording a profile. Press the airhorn a few times (mute if you don't want the noise to bother you)
-Stop recording the profile
-in the bottom pane, you can see the Summary view breaks down time with colors representing scripting, painting, etc.
-Now navigate to the Event Log
-Hover over any of the activity icons (the color boxes) for each event and you'll see a tooltip that matches the colors/activities from the Summary section -->
+<!-- todo: check double quotes in alt-text -->
+
+![Activity icon tooltip in the Event Log tab of the Performance tool.  This green box for the Activity event has a tooltip that reads "Painting".](../../media/2022/02/activity-event-tooltip.png)
 
 For more info on recording a performance profile, see [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance).
 
@@ -90,7 +78,6 @@ For more info on recording a performance profile, see [Record runtime performanc
 <!-- ====================================================================== -->
 <!-- 5 -->
 ## Shallow sizes in the Memory tool are now represented as decimal values
-
 
 <!-- Title: Better understand shallow sizes in the Memory tool -->
 <!-- Subtitle: The Memory tool has been updated to report shallow size in decimal values as a percentage of the heap. -->

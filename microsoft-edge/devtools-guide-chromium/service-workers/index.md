@@ -47,7 +47,7 @@ To make request routing easier to visualize, timelines now display the service w
 
 ### Fetch events
 
-To learn more about the `respondWith` fetch events, choose the dropdown arrow to the left of the `respondWith`.  To find more details about the **Original Request** and **Response Received**, use the corresponding dropdown arrows.
+To learn more about the `respondWith` fetch events, click the dropdown arrow to the left of the `respondWith`.  To find more details about the **Original Request** and **Response Received**, use the corresponding dropdown arrows.
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ You may now access the service worker timelines through the **Network** tool in 
 
 1.  Open the service worker you are debugging.
 1.  Choose the **Network** button to open up the [request routing experience](#network).
-1.  Use the **respondWith** dropdowns for fetch event request and response information.
+1.  Use the **respondWith** dropdown arrows for fetch event request and response information.
 
 The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
 

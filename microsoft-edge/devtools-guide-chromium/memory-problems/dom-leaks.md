@@ -120,11 +120,11 @@ Parent-child links are removed inside the detached tree.
 <!-- ====================================================================== -->
 ## Change the selected target to a different origin
 
-You can check for detached elements from different origins or frames using the **Selected target** dropdown. 
+You can check for detached elements from different origins or frames using the **Selected target** dropdown list. 
 
-1.  Click the **Selected target** dropdown.
+1.  Click the **Selected target** dropdown list.
 
-    :::image type="content" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The 'Selected target' dropdown lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
+    :::image type="content" source="./images/detached-elements-target-dropdown.msft.png" alt-text="The 'Selected target' dropdown list lets you select different origins." lightbox="./images/detached-elements-target-dropdown.msft.png":::
 
 1.  Select a different origin.
 

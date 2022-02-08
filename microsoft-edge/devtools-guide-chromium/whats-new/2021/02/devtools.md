@@ -133,9 +133,9 @@ Expand or collapse the request initiator chain and follow the highlighted row:
 ## Filtering in the Console is more consistent
 
 <!-- Title: Console improvements make filtering more consistent  -->
-<!-- Subtitle: The Log Levels dropdown is more clearly disabled when using filters in the Console sidebar.  -->
+<!-- Subtitle: The Log Levels dropdown list is more clearly disabled when using filters in the Console sidebar.  -->
 
-While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown are not available.  Previously, the **Log Levels** dropdown highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown no longer highlights when you hover on it while a filter from the **Console Sidebar** is chosen.  To learn more about filtering in the **Console**, navigate to [Filter Messages](../../../console/reference.md#filter-messages).
+While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list are not available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered on it, even while a filter from the **Console Sidebar** was chosen.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover on it while a filter from the **Console Sidebar** is selected.  To learn more about filtering in the **Console**, navigate to [Filter Messages](../../../console/reference.md#filter-messages).
 
 Previously, if you open the **Console sidebar** and hover on **Default levels**, it was highlighted:
 
@@ -161,7 +161,7 @@ Previously, the **Console** did not output valid double quote (`"`) characters i
 
 ### Emulate the CSS color-gamut media feature
 
-The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media query emulates the approximate range of colors supported by the browser and the device you are testing.  The dropdown under **Emulate CSS media feature color-gamut** contains color spaces that DevTools may emulate.  For example, to trigger a `color-gamut: p3` media query, choose **color-gamut: p3** from the dropdown.
+The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media query emulates the approximate range of colors supported by the browser and the device you are testing.  The dropdown list under **Emulate CSS media feature color-gamut** contains color spaces that DevTools can emulate.  For example, to trigger a `color-gamut: p3` media query, select **color-gamut: p3** from the dropdown list.
 
 To emulate the CSS color-gamut media feature, complete the following actions.
 

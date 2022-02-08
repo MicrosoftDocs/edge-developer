@@ -55,14 +55,14 @@ Start with a basic desktop project that contains a single main window.
 
     1.  Choose **.NET Core 3.1** or later.
 
-        :::image type="complex" source="./media/wpf-getting-started-create-core-add-info.png" alt-text="Additional information dialog box displays a drop-down menu for target framework.":::
-          The Additional information dialog box displays a drop-down menu for target framework. Choices are .NET core 3.0, 3.1. and 5.0. The dialog box displays back and creates buttons.
+        :::image type="complex" source="./media/wpf-getting-started-create-core-add-info.png" alt-text="Additional information dialog box displays a dropdown menu for target framework.":::
+          The Additional information dialog box displays a dropdown menu for target framework. Choices are .NET core 3.0, 3.1. and 5.0. The dialog box displays back and creates buttons.
         :::image-end:::
 
 1. For **WPF App (.NET Framework)** enter values for **Project name** and **Location**, then choose **.NET Framework 4.6.2** or later.
  
     :::image type="complex" source="./media/wpf-getting-started-create-fw.png" alt-text="Configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes.":::
-      The configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes. The framework drop-down menu displays .NET framework versions including 4.6.1 and 4.7.2. The dialog box displays back and create buttons.
+      The configure your new project WPF app .NET framework dialog box displays project name, location, and solution name text boxes. The framework dropdown menu displays .NET framework versions including 4.6.1 and 4.7.2. The dialog box displays back and create buttons.
     :::image-end:::
 
 1.  Click **Create** to continue.

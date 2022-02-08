@@ -143,7 +143,7 @@ There are also many columns that are hidden by default which you might find usef
 
 The network connection of the computer that you use to build sites is probably faster than the network connections of the mobile devices of your users.  By throttling the page, you get a better idea of how long a page takes to load on a mobile device.
 
-1.  Select the **Throttling** dropdown, which is set to **No throttling** by default.
+1.  Select the **Throttling** dropdown list, which is set to **No throttling** by default.
 
 1.  Select **Slow 3G**.
 

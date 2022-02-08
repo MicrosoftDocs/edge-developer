@@ -165,10 +165,10 @@ DevTools assigns each `console.*` method one of the four severity levels.
 
 For example, `console.log()` is in the `Info` group, but `console.error()` is in the `Error` group.  The [Console API Reference](api.md) describes the severity level of each applicable method.  Every message that the browser logs to the Console has a severity level too.  You may hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you may hide the other three groups.
 
-To filter the messages, choose the **Log Levels** dropdown and choose `Verbose`, `Info`, `Warning`, or `Error`.
+To filter the messages, click the **Log Levels** dropdown list and then select `Verbose`, `Info`, `Warning`, or `Error`.
 
-:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown." lightbox="../media/console-log-level-default-levels.msft.png":::
-   The **Log Levels** dropdown
+:::image type="complex" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown list." lightbox="../media/console-log-level-default-levels.msft.png":::
+   The **Log Levels** dropdown list
 :::image-end:::
 
 To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then choose **Errors**, **Warnings**, **Info**, or **Verbose**.
@@ -247,13 +247,13 @@ As you type out an expression, the autocomplete popup window for the **Console**
 
 ### Choose JavaScript context
 
-The default option for the **JavaScript Context** dropdown is **top**, which represents the [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context) of the main webpage.
+The default option for the **JavaScript Context** dropdown list is **top**, which represents the [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context) of the main webpage.
 
-:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown." lightbox="../media/console-dom-level-top.msft.png":::
-   The **JavaScript Context** dropdown
+:::image type="complex" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown list." lightbox="../media/console-dom-level-top.msft.png":::
+   The **JavaScript Context** dropdown list
 :::image-end:::
 
-Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to run JavaScript to tweak the DOM of the ad.  First, choose the browsing context of the ad from the **JavaScript Context** dropdown.
+Suppose you have an ad on your webpage embedded in an `<iframe>`.  You want to run JavaScript to tweak the DOM of the ad.  First, choose the browsing context of the ad from the **JavaScript Context** dropdown list.
 
 :::image type="complex" source="../media/console-dom-level-multiple.msft.png" alt-text="Choose a different JavaScript context." lightbox="../media/console-dom-level-multiple.msft.png":::
    Choose a different JavaScript context

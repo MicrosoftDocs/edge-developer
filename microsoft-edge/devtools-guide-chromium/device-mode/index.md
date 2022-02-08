@@ -209,7 +209,7 @@ You can also set network throttling from the **Performance** panel:
 
     :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Showing Sensors for geolocation, from the Command Menu." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
-On the **Sensors** panel, to select one of the preset locations, use the **Location** drop-down menu.  To enter a custom location, select **Other** and enter the coordinates of your custom location.  To test how your page behaves when location information is unavailable, select **Location unavailable**.
+On the **Sensors** panel, to select one of the preset locations, use the **Location** dropdown menu.  To enter a custom location, select **Other** and enter the coordinates of your custom location.  To test how your page behaves when location information is unavailable, select **Location unavailable**.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png" alt-text="Sensors panel with a preset location selected." lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo.msft.png":::
 
@@ -229,7 +229,7 @@ If your page depends on orientation information from a mobile device to render p
    **Show Sensors** for orientation
 :::image-end:::
 
-On the **Sensors** panel, you can select a preset orientation from the **Orientation** drop-down menu.  To enter your own orientation, select **Custom orientation**, and enter your own [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha), [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta), and [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) values.
+On the **Sensors** panel, you can select a preset orientation from the **Orientation** dropdown menu.  To enter your own orientation, select **Custom orientation**, and enter your own [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha), [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta), and [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) values.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Orientation options on the Sensors panel." lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
 

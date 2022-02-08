@@ -33,7 +33,7 @@ To simulate how a person with a vision deficiency would see your web page, open 
     > [!div class="mx-imgBorder"]
     > ![Opening the Rendering panel from the More tools menu.](../media/getting-to-the-rendering-tools.msft.png)
 
-1.  Scroll down to the **Emulate vision deficiencies** section, click the **No emulation** drop-down and choose one of the options.
+1.  Scroll down to the **Emulate vision deficiencies** section, click the **No emulation** dropdown list, and then select one of the options.
 
     > [!div class="mx-imgBorder"]
     > ![The Emulate vision deficiencies section in the Rendering panel.](../media/accessibility-emulate-vision-menu-options.msft.png)

@@ -116,7 +116,7 @@ The information provided in the following section is displayed to users who revi
 *   **Extension Store logo** for each language in your extension package.
 
 > [!NOTE]
-> The minimum required store listing details must be filled-out for at least one of the languages mentioned in your extension zip package.  To add or remove languages in your store listing on the Microsoft Edge Add-ons website, use the **Add a language** dropdown on the **Store listings** webpage.  Additionally, you can duplicate your assets from one language across others using the **Duplicate functionality** button on the **Language details** webpage.
+> The minimum required store listing details must be filled-out for at least one of the languages mentioned in your extension zip package.  To add or remove languages in your store listing on the Microsoft Edge Add-ons website, use the **Add a language** dropdown list on the **Store listings** webpage.  Additionally, you can duplicate your assets from one language across others using the **Duplicate functionality** button on the **Language details** webpage.
 
 | Language details property name | Description |
 |:--- |:--- |
