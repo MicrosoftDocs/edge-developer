@@ -57,7 +57,10 @@ In addition to emulating dark, light, and print mode for the current webpage, no
 
 To turn on forced-colors emulation, in DevTools, open the **Rendering** tool, and then in the **Emulate CSS media feature forced-colors** dropdown list, select **forced-colors: active**.
 
-![The 'Emulate CSS media feature forced-colors' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors.png)
+![The 'Emulate CSS media feature forced-colors' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors-not-applied.png)
+
+
+![Emulate forced-colors, applied to the webpage to apply the user's reduced the color pallette ' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors-applied.png)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +71,7 @@ To turn on forced-colors emulation, in DevTools, open the **Rendering** tool, an
 <!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
 <!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
 
-In previous versions of Microsoft Edge, the **Event Log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 97, tooltips have been added to the activity events in the **Event Log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
+In previous versions of Microsoft Edge, the **Event Log** tab in the **Performance** tool displays color-coded icons representing the type of activity for each event.  However, the Event Log doesn't display information about what type of activity is represented by each color.  In Microsoft Edge 98, tooltips have been added to the activity events in the **Event Log** tab, indicating **Scripting**, **Rendering**, **Painting**, **System**, and **Idle time**, for each event.
 
 ![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting".](../../media/2022/02/activity-event-tooltip.png)
 
@@ -83,7 +86,7 @@ For more info on recording a performance profile, see [Record runtime performanc
 <!-- Title: Better understand shallow sizes in the Memory tool -->
 <!-- Subtitle: The Memory tool has been updated to report shallow size in decimal values as a percentage of the heap. -->
 
-In previous versions of Microsoft Edge, the shallow size in a heap snapshot in the Memory tool is commonly reported as 0%, because the shallow size is so small, relative to the total size of the heap.  In Microsoft Edge 97, shallow size is now reported as a decimal value, if the size is between 0% and 1% of the heap.
+In previous versions of Microsoft Edge, the shallow size in a heap snapshot in the Memory tool is commonly reported as 0%, because the shallow size is so small, relative to the total size of the heap.  In Microsoft Edge 98, shallow size is now reported as a decimal value, if the size is between 0% and 1% of the heap.
 
 ![In a heap snapshot, the Shallow Size column values between 0% and 1% of the heap are now shown as decimal values with one or two decimal places.](../../media/2022/02/shallow-size-decimal-values.png)
 
@@ -98,7 +101,7 @@ To learn more about heap snapshots in the Memory tool, see [Record heap snapshot
 <!-- Title: Fix: Resize the Search textbox in the Network tool -->
 <!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search textbox, so that the Refresh and Clear buttons remain visible. -->
 
-In previous versions of Microsoft Edge, in the **Network** tool, the **Search** text box doesn't resize when you change the width of the pane.  When the pane is narrow, the **Refresh** and **Clear** buttons aren't displayed.  In Microsoft Edge 97, this issue has been fixed.
+In previous versions of Microsoft Edge, in the **Network** tool, the **Search** text box doesn't resize when you change the width of the pane.  When the pane is narrow, the **Refresh** and **Clear** buttons aren't displayed.  In Microsoft Edge 98, this issue has been fixed.
 
 ![In the Network tool, the Search text box now resizes to display the Refresh and Clear buttons, even when the pane is narrow.](../../media/2022/02/network-tool-search-text-box-resizes.png)
 
@@ -113,11 +116,11 @@ To learn about the **Search** pane in the **Network** tool, see [Search network 
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
 
-In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon.](../../media/2022/02/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 97, this issue has been fixed.
+In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon.](../../media/2022/02/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed.
 
 ![The icons in the Service Workers section of the Application tool are now aligned, so the Expand/Collapse icons are now fully visible.](../../media/2022/02/service-worker-icons-aligned-expand-icon-visible.png)
 
-Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../../media/2022/02/elements-dom-expand-icon-light-mode.png)) icon for `<script>` tags was misaligned.  In Microsoft Edge 97, this issue has been fixed.
+Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../../media/2022/02/elements-dom-expand-icon-light-mode.png)) icon for `<script>` tags was misaligned.  In Microsoft Edge 98, this issue has been fixed.
 
 ![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned.](../../media/2022/02/elements-script-tag-expand-icons-aligned.png)
 
