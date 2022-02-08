@@ -106,7 +106,7 @@ In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse tr
 
 Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../../media/2022/02/elements-dom-expand-icon-light-mode.png)) icon for `<script>` tags was misaligned.  In Microsoft Edge 97, this issue has been fixed.
 
-![In the Elements tool, the Expand icon for '<script>' tags is now correctly aligned.](../../media/2022/02/elements-script-tag-expand-icons-aligned.png)
+![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned.](../../media/2022/02/elements-script-tag-expand-icons-aligned.png)
 
 To learn more about debugging service workers in DevTools, see [Service workers](../../../progressive-web-apps/index.md#service-workers).  To learn more about `<script>` tags in the **Elements** tool, see [Get started with HTML and the DOM](../../../beginners/html.md).
 
