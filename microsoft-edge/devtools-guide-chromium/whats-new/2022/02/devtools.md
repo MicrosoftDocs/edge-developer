@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 98)
-description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced colors mode.  Tooltips for Activity icons in the Performance tool Event Log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search textbox can now be resized.  And more.
+description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event Log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search textbox can now be resized.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -42,14 +42,14 @@ Starting June 15, 2022, Internet Explorer 11 will no longer be supported on cert
 
 
 <!-- ====================================================================== -->
-## Emulate forced colors mode
+## Emulate forced-colors mode
 
 <!-- Title: Emulation of forced colors in the Rendering tool -->
 <!-- Subtitle: You can now do a spot check of what your product will look like on a device running in forced-colors mode, without having to change your operating system settings. -->
 
-In addition to emulating dark, light, and print mode for the current webpage, now you can also see what your webpage looks like for users who have "forced colors" enabled.  Forced-colors mode is an accessibility feature of the operating system.  It forces colors on the webpage to be reduced to a limited color palette, such as Windows High Contrast mode.  Emulation of forced-colors mode allows you to do a spot check without having to change your own system's settings.
+In addition to emulating dark, light, and print mode for the current webpage, now you can also see what your webpage looks like for users who have forced-colors mode enabled.  Forced-colors mode is an accessibility feature of the operating system.  It forces colors on the webpage to be reduced to a limited color palette, such as Windows High Contrast mode.  Emulation of forced-colors mode allows you to do a spot check without having to change your own system's settings.
 
-To turn on this "forced colors" emulation, in DevTools, open the **Rendering** tool, and then in the **Emulate CSS media feature forced-colors** dropdown list, select **forced-colors: active**.
+To turn on forced-colors emulation, in DevTools, open the **Rendering** tool, and then in the **Emulate CSS media feature forced-colors** dropdown list, select **forced-colors: active**.
 
 ![The 'Emulate CSS media feature forced-colors' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors.png)
 
@@ -100,7 +100,6 @@ To learn about the **Search** pane in the **Network** tool, see [Search network 
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
 
 In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon.](../../media/2022/02/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 97, this issue has been fixed.
-
 
 ![The icons in the Service Workers section of the Application tool are now aligned, so the Expand/Collapse icons are now fully visible.](../../media/2022/02/service-worker-icons-aligned-expand-icon-visible.png)
 
