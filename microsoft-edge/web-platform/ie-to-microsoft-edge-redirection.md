@@ -13,7 +13,7 @@ Many modern websites have designs that are incompatible with Internet Explorer.
 
 When an Internet Explorer user visits an incompatible public website, the user may be instructed by the website that it is incompatible with Internet Explorer and to switch to a more modern browser.
 
-To minimize disruptions Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1) are redirected.
+To minimize disruptions, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1) are redirected.
 
 
 <!-- ====================================================================== -->
