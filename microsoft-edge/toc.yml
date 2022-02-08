@@ -129,13 +129,13 @@
                   href: devtools-guide-chromium/console/console-javascript.md
                   displayName: Console tool
 
-                - name: Console API reference
+                - name: Console object API Reference
                   href: devtools-guide-chromium/console/api.md
-                  displayName: Console tool
+                  displayName: Console tool, API Reference
 
-                - name: Console Utilities API reference
+                - name: Console tool utility functions and selectors
                   href: devtools-guide-chromium/console/utilities.md
-                  displayName: Console tool
+                  displayName: Console tool, API Reference, DOM selectors
 
                 - name: Monitor changes in JavaScript using Live Expressions
                   href: devtools-guide-chromium/console/live-expressions.md
@@ -329,7 +329,7 @@
                   href: devtools-guide-chromium/memory-problems/memory-101.md
                   displayName: Memory tool
 
-                - name: Record heap snapshots
+                - name: Record heap snapshots using the Memory tool
                   href: devtools-guide-chromium/memory-problems/heap-snapshots.md
                   displayName: Memory tool
 
@@ -393,7 +393,7 @@
                   href: devtools-guide-chromium/rendering-tools/index.md
                   displayName: Performance tool
 
-                - name: Optimize website speed
+                - name: Optimize website speed using Lighthouse
                   href: devtools-guide-chromium/speed/get-started.md
                   displayName: Performance tool, Lighthouse tool, Network tool
 
@@ -581,6 +581,10 @@
                   href: devtools-guide-chromium/accessibility/color-picker.md
                   displayName: Elements tool, Styles tab, Color Picker
 
+                - name: Check text-color contrast in the default state using the Inspect tool  # added article
+                  href: devtools-guide-chromium/accessibility/test-inspect-text-contrast.md
+                  displayName: Inspect tool
+
                 - name: Verify accessibility of all states of elements  # added article
                   href: devtools-guide-chromium/accessibility/test-inspect-states.md
                   displayName: Elements tool, Styles tab, hov Toggle Element State
@@ -663,13 +667,13 @@
               href: extensions-chromium/whats-new/roadmap.md
         - name: Getting started
           items:
-            - name: Extension architecture
+            - name: Extension concepts and architecture
               href: extensions-chromium/getting-started/index.md
-            - name: Create an extension tutorial (part 1)
+            - name: Create an extension tutorial, part 1
               href: extensions-chromium/getting-started/part1-simple-extension.md
-            - name: Create an extension tutorial (part 2)
+            - name: Create an extension tutorial, part 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
-            - name: Manifest file format
+            - name: Manifest file format for extensions
               href: extensions-chromium/getting-started/manifest-format.md
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md
@@ -859,21 +863,21 @@
       items:
         - name: DevTools Protocol
           href: test-and-automation/devtools-protocol.md
-        - name: Origin Trials
+        - name: Use Origin Trials in Microsoft Edge
           href: origin-trials/index.md
-        - name: Playwright
+        - name: Use Playwright to automate and test in Microsoft Edge
           href: playwright/index.md
-        - name: Puppeteer
+        - name: Puppeteer overview
           href: puppeteer/index.md
         - name: WebDriver
           items:
-            - name: WebDriver overview
+            - name: Use WebDriver to automate Microsoft Edge
               href: webdriver-chromium/index.md
-            - name: Automate IE mode
+            - name: Use Internet Explorer Driver to automate IE mode in Microsoft Edge
               href: webdriver-chromium/ie-mode.md
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-        - name: webhint
+        - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
 # =============================================================================
     - name: Web platform

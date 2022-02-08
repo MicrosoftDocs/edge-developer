@@ -27,7 +27,7 @@ Host permissions and content script matching are based on a set of URLs defined 
 *   _scheme_ — for example, `http` or `file` or `*`
 
 > [!NOTE]
-> Access to `file` URLs is not automatic.  The user must visit the Extensions management page and opt in to `file` access for each Extension that requests it.
+> Access to `file` URLs isn't automatic.  The user must visit the Extensions management page and opt in to `file` access for each Extension that requests it.
 
 *   `_host_` — for example, `www.google.com` or `*.google.com` or `*`; if the scheme is file, there is no host part.
 *   `_path_` — for example, `/*`, `/foo*`, or `/foo/bar`.  The path must be present in a host permission, but is always treated as `/*`.
@@ -76,7 +76,7 @@ Here are some examples of `_invalid_` pattern matches:
 | `http:/bar` | Missing `_scheme_` separator ('`/`' should be "`//`") |
 | `foo://*` | Invalid `_scheme_` |
 
-Some schemes are not supported in all contexts.
+Some schemes aren't supported in all contexts.
 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

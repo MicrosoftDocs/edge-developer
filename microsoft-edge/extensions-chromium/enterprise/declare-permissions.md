@@ -22,11 +22,11 @@ ms.date: 03/17/2021
    limitations under the License.  -->
 # Declare API permissions in extension manifests
 
-To use most of the `chrome.*` APIs, your extension must declare the `permissions` in the manifest.  You may declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions may display to users before installation of the extension using Permission Warnings.
+To use most of the `chrome.*` APIs, your extension must declare its intent in the `permissions` fields of the manifest.  An extension can declare permissions using a permission string from the table that follows, or use a pattern to match similar strings.  Permissions help to constrain your extension if it gets compromised by malware.  Some permissions are displayed to users for their consent before installation of the extension, or at runtime, as needed; these are Permission Warnings.
 
-If an API requires you to declare permissions in the manifest, review the documentation for that API to understand the needed permissions.  For example, the Storage API page describes how to declare the `storage` permission.
+If an API requires you to declare permissions in the manifest, see the documentation for that API to understand the needed permissions.  For example, the Storage API page describes how to declare the `storage` permission.
 
-The following code snippet outlines how to declare permissions in the manifest file.
+The following code outlines how to declare permissions in the manifest file:
 
 ```json
 "permissions": [
@@ -44,7 +44,7 @@ The following table lists the currently available permission strings to use in y
 |:--- |:--- |
 | `activeTab` | Requests that the extension is granted permissions according to the `activeTab` specification. |
 | `alarms` | Gives your extension access to the `chrome.alarms` API. |
-| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life.  When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge.  This permission does not affect extensions that are turned off in the browser.  The `background` permission is normally used on a background page. |
+| `background` | Makes Microsoft Edge start up early and shut down late, so that extensions may have a longer life.  When any installed extension has `background` permission, Microsoft Edge runs invisibly as soon as the user logs into the user's computer, and before the user launches Microsoft Edge.  The `background` permission also makes Microsoft Edge continue running, even after its last window is closed, until the user explicitly quits Microsoft Edge.  This permission doesn't affect extensions that are turned off in the browser.  The `background` permission is normally used on a background page. |
 | `bookmarks` | Gives your extension access to the `chrome.bookmarks` API. |
 | `browsingData` | Gives your extension access to the `chrome.browsingData` API. |
 | `certificateProvider` | Gives your extension access to the `chrome.certificateProvider` API. |
@@ -97,7 +97,7 @@ The following table lists the currently available permission strings to use in y
 | `system.storage` | Gives your extension access to the `chrome.system.storage` API. |
 | `tabCapture` | Gives your extension access to the `chrome.tabCapture` API. |
 | `tabGroups` | Gives your extension access to the `chrome.tabGroups` API. |
-| `tabs` | Gives your extension access to privileged fields of the `Tab` objects that may be used by several APIs including `chrome.tabs` and `chrome.windows`.  In many circumstances, your extension does not need to declare the `tabs` permission to make use of these APIs. |
+| `tabs` | Gives your extension access to privileged fields of the `Tab` objects that can be used by several APIs, including `chrome.tabs` and `chrome.windows`.  In many circumstances, your extension doesn't need to declare the `tabs` permission, to make use of these APIs. |
 | `topSites` | Gives your extension access to the `chrome.topSites` API. |
 | `tts` | Gives your extension access to the `chrome.tts` API. |
 | `ttsEngine` | Gives your extension access to the `chrome.ttsEngine` API. |

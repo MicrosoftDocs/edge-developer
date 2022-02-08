@@ -182,7 +182,7 @@ To allow users to control the webpage that is displayed in your WebView2 control
 1.  Enter a new URL in the address bar, and then choose **Go**.  For example, enter `https://www.bing.com`.
 
     > [!NOTE]
-    > Make sure you enter complete URLs in the address bar.  `ArgumentException` exceptions are thrown if the URL does not start with `http://` or `https://`.
+    > Make sure you enter complete URLs in the address bar.  `ArgumentException` exceptions are thrown if the URL doesn't start with `http://` or `https://`.
 
     :::image type="complex" source="./media/winui-getting-started-bing.png" alt-text="The sample app displays the Bing website." lightbox="./media/winui-getting-started-bing.png":::
        The sample app displays the Bing website. The address bar displays the URL https://www.bing.com.

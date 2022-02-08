@@ -22,14 +22,15 @@ ms.date: 07/19/2021
    limitations under the License.  -->
 # Emulate mobile devices (Device Emulation)
 
-Use **Device Emulation** to approximate how your page looks and responds on a mobile device.  DevTools provides a collection of features to help you emulate mobile devices:
-*   [Simulate a mobile viewport](#simulate-a-mobile-viewport)
-*   [Throttle the network](#throttle-the-network-only)
-*   [Throttle the CPU](#throttle-the-cpu-only)
-*   [Override geolocation](#override-geolocation)
-*   [Set orientation](#set-orientation)
-*   [Set the user agent string](#set-the-user-agent-string)
-*   [Set user-agent client hints](#set-user-agent-client-hints)
+Use **Device emulation** <!--aka "Device Mode"--> to approximate how your page looks and responds on a mobile device.  DevTools provides the following mobile device emulation features:
+
+* [Simulate a mobile viewport](#simulate-a-mobile-viewport)
+* [Throttle the network](#throttle-the-network-only)
+* [Throttle the CPU](#throttle-the-cpu-only)
+* [Override geolocation](#override-geolocation)
+* [Set orientation](#set-orientation)
+* [Set the user agent string](#set-the-user-agent-string)
+* [Set user-agent client hints](#set-user-agent-client-hints)
 
 
 <!-- ====================================================================== -->
@@ -83,7 +84,7 @@ The following table describes the differences between the available device type 
 | Desktop (touch) | Desktop | Circle | `touch` |
 
 > [!NOTE]
-> If the **Device Type** list is not displayed, select **More options** > **Add device type**.
+> If the **Device Type** list isn't displayed, select **More options** > **Add device type**.
 
 ### Mobile Device Viewport Mode
 
@@ -95,7 +96,7 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 Test your webpage in landscape orientation.
 
-*   To rotate the viewport to landscape orientation, select **Rotate** (![Rotate.](../media/rotate-dark-icon.msft.png)).
+*  To rotate the viewport to landscape orientation, select **Rotate** (![Rotate.](../media/rotate-dark-icon.msft.png)).
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page displayed in landscape orientation." lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
 
@@ -121,17 +122,17 @@ The device frame for the iPhone 6:
 
 #### Add a custom mobile device
 
-If the mobile device option that you need is not included on the default list, you can add a custom device.  To add a custom device:
+If the mobile device option that you need isn't included on the default list, you can add a custom device.  To add a custom device:
 
-1.  Select the **Device** list > **Edit**.
+1. Select the **Device** list > **Edit**.
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Selecting Edit from the Device list." lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png" alt-text="Selecting Edit from the Device list." lightbox="../media/device-mode-toggle-device-toolbar-device-list-edit.msft.png":::
 
-1.  Select **Add custom device**.
+1. Select **Add custom device**.
 
-1.  On **Emulated Devices**, enter a device name, screen width, and screen height for the custom device.  The [device pixel ratio](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio), [user agent string](https://developer.mozilla.org/docs/Glossary/User_agent), and [device type](#set-the-device-type) fields are optional.  The device type field defaults to **Mobile**.
+1. On **Emulated Devices**, enter a device name, screen width, and screen height for the custom device.  The [device pixel ratio](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio), [user agent string](https://developer.mozilla.org/docs/Glossary/User_agent), and [device type](#set-the-device-type) fields are optional.  The device type field defaults to **Mobile**.
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Adding a custom device." lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png" alt-text="Adding a custom device." lightbox="../media/device-mode-toggle-device-toolbar-settings-emulated-devices-add.msft.png":::
 
 ### Show rulers
 
@@ -155,9 +156,9 @@ To test the look and feel of your page at multiple zoom levels, use the **Zoom**
 
 Mobile devices often have network and CPU constraints.  Test how quickly your page loads and how it responds at different internet and CPU speeds.
 
-1.  Select **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.
-    *   **Mid-tier mobile** simulates `fast 3G` and throttles your CPU.  It is four times slower than normal.
-    *   **Low-end mobile** simulates `slow 3G` and throttles your CPU.  It is six times slower than normal.
+1. Select **Throttle** list and change the preset to **Mid-tier mobile** or **Low-end mobile**.
+    *  **Mid-tier mobile** simulates `fast 3G` and throttles your CPU.  It is four times slower than normal.
+    *  **Low-end mobile** simulates `slow 3G` and throttles your CPU.  It is six times slower than normal.
 
 All of the throttling is based upon the normal capability of your laptop or desktop.
 
@@ -172,8 +173,8 @@ All of the throttling is based upon the normal capability of your laptop or desk
 
 To throttle the CPU only and not the network:
 
-1.  Select the **Performance** panel, and select **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).
-1.  Select **CPU** > **4x slowdown** or **6x slowdown**.
+1. Select the **Performance** panel, and select **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).
+1. Select **CPU** > **4x slowdown** or **6x slowdown**.
 
 :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="The CPU list in the Performance panel." lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
 
@@ -181,19 +182,19 @@ To throttle the CPU only and not the network:
 
 To throttle the network only and not the CPU:
 
-1.  Select the **Network** tool, then select **Online** > **Fast 3G** or **Slow 3G**.
+1. Select the **Network** tool, then select **Online** > **Fast 3G** or **Slow 3G**.
 
-    :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="The Throttle list in the Network panel." lightbox="../media/device-mode-network-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-network-throttle.msft.png" alt-text="The Throttle list in the Network panel." lightbox="../media/device-mode-network-throttle.msft.png":::
 
-    Or select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**, type `3G`, and select **Enable fast 3G throttling** or **Enable slow 3G throttling**.
+    Or, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**, start typing `3g`, and then select **Enable fast 3G throttling** or **Enable slow 3G throttling**.
 
-    :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Selecting Enable fast or slow 3G throttling from the Command Menu." lightbox="../media/device-mode-command-menu-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-command-menu-throttle.msft.png" alt-text="Selecting Enable fast or slow 3G throttling from the Command Menu." lightbox="../media/device-mode-command-menu-throttle.msft.png":::
 
 You can also set network throttling from the **Performance** panel:
 
-1.  Select **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)) and select the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.
+1. Select **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)) and select the **Network** list and change the preset to **Fast 3G** or **Slow 3G**.
 
-    :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Setting network throttling from the Performance panel." lightbox="../media/device-mode-performance-network-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-performance-network-throttle.msft.png" alt-text="Setting network throttling from the Performance panel." lightbox="../media/device-mode-performance-network-throttle.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -201,13 +202,13 @@ You can also set network throttling from the **Performance** panel:
 
  If your page depends on geolocation information from a mobile device to render properly, provide different geolocations using the geolocation-overriding UI.
 
-1.  Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
+1. Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors for geolocation." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="Sensors for geolocation." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
     Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors` and then select **Show Sensors**.
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Showing Sensors for geolocation, from the Command Menu." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Showing Sensors for geolocation, from the Command Menu." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
 On the **Sensors** panel, to select one of the preset locations, use the **Location** dropdown menu.  To enter a custom location, select **Other** and enter the coordinates of your custom location.  To test how your page behaves when location information is unavailable, select **Location unavailable**.
 
@@ -219,15 +220,13 @@ On the **Sensors** panel, to select one of the preset locations, use the **Locat
 
 If your page depends on orientation information from a mobile device to render properly, open the orientation UI.
 
-1.  Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
+1. Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="The Sensors command on the More tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-1.  Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
+1. Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
-   **Show Sensors** for orientation
-:::image-end:::
 
 On the **Sensors** panel, you can select a preset orientation from the **Orientation** dropdown menu.  To enter your own orientation, select **Custom orientation**, and enter your own [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha), [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta), and [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) values.
 
@@ -239,13 +238,13 @@ On the **Sensors** panel, you can select a preset orientation from the **Orienta
 
 If your page depends on the user agent string from a mobile device to render properly, use the **Network conditions** panel to provide different user agent strings.
 
-1.  Select **Customize and control DevTools** (`...`) > **More tools** > **Network conditions**.
+1. Select **Customize and control DevTools** (`...`) > **More tools** > **Network conditions**.
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions entry in the More Tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions entry in the More Tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
-1.  Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
+1. Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
 
-    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Showing network conditions." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Showing network conditions." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
 
 Next to **User agent**, clear the **Use browser default** checkbox.  Then, select **Custom** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.
 
@@ -261,25 +260,28 @@ Next to **User agent**, clear the **Use browser default** checkbox.  Then, selec
 
 If your site employs [user-agent client hints](../../web-platform/user-agent-guidance.md), use the **Emulated Devices** panel to add devices and set user-agent client hints.
 
-1.  Open the **contextual menu** (right-click), and select **Inspect**.
-1.  Select **Settings** > **Devices**.
-1.  In the Emulated Devices panel, select **Add custom device** and expand **user-agent client hints**.
+1. Right-click in a webpage and then select **Inspect**.
 
-    :::image type="content" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="Setting user-agent client hints." lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+1. Select **Settings** > **Devices**.
 
-1.  Type a unique name in the **Device Name** text box such as `Test101`.
-1.  Accept the default values or change **Width**, **Height**, and **Device pixel ratio** as needed.
-1.  Set user-agent client hints as follows.
+1. In the Emulated Devices panel, select **Add custom device** and expand **user-agent client hints**.
+
+   :::image type="content" source="images/emulated-devices-user-agent-client-hints.msft.png" alt-text="Setting user-agent client hints." lightbox="images/emulated-devices-user-agent-client-hints.msft.png":::
+
+1. Type a unique name in the **Device Name** text box such as `Test101`.
+
+1. Accept the default values or change **Width**, **Height**, and **Device pixel ratio** as needed.
+
+1. Set user-agent client hints as follows:
     *  **Brand** and **Version**, such as *Edge* and *92*.  Select **+ Add Brand** to add multiple brand and version pairs.
     *  **Full Browser Version** such as *92.0.1111.0*.
     *  **Platform** and **Version** such as *Windows* and *10.0*.
     *  **Architecture** such as *x86*.
     *  **Device model** such as *Galaxy Nexus*.
 
-    > [!NOTE]
-    > Set or change any of the user-agent client hints. There are no required values.
+   You can set or change any of the user-agent client hints.  There are no required values.
 
-1. Select **Add**. The new device displays in a selected state at the top of the **Emulated Devices** list.
+1. Click **Add**.  The new device is displayed in the selected state at the top of the **Emulated Devices** list.
 
 You can also set user-agent client hints in the **Network** tool; see [Network features reference](../network/reference.md).
 

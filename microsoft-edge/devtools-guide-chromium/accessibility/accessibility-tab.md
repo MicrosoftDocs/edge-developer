@@ -27,13 +27,15 @@ The **Accessibility** tab is where you view the accessibility tree, ARIA attribu
 
 To open the **Accessibility** tab:
 
-1.  Select the **Elements** tool.
-1.  In the **DOM Tree**, select the element which you want to inspect.
-1.  Select the **Accessibility** tab.  You might need to first select the **More tabs** (![the More tabs button.](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
+1. In a rendered webpage, right-click an element and then select **Inspect**.
 
-:::image type="complex" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility tab." lightbox="../media/accessibility-elements-accessibility.msft.png":::
-   Inspect the `h1` element of the DevTools homepage in the **Accessibility** tab
-:::image-end:::
+   DevTools opens, with the **Elements** tool selected.  The DOM tree opens to show the element that you right-clicked.
+
+1. In the **DOM Tree**, click the element that you want to inspect.  You can use the arrow keys to move through the DOM tree.
+
+1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button.](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
+
+:::image type="content" source="../media/accessibility-elements-accessibility.msft.png" alt-text="Inspect the h1 element of the DevTools homepage in the Accessibility tab." lightbox="../media/accessibility-elements-accessibility.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -43,9 +45,7 @@ The [accessibility tree](https://developer.mozilla.org/docs/Glossary/AOM) is a s
 
 Inspect the position of an element in the accessibility tree from the **Accessibility** tab.
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="The Accessibility Tree section." lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
-   The **Accessibility Tree** section
-:::image-end:::
+:::image type="content" source="../media/accessibility-elements-accessibility-tree.msft.png" alt-text="The Accessibility Tree section." lightbox="../media/accessibility-elements-accessibility-tree.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -55,9 +55,7 @@ ARIA attributes ensure that assistive technologies such as screen readers have a
 
 View the ARIA attributes of an element in the **Accessibility** tab.
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="The ARIA Attributes section." lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
-   The **ARIA Attributes** section
-:::image-end:::
+:::image type="content" source="../media/accessibility-elements-accessibility-aria-attributes.msft.png" alt-text="The ARIA Attributes section." lightbox="../media/accessibility-elements-accessibility-aria-attributes.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -70,9 +68,7 @@ View the computed accessibility properties of an element in the **Accessibility*
 > [!NOTE]
 > For computed CSS properties, use the [Computed](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) tab.
 
-:::image type="complex" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The Computed Properties section of the Accessibility tab." lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
-   The **Computed Properties** section of the **Accessibility** tab
-:::image-end:::
+:::image type="content" source="../media/accessibility-elements-accessibility-computed-properties.msft.png" alt-text="The 'Computed Properties' section of the Accessibility tab." lightbox="../media/accessibility-elements-accessibility-computed-properties.msft.png":::
 
 
 <!-- ====================================================================== -->

@@ -16,9 +16,9 @@ Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs) is an integrate
 *   Graphical designers
 *   Many more
 
-If you are not already using Visual Studio, navigate to [Download Visual Studio](https://visualstudio.microsoft.com/downloads) to download it.
+If you aren't already using Visual Studio, go to [Download Visual Studio](https://visualstudio.microsoft.com/downloads) to download it.
 
-Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP.NET Framework and ASP.NET Core apps.  Complete the following steps to use Visual Studio to debug Microsoft Edge.
+Currently, Visual Studio 2019 supports debugging JavaScript in Microsoft Edge for your ASP.NET Framework and ASP.NET Core apps. To use Visual Studio to debug Microsoft Edge, do the following steps.
 
 
 <!-- ====================================================================== -->
@@ -60,7 +60,7 @@ With the project created, use Visual Studio to debug JavaScript.
        Turn on script debugging in Visual Studio
     :::image-end:::
 
-1.  In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you are not already using one of the Microsoft Edge preview channels, navigate to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) to download one.
+1.  In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you aren't already using one of the Microsoft Edge preview channels, go to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) to download one.
 
     :::image type="complex" source="./media/set-web-browser.png" alt-text="Select the preview channel of Microsoft Edge that you want Visual Studio to launch." lightbox="./media/set-web-browser.png":::
        Select the preview channel of Microsoft Edge that you want Visual Studio to launch
@@ -96,7 +96,7 @@ Switch back to Visual Studio to set a breakpoint.
        Visual Studio pauses JavaScript running in Microsoft Edge
     :::image-end:::
 
-The example was just a minor demonstration of the functionality available in Visual Studio.  For more information about the functionality in Visual Studio 2019, navigate to [Visual Studio documentation](/visualstudio/windows/index).
+The example was just a minor demonstration of the functionality available in Visual Studio.  For more information about the functionality in Visual Studio 2019, see the [Visual Studio documentation](/visualstudio/windows/index).
 
 
 <!-- ====================================================================== -->
