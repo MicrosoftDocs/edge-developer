@@ -22,6 +22,8 @@ If you are on Windows, Linux, or macOS, consider using the Canary preview channe
 <!-- ====================================================================== -->
 ## Catch up on the latest and greatest features in Microsoft Edge
 
+<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+
 <!-- Title: Year-in-review: Microsoft Edge for developers -->
 <!-- Subtitle: Catch up on the latest in developer tooling from Microsoft Edge. -->
 
@@ -35,6 +37,8 @@ Catch up on all of this news and more in our year-in-review blog post, [Looking 
 <!-- ====================================================================== -->
 ## Automate IE mode with Internet Explorer Driver
 
+<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+
 <!-- Title: New support for automating IE mode -->
 <!-- Subtitle: Test your legacy websites and apps by automating IE mode with Internet Explorer Driver. -->
 
@@ -43,6 +47,8 @@ Starting June 15, 2022, Internet Explorer 11 will no longer be supported on cert
 
 <!-- ====================================================================== -->
 ## Emulate forced-colors mode
+
+<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Emulation of forced colors in the Rendering tool -->
 <!-- Subtitle: You can now do a spot check of what your product will look like on a device running in forced-colors mode, without having to change your operating system settings. -->
@@ -57,6 +63,8 @@ To turn on forced-colors emulation, in DevTools, open the **Rendering** tool, an
 <!-- ====================================================================== -->
 ## Activity icons in the Event Log of the Performance tool now have tooltips
 
+<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+
 <!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
 <!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
 
@@ -69,6 +77,8 @@ For more info on recording a performance profile, see [Record runtime performanc
 
 <!-- ====================================================================== -->
 ## Shallow sizes in the Memory tool are now represented as decimal values
+
+<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Better understand shallow sizes in the Memory tool -->
 <!-- Subtitle: The Memory tool has been updated to report shallow size in decimal values as a percentage of the heap. -->
@@ -83,6 +93,8 @@ To learn more about heap snapshots in the Memory tool, see [Record heap snapshot
 <!-- ====================================================================== -->
 ## Fix: The Search textbox in the Network tool can now be resized
 
+<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+
 <!-- Title: Fix: Resize the Search textbox in the Network tool -->
 <!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search textbox, so that the Refresh and Clear buttons remain visible. -->
 
@@ -95,6 +107,8 @@ To learn about the **Search** pane in the **Network** tool, see [Search network 
 
 <!-- ====================================================================== -->
 ## Fix: Icons for service workers and script tags in the Elements tool are now aligned
+
+<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
