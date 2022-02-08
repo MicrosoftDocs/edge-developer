@@ -312,12 +312,14 @@ To use the Fixed Version distribution mode:
    
 1. Package and ship the Fixed Version binaries with your app.  Update the binaries as appropriate.
 
-    *  For WinUI, this might include opening the project file (`.csproj`) in a code editor, and then add the following code within the project tags:
+   *  For WinUI, this might include opening the project file (`.csproj`) in a code editor, and then add the following code within the project tags:
 
       ```xml
-      <Content include="FixedRuntime\(version number)\\**\*.*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
+      <ItemGroup>
+         <Content Include="FixedRuntime\(version number)\\**\*.*">
+         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+         </Content>
+      </ItemGroup>
       ```
 
       Verify that the `bin\**designated architecture**\Release` folder has a matching FixedRuntime\\(version number) folder with the runtime files in it.
