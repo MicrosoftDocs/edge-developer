@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/13/2020
+ms.date: 2/8/2022
 ---
 # Move users to Microsoft Edge from Internet Explorer
 
