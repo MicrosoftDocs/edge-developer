@@ -46,25 +46,25 @@ For standard capabilities that `EdgeDriver` accepts, see [Selenium documentation
 
 Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` object.  In some languages, the capabilities are implemented by the `EdgeOptions` class.  In other languages, the capabilities are stored under the `ms:edgeOptions` dictionary in `DesiredCapabilities`.
 
-| Capability | Type | Default value | Details |
-|:--- |:--- |:--- |:--- |
-| `args` | list of strings |  | List of command-line arguments to pass to the Microsoft Edge process on launch. Arguments with an associated value should be separated by an `=` sign (for example, `['start-maximized', 'user-data-dir=/tmp/temp_profile']`). If you're launching a WebView2 app, then these arguments are passed to your app instead of the underlying Microsoft Edge browser process. To pass arguments to the browser process when launching a WebView2 app, use [webviewOptions.additionalBrowserArguments](#webviewoptions-object) instead. |
-| `binary` | string |  | Path to the Microsoft Edge binary to use (on macOS, the path should be the actual binary, not just the app.  for example, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge`). |
-| `debuggerAddress` | string |  | An address of a debugger server to which to connect, in the form of `hostname/ip:port`, for example `127.0.0.1:38947`. |
-| `detach` | boolean | `false` | If `false`, Microsoft Edge quits when the WebDriver service shuts down, even if the WebDriver local end hasn't closed the session.  If `true`, Microsoft Edge only quits if the WebDriver local end closes the session.  If `true`, and the WebDriver local end doesn't close the session, `EdgeDriver` doesn't clean up the temporary user data folder used by the Microsoft Edge instance. |
-| `excludeSwitches` | list of strings |  | List of Microsoft Edge command line switches to exclude that EdgeDriver by default passes when starting Microsoft Edge.  Avoid the `--` prefix for switches. |
-| `extensions` | list of strings |  | A list of extensions to install on startup.  Each item in the list should be a base-64 encoded packed extension (`.crx`). |
-| `localState` | dictionary |  | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are applied to the Local State file in the user data folder. |
-| `minidumpPath` | string |  | Directory to store Microsoft Edge minidumps.  (Supported only on Linux.) |
-| `mobileEmulation` | dictionary |  | A dictionary with either a value for `deviceName`, or values for `deviceMetrics` and `userAgent`. |
-| `perfLoggingPrefs` | dictionary |  | An optional dictionary that specifies performance logging preferences.  for more information, see [perfLoggingPrefs object](#perfloggingprefs-object). |
-| `prefs` | dictionary |  | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are only applied to the user profile in use.  For examples, see the `Preferences` file in the user data folder of Microsoft Edge. |
-| `wdpAddress` | string |  | An address of a Windows Device Portal server to connect to, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, see [Remote Debugging - Windows 10 devices](../devtools-guide-chromium/remote-debugging/windows.md). |
-| `wdpPassword` | string |  | Optional password to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
-| `wdpUsername` | string |  | Optional user name to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
-| `webviewOptions` | dictionary |  | An optional dictionary that can be used to configure the WebView2 environment when launching a WebView2 app. For more information, see [webviewOptions object](#webviewoptions-object). |
-| `windowsApp` | string |  | Application user model ID of a Microsoft Edge app package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal. |
-| `windowTypes` | list of strings |  | A list of window types that are displayed in the list of window handles.  For access to Android webview elements, include `webview` in the list. |
+| Capability | Type | Details |
+|:--- |:--- |:--- |
+| `args` | list of strings | List of command-line arguments to pass to the Microsoft Edge process on launch. Arguments with an associated value should be separated by an `=` sign (for example, `['start-maximized', 'user-data-dir=/tmp/temp_profile']`). If you're launching a WebView2 app, then these arguments are passed to your app instead of the underlying Microsoft Edge browser process. To pass arguments to the browser process when launching a WebView2 app, use [webviewOptions.additionalBrowserArguments](#webviewoptions-object) instead. |
+| `binary` | string | Path to the Microsoft Edge binary to use (on macOS, the path should be the actual binary, not just the app.  for example, `/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge`). |
+| `debuggerAddress` | string | An address of a debugger server to which to connect, in the form of `hostname/ip:port`, for example `127.0.0.1:38947`. |
+| `detach` | boolean | Default value = `false`. If `false`, Microsoft Edge quits when the WebDriver service shuts down, even if the WebDriver local end hasn't closed the session.  If `true`, Microsoft Edge only quits if the WebDriver local end closes the session.  If `true`, and the WebDriver local end doesn't close the session, `EdgeDriver` doesn't clean up the temporary user data folder used by the Microsoft Edge instance. |
+| `excludeSwitches` | list of strings | List of Microsoft Edge command line switches to exclude that EdgeDriver by default passes when starting Microsoft Edge.  Avoid the `--` prefix for switches. |
+| `extensions` | list of strings | A list of extensions to install on startup.  Each item in the list should be a base-64 encoded packed extension (`.crx`). |
+| `localState` | dictionary | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are applied to the Local State file in the user data folder. |
+| `minidumpPath` | string | Directory to store Microsoft Edge minidumps.  (Supported only on Linux.) |
+| `mobileEmulation` | dictionary | A dictionary with either a value for `deviceName`, or values for `deviceMetrics` and `userAgent`. |
+| `perfLoggingPrefs` | dictionary | An optional dictionary that specifies performance logging preferences.  for more information, see [perfLoggingPrefs object](#perfloggingprefs-object). |
+| `prefs` | dictionary | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are only applied to the user profile in use.  For examples, see the `Preferences` file in the user data folder of Microsoft Edge. |
+| `wdpAddress` | string | An address of a Windows Device Portal server to connect to, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, see [Remote Debugging - Windows 10 devices](../devtools-guide-chromium/remote-debugging/windows.md). |
+| `wdpPassword` | string | Optional password to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
+| `wdpUsername` | string | Optional user name to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
+| `webviewOptions` | dictionary | An optional dictionary that can be used to configure the WebView2 environment when launching a WebView2 app. For more information, see [webviewOptions object](#webviewoptions-object). |
+| `windowsApp` | string | Application user model ID of a Microsoft Edge app package to launch, for example `Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!MSEDGE`.  Use `windowsApp` instead of `binary` when connecting to a Windows 10X device or emulator using Windows Device Portal. |
+| `windowTypes` | list of strings | A list of window types that are displayed in the list of window handles.  For access to Android webview elements, include `webview` in the list. |
 
 
 <!-- ====================================================================== -->
