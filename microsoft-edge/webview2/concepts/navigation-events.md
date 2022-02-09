@@ -22,8 +22,10 @@ The normal sequence of navigation events is:
 1. `SourceChanged`
 1. `ContentLoading`
 1. `HistoryChanged`
+1. `BasicAuthenticationRequested`
 1. `DOMContentLoaded`
 1. `NavigationCompleted`
+
 
 The following events describe the state of WebView2 during each navigation action:
 
@@ -61,21 +63,6 @@ Same-document navigation events, such as navigating to a fragment in the same do
 
 To monitor or cancel navigation events inside subframes in a WebView2 instance, use the `FrameNavigationStarting` and `FrameNavigationCompleted` events.  Those events act like the equivalent non-frame, counterpart events.
 
-## Basic authentication
-
-An HTTP server may require [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication). In this case there is a first navigation with all the same navigation events listed above. The HTTP server returns a 401 or 407 HTTP response and so the NavigationCompleted event has a corresponding failure. The WebView2 will then render a blank page and raise the `BasicAuthenticationRequested` event which will potentially prompt the end user for credentials.
-
-If the `BasicAuthenticationRequested` event is cancelled, then there is no subsequent navigation and the WebView2 will remain displaying the blank page.
-
-If the `BasicAuthenticationRequested` event isn't cancelled, the WebView2 will perform the initial navigation again, but this time using any provided credentials and you will again see all the same navigation events listed above.
-
-If the credentials are not accepted by the HTTP server the navigation may fail again with 401 or 407, in which case we again raise the `BasicAuthenticationRequested` event and continue as above.
-
-Otherwise the navigation may succeed or fail as usual with a corresponding successul or failed NavigationCompleted event and the WebView2 rendering the corresponding page.
-
-The navigations before and after the `BasicAuthenticationRequested` event are distinct navigations and have distinct navigation IDs.
-
-:::image type="content" source="../media/navigation-auth-graph.png" alt-text="The Microsoft Edge WebView2 Navigation Authentication Flow." lightbox="../media/navigation-auth-graph.png":::
 
 <!-- ====================================================================== -->
 ## See also

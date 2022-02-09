@@ -453,6 +453,8 @@
           href: webview2/code-samples-links.md
         - name: Concepts
           items:
+            - name: Basic authentication for WebView2 apps
+              href: webview2/concepts/basic-authentication.md
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
             - name: Distribute a WebView2 app and Runtime
