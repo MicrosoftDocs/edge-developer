@@ -1,12 +1,11 @@
 ---
-description: An overview of building and publishing Microsoft Edge Extensions.
 title: Overview of Microsoft Edge extensions
+description: An overview of building and publishing Microsoft Edge Extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge, extensions development, browser extensions, addons, partner center, developer, chromium extensions
+ms.date: 08/25/2021
 ---
 # Overview of Microsoft Edge extensions
 
@@ -22,7 +21,7 @@ An extension is structured similar to a regular web app.  An extension should in
 
 To work directly with part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
 
-:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge extension" lightbox="./media/example-extension-screenshot.png":::
+:::image type="complex" source="./media/example-extension-screenshot.png" alt-text="A Microsoft Edge extension." lightbox="./media/example-extension-screenshot.png":::
   A Microsoft Edge extension
 :::image-end:::
 
@@ -42,7 +41,7 @@ Some of the most popular browsers to build extensions for include Safari, Firefo
 | Microsoft Edge | Yes | [developer.microsoft.com/microsoft-edge/extensions](https://developer.microsoft.com/microsoft-edge/extensions) |
 
 > [!IMPORTANT]
-> Many of the tutorials of the sites use browser-specific APIs that might not match the browser for which you develop.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Some less-common APIs might be browser-specific.  For links to the tutorials, navigate to [See also](#see-also).
+> Many of the tutorials of the sites use browser-specific APIs that might not match the browser for which you develop.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Some less-common APIs might be browser-specific.  Links to the tutorials are in the [See also](#see-also) section, below.
 
 
 <!-- ====================================================================== -->
@@ -79,7 +78,7 @@ You can submit and seek browser extensions in the following browser stores.
 *   [Opera addons](https://addons.opera.com/extensions)
 *   [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/category/Edge-Extensions)
 
-Some stores allow you to download listed extensions from other browsers.  However, cross-browser access is not guaranteed by browser stores.  To make sure your users find your extension in different browsers, you should maintain a listing on each browser extension store.
+Some stores allow you to download listed extensions from other browsers.  However, cross-browser access isn't guaranteed by browser stores.  To make sure your users find your extension in different browsers, you should maintain a listing on each browser extension store.
 
 Users might need to install your extension in different browsers. In this scenario, you can migrate existing Chromium extensions from one browser to another.
 
@@ -87,7 +86,7 @@ Users might need to install your extension in different browsers. In this scenar
 
 If you've already developed an extension for another Chromium-based browser, you can submit it to the Microsoft Edge Add-ons website. You don't need to rewrite your extension, and must verify it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, make sure the same APIs or alternatives are available for your target browser.
 
-For more information on porting your Chrome extension to Microsoft Edge, navigate to [Port Chrome extensions to Microsoft Edge](./developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
+For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft Edge](./developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
 
 ### Publish to the Microsoft Edge Add-ons website
 
@@ -103,7 +102,7 @@ To submit your extension to the store, you need to provide the following items:
 > [!NOTE]
 > Different stores might have different submission requirements.  The above list summarizes the [requirements](./publish/publish-extension.md) to publish an extension for Microsoft Edge.
 
-After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.
+After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners aren'tified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.
 
 
 <!-- ====================================================================== -->

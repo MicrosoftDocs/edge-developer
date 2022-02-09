@@ -1,14 +1,13 @@
 ---
+title: Track changes to files using the Changes tool
 description: The Changes tool tracks any changes you have made to CSS or JavaScript in DevTools.
-title: Changes tool
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, changes
+ms.date: 10/28/2021
 ---
-# Changes tool
+# Track changes to files using the Changes tool
 
 The **Changes tool** tracks any changes you have made to CSS or JavaScript in DevTools.  Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).  The **Changes** tool shows you what changes to make to your actual source files after you've successfully used DevTools to investigate and fix a problem.
 

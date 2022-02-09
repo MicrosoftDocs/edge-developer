@@ -1,12 +1,11 @@
 ---
+title: Console object API Reference
 description: Use the Console API to write messages to the Console.
-title: Console API reference
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,12 +20,24 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
+# Console object API Reference
+<!-- orig:
 # Console API reference
+-->
 
-The **Console** tool is helpful when you complete multiple tasks in the DevTools.  APIs are available to include in your scripts. Convenience methods are only available for use in the **Console** tool, such as the `debug()` and `monitorEvents()` methods.  For more information on getting started with the **Console**, see [Get started with logging messages to the Console](console-log.md).  For more information on the convenience methods in the **Console**, see [Console Utilities API Reference](utilities.md).
+Use the `console` object's methods to write messages to the **Console** from your JavaScript.
+
+You can also enter these methods into the **Console**.  For example, in the **Console**, to enter a `console` method that takes a variable:
+
+1. In the **Sources** tool, in the Debugger, set a breakpoint in your JavaScript code.
+
+1. In the Debugger, step through your code.
+
+1. When you are in a valid context so that the desired variable is in-scope, enter a method of the `console` object into the **Console** tool.  The result is displayed in the **Console**.
+
+<br/><br/>
 
 ---
-
 
 <!-- ====================================================================== -->
 ## assert
@@ -52,6 +63,8 @@ console.assert(x < y, {x, y, reason});
 
 :::image type="content" source="../media/console-demo-assert-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-assert-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -67,7 +80,9 @@ console.clear()
 
 ### See also
 
-*   [Clear the Console](reference.md#clear-the-console)
+* [Clear the Console](reference.md#clear-the-console)
+
+<br/><br/>
 
 ---
 
@@ -95,6 +110,8 @@ console.count();
 
 :::image type="content" source="../media/console-demo-count-button.msft.png" alt-text="The result of the console.count() example" lightbox="../media/console-demo-count-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -112,6 +129,8 @@ console.countReset([label])
 console.countReset();
 console.countReset('coffee');
 ```
+
+<br/><br/>
 
 ---
 
@@ -136,6 +155,8 @@ console.debug('debug');
 
 :::image type="content" source="../media/console-demo-debug-button.msft.png" alt-text="The result of the console.debug() example" lightbox="../media/console-demo-debug-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -158,6 +179,8 @@ console.dir(document.head);
 #### Output
 
 :::image type="content" source="../media/console-demo-dir-button.msft.png" alt-text="The result of the console.dir() example" lightbox="../media/console-demo-dir-button.msft.png":::
+
+<br/><br/>
 
 ---
 
@@ -182,6 +205,8 @@ console.dirxml(document);
 
 :::image type="content" source="../media/console-demo-dirxml-button.msft.png" alt-text="The result of the console.dirxml() example" lightbox="../media/console-demo-dirxml-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -204,6 +229,8 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 #### Output
 
 :::image type="content" source="../media/console-demo-error-button.msft.png" alt-text="The result of the console.error() example" lightbox="../media/console-demo-error-button.msft.png":::
+
+<br/><br/>
 
 ---
 
@@ -232,6 +259,8 @@ console.groupEnd(label);
 
 :::image type="content" source="../media/console-demo-group-button.msft.png" alt-text="The result of the console.group() example" lightbox="../media/console-demo-group-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -243,6 +272,8 @@ Identical to the [log](#log) method, except the group is initially collapsed whe
 console.groupCollapsed(label)
 ```
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -253,6 +284,8 @@ Stops visually grouping messages.  See the [group](#group) method.
 ```javascript
 console.groupEnd(label)
 ```
+
+<br/><br/>
 
 ---
 
@@ -277,6 +310,8 @@ console.info('info');
 
 :::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="The result of the console.info() example" lightbox="../media/console-demo-info-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -299,6 +334,8 @@ console.log('log');
 #### Output
 
 :::image type="content" source="../media/console-demo-log-button.msft.png" alt-text="The result of the console.log() example" lightbox="../media/console-demo-log-button.msft.png":::
+
+<br/><br/>
 
 ---
 
@@ -337,6 +374,8 @@ console.table([
 
 :::image type="content" source="../media/console-demo-table-button.msft.png" alt-text="The result of the console.table() example" lightbox="../media/console-demo-table-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -362,6 +401,8 @@ console.timeEnd();
 
 :::image type="content" source="../media/console-demo-time-button.msft.png" alt-text="The result of the console.time() example" lightbox="../media/console-demo-time-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -374,6 +415,8 @@ console.timeEnd([label])
 ```
 
 [Log level](reference.md#persist-messages-across-page-loads): `Info`
+
+<br/><br/>
 
 ---
 
@@ -402,6 +445,8 @@ first();
 
 :::image type="content" source="../media/console-demo-trace-button.msft.png" alt-text="The result of the console.trace() example" lightbox="../media/console-demo-trace-button.msft.png":::
 
+<br/><br/>
+
 ---
 
 <!-- ====================================================================== -->
@@ -425,7 +470,17 @@ console.warn('warn');
 
 :::image type="content" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
 
+<br/><br/>
+
 ---
+
+<!-- ====================================================================== -->
+## See also
+
+<!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
+* [MDN Web Docs > `console` object Reference](https://developer.mozilla.org/en-US/docs/Web/API/Console) - Has a summary overview of the methods, and has one page per method, with additional syntax details.
+* [Log messages in the Console tool](console-log.md) - An interactive introduction.
+* [Console tool utility functions and selectors](utilities.md) - **Console**-only utility methods, such as `debug()` and `monitorEvents()`.
 
 
 <!-- ====================================================================== -->
@@ -433,5 +488,5 @@ console.warn('warn');
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/console/api) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors/kaycebasques) (Technical Writer, Chrome DevTools & Lighthouse).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

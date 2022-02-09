@@ -100,20 +100,26 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: WebView2 overview
+          - text: Introduction to Microsoft Edge WebView2
             url: /microsoft-edge/webview2/index
+      - linkListType: concept
+        links:
+          - text: Feature differences between Microsoft Edge and WebView2
+            url: /microsoft-edge/webview2/concepts/browser-features
+          - text: WebView2 development best practices
+            url: /microsoft-edge/webview2/concepts/developer-guide
       - linkListType: get-started
         links:
-          - text: Get started with WebView2 in Win32 apps
-            url: /microsoft-edge/webview2/get-started/win32
-          - text: Get started with WebView2 in WinForms apps
-            url: /microsoft-edge/webview2/get-started/winforms
-          - text: Get started with WebView2 in WinUI 2 apps
-            url: /microsoft-edge/webview2/get-started/winui2
-          - text: Get started with WebView2 in WinUI 3 apps
-            url: /microsoft-edge/webview2/get-started/winui
-          - text: Get started with WebView2 in WPF apps
-            url: /microsoft-edge/webview2/get-started/wpf
+          - text: Get started with WebView2
+            url: /microsoft-edge/webview2/get-started/get-started
+      - linkListType: download
+        links:
+          - text: WebView2 sample code
+            url: /microsoft-edge/webview2/code-samples-links
+      - linkListType: whats-new
+        links:
+          - text: Release notes for WebView2 SDK
+            url: /microsoft-edge/webview2/release-notes
       - linkListType: reference
         links:
           - text: Microsoft Edge WebView2 API Reference
@@ -162,7 +168,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Accessibility-testing features in DevTools
+          - text: Accessibility-testing features
             url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
           - text: Accessibility overview
             url: /microsoft-edge/accessibility/

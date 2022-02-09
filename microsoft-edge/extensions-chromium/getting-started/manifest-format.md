@@ -1,12 +1,11 @@
 ---
+title: Manifest file format for extensions
 description: Learn about the format of the manifest file in an extension package.
-title: Manifest file format
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 06/07/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, html, css, javascript, developer, extensions, mv2, mv3, manifest
+ms.date: 06/07/2021
 ---
 
 # Manifest file format for extensions
@@ -17,7 +16,7 @@ Every extension for Microsoft Edge has a JSON-formatted manifest file, named `ma
 *  The title of the extension.
 *  The permissions that are needed for the extension to run.
 
-The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, navigate to [Prepare to update your extensions from Manifest v2 to v3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
+The format for `manifest.json` for extensions is moving from Manifest V2 to Manifest V3.  Both formats are shown here.  To migrate a Manifest V2 extension to Manifest V3, see [Prepare to update your extensions from Manifest V2 to V3](../developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md).
 
 
 <!-- ====================================================================== -->
@@ -25,7 +24,7 @@ The format for `manifest.json` for extensions is moving from Manifest V2 to Mani
 
 The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V3 package.
 
-For reference information about each field, navigate to [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then select the links on the fields.
+For reference information about each field, see [Manifest file format (V3)](https://developer.chrome.com/docs/extensions/mv3/manifest) and then select the links on the fields.
 
 ```json
 {
@@ -112,7 +111,7 @@ For reference information about each field, navigate to [Manifest file format (V
 
 The following code shows the fields that are supported in `manifest.json` for extensions, for a Manifest V2 package.
 
-For reference information about each field, navigate to [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields.
+For reference information about each field, see [Manifest file format (V2)](https://developer.chrome.com/docs/extensions/mv2/manifest) and then select the links on the fields.
 
 ```json
 {
@@ -202,5 +201,5 @@ For reference information about each field, navigate to [Manifest file format (V
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/extensions/mv3/manifest/).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

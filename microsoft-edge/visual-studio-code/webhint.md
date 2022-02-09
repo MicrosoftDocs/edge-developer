@@ -1,12 +1,11 @@
 ---
-description: Installing and using the webhint extension for Visual Studio Code.
 title: The webhint extension for Visual Studio Code
+description: Installing and using the webhint extension for Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, vs code, visual studio code, webhint
+ms.date: 08/24/2021
 ---
 # The webhint extension for Visual Studio Code
 
@@ -14,7 +13,7 @@ Use [webhint](https://webhint.io), a customizable linting tool, to improve the a
 
 Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the webhint extension for Visual Studio Code.  Hints appear as inline underlines and are summarized in the **Problems** pane.
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code":::
+:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code.":::
    The webhint extension for Visual Studio Code
 :::image-end:::
 
@@ -22,7 +21,7 @@ Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by
 <!-- ====================================================================== -->
 ## Installing webhint
 
-To install the webhint extension from within Visual Studio Code, navigate to [The webhint extension for Visual Studio Code](index.md#the-webhint-extension-for-visual-studio-code). <!-- in the article _Visual Studio Code overview_. -->  Or, you can install the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) from the Visual Studio Marketplace.
+To install the webhint extension from within Visual Studio Code, see [The webhint extension for Visual Studio Code](index.md#the-webhint-extension-for-visual-studio-code). <!-- in the article _Visual Studio Code overview_. -->  Or, you can install the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) from the Visual Studio Marketplace.
 
 
 <!-- ====================================================================== -->
@@ -80,7 +79,7 @@ This extension uses a [default configuration](https://github.com/webhintio/hint/
 }
 ```
 
-If you want more control over the hints and parsers that get activated, create a local `.hintrc` file to configure webhint.  For help with output from specific hints, navigate to [webhint user guide](https://webhint.io/docs/user-guide/configuring-webhint/summary).
+If you want more control over the hints and parsers that get activated, create a local `.hintrc` file to configure webhint.  For help with output from specific hints, see [webhint user guide](https://webhint.io/docs/user-guide/configuring-webhint/summary).
 
 
 <!-- ====================================================================== -->
@@ -88,7 +87,7 @@ If you want more control over the hints and parsers that get activated, create a
 
 Send your feedback by [filing an issue](https://github.com/webhintio/hint/issues/new) in the [webhintio/hint](https://github.com/webhintio/hint) repo.
 
-To contribute to the extension, navigate to [Contributing](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md) at the `webhintio/hint` repo.
+To contribute to the extension, see [Contributing](https://github.com/webhintio/hint/blob/master/packages/extension-vscode/CONTRIBUTING.md) at the `webhintio/hint` repo.
 
 
 <!-- ====================================================================== -->

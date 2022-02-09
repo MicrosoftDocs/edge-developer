@@ -1,13 +1,12 @@
 ---
-description: Use Playwright to automate and test in Microsoft Edge.
 title: Use Playwright to automate and test in Microsoft Edge
+description: Use Playwright to automate and test in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 11/24/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, developer, tools, automation, test, playwright, node, javascript, npm
+ms.date: 11/24/2020
 ---
 # Use Playwright to automate and test in Microsoft Edge
 

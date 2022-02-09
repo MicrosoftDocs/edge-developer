@@ -1,17 +1,16 @@
 ---
+title: Contact the WebView2 team
 description: Contacting the Microsoft Edge WebView2 team to submit feature requests or bug reports.
-title: Contact the Microsoft Edge WebView2 team
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/29/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 09/29/2021
 ---
-# Contact the Microsoft Edge WebView2 team
+# Contact the WebView2 team
 
-Share your feedback to help build richer WebView2 experiences.
+Contact the Microsoft Edge WebView2 team and share your feedback to help build richer WebView2 experiences.
 
 
 <!-- ====================================================================== -->

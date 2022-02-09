@@ -1,19 +1,18 @@
 ---
-description: Optionally login to Partner Center by using your GitHub account credentials.
 title: Publish Microsoft Edge extensions by using a GitHub account
+description: Optionally login to Partner Center by using your GitHub account credentials.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/27/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 08/27/2021
 ---
 # Publish Microsoft Edge extensions by using a GitHub account
 
 If you are a GitHub user, you don't need to create a new Microsoft account (MSA) and remember additional passwords.  You can just use GitHub authentication to sign into Partner Center and publish your Microsoft Edge extensions to the Microsoft Edge Add-ons website.
 
 > [!NOTE]
-> Currently, you can only use your _personal_ GitHub account to login to Partner Center.  You cannot use your _work_ account on GitHub to log in; that is not currently supported.
+> Currently, you can only use your _personal_ GitHub account to login to Partner Center.  You cannot use your _work_ account on GitHub to log in; that isn't currently supported.
 
 An _Microsoft account (MSA)_ is an Outlook.com, Live.com, or Hotmail.com account.  This article discusses several types of accounts; for an overview, see [Types of accounts related to publishing Microsoft Edge extensions](create-dev-account.md#types-of-accounts-related-to-publishing-microsoft-edge-extensions).
 
@@ -55,7 +54,7 @@ After you are registered for the Microsoft Edge program, you can port your Chrom
 <!-- ====================================================================== -->
 ## Contact us
 
-Let us know if this was helpful or if you have any feedback.  For help with signing into Partner Center using GitHub or other related questions, navigate to [Contact Microsoft Edge extensions support](contact-extensions-team.md).
+Let us know if this was helpful or if you have any feedback.  For help with signing into Partner Center using GitHub or other related questions, see [Contact Microsoft Edge extensions support](contact-extensions-team.md).
 
 
 <!-- ====================================================================== -->
