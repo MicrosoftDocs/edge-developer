@@ -831,7 +831,7 @@
               displayName:  # add alt lookup terms
 
             # near getstart
-            - name: Get started debugging WebView2 apps
+            - name: Debug WebView2 apps
               href: webview2/how-to/debug.md
               displayName:  # add alt lookup terms
 
