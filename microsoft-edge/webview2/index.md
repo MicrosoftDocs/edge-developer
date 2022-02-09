@@ -49,7 +49,7 @@ Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both
 
 *  **Rapid innovation**.  Web development allows for faster deployment and iteration.
 
-*  **Windows 7, 8, 10, and 11 support**.  Support for a consistent user experience across Windows 7, Windows 8, and Windows 10.
+*  **Windows 7, 8, 10, and 11 support**.  Support for a consistent user experience across Windows 7, Windows 8, Windows 10, and Windows 11.
 
 *  **Native capabilities**.  Access the full set of Native APIs.
 
