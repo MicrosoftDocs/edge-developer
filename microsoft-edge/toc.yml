@@ -819,10 +819,6 @@
           href: webview2/code-samples-links.md
 
 
-        # re-order the below articles in order of the development workflow
-        # when discover a cluster of related articles, nest that set/group
-        # favor a flat toc, with more articles per bucket
-
 # ========================================================
         - name: Development aspect 1
           items:
