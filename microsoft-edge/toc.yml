@@ -847,6 +847,10 @@
 #             href: webview2/concepts/basic-authentication.md
 #             displayName:  # add alt lookup terms
 
+            - name: Navigation events for WebView2
+              href: webview2/concepts/navigation-events.md
+              displayName:  # add alt lookup terms
+
 
 # ========================================================
         - name: Development workflow phase 3 or aspect 3
@@ -875,10 +879,6 @@
 
             - name: Manage WebView2 applications
               href: webview2/concepts/enterprise.md
-              displayName:  # add alt lookup terms
-
-            - name: Navigation events for WebView2
-              href: webview2/concepts/navigation-events.md
               displayName:  # add alt lookup terms
 
             - name: The WebView2 process model
