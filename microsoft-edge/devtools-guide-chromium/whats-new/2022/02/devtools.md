@@ -57,9 +57,13 @@ In addition to emulating dark, light, and print mode for the current webpage, no
 
 To turn on forced-colors emulation, in DevTools, open the **Rendering** tool, and then in the **Emulate CSS media feature forced-colors** dropdown list, select **forced-colors: active**.
 
-![The 'Emulate CSS media feature forced-colors' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors-not-applied.png)
+Without forced-colors emulation turned on, the following webpage has several different colors of text against different background colors:
 
-<!-- ![Emulate forced-colors, applied to the webpage to apply the user's reduced the color pallette ' dropdown list in the Rendering tool.](../../media/2022/02/emulate-forced-colors-applied.png) -->
+![A webpage without forced-colors emulation turned on in the Rendering tool.](../../media/2022/02/emulate-forced-colors-not-applied.png)
+
+With forced-colors emulation turned on in the **Rendering** tool, the webpage changes to black text on a white background:
+
+![A webpage with forced-colors emulation turned on in the Rendering tool.  Text changed to black text on a white background.](../../media/2022/02/emulate-forced-colors-applied.png)
 
 
 <!-- ====================================================================== -->
@@ -138,8 +142,6 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 * [Ensure your pages are cacheable with the Back/forward cache tab](https://developer.chrome.com/blog/new-in-devtools-98/#bfcache)
 
 * [New Properties pane filter](https://developer.chrome.com/blog/new-in-devtools-98/#properties)
-
-* [Emulate the CSS forced-colors media feature](https://developer.chrome.com/blog/new-in-devtools-98/#forced-colors)
 
 * [Show rulers on hover command](https://developer.chrome.com/blog/new-in-devtools-98/#show-rulers)
 
