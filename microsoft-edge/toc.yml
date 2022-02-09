@@ -824,7 +824,7 @@
         # favor a flat toc, with more articles per bucket
 
 # ========================================================
-        - name: Development workflow phase 1 or aspect 1
+        - name: Development aspect 1
           items:
             - name: WebView2 development best practices
               href: webview2/concepts/developer-guide.md
@@ -841,7 +841,7 @@
 
 
 # ========================================================
-        - name: Development workflow phase 2 or aspect 2
+        - name: Development aspect 2
           items:
 #           - name: Basic authentication for WebView2 apps  # forthcoming, PR 1732
 #             href: webview2/concepts/basic-authentication.md
@@ -853,7 +853,7 @@
 
 
 # ========================================================
-        - name: Development workflow phase 3 or aspect 3
+        - name: Development aspect 3
           items:
             # needed when people think about the UDF location
             - name: Distribute a WebView2 app and the WebView2 Runtime
@@ -865,10 +865,6 @@
               href: webview2/concepts/user-data-folder.md
               displayName:  # add alt lookup terms
 
-
-# ========================================================
-        - name: sort and move into the development workflow order above
-          items:
             - name: Embed web content into native applications
               href: webview2/how-to/communicate-btwn-web-native.md
               displayName:  # add alt lookup terms
