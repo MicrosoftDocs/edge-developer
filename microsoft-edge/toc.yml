@@ -809,8 +809,6 @@
 
         - name: Concepts and How to
           items:
-            - name: Clearing browser data
-              href: webview2/concepts/clearing-browsing-data.md
 
             - name: Automate and test WebView2 apps with Microsoft Edge Driver
               href: webview2/how-to/webdriver.md
@@ -865,6 +863,11 @@
 
             - name: Win32 C++ WebView2 API conventions
               href: webview2/concepts/win32-api-conventions.md
+
+        - name: Using the API features
+          items:
+            - name: Clear Browsing Data
+              href: webview2/concepts/clearing-browsing-data.md
 
         - name: Release notes for WebView2 SDK
           href: webview2/release-notes.md

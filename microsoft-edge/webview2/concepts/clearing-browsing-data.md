@@ -1,5 +1,5 @@
 ---
-title: Clearing browsing data
+title: Clear Browsing Data
 description: Clearing browsing data.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,54 +8,46 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/09/2022
 ---
-# Clearing browsing data
+# Clear Browsing Data
 
-The Clearing Browsing Data API allows you to clear the browsing data that is stored in the user data folder of a WebView2 app.
+<!--[pre-release spec for Clear Browsing Data API Reference](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md)-->
 
-By using this API to clear browsing data that's in the user data folder, you can specify parts of the data to clear.  
+The Clear Browsing Data API allows you to clear the browsing data that is stored in the user data folder of a WebView2 app.
 
-This API allows you to clear the browsing data programatically, specifying which kinds of data to clear.
+By using this API to clear browsing data that's in the user data folder, you can specify parts of the data (kinds of data) to clear.  
 
-Using this API, you can:
-*  Clear data for a specified user. (how, which function?)
-*  Clear space in the user data folder. (how, which function?)
-*  Clear data on-the-fly.  (how, which function?)
+This API allows you to clear the browsing data programmatically, specifying which kinds of data to clear.
 
-*  Clear the cache - which function does this?
-*  Clear autofill data - which function does this?
-
-
-<!-- ====================================================================== -->
-## Clearing browsing data without using this API
-
-If you don't use this API, to clear browsing data that's in the user data folder, you have to entirely delete the user data folder.  This incurs performance costs later on.
-
-The WebView2 app must be shut down fully and then re-initialized.  Deleting the entire user data folder is a complex process.
+Each of the functions in this API enable you to:
+*  Clear data for a specified profile.
+*  Clear space in the user data folder.
+*  Clear the cache. <!--maybe delete-->
+*  Clear autofill data. <!--maybe delete-->
 
 
 <!-- ====================================================================== -->
 ## Overview of the API functions
 
-The Clear Browser Data API consists of the following three functions.
+The Clear Browser Data API consists of the following functions.  These functions clear the data from the user data folder for the associated profile for which the method is called.  The distinctive aspect of each function is as follows:
 
-| function | description |
+| Function | Description |
 |---|---|
-| ClearBrowsingData | Clears the specified kind of browsing data, regardless of the timestamp |
-| ClearBrowsingDataInTimeRange | Clears browsing data within the specified time range |
-| ClearBrowsingDataAll | Clears all browsing data |
-
-See also [Clear Browsing Data API Reference](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md) - the pre-release spec containing the below information.
-
-See the `\\\` comments in the Win32 C++ API section of the spec, for usage details.  The Reference topics will format that information readably.  The present article provides high-level information about the API.
+| [ClearBrowsingData](#clearbrowsingdata---clears-the-specified-kind-of-browsing-data-regardless-of-the-timestamp) | Clears the specified data kind, regardless of when the data was created. |
+| [ClearBrowsingDataInTimeRange](#clearbrowsingdataintimerange---clears-browsing-data-within-the-specified-time-range) | Only clears the data that was created between the start time and end time. |
+| [ClearBrowsingDataAll](#clearbrowsingdataall---clears-all-browsing-data) | Clears each kind of data that's listed in the [COREWEBVIEW2_BROWSING_DATA_KINDS](#corewebview2browsing_data_kinds-enum---kinds-of-data-to-clear) enum, regardless of when the data was created. |
 
 
 <!-- ====================================================================== -->
 ## ClearBrowsingData - Clears the specified kind of browsing data, regardless of the timestamp
 
-Clears the specified kind of browsing data, regardless of the timestamp.
+<!-- function 1 -->
 
-Clears the data for the associated profile in which the method is called on.
+<!--summary sentence to bubble up to Overview table-->
+Clears the specified data kind, regardless of when the data was created.
 
+Clears the data from the user data folder for the associated profile for which the method is called.
+
+<!-- todo: check this signature from the Spec against the latest API Ref topics: -->
 ```csharp
 HRESULT ClearBrowsingData(
       [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
@@ -64,18 +56,33 @@ HRESULT ClearBrowsingData(
 
 Parameters:
 
-* `dataKinds` - Type: [COREWEBVIEW2_BROWSING_DATA_KINDS](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md#win32-c-1) - corresponds to the data types to clear.
+* `dataKinds` - Type: [COREWEBVIEW2_BROWSING_DATA_KINDS (C++)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease.md#corewebview2_browsing_data_kinds) - the data types to clear.
+   <!-- https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease#corewebview2_browsing_data_kinds -->
 
-* `handler` - Type: [ICoreWebView2ClearBrowsingDataCompletedHandler*](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md#win32-c-1).  A handler which indicates if the proper data has been cleared successfully.
+* `handler` - Type: [ICoreWebView2ClearBrowsingDataCompletedHandler (C++)](__).  A handler which indicates if the proper data has been cleared successfully.
+
+Pre-release version of the interface (with "experimental" in the name): [ICoreWebView2ExperimentalClearBrowsingDataCompletedHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler?view=webview2-1.0.1158-prerelease)
+<!--https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler?view=webview2-1.0.1158-prerelease-->
+
+
+API Reference:
+
+* `ClearBrowsingData` (C++) 
+* `ClearBrowsingData` - [CoreWebView2Profile.ClearBrowsingDataAsync method (C#)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync?view=webview2-dotnet-1.0.1133-prerelease).
+   <!-- https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync?view=webview2-dotnet-1.0.1133-prerelease -->
 
 
 <!-- ====================================================================== -->
 ## ClearBrowsingDataInTimeRange - Clears browsing data within the specified time range
 
-Clears browsing data within the specified time range.
+<!-- function 2 -->
 
-Clears the data for the associated profile in which the method is called on.
+<!--summary sentence to bubble up to Overview table-->
+Only clears the data that was created between the start time and end time.
 
+Clears the data from the user data folder for the associated profile for which the method is called.
+
+<!-- todo: check this signature from the Spec against the latest API Ref topics: -->
 ```csharp
 HRESULT ClearBrowsingDataInTimeRange(
       [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds, 
@@ -100,14 +107,23 @@ Parameters:
 
 * `handler` - Type: `ICoreWebView2ClearBrowsingDataCompletedHandler*`.
 
+API Reference:
+
+* `ClearBrowsingDataInTimeRange` (C++)
+* `ClearBrowsingDataInTimeRange` (C#)
+
 
 <!-- ====================================================================== -->
 ## ClearBrowsingDataAll - Clears all browsing data
 
-Clears all of the browsing data, regardless of timestamp.  Clears all of the data included in the profile data kind listed below. 
+<!-- function 3 -->
 
-Clears the data for the associated profile in which the method is called on.
+<!--summary sentence to bubble up to Overview table-->
+Clears each kind of data that's listed in the `COREWEBVIEW2_BROWSING_DATA_KINDS` enum, regardless of when the data was created.
 
+Clears the data from the user data folder for the associated profile for which the method is called.
+
+<!-- todo: check this signature from the Spec against the latest API Ref topics: -->
 ```csharp
 HRESULT ClearBrowsingDataAll(
       [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
@@ -117,9 +133,23 @@ Parameters:
 
 * `handler` - Type: `ICoreWebView2ClearBrowsingDataCompletedHandler*`
 
+API Reference:
+
+* `ClearBrowsingDataAll` (C++)
+* `ClearBrowsingDataAll` (C#)
+
 
 <!-- ====================================================================== -->
-## Example: Clearing autofill data from the last hour (Win32 C++)
+## COREWEBVIEW2_BROWSING_DATA_KINDS enum - Kinds of data to clear
+
+See [COREWEBVIEW2_BROWSING_DATA_KINDS enum (C++)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease.md#corewebview2_browsing_data_kinds).
+<!-- https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease#corewebview2_browsing_data_kinds -->
+
+
+<!-- ====================================================================== -->
+## Example: Clearing autofill data from the last hour (C++)
+
+This C++ example demonstrates clearing autofill data from the last hour (C++)
 
 ```cpp
 // Clears the autofill data from the last hour.
@@ -153,25 +183,24 @@ void ClearAutofillData()
 }
 ```
 
-APIs used in this example:
+APIs from the Clear Browsing Data API that are used in the above example:
 
-*  ClearBrowsingDataInTimeRange
-*  coreWebView2.try_query
-*  COREWEBVIEW2_BROWSING_DATA_KINDS
-*  COREWEBVIEW2_BROWSING_DATA_KINDS_GENERAL_AUTOFILL
-*  COREWEBVIEW2_BROWSING_DATA_KINDS_PASSWORD_AUTOSAVE
-*  get_CoreWebView2
-*  get_Profile
-*  ICoreWebView2
-*  ICoreWebView2_7
-*  ICoreWebView2ClearBrowsingDataCompletedHandler
-*  ICoreWebView2Profile
+*  `ClearBrowsingDataInTimeRange`
+*  `COREWEBVIEW2_BROWSING_DATA_KINDS`
+*  `COREWEBVIEW2_BROWSING_DATA_KINDS_GENERAL_AUTOFILL`
+*  `COREWEBVIEW2_BROWSING_DATA_KINDS_PASSWORD_AUTOSAVE`
+
+Other APIs used above:
+
+*  `get_Profile`
+*  `ICoreWebView2ClearBrowsingDataCompletedHandler`
+*  `ICoreWebView2Profile`
 
 
 <!-- ====================================================================== -->
-## Example: Clearing autofill data (.NET, WinRT)
+## Example: Clearing autofill data from the last hour (C#)
 
-```c#
+```csharp
 // Clears autofill data.
 private void ClearAutofillData() 
 {
@@ -189,226 +218,31 @@ private void ClearAutofillData()
 }
 ```
 
-APIs used in this example:
+APIs from the Clear Browsing Data API that are used in the above example:
 
-*  CoreWebView2BrowsingDataKinds
-*  CoreWebView2BrowsingDataKinds.GeneralAutofill
-*  CoreWebView2BrowsingDataKinds.PasswordAutosave
-*  CoreWebView2Profile
-*  profile.ClearBrowsingDataAsync
-*  webView.CoreWebView2
-*  webView.CoreWebView2.Profile
+*  `CoreWebView2BrowsingDataKinds`
+*  `CoreWebView2BrowsingDataKinds.GeneralAutofill`
+*  `CoreWebView2BrowsingDataKinds.PasswordAutosave`
+*  `profile.ClearBrowsingDataAsync`
 
+Other APIs used above:
 
-<!-- ====================================================================== -->
-## Win32 C++ API
-
-### Data kinds for Win32 C++: the COREWEBVIEW2_BROWSING_DATA_KINDS enum
-
-```idl
-interface ICoreWebView2ClearBrowsingDataCompletedHandler;
-
-/// Specifies the datatype for the
-/// `ICoreWebView2Profile::ClearBrowsingData` method.
-[v1_enum] 
-typedef enum COREWEBVIEW2_BROWSING_DATA_KINDS {
-  /// Specifies data stored by the AppCache DOM feature.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_APP_CACHE = 1 << 0,
-
-  /// Specifies file systems data.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_FILE_SYSTEMS = 1 << 1,
-
-  /// Specifies data stored by the IndexedDB DOM feature.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_INDEXED_DB = 1 << 2,
-
-  /// Specifies data stored by the localStorage DOM API.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_LOCAL_STORAGE = 1 << 3,
-
-  /// Specifies data stored by the Web SQL database DOM API.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_WEB_SQL = 1 << 4,
-
-  /// Specifies data stored by the CacheStorge DOM API.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_CACHE_STORAGE = 1 << 5,
-
-  /// Specifies DOM storage data, now and future. This browsing data kind is 
-  /// inclusive of COREWEBVIEW2_BROWSING_DATA_KINDS_APP_CACHE, 
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_FILE_SYSTEMS,
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_INDEXED_DB, 
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_LOCAL_STORAGE,
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_WEB_SQL, 
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_CACHE_STORAGE.
-  /// New DOM storage data types may be added to this data kind in the future. 
-  COREWEBVIEW2_BROWSING_DATA_KINDS_ALL_DOM_STORAGE = 1 << 6,
-
-  /// Specifies HTTP cookies data.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_COOKIES = 1 << 7,
-
-  /// Specifies all site data, now and future. This browsing data kind
-  /// is inclusive of COREWEBVIEW2_BROWSING_DATA_KINDS_ALL_DOM_STORAGE and
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_COOKIES. New site data types
-  /// may be added to this data kind in the future. 
-  COREWEBVIEW2_BROWSING_DATA_KINDS_ALL_SITE = 1 << 8,
-
-  /// Specifies disk cache. 
-  COREWEBVIEW2_BROWSING_DATA_KINDS_DISK_CACHE = 1 << 9,
-
-  /// Specifies download history data. 
-  COREWEBVIEW2_BROWSING_DATA_KINDS_DOWNLOAD_HISTORY = 1 << 10, 
-
-  /// Specifies general autofill form data. 
-  /// This excludes password information and includes information like: 
-  /// names, street and email addresses, phone numbers, and arbitrary input. 
-  /// This also includes payment data. 
-  COREWEBVIEW2_BROWSING_DATA_KINDS_GENERAL_AUTOFILL = 1 << 11, 
-
-  /// Specifies password autosave data. 
-  COREWEBVIEW2_BROWSING_DATA_KINDS_PASSWORD_AUTOSAVE = 1 << 12,
-
-  /// Specifies browsing history data. 
-  COREWEBVIEW2_BROWSING_DATA_KINDS_BROWSING_HISTORY = 1 << 13,
-
-  /// Specifies settings data.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_SETTINGS = 1 << 14,
-
-  /// Specifies profile data that should be wiped to make it look like a new profile.
-  /// This does not delete account-scoped data like passwords but will remove access
-  /// to account-scoped data by signing the user out.
-  /// Specifies all profile data, now and future. New profile data types may be added
-  /// to this data kind in the future. 
-  /// This browsing data kind is inclusive of COREWEBVIEW2_BROWSING_DATA_KINDS_ALL_SITE,
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_DISK_CACHE, 
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_DOWNLOAD_HISTORY,
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_GENERAL_AUTOFILL, 
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_PASSWORD_AUTOSAVE,
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_BROWSING_HISTORY, and 
-  /// COREWEBVIEW2_BROWSING_DATA_KINDS_SETTINGS.
-  COREWEBVIEW2_BROWSING_DATA_KINDS_ALL_PROFILE =  1 << 15,
-} COREWEBVIEW2_BROWSING_DATA_KINDS;
-
-[uuid(DAF8B1F9-276D-410C-B481-58CBADF85C9C), object, pointer_default(unique)]
-interface ICoreWebView2Profile : IUnknown {
-
-  /// Clear browsing data based on a data type. This method takes two parameters, 
-  /// the first being a mask of one or more `COREWEBVIEW2_BROWSING_DATA_KINDS`. OR operation(s) 
-  /// can be applied to multiple `COREWEBVIEW2_BROWSING_DATA_KINDS` to create a mask 
-  /// representing those data types. The browsing data kinds that are supported 
-  /// are listed below. These data kinds follow a hierarchical structure in which 
-  /// nested bullet points are included in their parent bullet point's data kind.
-  /// Ex: DOM storage is encompassed in site data which is encompassed in the profile data. 
-  /// * All Profile
-  ///   * All Site Data
-  ///     * All DOM Storage: App Cache, File Systems, Indexed DB, Local Storage, Web SQL, Cache 
-  ///         Storage
-  ///     * Cookies 
-  ///   * Disk Cache 
-  ///   * Download History
-  ///   * General Autofill 
-  ///   * Password Autosave
-  ///   * Browsing History
-  ///   * Settings  
-  /// The completed handler will be invoked when the browsing data has been cleared and
-  /// will indicate if the specified data was properly cleared.
-  /// Because this is an asynchronous operation, code that is dependent on the cleared 
-  /// data must be placed in the callback of this operation.
-  /// If the WebView object is closed before the clear browsing data operation
-  /// has completed, the handler will be released, but not invoked. In this case
-  /// the clear browsing data operation may or may not be completed.
-  /// ClearBrowsingData clears the `dataKinds` regardless of timestamp. 
-
-  HRESULT ClearBrowsingData(
-      [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
-      [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
-  
-  /// ClearBrowsingDataInTimeRange behaves like ClearBrowsingData except that it
-  /// takes in two additional parameters for the start and end time for which it 
-  /// should clear the data between.  The `startTime` and `endTime` 
-  /// parameters correspond to the number of seconds since the UNIX epoch. 
-  /// The `startTime` will be offset by -1.0 and the `endTime` will be offset by +1.0
-  /// to ensure the last fractional second is cleared on each respective end.
-  /// `startTime` is inclusive while `endTime` is exclusive, therefore the data will 
-  /// clear [startTime, endTime).
- 
-  HRESULT ClearBrowsingDataInTimeRange(
-      [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds, 
-      [in] double startTime,
-      [in] double endTime, 
-      [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
-
-  /// ClearBrowsingDataAll behaves like ClearBrowsingData except that it 
-  /// clears the entirety of the data associated with the profile it is called on.
-  /// It clears the data regardless of timestamp.
-
-  HRESULT ClearBrowsingDataAll(
-    [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
-}
-
-/// The caller implements this interface to receive the `ClearBrowsingData` result.
-[uuid(27676699-FE17-4E2B-8C1B-267395A04ED5), object, pointer_default(unique)]
-interface ICoreWebView2ClearBrowsingDataCompletedHandler : IUnknown {
-  
-  /// Provide the completion status of the corresponding asynchronous method. 
-  HRESULT Invoke([in] HRESULT errorCode);
-}
-
-```
+*  `CoreWebView2Profile`
+* [CoreWebView2.Profile](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-dotnet-1.0.1133-prerelease)<!--https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.profile?view=webview2-dotnet-1.0.1133-prerelease-->
 
 
 <!-- ====================================================================== -->
-## .NET, WinRT (C#) API
+## API Reference links
 
-### Data kinds: The CoreWebView2BrowsingDataKinds enum
+C++ Win32 API Ref:
 
-<!-- will /// comments be added in the API Ref topic to describe each API item?  Get those from C++ above. -->
+* [API Ref: interface ICoreWebView2ExperimentalProfile4](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4?view=webview2-1.0.1158-prerelease.md#summary).
 
-List of data kind values: see `///` comments above, for descriptions.
-*  AppCache - desc.
-*  FileSystems
-*  IndexedDb
-*  LocalStorage
-*  WebSql
-*  CacheStorage
-*  AllDomStorage
-*  Cookies
-*  AllSite
-*  DiskCache
-*  DownloadHistory
-*  GeneralAutofill
-*  PasswordAutosave
-*  BrowsingHistory
-*  Settings
-*  AllProfile
+* [COREWEBVIEW2_BROWSING_DATA_KINDS enum (C++)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease.md#corewebview2_browsing_data_kinds)
+<!-- https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease#corewebview2_browsing_data_kinds -->
 
 
+C# .NET, WinRT API Ref:
 
-```csharp
-namespace Microsoft.Web.WebView2.Core
-{
-    [Flags] enum CoreWebView2BrowsingDataKinds
-    {
-        AppCache = 1,
-        FileSystems = 2,
-        IndexedDb = 4,
-        LocalStorage = 8,
-        WebSql = 16,
-        CacheStorage = 32,
-        AllDomStorage = 64,
-        Cookies = 128,
-        AllSite = 256,
-        DiskCache = 512,
-        DownloadHistory = 1024,
-        GeneralAutofill = 2048,
-        PasswordAutosave = 4096,
-        BrowsingHistory = 8192,
-        Settings = 16384,
-        AllProfile = 32768,
-    };
-
-    public partial class CoreWebView2Profile
-    {
-        public async Task ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds dataKinds);
-        /// .NET and WinRT will take the official DateTime object for start and end time parameters.
-        public async Task ClearBrowsingDataAsync(CoreWebView2BrowsingDataKinds dataKinds, DateTime startTime, DateTime endTime);
-        public async Task ClearBrowsingDataAsync();
-    }
-}
-```
+* [CoreWebView2Profile.ClearBrowsingDataAsync method (C#)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync?view=webview2-dotnet-1.0.1133-prerelease)
+<!-- https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync?view=webview2-dotnet-1.0.1133-prerelease -->
