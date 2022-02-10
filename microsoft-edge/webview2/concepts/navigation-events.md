@@ -13,9 +13,7 @@ ms.date: 10/28/2021
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
-This article covers navigation events for WebView2 apps.  Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.
-
-For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.
+This article covers navigation events for WebView2 apps.  Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.
 
 For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
 

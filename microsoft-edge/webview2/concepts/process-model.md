@@ -13,7 +13,7 @@ ms.date: 09/21/2021
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
-This article covers the process model for WebView2 apps.  The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture).
+This article covers the process model for WebView2 apps.  The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Browser Architecture](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture) in _Inside look at modern web browser (part 1)_.
 
 
 <!-- ====================================================================== -->
