@@ -128,23 +128,23 @@ Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.
 
 ### Create a launch.json file
 
-1. To debug your code, your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, create a new `launch.json` file and paste the following code into it:
+To debug your code, your project is required to have a `launch.json` file.  If your project doesn't have a `launch.json` file, create a new `launch.json` file and paste the following code into it:
 
-   ```json
-      "name": "Hello debug world",
-      "type": "pwa-msedge",
-      "port": 9222, // The port value is optional, and the default value is 9222.
-      "request": "launch",
-      "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
-      "env": {
-         // Customize for your app location if needed
-         "Path": "%path%;e:/path/to/your/app/location; "
-      },
-      "useWebView": true,
-      // The following two lines setup source path mapping, where `url` is the start page of your app, and `webRoot` is the top level directory with all your code files.
-      "url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
-      "webRoot": "${workspaceFolder}/path/to/your/assets"
-   ```
+```json
+"name": "Hello debug world",
+"type": "pwa-msedge",
+"port": 9222, // The port value is optional, and the default value is 9222.
+"request": "launch",
+"runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+"env": {
+   // Customize for your app location if needed
+   "Path": "%path%;e:/path/to/your/app/location; "
+},
+"useWebView": true,
+// The following two lines setup source path mapping, where `url` is the start page of your app, and `webRoot` is the top level directory with all your code files.
+"url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
+"webRoot": "${workspaceFolder}/path/to/your/assets"
+```
 
 #### Command-line URL parameter passed in
 
@@ -157,15 +157,13 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
    :::image type="content" source="./media/breakpoint-vs.png" alt-text="A breakpoint that's set in Visual Studio Code." lightbox="./media/breakpoint-vs.png":::
 
-   Run the code, as follows.
-
 1. On the **Run** tab, select the launch configuration from the dropdown menu.
 
-1. To start debugging your app, click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
+1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
    :::image type="content" source="./media/run-vs.png" alt-text="The Run tab in Visual Studio Code." lightbox="./media/run-vs.png":::
 
-1. Open **Debug Console** to view the debug output and errors.
+1. To view the debug output and errors, open **Debug Console**.
 
    :::image type="content" source="./media/results-vs.png" alt-text="The Debug Console in Visual Studio Code." lightbox="./media/results-vs.png":::
 
