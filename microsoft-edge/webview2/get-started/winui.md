@@ -223,7 +223,7 @@ In this section, you add code to import the WebView2 Core library.
    > [!NOTE]
    > If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
     
-   For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
+   For more information, see [Navigation events](../concepts/navigation-events.md).
     
    When errors occur, the following events are raised, and an error webpage might be displayed:
 

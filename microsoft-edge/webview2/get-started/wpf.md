@@ -266,7 +266,7 @@ A successful path includes the full sequence of events:
 1. History changes.
 1. Navigation completed.
 
-For more information, see [Navigation events for WebView2](../concepts/navigation-events.md).
+For more information, see [Navigation events](../concepts/navigation-events.md).
 
 
 ### Failure path

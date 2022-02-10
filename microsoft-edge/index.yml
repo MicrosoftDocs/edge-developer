@@ -212,7 +212,7 @@ conceptualContent:
               url: /microsoft-edge/webview2/index
               itemType: overview
 
-            - text: Feature differences between Microsoft Edge and WebView2
+            - text: Differences between Microsoft Edge and WebView2
               url: /microsoft-edge/webview2/concepts/browser-features
               itemType: concept
 
@@ -232,7 +232,7 @@ conceptualContent:
               url: /microsoft-edge/webview2/release-notes
               itemType: whats-new
 
-            - text: Microsoft Edge WebView2 API Reference
+            - text: WebView2 API Reference
               url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
         # Card

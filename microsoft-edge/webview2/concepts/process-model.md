@@ -1,5 +1,5 @@
 ---
-title: Process model for WebView2
+title: Process model
 description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,12 +8,12 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/21/2021
 ---
-# Process model for WebView2
+# Process model
 <!-- old title: # The WebView2 process model -->
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
-The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture).
+This article covers the process model for WebView2 apps.  The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture).
 
 
 <!-- ====================================================================== -->

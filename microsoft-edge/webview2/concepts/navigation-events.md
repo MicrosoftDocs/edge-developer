@@ -1,5 +1,5 @@
 ---
-title: Navigation events for WebView2
+title: Navigation events
 description: "Navigation events for WebView2: NavigationStarting, SourceChanged, ContentLoading, HistoryChanged, DOMContentLoaded, and NavigationCompleted."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,11 +8,16 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/28/2021
 ---
-# Navigation events for WebView2
+# Navigation events
+<!-- old title: # Navigation events for WebView2 -->
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
-Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
+This article covers navigation events for WebView2 apps.  Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.
+
+For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.
+
+For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
 
 <!--todo: Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide. -->
 

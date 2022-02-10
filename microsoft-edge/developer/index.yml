@@ -104,7 +104,7 @@ landingContent:
             url: /microsoft-edge/webview2/index
       - linkListType: concept
         links:
-          - text: Feature differences between Microsoft Edge and WebView2
+          - text: Differences between Microsoft Edge and WebView2
             url: /microsoft-edge/webview2/concepts/browser-features
           - text: Development best practices
             url: /microsoft-edge/webview2/concepts/developer-guide
@@ -122,7 +122,7 @@ landingContent:
             url: /microsoft-edge/webview2/release-notes
       - linkListType: reference
         links:
-          - text: Microsoft Edge WebView2 API Reference
+          - text: WebView2 API Reference
             url: /microsoft-edge/webview2/webview2-api-reference
   # Card
   - title: Test and automation

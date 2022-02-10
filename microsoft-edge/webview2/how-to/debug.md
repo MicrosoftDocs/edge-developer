@@ -1,5 +1,5 @@
 ---
-title: Debugging web code in WebView2 apps
+title: Debugging web code
 description: Learn how to debug WebView2 controls.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,11 +8,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/15/2021
 ---
-# Debugging web code in WebView2 apps
+# Debugging web code
 
-The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.  When you develop your WebView2 app, you should debug your app.
+This article covers debugging web code in WebView2 apps by using Microsoft Edge DevTools, Microsoft Visual Studio, and Microsoft Visual Studio Code.  Use these developer tools to debug both your web code and native code in your WebView2 app.
 
-This article outlines the different tools to use to debug both your web code and native code in your WebView2 app.
+The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.  When you develop your WebView2 app, you test the app by debugging it.
 
 
 <!-- might need to keep blank lines around tab headers -->
@@ -38,13 +38,15 @@ See also [DevTools overview](../index.md).
 
 ## [Visual Studio](#tab/visualstudio)
 
-Visual Studio provides various debugging tools for web and native code in WebView2 apps.  In the Visual Studio section, the primary focus is debugging WebView controls, however the other methods of debugging in Visual Studio are available, as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
-
-> [!IMPORTANT]
-> When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`, or right-click.
+Microsoft Visual Studio provides various debugging tools for web and native code in WebView2 apps.  This section mainly focuses on debugging WebView controls; however, the other methods of debugging in Visual Studio are available, as usual.  Use the following process to debug web and native code in Win32 apps or Office Add-ins only.
 
 
-Requirements:
+### Open DevTools using an approach other than F12
+
+When you debug your app in Visual Studio with the native debugger attached, pressing `F12` may trigger the native debugger instead of Developer Tools.  To avoid that situation, press `Ctrl`+`Shift`+`I`, or right-click.
+
+
+### Requirements
 
 *  To debug scripts, the app must be launched from within Visual Studio.
 

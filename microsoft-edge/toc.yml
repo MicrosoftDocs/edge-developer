@@ -817,7 +817,7 @@
             - name: Sample Code
               href: webview2/code-samples-links.md
 
-            - name: Feature differences between Microsoft Edge and WebView2
+            - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
               displayName:  # add alt lookup terms
 
@@ -903,7 +903,7 @@
 
         - name: WebView2 Reference
           items:
-            - name: Microsoft Edge WebView2 API Reference
+            - name: WebView2 API Reference
               href: webview2/webview2-api-reference.md
               displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
 
