@@ -14,13 +14,18 @@ The Clearing Browsing Data API allows you to clear the browsing data that is sto
 
 By using this API to clear browsing data that's in the user data folder, you can specify parts of the data to clear.  
 
-This API allows you to clear the browsing data programatically, specifying specify which kind of data to clear (see the [CoreWebView2BrowsingDataKinds](#CoreWebView2BrowsingDataKinds) enum).
+This API allows you to clear the browsing data programatically, specifying which kinds of data to clear.
 
 Using this API, you can:
-*  Clear data for a user.
-*  Clear space in the user data folder.
-*  Clear data on-the-fly. 
+*  Clear data for a specified user. (how, which function?)
+*  Clear space in the user data folder. (how, which function?)
+*  Clear data on-the-fly.  (how, which function?)
 
+*  Clear the cache - which function does this?
+*  Clear autofill data - which function does this?
+
+
+<!-- ====================================================================== -->
 ## Clearing browsing data without using this API
 
 If you don't use this API, to clear browsing data that's in the user data folder, you have to entirely delete the user data folder.  This incurs performance costs later on.
@@ -28,63 +33,50 @@ If you don't use this API, to clear browsing data that's in the user data folder
 The WebView2 app must be shut down fully and then re-initialized.  Deleting the entire user data folder is a complex process.
 
 
-
 <!-- ====================================================================== -->
-## Clearing the cache
-
-
-
-<!-- ====================================================================== -->
-## Clearing autofill data
-
-
-
-<!-- ====================================================================== -->
-## API Reference
-
-* [Clear Browsing Data API Reference](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md) - pre-release.
-
-
-<!-- ====================================================================== -->
-## Code samples
-
-<!-- *[Code samples for clearing browsing data]() -->
-
-
-
-
-
-<!-- ====================================================================== -->
-## Description
+## Overview of the API functions
 
 The Clear Browser Data API consists of the following three functions.
 
+| function | description |
+|---|---|
+| ClearBrowsingData | Clears the specified kind of browsing data, regardless of the timestamp |
+| ClearBrowsingDataInTimeRange | Clears browsing data within the specified time range |
+| ClearBrowsingDataAll | Clears all browsing data |
+
+See also [Clear Browsing Data API Reference](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md) - the pre-release spec containing the below information.
+
+See the `\\\` comments in the Win32 C++ API section of the spec, for usage details.  The Reference topics will format that information readably.  The present article provides high-level information about the API.
+
 
 <!-- ====================================================================== -->
-### ClearBrowsingData
+## ClearBrowsingData - Clears the specified kind of browsing data, regardless of the timestamp
 
-Clears browsing data regardless of the timestamp.
+Clears the specified kind of browsing data, regardless of the timestamp.
 
-```IDL
+Clears the data for the associated profile in which the method is called on.
+
+```csharp
 HRESULT ClearBrowsingData(
       [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
       [in] [ICoreWebView2ClearBrowsingDataCompletedHandler*](#ICoreWebView2ClearBrowsingDataCompletedHandler) handler); 
 ```
 
-#### Parameters
+Parameters:
 
 * `dataKinds` - Type: [COREWEBVIEW2_BROWSING_DATA_KINDS](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md#win32-c-1) - corresponds to the data types to clear.
 
 * `handler` - Type: [ICoreWebView2ClearBrowsingDataCompletedHandler*](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md#win32-c-1).  A handler which indicates if the proper data has been cleared successfully.
 
----
 
 <!-- ====================================================================== -->
-### ClearBrowsingDataInTimeRange
+## ClearBrowsingDataInTimeRange - Clears browsing data within the specified time range
 
 Clears browsing data within the specified time range.
 
-```IDL
+Clears the data for the associated profile in which the method is called on.
+
+```csharp
 HRESULT ClearBrowsingDataInTimeRange(
       [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds, 
       [in] double startTime,
@@ -92,9 +84,7 @@ HRESULT ClearBrowsingDataInTimeRange(
       [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
 ```
 
----
-
-#### Parameters
+Parameters:
 
 * `dataKinds` - Type: `COREWEBVIEW2_BROWSING_DATA_KINDS`.
 
@@ -110,35 +100,26 @@ HRESULT ClearBrowsingDataInTimeRange(
 
 * `handler` - Type: `ICoreWebView2ClearBrowsingDataCompletedHandler*`.
 
----
 
 <!-- ====================================================================== -->
-### ClearBrowsingDataAll
+## ClearBrowsingDataAll - Clears all browsing data
 
 Clears all of the browsing data, regardless of timestamp.  Clears all of the data included in the profile data kind listed below. 
 
+Clears the data for the associated profile in which the method is called on.
 
-```IDL
+```csharp
 HRESULT ClearBrowsingDataAll(
       [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
 ```
 
-#### Parameters
+Parameters:
 
 * `handler` - Type: `ICoreWebView2ClearBrowsingDataCompletedHandler*`
 
 
-All methods clear the data for the associated profile in which the method is called on.
-
-
----
-
 <!-- ====================================================================== -->
-## Examples of using the API
-
-
-<!-- ====================================================================== -->
-### Clearing autofill data from the last hour (Win32 C++)
+## Example: Clearing autofill data from the last hour (Win32 C++)
 
 ```cpp
 // Clears the autofill data from the last hour.
@@ -188,7 +169,7 @@ APIs used in this example:
 
 
 <!-- ====================================================================== -->
-### Clearing autofill data (.NET, WinRT)
+## Example: Clearing autofill data (.NET, WinRT)
 
 ```c#
 // Clears autofill data.
@@ -219,14 +200,10 @@ APIs used in this example:
 *  webView.CoreWebView2.Profile
 
 
-
 <!-- ====================================================================== -->
-# API Details
+## Win32 C++ API
 
-<!-- ====================================================================== -->
-## Win32 C++
-
-### COREWEBVIEW2_BROWSING_DATA_KINDS enum
+### Data kinds for Win32 C++: the COREWEBVIEW2_BROWSING_DATA_KINDS enum
 
 ```idl
 interface ICoreWebView2ClearBrowsingDataCompletedHandler;
@@ -377,11 +354,33 @@ interface ICoreWebView2ClearBrowsingDataCompletedHandler : IUnknown {
 
 
 <!-- ====================================================================== -->
-### .NET, WinRT (C#)
+## .NET, WinRT (C#) API
 
-#### CoreWebView2BrowsingDataKinds enum
+### Data kinds: The CoreWebView2BrowsingDataKinds enum
 
-```c#
+<!-- will /// comments be added in the API Ref topic to describe each API item?  Get those from C++ above. -->
+
+List of data kind values: see `///` comments above, for descriptions.
+*  AppCache - desc.
+*  FileSystems
+*  IndexedDb
+*  LocalStorage
+*  WebSql
+*  CacheStorage
+*  AllDomStorage
+*  Cookies
+*  AllSite
+*  DiskCache
+*  DownloadHistory
+*  GeneralAutofill
+*  PasswordAutosave
+*  BrowsingHistory
+*  Settings
+*  AllProfile
+
+
+
+```csharp
 namespace Microsoft.Web.WebView2.Core
 {
     [Flags] enum CoreWebView2BrowsingDataKinds
