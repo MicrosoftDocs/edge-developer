@@ -65,11 +65,11 @@ The Microsoft Edge DevTools team added a timeline in the **Application** tool to
 
 You can now access the service worker timelines through the **Network** tool in the console drawer.  This feature benefits performance, minimizes UI duplication, and creates a more comprehensive debugging experience.
 
-1. Open the service worker you are debugging.
+1. Open the service worker that you're debugging.
 
-1. Click the **Network** button to open up the [request routing experience](#network).
+1. Click the **Network** button to open the [request routing experience](#network).
 
-1. Use the **respondWith** dropdowns for fetch event request and response information.
+1. Use the **respondWith** dropdown arrows for fetch event request and response information.
 
 The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
 

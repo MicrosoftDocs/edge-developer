@@ -146,9 +146,9 @@ The **Cache Storage** pane provides a read-only list of resources that have been
 > [!NOTE]
 > The first time you open a cache and add a resource to it, DevTools may not detect the change.  Refresh the page and to display the cache.
 
-If you have two or more caches open, the caches display under the following **Cache Storage** dropdown.
+If you have two or more caches open, the caches are displayed under the **Cache Storage** dropdown list, as shown in the following screenshot.
 
-:::image type="content" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown." lightbox="../media/cache-pane-cache-storage.msft.png":::
+:::image type="content" source="../media/cache-pane-cache-storage.msft.png" alt-text="The Cache Storage dropdown list." lightbox="../media/cache-pane-cache-storage.msft.png":::
 
 
 <!-- ====================================================================== -->

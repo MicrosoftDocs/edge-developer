@@ -186,9 +186,9 @@ If your site employs [user agent client hints](../../web-platform/user-agent-gui
 
    :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Setting user agent client hints." lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
 
-1. Accept the default value of **Custom...**, or select a predefined browser and device from the drop-down list.
+1. Accept the default value of **Custom...**, or select a predefined browser and device from the dropdown list.
 
-1. For either choice, set User agent client hints as follows.
+1. For either choice, set User agent client hints as follows:
     * **Brand** and **Version** such as *Edge* and *92*.  Click **+ Add Brand** to add multiple brand and version pairs.
     * **Full Browser Version** such as *92.0.1111.0*.
     * **Platform** and **Version** such as *Windows* and *10.0*.
@@ -227,12 +227,12 @@ The complete list of supported properties:
 
 | Property | Details |
 |:--- | :--- |
-| `domain` | Only display resources from the specified domain.  You can use a wildcard character (`*`) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populate the autocomplete dropdown menu with all of the domains that are found. |
-| `has-response-header` | Displays the resources that contain the specified HTTP response header.  DevTools populate the autocomplete dropdown with all of the response headers that are found. |
+| `domain` | Only display resources from the specified domain.  You can use a wildcard character (`*`) to include multiple domains.  For example, `*.com` displays resources from all domain names ending in `.com`.  DevTools populates the autocomplete dropdown menu with all of the domains that are found. |
+| `has-response-header` | Displays the resources that contain the specified HTTP response header.  DevTools populates the autocomplete dropdown menu with all of the response headers that are found. |
 | `is` | Use `is:running` to find `WebSocket` resources. |
 | `larger-than` | Displays resources that are larger than the specified size, in bytes.  Setting a value of `1000` is equivalent to setting a value of `1k`. |
-| `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populate the dropdown with all of the HTTP methods  that are found. |
-| `mime-type` | Displays resources of a specified MIME type.  DevTools populate the dropdown with all MIME types  that are found. |
+| `method` | Displays resources that were retrieved over a specified HTTP method type.  DevTools populates the dropdown menu with all of the HTTP methods  that are found. |
+| `mime-type` | Displays resources of a specified MIME type.  DevTools populates the dropdown menu with all MIME types  that are found. |
 | `mixed-content` | Show all mixed content resources (`mixed-content:all`) or just the ones that are currently displayed (`mixed-content:displayed`). |
 | `scheme` | Displays resources retrieved over unprotected HTTP (`scheme:http`) or protected HTTPS (`scheme:https`). |
 | `set-cookie-domain` | Displays resources that have a `Set-Cookie` header with a `Domain` attribute that matches the specified value.  DevTools populate the autocomplete with all of the cookie domains that are found. |

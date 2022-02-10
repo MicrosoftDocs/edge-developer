@@ -42,7 +42,7 @@ When you know the name of the resource that you want to inspect, the **Command M
 
    :::image type="content" source="../media/resources-command-menu-empty.msft.png" alt-text="The Open File dialog." lightbox="../media/resources-command-menu-empty.msft.png":::
 
-1. Select the file from the dropdown, or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.
+1. Select the file from the dropdown list, or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.
 
    :::image type="content" source="../media/resources-command-menu-file-search.msft.png" alt-text="Type a filename in the Open File dialog." lightbox="../media/resources-command-menu-file-search.msft.png":::
 
@@ -99,7 +99,7 @@ To view the resources of a webpage organized by directory:
     | Page item | Description |
     |:--- |:--- |
     | `top` | The main document [browsing context](https://developer.mozilla.org/docs/Web/HTML/Element/iframe). |
-    | `airhorner.com` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.j` file is probably `https://airhorner.com/scripts/comlink.global.js`. |
+    | `airhorner.com` | The domain.  All resources nested under it come from that domain.  For example, the full URL of the `comlink.global.js` file is probably `https://airhorner.com/scripts/comlink.global.js`. |
     | `scripts` | A directory. |
     | `(index)` | The main HTML document. |
     | `sw.js` | A service worker runtime context. |

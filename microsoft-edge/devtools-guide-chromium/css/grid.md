@@ -50,7 +50,7 @@ The **Grid** section in the **Layout** pane contains the following 2 sub-section
 
 In the **Layout** tab, in the expandable **Grid** section, the **Overlay display settings** section contains the following UI.
 
-### Drop-down list
+### Dropdown list
 
 Select one of the following options from the dropdown list:
 

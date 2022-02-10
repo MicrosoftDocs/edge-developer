@@ -31,7 +31,7 @@ The **Font Editor** opens on top of the **Styles** pane:
 
 :::image type="content" source="../media/font-editor-open.msft.png" alt-text="The Font Editor opens on top of the Styles pane." lightbox="../media/font-editor-open.msft.png":::
 
-All fields in the visual **Font Editor** are populated from the values in the CSS in the **Styles** pane.  For example, the `line-height` definition is set to `160%` in the **Styles** pane, so the line height text field displays `160`, and the unit dropdown displays `%`.  Also, the slider is automatically set to match the values of the text field.
+All fields in the visual **Font Editor** are populated from the values in the CSS in the **Styles** pane.  For example, the `line-height` definition is set to `160%` in the **Styles** pane, so the line height text field displays `160`, and the unit dropdown list displays `%`.  Also, the slider is automatically set to match the values of the text field.
 
 
 <!-- ====================================================================== -->
@@ -43,7 +43,7 @@ The **Font Editor** open on top of the **Styles** pane with the **Font Family** 
 
 :::image type="content" source="../media/font-editor-font-family.msft.png" alt-text="The Font Editor open on top of the Styles pane with the Font Family selector highlighted." lightbox="../media/font-editor-font-family.msft.png":::
 
-Use the **Font Family** dropdown to select a font.  Fonts are organized into four groups:
+Use the **Font Family** dropdown list to select a font.  Fonts are organized into four groups:
 
 *  **Computed fonts**, which are the fonts available in the stylesheet in the **Styles** pane.
 *  **System fonts**, which are the fonts that are available on the current operating system.
@@ -59,7 +59,7 @@ After you select a font, another dropdown menu is displayed for you to select fa
 <!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::-->
 
 > [!NOTE]
-> If you select a global value for font family, you don't get another dropdown, since there is no fallback for it in CSS.
+> If you select a global value for font family, you don't get another dropdown menu, since there is no fallback for it in CSS.
 
 
 <!-- ====================================================================== -->
@@ -71,19 +71,19 @@ The **Font Editor** opens on top of the **Styles** pane, with the CSS properties
 
 :::image type="content" source="../media/font-editor-css-properties.msft.png" alt-text="The Font Editor opens on top of the Styles pane, with the CSS properties highlighted." lightbox="../media/font-editor-css-properties.msft.png":::
 
-You can also convert CSS units using the visual **Font Editor**.  For example, you can use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, use the unit dropdown and select the value `em`.  The `1 em` displayed is equal to `16 pixels`.
+You can also convert CSS units using the visual **Font Editor**.  For example, you can use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, use the unit dropdown list and select the value `em`.  The `1 em` displayed is equal to `16 pixels`.
 
 Changing the font size to `16 pixels`:
 
 :::image type="content" source="../media/font-editor-setting-to-16px.msft.png" alt-text="Changing the font size to 16 pixels." lightbox="../media/font-editor-setting-to-16px.msft.png":::
 
-Opening the unit dropdown to convert to `em`:
+Opening the unit dropdown list to convert to `em`:
 
-:::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="Opening the unit dropdown to convert to em." lightbox="../media/font-editor-converted-to-em.msft.png":::
+:::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="Opening the unit dropdown list to convert to em." lightbox="../media/font-editor-converted-to-em.msft.png":::
 
-The unit dropdown provides all the numeric CSS units that are available.  Font size, line height, font weight, and spacing all use different units.  When the text boxes have focus, you can press the `arrow up` and `arrow down` keys to fine-tune your settings.  To use the sliders with a keyboard, press the `arrow left` and `arrow down` keys.
+The unit dropdown list provides all the numeric CSS units that are available.  Font size, line height, font weight, and spacing all use different units.  When the text boxes have focus, you can press the `arrow up` and `arrow down` keys to fine-tune your settings.  To use the sliders with a keyboard, press the `arrow left` and `arrow down` keys.
 
-The CSS Properties editor also includes preset keywords.  To use the preset keywords, on the right-hand side, click the `Toggle Input Type` icon.  The UI changes, and a dropdown of preset keywords are displayed.  To return to the UI with the slider and other UI controls, click the `Toggle Input Type` icon again.
+The CSS Properties editor also includes preset keywords.  To use the preset keywords, on the right-hand side, click the `Toggle Input Type` icon.  The UI changes, and a dropdown list of preset keywords are displayed.  To return to the UI with the slider and other UI controls, click the `Toggle Input Type` icon again.
 
 Opening the preset keyword interface:
 

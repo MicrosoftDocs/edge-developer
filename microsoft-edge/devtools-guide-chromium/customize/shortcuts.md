@@ -25,7 +25,7 @@ To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent 
 
 1. Select the **Shortcuts** settings page.
 
-1. In the upper right, in the **Match shortcuts from preset** dropdown, select **Visual Studio Code** instead of **DevTools (Default)**.
+1. In the upper right, in the **Match shortcuts from preset** dropdown list, select **Visual Studio Code** instead of **DevTools (Default)**.
 
    :::image type="content" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Matching keyboard shortcuts in DevTools to Visual Studio Code." lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
 
