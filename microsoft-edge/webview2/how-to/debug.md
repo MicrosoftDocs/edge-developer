@@ -141,7 +141,8 @@ To debug your code, your project is required to have a `launch.json` file.  If y
    "Path": "%path%;e:/path/to/your/app/location; "
 },
 "useWebView": true,
-// The following two lines setup source path mapping, where `url` is the start page of your app, and `webRoot` is the top level directory with all your code files.
+// The following two lines set up source path mapping, where `url` is the start page
+// of your app, and `webRoot` is the top level directory with all your code files.
 "url": "file:///${workspaceFolder}/path/to/your/toplevel/foo.html",
 "webRoot": "${workspaceFolder}/path/to/your/assets"
 ```
@@ -184,10 +185,13 @@ Open `launch.json` and complete the following actions to use targeted Webview de
 "useWebview": "true",
 "urlFilter": "*index.ts",
 
-// Other urlFilter options.
-urlFilter="*index.ts"    // Match any url that ends with index.ts, and ignore all leading characters.
-urlFilter="*index*"      // Match any url that contains the string index anywhere in the URL.
-urlFilter="file://C:/path/to/my/index.ts," // To match explicit file called index.ts.
+// Options for "urlFilter":
+// Match any url that ends with "index.ts":
+"urlFilter": "*index.ts",
+// Match any url that contains "index" anywhere in the URL:
+"urlFilter": "*index*",
+// Explicitly match a file named "index.ts":
+"urlFilter": "file://C:/path/to/my/index.ts",
 ```
 
 When debugging your app, you might need to step through the code from the beginning of the rendering process. If you are rendering webpages on sites and you don't have access to the source code, you can use the `?=value` option, because webpages ignore unrecognized parameters.
@@ -202,15 +206,15 @@ After the first match is found in the URL, the debugger stops.  You cannot debug
 You might need to attach the debugger to running WebView2 processes.  To do that, in `launch.json`, update the `request` parameter, changing its value to `attach`:
 
 ```json
-   "name": "Hello debugging world",
-   "type": "pwa-msedge",
-   "port": 9222,
-   "request": "attach",
-   "runtimeExecutable": "C:/path/to/your/webview2/app.exe",
-   "env": {
-      "Path": "%path%;e:/path/to/your/build/location; "
-   },
-   "useWebView": true
+"name": "Hello debugging world",
+"type": "pwa-msedge",
+"port": 9222,
+"request": "attach",
+"runtimeExecutable": "C:/path/to/your/webview2/app.exe",
+"env": {
+   "Path": "%path%;e:/path/to/your/build/location; "
+},
+"useWebView": true
 ```
 
 Your WebView2 control must open the CDP port to allow debugging of the WebView2 control.  Your code must be built to ensure that only one WebView2 control has a Chrome Developer Protocol (CDP) port open, before starting the debugger.
