@@ -1,5 +1,5 @@
 ---
-title: Automate and test WebView2 apps with Microsoft Edge Driver
+title: Automating and testing with Microsoft Edge Driver
 description: Automate and test the WebView2 Control using Microsoft Edge Driver.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,8 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 12/01/2021
 ---
-# Automate and test WebView2 apps with Microsoft Edge Driver
+# Automating and testing with Microsoft Edge Driver
+<!-- old title: # Automate and test WebView2 apps with Microsoft Edge Driver -->
 
 This article explains how to automate and test your WebView2 app with Microsoft Edge Driver, by using the Selenium framework for browser test automation.
 
@@ -38,7 +39,7 @@ Follow the instructions to install [Microsoft Edge Driver](../../webdriver-chrom
 
 Make sure the version of Microsoft Edge Driver matches the version of the WebView2 Runtime that your app uses.  For the WebView2API Sample to work, make sure your version of the WebView2 Runtime is greater than or equal to the supported version of the latest WebView2 SDK release.
 
-*  To locate the latest WebView2 SDK release, see [Release notes for WebView2 SDK](../release-notes.md).
+*  To locate the latest WebView2 SDK release, see [Release Notes for the WebView2 SDK](../release-notes.md).
 
 *  To find out which version of the WebView2 Runtime you currently have, go to `edge://settings/help`.
 

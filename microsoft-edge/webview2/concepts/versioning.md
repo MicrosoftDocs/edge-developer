@@ -1,5 +1,5 @@
 ---
-title: Understand WebView2 SDK versions
+title: WebView2 SDK versions
 description: Version models used for Microsoft Edge WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
 ---
-# Understand WebView2 SDK versions
+# WebView2 SDK versions
 
 The NuGet package for the WebView2 SDK contains both a release and prerelease package.  Either use a prerelease SDK with a preview channel of Microsoft Edge, or use a release SDK with the WebView2 Runtime.
 
@@ -32,7 +32,7 @@ When you use a WebView2 SDK _prerelease_ package, use a Microsoft Edge preview c
 
 The SDK _prerelease_ package is a superset of the SDK release package, with method signatures for more, [Experimental APIs](#experimental-apis).  Preview channels provide the implementations of the experimental WebView2 APIs.  The experimental APIs are subject to change based on your feedback.  Avoid using the SDK prerelease package to build production apps.
 
-For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
+For information about temporarily pointing your app to a preview channel instead of defaulting to the WebView2 Runtime, see [Testing upcoming APIs and features](../how-to/set-preview-channel.md).
 
 
 <!-- ====================================================================== -->
@@ -46,7 +46,7 @@ The SDK release package contains the following components:
 *  [Win32 C/C++ APIs](/microsoft-edge/webview2/reference/win32).
 *  .NET APIs:  [WPF](/dotnet/api/microsoft.web.webview2.wpf), [WinForms](/dotnet/api/microsoft.web.webview2.winforms), and [Core](/dotnet/api/microsoft.web.webview2.core).
 
-For more information about automatic updating of the Evergreen Runtime, see [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md).
+For more information about automatic updating of the Evergreen Runtime, see [Distributing your app and the WebView2 Runtime](./distribution.md).
 
 
 <!-- ====================================================================== -->
@@ -106,7 +106,7 @@ In the Evergreen distribution approach, the client's WebView2 Runtime automatica
 In case updating the WebView2 Runtime is prevented on the client, make sure that you know the minimum build number of the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) that is required by your app.  The minimum required Runtime version to support the General Availability release of the SDK (build 616) is older than for the latest Runtime.
 The latest Runtime supports all APIs that are in the latest SDK release build.  
 
-To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release notes for WebView2 SDK](../release-notes.md).
+To check the compatibility between specific build numbers of the SDK and the Runtime or Microsoft Edge preview channel, see [Release Notes for the WebView2 SDK](../release-notes.md).
 
 
 <!-- ====================================================================== -->

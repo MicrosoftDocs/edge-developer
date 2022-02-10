@@ -1,5 +1,5 @@
 ---
-title: Debug WebView2 apps
+title: Debugging web code in WebView2 apps
 description: Learn how to debug WebView2 controls.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/15/2021
 ---
-# Debug WebView2 apps
+# Debugging web code in WebView2 apps
 
 The goal of the Microsoft Edge WebView2 control is to combine the best of both the web and native app development features and tools.  When you develop your WebView2 app, you should debug your app.
 

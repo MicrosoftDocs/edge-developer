@@ -216,7 +216,7 @@ conceptualContent:
               url: /microsoft-edge/webview2/concepts/browser-features
               itemType: concept
 
-            - text: WebView2 development best practices
+            - text: Development best practices
               url: /microsoft-edge/webview2/concepts/developer-guide
               itemType: concept
 
@@ -224,11 +224,11 @@ conceptualContent:
               url: /microsoft-edge/webview2/get-started/get-started
               itemType: get-started
 
-            - text: WebView2 sample code
+            - text: Sample Code
               url: /microsoft-edge/webview2/code-samples-links
               itemType: download
 
-            - text: Release notes for WebView2 SDK
+            - text: Release Notes for the WebView2 SDK
               url: /microsoft-edge/webview2/release-notes
               itemType: whats-new
 

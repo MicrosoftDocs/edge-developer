@@ -1,5 +1,5 @@
 ---
-title: Switch to a preview channel to test upcoming APIs and features
+title: Testing upcoming APIs and features
 description: How to specify a Microsoft Edge preview channel to use, to test experimental APIs in a prerelease package.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,8 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
 ---
-# Switch to a preview channel to test upcoming APIs and features
+# Testing upcoming APIs and features
+<!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
 
 Updates of the WebView2 Evergreen Runtime often include new APIs and features.  Some of these updates could potentially break your WebView2 app.  To test the experimental APIs ahead of time and ensure your app's forward-compatibility, you should perform compatibility testing using a preview channel of Microsoft Edge, along with a prerelease version of the WebView2 SDK.
 
@@ -22,7 +23,7 @@ The prerelease SDK works together with a preview channel as follows:
 
 *  The preview channels of Microsoft Edge contain the Microsoft Edge binaries that are needed to run and render your app, including the implementation of the experimental APIs.
 
-For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, see [Understand WebView2 SDK versions](../concepts/versioning.md).
+For more information about how SDK versions works in conjunction with the WebView2 Runtime or preview channels of Microsoft Edge, see [WebView2 SDK versions](../concepts/versioning.md).
 
 
 <!-- ====================================================================== -->
@@ -36,7 +37,7 @@ To download a Microsoft Edge preview channel, see [Microsoft Edge Insider Channe
 <!-- intro/overview of 4 approaches ======================================= -->
 ## Approaches to making your app use a specific browser channel
 
-When a WebView2 is initialized, it will attempt to find a valid runtime on the machine to use. This can be the WebView2 Runtime, a preview channel of Microsoft Edge, or a specified location containing fixed version binaries. You can learn more about supported runtimes at [Distribute a WebView2 app and the WebView2 Runtime](../concepts/distribution.md).
+When a WebView2 is initialized, it will attempt to find a valid runtime on the machine to use. This can be the WebView2 Runtime, a preview channel of Microsoft Edge, or a specified location containing fixed version binaries. You can learn more about supported runtimes at [Distributing your app and the WebView2 Runtime](../concepts/distribution.md).
 
 There are several ways to make your WebView2 app use a specified preview channel of Microsoft Edge:
 *  By calling a function.

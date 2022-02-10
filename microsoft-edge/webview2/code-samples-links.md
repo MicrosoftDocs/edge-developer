@@ -1,5 +1,5 @@
 ---
-title: WebView2 sample code
+title: WebView2 Sample Code
 description: Links to WebView2 sample code hosted on GitHub.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/21/2021
 ---
-# WebView2 sample code
+# WebView2 Sample Code
 
 The following WebView2 samples are available in the Get Started guides for WebView2 and in the [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
@@ -22,8 +22,8 @@ The WebView2 Get Started guides use starter code for Win32, Windows Presentation
 |---|---|---|
 | Win32 | [Get started with WebView2 in Win32 apps](./get-started/win32.md) | Starter code at [WebView2 Samples Win32 Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) |
 | WinForms | [Get started with WebView2 in WinForms apps](./get-started/winforms.md) | .NET starter code at [WebView2 Samples WinForms Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) |
-| WinUI 2 | [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](./get-started/winui2.md) | Uses the WinUI 2 NuGet package.  Has no sample code. |
-| WinUI 3 | [Get started with WebView2 in WinUI 3 (Windows App SDK)](./get-started/winui.md) | Starter code at [WebView2 Samples WinUI Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted) |
+| WinUI 2 | [Get started with WinUI 2 (UWP, public preview)](./get-started/winui2.md) | Uses the WinUI 2 NuGet package.  Has no sample code. |
+| WinUI 3 | [Get started with WinUI 3 (Windows App SDK)](./get-started/winui.md) | Starter code at [WebView2 Samples WinUI Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted) |
 | WPF | [Get started with WebView2 in WPF apps](./get-started/wpf.md) | .NET starter code at [WebView2 Samples WPF Getting Started (github.com)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted) |
 
 

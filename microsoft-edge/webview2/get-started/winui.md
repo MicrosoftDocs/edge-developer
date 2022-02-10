@@ -1,5 +1,5 @@
 ---
-title: Get started with WebView2 in WinUI 3 (Windows App SDK)
+title: Get started with WinUI 3 (Windows App SDK)
 description: Get started guide with WebView2 for WinUI 3 (Windows App SDK) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
 ---
-# Get started with WebView2 in WinUI 3 (Windows App SDK)
+# Get started with WinUI 3 (Windows App SDK)
 
 In this article, get started creating your first WebView2 app in WinUI 3 (Windows App SDK). Learn about the main features of [WebView2](../index.md). For more information on individual APIs, see [API reference](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md).
 
@@ -310,13 +310,13 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-* [Manage the user data folder](../concepts/user-data-folder.md)
+* [User data folder best practices](../concepts/user-data-folder.md)
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-* [WebView2 development best practices](../concepts/developer-guide.md)
+* [Development best practices](../concepts/developer-guide.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.

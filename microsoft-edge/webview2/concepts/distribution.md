@@ -1,5 +1,5 @@
 ---
-title: Distribute a WebView2 app and the WebView2 Runtime
+title: Distributing your app and the WebView2 Runtime
 description: How to distribute the WebView2 Runtime when releasing an app that uses Microsoft Edge WebView2, either by distributing the automatically updated Evergreen Runtime, or distributing a Fixed Version of the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/20/2022
 ---
-# Distribute a WebView2 app and the WebView2 Runtime
+# Distributing your app and the WebView2 Runtime
 
 When releasing an app that uses Microsoft Edge WebView2, you need distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
 
@@ -87,7 +87,7 @@ If you want to use the Fixed Version distribution mode, you can skip the next co
 
 ### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
 
-See [Windows Server Update Services (WSUS)](enterprise.md#windows-server-update-services-wsus) in _Manage WebView2 applications_.
+See [Windows Server Update Services (WSUS)](enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 runtimes_.
 
 ### Runtime or browser support during development or production
 
@@ -95,7 +95,7 @@ During development and testing, a WebView2 app can use either option as the back
 
 *  The WebView2 Runtime.  The Runtime generally provides the same web platform capabilities and update cadence as the Stable channel of the Microsoft Edge browser.  Use the WebView2 Runtime in a production environment or to develop and test against the web platform that your users have today.
 
-*  A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
+*  A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Testing upcoming APIs and features](../how-to/set-preview-channel.md).
 
 A production release of a WebView2 app can only use the WebView2 Runtime as the backing web platform, not Microsoft Edge.
 

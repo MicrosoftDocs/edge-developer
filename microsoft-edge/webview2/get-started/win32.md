@@ -312,7 +312,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-* [Manage the user data folder](../concepts/user-data-folder.md)
+* [User data folder best practices](../concepts/user-data-folder.md)
 
 
 <!-- ====================================================================== -->
@@ -321,7 +321,7 @@ Congratulations, you built your first WebView2 app!
 To learn more about WebView2 functions not covered in this article, see the following resources.
 
 *  [MicrosoftEdge/WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
-*  [WebView2 development best practices](../concepts/developer-guide.md)
+*  [Development best practices](../concepts/developer-guide.md)
 *  [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
 *  [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
 *  [WebView2 API reference](/microsoft-edge/webview2/reference/win32)

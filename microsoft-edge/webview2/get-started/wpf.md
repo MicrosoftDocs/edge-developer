@@ -433,13 +433,13 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-* [Manage the user data folder](../concepts/user-data-folder.md)
+* [User data folder best practices](../concepts/user-data-folder.md)
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-* [WebView2 development best practices](../concepts/developer-guide.md)
+* [Development best practices](../concepts/developer-guide.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.

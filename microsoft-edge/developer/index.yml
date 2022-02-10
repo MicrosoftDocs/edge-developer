@@ -106,7 +106,7 @@ landingContent:
         links:
           - text: Feature differences between Microsoft Edge and WebView2
             url: /microsoft-edge/webview2/concepts/browser-features
-          - text: WebView2 development best practices
+          - text: Development best practices
             url: /microsoft-edge/webview2/concepts/developer-guide
       - linkListType: get-started
         links:
@@ -114,11 +114,11 @@ landingContent:
             url: /microsoft-edge/webview2/get-started/get-started
       - linkListType: download
         links:
-          - text: WebView2 sample code
+          - text: Sample Code
             url: /microsoft-edge/webview2/code-samples-links
       - linkListType: whats-new
         links:
-          - text: Release notes for WebView2 SDK
+          - text: Release Notes for the WebView2 SDK
             url: /microsoft-edge/webview2/release-notes
       - linkListType: reference
         links:

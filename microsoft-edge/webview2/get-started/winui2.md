@@ -1,5 +1,5 @@
 ---
-title: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
+title: Get started with WinUI 2 (UWP, public preview)
 description: Get started guide with WebView2 for WinUI 2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
 ---
-# Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
+# Get started with WinUI 2 (UWP, public preview)
 
 In this article, you create your first WebView2 app in WinUI 2 (UWP), and learn about the main features of WebView2.
 
@@ -182,13 +182,13 @@ Now you can change the content of the WebView2 control to add your own content.
 <!-- ====================================================================== -->
 ## See also
 
-* [Manage the user data folder](../concepts/user-data-folder.md)
+* [User data folder best practices](../concepts/user-data-folder.md)
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-* [WebView2 development best practices](../concepts/developer-guide.md)
+* [Development best practices](../concepts/developer-guide.md)
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
