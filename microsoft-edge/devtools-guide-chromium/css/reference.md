@@ -146,9 +146,9 @@ To view a page in print mode:
 
 1. Open the [Command Menu](../command-menu/index.md).
 
-1. Start typing `Rendering` and then select **Show Rendering**.
+1. Start typing `rendering`, and then select **Show Rendering**.
 
-1. Click the **Emulate CSS Media** dropdown, and then select **print**.
+1. Click the **Emulate CSS Media** dropdown list, and then select **print**.
 
 
 <!-- ====================================================================== -->

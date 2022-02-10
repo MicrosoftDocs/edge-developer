@@ -56,7 +56,7 @@ Start with a basic desktop project that contains a single main window.
 
    The **Additional information** dialog box appears, with a **Target Framework** dropdown list.  Choices are **.NET Core 3.0**, **3.1**, and **5.0**:
 
-   ![The 'Additional information' dialog with a drop-down menu for target framework.](media/wpf-getting-started-create-core-add-info.png)
+   ![The 'Additional information' dialog with a 'Target Framework' dropdown list.](media/wpf-getting-started-create-core-add-info.png)
 
 1. Select **.NET Core 3.1**, or later (not **3.0**).  Then click **Next**.
 
@@ -66,7 +66,7 @@ Start with a basic desktop project that contains a single main window.
 
 1. Enter values for **Project name** and **Location**.
 
-1. In the Framework dropdown list, select **.NET Framework 4.6.2** or later.
+1. In the **Framework** dropdown list, select **.NET Framework 4.6.2** or later.
 
 1. Click the **Create** button.
 
