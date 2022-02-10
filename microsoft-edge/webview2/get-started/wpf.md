@@ -38,7 +38,7 @@ Start with a basic desktop project that contains a single main window.
  
    The **Create a new project** panel shows filtered results for `WPF App` search results.
 
-1. Click either the **WPF Application** card (shown first below) to use .NET Core/5/6, or the **WPF App (.NET Framework)** card (shown second below) to use .NET Framework, and then click **Next**:
+1. Click either the **WPF Application** card (shown first below) to use **.NET Core/5/6**, or the **WPF App (.NET Framework)** card (shown second below) to use **.NET Framework**, and then click **Next**:
 
    The highlighted card in the following image is **WPF Application: .NET Core WPF Application**:
     
