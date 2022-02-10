@@ -797,6 +797,8 @@
           href: webview2/code-samples-links.md
         - name: Concepts and How to
           items:
+            - name: Clearing browser data
+              href: webview2/concepts/clearing-browser-data.md
             - name: Automate with Edge Driver
               href: webview2/how-to/webdriver.md
             - name: Debug WebView2
