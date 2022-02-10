@@ -26,7 +26,10 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 
 The **Detached Elements** tool was initially available as an experiment in [Microsoft Edge version 93](../../2021/07/devtools.md#debug-dom-node-memory-leaks-with-the-new-detached-elements-tool).  The tool is now available by default in Microsoft Edge version 97.
 
-![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png)
+<!-- ![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png) -->
+<!-- image too wide to be crisp inline; solution would be undock devtools then 1 or 2 images in series (DevTools then browser).  right-click works, but reverting to lightbox for now -->
+
+:::image type="content" source="../../media/2022/01/detached-elements-tool.png" alt-text="The Detached Elements tool." lightbox="../../media/2022/01/detached-elements-tool.png":::
 
 See also:
 * [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
