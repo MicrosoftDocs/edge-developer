@@ -187,7 +187,7 @@ Use this API to publish the current draft of the product to the Microsoft Edge A
 Endpoint: /v1/products/$productID/submissions
 Type: POST
 Header Parameters: Authorization: Bearer $TOKEN
-Body content: Notes for certification, in json format
+Body content: Notes for certification, in JSON format
 ```
 
 ### Sample request
