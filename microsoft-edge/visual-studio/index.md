@@ -48,10 +48,10 @@ With the project created, use Visual Studio to debug JavaScript.
 
 1.  Open `ClientApp/src/components/Counter.js`.
 
-1.  Select the dropdown next to the green **Play** button and **IIS Express**.
+1.  Select the dropdown list next to the green **Play** button and **IIS Express**.
 
-    :::image type="complex" source="./media/vs-dropdown.png" alt-text="The dropdown next to the green Play button and IIS Express." lightbox="./media/vs-dropdown.png":::
-       The dropdown next to the green **Play** button and **IIS Express**
+    :::image type="complex" source="./media/vs-dropdown.png" alt-text="The dropdown list next to the green Play button and IIS Express." lightbox="./media/vs-dropdown.png":::
+       The dropdown list next to the green **Play** button and **IIS Express**
     :::image-end:::
 
 1.  Select **Script Debugging** > **Enabled**.
@@ -60,7 +60,7 @@ With the project created, use Visual Studio to debug JavaScript.
        Turn on script debugging in Visual Studio
     :::image-end:::
 
-1.  In the same dropdown, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you aren't already using one of the Microsoft Edge preview channels, go to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) to download one.
+1.  In the same dropdown list, select **Web Browser** > the preview channel of Microsoft Edge that you want Visual Studio to launch, such as Microsoft Edge Canary, Dev, or Beta.  If you aren't already using one of the Microsoft Edge preview channels, go to [Download Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/download) to download one.
 
     :::image type="complex" source="./media/set-web-browser.png" alt-text="Select the preview channel of Microsoft Edge that you want Visual Studio to launch." lightbox="./media/set-web-browser.png":::
        Select the preview channel of Microsoft Edge that you want Visual Studio to launch
