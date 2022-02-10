@@ -244,6 +244,22 @@ The family group organizer may stop the data collection from the family safety p
 
 
 <!-- ====================================================================== -->
+## Find on Page 
+
+Find on Page allows you to search a web page for important keywords. Open **Settings and more (...) > Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then navigate through these terms with the **Previous result** and **Next result** buttons. 
+
+To help you find exactly what you're looking for, Microsoft Edge uses a Microsoft cloud service to find additional related matches for your search. This only happens when the **Include related matches** toggle in Find on Page is on.  
+
+If the **Include related matches** toggle is on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token does not contain any user identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms sent to Microsoft are both deleted immediately after processing occurs. No data is stored for any period of time. 
+
+Related matches in Find on Page are not available in **InPrivate** browsing. 
+
+If you want to stop Microsoft Edge from finding related matches in Find on Page, complete the following steps. 
+1.  Open Find on Page
+1.  Toggle off **Include related matches** 
+
+
+<!-- ====================================================================== -->
 ## Geolocation
 
 While you browse the web, websites may request your device's location from Microsoft Edge. Data about your device's location can be either precise or imprecise. For example, a precise location is requested to provide driving directions to or from your specific location. An imprecise location may be requested to provide search results, news, and weather relevant to your general location.
