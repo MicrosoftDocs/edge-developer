@@ -779,10 +779,6 @@
 # =============================================================================
     - name: WebView2
       items:
-        - name: WebView2 SDK versions
-          href: webview2/concepts/versioning.md
-          displayName:  # add alt lookup terms
-
         - name: Introduction to Microsoft Edge WebView2
           href: webview2/index.md
           displayName:  # add alt lookup terms
@@ -891,6 +887,10 @@
 
             - name: Distributing your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
+              displayName:  # add alt lookup terms
+
+            - name: WebView2 SDK versions
+              href: webview2/concepts/versioning.md
               displayName:  # add alt lookup terms
 
         - name: Release Notes for the WebView2 SDK
