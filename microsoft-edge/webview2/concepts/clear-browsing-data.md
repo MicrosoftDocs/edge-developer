@@ -17,8 +17,6 @@ You can:
 *  Clear selected kinds of browsing data.
 *  Clear selected kinds of browsing data in a specified time range.
 
-This article uses simplified syntax.  For details, see examples and API Reference.
-
 
 <!-- ====================================================================== -->
 ## Clear all browsing data
