@@ -10,9 +10,7 @@ ms.date: 12/13/2021
 ---
 # Get started with WebView2 in Win32 apps
 
-In this article, get started creating your first WebView2 app in Win32. Learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information about individual WebView2 APIs, see [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32).
-
-This tutorial refers to WebView2 samples.  To view or copy sample code, see the [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo.
+This article covers how to set up your development tools and create an initial WebView2 app for Win32, and learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
@@ -312,7 +310,10 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+*  Learn about the main features of [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com.
 * [User data folder best practices](../concepts/user-data-folder.md)
+* [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples)
+* [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32)
 
 
 <!-- ====================================================================== -->

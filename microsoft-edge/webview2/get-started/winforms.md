@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinForms apps
 
-In this article, get started creating your first WebView2 app in WinForms, and learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2). For more information on individual APIs, see [API reference](/dotnet/api/microsoft.web.webview2.winforms).
+This article covers how to set up your development tools and create an initial WebView2 app for WinForms, and learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
@@ -395,7 +395,9 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+* Learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com.
 * [User data folder best practices](../concepts/user-data-folder.md)
+* [API reference](/dotnet/api/microsoft.web.webview2.winforms)
 
 
 <!-- ====================================================================== -->

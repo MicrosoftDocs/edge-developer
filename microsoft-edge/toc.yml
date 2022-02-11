@@ -784,7 +784,7 @@
           displayName:  # add alt lookup terms
 
       # - name: Set up dev tools and create the initial app  # specific title
-        - name: Tutorial
+        - name: "Tutorial: Create a WebView2 app"
           items:
             - name: Get started with WebView2  # platform-independent
               href: webview2/get-started/get-started.md
