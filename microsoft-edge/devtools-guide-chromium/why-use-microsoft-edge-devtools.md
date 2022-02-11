@@ -26,8 +26,11 @@ As the browser developer tools grew organically over the years, they can be over
 *  Focus Mode, to make the UI even easier to use. The DevTools team learned in interviews and feedback sessions that the amount tools displayed at each time can be overwhelming. This is why we introduced Focus Mode, which collates tools into different tasks and shows only the relevant ones.
 ![Focus mode showing only tools related to Elements Debugging](media/xxx.msft.png)
 ![Focus mode showing only tools related to Source editing](media/xxx.msft.png)
+
+<!-- This is disabled for now until we can fix it 
 *  Enable Tooltips mode, to learn about the tools. In Focus Mode, you can turn on the Tooltips Mode which allows you to learn more about the different tools by moving around DevTools.
 ![Tool explanations shown when Tooltips mode is enabled](media/xxx.msft.png)
+-->
 
 <!-- ====================================================================== -->
 ## Customization
@@ -54,8 +57,11 @@ These tools are only available in Microsoft Edge and aren't part of the Chromium
 ![Current problems of a document displayed in the Issues panel](media/xxx.msft.png)
 *  Integration of Microsoft Edge DevTools with Visual Studio Code. Changing from editor to browser to debug a certain problem, using DevTools to analyze it and then going back to fix them in your source code is annoying. This is why we created a Visual Studio Code extension that embeds DevTools into your editor workflow. Instead of fixing CSS in the final product and having to remember the changes, you can now use DevTools to change your source code.
 ![Screenshot of DevTools integrated into Visual Studio Code](media/xxx.msft.png)
+
+<!-- still an experiment for now 
 *  Network Console. Inspecting the network traffic of your web product is already insightful, but often you need to make some changes to the requests to see why they fail. Using the Network Console you can change and replay any of the request and you can make detailed API calls.
 ![Network Console showing options of how you can change a network call](media/xxx.msft.png)
+-->
 
 <!-- ====================================================================== -->
 ## Next steps
