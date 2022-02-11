@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinForms apps
 
-This article covers how to set up your development tools and create an initial WebView2 app for WinForms, and learn about WebView2 concepts along the way.
+This article covers how to set up your development tools and create an initial WebView2 app for WinForms, and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections - no coding required.
 
 
 <!-- ====================================================================== -->

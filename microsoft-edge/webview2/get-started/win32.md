@@ -10,7 +10,7 @@ ms.date: 12/13/2021
 ---
 # Get started with WebView2 in Win32 apps
 
-This article covers how to set up your development tools and create an initial WebView2 app for Win32, and learn about WebView2 concepts along the way.
+This article covers how to set up your development tools and create an initial WebView2 app for Win32, and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections - no coding required.
 
 
 <!-- ====================================================================== -->

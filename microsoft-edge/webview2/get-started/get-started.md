@@ -10,7 +10,7 @@ ms.date: 01/24/2022
 ---
 # Get started with WebView2
 
-These "Get started" articles cover how to set up your development tools and create an initial WebView2 app, and learn about WebView2 concepts along the way.
+These "Get started" articles cover how to set up your development tools and create an initial WebView2 app, and learn about WebView2 concepts along the way.  As an initial step, skim some of these articles and read the conceptual sections - no coding required.
 
 Prerequisite: To build and test your app using the WebView2 control, you need to have the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) installed.
 
