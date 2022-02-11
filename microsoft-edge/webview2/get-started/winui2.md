@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WinUI 2 (UWP, public preview)
 
-This article covers how to set up your development tools and create an initial WebView2 app for WinUI 2 (UWP), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections - no coding required.
+This article covers how to set up your development tools and create an initial WebView2 app for WinUI 2 (UWP), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections.
 
 
 <!-- ====================================================================== -->

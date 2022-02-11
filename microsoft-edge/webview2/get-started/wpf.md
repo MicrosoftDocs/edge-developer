@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WPF apps
 
-This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections - no coding required.
+This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections.
 
 
 <!-- ====================================================================== -->

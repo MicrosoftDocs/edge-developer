@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WinUI 3 (Windows App SDK)
 
-This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections - no coding required.
+This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections.
 
 
 <!-- ====================================================================== -->
