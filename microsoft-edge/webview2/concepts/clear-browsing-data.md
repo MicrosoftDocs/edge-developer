@@ -199,8 +199,8 @@ Other APIs:
 
 Interfaces:
 
-* [ICoreWebView2Profile](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile2).
-* [ICoreWebView2ClearBrowsingDataCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler).
+* [ICoreWebView2Profile](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile2)
+* [ICoreWebView2ClearBrowsingDataCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler)
 
 Methods:
 
