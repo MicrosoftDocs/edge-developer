@@ -864,10 +864,19 @@
             - name: Win32 C++ WebView2 API conventions
               href: webview2/concepts/win32-api-conventions.md
 
+
+      # "API conceptual intro" docs cover use-cases and which APIs to use for them.  also sample code & navigation to API Ref.
+
+
+      # - name: Use-cases for the APIs
+      # - name: Adding features using the APIs
+      # - name: Accomplishing tasks using the APIs
+      # - name: Overview of APIs
         - name: Using the API features
           items:
             - name: Clear Browsing Data
               href: webview2/concepts/clear-browsing-data.md
+
 
         - name: Release notes for WebView2 SDK
           href: webview2/release-notes.md
