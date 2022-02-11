@@ -10,13 +10,17 @@ ms.date: 02/09/2022
 ---
 # Clear Browsing Data
 
-The Clear Browsing Data API allows you to programmatically clear space in the user data folder for a profile, by clearing selected browsing data that is stored in the user data folder of a WebView2 app.  You can clear all data, or you can select the kinds of data to clear, together with what date range of data to clear.
+The Clear Browsing Data API allows you to programmatically clear space in the user data folder for a profile.  These methods clear selected browsing data that is stored in the user data folder of a WebView2 app.
+
+You can:
+*  Clear all browsing data.
+*  Clear selected kinds of browsing data.
+*  Clear selected kinds of browsing data within a specified date range.
 
 The API consists of three C++ methods and three equivalent C# method overloads, and a supporting enum.
 
 
 <!-- spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md -->
-<!-- url prefix: https://docs.microsoft.com -->
 
 
 <!-- ====================================================================== -->
