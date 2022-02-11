@@ -78,7 +78,7 @@ Parameters:
 
 
 <!-- ====================================================================== -->
-## Clear selected kinds of data in a time range
+## Clear selected kinds of browsing data in a time range
 
 This method clears the specified kinds of browsing data that was created between the specified start time and end time.  It clears the data from the user data folder for the associated profile on which the method is called.
 
