@@ -115,10 +115,12 @@ void ClearAutofillData()
         CHECK_FAILURE(webview7->get_Profile(&profile));
         double endTime = (double)std::time(nullptr);
         double startTime = endTime - 3600;
-        // Get the current time and offset the current time by 3600 seconds to clear the data
-        // from the start time (one hour ago), until the end time (present time).
+        // Get the current time and offset the current time by 3600 seconds to clear
+        // the data from the start time (one hour ago), until the end time (present 
+        // time).
         // This clears the data for the last hour.
-        COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds = (COREWEBVIEW2_BROWSING_DATA_KINDS)
+        COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds = 
+            (COREWEBVIEW2_BROWSING_DATA_KINDS)
             (COREWEBVIEW2_BROWSING_DATA_KINDS_GENERAL_AUTOFILL |
             COREWEBVIEW2_BROWSING_DATA_KINDS_PASSWORD_AUTOSAVE);
         CHECK_FAILURE(profile->ClearBrowsingDataInTimeRange(
@@ -153,11 +155,15 @@ private void ClearAutofillData()
     if (webView.CoreWebView2 != null)
     {
         profile = webView.CoreWebView2.Profile;
-        // Get the current time, the time in which the browsing data will be cleared until.
+        // Get the current time, the time in which the browsing data will be cleared
+        // until.
         System.DateTime endTime = DateTime.Now;
         System.DateTime startTime = DateTime.Now.AddHours(-1);
-        // Offset the current time by one hour to clear the browsing data from the last hour.
-        CoreWebView2BrowsingDataKinds dataKinds = (CoreWebView2BrowsingDataKinds)(CoreWebView2BrowsingDataKinds.GeneralAutofill | CoreWebView2BrowsingDataKinds.PasswordAutosave);
+        // Offset the current time by one hour to clear the browsing data from the
+        // last hour.
+        CoreWebView2BrowsingDataKinds dataKinds = (CoreWebView2BrowsingDataKinds)
+                                 (CoreWebView2BrowsingDataKinds.GeneralAutofill | 
+                                  CoreWebView2BrowsingDataKinds.PasswordAutosave);
         await profile.ClearBrowsingDataAsync(dataKinds, startTime, endTime);
     }
 }
