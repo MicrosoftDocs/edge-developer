@@ -14,25 +14,16 @@ The Clear Browsing Data API allows you to programmatically clear space in the us
 
 The Clear Browsing Data API supports the following tasks.
 
-These methods clear the data from the user data folder for the associated profile on which the method is called.
-
 <!-- [pre-release spec for Clear Browsing Data API Reference](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md) -->
 <!-- prefix removed from API Ref urls: https://docs.microsoft.com/en-us/ -->
 
-<!--
-Tab headings:
-## [C++](#tab/cpp/)
-## [C#](#tab/csharp/)
----
--->
-
 
 <!-- ====================================================================== -->
-## Clear the specified kinds of browsing data, regardless of when created
+## Clear specified data kinds, regardless of when created
 
 <!-- function 1 -->
 
-This method clears the specified data kinds, regardless of when the data was created.  It clears the data from the user data folder for the associated profile for which the method is called.
+This method clears the specified kinds of browsing data, regardless of when the data was created.  It clears the data from the user data folder for the associated profile on which the method is called.
 
 <!-- ------------------------------ -->
 C++ method signature:
@@ -68,11 +59,11 @@ Equivalent C# method overload:
 
 
 <!-- ====================================================================== -->
-## Clear all the kinds of browsing data, regardless of when created
+## Clear all data kinds, regardless of when created
 
 <!-- function 2 -->
 
-This method clears all the kinds of data listed in the `COREWEBVIEW2_BROWSING_DATA_KINDS` enum, regardless of when the data was created.  It clears the data from the user data folder for the associated profile for which the method is called.
+This method clears all the kinds of browsing data listed in the data kinds enumeration, regardless of when the data was created.  It clears the data from the user data folder for the associated profile on which the method is called.
 
 <!-- ------------------------------ -->
 C++ method signature:
@@ -103,11 +94,11 @@ Equivalent C# method overload:
 
 
 <!-- ====================================================================== -->
-## Clear the specified kinds of browsing data, within a specified time range
+## Clear specified data kinds, within a specified time range
 
 <!-- function 3 -->
 
-This method clears the data of the specified kinds that was created between the specified start time and end time.  It clears the data from the user data folder for the associated profile for which the method is called.
+This method clears the specified kinds of browsing data that was created between the specified start time and end time.  It clears the data from the user data folder for the associated profile on which the method is called.
 
 C++ method signature:
 
