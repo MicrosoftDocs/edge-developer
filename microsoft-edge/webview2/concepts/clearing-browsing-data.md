@@ -27,24 +27,21 @@ The Clear Browsing Data API supports the following tasks.
 
 This method clears the specified kinds of browsing data, regardless of when the data was created.  It clears the data from the user data folder for the associated profile on which the method is called.
 
-<!-- ------------------------------ -->
-C++ method signature:
+Signature (C++/IDL):
 
 ```cpp
-public HRESULT ClearBrowsingData(
+HRESULT ClearBrowsingData(
    [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds,
    [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler); 
 ```
 
-C++ parameters:
+Parameters:
 
-* `dataKinds` - The kinds of browsing data to clear.  A mask of one or more `COREWEBVIEW2_BROWSING_DATA_KINDS`.
+* `dataKinds` - The kinds of browsing data to clear.  A mask of one or more enum values.
+      * C++: [COREWEBVIEW2_BROWSING_DATA_KINDS enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
+      * C# [CoreWebView2BrowsingDataKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
-   * Type: [COREWEBVIEW2_BROWSING_DATA_KINDS enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
-
-* `handler` - A handler which indicates if the proper data has been cleared successfully.
-
-   * Type: [ICoreWebView2ClearBrowsingDataCompletedHandler interface)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler)
+* `handler` - A handler which indicates if the proper data has been cleared successfully.  For C++.  A pointer to [ICoreWebView2ClearBrowsingDataCompletedHandler interface)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler).
 
 
 ### API Reference
@@ -61,19 +58,16 @@ C++ parameters:
 
 This method clears all the kinds of browsing data listed in the data kinds enumeration, regardless of when the data was created.  It clears the data from the user data folder for the associated profile on which the method is called.
 
-<!-- ------------------------------ -->
-C++ method signature:
+Signature (C++/IDL):
 
 ```cpp
 HRESULT ClearBrowsingDataAll(
-      [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
+   [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
 ```
 
-C++ parameters:
+Parameters:
 
-* `handler` - A handler which indicates if the proper data has been cleared successfully.
-
-   *  Type: `ICoreWebView2ClearBrowsingDataCompletedHandler*`.  A pointer to [ICoreWebView2ClearBrowsingDataCompletedHandler interface)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler).
+* `handler` - A handler which indicates if the proper data has been cleared successfully.  For C++.  A pointer to [ICoreWebView2ClearBrowsingDataCompletedHandler interface)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler).
 
 
 ### API Reference
@@ -90,25 +84,23 @@ C++ parameters:
 
 This method clears the specified kinds of browsing data that was created between the specified start time and end time.  It clears the data from the user data folder for the associated profile on which the method is called.
 
-C++ method signature:
+Signature (C++/IDL):
 
 ```cpp
 HRESULT ClearBrowsingDataInTimeRange(
-      [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds, 
-      [in] double startTime,
-      [in] double endTime, 
-      [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
+   [in] COREWEBVIEW2_BROWSING_DATA_KINDS dataKinds, 
+   [in] double startTime,
+   [in] double endTime, 
+   [in] ICoreWebView2ClearBrowsingDataCompletedHandler* handler);
 ```
 
-C++ parameters:
+Parameters:
 
-* `dataKinds` - The kinds of browsing data to clear.  A mask of one or more `COREWEBVIEW2_BROWSING_DATA_KINDS`.
-
-   *  Type: [COREWEBVIEW2_BROWSING_DATA_KINDS enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds).
+* `dataKinds` - The kinds of browsing data to clear.  A mask of one or more enum values.
+   * C++: [COREWEBVIEW2_BROWSING_DATA_KINDS enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
+   * C# [CoreWebView2BrowsingDataKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
 * `startTime` - The start time for which the API should clear the corresponding data.  How many seconds have passed since the UNIX epoch.
-
-   *  Type: `double`.
 
    *  Passing in a value of zero or less than zero (up to negative infinity) will clear the corresponding data for any time before the `endTime`.
    
@@ -118,11 +110,7 @@ C++ parameters:
    
 * `endTime` - The end time for which the API should clear the corresponding data.  How many seconds have passed since the UNIX epoch.  See `startTime`.
 
-   *  Type: `double`.
-
-* `handler` - A handler which indicates if the proper data has been cleared successfully.
-
-   *  Type: `ICoreWebView2ClearBrowsingDataCompletedHandler*`.  A pointer to [ICoreWebView2ClearBrowsingDataCompletedHandler interface)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler).
+* `handler` - A handler which indicates if the proper data has been cleared successfully.  For C++.  A pointer to [ICoreWebView2ClearBrowsingDataCompletedHandler interface)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler).
 
 
 ### API Reference
