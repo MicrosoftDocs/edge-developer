@@ -133,13 +133,10 @@ void ClearAutofillData()
 }
 ```
 
-Clear Browsing Data APIs used in this example:
+APIs used:
 
 * [ClearBrowsingDataInTimeRange(dataKinds, startTime, endTime)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
 * [COREWEBVIEW2_BROWSING_DATA_KINDS](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
-
-Other APIs:
-
 * [ICoreWebView2ClearBrowsingDataCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalclearbrowsingdatacompletedhandler)
 * [ICoreWebView2Profile](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile2)
 * `get_Profile` <!-- not found-->
@@ -166,13 +163,10 @@ private void ClearAutofillData()
 }
 ```
 
-Clear Browsing Data APIs used in this example:
+APIs used:
 
 * [ClearBrowsingDataAsync(dataKinds, startTime, endTime)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 * [CoreWebView2BrowsingDataKinds](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
-
-Other APIs:
-
 * [CoreWebView2Profile](/dotnet/api/microsoft.web.webview2.core.corewebview2profile)
 * [CoreWebView2.Profile property](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile)
 
