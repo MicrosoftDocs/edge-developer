@@ -82,7 +82,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 #### Experimental Features
 
 *  Added [Status bar API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental13?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide info when webiew is showing status message, URL, or empty string.
-*  Added [CDP API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental14?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide possibility for developers have multiple DevToolsProtocol targets in WebView.
+*  Added [CDP API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental14?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide possibility for developers have multiple `DevToolsProtocol` targets in WebView.
 
 #### Promotions
 
@@ -98,7 +98,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 *  Fixed an issue causing erroneous warnings in the Visual Studio Error List window.  ([Issue #1722](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1722))
 *  Fixed a bug where NewWindowRequested was not getting raised when opening PDF downloads.
 *  Resolved a bug in WinUI3 where select dropdowns would not show up.  ([Issue #1693](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1693))
-*  Feature change. Before: can't modify mute state if there is no audio playing.  Now: user can modify mute state with no restrain.
+*  Added the ability to toggle WebView2 mute state, even when there is no audio playing.
 
 
 <!-- ====================================================================== -->
