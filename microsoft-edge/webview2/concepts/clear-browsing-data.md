@@ -29,26 +29,13 @@ This method clears all the kinds of browsing data that are listed in the data ki
 <!-- ------------------------------ -->
 # [C++](#tab/cpp)
 
-```cpp
-ClearBrowsingDataAll();
-```
-
-API Reference:
-
-* [ClearBrowsingDataAll()](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
+[ClearBrowsingDataAll()](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
 
 
 <!-- ------------------------------ -->
 # [C#](#tab/csharp)
 
-<!-- C#-specific -->
-```csharp
-ClearBrowsingDataAsync();
-```
-
-API Reference:
-
-* [ClearBrowsingDataAsync()](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync)
+[ClearBrowsingDataAsync()](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync)
 
 
 ---
@@ -64,27 +51,17 @@ This method clears the specified kinds of browsing data, regardless of when the 
 <!-- ------------------------------ -->
 # [C++](#tab/cpp)
 
-```cpp
-ClearBrowsingData(dataKinds);
-```
+[ClearBrowsingData(dataKinds)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)
 
-API Reference:
-
-* [ClearBrowsingData(dataKinds)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdata)
-* [COREWEBVIEW2_BROWSING_DATA_KINDS](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
+[COREWEBVIEW2_BROWSING_DATA_KINDS](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
 
 
 <!-- ------------------------------ -->
 # [C#](#tab/csharp)
 
-```csharp
-ClearBrowsingDataAsync(dataKinds);
-```
+[ClearBrowsingDataAsync(dataKinds)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds))
 
-API Reference:
-
-* [ClearBrowsingDataAsync(dataKinds)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds))
-* [CoreWebView2BrowsingDataKinds](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
+[CoreWebView2BrowsingDataKinds](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
 
 ---
@@ -105,27 +82,17 @@ This method clears the specified kinds of browsing data that was created between
 <!-- ------------------------------ -->
 # [C++](#tab/cpp)
 
-```cpp
-ClearBrowsingDataInTimeRange(dataKinds, startTime, endTime);
-```
+[ClearBrowsingDataInTimeRange(dataKinds, startTime, endTime)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
 
-API Reference:
-
-* [ClearBrowsingDataInTimeRange(dataKinds, startTime, endTime)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataintimerange)
-* [COREWEBVIEW2_BROWSING_DATA_KINDS](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
+[COREWEBVIEW2_BROWSING_DATA_KINDS](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_browsing_data_kinds)
 
 
 <!-- ------------------------------ -->
 # [C#](#tab/csharp)
 
-```csharp
-ClearBrowsingDataAsync(dataKinds, startTime, endTime);
-```
+[ClearBrowsingDataAsync(dataKinds, startTime, endTime)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 
-API Reference:
-
-* [ClearBrowsingDataAsync(dataKinds, startTime, endTime)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
-* [CoreWebView2BrowsingDataKinds](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
+[CoreWebView2BrowsingDataKinds](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
 
 ---
