@@ -68,11 +68,6 @@ This method clears the specified kinds of browsing data, regardless of when the 
 <!-- end of tab-set -->
 
 
-Parameters:
-
-* `dataKinds` - The kinds of browsing data to clear.  A mask of one or more enum values.
-
-
 <!-- ====================================================================== -->
 ## Clear selected kinds of browsing data in a time range
 
@@ -97,16 +92,6 @@ This method clears the specified kinds of browsing data that was created between
 
 ---
 <!-- end of tab-set -->
-
-Parameters:
-
-* `dataKinds` - The kinds of browsing data to clear.  A mask of one or more enum values.
-
-* `startTime` - The start time for which the API should clear the corresponding data.  How many seconds have passed since the UNIX epoch.
-   *  Passing in a value of zero or less than zero (up to negative infinity) clears the corresponding data for any time before the `endTime`.
-   *  Passing in a value of the current time or greater (up to positive infinity) clears the corresponding data for any time after the `startTime`.
-   *  For example, passing in negative infinity and positive infinity as the time parameters clears the entirety of the corresponding data. The timestamp represents the time at which the data was created.
-* `endTime` - The end time for which the API should clear the corresponding data.  How many seconds have passed since the UNIX epoch.
 
 
 <!-- ====================================================================== -->
