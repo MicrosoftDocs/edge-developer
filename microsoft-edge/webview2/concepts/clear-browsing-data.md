@@ -24,7 +24,7 @@ You can:
 This method clears all the kinds of browsing data that are listed in the data kinds enumeration, regardless of when the data was created.  It clears the data from the user data folder for the associated profile on which the method is called.
 
 <!-- ------------------------------ -->
-### [C++](#tab/cpp/)
+### [C++](#tab/cpp)
 
 ```cpp
 HRESULT ClearBrowsingDataAll(handler);
@@ -44,7 +44,7 @@ In the simplified syntax in this article, `handler` is sometimes omitted.  For d
 
 
 <!-- ------------------------------ -->
-### [C#](#tab/csharp/)
+### [C#](#tab/csharp)
 
 <!-- C#-specific -->
 ```csharp
@@ -56,7 +56,9 @@ ClearBrowsingDataAsync();
 * [ClearBrowsingDataAsync()](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync)
 * [CoreWebView2BrowsingDataKinds](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
----  <!-- end of tab-set -->
+---
+
+<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -66,7 +68,7 @@ This method clears the specified kinds of browsing data, regardless of when the 
 
 
 <!-- ------------------------------ -->
-### [C++](#tab/cpp/)
+### [C++](#tab/cpp)
 
 ```cpp
 HRESULT ClearBrowsingData(dataKinds, handler);
@@ -88,7 +90,7 @@ In the simplified syntax in this article, `handler` is sometimes omitted.  For d
 
 
 <!-- ------------------------------ -->
-### [C#](#tab/csharp/)
+### [C#](#tab/csharp)
 
 ```csharp
 ClearBrowsingDataAsync(dataKinds);
@@ -103,7 +105,9 @@ Parameters:
 
 * [ClearBrowsingDataAsync(dataKinds)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds))
 
----  <!-- end of tab-set -->
+---
+
+<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -113,7 +117,7 @@ This method clears the specified kinds of browsing data that was created between
 
 
 <!-- ------------------------------ -->
-### [C++](#tab/cpp/)
+### [C++](#tab/cpp)
 
 ```cpp
 HRESULT ClearBrowsingDataInTimeRange(dataKinds, startTime, endTime, handler);
@@ -142,7 +146,7 @@ In the simplified syntax in this article, `handler` is sometimes omitted.  For d
 
 
 <!-- ------------------------------ -->
-### [C#](#tab/csharp/)
+### [C#](#tab/csharp)
 
 ```csharp
 ClearBrowsingDataAsync(dataKinds, startTime, endTime);
@@ -164,7 +168,9 @@ Parameters:
 
 * [ClearBrowsingDataAsync(dataKinds, startTime, endTime)](/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync#microsoft-web-webview2-core-corewebview2profile-clearbrowsingdataasync(microsoft-web-webview2-core-corewebview2browsingdatakinds-system-datetime-system-datetime))
 
----  <!-- end of tab-set -->
+---
+
+<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -174,7 +180,7 @@ This example clears autofill data and password autosave data from the last hour.
 
 
 <!-- ------------------------------ -->
-### [C++](#tab/cpp/)
+### [C++](#tab/cpp)
 
 ```cpp
 // Clears the autofill data from the last hour.
@@ -221,7 +227,7 @@ Other APIs:
 
 
 <!-- ------------------------------ -->
-### [C#](#tab/csharp/)
+### [C#](#tab/csharp)
 
 ```csharp
 // Clears autofill data.
@@ -251,7 +257,8 @@ Other APIs:
 * [CoreWebView2Profile](/dotnet/api/microsoft.web.webview2.core.corewebview2profile)
 * [CoreWebView2.Profile property](/dotnet/api/microsoft.web.webview2.core.corewebview2.profile)
 
----  <!-- end of tab-set -->
+---
+<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -259,7 +266,7 @@ Other APIs:
 
 
 <!-- ------------------------------ -->
-### [C++](#tab/cpp/)
+### [C++](#tab/cpp)
 
 Interfaces:
 
@@ -278,7 +285,7 @@ Enum:
 
 
 <!-- ------------------------------ -->
-### [C#](#tab/csharp/)
+### [C#](#tab/csharp)
 
 Namespace:
 
@@ -298,7 +305,8 @@ Enum:
 
 * [CoreWebView2BrowsingDataKinds](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds)
 
----  <!-- end of tab-set -->
+---
+<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->
