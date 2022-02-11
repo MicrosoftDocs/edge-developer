@@ -837,6 +837,10 @@
               href: webview2/how-to/communicate-btwn-web-native.md
               displayName: Embed web content into native applications  # old title
 
+            - name: WebView2 SDK versions
+              href: webview2/concepts/versioning.md
+              displayName:  # add alt lookup terms
+
             - name: Testing upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
               displayName:  # add alt lookup terms
@@ -887,10 +891,6 @@
 
             - name: Distributing your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
-              displayName:  # add alt lookup terms
-
-            - name: WebView2 SDK versions
-              href: webview2/concepts/versioning.md
               displayName:  # add alt lookup terms
 
         - name: Release Notes for the WebView2 SDK
