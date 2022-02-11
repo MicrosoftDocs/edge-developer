@@ -867,7 +867,7 @@
         - name: Using the API features
           items:
             - name: Clear Browsing Data
-              href: webview2/concepts/clearing-browsing-data.md
+              href: webview2/concepts/clear-browsing-data.md
 
         - name: Release notes for WebView2 SDK
           href: webview2/release-notes.md
