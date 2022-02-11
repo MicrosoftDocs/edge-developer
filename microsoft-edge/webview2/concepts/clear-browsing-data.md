@@ -118,7 +118,7 @@ Parameters:
 
 
 <!-- ====================================================================== -->
-## C++ Example: Clearing autofill data from the last hour
+## C++ example
 
 This example demonstrates clearing autofill data and password autosave data from the last hour.
 
@@ -168,7 +168,7 @@ Other C++ APIs used above:
 
 
 <!-- ====================================================================== -->
-## C# Example: Clearing autofill data from the last hour
+## C# example
 
 This example demonstrates clearing autofill data and password autosave data from the last hour.
 
