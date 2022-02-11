@@ -76,7 +76,7 @@ Header Parameters: Content-Type: application/x-www-form-urlencoded
 -X POST \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -d "client_id={$Client_ID}" \
--d "scope=https://addons.edge.microsoft.com/.default" \
+-d "scope=https://api.addons.microsoftedge.microsoft.com/.default" \
 -d "client_secret={$Client_Secret}" \
 -d "grant_type=client_credentials" \
 -v \
@@ -114,7 +114,7 @@ Use this API to update the package for an add-on.  This API uploads a package to
 
 ```rest
 Endpoint: /v1/products/$productID/submissions/draft/package
-Type: PUT
+Type: POST
 Header Parameters: Authorization: Bearer $TOKEN; Content-Type: application/zip
 Body content: the package file to upload
 ```
@@ -187,7 +187,7 @@ Use this API to publish the current draft of the product to the Microsoft Edge A
 Endpoint: /v1/products/$productID/submissions
 Type: POST
 Header Parameters: Authorization: Bearer $TOKEN
-Body content: Notes for certification, in plain text format
+Body content: Notes for certification, in JSON format
 ```
 
 ### Sample request
@@ -196,7 +196,7 @@ Body content: Notes for certification, in plain text format
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X POST \
--d "certificationNotes=text value" \
+-d { notes=\"text value\" } \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
