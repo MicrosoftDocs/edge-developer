@@ -1,5 +1,5 @@
 ---
-title: Get started with WinUI 2 (UWP, public preview)
+title: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 description: Get started guide with WebView2 for WinUI 2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,32 +8,37 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
 ---
-# Get started with WinUI 2 (UWP, public preview)
+# Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 2 (UWP), and learn about WebView2 concepts along the way.
 
+<!--
+todo: 
+reformat entire article as a series of h2 Step sections starting at 1, each containing action steps
+use strictly controlled linking - only provide a hyperlink if it's in an instruction-step that says what to do with the link
+-->
 
-<!-- ====================================================================== -->
-## API Reference
-
-For details about the WebView2 APIs which apply to UWP, see the WinRT API Reference:
-
-* [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
-* [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
-
-WinUI 2 only supports UWP.  For information about the APIs for all platforms, see [WebView2 API Reference](../webview2-api-reference.md).
+Follow the major Step sections in sequence, below.
 
 
 <!-- ====================================================================== -->
-## Use a preview channel of Microsoft Edge
+## Step 1 - Take a quick look at the WinRT API Reference WebView2 APIs
 
-The [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001) has a dependency on a prerelease WebView2 package.  For full API compatibility, use a preview browser channel as your runtime, such as the Beta, Dev, or Canary channel of Microsoft Edge.
+<!-- why is this first? b/c this article is Getstart for a preview?  normalize the GetStart articles -->
+
+<!-- is this section here to decide whether to install the preview and create a WebView2 app for WinUI 2 (UWP)?  if so, say so.  Explain why providing information, in relation to action steps for this tutorial.  eg "1. Skim x doc briefly, to become familiar." -->
+
+1. Get a quick overview of the WebView2 APIs which apply to UWP.  To do this, see the WinRT API Reference:
+   * [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
+   * [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
+
+   WinUI 2 only supports UWP.
 
 
 <!-- ====================================================================== -->
-## Features with limited functionality
+## Step 2 - Understand which WebView2 features have limited functionality on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 control is actively being developed.  The following features are missing or have issues:
+The WebView2 WinUI 2 control is in development.  The following features are missing or have issues:
 
 *  Download UI.
    *  Although the Download UI feature currently doesn't work, this feature might show up automatically in your app's UI after the issue is fixed.  To maintain compatibility, you should manually disable the Download UI feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs).
@@ -42,21 +47,40 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 *  Background Audio.
 *  Print to PDF.
 *  Print Preview.
-*  Adding COM Objects (WinRT AddHostObject).
+*  Adding COM Objects (WinRT `AddHostObject`).
 *  Playready DRM.
 *  Service Workers on Windows devices before 20H2.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Set up prerequisites
+## Step 3 - Download a preview channel of Microsoft Edge
 
-1. Install [Microsoft Visual Studio 2019 version 16.9](/visualstudio/releases/2019/release-notes-v16.9) or later.  Accept the defaults.
+1. Take a quick look at the NuGet page for the [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001), but you don't need to install it yet.<!--confirm-->  This package has a dependency on a prerelease WebView2 package.
 
-1. By default, Visual Studio doesn't show line numbers in the code editor.  To turn on line numbers, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then click **OK**.
+   For full API compatibility of the NuGet package and WebView2 Runtime, use a preview browser channel as your runtime, such as the Beta, Dev, or Canary channel of Microsoft Edge, as follows.
+
+1. Download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary).
+   <!-- applicable?
+   on a supported operating system (OS):
+   *  Windows 7
+   *  Windows 8.1
+   *  Windows 10
+   *  Windows 11 -->
+
+   We recommend using the Canary channel of Microsoft Edge.
+  <!-- applicable? The minimum required version is 82.0.488.0. -->
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install UWP tools
+## Step 4 - Install Visual Studio
+
+1. Install [Microsoft Visual Studio 2019 version 16.9](/visualstudio/releases/2019/release-notes-v16.9) or later.  Accept the defaults.
+
+1. If Visual Studio doesn't show line numbers in the code editor, turn on line numbers.  To do this, select **Tools** > **Options** > **Text Editor** > **All Languages** > **Line numbers**.  Then click **OK**.
+
+
+<!-- ====================================================================== -->
+## Step 5 - Install UWP tools
 
 1. Open Microsoft Visual Studio.
  
@@ -78,7 +102,7 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
 
 <!-- ====================================================================== -->
-## Step 3 - Create a UWP app
+## Step 6 - Create a UWP app
 
 1. In Visual Studio, select **File** > **New** > **Project**.  Or use the startup screen of Visual Studio, then select **Create a new project**.  The **Create a new project** dialog box opens.
 
@@ -110,13 +134,13 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
 1. Click **Yes**, then close the **Settings** window.
 
-   Visual studio displays the solution and project.
+   Visual Studio displays the solution and project.
 
    :::image type="content" source="media/new-project-created.msft.png" alt-text="The resulting project." lightbox="media/new-project-created.msft.png":::
 
 
 <!-- ====================================================================== -->
-## Step 4 - Install the WinUI 2 NuGet package
+## Step 7 - Install the WinUI 2 NuGet package
 
 1. Right-click the project in Solution Explorer, and then select **Manage NuGet Packages**.
 
@@ -130,6 +154,8 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
    The **Preview Changes** dialog box appears.
 
+   <!-- 1. Install the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2). -->
+
 1. Click **OK**. The WebView2 SDK dependency is installed with WinUI 2.
 
    <!-- "Microsoft.UI.Xaml" here is equiv to WinUI 2; same team -->
@@ -140,7 +166,7 @@ The WebView2 WinUI 2 control is actively being developed.  The following feature
 
 
 <!-- ====================================================================== -->
-## Step 5 - Instantiate the WebView2 control in XAML code
+## Step 8 - Instantiate the WebView2 control in XAML code
 
 ### Add the project reference for the WebView2 control
 

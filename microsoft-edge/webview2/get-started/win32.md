@@ -14,76 +14,260 @@ This article covers how to set up your development tools and create an initial W
 
 
 <!-- ====================================================================== -->
-## Step 0 - Prerequisites
+## Step 1 - Install git, Visual Studio, and a preview channel of Microsoft Edge
 
-First, install the following prerequisites:
+First, install the following development software.
 
-1. [Visual Studio](https://visualstudio.microsoft.com) 2015 or later, with **C++ support** installed.
+### Install git
 
-1. [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2), or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on a supported operating system (OS). The currently supported OS list is Windows 11, Windows 10, Windows 8.1, and Windows 7.
+1. [Download git](https://git-scm.com/downloads) and install it.
+
+
+### Install Visual Studio
+
+1. Install [Visual Studio](https://visualstudio.microsoft.com) 2015 or later (such as Visual Studio Professional 2022), with **C++ support** installed.
+
+   This tutorial doesn't work with Microsoft Visual Studio Code; this tutorial is designed to use Microsoft Visual Studio.
+
+   If you are installing Visual Studio 2022, you can accept the defaults and just click **Install**, and decline installing the Workloads.
+
+   Initial setup of Visual Studio is done.  It's likely that additional Visual Studio setup dialogs will open later in this tutorial.
+
+
+### Install a preview channel of Microsoft Edge
+
+1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
+   *  Windows 7
+   *  Windows 8.1
+   *  Windows 10
+   *  Windows 11
+
+   We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
+
+
+### Install the WebView2 Runtime (optional)
+
+1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
+
+   If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
+
+   If you want more information about this decision now, in a new window or tab, see [Understand WebView2 SDK versions](../concepts/versioning.md).
+
+Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Create a single-window app
+## Step 2 - Clone the WebView2Samples repo
 
-Start with a basic desktop project that contains a single main window.
+To keep this tutorial focused on WebView-specific coding, we start from this existing Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  The existing Visual Studio project we're using here is part of the sample code from a traditional C++ Windows Desktop application.
 
-> [!IMPORTANT]
-> To better focus the walkthrough, use modified sample code from [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp) for your sample app.  To download the modified sample and get started, see the [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide) repo.
+If you want background information for context, in a new window or tab, see [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp).
 
-1. In Visual Studio, open `WebView2GettingStarted.sln`.
 
-   If you use an older version of Visual Studio, in the **Solution Explorer** right-click **WebView2GettingStarted**, and then select **Properties**.  Select **Configuration Properties** > **General**, and then modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset.
+### Obtain the URL for cloning the WebView2 Samples repo
+
+1. If you want, you can open a new browser window or tab and then:
+   *  See the top-level overview of the WebView2 Samples repo: [Sample Code for WebView2](../code-samples-links.md).
+   *  Explore the repo's directory layout online at GitHub: [https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).
+
+   Then continue below.
+
+1. Open the page [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#1-getting-started-guide) in a new window or tab.
+
+1. Click the green **Code** button in the upper right of the GitHub repo, select **Clone**, and then click the **Copy** icon (or, select the HTTPS URL string in the text box and copy it).
+
+   ![Cloning the WebView2 Samples repo](../media/cloning-the-webview2-samples-repo.png)
+
+1. Decide which tool you want to use to locally clone (download) the repo:
+   *  Visual Studio
+   *  GitHub Desktop
+   *  Git Bash shell or command prompt
+
+
+Next, clone the GitHub repo to your local drive.  To do that, follow the appropriate steps below, for the tool you want to use.
+
+
+### Cloning the repo by using Visual Studio
+
+If you want to use Visual Studio to clone the GitHub repo to your local drive:
+
+1. In Visual Studio, select **File** > **Clone repository**.
+
+1. Enter the URL that you copied from the GitHub repo.  You can create a general-purpose root `git` or `github` folder in a writeable location, select that directory, so that the repo will be cloned there, as a new directory.
+
+   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\WebView2Samples`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
+
+You've cloned the repo to your local drive.  Skip to the next major section below.
+
+
+### Cloning the repo by using GitHub Desktop
+
+If you want to use GitHub Desktop to clone the GitHub repo to your local drive:
+
+1. Install [GitHub Desktop](https://desktop.github.com).
+
+1. In GitHub Desktop, select **File** > **Clone repository**.
+
+1. In Visual Studio or GitHub Desktop, enter the URL that you copied from the GitHub repo.  You can create a general-purpose root `git` or `github` folder in a writeable location, select that directory, so that the repo will be cloned there, as a new directory.
+
+   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\WebView2Samples`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
+
+You've cloned the repo to your local drive.  Skip to the next major section below.
+
+
+### Cloning the repo by using Git Bash shell or a command prompt
+
+If you instead want to clone the repo by using a Git Bash shell or command prompt:
+
+1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo:
+
+   ```Shell
+   # example location where the repo directory will be added:
+   cd c:/users/myusername/documents/github/
+   git clone https://github.com/MicrosoftEdge/WebView2Samples.git
+   ```
+
+   ![Using the Git Bash shell to enter the git clone command in your desired local target git or GitHub repo directory.](../media/git-bash-git-clone-url-command.png)
+
+   The directory is created on your local drive, in the path you specified, such as in the following figure:
+
+   ![File Explorer showing the directory for the cloned WebView2 Samples repo.](../media/file-explorer-cloned-webview2-samples-repo.png)
+
+You've cloned the repo to your local drive.  Continue with the steps below.
+
+
+<!-- ====================================================================== -->
+## Step 3 - Open the existing Win32 single-window app (WebView2GettingStarted.sln)
+
+You start with a basic desktop project that contains a single main window.  We'll start with an existing app project from the WebView2 Samples repo, which you cloned from GitHub in the previous step.
+
+This tutorial doesn't work with Microsoft Visual Studio Code; this tutorial is designed to use Microsoft Visual Studio.
+
+1. Open Visual Studio.
+
+1. Open `WebView2GettingStarted.sln`, which is located at the path: `<your repo directory>/WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`.
+
+
+### Install the "Desktop development for C++" workload
+
+Visual Studio Installer might open and prompt you to install a Workload:
+
+![Visual Studio Installer prompting to install the 'Desktop development for C++' workload.](../media/installer-prompt-desktop-cpp-workload.png)
+
+If Visual Studio Installer prompts you to install a Workload:
+
+1. Select the **Desktop development for C++** card so that a checkmark appears.
+
+1. If you want, also select the **.NET desktop development** card (not needed for this tutorial), so that a checkmark appears on this card as well.
+
+1. Click the **Install** button.
+
+The Installer closes.
+
+
+### Retarget Projects
+
+The Visual Studio **Review Solution Actions** dialog might appear, prompting you whether you want to **Retarget Projects**:
+
+![Visual Studio's 'Review Solution Actions' dialog box, prompting to Retarget Projects.](../media/review-solution-actions-retarget-projects.png)
+
+1. If that dialog appears, you can click **OK**.
+
+
+### Open HelloWebView.cpp from the WebView2GettingStarted project
+
+The **WebView2GettingStarted** solution opens in Visual Studio.  The solution contains a single project: **WebView2GettingStarted**, which contains a single .cpp file: **HelloWebView.cpp**.
+
+1. In Solution Explorer, expand the **Source Files** node, and then select **HelloWebView.cpp**.
+
+   `HelloWebView.cpp` opens in the code editor of Visual Studio.
+
+![The 'WebView2GettingStarted.sln' file from the cloned WebView2 repo, opened in Visual Studio, in Solution Explorer.](../media/webview2gettingstarted-sln-in-solution-explorer.png)
+
+<!-- dup'd from start of tut -->
+To keep this tutorial focused on WebView-specific coding, we start from this existing Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  The existing Visual Studio project we're using here is part of the sample code from a traditional C++ Windows Desktop application.
+
+If you want background information for context, in a new window or tab, see [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp).
+
+
+### Set the solution to use the Win10 SDK and Visual Studio toolset
+
+This step is only needed for older versions of Visual Studio, so it's likely you can skip it.  But you can take a look at this UI in any case:
+
+1. In Visual Studio's **Solution Explorer**, right-click the **WebView2GettingStarted** solution, and then select **Properties**.
+
+1. Select **Configuration Properties** > **General**, and then (if it's not the correct setting already), modify **Windows SDK Version** and **Platform Toolset** to use the Win10 SDK and Visual Studio toolset.  This modification is only necessary for older<!--define--> versions of Visual Studio; 
 
    :::image type="content" source="../media/tool-version.png" alt-text="Tool version." lightbox="../media/tool-version.png":::
 
-Visual Studio might display errors, because your project is missing the WebView2 header file.  The errors resolve after completing [Section 2 - Install WebView2 SDK](#step-2---install-webview2-sdk).
+Visual Studio might display errors, because your project is missing the WebView2 header file.  The errors resolve after completing the next section, "Install the WebView2 SDK".
+
+Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install WebView2 SDK
+## Step 4 - Install the Windows Implementation Library
 
-Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
-
-1. In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**.
+1. In Visual Studio's **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**.
 
    :::image type="content" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages." lightbox="../media/manage-nuget-packages.png":::
 
-   > [!WARNING]
-   > If you don't see the expected search results in the following steps, check the NuGet source location. Click **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**. Make sure that in **Package sources** there is a **nuget.com** source pointing to `https://api.nuget.org/v3/index.json`. If **Package sources** doesn't contain that source, enter `nuget.com` in the **Name** text box and `https://api.nuget.org/v3/index.json` in the **Source** text box. Then click **Update** and **OK**.
+1. In the **NuGet** window, click the **Browse** tab.
 
-1. Install the Windows Implementation Library.
+1. In the search bar, type `Microsoft.Windows.ImplementationLibrary`, and then select **Microsoft.Windows.ImplementationLibrary**.
 
-   1. In the **NuGet** window, click the **Browse** tab.
+   :::image type="content" source="../media/wil.png" alt-text="Selecting Microsoft.Windows.ImplementationLibrary in the Visual Studio NuGet installer page." lightbox="../media/wil.png":::
 
-   1. In the search bar, type `Microsoft.Windows.ImplementationLibrary` > choose **Microsoft.Windows.ImplementationLibrary**.
+   If you don't see **Microsoft.Windows.ImplementationLibrary** listed, check the NuGet source location, as follows:
 
-   1. In the right-hand side window, choose **Install**.  NuGet downloads the library to your machine.
+   1. Select **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**.
 
-      The [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) are optional and make working with COM easier for the example.
+   1. Make sure that in **Package sources** there is a **nuget.com** source pointing to `https://api.nuget.org/v3/index.json`.
 
-      :::image type="content" source="../media/wil.png" alt-text="Windows Implementation Library." lightbox="../media/wil.png":::
+   1. If **Package sources** doesn't contain that source, enter `nuget.com` in the **Name** text box and `https://api.nuget.org/v3/index.json` in the **Source** text box. Then click **Update** and **OK**.
 
-1. Install the WebView2 SDK.
+1. In the area on the right, click **Install**.  NuGet downloads the Windows Implementation Library to your machine.
 
-   1. In the **NuGet** window, click the **Browse** tab.
+The [Windows Implementation Library](https://github.com/Microsoft/wil) and [Windows Runtime C++ Template Library](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) make working with COM easier for this tutorial.
 
-   1. In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.
+<!-- You now have X.  The app now X. -->
 
-   1. In the right-hand side window, click **Install**.  NuGet downloads the SDK to your machine.
+Continue with the steps below.
 
-      :::image type="content" source="../media/nuget.png" alt-text="NuGet Package Manager." lightbox="../media/nuget.png":::
 
-1. Add WebView2 header to your project.
+<!-- ====================================================================== -->
+## Step 5 - Install the WebView2 SDK
 
-   In the `HelloWebView.cpp` file, copy the following code and paste it after the last `#include` line:
+<!-- 1. Install the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2). -->
+
+Continuing in the Visual Studio **NuGet** installer page from above, install the WebView2 SDK, as follows:
+
+1. In the **NuGet** window, click the **Browse** tab.
+
+1. In the search bar, type `Microsoft.Web.WebView2` and choose **Microsoft.Web.WebView2**.
+
+1. In the right-hand side window, click **Install**.  NuGet downloads the SDK to your machine.
+
+   :::image type="content" source="../media/nuget.png" alt-text="NuGet Package Manager." lightbox="../media/nuget.png":::
+
+Your development environment is now set up to add WebView2 features to your app.
+
+Continue with the steps below.
+
+
+<!-- ====================================================================== -->
+## Step 6 - Add a WebView2 header to your project
+
+Continuing in the Visual Studio project that you created above, now start adding some WebView2-specific code to your app.
+
+1. Paste the following code in `HelloWebView.cpp`, after the last `#include` line:
 
    ```cpp
    // include WebView2 header
    #include "WebView2.h"
    ```
-
-   The `include` section should look similar to the following code:
+   
+   The `include` section should now look like this:
 
    ```cpp
    ...
@@ -92,10 +276,14 @@ Add the WebView2 SDK into the project.  Use NuGet to install the Win32 SDK.
    // include WebView2 header
    #include "WebView2.h"
    ```
-
+   
 The project is ready to use and build against the WebView2 API.
 
-### Build your empty sample app
+Continue with the steps below.
+
+
+<!-- ====================================================================== -->
+## Step 7 - Build your empty sample app
 
 1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
@@ -105,9 +293,13 @@ The project is ready to use and build against the WebView2 API.
 
    :::image type="content" source="../media/empty-app.png" alt-text="The sample app displays an empty window." lightbox="../media/empty-app.png":::
 
+You now have a running empty amp.
+
+Continue with the steps below.
+
 
 <!-- ====================================================================== -->
-## Step 3 - Create a single WebView2 control within the parent window
+## Step 8 - Add a WebView2 control in the parent window
 
 Next, add a WebView2 control to the main window.
 
@@ -172,11 +364,15 @@ In the callback, set a few more settings, resize the WebView2  to fill 100% of t
 
    :::image type="content" source="../media/bing-window.png" alt-text="Bing window." lightbox="../media/bing-window.png":::
 
+You now have an app with WebView content.
+
+Continue with the steps below.
+
 
 <!-- ====================================================================== -->
-## Step 4 - Navigation events
+## Step 9 - Navigation events
 
-The WebView2 team already covered navigating to URL using the `ICoreWebView2::Navigate` method in the last step.  During navigation, WebView2 fires a sequence of events, which the host can listen for:
+In the previous step, we discussed navigating to URL by using the `ICoreWebView2::Navigate` method.  During navigation, WebView2 fires a sequence of events, which the host can listen for:
 
 1. `NavigationStarting`
 1. `SourceChanged`
@@ -184,7 +380,7 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 1. `HistoryChanged`
 1. `NavigationCompleted`
 
-For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
+   If you want more information now, in a new window or tab, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
 :::image type="content" source="../media/navigation-events.png" alt-text="Navigation events." lightbox="../media/navigation-events.png":::
 
@@ -194,10 +390,14 @@ In error cases, one or more of the following events may occur, depending on whet
 *  `ContentLoading`
 *  `HistoryChanged`
 
-> [!NOTE]
-> If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
+If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
 
-1. As an example of using the events, register a handler for the `NavigationStarting` event to cancel any non-https requests.  Paste the following code into `HelloWebView.cpp`:
+
+### Use navigation events to prevent going to HTTP (non-secure) URLs
+
+As an example of using navigation events, register a handler for the `NavigationStarting` event, to cancel any non-https requests, as follows.
+
+1. Paste the following code into `HelloWebView.cpp`:
 
    ```cpp
    // register an ICoreWebView2NavigationStartingEventHandler to cancel any non-https navigation
@@ -217,11 +417,15 @@ In error cases, one or more of the following events may occur, depending on whet
 
 Now the app doesn't open any non-https sites.  You can use a similar mechanism to accomplish other tasks, such as restricting navigation to within your own domain.
 
+<!-- 1. Try opening http vs https urls. -->
+
+Continue with the steps below.
+
 
 <!-- ====================================================================== -->
-## Step 5 - Scripting
+## Step 10 - Scripting
 
-Use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
+Use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
 
 The injected JavaScript is run with specific timing:
 
@@ -244,14 +448,20 @@ The injected JavaScript is run with specific timing:
 
    Now, WebView2 freezes the `Object` and returns the page document once.
 
+<!-- This accomplishes & demonstrates X.  This is interesting and relevant because X. -->
 
-### Use callbacks if code must be run in order
 
-The script injection APIs (and some other WebView2 APIs) are asynchronous, so you should use callbacks if code must be run in a specific order.
+### If code must be run in order, use callbacks
+
+The script injection APIs (and some other WebView2 APIs) are asynchronous.  So, if code must be run in a specific order, you should use callbacks.
+
+<!-- You now have X.  The app now X. -->
+
+Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Communication between host and web content
+## Step 11 - Communication between host and web content
 
 The host and the web content can also communicate with each other through the `postMessage` method.  The web content running within a WebView2 control can post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.
 
@@ -270,7 +480,6 @@ As an example to understand the mechanism, the following steps occur when you tr
 1. The handler of the web content is triggered and prints message from the host (the URL).
 
 
-<!-- start conflict: -->
 ### Example
 
 1. Paste the following code into `HelloWebView.cpp`:

@@ -144,7 +144,7 @@ Debug network requests that run through service workers.  You can also open netw
 
 In previous versions of Microsoft Edge, the level of depth in the call stack was limited to the JavaScript code in your service worker.  In Microsoft Edge 88, the call stack now displays the initiator of requests that run through your service worker.
 
-To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures starts with the JavaScript code in your service worker and displays a reference to the original webpage request as `(index):157`.  In the second figure, the reference is chosen and opened the initiator that made the request.  The initiator in the second figure is the webpage.
+To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures starts with the JavaScript code in your service worker and displays a reference to the original webpage request as `(index):157`.  In the second figure, the reference is selected, and has opened the initiator that made the request.  The initiator in the second figure is the webpage.
 
 The `service-worker.js` file and call stack highlighting the request originator:
 

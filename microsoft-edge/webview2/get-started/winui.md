@@ -1,5 +1,5 @@
 ---
-title: Get started with WinUI 3 (Windows App SDK)
+title: Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 description: Get started guide with WebView2 for WinUI 3 (Windows App SDK) apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,25 +8,31 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/05/2021
 ---
-# Get started with WinUI 3 (Windows App SDK)
+# Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
-## Step 0 - Set up the development environment
+## Step 1 - Set up the development environment
 
-1. Follow steps 1-4 of [Set up your development environment](/windows/apps/project-reunion/set-up-your-development-environment) to install Visual Studio, configure the NuGet package source, and install the Windows App SDK Extension for Visual Studio.
+1. In a new window or tab, open the page [Install tools for developing apps for Windows 10 and Windows 11](/windows/apps/project-reunion/set-up-your-development-environment).  Follow the steps on that page, to install the following:
+   *  Microsoft Visual Studio.
+   *  The Windows App SDK Extension for Visual Studio.
+
+   Return from that page and continue below.
+
+1. When Visual Studio opens at some point during the present article's steps, you might be prompted to turn on Developer Mode for your computer.  For more information, if needed, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development), at _Build desktop apps for Windows_.
+
+1. Install the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) NuGet package.
 
 1. Install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge non-stable channel](https://www.microsoftedgeinsider.com/download) installed on Windows 10 version 1803 (build 17134) or later.  For more information about Windows 10 or later, see [Windows Update: FAQ](https://support.microsoft.com/help/12373).
 
-1. To access all developer-specific Visual Studio features, turn on [Developer Mode](/windows/uwp/get-started/enable-your-device-for-development).
-
 
 <!-- ====================================================================== -->
-## Step 1 - Create the project
+## Step 2 - Create the project
 
-Start with a basic desktop project that contains a single main window.
+To create a WebView2 app, start by creating a basic desktop project, to create a desktop app that contains a single main window:
 
 1. In Visual Studio, click **Create a new project**.
 
@@ -50,9 +56,9 @@ Start with a basic desktop project that contains a single main window.
 
 1. Click **OK**.
 
-   The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version:
+   The New Universal Windows Platform Project dialog with selected values for Target version and Minimum version:
 
-   :::image type="content" source="./media/winui-getting-started-project-type.png" alt-text="The New Universal Windows Platform Project dialog with chosen values for Target version and Minimum version." lightbox="./media/winui-getting-started-project-type.png":::
+   :::image type="content" source="./media/winui-getting-started-project-type.png" alt-text="The New Universal Windows Platform Project dialog with selected values for Target version and Minimum version." lightbox="./media/winui-getting-started-project-type.png":::
        
    Solution Explorer displays the two new projects that were generated:
 
@@ -68,7 +74,7 @@ Start with a basic desktop project that contains a single main window.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Add a WebView2 control to your project
+## Step 3 - Add a WebView2 control to your project
 
 Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control to the sample app, as follows.
 
@@ -137,7 +143,7 @@ The sample application with WebView2 control displays the Microsoft website, htt
 
 
 <!-- ====================================================================== -->
-## Step 3 - Add navigation controls
+## Step 4 - Add navigation controls
 
 To allow users to control the webpage that is displayed in your WebView2 control, add an address bar to the sample app, as follows.
 
@@ -202,7 +208,7 @@ To allow users to control the webpage that is displayed in your WebView2 control
 
 
 <!-- ====================================================================== -->
-## Step 4 - Navigation events
+## Step 5 - Navigation events
 
 In this section, you add code to import the WebView2 Core library.
 
@@ -267,7 +273,7 @@ In this section, you add code to import the WebView2 Core library.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Scripting
+## Step 6 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript is run with specific timing, to either:
 

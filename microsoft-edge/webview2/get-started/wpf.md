@@ -14,19 +14,21 @@ This article covers how to set up your development tools and create an initial W
 
 
 <!-- ====================================================================== -->
-## Step 0 - Prerequisites
+## Step 1 - Install developer tools for WebView2 apps
 
-Install the following list of prerequisites before proceeding.
+1. Install [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.  You can accept the defaults.
 
-1. [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.
+1. Download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
+   *  Windows 7
+   *  Windows 8.1
+   *  Windows 10
+   *  Windows 11
 
-1. [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2), or any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on a supported operating system (OS). The currently supported OS list is Windows 11, Windows 10, Windows 8.1, and Windows 7.
-
-   The WebView2 team recommends using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
+   We recommend using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Create a single-window app
+## Step 2 - Create a single-window WebView2 app
 
 Start with a basic desktop project that contains a single main window.
 
@@ -74,7 +76,9 @@ Start with a basic desktop project that contains a single main window.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Install WebView2 SDK
+## Step 3 - Install the WebView2 SDK
+
+<!-- 1. Install the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2). -->
 
 Use NuGet to add the WebView2 SDK to the project.
 
@@ -102,7 +106,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Create a single WebView
+## Step 4 - Create a single WebView
 
 Add a WebView2 control to your app.
 
@@ -153,7 +157,7 @@ Add a WebView2 control to your app.
 
 
 <!-- ====================================================================== -->
-## Step 4 - Navigation
+## Step 5 - Navigation
 
 Enable users to change the URL that the WebView2 control displays, by adding an address bar to the app.
 
@@ -243,7 +247,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
 
 <!-- ====================================================================== -->
-## Step 5 - Navigation events
+## Step 6 - Navigation events
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events:
 
@@ -320,7 +324,7 @@ To demonstrate how to use the events, register a handler for `NavigationStarting
 
 
 <!-- ====================================================================== -->
-## Step 6 - Scripting
+## Step 7 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
 
@@ -355,7 +359,7 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 
 <!-- ====================================================================== -->
-## Step 7 - Communication between host and web content
+## Step 8 - Communication between host and web content
 
 The host and web content can communicate in the following ways using `postMessage`:
 
