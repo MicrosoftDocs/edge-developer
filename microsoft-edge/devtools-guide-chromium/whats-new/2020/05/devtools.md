@@ -57,7 +57,7 @@ To try the experiment:
 
 1. Open **Settings** again, and select the **Shortcuts** section.
 
-1. Click the **Match shortcuts from preset** dropdown, select **DevTools (Default)**, and then select **Visual Studio Code**.  
+1. Click the **Match shortcuts from preset** dropdown list, select **DevTools (Default)**, and then select **Visual Studio Code**.  
 
 The keyboard shortcuts in the DevTools now match the shortcuts for equivalent actions in Visual Studio Code.
 

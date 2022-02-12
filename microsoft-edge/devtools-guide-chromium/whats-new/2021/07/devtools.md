@@ -103,7 +103,7 @@ Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/
 <!-- Title: DevTools Settings now includes display language -->
 <!-- Subtitle: You can now skip the browser settings and change the DevTools display language directly within DevTools Settings. -->
 
-Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the display language in DevTools **Settings**, without having to change your browser settings.  To do this, open **Settings**, and then in **Preferences**, select a language from the **Language** drop-down list.
+Previously, to change the display language in DevTools, you had to change the browser language.  Now you can easily switch the display language in DevTools **Settings**, without having to change your browser settings.  To do this, open **Settings**, and then in **Preferences**, select a language from the **Language** dropdown list.
 
 :::image type="content" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="Changing the DevTools display language directly from DevTools **Settings**" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
 

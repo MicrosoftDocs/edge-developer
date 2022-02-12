@@ -47,7 +47,7 @@ You can sort your apps by any of the following:
 
 #### List view or grid view
 
-You can arrange apps in a list or grid view, by using the **View as** dropdown.  In this image, **Grid** view is selected:
+You can arrange apps in a list or grid view, by using the **View as** dropdown list.  In this image, **Grid** view is selected:
 
 :::image type="content" source="media/edgeapps-redesign.jpg" alt-text="The new, app management page in Microsoft Edge." lightbox="media/edgeapps-redesign.jpg":::
 <!-- lightbox justified because large detailed image -->
