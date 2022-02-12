@@ -114,7 +114,7 @@ Microsoft Edge DevTools displayed in the Monokai theme:
 <!-- ====================================================================== -->
 ## Unique tools
 
-These tools are only available in Microsoft Edge and aren't part of the Chromium project Developer Tools.
+These web development tools are only available in Microsoft Edge DevTools.
 
 
 ### Detached Elements panel
