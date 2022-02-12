@@ -27,4 +27,4 @@ Get started using WebView2 for your platform:
 ## See also
 
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2, at developer.microsoft.com.
-* [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) - demonstrate using WebView2 features and APIs.
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.

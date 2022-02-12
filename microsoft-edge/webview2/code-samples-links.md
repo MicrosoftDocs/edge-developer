@@ -1,5 +1,5 @@
 ---
-title: Sample Code
+title: Sample Code for WebView2
 description: Links to WebView2 sample code hosted on GitHub.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/21/2021
 ---
-# Sample Code
+# Sample Code for WebView2
 
 The following WebView2 samples are available in the Get Started guides for WebView2 and in the [WebView2 Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 

@@ -1,6 +1,6 @@
 ---
-title: Debug WebView2 apps using Microsoft Edge DevTools
-description: How to debug WebView2 apps using Microsoft Edge DevTools.
+title: Debug WebView2 apps with Microsoft Edge DevTools
+description: How to debug WebView2 apps with Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/11/2022
 ---
-# Debug WebView2 apps using Microsoft Edge DevTools
+# Debug WebView2 apps with Microsoft Edge DevTools
 
 Use Microsoft Edge Developer Tools to debug web content displayed in WebView2 controls, in the same way that you can debug another webpage that's displayed in Microsoft Edge.
 
@@ -18,7 +18,7 @@ When you're using a WebView2 app, there are several ways to open DevTools:
 *  Press `Ctrl`+`Shift`+`I`.
 *  Right-click the page and then select `Inspect`.
 
-   :::image type="content" source="media/f12.png" alt-text="DevTools debugging." lightbox="media/f12.png":::
+:::image type="content" source="media/f12.png" alt-text="DevTools debugging." lightbox="media/f12.png":::
 
 
 <!-- ====================================================================== -->

@@ -2,6 +2,7 @@
   href: developer/index.yml
   items:
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge DevTools
       items:
 # UPPER NON-TOOLS NODES =======================================================
@@ -655,6 +656,7 @@
           displayName: contact
 # /DevTools
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions
@@ -732,6 +734,7 @@
             - name: Auto-update
               href: extensions-chromium/enterprise/auto-update.md
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Progressive Web Apps
       items:
         - name: Overview of Progressive Web Apps (PWAs)
@@ -777,6 +780,7 @@
         - name: Sample PWAs
           href: progressive-web-apps-chromium/demo-pwas.md
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2
@@ -787,115 +791,117 @@
           items:
             - name: Get started with WebView2
               href: webview2/get-started/get-started.md
-              displayName:
+              displayName: 
 
             - name: Win32
               href: webview2/get-started/win32.md
-              displayName:
+              displayName: Get started with WebView2 in Win32 apps  # top-of-page title
 
             - name: WinForms
               href: webview2/get-started/winforms.md
-              displayName:
+              displayName: Get started with WebView2 in WinForms apps  # top-of-page title
 
             - name: WinUI 2 (UWP, public preview)
               href: webview2/get-started/winui2.md
-              displayName:
+              displayName: Get started with WinUI 2 (UWP, public preview)  # top-of-page title
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
-              displayName:
+              displayName: Get started with WinUI 3 (Windows App SDK)  # top-of-page title
 
             - name: WPF
               href: webview2/get-started/wpf.md
-              displayName:
+              displayName: Get started with WebView2 in WPF apps  # top-of-page title
 # -----------------------------------------------------------------------------
         - name: Fundamentals
           items:
             - name: Sample Code
               href: webview2/code-samples-links.md
+              displayName: Sample Code for WebView2  # top-of-page title
 
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-              displayName:
+              displayName: 
 
             - name: Debug WebView2 apps
               items: 
-
                 - name: Debug WebView2 apps
                   href: webview2/how-to/debug.md
-                  displayName:
+                  displayName: 
 
-                - name: Debug WebView2 apps using Microsoft Edge DevTools
+                - name: Microsoft Edge DevTools
                   href: webview2/how-to/debug-devtools.md
-                  displayName:
+                  displayName: Debug WebView2 apps with Microsoft Edge DevTools  # top-of-page title
 
-                - name: Debug WebView2 apps using Microsoft Visual Studio Code
-                  href: webview2/how-to/debug-devtools-visual-studio-code.md
-                  displayName:
+                - name: Microsoft Visual Studio Code
+                  href: webview2/how-to/debug-visual-studio-code.md
+                  displayName: Debug WebView2 apps with Microsoft Visual Studio Code  # top-of-page title
 
-                - name: Debug WebView2 apps using Microsoft Visual Studio
-                  href: webview2/how-to/debug-devtools-visual-studio.md
-                  displayName:
+                - name: Microsoft Visual Studio
+                  href: webview2/how-to/debug-visual-studio.md
+                  displayName: Debug WebView2 apps with Microsoft Visual Studio  # top-of-page title
 
             - name: Navigation events
               href: webview2/concepts/navigation-events.md
-              displayName:
+              displayName: Navigation events for WebView2 apps  # top-of-page title
 
-            - name: Calling JavaScript from native code
+            - name: Use JavaScript in WebView
               href: webview2/how-to/javascript.md
-              displayName:
+              displayName: Use JavaScript in WebView for extended scenarios  # old title
 
-            - name: Calling native code from JavaScript
+            - name: Embed web content into native applications (JavaScript interop)  # added paren
               href: webview2/how-to/communicate-btwn-web-native.md
-              displayName: embed web content
+              displayName: 
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
-              displayName:
+              displayName: Understand WebView2 SDK versions  # old title
 
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
-              displayName:
+              displayName: 
+
 # -----------------------------------------------------------------------------
         - name: Advanced Topics and Best Practices
           items:
             - name: Development best practices
               href: webview2/concepts/developer-guide.md
-              displayName:
+              displayName: Development best practices for WebView2 apps  # top-of-page title
 
-            - name: Develop secure apps
+            - name: Develop secure WebView2 apps
               href: webview2/concepts/security.md
-              displayName:
+              displayName: 
 
-#           - name: Basic authentication for WebView2 apps
+#           - name: Basic authentication for WebView2 apps  # forthcoming
 #             href: webview2/concepts/basic-authentication.md
-#             displayName:
+#             displayName: 
 
             - name: Working with user data folders
               href: webview2/concepts/user-data-folder.md
-              displayName:
+              displayName: Manage the user data folder  # old title
 
             - name: Process model
               href: webview2/concepts/process-model.md
-              displayName:
+              displayName: Process model for WebView2 apps  # top-of-page title
 
             - name: Threading model
               href: webview2/concepts/threading-model.md
-              displayName:
+              displayName: Threading model for WebView2 apps # top-of-page title
 
             - name: Use the Chrome DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
-              displayName:
+              displayName: 
 
             - name: Automate and test with Microsoft Edge Driver
               href: webview2/how-to/webdriver.md
-              displayName:
+              displayName: Automate and test WebView2 apps with Microsoft Edge Driver  # top-of-page title
+
 # -----------------------------------------------------------------------------
         - name: Deployment and Distribution
           items:
             - name: Enterprise management of WebView2 Runtimes
               href: webview2/concepts/enterprise.md
-              displayName:
+              displayName: Manage WebView2 applications  # old title
 
             - name: Distribute WebView2 in a single-file application
               href: webview2/how-to/static.md
@@ -903,15 +909,15 @@
 
             - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
-              displayName:
+              displayName: 
 # -----------------------------------------------------------------------------
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
-          displayName:
+          displayName: 
 
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
-          displayName:
+          displayName: 
 
         - name: WebView2 Reference
           items:
@@ -923,7 +929,7 @@
               items:
                 - name: Win32 C++ WebView2 API conventions
                   href: webview2/concepts/win32-api-conventions.md
-                  displayName:
+                  displayName: 
 
                 - name: Win32 C++ API Reference
                   href: /microsoft-edge/webview2/reference/win32/index
@@ -955,9 +961,10 @@
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
-          displayName:
+          displayName: 
 # / WebView2 articles
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Test and automation
       items:
         - name: DevTools Protocol
@@ -979,6 +986,7 @@
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Web platform
       items:
         - name: Site compatibility-impacting changes coming to Microsoft Edge
@@ -994,6 +1002,7 @@
         - name: Detect Windows 11 using User-Agent Client Hints
           href: web-platform/how-to-detect-win11.md
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge IDE integration
       items:
         - name: Visual Studio overview
@@ -1011,6 +1020,7 @@
             - name: webhint
               href: visual-studio-code/webhint.md
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility overview
@@ -1028,4 +1038,3 @@
       href: privacy-whitepaper/index.md
     - name: The Web We Want initiative
       href: web-we-want/index.md
- 

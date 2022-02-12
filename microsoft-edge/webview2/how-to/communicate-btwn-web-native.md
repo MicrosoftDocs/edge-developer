@@ -1,5 +1,5 @@
 ---
-title: Calling native code from JavaScript
+title: Embed web content into native applications (JavaScript interop)
 description: Embed web content into native applications using WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,8 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/15/2021
 ---
-# Calling native code from JavaScript
-<!-- old title: # Embed web content into native applications -->
+# Embed web content into native applications (JavaScript interop)
 
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can use WebView2 in different ways, depending on what you need to accomplish.  This article describes how to communicate using simple messages, JavaScript code, and native objects.
 

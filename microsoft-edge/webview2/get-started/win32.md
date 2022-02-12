@@ -184,7 +184,7 @@ The WebView2 team already covered navigating to URL using the `ICoreWebView2::Na
 1. `HistoryChanged`
 1. `NavigationCompleted`
 
-For more information, see [Navigation events](../concepts/navigation-events.md).
+For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
 :::image type="content" source="../media/navigation-events.png" alt-text="Navigation events." lightbox="../media/navigation-events.png":::
 
@@ -322,7 +322,9 @@ Congratulations, you built your first WebView2 app!
 
 To learn more about WebView2 functions not covered in this article, see the following resources.
 
-*  [MicrosoftEdge/WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
-*  [Development best practices](../concepts/developer-guide.md)
-*  [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
-*  [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.
+   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+   * [Win32 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
+* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
+* [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
+* [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.

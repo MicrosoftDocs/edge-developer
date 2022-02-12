@@ -235,7 +235,7 @@ During webpage navigation, the WebView2 control raises events. The app that host
 *  `HistoryChanged`
 *  `NavigationCompleted`
 
-For more information, see [Navigation events](../concepts/navigation-events.md).
+For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
 :::image type="content" source="../media/navigation-events.png" alt-text="Navigation events.":::
 
@@ -403,7 +403,8 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## Next steps
 
-* [Development best practices](../concepts/developer-guide.md)
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - A comprehensive example of WebView2 capabilities.
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.
+   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2)

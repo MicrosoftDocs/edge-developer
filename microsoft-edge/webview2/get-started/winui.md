@@ -223,7 +223,7 @@ In this section, you add code to import the WebView2 Core library.
    > [!NOTE]
    > If an HTTP redirect occurs, there are multiple `NavigationStarting` events in a row.
     
-   For more information, see [Navigation events](../concepts/navigation-events.md).
+   For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
     
    When errors occur, the following events are raised, and an error webpage might be displayed:
 
@@ -319,7 +319,8 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## Next steps
 
-* [Development best practices](../concepts/developer-guide.md)
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.
+   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+* [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.

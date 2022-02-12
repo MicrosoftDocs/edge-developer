@@ -193,7 +193,9 @@ Now you can change the content of the WebView2 control to add your own content.
 <!-- ====================================================================== -->
 ## Next steps
 
-* [Development best practices](../concepts/developer-guide.md)
-* [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.
+   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
+   * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
+* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.

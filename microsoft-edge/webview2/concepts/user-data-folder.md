@@ -59,7 +59,7 @@ Files in user data folders might still be in use after the WebView2 application 
 
 WebView2 controls can share the same user data folders, to do the following:
 
-*  Optimize system resources by running in one browser process.  See [Process model](../concepts/process-model.md).
+*  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
 
 *  Share browser history and cached resources.
 

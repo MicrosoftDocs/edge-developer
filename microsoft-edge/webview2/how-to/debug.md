@@ -14,9 +14,9 @@ Debug web code in WebView2 apps by using Microsoft Edge DevTools, Microsoft Visu
 
 WebView2 apps combine the best of web and native app development features and tools.  When you develop your WebView2 app, you test the app by debugging it.
 
-* [Debug WebView2 apps using Microsoft Edge DevTools](debug-devtools.md)
-* [Debug WebView2 apps using Microsoft Visual Studio Code](debug-devtools-visual-studio-code.md)
-* [Debug WebView2 apps using Microsoft Visual Studio](debug-devtools-visual-studio.md)
+* [Debug WebView2 apps with Microsoft Edge DevTools](debug-devtools.md)
+* [Debug WebView2 apps with Microsoft Visual Studio Code](debug-devtools-visual-studio-code.md)
+* [Debug WebView2 apps with Microsoft Visual Studio](debug-devtools-visual-studio.md)
 
 
 <!-- ====================================================================== -->

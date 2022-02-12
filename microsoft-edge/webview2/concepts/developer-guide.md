@@ -1,5 +1,5 @@
 ---
-title: Development best practices
+title: Development best practices for WebView2 apps
 description: Learn about development best practices to use when developing your WebView2 application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 08/03/2021
 ---
-# Development best practices
+# Development best practices for WebView2 apps
 
 Every development team follows different practices when building their application.  When you build WebView2 production apps, we recommend following these recommendations and best practices.
 
@@ -99,4 +99,4 @@ To prevent such a memory leak:
 <!-- ====================================================================== -->
 ## Follow recommended WebView2 security best practices
 
-For any WebView2 app, make sure to follow our recommended WebView2 [Develop secure apps](../concepts/security.md).
+For any WebView2 app, make sure to follow our recommendations in [Develop secure WebView2 apps](../concepts/security.md).

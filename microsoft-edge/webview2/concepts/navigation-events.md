@@ -1,5 +1,5 @@
 ---
-title: Navigation events
+title: Navigation events for WebView2 apps
 description: "Navigation events for WebView2: NavigationStarting, SourceChanged, ContentLoading, HistoryChanged, DOMContentLoaded, and NavigationCompleted."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/28/2021
 ---
-# Navigation events
+# Navigation events for WebView2 apps
 <!-- old title: # Navigation events for WebView2 -->
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.

@@ -266,7 +266,7 @@ A successful path includes the full sequence of events:
 1. History changes.
 1. Navigation completed.
 
-For more information, see [Navigation events](../concepts/navigation-events.md).
+For more information, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
 
 ### Failure path
@@ -442,7 +442,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## Next steps
 
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.
+   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-* [Development best practices](../concepts/developer-guide.md)
-* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-* [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) - demonstrate using WebView2 features and APIs.
+* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
