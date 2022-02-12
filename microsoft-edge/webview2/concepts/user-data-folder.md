@@ -1,5 +1,5 @@
 ---
-title: Working with user data folders
+title: Manage user data folders
 description: How to manage user data folders in a WebView2 application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
 ---
-# Working with user data folders
+# Manage user data folders
 <!-- # old title: Manage the user data folder -->
 
 WebView2 applications interact with user data folders to store browser data, such as cookies, permissions, and cached resources.  Each instance of a WebView2 control is associated with a user data folder.  Each user data folder is unique to a user.

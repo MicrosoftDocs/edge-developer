@@ -311,7 +311,7 @@ Congratulations, you built your first WebView2 app!
 ## See also
 
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
-* [Working with user data folders](../concepts/user-data-folder.md)
+* [Manage user data folders](../concepts/user-data-folder.md)
 * [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples)
 * [API Reference for WebView2 Win32 C++](/microsoft-edge/webview2/reference/win32)
 * [WebView2 API reference](/microsoft-edge/webview2/reference/win32) - API Reference for each platform.

@@ -312,7 +312,7 @@ Congratulations, you built your first WebView2 app!
 
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 * [Introduction to Microsoft Edge WebView2](../index.md) - overview of features.
-* [Working with user data folders](../concepts/user-data-folder.md)
+* [Manage user data folders](../concepts/user-data-folder.md)
 * [API reference](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md).
 
 

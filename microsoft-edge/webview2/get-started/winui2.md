@@ -183,7 +183,7 @@ Now you can change the content of the WebView2 control to add your own content.
 ## See also
 
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
-* [Working with user data folders](../concepts/user-data-folder.md)
+* [Manage user data folders](../concepts/user-data-folder.md)
 * WinRT API Reference for WinUI 2/UWP
    * [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
    * [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)

@@ -271,7 +271,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 
 This scenario shows how to run JavaScript on the web side.  In this approach, the host app specifies the JavaScript code to run, and passes the code to the web through `ExecuteScriptAsync`.  The `ExecuteScriptAsync` function returns the JavaScript result back to the `ExecuteScript` caller.
 
-For more information, see [Use JavaScript in WebView2 apps](javascript.md).
+For more information, see [Use JavaScript in WebView (Run JavaScript from native code)](javascript.md).
 
 
 <!-- ====================================================================== -->

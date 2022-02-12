@@ -1,5 +1,5 @@
 ---
-title: Debug WebView2 apps with Microsoft Visual Studio Code
+title: Debug WebView2 apps with Visual Studio Code
 description: How to debug WebView2 apps with Microsoft Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/11/2022
 ---
-# Debug WebView2 apps with Microsoft Visual Studio Code
+# Debug WebView2 apps with Visual Studio Code
 
 Use Microsoft Visual Studio Code to debug scripts that run in WebView2 controls.  <!-- Make sure you're using Visual Studio Code version [insert build here] or later. -->
 

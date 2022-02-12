@@ -396,7 +396,7 @@ Congratulations, you built your first WebView2 app!
 ## See also
 
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
-* [Working with user data folders](../concepts/user-data-folder.md)
+* [Manage user data folders](../concepts/user-data-folder.md)
 * [API Reference: Microsoft.Web.WebView2.WinForms Namespace](/dotnet/api/microsoft.web.webview2.winforms)
 
 

@@ -1,5 +1,5 @@
 ---
-title: Use the Chrome DevTools Protocol in WebView2
+title: Use the Chrome DevTools Protocol in WebView2 apps
 description: How to use the Chrome DevTools Protocol in your WebView2 app by using the Microsoft Edge WebView2 Chrome DevTools Protocol NuGet package.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
 ---
-# Use the Chrome DevTools Protocol in WebView2
+# Use the Chrome DevTools Protocol in WebView2 apps
 
 The [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol) provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
 

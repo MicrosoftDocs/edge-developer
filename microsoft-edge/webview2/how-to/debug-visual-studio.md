@@ -1,5 +1,5 @@
 ---
-title: Debug WebView2 apps with Microsoft Visual Studio
+title: Debug WebView2 apps with Visual Studio
 description: How to debug WebView2 apps with Microsoft Visual Studio.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/11/2022
 ---
-# Debug WebView2 apps with Microsoft Visual Studio
+# Debug WebView2 apps with Visual Studio
 
 Microsoft Visual Studio provides various debugging tools for web and native code in WebView2 apps, to debug web and native code in Win32 apps or Office Add-ins.  This article focuses on debugging WebView controls.  The other methods of debugging in Visual Studio are available, as well.
 
