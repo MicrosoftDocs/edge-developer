@@ -36,6 +36,72 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
+## 1.0.1108.44
+
+Release Date: February 6, 2022
+
+[NuGet package for WebView2 SDK 1.0.1108.44](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1108.44)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 98.0.1108.44 or higher.
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*  The [AdditionalAllowedFrameAncestors API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs2?view=webview2-1.0.1108.44&preserve-view=true) that enable developers to provide additional allowed frame ancestors.
+*  The [ProcessInfo APIs](/microsoft-edge/webview2/reference/win32/icorewebview2processinfo?view=webview2-1.0.1108.44&preserve-view=true) provide more information about WebView2 processes and process collections.
+*  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame2?view=webview2-1.0.1108.44&preserve-view=true&preserve-view=true):
+   *  `add_NavigationStarting`
+   *  `remove_NavigationStarting`
+   *  `add_ContentLoading`
+   *  `remove_ContentLoading`
+   *  `add_NavigationCompleted`
+   *  `remove_NavigationCompleted`
+   *  `add_DOMContentLoaded`
+   *  `remove_DOMContentLoaded`
+   *  `ExecuteScript`
+   *  `PostWebMessageAsJson`
+   *  `PostWebMessageAsString`
+   *  `add_WebMessageReceived`
+   *  `remove_WebMessageReceived`
+
+
+<!-- ====================================================================== -->
+## 1.0.1158-prerelease
+
+Release Date: February 6, 2022
+
+[NuGet package for WebView2 SDK 1.0.1158-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1158-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 100.0.1158.0 or higher.
+
+### General
+
+#### Experimental Features
+
+*  Added [Status bar API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental13?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide info when webiew is showing status message, URL, or empty string.
+*  Added [CDP API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental14?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide possibility for developers have multiple `DevToolsProtocol` targets in WebView.
+
+#### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:
+
+*  Rename ICoreWebView2ClientCertificate to [ICoreWebView2Certificate](/microsoft-edge/webview2/reference/win32/icorewebview2certificate?view=webview2-1.0.1158-prerelease&preserve-view=true).
+*  New [APIs for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1158-prerelease&preserve-view=true):
+   *  `add_PermissionRequested`
+   *  `remove_PermissionRequested`
+
+#### Bug Fixes
+
+*  Fixed an issue causing erroneous warnings in the Visual Studio Error List window.  ([Issue #1722](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1722))
+*  Fixed a bug where NewWindowRequested was not getting raised when opening PDF downloads.
+*  Resolved a bug in WinUI3 where select dropdowns would not show up.  ([Issue #1693](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1693))
+*  Added the ability to toggle WebView2 mute state, even when there is no audio playing.
+
+
+<!-- ====================================================================== -->
 ## 1.0.1072.54
 
 Release Date: January 13, 2022
@@ -49,14 +115,15 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 #### Promotions
 
 The following items are now stable:
+
 *  The [Media API](/microsoft-edge/webview2/reference/win32/icorewebview2_8?view=webview2-1.0.1072.54&preserve-view=true#summary) that enables developers to mute/unmute media within WebView2.
 *  The [Download Positioning and Anchoring API](/microsoft-edge/webview2/reference/win32/icorewebview2_9?view=webview2-1.0.1072.54&preserve-view=true) enables:
    *  Changing the position of the download dialog, relative to the WebView2 bounds.  You can anchor the download dialog to the **Download** button, instead of the default position, which is the top-right corner.
    *  Programmatically open and close the default download dialog.
    *  Making changes in response to the dialog opening and closing.
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## 1.0.1133-prerelease
 
 Release Date: January 13, 2022
@@ -101,7 +168,6 @@ handled. ([Issue #1343](https://github.com/MicrosoftEdge/WebView2Feedback/issues
 
 
 <!-- ====================================================================== -->
-
 ## 1.0.1083-prerelease
 
 Release Date: November 29, 2021

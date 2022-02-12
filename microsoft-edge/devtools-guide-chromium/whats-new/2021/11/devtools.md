@@ -129,11 +129,11 @@ To learn more about how DevTools integrates with Visual Studio Code, see [Openin
 
 In earlier versions of Microsoft Edge DevTools, selecting the triangle icon next to a dropdown menu didn't display the dropdown menu.  To open the dropdown menu, you had to click the currently selected menu item to the left of the triangle icon, such as **No throttling**:
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-didnt-open-dropdown.png" alt-text="Clicking a dropdown's triangle icon didn't open the dropdown.":::
+:::image type="content" source="../../media/2021/11/clicking-triangle-didnt-open-dropdown.png" alt-text="Clicking a dropdown menu's triangle icon didn't open the dropdown menu.":::
 
 In Microsoft Edge version 96, this issue has been fixed.  Selecting the triangle icon for any dropdown menu in DevTools now opens the dropdown menu:
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-opens-dropdown.png" alt-text="Clicking the triangle icon now opens the dropdown.":::
+:::image type="content" source="../../media/2021/11/clicking-triangle-opens-dropdown.png" alt-text="Clicking the triangle icon now opens the dropdown menu.":::
 
 <!-- This fix applies to various tools, including:
 * Performance

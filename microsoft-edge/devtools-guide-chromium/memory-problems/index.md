@@ -124,6 +124,8 @@ The key thing here is the fact that the JS heap ends higher than it began (the "
 <!-- ====================================================================== -->
 ## Discover detached DOM tree memory leaks with Heap Snapshots
 
+<!-- do not change the heading wording; that would break the link from the DevTools > Memory tool > Help-mode tooltip to this section; would default to top of article instead of this section anchor -->
+
 A DOM node is only garbage collected when there are no references to the node from either the DOM tree or JavaScript code running on the page.  A node is said to be "detached" when it is removed from the DOM tree but some JavaScript still references it.  Detached DOM nodes are a common cause of memory leaks.
 
 This section teaches you how to use the heap profilers in DevTools to identify detached nodes.
