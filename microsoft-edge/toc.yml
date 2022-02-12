@@ -781,37 +781,34 @@
       items:
         - name: Introduction to Microsoft Edge WebView2
           href: webview2/index.md
-          displayName:  # add alt lookup terms
-
-      # - name: Set up dev tools and create the initial app  # specific title
+          displayName:  # add alt lookup words, comma-delimited
+# -----------------------------------------------------------------------------
         - name: "Tutorial: Create a WebView2 app"
           items:
-            - name: Get started with WebView2  # platform-independent
+            - name: Get started with WebView2
               href: webview2/get-started/get-started.md
-              displayName:  # add alt lookup terms
+              displayName:
 
             - name: Win32
               href: webview2/get-started/win32.md
-              displayName:  # add alt lookup terms
+              displayName:
 
             - name: WinForms
               href: webview2/get-started/winforms.md
-              displayName:  # add alt lookup terms
+              displayName:
 
             - name: WinUI 2 (UWP, public preview)
               href: webview2/get-started/winui2.md
-              displayName:  # add alt lookup terms
+              displayName:
 
             - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
-              displayName:  # add alt lookup terms
+              displayName:
 
             - name: WPF
               href: webview2/get-started/wpf.md
-              displayName:  # add alt lookup terms
-
-
-# ========================================================
+              displayName:
+# -----------------------------------------------------------------------------
         - name: Fundamentals
           items:
             - name: Sample Code
@@ -819,132 +816,146 @@
 
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: Debugging web code
-              href: webview2/how-to/debug.md
-              displayName:  # add alt lookup terms
+            - name: Debug WebView2 apps
+              items: 
+
+                - name: Debug WebView2 apps
+                  href: webview2/how-to/debug.md
+                  displayName:
+
+                - name: Debug WebView2 apps using Microsoft Edge DevTools
+                  href: webview2/how-to/debug-devtools.md
+                  displayName:
+
+                - name: Debug WebView2 apps using Microsoft Visual Studio Code
+                  href: webview2/how-to/debug-devtools-visual-studio-code.md
+                  displayName:
+
+                - name: Debug WebView2 apps using Microsoft Visual Studio
+                  href: webview2/how-to/debug-devtools-visual-studio.md
+                  displayName:
 
             - name: Navigation events
               href: webview2/concepts/navigation-events.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: Running JavaScript from native code
+            - name: Calling JavaScript from native code
               href: webview2/how-to/javascript.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: JavaScript interop # with native code?
+            - name: Calling native code from JavaScript
               href: webview2/how-to/communicate-btwn-web-native.md
-              displayName: Embed web content into native applications  # old title
+              displayName: embed web content
 
-            - name: WebView2 SDK versions
+            - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: Testing upcoming APIs and features
+            - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
-              displayName:  # add alt lookup terms
-
+              displayName:
+# -----------------------------------------------------------------------------
         - name: Advanced Topics and Best Practices
           items:
             - name: Development best practices
               href: webview2/concepts/developer-guide.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: Security best practices
+            - name: Develop secure apps
               href: webview2/concepts/security.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-#           - name: Basic authentication for WebView2 apps  # forthcoming, where to put?
+#           - name: Basic authentication for WebView2 apps
 #             href: webview2/concepts/basic-authentication.md
-#             displayName:  # add alt lookup terms
+#             displayName:
 
-            - name: User data folder best practices
+            - name: Working with user data folders
               href: webview2/concepts/user-data-folder.md
-              displayName:  # add alt lookup terms
+              displayName:
 
             - name: Process model
               href: webview2/concepts/process-model.md
-              displayName:  # add alt lookup terms
+              displayName:
 
             - name: Threading model
               href: webview2/concepts/threading-model.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: Using Chrome DevTools Protocol in WebView2
+            - name: Use the Chrome DevTools Protocol in WebView2
               href: webview2/how-to/chromium-devtools-protocol.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: Automating and testing with Microsoft Edge Driver
+            - name: Automate and test with Microsoft Edge Driver
               href: webview2/how-to/webdriver.md
-              displayName:  # add alt lookup terms
-
+              displayName:
+# -----------------------------------------------------------------------------
         - name: Deployment and Distribution
           items:
-            - name: Enterprise management of WebView2 runtimes  # Runtimes?
+            - name: Enterprise management of WebView2 Runtimes
               href: webview2/concepts/enterprise.md
-              displayName:  # add alt lookup terms
+              displayName:
 
-            - name: Distributing WebView2 in a single-file application
+            - name: Distribute WebView2 in a single-file application
               href: webview2/how-to/static.md
               displayName: Statically link the WebView2 loader library  # old title
 
-            - name: Distributing your app and the WebView2 Runtime
+            - name: Distribute your app and the WebView2 Runtime
               href: webview2/concepts/distribution.md
-              displayName:  # add alt lookup terms
-
+              displayName:
+# -----------------------------------------------------------------------------
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
-          displayName:  # add alt lookup terms
+          displayName:
 
         - name: WebView2 Roadmap
           href: webview2/roadmap.md
-          displayName:  # add alt lookup terms
+          displayName:
 
         - name: WebView2 Reference
           items:
             - name: WebView2 API Reference
               href: webview2/webview2-api-reference.md
-              displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
+              displayName: functions, methods  # list relevant platforms
 
             - name: Win32 C++
               items:
                 - name: Win32 C++ WebView2 API conventions
                   href: webview2/concepts/win32-api-conventions.md
-                  displayName:  # add alt lookup terms
+                  displayName:
 
                 - name: Win32 C++ API Reference
                   href: /microsoft-edge/webview2/reference/win32/index
-                  displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
+                  displayName: functions, methods
 
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /dotnet/api/microsoft.web.webview2.core
-                  displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
+                  displayName: functions, methods
 
                 - name: Microsoft.Web.WebView2.Wpf
                   href: /dotnet/api/microsoft.web.webview2.wpf
-                  displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
+                  displayName: functions, methods
 
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
-                  displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
+                  displayName: functions, methods
 
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
-                  displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
+                  displayName: functions, methods
 
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
-                  displayName: functions, methods  # add alt lookup terms: which WebView2 platforms is this API Ref for?
+                  displayName: functions, methods
 
         - name: Contact the WebView2 Team
           href: webview2/contact.md
-          displayName:  # add alt lookup terms
-
+          displayName:
 # / WebView2 articles
 # =============================================================================
     - name: Test and automation

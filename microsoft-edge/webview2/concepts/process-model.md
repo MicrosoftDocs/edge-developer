@@ -42,7 +42,7 @@ The logic that controls when these extra processes are created depends on the Ch
 
 All processes in a WebView2 Runtime processes collection are tied to the browser process, which in turn is associated with a single user data folder.  If an application makes use of multiple user data folders, a collection of WebView2 Runtime processes will be created for each of these user data folders.
 
-A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [User data folder best practices](./user-data-folder.md).
+A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Working with user data folders](user-data-folder.md).
 
 :::image type="content" source="../media/process-model-2.png" alt-text="Process 2." lightbox="../media/process-model-2.png":::
 

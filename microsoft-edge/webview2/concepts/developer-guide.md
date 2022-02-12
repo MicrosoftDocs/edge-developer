@@ -69,7 +69,7 @@ When a new version of the runtime is available, your app can automatically take 
 <!-- ====================================================================== -->
 ## Manage the lifetime of the user data folder
 
-WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  See [User data folder best practices](../concepts/user-data-folder.md).
+WebView2 apps create a user data folder to store data such as cookies, credentials, and permissions.  After creating the folder, your app is responsible for managing the lifetime of the user data folder.  For example, your app must do cleanup when the app is uninstalled.  See [Working with user data folders](../concepts/user-data-folder.md).
 
 
 <!-- ====================================================================== -->
@@ -99,4 +99,4 @@ To prevent such a memory leak:
 <!-- ====================================================================== -->
 ## Follow recommended WebView2 security best practices
 
-For any WebView2 app, make sure to follow our recommended WebView2 [Security best practices](../concepts/security.md).
+For any WebView2 app, make sure to follow our recommended WebView2 [Develop secure apps](../concepts/security.md).

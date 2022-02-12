@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WinUI 2 (UWP, public preview)
 
-This article covers how to set up your development tools and create an initial WebView2 app for WinUI 2 (UWP), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections.
+This article covers how to set up your development tools and create an initial WebView2 app for WinUI 2 (UWP), and learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
@@ -182,9 +182,12 @@ Now you can change the content of the WebView2 control to add your own content.
 <!-- ====================================================================== -->
 ## See also
 
-*  Learn about the main features of [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com.
-* [User data folder best practices](../concepts/user-data-folder.md)
-* [WebView2 API Reference](../webview2-api-reference.md)<!--todo: add a more direct link to the platform-appropriate Ref site-->
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+* [Working with user data folders](../concepts/user-data-folder.md)
+* WinRT API Reference for WinUI 2/UWP
+   * [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
+   * [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
+* [WebView2 API Reference](../webview2-api-reference.md) - each platform's API Reference
 
 
 <!-- ====================================================================== -->
@@ -192,5 +195,5 @@ Now you can change the content of the WebView2 control to add your own content.
 
 * [Development best practices](../concepts/developer-guide.md)
 * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.

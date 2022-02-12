@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WPF apps
 
-This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections.
+This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
@@ -433,15 +433,16 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-*  Learn about the main features of [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com.
-* [User data folder best practices](../concepts/user-data-folder.md)
-* [API reference](/dotnet/api/microsoft.web.webview2.wpf)
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+* [Working with user data folders](../concepts/user-data-folder.md)
+* [API reference: WebView2 class in WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+* [API reference: WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf)
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
 * [Development best practices](../concepts/developer-guide.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-* [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+* [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) - demonstrate using WebView2 features and APIs.

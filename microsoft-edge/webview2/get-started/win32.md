@@ -10,7 +10,7 @@ ms.date: 12/13/2021
 ---
 # Get started with WebView2 in Win32 apps
 
-This article covers how to set up your development tools and create an initial WebView2 app for Win32, and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections.
+This article covers how to set up your development tools and create an initial WebView2 app for Win32, and learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
@@ -310,10 +310,11 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-*  Learn about the main features of [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com.
-* [User data folder best practices](../concepts/user-data-folder.md)
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+* [Working with user data folders](../concepts/user-data-folder.md)
 * [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples)
-* [Reference (WebView2 Win32 C++)](/microsoft-edge/webview2/reference/win32)
+* [API Reference for WebView2 Win32 C++](/microsoft-edge/webview2/reference/win32)
+* [WebView2 API reference](/microsoft-edge/webview2/reference/win32) - API Reference for each platform.
 
 
 <!-- ====================================================================== -->
@@ -325,4 +326,3 @@ To learn more about WebView2 functions not covered in this article, see the foll
 *  [Development best practices](../concepts/developer-guide.md)
 *  [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
 *  [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
-*  [WebView2 API reference](/microsoft-edge/webview2/reference/win32)

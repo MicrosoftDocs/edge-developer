@@ -10,7 +10,7 @@ ms.date: 01/24/2022
 ---
 # Get started with WebView2
 
-These "Get started" articles cover how to set up your development tools and create an initial WebView2 app, and learn about WebView2 concepts along the way.  As an initial step, skim some of these articles and read the conceptual sections - no coding required.
+These "Get started" articles cover how to set up your development tools and create an initial WebView2 app, and learn about WebView2 concepts along the way.
 
 Prerequisite: To build and test your app using the WebView2 control, you need to have the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) installed.
 
@@ -26,5 +26,5 @@ Get started using WebView2 for your platform:
 <!-- ====================================================================== -->
 ## See also
 
-*  Learn about the main features of [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com.
-* [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) - This repository contains samples that demonstrate all of the WebView2 SDK features and API usage patterns.  As more features are added to the WebView2 SDK, the sample apps will be updated.<!-- make sure this statement is in the repo readme, then possibly remove it from here -->
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2, at developer.microsoft.com.
+* [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) - demonstrate using WebView2 features and APIs.

@@ -10,7 +10,7 @@ ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinForms apps
 
-This article covers how to set up your development tools and create an initial WebView2 app for WinForms, and learn about WebView2 concepts along the way.  As an initial step, skim this article and read the conceptual sections.
+This article covers how to set up your development tools and create an initial WebView2 app for WinForms, and learn about WebView2 concepts along the way.
 
 
 <!-- ====================================================================== -->
@@ -395,9 +395,9 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-* Learn about the main features of [WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - developer.microsoft.com.
-* [User data folder best practices](../concepts/user-data-folder.md)
-* [API reference](/dotnet/api/microsoft.web.webview2.winforms)
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+* [Working with user data folders](../concepts/user-data-folder.md)
+* [API Reference: Microsoft.Web.WebView2.WinForms Namespace](/dotnet/api/microsoft.web.webview2.winforms)
 
 
 <!-- ====================================================================== -->
@@ -405,5 +405,5 @@ Congratulations, you built your first WebView2 app!
 
 * [Development best practices](../concepts/developer-guide.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - A comprehensive example of WebView2 capabilities.
-* [See also](../index.md#see-also) - Conceptual and how-to articles about building and deploying WebView2 apps.
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2)
