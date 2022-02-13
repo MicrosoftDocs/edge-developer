@@ -240,11 +240,11 @@ This step is only needed for older versions of Visual Studio, so it's likely you
 
    Here's a Visual Studio 2017 screenshot showing some valid settings:
 
-   :::image type="content" source="../media/tool-version.png" alt-text="Tool version." lightbox="../media/tool-version.png":::
+   ![Tool version.](../media/tool-version.png)
 
    The following is a Visual Studio 2022 screenshot; the values were already correct, so no change was required:
 
-   :::image type="content" source="../media/tool-version-2022.png" alt-text="Tool version." lightbox="../media/tool-version-2022.png":::
+   ![Tool version.](../media/tool-version-2022.png)
 
 Visual Studio might display errors, because your project is missing the WebView2 header file.  The errors resolve after completing the next section, "Install the WebView2 SDK".
 
@@ -283,7 +283,7 @@ Now install the above tools from within Visual Studio, by following the steps be
 
 1. In **Solution Explorer**, right-click the **WebView2GettingStarted** project node (not the **WebView2GettingStarted** solution node) and then select **Manage NuGet Packages**.
 
-   :::image type="content" source="../media/manage-nuget-packages.png" alt-text="Manage NuGet packages." lightbox="../media/manage-nuget-packages.png":::
+   ![Manage NuGet packages.](../media/manage-nuget-packages.png)
 
 1. In the **NuGet** window, click the **Browse** tab.
 
@@ -293,7 +293,7 @@ Now install the above tools from within Visual Studio, by following the steps be
    Microsoft.Windows.ImplementationLibrary
    ```
 
-   :::image type="content" source="../media/wil.png" alt-text="Selecting Microsoft.Windows.ImplementationLibrary in the Visual Studio NuGet installer page." lightbox="../media/wil.png":::
+   ![Selecting Microsoft.Windows.ImplementationLibrary in the Visual Studio NuGet installer page.](../media/wil.png)
 
    If you don't see **Microsoft.Windows.ImplementationLibrary** listed, check the NuGet source location, as follows:
 
@@ -333,7 +333,7 @@ Install the WebView2 SDK, as follows:
 
 1. In the right-hand side window, click **Install** (or **Update**).  NuGet downloads the WebView2 SDK to your machine.
 
-   :::image type="content" source="../media/nuget.png" alt-text="NuGet Package Manager." lightbox="../media/nuget.png":::
+   ![NuGet Package Manager.](../media/nuget.png)
 
 1. Close the **NuGet Package Manager** tab.
 
@@ -390,7 +390,7 @@ Continue with the steps below.
 
    The sample app opens and displays an empty window:
 
-   :::image type="content" source="../media/empty-app.png" alt-text="The sample app displays an empty window." lightbox="../media/empty-app.png":::
+   ![The sample app displays an empty window.](../media/empty-app.png)
 
 You now have a running, empty Win32 desktop app with potential WebView2 capabilities.
 
@@ -479,13 +479,14 @@ Now to do the above, in the callback, you'll:
 
    An alert dialog from Bing opens, against a blank background window:
 
-   :::image type="content" source="../media/empty-app-with-bing-dialog.png" alt-text="The sample app displays an initially empty window with a Bing dialog box." lightbox="../media/empty-app.png":::
+   ![The sample app displays an initially empty window with a Bing dialog box.](../media/empty-app-with-bing-dialog.png)
 
 1. Click the **OK** button to close the Bing dialog box.
 
-   Now the WebView2 control is filled by the Bing page content:
+   Now (because the remaining code below is already filled in, from the repo) the WebView2 control is filled by the Bing page content:
 
-   :::image type="content" source="../media/bing-window.png" alt-text="Bing window." lightbox="../media/bing-window.png":::
+   <!-- instance 1 of bing-window.png - the png with Bing content is really originally not intended for here, but for end of tut -->
+   ![Bing window.](../media/bing-window.png)
 
 You now have an app with WebView content.
 
@@ -505,7 +506,7 @@ In the previous step, we discussed navigating to URL by using the `ICoreWebView2
 
    If you want more information now, in a new window or tab, see [Navigation events for WebView2 apps](../concepts/navigation-events.md).
 
-:::image type="content" source="../media/navigation-events.png" alt-text="Navigation events." lightbox="../media/navigation-events.png":::
+![Navigation events.](../media/navigation-events.png)
 
 In error cases, one or more of the following events may occur, depending on whether the navigation continued to an error webpage:
 
@@ -647,11 +648,18 @@ As an example to understand the mechanism, the following steps occur when you tr
 
 1. Press **F5** to build and run the project.
 
-   The URL appears in a pop-up window before navigating to a webpage.  The sample app with a Webview2 control displays the Bing website, `http://www.bing.com`.  The sample app also displays an **OK** button.  Users click **OK** to continue to the URL.
+   The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button.
 
-   :::image type="content" source="../media/show-url.png" alt-text="The sample app displays the Bing website." lightbox="../media/show-url.png":::
-<!-- copy content of png from new png __ -->
-Congratulations, you built your first WebView2 app!
+   ![The sample app displays the Bing website.](../media/show-url.png)
+
+1. Click the **OK** button to dismiss the pop-window and continue to the URL.
+
+   The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
+
+   <!-- instance 2 of bing-window.png -->
+   ![The sample app displays the Bing website.](../media/bing-window.png)
+
+Congratulations, you built your first WebView2 app!  And your development environment is set up for WebView2 app development, to include the WebView2 control in your Win32 apps.  You've also had an introduction to WebView2 programming concepts.
 
 
 <!-- ====================================================================== -->
