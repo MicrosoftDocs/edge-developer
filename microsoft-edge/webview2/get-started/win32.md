@@ -293,11 +293,11 @@ Now install the above tools from within Visual Studio, by following the steps be
    Microsoft.Windows.ImplementationLibrary
    ```
 
-   Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio:
+   Selecting the **Microsoft.Windows.ImplementationLibrary** package in NuGet Package Manager in Visual Studio:
 
    ![Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio.](../media/wil.png)
 
-   To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.
+   To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.  Close the tab, to return.
 
    If you don't see **Microsoft.Windows.ImplementationLibrary** listed, check the NuGet source location, as follows:
 
@@ -339,7 +339,7 @@ Install the WebView2 SDK, as follows:
 
    ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio.](../media/nuget.png)
 
-   To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.
+   To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.  Close the tab, to return.
 
 1. Close the **NuGet Package Manager** tab.
 
