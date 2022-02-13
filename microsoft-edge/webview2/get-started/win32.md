@@ -22,14 +22,15 @@ This article covers how to set up your development tools and create an initial W
 
 *  **The WebView2 code has already been added:**
 
-   The code that you add in this tutorial's steps, has already been added to the sample repo, by this Pull Request in the `WebView2Samples` repo: [Make Win32 Getting Started Guide a ready-to-build project](https://github.com/MicrosoftEdge/WebView2Samples/pull/101).  This situation is clearly explained above each code block, so this tutorial should be smooth reading.
+   The code that you add in this tutorial's steps, has already been added to the sample repo.  This situation is clearly explained above each code block, so this tutorial should be smooth reading.
+   <!-- the code was added by a Pull Request in the `WebView2Samples` repo: [Make Win32 Getting Started Guide a ready-to-build project](https://github.com/MicrosoftEdge/WebView2Samples/pull/101)-->
 
    This means that you now skip figuring out where to paste the code blocks, and skip pasting them.  You now can speed through this article, focus on setting up your WebView2 app development environment, focus on understanding, and run the code right away.  The sample code is already completed per this tutorial and ready to run.
 
 
 *  **Rewritten and clarified:**
 
-   This article has been greatly rewritten for clarity.  All action steps are now spelled out explicitly, alternating with conceptual explanations, with clear links to overview information - off to the side - about the several development tools and frameworks used.
+   This article has been rewritten for clarity.  All action steps are now spelled out explicitly, alternating with conceptual explanations, with clear links to overview information - off to the side - about the several development tools and frameworks used.
 
 
 *  **Visual Studio 2022 screenshots:**
