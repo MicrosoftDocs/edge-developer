@@ -287,13 +287,15 @@ Now install the above tools from within Visual Studio, by following the steps be
 
 1. In the **NuGet** window, click the **Browse** tab.
 
-1. Paste or type the following into the search bar in the upper left, and then select **Microsoft.Windows.ImplementationLibrary**.
+1. In the search bar in the upper left, type `Microsoft.Windows.ImplementationLibrary`.  Or, copy and paste the single-line code block below.  Then select **Microsoft.Windows.ImplementationLibrary**.
 
    ```
    Microsoft.Windows.ImplementationLibrary
    ```
 
-   ![Selecting Microsoft.Windows.ImplementationLibrary in the Visual Studio NuGet installer page.](../media/wil.png)
+   ![Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio.](../media/wil.png)
+
+   To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.
 
    If you don't see **Microsoft.Windows.ImplementationLibrary** listed, check the NuGet source location, as follows:
 
@@ -325,7 +327,7 @@ Install the WebView2 SDK, as follows:
 
 1. On the right of the search bar, clear the **Include prerelease** checkbox.  We won't install a pre-release SDK version at this time.
 
-1. Paste or type the following into the search bar in the upper left, and then select **Microsoft.Web.WebView2**.
+1. In the search bar in the upper left, type `Microsoft.Web.WebView2`.  Or, copy and paste the single-line code block below.  Then select **Microsoft.Web.WebView2**.
 
    ```
    Microsoft.Web.WebView2
@@ -333,7 +335,9 @@ Install the WebView2 SDK, as follows:
 
 1. In the right-hand side window, click **Install** (or **Update**).  NuGet downloads the WebView2 SDK to your machine.
 
-   ![NuGet Package Manager.](../media/nuget.png)
+   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio.](../media/nuget.png)
+
+   To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.
 
 1. Close the **NuGet Package Manager** tab.
 
@@ -365,7 +369,7 @@ Now we can add WebView2 features to the app.
    // include WebView2 header
    #include "WebView2.h"
    ```
-   
+
    The `include` section should look like this:
 
    ```cpp
@@ -432,7 +436,7 @@ Now to do the above, in the callback, you'll:
    CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
       Callback<ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler>(
          [hWnd](HRESULT result, ICoreWebView2Environment* env) -> HRESULT {
-   
+
                // Create a CoreWebView2Controller and get the associated CoreWebView2 whose parent is the main window hWnd
                env->CreateCoreWebView2Controller(hWnd, Callback<ICoreWebView2CreateCoreWebView2ControllerCompletedHandler>(
                   [hWnd](HRESULT result, ICoreWebView2Controller* controller) -> HRESULT {
@@ -440,7 +444,7 @@ Now to do the above, in the callback, you'll:
                      webviewController = controller;
                      webviewController->get_CoreWebView2(&webviewWindow);
                   }
-   
+
                   // Add a few settings for the webview
                   // The demo step is redundant since the values are the default settings
                   ICoreWebView2Settings* Settings;
@@ -448,21 +452,21 @@ Now to do the above, in the callback, you'll:
                   Settings->put_IsScriptEnabled(TRUE);
                   Settings->put_AreDefaultScriptDialogsEnabled(TRUE);
                   Settings->put_IsWebMessageEnabled(TRUE);
-   
+
                   // Resize the WebView2 control to fit the bounds of the parent window
                   RECT bounds;
                   GetClientRect(hWnd, &bounds);
                   webviewController->put_Bounds(bounds);
-   
+
                   // Schedule an async task to navigate to Bing
                   webviewWindow->Navigate(L"https://www.bing.com/");
-   
+
                   // 4 - Navigation events
-   
+
                   // 5 - Scripting
-   
+
                   // 6 - Communication between host and web content
-   
+
                   return S_OK;
                }).Get());
          return S_OK;
@@ -634,7 +638,7 @@ As an example to understand the mechanism, the following steps occur when you tr
          CoTaskMemFree(message);
          return S_OK;
       }).Get(), &token);
-   
+
    // Schedule an async task to add initialization script that
    // 1) Add an listener to print message from the host
    // 2) Post document URL to the host
