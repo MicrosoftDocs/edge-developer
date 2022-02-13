@@ -15,7 +15,7 @@ This article covers how to set up your development tools and create an initial W
 
 **Leverages sample code from a standard C++ Win32 app:**
 
-To keep this tutorial focused on WebView-specific coding, we start from an existing Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  We'll add WebView2 features - actually, the features have already been added, but follow along in the setup and explanation steps.
+To keep this tutorial focused on WebView-specific coding, we start from an existing Microsoft Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  We'll add WebView2 features - actually, the features have already been added, but follow along in the setup and explanation steps.
 
 The existing Visual Studio project we'll start with is part of the sample code from a standard C++ Win32 desktop application.  For information about the underlying, standard Win32 app sample, in a new window or tab, see [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp).
 
@@ -29,7 +29,7 @@ This means that you now skip figuring out where to paste the code blocks, and sk
 
 **Rewritten and clarified:**
 
-This article has been greatly rewritten for clarity.  All action steps are now spelled out explicitly, alternating with conceptual explanations, with clear links to overview information  —<!--emdash--> off to the side  —<!--emdash--> about the several development tools and frameworks used.
+This article has been greatly rewritten for clarity.  All action steps are now spelled out explicitly, alternating with conceptual explanations, with clear links to overview information - off to the side - about the several development tools and frameworks used.
 
 
 **Visual Studio 2022 screenshots:**
@@ -51,7 +51,7 @@ First, install the following development software.
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com) 2015 or later (such as Visual Studio Professional 2022), with **C++ support** installed.
 
-   This tutorial doesn't work with Microsoft Visual Studio Code; this tutorial is designed to use Microsoft Visual Studio.
+   **Important:** This tutorial doesn't work with Microsoft **Visual Studio Code**; this tutorial is designed to use Microsoft **Visual Studio**.
 
    If you are installing Visual Studio 2022, you can accept the defaults for now; you can click **Install**, and decline installing the Workloads at this time.
 
@@ -123,9 +123,11 @@ If you want to use Visual Studio to clone the GitHub repo to your local drive:
 
 1. In Visual Studio, select **File** > **Clone repository**.
 
-1. Enter the URL that you copied from the GitHub repo.  You can create a general-purpose root `git` or `github` folder in a writeable location, select that directory, so that the repo will be cloned there, as a new directory.
+1. Enter the URL that you copied from the GitHub repo.
 
-   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\WebView2Samples`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
+1. From within the same dialog box, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
+
+   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
 
 You've cloned the repo to your local drive.  Skip to the next major section below.
 
@@ -138,9 +140,11 @@ If you want to use GitHub Desktop to clone the GitHub repo to your local drive:
 
 1. In GitHub Desktop, select **File** > **Clone repository**.
 
-1. In Visual Studio or GitHub Desktop, enter the URL that you copied from the GitHub repo.  You can create a general-purpose root `git` or `github` folder in a writeable location, select that directory, so that the repo will be cloned there, as a new directory.
+1. In Visual Studio or GitHub Desktop, enter the URL that you copied from the GitHub repo.
 
-   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\WebView2Samples`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
+1. From within the same dialog box, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
+
+   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
 
 You've cloned the repo to your local drive.  Skip to the next major section below.
 
@@ -171,9 +175,7 @@ You've cloned the repo to your local drive.  Continue with the steps below.
 
 You start with a basic desktop project that contains a single main window.  We'll start with an existing app project from the **WebView2Samples** repo, which you cloned from GitHub in the previous step.
 
-This tutorial doesn't work with Microsoft Visual Studio Code; this tutorial is designed to use Microsoft Visual Studio.
-
-1. Open Visual Studio.
+1. Open Visual Studio (not Visual Studio Code).
 
 1. Open `WebView2GettingStarted.sln`, which is located at the path: `<your repo directory>/WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`.
 
@@ -265,9 +267,9 @@ We didn't do this tooling setup step before cloning the solution, because this s
 
 First, learn a little about these tools, but don't download or install them yet:
 
-1. In a separate window or tab, briefly check out the [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo —<!--emdash--> but don't clone, download, or install it from there.
+1. In a separate window or tab, briefly check out the [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo - but don't clone, download, or install it from there.
 
-1. In a separate window or tab, briefly check out the the [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) —<!--emdash--> but don't clone, download, or install it from there.
+1. In a separate window or tab, briefly check out the the [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) - but don't clone, download, or install it from there.
 <!--clickable full link:
 https://docs.microsoft.com/en-us/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
 -->
