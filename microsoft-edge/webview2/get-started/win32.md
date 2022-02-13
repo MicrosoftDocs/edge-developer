@@ -244,7 +244,7 @@ This step is only needed for older versions of Visual Studio, so it's likely you
 
    The following is a Visual Studio 2022 screenshot; the values were already correct, so no change was required:
 
-   :::image type="content" source="../media/tool-version.png" alt-text="Tool version." lightbox="../media/tool-version-2022.png":::
+   :::image type="content" source="../media/tool-version-2022.png" alt-text="Tool version." lightbox="../media/tool-version-2022.png":::
 
 Visual Studio might display errors, because your project is missing the WebView2 header file.  The errors resolve after completing the next section, "Install the WebView2 SDK".
 
