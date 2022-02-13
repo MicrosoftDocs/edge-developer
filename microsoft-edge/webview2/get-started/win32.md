@@ -269,7 +269,7 @@ First, learn a little about these tools, but don't download or install them yet:
 
 1. In a separate window or tab, briefly check out the [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo - but don't clone, download, or install it from there.
 
-1. In a separate window or tab, briefly check out the the [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) - but don't clone, download, or install it from there.
+1. In a separate window or tab, briefly check out the [Windows Runtime C++ Template Library (WRL)](/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=vs-2019&preserve-view=true) - but don't clone, download, or install it from there.
 <!--clickable full link:
 https://docs.microsoft.com/en-us/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
 -->
@@ -349,7 +349,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Include the WebView2.h C++ header to your project, in HelloWebView.cpp
+## Step 6 - Include the WebView2.h C++ header in your project, in HelloWebView.cpp
 
 Above, we did the following:
 
