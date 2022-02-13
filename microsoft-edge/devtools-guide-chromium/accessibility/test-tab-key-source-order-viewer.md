@@ -27,7 +27,7 @@ The `Tab` key order on the demo page is:
 
 1. The blue links of the sidebar navigation menu: **Cats**, **Dogs**, **Sheep**, **Horses**, and then **Alpacas**.
 
-1. The donation textbox in the donation form.
+1. The donation text box in the donation form.
 
 1. The buttons in the top navigation bar: **Home**, **Adopt a pet**, **Donate**, **Jobs**, and then **About Us**.
 

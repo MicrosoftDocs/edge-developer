@@ -48,7 +48,7 @@ In this case, the HTML has a `label` element that doesn't work.
 <input type="submit" value="go">
 ```
 
-The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  A valid HTML label would put focus on the search input textbox when you click the **Search** label.
+The use of the `label` element here is wrong, because there's no connection between the `label` element and the `input` element.  A valid HTML label would put focus on the search input text box when you click the **Search** label.
 
 You can solve this problem by either nesting the `input` element in a `label` element, or adding a `for` attribute that points to an `id` attribute of the `input` element.  To view a correct connection, click the **Other** label on the donation form.
 
@@ -203,7 +203,7 @@ If you look to the bottom left of the screen or if you use a screen reader, you 
 
 :::image type="content" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus styling makes it impossible to know where you currently are in the page.  The only hint is the display of the link target in the bottom left of the window." lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
 
-Pressing `Tab` again takes you to the input textbox of the donation form.  However, you can't reach the **50**, **100** or **200** buttons above the input textbox.  Also, when focus is on that input textbox, pressing `Enter` doesn't submit the form.
+Pressing `Tab` again takes you to the input text box of the donation form.  However, you can't reach the **50**, **100** or **200** buttons above the input text box.  Also, when focus is on that input text box, pressing `Enter` doesn't submit the form.
 
 :::image type="content" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="The only keyboard-accessible element in the donation form is the entry text field." lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
 
@@ -268,7 +268,7 @@ If you click the **Donate** button, the **Inspect** tool takes you to the **Elem
 </div>
 ```
 
-The use of the `label` and `input` elements are valid, which result in the label working as intended and the `input` textbox is keyboard-accessible.  The rest of the form uses `div` elements, which are easy to style but have no semantic meaning.
+The use of the `label` and `input` elements are valid, which result in the label working as intended and the `input` text box is keyboard-accessible.  The rest of the form uses `div` elements, which are easy to style but have no semantic meaning.
 
 Next, let's analyze the form's JavaScript functionality. In **Elements**, click the **Event Listeners** tab to analyze the form's JavaScript.
 

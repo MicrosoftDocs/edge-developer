@@ -107,7 +107,7 @@ Previously, to change the display language in DevTools, you had to change the br
 
 :::image type="content" source="../../media/2021/07/settings-browser-ui-language.msft.png" alt-text="Changing the DevTools display language directly from DevTools **Settings**" lightbox="../../media/2021/07/settings-browser-ui-language.msft.png":::
 
-By default, DevTools matches your browser's display language.  See [Change DevTools language settings](../../../customize/localization.md).  To review the history of this feature in the Chromium open-source project, see Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756).
+By default, DevTools matches your browser's display language.  See [Change DevTools language settings](../../../customize/localization.md).  For the history of this feature in the Chromium open-source project, see Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756).
 
 
 <!-- ====================================================================== -->
@@ -149,7 +149,7 @@ You can also override User-Agent Client Hints for the current page by using the 
 
 :::image type="content" source="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png" alt-text="Defining User-Agent Client Hints for a custom device in the Network conditions tool." lightbox="../../media/2021/07/ua-client-hints-in-network-conditions.msft.png":::
 
-For more information about defining hints in the **Network conditions** tool, see [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).  To review the history of this feature in the Chromium open-source project, see Issue [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299).
+For more information about defining hints in the **Network conditions** tool, see [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).  For the history of this feature in the Chromium open-source project, see Issue [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299).
 
 
 <!-- ====================================================================== -->
@@ -166,7 +166,7 @@ Now in Microsoft Edge version 93, screen readers correctly announce the type and
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-For information about debugging Console errors, see [Fixing JavaScript errors that are reported in the Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, see [Find and fix problems using the Issues tool](../../../issues/index.md).  To review the history of this feature in the Chromium open-source project, see Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208).
+For information about debugging Console errors, see [Fixing JavaScript errors that are reported in the Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, see [Find and fix problems using the Issues tool](../../../issues/index.md).  For the history of this feature in the Chromium open-source project, see Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208).
 
 
 <!-- ====================================================================== -->

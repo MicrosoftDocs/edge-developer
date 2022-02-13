@@ -79,11 +79,11 @@ There's also another way to test for lack of connections between elements:
 
 1. In the **Elements** tool, select the `<label>Search</label>` element in the DOM tree.
 
-   On the webpage, notice that focus only appears on the **Search** label, and not the input textbox.  The correct implementation would put focus on the `search` input textbox and the **Search** label.
+   On the webpage, notice that focus only appears on the **Search** label, and not the input text box.  The correct implementation would put focus on the `search` input text box and the **Search** label.
 
 1. As an example of a correct connection, select the **Other** label on the donation form.
 
-   A focus-indicator box correctly appears on the input textbox next to the **Other** label, because there are matching `for` and `id` attribute values.
+   A focus-indicator box correctly appears on the input text box next to the **Other** label, because there are matching `for` and `id` attribute values.
 
 1. In the **Issues tool**, click the **Further reading** to learn more about the issue.  To open that link in a new tab, **Ctrl**+**click** the link on Windows/Linux, or **Command**+**click** the link on macOS.
 

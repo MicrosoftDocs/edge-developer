@@ -25,15 +25,15 @@ Watch JavaScript values in real-time with Live Expressions -->
 
 1. In DevTools, open the Console.
 
-1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** textbox.
+1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
 
-   A textbox opens:
+   A text box opens:
 
-   :::image type="content" source="../media/console-live-expressions-new.msft.png" alt-text="Click the New live expression button to open a textbox to type an expression." lightbox="../media/console-live-expressions-new.msft.png":::
+   :::image type="content" source="../media/console-live-expressions-new.msft.png" alt-text="Click the New live expression button to open a text box to type an expression." lightbox="../media/console-live-expressions-new.msft.png":::
 
-1. Enter the JavaScript expression `document.activeElement` into the textbox.  A **Live Expression** can be any valid JavaScript expression.
+1. Enter the JavaScript expression `document.activeElement` into the text box.  A **Live Expression** can be any valid JavaScript expression.
 
-1. To save the expression, press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** textbox.
+1. To save the expression, press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS).  Or, click outside of the **Live Expression** text box.
 
    The expression is now live, and displays `body` as the result:
 
@@ -53,7 +53,7 @@ Watch JavaScript values in real-time with Live Expressions -->
 
    :::image type="content" source="../media/console-live-expressions-document-active-element-nav-button.msft.png" alt-text="To change the value of the Live Expression, interact with different elements on the webpage." lightbox="../media/console-live-expressions-document-active-element-nav-button.msft.png":::
 
-1. To change the value again, open and click the **Search** textbox on the webpage.
+1. To change the value again, open and click the **Search** text box on the webpage.
 
    The Live Expression value changes to `input#site-search-input.autocomplete-input.input.is-small.focus-visible`:
 
@@ -107,9 +107,9 @@ To use Live Expressions to avoid excessive Console log messages:
 
    Enter two Live Expressions: the expression `x`, and the expression `y`, as follows:
 
-1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** textbox.
+1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
 
-1. Enter the JavaScript expression `x` into the textbox, and then click outside of the **Live Expression** textbox.  Repeat for `y`.  If needed, see [Add a new live expression](#add-a-new-live-expression), above.
+1. Enter the JavaScript expression `x` into the text box, and then click outside of the **Live Expression** text box.  Repeat for `y`.  If needed, see [Add a new live expression](#add-a-new-live-expression), above.
 
 1. Move your mouse around.
 

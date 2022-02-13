@@ -62,7 +62,7 @@ To try autocompletion while writing multi-part expressions:
 
 As with many other command-line environments, a history of the commands that you entered is available for reuse.  Press `Up Arrow` to display the commands that you entered previously.  
 
-Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a textbox.
+Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a text box.
 
 Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 

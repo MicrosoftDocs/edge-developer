@@ -1,5 +1,5 @@
 ---
-title: Why use Microsoft Edge DevTools?
+title: Reasons to use Microsoft Edge DevTools
 description: Reasons to use Microsoft Edge DevTools, including ease of use, customization, and unique tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 02/14/2022
 ---
-# Why use Microsoft Edge DevTools?
+# Reasons to use Microsoft Edge DevTools
 
 The Microsoft Edge DevTools team has added a lot of features based on feedback we received from the community to enhance the experience of Developers.  Here is a list of features that are unique to Microsoft Edge, available on Windows, Mac and Linux.
 

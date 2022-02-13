@@ -37,7 +37,7 @@ To emulate a user's selection of preferred color theme:
 
    :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The Donation Status section has contrast issues in light mode." lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
 
-1. In DevTools, select the **Elements** tool, and then press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.  The **Find** textbox appears, to search within the HTML DOM tree.
+1. In DevTools, select the **Elements** tool, and then press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
 
 1. Enter `scheme`.  The following CSS media queries are found, and the corresponding CSS files can now be updated.
 

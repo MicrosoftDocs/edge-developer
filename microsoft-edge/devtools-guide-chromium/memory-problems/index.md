@@ -162,7 +162,7 @@ To create a snapshot:
 
 1. After the snapshot is finished, select it from the left-hand panel (it's named **HEAP SNAPSHOTS**).
 
-1. In the **Class filter** textbox, type `Detached`, to search for detached DOM trees:
+1. In the **Class filter** text box, type `Detached`, to search for detached DOM trees:
 
    :::image type="content" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Filtering for detached nodes." lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
 

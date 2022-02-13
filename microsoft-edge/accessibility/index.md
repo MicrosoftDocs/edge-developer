@@ -8,7 +8,13 @@ ms.prod: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 ms.date: 04/16/2020
 ---
-# Accessibility overview
+# Accessibility in Microsoft Edge
+
+Development of your webpages, web apps, and web-enabled products is robustly supported through the extensive Accessibility features in Microsoft Edge and its tooling ecosystem.
+
+
+<!-- ====================================================================== -->
+## Overview of Accessibility
 
 > "The impact of disability is radically changed on the Web because the Web removes barriers to communication and interaction that many people face in the physical world." - [W3C Standards for Web Design and Applications: Accessibility](https://w3.org/standards/webdesign/accessibility)
 

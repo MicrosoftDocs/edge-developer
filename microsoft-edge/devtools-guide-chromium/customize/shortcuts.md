@@ -52,9 +52,9 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
    :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in Settings." lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
 
-1. To bind the shortcut keys to the action, ensure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind the shortcut keys to the action, ensure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
 
-1. To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
 
    :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
 
