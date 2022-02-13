@@ -317,7 +317,7 @@ Continue with the steps below.
 <!-- ====================================================================== -->
 ## Step 5 - Install the WebView2 SDK
 
-Next, you'll install the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications powered by Microsoft Edge.
+Next, you'll install the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
 We won't download the `Microsoft.Web.WebView2` SDK NuGet package from nuget.org.<!--https://www.nuget.org/packages/Microsoft.Web.WebView2-->  We didn't do this tooling setup step before cloning the Windows desktop sample app solution (which is part of the `WebView2Samples` repo).  Instead, we'll install the WebView2 SDK NuGet package through the **NuGet Package Manager** panel in Visual Studio.
 
@@ -383,6 +383,14 @@ Now we can add WebView2 features to the app.
    // include WebView2 header
    #include "WebView2.h"
    ```
+
+   Note the headers used:
+
+   *  `wrl.h` -  Windows Runtime C++ Template Library (WRL) - A template library that provides a low-level way to author and use Windows Runtime components.
+
+   * `wil/com.h` - Windows Implementation Libraries (WIL) - A header-only C++ library to make life easier for developers on Windows through readable, type-safe C++ interfaces for common Windows coding patterns.
+
+   *  `WebView2.h` - The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
 The source code file and project is ready to use and build against the WebView2 API.
 
