@@ -396,6 +396,8 @@ Continue with the steps below.
 
    ![The sample app displays an empty window.](../media/empty-app.png)
 
+   In the original tutorial without pre-added WebView2 code in the `.cpp` file, this was an empty Win32 window, without a WebView2 control.
+
 You now have a running, empty Win32 desktop app with potential WebView2 capabilities.
 
 Continue with the steps below.
@@ -481,7 +483,7 @@ Now to do the above, in the callback, you'll:
 
    Note: The code to open a Bing dialog wasn't present yet, in a past version of the repo and tutorial, but now it is.
 
-   An alert dialog from Bing opens, against a blank background window:
+   A pop-up WebView2 window with an alert dialog from Bing opens, over an empty WebView2 window:
 
    ![The sample app displays an initially empty window with a Bing dialog box.](../media/empty-app-with-bing-dialog.png)
 
