@@ -343,7 +343,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Add a WebView2 header to your project
+## Step 6 - Include the WebView2.h C++ header to your project, in HelloWebView.cpp
 
 Above, we did the following:
 
