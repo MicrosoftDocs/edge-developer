@@ -23,7 +23,6 @@ This article covers how to set up your development tools and create an initial W
 *  **The WebView2 code has already been added:**
 
    The code that you add in this tutorial's steps, has already been added to the sample repo.  This situation is clearly explained above each code block, so this tutorial should be smooth reading.
-   <!-- the code was added by a Pull Request in the `WebView2Samples` repo: [Make Win32 Getting Started Guide a ready-to-build project](https://github.com/MicrosoftEdge/WebView2Samples/pull/101)-->
 
    This means that you now skip figuring out where to paste the code blocks, and skip pasting them.  You now can speed through this article, focus on setting up your WebView2 app development environment, focus on understanding, and run the code right away.  The sample code is already completed per this tutorial and ready to run.
 
@@ -677,6 +676,28 @@ As an example to understand the mechanism, the following steps occur when you tr
    ![The sample app now displays the Bing website.](../media/bing-window.png)
 
 Congratulations, you built your first WebView2 app!  And your development environment is set up for WebView2 app development, to include the WebView2 control in your Win32 apps.  You've also had an introduction to WebView2 programming concepts.
+
+
+<!-- ====================================================================== -->
+## Seeing what code was added
+
+If you want to see what WebView code was added by this tutorial's steps, in `HelloWebView2.cpp`, look at the following short and long code block:
+
+```cpp
+// include WebView2 header
+#include "WebView2.h"
+
+...
+
+// <-- WebView2 sample code starts here -->
+// Step 3 - Create a single WebView within the parent window
+// Locate the browser and set up the environment for WebView
+CreateCoreWebView2EnvironmentWithOptions(
+   ...
+);
+```
+
+The added code is highlighted in green in the **Files changed** tab of this Pull Request in the `WebView2Samples` repo: [Make Win32 Getting Started Guide a ready-to-build project](https://github.com/MicrosoftEdge/WebView2Samples/pull/101/files).
 
 
 <!-- ====================================================================== -->
