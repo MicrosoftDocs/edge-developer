@@ -240,11 +240,11 @@ This step is only needed for older versions of Visual Studio, so it's likely you
 
    Here's a Visual Studio 2017 screenshot showing some valid settings:
 
-   ![Tool version.](../media/tool-version.png)
+   ![In Visual Studio 2017, set Windows SDK Version to 10, and Platform Toolset to Visual Studio.](../media/tool-version.png)
 
    The following is a Visual Studio 2022 screenshot; the values were already correct, so no change was required:
 
-   ![Tool version.](../media/tool-version-2022.png)
+   ![In Visual Studio 2022, Windows SDK Version is already 10, and Platform Toolset is already Visual Studio.](../media/tool-version-2022.png)
 
 Visual Studio might display errors, because your project is missing the WebView2 header file.  The errors resolve after completing the next section, "Install the WebView2 SDK".
 
@@ -650,14 +650,14 @@ As an example to understand the mechanism, the following steps occur when you tr
 
    The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button.
 
-   ![The sample app displays the Bing website.](../media/show-url.png)
+   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window.](../media/show-url.png)
 
 1. Click the **OK** button to dismiss the pop-window and continue to the URL.
 
    The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
 
    <!-- instance 2 of bing-window.png -->
-   ![The sample app displays the Bing website.](../media/bing-window.png)
+   ![The sample app now displays the Bing website.](../media/bing-window.png)
 
 Congratulations, you built your first WebView2 app!  And your development environment is set up for WebView2 app development, to include the WebView2 control in your Win32 apps.  You've also had an introduction to WebView2 programming concepts.
 
