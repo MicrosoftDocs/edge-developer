@@ -12,15 +12,29 @@ ms.date: 02/12/2022
 
 This article covers how to set up your development tools and create an initial WebView2 app for Win32, and learn about WebView2 concepts along the way.
 
-To keep this tutorial focused on WebView-specific coding, we start from an existing Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  We'll add WebView2 features.  The existing Visual Studio project we'll start with is part of the sample code from a standard C++ Windows desktop application.  If you want background information for context, in a new window or tab, see [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp).
 
-Updated and enhanced article (Feb. 12, 2022):
+**Leverages sample code from a standard C++ Win32 app:**
 
-*  The code that you add in this tutorial's steps, has already been added to the sample repo, by this Pull Request in the `WebView2Samples` repo: [Make Win32 Getting Started Guide a ready-to-build project](https://github.com/MicrosoftEdge/WebView2Samples/pull/101).  This situation is clearly explained above each code block, so this tutorial should be smooth reading.
+To keep this tutorial focused on WebView-specific coding, we start from an existing Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  We'll add WebView2 features - actually, the features have already been added, but follow along in the setup and explanation steps.
 
-   This means that you now skip figuring out where to paste the code blocks, and skip pasting them.  You now can speed through this article, focus on setting up your WebView2 app development environment, focus on understanding, and run the code right away.  The sample code is already completed per this tutorial and ready to run.
+The existing Visual Studio project we'll start with is part of the sample code from a standard C++ Win32 desktop application.  For information about the underlying, standard Win32 app sample, in a new window or tab, see [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp).
 
-*  This article has been greatly rewritten for clarity, with Visual Studio 2022 screenshots.  All action steps are now spelled out explicitly, alternating with conceptual explanations, with clear links to overview information  —<!--emdash--> off to the side  —<!--emdash--> about the several development tools and frameworks used.
+
+**The WebView2 code has already been added:**
+
+The code that you add in this tutorial's steps, has already been added to the sample repo, by this Pull Request in the `WebView2Samples` repo: [Make Win32 Getting Started Guide a ready-to-build project](https://github.com/MicrosoftEdge/WebView2Samples/pull/101).  This situation is clearly explained above each code block, so this tutorial should be smooth reading.
+
+This means that you now skip figuring out where to paste the code blocks, and skip pasting them.  You now can speed through this article, focus on setting up your WebView2 app development environment, focus on understanding, and run the code right away.  The sample code is already completed per this tutorial and ready to run.
+
+
+**Rewritten and clarified:**
+
+This article has been greatly rewritten for clarity.  All action steps are now spelled out explicitly, alternating with conceptual explanations, with clear links to overview information  —<!--emdash--> off to the side  —<!--emdash--> about the several development tools and frameworks used.
+
+
+**Visual Studio 2022 screenshots:**
+
+Screenshots show the Visual Studio 2022 UI in Windows 11, with rounded corners.
 
 
 <!-- ====================================================================== -->
