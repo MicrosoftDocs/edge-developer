@@ -244,9 +244,13 @@ This step is only needed for older versions of Visual Studio, so it's likely you
 
    ![In Visual Studio 2022, Windows SDK Version is already 10, and Platform Toolset is already Visual Studio.](../media/tool-version-2022.png)
 
-Visual Studio might display errors, because your project is missing the WebView2 header file.  The errors resolve after completing the next section, "Install the WebView2 SDK".
-
 Continue with the steps below.
+
+<!--
+the following outdated statement might be true for the old tut, but now the header file is present already, from the repo:
+
+Visual Studio might display errors, because your project is missing the WebView2 header file.  The errors resolve after completing the next section, "Install the WebView2 SDK".
+-->
 
 
 <!-- ====================================================================== -->
