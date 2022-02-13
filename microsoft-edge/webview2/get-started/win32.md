@@ -293,6 +293,8 @@ Now install the above tools from within Visual Studio, by following the steps be
    Microsoft.Windows.ImplementationLibrary
    ```
 
+   Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio:
+
    ![Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio.](../media/wil.png)
 
    To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.
@@ -361,16 +363,18 @@ Now we can add WebView2 features to the app.
 
 1. In Visual Studio, make sure the **WebView2GettingStarted** solution is open.
 
-   Or, check whether the below code is already present in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
+1. Inspect `HelloWebView.cpp`, to see if the following two lines are already present in the downloaded file.
 
-1. Inspect `HelloWebView.cpp`, to see if these two lines are already present in the downloaded file.  If these lines aren't already present, paste the following code in `HelloWebView.cpp`, after the last `#include` line:
+   The below code has already been added, in the repo that you cloned.  To see that code in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
+
+1. If the following code isn't already present, paste the following code in `HelloWebView.cpp`, after the last `#include` line:
 
    ```cpp
    // include WebView2 header
    #include "WebView2.h"
    ```
 
-   The `include` section should look like this:
+   Make sure that the `include` section looks like the following:
 
    ```cpp
    ...
@@ -428,7 +432,7 @@ Now to do the above, in the callback, you'll:
 
 1. In `HelloWebView.cpp`, use `Ctrl`+`F` to try to find some of the following code.
 
-   Or, check whether the below code is already present in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
+   The below code has already been added, in the repo that you cloned.  To see that code in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
 
 1. If the following code isn't present already, paste the following code into `HelloWebView.cpp`.  Paste the code in between the lines `// <-- WebView2 sample code starts here -->` and `// <-- WebView2 sample code ends here -->`:
 
@@ -529,7 +533,7 @@ As an example of using navigation events, register a handler for the `Navigation
 
 1. In `HelloWebView.cpp`, use `Ctrl`+`F` to try to find some of the code from the listing below.
 
-   Or, check whether the below code is already present in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
+   The below code has already been added, in the repo that you cloned.  To see that code in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
 
 1. If it's not already present, paste the following code into `HelloWebView.cpp`:
 
@@ -569,7 +573,7 @@ The injected JavaScript is run with specific timing:
 
 1. In `HelloWebView.cpp`, use `Ctrl`+`F` to try to find some of the code from the listing below.
 
-   Or, check whether the below code is already present in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
+   The below code has already been added, in the repo that you cloned.  To see that code in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
 
 1. If it's not already present, paste the following code into `HelloWebView.cpp`:
 
@@ -624,7 +628,7 @@ As an example to understand the mechanism, the following steps occur when you tr
 
 1. In `HelloWebView.cpp`, use `Ctrl`+`F` to try to find some of the code from the listing below.
 
-   Or, check whether the below code is already present in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
+   The below code has already been added, in the repo that you cloned.  To see that code in the repo: in a new window or tab, see [WebView2Samples/ ... /GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
 
 1. If it's not already present, paste the following code into `HelloWebView.cpp`:
 
