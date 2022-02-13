@@ -180,15 +180,15 @@ You start with a basic desktop project that contains a single main window.  We'l
 1. Open `WebView2GettingStarted.sln`, which is located at the path: `<your repo directory>/WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`.
 
 
-### Install the "Desktop development for C++" workload
+### Install the "Desktop development with C++" workload
 
 Visual Studio Installer might open and prompt you to install a Workload:
 
-![Visual Studio Installer prompting to install the 'Desktop development for C++' workload.](../media/installer-prompt-desktop-cpp-workload.png)
+![Visual Studio Installer prompting to install the 'Desktop development with C++' workload.](../media/installer-prompt-desktop-cpp-workload.png)
 
 If Visual Studio Installer prompts you to install a Workload:
 
-1. Select the **Desktop development for C++** card so that a checkmark appears.
+1. Select the **Desktop development with C++** card so that a checkmark appears.
 
 1. If you want, also select the **.NET desktop development** card (not needed for this tutorial), so that a checkmark appears on this card as well.
 
