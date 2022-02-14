@@ -21,7 +21,7 @@ Typography on the web is an important part of the user experience.  You want to 
 
 CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  Several CSS properties are available to control the font size, spacing, line height, and other typographical features.
 
-Currently the [Enable new Font Editor tool within the Styles pane](../experimental-features/index.md#enable-new-font-editor-tool-within-the-styles-pane) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
+Currently the [Enable new Font Editor tool within the Styles pane](../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
 
 Any CSS in the **Styles** pane, either font definitions or inline styles, has a **Font Editor** icon.  To open the visual **Font Editor**, click the **Font Editor** icon.
 
