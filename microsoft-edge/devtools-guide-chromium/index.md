@@ -13,7 +13,9 @@ ms.date: 09/23/2021
 <!-- be careful merging PRs; preserve page structure per PR 1700 (misc-fixes branch) -->
 
 <!--
+clipboard, keep:
 icon tagging to maintain here & propagate:
+to paste these into articles, always need to add ../ prefix:
 click the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) button.
 click the **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button.
 click the **More tabs** (![More tabs icon.](media/more-tabs-icon-light-theme.png)) button.
@@ -44,71 +46,83 @@ With DevTools, you can do the following:
 
 
 <!-- ====================================================================== -->
-## Opening DevTools
+## Open DevTools
 
-To open DevTools:
+To open DevTools, in Microsoft Edge, do any of the following:
 
-*  Right-click any item on a webpage and then select **Inspect**.  DevTools opens, with the **Elements** tool selected.
+| Method | Tool |
+|---|---|
+| Right-click any item on a webpage, and then select **Inspect**. | **Elements** (DOM expanded to the page element) |
+| Microsoft Edge toolbar > **Settings and more** (`...`) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
+| `F12` | Previous tool (or **Welcome**). |
+| `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS)| Previous tool (or **Welcome**) |
+| `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) | **Console** |
+| `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS) | **Elements** (DOM expanded to `<body>`) |
 
-   ![To open DevTools, right-click any item on a webpage and then click Inspect.](media/devtools-intro-inspect.msft.png)
+<!--
+Keep this comment.
 
-   DevTools opens, with the right-clicked element highlighted in the **Elements** tool:
+Clipboard: Robust general-purpose copy/paste blocks to use inline (self-sufficient).
 
-   ![DevTools opens, with the right-clicked element highlighted in the Elements tool.](media/devtools-intro-inspect-devtools-open.png)
-
-*  Or, press `F12`.  DevTools opens, with the **Welcome** tool or the last-used tool selected.
-
-*  Or, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).  DevTools opens, with the **Welcome** tool or the last-used tool selected.
-
-*  Or, in Microsoft Edge, select **Settings and more** (`...`) >  **More Tools** >  **Developer Tools**.
-
-<!-- See also [Keyboard shortcuts](../shortcuts/index.md). -->
-
-![Opening DevTools from the Microsoft Edge main menu.](../media/bing-customize-more-tools-developer-tools-transparent.msft.png)
+### Clipboard entry for opening a panel tool (do not assume the tool's tab is present on the user's desired toolbar (except for the Console tool)):
 
 
-### Opening the Elements tool to inspect the DOM or CSS
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-To inspect the styles or attributes of a DOM tree node, do either of the following:
-
-*  In the rendered webpage, right-click a page element, and then select **Inspect**.
-
-*  Or, press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
-
-See also:
-
-* [DevTools for beginners: Get started with CSS](../beginners/css.md) 
-* [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) at MDN.
-
-<!-- ![The Inspect option.](../media/bing-right-click-inspect.msft.png) -->
+1. In DevTools, on the main toolbar, select the **__** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
 
-### Opening the Console panel
+don't need, if have the above step:
+1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select **(toolname)**.
 
-In the **Console** tool, you can view logged messages, or enter JavaScript statements to evaluate in realtime.
-
-When you are viewing a webpage, to quickly go to the **Console** tool:
-
-*  Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
-
-When DevTools is open, the **Console** tool is always present on the main toolbar and on the Drawer toolbar.
+1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button.
 
 
-See also:
-* [Console overview](console/index.md)
-* [Keyboard shortcuts](../shortcuts/index.md)
+
+### Clipboard entry for opening a specific Settings page:
 
 
-### Returning to the previous tool
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-When you're viewing a webpage, to return to the previous tool you used in DevTools:
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
 
-*  Press `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+1. On the left side of the **Settings** panel, select the **__** page.
 
-See [Keyboard shortcuts](../shortcuts/index.md).
+-->
+
+<!--
+hit counts:
+
+`F12` 45 (in 30)
+
+`Ctrl`+`Shift`+`J` 22 (in 14)
+`Ctrl`+`Shift`+`I` 21 (in 11)
+`Ctrl`+`Shift`+`C` 7 (in 6)
+
+`Command`+`Option`+`J`  21  (in 12)
+`Command`+`Option`+`I` 15    (in 6)
+`Command`+`Option`+`C`  3   (in 2)
+ -->
+
+### Open DevTools by right-clicking an item in a webpage
+
+A good way to open DevTools is to right-click an item on a webpage, and then select **Inspect**:
+
+![To open DevTools, right-click any item on a webpage and then select Inspect.](media/devtools-intro-inspect.msft.png)
+
+DevTools opens, with the right-clicked element highlighted in the **DOM tree** in the **Elements** tool:
+
+![DevTools opens, with the right-clicked element highlighted in the Elements tool.](media/devtools-intro-inspect-devtools-open.png)
 
 
-### Automatically opening DevTools when you open a new tab
+### Open DevTools by using the Microsoft Edge toolbar
+
+On the Microsoft Edge toolbar, you can select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
+
+![Opening DevTools from the Microsoft Edge main menu.](media/bing-customize-more-tools-developer-tools-transparent.msft.png)
+
+
+### Have DevTools automatically open when you open a new tab
 
 To have DevTools automatically open whenever you open a new tab in the browser:
 
@@ -153,7 +167,9 @@ To prevent pressing `F12` from opening DevTools:
 <!-- ====================================================================== -->
 ## Keyboard support
 
-You can interact with DevTools using the mouse or keyboard.  Keyboard shortcuts provide a quick way to access functionality, and are needed for accessibility.  Various tools are increasingly accessible through the keyboard and assistive technologies such as screen readers.  See [Keyboard shortcuts](./shortcuts/index.md) and [Navigate DevTools with assistive technology](accessibility/navigation.md).
+You can interact with DevTools using the mouse or keyboard.  Keyboard shortcuts provide a quick way to access functionality, and are needed for accessibility.  Various tools are increasingly accessible through the keyboard and assistive technologies such as screen readers.
+
+See [Keyboard shortcuts](shortcuts/index.md) and [Navigate DevTools with assistive technology](accessibility/navigation.md).
 
 
 <!-- ====================================================================== -->
@@ -235,9 +251,13 @@ The **Elements** tool is always present on the main toolbar.
 
 ### Console tool
 
-The [Console](console/index.md) allows you to display and filter log messages.  Log messages are automated logs of the browser like network requests and developer-generated logs.  You can also run JavaScript directly in the **Console** in the context of the current window or frame.
+In the **Console** tool, you can:
+*  View and filter logged messages from network requests or from JavaScript log statements.
+*  Enter JavaScript statements to evaluate in realtime.  Expressions are evaluated in the current context, such as when the JavaScript debugger in the **Sources** tool is paused at a breakpoint.
 
-The **Console** tool is always present on the main toolbar.
+The **Console** tool is always present on the main toolbar and on the Drawer toolbar.
+
+See [Console](console/index.md).
 
 
 ### Sources tool

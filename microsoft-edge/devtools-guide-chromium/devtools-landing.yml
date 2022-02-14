@@ -1,10 +1,9 @@
 ### YamlMime:Landing
 
-# don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
+# don't delete DevTools articles from this file; comment them out (Ctrl+/), then move them to bottom of file
 
-# this list of DevTools .md files is from toc.yml merged from "main" branch Feb 11 2022,
-# but this list omits any .md files that were commented out in toc.yml.
-
+# this list of DevTools articles is from toc.yml merged from "main" branch Feb 11 2022,
+# except that the list of 135 articles in the present file omits any articles that were commented out in toc.yml.
 
 title: Microsoft Edge DevTools documentation # < 60 chars
 summary: Development using Microsoft Edge DevTools. # < 160 chars
@@ -20,8 +19,13 @@ metadata:
   ms.author: msedgedevrel #Required; microsoft alias of author; optional team alias.
   ms.date: 01/07/2022 #Required; mm/dd/yyyy format.
 
+
+# =============================================================================
+# Valid article types (sections of a card)
+
 # description of article types (linkListType values): https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-landing-page?branch=master#linklisttype
 # description of article "content types" https://review.docs.microsoft.com/en-us/help/contribute/content-type-comparison?branch=master
+
       # - linkListType: architecture
       # - linkListType: concept
       # - linkListType: deploy
@@ -37,20 +41,19 @@ metadata:
       # - linkListType: video
       # - linkListType: whats-new
 
-# Limits:
-# Number of cards: 12
-# Number of linkListType in a card: 6
-# Number of links in a linkListType: 10
+
+# =============================================================================
+# Limits
+
+# Max number of cards: 12
+# Max number of linkListType in a card: 6
+# Max number of links in a linkListType: 10
 
 
-# this list of DevTools .md files is from toc.yml merged from "main" branch Feb 11 2022,
-# but this list omits any .md files that were commented out in toc.yml.
+# =============================================================================
+# RESEARCH FINDINGS
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-
-# how many cards & articles do other landing pages have?
+# Conclusion: IDE landing pages typically have 5-7 cards, 4-6 article-links each.
 
 # C# https://docs.microsoft.com/en-us/dotnet/csharp/
 #    6 cards, 10 14 12 articles
@@ -110,77 +113,125 @@ landingContent:
 # Microsoft identity platform: https://docs.microsoft.com/en-us/azure/active-directory/develop/
 #    12 cards, 3 3 3  3 4 3  2 2 2  2 2 1 articles
 
-# guidelines from https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-landing-page?branch=master#guidelines
+
+# =============================================================================
+# Guidelines about Landing page card design:
+
+# https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-landing-page?branch=master#guidelines
 # Cards and links should be based on top customer tasks or top subjects.
 # Don't just repeat the TOC.
 # Order cards by relevancy.
 # Card titles should start with a verb.
 
-# REAL CARDS
+# Per Research section above: 
+# IDE landing pages typically have 5-7 cards, 4-6 article-links each.
+
+
 # =============================================================================
-  - title: Getting started with DevTools
+landingContent:
+
+# might be a suggested card title:   Device Emulation
+
+# =============================================================================
+# Card
+  - title: Get started with DevTools
     linkLists:
       - linkListType: concept
         links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Reasons to use Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
 
+          - text: What's New in Microsoft Edge DevTools  # new firstchild article in What's New
+            url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+
+
 # =============================================================================
-  - title: Use case set of articles 2
+# Card
+  - title: Popular tools
     linkLists:
       - linkListType: concept
         links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Overview of DevTools
             url: /microsoft-edge/devtools-guide-chromium/index
 
 # =============================================================================
-  - title: Use case set of articles 3
+# Card
+  - title: Solve tasks with DevTools
     linkLists:
       - linkListType: concept
         links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Open DevTools
             url: /microsoft-edge/devtools-guide-chromium/open/index
 
 # =============================================================================
-  - title: Use case set of articles 4
+# Card
+  - title: Debugging web layouts
     linkLists:
       - linkListType: concept
         links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Experimental features
             url: /microsoft-edge/devtools-guide-chromium/experimental-features/index
 
 # =============================================================================
-  - title: Use case set of articles 5
+# Card
+  - title: JavaScript and performance
     linkLists:
       - linkListType: concept
         links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: What's New in DevTools (Microsoft Edge 98)
             url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/02/devtools
 
 # =============================================================================
-  - title: Use case set of articles 6
+# Card
+  - title: Customize DevTools
     linkLists:
       - linkListType: concept
         links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: CSS features reference
             url: /microsoft-edge/devtools-guide-chromium/css/reference
 
+# =============================================================================
+# Card
+  - title: Accessibility   # Accessibility Emulation
+    linkLists:
+      - linkListType: concept
+        links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Get started with CSS
             url: /microsoft-edge/devtools-guide-chromium/beginners/css
+
+# =============================================================================
+# Card
+  - title: Reference
+    linkLists:
+      - linkListType: concept
+        links:
+          # temp. random article (move to holding bin (#3 has room) or other card; don't delete):
+          - text: What's New in DevTools (Microsoft Edge 97)
+            url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/01/devtools
+
+            # *  Per-tool, tool-specific articles
+
+            # *  "Keyboard shortcuts" article
+
+            # *  "Edge DevTools Protocol" article
 
 
 # /REAL CARDS
 # HOLDING-BIN DUMMY CARDS - MOVE ARTICLES UP FROM HERE TO REAL CARDS
 # =============================================================================
-# don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
+# for now, don't delete DevTools article nodes; comment them out (Ctrl+/)
   - title: Temp. holding bin 1
     linkLists:
 
       - linkListType: architecture
         links:
-
-          - text: What's New in DevTools (Microsoft Edge 97)
-            url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/01/devtools
 
           - text: What's New in DevTools (Microsoft Edge 96)
             url: /microsoft-edge/devtools-guide-chromium/whats-new/2021/11/devtools
@@ -359,7 +410,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/storage/sessionstorage
 
 # =============================================================================
-# don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
+# don't delete DevTools articles from this file; comment them out (Ctrl+/), then move them to bottom of file
   - title: Temp. holding bin 2
     linkLists:
 
@@ -568,7 +619,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/accessibility/test-inspect-text-contrast
 
 # =============================================================================
-# don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
+# don't delete DevTools articles from this file; comment them out (Ctrl+/), then move them to bottom of file
   - title: Temp. holding bin 3
     linkLists:
 
@@ -627,6 +678,7 @@ landingContent:
 # /HOLDING-BIN DUMMY CARDS
 
 # =============================================================================
-# don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
+# don't delete DevTools articles from this file; comment them out (Ctrl+/), then move them to bottom of file
+
 # Archive of all the commented-out (not-used) articles
 

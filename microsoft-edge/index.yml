@@ -71,7 +71,8 @@ conceptualContent:
       # summary:  # < 160 chars (optional)
       items:
 
-        # Card
+# =============================================================================
+# Card
         - title: Learn about Microsoft Edge in the enterprise
           links:
             - text: Microsoft Edge channel overview
@@ -82,7 +83,8 @@ conceptualContent:
               url: /deployedge/edge-ie-mode
               itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Deploy and update Microsoft Edge
           links:
             - text: Video - Deploy Microsoft Edge
@@ -97,7 +99,8 @@ conceptualContent:
               url: /intune/apps/apps-edge-macos
               itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Configure Microsoft Edge
           links:
             - text: Configure Microsoft Edge on Windows and macOS
@@ -108,7 +111,8 @@ conceptualContent:
               url: /deployedge/edge-default-browser
               itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Manage security and privacy
           links:
             - text: Security
@@ -119,7 +123,8 @@ conceptualContent:
               url: /deployedge/microsoft-edge-enterprise-privacy-settings
               itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Policy reference
           links:
             - text: Browser policy reference
@@ -130,7 +135,8 @@ conceptualContent:
               url: /deployedge/microsoft-edge-update-policies
               itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Engage with enterprise community
           links:
             - text: Enterprise tech community (Insider Focused)
@@ -141,7 +147,8 @@ conceptualContent:
           #   url: /deployedge/microsoft-edge-troubleshooting
           # - itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Extensions for enterprise
           links:
             - text: Manage Microsoft Edge extensions in the enterprise
@@ -156,30 +163,38 @@ conceptualContent:
               url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
               itemType: reference
 
+
 # =============================================================================
+# Major section of hub page
     - title: Microsoft Edge for Developers # < 60 chars (optional)
     # summary:  # < 160 chars (optional)
       items:
 
-        # Card
+# =============================================================================
+# Card
         - title: Microsoft Edge DevTools
           links:
-            # in this hub page design, there's no top-level card, so putting all-up topmost article here, in the DevTools card instead.
-            - text: Develop webpages and products for Microsoft Edge  # new, topmost-level firstchild article
-              url: /microsoft-edge/develop-for-microsoft-edge
-              itemType: overview
 
-            - text: Reasons to use Microsoft Edge DevTools  # new firstchild article
-              url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
+            # there's no level-0 card, so this is in the DevTools card
+            - text: Develop for the web with Microsoft Edge  # new, topmost-level firstchild article
+              url: /microsoft-edge/develop-for-microsoft-edge
               itemType: overview
 
             - text: Overview of DevTools
               url: /microsoft-edge/devtools-guide-chromium
               itemType: overview
 
+            - text: Reasons to use Microsoft Edge DevTools  # new firstchild article
+              url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
+              itemType: overview
+
             - text: DevTools for beginners
               url: /microsoft-edge/devtools-guide-chromium/beginners/html
               itemType: overview
+
+            - name: What's New in Microsoft Edge DevTools  # new firstchild article
+              url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+              itemType: whats-new
 
             - text: Command Menu
               url: /microsoft-edge/devtools-guide-chromium/command-menu/index
@@ -197,7 +212,8 @@ conceptualContent:
               url: /microsoft-edge/devtools-guide-chromium/shortcuts
               itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Microsoft Edge extensions
           links:
             - text: Extensions overview
@@ -228,7 +244,8 @@ conceptualContent:
               url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
               itemType: how-to-guide
 
-        # Card
+# =============================================================================
+# Card
         - title: Progressive Web Apps
           links:
             - text: Progressive Web Apps overview
@@ -259,7 +276,8 @@ conceptualContent:
               url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
               itemType: concept
 
-        # Card
+# =============================================================================
+# Card
         - title: WebView2
           links:
             - text: Introduction to Microsoft Edge WebView2
@@ -290,7 +308,8 @@ conceptualContent:
               url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
 
-        # Card
+# =============================================================================
+# Card
         - title: Test and automation
           links:
 
@@ -322,7 +341,8 @@ conceptualContent:
               url: /microsoft-edge/visual-studio-code/webhint
               itemType: how-to-guide
 
-        # Card
+# =============================================================================
+# Card
         - title: Web platform
           links:
             - text: Web platform overview
@@ -341,7 +361,8 @@ conceptualContent:
               url: /microsoft-edge/web-platform/site-impacting-changes
               itemType: how-to-guide
 
-        # Card
+# =============================================================================
+# Card
         - title: Microsoft Edge IDE integration
           links:
             - text: Microsoft Edge IDE integration  # new firstchild article
@@ -364,7 +385,8 @@ conceptualContent:
               url: /microsoft-edge/visual-studio-code/webhint
               itemType: overview
 
-        # Card
+# =============================================================================
+# Card
         - title: Accessibility in Microsoft Edge
           links:
             - text: Accessibility-testing features
@@ -382,6 +404,7 @@ conceptualContent:
             - text: Accessibility testing
               url: /microsoft-edge/accessibility/test
               itemType: how-to-guide
+
 
 # =============================================================================
 # additionalContent section (optional)

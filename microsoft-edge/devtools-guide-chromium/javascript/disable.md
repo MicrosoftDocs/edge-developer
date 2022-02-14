@@ -26,7 +26,7 @@ To see how your webpage renders and behaves when a browser doesn't have JavaScri
 
 To turn off JavaScript:
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
 1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 

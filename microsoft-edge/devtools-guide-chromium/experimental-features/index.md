@@ -65,11 +65,11 @@ Experimental features are constantly being updated and might cause performance i
 
 To turn an experiment on or off in Microsoft Edge:
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Click the **Settings** (gear) icon to open the [Settings](../customize/index.md#settings) pane of DevTools.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.
 
-1. On the left side of the **Settings** pane, click the **Experiments** section.
+1. On the left side of the **Settings** panel, select the **Experiments** page.
 
    :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings." lightbox="../media/experiments-devtools.msft.png":::
 
@@ -85,11 +85,11 @@ To turn an experiment on or off in Microsoft Edge:
 
 To restore the default settings for which experimental features are turned on:
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Preferences**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
 
-1. Click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
+1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
 
 <!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
 
@@ -99,9 +99,11 @@ To restore the default settings for which experimental features are turned on:
 
 You can filter the experimental features by text included in the title.
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Select **Settings** (![The Settings icon in DevTools.](../media/settings-gear-icon-light-mode.png)) > **Experiments**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+
+1. On the left side of the **Settings** panel, select the **Experiments** page.
 
 1. Click in the **Filter** text box and enter text, such as **timeline**.  As you type, only the matching checkboxes are shown in the **Experiments** page.
 
@@ -160,9 +162,11 @@ DevTools communicates with the inspected page using the DevTools protocol.
 
 To monitor the messages sent and received by DevTools to debug the inspected page:
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. In DevTools, select **Settings** > **Experiments**.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+
+1. On the left side of the **Settings** panel, select the **Experiments** page.
 
 1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) to close **Settings**.
 
@@ -204,11 +208,11 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 To use the **Source Order Viewer**:
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the **Elements** tool.
+1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-1. To the right of the **Styles** tab, click the **Accessibility** tab.
+1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button.
 
 1. Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
 
@@ -259,28 +263,26 @@ For more information, see [Emulation: Support dual screen mode](../device-mode/d
 
 
 <!-- ====================================================================== -->
-## Enable new Font Editor tool within the Styles pane
+## Enable the Font Editor tool within the Styles pane
 
 <!-- present in 96, 98 -->
 
-You can now use the new visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
+You can use the visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
 *  Switch between units for different font properties
 *  Switch between keywords for different font properties
 *  Convert units
 *  Generate accurate CSS code
 
-To use the new visual **Font Editor**:
+To use the visual **Font Editor**:
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the **Elements** tool.
+1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-1. Open the **Styles** pane.
+1. In the **Styles** tab, select the **Font Editor** icon.
 
-1. Select the **Font Editor** icon.
-
-For more information about the new visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
+For more information about the visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
 :::image type="content" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted." lightbox="../media/font-editor-open.msft.png":::
 
@@ -351,7 +353,7 @@ This feature helps you debug without switching contexts as often. Reducing conte
 
 To use **Composited Layers**:
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
 1. Press `Esc` to display the **Drawer**.
 
@@ -376,9 +378,9 @@ See also [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/i
 
 To use the **Network Console**:
 
-1. [Open DevTools](../open/index.md).  For example, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the **Network** pane.
+1. In DevTools, on the main toolbar, select the **Network** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
 1. Right-click the network request that you want to change and resend, and then select **Edit and Replay**.
 

@@ -23,15 +23,13 @@ The **Detached Elements** tool is available by default in Microsoft Edge 97 and 
 
 To open the **Detached Elements** tool and load the demo page:
 
-1. Open the [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/).
+1. Open the [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.
 
    <!-- You can view the source files for the Detached Elements demo in the [MicrosoftEdge/Demos > detached-elements](https://github.com/MicrosoftEdge/Demos/tree/main/detached-elements) repo folder. -->
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Click the **+** button in the toolbar.
-
-1. Click **Detached Elements**.
+1. In DevTools, on the main toolbar, select the **Detached Elements** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
 :::image type="content" source="./images/open-detached-elements.msft.png" alt-text="Open the Detached Elements tool." lightbox="./images/open-detached-elements.msft.png":::
 

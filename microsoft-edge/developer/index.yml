@@ -33,23 +33,30 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
 
-  # Card
+
+# =============================================================================
+# Card
   - title: Microsoft Edge DevTools
     linkLists:
       - linkListType: overview
         links:
           # in this hub page design, there's no top-level card, so putting all-up topmost article here, in the DevTools card instead.
-          - text: Develop webpages and products for Microsoft Edge  # new, topmost-level firstchild article
+          - text: Develop for the web with Microsoft Edge  # new, topmost-level firstchild article
             url: /microsoft-edge/develop-for-microsoft-edge
 
-          - text: Reasons to use Microsoft Edge DevTools  # new firstchild article
-            url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
-
-          - text: Overview of DevTools
+          - text: Overview of DevTools  # existing firstchild article
             url: /microsoft-edge/devtools-guide-chromium
+
+          - text: Reasons to use Microsoft Edge DevTools  # new article
+            url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
 
           - text: DevTools for beginners
             url: /microsoft-edge/devtools-guide-chromium/beginners/html
+
+      - linkListType: whats-new
+          - text: What's New in Microsoft Edge DevTools  # new firstchild article
+            url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+
       - linkListType: how-to-guide
         links:
           - text: Command Menu
@@ -60,11 +67,15 @@ landingContent:
 
           - text: View and change CSS
             url: /microsoft-edge/devtools-guide-chromium/css/index
+
       - linkListType: reference
         links:
           - text: Keyboard shortcuts
             url: /microsoft-edge/devtools-guide-chromium/shortcuts
-  # Card
+
+
+# =============================================================================
+# Card
   - title: Microsoft Edge extensions
     linkLists:
       - linkListType: overview
@@ -90,7 +101,10 @@ landingContent:
 
           - text: Create a simple extension
             url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
-  # Card
+
+
+# =============================================================================
+# Card
   - title: Progressive Web Apps
     linkLists:
       - linkListType: overview
@@ -116,7 +130,10 @@ landingContent:
 
           - text: Web App Manifests
             url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
-  # Card
+
+
+# =============================================================================
+# Card
   - title: WebView2
     linkLists:
       - linkListType: overview
@@ -146,7 +163,10 @@ landingContent:
         links:
           - text: Microsoft Edge WebView2 API Reference
             url: /microsoft-edge/webview2/webview2-api-reference
-  # Card
+
+
+# =============================================================================
+# Card
   - title: Test and automation
     linkLists:
       - linkListType: how-to-guide
@@ -171,7 +191,10 @@ landingContent:
 
           - text: webhint extension for Visual Studio Code
             url: /microsoft-edge/visual-studio-code/webhint
-  # Card
+
+
+# =============================================================================
+# Card
   - title: Web platform
     linkLists:
       - linkListType: how-to-guide
@@ -188,7 +211,9 @@ landingContent:
           - text: Site compatibility-impacting changes
             url: /microsoft-edge/web-platform/site-impacting-changes
 
-  # Card
+
+# =============================================================================
+# Card
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
@@ -207,7 +232,10 @@ landingContent:
 
           - text: Visual Studio for web development
             url: /microsoft-edge/visual-studio/
-  # Card
+
+
+# =============================================================================
+# Card
   - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview

@@ -58,7 +58,9 @@ To get the most out of this tutorial, open the demo and try out the features on 
    :::image type="content" source="../media/network-tutorial/windows.msft.png" alt-text="The demo in one window and this tutorial in a different window." lightbox="../media/network-tutorial/windows.msft.png":::
    -->
 
-1. To [Open DevTools](../open/index.md), press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Console** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button.
 
    :::image type="content" source="../media/network-glitch-console.msft.png" alt-text="The Console." lightbox="../media/network-glitch-console.msft.png":::
 

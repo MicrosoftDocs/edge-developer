@@ -32,9 +32,11 @@ ms.date: 05/04/2021
 
 The **Security** panel is the main place in DevTools for inspecting the security of a page.
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Click the **Security** tab to open the **Security** tool.
+1. In DevTools, on the main toolbar, select the **Security** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+   The **Security** tool (or _panel_) opens:
 
 :::image type="content" source="../media/security-security-overview-secure.msft.png" alt-text="The Security panel." lightbox="../media/security-security-overview-secure.msft.png":::
 

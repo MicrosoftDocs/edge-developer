@@ -48,7 +48,7 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 <!-- ====================================================================== -->
 ## Open DevTools
 
-To get started, see [Open DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+See [Open DevTools](../index.md#open-devtools).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
 
 
 <!-- ====================================================================== -->

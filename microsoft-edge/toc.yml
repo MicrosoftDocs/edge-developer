@@ -10,12 +10,12 @@
       items:
 # Card-based landing page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation  # new landing page
-          href: devtools-guide-chromium/devtools.yml
+          href: devtools-guide-chromium/devtools-landing.yml
           displayName: DevTools
 
 
-
-# =========== todo: maybe merge these 3 articles into one:
+# =============================================================================
+# DevTools Overview articles:
 
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
@@ -23,28 +23,28 @@
           displayName: DevTools
 
 # New, advocacy article -------------------------------------------------------
+# todo: maybe merge this article into the above "Overview" article:
         - name: Reasons to use Microsoft Edge DevTools  # new firstchild article
           href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md
           displayName: DevTools
 
 # Opening DevTools ------------------------------------------------------------
-# todo: merge this into the "Open DevTools" section of "Overview of DevTools", delete .md:
-        - name: Open DevTools
-          href: devtools-guide-chromium/open/index.md
-          displayName: DevTools
+# merged this .md into the "Open DevTools" section of "Overview of DevTools", deleted .md:
+        # - name: Open DevTools
+        #   href: devtools-guide-chromium/open/index.md
+        #   displayName: DevTools
 
-# / Merge these 3 articles into one
 
 # What's New ------------------------------------------------------------------
         - name: What's new
           items:
 
-# Experimental features -------------------------------------------------------
-            - name: What's New in Microsoft Edge DevTools
+# What's New firstchild article
+            - name: What's New in Microsoft Edge DevTools  # new firstchild article
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: 
 
-# Experimental features -------------------------------------------------------
+# Experimental features
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
