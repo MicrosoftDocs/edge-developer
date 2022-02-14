@@ -24,57 +24,63 @@ There are many tools to automate your testing of Microsoft Edge:
 These tools are described below.
 
 
-*  **DevTools Protocol**
+<!-- ====================================================================== -->
+## DevTools Protocol
 
-   Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.
+Use the DevTools Protocol to instrument, inspect, debug, and profile browsers including Microsoft Edge.  The Microsoft Edge DevTools Protocol matches the APIs of the Chrome DevTools Protocol.
 
-   [DevTools Protocol](devtools-protocol.md)
-
-
-*  **Origin Trials**
-
-   You can use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you don't need to go to `edge://flags` and turn on feature flags.
-
-   [Use Origin Trials in Microsoft Edge](../origin-trials/index.md)
+[DevTools Protocol](devtools-protocol.md)
 
 
-*  **Playwright**
+<!-- ====================================================================== -->
+## Origin Trials
 
-   The Playwright library provides cross-browser automation through a single API.  Playwright enables cross-browser web automation that is evergreen, capable, reliable, and fast.
-   
-   Playwright launches browsers as headless, by default.  Headless browsers don't display a UI; so generally you use the command line - however, you can also configure Playwright to run the full Microsoft Edge UI.
+You can use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you don't need to go to `edge://flags` and turn on feature flags.
 
-   [Use Playwright to automate and test in Microsoft Edge](../playwright/index.md)
-
-
-*  **Puppeteer**
-
-   The Puppeteer library provides a high-level API to control Microsoft Edge using the DevTools Protocol.
-    
-   Puppeteer launches headless browsers by default.  Headless browsers don't display a UI, so you must use the command line.  You can also configure Puppeteer to run full (non-headless) Microsoft Edge.
-    
-   With Microsoft Edge, you can use `puppeteer-core`, a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge.
-    
-   [Puppeteer overview](../puppeteer/index.md)
+[Use Origin Trials in Microsoft Edge](../origin-trials/index.md)
 
 
-*  **Use WebDriver to automate Microsoft Edge__**
+<!-- ====================================================================== -->
+## Playwright
 
-   WebDriver allows you to automate Microsoft Edge by simulating user interaction.  WebDriver's testing and simulation has advantages over JavaScript unit tests:
+The Playwright library provides cross-browser automation through a single API.  Playwright enables cross-browser web automation that is evergreen, capable, reliable, and fast.
 
-   *  Accesses functionality and information that's not available to JavaScript running in browsers.
-   
-   *  Simulates user events or OS-level events more accurately than JavaScript unit tests.
-   
-   *  Manages multiple windows, tabs, and webpages in a single test session.
-   
-   *  Runs multiple sessions of Microsoft Edge on a specific machine.
+Playwright launches browsers as headless, by default.  Headless browsers don't display a UI; so generally you use the command line - however, you can also configure Playwright to run the full Microsoft Edge UI.
 
-   [Use WebDriver to automate Microsoft Edge](../webdriver-chromium/index.md)
+[Use Playwright to automate and test in Microsoft Edge](../playwright/index.md)
 
 
-*  **webhint extension for Visual Studio Code**
+<!-- ====================================================================== -->
+## Puppeteer
 
-   Use webhint, a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  The webhint extension checks your code for best practices and common errors.
+The Puppeteer library provides a high-level API to control Microsoft Edge using the DevTools Protocol.
 
-   [webhint extension for Visual Studio Code](webhint.md)
+Puppeteer launches headless browsers by default.  Headless browsers don't display a UI, so you must use the command line.  You can also configure Puppeteer to run full (non-headless) Microsoft Edge.
+
+With Microsoft Edge, you can use `puppeteer-core`, a lightweight version of Puppeteer that launches an existing browser installation, like Microsoft Edge.
+
+[Puppeteer overview](../puppeteer/index.md)
+
+
+<!-- ====================================================================== -->
+## Use WebDriver to automate Microsoft Edge
+
+WebDriver allows you to automate Microsoft Edge by simulating user interaction.  WebDriver's testing and simulation has advantages over JavaScript unit tests:
+
+*  Accesses functionality and information that's not available to JavaScript running in browsers.
+
+*  Simulates user events or OS-level events more accurately than JavaScript unit tests.
+
+*  Manages multiple windows, tabs, and webpages in a single test session.
+
+*  Runs multiple sessions of Microsoft Edge on a specific machine.
+
+[Use WebDriver to automate Microsoft Edge](../webdriver-chromium/index.md)
+
+
+<!-- ====================================================================== -->
+## webhint extension for Visual Studio Code
+
+Use webhint, a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  The webhint extension checks your code for best practices and common errors.
+
+[webhint extension for Visual Studio Code](webhint.md)

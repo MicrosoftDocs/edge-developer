@@ -177,13 +177,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Web platform overview
-            url: /microsoft-edge/web-platform/
+            url: /microsoft-edge/web-platform/web-platform
 
           - text: Detect Microsoft Edge from your website
             url: /microsoft-edge/web-platform/user-agent-guidance
 
           - text: Detect Windows 11 using User-Agent Client Hints
-            url: /microsoft-edge/web-platform/how-to-detect-win11.md
+            url: /microsoft-edge/web-platform/how-to-detect-win11
 
           - text: Site compatibility-impacting changes
             url: /microsoft-edge/web-platform/site-impacting-changes

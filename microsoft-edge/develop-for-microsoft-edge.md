@@ -12,6 +12,19 @@ ms.date: 02/14/2022
 
 Develop webpages and products for Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 
+| Development Aspect | Description |
+|---|---|
+| Microsoft Edge DevTools | A set of web development tools that appears next to a rendered webpage in the Microsoft Edge Browser. <!--todo: expand--> |
+| Microsoft Edge extensions | Programs that developers use to add or modify features of Microsoft Edge.  An extension improves a user's browsing experience, and provides a specialized function that's important to a target audience. |
+| Progressive Web Apps | Progressive Web Apps (PWAs) provide access to open web technologies, to provide cross-platform interoperability.  Combines the best of the web and compiled apps.  PWAs provide your users with an app-like experience that's customized for their devices.  PWAs are websites that are to function like installed, native apps on supporting platforms, while functioning like regular websites on other browsers. |
+| WebView2 | The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.  WebView2 apps combine the ubiquity and strength of the web platform, with the power and full capabilities of the native platform.  Uses the Microsoft Edge rendering engine to display the web content in native apps.  You can embed web code in different parts of your native app, or build all of the native app within a single WebView instance. |
+| Test and automation | Tools to automate your testing of Microsoft Edge.  DevTools Protocol instruments, inspects, debugs, and profiles browsers.  Use Origin Trials to try experimental APIs.  Playwright gives cross-browser automation through a single API.  Puppeteer's API controls Microsoft Edge via DevTools Protocol.  WebDriver automates Microsoft Edge by simulating user interaction.  webhint linting checks code for errors and best practices. |
+| Web platform | Site compatibility-impacting changes coming to Microsoft Edge.  Move users to Microsoft Edge from Internet Explorer.  Tracking prevention in Microsoft Edge.  Detect Microsoft Edge from your website.  Customize the password reveal button.  Detect Windows 11 using User-Agent Client Hints. |
+| Microsoft Edge IDE integration | Various features of Microsoft tools provide integration of development using Microsoft Edge, Visual Studio Code, and Visual Studio, to develop your products, webpages, and web apps that use and work with full integration in Microsoft Edge. |
+| Accessibility in Microsoft Edge | Development of your webpages, web apps, and web-enabled products is robustly supported through the extensive Accessibility features in Microsoft Edge and its tooling ecosystem. |
+| Privacy whitepaper | Our _browser privacy promise_ is to provide you with protection, transparency, control, and respect. | Microsoft Edge has many features and services associated with privacy.  This whitepaper gives you a full understanding of how your data is used, how to control the different features, and how to manage your collected data. |
+| The Web We Want initiative | The Web We Want initiative is a cross-browser, open initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.  Let browser vendors and standards groups know what you think is missing from the web platform. |
+
 
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools
@@ -89,7 +102,8 @@ Developers must often decide between building a web app or a native app.  This d
 
 The following diagram shows the spectrum of apps, from maximum reach, to maximum power:
 
-![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](webview2/media/webview2/web-native.png)
+![The spectrum of apps, from maximum reach but less power, to an optimal hybrid blend, to maximum power but less reach.](media/web-hybrid-native.png)
+<!-- png copy used in main article is named "web-native.png" -->
 
 *  Wide **reach** includes websites and Progressive Web Apps.
 
@@ -123,7 +137,7 @@ There are many tools to automate your testing of Microsoft Edge:
 _Web platform_ means aspects of web development such as:
 
 *  Site compatibility-impacting changes coming to Microsoft Edge.
-*  Move users to Microsoft Edge from Internet Explorer
+*  Move users to Microsoft Edge from Internet Explorer.
 *  Tracking prevention in Microsoft Edge.
 *  Detect Microsoft Edge from your website.
 *  Customize the password reveal button.

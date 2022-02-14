@@ -326,7 +326,7 @@ conceptualContent:
         - title: Web platform
           links:
             - text: Web platform overview
-              url: /microsoft-edge/web-platform/
+              url: /microsoft-edge/web-platform/web-platform
               itemType: overview
 
             - text: Detecting Microsoft Edge from your website
