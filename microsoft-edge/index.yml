@@ -294,7 +294,7 @@ conceptualContent:
         - title: Test and automation
           links:
 
-            - text: Test and automation for Microsoft Edge  # new firstchild article
+            - text: Test and automation in Microsoft Edge  # new firstchild article
               url: /microsoft-edge/test-and-automation/test-and-automation
               itemType: overview
 

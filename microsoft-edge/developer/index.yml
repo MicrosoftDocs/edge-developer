@@ -151,7 +151,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Test and automation for Microsoft Edge  # new firstchild article
+          - text: Test and automation in Microsoft Edge  # new firstchild article
             url: /microsoft-edge/test-and-automation/test-and-automation
 
           - text: DevTools Protocol

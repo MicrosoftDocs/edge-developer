@@ -32,21 +32,13 @@ When you install Microsoft Edge, you not only get a browser, you also get Develo
 
 With DevTools, you can do the following:
 
-*  Inspect and change the current webpage live in the browser.
+*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including .html, .css, .js, and .png data formats.
 
-*  Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.
+*  Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and review the location of the problems.
 
-*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.
-
-*  Debug your JavaScript using breakpoint debugging and with the live console.
+*  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
 *  Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
-
-*  Inspect the network traffic and review the location of the problems.
-
-*  Inspect where the browser stored content in various formats.
-
-*  Evaluate the performance of your product to find memory problems and rendering issues.
 
 *  Use a development environment to sync changes in DevTools with the file system and from the web.
 
@@ -70,7 +62,6 @@ See also [Open DevTools](./open/index.md).
 
 
 <!-- ====================================================================== -->
-
 ## Keyboard support
 
 You can interact with DevTools using the mouse or keyboard.  Keyboard shortcuts provide a quick way to access functionality, and are needed for accessibility.  Various tools are increasingly accessible through the keyboard and assistive technologies such as screen readers.  See [Keyboard shortcuts](./shortcuts/index.md) and [Navigate DevTools with assistive technology](accessibility/navigation.md).
@@ -87,7 +78,7 @@ To change where DevTools is placed within the browser window:
 
 **Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [Emulate mobile devices (Device Emulation)](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
-**Dock to right** is the default placement of DevTools:
+**Dock to right** is the default placement of DevTools.
 
 ![Screenshot of DevTools docked to the right.](media/devtools-intro-docking-right.msft.png)
 
@@ -146,11 +137,13 @@ By default, the main toolbar contains the following features:
 
 The toolbar features are described below.
 
+
 ### Inspect tool
 
 When you click the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) button, you can select an element on the current webpage.  While the **Inspect** tool is active, you can move your mouse over different parts of the webpage to get detailed information about page elements, along with a multi-color overlay that shows the layout dimensions, padding, and margin of the page element.
 
 ![The Inspect tool while hovering over with the first headline of this article.](media/devtools-intro-inspect-tool.msft.png)
+
 
 ### Device Emulation
 
@@ -159,6 +152,7 @@ Click the **Device Emulation** (![Device Emulation icon.](media/device-emulation
 ![DevTools display of this article in an emulated mobile phone.](media/devtools-intro-device-emulation.msft.png)
 
 See [Emulate mobile devices (Device Emulation)](device-mode\index.md).
+
 
 ### Welcome tool
 
@@ -389,11 +383,11 @@ The Command Menu allows you to type commands to display, hide, or run features i
 
 The **Changes** tool opens, which is useful when you edit CSS.  In this case, the Command Menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
 
-After you type `changes`, the Command Menu displays the options:
+After you type `cha`, the Command Menu displays the options:
 
-![Command menu displays the options after you type changes.](media/devtools-intro-command-menu-show-changes.msft.png)
+![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'.](media/devtools-intro-command-menu-show-changes.msft.png)
 
-The **Changes** tool opens:
+Press `Enter`, and then the **Changes** tool opens:
 
 ![DevTools with the Changes tool open.](media/devtools-intro-showing-changes.msft.png)
 
