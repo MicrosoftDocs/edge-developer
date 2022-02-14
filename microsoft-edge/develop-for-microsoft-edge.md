@@ -15,24 +15,15 @@ Develop webpages and products for Microsoft Edge by using Microsoft Edge DevTool
 | Development Aspect | Description |
 |---|---|
 | Microsoft Edge DevTools | A set of web development tools that appears next to a rendered webpage in the Microsoft Edge Browser. <!--todo: expand--> |
-
 | Microsoft Edge extensions | Create an extension for Microsoft Edge, to add to or modify its features.  Extensions improve the browser experience, to provide a specialized function that's important to a target audience. |
-
 | Progressive Web Apps | Create Progressive Web App that uses open web technologies, to provide cross-platform interoperability.  They work like native apps on supporting platforms, and like regular websites on other browsers. They combine the best of the web and compiled apps, to provide users an app-like experience, customized for their devices. |
-
 | WebView2 | The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.  Combine the ubiquity of the web platform, with the full capabilities of native platforms. |
-
 | Test and automation | Tools to automate testing in Microsoft Edge.  **DevTools Protocol** instruments, inspects, debugs, and profiles browsers.  Use **Origin Trials** to try experimental APIs.  **Playwright** gives cross-browser automation through a single API.  **Puppeteer**'s API controls Microsoft Edge via DevTools Protocol.  **WebDriver** simulates user interaction with Microsoft Edge.  **webhint** linting checks code for errors and best practices. |
 | Web platform | Site compatibility-impacting changes coming to Microsoft Edge.  Move users to Microsoft Edge from Internet Explorer.  Tracking prevention in Microsoft Edge.  Detect Microsoft Edge from your website.  Customize the password reveal button.  Detect Windows 11 using User-Agent Client Hints. |
-
 | Microsoft Edge IDE integration | Various features of Microsoft tools provide integration of development using Microsoft Edge, Visual Studio Code, and Visual Studio, to develop your products, webpages, and web apps that use and work with full integration in Microsoft Edge. |
-
 | Accessibility in Microsoft Edge | Development of your webpages, web apps, and web-enabled products is robustly supported through the extensive Accessibility features in Microsoft Edge and its tooling ecosystem. |
-
 | Privacy whitepaper | The Microsoft Edge _browser privacy promise_ provides you with protection, transparency, control, and respect.  Microsoft Edge has many features and services associated with privacy.  This whitepaper explains how your data is used, how to control the different features, and how to manage your collected data. |
-
 | The Web We Want initiative | A cross-browser, open initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.  Let browser vendors and standards groups know what you think is missing from the web platform. |
-
 
 
 <!-- ====================================================================== -->
