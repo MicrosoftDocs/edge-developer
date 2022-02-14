@@ -15,15 +15,24 @@ Develop webpages and products for Microsoft Edge by using Microsoft Edge DevTool
 | Development Aspect | Description |
 |---|---|
 | Microsoft Edge DevTools | A set of web development tools that appears next to a rendered webpage in the Microsoft Edge Browser. <!--todo: expand--> |
-| Microsoft Edge extensions | Programs that developers use to add or modify features of Microsoft Edge.  An extension improves a user's browsing experience, and provides a specialized function that's important to a target audience. |
-| Progressive Web Apps | Progressive Web Apps (PWAs) provide access to open web technologies, to provide cross-platform interoperability.  Combines the best of the web and compiled apps.  PWAs provide your users with an app-like experience that's customized for their devices.  PWAs are websites that are to function like installed, native apps on supporting platforms, while functioning like regular websites on other browsers. |
-| WebView2 | The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.  WebView2 apps combine the ubiquity and strength of the web platform, with the power and full capabilities of the native platform.  Uses the Microsoft Edge rendering engine to display the web content in native apps.  You can embed web code in different parts of your native app, or build all of the native app within a single WebView instance. |
-| Test and automation | Tools to automate your testing of Microsoft Edge.  DevTools Protocol instruments, inspects, debugs, and profiles browsers.  Use Origin Trials to try experimental APIs.  Playwright gives cross-browser automation through a single API.  Puppeteer's API controls Microsoft Edge via DevTools Protocol.  WebDriver automates Microsoft Edge by simulating user interaction.  webhint linting checks code for errors and best practices. |
+
+| Microsoft Edge extensions | Create an extension for Microsoft Edge, to add to or modify its features.  Extensions improve the browser experience, to provide a specialized function that's important to a target audience. |
+
+| Progressive Web Apps | Create Progressive Web App that uses open web technologies, to provide cross-platform interoperability.  They work like native apps on supporting platforms, and like regular websites on other browsers. They combine the best of the web and compiled apps, to provide users an app-like experience, customized for their devices. |
+
+| WebView2 | The WebView2 control is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.  Combine the ubiquity of the web platform, with the full capabilities of native platforms. |
+
+| Test and automation | Tools to automate testing in Microsoft Edge.  **DevTools Protocol** instruments, inspects, debugs, and profiles browsers.  Use **Origin Trials** to try experimental APIs.  **Playwright** gives cross-browser automation through a single API.  **Puppeteer**'s API controls Microsoft Edge via DevTools Protocol.  **WebDriver** simulates user interaction with Microsoft Edge.  **webhint** linting checks code for errors and best practices. |
 | Web platform | Site compatibility-impacting changes coming to Microsoft Edge.  Move users to Microsoft Edge from Internet Explorer.  Tracking prevention in Microsoft Edge.  Detect Microsoft Edge from your website.  Customize the password reveal button.  Detect Windows 11 using User-Agent Client Hints. |
+
 | Microsoft Edge IDE integration | Various features of Microsoft tools provide integration of development using Microsoft Edge, Visual Studio Code, and Visual Studio, to develop your products, webpages, and web apps that use and work with full integration in Microsoft Edge. |
+
 | Accessibility in Microsoft Edge | Development of your webpages, web apps, and web-enabled products is robustly supported through the extensive Accessibility features in Microsoft Edge and its tooling ecosystem. |
-| Privacy whitepaper | Our _browser privacy promise_ is to provide you with protection, transparency, control, and respect. | Microsoft Edge has many features and services associated with privacy.  This whitepaper gives you a full understanding of how your data is used, how to control the different features, and how to manage your collected data. |
-| The Web We Want initiative | The Web We Want initiative is a cross-browser, open initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.  Let browser vendors and standards groups know what you think is missing from the web platform. |
+
+| Privacy whitepaper | The Microsoft Edge _browser privacy promise_ provides you with protection, transparency, control, and respect.  Microsoft Edge has many features and services associated with privacy.  This whitepaper explains how your data is used, how to control the different features, and how to manage your collected data. |
+
+| The Web We Want initiative | A cross-browser, open initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.  Let browser vendors and standards groups know what you think is missing from the web platform. |
+
 
 
 <!-- ====================================================================== -->
@@ -127,6 +136,7 @@ There are many tools to automate your testing of Microsoft Edge:
 *  **Puppeteer**'s API controls Microsoft Edge via DevTools Protocol.
 *  **WebDriver** automates Microsoft Edge by simulating user interaction.
 *  **webhint** linting checks code for errors and best practices.
+<!-- todo: move DevTools Protocol w/ Puppeteer) -->
 
 [Test and automation for Microsoft Edge](test-and-automation/test-and-automation.md)
 
@@ -199,25 +209,24 @@ To see details of a screenshot or diagram, right-click the image, and then selec
 <!-- ====================================================================== -->
 ## Look up key words and terms in "Filter by title" text box
 
-In the **Filter by title** box in the upper left, enter any key word index lookup entries.  If the desired article isn't found, you can proceed to the full-text **Search**; select **Search for "_search-term_" in all Microsoft Edge documentation**:
-
-![If title word or index term isn't found, an option is provided to full-text search all Microsoft Edge documentation.](media/full-text-search-fallback.png)
-
-<!-- alt-text: 40-150 chars -->
-
-The full-text search page initially searches all _Microsoft Edge_ docs.  Or, click the **View all results on Microsoft Docs** link for a broader search:
-
-![The full-text search page initially searches all Microsoft Edge docs, or click the link 'View all results on Microsoft Docs' for a broader search.](media/full-text-search-page.png)
-
-
 The multi-purpose **Filter by title** text box supports:
 *  Navigating the table of contents (TOC).
 *  Index term lookup of key words.
 *  Full-text searching the docs.
 
-The following image shows using the **Filter by title** text box to look up a key word in page titles:
+In the **Filter by title** box in the upper left, enter a term or keyword to find:
 
 ![The multi-purpose "Filter by title" text box for navigating the TOC, searching the docs, and index term lookup of key words.](media/filter-by-title-ui.png)
+
+If the desired article isn't found, select **Search for "_search-term_" in all Microsoft Edge documentation**:
+
+![If title word or index term isn't found, an option is provided to full-text search all Microsoft Edge documentation.](media/full-text-search-fallback.png)
+
+The full-text search page initially searches all _Microsoft Edge_ docs.  Or, click the **View all results on Microsoft Docs** link for a broader search:
+
+![The full-text search page initially searches all Microsoft Edge docs, or click the link 'View all results on Microsoft Docs' for a broader search.](media/full-text-search-page.png)
+
+<!-- alt-text: 40-150 chars -->
 
 
 <!-- ====================================================================== -->
