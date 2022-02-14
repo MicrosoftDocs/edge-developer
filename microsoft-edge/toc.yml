@@ -448,12 +448,6 @@
                 - name: Display or edit source files using the Quick source tool
                   href: devtools-guide-chromium/quick-source/quick-source-tool.md
                   displayName: Quick source tool  # also indexed elsewhere in this file
-# Recorder tool ---------------------------------------------------------------
-            # - name: Recorder tool  # un-comment node when add article to repo
-            #   items:
-            #     - name: Record, replay and measure user flows  # pending
-            #       href: devtools-guide-chromium/recorder/recorder-tool.md  # pending
-            #       displayName: Recorder tool
 # Rendering tool --------------------------------------------------------------
             - name: Rendering tool
               items:

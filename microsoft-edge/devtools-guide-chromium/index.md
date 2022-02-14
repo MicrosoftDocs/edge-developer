@@ -293,7 +293,6 @@ DevTools includes the following tools.
 | **Performance** tool | [Get started analyzing runtime performance](evaluate-performance/index.md) |
 | **Performance monitor** tool | [Measure runtime performance of a page using the Performance monitor tool](performance-monitor/performance-monitor-tool.md) |
 | **Quick source** tool | [Display or edit source files using the Quick source tool](quick-source/quick-source-tool.md) |
-| **Recorder** tool | Record, replay and measure user flows. <!-- (recorder/recorder-tool.md) --> |
 | **Rendering** tool | [Emulate dark or light schemes in the rendered page](accessibility/preferred-color-scheme-simulation.md) |
 | **Search** tool | [Find source files for a page using the Search tool](search/search-tool.md) |
 | **Security** tool | [Understand security issues using the Security tool](security/index.md) |
