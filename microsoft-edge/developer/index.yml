@@ -38,7 +38,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: DevTools overview
+          # in this hub page design, there's no top-level card, so putting all-up topmost article here, in the DevTools card instead.
+          - text: Develop webpages and products for Microsoft Edge  # new, topmost-level firstchild article
+            url: /microsoft-edge/develop-for-microsoft-edge
+
+          - text: Reasons to use Microsoft Edge DevTools  # new firstchild article
+            url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
+
+          - text: Overview of DevTools
             url: /microsoft-edge/devtools-guide-chromium
 
           - text: DevTools for beginners
@@ -144,6 +151,9 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Test and automation for Microsoft Edge  # new firstchild article
+            url: /microsoft-edge/test-and-automation/test-and-automation
+
           - text: DevTools Protocol
             url: /microsoft-edge/devtools-protocol-chromium
 
@@ -166,16 +176,26 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Web platform overview
+            url: /microsoft-edge/web-platform/
+
           - text: Detect Microsoft Edge from your website
             url: /microsoft-edge/web-platform/user-agent-guidance
 
+          - text: Detect Windows 11 using User-Agent Client Hints
+            url: /microsoft-edge/web-platform/how-to-detect-win11.md
+
           - text: Site compatibility-impacting changes
             url: /microsoft-edge/web-platform/site-impacting-changes
+
   # Card
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
         links:
+          - text: Microsoft Edge IDE integration  # new firstchild article
+            url: /microsoft-edge/visual-studio-code/ide-integration
+
           - text: Visual Studio Code for web development
             url: /microsoft-edge/visual-studio-code/
 

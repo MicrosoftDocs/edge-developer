@@ -9,7 +9,13 @@ ms.date: 01/07/2021
 ---
 # Tracking prevention in Microsoft Edge
 
-The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.  It is built to uphold the Microsoft Edge [browser privacy promise](https://microsoftedgewelcome.microsoft.com/privacy) while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.
+The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.
+
+The tracking prevention feature is built to uphold the Microsoft Edge [browser privacy promise](https://microsoftedgewelcome.microsoft.com/privacy), while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.
+
+
+<!-- ====================================================================== -->
+## Levels of tracking prevention
 
 Microsoft Edge currently offers users three levels of tracking prevention, which are selected by navigating to `edge://settings/privacy`.
 

@@ -22,7 +22,7 @@ Microsoft Edge DevTools is a set of web development tools that appears next to a
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects. These developer tools are partly based on the tools in the Chromium open-source project. The Microsoft Edge Developer Tools are also called Microsoft Edge DevTools, or simply DevTools.
 
-[Why use Microsoft Edge DevTools (Reasons to use Microsoft Edge DevTools)](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools?branch=pr-en-us-1665)
+[Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/why-use-microsoft-edge-devtools.md)
 
 
 <!-- ====================================================================== -->
@@ -38,7 +38,7 @@ An app manifest JSON file that contains basic platform information.
 A JavaScript file that defines the function.
 HTML and CSS files that define the user interface.
 
-[Overview of Microsoft Edge extensions](https://review.docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/?branch=pr-en-us-1665)
+[Overview of Microsoft Edge extensions](extensions-chromium/index.md)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ PWAs have the **same reach as websites**:
 
 PWAs have a **much lower cross-platform development cost** than compiled apps that require a specific codebase for each platform, such as a separate codebase for Android, for iOS, and for each desktop operating system.
 
-[Overview of Progressive Web Apps (PWAs)](https://review.docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/?branch=pr-en-us-1665)
+[Overview of Progressive Web Apps (PWAs)](progressive-web-apps-chromium/index.md)
 
 
 <!-- ====================================================================== -->
@@ -99,7 +99,7 @@ The following diagram shows the spectrum of apps, from maximum reach, to maximum
 
 Hybrid apps, in the middle of this spectrum, allow you to enjoy the best of both worlds: the ubiquity and strength of the web platform, combined with the power and full capabilities of the native platform.
 
-[Introduction to Microsoft Edge WebView2](https://review.docs.microsoft.com/en-us/microsoft-edge/webview2/?branch=pr-en-us-1665)
+[Introduction to Microsoft Edge WebView2](webview2/index.md)
 
 
 <!-- ====================================================================== -->
@@ -123,7 +123,7 @@ There are many tools to automate your testing of Microsoft Edge:
 _Web platform_ means aspects of web development such as:
 
 *  Site compatibility-impacting changes coming to Microsoft Edge.
-*  Move users to Microsoft Edge from IE.
+*  Move users to Microsoft Edge from Internet Explorer
 *  Tracking prevention in Microsoft Edge.
 *  Detect Microsoft Edge from your website.
 *  Customize the password reveal button.
@@ -145,7 +145,7 @@ Various features of Microsoft tools provide integration of development using Mic
 
 Development of your webpages, web apps, and web-enabled products is robustly supported through the extensive Accessibility features in Microsoft Edge and its tooling ecosystem.
 
-[](accessibility/index.md)
+[Accessibility in Microsoft Edge](accessibility/index.md)
 
 
 <!-- ====================================================================== -->
@@ -155,7 +155,7 @@ Our browser privacy promise is to provide you with protection, transparency, con
 
 Microsoft Edge has many features and services associated with privacy.  This whitepaper gives you a full understanding of how your data is used, how to control the different features, and how to manage your collected data.
 
-[Microsoft Edge Privacy Whitepaper](https://docs.microsoft.com/en-us/microsoft-edge/privacy-whitepaper/)
+[Microsoft Edge Privacy Whitepaper](privacy-whitepaper/index.md)
 
 
 <!-- ====================================================================== -->
@@ -167,7 +167,7 @@ If you build for the web, you inevitably run into problems.  Perhaps there's no 
 
 The Web We Want initiative is the place to let browser vendors and standards groups know what you think is missing from the web platform.
 
-[The Web We Want initiative](https://docs.microsoft.com/en-us/microsoft-edge/web-we-want/)
+[The Web We Want initiative](web-we-want/index.md)
 
 
 <!-- ====================================================================== -->
@@ -209,10 +209,12 @@ The following image shows using the **Filter by title** text box to look up a ke
 <!-- ====================================================================== -->
 ## Report or fix errors or bugs in the docs
 
-Click the **Edit** button in the upper right.  Or enter an issue: at the bottom of the page, use the GitHub link and button.  See [Contact devtools](foo.md) and 
-
 For feedback, log issues, enter issues, report issues, reporting issues, support:
 
 * [Contact the Microsoft Edge DevTools team](devtools-guide-chromium/contact.md)
 * [Contact Microsoft Edge extensions support](extensions-chromium/publish/contact-extensions-team.md)
 * [Contact the WebView2 team](webview2/contact.md)
+
+To enter an Issue at GitHub for this repo, at the bottom of the page, use the GitHub link and button.
+
+If you are signed in to Microsoft corpnet, you might see an **Edit** button in the upper right.  You can submit a forked Pull Request to push commits to this documentation repo.

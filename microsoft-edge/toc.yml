@@ -2,7 +2,8 @@
   href: developer/index.yml
 
 - name: Develop webpages and products for Microsoft Edge  # new firstchild article
-  href: developer/develop-for-microsoft-edge.md
+  href: develop-for-microsoft-edge.md
+
   items:
 # =============================================================================
     - name: Microsoft Edge DevTools
@@ -11,7 +12,7 @@
           href: devtools-guide-chromium/devtools.yml
           displayName: DevTools
 
-        - name: Why use Microsoft Edge DevTools  # new firstchild article
+        - name: Reasons to use Microsoft Edge DevTools  # new firstchild article
           href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md
           displayName: DevTools
 # UPPER NON-TOOLS NODES =======================================================
@@ -1024,7 +1025,7 @@
 # =============================================================================
     - name: Web platform
       items:
-        - name: Web platform  # new firstchild article
+        - name: Web platform overview # new firstchild article
           href: web-platform/web-platform.md
           displayName: 
 
@@ -1032,7 +1033,7 @@
           href: web-platform/site-impacting-changes.md
           displayName: 
 
-        - name: Move users to Microsoft Edge from IE
+        - name: Move users to Microsoft Edge from Internet Explorer
           href: web-platform/ie-to-microsoft-edge-redirection.md
           displayName: 
 
@@ -1044,12 +1045,12 @@
           href: web-platform/user-agent-guidance.md
           displayName: 
 
-        - name: Customize the password reveal button
-          href: web-platform/password-reveal.md
-          displayName: 
-
         - name: Detect Windows 11 using User-Agent Client Hints
           href: web-platform/how-to-detect-win11.md
+          displayName: 
+
+        - name: Customize the password reveal button
+          href: web-platform/password-reveal.md
           displayName: 
 
 # =============================================================================

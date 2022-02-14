@@ -9,17 +9,31 @@ ms.date: 01/24/2022
 ---
 # Site compatibility-impacting changes coming to Microsoft Edge
 
-The web platform is a collection of technologies used for building webpages.  The technologies include HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.  For more information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://www.chromestatus.com/features/schedule).
+This article lists differences between the schedule of changes for Microsoft Edge versus the Chromium project, and high-impact changes which the Microsoft Edge team is tracking especially closely.
+
+The web platform is a collection of technologies used for building webpages, including HTML, CSS, JavaScript, and many other open standards.  The web platform constantly evolves to improve the user experience, security, and privacy.  In some cases, changes may affect the functionality of existing webpages.
 
 For functionality and compatibility reasons, Microsoft Edge adopts nearly all of the Chromium project's changes to the web platform.  Microsoft remains in full control of the Microsoft Edge browser and may defer or reject changes.  The Microsoft Edge team decides if the change benefits browser users.
 
-Feature areas where Microsoft Edge plans to deviate from Chromium in release timing or behavior aren'ted in the following table.  This table also highlights high-impact changes that the Microsoft Edge team is tracking.
+For information about upcoming Chromium project web platform changes, see [Chrome Platform Status Release timeline](https://www.chromestatus.com/features/schedule).
 
-Review this article often.  The Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
+Check this article often.  The Microsoft Edge team updates this article as thinking evolves, timelines solidify, and new changes are announced.
 
 
 <!-- ====================================================================== -->
 ## Differences from the Chromium schedule, and high-impact changes
+
+<!-- todo: clarify/confirm what kind of differences are and are not covered in the table: differences of schedule, of feature ares -->
+This table lists:
+
+*  Differences between the schedule of changes for Microsoft Edge versus the Chromium project.
+
+*  High-impact changes which the Microsoft Edge team is tracking especially closely.
+
+<!-- todo: clarify/confirm what kind of differences are and are not covered in the table: differences of schedule, of feature ares -->
+Not listed in this table:
+
+*  Feature areas where Microsoft Edge plans to deviate from Chromium in release timing or behavior.
 
 | Change | Stable Channel | Experimentation | Additional information |
 | --- | --- | --- | --- |

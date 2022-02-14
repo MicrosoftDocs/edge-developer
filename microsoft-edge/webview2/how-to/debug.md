@@ -27,7 +27,7 @@ To open DevTools when you're viewing a WebView2 app, put focus on the WebView co
 *  Press `Ctrl`+`Shift`+`I`.
 *  Right-click the page and then select `Inspect`.
 
-See [DevTools overview](../index.md).
+See [Overview of DevTools](../../devtools-guide-chromium/index.md).
 
 <!-- keep lightbox -->
 :::image type="content" source="./media/f12.png" alt-text="DevTools debugging." lightbox="./media/f12.png":::

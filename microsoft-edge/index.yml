@@ -164,7 +164,16 @@ conceptualContent:
         # Card
         - title: Microsoft Edge DevTools
           links:
-            - text: DevTools overview
+            # in this hub page design, there's no top-level card, so putting all-up topmost article here, in the DevTools card instead.
+            - text: Develop webpages and products for Microsoft Edge  # new, topmost-level firstchild article
+              url: /microsoft-edge/develop-for-microsoft-edge
+              itemType: overview
+
+            - text: Reasons to use Microsoft Edge DevTools  # new firstchild article
+              url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
+              itemType: overview
+
+            - text: Overview of DevTools
               url: /microsoft-edge/devtools-guide-chromium
               itemType: overview
 
@@ -284,6 +293,11 @@ conceptualContent:
         # Card
         - title: Test and automation
           links:
+
+            - text: Test and automation for Microsoft Edge  # new firstchild article
+              url: /microsoft-edge/test-and-automation/test-and-automation
+              itemType: overview
+
             - text: DevTools Protocol
               url: /microsoft-edge/devtools-protocol-chromium
               itemType: how-to-guide
@@ -311,8 +325,16 @@ conceptualContent:
         # Card
         - title: Web platform
           links:
+            - text: Web platform overview
+              url: /microsoft-edge/web-platform/
+              itemType: overview
+
             - text: Detecting Microsoft Edge from your website
               url: /microsoft-edge/web-platform/user-agent-guidance
+              itemType: how-to-guide
+
+            - text: Detect Windows 11 using User-Agent Client Hints
+              url: /microsoft-edge/web-platform/how-to-detect-win11
               itemType: how-to-guide
 
             - text: Site compatibility-impacting changes
@@ -322,6 +344,10 @@ conceptualContent:
         # Card
         - title: Microsoft Edge IDE integration
           links:
+            - text: Microsoft Edge IDE integration  # new firstchild article
+              url: /microsoft-edge/visual-studio-code/ide-integration
+              itemType: overview
+
             - text: Visual Studio for web development
               url: /microsoft-edge/visual-studio/
               itemType: overview

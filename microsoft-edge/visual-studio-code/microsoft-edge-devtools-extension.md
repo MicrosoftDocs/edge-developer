@@ -40,7 +40,7 @@ This article uses the name "the Microsoft Edge DevTools extension", except for U
 <!-- ====================================================================== -->
 ## Installing the Microsoft Edge DevTools extension
 
-To install the extension from within Visual Studio Code, see [The Microsoft Edge DevTools extension for Visual Studio Code](index.md#the-microsoft-edge-devtools-extension-for-visual-studio-code).
+To install the extension from within Visual Studio Code, see [The Microsoft Edge DevTools extension for Visual Studio Code](index.md#microsoft-edge-devtools-extension-for-visual-studio-code) in _Visual Studio Code for web development_.
 
 Or, you can [download the Microsoft Edge DevTools extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) from Visual Studio Marketplace.  You can view the [source code](https://github.com/microsoft/vscode-edge-devtools) at GitHub.
 
