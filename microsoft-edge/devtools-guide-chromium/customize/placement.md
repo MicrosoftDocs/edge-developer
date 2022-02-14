@@ -1,81 +1,73 @@
 ---
 title: Change DevTools placement (Undock, Dock to bottom, Dock to left)
-description: How to move Microsoft Edge DevTools to the bottom or left of your viewport, or to a separate window.
+description: How to move Microsoft Edge DevTools to the bottom or left of the browser window, or undock DevTools into a separate window.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 02/13/2022
 ---
-<!-- Copyright Kayce Basques
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       https://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.  -->
 # Change DevTools placement (Undock, Dock to bottom, Dock to left)
 
-By default, Microsoft Edge DevTools is docked to the right of your viewport (window).  You can also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.
+You can change where DevTools is docked in the browser.  By default, Microsoft Edge DevTools is docked to the right of your viewport (window).  You can also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.
+
+To change where DevTools is placed within the browser window:
+
+*  Click the **Customize and control DevTools** (![Customize and control DevTools icon.](../media/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock side** section, select a layout option.
+
+![the Dock side menu in DevTools.](../media/devtools-intro-docking-menu.msft.png)
+
+**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [Emulate mobile devices (Device Emulation)](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
 
 <!-- ====================================================================== -->
-## Examples of the various placements of DevTools
+## Dock DevTools in the right side of the browser
 
-### Dock to left
+The following image shows DevTools in the right side the browser window, which is the default location:
 
-:::image type="content" source="../media/customize-elements-styles-right-docked.msft.png" alt-text="DevTools docked to the left side of the window." lightbox="../media/customize-elements-styles-right-docked.msft.png":::
-
-### Dock to bottom
-
-:::image type="content" source="../media/customize-elements-styles-bottom-docked.msft.png" alt-text="DevTools docked to the bottom of the window." lightbox="../media/customize-elements-styles-bottom-docked.msft.png":::
-
-### Undock into separate window
-
-DevTools can be undocked to a separate window, which you can move to a separate monitor.  The browser then has its own dedicated window without DevTools, which has been undocked:
-
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png" alt-text="Browser in its own dedicated window without DevTools, which has been undocked." lightbox="../media/customize-elements-styles-options-dock-side-highlight-browser.msft.png":::
-
-DevTools is then undocked into its own separate, dedicated window:
-
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png" alt-text="DevTools undocked into its own separate, dedicated window." lightbox="../media/customize-elements-styles-options-dock-side-highlight-devtools.msft.png":::
+![DevTools docked to the right.](../media/devtools-intro-docking-right.msft.png)
 
 
 <!-- ====================================================================== -->
-## Change placement from the main menu
+## Dock DevTools in the left side of the browser
 
-1. Click **Customize and control DevTools** (`...`) and then select **Undock into separate window** (![Undock.](../media/undock-icon.msft.png)), **Dock to bottom** (![Dock to bottom.](../media/bottom-icon.msft.png)), or **Dock to left** (![Dock to left.](../media/left-icon.msft.png)).
+The following image shows DevTools docked in the left side of the browser window:
 
-:::image type="content" source="../media/customize-elements-styles-options-dock-side-highlight.msft.png" alt-text="Selecting Undock Into Separate Window." lightbox="../media/customize-elements-styles-options-dock-side-highlight.msft.png":::
+![DevTools docked to the left.](../media/devtools-intro-docking-left.msft.png)
 
 
 <!-- ====================================================================== -->
-## Change placement from the Command Menu
+## Dock DevTools in the bottom of the browser
 
-1. [Open the Command Menu](../command-menu/index.md).  To do this, you can press `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
-1. After the `>` character, enter `dock`, and then select one of the following commands:
+**Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**.  The following image shows DevTools in the bottom of the browser window:
+
+![DevTools docked to the bottom.](../media/devtools-intro-docking-bottom.msft.png)
+
+
+<!-- ====================================================================== -->
+## Undock DevTools into a separate window
+
+Undock DevTools into its own, separate window, when you want to work with several monitors, or if you need to work on a full-screen app and want a lot of space for the DevTools UI.  The following image shows DevTools undocked into its own, dedicated window:
+
+![DevTools undocked into a separate window.](../media/devtools-intro-docking-own-window.msft.png)
+
+Since WebTools now has its own dedicated window, the WebPage that's being designed now occupies an entire browser window:
+
+![WebPage that's under design, now separate from the DevTools window, which is undocked from the browser's webpage window.](../media/browser-webpage-window-devtools-undocked.png)
+
+
+See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
+
+
+<!-- ====================================================================== -->
+## Change where DevTools is docked by using the Command Menu
+
+1. Open the Command Menu.  To do this, click the **Customize and control DevTools** (![Customize and control DevTools icon.](../media/customize-devtools-icon-light-theme.png)) menu button, and then click **Run command**.  Or, press `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
+
+1. Enter "dock", and then select a dock command:
 
     *  **Dock to bottom**
     *  **Dock to left**
     *  **Dock to right**
     *  **Restore last dock position**
     *  **Undock into separate window**
-
-    You can also access these commands from the [main menu](#change-placement-from-the-main-menu).
-
-   :::image type="content" source="../media/customize-elements-styles-command-menu-undo.msft.png" alt-text="The Undock command." lightbox="../media/customize-elements-styles-command-menu-undo.msft.png":::
-
-
-<!-- ====================================================================== -->
-> [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/placement) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
-
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

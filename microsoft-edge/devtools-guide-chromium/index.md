@@ -68,38 +68,9 @@ You can interact with DevTools using the mouse or keyboard.  Keyboard shortcuts 
 
 
 <!-- ====================================================================== -->
-## Changing where DevTools is docked in the browser
+## Change where DevTools is docked in the browser
 
-To change where DevTools is placed within the browser window:
-
-*  Click the **Customize and control DevTools** (![Customize and control DevTools icon.](media/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock side** section, select a layout option.
-
-![the Dock side menu in DevTools.](media/devtools-intro-docking-menu.msft.png)
-
-**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [Emulate mobile devices (Device Emulation)](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
-
-**Dock to right** is the default placement of DevTools.
-
-![DevTools docked to the right.](media/devtools-intro-docking-right.msft.png)
-
-**Dock to left** is another side-by-side option:
-
-![DevTools docked to the left.](media/devtools-intro-docking-left.msft.png)
-
-**Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**:
-
-![DevTools docked to the bottom.](media/devtools-intro-docking-bottom.msft.png)
-
-**Undock into separate window** helps you work with several monitors or if you need to work on a full-screen app:
-
-![DevTools undocked into a separate window.](media/devtools-intro-docking-own-window.msft.png)
-
-Since WebTools now has its own dedicated window, the WebPage that's being designed now occupies an entire browser window:
-
-![WebPage that's under design, now separate from the DevTools window, which is undocked from the browser's webpage window.](media/browser-webpage-window-devtools-undocked.png)
-
-
-See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](customize/placement.md).
+You can dock DevTools in the right, left, or bottom of the browser, or undock it into a separate window.  See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](customize/placement.md).
 
 
 <!-- ====================================================================== -->
@@ -113,14 +84,15 @@ There are two toolbars: the main toolbar at the top of DevTools, and the **Drawe
 
 By default, the main toolbar contains the following features:
 
-* Icon tools
+* Icon tools:
    *  **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) toggle button.
    *  **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button.
-* Tool tabs
+
+* Tool tabs (most are optional):
    *  **Welcome** tool.
-   *  **Elements** tool.  Always present.
-   *  **Console** tool.  Always present.
-   *  **Sources** tool.  Always present.
+   *  **Elements** tool.  Permanent.
+   *  **Console** tool.  Permanent.
+   *  **Sources** tool.  Permanent.
    *  **Network** tool.
    *  **Performance** tool.
    *  **Memory** tool.
@@ -128,7 +100,8 @@ By default, the main toolbar contains the following features:
    *  **Security** tool.
    *  **Lighthouse** tool.
    *  **CSS Overview** tool.
-* Icons
+
+* Icons:
    *  **More tabs** (![More tabs icon.](media/more-tabs-icon-light-theme.png)) button.
    *  **More Tools** (![More Tools icon.](media/more-tools-icon-light-theme.png)) button.
    *  **JavaScript errors counter** (![JavaScript errors counter icon.](media/javascript-counter-icon-light-theme.png)) button.
