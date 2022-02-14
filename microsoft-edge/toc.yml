@@ -1,11 +1,11 @@
 - name: Microsoft Edge Developer documentation  # landing page
   href: developer/index.yml
-
-- name: Develop webpages and products for Microsoft Edge  # new firstchild article
-  href: develop-for-microsoft-edge.md
-
   items:
 # =============================================================================
+    - name: Develop webpages and products for Microsoft Edge  # new firstchild article
+      href: develop-for-microsoft-edge.md
+      displayName: 
+
     - name: Microsoft Edge DevTools
       items:
         - name: Microsoft Edge DevTools documentation  # new landing page
