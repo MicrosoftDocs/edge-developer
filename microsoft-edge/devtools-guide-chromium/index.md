@@ -74,25 +74,30 @@ To change where DevTools is placed within the browser window:
 
 *  Click the **Customize and control DevTools** (![Customize and control DevTools icon.](media/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock side** section, select a layout option.
 
-![Screenshot of the Dock side menu in DevTools.](media/devtools-intro-docking-menu.msft.png)
+![the Dock side menu in DevTools.](media/devtools-intro-docking-menu.msft.png)
 
 **Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [Emulate mobile devices (Device Emulation)](device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
 **Dock to right** is the default placement of DevTools.
 
-![Screenshot of DevTools docked to the right.](media/devtools-intro-docking-right.msft.png)
+![DevTools docked to the right.](media/devtools-intro-docking-right.msft.png)
 
 **Dock to left** is another side-by-side option:
 
-![Screenshot of DevTools docked to the left.](media/devtools-intro-docking-left.msft.png)
+![DevTools docked to the left.](media/devtools-intro-docking-left.msft.png)
 
 **Dock to bottom** helps you when you don't have enough horizontal display space, or you want to debug long text in the DOM or **Console**:
 
-![Screenshot of DevTools docked to the bottom.](media/devtools-intro-docking-bottom.msft.png)
+![DevTools docked to the bottom.](media/devtools-intro-docking-bottom.msft.png)
 
 **Undock into separate window** helps you work with several monitors or if you need to work on a full-screen app:
 
-![Screenshot of DevTools undocked into a separate window.](media/devtools-intro-docking-own-window.msft.png)
+![DevTools undocked into a separate window.](media/devtools-intro-docking-own-window.msft.png)
+
+Since WebTools now has its own dedicated window, the WebPage that's being designed now occupies an entire browser window:
+
+![WebPage that's under design, now separate from the DevTools window, which is undocked from the browser's webpage window.](media/browser-webpage-window-devtools-undocked.png)
+
 
 See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](customize/placement.md).
 
@@ -368,7 +373,7 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 
 DevTools provides lots of features and functionality to use with your web product.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
 
-![Screenshot of the Command Menu in DevTools.](media/devtools-intro-command-menu.msft.png)
+![the Command Menu in DevTools.](media/devtools-intro-command-menu.msft.png)
 
 In the Command Menu, the tools are called "panels"; for example, the **Elements** tool is called the **Elements** panel.  To switch to the **Elements** tool, you select the **Elements** tab.
 
@@ -402,7 +407,7 @@ You can customize DevTools to meet your needs for the way you work.  To change s
 
 In the **Settings** > **Preferences** page, you can change several parts of DevTools.  For example, you can use the **Match the browser language** setting to use the same language in DevTools that is used in your browser.  For another example, use the **Theme** setting to change the color theme of DevTools.
 
-![Screenshot of all the settings in DevTools.](media/devtools-intro-all-settings.msft.png)
+![all the settings in DevTools.](media/devtools-intro-all-settings.msft.png)
 
 You can also change the settings of advanced features, such as:
 *  Add local files to a [Workspace](./workspaces/index.md).
@@ -412,7 +417,7 @@ You can also change the settings of advanced features, such as:
 *  Define simulated **Locations**.
 *  Customize keyboard **Shortcuts**.  For example, to use the same shortcuts in DevTools as in Visual Studio Code, select **Match shortcuts from preset** > **Visual Studio Code**.
 
-![Screenshot of all the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code.](media/devtools-intro-match-keys.msft.png)
+![All the keyboard shortcuts and the menu to match each to the shortcuts in Visual Studio Code.](media/devtools-intro-match-keys.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -426,18 +431,18 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 <!-- ====================================================================== -->
 ## See also
 
-*  [Get started with HTML and the DOM](beginners/html.md)
-*  [Inspect and change the current webpage](dom/index.md)
-*  [Emulate how your product behaves on different devices](device-mode/index.md)
-*  [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
-*  [Debug your JavaScript](./javascript/index.md)
-*  [Live console](console/index.md)
-*  [Accessibility, performance, compatibility, and security issues](./issues/index.md)
-*  [Inspect the network traffic](./network/index.md)
-*  [Inspect where the browser stored content](./storage/sessionstorage.md)
-*  [Evaluate the performance](evaluate-performance/index.md)
-*  [Memory problems](memory-problems/index.md)
-*  [Rendering issues](./rendering-tools/index.md)
-*  [Use a development environment](./sources/index.md)
-*  [Sync changes in DevTools with the file system](./workspaces/index.md)
-*  [Override files from the web](./javascript/overrides.md)
+* [Get started with HTML and the DOM](beginners/html.md)
+* [Inspect and change the current webpage](dom/index.md)
+* [Emulate how your product behaves on different devices](device-mode/index.md)
+* [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
+* [Debug your JavaScript](./javascript/index.md)
+* [Live console](console/index.md)
+* [Accessibility, performance, compatibility, and security issues](./issues/index.md)
+* [Inspect the network traffic](./network/index.md)
+* [Inspect where the browser stored content](./storage/sessionstorage.md)
+* [Evaluate the performance](evaluate-performance/index.md)
+* [Memory problems](memory-problems/index.md)
+* [Rendering issues](./rendering-tools/index.md)
+* [Use a development environment](./sources/index.md)
+* [Sync changes in DevTools with the file system](./workspaces/index.md)
+* [Override files from the web](./javascript/overrides.md)
