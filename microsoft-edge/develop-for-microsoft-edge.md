@@ -40,10 +40,10 @@ Create an extension for Microsoft Edge, to add to or modify the browser's featur
 
 You can create a Microsoft Edge extension if you have an idea or product that is based upon either a specific web browser, or improvements to features of specific webpages. Examples of companion experiences include ad blockers and password managers.
 
-An extension is structured similar to a regular web app, and usually includes:
+A Microsoft Edge extension is structured similarly to a regular web app, and usually includes:
 
 *  An app manifest JSON file that contains basic platform information.
-*  A JavaScript file that defines the function.
+*  A JavaScript file that defines the behavior of the browser extension.
 *  HTML and CSS files that define the user interface.
 
 See [Overview of Microsoft Edge extensions](extensions-chromium/index.md).
@@ -56,7 +56,7 @@ Progressive Web Apps use open web technologies to provide cross-platform interop
 
 Progressive Web Apps combine the best of the web and compiled apps, to provide users an app-like experience, customized for their devices.  A Progressive Web App is a website that's progressively enhanced to function like installed, native apps on supporting platforms, while functioning like regular websites on other browsers.
 
-PWAs have a **much lower cross-platform development cost** than compiled apps that require a specific codebase for each platform, such as a separate codebase for Android, for iOS, and for each desktop operating system.
+Progressive Web Apps have a much lower cross-platform development cost than compiled apps that require a specific codebase for each platform, such as a separate codebase for Android, for iOS, and for each desktop operating system.
 
 See [Overview of Progressive Web Apps (PWAs)](progressive-web-apps-chromium/index.md).
 
