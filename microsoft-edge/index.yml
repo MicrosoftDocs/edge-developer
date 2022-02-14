@@ -132,121 +132,80 @@ conceptualContent:
             - itemType: reference
               text: Hosting and updating
               url: /microsoft-edge/extensions-chromium/enterprise/hosting-and-updating
-
 # =============================================================================
-# Major section of hub page
     - title: Microsoft Edge for Developers # < 60 chars (optional)
     # summary:  # < 160 chars (optional)
       items:
-
-# =============================================================================
-# Card
+        # Card
         - title: Microsoft Edge DevTools
           links:
-
-            # there's no level-0 card, so this is in the DevTools card
-            - text: Develop for the web with Microsoft Edge  # new, topmost-level firstchild article
-              url: /microsoft-edge/develop-for-microsoft-edge
+            - url: /microsoft-edge/devtools-guide-chromium
               itemType: overview
-
-            - text: Overview of DevTools
-              url: /microsoft-edge/devtools-guide-chromium
+              text: DevTools overview
+            - url: /microsoft-edge/devtools-guide-chromium/beginners/html
               itemType: overview
-
-            - text: Reasons to use Microsoft Edge DevTools  # new firstchild article
-              url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
-              itemType: overview
-
-            - text: DevTools for beginners
-              url: /microsoft-edge/devtools-guide-chromium/beginners/html
-              itemType: overview
-
-            - name: What's New in Microsoft Edge DevTools  # new firstchild article
-              url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
-              itemType: whats-new
-
-            - text: Command Menu
-              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+              text: DevTools for beginners
+            - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
               itemType: how-to-guide
-
-            - text: Open DevTools
-              url: /microsoft-edge/devtools-guide-chromium/open
+              text: Command Menu
+            - url: /microsoft-edge/devtools-guide-chromium/open
               itemType: how-to-guide
-
-            - text: View and change CSS
-              url: /microsoft-edge/devtools-guide-chromium/css/index
+              text: Open DevTools
+            - url: /microsoft-edge/devtools-guide-chromium/css/index
               itemType: how-to-guide
-
-            - text: Keyboard shortcuts
-              url: /microsoft-edge/devtools-guide-chromium/shortcuts
+              text: View and change CSS
+            - url: /microsoft-edge/devtools-guide-chromium/shortcuts
               itemType: reference
-
-# =============================================================================
-# Card
+              text: Keyboard shortcuts
+        # Card
         - title: Microsoft Edge extensions
           links:
-            - text: Extensions overview
-              url: /microsoft-edge/extensions-chromium/index
+            - url: /microsoft-edge/extensions-chromium/index
               itemType: overview
-
-            - text: Getting started tutorial
-              url: /microsoft-edge/extensions-chromium/getting-started/index
+              text: Extensions overview
+            - url: /microsoft-edge/extensions-chromium/getting-started/index
               itemType: overview
-
-            - text: Port a Chromium extension to Microsoft Edge
-              url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
+              text: Getting started tutorial
+            - url: /microsoft-edge/extensions-chromium/developer-guide/port-chrome-extension
               itemType: overview
-
-            - text: Alternate methods of distributing extensions
-              url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
+              text: Port a Chromium extension to Microsoft Edge
+            - url: /microsoft-edge/extensions-chromium/developer-guide/alternate-distribution-options
               itemType: how-to-guide
-
-            - text: Step-wise publishing process
-              url: /microsoft-edge/extensions-chromium/publish/publish-extension
+              text: Alternate methods of distributing extensions
+            - url: /microsoft-edge/extensions-chromium/publish/publish-extension
               itemType: how-to-guide
-
-            - text: Register as a Microsoft Edge extension developer
-              url: /microsoft-edge/extensions-chromium/publish/create-dev-account
+              text: Step-wise publishing process
+            - url: /microsoft-edge/extensions-chromium/publish/create-dev-account
               itemType: how-to-guide
-
-            - text: Create a simple extension
-              url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+              text: Register as a Microsoft Edge extension developer
+            - url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
               itemType: how-to-guide
-
-# =============================================================================
-# Card
+              text: Create a simple extension
+        # Card
         - title: Progressive Web Apps
           links:
-            - text: Progressive Web Apps overview
-              url: /microsoft-edge/progressive-web-apps-chromium/index
+            - url: /microsoft-edge/progressive-web-apps-chromium/index
               itemType: overview
-
-            - text: Get started with Progressive Web Apps
-              url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
+              text: Progressive Web Apps overview
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
               itemType: overview
-
-            - text: Debug Progressive Web Apps
-              url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
+              text: Get started with Progressive Web Apps
+            - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
               itemType: overview
-
-            - text: What's New in Progressive Web Apps
-              url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
+              text: Debug Progressive Web Apps
+            - url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
               itemType: overview
-
-            - text: Offline scenarios
-              url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
+              text: What's New in Progressive Web Apps
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
               itemType: concept
-
-            - text: Service Workers
-              url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
+              text: Offline scenarios
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
               itemType: concept
-
-            - text: Web App Manifests
-              url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
+              text: Service Workers
+            - url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
               itemType: concept
-
-# =============================================================================
-# Card
+              text: Web App Manifests
+        # Card
         - title: WebView2
           links:
             - text: Introduction to Microsoft Edge WebView2
@@ -276,105 +235,66 @@ conceptualContent:
             - text: Microsoft Edge WebView2 API Reference
               url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
-
-# =============================================================================
-# Card
+        # Card
         - title: Test and automation
           links:
-
-            - text: Test and automation in Microsoft Edge  # new firstchild article
-              url: /microsoft-edge/test-and-automation/test-and-automation
+            - url: /microsoft-edge/devtools-protocol-chromium
+              itemType: how-to-guide
+              text: DevTools Protocol
+            - url: /microsoft-edge/origin-trials/index
               itemType: overview
-
-            - text: DevTools Protocol
-              url: /microsoft-edge/devtools-protocol-chromium
-              itemType: how-to-guide
-
-            - text: Origin Trials
-              url: /microsoft-edge/origin-trials/index
+              text: Origin Trials
+            - url: /microsoft-edge/playwright/index
               itemType: overview
-
-            - text: Playwright
-              url: /microsoft-edge/playwright/index
-              itemType: overview
-
-            - text: Puppeteer
-              url: /microsoft-edge/puppeteer
+              text: Playwright
+            - url: /microsoft-edge/puppeteer
               itemType: how-to-guide
-
-            - text: WebDriver
-              url: /microsoft-edge/webdriver-chromium
+              text: Puppeteer
+            - url: /microsoft-edge/webdriver-chromium
               itemType: how-to-guide
-
-            - text: webhint extension for Visual Studio Code
-              url: /microsoft-edge/visual-studio-code/webhint
+              text: WebDriver
+            - url: /microsoft-edge/visual-studio-code/webhint
               itemType: how-to-guide
-
-# =============================================================================
-# Card
+              text: webhint extension for Visual Studio Code
+        # Card
         - title: Web platform
           links:
-            - text: Web platform overview
-              url: /microsoft-edge/web-platform/web-platform
-              itemType: overview
-
-            - text: Detecting Microsoft Edge from your website
-              url: /microsoft-edge/web-platform/user-agent-guidance
+            - url: /microsoft-edge/web-platform/user-agent-guidance
               itemType: how-to-guide
-
-            - text: Detect Windows 11 using User-Agent Client Hints
-              url: /microsoft-edge/web-platform/how-to-detect-win11
+              text: Detecting Microsoft Edge from your website
+            - url: /microsoft-edge/web-platform/site-impacting-changes
               itemType: how-to-guide
-
-            - text: Site compatibility-impacting changes
-              url: /microsoft-edge/web-platform/site-impacting-changes
-              itemType: how-to-guide
-
-# =============================================================================
-# Card
+              text: Site compatibility-impacting changes
+        # Card
         - title: Microsoft Edge IDE integration
           links:
-            - text: Microsoft Edge IDE integration  # new firstchild article
-              url: /microsoft-edge/visual-studio-code/ide-integration
+            - url: /microsoft-edge/visual-studio/
               itemType: overview
-
-            - text: Visual Studio for web development
-              url: /microsoft-edge/visual-studio/
+              text: Visual Studio
+            - url: /microsoft-edge/visual-studio-code/
               itemType: overview
-
-            - text: Visual Studio Code for web development
-              url: /microsoft-edge/visual-studio-code/
+              text: Visual Studio Code overview
+            - url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
               itemType: overview
-
-            - text: DevTools extension for Visual Studio Code
-              url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
+              text: DevTools extension for Visual Studio Code
+            - url: /microsoft-edge/visual-studio-code/webhint
               itemType: overview
-
-            - text: webhint extension for Visual Studio Code
-              url: /microsoft-edge/visual-studio-code/webhint
-              itemType: overview
-
-# =============================================================================
-# Card
+              text: webhint extension for Visual Studio Code
+        # Card
         - title: Accessibility in Microsoft Edge
           links:
-            - text: Accessibility-testing features
-              url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+            - url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
               itemType: overview
-
-            - text: Accessibility in Microsoft Edge
-              url: /microsoft-edge/accessibility/
+              text: Accessibility-testing features
+            - url: /microsoft-edge/accessibility/
               itemType: overview
-
-            - text: Overview of accessibility testing using DevTools
-              url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
+              text: Accessibility overview
+            - url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
               itemType: how-to-guide
-
-            - text: Accessibility testing
-              url: /microsoft-edge/accessibility/test
+              text: Overview of accessibility testing using DevTools
+            - url: /microsoft-edge/accessibility/test
               itemType: how-to-guide
-
-
+              text: Accessibility testing
 # =============================================================================
 # additionalContent section (optional)
 # Card with summary style
@@ -384,46 +304,36 @@ additionalContent:
     - title: Help and Support # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
-
         # Card
-        - title: Community Support on Microsoft Q&A
+        - summary: Get advice and answers from community experts on Microsoft Q&A
+          title: Community Support on Microsoft Q&A
           url: /answers/topics/ms-edge.html
-          summary: Get advice and answers from community experts on Microsoft Q&A
-
         # Card
-        - title: Get no-cost help using App Assure
+        - summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft helps you fix your apps and websites at no additional cost.  See offer details for eligibility requirements.
+          title: Get no-cost help using App Assure
           url: https://fasttrack.microsoft.com/portal
-          summary: Microsoft is committed to ensuring your apps work on Microsoft Edge.  If you run into issues with your business apps or websites on the latest version of Edge, Microsoft helps you fix your apps and websites at no additional cost.  See offer details for eligibility requirements.
-
         # Card
-        - title: Microsoft Support for Business
+        - summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
+          title: Microsoft Support for Business
           url: https://support.microsoft.com/supportforbusiness/productselection?sapId=a77ee9b7-b6b6-aa08-d7b9-887ebe228207
-          summary: If your business needs immediate technical support for Microsoft Edge, 1:1 support from Microsoft is available using a variety of plans to help you get your required level of support.
-
         # Card
-        - title: User Support
+        - summary: Helpful support resources for users is available.
+          title: User Support
           url: https://support.microsoft.com/microsoft-edge
-          summary: Helpful support resources for users is available.
-
     - title: Reference and Legacy Docs # < 60 chars (optional)
       # summary: sectionsummary # < 160 chars (optional)
       items:
-
         # Card
         - title: Reference
           links:
             - text: How to detect Microsoft Edge in your website
               url: /microsoft-edge/web-platform/user-agent-guidance
-
             - text: Platform Status
               url: https://developer.microsoft.com/microsoft-edge/platform/status
-
             - text: Visual Studio Code
               url: /microsoft-edge/visual-studio-code/index
-
             - text: Privacy Whitepaper
               url: /microsoft-edge/privacy-whitepaper
-
         # Card
         - title: Microsoft Edge Legacy documentation
           links:
