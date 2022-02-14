@@ -46,19 +46,108 @@ With DevTools, you can do the following:
 <!-- ====================================================================== -->
 ## Opening DevTools
 
-To open DevTools, right-click any item on a webpage and then select **Inspect**.  DevTools opens, with the **Elements** tool selected.
+To open DevTools:
 
-![To open DevTools, right-click any item on a webpage and then click Inspect.](media/devtools-intro-inspect.msft.png)
+*  Right-click any item on a webpage and then select **Inspect**.  DevTools opens, with the **Elements** tool selected.
 
-DevTools opens, with the right-clicked element highlighted in the **Elements** tool:
+   ![To open DevTools, right-click any item on a webpage and then click Inspect.](media/devtools-intro-inspect.msft.png)
 
-![DevTools opens, with the right-clicked element highlighted in the Elements tool.](media/devtools-intro-inspect-devtools-open.png)
+   DevTools opens, with the right-clicked element highlighted in the **Elements** tool:
 
-Or, press `F12`.  DevTools opens, with the **Welcome** tool or the last-used tool selected.
+   ![DevTools opens, with the right-clicked element highlighted in the Elements tool.](media/devtools-intro-inspect-devtools-open.png)
 
-Or, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).  DevTools opens, with the **Welcome** tool or the last-used tool selected.
+*  Or, press `F12`.  DevTools opens, with the **Welcome** tool or the last-used tool selected.
 
-See also [Open DevTools](./open/index.md).
+*  Or, press `Ctrl`+`Shift`+`I` (on Windows/Linux) or `Command`+`Option`+`I` (on macOS).  DevTools opens, with the **Welcome** tool or the last-used tool selected.
+
+*  Or, in Microsoft Edge, select **Settings and more** (`...`) >  **More Tools** >  **Developer Tools**.
+
+<!-- See also [Keyboard shortcuts](../shortcuts/index.md). -->
+
+![Opening DevTools from the Microsoft Edge main menu.](../media/bing-customize-more-tools-developer-tools-transparent.msft.png)
+
+
+### Opening the Elements tool to inspect the DOM or CSS
+
+To inspect the styles or attributes of a DOM tree node, do either of the following:
+
+*  In the rendered webpage, right-click a page element, and then select **Inspect**.
+
+*  Or, press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS).  See [Keyboard shortcuts](../shortcuts/index.md).
+
+See also:
+
+* [DevTools for beginners: Get started with CSS](../beginners/css.md) 
+* [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) at MDN.
+
+<!-- ![The Inspect option.](../media/bing-right-click-inspect.msft.png) -->
+
+
+### Opening the Console panel
+
+In the **Console** tool, you can view logged messages, or enter JavaScript statements to evaluate in realtime.
+
+When you are viewing a webpage, to quickly go to the **Console** tool:
+
+*  Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+
+When DevTools is open, the **Console** tool is always present on the main toolbar and on the Drawer toolbar.
+
+
+See also:
+* [Console overview](console/index.md)
+* [Keyboard shortcuts](../shortcuts/index.md)
+
+
+### Returning to the previous tool
+
+When you're viewing a webpage, to return to the previous tool you used in DevTools:
+
+*  Press `Control`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+
+See [Keyboard shortcuts](../shortcuts/index.md).
+
+
+### Automatically opening DevTools when you open a new tab
+
+To have DevTools automatically open whenever you open a new tab in the browser:
+
+1. At the command line, open Microsoft Edge, passing in the `--auto-open-devtools-for-tabs` flag, as follows:
+
+   Windows command prompt:
+   
+   ```cmd
+   start msedge --auto-open-devtools-for-tabs
+   ```
+   
+   Windows PowerShell:
+   
+   ```powershell
+   Start-Process -FilePath "msedge" -ArgumentList "--auto-open-devtools-for-tabs"
+   ```
+   
+   bash shell on macOS:
+   
+   ```bash
+   /Applications/Microsoft\ Edge\ Beta.app/Contents/MacOS/Microsoft\ Edge\ Beta --auto-open-devtools-for-tabs
+   ```
+   
+   bash shell on Linux:
+   
+   ```bash
+   microsoft-edge-dev --auto-open-devtools-for-tabs
+   ```
+   
+
+### Turning off the F12 keyboard shortcut
+
+To prevent pressing `F12` from opening DevTools:
+
+1. In Microsoft Edge, go to `edge://settings/system`.
+
+1. In the **Developer Tools** section, turn off the **Open the DevTools when the F12 key is pressed** toggle.
+
+   ![In Edge Settings, disabling the F12 key for opening DevTools.](media/disable-f12.png)
 
 
 <!-- ====================================================================== -->

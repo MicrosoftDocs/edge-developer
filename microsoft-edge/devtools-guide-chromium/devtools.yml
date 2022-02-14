@@ -118,7 +118,7 @@ landingContent:
 
 # REAL CARDS
 # =============================================================================
-  - title: Real card 1
+  - title: Getting started with DevTools
     linkLists:
       - linkListType: concept
         links:
@@ -126,7 +126,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
 
 # =============================================================================
-  - title: Real card 2
+  - title: Use case set of articles 2
     linkLists:
       - linkListType: concept
         links:
@@ -134,7 +134,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/index
 
 # =============================================================================
-  - title: Real card 3
+  - title: Use case set of articles 3
     linkLists:
       - linkListType: concept
         links:
@@ -142,7 +142,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/open/index
 
 # =============================================================================
-  - title: Real card 4
+  - title: Use case set of articles 4
     linkLists:
       - linkListType: concept
         links:
@@ -150,7 +150,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/experimental-features/index
 
 # =============================================================================
-  - title: Real card 5
+  - title: Use case set of articles 5
     linkLists:
       - linkListType: concept
         links:
@@ -158,26 +158,22 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/02/devtools
 
 # =============================================================================
-  - title: Real card 6
+  - title: Use case set of articles 6
     linkLists:
       - linkListType: concept
         links:
           - text: CSS features reference
             url: /microsoft-edge/devtools-guide-chromium/css/reference
 
-# =============================================================================
-  - title: Real card 7
-    linkLists:
-      - linkListType: concept
-        links:
           - text: Get started with CSS
             url: /microsoft-edge/devtools-guide-chromium/beginners/css
+
 
 # /REAL CARDS
 # HOLDING-BIN DUMMY CARDS - MOVE ARTICLES UP FROM HERE TO REAL CARDS
 # =============================================================================
 # don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
-  - title: Giant holding bin card 1
+  - title: Temp. holding bin 1
     linkLists:
 
       - linkListType: architecture
@@ -364,7 +360,7 @@ landingContent:
 
 # =============================================================================
 # don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
-  - title: Giant holding bin card 2
+  - title: Temp. holding bin 2
     linkLists:
 
       - linkListType: architecture
@@ -573,7 +569,7 @@ landingContent:
 
 # =============================================================================
 # don't delete DevTools .md items; comment them out (Ctrl+/), then move them to bottom of file
-  - title: Giant holding bin card 3
+  - title: Temp. holding bin 3
     linkLists:
 
       - linkListType: architecture

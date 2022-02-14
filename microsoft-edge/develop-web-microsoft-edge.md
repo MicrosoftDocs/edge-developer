@@ -1,6 +1,6 @@
 ---
-title: Develop webpages and products for Microsoft Edge
-description: Develop webpages and products for Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
+title: Develop for the web with Microsoft Edge
+description: Develop for the web with Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,9 +8,9 @@ ms.prod: microsoft-edge
 ms.technology: devtools
 ms.date: 02/14/2022
 ---
-# Develop webpages and products for Microsoft Edge
+# Develop for the web with Microsoft Edge
 
-Develop webpages and products for Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
+Develop for the web with Microsoft Edge by using Microsoft Edge DevTools, Microsoft Edge extensions, Progressive Web Apps, WebDriver automation, WebView2, and more.
 
 
 <!-- ====================================================================== -->

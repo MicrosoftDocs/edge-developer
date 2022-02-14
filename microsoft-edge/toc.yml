@@ -2,35 +2,53 @@
   href: developer/index.yml
   items:
 # =============================================================================
-    - name: Develop webpages and products for Microsoft Edge  # new firstchild article
-      href: develop-for-microsoft-edge.md
+    - name: Develop for the web with Microsoft Edge  # new, topmost firstchild article
+      href: develop-web-microsoft-edge.md
       displayName: 
 
     - name: Microsoft Edge DevTools
       items:
+# Card-based landing page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation  # new landing page
           href: devtools-guide-chromium/devtools.yml
           displayName: DevTools
 
-        - name: Reasons to use Microsoft Edge DevTools  # new firstchild article
-          href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md
-          displayName: DevTools
-# UPPER NON-TOOLS NODES =======================================================
+
+
+# =========== todo: maybe merge these 3 articles into one:
+
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
           href: devtools-guide-chromium/index.md
           displayName: DevTools
+
+# New, advocacy article -------------------------------------------------------
+        - name: Reasons to use Microsoft Edge DevTools  # new firstchild article
+          href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md
+          displayName: DevTools
+
 # Opening DevTools ------------------------------------------------------------
+# todo: merge this into the "Open DevTools" section of "Overview of DevTools", delete .md:
         - name: Open DevTools
           href: devtools-guide-chromium/open/index.md
           displayName: DevTools
+
+# / Merge these 3 articles into one
+
 # What's New ------------------------------------------------------------------
         - name: What's new
           items:
+
+# Experimental features -------------------------------------------------------
+            - name: What's New in Microsoft Edge DevTools
+              href: devtools-guide-chromium/whats-new/whats-new.md
+              displayName: 
+
 # Experimental features -------------------------------------------------------
             - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
+
 # What's New pages ------------------------------------------------------------
             - name: Microsoft Edge 98
               href: devtools-guide-chromium/whats-new/2022/02/devtools.md
