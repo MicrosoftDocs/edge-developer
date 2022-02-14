@@ -16,8 +16,6 @@ Develop webpages and products for Microsoft Edge by using Microsoft Edge DevTool
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools
 
-<!-- update/replace the below text after "Reasons to use Microsoft Edge" article is drafted accordingly to fulfill this top-down, Progressive Disclosure model -->
-
 Microsoft Edge DevTools is a set of web development tools that appears next to a rendered webpage in the Microsoft Edge Browser.
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide powerful ways to inspect, debug, and even create web projects.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
@@ -32,11 +30,7 @@ With DevTools, you can do the following:
 
 *  Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
 
-See: 
-
-* [Overview of DevTools](devtools-guide-chromium/index.md)
-
-* [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/why-use-microsoft-edge-devtools.md)
+See [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/why-use-microsoft-edge-devtools.md) or [Overview of DevTools](devtools-guide-chromium/index.md).
 
 
 <!-- ====================================================================== -->
@@ -170,7 +164,11 @@ These are tips for using the documentation UI at docs.microsoft.com.
 <!-- ====================================================================== -->
 ## Zoom an image in the docs
 
-To see details of a screenshot or diagram, right-click the image, and then select **Open image in new tab**.  Close the image tab to return to the article.
+To see details of a screenshot or diagram:
+
+1. Right-click the image, and then select **Open image in new tab**.
+
+1. Close the image tab to return to the article.
 
 
 <!-- ====================================================================== -->
@@ -181,7 +179,7 @@ The multi-purpose **Filter by title** text box supports:
 *  Index term lookup of key words.
 *  Full-text searching the docs.
 
-In the **Filter by title** box in the upper left, enter a term or keyword to find:
+In the **Filter by title** box in the upper left, enter a term or key word to find:
 
 ![The multi-purpose "Filter by title" text box for navigating the TOC, searching the docs, and index term lookup of key words.](media/filter-by-title-ui.png)
 
@@ -193,8 +191,6 @@ The full-text search page initially searches all _Microsoft Edge_ docs.  Or, cli
 
 ![The full-text search page initially searches all Microsoft Edge docs, or click the link 'View all results on Microsoft Docs' for a broader search.](media/full-text-search-page.png)
 
-<!-- alt-text: 40-150 chars -->
-
 
 <!-- ====================================================================== -->
 ## Report or fix errors or bugs in the docs
@@ -205,6 +201,4 @@ For feedback, log issues, enter issues, report issues, reporting issues, support
 * [Contact Microsoft Edge extensions support](extensions-chromium/publish/contact-extensions-team.md)
 * [Contact the WebView2 team](webview2/contact.md)
 
-To enter an Issue at GitHub for this repo, at the bottom of the page, use the GitHub link and button.
-
-If you are signed in to Microsoft corpnet, you might see an **Edit** button in the upper right.  You can submit a forked Pull Request to push commits to this documentation repo.
+To submit and view feedback for a page, at the bottom of the page, click the **This page** button.
