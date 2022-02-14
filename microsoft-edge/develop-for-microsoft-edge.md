@@ -81,20 +81,14 @@ See [Introduction to Microsoft Edge WebView2](webview2/index.md).
 <!-- ====================================================================== -->
 ## Test and automation
 
-Tools to automate testing in Microsoft Edge:
+The following are tools to automate testing in Microsoft Edge:
 
 *  **DevTools Protocol** is used to instrument, inspect, debug, and profile browsers.
-
 *  Use **Origin Trials** to try experimental APIs.
-
 *  **Playwright** provides cross-browser automation through a single API.
-
 *  **Puppeteer**'s API controls Microsoft Edge via DevTools Protocol.
-
 *  **WebDriver** simulates user interaction with Microsoft Edge.
-
 *  **webhint** linting checks code for errors and best practices.
-<!-- todo: move DevTools Protocol w/ Puppeteer) -->
 
 See [Test and automation in Microsoft Edge](test-and-automation/test-and-automation.md).
 
@@ -102,19 +96,14 @@ See [Test and automation in Microsoft Edge](test-and-automation/test-and-automat
 <!-- ====================================================================== -->
 ## Web platform
 
-_Web platform_ covers aspects of web development such as:
+Considerations for developing websites and products for the web platform include the following:
 
-*  Site compatibility-impacting changes coming to Microsoft Edge.
-
-*  Move users to Microsoft Edge from Internet Explorer.
-
-*  Tracking prevention in Microsoft Edge.
-
-*  Detect Microsoft Edge from your website.
-
-*  Detect Windows 11 using User-Agent Client Hints.
-
-*  Customize the password reveal button.
+*  Testing for coming changes that could impact compatibility of your website with Microsoft Edge.
+*  Moving users to Microsoft Edge from Internet Explorer.
+*  Configuring tracking prevention in Microsoft Edge.
+*  Detecting Microsoft Edge from your website.
+*  Customizing the Password Reveal button.
+*  Detecting Windows 11 by using User-Agent Client Hints.
 
 See [Web platform](web-platform/web-platform.md).
 
