@@ -182,7 +182,8 @@ The **Issues** tool automatically shows you all the things that need fixing in t
 Current problems of a webpage displayed in the Issues panel:
 
 ![Current problems of a webpage displayed in the Issues panel.](media/webpage-problems-displayed-in-issues-panel.png)
-<!-- the above is a new png for the present article with fresh capture -->
+<!-- valid good new png content - 
+the above is a new png for the present article with fresh capture -->
 
 
 ### Integration of Microsoft Edge DevTools with Visual Studio Code
