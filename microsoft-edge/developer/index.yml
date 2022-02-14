@@ -215,7 +215,7 @@ landingContent:
           - text: Accessibility-testing features
             url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
 
-          - text: Accessibility overview
+          - text: Accessibility in Microsoft Edge
             url: /microsoft-edge/accessibility/
       - linkListType: how-to-guide
         links:

@@ -11,12 +11,12 @@ ms.date: 07/27/2021
 
 Microsoft [Visual Studio](https://visualstudio.microsoft.com/vs) is an integrated development environment (IDE).  Use it to edit, debug, build, and publish your web apps.  Visual Studio is a feature-rich program that can be used for many aspects of your web development.
 
-In addition to the standard editor and debugger that most IDEs provide, Visual Studio includes the following features to ease your development process:
+In addition to the standard editor and debugger that most IDEs provide, Visual Studio includes features to ease your development process, including:
 
-*  Compilers.
-*  Code completion tools.
-*  Graphical designers.
-*  And many more features.
+*   Compilers.
+*   Code completion tools.
+*   Graphical designers.
+*   And many more features.
 
 If you aren't already using Visual Studio, go to [Download Visual Studio](https://visualstudio.microsoft.com/downloads) to download it.
 

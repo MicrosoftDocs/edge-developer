@@ -515,7 +515,7 @@ You can now open more tools using the new **More Tools** (![The 'More Tools' ico
 
 ### Enable Welcome tab
 
-The Welcome tab was an experiment starting with Microsoft Edge version 89. It is a regular feature as of version 94.
+The Welcome tab was an experiment starting with Microsoft Edge version 89.  It's a regular feature as of version 94.
 
 This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.
 

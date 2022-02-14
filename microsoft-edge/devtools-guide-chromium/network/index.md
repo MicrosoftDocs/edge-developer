@@ -242,7 +242,7 @@ The **Filter** text box supports many different types of filtering.
 
    :::image type="content" source="../media/network-glitch-network-filter-regex.msft.png" alt-text="A regular expression filter." lightbox="../media/network-glitch-network-filter-regex.msft.png":::
 
-1. Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it is also filtered out.
+1. Type `-main.css`.  DevTools filters out `main.css`.  If any file matches that pattern, it's also filtered out.
 
    :::image type="content" source="../media/network-glitch-network-filter-negative-statement.msft.png" alt-text="A negative filter." lightbox="../media/network-glitch-network-filter-negative-statement.msft.png":::
 

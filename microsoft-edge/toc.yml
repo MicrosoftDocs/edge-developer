@@ -1089,7 +1089,7 @@
 # =============================================================================
     - name: Accessibility in Microsoft Edge
       items:
-        - name: Accessibility overview  # existing firstchild article
+        - name: Accessibility in Microsoft Edge  # existing firstchild article
           href: accessibility/index.md
           displayName: 
 
