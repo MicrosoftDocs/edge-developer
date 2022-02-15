@@ -226,7 +226,7 @@
                   href: devtools-guide-chromium/console/console-filters.md
                   displayName: Console tool
 # Sources tool ----------------------------------------------------------------
-            - name: Sources tool, for JavaScript debugging
+            - name: Sources tool, for editing files and debugging JavaScript
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
