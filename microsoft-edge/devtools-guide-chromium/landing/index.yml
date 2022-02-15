@@ -185,7 +185,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
+
           - text: Analyze pages using the Inspect tool
             url: /microsoft-edge/devtools-guide-chromium/css/inspect
           - text: Get started viewing and changing CSS
