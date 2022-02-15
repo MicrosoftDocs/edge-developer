@@ -26,7 +26,7 @@ Here are some best practices, code samples, and further resources for you to lea
 
 
 <!-- ====================================================================== -->
-## Accessibility in Microsoft Edge
+## Microsoft UI Automation API
 
 In Microsoft Edge, we introduced the [UI Automation API](/windows/win32/winauto/entry-uiauto-win32) (UIA API).  This change to UI automation was a major investment in browser accessibility.  The UI Automation API lays the foundation for a more inclusive web experience for users who depend on assistive technology in Windows 10 or later.
 
@@ -34,9 +34,9 @@ The Microsoft UI Automation API is an accessibility framework that enables Windo
 
 The [Microsoft Windows UI Automation blog](/archive/blogs/winuiautomation/) has posts about the Windows Automation API.
 
-The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer.
+The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer:
 
-:::image type="content" source="./media/accessibilityarchitecture.png" alt-text="Content transformed to the engine model is projected into visual and accessibility views that are presented either as visual or accessible presentation.":::
+![Content transformed to the engine model is projected into visual and accessibility views, presented as visual or accessible presentation.](media/accessibilityarchitecture.png)
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.
 

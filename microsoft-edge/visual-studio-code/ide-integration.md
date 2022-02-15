@@ -24,7 +24,7 @@ With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can u
 *  Update the layout.
 *  Fix styling issues.
 
-[Visual Studio Code for web development](index.md)
+See [Visual Studio Code for web development](index.md).
 
 
 <!-- ====================================================================== -->
@@ -39,4 +39,4 @@ In addition to the standard editor and debugger that most IDEs provide, Visual S
 *   Graphical designers.
 *   And many more features.
 
-[Visual Studio for web development](../visual-studio/index.md)
+See [Visual Studio for web development](../visual-studio/index.md).
