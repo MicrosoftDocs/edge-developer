@@ -230,8 +230,8 @@ landingContent:
   - title: Temp. holding bin 1
     linkLists:
 
-      - linkListType: architecture
-        links:
+      # - linkListType: architecture
+      #   links:
 
           # - text: What's New in DevTools (Microsoft Edge 96)
           #   url: /microsoft-edge/devtools-guide-chromium/whats-new/2021/11/devtools
@@ -245,8 +245,8 @@ landingContent:
           # - text: What's New in DevTools (Microsoft Edge 93)
           #   url: /microsoft-edge/devtools-guide-chromium/whats-new/2021/07/devtools
 
-      - linkListType: concept
-        links:
+      # - linkListType: concept
+      #   links:
 
           # - text: What's New in DevTools (Microsoft Edge 92)
           #   url: /microsoft-edge/devtools-guide-chromium/whats-new/2021/05/devtools
@@ -670,4 +670,3 @@ landingContent:
 # don't delete DevTools articles from this file; comment them out (Ctrl+/), then move them to bottom of file
 
 # Archive of all the commented-out (not-used) articles
-
