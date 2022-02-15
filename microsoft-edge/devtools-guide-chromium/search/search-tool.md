@@ -9,7 +9,7 @@ ms.date: 10/28/2021
 ---
 # Find source files for a page using the Search tool
 
-Use the **Search** tool to find specific source files for a webpage.
+Use the **Search** tool to find specific source files for a webpage, including HTML, CSS, JavaScript, and image files.
 
 A webpage is mainly an HTML file that's used by the browser to display content.  But webpages commonly require other resources in addition to the HTML file, such as CSS, JavaScript, or image files, to provide richer content.
 

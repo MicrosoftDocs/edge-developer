@@ -9,11 +9,17 @@ ms.date: 11/30/2021
 ---
 # Debug DOM memory leaks with the Detached Elements tool
 
-A memory leak can occur in your application when an element is no longer attached to the Document Object Model (DOM) tree, but is still referenced by some JavaScript running on the page. These elements are called *detached elements*. For the browser to garbage-collect (GC) the detached element, the element must not be referenced from either the DOM tree or JavaScript code.
+Use the **Detached Elements** tool to find detached elements that the browser cannot garbage-collect, and locate the JavaScript object that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page.
 
-This article describes how to use the **Detached Elements** tool in Microsoft Edge DevTools to find detached elements that the browser cannot GC in a demo application and identify the JavaScript that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page.
+A memory leak can occur in your application when an element is no longer attached to the Document Object Model (DOM) tree, but is still referenced by some JavaScript running on the page. These elements are called *detached elements*.  For the browser to garbage-collect (GC) the detached element, the element must not be referenced from the DOM tree or from JavaScript code.
 
 For more information about heap snapshots and detached elements, read [Discover detached DOM tree memory leaks with Heap Snapshots](index.md#discover-detached-dom-tree-memory-leaks-with-heap-snapshots).
+
+As explained in [Fix memory problems](index.md), memory issues affect page performance, including memory leaks, memory bloat, and frequent garbage collections.  Symptoms for your users include:
+
+*  The performance of a page gets progressively worse over time.
+*  The performance of a page is consistently bad.
+*  The performance of a page is delayed or appears to pause frequently.
 
 
 <!-- ====================================================================== -->

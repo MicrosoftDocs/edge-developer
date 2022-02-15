@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and debug media players information
 
-Use the **Media** tool in Microsoft Edge DevTools to view information and debug the media players per browser tab.
+Use the **Media** tool to view information and debug the media players per browser tab.
 
 
 <!-- ====================================================================== -->

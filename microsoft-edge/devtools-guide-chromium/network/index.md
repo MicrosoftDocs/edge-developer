@@ -22,6 +22,8 @@ ms.date: 05/04/2021
    limitations under the License. -->
 # Inspect network activity
 
+Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size.
+
 This is a step-by-step tutorial walkthrough of the **Network** tool, for inspecting network activity for a page.
 
 For an overview of the network-related DevTools features, see [Network features reference](./reference.md).

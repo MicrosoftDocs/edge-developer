@@ -150,6 +150,10 @@
 # Elements tool ---------------------------------------------------------------
             - name: Elements tool, for CSS, HTML, and the DOM
               items:
+                - name: Inspect, edit, and debug HTML and CSS with the Elements tool
+                  href: devtools-guide-chromium/elements-tool/elements-tool.md
+                  displayName: Elements tool
+
                 - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
                   displayName: Elements tool
@@ -275,7 +279,7 @@
 # Animations tool -------------------------------------------------------------
             - name: Animations tool
               items:
-                - name: Inspect animations
+                - name: Inspect and modify CSS animation effects
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
@@ -341,9 +345,9 @@
                   href: devtools-guide-chromium/memory-problems/dom-leaks.md
                   displayName: Detached Elements tool
 # Developer Resources tool ----------------------------------------------------
-            # - name: Developer Resources tool  # un-comment node when add article or jump page to repo
-            #   items:
-            #       displayName: Developer Resources tool
+            - name: Developer Resources tool
+              items:
+                  displayName: Developer Resources tool
 # Issues tool -----------------------------------------------------------------
             - name: Issues tool
               items:
@@ -351,11 +355,15 @@
                   href: devtools-guide-chromium/issues/index.md
                   displayName: Issues tool
 # JavaScript Profiler tool ----------------------------------------------------
-            #   deprecated  # keep commented-out node while tool remains in More Tools menu
+                - name: JavaScript Profiler tool
+                  href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
+                  displayName: Issues tool
 # Layers tool -----------------------------------------------------------------
-            # - name: Layers tool  # un-comment node when add article or jump page to repo
-            #   items:
-            #       displayName: Layers tool
+            - name: Layers tool
+              items:
+                - name: Layers tool
+                  href: devtools-guide-chromium/layers/layers-tool.md
+                  displayName: Layers tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:

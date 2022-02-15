@@ -23,6 +23,7 @@ click the **More Tools** (![More Tools icon.](media/more-tools-icon-light-theme.
 click the **JavaScript errors counter** (![JavaScript errors counter icon.](media/javascript-counter-icon-light-theme.png)) button.
 click the **Issues counter** (![Issues counter icon.](media/issues-counter-icon-light-theme.png)) button.
 click the **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button.
+select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png))
 click the **Send Feedback** (![Send Feedback icon.](media/send-feedback-icon-light-theme.png)) button.
 click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) menu button.
 click the **Close** DevTools (![Close DevTools icon.](media/close-devtools-icon-light-theme.png)) button.
@@ -51,14 +52,14 @@ With DevTools, you can do the following:
 
 To open DevTools, in Microsoft Edge, do any of the following:
 
-| Method | Tool |
+| Action | Resulting tool |
 |---|---|
 | Right-click any item on a webpage, and then select **Inspect**. | **Elements** (DOM expanded to the page element) |
-| Microsoft Edge toolbar > **Settings and more** (`...`) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
-| `F12` | Previous tool (or **Welcome**). |
-| `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS)| Previous tool (or **Welcome**) |
-| `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) | **Console** |
-| `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS) | **Elements** (DOM expanded to `<body>`) |
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
+| Press `F12` | Previous tool (or **Welcome**). |
+| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS)| Previous tool (or **Welcome**) |
+| Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) | **Console** |
+| Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS) | **Elements** (DOM expanded to `<body>`) |
 
 <!--
 Keep this comment.
@@ -119,7 +120,7 @@ DevTools opens, with the right-clicked element highlighted in the **DOM tree** i
 
 On the Microsoft Edge toolbar, you can select **Settings and more** (`...`) >  **More tools** >  **Developer tools**:
 
-![Opening DevTools from the Microsoft Edge main menu.](media/bing-customize-more-tools-developer-tools-transparent.msft.png)
+![On the Microsoft Edge toolbar, select 'Settings and more' > 'More tools' > 'Developer tools'.](media/edge-settings-and-more-tools-developer-tools.png)
 
 
 ### Have DevTools automatically open when you open a new tab
@@ -187,13 +188,13 @@ DevTools gives you an amazing amount of power to inspect, debug, and change the 
 
 There are two toolbars: the main toolbar at the top of DevTools, and the **Drawer** at the bottom when you press `Esc`.
 
-By default, the main toolbar contains the following features:
+The main toolbar contains the following features:
 
 * Icon tools:
    *  **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) toggle button.
    *  **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button.
 
-* Tool tabs (most are optional):
+* Tool tabs:
    *  **Welcome** tool.
    *  **Elements** tool.  Permanent.
    *  **Console** tool.  Permanent.
@@ -244,7 +245,7 @@ Includes information about the new features of DevTools, how to contact the team
 
 ### Elements tool
 
-Allows you to edit or inspect HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
+Allows you to inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.
 
 The **Elements** tool is always present on the main toolbar.
 
@@ -370,46 +371,46 @@ Click the **Close** DevTools (![Close DevTools icon.](media/close-devtools-icon-
 
 
 <!-- ====================================================================== -->
-## List of all tools
+## Overview of all tools
 
 DevTools includes the following tools.
 <!-- add Desc column -->
 
-| Tool | Article |
-| --- | --- |
-| **3D View** tool | [Navigate z-index, DOM, and layers using the 3D View tool](3d-view/index.md) |
-| **Animations** tool | [Inspect animations](inspect-styles/animations.md) |
-| **Application** tool | [View, edit, and delete cookies](storage/cookies.md) |
-| **Changes** tool | [Track changes to files using the Changes tool](changes/changes-tool.md) |
-| **Console** tool | [Console overview](console/index.md) |
-| **Coverage** tool | [Find unused JavaScript and CSS code with the Coverage tool](coverage/index.md) |
-| **CSS Overview** tool | Identify potential CSS improvements. <!-- (issues/index.md) --> |
-| **Detached Elements** tool | [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md) |
-| **Developer Resources** tool |  |
-| **Device Emulation** | [Emulate mobile devices (Device Emulation)](device-mode/index.md) |
-| **Elements** tool | [CSS features reference](css/reference.md) |
-| **Inspect** tool | [Analyze pages using the Inspect tool](css/inspect.md) |
-| **Issues** tool | [Find and fix problems using the Issues tool](issues/index.md) |
-| **JavaScript Profiler** tool | Deprecated. |
-| **Layers** tool |  |
-| **Lighthouse** tool | [Lighthouse tool](lighthouse/lighthouse-tool.md) |
-| **Media** tool | [View and debug media players information](media-panel/index.md) |
-| **Memory** tool | [Fix memory problems](memory-problems/index.md) |
-| **Memory Inspector** tool | Inspect JavaScript ArrayBuffer with the Memory Inspector. <!-- (memory-inspector/index.md) --> |
-| **Network** tool | [Inspect network activity](network/index.md) |
-| **Network conditions** tool | [Network conditions tool](network-conditions/network-conditions-tool.md) |
-| **Network request blocking** tool |  |
-| **Performance** tool | [Get started analyzing runtime performance](evaluate-performance/index.md) |
-| **Performance monitor** tool | [Measure runtime performance of a page using the Performance monitor tool](performance-monitor/performance-monitor-tool.md) |
-| **Quick source** tool | [Display or edit source files using the Quick source tool](quick-source/quick-source-tool.md) |
-| **Rendering** tool | [Emulate dark or light schemes in the rendered page](accessibility/preferred-color-scheme-simulation.md) |
-| **Search** tool | [Find source files for a page using the Search tool](search/search-tool.md) |
-| **Security** tool | [Understand security issues using the Security tool](security/index.md) |
-| **Sensors** tool | [Simulate device orientation with the Sensors tool](device-mode/orientation.md) |
-| **Sources** tool | [Sources tool overview](sources/index.md) |
-| **WebAudio** tool |  |
-| **WebAuthn** tool | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
-| **Welcome** tool |  |
+| Tool | Description | Article |
+| --- | --- | --- |
+| **3D View** tool | Explore the web page translated into a 3D perspective.  Debug your webpage by navigating through the DOM or z-index stacking context. | [Navigate z-index, DOM, and layers using the 3D View tool](3d-view/index.md) |
+| **Animations** tool | Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool. | [Inspect and modify CSS animation effects](inspect-styles/animations.md) |
+| **Application** tool | _HTTP cookies_ are used to manage user sessions, store user personalization preferences, and track user behavior.  Use the **Cookies** pane of the **Application** tool to view, edit, and delete the HTTP cookies for a webpage. | [View, edit, and delete cookies](storage/cookies.md) |
+| **Changes** tool | Tracks any changes you've made to CSS or JavaScript in DevTools.  Shows you what changes to make to your actual source files after you use DevTools to modify your webpage files sent from the server. | [Track changes to files using the Changes tool](changes/changes-tool.md) |
+| **Console** tool | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](console/index.md) |
+| **Coverage** tool | Help you find unused JavaScript and CSS code, to speed up your page load and save your mobile users cellular data. | [Find unused JavaScript and CSS code with the Coverage tool](coverage/index.md) |
+| **CSS Overview** tool | Help you better understand your page's CSS and identify potential improvements. <!-- (issues/index.md) --> |
+| **Detached Elements** tool | To increase the performance of your page, this tool finds detached elements that the browser cannot garbage-collect, and identifies the JavaScript object that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page, increasing page performance and responsiveness. | [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md) |
+| **Developer Resources** | Shows resource URLs for the webpage. | [Developer Resources tool](developer-resources\developer-resources.md) |
+| **Device Emulation** | Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](device-mode/index.md) |
+| **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](elements-tool/elements-tool.md) |
+| **Inspect** tool | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay information and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](css/inspect.md) |
+| **Issues** tool | The **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues. | [Find and fix problems using the Issues tool](issues/index.md) |
+| **JavaScript Profiler** tool | This tool has been replaced by the **Performance** tool and the **Memory** tool. | [JavaScript Profiler tool](javascript-profiler/javascript-profiler-tool.md) |
+| **Layers** tool | The **Layers** tool represents the webpage in a 3D space.  The **Layers** tool has essentially been replaced by the **3D View** tool. | [Layers tool](layers/layers-tool.md) |
+| **Lighthouse** tool | Use the Lighthouse tool to identify and fix common problems that affect your site's performance, accessibility, and user experience. | [Lighthouse tool](lighthouse/lighthouse-tool.md) |
+| **Media** tool | Use this tool to view information and debug the media players per browser tab. | [View and debug media players information](media-panel/index.md) |
+| **Memory** tool | Find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections. | [Fix memory problems](memory-problems/index.md) |
+| **Memory Inspector** tool | Inspect JavaScript ArrayBuffer with the Memory Inspector. | <!-- [Memory inspector tool](memory-inspector/memory-inspector.md) file created, not in TOC yet --> |
+| **Network** tool | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](network/index.md) |
+| **Network conditions** tool | Use the **Network conditions** tool to disable the browser cache, set network throttling, set the user agent string, and set Content-Encodings such as deflate, gzip, and br. | [Network conditions tool](network-conditions/network-conditions-tool.md) |
+| **Network request blocking** tool |  |  |
+| **Performance** tool | Analyze runtime performance, which is how your page performs when it's running, as opposed to loading. | [Get started analyzing runtime performance](evaluate-performance/index.md) |
+| **Performance monitor** tool | Provides a real-time view of the runtime performance of a webpage, to determine where performance problems come from, making a website run slowly.  Finds whether problems are from high memory or CPU usage, too-frequent layout and style calculations, or too many DOM nodes and event listeners. | [Measure runtime performance of a page using the Performance monitor tool](performance-monitor/performance-monitor-tool.md) |
+| **Quick source** tool | Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool. | [Display or edit source files using the Quick source tool](quick-source/quick-source-tool.md) |
+| **Rendering** tool | Use the **Rendering** tool to see what your webpage looks like with different display options or vision deficiencies. | [Emulate dark or light schemes in the rendered page](accessibility/preferred-color-scheme-simulation.md) |
+| **Search** tool | Use the **Search** tool to find specific source files for a webpage, including HTML, CSS, JavaScript, and image files. | [Find source files for a page using the Search tool](search/search-tool.md) |
+| **Security** tool | Inspects the security of a page. | [Understand security issues using the Security tool](security/index.md) |
+| **Sensors** tool | Simulates different device orientations. | [Simulate device orientation with the Sensors tool](device-mode/orientation.md) |
+| **Sources** tool | Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and inspect and edit the HTML and CSS files that make up the current webpage. | [Sources tool overview](sources/index.md) |
+| **WebAudio** tool |  |  |
+| **WebAuthn** tool | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
+| **Welcome** tool |  |  |
 
 <!-- | **Recorder** tool | Record, replay and measure user flows. | (recorder/recorder-tool.md) | -->
 

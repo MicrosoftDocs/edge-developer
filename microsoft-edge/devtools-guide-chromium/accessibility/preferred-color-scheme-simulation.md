@@ -9,6 +9,8 @@ ms.date: 08/03/2021
 ---
 # Emulate dark or light schemes in the rendered page
 
+Use the **Rendering** tool to see what your webpage looks like with different display options or vision deficiencies.
+
 Many operating systems have a way to display any application in darker or lighter colors.  Having a web product that has a light scheme in a dark-mode operating system can be hard to read and can be an accessibility issue for some users.
 
 To test how a webpage will render when the user has selected dark or light mode, instead of changing your own machine's dark-mode or light-mode setting, you can select **Emulate CSS prefers-color-scheme: dark** or **light** in Microsoft Edge DevTools.  You can do this from the **Rendering** tool or from the **Command Menu**, as described below.

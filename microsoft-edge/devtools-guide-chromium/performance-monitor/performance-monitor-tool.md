@@ -9,7 +9,7 @@ ms.date: 10/28/2021
 ---
 # Measure runtime performance of a page using the Performance monitor tool
 
-Use the **Performance monitor** tool in Microsoft Edge DevTools to get a real-time view of the runtime performance of a webpage.
+Use the **Performance monitor** tool to get a real-time view of the runtime performance of a webpage.
 
 The **Performance monitor** tool helps determine where performance problems come from.  There are various reasons why a website might run slowly.  This tool provides clues to understand whether the problems are related to causes such as the following:
 *  High memory or CPU usage.

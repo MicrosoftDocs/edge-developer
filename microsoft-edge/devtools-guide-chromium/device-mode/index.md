@@ -22,7 +22,9 @@ ms.date: 07/19/2021
    limitations under the License.  -->
 # Emulate mobile devices (Device Emulation)
 
-Use **Device emulation** <!--aka "Device Mode"--> to approximate how your page looks and responds on a mobile device.  DevTools provides the following mobile device emulation features:
+Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and responds on a mobile device.
+
+DevTools provides the following mobile device emulation features:
 
 * [Simulate a mobile viewport](#simulate-a-mobile-viewport)
 * [Throttle the network](#throttle-the-network-only)

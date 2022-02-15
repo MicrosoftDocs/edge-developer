@@ -389,7 +389,7 @@ landingContent:
           - text: Navigate z-index, DOM, and layers using the 3D View tool
             url: /microsoft-edge/devtools-guide-chromium/3d-view/index
 
-          - text: Inspect animations
+          - text: Inspect and modify CSS animation effects
             url: /microsoft-edge/devtools-guide-chromium/inspect-styles/animations
 
           - text: View, edit, and delete cookies

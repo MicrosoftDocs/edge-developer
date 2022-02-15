@@ -11,7 +11,7 @@ ms.date: 05/04/2021
 
 <!--todo: remove notice at bottom, or add notice here?-->
 
-Instead of debugging Web Authentication in your website or app with physical authenticators, use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.
+Instead of debugging Web Authentication in your website or app with physical authenticators, use the **WebAuthn** tool to create and interact with software-based virtual authenticators.
 
 
 <!-- ====================================================================== -->
