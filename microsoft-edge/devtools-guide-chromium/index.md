@@ -235,7 +235,7 @@ Click the **Device Emulation** (![Device Emulation icon.](media/device-emulation
 
 ![DevTools display of this article in an emulated mobile phone.](media/devtools-intro-device-emulation.msft.png)
 
-See [Emulate mobile devices (Device Emulation)](device-mode\index.md).
+See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 
 
 ### Welcome tool
@@ -301,7 +301,9 @@ See [Lighthouse tool](lighthouse/lighthouse-tool.md).
 
 ### CSS Overview tool
 
-Identify potential CSS improvements.  Article pending. <!-- (issues/index.md) -->
+Identify potential CSS improvements.
+
+See [CSS Overview tool](css/css-overview-tool.md).
 
 
 ### More tabs button
@@ -384,9 +386,9 @@ DevTools includes the following tools.
 | **Changes** tool | Tracks any changes you've made to CSS or JavaScript in DevTools.  Shows you what changes to make to your actual source files after you use DevTools to modify your webpage files sent from the server. | [Track changes to files using the Changes tool](changes/changes-tool.md) |
 | **Console** tool | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](console/index.md) |
 | **Coverage** tool | Help you find unused JavaScript and CSS code, to speed up your page load and save your mobile users cellular data. | [Find unused JavaScript and CSS code with the Coverage tool](coverage/index.md) |
-| **CSS Overview** tool | Help you better understand your page's CSS and identify potential improvements. <!-- (issues/index.md) --> |
+| **CSS Overview** tool | Help you better understand your page's CSS and identify potential improvements. | [CSS Overview tool](css/css-overview-tool.md) |
 | **Detached Elements** tool | To increase the performance of your page, this tool finds detached elements that the browser cannot garbage-collect, and identifies the JavaScript object that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page, increasing page performance and responsiveness. | [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md) |
-| **Developer Resources** | Shows resource URLs for the webpage. | [Developer Resources tool](developer-resources\developer-resources.md) |
+| **Developer Resources** | Shows resource URLs for the webpage. | [Developer Resources tool](developer-resources/developer-resources.md) |
 | **Device Emulation** | Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](device-mode/index.md) |
 | **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](elements-tool/elements-tool.md) |
 | **Inspect** tool | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay information and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](css/inspect.md) |
@@ -396,7 +398,7 @@ DevTools includes the following tools.
 | **Lighthouse** tool | Use the Lighthouse tool to identify and fix common problems that affect your site's performance, accessibility, and user experience. | [Lighthouse tool](lighthouse/lighthouse-tool.md) |
 | **Media** tool | Use this tool to view information and debug the media players per browser tab. | [View and debug media players information](media-panel/index.md) |
 | **Memory** tool | Find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections. | [Fix memory problems](memory-problems/index.md) |
-| **Memory Inspector** tool | Inspect JavaScript ArrayBuffer with the Memory Inspector. | <!-- [Memory inspector tool](memory-inspector/memory-inspector.md) file created, not in TOC yet --> |
+| **Memory Inspector** tool | Inspect JavaScript ArrayBuffer with the Memory Inspector. | [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](memory-inspector/memory-inspector-tool.md) |
 | **Network** tool | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](network/index.md) |
 | **Network conditions** tool | Use the **Network conditions** tool to disable the browser cache, set network throttling, set the user agent string, and set Content-Encodings such as deflate, gzip, and br. | [Network conditions tool](network-conditions/network-conditions-tool.md) |
 | **Network request blocking** tool |  |  |

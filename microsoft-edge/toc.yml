@@ -333,11 +333,11 @@
                   href: devtools-guide-chromium/coverage/index.md
                   displayName: Coverage tool
 # CSS Overview tool -----------------------------------------------------------
-            # - name: CSS Overview tool  # un-comment node when add article to repo
-            #   items:
-            #     - name: Identify potential CSS improvements  # pending
-            #       href: devtools-guide-chromium/issues/index.md  # pending
-            #       displayName: CSS Overview tool
+            - name: CSS Overview tool
+              items:
+                - name: Identify potential CSS improvements  # real content pending
+                  href: devtools-guide-chromium/css/css-overview-tool.md
+                  displayName: CSS Overview tool
 # Detached Elements tool ------------------------------------------------------
             - name: Detached Elements tool
               items:
@@ -357,9 +357,11 @@
                   href: devtools-guide-chromium/issues/index.md
                   displayName: Issues tool
 # JavaScript Profiler tool ----------------------------------------------------
+            - name: JavaScript Profiler tool
+              items:
                 - name: JavaScript Profiler tool
                   href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
-                  displayName: Issues tool
+                  displayName: JavaScript Profiler tool
 # Layers tool -----------------------------------------------------------------
             - name: Layers tool
               items:
@@ -401,11 +403,11 @@
                   href: devtools-guide-chromium/rendering-tools/js-runtime.md
                   displayName: Memory tool
 # Memory Inspector tool -------------------------------------------------------
-            # - name: Memory Inspector tool  # un-comment node when add article to repo
-            #   items:
-            #     - name: Inspect JavaScript ArrayBuffer with the Memory Inspector  # pending
-            #       href: devtools-guide-chromium/memory-inspector/index.md  # pending
-            #       displayName: Memory Inspector tool
+            - name: Memory Inspector tool
+              items:
+                - name: Inspect a JavaScript ArrayBuffer with the Memory Inspector tool  # real content pending
+                  href: devtools-guide-chromium/memory-inspector/memory-inspector-tool.md
+                  displayName: Memory Inspector tool
 # Network tool ----------------------------------------------------------------
             - name: Network tool
               items:
