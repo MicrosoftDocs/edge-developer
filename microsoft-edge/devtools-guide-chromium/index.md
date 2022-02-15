@@ -78,7 +78,6 @@ don't need, if have the above step:
 1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button.
 
 
-
 ### Clipboard entry for opening a specific Settings page:
 
 
