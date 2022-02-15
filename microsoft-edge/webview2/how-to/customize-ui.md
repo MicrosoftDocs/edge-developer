@@ -20,7 +20,7 @@ Use the **ContextMenuRequested** API to customize the context-menu experience.  
 
 *  Create your own context menu UI by using data that's passed from the WebView2 control to your app.
 
-See [Add a custom right-click menu to a WebView2 app](customize-ui.md).
+See [Add a custom right-click menu to a WebView2 app](context-menus.md).
 
 
 <!-- ====================================================================== -->
