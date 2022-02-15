@@ -32,6 +32,7 @@ Microsoft Edge DevTools is a set of web development tools that appears next to a
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects.  These developer tools are partly based on the tools in the Chromium open-source project.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
 
+
 With DevTools, you can do the following:
 
 *  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including .html, .css, .js, and .png data formats.
@@ -40,7 +41,7 @@ With DevTools, you can do the following:
 
 *  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
-*  Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
+*  Find accessibility, performance, compatibility, and security issues in your products, and learn how to use DevTools to fix the accessibility issues that are found.
 
 *  Use a development environment to sync changes in DevTools with the file system and from the web.
 
@@ -410,6 +411,8 @@ DevTools includes the following tools.
 | **WebAuthn** tool | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
 | **Welcome** tool |  |
 
+<!-- | **Recorder** tool | Record, replay and measure user flows. | (recorder/recorder-tool.md) | -->
+
 
 <!-- ====================================================================== -->
 ## Tool, tab, or panel
@@ -446,6 +449,10 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
 *  The **Device Emulator**.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
+
+### See also
+
+* [About the list of tools](about-tools.md)
 
 
 <!-- ====================================================================== -->
@@ -511,6 +518,7 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 <!-- ====================================================================== -->
 ## See also
 
+* [About the list of tools](about-tools.md)
 * [Get started with HTML and the DOM](beginners/html.md)
 * [Inspect and change the current webpage](dom/index.md)
 * [Emulate how your product behaves on different devices](device-mode/index.md)
