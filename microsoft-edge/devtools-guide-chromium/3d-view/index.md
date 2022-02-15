@@ -59,7 +59,9 @@ To zoom, drag two fingers across the touchpad or use the scroll wheel on your mo
 
 To reset the canvas view to the original view, select the **Reset camera** button, or select the **Reset elements in view and re-center camera** (sideways refresh icon) button.
 
-To refresh the canvas, such as when the browser changed or you switched to a device emulator view, select the **Retake snapshot** button or the **Take new snapshot** button (the refresh icon).
+To refresh the canvas, such as when the browser changed or you switched to a [Device Emulation](../device-mode/index.md) view:
+
+*  Click the **Retake snapshot** button, or the **Take new snapshot** button (the Refresh icon).
 
 
 <!-- ====================================================================== -->

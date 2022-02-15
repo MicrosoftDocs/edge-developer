@@ -37,7 +37,7 @@ To install the webhint extension from within Visual Studio Code:
 
 1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
 
-   :::image type="content" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint Visual Studio Code extension." lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
+   ![The webhint Visual Studio Code extension.](media/visual-studio-code-extension-webhint.msft.png)
 
 Or, you can install the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) from the Visual Studio Marketplace.
 

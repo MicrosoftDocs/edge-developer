@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Emulate and test other browsers
 
-Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though [Device Emulation](index.md) can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
+Your job doesn't end with making sure your site runs great across Microsoft Edge and Android.  Even though the [Device Emulation](index.md) tool can simulate a range of other devices such as smart phones, we encourage you to check out solutions for emulation provided by other browsers.
 
 ### Summary
 
