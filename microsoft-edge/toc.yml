@@ -77,9 +77,32 @@
 # TOOLS =======================================================================
         - name: Tools
           items:
-# Non-closable panel tools, in default order ==================================
+            - name: About the list of tools
+              href: devtools-guide-chromium/about-tools.md
+# Icon tools ==================================================================
+# Inspect tool ----------------------------------------------------------------
+            - name: Inspect tool
+              items:
+                - name: Analyze pages using the Inspect tool  # added article
+                  href: devtools-guide-chromium/css/inspect.md
+                  displayName: Inspect tool
+# Device Emulation ------------------------------------------------------------
+            - name: Device Emulation  # orig: Mobile simulation
+              items:
+                - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
+                  href: devtools-guide-chromium/device-mode/index.md
+                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
+
+                - name: Emulate dual-screen and foldable devices  # added article
+                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
+                  displayName: Device Emulation, Device Emulator, Device Mode
+
+                - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
+                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
+                  displayName: Device Emulation, Device Emulator, Device Mode
+# Permanent tool tabs =========================================================
 # Elements tool ---------------------------------------------------------------
-            - name: Elements tool
+            - name: Elements tool, for CSS, HTML, and the DOM
               items:
                 - name: CSS features reference
                   href: devtools-guide-chromium/css/reference.md
@@ -155,7 +178,7 @@
                   href: devtools-guide-chromium/console/console-filters.md
                   displayName: Console tool
 # Sources tool ----------------------------------------------------------------
-            - name: Sources tool
+            - name: Sources tool, for JavaScript debugging
               items:
                 - name: Sources tool overview
                   href: devtools-guide-chromium/sources/index.md
@@ -196,28 +219,7 @@
                 - name: Map preprocessed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
                   displayName: Sources tool
-# Non-panel tools on toolbar ==================================================
-# Inspect tool ----------------------------------------------------------------
-            - name: Inspect tool
-              items:
-                - name: Analyze pages using the Inspect tool  # added article
-                  href: devtools-guide-chromium/css/inspect.md
-                  displayName: Inspect tool
-# Device Emulation ------------------------------------------------------------
-            - name: Device Emulation  # orig: Mobile simulation
-              items:
-                - name: Emulate mobile devices (Device Emulation)  # orig: Simulate mobile devices with Device Mode
-                  href: devtools-guide-chromium/device-mode/index.md
-                  displayName: Device Emulation, Device Emulator, Device Mode  # also Network conditions tool (1x), Settings > Devices (1x)
-
-                - name: Emulate dual-screen and foldable devices  # added article
-                  href: devtools-guide-chromium/device-mode/dual-screen-and-foldables.md
-                  displayName: Device Emulation, Device Emulator, Device Mode
-
-                - name: Emulate and test other browsers  # orig: Emulate and Test Other Browsers (orphaned)
-                  href: devtools-guide-chromium/device-mode/testing-other-browsers.md
-                  displayName: Device Emulation, Device Emulator, Device Mode
-# Closable panel tools, in alpha order ========================================
+# Optional tool tabs ==========================================================
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
               items:
@@ -231,7 +233,7 @@
                   href: devtools-guide-chromium/inspect-styles/animations.md
                   displayName: Animations tool
 # Application tool ------------------------------------------------------------
-            - name: Application tool
+            - name: Application tool, for storage
               items:
                 - name: View, edit, and delete cookies
                   href: devtools-guide-chromium/storage/cookies.md
@@ -474,12 +476,17 @@
 # /Tools bucket
 # LOWER NON-TOOL NODES ========================================================
 # Command Menu ----------------------------------------------------------------
-        - name: Command Menu
+        - name: Command Menu and keyboard shortcuts
           items:
             - name: Run commands in the Command Menu
               href: devtools-guide-chromium/command-menu/index.md
               displayName: Command Menu
+# Keyboard shortcuts ----------------------------------------------------------
+            - name: Keyboard shortcuts
+              href: devtools-guide-chromium/shortcuts/index.md
+              displayName: Keyboard shortcuts
 # Settings pages and Customize menu -------------------------------------------
+# Experimental features could go here
         - name: Settings and customization UI
           items:
             - name: Customize DevTools  # orig: "Customization"
@@ -639,10 +646,6 @@
         - name: Sample code for DevTools
           href: devtools-guide-chromium/sample-code/sample-code.md
           displayName: sample code, demo
-# Keyboard shortcuts ----------------------------------------------------------
-        - name: Keyboard shortcuts
-          href: devtools-guide-chromium/shortcuts/index.md
-          displayName: Keyboard shortcuts
 # IE mode ---------------------------------------------------------------------
         - name: Use DevTools in Internet Explorer mode (IE mode)  # added article
           href: devtools-guide-chromium/ie-mode/index.md

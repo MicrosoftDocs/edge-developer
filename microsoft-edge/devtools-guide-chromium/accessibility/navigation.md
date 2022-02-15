@@ -278,6 +278,14 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 
 
 <!-- ====================================================================== -->
+## See also
+
+* [Keyboard shortcuts](../shortcuts/index.md)
+* [Customize keyboard shortcuts](../customize/shortcuts.md)
+* [Run commands in the Command Menu](../command-menu/index.md)
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
