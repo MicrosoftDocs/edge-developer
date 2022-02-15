@@ -230,8 +230,8 @@ landingContent:
   - title: Temp. holding bin 1
     linkLists:
 
-      - linkListType: architecture
-        links:
+      # - linkListType: architecture
+      #   links:
 
           # - text: What's New in DevTools (Microsoft Edge 96)
           #   url: /microsoft-edge/devtools-guide-chromium/whats-new/2021/11/devtools
