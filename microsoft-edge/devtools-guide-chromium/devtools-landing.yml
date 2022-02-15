@@ -168,7 +168,7 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: Debugging web layouts
+  - title: Debug web layouts
     linkLists:
       - linkListType: concept
         links:
