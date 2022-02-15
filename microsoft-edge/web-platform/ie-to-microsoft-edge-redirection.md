@@ -5,28 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/13/2020
+ms.date: 2/8/2022
 ---
 # Move users to Microsoft Edge from Internet Explorer
 
-Many modern websites have designs that are incompatible with Internet Explorer.  When an Internet Explorer user visits an incompatible public website, the user may get a message.  The message states that the website is incompatible with the browser.  After the message is displayed, the user is expected to manually switch to a modern browser.
+Many modern websites have designs that are incompatible with Internet Explorer.
 
-To minimize disruptions, starting with version 84, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows automatically redirects the user to Microsoft Edge.  For the list of websites that are redirected, see [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1).
+When an Internet Explorer user visits an incompatible public website, the user may be instructed by the website that the website is incompatible with Internet Explorer, and that the user must switch to a more modern browser in order to use the website.
 
-This article describes the following concepts:
-
-*  Why a website is added to the redirection list.
-*  The User Experience for redirection.
-*  Requesting an update to the list.
-
-
-<!-- ====================================================================== -->
-## Why is a website added to the Internet Explorer compatibility list?
-
-The Internet Explorer compatibility List only adds a website when the following actions occur.
-
-*   Shows an Internet Explorer user a message suggesting the user should use a different browser for compatibility reasons.
-*   Owner requests to add the website to the Internet Explorer compatibility list.
+To minimize disruptions, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1) are redirected.
 
 
 <!-- ====================================================================== -->

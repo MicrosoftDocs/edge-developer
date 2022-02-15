@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Run commands in the Command Menu
 
-The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks, such as [disabling JavaScript](../javascript/disable.md).  You may be familiar with a similar feature in Microsoft Visual Studio Code called the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), which was the original inspiration for the Command Menu.
+The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks.  The Command Menu is similar to the [Command Palette in Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 
 :::image type="content" source="../media/command-menu-run-command-java.msft.png" alt-text="Using the Command Menu to disable JavaScript." lightbox="../media/command-menu-run-command-java.msft.png":::
 
@@ -45,6 +45,14 @@ If you use the workflow outlined in [Open the Command Menu](#open-the-command-me
 Delete the `>` character and type `?` to display other actions that are available from the Command Menu.
 
 :::image type="content" source="../media/command-menu-help.msft.png" alt-text="Other available actions." lightbox="../media/command-menu-help.msft.png":::
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Keyboard shortcuts](../shortcuts/index.md)
+* [Navigate DevTools with assistive technology](../accessibility/navigation.md)
+* [Customize keyboard shortcuts](../customize/shortcuts.md)
 
 
 <!-- ====================================================================== -->

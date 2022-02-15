@@ -34,7 +34,7 @@ To override the [user agent](https://developer.mozilla.org/docs/Glossary/User_ag
 
    :::image type="content" source="../media/clear-use-browser-default-checkbox.png" alt-text="Clearing the 'Use browser default' checkbox.":::
 
-1. Select a user agent from the dropdown, or enter a custom user agent.
+1. Select a user agent from the dropdown list, or enter a custom user agent.
 
 1. Click **User agent client hints** to view and change these values as described in [Network features reference](../network/reference.md).
 
