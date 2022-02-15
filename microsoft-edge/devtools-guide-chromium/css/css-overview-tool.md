@@ -25,6 +25,7 @@ ms.date: 02/15/2022
 
 
 <!-- the what's new is
+https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#view-and-fix-color-contrast-issues-in-the-css-overview-tool
 # What's New In DevTools (Microsoft Edge 87)
 ### View and fix color contrast issues in the CSS Overview tool -->
 
@@ -34,7 +35,8 @@ The **CSS Overview** tool displays a list of elements on your page that have col
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  
 
-To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).
+To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, DevTools [automatically provides color suggestions](../whats-new/2020/08/devtools#accessible-color-suggestion-in-the-styles-pane).
+
 
 For updates on this feature in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
 
