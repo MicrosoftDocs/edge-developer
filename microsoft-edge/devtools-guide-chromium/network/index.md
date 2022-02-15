@@ -94,7 +94,7 @@ To view the network activity that a page causes:
 
     *  **Type**.  The resource type.
 
-    *  **Initiator**.  The cause of the resource request.  Choosing a link in the Initiator column takes you to the source code that caused the request.
+    *  **Initiator**.  The cause of the resource request.  Clicking a link in the **Initiator** column takes you to the source code that caused the request.
 
     *  **Time**.  The duration of the request.
 
