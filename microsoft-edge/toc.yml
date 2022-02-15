@@ -850,7 +850,7 @@
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
-            - name: Use JavaScript in WebView (Run JavaScript from native code)
+            - name: Use JavaScript in WebView2 (Run JavaScript from native code)
               href: webview2/how-to/javascript.md
               displayName: Use JavaScript in WebView for extended scenarios  # old title
 

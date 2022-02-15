@@ -1,5 +1,5 @@
 ---
-title: Use JavaScript in WebView (Run JavaScript from native code)
+title: Use JavaScript in WebView2 (Run JavaScript from native code)
 description: Learn how to use JavaScript in complex scenarios in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/5/2022
 ---
-# Use JavaScript in WebView (Run JavaScript from native code)
+# Use JavaScript in WebView2 (Run JavaScript from native code)
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
 
 Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements. This article explores how to use JavaScript in WebView2, and reviews how to develop using advanced WebView2 features and functions.
