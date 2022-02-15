@@ -347,6 +347,8 @@
 # Developer Resources tool ----------------------------------------------------
             - name: Developer Resources tool
               items:
+                - name: Developer Resources tool
+                  href: devtools-guide-chromium/developer-resources/developer-resources.md
                   displayName: Developer Resources tool
 # Issues tool -----------------------------------------------------------------
             - name: Issues tool

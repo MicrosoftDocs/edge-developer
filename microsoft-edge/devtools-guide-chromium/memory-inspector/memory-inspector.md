@@ -1,12 +1,12 @@
 ---
 title: Memory Inspector tool
-description: Get to know the Microsoft Edge Developer Tools.
+description: The Memory Inspector tool in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 09/23/2021
+ms.date: 02/15/2022
 ---
 <!-- Copyright Kayce Basques
 

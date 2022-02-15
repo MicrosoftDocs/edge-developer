@@ -19,11 +19,11 @@ Debug your HTML using the DOM tree, and inspect and work on the CSS for your web
 <!-- ====================================================================== -->
 ## See also
 
-* [CSS features reference](devtools-guide-chromium/css/reference.md)
-* [Get started with CSS](devtools-guide-chromium/beginners/css.md)
-* [Get started viewing and changing CSS](devtools-guide-chromium/css/index.md)
-* [Inspect CSS Grid](devtools-guide-chromium/css/grid.md)
-* [Edit CSS font styles and settings in the Styles pane](devtools-guide-chromium/inspect-styles/edit-fonts.md)
-* [Style editing for CSS-in-JS frameworks](devtools-guide-chromium/css/css-in-js.md)
-* [Get started with HTML and the DOM](devtools-guide-chromium/beginners/html.md)
-* [Get started viewing and changing the DOM](devtools-guide-chromium/dom/index.md)
+* [CSS features reference](../css/reference.md)
+* [Get started with CSS](../beginners/css.md)
+* [Get started viewing and changing CSS](../css/index.md)
+* [Inspect CSS Grid](../css/grid.md)
+* [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
+* [Style editing for CSS-in-JS frameworks](../css/css-in-js.md)
+* [Get started with HTML and the DOM](../beginners/html.md)
+* [Get started viewing and changing the DOM](../dom/index.md)
