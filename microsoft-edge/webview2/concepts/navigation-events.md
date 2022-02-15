@@ -12,9 +12,9 @@ ms.date: 10/28/2021
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
-Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For an example of navigation events, see a platform-specific [Get started](../index.md#get-started) article.
+Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
 
-<!--todo:  Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide.  -->
+<!--todo: Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide. -->
 
 The normal sequence of navigation events is:
 1. `NavigationStarting`
@@ -59,7 +59,7 @@ To monitor or cancel navigation events inside subframes in a WebView2 instance, 
 <!-- ====================================================================== -->
 ## See also
 
-*  [WebView2 Get Started Guides](../index.md#get-started)
-*  [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-*  [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
-*  [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+* [Get started with WebView2](../get-started/get-started.md)
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+* [WebView2 API reference](/dotnet/api/microsoft.web.webview2.wpf.webview2)
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
