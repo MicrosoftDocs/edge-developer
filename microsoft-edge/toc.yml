@@ -10,7 +10,7 @@
       items:
 # Card-based landing page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation  # new landing page
-          href: devtools-guide-chromium/index.yml
+          href: devtools-guide-chromium/landing/index.yml
           displayName: DevTools
 
 # =============================================================================
