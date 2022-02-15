@@ -142,7 +142,7 @@ landingContent:
           - text: Reasons to use Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
 
-          - text: What's New in Microsoft Edge DevTools  # new firstchild article in What's New
+          - text: What's new in Microsoft Edge DevTools  # new firstchild article in What's New
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
 
 

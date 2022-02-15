@@ -1,14 +1,14 @@
 ---
-title: What's New in Microsoft Edge DevTools
-description: What's New in Microsoft Edge DevTools.
+title: What's new in Microsoft Edge DevTools
+description: New features and fixes in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/14/2022
 ---
-# What's New in Microsoft Edge DevTools
+# What's new in Microsoft Edge DevTools
 
-Check these articles for the latest What's New announcements, and updates about the experimental features.
+Check these articles for the latest What's New announcements, features, fixes, and updates about experimental features in Microsoft Edge DevTools.
 
 * [Experimental features](../experimental-features/index.md)

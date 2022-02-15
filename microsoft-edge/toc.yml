@@ -10,9 +10,8 @@
       items:
 # Card-based landing page -----------------------------------------------------
         - name: Microsoft Edge DevTools documentation  # new landing page
-          href: devtools-guide-chromium/devtools-landing.yml
+          href: devtools-guide-chromium/index.yml
           displayName: DevTools
-
 
 # =============================================================================
 # DevTools Overview articles:
@@ -34,13 +33,12 @@
         #   href: devtools-guide-chromium/open/index.md
         #   displayName: DevTools
 
-
 # What's New ------------------------------------------------------------------
         - name: What's new
           items:
 
 # What's New firstchild article
-            - name: What's New in Microsoft Edge DevTools  # new firstchild article
+            - name: What's new in Microsoft Edge DevTools  # new firstchild article
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: 
 

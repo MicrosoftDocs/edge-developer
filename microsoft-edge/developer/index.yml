@@ -55,7 +55,7 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: What's New in Microsoft Edge DevTools  # new firstchild article
+          - text: What's new in Microsoft Edge DevTools  # new firstchild article
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
 
       - linkListType: how-to-guide
