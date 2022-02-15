@@ -63,9 +63,6 @@ landingContent:
           - text: Command Menu
             url: /microsoft-edge/devtools-guide-chromium/command-menu/index
 
-          - text: Open DevTools
-            url: /microsoft-edge/devtools-guide-chromium/open
-
           - text: View and change CSS
             url: /microsoft-edge/devtools-guide-chromium/css/index
 
