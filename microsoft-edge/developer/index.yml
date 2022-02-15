@@ -197,7 +197,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Web platform overview
+          - text: Web platform overview  # new firstchild article
             url: /microsoft-edge/web-platform/web-platform
 
           - text: Detect Microsoft Edge from your website
