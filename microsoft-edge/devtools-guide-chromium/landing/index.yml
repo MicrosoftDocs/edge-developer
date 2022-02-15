@@ -134,47 +134,94 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: Get started with DevTools
+  - title: Getting started with DevTools
     linkLists:
       - linkListType: concept
         links:
           # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Reasons to use Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
-
-          - text: What's new in Microsoft Edge DevTools  # new firstchild article in What's New
-            url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
-
-
-# =============================================================================
-# Card
-  - title: Popular tools
-    linkLists:
-      - linkListType: concept
-        links:
-          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Overview of DevTools
             url: /microsoft-edge/devtools-guide-chromium/index
-
+          - text: What's new in Microsoft Edge DevTools  # new firstchild article in What's New
+            url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+          - text: Test keyboard support using the Source Order Viewer
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer
+          - text: Accessibility-testing features
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
+          - text: Run commands in the Command Menu
+            url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+          - text: Customize DevTools
+            url: /microsoft-edge/devtools-guide-chromium/customize/index
+          - text: Apply a color theme to DevTools
+            url: /microsoft-edge/devtools-guide-chromium/customize/theme
 # =============================================================================
 # Card
-  - title: Solve tasks with DevTools
-    linkLists:
-      - linkListType: concept
-        links:
-          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
-          - text: Open DevTools
-            url: /microsoft-edge/devtools-guide-chromium/open/index
-
-# =============================================================================
-# Card
-  - title: Debug web layouts
+  - title: Customizing DevTools
     linkLists:
       - linkListType: concept
         links:
           # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
           - text: Experimental features
             url: /microsoft-edge/devtools-guide-chromium/experimental-features/index
+          - text: Debug DOM memory leaks with the Detached Elements tool
+            url: /microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks
+          - text: Find and fix problems using the Issues tool
+            url: /microsoft-edge/devtools-guide-chromium/issues/index
+          - text: Fix memory problems
+            url: /microsoft-edge/devtools-guide-chromium/memory-problems/index
+          - text: What's New in DevTools (Microsoft Edge 98)
+            url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/02/devtools
+          - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
+            url: /microsoft-edge/devtools-guide-chromium/customize/placement
+          - text: Understand security issues using the Security tool
+            url: /microsoft-edge/devtools-guide-chromium/security/index
+          - text: Get started with CSS
+            url: /microsoft-edge/devtools-guide-chromium/beginners/css
+
+# =============================================================================
+# Card
+  - title: Debugging web projects
+    linkLists:
+      - linkListType: concept
+        links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
+          - text: Analyze pages using the Inspect tool
+            url: /microsoft-edge/devtools-guide-chromium/css/inspect
+          - text: Get started viewing and changing CSS
+            url: /microsoft-edge/devtools-guide-chromium/css/index
+          - text: Get started viewing and changing the DOM
+            url: /microsoft-edge/devtools-guide-chromium/dom/index
+          - text: Emulate mobile devices (Device Emulation)
+            url: /microsoft-edge/devtools-guide-chromium/device-mode/index
+          - text: Navigate z-index, DOM, and layers using the 3D View tool
+            url: /microsoft-edge/devtools-guide-chromium/3d-view/index
+          - text: Inspect animations
+            url: /microsoft-edge/devtools-guide-chromium/inspect-styles/animations
+          - text: View, edit, and delete cookies
+            url: /microsoft-edge/devtools-guide-chromium/storage/cookies
+          - text: Debug Progressive Web Apps (PWAs)
+            url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/index
+          - text: Inspect network activity
+            url: /microsoft-edge/devtools-guide-chromium/network/index
+
+
+# =============================================================================
+# Card
+  - title: Emulation and Testing
+    linkLists:
+      - linkListType: concept
+        links:
+          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
+          - text: Open DevTools
+            url: /microsoft-edge/devtools-guide-chromium/open/index
+          - text: Analyze runtime performance
+            url: /microsoft-edge/devtools-guide-chromium/rendering-tools/index
+          - text: Performance features reference
+            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference
+          - text: Emulate dark or light schemes in the rendered page
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/preferred-color-scheme-simulation
+
 
 # =============================================================================
 # Card
@@ -183,38 +230,69 @@ landingContent:
       - linkListType: concept
         links:
           # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
-          - text: What's New in DevTools (Microsoft Edge 98)
-            url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/02/devtools
+
+          - text: Console overview
+            url: /microsoft-edge/devtools-guide-chromium/console/index
+          - text: Monitor changes in JavaScript using Live Expressions
+            url: /microsoft-edge/devtools-guide-chromium/console/live-expressions
+          - text: Fix JavaScript errors that are reported in the Console
+            url: /microsoft-edge/devtools-guide-chromium/console/console-debug-javascript
+          - text: Filter Console messages
+            url: /microsoft-edge/devtools-guide-chromium/console/console-filters
+          - text: Sources tool overview
+            url: /microsoft-edge/devtools-guide-chromium/sources/index
+          - text: JavaScript debugging features
+            url: /microsoft-edge/devtools-guide-chromium/javascript/reference
+          - text: Find unused JavaScript and CSS code with the Coverage tool
+            url: /microsoft-edge/devtools-guide-chromium/coverage/index
 
 # =============================================================================
 # Card
-  - title: Customize DevTools
+  - title: References
     linkLists:
       - linkListType: concept
         links:
           # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
+
           - text: CSS features reference
             url: /microsoft-edge/devtools-guide-chromium/css/reference
+          - text: Console features reference
+            url: /microsoft-edge/devtools-guide-chromium/console/reference
+          - text: Force print preview mode
+            url: /microsoft-edge/devtools-guide-chromium/css/print-preview
+          - text: Change DevTools language settings
+            url: /microsoft-edge/devtools-guide-chromium/customize/localization
+          - text: Customize keyboard shortcuts
+            url: /microsoft-edge/devtools-guide-chromium/customize/shortcuts
+          - text: Emulate vision deficiencies
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/emulate-vision-deficiencies
+          - text: Sample code for DevTools
+            url: /microsoft-edge/devtools-guide-chromium/sample-code/sample-code
+          - text: Keyboard shortcuts
+            url: /microsoft-edge/devtools-guide-chromium/shortcuts/index
+          - text: Contact the Microsoft Edge DevTools team
+            url: /microsoft-edge/devtools-guide-chromium/contact
+          - text: Simulate reduced motion
+            url: /microsoft-edge/devtools-guide-chromium/accessibility/reduced-motion-simulation
+
 
 # =============================================================================
 # Card
-  - title: Accessibility   # Accessibility Emulation
-    linkLists:
-      - linkListType: concept
-        links:
-          # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
-          - text: Get started with CSS
-            url: /microsoft-edge/devtools-guide-chromium/beginners/css
+  # - title: Accessibility   # Accessibility Emulation
+  #   linkLists:
+  #     - linkListType: concept
+  #       links:
+  #         # temp. placeholder article (move to holding bin (#3 has room) or other card; don't delete):
 
 # =============================================================================
 # Card
-  - title: Reference
-    linkLists:
-      - linkListType: concept
-        links:
-          # temp. random article (move to holding bin (#3 has room) or other card; don't delete):
-          - text: What's New in DevTools (Microsoft Edge 97)
-            url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/01/devtools
+  # - title: Reference
+  #   linkLists:
+  #     - linkListType: concept
+  #       links:
+  #         # temp. random article (move to holding bin (#3 has room) or other card; don't delete):
+  #         - text: What's New in DevTools (Microsoft Edge 97)
+  #           url: /microsoft-edge/devtools-guide-chromium/whats-new/2022/01/devtools
 
             # *  Per-tool, tool-specific articles
 
@@ -227,8 +305,8 @@ landingContent:
 # HOLDING-BIN DUMMY CARDS - MOVE ARTICLES UP FROM HERE TO REAL CARDS
 # =============================================================================
 # for now, don't delete DevTools article nodes; comment them out (Ctrl+/)
-  - title: Temp. holding bin 1
-    linkLists:
+  # - title: Temp. holding bin 1
+  #   linkLists:
 
       # - linkListType: architecture
       #   links:
@@ -278,17 +356,14 @@ landingContent:
           # - text: What's New in DevTools (Microsoft Edge 83)
           #   url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/03/devtools
 
-      - linkListType: deploy
-        links:
+      # - linkListType: deploy
+      #   links:
 
           # - text: What's New in DevTools (Microsoft Edge 81)
           #   url: /microsoft-edge/devtools-guide-chromium/whats-new/2020/01/devtools
 
           # - text: What's New in DevTools (Microsoft Edge 80)
           #   url: /microsoft-edge/devtools-guide-chromium/whats-new/2019/12/devtools
-
-          - text: Get started viewing and changing CSS
-            url: /microsoft-edge/devtools-guide-chromium/css/index
 
           # - text: Inspect CSS Grid
           #   url: /microsoft-edge/devtools-guide-chromium/css/grid
@@ -302,17 +377,10 @@ landingContent:
           # - text: Get started with HTML and the DOM
           #   url: /microsoft-edge/devtools-guide-chromium/beginners/html
 
-          - text: Get started viewing and changing the DOM
-            url: /microsoft-edge/devtools-guide-chromium/dom/index
 
-      - linkListType: download
-        links:
+      # - linkListType: download
+      #   links:
 
-          - text: Console overview
-            url: /microsoft-edge/devtools-guide-chromium/console/index
-
-          - text: Console features reference
-            url: /microsoft-edge/devtools-guide-chromium/console/reference
 
           # - text: Log messages in the Console tool
           #   url: /microsoft-edge/devtools-guide-chromium/console/console-log
@@ -326,32 +394,19 @@ landingContent:
           # - text: Console tool utility functions and selectors
           #   url: /microsoft-edge/devtools-guide-chromium/console/utilities
 
-          - text: Monitor changes in JavaScript using Live Expressions
-            url: /microsoft-edge/devtools-guide-chromium/console/live-expressions
-
-          - text: Fix JavaScript errors that are reported in the Console
-            url: /microsoft-edge/devtools-guide-chromium/console/console-debug-javascript
-
           # - text: Interact with the DOM using the Console
           #   url: /microsoft-edge/devtools-guide-chromium/console/console-dom-interaction
 
-          - text: Filter Console messages
-            url: /microsoft-edge/devtools-guide-chromium/console/console-filters
 
-      - linkListType: get-started
-        links:
+      # - linkListType: get-started
+      #   links:
 
-          - text: Sources tool overview
-            url: /microsoft-edge/devtools-guide-chromium/sources/index
 
           # - text: Get started debugging JavaScript
           #   url: /microsoft-edge/devtools-guide-chromium/javascript/index
 
           # - text: Pause code with breakpoints
           #   url: /microsoft-edge/devtools-guide-chromium/javascript/breakpoints
-
-          - text: JavaScript debugging features
-            url: /microsoft-edge/devtools-guide-chromium/javascript/reference
 
           # - text: Run snippets of JavaScript on any webpage
           #   url: /microsoft-edge/devtools-guide-chromium/javascript/snippets
@@ -371,29 +426,16 @@ landingContent:
           # - text: Map preprocessed code to source code
           #   url: /microsoft-edge/devtools-guide-chromium/javascript/source-maps
 
-      - linkListType: how-to-guide
-        links:
+      # - linkListType: how-to-guide
+      #   links:
 
-          - text: Analyze pages using the Inspect tool
-            url: /microsoft-edge/devtools-guide-chromium/css/inspect
 
-          - text: Emulate mobile devices (Device Emulation)
-            url: /microsoft-edge/devtools-guide-chromium/device-mode/index
 
           # - text: Emulate dual-screen and foldable devices
           #   url: /microsoft-edge/devtools-guide-chromium/device-mode/dual-screen-and-foldables
 
           # - text: Emulate and test other browsers
           #   url: /microsoft-edge/devtools-guide-chromium/device-mode/testing-other-browsers
-
-          - text: Navigate z-index, DOM, and layers using the 3D View tool
-            url: /microsoft-edge/devtools-guide-chromium/3d-view/index
-
-          - text: Inspect and modify CSS animation effects
-            url: /microsoft-edge/devtools-guide-chromium/inspect-styles/animations
-
-          - text: View, edit, and delete cookies
-            url: /microsoft-edge/devtools-guide-chromium/storage/cookies
 
           # - text: View and edit local storage
           #   url: /microsoft-edge/devtools-guide-chromium/storage/localstorage
@@ -406,11 +448,11 @@ landingContent:
 
 # =============================================================================
 # don't delete DevTools articles from this file; comment them out (Ctrl+/), then move them to bottom of file
-  - title: Temp. holding bin 2
-    linkLists:
+  # - title: Temp. holding bin 2
+  #   linkLists:
 
-      - linkListType: architecture
-        links:
+      # - linkListType: architecture
+      #   links:
 
           # - text: View Web SQL data
           #   url: /microsoft-edge/devtools-guide-chromium/storage/websql
@@ -418,8 +460,6 @@ landingContent:
           # - text: View Cache data
           #   url: /microsoft-edge/devtools-guide-chromium/storage/cache
 
-          - text: Debug Progressive Web Apps (PWAs)
-            url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps/index
 
           # - text: Debug background services
           #   url: /microsoft-edge/devtools-guide-chromium/javascript/background-services
@@ -427,14 +467,6 @@ landingContent:
           # - text: Track changes to files using the Changes tool
           #   url: /microsoft-edge/devtools-guide-chromium/changes/changes-tool
 
-          - text: Find unused JavaScript and CSS code with the Coverage tool
-            url: /microsoft-edge/devtools-guide-chromium/coverage/index
-
-          - text: Debug DOM memory leaks with the Detached Elements tool
-            url: /microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks
-
-          - text: Find and fix problems using the Issues tool
-            url: /microsoft-edge/devtools-guide-chromium/issues/index
 
           # - text: Lighthouse tool
           #   url: /microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool
@@ -442,11 +474,9 @@ landingContent:
           # - text: View and debug media players information
           #   url: /microsoft-edge/devtools-guide-chromium/media-panel/index
 
-      - linkListType: concept
-        links:
+      # - linkListType: concept
+      #   links:
 
-          - text: Fix memory problems
-            url: /microsoft-edge/devtools-guide-chromium/memory-problems/index
 
           # - text: Memory terminology
           #   url: /microsoft-edge/devtools-guide-chromium/memory-problems/memory-101
@@ -460,8 +490,6 @@ landingContent:
           # - text: Speed up JavaScript runtime
           #   url: /microsoft-edge/devtools-guide-chromium/rendering-tools/js-runtime
 
-          - text: Inspect network activity
-            url: /microsoft-edge/devtools-guide-chromium/network/index
 
           # - text: Network features reference
           #   url: /microsoft-edge/devtools-guide-chromium/network/reference
@@ -475,8 +503,8 @@ landingContent:
           # - text: Service Worker improvements
           #   url: /microsoft-edge/devtools-guide-chromium/service-workers/index
 
-      - linkListType: deploy
-        links:
+      # - linkListType: deploy
+      #   links:
 
           # - text: Network conditions tool
           #   url: /microsoft-edge/devtools-guide-chromium/network-conditions/network-conditions-tool
@@ -487,14 +515,10 @@ landingContent:
           # - text: Get started analyzing runtime performance
           #   url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/index
 
-          - text: Analyze runtime performance
-            url: /microsoft-edge/devtools-guide-chromium/rendering-tools/index
 
           # - text: Optimize website speed using Lighthouse
           #   url: /microsoft-edge/devtools-guide-chromium/speed/get-started
 
-          - text: Performance features reference
-            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference
 
           # - text: Timeline event reference
           #   url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/performance-reference
@@ -505,20 +529,14 @@ landingContent:
           # - text: Display or edit source files using the Quick source tool
           #   url: /microsoft-edge/devtools-guide-chromium/quick-source/quick-source-tool
 
-          - text: Emulate dark or light schemes in the rendered page
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/preferred-color-scheme-simulation
 
-      - linkListType: download
-        links:
+      # - linkListType: download
+      #   links:
 
-          - text: Force print preview mode
-            url: /microsoft-edge/devtools-guide-chromium/css/print-preview
 
           # - text: Find source files for a page using the Search tool
           #   url: /microsoft-edge/devtools-guide-chromium/search/search-tool
 
-          - text: Understand security issues using the Security tool
-            url: /microsoft-edge/devtools-guide-chromium/security/index
 
           # - text: Override geolocation with the Sensors tool
           #   url: /microsoft-edge/devtools-guide-chromium/device-mode/geolocation
@@ -529,26 +547,10 @@ landingContent:
           # - text: Emulate authenticators and debug WebAuthn
           #   url: /microsoft-edge/devtools-guide-chromium/webauthn/index
 
-          - text: Run commands in the Command Menu
-            url: /microsoft-edge/devtools-guide-chromium/command-menu/index
 
-          - text: Customize DevTools
-            url: /microsoft-edge/devtools-guide-chromium/customize/index
+      # - linkListType: get-started
+      #   links:
 
-          - text: Apply a color theme to DevTools
-            url: /microsoft-edge/devtools-guide-chromium/customize/theme
-
-          - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
-            url: /microsoft-edge/devtools-guide-chromium/customize/placement
-
-      - linkListType: get-started
-        links:
-
-          - text: Change DevTools language settings
-            url: /microsoft-edge/devtools-guide-chromium/customize/localization
-
-          - text: Customize keyboard shortcuts
-            url: /microsoft-edge/devtools-guide-chromium/customize/shortcuts
 
           # - text: Remotely debug Android devices
           #   url: /microsoft-edge/devtools-guide-chromium/remote-debugging/index
@@ -565,8 +567,6 @@ landingContent:
           # - text: Remotely debug Windows devices
           #   url: /microsoft-edge/devtools-guide-chromium/remote-debugging/windows
 
-          - text: Accessibility-testing features
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/reference
 
           # - text: Overview of accessibility testing using DevTools
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/accessibility-testing-in-devtools
@@ -574,8 +574,8 @@ landingContent:
           # - text: Use the Inspect tool to detect accessibility issues by hovering over the webpage
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/test-inspect-tool
 
-      - linkListType: how-to-guide
-        links:
+      # - linkListType: how-to-guide
+      #   links:
 
           # - text: Test accessibility using Lighthouse
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/lighthouse
@@ -599,8 +599,6 @@ landingContent:
           # - text: Analyze keyboard support on forms
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/test-analyze-no-keyboard-support
 
-          - text: Test keyboard support using the Source Order Viewer
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/test-tab-key-source-order-viewer
 
           # - text: Test text-color contrast using the Color Picker
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/color-picker
@@ -610,11 +608,11 @@ landingContent:
 
 # =============================================================================
 # don't delete DevTools articles from this file; comment them out (Ctrl+/), then move them to bottom of file
-  - title: Temp. holding bin 3
-    linkLists:
+  # - title: Temp. holding bin 3
+  #   linkLists:
 
-      - linkListType: architecture
-        links:
+  #     - linkListType: architecture
+  #       links:
 
           # - text: Verify accessibility of all states of elements
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/test-inspect-states
@@ -628,8 +626,6 @@ landingContent:
           # - text: Check the Accessibility Tree for keyboard and screen reader support
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/test-accessibility-tree
 
-          - text: Emulate vision deficiencies
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/emulate-vision-deficiencies
 
           # - text: Verify that a page is usable by people with color blindness
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/test-color-blindness
@@ -637,8 +633,6 @@ landingContent:
           # - text: Verify that a page is usable with blurred vision
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/test-blurred-vision
 
-          - text: Simulate reduced motion
-            url: /microsoft-edge/devtools-guide-chromium/accessibility/reduced-motion-simulation
 
           # - text: Verify that a page is usable with UI animation turned off
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/test-reduced-ui-motion
@@ -646,14 +640,9 @@ landingContent:
           # - text: Verify that the webpage layout is usable when narrow
           #   url: /microsoft-edge/devtools-guide-chromium/accessibility/narrow
 
-      - linkListType: concept
-        links:
+      # - linkListType: concept
+      #   links:
 
-          - text: Sample code for DevTools
-            url: /microsoft-edge/devtools-guide-chromium/sample-code/sample-code
-
-          - text: Keyboard shortcuts
-            url: /microsoft-edge/devtools-guide-chromium/shortcuts/index
 
           # - text: Use DevTools in Internet Explorer mode (IE mode)
           #   url: /microsoft-edge/devtools-guide-chromium/ie-mode/index
@@ -661,8 +650,6 @@ landingContent:
           # - text: Microsoft Edge DevTools Protocol
           #   url: /microsoft-edge/devtools-protocol-chromium/index
 
-          - text: Contact the Microsoft Edge DevTools team
-            url: /microsoft-edge/devtools-guide-chromium/contact
 
 # /HOLDING-BIN DUMMY CARDS
 
