@@ -30,25 +30,26 @@ Microsoft Edge DevTools is a set of web development tools that appears next to a
 
 When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects.  These developer tools are partly based on the tools in the Chromium open-source project.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
 
+
 With DevTools, you can do the following:
 
-*  Inspect and change the current webpage live in the browser.
+*  Inspect and change the current webpage, live in the browser.
 
 *  Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.
 
 *  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.
 
-*  Debug your JavaScript using breakpoint debugging and with the live console.
+*  Debug your JavaScript, using breakpoint debugging and with a live Console that evaluates JavaScript expressions as you type.
 
-*  Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
+*  Find accessibility, performance, compatibility, and security issues in your products, and learn how to use DevTools to fix the accessibility issues that are found.
 
-*  Inspect the network traffic and review the location of the problems.
+*  Inspect the network traffic, and see where network delays are located.
 
-*  Inspect where the browser stored content in various formats.
+*  Inspect where the browser stored content, in various formats, that make up the current webpage.
 
-*  Evaluate the performance of your product to find memory problems and rendering issues.
+*  Evaluate the performance of your product, to find memory problems and rendering issues.
 
-*  Use a development environment to sync changes in DevTools with the file system and from the web.
+*  Use a development environment to synchronize file changes in DevTools, sync'ing changes between the local file system and files from the web.
 
 
 <!-- ====================================================================== -->
@@ -321,7 +322,6 @@ DevTools includes the following tools.
 | **Performance** tool | [Get started analyzing runtime performance](evaluate-performance/index.md) |
 | **Performance monitor** tool | [Measure runtime performance of a page using the Performance monitor tool](performance-monitor/performance-monitor-tool.md) |
 | **Quick source** tool | [Display or edit source files using the Quick source tool](quick-source/quick-source-tool.md) |
-| **Recorder** tool | Record, replay and measure user flows. <!-- (recorder/recorder-tool.md) --> |
 | **Rendering** tool | [Emulate dark or light schemes in the rendered page](accessibility/preferred-color-scheme-simulation.md) |
 | **Search** tool | [Find source files for a page using the Search tool](search/search-tool.md) |
 | **Security** tool | [Understand security issues using the Security tool](security/index.md) |
@@ -330,6 +330,8 @@ DevTools includes the following tools.
 | **WebAudio** tool |  |
 | **WebAuthn** tool | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
 | **Welcome** tool |  |
+
+<!-- | **Recorder** tool | Record, replay and measure user flows. | (recorder/recorder-tool.md) | -->
 
 
 <!-- ====================================================================== -->
@@ -367,6 +369,10 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
 *  The **Device Emulator**.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  The **Command Menu**.  See [Run commands with the Microsoft Edge DevTools Command Menu](command-menu/index.md).
+
+### See also
+
+* [About the list of tools](about-tools.md)
 
 
 <!-- ====================================================================== -->
@@ -432,18 +438,19 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 <!-- ====================================================================== -->
 ## See also
 
-*  [Get started with HTML and the DOM](beginners/html.md)
-*  [Inspect and change the current webpage](dom/index.md)
-*  [Emulate how your product behaves on different devices](device-mode/index.md)
-*  [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
-*  [Debug your JavaScript](./javascript/index.md)
-*  [Live console](console/index.md)
-*  [Accessibility, performance, compatibility, and security issues](./issues/index.md)
-*  [Inspect the network traffic](./network/index.md)
-*  [Inspect where the browser stored content](./storage/sessionstorage.md)
-*  [Evaluate the performance](evaluate-performance/index.md)
-*  [Memory problems](memory-problems/index.md)
-*  [Rendering issues](./rendering-tools/index.md)
-*  [Use a development environment](./sources/index.md)
-*  [Sync changes in DevTools with the file system](./workspaces/index.md)
-*  [Override files from the web](./javascript/overrides.md)
+* [About the list of tools](about-tools.md)
+* [Get started with HTML and the DOM](beginners/html.md)
+* [Inspect and change the current webpage](dom/index.md)
+* [Emulate how your product behaves on different devices](device-mode/index.md)
+* [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
+* [Debug your JavaScript](./javascript/index.md)
+* [Live console](console/index.md)
+* [Accessibility, performance, compatibility, and security issues](./issues/index.md)
+* [Inspect the network traffic](./network/index.md)
+* [Inspect where the browser stored content](./storage/sessionstorage.md)
+* [Evaluate the performance](evaluate-performance/index.md)
+* [Memory problems](memory-problems/index.md)
+* [Rendering issues](./rendering-tools/index.md)
+* [Use a development environment](./sources/index.md)
+* [Sync changes in DevTools with the file system](./workspaces/index.md)
+* [Override files from the web](./javascript/overrides.md)
