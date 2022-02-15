@@ -799,6 +799,17 @@
           items:
             - name: Automate with Edge Driver
               href: webview2/how-to/webdriver.md
+
+            - name: Customizing the UI
+              items:
+                - name: Customizing the UI of WebView2 apps
+                  href: webview2/how-to/customize-ui.md
+                  displayName: context menu, right-click menu
+
+                - name: Add a custom right-click menu to a WebView2 app
+                  href: webview2/how-to/context-menus.md
+                  displayName: right-click menu
+
             - name: Debug WebView2
               href: webview2/how-to/debug.md
             - name: Development best practices
