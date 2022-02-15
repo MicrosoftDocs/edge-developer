@@ -134,7 +134,7 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: Get started with DevTools
+  - title: Getting started with DevTools
     linkLists:
       - linkListType: concept
         links:
@@ -145,10 +145,9 @@ landingContent:
           - text: What's new in Microsoft Edge DevTools  # new firstchild article in What's New
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
 
-
 # =============================================================================
 # Card
-  - title: Popular tools
+  - title: Debugging web projects
     linkLists:
       - linkListType: concept
         links:
@@ -158,7 +157,7 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: Solve tasks with DevTools
+  - title: Emulation and Testing
     linkLists:
       - linkListType: concept
         links:
@@ -168,7 +167,7 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: Debug web layouts
+  - title: Customizing DevTools
     linkLists:
       - linkListType: concept
         links:
@@ -188,7 +187,7 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: Customize DevTools
+  - title: References
     linkLists:
       - linkListType: concept
         links:
