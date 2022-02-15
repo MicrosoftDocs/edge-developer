@@ -139,6 +139,9 @@ conceptualContent:
         # Card
         - title: Microsoft Edge DevTools
           links:
+            - url: /microsoft-edge/develop-web-microsoft-edge
+              itemType: overview
+              text: Develop for the web with Microsoft Edge
             - url: /microsoft-edge/devtools-guide-chromium
               itemType: overview
               text: DevTools overview

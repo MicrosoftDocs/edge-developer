@@ -42,7 +42,7 @@ landingContent:
         links:
           # in this hub page design, there's no top-level card, so putting all-up topmost article here, in the DevTools card instead.
           - text: Develop for the web with Microsoft Edge  # new, topmost-level firstchild article
-            url: /microsoft-edge/develop-for-microsoft-edge
+            url: /microsoft-edge/develop-web-microsoft-edge
 
           - text: Overview of DevTools  # existing firstchild article
             url: /microsoft-edge/devtools-guide-chromium
