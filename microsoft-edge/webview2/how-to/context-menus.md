@@ -705,8 +705,8 @@ Classes:
 <!-- = https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs -->
 
 WinRT, needed?
-* [CoreWebView2ContextMenuRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs?view=webview2-winrt-1.0.1158-prerelease)
-<!-- = https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs?view=webview2-winrt-1.0.1158-prerelease -->
+* [CoreWebView2ContextMenuRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs)
+<!-- = https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs -->
 
 * [CoreWebView2ContextMenuTarget Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget)
 <!-- = https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget -->
@@ -717,13 +717,13 @@ Methods:
 
 For custom context menus:
 
-* [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid?view=webview2-dotnet-1.0.1133-prerelease)
-<!-- = https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid?view=webview2-dotnet-1.0.1133-prerelease -->
+* [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid)
+<!-- = https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid -->
 
 For disabling the context menu:
 
-* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled?view=webview2-dotnet-1.0.1108.44)
-<!-- = https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled?view=webview2-dotnet-1.0.1108.44 -->
+* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
+<!-- = https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled -->
 
 Enums:
 
@@ -739,8 +739,8 @@ Events:
 <!-- = https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected -->
 
 WinRT:
-* [CoreWebView2ContextMenuItem.CustomItemSelected event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem?view=webview2-winrt-1.0.1158-prerelease#customitemselected)
-<!-- = https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem?view=webview2-winrt-1.0.1158-prerelease#customitemselected -->
+* [CoreWebView2ContextMenuItem.CustomItemSelected event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem#customitemselected)
+<!-- = https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem#customitemselected -->
 
 ---
 
