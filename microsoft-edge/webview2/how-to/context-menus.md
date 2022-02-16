@@ -163,68 +163,60 @@ webview2_4->add_ContextMenuRequested(
     &m_contextMenuRequestedToken);
 ```
 
+<!-- api1, C++ -->
 Key APIs used in this example:
 
 **ICoreWebView2:**
-* [ICoreWebView2 interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1158-prerelease)
-* [ICoreWebView2_4 interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.1158-prerelease)
+* [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2_4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_4)
 Methods:
-* [ICoreWebView2_6::add_ContextMenuRequested method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental6?view=webview2-1.0.1158-prerelease#add_contextmenurequested)
+* [ICoreWebView2_6::add_ContextMenuRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
 
 **ICoreWebView2ContextMenuItem:**
 * [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
 Methods:
 * [ICoreWebView2ContextMenuItem::add_CustomItemSelected method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
-* [ICoreWebView2ContextMenuItem::get_Kind method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?branch=pr-en-us-1740&view=webview2-1.0.1158-prerelease#get_kind)
-* [ICoreWebView2ContextMenuItem::get_Name method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_name)
+* [ICoreWebView2ContextMenuItem::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?branch=pr-en-us-1740&view=webview2-1.0.1158-prerelease#get_kind)
+* [ICoreWebView2ContextMenuItem::get_Name method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
 
 **ICoreWebView2ContextMenuItemCollection:**
 * [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
 Methods:
-* [ICoreWebView2ContextMenuItemCollection::get_Count method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection?view=webview2-1.0.1158-prerelease#get_count)
-* [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection?view=webview2-1.0.1158-prerelease#getvalueatindex)
-* [ICoreWebView2ContextMenuItemCollection::InsertValueAtIndex method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection?view=webview2-1.0.1158-prerelease#insertvalueatindex)
-* [ICoreWebView2ContextMenuItemCollection::RemoveValueAtIndex method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection?view=webview2-1.0.1158-prerelease#removevalueatindex)
+* [ICoreWebView2ContextMenuItemCollection::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
+* [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
+* [ICoreWebView2ContextMenuItemCollection::InsertValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#insertvalueatindex)
+* [ICoreWebView2ContextMenuItemCollection::RemoveValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex)
 
 **ICoreWebView2ContextMenuRequestedEventArgs:**
-* [ICoreWebView2ContextMenuRequestedEventArgs interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease)
+* [ICoreWebView2ContextMenuRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
 Methods:
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_ContextMenuTarget method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#get_contextmenutarget)
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#get_menuitems)
+* [ICoreWebView2ContextMenuRequestedEventArgs::get_ContextMenuTarget method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget)
+* [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
 
 **ICoreWebView2ContextMenuRequestedEventHandler:**
 * [ICoreWebView2ContextMenuRequestedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
 
 **ICoreWebView2ContextMenuTarget:**
-* [ICoreWebView2ContextMenuTarget interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget?view=webview2-1.0.1158-prerelease)
+* [ICoreWebView2ContextMenuTarget interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)
 
 **ICoreWebView2CustomItemSelectedEventHandler:**
-* [ICoreWebView2CustomItemSelectedEventHandler interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler?view=webview2-1.0.1158-prerelease)
+* [ICoreWebView2CustomItemSelectedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)
 
 **ICoreWebView2Environment:**
-* [ICoreWebView2Environment interface](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5?view=webview2-1.0.1018-prerelease)
+* [ICoreWebView2Environment interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5)
 Methods:
-* [ICoreWebView2Environment::CreateContextMenuItem method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6?view=webview2-1.0.1158-prerelease#createcontextmenuitem)
+* [ICoreWebView2Environment::CreateContextMenuItem method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem)
 
 Enums:
 
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease#corewebview2_context_menu_item_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
 
-* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease#corewebview2_context_menu_target_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE`
    * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE`
 
-
-<!-- * `get_PageUri` - on `info`, no type found -->
-<!-- * `GetMainWindow`  m_appWindow type not found therefore out of scope                                    m_appWindow->GetMainWindow(), pageString.c_str(), -->
-<!-- * `GetWebViewEnvironment` win f   CHECK_FAILURE(m_appWindow->GetWebViewEnvironment()->QueryInterface( -->
-
-<!--  not found
-* `try_query`
-m_webView
-try IWebView2
-seems on args -->
+<!-- /api1, C++ -->
 
 
 <!-- ------------------------------- -->
@@ -266,24 +258,32 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
 };
 ``` 
 
+<!-- api2, C# -->
 Key APIs used in this example:
 
-* `ContextMenuRequested`  CoreWebView2.ContextMenuRequested
-* `ContextMenuTarget`
+**CoreWebView2:**
+* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
 
-* [CoreWebView2.ContextMenuRequested event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested?view=webview2-dotnet-1.0.1133-prerelease)
+**CoreWebView2ContextMenuItem:**
+* [CoreWebView2ContextMenuItem Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)
+* [CoreWebView2ContextMenuItem.CustomItemSelected Event](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected)
 
-* [CoreWebView2](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2?view=webview2-dotnet-1.0.1133-prerelease)
+**CoreWebView2ContextMenuItemKind:**
+* [CoreWebView2ContextMenuItemKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)
 
-* `CoreWebView2ContextMenuItem`
-* `CoreWebView2ContextMenuItemKind`
+**CoreWebView2ContextMenuRequestedEventArgs:**
 * [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
-* `CoreWebView2ContextMenuTargetKind`
-* `CreateContextMenuItem`
-* `CustomItemSelected`
+* [CoreWebView2ContextMenuRequestedEventArgs.ContextMenuTarget Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.contextmenutarget#microsoft-web-webview2-core-corewebview2contextmenurequestedeventargs-contextmenutarget)
 
-* `Insert`
-* `RemoveAt`
+**CoreWebView2ContextMenuTargetKind:**
+* [CoreWebView2ContextMenuTargetKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutargetkind)
+
+**CoreWebView2Environment:**
+* [CoreWebView2Environment.CreateContextMenuItem Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcontextmenuitem#microsoft-web-webview2-core-corewebview2environment-createcontextmenuitem(system-string-system-io-stream-microsoft-web-webview2-core-corewebview2contextmenuitemkind))
+
+<!-- /api2, C# -->
+
 
 ---
 
@@ -527,89 +527,52 @@ void ContextMenu::AddMenuItems(
     }
 ```
 
+<!-- api3, C++ -->
 Key APIs used in this example:
 
-<!-- shorten then link -->
+**ICoreWebView2:**
+* [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2_4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_4)
+* [ICoreWebView2::add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
 
-* [ICoreWebView2Experimental6::add_ContextMenuRequested](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental6?view=webview2-1.0.1158-prerelease#add_contextmenurequested)
+**ICoreWebView2ContextMenuItem:**
+* [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
+* [ICoreWebView2ContextMenuItem::get_Children method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
+* [ICoreWebView2ContextMenuItem::get_CommandId method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid)
+* [ICoreWebView2ContextMenuItem::get_ShortcutKeyDescription method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription)
 
-<!-- * `AppendMenu` - no type, maybe local f -->
-* [WebView2.ContextMenu property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.wpf.webview2.contextmenu?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-wpf-webview2-contextmenu)
+**ICoreWebView2ContextMenuItemCollection:**
+* [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
+* [ICoreWebView2ContextMenuItemCollection::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
+* [ICoreWebView2ContextMenuItemCollection::get_IsChecked method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_ischecked)
+* [ICoreWebView2ContextMenuItemCollection::get_IsEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_isenabled)
+* [ICoreWebView2ContextMenuItemCollection::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
+* [ICoreWebView2ContextMenuItemCollection::get_Label method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_label)
+* [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
 
-<!-- * `ConvertToScreenCoordinates`  local f name -->
+**ICoreWebView2ContextMenuRequestedEventArgs:**
+* [ICoreWebView2ContextMenuRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
+* [ICoreWebView2ContextMenuRequestedEventArgs::get_Location method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location)
+* [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
+* [ICoreWebView2ContextMenuRequestedEventArgs::put_Handled method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled)
+* [ICoreWebView2ContextMenuRequestedEventArgs::put_SelectedCommandId method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
+* [ICoreWebView2ContextMenuRequestedEventArgs::GetDeferral method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#getdeferral)
 
+**ICoreWebView2ContextMenuRequestedEventHandler:**
+* [ICoreWebView2ContextMenuRequestedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
 
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4?view=webview2-1.0.1158-prerelease)
+**ICoreWebView2Deferral:**
+* [ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)
+* [ICoreWebView2Deferral::Complete method](/microsoft-edge/webview2/reference/win32/icorewebview2deferral#complete)
+
+**COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND:**
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4)
     * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_CHECK_BOX`
     * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
     * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_RADIO`
     * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`
     * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
-
-* [ICoreWebView2Deferral](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2deferral?view=webview2-1.0.1158-prerelease)
-
-* [ICoreWebView2Deferral::Complete](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2deferral?view=webview2-1.0.1158-prerelease#complete)
-
-
-* [get_Children](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_children)
-* [get_CommandId](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_commandid)
-
-* [ICoreWebView2ContextMenuItemCollection::get_Count](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection?view=webview2-1.0.1158-prerelease#get_count)
-
-* [get_IsChecked](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_ischecked)
-* [get_IsEnabled](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_isenabled)
-* [get_Kind](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_kind)
-* [get_Label](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_label)
-
-
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_Location](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#get_location)
-
-
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#get_menuitems)
-
-
-
-* `get_ParentWindow`
-* [get_ShortcutKeyDescription](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_shortcutkeydescription)
-
-
-* [ICoreWebView2ContextMenuRequestedEventArgs::put_Handled](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#put_handled)
-* [ICoreWebView2ContextMenuRequestedEventArgs::put_SelectedCommandId(INT32 value)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
-
-
-<!-- * `CreateMenu`  local f -->
-<!-- * `CreatePopupMenu` local f -->
-* [ICoreWebView2ContextMenuRequestedEventArgs::GetDeferral](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#getdeferral)
-
-
-* [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection?view=webview2-1.0.1158-prerelease#getvalueatindex)
-
-
-
-* [ICoreWebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1158-prerelease)
-* [ICoreWebView2_4](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_4?view=webview2-1.0.1158-prerelease)
-
-* [ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
-* [ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
-* [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
-* [ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
-
-* [ICoreWebView2Deferral](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2deferral?view=webview2-1.0.1158-prerelease)
-
-
-<!-- * `showMenu`
-try ICoreWebView2ContextMenuRequestedEventArgs
-not found -->
-
-
-
-* `TPM_TOPALIGN | TPM_LEFTALIGN | TPM_RETURNCMD,`
-
-<!-- * `TrackPopupMenu` - local sample's arb f name -->
-
-
-* `try_query`
-* `webview2_4`
+<!-- /api3 -->
 
 
 <!-- ------------------------------- -->
@@ -668,23 +631,37 @@ IList<CoreWebView2ContextMenuItem> menuList, ItemsControl cm)
 }
 ```
 
+<!-- api4, C# -->
 Key APIs used in this example:
 
-* `Add`
-* `ContextMenu`
+**CoreWebView2:**
 * [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
-* `CoreWebView2`
+* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+
+**CoreWebView2ContextMenuItem:**
 * [CoreWebView2ContextMenuItem Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)
+
+**CoreWebView2ContextMenuItemKind:**
 * [CoreWebView2ContextMenuItemKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)
+
+**CoreWebView2ContextMenuRequestedEventArgs:**
 * [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
-* [CoreWebView2Deferral](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2deferral?view=webview2-dotnet-1.0.1133-prerelease)
-* [CoreWebView2ContextMenuRequestedEventArgs.GetDeferral method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenurequestedeventargs-getdeferral)
+* [CoreWebView2ContextMenuRequestedEventArgs.GetDeferral method](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral#microsoft-web-webview2-core-corewebview2contextmenurequestedeventargs-getdeferral)
+
+**CoreWebView2Deferral:**
+* [CoreWebView2Deferral](/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
+
+**WebView2:**
+* [WebView2.ContextMenu property](/dotnet/api/microsoft.web.webview2.wpf.webview2.contextmenu#microsoft-web-webview2-wpf-webview2-contextmenu)
+
+* `Add`
 
 * `Handled`
-<!-- * `ItemsControl` .NET   https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol?view=windowsdesktop-6.0 -->
+<!-- * `ItemsControl` .NET   /dotnet/api/system.windows.controls.itemscontrol -->
 * `MenuItem`
 <!-- * `PopulateContextMenu` local f name -->
 * `Separator`
+<!-- /api4, C#-->
 
 ---
 
@@ -762,9 +739,6 @@ Classes:
 
 * [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
 
-<!-- WinRT, needed?
-* [CoreWebView2ContextMenuRequestedEventArgs Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenurequestedeventargs) -->
-
 * [CoreWebView2ContextMenuTarget Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget)
 
 Methods:
@@ -789,8 +763,6 @@ Events:
 
 * [CoreWebView2ContextMenuItem.CustomItemSelected Event](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected)
 
-WinRT:
-* [CoreWebView2ContextMenuItem.CustomItemSelected event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2contextmenuitem#customitemselected)
 
 ---
 
