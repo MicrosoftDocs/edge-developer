@@ -688,6 +688,8 @@ Key APIs used in this example:
 <!-- ====================================================================== -->
 ## Disabling the WebView2 context menu
 
+<!-- todo: chat: what could go in this kind of section in this article, equivalent to Clean Browsing Data?  provide this URL & CBD URL -->
+
 # [C++](#tab/cpp)
 
 ```cpp
@@ -732,14 +734,14 @@ else
 ```
 
 <!-- sample copied from API Ref
-https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1108.44#get_aredefaultcontextmenusenabled
+https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled
 -->
 
 Key APIs used in this example:
 
-* [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1108.44#get_aredefaultcontextmenusenabled)
+* [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
 
-* [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1108.44#put_aredefaultcontextmenusenabled)
+* [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
 
 
 # [C#](#tab/csharp)
@@ -750,7 +752,7 @@ Key APIs used in this example:
 // pending
 ```
 
-* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled?view=webview2-dotnet-1.0.1108.44)
+* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
 
 The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) has similar code.  It's based on a setting property.
 
