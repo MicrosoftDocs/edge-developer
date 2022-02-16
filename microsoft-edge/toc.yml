@@ -511,6 +511,12 @@
                 - name: Simulate device orientation with the Sensors tool  # orig: was in "Mobile simulation"
                   href: devtools-guide-chromium/device-mode/orientation.md
                   displayName: Sensors tool, Device Emulation
+# Source maps monitor tool ----------------------------------------------------
+            - name: Source maps monitor tool
+              items:
+                - name: Source maps monitor tool  # no article yet
+                  href: devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
+                  displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
             # - name: WebAudio tool  # un-comment node when add article or jump page to repo
             #   items:

@@ -65,7 +65,6 @@ Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript 
 1. In the debugger, step, and see updates to buffers in the **Memory Inspector** tool.
 
 
-_Further article content pending_
 
 
 <!-- ====================================================================== -->
