@@ -375,47 +375,7 @@ Click the **Close** DevTools (![Close DevTools icon.](media/close-devtools-icon-
 <!-- ====================================================================== -->
 ## Overview of all tools
 
-DevTools includes the following tools.
-<!-- add Desc column -->
-
-| Tool | Description | Article |
-| --- | --- | --- |
-| **3D View** tool | Explore the web page translated into a 3D perspective.  Debug your webpage by navigating through the DOM or z-index stacking context. | [Navigate z-index, DOM, and layers using the 3D View tool](3d-view/index.md) |
-| **Animations** tool | Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool. | [Inspect and modify CSS animation effects](inspect-styles/animations.md) |
-| **Application** tool | _HTTP cookies_ are used to manage user sessions, store user personalization preferences, and track user behavior.  Use the **Cookies** pane of the **Application** tool to view, edit, and delete the HTTP cookies for a webpage. | [View, edit, and delete cookies](storage/cookies.md) |
-| **Changes** tool | Tracks any changes you've made to CSS or JavaScript in DevTools.  Shows you what changes to make to your actual source files after you use DevTools to modify your webpage files sent from the server. | [Track changes to files using the Changes tool](changes/changes-tool.md) |
-| **Console** tool | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](console/index.md) |
-| **Coverage** tool | Help you find unused JavaScript and CSS code, to speed up your page load and save your mobile users cellular data. | [Find unused JavaScript and CSS code with the Coverage tool](coverage/index.md) |
-| **CSS Overview** tool | Help you better understand your page's CSS and identify potential improvements. | [CSS Overview tool](css/css-overview-tool.md) |
-| **Detached Elements** tool | To increase the performance of your page, this tool finds detached elements that the browser cannot garbage-collect, and identifies the JavaScript object that is still referencing the detached element.  By changing your JavaScript to release the element, you reduce the number of detached elements on your page, increasing page performance and responsiveness. | [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md) |
-| **Developer Resources** | Shows resource URLs for the webpage. | [Developer Resources tool](developer-resources/developer-resources.md) |
-| **Device Emulation** | Use the **Device Emulation** tool, sometimes called _Device Mode_, to approximate how your page looks and responds on a mobile device. | [Emulate mobile devices (Device Emulation)](device-mode/index.md) |
-| **Elements** tool | Inspect, edit, and debug your HTML and CSS.  You can edit in the tool while displaying the changes live in the browser.  Debug your HTML using the DOM tree, and inspect and work on the CSS for your webpage. | [Inspect, edit, and debug HTML and CSS with the Elements tool](elements-tool/elements-tool.md) |
-| **Inspect** tool | Use the **Inspect** tool to see information about an item within a rendered webpage.  When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay information and grid highlighting on the webpage. | [Analyze pages using the Inspect tool](css/inspect.md) |
-| **Issues** tool | The **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues. | [Find and fix problems using the Issues tool](issues/index.md) |
-| **JavaScript Profiler** tool | This tool has been replaced by the **Performance** tool and the **Memory** tool. | [JavaScript Profiler tool](javascript-profiler/javascript-profiler-tool.md) |
-| **Layers** tool | The **Layers** tool represents the webpage in a 3D space.  The **Layers** tool has essentially been replaced by the **3D View** tool. | [Layers tool](layers/layers-tool.md) |
-| **Lighthouse** tool | Use the Lighthouse tool to identify and fix common problems that affect your site's performance, accessibility, and user experience. | [Lighthouse tool](lighthouse/lighthouse-tool.md) |
-| **Media** tool | Use this tool to view information and debug the media players per browser tab. | [View and debug media players information](media-panel/index.md) |
-| **Memory** tool | Find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections. | [Fix memory problems](memory-problems/index.md) |
-| **Memory Inspector** tool | Inspect JavaScript ArrayBuffer with the Memory Inspector. | [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](memory-inspector/memory-inspector-tool.md) |
-| **Network** tool | Use the **Network** tool to make sure that resources are being downloaded or uploaded as expected.  Inspect the properties of an individual resource, such as the HTTP headers, content, or size. | [Inspect network activity](network/index.md) |
-| **Network conditions** tool | Use the **Network conditions** tool to disable the browser cache, set network throttling, set the user agent string, and set Content-Encodings such as deflate, gzip, and br. | [Network conditions tool](network-conditions/network-conditions-tool.md) |
-| **Network request blocking** tool |  |  |
-| **Performance** tool | Analyze runtime performance, which is how your page performs when it's running, as opposed to loading. | [Get started analyzing runtime performance](evaluate-performance/index.md) |
-| **Performance monitor** tool | Provides a real-time view of the runtime performance of a webpage, to determine where performance problems come from, making a website run slowly.  Finds whether problems are from high memory or CPU usage, too-frequent layout and style calculations, or too many DOM nodes and event listeners. | [Measure runtime performance of a page using the Performance monitor tool](performance-monitor/performance-monitor-tool.md) |
-| **Quick source** tool | Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool. | [Display or edit source files using the Quick source tool](quick-source/quick-source-tool.md) |
-| **Rendering** tool | Use the **Rendering** tool to see what your webpage looks like with different display options or vision deficiencies. | [Emulate dark or light schemes in the rendered page](accessibility/preferred-color-scheme-simulation.md) |
-| **Search** tool | Use the **Search** tool to find specific source files for a webpage, including HTML, CSS, JavaScript, and image files. | [Find source files for a page using the Search tool](search/search-tool.md) |
-| **Security** tool | Inspects the security of a page. | [Understand security issues using the Security tool](security/index.md) |
-| **Sensors** tool | Simulates different device orientations. | [Simulate device orientation with the Sensors tool](device-mode/orientation.md) |
-| **Source Maps Monitor** tool | Use the **Source Maps Monitor** tool to monitor your source maps. | [Source Maps Monitor tool](source-maps-monitor/source-maps-monitor-tool.md) |
-| **Sources** tool | Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and inspect and edit the HTML and CSS files that make up the current webpage. | [Sources tool overview](sources/index.md) |
-| **WebAudio** tool |  |  |
-| **WebAuthn** tool | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
-| **Welcome** tool |  |  |
-
-<!-- | **Recorder** tool | Record, replay and measure user flows. | (recorder/recorder-tool.md) | -->
+For a summary of each tool, see [Overview of all tools](about-tools.md#overview-of-all-tools) in _About the list of tools_.
 
 
 <!-- ====================================================================== -->
