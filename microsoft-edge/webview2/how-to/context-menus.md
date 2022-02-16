@@ -176,7 +176,7 @@ Methods:
 * [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
 Methods:
 * [ICoreWebView2ContextMenuItem::add_CustomItemSelected method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
-* [ICoreWebView2ContextMenuItem::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?branch=pr-en-us-1740&view=webview2-1.0.1158-prerelease#get_kind)
+* [ICoreWebView2ContextMenuItem::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
 * [ICoreWebView2ContextMenuItem::get_Name method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
 
 **ICoreWebView2ContextMenuItemCollection:**
