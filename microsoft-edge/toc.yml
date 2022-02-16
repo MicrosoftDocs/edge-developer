@@ -828,35 +828,24 @@
               href: webview2/concepts/browser-features.md
               displayName: 
 
-            - name: Debug WebView2 apps
-              items: 
-                - name: Debug WebView2 apps
-                  href: webview2/how-to/debug.md
-                  displayName: 
-
-                - name: Microsoft Edge DevTools
-                  href: webview2/how-to/debug-devtools.md
-                  displayName: Debug WebView2 apps with Microsoft Edge DevTools  # top-of-page title
-
-                - name: Microsoft Visual Studio Code
-                  href: webview2/how-to/debug-visual-studio-code.md
-                  displayName: Debug WebView2 apps with Visual Studio Code  # top-of-page title
-
-                - name: Microsoft Visual Studio
-                  href: webview2/how-to/debug-visual-studio.md
-                  displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
-
             - name: Navigation events
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
-            - name: Use JavaScript in WebView2 (Run JavaScript from native code)
-              href: webview2/how-to/javascript.md
-              displayName: Use JavaScript in WebView for extended scenarios  # old title
+            - name: Web and native inter-communication
+              items:
 
-            - name: Embed web content into native applications (JavaScript interop)  # added paren
-              href: webview2/how-to/communicate-btwn-web-native.md
-              displayName: 
+                - name: Embed web content into native applications (JavaScript interop)  # added paren
+                  href: webview2/how-to/communicate-btwn-web-native.md
+                  displayName: 
+
+                - name: Calling JavaScript from a native app  # about the executeScriptAsync API
+                  href: webview2/how-to/javascript.md
+                  displayName: Use JavaScript in WebView for extended scenarios  # old title
+
+                  # -name: Using host objects
+                  # href: webview2/how-to/x.md
+                  # displayName: 
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
@@ -865,6 +854,50 @@
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
               displayName: 
+
+            - name: Distribute your app and the WebView2 Runtime
+              href: webview2/concepts/distribution.md
+              displayName: 
+
+
+# -----------------------------------------------------------------------------
+        - name: Debug WebView2 apps
+          items: 
+            - name: Debug WebView2 apps
+              href: webview2/how-to/debug.md
+              displayName: 
+
+            - name: Microsoft Edge DevTools
+              href: webview2/how-to/debug-devtools.md
+              displayName: Debug WebView2 apps with Microsoft Edge DevTools  # top-of-page title
+
+            - name: Microsoft Visual Studio Code
+              href: webview2/how-to/debug-visual-studio-code.md
+              displayName: Debug WebView2 apps with Visual Studio Code  # top-of-page title
+
+            - name: Microsoft Visual Studio
+              href: webview2/how-to/debug-visual-studio.md
+              displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
+
+# -----------------------------------------------------------------------------
+        - name: Architecture
+          items:
+
+            # - name: Architecture of WebView2
+            #   href: webview2/concepts/architecture.md
+            #   displayName: 
+
+            - name: Manage user data folders
+              href: webview2/concepts/user-data-folder.md
+              displayName: Manage the user data folder  # old title
+
+            - name: Process model
+              href: webview2/concepts/process-model.md
+              displayName: Process model for WebView2 apps  # top-of-page title
+
+            - name: Threading model
+              href: webview2/concepts/threading-model.md
+              displayName: Threading model for WebView2 apps  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: Advanced Topics and Best Practices
@@ -881,18 +914,6 @@
 #             href: webview2/concepts/basic-authentication.md
 #             displayName: 
 
-            - name: Manage user data folders
-              href: webview2/concepts/user-data-folder.md
-              displayName: Manage the user data folder  # old title
-
-            - name: Process model
-              href: webview2/concepts/process-model.md
-              displayName: Process model for WebView2 apps  # top-of-page title
-
-            - name: Threading model
-              href: webview2/concepts/threading-model.md
-              displayName: Threading model for WebView2 apps  # top-of-page title
-
             - name: Use the Chrome DevTools Protocol
               href: webview2/how-to/chromium-devtools-protocol.md
               displayName: Use the Chrome DevTools Protocol in WebView2  # old title
@@ -904,17 +925,27 @@
 # -----------------------------------------------------------------------------
         - name: Deployment and Distribution
           items:
+            # in this page, have a  ink to article "Distribute your app and the WebView2 Runtime"
+            # - name: Deployment and Distribution  # new firstchild page
+            #   href: webview2/concepts/deployment-distribution.md
+            #   displayName: Manage WebView2 applications  # old title
+
             - name: Enterprise management of WebView2 Runtimes
               href: webview2/concepts/enterprise.md
               displayName: Manage WebView2 applications  # old title
 
             - name: Distribute an app as a single executable file
               href: webview2/how-to/static.md
-              displayName: Statically link the WebView2 loader library  # old title
+              displayName: Statically link the WebView2 loader library, single-file app  # old title
 
-            - name: Distribute your app and the WebView2 Runtime
-              href: webview2/concepts/distribution.md
-              displayName: 
+
+# -----------------------------------------------------------------------------
+        # - name: WebView2 features and APIs overview
+        #   items:
+
+                  # firstchild article/page: Summary of the capabilities that the APIs group into WebView2
+
+
 # -----------------------------------------------------------------------------
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
