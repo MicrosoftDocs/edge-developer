@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/15/2022
 ---
+# WebAudio tool
 
 Use the **WebAudio** tool to monitor **WebAudio** calls and traffic, for a webpage that uses the WebAudio API.
 

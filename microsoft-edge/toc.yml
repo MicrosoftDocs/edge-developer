@@ -520,9 +520,10 @@
                   href: devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
                   displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
-            # - name: WebAudio tool  # un-comment node when add article or jump page to repo
-            #   items:
-            #      displayName: WebAudio tool
+            - name: WebAudio tool  # un-comment node when add article or jump page to repo
+              href: devtools-guide-chromium/webaudio/webaudio-tool.md
+              items:
+                 displayName: WebAudio tool
 # WebAuthn tool ---------------------------------------------------------------
             - name: WebAuthn tool
               items:
