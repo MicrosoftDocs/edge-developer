@@ -246,7 +246,7 @@ The family group organizer may stop the data collection from the family safety p
 <!-- ====================================================================== -->
 ## Find on Page 
 
-Find on Page allows you to search a web page for important keywords. Open **Settings and more (...) > Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then navigate through these terms with the **Previous result** and **Next result** buttons. 
+Find on Page allows you to search a web page for important keywords. Open **Settings and more (...)** > **Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then navigate through these terms with the **Previous result** and **Next result** buttons. 
 
 To help you find exactly what you're looking for, Microsoft Edge uses a Microsoft cloud service to find additional related matches for your search. This only happens when the **Include related matches** toggle in Find on Page is on.  
 
@@ -279,6 +279,19 @@ If you turn off the **Allow access to location on this device** and **Allow apps
 Microsoft Edge doesn't store your geolocation coordinates. When making requests to the Windows location service, Microsoft Edge generates a new random ID for each request.
 
 **InPrivate** browsing uses the precise location permission setting of the profile from which the **InPrivate** session was launched. **Guest** mode always asks you for permission before granting the site your precise location.
+
+
+<!-- ====================================================================== -->
+## Image Descriptions
+When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when Image Descriptions is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge. 
+
+Only raw image data is sent to Azure Cognitive Services. Images are sent un-encrypted to reduce latency. No user identifiers are included in the requests to the service. Images are not stored or saved on Microsoft servers; Images are discarded immediately after the captions are generated. 
+
+To control Image Descriptions, navigate to edge://settings/accessibility. Toggle the **Get image descriptions from Microsoft for screen readers** setting. 
+
+Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, with focus on a web page element, open the contextual menu (right-click), select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
+
+<!-- ====================================================================== -->
 
 
 <!-- ====================================================================== -->
