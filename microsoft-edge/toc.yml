@@ -859,7 +859,6 @@
               href: webview2/concepts/distribution.md
               displayName: 
 
-
 # -----------------------------------------------------------------------------
         - name: Debug WebView2 apps
           items: 
@@ -923,12 +922,11 @@
               displayName: Automate and test WebView2 apps with Microsoft Edge Driver  # top-of-page title
 
 # -----------------------------------------------------------------------------
-        - name: Deployment and Distribution
+        - name: Deployment and distribution
           items:
-            # in this page, have a  ink to article "Distribute your app and the WebView2 Runtime"
-            # - name: Deployment and Distribution  # new firstchild page
-            #   href: webview2/concepts/deployment-distribution.md
-            #   displayName: Manage WebView2 applications  # old title
+            - name: Deployment and distribution  # new firstchild page
+              href: webview2/concepts/deployment-distribution.md
+              displayName: Manage WebView2 applications  # old title
 
             - name: Enterprise management of WebView2 Runtimes
               href: webview2/concepts/enterprise.md
@@ -938,13 +936,12 @@
               href: webview2/how-to/static.md
               displayName: Statically link the WebView2 loader library, single-file app  # old title
 
-
 # -----------------------------------------------------------------------------
-        # - name: WebView2 features and APIs overview
-        #   items:
-
-                  # firstchild article/page: Summary of the capabilities that the APIs group into WebView2
-
+#       - name: WebView2 features and APIs overview
+#         items:
+#           - name: Capabilities provided by WebView2 APIs  # new firstchild page
+#             href: webview2/x/x.md
+#             displayName: 
 
 # -----------------------------------------------------------------------------
         - name: Release Notes for the WebView2 SDK
