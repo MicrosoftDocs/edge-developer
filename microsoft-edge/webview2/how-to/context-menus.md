@@ -84,6 +84,9 @@ event
 
 ---
 
+<!-- end-of-tab-set marker -->
+
+
 <!-- ====================================================================== -->
 ## Example: Add or remove entries from the default WebView2 menu
 
@@ -287,6 +290,9 @@ Key APIs used in this example:
 
 ---
 
+<!-- end-of-tab-set marker -->
+
+
 <!-- ====================================================================== -->
 ## Drawing a custom context menu
 
@@ -314,7 +320,13 @@ event
 
 ---
 
-<!-- Enumerating menu item IDs and text - not needed? -->
+<!-- end-of-tab-set marker -->
+
+
+### Enumerating menu item IDs and text
+
+_is this section needed?_
+
 
 ### Defining where to show the context menu, by using relative window position
 
@@ -334,6 +346,9 @@ event
 
 ---
 
+<!-- end-of-tab-set marker -->
+
+
 ### Reporting the selected context menu menuitem to WebView2
 
 # [C++](#tab/cpp)
@@ -351,6 +366,8 @@ event
 ```
 
 ---
+
+<!-- end-of-tab-set marker -->
 
 
 <!-- ====================================================================== -->
@@ -665,6 +682,8 @@ Key APIs used in this example:
 
 ---
 
+<!-- end-of-tab-set marker -->
+
 
 <!-- ====================================================================== -->
 ## Disabling the WebView2 context menu
@@ -685,23 +704,65 @@ event
 
 ---
 
+<!-- end-of-tab-set marker -->
+
 
 <!-- ====================================================================== -->
 ## Example: Disabling the WebView2 context menu
 
 # [C++](#tab/cpp)
 
-<!-- todo: copy sample from API Ref -->
+```cpp
+BOOL allowContextMenus;
+CHECK_FAILURE(m_settings->get_AreDefaultContextMenusEnabled(&allowContextMenus));
+if (allowContextMenus)
+{
+    CHECK_FAILURE(m_settings->put_AreDefaultContextMenusEnabled(FALSE));
+    MessageBox(
+        nullptr, L"Context menus will be disabled after the next navigation.",
+        L"Settings change", MB_OK);
+}
+else
+{
+    CHECK_FAILURE(m_settings->put_AreDefaultContextMenusEnabled(TRUE));
+    MessageBox(
+        nullptr, L"Context menus will be enabled after the next navigation.",
+        L"Settings change", MB_OK);
+}
+```
+
+<!-- sample copied from API Ref
+https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1108.44#get_aredefaultcontextmenusenabled
+-->
 
 Key APIs used in this example:
+
+* [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1108.44#get_aredefaultcontextmenusenabled)
+
+* [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1108.44#put_aredefaultcontextmenusenabled)
+
 
 # [C#](#tab/csharp)
 
 <!-- todo: copy sample from API Ref -->
 
+```csharp
+// pending
+```
+
+* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled?view=webview2-dotnet-1.0.1108.44)
+
+The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) has similar code.  It's based on a setting property.
+
+
 Key APIs used in this example:
 
+_pending_
+
+
 ---
+
+<!-- end-of-tab-set marker -->
 
 
 <!-- ====================================================================== -->
@@ -765,6 +826,9 @@ Events:
 
 
 ---
+
+<!-- end-of-tab-set marker -->
+
 
 <!-- ====================================================================== -->
 ## See also
