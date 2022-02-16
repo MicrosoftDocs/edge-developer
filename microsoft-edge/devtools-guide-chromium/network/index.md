@@ -90,14 +90,14 @@ To view the network activity that a page causes:
 
     *  **Type**.  The resource type.
 
-    *  **Initiator**.  The cause of the resource request.  Choosing a link in the **Initiator** column takes you to the source code that caused the request.
+    *  **Initiator**.  The cause of the resource request.  Clicking a link in the **Initiator** column takes you to the source code that caused the request.
 
     *  **Time**.  The duration of the request.
 
     *  **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover over a **Waterfall**.
 
     > [!NOTE]
-    > The graph above the **Network Log** is called the **Overview**.  You will not use the **Overview** graph in this tutorial, so you can hide it.  See [Hide the Overview pane](./reference.md#hide-the-overview-pane).
+    > The graph above the **Network Log** is called the **Overview**.  You won't use the **Overview** graph in this tutorial, so you can hide it.  See [Hide the Overview pane](./reference.md#hide-the-overview-pane).
 
    After you open DevTools, it records network activity in the **Network Log**.
 
