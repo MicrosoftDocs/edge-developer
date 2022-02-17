@@ -877,9 +877,8 @@
       # - name: Overview of APIs
         - name: Using the API features
           items:
-            - name: Clear Browsing Data
+            - name: Clear browsing data from the user data folder
               href: webview2/concepts/clear-browsing-data.md
-
 
         - name: Release notes for WebView2 SDK
           href: webview2/release-notes.md
