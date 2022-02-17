@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/02/2022
+ms.date: 02/16/2022
 ---
 # Manage the user data folder
 
@@ -81,7 +81,7 @@ The following API returns the location of the user data folder, so you can more 
 * .NET: [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
 <!-- same link & comment as above -->
 
-*  WinForms: same as the WPF link.
+*  WinForms: [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
 <!-- same link & comment as above -->
 
 
@@ -93,11 +93,11 @@ If the user data folder doesn't have Write permissions, the following error mess
 * `User data folder cannot be created because a file with the same name already exists.`
 * `Unable to create user data folder, Access Denied.`
 
-If there's insufficient memory, or the Microsoft Edge runtime is unable to start, or the WebView2 Runtime is not found, the error message strings similar to the following may be returned:
+If there's insufficient memory, or the Microsoft Edge runtime is unable to start, or the WebView2 Runtime is not found, error message strings similar to the following may be returned:
 *  `Microsoft Edge runtime unable to start`
 *  `Failed to create WebView2 environment`
 
-Add code like the following code, such as `try/catch` code, to handle such errors.  These tend to be fatal errors that you can't recover from, so the `try/catch` will prevent from crashing, so you'll be able to detect the failure and close the app gracefully.  Some errors are unrecoverable, such as `Access Denied` when trying to use a user data folder that you don't have Write permissions to.  An error dialog shows such errors.
+Add code, such as `try/catch` code, to handle these errors.  These errors tend to be fatal errors that you can't recover from, so the `try/catch` will prevent from crashing, so you'll be able to detect the failure and close the app gracefully.  Some errors are unrecoverable, such as `Access Denied` when trying to use a user data folder that you don't have Write permissions to.  Such errors appear in a dialog box.
 
 
 <!-- ====================================================================== -->
@@ -134,7 +134,7 @@ Note this edge case: Files in user data folders might still be in use after the 
 <!-- ====================================================================== -->
 ## How to share user data folders
 
-WebView2 controls can share the same user data folders, to do the following:
+WebView2 control instances can share the same user data folders, to do the following:
 
 *  Optimize system resources by running in one browser process.  See [The WebView2 process model](../concepts/process-model.md).
 
@@ -143,9 +143,9 @@ WebView2 controls can share the same user data folders, to do the following:
 
 Consider the following when sharing user data folders:
 
-*  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, ensure browser processes exit and close WebView2 controls that share the same user data folder.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
+*  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) event handlers or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, ensure browser processes exit and close WebView2 controls that share the same user data folder.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
 
-*  WebView2 controls that share the same user data folder must use the same options for [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  If not, the WebView2 creation will fail with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`.
+*  WebView2 controls that share the same user data folder must use the same options for [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  If not, the WebView2 creation will fail with the return value `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)`.
 
 
 ### Avoid running too many folders at once
