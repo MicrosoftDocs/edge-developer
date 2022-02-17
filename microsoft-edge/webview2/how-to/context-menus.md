@@ -68,6 +68,8 @@ API for adding menuitems to (the default?) context menu:
 confirm:
 ContextMenuRequested(id, position, list of ContextMenuItems).<!--for custom?-->
 
+
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 ```cpp
@@ -75,6 +77,8 @@ C++ method simplified signature
 event
 ```
 
+
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 ```csharp
@@ -172,19 +176,16 @@ Key APIs used in this example:
 **ICoreWebView2:**
 * [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2)
 * [ICoreWebView2_4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_4)
-Methods:
 * [ICoreWebView2_6::add_ContextMenuRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
 
 **ICoreWebView2ContextMenuItem:**
 * [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
-Methods:
 * [ICoreWebView2ContextMenuItem::add_CustomItemSelected method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
 * [ICoreWebView2ContextMenuItem::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
 * [ICoreWebView2ContextMenuItem::get_Name method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
 
 **ICoreWebView2ContextMenuItemCollection:**
 * [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
-Methods:
 * [ICoreWebView2ContextMenuItemCollection::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
 * [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
 * [ICoreWebView2ContextMenuItemCollection::InsertValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#insertvalueatindex)
@@ -192,7 +193,6 @@ Methods:
 
 **ICoreWebView2ContextMenuRequestedEventArgs:**
 * [ICoreWebView2ContextMenuRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
-Methods:
 * [ICoreWebView2ContextMenuRequestedEventArgs::get_ContextMenuTarget method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget)
 * [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
 
@@ -207,7 +207,6 @@ Methods:
 
 **ICoreWebView2Environment:**
 * [ICoreWebView2Environment interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5)
-Methods:
 * [ICoreWebView2Environment::CreateContextMenuItem method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem)
 
 Enums:
@@ -304,6 +303,7 @@ Context menus use menuitem IDs, so Office can pass the user selection to WebView
 API: (ContextMenuResult id, ContextMenuItem selection). -->
 
 
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 ```cpp
@@ -311,6 +311,8 @@ C++ method simplified signature
 event
 ```
 
+
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 ```csharp
@@ -330,6 +332,8 @@ _is this section needed?_
 
 ### Defining where to show the context menu, by using relative window position
 
+
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 ```cpp
@@ -337,6 +341,8 @@ C++ method simplified signature
 event
 ```
 
+
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 ```csharp
@@ -351,6 +357,8 @@ event
 
 ### Reporting the selected context menu menuitem to WebView2
 
+
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 ```cpp
@@ -358,6 +366,8 @@ C++ method simplified signature
 event
 ```
 
+
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 ```csharp
@@ -690,6 +700,8 @@ Key APIs used in this example:
 
 <!-- todo: chat: what could go in this kind of section in this article, equivalent to Clean Browsing Data?  provide this URL & CBD URL -->
 
+
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 ```cpp
@@ -697,6 +709,8 @@ C++ method simplified signature
 event
 ```
 
+
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 ```csharp
@@ -712,6 +726,8 @@ event
 <!-- ====================================================================== -->
 ## Example: Disabling the WebView2 context menu
 
+
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 ```cpp
@@ -744,6 +760,7 @@ Key APIs used in this example:
 * [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
 
 
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 <!-- todo: copy sample from API Ref -->
@@ -771,6 +788,7 @@ _pending_
 ## API Reference Links
 
 
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 Interfaces:
@@ -786,14 +804,12 @@ For disabling the context menu:
 * [ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
 
 * [ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
+* [ICoreWebView2ContextMenuItem::add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
 
 * [ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
 
-Methods:
 
-* [ICoreWebView2ContextMenuItem::add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
-
-
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 Classes:
