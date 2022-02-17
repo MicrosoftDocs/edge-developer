@@ -16,8 +16,8 @@ The following are considerations for developing websites and products for the we
 *  Moving users to Microsoft Edge from Internet Explorer.
 *  Configuring tracking prevention in Microsoft Edge.
 *  Detecting Microsoft Edge from your website.
-*  Customizing the Password Reveal button.
 *  Detecting Windows 11 by using User-Agent Client Hints.
+*  Customizing the Password Reveal button.
 
 These aspects of developing for the web platform are described below.
 

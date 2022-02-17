@@ -268,15 +268,21 @@ conceptualContent:
         # Card
         - title: Web platform
           links:
-            - url: /microsoft-edge/web-platform/web-platform  # new firstchild article
-              text: Web platform overview
+            - text: Web platform overview
+              url: /microsoft-edge/web-platform/web-platform  # new firstchild article
               itemType: overview
-            - url: /microsoft-edge/web-platform/user-agent-guidance
+
+            - text: Detect Microsoft Edge from your website
+              url: /microsoft-edge/web-platform/user-agent-guidance
               itemType: how-to-guide
-              text: Detecting Microsoft Edge from your website
-            - url: /microsoft-edge/web-platform/site-impacting-changes
+
+            - text: Detect Windows 11 using User-Agent Client Hints
+              url: /microsoft-edge/web-platform/how-to-detect-win11
               itemType: how-to-guide
-              text: Site compatibility-impacting changes
+
+            - text: Site compatibility-impacting changes
+              url: /microsoft-edge/web-platform/site-impacting-changes
+              itemType: how-to-guide
         # Card
         - title: Microsoft Edge IDE integration
           links:
