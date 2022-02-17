@@ -1,6 +1,6 @@
 ---
 title: Manage the user data folder
-description: How to manage user data folders in a WebView2 application.
+description: How to manage user data folders in a WebView2 app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,7 +10,7 @@ ms.date: 02/02/2022
 ---
 # Manage the user data folder
 
-<!-- 
+<!--
 lexicon:
 the "user data folder" is used to store x, y, & z.
 The "user data folder location" is where the user data folder is located; its path.
@@ -18,135 +18,13 @@ The "user data folder location" is where the user data folder is located; its pa
 
 As a WebView2 developer, you need to know about the user data folder for WebView2 apps, including how it's created, how it's used, and how you need to handle it.
 
-WebView2 applications interact with user data folders to store browser data, such as cookies, permissions, and cached resources.  Each instance of a WebView2 control is associated with a user data folder.  Each user data folder is unique to a user.
+WebView2 apps interact with user data folders to store browser data, such as cookies, permissions, and cached resources.  Each instance of a WebView2 control is associated with a user data folder.  Each user data folder is unique to a user.
 
 
 <!-- ====================================================================== -->
-## The default location for creating user data folders
+## How to create user data folders
 
-For any new user data folders that are created:
-
-*  If your app specifies the user data folder location, WebView2 creates the new user data folder in your specified location.
-
-*  If your app doesn't specify the user data folder location, WebView2 creates the new user data folder in the default location.
-
-WebView2 doesn't change the location of any existing user data folders.
-
-<!--
-old version of the above; possibly delete:
-Cases where the WebView2 runtime doesn't use the default location:
-
-*  If your WebView2 app specifies the location of the user data folder, the WebView2 Runtime uses that location rather than the default location.
-
-*  If you don't update your WebView2 SDK, the WebView2 Runtime uses the existing location of the user data folder, rather than the default location.
-
-*  If you run your WebView2 app before this change, and WebView2 created the user data folder for you, the WebView2 Runtime uses that existing user data folder location.  The WebView2 Runtime doesn't change the user data folder location.
-
--->
-
-
-<!-- ====================================================================== -->
-## Location of the user data folder for each platform
-
-Get the location of the user data folder for each platform (the default start folder) from the Getting started article for that platform.
-<!-- is the location of the user data folder actually specified in those articles?  if so, list those locations here by copying the locations from those articles:
-* [Get started with WebView2 in Win32 apps](../get-started/win32.md)
-* [Get started with WebView2 in WinForms apps](../get-started/winforms.md)
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
-* [Get started with WebView2 in WinUI 3 (Windows App SDK)](../get-started/winui.md)
-* [Get started with WebView2 in WPF apps](../get-started/wpf.md)
--->
-
-| Platform | Default location of the user data folder|
-| --- | --- |
-| Win32 |  |
-| WinForms |  |
-| WinUI 2 (UWP) |  |
-| WinUI 3 (Windows App SDK) |  |
-| WPF |  |
-
-
-### Runtime flag
-
-There's a Runtime flag.
-
-
-### Scenarios
-
-This article documents both scenarios:
-
-*  Primarily, this article documents the new way of doing things.  This is the simple scenario and you don't need to know the old vs. new way.
-
-*  Secondarily, this article documents the old way of doing things, in case you have an existing WebView2 app and you want to change the user data folder location per the new convention.
-
-The default functionality for the location of the user data folder for WebView2 is changing to the new way, but you might need to know what the change was from the old to the new way so that you know how to change your code.   The old way is the exception case; this article focuses on the new, default case.
-
-For a new WebView2 app, you don't have to know about the old way.
-The key difference between the old and new ways: think about data cleanup during uninstall.<!--doc that.-->
-
-<!-- as maybe stated elsewhere in this article:
-Scenarios for using user data folder, in general; not changing:
-* Uninstalling the app and you want to clean up the data.
-* Deleting the user data folder; resetting the WebView2. -->
-
-
-<!-- ====================================================================== -->
-## Retrieve the location of an existing user data folder
-
-To find out what the user data folder was set to, use the [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).  This read-only property returns the user data folder location for an existing WebView2 app.
-
-
-<!-- ====================================================================== -->
-## Specify a custom location for creating user data folders
-
-To specify the location where new user data folders will be created, call the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), which takes a `userDataFolder` parameter.
-
-If you don't specify the location where new user data folders will be created, WebView2 will create new user data folders in the default location for the platform.
-
-
-<!-- ====================================================================== -->
-## Error message strings
-
-<!-- When you do x, -->The following error message strings may be returned:
-
-* "User data folder cannot be created because a file with the same name already exists."
-* "Unable to create user data folder, Access Denied."
-* "Edge runtime unable to start"
-* "Failed to create WebView2 environment"
-<!-- show HRESULT? -->
-
-Add code like the following code, such as try/catch code, to handle the error.
-<!-- Will there be an error dialog, or an error code? -->
-
-There's a new API to query where the user data folder is, so you can more easily delete the user data folder, by getting the calculated value of the user data folder location.
-
-*  Win32: [ICoreWebView2Environment7.get_UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)
-
-*  WPF: link tbd
-
-*  WinForms: same as the WPF link.<!--which is __-->
-
-*  WinUI 2 & WinUI3: For WinUI 2 & WinUI3, there's no such link; you have to use an environment variable instead: `WEBVIEW2_USER_DATA_FOLDER="\<folder path\>"`.  See [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
-<!-- verbose link, delete?
-/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1083-prerelease -->
-
-
-<!-- ====================================================================== -->
-## Best practices
-
-User data folders are created automatically by WebView2.  WebView2 developers control the lifetime of the user data folder.  If your application re-uses user data from application sessions, consider saving the user data folders, otherwise you can delete them.  Consider the following scenarios when deciding how to manage your user data folders:
-
-*  If the same user uses your application repeatedly, and the web content of the application relies on the user's data, save the user data folder.
-
-*  If multiple users use your application repeatedly, create a new user data folder for each new user, and save the user data folder of each user.
-
-*  If your application doesn't have repeat users, create a new user data folder for each user, and delete the previous user data folder.
-
-
-<!-- ====================================================================== -->
-## Create user data folders
-
-By default, WebView2 creates a user data folder in the default location.  The default location works well for most apps.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate read and write permissions for the WebView2 application runtime.
+By default, WebView2 creates a user data folder in the default location.  The default location works well for most apps.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate read and write permissions for the WebView2 app runtime.
 
 To specify the location of the user data folder, include the `userDataFolder` parameter when calling [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
 
@@ -154,16 +32,95 @@ When `userDataFolder` isn't specified, WebView2 creates user data folders at def
 
 *  For packaged Windows Store apps, the default user folder is the `ApplicationData\LocalFolder` subfolder in the package's folder.
 
-*  For existing desktop apps, the default user data folder is the executable (`exe`) path of your application + `.WebView2`.  Instead of using the default location of the user data folder, we recommend that you explicitly specify its location.  We recommend creating the user data folder in the same folder where all other app data is stored.
+*  For existing desktop apps, the default user data folder is the executable (`exe`) path of your app + `.WebView2`.  Instead of using the default location of the user data folder, we recommend that you explicitly specify its location.  We recommend creating the user data folder in the same folder where all other app data is stored.
+
+*  WinUI 2 & WinUI3: For WinUI 2 & WinUI3, there's no such link; you have to use an environment variable instead: `WEBVIEW2_USER_DATA_FOLDER="\<folder path\>"`.  See [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
 
 <!-- ====================================================================== -->
-## Delete user data folders
+## Default location of where the user data folder is created
 
-Your application might need to delete user data folders, for any of the following reasons:
+If you don't specify the location where new user data folders will be created, WebView2 will create new user data folders in the default location for the platform:
 
-*  When uninstalling your app.  If you are uninstalling packaged Windows Store apps, Windows deletes user data folders automatically. 
-<!-- Add how to delete the user data folder by using the APIs (one per platform) that are linked above. -->
+| Platform | Default location of the user data folder |
+|---|---|
+| Packaged apps | The platform user data folder. |
+| ClickOnce-deployed apps | Under the directory that the app executable (.exe) is running in. |
+| Win32 apps | Under the directory that the app executable (.exe) is running in. |
+
+Note: If the app is running from a location that the user doesn't have write access to, the user directory folder won't be able to be created, and you will receive a runtime error during WebView2 startup.
+
+
+<!-- ====================================================================== -->
+## How to specify a custom location for creating user data folders
+
+To specify the location where new user data folders will be created, call the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), which takes a `userDataFolder` parameter.
+<!-- todo: Expand this with sample code for each platform
+we have sample for each platform, two lines of code, more durable is point to the sample instead of copying the two lines here.
+find .cpp or .cs file near https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample
+-->
+
+
+<!-- ====================================================================== -->
+## How to retrieve the location of the working user data folder
+
+To find out what the user data folder location was set to, use the `UserDataFolder` property.  This read-only property returns the user data folder location for the WebView2 app.  See the sample, as an example of reading this property.
+
+The above is true regardless of whether the udf loc was default or by specifying a custom location by calling `CoreWebView2Environment.CreateAsync`.
+
+The following API returns the location of the user data folder, so you can more easily delete the user data folder, by getting the calculated value of the user data folder location.
+
+<!-- C++-style Property -->
+*  Win32: [ICoreWebView2Environment7.get_UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)
+<!-- don't need to link to the sample repo, b/c the API Ref contains a sample of calling this method -->
+
+<!-- C#-style Property for these 3 platforms: -->
+*  WPF: [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
+<!-- todo: update the page https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1108.44 to add an example/sample of reading this property. -->
+
+* .NET: [CoreWebView2Environment.UserDataFolder property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
+<!-- same link & comment as above -->
+
+*  WinForms: same as the WPF link.
+<!-- same link & comment as above -->
+
+
+<!-- ====================================================================== -->
+## Error message strings
+
+<!-- this is true whether custom or default -->
+If the user data folder doesn't have Write permissions, the following error message strings may be returned:
+* `User data folder cannot be created because a file with the same name already exists.`
+* `Unable to create user data folder, Access Denied.`
+
+If there's insufficient memory, or the Microsoft Edge runtime is unable to start, or the WebView2 Runtime is not found, the error message strings similar to the following may be returned:
+*  `Microsoft Edge runtime unable to start`
+*  `Failed to create WebView2 environment`
+
+Add code like the following code, such as `try/catch` code, to handle such errors.  These tend to be fatal errors that you can't recover from, so the `try/catch` will prevent from crashing, so you'll be able to detect the failure and close the app gracefully.  Some errors are unrecoverable, such as `Access Denied` when trying to use a user data folder that you don't have Write permissions to.  An error dialog shows such errors.
+
+
+<!-- ====================================================================== -->
+## Best practices for persisting user data folders
+
+User data folders are created automatically by WebView2.  WebView2 developers control the lifetime of the user data folder.  If your app re-uses user data from app sessions, consider saving the user data folders, otherwise you can delete them.
+
+When deciding how to manage your user data folders, consider the following scenarios:
+
+| Scenario | Action |
+|---|---|
+| If the same user uses your app repeatedly, and the web content of the app relies on the user's data | Don't explicitly delete the user data folder; persist the data. |
+| If multiple users use your app repeatedly | Create a new user data folder for each new user, and save the user data folder of each user. |
+| If your app doesn't have repeat users | Create a new user data folder for each user, and delete the previous user data folder. |
+
+
+<!-- ====================================================================== -->
+## How to delete user data folders
+
+Your app might need to delete user data folders, for any of the following reasons:
+
+*  When uninstalling your app.  If you are uninstalling packaged Windows Store apps, Windows deletes user data folders automatically.
+<!-- todo: find the samles that are doing this, and add links here pointing to those samples as an examptle of how to delete the user data folder by using the APIs (one per platform) that are linked above. -->
 
 *  To clean up all browsing data history.
 
@@ -171,11 +128,11 @@ Your application might need to delete user data folders, for any of the followin
 
 *  To remove previous session data.
 
-Files in user data folders might still be in use after the WebView2 application is closed.  In this situation, wait for the browser process and all child processes to exit before deleting the folder.  You can retrieve the process ID of the browser process by using the `BrowserProcessId` property of the WebView2.
+Note this edge case: Files in user data folders might still be in use after the WebView2 app is closed.  In this situation, wait for the browser process and all child processes to exit before deleting the user data folder.  You can retrieve the process ID of the browser process by using the `BrowserProcessId` property of the WebView2 app instance.
 
 
 <!-- ====================================================================== -->
-## Share user data folders
+## How to share user data folders
 
 WebView2 controls can share the same user data folders, to do the following:
 
@@ -193,6 +150,6 @@ Consider the following when sharing user data folders:
 
 ### Avoid running too many folders at once
 
-To isolate different parts of your application, or when sharing data between WebView2 controls isn't needed, you can use different user data folders.  For example, an application can consist of two WebView2 controls, one for displaying an advertisement and the other for displaying application content.  You can use different user data folders for each WebView2 control.
+To isolate different parts of your app, or when sharing data between WebView2 controls isn't needed, you can use different user data folders.  For example, an app can consist of two WebView2 controls, one for displaying an advertisement and the other for displaying app content.  You can use different user data folders for each WebView2 control.
 
 Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different user data folders at the same time.
