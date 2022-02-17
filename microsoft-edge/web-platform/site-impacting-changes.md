@@ -23,17 +23,10 @@ Check this article often.  The Microsoft Edge team updates this article as think
 <!-- ====================================================================== -->
 ## Differences from the Chromium schedule, and high-impact changes
 
-<!-- todo: clarify/confirm what kind of differences are and are not covered in the table: differences of schedule, of feature ares -->
 This table lists:
-
-*  Differences between the schedule of changes for Microsoft Edge versus the Chromium project.
-
-*  High-impact changes which the Microsoft Edge team is tracking especially closely.
-
-<!-- todo: clarify/confirm what kind of differences are and are not covered in the table: differences of schedule, of feature ares -->
-Not listed in this table:
-
-*  Feature areas where Microsoft Edge plans to deviate from Chromium in release timing or behavior.
+*  Changes where the rollout schedule for Microsoft Edge differs from the upstream Chromium project.
+*  High-impact changes which the Microsoft Edge team is tracking closely.
+<!-- This table doesn't include low-impact changes which are unlikely to have compatibility impact. -->
 
 | Change | Stable Channel | Experimentation | Additional information |
 | --- | --- | --- | --- |
