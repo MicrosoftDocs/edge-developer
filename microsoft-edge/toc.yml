@@ -834,18 +834,17 @@
 
             - name: Web and native interop
               items:
-
-                - name: Embed web content into native applications (JavaScript interop)  # added paren
+                - name: Interop of native-side and web-side code
                   href: webview2/how-to/communicate-btwn-web-native.md
-                  displayName: 
+                  displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
 
-                - name: Calling JavaScript from a native app  # about the executeScriptAsync API
+                - name: Call web-side JavaScript code from native-side C++ code
                   href: webview2/how-to/javascript.md
-                  displayName: Use JavaScript in WebView for extended scenarios  # old title
+                  displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-                  # -name: Using host objects
-                  # href: webview2/how-to/x.md
-                  # displayName: 
+                - name: Call native-side C++ code from web-side JavaScript code
+                  href: webview2/how-to/add-host-object-to-script.md
+                  displayName: AddHostObjectToScript API
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
