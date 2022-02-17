@@ -1,5 +1,5 @@
 ---
-title: Add a custom right-click menu to a WebView2 app
+title: Add context menus (right-click menus) to a WebView2 app
 description: How to add a right-click menu (context menu) to a WebView2 app.  Add and remove items from the default WebView2 context menus.  Create your own context-menu UI by using data that's passed from the WebView2 control to your app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/14/2022
 ---
-# Add a custom right-click menu to a WebView2 app
+# Add context menus (right-click menus) to a WebView2 app
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of your WebView2 app.  Using this API, you can:
 
