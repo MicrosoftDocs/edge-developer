@@ -832,7 +832,7 @@
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
-            - name: Web and native inter-communication
+            - name: Web and native interop
               items:
 
                 - name: Embed web content into native applications (JavaScript interop)  # added paren
