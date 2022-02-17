@@ -14,5 +14,5 @@ For an introduction to the fundamentals, see [Distribute your app and the WebVie
 
 Articles in this section:
 
-* [Enterprise management of WebView2 Runtimes](webview2/concepts/enterprise.md).
-* [Distribute an app as a single executable file](webview2/how-to/static.md) - How to statically link the WebView2 loader library, to create a single-file app.
+* [Enterprise management of WebView2 Runtimes](enterprise.md).
+* [Distribute an app as a single executable file](../how-to/static.md) - How to statically link the WebView2 loader library, to create a single-file app.
