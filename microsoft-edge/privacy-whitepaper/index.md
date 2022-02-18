@@ -252,7 +252,7 @@ To help you find exactly what you're looking for, Microsoft Edge uses a Microsof
 
 If the **Include related matches** toggle is turned on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection.  The service token doesn't contain any user-identifiable information.  A Microsoft cloud service then processes the text to find results on the page that are related to your search.  The webpage text and search terms sent to Microsoft are both deleted immediately after processing occurs. No data is stored for any period of time.
 
-Related matches in Find on Page are not available in **InPrivate** browsing. 
+Related matches in **Find on Page** aren't available in **InPrivate** browsing. 
 
 If you want to stop Microsoft Edge from finding related matches in Find on Page, complete the following steps. 
 1.  Open Find on Page
