@@ -289,7 +289,7 @@ Only raw image data is sent to Azure Cognitive Services. Images are sent un-encr
 
 To control Image Descriptions, go to `edge://settings/accessibility`. Toggle the **Get image descriptions from Microsoft for screen readers** setting. 
 
-Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, with focus on a web page element, open the contextual menu (right-click), select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
+Image Descriptions can be turned on for the current web page without enabling for all web pages. While using a screen reader, right-click the webpage, and select **Get image descriptions from Microsoft** > **Just once**. The current web page will be scanned for all images without alt text and send those to the service for descriptions. The Image Description feature will remain off for other pages and future browsing. 
 
 <!-- ====================================================================== -->
 
@@ -356,7 +356,7 @@ To provide a better browsing experience, Microsoft Edge offers to block advertis
 <!-- ====================================================================== -->
 ## Jump list
 
-The jump list in Microsoft Edge lets you easily find your most recently closed sites by hovering on the Microsoft Edge icon in the task bar and opening a contextual menu (right-click). The last three closed tabs are stored locally for each profile.  To delete sites from the jump list in Windows 10 and later, hover on each site and open a contextual menu (right-click).
+The jump list in Microsoft Edge lets you easily find your most recently closed sites. Hover on the Microsoft Edge icon in the task bar and right-click. The last three closed tabs are stored locally for each profile.  To delete sites from the jump list in Windows 10 and later, right-click the site, and then select **Remove from this list**.
 
 You can clear or change the display of your recently closed tabs in the jump list. Go to `edge://settings/privacy`, and select the **Choose what to clear every time you close the browser** setting. When using an **InPrivate** window, Microsoft Edge does not add closed tab information to the jump list.  When using **Guest** mode, the jump list is not available.  For more information about clearing your browsing data, see [View and delete browser history in Microsoft Edge](https://support.microsoft.com/help/10607).
 
@@ -511,7 +511,7 @@ Browsing data for the specific **InPrivate** session is cleared after all **InPr
 <!-- ====================================================================== -->
 ## Read aloud
 
-Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, hover anywhere on the page and open the contextual menu (right-click) or open **Settings and more (...)** and select **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later](https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130) under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, go to `edge://settings/clearBrowserData`.
+Microsoft Edge offers Read aloud, which reads the content of a webpage to the user.  To start Read aloud, right-click the webpage or open **Settings and more (...)** and select **Read aloud**.  Read aloud offers multiple voices to read the webpage content.  If you are using voices that are [installed on Windows 10 and later](https://support.office.com/article/4c83a8d8-7486-42f7-8e46-2b0fdf753130) under the **Time & Language** section of Windows Settings and want to clear the local cache for any voices you previously used, go to `edge://settings/clearBrowserData`.
 
 When you start Read aloud, Microsoft Edge uses the [Web Speech API](https://wicg.github.io/speech-api). Depending on the voice you select, the contents of the page are converted from text to speech using either a platform-supplied, client-side library (for example, one specific to your operating system) or a server-side library powered by Azure Cognitive Services.
 
