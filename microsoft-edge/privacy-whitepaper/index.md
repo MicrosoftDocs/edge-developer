@@ -254,9 +254,11 @@ If the **Include related matches** toggle is turned on, Microsoft Edge sends the
 
 Related matches in **Find on Page** aren't available in **InPrivate** browsing. 
 
-If you want to stop Microsoft Edge from finding related matches in Find on Page, complete the following steps. 
-1.  Open Find on Page
-1.  Toggle off **Include related matches** 
+To stop Microsoft Edge from finding related matches in **Find on Page**:
+
+1. Select **Settings and more** (...) > **Find on Page**.
+
+1. Turn off the **Include related matches** toggle.
 
 
 <!-- ====================================================================== -->
