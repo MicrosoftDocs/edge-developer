@@ -171,14 +171,14 @@ landingContent:
           - text: Web platform overview  # new firstchild article
             url: /microsoft-edge/web-platform/web-platform
 
+          - text: Site compatibility-impacting changes
+            url: /microsoft-edge/web-platform/site-impacting-changes
+
           - text: Detect Microsoft Edge from your website
             url: /microsoft-edge/web-platform/user-agent-guidance
 
           - text: Detect Windows 11 using User-Agent Client Hints
             url: /microsoft-edge/web-platform/how-to-detect-win11
-
-          - text: Site compatibility-impacting changes
-            url: /microsoft-edge/web-platform/site-impacting-changes
 
 # =============================================================================
 # Card - tall card, avoid placing in col 1; fits in col 3 b/c 3rd row only has col 1 & 2 filled
