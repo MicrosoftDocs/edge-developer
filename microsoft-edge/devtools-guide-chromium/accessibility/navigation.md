@@ -59,7 +59,7 @@ There are a number of ways to open DevTools, either through keyboard shortcuts o
 | Action | Resulting tool |
 |---|---|
 | Right-click any item on a webpage, and then select **Inspect**.<br/>Or press `Shift`+`F10` > `Up Arrow` > `Enter`. | **Elements** (DOM expanded to the page element) |
-| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](../media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
 | Press `F12` | Previous tool (or **Welcome**). |
 | Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS)| Previous tool (or **Welcome**) |
 | Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) | **Console** |
