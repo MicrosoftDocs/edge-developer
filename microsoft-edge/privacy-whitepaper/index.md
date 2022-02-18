@@ -292,6 +292,7 @@ Microsoft Edge doesn't store your geolocation coordinates. When making requests 
 
 <!-- ====================================================================== -->
 ## Image Descriptions
+
 When browsing the web in Microsoft Edge, screen reader users may encounter images that are not annotated with alt text. Without alt text to describe these images, they are effectively invisible to screen reader users. When Image Descriptions is turned on, Microsoft Edge will detect these images without alt text and send them to Azure Cognitive Services to generate captions. The generated captions are then announced to screen reader users. Even when Image Descriptions is turned on, images are only sent to the service when a screen reader (or other assistive technology) is connected to Microsoft Edge. 
 
 Only raw image data is sent to Azure Cognitive Services. Images are sent un-encrypted, to reduce latency. No user identifiers are included in the requests to the service. Images aren't stored or saved on Microsoft servers; images are discarded immediately after the captions are generated.
@@ -305,6 +306,7 @@ Image Descriptions can be turned on for the current web page without enabling fo
 
 <!-- ====================================================================== -->
 ## Image Enhancement
+
 To provide a better browsing experience, Microsoft Edge offers Image Enhancement by improving color, lighting, contrast, and sharpness of images. When Image Enhancement is turned on, Microsoft Edge encrypts and transmits images to Microsoft servers to perform image enhancement. No user identifiers are included in the requests to the servers. The images are cached for 30 days to improve performance. 
 
 To control Image Enhancement, go to `edge://settings/privacy` and turn on or off the **Enhance images in Microsoft Edge** setting. 
