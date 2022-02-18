@@ -248,7 +248,7 @@ The family group organizer may stop the data collection from the family safety p
 
 Find on Page allows you to search a web page for important keywords. Open **Settings and more (...)** > **Find on Page**. A search box will appear. Type any keyword or phrase into this search box and the page will highlight all locations on the page where your exact search term appears. You can then navigate through these terms with the **Previous result** and **Next result** buttons. 
 
-To help you find exactly what you're looking for, Microsoft Edge uses a Microsoft cloud service to find additional related matches for your search. This only happens when the **Include related matches** toggle in Find on Page is on.  
+To help you find exactly what you're looking for, Microsoft Edge uses a Microsoft cloud service to find additional related matches for your search.  This only happens when the **Include related matches** toggle in **Find on Page** is turned on.
 
 If the **Include related matches** toggle is on, Microsoft Edge sends the text of the webpage, your search terms, and a service token to a Microsoft cloud service over a secure HTTPS connection. The service token does not contain any user identifiable information. A Microsoft cloud service then processes the text to find results on the page that are related to your search. The webpage text and search terms sent to Microsoft are both deleted immediately after processing occurs. No data is stored for any period of time. 
 
