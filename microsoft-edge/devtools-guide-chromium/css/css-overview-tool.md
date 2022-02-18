@@ -29,8 +29,6 @@ https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-ne
 # What's New In DevTools (Microsoft Edge 87)
 ### View and fix color contrast issues in the CSS Overview tool -->
 
-![Experimental feature.](../whats-new/media/2020/06/experimental-tag-14px.msft.png)
-
 The **CSS Overview** tool displays a list of elements on your page that have color contrast issues.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  
@@ -41,9 +39,6 @@ To open the element in the **Elements** tool, click an element in the list.  To 
 For updates on this feature in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
 
 ![Low color contrast issues.](../whats-new/media/2020/10/css-overview.msft.png)
-
-
-To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox.
 
 
 <!-- ====================================================================== -->
