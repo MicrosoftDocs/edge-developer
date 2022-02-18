@@ -64,7 +64,7 @@ See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](plac
 
 1. Open the Command Menu.  To do this, click the **Customize and control DevTools** (![Customize and control DevTools icon.](../media/customize-devtools-icon-light-theme.png)) menu button, and then click **Run command**.  Or, press `Shift`+`Ctrl`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS.
 
-1. Enter "dock", and then select a dock command:
+1. Type **dock**, and then select a dock command:
 
     *  **Dock to bottom**
     *  **Dock to left**

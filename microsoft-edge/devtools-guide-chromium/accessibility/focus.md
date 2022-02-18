@@ -41,9 +41,9 @@ To track the `Tab`-focused element in the **Console** in DevTools by using a Liv
 
 1. Click **Create live expression** (![Create live expression.](../media/create-live-expression-icon.msft.png)).
 
-   :::image type="content" source="../media/accessibility-console-create-live-expression-empty.msft.png" alt-text="Create a Live Expression." lightbox="../media/accessibility-console-create-live-expression-empty.msft.png":::
+   ![Create a Live Expression.](../media/accessibility-console-create-live-expression-empty.msft.png)
 
-1. Type `document.activeElement`.
+1. Type the following: **document.activeElement**
 
 1. Click outside of the **Live Expression** UI to save the Live Expression.
 

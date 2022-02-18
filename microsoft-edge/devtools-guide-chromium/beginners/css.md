@@ -255,15 +255,15 @@ To add a declaration to an existing ruleset:
 
    :::image type="content" source="../media/beginners-css-add3.msft.png" alt-text="The Styles tab is to the right of the DOM Tree." lightbox="../media/beginners-css-add3.msft.png":::
 
-1. Select the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration.
+1. Select the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration:
 
    :::image type="content" source="../media/beginners-css-add4.msft.png" alt-text="Add a new declaration." lightbox="../media/beginners-css-add4.msft.png":::
 
-1. Type `color` and then press `Enter`.  The autocomplete UI suggests options as you type.
+1. Type **color** and then press `Enter`.  The autocomplete UI suggests options as you type:
 
    :::image type="content" source="../media/beginners-css-add5.msft.png" alt-text="Type 'color'." lightbox="../media/beginners-css-add5.msft.png":::
 
-1. Type `magenta` and press `Enter`.  All of the text on the contact page is now magenta.
+1. Type **magenta** and then press `Enter`.  All of the text on the contact page is now magenta:
 
    :::image type="content" source="../media/beginners-css-add6.msft.png" alt-text="Type 'magenta'." lightbox="../media/beginners-css-add6.msft.png":::
 
@@ -271,11 +271,11 @@ To add a declaration to an existing ruleset:
 
 To edit existing declarations in DevTools:
 
-1. Select the magenta square next to `magenta`.  A color picker pops up.
+1. Select the magenta square next to `magenta`.  A color picker pops up:
 
    :::image type="content" source="../media/beginners-css-edit1.msft.png" alt-text="The Color Picker." lightbox="../media/beginners-css-edit1.msft.png":::
 
-1. Use the color picker to change the font text to a color that you like.
+1. Use the color picker to change the font text to a color that you like:
 
    :::image type="content" source="../media/beginners-css-edit2.msft.png" alt-text="Change the font color to purple with the Color Picker." lightbox="../media/beginners-css-edit2.msft.png":::
 
@@ -295,11 +295,11 @@ To add new rulesets in DevTools:
 
 1. Click the empty area between the brackets to add a new declaration.
 
-1. Type `background-color` for the declaration name and press `Enter`.
+1. Type **background-color** for the declaration name and press `Enter`.
 
    :::image type="content" source="../media/beginners-css-rule3.msft.png" alt-text="Type 'background-color'." lightbox="../media/beginners-css-rule3.msft.png":::
 
-1. Type `green` for the declaration value and press `Enter`.
+1. Type **green** for the declaration value and press `Enter`.
 
    :::image type="content" source="../media/beginners-css-rule4.msft.png" alt-text="Type 'green'." lightbox="../media/beginners-css-rule4.msft.png":::
 

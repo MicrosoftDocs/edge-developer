@@ -45,7 +45,6 @@ For updates on this feature in the Chromium open-source project, see Issue [#112
 
 To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox.
 
-_Article content pending_
 
 <!-- ====================================================================== -->
 > [!NOTE]

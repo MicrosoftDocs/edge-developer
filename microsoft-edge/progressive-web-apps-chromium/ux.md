@@ -49,7 +49,7 @@ You can also manage PWAs in the **Apps & features** system setting, like other W
 <!-- ====================================================================== -->
 ## Windows integration
 
-Progressive Web Apps (PWAs) are displayed like native apps on Windows. They appear in the Taskbar (where they can be pinned), in the Start Menu, or when switching between apps with `Alt`+`Tab`.
+Progressive Web Apps (PWAs) are displayed like native apps on Windows. They appear in the Taskbar (where they can be pinned), in the Start menu, or when switching between apps with `Alt`+`Tab`.
 
 PWAs and native apps can reside side-by-side in the Taskbar (PWAs are indicated here by a red box):
 

@@ -105,7 +105,7 @@ Many convenience methods and shortcuts are available to you as [Console Utilitie
 
 The `$` has special powers in **Console**, and you may remember that from jQuery.
 
-*  `$_` stores the result of the last command.  So, if you type `2 + 2` and press `Enter`, and then type `$_`, the **Console** displays `4`.
+*  `$_` stores the result of the last command.  So, if you type `2+2` and press `Enter`, and then type `$_`, the **Console** displays `4`.
 
 *  `$0` to `$4` is a stack of the last inspected elements.  `$0` is always the newest one.  So in the earlier example, you just select the element in the **Inspect** tool and type `$0.textContent = "My Playground"` to get the same effect.
 

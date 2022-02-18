@@ -41,7 +41,7 @@ To hide all the Warning-level messages to cut down on the noise, click the **Log
 <!-- ====================================================================== -->
 ## Filter by text
 
-To see more detail, to filter messages using text, type a string into the **Filter** text box.  For example, type `block` into the box to only display your messages about the browser blocking resources from loading.
+To see more detail, to filter messages using text, type a string into the **Filter** text box.  For example, type **block** into the box to only display your messages about the browser blocking resources from loading.
 
 :::image type="content" source="../media/console-filter-text.msft.png" alt-text="Displays the messages that contain the word 'block'." lightbox="../media/console-filter-text.msft.png":::
 

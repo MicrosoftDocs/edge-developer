@@ -90,7 +90,8 @@ Continue with the steps below.
 
 1. Select **Counter** in the navigation menu at the top of the webpage and then select **Increment**.
 
-   ![The Counter page in our ASP.NET Core web app.](media/edge-counter.png)
+   > [!div class="mx-imgBorder"]
+   > ![The Counter page in our ASP.NET Core web app.](media/edge-counter.png)
 
 1.  The JavaScript debugger in Visual Studio hits the breakpoint you set in `Counter.js`.  Visual Studio now pauses the runtime of the JavaScript running in Microsoft Edge and you can step through the script line-by-line.
 

@@ -17,7 +17,7 @@ The following are considerations for developing websites and products for the we
 *  Configuring tracking prevention in Microsoft Edge.
 *  Detecting Microsoft Edge from your website.
 *  Detecting Windows 11 by using User-Agent Client Hints.
-*  Customizing the Password Reveal button.
+*  Customizing the **password reveal** button.
 
 These aspects of developing for the web platform are described below.
 
@@ -37,7 +37,7 @@ See [Site compatibility-impacting changes coming to Microsoft Edge](site-impacti
 
 Many modern websites have designs that are incompatible with Internet Explorer.  When an Internet Explorer user visits an incompatible public website, the user may be instructed by the website that the website is incompatible with Internet Explorer, and that the user must switch to a more modern browser in order to use the website.
 
-To minimize disruptions, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the Need Microsoft Edge list are redirected.
+To minimize disruptions, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the _Need Microsoft Edge_ list are redirected.
 
 See [Move users to Microsoft Edge from Internet Explorer](ie-to-microsoft-edge-redirection.md).
 
@@ -87,6 +87,6 @@ See [Detect Windows 11 using User-Agent Client Hints](how-to-detect-win11.md).
 <!-- ====================================================================== -->
 ## Customize the password reveal button
 
-The `password` input control in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.  You can remove the password reveal control, or customize the control styling.
+The `password` input control in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.  You can remove the **password reveal** control, or customize the control styling.
 
 See [Customize the password reveal button](password-reveal.md).

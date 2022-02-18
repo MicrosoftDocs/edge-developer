@@ -1,6 +1,6 @@
 ---
 title: Monitor changes in JavaScript using Live Expressions
-description: Watch JavaScript expression values in real time with Live Expressions.  If you find yourself typing the same JavaScript expressions into the Console repeatedly, try Live Expressions instead.
+description: Watch JavaScript expression values in real time with Live Expressions.  If you find yourself typing the same JavaScript expressions into the Console tool repeatedly, try Live Expressions instead.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -23,9 +23,9 @@ Watch JavaScript values in real-time with Live Expressions -->
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
-1. In DevTools, open the Console.
+1. In DevTools, open the **Console**.
 
-1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
+1. In the **Console**, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
 
    A text box opens:
 
@@ -82,13 +82,13 @@ To monitor the mouse movement in the current webpage:
 
 1. Open the demo webpage [Logging Mouse Movement demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove.html) in a new window or tab.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
+1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
 
 1. Move your mouse around over the rendered demo webpage.
 
    Many log messages are output, displayed in the **Console**:
 
-   :::image type="content" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="The Console displays an overwhelming number of messages about the mouse position." lightbox="../media/console-live-expression-mouse-logging.msft.png":::
+   :::image type="content" source="../media/console-live-expression-mouse-logging.msft.png" alt-text="The Console tool displays an overwhelming number of messages about the mouse position." lightbox="../media/console-live-expression-mouse-logging.msft.png":::
 
 The large amount of information slows down your debugging process, and makes it hard to see the changes that you're trying to monitor.  As the **Console** displays more messages when you move your mouse, the values that you want to see scroll off the screen.
 
@@ -101,13 +101,13 @@ To use Live Expressions to avoid excessive Console log messages:
 
 1. Open the demo webpage [Mouse movement without logging demo](https://microsoftedge.github.io/Demos/devtools-console/mousemove-no-log.html) in a new window or tab.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the demo webpage.
+1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The **Console** tool opens in DevTools, next to the demo webpage.
 
 1. Move your mouse around.  No log messages are output.
 
    Enter two Live Expressions: the expression `x`, and the expression `y`, as follows:
 
-1. In the Console, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
+1. In the **Console** tool, click the **Create live expression** (![The 'Create live expression' icon](../media/create-live-expression-light-mode.png)) icon next to the **Filter** text box.
 
 1. Enter the JavaScript expression `x` into the text box, and then click outside of the **Live Expression** text box.  Repeat for `y`.  If needed, see [Add a new live expression](#add-a-new-live-expression), above.
 

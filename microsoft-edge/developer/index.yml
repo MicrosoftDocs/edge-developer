@@ -35,6 +35,9 @@ landingContent:
 
 
 # =============================================================================
+# Row 1 with 3 cards
+
+# =============================================================================
 # Card
   - title: Microsoft Edge DevTools
     linkLists:
@@ -129,9 +132,39 @@ landingContent:
           - text: Web App Manifests
             url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
 
+# =============================================================================
+# Row 2 with 3 cards
 
 # =============================================================================
 # Card
+  - title: Test and automation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Test and automation in Microsoft Edge  # new firstchild article
+            url: /microsoft-edge/test-and-automation/test-and-automation
+
+          - text: DevTools Protocol
+            url: /microsoft-edge/devtools-protocol-chromium
+
+          - text: Origin Trials
+            url: /microsoft-edge/origin-trials/index
+
+          - text: Playwright
+            url: /microsoft-edge/playwright/index
+
+          - text: Puppeteer
+            url: /microsoft-edge/puppeteer
+
+          - text: WebDriver
+            url: /microsoft-edge/webdriver-chromium
+
+          - text: webhint extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/webhint
+
+
+# =============================================================================
+# Card - tall card, avoid placing in col 1
   - title: WebView2
     linkLists:
       - linkListType: overview
@@ -165,34 +198,6 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: Test and automation
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Test and automation in Microsoft Edge  # new firstchild article
-            url: /microsoft-edge/test-and-automation/test-and-automation
-
-          - text: DevTools Protocol
-            url: /microsoft-edge/devtools-protocol-chromium
-
-          - text: Origin Trials
-            url: /microsoft-edge/origin-trials/index
-
-          - text: Playwright
-            url: /microsoft-edge/playwright/index
-
-          - text: Puppeteer
-            url: /microsoft-edge/puppeteer
-
-          - text: WebDriver
-            url: /microsoft-edge/webdriver-chromium
-
-          - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint
-
-
-# =============================================================================
-# Card
   - title: Web platform
     linkLists:
       - linkListType: how-to-guide
@@ -209,6 +214,8 @@ landingContent:
           - text: Site compatibility-impacting changes
             url: /microsoft-edge/web-platform/site-impacting-changes
 
+# =============================================================================
+# Row 3 with 2 cards
 
 # =============================================================================
 # Card

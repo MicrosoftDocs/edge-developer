@@ -31,7 +31,7 @@ To open the **3D View** panel, in DevTools, do either of the following:
 
 * Click **More Tools** (+) on the main toolbar and then select **3D View**.
 
-* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type "3d", and then select **3D View [Drawer]**.
+* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type **3d**, and then select **3D View [Drawer]**.
 
 
 <!-- ====================================================================== -->

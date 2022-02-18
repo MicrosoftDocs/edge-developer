@@ -33,11 +33,13 @@ To emulate a user's selection of preferred color theme:
 
    :::image type="content" source="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png" alt-text="New contrast issues detected because of the change to light theme." lightbox="../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png":::
 
-    On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change.
+    On our demo page, the **Donation status** section of the page is unreadable in light mode, and needs to change:
 
    :::image type="content" source="../media/a11y-testing-donation-state-light-contrast.msft.png" alt-text="The Donation Status section has contrast issues in light mode." lightbox="../media/a11y-testing-donation-state-light-contrast.msft.png":::
 
 1. In DevTools, select the **Elements** tool, and then press `Ctrl`+`F` on Windows/Linux or `Command`+`F` on macOS.  The **Find** text box appears, to search within the HTML DOM tree.
+
+   ![The Find text box for the DOM tree in the Elements tool.](../media/find-in-dom-tree.png)
 
 1. Enter `scheme`.  The following CSS media queries are found, and the corresponding CSS files can now be updated.
 

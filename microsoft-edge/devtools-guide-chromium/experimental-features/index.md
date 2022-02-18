@@ -218,7 +218,7 @@ To use the **Source Order Viewer**:
 
 1. Highlight any HTML element to display an overlay of the order in the webpage source.
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane." lightbox="../media/experiments-source-order-viewer.msft.png":::
+   :::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane." lightbox="../media/experiments-source-order-viewer.msft.png":::
 
 This experiment is turned on by default.
 
@@ -282,9 +282,9 @@ To use the visual **Font Editor**:
 
 1. In the **Styles** tab, select the **Font Editor** icon.
 
-For more information about the visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
+   :::image type="content" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted." lightbox="../media/font-editor-open.msft.png":::
 
-:::image type="content" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted." lightbox="../media/font-editor-open.msft.png":::
+For more information about the visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
 For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
@@ -363,7 +363,7 @@ To use **Composited Layers**:
 
 1. All of the painted layers of the app are displayed.  Try this feature with your own web apps.
 
-:::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane." lightbox="../media/experiments-layers.msft.png":::
+   :::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane." lightbox="../media/experiments-layers.msft.png":::
 
 This experiment is turned on by default.
 
@@ -388,7 +388,7 @@ To use the **Network Console**:
 
 1. Click **Send**.
 
-:::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer." lightbox="../media/network-network-console.msft.png":::
+   :::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer." lightbox="../media/network-network-console.msft.png":::
 
 
 <!-- ====================================================================== -->

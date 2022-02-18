@@ -94,20 +94,23 @@ To simulate the dimensions of a specific mobile device, select the device from t
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-device-list.msft.png" alt-text="The Device list." lightbox="../media/device-mode-toggle-device-toolbar-device-list.msft.png":::
 
+
 #### Rotate the viewport to landscape orientation
 
 Test your webpage in landscape orientation.
 
-*  To rotate the viewport to landscape orientation, select **Rotate** (![Rotate.](../media/rotate-dark-icon.msft.png)).
+1. To rotate the viewport to landscape orientation, select **Rotate** (![Rotate.](../media/rotate-dark-icon.msft.png)):
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page displayed in landscape orientation." lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-landscape.msft.png" alt-text="Page displayed in landscape orientation." lightbox="../media/device-mode-toggle-device-toolbar-landscape.msft.png":::
 
-> [!NOTE]
-> The **Rotate** button disappears if your **Device Toolbar** is narrow. To access the **Rotate** button, increase the width of the **Device Toolbar**.
+   The **Rotate** button disappears if your **Device Toolbar** is narrow.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+1. If needed, to access the **Rotate** button, increase the width of the **Device Toolbar**.
 
-See also [Set orientation](#set-orientation).
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+
+See also [Set orientation](#set-orientation), below.
+
 
 #### Show device frame
 
@@ -115,8 +118,7 @@ To simulate the dimensions of a specific mobile device, open **More options** an
 
 :::image type="content" source="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png" alt-text="The Show Device Frame menu item." lightbox="../media/device-mode-toggle-device-toolbar-option-show-device-frame.msft.png":::
 
-> [!NOTE]
-> If a device frame isn't shown for a particular device, it means that DevTools doesn't have art for that device.
+If a device frame isn't shown for a particular device, it means that DevTools doesn't have art for that device.
 
 The device frame for the iPhone 6:
 
@@ -162,23 +164,27 @@ Mobile devices often have network and CPU constraints.  Test how quickly your pa
     *  **Mid-tier mobile** simulates `fast 3G` and throttles your CPU.  It is four times slower than normal.
     *  **Low-end mobile** simulates `slow 3G` and throttles your CPU.  It is six times slower than normal.
 
-All of the throttling is based upon the normal capability of your laptop or desktop.
+   All of the throttling is based upon the normal capability of your laptop or desktop.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="The Throttle list in the Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-throttle.msft.png" alt-text="The Throttle list in the Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-throttle.msft.png":::
 
-> [!NOTE]
-> If the **Throttle list** is hidden, your **Device Toolbar** is too narrow.  To access the **Throttle list**, increase the width of the **Device Toolbar**.
+   If the **Throttle list** is hidden, your **Device Toolbar** is too narrow.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+1. If needed, to access the **Throttle list**, increase the width of the **Device Toolbar**.
+
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-highlighted.msft.png" alt-text="The Device Toolbar." lightbox="../media/device-mode-toggle-device-toolbar-highlighted.msft.png":::
+
 
 ### Throttle the CPU only
 
 To throttle the CPU only and not the network:
 
 1. Select the **Performance** panel, and select **Capture Settings** (![Capture Settings.](../media/capture-settings-icon.msft.png)).
+
 1. Select **CPU** > **4x slowdown** or **6x slowdown**.
 
-:::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="The CPU list in the Performance panel." lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+   :::image type="content" source="../media/device-mode-performance-cpu-throttle.msft.png" alt-text="The CPU list in the Performance panel." lightbox="../media/device-mode-performance-cpu-throttle.msft.png":::
+
 
 ### Throttle the network only
 
@@ -224,15 +230,17 @@ If your page depends on orientation information from a mobile device to render p
 
 1. Select **Customize and control DevTools** (`...`) > **More tools** > **Sensors**.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="The Sensors command on the More tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png" alt-text="The Sensors command on the More tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-sensors.msft.png":::
 
-1. Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
+   Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type `Sensors`, and then select **Show Sensors**.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png" alt-text="Show Sensors for orientation." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-sensors.msft.png":::
 
-On the **Sensors** panel, you can select a preset orientation from the **Orientation** dropdown menu.  To enter your own orientation, select **Custom orientation**, and enter your own [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha), [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta), and [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) values.
+   On the **Sensors** panel, you can select a preset orientation from the **Orientation** dropdown menu.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Orientation options on the Sensors panel." lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
+1. To enter your own orientation, select **Custom orientation**, and enter your own [alpha](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/alpha), [beta](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/beta), and [gamma](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/gamma) values.
+
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png" alt-text="Orientation options on the Sensors panel." lightbox="../media/device-mode-toggle-device-toolbar-sensors-tokyo-portrait-upside-down.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -244,13 +252,18 @@ If your page depends on the user agent string from a mobile device to render pro
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png" alt-text="Network conditions entry in the More Tools menu." lightbox="../media/device-mode-toggle-device-toolbar-more-tools-network-conditions.msft.png":::
 
-1. Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
+   Or, open the Command Menu by selecting `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).Type `Network conditions`, and select **Show Network conditions**.
 
    :::image type="content" source="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png" alt-text="Showing network conditions." lightbox="../media/device-mode-toggle-device-toolbar-command-menu-network-conditions.msft.png":::
 
-Next to **User agent**, clear the **Use browser default** checkbox.  Then, select **Custom** to select from a list of predefined user agent strings.  To enter your own user agent string, enter the string in **Enter a custom user agent**.
+1. Next to **User agent**, clear the **Use browser default** checkbox.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Setting the user agent string to Microsoft Edge on macOS." lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+1. Select **Custom** to select from a list of predefined user agent strings.
+
+1. To enter your own user agent string, enter the string in **Enter a custom user agent**.
+
+   :::image type="content" source="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png" alt-text="Setting the user agent string to Microsoft Edge on macOS." lightbox="../media/device-mode-toggle-device-toolbar-network-conditions-macos.msft.png":::
+
 
 ### See also
 

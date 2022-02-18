@@ -78,7 +78,7 @@ The Drawer pops up in the bottom of the DevTools window, with the **Console** to
 
 :::image type="content" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tool in the Drawer." lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
 
-To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.
+To open the **Console** tool from the [Command Menu](../command-menu/index.md), type **Console** and then run the **Show Console** command that has the **Drawer** badge next to it.
 
 :::image type="content" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the **Console** tool in the Drawer." lightbox="../media/console-command-menu-show-console.msft.png":::
 

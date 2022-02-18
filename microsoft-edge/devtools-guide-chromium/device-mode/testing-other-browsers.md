@@ -122,7 +122,7 @@ The following products are examples of cloud-based emulators and related product
 
 * [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
-* [Device Anywhere](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+* [Mobileum](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
 
 * [LambdaTest](https://www.lambdatest.com/) helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  You can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  You can speed-up your testing by running tests in parallel.
 

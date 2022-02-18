@@ -121,7 +121,7 @@ The columns of the Network Log are configurable.  You can hide columns that you 
 
 1. Right-click the header of the Network Log table, and then select **Domain**.  The domain of each resource is now shown.
 
-:::image type="content" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Enable the Domain column." lightbox="../media/network-glitch-network-edit-column.msft.png":::
+   :::image type="content" source="../media/network-glitch-network-edit-column.msft.png" alt-text="Enable the Domain column." lightbox="../media/network-glitch-network-edit-column.msft.png":::
 
 1. To see the full URL of a resource, hover over its cell in the **Name** column.
 

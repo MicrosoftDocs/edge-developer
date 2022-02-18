@@ -18,7 +18,7 @@ The **Console**:
 1. Loops back to the first step.
 
 
-To enter JavaScript statements and expressions interactively in the Console:
+To enter JavaScript statements and expressions interactively in the **Console**:
 
 1. Right-click in a webpage and then select **Inspect**.  DevTools opens.  Or, press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\), to directly open the DevTools console.
 
@@ -28,7 +28,7 @@ To enter JavaScript statements and expressions interactively in the Console:
 
    The **Console** immediately displays the result `4` on the next line while you type.  The `Eager evaluation` feature helps you write valid JavaScript.  The **Console** displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
-   :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of the expression '2 + 2', interactively as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of the expression '2+2', interactively as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
 1. When you press `Enter`, the **Console** runs the JavaScript command (expression or statement), displays the result, and then moves the cursor down to allow you to enter the next JavaScript command.
 

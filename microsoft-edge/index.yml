@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Edge documentation
-summary: Explore Microsoft Edge documentation.  Learn to use Microsoft Edge by browsing documentation, tutorials, and samples for developers, administrators, and users.
+summary: Learn to use Microsoft Edge by browsing documentation, tutorials, and samples.  Includes information for users, developers, and administrators.
 brand: m365
 metadata:
   title: Microsoft Edge documentation
@@ -326,7 +326,7 @@ additionalContent:
       # summary: sectionsummary # < 160 chars (optional)
       items:
         # Card
-        - summary: Get advice and answers from community experts on Microsoft Q&A
+        - summary: Get advice and answers from community experts.
           title: Community Support on Microsoft Q&A
           url: /answers/topics/ms-edge.html
         # Card

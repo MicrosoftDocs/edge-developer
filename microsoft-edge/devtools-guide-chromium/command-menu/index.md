@@ -42,7 +42,7 @@ If you use the workflow outlined in [Open the Command Menu](#open-the-command-me
 
 :::image type="content" source="../media/command-menu-run-command.msft.png" alt-text="The command character." lightbox="../media/command-menu-run-command.msft.png":::
 
-Delete the `>` character and type `?` to display other actions that are available from the Command Menu.
+Delete the `>` character and then type **?** to display other actions that are available from the Command Menu.
 
 :::image type="content" source="../media/command-menu-help.msft.png" alt-text="Other available actions." lightbox="../media/command-menu-help.msft.png":::
 

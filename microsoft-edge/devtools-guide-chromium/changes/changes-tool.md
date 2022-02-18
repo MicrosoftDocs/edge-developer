@@ -47,7 +47,7 @@ Click **Customize and control DevTools** (`...`), point to **More tools**, and t
 <!-- ====================================================================== -->
 ## Open the Changes tool by using the Command Menu
 
-Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on Mac, and then type `changes`.  The **Show Changes** command is highlighted; press `Enter`.
+Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on Mac, and then type **changes**.  The **Show Changes** command is highlighted; press `Enter`.
 
 :::image type="content" source="../media/changes-tool/changes-tool-command-menu-reduced.msft.png" alt-text="In the Command Menu, start typing 'changes', and then select the 'Show Changes' command." lightbox="../media/changes-tool/changes-tool-command-menu.msft.png":::
 

@@ -17,7 +17,9 @@ To make it easier when working with typography, a visual **Font Editor** is now 
 *  The **Font Family** selector.
 *  The **CSS Properties** editor.
 
-Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.  For situations when specific fonts aren't available on a user device, you should provide fallback font options.
+Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.
+
+For situations when specific fonts aren't available on a user device, you should provide fallback font options.
 
 CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  Several CSS properties are available to control the font size, spacing, line height, and other typographical features.
 

@@ -16,11 +16,12 @@ The Microsoft Edge DevTools team has added a lot of features based on feedback w
 <!-- ====================================================================== -->
 ## Ease of use
 
-The developer tools in the browser grew organically over the years.  They can be overwhelming, and sometimes it can be hard to find the feature you're looking for.  So we've been working to ease new users into the tools by providing an improved documentation system.  For seasoned users, we've been making it easier to customize the tools to adapt them to your needs.
+The developer tools in the browser grew organically over the years.  They can be overwhelming, and sometimes it can be hard to find the feature you're looking for.  So we've been working to ease new users into the tools by providing an improved documentation system.  For users who have more experience with DevTools, we've been making it easier to customize the tools to adapt them to your needs.
+
 
 ### Open and close tools easily
 
-By clicking the `+` button on the main toolbar or the Drawer toolbar, you can add tools without having to use the **Customize and control DevTools** `…` menu. You can activate the `x` button on any tool tab to remove the tool. Some tools like Elements, Sources and Console can't be closed and don't show an `x`.
+By clicking the `+` button on the main toolbar or the Drawer toolbar, you can add tools without having to use the **Customize and control DevTools** `…` menu. You can activate the `x` button on any tool tab to remove the tool.  The **Elements**, **Sources** and **Console** tools are always open, and don't have an `x` on their tab.
 
 Adding a new tool to a menu bar by activating the + button and selecting it:
 
@@ -117,31 +118,31 @@ Microsoft Edge DevTools displayed in the Monokai theme:
 These web development tools are only available in Microsoft Edge DevTools.
 
 
-### Detached Elements panel
+### Detached Elements tool
 
-The **Detached Elements** panel is a tool that was built on feedback from a Microsoft team that needed to find out about memory leaks in one of our products.  You can find out what elements are using up memory even though they aren't part of the DOM any longer.
+The **Detached Elements** tool was built on feedback from a Microsoft team that needed to find out about memory leaks in one of our products.  You can find out what elements are using up memory, even though they aren't part of the Document Object Model (DOM) tree any longer.
 
-The Detached Elements panel showing elements that need to be removed from memory:
+The **Detached Elements** tool, showing elements that need to be removed from memory:
 
-![The Detached Elements panel showing elements that need to be removed from memory.](media/detached-elements-to-remove.png)
+![The Detached Elements tool, showing elements that need to be removed from memory.](media/detached-elements-to-remove.png)
 <!-- png exists; the above png was created for this file by copying & renaming ![The Detached Elements tool.](whats-new/media/2022/01/detached-elements-tool.png) -->
 
 
 The following screenshot is from [Introducing the Detached Elements tool](whats-new/2022/01/devtools.md#introducing-the-detached-elements-tool) in _What's New in DevTools (Microsoft Edge 97)_:
 
-The Detached Elements tool:
+The **Detached Elements** tool:
 
 ![The Detached Elements tool.](whats-new/media/2022/01/detached-elements-tool.png)
 <!-- png exists, in whatsnew dir; see paragraph above -->
 
 The following screenshot is from [Identify the JavaScript code that retains detached elements](memory-problems/dom-leaks.md#identify-the-javascript-code-that-retains-detached-elements) in _Debug DOM memory leaks with the Detached Elements tool_:
 
-Analyze Detached Elements in the Detached Elements tool:
+Analyzing detached elements in the **Detached Elements** tool:
 
-![Analyze Detached Elements in the Detached Elements tool.](memory-problems/images/analyze-detached-elements.msft.png)
+![Analyzing detached elements in the Detached Elements tool.](memory-problems/images/analyze-detached-elements.msft.png)
 <!-- png exists, in mem probs dir; see paragraph above -->
 
-For information about the Detached Elements tool, see [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md).
+For information about the **Detached Elements** tool, see [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md).
 
 
 ### Console error search
@@ -177,7 +178,7 @@ See [Navigate z-index, DOM, and layers using the 3D View tool](3d-view/index.md)
 
 ### Integration with webhint
 
-The **Issues** tool automatically shows you all the things that need fixing in the current webpage.  Under the hood, the **Issues** tool uses [webhint](https://webhint.io), which is a testing tool for the web, that generates reports and provides reporting on various issues.  You not only learn what's wrong with your webpage, but also why it's a problem, where in your webpage the problem exists, and how to fix the issue.
+The **Issues** tool automatically shows you all the things that need fixing in the current webpage.  Under the hood, the **Issues** tool uses [webhint](https://webhint.io), which generates reports and provides reporting on various issues.  You not only learn what's wrong with your webpage, but also why it's a problem, where in your webpage the problem exists, and how to fix the issue.
 
 Current problems of a webpage displayed in the Issues panel:
 

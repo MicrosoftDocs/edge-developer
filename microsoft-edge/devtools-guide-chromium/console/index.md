@@ -140,11 +140,11 @@ To try running JavaScript in the Console:
 
 1. Open the **Console**.
 
-1. Type `2 + 2`.
+1. Type `2+2`.
 
-The **Console** displays the result of `2 + 2` live as you type it, displaying the result `4` on the following line:
+The **Console** displays the result of `2+2` live as you type it, displaying the result `4` on the following line:
 
-:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="The Console displays the result of 2 + 2 live as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="The Console displays the result of 2+2 live as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 

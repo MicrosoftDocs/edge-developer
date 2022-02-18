@@ -17,7 +17,7 @@ To open the **WebAudio** tool:
 
 1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select **WebAudio**.
 
-![The WebAudio tool.](../media/webaudio-tool.png)
+   ![The WebAudio tool.](../media/webaudio-tool.png)
 
 1. Go to a webpage that uses the WebAudio API.
 

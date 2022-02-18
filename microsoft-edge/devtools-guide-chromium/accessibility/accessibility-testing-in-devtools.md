@@ -337,7 +337,9 @@ Using the **Inspect** tool in this way doesn't fully test your elements. Element
 
 ### Verify accessibility of all states of elements, such as the contrast on hover
 
-When using the DevTools, you'll need to simulate all states of your element, because the **Inspect** tool doesn't display information for all states at the same time. In this example, when using the **Inspect** tool, you can't reach the `hover` state of the **Cats** link on the sidebar navigation menu to analyze the contrast ratio in a `hover` state, because the `hover` state in your styles isn't triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
+When using DevTools, you'll need to simulate all states of your element, because the **Inspect** tool doesn't display information for all states at the same time.
+
+In this example, when using the **Inspect** tool, you can't reach the `hover` state of the **Cats** link on the sidebar navigation menu to analyze the contrast ratio in a `hover` state, because the `hover` state in your styles isn't triggered.  Instead, you need to simulate the state of the **Cats** menu item, by using the state simulation in the **Styles** tab.
 
 For detailed walkthrough steps, see [Verify accessibility of all states of elements](test-inspect-states.md).
 

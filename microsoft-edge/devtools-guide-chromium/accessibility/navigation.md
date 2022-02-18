@@ -22,21 +22,25 @@ ms.date: 06/07/2021
    limitations under the License.  -->
 # Navigate DevTools with assistive technology
 
-This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
+This article helps you use DevTools through the keyboard and through assistive technology such as screen readers.  This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
+
+<!-- DevTools is a suite of web developer tools built into the Microsoft Edge browser. -->
 
 For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
-This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
 
-DevTools is divided into a series of tools.  (Within the **Command Menu**, tools are referred to as _panels_.)  Tools are organized into an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist) on the main toolbar and on the drawer toolbar.
+### Tabbed tool panels containing tabs and pages
 
-The following are examples of tools:
+For the terminology of tabs, tools, and panels, see [Tabbed tool panels containing tabs and pages](../index.md#tabbed-tool-panels-containing-tabs-and-pages) in _Overview of DevTools_.
+
+Technically, the tabs are an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist).
+
+
+<!-- The following are examples of tools:
 
 *  The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
 
-*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md).
-
-Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
+*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md). -->
 
 
 <!-- ====================================================================== -->
@@ -48,7 +52,20 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 <!-- ====================================================================== -->
 ## Open DevTools
 
-See [Open DevTools](../index.md#open-devtools).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+
+<!-- keep sync'd with [Open DevTools](../index.md#open-devtools) in _Overview of DevTools_ -->
+
+| Action | Resulting tool |
+|---|---|
+| Right-click any item on a webpage, and then select **Inspect**.<br/>Or press `Shift`+`F10` > `Up Arrow` > `Enter`. | **Elements** (DOM expanded to the page element) |
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
+| Press `F12` | Previous tool (or **Welcome**). |
+| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS)| Previous tool (or **Welcome**) |
+| Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) | **Console** |
+| Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS) | **Elements** (DOM expanded to `<body>`) |
+
+See [Open DevTools](../index.md#open-devtools).
 
 
 <!-- ====================================================================== -->
@@ -133,7 +150,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
 
-For example, when you type `h3` and then press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
+For example, when you type **h3** and then press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
 
 
 <!-- ====================================================================== -->

@@ -31,7 +31,7 @@ click the **Close** DevTools (![Close DevTools icon.](media/close-devtools-icon-
 
 Microsoft Edge DevTools is a set of web development tools that appears next to a rendered webpage in the Microsoft Edge Browser.
 
-When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide a powerful way to inspect, debug, and even create web projects.  These developer tools are partly based on the tools in the Chromium open-source project.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
+The Microsoft Edge browser comes with Developer Tools built-in.  DevTools provides a powerful way to inspect, debug, and even create web projects.  These Developer Tools are partly based on the tools in the Chromium open-source project.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
 
 
 With DevTools, you can do the following:
@@ -52,9 +52,11 @@ With DevTools, you can do the following:
 
 To open DevTools, in Microsoft Edge, do any of the following:
 
+<!-- keep sync'd with [Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_ -->
+
 | Action | Resulting tool |
 |---|---|
-| Right-click any item on a webpage, and then select **Inspect**. | **Elements** (DOM expanded to the page element) |
+| Right-click any item on a webpage, and then select **Inspect**.<br/>Or press `Shift`+`F10` > `Up Arrow` > `Enter`. | **Elements** (DOM expanded to the page element) |
 | On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
 | Press `F12` | Previous tool (or **Welcome**). |
 | Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS)| Previous tool (or **Welcome**) |
@@ -184,7 +186,23 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 
 DevTools gives you an amazing amount of power to inspect, debug, and change the web product currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
 
-<!-- clarify: DevTools also allows you to change web-based third-party products on your computer. -->
+
+### Tabbed tool panels containing tabs and pages
+
+Other than a couple of icon tools (the **Inspect** tool and **Device Emulation**), DevTools is divided into and a set of tabbed tools, such as the **Elements** tool, the **Console** tool, and the **Sources** tool.  Within the **Command Menu**, tools are referred to as _panels_.  A tool's tab contains a panel which contains the tool's UI.
+
+**Higher-level tabs:**
+
+Tools are organized into a set of tabs on the main toolbar and on the drawer toolbar.  Most tools are also called _panels_.  A panel is the inner UI of a tool.  A tool has a tab that can be present on the main toolbar and Drawer toolbar.
+
+**Lower-level tabs:**
+
+Within the panel of some tools, there are one or more sets of tabs (tabbed panes).  For example, the **Elements** tool contains a set of tabs that includes **Styles**, **Event Listeners**, and **Accessibility** tabs.  For other tools, the tool's panel has pages listed along the left side.
+
+
+### The main toolbar and the Drawer toolbar
+
+<!-- clarify: DevTools also allows you to change web-based third-party products on your computer.  extensions? -->
 
 There are two toolbars: the main toolbar at the top of DevTools, and the **Drawer** at the bottom when you press `Esc`.
 
@@ -439,7 +457,7 @@ The Command Menu allows you to type commands to display, hide, or run features i
 
 The **Changes** tool opens, which is useful when you edit CSS.  In this case, the Command Menu provides a fast alternative to selecting **More Tools** (...) and then selecting **Changes**, or editing a `.js` file in the **Sources** tool, then right-clicking and selecting **Local modifications**.
 
-After you type `cha`, the Command Menu displays the options:
+After you type **cha**, the Command Menu displays the options:
 
 ![Command menu displays the options after you type 'cha', including 'Show Changes tool in the Drawer'.](media/devtools-intro-command-menu-show-changes.msft.png)
 

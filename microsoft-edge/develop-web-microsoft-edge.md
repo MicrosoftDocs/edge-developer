@@ -159,6 +159,10 @@ To see details of a screenshot or diagram:
 
 1. Close the image tab to return to the article.
 
+<!-- copypaste
+To zoom an image in this article, right-click it, and then select **Open image in new tab**.
+-->
+
 
 <!-- ====================================================================== -->
 ## Look up key words and terms in "Filter by title" text box
