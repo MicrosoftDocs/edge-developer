@@ -11,7 +11,7 @@ ms.date: 03/10/2021
 
 In the **Shortcuts** page of **Settings**, you can view the defined shortcuts for Microsoft Edge DevTools, define your own shortcut for a specific action, or use a preset to match the default shortcuts from Microsoft Visual Studio Code.
 
-For the default keyboard shortcuts, see [Keyboard shortcuts](../shortcuts/index.md).  See also [Customize DevTools](./index.md#settings).
+For the default keyboard shortcuts, see [Keyboard shortcuts](../shortcuts/index.md).
 
 
 <!-- ====================================================================== -->
@@ -25,7 +25,7 @@ To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent 
 
 1. Select the **Shortcuts** settings page.
 
-1. In the upper right, in the **Match shortcuts from preset** dropdown, select **Visual Studio Code** instead of **DevTools (Default)**.
+1. In the upper right, in the **Match shortcuts from preset** dropdown list, select **Visual Studio Code** instead of **DevTools (Default)**.
 
    :::image type="content" source="../media/match-keyboard-shortcuts-visual-studio-code.msft.png" alt-text="Matching keyboard shortcuts in DevTools to Visual Studio Code." lightbox="../media/match-keyboard-shortcuts-visual-studio-code.msft.png":::
 
@@ -81,5 +81,13 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 *  To reset all shortcuts, click the **Restore default shortcuts** button.
 
-> [!NOTE]
-> If a keyboard shortcut is currently assigned to one action, your'e blocked from saving it to another action.  Instead, delete the keyboard shortcut from the previous action, and then add it to the new action.
+If a keyboard shortcut is currently assigned to one action, it can't be assigned to another action.  Instead, delete the keyboard shortcut from the previous action, and then add that keyboard shortcut to the new action.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Keyboard shortcuts](../shortcuts/index.md)
+* [Navigate DevTools with assistive technology](../accessibility/navigation.md)
+* [Run commands in the Command Menu](../command-menu/index.md)
+* [Customize DevTools](index.md#settings)

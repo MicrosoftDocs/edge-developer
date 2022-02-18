@@ -57,7 +57,7 @@ You can control whether or not typed characters are sent to your default search 
 
 <!-- The Search settings seem different from what is described here -->
 
-You can change your default search engine. Go to `edge://settings/search`. Select the **Search engine used in the address bar** drop-down menu.  If you are browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.  **InPrivate** shows suggestions from your local browsing, such as browsing history and past searches. No typed characters are sent to your default search engine.  **Guest** mode does not display any suggestions or send typed characters to your default search engine.
+You can change your default search engine. Go to `edge://settings/search`.  Select the **Search engine used in the address bar** dropdown menu.  If you are browsing while using **InPrivate** or **Guest** mode, your autosuggestions are turned off.  **InPrivate** shows suggestions from your local browsing, such as browsing history and past searches. No typed characters are sent to your default search engine.  **Guest** mode does not display any suggestions or send typed characters to your default search engine.
 
 Data collected by other search providers follow the privacy policy of the company.
 

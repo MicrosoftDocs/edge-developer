@@ -169,9 +169,9 @@ For example, `console.log()` is in the `Info` group, but `console.error()` is in
 
 You can hide any level of messages that you're not interested in.  For example, if you're only interested in `Error` messages, you can hide the other three groups.
 
-To filter the messages, click the **Log Levels** dropdown and then select `Verbose`, `Info`, `Warning`, or `Error`.
+To filter the messages, click the **Log Levels** dropdown list and then select `Verbose`, `Info`, `Warning`, or `Error`.
 
-:::image type="content" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown." lightbox="../media/console-log-level-default-levels.msft.png":::
+:::image type="content" source="../media/console-log-level-default-levels.msft.png" alt-text="The Log Levels dropdown list." lightbox="../media/console-log-level-default-levels.msft.png":::
 
 To use the log level to filter, [open the Console Sidebar](#open-the-console-sidebar) and then select **Errors**, **Warnings**, **Info**, or **Verbose**.
 
@@ -248,9 +248,9 @@ In the following figure, `document.querySelector('a')` and `document.querySelect
 
 By default, the **JavaScript Context** dropdown is set to **top**, which represents the main webpage's [browsing context](https://developer.mozilla.org/docs/Glossary/Browsing_context).
 
-:::image type="content" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown." lightbox="../media/console-dom-level-top.msft.png":::
+:::image type="content" source="../media/console-dom-level-top.msft.png" alt-text="The JavaScript Context dropdown list." lightbox="../media/console-dom-level-top.msft.png":::
 
-Suppose you have an ad on your webpage embedded in an `<iframe>`, and you want to run JavaScript to tweak the DOM of the ad.  Click the **JavaScript Context** dropdown and then select the browsing context of the ad:
+Suppose you have an ad on your webpage embedded in an `<iframe>`, and you want to run JavaScript to tweak the DOM of the ad.  Click the **JavaScript Context** dropdown list and then select the browsing context of the ad:
 
 :::image type="content" source="../media/console-dom-level-multiple.msft.png" alt-text="Selecting a different JavaScript context." lightbox="../media/console-dom-level-multiple.msft.png":::
 
