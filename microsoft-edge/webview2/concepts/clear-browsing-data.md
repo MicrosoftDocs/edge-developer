@@ -92,9 +92,15 @@ This method clears the specified kinds of browsing data that was created between
 
 
 <!-- ====================================================================== -->
-## Example of clearing selected kinds of browsing data in a time range
+## Example: Clearing selected kinds of browsing data in a time range
 
 This example clears autofill data and password autosave data from the last hour.
+
+The following parameter values are passed to the Clear Browsing Data API method:
+
+*  The selected kinds of browser data = autofill data and password autosave data.
+
+*  The specified time range = the past hour (3600 seconds).
 
 
 <!-- ------------------------------ -->
