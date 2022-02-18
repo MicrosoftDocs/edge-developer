@@ -260,6 +260,13 @@ To stop Microsoft Edge from finding related matches in **Find on Page**:
 
 1. Turn off the **Include related matches** toggle.
 
+By default, the **Find on Page** feature sends data to Microsoft to help find better results, including synonyms, alternate spellings, and answers to questions.
+
+To prevent **Find on Page** from sending data to Microsoft:
+
+1. Select **Settings and more** > **Privacy, search, and services**.
+
+1. Turn off the **Suggest better matches in Find on Page** toggle.
 
 <!-- ====================================================================== -->
 ## Geolocation
