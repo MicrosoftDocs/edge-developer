@@ -148,10 +148,8 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/customize/placement
           - text: Run commands in the Command Menu
             url: /microsoft-edge/devtools-guide-chromium/command-menu/index
-          - text: Run JavaScript in the Console
-            url: /microsoft-edge/devtools-guide-chromium/console/console-javascript
-          - text: Keyboard shortcuts
-            url: /microsoft-edge/devtools-guide-chromium/shortcuts/index
+          - text: Console overview
+            url: /microsoft-edge/devtools-guide-chromium/console/index
           - text: What's new in Microsoft Edge DevTools 
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
           - text: Contact the Microsoft Edge DevTools team
@@ -225,8 +223,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Console overview
-            url: /microsoft-edge/devtools-guide-chromium/console/index
+          - text: Run JavaScript in the Console
+            url: /microsoft-edge/devtools-guide-chromium/console/console-javascript
           - text: Fix JavaScript errors that are reported in the Console
             url: /microsoft-edge/devtools-guide-chromium/console/console-debug-javascript
           - text: Sources tool overview
@@ -250,14 +248,16 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Performance features reference
-            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference
+          - text: Keyboard shortcuts
+            url: /microsoft-edge/devtools-guide-chromium/shortcuts/index
           - text: CSS features reference
             url: /microsoft-edge/devtools-guide-chromium/css/reference
           - text: Console features reference
             url: /microsoft-edge/devtools-guide-chromium/console/reference
           - text: Console object API Reference
             url: /microsoft-edge/devtools-guide-chromium/console/api
+          - text: Performance features reference
+            url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference
           - text: Sample code for DevTools
             url: /microsoft-edge/devtools-guide-chromium/sample-code/sample-code
 
