@@ -136,8 +136,8 @@ landingContent:
 # Card
   - title: Getting started with DevTools
     linkLists:
-      - linkListType: get-started
-        links:
+      # - linkListType: get-started
+        - links:
           - text: Reasons to use Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
           - text: Open DevTools
@@ -161,8 +161,8 @@ landingContent:
 # Card
   - title: Customizing DevTools
     linkLists:
-      - linkListType: tutorial
-        links:
+      # - linkListType: tutorial
+       - links:
           - text: Customize DevTools
             url: /microsoft-edge/devtools-guide-chromium/customize/index
           - text: Apply a color theme to DevTools
@@ -178,8 +178,8 @@ landingContent:
 # Card
   - title: Debugging web projects
     linkLists:
-      - linkListType: how-to-guide
-        links:
+      # - linkListType: how-to-guide
+        - links:
           - text: Analyze pages using the Inspect tool
             url: /microsoft-edge/devtools-guide-chromium/css/inspect
           - text: Get started viewing and changing CSS
@@ -202,8 +202,8 @@ landingContent:
 # Card
   - title: Emulation and Testing
     linkLists:
-      - linkListType: how-to-guide
-        links:
+      # - linkListType: how-to-guide
+      - links:
           - text: Emulate mobile devices (Device Emulation)
             url: /microsoft-edge/devtools-guide-chromium/device-mode/index
           - text: Accessibility-testing features
@@ -223,8 +223,8 @@ landingContent:
 # Card
   - title: JavaScript and performance
     linkLists:
-      - linkListType: overview
-        links:
+      # - linkListType: overview
+        - links:
           - text: Console overview
             url: /microsoft-edge/devtools-guide-chromium/console/index
           - text: Fix JavaScript errors that are reported in the Console
@@ -248,8 +248,8 @@ landingContent:
 # Card
   - title: References
     linkLists:
-      - linkListType: reference
-        links:
+      # - linkListType: reference
+        - links:
           - text: Performance features reference
             url: /microsoft-edge/devtools-guide-chromium/evaluate-performance/reference
           - text: CSS features reference
