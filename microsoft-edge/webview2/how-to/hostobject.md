@@ -1,6 +1,6 @@
 ---
-title: Use app objects in JavaScript
-description: Use host object in JavsScript using the WebView2 AddHostObjectToScript API.
+title: Using Host Objects in WebView2
+description: How to pass host objects to JavaScript using the AddHostObjectToScript API for WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,47 +8,48 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 2/17/2022
 ---
-# Use host objects in JavaScript
+# Using Host Objects in WebView2
 
-WebView2 enables applications to bridge between web and native sides of an application using an object that can be passed between the two sides. Such objects are defined in the native code and often called host objects. They can be projected into JavaScript using a WebView2 API called `AddHostObjectToScript`, as described in this document.
+WebView2 enables applications to bridge the gap between the web and native sides of an application by enabling an object to be passed to the web. Such objects are defined in the native code and often called host objects. They can be projected into JavaScript using a WebView2 API named `AddHostObjectToScript`, as described in this document.
 
 Why use `AddHostObjectToScript`?
 
-  * Developers often encounter a native object whose methods or properties they want to call from JavaScript. They may want these native object methods to be triggered by web code or by user interaction on the web side.
+  * When developing a WebView2 app, you may encounter a native object whose methods or properties you find useful. You might want to trigger these native object methods from web-side code, or as a result of user interaction on the web side of your app. In addition, you might not want to re-implement your native objects' methods in your web-side code.  The `AddHostObjectToScript` API enables re-use of native-side code by web-side code. 
 
-  * In addition, developers may not want to re-implement native object functions, and this API enables re-use of code. For example, there might be a webcam native API, which would take a large amount of code to re-write on the web side. Having the ability to call the native object is quicker and more efficient than re-coding the function. In this case you can pass the object to the web side to reuse the native API function.
+  * For example, there might be a native webcam API, which would require re-writing a large amount of code on the web side. Having the ability to call the native object's methods is quicker and more efficient than re-coding the object's methods on the web side of your app. In this case, your native-side code can pass the object to your app's web-side, JavaScript code, so that your JavaScript code can reuse the native API's methods.
 
 Scenarios that may benefit from using host objects in script:
 
-  * If there is a keyboard API and the developer wants to call the `keyboardObject.showKeyboard` function from the web side.
+  * There exists a keyboard API and you want to call the `keyboardObject.showKeyboard` function from the web side.
 
   * JavaScript is sandboxed, limiting its ability on the native side. For example, if you need to access a file on the native side, you must use the native file system. If you have a native object exposed to JavaScript via `AddHostObjectToScript`, you can use it to manipulate files on the native file system.
 
-This article uses the WebView2 sample app to demonstrate some practical applications of `AddHostObjectToScript`. For more information about how to embed web content into native applications [Embed web content into native applications - Microsoft Edge Development | Microsoft Docs](/microsoft-edge/webview2/how-to/communicate-btwn-web-native.md).
-
+This article uses the WebView2 Win32 sample app to demonstrate some practical applications of `AddHostObjectToScript`. For more information about how to embed web content into native applications, see [Embed web content into native applications](/microsoft-edge/webview2/how-to/communicate-btwn-web-native).
 
 <!-- ====================================================================== -->
-## Before you begin
+## Step 1: Install Visual Studio, install git, clone the WebView2Samples repo, and open the solution
 
-1. Download and install [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (16.11.10) or later, and other prerequisites as described in [Get started with WebView2 in Win32 apps - Microsoft Edge Development | Microsoft Docs](/microsoft-edge/webview2/get-started/win32.md).
+1. Download and install [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (version 16.11.10) or later, and other prerequisites as described in [Get started with WebView2 in Win32 apps](/microsoft-edge/webview2/get-started/win32).
 
-1. Clone the repo of the sample app from [MicrosoftEdge/WebView2Samples: Microsoft Edge WebView2 samples (github.com)](https://github.com/MicrosoftEdge/WebView2Samples).
+1. Clone the [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo, which includes the Win32-specific WebView2 sample app.  For instructions, in a new window or tab, see [Clone the WebView2Samples repo](../get-started/win32#step-2---clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_.
 
-1. Run Microsoft Visual Studio and open `WebView2GettingStarted.sln`. Keep the sample app open to follow along with the rest of this article.
+1. Open Microsoft Visual Studio.
 
-Preview of the major steps in this article:
+1. In your local copy of the cloned `WebView2Samples` repo, open `GettingStartedGuides > Win32_GettingStarted > WebView2GettingStarted.sln`.  Keep the sample app solution open, to follow along with the rest of this article.
 
-1. Define the host object and implement IDispatch so that WebView2 recognizes the object.
+**Preview of the major steps in this article:**
+
+1. Define the host object and implement `IDispatch` so that WebView2 recognizes the object.
 
 1. Use `AddHostObjectToScript` to pass a method to the web.
 
-1. Call the native object’s methods from web.
+1. Call the app's native object's methods from the app's web-side code.
 
 
 <!-- ====================================================================== -->
-## Step 1: Define the host object and implement IDispatch
+## Step 2: Define the host object and implement IDispatch
 
-To use this `AddHostObjectToScript` API, you first need to define a host object that implements `IDispatch`. If you already have a host object that implements `IDispatch`, skip to [Step 2: Call the AddHostObjectToScript API](#step-2-call-the-addhostobjecttoscript-api). Implementing `IDispatch` is essentially formatting the host object so that it can be passed to the web.
+To use this `AddHostObjectToScript` API, you first need to define a host object that implements `IDispatch`. If you already have a host object that implements `IDispatch`, skip to [Step 3: Call the AddHostObjectToScript API](#step-3-call-the-addhostobjecttoscript-api). Implementing `IDispatch` is essential for formatting the host object so that it can be passed to the web-side code.
 
 The following example creates a host object from scratch.
 
@@ -56,7 +57,7 @@ The following example creates a host object from scratch.
 
 **Part 1B:** Create the C++ object. This is demonstrated in the `HostObjectSampleImpl.cpp` file.
 
-The .IDL file defines the interface, and .CPP file implements the defined interface and iDispatch.
+**Important:** The IDL (`.idl`) file _defines_ an interface, and the C++ (`.cpp`) file _implements_ the defined interface, and also implements `IDispatch`.
 
 ### Part 1A: Create the COM interface
 
@@ -64,9 +65,9 @@ In the WebView2 sample code, the file `HostObjectSample.idl` creates a COM objec
 
 1. In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > **HostObjectSample.idl**.
 
-    The following code example is broken up into 2 sections. The first interface is titled `interface IHostObjectSample : IUnknown` starting at line 9, which inherits the unknown interface. Use it as a template for your object’s methods properties, callbacks, and so on.
+    The following code example is broken up into two sections. The first interface is `IHostObjectSample`, starting at line 9, which inherits the `IUnknown` interface. Use this `IHostObjectSample` definition as a template for defining your object's methods, properties, callback functions, and so on.
     
-    The second part is the coclass `HostObjectSample` starting at line 35, which includes IDispatch and the  `IHostObjectSample` interface.
+    The second part is the `HostObjectSample` component object class ([coclass](/windows/win32/midl/coclass)), starting at line 35, which includes `IDispatch` and the  `IHostObjectSample` interface.
 
     ```csharp
      1    import "oaidl.idl";
@@ -79,7 +80,7 @@ In the WebView2 sample code, the file `HostObjectSample.idl` creates a COM objec
      8        [uuid(3a14c9c0-bc3e-453f-a314-4ce4a0ec81d8), object, local]
      9        interface IHostObjectSample : IUnknown
     10        {
-    11            // Demonstrate basic method call with some parameters and a return value.
+    11            // Demonstrates a basic method call with some parameters and a return value.
     12            HRESULT MethodWithParametersAndReturnValue([in] BSTR stringParameter, [in] INT integerParameter, [out, retval] BSTR* stringResult);
     13    
     14           // Demonstrate getting and setting a property.
@@ -92,8 +93,7 @@ In the WebView2 sample code, the file `HostObjectSample.idl` creates a COM objec
     21            // Demonstrate native calling back into JavaScript.
     22            HRESULT CallCallbackAsynchronously([in] IDispatch* callbackParameter);
     23
-    24            // Demonstrate a property which uses Date types
-    25            [propget] HRESULT DateProperty([out, retval] DATE * dateResult);
+    24            // Demonstrates a property which uses Date types.    25            [propget] HRESULT DateProperty([out, retval] DATE * dateResult);
     26            [propput] HRESULT DateProperty([in] DATE dateValue);
     27
     28            // Creates a date object on the native side and sets the DateProperty to it.
@@ -111,37 +111,37 @@ In the WebView2 sample code, the file `HostObjectSample.idl` creates a COM objec
     40    }
     ```
 
-1. Notice line 38 where we include 'interface iDispatch', which is needed for our host object to work with AddHostObjectToScript.
+1. On line 38, we include `interface IDispatch`, which is needed for our host object to work with `AddHostObjectToScript`.
 
-    IDispatch allows developers to dynamically invoke methods and properties. Normally, calling objects requires static invocations, but you can use JavaScript to dynamically create object calls. See `IDispatch` interface [IDispatch interface (oaidl.h) - Win32 apps | Microsoft Docs](/windows/win32/api/oaidl/nn-oaidl-idispatch) for more information about `IDispatch` inheritance and methods. 
+    **Note on IDispatch**:
+
+    `IDispatch` allows you to dynamically invoke methods and properties. Normally, calling objects requires static invocations, but you can use JavaScript to dynamically create object calls.  For more information about `IDispatch` inheritance and methods, see [IDispatch interface (oaidl.h)](/windows/win32/api/oaidl/nn-oaidl-idispatch). 
     
-    Implement IDispatch as described in  [Type Libraries and the Object Description Language | Microsoft Docs and Using Type Building Interfaces and Functions | Microsoft Docs](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language.md).
+    Implement `IDispatch` as described in [Type Libraries and the Object Description Language](/previous-versions/windows/desktop/automat/type-libraries-and-the-object-description-language).
     
-    If the object you want to add to JavaScript doesn’t already implement `IDispatch`, you need to write an IDispatch class wrapper for the object you want to expose.
+    If the object you want to add to JavaScript doesn't already implement `IDispatch`, you need to write an `IDispatch` class wrapper for the object that you want to expose.
+
+    There might be libraries to do this automatically.  To learn more about the steps that are needed to write an `IDispatch` class wrapper for the object that you want to expose, see [Automation](/previous-versions/windows/desktop/automat/automation-programming-reference).
     
-    There might be libraries to do this automatically. Do learn more about the steps needed for this, see [Automation | Microsoft Docs](/previous-versions/windows/desktop/automat/automation-programming-reference.md).
-    
-1. Once the interface is defined in the IDL, save and compile the sample project in Visual Studio to create the Translation Lookaside Buffer (TLB) file, which you need to reference from the C++ source code in the following section.
+1. Once the interface is defined in the IDL, save and compile the sample project in Visual Studio to create the translation lookaside buffer (TLB) file, which you need to reference from the C++ source code that's shown in the following section.
 
 ### Part 1B: Create the C++ object
 
-In the WebView2 sample code, the `HostObjectSampleImpl.cpp` file takes the skeleton set in the COM IDL file, and builds the C++ object.
+In the WebView2 sample code, the `HostObjectSampleImpl.cpp` file takes the skeleton created in the COM IDL file, and builds the C++ object.
 
-Implement all the functions defined in your objects interface, as we outlined in the IDL file. Additionally ensure you implement the functions required by iDispatch. The compiler will throw a warning if these functions are not defined. 
+Implement all the functions that are defined in your object's interface, as we outlined in the IDL file.  Be sure to implement the functions that are required by `IDispatch`.  The compiler will throw a warning if these functions aren't defined.
 
-Below we will zoom into 2 specific properties that were defined in the IDL to show how the IDL is related to CPP file.
+Below, we examine two specific properties that were defined in the IDL, to show how the IDL is related to the `.cpp` file.
 
 1. In Visual Studio **Solution Explorer**, open **WebView2APISample** > **Source Files** > **HostObjectSampleImpl.cpp**.
 
-1. Compare the property declarations in the `HostObjectSample.idl` file:
-
+1. Compare the property _declarations_, in `HostObjectSample.idl`...
+ 
     ```csharp
     [propget] HRESULT Property([out, retval] BSTR* stringResult);
     [propput] HRESULT Property([in] BSTR stringValue);
     ```
-
-    To the implementation of the object's properties in the `HostObjectSampleImpl.cpp` file:
-
+    ... to the _implementation_ of the object's properties, in `HostObjectSampleImpl.cpp`:
 
     ```cpp
     STDMETHODIMP HostObjectSample::get_Property(BSTR* stringResult)
@@ -160,7 +160,7 @@ Below we will zoom into 2 specific properties that were defined in the IDL to sh
 <!-- ====================================================================== -->
 ## Step 2: Call the AddHostObjectToScript API
 
-Now that we’ve completed building our interface and implementation of our host object, we are ready to learn how to use the AddHostObjectToScript API to pass the object to JavaScript.
+Now that we've completed building our interface and implementation of our host object, we're ready to use the AddHostObjectToScript API to pass the host object to our app's web-side, JavaScript code.
 
 1. In Visual Studio **Solution Explorer**, open **WebVie2APISample** > **Source Files** > **ScenarioHostObject.cpp**.
 
@@ -205,37 +205,40 @@ Now that we’ve completed building our interface and implementation of our host
     62            }
     ```
 
-1. Review line 31, which gets the URI of the HTML file to display the sample HTML page.
+    > [!NOTE] 
+    > Lines 31 - 46 shows code specific to this sample app where we display html. Your app may have a different implementation of this code.  
 
-1. Review line 33, which shows how to instantiate the COM object just defined in the IDL file. This is the object we will use later when we call `AddHostObjectToScript`.
+1. Review line 33, which shows how to instantiate the COM object just defined in the IDL file. This is the object we will use later when we call `AddHostObjectToScript`. This gets us a pointer to the interface in `HostObjectSampleImpl.cpp.`
 
-1. Review line 50, which converts the newly created COM object to a variant. This enables you to take in references to objects.
+1. Review line 51, which casts the newly created COM object to an iDispatch type and then converts the object to a `VARIANT`. `VARIANT` types allow you to use data structures such as integers and arrays as well as more complex types such as `IDispatch`. 
 
-    This approach supports integers and arrays. For a full list of supported data types, see [VARIANT structure (oaidl.h) - Win32 apps | Microsoft Docs](/windows/win32/api/oaidl/ns-oaidl-variant).
+    For a full list of supported data types, see [VARIANT structure (oaidl.h) - Win32 apps | Microsoft Docs](/windows/win32/api/oaidl/ns-oaidl-variant).
     
-    Now that we have a variant of the object that is C++ code friendly, we are ready to pass it to web.
+    Now that we have a variant of the object that is C++ code-friendly, our app's native-side code is ready to pass the host object to the app's web-side code.
 
-1. Review line 59, for the code that passes the variant to `AddHostObjectToScript`, names it sample, and enables it as a remote object variant.
+1. Review line 52, which sets the remote objects variant type as iDispatch. 
 
-Now we have code to successfully create a host object that implements `IDispatch`. It also sets up our native code to call the webview2 API `Addhostobjecttoscript`, and passes the object to the web via AdHostObjectToScrip. Continue to the next step to see what this enables.  
+1. Review line 59, where we pass the `VARIANT` to `AddHostObjectToScript`, name it "sample", and enable the remote object as `VARIANT` (`&remoteObjectAsVariant`).
+
+Now the WebView2 app's native-side code successfully creates a host object that implements `IDispatch`. This native code also calls the WebView2 API `AddHostObjectToScript`, and passes the object to the app's web-side code via `AddHostObjectToScript`. Continue to the next step to see what's enabled by passing the host object from the app's native-side code to the app's web-side code. 
 
 
 <!-- ====================================================================== -->
 ## Step 3: Use AddHostObjectToScript to pass a method to the web
 
-To follow along we will use the WebView2 Sample App.  
+To follow along, we will use the WebView2 Sample App.  
 
-1. In Microsoft Visual Studio, click **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. In Microsoft Visual Studio, select **File** > **Save All (Ctrl+Shift+S)** to save the project.
 
 1. Press **F5** to build and run the project.
 
-1. Open the **ScenarioAddHostObject** HTML file.  
+1. Open `ScenarioAddHostObject.html`.
 
 1. Click **Scenario** > **Host Objects**.
 
 1. Explore properties by clicking buttons such as **Property**, **Method**, and **Callback** to see how the sample code behaves.
 
-    By now you have observed capabilities of the host object used from the web side. To gain insight into what's happening in JavaScript, lets take a look at the following code snippet: 
+    By now you have observed capabilities of the host object used from the app's web-side code. To gain insight into what's happening in JavaScript, let's take a look at the following code: 
 
     ```html
     150    // Date property 
@@ -250,25 +253,17 @@ To follow along we will use the WebView2 Sample App.
     159    });
     ```
 
-1. Review line 154. Notice that the code calls `chrome.webview.hostObjects.sync.sample.dateProperty`. This line of code is getting the `dateProperty` of the native host object.
+1. In line 154, we reference `chrome.webview.hostObjects.sync.sample.dateProperty`. This line of code is getting the `dateProperty` of the native host object.
 
-Congrats! You have successfully completed the process of creating and using a host object. Now lets see what other APIs there are in the host object ecosystem.
+Congratulations! You have successfully created a host object in your app's native-side code, passed the host object to your app's web-side code, and then used the host object from the app's web-side code. Now let's see what other APIs there are in the host-object ecosystem.
 
-The rest of the document is repurposed from [WebView2 Win32 C++ ICoreWebView2 | Microsoft Docs](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript).
+The rest of this article is repurposed from [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript).
 
 
 <!-- ====================================================================== -->
-## AddHostObjectToScript ???ref title, change here???
+## AddHostObjectToScript Advanced Topics
 
-Host object proxies are promises and resolve to an object representing the host object. The promise is rejected if the app has not added an object with the same name. When JavaScript code accesses a property or method of the object, a promise is returned. The promise resolves to the value returned from the host for the property or method. The promise may be rejected in case of error ???returns an error??? if, for example, there is no property or method for the object, or any parameters are not valid.
-
-1. Add the provided host object to script running in the WebView with the specified name.
-
-    `public HRESULT AddHostObjectToScript(LPCWSTR name, VARIANT * object)`
-
-1. next step where to put this code, called from JavaScript?
-
-    Note from Jason: Explain Edge cases in next paragraph. Source info in linked Reference doc. Copy / paste as needed.
+Host object proxies are promises and resolve to an object representing the host object. The promise is rejected if the app has not added an object with the same name. When JavaScript code accesses a property or method of the object, a promise is returned. The promise resolves to the value returned from the host for the property or method. The promise may be rejected in case of an error, such as if a property or method for the object doesn't exist, or any parameters are not valid.
 
 Host object proxies support simple types,` IDispatch`, and arrays. `IUnknown` objects that also implement `IDispatch` are treated as `IDispatch, generic IUnknown`.
 
@@ -276,7 +271,7 @@ Host object proxies do not support `VT_DECIMAL` or `VT_RECORD` variants. R
 
 Nested arrays are supported up to a depth of 3. Arrays by reference types are not supported. `VT_EMPTY` and `VT_NULL` are mapped into JavaScript as null. In JavaScript, null and undefined are mapped to `VT_EMPTY`.
 
-### Sync vs Async addhost object: 
+### Sync vs Async communication with Host Objects: 
 
 All host objects are exposed as `window.chrome.webview.hostObjects.sync.{name}`. Here the host objects are exposed as synchronous host object proxies. These are not promises, and function as ???runtime or property access synchronously block running script waiting to communicate cross process??? for the host code to run. Accordingly, the result may have reliability issues, so this approach is not recommended. If possible, use the promise-based asynchronous `window.chrome.webview.hostObjects.{name}` API.
 
