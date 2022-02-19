@@ -25,7 +25,7 @@ For the relationship between the WebDriver protocol, Microsoft Edge Driver as an
 <!-- ====================================================================== -->
 ## Step 1: Download the WebView2API Sample
 
-If you don't have an existing WebView2 project, download the [WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample), which is a comprehensive sample of the latest WebView2 SDK.  Make sure you've satisfied the [prerequisites for the WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites).
+If you don't have an existing WebView2 project, clone the WebView2Samples repo in order to download the [WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample).  That particular sample within the larger repo a comprehensive sample of the latest WebView2 SDK.  Make sure you've satisfied the [prerequisites for the WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites).
 
 Once you've cloned the repo, build the project in Visual Studio.  It should look like the following figure.
 

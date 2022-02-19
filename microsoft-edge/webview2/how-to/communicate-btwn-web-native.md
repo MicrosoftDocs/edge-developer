@@ -21,7 +21,9 @@ Some common use cases include:
 <!-- ====================================================================== -->
 ## Before you begin
 
-This tutorial steps through the Sample App code to demonstrate some of the communication capabilities in WebView2.  Clone the [WebView2 Samples App](https://github.com/MicrosoftEdge/WebView2Samples), build, and run to follow along.
+This tutorial steps through the Sample App code to demonstrate some of the communication capabilities in WebView2.  Clone the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples), open a `.sln` file in Visual Studio, build the project, and run (debug) to follow along with the steps in this article.
+
+For detailed steps about cloning the repo, see [WebView2 samples](../code-samples-links.md).
 
 
 <!-- ====================================================================== -->

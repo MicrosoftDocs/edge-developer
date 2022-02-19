@@ -106,4 +106,4 @@ WebView2 apps can run on the following versions of Windows:
 * [Manage user data folders](concepts/user-data-folder.md)
 * [How to Debug with WebView2](how-to/debug.md)
 * [Automating and testing WebView2 with Microsoft Edge Driver](how-to/webdriver.md)
-* [WebView2 Samples](https://github.com/MicrosoftEdge/WebView2Samples) - This repository contains samples that demonstrate all of the WebView2 SDK features and API usage patterns.  As more features are added to the WebView2 SDK, the sample apps will be updated.<!-- make sure this statement is in the repo readme, then possibly remove it from here -->
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - Samples that demonstrate WebView2 SDK features and API usage patterns, including recently added WebView2 features.

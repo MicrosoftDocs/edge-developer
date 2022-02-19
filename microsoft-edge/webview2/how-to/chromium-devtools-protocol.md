@@ -93,7 +93,7 @@ To create an `HTML file` to find your geolocation, complete following the action
 
    * [Get started with WebView2](../get-started/get-started.md)
 
-   * [WebView2 samples](https://github.com/MicrosoftEdge/WebView2Samples)
+   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 
 1. Set the initial navigation of the WebView2 control to `geolocation.html`:
 
@@ -183,4 +183,4 @@ The Chrome DevTools Protocol is maintained by the open source Chromium project, 
 ## See also
 
 * [Microsoft Edge DevTools Protocol overview](../../devtools-protocol-chromium/index.md)
-* [WebView2 samples](https://github.com/MicrosoftEdge/WebView2Samples)
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)

@@ -219,7 +219,7 @@ Now you can change the content of the WebView2 control to add your own content.
 <!-- ====================================================================== -->
 ## Next steps
 
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
    * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
    * [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)

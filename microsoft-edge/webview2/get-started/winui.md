@@ -325,7 +325,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## Next steps
 
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the WebView2 samples repo.
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
    * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
