@@ -170,7 +170,7 @@ Platform-specific Get Started guides contain more information about dev machine 
 
    If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
 
-   If you want more information about this decision now, in a new window or tab, see [Understand WebView2 SDK versions](../concepts/versioning.md).
+   If you want more information about this decision now, in a new window or tab, see [Understand WebView2 SDK versions](concepts/versioning.md).
 
 
 <!-- The h3 section [Clone or download the WebView2Samples repo](get-started/win32.md#clone-or-download-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
@@ -300,8 +300,6 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
 
 1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
-
-See also [Install Visual Studio](get-started/win32.md#install-visual-studio) in _Get started with WebView2 in Win32 apps_.
 
 
 <!-- ====================================================================== -->
