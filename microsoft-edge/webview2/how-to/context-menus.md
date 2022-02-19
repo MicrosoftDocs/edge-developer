@@ -12,52 +12,80 @@ ms.date: 02/14/2022
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of your WebView2 app.  Using this API, you can:
 
-*  Add and remove items from the default WebView2 context menus.
+*  Add custom menuitems to the default WebView2 context menus.
 
-*  Create your own context menus by using data that's passed from the WebView2 control to your app.
+*  Remove your custom menuitems from the default WebView2 context menus.
 
-If you don't use this API, your options are limited to enabling or disabling the default WebView2 context menu.
+*  Create your own context menus.  Your context-menu code uses data that's passed from the WebView2 control to your app.
+
+You can also enable or disable the default WebView2 context menu.  To do that, you don't use this API.
 
 
 <!-- ====================================================================== -->
-## Event model
+## Events raised when user opens a context menu or selects a menuitem on a context menu
 
-This API includes two events: the `CoreWebView2ContextMenuRequested` event and the `CoreWebView2CustomItemSelected` event.
-
-Event | Purpose
+The **ContextMenuRequested** API includes two events that your WebView2 app can listen for: the `CoreWebView2ContextMenuRequested` event and the `CoreWebView2CustomItemSelected` event.
 
 
+<!-- ====================================================================== -->
+## CoreWebView2ContextMenuRequested event, raised when user opens a context menu
+
+The `CoreWebView2ContextMenuRequested` event indicates that the user requested opening a context menu.
+
+The WebView2 control raises this event to indicate that the user requested opening a context menu in the WebView2 control, such as by right-clicking. The WebView2 control only raises the `CoreWebView2ContextMenuRequested` event if the current webpage allows the context menu to appear.
 
 
-*  Your app listens for the `CoreWebView2ContextMenuRequested` event.  When the user tries to open a context menu in the WebView2 control, the `CoreWebView2ContextMenuRequested` event is raised by the WebView2 control.
-   *  The `CoreWebView2ContextMenuRequested` event is only raised if the current webpage allows the context menu to appear.
-
-*  The `CoreWebView2CustomItemSelected` event notifies your app that one of its inserted context menu items <!-- in the default context menu?  in a custom context menu?--> was selected.
+<!-- ====================================================================== -->
+## AreDefaultContextMenusEnabled property, controls whether context menu can be opened
 
 If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables the context menu, and the `CoreWebView2ContextMenuRequested` event won't be raised.
 
+
+<!-- ====================================================================== -->
+## Detecting that a context menu was opened
+
+When your app receives the `CoreWebView2ContextMenuRequested` event, indicating that the user requested opening the context menu, your then can do a combination of the following:
+
+*  Add custom menuitems to the default context menu that's provided by the WebView2 control.
+
+*  Remove custom menuitems from the default context menu that's provided by the WebView2 control.
+
+*  Open a custom context menu, using your app's own, custom UI.
+
+
+
+<!-- ====================================================================== -->
+## CoreWebView2CustomItemSelected event, raised when user selects a custom menuitem on a context menu
+
+The `CoreWebView2CustomItemSelected` event indicates that the user selected a custom menuitem on a context menu.  The context menu can be a default WebView2 context menu or a custom context menu.
+
+The WebView2 control raises this event to indicate that the user selected a custom menu item that your app added to a context menu.
+
+
+<!-- ====================================================================== -->
+## Information sent when user selects a custom menuitem on a context menu
+
 When your app indicates to WebView2 that a user selected a menuitem on a context menu, WebView2 sends the following items to your app:
 
-*  An ordered list of `ContextMenuItem` objects to populate the context menu.  The ordered list includes the following:
-   *  Name
-   *  Label
-   *  Kind
-   *  Shortcut Desc
-   *  other properties
+*  An ordered **list of `ContextMenuItem` objects** to populate the custom context menu.  The ordered list includes the following:
+   *  The internal **name** of the menuitem.
+   *  The UI **label** of the menuitem, displayed to the user in the UI.
+   *  The **kind** of menuitem.
+   *  A keyboard **shortcut Description**, if any, such as **Alt+C**.
+   *  Any other properties of the custom menuitem.
 
-*  The **coordinates** where the context menu was requested.  The coordinates are defined in relation to the upper left corner of the WebView2 control.  <!-- control bounds. -->
+*  The **coordinates** where the context menu was requested, so your app can detect what UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.  <!-- control bounds. -->
 
-*  A **selection object** that will include the kind of context selected, and the appropriate context menu parameter data.
-
-
-When your app receives the `CoreWebView2ContextMenuRequested` event, then can do a combination of the following:
-
-*  Add or remove entries to the default context menu that's provided by the WebView2 control.
-
-*  Use your own UI to display your custom context menu.  You can either handle the user-selected menuitem on your own, or return the menuitem to the WebView2 control.
+*  A **selection object** that will include the kind of context selected, (such as?,) and the appropriate context menu parameter data.  (what sort of param data - which piece of info that's sent, tells which menuitem, from the ordered list of menuitems, the user selected?)
 
 
-If the user selects one of the menuitems that you inserted, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
+<!-- ====================================================================== -->
+## Handling the user selecting a menuitem of a context menu
+
+Your app can handle the user-selected menuitem, or your app can return the menuitem to the WebView2 control to handle the user-selected menuitem.
+
+
+If the user selects one of your app's custom menuitems, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
 
 *  The app adds custom menu items, but defers the context menu UI to the WebView platform.
 
@@ -72,10 +100,10 @@ You can add menuitems (commands) to the default context menu (right-click menu).
 API for adding menuitems to the default context menu:
 
 
-```c
-`ContextMenuRequested(id, position, list of ContextMenuItems)`
-~~
-
+```cpp
+ContextMenuRequested(id, position, list of ContextMenuItems)
+```
+<!-- ~~ -->
 
 
 
@@ -101,7 +129,6 @@ event
 * [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
 
 * [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
-
 
 
 ---
@@ -343,12 +370,14 @@ event
 <!-- end-of-tab-set marker -->
 
 
-### Enumerating menu item IDs and text
+<!-- ====================================================================== -->
+## Enumerating menu item IDs and text
 
 _is this section needed?_
 
 
-### Defining where to show the context menu, by using relative window position
+<!-- ====================================================================== -->
+## Defining where to show the context menu, by using relative window position
 
 
 <!-- ------------------------------- -->
@@ -373,7 +402,8 @@ event
 <!-- end-of-tab-set marker -->
 
 
-### Reporting the selected context menu menuitem to WebView2
+<!-- ====================================================================== -->
+## Reporting the selected context menu menuitem to WebView2
 
 
 <!-- ------------------------------- -->
