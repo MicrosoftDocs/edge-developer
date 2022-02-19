@@ -34,7 +34,7 @@ To open the WebView2 samples and run them in debug mode, install the following d
 
    Initial setup of Visual Studio is done.  It's likely that additional Visual Studio setup dialogs will open later in this tutorial.
 
-Platform-specific Get Started guides contain more information about dev machine setup; for example, the Win32 tutorial tells how to install workloads if prompted to, upon opening a partiular sample.  For example, see [Install the "Desktop development with C++" workload](get-started/win32.md#install-the-desktop-development-with-c-workload) in _Get started with WebView2 in Win32 apps_.
+Platform-specific Get Started guides contain more information about dev machine setup; for example, the Win32 tutorial tells how to install workloads if prompted to, upon opening a partiular sample.  For example, see [Install the "Desktop development with C++" workload](../get-started/win32.md#install-workload) in _Get started with WebView2 in Win32 apps_.
 
 
 <!-- ====================================================================== -->
@@ -56,7 +56,7 @@ Platform-specific Get Started guides contain more information about dev machine 
 
    If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
 
-   If you want more information about this decision now, in a new window or tab, see [Understand WebView2 SDK versions](concepts/versioning.md).
+   If you want more information about this decision now, in a new window or tab, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
 
 
 <!-- The h3 section [Clone or download the WebView2Samples repo](get-started/win32.md#clone-or-download-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->

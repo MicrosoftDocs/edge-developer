@@ -41,7 +41,7 @@ This article covers how to set up your development tools and create an initial W
 
    If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
   
-   If you want more information now, see [Understand WebView2 SDK versions](../concepts/versioning.md).
+   If you want more information now, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
 
 Continue with the steps below.
 

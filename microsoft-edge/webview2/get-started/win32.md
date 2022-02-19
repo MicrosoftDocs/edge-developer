@@ -73,7 +73,7 @@ You start with a basic desktop project that contains a single main window.  We'l
 1. Open `WebView2GettingStarted.sln`, which is located at the path: `<your repo directory>/WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`.
 
 
-### Install the "Desktop development with C++" workload
+### Install the "Desktop development with C++" workload {#install-workload}
 
 Visual Studio Installer might open and prompt you to install a Workload:
 
