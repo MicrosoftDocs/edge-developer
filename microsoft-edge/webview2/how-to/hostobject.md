@@ -31,7 +31,7 @@ This article uses the WebView2 Win32 sample app to demonstrate some practical ap
 
 1. Download and install [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (version 16.11.10) or later, and other prerequisites as described in [Get started with WebView2 in Win32 apps](/microsoft-edge/webview2/get-started/win32).
 
-1. Clone the [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo, which includes the Win32-specific WebView2 sample app.  For instructions, in a new window or tab, see [Clone the WebView2Samples repo](../get-started/win32#step-2---clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_.
+1. Clone the [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo, which includes the Win32-specific WebView2 sample app.  For instructions, in a new window or tab, see [Clone the WebView2Samples repo](../get-started/win32.md#step-2---clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_.
 
 1. Open Microsoft Visual Studio.
 
@@ -49,7 +49,7 @@ This article uses the WebView2 Win32 sample app to demonstrate some practical ap
 <!-- ====================================================================== -->
 ## Step 2: Define the host object and implement IDispatch
 
-To use this `AddHostObjectToScript` API, you first need to define a host object that implements `IDispatch`. If you already have a host object that implements `IDispatch`, skip to [Step 3: Call the AddHostObjectToScript API](#step-3-call-the-addhostobjecttoscript-api). Implementing `IDispatch` is essential for formatting the host object so that it can be passed to the web-side code.
+To use this `AddHostObjectToScript` API, you first need to define a host object that implements `IDispatch`. If you already have a host object that implements `IDispatch`, skip to [Step 3: Call the AddHostObjectToScript API](#step-4-call-the-addhostobjecttoscript-api). Implementing `IDispatch` is essential for formatting the host object so that it can be passed to the web-side code.
 
 The following example creates a host object from scratch.
 
@@ -158,7 +158,7 @@ Below, we examine two specific properties that were defined in the IDL, to show 
     ```
 
 <!-- ====================================================================== -->
-## Step 2: Call the AddHostObjectToScript API
+## Step 3: Call the AddHostObjectToScript API
 
 Now that we've completed building our interface and implementation of our host object, we're ready to use the AddHostObjectToScript API to pass the host object to our app's web-side, JavaScript code.
 
@@ -205,7 +205,7 @@ Now that we've completed building our interface and implementation of our host o
     62            }
     ```
 
-    > [!NOTE] 
+    > [!NOTE]
     > Lines 31 - 46 shows code specific to this sample app where we display html. Your app may have a different implementation of this code.  
 
 1. Review line 33, which shows how to instantiate the COM object just defined in the IDL file. This is the object we will use later when we call `AddHostObjectToScript`. This gets us a pointer to the interface in `HostObjectSampleImpl.cpp.`
@@ -224,7 +224,7 @@ Now the WebView2 app's native-side code successfully creates a host object that 
 
 
 <!-- ====================================================================== -->
-## Step 3: Use AddHostObjectToScript to pass a method to the web
+## Step 4: Use AddHostObjectToScript to pass a method to the web
 
 To follow along, we will use the WebView2 Sample App.  
 
@@ -257,7 +257,7 @@ To follow along, we will use the WebView2 Sample App.
 
 Congratulations! You have successfully created a host object in your app's native-side code, passed the host object to your app's web-side code, and then used the host object from the app's web-side code. Now let's see what other APIs there are in the host-object ecosystem.
 
-The rest of this article is repurposed from [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript).
+The rest of this article is repurposed from [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true).
 
 
 <!-- ====================================================================== -->
