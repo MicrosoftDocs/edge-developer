@@ -34,51 +34,54 @@ The WebView2 Get Started guides use starter code for Win32, Windows Presentation
 
 
 <!-- ====================================================================== -->
-## Visual Studio .sln files in the WebView2Samples repo
+## Visual Studio .sln files and README.md files in the WebView2Samples repo
 
-The `WebView2Samples` repo contains multiple `.sln` files.  When you clone the repo, you can then open any of these `.sln` files in Visual Studio:
-
-`GettingStartedGuides` directory `.sln` files for the setup tutorials:
-
-*  `WebView2Samples/GettingStartedGuides/WinUI3_GettingStarted/WinUI_Sample/WinUI_Sample.sln
-*  `WebView2Samples/GettingStartedGuides/WinForms_GettingStarted/WinForms_GettingStarted.sln
-*  `WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln
-*  `WebView2Samples/GettingStartedGuides/WPF_GettingStarted/WPFSample.sln
-
-`SampleApps` directory `.sln` files:
-
-*  `WebView2Samples/SampleApps/WebView2Samples.sln
-*  `WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln
-*  `WebView2Samples/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln
-*  `WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln
-*  `WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln
-*  `WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln
-
-
-<!-- ====================================================================== -->
-## README files in the WebView2Samples repo
-
-The `WebView2Samples` repo contains multiple `README.md` files.  When you clone the repo, you can then view any of these `README.md` files in Visual Studio:
+The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files.  When you clone the repo, you can then view any of these `README.md` files in Visual Studio.
 
 Top-level README for the overall repo:
 *  [WebView2Samples\README.md](https://github.com/MicrosoftEdge/WebView2Samples#readme)
 
-README files for platform-specific Get Started tutorials:
-*  [WebView2Samples\GettingStartedGuides\WinUI3_GettingStarted\README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
-*  `WebView2Samples\GettingStartedGuides\Win32_GettingStarted\README.md
-*  `WebView2Samples\GettingStartedGuides\WPF_GettingStarted\README.md
 
-README files in the platform-specific `SampleApps` subdirectories:
+**`GettingStartedGuides` directory: solution and readme files, for the per-platform tutorials:**
 
-*  [WebView2Samples\SampleApps\webview2_sample_uwp\readme.md](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/webview2_sample_uwp#readme.md)
-*  `WebView2Samples\SampleApps\WebView2WpfBrowser\README.md
-*  `WebView2Samples\SampleApps\WebView2WindowsFormsBrowser\README.md
-*  `WebView2Samples\SampleApps\WebView2SampleWinComp\README.md
-*  `WebView2Samples\SampleApps\WebView2APISample\README.md
-*  `WebView2Samples\SampleApps\WV2DeploymentWiXCustomActionSample\README.md
-*  `WebView2Samples\SampleApps\WV2DeploymentWiXBurnBundleSample\README.md
-*  `WebView2Samples\SampleApps\WV2DeploymentVSInstallerSample\README.md
-*  `WebView2Samples\SampleApps\WV2CDPExtensionWPFSample\README.md
+* Getting started for Win32: `WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
+   *  [WebView2Samples\GettingStartedGuides\Win32_GettingStarted\README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted#readme)
+
+* Getting started for WinUI 3: `WebView2Samples/GettingStartedGuides/WinUI3_GettingStarted/WinUI_Sample/WinUI_Sample.sln`
+   *  [WebView2Samples\GettingStartedGuides\WinUI3_GettingStarted\README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
+
+* Getting started for WinForms: `WebView2Samples/GettingStartedGuides/WinForms_GettingStarted/WinForms_GettingStarted.sln`
+   *  No README file.
+
+* Getting started for WPF: `WebView2Samples/GettingStartedGuides/WPF_GettingStarted/WPFSample.sln`
+   *  `WebView2Samples\GettingStartedGuides\WPF_GettingStarted\README.md`
+
+
+**`SampleApps` directory: solution and readme files:**
+
+*  WebView2Samples: `WebView2Samples/SampleApps/WebView2Samples.sln` - comprehensive.
+   *  [WebView2Samples\SampleApps\WebView2APISample\README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme) - Long Readme for "WebView2 API Sample".
+
+*  webview2_sample_uwp: `WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
+   *  [WebView2Samples\SampleApps\webview2_sample_uwp\readme.md](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/webview2_sample_uwp#readme.md)
+
+*  WebView2WpfBrowser: `WebView2Samples/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
+   *  `WebView2Samples\SampleApps\WebView2WpfBrowser\README.md`
+
+*  WebView2WindowsFormsBrowser: `WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   *  `WebView2Samples\SampleApps\WebView2WindowsFormsBrowser\README.md`
+
+*  WebView2SampleWinComp: `WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   *  `WebView2Samples\SampleApps\WebView2SampleWinComp\README.md`
+
+*  WV2CDPExtensionWPFSample: `WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
+   *  `WebView2Samples\SampleApps\WV2CDPExtensionWPFSample\README.md`
+
+**Readme files for WIX and Deployment Installer:**
+
+*  `WebView2Samples\SampleApps\WV2DeploymentWiXCustomActionSample\README.md`
+*  `WebView2Samples\SampleApps\WV2DeploymentWiXBurnBundleSample\README.md`
+*  `WebView2Samples\SampleApps\WV2DeploymentVSInstallerSample\README.md`
 
 
 <!-- ====================================================================== -->
@@ -88,7 +91,7 @@ The `WebView2Samples` repo includes sample projects for Win32, WPF, WinForms, an
 
 1. In a separate window or tab, see [WebView2Samples repo (README page)](https://github.com/MicrosoftEdge/WebView2Samples).
 
-1. Clone the `WebView2Samples` repo, as described in [#clone-the-webview2samples-repo] below.
+1. Clone the `WebView2Samples` repo, as described in [Clone or download the WebView2 samples repo](#clone-or-download-the-webview2samples-repo) below.
 
 1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
 
@@ -134,14 +137,14 @@ To open the WebView2 samples and run them in debug mode, install the following d
 
 ### Install git
 
-1. If you want to close the `WebView2Samples` repo, and if git isn't not already installed, [Download git](https://git-scm.com/downloads) and install it.  git will be used during cloning the `WebView2Samples` repo from GitHub, below.
+1. If you want to clone the `WebView2Samples` repo, and if git isn't not already installed, [Download git](https://git-scm.com/downloads) and install it.  git will be used during cloning the `WebView2Samples` repo from GitHub, below.
 
 
 ### Install Visual Studio
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com) 2015 or later (such as Visual Studio Professional 2022).
 
-   Generally, the WebView2 samples require Microsoft **Visual Studio**, not Microsoft **Visual Studio Code**, to run them in debug mode.
+   The WebView2 samples are designed for Microsoft **Visual Studio**, not Microsoft **Visual Studio Code**.
 
    If you are installing Visual Studio 2022, you can accept the defaults for now; you can click **Install**, and decline installing the Workloads at this time.
 
@@ -161,10 +164,20 @@ Platform-specific Get Started guides contain more information about dev machine 
    We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
 
 
-<!-- ====================================================================== -->
-## Clone the WebView2Samples repo
+### Install the WebView2 Runtime (optional)
 
-To clone the repo, you must first install git, per the previous section.  You can simply download the repo as a `.zip` file instead of cloning the repo.
+1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
+
+   If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
+
+   If you want more information about this decision now, in a new window or tab, see [Understand WebView2 SDK versions](../concepts/versioning.md).
+
+
+<!-- The h3 section [Clone or download the WebView2Samples repo](get-started/win32.md#clone-or-download-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
+<!-- ====================================================================== -->
+## Clone or download the WebView2Samples repo
+
+To clone the repo, you must first install git, per the previous section.  You can download the repo as a `.zip` file instead of cloning the repo.
 
 *  If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
 
@@ -184,15 +197,46 @@ To clone the repo, you must first install git, per the previous section.  You ca
 Then return here and continue with the steps below.
 
 
+### Downloading the WebView2Samples repo
+
+If you want to download the repo (as a `.zip` file):
+
+1. Open the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) in a new window or tab.
+
+1. Click the green **Code** button in the upper right of the GitHub repo, and then click **Download ZIP**.
+
+   ![Cloning the WebView2Samples repo.](media/cloning-the-webview2-samples-repo-samples-article.png)
+
+   The **Download** pop-up appears in Microsoft Edge:
+
+   ![The 'Settings and more' icon in the toolbar of Microsoft Edge.](media/settings-and-more-edge-icon.png)
+
+   In Microsoft Edge, if the **Download** pop-up isn't visible, click **Settings and more** (...) and then click **Downloads**.
+
+1. In the **Downloads** pop-up window, hover to the right of `WebView2Samples-master.zip` and then click the **Show in folder** (folder) icon.
+
+   It is recommended that you don't click the **Open file** link, because that immediately unzips the file in your Downloads area, which could make it harder (and slower) to move to your desired location.
+
+1. Copy or cut the `WebView2Samples-master.zip` file from your Downloads directory to a regular directory, such as `Documents`.
+
+1. Unzip the .`WebView2Samples-master.zip` file and note the location of the unzipped files.
+
+   ![The downloaded, unzipped WebView2Samples repo.](media/downloaded-samples-repo-unzipped.png)
+
+1. Study the breakout of main directories.  `-master` is the name of the repo branch that this downloaded directory snapshot represents.
+
+
 ### Obtain the URL for cloning the WebView2Samples repo
+
+If you are cloning instead of downloading the repo:
 
 1. Open the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) in a new window or tab.
 
 1. Click the green **Code** button in the upper right of the GitHub repo, select **Clone**, and then click the **Copy** icon (or, select the HTTPS URL string in the text box and copy it).
 
-   ![Cloning the WebView2Samples repo.](media/cloning-the-webview2-samples-repo.png)
+   ![Cloning the WebView2Samples repo.](media/cloning-the-webview2-samples-repo-samples-article.png)
 
-1. Decide which tool you want to use to locally clone (download) the repo:
+1. Decide which tool you want to use to locally clone the repo:
    *  Visual Studio
    *  GitHub Desktop
    *  Git Bash shell or command prompt
@@ -255,7 +299,7 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
 
-1. Open a `.sln` file in Visual Studio, or possibly in Visual Studio Code.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln).  Generally, these samples require Visual Studio, not Visual Studio Code.
+1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
 
 See also [Install Visual Studio](get-started/win32.md#install-visual-studio) in _Get started with WebView2 in Win32 apps_.
 

@@ -30,56 +30,22 @@ This article covers how to set up your development tools and create an initial W
 <!-- ====================================================================== -->
 ## Step 1 - Install git, Visual Studio, and a preview channel of Microsoft Edge
 
-First, install the following development software.
+If these are not installed already, install the following development tools.  To do this, in a separate window or tab, follow the steps in [Install git, Visual Studio, and a preview channel of Microsoft Edge](../code-samples-links.md#install-git-visual-studio-and-a-preview-channel-of-microsoft-edge) in _Sample Code for WebView2_.
 
-### Install git
+1. Optionally install git, if you want to clone the samples repo rather than downloading it as a `.zip` file.
 
-1. If it's not already installed, [Download git](https://git-scm.com/downloads) and install it.  git will be used during cloning the `WebView2Samples` repo from GitHub, below.
+1. Install Microsoft Visual Studio (not Microsoft Visual Studio Code).
 
-
-### Install Visual Studio
-
-1. Install [Visual Studio](https://visualstudio.microsoft.com) 2015 or later (such as Visual Studio Professional 2022), with **C++ support** installed.
-
-   **Important:** This tutorial doesn't work with Microsoft **Visual Studio Code**; this tutorial is designed to use Microsoft **Visual Studio**.
-
-   If you are installing Visual Studio 2022, you can accept the defaults for now; you can click **Install**, and decline installing the Workloads at this time.
-
-   Initial setup of Visual Studio is done.  It's likely that additional Visual Studio setup dialogs will open later in this tutorial.
-
-
-### Install a preview channel of Microsoft Edge
-
-1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
-   *  Windows 7
-   *  Windows 8.1
-   *  Windows 10
-   *  Windows 11
-
-   We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
-
-
-### Install the WebView2 Runtime (optional)
-
-1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
-
-   If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
-
-   If you want more information about this decision now, in a new window or tab, see [Understand WebView2 SDK versions](../concepts/versioning.md).
+1. Install a preview channel of Microsoft Edge.
 
 Continue with the steps below.
 
 
 <!-- keep h2 section sync'd with code-samples-links.md's h2 section [foo](bar.md) -->
 <!-- ====================================================================== -->
-## Step 2 - Clone the WebView2Samples repo
-
-Now, we'll clone an existing project that contains a standard C++ Windows desktop application.  First, learn a little about this repo.
-
+## Step 2 - Clone or download the WebView2Samples repo
 
 ### Learn about the WebView2Samples repo
-
-1. In a new browser window or tab, briefly skim this top-level overview of the **WebView2Samples** repo: [Sample Code for WebView2](../code-samples-links.md).
 
 1. In a new browser window or tab, briefly explore the repo's directory layout online at GitHub: [https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).
 
@@ -90,76 +56,11 @@ Now, we'll clone an existing project that contains a standard C++ Windows deskto
 Then return here and continue with the steps below.
 
 
-### Obtain the URL for cloning the WebView2Samples repo
+### Clone or download the WebView2Samples repo
 
-You can download a `.zip` file snapshot of the entire repo, or of this tutorial's directory only; or, you can clone the entire repo, which enables you to update your copy using git commands or features.
+1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Clone or download the WebView2Samples repo](../code-samples-links.md#clone-or-download-the-webview2samples-repo) in _Sample Code for WebView2_.
 
-1. Open the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) in a new window or tab.
-
-1. Click the green **Code** button in the upper right of the GitHub repo, select **Clone**, and then click the **Copy** icon (or, select the HTTPS URL string in the text box and copy it).
-
-   ![Cloning the WebView2Samples repo.](../media/cloning-the-webview2-samples-repo.png)
-
-1. Decide which tool you want to use to locally clone (download) the repo:
-   *  Visual Studio
-   *  GitHub Desktop
-   *  Git Bash shell or command prompt
-
-
-Next, clone the GitHub repo to your local drive.  To do that, follow the appropriate steps below, for the tool you want to use.
-
-
-### Cloning the repo by using Visual Studio
-
-If you want to use Visual Studio to clone the GitHub repo to your local drive:
-
-1. In Visual Studio, select **File** > **Clone repository**.
-
-1. Enter the URL that you copied from the GitHub repo.
-
-1. From within the same dialog box, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
-
-   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
-
-You've cloned the repo to your local drive.  Skip to the next major section below.
-
-
-### Cloning the repo by using GitHub Desktop
-
-If you want to use GitHub Desktop to clone the GitHub repo to your local drive:
-
-1. Install [GitHub Desktop](https://desktop.github.com).
-
-1. In GitHub Desktop, select **File** > **Clone repository**.
-
-1. In Visual Studio or GitHub Desktop, enter the URL that you copied from the GitHub repo.
-
-1. From within the same dialog box, or in a file explorer utility, you can create a general-purpose root `git` or `GitHub` folder in a writeable location, then select that directory, so that the repo will be cloned there, as a new directory.
-
-   For example, you could create the repo in the parent folder: `C:\Users\myUserName\Documents\GitHub\`, so that the cloning operation will create the new directory `C:\Users\myUserName\Documents\GitHub\WebView2Samples`.
-
-You've cloned the repo to your local drive.  Skip to the next major section below.
-
-
-### Cloning the repo by using Git Bash shell or a command prompt
-
-If you instead want to clone the repo by using a Git Bash shell or command prompt:
-
-1. Clone the repo to your local drive, entering the URL string that you copied from the GitHub repo:
-
-   ```Shell
-   # example location where the repo directory will be added:
-   cd c:/users/myusername/documents/github/
-   git clone https://github.com/MicrosoftEdge/WebView2Samples.git
-   ```
-
-   ![Using the Git Bash shell to enter the git clone command in your desired local target git or GitHub repo directory.](../media/git-bash-git-clone-url-command.png)
-
-   The directory is created on your local drive, in the path you specified, such as in the following figure:
-
-   ![File Explorer showing the directory for the cloned WebView2Samples repo.](../media/file-explorer-cloned-webview2-samples-repo.png)
-
-You've cloned the repo to your local drive.  Continue with the steps below.
+Then return here after you've copied the repo to your local drive, and continue with the steps below.
 
 
 <!-- ====================================================================== -->
