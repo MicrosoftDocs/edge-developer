@@ -28,22 +28,25 @@ This article covers how to set up your development tools and create an initial W
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install git, Visual Studio, and a preview channel of Microsoft Edge
+## Step 1 - Install Visual Studio
 
-If these are not installed already, install the following development tools.  To do this, in a separate window or tab, follow the steps in [Install git, Visual Studio, and a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-git-visual-studio-and-a-preview-channel-of-microsoft-edge) in _Sample Code for WebView2_.
+This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code.
 
-1. Optionally install git, if you want to clone the samples repo rather than downloading it as a `.zip` file.
+1. If Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps there to do a basic default installation of Visual Studio.
 
-1. Install Microsoft Visual Studio (not Microsoft Visual Studio Code).
-
-1. Install a preview channel of Microsoft Edge.
-
-Continue with the steps below.
+Then continue below.
 
 
-<!-- keep h2 section sync'd with code-samples-links.md's h2 section [foo](bar.md) -->
 <!-- ====================================================================== -->
-## Step 2 - Clone or download the WebView2Samples repo
+## Step 2 - Install a preview channel of Microsoft Edge
+
+1. If it's not installed already, install a preview channel of Microsoft Edge.  To do that, in a new window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.
+
+Then continue below.
+
+
+<!-- ====================================================================== -->
+## Step 3 - Clone or download the WebView2Samples repo
 
 ### Learn about the WebView2Samples repo
 
@@ -64,7 +67,7 @@ Then return here after you've copied the repo to your local drive, and continue 
 
 
 <!-- ====================================================================== -->
-## Step 3 - Open the existing Win32 single-window app (WebView2GettingStarted.sln)
+## Step 4 - Open the existing Win32 single-window app (WebView2GettingStarted.sln)
 
 You start with a basic desktop project that contains a single main window.  We'll start with an existing app project from the **WebView2Samples** repo, which you cloned from GitHub in the previous step.
 
@@ -146,10 +149,7 @@ Visual Studio might display errors, because your project is missing the WebView2
 
 
 <!-- ====================================================================== -->
-## Step 4 - Install the Windows Implementation Library (WIL)
-
-
-### Learn about Windows Implementation Libraries (WIL)
+## Step 5 - Install the Windows Implementation Library (WIL)
 
 In a moment, you'll install the following tool, which makes working with COM easier for this tutorial:
 
@@ -211,7 +211,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Install the WebView2 SDK
+## Step 6 - Install the WebView2 SDK
 
 Next, you'll install the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
@@ -245,7 +245,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 6 - Optionally delete the WebView2 code from HelloWebView.cpp
+## Step 7 - Optionally delete the WebView2 code from HelloWebView.cpp
 
 If you want to follow the steps below to add the WebView2 code to `HelloWebView.cpp` yourself, delete the two blocks of WebView2 code, as follows:
 
@@ -343,7 +343,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 
 <!-- ====================================================================== -->
-## Step 7 - Include the WebView2.h header in HelloWebView.cpp
+## Step 8 - Include the WebView2.h header in HelloWebView.cpp
 
 Above, we did the following:
 
@@ -394,7 +394,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 8 - Build your empty sample app
+## Step 9 - Build your empty sample app
 
 1. Select **Debug** > **Start debugging** (`F5`) to build and run the project.
 
@@ -410,7 +410,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 9 - Add a WebView2 control in the parent window
+## Step 10 - Add a WebView2 control in the parent window
 
 Next, add a WebView2 control to the main window.
 
@@ -508,7 +508,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 10 - Navigation events
+## Step 11 - Navigation events
 
 In the previous step, we discussed navigating to URL by using the `ICoreWebView2::Navigate` method.  During navigation, WebView2 fires a sequence of events, which the host can listen for:
 
@@ -562,7 +562,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 11 - Scripting
+## Step 12 - Scripting
 
 Use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
 
@@ -603,7 +603,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 12 - Communication between host and web content
+## Step 13 - Communication between host and web content
 
 The host and the web content can also communicate with each other through the `postMessage` method.  The web content running within a WebView2 control can post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.
 
