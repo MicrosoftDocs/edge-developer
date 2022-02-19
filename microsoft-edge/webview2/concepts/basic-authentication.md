@@ -29,7 +29,7 @@ To build basic authentication into your WebView2 app:
 
 1. Do Z.  Handle success event.  Handle failure event.
 
-An HTTP server may require [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication). In this case there is a first navigation with all the same navigation events listed above. The HTTP server returns a 401 or 407 HTTP response and so the NavigationCompleted event has a corresponding failure. The WebView2 will then render a blank page and raise the `BasicAuthenticationRequested` event which will potentially prompt the end user for credentials.
+An HTTP server may require HTTP authentication.  In this case, there is a _first navigation_, which has the navigation events that are listed above.  The HTTP server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
 
 If the `BasicAuthenticationRequested` event is cancelled, then there is no subsequent navigation and the WebView2 will remain displaying the blank page.
 
@@ -43,7 +43,12 @@ The navigations<!--nav events?--> before and after the `BasicAuthenticationReque
 A _navigation_ corresponds to multiple navigation events.
 
 <!--
-keep this image-maintenance note:
+todo: re-create the below image in Visio, and store the .vsd file in Teams > Files, and describe the .vsd location here.
+-->
+
+<!--
+As long as this image is created using Edotor.net, keep this image-maintenance note.
+
 Source location for the image:
 
 reliable approach: paste the following code listing into https://edotor.net:
@@ -92,17 +97,11 @@ Add callouts (numbers) to each arrow to help communicate the sequence.
 
 ![The Microsoft Edge WebView2 Navigation Authentication Flow.](../media/navigation-auth-graph.png)
 
+
 <!-- ====================================================================== -->
 ## Example code
 
-<!--
-todo:
-is this a public URL?  If not, is there a public URL containing this listing?
-The following sample was created by expanding the sample [WebView2APISample > ScenarioAuthentication.cpp](https://dev.azure.com/microsoft/Edge/_search?text=BasicAuthenticationRequested%20path:third_party/edge_webview2/win/WebView2APISample&type=code&pageSize=25&filters=ProjectFilters{Edge}&action=contents&includeFacets=false&result=DefaultCollection/Edge/chromium.src/GBmain//third_party/edge_webview2/win/WebView2APISample/ScenarioAuthentication.cpp).
-<!-- the search-field string that produced the above url:
-`BasicAuthenticationRequested` path:third_party/edge_webview2/win/WebView2APISample - Search Code - Search (azure.com)
-The root url with some info is: https://dev.azure.com/microsoft/Edge
--->
+The following sample was created by expanding the sample [WebView2APISample repo > ScenarioAuthentication.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/d78d86f1646b6c652908f1e4bc2b64950f05ca0a/SampleApps/WebView2APISample/ScenarioAuthentication.cpp), from the WebView2Samples repo.
 
 That sample contains the following relevant code:
 
@@ -137,7 +136,9 @@ else {
 ```
 
 The following code adds to that sample, by adding the following features:
+
 *  Prompt the user for UI. <!-- what ui to do what?-->
+
 *  Call the `getDeferral()` method on the `event` argument.
 
 ```cpp
@@ -146,3 +147,9 @@ The following code adds to that sample, by adding the following features:
 // todo: Call the `getDeferral()` method on the `event` argument.
 
 ```
+
+
+<!-- ====================================================================== -->
+## See also
+
+*  [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) at MDN.
