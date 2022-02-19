@@ -824,6 +824,10 @@
               href: webview2/code-samples-links.md
               displayName: Sample Code for WebView2  # top-of-page title
 
+            - name: Setting up your Dev environment
+              href: webview2/how-to/machine-setup.md
+              displayName: Sample Code for WebView2  # top-of-page title
+
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
               displayName: 

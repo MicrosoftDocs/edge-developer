@@ -30,7 +30,7 @@ This article covers how to set up your development tools and create an initial W
 <!-- ====================================================================== -->
 ## Step 1 - Install git, Visual Studio, and a preview channel of Microsoft Edge
 
-If these are not installed already, install the following development tools.  To do this, in a separate window or tab, follow the steps in [Install git, Visual Studio, and a preview channel of Microsoft Edge](../code-samples-links.md#install-git-visual-studio-and-a-preview-channel-of-microsoft-edge) in _Sample Code for WebView2_.
+If these are not installed already, install the following development tools.  To do this, in a separate window or tab, follow the steps in [Install git, Visual Studio, and a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-git-visual-studio-and-a-preview-channel-of-microsoft-edge) in _Sample Code for WebView2_.
 
 1. Optionally install git, if you want to clone the samples repo rather than downloading it as a `.zip` file.
 
@@ -58,7 +58,7 @@ Then return here and continue with the steps below.
 
 ### Clone or download the WebView2Samples repo
 
-1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Clone or download the WebView2Samples repo](../code-samples-links.md#clone-or-download-the-webview2samples-repo) in _Sample Code for WebView2_.
+1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Clone or download the WebView2Samples repo](../how-to/machine-setup.md#clone-or-download-the-webview2samples-repo) in _Sample Code for WebView2_.
 
 Then return here after you've copied the repo to your local drive, and continue with the steps below.
 
