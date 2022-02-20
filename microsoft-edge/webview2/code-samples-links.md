@@ -43,7 +43,7 @@ The `WebView2Samples` repo includes comprehensive-API, platform-specific sample 
 
 1. Download or clone the `WebView2Samples` repo, as described in [Download the WebView2 samples repo](how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2 samples repo](how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
-1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
+1. In your resulting, local copy of the repo directory structure, find `*.sln` files.
 
 1. Open one of the `.sln` files.  For example, open your local copy of the multi-platform solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
 
@@ -107,11 +107,11 @@ To download or clone this repo, see [Set up your Dev environment for WebView2](h
 
 
 <!-- ====================================================================== -->
-## Local paths for all .sln and README.md files
+## Local paths for .sln and README.md files
 
 This section shows the path to every `.sln` and `README.md` file, resulting from downloading or cloning the repo to your local drive.
 
-The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files, all listed below.  When you download or clone the repo, you can then view any of these `README.md` files in Visual Studio.  Or, view them online at the GitHub repo.
+The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files, listed below.  When you download or clone the repo, you can then view any of these `README.md` files in Visual Studio.  Or, view them online at the GitHub repo.
 
 In the downloaded `.zip` file, the root directory is named `WebView2Samples-master` rather than `WebView2Samples`, representing the `master` branch of the repo.
 
@@ -182,7 +182,7 @@ These don't use `.sln` files.
 
 
 <!-- ====================================================================== -->
-## Downloaded repo directory adds "-master" to root directory name
+## Downloaded repo adds "-master" to root directory name
 
 For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
 
