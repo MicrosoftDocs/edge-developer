@@ -41,7 +41,7 @@ The `WebView2Samples` repo includes comprehensive-API, platform-specific sample 
 
 1. In a separate window or tab, see [WebView2Samples repo (README page)](https://github.com/MicrosoftEdge/WebView2Samples).
 
-1. Download or clone the `WebView2Samples` repo, as described in [Download or clone the WebView2 samples repo](how-to/machine-setup.md#download-or-clone-the-webview2samples-repo).
+1. Download or clone the `WebView2Samples` repo, as described in [Download the WebView2 samples repo](how-to/machine-setup.md#download-the-webview2samples-repo) or [Clone the WebView2 samples repo](how-to/machine-setup.md#clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
 
