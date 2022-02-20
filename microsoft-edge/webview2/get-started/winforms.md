@@ -436,7 +436,7 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 1. In the address bar, enter a URL that starts with `http`, such as `http://www.microsoft.com`, and then click the **Go!** button.
 
-   The http URL doesn't load; the Bing.com webpage remains displayed.  In contrast, entering http://www.microsoft.com into Microsoft Edge works; it redirects to the https site for Microsoft.com.
+   The http URL doesn't load; the Bing.com webpage remains displayed.  In contrast, entering `http://www.microsoft.com` into Microsoft Edge works; it redirects to the https site for Microsoft.com.
 
 1. In the address bar, enter a URL that starts with `https`, such as `https://www.microsoft.com`, and then click the **Go!** button.
 

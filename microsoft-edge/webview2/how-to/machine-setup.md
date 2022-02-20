@@ -176,7 +176,7 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 1. Open one of the `.sln` files.  For example, open your local copy of the multi-platform solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
 
-   ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects.](media/solution-file-webview2samples.png)
+   ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects.](media/machine-setup-solution-file-webview2samples.png)
 
 This particular `.sln` file doesn't include the Get Started projects, which are separate `.sln` files, one per platform.
 
@@ -234,7 +234,7 @@ When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo
 
    The Visual Studio installer runs, for the platform's workload:
 
-   ![Visual Studio installer for the .NET desktop development workload.](../media/visual-studio-installer-for-platform-workload.png).
+   ![Visual Studio installer, installing the .NET desktop development workload.](../media/visual-studio-installer-for-platform-workload.png).
 
    A Migration Report log file page might open, such as at `file:///C:/Users/username/Documents/WebView2Samples-master/WebView2Samples-master/SampleApps/UpgradeLog.htm`:
 
