@@ -11,19 +11,17 @@ ms.date: 10/28/2021
 # Navigation events for WebView2 apps
 <!-- old title: # Navigation events for WebView2 -->
 
-<!--todo: move the solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
-
 <!--
 maintenance links (keep)
+This, main page:
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
-
-* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-11---navigation-events)
+Derivative copies of this page's content, or links to this page:
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-12---navigation-events)
 * [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
-* [Get started with WebView2 in WPF apps](../get-started/winui.md#step-5---navigation-events)
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](../get-started/winui.md#step-7---navigation-events)
 * [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
 -->
-
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 

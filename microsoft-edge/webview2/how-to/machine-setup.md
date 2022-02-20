@@ -80,7 +80,11 @@ To download the repo (as a `.zip` file):
 
    ![The downloaded, unzipped WebView2Samples repo.](../media/downloaded-samples-repo-unzipped.png)
 
-1. Study the breakout of main directories.  `-master` is the name of the repo branch that this downloaded directory snapshot represents.
+1. Study the breakout of main directories.
+
+   `-master` is the name of the repo branch that this downloaded directory snapshot represents.  It is possible to switch to a different branch at GitHub and then download, for example, `WebView2Samples-smoketest-1.0.1054.27-prerelease-testing.zip`.  In that case, the downloaded `.zip` file is a snapshot of the `smoketest-1.0.1054.27-prerelease-testing` branch of the repo.  This documentation assumes that you downloaded the `master` branch of the repo.
+
+1. Recommended: Rename the root directory from `WebView2Samples-master` to `WebView2Samples`, to match the repo name and path.
 
 
 <!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
@@ -224,11 +228,15 @@ When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo
 
 
 <!--
-h2 sections to keep sync'd:
+maintenance links; keep:
 Main, central copy:
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 Secondary copies:
 [Install the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
+[Install the WebView2 SDK](../get-started/winforms.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WinForms apps_
+[Install the WebView2 SDK](../get-started/wpf.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WPF apps_
+[Install the WinUI 2 NuGet package](../get-started/winui2.md#step-5---install-the-winui-2-nuget-package) in _Get started with WebView2 in WinUI 2 (UWP) apps (public preview)_
+[Install the WebView2 SDK](../get-started/winui.md#step-4---install-the-webview2-sdk-for-the-project) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_
 -->
 <!-- ====================================================================== -->
 ## Install the WebView2 SDK

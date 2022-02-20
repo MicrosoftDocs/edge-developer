@@ -221,12 +221,8 @@ Windows Implementation Libraries (WIL) is now installed, along with Windows Runt
 Continue with the steps below.
 
 
-<!--
-h2 sections to keep sync'd:
-Main, central copy:
+<!-- maintenance link; keep: main copy:
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
-Secondary copies:
-[Install the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
 -->
 <!-- ====================================================================== -->
 ## Step 6 - Install the WebView2 SDK
@@ -557,14 +553,8 @@ Continue with the steps below.
 ## Step 12 - Navigation events
 
 <!--
-maintenance links (keep)
+maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
-
-* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-11---navigation-events)
-* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
-* [Get started with WebView2 in WPF apps](../get-started/winui.md#step-5---navigation-events)
-* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
 -->
 
 

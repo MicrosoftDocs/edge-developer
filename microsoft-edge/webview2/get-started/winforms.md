@@ -118,6 +118,9 @@ Start with a basic desktop project that contains a single main window.
 You now have an empty WinForms project that runs.  Next, set up the project to add WebView2 content.
 
 
+<!-- maintenance link; keep: main copy:
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+-->
 <!-- ====================================================================== -->
 ## Step 3 - Install the WebView2 SDK
 
@@ -368,14 +371,8 @@ Enable users to change the URL that the WebView2 control displays, by reading th
 ## Step 7 - Navigation events
 
 <!--
-maintenance links (keep)
+maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
-
-* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-11---navigation-events)
-* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
-* [Get started with WebView2 in WPF apps](../get-started/winui.md#step-5---navigation-events)
-* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
 -->
 
 
