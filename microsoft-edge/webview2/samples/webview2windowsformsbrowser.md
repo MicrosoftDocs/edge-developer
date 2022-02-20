@@ -1,5 +1,5 @@
 ---
-title: WinForms browser WebView2 sample
+title: "WebView2 sample: WinForms browser app"
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/18/2022
 ---
-# WinForms browser WebView2 sample
+# WebView2 sample: WinForms browser app
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 
