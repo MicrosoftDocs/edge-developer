@@ -131,7 +131,7 @@ Follow the major Step sections in sequence, below.
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 5 - Install the WinUI 2 NuGet package and the WebView2 SDK
+## Step 5 - Install WinUI 2 the WebView2 SDK
 
 1. Right-click the project in Solution Explorer, and then select **Manage NuGet Packages**.
 
