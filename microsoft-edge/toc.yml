@@ -804,42 +804,46 @@
               displayName: Sample Code for WebView2  # top-of-page title
 
 # comprehensive API samples, in alpha order of downloaded repo directories
-            - name: UWP WinUi2 browser app
-              href: webview2/samples/webview2_sample_uwp.md
-              displayName: 
+            - name: Comprehensive API samples
+              items:
+                - name: UWP WinUi2 browser app
+                  href: webview2/samples/webview2_sample_uwp.md
+                  displayName: 
 
-            - name: Win32 C++ app with WebView2 features
-              href: webview2/samples/webview2apissample.md
-              displayName: 
+                - name: Win32 C++ app with WebView2 features
+                  href: webview2/samples/webview2apissample.md
+                  displayName: 
 
-            - name: Win32 C++ app with Visual Composition and WebView2 features
-              href: webview2/samples/webview2samplewincomp.md
-              displayName: 
+                - name: Win32 C++ app with Visual Composition and WebView2 features
+                  href: webview2/samples/webview2samplewincomp.md
+                  displayName: 
 
-            - name: WinForms browser app with WebView2 features
-              href: webview2/samples/webview2windowsformsbrowser.md
-              displayName: 
+                - name: WinForms browser app with WebView2 features
+                  href: webview2/samples/webview2windowsformsbrowser.md
+                  displayName: 
 
-            - name: WPF .NET browser app with WebView2 features
-              href: webview2/samples/webview2wpfbrowser.md
-              displayName: 
+                - name: WPF .NET browser app with WebView2 features
+                  href: webview2/samples/webview2wpfbrowser.md
+                  displayName: 
 
-            - name: CDP extension to use Chrome DevTools Protocol in a WPF app
-              href: webview2/samples/wv2cdpextensionwpfsample.md
-              displayName: 
+                - name: CDP extension to use Chrome DevTools Protocol in a WPF app
+                  href: webview2/samples/wv2cdpextensionwpfsample.md
+                  displayName: 
 
 # deployment samples
-            - name: WebView2 Deployment Visual Studio installer
-              href: webview2/samples/wv2deploymentvsinstallersample.md
-              displayName: 
+            - name: Deployment samples
+              items:
+                - name: WebView2 Deployment Visual Studio installer
+                  href: webview2/samples/wv2deploymentvsinstallersample.md
+                  displayName: 
 
-            - name: WiX Burn Bundle to deploy the Runtime
-              href: webview2/samples/wv2deploymentwixburnbundlesample.md
-              displayName: 
+                - name: WiX Burn Bundle to deploy the Runtime
+                  href: webview2/samples/wv2deploymentwixburnbundlesample.md
+                  displayName: 
 
-            - name: WiX Custom Action to deploy the Runtime
-              href: webview2/samples/wv2deploymentwixcustomactionsample.md
-              displayName: 
+                - name: WiX Custom Action to deploy the Runtime
+                  href: webview2/samples/wv2deploymentwixcustomactionsample.md
+                  displayName: 
 
 # -----------------------------------------------------------------------------
         - name: "Tutorial: Create a WebView2 app"
