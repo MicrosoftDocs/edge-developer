@@ -42,12 +42,12 @@ We recommend using the Canary channel.  The minimum required version is 82.0.488
 
 If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
 
-If you want more information about this decision now, see [Understand the different WebView2 SDK versions](../concepts/versioning.md).
+See [Understand the different WebView2 SDK versions](../concepts/versioning.md).
 
 
-<!-- The h3 section [Download or clone the WebView2Samples repo](get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
+<!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
 <!-- ====================================================================== -->
-## Download or clone the WebView2Samples repo
+## Download the WebView2Samples repo
 
 You can download the repo as a `.zip` file, or clone the repo.
 
@@ -55,13 +55,6 @@ You can download the repo as a `.zip` file, or clone the repo.
 
 *  If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
 
-![Cloning or downloading the WebView2Samples repo.](../media/cloning-the-webview2-samples-repo-samples-article.png)
-
-
-<!-- ====================================================================== -->
-## Download the WebView2Samples repo
-
-You can either download or clone the `WebView2Samples` repo.
 
 To download the repo (as a `.zip` file):
 
@@ -90,10 +83,16 @@ To download the repo (as a `.zip` file):
 1. Study the breakout of main directories.  `-master` is the name of the repo branch that this downloaded directory snapshot represents.
 
 
+<!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
 <!-- ====================================================================== -->
 ## Clone the WebView2Samples repo
 
-You can either Download or clone the `WebView2Samples` repo.
+You can download the repo as a `.zip` file, or clone the repo.
+
+*  If you download the repo (as a `.zip` file), you get a snapshot copy of the repo.  You can then download another, updated copy of the repo later.
+
+*  If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
+
 
 To clone the `WebView2Samples` repo, you must first install git.  You can download the repo, as described above, or clone it.
 
