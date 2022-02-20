@@ -211,11 +211,11 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
 1. Press **F5** to build and run the project.
 
-   The WebView2 control displays content from https://www.microsoft.com, in a WebView2 control in the Windows Forms form, with a **Skip to main content** link:
+   The WebView2 control displays content from https://www.microsoft.com, in a WebView2 control in the Windows Forms form, with a **Skip to main content** link if you pressed `Alt`+`Tab` to switch to the window:
 
-   ![The sample app displays the Microsoft website.](media/winforms-hello-webview.png)
+   ![The sample app displays the Microsoft website.](media/winforms-hello-webview-skip-to-main-content.png)
 
-1. Click the **Skip to main content** link.
+1. If needed, click the **Skip to main content** link.
 
    The WebView2 control displays content from https://www.microsoft.com, in a WebView2 control in the Windows Forms form:
 
@@ -236,7 +236,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 1. In the **Toolbox**, click **Common Controls**.
 
 
-   Add a text box, as follows:
+   **Add a text box control, as follows:**
 
 1. Drag the **TextBox** control onto the **Form1.cs** Form Designer canvas.
 
@@ -245,7 +245,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 1. In the **Properties** panel, in the **Design** section, change the **(Name)** (probably from **textBox1**) to **addressBar**.
 
 
-   Add a text box, as follows:
+   **Add a button control, as follows:**
 
 1. Drag a **Button** control onto the **Form1.cs** Form Designer canvas.
 
@@ -256,7 +256,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 1. In the **Properties** panel, in the bolded **Appearance** section (about 15 properties down), change the **Text** property (probably from **button1**) to **Go!**
 
 
-   Align the text box and button, as follows:
+   **Align the text box and button, as follows:**
 
 1. Arrange the text box to the left of the button, aligned next to the text box, as shown below:
 
@@ -478,9 +478,11 @@ For example, add a script that sends an alert when a user navigates to a non-HTT
 
 1. Press **F5** to build and run the project.
 
-   The app displays an alert when you go to a website that doesn't use HTTPS:
+1. Try to go to `http://www.bing.com` (with `http` instead of `https` prefix).
 
-   ![https.](media/winforms-https.png)
+   The app displays an alert:
+
+   ![An http alert, that says try https instead.](media/winforms-https.png)
 
 
 <!-- ====================================================================== -->
@@ -535,8 +537,10 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
    ```
 
    Next, for WebView2 to send and respond to the web message, after `CoreWebView2` is initialized, the host will inject a script in the web content to:
-   *  Send the URL to the host using `postMessage`.
-   *  Register an event handler to print a message sent from the host.
+ 
+  *  Send the URL to the host using `postMessage`.
+
+   *  Register an event handler to display a message sent from the host, in an alert box, before displaying webpage content.
 
 1. In `Form1.cs`, update `InitializeAsync` to match the following code:
 
@@ -555,13 +559,21 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
 1. Press **F5** to build and run the project.
 
-1. Enter a new URL other than the default (`https://www.microsoft.com`), such as `https://docs.microsoft.com`.  When you open a new URL, the WebView2 control displays the new URL in the address bar, and webpage content from the URL is displayed in the WebView2 control in the WinForms window.
+1. Enter a URL, such as `https://www.bing.com`:
+
+   ![The updated address bar URL initially is displayed in an alert box.](media/winforms-update-addr-bar-alert.png)
+
+   An alert initially appears, showing the resulting URL that's sent from the host website.
+
+1. Click the **OK** button.
+
+   The WebView2 control now displays the new URL in the address bar, and webpage content from the URL is displayed in the WebView2 control in the WinForms window:
 
    ![The application displays the URL in the address bar.](media/winforms-final-app.png)
 
    * When the app starts, the default URL is `https://www.microsoft.com`, and the resulting displayed address shows the locale, such as `https://www.microsoft.com/en-us/`.
 
-   * If you enter `https://docs.microsoft.com`, the resulting address has a locale suffix, which is displayed in the address bar, such as `https://docs.microsoft.com/en-us/`.
+   * If you enter `https://www.bing.com`, the resulting address is a variant, such as `https://www4.bing.com/?form=DCDN`.
 
 Congratulations, you built your first WebView2 app!
 
