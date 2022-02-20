@@ -791,6 +791,18 @@
         - name: Introduction to Microsoft Edge WebView2
           href: webview2/index.md
           displayName:  # add alt lookup words, comma-delimited
+
+# -----------------------------------------------------------------------------
+        - name: Setup and sample code
+          items:
+            - name: Set up your Dev environment  # new article
+              href: webview2/how-to/machine-setup.md
+              displayName: Sample Code for WebView2  # top-of-page title
+
+            - name: Sample Code
+              href: webview2/code-samples-links.md
+              displayName: Sample Code for WebView2  # top-of-page title
+
 # -----------------------------------------------------------------------------
         - name: "Tutorial: Create a WebView2 app"
           items:
@@ -817,17 +829,10 @@
             - name: WPF
               href: webview2/get-started/wpf.md
               displayName: Get started with WebView2 in WPF apps  # top-of-page title
+
 # -----------------------------------------------------------------------------
         - name: Fundamentals
           items:
-            - name: Sample Code
-              href: webview2/code-samples-links.md
-              displayName: Sample Code for WebView2  # top-of-page title
-
-            - name: Set up your Dev environment
-              href: webview2/how-to/machine-setup.md
-              displayName: Sample Code for WebView2  # top-of-page title
-
             - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
               displayName: 

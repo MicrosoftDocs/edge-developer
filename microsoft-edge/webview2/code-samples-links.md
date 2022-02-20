@@ -17,13 +17,13 @@ standard order:
 3. platform-specific comprehensive-API `.sln` files
 -->
 
-This article is about understanding what samples, `.sln` files, and `README.md` files are in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) repo.
+This article is about understanding what samples, `.sln` files, and `README.md` files are in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 
 <!-- ====================================================================== -->
 ## Sample code for Get Started guides
 
-The WebView2 Get Started guides use starter code for Win32, Windows Presentation Foundation (WPF), WinForms, and WinUI.  These are not comprehensive-API examples, but only demonstrate a few API items.
+The WebView2 Get Started guides help you create the same completed, working projects as are in the `WebView2Samples` repo, which you can download or clone.  These are not comprehensive API examples, but only demonstrate a few API items.
 
 | Platform | Article | Code |
 |---|---|---|
