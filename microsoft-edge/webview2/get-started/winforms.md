@@ -213,7 +213,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
    The WebView2 control displays content from https://www.microsoft.com, in a WebView2 control in the Windows Forms form, with a **Skip to main content** link if you pressed `Alt`+`Tab` to switch to the window:
 
-   ![The sample app displays the Microsoft website.](media/winforms-hello-webview-skip-to-main-content.png)
+   ![Alt+Tab causes the sample app to initially display a 'Skip to main content' link.](media/winforms-hello-webview-skip-to-main-content.png)
 
 1. If needed, click the **Skip to main content** link.
 
