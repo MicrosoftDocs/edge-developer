@@ -120,9 +120,9 @@ The **WebView2GettingStarted** solution opens in Visual Studio.  The solution co
 
    ![The 'WebView2GettingStarted.sln' file from the cloned or downloaded WebView2 repo, opened in Visual Studio, in Solution Explorer.](../media/webview2gettingstarted-sln-in-solution-explorer.png)
 
-The above screenshot shows some WebView2 code (`#include "WebView2.h"`), that's already present in the file immediately after cloning (downloading) the repo.  Previously, that code was not added in the repo yet.  But now, all of the code for the present tutorial is already present in the repo.  This means that you don't actually need to do the copy/paste operations later in this tutorial.
+The above screenshot shows some WebView2 code (`#include "WebView2.h"`), that's already present in the file immediately after cloning (downloading) the repo.
 
-To confirm that the header lines are already already present in the repo: in a different window or tab, see [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp).
+<!-- To confirm that the header lines are already already present in the repo: in a different window or tab, see [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp). -->
 
 
 ### Set the solution to use the Win10 SDK and Visual Studio toolset
@@ -159,6 +159,8 @@ Visual Studio might display errors, because your project is missing the WebView2
 <!-- ====================================================================== -->
 ## Step 5 - Install the Windows Implementation Library (WIL)
 
+<!-- todo: is WIL already installed into the project at the repo? -->
+
 In a moment, you'll install the following tool, which makes working with COM easier for this tutorial:
 
 *  **Windows Implementation Libraries (WIL)** - A header-only C++ library to make life easier for developers on Windows through readable, type-safe C++ interfaces for common Windows coding patterns.
@@ -166,6 +168,7 @@ In a moment, you'll install the following tool, which makes working with COM eas
 This tutorial also uses:
 
 *  **Windows Runtime C++ Template Library (WRL)** - A template library that provides a low-level way to author and use Windows Runtime components.
+
 
 This tooling setup step wasn't performed before cloning or downloading the solution, because this setup step requires that the cloned or downloaded solution be opened in Visual Studio.  With this approach, we install the **Microsoft.Windows.ImplementationLibrary** NuGet package through Solution Explorer in Visual Studio, through the **WebView2GettingStarted** _project_ (not the solution with the same name).
 
@@ -221,6 +224,8 @@ Continue with the steps below.
 <!-- ====================================================================== -->
 ## Step 6 - Install the WebView2 SDK
 
+<!-- todo: is WebView SDK already installed into the project at the repo? -->
+
 Next, you'll install the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
 Install the WebView2 SDK, as follows:
@@ -241,7 +246,28 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Optionally delete the WebView2 code from HelloWebView.cpp
+## Step 7 - Run the finished project
+
+At this point, your Dev environment is set up to run Win32 WebView2 apps in debug mode in Visual Studio and add WebView2 features.  To confirm that your system is set up for WebView2 coding, run the project in Debug mode, as follows:
+
+1. Select **Debug** > **Start debugging** (`F5`) to build and run the project.
+
+   The sample app first opens a pop-up window, which displays the URL that will be loaded, along with an **OK** button:
+
+   ![The sample app displays a pop-up window with URL and OK button over an empty WebView2 window.](../media/show-url.png)
+
+1. Click the **OK** button to dismiss the pop-window and continue to the URL:
+
+   The WebView2 window now displays webpage content: the Bing website, `http://www.bing.com`.
+
+   <!-- instance 3 of bing-window.png -->
+   ![The sample app now displays the Bing website.](../media/bing-window.png)
+
+1. Close the **WebView sample** window.
+
+
+<!-- ====================================================================== -->
+## Step 8 - Optionally delete the WebView2 code from HelloWebView.cpp
 
 If you want to follow the steps below to add the WebView2 code to `HelloWebView.cpp` yourself, delete the two blocks of WebView2 code, as follows:
 
@@ -339,7 +365,7 @@ CreateCoreWebView2EnvironmentWithOptions(nullptr, nullptr, nullptr,
 
 
 <!-- ====================================================================== -->
-## Step 8 - Include the WebView2.h header in HelloWebView.cpp
+## Step 9 - Include the WebView2.h header in HelloWebView.cpp
 
 Above, we did the following:
 
@@ -390,7 +416,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build your empty sample app
+## Step 10 - Build your empty sample app
 
 1. Select **Debug** > **Start debugging** (`F5`) to build and run the project.
 
@@ -406,7 +432,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 10 - Add a WebView2 control in the parent window
+## Step 11 - Add a WebView2 control in the parent window
 
 Next, add a WebView2 control to the main window.
 
@@ -481,7 +507,7 @@ Now to do the above, in the callback, you'll:
       }).Get());
    ```
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
 
 ### Build your Bing sample app
@@ -504,7 +530,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 11 - Navigation events
+## Step 12 - Navigation events
 
 <!--
 maintenance links (keep)
@@ -570,7 +596,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 12 - Scripting
+## Step 13 - Scripting
 
 Use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
 
@@ -594,7 +620,7 @@ The injected JavaScript is run with specific timing:
       }).Get());
    ```
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
    Now, WebView2 freezes the `Object` and returns the page document once.
 
@@ -611,7 +637,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 13 - Communication between host and web content
+## Step 14 - Communication between host and web content
 
 The host and the web content can also communicate with each other through the `postMessage` method.  The web content running within a WebView2 control can post to the host through the `window.chrome.webview.postMessage` method, and the message is handled by any registered `ICoreWebView2WebMessageReceivedEventHandler` event handler on the host.
 
@@ -656,7 +682,7 @@ As an example to understand the mechanism, the following steps occur when you tr
    nullptr);
    ```
 
-1. Select **File** > **Save All (Ctrl+Shift+S)** to save the project.
+1. Select **File** > **Save All** (`Ctrl`+`Shift`+`S`) to save the project.
 
 1. Press **F5** to build and run the project.
 
