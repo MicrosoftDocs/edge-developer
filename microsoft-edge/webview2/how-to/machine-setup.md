@@ -235,8 +235,8 @@ Secondary copies:
 [Install the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
 [Install the WebView2 SDK](../get-started/winforms.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WinForms apps_
 [Install the WebView2 SDK](../get-started/wpf.md#step-3---install-the-webview2-sdk) in _Get started with WebView2 in WPF apps_
-[Install the WinUI 2 NuGet package](../get-started/winui2.md#step-5---install-the-winui-2-nuget-package) in _Get started with WebView2 in WinUI 2 (UWP) apps (public preview)_
-[Install the WebView2 SDK](../get-started/winui.md#step-4---install-the-webview2-sdk-for-the-project) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_
+[Install the WebView2 SDK](../get-started/winui2.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in WinUI 2 (UWP) apps (public preview)_
+[Install the WebView2 SDK](../get-started/winui.md#step-4---install-the-webview2-sdk) in _Get started with WebView2 in WinUI 3 (Windows App SDK) apps_
 -->
 <!-- ====================================================================== -->
 ## Install the WebView2 SDK
@@ -266,13 +266,11 @@ Install the WebView2 SDK, as follows:
 
 1. On the right of the search bar, clear the **Include prerelease** checkbox (unless you know that you want a prerelease version of the SDK).
 
-1. In the search bar in the upper left, type `Microsoft.Web.WebView2`.  Or, copy and paste the single-line code block below.  Then select **Microsoft.Web.WebView2**.
+1. In the search bar in the upper left, type **Microsoft.Web.WebView2**.
 
-   ```
-   Microsoft.Web.WebView2
-   ```
+1. Below the search bar, click the **Microsoft.Web.WebView2** card.
 
-1. In the right-hand side window, click **Install** (or **Update**).  NuGet downloads the WebView2 SDK to your machine.
+1. In the right-hand pane, click the **Install** (or **Update**) button.  NuGet downloads the WebView2 SDK to your machine, for use by this project.
 
    ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio.](../media/nuget.png)
 

@@ -100,11 +100,13 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 4 - Install the WebView2 SDK for the project
+## Step 4 - Install the WebView2 SDK
 
-This step is just a note.  The WebView2 SDK is automatically installed in the above step, because it's as a dependency for the WinUI 3 control.
+The WebView2 SDK is automatically installed in the above step, because it's as a dependency for the WinUI package that you installed.  Confirm that the WebView2 SDK is installed for the project, as follows:
 
-1. If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_, and follow the steps  Return from that page and continue the steps below.
+1. In the **NuGet Package Manager**, which you opened in the previous step, make sure the **Include prerelease** checkbox is selected.  Search for **Microsoft.Web.WebView2** (prerelease) and then click its card below the search box.  If needed, on the right, click the  **Install** (or **Update**) button.
+
+If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_, and follow the steps.  Return from that page and continue the steps below.
 
 
 <!-- ====================================================================== -->

@@ -43,7 +43,7 @@ Follow the major Step sections in sequence, below.
 <!-- ====================================================================== -->
 ## Step 1 - Download a preview channel of Microsoft Edge
 
-1. Take a quick look at the NuGet page for the [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001), but you don't need to install it yet.<!--confirm-->  This package has a dependency on a prerelease WebView2 package.
+1. Take a quick look at the NuGet page for the [WinUI 2 package](https://www.nuget.org/packages/Microsoft.UI.Xaml/2.8.0-prerelease.210927001), but you don't need to install it yet.<!--confirm-->  This package has a dependency on a _prerelease_ WebView2 SDK NuGet package.
 
    For full API compatibility of the NuGet package and WebView2 Runtime, use a preview browser channel as your runtime, such as the Beta, Dev, or Canary channel of Microsoft Edge, as follows.
 
@@ -127,11 +127,8 @@ Follow the major Step sections in sequence, below.
    ![The resulting project.](media/new-project-created.msft.png)
 
 
-<!-- maintenance link; keep: main copy:
-[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
--->
 <!-- ====================================================================== -->
-## Step 5 - Install WinUI 2 the WebView2 SDK
+## Step 5 - Install WinUI 2
 
 1. Right-click the project in Solution Explorer, and then select **Manage NuGet Packages**.
 
@@ -139,25 +136,34 @@ Follow the major Step sections in sequence, below.
 
 1. Select the **Include prerelease** check box.
 
-1. In the **Search** box, enter `Microsoft.UI.Xaml`, and then select **Microsoft.UI.Xaml**.  Make sure that the **Version** is the latest prerelease, and then select **Install**:
+1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select **Microsoft.UI.Xaml**.  Make sure that the **Version** is the latest prerelease, and then click the  **Install** (or **Update**) button:
 
    ![The NuGet package manager.](media/winui2-nuget-package.msft.png)
 
-   The **Preview Changes** dialog box appears.
+   **Microsoft.UI.Xaml** here is equivalent to WinUI 2.  The **Preview Changes** dialog box appears.
 
 1. Click **OK**.
-
-   The WebView2 SDK is installed with WinUI 2, because the WebView2 SDK is a dependency for WinUI 2.  If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Then return to this page and continue below.
-
-   <!-- "Microsoft.UI.Xaml" here is equiv to WinUI 2; same team -->
 
 1. The **License Acceptance** dialog box appears.  Click **I Accept**.  The `readme.txt` file is displayed.
 
 <!-- note: install halted after only WinUI 2 component, it didn't seem to install WebView2 even though that was the 2nd item listed.  assume that's ok now on test machine. -->
 
 
+<!-- maintenance link; keep: main copy:
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+-->
 <!-- ====================================================================== -->
-## Step 6 - Instantiate the WebView2 control in XAML code
+## Step 6 - Install the WebView2 SDK
+
+The WebView2 SDK is automatically installed in the above step, because it's as a dependency for the WinUI package that you installed.  Confirm that the WebView2 SDK is installed for the project, as follows:
+
+1. In the **NuGet Package Manager**, which you opened in the previous step, make sure the **Include prerelease** checkbox is selected.  Search for **Microsoft.Web.WebView2** (prerelease) and then click its card below the search box.  If needed, on the right, click the  **Install** (or **Update**) button.
+
+If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_, and follow the steps.  Return from that page and continue the steps below.
+
+
+<!-- ====================================================================== -->
+## Step 7 - Instantiate the WebView2 control in XAML code
 
 ### Add the project reference for the WebView2 control
 
@@ -201,7 +207,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 7 - Navigation events
+## Step 8 - Navigation events
 
 Next, learn about navigation events, which are essential for WebView2 apps.
 
