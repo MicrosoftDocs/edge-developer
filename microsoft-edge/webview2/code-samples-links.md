@@ -41,7 +41,7 @@ The `WebView2Samples` repo includes comprehensive-API, platform-specific sample 
 
 1. In a separate window or tab, see [WebView2Samples repo (README page)](https://github.com/MicrosoftEdge/WebView2Samples).
 
-1. Clone or download the `WebView2Samples` repo, as described in [Clone or download the WebView2 samples repo](how-to/machine-setup.md#clone-or-download-the-webview2samples-repo).
+1. Download or clone the `WebView2Samples` repo, as described in [Download or clone the WebView2 samples repo](how-to/machine-setup.md#download-or-clone-the-webview2samples-repo).
 
 1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
 
@@ -99,7 +99,7 @@ The `WebView2Samples` repo has two main parts:
 *  A set of comprehensive-API, platform-specific samples (each with its own directory and `.sln` file), including a multi-platform, comprehensive-API `.sln` file.
 
 
-To clone or download this repo, see [Set up your Dev environment for WebView2](how-to/machine-setup.md).
+To download or clone this repo, see [Set up your Dev environment for WebView2](how-to/machine-setup.md).
 
 *  If you clone the repo, you can update your local copy using git commands or features of various Dev apps.
 
@@ -111,7 +111,7 @@ To clone or download this repo, see [Set up your Dev environment for WebView2](h
 
 This section shows the path to every `.sln` and `README.md` file, resulting from downloading or cloning the repo to your local drive.
 
-The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files, all listed below.  When you clone or download the repo, you can then view any of these `README.md` files in Visual Studio.  Or, view them online at the GitHub repo.
+The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files, all listed below.  When you download or clone the repo, you can then view any of these `README.md` files in Visual Studio.  Or, view them online at the GitHub repo.
 
 In the downloaded `.zip` file, the root directory is named `WebView2Samples-master` rather than `WebView2Samples`, representing the `master` branch of the repo.
 

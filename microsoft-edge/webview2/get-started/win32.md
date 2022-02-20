@@ -54,7 +54,7 @@ Then continue below.
 
 
 <!-- ====================================================================== -->
-## Step 3 - Clone or download the WebView2Samples repo
+## Step 3 - Download or clone the WebView2Samples repo
 
 ### Learn about the WebView2Samples repo
 
@@ -67,9 +67,9 @@ Then continue below.
 Then return here and continue with the steps below.
 
 
-### Clone or download the WebView2Samples repo
+### Download or clone the WebView2Samples repo
 
-1. If you haven't already, clone or download the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Clone or download the WebView2Samples repo](../how-to/machine-setup.md#clone-or-download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
+1. If you haven't already, download or clone the `WebView2Samples` repo.  To do this, in a separate window or tab, follow the steps in [Download or clone the WebView2Samples repo](../how-to/machine-setup.md#download-or-clone-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.
 
 Then return here after you've copied the repo to your local drive, and continue with the steps below.
 
