@@ -175,13 +175,22 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
 After you download or clone the `WebView2Samples` repo, open a `.sln` file in Visual Studio.
 
-1. In your local copy of the repo directory structure, locate a `.sln` file.  See [Local paths for all .sln and README.md files](../code-samples-links.md#local-paths-for-sln-and-readmemd-files) in _Sample Code for WebView2_.
+1. In your local copy of the repo directory structure, locate a `.sln` file.  See [Local paths for all .sln and README.md files](../code-samples-links.md#local-paths-for-sln-and-readmemd-files) in _Sample Code for WebView2_.  The [top-level README file in the WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme) gives a similar overview.
 
 1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
 
 1. Open one of the `.sln` files.  For example, open your local copy of the main Win32 solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following projects:
 
    ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects.](media/machine-setup-solution-file-webview2samples.png)
+
+
+For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
+
+*  A platform-specific `.sln` file in a subdirectory of the `GettingStartedGuides` directory.  These match the Get Started tutorials and are completed examples that demonstrate a couple API features.
+
+*  The Win32 `.sln` file containing multiple platform projects, in the `SampleApps` directory.  This is a comprehensive API demonstration.
+
+*  A platform-specific `.sln` file in a subdirectory of the `SampleApps` directory.  These are comprehensive API demonstrations.
 
 
 <!-- ====================================================================== -->

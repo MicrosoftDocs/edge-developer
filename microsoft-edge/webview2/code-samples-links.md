@@ -181,19 +181,9 @@ These don't use `.sln` files.
 *  [WebView2Samples/SampleApps/WV2DeploymentVSInstallerSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme)
 
 
-<!-- ====================================================================== -->
-## Downloaded repo adds "-master" to root directory name
+**Downloaded repo has longer root directory name**
 
-For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
-
-*  The multi-platform solution in the `SampleApps` directory.
-*  A platform-specific solution in the `SampleApps` directory.
-*  A platform-specific solution in the `GettingStartedGuides` directory.
-
-This is described in the [top-level README file in the WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme).
-
-
-If you download the repo (as a `.zip` file), the root directory name has `-master` appended.
+If you download the repo (as a `.zip` file), the root directory name has `-master` appended.  To match the name of the repo (`WebView2Samples`), you can rename the root directory.
 
 
 The Win32-specific solution in the `GettingStartedGuides` directory has the path:
