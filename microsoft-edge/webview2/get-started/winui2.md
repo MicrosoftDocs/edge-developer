@@ -12,11 +12,12 @@ ms.date: 11/05/2021
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 2 (UWP), and learn about WebView2 concepts along the way.
 
-<!--
-todo: 
-reformat entire article as a series of h2 Step sections starting at 1, each containing action steps
-use strictly controlled linking - only provide a hyperlink if it's in an instruction-step that says what to do with the link
+<!-- todo:
+Reformat article as a flat series of h2 Step sections starting at 1, each containing flat list of action steps.
+Use strictly controlled linking - only provide a hyperlink if it's in an instruction-step that says what to do with the link.
 -->
+<!--todo: move any lengthy, solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
+
 
 Follow the major Step sections in sequence, below.
 
@@ -203,6 +204,23 @@ The WebView2 WinUI 2 control is in development.  The following features are miss
 1. In Visual Studio, click **Debug** > **Stop Debugging** to close the app window.
 
 Now you can change the content of the WebView2 control to add your own content.
+
+
+<!-- ====================================================================== -->
+<!-- ## Step 9 - Navigation events -->
+
+<!-- is a navigation events major step section needed in this .md file? -->
+
+<!--
+maintenance links (keep)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-11---navigation-events)
+* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WPF apps](../get-started/winui.md#step-5---navigation-events)
+* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
+-->
 
 
 <!-- ====================================================================== -->

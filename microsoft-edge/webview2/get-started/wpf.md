@@ -13,6 +13,9 @@ ms.date: 11/05/2021
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
 
+<!--todo: move any lengthy, solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
+
+
 <!-- ====================================================================== -->
 ## Step 1 - Install developer tools for WebView2 apps
 
@@ -84,7 +87,10 @@ Use NuGet to add the WebView2 SDK to the project.
 
 1. In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**:
 
-   :::image type="content" source="./media/wpf-getting-started-mng-nuget-reduced.png" alt-text="The 'Manage NuGet packages' command on the right-click menu.":::
+   :::image type="content" source="media/wpf-getting-started-mng-nuget.png" alt-text="The 'Manage NuGet packages' command on the right-click menu.":::
+
+   <!-- todo: The above image is supposed to show the WPF project instead of the WinForms project.  generally, avoid sharing images across multiple .md files -->
+   _(The above image is supposed to show the WPF project instead of the WinForms project.)_
 
 1. In the upper left, click the **Browse** tab.  In the search bar, type `Microsoft.Web.WebView2`, then click the **Microsoft.Web.WebView2** card.
 
@@ -248,6 +254,17 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
 <!-- ====================================================================== -->
 ## Step 6 - Navigation events
+
+<!--
+maintenance links (keep)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-11---navigation-events)
+* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WPF apps](../get-started/winui.md#step-5---navigation-events)
+* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
+-->
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events:
 

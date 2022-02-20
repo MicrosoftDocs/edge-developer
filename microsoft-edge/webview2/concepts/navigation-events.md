@@ -11,13 +11,25 @@ ms.date: 10/28/2021
 # Navigation events for WebView2 apps
 <!-- old title: # Navigation events for WebView2 -->
 
+<!--todo: move the solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
+
+<!--
+maintenance links (keep)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-11---navigation-events)
+* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WPF apps](../get-started/winui.md#step-5---navigation-events)
+* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
+-->
+
+
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
 This article covers navigation events for WebView2 apps.  Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.
 
 For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
-
-<!--todo: Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide. -->
 
 The normal sequence of navigation events is:
 1. `NavigationStarting`

@@ -13,6 +13,9 @@ ms.date: 11/05/2021
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
 
 
+<!--todo: move the solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
+
+
 <!-- ====================================================================== -->
 ## Step 1 - Set up the development environment
 
@@ -209,6 +212,17 @@ To allow users to control the webpage that is displayed in your WebView2 control
 
 <!-- ====================================================================== -->
 ## Step 5 - Navigation events
+
+<!--
+maintenance links (keep)
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-11---navigation-events)
+* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WPF apps](../get-started/winui.md#step-5---navigation-events)
+* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
+-->
 
 In this section, you add code to import the WebView2 Core library.
 

@@ -10,13 +10,33 @@ ms.date: 10/21/2021
 ---
 # Sample Code for WebView2
 
+<!--
+standard order:
+1. platform-specific Get Started `.sln` files
+2. multi-platform, comprehensive-API `.sln` file
+3. platform-specific comprehensive-API `.sln` files
+-->
+
 This article is about understanding what samples, `.sln` files, and `README.md` files are in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) repo.
 
-The repo has two main parts:
 
-*  A set of Get Started solutions (`.sln` files and their various project files).  Generally, there is a README.md file for each `.sln` file; most of them are very short.  Most documentation is in the present set of articles.
+<!-- ====================================================================== -->
+## Directory structure of the WebView2Samples repo
 
-*  A set of samples for several platforms.
+For general initial Dev environment setup, you can open any of the `.sln` files from the `WebView2Samples` repo:
+
+*  One of the four platform-specific `.sln` files in the [GettingStartedGuides directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides).
+
+*  The multi-platform, comprehensive-API `.sln` file in the [SampleApps directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).  Has a long [WebView2 API Sample README file](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme).
+
+*  One of the five platform-specific, comprehensive-API `.sln` files in the [SampleApps directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).
+
+
+The `WebView2Samples` repo has two main parts:
+
+*  A set of Get Started solutions (`.sln` files and their various project files).  There is a `README.md` file for each `.sln` file; most of them are very short.  Most documentation is in the present set of articles.
+
+*  A set of comprehensive-API, platform-specific samples (each with its own directory and `.sln` file), including a multi-platform, comprehensive-API `.sln` file.
 
 
 To clone or download this repo, see [Set up your Dev environment for WebView2](how-to/machine-setup.md).
@@ -29,7 +49,7 @@ To clone or download this repo, see [Set up your Dev environment for WebView2](h
 <!-- ====================================================================== -->
 ## Sample code for Get Started guides
 
-The WebView2 Get Started guides use starter code for Win32, Windows Presentation Foundation (WPF), WinForms, and WinUI.
+The WebView2 Get Started guides use starter code for Win32, Windows Presentation Foundation (WPF), WinForms, and WinUI.  These are not comprehensive-API examples, but only demonstrate a few API items.
 
 | Platform | Article | Code |
 |---|---|---|
@@ -43,19 +63,21 @@ The WebView2 Get Started guides use starter code for Win32, Windows Presentation
 <!-- ====================================================================== -->
 ## Apps in the WebView2Samples.sln file
 
-The `WebView2Samples` repo includes sample projects for Win32, WPF, WinForms, and WinUI.  These samples are hybrid applications that use the Microsoft Edge WebView2 control.
+The `WebView2Samples` repo includes comprehensive-API, platform-specific sample projects, for Win32, WPF, WinForms, and WinUI.  These samples are hybrid applications that use the Microsoft Edge WebView2 control.
 
 1. In a separate window or tab, see [WebView2Samples repo (README page)](https://github.com/MicrosoftEdge/WebView2Samples).
 
-1. Clone the `WebView2Samples` repo, as described in [Clone or download the WebView2 samples repo](how-to/machine-setup.md#clone-or-download-the-webview2samples-repo).
+1. Clone or download the `WebView2Samples` repo, as described in [Clone or download the WebView2 samples repo](how-to/machine-setup.md#clone-or-download-the-webview2samples-repo).
 
 1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
 
-1. Open one of the `.sln` files.  For example, open your local copy of the solution file [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
+1. Open one of the `.sln` files.  For example, open your local copy of the multi-platform solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
 
    ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects.](media/solution-file-webview2samples.png)
 
-The `WebView2Samples` repo contains the following projects, in `WebView2Samples.sln`:
+This particular `.sln` file doesn't include the Get Started projects, which are separate `.sln` files, one per platform.
+
+The `WebView2Samples` repo contains the following projects.  These projects are included in the `WebView2Samples.sln` file, and each platform also has a dedicated `.sln` file.
 
 | Type of sample | Sample Project | Description |
 |---|---|---|
@@ -63,7 +85,7 @@ The `WebView2Samples` repo contains the following projects, in `WebView2Samples.
 | Win32 C++ with Visual Composition | [WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp) | Embeds a WebView2 within a Win32 native application.  Uses [Windows Runtime Composition APIs](/uwp/api/windows.ui.composition), also called the Visual layer, to take advantage of the latest Windows 10 or later UI features and create better look, feel, and functionality in C++ Win32 applications.<br/><br/>  Built as a Win32 project in Visual Studio 2019.  Uses C++ and HTML/CSS/JavaScript in the WebView2 environment. |
 | WinForms | [WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser) | Embeds a WebView2 within a Windows Forms application.<br/><br/>  Built as a Windows Forms project in Visual Studio 2019.  Uses C# and HTML/CSS/JavaScript in the WebView2 environment. |
 | Windows Presentation Foundation (WPF) .NET | [WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) | Embeds a WebView2 within a WPF application.<br/><br/>  Built as a WPF project in Visual Studio 2019.  Uses C# and HTML/CSS/JavaScript in the WebView2 environment. |
-| Chrome DevTools Protocol (CDP) in WPF | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample) | Uses Chrome [DevTools Protocol](../devtools-protocol-chromium\index.md) functions using a `DevToolsProtocolHelper` object in WebView2.  Demonstrates the usage patterns of the WebView2 CDP extension in WPF.  This application is built with the [WebView2 CDP Extension](https://aka.ms/webviewcdp) that defines all CDP methods, events, and types.<br/><br/>  Built as a WPF project in Visual Studio 2019.  Uses C# in the WebView2 environment. |
+| Chrome DevTools Protocol (CDP) in WPF | [WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample) | Uses Chrome [DevTools Protocol](../devtools-protocol-chromium/index.md) functions using a `DevToolsProtocolHelper` object in WebView2.  Demonstrates the usage patterns of the WebView2 CDP extension in WPF.  This application is built with the [WebView2 CDP Extension](https://aka.ms/webviewcdp) that defines all CDP methods, events, and types.<br/><br/>  Built as a WPF project in Visual Studio 2019.  Uses C# in the WebView2 environment. |
 | WiX Burn Bundle to deploy Runtime | [WV2DeploymentWiXBurnBundleSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md) | Creates a [WiX](https://wixtoolset.org/) installer for the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) and uses [WiX Burn Bundle](https://wixtoolset.org/documentation/manual/v3/bundle/) to chain-install the Evergreen WebView2 Runtime.<br/><br/>  Used when deploying the [Evergreen WebView2 Runtime](concepts/distribution.md) with your app. |
 | WiX Custom Action to deploy Runtime | [WV2DeploymentWiXCustomActionSample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WV2DeploymentWiXCustomActionSample/README.md) | Creates a WiX installer for the `WebView2APISample` and uses [WiX Custom Action](https://wixtoolset.org/documentation/manual/v3/wixdev/extensions/authoring_custom_actions.html) to chain-install the Evergreen WebView2 Runtime.<br/><br/>  Used when deploying the Evergreen WebView2 Runtime with your app. |
 
@@ -85,68 +107,75 @@ This sample is a separate installer. It's not part of the `WebView2Samples` repo
 
 
 <!-- ====================================================================== -->
-## Learn about the WebView2Samples repo
+## Local paths for all .sln and README.md files
 
-1. In a new browser window or tab, briefly explore the repo's directory layout online at GitHub: [https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).
+This section shows the path to every `.sln` and `README.md` file, resulting from downloading or cloning the repo to your local drive.
 
-1. Briefly go into the `SampleApps` folder.
+The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files, all listed below.  When you clone or download the repo, you can then view any of these `README.md` files in Visual Studio.  Or, view them online at the GitHub repo.
 
-1. Briefly go into `GettingStartedGuides`.  For example, go into `Win32_GettingStarted` and notice `WebView2GettingStarted.sln`, and look in `HelloWebView.cpp`.
+In the downloaded `.zip` file, the root directory is named `WebView2Samples-master` rather than `WebView2Samples`, representing the `master` branch of the repo.
 
-Then return here and continue with the steps below.
+In the links below, the local directory path to the .sln or README.md is shown.  The link goes to the GitHub repo's directory level where you can see the `.sln` or `README.md` file in a directory listing.  At GitHub, the README is automatically appended to the webpage of the directory that contains the README file.
+<!--
+pattern for link construction below: 
+for the .sln line, link text = local path to .sln
+URL for .sln = dir that visibly contains the .sln file
+URL for README = dir that visibly contains the README.md file (visible if you scroll up); that URL is appended with #readme
+-->
 
 
-<!-- ====================================================================== -->
-## Visual Studio .sln files and README.md files in the WebView2Samples repo
+**Top-level README for the overall repo:**
 
-The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files.  When you clone the repo, you can then view any of these `README.md` files in Visual Studio.
-
-Top-level README for the overall repo:
-*  [WebView2Samples\README.md](https://github.com/MicrosoftEdge/WebView2Samples#readme)
+*  [WebView2Samples/README.md](https://github.com/MicrosoftEdge/WebView2Samples#readme) - 2 pages.  A recommended overview similar to the present article.
 
 
 **`GettingStartedGuides` directory: solution and readme files, for the per-platform tutorials:**
 
-* Getting started for Win32: `WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
-   *  [WebView2Samples\GettingStartedGuides\Win32_GettingStarted\README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted#readme)
+There are four platform-specific solution files for the Get Started guides:
 
-* Getting started for WinUI 3: `WebView2Samples/GettingStartedGuides/WinUI3_GettingStarted/WinUI_Sample/WinUI_Sample.sln`
-   *  [WebView2Samples\GettingStartedGuides\WinUI3_GettingStarted\README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
 
-* Getting started for WinForms: `WebView2Samples/GettingStartedGuides/WinForms_GettingStarted/WinForms_GettingStarted.sln`
+* Getting started for Win32: [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted)
+   *  [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted#readme)
+
+* Getting started for WinUI 3: [WebView2Samples/GettingStartedGuides/WinUI3_GettingStarted/WinUI_Sample/WinUI_Sample.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted/WinUI_Sample)
+   *  [WebView2Samples/GettingStartedGuides/WinUI3_GettingStarted/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
+
+* Getting started for WinForms: [WebView2Samples/GettingStartedGuides/WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted)
    *  No README file.
 
-* Getting started for WPF: `WebView2Samples/GettingStartedGuides/WPF_GettingStarted/WPFSample.sln`
-   *  `WebView2Samples\GettingStartedGuides\WPF_GettingStarted\README.md`
+* Getting started for WPF: [WebView2Samples/GettingStartedGuides/WPF_GettingStarted/WPFSample.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted)
+   * [WebView2Samples/GettingStartedGuides/WPF_GettingStarted/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted#readme)
 
 
 **`SampleApps` directory: solution and readme files:**
 
-*  WebView2Samples: `WebView2Samples/SampleApps/WebView2Samples.sln` - comprehensive.
-   *  [WebView2Samples\SampleApps\WebView2APISample\README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme) - Long Readme for "WebView2 API Sample".
+There is one multi-platform solution file:
 
-*  webview2_sample_uwp: `WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
-   *  [WebView2Samples\SampleApps\webview2_sample_uwp\readme.md](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/webview2_sample_uwp#readme.md)
+*  WebView2Samples: [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps) - comprehensive.
+   *  [WebView2Samples/SampleApps/WebView2APISample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme) - A recommended long Readme file for the "WebView2 API Sample".  This sample is an example of an application that embeds a WebView within a Win32 native application.  It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and HTML/CSS/JavaScript in the WebView2 environment.
 
-*  WebView2WpfBrowser: `WebView2Samples/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln`
-   *  `WebView2Samples\SampleApps\WebView2WpfBrowser\README.md`
+There are five platform-specific solution files:
 
-*  WebView2WindowsFormsBrowser: `WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
-   *  `WebView2Samples\SampleApps\WebView2WindowsFormsBrowser\README.md`
+*  webview2_sample_uwp: [WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp)
+   *  [WebView2Samples/SampleApps/webview2_sample_uwp/readme.md](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/webview2_sample_uwp#readme)
 
-*  WebView2SampleWinComp: `WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
-   *  `WebView2Samples\SampleApps\WebView2SampleWinComp\README.md`
+*  WebView2WpfBrowser: [WebView2Samples/SampleApps/WebView2WpfBrowser/WebView2WpfBrowser.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser)
+   *  [WebView2Samples/SampleApps/WebView2WpfBrowser/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#readme)
 
-*  WV2CDPExtensionWPFSample: `WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
-   *  `WebView2Samples\SampleApps\WV2CDPExtensionWPFSample\README.md`
+*  WebView2WindowsFormsBrowser: [WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser)
+   *  [WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#readme)
+
+*  WebView2SampleWinComp: [WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp)
+   *  [WebView2Samples/SampleApps/WebView2SampleWinComp/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme)
+
+*  WV2CDPExtensionWPFSample: [WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample)
+   *  [WebView2Samples/SampleApps/WV2CDPExtensionWPFSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample#readme)
+
 
 **Readme files for WIX and Deployment Installer:**
 
-*  `WebView2Samples\SampleApps\WV2DeploymentWiXCustomActionSample\README.md`
-*  `WebView2Samples\SampleApps\WV2DeploymentWiXBurnBundleSample\README.md`
-*  `WebView2Samples\SampleApps\WV2DeploymentVSInstallerSample\README.md`
+These don't use `.sln` files.
 
-
-<!-- ====================================================================== -->
-See also
-* [WebView2 API Sample > README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#webview2-api-sample)
+*  [WebView2Samples/SampleApps/WV2DeploymentWiXCustomActionSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXCustomActionSample#readme)
+*  [WebView2Samples/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXBurnBundleSample#readme)
+*  [WebView2Samples/SampleApps/WV2DeploymentVSInstallerSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme)
