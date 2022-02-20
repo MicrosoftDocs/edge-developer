@@ -179,49 +179,9 @@ After you download or clone the `WebView2Samples` repo, open a `.sln` file in Vi
 
 1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
 
-1. Open one of the `.sln` files.  For example, open your local copy of the multi-platform solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
+1. Open one of the `.sln` files.  For example, open your local copy of the main Win32 solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following projects:
 
    ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects.](media/machine-setup-solution-file-webview2samples.png)
-
-This particular `.sln` file doesn't include the Get Started projects, which are separate `.sln` files, one per platform.
-
-Currently, the screenshots below show the Win32 Get Started `.sln` file:
-
-
-<!-- ====================================================================== -->
-## Directory path patterns
-
-For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
-
-*  The multi-platform solution in the `SampleApps` directory.
-*  A platform-specific solution in the `SampleApps` directory.
-*  A platform-specific solution in the `GettingStartedGuides` directory.
-
-This is described in the [top-level README file in the WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme).
-
-
-If you download the repo (as a `.zip` file), the root directory name has `-master` appended.
-
-
-The multi-platform solution in the `SampleApps` directory has the path:
-
-*  If you downloaded the repo: `WebView2Samples-master/SampleApps/WebView2Samples.sln`
-
-*  If you cloned the repo: `WebView2Samples/SampleApps/WebView2Samples.sln`
-
-
-The Win32 platform-specific solution in the `SampleApps` directory has the path:
-
-*  If you downloaded the repo: `WebView2Samples-master/SampleApps/WebView2Samples.sln`~~
-
-*  If you cloned the repo: `WebView2Samples/SampleApps/WebView2Samples.sln`~~
-
-
-The Win32-specific solution in the `GettingStartedGuides` directory has the path:
-
-*  If you downloaded the repo: `WebView2Samples-master/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
-
-*  If you cloned the repo: `WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
 
 
 <!-- ====================================================================== -->

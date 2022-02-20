@@ -179,3 +179,36 @@ These don't use `.sln` files.
 *  [WebView2Samples/SampleApps/WV2DeploymentWiXCustomActionSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXCustomActionSample#readme)
 *  [WebView2Samples/SampleApps/WV2DeploymentWiXBurnBundleSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentWiXBurnBundleSample#readme)
 *  [WebView2Samples/SampleApps/WV2DeploymentVSInstallerSample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme)
+
+
+<!-- ====================================================================== -->
+## Downloaded repo directory adds "-master" to root directory name
+
+For general, initial Dev environment setup, you can open any type of `.sln` file from the `WebView2Samples` repo:
+
+*  The multi-platform solution in the `SampleApps` directory.
+*  A platform-specific solution in the `SampleApps` directory.
+*  A platform-specific solution in the `GettingStartedGuides` directory.
+
+This is described in the [top-level README file in the WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples#readme).
+
+
+If you download the repo (as a `.zip` file), the root directory name has `-master` appended.
+
+
+The Win32-specific solution in the `GettingStartedGuides` directory has the path:
+
+*  If you downloaded the repo: 
+   * `WebView2Samples-master/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
+
+*  If you cloned the repo: 
+   * `WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
+
+
+The main, multi-project Win32 solution in the `SampleApps` directory has the path:
+
+*  If you downloaded the repo: 
+   * `WebView2Samples-master/SampleApps/WebView2Samples.sln`
+
+*  If you cloned the repo: 
+   * `WebView2Samples/SampleApps/WebView2Samples.sln`
