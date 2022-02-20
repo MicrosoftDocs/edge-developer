@@ -223,6 +223,13 @@ When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo
    ![Visual Studio 2022 after running the workload installer when opening the multi-platform, comprehensive-API sample.](../media/vs2022-after-net-workload-installer.png)
 
 
+<!--
+h2 sections to keep sync'd:
+Main, central copy:
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+Secondary copies:
+[Install the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
+-->
 <!-- ====================================================================== -->
 ## Install the WebView2 SDK
 
@@ -245,7 +252,7 @@ Install the WebView2 SDK, as follows:
 
    ![Manage NuGet packages.](../media/manage-nuget-packages.png)
 
-   The **NuGet Package Manager** tab opens.
+   The **NuGet Package Manager** tab opens in Visual Studio.
 
 1. In the **NuGet** window, click the **Browse** tab.
 

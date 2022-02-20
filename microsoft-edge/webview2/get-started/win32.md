@@ -221,12 +221,20 @@ Windows Implementation Libraries (WIL) is now installed, along with Windows Runt
 Continue with the steps below.
 
 
+<!--
+h2 sections to keep sync'd:
+Main, central copy:
+[Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
+Secondary copies:
+[Install the WebView2 SDK](../get-started/win32.md#step-6---install-the-webview2-sdk) in _Get started with WebView2 in Win32 apps_
+-->
 <!-- ====================================================================== -->
 ## Step 6 - Install the WebView2 SDK
 
 <!-- todo: is WebView SDK already installed into the project at the repo? -->
 
 Next, you'll install the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
+
 
 Install the WebView2 SDK, as follows:
 
@@ -238,7 +246,23 @@ Install the WebView2 SDK, as follows:
 
    ![Manage NuGet packages.](../media/manage-nuget-packages.png)
 
-1. In a new window or tab, follow the steps in [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Then return here and continue the steps below.
+1. In the **NuGet** window, click the **Browse** tab.
+
+1. On the right of the search bar, clear the **Include prerelease** checkbox (unless you know that you want a prerelease version of the SDK).
+
+1. In the search bar in the upper left, type `Microsoft.Web.WebView2`.  Or, copy and paste the single-line code block below.  Then select **Microsoft.Web.WebView2**.
+
+   ```
+   Microsoft.Web.WebView2
+   ```
+
+1. In the right-hand side window, click **Install** (or **Update**).  NuGet downloads the WebView2 SDK to your machine.
+
+   ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio.](../media/nuget.png)
+
+   _To zoom, right-click > **Show image in new tab**._
+
+1. Close the **NuGet Package Manager** tab.
 
 The WebView2 SDK is now installed, so your development environment is now set up to add WebView2 features to your Win32 app.
 
@@ -371,7 +395,7 @@ Above, we did the following:
 
 *  Cloned or downloaded an existing project that contains a standard C++ Windows desktop application.
 
-*  Installed the Windows Implementation Library (WIL).  WIL is a header-only C++ library with readable, type-safe C++ interfaces for common Windows coding patterns.
+*  Installed the Windows Implementation Library (WIL).
 
 *  Installed the WebView2 SDK, to add WebView2 features.
 
