@@ -170,7 +170,13 @@ If you instead want to clone the repo by using a Git Bash shell or command promp
 
    You've cloned the repo to your local drive.
 
-1. In your resulting, local copy of the repo directory structure, find all `*.sln` files.
+
+<!-- ====================================================================== -->
+## Open a WebView2Samples .sln file in Visual Studio
+
+After you download or clone the `WebView2Samples` repo, open a `.sln` file in Visual Studio.
+
+1. In your local copy of the repo directory structure, locate a `.sln` file.  See [Local paths for all .sln and README.md files](#local-paths-for-all-sln-and-READMEmd-files) in _Sample Code for WebView2_.
 
 1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
 
