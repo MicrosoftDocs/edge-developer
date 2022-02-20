@@ -204,7 +204,7 @@ Next, install the Windows Implementation Libraries (WIL) from within Visual Stud
 
    ![Selecting the 'Microsoft.Windows.ImplementationLibrary' package in NuGet Package Manager in Visual Studio.](../media/wil.png)
 
-   To zoom the above image, right-click > **Show image in new tab**, then switch to the new tab.  Close the tab, to return.
+   _To zoom, right-click > **Open image in new tab**._
 
    If you don't see **Microsoft.Windows.ImplementationLibrary** listed, check the NuGet source location, as follows:
 
@@ -256,7 +256,7 @@ Install the WebView2 SDK, as follows:
 
    ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio.](../media/nuget.png)
 
-   _To zoom, right-click > **Show image in new tab**._
+   _To zoom, right-click > **Open image in new tab**._
 
 1. Close the **NuGet Package Manager** tab.
 

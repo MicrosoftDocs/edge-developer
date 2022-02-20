@@ -218,7 +218,7 @@ When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo
 
    ![Visual Studio 2022 workload installer Migration Report for the multi-platform, comprehensive-API sample.](../media/migration-report-while-installing-workload.png)
 
-   _To zoom, right-click > **Show image in new tab**._
+   _To zoom, right-click > **Open image in new tab**._
 
    Above, the `-master` directory suffix is present for the downloaded `.zip` file of the repo, not if you cloned the repo.
 
@@ -274,7 +274,7 @@ Install the WebView2 SDK, as follows:
 
    ![Selecting the 'Microsoft.Web.WebView2' package in NuGet Package Manager in Visual Studio.](../media/nuget.png)
 
-   _To zoom, right-click > **Show image in new tab**._
+   _To zoom, right-click > **Open image in new tab**._
 
 1. Close the **NuGet Package Manager** tab.
 
