@@ -72,7 +72,7 @@ Start with a basic desktop project that contains a single main window.
 
    ![The Visual Studio opening panel displays the Create a new project card.](media/winforms-opening-panel.png)
 
-1. Click **Create a new project**.
+1. On the right, click the **Create a new project** card.
 
    The Visual Studio **Create a new project** window appears:
 

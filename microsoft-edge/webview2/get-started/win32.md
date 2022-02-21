@@ -42,7 +42,7 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
 
 1. If Microsoft Visual Studio isn't installed already, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps there to do a basic default installation of Visual Studio.
 
-Then continue below.
+Then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
