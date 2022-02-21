@@ -160,6 +160,8 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
    ![Build fail: after installing the Microsoft.Windows.CppWinRT package.](media/webview2samplewincomp-build-fail-after-cppwinrt-pkg.png)
 
+   _To zoom, right-click > **Open image in new tab**._
+
 
 <!-- ====================================================================== -->
 ## Running the project in debug mode
