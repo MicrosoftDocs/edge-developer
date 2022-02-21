@@ -51,6 +51,12 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
+   A **Review Solution Actions** dialog box might appear:
+
+   ![The 'Review Solution Actions' dialog box.](media/webview2samplewincomp-review-solution-actions.png)
+
+1. Click the **OK** button.
+
 1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
    Solution Explorer shows the **WebView2SampleWinComp** project.
@@ -62,12 +68,125 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
+   The project opens in Visual Studio:
+
+   ![The WebView2SampleWinComp project in Visual Studio.](media/webview2samplewincomp-project-in-sln-explorer.png)
+
+   _To zoom, right-click > **Open image in new tab**._
+
+1. At the top of Visual Studio, set the target you want to build (**Debug**/**Release**, **x86**/**x64**/**ARM64**).
+
+
+<!-- ====================================================================== -->
+## Building the project
+
+1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
+
+   This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.  This might take a couple minutes.
+
+
+<!-- ====================================================================== -->
+## Installing updated Microsoft.Windows.CppWinRT package
+
+   The build might fail:
+
+   ```
+   Build started...
+   1>------ Build started: Project: WebView2SampleWinComp, Configuration: Debug x64 ------
+   1>AppWindow.cpp
+   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(983,26):
+   error C2039: 'wait_for': is not a member of 'winrt::impl'
+   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(103):
+   message : see declaration of 'winrt::impl'
+   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(985):
+   message : see reference to class template instantiation 'winrt::impl::consume_Windows_Foundation_IAsyncAction<D>' being compiled
+   ...
+   1>Generating Code...
+   1>Done building project "WebView2SampleWinComp.vcxproj" -- FAILED.
+   ========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+   ```
+
+1. To fix the issue: In **Solution Explorer**, right-click the solution's project node (not the solution node) and then select **Manage NuGet Packages**.
+
+   The **NuGet Package Manager** tab opens in Visual Studio.
+
+1. In the **NuGet** window, click the **Browse** tab.
+
+1. On the right of the search bar, clear the **Include prerelease** checkbox (unless you know that you want a prerelease version of the SDK).
+
+1. In the search bar in the upper left, type **Microsoft.Windows.CppWinRT**.
+
+1. Below the search bar, click the **Microsoft.Windows.CppWinRT** card.
+
+1. In the right-hand pane, click the **Install** (or **Update**) button.  NuGet downloads the Microsoft.Windows.CppWinRT package to your machine, for use by this project.
+
+   ![Selecting the 'Microsoft.Windows.CppWinRT' package in NuGet Package Manager in Visual Studio.](media/webview2samplewincomp-manage-nuget-cppwinrt.png)
+
+   _To zoom, right-click > **Open image in new tab**._
+
+   The **Preview Changes** dialog box opens:
+
+   ![The Preview Changes dialog box for the 'Microsoft.Windows.CppWinRT' package.](media/webview2samplewincomp-preview-changes-cppwinrt.png)
+
+1. Click the **OK** button.
+
+1. The `readme.txt` file opens for the CppWinRT package:
+
+   ![The readme.txt file for the CppWinRT' package.](media/webview2samplewincomp-cppwinrt-readme.png)
+
+The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue with the steps below.
+
+### See also
+
+* [NuGet.org > Microsoft.Windows.CppWinRT NuGet package](https://www.nuget.org/packages/Microsoft.Windows.CppWinRT/)
+
+* [GitHub > microsoft/cppwinrt repo > Issues > error C2039: 'wait_for': is not a member of 'winrt::impl' #744](https://github.com/microsoft/cppwinrt/issues/744)
+
+   <!-- > `impl::wait_for` is defined later in `Windows.Foundation.h:2960`, but other foundation headers (via `2.h`, `1.h` and `0.h`) included earlier require it.
+   >
+   > The version of C++/WinRT that ships in the Windows SDK is rather old, and fails to compile with the stricter conformance expectations of more recent compilers. You can get a newer version of C++/WinRT here: https://aka.ms/cppwinrt/nuget
+   >
+   > I ended up running the `cppwinrt.exe` manually, since I couldn't get the `CMake VC_PROJECT_IMPORT` to work.  This works well for me; the headers are all generated in my build folder at generation time. -->
+
+
+<!-- ====================================================================== -->
+## Building the project again
+
+1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
+
+   This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.  This might take a couple minutes.
+
+   The build might fail:
+
+   ![Build fail: after installing the Microsoft.Windows.CppWinRT package.](media/webview2samplewincomp-build-fail-after-cppwinrt-pkg.png)
+
+
+<!-- ====================================================================== -->
+## Running the project in debug mode
+
+<!-- retest: -->
+
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
-   The sample app window opens.
+   Troubleshooting: If you try to debug before building the project, a dialog box might appear: "There were build errors":
 
-1. In the sample app window, use the sample app.
+   ![The 'Build errors' dialog box.](media/webview2samplewincomp-build-errors-dialog-box.png)
 
-1. In the Visual Studio code editor, inspect the code; see [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).
+   Click the **Yes** button.  A dialog box appears: "Unable to start program: cannot find file":
+
+   ![The 'Unable to start program' dialog box.](media/webview2samplewincomp-unable-to-start-program.png)
+
+   To fix that issue, build the project before debugging it.
+   <!-- ------------------------------- -->
+
+   After resolving the build issue, and then entering debug mode, the sample app window opens.
+
+   <!-- ![The WebView2SampleWinComp app window.](media/webview2samplewincomp-app-window.png) -->
+
+1. In the sample app window, use the sample app.  See [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).
 
 1. Close the sample app window.
+
+1. In Visual Studio, select **Debug** > **Stop Debugging**.
+
+1. In the Visual Studio code editor, inspect the code.

@@ -59,15 +59,13 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-1. In Visual Studio, set the target you want to build (**Debug**/**Release**, **x86**/**x64**/**ARM64**).
+1. At the top of Visual Studio, set the target you want to build (**Debug**/**Release**, **x86**/**x64**/**ARM64**).
 
-1. In **Solution Explorer**, click the **WebView2APISample** project to select it.
+1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
    ![The WebView2APISample project selected in Solution Explorer.](media/webview2apisample-project-selected.png)
 
    _To zoom, right-click > **Open image in new tab**._
-
-1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
 
    This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.  This might take a couple minutes.
 
@@ -83,11 +81,11 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    ![The WebView2APISample app window.](media/webview2apisample-app-window.png)
 
-1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme)
-
    _To zoom, right-click > **Open image in new tab**._
 
-1. Close the sample app window.
+1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme)
+
+1. In Visual Studio, select **Debug** > **Stop Debugging**.
 
 1. In the Visual Studio code editor, inspect the code.
 
