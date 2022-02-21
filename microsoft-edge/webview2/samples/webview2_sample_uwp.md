@@ -33,7 +33,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.
+1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
