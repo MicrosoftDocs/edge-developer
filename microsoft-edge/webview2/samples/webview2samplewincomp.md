@@ -58,7 +58,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. If needed, install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-1. In Visual Studio, select **Debug** > **Run debug** (`F5`).
+1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
    The sample app window opens.
 
