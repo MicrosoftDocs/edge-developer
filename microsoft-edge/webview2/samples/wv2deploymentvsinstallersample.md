@@ -46,9 +46,12 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-   Solution Explorer shows several projects, including the **WebView2APISample** project:
+   Solution Explorer shows the **WV2DeploymentVSInstallerSample** project.
 
-   ![The WebView2APISample opened in Visual Studio in Solution Explorer.](media/webview2apisample-in-solution-explorer.png)
+   <!-- Solution Explorer shows the **WV2DeploymentVSInstallerSample** project: -->
+
+   <!-- ![The WV2DeploymentVSInstallerSample sample opened in Visual Studio in Solution Explorer.](media/wv2deploymentvsinstallersample-in-solution-explorer.png) -->
+   <!--todo: create png-->
 
 1. If needed, install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
