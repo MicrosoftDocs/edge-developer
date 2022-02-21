@@ -12,6 +12,8 @@ ms.date: 02/18/2022
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WPF .NET app.
 
+Directory &amp; project name: **WebView2WpfBrowser**.
+
 
 **To use this sample (general-purpose steps):**
 

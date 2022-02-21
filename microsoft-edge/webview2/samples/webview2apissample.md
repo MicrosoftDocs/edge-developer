@@ -16,6 +16,8 @@ The WebView2APISample is an example of an application that embeds a WebView with
 
 The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView and vice versa.
 
+Directory &amp; project name: **WebView2APISample**.
+
 
 **To use this sample (general-purpose steps):**
 
@@ -57,15 +59,39 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. In Visual Studio, set the target you want to build (**Debug**/**Release**, **x86**/**x64**/**ARM64**).
 
-   The sample app window opens.
+1. In **Solution Explorer**, click the **WebView2APISample** project to select it.
 
-1. In the sample app window, use the sample app.
+   ![The WebView2APISample project selected in Solution Explorer.](media/webview2apisample-project-selected.png)
 
-1. In the Visual Studio code editor, inspect the code; see [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme).
+   _To zoom, right-click > **Open image in new tab**._
+
+1. In **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
+
+   This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.  This might take a couple minutes.
+
+1. Select **Debug** > **Start Debugging** (`F5`).  
+
+   Troubleshooting: if you skip the build step and immediately select **Debug** > **Start Debugging** (`F5`), a dialog box might appear, "Unable to start program: Cannot find the path specified":
+
+   ![Dialog box: Unable to start program: Cannot find the path specified.](media/webview2apisample-unable-to-start-program-cannot-find-path.png)
+
+   To fix this problem: in **Solution Explorer**, right-click the **WebView2APISample** project, and then select **Build**.
+
+   The **WebView2APISample** app window opens:
+
+   ![The WebView2APISample app window.](media/webview2apisample-app-window.png)
+
+1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme)
+
+   _To zoom, right-click > **Open image in new tab**._
 
 1. Close the sample app window.
 
+1. In the Visual Studio code editor, inspect the code.
 
+
+<!--
 Note: The `.sln` file is not in the sample repo directory that contains this sample's [README.md file](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme), or the equivalent local filesystem directory.  Instead, the `.sln` file for this sample is in the parent directory that corresponds to the [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps) repo directory.
+-->

@@ -12,6 +12,8 @@ ms.date: 02/18/2022
 
 This is a WebView2 sample demonstrating how to use a WiX Custom Action to deploy the WebView2 Runtime.
 
+Directory &amp; project name: **WV2DeploymentWiXCustomActionSample**.
+
 
 **To use this sample (general-purpose steps):**
 

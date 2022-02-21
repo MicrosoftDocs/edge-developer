@@ -12,6 +12,8 @@ ms.date: 02/18/2022
 
 This WebView2 sample demonstrates how to deploy a WebView2 app by using the Visual Studio installer.
 
+Directory &amp; project name: **WV2DeploymentVSInstallerSample**.
+
 
 **To use this sample (general-purpose steps):**
 

@@ -62,7 +62,7 @@ To download the repo (as a `.zip` file):
 
 1. Click the green **Code** button in the upper right of the GitHub repo, and then click **Download ZIP**.
 
-   ![Cloning the WebView2Samples repo.](../media/cloning-the-webview2-samples-repo-samples-article.png)
+   ![Cloning the WebView2Samples repo.](../media/download-the-webview2-samples-repo.png)
 
    The **Download** pop-up appears in Microsoft Edge:
 
@@ -111,7 +111,7 @@ To clone the `WebView2Samples` repo, you must first install git.  You can downlo
 
 1. Click the green **Code** button in the upper right of the GitHub repo, select **Clone**, and then click the **Copy** icon (or, select the HTTPS URL string in the text box and copy it).
 
-   ![Cloning the WebView2Samples repo.](../media/cloning-the-webview2-samples-repo-samples-article.png)
+   ![Cloning the WebView2Samples repo.](../media/clone-the-webview2-samples-repo.png)
 
 1. Decide which tool you want to use to locally clone the repo:
    *  Visual Studio
