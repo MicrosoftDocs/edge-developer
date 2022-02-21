@@ -13,7 +13,11 @@ You can change where DevTools is docked in the browser.  By default, Microsoft E
 
 To change where DevTools is placed within the browser window:
 
-*  Click the **Customize and control DevTools** (![Customize and control DevTools icon.](../media/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock side** section, select a layout option.
+*  Click the **Customize and control DevTools** (![Customize and control DevTools icon.](../media/customize-devtools-icon-light-theme.png)) menu button, and then in the **Dock side** section, select a layout option:
+   *  **Undock into separate window** (![The 'Undock into separate window' icon.](../media/undock-into-separate-window-icon.png))
+   *  **Dock to left** (![The 'Dock to left' icon.](../media/dock-to-left-icon.png))
+   *  **Dock to bottom** (![The 'Dock to bottom' icon.](../media/dock-to-bottom-icon.png))
+   *  **Dock to right** (![The 'Dock to right' icon.](../media/dock-to-right-icon.png))
 
 ![the Dock side menu in DevTools.](../media/devtools-intro-docking-menu.msft.png)
 
@@ -21,11 +25,18 @@ To change where DevTools is placed within the browser window:
 
 
 <!-- ====================================================================== -->
-## Dock DevTools in the right side of the browser
+## Undock DevTools into a separate window
 
-The following image shows DevTools in the right side the browser window, which is the default location:
+Undock DevTools into its own, separate window, when you want to work with several monitors, or if you need to work on a full-screen app and want a lot of space for the DevTools UI.  The following image shows DevTools undocked into its own, dedicated window:
 
-![DevTools docked to the right.](../media/devtools-intro-docking-right.msft.png)
+![DevTools undocked into a separate window.](../media/devtools-intro-docking-own-window.msft.png)
+
+Since WebTools now has its own dedicated window, the WebPage that's being designed now occupies an entire browser window:
+
+![WebPage that's under design, now separate from the DevTools window, which is undocked from the browser's webpage window.](../media/browser-webpage-window-devtools-undocked.png)
+
+
+See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
 
 
 <!-- ====================================================================== -->
@@ -45,18 +56,11 @@ The following image shows DevTools docked in the left side of the browser window
 
 
 <!-- ====================================================================== -->
-## Undock DevTools into a separate window
+## Dock DevTools in the right side of the browser
 
-Undock DevTools into its own, separate window, when you want to work with several monitors, or if you need to work on a full-screen app and want a lot of space for the DevTools UI.  The following image shows DevTools undocked into its own, dedicated window:
+The following image shows DevTools in the right side the browser window, which is the default location:
 
-![DevTools undocked into a separate window.](../media/devtools-intro-docking-own-window.msft.png)
-
-Since WebTools now has its own dedicated window, the WebPage that's being designed now occupies an entire browser window:
-
-![WebPage that's under design, now separate from the DevTools window, which is undocked from the browser's webpage window.](../media/browser-webpage-window-devtools-undocked.png)
-
-
-See also [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
+![DevTools docked to the right.](../media/devtools-intro-docking-right.msft.png)
 
 
 <!-- ====================================================================== -->
