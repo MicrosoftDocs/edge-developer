@@ -89,11 +89,6 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. A dialog box appears, "Before we get started, close Visual Studio":
 
-   <!-- if need to add gray border:
-   > [!div class="mx-imgBorder"]
-   > ![Dialog box: Before we get started, close Visual Studio.](media/winui2-before-we-get-started.png)
-   -->
-
    ![Dialog box: Before we get started, close Visual Studio.](media/winui2-before-we-get-started.png)
    
 1. Click the **Continue** button.
@@ -106,7 +101,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    When Visual Studio Installer is finished, return to this page and continue with the steps below.
 
-1. Close the **Visual Studio Installer* window.
+1. Close the **Visual Studio Installer** window.
 
    The Visual Studio window remains empty.
 
@@ -116,7 +111,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 1. If Visual Studio is open, select **File** > **New** > **Project**.
 
-   Or, Visual Studio is closed, open it, and then in the startup screen of Visual Studio, click the **Create a new project** card.
+   Or, if Visual Studio is closed, open it, and then in the startup screen of Visual Studio, click the **Create a new project** card:
 
    ![The startup screen of Visual Studio: click the 'Create a new project' card.](media/winui2-opening-win-create-new-project-card.png)
 
@@ -175,7 +170,7 @@ Next, you set up this new UWP project to do WinUI 2 and WebView2 development.
 
 1. Click the **Microsoft.Web.WebView2** card below the search box.
 
-1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected.
+1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
 
    ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/winui2-nuget-pkg-mgr-webview2.png)
 
@@ -185,7 +180,7 @@ Next, you set up this new UWP project to do WinUI 2 and WebView2 development.
 
    <!-- If needed, in a new window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Return from that page and continue the steps below. -->
 
-   The **Preview Changes** dialog box appears.
+   The **Preview Changes** dialog box appears:
 
    ![The Preview Changes dialog box for the WebView2 NugGet package.](media/winui2-webview2-pkg-preview-changes.png)
 
@@ -227,7 +222,7 @@ Next, you install **Microsoft.UI.Xaml**, which installs WinUI 2.<!-- todo: expla
 
    ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package.](media/winui2-license-acceptance-ui-xaml-pkg.png)
 
-1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying "Thanks for installing the WinUI NuGet package!"
+1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying that you've installed the WinUI package:
 
    ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package.](media/winui2-readme-winui-pkg.png)
 
