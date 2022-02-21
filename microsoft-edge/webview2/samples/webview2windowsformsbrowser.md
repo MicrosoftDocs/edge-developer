@@ -15,9 +15,12 @@ This WebView2 sample demonstrates how to use the WebView2 control and WebView2 A
 Directory &amp; project name: **WebView2WindowsFormsBrowser**.
 
 
-**To use this sample (general-purpose steps):**
+<!-- ====================================================================== -->
+## Install standard prerequisites for WebView2
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
+
+To use this sample, follow the steps below in order.
 
 1. **README** - In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#readme).  Then return to this page and continue the steps below.
 
@@ -56,7 +59,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
    <!-- ![The WebView2WindowsFormsBrowser sample opened in Visual Studio in Solution Explorer.](media/webview2windowsformsbrowser-in-solution-explorer.png) -->
    <!--todo: create png-->
 
-1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can follow these steps to determine whether the WebView2 SDK is installed for the project.  Follow the steps in that section, and then return to this page and continue below.
 
    <!-- this same png is used multiple times in this file -->
    ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
@@ -65,26 +68,18 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 
 <!-- ====================================================================== -->
-## Build the project
+## Install .NET Framework 4.6.2 Developer Pack
+
+To build this project, .NET Framework 4.6.2 Developer Pack is required.
+
+To test whether it is installed:
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 
+   This builds the project file `SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.vcxproj`.  This might take a couple minutes.
 
-<!-- ====================================================================== -->
-## Install .NET Framework 4.6.2 Developer Pack
+   If you get error messages about missing .NET Framework 4.6.2 Developer Pack, follow the steps below.  Otherwise, skip to the next major section below.
 
-<!-- v4.8 might not be supported in this sample.  Try v4.0.-->
-
-A build error might appear:
-
-   > "1>C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(1217,5):
-   >
-   > error MSB3644: The reference assemblies for .NETFramework,Version=v4.6.2 were not found.
-   >
-   > To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application.
-   >
-   > You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks"
-       
 1. Go to https://dotnet.microsoft.com/en-us/download/dotnet-framework/, select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
 
    ![Downloading .NET Framework 4.6.2 Developer Pack](media/webview2windowsformsbrowser-dl-net-fwk.png)
@@ -117,9 +112,15 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
 
 <!-- ====================================================================== -->
-## Build the project again
+## Build the project
 
-1. Close Visual Studio and then re-open the solution file in Visual Studio.  If needed, reboot your computer.
+1. If you just now installed .NET Framework 4.6.2 Developer Pack above, close Visual Studio, and then open the solution file in Visual Studio again, from the directory:
+
+   *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+
+   or:
+
+   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 

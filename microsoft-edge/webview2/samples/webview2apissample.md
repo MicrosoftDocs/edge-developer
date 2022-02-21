@@ -57,7 +57,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    ![The WebView2APISample opened in Visual Studio in Solution Explorer.](media/webview2apisample-in-solution-explorer.png)
 
-1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can follow these steps to determine whether the WebView2 SDK is installed for the project.  Follow the steps in that section, and then return to this page and continue below.
 
 1. At the top of Visual Studio, set the target you want to build (**Debug**/**Release**, **x86**/**x64**/**ARM64**).
 
