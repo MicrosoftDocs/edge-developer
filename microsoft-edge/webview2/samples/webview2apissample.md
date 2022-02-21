@@ -17,8 +17,7 @@ The WebView2APISample is an example of an application that embeds a WebView with
 The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView and vice versa.
 
 
-<!-- ====================================================================== -->
-## To use this sample (general-purpose steps)
+**To use this sample (general-purpose steps):**
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 

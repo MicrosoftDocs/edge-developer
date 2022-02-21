@@ -13,8 +13,7 @@ ms.date: 02/18/2022
 This WebView2 sample demonstrates how to deploy a WebView2 app by using the Visual Studio installer.
 
 
-<!-- ====================================================================== -->
-## To use this sample (general-purpose steps)
+**To use this sample (general-purpose steps):**
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 

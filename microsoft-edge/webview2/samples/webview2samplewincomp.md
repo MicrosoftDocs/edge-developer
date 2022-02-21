@@ -17,8 +17,7 @@ It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and 
 It also uses Windows Runtime Composition APIs (also called the Visual layer) to take avantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
 
 
-<!-- ====================================================================== -->
-## To use this sample (general-purpose steps)
+**To use this sample (general-purpose steps):**
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 

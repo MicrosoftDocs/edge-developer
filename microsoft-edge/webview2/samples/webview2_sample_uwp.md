@@ -13,8 +13,7 @@ ms.date: 02/18/2022
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a UWP WinUI 2 app.
 
 
-<!-- ====================================================================== -->
-## To use this sample (general-purpose steps)
+**To use this sample (general-purpose steps):**
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
