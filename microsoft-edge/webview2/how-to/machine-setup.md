@@ -198,11 +198,11 @@ For general, initial Dev environment setup, you can open any type of `.sln` file
 
 
 <!-- ====================================================================== -->
-## Install Visual Studio workloads if prompted
+## Install Visual Studio workloads
+
+Install Visual Studio workloads if prompted.  When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo in Microsoft Visual Studio 2019 or 2022, you might see a "cannot open" dialog box.
 
 <!-- For example, the Win32 tutorial tells how to install a particular workload if prompted to, upon opening a particular sample.  For example, see [Install the "Desktop development with C++" workload](../get-started/win32.md#install-workloads) in _Get started with WebView2 in Win32 apps_. -->
-
-When you open a `.sln` file from the cloned or downloaded `WebView2Samples` repo in Microsoft Visual Studio 2019 or 2022, you might see a "cannot open" dialog box.
 
 1. Click the **OK** button.  Then you might see a workload installer such as:
 
