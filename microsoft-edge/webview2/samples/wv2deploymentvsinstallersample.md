@@ -17,7 +17,7 @@ This WebView2 sample demonstrates how to deploy a WebView2 app by using the Visu
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme).  Then return to this page and continue the steps below.
+1. **README** - In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme).  Then return to this page and continue the steps below.
 
    * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#prerequisites)
 
@@ -31,11 +31,13 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentVSInstallerSample/README.md`
 
-1. If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+1. **Visual Studio** - If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-<!-- 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
+1. **Download samples** - If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+<!-- 1. **Open .sln in Visual Studio** - On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln`
 
@@ -43,7 +45,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln` -->
 
-1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
    Solution Explorer shows the **WV2DeploymentVSInstallerSample** project.
 
@@ -52,7 +54,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
    <!-- ![The WV2DeploymentVSInstallerSample sample opened in Visual Studio in Solution Explorer.](media/wv2deploymentvsinstallersample-in-solution-explorer.png) -->
    <!--todo: create png-->
 
-1. If needed, install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 

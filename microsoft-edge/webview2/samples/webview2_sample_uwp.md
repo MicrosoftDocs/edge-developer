@@ -12,12 +12,14 @@ ms.date: 02/18/2022
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a UWP WinUI 2 app.
 
+Directory &amp; project name: **webview2_sample_uwp**.
+
 
 **To use this sample (general-purpose steps):**
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp#readme).  Then return to this page and continue the steps below.
+1. **README** - In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp#readme).  Then return to this page and continue the steps below.
 
    * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp#prerequisites)
 
@@ -31,11 +33,13 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    `<your-repos-directory>/WebView2Samples-master/SampleApps/webview2_sample_uwp/README.md`
 
-1. If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+1. **Visual Studio** - If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
+1. **Download samples** - If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+1. **Open .sln in Visual Studio** - On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
 
@@ -43,23 +47,42 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    *  `<your-repos-directory>/WebView2Samples-master/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
 
-1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-   Solution Explorer shows the **webview2_sample_uwp** project.
+   Solution Explorer shows the **webview2_sample_uwp** project:
 
-   <!-- Solution Explorer shows the **webview2_sample_uwp** project: -->
+   ![The webview2_sample_uwp sample opened in Visual Studio in Solution Explorer.](media/webview2_sample_uwp-in-solution-explorer.png)
 
-   <!-- ![The webview2_sample_uwp sample opened in Visual Studio in Solution Explorer.](media/webview2_sample_uwp-in-solution-explorer.png) -->
-   <!--todo: create png-->
+   _To zoom, right-click > **Open image in new tab**._
 
-1. If needed, install the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. **WebView2 SDK** - If needed, install (or update) the _prerelease_ WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Step 5 - Install the prerelease WebView2 SDK](../get-started/winui2.md#step-5---install-the-prerelease-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. **Microsoft.UI.Xaml NuGut package (WinUI 2 SDK)**: If needed, install (or update) the _prerelease_ Microsoft.UI.Xaml NuGut package (which is the WinUI 2 SDK) on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Step 6 - Install the WinUI 2 SDK (Microsoft.UI.Xaml)](../get-started/winui2.md#step-6---install-the-prerelease-winui-2-sdk-microsoftuixaml) in _Get started with WebView2 in WinUI 2 (UWP) apps (public preview)_.  Follow the steps in that section, and then return to this page and continue below.
 
-   The sample app window opens.
+1. In Visual Studio, set the target you want to build (**Debug/Release** or **AnyCPU**).
+
+1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).  This builds the project file `WebView2_UWP.csproj`.
+
+   An empty grid window initially appears:
+
+   ![The webview2_sample_uwp project running, with initial empty grid.](media/webview2_sample_uwp-empty-grid.png)
+
+   The sample app window then displays webpage content:
+
+   ![The webview2_sample_uwp project running, displaying webpage content.](media/webview2_sample_uwp-webpage-content.png)
 
 1. In the sample app window, use the sample app.
 
+1. In Visual Studio, select **Debug** > **Stop Debugging**.
+
 1. In the Visual Studio code editor, inspect the code; see [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp#readme).
 
-1. Close the sample app window.
+   ![MainPage.xaml in Visual Studio.](media/webview2_sample_uwp-mainpage-xaml.png)
+
+   _To zoom, right-click > **Open image in new tab**._
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
