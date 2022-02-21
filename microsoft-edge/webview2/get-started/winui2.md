@@ -10,55 +10,25 @@ ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 
-This article covers how to set up your development tools and create an initial WebView2 app for WinUI 2 (UWP), and learn about WebView2 concepts along the way.
-
-<!-- todo:
-Reformat article as a flat series of h2 Step sections starting at 1, each containing flat list of action steps.
-Use strictly controlled linking - only provide a hyperlink if it's in an instruction-step that says what to do with the link.
--->
-<!--todo: move any lengthy, solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
-
-WinUI 2 supports UWP (only).
+In this tutorial, you:
+*  Set up your development tools for creating UWP apps that use WebView2 to display web content.
+*  Create an initial WinUI 2 (UWP) app.
+*  Add a WebView2 control that displays webpage content.
+*  Learn about WebView2 concepts along the way.
 
 
-**WebView2 features which have limited functionality on WinUI 2 (UWP)**
+The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
+*  UWP XAML controls
+*  Dense control styles
+*  Fluent styles and materials.
 
-The WebView2 WinUI 2 control is in development.  The following features haven't been implemented, or have issues:
-
-*  Download UI.
-   *  Although the Download UI feature currently doesn't work, this feature might show up automatically in your app's UI after the issue is fixed.  To maintain compatibility, you should manually disable the Download UI feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs).
-*  Autofill UI.
-*  File Picker Dialog.
-*  Background Audio.
-*  Print to PDF.
-*  Print Preview.
-*  Adding COM Objects (WinRT `AddHostObject`).
-*  Playready DRM.
-*  Service Workers on Windows devices before 20H2.
-
-
-In this tutorial, you set up your development tools, create an initial WinUI 2 (UWP) app, add a WebView2 control that displays webpage content, and learn about WebView2 concepts along the way.
+WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 Follow the major Step sections in sequence, below.
 
 
 <!-- ====================================================================== -->
-## Step 1 - Introduction to the Microsoft.UI.Xaml (WinUI 2) package
-
-The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.
-
-The **Microsoft.UI.Xaml** (WinUI 2) package provides backward-compatible versions of Windows UI features, including:
-*  UWP XAML controls
-*  Dense control styles
-*  Fluent styles and materials.
-
-This tutorial uses the **Microsoft.UI.Xaml** (WinUI 2) NuGet package, which has a dependency on a _prerelease_ WebView2 SDK (which is also a NuGet package).
-
-<!-- 1. Take a quick look at the NuGet page for the [Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/).  This is the WinUI 2 package.todo: explain  But don't install it yet. -->
-
-
-<!-- ====================================================================== -->
-## Step 2 - Download a preview channel of Microsoft Edge
+## Step 1 - Download a preview channel of Microsoft Edge
 
 For full API compatibility of the **Microsoft.UI.Xaml** (WinUI 2) package and WebView2, this tutorial uses a _prerelease_ version of WebView2 SDK, together with a preview channel of Microsoft Edge.  (This tutorial doesn't use the other supported combination, which is a _release_ version of WebView2 SDK + the WebView2 Runtime.)
 
@@ -72,7 +42,7 @@ For full API compatibility of the **Microsoft.UI.Xaml** (WinUI 2) package and We
 
 
 <!-- ====================================================================== -->
-## Step 3 - Install Visual Studio
+## Step 2 - Install Visual Studio
 
 Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual Studio 2017 isn't supported.  If you need information about Visual Studio 2019 version 16.9, in a new window or tab, see [Microsoft Visual Studio 2019 version 16.9](/visualstudio/releases/2019/release-notes-v16.9).
 
@@ -84,7 +54,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 
 <!-- ====================================================================== -->
-## Step 4 - Install .NET desktop, C++ desktop, and UWP development tools
+## Step 3 - Install .NET desktop, C++ desktop, and UWP development tools
 
 1. Open Microsoft Visual Studio.  The opening option window appears:
 
@@ -142,7 +112,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
 
 <!-- ====================================================================== -->
-## Step 5 - Create a UWP app
+## Step 4 - Create a UWP app
 
 1. If Visual Studio is open, select **File** > **New** > **Project**.
 
@@ -189,7 +159,7 @@ Next, you set up this new UWP project to do WinUI 2 and WebView2 development.
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 6 - Install the WebView2 SDK
+## Step 5 - Install the WebView2 SDK
 
 1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
 
@@ -225,7 +195,7 @@ The WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Install the WinUI 2 SDK (Microsoft.UI.Xaml)
+## Step 6 - Install the WinUI 2 SDK (Microsoft.UI.Xaml)
 
 Next, you install **Microsoft.UI.Xaml**, which installs WinUI 2.<!-- todo: explain -->
 
@@ -269,7 +239,7 @@ You've now installed the Microsoft.UI.Xaml package, which is WinUI (WinUI 2), fo
 
 
 <!-- ====================================================================== -->
-## Step 8 - Instantiate the WebView2 control in XAML code
+## Step 7 - Instantiate the WebView2 control in XAML code
 
 Now you are ready to add WebView2 code to the project.  First, add a namespace reference for the WebView2 control, as follows:
 
@@ -324,7 +294,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 9 - Navigation events
+## Step 8 - Navigation events
 
 Next, learn about navigation events, which are essential for WebView2 apps.
 
@@ -333,6 +303,26 @@ The app initially navigates to `https://bing.com`.
 1. In a new window or tab, read [Navigation events for WebView2 apps](../concepts/navigation-events.md), and then return to this page.
 
 Congratulations, you built your first WebView2 app!
+
+
+<!-- ====================================================================== -->
+## Status of WebView2 functionality on WinUI 2 (UWP)
+
+The WebView2 WinUI 2 control is in development.  The following features haven't been implemented, or have issues:
+
+*  Download UI.
+   *  Although the Download UI feature currently doesn't work, this feature might show up automatically in your app's UI after the issue is fixed.  To maintain compatibility, you should manually disable the Download UI feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs).
+*  Autofill UI.
+*  File Picker Dialog.
+*  Background Audio.
+*  Print to PDF.
+*  Print Preview.
+*  Adding COM Objects (WinRT `AddHostObject`).
+*  Playready DRM.
+*  Service Workers on Windows devices before 20H2.
+
+Package summary:
+* [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
 
 
 <!-- ====================================================================== -->
@@ -356,6 +346,3 @@ API Reference:
 * [WebView2 API Reference](../webview2-api-reference.md) - each platform's API Reference
 * [WinRT API Reference: Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
 * [WinRT API Reference: COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
-
-Package summary:
-* [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
