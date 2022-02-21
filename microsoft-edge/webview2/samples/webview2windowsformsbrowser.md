@@ -58,12 +58,92 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
+   <!-- this same png is used multiple times in this file -->
+   ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
+
+   _To zoom, right-click > **Open image in new tab**._
+
+
+<!-- ====================================================================== -->
+## Build the project
+
+1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
+
+
+<!-- ====================================================================== -->
+## Install .NET Framework 4.6.2 Developer Pack
+
+<!-- v4.8 might not be supported in this sample.  Try v4.0.-->
+
+A build error might appear:
+
+   > "1>C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(1217,5):
+   >
+   > error MSB3644: The reference assemblies for .NETFramework,Version=v4.6.2 were not found.
+   >
+   > To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application.
+   >
+   > You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks"
+       
+1. Go to https://dotnet.microsoft.com/en-us/download/dotnet-framework/, select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
+
+   ![Downloading .NET Framework 4.6.2 Developer Pack](media/webview2windowsformsbrowser-dl-net-fwk.png)
+
+1. In Microsoft Edge, select **Settings and more** > **Downloads** > **Show in folder** icon:
+
+   ![Downloading .NET Framework Developer Pack](media/webview2windowsformsbrowser-thx-dl-net-fwk.png)
+
+1. In the `Downloads` folder, double-click the file, such as `ndp462-devpack-kb3151934-enu.exe`.
+
+   The **Microsoft .NET Framework Developer Pack** license agreement dialog box appears:
+
+   ![The Microsoft .NET Framework Developer Pack license agreement dialog box.](media/webview2windowsformsbrowser-net-fwk-license-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack license agreement dialog box.](media/webview2windowsformsbrowser-net-fwk-license.png) 4.8, keep as-in, in case needed -->
+
+1. Select the **I agree to the license terms and conditions** checkbox, and then click the **Install** button.
+
+   A **User Account Control** window appears, asking "Do you want to allow this app to make changes to your device?"
+
+1. Click the **Yes** button.
+
+   The Microsoft .NET Framework Developer Pack **Setup Successful** dialog box appears:
+
+   ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box.](media/webview2windowsformsbrowser-net-dev-pak-success-462.png)
+   <!-- ![The Microsoft .NET Framework Developer Pack 'Setup Successful' dialog box.](media/webview2windowsformsbrowser-net-dev-pak-success.png) 4.8, keep as-in, in case needed -->
+
+1. Click the **Close** button.
+
+Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
+
+
+<!-- ====================================================================== -->
+## Build the project again
+
+1. Close Visual Studio and then re-open the solution file in Visual Studio.  If needed, reboot your computer.
+
+1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
+
+   This builds the project file `SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.vcxproj`.  This might take a couple minutes.
+
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
-   The sample app window opens.
+   The sample app window opens:
 
-1. In the sample app window, use the sample app.
+   ![The WebView2WindowsFormsBrowser app window.](media/webview2windowsformsbrowser-app-window.png)
 
-1. In the Visual Studio code editor, inspect the code; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#readme).
+1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#readme).
 
-1. Close the sample app window.
+1. In Visual Studio, select **Debug** > **Stop Debugging**.
+
+1. In the Visual Studio code editor, inspect the code:
+
+   <!-- this same png is used multiple times in this file -->
+   ![The WebView2WindowsFormsBrowser project in Visual Studio](media/webview2windowsformsbrowser-in-visual-studio.png)
+
+   _To zoom, right-click > **Open image in new tab**._
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Get started with WebView2 in WinForms apps](../get-started/winforms.md)

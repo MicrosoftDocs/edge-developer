@@ -579,16 +579,20 @@ Congratulations, you built your first WebView2 app!
 ## See also
 
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+
+Local pages:
+* [WebView2 sample: WinForms browser app](../samples/webview2windowsformsbrowser.md) - Demonstrates more WebView2 APIs than the present tutorial.
 * [Manage user data folders](../concepts/user-data-folder.md)
-* [API Reference: Microsoft.Web.WebView2.WinForms Namespace](/dotnet/api/microsoft.web.webview2.winforms)
-* [Microsoft.Web.WebView2 SDK at nuget.org](https://www.nuget.org/packages/Microsoft.Web.WebView2)
-
-
-<!-- ====================================================================== -->
-## Next steps
-
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
-   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
 * [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_ - Conceptual and how-to articles about building and deploying WebView2 apps.
+
+GitHub:
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
+
+API Reference:
+* [API Reference: Microsoft.Web.WebView2.WinForms Namespace](/dotnet/api/microsoft.web.webview2.winforms)
 * [WebView2 API reference](/dotnet/api/microsoft.web.webview2.winforms.webview2)
+
+NuGet:
+* [Microsoft.Web.WebView2 SDK at nuget.org](https://www.nuget.org/packages/Microsoft.Web.WebView2)

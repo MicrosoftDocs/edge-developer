@@ -71,11 +71,11 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    ![The webview2_sample_uwp project running, displaying webpage content.](media/webview2_sample_uwp-webpage-content.png)
 
-1. In the sample app window, use the sample app.
+1. Use the sample app; see [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp#readme).
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.
 
-1. In the Visual Studio code editor, inspect the code; see [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp#readme).
+1. In the Visual Studio code editor, inspect the code:
 
    ![MainPage.xaml in Visual Studio.](media/webview2_sample_uwp-mainpage-xaml.png)
 
