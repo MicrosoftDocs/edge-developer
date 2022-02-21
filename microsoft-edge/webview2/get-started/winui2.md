@@ -37,6 +37,8 @@ The WebView2 WinUI 2 control is in development.  The following features haven't 
 *  Service Workers on Windows devices before 20H2.
 
 
+In this tutorial, you set up your development tools, create an initial WinUI 2 (UWP) app, add a WebView2 control that displays webpage content, and learn about WebView2 concepts along the way.
+
 Follow the major Step sections in sequence, below.
 
 
@@ -206,6 +208,8 @@ Next, you set up this new UWP project to do WinUI 2 and WebView2 development.
 1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected.
 
    ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/winui2-nuget-pkg-mgr-webview2.png)
+
+   _To zoom, right-click > **Open image in new tab**._
 
 1. Click the **Install** (or **Update**) button.
 
