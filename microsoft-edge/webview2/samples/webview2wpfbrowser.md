@@ -75,7 +75,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. Use the sample app; see [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#readme).
 
-1. In Visual Studio, select **Debug** > **Stop Debugging**.
+1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 1. In the Visual Studio code editor, inspect the code:
 
@@ -87,4 +87,4 @@ The steps on the present page are general-purpose.  See the sample-specific step
 <!-- ====================================================================== -->
 ## See also
 
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)
+* [Get started with WebView2 in WPF apps](../get-started/wpf.md)

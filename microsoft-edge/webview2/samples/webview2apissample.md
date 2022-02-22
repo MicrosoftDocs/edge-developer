@@ -89,7 +89,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. Use the sample app.  See [README file for WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme)
 
-1. In Visual Studio, select **Debug** > **Stop Debugging**.
+1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 1. In the Visual Studio code editor, inspect the code.
 
@@ -97,3 +97,9 @@ The steps on the present page are general-purpose.  See the sample-specific step
 <!--
 Note: The `.sln` file is not in the sample repo directory that contains this sample's [README.md file](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme), or the equivalent local filesystem directory.  Instead, the `.sln` file for this sample is in the parent directory that corresponds to the [SampleApps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps) repo directory.
 -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md)

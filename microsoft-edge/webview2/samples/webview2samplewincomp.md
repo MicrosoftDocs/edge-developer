@@ -189,10 +189,25 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
    <!-- ![The WebView2SampleWinComp app window.](media/webview2samplewincomp-app-window.png) -->
 
-1. In the sample app window, use the sample app.  See [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).
+   The sample app window opens.
 
-1. Close the sample app window.
+   <!-- The sample app window opens: -->
+   <!-- ![The WebView2SampleWinComp app window.](media/WebView2SampleWinComp-app-window.png) -->
+   <!-- todo: create png -->
 
-1. In Visual Studio, select **Debug** > **Stop Debugging**.
+1. Use the sample app; see [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).
+
+1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 1. In the Visual Studio code editor, inspect the code.
+
+<!-- 1. In the Visual Studio code editor, inspect the code: -->
+   <!-- ![The WebView2SampleWinComp project in Visual Studio](media/WebView2SampleWinComp-in-visual-studio.png) -->
+
+   <!-- _To zoom, right-click > **Open image in new tab**._ -->
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md)

@@ -146,7 +146,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#readme).
 
-1. In Visual Studio, select **Debug** > **Stop Debugging**.
+1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 1. In the Visual Studio code editor, inspect the code:
 

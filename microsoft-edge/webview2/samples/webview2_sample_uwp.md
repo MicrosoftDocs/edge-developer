@@ -81,7 +81,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. Use the sample app; see [README file for webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp#readme).
 
-1. In Visual Studio, select **Debug** > **Stop Debugging**.
+1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
 1. In the Visual Studio code editor, inspect the code:
 
