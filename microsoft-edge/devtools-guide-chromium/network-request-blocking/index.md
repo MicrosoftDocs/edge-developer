@@ -35,7 +35,7 @@ To delete a request you don't want to block anymore, hover over it in in the **N
 
 ![Removing a blocked request](./media/remove-blocked-request.png)
 
-You can also delete all requests at once by clicking **Remove all patterns** (![Remove blocked request icon](./media/remove-all-blocked-requests-icon.png)) in the toolbar.
+You can also delete all requests at once by clicking **Remove all patterns** (![Remove all blocked requests icon](./media/remove-all-blocked-requests-icon.png)) in the toolbar.
 
 ### Update blocked requests
 
