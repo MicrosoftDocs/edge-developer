@@ -24,9 +24,9 @@ ms.date: 05/04/2021
 
 These are the default keyboard shortcuts for Microsoft Edge DevTools.
 
-Tooltips often show a keyboard shortcut.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
+In DevTools, when you hover over an icon, often the tooltip shows a keyboard shortcut.
 
-See also [Customize keyboard shortcuts](../customize/shortcuts.md).
+See also [Navigate DevTools with assistive technology](../accessibility/navigation.md) and [Customize keyboard shortcuts](../customize/shortcuts.md).
 
 
 <!-- ====================================================================== -->
@@ -165,6 +165,14 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Force a multi-line entry.  This shortcut is mostly unnecessary, because DevTools should detect multi-line scenarios by default | `Shift`+`Enter` | `Command`+`Return` |
 | Run | `Enter` | `Return` |
 | Expand all subproperties of an object that are logged to the Console | Hold `Alt`, then click **Expand** (![Expand.](../media/expand-icon.msft.png)) | Hold `Alt`, then click **Expand** (![Expand.](../media/expand-icon.msft.png)). |
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Navigate DevTools with assistive technology](../accessibility/navigation.md)
+* [Customize keyboard shortcuts](../customize/shortcuts.md)
+* [Run commands in the Command Menu](../command-menu/index.md)
 
 
 <!-- ====================================================================== -->
