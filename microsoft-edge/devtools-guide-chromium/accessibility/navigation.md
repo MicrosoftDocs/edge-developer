@@ -49,21 +49,30 @@ Technically, the tabs are an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#
 For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../shortcuts/index.md).  Be sure to bookmark it and refer back to it as you explore the different tools.
 
 
+<!-- keep the following entire h2 sync'd with (copied wholesale to) [Open DevTools](../index.md#open-devtools) in _Overview of DevTools_ -->
 <!-- ====================================================================== -->
 ## Open DevTools
 
-There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
-
-<!-- keep sync'd with [Open DevTools](../index.md#open-devtools) in _Overview of DevTools_ -->
+You can open DevTools by using the mouse or keyboard, in any of the following ways:
 
 | Action | Resulting tool |
 |---|---|
-| Right-click any item on a webpage, and then select **Inspect**.<br/>Or press `Shift`+`F10` > `Up Arrow` > `Enter`. | **Elements** (DOM expanded to the page element) |
-| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](../media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools** | Previous tool (or **Welcome**) |
-| Press `F12` | Previous tool (or **Welcome**). |
-| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS)| Previous tool (or **Welcome**) |
-| Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS) | **Console** |
-| Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS) | **Elements** (DOM expanded to `<body>`) |
+| Right-click any item on a webpage, and then select **Inspect**. | The **Elements** tool, with the DOM tree expanded to show the right-clicked page element. |
+| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
+
+Additional ways:
+
+| Action | Resulting tool |
+|---|---|
+| Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
+| Press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
+| Press `F12`. | The previously used tool, or the **Welcome** tool. |
+| Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). | The **Console** tool. |
+| Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
+
+
+<!-- /end of h2 section to keep sync'd -->
 
 See [Open DevTools](../index.md#open-devtools).
 

@@ -25,9 +25,9 @@ The following features are additional ways to access the tools:
 <!-- ====================================================================== -->
 ## Overview of all tools
 
-Microsoft Edge DevTools includes the following tools.  Every tool is summarized here.
+Microsoft Edge DevTools includes the following tools.
 
-| Tool | Description | Article |
+| Tool | Purpose | Article |
 | --- | --- | --- |
 | **3D View** tool | Explore the web page translated into a 3D perspective.  Debug your webpage by navigating through the DOM or z-index stacking context. | [Navigate z-index, DOM, and layers using the 3D View tool](3d-view/index.md) |
 | **Animations** tool | Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool. | [Inspect and modify CSS animation effects](inspect-styles/animations.md) |
