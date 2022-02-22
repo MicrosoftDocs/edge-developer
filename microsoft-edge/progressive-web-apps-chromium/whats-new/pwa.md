@@ -23,19 +23,19 @@ Available apps will show any apps you've installed on other devices with the sam
 
    :::image type="content" source="media/available-app-install.png" alt-text="Available apps shown on Apps page with install button highlighted.":::
 
-To keep your apps in sync across devices, adding an app on one device will add it to the "Available apps" on other devices. Uninstalling an app on one device will remove it from other devices.
+App sync is available on desktop devices only at this stage. To keep your apps in sync across devices, adding an app on one device will add it to the "Available apps" section on other devices. Uninstalling an app on one device will remove it from other devices.
 
 ### Redesigned Apps Menu
-The Apps menu item within Edge's "More Menu" is being redesigned so that the menu icon can be added to the taskbar for quick access and the menu can be pinned open as a sidebar to show your apps alongside web content. Customizable sort and view options have been added along with an "Available apps" section to support the app sync feature described above.
+The Apps menu item within Edge's "Settings and more" menu is being redesigned so that the menu icon can be added to the toolbar for quick access and the popup menu can be pinned open as a sidebar to show your apps alongside web content. Customizable sort and view options have been added along with an "Available apps" section to support the app sync feature described above.
 
 
    :::image type="content" source="media/apps-toolbar-icon.png" alt-text="App icon can be shown on the toolbar for quick access":::
 
 Users can choose to show the app icon on the toolbar for quick access.
 
-   :::image type="content" source="media/pin-apps-menu.png" alt-text="Users can pin the apps menu open to the side of Edge":::
+   :::image type="content" source="media/pin-apps-menu.png" alt-text="Users can pin the apps menu open as a sidebar":::
 
-Users can pin the apps menu open
+Users can pin the apps menu open as a sidebar.
 
    :::image type="content" source="media/apps-view-options.png" alt-text="Users can choose between list or grid view for their apps":::
 
