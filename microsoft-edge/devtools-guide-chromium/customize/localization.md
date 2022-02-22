@@ -27,6 +27,8 @@ The DevTools UI in Chinese:
 
 ![The DevTools UI in Chinese.](../media/localization-zh.msft.png)
 
+_To zoom: right-click > **Open image in new tab**._
+
 
 <!-- ====================================================================== -->
 ## Reverting the DevTools UI to English
@@ -39,7 +41,7 @@ To revert the UI text of DevTools to English:
 
 1. In the **Preferences** page, in the **Appearance** section, locate the **Language** dropdown list, which is the first item at the top of the page.
 
-1. In the **Language** dropdown list, select **Browser UI language**, which is the first menuitem in the dropdown list.  Or, select **English**:
+1. In the **Language** dropdown list, select **Browser UI language**, which is the first menuitem in the dropdown list.  Or, select **English**.
 
    What the dropdown list looks like if your DevTools UI is currently English:
 
@@ -49,7 +51,7 @@ To revert the UI text of DevTools to English:
 
    ![The use 'Browser UI language' setting in the Preferences page of Settings, changing from Japanese UI strings.](media/browser-ui-language-setting-from-ja-jp.png)
 
-1. Click the **Close** (x) button in the upper right of the **Settings** panel, and then click the **Reload DevTools** button that temporarily appears at the top of DevTools:
+1. Click the **Close** (x) button in the upper right of the **Settings** panel, and then click the **Reload DevTools** button that temporarily appears at the top of DevTools.
 
    What the **Reload DevTools** button looks like when changing the DevTools UI from Japanese to English:
 
