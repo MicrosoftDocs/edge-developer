@@ -804,7 +804,7 @@
               displayName: Sample Code for WebView2  # top-of-page title
 
 # comprehensive API samples, in alpha order of downloaded repo directories
-            - name: Comprehensive API samples
+            - name: WebView2 control and API samples
               items:
                 - name: UWP WinUI 2 browser app
                   href: webview2/samples/webview2_sample_uwp.md

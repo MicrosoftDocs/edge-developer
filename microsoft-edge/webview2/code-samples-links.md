@@ -10,20 +10,13 @@ ms.date: 10/21/2021
 ---
 # Sample Code for WebView2
 
-<!--
-standard order:
-1. platform-specific Get Started `.sln` files
-2. multi-platform, comprehensive-API `.sln` file
-3. platform-specific comprehensive-API `.sln` files
--->
-
 This article is about understanding what samples, `.sln` files, and `README.md` files are in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 
 <!-- ====================================================================== -->
 ## Sample code for Get Started guides
 
-The WebView2 Get Started guides help you create the same completed, working projects as are in the `WebView2Samples` repo, which you can download or clone.  These are not comprehensive API examples, but only demonstrate a few API items.
+The WebView2 Get Started guides help you create the same completed, working projects as are in the `WebView2Samples` repo, which you can download or clone.
 
 | Platform | Article | Code |
 |---|---|---|
@@ -37,7 +30,7 @@ The WebView2 Get Started guides help you create the same completed, working proj
 <!-- ====================================================================== -->
 ## Apps in the WebView2Samples.sln file
 
-The `WebView2Samples` repo includes comprehensive-API, platform-specific sample projects, for Win32, WPF, WinForms, and WinUI.  These samples are hybrid applications that use the Microsoft Edge WebView2 control.
+The `WebView2Samples` repo includes samples that demonstrate the WebView2 control and the WebView2 API, for Win32, WPF, WinForms, and WinUI.  These samples are hybrid applications that use the Microsoft Edge WebView2 control.
 
 1. In a separate window or tab, see [WebView2Samples repo (README page)](https://github.com/MicrosoftEdge/WebView2Samples).
 
@@ -92,16 +85,16 @@ For general initial Dev environment setup, you can open any of the `.sln` files 
 
 *  One of the four platform-specific `.sln` files in the [GettingStartedGuides directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides).
 
-*  The multi-platform, comprehensive-API `.sln` file in the [SampleApps directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).  Has a long [WebView2 API Sample README file](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme).
+*  The multi-platform `.sln` file in the [SampleApps directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).  Has a long [WebView2 API Sample README file](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme).
 
-*  One of the five platform-specific, comprehensive-API `.sln` files in the [SampleApps directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).
+*  One of the five platform-specific `.sln` files in the [SampleApps directory](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps).  These demonstrate adding the WebView2 control to an app on various platforms.
 
 
 The `WebView2Samples` repo has two main parts:
 
 *  A set of Get Started solutions (`.sln` files and their various project files).  There is a `README.md` file for each `.sln` file; most of them are very short.  Most documentation is in the present set of articles.
 
-*  A set of comprehensive-API, platform-specific samples (each with its own directory and `.sln` file), including a multi-platform, comprehensive-API `.sln` file.
+*  A set of platform-specific samples (each with its own directory and `.sln` file), along with one multi-platform `.sln` file.
 
 
 To download or clone this repo, see [Set up your Dev environment for WebView2](how-to/machine-setup.md).
@@ -156,8 +149,8 @@ There are four platform-specific solution files for the Get Started guides:
 
 There is one multi-platform solution file:
 
-*  WebView2Samples: [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps) - comprehensive.
-   *  [WebView2Samples/SampleApps/WebView2APISample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme) - A recommended long Readme file for the "WebView2 API Sample".  This sample is an example of an application that embeds a WebView within a Win32 native application.  It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and HTML/CSS/JavaScript in the WebView2 environment.
+*  WebView2Samples: [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps) - this solution file includes multiple platform projects.
+   *  [WebView2Samples/SampleApps/WebView2APISample/README.md](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#readme) - A recommended long Readme file for the "WebView2 API Sample".  This sample is an example of an application that embeds a WebView within a Win32 native application.  It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and HTML/CSS/JavaScript in the WebView2 environment.  It showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView, and vice versa.
 
 There are five platform-specific solution files:
 
