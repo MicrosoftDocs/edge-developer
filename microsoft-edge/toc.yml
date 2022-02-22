@@ -386,7 +386,7 @@
             - name: Network request blocking tool
               items:
                 - name: Block network requests
-                  href: devtools-guide-chromium/network-request-blocking/index.md
+                  href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
                   displayName: Network request blocking tool
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
