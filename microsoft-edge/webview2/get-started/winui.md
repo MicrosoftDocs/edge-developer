@@ -41,7 +41,6 @@ Return from that page and continue the steps below.
 
 Return from that page and continue the steps below.
 
-
 <!--
 Or, install the WebView2 Runtime, as follows:
 

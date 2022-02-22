@@ -18,7 +18,10 @@ When you're using a WebView2 app, there are several ways to open DevTools:
 *  Press `Ctrl`+`Shift`+`I`.
 *  Right-click the page and then select `Inspect`.
 
-:::image type="content" source="media/f12.png" alt-text="DevTools debugging." lightbox="media/f12.png":::
+![DevTools debugging.](media/f12.png)
+
+_To zoom, right-click > **Open image in new tab**._
+
 
 
 <!-- ====================================================================== -->

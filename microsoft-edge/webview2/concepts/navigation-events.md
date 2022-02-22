@@ -39,7 +39,7 @@ The normal sequence of navigation events is:
 
 The following events describe the state of WebView2 during each navigation action:
 
-:::image type="content" source="../media/navigation-graph.png" alt-text="WebView2 Navigation Events." lightbox="../media/navigation-graph.png":::
+![WebView2 Navigation Events.](../media/navigation-graph.png)
 
 | Sequence | Event name | Details |
 | --- | --- | --- |

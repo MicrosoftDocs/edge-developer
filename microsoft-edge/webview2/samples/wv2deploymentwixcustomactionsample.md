@@ -38,6 +38,8 @@ The steps on the present page are general-purpose.  See the sample-specific step
 <!-- ====================================================================== -->
 ## Step 2 - Install Visual Studio
 
+Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
+
 1. **Visual Studio** - If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 

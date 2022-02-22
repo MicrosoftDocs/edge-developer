@@ -17,27 +17,31 @@ todo: errors experienced with vs2022 by following these instructions:
 
 This article covers how to set up your development tools and create an initial WebView2 app for the WinForms platform, and learn about WebView2 concepts along the way.
 
-To use this article, do either of the following:
+
+<!-- ====================================================================== -->
+## Step 1 - Optionally download or clone the WebView2Samples repo
+
+Do either of the following:
 
 *  Create a new project in Visual Studio, using the steps below.  If you want to see the completed project, you can see the [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) directory in the `WebView2Samples` repo.
 
 *  Download or clone the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.
 
-* Corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) - no readme.
-
+The corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) (no readme file).
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio and a Microsoft Edge preview channel
+## Step 2 - Install Visual Studio
 
-### Install Visual Studio
+Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this tutorial.
 
 1. If Visual Studio isn't installed already, open the page [Microsoft Visual Studio](https://visualstudio.microsoft.com) in a new window or tab, and install Visual Studio 2017 or later, such as Visual Studio 2022 Professional.
 
    Then return here and continue below.
 
 
-### Install a preview channel of Microsoft Edge
+<!-- ====================================================================== -->
+## Step 3 - Install a preview channel of Microsoft Edge
 
 1. Install any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
    *  Windows 7
@@ -48,7 +52,8 @@ To use this article, do either of the following:
    We recommend using the Canary channel.  The minimum required version is 82.0.488.0.
 
 
-### Install the WebView2 Runtime (optional)
+<!-- ====================================================================== -->
+## Step 4 - Install the WebView2 Runtime (optional)
 
 1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
 
@@ -62,7 +67,7 @@ Continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 2 - Create a single-window app
+## Step 5 - Create a single-window app
 
 Start with a basic desktop project that contains a single main window.
 
@@ -124,7 +129,7 @@ You now have an empty WinForms project that runs.  Next, set up the project to a
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 3 - Install the WebView2 SDK
+## Step 6 - Install the WebView2 SDK
 
 For every WebView2 project, you use the NuGet package manager within Visual Studio to add the WebView2 SDK to the project.  You install the Microsoft.Web.WebView2 SDK NuGet package for use by the current project.
 
@@ -172,7 +177,7 @@ You've added the WebView2 SDK to the project, but haven't added any WebView code
 
 
 <!-- ====================================================================== -->
-## Step 4 - Create a single WebView
+## Step 7 - Create a single WebView
 
 Now that the WebView2 SDK is installed for the WinForms project, add a WebView2 control to the app, as follows:
 
@@ -232,7 +237,7 @@ If you're working on a high-resolution monitor, you may need to [configure your 
 
 
 <!-- ====================================================================== -->
-## Step 5 - Add controls and process window resize events
+## Step 8 - Add controls and process window resize events
 
 Add more controls to your Windows Forms form from the toolbox, and then process window resize events, as follows.
 
@@ -322,7 +327,7 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 
 
 <!-- ====================================================================== -->
-## Step 6 - Navigation
+## Step 9 - Navigation
 
 Enable users to change the URL that the WebView2 control displays, by reading the text entered in the text box, to serve as an address bar.
 
@@ -370,7 +375,7 @@ Enable users to change the URL that the WebView2 control displays, by reading th
 
 
 <!-- ====================================================================== -->
-## Step 7 - Navigation events
+## Step 10 - Navigation events
 
 <!--
 maintenance link (keep)
@@ -443,7 +448,7 @@ To demonstrate how to use the events, start by registering a handler for `Naviga
 
 
 <!-- ====================================================================== -->
-## Step 8 - Scripting
+## Step 11 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime. You can task WebView2 to run arbitrary JavaScript or add initialization scripts. The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed. The injected JavaScript runs with specific timing.
 
@@ -485,7 +490,7 @@ For example, add a script that sends an alert when a user navigates to a non-HTT
 
 
 <!-- ====================================================================== -->
-## Step 9 - Communication between host and web content
+## Step 12 - Communication between host and web content
 
 The host and web content can use `postMessage` to communicate with each other as follows:
 

@@ -16,11 +16,17 @@ This article covers how to set up your development tools and create an initial W
 
 
 <!-- ====================================================================== -->
-## Step 1 - Install developer tools for WebView2 apps
+## Step 1 - Install Visual Studio
+
+This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code.
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com) 2017 or later.  You can accept the defaults.
 
-1. Download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
+
+<!-- ====================================================================== -->
+## Step 2 - Install a preview channel of Microsoft Edge
+
+1. Download any [Microsoft Edge Insider (preview) Channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) on a supported operating system (OS):
    *  Windows 7
    *  Windows 8.1
    *  Windows 10
@@ -28,9 +34,11 @@ This article covers how to set up your development tools and create an initial W
 
    We recommend using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
 
+<!-- Or, download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or  -->
+
 
 <!-- ====================================================================== -->
-## Step 2 - Create a single-window WebView2 app
+## Step 3 - Create a single-window WebView2 app
 
 Start with a basic desktop project that contains a single main window.
 
@@ -81,13 +89,13 @@ Start with a basic desktop project that contains a single main window.
 [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_
 -->
 <!-- ====================================================================== -->
-## Step 3 - Install the WebView2 SDK
+## Step 4 - Install the WebView2 SDK
 
 Use NuGet to add the WebView2 SDK to the project.
 
 1. In **Solution Explorer**, right-click the project name, and then select **Manage NuGet Packages**:
 
-   :::image type="content" source="media/wpf-getting-started-mng-nuget.png" alt-text="The 'Manage NuGet packages' command on the right-click menu.":::
+   ![The 'Manage NuGet packages' command on the right-click menu.](media/wpf-getting-started-mng-nuget.png)
 
    <!-- todo: The above image is supposed to show the WPF project instead of the WinForms project.  generally, avoid sharing images across multiple .md files -->
    _(The above image is supposed to show the WPF project instead of the WinForms project.)_
@@ -96,7 +104,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
    The NuGet package manager dialog box displays search results, including a **Microsoft.Web.WebView2** card.  The dialog box has a version number and **Install** button.
    
-   :::image type="content" source="./media/install-nuget.png" alt-text="NuGet package manager dialog box displays the Microsoft.Web.WebView2 card." lightbox="./media/install-nuget.png":::
+   ![NuGet package manager dialog box displays the Microsoft.Web.WebView2 card.](media/install-nuget.png)
 
 1. Accept the default version, and then click the **Install** button.
 
@@ -108,11 +116,11 @@ Use NuGet to add the WebView2 SDK to the project.
 
    The project runs, and displays an empty window.  This verifies that WebView2 is installed and working, although WebView2 has no content to display yet:
 
-   :::image type="content" source="./media/winforms-empty-app.png" alt-text="Empty app window." lightbox="./media/winforms-empty-app.png":::
+   ![Empty app window.](media/winforms-empty-app.png)
 
 
 <!-- ====================================================================== -->
-## Step 4 - Create a single WebView
+## Step 5 - Create a single WebView
 
 Add a WebView2 control to your app.
 
@@ -159,11 +167,11 @@ Add a WebView2 control to your app.
 
 1. Make sure your WebView2 control displays [https://www.microsoft.com](https://www.microsoft.com):
 
-   :::image type="content" source="./media/wpf-getting-started-microsoft.png" alt-text="The WebView2 control, displaying Microsoft.com.":::
+   ![The WebView2 control, displaying webpage content from microsoft.com.](media/wpf-getting-started-microsoft.png)
 
 
 <!-- ====================================================================== -->
-## Step 5 - Navigation
+## Step 6 - Navigation
 
 Enable users to change the URL that the WebView2 control displays, by adding an address bar to the app.
 
@@ -249,7 +257,7 @@ Enable users to change the URL that the WebView2 control displays, by adding an 
 
    The sample app displays the Bing website with the URL `https://www.bing.com` in the address bar:
 
-   :::image type="content" source="./media/wpf-getting-started-bing.png" alt-text="The app displays the Bing website.":::
+   ![The app displays the Bing website.](media/wpf-getting-started-bing.png)
 
 
 <!--
@@ -257,7 +265,7 @@ maintenance link (keep)
 * [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
 -->
 <!-- ====================================================================== -->
-## Step 6 - Navigation events
+## Step 7 - Navigation events
 
 During webpage navigation, the WebView2 control raises events. The app that hosts WebView2 controls listens for the following events:
 
@@ -334,7 +342,7 @@ To demonstrate how to use the events, register a handler for `NavigationStarting
 
 
 <!-- ====================================================================== -->
-## Step 7 - Scripting
+## Step 8 - Scripting
 
 You can use host apps to inject JavaScript code into WebView2 controls at runtime.  You can task WebView2 to run arbitrary JavaScript or add initialization scripts.  The injected JavaScript applies to all new top-level documents and any child frames until the JavaScript is removed.
 
@@ -365,11 +373,11 @@ For example, add scripts that send an alert when a user navigates to non-HTTPS s
 
 1. Make sure the app displays an alert when you navigate to a website that doesn't use HTTPS.
 
-:::image type="content" source="./media/wpf-getting-started-https.png" alt-text="Message showing that an http: URL is not safe, and recommending trying an https: URL instead.":::
+   ![Message showing that an http: URL is not safe, and recommending trying an https: URL instead.](media/wpf-getting-started-https.png)
 
 
 <!-- ====================================================================== -->
-## Step 8 - Communication between host and web content
+## Step 9 - Communication between host and web content
 
 The host and web content can communicate in the following ways using `postMessage`:
 
@@ -439,7 +447,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    The sample app displays the URI in the address bar and the Microsoft website, https://www.microsoft.com:
 
-   :::image type="content" source="./media/wpf-getting-started-searchbar.png" alt-text="The sample app displays the URI in the address bar and the Microsoft website.":::
+   ![The sample app displays the URI in the address bar and the Microsoft website.](media/wpf-getting-started-searchbar.png)
 
 Congratulations, you built your first WebView2 app!
 

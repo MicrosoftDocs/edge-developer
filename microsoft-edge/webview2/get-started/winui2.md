@@ -30,8 +30,6 @@ WinUI 2 supports UWP only.  These controls are backward-compatible.
 Follow the major Step sections in sequence, below.
 
 
-
-
 <!-- ====================================================================== -->
 ## Step 1 - Download a preview channel of Microsoft Edge
 

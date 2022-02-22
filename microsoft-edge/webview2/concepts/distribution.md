@@ -63,7 +63,7 @@ Cons:
 
 The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
 
-:::image type="content" source="../media/runtime-distrib-options.png" alt-text="Options for distributing and updating the WebView2 Runtime." lightbox="../media/runtime-distrib-options.png":::
+![Options for distributing and updating the WebView2 Runtime.](../media/runtime-distrib-options.png)
 
 *  The **Evergreen Bootstrapper** section of the page provides a small Evergreen Runtime bootstrapper that runs on the client machine, for online users.  The bootstrapper downloads and installs the appropriate WebView2 Evergreen Runtime onto the client.  You can use the bootstrapper a couple different ways:
 
