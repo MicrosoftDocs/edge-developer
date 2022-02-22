@@ -30,15 +30,19 @@ The Apps menu item within Edge's "More Menu" is being redesigned so that the men
 
 
    :::image type="content" source="media/apps-toolbar-icon.png" alt-text="App icon can be shown on the toolbar for quick access":::
+
 Users can choose to show the app icon on the toolbar for quick access.
 
    :::image type="content" source="media/pin-apps-menu.png" alt-text="Users can pin the apps menu open to the side of Edge":::
+
 Users can pin the apps menu open
 
    :::image type="content" source="media/apps-view-options.png" alt-text="Users can choose between list or grid view for their apps":::
+
 Users can choose between list or grid view.
 
    :::image type="content" source="media/apps-sort-options.png" alt-text="Users can choose the sort order of their apps":::
+
 Users can choose the sort order of their apps.
 
 
