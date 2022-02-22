@@ -13,6 +13,35 @@ This page lists the updates to PWAs and Web Apps from the Microsoft Edge Web App
 
 
 <!-- ====================================================================== -->
+## What's New in Microsoft Edge 100
+Microsoft Edge Canary/Dev channels moved to version 100 on February 9,2022 and in this milestone, we are testing the following new web app features. 
+
+### App Sync
+The sync service powering features like favorites, settings, history & more has been expanded to include your installed web apps - that is PWAs and sites installed as apps. The sync service works when you are signed in to your profile and have opted in to syncing. As we test and gradually release this feature over the coming weeks, users that have opted in to sync will start to see "Available apps" in the `edge://apps` page and the new Apps menu. 
+
+Available apps will show any apps you've installed on other devices with the same signed in profile, that aren't currently installed in the Edge instance you are using. The available apps will be shown in their own section with grey icons. Press the "Install" button to install the app on that device.
+
+   :::image type="content" source="media/available-app-install.png" alt-text="Available apps shown on Apps page with install button highlighted.":::
+
+To keep your apps in sync across devices, adding an app on one device will add it to the "Available apps" on other devices. Uninstalling an app on one device will remove it from other devices.
+
+### Redesigned Apps Menu
+The Apps menu item within Edge's "More Menu" is being redesigned so that the menu icon can be added to the taskbar for quick access and the menu can be pinned open as a sidebar to show your apps alongside web content. Customizable sort and view options have been added along with an "Available apps" section to support the app sync feature described above.
+
+
+   :::image type="content" source="media/app-toolbar-icon.png" alt-text="App icon can be shown on the toolbar for quick access":::
+Users can choose to show the app icon on the toolbar for quick access.
+
+   :::image type="content" source="media/pin-apps-menu.png" alt-text="Users can pin the apps menu open to the side of Edge":::
+Users can pin the apps menu open
+
+   :::image type="content" source="media/apps-view-options.png" alt-text="Users can choose between list or grid view for their apps":::
+Users can choose between list or grid view.
+
+   :::image type="content" source="media/apps-sort-options.png" alt-text="Users can choose the sort order of their apps":::
+Users can choose the sort order of their apps.
+
+
 ## What's New in Microsoft Edge 97
 
 Microsoft Edge version 96 is scheduled to become the Stable release on November 18, 2021.  Microsoft Edge version 97 will move from Dev to Beta preview channel following that date.
