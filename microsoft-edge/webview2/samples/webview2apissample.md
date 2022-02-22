@@ -121,7 +121,6 @@ Install or update the _prerelease_ WebView2 SDK for the project, as follows:
 The WebView2 SDK is now installed for this project.
 
 
-
 <!-- ====================================================================== -->
 ## Step 9 - Build the project
 

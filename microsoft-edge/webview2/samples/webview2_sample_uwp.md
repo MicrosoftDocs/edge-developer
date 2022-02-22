@@ -188,7 +188,9 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** drop-down list, select **Any CPU** (or a specific platform if **Any CPU** isn't listed).<!--Any CPU is not available.-->
+
+   ![Setting the build target at the top of Visual Studio.](media/webview2_sample_uwp-set-build-target.png)
 
 1. In **Solution Explorer**, right-click the **webview2_sample_uwp** project, and then select **Build**.
 
