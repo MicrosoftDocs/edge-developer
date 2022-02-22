@@ -23,7 +23,11 @@ Directory &amp; project name: **WebView2SampleWinComp**.
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. **README** - In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).  Then return to this page and continue the steps below.
+
+<!-- ====================================================================== -->
+## Step 1 - View the Readme
+
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).  Then return to this page and continue the steps below.
 
    * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#prerequisites)
 
@@ -37,13 +41,29 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/README.md`
 
-1. **Visual Studio** - If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. **Preview channel of Microsoft Edge** - If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+<!-- ====================================================================== -->
+## Step 2 - Install Visual Studio
 
-1. **Download samples** - If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. **Open .sln in Visual Studio** - On your local drive, open the `.sln` file in Visual Studio, in the directory:
+
+<!-- ====================================================================== -->
+## Step 3 - Install a preview channel of Microsoft Edge
+
+1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+
+
+<!-- ====================================================================== -->
+## Step 4 - Download or clone the WebView2Samples repo
+
+1. If not done already, download or clone the `WebView2Sample` repo to your local drive.  In a separate window or tab, see [Download the WebView2Samples repo](../how-to/machine-setup.md#download-the-webview2samples-repo) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+
+<!-- ====================================================================== -->
+## Step 5 - Open .sln in Visual Studio
+
+1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
    *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
@@ -57,7 +77,11 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. Click the **OK** button.
 
-1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+<!-- ====================================================================== -->
+## Step 6 - Install workloads if prompted
+
+1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
    Solution Explorer shows the **WebView2SampleWinComp** project.
 
@@ -66,17 +90,27 @@ The steps on the present page are general-purpose.  See the sample-specific step
    <!-- ![The WebView2SampleWinComp sample opened in Visual Studio in Solution Explorer.](media/webview2samplewincomp-in-solution-explorer.png) -->
    <!--todo: create png-->
 
-1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can follow these steps to determine whether the WebView2 SDK is installed for the project.  Follow the steps in that section, and then return to this page and continue below.
 
-   The project opens in Visual Studio:
+<!-- ====================================================================== -->
+## Step 7 - View the opened project
 
-   ![The WebView2SampleWinComp project in Visual Studio.](media/webview2samplewincomp-project-in-sln-explorer.png)
+The project opens in Visual Studio:
 
-   _To zoom, right-click > **Open image in new tab**._
+![The WebView2SampleWinComp project in Visual Studio.](media/webview2samplewincomp-project-in-sln-explorer.png)
+
+_To zoom, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->
-## Building the project
+## Step 8 - Install or update the WebView2 SDK
+
+<!-- comment on sample says: "Update apps to to 1.0.1056-prerelease (#110)"  Oct 28 2021 -->
+
+1. Install or update the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+
+<!-- ====================================================================== -->
+## Step 9 - Build the project
 
 At the top of Visual Studio, set the build target, as follows:
 
@@ -90,9 +124,9 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Installing updated Microsoft.Windows.CppWinRT package
+## Step 10 - Install or update the Microsoft.Windows.CppWinRT package
 
-   The build might fail:
+In the above step, the build might fail, as follows:
 
    ```
    Build started...
@@ -154,7 +188,7 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
 
 <!-- ====================================================================== -->
-## Building the project again
+## Step 11 - Build the project again
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
 
@@ -168,7 +202,7 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
 
 <!-- ====================================================================== -->
-## Running the project in debug mode
+## Step 12 - Run (debug) the project
 
 <!-- retest: -->
 
@@ -187,10 +221,6 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
    After resolving the build issue, and then entering debug mode, the sample app window opens.
 
-   <!-- ![The WebView2SampleWinComp app window.](media/webview2samplewincomp-app-window.png) -->
-
-   The sample app window opens.
-
    <!-- The sample app window opens: -->
    <!-- ![The WebView2SampleWinComp app window.](media/WebView2SampleWinComp-app-window.png) -->
    <!-- todo: create png -->
@@ -199,12 +229,19 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
+
+<!-- ====================================================================== -->
+## Step 13 - Inspect the code
+
 1. In the Visual Studio code editor, inspect the code.
 
-<!-- 1. In the Visual Studio code editor, inspect the code: -->
-   <!-- ![The WebView2SampleWinComp project in Visual Studio](media/WebView2SampleWinComp-in-visual-studio.png) -->
+   <!--
+   1. In the Visual Studio code editor, inspect the code:
 
-   <!-- _To zoom, right-click > **Open image in new tab**._ -->
+   ![The WebView2SampleWinComp project in Visual Studio](media/WebView2SampleWinComp-in-visual-studio.png)
+
+   _To zoom, right-click > **Open image in new tab**._
+   -->
 
 
 <!-- ====================================================================== -->
