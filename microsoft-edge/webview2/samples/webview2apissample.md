@@ -1,5 +1,5 @@
 ---
-title: Win32 C++ sample
+title: "WebView2 sample: Win32 C++ app"
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/18/2022
 ---
-# Win32 C++ app with WebView2 features
+# WebView2 sample: Win32 C++ app
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 
@@ -16,7 +16,7 @@ The WebView2APISample is an example of an application that embeds a WebView with
 
 The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView and vice versa.
 
-Directory &amp; project name: **WebView2APISample**.
+Directory &amp; .sln: **WebView2APISample / WebView2Samples.sln (in parent dir)**.
 
 
 <!-- ====================================================================== -->

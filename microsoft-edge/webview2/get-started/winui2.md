@@ -17,6 +17,9 @@ In this tutorial, you:
 *  Learn about WebView2 concepts along the way.
 
 
+* Corresponding Get Started sample at GitHub: none; WinUI 3: [Getting Started with WebView2 in WinUI3 (WinUI_Sample/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
+
+
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
 *  UWP XAML controls
 *  Dense control styles
@@ -25,6 +28,8 @@ The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  
 WinUI 2 supports UWP only.  These controls are backward-compatible.
 
 Follow the major Step sections in sequence, below.
+
+
 
 
 <!-- ====================================================================== -->
@@ -324,6 +329,7 @@ Package summary:
 ## See also
 
 Local pages:
+* [WebView2 sample: UWP WinUI 2 browser app](../samples/webview2_sample_uwp.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)

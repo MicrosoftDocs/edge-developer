@@ -32,6 +32,7 @@ metadata:
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
+# row1 col1
   # Card
   - title: Microsoft Edge DevTools
     linkLists:
@@ -53,6 +54,7 @@ landingContent:
         links:
           - text: Keyboard shortcuts
             url: /microsoft-edge/devtools-guide-chromium/shortcuts
+# row1 col2
   # Card
   - title: Microsoft Edge extensions
     linkLists:
@@ -74,6 +76,7 @@ landingContent:
             url: /microsoft-edge/extensions-chromium/publish/create-dev-account
           - text: Create a simple extension
             url: /microsoft-edge/extensions-chromium/getting-started/part1-simple-extension
+# row1 col3
   # Card
   - title: Progressive Web Apps
     linkLists:
@@ -95,6 +98,35 @@ landingContent:
             url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
           - text: Web App Manifests
             url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
+# row2 col1
+  # Card
+  - title: Web platform
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Detect Microsoft Edge from your website
+            url: /microsoft-edge/web-platform/user-agent-guidance
+          - text: Site compatibility-impacting changes
+            url: /microsoft-edge/web-platform/site-impacting-changes
+# row2 col2
+  # Card
+  - title: Test and automation
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: DevTools Protocol
+            url: /microsoft-edge/devtools-protocol-chromium
+          - text: Origin Trials
+            url: /microsoft-edge/origin-trials/index
+          - text: Playwright
+            url: /microsoft-edge/playwright/index
+          - text: Puppeteer
+            url: /microsoft-edge/puppeteer
+          - text: WebDriver
+            url: /microsoft-edge/webdriver-chromium
+          - text: webhint extension for Visual Studio Code
+            url: /microsoft-edge/visual-studio-code/webhint
+# row2 col3
   # Card
   - title: WebView2
     linkLists:
@@ -124,32 +156,7 @@ landingContent:
         links:
           - text: WebView2 API Reference
             url: /microsoft-edge/webview2/webview2-api-reference
-  # Card
-  - title: Test and automation
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: DevTools Protocol
-            url: /microsoft-edge/devtools-protocol-chromium
-          - text: Origin Trials
-            url: /microsoft-edge/origin-trials/index
-          - text: Playwright
-            url: /microsoft-edge/playwright/index
-          - text: Puppeteer
-            url: /microsoft-edge/puppeteer
-          - text: WebDriver
-            url: /microsoft-edge/webdriver-chromium
-          - text: webhint extension for Visual Studio Code
-            url: /microsoft-edge/visual-studio-code/webhint
-  # Card
-  - title: Web platform
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Detect Microsoft Edge from your website
-            url: /microsoft-edge/web-platform/user-agent-guidance
-          - text: Site compatibility-impacting changes
-            url: /microsoft-edge/web-platform/site-impacting-changes
+# row3 col1
   # Card
   - title: Microsoft Edge IDE integration
     linkLists:
@@ -163,6 +170,7 @@ landingContent:
             url: /microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension
           - text: webhint extension for Visual Studio Code
             url: /microsoft-edge/visual-studio-code/webhint
+# row3 col2
   # Card
   - title: Accessibility in Microsoft Edge
     linkLists:

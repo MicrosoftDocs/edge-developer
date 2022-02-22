@@ -810,7 +810,7 @@
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
 
-                - name: Win32 C++ app with WebView2 features
+                - name: Win32 C++ app
                   href: webview2/samples/webview2apissample.md
                   displayName: WebView2APISample, SampleApps  # repo dir names
 

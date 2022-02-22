@@ -12,7 +12,7 @@ ms.date: 02/18/2022
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinForms app.
 
-Directory &amp; project name: **WebView2WindowsFormsBrowser**.
+Directory &amp; .sln: **WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln**.
 
 
 <!-- ====================================================================== -->

@@ -1,5 +1,5 @@
 ---
-title: WiX Custom Action to deploy the WebView2 Runtime
+title: "WebView2 sample: WiX Custom Action to deploy the WebView2 Runtime"
 description: A WebView2 sample demonstrating how to use a WiX Custom Action to deploy the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,11 +8,11 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/18/2022
 ---
-# WiX Custom Action to deploy the WebView2 Runtime
+# WebView2 sample: WiX Custom Action to deploy the WebView2 Runtime
 
 This is a WebView2 sample demonstrating how to use a WiX Custom Action to deploy the WebView2 Runtime.
 
-Directory &amp; project name: **WV2DeploymentWiXCustomActionSample**.
+Directory &amp; .proj: **WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.wixproj** (no .sln)
 
 
 <!-- ====================================================================== -->

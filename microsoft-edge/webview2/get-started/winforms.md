@@ -10,10 +10,9 @@ ms.date: 11/05/2021
 ---
 # Get started with WebView2 in WinForms apps
 
-<!-- errors experienced with vs2022 by following these instructions:
-1. The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
-2. The previus screenshots showed a gray bar above the Microsoft.com white nav bar.  Where did that gray bar come, that pushed the Microsoft.com white nav bar down to make space for our added UI?
-Even if we add a gray bar (reserved UI space) at top of window, the alert might overlay our added UI - or it might be pushed down out of the way by the gray bar if a gray backgroun bar (reserved UI space) is somehow added at top.
+<!--
+todo: errors experienced with vs2022 by following these instructions:
+*  The addressbar text box & Go button shift to the right when alt+tab to the Form1 window. 
 -->
 
 This article covers how to set up your development tools and create an initial WebView2 app for the WinForms platform, and learn about WebView2 concepts along the way.
@@ -23,6 +22,9 @@ To use this article, do either of the following:
 *  Create a new project in Visual Studio, using the steps below.  If you want to see the completed project, you can see the [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) directory in the `WebView2Samples` repo.
 
 *  Download or clone the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.
+
+* Corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) - no readme.
+
 
 
 <!-- ====================================================================== -->

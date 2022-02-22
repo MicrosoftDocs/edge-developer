@@ -12,8 +12,7 @@ ms.date: 11/05/2021
 
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
-
-<!--todo: move any lengthy, solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
+* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WPF (WPF_GettingStarted/WPFSample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted#readme)
 
 
 <!-- ====================================================================== -->
@@ -449,15 +448,17 @@ Congratulations, you built your first WebView2 app!
 ## See also
 
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+
+Local pages:
+* [WebView2 sample: WPF .NET browser app](../samples/webview2wpfbrowser.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
+* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
+* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
+* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
+
+API Reference:
 * [API reference: WebView2 class in WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf.webview2)
 * [API reference: WebView2.Wpf namespace](/dotnet/api/microsoft.web.webview2.wpf)
 
-
-<!-- ====================================================================== -->
-## Next steps
-
-* [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
-   * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.
-* [See also](../index.md#see-also) in _Introduction to Microsoft Edge WebView2_.
-* [Development best practices for WebView2 apps](../concepts/developer-guide.md)
+GitHub:
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - a comprehensive example of WebView2 capabilities.

@@ -12,13 +12,14 @@ ms.date: 02/12/2022
 
 In this article, you set up your development tools (if not done already), add WebView2 code to the Win32 app, and learn about WebView2 concepts along the way.
 
-<!--todo: move any lengthy, solution-independent Dev environment setup steps out of each Get Started guide into machine-setup.md -->
-
-The project uses the [Win32_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
+The project uses the [Win32_GettingStarted / WebView2GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
 1. Download or clone the `WebView2Samples` repo to your local drive.
 1. Run the completed project.
 1. Optionally delete the WebView2 code from `HelloWebView.cpp`.
 1. Follow the remaining steps in this article about adding and understanding the WebView2 code.
+
+
+* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 for Win32 apps (Win32_GettingStarted/WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted#readme)
 
 
 **Leverages sample code from a standard C++ Win32 app:**
@@ -745,7 +746,8 @@ The added code is highlighted in green in the **Files changed** tab of this Pull
 Developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
-Local articles:
+Local pages:
+* [WebView2 sample: Win32 C++ app](../samples/webview2apissample.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the samples in the **WebView2Samples** repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
