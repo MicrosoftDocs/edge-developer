@@ -49,19 +49,42 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. **Visual Studio workloads** - If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
-   Solution Explorer shows the **WebView2WpfBrowser** project.
+   The **WebView2WpfBrowser** project opens in Visual Studio:
 
-   <!-- Solution Explorer shows the **WebView2WpfBrowser** project: -->
+   ![The WebView2WpfBrowser project in Visual Studio.](media/webview2wpfbrowser-project-opened.png)
 
-   <!-- ![The WebView2WpfBrowser sample opened in Visual Studio in Solution Explorer.](media/webview2wpfbrowser-in-solution-explorer.png) -->
-   <!--todo: create png-->
+   _To zoom, right-click > **Open image in new tab**._
 
 1. **WebView2 SDK** - If needed, install (or update) the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  You can follow these steps to determine whether the WebView2 SDK is installed for the project.  Follow the steps in that section, and then return to this page and continue below.
 
+   At the top of Visual Studio, set the build target, as follows:
+
+1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+
+1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+
+1. In **Solution Explorer**, right-click the **WebView2WpfBrowser** project, and then select **Build**.
+
+   This builds the project file `WebView2WpfBrowser.csproj`.
+
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
-   The sample app window opens.
+   The sample app window opens:
 
-1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#readme).
+   ![The WebView2WpfBrowser sample app.](media/webview2wpfbrowser-sample-app.png)
 
-1. Close the sample app window.
+1. Use the sample app; see [README file for WebView2WpfBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser#readme).
+
+1. In Visual Studio, select **Debug** > **Stop Debugging**.
+
+1. In the Visual Studio code editor, inspect the code:
+
+   ![WebView2WpfBrowser project's code in Visual Studio.](media/webview2wpfbrowser-code.png)
+
+   _To zoom, right-click > **Open image in new tab**._
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md)

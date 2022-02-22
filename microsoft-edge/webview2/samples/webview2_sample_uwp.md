@@ -59,9 +59,17 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 1. **Microsoft.UI.Xaml NuGut package (WinUI 2 SDK)**: If needed, install (or update) the _prerelease_ Microsoft.UI.Xaml NuGut package (which is the WinUI 2 SDK) on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Step 6 - Install the prerelease WinUI 2 SDK (Microsoft.UI.Xaml)](../get-started/winui2.md#step-6---install-the-prerelease-winui-2-sdk-microsoftuixaml) in _Get started with WebView2 in WinUI 2 (UWP) apps (public preview)_.  Follow the steps in that section, and then return to this page and continue below.
 
-1. In Visual Studio, set the target you want to build (**Debug/Release** or **AnyCPU**).
+   At the top of Visual Studio, set the build target, as follows:
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).  This builds the project file `WebView2_UWP.csproj`.
+1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+
+1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+
+1. In **Solution Explorer**, right-click the **webview2_sample_uwp** project, and then select **Build**.
+
+   This builds the project file `WebView2_UWP.csproj` (per Readme.md), or `webview2_sample_uwp.csproj` (per **Build** > **Rebuild Solution** > **Output**).
+
+1. Select **Debug** > **Start Debugging** (`F5`).
 
    An empty grid window initially appears:
 

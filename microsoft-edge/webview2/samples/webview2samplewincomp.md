@@ -74,11 +74,15 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    _To zoom, right-click > **Open image in new tab**._
 
-1. At the top of Visual Studio, set the target you want to build (**Debug**/**Release**, **x86**/**x64**/**ARM64**).
-
 
 <!-- ====================================================================== -->
 ## Building the project
+
+At the top of Visual Studio, set the build target, as follows:
+
+1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+
+1. In the **Solution Platforms** drop-down list, select **x86**, **x64**, or **ARM64**.
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
 
@@ -156,11 +160,11 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
    This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.  This might take a couple minutes.
 
-   The build might fail:
+   <!-- The build might fail:
 
    ![Build fail: after installing the Microsoft.Windows.CppWinRT package.](media/webview2samplewincomp-build-fail-after-cppwinrt-pkg.png)
 
-   _To zoom, right-click > **Open image in new tab**._
+   _To zoom, right-click > **Open image in new tab**._ -->
 
 
 <!-- ====================================================================== -->

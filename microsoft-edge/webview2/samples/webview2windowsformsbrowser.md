@@ -72,7 +72,13 @@ To use this sample, follow the steps below in order.
 
 To build this project, .NET Framework 4.6.2 Developer Pack is required.
 
-To test whether it is installed:
+To test whether .NET Framework 4.6.2 Developer Pack is installed:
+
+At the top of Visual Studio, set the build target, as follows:
+
+1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+
+1. In the **Solution Platforms** drop-down list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 
@@ -121,6 +127,12 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
    or:
 
    *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+
+At the top of Visual Studio, set the build target, as follows:
+
+1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+
+1. In the **Solution Platforms** drop-down list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 
