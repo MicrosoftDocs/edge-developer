@@ -62,7 +62,7 @@ To download the repo (as a `.zip` file):
 
 1. Click the green **Code** button in the upper right of the GitHub repo, and then click **Download ZIP**.
 
-   ![Cloning the WebView2Samples repo.](../media/download-the-webview2-samples-repo.png)
+   ![Downloading the WebView2Samples repo.](../media/download-the-webview2-samples-repo.png)
 
    The **Download** pop-up appears in Microsoft Edge:
 
