@@ -821,7 +821,7 @@
                   href: webview2/how-to/customize-ui.md
                   displayName: context menu, right-click menu
 
-                - name: Add context menus (right-click menus) to a WebView2 app
+                - name: Add context menus
                   href: webview2/how-to/context-menus.md
                   displayName: right-click menu, context menu
 

@@ -1,5 +1,5 @@
 ---
-title: Add context menus (right-click menus) to a WebView2 app
+title: Add context menus to a WebView2 app
 description: How to add a right-click menu (context menu) to a WebView2 app.  Add and remove items from the default WebView2 context menus.  Create your own context-menu UI by using data that's passed from the WebView2 control to your app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,432 +8,59 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/14/2022
 ---
-# Add context menus (right-click menus) to a WebView2 app
+# Add context menus to a WebView2 app
 
-Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of your WebView2 app.  Using this API, you can:
+Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
 
-*  Add custom menuitems to the default WebView2 context menus.
-
-*  Remove your custom menuitems from the default WebView2 context menus.
-
-*  Create your own context menus.  Your context-menu code uses data that's passed from the WebView2 control to your app.
-
-You can also enable or disable the default WebView2 context menu.  To do that, you don't use this API.
+<!-- headings: assume "menuitems" better reflects the API design & usage than "a menuitem" -->
 
 
 <!-- ====================================================================== -->
-## Events raised when user opens a context menu or selects a menuitem on a context menu
-
-The **ContextMenuRequested** API includes two events that your WebView2 app can listen for: the `CoreWebView2ContextMenuRequested` event and the `CoreWebView2CustomItemSelected` event.
-
-
-<!-- ====================================================================== -->
-## CoreWebView2ContextMenuRequested event, raised when user opens a context menu
-
-The `CoreWebView2ContextMenuRequested` event indicates that the user requested opening a context menu.
-
-The WebView2 control raises this event to indicate that the user requested opening a context menu in the WebView2 control, such as by right-clicking. The WebView2 control only raises the `CoreWebView2ContextMenuRequested` event if the current webpage allows the context menu to appear.
-
-
-<!-- ====================================================================== -->
-## AreDefaultContextMenusEnabled property, controls whether context menu can be opened
-
-If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables the context menu, and the `CoreWebView2ContextMenuRequested` event won't be raised.
-
-
-<!-- ====================================================================== -->
-## Detecting that a context menu was opened
-
-When your app receives the `CoreWebView2ContextMenuRequested` event, indicating that the user requested opening the context menu, your then can do a combination of the following:
-
-*  Add custom menuitems to the default context menu that's provided by the WebView2 control.
-
-*  Remove custom menuitems from the default context menu that's provided by the WebView2 control.
-
-*  Open a custom context menu, using your app's own, custom UI.
-
-
-
-<!-- ====================================================================== -->
-## CoreWebView2CustomItemSelected event, raised when user selects a custom menuitem on a context menu
-
-The `CoreWebView2CustomItemSelected` event indicates that the user selected a custom menuitem on a context menu.  The context menu can be a default WebView2 context menu or a custom context menu.
-
-The WebView2 control raises this event to indicate that the user selected a custom menu item that your app added to a context menu.
-
-
-<!-- ====================================================================== -->
-## Information sent when user selects a custom menuitem on a context menu
-
-When your app indicates to WebView2 that a user selected a menuitem on a context menu, WebView2 sends the following items to your app:
-
-*  An ordered **list of `ContextMenuItem` objects** to populate the custom context menu.  The ordered list includes the following:
-   *  The internal **name** of the menuitem.
-   *  The UI **label** of the menuitem, displayed to the user in the UI.
-   *  The **kind** of menuitem.
-   *  A keyboard **shortcut Description**, if any, such as **Alt+C**.
-   *  Any other properties of the custom menuitem.
-
-*  The **coordinates** where the context menu was requested, so your app can detect what UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.  <!-- control bounds. -->
-
-*  A **selection object** that will include the kind of context selected, (such as?,) and the appropriate context menu parameter data.  (what sort of param data - which piece of info that's sent, tells which menuitem, from the ordered list of menuitems, the user selected?)
-
-
-<!-- ====================================================================== -->
-## Handling the user selecting a menuitem of a context menu
-
-Your app can handle the user-selected menuitem, or your app can return the menuitem to the WebView2 control to handle the user-selected menuitem.
-
-
-If the user selects one of your app's custom menuitems, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
-
-*  The app adds custom menu items, but defers the context menu UI to the WebView platform.
-
-*  The app adds custom menu items, shows custom UI, and sets the `SelectedCommandId` property to the ID of the custom menu item.
-
-
-<!-- ====================================================================== -->
-## How to add menuitems to the default context menu
-
-You can add menuitems (commands) to the default context menu (right-click menu).  You can also remove menuitems from the default context menu.
-
-API for adding menuitems to the default context menu:
-
-
-```cpp
-ContextMenuRequested(id, position, list of ContextMenuItems)
-```
-<!-- ~~ -->
-
-
-
-<!-- ------------------------------- -->
-# [C++](#tab/cpp)
-
-```cpp
-C++ method simplified signature
-event
-```
-
-
-<!-- ------------------------------- -->
-# [C#](#tab/csharp)
-
-```csharp
-webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
-                                    CoreWebView2ContextMenuRequestedEventArgs args)
-
-event
-```
-
-* [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
-
-* [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
-
-
----
-
-<!-- end-of-tab-set marker -->
-
-
-<!-- ====================================================================== -->
-## Example: Add or remove entries from the default WebView2 menu
-
-You can add or remove entries to the default WebView context menu.  For this case, you specify `Handled` to be false.  You can add or remove items from the collection of context menu items.
-
-
-<!-- ------------------------------- -->
-# [C++](#tab/cpp)
-
-```cpp
-m_webView2_4 = m_webView.try_query<ICoreWebView2_4>();
-webview2_4->add_ContextMenuRequested(
-    Callback<ICoreWebView2ContextMenuRequestedEventHandler>(
-        [this](
-            ICoreWebView2* sender,
-            ICoreWebView2ContextMenuRequestedEventArgs* args)
-        {
-            wil::com_ptr<ICoreWebView2ContextMenuItemCollection> items;
-            CHECK_FAILURE(args->get_MenuItems(&items));
-            wil::com_ptr<ICoreWebView2ContextMenuTarget> target;
-            CHECK_FAILURE(args->get_ContextMenuTarget(&target));
-            COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND context_kind;
-            CHECK_FAILURE(target->get_Kind(&context_kind));
-            UINT32 itemsCount;
-            CHECK_FAILURE(items->get_Count(&itemsCount));
-            // Removing the 'Save image as' context menu item for image context selections.
-            if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE)
-            {
-                wil::com_ptr<ICoreWebView2ContextMenuItem> current;
-                for(UINT32 i = 0; i < itemsCount; i++) 
-                {
-                    CHECK_FAILURE(items->GetValueAtIndex(i, &current));
-                    wil::unique_cotaskmem_string name;
-                    CHECK_FAILURE(current->get_Name(&name));
-                    if (wcsmp(name.get(), L"saveImageAs") == 0)
-                    {
-                        CHECK_FAILURE(items->RemoveValueAtIndex(i));
-                        break;
-                    }
-                }
-            }
-            // Adding a custom context menu item for the page that will display the page's URI.
-            else if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE)
-            {
-                wil::com_ptr<ICoreWebView2Environment5> webviewEnvironment;
-                CHECK_FAILURE(m_appWindow->GetWebViewEnvironment()->QueryInterface(
-                    IID_PPV_ARGS(&webviewEnvironment)));
-                wil::com_ptr<ICoreWebView2ContextMenuItem> newMenuItem;
-                CHECK_FAILURE(webviewEnvironment->CreateContextMenuItem(
-                        L"Display page Uri", 
-                        nullptr, 
-                        COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND, &newMenuItem));
-                newMenuItem->add_CustomItemSelected(
-                            Callback<ICoreWebView2CustomItemSelectedEventHandler>(
-                    [this, info](
-                        ICoreWebView2* sender,
-                        IUnknown* args)
-                        {
-                            wil::unique_cotaskmem_string pageUri;
-                            CHECK_FAILURE(info->get_PageUri(&pageUri));
-                            std::wstring pageString = pageUri.get();
-                            m_appWindow->RunAsync([this, pageString]()
-                            {
-                                MessageBox(
-                                    m_appWindow->GetMainWindow(), pageString.c_str(),
-                                    L"Display Page Uri", MB_OK);
-                            });
-                            return S_OK;
-                        })
-                        .Get(),
-                    nullptr);
-                CHECK_FAILURE(items->InsertValueAtIndex(itemsCount, newMenuItem.get()));
-            }
-            return S_OK;
-        })
-        .Get(),
-    &m_contextMenuRequestedToken);
-```
-
-<!-- api1, C++ -->
-Key APIs used in this example:
-
-**ICoreWebView2:**
-* [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2)
-* [ICoreWebView2_4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_4)
-* [ICoreWebView2::add_ContextMenuRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
-
-**ICoreWebView2ContextMenuItem:**
-* [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
-* [ICoreWebView2ContextMenuItem::add_CustomItemSelected method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
-* [ICoreWebView2ContextMenuItem::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
-* [ICoreWebView2ContextMenuItem::get_Name method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
-
-**ICoreWebView2ContextMenuItemCollection:**
-* [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
-* [ICoreWebView2ContextMenuItemCollection::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
-* [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
-* [ICoreWebView2ContextMenuItemCollection::InsertValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#insertvalueatindex)
-* [ICoreWebView2ContextMenuItemCollection::RemoveValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex)
-
-**ICoreWebView2ContextMenuRequestedEventArgs:**
-* [ICoreWebView2ContextMenuRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_ContextMenuTarget method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget)
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
-
-**ICoreWebView2ContextMenuRequestedEventHandler:**
-* [ICoreWebView2ContextMenuRequestedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
-
-**ICoreWebView2ContextMenuTarget:**
-* [ICoreWebView2ContextMenuTarget interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)
-
-**ICoreWebView2CustomItemSelectedEventHandler:**
-* [ICoreWebView2CustomItemSelectedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)
-
-**ICoreWebView2Environment:**
-* [ICoreWebView2Environment interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5)
-* [ICoreWebView2Environment::CreateContextMenuItem method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem)
-
-Enums:
-
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
-   * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
-
-* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind)
-   * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE`
-   * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE`
-
-<!-- /api1, C++ -->
-
-
-<!-- ------------------------------- -->
-# [C#](#tab/csharp)
-
-```csharp
-webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
-                                    CoreWebView2ContextMenuRequestedEventArgs args)
-{
-    IList<CoreWebView2ContextMenuItem> menuList = args.MenuItems;
-    CoreWebView2ContextMenuTargetKind context = args.ContextMenuTarget.Kind;
-    if (context == CoreWebView2ContextMenuTargetKind.Image)
-    {
-        for (int index = 0; index < menuList.Count; index++)
-        {
-            if (menuList[index].Name == "saveImageAs")
-            {
-                menuList.RemoveAt(index);
-                break;
-            }
-        }
-    }
-    else if (context == CoreWebView2ContextMenuTargetKind.Page)
-    {
-        // add new item to end of collection
-        CoreWebView2ContextMenuItem newItem = 
-                            webView.CoreWebView2.Environment.CreateContextMenuItem(
-            "Display Page Uri", null, CoreWebView2ContextMenuItemKind.Command);
-            newItem.CustomItemSelected += delegate (object send, Object ex)
-            {
-                string pageUri = args.ContextMenuTarget.PageUri;
-                System.Threading.SynchronizationContext.Current.Post((_) =>
-                {
-                    MessageBox.Show(pageUri, "Page Uri", MessageBoxButton.OK);
-                }, null);
-            }
-        menuList.Insert(menuList.Count, newItem);
-    }
-};
-``` 
-
-<!-- api2, C# -->
-Key APIs used in this example:
-
-**CoreWebView2:**
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-* [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
-
-**CoreWebView2ContextMenuItem:**
-* [CoreWebView2ContextMenuItem Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)
-* [CoreWebView2ContextMenuItem.CustomItemSelected Event](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected)
-
-**CoreWebView2ContextMenuItemKind:**
-* [CoreWebView2ContextMenuItemKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)
-
-**CoreWebView2ContextMenuRequestedEventArgs:**
-* [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
-* [CoreWebView2ContextMenuRequestedEventArgs.ContextMenuTarget Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.contextmenutarget#microsoft-web-webview2-core-corewebview2contextmenurequestedeventargs-contextmenutarget)
-
-**CoreWebView2ContextMenuTargetKind:**
-* [CoreWebView2ContextMenuTargetKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutargetkind)
-
-**CoreWebView2Environment:**
-* [CoreWebView2Environment.CreateContextMenuItem Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcontextmenuitem#microsoft-web-webview2-core-corewebview2environment-createcontextmenuitem(system-string-system-io-stream-microsoft-web-webview2-core-corewebview2contextmenuitemkind))
-
-<!-- /api2, C# -->
-
-
----
-
-<!-- end-of-tab-set marker -->
-
-
-<!-- ====================================================================== -->
-## Drawing a custom context menu
+## Add a custom context menu
 
 To add a custom right-click menu to a WebView2 app, containing menuitems or commands, use the XYZ API.
 
 In a custom context menu, your WebView2 app tells the WebView2 control when user selected a menuitem, so WebView2 can execute the Cut (eg) command.
 
 Context menus use menuitem IDs, so Office can pass the user selection to WebView2:
-API: (ContextMenuResult id, ContextMenuItem selection). -->
 
+API: (ContextMenuResult id, ContextMenuItem selection).
 
-<!-- ------------------------------- -->
-# [C++](#tab/cpp)
-
-```cpp
-C++ method simplified signature
-event
-```
-
-
-<!-- ------------------------------- -->
-# [C#](#tab/csharp)
-
-```csharp
-C# method simplified signature
-event
-```
-
----
-
-<!-- end-of-tab-set marker -->
+Define where to display the context menu, by using relative window position.
 
 
 <!-- ====================================================================== -->
-## Enumerating menu item IDs and text
+## Add a menuitem to a context menu
 
-_is this section needed?_
-
-
-<!-- ====================================================================== -->
-## Defining where to show the context menu, by using relative window position
+tbd
 
 
-<!-- ------------------------------- -->
-# [C++](#tab/cpp)
+### Add a default menuitem to a default context menu
 
-```cpp
-C++ method simplified signature
-event
-```
+tbd
 
 
-<!-- ------------------------------- -->
-# [C#](#tab/csharp)
+### Add a default menuitem to a custom context menu
 
-```csharp
-C# method simplified signature
-event
-```
+tbd
 
----
 
-<!-- end-of-tab-set marker -->
+### Add a custom menuitem to a default context menu
+
+You can add custom menuitems to the default context menu.
+
+<!-- cpp or cs? -->
+*  `ContextMenuRequested(id, position, list of ContextMenuItems)`
+
+### Add a custom menuitem to a custom context menu
+
+tbd
 
 
 <!-- ====================================================================== -->
-## Reporting the selected context menu menuitem to WebView2
-
-
-<!-- ------------------------------- -->
-# [C++](#tab/cpp)
-
-```cpp
-C++ method simplified signature
-event
-```
-
-
-<!-- ------------------------------- -->
-# [C#](#tab/csharp)
-
-```csharp
-C# method simplified signature
-event
-```
-
----
-
-<!-- end-of-tab-set marker -->
-
-
-<!-- ====================================================================== -->
-## Example: Display a custom context menu
+## Example: Add a custom context menu
 
 You can use the data provided in the Event arguments of [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) (C++) or `ContextMenuRequested` (C#) to display a custom context menu with entries of your choice.  For this case, you specify `Handled` to be `true` and request a deferral. 
-~~
-
 
 This deferred event should be completed at one of two possible times:
 
@@ -608,53 +235,6 @@ void ContextMenu::AddMenuItems(
     }
 ```
 
-<!-- api3, C++ -->
-Key APIs used in this example:
-
-**ICoreWebView2:**
-* [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2)
-* [ICoreWebView2_4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_4)
-* [ICoreWebView2::add_ContextMenuRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
-
-**ICoreWebView2ContextMenuItem:**
-* [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
-* [ICoreWebView2ContextMenuItem::get_Children method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
-* [ICoreWebView2ContextMenuItem::get_CommandId method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid)
-* [ICoreWebView2ContextMenuItem::get_ShortcutKeyDescription method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription)
-
-**ICoreWebView2ContextMenuItemCollection:**
-* [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
-* [ICoreWebView2ContextMenuItemCollection::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
-* [ICoreWebView2ContextMenuItemCollection::get_IsChecked method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_ischecked)
-* [ICoreWebView2ContextMenuItemCollection::get_IsEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_isenabled)
-* [ICoreWebView2ContextMenuItemCollection::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
-* [ICoreWebView2ContextMenuItemCollection::get_Label method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_label)
-* [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
-
-**ICoreWebView2ContextMenuRequestedEventArgs:**
-* [ICoreWebView2ContextMenuRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_Location method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location)
-* [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
-* [ICoreWebView2ContextMenuRequestedEventArgs::put_Handled method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled)
-* [ICoreWebView2ContextMenuRequestedEventArgs::put_SelectedCommandId method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
-* [ICoreWebView2ContextMenuRequestedEventArgs::GetDeferral method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#getdeferral)
-
-**ICoreWebView2ContextMenuRequestedEventHandler:**
-* [ICoreWebView2ContextMenuRequestedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
-
-**ICoreWebView2Deferral:**
-* [ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)
-* [ICoreWebView2Deferral::Complete method](/microsoft-edge/webview2/reference/win32/icorewebview2deferral#complete)
-
-**COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND:**
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4)
-    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_CHECK_BOX`
-    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
-    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_RADIO`
-    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`
-    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
-<!-- /api3 -->
-
 
 <!-- ------------------------------- -->
 # [C#](#tab/csharp)
@@ -712,55 +292,120 @@ IList<CoreWebView2ContextMenuItem> menuList, ItemsControl cm)
 }
 ```
 
-<!-- api4, C# -->
-Key APIs used in this example:
-
-**CoreWebView2:**
-* [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-
-**CoreWebView2ContextMenuItem:**
-* [CoreWebView2ContextMenuItem Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)
-
-**CoreWebView2ContextMenuItemKind:**
-* [CoreWebView2ContextMenuItemKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)
-
-**CoreWebView2ContextMenuRequestedEventArgs:**
-* [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
-* [CoreWebView2ContextMenuRequestedEventArgs.GetDeferral method](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral#microsoft-web-webview2-core-corewebview2contextmenurequestedeventargs-getdeferral)
-
-**CoreWebView2Deferral:**
-* [CoreWebView2Deferral](/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
-
-**WebView2:**
-* [WebView2.ContextMenu property](/dotnet/api/microsoft.web.webview2.wpf.webview2.contextmenu#microsoft-web-webview2-wpf-webview2-contextmenu)
-
-* `Add`
-
-* `Handled`
-<!-- * `ItemsControl` .NET   /dotnet/api/system.windows.controls.itemscontrol -->
-* `MenuItem`
-<!-- * `PopulateContextMenu` local f name -->
-* `Separator`
-<!-- /api4, C#-->
-
 ---
 
 <!-- end-of-tab-set marker -->
 
 
 <!-- ====================================================================== -->
-## Disabling the WebView2 context menu
+## Remove a menuitem from a context menu
 
-<!-- todo: chat: what could go in this kind of section in this article, equivalent to Clean Browsing Data?  provide this URL & CBD URL -->
+You can remove default or custom menuitems from the default context menu.
 
+### Remove a default menuitem from a default context menu
+
+tbd
+
+
+### Remove a custom menuitem from a default context menu
+
+tbd
+
+
+### Remove a default menuitem from a custom context menu
+
+tbd
+
+
+### Remove a custom menuitem from a custom context menu
+
+tbd
+
+
+<!-- ====================================================================== -->
+## Example: Add and remove menuitems for the default context menu
+
+You can add or remove entries to the default WebView context menu.  For this case, you specify `Handled` to be false.  You can add or remove items from the collection of context menu items.
+
+<!-- 
+evidently can do these scenarios - which are covered here?
+(Add a default menuitem on the default context menu) (wording makes sense?)  ("menuitems" might better reflect the API usage than "a menuitem")
+Add a custom menuitem on the default context menu
+Remove a default menuitem from the default context menu
+Remove a custom menuitem from the default context menu
+-->
 
 <!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 ```cpp
-C++ method simplified signature
-event
+m_webView2_4 = m_webView.try_query<ICoreWebView2_4>();
+webview2_4->add_ContextMenuRequested(
+    Callback<ICoreWebView2ContextMenuRequestedEventHandler>(
+        [this](
+            ICoreWebView2* sender,
+            ICoreWebView2ContextMenuRequestedEventArgs* args)
+        {
+            wil::com_ptr<ICoreWebView2ContextMenuItemCollection> items;
+            CHECK_FAILURE(args->get_MenuItems(&items));
+            wil::com_ptr<ICoreWebView2ContextMenuTarget> target;
+            CHECK_FAILURE(args->get_ContextMenuTarget(&target));
+            COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND context_kind;
+            CHECK_FAILURE(target->get_Kind(&context_kind));
+            UINT32 itemsCount;
+            CHECK_FAILURE(items->get_Count(&itemsCount));
+            // Removing the 'Save image as' context menu item for image context selections.
+            if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE)
+            {
+                wil::com_ptr<ICoreWebView2ContextMenuItem> current;
+                for(UINT32 i = 0; i < itemsCount; i++) 
+                {
+                    CHECK_FAILURE(items->GetValueAtIndex(i, &current));
+                    wil::unique_cotaskmem_string name;
+                    CHECK_FAILURE(current->get_Name(&name));
+                    if (wcsmp(name.get(), L"saveImageAs") == 0)
+                    {
+                        CHECK_FAILURE(items->RemoveValueAtIndex(i));
+                        break;
+                    }
+                }
+            }
+            // Adding a custom context menu item for the page that will display the page's URI.
+            else if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE)
+            {
+                wil::com_ptr<ICoreWebView2Environment5> webviewEnvironment;
+                CHECK_FAILURE(m_appWindow->GetWebViewEnvironment()->QueryInterface(
+                    IID_PPV_ARGS(&webviewEnvironment)));
+                wil::com_ptr<ICoreWebView2ContextMenuItem> newMenuItem;
+                CHECK_FAILURE(webviewEnvironment->CreateContextMenuItem(
+                        L"Display page Uri", 
+                        nullptr, 
+                        COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND, &newMenuItem));
+                newMenuItem->add_CustomItemSelected(
+                            Callback<ICoreWebView2CustomItemSelectedEventHandler>(
+                    [this, info](
+                        ICoreWebView2* sender,
+                        IUnknown* args)
+                        {
+                            wil::unique_cotaskmem_string pageUri;
+                            CHECK_FAILURE(info->get_PageUri(&pageUri));
+                            std::wstring pageString = pageUri.get();
+                            m_appWindow->RunAsync([this, pageString]()
+                            {
+                                MessageBox(
+                                    m_appWindow->GetMainWindow(), pageString.c_str(),
+                                    L"Display Page Uri", MB_OK);
+                            });
+                            return S_OK;
+                        })
+                        .Get(),
+                    nullptr);
+                CHECK_FAILURE(items->InsertValueAtIndex(itemsCount, newMenuItem.get()));
+            }
+            return S_OK;
+        })
+        .Get(),
+    &m_contextMenuRequestedToken);
 ```
 
 
@@ -768,17 +413,186 @@ event
 # [C#](#tab/csharp)
 
 ```csharp
-C# method simplified signature
-event
-```
+webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
+                                    CoreWebView2ContextMenuRequestedEventArgs args)
+{
+    IList<CoreWebView2ContextMenuItem> menuList = args.MenuItems;
+    CoreWebView2ContextMenuTargetKind context = args.ContextMenuTarget.Kind;
+    if (context == CoreWebView2ContextMenuTargetKind.Image)
+    {
+        for (int index = 0; index < menuList.Count; index++)
+        {
+            if (menuList[index].Name == "saveImageAs")
+            {
+                menuList.RemoveAt(index);
+                break;
+            }
+        }
+    }
+    else if (context == CoreWebView2ContextMenuTargetKind.Page)
+    {
+        // add new item to end of collection
+        CoreWebView2ContextMenuItem newItem = 
+                            webView.CoreWebView2.Environment.CreateContextMenuItem(
+            "Display Page Uri", null, CoreWebView2ContextMenuItemKind.Command);
+            newItem.CustomItemSelected += delegate (object send, Object ex)
+            {
+                string pageUri = args.ContextMenuTarget.PageUri;
+                System.Threading.SynchronizationContext.Current.Post((_) =>
+                {
+                    MessageBox.Show(pageUri, "Page Uri", MessageBoxButton.OK);
+                }, null);
+            }
+        menuList.Insert(menuList.Count, newItem);
+    }
+};
+``` 
 
 ---
 
 <!-- end-of-tab-set marker -->
 
 
+
+
 <!-- ====================================================================== -->
-## Example: Disabling the WebView2 context menu
+## Detect when a context menu is opened: the CoreWebView2ContextMenuRequested event
+
+When your app receives the `CoreWebView2ContextMenuRequested` event, indicating that the user requested opening the context menu.
+
+When your app detects this event, your then can do a combination of the following:
+
+*  Add custom menuitems to the default context menu that's provided by the WebView2 control.
+
+*  Remove custom menuitems from the default context menu that's provided by the WebView2 control.
+
+*  Open a custom context menu, using your app's own, custom UI.
+
+The `CoreWebView2ContextMenuRequested` event indicates that the user requested opening a context menu.
+
+The WebView2 control raises this event to indicate that the user requested opening a context menu in the WebView2 control, such as by right-clicking.
+
+The WebView2 control only raises the `CoreWebView2ContextMenuRequested` event if the current webpage allows the context menu to appear; that is, if the `AreDefaultContextMenusEnabled` property is `true`.
+
+
+### Detect when a default context menu is opened
+
+tbd
+
+
+### Detect when a custom context menu is opened
+
+tbd
+
+
+<!-- ====================================================================== -->
+## Detect when a menuitem is selected
+
+Your app can handle the user-selected menuitem, or your app can return the menuitem to the WebView2 control to handle the user-selected menuitem.
+
+Enumerate the menu item IDs and text.  (for what task?  check example code)
+
+
+### Detect when a default menuitem is selected
+
+tbd
+
+
+### Detect when a custom menuitem is selected: the CoreWebView2CustomItemSelected event
+
+Raised when the user selects a custom menuitem on a default or custom context menu.
+
+The WebView2 control raises this event to indicate that the user selected a custom menu item that your app added to a context menu.
+
+Listen for the `CoreWebView2CustomItemSelected` event.
+
+If the user selects a custom menuitem, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
+
+*  The app adds custom menu items, but defers the context menu UI to the WebView platform.
+
+*  The app adds custom menu items, shows custom UI, and sets the `SelectedCommandId` property to the ID of the custom menu item.
+
+
+<!-- ====================================================================== -->
+## Read information sent from WebView2 when a menuitem is selected
+
+tbd
+
+
+### Read information sent from WebView2 when a default menuitem is selected
+
+tbd
+
+
+### Read information sent from WebView2 when a custom menuitem is selected
+
+The following information is sent when the user selects a custom menuitem on a context menu.
+
+When your app indicates to WebView2 that a user selected a menuitem on a context menu, WebView2 sends the following items to your app:
+
+*  An ordered **list of `ContextMenuItem` objects** to populate the custom context menu.  The ordered list includes the following:
+   *  The internal **name** of the menuitem.
+   *  The UI **label** of the menuitem, displayed to the user in the UI.
+   *  The **kind** of menuitem.
+   *  A keyboard **shortcut Description**, if any, such as **Alt+C**.
+   *  Any other properties of the custom menuitem.
+
+*  The **coordinates** where the context menu was requested, so your app can detect what UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.  <!-- control bounds. -->
+
+*  A **selection object** that will include the kind of context selected, (such as?,) and the appropriate context menu parameter data.  (what sort of param data - which piece of info that's sent, tells which menuitem, from the ordered list of menuitems, the user selected?)
+
+
+<!-- ====================================================================== -->
+## Send a selected menuitem to WebView2
+
+tbd
+
+
+### Send a selected default menuitem to WebView2
+
+tbd
+
+
+### Send a selected custom menuitem to WebView2
+
+tbd
+
+
+<!-- ====================================================================== -->
+## Enable a context menu
+
+tbd
+
+
+### Enable a default context menu
+
+You can use this API or the earlier API.
+
+
+### Enable a custom context menu
+
+tbd
+
+
+<!-- ====================================================================== -->
+## Disable a context menu: the AreDefaultContextMenusEnabled property
+
+The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.
+
+If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables the context menu, and the `CoreWebView2ContextMenuRequested` event won't be raised, such as when the user right-clicks.
+
+
+### Disable a default context menu
+<!-- ### Disable the default context menu -->
+
+<!-- a default, or the default? read example code then decide -->
+
+You can use API for that, or you can use previous baseline API.
+<!-- isn't this what the example demonstrates? -->
+
+
+<!-- ====================================================================== -->
+## Example: Disable the default context menu
 
 
 <!-- ------------------------------- -->
@@ -807,11 +621,6 @@ else
 https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled
 -->
 
-Key APIs used in this example:
-
-* [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
-
-* [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
 
 
 <!-- ------------------------------- -->
@@ -819,69 +628,136 @@ Key APIs used in this example:
 
 <!-- todo: copy sample from API Ref -->
 
-```csharp
-// pending
-```
-
-* [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
-
 The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) has similar code.  It's based on a setting property.
-
-
-Key APIs used in this example:
-
-_pending_
-
+<!-- is it * [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled) -->
 
 ---
 
 <!-- end-of-tab-set marker -->
 
 
-<!-- ====================================================================== -->
-## API Reference Links
 
+### Disable a custom context menu
+
+tbd
+
+
+<!-- ====================================================================== -->
+## API Reference
+
+APIs mentioned in this article.
 
 <!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
-Interfaces:
+**ICoreWebView2:**
+* [ICoreWebView2 interface](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2_4 interface](/microsoft-edge/webview2/reference/win32/icorewebview2_4)
+* [ICoreWebView2::add_ContextMenuRequested method](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
 
-For custom context menus:
-* [ICoreWebView2ContextMenuRequestedEventArgs::put_SelectedCommandId(INT32 value)](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
+**ICoreWebView2ContextMenuItem:**
+* [ICoreWebView2ContextMenuItem interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
+* [ICoreWebView2ContextMenuItem::add_CustomItemSelected method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
+* [ICoreWebView2ContextMenuItem::get_Children method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
+* [ICoreWebView2ContextMenuItem::get_CommandId method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid)
+* [ICoreWebView2ContextMenuItem::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
+* [ICoreWebView2ContextMenuItem::get_Name method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
+* [ICoreWebView2ContextMenuItem::get_ShortcutKeyDescription method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription)
 
-For disabling the context menu:
-* [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
+**ICoreWebView2ContextMenuItemCollection:**
+* [ICoreWebView2ContextMenuItemCollection interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
+* [ICoreWebView2ContextMenuItemCollection::get_Count method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
+* [ICoreWebView2ContextMenuItemCollection::get_IsChecked method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_ischecked)
+* [ICoreWebView2ContextMenuItemCollection::get_IsEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_isenabled)
+* [ICoreWebView2ContextMenuItemCollection::get_Kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
+* [ICoreWebView2ContextMenuItemCollection::get_Label method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_label)
+* [ICoreWebView2ContextMenuItemCollection::GetValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
+* [ICoreWebView2ContextMenuItemCollection::InsertValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#insertvalueatindex)
+* [ICoreWebView2ContextMenuItemCollection::RemoveValueAtIndex method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex)
 
-* [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
+**ICoreWebView2ContextMenuRequestedEventArgs:**
+* [ICoreWebView2ContextMenuRequestedEventArgs interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)
+* [ICoreWebView2ContextMenuRequestedEventArgs::get_Location method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location)
+* [ICoreWebView2ContextMenuRequestedEventArgs::get_MenuItems method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
+* [ICoreWebView2ContextMenuRequestedEventArgs::put_Handled method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled)
+* [ICoreWebView2ContextMenuRequestedEventArgs::put_SelectedCommandId method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid) - to display custom (and default?) context menus
+* [ICoreWebView2ContextMenuRequestedEventArgs::GetDeferral method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#getdeferral)
+* [ICoreWebView2ContextMenuRequestedEventArgs::get_ContextMenuTarget method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget)
 
-* [ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
+**ICoreWebView2ContextMenuRequestedEventHandler:**
+* [ICoreWebView2ContextMenuRequestedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)
 
-* [ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)
-* [ICoreWebView2ContextMenuItem::add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
+**ICoreWebView2ContextMenuTarget:**
+* [ICoreWebView2ContextMenuTarget interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)
+* [ICoreWebView2ContextMenuTarget::get_kind method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget#get_kind)
 
-* [ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)
+**ICoreWebView2CustomItemSelectedEventHandler:**
+* [ICoreWebView2CustomItemSelectedEventHandler interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)
+
+**ICoreWebView2Deferral:**
+* [ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)
+* [ICoreWebView2Deferral::Complete method](/microsoft-edge/webview2/reference/win32/icorewebview2deferral#complete)
+
+**ICoreWebView2Environment:**
+* [ICoreWebView2Environment interface](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment5)
+* [ICoreWebView2Environment::CreateContextMenuItem method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem)
+
+**ICoreWebView2Settings**
+* [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled) - disable default context menus
+* [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
+
+**COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND:**
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
+   * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
+   * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_CHECK_BOX`
+   * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
+   * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_RADIO`
+   * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`
+   * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
+
+**COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND:**
+* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind)
+   * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE`
+   * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE`
 
 
 <!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
-<!-- extract from examples -->
-
+**CoreWebView2:**
+* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
 * [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
 
+**CoreWebView2ContextMenuItem:**
 * [CoreWebView2ContextMenuItem Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)
-   * [CoreWebView2ContextMenuItem.CustomItemSelected Event](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected)
+* [CoreWebView2ContextMenuItem.CustomItemSelected Event](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected)
 
+**CoreWebView2ContextMenuItemKind:**
 * [CoreWebView2ContextMenuItemKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)
 
+**CoreWebView2ContextMenuRequestedEventArgs:**
 * [CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)
-   * [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid)<!-- for custom context menus -->
+* [CoreWebView2ContextMenuRequestedEventArgs.ContextMenuTarget Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.contextmenutarget)
+* [CoreWebView2ContextMenuRequestedEventArgs.GetDeferral method](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral)
+* [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid)<!-- for custom context menus -->
 
+**CoreWebView2ContextMenuTarget:**
 * [CoreWebView2ContextMenuTarget Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget)
 
+**CoreWebView2ContextMenuTargetKind:**
+* [CoreWebView2ContextMenuTargetKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutargetkind)
+
+**CoreWebView2Deferral:**
+* [CoreWebView2Deferral](/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
+
+**CoreWebView2Environment:**
+* [CoreWebView2Environment.CreateContextMenuItem Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcontextmenuitem#microsoft-web-webview2-core-corewebview2environment-createcontextmenuitem(system-string-system-io-stream-microsoft-web-webview2-core-corewebview2contextmenuitemkind))
+
+**CoreWebView2Settings:**
 * [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)<!-- for disabling the context menu -->
 
+**WebView2:**
+* [WebView2.ContextMenu property](/dotnet/api/microsoft.web.webview2.wpf.webview2.contextmenu#microsoft-web-webview2-wpf-webview2-contextmenu)
 
 ---
 
