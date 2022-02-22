@@ -383,9 +383,11 @@
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                   displayName: Network Conditions tool, Device Emulation, Device Emulator
 # Network request blocking tool -----------------------------------------------
-            # - name: Network request blocking tool  # un-comment node when add article or jump page to repo
-            #   items:
-            #       displayName: Network request blocking tool
+            - name: Network request blocking tool
+              items:
+                - name: Block network requests
+                  href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
+                  displayName: Network request blocking tool
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
               items:
