@@ -120,7 +120,7 @@ If you aren't able to use the emulators and you don't have access to real device
 
 The following products are examples of cloud-based emulators and related products.  These descriptions are from the products' information sites and serve as examples of features or capabilities to consider.
 
-* [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
+* [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time. The following testing sites are suggested as a starting point. Conduct your own search to find the best cloud-based testing for your needs.
 
 * [Device Anywhere](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
 
@@ -131,8 +131,6 @@ The following products are examples of cloud-based emulators and related product
 * [SauceLabs](https://saucelabs.com) enables you to run unit tests inside of an emulator, which can be useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You can also do manual testing with your site.
 
 * [TestingBot](https://testingbot.com/) helps you do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
-
-(This list is closed for additions.)
 
 
 <!-- ====================================================================== -->
