@@ -31,7 +31,7 @@ To block a network request:
 
 1. In the **Text pattern to block network requests** text box, type the URL of a network request that you want to block.  You can either type the full URL, or replace parts of it with `*` for wildcard pattern matching.
 
-1. Click the **Add** button.
+1. Click the **Add** button:
 
    ![Blocking the https://*.contoso.com/* URL pattern in the network request blocking tool.](media/block-network-request.png)
 
@@ -41,14 +41,14 @@ To block a network request:
 
 To delete a specific network blocking request:
 
-1. In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](./media/remove-blocked-request-icon.png)) button.
+*  In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](./media/remove-blocked-request-icon.png)) button:
 
    ![Removing a blocked request](./media/remove-blocked-request.png)
 
 
 To delete all network blocking requests at once:
 
-1. In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](./media/remove-all-blocked-requests-icon.png)) button.
+*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](./media/remove-all-blocked-requests-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -56,7 +56,7 @@ To delete all network blocking requests at once:
 
 To change an existing blocked network request:
 
-1. In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](./media/edit-blocked-request-icon.png)):
+*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](./media/edit-blocked-request-icon.png)):
 
    ![Editing a blocked request](./media/edit-blocked-request.png)
 
@@ -66,7 +66,7 @@ To change an existing blocked network request:
 
 To toggle network request blocking without having to delete and re-create all of the blocked network requests:
 
-1. In the toolbar, select or clear the **Enable network request blocking** checkbox:
+*  In the toolbar, select or clear the **Enable network request blocking** checkbox:
 
    ![Toggling network request blocking](./media/toggle-request-blocking.png)
 
@@ -86,7 +86,7 @@ To block network requests by using the **Network** tool:
 
 1. In the table of network requests in the bottom pane, find the network request that you want to block.
 
-1. Right-click the network request, and then click **Block request URL** to block this specific resource, or **Block request domain** to block all resources from the same domain.
+1. Right-click the network request, and then click **Block request URL** to block this specific resource, or **Block request domain** to block all resources from the same domain:
 
    ![Blocking from the network tool](./media/block-request-from-network-tool.png)
 
