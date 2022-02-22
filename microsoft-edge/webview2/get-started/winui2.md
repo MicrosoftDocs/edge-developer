@@ -192,7 +192,7 @@ The WebView2 SDK is now installed for this project.
 <!-- ====================================================================== -->
 ## Step 6 - Install the prerelease WinUI 2 SDK (Microsoft.UI.Xaml)
 
-Next, you install **Microsoft.UI.Xaml**, which installs WinUI 2.<!-- todo: explain -->
+Next, you install the _prerelease_ **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2.
 
 1. If the **NuGet Package Manager** panel isn't open: in Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
 

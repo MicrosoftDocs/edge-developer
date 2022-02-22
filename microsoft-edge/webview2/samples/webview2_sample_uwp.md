@@ -80,17 +80,93 @@ Solution Explorer shows the **webview2_sample_uwp** project:
 
 _To zoom, right-click > **Open image in new tab**._
 
+Now that the project is open, install or update NuGet packages for the project.
+
 
 <!-- ====================================================================== -->
 ## Step 8 - Install or update the prerelease WebView2 SDK
 
-1. Install or update the _prerelease_ WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Step 5 - Install the prerelease WebView2 SDK](../get-started/winui2.md#step-5---install-the-prerelease-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+Install or update the _prerelease_ WebView2 SDK for the project, as follows:
+
+1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
+
+   The **NuGet Package Manager** panel opens in Visual Studio.
+
+1. In the **NuGet Package Manager**, click the **Browse** tab.
+
+1. To the right of the search text box, select the **Include prerelease** check box.
+
+1. In the search text box, enter **Microsoft.Web.WebView2**.
+
+   The **Microsoft.Web.WebView2** card appears in the search results.
+
+1. Click the **Microsoft.Web.WebView2** card below the search box.
+
+1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
+
+   ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/webview2_sample_uwp-pkg-mgr-prerelease-webview2.png)
+
+   _The above image is from another project, but is similar._
+
+1. Click the **Install** (or **Update**) button.
+
+   The **Preview Changes** dialog box appears:
+
+   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/webview2_sample_uwp-webview2-pkg-preview-changes.png)
+
+   _The above image is from another project, but is similar._
+
+1. Click the **OK** button.
+
+The WebView2 SDK is now installed for this project.
 
 
 <!-- ====================================================================== -->
 ## Step 9 - Install or update the prerelease Microsoft.UI.Xaml package (WinUI 2 SDK)
 
-1. Install or update the _prerelease_ Microsoft.UI.Xaml NuGet package (which is the WinUI 2 SDK) on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Step 6 - Install the prerelease WinUI 2 SDK (Microsoft.UI.Xaml)](../get-started/winui2.md#step-6---install-the-prerelease-winui-2-sdk-microsoftuixaml) in _Get started with WebView2 in WinUI 2 (UWP) apps (public preview)_.  Follow the steps in that section, and then return to this page and continue below.
+Next, install or update the _prerelease_ **Microsoft.UI.Xaml** package.  Microsoft.UI.Xaml is WinUI 2, as follows:
+
+1. If the **NuGet Package Manager** panel isn't open: in Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
+
+   The **NuGet Package Manager** panel opens in Visual Studio.
+
+1. In the **NuGet Package Manager**, click the **Browse** tab.
+
+1. Select the **Include prerelease** check box.
+
+1. In the **Search** box, enter **Microsoft.UI.Xaml**, and then select the **Microsoft.UI.Xaml** card below the search box.
+
+1. On the right, make sure that the **Version** is **Latest prerelease**.
+
+1. Click the  **Install** (or **Update**) button:
+
+   ![The NuGet package manager to install Microsoft.UI.Xaml.](media/webview2_sample_uwp-nuget-package-ui-xaml.png)
+
+   _Image borrowed from another project.  To zoom, right-click > **Open image in new tab**._
+
+   The **Preview Changes** dialog box appears:
+
+   ![The 'Preview Changes' dialog box for installing the Microsoft.UI.Xaml package.](media/webview2_sample_uwp-preview-changes-ui-xaml-pkg.png)
+
+   _Image borrowed from another project._
+
+1. Click the **OK** button.
+
+1. The **License Acceptance** dialog box appears:
+
+   ![The 'License Acceptance' dialog box for installing the Microsoft.UI.Xaml package.](media/webview2_sample_uwp-license-acceptance-ui-xaml-pkg.png)
+
+1. Click the **I Accept** button.  In Visual Studio, the `readme.txt` file is displayed, saying that you've installed the WinUI package:
+
+   ![The readme.txt file after installing the Microsoft.UI.Xaml package, reports that you installed the WinUI NuGet package.](media/webview2_sample_uwp-readme-winui-pkg.png)
+
+   _Image borrowed from another project._
+
+   The readme lists some lines of code that are similar to what we'll add.
+
+1. Select **File** > **Save All**.
+
+   You've now installed the Microsoft.UI.Xaml package, which is WinUI (WinUI 2), for your project.  Check the resulting installed packages, as follows:
 
 1. In NuGet Package Manager, click the **Installed** tab, and make sure the three packages are listed:
 
@@ -116,7 +192,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In **Solution Explorer**, right-click the **webview2_sample_uwp** project, and then select **Build**.
 
-   This builds the project file `webview2_sample_uwp.csproj` (per **Build** > **Rebuild Solution** > **Output**) (or `WebView2_UWP.csproj` (per Readme.md)).
+   This builds the project file `webview2_sample_uwp.csproj` (per **Build** > **Rebuild Solution** > **Output**), or `WebView2_UWP.csproj` (per Readme.md).
 
 
 <!-- ====================================================================== -->

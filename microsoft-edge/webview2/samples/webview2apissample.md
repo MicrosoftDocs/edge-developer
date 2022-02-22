@@ -86,7 +86,40 @@ Solution Explorer shows several projects, including the **WebView2APISample** pr
 <!-- ====================================================================== -->
 ## Step 8 - Install or update the prerelease WebView2 SDK
 
-1. Install or update the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+Install or update the _prerelease_ WebView2 SDK for the project, as follows:
+
+1. In Solution Explorer, right-click the project (not the solution node above it), and then select **Manage NuGet Packages**.
+
+   The **NuGet Package Manager** panel opens in Visual Studio.
+
+1. In the **NuGet Package Manager**, click the **Browse** tab.
+
+1. To the right of the search text box, select the **Include prerelease** check box.
+
+1. In the search text box, enter **Microsoft.Web.WebView2**.
+
+   The **Microsoft.Web.WebView2** card appears in the search results.
+
+1. Click the **Microsoft.Web.WebView2** card below the search box.
+
+1. On the right, in the **Version** dropdown list, make sure **Latest prerelease** is selected:
+
+   ![NuGet Package Manager with WebView2 SDK prerelease selected.](media/webview2apisample-pkg-mgr-prerelease-webview2.png)
+
+   _The above image is from another project, but is similar.  To zoom, right-click > **Open image in new tab**._
+
+1. Click the **Install** (or **Update**) button.
+
+   The **Preview Changes** dialog box appears:
+
+   ![The Preview Changes dialog box for the WebView2 NugGet package.](media/webview2apisample-webview2-pkg-preview-changes.png)
+
+   _The above image is from another project, but is similar._
+
+1. Click the **OK** button.
+
+The WebView2 SDK is now installed for this project.
+
 
 
 <!-- ====================================================================== -->
@@ -104,7 +137,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    _To zoom, right-click > **Open image in new tab**._
 
-   This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.  This might take a couple minutes.
+   This builds the project file `SampleApps/WebView2APISample/WebView2APISample.vcxproj`.
 
 
 <!-- ====================================================================== -->

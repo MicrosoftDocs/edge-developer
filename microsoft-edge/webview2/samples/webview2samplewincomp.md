@@ -120,7 +120,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
 
-   This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.  This might take a couple minutes.
+   This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.
 
 
 <!-- ====================================================================== -->
@@ -192,7 +192,7 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
 
-   This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.  This might take a couple minutes.
+   This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.
 
    <!-- The build might fail:
 

@@ -92,13 +92,13 @@ At the top of Visual Studio, set the build target, as follows:
 
 1. In the **Solution Platforms** drop-down list, select **Any CPU**.
 
-
-<!-- ====================================================================== -->
-## Step 9 - Run (debug) the project
-
 1. In **Solution Explorer**, right-click the **WebView2WpfBrowser** project, and then select **Build**.
 
    This builds the project file `WebView2WpfBrowser.csproj`.
+
+
+<!-- ====================================================================== -->
+## Step 9 - Run (debug) the project
 
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
