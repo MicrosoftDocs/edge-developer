@@ -23,7 +23,7 @@ The **Your available apps** section will show any apps you've installed on other
 
    :::image type="content" source="media/available-app-install.png" alt-text="Available apps shown on Apps page with install button highlighted.":::
 
-App sync is available on desktop devices only at this stage. To keep your apps in sync across devices, adding an app on one device will add it to the "Available apps" section on other devices. Uninstalling an app on one device will remove it from other devices.
+App sync is available on desktop devices only at this stage. To keep your apps in sync across devices, adding an app on one device will add it to the **Your available apps** section on other devices. Uninstalling an app on one device will remove it from other devices.
 
 ### Redesigned Apps Menu
 The Apps menu item within Edge's "Settings and more" menu is being redesigned so that the menu icon can be added to the toolbar for quick access and the popup menu can be pinned open as a sidebar to show your apps alongside web content. Customizable sort and view options have been added along with an "Available apps" section to support the app sync feature described above.
