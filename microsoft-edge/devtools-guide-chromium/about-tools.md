@@ -14,7 +14,13 @@ DevTools provides 35 tools:
 *  3 permanent toolbar tabs, for the **Elements**, **Console**, and **Sources** tools.
 *  30 optional toolbar tabs, for the optional tools.
 
-![All the tools of DevTools, including 2 toolbar icons, 3 permanent toolbar tabs, and 30 'More tools' tabs.](media/all-tools.png)
+The default tools, including toolbar icons, toolbar tabs, and tools on the **More tabs** (![More tabs icon.](media/more-tabs-icon-light-theme.png)) menu:
+
+![All of the default tools of DevTools, including 2 toolbar icons and 11 toolbar tabs on the toolbar or More tabs menu.](media/all-default-tools.png)
+
+The optional tools that aren't open by default, on the **More Tools** (![More Tools icon.](media/more-tools-icon-light-theme.png)) menu:
+
+![All of the optional tools of DevTools, on the More Tools menu, with 22 optional tools.](media/all-optional-tools.png)
 
 The following features are additional ways to access the tools:
 *  The **Drawer** is an additional toolbar and area to hold tool tabs.
