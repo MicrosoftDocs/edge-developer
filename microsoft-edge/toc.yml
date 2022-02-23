@@ -938,14 +938,6 @@
             #   href: webview2/concepts/architecture.md
             #   displayName: 
 
-            - name: Manage user data folders
-              href: webview2/concepts/user-data-folder.md
-              displayName: Manage the user data folder  # old title
-
-            - name: Clear browsing data from the user data folder
-              href: webview2/concepts/clear-browsing-data.md
-              displayName: 
-
             - name: Process model
               href: webview2/concepts/process-model.md
               displayName: Process model for WebView2 apps  # top-of-page title
@@ -976,6 +968,16 @@
             - name: Automate and test with Microsoft Edge Driver
               href: webview2/how-to/webdriver.md
               displayName: Automate and test WebView2 apps with Microsoft Edge Driver  # top-of-page title
+
+            - name: User data and history
+              items:
+                - name: Manage user data folders
+                  href: webview2/concepts/user-data-folder.md
+                  displayName: Manage the user data folder  # old title
+
+                - name: Clear browsing data from the user data folder
+                  href: webview2/concepts/clear-browsing-data.md
+                  displayName: 
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
