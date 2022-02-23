@@ -142,9 +142,9 @@ The C++ file handles the title text and communicates it to the host app as a str
    ```html
    <h2>Receiving Messages</h2>
    <p>The host app can receive messages by registering an event handler 
-   with <code>ICoreWebView2::add_WebMessageReceived</code>. If you enter 
-   text and click "Send", this page will send a message to the host app 
-   which will change the text of the title bar.</p>
+   with <code>ICoreWebView2::add_WebMessageReceived</code>. If you 
+   enter text and click "Send", this page will send a message to the 
+   host app which will change the text of the title bar.</p>
    <input type="text" id="title-text"/>
    <button onclick="SetTitleText()">Send</button>
    ```
