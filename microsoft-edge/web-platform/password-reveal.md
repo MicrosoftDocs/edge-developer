@@ -1,35 +1,33 @@
 ---
 title: Customize the password reveal button
-description: Provides guidance on customizing the display of the password reveal button.
+description: Guidance on customizing the display of the password reveal button.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/29/2021
+ms.date: 02/23/2022
 ---
 # Customize the password reveal button
 
 The `password` input type in Microsoft Edge includes a **password reveal** control.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.
 
-A **password** field with dots hiding the characters entered by a user.  The **password reveal** button appears to the right of the **password** field.  The eye-shaped icon appears next to the dots that hide the password text:
+By default, the **password reveal** button is turned off, so that in the **password** field, dots replace the characters entered by the user.  The **password reveal** button appears to the right of the **password** field, as an eye-shaped icon:
 
-:::image type="complex" source="./media/mdn-demo-password-reveal-off.msft.png" alt-text="The eye-shaped icon appears next to the dots that hide the password text." lightbox="./media/mdn-demo-password-reveal-off.msft.png":::
-   The eye-shaped icon appears next to the dots that hide the password text.
-:::image-end:::
+![The eye-shaped icon appears next to the dots that hide the password text.](media/mdn-demo-password-reveal-off.msft.png)
 
-Toggle the **password reveal** button to change the eye icon to an eye icon with a slash through it, and to reveal the original password text.  The eye-shaped icon has a slash on it and the original password text is displayed:
+<!-- _To zoom: right-click > Open image in new tab._ -->
 
-:::image type="complex" source="./media/mdn-demo-password-reveal-on.msft.png" alt-text="The The eye-shaped icon has a slash on it and the original password text is displayed." lightbox="./media/mdn-demo-password-reveal-on.msft.png":::
-   The The eye-shaped icon has a slash on it and the original password text is displayed.
-:::image-end:::
+When the user clicks the **password reveal** button to turn it on, the password text is revealed, and the eye icon changes to have a slash over it:
 
-By default, the **password reveal** button inserts into the Shadow DOM of all HTML `input` elements with the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) can disable this feature globally.  You, web designers and developers, should expect most Microsoft Edge users to have the default experience.
+![The original password text is revealed, and the eye icon has a slash over it.](media/mdn-demo-password-reveal-on.msft.png)
+
+By default, the **password reveal** button is inserted into the Shadow DOM of all HTML `input` elements that have the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) can disable this feature globally.  Web designers and developers should expect most Microsoft Edge users to have the default experience.
 
 
 <!-- ====================================================================== -->
 ## Remove the password reveal control
 
-You can completely remove the **password reveal** button, by targeting the `::-ms-reveal` pseudo-element:
+As the webpage author, you can completely remove the **password reveal** button, by targeting the `::-ms-reveal` pseudo-element:
 
 ```css
 ::-ms-reveal {
@@ -76,4 +74,4 @@ The **password reveal** button is unavailable until the user enters text into th
 
 If the **password reveal** button is removed, the user must delete the contents of the **password** field to make the **password reveal** button appear again. This behavior prevents someone from making a minor adjustment to display the password, should the user step away from an unlocked device.
 
-The **password reveal** button is unavailable if the **password** field autofills by using the password manager.
+The **password reveal** button is unavailable if the **password** field is autofilled by using the password manager.
