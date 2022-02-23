@@ -25,6 +25,8 @@ User data folders are created automatically by WebView2.  WebView2 developers co
 
 *  If your application doesn't have repeat users, create a new user data folder for each user, and delete the previous user data folder.
 
+*  Instead of deleting the user data folder, clear browsing data from the user data folder.  For example, clear user data and history when a user signs out.  See [clear browsing data from the user data folder](clear-browsing-data.md).
+
 
 <!-- ====================================================================== -->
 ## Create user data folders
@@ -76,3 +78,9 @@ Consider the following when sharing user data folders:
 To isolate different parts of your application, or when sharing data between WebView2 controls isn't needed, you can use different user data folders.  For example, an application can consist of two WebView2 controls, one for displaying an advertisement and the other for displaying application content.  You can use different user data folders for each WebView2 control.
 
 Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different user data folders at the same time.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Clear browsing data from the user data folder](clear-browsing-data.md)
