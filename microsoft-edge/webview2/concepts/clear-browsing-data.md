@@ -29,7 +29,7 @@ This method clears all the kinds of browsing data that are listed in the data ki
 <!-- ------------------------------ -->
 # [C++](#tab/cpp)
 
-[ICoreWebView2ExperimentalProfile4::ClearBrowsingDataAll() method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
+[ICoreWebView2Profile::ClearBrowsingDataAll() method](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile4#clearbrowsingdataall)
 
 
 <!-- ------------------------------ -->
