@@ -607,7 +607,7 @@ else
 ```
 
 <!-- sample copied from API Ref
-https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled
+https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled
 -->
 
 
@@ -637,7 +637,7 @@ APIs mentioned in this article.
 **[ICoreWebView2 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)** - WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 * [add_ContextMenuRequested method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) - Add an event handler for the `ContextMenuRequested` event.
 
-**[ICoreWebView2ContextMenuItem interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** - Represents a context menu item of a context menu displayed by WebView.
+**[ICoreWebView2ContextMenuItem interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** - A context menu item of a context menu displayed by WebView.
 * [add_CustomItemSelected method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected) - Add an event handler for the `CustomItemSelected` event.
 * [get_Children method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children) - Gets the list of children menu items through a `ContextMenuItemCollection` if the kind is Submenu.
 * [get_CommandId method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid) - Gets the Command ID for the `ContextMenuItem`.
@@ -645,7 +645,7 @@ APIs mentioned in this article.
 * [get_Name method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name) - Gets the unlocalized name for the `ContextMenuItem`.
 * [get_ShortcutKeyDescription method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription) - Gets the localized keyboard shortcut for this `ContextMenuItem`.
 
-**[ICoreWebView2ContextMenuItemCollection interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** - Represents a collection of `ContextMenuItem` objects.
+**[ICoreWebView2ContextMenuItemCollection interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** - A collection of `ContextMenuItem` objects.
 * [get_Count method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count) - Gets the number of `ContextMenuItem` objects contained in the `ContextMenuItemCollection`.
 * [GetValueAtIndex method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex) - Gets the `ContextMenuItem` at the specified index.
 * [InsertValueAtIndex method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#insertvalueatindex) - Inserts the `ContextMenuItem` at the specified index.
@@ -667,43 +667,44 @@ APIs mentioned in this article.
 
 **[ICoreWebView2ContextMenuRequestedEventHandler interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** - Receives `ContextMenuRequested` events.
 
-**[ICoreWebView2ContextMenuTarget interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** - Represents the information regarding the context menu target.
+**[ICoreWebView2ContextMenuTarget interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** - Information about the context menu target.
 * [get_kind method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget#get_kind) - Gets the kind of context that the user selected.
 
 **[ICoreWebView2CustomItemSelectedEventHandler interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)** - Raised to notify the host that the end user selected a custom `ContextMenuItem`.
 
-**[ICoreWebView2Deferral interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2deferral)** - This interface is used to complete deferrals on event args that support getting deferrals using the `GetDeferral` method.
+**[ICoreWebView2Deferral interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2deferral)** - Used to complete deferrals on event args that support getting deferrals using the `GetDeferral` method.
 * [Complete method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2deferral#complete) - Completes the associated deferred event.
 
-**[ICoreWebView2Environment interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6)** - A continuation of the ICoreWebView2ExperimentalEnvironment interface for creating `CoreWebView2` `ContextMenuItem` objects.
-* [CreateContextMenuItem method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem) - Create a `ContextMenuItem` object to insert into the WebView context menu.
+**[ICoreWebView2Environment interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment)** - Represents the WebView2 Environment.
+* [CreateContextMenuItem method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem) - Creates a `ContextMenuItem` object to insert into the WebView context menu.
 
 **[ICoreWebView2Settings interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)** - Defines properties that enable, disable, or modify WebView features.
 * [ICoreWebView2Settings::get_AreDefaultContextMenusEnabled method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)** - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
 * [ICoreWebView2Settings::put_AreDefaultContextMenusEnabled method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled) - Sets the `AreDefaultContextMenusEnabled` property.
 
-[COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind) -  Specifies the menu item kind for the `ICoreWebView2ExperimentalContextMenuItem::get_Kind` method.
+[COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind) -  Specifies the menu item kind for the `ICoreWebView2ExperimentalContextMenuItem::get_Kind` method.  <!--probably like c#: Represents the active element that caused the context menu request.  For example, if there is a selection with multiple images, audio, and text, the element that the end user right-clicks within the selection will be the option represented by this enum. -->
 * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_CHECK_BOX`
 * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
 * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_RADIO`
 * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`
 * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
 
-[COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind) - Indicates the kind of context for which the context menu was created for the `ICoreWebView2ContextMenuTarget::get_Kind` method.
+[COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind) - Kinds of context for which the context menu was created for the `ICoreWebView2ContextMenuTarget::get_Kind` method.
 * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE`
 * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE`
 
 <!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
-**[CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)** - WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
-*  [CoreWebView2.ContextMenuRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested) - Raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
+**[CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)** - Hosts web content using Microsoft Edge browser and web technology.
+*  [ContextMenuRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested) - Raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
 
-**[CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)** - Represents a context menu item of a context menu displayed by WebView.
-*  [CoreWebView2ContextMenuItem.CommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.commandid) - Gets the Command ID for the `CoreWebView2ContextMenuItem`.
-*  [CoreWebView2ContextMenuItem.CustomItemSelected Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected) - CustomItemSelected event is raised when the user selects this `CoreWebView2ContextMenuItem`.
+**[CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)** - A context menu item of a context menu.
+*  [CommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.commandid) - Gets the Command ID for the `CoreWebView2ContextMenuItem`.
+*  [CustomItemSelected Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected) - Raised when the user selects this `CoreWebView2ContextMenuItem`.
+*  [Kind Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.kind) - Gets the kind of `CoreWebView2ContextMenuItem` as `CoreWebView2ContextMenuItemKind`.
 
-**[CoreWebView2ContextMenuItemKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)**
+**[CoreWebView2ContextMenuItemKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)** - Kinds of menu items for the Kind property.
 * `CheckBox`
 * `Command`
 * `Radio`
@@ -711,26 +712,26 @@ APIs mentioned in this article.
 * `Submenu`
 
 **[CoreWebView2ContextMenuRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)** - Event args for the `ContextMenuRequested` event.
-*  [CoreWebView2ContextMenuRequestedEventArgs.ContextMenuTarget Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.contextmenutarget) - Gets the target information associated with the requested context menu.
-*  [CoreWebView2ContextMenuRequestedEventArgs.GetDeferral method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral) - Returns a `CoreWebView2Deferral` object.
-*  [CoreWebView2ContextMenuRequestedEventArgs.SelectedCommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid) - Gets or sets the selected command for the WebView to execute. The value is obtained via the `CoreWebView2ContextMenuItem.CommandId` property.
+*  [ContextMenuTarget Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.contextmenutarget) - Gets the target information associated with the requested context menu.
+*  [GetDeferral method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral) - Returns a `CoreWebView2Deferral` object.
+*  [SelectedCommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid) - Gets or sets the selected command for the WebView to execute.  The value is obtained via the `CoreWebView2ContextMenuItem.CommandId` property.
 
-**[CoreWebView2ContextMenuTarget Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget)** - Represents the information regarding the context menu target. Includes the context selected and the appropriate data used for the actions of a context menu.
+**[CoreWebView2ContextMenuTarget Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget)** - Information about the context menu target.  Includes the context selected and the appropriate data for the actions of a context menu.
 
-**[CoreWebView2ContextMenuTargetKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutargetkind)** - Indicates the kind of context for which the context menu was created for the Kind property. This enum will always represent the active element that caused the context menu request. If there is a selection with multiple images, audio and text, for example, the element that the end user right clicks on within this selection will be the option represented by this enum.
+**[CoreWebView2ContextMenuTargetKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutargetkind)** - Kinds of context for which the context menu was created for the Kind property.  Represents the active element that caused the context menu request.  For example, if there is a selection with multiple images, audio, and text, the element that the end user right-clicks within the selection will be the option represented by this enum.
 * `Image`
 * `Page`
 
 **[CoreWebView2Deferral Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)** - Used to complete deferrals on event args that support getting deferrals using the GetDeferral method. This class implements `IDisposable`.
 
-**[CoreWebView2Environment Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)** - Represents the WebView2 Environment.
-*  [CoreWebView2Environment.CreateContextMenuItem Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcontextmenuitem) - Create a `CoreWebView2ContextMenuItem` object to insert into the WebView context menu.
+**[CoreWebView2Environment Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)** - The WebView2 Environment.
+*  [CreateContextMenuItem Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcontextmenuitem) - Creates a `CoreWebView2ContextMenuItem` object to insert into the WebView context menu.
 
-**[CoreWebView2Settings Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings)** - Defines properties that enable, disable, or modify WebView features.
-*  [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled) - Determines whether the default context menus are shown to the user in WebView.
+**[CoreWebView2Settings Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings)** - Properties that enable, disable, or modify WebView features.
+*  [AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled) - Determines whether the default context menus are shown to the user in WebView.
 
 **[WebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.webview2)** - A control to embed web content in a WPF application.
-*  [WebView2.ContextMenu Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.webview2.contextmenu) - A context menu on a WebView2 instance.
+*  [ContextMenu Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.webview2.contextmenu) - A context menu on a WebView2 instance.
 
 ---
 
