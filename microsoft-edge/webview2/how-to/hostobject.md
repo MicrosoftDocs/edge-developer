@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 2/17/2022
+ms.date: 2/25/2022
 ---
 # Using Host Objects in WebView2
 
@@ -253,11 +253,11 @@ To follow along, we will use the WebView2 Sample App.
     159    });
     ```
 
-1. In line 154, we reference `chrome.webview.hostObjects.sync.sample.dateProperty`. This line of code is getting the `dateProperty` of the native host object.
+    Line 154 references `chrome.webview.hostObjects.sync.sample.dateProperty`. This line of code is getting the `dateProperty` of the native host object.
 
 Congratulations! You have successfully created a host object in your app's native-side code, passed the host object to your app's web-side code, and then used the host object from the app's web-side code. Now let's see what other APIs there are in the host-object ecosystem.
 
-The rest of this article is repurposed from [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true).
+The rest of this article is an excerpt from [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true).
 
 
 <!-- ====================================================================== -->
@@ -271,7 +271,7 @@ Host object proxies do not support `VT_DECIMAL` or `VT_RECORD` variants. R
 
 Nested arrays are supported up to a depth of 3. Arrays by reference types are not supported. `VT_EMPTY` and `VT_NULL` are mapped into JavaScript as null. In JavaScript, null and undefined are mapped to `VT_EMPTY`.
 
-### Sync vs Async communication with Host Objects: 
+### Sync vs Async communication with Host Objects
 
 All host objects are exposed as `window.chrome.webview.hostObjects.sync.{name}`. Here the host objects are exposed as synchronous host object proxies. These are not promises, and function as ???runtime or property access synchronously block running script waiting to communicate cross process??? for the host code to run. Accordingly, the result may have reliability issues, so this approach is not recommended. If possible, use the promise-based asynchronous `window.chrome.webview.hostObjects.{name}` API.
 
@@ -279,60 +279,31 @@ Synchronous host object proxies and asynchronous host object proxies may both us
 
 While JavaScript is blocked on a synchronous run to native code, that native code is unable to run back to JavaScript. Attempts to do so fail with `HRESULT_FROM_WIN32(ERROR_POSSIBLE_DEADLOCK)`.
 
-Host object proxies are JavaScript Proxy objects that intercept all property get, property set, and method invocations. Properties or methods that are a part of the Function or Object prototype are run locally. Additionally any property or method in the chrome.webview.hostObjects.options.forceLocalProperties array are also run locally. This defaults to including optional methods that have meaning in JavaScript like toJSON and Symbol.toPrimitive. Add more to the array as required. 
+Host object proxies are JavaScript Proxy objects that intercept all `property get`, `property set`, and `method` invocations. Properties or methods that are a part of the Function or Object prototype are run locally. Additionally any property or method in the `chrome.webview.hostObjects.options.forceLocalProperties` array are also run locally. This defaults to including optional methods that have meaning in JavaScript like `toJSON` and `Symbol.toPrimitive`. Add more to the array as required. 
 
-The chrome.webview.hostObjects.cleanupSome method performs a best effort garbage collection on host object proxies. 
+The `chrome.webview.hostObjects.cleanupSome` method performs a best effort garbage collection on host object proxies. 
 
-The chrome.webview.hostObjects.options object provides the ability to change some functionality of host objects. 
+The `chrome.webview.hostObjects.options` object provides the ability to change some functions of host objects. <!-- Does this belong with the following tables?-->
 
+| Options property | Details |
+|--- |--- | 
+|`forceLocalProperties` |This is an array of host object property names that runs locally, instead of being called on the native host object. This defaults to `then`, `toJSON`, `Symbol.toString`, and `Symbol.toPrimitive`.|
+|`log` |This is a callback with debug information. For example, you can set this to `console.log.bind(console)` to have it print debug information to the console. The default value is `null`.|
+|`shouldSerializeDates` |The default value is `false`. JavaScript `Date` objects are sent to host objects as a string using `JSON.stringify`. You can set this property to `true` to have `Date` objects properly serialize as a `VT_DATE    ` when sending to the native host object, and have `VT_DATE` properties and return values create a JavaScript `Date` object.|
 
+Host object proxies also have the following methods which run locally. 
 
-### Options property 
+| Method name | Details |
+|--- |--- |
+|`applyHostFunction`, </br>`getHostProperty`, </br>`setHostProperty ` |Perform a method invocation, property get, or property set on the host object. Use the methods to explicitly force a method or property to run remotely if a conflicting local method or property exists.|
+|`getLocalProperty`, </br>`setLocalProperty` |Perform property get, or property set locally. Use the methods to force getting or setting a property on the host object proxy rather than on the host object it represents.|
+|`sync` |Asynchronous host object proxies expose a sync method which returns a promise for a synchronous host object proxy for the same host object. For example, chrome.webview.hostObjects.sample.methodCall() returns an asynchronous host object proxy.|
+|`async` |Synchronous host object proxies expose an async method which blocks and returns an asynchronous host object proxy for the same host object. For example, chrome.webview.hostObjects.sync.sample.methodCall() returns a synchronous host object proxy.|
+|`then` |Asynchronous host object proxies have a `then` method. It allows proxies to be awaitable, then returns a promise that resolves with a representation of the host object. If the proxy represents a JavaScript literal, a copy of that is returned locally. If the proxy represents a function, a non-awaitable proxy is returned. If the proxy represents a JavaScript object with a mix of literal properties and function properties, the a copy of the object is returned with some properties as host object proxies.|
 
-Details 
+All other property and method invocations are run remotely, except for the preceding Remote object proxy methods, `forceLocalProperties` list, and properties on Function and Object prototypes. Asynchronous host object proxies return a promise representing asynchronous completion of remotely invoking the method, or getting the property.
 
-forceLocalProperties 
-
-This is an array of host object property names that will be run locally, instead of being called on the native host object. This defaults to then, toJSON, Symbol.toString, and Symbol.toPrimitive. You can add other properties to specify that they should be run locally on the javascript host object proxy. 
-
-log 
-
-This is a callback that will be called with debug information. For example, you can set this to console.log.bind(console) to have it print debug information to the console to help when troubleshooting host object usage. By default this is null. 
-
-shouldSerializeDates 
-
-By default this is false, and javascript Date objects will be sent to host objects as a string using JSON.stringify. You can set this property to true to have Date objects properly serialize as a VT_DATE when sending to the native host object, and have VT_DATE properties and return values create a javascript Date object. 
-
-Host object proxies additionally have the following methods which run locally. 
-
-
-### Method name 
-
-Details 
-
-applyHostFunction, getHostProperty, setHostProperty 
-
-Perform a method invocation, property get, or property set on the host object. Use the methods to explicitly force a method or property to run remotely if a conflicting local method or property exists. For instance, proxy.toString() runs the local toString method on the proxy object. But proxy.applyHostFunction('toString') runs toString on the host proxied object instead. 
-
-getLocalProperty, setLocalProperty 
-
-Perform property get, or property set locally. Use the methods to force getting or setting a property on the host object proxy rather than on the host object it represents. For instance, proxy.unknownProperty gets the property named unknownProperty from the host proxied object. But proxy.getLocalProperty('unknownProperty') gets the value of the property unknownProperty on the proxy object. 
-
-sync 
-
-Asynchronous host object proxies expose a sync method which returns a promise for a synchronous host object proxy for the same host object. For example, chrome.webview.hostObjects.sample.methodCall() returns an asynchronous host object proxy. Use the sync method to obtain a synchronous host object proxy instead: const syncProxy = await chrome.webview.hostObjects.sample.methodCall().sync(). 
-
-async 
-
-Synchronous host object proxies expose an async method which blocks and returns an asynchronous host object proxy for the same host object. For example, chrome.webview.hostObjects.sync.sample.methodCall() returns a synchronous host object proxy. Running the async method on this blocks and then returns an asynchronous host object proxy for the same host object: const asyncProxy = chrome.webview.hostObjects.sync.sample.methodCall().async(). 
-
-then 
-
-Asynchronous host object proxies have a then method. Allows proxies to be awaitable. then returns a promise that resolves with a representation of the host object. If the proxy represents a JavaScript literal, a copy of that is returned locally. If the proxy represents a function, a non-awaitable proxy is returned. If the proxy represents a JavaScript object with a mix of literal properties and function properties, the a copy of the object is returned with some properties as host object proxies. 
-
-All other property and method invocations (other than the above Remote object proxy methods, forceLocalProperties list, and properties on Function and Object prototypes) are run remotely. Asynchronous host object proxies return a promise representing asynchronous completion of remotely invoking the method, or getting the property. The promise resolves after the remote operations complete and the promises resolve to the resulting value of the operation. Synchronous host object proxies work similarly, but block running JavaScript and wait for the remote operation to complete. 
-
-Setting a property on an asynchronous host object proxy works slightly differently. The set returns immediately and the return value is the value that is set. This is a requirement of the JavaScript Proxy object. If you need to asynchronously wait for the property set to complete, use the setHostProperty method which returns a promise as described above. Synchronous object property set property synchronously blocks until the property is set. 
+Setting a property on an asynchronous host object proxy works differently. The set returns immediately and the return value is the value that is set. This is a requirement of the JavaScript Proxy object. If you need to asynchronously wait for the property set to complete, use the `setHostProperty` method which returns a promise as described above. Synchronous object property set property synchronously blocks until the property is set. 
 
 For example, suppose you have a COM object with the following interface. 
 
@@ -386,7 +357,7 @@ For example, suppose you have a COM object with the following interface.
     }; 
 ``` 
 
-Add an instance of this interface into your JavaScript with AddHostObjectToScript. In this case, name it sample. 
+Add an instance of this interface into your JavaScript with AddHostObjectToScript. In this case, name it `sample`. 
 
 ```cpp
             VARIANT remoteObjectAsVariant = {}; 
@@ -409,12 +380,12 @@ Add an instance of this interface into your JavaScript with AddHostObjectToScr
 
                 m_webView->AddHostObjectToScript(L"sample", &remoteObjectAsVariant)); 
 
-            remoteObjectAsVariant.pdispVal->Release(); 
+            remoteObjectAsVariant.pdispVal->Release();
+```
 
-In the HTML document, use the COM object using chrome.webview.hostObjects.sample. 
-
-HTMLCopy 
-
+In the HTML document, use the COM object using `chrome.webview.hostObjects.sample`. 
+ 
+```html
         document.getElementById("getPropertyAsyncButton").addEventListener("click", async () => { 
 
             const propertyValue = await chrome.webview.hostObjects.sample.property; 
@@ -562,4 +533,4 @@ HTMLCopy
         }); 
 ```
 
-Exposing host objects to script has security risk. For more information about best practices, navigate to Best practices for developing secure WebView2 applications. 
+Exposing host objects to script has security risk. For more information, see [/microsoft-edge/webview2/concepts/security](Best practices for developing secure WebView2 applications - Microsoft Edge Development | Microsoft Docs).
