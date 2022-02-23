@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/15/2021
+ms.date: 2/24/2022
 ---
 # Embed web content into native applications
 
@@ -80,7 +80,8 @@ To see messaging in action:
    ```JavaScript
    window.chrome.webview.addEventListener('message', arg => {
       if ("SetColor" in arg.data) {
-         document.getElementById("colorable").style.color = arg.data.SetColor;
+         document.getElementById("colorable").style.color = 
+         arg.data.SetColor;
       }
    });
    ```
@@ -91,14 +92,16 @@ To see messaging in action:
 
    ```html
    <h1>WebMessage sample page</h1>
-   <p>This page demonstrates basic interaction between the host app and the webview by
-   means of Web Messages.</p>
+   <p>This page demonstrates basic interaction between the host app 
+   and the webview by means of Web Messages.</p>
 
    <h2>Posting Messages</h2>
-   <p id="colorable">Messages can be posted from the host app to the webview using the
-   functions <code>ICoreWebView2::PostWebMessageAsJson</code> and
-   <code>ICoreWebView2::PostWebMessageAsString</code>. Try selecting the menu item
-   "Script > Post Message JSON" to send the message <code>{"SetColor":"blue"}</code>.
+   <p id="colorable">Messages can be posted from the host app to the 
+   webview using the functions
+   <code>ICoreWebView2::PostWebMessageAsJson</code> and
+   <code>ICoreWebView2::PostWebMessageAsString</code>. Try selecting 
+   the menu item "Script > Post Message JSON" to send the message 
+   <code>{"SetColor":"blue"}</code>.
    It should change the text color of this paragraph.</p>
    ```
 
@@ -138,10 +141,10 @@ The C++ file handles the title text and communicates it to the host app as a str
 
    ```html
    <h2>Receiving Messages</h2>
-   <p>The host app can receive messages by registering an event handler with
-   <code>ICoreWebView2::add_WebMessageReceived</code>. If you enter text and click
-   "Send", this page will send a message to the host app which will change the text of
-   the title bar.</p>
+   <p>The host app can receive messages by registering an event handler 
+   with <code>ICoreWebView2::add_WebMessageReceived</code>. If you enter 
+   text and click "Send", this page will send a message to the host app 
+   which will change the text of the title bar.</p>
    <input type="text" id="title-text"/>
    <button onclick="SetTitleText()">Send</button>
    ```
@@ -192,21 +195,24 @@ This example follows the `<h2>Round trip</h2>` section of the WebMessage sample 
 
 When requested by the host app, the C++ file gets the window bounds and sends the data to WebView2 as a JSON web message.
 
+1. The HTML file includes a button to get window bounds from the host app:
+
+   ```html
+   <h2>Round trip</h2>
+   <p>The host app can send messages back in response to received 
+   messages. If you click the <b>Get window bounds</b> button, the 
+   host app reports back the bounds of its window, which are 
+   displayed in the text box.</p>
+   <button onclick="GetWindowBounds()">Get window bounds</button><br>
+   <textarea id="window-bounds" rows="4" readonly></textarea>
+   ```
+
 1. When the user clicks the button, WebView2 transmits a message from the web page to the native application using `window.chrome.webview.postMessage`.
 
    ```html
    function GetWindowBounds() {
       window.chrome.webview.postMessage("GetWindowBounds");
    }
-   ```
-
-1. The HTML file includes a button to get window bounds from the host app:
-
-   ```html
-   <h2>Round trip</h2>
-   <p>The host app can send messages back in response to received messages. If you click the <b>Get window bounds</b> button, the host app reports back the bounds of its window, which are displayed in the text box.</p>
-   <button onclick="GetWindowBounds()">Get window bounds</button><br>
-   <textarea id="window-bounds" rows="4" readonly></textarea>
    ```
 
 1. The event handler in [ScenarioWebMessage.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/a12bfcc2bc8a1155529c35c7bd4645036f492ca0/SampleApps/WebView2APISample/ScenarioWebMessage.cpp) gets the window bounds and sends the data to the host app using `TryGetWebMessageAsString`:
