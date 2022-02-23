@@ -39,7 +39,7 @@ App sync is available on desktop devices only, at this stage.  To keep your apps
 In Microsoft Edge, the **Apps** command in the **Settings and more** menu is being redesigned:
 *  The **Apps** menu icon can be added to the toolbar, for quick access.
 *  The popup menu can be pinned open as a sidebar to show your apps alongside web content.
-*  Customizable view and sort options have been added, along with a **Your available apps** section to support the App Sync feature.
+*  Customizable view and sort options have been added, along with a **My available apps** section to support the App Sync feature.
 
 Users can show the **Apps** menu icon on the toolbar, for quick access:
 
