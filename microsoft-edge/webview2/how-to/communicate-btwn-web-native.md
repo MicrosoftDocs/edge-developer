@@ -255,20 +255,6 @@ When requested by the host app, the C++ file gets the window bounds and sends th
    }).Get(), &m_webMessageReceivedToken));
    ```
 
-1. The host app uses the `Inject Script` menu item in the Microsoft Visual C++ generated resource script file [WebView2APISample.rc](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/WebView2APISample.rc) to send the window bounds back to the web page.
-
-   ```xml
-      MENUITEM "Inject Script",               IDM_INJECT_SCRIPT
-   ```
-
-1. The script file in turn calls the case `IDM_INJECT_SCRIPT` in [ScriptComponent.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/c7d7c75184dec0c46634f27a8f4beba320b04618/SampleApps/WebView2APISample/ScriptComponent.cpp):
-
-   ```cpp
-      case IDM_INJECT_SCRIPT:
-         InjectScript();
-         return true;
-   ```
-
    The window bounds are displayed on the web page.
 
 
