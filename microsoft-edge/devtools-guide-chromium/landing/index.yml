@@ -246,7 +246,7 @@ landingContent:
 
 # =============================================================================
 # Card
-  - title: References
+  - title: Reference
     linkLists:
       - linkListType: reference
         links:
