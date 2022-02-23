@@ -12,6 +12,10 @@ ms.date: 02/14/2022
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
 
+
+The WebView2 control provides a default context menu.
+
+
 <!-- headings: assume "menuitems" better reflects the API design & usage than "a menuitem" -->
 
 
@@ -20,9 +24,9 @@ Use the **ContextMenuRequested** API to customize the context-menus (right-click
 
 To add a custom right-click menu to a WebView2 app, containing menuitems or commands, use the XYZ API.
 
-In a custom context menu, your WebView2 app tells the WebView2 control when user selected a menuitem, so WebView2 can execute the Cut (eg) command.
+In a custom context menu, your WebView2 app tells the WebView2 control when user selected a menuitem, so WebView2 can execute the menuitem command, such as **Cut** command.
 
-Context menus use menuitem IDs, so Office can pass the user selection to WebView2:
+Context menus use menuitem IDs, so the host can pass the user selection to WebView2:
 
 API: (ContextMenuResult id, ContextMenuItem selection).
 
@@ -30,31 +34,24 @@ Define where to display the context menu, by using relative window position.
 
 
 <!-- ====================================================================== -->
-## Add a menuitem to a context menu
-
-tbd
+## Add menuitems to a context menu
 
 
-### Add a default menuitem to a default context menu
-
-tbd
+<!-- ### Add default menuitems to a default context menu -->
 
 
-### Add a default menuitem to a custom context menu
-
-tbd
+<!-- ### Add default menuitems to a custom context menu -->
 
 
-### Add a custom menuitem to a default context menu
+### Add custom menuitems to a default context menu
 
 You can add custom menuitems to the default context menu.
 
 <!-- cpp or cs? -->
 *  `ContextMenuRequested(id, position, list of ContextMenuItems)`
 
-### Add a custom menuitem to a custom context menu
+### Add custom menuitems to a custom context menu
 
-tbd
 
 
 <!-- ====================================================================== -->
@@ -298,28 +295,17 @@ IList<CoreWebView2ContextMenuItem> menuList, ItemsControl cm)
 
 
 <!-- ====================================================================== -->
-## Remove a menuitem from a context menu
+## Remove menuitems from a context menu
 
 You can remove default or custom menuitems from the default context menu.
 
-### Remove a default menuitem from a default context menu
+### Remove default menuitems from a default context menu
 
-tbd
+### Remove custom menuitems from a default context menu
 
+### Remove default menuitems from a custom context menu
 
-### Remove a custom menuitem from a default context menu
-
-tbd
-
-
-### Remove a default menuitem from a custom context menu
-
-tbd
-
-
-### Remove a custom menuitem from a custom context menu
-
-tbd
+### Remove custom menuitems from a custom context menu
 
 
 <!-- ====================================================================== -->
@@ -329,10 +315,10 @@ You can add or remove entries to the default WebView context menu.  For this cas
 
 <!-- 
 evidently can do these scenarios - which are covered here?
-(Add a default menuitem on the default context menu) (wording makes sense?)  ("menuitems" might better reflect the API usage than "a menuitem")
-Add a custom menuitem on the default context menu
-Remove a default menuitem from the default context menu
-Remove a custom menuitem from the default context menu
+(Add default menuitems on the default context menu) (wording makes sense?)  ("menuitems" might better reflect the API usage than "a menuitem")
+Add custom menuitems on the default context menu
+Remove default menuitems from the default context menu
+Remove custom menuitems from the default context menu
 -->
 
 <!-- ------------------------------- -->
@@ -456,33 +442,30 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
 
 
 <!-- ====================================================================== -->
-## Detect when a context menu is opened: the CoreWebView2ContextMenuRequested event
+## Detect when a context menu is opened
 
-When your app receives the `CoreWebView2ContextMenuRequested` event, indicating that the user requested opening the context menu.
+When a user requests opening a context menu (such as by right-clicking), your app needs to listen for the [CoreWebView2.ContextMenuRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested) event.
 
-When your app detects this event, your then can do a combination of the following:
+When you detect this event, do some combination of the following:
 
-*  Add custom menuitems to the default context menu that's provided by the WebView2 control.
+*  Add custom menuitems to the default context menu.
 
-*  Remove custom menuitems from the default context menu that's provided by the WebView2 control.
+*  Remove custom menuitems from the default context menu.
 
-*  Open a custom context menu, using your app's own, custom UI.
+*  Open a custom context menu.
 
-The `CoreWebView2ContextMenuRequested` event indicates that the user requested opening a context menu.
+The `CoreWebView2.ContextMenuRequested` event indicates that the user requested opening a context menu.
 
 The WebView2 control raises this event to indicate that the user requested opening a context menu in the WebView2 control, such as by right-clicking.
 
-The WebView2 control only raises the `CoreWebView2ContextMenuRequested` event if the current webpage allows the context menu to appear; that is, if the `AreDefaultContextMenusEnabled` property is `true`.
+The WebView2 control only raises the `CoreWebView2.ContextMenuRequested` event if the current webpage allows the context menu to appear; that is, if the `AreDefaultContextMenusEnabled` property is `true`.
 
+
+* [CoreWebView2.ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
 
 ### Detect when a default context menu is opened
 
-tbd
-
-
 ### Detect when a custom context menu is opened
-
-tbd
 
 
 <!-- ====================================================================== -->
@@ -495,10 +478,7 @@ Enumerate the menu item IDs and text.  (for what task?  check example code)
 
 ### Detect when a default menuitem is selected
 
-tbd
-
-
-### Detect when a custom menuitem is selected: the CoreWebView2CustomItemSelected event
+### Detect when a custom menuitem is selected
 
 Raised when the user selects a custom menuitem on a default or custom context menu.
 
@@ -516,13 +496,7 @@ If the user selects a custom menuitem, the `CustomMenuItemSelected` event is rai
 <!-- ====================================================================== -->
 ## Read information sent from WebView2 when a menuitem is selected
 
-tbd
-
-
 ### Read information sent from WebView2 when a default menuitem is selected
-
-tbd
-
 
 ### Read information sent from WebView2 when a custom menuitem is selected
 
@@ -545,37 +519,23 @@ When your app indicates to WebView2 that a user selected a menuitem on a context
 <!-- ====================================================================== -->
 ## Send a selected menuitem to WebView2
 
-tbd
-
-
 ### Send a selected default menuitem to WebView2
 
-tbd
-
-
 ### Send a selected custom menuitem to WebView2
-
-tbd
 
 
 <!-- ====================================================================== -->
 ## Enable a context menu
 
-tbd
-
-
 ### Enable a default context menu
 
 You can use this API or the earlier API.
 
-
 ### Enable a custom context menu
-
-tbd
 
 
 <!-- ====================================================================== -->
-## Disable a context menu: the AreDefaultContextMenusEnabled property
+## Disable a context menu
 
 The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.
 
@@ -636,10 +596,7 @@ The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/Sa
 <!-- end-of-tab-set marker -->
 
 
-
 ### Disable a custom context menu
-
-tbd
 
 
 <!-- ====================================================================== -->
@@ -768,3 +725,4 @@ APIs mentioned in this article.
 ## See also
 
 * [Spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ContextMenuRequested.md)
+  * The spec says `CoreWebView2ContextMenuRequested` event, but the actual implementation is the `CoreWebView2.ContextMenuRequested` event.
