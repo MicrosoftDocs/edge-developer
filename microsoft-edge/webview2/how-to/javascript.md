@@ -1,5 +1,5 @@
 ---
-title: Call web-side JavaScript code from native-side C++ code
+title: Call web-side code from native-side code
 description: Learn how to use JavaScript in complex scenarios in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/5/2022
 ---
-# Call web-side JavaScript code from native-side C++ code
+# Call web-side code from native-side code
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
 
 Using JavaScript in WebView2 controls allows you to customize native apps to meet your requirements. This article explores how to use JavaScript in WebView2, and reviews how to develop using advanced WebView2 features and functions.

@@ -891,13 +891,13 @@
                   href: webview2/how-to/communicate-btwn-web-native.md
                   displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
 
-                - name: Call web-side JavaScript code from native-side C++ code
+                - name: Call web-side code from native-side code
                   href: webview2/how-to/javascript.md
                   displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-                - name: Call native-side C++ code from web-side JavaScript code
-                  href: webview2/how-to/add-host-object-to-script.md
-                  displayName: AddHostObjectToScript API
+                # - name: Call native-side code from web-side code
+                #   href: webview2/how-to/add-host-object-to-script.md
+                #   displayName: AddHostObjectToScript API
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
@@ -947,6 +947,17 @@
               displayName: Threading model for WebView2 apps  # top-of-page title
 
 # -----------------------------------------------------------------------------
+        - name: User data and history
+          items:
+            - name: Manage user data folders
+              href: webview2/concepts/user-data-folder.md
+              displayName: Manage the user data folder  # old title
+
+            - name: Clear browsing data from the user data folder
+              href: webview2/concepts/clear-browsing-data.md
+              displayName: 
+
+# -----------------------------------------------------------------------------
         - name: Advanced Topics and Best Practices
           items:
             - name: Development best practices
@@ -968,16 +979,6 @@
             - name: Automate and test with Microsoft Edge Driver
               href: webview2/how-to/webdriver.md
               displayName: Automate and test WebView2 apps with Microsoft Edge Driver  # top-of-page title
-
-            - name: User data and history
-              items:
-                - name: Manage user data folders
-                  href: webview2/concepts/user-data-folder.md
-                  displayName: Manage the user data folder  # old title
-
-                - name: Clear browsing data from the user data folder
-                  href: webview2/concepts/clear-browsing-data.md
-                  displayName: 
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
