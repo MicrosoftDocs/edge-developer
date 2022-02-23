@@ -12,7 +12,7 @@ ms.date: 02/09/2022
 
 To clear browsing data from the user data folder for a WebView2 app to free up space, call the methods of the Clear Browsing Data API.
 
-The Clear Browsing Data API allows you to programmatically clear space in the user data folder for a user profile.  These methods clear selected browsing data that is stored in the user data folder of a WebView2 app.  For example, you can delete browsing data when a user signs out, to clear space in the user data folder.
+The Clear Browsing Data API allows you to programmatically erase data in the user data folder that's associated with a WebView2 user profile.  For example, use this API to clear user data and history when a user signs out.
 
 You can:
 *  Clear all browsing data.
