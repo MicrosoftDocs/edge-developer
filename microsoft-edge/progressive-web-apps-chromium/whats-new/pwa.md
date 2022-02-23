@@ -19,7 +19,7 @@ Microsoft Edge Canary/Dev channels moved to version 100 on February 9,2022 and i
 ### App Sync
 The sync service powering features like favorites, settings, history & more has been expanded to include your installed web apps - that is PWAs and sites installed as apps. The sync service works when you are signed in to your profile and have opted in to syncing. As we test and gradually release this feature over the coming weeks, users that have opted in to sync will start to see the **Your available apps** section in the `edge://apps` page and the [new Apps menu](#redesigned-apps-menu). 
 
-Available apps will show any apps you've installed on other devices with the same signed in profile, that aren't currently installed in the Edge instance you are using. The available apps will be shown in their own section with grey icons. Press the "Install" button to install the app on that device.
+The **Your available apps** section will show any apps you've installed on other devices with the same signed in profile, that aren't currently installed in the Edge instance you are using. The available apps will be shown in their own section with grey icons. Click **Install** to install the app on that device.
 
    :::image type="content" source="media/available-app-install.png" alt-text="Available apps shown on Apps page with install button highlighted.":::
 
