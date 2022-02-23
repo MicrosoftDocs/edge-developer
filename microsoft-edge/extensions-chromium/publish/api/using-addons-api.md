@@ -196,7 +196,7 @@ Body content: Notes for certification, in JSON format
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X POST \
--d { notes=\"text value\" } \
+-d '{ "notes"="text value" }' \
 -v \
 https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions
 ```
@@ -225,7 +225,8 @@ Header Parameters: Authorization: Bearer $TOKEN
 > curl \
 -H "Authorization: Bearer $TOKEN" \
 -X GET \
--v \ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
+-v \
+https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submissions/operations/{operationID}
 ```
 
 ### See also

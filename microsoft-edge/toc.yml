@@ -384,9 +384,11 @@
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                   displayName: Network Conditions tool, Device Emulation, Device Emulator
 # Network request blocking tool -----------------------------------------------
-            # - name: Network request blocking tool  # un-comment node when add article or jump page to repo
-            #   items:
-            #       displayName: Network request blocking tool
+            - name: Network request blocking tool
+              items:
+                - name: Block network requests
+                  href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
+                  displayName: Network request blocking tool
 # Performance tool ------------------------------------------------------------
             - name: Performance tool
               items:
@@ -940,6 +942,10 @@
               href: webview2/concepts/user-data-folder.md
               displayName: Manage the user data folder  # old title
 
+            - name: Clear browsing data from the user data folder
+              href: webview2/concepts/clear-browsing-data.md
+              displayName: 
+
             - name: Process model
               href: webview2/concepts/process-model.md
               displayName: Process model for WebView2 apps  # top-of-page title
@@ -986,14 +992,6 @@
               href: webview2/how-to/static.md
               displayName: Statically link the WebView2 loader library, single-file app  # old title
 
-# -----------------------------------------------------------------------------
-#       - name: WebView2 features and APIs overview
-#         items:
-#           - name: Capabilities provided by WebView2 APIs  # new firstchild page
-#             href: webview2/x/x.md
-#             displayName: 
-
-# -----------------------------------------------------------------------------
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
           displayName: 
