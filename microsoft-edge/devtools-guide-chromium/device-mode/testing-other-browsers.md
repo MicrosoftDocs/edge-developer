@@ -118,19 +118,19 @@ Microsoft Edge (EdgeHTML) Virtual Machines (VMs) enable you to access different 
 
 If you aren't able to use the emulators and you don't have access to real devices, then cloud-based emulators are the next-best thing.  A big advantage of cloud-based emulators over real devices and local emulators is that you can automate unit tests for your site across different platforms.
 
-The following products are examples of cloud-based emulators and related products.  These descriptions are from the products' information sites and serve as examples of features or capabilities to consider.
+The following list is a sample of cloud-based emulators and testing sites. Review the descriptions for features or capabilities to consider when selecting a testing site. Conduct your own search to find the best cloud-based emulator for your needs.
 
 * [BrowserStack](https://www.browserstack.com/automate) helps you perform manual testing.  You select an operating system, a browser version, a device type, and a URL to browse, and then BrowserStack spins up a hosted virtual machine that you can interact with.  You can run multiple emulators in the same screen, to test the look and feel of your app across multiple devices at the same time.
 
 * [Device Anywhere](https://www.sigos.com/app-experience/) doesn't use emulators, but real devices which you can control remotely.  This is useful when you need to reproduce a problem on a specific device and an issue might not appear in some reports.
+
+* [HeadSpin](https://www.headspin.io/) helps you perform manual cross-browser testing on thousands of real devices, browsers, and operating systems.  You can record videos of complex bugs and share them through integration such as Slack, JIRA, and more.  Fast forward your go-to-market launch by testing in parallel.
 
 * [LambdaTest](https://www.lambdatest.com/) helps you perform manual cross-browser testing on a combination of various browsers and operating systems.  You can record videos of complex bugs and share them through integration such as Microsoft Teams, Slack, and more.  You can speed-up your testing by running tests in parallel.
 
 * [SauceLabs](https://saucelabs.com) enables you to run unit tests inside of an emulator, which can be useful for scripting a flow through your site and watching the video recording of this afterwards on various devices.  You can also do manual testing with your site.
 
 * [TestingBot](https://testingbot.com/) helps you do both manual testing and automated testing on various browser and operating system combinations.  Test both your websites and mobile apps on TestingBot's emulators and physical devices.
-
-(This list is closed for additions.)
 
 
 <!-- ====================================================================== -->
