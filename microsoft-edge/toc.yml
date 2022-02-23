@@ -443,7 +443,7 @@
 # Network request blocking tool -----------------------------------------------
             - name: Network request blocking tool
               items:
-                - name: Network request blocking tool
+                - name: Block network requests
                   href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
                   displayName: Network request blocking tool
 # Performance tool ------------------------------------------------------------
@@ -928,6 +928,7 @@
 
         - name: Concepts and How to
           items:
+
             - name: Automate and test WebView2 apps with Microsoft Edge Driver
               href: webview2/how-to/webdriver.md
 
@@ -981,6 +982,19 @@
 
             - name: Win32 C++ WebView2 API conventions
               href: webview2/concepts/win32-api-conventions.md
+
+
+      # "API conceptual intro" docs cover use-cases and which APIs to use for them.  also sample code & navigation to API Ref.
+
+
+      # - name: Use-cases for the APIs
+      # - name: Adding features using the APIs
+      # - name: Accomplishing tasks using the APIs
+      # - name: Overview of APIs
+        - name: Using the API features
+          items:
+            - name: Clear browsing data from the user data folder
+              href: webview2/concepts/clear-browsing-data.md
 
         - name: Release notes for WebView2 SDK
           href: webview2/release-notes.md

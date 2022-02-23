@@ -82,7 +82,7 @@ Right now the **Network** tool is empty.  DevTools only logs network activity af
 
 To view the network activity that a page causes:
 
-1. Refresh the webpage.  The Network panel logs all network activity in the **Network Log**.
+1. Refresh the webpage.  The **Network** panel logs all network activity in the **Network Log**.
 
    :::image type="content" source="../media/network-glitch-network.msft.png" alt-text="The Network Log." lightbox="../media/network-glitch-network.msft.png":::
 
@@ -98,12 +98,12 @@ To view the network activity that a page causes:
 
     *  **Time**.  The duration of the request.
 
-    *  **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover on a Waterfall.
+    *  **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover over a **Waterfall**.
 
     > [!NOTE]
-    > The graph above the Network Log is called the Overview.  You will not use the Overview graph in this tutorial, so you can hide it.  See [Hide the Overview pane](./reference.md#hide-the-overview-pane).
+    > The graph above the **Network Log** is called the **Overview**.  You won't use the **Overview** graph in this tutorial, so you can hide it.  See [Hide the Overview pane](./reference.md#hide-the-overview-pane).
 
-   After you open DevTools, it records network activity in the Network Log.
+   After you open DevTools, it records network activity in the **Network Log**.
 
 1. To demonstrate this, first look at the bottom of the **Network Log** and make a mental note of the last activity.
 
