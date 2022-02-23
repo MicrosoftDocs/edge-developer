@@ -17,7 +17,7 @@ This page lists the updates to PWAs and Web Apps from the Microsoft Edge Web App
 Microsoft Edge Canary/Dev channels moved to version 100 on February 9,2022 and in this milestone, we are testing the following new web app features. 
 
 ### App Sync
-The sync service powering features like favorites, settings, history & more has been expanded to include your installed web apps - that is PWAs and sites installed as apps. The sync service works when you are signed in to your profile and have opted in to syncing. As we test and gradually release this feature over the coming weeks, users that have opted in to sync will start to see "Available apps" in the `edge://apps` page and the [new Apps menu](#redesigned-apps-menu). 
+The sync service powering features like favorites, settings, history & more has been expanded to include your installed web apps - that is PWAs and sites installed as apps. The sync service works when you are signed in to your profile and have opted in to syncing. As we test and gradually release this feature over the coming weeks, users that have opted in to sync will start to see the **Your available apps** section in the `edge://apps` page and the [new Apps menu](#redesigned-apps-menu). 
 
 Available apps will show any apps you've installed on other devices with the same signed in profile, that aren't currently installed in the Edge instance you are using. The available apps will be shown in their own section with grey icons. Press the "Install" button to install the app on that device.
 
