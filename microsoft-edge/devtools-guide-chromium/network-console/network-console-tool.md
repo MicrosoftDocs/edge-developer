@@ -1,5 +1,5 @@
 ---
-title: Make network requests when testing web APIs (Network Console tool)
+title: Compose and send web API requests using the Network Console tool
 description: How to use the Network Console tool in Microsoft Edge DevTools to make synthetic network requests over HTTP when you're developing and testing web APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 02/24/2022
 ---
-# Send web API requests using the Network Console tool
+# Compose and send web API requests using the Network Console tool
 
 Use the **Network Console** tool to send web API requests.  For example, use the **Network Console** tool when you're developing and testing web APIs.
 

@@ -436,7 +436,7 @@
                   displayName: Network Conditions tool, Device Emulation, Device Emulator
 # Network Console tool -----------------------------------------------
 # todo: uncomment when Network Console tool is in Edge Stable
-            # - name: Make network requests when testing web APIs (Network Console tool)
+            # - name: Compose and send web API requests using the Network Console tool
             #   items:
             #     - name: Network Console tool
             #       href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
