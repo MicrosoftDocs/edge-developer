@@ -50,7 +50,7 @@ Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript 
 
    ![The Memory Inspector tool.](../media/memory-inspector-tool.png)
 
-   To zoom the above image, right-click the image, and then select **Open image in new tab**.  Close the tab to return.
+   _To zoom: right-click > Open image in new tab._
 
 1. Expand the **buffer** to reveal the **Module Scope**.
 

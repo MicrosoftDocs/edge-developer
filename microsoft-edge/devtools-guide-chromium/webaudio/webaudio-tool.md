@@ -1,11 +1,11 @@
 ---
 title: WebAudio tool
-description: About the WebAudio tool in Microsoft Edge DevTools.
+description: How to use the WebAudio tool in Microsoft Edge DevTools to monitor WebAudio calls and traffic, for a webpage that uses the WebAudio API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/15/2022
+ms.date: 02/24/2022
 ---
 # WebAudio tool
 
@@ -17,10 +17,13 @@ To open the **WebAudio** tool:
 
 1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select **WebAudio**.
 
+1. Go to a webpage that uses the WebAudio API, such as [https://bpmtech.no](https://bpmtech.no).
+
+   Data about the page is displayed:
+
    ![The WebAudio tool.](../media/webaudio-tool.png)
 
-1. Go to a webpage that uses the WebAudio API.
+   _To zoom: right-click > Open image in new tab._
 
-<!-- 
-https://webaudio.github.io/demo-list/
--->
+
+<!-- https://webaudio.github.io/demo-list/ -->

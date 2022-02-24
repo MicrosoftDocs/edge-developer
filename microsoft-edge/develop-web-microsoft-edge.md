@@ -160,7 +160,9 @@ To see details of a screenshot or diagram:
 1. Close the image tab to return to the article.
 
 <!-- copypaste
-To zoom an image in this article, right-click it, and then select **Open image in new tab**.
+   ![The Elements tool, showing the <body> element in the DOM tree.](media/filename.png)
+
+   _To zoom: right-click > Open image in new tab._
 -->
 
 
