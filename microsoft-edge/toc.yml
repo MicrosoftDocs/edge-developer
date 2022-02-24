@@ -218,7 +218,11 @@
 
                 - name: Map preprocessed code to source code
                   href: devtools-guide-chromium/javascript/source-maps.md
-                  displayName: Sources tool
+                  displayName: Sources tool, source maps
+
+                - name: Debug original code using the Azure Artifacts symbol server
+                  href: devtools-guide-chromium/javascript/ado-symbol-server.md
+                  displayName: Sources tool, source maps
 # Optional tool tabs ==========================================================
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool

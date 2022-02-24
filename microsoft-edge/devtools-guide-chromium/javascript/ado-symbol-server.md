@@ -1,5 +1,5 @@
 ---
-title: Debug original code using the Azure Artifacts symbol server 
+title: Debug original code using the Azure Artifacts symbol server
 description: Learn how to publish source maps to the Azure Artifacts symbol server from Azure DevOps to debug origin source code in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
