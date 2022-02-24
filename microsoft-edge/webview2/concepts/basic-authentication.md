@@ -1,6 +1,6 @@
 ---
 title: Basic authentication for WebView2 apps
-description: 
+description: Basic authentication for WebView2 apps, including the sequence of authentication and navigation steps to retrieve a webpage from an HTTP server, with a WebView2 control instance acting as intermediary between the host app and the HTTP server.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
