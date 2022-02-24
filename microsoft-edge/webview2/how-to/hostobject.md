@@ -42,7 +42,7 @@ This article uses the WebView2 Win32 sample app to demonstrate some practical ap
 
 1. Download and install [Microsoft Visual Studio](https://visualstudio.microsoft.com/) 2019 (version 16.11.10) or later, and other prerequisites as described in [Get started with WebView2 in Win32 apps](/microsoft-edge/webview2/get-started/win32).
 
-1. Clone the [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo, which includes the Win32-specific WebView2 sample app.  For instructions, in a new window or tab, see [Clone the WebView2Samples repo](../get-started/win32.md#step-2---clone-the-webview2samples-repo) in [Get started with WebView2 in Win32 apps](/microsoft-edge/webview2/get-started/win32).
+1. Clone the [WebView2Samples](https://github.com/MicrosoftEdge/WebView2Samples) repo, which includes the Win32-specific WebView2 sample app.  For instructions, in a new window or tab, open  [Get started with WebView2 in Win32 apps](/microsoft-edge/webview2/get-started/win32).
 
 1. Open Microsoft Visual Studio.
 

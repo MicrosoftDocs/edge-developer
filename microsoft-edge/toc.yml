@@ -830,6 +830,9 @@
             - name: Embed web content into native applications
               href: webview2/how-to/communicate-btwn-web-native.md
 
+            - name: Using Host Objects in WebView2
+              href: webview2/how-to/hostobject.md
+
             - name: Use JavaScript in WebView for extended scenarios
               href: webview2/how-to/javascript.md
 
