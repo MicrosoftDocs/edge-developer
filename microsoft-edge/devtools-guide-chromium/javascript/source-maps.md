@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 02/24/2022
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Map preprocessed code to source code
 
-Keep your client-side code readable and debuggable even after you combine, minify, or compile it.  Use source maps to map your source code to your compiled code.
+Keep your client-side code readable and debuggable even after you combine, minify, or compile it.  Use source maps to map your compiled code to your source code.
 
 ### Summary
 
@@ -82,21 +82,19 @@ Source Maps are enabled by default.<!-- (as of Microsoft Edge 39)-->
 
 To make sure that Source Maps are enabled:
 
-1. Open DevTools.
+1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
 
-1. Select **Customize and control DevTools** (`...`) > **Settings**.
+1. Under **Sources**, select **Enable JavaScript Source Maps**.  You can also select **Enable CSS Source Maps**.
 
-1. On the **Preferences** pane, under **Sources**, select **Enable JavaScript Source Maps**.  You can also turn on the **Enable CSS Source Maps**.
-
-:::image type="content" source="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png" alt-text="Enabling Source Maps." lightbox="../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png":::
+![The Preferences panel showing the Sources section with the Enable JavaScript Source Maps option](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
 
 ### Debugging with Source Maps
 
-When [debugging your code](index.md#step-4-step-through-the-code) and Source Maps enabled, Source Maps appear in two places:
+When [debugging your code](index.md#step-4-step-through-the-code) and Source Maps are enabled, Source Maps are used in two places:
 
-*  In the console.  The link to the source is the original file, not the generated file.
+*  In the **Console** tool, links from log messages to source files are for the original files, not the compiled files.
 
-*  When stepping through code.  The links in the call stack open the original source file.
+*  When stepping through code in the **Sources** tool, the original files are displayed in the **Navigator** pane and links to source files in the **Call Stack** of the **Debugger** pane open the original source files.
 
 
 <!-- ====================================================================== -->
