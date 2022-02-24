@@ -145,9 +145,6 @@ conceptualContent:
             - url: /microsoft-edge/devtools-guide-chromium
               itemType: overview
               text: DevTools overview
-            - url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
-              itemType: overview
-              text: Reasons to use Microsoft Edge DevTools
             - url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
               itemType: overview
               text: What's new in Microsoft Edge DevTools  # new firstchild article

@@ -60,9 +60,6 @@ landingContent:
           - text: Overview of DevTools  # existing firstchild article
             url: /microsoft-edge/devtools-guide-chromium
 
-          - text: Reasons to use Microsoft Edge DevTools  # new article
-            url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
-
           - text: DevTools for beginners
             url: /microsoft-edge/devtools-guide-chromium/beginners/html
 
