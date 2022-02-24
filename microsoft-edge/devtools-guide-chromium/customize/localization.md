@@ -27,8 +27,6 @@ The DevTools UI in Chinese:
 
 ![The DevTools UI in Chinese.](../media/localization-zh.msft.png)
 
-_To zoom: right-click > **Open image in new tab**._
-
 
 <!-- ====================================================================== -->
 ## Reverting the DevTools UI to English
