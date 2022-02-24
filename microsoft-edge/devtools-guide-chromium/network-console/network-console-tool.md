@@ -9,9 +9,7 @@ ms.date: 02/24/2022
 ---
 # Send web API requests using the Network Console tool
 
-Use the **Network Console** tool to send web API requests.
-
-For example, use the **Network Console** tool when you're developing and testing web APIs.
+Use the **Network Console** tool to send web API requests.  For example, use the **Network Console** tool when you're developing and testing web APIs.
 
 To test a URL:
 
@@ -25,11 +23,23 @@ To test a URL:
 
 1. In the main pane of the Network Console tool, click **Create a request**.
 
-1. In the **Untitled Request** text box, enter a URL to test, and then click the **Send** button.
+1. In the **Untitled Request** text box, enter a URL to test.
+
+1. In the **GET** drop-down list, select a REST method: **GET**, **HEAD**, **POST**, **PUT**, or **PATCH**.
+
+1. Optionally, in the **Query** section, click the **Key** and **Value** text boxes and enter key/value pairs:
+
+   ![The Network Console tool.](images/entering-key-value-pairs.png)
+
+   The **Computed URL** is updated as you enter key/value pairs.
+
+1. Click the **Send** button.
 
 
+<!-- ====================================================================== -->
+## Starting from the Network tool
 
-To use the **Network Console** from the **Network** tool:
+To use the **Network Console** starting from the **Network** tool:
 
 1. Go to a webpage to test.
 
@@ -57,6 +67,6 @@ To use the **Network Console** from the **Network** tool:
 
 
 <!-- ====================================================================== -->
-## See also
+<!-- ## See also -->
 
-* [edge-devtools-network-console repo](https://github.com/microsoft/edge-devtools-network-console)
+<!-- * [edge-devtools-network-console repo](https://github.com/microsoft/edge-devtools-network-console) -->
