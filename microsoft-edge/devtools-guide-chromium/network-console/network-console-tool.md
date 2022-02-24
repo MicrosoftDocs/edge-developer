@@ -29,7 +29,7 @@ To test a URL:
 
 1. Optionally, in the **Query** section, click the **Key** and **Value** text boxes and enter key/value pairs:
 
-   ![The Network Console tool.](images/entering-key-value-pairs.png)
+   ![Entering key/value pairs to construct a URL in the Network Console tool.](images/entering-key-value-pairs.png)
 
    The **Computed URL** is updated as you enter key/value pairs.
 
