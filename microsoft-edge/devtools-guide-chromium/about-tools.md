@@ -71,6 +71,7 @@ Microsoft Edge DevTools includes the following tools.
 | **Welcome** tool | The **Welcome** tool opens when you first open DevTools.  It displays links to developer docs, latest features, Release Notes, and an option to contact the Microsoft Edge DevTools team. | [Welcome tool](welcome/welcome-tool.md) |
 
 <!-- table holding bin, keep comment line detached from table
+todo: move row into table when Network Console tool is in Edge Stable
 | **Network Console** tool | Use the **Network Console** tool to make changes to network requests (network calls) to see why they fail.  Change and replay any of the network requests, and make detailed network API calls.  | [Network Console tool](network-console/network-console-tool.md) |
 -->
 

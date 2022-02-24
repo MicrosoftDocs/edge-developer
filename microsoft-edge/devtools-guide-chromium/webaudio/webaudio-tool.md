@@ -9,7 +9,8 @@ ms.date: 02/24/2022
 ---
 # WebAudio tool
 
-Use the **WebAudio** tool to monitor **WebAudio** calls and traffic, for a webpage that uses the WebAudio API.
+Use the **WebAudio** tool to monitor the graph of **WebAudio** nodes that get created when a webpage uses the WebAudio API.
+
 
 To open the **WebAudio** tool:
 
@@ -22,8 +23,5 @@ To open the **WebAudio** tool:
    Data about the page is displayed:
 
    ![The WebAudio tool.](../media/webaudio-tool.png)
-
-   _To zoom: right-click > Open image in new tab._
-
 
 <!-- https://webaudio.github.io/demo-list/ -->

@@ -62,8 +62,6 @@ Selecting **Launch Instance** opens a browser window, and also opens the **Edge 
 
 ![Select Launch Instance to open the browser in Visual Studio Code.](media/edge-devtools-for-vscode-launch-instance.png)
 
-_To zoom: right-click > Open image in new tab._
-
 Use the Microsoft Edge DevTools extension in Visual Studio Code to inspect an HTML Element in Microsoft Edge. For example, click the **Success!** heading in the browser, and the **Elements** tool opens with the DOM tree expanded:
 
 ![Elements tool with HTML highlighted.](media/edge-devtools-for-vscode-elements.png)
@@ -90,8 +88,6 @@ To open a browser instance from Visual Studio Code:
 1. On the **Microsoft Edge Tools: Targets** panel, select **Launch Instance**.  Microsoft Edge opens, displaying a default page with guidance for more information.  Also, the **Edge DevTools** tab and panel is displayed in Visual Studio Code, containing the **Welcome**, **Elements**, and **Network** tools:
 
    ![Microsoft Edge and DevTools panel open in Visual Studio Code.](media/edge-devtools-for-vscode-targets-launch.png)
-
-   _To zoom: right-click > Open image in new tab._
 
 1. In the Microsoft Edge address bar, go to the URL of the project that you want to debug.
 
@@ -233,8 +229,6 @@ In the following example, we have `index.html` currently open in Visual Studio C
 
 ![Selecting the flexbox icon in the Styles tool to create a CSS change.](media/css-mirror-editing-start.msft.png)
 
-_To zoom: right-click > Open image in new tab._
-
 Changing the CSS setting created a new line of code in the correct CSS source file:
 
 ![Changing the CSS setting created a new line of code in the correct CSS source file.](media/css-mirror-editing-changed-file.msft.png)
@@ -259,8 +253,6 @@ Device emulation is a feature of the screencast browser in the editor.  This all
 
 ![The Device dropdown list in the 'Edge DevTools: Screencast' tab.](media/edge-devtools-for-vscode-device-dropdown.msft.png)
 
-_To zoom: right-click > Open image in new tab._
-
 You can select from a list of different devices to emulate in the screencast next to the Address bar:
 
 ![The list of devices that can be emulated open in the screencast of the extension.](media/edge-devtools-for-vscode-device-list.msft.png)
@@ -276,8 +268,6 @@ The default device is a desktop computer.  If the device you choose to emulate i
 Issues in your source code are highlighted with wavy underline. You can inspect the issue and get detailed information about what the problem is, how to fix it, and where to find more information.  To inspect the issue, select the code that has the wavy underline:
 
 ![An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information.](media/edge-devtools-for-vscode-inline-issue-reporting.msft.png)
-
-_To zoom: right-click > Open image in new tab._
 
 To see all the issues in the file, select **View Problem**:
 
@@ -314,8 +304,6 @@ JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome
    After the Microsoft Edge DevTools extension is installed, when you select **Inspect**, Microsoft Edge DevTools opens inside of Visual Studio Code:
 
    ![The Inspect button opens Microsoft Edge DevTools inside Visual Studio Code.](media/edge-devtools-for-vscode-tools-inside.png)
-
-   _To zoom: right-click > Open image in new tab._
 
    Now you can inspect the DOM, change CSS, and see network requests of your project running in the browser, without leaving Visual Studio Code.
 

@@ -25,8 +25,6 @@ When you open the demo page in the browser and open DevTools, notice that some i
 
 ![The Issues counter shows how many problems there are in the current webpage, and opens the Issues tool.](../media/a11y-testing-issues-tracker.msft.png)
 
-_To zoom: right-click > Open image in new tab._
-
 For this article, we'll focus on the **Accessibility** section of the **Issues** tool:
 
 ![Accessibility warnings displayed in the Issues tool.](../media/a11y-testing-accessibility-issues.msft.png)
@@ -142,8 +140,6 @@ After you click the **Inspect** tool button, you can move your pointer over any 
 
 ![Multicolor flexbox overlay and information overlay when using the Inspect tool.](../media/inspect-tool-flexbox-overlay.msft.png)
 
-_To zoom: right-click > Open image in new tab._
-
 The Inspect tool's **Accessibility** section includes a **Contrast** line, when applicable:
 
 ![The Inspect tool's Accessibility section includes a Contrast line, when applicable.](../media/a11y-testing-basics-inspector-overlay.msft.png)
@@ -236,8 +232,6 @@ Let's analyze these problems using DevTools.
 To find out why the sidebar navigation isn't optimized as expected for use with keyboards, start by using the **Inspect** tool to highlight a link in the sidebar navigation menu, and then drill down in the DOM tree to the `a` element:
 
 ![Inspecting the source code and the applied styles of a link in the sidebar navigation menu.](../media/a11y-testing-menu-link.msft.png)
-
-_To zoom: right-click > Open image in new tab._
 
 In the **Styles** tab, you can see the CSS that's applied to the link, and if you click the link to `styles.css`, the file opens in the **Sources** tool:
 
@@ -333,8 +327,6 @@ A green check mark icon indicates there's enough contrast, and an orange alert i
 
 ![The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay.](../media/a11y-testing-enough-contrast.msft.png)
 
-_To zoom: right-click > Open image in new tab._
-
 An element that doesn't have enough contrast is flagged by a warning in the **Inspect** overlay.  For example, the green **Dogs** list item in the **Donation status** section doesn't have enough contrast, as indicated in the **Inspect** overlay.  The overlay shows an orange circled exclamation mark:
 
 ![An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay.](../media/a11y-testing-not-enough-contrast.msft.png)
@@ -386,8 +378,6 @@ When switching to a light theme in the **Rendering** tool, the following issues 
 *  New contrast issues are detected because of the change to light theme:
 
    ![New contrast issues detected because of the change to light theme.](../media/a11y-testing-new-contrast-issues-in-light-mode.msft.png)
-
-   _To zoom: right-click > Open image in new tab._
 
 *  The **Donation Status** section of the page is unreadable in light mode, due to contrast issues:
 
@@ -445,5 +435,3 @@ None of these tools can replace a proper round of testing your products with peo
 Another way to find out what to do to improve your web product is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them:
 
 ![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem.](../media/a11y-testing-webhint-in-vs-code.msft.png)
-
-_To zoom: right-click > Open image in new tab._

@@ -124,23 +124,26 @@ Development of your webpages, web apps, and web-enabled products is robustly sup
 See [Accessibility in Microsoft Edge](accessibility/index.md).
 
 
+<!-- leaf node (article; omit per PR review) -->
 <!-- ====================================================================== -->
-## Privacy whitepaper
+<!-- ## Privacy whitepaper
 
 The Microsoft Edge _browser privacy promise_ provides you with protection, transparency, control, and respect.  Microsoft Edge has many features and services associated with privacy.  This whitepaper explains how your data is used, how to control the different features, and how to manage your collected data.
 
 See [Microsoft Edge Privacy Whitepaper](privacy-whitepaper/index.md).
+-->
 
 
+<!-- leaf node (article; omit per PR review) -->
 <!-- ====================================================================== -->
-## The Web We Want initiative
+<!-- ## The Web We Want initiative
 
 The Web We Want initiative is a cross-browser, open initiative focused on identifying missing features and functionalities in the web platform for potential development as web standards or browser features.  Let browser vendors and standards groups know what you think is missing from the web platform.
 
 If you build for the web, you inevitably run into problems.  Perhaps there's no way to achieve an aspect of your design with CSS, or it may require an incredible amount of experimenting with CSS.  Maybe there's a device feature you want to tap into using JavaScript, or there's a needed Developer Tools feature that can make your job easier.
 
 See [The Web We Want initiative](web-we-want/index.md).
-
+-->
 
 
 <!-- ============================================================================================================================================ -->
@@ -158,12 +161,6 @@ To see details of a screenshot or diagram:
 1. Right-click the image, and then select **Open image in new tab**.
 
 1. Close the image tab to return to the article.
-
-<!-- copypaste
-   ![The Elements tool, showing the <body> element in the DOM tree.](media/filename.png)
-
-   _To zoom: right-click > Open image in new tab._
--->
 
 
 <!-- ====================================================================== -->

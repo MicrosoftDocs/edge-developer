@@ -90,8 +90,6 @@ To block network requests by using the **Network** tool:
 
    ![Blocking from the network tool](./media/block-request-from-network-tool.png)
 
-   _To zoom: right-click > Open image in new tab._
-
 
 <!-- ====================================================================== -->
 ## Try the network request blocking tool
