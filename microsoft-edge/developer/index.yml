@@ -57,8 +57,11 @@ landingContent:
           - text: Develop for the web with Microsoft Edge  # new, topmost-level firstchild article
             url: /microsoft-edge/develop-web-microsoft-edge
 
+          - text: Microsoft Edge DevTools  # a lower-level card-based landing page
+            url: /microsoft-edge/devtools-guide-chromium/landing/index
+
           - text: Reasons to use Microsoft Edge DevTools  # new article
-            url: /microsoft-edge/devtools-guide-chromium/index
+            url: /microsoft-edge/devtools-guide-chromium/reasons-edge-devtools
 
           - text: Overview of DevTools  # existing firstchild article
             url: /microsoft-edge/devtools-guide-chromium/overview

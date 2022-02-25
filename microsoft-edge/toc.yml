@@ -17,23 +17,13 @@
 # DevTools Overview articles:
 
 # Overview of DevTools --------------------------------------------------------
-        - name: Reasons to use Microsoft Edge DevTools
-          href: devtools-guide-chromium/index.md  # previously this file contained the "Overview of DevTools" article
-          displayName: DevTools
-
-        # - name: Reasons to use Microsoft Edge DevTools  # new firstchild article
-        #   href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md  # deleted file in PR 1763
-        #   displayName: DevTools
-
         - name: Overview of DevTools
           href: devtools-guide-chromium/overview.md  # new .md to hold this content instead of using index.md
           displayName: DevTools
 
-# Opening DevTools ------------------------------------------------------------
-# merged this .md into the "Open DevTools" section of "Overview of DevTools", deleted .md:
-        # - name: Open DevTools
-        #   href: devtools-guide-chromium/open/index.md
-        #   displayName: DevTools
+        - name: Reasons to use Microsoft Edge DevTools
+          href: devtools-guide-chromium/reasons-edge-devtools.md
+          displayName: DevTools
 
 # What's New ------------------------------------------------------------------
         - name: What's new
@@ -565,7 +555,7 @@
 
             - name: Change DevTools placement (Undock, Dock to bottom, Dock to left)
               href: devtools-guide-chromium/customize/placement.md
-              displayName: settings
+              displayName: settings, dock to right
 
             - name: Change DevTools language settings  # added article
               href: devtools-guide-chromium/customize/localization.md

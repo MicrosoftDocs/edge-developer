@@ -139,37 +139,47 @@ conceptualContent:
         # Card
         - title: Microsoft Edge DevTools
           links:
-            - url: /microsoft-edge/develop-web-microsoft-edge
+# pages above DevTools TOC bucket
+            - text: Microsoft Edge Developer documentation  # toc root, card-based landing page
+              url: /microsoft-edge/index
               itemType: overview
-              text: Develop for the web with Microsoft Edge
 
-            - url: /microsoft-edge/devtools-guide-chromium/index
+            - text: Develop for the web with Microsoft Edge  # topmost article in TOC
+              url: /microsoft-edge/develop-web-microsoft-edge
               itemType: overview
-              text: Reasons to use Microsoft Edge DevTools
 
-            - url: /microsoft-edge/devtools-guide-chromium/overview
+# pages in DevTools TOC bucket
+            - text: Microsoft Edge DevTools  # lower-level card-based landing page
+              url: /microsoft-edge/devtools-guide-chromium/landing/index
               itemType: overview
-              text: Overview of DevTools
 
-            - url: /microsoft-edge/devtools-guide-chromium/beginners/html
+            - text: Overview of DevTools  # new file, moved content to here from deleted index.md
+              url: /microsoft-edge/devtools-guide-chromium/overview
               itemType: overview
-              text: DevTools for beginners
 
-            - url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+            - text: Reasons to use Microsoft Edge DevTools  # new article
+              url: /microsoft-edge/devtools-guide-chromium/reasons-edge-devtools
               itemType: overview
-              text: What's new in Microsoft Edge DevTools  # new firstchild article
 
-            - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+            - text: DevTools for beginners
+              url: /microsoft-edge/devtools-guide-chromium/beginners/html
+              itemType: overview
+
+            - text: What's new in Microsoft Edge DevTools  # new firstchild article
+              url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+              itemType: overview
+
+            - text: Command Menu
+              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
               itemType: how-to-guide
-              text: Command Menu
 
-            - url: /microsoft-edge/devtools-guide-chromium/css/index
+            - text: View and change CSS
+              url: /microsoft-edge/devtools-guide-chromium/css/index
               itemType: how-to-guide
-              text: View and change CSS
 
-            - url: /microsoft-edge/devtools-guide-chromium/shortcuts
+            - text: Keyboard shortcuts
+              url: /microsoft-edge/devtools-guide-chromium/shortcuts
               itemType: reference
-              text: Keyboard shortcuts
         # Card
         - title: Microsoft Edge extensions
           links:
