@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and edit session storage
 
-This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) key-value pairs.
+This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md) to view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) key-value pairs.
 
 
 <!-- ====================================================================== -->

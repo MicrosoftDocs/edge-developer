@@ -49,7 +49,7 @@ Technically, the tabs are an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#
 For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../shortcuts/index.md).  Be sure to bookmark it and refer back to it as you explore the different tools.
 
 
-<!-- keep the following entire h2 sync'd with (copied wholesale to) [Open DevTools](../index.md#open-devtools) in _Overview of DevTools_ -->
+<!-- keep the following entire h2 sync'd with (copied wholesale to) [Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_ -->
 <!-- ====================================================================== -->
 ## Open DevTools
 

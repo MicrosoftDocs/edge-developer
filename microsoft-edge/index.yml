@@ -142,24 +142,31 @@ conceptualContent:
             - url: /microsoft-edge/develop-web-microsoft-edge
               itemType: overview
               text: Develop for the web with Microsoft Edge
-            - url: /microsoft-edge/devtools-guide-chromium
-              itemType: overview
-              text: DevTools overview
-            - url: /microsoft-edge/devtools-guide-chromium/why-use-microsoft-edge-devtools
+
+            - url: /microsoft-edge/devtools-guide-chromium/index
               itemType: overview
               text: Reasons to use Microsoft Edge DevTools
-            - url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+
+            - url: /microsoft-edge/devtools-guide-chromium/overview
               itemType: overview
-              text: What's new in Microsoft Edge DevTools  # new firstchild article
+              text: Overview of DevTools
+
             - url: /microsoft-edge/devtools-guide-chromium/beginners/html
               itemType: overview
               text: DevTools for beginners
+
+            - url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+              itemType: overview
+              text: What's new in Microsoft Edge DevTools  # new firstchild article
+
             - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
               itemType: how-to-guide
               text: Command Menu
+
             - url: /microsoft-edge/devtools-guide-chromium/css/index
               itemType: how-to-guide
               text: View and change CSS
+
             - url: /microsoft-edge/devtools-guide-chromium/shortcuts
               itemType: reference
               text: Keyboard shortcuts

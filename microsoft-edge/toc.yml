@@ -17,14 +17,16 @@
 # DevTools Overview articles:
 
 # Overview of DevTools --------------------------------------------------------
-        - name: Overview of DevTools
-          href: devtools-guide-chromium/index.md
+        - name: Reasons to use Microsoft Edge DevTools
+          href: devtools-guide-chromium/index.md  # previously this file contained the "Overview of DevTools" article
           displayName: DevTools
 
-# New, advocacy article -------------------------------------------------------
-# todo: maybe merge this article into the above "Overview" article:
-        - name: Reasons to use Microsoft Edge DevTools  # new firstchild article
-          href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md
+        # - name: Reasons to use Microsoft Edge DevTools  # new firstchild article
+        #   href: devtools-guide-chromium/why-use-microsoft-edge-devtools.md  # deleted file in PR 1763
+        #   displayName: DevTools
+
+        - name: Overview of DevTools
+          href: devtools-guide-chromium/overview.md  # new .md to hold this content instead of using index.md
           displayName: DevTools
 
 # Opening DevTools ------------------------------------------------------------

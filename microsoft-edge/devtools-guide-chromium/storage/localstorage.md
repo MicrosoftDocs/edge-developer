@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and edit local storage
 
-This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) key-value pairs.
+This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md) to view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/API/Window/localStorage) key-value pairs.
 
 
 <!-- ====================================================================== -->

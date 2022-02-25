@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View Cache data
 
-This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to inspect [Cache](https://developer.mozilla.org/docs/Web/API/Cache) data.
+This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md) to inspect [Cache](https://developer.mozilla.org/docs/Web/API/Cache) data.
 
 If you are trying to inspect [HTTP cache](https://developer.mozilla.org/docs/Web/HTTP/Caching) data, this isn't the guide you want.  Look for the information in the **Size** column of the **Network Log**; see [Log network activity](../network/index.md#log-network-activity).
 

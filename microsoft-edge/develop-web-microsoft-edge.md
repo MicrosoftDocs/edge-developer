@@ -30,7 +30,7 @@ With DevTools, you can do the following:
 
 *  Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
 
-See [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/why-use-microsoft-edge-devtools.md) or [Overview of DevTools](devtools-guide-chromium/index.md).
+See [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/index.md) or [Overview of DevTools](devtools-guide-chromium/overview.md).
 
 
 <!-- ====================================================================== -->
