@@ -13,10 +13,22 @@ ms.date: 02/14/2022
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
 
 <!-- 
-status: headings outline is finalized, but need to make 
+status: headings outline is finalized.
+
 todo:
-break up listing Example: Adding and removing menuitems for the default context menu
-and re-distribute to below each scenario heading.
+*  Move method/member links out from API Ref section to below the examples that use them.
+
+*  Delete section:
+   Example: Adding and removing menuitems for the default context menu
+   Place separated code listings into sections:
+   Example: Adding custom menuitems to a default context menu
+   Example: Removing menuitems from a default context menu
+   for the C++ listing & the C# listing.
+
+*  Add C# code listing in section:
+   Example: Disabling all context menus
+
+*  Fill in h2 sections, including mention of API items (C++ & C#)
 -->
 
 
@@ -639,23 +651,23 @@ The following are some of the items in the **ContextMenuRequested** API.
 **[ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)** - WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 * [add_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) - Add an event handler for the `ContextMenuRequested` event.
 remove_ContextMenuRequested
-https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested
+https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested
 Remove an event handler previously added with add_ContextMenuRequested.
 
 **[ICoreWebView2ContextMenuItem](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** - A context menu item of a context menu displayed by WebView.
 * [add_CustomItemSelected](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected) - Add an event handler for the `CustomItemSelected` event.
 * [get_Children](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children) - Gets the list of children menu items through a `ContextMenuItemCollection` if the kind is Submenu.
 * [get_CommandId](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid) - Gets the Command ID for the `ContextMenuItem`.
-* [get_Icon](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#get_icon) - Gets the Icon for the `ContextMenuItem` in PNG, Bitmap or SVG formats in the form of an `IStream`.
+* [get_Icon](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_icon) - Gets the Icon for the `ContextMenuItem` in PNG, Bitmap or SVG formats in the form of an `IStream`.
 * [get_IsChecked](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_ischecked) - Gets the checked property of the `ContextMenuItem`, used if the kind is Check box or Radio.
 * [get_IsEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_isenabled) - Gets the enabled property of the `ContextMenuItem`.
 * [get_Kind](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind) - Gets the `ContextMenuItem` kind.
 * [get_Label](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_label) - Gets the localized label for the `ContextMenuItem`.
 * [get_Name](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name) - Gets the unlocalized name for the `ContextMenuItem`.
 * [get_ShortcutKeyDescription](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription) - Gets the localized keyboard shortcut for this `ContextMenuItem`.
-* [put_IsChecked](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#put_ischecked) - Sets the checked property of the `ContextMenuItem`.
-* [put_IsEnabled](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#put_isenabled) - Sets the enabled property of the `ContextMenuItem`.
-* [remove_CustomItemSelected](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem?view=webview2-1.0.1158-prerelease#remove_customitemselected) - Remove an event handler previously added with `add_CustomItemSelected`.
+* [put_IsChecked](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#put_ischecked) - Sets the checked property of the `ContextMenuItem`.
+* [put_IsEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#put_isenabled) - Sets the enabled property of the `ContextMenuItem`.
+* [remove_CustomItemSelected](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#remove_customitemselected) - Remove an event handler previously added with `add_CustomItemSelected`.
 
 **[ICoreWebView2ContextMenuItemCollection](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** - A collection of `ContextMenuItem` objects.
 * [get_Count](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count) - Gets the number of `ContextMenuItem` objects contained in the `ContextMenuItemCollection`.
@@ -664,17 +676,17 @@ Remove an event handler previously added with add_ContextMenuRequested.
 * [RemoveValueAtIndex](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex) - Removes the `ContextMenuItem` at the specified index.
 
 **[ICoreWebView2ContextMenuRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** - Event args for the `ContextMenuRequested` event.
-* [get_Handled](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#get_handled) - Gets whether the `ContextMenuRequested` event is handled by host.
+* [get_Handled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_handled) - Gets whether the `ContextMenuRequested` event is handled by host.
 * [get_Location](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location) - Gets the coordinates where the context menu request occurred in relation to the upper left corner of the WebView bound.
 * [get_MenuItems](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems) - Gets the collection of `ContextMenuItem` objects.
-* [get_SelectedCommandId](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs?view=webview2-1.0.1158-prerelease#get_selectedcommandid) - Gets the selected `CommandId`.
+* [get_SelectedCommandId](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_selectedcommandid) - Gets the selected `CommandId`.
 * [get_ContextMenuTarget](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget) - Gets the target information associated with the requested context menu.
 * [GetDeferral](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#getdeferral) - Returns an `ICoreWebView2Deferral` object.
 * [put_Handled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled) - Sets whether the `ContextMenuRequested` event is handled by host after the event handler completes or if there is a deferral then after the deferral is completed.
 * [put_SelectedCommandId](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid) - Sets the selected command for the WebView to execute.
 
 **[ICoreWebView2ContextMenuRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** - Receives `ContextMenuRequested` events.
-* [Invoke](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler?view=webview2-1.0.1158-prerelease#invoke) - Called to provide the event args when a context menu is requested on a WebView element.
+* [Invoke](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler#invoke) - Called to provide the event args when a context menu is requested on a WebView element.
 
 **[ICoreWebView2ContextMenuTarget](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** - Information about the context menu target.
 * [get_kind](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget#get_kind) - Gets the kind of context that the user selected.
