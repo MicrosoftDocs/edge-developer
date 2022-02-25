@@ -137,7 +137,7 @@ conceptualContent:
     # summary:  # < 160 chars (optional)
       items:
         # Card
-        - title: Microsoft Edge for Developers
+        - title: Microsoft Edge DevTools
           links:
             - text: Microsoft Edge Developer documentation  # toc root, card-based landing page
               url: /microsoft-edge/developer/index
@@ -146,9 +146,7 @@ conceptualContent:
             - text: Develop for the web with Microsoft Edge  # topmost article in TOC
               url: /microsoft-edge/develop-web-microsoft-edge
               itemType: overview
-        # Card
-        - title: Microsoft Edge DevTools
-          links:
+
             - text: Microsoft Edge DevTools  # lower-level card-based landing page
               url: /microsoft-edge/devtools-guide-chromium/landing/index
               itemType: overview
