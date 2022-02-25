@@ -345,6 +345,120 @@ You can add custom menu items to the default context menu.
 ## Example: Adding custom menu items to a default context menu
 
 
+<!-- ------------------------------- -->
+# [C++](#tab/cpp)
+
+```cpp
+m_webView2_4 = m_webView.try_query<ICoreWebView2_4>();
+webview2_4->add_ContextMenuRequested(
+    Callback<ICoreWebView2ContextMenuRequestedEventHandler>(
+        [this](
+            ICoreWebView2* sender,
+            ICoreWebView2ContextMenuRequestedEventArgs* args)
+        {
+            wil::com_ptr<ICoreWebView2ContextMenuItemCollection> items;
+            CHECK_FAILURE(args->get_MenuItems(&items));
+            wil::com_ptr<ICoreWebView2ContextMenuTarget> target;
+            CHECK_FAILURE(args->get_ContextMenuTarget(&target));
+            COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND context_kind;
+            CHECK_FAILURE(target->get_Kind(&context_kind));
+            UINT32 itemsCount;
+            CHECK_FAILURE(items->get_Count(&itemsCount));
+            // Removing the 'Save image as' context menu item for image context selections.
+            if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE)
+            {
+                wil::com_ptr<ICoreWebView2ContextMenuItem> current;
+                for(UINT32 i = 0; i < itemsCount; i++) 
+                {
+                    CHECK_FAILURE(items->GetValueAtIndex(i, &current));
+                    wil::unique_cotaskmem_string name;
+                    CHECK_FAILURE(current->get_Name(&name));
+                    if (wcsmp(name.get(), L"saveImageAs") == 0)
+                    {
+                        CHECK_FAILURE(items->RemoveValueAtIndex(i));
+                        break;
+                    }
+                }
+            }
+            // Adding a custom context menu item for the page that will display the page's URI.
+            else if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE)
+            {
+                wil::com_ptr<ICoreWebView2Environment5> webviewEnvironment;
+                CHECK_FAILURE(m_appWindow->GetWebViewEnvironment()->QueryInterface(
+                    IID_PPV_ARGS(&webviewEnvironment)));
+                wil::com_ptr<ICoreWebView2ContextMenuItem> newMenuItem;
+                CHECK_FAILURE(webviewEnvironment->CreateContextMenuItem(
+                        L"Display page Uri", 
+                        nullptr, 
+                        COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND, &newMenuItem));
+                newMenuItem->add_CustomItemSelected(
+                            Callback<ICoreWebView2CustomItemSelectedEventHandler>(
+                    [this, info](
+                        ICoreWebView2* sender,
+                        IUnknown* args)
+                        {
+                            wil::unique_cotaskmem_string pageUri;
+                            CHECK_FAILURE(info->get_PageUri(&pageUri));
+                            std::wstring pageString = pageUri.get();
+                            m_appWindow->RunAsync([this, pageString]()
+                            {
+                                MessageBox(
+                                    m_appWindow->GetMainWindow(), pageString.c_str(),
+                                    L"Display Page Uri", MB_OK);
+                            });
+                            return S_OK;
+                        })
+                        .Get(),
+                    nullptr);
+                CHECK_FAILURE(items->InsertValueAtIndex(itemsCount, newMenuItem.get()));
+            }
+            return S_OK;
+        })
+        .Get(),
+    &m_contextMenuRequestedToken);
+```
+
+
+<!-- ------------------------------- -->
+# [C#](#tab/csharp)
+
+```csharp
+webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
+                                    CoreWebView2ContextMenuRequestedEventArgs args)
+{
+    IList<CoreWebView2ContextMenuItem> menuList = args.MenuItems;
+    CoreWebView2ContextMenuTargetKind context = args.ContextMenuTarget.Kind;
+    if (context == CoreWebView2ContextMenuTargetKind.Image)
+    {
+        for (int index = 0; index < menuList.Count; index++)
+        {
+            if (menuList[index].Name == "saveImageAs")
+            {
+                menuList.RemoveAt(index);
+                break;
+            }
+        }
+    }
+    else if (context == CoreWebView2ContextMenuTargetKind.Page)
+    {
+        // add new item to end of collection
+        CoreWebView2ContextMenuItem newItem = 
+                            webView.CoreWebView2.Environment.CreateContextMenuItem(
+            "Display Page Uri", null, CoreWebView2ContextMenuItemKind.Command);
+            newItem.CustomItemSelected += delegate (object send, Object ex)
+            {
+                string pageUri = args.ContextMenuTarget.PageUri;
+                System.Threading.SynchronizationContext.Current.Post((_) =>
+                {
+                    MessageBox.Show(pageUri, "Page Uri", MessageBoxButton.OK);
+                }, null);
+            }
+        menuList.Insert(menuList.Count, newItem);
+    }
+};
+``` 
+
+---
 
 
 <!-- ====================================================================== -->
