@@ -1,5 +1,5 @@
 ---
-title: Debug original code using the Azure Artifacts symbol server
+title: Retrieve source maps using Azure Artifacts symbol server
 description: Learn how to publish source maps to the Azure Artifacts symbol server from Azure DevOps to debug origin source code in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,9 @@ ms.prod: microsoft-edge
 ms.date: 02/24/2022
 ---
 
-# Debug original code using the Azure Artifacts symbol server 
+# Retrieve source maps using Azure Artifacts symbol server
 
-This article helps understand how to publish source maps to the Azure Artifacts symbol server from Azure DevOps and how to use them to debug your original code in DevTools.
+This article helps understand how to publish source maps to the Azure Artifacts symbol server from Azure DevOps and how to use them to work with your original code in DevTools.
 
 
 <!-- ====================================================================== -->
@@ -60,9 +60,9 @@ To configure DevTools:
 
 1. Close the Settings panel and click **Reload DevTools**.
 
-### Step 3: Debug original code
+### Step 3: Retrieve original code in DevTools
 
-As you are using DevTools on an official build of your web site for which symbols have been published, you should be able to debug your original code.
+As you are using DevTools on an official build of your web site for which symbols have been published, you should be able to see your original code in DevTools.
 
 In the **Console** tool, links in logged messages should go to original files in the **Sources** tool. 
 
