@@ -41,8 +41,6 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Open DevTools
-            url: /microsoft-edge/devtools-guide-chromium/open/index
           - text: Overview of DevTools
             url: /microsoft-edge/devtools-guide-chromium/index
           - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
