@@ -19,10 +19,10 @@ todo:
 *  Move method/member links out from API Ref section to below the examples that use them.
 
 *  Delete section:
-   Example: Adding and removing menuitems for the default context menu
+   Example: Adding and removing menu items for the default context menu
    Place separated code listings into sections:
-   Example: Adding custom menuitems to a default context menu
-   Example: Removing menuitems from a default context menu
+   Example: Adding custom menu items to a default context menu
+   Example: Removing menu items from a default context menu
    for the C++ listing & the C# listing.
 
 *  Add C# code listing in section:
@@ -42,17 +42,17 @@ todo:
 The WebView2 control provides a default context menu.
 
 
-<!-- headings: assume "menuitems" better reflects the API design & usage than "a menuitem" -->
+<!-- headings: assume "menu items" better reflects the API design & usage than "a menu item" -->
 
 
 <!-- ====================================================================== -->
 ## Adding a custom context menu
 
-To add a custom right-click menu to a WebView2 app, containing menuitems or commands, use the __ API.
+To add a custom right-click menu to a WebView2 app, containing menu items or commands, use the __ API.
 
-In a custom context menu, your WebView2 app tells the WebView2 control when user selected a menuitem, so WebView2 can execute the menuitem command, such as **Cut** command.
+In a custom context menu, your WebView2 app tells the WebView2 control when user selected a menu item, so WebView2 can execute the menu item command, such as **Cut** command.
 
-Context menus use menuitem IDs, so the host can pass the user selection to WebView2:
+Context menus use menu item IDs, so the host can pass the user selection to WebView2:
 
 Define where to display the context menu, by using relative window position.
 
@@ -60,7 +60,7 @@ Define where to display the context menu, by using relative window position.
 <!-- ====================================================================== -->
 ## Example: Adding a custom context menu
 
-You can use the data provided in the Event arguments of [add_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) (C++) or `ContextMenuRequested` (C#) to display a custom context menu with entries of your choice.  For this case, you specify `Handled` to be `true` and request a deferral. 
+You can use the data provided in the Event arguments of [add_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) (C++) or `CoreWebView2.ContextMenuRequested` (C#) to display a custom context menu with entries of your choice.  For this case, you specify `Handled` to be `true` and request a deferral. 
 
 This deferred event should be completed at one of two possible times:
 
@@ -296,13 +296,13 @@ IList<CoreWebView2ContextMenuItem> menuList, ItemsControl cm)
 
 
 <!-- ====================================================================== -->
-## Adding menuitems to a context menu
+## Adding menu items to a context menu
 
 
 <!-- ====================================================================== -->
-## Adding default menuitems to a custom context menu
+## Adding default menu items to a custom context menu
 
-Each menuitem is of a specific kind:
+Each menu item is of a specific kind:
 
 # [C++](#tab/cpp)
 
@@ -318,7 +318,7 @@ Each menuitem is of a specific kind:
 1. On a `CoreWebView2.ContextMenuRequested` event, add an event listener that has a `CoreWebView2ContextMenuRequestedEventArgs`.
 
 
-Iterate through an IList of `CoreWebView2ContextMenuItem` items, adding a `CoreWebView2ContextMenuItem` for each menu item.  Test the `.KIND of each menuitem (separator, )
+Iterate through an IList of `CoreWebView2ContextMenuItem` items, adding a `CoreWebView2ContextMenuItem` for each menu item.  Test the `.KIND of each menu item (separator, )
 
 * [CoreWebView2ContextMenuItemKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)
    * `CoreWebView2ContextMenuItemKind.CheckBox`
@@ -331,38 +331,40 @@ Iterate through an IList of `CoreWebView2ContextMenuItem` items, adding a `CoreW
 
 
 <!-- ====================================================================== -->
-## Adding custom menuitems to a default context menu
+## Adding custom menu items to a default context menu
 
-You can add custom menuitems to the default context menu.
+You can add custom menu items to the default context menu.
 
 <!-- cpp or cs? -->
-* `ContextMenuRequested(id, position, list of ContextMenuItems)`
+* For C++: `ContextMenuRequested(id, position, list of ContextMenuItems)` method
+
+* For C#: `CoreWebView2.ContextMenuRequested` event
 
 
 <!-- ====================================================================== -->
-## Example: Adding custom menuitems to a default context menu
+## Example: Adding custom menu items to a default context menu
 
 
 
 
 <!-- ====================================================================== -->
-## Removing menuitems from a default context menu
+## Removing menu items from a default context menu
 
-You can remove default or custom menuitems from the default context menu.
+You can remove default or custom menu items from the default context menu.
 
 
 <!-- ====================================================================== -->
-## Example: Removing menuitems from a default context menu
+## Example: Removing menu items from a default context menu
 
 
 You can add or remove entries to the default WebView context menu.  For this case, you specify `Handled` to be false.  You can add or remove items from the collection of context menu items.
 
 <!-- 
 evidently can do these scenarios - which are covered here?
-(Add default menuitems on the default context menu) (wording makes sense?)  ("menuitems" might better reflect the API usage than "a menuitem")
-Add custom menuitems on the default context menu
-Remove default menuitems from the default context menu
-Remove custom menuitems from the default context menu
+(Add default menu items on the default context menu) (wording makes sense?)  ("menu items" might better reflect the API usage than "a menu item")
+Add custom menu items on the default context menu
+Remove default menu items from the default context menu
+Remove custom menu items from the default context menu
 -->
 
 <!-- ------------------------------- -->
@@ -492,9 +494,9 @@ When a user requests opening a context menu (such as by right-clicking), your ap
 
 When you detect this event, do some combination of the following:
 
-*  Add custom menuitems to the default context menu.
+*  Add custom menu items to the default context menu.
 
-*  Remove custom menuitems from the default context menu.
+*  Remove custom menu items from the default context menu.
 
 *  Open a custom context menu.
 
@@ -509,36 +511,36 @@ The WebView2 control only raises the `CoreWebView2.ContextMenuRequested` event i
 
 
 
-The following information is sent when the user selects a custom menuitem on a context menu.
+The following information is sent when the user selects a custom menu item on a context menu.
 
-When your app indicates to WebView2 that a user selected a menuitem on a context menu, WebView2 sends the following items to your app:
+When your app indicates to WebView2 that a user selected a menu item on a context menu, WebView2 sends the following items to your app:
 
 *  An ordered **list of `ContextMenuItem` objects** to populate the custom context menu.  The ordered list includes the following:
-   *  The internal **name** of the menuitem.
-   *  The UI **label** of the menuitem, displayed to the user in the UI.
-   *  The **kind** of menuitem.
+   *  The internal **name** of the menu item.
+   *  The UI **label** of the menu item, displayed to the user in the UI.
+   *  The **kind** of menu item.
    *  A keyboard **shortcut Description**, if any, such as **Alt+C**.
-   *  Any other properties of the custom menuitem.
+   *  Any other properties of the custom menu item.
 
 *  The **coordinates** where the context menu was requested, so your app can detect what UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.  <!-- control bounds. -->
 
-*  A **selection object** that will include the kind of context selected, (such as?,) and the appropriate context menu parameter data.  (what sort of param data - which piece of info that's sent, tells which menuitem, from the ordered list of menuitems, the user selected?)
+*  A **selection object** that will include the kind of context selected, (such as?,) and the appropriate context menu parameter data.  (what sort of param data - which piece of info that's sent, tells which menu item, from the ordered list of menu items, the user selected?)
 
 
 <!-- ====================================================================== -->
-## Detecting when the user selects a custom menuitem
+## Detecting when the user selects a custom menu item
 
-Your app can handle the user-selected menuitem, or your app can return the menuitem to the WebView2 control to handle the user-selected menuitem.
+Your app can handle the user-selected menu item, or your app can return the menu item to the WebView2 control to handle the user-selected menu item.
 
 Enumerate the menu item IDs and text.  (for what task?  check example code)
 
-Raised when the user selects a custom menuitem on a default or custom context menu.
+Raised when the user selects a custom menu item on a default or custom context menu.
 
 The WebView2 control raises this event to indicate that the user selected a custom menu item that your app added to a context menu.
 
 Listen for the `CoreWebView2CustomItemSelected` event.
 
-If the user selects a custom menuitem, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
+If the user selects a custom menu item, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
 
 *  The app adds custom menu items, but defers the context menu UI to the WebView platform.
 
@@ -546,15 +548,15 @@ If the user selects a custom menuitem, the `CustomMenuItemSelected` event is rai
 
 
 <!-- ====================================================================== -->
-## Reporting a selected command menuitem to WebView2
+## Reporting a selected command menu item to WebView2
 
 When the user selects a webvierw2 context menu command, the host app can optionall report that selection to WebView2 for handling.
 
-A menuitem could be a submenu or command or checkbox (see enum).
+A menu item could be a submenu or command or checkbox (see enum).
 
 ### Custom menuitems
 
-If your <!--host WebView2--> app reports a custom menuitem as the selected command, then the `CustomMenuItemSelected` event will be fired for the custom menuitem.
+If your <!--host WebView2--> app reports a custom menu item as the selected command, then the `CustomMenuItemSelected` event will be fired for the custom menu item.
 <!-- "app" implies the dev's host app. -->
 
 <!-- 
@@ -638,11 +640,7 @@ The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/Sa
 <!-- ====================================================================== -->
 ## API Reference
 
-The following are some of the items in the **ContextMenuRequested** API.
-
-
-
-<!-- For each type, in the class-level API Reference page, find "contextmenu". -->
+The following are the main classes, interfaces, enums, and events of the **ContextMenuRequested** API.  Links to selected members, such as methods and properties, are below each example listing in this article.
 
 
 <!-- ------------------------------- -->
@@ -727,14 +725,14 @@ Event: a context menu was requested:
 **[CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)** - Hosts web content using Microsoft Edge browser and web technology.
 * [ContextMenuRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested) - Raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
 
-Menuitem:
+Menu item:
 
 **[CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)** - A context menu item of a context menu.
 * [CommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.commandid) - Gets the Command ID for the `CoreWebView2ContextMenuItem`.
 * [CustomItemSelected Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected) - Raised when the user selects this `CoreWebView2ContextMenuItem`.
 * [Kind Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.kind) - Gets the kind of `CoreWebView2ContextMenuItem` as `CoreWebView2ContextMenuItemKind`.
 
-Type of menuitem:
+Type of menu item:
 
 **[CoreWebView2ContextMenuItemKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)** - Kinds of menu items for the Kind property.
 * `CheckBox`
@@ -743,7 +741,7 @@ Type of menuitem:
 * `Separator`
 * `Submenu`
 
-Event args about which menuitem was selected:
+Event args about which menu item was selected:
 
 **[CoreWebView2ContextMenuRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)** - Event args for the `ContextMenuRequested` event.
 * [ContextMenuTarget Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.contextmenutarget) - Gets the [CoreWebView2ContextMenuTarget Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget) instance that contains target information associated with the requested context menu, which includes the context selected and the appropriate data for the actions of a context menu.
