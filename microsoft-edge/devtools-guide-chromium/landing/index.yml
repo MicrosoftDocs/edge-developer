@@ -142,8 +142,8 @@ landingContent:
         links:
           - text: Reasons to use Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/index
-          - text: Open DevTools
-            url: /microsoft-edge/devtools-guide-chromium/open/index
+          # - text: Open DevTools 
+          #   url: /microsoft-edge/devtools-guide-chromium/open/index  # deleted/merged into Overview of DevTools as an h2
           - text: Overview of DevTools
             url: /microsoft-edge/devtools-guide-chromium/overview
           - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)

@@ -31,7 +31,7 @@ For DevTools features related to improving the accessibility of a web page, see 
 
 ### Tabbed tool panels containing tabs and pages
 
-For the terminology of tabs, tools, and panels, see [Tabbed tool panels containing tabs and pages](../index.md#tabbed-tool-panels-containing-tabs-and-pages) in _Overview of DevTools_.
+For the terminology of tabs, tools, and panels, see [Tabbed tool panels containing tabs and pages](../overview.md#tabbed-tool-panels-containing-tabs-and-pages) in _Overview of DevTools_.
 
 Technically, the tabs are an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist).
 
@@ -74,7 +74,7 @@ Additional ways:
 
 <!-- /end of h2 section to keep sync'd -->
 
-See [Open DevTools](../index.md#open-devtools).
+See [Open DevTools](../overview.md#open-devtools).
 
 
 <!-- ====================================================================== -->
