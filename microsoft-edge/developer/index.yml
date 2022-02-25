@@ -60,11 +60,11 @@ landingContent:
           - text: Microsoft Edge DevTools  # a lower-level card-based landing page
             url: /microsoft-edge/devtools-guide-chromium/landing/index
 
-          - text: Reasons to use Microsoft Edge DevTools  # new article
-            url: /microsoft-edge/devtools-guide-chromium/reasons-edge-devtools
-
           - text: Overview of DevTools  # existing firstchild article
             url: /microsoft-edge/devtools-guide-chromium/overview
+
+          - text: Reasons to use Microsoft Edge DevTools  # new article
+            url: /microsoft-edge/devtools-guide-chromium/reasons-edge-devtools
 
           - text: DevTools for beginners
             url: /microsoft-edge/devtools-guide-chromium/beginners/html
