@@ -139,23 +139,23 @@ conceptualContent:
         # Card
         - title: Microsoft Edge DevTools
           links:
-            - text: Microsoft Edge Developer documentation  # toc root, card-based landing page
+            - text: Microsoft Edge Developer documentation  # Edge landing page
               url: /microsoft-edge/developer/index
               itemType: overview
 
-            - text: Develop for the web with Microsoft Edge  # topmost article in TOC
+            - text: Develop for the web with Microsoft Edge  # topmost article
               url: /microsoft-edge/develop-web-microsoft-edge
               itemType: overview
 
-            - text: Microsoft Edge DevTools  # lower-level card-based landing page
+            - text: Microsoft Edge DevTools documentation  # DevTools landing page
               url: /microsoft-edge/devtools-guide-chromium/landing/index
               itemType: overview
 
-            - text: Overview of DevTools  # new file, moved content to here from deleted index.md
+            - text: Overview of DevTools  # renamed from index.md
               url: /microsoft-edge/devtools-guide-chromium/overview
               itemType: overview
 
-            - text: What's new in Microsoft Edge DevTools  # new firstchild article
+            - text: What's new in Microsoft Edge DevTools
               url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
               itemType: overview
 
