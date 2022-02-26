@@ -61,7 +61,7 @@ Occasionally, API parity doesn't exist between Chromium browsers.  For example, 
 
 *   [Chrome APIs](https://developer.chrome.com/extensions/api_index)
 *   [Extension APIs supported in Opera](https://dev.opera.com/extensions/apis)
-*   [Port Chrome extension to Microsoft Edge](./developer-guide/port-chrome-extension.md)
+*   [Port Chrome extension to Microsoft Edge](developer-guide/port-chrome-extension.md)
 
 The APIs that you require define the changes that you must make to address the differences between each browser.  You might need to create slightly different code packages with small differences for each store.
 
@@ -86,7 +86,7 @@ Users might need to install your extension in different browsers. In this scenar
 
 If you've already developed an extension for another Chromium-based browser, you can submit it to the Microsoft Edge Add-ons website. You don't need to rewrite your extension, and must verify it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, make sure the same APIs or alternatives are available for your target browser.
 
-For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft Edge](./developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
+For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft Edge](developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
 
 ### Publish to the Microsoft Edge Add-ons website
 
@@ -100,7 +100,7 @@ To submit your extension to the store, you need to provide the following items:
 *   Information that describes your extension such as the name, short description, and a privacy policy link.
 
 > [!NOTE]
-> Different stores might have different submission requirements.  The above list summarizes the [requirements](./publish/publish-extension.md) to publish an extension for Microsoft Edge.
+> Different stores might have different submission requirements.  The above list summarizes the [requirements](publish/publish-extension.md) to publish an extension for Microsoft Edge.
 
 After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners aren'tified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.
 
@@ -108,7 +108,7 @@ After you've successfully submitted your extension, your extension undergoes a r
 <!-- ====================================================================== -->
 ## See also
 
-*  [Extension concepts and architecture](./getting-started/index.md)
+*  [Extension concepts and architecture](getting-started/index.md)
 *  [Manage Microsoft Edge extensions in the enterprise](/deployedge/microsoft-edge-manage-extensions)
 
 External links:

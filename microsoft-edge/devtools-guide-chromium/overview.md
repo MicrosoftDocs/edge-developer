@@ -52,7 +52,7 @@ With DevTools, you can do the following:
 <!--
 keep the content of these h2 sections (below this comment) sync'd:
 main copy:
-[Open DevTools](../index.md#open-devtools) in _Overview of DevTools_
+[Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_
 derivative copy:
 [Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
 -->
@@ -291,7 +291,7 @@ See [Console](console/index.md).
 
 ### Sources tool
 
-The [Sources](./sources/index.md) tool is a code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
+The [Sources](sources/index.md) tool is a code editor and JavaScript debugger.  You can edit projects, maintain snippets, and debug your current project.
 
 The **Sources** tool is always present on the main toolbar.
 
@@ -300,7 +300,7 @@ The **Sources** tool is always present on the main toolbar.
 
 The **Network** tool allows you to monitor and inspect requests or responses from the network and browser cache.  You can filter requests and responses to fit your needs and simulate different network conditions.
 
-See [Inspect network activity](./network/index.md).
+See [Inspect network activity](network/index.md).
 
 ### Performance tool
 
@@ -362,7 +362,7 @@ The **Issues counter** (![Issues counter icon.](media/issues-counter-icon-light-
 
 The tooltip for the **Issues counter** is **Open Issues to view # issues**.  The button's icon is a blue speech bubble icon followed by the number of HTML or CSS issues.
 
-Click the **Issues counter** to open the [Issues](./issues/index.md) tool.
+Click the **Issues counter** to open the [Issues](issues/index.md) tool.
 
 
 ### Settings button
@@ -435,8 +435,6 @@ Use the **More Tools** (**+**) menu to select any of the Panel tools or Drawer t
 | Move a tool from the main toolbar to the drawer Toolbar | On the main toolbar, right-click the tool's tab, and then select **Move to bottom**. |
 | Open a tool in its default toolbar | When DevTools has focus, open the **Command Menu** by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).  Type the name of the tool, and then select the tool. |
 
-For an overview of Panel tools, Drawer tools, and a few other tools such as the Inspect tool and Device Emulator, see [Overview of DevTools](index.md).
-
 In addition to Panel tools and Drawer tools, DevTools includes the following tools:
 *  The **Inspect** tool.  See [Use the Inspect tool to detect accessibility issues by hovering over the webpage](accessibility/test-inspect-tool.md).
 *  The **Device Emulation** tool.  See [Emulate mobile devices (Device Emulation)](device-mode/index.md).
@@ -489,7 +487,7 @@ In the **Settings** > **Preferences** page, you can change several parts of DevT
 ![all the settings in DevTools.](media/devtools-intro-all-settings.msft.png)
 
 You can also change the settings of advanced features, such as:
-*  Add local files to a [Workspace](./workspaces/index.md).
+*  Add local files to a [Workspace](workspaces/index.md).
 *  Filter library code with the **Ignore List**.
 *  Define the **Devices** you want to include in the device simulation and test mode.  For more information, see [Emulate mobile devices (Device Emulation)](device-mode/index.md).
 *  Select a network **Throttling** profile.
@@ -504,7 +502,7 @@ You can also change the settings of advanced features, such as:
 
 The DevTools team provides new features as _experiments_ in DevTools.  You can turn each of the experiments on or off.  To see the full list of [Experimental features](experimental-features/index.md), in DevTools, select **Settings** (the gear icon), and then select **Experiments**.
 
-To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools.md), download [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/download), which builds nightly.
+To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.md), download [Microsoft Edge Canary](https://www.microsoftedgeinsider.com/download), which builds nightly.
 
 
 <!-- ====================================================================== -->
@@ -514,15 +512,15 @@ To preview the [latest features coming to DevTools](./whats-new/2021/02/devtools
 * [Get started with HTML and the DOM](beginners/html.md)
 * [Inspect and change the current webpage](dom/index.md)
 * [Emulate how your product behaves on different devices](device-mode/index.md)
-* [Inspect, tweak, and change the styles of elements](./inspect-styles/edit-fonts.md)
-* [Debug your JavaScript](./javascript/index.md)
+* [Inspect, tweak, and change the styles of elements](inspect-styles/edit-fonts.md)
+* [Debug your JavaScript](javascript/index.md)
 * [Live console](console/index.md)
-* [Accessibility, performance, compatibility, and security issues](./issues/index.md)
-* [Inspect the network traffic](./network/index.md)
-* [Inspect where the browser stored content](./storage/sessionstorage.md)
+* [Accessibility, performance, compatibility, and security issues](issues/index.md)
+* [Inspect the network traffic](network/index.md)
+* [Inspect where the browser stored content](storage/sessionstorage.md)
 * [Evaluate the performance](evaluate-performance/index.md)
 * [Memory problems](memory-problems/index.md)
-* [Rendering issues](./rendering-tools/index.md)
-* [Use a development environment](./sources/index.md)
-* [Sync changes in DevTools with the file system](./workspaces/index.md)
-* [Override files from the web](./javascript/overrides.md)
+* [Rendering issues](rendering-tools/index.md)
+* [Use a development environment](sources/index.md)
+* [Sync changes in DevTools with the file system](workspaces/index.md)
+* [Override files from the web](javascript/overrides.md)

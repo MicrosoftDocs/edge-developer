@@ -30,7 +30,7 @@ With DevTools, you can do the following:
 
 *  Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
 
-See [Overview of DevTools](devtools-guide-chromium/index.md).
+See [Overview of DevTools](devtools-guide-chromium/overview.md).
 
 
 <!-- ====================================================================== -->

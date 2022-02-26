@@ -369,7 +369,7 @@ State simulation is also a good way to check whether you considered different us
 
 Another consideration when it comes to color accessibility is that there could be different themes that you need to test for contrast issues.  Most operating systems have a dark mode and a light mode.  Your webpage can react to these different settings using CSS media queries.
 
-This demo page has a light and a dark theme.  You can test both themes without changing your operating system, by using [Dark or light color scheme simulation](./preferred-color-scheme-simulation.md) in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
+This demo page has a light and a dark theme.  You can test both themes without changing your operating system, by using [Dark or light color scheme simulation](preferred-color-scheme-simulation.md) in the **Rendering** tool.  So far, this article looked at the demo page with an operating system using a dark theme setting.  If we instead simulate a light scheme and then refresh the page, the **Issues** tool shows six color contrast problems instead of two.
 
 For detailed walkthrough steps, see [Check for contrast issues with dark theme and light theme](test-dark-mode.md).
 
@@ -386,7 +386,7 @@ When switching to a light theme in the **Rendering** tool, the following issues 
 
 ### Verify that the webpage is usable by people with color blindness
 
-The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](./emulate-vision-deficiencies.md) feature of DevTools, you can find out that this isn't good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that a page is usable by people with color blindness](test-color-blindness.md):
+The different donation states use color (red, green, yellow) as the only means to differentiate between the states of funding.  You can't expect all of your users to experience these colors as intended, though.  If you use the [vision deficiencies emulation](emulate-vision-deficiencies.md) feature of DevTools, you can find out that this isn't good enough, by simulating how people with different vision would perceive your design.  For detailed walkthrough steps, see [Verify that a page is usable by people with color blindness](test-color-blindness.md):
 
 ![Showing the page as someone with protanopia (red color blindness) would see it.](../media/a11y-testing-simulating-protanopia.msft.png)
 
@@ -401,7 +401,7 @@ For detailed walkthrough steps, see [Verify that a page is usable with blurred v
 
 ### Verify that the page is usable with UI animation turned off (reduced motion)
 
-Another setting that operating systems come with these days are a way to turn off animations.  Animations can help the usability of a product, but they can also cause a lot of problems, ranging from confusion to nausea. That's why your products should not show animations to users who turned them off in the operating system.  By using a CSS media query, you can check whether the user wants to see animations, and turn them off accordingly.  And, much like with dark and light mode, there is a way to [simulate reduced motion using DevTools](./reduced-motion-simulation.md).
+Another setting that operating systems come with these days are a way to turn off animations.  Animations can help the usability of a product, but they can also cause a lot of problems, ranging from confusion to nausea. That's why your products should not show animations to users who turned them off in the operating system.  By using a CSS media query, you can check whether the user wants to see animations, and turn them off accordingly.  And, much like with dark and light mode, there is a way to [simulate reduced motion using DevTools](reduced-motion-simulation.md).
 
 In the demo page here, turning off animations will stop the smooth scrolling of the page when you click different parts of the sidebar navigation menu.  This is achieved by wrapping the smooth scrolling setting in CSS in a media query:
 

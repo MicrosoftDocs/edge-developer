@@ -332,7 +332,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 That covers most of the DOM-related features in DevTools.  You can discover the rest of the features by right-clicking nodes in the DOM Tree, and experimenting with the other options that were not covered in this tutorial.  See [Elements panel keyboard shortcuts](../shortcuts/index.md#elements-tool-keyboard-shortcuts).
 
-Check out the [Microsoft Edge DevTools homepage](../../devtools-guide-chromium/index.md) to discover everything else you can do with DevTools.
+Check out [Overview of DevTools](../../devtools-guide-chromium/overview.md) to discover everything else you can do with DevTools.
 
 <!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 

@@ -99,7 +99,7 @@ The options reduce the clutter that complex web pages create in your canvas.
 
 ### Z-index color type
 
-The are the different visualizations you can use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, the DevTools have different colorways and a **Use background color** option.  The **Z-index** pane shares the **Purple to White** and **Background Color** with the **3D DOM** pane.  Given the added visual element of the z-index labels, your feedback that led to a reduction in the number of color options.
+The are the different visualizations you can use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, DevTools provides different colorways and a **Use background color** option.  The **Z-index** pane shares the **Purple to White** and **Background Color** with the **3D DOM** pane.  Given the added visual element of the z-index labels, your feedback that led to a reduction in the number of color options.
 
 This approach improves the z-index debugging experience.  The radio buttons allow you to toggle through the options and pick the color type.  The color type is either most appropriate for your project or one that you like the most.
 

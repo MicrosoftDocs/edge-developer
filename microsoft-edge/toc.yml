@@ -18,14 +18,8 @@
 
 # Overview of DevTools --------------------------------------------------------
         - name: Overview of DevTools
-          href: devtools-guide-chromium/index.md
+          href: devtools-guide-chromium/overview.md
           displayName: DevTools
-
-# Opening DevTools ------------------------------------------------------------
-# merged this .md into the "Open DevTools" section of "Overview of DevTools", deleted .md:
-        # - name: Open DevTools
-        #   href: devtools-guide-chromium/open/index.md
-        #   displayName: DevTools
 
 # What's New ------------------------------------------------------------------
         - name: What's new

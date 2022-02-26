@@ -52,5 +52,5 @@ To emulate a user's selection of preferred color theme:
 <!-- ====================================================================== -->
 ## See also
 
-*  [Emulate dark or light schemes in the rendered page](./preferred-color-scheme-simulation.md)
+*  [Emulate dark or light schemes in the rendered page](preferred-color-scheme-simulation.md)
 *  [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md)

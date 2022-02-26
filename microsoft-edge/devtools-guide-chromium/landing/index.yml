@@ -41,18 +41,23 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+
           - text: Overview of DevTools
-            url: /microsoft-edge/devtools-guide-chromium/index
+            url: /microsoft-edge/devtools-guide-chromium/overview
+
           - text: Change DevTools placement (Undock, Dock to bottom, Dock to left)
             url: /microsoft-edge/devtools-guide-chromium/customize/placement
+
           - text: Run commands in the Command Menu
             url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+
           - text: Console overview
             url: /microsoft-edge/devtools-guide-chromium/console/index
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Edge DevTools 
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+
           - text: Contact the Microsoft Edge DevTools team
             url: /microsoft-edge/devtools-guide-chromium/contact
 

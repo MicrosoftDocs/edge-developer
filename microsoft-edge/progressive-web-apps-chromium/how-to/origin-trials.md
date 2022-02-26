@@ -44,9 +44,9 @@ The following list describes experimental web app features that are available to
 
 | Feature | Platform |
 |:--- |:--- |
-| [URI Protocol Handling](./handle-protocols.md) | Windows and Linux |
-| [URL Link Handling](./handle-urls.md) | Windows |
-| [Window Controls Overlay for Desktop Apps](./window-controls-overlay.md) | All |
-| [File Handling](./handle-files.md) | All Desktop |
+| [URI Protocol Handling](handle-protocols.md) | Windows and Linux |
+| [URL Link Handling](handle-urls.md) | Windows |
+| [Window Controls Overlay for Desktop Apps](window-controls-overlay.md) | All |
+| [File Handling](handle-files.md) | All Desktop |
 
 <!-- Links -->

@@ -14,7 +14,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 
 To download the preview channels of Microsoft Edge (Beta, Dev, and Canary), go to [Microsoft Edge Insider](https://www.microsoftedgeinsider.com).
 
-For more information, see [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](get-started/get-started.md).
+For more information, see [Overview of Microsoft Edge WebView2](index.md) and [Get started with WebView2](get-started/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -41,5 +41,5 @@ WebView2 is available for the following languages and frameworks:
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of Microsoft Edge WebView2](./index.md)
-* [Get started with WebView2](./get-started/get-started.md)
+* [Overview of Microsoft Edge WebView2](index.md)
+* [Get started with WebView2](get-started/get-started.md)

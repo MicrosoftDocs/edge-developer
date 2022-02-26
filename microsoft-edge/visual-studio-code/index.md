@@ -27,7 +27,7 @@ With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can u
 
 The Visual Studio Marketplace provides more information about [Microsoft Edge Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).
 
-To use the extension, see [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md).
+To use the extension, see [Microsoft Edge DevTools extension for Visual Studio Code](microsoft-edge-devtools-extension.md).
 
 
 ### Installing the extension
@@ -56,7 +56,7 @@ webhint checks your code for best practices and common errors.  Identify and fix
 
 ![The webhint extension for Visual Studio Code.](media/webhint-extension.png)
 
-See [The webhint extension for Visual Studio Code](./webhint.md).
+See [The webhint extension for Visual Studio Code](webhint.md).
 
 
 <!-- ====================================================================== -->

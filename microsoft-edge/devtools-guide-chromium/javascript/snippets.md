@@ -26,7 +26,7 @@ If you are running the same code in the [Console](../console/index.md) repeatedl
 
 Snippets are an alternative to [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet) with the difference that Snippets only run in DevTools and aren't limited to the allowed length of a URL.
 
-Using Snippets is an excellent way to change a few things in a third-party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, see [Overrides](./overrides.md).
+Using Snippets is an excellent way to change a few things in a third-party webpage.  Code changes in Snippets are added to the current webpage and run in the same context.  For more information about changing the existing code of a webpage, see [Overrides](overrides.md).
 
 The following figure shows the DevTools homepage on the left and some Snippet source code on the right.
 

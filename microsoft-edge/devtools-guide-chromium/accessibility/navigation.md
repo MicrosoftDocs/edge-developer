@@ -31,7 +31,7 @@ For DevTools features related to improving the accessibility of a web page, see 
 
 ### Tabbed tool panels containing tabs and pages
 
-For the terminology of tabs, tools, and panels, see [Tabbed tool panels containing tabs and pages](../index.md#tabbed-tool-panels-containing-tabs-and-pages) in _Overview of DevTools_.
+For the terminology of tabs, tools, and panels, see [Tabbed tool panels containing tabs and pages](../overview.md#tabbed-tool-panels-containing-tabs-and-pages) in _Overview of DevTools_.
 
 Technically, the tabs are an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist).
 
@@ -54,7 +54,7 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 <!--
 keep the content of these h2 sections (below this comment) sync'd:
 main copy:
-[Open DevTools](../index.md#open-devtools) in _Overview of DevTools_
+[Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_
 derivative copy:
 [Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
 -->
