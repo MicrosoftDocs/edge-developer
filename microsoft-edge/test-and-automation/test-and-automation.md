@@ -17,7 +17,7 @@ There are many tools to automate your testing of Microsoft Edge:
 | DevTools Protocol | Instrument, inspect, debug, and profile browsers including Microsoft Edge. |
 | Origin Trials | Try out experimental APIs on live sites for a limited period of time. |
 | Playwright | The Playwright library provides cross-browser automation through a single API. |
-| Puppeteer | The Puppeteer library provides a high-level API to control Microsoft Edge using the DevTools Protocol. |
+| Puppeteer | The Puppeteer library provides a high-level API to control browsers, including Microsoft Edge, using the DevTools Protocol. |
 | WebDriver | Automates testing in Microsoft Edge by simulating user interaction.  Provides advantages over JavaScript unit tests. |
 | webhint | Checks your code for best practices and common errors, to test and improve accessibility, performance, cross-browser and PWA compatibility, and security of your site. |
 
@@ -53,7 +53,7 @@ See [Use Playwright to automate and test in Microsoft Edge](../playwright/index.
 <!-- ====================================================================== -->
 ## Puppeteer
 
-The Puppeteer library provides a high-level API to control Microsoft Edge using the DevTools Protocol.
+The Puppeteer library provides a high-level API to control Chromium-based browsers, including Microsoft Edge, using the DevTools Protocol.
 
 Puppeteer launches headless browsers by default.  Headless browsers don't display a UI, so you must use the command line.  You can also configure Puppeteer to run full (non-headless) Microsoft Edge.
 
@@ -63,9 +63,9 @@ See [Puppeteer overview](../puppeteer/index.md).
 
 
 <!-- ====================================================================== -->
-## Use WebDriver to automate Microsoft Edge
+## WebDriver
 
-WebDriver allows you to automate Microsoft Edge by simulating user interaction.  WebDriver's testing and simulation has advantages over JavaScript unit tests:
+WebDriver allows you to automate Microsoft Edge by simulating user interaction.  Tests that use WebDriver have some advantages over JavaScript unit tests that run in the browser:
 
 *  Accesses functionality and information that's not available to JavaScript running in browsers.
 

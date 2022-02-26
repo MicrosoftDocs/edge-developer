@@ -9,7 +9,8 @@ ms.date: 02/15/2022
 ---
 # Source Maps Monitor tool
 
-Use the **Source Maps Monitor** tool to monitor your source maps.  This tool works together with source maps, to [Map preprocessed code to source code](../javascript/source-maps.md).
+Use the **Source Maps Monitor** tool to monitor which source files on your webpage requested loading of source maps, and whether the source maps were loaded.  This tool is useful if your webpage uses source maps to [map preprocessed code to source code](../javascript/source-maps.md).
+
 
 To try this feature:
 
@@ -22,5 +23,3 @@ To try this feature:
 1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select the **Source Maps Monitor** tool.
 
    ![The Source Maps Monitor tool.](../media/source-maps-monitor-tool.png)
-
-   _Note: To see details of the above image, right-click it, and then select **Open image in new tab**.  Close the image tab to return to the article._

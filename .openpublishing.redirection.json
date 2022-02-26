@@ -968,11 +968,13 @@
       },
       /* redirect to devtools */
       {
-        "source_path": "microsoft-edge/devtools-guide-chromium/index.md",
+        /* legacy "Overview of DevTools" url redirects to DevTools landing */
+        "source_path": "microsoft-edge/devtools-guide-chromium/index.md", 
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/landing/index",
         "redirect_document_id": false
       },
       {
+        /* "Open DevTools" url redirects to "Overview of DevTools" */
         "source_path": "microsoft-edge/devtools-guide-chromium/open/index.md",
         "redirect_url": "/microsoft-edge/devtools-guide-chromium/overview",
         "redirect_document_id": false

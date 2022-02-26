@@ -135,7 +135,7 @@ You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https:/
 
 To learn how to set up your Windows device and connect to it from your development machine, see [Get started with remote debugging Windows devices](../devtools-guide-chromium/remote-debugging/windows.md).
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as the [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
+The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
 
 The following Reference sections are for Remote Tools for Microsoft Edge.
 

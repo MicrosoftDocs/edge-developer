@@ -29,8 +29,7 @@ To open DevTools when you're viewing a WebView2 app, put focus on the WebView co
 
 See [Overview of DevTools](../../devtools-guide-chromium/overview.md).
 
-<!-- keep lightbox -->
-:::image type="content" source="./media/f12.png" alt-text="DevTools debugging." lightbox="./media/f12.png":::
+![DevTools debugging.](media/f12.png)
 
 
 <!-- ====================================================================== -->
@@ -64,7 +63,7 @@ Install and set up the script debugger tools in Visual Studio:
 
    1. In Visual Studio, under **Workloads**, select the **Desktop Development with C++** setting:
 
-      :::image type="content" source="./media/workloads.png" alt-text="Visual Studio Modifying Workloads Screen." lightbox="./media/workloads.png":::
+      ![Visual Studio Modifying Workloads Screen.](media/workloads.png)
 
    1. Select **Individual components**, at the top.
 
@@ -74,7 +73,7 @@ Install and set up the script debugger tools in Visual Studio:
 
    1. Click **Modify**.
 
-      :::image type="content" source="./media/indiv-comp.png" alt-text="Visual Studio: Modifying values in the 'Individual components' tab." lightbox="./media/indiv-comp.png":::
+      ![Visual Studio: Modifying values in the 'Individual components' tab.](media/indiv-comp.png)
 
 1. Enable script debugging for WebView2 apps.
 
@@ -84,22 +83,22 @@ Install and set up the script debugger tools in Visual Studio:
 
    1. Under the **Debugger Type**, select **JavaScript (WebView2)**.
 
-      :::image type="content" source="./media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
+      ![](media/enb-js.png" alt-text="The 'Debugging' configuration property in Visual Studio." lightbox="./media/enb-js.png":::
 
 
 To debug your WebView2 app:
 
 1. To set a breakpoint in your source code, hover to the left of the line number, and click to set a breakpoint.  The JS/TS debug adapter doesn't perform source path mapping.  You must open the exact same path associated with your WebView2.
 
-   :::image type="content" source="./media/breakpoint.png" alt-text="Adding a breakpoint in Visual Studio." lightbox="./media/breakpoint.png":::
+   ![](media/breakpoint.png" alt-text="Adding a breakpoint in Visual Studio." lightbox="./media/breakpoint.png":::
 
 1. To run the debugger, select the bit size of the platform, and then click the green Play button next to **Local Windows Debugger**.  The app runs and the debugger connects to the first WebView2 process that is created.
 
-   :::image type="content" source="./media/run.png" alt-text="The Local Windows Debugger in Visual Studio." lightbox="./media/run.png":::
+   ![](media/run.png" alt-text="The Local Windows Debugger in Visual Studio." lightbox="./media/run.png":::
 
 1. In the **Debug Console**, find the output from the debugger.
 
-   :::image type="content" source="./media/console.png" alt-text="Debug Console in Visual Studio." lightbox="./media/console.png":::
+   ![](media/console.png" alt-text="Debug Console in Visual Studio." lightbox="./media/console.png":::
 
 > [!NOTE]
 > If you use the WebView2 [SetVirtualHostNameToFolderMapping](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping) method, the debugger in Visual Studio 2019 doesn't understand the virtual source path mapping, so breakpoints don't work correctly.  This source path mapping works when you use the debugger in Visual Studio Code.
@@ -138,7 +137,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
 1. To set a breakpoint in your source code, click a line of code and then press `F9`:
 
-   :::image type="content" source="./media/breakpoint-vs.png" alt-text="A breakpoint that's set in Visual Studio Code." lightbox="./media/breakpoint-vs.png":::
+   ![](media/breakpoint-vs.png" alt-text="A breakpoint that's set in Visual Studio Code." lightbox="./media/breakpoint-vs.png":::
 
 1. Run the code, as follows:
 
@@ -146,11 +145,11 @@ In Visual Studio Code, complete the following actions to debug your code.
 
    1. To start debugging your app, click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
-      :::image type="content" source="./media/run-vs.png" alt-text="The Run tab in Visual Studio Code." lightbox="./media/run-vs.png":::
+      ![](media/run-vs.png" alt-text="The Run tab in Visual Studio Code." lightbox="./media/run-vs.png":::
 
 1. Open **Debug Console** to view the debug output and errors.
 
-   :::image type="content" source="./media/results-vs.png" alt-text="The Debug Console in Visual Studio Code." lightbox="./media/results-vs.png":::
+   ![](media/results-vs.png" alt-text="The Debug Console in Visual Studio Code." lightbox="./media/results-vs.png":::
 
 **Advanced Settings**:
 
@@ -218,7 +217,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
       Saving debug output to a log file:
 
-      :::image type="content" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
+      ![](media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
             
       ```json
       ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
@@ -226,7 +225,7 @@ In Visual Studio Code, complete the following actions to debug your code.
 
       Visual Studio Code Debug Output with verbose tracing turned on:
 
-      :::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on." lightbox="./media/verbose.png":::
+      ![](media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on." lightbox="./media/verbose.png":::
 
 *  Debug Office Add-ins.
 

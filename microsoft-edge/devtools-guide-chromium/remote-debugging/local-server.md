@@ -42,7 +42,7 @@ Traffic between the ports travel through the USB connection between your Android
 
 To enable port forwarding:
 
-1. Set up [remote debugging](./index.md) between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
+1. Set up [remote debugging](index.md) between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
 
 1. In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.
 

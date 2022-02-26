@@ -9,7 +9,7 @@ ms.date: 02/13/2022
 ---
 # Change DevTools placement (Undock, Dock to bottom, Dock to left)
 
-You can change where DevTools is docked in the browser.  By default, Microsoft Edge DevTools is docked to the right of your viewport (window).  You can also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.
+You can change where DevTools is docked in the browser.  By default, Microsoft Edge DevTools is docked to the right of the browser window.  You can also dock DevTools to the bottom or left of the window, or undock DevTools to a separate window.
 
 To change where DevTools is placed within the browser window:
 

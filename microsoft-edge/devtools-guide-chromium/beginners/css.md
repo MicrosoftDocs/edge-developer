@@ -54,7 +54,7 @@ You're building a real website.
 
 Before doing this tutorial:
 
-*  Walk through the tutorial [Get started with HTML and the DOM](./html.md), or make sure that you have understanding of HTML and the DOM already.
+*  Walk through the tutorial [Get started with HTML and the DOM](html.md), or make sure that you have understanding of HTML and the DOM already.
 *  Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
 
@@ -64,7 +64,7 @@ Before doing this tutorial:
 To create your site, first do the following steps to set up your code.
 
 > [!NOTE]
-> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get started with HTML and the DOM](./html.md).
+> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get started with HTML and the DOM](html.md).
 
 1. Open the [source code](https://glitch.com/edit/#!/cooked-amphibian?path=index.html).  The tab of your browser that's currently selected is called the **editing tab**.
 
@@ -96,7 +96,7 @@ The following is the HTML and CSS code used to create the paragraph in the previ
 </p>
 ```
 
-The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get started with HTML and the DOM](./html.md) before attempting the following sections.
+The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get started with HTML and the DOM](html.md) before attempting the following sections.
 
 
 <!-- ====================================================================== -->
@@ -245,7 +245,7 @@ To add a declaration to an existing ruleset:
 
    :::image type="content" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link." lightbox="../media/beginners-css-add1.msft.png":::
 
-   DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from the tutorial [Get started with HTML and the DOM](./html.md).
+   DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from the tutorial [Get started with HTML and the DOM](html.md).
 
    In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree:
 

@@ -22,13 +22,13 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and edit session storage
 
-This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md) to view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) key-value pairs.
+To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/Web/API/Window/sessionStorage) key-value pairs, use the **Application** tool.
 
 
 <!-- ====================================================================== -->
 ## View sessionStorage keys and values
 
-1. Click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
+1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** panel is shown by default.
 
    :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest.msft.png":::
 

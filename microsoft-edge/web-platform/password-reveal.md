@@ -15,8 +15,6 @@ By default, the **password reveal** button is turned off, so that in the **passw
 
 ![The eye-shaped icon appears next to the dots that hide the password text.](media/mdn-demo-password-reveal-off.msft.png)
 
-<!-- _To zoom: right-click > Open image in new tab._ -->
-
 When the user clicks the **password reveal** button to turn it on, the password text is revealed, and the eye icon changes to have a slash over it:
 
 ![The original password text is revealed, and the eye icon has a slash over it.](media/mdn-demo-password-reveal-on.msft.png)

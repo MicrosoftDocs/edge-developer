@@ -10,7 +10,7 @@ ms.date: 01/20/2022
 ---
 # Use WebDriver to automate Microsoft Edge
 
-WebDriver allows you to automate Microsoft Edge by simulating user interaction.  WebDriver tests and simulations differ from JavaScript unit tests in the following ways:
+WebDriver allows you to automate Microsoft Edge by simulating user interaction.  Tests that use WebDriver have some advantages over JavaScript unit tests that run in the browser:
 
 *   WebDriver accesses functionality and information that's not available to JavaScript running in browsers.
 

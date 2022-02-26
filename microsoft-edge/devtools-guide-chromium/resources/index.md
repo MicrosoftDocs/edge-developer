@@ -30,7 +30,7 @@ Resources are the files that a page needs in order to display correctly.  Exampl
 
 You can view the resources that make up a web page from within several tools, or panels.
 
-This guide assumes that you are familiar with the basics of [web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md)).
+This guide assumes that you are familiar with the basics of [web development](https://developer.mozilla.org/docs/Learn) and [Microsoft Edge DevTools](../../devtools-guide-chromium/overview.md).
 
 
 <!-- ====================================================================== -->

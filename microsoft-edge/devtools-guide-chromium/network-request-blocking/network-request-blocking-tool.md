@@ -41,14 +41,14 @@ To block a network request:
 
 To delete a specific network blocking request:
 
-*  In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](./media/remove-blocked-request-icon.png)) button:
+*  In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](media/remove-blocked-request-icon.png)) button:
 
-   ![Removing a blocked request](./media/remove-blocked-request.png)
+   ![Removing a blocked request](media/remove-blocked-request.png)
 
 
 To delete all network blocking requests at once:
 
-*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](./media/remove-all-blocked-requests-icon.png)) button.
+*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](media/remove-all-blocked-requests-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -56,9 +56,9 @@ To delete all network blocking requests at once:
 
 To change an existing blocked network request:
 
-*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](./media/edit-blocked-request-icon.png)):
+*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](media/edit-blocked-request-icon.png)):
 
-   ![Editing a blocked request](./media/edit-blocked-request.png)
+   ![Editing a blocked request](media/edit-blocked-request.png)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ To toggle network request blocking without having to delete and re-create all of
 
 *  In the toolbar, select or clear the **Enable network request blocking** checkbox:
 
-   ![Toggling network request blocking](./media/toggle-request-blocking.png)
+   ![Toggling network request blocking](media/toggle-request-blocking.png)
 
 
 <!-- ====================================================================== -->
@@ -88,9 +88,7 @@ To block network requests by using the **Network** tool:
 
 1. Right-click the network request, and then click **Block request URL** to block this specific resource, or **Block request domain** to block all resources from the same domain:
 
-   ![Blocking from the network tool](./media/block-request-from-network-tool.png)
-
-   _To zoom, right-click > **Open image in new tab**._
+   ![Blocking from the network tool](media/block-request-from-network-tool.png)
 
 
 <!-- ====================================================================== -->

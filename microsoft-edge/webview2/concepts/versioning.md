@@ -46,7 +46,7 @@ The SDK release package contains the following components:
 *  [Win32 C/C++ APIs](/microsoft-edge/webview2/reference/win32).
 *  .NET APIs:  [WPF](/dotnet/api/microsoft.web.webview2.wpf), [WinForms](/dotnet/api/microsoft.web.webview2.winforms), and [Core](/dotnet/api/microsoft.web.webview2.core).
 
-For more information about automatic updating of the Evergreen Runtime, see [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md).
+For more information about automatic updating of the Evergreen Runtime, see [Distribute a WebView2 app and the WebView2 Runtime](distribution.md).
 
 
 <!-- ====================================================================== -->

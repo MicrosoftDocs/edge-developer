@@ -26,7 +26,7 @@ Use the **Network** tool to make sure that resources are being downloaded or upl
 
 This is a step-by-step tutorial walkthrough of the **Network** tool, for inspecting network activity for a page.
 
-For an overview of the network-related DevTools features, see [Network features reference](./reference.md).
+For an overview of the network-related DevTools features, see [Network features reference](reference.md).
 
 <!-- TODO: entire section needs a Microsoft Edge DevTools rewrite  -->
 
@@ -101,7 +101,7 @@ To view the network activity that a page causes:
     *  **Waterfall**.  A graphical representation of the different stages of the request.  To display a breakdown, hover over a **Waterfall**.
 
     > [!NOTE]
-    > The graph above the **Network Log** is called the **Overview**.  You won't use the **Overview** graph in this tutorial, so you can hide it.  See [Hide the Overview pane](./reference.md#hide-the-overview-pane).
+    > The graph above the **Network Log** is called the **Overview**.  You won't use the **Overview** graph in this tutorial, so you can hide it.  See [Hide the Overview pane](reference.md#hide-the-overview-pane).
 
    After you open DevTools, it records network activity in the **Network Log**.
 
@@ -254,7 +254,7 @@ The **Filter** text box supports many different types of filtering.
 
    :::image type="content" source="../media/network-glitch-network-filter-property-value.msft.png" alt-text="A property filter." lightbox="../media/network-glitch-network-filter-property-value.msft.png":::
 
-   For the full list of filterable properties, see [Filter requests by properties](./reference.md#filter-requests-by-properties).
+   For the full list of filterable properties, see [Filter requests by properties](reference.md#filter-requests-by-properties).
 
 1. Clear the **Filter** text box of any text.
 
@@ -272,7 +272,7 @@ To focus in on a certain type of file, such as stylesheets:
 
 1. To remove the filters and display all resources again, select **All**.
 
-For other filtering workflows, see [Filter requests](./reference.md#filter-requests).
+For other filtering workflows, see [Filter requests](reference.md#filter-requests).
 
 
 <!-- ====================================================================== -->
@@ -308,7 +308,7 @@ How does a page look and behave when some of the page resources aren't available
 
 Congratulations, you have completed the tutorial!  You now know how to use the **Network** tool in Microsoft Edge DevTools.
 
-To discover more DevTools features related to inspecting network activity, see [Network features reference](./reference.md).
+To discover more DevTools features related to inspecting network activity, see [Network features reference](reference.md).
 
 
 <!-- ====================================================================== -->

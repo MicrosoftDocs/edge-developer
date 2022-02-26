@@ -71,7 +71,7 @@ To turn an experiment on or off in Microsoft Edge:
 
 1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-   :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings." lightbox="../media/experiments-devtools.msft.png":::
+   ![The Experiments page in Settings.](../media/experiments-devtools.msft.png)
 
 1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
@@ -218,7 +218,7 @@ To use the **Source Order Viewer**:
 
 1. Highlight any HTML element to display an overlay of the order in the webpage source.
 
-   :::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane." lightbox="../media/experiments-source-order-viewer.msft.png":::
+   ![Source Order Viewer in the Accessibility pane.](../media/experiments-source-order-viewer.msft.png)
 
 This experiment is turned on by default.
 
@@ -282,7 +282,7 @@ To use the visual **Font Editor**:
 
 1. In the **Styles** tab, select the **Font Editor** icon.
 
-   :::image type="content" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted." lightbox="../media/font-editor-open.msft.png":::
+   ![The visual Font Editor pane is highlighted.](../media/font-editor-open.msft.png)
 
 For more information about the visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
@@ -331,7 +331,7 @@ Use the Reporting API to catch certain errors such as security violations or dep
 
 The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
-:::image type="content" source="../media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel." lightbox="../media/experiments-webhint.msft.png":::
+![webhint feedback in the Issues panel.](../media/experiments-webhint.msft.png)
 
 This experiment is turned on by default.
 
@@ -363,7 +363,7 @@ To use **Composited Layers**:
 
 1. All of the painted layers of the app are displayed.  Try this feature with your own web apps.
 
-   :::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane." lightbox="../media/experiments-layers.msft.png":::
+   ![Composited Layers pane.](../media/experiments-layers.msft.png)
 
 This experiment is turned on by default.
 
@@ -388,7 +388,9 @@ To use the **Network Console**:
 
 1. Click **Send**.
 
-   :::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer." lightbox="../media/network-network-console.msft.png":::
+   ![Network Console in the Console drawer.](../media/network-network-console.msft.png)
+
+See [Compose and send web API requests using the Network Console tool](../network-console/network-console-tool.md).
 
 
 <!-- ====================================================================== -->
@@ -468,7 +470,7 @@ The **Open source files in Visual Studio Code** experiment replaces the code edi
 
 When you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code.  In previous versions of Microsoft Edge, this action opened the file in the code editor of the Sources tool in DevTools.
 
-:::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code." lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
+![Selecting a file link in the Styles tool opens the file in Visual Studio Code.](../media/experiment-sources-in-code-editor-open.msft.png)
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 
@@ -542,7 +544,7 @@ This experiment started with Microsoft Edge version 89, and is a regular feature
 
 You can now open more tools using the new **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) appears to the right of the tab group at the top of DevTools.  To display a list of other tools that you can add to the tab bar, click the **More Tools** (![The 'More Tools' icon.](../media/more-tools-icon-light-theme.png)) icon.
 
-:::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane." lightbox="../media/experiments-more-tools-button.msft.png":::
+![More Tools in the top pane.](../media/experiments-more-tools-button.msft.png)
 
 ### Enable Welcome tab
 
@@ -557,7 +559,7 @@ This experiment replaces the **What's New** tool with the new **Welcome** tool. 
 
 The **Welcome** tool opens automatically after each update to Microsoft Edge.  To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
 
-:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool." lightbox="../media/experiments-welcome.msft.png":::
+![Welcome tool.](../media/experiments-welcome.msft.png)
 
 ### Enable new CSS Flexbox debugging features
 
@@ -569,7 +571,7 @@ This feature provides many new visualizations to help you debug CSS Flexbox layo
 
 The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect.](../media/inspect-tool-icon-light-theme.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
 
-:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool." lightbox="../media/flexbox-hover.msft.png":::
+![Display Flexbox containers with the Inspect tool.](../media/flexbox-hover.msft.png)
 
 #### Displaying persistent overlays on Flexbox layouts
 
@@ -582,11 +584,11 @@ To toggle persistent overlays on Flexbox layout, do either of the following:
 *  Select the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.
 *  Open the new **Layout** panel located in the **Elements** tool, and select the checkbox next to each Flexbox container you want to highlight.
 
-:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools." lightbox="../media/flexbox-overlay.msft.png":::
+![Flex icons and Layout panel in DevTools.](../media/flexbox-overlay.msft.png)
 
 #### Configuring persistent overlays
 
 To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
 
-:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel." lightbox="../media/flexbox-layout.msft.png":::
+![Layout panel.](../media/flexbox-layout.msft.png)
 -->
