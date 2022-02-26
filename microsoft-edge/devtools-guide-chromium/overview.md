@@ -10,52 +10,38 @@ ms.date: 09/23/2021
 ---
 # Overview of DevTools
 
-<!-- this content was previously stored in index.md, but was moved out from that filename into the present .md file, so that the new, Reasons article content can reside in that legacy file / at that legacy URL instead -->
+<!-- icon clipboard below -->
 
-<!-- be careful merging PRs; preserve page structure per PR 1700 (misc-fixes branch) -->
-
-<!--
-clipboard, keep:
-icon tagging to maintain here & propagate:
-to paste these into articles, always need to add ../ prefix:
-click the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) button.
-click the **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button.
-click the **More tabs** (![More tabs icon.](media/more-tabs-icon-light-theme.png)) button.
-click the **More Tools** (![More Tools icon.](media/more-tools-icon-light-theme.png)) button.
-click the **JavaScript errors counter** (![JavaScript errors counter icon.](media/javascript-counter-icon-light-theme.png)) button.
-click the **Issues counter** (![Issues counter icon.](media/issues-counter-icon-light-theme.png)) button.
-click the **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button.
-select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png))
-click the **Send Feedback** (![Send Feedback icon.](media/send-feedback-icon-light-theme.png)) button.
-click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) menu button.
-click the **Close** DevTools (![Close DevTools icon.](media/close-devtools-icon-light-theme.png)) button.
+<!-- ====================================================================== -->
+<!-- keep sync'd:
+* [Overview of DevTools](overview.md) - intro section
+* [Microsoft Edge DevTools](../develop-web-microsoft-edge.md#microsoft-edge-devtools) in _Develop for the web with Microsoft Edge_
 -->
 
-Microsoft Edge DevTools is a set of web development tools that appears next to a rendered webpage in the Microsoft Edge Browser.
-
-The Microsoft Edge browser comes with Developer Tools built-in.  DevTools provides a powerful way to inspect, debug, and even create web projects.  These Developer Tools are partly based on the tools in the Chromium open-source project.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
-
+The Microsoft Edge browser comes with built-in web development tools, called Microsoft Edge DevTools.  DevTools is a set of web development tools that appears next to a rendered webpage in the browser.  DevTools provides a powerful way to inspect and debug web projects.  You can also edit source files and create web projects using the DevTools environment.
 
 With DevTools, you can do the following:
 
-*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including .html, .css, .js, and .png data formats.
+*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
 
-*  Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and review the location of the problems.
+*  Emulate how your web product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
 
 *  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
-*  Find accessibility, performance, compatibility, and security issues in your products, and learn how to use DevTools to fix the accessibility issues that are found.
+*  Find accessibility, performance, compatibility, and security issues in your products, and use DevTools to fix the accessibility issues that are found.
 
 *  Use a development environment to sync changes in DevTools with the file system and from the web.
+
+<!-- /keep sync'd -->
+
+
+See also [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/reasons-edge-devtools.md).
 
 
 <!-- ====================================================================== -->
 ## Open DevTools
-<!--
-keep the content of these h2 sections (below this comment) sync'd:
-main copy:
+<!-- keep sync'd:
 [Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_
-derivative copy:
 [Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
 -->
 
@@ -78,6 +64,8 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
 | Press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
 | Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
+
+<!-- /keep sync'd -->
 
 
 <!-- ====================================================================== -->
@@ -510,6 +498,7 @@ To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.m
 <!-- ====================================================================== -->
 ## See also
 
+* [Reasons to use Microsoft Edge DevTools](devtools-guide-chromium/reasons-edge-devtools.md)
 * [About the list of tools](about-tools.md)
 * [Get started with HTML and the DOM](beginners/html.md)
 * [Inspect and change the current webpage](dom/index.md)
@@ -526,3 +515,21 @@ To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.m
 * [Use a development environment](sources/index.md)
 * [Sync changes in DevTools with the file system](workspaces/index.md)
 * [Override files from the web](javascript/overrides.md)
+
+
+<!-- ====================================================================== -->
+<!-- clipboard, keep:
+icon tagging to maintain here & propagate:
+to paste these into articles, always need to add ../ prefix:
+click the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) button.
+click the **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button.
+click the **More tabs** (![More tabs icon.](media/more-tabs-icon-light-theme.png)) button.
+click the **More Tools** (![More Tools icon.](media/more-tools-icon-light-theme.png)) button.
+click the **JavaScript errors counter** (![JavaScript errors counter icon.](media/javascript-counter-icon-light-theme.png)) button.
+click the **Issues counter** (![Issues counter icon.](media/issues-counter-icon-light-theme.png)) button.
+click the **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button.
+select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png))
+click the **Send Feedback** (![Send Feedback icon.](media/send-feedback-icon-light-theme.png)) button.
+click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) menu button.
+click the **Close** DevTools (![Close DevTools icon.](media/close-devtools-icon-light-theme.png)) button.
+-->

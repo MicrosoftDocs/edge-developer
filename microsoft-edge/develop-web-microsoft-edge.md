@@ -15,20 +15,27 @@ Develop for the web with Microsoft Edge by using Microsoft Edge DevTools, Micros
 
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools
+<!-- ====================================================================== -->
+<!-- keep sync'd:
+* [Overview of DevTools](devtools-guide-chromium/overview.md) - intro section
+* [Microsoft Edge DevTools](../develop-web-microsoft-edge.md#microsoft-edge-devtools) in _Develop for the web with Microsoft Edge_
+-->
 
-Microsoft Edge DevTools is a set of web development tools that appears next to a rendered webpage in the Microsoft Edge Browser.
-
-When you install Microsoft Edge, you not only get a browser, you also get Developer Tools, which provide powerful ways to inspect, debug, and even create web projects.  The Microsoft Edge Developer Tools are also called _Microsoft Edge DevTools_, or simply _DevTools_.
+The Microsoft Edge browser comes with built-in web development tools, called Microsoft Edge DevTools.  DevTools is a set of web development tools that appears next to a rendered webpage in the browser.  DevTools provides a powerful way to inspect and debug web projects.  You can also edit source files and create web projects using the DevTools environment.
 
 With DevTools, you can do the following:
 
-*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including .html, .css, .js, and .png data formats.
+*  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
 
-*  Emulate how your product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and review the location of the problems.
+*  Emulate how your web product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
 
 *  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
-*  Find accessibility, performance, compatibility, and security issues in your products and learn how to use DevTools to fix each.
+*  Find accessibility, performance, compatibility, and security issues in your products, and use DevTools to fix the accessibility issues that are found.
+
+*  Use a development environment to sync changes in DevTools with the file system and from the web.
+
+<!-- /keep sync'd -->
 
 See [Overview of DevTools](devtools-guide-chromium/overview.md).
 

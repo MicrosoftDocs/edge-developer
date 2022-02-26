@@ -51,11 +51,8 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 
 <!-- ====================================================================== -->
 ## Open DevTools
-<!--
-keep the content of these h2 sections (below this comment) sync'd:
-main copy:
+<!-- keep sync'd:
 [Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_
-derivative copy:
 [Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
 -->
 
@@ -78,6 +75,8 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
 | Press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
 | Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
+
+<!-- /keep sync'd -->
 
 
 <!-- ====================================================================== -->

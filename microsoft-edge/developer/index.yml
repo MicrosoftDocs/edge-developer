@@ -53,14 +53,13 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          # in this hub page design, there's no top-level card, so putting all-up topmost article here, in the DevTools card instead.
-          - text: Develop for the web with Microsoft Edge  # new, topmost-level firstchild article
+          - text: Develop for the web with Microsoft Edge  # topmost article
             url: /microsoft-edge/develop-web-microsoft-edge
 
-          - text: Microsoft Edge DevTools  # a lower-level card-based landing page
+          - text: Microsoft Edge DevTools documentation  # DevTools landing page
             url: /microsoft-edge/devtools-guide-chromium/landing/index
 
-          - text: Overview of DevTools  # existing firstchild article
+          - text: Overview of DevTools  # renamed from index.md
             url: /microsoft-edge/devtools-guide-chromium/overview
 
           - text: Reasons to use Microsoft Edge DevTools  # new article
@@ -71,7 +70,7 @@ landingContent:
 
       - linkListType: whats-new
         links:
-          - text: What's new in Microsoft Edge DevTools  # new firstchild article
+          - text: What's new in Microsoft Edge DevTools
             url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
 
       - linkListType: how-to-guide
