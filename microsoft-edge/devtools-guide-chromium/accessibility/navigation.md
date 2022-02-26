@@ -79,10 +79,6 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
 | Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
 
-<!-- /end of h2 section to keep sync'd -->
-
-See [Open DevTools](../index.md#open-devtools).
-
 
 <!-- ====================================================================== -->
 ## Navigate between tools
