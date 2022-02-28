@@ -188,103 +188,103 @@ The following code adds to the above sample, by adding the following features, u
 
 
 ```cpp
-    if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
-    {
-        CHECK_FAILURE(webView10->add_BasicAuthenticationRequested(
-            Callback<ICoreWebView2BasicAuthenticationRequestedEventHandler>(
-                [this](
-                    ICoreWebView2* sender,
-                    ICoreWebView2BasicAuthenticationRequestedEventArgs* argsRaw)
-                {
-                    // Make a smart pointer copy of the event args so we can take it
-                    // into our lambda below.
-                    wil::com_ptr<ICoreWebView2BasicAuthenticationRequestedEventArgs>
-                        args = argsRaw;
+if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
+{
+    CHECK_FAILURE(webView10->add_BasicAuthenticationRequested(
+        Callback<ICoreWebView2BasicAuthenticationRequestedEventHandler>(
+            [this](
+                ICoreWebView2* sender,
+                ICoreWebView2BasicAuthenticationRequestedEventArgs* argsRaw)
+            {
+                // Make a smart pointer copy of the event args so we can take it
+                // into our lambda below.
+                wil::com_ptr<ICoreWebView2BasicAuthenticationRequestedEventArgs>
+                    args = argsRaw;
 
-                    // We need to show UI asynchronously so we obtain a deferral.
-                    // A deferral will delay the CoreWebView2 from
-                    // examining the properties we set on the event args until
-                    // after we call the Complete method asynchronously later.
-                    // This gives us time to asynchronously show UI.
-                    wil::com_ptr<ICoreWebView2Deferral> deferral;
-                    CHECK_FAILURE(args->GetDeferral(&deferral));
+                // We need to show UI asynchronously so we obtain a deferral.
+                // A deferral will delay the CoreWebView2 from
+                // examining the properties we set on the event args until
+                // after we call the Complete method asynchronously later.
+                // This gives us time to asynchronously show UI.
+                wil::com_ptr<ICoreWebView2Deferral> deferral;
+                CHECK_FAILURE(args->GetDeferral(&deferral));
 
-                    HWND mainWindowHwnd = m_appWindow->GetMainWindow();
+                HWND mainWindowHwnd = m_appWindow->GetMainWindow();
 
-                    m_appWindow->RunAsync([args, deferral, mainWindowHwnd]()
+                m_appWindow->RunAsync([args, deferral, mainWindowHwnd]()
+                    {
+                        wil::com_ptr<ICoreWebView2BasicAuthenticationResponse>
+                            basicAuthenticationResponse;
+                        CHECK_FAILURE(args->get_Response(&basicAuthenticationResponse));
+
+                        wil::unique_cotaskmem_string uri;
+                        CHECK_FAILURE(args->get_Uri(&uri));
+
+                        wil::unique_cotaskmem_string challenge;
+                        CHECK_FAILURE(args->get_Challenge(&challenge));
+
+                        // When prompting the end user for authentication its important
+                        // to show them the URI or origin of the URI that is requesting
+                        // authentication so the end user will know who they are giving
+                        // their username and password to.
+                        std::wstring prompt = L"Authentication request from ";
+                        prompt += uri.get();
+                        // Its also important to display the challenge to the end user
+                        // as it may have important site specific information for the
+                        // end user to provide the correct username and password.
+                        prompt += L"\r\nChallenge: ";
+                        prompt += challenge.get(); 
+
+                        // Use an app or UI framework method to get input from the end user.
+                        TextInputDialog dialog(
+                            mainWindowHwnd, 
+                            L"Authentication Request",
+                            L"User name and password",
+                            prompt.c_str(),
+                            L"username\r\npassword");
+                        bool userNameAndPasswordSet = false;
+
+                        if (dialog.confirmed)
                         {
-                            wil::com_ptr<ICoreWebView2BasicAuthenticationResponse>
-                                basicAuthenticationResponse;
-                            CHECK_FAILURE(args->get_Response(&basicAuthenticationResponse));
-
-                            wil::unique_cotaskmem_string uri;
-                            CHECK_FAILURE(args->get_Uri(&uri));
-
-                            wil::unique_cotaskmem_string challenge;
-                            CHECK_FAILURE(args->get_Challenge(&challenge));
-
-                            // When prompting the end user for authentication its important
-                            // to show them the URI or origin of the URI that is requesting
-                            // authentication so the end user will know who they are giving
-                            // their username and password to.
-                            std::wstring prompt = L"Authentication request from ";
-                            prompt += uri.get();
-                            // Its also important to display the challenge to the end user
-                            // as it may have important site specific information for the
-                            // end user to provide the correct username and password.
-                            prompt += L"\r\nChallenge: ";
-                            prompt += challenge.get(); 
-
-                            // Use an app or UI framework method to get input from the end user.
-                            TextInputDialog dialog(
-                                mainWindowHwnd, 
-                                L"Authentication Request",
-                                L"User name and password",
-                                prompt.c_str(),
-                                L"username\r\npassword");
-                            bool userNameAndPasswordSet = false;
-
-                            if (dialog.confirmed)
+                            const std::wstring& userNameAndPassword = dialog.input;
+                            std::size_t separatorIdx = userNameAndPassword.find(L"\r\n");
+                            if (separatorIdx != std::wstring::npos)
                             {
-                                const std::wstring& userNameAndPassword = dialog.input;
-                                std::size_t separatorIdx = userNameAndPassword.find(L"\r\n");
-                                if (separatorIdx != std::wstring::npos)
-                                {
-                                    std::wstring userName =
-                                        userNameAndPassword.substr(0, separatorIdx);
-                                    std::wstring password =
-                                        userNameAndPassword.substr(separatorIdx + 2);
+                                std::wstring userName =
+                                    userNameAndPassword.substr(0, separatorIdx);
+                                std::wstring password =
+                                    userNameAndPassword.substr(separatorIdx + 2);
 
-                                    basicAuthenticationResponse->put_UserName(userName.c_str());
-                                    basicAuthenticationResponse->put_Password(password.c_str());
+                                basicAuthenticationResponse->put_UserName(userName.c_str());
+                                basicAuthenticationResponse->put_Password(password.c_str());
 
-                                    userNameAndPasswordSet = true;
-                                }
+                                userNameAndPasswordSet = true;
                             }
+                        }
 
-                            // If we didn't get a username and password from the end user then
-                            // we cancel the authentication request and don't provide any
-                            // authentication.
-                            if (!userNameAndPasswordSet)
-                            {
-                                args->put_Cancel(TRUE);
-                            }
+                        // If we didn't get a username and password from the end user then
+                        // we cancel the authentication request and don't provide any
+                        // authentication.
+                        if (!userNameAndPasswordSet)
+                        {
+                            args->put_Cancel(TRUE);
+                        }
 
-                            // We've finished our asynchronous work and so we complete the
-                            // deferral to let the CoreWebView2 know that we're done changing
-                            // values on the event args.
-                            deferral->Complete();
-                        });
+                        // We've finished our asynchronous work and so we complete the
+                        // deferral to let the CoreWebView2 know that we're done changing
+                        // values on the event args.
+                        deferral->Complete();
+                    });
 
-                    return S_OK;
-                })
-                .Get(),
-            &m_basicAuthenticationRequestedToken));
-    }
-    else
-    {
-        FeatureNotAvailable();
-    }
+                return S_OK;
+            })
+            .Get(),
+        &m_basicAuthenticationRequestedToken));
+}
+else
+{
+    FeatureNotAvailable();
+}
 ```
 
 APIs:
@@ -303,7 +303,63 @@ APIs:
 
 
 ```csharp
-// put code here
+webView.CoreWebView2.BasicAuthenticationRequested += delegate (
+    object sender, 
+    CoreWebView2BasicAuthenticationRequestedEventArgs args)
+{
+    // We need to show UI asynchronously so we obtain a deferral.
+    // A deferral will delay the CoreWebView2 from
+    // examining the properties we set on the event args until
+    // after we call the Complete method asynchronously later.
+    // This gives us time to asynchronously show UI.
+    CoreWebView2Deferral deferral = args.GetDeferral();
+
+    // We avoid potential reentrancy from running a message loop in the
+    // event handler by showing our download dialog later when we
+    // complete the deferral asynchronously.
+    System.Threading.SynchronizationContext.Current.Post((_) =>
+    {
+        using (deferral)
+        {
+            // When prompting the end user for authentication its important
+            // to show them the URI or origin of the URI that is requesting
+            // authentication so the end user will know who they are giving
+            // their username and password to.
+
+            // Its also important to display the challenge to the end user
+            // as it may have important site specific information for the
+            // end user to provide the correct username and password.
+
+            // Use an app or UI framework method to get input from the end user.
+            TextInputDialog dialog = new TextInputDialog(
+                title: "Authentication Request",
+                description: "Authentication request from " + args.Uri + "\r\n" +
+                    "Challenge: " + args.Challenge,
+                defaultInput: "username\r\npassword");
+            bool userNameAndPasswordSet = false;
+
+            if (dialog.ShowDialog().GetValueOrDefault(false))
+            {
+                string[] userNameAndPassword = dialog.Input.Text.Split(
+                    new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                if (userNameAndPassword.Length > 1)
+                {
+                    args.Response.UserName = userNameAndPassword[0];
+                    args.Response.Password = userNameAndPassword[1];
+                    userNameAndPasswordSet = true;
+                }
+            }
+
+            // If we didn't get a username and password from the end user then
+            // we cancel the authentication request and don't provide any
+            // authentication.
+            if (!userNameAndPasswordSet)
+            {
+                args.Cancel = true;
+            }
+        }
+    }, null);
+};
 ```
 
 APIs:
