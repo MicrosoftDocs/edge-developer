@@ -10,19 +10,16 @@ ms.date: 10/28/2021
 ---
 # Basic authentication for WebView2 apps
 <!-- todo:
-Find and resolve any green HTML comments-questions.
-Find "todo" in this file. -->
+Write sample code for C# longer code prompting uname/pw.
 
-Handle basic auth'n
-1. fooing the bar
-1. barring the foo
-1. checking 
-
+Try to recast h2s as use-case actions or add such h2's.  eg:
+To handle auth/ build basic authentication into your WebView2 app:
+1. Set up a, b, & c.
+1. Test for success/fail event.
+1. Handle success event.  Handle failure event.
+-->
 
 _Basic authentication_ is an authentication approach that's part of the HTTP protocol.
-
-![The Microsoft Edge WebView2 Navigation Authentication Flow.](../media/navigation-auth-graph.png)
-<!-- see "Image maintenance notes" below -->
 
 
 <!-- ====================================================================== -->
@@ -42,33 +39,74 @@ The order of navigation events: The basic authentication event happens in the mi
 
 *  The **HTTP server**.  Checks authentication and conditionally returns an error document or the requested webpage/document.
 *  The **WebView2 control** instance raises the events.  It sits between the HTTP Server & the host app.  It communicates with the HTTP Server and with the app, as an intermediary.
-*  The **host app** - sets the user name and pw on the the event's arguments (`eventsargs`) response objects.
+*  The **host app** - sets the user name and password on the the event's arguments (`EventArgs`) response objects (in this case, `BasicAuthenticationRequestedEventArgs`).
 
 
 <!-- ====================================================================== -->
 ## Detailed sequence of events end-to-end
 
-1. The host app tells the WebView2 control to navigate to a URL.  (upper left box of old diagram)
+![The Microsoft Edge WebView2 Navigation Authentication Flow.](../media/navigation-auth-graph.png)
+<!-- see "Image maintenance notes" below -->
 
-1. The WebView2 control talks to the HTTP Server requesting to get the document at a specified URL.
+1. The host app tells the WebView2 control to navigate to a URL.
 
-1. The HTTP Server replies to the WebView2 control saying can't get the url/doc w/o auth'n
+2. The WebView2 control talks to the HTTP Server requesting to get the document at a specified URL.
 
-1. The WebView2 control tells host app "auth is needed" (which is the `BasicAuthnReq'd` event)
+3. The HTTP Server replies to the WebView2 control saying can't get the url/doc w/o auth'n
 
-1. The host app responds to that event by providing the uname & pw to the WebView2 control.
+4. The WebView2 control tells host app "auth is needed" (which is the `BasicAuthnReq'd` event)
 
-1. The WebView2 control repeats: the WebView2 control again requests the URL from the HTTP Server, but this time with the authenticatin (username & password) (box of old diagram: top middle).
+5. The host app responds to that event by providing the uname & pw to the WebView2 control.
 
-1. The HTTP Server might not like the uname & pw, might tell wv "you can't get that url".
+6. The WebView2 control again requests the URL from the HTTP Server, but this time with the authentication (username & password).
 
-1. Repeat the left navigation "leg" , nothing at all is different than the first time.
+7. The HTTP Server might reject the uname & pw, might tell wv2 control "you can't get that url".
 
-   Now to head down the middle or right subpaths into the right-hand leg (in terms of the old diagram):
+8. The WebView2 control renders the error page that's returned by the HTTP Server (demarcated by the `ContentLoading` event and `DOMContentLoaded` event).
+   
+9. The HTTP Server accepts the authentication credentials and returns the requested document | the HTTP Server denies the authentication and returns an error page document.
 
-1. The HTTP Server accepts the authentication credentials and returns the requested document | the HTTP Server denies the authentication and returns an error page document.
+10. The WebView2 control renders the returned document (marked by the `ContentLoading` event and `DOMContentLoaded` event).
 
-1. The WebView2 control renders the returned document (marked by the `ContentLoading` event and `DOMContentLoaded` event).
+
+<!-- ====================================================================== -->
+## Background details about navigation
+
+An HTTP Server may require HTTP authentication.  In this case, there is a _first navigation_, which has the navigation events that are listed above.  The HTTP Server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
+
+If the `BasicAuthenticationRequested` event is cancelled, then there is no subsequent navigation and the WebView2 will remain displaying the blank page.
+
+If the `BasicAuthenticationRequested` event isn't cancelled, the WebView2 will perform the initial navigation again, but this time using any provided credentials and you will again see all the same navigation events listed above.
+
+
+If the credentials are not accepted by the HTTP server, and navigation fails again with 401 or 407~~.  In that case, the `CoreWebView2` class instance again raises the `BasicAuthenticationRequested` event, and navigation continues as above.
+
+If the credentials are accepted by the HTTP server, or if the HTTP Server denies authentication with an error page, the navigation may succeed or fail.
+
+
+As a part of navigation, thewebview2 will render the corresponding page, and a "success" or "failure" outcome raises a successful or failed `NavigationCompleted` event.
+
+The navigations ("leg" of events) before and after the `BasicAuthenticationRequested` event are distinct navigations ("leg" of events) and have distinct navigation IDs.
+
+nav events args has a property: the nav id.  it ties together nav events that corresp to 1 nav'n.  the nav id remains same during __ retry?  during hte next run through the event flow, a different nav ID is used.  Each time we start at navigation starting, 
+
+
+A _navigation_ corresponds to multiple navigation events.
+
+by _navigation_, we here mean each retry, starting with the NavigationStarting box, through the NavigationCompleted box.  
+
+
+When a new navigation begins, a new navigation ID is assigned.  For the new navgation, the HTTP Server gave the WebView2 control a document.  This is the "have document" navigation.
+
+There are two kinds of navigations in the flow:
+*  A "server requested authentication" navigation
+*  A "server gave the WebView2 control a document" navigation
+
+After the first type of navigation, the server has asked for auth'n and the app needs to try that kind of navigation again (with a new navigation ID).  The new nav'n will use whatever the host app gets from the events arguments response objects.
+
+
+
+
 
 
 <!-- ====================================================================== -->
@@ -105,6 +143,11 @@ else
    FeatureNotAvailable();
 }
 ```
+
+APIs:
+* tbd
+
+
 <!-- ------------------------------ -->
 # [C#](#tab/csharp)
 
@@ -118,6 +161,10 @@ else
         args.Response.Password = "pass";
     };
 ```
+
+APIs:
+* tbd
+
 
 ---
 <!-- end of tab-set -->
@@ -271,55 +318,6 @@ APIs:
 ## See also
 
 *  [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) at MDN.
-
-
-<!-- ====================================================================== -->
-## Draft Notes, largely based on old, dual-leg diagram
-
-To build basic authentication into your WebView2 app:
-
-1. Do X.  Set up a, b, & c.
-
-1. Do Y.  Test for success/fail event.
-
-1. Do Z.  Handle success event.  Handle failure event.
-
-An HTTP Server may require HTTP authentication.  In this case, there is a _first navigation_, which has the navigation events that are listed above.  The HTTP Server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
-
-If the `BasicAuthenticationRequested` event is cancelled, then there is no subsequent navigation and the WebView2 will remain displaying the blank page.
-
-If the `BasicAuthenticationRequested` event isn't cancelled, the WebView2 will perform the initial navigation again, but this time using any provided credentials and you will again see all the same navigation events listed above.
-
-
-Left nav'n leg of old diagram:  If the credentials are not accepted by the HTTP server, and navigation fails again with 401 or 407~~.  In that case, the `CoreWebView2` class instance again raises the `BasicAuthenticationRequested` event, and navigation continues as above.
-
-
-Right nav'n leg of old diagram:  
-If the credentials are accepted by the HTTP server, or if the HTTP Server denies authentication with an error page, the navigation may succeed or fail.
-
-
-As a part of navigation, thewebview2 will render the corresponding page, and a "success" or "failure" outcome raises a successful or failed `NavigationCompleted` event.
-
-The navigations ("leg" of events) before and after the `BasicAuthenticationRequested` event are distinct navigations ("leg" of events) and have distinct navigation IDs.
-
-nav events args has a property: the nav id.  it ties together nav events that corresp to 1 nav'n.  the nav id remains same during __ retry?  during hte next run through the event flow, a different nav ID is used.  Each time we start at navigation starting, 
-
-
-A _navigation_ corresponds to multiple navigation events.
-
-by _navigation_, we here mean each retry, starting with the NavigationStarting box, through the NavigationCompleted box.  
-
-
-outdated wording: A new nav'n begins, with a new navID.  for this nav'n, the HTTP Server gave the WebView2 control a document.  This is the "have document" navigation.
-
-
-Notes for old diagram:
-name for the left-hand leg: the "server requested authentication" leg/navigation
-name for the right-hand leg: the "server gave the WebView2 control a document" leg/navigation (case middle: the document is the req'd doc.  case right: the doc is an error page).
-
-when reach bottom left "navcomp", that means you accomplished __  the server has asked for auth'n and we need to try the navigation again (tat will have a new navid)  , using whatever the host app gets from the events arguments response objects.
-
-when reach bottom right "navcomp", that means you accomplished __
 
 
 <!-- ====================================================================== -->
