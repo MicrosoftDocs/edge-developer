@@ -1,6 +1,6 @@
 ---
 title: Retrieve source maps using Azure Artifacts symbol server
-description: Learn how to publish source maps to the Azure Artifacts symbol server from Azure DevOps to debug origin source code in DevTools.
+description: Learn how to publish source maps to the Azure Artifacts symbol server from Azure DevOps to debug original source code in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -10,23 +10,25 @@ ms.date: 02/24/2022
 
 # Retrieve source maps using Azure Artifacts symbol server
 
-This article helps understand how to publish source maps to the Azure Artifacts symbol server from Azure DevOps and how to use them to work with your original code in DevTools.
+This article helps understand how to publish source maps to the Azure Artifacts symbol server from Azure DevOps and how to use them to work with your original source code in DevTools.
 
 
 <!-- ====================================================================== -->
 ## Publish symbols for debugging
 
-With Azure Pipelines, you can publish your debugging symbols to the Azure Artifacts symbol server using the Index sources and publish symbols task. These debugging symbols can include the source maps for your compiled JavaScript code.
+With Azure Pipelines, you can publish your debugging symbols to the Azure Artifacts symbol server using the **Index sources and publish symbols** task. These debugging symbols can include the source maps for your compiled JavaScript code.
 
-To learn about publishing symbols, see [Publish symbols for debugging](../../../azure/devops/pipelines/artifacts/symbols).
+To learn publishing symbols, see [Publish symbols for debugging](https://docs.microsoft.com/azure/devops/pipelines/artifacts/symbols) and [Index Sources & Publish Symbols task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).
 
 
 <!-- ====================================================================== -->
 ## Get source maps from Azure Artifacts symbol server in DevTools
 
+Microsoft Edge DevTools can use the published debugging symbols from the Azure Artifacts symbol server to display and debug original source code via source maps.
+
 ### Step 1: Get a Symbols PAT from Azure DevOps
 
-To obtain symbols, Microsoft Edge DevTools uses the fetch protocol to talk to Azure DevOps, which requires a valid Personal Access Token (PAT).
+To obtain symbols, DevTools uses the fetch protocol to talk to Azure DevOps, which requires a valid Personal Access Token (PAT).
 
 To generate a PAT in Azure DevOps:
 
