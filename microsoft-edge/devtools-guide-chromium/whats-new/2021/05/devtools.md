@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.localizationpriority: high
 ms.date: 06/02/2021
 ---
-# What's New In DevTools (Microsoft Edge 92)
+# What's New in DevTools (Microsoft Edge 92)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
