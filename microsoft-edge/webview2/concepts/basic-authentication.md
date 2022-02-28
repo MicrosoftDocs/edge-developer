@@ -78,6 +78,9 @@ The following sample was created by expanding the sample [WebView2APISample repo
 
 That sample contains the following relevant code:
 
+<!-- ------------------------------ -->
+# [C++](#tab/cpp)
+
 ```cpp
 if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
 {
@@ -85,7 +88,8 @@ if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
       Callback<ICoreWebView2BasicAuthenticationRequestedEventHandler>(
             [this](
                ICoreWebView2* sender,
-               ICoreWebView2BasicAuthenticationRequestedEventArgs* args) {
+               ICoreWebView2BasicAuthenticationRequestedEventArgs* args)
+            {
                wil::com_ptr<ICoreWebView2BasicAuthenticationResponse> basicAuthenticationResponse;
                CHECK_FAILURE(args->get_Response(&basicAuthenticationResponse));
                CHECK_FAILURE(basicAuthenticationResponse->put_UserName(L"user"));
@@ -96,10 +100,27 @@ if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
             .Get(),
       &m_basicAuthenticationRequestedToken));
 }
-else {
+else
+{
    FeatureNotAvailable();
 }
 ```
+<!-- ------------------------------ -->
+# [C#](#tab/csharp)
+
+
+```csharp
+    webView.CoreWebView2.BasicAuthenticationRequested += delegate (
+       object sender, 
+       CoreWebView2BasicAuthenticationRequestedEventArgs args)
+    {
+        args.Response.UserName = "user";
+        args.Response.Password = "pass";
+    };
+```
+
+---
+<!-- end of tab-set -->
 
 The above code isn't realistic, because:
 
