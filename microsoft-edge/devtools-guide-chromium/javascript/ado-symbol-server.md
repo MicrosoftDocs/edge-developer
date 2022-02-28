@@ -70,4 +70,4 @@ In the **Console** tool, links in logged messages should go to original files in
 
 In the **Sources** tool, the **Navigator** pane should show your original files.
 
-You can also check the status of your source maps by opening the **Source Maps Monitor** tool. To learn more about the **Source Maps Monitor** tool and how it can help monitor which source files requested source maps , and whether those source maps were loaded, see [Source Maps Monitor tool](../source-maps-monitor/source-maps-monitor-tool).
+You can also check the status of your source maps by opening the **Source Maps Monitor** tool. To learn more about the **Source Maps Monitor** tool and how it can help monitor which source files requested source maps, and whether those source maps were loaded, see [Source Maps Monitor tool](../source-maps-monitor/source-maps-monitor-tool).
