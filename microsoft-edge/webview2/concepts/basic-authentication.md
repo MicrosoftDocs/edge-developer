@@ -10,9 +10,14 @@ ms.date: 10/28/2021
 ---
 # Basic authentication for WebView2 apps
 <!-- todo:
-Add more example code.
 Find and resolve any green HTML comments-questions.
 Find "todo" in this file. -->
+
+Handle basic auth'n
+1. fooing the bar
+1. barring the foo
+1. checking 
+
 
 _Basic authentication_ is an authentication approach that's part of the HTTP protocol.
 
@@ -67,19 +72,13 @@ The order of navigation events: The basic authentication event happens in the mi
 
 
 <!-- ====================================================================== -->
-## Example code
+## Example code: App providing auth'n () username and pw) that's is known ahead of time
 
 The following sample was created by expanding the sample [WebView2APISample repo > ScenarioAuthentication.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/d78d86f1646b6c652908f1e4bc2b64950f05ca0a/SampleApps/WebView2APISample/ScenarioAuthentication.cpp), from the WebView2Samples repo.
 
 That sample contains the following relevant code:
 
 ```cpp
-// Copyright (C) Microsoft Corporation. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-#include "ScenarioAuthentication.h"
-
-//! [BasicAuthenticationRequested]
 if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
 {
    CHECK_FAILURE(webView10->add_BasicAuthenticationRequested(
@@ -100,17 +99,25 @@ if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
 else {
    FeatureNotAvailable();
 }
-//! [BasicAuthenticationRequested]
 ```
 
 The above code isn't realistic, because:
 
 *  In practice, you'd prompt the user for the username and password rather than hardcoding them like `"user"` and `"pass"` in the listing above.
-*  The above code is synchronous, but you'd probably use asynchronous code instead.
+*  The above code is synchronous, but you'd probably use asynchronous code instead, as shown below.
 
-So, the following code adds to that sample, by adding the following features:
+
+<!-- ====================================================================== -->
+## Example code: App prompts user for authn credentials (uname/pw) 
+
+The following code adds to the above sample, by adding the following features, using `ICoreWebView2_10.add_BasicAuthenticationRequested` (in the case of C++):
 *  Prompt the user for UI to enter their username and password.
 *  Call the `getDeferral()` method on the `event` argument.
+
+
+<!-- ------------------------------ -->
+# [C++](#tab/cpp)
+
 
 ```cpp
     if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
@@ -212,6 +219,31 @@ So, the following code adds to that sample, by adding the following features:
     }
 ```
 
+APIs used above:
+
+* [ICoreWebView2BasicAuthenticationRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
+   * `get_Cancel` - Cancel the authentication request.  (not used above)
+   * `put_Cancel` - Set the `Cancel` property.
+   * `get_Challenge` - The authentication challenge string.
+   * `get_Response` - Response to the authentication request with credentials.
+   * `get_Uri` - The URI that led to the authentication challenge.
+   * `GetDeferral` - Returns an `ICoreWebView2Deferral` object.
+
+
+
+<!-- ------------------------------ -->
+# [C#](#tab/csharp)
+
+
+```csharp
+// put code here
+```
+
+
+---
+<!-- end of tab-set -->
+
+   
 
 <!-- ====================================================================== -->
 ## See also
@@ -248,7 +280,7 @@ As a part of navigation, thewebview2 will render the corresponding page, and a "
 
 The navigations ("leg" of events) before and after the `BasicAuthenticationRequested` event are distinct navigations ("leg" of events) and have distinct navigation IDs.
 
-nav events args has a property: the nav id.  it ties together nav events that corresp to 1 nav'n.  the nav id remains same during __ retry?  during hte next run through the event flow, a different nav ID is used.  Each time we start at navigatino starting, 
+nav events args has a property: the nav id.  it ties together nav events that corresp to 1 nav'n.  the nav id remains same during __ retry?  during hte next run through the event flow, a different nav ID is used.  Each time we start at navigation starting, 
 
 
 A _navigation_ corresponds to multiple navigation events.
