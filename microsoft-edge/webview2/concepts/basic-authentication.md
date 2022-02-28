@@ -9,19 +9,15 @@ ms.technology: webview
 ms.date: 10/28/2021
 ---
 # Basic authentication for WebView2 apps
-
-<!--
-todo:
+<!-- todo:
 Add more example code.
 Find and resolve any green HTML comments-questions.
-Find "todo" in this file.
--->
+Find "todo" in this file. -->
 
 _Basic authentication_ is an authentication approach that's part of the HTTP protocol.
 
-
 ![The Microsoft Edge WebView2 Navigation Authentication Flow.](../media/navigation-auth-graph.png)
-<!-- See "Image maintenance notes" below -->
+<!-- see "Image maintenance notes" below -->
 
 
 <!-- ====================================================================== -->
@@ -180,11 +176,9 @@ when reach bottom right "navcomp", that means you accomplished __
 
 
 <!-- ====================================================================== -->
-<!-- Image maintenance notes
-
-As long as the diagram in this article is created using Edotor.net (instead of Visio), keep this image-maintenance note.
+<!-- Image maintenance notes (keep)
+todo: Add callouts (numbers) to each arrow to help communicate the sequence.
 todo in a later PR: re-create the below image in Visio, and store the .vsd file in Teams > Files, and describe the .vsd location here.
-todo in later PR: Add callouts (numbers) to each arrow to help communicate the sequence.
 
 Source location for the image:
 reliable approach: paste the following code listing into https://edotor.net:
