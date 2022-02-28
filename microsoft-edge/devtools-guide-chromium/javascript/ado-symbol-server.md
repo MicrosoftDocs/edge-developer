@@ -30,7 +30,7 @@ Microsoft Edge DevTools can use the published debugging symbols from the Azure A
 
 ### Step 1: Get a Symbols PAT from Azure DevOps
 
-To obtain symbols, DevTools uses the fetch protocol to talk to Azure DevOps, which requires a valid Personal Access Token (PAT).
+To obtain symbols DevTools uses the fetch protocol to talk to Azure DevOps, which requires a valid Personal Access Token (PAT).
 
 To generate a PAT in Azure DevOps:
 
@@ -50,7 +50,7 @@ To generate a PAT in Azure DevOps:
 
 ### Step 2: Configure DevTools
 
-Microsoft Edge DevTools now needs to be configured with the PAT, to successfully retrieve the debugging symbols.
+Microsoft Edge DevTools now needs to be configured with the PAT to successfully retrieve the debugging symbols.
 
 To configure DevTools:
 
