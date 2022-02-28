@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 2/25/2022
+ms.date: 2/28/2022
 ---
 # Using Host Objects in WebView2
 
@@ -30,9 +30,9 @@ This article uses the WebView2 Win32 sample app to demonstrate some practical ap
 
 1. Install Visual Studio, install git, clone the WebView2Samples repo, and open the solution.
 
-1. Define the host object and implement `IDispatch` so that WebView2 recognizes the object.
+1. Define the host object and implement `IDispatch` so that WebView2 can project/add it to the web side.
 
-1. Use `AddHostObjectToScript` to pass a method to the web.
+1. Use `AddHostObjectToScript` to pass an object to the web.
 
 1. Call the app's native object's methods from the app's web-side code.
 
