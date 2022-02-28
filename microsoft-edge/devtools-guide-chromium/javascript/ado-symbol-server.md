@@ -48,7 +48,7 @@ To generate a PAT in Azure DevOps:
 
 ### Step 2: Configure DevTools
 
-Microsoft Edge DevTools now needs to be configured with the PAT to successfully retrieve the debugging symbols.
+Microsoft Edge DevTools now needs to be configured with the PAT, to successfully retrieve the debugging symbols.
 
 To configure DevTools:
 
