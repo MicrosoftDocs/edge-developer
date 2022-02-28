@@ -1,5 +1,5 @@
 ---
-title: Retrieve source maps using Azure Artifacts symbol server
+title: Debug original code using the Azure Artifacts symbol server
 description: Learn how to publish source maps to the Azure Artifacts symbol server from Azure DevOps to debug original source code in DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,9 @@ ms.prod: microsoft-edge
 ms.date: 02/24/2022
 ---
 
-# Retrieve source maps using Azure Artifacts symbol server
+# Debug original code using the Azure Artifacts symbol server
+
+In production, the JavaScript code of your website may be different from the original source code you work with during development. It may have been compiled, minified, and bundled during your website's build step. Source maps are used to map your compiled code to your original source code. Using source maps makes it possible to view and debug your original source code in DevTools instead of your compiled code.
 
 This article helps understand how to publish source maps to the Azure Artifacts symbol server from Azure DevOps and how to use them to work with your original source code in DevTools.
 

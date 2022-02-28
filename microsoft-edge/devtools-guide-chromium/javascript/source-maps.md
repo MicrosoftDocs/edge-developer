@@ -82,7 +82,9 @@ Source Maps are enabled by default.<!-- (as of Microsoft Edge 39)-->
 
 To make sure that Source Maps are enabled:
 
-1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. Open DevTools (**F12**).
+
+1. Click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. Under **Sources**, select **Enable JavaScript Source Maps**.  You can also select **Enable CSS Source Maps**.
 
