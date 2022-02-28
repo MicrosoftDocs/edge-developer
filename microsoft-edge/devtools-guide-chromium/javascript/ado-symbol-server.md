@@ -10,9 +10,9 @@ ms.date: 02/24/2022
 
 # Debug original code using the Azure Artifacts symbol server
 
-In production, the JavaScript code of your website may be different from the original source code you work with during development. It may have been compiled, minified, and bundled during your website's build step. Source maps are used to map your compiled code to your original source code. Using source maps makes it possible to view and debug your original source code in DevTools instead of your compiled code.
+To see and debug your original source code in DevTools rather than the compiled, minified, and bundled production code that's returned by the web server, use source maps served by the Azure Artifacts symbol server.
 
-This article helps understand how to publish source maps to the Azure Artifacts symbol server from Azure DevOps and how to use them to work with your original source code in DevTools.
+In production, the JavaScript code of your website may be different from the original source code you work with during development. It may have been compiled, minified, and bundled during your website's build step. Source maps are used to map your compiled code to your original source code. Using source maps makes it possible to view and debug your original source code in DevTools instead of your compiled code.
 
 
 <!-- ====================================================================== -->
