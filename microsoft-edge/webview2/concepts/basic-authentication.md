@@ -219,16 +219,15 @@ The following code adds to the above sample, by adding the following features, u
     }
 ```
 
-APIs used above:
+APIs:
 
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
-   * `get_Cancel` - Cancel the authentication request.  (not used above)
+   * `get_Cancel` - Cancel the authentication request.  (Not used above.)
    * `put_Cancel` - Set the `Cancel` property.
    * `get_Challenge` - The authentication challenge string.
    * `get_Response` - Response to the authentication request with credentials.
    * `get_Uri` - The URI that led to the authentication challenge.
    * `GetDeferral` - Returns an `ICoreWebView2Deferral` object.
-
 
 
 <!-- ------------------------------ -->
@@ -239,6 +238,8 @@ APIs used above:
 // put code here
 ```
 
+APIs:
+* tbd
 
 ---
 <!-- end of tab-set -->
