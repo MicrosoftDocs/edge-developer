@@ -18,7 +18,7 @@ This article helps understand how to publish source maps to the Azure Artifacts 
 
 With Azure Pipelines, you can publish your debugging symbols to the Azure Artifacts symbol server using the **Index sources and publish symbols** task. These debugging symbols can include the source maps for your compiled JavaScript code.
 
-To learn publishing symbols, see [Publish symbols for debugging](https://docs.microsoft.com/azure/devops/pipelines/artifacts/symbols) and [Index Sources & Publish Symbols task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).
+To learn publishing symbols, see [Publish symbols for debugging](/azure/devops/pipelines/artifacts/symbols) and [Index Sources & Publish Symbols task](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).
 
 
 <!-- ====================================================================== -->
