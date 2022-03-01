@@ -32,11 +32,11 @@ See [Using HTTP cookies](https://developer.mozilla.org/docs/Web/HTTP/Cookies).
 
 1. [Open DevTools](/microsoft-edge/devtools-guide-chromium/open).
 
-1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane opens.
+1. Click the **Application** tab to open the **Application** panel.  The **Manifest** pane opens:
 
    :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest-empty.msft.png":::
 
-1. Under **Storage**, expand **Cookies**, then select an origin.
+1. Under **Storage**, expand **Cookies**, then select an origin:
 
    :::image type="content" source="../media/storage-application-storage-cookies-selected.msft.png" alt-text="The Cookies pane." lightbox="../media/storage-application-storage-cookies-selected.msft.png":::
 
@@ -70,16 +70,17 @@ The **Cookies** table contains the following fields:
 <!-- ====================================================================== -->
 ## Filter cookies
 
-Use the **Filter** text box to filter cookies by **Name** or **Value**.  Filtering by other fields isn't supported.
+To filter cookies by **Name** or **Value**, use the **Filter** text box:
 
 :::image type="content" source="../media/storage-application-storage-cookies-filter-id.msft.png" alt-text="Filtering out any cookies that don't contain the text ID." lightbox="../media/storage-application-storage-cookies-filter-id.msft.png":::
+
+Filtering by other fields isn't supported.
 
 
 <!-- ====================================================================== -->
 ## Edit a cookie
 
-The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.
-Double-click a field to edit it.
+The **Name**, **Value**, **Domain**, **Path**, and **Expires / Max-Age** fields are editable.  Double-click a field to edit it:
 
 :::image type="content" source="../media/storage-application-storage-cookies-rename.msft.png" alt-text="Setting the name of a cookie to 'DEVTOOLS!'" lightbox="../media/storage-application-storage-cookies-rename.msft.png":::
 
@@ -87,11 +88,11 @@ Double-click a field to edit it.
 <!-- ====================================================================== -->
 ## Delete cookies
 
-Click a cookie and then click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)) to delete the specific cookie.
+To delete a specific cookie, click a cookie and then click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)):
 
 :::image type="content" source="../media/storage-application-storage-cookies-delete-selected.msft.png" alt-text="Deleting a specific cookie." lightbox="../media/storage-application-storage-cookies-delete-selected.msft.png":::
 
-Click **Clear All** (![Clear All.](../media/clear-icon.msft.png)) to delete all cookies.
+To delete all cookies, click **Clear All** (![Clear All.](../media/clear-icon.msft.png)):
 
 :::image type="content" source="../media/storage-application-storage-cookies-clear-all.msft.png" alt-text="Clearing all cookies." lightbox="../media/storage-application-storage-cookies-clear-all.msft.png":::
 

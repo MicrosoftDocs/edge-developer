@@ -42,7 +42,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Click a row of the table to view the value in the viewer below the table.
 
-:::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="View the value of the x-sid key." lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png" alt-text="View the value of the x-sid key." lightbox="../media/storage-application-storage-session-storage-domain-key-value-selected.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -52,7 +52,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
 
-:::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="The empty part of the table to double-click in order to create a new key-value pair." lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png" alt-text="The empty part of the table to double-click in order to create a new key-value pair." lightbox="../media/storage-application-storage-session-storage-domain-key-value-new.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ To view, edit, and delete [sessionStorage](https://developer.mozilla.org/docs/We
 
 1. Double-click a cell in the **Key** or **Value** column to edit that key or value.
 
-:::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Edit a sessionStorage key." lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
+   :::image type="content" source="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png" alt-text="Edit a sessionStorage key." lightbox="../media/storage-application-storage-session-storage-domain-key-value-edit.msft.png":::
 
 
 <!-- ====================================================================== -->
@@ -94,7 +94,7 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Run your `sessionStorage` expressions in the **Console**, the same as your JavaScript.
 
-:::image type="content" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interact with sessionStorage from the Console." lightbox="../media/storage-console-session-storage-keys.msft.png":::
+   :::image type="content" source="../media/storage-console-session-storage-keys.msft.png" alt-text="Interact with sessionStorage from the Console." lightbox="../media/storage-console-session-storage-keys.msft.png":::
 
 
 <!-- ====================================================================== -->

@@ -58,7 +58,7 @@ Provides information on the browser of the host machine and which version of the
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -81,7 +81,7 @@ Provides the entire protocol API surface serialized as JSON.
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -95,7 +95,7 @@ Provides a candidate list of page targets for debugging.
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -147,7 +147,7 @@ Provides a candidate list of all `msedge.exe` processes (including [PWAs](../pro
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -179,7 +179,7 @@ Provides a candidate list of page targets for the Microsoft Edge instance that m
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -204,7 +204,7 @@ Provides information about the Microsoft Edge instance that matches the provided
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -227,7 +227,7 @@ Provides the entire protocol API surface serialized as JSON for the Microsoft Ed
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
