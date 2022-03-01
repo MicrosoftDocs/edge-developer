@@ -237,4 +237,4 @@ JSON object which represents the available API surface for the version of the pr
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the Chrome DevTools Protocol in WebView2](../webview2/how-to/chromium-devtools-protocol.md)
+* [Use the Chrome DevTools Protocol in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)

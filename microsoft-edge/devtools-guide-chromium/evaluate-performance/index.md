@@ -150,7 +150,7 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
 
 After you measured and verified that the animation isn't performing well, the next step is to answer the question "why?".
 
-1. When no events are chosen, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
+1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
    :::image type="content" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="The Summary panel." lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
 
