@@ -20,7 +20,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New In DevTools (Microsoft Edge 83)
+# What's New in DevTools (Microsoft Edge 83)
 
 Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release. Check out our [blog post](https://blogs.windows.com/msedgedev/2020/03/20) for more info.
 
@@ -233,7 +233,7 @@ Enable the new **Show only the minimum safe area for maskable icons** checkbox i
 :::image type="content" source="../../media/2020/03/maskable-icons.msft.png" alt-text="Show only the minimum safe area for maskable icons checkbox." lightbox="../../media/2020/03/maskable-icons.msft.png":::
 
 > [!NOTE]
-> This feature launched in Microsoft Edge 81. The updates covered here in Microsoft Edge 83 were not covered in [What's New In DevTools (Microsoft Edge 81)](../01/devtools.md).
+> This feature launched in Microsoft Edge 81. The updates covered here in Microsoft Edge 83 were not covered in [What's New in DevTools (Microsoft Edge 81)](../01/devtools.md).
 
 
 <!-- ====================================================================== -->

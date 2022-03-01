@@ -72,7 +72,7 @@ Email the following information to [ietoedge@microsoft.com](mailto:ietoedge@micr
 *   Street address
 *   Website address
 
-The Internet Explorer compatibility list is updated within a week.
+The Internet Explorer compatibility list is usually updated within a week. If you experience wait times greater than one week, we may be working through an outage.
 
 > [!NOTE]
 > The Internet Explorer compatibility list is designed to work with public sites only.

@@ -48,7 +48,7 @@ landingContent:
 # Row 1 with 3 cards
 
 # =============================================================================
-# Card
+# Card r1c1
   - title: Microsoft Edge DevTools
     linkLists:
       - linkListType: overview
@@ -84,7 +84,7 @@ landingContent:
             url: /microsoft-edge/devtools-guide-chromium/shortcuts
 
 # =============================================================================
-# Card
+# Card r1c2
   - title: Microsoft Edge extensions
     linkLists:
       - linkListType: overview
@@ -113,7 +113,7 @@ landingContent:
 
 
 # =============================================================================
-# Card
+# Card r1c3
   - title: Progressive Web Apps
     linkLists:
       - linkListType: overview
@@ -127,8 +127,11 @@ landingContent:
           - text: Debug Progressive Web Apps
             url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
 
+      - linkListType: whats-new
+        links:
           - text: What's New in Progressive Web Apps
             url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
+
       - linkListType: concept
         links:
           - text: Offline scenarios
@@ -144,7 +147,7 @@ landingContent:
 # Row 2 with 3 cards
 
 # =============================================================================
-# Card
+# Card r2c1
   - title: Test and automation
     linkLists:
       - linkListType: how-to-guide
@@ -172,7 +175,7 @@ landingContent:
 
 
 # =============================================================================
-# Card
+# Card r2c2
   - title: Web platform
     linkLists:
       - linkListType: how-to-guide
@@ -190,7 +193,7 @@ landingContent:
             url: /microsoft-edge/web-platform/how-to-detect-win11
 
 # =============================================================================
-# Card - tall card, avoid placing in col 1; fits in col 3 b/c 3rd row only has col 1 & 2 filled
+# Card r2c3 - tall, avoid placing in col 1; fits in col 3 b/c 3rd row only has col 1 & 2 filled
   - title: WebView2
     linkLists:
       - linkListType: overview
@@ -225,7 +228,7 @@ landingContent:
 # Row 3 with 2 cards
 
 # =============================================================================
-# Card
+# Card r3c1
   - title: Microsoft Edge IDE integration
     linkLists:
       - linkListType: overview
@@ -247,7 +250,7 @@ landingContent:
 
 
 # =============================================================================
-# Card
+# Card r3c2
   - title: Accessibility in Microsoft Edge
     linkLists:
       - linkListType: overview

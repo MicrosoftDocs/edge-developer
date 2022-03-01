@@ -23,13 +23,12 @@ ms.date: 02/15/2022
    limitations under the License.  -->
 # CSS Overview tool
 
-
-<!-- the what's new is
+<!-- the what's new entry is:
 https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#view-and-fix-color-contrast-issues-in-the-css-overview-tool
-# What's New In DevTools (Microsoft Edge 87)
+# What's New in DevTools (Microsoft Edge 87)
 ### View and fix color contrast issues in the CSS Overview tool -->
 
-The **CSS Overview** tool displays a list of elements on your page that have color contrast issues.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
+The **CSS Overview** tool displays a summary of CSS-related information about the webpage.  This tool lists the colors, fonts, and media queries the webpage uses.  The tool also lists the elements on your page that have color contrast issues, and the unused CSS declarations.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
 
 To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  
 
