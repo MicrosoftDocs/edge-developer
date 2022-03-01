@@ -42,6 +42,7 @@ The following experimental features are turned on by default. You can use these 
 *  Show issues in Elements.
 *  Enable Composited Layers in 3D View.
 *  DevTools Tooltips.
+*  Detached Elements.
 *  VS Code themes for the DevTools. <!-- preserve literal UI string, including "VS" & "the" -->
 *  Open source files in Visual Studio Code.
 *  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
@@ -55,6 +56,10 @@ The following experimental features are turned on by default. You can use these 
 <!-- *  Detached Elements 
 Is the Detached Elements experiment checkbox intended to be present for external users?
 Is the Detached Elements experiment checkbox intended to be turned on by default, for external users?
+PM answered:
+"The Detached Elements checkbox is visible to all Edge users since Edge 93.
+The experiment was turned on by default in Edge 93 for all internal (so has a microsoft.com account in Edge) DevTools customers.
+Starting with Edge 97, the experiment will be turned on by default for all Edge users"
 -->
 
 
@@ -441,7 +446,7 @@ Enable this experiment to view tooltips for all the different tools and panes in
 
 <!-- ====================================================================== -->
 ## Detached Elements
-<!-- present in 96, 98 -->
+<!-- present in 96, 98.  Selected by default for all users since v97. -->
 
 <!-- maintainers: see notes about this experiment, in the list of experiments which are turned on by default, at top of article -->
 
