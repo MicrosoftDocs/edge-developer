@@ -122,11 +122,11 @@ For a company account, you must provide the contact information of your company 
 
 To display your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
-*  [Publish an extension](./publish-extension.md)
+*  [Publish an extension](publish-extension.md)
 
 *  [Extension concepts and architecture](../getting-started/index.md)
 
-*  [Add users to the Microsoft Edge program](./aad-account.md) - Adding additional users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
+*  [Add users to the Microsoft Edge program](aad-account.md) - Adding additional users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
 
 
 <!-- ====================================================================== -->

@@ -103,7 +103,7 @@ You can search the DOM Tree by string, CSS selector, or XPath selector.
 
 1. Focus your cursor on the **Elements** tool.
 
-1. Press `Control`+`F` (Windows, Linux) or `Command`+`F` (macOS).  The Search bar opens at the bottom of the DOM Tree.
+1. Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS).  The Search bar opens at the bottom of the DOM Tree.
 
 1. Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.
 
@@ -212,7 +212,7 @@ Press `Delete` to delete a node, as follows:
 
 1. Select the `Delete` key.  The node is deleted.
 
-1. Press `Control`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
+1. Press `Ctrl`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
 
 
 <!-- ====================================================================== -->
@@ -264,7 +264,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 1. Right-click `<li>The Brothers Karamazov</li>` in the DOM Tree, and then select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
 
-1. Press `Control`+`V` (Windows, Linux) or `Command`+`V` (macOS) to paste the expression into the Console.
+1. Press `Ctrl`+`V` (Windows, Linux) or `Command`+`V` (macOS) to paste the expression into the Console.
 
 1. Press `Enter` to evaluate the expression.
 
@@ -332,7 +332,7 @@ After you put a subtree modification breakpoint on a node, DevTools pauses the p
 
 That covers most of the DOM-related features in DevTools.  You can discover the rest of the features by right-clicking nodes in the DOM Tree, and experimenting with the other options that were not covered in this tutorial.  See [Elements panel keyboard shortcuts](../shortcuts/index.md#elements-tool-keyboard-shortcuts).
 
-Check out the [Microsoft Edge DevTools homepage](../../devtools-guide-chromium/index.md) to discover everything else you can do with DevTools.
+Check out [Overview of DevTools](../../devtools-guide-chromium/overview.md) to discover everything else you can do with DevTools.
 
 <!--See [Community](../index#community) if you want to contact the DevTools team or get help from the DevTools community.  -->
 

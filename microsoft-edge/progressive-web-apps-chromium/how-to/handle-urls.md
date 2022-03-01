@@ -34,13 +34,13 @@ URL handling is an experimental feature. To enable the URL handling experiment:
    > [!div class="mx-imgBorder"]
    > ![Enabling the 'Desktop PWA URL handling' experiment..](../media/enable-url-handling-experiment.png)
 
-URL handling is an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](./origin-trials.md#enroll-your-site-in-an-origin-trial).
+URL handling is an origin trial in Microsoft Edge. Learn [how to enroll your site in an origin trial](origin-trials.md#enroll-your-site-in-an-origin-trial).
 
 
 <!-- ====================================================================== -->
 ## Define which URLs your app handles
 
-The first thing to do is declare which URLs your app handles. This is done in your app [manifest file](./web-app-manifests.md), using the `url_handlers` array member.
+The first thing to do is declare which URLs your app handles. This is done in your app [manifest file](web-app-manifests.md), using the `url_handlers` array member.
 
 Each entry in the `url_handlers` array contains a `origin` string, which is a pattern for matching origins.
 

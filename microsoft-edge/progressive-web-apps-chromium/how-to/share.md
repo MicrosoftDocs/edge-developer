@@ -239,7 +239,7 @@ In the above code:
 
 1. Uses the data in some way (such as to store the content locally).
 
-1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](./background-syncs.md)).
+1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](background-syncs.md)).
 
 ### Handle shared files
 

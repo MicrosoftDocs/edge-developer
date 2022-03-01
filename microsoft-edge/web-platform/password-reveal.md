@@ -9,13 +9,11 @@ ms.date: 02/23/2022
 ---
 # Customize the password reveal button
 
-The `password` input type in Microsoft Edge includes a **password reveal** control.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.
+The `password` input type in Microsoft Edge includes a **password reveal** button.  To make sure that the password is entered correctly, a user can click the **password reveal** button or press `Alt`+`F8`, to show the characters in the password field.  You can remove the password reveal control, or customize the control styling.
 
 By default, the **password reveal** button is turned off, so that in the **password** field, dots replace the characters entered by the user.  The **password reveal** button appears to the right of the **password** field, as an eye-shaped icon:
 
 ![The eye-shaped icon appears next to the dots that hide the password text.](media/mdn-demo-password-reveal-off.msft.png)
-
-<!-- _To zoom: right-click > Open image in new tab._ -->
 
 When the user clicks the **password reveal** button to turn it on, the password text is revealed, and the eye icon changes to have a slash over it:
 

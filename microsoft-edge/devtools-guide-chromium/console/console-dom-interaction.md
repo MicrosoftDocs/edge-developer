@@ -17,7 +17,7 @@ The **Console** tool is a great way to interact with the webpage in the browser.
 
 To reference the header of the webpage:
 
-1. Open the DevTools **Console**.  To do this from a webpage, you can press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. Open the DevTools **Console**.  To do this from a webpage, you can press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 1. Type or paste the following code into the **Console**, and then press `Enter`:
 
@@ -37,7 +37,7 @@ To reference the header of the webpage:
 
 You can manipulate the webpage from the **Console**, as follows.  In this example, you set a value in the DOM by using the Console, to affect the webpage styling: you add a green border around the header.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the present webpage.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  The Console opens in DevTools, next to the present webpage.
 
 1. Paste the following code into the **Console**:
 
@@ -105,7 +105,7 @@ Many convenience methods and shortcuts are available to you as [Console Utilitie
 
 The `$` has special powers in **Console**, and you may remember that from jQuery.
 
-*  `$_` stores the result of the last command.  So, if you type `2 + 2` and press `Enter`, and then type `$_`, the **Console** displays `4`.
+*  `$_` stores the result of the last command.  So, if you type `2+2` and press `Enter`, and then type `$_`, the **Console** displays `4`.
 
 *  `$0` to `$4` is a stack of the last inspected elements.  `$0` is always the newest one.  So in the earlier example, you just select the element in the **Inspect** tool and type `$0.textContent = "My Playground"` to get the same effect.
 

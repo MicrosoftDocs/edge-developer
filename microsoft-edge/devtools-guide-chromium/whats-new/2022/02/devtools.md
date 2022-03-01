@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 98)
-description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event Log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search textbox can now be resized.  And more.
+description: 2021 year-in-review blog post.  Automate IE mode with Internet Explorer Driver.  Emulate forced-colors mode.  Tooltips for Activity icons in the Performance tool Event Log.  Shallow sizes in the Memory tool now shown as decimal values.  Network tool's Search text box can now be resized.  And more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -92,12 +92,12 @@ To learn more about heap snapshots in the Memory tool, see [Record heap snapshot
 
 
 <!-- ====================================================================== -->
-## Fix: The Search textbox in the Network tool can now be resized
+## Fix: The Search text box in the Network tool can now be resized
 
 <!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
-<!-- Title: Fix: Resize the Search textbox in the Network tool -->
-<!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search textbox, so that the Refresh and Clear buttons remain visible. -->
+<!-- Title: Fix: Resize the Search text box in the Network tool -->
+<!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search text box, so that the Refresh and Clear buttons remain visible. -->
 
 In previous versions of Microsoft Edge, in the **Network** tool, the **Search** text box doesn't resize when you change the width of the pane.  When the pane is narrow, the **Refresh** and **Clear** buttons aren't displayed.  In Microsoft Edge 98, this issue has been fixed.
 
@@ -154,7 +154,7 @@ Microsoft Edge version 98 also includes the following updates from the Chromium 
 <!--
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New In DevTools (Chrome 98)](https://developer.chrome.com/blog/new-in-devtools-98) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 98)](https://developer.chrome.com/blog/new-in-devtools-98) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 -->
 
 

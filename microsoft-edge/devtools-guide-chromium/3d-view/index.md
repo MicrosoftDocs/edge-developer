@@ -31,13 +31,15 @@ To open the **3D View** panel, in DevTools, do either of the following:
 
 * Click **More Tools** (+) on the main toolbar and then select **3D View**.
 
-* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type "3d", and then select **3D View [Drawer]**.
+* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type **3d**, and then select **3D View [Drawer]**.
 
 
 <!-- ====================================================================== -->
 ## Navigating the canvas
 
-:::image type="content" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View." lightbox="../media/3d-view-canvas.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![Canvas of 3D View.](../media/3d-view-canvas.msft.png)
+
 
 ### Keyboard shortcuts
 
@@ -55,17 +57,21 @@ To zoom, drag two fingers across the touchpad or use the scroll wheel on your mo
 
 ### On-screen controls
 
-:::image type="content" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls." lightbox="../media/3d-view-controls-small.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![On-screen controls.](../media/3d-view-controls-small.msft.png)
 
 To reset the canvas view to the original view, select the **Reset camera** button, or select the **Reset elements in view and re-center camera** (sideways refresh icon) button.
 
-To refresh the canvas, such as when the browser changed or you switched to a device emulator view, select the **Retake snapshot** button or the **Take new snapshot** button (the refresh icon).
+To refresh the canvas, such as when the browser changed or you switched to a [Device Emulation](../device-mode/index.md) view:
+
+*  Click the **Retake snapshot** button, or the **Take new snapshot** button (the Refresh icon).
 
 
 <!-- ====================================================================== -->
 ## Z-index
 
-:::image type="content" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view." lightbox="../media/3d-view-z-index-view-box.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![Z-index view.](../media/3d-view-z-index-view-box.msft.png)
 
 While the **Z-index** pane has shared features with the **3D DOM** pane, the panes still have elements that are unique to the pane.
 
@@ -93,7 +99,7 @@ The options reduce the clutter that complex web pages create in your canvas.
 
 ### Z-index color type
 
-The are the different visualizations you can use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, the DevTools have different colorways and a **Use background color** option.  The **Z-index** pane shares the **Purple to White** and **Background Color** with the **3D DOM** pane.  Given the added visual element of the z-index labels, your feedback that led to a reduction in the number of color options.
+The are the different visualizations you can use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, DevTools provides different colorways and a **Use background color** option.  The **Z-index** pane shares the **Purple to White** and **Background Color** with the **3D DOM** pane.  Given the added visual element of the z-index labels, your feedback that led to a reduction in the number of color options.
 
 This approach improves the z-index debugging experience.  The radio buttons allow you to toggle through the options and pick the color type.  The color type is either most appropriate for your project or one that you like the most.
 
@@ -101,7 +107,8 @@ This approach improves the z-index debugging experience.  The radio buttons allo
 <!-- ====================================================================== -->
 ## 3D DOM
 
-:::image type="content" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view." lightbox="../media/3d-view-dom-purple-box.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![DOM view.](../media/3d-view-dom-purple-box.msft.png)
 
 If you want to take more of a general debugging view, rather than the z-index experience, the **3D DOM** gives an overall look of the DOM.  Since the z-index context is removed, the DOM is stacked more closely and cleanly.  The **3D DOM** pane has similar functionality, but there are a few nuances.
 
@@ -131,6 +138,7 @@ The **Use screen texture** option adds context to your debugging experience.  It
 <!-- ====================================================================== -->
 ## Composited layers
 
-:::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane." lightbox="../media/experiments-layers.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![Composited layers pane.](../media/experiments-layers.msft.png)
 
 The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  You can still access the details of each of the layers and have the **Slow scroll rects** and **Paint**.
