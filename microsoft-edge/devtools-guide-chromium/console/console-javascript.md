@@ -18,9 +18,9 @@ The **Console**:
 1. Loops back to the first step.
 
 
-To enter JavaScript statements and expressions interactively in the Console:
+To enter JavaScript statements and expressions interactively in the **Console**:
 
-1. Right-click in a webpage and then select **Inspect**.  DevTools opens.  Or, press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\), to directly open the DevTools console.
+1. Right-click in a webpage and then select **Inspect**.  DevTools opens.  Or, press `Ctrl`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\), to directly open the DevTools console.
 
 1. If necessary, click in DevTools to give it focus, and then press `Esc` to open the **Console**.
 
@@ -28,7 +28,7 @@ To enter JavaScript statements and expressions interactively in the Console:
 
    The **Console** immediately displays the result `4` on the next line while you type.  The `Eager evaluation` feature helps you write valid JavaScript.  The **Console** displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
-   :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of the expression '2 + 2', interactively as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of the expression '2+2', interactively as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
 1. When you press `Enter`, the **Console** runs the JavaScript command (expression or statement), displays the result, and then moves the cursor down to allow you to enter the next JavaScript command.
 
@@ -62,7 +62,7 @@ To try autocompletion while writing multi-part expressions:
 
 As with many other command-line environments, a history of the commands that you entered is available for reuse.  Press `Up Arrow` to display the commands that you entered previously.  
 
-Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a textbox.
+Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a text box.
 
 Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 

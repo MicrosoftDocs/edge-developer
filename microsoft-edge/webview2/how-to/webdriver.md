@@ -108,7 +108,7 @@ Microsoft Edge Driver launches your WebView2 app and automatically attaches to t
 
 If you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch, then you can use the "launch" approach; use [Step 4a: Letting Microsoft Edge Driver launch your WebView2 app](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app).
 
-In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.
+In this scenario, there's one WebView2 instance, and it's available upon launch, without needing to navigate through any native UI.
 
 ### Approach 2: Attaching Microsoft Edge Driver to a running WebView2 app
 <!-- preferred phrase -->
@@ -130,7 +130,7 @@ Once you've completed these initial steps to either launch an app or attach to a
 ## Step 4a: Letting Microsoft Edge Driver launch your WebView2 app
 <!-- old title: Drive WebView2 with Selenium and Microsoft Edge Driver -->
 
-Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.
+Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it's available upon launch, without needing to navigate through any native UI.
 
 To drive WebView2 with Selenium and Microsoft Edge Driver:
 

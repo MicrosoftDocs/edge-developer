@@ -40,7 +40,7 @@ There are many ways to select an element:
 
 *  In a rendered webpage, right-click a page element, and then click **Inspect**.
 
-*  In DevTools, click **Select an element** (![Select an element.](../media/select-an-element-icon.msft.png)) or press `Control`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), and then click the element in the viewport.
+*  In DevTools, click **Select an element** (![Select an element.](../media/select-an-element-icon.msft.png)) or press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), and then click the element in the viewport.
 
 *  In DevTools, click the element in the **DOM Tree**.
 
@@ -156,7 +156,7 @@ To view a page in print mode:
 
 The **Coverage** tool shows you what CSS a page actually uses.
 
-1. Open the [Command Menu](../command-menu/index.md) by pressing `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), while DevTools has focus.
+1. Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS), while DevTools has focus.
 
 1. Start typing `coverage`, and then select **Show Coverage**.  The **Coverage** tool appears.
 

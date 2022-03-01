@@ -127,7 +127,7 @@ The Evergreen distribution mode ensures that your WebView2 app is taking advanta
 
 When you use the Evergreen distribution mode of the WebView2 Runtime, your WebView2 app assumes that clients have the latest Runtime.  Your app cannot require a particular version of the WebView2 Runtime for all apps on the client.  By the time a new WebView2 SDK package is released, a compatible version of the WebView2 Runtime has already been distributed to clients.  Therefore it's OK for your WebView2 app to use the APIs that are in the latest version of the WebView2 SDK.
 
-See [Understanding browser versions and WebView2](./versioning.md).
+See [Understanding browser versions and WebView2](versioning.md).
 
 
 ### Deploying the Evergreen WebView2 Runtime

@@ -11,7 +11,7 @@ ms.date: 05/04/2021
 
 <!--todo: remove notice at bottom, or add notice here?-->
 
-Instead of debugging Web Authentication in your website or app with physical authenticators, use the **WebAuthn** tool in Microsoft Edge DevTools to create and interact with software-based virtual authenticators.
+Instead of debugging Web Authentication in your website or app with physical authenticators, use the **WebAuthn** tool to create and interact with software-based virtual authenticators.
 
 
 <!-- ====================================================================== -->
@@ -27,9 +27,11 @@ A great place to get started with Web Authentication is the [Web Authentication 
 
 1. Sign into the website.
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. To open the **WebAuthn** tool, select the **Customize and control DevTools** (`...`) icon > **More tools** > **WebAuthn**.
+1. In DevTools, on the main toolbar, select the **WebAuthn** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+   The **WebAuthn** tool opens:
 
    :::image type="content" source="../media/webauthn-webauthn-tab.msft.png" alt-text="WebAuthn tool." lightbox="../media/webauthn-webauthn-tab.msft.png":::
 

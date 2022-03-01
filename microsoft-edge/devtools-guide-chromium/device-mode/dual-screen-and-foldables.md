@@ -31,7 +31,7 @@ To use the [CSS media screen-spanning feature](/dual-screen/web/css-media-spanni
 
 1. Go to `edge://flags`.
 
-1. In the **Search flags** textbox, enter `Experimental Web Platform features`, select the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.
+1. In the **Search flags** text box, enter `Experimental Web Platform features`, select the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.
 
 1. Restart Microsoft Edge.
 

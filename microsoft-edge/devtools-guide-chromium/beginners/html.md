@@ -184,7 +184,7 @@ To quickly experiment with content changes without leaving the live tab:
 
    :::image type="content" source="media/beginners-html-edit2.msft.png" alt-text="Updating the node as HTML." lightbox="media/beginners-html-edit2.msft.png":::
 
-1. Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
+1. Press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to save your changes, or select outside the box. Your changes automatically show up in the live view of your page. The text `Your site!` has been replaced with the new content.
 
    :::image type="content" source="media/beginners-html-edit3.msft.png" alt-text="The new content shows up immediately on the page." lightbox="media/beginners-html-edit3.msft.png":::
 

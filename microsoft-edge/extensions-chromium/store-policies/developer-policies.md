@@ -82,7 +82,7 @@ Your extension must not jeopardize or compromise user security, or the security 
 #### 1.2.1 Content Security Policies
 
 > [!NOTE]
-> If you make any changes to your extension beyond the described functionality, any changes to code must be compliant with the [Microsoft Edge content security policy](./csp.md#relaxing-the-default-policy).  For example, your extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.
+> If you make any changes to your extension beyond the described functionality, any changes to code must be compliant with the [Microsoft Edge content security policy](csp.md#relaxing-the-default-policy).  For example, your extension should not download a remote script and subsequently run that script in a manner that is not consistent with the described functionality.
 
 #### 1.2.2 Unwanted and Malicious Software
 

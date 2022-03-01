@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and debug media players information
 
-Use the **Media** tool in Microsoft Edge DevTools to view information and debug the media players per browser tab.
+Use the **Media** tool to view information and debug the media players per browser tab.
 
 
 <!-- ====================================================================== -->
@@ -30,9 +30,9 @@ Use the **Media** tool in Microsoft Edge DevTools to view information and debug 
 
 The **Media** tool is the main place in DevTools for inspecting the media player of a webpage.
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. To open the **Media** panel, select **Customize and control DevTools** `...` > **More tools** > **Media**.
+1. In DevTools, on the main toolbar, select the **Media** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
    :::image type="content" source="../media/media-panel-empty.msft.png" alt-text="Media panel." lightbox="../media/media-panel-empty.msft.png":::
 

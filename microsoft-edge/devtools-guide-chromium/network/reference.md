@@ -40,7 +40,7 @@ To stop recording requests:
 
 1. On the **Network** tool, click **Stop recording network log** (![Stop recording network log.](../media/record-on-icon.msft.png)).  It turns grey to indicate that DevTools is no longer recording requests.
 
-1. Press `Control`+`E` (Windows, Linux) or `Command`+`E` (macOS) while the **Network** tool is in focus.
+1. Press `Ctrl`+`E` (Windows, Linux) or `Command`+`E` (macOS) while the **Network** tool is in focus.
 
 ### Clear requests
 
