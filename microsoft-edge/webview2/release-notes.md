@@ -24,7 +24,7 @@ Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet 
 
 *  Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
-For more information, see [Matching the Runtime version with the SDK version](./concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
+For more information, see [Matching the Runtime version with the SDK version](concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
 
 
 <!-- ====================================================================== -->
@@ -773,7 +773,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 
 #### Features
 
-*  Added [WebView2 Group Policies](/deployedge/microsoft-edge-webview-policies).  For best practices, see [group policies for WebView2](./concepts/enterprise.md#group-policies-for-webview2).
+*  Added [WebView2 Group Policies](/deployedge/microsoft-edge-webview-policies).  For best practices, see [group policies for WebView2](concepts/enterprise.md#group-policies-for-webview2).
 *  > [!IMPORTANT]
    > **Breaking Change**:  Deprecated the old registry location.
    >
@@ -885,7 +885,7 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 
 *  The Evergreen WebView2 Runtime and installer are GA.  The bootstrapper, the downlink link for the Bootstrapper, and the Standalone Installer for the Evergreen WebView2 Runtime are available on [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).  Sample code for the installation workflow is also available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
-For more information about the Runtime, Evergreen distribution, and Fixed Version distribution, see [Distribute a WebView2 app and the WebView2 Runtime](./concepts/distribution.md).
+For more information about the Runtime, Evergreen distribution, and Fixed Version distribution, see [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
 
 
 <!-- ====================================================================== -->
@@ -922,7 +922,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or h
 ### General
 
 *  > [!IMPORTANT]
-   > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  See [Distribute a WebView2 app and the WebView2 Runtime](./concepts/distribution.md).
+   > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  See [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
 
 *  > [!IMPORTANT]
    > **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release:
@@ -976,7 +976,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 85.0.538.0 or h
 ### .NET (0.9.538 prerelease)
 
 *  Released WinForms and WPF WebView2API Samples, which are comprehensive guides of the WebView2 SDK.  See [Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
-*  Added support for visual hosting and window features [experimental APIs](./concepts/versioning.md#experimental-apis).
+*  Added support for visual hosting and window features [experimental APIs](concepts/versioning.md#experimental-apis).
 *  > [!IMPORTANT]
    > **Breaking Change**:  The following deferrals now implement IDisposable:  [ScriptDialogOpening](/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening), [NewWindowRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested), [WebResourceRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested), and [PermissionRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested).
 
@@ -993,8 +993,8 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 *  > [!IMPORTANT]
    > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **prerelease package**.
 
-*  For more information about building WPF apps, see [Get started with WebView2 in WPF apps](./get-started/wpf.md) and the WebView2 [WPF Reference](/dotnet/api/microsoft.web.webview2.wpf) for WPF-specific APIs.
-*  For more information about building Windows Forms apps, see [Get started with WebView2 in WinForms apps](./get-started/winforms.md) and the WebView2 [Windows Forms Reference](/dotnet/api/microsoft.web.webview2.winforms) for Windows Forms specific APIs.
+*  For more information about building WPF apps, see [Get started with WebView2 in WPF apps](get-started/wpf.md) and the WebView2 [WPF Reference](/dotnet/api/microsoft.web.webview2.wpf) for WPF-specific APIs.
+*  For more information about building Windows Forms apps, see [Get started with WebView2 in WinForms apps](get-started/winforms.md) and the WebView2 [Windows Forms Reference](/dotnet/api/microsoft.web.webview2.winforms) for Windows Forms specific APIs.
 *  For more information about the CoreWebView2 APIs, see [.NET Reference](/dotnet/api/microsoft.web.webview2.core).
 *  > [!CAUTION]
    > **Known Issues**:  The WebView2 team is aware of some issues in the prerelease that are being resolved in future releases.
@@ -1011,10 +1011,10 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or higher.
 
 *  > [!IMPORTANT]
-   > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView2 team is currently developing.  See [Distribute a WebView2 app and the WebView2 Runtime](./concepts/distribution.md).
+   > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView2 team is currently developing.  See [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
 
 *  > [!IMPORTANT]
-   > **Announcement**:  Moving forward, the WebView2 team releases two packages:  a prerelease package with experimental APIs (for you to try out) and a stable release package with stable APIs (for your confidence).  To learn about the differences, see [Understanding browser versions and WebView2](./concepts/versioning.md).
+   > **Announcement**:  Moving forward, the WebView2 team releases two packages:  a prerelease package with experimental APIs (for you to try out) and a stable release package with stable APIs (for your confidence).  To learn about the differences, see [Understanding browser versions and WebView2](concepts/versioning.md).
 
 *  > [!IMPORTANT]
    > **Breaking Change**:  In order to ensure the WebView2 API aligns with the Windows API naming conventions, the WebView2 team updated the names of the following interfaces.
@@ -1110,7 +1110,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 80.0.314.0 or h
 ### Changes
 
 *  Added support for Windows 7, Windows 8, and Windows 8.1.
-*  Added Visual Studio and Visual Studio Code debug support for WebView2.  Now, debug your script in the WebView2 right from your IDE.  See [How to debug when developing with WebView2 controls](./how-to/debug.md).
+*  Added Visual Studio and Visual Studio Code debug support for WebView2.  Now, debug your script in the WebView2 right from your IDE.  See [How to debug when developing with WebView2 controls](how-to/debug.md).
 *  Added `Native Object Injection` for the running script in WebView2 to access an IDispatch object from the Win32 component of the app and access the properties of the IDispatch object.  See [AddRemoteObject](/microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#addremoteobject) ([#17](https://github.com/MicrosoftEdge/WebViewFeedback/issues/17)).
 *  Added `AcceleratorKeyPressed` event.  See [add_AcceleratorKeyPressed](/microsoft-edge/webview2/reference/win32/iwebview2webview4?view=webview2-0.8.355&preserve-view=true#add_acceleratorkeypressed) ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).
 *  Turned off the `Context Menus`.  See [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/iwebview2settings2?view=webview2-0.8.355&preserve-view=true#put_aredefaultcontextmenusenabled) ([#57](https://github.com/MicrosoftEdge/WebViewFeedback/issues/57)).

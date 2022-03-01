@@ -58,7 +58,7 @@ Provides information on the browser of the host machine and which version of the
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -81,7 +81,7 @@ Provides the entire protocol API surface serialized as JSON.
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -95,7 +95,7 @@ Provides a candidate list of page targets for debugging.
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -135,7 +135,7 @@ You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https:/
 
 To learn how to set up your Windows device and connect to it from your development machine, see [Get started with remote debugging Windows devices](../devtools-guide-chromium/remote-debugging/windows.md).
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as the [DevTools](../devtools-guide-chromium/index.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
+The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
 
 The following Reference sections are for Remote Tools for Microsoft Edge.
 
@@ -147,7 +147,7 @@ Provides a candidate list of all `msedge.exe` processes (including [PWAs](../pro
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -179,7 +179,7 @@ Provides a candidate list of page targets for the Microsoft Edge instance that m
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -204,7 +204,7 @@ Provides information about the Microsoft Edge instance that matches the provided
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -227,7 +227,7 @@ Provides the entire protocol API surface serialized as JSON for the Microsoft Ed
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 

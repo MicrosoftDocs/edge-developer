@@ -24,12 +24,12 @@ ms.date: 05/04/2021
 
 Learn how to use Microsoft Edge and DevTools to find memory issues that affect page performance, including memory leaks, memory bloat, and frequent garbage collections.
 
-### Summary
-
 *  Find out how much memory your page is currently using with the Microsoft Edge Browser Task Manager.
 *  Visualize memory usage over time with the **Memory** panel.
 *  Identify detached DOM trees (a common cause of memory leaks) with **Heap snapshot**.
 *  Find out when new memory is being allocated in your JavaScript heap (JS heap) with **Allocation instrumentation on timeline**.
+
+See also [Debug DOM memory leaks with the Detached Elements tool](dom-leaks.md).
 
 
 <!-- ====================================================================== -->
@@ -162,7 +162,7 @@ To create a snapshot:
 
 1. After the snapshot is finished, select it from the left-hand panel (it's named **HEAP SNAPSHOTS**).
 
-1. In the **Class filter** textbox, type `Detached`, to search for detached DOM trees:
+1. In the **Class filter** text box, type `Detached`, to search for detached DOM trees:
 
    :::image type="content" source="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png" alt-text="Filtering for detached nodes." lightbox="../media/memory-problems-glitch-example-12-memory-heap-snapshot-filter-detached.msft.png":::
 

@@ -9,7 +9,7 @@ ms.date: 10/28/2021
 ---
 # Find source files for a page using the Search tool
 
-Use the **Search** tool to find specific source files for a webpage.
+Use the **Search** tool to find specific source files for a webpage, including HTML, CSS, JavaScript, and image files.
 
 A webpage is mainly an HTML file that's used by the browser to display content.  But webpages commonly require other resources in addition to the HTML file, such as CSS, JavaScript, or image files, to provide richer content.
 
@@ -21,11 +21,13 @@ In the **Sources** tool, the **Page** tab of the [Navigator pane](../sources/ind
 
 To quickly open the **Search** tool:
 
-1. [Open DevTools](../open/index.md) (`F12`).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Press `Control`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
+1. In DevTools, press `Esc` to open the Drawer, and then on the Drawer toolbar, select the **Search** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-The **Search** tool appears in the **Drawer**, and shows the search toolbar:
+   Or, press `Ctrl`+`Shift`+`F` (Windows/Linux) or `Command`+`Option`+`F` (macOS).
+
+The **Search** tool appears in the **Drawer**, with a search toolbar:
 
 :::image type="content" source="../media/search-tool/search-tool-first-open-reduced.png" alt-text="The Search tool, with the search toolbar." lightbox="../media/search-tool/search-tool-first-open.png":::
 
@@ -37,9 +39,9 @@ See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-short
 
 To open the **Search** tool from the **Command Menu**:
 
-1. [Open DevTools](../open/index.md) (`F12`).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the [Command Menu](../command-menu/index.md), by pressing `Control`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
+1. Open the [Command Menu](../command-menu/index.md), by pressing `Ctrl`+`Shift`+`P` (Windows/Linux) or `Command`+`Shift`+`P` (macOS).
 
 1. Type `search`, and then press `Enter`.
 

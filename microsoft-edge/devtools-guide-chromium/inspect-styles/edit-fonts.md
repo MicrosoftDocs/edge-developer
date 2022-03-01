@@ -17,11 +17,13 @@ To make it easier when working with typography, a visual **Font Editor** is now 
 *  The **Font Family** selector.
 *  The **CSS Properties** editor.
 
-Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.  For situations when specific fonts aren't available on a user device, you should provide fallback font options.
+Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.
+
+For situations when specific fonts aren't available on a user device, you should provide fallback font options.
 
 CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  Several CSS properties are available to control the font size, spacing, line height, and other typographical features.
 
-Currently the [Enable new Font Editor tool within the Styles pane](../experimental-features/index.md#enable-new-font-editor-tool-within-the-styles-pane) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
+Currently the [Enable new Font Editor tool within the Styles pane](../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
 
 Any CSS in the **Styles** pane, either font definitions or inline styles, has a **Font Editor** icon.  To open the visual **Font Editor**, click the **Font Editor** icon.
 

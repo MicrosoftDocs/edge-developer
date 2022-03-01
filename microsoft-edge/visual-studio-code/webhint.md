@@ -9,19 +9,37 @@ ms.date: 08/24/2021
 ---
 # The webhint extension for Visual Studio Code
 
-Use [webhint](https://webhint.io), a customizable linting tool, to improve the accessibility, performance, cross-browser compatibility, PWA compatibility, and security of your site.  It checks your code for best practices and common errors. This open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation](https://openjsf.org).  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.
+Use webhint, a customizable linting tool, to improve the functionality of your site, including:
 
-Identify and fix problems in your HTML, CSS, JavaScript, TypeScript, and more by adding the webhint extension for Visual Studio Code.  Hints appear as inline underlines and are summarized in the **Problems** pane.
+*   Accessibility.
+*   Performance.
+*   Cross-browser compatibility.
+*   PWA compatibility.
+*   Security.
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code.":::
-   The webhint extension for Visual Studio Code
-:::image-end:::
+webhint checks your code for best practices and common errors.  Identify and fix problems in your files, including HTML, CSS, JavaScript, and TypeScript.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane:
+
+![The webhint extension for Visual Studio Code.](media/webhint-extension.png)
+
+webhint is an open-source project.  It was initially developed by the Microsoft Edge team, and is now part of the [OpenJS Foundation](https://openjsf.org).  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.
+
+For more information, see the [webhint](https://webhint.io) site.
 
 
 <!-- ====================================================================== -->
 ## Installing webhint
 
-To install the webhint extension from within Visual Studio Code, see [The webhint extension for Visual Studio Code](index.md#the-webhint-extension-for-visual-studio-code). <!-- in the article _Visual Studio Code overview_. -->  Or, you can install the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) from the Visual Studio Marketplace.
+Inspect and fix problems in your website by adding the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint).
+
+To install the webhint extension from within Visual Studio Code:
+
+1. In Visual Studio Code, navigate to **Extensions**.  To do this, you can press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.
+
+1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
+
+   ![The webhint Visual Studio Code extension.](media/visual-studio-code-extension-webhint.msft.png)
+
+Or, you can install the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) from the Visual Studio Marketplace.
 
 
 <!-- ====================================================================== -->
@@ -93,5 +111,5 @@ To contribute to the extension, see [Contributing](https://github.com/webhintio/
 <!-- ====================================================================== -->
 ## See also
 
-*  [Accessibility](/microsoft-edge/accessibility)
 *  [Visual Studio Code](/microsoft-edge/visual-studio-code/index)
+*  [Accessibility](/microsoft-edge/accessibility)

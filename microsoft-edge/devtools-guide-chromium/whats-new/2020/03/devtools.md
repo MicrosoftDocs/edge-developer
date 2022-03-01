@@ -185,7 +185,7 @@ Open the [Command Menu](../../../command-menu/index.md) and run the `Dock to lef
 :::image type="content" source="../../media/2020/03/dock-to-left.msft.png" alt-text="DevTools docked to the left of the viewport." lightbox="../../media/2020/03/dock-to-left.msft.png":::
 
 > [!NOTE]
-> The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu](../../../customize/placement.md#change-placement-from-the-main-menu).  The new feature in Microsoft Edge 83 is that you can now access this feature from the Command Menu.
+> The **Dock to left** feature has been available since Microsoft Edge 75, but it was previously only accessible from the [Main Menu](../../../customize/placement.md).  The new feature in Microsoft Edge 83 is that you can now access this feature from the Command Menu.
 
 Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or choosing the [Send Feedback](../../../contact.md) icon!
 

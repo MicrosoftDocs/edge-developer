@@ -19,11 +19,11 @@ For the default keyboard shortcuts, see [Keyboard shortcuts](../shortcuts/index.
 
 To match the keyboard shortcut in the Microsoft Edge DevTools for an equivalent action in Visual Studio Code:
 
-1. [Open DevTools](../open/index.md), such as by pressing `F12`.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open [Settings](./index.md#settings), such as by selecting the gear icon in the main toolbar, or by pressing `Shift`+`?`.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.
 
-1. Select the **Shortcuts** settings page.
+1. In the **Settings** panel, select the **Shortcuts** page.
 
 1. In the upper right, in the **Match shortcuts from preset** dropdown list, select **Visual Studio Code** instead of **DevTools (Default)**.
 
@@ -40,11 +40,11 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 <!-- ====================================================================== -->
 ## Edit the keyboard shortcut for a DevTools action
 
-1. [Open DevTools](../open/index.md), such as by pressing `F12`.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open [Settings](./index.md#settings), such as by clicking the gear icon in the main toolbar, or by pressing `Shift`+`?`.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.
 
-1. Select the **Shortcuts** settings page.
+1. In the **Settings** panel, select the **Shortcuts** page.
 
 1. Select the action you want to customize.  For example, in the **Debugger** section, select the **Pause script execution** action.
 
@@ -52,9 +52,9 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
    :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png" alt-text="Select the action to customize from the Shortcuts page in Settings." lightbox="../media/experiments-custom-keyboard-shortcuts-select-action.msft.png":::
 
-1. To bind the shortcut keys to the action, ensure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind the shortcut keys to the action, ensure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
 
-1. To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the textbox next to the action has focus, and then use the keyboard to select the shortcut keys.
+1. To bind more than one shortcut combination to an action, select **Add a shortcut**, make sure the text box next to the action has focus, and then use the keyboard to select the shortcut keys.
 
    :::image type="content" source="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png" alt-text="Select the keys you want to assign to the action." lightbox="../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png":::
 

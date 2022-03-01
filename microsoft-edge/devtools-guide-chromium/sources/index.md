@@ -231,7 +231,7 @@ To find text in the current file, select the **Editor** pane to give it focus, a
 
 :::image type="content" source="../media/find-replace.msft.png" alt-text="Find and Replace, in the Editor pane of the Sources tool" lightbox="../media/find-replace.msft.png":::
 
-To find and replace text, select the **Replace** (**A-\>B**) button to the left of the **Find** textbox. The **Replace** (**A-\>B**) button appears when viewing an editable file.
+To find and replace text, select the **Replace** (**A-\>B**) button to the left of the **Find** text box. The **Replace** (**A-\>B**) button appears when viewing an editable file.
 
 #### Showing the changes you made
 
@@ -274,7 +274,7 @@ For more information, see [Reformat a minified JavaScript file with pretty-print
 
 Source maps from preprocessors cause DevTools to load your original JavaScript source files in addition to your minified, transformed JavaScript files that are returned by the server.  You then view your original source files while you set breakpoints and step through code.  Meanwhile, Microsoft Edge is actually running your minified code.
 
-In the **Editor** pane, if you right-click a JavaScript file and then select **Add source map**, a popup box appears, with a **Source map URL** textbox and an **Add** button.
+In the **Editor** pane, if you right-click a JavaScript file and then select **Add source map**, a popup box appears, with a **Source map URL** text box and an **Add** button.
 
 The source-mapping approach keeps your front-end code human-readable and debuggable even after you combine, minify, or compile it.
 For more information, see [Map preprocessed code to source code](../javascript/source-maps.md).
@@ -471,7 +471,7 @@ To use the more full-featured debugger of Visual Studio Code instead of the DevT
 
 This extension provides access to the **Elements** and **Network** tools of Microsoft Edge DevTools, from within Microsoft Visual Studio Code.
 
-For more information, see [Visual Studio Code overview](../../visual-studio-code/index.md) and the GitHub Readme page, [Microsoft Edge Developer Tools for Visual Studio Code](https://github.com/microsoft/vscode-edge-devtools).
+For more information, see [Visual Studio Code for web development](../../visual-studio-code/index.md) and the GitHub Readme page, [Microsoft Edge Developer Tools for Visual Studio Code](https://github.com/microsoft/vscode-edge-devtools).
 
 
 ### Articles about debugging
