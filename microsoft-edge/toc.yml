@@ -429,12 +429,11 @@
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                   displayName: Network Conditions tool, Device Emulation, Device Emulator
 # Network Console tool -----------------------------------------------
-# todo: uncomment when Network Console tool is in Edge Stable
-            # - name: Compose and send web API requests using the Network Console tool
-            #   items:
-            #     - name: Network Console tool
-            #       href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
-            #       displayName: Network request blocking tool
+            - name: Compose and send web API requests using the Network Console tool
+              items:
+                - name: Network Console tool
+                  href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
+                  displayName: Network request blocking tool
 # Network request blocking tool -----------------------------------------------
             - name: Network request blocking tool
               items:
