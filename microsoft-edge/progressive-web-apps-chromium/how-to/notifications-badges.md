@@ -205,8 +205,6 @@ To create a PWA that supports push notifications:
 
 Like Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, see [Web-Push](https://www.npmjs.com/package/web-push).
 
-The following steps have been adapted from the Push Rich Demo in the [Service Worker Cookbook](https://serviceworke.rs/push-rich_demo.html) provided by Mozilla.  This Cookbook has many useful Web Push and Service Worker recipes.
-
 
 <!-- ====================================================================== -->
 ### Step 1 - Generate VAPID keys
@@ -223,7 +221,7 @@ For information about VAPID and WebPush, see [Sending VAPID identified WebPush N
 
 Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications:
 
-*   Make sure your PWA is installed, active, and registered.
+*   Make sure your service worker is installed, active, and registered.
 *   Make sure your code for completing the subscription task is on the main UI thread of the PWA.
 *   Make sure you have network connectivity.
 

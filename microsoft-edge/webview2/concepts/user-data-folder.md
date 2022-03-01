@@ -1,5 +1,5 @@
 ---
-title: Manage the user data folder
+title: Manage user data folders
 description: How to manage user data folders in a WebView2 application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,8 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
 ---
-# Manage the user data folder
+# Manage user data folders
+<!-- # old title: Manage the user data folder -->
 
 WebView2 applications interact with user data folders to store browser data, such as cookies, permissions, and cached resources.  Each instance of a WebView2 control is associated with a user data folder.  Each user data folder is unique to a user.
 
@@ -23,6 +24,8 @@ User data folders are created automatically by WebView2.  WebView2 developers co
 *  If multiple users use your application repeatedly, create a new user data folder for each new user, and save the user data folder of each user.
 
 *  If your application doesn't have repeat users, create a new user data folder for each user, and delete the previous user data folder.
+
+*  Instead of deleting the user data folder, clear browsing data from the user data folder.  For example, clear user data and history when a user signs out.  See [clear browsing data from the user data folder](clear-browsing-data.md).
 
 
 <!-- ====================================================================== -->
@@ -58,7 +61,7 @@ Files in user data folders might still be in use after the WebView2 application 
 
 WebView2 controls can share the same user data folders, to do the following:
 
-*  Optimize system resources by running in one browser process.  See [The WebView2 process model](../concepts/process-model.md).
+*  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
 
 *  Share browser history and cached resources.
 
@@ -75,3 +78,9 @@ Consider the following when sharing user data folders:
 To isolate different parts of your application, or when sharing data between WebView2 controls isn't needed, you can use different user data folders.  For example, an application can consist of two WebView2 controls, one for displaying an advertisement and the other for displaying application content.  You can use different user data folders for each WebView2 control.
 
 Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different user data folders at the same time.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Clear browsing data from the user data folder](clear-browsing-data.md)

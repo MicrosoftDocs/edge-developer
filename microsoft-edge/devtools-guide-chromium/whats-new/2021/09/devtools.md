@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 09/03/2021
 ---
-# What's New In DevTools (Microsoft Edge 94)
+# What's New in DevTools (Microsoft Edge 94)
 
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 

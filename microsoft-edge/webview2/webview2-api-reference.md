@@ -14,7 +14,7 @@ The Microsoft Edge WebView2 control enables you to host web content in your appl
 
 To download the preview channels of Microsoft Edge (Beta, Dev, and Canary), go to [Microsoft Edge Insider](https://www.microsoftedgeinsider.com).
 
-For more information, see [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](get-started/get-started.md).
+For more information, see [Overview of Microsoft Edge WebView2](index.md) and [Get started with WebView2](get-started/get-started.md).
 
 
 <!-- ====================================================================== -->
@@ -35,11 +35,10 @@ WebView2 is available for the following languages and frameworks:
 
 * WinUI 3 (for Windows App SDK)
    * [API reference](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)
-<!-- added this WinUI 3 section b/c this link is listed at top of [Get started with WebView2 in WinUI 3 (Windows App SDK)](get-started/winui.md) -->
 
 
 <!-- ====================================================================== -->
 ## See also
 
-* [Overview of Microsoft Edge WebView2](./index.md)
-* [Get started with WebView2](./get-started/get-started.md)
+* [Overview of Microsoft Edge WebView2](index.md)
+* [Get started with WebView2](get-started/get-started.md)

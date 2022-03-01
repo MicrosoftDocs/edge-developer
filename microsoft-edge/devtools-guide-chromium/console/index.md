@@ -27,7 +27,7 @@ The **Console** is shown here in the lower part of DevTools (the **Drawer**), wi
 
 :::image type="content" source="../media/console-intro-console-panel.msft.png" alt-text="The Console in the lower panel with the Elements tool open above it." lightbox="../media/console-intro-console-panel.msft.png":::
 
-The fastest way to directly open the **Console** is to press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+The fastest way to directly open the **Console** is to press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 
 <!-- ====================================================================== -->
@@ -111,7 +111,7 @@ To log information to display in the Console:
 
 1. Open the demo webpage [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html) in a new window or tab.
 
-1. To open the **Console**, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console**, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
    The **Console** displays the resulting messages that are caused by the demo code:
 
@@ -124,7 +124,7 @@ To log information to display in the Console:
 
 1. Open a new tab or window.
 
-1. To open the **Console**, press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console**, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 1. Paste the above code into the **Console**, and then press `Enter`.
 
@@ -140,11 +140,11 @@ To try running JavaScript in the Console:
 
 1. Open the **Console**.
 
-1. Type `2 + 2`.
+1. Type `2+2`.
 
-The **Console** displays the result of `2 + 2` live as you type it, displaying the result `4` on the following line:
+The **Console** displays the result of `2+2` live as you type it, displaying the result `4` on the following line:
 
-:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="The Console displays the result of 2 + 2 live as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="The Console displays the result of 2+2 live as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 

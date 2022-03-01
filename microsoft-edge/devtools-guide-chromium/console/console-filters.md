@@ -41,7 +41,7 @@ To hide all the Warning-level messages to cut down on the noise, click the **Log
 <!-- ====================================================================== -->
 ## Filter by text
 
-To see more detail, to filter messages using text, type a string into the **Filter** textbox.  For example, type `block` into the box to only display your messages about the browser blocking resources from loading.
+To see more detail, to filter messages using text, type a string into the **Filter** text box.  For example, type **block** into the box to only display your messages about the browser blocking resources from loading.
 
 :::image type="content" source="../media/console-filter-text.msft.png" alt-text="Displays the messages that contain the word 'block'." lightbox="../media/console-filter-text.msft.png":::
 
@@ -49,9 +49,9 @@ To see more detail, to filter messages using text, type a string into the **Filt
 <!-- ====================================================================== -->
 ## Filter by regular expression
 
-[Regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** textbox to only display messages that start with the term `Tracking`.  If you're unfamiliar with regular expressions, [RegExr.com](https://regexr.com) is a great resource to learn about using regular expressions.
+[Regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions) are a powerful way to filter messages.  For example, type `/^Tracking/` into the **Filter** text box to only display messages that start with the term `Tracking`.  If you're unfamiliar with regular expressions, [RegExr.com](https://regexr.com) is a great resource to learn about using regular expressions.
 
-:::image type="content" source="../media/console-filter-regex.msft.png" alt-text="Displaying the messages that start with the word 'filter', by using a regular expression in the Filter textbox." lightbox="../media/console-filter-regex.msft.png":::
+:::image type="content" source="../media/console-filter-regex.msft.png" alt-text="Displaying the messages that start with the word 'filter', by using a regular expression in the Filter text box." lightbox="../media/console-filter-regex.msft.png":::
 
 
 <!-- ====================================================================== -->
