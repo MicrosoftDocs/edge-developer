@@ -292,11 +292,13 @@ IList<CoreWebView2ContextMenuItem> menuList, ItemsControl cm)
 ## Adding menu items to a context menu
 
 
-<!-- ====================================================================== -->
-## Adding default menu items to a custom context menu
+<!-- -------------------------------------------------- -->
+### Adding default menu items to a custom context menu
 
 Each menu item is of a specific kind:
 
+
+<!-- ------------------------------- -->
 # [C++](#tab/cpp)
 
 * [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
@@ -307,6 +309,7 @@ Each menu item is of a specific kind:
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
 
 
+<!-- ------------------------------- -->
 # [C#](#tab/csharp)
 
 1. On a `CoreWebView2.ContextMenuRequested` event, add an event listener that has a `CoreWebView2ContextMenuRequestedEventArgs`.
@@ -324,8 +327,8 @@ Iterate through an IList of `CoreWebView2ContextMenuItem` items, adding a `CoreW
 ---
 
 
-<!-- ====================================================================== -->
-## Adding custom menu items to a default context menu
+<!-- -------------------------------------------------- -->
+### Adding custom menu items to a default context menu
 
 You can add custom menu items to the default context menu.
 
@@ -673,6 +676,8 @@ When the user selects a webvierw2 context menu command, the host app can optiona
 
 A menu item could be a submenu or command or checkbox (see enum).
 
+
+<!-- -------------------------------------------------- -->
 ### Custom menuitems
 
 If your <!--host WebView2--> app reports a custom menu item as the selected command, then the `CustomMenuItemSelected` event will be fired for the custom menu item.
