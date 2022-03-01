@@ -12,15 +12,26 @@ ms.date: 11/30/2021
 
 <!-- 
 Policies for maintaining this page:
-Cover the latest Canary version.  But also check for coherence against Edge Stable; if needed, address both extremes (Stable v[n] and Canary v[n+3]) explicitly.
+
+Cover the latest Canary version and the latest Stable version.  Address both extremes (Stable v[n] and Canary v[n+3]) explicitly, in visible text - this is required, for maintainability of this maximally volatile info.
+
 Keep h2 sections in same order as Microsoft Edge DevTools > Experiments page.
-In the heading and UI steps, keep the checkbox label UI string as-is.
-Include an h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.
-If no info is an an h2 section, comment out the h2 heading & section.
-When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.  Same w/ "on by default" list item if any.
+In the heading and UI steps, keep the checkbox label UI string as-is (don't revise or "fix" it).
+Include a visible h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.  If no info, write a tautology as a starting point.
+When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.  Same w/ any "on by default" list item.
+
+Open Edge Stable > Settings > Experiments, go to edge://settings/help, update if needed, make sure the article has an h2 for each checkbox.
+In each h2 section, write visibly & explicitly, "This checkbox is|is not present in Microsoft Edge Stable v123."
+Update the Edge Stable list at top, re: On By Default checkboxes. Link down to the h2, do not link to other page, here.
+
+Open Edge Canary > Settings > Experiments, go to edge://settings/help, update if needed, make sure the article has an h2 for each checkbox.
+In each h2 section, write visibly & explicitly, "This checkbox is|is not present in Microsoft Edge Canary v123."
+Update the Edge Canary list at top, re: On By Default checkboxes. Link down to the h2, do not link to other page, here.
 -->
 
-Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes most of the experimental features which are in the latest version of the Canary preview channel of Microsoft Edge.
+Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features which are in either:
+*  The latest version of the Canary preview channel of Microsoft Edge.
+*  The latest version of the Stable version of Microsoft Edge.
 
 All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have experimental features. You can get the latest experimental features by using the [Microsoft Edge Canary channel](https://www.microsoftedgeinsider.com/welcome?channel=canary). To view the full list available in your version of Microsoft Edge, see the **Settings** > **Experiments** page in DevTools.
 
@@ -35,7 +46,7 @@ The following experimental features are turned on by default. You can use these 
 
 <!-- listed in order of the Settings > Experiments pane -->
 
-**Turned on by default in v100:**
+**Turned on by default in Microsoft Edge Canary v100:**
 * [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel)
 * [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
 * [Enable webhint](#enable-webhint)
@@ -43,7 +54,7 @@ The following experimental features are turned on by default. You can use these 
 * [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
 * [Automatically pretty print in the Microsoft Edge Sources Panel](#automatically-pretty-print-in-the-microsoft-edge-sources-panel)
 
-**Turned on by default in v98:**
+**Turned on by default in Microsoft Edge Stable v98:**
 * [Source order viewer](#source-order-viewer)
 * [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode)
 * [Enable webhint](#enable-webhint)
