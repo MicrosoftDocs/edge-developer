@@ -12,12 +12,12 @@ ms.date: 11/30/2021
 
 <!-- 
 Policies for maintaining this page:
-Cover the latest Canary version.
+Cover the latest Canary version.  But also check for coherence against Edge Stable; if needed, address both extremes (Stable v[n] and Canary v[n+3]) explicitly.
 Keep h2 sections in same order as Microsoft Edge DevTools > Experiments page.
 In the heading and UI steps, keep the checkbox label UI string as-is.
 Include an h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.
 If no info is an an h2 section, comment out the h2 heading & section.
-When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.
+When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.  Same w/ "on by default" list item if any.
 -->
 
 Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes most of the experimental features which are in the latest version of the Canary preview channel of Microsoft Edge.
@@ -34,33 +34,28 @@ These experiments could be unstable or unreliable and may require you to restart
 The following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
 
 <!-- listed in order of the Settings > Experiments pane -->
-*  Source order viewer.
-*  Enable back-forward cache debugging support.
-*  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
-*  Enable experimental hide issues menu.
-*  Enable webhint.
-*  Show issues in Elements.
-*  Enable Composited Layers in 3D View.
-*  DevTools Tooltips.
-*  Detached Elements.
-*  VS Code themes for the DevTools. <!-- preserve literal UI string, including "VS" & "the" -->
-*  Open source files in Visual Studio Code.
-*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
-*  Enable dynamic Welcome content, off by default now but on by default in Microsoft Edge version 97.
+
+**Turned on by default in v100:**
+* [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel)
+* [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
+* [Enable webhint](#enable-webhint)
+* [Show issues in Elements](#show-issues-in-elements)
+* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+* [Automatically pretty print in the Microsoft Edge Sources Panel](#automatically-pretty-print-in-the-microsoft-edge-sources-panel)
+
+**Turned on by default in v98:**
+* [Source order viewer](#source-order-viewer)
+* [Emulation: Support dual screen mode](##emulation-support-dual-screen-mode)
+* [Enable webhint](#enable-webhint)
+* [Show issues in Elements](#show-issues-in-elements)
+* [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view)
+* [DevTools Tooltips](#devtools-tooltips)
+* [Detached Elements](#detached-elements)
+* [VS Code themes for the DevTools](#vs-code-themes-for-the-devtools)<!-- preserve literal UI string, including "VS" & "the" -->
+* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+* [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
 
 <!-- don't place a comment line between list item lines, above; that would create a gap -->
-
-<!-- Don't list this checkbox in this article; it's being removed: -->
-<!-- *  Enable CSS \<length\> authoring tool in the Styles pane -->
-
-<!-- *  Detached Elements 
-Is the Detached Elements experiment checkbox intended to be present for external users?
-Is the Detached Elements experiment checkbox intended to be turned on by default, for external users?
-PM answered:
-"The Detached Elements checkbox is visible to all Edge users since Edge 93.
-The experiment was turned on by default in Edge 93 for all internal (so has a microsoft.com account in Edge) DevTools customers.
-Starting with Edge 97, the experiment will be turned on by default for all Edge users"
--->
 
 
 <!-- ====================================================================== -->
@@ -148,18 +143,6 @@ To capture JavaScript stack traces when DOM nodes are added to the DOM at runtim
 
 
 <!-- ====================================================================== -->
-## Automatically pretty print in the Sources Panel
-<!-- present in 96, 98 -->
-
-When this experiment is turned on, when you display a minified file in the Sources panel, the file is opened in a single tab in the Sources panel, pretty-printed.
-
-When this experiment is turned off, a UI prompt with a button asks you whether to pretty-print the file.  The file is opened in an additional tab which has an appended suffix of **:formatted**.
-
-*  A _minified_ file is concatenated into a single long line.
-*  In contrast, _pretty print_ presents the contents of a file in an indented, more human-readable format.
-
-
-<!-- ====================================================================== -->
 ## Protocol Monitor
 <!-- present in 96, 98 -->
 
@@ -185,24 +168,53 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 
 <!-- ====================================================================== -->
-<!-- ## Show CSP Violations view -->
+## Show CSP Violations view
 <!-- present in 96, 98 -->
 
-<!-- Needs content. -->
+Shows Content Security Policy (CSP) violations.
+<!-- needs content, 0 hits in fts in this repo - retry "csp" Find. -->
+
+See [Content Security Policy (CSP)](../../extensions-chromium/store-policies/csp.md).
 
 
 <!-- ====================================================================== -->
-<!-- ## Record coverage while performance tracing -->
+## Record coverage while performance tracing
 <!-- present in 96, 98 -->
 
-<!-- Needs content. -->
+Records coverage while performance tracing.
+<!-- needs content, 0 hits in fts in this repo -->
 
 
 <!-- ====================================================================== -->
-<!-- ## Show option to take heap snapshot where globals are treated as root -->
+## Show option to take heap snapshot where globals are treated as root
 <!-- present in 96, 98 -->
 
-<!-- Needs content. -->
+Shows the option to take a heap snapshot where globals are treated as root.
+<!-- needs content -->
+
+
+<!-- ====================================================================== -->
+## Show back/forward cache blocking reasons in the frame tree structure view
+<!-- present in v100 -->
+
+Whether to show back/forward cache blocking reasons in the frame tree structure view.
+<!-- needs content -->
+
+
+<!-- ====================================================================== -->
+## Timeline: event initiators
+<!-- present in v100 -->
+
+Whether to include event initiators in the Timeline.
+<!-- needs content -->
+
+
+<!-- ====================================================================== -->
+## Timeline: WebGL-based flamechart
+<!-- present in v100 -->
+
+Whether to use a WebGL-based flamechart in the Timeline.
+<!-- needs content -->
 
 
 <!-- ====================================================================== -->
@@ -225,24 +237,14 @@ To use the **Source Order Viewer**:
 
    ![Source Order Viewer in the Accessibility pane.](../media/experiments-source-order-viewer.msft.png)
 
-This experiment is turned on by default.
-
 For more information, see [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
 
 
 <!-- ====================================================================== -->
-## Enable back-forward cache debugging support
+## WebAssembly Debugging: Enable DWARF support
 <!-- present in 96, 98 -->
 
-Back-forward cache, or *bfcache*. Makes navigating through your browsing history faster by saving snapshots of visited web pages in memory.
-
-Certain web pages can't be cached. Enable this experiment to add the **Back-forward Cache** section to the **Application** panel.  Enabling back-forward cache debugging provides information about web pages that can't be stored in `bfcache`.
-
-
-<!-- ====================================================================== -->
-<!-- ## WebAssembly Debugging: Enable DWARF support -->
-<!-- present in 96, 98 -->
-
+Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's new in DevTools (Microsoft Edge 80)_.
 <!-- Needs content. -->
 
 
@@ -250,27 +252,35 @@ Certain web pages can't be cached. Enable this experiment to add the **Back-forw
 ## Emulation: Support dual screen mode
 <!-- present in 96, 98 -->
 
-For more information, see [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
+See [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines -->
-<!-- present in 96, 98 -->
+## Enable experimental hide issues menu
 
+Enables the experimental **Hide issues** menu.
+<!-- needs content -->
+
+
+<!-- ====================================================================== -->
+## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines
+<!-- present in 96, 98, 100 -->
+
+Enables the new Advanced Perceptual Contrast Algorithm (APCA), replacing previous contrast ratio and AA/AAA guidelines.
 <!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable full accessibility tree view in the Elements panel -->
-<!-- present in 96, 98 -->
+## Enable full accessibility tree view in the Elements panel
+<!-- present in 96, 98, 100 -->
 
+Enables the full accessibility tree view in the **Elements** tool.
 <!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
 ## Enable the Font Editor tool within the Styles pane
-
-<!-- present in 96, 98 -->
+<!-- present in 96, 98, v100 -->
 
 You can use the visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
@@ -295,16 +305,18 @@ For more information, see [Edit CSS font styles and settings in the Styles pane]
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable automatic contrast issue reporting via the Issues Panel -->
-<!-- present in 96, 98 -->
+## Enable automatic contrast issue reporting via the Issues Panel
+<!-- present in 96, 98, v100 -->
 
+Enables automatic contrast issue reporting in the **Issues** tool.
 <!-- Needs content. -->
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable experimental cookie features -->
-<!-- present in 96, 98 -->
+## Enable experimental cookie features
+<!-- present in 96, 98, v100 -->
 
+Enables experimental cookie features.
 <!-- Needs content. -->
 
 
@@ -314,10 +326,35 @@ For more information, see [Edit CSS font styles and settings in the Styles pane]
 
 Use the Reporting API to catch certain errors such as security violations or deprecated API calls. These errors happen when users visit your site and are sent to a server endpoint. Enable this experiment to add the **Reporting API** section in the **Application** panel, which lists all of the reports sent to the endpoint.
 
-<!-- ====================================================================== -->
-<!-- ## Log DevTools uncaught exceptions to Console -->
-<!-- present in 96, 98 -->
 
+<!-- ====================================================================== -->
+## Display more precise changes in the Changes tab
+<!-- present in 100 -->
+
+See [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes).
+
+
+<!-- ====================================================================== -->
+## Sync CSS changes in the Styles pane
+<!-- present in 100 -->
+
+Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
+<!-- Needs content. -->
+
+
+<!-- ====================================================================== -->
+## Local overrides for response headers
+<!-- present in 100 -->
+
+Whether to use local overrides for response headers.
+<!-- Needs content. -->
+
+
+<!-- ====================================================================== -->
+## Log DevTools uncaught exceptions to Console
+<!-- present in 100 -->
+
+Controls whether to log DevTools uncaught exceptions in the **Console** tool.
 <!-- Needs content. -->
 
 
@@ -338,19 +375,19 @@ The [webhint](https://webhint.io) experiment displays the webhint feedback in th
 
 ![webhint feedback in the Issues panel.](../media/experiments-webhint.msft.png)
 
-This experiment is turned on by default.
-
 
 <!-- ====================================================================== -->
-
 ## Show issues in Elements
 <!-- present in 96, 98 -->
 
 Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
 
+
 <!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
 <!-- present in 96, 98 -->
+
+Checkbox not present in v100.<!-- move down to hidden section, comment out? -->
 
 You can visualize Layers alongside z-indexes and the Document Object Model (DOM). For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
 
@@ -369,8 +406,6 @@ To use **Composited Layers**:
 1. All of the painted layers of the app are displayed.  Try this feature with your own web apps.
 
    ![Composited Layers pane.](../media/experiments-layers.msft.png)
-
-This experiment is turned on by default.
 
 See also [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/index.md).
 
@@ -441,14 +476,21 @@ See also:
 ## DevTools Tooltips
 <!-- present in 96, 98 -->
 
+Checkbox not present in Canary v100.
+
 Enable this experiment to view tooltips for all the different tools and panes in DevTools. For more information, see [Learn about DevTools with informative tooltips](../whats-new/2021/04/devtools.md#learn-about-devtools-with-informative-tooltips).
 
 
 <!-- ====================================================================== -->
 ## Detached Elements
-<!-- present in 96, 98.  Selected by default for all users since v97. -->
+<!-- present in 96, 98.  Selected by default for all users since v97.
+PM:
+"The Detached Elements checkbox is visible to all Edge users since Edge 93.
+The experiment was turned on by default in Edge 93 for all internal (so has a microsoft.com account in Edge) DevTools customers.
+Starting with Edge 97, the experiment will be turned on by default for all Edge users"
+-->
 
-<!-- maintainers: see notes about this experiment, in the list of experiments which are turned on by default, at top of article -->
+Checkbox not present in Canary v100.
 
 Memory leaks in web applications can be difficult to locate and repair.
 
@@ -461,8 +503,10 @@ For more information, see [Debug DOM memory leaks with the Detached Elements too
 
 <!-- ====================================================================== -->
 ## VS Code themes for the DevTools
-<!-- present in 96, 98 -->
 <!-- preserve literal UI string, including "VS" & "the" -->
+<!-- present in 96, 98 -->
+
+Checkbox not present in v100.
 
 To use Visual Studio themes in DevTools, enable the **VS Code themes for the DevTools** experiment. For more information, see [Apply color themes to DevTools](../customize/theme.md).
 
@@ -481,50 +525,101 @@ Any edits that you make in DevTools now change the file on the hard drive and sy
 
 
 <!-- ====================================================================== -->
+## Automatically pretty print in the Microsoft Edge Sources Panel
+<!-- present in 96, 98 -->
+
+When this experiment is turned on, when you display a minified file in the Sources panel, the file is opened in a single tab in the Sources panel, pretty-printed.
+
+When this experiment is turned off, a UI prompt with a button asks you whether to pretty-print the file.  The file is opened in an additional tab which has an appended suffix of **:formatted**.
+
+*  A _minified_ file is concatenated into a single long line.
+*  In contrast, _pretty print_ presents the contents of a file in an indented, more human-readable format.
+
+
+<!-- ====================================================================== -->
 <!-- >> [!WARNING]
 > These experiments are particularly unstable. Enable at your own risk. -->
 
 
 <!-- ====================================================================== -->
-<!-- ## Ignore List for JavaScript frames on Timeline
+## Ignore List for JavaScript frames on Timeline
 <!-- present in 96, 98 -->
 
+Whether to include the Ignore list for JavaScript frames on the Timeline.
 <!-- Needs content. -->
+
+This checkbox is present in Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Input events on Timeline overview -->
+## Input events on Timeline overview
 <!-- present in 96, 98 -->
 
+Controls whether to include Input events on the Timeline overview.
 <!-- Needs content. -->
+
+This checkbox is present in Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Live heap profile -->
+## Live heap profile
 <!-- present in 96, 98 -->
 
+Controls whether to live-update the heap profile.
 <!-- Needs content. -->
+
+This checkbox is present in Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Sampling heap profiler timeline -->
+## Sampling heap profiler timeline
 <!-- present in 96, 98 -->
 
+Controls whether to show the Sampling heap profiler timeline.
 <!-- Needs content. -->
+
+This checkbox is present in Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable keyboard shortcut editor -->
+## Enable keyboard shortcut editor
 <!-- present in 96, 98 -->
 
-<!-- Needs content. -->
+See [Edit the keyboard shortcut for a DevTools action](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) in _Customize keyboard shortcuts_.
+
+This checkbox is not present in Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable dynamic Welcome content -->
-<!-- present in 96, 98 -->
+## Timeline: Invalidation tracking
 
-<!-- Needs content. -->
+Controls whether to show invalidation tracking on the Timeline.
+
+This checkbox is present in Canary v100.
+
+
+<!-- ====================================================================== -->
+## Timeline: Show all events
+
+Controls whether to show all events on the Timeline.
+
+This checkbox is present in Canary v100.
+
+
+<!-- ====================================================================== -->
+## Timeline: V8 Runtime Call Stats on Timeline
+
+Controls whether to show v8 runtime call stats on the Timeline.
+
+This checkbox is present in Canary v100.
+
+
+<!-- ====================================================================== -->
+## Timeline: Replay input events
+
+Controls whether to replay input events on the Timeline.
+
+This checkbox is present in Canary v100.
 
 
 <!-- ====================================================================== -->
@@ -532,6 +627,31 @@ Any edits that you make in DevTools now change the file on the hard drive and sy
 ## Previously Experimental features which are now regular features
 
 These features have been promoted from experimental to regular features, and have been removed from **Settings** > **Experiments**.
+
+
+no such, as of v98:
+*  [Enable back-forward cache debugging support](#Enable back-forward cache debugging support).
+
+no such, as of v98:
+*  Enable experimental hide issues menu.
+
+
+
+======================================================================
+## Enable dynamic Welcome content
+present in 96, 98 - no, not present in 98 anymore
+
+
+======================================================================
+## Enable back-forward cache debugging support
+present in 96, 98
+
+Back-forward cache, or *bfcache*. Makes navigating through your browsing history faster by saving snapshots of visited web pages in memory.
+
+Certain web pages can't be cached. Enable this experiment to add the **Back-forward Cache** section to the **Application** panel.  Enabling back-forward cache debugging provides information about web pages that can't be stored in `bfcache`.
+
+
+======================================================================
 
 *  [Turn on new CSS grid debugging features](../css/grid.md) - removed from experimental status starting with Microsoft Edge 89.
 
