@@ -765,7 +765,7 @@ The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/Sa
 
 * **[ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)** - WebView2 enables you to host web content using the latest Microsoft Edge browser and web technology.
 * **[ICoreWebView2_4](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4)** - A continuation of the ICoreWebView2_3 interface to support FrameCreated and DownloadStarting events.
-* **[ICoreWebView2Experimental6](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)** - This interface is an extension of ICoreWebView2 that supports ContextMenuRequested event.
+* **[ICoreWebView2Experimental6](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)** - This interface is an extension of ICoreWebView2 that supports ContextMenuRequested event.
    * [add_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) - Add an event handler for the `ContextMenuRequested` event.
    * [remove_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested) - Remove an event handler previously added with add_ContextMenuRequested.
 

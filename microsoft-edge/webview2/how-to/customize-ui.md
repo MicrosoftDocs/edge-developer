@@ -10,6 +10,8 @@ ms.date: 02/08/2022
 ---
 # Customizing the UI in WebView2 apps
 
+<!-- presently omitted from TOC -->
+
 
 <!-- ====================================================================== -->
 ## Customize the context menus of your WebView2 app
