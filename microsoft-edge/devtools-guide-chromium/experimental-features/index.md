@@ -45,7 +45,7 @@ The following experimental features are turned on by default. You can use these 
 
 **Turned on by default in v98:**
 * [Source order viewer](#source-order-viewer)
-* [Emulation: Support dual screen mode](##emulation-support-dual-screen-mode)
+* [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode)
 * [Enable webhint](#enable-webhint)
 * [Show issues in Elements](#show-issues-in-elements)
 * [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view)
