@@ -57,7 +57,7 @@ Most Microsoft Edge-specific capabilities are exposed through the `EdgeOptions` 
 | `localState` | dictionary | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are applied to the Local State file in the user data folder. |
 | `minidumpPath` | string | Directory to store Microsoft Edge minidumps.  (Supported only on Linux.) |
 | `mobileEmulation` | dictionary | A dictionary with either a value for `deviceName`, or values for `deviceMetrics` and `userAgent`. |
-| `perfLoggingPrefs` | dictionary | An optional dictionary that specifies performance logging preferences.  for more information, see [perfLoggingPrefs object](#perfloggingprefs-object). |
+| `perfLoggingPrefs` | dictionary | An optional dictionary that specifies performance logging preferences.  For more information, see [perfLoggingPrefs object](#perfloggingprefs-object). |
 | `prefs` | dictionary | A dictionary with each entry consisting of the name of the preference and the value.  The preferences are only applied to the user profile in use.  For examples, see the `Preferences` file in the user data folder of Microsoft Edge. |
 | `wdpAddress` | string | An address of a Windows Device Portal server to connect to, in the form of `hostname/ip:port`, for example  `127.0.0.1:50080`.  For more information, see [Remote Debugging - Windows 10 devices](../devtools-guide-chromium/remote-debugging/windows.md). |
 | `wdpPassword` | string | Optional password to use when connecting to a Windows Device Portal server.  Required if the server has authentication enabled. |
