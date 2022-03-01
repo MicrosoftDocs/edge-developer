@@ -1,5 +1,5 @@
 ---
-title: Release notes for WebView2 SDK
+title: Release Notes for the WebView2 SDK
 description: Release notes for Microsoft Edge WebView2 for Win32, WPF, and WinForms.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/29/2021
 ---
-# Release notes for WebView2 SDK
+# Release Notes for the WebView2 SDK
 
 The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
@@ -32,7 +32,7 @@ For more information, see [Matching the Runtime version with the SDK version](co
 
 To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime is 86.0.616.0.  The minimum version to load WebView2 only changes when a breaking change occurs in the web platform.
 
-To use a prerelease SDK along with a Microsoft Edge preview channel, go to [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
+To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
 
 <!-- ====================================================================== -->
@@ -885,7 +885,7 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 
 *  The Evergreen WebView2 Runtime and installer are GA.  The bootstrapper, the downlink link for the Bootstrapper, and the Standalone Installer for the Evergreen WebView2 Runtime are available on [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).  Sample code for the installation workflow is also available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
-For more information about the Runtime, Evergreen distribution, and Fixed Version distribution, see [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
+For more information about the Runtime, Evergreen distribution, and Fixed Version distribution, see [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
 
 <!-- ====================================================================== -->
@@ -922,7 +922,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 86.0.579.0 or h
 ### General
 
 *  > [!IMPORTANT]
-   > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  See [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
+   > **Announcement**: Evergreen WebView2 Runtime and installer is released for preview.  See [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
 *  > [!IMPORTANT]
    > **Announcement**:  The following WebView2 SDK Versions are no longer supported after the next SDK release:
@@ -1011,7 +1011,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 This version of the WebView2 SDK requires Microsoft Edge version 84.0.488.0 or higher.
 
 *  > [!IMPORTANT]
-   > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView2 team is currently developing.  See [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
+   > **Announcement**:  Starting with the upcoming Microsoft Edge version 83, Evergreen WebView no longer targets the Stable browser channel.  Instead, it targets another set of binaries, branded Evergreen WebView2 Runtime, that you can chain-install through an installer that the WebView2 team is currently developing.  See [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
 *  > [!IMPORTANT]
    > **Announcement**:  Moving forward, the WebView2 team releases two packages:  a prerelease package with experimental APIs (for you to try out) and a stable release package with stable APIs (for your confidence).  To learn about the differences, see [Understanding browser versions and WebView2](concepts/versioning.md).
@@ -1141,7 +1141,7 @@ This version of the WebView2 SDK requires Microsoft Edge version 78.0.270.0 or h
 
    During the channel search, the WebView2 team skips any previous channel version that isn't compatible with the WebView2 SDK.
 
-   The WebView2 team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with the latest Canary build, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  See [Switch to a preview channel to test upcoming APIs and features](how-to/set-preview-channel.md).
+   The WebView2 team selects the more stable channel to ensure the most consistent behaviors for the end user.  When you test with the latest Canary build, you should create a script to set the `WEBVIEW2_RELEASE_CHANNEL_PREFERENCE` environment variable to `1` before launching the app.  See [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
 *  Updated the `CreateWebView2EnvironmentWithDetails` function with logic for selecting `userDataFolder` when not specified.  For more information about the `CreateWebView2EnvironmentWithDetails` function, see [CreateWebView2EnvironmentWithDetails](/microsoft-edge/webview2/reference/win32/webview2-idl?view=webview2-0.8.355&preserve-view=true#createwebview2environmentwithdetails).  If you previously used the default `userDataFolder` location, when you switch to the new SDK the default `userDataFolder` is reset (set to a new location in the host code directory) and your state is also reset.  If the host process doesn't have permission to write to the specified directory, the `CreateWebView2EnvironmentWithDetails` function might fail.  You can copy the data from the old `user data folder` to the new directory.
 

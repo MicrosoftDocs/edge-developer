@@ -21,6 +21,12 @@ When the user clicks the **password reveal** button to turn it on, the password 
 
 By default, the **password reveal** button is inserted into the Shadow DOM of all HTML `input` elements that have the `type` set to `"password"`.  Starting with Microsoft Edge Version 87, users or [enterprises](/deployedge/microsoft-edge-policies#passwordrevealenabled) can disable this feature globally.  Web designers and developers should expect most Microsoft Edge users to have the default experience.
 
+<!--
+these might be outdated style: not used in .md files:
+![The password field hidden, with the default look.](../media/web-platform/password-reveal/password-eye.png)
+![The password field revealed, with the default look.](../media/web-platform/password-reveal/password-toggled.png)
+-->
+
 
 <!-- ====================================================================== -->
 ## Remove the password reveal control

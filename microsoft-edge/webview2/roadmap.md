@@ -1,5 +1,5 @@
 ---
-title: WebView2 roadmap
+title: WebView2 Roadmap
 description: Learn about what's coming next for WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 01/07/2021
 ---
-# WebView2 roadmap
+# WebView2 Roadmap
 
 The Microsoft Edge WebView2 control allows you to embed web technologies in your native applications.  This article outlines the prospective roadmap for WebView2.
 
@@ -28,13 +28,13 @@ The WebView2 team is planning the following major efforts for future updates:
 <!-- ====================================================================== -->
 ## WebView2 Runtime and Installer
 
-Evergreen distribution mode allows you to target or chain-install the WebView2 Runtime onto your users' machines.  The Evergreen WebView2 Runtime and installer has reached General Availability (GA).  For more information, see [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
+Evergreen distribution mode allows you to target or chain-install the WebView2 Runtime onto your users' machines.  The Evergreen WebView2 Runtime and installer has reached General Availability (GA).  For more information, see [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
 
 <!-- ====================================================================== -->
 ## Fixed version
 
-Fixed version distribution mode allows you to package the Microsoft Edge binaries <!--(a specific version of the WebView2 Runtime)--> inside your native application.  The Fixed Version has reached General Availability (GA).  For more information, see [Distribute a WebView2 app and the WebView2 Runtime](concepts/distribution.md).
+Fixed version distribution mode allows you to package the Microsoft Edge binaries <!--(a specific version of the WebView2 Runtime)--> inside your native application.  The Fixed Version has reached General Availability (GA).  For more information, see [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 
 
 <!-- ====================================================================== -->
