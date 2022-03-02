@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New In DevTools (Microsoft Edge 90)
+# What's New in DevTools (Microsoft Edge 90)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
@@ -101,7 +101,7 @@ The following figure displays the same messages from the example webpage logged 
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
 <!-- Subtitle: In the Styles pane, click the icon that appears next to display: flex to try different layout properties for flex containers.  -->
 
-DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon appears next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the `flex` icon.  To review the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
+DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon appears next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the `flex` icon.  For the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
 
 To open the **Flexbox** editor, go to the **Styles** pane and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.
 
@@ -120,7 +120,7 @@ In addition, the **Flexbox** section in the **Layout** pane displays all of the 
 
 Previously, you were not able to expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  When a network request is selected in the **Network** tool, the **Initiator** pane displays the chain of requests that initiated the currently selected request.
 
-In Microsoft Edge version 90, you can expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, see [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).  To review the history of this feature in the Chromium open-source project, see Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
+In Microsoft Edge version 90, you can expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, see [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).  For the history of this feature in the Chromium open-source project, see Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
 
 Click a Network request and then click the **Initiator** pane:
 
@@ -137,7 +137,7 @@ Expand or collapse the request initiator chain and follow the highlighted row:
 <!-- Title: Console improvements make filtering more consistent  -->
 <!-- Subtitle: The Log Levels dropdown list is more clearly disabled when using filters in the Console sidebar.  -->
 
-While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover on it while a filter from the **Console Sidebar** is selected.  To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages).
+While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover over it while a filter from the **Console Sidebar** is selected.  To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages).
 
 Previously, if you open the **Console sidebar** and hover on **Default levels**, it was highlighted:
 
@@ -155,7 +155,7 @@ Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on
 
 ### The Console now escapes double quote characters
 
-Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote (`"`) characters.  To review the history of this feature in the Chromium open-source project, see Issue [1178530](https://crbug.com/1178530).
+Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote (`"`) characters.  For the history of this feature in the Chromium open-source project, see Issue [1178530](https://crbug.com/1178530).
 
 :::image type="content" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (&#0022;) characters." lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
 
@@ -170,7 +170,7 @@ To emulate the CSS color-gamut media feature:
 1. Run the **Show Rendering** command.
 1. Go to **Emulate CSS media feature color-gamut** and then click an option.
 
-To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).  To review the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
+To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).  For the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
 
 :::image type="content" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emulate the CSS color-gamut media feature." lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
 
@@ -188,7 +188,7 @@ The **Manifest** pane now displays a warning message if the manifest description
 
 :::image type="content" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA description truncate warning." lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
 
-To review the history of this feature in the Chromium open-source project, see Issues [965802](https://crbug.com/965802), [1146450](https://crbug.com/1146450), and [1169689](https://crbug.com/1169689).
+For the history of this feature in the Chromium open-source project, see Issues [965802](https://crbug.com/965802), [1146450](https://crbug.com/1146450), and [1169689](https://crbug.com/1169689).
 
 ### New Remote Address Space column in the Network tool
 
@@ -213,19 +213,19 @@ The Requests table now displays the **Remote Address Space** column:
 
 ### Display allowed and disallowed features in the Frame details view
 
-The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md).  Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.  To review the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
+The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md).  Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.  For the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
 
 :::image type="content" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Allowed and disallowed features based on the Permission Policy." lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
 
 ### New SameParty column in the Cookies pane
 
-The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie.  The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets).  To review the history of this feature in the Chromium open-source project, see Issue [1161427](https://crbug.com/1161427).
+The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie.  The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets).  For the history of this feature in the Chromium open-source project, see Issue [1161427](https://crbug.com/1161427).
 
 :::image type="content" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty column in the Cookies pane." lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
 
 ### fn.displayName property in the Console tool is now deprecated
 
-Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  Use the standard `Object.defineProperty` method to define the `fn.name` property.  To learn more about `fn.name`, see [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name).  To review the history of this feature in the Chromium open-source project, see Issue [1177685](https://crbug.com/1177685).
+Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  Use the standard `Object.defineProperty` method to define the `fn.name` property.  To learn more about `fn.name`, see [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name).  For the history of this feature in the Chromium open-source project, see Issue [1177685](https://crbug.com/1177685).
 
 :::image type="content" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="An example of the fn.name property to control debug names for functions." lightbox="../../media/2021/02/console-display-name-name.msft.png":::
 

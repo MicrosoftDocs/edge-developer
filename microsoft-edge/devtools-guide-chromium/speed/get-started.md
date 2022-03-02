@@ -81,7 +81,7 @@ First, you must set up the site so that you can make changes to it later.
 
    :::image type="content" source="../media/speed-glitch-tony-show-live-console.msft.png" alt-text="DevTools and the demo." lightbox="../media/speed-glitch-tony-show-live-console.msft.png":::
 
-For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, type `Undock`, and then select **Undock into separate window**.
+For the rest of the screenshots in this tutorial, DevTools is shown in a separate window.  Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, type `Undock`, and then select **Undock into separate window**.
 
 :::image type="content" source="../media/speed-console.msft.png" alt-text="DevTools undocked into a separate window." lightbox="../media/speed-console.msft.png":::
 
@@ -298,7 +298,7 @@ The first task, then, is to find code that you don't need to run on page load.
 
    :::image type="content" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png" alt-text="More information about the Eliminate render-blocking resources opportunity." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded.msft.png":::
 
-1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage**.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu, start typing `Coverage`, and then select **Show Coverage**.
 
    :::image type="content" source="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png" alt-text="Open the Command Menu from the Audits panel." lightbox="../media/speed-glitch-tony-remix-updated-audits-performance-oppportunities-expanded-command-coverage.msft.png":::
 
@@ -320,7 +320,7 @@ Are the `jquery.js` and `lodash.js` files even needed to load the page?  The **R
 
 1. Select the **Network** tool.
 
-1. Press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu again.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the Command Menu again.
 
 1. Start typing `blocking`, and then select **Show Request Blocking**.
 

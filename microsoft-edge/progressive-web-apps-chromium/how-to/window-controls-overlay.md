@@ -47,7 +47,7 @@ For more information about Origin Trials, go to [Microsoft Edge Origin Trials De
 <!-- ====================================================================== -->
 ## Enable the Window Controls Overlay in your app
 
-The first thing to do is to enable the Window Controls Overlay feature in your app's [Web App Manifest file](./web-app-manifests.md).  To do this, in the manifest file, set the `display_override` property:
+The first thing to do is to enable the Window Controls Overlay feature in your app's [Web App Manifest file](web-app-manifests.md).  To do this, in the manifest file, set the `display_override` property:
 
 ```json
 {

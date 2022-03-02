@@ -44,7 +44,7 @@ First, determine whether you have a Partner Center account.  If you have a Partn
 
 ### If you don't have a Partner Center account
 
-1.  Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer](./create-dev-account.md).<!-- = create-dev-account.md-->  As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
+1.  Use a Microsoft account (MSA) to register with the Microsoft Edge program, by following the steps in the article [Register as a Microsoft Edge extension developer](create-dev-account.md).<!-- = create-dev-account.md-->  As mentioned in that article, you can use your GitHub account to create a Microsoft account (MSA).
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
@@ -61,7 +61,7 @@ To determine whether the Primary Owner of your Partner Center account is a Micro
 
 1. Check whether the Primary Owner of the Partner Center account is a Microsoft account (MSA).  If the Primary Owner isn't a Microsoft account (MSA), that means that this is a Partner Center _commercial_ account rather than a Partner Center _developer_ account.
 
-1. Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Microsoft account (MSA)) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md)<!-- = create-dev-account.md-->.
+1. Use a Microsoft account (MSA) (not a work Microsoft account (MSA) or a school Microsoft account (MSA)) to register with the Microsoft Edge program, by following the steps in [Register as a Microsoft Edge extension developer](create-dev-account.md)<!-- = create-dev-account.md-->.
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
@@ -78,7 +78,7 @@ Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Prog
 
 1. Verify that the Primary Owner of the Partner Center developer account is a Microsoft account (MSA) user.  This must not be a work Microsoft account (MSA) or a school Microsoft account (MSA).
 
-1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer](./create-dev-account.md)<!-- = create-dev-account.md-->.
+1. Have the Primary Owner of the Partner Center developer account register for the Microsoft Edge program by following the steps in [Register as a Microsoft Edge extension developer](create-dev-account.md)<!-- = create-dev-account.md-->.
 
 Next, do [Step 2: Associate Azure Active Directory with your Microsoft Edge Program account](#step-2-associate-azure-active-directory-with-your-microsoft-edge-program-account) below.
 
@@ -109,7 +109,7 @@ For more information about adding users, see [Add users, groups, and Azure AD ap
 <!-- ====================================================================== -->
 ## Contact us
 
-If you need help or assistance with associating your Azure Active Directory account or other related queries, [Contact Microsoft Edge extensions support](./contact-extensions-team.md).
+If you need help or assistance with associating your Azure Active Directory account or other related queries, [Contact Microsoft Edge extensions support](contact-extensions-team.md).
 
 
 <!-- ====================================================================== -->

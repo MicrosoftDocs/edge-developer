@@ -19,7 +19,7 @@ Publish your extension to the Microsoft Edge Add-ons website to increase the rea
 
 You should have a working prototype of your extension ready.  For information on how to create an extension, see [Extension concepts and architecture](../getting-started/index.md).
 
-To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, see [Developer registration](./create-dev-account.md).
+To publish your extension to the Microsoft Edge Add-ons website, use your active developer account on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  If you don't have a developer account, create a new developer account.  To open a new developer account and register to the Microsoft Edge add-ons program, see [Developer registration](create-dev-account.md).
 
 Create a zip file that represents your extension package.  Your extension package must include the following files:
 
@@ -95,7 +95,7 @@ You can change the visibility of your extension from **Public** to **Hidden**.  
 
 Define the specific markets in which you plan to offer your extension.  The default setting for markets is all markets and that includes any future markets that are added later.  To choose specific markets, select **Change markets**.  Toggle individual markets to exclude each one, or select **Unselect all** and then add individual markets of your choice.
 
-You can change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
+You can change the markets where your extension is offered.  A user who installs your extension while it's available in the user's market retains access to your extension.  However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
 
 Click **Save**, to continue to the **Properties** section.
 

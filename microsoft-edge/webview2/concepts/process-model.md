@@ -1,5 +1,5 @@
 ---
-title: The WebView2 process model
+title: Process model for WebView2 apps
 description: The WebView2 Runtime process model, and how it works with the user data folder and site isolation.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,11 +8,12 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/21/2021
 ---
-# The WebView2 process model
+# Process model for WebView2 apps
+<!-- old title: # The WebView2 process model -->
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
 
-The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture).
+The WebView2 Runtime uses the same process model as the Microsoft Edge browser.  This browser process model is described at [Browser Architecture](https://developers.google.com/web/updates/2018/09/inside-browser-part1#browser-architecture) in _Inside look at modern web browser (part 1)_.
 
 
 <!-- ====================================================================== -->
@@ -41,7 +42,7 @@ The logic that controls when these extra processes are created depends on the Ch
 
 All processes in a WebView2 Runtime processes collection are tied to the browser process, which in turn is associated with a single user data folder.  If an application makes use of multiple user data folders, a collection of WebView2 Runtime processes will be created for each of these user data folders.
 
-A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage the user data folder](./user-data-folder.md).
+A user data folder can be shared by multiple applications, but be sure to consider the implications on performance and management, as described in [Manage user data folders](user-data-folder.md).
 
 :::image type="content" source="../media/process-model-2.png" alt-text="Process 2." lightbox="../media/process-model-2.png":::
 
