@@ -32,19 +32,35 @@ To obtain source maps from the Azure Artifacts symbol server, DevTools uses the 
 
 To generate a PAT in Azure DevOps:
 
-1. In Azure DevOps go to **User settings** > **Personal access tokens**.
+1. Sign in to your Azure DevOps organization by going to `https://dev.azure.com/{yourorganization}`.
+
+1. In Azure DevOps, go to **User settings** > **Personal access tokens**:
     
-   ![The User settings menu in Azure DevOps, with the Personal access tokens item](images/ado-pat-settings.png)
+   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command.](images/ado-pat-settings.png)
 
-1. Click **New Token** and enter a name and expiration date for the PAT.
+   The **Personal Access Tokens** page appears:
 
-1. Click **Show all scopes**, scroll down to **Symbols**, and select **Read**.
+   ![The 'Personal Access Tokens' page in Azure DevOps.](images/ado-pat-page.png)
 
-   ![The new PAT configuration screen, with the Symbols read scope enabled](images/ado-pat-config-read.png)
+1. Click **New Token**.  The **Create a new personal access token** dialog box opens:
 
-1. Click **Create**.
+   ![The 'Create a new personal access token' dialog box, with 'Read' scope for Symbols selected.](images/ado-pat-config-read.png)
 
-1. Copy the PAT displayed on the next screen.
+1. In the **Name** text box, enter a name for the PAT, such as **DevTools source maps**.
+
+1. In the **Expiration** section, enter an expiration date for the PAT.
+
+1. In the **Scopes** section, click **Show all scopes** to expand the section.
+
+1. Scroll down to **Symbols**, and then select the **Read** checkbox.
+
+1. Click the **Create** button.  The **Success!** dialog box appears:
+
+   ![The 'Success!' dialog box with the PAT to copy.](images/ado-pat-success-copy-clipboard.png)
+
+1. Click the **Copy to clipboard** button to copy the PAT.  Make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
+
+To learn more about PAT, see [Use personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
 
 <!-- ====================================================================== -->
@@ -58,23 +74,23 @@ To configure DevTools:
 
 1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Symbol Server**.
 
-1. Type the Azure DevOps organization where you created the PAT in the **Azure DevOps organization** field.
+1. In the **Azure DevOps organization** text box, enter the Azure DevOps organization where you created the PAT.
 
-1. Paste your PAT in the **Azure DevOps personal access token** field.
+1. In the **Azure DevOps personal access token** text box, paste your PAT.
 
    ![The Symbol Server configuration screen in DevTools settings](images/ado-pat-devtools.png)
 
-1. Close the Settings panel and click **Reload DevTools**.
+1. Click **x** in the upper right to close the **Settings** panel, and then click the **Reload DevTools** button.
 
 
 <!-- ====================================================================== -->
 ## Step 3: Retrieve original code in DevTools
 
-As you are using DevTools on an official build of your web site for which symbols have been published, you should be able to see your original code in DevTools.
+After the above setup steps, when you use DevTools to work on a build of your web site for which symbols have been published, you can now see your original source code, instead of the transformed code.
 
 *  In the **Console** tool, links from log messages to source files go to the original files, not the compiled files.
 
-*  When stepping through code in the **Sources** tool, the original files are displayed in the **Navigator** pane on the left.
+*  When stepping through code in the **Sources** tool, the original files are listed in the **Navigator** pane on the left.
 
 *  In the **Sources** tool, the links to source files that appear in the **Call Stack** of the **Debugger** pane open the original source files.
 
@@ -82,7 +98,7 @@ As you are using DevTools on an official build of your web site for which symbol
 <!-- ====================================================================== -->
 ## Check the status of downloaded source maps
 
-You can check the status of your source maps by opening the **Source Maps Monitor** tool.
+You can check the status of your source maps by using the **Source Maps Monitor** tool.
 
 To learn more about the **Source Maps Monitor** tool and how it can help monitor which source files requested source maps, and whether those source maps were loaded, see [Source Maps Monitor tool](../source-maps-monitor/source-maps-monitor-tool.md).
 

@@ -10,21 +10,21 @@ ms.date: 03/02/2022
 
 # Securely debug original code by publishing source maps to the Azure Artifacts symbol server
 
-To securely see and work with your original development source code in DevTools rather than the compiled, minified, and bundled production code that's returned by the web server, use source maps served by the Azure Artifacts symbol server.
+To securely<!-- add sentence to define "securely", what are we making not happen?  what's the UX/end-result motivation for "securely"? --> see and work with your original development source code in DevTools rather than the compiled, minified, and bundled production code that's returned by the web server, use source maps served by the Azure Artifacts symbol server.
+
+Publishing your source maps directly to your web server would make your original source code publicly visible.  To avoid making your original source code publicly visible, publish your source maps to the Azure Artifacts symbol server.  This approach makes it possible to use your source maps in DevTools, when debugging your production website, without publishing the source maps to your web server.
 
 Source maps map your compiled production code to your original development source files. In DevTools, you can then see and work with your familiar development source files, instead of the compiled code. To learn more about source mapping and using source maps in DevTools, see [Map the processed code to your original source code, for debugging](source-maps.md).
-
-Publishing your source maps to the Azure Artifacts symbol server makes it possible to use them in DevTools, when debugging your production website without publishing them to your web server and making your original source code available to all.
 
 
 <!-- ====================================================================== -->
 ## Concepts
 
-Source maps must be indexed on the Azure Artifacts symbol server to be later available to DevTools when debugging a production website.
+You must index your source maps on the Azure Artifacts symbol server, so that your source maps are available to DevTools when you debug your production website.
 
-To do this, the `x_microsoft_symbol_client_key` string property needs to be added to your source maps at compilation time. This property contains the lowercase hexadecimal value of the [256-bit SHA-2 hash](https://en.wikipedia.org/wiki/SHA-2) of the corresponding original source file.
+To do this, add the `x_microsoft_symbol_client_key` string property to your source maps at compilation time.  This property contains the lowercase hexadecimal value of the [256-bit SHA-2 hash](https://en.wikipedia.org/wiki/SHA-2) of your corresponding original source file.
 
-DevTools can then compute this hash for each compiled file, and use it to retrieve the right source map from the Azure Artifacts symbol server. In order to securely retrieve source maps, DevTools uses a Personal Access Token to connect to the Azure Artifacts symbol server.
+DevTools is then able to compute this hash for each of your compiled files, and use the hash to retrieve the correct source map from the Azure Artifacts symbol server.  In order to securely retrieve your source maps, DevTools uses a Personal Access Token that you provide, to connect to the Azure Artifacts symbol server.
 
 
 <!-- ====================================================================== -->
@@ -34,21 +34,33 @@ Publishing source maps to the Azure Artifacts symbol server requires a [Personal
 
 To generate a PAT in Azure DevOps:
 
-1. Sign in to your Azure DevOps organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your Azure DevOps organization by going to `https://dev.azure.com/{yourorganization}`.
 
-1. In Azure DevOps go to **User settings** > **Personal access tokens**.
+1. In Azure DevOps, go to **User settings** > **Personal access tokens**:
     
-   ![The User settings menu in Azure DevOps, with the Personal access tokens item](images/ado-pat-settings.png)
+   ![The 'User settings' menu in Azure DevOps, with the 'Personal access tokens' command.](images/ado-pat-settings.png)
 
-1. Click **New Token** and enter a name and expiration date for the PAT.
+   The **Personal Access Tokens** page appears:
 
-1. Click **Show all scopes**, scroll down to **Symbols**, and select **Read & Write**.
+   ![The 'Personal Access Tokens' page in Azure DevOps.](images/ado-pat-page.png)
 
-   ![The new PAT configuration screen, with the Symbols read scope enabled](images/ado-pat-config-write.png)
+1. Click **New Token**.  The **Create a new personal access token** dialog box opens:
 
-1. Click **Create**.
+   ![The 'Create a new personal access token' dialog box, with 'Read & write' scope for Symbols selected.](images/ado-pat-config-write.png)
 
-1. Copy the PAT displayed on the next screen.
+1. In the **Name** text box, enter a name for the PAT, such as **DevTools source maps**.
+
+1. In the **Expiration** section, enter an expiration date for the PAT.
+
+1. In the **Scopes** section, click **Show all scopes** to expand the section.
+
+1. Scroll down to the **Symbols** section, and then select the **Read & write** checkbox.
+
+1. Click the **Create** button.  The **Success!** dialog box appears:
+
+   ![The 'Success!' dialog box with the PAT to copy.](images/ado-pat-success-copy-clipboard.png)
+
+1. Click the **Copy to clipboard** button to copy the PAT.  Make sure to copy the token and store it in a secure location. For your security, it won't be shown again.
 
 To learn more about PAT, see [Use personal access tokens](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
