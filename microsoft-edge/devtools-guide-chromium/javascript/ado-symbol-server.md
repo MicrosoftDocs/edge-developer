@@ -28,6 +28,7 @@ To learn publishing symbols, see [Publish symbols for debugging](/azure/devops/p
 
 Microsoft Edge DevTools can use the published debugging symbols from the Azure Artifacts symbol server to display and debug original source code via source maps.
 
+
 ### Step 1: Get a Symbols PAT from Azure DevOps
 
 To obtain symbols DevTools uses the fetch protocol to talk to Azure DevOps, which requires a valid Personal Access Token (PAT).
@@ -48,6 +49,7 @@ To generate a PAT in Azure DevOps:
 
 1. Copy the PAT displayed on the next screen.
 
+
 ### Step 2: Configure DevTools
 
 Microsoft Edge DevTools now needs to be configured with the PAT to successfully retrieve the debugging symbols.
@@ -64,6 +66,7 @@ To configure DevTools:
 
 1. Close the Settings panel and click **Reload DevTools**.
 
+
 ### Step 3: Retrieve original code in DevTools
 
 As you are using DevTools on an official build of your web site for which symbols have been published, you should be able to see your original code in DevTools.
@@ -78,4 +81,4 @@ You can also check the status of your source maps by opening the **Source Maps M
 <!-- ====================================================================== -->
 ## See also
 
-* [Map preprocessed code to source code](source-maps.md)
+* [Map the processed code to your original source code, for debugging](source-maps.md)

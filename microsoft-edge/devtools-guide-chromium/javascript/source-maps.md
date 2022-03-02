@@ -21,15 +21,16 @@ ms.date: 02/24/2022
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Map the processed code to your original source code, for debugging
-<!-- orig title # Map preprocessed code to source code -->
+<!-- orig title:
+# Map Preprocessed Code to Source Code
+-->
 
-Keep your client-side code readable and debuggable even after you combine, minify, or compile it.  Use source maps to map your compiled code to your source code.
+To see and work with your original source code when you're debugging your code in DevTools, rather than having to work with the compiled and minified version of your code that's returned by the web server, use Source Maps.
 
-### Summary
+Source mapping keeps your client-side code readable and debuggable, even after your build process compiles and minifies your code and combines it into a single file.  Source maps map your compiled, minified code to your original source code files.  In DevTools, you can then read and debug your familiar, original source code, instead of the unrecognizable transformed and compiled code.
 
-*  Use Source Maps to map minified code to source code.  You are then able to read and debug compiled code in the original source.
-*  Only use pre-processors capable of producing Source Maps.
-*  Verify that your web server is able to serve Source Maps.
+To use this source mapping technique, you must use pre-processors that can produce Source Maps.  Make sure your web server can serve Source Maps.
+
 
 <!--
 no longer in original file:
@@ -53,7 +54,7 @@ todo: add link to Set Up CSS & JS Preprocessors when section is available
 <!-- ====================================================================== -->
 ## Use a supported preprocessor
 
-Use a minifier that is capable of creating source maps.  <!--For the most popular options, see the preprocessor support section.  -->  For an extended view, see the [Source maps: languages, tools and other info](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) wiki page.
+Use a minifier that is capable of creating Source Maps.  <!--For the most popular options, see the preprocessor support section.  -->  For an extended view, see the [Source maps: languages, tools and other info](https://github.com/ryanseddon/source-map/wiki/Source-maps:-languages,-tools-and-other-info) wiki page.
 
 <!--
 no longer in original file:
