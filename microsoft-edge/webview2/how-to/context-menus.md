@@ -1,5 +1,5 @@
 ---
-title: Add context menus to a WebView2 app
+title: Customize context menus in WebView2
 description: How to add a right-click menu (context menu) to a WebView2 app.  Add and remove items from the default WebView2 context menus.  Create your own context-menu UI by using data that's passed from the WebView2 control to your app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 03/01/2022
 ---
-# Add context menus to a WebView2 app
+# Customize context menus in WebView2
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
 
@@ -49,11 +49,7 @@ Context menus use menu item IDs, so the host can pass the user selection to WebV
 
 Define where to display the context menu, by using relative window position.
 
-
-<!-- ====================================================================== -->
-## Example: Adding a custom context menu
-
-You can use the data provided in the Event arguments of [add_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) (C++) or `CoreWebView2.ContextMenuRequested` (C#) to display a custom context menu with entries of your choice.  For this case, you specify `Handled` to be `true` and request a deferral. 
+You can use the data provided in the Event arguments of `ContextMenuRequested` to display a custom context menu with entries of your choice.  For this case, you handle the event and request a deferral.
 
 This deferred event should be completed at one of two possible times:
 
@@ -64,6 +60,41 @@ This deferred event should be completed at one of two possible times:
 
 <!-- ------------------------------- -->
 # [C++](#tab/cpp)
+
+You can use the data provided in the Event arguments of [add_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) (C++) to display a custom context menu with entries of your choice.  For this case, you specify `Handled` to be `true` and request a deferral. 
+
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind) -  Specifies the menu item kind for the `ICoreWebView2ExperimentalContextMenuItem::get_Kind` method.  <!--probably like c#: Represents the active element that caused the context menu request.  For example, if there is a selection with multiple images, audio, and text, the element that the end user right-clicks within the selection will be the option represented by this enum. -->
+   
+* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind) - Kinds of context for which the context menu was created for the `ICoreWebView2ContextMenuTarget::get_Kind` method.
+
+<!-- ------------------------------- -->
+# [C#](#tab/csharp)
+
+You can use the data provided in the Event arguments of  `CoreWebView2.ContextMenuRequested` (C#) to display a custom context menu with entries of your choice.  For this case, you specify `Handled` to be `true` and request a deferral. 
+
+* **[CoreWebView2ContextMenuRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)** - Event args for the `ContextMenuRequested` event.
+   * [ContextMenuTarget Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.contextmenutarget) - Gets the [CoreWebView2ContextMenuTarget Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutarget) instance that contains target information associated with the requested context menu, which includes the context selected and the appropriate data for the actions of a context menu.
+   * [GetDeferral Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral) - Returns a `CoreWebView2Deferral` object.
+   * [SelectedCommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.selectedcommandid) - Gets or sets the selected command for the WebView to execute.  The value is obtained via the  [CoreWebView2ContextMenuItem.CommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.commandid).
+
+* **[CoreWebView2ContextMenuItemKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)** - Kinds of menu items for the Kind property.
+
+* **[CoreWebView2ContextMenuTargetKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutargetkind)** - Kinds of context for which the context menu was created for the Kind property.  Represents the active element that caused the context menu request.  For example, if there is a selection with multiple images, audio, and text, the element that the end user right-clicks within the selection will be the option represented by this enum.
+
+---
+
+
+<!-- ====================================================================== -->
+## Example: Adding a custom context menu
+
+The following sample presents the WebView2 context menu in the Win32/WPF context menu format.
+
+
+
+<!-- ------------------------------- -->
+# [C++](#tab/cpp)
+
+
 
 ```cpp
 m_webView2_4 = m_webView.try_query<ICoreWebView2_4>();
