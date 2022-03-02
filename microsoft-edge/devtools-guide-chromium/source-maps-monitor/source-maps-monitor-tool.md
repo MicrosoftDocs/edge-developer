@@ -14,7 +14,7 @@ Use the **Source Maps Monitor** tool to monitor which source files on your webpa
 
 To try this feature:
 
-1. In a new tab or window, follow the instructions in [Map preprocessed code to source code](../javascript/source-maps.md).
+1. In a new tab or window, follow the instructions in [Map preprocessed code to source code](../javascript/source-maps.md), and then continue below.
 
 1. Close the popup dialog box that the demo opens.
 
