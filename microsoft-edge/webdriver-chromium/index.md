@@ -27,7 +27,7 @@ WebDriver allows you to automate Microsoft Edge by simulating user interaction. 
 To automate Microsoft Edge with WebDriver to simulate user interaction, you need three components:
 
 *  Microsoft Edge.
-*  Microsoft Edge Driver.
+*  Microsoft Edge WebDriver.
 *  A WebDriver testing framework.
 
 The functional relationship between these components is as follows:
@@ -35,27 +35,27 @@ The functional relationship between these components is as follows:
 | Technology | Role |
 |---|---|
 | WebDriver | A W3C standard for a platform- and language-neutral wire protocol.  This protocol allows out-of-process programs to remotely instruct the behavior of web browsers. |
-| Microsoft Edge Driver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge.  Test authors write tests that use WebDriver commands that Microsoft Edge Driver receives.  Microsoft Edge Driver is then responsible for communicating that command to the browser. |
-| A WebDriver testing framework | Test authors use a testing framework to write end-to-end tests and automate browsers.  Provides a language-specific interface that translates your code into commands that are sent to Microsoft Edge Driver.  WebDriver testing frameworks exist for all major platforms and languages.  One such framework is Selenium. |
+| Microsoft Edge WebDriver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge.  Test authors write tests that use WebDriver commands that Microsoft Edge WebDriver receives.  Edge WebDriver is then responsible for communicating that command to the browser. |
+| A WebDriver testing framework | Test authors use a testing framework to write end-to-end tests and automate browsers.  Provides a language-specific interface that translates your code into commands that are sent to Edge WebDriver.  WebDriver testing frameworks exist for all major platforms and languages.  One such framework is Selenium. |
 | Internet Explorer Driver | An open-source implementation of the WebDriver protocol specifically for Internet Explorer.  To run legacy end-to-end tests for Internet Explorer Mode, we recommend using Internet Explorer Driver. |
 
 The following sections describe how to get started with WebDriver for Microsoft Edge.
 
 
 <!-- ====================================================================== -->
-## Download Microsoft Edge Driver
+## Download Microsoft Edge WebDriver
 
-To begin writing automated tests, make sure the Microsoft Edge Driver version you install matches your browser version, as follows:
+To begin writing automated tests, make sure the Edge WebDriver version you install matches your browser version, as follows:
 
 1.  Go to `edge://settings/help` and note your version of Microsoft Edge.
 
     :::image type="content" source="./media/microsoft-edge-version.msft.png" alt-text="The build number for Microsoft Edge on April 15, 2021." lightbox="./media/microsoft-edge-version.msft.png":::
 
-1.  Go to [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
+1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
 
 1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge.
 
-    :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The `Get the latest version` section of the Microsoft Edge Driver webpage." lightbox="./media/microsoft-edge-driver-install.msft.png":::
+    :::image type="content" source="./media/microsoft-edge-driver-install.msft.png" alt-text="The `Get the latest version` section of the Microsoft Edge WebDriver webpage." lightbox="./media/microsoft-edge-driver-install.msft.png":::
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
@@ -63,7 +63,7 @@ To begin writing automated tests, make sure the Microsoft Edge Driver version yo
 <!-- ====================================================================== -->
 ## Choose a WebDriver testing framework
 
-After downloading Microsoft Edge Driver, the last component you must download is a WebDriver testing framework.  Test authors use WebDriver testing frameworks to write end-to-end tests and automate browsers.  A WebDriver testing framework provides a language-specific interface that translates your code into commands that Microsoft Edge Driver runs in Microsoft Edge.  WebDriver testing frameworks exist for all major platforms and languages, such as Python, Java, C#, Ruby, and JavaScript.
+After downloading Edge WebDriver, the last component you must download is a WebDriver testing framework.  Test authors use WebDriver testing frameworks to write end-to-end tests and automate browsers.  A WebDriver testing framework provides a language-specific interface that translates your code into commands that Edge WebDriver runs in Microsoft Edge.  WebDriver testing frameworks exist for all major platforms and languages, such as Python, Java, C#, Ruby, and JavaScript.
 
 This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using a WebDriver testing framework other than Selenium, consult the official documentation for your framework of choice.
 
@@ -212,13 +212,13 @@ const { Builder, By } = require('selenium-webdriver');
 
 * * *
 
-### Manage and configure the Microsoft Edge Driver service
+### Manage and configure the Edge WebDriver service
 
-When you create a new `EdgeDriver` object to start a Microsoft Edge session, Selenium launches a new Microsoft Edge Driver process that the `EdgeDriver` object communicates with.  The Microsoft Edge Driver process is closed when you call the `EdgeDriver` object's `Quit` method.  Letting each `EdgeDriver` object manage its own driver process can be inefficient if you have many tests, because each test must wait for a new driver process to launch.  Instead, you can create a single Microsoft Edge Driver process and then reuse it for multiple tests.
+When you create a new `EdgeDriver` object to start a Microsoft Edge session, Selenium launches a new Edge WebDriver process that the `EdgeDriver` object communicates with.  The Edge WebDriver process is closed when you call the `EdgeDriver` object's `Quit` method.  Letting each `EdgeDriver` object manage its own driver process can be inefficient if you have many tests, because each test must wait for a new driver process to launch.  Instead, you can create a single Edge WebDriver process and then reuse it for multiple tests.
 
-Selenium uses the `EdgeDriverService` class to manage a Microsoft Edge Driver process.  You can create an `EdgeDriverService` once before running your tests, and then pass this `EdgeDriverService` object to the `EdgeDriver` constructor when creating a new `EdgeDriver` object.  When you pass an `EdgeDriverService` to the `EdgeDriver` constructor, the `EdgeDriver` object will use this `EdgeDriverService`, instead of creating a new one.
+Selenium uses the `EdgeDriverService` class to manage an Edge WebDriver process.  You can create an `EdgeDriverService` once before running your tests, and then pass this `EdgeDriverService` object to the `EdgeDriver` constructor when creating a new `EdgeDriver` object.  When you pass an `EdgeDriverService` to the `EdgeDriver` constructor, the `EdgeDriver` object will use this `EdgeDriverService`, instead of creating a new one.
 
-You can also use `EdgeDriverService` to configure command-line options for the Microsoft Edge Driver process, as shown below.
+You can also use `EdgeDriverService` to configure command-line options for the Edge WebDriver process, as shown below.
 
 The following snippet creates a new `EdgeDriverService` and enables verbose log output:
 
@@ -368,7 +368,7 @@ let driver = edge.Driver.createSession(options);
 
 ### Docker
 
-If you use [Docker](https://hub.docker.com), run the following command to download a pre-configured image that has Microsoft Edge and [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) pre-installed.
+If you use [Docker](https://hub.docker.com), run the following command to download a pre-configured image that has Microsoft Edge and [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) pre-installed.
 
 ```console
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
@@ -380,11 +380,11 @@ For more information, see the [msedgedriver container on Docker Hub](https://hub
 <!-- ====================================================================== -->
 ## Application Guard
 
-Trusted sites that use Microsoft Defender Application Guard can be automated using Microsoft Edge Driver.  Microsoft Defender Application Guard is also called _Application Guard_, for short.
+Trusted sites that use Microsoft Defender Application Guard can be automated using Edge WebDriver.  Microsoft Defender Application Guard is also called _Application Guard_, for short.
 
-Untrusted sites that use Application Guard cannot be automated or manipulated using Microsoft Edge Driver.  Application Guard launches untrusted sites in a container, and this container doesn't expose the remote debugging port that Microsoft Edge Driver needs to communicate with the site.
+Untrusted sites that use Application Guard cannot be automated or manipulated using Edge WebDriver.  Application Guard launches untrusted sites in a container, and this container doesn't expose the remote debugging port that Edge WebDriver needs to communicate with the site.
 
-Your enterprise administrator defines what are trusted sites, including cloud resources and internal networks.  Sites that aren't in the trusted sites list are considered _untrusted_.  Microsoft Edge Driver can automate both InPrivate windows, and sites in the trusted sites list.
+Your enterprise administrator defines what are trusted sites, including cloud resources and internal networks.  Sites that aren't in the trusted sites list are considered _untrusted_.  Edge WebDriver can automate both InPrivate windows, and sites in the trusted sites list.
 
 For more information about Application Guard, see:
 
@@ -395,7 +395,7 @@ For more information about Application Guard, see:
 <!-- ====================================================================== -->
 ## Opt out of diagnostic data collection
 
-By default, Microsoft Edge Driver sends diagnostic data such as the status of the [New Session WebDriver command](https://www.w3.org/TR/webdriver2/#new-session) to Microsoft.  To turn off diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Microsoft Edge Driver collects, see the [Microsoft Edge Privacy Whitepaper](/microsoft-edge/privacy-whitepaper#microsoft-edge-driver).
+By default, Edge WebDriver sends diagnostic data such as the status of the [New Session WebDriver command](https://www.w3.org/TR/webdriver2/#new-session) to Microsoft.  To turn off diagnostic data collection for Edge WebDriver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Edge WebDriver collects, see the [Microsoft Edge Privacy Whitepaper](/microsoft-edge/privacy-whitepaper#microsoft-edge-driver).
 
 
 <!-- ====================================================================== -->
@@ -405,7 +405,7 @@ These are troubleshooting considerations when using WebDriver to automate Micros
 
 ### Developer Tools Availability policy
 
-If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`,  [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
+If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`,  [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
 
 ### Upgrading from Selenium 3 to Selenium 4
 
