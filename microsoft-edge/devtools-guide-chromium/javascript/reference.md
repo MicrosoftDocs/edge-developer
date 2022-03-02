@@ -22,9 +22,9 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # JavaScript debugging features
 
-This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints](./breakpoints.md).
+This article covers how to use the debugger in Microsoft Edge DevTools, including how to set a line-of-code breakpoint.  To set other types of breakpoints, see [Pause your code with breakpoints](breakpoints.md).
 
-To learn the basics of debugging, see [Get started debugging JavaScript](./index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
+To learn the basics of debugging, see [Get started debugging JavaScript](index.md), which is a tutorial that uses an existing, form-based webpage.  The tutorial has screen captures, so you can skim it.  You can easily try out the debugger features by using the demo webpage.
 
 
 <!-- ====================================================================== -->
@@ -70,7 +70,7 @@ To set a line-of-code breakpoint:
 
    :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
 
-Line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  See [Pause your code with breakpoints](./breakpoints.md).
+Line-of-code breakpoints may be inefficient to set, especially if you don't know exactly where to look, or if your codebase is large.  To save time when debugging, learn how and when to use the other types of breakpoints.  See [Pause your code with breakpoints](breakpoints.md).
 
 
 <!-- ====================================================================== -->
@@ -310,15 +310,15 @@ To mark a single script or pattern of scripts from **Settings**:
 
 If you find yourself running the same debug code in the Console over and over, consider Snippets.  Snippets are runtime scripts that you author, store, and run within DevTools.
 
-See [Run snippets of JavaScript on any webpage](./snippets.md).
+See [Run snippets of JavaScript on any webpage](snippets.md).
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [Get started debugging JavaScript](./index.md) - A simple, short tutorial using existing code, with screen captures.
+*  [Get started debugging JavaScript](index.md) - A simple, short tutorial using existing code, with screen captures.
 *  [Sources tool overview](../sources/index.md) - The **Sources** tool includes the JavaScript debugger and editor.
-*  [Disable JavaScript](./disable.md).
+*  [Disable JavaScript](disable.md).
 
 
 <!-- ====================================================================== -->

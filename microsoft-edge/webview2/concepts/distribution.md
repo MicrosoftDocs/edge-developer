@@ -1,5 +1,5 @@
 ---
-title: Distribute a WebView2 app and the WebView2 Runtime
+title: Distribute your app and the WebView2 Runtime
 description: How to distribute the WebView2 Runtime when releasing an app that uses Microsoft Edge WebView2, either by distributing the automatically updated Evergreen Runtime, or distributing a Fixed Version of the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 1/20/2022
 ---
-# Distribute a WebView2 app and the WebView2 Runtime
+# Distribute your app and the WebView2 Runtime
 
 When releasing an app that uses Microsoft Edge WebView2, you need distribute the WebView2 Runtime, either by distributing the automatically updated _Evergreen_ Runtime, or by distributing a _Fixed Version_ of the Runtime.
 
@@ -63,7 +63,7 @@ Cons:
 
 The [Download the WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2#download-section) section of the **Microsoft Edge WebView2** page provides several options for distributing the WebView2 Runtime onto client machines.  Understanding the options at this page provides a good introduction, to help decide which approach you want to use.
 
-:::image type="content" source="../media/runtime-distrib-options.png" alt-text="Options for distributing and updating the WebView2 Runtime." lightbox="../media/runtime-distrib-options.png":::
+![Options for distributing and updating the WebView2 Runtime.](../media/runtime-distrib-options.png)
 
 *  The **Evergreen Bootstrapper** section of the page provides a small Evergreen Runtime bootstrapper that runs on the client machine, for online users.  The bootstrapper downloads and installs the appropriate WebView2 Evergreen Runtime onto the client.  You can use the bootstrapper a couple different ways:
 
@@ -87,7 +87,7 @@ If you want to use the Fixed Version distribution mode, you can skip the next co
 
 ### Servicing the WebView2 Runtime through Windows Server Update Services (WSUS)
 
-See [Windows Server Update Services (WSUS)](enterprise.md#windows-server-update-services-wsus) in _Manage WebView2 applications_.
+See [Windows Server Update Services (WSUS)](enterprise.md#windows-server-update-services-wsus) in _Enterprise management of WebView2 Runtimes_.
 
 ### Runtime or browser support during development or production
 
@@ -95,7 +95,7 @@ During development and testing, a WebView2 app can use either option as the back
 
 *  The WebView2 Runtime.  The Runtime generally provides the same web platform capabilities and update cadence as the Stable channel of the Microsoft Edge browser.  Use the WebView2 Runtime in a production environment or to develop and test against the web platform that your users have today.
 
-*  A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Switch to a preview channel to test upcoming APIs and features](../how-to/set-preview-channel.md).
+*  A preview (Insider) Microsoft Edge browser channel.  These Microsoft Edge preview channels are Beta, Dev, and Canary.  Use this approach to test your app for forward-compatibility, so that you know if a breaking change is coming that will require updating your app.  See [Test upcoming APIs and features](../how-to/set-preview-channel.md).
 
 A production release of a WebView2 app can only use the WebView2 Runtime as the backing web platform, not Microsoft Edge.
 
@@ -127,7 +127,7 @@ The Evergreen distribution mode ensures that your WebView2 app is taking advanta
 
 When you use the Evergreen distribution mode of the WebView2 Runtime, your WebView2 app assumes that clients have the latest Runtime.  Your app cannot require a particular version of the WebView2 Runtime for all apps on the client.  By the time a new WebView2 SDK package is released, a compatible version of the WebView2 Runtime has already been distributed to clients.  Therefore it's OK for your WebView2 app to use the APIs that are in the latest version of the WebView2 SDK.
 
-See [Understanding browser versions and WebView2](./versioning.md).
+See [Understanding browser versions and WebView2](versioning.md).
 
 
 ### Deploying the Evergreen WebView2 Runtime
@@ -353,15 +353,13 @@ To use the Fixed Version distribution mode:
 <!-- ====================================================================== -->
 ## Files to ship with the app
 
-The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture.
+The `WebView2Loader` code needs to be shipped with the app.  This can be done by [statically linking](../how-to/static.md) `WebView2Loader.lib` into the app binaries, or by including the `WebView2Loader.dll` that matches the app's architecture. Usually this is handled automatically for you by Visual Studio when using the `.targets` file in the WebView2 SDK, but there may be cases when you need to manually specify what files to publish with your app.
 
 `WebView2Loader.dll` is a native and architecture-specific binary, so you need to include all flavors of this binary that you expect your app to run in.  For example:
 
 *  For x86, you would include the x86 version of `WebView2Loader.dll`.
 
-*  For AnyCPU you would include the x86, x64, and arm64 versions of `WebView2Loader.dll`.
-
-*  For a managed app, the correct version of `WebView2Loader.dll` is loaded from the appropriate architecture-specific folder.
+*  For a managed app using AnyCPU, you would include the x86, x64, and arm64 versions of `WebView2Loader.dll`. The correct version of `WebView2Loader.dll` is loaded from the appropriate architecture-specific folder.
 
 Example native app folder structure:
 
@@ -372,7 +370,7 @@ Example native app folder structure:
 
 For .NET managed apps, you also need to include the WebView2 .NET assemblies for the core WebView2 functionality (`Microsoft.Web.WebView2.Core.dll`) and for the WPF/WinForms-specific functionality (`Microsoft.Web.WebView2.Winforms.dll` or `Microsoft.Web.WebView2.WPF.dll`).
 
-Example native app folder structure:
+Example managed app folder structure:
 
 ```
 \<myApp>

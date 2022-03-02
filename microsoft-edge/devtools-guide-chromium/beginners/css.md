@@ -54,7 +54,7 @@ You're building a real website.
 
 Before doing this tutorial:
 
-*  Walk through the tutorial [Get started with HTML and the DOM](./html.md), or make sure that you have understanding of HTML and the DOM already.
+*  Walk through the tutorial [Get started with HTML and the DOM](html.md), or make sure that you have understanding of HTML and the DOM already.
 *  Download the [Microsoft Edge](https://www.microsoftedgeinsider.com) web browser.  The following tutorial uses a set of web development tools, called the Microsoft Edge DevTools, that are built into Microsoft Edge.
 
 
@@ -64,7 +64,7 @@ Before doing this tutorial:
 To create your site, first do the following steps to set up your code.
 
 > [!NOTE]
-> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get started with HTML and the DOM](./html.md).
+> If you have already completed the first tutorial in the series, skip to the next section.  Continue using your code from the last tutorial, [Get started with HTML and the DOM](html.md).
 
 1. Open the [source code](https://glitch.com/edit/#!/cooked-amphibian?path=index.html).  The tab of your browser that's currently selected is called the **editing tab**.
 
@@ -96,7 +96,7 @@ The following is the HTML and CSS code used to create the paragraph in the previ
 </p>
 ```
 
-The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get started with HTML and the DOM](./html.md) before attempting the following sections.
+The HTML attribute `style="border: 1px dashed red; padding: 5px;"` might look new to you.  The rest should look familiar.  If not, complete [Get started with HTML and the DOM](html.md) before attempting the following sections.
 
 
 <!-- ====================================================================== -->
@@ -245,7 +245,7 @@ To add a declaration to an existing ruleset:
 
    :::image type="content" source="../media/beginners-css-add1.msft.png" alt-text="Inspect the Home link." lightbox="../media/beginners-css-add1.msft.png":::
 
-   DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from the tutorial [Get started with HTML and the DOM](./html.md).
+   DevTools opens up alongside your page.  The code that represents the Home link, `<a href="/">Home</a>` is highlighted blue in the DOM Tree.  The code snippet and preview should be familiar from the tutorial [Get started with HTML and the DOM](html.md).
 
    In the following figure, the `font-family: 'Courier New', Courier, serif` declaration that you previously added to `contact.html` is displayed in the **Styles** tab below the DOM Tree:
 
@@ -255,15 +255,15 @@ To add a declaration to an existing ruleset:
 
    :::image type="content" source="../media/beginners-css-add3.msft.png" alt-text="The Styles tab is to the right of the DOM Tree." lightbox="../media/beginners-css-add3.msft.png":::
 
-1. Select the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration.
+1. Select the empty line below `font-family: 'Courier New', Courier, Serif` to add a new declaration:
 
    :::image type="content" source="../media/beginners-css-add4.msft.png" alt-text="Add a new declaration." lightbox="../media/beginners-css-add4.msft.png":::
 
-1. Type `color` and then press `Enter`.  The autocomplete UI suggests options as you type.
+1. Type **color** and then press `Enter`.  The autocomplete UI suggests options as you type:
 
    :::image type="content" source="../media/beginners-css-add5.msft.png" alt-text="Type 'color'." lightbox="../media/beginners-css-add5.msft.png":::
 
-1. Type `magenta` and press `Enter`.  All of the text on the contact page is now magenta.
+1. Type **magenta** and then press `Enter`.  All of the text on the contact page is now magenta:
 
    :::image type="content" source="../media/beginners-css-add6.msft.png" alt-text="Type 'magenta'." lightbox="../media/beginners-css-add6.msft.png":::
 
@@ -271,11 +271,11 @@ To add a declaration to an existing ruleset:
 
 To edit existing declarations in DevTools:
 
-1. Select the magenta square next to `magenta`.  A color picker pops up.
+1. Select the magenta square next to `magenta`.  A color picker pops up:
 
    :::image type="content" source="../media/beginners-css-edit1.msft.png" alt-text="The Color Picker." lightbox="../media/beginners-css-edit1.msft.png":::
 
-1. Use the color picker to change the font text to a color that you like.
+1. Use the color picker to change the font text to a color that you like:
 
    :::image type="content" source="../media/beginners-css-edit2.msft.png" alt-text="Change the font color to purple with the Color Picker." lightbox="../media/beginners-css-edit2.msft.png":::
 
@@ -295,11 +295,11 @@ To add new rulesets in DevTools:
 
 1. Click the empty area between the brackets to add a new declaration.
 
-1. Type `background-color` for the declaration name and press `Enter`.
+1. Type **background-color** for the declaration name and press `Enter`.
 
    :::image type="content" source="../media/beginners-css-rule3.msft.png" alt-text="Type 'background-color'." lightbox="../media/beginners-css-rule3.msft.png":::
 
-1. Type `green` for the declaration value and press `Enter`.
+1. Type **green** for the declaration value and press `Enter`.
 
    :::image type="content" source="../media/beginners-css-rule4.msft.png" alt-text="Type 'green'." lightbox="../media/beginners-css-rule4.msft.png":::
 

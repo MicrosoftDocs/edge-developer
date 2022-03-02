@@ -22,7 +22,7 @@ ms.date: 06/24/2021
    limitations under the License.  -->
 # Find and fix problems using the Issues tool
 
-In Microsoft Edge DevTools, the **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues.
+The **Issues** tool automatically analyzes the current webpage, reports issues grouped by type, and provides documentation to help explain and resolve the issues.
 
 The **Issues** tool provides feedback in the following categories:
 *  Accessibility.
