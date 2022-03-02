@@ -107,13 +107,15 @@ When [debugging your code](index.md#step-4-step-through-the-code) and source map
 <!-- ====================================================================== -->
 ## Use `//# sourceURL` to name evaluated files in the Sources tool
 
-Although it's not part of the source map specification, the `//# sourceURL` pragma, such as `// # sourceURL=myFileName` allows you to make development much easier when working with evaluated JavaScript files.
+The `//# sourceURL` pragma, such as `// # sourceURL=myFileName`, is a convention that allows you to make development much easier when working with evaluated JavaScript files.  There can be space characters before or after the `#`.
 
-When loading JavaScript files and evaluating them using the `eval()` function, the **Sources** tool does not have a file name to display these files in the **Navigator** pane. By including the following special comment in your code, you can name evaluated files and inline scripts and styles so each appears as more logical names in the **Sources** tool.  For example:
+When loading JavaScript files and evaluating them using the `eval()` function, the **Sources** tool doesn't have a file name to display these files in the **Navigator** pane. By including the following special comment in your code, you can name evaluated files, inline scripts, and styles, so that each one appears as a recognizable file name in the **Sources** tool.  For example:
 
 ```javascript
 //# sourceURL=source.coffee
 ```
+
+<!-- This pragma isn't part of the source map specification. -->
 
 
 <!-- ====================================================================== -->
