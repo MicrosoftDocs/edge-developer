@@ -1,5 +1,5 @@
 ---
-title: Map preprocessed code to source code
+title: Map the processed code to your original source code, for debugging
 description: Keep your client-side code readable and debuggable even after you combine, minify, or compile it.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -20,7 +20,8 @@ ms.date: 02/24/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Map preprocessed code to source code
+# Map the processed code to your original source code, for debugging
+<!-- orig title # Map preprocessed code to source code -->
 
 Keep your client-side code readable and debuggable even after you combine, minify, or compile it.  Use source maps to map your compiled code to your source code.
 

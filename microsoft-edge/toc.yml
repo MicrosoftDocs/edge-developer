@@ -254,7 +254,7 @@
                   href: devtools-guide-chromium/javascript/disable.md
                   displayName: Sources tool
 
-                - name: Map preprocessed code to source code
+                - name: Map the processed code to your original source code, for debugging
                   href: devtools-guide-chromium/javascript/source-maps.md
                   displayName: Sources tool, source maps
 

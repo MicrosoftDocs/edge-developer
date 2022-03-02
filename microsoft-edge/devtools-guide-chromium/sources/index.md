@@ -120,7 +120,7 @@ A file that overrides a file that is returned by the server is indicated by a pu
 #### See also
 
 *  [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
-*  [Map preprocessed code to source code](../javascript/source-maps.md)
+*  [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
 
 ### Using the Content scripts tab for Microsoft Edge extensions
 
