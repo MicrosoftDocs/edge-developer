@@ -106,15 +106,12 @@ See [blog post]() and [doc page]().
 
 We previously added an improved version of Layers in the **3D View** tool, and we're removing the stand-alone version (the **Layers** tool) after users have enough time to make the transition. The **Layers** tool will display a link that redirects you to the **Composited Layers** view within the **3D View** tool.  You can find all the functionality from the **Layers** tool there.
 
-![The 3D View tool.](../../media/2022/03/layers-3d-view-tool.png)
-<!-- 
-Open any tab
-Open DevTools (F12)
-Open the Layers tool in Quick View
-Click on the link (this will pop open 3D View with Composited Layers open)
-Screenshot the Layers tool and 3D View -->
+<!-- ![The Layers tool now links to the 3D View tool.](../../media/2022/03/layers-link-3d-view-tool.png) -->
 
-<!-- layersmove.gif -->
+In the following image, the **Focus Mode** UI is shown.  **Focus Mode** has a **Quick View** area at the bottom, in place of the **Drawer**.  The **Layers** tool, which is shown open in **Quick View**, contains only a link, to open the **3D View** tool above it:
+
+![The Layers tool now links to the 3D View tool with the Composited Layers view open.](../../media/2022/03/layers-3d-view-tool.png)
+<!-- work item > layersmove.gif -->
 
 See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
 
