@@ -29,4 +29,5 @@ To try this feature:
 ## See also
 
 * [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
-* [Debug original code using the Azure Artifacts symbol server](../javascript/ado-symbol-server.md)
+* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../javascript/publish-source-maps-to-azure.md)
+* [Securely debug original code by using Azure Artifacts symbol server source maps](../javascript/consume-source-maps-from-azure.md)

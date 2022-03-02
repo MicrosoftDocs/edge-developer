@@ -92,5 +92,4 @@ To learn more about the **Source Maps Monitor** tool and how it can help monitor
 
 * [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](publish-source-maps-to-azure.md)
 * [Map the processed code to your original source code, for debugging](source-maps.md)
-
-
+* [Source Maps Monitor tool](../source-maps-monitor/source-maps-monitor-tool.md)

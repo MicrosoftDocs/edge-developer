@@ -119,7 +119,8 @@ When loading JavaScript files and evaluating them using the `eval()` function, t
 <!-- ====================================================================== -->
 ## See also
 
-* [Debug original code using the Azure Artifacts symbol server](ado-symbol-server.md)
+* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](publish-source-maps-to-azure.md)
+* [Securely debug original code by using Azure Artifacts symbol server source maps](consume-source-maps-from-azure.md)
 * [Source Maps Monitor tool](../source-maps-monitor/source-maps-monitor-tool.md)
 
 
