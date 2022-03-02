@@ -84,13 +84,15 @@ Source maps are enabled by default.<!-- (as of Microsoft Edge 39)-->
 
 To make sure that source maps are enabled:
 
-1. Open DevTools (**F12**).
+1. To open DevTools, in Microsoft Edge, right-click a webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
-1. Click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
+1. In DevTools, click **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Preferences**.
 
 1. In the **Preferences** page, in the **Sources** section, make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 
 ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected.](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
+
+1. In the upper right of **Settings**, click the **Close** (**x**) button.
 
 
 ### Debugging with source maps
@@ -109,11 +111,11 @@ When [debugging your code](index.md#step-4-step-through-the-code) and source map
 
 <!-- this section doesn't mention displayName, why is `displayName` in the heading? -->
 
-Although it's not part of the source map spec, the `#sourceURL` pragma allows you to make development much easier when working with evals.  The helper is displayed similar to the `//# sourceMappingURL` property.  The `#sourceURL` pragma is mentioned in the source map V3 specifications.
+Although it's not part of the source map spec, the `#sourceURL` pragma allows you to make development much easier when working with evals.  The helper <!-- what does "the helper" mean?  where? what is the context?--> is displayed<!--where?--> similar to the `//# sourceMappingURL` property.  The `#sourceURL` pragma is mentioned in the source map V3 specifications.
 
-As the demo page below says, cently the comment pragma has changed from //@ to //# due to issues with Internet Explorer's condition compiliation comments.  See [Issues](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-issues) in _Introduction to JavaScript Source Maps_ for specific versions of dev tools that support the new, `#sourceURL` syntax.
+As the demo page below says, the comment pragma has changed from `//@` to `//#` due to issues with Internet Explorer's conditional compilation comments.  See [Issues](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-issues) in _Introduction to JavaScript Source Maps_ for specific versions of dev tools that support the new, `#sourceURL` syntax.
 
-By including the following special comment in your code, which is evaled, you can name evals and inline scripts and styles so each appears as more logical names in your DevTools.  For example:
+By including the following special comment in your code, which is evaled,<!--legit industry/context term, "evaled"?--> you can name evals and inline scripts and styles so each appears as more logical names in your DevTools.  For example:
 
 ```javascript
 //# sourceURL=source.coffee
@@ -149,18 +151,21 @@ To generate and see a `#sourceURL` pragma value:
 
 1. In the **Page** tab, click **coffee-script.js** and scroll through the client-side Coffee Script code - it's long, yet line numbering stops at 8, and there are 9 hits on "@".
 
-<!-- why use a demo page to demonstrate this?
-are we supposed to know what "coffee script" is?
+<!--
+Is this demo page introducing 10x confusion as clarification?
+Why use a demo page to demonstrate this?
+Is this an outdated version of client-side Coffee Script in the .js file of the demo page?
+Are we supposed to know what "coffee script" is?
 Top of demo page claims "#" is produced; bottom explains the change of standard, why didn't the code of CoffeeScript get updated to output # instead of @, by the demo creator?
-lots of typos in demo page.
-where's the "bug" that produces @ when it should produce # instead?
-how does this demo page support the lead-in above?  
-need to explain the png/ explain the demo to total newbies who have no idea what's going on here.  
-What is the purpose of this demo page?  
+Lots of typos in demo page.
+Where's the "bug" that produces @ when it should produce # instead?
+How does this demo page support the lead-in above?  
+Need to explain the png/ explain the demo to total newbies who have no idea what's going on here.  
+What is the purpose of this demo page?
 Where did the script code in the Coff2 listing in Devtools come from?  
 Are we seeing all the code - which code caused the @sourceURL?  
 Do you have to write a demo page like this to get //@ sourceURL?  
-what's the point of this demonstration (which returns outdated @ instead of #)? -->
+What's the point of this demonstration (which returns outdated @ instead of #)? -->
 
 
 <!-- ====================================================================== -->
