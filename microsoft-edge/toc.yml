@@ -512,9 +512,9 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
                   displayName: Sensors tool, Device Emulation
 # Source maps monitor tool ----------------------------------------------------
-            - name: Source maps monitor tool
+            - name: Source Maps Monitor tool
               items:
-                - name: Source maps monitor tool  # no article yet
+                - name: Source Maps Monitor tool  # no article yet
                   href: devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
                   displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
