@@ -150,7 +150,7 @@ In previous versions of Microsoft Edge, assistive technology would only announce
 5. Draw a red highlight around the "Color type" section and all the radio buttons in that section.
 -->
 
-To learn more about how using assistive technology with DevTools, read [Navigate DevTools with assistive technology](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/accessibility/navigation).
+To learn more about how using assistive technology with DevTools, read [Navigate DevTools with assistive technology](../../../accessibility/navigation.md).
 
 
 <!-- ====================================================================== -->
