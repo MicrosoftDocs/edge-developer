@@ -105,11 +105,13 @@ When [debugging your code](index.md#step-4-step-through-the-code) and source map
 
 
 <!-- ====================================================================== -->
-## @sourceURL and displayName
+## #sourceURL and displayName
 
 <!-- this section doesn't mention displayName, why is `displayName` in the heading? -->
 
-Although it's not part of the source map spec, the `@sourceURL`<!-- what?  property?  flag? what kind of thing is it?  a property? --> allows you to make development much easier when working with evals.  The helper is displayed similar to the `//# sourceMappingURL` property and<!-- which one? specify --> is mentioned in the source map V3 specifications.
+Although it's not part of the source map spec, the `#sourceURL` pragma allows you to make development much easier when working with evals.  The helper is displayed similar to the `//# sourceMappingURL` property.  The `#sourceURL` pragma is mentioned in the source map V3 specifications.
+
+As the demo page below says, cently the comment pragma has changed from //@ to //# due to issues with Internet Explorer's condition compiliation comments.  See [Issues](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-issues) in _Introduction to JavaScript Source Maps_ for specific versions of dev tools that support the new, `#sourceURL` syntax.
 
 By including the following special comment in your code, which is evaled, you can name evals and inline scripts and styles so each appears as more logical names in your DevTools.  For example:
 
@@ -117,12 +119,7 @@ By including the following special comment in your code, which is evaled, you ca
 //# sourceURL=source.coffee
 ```
 
-<!-- how does this demo page support the lead-in above? -->
-
-The above shows `#` two times, but the following demo page uses `@` instead.
-<!-- why? -->
-
-To generate and see an `@sourceURL` value:
+To generate and see a `#sourceURL` pragma value:
 
 1. Open the demo webpage [Name those evals](https://www.thecssninja.com/demo/source_mapping/compile.html) in a new browser window or tab.
 
@@ -136,7 +133,7 @@ To generate and see an `@sourceURL` value:
 
    An alert box appears, showing the evaluated sum from the CoffeeScript source:
 
-   ![The alert box.](media/coffee-alert.png)
+   ![The alert box.](images/coffee-alert.png)
 
 1. In the alert box, click the **OK** button.
 
@@ -144,17 +141,26 @@ To generate and see an `@sourceURL` value:
 
 1. Click the file that the demo page created with your name of your code, such as **Coff2**:
 
-   ![The alert box.](media/my-coffee-demo-resulting-script.png)
+   ![The alert box.](images/my-coffee-demo-resulting-script.png)
 
-   The file contains the compiled JavaScript for the original source.  On the last line is an additional `// @sourceURL` comment that shows the name of the original source file.  This can help you with debugging while working with language abstractions.
+   The file contains the compiled JavaScript for the original source.  On the last line is an additional `// #sourceURL` comment (the `@` should be updated to `#`) that shows the name of the original source file.  This can help you with debugging while working with language abstractions.
 
-<!-- how does this demo page support the lead-in above?  
+   The code listing in your created file is produced by the file `coffee-script.js`.
+
+1. In the **Page** tab, click **coffee-script.js** and scroll through the client-side Coffee Script code - it's long, yet line numbering stops at 8, and there are 9 hits on "@".
+
+<!-- why use a demo page to demonstrate this?
+are we supposed to know what "coffee script" is?
+Top of demo page claims "#" is produced; bottom explains the change of standard, why didn't the code of CoffeeScript get updated to output # instead of @, by the demo creator?
+lots of typos in demo page.
+where's the "bug" that produces @ when it should produce # instead?
+how does this demo page support the lead-in above?  
 need to explain the png/ explain the demo to total newbies who have no idea what's going on here.  
 What is the purpose of this demo page?  
 Where did the script code in the Coff2 listing in Devtools come from?  
 Are we seeing all the code - which code caused the @sourceURL?  
 Do you have to write a demo page like this to get //@ sourceURL?  
-what's the point of this demonstration? -->
+what's the point of this demonstration (which returns outdated @ instead of #)? -->
 
 
 <!-- ====================================================================== -->
