@@ -9,11 +9,17 @@ ms.date: 01/07/2021
 ---
 # Tracking prevention in Microsoft Edge
 
-The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.  It is built to uphold the Microsoft Edge [browser privacy promise](https://microsoftedgewelcome.microsoft.com/privacy) while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.
+The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.
+
+The tracking prevention feature is built to uphold the Microsoft Edge [browser privacy promise](https://microsoftedgewelcome.microsoft.com/privacy), while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.
+
+
+<!-- ====================================================================== -->
+## Levels of tracking prevention
 
 Microsoft Edge currently offers users three levels of tracking prevention, which are selected by navigating to `edge://settings/privacy`.
 
-![Three settings of tracking prevention.](./media/tracking-prevention-settings.png)
+![Three settings of tracking prevention.](media/tracking-prevention-settings.png)
 
 1. **Basic** - The least restrictive level of tracking prevention that is designed for users who enjoy personalized advertisements and who don't mind being tracked on the web.  Basic only protects users against malicious trackers such as fingerprinters and cryptominers.
 
@@ -65,7 +71,7 @@ To provide protection from tracking actions on the web, Microsoft Edge takes two
 
 A user may choose the page info flyout icon on the left side of the address bar to find out which trackers were blocked on a specific page:
 
-![Blocked trackers in the page info flyout.](./media/page-info-flyout.png)
+![Blocked trackers in the page info flyout.](media/page-info-flyout.png)
 
 How the enforcements are applied depends on what level of tracking prevention the user selected and the mitigations that may apply.
 

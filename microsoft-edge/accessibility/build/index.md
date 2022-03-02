@@ -29,7 +29,7 @@ For applications on Microsoft platforms and on the web, the assistive technology
 
 For web developers, certain HTML elements are mapped to UI Automation objects, so in selecting those HTML elements, the developer can use the accessibility properties and events built in to those elements.  While developing your website, you usually only need to make sure that the API is correctly written to, or that the appropriate element is specified, for the application to be accessible.
 
-Check out [ARIA and UI automation in Microsoft Edge](./aria-and-ui-automation.md) for more information.  Accessible Universal Windows Platform (UWP) apps are explained at [Accessibility](/windows/uwp/design/accessibility/accessibility) in Windows Dev Center.
+Check out [ARIA and UI automation in Microsoft Edge](aria-and-ui-automation.md) for more information.  Accessible Universal Windows Platform (UWP) apps are explained at [Accessibility](/windows/uwp/design/accessibility/accessibility) in Windows Dev Center.
 
 Many common accessibility issues with dynamic content can be addressed by good coding practice.  The [WCAG 2.0](https://www.w3.org/TR/WCAG20) documentation includes many techniques and best practices to help you create more accessible dynamic web applications.  Even when coded properly, however, dynamic content isn't necessarily accessible.  [Accessible Rich Internet Applications (ARIA)](#aria) helps overcome this issue.
 

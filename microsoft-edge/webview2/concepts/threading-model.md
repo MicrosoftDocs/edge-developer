@@ -1,5 +1,5 @@
 ---
-title: Threading model for WebView2
+title: Threading model for WebView2 apps
 description: In the WebView2 threading model, the WebView2 must be created on a UI thread with a message pump.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 09/21/2021
 ---
-# Threading model for WebView2
+# Threading model for WebView2 apps
 
 Supported platforms: Win32, Windows Forms, WinUI, WPF.
 

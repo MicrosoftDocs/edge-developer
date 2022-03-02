@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Code overview
+title: Visual Studio Code for web development
 description: Microsoft Edge and Visual Studio Code.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,16 +7,15 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 08/24/2021
 ---
-# Visual Studio Code overview
+# Visual Studio Code for web development
 
-Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it is a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.  This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
+Visual Studio Code includes built-in support for JavaScript, TypeScript, and Node.js, so it's a great tool for web developers.  Visual Studio Code is a lightweight but powerful source code editor that's available for Windows, Linux, and macOS.
 
-*  [Download Visual Studio Code](https://code.visualstudio.com)
-*  [Getting Started](https://code.visualstudio.com/Docs) - Documentation for Visual Studio Code
+This article gives an overview of extensions for Visual Studio Code that add features for users of Microsoft Edge DevTools.
 
 
 <!-- ====================================================================== -->
-## The Microsoft Edge DevTools extension for Visual Studio Code
+## Microsoft Edge DevTools extension for Visual Studio Code
 
 With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can use the **Elements** tool of the Microsoft Edge browser within Visual Studio Code.  Use the Elements tool to:
 *   Attach to an instance or launch an instance of Microsoft Edge.
@@ -24,9 +23,14 @@ With the **Microsoft Edge DevTools** extension for Visual Studio Code, you can u
 *   Update the layout.
 *   Fix styling issues.
 
-:::image type="complex" source="./media/microsoft-edge-tools-for-visual-studio-code.png" alt-text="The Microsoft Edge DevTools extension for Visual Studio Code." lightbox="./media/microsoft-edge-tools-for-visual-studio-code.png":::
-   The **Microsoft Edge DevTools** extension for Visual Studio Code
-:::image-end:::
+![The Microsoft Edge DevTools extension for Visual Studio Code.](media/microsoft-edge-tools-for-visual-studio-code.png)
+
+The Visual Studio Marketplace provides more information about [Microsoft Edge Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).
+
+To use the extension, see [Microsoft Edge DevTools extension for Visual Studio Code](microsoft-edge-devtools-extension.md).
+
+
+### Installing the extension
 
 To install the Microsoft Edge DevTools extension:
 
@@ -34,44 +38,29 @@ To install the Microsoft Edge DevTools extension:
 
 1. Search the Marketplace for the extension **Microsoft Edge Tools for VS Code**, select the extension, and then select **Install**.
 
-:::image type="complex" source="./media/vscode-edge-tools-install.png" alt-text="Installing the Microsoft Edge DevTools extension for Visual Studio Code." lightbox="./media/vscode-edge-tools-install.png":::
-   Installing the **Microsoft Edge DevTools** extension for Visual Studio Code
-:::image-end:::
-
-### See also
-
-*  [Microsoft Edge DevTools extension for Visual Studio Code](./microsoft-edge-devtools-extension.md) - Using the extension.
-*  [Microsoft Edge Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) - Information about the extension, in the Visual Studio Marketplace.
+![Installing the Microsoft Edge DevTools extension for Visual Studio Code.](media/vscode-edge-tools-install.png)
 
 
 <!-- ====================================================================== -->
 ## The webhint extension for Visual Studio Code
 
-Use [webhint](https://webhint.io), a customizable linting tool, to improve the following functionality of your site.
+Use webhint, a customizable linting tool, to improve the functionality of your site, including:
 
-*   Accessibility
-*   Performance
-*   Cross-browser compatibility
-*   PWA compatibility
-*   Security
+*   Accessibility.
+*   Performance.
+*   Cross-browser compatibility.
+*   PWA compatibility.
+*   Security.
 
-The webhint tool checks your code for coding practices and common errors.  The webhint open-source project, initially developed by the Microsoft Edge team, is now part of the [OpenJS Foundation](https://openjsf.org).  The Microsoft Edge team continues to contribute to webhint alongside web developers in the community.
+webhint checks your code for best practices and common errors.  Identify and fix problems in your files, including HTML, CSS, JavaScript, and TypeScript.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane:
 
-Identify and fix problems in your website by adding the [webhint extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint).  Hints examine HTML, CSS, JavaScript, TypeScript, and more.  Hints appear as wavy underlines in the text editor, and are summarized in the **Problems** pane.
+![The webhint extension for Visual Studio Code.](media/webhint-extension.png)
 
-:::image type="complex" source="./media/webhint-extension.png" alt-text="The webhint extension for Visual Studio Code." lightbox="./media/webhint-extension.png":::
-   The **webhint** extension for Visual Studio Code
-:::image-end:::
+See [The webhint extension for Visual Studio Code](webhint.md).
 
-To install the webhint extension:
-1. In Visual Studio Code, navigate to **Extensions**.  To do this, you can press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.
-1. Search the Marketplace for the **webhint** extension, select the extension, and then select **Install**.
 
-:::image type="complex" source="./media/visual-studio-code-extension-webhint.msft.png" alt-text="The webhint Visual Studio Code extension." lightbox="./media/visual-studio-code-extension-webhint.msft.png":::
-   The **webhint** Visual Studio Code extension
-:::image-end:::
+<!-- ====================================================================== -->
+## See also
 
-### See also
-
-*  [The webhint extension for Visual Studio Code](./webhint.md) - How to use webhint in Visual Studio Code.
-*  [webhint](https://webhint.io)
+*  [Download Visual Studio Code](https://code.visualstudio.com)
+*  [Getting Started](https://code.visualstudio.com/Docs) - Documentation for Visual Studio Code.

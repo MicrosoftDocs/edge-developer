@@ -24,7 +24,7 @@ ms.date: 12/13/2021
 
 This article describes common terms used in memory analysis, and is applicable to various memory profiling tools for different languages.
 
-The terms and notions described here refer to the [Memory panel](./heap-snapshots.md).  If you've ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
+The terms and notions described here refer to the [Memory panel](heap-snapshots.md).  If you've ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
 
 
 <!-- ====================================================================== -->
@@ -40,7 +40,7 @@ An object can hold memory in two ways:
 
 *  Implicitly, by holding references to other objects.  An object holding references to other objects prevents those objects from being automatically disposed by a garbage collector (GC).
 
-The [Memory](./heap-snapshots.md) panel in DevTools is a tool for investigating memory issues.
+The [Memory](heap-snapshots.md) panel in DevTools is a tool for investigating memory issues.
 
 When working with the Memory panel, you will likely find yourself looking at a few different columns of information.  Two columns that stand out are **Shallow Size** and **Retained Size**:
 
@@ -73,7 +73,7 @@ There are many internal GC roots, most of which aren't interesting for the users
 *  Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
 
 >[!TIP]
-> Before taking a heap snapshot in the [Memory](./heap-snapshots.md) tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.
+> Before taking a heap snapshot in the [Memory](heap-snapshots.md) tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You don't control how the root object is garbage-collected.
 
@@ -96,7 +96,7 @@ Nodes and edges in a graph are given labels as follows:
 
 *  _Edges_ are labelled using the names of _properties_.
 
-Learn [how to record a profile using the Heap Profiler](./heap-snapshots.md).  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory](./heap-snapshots.md) tool include **Distance**, which is the distance from the garbage-collection root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that's something worth investigating.
+Learn [how to record a profile using the Heap Profiler](heap-snapshots.md).  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory](heap-snapshots.md) tool include **Distance**, which is the distance from the garbage-collection root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that's something worth investigating.
 
 Distance from root:
 

@@ -1,6 +1,6 @@
 ---
-title: Managing the user data folder
-description: How to manage user data folders in a WebView2 app.
+title: Manage user data folders
+description: How to manage user data folders in a WebView2 application.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,8 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/28/2022
 ---
-# Managing the user data folder
+# Manage user data folders
+<!-- # old title: Manage the user data folder -->
 
 The user data folder (UDF) is a folder stored on users/ local machine.
 The UDF stores data related to the app and wv2.
@@ -74,6 +75,7 @@ There is 1 UDF per machine.
 <!-- You can create multiple UDFs or. -->
 
 A UDF can be either per user or per app.
+
 
 <!-- ====================================================================== -->
 ## Specifying a custom UDF location (Controlling where the user data folder is created)
@@ -311,6 +313,8 @@ When deciding how to manage your user data folders, consider the following scena
 
 User data folders are created automatically by WebView2.  Your host app controls the lifetime of the user data folder.  If your app re-uses user data from app sessions, consider saving the user data folders.  Otherwise, you can delete them - but while a session is running, it's better to call the clear browsing data methods instead of deleting the UDF.
 
+*  Instead of deleting the user data folder, clear browsing data from the user data folder.  For example, clear user data and history when a user signs out.  See [clear browsing data from the user data folder](clear-browsing-data.md).
+
 
 <!-- ====================================================================== -->
 ## Persisting user data folders if same user uses your app repeatedly, and the web content of the app relies on the user's data
@@ -373,7 +377,7 @@ Files in user data folders might still be in use after the WebView2 app is close
 
 WebView2 control instances can share the same user data folders, to do the following:
 
-*  Optimize system resources by running in one browser process.  See [The WebView2 process model](../concepts/process-model.md).
+*  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
 
 *  Share browser history and cached resources.
 
@@ -396,4 +400,7 @@ Each WebView2 browser process consumes additional memory and disk space.  Theref
 <!-- ====================================================================== -->
 ## See also
 
-* [Package and deploy](https://docs.microsoft.com/en-us/windows/apps/package-and-deploy/)
+* [Clear browsing data from the user data folder](clear-browsing-data.md)
+* [Package and deploy](/windows/apps/package-and-deploy/) in _Windows App Development_ docs (Build desktop apps for Windows).
+
+<!-- clickable: https://docs.microsoft.com/windows/apps/package-and-deploy/ -->

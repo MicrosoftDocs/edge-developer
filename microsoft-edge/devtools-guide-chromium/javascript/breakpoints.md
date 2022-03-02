@@ -233,7 +233,7 @@ When you're calling `debug()` from the DevTools Console, here's a technique to e
 <!-- ====================================================================== -->
 ## See also
 
-*  [JavaScript debugging features](./reference.md) - Using the UI of the debugger in the **Sources** tool.
+*  [JavaScript debugging features](reference.md) - Using the UI of the debugger in the **Sources** tool.
 *  [Get started debugging JavaScript](index.md) - An introductory tutorial using an existing webpage.
 *  [Sources tool overview](../sources/index.md) - The debugger is part of the **Sources** tool, which includes a JavaScript editor.
 

@@ -50,7 +50,7 @@ Selecting a file in the **Styles** inspector:
 
 :::image type="content" source="../media/javascript-overrides-select-css-file.msft.png" alt-text="Selecting a file in the Styles inspector." lightbox="../media/javascript-overrides-select-css-file.msft.png":::
 
-In the **Sources** editor, right-click the file name of your chosen file, and then click **Save for overrides**.
+In the **Sources** editor, right-click the file name, and then click **Save for overrides**.
 
 In the Sources editor, adding the name of the file to the overrides list:
 

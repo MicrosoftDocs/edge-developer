@@ -1,15 +1,15 @@
 ---
 title: Network request blocking tool
-description: Block network requests with the Network request blocking tool to find out how webpages look and behave when some resources are not available.
+description: Use the Network request blocking tool in Microsoft Edge DevTools to block selected network requests, to find out how webpages look and behave when some resources are not available.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/10/2022
+ms.date: 02/23/2022
 ---
 # Network request blocking tool
 
-Use the **Network request blocking** tool to check how a webpage looks and behaves when some resources are unavailable, such as image files, JavaScript files, fonts, or CSS stylesheets.
+Use the **Network request blocking** tool to check how a webpage looks and behaves when some resources are unavailable, such as image files, JavaScript files, fonts, or CSS stylesheets.  Use this tool to test blocking network requests to a specified URL pattern and see how a webpage behaves.
 
 When a webpage depends on _external resources_ that are hosted on other servers than the HTML webpage, sometimes those servers might be unresponsive or unavailable to some users. When this happens, some resources that your webpage depends on might not be retrieved by the web browser.  It's important to check how your webpage behaves when external resources fail to load.  Test whether the webpage handles missing resources gracefully, or appears broken to your users.
 
@@ -41,14 +41,14 @@ To block a network request:
 
 To delete a specific network blocking request:
 
-*  In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](./media/remove-blocked-request-icon.png)) button:
+*  In the **Network request blocking** table, hover over the network blocking request, and then click the **Remove** (![Remove blocked request icon](media/remove-blocked-request-icon.png)) button:
 
-   ![Removing a blocked request](./media/remove-blocked-request.png)
+   ![Removing a blocked request](media/remove-blocked-request.png)
 
 
 To delete all network blocking requests at once:
 
-*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](./media/remove-all-blocked-requests-icon.png)) button.
+*  In the toolbar, click the **Remove all patterns** (![Remove all blocked requests icon](media/remove-all-blocked-requests-icon.png)) button.
 
 
 <!-- ====================================================================== -->
@@ -56,9 +56,9 @@ To delete all network blocking requests at once:
 
 To change an existing blocked network request:
 
-*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](./media/edit-blocked-request-icon.png)):
+*  In the **Network request blocking** table, hover over the blocked network request, and then click **Edit** (![edit blocked request icon](media/edit-blocked-request-icon.png)):
 
-   ![Editing a blocked request](./media/edit-blocked-request.png)
+   ![Editing a blocked request](media/edit-blocked-request.png)
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ To toggle network request blocking without having to delete and re-create all of
 
 *  In the toolbar, select or clear the **Enable network request blocking** checkbox:
 
-   ![Toggling network request blocking](./media/toggle-request-blocking.png)
+   ![Toggling network request blocking](media/toggle-request-blocking.png)
 
 
 <!-- ====================================================================== -->
@@ -88,6 +88,34 @@ To block network requests by using the **Network** tool:
 
 1. Right-click the network request, and then click **Block request URL** to block this specific resource, or **Block request domain** to block all resources from the same domain:
 
-   ![Blocking from the network tool](./media/block-request-from-network-tool.png)
+   ![Blocking from the network tool](media/block-request-from-network-tool.png)
 
-   _To zoom, right-click > **Open image in new tab**._
+
+<!-- ====================================================================== -->
+## Try the network request blocking tool
+
+To try the **Network request blocking** tool:
+
+1. In a separate window or tab, go to the [Accessibility-testing demo webpage](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Network request blocking** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+   The page content is displayed:
+
+   ![The Network request blocking tool, not blocking any URL patterns, showing webpage content.](../media/network-request-blocking-tool-not-blocked.png)
+
+1. In the the **Network request blocking** panel, click the **Add pattern** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) icon or the **Add pattern** button, if it's displayed.
+
+1. In the **Text pattern to block matching requests** text box, paste the following URL path, and then click the **Add** button:
+
+   ```http
+   https://microsoftedge.github.io/Demos/
+   ```
+   
+1.  Refresh the page.  Now most elements of the page aren't displayed, and a number of network requests are indicated as blocked:
+
+    ![The Network request blocking tool, blocking the DevTools GitHub Demos server.](../media/network-request-blocking-tool.png)
+
+1. Click the **Remove all patterns** (![Remove all patterns icon.](../media/network-request-blocking-tool-remove-all-patterns-icon.png)) icon, and then click **Refresh**.  The page content re-appears.

@@ -59,7 +59,7 @@ You can open the **Console** as a [tool in the upper pane](#open-the-console-too
 
 ### Open the Console tool
 
-Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
 :::image type="content" source="../media/console-hello-console.msft.png" alt-text="The Console tool." lightbox="../media/console-hello-console.msft.png":::
 
@@ -78,7 +78,7 @@ The Drawer pops up in the bottom of the DevTools window, with the **Console** to
 
 :::image type="content" source="../media/console-elements-console-drawer-hello-world.msft.png" alt-text="The Console tool in the Drawer." lightbox="../media/console-elements-console-drawer-hello-world.msft.png":::
 
-To open the **Console** tool from the [Command Menu](../command-menu/index.md), type `Console` and then run the **Show Console** command that has the **Drawer** badge next to it.
+To open the **Console** tool from the [Command Menu](../command-menu/index.md), type **Console** and then run the **Show Console** command that has the **Drawer** badge next to it.
 
 :::image type="content" source="../media/console-command-menu-show-console.msft.png" alt-text="Run the command to display the **Console** tool in the Drawer." lightbox="../media/console-command-menu-show-console.msft.png":::
 
@@ -206,7 +206,7 @@ Suppose that you have an advertisement (ad) on your webpage.  The ad is embedded
 
 ### Filter out messages that don't match a regular expression pattern
 
-Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** textbox to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
+Type a regular expression such as `/[gm][ta][mi]/` in the **Filter** text box to filter out any messages that don't match that pattern.  DevTools checks whether the pattern is found in the message text or in the script that caused the message to be logged.
 
 :::image type="content" source="../media/console-filter-regex.msft.png" alt-text="Filtering out any messages that don't match the regex expression." lightbox="../media/console-filter-regex.msft.png":::
 
@@ -268,7 +268,7 @@ To clear the Console, use any of the following approaches:
 
 *  Call `console.clear()` from your webpage's JavaScript.
 
-*  Press `Control`+`L` while the Console is in focus.
+*  Press `Ctrl`+`L` while the Console is in focus.
 
 
 <!-- ====================================================================== -->
