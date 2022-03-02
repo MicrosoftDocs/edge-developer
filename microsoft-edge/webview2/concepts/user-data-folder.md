@@ -47,7 +47,7 @@ WebView2 creates the UDF in the default location for the platform, or in the cus
 | `Settings` | Settings data. |
 | `WebSql` | Data stored by the Web SQL database DOM API. |
 
-The above types of data are listed as enum members in the [CoreWebView2BrowsingDataKinds Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds#fields).
+The above types of data are listed as enum members in the [CoreWebView2BrowsingDataKinds Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds#fields).
 
 
 <!-- ====================================================================== -->
@@ -164,7 +164,7 @@ For WPF, .NET, and WinForms, see [CoreWebView2Environment.UserDataFolder propert
 <!--
 todo:
 Update the API Ref page
-https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1108.44
+https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder?view=webview2-dotnet-1.0.1108.44
 to add sample code showing how to read this property.
 -->
 
@@ -207,7 +207,7 @@ Find the platform-appropriate, .cpp or .cs file, near https://github.com/Microso
 <!-- instead of the above approaches, you use the environment variable: `WEBVIEW2_USER_DATA_FOLDER="\<folder path\>"`.  See [CoreWebView2Environment.UserDataFolder Property](http://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder). -->
 <!-- link to winRT not .net -->
 
-<!-- * [CoreWebView2Environment.UserDataFolder](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1108.44#userdatafolder) -->
+<!-- * [CoreWebView2Environment.UserDataFolder](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment?view=webview2-winrt-1.0.1108.44#userdatafolder) -->
 
 *  For packaged apps (such as UWP & WinUI 2<!-- and maybe WinUI 3: todo: investigate-->), the default user folder is the `ApplicationData\LocalFolder` subfolder in the package's folder.
 
@@ -262,7 +262,7 @@ WebView2 apps use user data folders to store browser data, such as cookies, perm
 <!-- ====================================================================== -->
 ## Creating user data folders
 
-By default, WebView2 creates a user data folder in the [default location](#default-location-of-where-the-user-data-folder-is-created), which works well for most apps.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate Read/Write permissions for the WebView2 app runtime.
+By default, WebView2 creates a user data folder in the default location for the particular platform, which works well for most apps.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate Read/Write permissions for the WebView2 app runtime.
 
 To specify the location of the user data folder, include the `userDataFolder` parameter when calling [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) (Win32) or [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) (.NET).  After creation, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
 
