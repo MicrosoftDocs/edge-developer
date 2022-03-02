@@ -433,12 +433,11 @@
                   href: devtools-guide-chromium/device-mode/override-user-agent.md
                   displayName: Network Conditions tool, Device Emulation, Device Emulator
 # Network Console tool -----------------------------------------------
-# todo: uncomment when Network Console tool is in Edge Stable
-            # - name: Compose and send web API requests using the Network Console tool
-            #   items:
-            #     - name: Network Console tool
-            #       href: devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md
-            #       displayName: Network request blocking tool
+            - name: Network Console tool
+              items:
+                - name: Compose and send web API requests using the Network Console tool
+                  href: devtools-guide-chromium/network-console/network-console-tool.md
+                  displayName: 
 # Network request blocking tool -----------------------------------------------
             - name: Network request blocking tool
               items:
@@ -724,6 +723,7 @@
 
 # /DevTools
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge extensions
       items:
         - name: Overview of Microsoft Edge extensions  # existing firstchild article
@@ -831,6 +831,7 @@
               href: extensions-chromium/enterprise/auto-update.md
 
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Progressive Web Apps
       items:
         - name: Overview of Progressive Web Apps (PWAs)  # existing firstchild article
@@ -895,146 +896,269 @@
           href: progressive-web-apps-chromium/demo-pwas.md
 
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: WebView2
       items:
         - name: Introduction to Microsoft Edge WebView2  # existing firstchild article
           href: webview2/index.md
           displayName: 
 
-        - name: Get started
+# -----------------------------------------------------------------------------
+        - name: Setup and sample code
+          items:
+            - name: Set up your Dev environment  # new article
+              href: webview2/how-to/machine-setup.md
+              displayName: Sample Code for WebView2  # top-of-page title
+
+            - name: Sample Code
+              href: webview2/code-samples-links.md
+              displayName: Sample Code for WebView2  # top-of-page title
+
+# comprehensive API samples, in alpha order of downloaded repo directories
+            - name: WebView2 control and API samples
+              items:
+                - name: UWP WinUI 2 browser app
+                  href: webview2/samples/webview2_sample_uwp.md
+                  displayName: webview2_sample_uwp  # repo dir name
+
+                - name: Win32 C++ app
+                  href: webview2/samples/webview2apissample.md
+                  displayName: WebView2APISample, SampleApps  # repo dir names
+
+                - name: Win32 C++ app with Visual Composition
+                  href: webview2/samples/webview2samplewincomp.md
+                  displayName: WebView2SampleWinComp  # repo dir name
+
+                - name: WinForms browser app
+                  href: webview2/samples/webview2windowsformsbrowser.md
+                  displayName: WebView2WindowsFormsBrowser  # repo dir name
+
+                - name: WPF .NET browser app
+                  href: webview2/samples/webview2wpfbrowser.md
+                  displayName: WebView2WpfBrowser  # repo dir name
+
+                - name: Chrome DevTools Protocol extension in a WPF app
+                  href: webview2/samples/wv2cdpextensionwpfsample.md
+                  displayName: WV2CDPExtensionWPFSample  # repo dir name
+
+# deployment samples
+            - name: Deployment samples
+              items:
+                - name: WebView2 Deployment Visual Studio installer
+                  href: webview2/samples/wv2deploymentvsinstallersample.md
+                  displayName: WV2DeploymentVSInstallerSample  # repo dir name
+
+                - name: WiX Burn Bundle to deploy the Runtime
+                  href: webview2/samples/wv2deploymentwixburnbundlesample.md
+                  displayName: WV2DeploymentWiXBurnBundleSample  # repo dir name
+
+                - name: WiX Custom Action to deploy the Runtime
+                  href: webview2/samples/wv2deploymentwixcustomactionsample.md
+                  displayName: WV2DeploymentWiXCustomActionSample  # repo dir name
+
+# -----------------------------------------------------------------------------
+        - name: "Tutorial: Create a WebView2 app"
           items:
             - name: Get started with WebView2
               href: webview2/get-started/get-started.md
+              displayName: GettingStartedGuides  # repo dir name
 
-            - name: Get started with WebView2 in Win32 apps
+            - name: Win32
               href: webview2/get-started/win32.md
+              displayName: Win32_GettingStarted, Get started with WebView2 in Win32 apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WebView2 in WinForms apps
+            - name: WinForms
               href: webview2/get-started/winforms.md
+              displayName: WinForms_GettingStarted, Get started with WebView2 in WinForms apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
+            - name: WinUI 2 (UWP, public preview)
               href: webview2/get-started/winui2.md
+              displayName: Get started with WebView2 in WinUI 2 (UWP) apps (public preview)  # repo dir name  # top-of-page title
 
-            - name: Get started with WebView2 in WinUI 3 (Windows App SDK)
+            - name: WinUI 3 (Windows App SDK)
               href: webview2/get-started/winui.md
+              displayName: WinUI3_GettingStarted, Get started with WebView2 in WinUI 3 (Windows App SDK) apps  # repo dir name  # top-of-page title
 
-            - name: Get started with WebView2 in WPF apps
+            - name: WPF
               href: webview2/get-started/wpf.md
+              displayName: WPF_GettingStarted, Get started with WebView2 in WPF apps  # repo dir name  # top-of-page title
 
-        - name: WebView2 sample code
-          href: webview2/code-samples-links.md
-          displayName: 
-
-        - name: Concepts and How to
+# -----------------------------------------------------------------------------
+        - name: Fundamentals
           items:
-
-            - name: Automate and test WebView2 apps with Microsoft Edge Driver
-              href: webview2/how-to/webdriver.md
-
-            - name: Get started debugging WebView2 apps
-              href: webview2/how-to/debug.md
-
-            - name: WebView2 development best practices
-              href: webview2/concepts/developer-guide.md
-
-            - name: Feature differences between Microsoft Edge and WebView2
+            - name: Differences between Microsoft Edge and WebView2
               href: webview2/concepts/browser-features.md
+              displayName: 
 
-            - name: Distribute a WebView2 app and the WebView2 Runtime
-              href: webview2/concepts/distribution.md
-
-            - name: Embed web content into native applications
-              href: webview2/how-to/communicate-btwn-web-native.md
-
-            - name: Use JavaScript in WebView for extended scenarios
-              href: webview2/how-to/javascript.md
-
-            - name: Manage the user data folder
-              href: webview2/concepts/user-data-folder.md
-
-            - name: Manage WebView2 applications
-              href: webview2/concepts/enterprise.md
-
-            - name: Navigation events for WebView2
+            - name: Navigation events
               href: webview2/concepts/navigation-events.md
+              displayName: Navigation events for WebView2 apps  # top-of-page title
 
-            - name: The WebView2 process model
-              href: webview2/concepts/process-model.md
+            - name: Web and native interop
+              items:
+                - name: Interop of native-side and web-side code
+                  href: webview2/how-to/communicate-btwn-web-native.md
+                  displayName: JavaScript interop, Embed web content into native applications (JavaScript interop)  # old title
 
-            - name: Best practices for developing secure WebView2 applications
-              href: webview2/concepts/security.md
+                - name: Call web-side code from native-side code
+                  href: webview2/how-to/javascript.md
+                  displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-            - name: Statically link the WebView2 loader library
-              href: webview2/how-to/static.md
+                # - name: Call native-side code from web-side code
+                #   href: webview2/how-to/add-host-object-to-script.md
+                #   displayName: AddHostObjectToScript API
 
-            - name: Switch to a preview channel to test upcoming APIs and features
-              href: webview2/how-to/set-preview-channel.md
-
-            - name: Threading model for WebView2
-              href: webview2/concepts/threading-model.md
-
-            - name: Use the Chrome DevTools Protocol in WebView2
-              href: webview2/how-to/chromium-devtools-protocol.md
-
-            - name: Understand WebView2 SDK versions
+            - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
+              displayName: Understand WebView2 SDK versions  # old title
 
-            - name: Win32 C++ WebView2 API conventions
-              href: webview2/concepts/win32-api-conventions.md
+            - name: Test upcoming APIs and features
+              href: webview2/how-to/set-preview-channel.md
+              displayName: 
 
+            - name: Distribute your app and the WebView2 Runtime
+              href: webview2/concepts/distribution.md
+              displayName: 
 
-      # "API conceptual intro" docs cover use-cases and which APIs to use for them.  also sample code & navigation to API Ref.
+# -----------------------------------------------------------------------------
+        - name: Debug WebView2 apps
+          items: 
+            - name: Debug WebView2 apps
+              href: webview2/how-to/debug.md
+              displayName: 
 
+            - name: Microsoft Edge DevTools
+              href: webview2/how-to/debug-devtools.md
+              displayName: Debug WebView2 apps with Microsoft Edge DevTools  # top-of-page title
 
-      # - name: Use-cases for the APIs
-      # - name: Adding features using the APIs
-      # - name: Accomplishing tasks using the APIs
-      # - name: Overview of APIs
-        - name: Using the API features
+            - name: Microsoft Visual Studio Code
+              href: webview2/how-to/debug-visual-studio-code.md
+              displayName: Debug WebView2 apps with Visual Studio Code  # top-of-page title
+
+            - name: Microsoft Visual Studio
+              href: webview2/how-to/debug-visual-studio.md
+              displayName: Debug WebView2 apps with Visual Studio  # top-of-page title
+
+# -----------------------------------------------------------------------------
+        - name: Architecture
           items:
+
+            # - name: Architecture of WebView2
+            #   href: webview2/concepts/architecture.md
+            #   displayName: 
+
+            - name: Process model
+              href: webview2/concepts/process-model.md
+              displayName: Process model for WebView2 apps  # top-of-page title
+
+            - name: Threading model
+              href: webview2/concepts/threading-model.md
+              displayName: Threading model for WebView2 apps  # top-of-page title
+
+# -----------------------------------------------------------------------------
+        - name: User data and history
+          items:
+            - name: Manage user data folders
+              href: webview2/concepts/user-data-folder.md
+              displayName: Manage the user data folder  # old title
+
             - name: Clear browsing data from the user data folder
               href: webview2/concepts/clear-browsing-data.md
+              displayName: 
 
-        - name: Release notes for WebView2 SDK
+# -----------------------------------------------------------------------------
+        - name: Advanced Topics and Best Practices
+          items:
+            - name: Development best practices
+              href: webview2/concepts/developer-guide.md
+              displayName: Development best practices for WebView2 apps  # top-of-page title
+
+            - name: Develop secure WebView2 apps
+              href: webview2/concepts/security.md
+              displayName: 
+
+#           - name: Basic authentication for WebView2 apps  # forthcoming
+#             href: webview2/concepts/basic-authentication.md
+#             displayName: 
+
+            - name: Use the Chrome DevTools Protocol
+              href: webview2/how-to/chromium-devtools-protocol.md
+              displayName: Use the Chrome DevTools Protocol in WebView2  # old title
+
+            - name: Automate and test with Microsoft Edge Driver
+              href: webview2/how-to/webdriver.md
+              displayName: Automate and test WebView2 apps with Microsoft Edge Driver  # top-of-page title
+
+# -----------------------------------------------------------------------------
+        - name: Deployment and distribution
+          items:
+            - name: Deployment and distribution  # new firstchild page
+              href: webview2/concepts/deployment-distribution.md
+              displayName: Manage WebView2 applications  # old title
+
+            - name: Enterprise management of WebView2 Runtimes
+              href: webview2/concepts/enterprise.md
+              displayName: Manage WebView2 applications  # old title
+
+            - name: Distribute an app as a single executable file
+              href: webview2/how-to/static.md
+              displayName: Statically link the WebView2 loader library, single-file app  # old title
+
+        - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
           displayName: 
 
-        - name: WebView2 roadmap
+        - name: WebView2 Roadmap
           href: webview2/roadmap.md
           displayName: 
 
         - name: WebView2 Reference
           items:
-            - name: Microsoft Edge WebView2 API Reference
+            - name: WebView2 API Reference
               href: webview2/webview2-api-reference.md
+              displayName: functions, methods  # list relevant platforms
 
-            - name: Reference (WebView2 Win32 C++)
-              href: /microsoft-edge/webview2/reference/win32/index
+            - name: Win32 C++
+              items:
+                - name: Win32 C++ WebView2 API conventions
+                  href: webview2/concepts/win32-api-conventions.md
+                  displayName: 
+
+                - name: Win32 C++ API Reference
+                  href: /microsoft-edge/webview2/reference/win32/index
+                  displayName: functions, methods
 
             - name: .NET
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /dotnet/api/microsoft.web.webview2.core
+                  displayName: functions, methods
 
                 - name: Microsoft.Web.WebView2.Wpf
                   href: /dotnet/api/microsoft.web.webview2.wpf
+                  displayName: functions, methods
 
                 - name: Microsoft.Web.WebView2.WinForms
                   href: /dotnet/api/microsoft.web.webview2.winforms
+                  displayName: functions, methods
 
             - name: WinRT
               items:
                 - name: Microsoft.Web.WebView2.Core
                   href: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index
+                  displayName: functions, methods
 
                 - name: COM Interop
                   href: /microsoft-edge/webview2/reference/winrt/interop/index
+                  displayName: functions, methods
 
-        - name: Contact the WebView2 team
+        - name: Contact the WebView2 Team
           href: webview2/contact.md
           displayName: feedback, log issues, enter issues, report issues, reporting issues, support
+# / WebView2 articles
 
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Test and automation
       items:
         - name: Test and automation in Microsoft Edge  # new firstchild article
@@ -1073,6 +1197,7 @@
           displayName: 
 
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Web platform
       items:
         - name: Web platform overview # new firstchild article
@@ -1104,6 +1229,7 @@
           displayName: 
 
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Microsoft Edge IDE integration
       items:
         - name: Microsoft Edge IDE integration  # new firstchild article
@@ -1137,6 +1263,7 @@
           displayName: 
 
 # =============================================================================
+# if top-of-page title is longer, add it to displayName comma-delimited list of lookup keywords
     - name: Accessibility in Microsoft Edge
       items:
         - name: Accessibility in Microsoft Edge  # existing firstchild article

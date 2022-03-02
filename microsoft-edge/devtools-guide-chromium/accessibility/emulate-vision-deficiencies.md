@@ -39,7 +39,7 @@ To simulate how a person with a vision deficiency would see your web page, open 
    > [!div class="mx-imgBorder"]
    > ![The Emulate vision deficiencies section in the Rendering panel.](../media/accessibility-emulate-vision-menu-options.msft.png)
 
-1. The browser window simulates the chosen vision deficiency on the current page.
+1. The browser window simulates the selected vision deficiency on the current page.
 
    > [!div class="mx-imgBorder"]
    > ![The browser window, with modified colors in the web page to simulate the selected color vision deficiency.](../media/accessibility-blurred-vision-emulation.msft.png)

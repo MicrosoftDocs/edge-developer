@@ -26,7 +26,7 @@ Then test your code, as follows.
 
 To simulate the operating system's reduced motion setting, without having to change your operating system setting:
 
-1. Press `Control`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.
+1. Press `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.
     
     > [!div class="mx-imgBorder"]
     > ![Opening the command menu.](../media/reduced-motion-open-command-menu.png)

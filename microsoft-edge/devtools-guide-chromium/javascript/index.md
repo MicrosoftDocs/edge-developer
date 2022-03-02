@@ -210,7 +210,7 @@ We've identified a possible fix for the bug.  Next, edit the JavaScript code dir
 
 1. In the **Editor** pane, replace the line `var sum = addend1 + addend2` with `var sum = parseInt(addend1) + parseInt(addend2)`.
 
-1. Press `Control`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
+1. Press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS) to save your change.
 
 1. Click **Deactivate breakpoints** (![Deactivate breakpoints.](../media/deactivate-breakpoints-button-icon.msft.png)).  It changes blue to indicate the option is active.  While **Deactivate breakpoints** is set, DevTools ignores any breakpoints you set.
 

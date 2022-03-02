@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New In DevTools (Microsoft Edge 90)
+# What's New in DevTools (Microsoft Edge 90)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
@@ -137,7 +137,7 @@ Expand or collapse the request initiator chain and follow the highlighted row:
 <!-- Title: Console improvements make filtering more consistent  -->
 <!-- Subtitle: The Log Levels dropdown list is more clearly disabled when using filters in the Console sidebar.  -->
 
-While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover on it while a filter from the **Console Sidebar** is selected.  To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages).
+While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover over it while a filter from the **Console Sidebar** is selected.  To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages).
 
 Previously, if you open the **Console sidebar** and hover on **Default levels**, it was highlighted:
 

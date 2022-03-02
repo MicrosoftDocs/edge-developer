@@ -103,7 +103,7 @@ You can search the DOM Tree by string, CSS selector, or XPath selector.
 
 1. Focus your cursor on the **Elements** tool.
 
-1. Press `Control`+`F` (Windows, Linux) or `Command`+`F` (macOS).  The Search bar opens at the bottom of the DOM Tree.
+1. Press `Ctrl`+`F` (Windows, Linux) or `Command`+`F` (macOS).  The Search bar opens at the bottom of the DOM Tree.
 
 1. Type `The Moon is a Harsh Mistress`.  The last sentence is highlighted in the DOM Tree.
 
@@ -212,7 +212,7 @@ Press `Delete` to delete a node, as follows:
 
 1. Select the `Delete` key.  The node is deleted.
 
-1. Press `Control`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
+1. Press `Ctrl`+`Z` (Windows, Linux) or `Command`+`Z` (macOS).  The last action is undone and the node reappears.
 
 
 <!-- ====================================================================== -->
@@ -264,7 +264,7 @@ Copy the JavaScript path to a node when you need to reference it in an automated
 
 1. Right-click `<li>The Brothers Karamazov</li>` in the DOM Tree, and then select **Copy** > **Copy JS Path**.  A `document.querySelector()` expression that resolves to the node has been copied to your clipboard.
 
-1. Press `Control`+`V` (Windows, Linux) or `Command`+`V` (macOS) to paste the expression into the Console.
+1. Press `Ctrl`+`V` (Windows, Linux) or `Command`+`V` (macOS) to paste the expression into the Console.
 
 1. Press `Enter` to evaluate the expression.
 

@@ -192,12 +192,12 @@ The full-text search page initially searches all _Microsoft Edge_ docs.  Or, cli
 
 
 <!-- ====================================================================== -->
-## Report or fix errors or bugs in the docs
+## Provide feedback or report issues in the Microsoft Edge Developer docs
 
-For feedback, log issues, enter issues, report issues, reporting issues, support:
+To provide feedback or enter issues:
 
 * [Contact the Microsoft Edge DevTools team](devtools-guide-chromium/contact.md)
 * [Contact Microsoft Edge extensions support](extensions-chromium/publish/contact-extensions-team.md)
 * [Contact the WebView2 team](webview2/contact.md)
 
-To submit and view feedback for a page, at the bottom of the page, click the **This page** button.
+To submit and view feedback for a specific page of the documentation, at the bottom of the page, click the **This page** button.

@@ -20,7 +20,7 @@ The **Console**:
 
 To enter JavaScript statements and expressions interactively in the **Console**:
 
-1. Right-click in a webpage and then select **Inspect**.  DevTools opens.  Or, press `Control`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\), to directly open the DevTools console.
+1. Right-click in a webpage and then select **Inspect**.  DevTools opens.  Or, press `Ctrl`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\), to directly open the DevTools console.
 
 1. If necessary, click in DevTools to give it focus, and then press `Esc` to open the **Console**.
 
