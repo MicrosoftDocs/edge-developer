@@ -9,7 +9,7 @@ ms.date: 02/15/2022
 ---
 # Source Maps Monitor tool
 
-Use the **Source Maps Monitor** tool to monitor which source files on your webpage requested loading of source maps, and whether the source maps were loaded.  This tool is useful if your webpage uses source maps to [map preprocessed code to source code](../javascript/source-maps.md).
+Use the **Source Maps Monitor** tool to monitor which source files on your webpage requested loading of source maps, and whether the source maps were loaded.  This tool is useful if your webpage uses source maps to map preprocessed code to source code.  _Source mapping_ enables you to see and debug your original source code, rather than having to work with the reprocessed version of your code that's returned by the server.
 
 
 To try this feature:
@@ -23,3 +23,10 @@ To try this feature:
 1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select the **Source Maps Monitor** tool.
 
    ![The Source Maps Monitor tool.](../media/source-maps-monitor-tool.png)
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Map preprocessed code to source code](../javascript/source-maps.md)
+* [Debug original code using the Azure Artifacts symbol server](../javascript/ado-symbol-server.md)
