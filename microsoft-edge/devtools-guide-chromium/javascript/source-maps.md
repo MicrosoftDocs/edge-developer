@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/24/2022
+ms.date: 03/02/2022
 ---
 <!-- Copyright Meggin Kearney and Paul Bakaus
 
@@ -21,11 +21,8 @@ ms.date: 02/24/2022
    See the License for the specific language governing permissions and
    limitations under the License.  -->
 # Map the processed code to your original source code, for debugging
-<!-- orig title:
-# Map Preprocessed Code to Source Code
--->
 
-To see and work with your original source code when you're debugging your code in DevTools, rather than having to work with the compiled and minified version of your code that's returned by the web server, use source maps.
+To see and work with your original source code when you're debugging JavaScript in DevTools, rather than having to work with the compiled and minified version of your code that's returned by the web server, use source maps.
 
 Source mapping keeps your client-side code readable and debuggable, even after your build process compiles and minifies your code and combines it into a single file.  Source maps map your compiled, minified code to your original source code files.  In DevTools, you can then read and debug your familiar, original source code, instead of the unrecognizable transformed and compiled code.
 
@@ -76,11 +73,12 @@ Source maps from preprocessors cause DevTools to load your original files in add
 
 When running source maps in DevTools, you should notice that the JavaScript isn't compiled, and all of the individual JavaScript files that it references are displayed.  Source maps in DevTools is using source mapping, but the underlying functionality actually runs the compiled code.
 
-Any errors, logs, and breakpoints map to the dev code, for awesome debugging.  So in effect, it gives you the illusion that you are running a dev site in production.
+Any errors, logs, and breakpoints map to the original source code, for easier debugging.
+
 
 ### Enable source maps in Settings
 
-Source maps are enabled by default.<!-- (as of Microsoft Edge 39)-->
+Source maps are enabled by default.
 
 To make sure that source maps are enabled:
 
@@ -107,71 +105,15 @@ When [debugging your code](index.md#step-4-step-through-the-code) and source map
 
 
 <!-- ====================================================================== -->
-## #sourceURL and displayName
+## Use `//# sourceURL` to name evaluated files in the Sources tool
 
-<!-- this section doesn't mention displayName, why is `displayName` in the heading? -->
+Although it's not part of the source map specification, the `//# sourceURL` pragma, such as `// # sourceURL=myFileName` allows you to make development much easier when working with evaluated JavaScript files.
 
-<!-- is there a space after #, or not?  demo page produces a space after @ -->
-
-Although it's not part of the source map spec, the `#sourceURL` pragma, such as `//# sourceURL=myFileName`` allows you to make development much easier when working with evals.  The helper <!-- what does "the helper" mean?  where? what is the context?--> is displayed<!--where?--> similar to the `//# sourceMappingURL` property.  The `#sourceURL` pragma is mentioned in the source map V3 specifications.
-
-As the demo page below says, the comment pragma has changed from `//@` to `//#` due to issues with Internet Explorer's conditional compilation comments.  See [Issues](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-issues) in _Introduction to JavaScript Source Maps_ for specific versions of dev tools that support the new, `#sourceURL` syntax.
-
-By including the following special comment in your code, which is evaled,<!--legit industry/context term, "evaled"?--> you can name evals and inline scripts and styles so each appears as more logical names in your DevTools.  For example:
+When loading JavaScript files and evaluating them using the `eval()` function, the **Sources** tool does not have a file name to display these files in the **Navigator** pane. By including the following special comment in your code, you can name evaluated files and inline scripts and styles so each appears as more logical names in the **Sources** tool.  For example:
 
 ```javascript
 //# sourceURL=source.coffee
 ```
-
-The demo page below uses CoffeeScript, to serve as an example of compiled JavaScript code that you want to see and debug as non-compiled source code.  [CoffeeScript](https://coffeescript.org) is a small language that compiles into JavaScript.  CoffeeScript code compiles one-to-one into the equivalent JavaScript code.  The compiled output is readable and pretty-printed.
-
-To generate and see a `#sourceURL` pragma value:
-
-1. Open the demo webpage [Name those evals](https://www.thecssninja.com/demo/source_mapping/compile.html) in a new browser window or tab.
-
-1. To open DevTools, right-click the demo webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens, next to the demo webpage.
-
-1. In DevTools, on the main toolbar, click the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button.
-
-1. In the rendered demo webpage, in the **Name your code:** text box, enter a filename.
-
-1. Click the **Compile** button.
-
-   An alert box appears, showing the evaluated sum from the CoffeeScript source:
-
-   ![The alert box.](images/coffee-alert.png)
-
-1. In the alert box, click the **OK** button.
-
-1. In the **Sources** tool, in the **Page** tab in the **Navigator** pane on the left, expand the node **top** > **(no domain)**.
-
-1. Click the file that the demo page created with your name of your code, such as **Coff2**:
-
-   ![The generated @ pragma and filename, generated by the demo page, instead of the latest # pragma character.](images/my-coffee-demo-resulting-script.png)
-
-   The file contains the compiled JavaScript for the original source.  On the last line is an additional comment, that shows the name of the original source file.  This pragma can help you with debugging while working with language abstractions.<!-- how so? -->
-
-   The code listing in your created file, including the pragma comment with the source file name, is produced by the file `coffee-script.js`.
-
-   The `//@ sourceURL=myFileName` comment produced by this demo page's client-side CoffeeScript code should be updated to `//# sourceURL=myFileName`.  This demo page's CoffeeScript produces a space character after the `@`, rather than `@sourceURL` or `#sourceURL`.
-
-<!-- 1. In the **Page** tab, click **coffee-script.js** and scroll through the client-side CoffeeScript code - it's long, yet line numbering stops at 8, and there are 9 hits on "@". -->
-
-<!--
-Is this demo page introducing 10x confusion as clarification?
-Why use a demo page to demonstrate this?
-Is this an outdated version of client-side CoffeeScript in the .js file of the demo page?
-Are we assumed/supposed to know what "CoffeeScript" is?
-Top of demo page claims "#" is produced; bottom explains the change of standard, why didn't the code of CoffeeScript get updated to output # instead of @, by the demo creator?
-Lots of typos in demo page.
-Where's the "bug" that produces @ when it should produce # instead?
-How does this demo page support the lead-in above?  
-Need to explain the png/ explain the demo to total newbies who have no idea what's going on here.  
-What is the purpose of this demo page?
-Where did the script code in the Coff2 listing in Devtools come from?  
-Are we seeing all the code - which code caused the @sourceURL?  
-Do you have to write a demo page like this to get //@ sourceURL?  
-What's the point of this demonstration (which returns outdated @ instead of #)? -->
 
 
 <!-- ====================================================================== -->
