@@ -23,7 +23,11 @@ When there isn't enough space, your multi-column layout should turn into a singl
 
    The top navigation bar of the webpage has some accessibility issues.  The top navigation bar overlaps the **Search** form, and that issue needs to be fixed:
 
-   :::image type="content" source="../media/a11y-testing-element-with-contrast-issues.msft.png" alt-text="Element in the page highlighted after clicking the link to it." lightbox="../media/a11y-testing-element-with-contrast-issues.msft.png":::
+   ![Element in the page highlighted after clicking the link to it.](../media/a11y-testing-element-with-contrast-issues.msft.png)
+
+
+<!-- ====================================================================== -->
+## Device Emulation tool to test narrow viewports
 
 You can simulate a narrow viewport by resizing the browser window, but a better way to test the responsiveness of your design is to use the **Device Emulation** tool.  Here are some features of the **Device Emulation** tool that help you find accessibility issues of any website:
 

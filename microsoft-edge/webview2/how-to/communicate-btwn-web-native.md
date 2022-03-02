@@ -1,5 +1,5 @@
 ---
-title: Embed web content into native applications
+title: Interop of native-side and web-side code
 description: Embed web content into native applications using WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 2/24/2022
 ---
-# Embed web content into native applications
+# Interop of native-side and web-side code
 
 The Microsoft Edge WebView2 control lets you embed web content into native applications.  You can use WebView2 in different ways, depending on what you need to accomplish.  This article describes how to communicate using simple messages, JavaScript code, and native objects.
 
@@ -21,7 +21,9 @@ Some common use cases include:
 <!-- ====================================================================== -->
 ## Before you begin
 
-This tutorial steps through the Sample App code to demonstrate some of the communication capabilities in WebView2.  Clone the [WebView2 Samples App](https://github.com/MicrosoftEdge/WebView2Samples), build, and run to follow along.
+This tutorial steps through the Sample App code to demonstrate some of the communication capabilities in WebView2.  Clone the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples), open a `.sln` file in Visual Studio, build the project, and run (debug) to follow along with the steps in this article.
+
+For detailed steps about cloning the repo, see [WebView2 samples](../code-samples-links.md).
 
 
 <!-- ====================================================================== -->
@@ -263,7 +265,7 @@ When requested by the host app, the C++ file gets the window bounds and sends th
 
 This scenario shows how to run JavaScript on the web side.  In this approach, the host app specifies the JavaScript code to run, and passes the code to the web through `ExecuteScriptAsync`.  The `ExecuteScriptAsync` function returns the JavaScript result back to the `ExecuteScript` caller.
 
-For more information, see [Use JavaScript in WebView2 apps](javascript.md).
+For more information, see [Use JavaScript in WebView2 (Run JavaScript from native code)](javascript.md).
 
 
 <!-- ====================================================================== -->

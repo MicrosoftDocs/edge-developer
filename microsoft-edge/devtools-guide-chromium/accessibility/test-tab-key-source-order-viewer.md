@@ -27,7 +27,7 @@ The `Tab` key order on the demo page is:
 
 1. The blue links of the sidebar navigation menu: **Cats**, **Dogs**, **Sheep**, **Horses**, and then **Alpacas**.
 
-1. The donation textbox in the donation form.
+1. The donation text box in the donation form.
 
 1. The buttons in the top navigation bar: **Home**, **Adopt a pet**, **Donate**, **Jobs**, and then **About Us**.
 
@@ -67,7 +67,7 @@ To activate and use the Source Order Viewer, with the demo page:
 
 1. In the DOM tree in the **Elements** tool, select a major layout element, such as the `header` element.  Numeric overlays are now displayed on sections of the rendered page, which indicate the source order of the different elements.
 
-   :::image type="content" source="../media/a11y-testing-source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page." lightbox="../media/a11y-testing-source-order-viewer.msft.png":::
+   ![Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page.](../media/a11y-testing-source-order-viewer.msft.png)
 
 1. Scroll the page to see all of the numeric overlays, including on the page footer section.
 

@@ -22,21 +22,25 @@ ms.date: 06/07/2021
    limitations under the License.  -->
 # Navigate DevTools with assistive technology
 
-This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
+This article helps you use DevTools through the keyboard and through assistive technology such as screen readers.  This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
+
+<!-- DevTools is a suite of web developer tools built into the Microsoft Edge browser. -->
 
 For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
-This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
 
-DevTools is divided into a series of tools.  (Within the **Command Menu**, tools are referred to as _panels_.)  Tools are organized into an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist) on the main toolbar and on the drawer toolbar.
+### Tabbed tool panels containing tabs and pages
 
-The following are examples of tools:
+For the terminology of tabs, tools, and panels, see [Tabbed tool panels containing tabs and pages](../overview.md#tabbed-tool-panels-containing-tabs-and-pages) in _Overview of DevTools_.
+
+Technically, the tabs are an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist).
+
+
+<!-- The following are examples of tools:
 
 *  The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
 
-*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md).
-
-Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
+*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md). -->
 
 
 <!-- ====================================================================== -->
@@ -47,8 +51,32 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 
 <!-- ====================================================================== -->
 ## Open DevTools
+<!-- keep sync'd:
+[Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_
+[Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
+-->
 
-To get started, see [Open DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any of the following ways.  Which tool is opened depends on how you open DevTools.
+
+**Main ways:**
+
+| Action | Resulting tool |
+|---|---|
+| Right-click any item on a webpage, and then select **Inspect**. | The **Elements** tool, with the DOM tree expanded to show the right-clicked page element. |
+| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
+| Press `F12`. | The previously used tool, or the **Welcome** tool. |
+
+**Additional ways:**
+
+| Action | Resulting tool |
+|---|---|
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
+| Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). | The **Console** tool. |
+| Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
+| Press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
+| Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
+
+<!-- /keep sync'd -->
 
 
 <!-- ====================================================================== -->
@@ -58,8 +86,8 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 ### Navigate by keyboard
 
-*  With DevTools open, press `Control`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
-*  Press `Control`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
+*  With DevTools open, press `Ctrl`+`]` (Windows, Linux) or `Command`+`]` (macOS) to move focus to the next tool on the main toolbar.
+*  Press `Ctrl`+`[` (Windows, Linux) or `Command`+`[` (macOS) to move focus to the previous tool on the main toolbar.
 *  Press `Tab` or `Shift`+`Tab` repeatedly until focus moves to the tabs of the main toolbar or drawer toolbar, and then use the arrow keys to move among the tools.
 
 #### Known issues
@@ -72,7 +100,7 @@ You can move among the tools by using the keyboard navigation keys or by using t
 
 To select a specific tool, use the [Command Menu](../command-menu/index.md).  In the Command Menu, a tool is called a _panel_ or _drawer_ item.
 
-1. With DevTools open, press `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. With DevTools open, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
    The **Command Menu** is a fuzzy-search autocomplete combobox.
 
@@ -119,7 +147,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  Press `Tab` to move between attribute values.  When you hear "space", you're inside of an empty text input, and can type a new attribute value.
 
-*  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change and hear the entire contents of the element.
+*  Press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change and hear the entire contents of the element.
 
 #### Known issues
 
@@ -131,9 +159,9 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  Press `Tab` to move between attribute values.  When you hear the name of the element, for instance, `h2`, you're inside of a text input, and you can change the type of the element.
 
-*  Press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
+*  Press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
 
-For example, when you type `h3` and then press `Control`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
+For example, when you type **h3** and then press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
 
 
 <!-- ====================================================================== -->
