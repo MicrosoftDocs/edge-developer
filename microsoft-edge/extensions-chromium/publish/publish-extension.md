@@ -73,7 +73,7 @@ Go to the [developer dashboard](https://partner.microsoft.com/dashboard/microsof
 
 Use the **Packages** webpage to upload the zip file of your extension package.  You can only upload one package at a time.  Your submission is blocked if the package upload isn't successful on the **Packages** webpage.
 
-To upload the package, select and drag the package onto the upload field.  Also, you can select **Browse your files**.  After the package is uploaded, your package is validated.  After validation succeeds, review the extension details, and then select **Next** to continue.  If there are validation errors, resolve the issues and try uploading again.
+To upload the package, select and drag the package onto the upload field.  Also, you can select **Browse your files**.  After the package is uploaded, your package is validated.  After validation succeeds, review the extension details, and then select **Continue** to proceed.  If there are validation errors, resolve the issues and try uploading again.
 
 
 <!-- ========================================================================== -->
@@ -97,7 +97,7 @@ Define the specific markets in which you plan to offer your extension.  The defa
 
 You can change the markets where your extension is offered.  A user who installs your extension while it is available in the user's market retains access to your extension.  However, the user doesn't have access to any future updates that are submitted to the Microsoft Edge Add-ons website.
 
-Click **Save**, to continue to the **Properties** section.
+Click **Save & Continue**, to continue to the **Properties** section.
 
 
 <!-- ========================================================================== -->
@@ -114,7 +114,7 @@ On the **Properties** webpage, enter the following information to specify proper
 | Support contact details | The URL to your support webpage, or the email address to contact your support team. |
 | Mature content | Checkbox to specify if your extension includes mature content.  Extension rating helps determine the appropriate age group of the target audience of your extension.  To help determine if your extension has mature content, see [Microsoft Edge Add-ons website developer policies](../store-policies/developer-policies.md). |
 
-Select **Save** to continue to the **Store listings** section.
+Select **Save & Continue** to continue to the **Store listings** section.
 
 > [!Important]
 > Your developer/organization name, website URL, and support contact details that you submitted during registration are displayed to users on the Microsoft Edge Add-ons website.
