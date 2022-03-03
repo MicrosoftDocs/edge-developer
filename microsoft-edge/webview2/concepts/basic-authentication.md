@@ -26,44 +26,63 @@ The order of navigation events: The _basic authentication_ event happens in the 
 
 
 <!-- ====================================================================== -->
-## Actors in the chain of events: HTTP server, WebView2 control, and host app
+## Communication between the HTTP server, WebView2 control, and host app
 
 *  The **HTTP server** checks authentication and conditionally returns an error document or the requested webpage/document.
+
 *  The **WebView2 control** instance raises the events.  The WebView2 control sits between the HTTP server and the host app.  The WebView2 control communicates with the HTTP server and with the app, as an intermediary.
+
 *  You write the **host app**.  The host app sets the user name and password on the event's arguments (`EventArgs`) response objects (in this case, `BasicAuthenticationRequestedEventArgs`).
 
 
 <!-- ====================================================================== -->
 ## Sequence of navigation events
 
-The Microsoft Edge WebView2 Navigation Authentication Flow:
+The following diagram shows the flow of navigation events for basic authenication for WebView2 apps:
 
 ![The Microsoft Edge WebView2 Navigation Authentication Flow.](../media/navigation-auth-graph.png)
 <!-- see "Image maintenance notes" below -->
 
+<!-- protect the numbering of steps to match the diagram -->
+
 1. The host app tells the WebView2 control to navigate to a URL.
+   <!-- next to box or label "__" -->
 
 2. The WebView2 control talks to the HTTP server requesting to get the document at a specified URL.
+   <!-- next to box or label "__" -->
 
 3. The HTTP server replies to the WebView2 control, saying "You can't get that URL/document without authentication."
+   <!-- next to box or label "__" -->
 
-4. The WebView2 control tells host app "Authentication is needed" (which is the `BasicAuthnRequeested` event).
+4. The WebView2 control tells the host app "Authentication is needed" (which is the `BasicAuthnRequeested` event).
+   <!-- next to box or label "__" -->
 
 5. The host app responds to that event by providing the username and password to the WebView2 control.
+   <!-- next to box or label "__" -->
 
-6. The WebView2 control again requests the URL from the HTTP server, but this time with the authentication (username & password).
+6. The WebView2 control again requests the URL from the HTTP server, but this time with the authentication (username and password).
+   <!-- next to box or label "__" -->
 
 7. The HTTP server might reject the username and password; it might tell the WebView2 control "You're not permitted to get that URL/document".
+   <!-- next to box or label "__" -->
 
-8. The WebView2 control renders the error page that's returned by the HTTP server (demarcated by the `ContentLoading` event and `DOMContentLoaded` event).
+8. The WebView2 control renders the error page that's returned by the HTTP server (this rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event).
+   <!-- next to box or label "__" -->
    
 9. The HTTP server accepts the authentication credentials and returns the requested document.  Or, the HTTP server denies the authentication and returns an error page document.
+   <!-- next to box or label "__" -->
 
-10. The WebView2 control renders the returned document (marked by the `ContentLoading` event and `DOMContentLoaded` event).
+10. The WebView2 control renders the returned document (this rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event).
+   <!-- next to box or label "__" -->
 
 
 <!-- ====================================================================== -->
 ## How navigations work
+
+
+### Navigations in general
+
+See [Navigation events for WebView2 apps](navigation-events.md).
 
 This is optional background information about how navigations work.
 
@@ -71,11 +90,16 @@ A _navigation_ corresponds to multiple navigation events.  By _navigation_, we h
 
 When a new navigation begins, a new navigation ID is assigned.  For the new navgation, the HTTP server gave the WebView2 control a document.  This is the "have document" navigation.
 
-There are two kinds of navigations in the flow:
-*  A "server requested authentication" navigation
-*  A "server gave the WebView2 control a document" navigation
+As a part of navigation, the WebView2 control renders the corresponding page (the requested page or an error page, whichever is returned by the HTTP server), and a "success" or "failure" outcome raises a successful or failed `NavigationCompleted` event.
 
-After the first type of navigation, the server has asked for auth'n and the app needs to try that kind of navigation again (with a new navigation ID).  The new navigation will use whatever the host app gets from the events arguments response objects.
+
+### Navigations specifically for basic authentication
+
+There are two kinds of navigations in the flow:
+*  A "server requested authentication" navigation.
+*  A "server gave the WebView2 control a document" navigation.
+
+After the first type of navigation, the server has asked for authentication and the app needs to try that kind of navigation again (with a new navigation ID).  The new navigation will use whatever the host app gets from the events arguments response objects.
 
 An HTTP server may require HTTP authentication.  In this case, there is a _first navigation_, which has the navigation events that are listed above.  The HTTP server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
 
@@ -87,16 +111,16 @@ If the credentials are not accepted by the HTTP server, and navigation fails aga
 
 If the credentials are accepted by the HTTP server, or if the HTTP server denies authentication with an error page, the navigation may succeed or fail.
 
-
-As a part of navigation, the WebView2 control renders the corresponding page (the requested page or an error page, whichever is returned by the HTTP server), and a "success" or "failure" outcome raises a successful or failed `NavigationCompleted` event.
-
 The navigations before and after the `BasicAuthenticationRequested` event are distinct navigations and have distinct navigation IDs.
 
-Navigation events args has a property: the `NavigationId`.  This ID ties together navigation events that corresp to a single navigation.  The navigation ID remains the same during each navigation, such as a retry.  During the next run through the event flow, a different navigation ID is used.
+Navigation event args has a property: the `NavigationId`.  This ID ties together navigation events that corresponds to a single navigation.  The navigation ID remains the same during each navigation, such as a retry.  During the next run through the event flow, a different navigation ID is used.
 
+<!-- maybe add term'y table at top incl "event args" -->
 
 <!-- ====================================================================== -->
-## Example code: App providing authentication (username and password) that's known ahead of time
+## Example code: App providing credentials that are known ahead of time
+
+This example shows the host app providing credentials (user name and password) that are known ahead of time.
 
 The following sample was created by expanding the sample [WebView2APISample repo > ScenarioAuthentication.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/d78d86f1646b6c652908f1e4bc2b64950f05ca0a/SampleApps/WebView2APISample/ScenarioAuthentication.cpp), from the WebView2Samples repo.
 
@@ -170,16 +194,16 @@ The above code isn't realistic, because:
 
 
 <!-- ====================================================================== -->
-## Example code: App prompts user for authentication credentials (username and password) 
+## Example code: Prompting user for credentials
 
-The following code adds to the above sample, by adding the following features, using `ICoreWebView2_10.add_BasicAuthenticationRequested` (in the case of C++):
+This example shows the host app prompting the user for credentials (user name and password), and uses async code.
+
+The following code adds to the above sample, by adding the following features, using the `BasicAuthenticationRequested` event.
 *  Prompt the user for UI to enter their username and password.
-*  Call the `getDeferral()` method on the `event` argument.
-
+*  Call the `GetDeferral` method on the `event` argument.
 
 <!-- ------------------------------ -->
 # [C++](#tab/cpp)
-
 
 ```cpp
 if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
@@ -426,7 +450,7 @@ https://edotor.net/?engine=dot#digraph%20g%20%7B%0A%20%20%20%20fontname%3D%22Hel
 
 
 <!-- ====================================================================== -->
-## API Reference
+## API Reference overview
 
 <!-- ------------------------------ -->
 # [C++](#tab/cpp)
