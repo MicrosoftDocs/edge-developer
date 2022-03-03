@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/01/2022
+ms.date: 03/02/2022
 ---
 # Customize context menus in WebView2
 
@@ -14,6 +14,7 @@ ms.date: 03/01/2022
 todo:
 *  finish final cleanup of content of h2/h3 sections
 *  Add C# code listing in section "Example: Disabling all context menus".
+*  Add which APIs, in h2 "Enabling the default context menu"
 -->
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
@@ -36,7 +37,8 @@ Instead of using the default context menu, your host app can draw its own contex
 
 When the user selects a command from your custom context menu, your app needs to tell the WebView2 control which command the user selected, by using the `SelectedCommandId` property.
 
-The example in the next section uses the following API items.
+The following APIs are used to add a custom context menu in the example in the next section.
+
 
 # [C++](#tab/cpp)
 
@@ -345,7 +347,7 @@ Iterate through an `IList` of `CoreWebView2ContextMenuItem` items, adding a `Cor
 
 To add custom menu items to the default context menu, use the following API items.
 
-These APIs are used in the example code in the next section.
+The following APIs are used to add custom menu items to a default context menu, in the example in the next section.
 
 
 # [C++](#tab/cpp)
@@ -476,7 +478,8 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
 
 You can remove default or custom menu items from the default context menu.
 
-The example code in the next section uses the following API items.
+The following APIs are used to remove menu items from a default context menu, in the example in the next section.
+
 
 # [C++](#tab/cpp)
 
@@ -631,7 +634,7 @@ When the user selects a custom menu item on a context menu, the WebView2 control
    * [remove_ContextMenuRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested) - Removes an event handler previously added with `add_ContextMenuRequested`.
 
 * **[ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)** - Defines properties that enable, disable, or modify WebView features.
-   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)** - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
+   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled) - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
    * [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled) - Sets the `AreDefaultContextMenusEnabled` property.
 
 
@@ -692,8 +695,6 @@ When the user selects a WebView2 context menu command, the host app can optional
 
 ---
 
-
-
 <!-- -------------------------------------------------- -->
 ### Custom menuitems
 
@@ -703,7 +704,24 @@ If your host app reports a custom menu item as the selected menu item, then the 
 <!-- ====================================================================== -->
 ## Enabling the default context menu
 
-You can use this API or the earlier API.
+To enable the default context menu to be opened, set the `AreDefaultContextMenusEnabled` property.
+
+<!-- todo: confirm what api items are used to do this, state why this h2 is asymm w/ next h2 -->
+
+
+# [C++](#tab/cpp)
+
+* **[ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)** - Defines properties that enable, disable, or modify WebView features.
+   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled) - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
+   * [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled) - Sets the `AreDefaultContextMenusEnabled` property.
+
+
+# [C#](#tab/csharp)
+
+* **[CoreWebView2Settings Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings)** - Properties that enable, disable, or modify WebView features.
+   * [AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled) - Determines whether the default context menus are shown to the user in WebView.
+
+---
 
 
 <!-- ====================================================================== -->
@@ -711,11 +729,13 @@ You can use this API or the earlier API.
 
 The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.  If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables the default context menu, and the `ContextMenuRequested` event won't be raised, such as when the user right-clicks.
 
+The following APIs are used to disable all context menus, in the example in the next section.
+
 
 # [C++](#tab/cpp)
 
 * **[ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)** - Defines properties that enable, disable, or modify WebView features.
-   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)** - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
+   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled) - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
    * [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled) - Sets the `AreDefaultContextMenusEnabled` property.
 
 
@@ -825,7 +845,7 @@ The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/Sa
    * [CreateContextMenuItem](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem) - Creates a `ContextMenuItem` object to insert into the WebView context menu.
 
 * **[ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)** - Defines properties that enable, disable, or modify WebView features.
-   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)** - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
+   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled) - Gets the `AreDefaultContextMenusEnabled` property, which is used to prevent default context menus from being shown to user in WebView.
    * [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled) - Sets the `AreDefaultContextMenusEnabled` property.
    
 * [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind) - Specifies the menu item kind for the `ICoreWebView2ContextMenuItem::get_Kind` method.  <!--probably like c#: Represents the active element that caused the context menu request.  For example, if there is a selection with multiple images, audio, and text, the element that the end user right-clicks within the selection will be the option represented by this enum. -->
@@ -858,7 +878,7 @@ The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/Sa
 * **[CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)** - A context menu item of a context menu.
    * [Children Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.children) - Gets the list of children menu items if the kind is `Submenu`.
    * [CommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.commandid) - Gets the Command ID for the `CoreWebView2ContextMenuItem`.
-   * [Icon Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.icon) - Gets the Icon for the `CoreWebView2ContextMenuItem` in PNG, Bitmap or SVG formats in the form of an IStream.
+   * [Icon Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.icon) - Gets the Icon for the `CoreWebView2ContextMenuItem` in PNG, Bitmap or SVG formats in the form of an `IStream`.
    * [IsChecked Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.ischecked) - Gets or sets the checked property of the `CoreWebView2ContextMenuItem`.
    * [IsEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.isenabled) - Gets or sets the enabled property of the `CoreWebView2ContextMenuItem`. Must only be used in the case of a custom context menu item.
    * [Kind Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.kind) - Gets the kind of `CoreWebView2ContextMenuItem` as `CoreWebView2ContextMenuItemKind`.
