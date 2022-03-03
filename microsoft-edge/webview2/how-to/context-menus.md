@@ -500,7 +500,7 @@ The example code in the next section uses the following API items.
 # [C#](#tab/csharp)
 
 * **[CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)** - A context menu item of a context menu.
-   * [Name Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.name?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-name) - Gets the unlocalized name for the `CoreWebView2ContextMenuItem`.
+   * [Name Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.name) - Gets the unlocalized name for the `CoreWebView2ContextMenuItem`.
 
 * [ContextMenuRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested) - Raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
 
@@ -843,15 +843,15 @@ The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/Sa
    * [ContextMenuRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested) - Raised when a context menu is requested by the user and the content inside WebView hasn't disabled context menus.
 
 * **[CoreWebView2ContextMenuItem Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)** - A context menu item of a context menu.
-   * [Children Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.children?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-children) - Gets the list of children menu items if the kind is `Submenu`.
+   * [Children Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.children) - Gets the list of children menu items if the kind is `Submenu`.
    * [CommandId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.commandid) - Gets the Command ID for the `CoreWebView2ContextMenuItem`.
-   * [Icon Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.icon?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-icon) - Gets the Icon for the `CoreWebView2ContextMenuItem` in PNG, Bitmap or SVG formats in the form of an IStream.
-   * [IsChecked Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.ischecked?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-ischecked) - Gets or sets the checked property of the `CoreWebView2ContextMenuItem`.
-   * [IsEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.isenabled?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-isenabled) - Gets or sets the enabled property of the `CoreWebView2ContextMenuItem`. Must only be used in the case of a custom context menu item.
+   * [Icon Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.icon) - Gets the Icon for the `CoreWebView2ContextMenuItem` in PNG, Bitmap or SVG formats in the form of an IStream.
+   * [IsChecked Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.ischecked) - Gets or sets the checked property of the `CoreWebView2ContextMenuItem`.
+   * [IsEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.isenabled) - Gets or sets the enabled property of the `CoreWebView2ContextMenuItem`. Must only be used in the case of a custom context menu item.
    * [Kind Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.kind) - Gets the kind of `CoreWebView2ContextMenuItem` as `CoreWebView2ContextMenuItemKind`.
-   * [Label Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.label?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-label) - Gets the localized label for the `CoreWebView2ContextMenuItem`. Will contain an ampersand for characters to be used as keyboard accelerator.
-   * [Name Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.name?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-name) - Gets the unlocalized name for the `CoreWebView2ContextMenuItem`.
-   * [ShortcutKeyDescription Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.shortcutkeydescription?view=webview2-dotnet-1.0.1133-prerelease#microsoft-web-webview2-core-corewebview2contextmenuitem-shortcutkeydescription) - Gets the localized keyboard shortcut for this `CoreWebView2ContextMenuItem`.
+   * [Label Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.label) - Gets the localized label for the `CoreWebView2ContextMenuItem`. Will contain an ampersand for characters to be used as keyboard accelerator.
+   * [Name Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.name) - Gets the unlocalized name for the `CoreWebView2ContextMenuItem`.
+   * [ShortcutKeyDescription Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.shortcutkeydescription) - Gets the localized keyboard shortcut for this `CoreWebView2ContextMenuItem`.
    * [CustomItemSelected Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.customitemselected) - Raised when the user selects this `CoreWebView2ContextMenuItem`.
 
 * **[CoreWebView2ContextMenuItemKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)** - Kinds of menu items for the `Kind` property.
