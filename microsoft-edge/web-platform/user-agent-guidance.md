@@ -15,11 +15,13 @@ User-Agent string
 user agent string - not used
 -->
 
-This article describes the methods Microsoft Edge supports for retrieving user agent information.
+Microsoft Edge enables your website to retrieve user agent information.  You use the user agent information to present webpages correctly for each user's browser.  Browsers provide mechanisms for websites to detect browser information such as brand, version number, and host operating system.
 
-Browsers provide mechanisms for websites to detect browser information such as brand, version number, and host operating system. Legacy [User-Agent strings](#user-agent-strings) are outdated and have a history of causing website compatibility problems. The new [User-Agent Client Hints](#user-agent-client-hints) are an improved mechanism for retrieving browser information.
+*  **User-Agent Client Hints** are an improved mechanism for retrieving browser information.  See [User-Agent Client Hints](#user-agent-client-hints), below.
 
-You may want to provide different experiences to users based on their browser. For example, if you include steps about how to configure Microsoft Edge or another browser for use with your site, you may want to detect the browser and then show the appropriate content.
+*  **User-Agent strings** are legacy; they are outdated and have a history of causing website compatibility problems.  See [User-Agent strings](#user-agent-strings), below.
+
+You may want to provide different experiences to users based on their browser.  For example, if you include steps about how to configure Microsoft Edge or another browser for use with your site, you may want to detect the browser and then show the appropriate content.
 
 Mechanisms for browser detection:
 

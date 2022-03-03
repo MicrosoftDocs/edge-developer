@@ -297,4 +297,4 @@ Use the App Badging API and the Notifications API to let users know that backgro
 
 With Microsoft Edge, badges appear on app icons in the taskbar, and notifications integrate with the system notification center.
 
-To learn how to use these APIs, see [Re-engage users with badges, notifications, and push messages](./notifications-badges.md).
+To learn how to use these APIs, see [Re-engage users with badges, notifications, and push messages](notifications-badges.md).

@@ -24,7 +24,7 @@ ms.date: 05/04/2021
 
 This page is a comprehensive reference of DevTools features that are related to analyzing performance.
 
-For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Get started analyzing runtime performance](./index.md).
+For a step-by-step tutorial on how to analyze the performance of a page using the **Performance** tool, see [Get started analyzing runtime performance](index.md).
 
 
 <!-- ====================================================================== -->
@@ -178,7 +178,7 @@ To select a portion using a trackpad:
 
 1. Using two fingers, swipe up to zoom out, swipe left to move left, swipe down to zoom in, and swipe right to move right.
 
-To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move what portion of the recording is chosen.
+To scroll a long flame chart in the **Main** section or any of the neighbors, click and hold while dragging up and down.  Drag left and right to move what portion of the recording is selected.
 
 ### Search activities
 
@@ -373,7 +373,7 @@ Requests are color-coded as follows:
 
 Click on a request to view more information about it in the **Summary** tab.  For example, in the previous figure, the **Summary** tab is displaying more information about the blue request that is selected in the **Network** section.
 
-A darker-blue square in the top-left of a request means it is a higher-priority request.  A lighter-blue square means lower-priority.  For example, in the previous figure, the blue, selected request is higher-priority, and the green one below it is lower-priority.
+A darker-blue square in the top-left of a request means it's a higher-priority request.  A lighter-blue square means lower-priority.  For example, in the previous figure, the blue, selected request is higher-priority, and the green one below it is lower-priority.
 
 In the first figure below, the request for `www.bing.com` is represented by a line on the left, a bar in the middle with a dark portion and a light portion, and a line on the right.  The second figure below shows the corresponding representation of the same request in the **Timing** tab of the **Network** tool.
 

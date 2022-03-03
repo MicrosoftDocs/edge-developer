@@ -10,7 +10,7 @@ ms.date: 01/20/2022
 ---
 # Use WebDriver to automate Microsoft Edge
 
-WebDriver allows you to automate Microsoft Edge by simulating user interaction.  WebDriver tests and simulations differ from JavaScript unit tests in the following ways:
+WebDriver allows you to automate Microsoft Edge by simulating user interaction.  Tests that use WebDriver have some advantages over JavaScript unit tests that run in the browser:
 
 *   WebDriver accesses functionality and information that's not available to JavaScript running in browsers.
 
@@ -405,7 +405,7 @@ These are troubleshooting considerations when using WebDriver to automate Micros
 
 ### Developer Tools Availability policy
 
-If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`,  [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/index.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
+If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`,  [Microsoft Edge Driver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
 
 ### Upgrading from Selenium 3 to Selenium 4
 

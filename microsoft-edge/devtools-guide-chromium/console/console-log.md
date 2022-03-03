@@ -49,7 +49,7 @@ To try using the logging functions in the Console:
 
 1. Open the demo webpage [Console messages examples: log, info, error, and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-examples.html) in a new window or tab.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The demo page has already sent the above log messages to the **Console**:
 
@@ -101,7 +101,7 @@ To use the `log` function to display different variable types:
 
 1. Open the demo webpage [Console messages examples: Logging different types](https://microsoftedge.github.io/Demos/devtools-console/logging-types.html) in a new window or tab.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    Each type of result is displayed in a different way.
 
@@ -163,7 +163,7 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
 1. Open the demo page [Console messages examples: Logging with specifiers](https://microsoftedge.github.io/Demos/devtools-console/logging-with-specifiers.html) in a new tab or window.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The webpage has already populated the **Console** with output.
 
@@ -233,7 +233,7 @@ In this example, the group names are optionally generated.
 
 1. Open the demo page [Console messages examples: Grouping logs](https://microsoftedge.github.io/Demos/devtools-console/logging-with-groups.html) in a new tab or window.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The webpage has already populated the **Console** with output.
 
@@ -287,7 +287,7 @@ To show complex data as tables:
 
 1. Open the demo page [Console messages examples: Using table](https://microsoftedge.github.io/Demos/devtools-console/logging-with-table.html) in a new window or tab.
 
-1. Press `Control`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
+1. Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).  DevTools opens, with the **Console** open in main toolbar.
 
    The webpage has already populated the **Console** with output.
 

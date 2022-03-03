@@ -49,7 +49,7 @@ You can also manage PWAs in the **Apps & features** system setting, like other W
 <!-- ====================================================================== -->
 ## Windows integration
 
-Progressive Web Apps (PWAs) are displayed like native apps on Windows. They appear in the Taskbar (where they can be pinned), in the Start Menu, or when switching between apps with `Alt`+`Tab`.
+Progressive Web Apps (PWAs) are displayed like native apps on Windows. They appear in the Taskbar (where they can be pinned), in the Start menu, or when switching between apps with `Alt`+`Tab`.
 
 PWAs and native apps can reside side-by-side in the Taskbar (PWAs are indicated here by a red box):
 
@@ -63,9 +63,9 @@ PWAs can also expose common tasks to users as shortcuts that appear in the app's
 
 :::image type="content" source="./media/pwa-shortcuts-in-taskbar.png" alt-text="Common tasks are listed in the Taskbar's right-click menu.":::
 
-Learn more about [defining shortcuts](./how-to/shortcuts.md).
+Learn more about [defining shortcuts](how-to/shortcuts.md).
 
-PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Learn more about [using notifications, push messages, and badges](./how-to/notifications-badges.md).
+PWAs can also display notifications in the operating system's own notification service. This helps users re-engage with your app. Learn more about [using notifications, push messages, and badges](how-to/notifications-badges.md).
 
 ### Starting PWAs when the user signs in
 
@@ -75,7 +75,7 @@ To set an already installed PWA to automatically start when you sign in to Windo
 
 1.  Open Microsoft Edge.
 1.  Go to `edge://apps`.  The **Apps** page lists the installed apps.
-1.  On the app you want to configure, click the **More options** (![The More options button.](./media/edge-apps-more-options.png)) button and then select **Auto-start on device login**.
+1.  On the app you want to configure, click the **More options** (![The More options button.](media/edge-apps-more-options.png)) button and then select **Auto-start on device login**.
 
 :::image type="content" source="./media/turn-on-run-on-os-login-flag.png" alt-text="Use the More Options menu to turn on the 'Auto-start on device login' feature in Microsoft Edge.":::
 

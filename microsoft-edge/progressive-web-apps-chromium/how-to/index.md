@@ -202,7 +202,7 @@ Support [Deep linking](https://en.wikipedia.org/wiki/Deep_linking).  Route each 
 
 ### Provide a rich offline experience
 
-Provide a rich [Offline experience](./offline.md).  Make the app work even if the user's device is offline.  Provide a custom offline page rather than using the browser's default offline page.
+Provide a rich [Offline experience](offline.md).  Make the app work even if the user's device is offline.  Provide a custom offline page rather than using the browser's default offline page.
 
 ### Use validation and testing practices
 

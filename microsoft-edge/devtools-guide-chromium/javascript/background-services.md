@@ -43,11 +43,11 @@ The **Background Fetch API** enables a **service worker** to reliably download l
 
 <!--Todo: add background fetch api section when available -->
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the **Application** tool.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-1. Open the **Background Fetch** panel.
+1. On the left, in the **Background Services** section, select **Background Fetch**.  The **Background Fetch** page opens.
 
    :::image type="content" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="The Background Fetch panel." lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
 
@@ -68,9 +68,11 @@ The **Background Sync API** enables an offline **service worker** to send data t
 
 <!--Todo: add background sync api section when available -->
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the **Application** tool, and then in the **Background Services** section on the left, select **Background Sync**.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. On the left, in the **Background Services** section, select **Background Sync**.  The **Background Sync** page opens.
 
    :::image type="content" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="The Background Sync pane." lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
 
@@ -88,9 +90,11 @@ The **Background Sync API** enables an offline **service worker** to send data t
 
 After a **service worker** has received a [Push Message](https://developer.mozilla.org/docs/Web/API/Push_API) from a server, the service worker uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API) to display the data to a user.  To log Notifications for 3 days, even when DevTools isn't open:
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the **Application** tool, and then in the **Background Services** section on the left, select **Notifications**.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. On the left, in the **Background Services** section, select **Notifications**.  The **Notifications** page opens.
 
    :::image type="content" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="The Notifications pane." lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
 
@@ -108,9 +112,11 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 
 To display a push notification to a user, a **service worker** must first use the [Push Message API](https://developer.mozilla.org/docs/Web/API/Push_API) to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).  To log Push Messages for 3 days, even when DevTools isn't open:
 
-1. [Open DevTools](../open/index.md).
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Open the **Application** tool, and then in the **Background Services** section on the left, select **Push Messaging**.
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. On the left, in the **Background Services** section, select **Push Messaging**.  The **Push Messaging** page opens.
 
    :::image type="content" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Open the Push Messaging pane." lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
 

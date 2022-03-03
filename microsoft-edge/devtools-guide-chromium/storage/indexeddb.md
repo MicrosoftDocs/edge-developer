@@ -22,18 +22,13 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and change IndexedDB data
 
-This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) data.
-
-This article assumes you are familiar with:
-
-*  DevTools.
-*  IndexedDB.  See [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB).
+To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) data, use the **Application** tool.
 
 
 <!-- ====================================================================== -->
 ## View IndexedDB data
 
-1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
+1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
 
    :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest-empty.msft.png":::
 
