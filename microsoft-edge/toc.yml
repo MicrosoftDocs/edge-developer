@@ -254,9 +254,17 @@
                   href: devtools-guide-chromium/javascript/disable.md
                   displayName: Sources tool
 
-                - name: Map preprocessed code to source code
+                - name: Map the processed code to your original source code, for debugging
                   href: devtools-guide-chromium/javascript/source-maps.md
-                  displayName: Sources tool
+                  displayName: Sources tool, source maps
+
+                - name: Securely debug original code by publishing source maps to the Azure Artifacts symbol server
+                  href: devtools-guide-chromium/javascript/publish-source-maps-to-azure.md
+                  displayName: Sources tool, source maps, Azure Artifacts symbol server
+
+                - name: Securely debug original code by using Azure Artifacts symbol server source maps
+                  href: devtools-guide-chromium/javascript/consume-source-maps-from-azure.md
+                  displayName: Sources tool, source maps, Azure Artifacts symbol server
 # Optional tool tabs ==========================================================
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
@@ -508,9 +516,9 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
                   displayName: Sensors tool, Device Emulation
 # Source maps monitor tool ----------------------------------------------------
-            - name: Source maps monitor tool
+            - name: Source Maps Monitor tool
               items:
-                - name: Source maps monitor tool  # no article yet
+                - name: Source Maps Monitor tool  # no article yet
                   href: devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
                   displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
