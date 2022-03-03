@@ -132,7 +132,7 @@ In the WebView2 sample code, the file `HostObjectSample.idl` creates a COM objec
 
 In the WebView2 sample code, the `HostObjectSampleImpl.cpp` file takes the skeleton created in the COM IDL file and builds the C++ object.
 
-Implement all the functions that are defined in your object's interface, as we outlined in the IDL file. Be sure to implement the functions that are required by `IDispatch`.  The compiler will throw a warning if these functions aren't defined.
+Implement all the functions that are defined in your object's interface, as we outlined in the IDL file. Be sure to implement the functions that are required by `IDispatch`.  The compiler will throw an error if these functions aren't defined.
 
 Next, we examine two specific properties that were defined in the IDL, to show how the IDL is related to the `.cpp` file.
 
@@ -214,7 +214,7 @@ So far, we've built our interface and implemented our host object. Now we're rea
 
 1. Review line 51, which casts the newly created COM object to an `IDispatch` type and then converts the object to a `VARIANT`. `VARIANT` types allow you to use data structures such as integers and arrays as well as more complex types such as `IDispatch`. 
 
-    For a full list of supported data types, see [VARIANT structure (oaidl.h) - Win32 apps | Microsoft Docs](/windows/win32/api/oaidl/ns-oaidl-variant).
+    For a full list of supported data types, see [VARIANT structure (oaidl.h) - Win32 apps | Microsoft Docs](/windows/win32/api/oaidl/ns-oaidl-variant). However, please note that not all types in the `VARIANT` union are supported by `AddHostObjectToScript`. See [WebView2 Win32 C++ ICoreWebView2 | Microsoft Docs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript) for more details.
     
     Now that we have a variant of the object that is C++ code-friendly, our app's native-side code is ready to pass the host object to the app's web-side code.
 
