@@ -418,3 +418,4 @@ If you're using Selenium 4 and get this error, remove `Microsoft.Edge.SeleniumTo
 ## See also
 
 *  [Selenium documentation](https://www.selenium.dev/documentation) - Information about WebDriver in the context of Selenium, and how to write automated WebDriver tests using Selenium.
+*  [Contact the Microsoft Edge WebDriver team](contact.md) to send feedback about using WebDriver, WebDriver testing frameworks (such as Selenium), and Microsoft Edge.
