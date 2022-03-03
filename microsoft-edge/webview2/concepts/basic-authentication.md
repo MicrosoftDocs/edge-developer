@@ -1,22 +1,49 @@
 ---
 title: Basic authentication for WebView2 apps
-description: Basic authentication for WebView2 apps, including the sequence of authentication and navigation steps to retrieve a webpage from an HTTP server, with a WebView2 control instance acting as intermediary between the host app and the HTTP server.
+description: Basic authentication for WebView2 apps includes a sequence of authentication and navigation steps to retrieve a webpage from an HTTP server.  The WebView2 control acts as an intermediary for communication between the host app and the HTTP server.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 10/28/2021
+ms.date: 03/03/2022
 ---
 # Basic authentication for WebView2 apps
 
+<!-- todo:
+Write a strong intro by pulling content from the first three sections.
+
+Change diagram to a swimlane diagram with callouts for each step, and use a decision diamond for step 8.
+OK to use Visio?
+
+The numbered steps under the diagram feel disconnected from the diagram, and there are some interesting points in the sections after that that should be added to the numbered steps.
+
+Terminology:
+
+| Term | Definition |
+|---|---|
+| _navigation event args_ | |
+| _navigations_, a _navigation_ | |
+| _basic authentication_ | A specific technical phrase.  See [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN. |
+-->
+
 _Basic authentication_ is an authentication approach that's part of the HTTP protocol.
+
+Basic authentication for WebView2 apps includes a sequence of authentication and navigation steps to retrieve a webpage from an HTTP server.  The WebView2 control acts as an intermediary for communication between the host app and the HTTP server.
+
+
+<!-- ====================================================================== -->
+## Use HTTPS for sending credentials
+
+Warning: You must use HTTPS when using Basic Authentication.  Otherwise the username and password are not encrypted. You may want to consider other forms of authentication.
+
+The HTTP standard for basic authentication includes the authentication credentials (username and password) unencrypted. Therefore, you must use `https`, to ensure that the credentials are encrypted.
 
 
 <!-- ====================================================================== -->
 ## The order of navigation events
 
-The order of navigation events: The _basic authentication_ event happens in the middle of the events sequence, which is:
+The basic authentication event happens in the middle of the sequence of events:
 
 1. `NavigationStarting` - navigation event
 1. `ContentLoading` - navigation event
@@ -28,52 +55,54 @@ The order of navigation events: The _basic authentication_ event happens in the 
 <!-- ====================================================================== -->
 ## Communication between the HTTP server, WebView2 control, and host app
 
-*  The **HTTP server** checks authentication and conditionally returns an error document or the requested webpage/document.
+*  The **HTTP server** checks authentication (username and password credentials) and returns either an error document or the requested webpage.
 
-*  The **WebView2 control** instance raises the events.  The WebView2 control sits between the HTTP server and the host app.  The WebView2 control communicates with the HTTP server and with the app, as an intermediary.
+*  The **WebView2 control** instance raises the events.  The WebView2 control sits between the HTTP server and the host app.  The WebView2 control serves as an intermediary for communication between the host app and the HTTP server.
 
-*  You write the **host app**.  The host app sets the user name and password on the event's arguments (`EventArgs`) response objects (in this case, `BasicAuthenticationRequestedEventArgs`).
+*  You write the **host app**.  The host app sets the user name and password on the event's arguments (`EventArgs`) response objects.
+
+`BasicAuthenticationRequestedEventArgs` has a `Response` property.  The `Response` property is an object that contains the username and password properties.
 
 
 <!-- ====================================================================== -->
 ## Sequence of navigation events
 
-The following diagram shows the flow of navigation events for basic authenication for WebView2 apps:
+The following diagram shows the flow of navigation events for basic authentication for WebView2 apps:
 
-![The Microsoft Edge WebView2 Navigation Authentication Flow.](../media/navigation-auth-graph.png)
+![The flow of navigation events for basic authentication for WebView2 apps.](../media/navigation-auth-graph.png)
 <!-- see "Image maintenance notes" below -->
 
 <!-- protect the numbering of steps to match the diagram -->
 
 1. The host app tells the WebView2 control to navigate to a URL.
-   <!-- next to box or label "__" -->
+   <!-- "1" next to box or label "WebView2 navigates to URI requiring basic authentication" -->
 
-2. The WebView2 control talks to the HTTP server requesting to get the document at a specified URL.
-   <!-- next to box or label "__" -->
+1. The WebView2 control talks to the HTTP server requesting to get the document at a specified URL.
+   <!-- "2" next to box or label "ContentLoading event" -->
 
-3. The HTTP server replies to the WebView2 control, saying "You can't get that URL/document without authentication."
-   <!-- next to box or label "__" -->
+1. The HTTP server replies to the WebView2 control, saying "You can't get that URL (document) without authentication."
+   <!-- "3" next to box or label "Server requests authentication" -->
 
-4. The WebView2 control tells the host app "Authentication is needed" (which is the `BasicAuthnRequeested` event).
-   <!-- next to box or label "__" -->
+1. The WebView2 control tells the host app "Authentication is needed" (which is the `BasicAuthenticationRequested` event).
+   <!-- "4" next to box or label "BasicAuthenticationRequested event" -->
 
-5. The host app responds to that event by providing the username and password to the WebView2 control.
-   <!-- next to box or label "__" -->
+1. The host app responds to that event by providing the username and password to the WebView2 control.
+   <!-- "5" next to box or label "BasicAuthenticationRequested event" -->
 
-6. The WebView2 control again requests the URL from the HTTP server, but this time with the authentication (username and password).
-   <!-- next to box or label "__" -->
+1. The WebView2 control again requests the URL from the HTTP server, but this time with the authentication (username and password).
+   <!-- "6" next to box or label "WebView2 navigates to same URI with BasicAuthenticationRequested result" -->
 
-7. The HTTP server might reject the username and password; it might tell the WebView2 control "You're not permitted to get that URL/document".
-   <!-- next to box or label "__" -->
+1. The HTTP server might reject the username and password; it might tell the WebView2 control "You're not permitted to get that URL/document".
+   <!-- "7" next to box or label "Server denies authentication with error page" -->
 
-8. The WebView2 control renders the error page that's returned by the HTTP server (this rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event).
-   <!-- next to box or label "__" -->
+1. The WebView2 control renders the error page that's returned by the HTTP server.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
+   <!-- "8" next to box or label "NavigationCompleted event (rendered server document)" -->
    
-9. The HTTP server accepts the authentication credentials and returns the requested document.  Or, the HTTP server denies the authentication and returns an error page document.
-   <!-- next to box or label "__" -->
+1. The HTTP server accepts the authentication credentials and returns the requested document.  Or, the HTTP server denies the authentication and returns an error page document.
+   <!-- "9" next to box or label "Server accepts authentication with document" -->
 
-10. The WebView2 control renders the returned document (this rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event).
-   <!-- next to box or label "__" -->
+1. The WebView2 control renders the returned document.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
+   <!-- "10" next to box or label "NavigationCompleted event (rendered server document)" -->
 
 
 <!-- ====================================================================== -->
@@ -84,16 +113,16 @@ The following diagram shows the flow of navigation events for basic authenicatio
 
 See [Navigation events for WebView2 apps](navigation-events.md).
 
-This is optional background information about how navigations work.
+This section provides optional background information about how navigations work.
 
-A _navigation_ corresponds to multiple navigation events.  By _navigation_, we here mean each retry, starting with the `NavigationStarting` box of the diagram, through the `NavigationCompleted` box.  
+A _navigation_ corresponds to multiple navigation events.  By _navigation_, we here mean each retry, starting with the `NavigationStarting` box of the above diagram, through the `NavigationCompleted` box.
 
 When a new navigation begins, a new navigation ID is assigned.  For the new navgation, the HTTP server gave the WebView2 control a document.  This is the "have document" navigation.
 
 As a part of navigation, the WebView2 control renders the corresponding page (the requested page or an error page, whichever is returned by the HTTP server), and a "success" or "failure" outcome raises a successful or failed `NavigationCompleted` event.
 
 
-### Navigations specifically for basic authentication
+### Navigations for basic authentication
 
 There are two kinds of navigations in the flow:
 *  A "server requested authentication" navigation.
@@ -101,21 +130,20 @@ There are two kinds of navigations in the flow:
 
 After the first type of navigation, the server has asked for authentication and the app needs to try that kind of navigation again (with a new navigation ID).  The new navigation will use whatever the host app gets from the events arguments response objects.
 
-An HTTP server may require HTTP authentication.  In this case, there is a _first navigation_, which has the navigation events that are listed above.  The HTTP server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
+An HTTP server may require HTTP authentication.  In this case, there's a _first navigation_, which has the navigation events that are listed above.  The HTTP server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
 
-If the `BasicAuthenticationRequested` event is cancelled, then there is no subsequent navigation and the WebView2 will remain displaying the blank page.
+If the `BasicAuthenticationRequested` event is canceled, then there's no subsequent navigation and the WebView2 will remain to display the blank page.
 
-If the `BasicAuthenticationRequested` event isn't cancelled, the WebView2 will perform the initial navigation again, but this time using any provided credentials and you will again see all the same navigation events as before.
+If the `BasicAuthenticationRequested` event isn't canceled, the WebView2 will perform the initial navigation again, but this time, using any provided credentials.  You'll again see all the same navigation events as before.
 
-If the credentials are not accepted by the HTTP server, and navigation fails again with 401 or 407.  In that case, the `CoreWebView2` class instance again raises the `BasicAuthenticationRequested` event, and navigation continues as above.
+If the credentials aren't accepted by the HTTP server, navigation fails again with 401 or 407.  In that case, the `CoreWebView2` class instance again raises the `BasicAuthenticationRequested` event, and navigation continues as above.
 
-If the credentials are accepted by the HTTP server, or if the HTTP server denies authentication with an error page, the navigation may succeed or fail.
+The navigation succeeds if the credentials are accepted by the HTTP server.  The navigation fails if the HTTP server denies authentication (the server typically returns an error page).
 
 The navigations before and after the `BasicAuthenticationRequested` event are distinct navigations and have distinct navigation IDs.
 
-Navigation event args has a property: the `NavigationId`.  This ID ties together navigation events that corresponds to a single navigation.  The navigation ID remains the same during each navigation, such as a retry.  During the next run through the event flow, a different navigation ID is used.
+Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` ties together navigation events that correspond to a single navigation.  The `NavigationId` remains the same during each navigation, such as a retry.  During the next pass through the event flow, a different `NavigationId` is used.
 
-<!-- maybe add term'y table at top incl "event args" -->
 
 <!-- ====================================================================== -->
 ## Example code: App providing credentials that are known ahead of time
@@ -127,9 +155,33 @@ The following sample was created by expanding the sample [WebView2APISample repo
 That sample includes the following relevant code:
 
 <!-- ------------------------------ -->
+
+# [C#](#tab/csharp)
+
+```csharp
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// for sending credentials" in this article.
+    webView.CoreWebView2.BasicAuthenticationRequested += delegate (
+       object sender, 
+       CoreWebView2BasicAuthenticationRequestedEventArgs args)
+    {
+        args.Response.UserName = "user";
+        args.Response.Password = "pass";
+    };
+```
+
+**APIs:**
+
+* [CoreWebView2.BasicAuthenticationRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
+* [CoreWebView2BasicAuthenticationRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
+
+<!-- ------------------------------ -->
+
 # [C++](#tab/cpp)
 
 ```cpp
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// for sending credentials" in this article.
 if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
 {
    CHECK_FAILURE(webView10->add_BasicAuthenticationRequested(
@@ -156,36 +208,16 @@ else
 
 **APIs:**
 
-* [ICoreWebView2BasicAuthenticationRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventhandler) - The caller implements this interface to handle the `BasicAuthenticationRequested` event.
+* [ICoreWebView2BasicAuthenticationRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventhandler)
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
-   * `get_Cancel` - Cancel the authentication request.
-   * `put_Cancel` - Set the `Cancel` property.
-   * `get_Challenge` - The authentication challenge string.
-   * `get_Response` - Response to the authentication request with credentials.
-   * `get_Uri` - The URI that led to the authentication challenge.
-   * `GetDeferral` - Returns an `ICoreWebView2Deferral` object.
-
-
-<!-- ------------------------------ -->
-# [C#](#tab/csharp)
-
-```csharp
-    webView.CoreWebView2.BasicAuthenticationRequested += delegate (
-       object sender, 
-       CoreWebView2BasicAuthenticationRequestedEventArgs args)
-    {
-        args.Response.UserName = "user";
-        args.Response.Password = "pass";
-    };
-```
-
-**APIs:**
-
-* [CoreWebView2.BasicAuthenticationRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
-* [CoreWebView2BasicAuthenticationRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
+   * `get_Cancel`
+   * `put_Cancel`
+   * `get_Challenge`
+   * `get_Response`
+   * `get_Uri`
+   * `GetDeferral`
 
 ---
-<!-- end of tab-set -->
 
 The above code isn't realistic, because:
 
@@ -203,9 +235,89 @@ The following code adds to the above sample, by adding the following features, u
 *  Call the `GetDeferral` method on the `event` argument.
 
 <!-- ------------------------------ -->
+
+# [C#](#tab/csharp)
+
+```csharp
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// for sending credentials" in this article.
+webView.CoreWebView2.BasicAuthenticationRequested += delegate (
+    object sender, 
+    CoreWebView2BasicAuthenticationRequestedEventArgs args)
+{
+    // We need to show UI asynchronously so we obtain a deferral.
+    // A deferral will delay the CoreWebView2 from
+    // examining the properties we set on the event args until
+    // after we call the Complete method asynchronously later.
+    // This gives us time to asynchronously show UI.
+    CoreWebView2Deferral deferral = args.GetDeferral();
+
+    // We avoid potential reentrancy from running a message loop in the
+    // event handler by showing our download dialog later when we
+    // complete the deferral asynchronously.
+    System.Threading.SynchronizationContext.Current.Post((_) =>
+    {
+        using (deferral)
+        {
+            // When prompting the end user for authentication its important
+            // to show them the URI or origin of the URI that is requesting
+            // authentication so the end user will know who they are giving
+            // their username and password to.
+
+            // Its also important to display the challenge to the end user
+            // as it may have important site specific information for the
+            // end user to provide the correct username and password.
+
+            // Use an app or UI framework method to get input from the end user.
+            TextInputDialog dialog = new TextInputDialog(
+                title: "Authentication Request",
+                description: "Authentication request from " + args.Uri + "\r\n" +
+                    "Challenge: " + args.Challenge,
+                defaultInput: "username\r\npassword");
+            bool userNameAndPasswordSet = false;
+
+            if (dialog.ShowDialog().GetValueOrDefault(false))
+            {
+                string[] userNameAndPassword = dialog.Input.Text.Split(
+                    new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                if (userNameAndPassword.Length > 1)
+                {
+                    args.Response.UserName = userNameAndPassword[0];
+                    args.Response.Password = userNameAndPassword[1];
+                    userNameAndPasswordSet = true;
+                }
+            }
+
+            // If we didn't get a username and password from the end user then
+            // we cancel the authentication request and don't provide any
+            // authentication.
+            if (!userNameAndPasswordSet)
+            {
+                args.Cancel = true;
+            }
+        }
+    }, null);
+};
+```
+
+**APIs:**
+
+* [CoreWebView2BasicAuthenticationRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
+   * Properties:
+       * `Cancel`
+       * `Challenge`
+       * `Response`
+       * `Uri`
+   * Methods:
+      * `GetDeferral()`
+
+<!-- ------------------------------ -->
+
 # [C++](#tab/cpp)
 
 ```cpp
+// Prerequisite: Before using this code, make sure you read the section "Use HTTPS 
+// for sending credentials" in this article.
 if (auto webView10 = m_webView.try_query<ICoreWebView2_10>())
 {
     CHECK_FAILURE(webView10->add_BasicAuthenticationRequested(
@@ -308,91 +420,14 @@ else
 **APIs:**
 
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
-   * `get_Cancel` - Cancel the authentication request.
-   * `put_Cancel` - Set the `Cancel` property.
-   * `get_Challenge` - The authentication challenge string.
-   * `get_Response` - Response to the authentication request with credentials.
-   * `get_Uri` - The URI that led to the authentication challenge.
-   * `GetDeferral` - Returns an `ICoreWebView2Deferral` object.
-
-
-<!-- ------------------------------ -->
-# [C#](#tab/csharp)
-
-
-```csharp
-webView.CoreWebView2.BasicAuthenticationRequested += delegate (
-    object sender, 
-    CoreWebView2BasicAuthenticationRequestedEventArgs args)
-{
-    // We need to show UI asynchronously so we obtain a deferral.
-    // A deferral will delay the CoreWebView2 from
-    // examining the properties we set on the event args until
-    // after we call the Complete method asynchronously later.
-    // This gives us time to asynchronously show UI.
-    CoreWebView2Deferral deferral = args.GetDeferral();
-
-    // We avoid potential reentrancy from running a message loop in the
-    // event handler by showing our download dialog later when we
-    // complete the deferral asynchronously.
-    System.Threading.SynchronizationContext.Current.Post((_) =>
-    {
-        using (deferral)
-        {
-            // When prompting the end user for authentication its important
-            // to show them the URI or origin of the URI that is requesting
-            // authentication so the end user will know who they are giving
-            // their username and password to.
-
-            // Its also important to display the challenge to the end user
-            // as it may have important site specific information for the
-            // end user to provide the correct username and password.
-
-            // Use an app or UI framework method to get input from the end user.
-            TextInputDialog dialog = new TextInputDialog(
-                title: "Authentication Request",
-                description: "Authentication request from " + args.Uri + "\r\n" +
-                    "Challenge: " + args.Challenge,
-                defaultInput: "username\r\npassword");
-            bool userNameAndPasswordSet = false;
-
-            if (dialog.ShowDialog().GetValueOrDefault(false))
-            {
-                string[] userNameAndPassword = dialog.Input.Text.Split(
-                    new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                if (userNameAndPassword.Length > 1)
-                {
-                    args.Response.UserName = userNameAndPassword[0];
-                    args.Response.Password = userNameAndPassword[1];
-                    userNameAndPasswordSet = true;
-                }
-            }
-
-            // If we didn't get a username and password from the end user then
-            // we cancel the authentication request and don't provide any
-            // authentication.
-            if (!userNameAndPasswordSet)
-            {
-                args.Cancel = true;
-            }
-        }
-    }, null);
-};
-```
-
-**APIs:**
-
-* [CoreWebView2BasicAuthenticationRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
-   * Properties:
-       * `Cancel` - Indicates whether to cancel the authentication request.
-       * `Challenge` - The authentication challenge string.
-       * `Response` - Response to the authentication request with credentials.
-       * `Uri` - The URI that led to the authentication challenge.
-   * Methods:
-      * `GetDeferral()` - Gets a `CoreWebView2Deferral` object.
+   * `get_Cancel`
+   * `put_Cancel`
+   * `get_Challenge`
+   * `get_Response`
+   * `get_Uri`
+   * `GetDeferral`
 
 ---
-<!-- end of tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -453,20 +488,19 @@ https://edotor.net/?engine=dot#digraph%20g%20%7B%0A%20%20%20%20fontname%3D%22Hel
 ## API Reference overview
 
 <!-- ------------------------------ -->
-# [C++](#tab/cpp)
-
-* [ICoreWebView2BasicAuthenticationRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs) - Event args for the `BasicAuthenticationRequested` event.
-* [add_BasicAuthenticationRequested method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested) - Add an event handler for the `BasicAuthenticationRequested` event.<!-- ~= C++'s BasicAuthenticationRequested event -->
-* [ICoreWebView2Deferral interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2deferral)
-* [ICoreWebView2BasicAuthenticationRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventhandler) - The caller implements this interface to handle the `BasicAuthenticationRequested` event.
-
-
-<!-- ------------------------------ -->
 # [C#](#tab/csharp)
 
-* [CoreWebView2BasicAuthenticationRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs) - Event args for the `BasicAuthenticationRequested` event.  Will contain the request that led to the HTTP authorization challenge, the challenge and allows the host to provide authentication response or cancel the request.
-* [CoreWebView2.BasicAuthenticationRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested) - `BasicAuthenticationRequested` event is raised when WebView encounters a Basic HTTP Authentication request as described in [MDN > HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) or an NTLM authentication request.
-* [CoreWebView2Deferral Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2deferral) - Used to complete deferrals on event args that support getting deferrals using the `GetDeferral` method. Implements `IDisposable`.
+* [CoreWebView2BasicAuthenticationRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
+* [CoreWebView2.BasicAuthenticationRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
+* [CoreWebView2Deferral Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
+
+<!-- ------------------------------ -->
+# [C++](#tab/cpp)
+
+* [ICoreWebView2BasicAuthenticationRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
+* [add_BasicAuthenticationRequested method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)
+* [ICoreWebView2Deferral interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2deferral)
+* [ICoreWebView2BasicAuthenticationRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventhandler)
 
 ---
 <!-- end of tab-set -->

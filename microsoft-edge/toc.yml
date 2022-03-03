@@ -1008,9 +1008,9 @@
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
 
-            - name: Basic authentication for WebView2 apps
+            - name: Basic authentication
               href: webview2/concepts/basic-authentication.md
-              displayName: auth
+              displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
 
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
