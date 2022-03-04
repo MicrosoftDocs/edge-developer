@@ -748,13 +748,12 @@ If your host app reports a custom menu item as the selected menu item, then the 
 
 The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.  If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables context menus, and the `ContextMenuRequested` event won't be raised, such as when the user right-clicks.
 
-See [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled).
-
 
 # [C#](#tab/csharp)
 
 * **[CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)**
    * [AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
+
 
 # [C++](#tab/cpp)
 
