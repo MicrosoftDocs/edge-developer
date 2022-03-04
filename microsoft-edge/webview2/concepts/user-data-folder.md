@@ -24,7 +24,7 @@ The user data folder (UDF) is a folder stored on the user's machine, that contai
 | default UDF location | The default directory path of the user data folder.  The directory path where WebView2 creates the UDF if you don't specify a custom UDF location. |
 | custom UDF location | A custom location for the user data folder.  The directory path that your WebView2 host app specifies where WebView2 will create the user data folder. |
 
-WebView2 creates the UDF in the default location for the platform, or in the custom location that your host app explicitly specifies.
+WebView2 creates the UDF in the default location for the platform, or in the custom UDF location that your host app explicitly specifies.
 
 By default, WebView2 creates a user data folder in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate Read/Write permissions for the WebView2 app runtime.
 
@@ -113,15 +113,15 @@ To move a UDF:
 
 **What is the default location?**
 
-For Win32 apps, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
+The directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
 For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder <!--todo: is it implemented as a file, or a directory/folder? --> would be created `D:\WebView2App\WebView2.exe.WebView2`.<!-- is that a filename, or a dir name?-->
 As another example: `WebView2APISample.exe.WebView2`.
 
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For Win32 apps, in most cases, you should specify a custom location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
+In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
 
 
 **Packaging:**
@@ -137,12 +137,12 @@ Win32 MSIX packaging is a standalone `.exe`.
 
 **What is the default location?**
 
-For .NET (WPF or WinForms) apps, the default UDF location is: TBD.
+TBD
 
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For .NET (WPF or WinForms) apps, in most cases, you should specify a custom location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
+In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
 
 
 
@@ -153,12 +153,12 @@ For .NET (WPF or WinForms) apps, in most cases, you should specify a custom loca
 
 **What is the default location?**
 
-For ClickOnce apps, the default UDF location is the directory that the app executable (`.exe`) is running in (or a subdirectory of it).
+The directory that the app executable (`.exe`) is running in (or a subdirectory of it).
 
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For ClickOnce apps, in most cases, you should use the default UDF location.  The default location where the UDF will be created will have appropriate permissions at runtime; the default UDF location is a writeable location.
+In most cases, you should use the default UDF location.  The default location where the UDF will be created will have appropriate permissions at runtime; the default UDF location is a writeable location.
 
 
 **Why the default location is writeable:**
@@ -191,12 +191,12 @@ A ClickOnce app usually contains a .NET app.
 
 **What is the default location?**
 
-For UWP (WinUI 2) apps, the default UDF location is the `ApplicationData\LocalFolder` subfolder in the package's folder.
+The `ApplicationData\LocalFolder` subfolder in the package's folder.
 
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For UWP (WinUI 2) apps, in most cases, you should use the default UDF location.
+In most cases, you should use the default UDF location.
 
 
 **Why the default location is writeable:**
@@ -227,16 +227,16 @@ A UWP (WinUI 2) app is per-user, and has Write access under the installed locati
 
 **What is the default location?**
 
-For WinUI 3 apps, the default UDF location is the `ApplicationData\LocalFolder` subfolder in the package's folder.
+The `ApplicationData\LocalFolder` subfolder in the package's folder.
 
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For WinUI 3 apps, in most cases, you should use the default UDF location.
+In most cases, you should use the default UDF location.
 
 OR:<!--todo: ask Dev-->
 
-For WinUI 3 apps, in most cases, you should specify a custom location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
+In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
 
 
 **Packaging:**
@@ -258,14 +258,14 @@ WinUI 3 is a "packaged" platform; it runs in the sandbox and is packaged to run 
 # [Win32](#tab/win32)
 
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For Win32 apps, in most cases, you should specify a custom location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
+In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
 
 You should specify the same folder where all other app data is stored.
 
 
-**How do you specify a custom location?**
+**How do you specify a custom UDF location?**
 
 Include the `userDataFolder` parameter when using [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment).<!-- todo: Dev: doesn't make sense; you don't call an interface, need more specific API usage, what iface member do you call? -->
 
@@ -303,14 +303,14 @@ If the host app is running from a location that the user doesn't have Write acce
 # [.NET (WPF/WinForms)](#tab/dotnet)
 
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For .NET (WPF/WinForms) apps, in most cases, you should specify a custom location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
+In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
 
 
-**How do you specify a custom location?**
+**How do you specify a custom UDF location?**
 
-For .NET apps (both WPF & WinForms), you should specify a custom UDF location, rather than using the default UDF location.  You should specify the same folder where all other app data is stored.
+You should specify the same folder where all other app data is stored.
 
 Use the [CoreWebView2Environment.CreateAsync method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
 
@@ -345,15 +345,15 @@ After creation of the session and UDF, browser data from your WebView2 control i
 
 # [ClickOnce](#tab/clickonce)
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For ClickOnce apps, in most cases, you should use the default UDF location.
+In most cases, you should use the default UDF location.
 
 If you specify a custom UDF location, make sure that user data folder location has appropriate Read/Write permissions for the WebView2 app runtime.
 
-**How do you specify a custom location?**
+**How do you specify a custom UDF location?**
 
-For ClickOnce apps, to specify a custom location, TBD.<!-- todo: Dev, how to specify a custom UDF location for ClickOnce? -->
+To specify a custom UDF location, TBD.<!-- todo: Dev, how to specify a custom UDF location for ClickOnce? -->
 
 
 **Sample code:**
@@ -378,12 +378,12 @@ After creation of the session and UDF, browser data from your WebView2 control i
 
 # [UWP (WinUI 2)](#tab/uwp)
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For UWP (WinUI 2) apps, in most cases, you should use the default UDF location.
+In most cases, you should use the default UDF location.
 
 
-**How do you specify a custom location?**
+**How do you specify a custom UDF location?**
 
 Set the environment variable: `WEBVIEW2_USER_DATA_FOLDER="\<folder path\>"`. 
 
@@ -418,15 +418,15 @@ After creation of the session and UDF, browser data from your WebView2 control i
 
 # [WinUI 3](#tab/winui3)
 
-**Should you use default or custom location?**
+**Should you use default or custom UDF location?**
 
-For WinUI 3 apps, in most cases, you should use the default UDF location.
+In most cases, you should use the default UDF location.
 
 OR:<!--todo: ask Dev-->
 
-For WinUI 3 apps, in most cases, you should specify a custom location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
+In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.
 
-**How do you specify a custom location?**
+**How do you specify a custom UDF location?**
 
 Set the environment variable: `WEBVIEW2_USER_DATA_FOLDER="\<folder path\>"`.
 
@@ -453,7 +453,7 @@ After creation of the session and UDF, browser data from your WebView2 control i
 
 ---
 
-<!-- end of "custom location" tab-set -->
+<!-- end of "custom UDF location" tab-set -->
 
 
 <!-- ====================================================================== -->
@@ -473,9 +473,9 @@ Reasons you might want to read the UDF location:
 
 # [Win32](#tab/win32)
 
-For examples of reading the `UserDataFolder` property, see the Win32 samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
+Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
 
-Win32 uses a C++-style property: see [ICoreWebView2Environment7.get_UserDataFolder](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
+For examples of reading the `UserDataFolder` property, see the Win32 samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 
 <!-- ====================================================================== -->
@@ -483,9 +483,9 @@ Win32 uses a C++-style property: see [ICoreWebView2Environment7.get_UserDataFold
 
 # [.NET (WPF/WinForms)](#tab/dotnet)
 
-For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForms) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
+Use the .NET [CoreWebView2Environment.UserDataFolder property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
-For .NET (WPF & WinForms) apps, read this C#-style property: [CoreWebView2Environment.UserDataFolder property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForms) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 <!-- todo: add example code to https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property -->
 
@@ -495,6 +495,9 @@ For .NET (WPF & WinForms) apps, read this C#-style property: [CoreWebView2Enviro
 
 # [ClickOnce](#tab/clickonce)
 
+Use the .NET [CoreWebView2Environment.UserDataFolder property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+<!--todo: Dev: confirm to use this .NET API for this platform-->
+
 For examples of reading the `UserDataFolder` property, see the ClickOne samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 
@@ -503,6 +506,9 @@ For examples of reading the `UserDataFolder` property, see the ClickOne samples 
 
 # [UWP (WinUI 2)](#tab/uwp)
 
+Use the WinRT [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder)
+<!--todo: Dev: confirm to use this WinRT API for this platform-->
+
 For examples of reading the `UserDataFolder` property, see the UWP (WinUI 2) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 
@@ -510,6 +516,9 @@ For examples of reading the `UserDataFolder` property, see the UWP (WinUI 2) sam
 <!-- retrieving UDF location -->
 
 # [WinUI 3](#tab/winui3)
+
+Use the .NET [CoreWebView2Environment.UserDataFolder property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+<!--todo: Dev: confirm to use this .NET API for this platform-->
 
 For examples of reading the `UserDataFolder` property, see the WinUI 3 samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
@@ -533,7 +542,7 @@ If the user data folder doesn't have Write permissions, the following error mess
 * `User data folder cannot be created because a file with the same name already exists.`
 * `Unable to create user data folder, Access Denied.`
 
-The above is true regardless of whether the location of the user data folder was the default or a custom location.
+The above is true regardless of whether the location of the user data folder was the default UDF location or a custom UDF location.
 
 If there's insufficient memory, or the Microsoft Edge runtime is unable to start, or the WebView2 Runtime is not found, error message strings similar to the following may be returned:
 *  `Microsoft Edge runtime unable to start`
