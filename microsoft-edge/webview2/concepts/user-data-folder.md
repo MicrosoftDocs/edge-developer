@@ -245,6 +245,8 @@ WinUI 3 is a "packaged" platform; it runs in the sandbox and is packaged to run 
 
 ---
 
+<!-- end of "default location" tab-set -->
+
 
 <!-- ====================================================================== -->
 ## Specifying a custom UDF location
@@ -451,6 +453,8 @@ After creation of the session and UDF, browser data from your WebView2 control i
 
 ---
 
+<!-- end of "custom location" tab-set -->
+
 
 <!-- ====================================================================== -->
 ## Retrieving the UDF location
@@ -508,6 +512,10 @@ For examples of reading the `UserDataFolder` property, see the UWP (WinUI 2) sam
 # [WinUI 3](#tab/winui3)
 
 For examples of reading the `UserDataFolder` property, see the WinUI 3 samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
+
+---
+
+<!-- end of "retrieving location" tab-set -->
 
 
 <!-- ====================================================================== -->
