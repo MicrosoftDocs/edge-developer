@@ -135,6 +135,48 @@ The Visual Studio debugger is now attached to Microsoft Edge.  You can pause the
 
 
 <!-- ====================================================================== -->
+## Edge DevTools extension for Visual Studio
+
+Debug your ASP.NET projects in Visual Studio with the Edge Developer Tools.  You can embed the Microsoft Edge Developer Tools in Microsoft Visual Studio to debug your ASP.NET projects live.  Download the [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs). 
+
+To use the extension:
+
+1. Make sure Visual Studio 2022 and the ASP.NET workload are installed.
+
+1. Set up Web Live Preview as the default Web Forms Designer, as described in the above page.
+
+1. Open an ASP.NET project.
+
+1. Open a webpage of the project in the **Design** window.
+
+1. In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon.](media/open-edge-dev-tools-v-s-icon.png)) button:
+
+![An ASP.NET project, opening Edge DevTools.](media/devtools-extension-v-s-web-forms-designer.png)
+
+The undocked Edge DevTools window for Visual Studio, showing the **More Tools** (![More Tools icon.](media/more-tools-v-s-icon.png)) menu:
+
+![The Edge DevTools window of Visual Studio, undocked.](media/edge-devtools-v-s-window-undocked.png)
+
+The **Elements** tool:
+
+![Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools.](media/devtools-extension-visual-studio-elements.png)
+
+The **Network** tool:
+
+![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools.](media/devtools-extension-visual-studio-network.png)
+
+
+**See also:**
+
+* [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
+
+<!--
+* [Microsoft Edge DevTools extension for Visual Studio](../devtools-guide-chromium/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
+-->
+
+
+
+<!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Visual Studio team
 
 The Microsoft Visual Studio and Microsoft Edge teams wants to learn more about how you work with JavaScript in Visual Studio.  To send your feedback, select the **Send Feedback** icon in Visual Studio, or tweet [@VisualStudio and @EdgeDevTools](https://twitter.com/intent/tweet?text=@VisualStudio+@EdgeDevTools).
