@@ -6,20 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/02/2022
+ms.date: 03/04/2022
 ---
 # Customize context menus in WebView2
-
-<!-- 
-todo:
-*  finish final cleanup of content of h2/h3 sections
-*  Add C# code listing in section "Example: Disabling all context menus".
-*  Add which APIs, in h2 "Enabling the default context menu"
--->
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
 
 The WebView2 control provides a default context menu.
+
 
 **Terminology:**
 
@@ -754,7 +748,8 @@ If your host app reports a custom menu item as the selected menu item, then the 
 
 The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.  If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables context menus, and the `ContextMenuRequested` event won't be raised, such as when the user right-clicks.
 
-The following APIs are used to disable context menus, in the example in the next section.
+See [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled).
+
 
 # [C#](#tab/csharp)
 
@@ -769,48 +764,6 @@ The following APIs are used to disable context menus, in the example in the next
 
 ---
 
-
-<!-- ====================================================================== -->
-## Example: Disabling context menus
-
-
-# [C#](#tab/csharp)
-
-The [sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WpfBrowser) has similar code.
-<!-- It's based on a setting property. -->
-<!-- is it * [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled) -->
-
-<!-- https://github.com/MicrosoftEdge/WebView2Samples/blob/0099f81272022a5a9e74524dbb19bd6e05b16ead/SampleApps/WebView2WpfBrowser/MainWindow.xaml.cs -->
-
-```csharp
-// todo: place code here
-```
-
-
-# [C++](#tab/cpp)
-
-<!-- sample copied from API Ref /microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled -->
-
-```cpp
-BOOL allowContextMenus;
-CHECK_FAILURE(m_settings->get_AreDefaultContextMenusEnabled(&allowContextMenus));
-if (allowContextMenus)
-{
-    CHECK_FAILURE(m_settings->put_AreDefaultContextMenusEnabled(FALSE));
-    MessageBox(
-        nullptr, L"Context menus will be disabled after the next navigation.",
-        L"Settings change", MB_OK);
-}
-else
-{
-    CHECK_FAILURE(m_settings->put_AreDefaultContextMenusEnabled(TRUE));
-    MessageBox(
-        nullptr, L"Context menus will be enabled after the next navigation.",
-        L"Settings change", MB_OK);
-}
-```
-
----
 
 <!-- ====================================================================== -->
 ## API Reference overview
@@ -952,11 +905,8 @@ else
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
-<!--
-Spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ContextMenuRequested.md
-PR: https://github.com/MicrosoftDocs/edge-developer/pull/1740
--->
+## See also
 
+* [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 
-<!-- Enumerate the menu item IDs and text. -->
+<!-- spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ContextMenuRequested.md -->
