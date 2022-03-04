@@ -59,4 +59,4 @@ For example, compare the minified call stack and the unminified call stack of a 
 
 ## See also
 * [Get started analyzing runtime performance](index.md) - An introduction to analyzing runtime performance in the DevTools.
-* [Performance features reference](referemce.md), - A reference for many of the features offered in the Performance tool.
+* [Performance features reference](reference.md), - A reference for many of the features offered in the Performance tool.
