@@ -1,5 +1,5 @@
 ---
-title: Using Host Objects in WebView2
+title: Call native-side code from web-side code
 description: How to pass host objects to JavaScript using the AddHostObjectToScript API for WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 2/28/2022
 ---
-# Using Host Objects in WebView2
+# Call native-side code from web-side code
 
 WebView2 enables applications to bridge the gap between the web and native sides of an application by enabling an object to be passed to the web. Such objects are defined in the native code and often called *host objects*. They can be projected into JavaScript using the WebView2 `AddHostObjectToScript` API, as described in this document.
 
