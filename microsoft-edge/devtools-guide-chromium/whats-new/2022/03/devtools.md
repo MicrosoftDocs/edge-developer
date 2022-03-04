@@ -47,6 +47,9 @@ Following up on the success of the Visual Studio Code integration, you can now a
 
 <!-- 1. In Visual Studio, enable or re-enable Web Live Preview.  To do this, go to **Tools** -> **Options** -> **Web Live Preview (Preview)**.  (couldn't find; found per next list item instead)  Under the **Web Live Preview** category, set **Enable** to **true**.  Press **OK** and then restart Visual Studio. -->
 
+
+**Set up Web Live Preview:**
+
 First, enable Web Live Preview, as follows:
 
 1. In Visual Studio, go to **Tools** -> **Options** -> **Web Forms Designer**.  In the **Web Forms Designer** page, select **Web Live Preview**.  Click the **OK** button, and then restart Visual Studio.
@@ -54,12 +57,16 @@ First, enable Web Live Preview, as follows:
 <!-- 1. might need to redo same step:  If needed, check the radio button as follows: In Visual Studio, enable or re-enable Web Live Preview.  To do this, go to **Tools** -> **Options** -> **Web Forms Designer**.  In the **Web Forms Designer** page, select **Web Live Preview**.  The radio button is still selected; click the **Cancel** button.  Or, if the radio button is cleared, select the radio button again, click the **OK** button, and then restart Visual Studio. -->
 
 
+**Install the ASP.NET workload:**
+
 Make sure the workload to create ASP.NET projects is installed, as follows:
 
 1. In Visual Studio, open or create an ASP.NET project.  If ASP.NET is not listed, in Visual Studio, click **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** > **Modifying** window appears.  In the **Workloads** tab, in the **Web and Cloud** section, select the **ASP.NET and web development** card.  Then click the **Modify** button.  The **User Account Control** window appears.
 
 1. Click the **Yes** button.  The **Before we get started** dialog box appears.  Close the main Visual Studio window, and then click the **Retry** button.  The **Visual Studio Installer** runs and installs the packages.
 
+
+**Install the Edge DevTools extension:**
 
 Install the **Edge Developer Tools** extension for Visual Studio, as follows:
 
@@ -75,21 +82,29 @@ Install the **Edge Developer Tools** extension for Visual Studio, as follows:
 
 1. Close and then reopen Visual Studio.  The **User Account Control** window appears.
 
+1. Click the **Yes** button.  The Visual Studio startup window appears.
+
 1. Press `Alt`+`Tab` to go to the **VSIX Installer** dialog box.  It reads: "Scheduled tasks: Install: Edge Developer Tools".  Click the **Modify** button.  The **VSIX Installer** shows **Modifications Complete** for **Edge Developer Tools**.  Click the **Close** button.
 
-1. Click the **Yes** button.  The Visual Studio startup window appears.
+
+**Open an ASP.NET project:**
 
 1. Click **Create a new project**.  In the search text box, enter **ASP.NET**.  Select the **C# ASP.NET Core Web App** card, and then click the **Next** button.
 
 1. In the **Configure your new project** window, in the **Project name** text box, enter a name, such as MyWebApp1.  Enter a location in the **Location** text box.  Click the **Next** button.  In the **Additional information** page of the window, click the **Create** button.
 
-1. In Visual Studio, in Solution Explore, click **Pages** > **Index.cshtml**.  In the lower left, click the **Preview** button.  A dialog box appears: "Web Live Preview: Browser Link needs to be enabled in order to use Web Live Preview.  Would you like to enable it?"  Click the **Yes** button.
+1. In Visual Studio, in Solution Explore, click **Pages** > **Index.cshtml**.  In the lower left, click the **Preview** button.  A dialog box appears: "Web Live Preview: Browser Link needs to be enabled in order to use Web Live Preview.  Would you like to enable it?"
 
-1. The *Trust ASP.NET Core SSL Certificate** dialog box appears.  "Would you like to trust the ASP.NET Core SSL Certificate?"  Click the **Yes** button.
+1. Click the **Yes** button.  The **Trust ASP.NET Core SSL Certificate** dialog box appears.  "Would you like to trust the ASP.NET Core SSL Certificate?"
 
-1. The **Security Warning** dialog box appears.  "localhost ... Do you want to install this certificate?"  Click the **Yes** button.  The **Welcome** page of your project appears.
+1. Click the **Yes** button.  The **Security Warning** dialog box appears, saying: "localhost ... Do you want to install this certificate?"
+
+1. Click the **Yes** button.  The **Welcome** page of your project appears:
 
    ![A new ASP.NET project in Visual Studio, with Edge Developer Tools extension and Web Forms Designer set up.](../../media/2022/03/devtools-extension-v-s-web-forms-designer.png)
+
+
+**Open Edge DevTools:**
 
 1. In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon.](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) button.
 
@@ -97,8 +112,7 @@ Install the **Edge Developer Tools** extension for Visual Studio, as follows:
 
    ![The Edge DevTools window of Visual Studio.](../../media/2022/03/edge-devtools-v-s-window-undocked.png)
 
-
-Microsoft Edge Developer Tools for Visual Studio: 
+Microsoft Edge Developer Tools for Visual Studio (extra .png file for add'l screenshot, such as Edge DevTools docked inside main window):
 
 ![Microsoft Edge Developer Tools for Visual Studio.](../../media/2022/03/devtools-extension-visual-studio.png)
 
