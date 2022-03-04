@@ -15,7 +15,7 @@ If you are on Windows, Linux, or macOS, consider using the Canary preview channe
 
 
 <!-- ====================================================================== -->
-## Connect to Azure DevOps Symbol Server to host source maps and debug your original source code securely
+## Securely debug your production code with source maps from Azure Artifacts Symbol Server
 
 <!-- Title: Debug JavaScript with source maps more easily -->
 <!-- Subtitle: Publish your source maps to Azure Artifacts Symbol Server and connect DevTools to it for an easier debugging experience. -->
@@ -34,6 +34,111 @@ To try this feature:
 
 See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/publish-source-maps-to-azure?branch=pr-en-us-1766).  (temp link to an open PR)
  
+
+<!-- ====================================================================== -->
+## Microsoft Edge DevTools extension for Visual Studio
+
+<!-- Title: Debug your ASP.NET projects in Visual Studio with the Edge Developer Tools -->
+<!-- Subtitle: Get the Edge Developer Tools extension for VS today! -->
+
+Following up on the success of the Visual Studio Code integration, you can now also embed the Microsoft Edge Developer Tools in Microsoft Visual Studio to debug your ASP.NET projects live.  Download the [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs) and try it out. 
+
+<!-- 1. Open Visual Studio, such as Visual Studio 2022 Professional. -->
+
+<!-- 1. In Visual Studio, enable or re-enable Web Live Preview.  To do this, go to **Tools** -> **Options** -> **Web Live Preview (Preview)**.  (couldn't find; found per next list item instead)  Under the **Web Live Preview** category, set **Enable** to **true**.  Press **OK** and then restart Visual Studio. -->
+
+First, enable Web Live Preview, as follows:
+
+1. In Visual Studio, go to **Tools** -> **Options** -> **Web Forms Designer**.  In the **Web Forms Designer** page, select **Web Live Preview**.  Click the **OK** button, and then restart Visual Studio.
+
+<!-- 1. might need to redo same step:  If needed, check the radio button as follows: In Visual Studio, enable or re-enable Web Live Preview.  To do this, go to **Tools** -> **Options** -> **Web Forms Designer**.  In the **Web Forms Designer** page, select **Web Live Preview**.  The radio button is still selected; click the **Cancel** button.  Or, if the radio button is cleared, select the radio button again, click the **OK** button, and then restart Visual Studio. -->
+
+
+Make sure the workload to create ASP.NET projects is installed, as follows:
+
+1. In Visual Studio, open or create an ASP.NET project.  If ASP.NET is not listed, in Visual Studio, click **Tools** > **Get Tools and Features**.  The **Visual Studio Installer** > **Modifying** window appears.  In the **Workloads** tab, in the **Web and Cloud** section, select the **ASP.NET and web development** card.  Then click the **Modify** button.  The **User Account Control** window appears.
+
+1. Click the **Yes** button.  The **Before we get started** dialog box appears.  Close the main Visual Studio window, and then click the **Retry** button.  The **Visual Studio Installer** runs and installs the packages.
+
+
+Install the **Edge Developer Tools** extension for Visual Studio, as follows:
+
+1. In Visual Studio, select **Extensions** > **Manage Extensions**.  The **Manage Extensions** window opens.
+
+1. In the tree on the left, expand **Visual Studio Marketplace**.
+
+1. In the **Search** box in the upper right, enter **Edge Developer Tools**.
+
+1. In the **Edge Developer Tools** card, click the **Download** button.  A message appears at the bottom of the window: "Your changes will be scheduled."
+
+1. Click the **Close** button.
+
+1. Close and then reopen Visual Studio.  The **User Account Control** window appears.
+
+1. Press `Alt`+`Tab` to go to the **VSIX Installer** dialog box.  It reads: "Scheduled tasks: Install: Edge Developer Tools".  Click the **Modify** button.  The **VSIX Installer** shows **Modifications Complete** for **Edge Developer Tools**.  Click the **Close** button.
+
+1. Click the **Yes** button.  The Visual Studio startup window appears.
+
+1. Click **Create a new project**.  In the search text box, enter **ASP.NET**.  Select the **C# ASP.NET Core Web App** card, and then click the **Next** button.
+
+1. In the **Configure your new project** window, in the **Project name** text box, enter a name, such as MyWebApp1.  Enter a location in the **Location** text box.  Click the **Next** button.  In the **Additional information** page of the window, click the **Create** button.
+
+1. In Visual Studio, in Solution Explore, click **Pages** > **Index.cshtml**.  In the lower left, click the **Preview** button.  A dialog box appears: "Web Live Preview: Browser Link needs to be enabled in order to use Web Live Preview.  Would you like to enable it?"  Click the **Yes** button.
+
+1. The *Trust ASP.NET Core SSL Certificate** dialog box appears.  "Would you like to trust the ASP.NET Core SSL Certificate?"  Click the **Yes** button.
+
+1. The **Security Warning** dialog box appears.  "localhost ... Do you want to install this certificate?"  Click the **Yes** button.  The **Welcome** page of your project appears.
+
+   ![A new ASP.NET project in Visual Studio, with Edge Developer Tools extension and Web Forms Designer set up.](../../media/2022/03/devtools-extension-v-s-web-forms-designer.png)
+
+1. In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon.](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) button.
+
+   The **Edge DevTools** window appears, undocked from Visual Studio.  It has **Elements** and **Network** tool tabs.  The **More Tools** (![More Tools icon.](../../media/2022/03/more-tools-v-s-icon.png)) button menu additionally offers the **Issues** tool, **Network conditions** tool, and the **Network request blocking** tool:
+
+   ![The Edge DevTools window of Visual Studio.](../../media/2022/03/edge-devtools-v-s-window-undocked.png)
+
+
+Microsoft Edge Developer Tools for Visual Studio: 
+
+![Microsoft Edge Developer Tools for Visual Studio.](../../media/2022/03/devtools-extension-visual-studio.png)
+
+Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools:
+
+![Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools.](../../media/2022/03/devtools-extension-visual-studio-elements.png)
+
+Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools:
+
+![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools.](../../media/2022/03/devtools-extension-visual-studio-network.png)
+
+<!-- Instructions for screenshot
+Install Visual Studio 2022
+Enable Web live preview
+Install extension
+see Attached pngs for Network and Elements.
+see Attached GIFs for showing how it works. -->
+
+<!-- Currently all the information is on the listing page, we're working on a more involved blog post and doc.
+See [blog post]() and [doc page]().
+-->
+
+
+<!-- ====================================================================== -->
+## Layers in 3D View
+
+<!-- Title: Layers in 3D View -->
+<!-- Subtitle: The Layers tool isn't going away - find it in the 3D View tool today. -->
+
+We previously added an improved version of Layers in the **3D View** tool, and we're removing the stand-alone version (the **Layers** tool) after users have enough time to make the transition. The **Layers** tool will display a link that redirects you to the **Composited Layers** view within the **3D View** tool.  You can find all the functionality from the **Layers** tool there.
+
+<!-- ![The Layers tool now links to the 3D View tool.](../../media/2022/03/layers-link-3d-view-tool.png) -->
+
+In the following image, the **Focus Mode** UI is shown.  **Focus Mode** has a **Quick View** area at the bottom, in place of the **Drawer**.  The **Layers** tool, which is shown open in **Quick View**, contains only a link, to open the **3D View** tool above it:
+
+![The Layers tool now links to the 3D View tool with the Composited Layers view open.](../../media/2022/03/layers-3d-view-tool.png)
+<!-- work item > layersmove.gif -->
+
+See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
+
 
 <!-- ====================================================================== -->
 ## Use your source maps to unminify performance profiles
@@ -77,46 +182,6 @@ See [Unminifying function names in DevTools performance profiles](https://blogs.
 
 
 <!-- ====================================================================== -->
-## Microsoft Edge DevTools extension for Visual Studio
-
-<!-- Title: Debug your ASP.NET projects in Visual Studio with the Edge Developer Tools -->
-<!-- Subtitle: Get the Edge Developer Tools extension for VS today! -->
-
-Following up on the success of the Visual Studio Code integration, you can now also embed the Microsoft Edge Developer Tools in Microsoft Visual Studio to debug your ASP.NET projects live.  Download the [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs) and try it out. 
-
-![Microsoft Edge Developer Tools for Visual Studio.](../../media/2022/03/devtools-extension-visual-studio.png)
-<!-- Instructions for screenshot
-Install Visual Studio 2022
-Enable Web live preview
-Install extension
-Attached for Network and Elements -->
-
-<!-- Attached GIFs for showing how it works. -->
-
-<!-- Currently all the information is on the listing page, we're working on a more involved blog post and doc.
-See [blog post]() and [doc page]().
--->
-
-
-<!-- ====================================================================== -->
-## Layers in 3D View
-
-<!-- Title: Layers in 3D View -->
-<!-- Subtitle: The Layers tool isn't going away - find it in the 3D View tool today. -->
-
-We previously added an improved version of Layers in the **3D View** tool, and we're removing the stand-alone version (the **Layers** tool) after users have enough time to make the transition. The **Layers** tool will display a link that redirects you to the **Composited Layers** view within the **3D View** tool.  You can find all the functionality from the **Layers** tool there.
-
-<!-- ![The Layers tool now links to the 3D View tool.](../../media/2022/03/layers-link-3d-view-tool.png) -->
-
-In the following image, the **Focus Mode** UI is shown.  **Focus Mode** has a **Quick View** area at the bottom, in place of the **Drawer**.  The **Layers** tool, which is shown open in **Quick View**, contains only a link, to open the **3D View** tool above it:
-
-![The Layers tool now links to the 3D View tool with the Composited Layers view open.](../../media/2022/03/layers-3d-view-tool.png)
-<!-- work item > layersmove.gif -->
-
-See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
-
-
-<!-- ====================================================================== -->
 ## Improved accessibility for Network Console and 3D View
 
 <!-- Title: Improvements for using assistive technology with DevTools -->
@@ -151,37 +216,44 @@ To learn more about how using assistive technology with DevTools, read [Navigate
 
 
 <!-- ====================================================================== -->
+## Improved source folder tree in the Sources panel
+
+In the **Page** tab of the **Sources** tool, the tree of source folders is now improved, with less clutter in the naming and outline of folders.  Unneeded path prefixes such as "../" and "./" have been removed.  The tree structure has been simplified by merging equivalent duplicate folders.  This was done by normalizing the absolute source URLs in the source maps.
+
+![Cleaner folder outline in the Page tab of the Sources tool.](../../media/2022/03/folders-page-tab-sources-tool.png)
+
+For the history of this feature in the Chromium open-source project, see Issue [1284737](https://crbug.com/1284737).
+
+<!-- https://developer.chrome.com/blog/new-in-devtools-99/#source-tree -->
+
+
+<!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 Microsoft Edge version 99 also includes the following updates from the Chromium project:
 
 * [Throttling WebSocket requests](https://developer.chrome.com/blog/new-in-devtools-99/#websocket)
 * [New Reporting API pane in the Application panel](https://developer.chrome.com/blog/new-in-devtools-99/#reporting-api)
-* [Support wait until element is visible/clickable in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-99/#recorder)
 * [Better console styling, formatting and filtering](https://developer.chrome.com/blog/new-in-devtools-99/#console)
    * [Properly style log messages with ANSI escape code](https://developer.chrome.com/blog/new-in-devtools-99/#console-styling)
    * [Properly support %s, %d, %i and %f format specifiers](https://developer.chrome.com/blog/new-in-devtools-99/#console-format)
-   * [More intuitive console group filter](https://developer.chrome.com/blog/new-in-devtools-99/#console-filter)
 * [Sourcemaps improvements](https://developer.chrome.com/blog/new-in-devtools-99/#sourcemap) <!-- redundant w/ above?-->
-   * [Debug Chrome extension with sourcemap files](https://developer.chrome.com/blog/new-in-devtools-99/#extension)
-   * [Improved source folder tree in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-99/#source-tree)
+   * [Debug extensions with sourcemap files](https://developer.chrome.com/blog/new-in-devtools-99/#extension)
    * [Display worker source files in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-99/#worker-sourcemap)
 * [Touch-friendly color-picker and split pane](https://developer.chrome.com/blog/new-in-devtools-99/#touch-friendly)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-99/#misc)
 
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
-<!--
+
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 99)](https://developer.chrome.com/blog/new-in-devtools-99) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
--->
+
 
 
 <!-- ====================================================================== -->
 <!-- uncomment if content is copied from developer.chrome.com to this page -->
-<!--
+
 [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
--->
