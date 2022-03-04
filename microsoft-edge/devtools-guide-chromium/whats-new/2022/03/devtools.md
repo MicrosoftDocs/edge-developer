@@ -32,7 +32,7 @@ To try this feature:
 
 ![The 'Symbol Server' page in DevTools Settings, where you enter your Azure DevOps personal access token.](../../media/2022/03/ado-pat-devtools.png)
 
-See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/javascript/publish-source-maps-to-azure?branch=pr-en-us-1766).  (temp link to an open PR)
+See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md).  (temp link to an open PR)
  
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ The **Network** tool:
 See also:
 
 * [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
-* [Edge DevTools extension for Visual Studio](https://review.docs.microsoft.com/en-us/microsoft-edge/visual-studio/index.md) in _Visual Studio for web development_.
+* [Edge DevTools extension for Visual Studio](../../../../visual-studio/index.md#edge-devtools-extension-for-visual-studio) in _Visual Studio for web development_.
 
 
 <!-- ====================================================================== -->
