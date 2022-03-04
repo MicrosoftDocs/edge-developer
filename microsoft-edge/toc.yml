@@ -1008,9 +1008,9 @@
                   href: webview2/how-to/javascript.md
                   displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-                # - name: Call native-side code from web-side code
-                #   href: webview2/how-to/add-host-object-to-script.md
-                #   displayName: AddHostObjectToScript API
+                - name: Call native-side code from web-side code
+                  href: webview2/how-to/hostobject.md
+                  displayName: AddHostObjectToScript, host objects
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
