@@ -267,9 +267,11 @@ You should specify the same folder where all other app data is stored.
 
 **How do you specify a custom UDF location?**
 
-Include the `userDataFolder` parameter when using [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment).<!-- todo: Dev: doesn't make sense; you don't call an interface, need more specific API usage, what iface member do you call? -->
+<!-- todo: Dev: this doesn't make sense.  What specific method do you call, on which interface, passing the `userDataFolder` param? -->
+Include the `userDataFolder` parameter when using [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment).
+<!-- What is the correct URL? -->
 
-If your host app doesn't specify `userDataFolder` (that is, doesn't specify a custom UDF location), WebView2 creates user data folders at the default location for the platform.
+If your host app doesn't specify `userDataFolder`<!--where exactly, on what API item, specifically, would you specify it?--> (that is, doesn't specify a custom UDF location), WebView2 creates user data folders at the default location for the platform.
 
 
 **Sample code:**
@@ -473,7 +475,7 @@ Reasons you might want to read the UDF location:
 
 # [Win32](#tab/win32)
 
-Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
+Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder property getter](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
 
 For examples of reading the `UserDataFolder` property, see the Win32 samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
@@ -483,7 +485,7 @@ For examples of reading the `UserDataFolder` property, see the Win32 samples in 
 
 # [.NET (WPF/WinForms)](#tab/dotnet)
 
-Use the .NET [CoreWebView2Environment.UserDataFolder property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
 For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForms) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
@@ -495,7 +497,7 @@ For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForm
 
 # [ClickOnce](#tab/clickonce)
 
-Use the .NET [CoreWebView2Environment.UserDataFolder property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 <!--todo: Dev: confirm to use this .NET API for this platform-->
 
 For examples of reading the `UserDataFolder` property, see the ClickOne samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
@@ -506,7 +508,7 @@ For examples of reading the `UserDataFolder` property, see the ClickOne samples 
 
 # [UWP (WinUI 2)](#tab/uwp)
 
-Use the WinRT [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder)
+Use the WinRT [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder).
 <!--todo: Dev: confirm to use this WinRT API for this platform-->
 
 For examples of reading the `UserDataFolder` property, see the UWP (WinUI 2) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
@@ -517,7 +519,7 @@ For examples of reading the `UserDataFolder` property, see the UWP (WinUI 2) sam
 
 # [WinUI 3](#tab/winui3)
 
-Use the .NET [CoreWebView2Environment.UserDataFolder property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 <!--todo: Dev: confirm to use this .NET API for this platform-->
 
 For examples of reading the `UserDataFolder` property, see the WinUI 3 samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
