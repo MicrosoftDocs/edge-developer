@@ -20,8 +20,8 @@ The WebView2 control provides a default context menu.
 | Term | Definition |
 |---|---|
 | _menu item_ | A broad term.  Includes checkbox, command, radio button, separator, and submenu. |
-| _command_ | A narrow term.  One of five types of menuitem. |
-| _context menu_ | Either a default context menu (right-click menu) belonging to the WebView2 control or a custom context menu (right-click menu) belonging to your host app. |
+| _command_ | A narrow term.  One of five types of menu item. |
+| _context menu_ | Either a default context menu (right-click menu) belonging to the WebView2 control, or a custom context menu (right-click menu) belonging to your host app. |
 
 
 <!-- ====================================================================== -->
@@ -738,7 +738,7 @@ When the user selects a WebView2 context menu command (a default menu item that'
 ---
 
 <!-- -------------------------------------------------- -->
-### Custom menuitems
+### Custom menu items
 
 If your host app reports a custom menu item as the selected menu item, then the `CustomMenuItemSelected` event will be fired for the custom menu item.
 
