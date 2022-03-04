@@ -25,8 +25,6 @@ As explained in [Fix memory problems](index.md), memory issues affect page perfo
 <!-- ====================================================================== -->
 ## Open the Detached Elements tool
 
-The **Detached Elements** tool is available by default in Microsoft Edge 97 and later. Check your version of Microsoft Edge by going to `edge://version`. If your version is less than 97, read [Turning an experiment on or off](../experimental-features/index.md#turning-an-experiment-on-or-off) for instructions about turning on the **Detached Elements** experiment.
-
 To open the **Detached Elements** tool and load the demo page:
 
 1. Open the [Detached Elements demo application](https://microsoftedge.github.io/Demos/detached-elements/) in a new window or tab.

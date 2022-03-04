@@ -99,7 +99,7 @@ From the infobar, you can learn more about the issue by selecting the **Open in 
 
 :::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="Screenshot of the Issues tool in the Drawer, displaying the issue as 'Source map not found', along with information on how to resolve this issue.":::
 
-To prevent the infobar about sourcemaps from cluttering the **Sources** tool, select the **Don't show again** button.  To prevent issues related to sourcemaps from cluttering the **Issues** tool, clear the **Include third-party issues** checkbox in the **Issues** tool.  To learn more about how DevTools fetches and parses sourcemaps, see [Map preprocessed code to source code](../../../javascript/source-maps.md).
+To prevent the infobar about sourcemaps from cluttering the **Sources** tool, select the **Don't show again** button.  To prevent issues related to sourcemaps from cluttering the **Issues** tool, clear the **Include third-party issues** checkbox in the **Issues** tool.  To learn more about how DevTools fetches and parses sourcemaps, see [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md).
 
 
 <!-- ====================================================================== -->

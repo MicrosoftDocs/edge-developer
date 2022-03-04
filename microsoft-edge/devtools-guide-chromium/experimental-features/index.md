@@ -6,21 +6,36 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab", "3D View", "Turn on support to move tabs between panels", "Match keyboard shortcuts in DevTools to Microsoft Visual Studio Code", "Edit keyboard shortcuts for any action in DevTools", "Turn on new CSS grid debugging features", "Emulation: Support dual screen mode"]
-ms.date: 11/30/2021
+ms.date: 03/01/2022
 ---
 # Experimental features
 
 <!-- 
 Policies for maintaining this page:
-Cover the latest Canary version.
+
+Cover the latest Canary version and the latest Stable version.  Address both extremes (Stable v[n] and Canary v[n+3]) explicitly, in visible text - this is required, for maintainability of this maximally volatile info.
+
 Keep h2 sections in same order as Microsoft Edge DevTools > Experiments page.
-In the heading and UI steps, keep the checkbox label UI string as-is.
-Include an h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.
-If no info is an an h2 section, comment out the h2 heading & section.
-When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.
+In the heading and UI steps, keep the checkbox label UI string as-is (don't revise or "fix" it).
+Include a visible h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.  If no info, write a tautology as a starting point.
+When a checkbox is removed from all the preview channels, move its section down to "Previously Experimental features which are now regular features" and comment it out.  Same w/ any "on by default" list item.
+
+Do the following, monthly:
+
+1. Open Edge Stable > Settings > Experiments, go to edge://settings/help, update if needed, make sure the article has an h2 for each checkbox.
+2. In each h2 section, write visibly & explicitly:
+This checkbox is|is not present in Microsoft Edge Stable v123.
+1. Update the Edge Stable list at top, re: On By Default checkboxes. Link down to the h2, do not link to other page, here.
+
+4. Open Edge Canary > Settings > Experiments, go to edge://settings/help, update if needed, make sure the article has an h2 for each checkbox.
+5. In each h2 section, write visibly & explicitly:
+This checkbox is|is not present in Microsoft Edge Canary v123.
+1. Update the Edge Canary list at top, re: On By Default checkboxes. Link down to the h2, do not link to other page, here.
 -->
 
-Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes most of the experimental features which are in the latest version of the Canary preview channel of Microsoft Edge.
+Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features which are in either:
+*  The latest version of the Canary preview channel of Microsoft Edge.
+*  The latest version of the Stable version of Microsoft Edge.
 
 All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have experimental features. You can get the latest experimental features by using the [Microsoft Edge Canary channel](https://www.microsoftedgeinsider.com/welcome?channel=canary). To view the full list available in your version of Microsoft Edge, see the **Settings** > **Experiments** page in DevTools.
 
@@ -34,28 +49,28 @@ These experiments could be unstable or unreliable and may require you to restart
 The following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
 
 <!-- listed in order of the Settings > Experiments pane -->
-*  Source order viewer.
-*  Enable back-forward cache debugging support.
-*  [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
-*  Enable experimental hide issues menu.
-*  Enable webhint.
-*  Show issues in Elements.
-*  Enable Composited Layers in 3D View.
-*  DevTools Tooltips.
-*  VS Code themes for the DevTools. <!-- preserve literal UI string, including "VS" & "the" -->
-*  Open source files in Visual Studio Code.
-*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in DevTools](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
-*  Enable dynamic Welcome content, off by default now but on by default in Microsoft Edge version 97.
+
+**Turned on by default in Microsoft Edge Stable v98:**
+* [Source order viewer](#source-order-viewer)
+* [Emulation: Support dual screen mode](#emulation-support-dual-screen-mode)
+* [Enable webhint](#enable-webhint)
+* [Show issues in Elements](#show-issues-in-elements)
+* [Enable Composited Layers in 3D View](#enable-composited-layers-in-3d-view)
+* [DevTools Tooltips](#devtools-tooltips)
+* [Detached Elements](#detached-elements)
+* [VS Code themes for the DevTools](#vs-code-themes-for-the-devtools)<!-- preserve literal UI string, including "VS" & "the" -->
+* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+* [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
+
+**Turned on by default in Microsoft Edge Canary v100:**
+* [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel)
+* [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
+* [Enable webhint](#enable-webhint)
+* [Show issues in Elements](#show-issues-in-elements)
+* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+* [Automatically pretty print in the Microsoft Edge Sources Panel](#automatically-pretty-print-in-the-microsoft-edge-sources-panel)
 
 <!-- don't place a comment line between list item lines, above; that would create a gap -->
-
-<!-- Don't list this checkbox in this article; it's being removed: -->
-<!-- *  Enable CSS \<length\> authoring tool in the Styles pane -->
-
-<!-- *  Detached Elements 
-Is the Detached Elements experiment checkbox intended to be present for external users?
-Is the Detached Elements experiment checkbox intended to be turned on by default, for external users?
--->
 
 
 <!-- ====================================================================== -->
@@ -130,33 +145,24 @@ Most of the experiments that appear in the latest version of the Canary preview 
 
 <!-- ====================================================================== -->
 ## Allow extensions to load custom stylesheets
-<!-- present in 96, 98 -->
 
 Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on with a theme, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Capture node creation stacks
-<!-- present in 96, 98 -->
 
 To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment. The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** panel.
 
-
-<!-- ====================================================================== -->
-## Automatically pretty print in the Sources Panel
-<!-- present in 96, 98 -->
-
-When this experiment is turned on, when you display a minified file in the Sources panel, the file is opened in a single tab in the Sources panel, pretty-printed.
-
-When this experiment is turned off, a UI prompt with a button asks you whether to pretty-print the file.  The file is opened in an additional tab which has an appended suffix of **:formatted**.
-
-*  A _minified_ file is concatenated into a single long line.
-*  In contrast, _pretty print_ presents the contents of a file in an indented, more human-readable format.
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Protocol Monitor
-<!-- present in 96, 98 -->
 
 DevTools communicates with the inspected page using the DevTools protocol.
 
@@ -178,31 +184,54 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 
 1. The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.
 
-
-<!-- ====================================================================== -->
-<!-- ## Show CSP Violations view -->
-<!-- present in 96, 98 -->
-
-<!-- Needs content. -->
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Record coverage while performance tracing -->
-<!-- present in 96, 98 -->
+## Show CSP Violations view
 
-<!-- Needs content. -->
+Shows Content Security Policy (CSP) violations.
+<!-- needs content, 0 hits in fts in this repo - retry "csp" Find. -->
+
+See [Content Security Policy (CSP)](../../extensions-chromium/store-policies/csp.md).
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Show option to take heap snapshot where globals are treated as root -->
-<!-- present in 96, 98 -->
+## Record coverage while performance tracing
 
-<!-- Needs content. -->
+Records coverage while performance tracing.
+<!-- needs content, 0 hits in fts in this repo -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Show option to take heap snapshot where globals are treated as root
+
+Shows the option to take a heap snapshot where globals are treated as root.
+<!-- needs content -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Show back/forward cache blocking reasons in the frame tree structure view
+
+Whether to show back/forward cache blocking reasons in the frame tree structure view.
+<!-- needs content -->
+
+*  This checkbox is not present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Source order viewer
-<!-- present in 96, 98 -->
 
 **Source Order Viewer** is an experiment that displays the order of elements in the webpage source. The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users. Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
 
@@ -220,52 +249,73 @@ To use the **Source Order Viewer**:
 
    ![Source Order Viewer in the Accessibility pane.](../media/experiments-source-order-viewer.msft.png)
 
-This experiment is turned on by default.
-
 For more information, see [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
 
-
-<!-- ====================================================================== -->
-## Enable back-forward cache debugging support
-<!-- present in 96, 98 -->
-
-Back-forward cache, or *bfcache*. Makes navigating through your browsing history faster by saving snapshots of visited web pages in memory.
-
-Certain web pages can't be cached. Enable this experiment to add the **Back-forward Cache** section to the **Application** panel.  Enabling back-forward cache debugging provides information about web pages that can't be stored in `bfcache`.
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## WebAssembly Debugging: Enable DWARF support -->
-<!-- present in 96, 98 -->
+## Timeline: event initiators
 
+Whether to include event initiators in the Timeline.
+<!-- needs content -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Timeline: WebGL-based flamechart
+
+Whether to use a WebGL-based flamechart in the Timeline.
+<!-- needs content -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## WebAssembly Debugging: Enable DWARF support
+
+Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's new in DevTools (Microsoft Edge 80)_.
 <!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Emulation: Support dual screen mode
-<!-- present in 96, 98 -->
 
-For more information, see [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
+See [Emulation: Support dual screen mode](../device-mode/dual-screen-and-foldables.md).
 
-
-<!-- ====================================================================== -->
-<!-- ## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines -->
-<!-- present in 96, 98 -->
-
-<!-- Needs content. -->
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable full accessibility tree view in the Elements panel -->
-<!-- present in 96, 98 -->
+## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines
 
+Enables the new Advanced Perceptual Contrast Algorithm (APCA), replacing previous contrast ratio and AA/AAA guidelines.
 <!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Enable full accessibility tree view in the Elements panel
+
+Enables the full accessibility tree view in the **Elements** tool.
+<!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Enable the Font Editor tool within the Styles pane
-
-<!-- present in 96, 98 -->
 
 You can use the visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
 
@@ -288,37 +338,80 @@ For more information about the visual **Font Editor**, see [Edit CSS font styles
 
 For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
 
-
-<!-- ====================================================================== -->
-<!-- ## Enable automatic contrast issue reporting via the Issues Panel -->
-<!-- present in 96, 98 -->
-
-<!-- Needs content. -->
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable experimental cookie features -->
-<!-- present in 96, 98 -->
+## Enable automatic contrast issue reporting via the Issues Panel
 
+Enables automatic contrast issue reporting in the **Issues** tool.
 <!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Enable experimental cookie features
+
+Enables experimental cookie features.
+<!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Enable Reporting API panel in the Application panel
-<!-- present in 96, 98 -->
 
 Use the Reporting API to catch certain errors such as security violations or deprecated API calls. These errors happen when users visit your site and are sent to a server endpoint. Enable this experiment to add the **Reporting API** section in the **Application** panel, which lists all of the reports sent to the endpoint.
 
-<!-- ====================================================================== -->
-<!-- ## Log DevTools uncaught exceptions to Console -->
-<!-- present in 96, 98 -->
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
+
+<!-- ====================================================================== -->
+## Display more precise changes in the Changes tab
+
+See [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes).
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Sync CSS changes in the Styles pane
+
+Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
 <!-- Needs content. -->
+
+*  This checkbox is not present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Local overrides for response headers
+
+Whether to use local overrides for response headers.
+<!-- Needs content. -->
+
+*  This checkbox is not present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Log DevTools uncaught exceptions to Console
+
+Controls whether to log DevTools uncaught exceptions in the **Console** tool.
+<!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Enable webhint
-<!-- present in 96, 98 -->
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
 
@@ -333,19 +426,21 @@ The [webhint](https://webhint.io) experiment displays the webhint feedback in th
 
 ![webhint feedback in the Issues panel.](../media/experiments-webhint.msft.png)
 
-This experiment is turned on by default.
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-
 ## Show issues in Elements
-<!-- present in 96, 98 -->
 
 Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
 
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
 <!-- ====================================================================== -->
 ## Enable Composited Layers in 3D View
-<!-- present in 96, 98 -->
 
 You can visualize Layers alongside z-indexes and the Document Object Model (DOM). For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
 
@@ -365,14 +460,14 @@ To use **Composited Layers**:
 
    ![Composited Layers pane.](../media/experiments-layers.msft.png)
 
-This experiment is turned on by default.
-
 See also [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/index.md).
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Enable Network Console
-<!-- present in 96, 98 -->
 
 **Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You can use the **Network Console** experiment to send web API requests.
 
@@ -391,6 +486,9 @@ To use the **Network Console**:
    ![Network Console in the Console drawer.](../media/network-network-console.msft.png)
 
 See [Compose and send web API requests using the Network Console tool](../network-console/network-console-tool.md).
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
@@ -431,19 +529,24 @@ See also:
 * [About the list of tools](../about-tools.md).
 * [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) - draft documentation of this experimental feature, in the Explainers repo.
 
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
 
 <!-- ====================================================================== -->
 ## DevTools Tooltips
-<!-- present in 96, 98 -->
 
 Enable this experiment to view tooltips for all the different tools and panes in DevTools. For more information, see [Learn about DevTools with informative tooltips](../whats-new/2021/04/devtools.md#learn-about-devtools-with-informative-tooltips).
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
 ## Detached Elements
-<!-- present in 96, 98 -->
-
-<!-- maintainers: see notes about this experiment, in the list of experiments which are turned on by default, at top of article -->
+<!-- PM: "The Detached Elements checkbox is visible to all Edge users since Edge 93.
+The experiment was turned on by default in Edge 93 for all internal (so has a microsoft.com account in Edge) DevTools customers.
+Starting with Edge 97, the experiment will be turned on by default for all Edge users" -->
 
 Memory leaks in web applications can be difficult to locate and repair.
 
@@ -453,18 +556,22 @@ Memory leaks occur when the JavaScript code of the application retains an increa
 
 For more information, see [Debug DOM memory leaks with the Detached Elements tool](../memory-problems/dom-leaks.md)
 
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
+
 
 <!-- ====================================================================== -->
 ## VS Code themes for the DevTools
-<!-- present in 96, 98 -->
 <!-- preserve literal UI string, including "VS" & "the" -->
 
 To use Visual Studio themes in DevTools, enable the **VS Code themes for the DevTools** experiment. For more information, see [Apply color themes to DevTools](../customize/theme.md).
 
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
+
 
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
-<!-- present in 96, 98 -->
 
 The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files. When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
 
@@ -474,6 +581,23 @@ When you select a folder to use as your Workspace, selecting any link to a file 
 
 Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Automatically pretty print in the Microsoft Edge Sources Panel
+
+When this experiment is turned on, when you display a minified file in the Sources panel, the file is opened in a single tab in the Sources panel, pretty-printed.
+
+When this experiment is turned off, a UI prompt with a button asks you whether to pretty-print the file.  The file is opened in an additional tab which has an appended suffix of **:formatted**.
+
+*  A _minified_ file is concatenated into a single long line.
+*  In contrast, _pretty print_ presents the contents of a file in an indented, more human-readable format.
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
 
 <!-- ====================================================================== -->
 <!-- >> [!WARNING]
@@ -481,52 +605,134 @@ Any edits that you make in DevTools now change the file on the hard drive and sy
 
 
 <!-- ====================================================================== -->
-<!-- ## Ignore List for JavaScript frames on Timeline
-<!-- present in 96, 98 -->
+## Ignore List for JavaScript frames on Timeline
 
+Whether to include the Ignore list for JavaScript frames on the Timeline.
 <!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Input events on Timeline overview -->
-<!-- present in 96, 98 -->
+## Input events on Timeline overview
 
+Controls whether to include Input events on the Timeline overview.
 <!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Live heap profile -->
-<!-- present in 96, 98 -->
+## Live heap profile
 
+Controls whether to live-update the heap profile.
 <!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Sampling heap profiler timeline -->
-<!-- present in 96, 98 -->
+## Sampling heap profiler timeline
 
+Controls whether to show the Sampling heap profiler timeline.
 <!-- Needs content. -->
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable keyboard shortcut editor -->
-<!-- present in 96, 98 -->
+## Enable keyboard shortcut editor
 
-<!-- Needs content. -->
+See [Edit the keyboard shortcut for a DevTools action](../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) in _Customize keyboard shortcuts_.
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100.
 
 
 <!-- ====================================================================== -->
-<!-- ## Enable dynamic Welcome content -->
-<!-- present in 96, 98 -->
+## Timeline: Invalidation tracking
 
-<!-- Needs content. -->
+Controls whether to show invalidation tracking on the Timeline.
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Timeline: Show all events
+
+Controls whether to show all events on the Timeline.
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Timeline: V8 Runtime Call Stats on Timeline
+
+Controls whether to show v8 runtime call stats on the Timeline.
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- ====================================================================== -->
+## Timeline: Replay input events
+
+Controls whether to replay input events on the Timeline.
+
+*  This checkbox is present in Microsoft Edge Stable v98.
+*  This checkbox is present in Microsoft Edge Canary v100.
+
+
+<!-- /end of checkboxes -->
 
 
 <!-- ====================================================================== -->
 <!-- todo: move these sections into regular articles
 ## Previously Experimental features which are now regular features
 
-These features have been promoted from experimental to regular features, and have been removed from **Settings** > **Experiments**.
+These features have been promoted from experimental to regular features, and have been removed from **Settings** > **Experiments**. -->
+
+
+<!-- ====================================================================== -->
+<!-- ## Enable experimental hide issues menu
+
+Enables the experimental **Hide issues** menu.
+
+*  This checkbox is not present in Microsoft Edge Stable v98.
+*  This checkbox is not present in Microsoft Edge Canary v100. -->
+
+
+
+<!--
+no such, as of v98:
+*  [Enable back-forward cache debugging support](#Enable back-forward cache debugging support).
+
+no such, as of v98:
+*  Enable experimental hide issues menu.
+
+
+
+======================================================================
+## Enable dynamic Welcome content
+present in 96, 98 - no, not present in 98 anymore
+
+
+======================================================================
+## Enable back-forward cache debugging support
+present in 96, 98
+
+Back-forward cache, or *bfcache*. Makes navigating through your browsing history faster by saving snapshots of visited web pages in memory.
+
+Certain web pages can't be cached. Enable this experiment to add the **Back-forward Cache** section to the **Application** panel.  Enabling back-forward cache debugging provides information about web pages that can't be stored in `bfcache`.
+
+
+======================================================================
 
 *  [Turn on new CSS grid debugging features](../css/grid.md) - removed from experimental status starting with Microsoft Edge 89.
 
