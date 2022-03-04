@@ -106,51 +106,13 @@ The following diagram shows the flow of navigation events for basic authenticati
 
 
 <!-- ====================================================================== -->
-## How navigations work
-
-
-### Navigations in general
-
-See [Navigation events for WebView2 apps](navigation-events.md).
-
-This section provides optional background information about how navigations work.
-
-A _navigation_ corresponds to multiple navigation events.  By _navigation_, we here mean each retry, starting with the `NavigationStarting` box of the above diagram, through the `NavigationCompleted` box.
-
-When a new navigation begins, a new navigation ID is assigned.  For the new navgation, the HTTP server gave the WebView2 control a document.  This is the "have document" navigation.
-
-As a part of navigation, the WebView2 control renders the corresponding page (the requested page or an error page, whichever is returned by the HTTP server), and a "success" or "failure" outcome raises a successful or failed `NavigationCompleted` event.
-
-
-### Navigations for basic authentication
-
-There are two kinds of navigations in the flow:
-*  A "server requested authentication" navigation.
-*  A "server gave the WebView2 control a document" navigation.
-
-After the first type of navigation, the server has asked for authentication and the app needs to try that kind of navigation again (with a new navigation ID).  The new navigation will use whatever the host app gets from the events arguments response objects.
-
-An HTTP server may require HTTP authentication.  In this case, there's a _first navigation_, which has the navigation events that are listed above.  The HTTP server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
-
-If the `BasicAuthenticationRequested` event is canceled, then there's no subsequent navigation and the WebView2 will remain to display the blank page.
-
-If the `BasicAuthenticationRequested` event isn't canceled, the WebView2 will perform the initial navigation again, but this time, using any provided credentials.  You'll again see all the same navigation events as before.
-
-If the credentials aren't accepted by the HTTP server, navigation fails again with 401 or 407.  In that case, the `CoreWebView2` class instance again raises the `BasicAuthenticationRequested` event, and navigation continues as above.
-
-The navigation succeeds if the credentials are accepted by the HTTP server.  The navigation fails if the HTTP server denies authentication (the server typically returns an error page).
-
-The navigations before and after the `BasicAuthenticationRequested` event are distinct navigations and have distinct navigation IDs.
-
-Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` ties together navigation events that correspond to a single navigation.  The `NavigationId` remains the same during each navigation, such as a retry.  During the next pass through the event flow, a different `NavigationId` is used.
-
-
-<!-- ====================================================================== -->
 ## Example code: App providing credentials that are known ahead of time
 
 This example shows the host app providing credentials (user name and password) that are known ahead of time.
 
-The following sample was created by expanding the sample [WebView2APISample repo > ScenarioAuthentication.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/d78d86f1646b6c652908f1e4bc2b64950f05ca0a/SampleApps/WebView2APISample/ScenarioAuthentication.cpp), from the WebView2Samples repo.
+The following sample was created by expanding the sample [WebView2Samples repo > WebView2APISample > ScenarioAuthentication.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/d78d86f1646b6c652908f1e4bc2b64950f05ca0a/SampleApps/WebView2APISample/ScenarioAuthentication.cpp), from the WebView2Samples repo.
+
+The following code is for demonstration purposes to show the main API that's used.  The code in the subsequent section is more useful for your scenario.
 
 That sample includes the following relevant code:
 
@@ -231,8 +193,8 @@ The above code isn't realistic, because:
 This example shows the host app prompting the user for credentials (user name and password), and uses async code.
 
 The following code adds to the above sample, by adding the following features, using the `BasicAuthenticationRequested` event.
-*  Prompt the user for UI to enter their username and password.
-*  Call the `GetDeferral` method on the `event` argument.
+*  Displays a dialog box to prompt the user for their username and password.
+*  Calls the `GetDeferral` method on the `event` argument.
 
 <!-- ------------------------------ -->
 
@@ -428,6 +390,43 @@ else
    * `GetDeferral`
 
 ---
+
+
+<!-- ====================================================================== -->
+## How navigations work
+
+This section provides optional background information about how navigations work.
+
+A _navigation_ corresponds to multiple navigation events.  By _navigation_, we here mean each retry, starting with the `NavigationStarting` box of the above diagram, through the `NavigationCompleted` box.
+
+When a new navigation begins, a new navigation ID is assigned.  For the new navigation, the HTTP server gave the WebView2 control a document.  This is the "have document" navigation.
+
+As a part of navigation, the WebView2 control renders the corresponding page (the requested page or an error page, whichever is returned by the HTTP server), and a "success" or "failure" outcome raises a successful or failed `NavigationCompleted` event.
+
+For more information, see [Navigation events for WebView2 apps](navigation-events.md).
+
+
+### Navigations for basic authentication
+
+There are two kinds of navigations in the flow:
+*  A "server requested authentication" navigation.
+*  A "server gave the WebView2 control a document" navigation.
+
+After the first type of navigation, the server has asked for authentication and the app needs to try that kind of navigation again (with a new navigation ID).  The new navigation will use whatever the host app gets from the events arguments response objects.
+
+An HTTP server may require HTTP authentication.  In this case, there's a _first navigation_, which has the navigation events that are listed above.  The HTTP server returns a 401 or 407 HTTP response, and so the `NavigationCompleted` event has a corresponding failure.  The WebView2 then renders a blank page, and raise the `BasicAuthenticationRequested` event, which will potentially prompt the user for credentials.
+
+If the `BasicAuthenticationRequested` event is canceled, then there's no subsequent navigation and the WebView2 will remain to display the blank page.
+
+If the `BasicAuthenticationRequested` event isn't canceled, the WebView2 will perform the initial navigation again, but this time, using any provided credentials.  You'll again see all the same navigation events as before.
+
+If the credentials aren't accepted by the HTTP server, navigation fails again with 401 or 407.  In that case, the `CoreWebView2` class instance again raises the `BasicAuthenticationRequested` event, and navigation continues as above.
+
+The navigation succeeds if the credentials are accepted by the HTTP server.  The navigation fails if the HTTP server denies authentication (the server typically returns an error page).
+
+The navigations before and after the `BasicAuthenticationRequested` event are distinct navigations and have distinct navigation IDs.
+
+Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` ties together navigation events that correspond to a single navigation.  The `NavigationId` remains the same during each navigation, such as a retry.  During the next pass through the event flow, a different `NavigationId` is used.
 
 
 <!-- ====================================================================== -->
