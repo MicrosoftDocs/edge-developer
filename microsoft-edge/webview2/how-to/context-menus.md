@@ -27,7 +27,7 @@ The WebView2 control provides a default context menu.
 |---|---|
 | _menu item_ | A broad term.  Includes checkbox, command, radio button, separator, and submenu. |
 | _command_ | A narrow term.  One of five types of menuitem. |
-| _context menu_ | A default context menu belonging to the WebView2 control or a custom context menu belonging to your host app. |
+| _context menu_ | Either a default context menu (right-click menu) belonging to the WebView2 control or a custom context menu (right-click menu) belonging to your host app. |
 
 
 <!-- ====================================================================== -->
@@ -42,7 +42,7 @@ The following APIs are used to add a custom context menu in the example in the n
 
 # [C#](#tab/csharp)
 
-You can use the data provided in the Event arguments of  `CoreWebView2.ContextMenuRequested` to display a custom context menu with entries of your choice.  For this case, you specify `Handled` to be `true` and request a deferral. 
+To display a custom context menu that contains your desired menu items, use the data provided in the `EventArgs` of the `CoreWebView2` [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested).  For this case, you specify `Handled` to be `true`, and request a deferral. 
 
 * **[CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)**
    * [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
@@ -79,9 +79,9 @@ You can use the data provided in the Event arguments of  `CoreWebView2.ContextMe
 
 # [C++](#tab/cpp)
 
-You can use the data provided in the Event arguments of [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested) to display a custom context menu with entries of your choice.  For this case, you specify `Handled` (using `put_Handled`) to be `true` and request a deferral. 
+To display a custom context menu that contains your desired menu items, use the data provided in [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs).  For this case, you specify `Handled` to be `true`, and request a deferral. 
 
-* **[ICoreWebView2Experimental6](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)**
+* **[ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)** (ICoreWebView2Experimental6)
    * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
 
 * **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`)
@@ -660,12 +660,7 @@ The WebView2 control raises this event to indicate that the user requested openi
 
 The WebView2 control only raises the `ContextMenuRequested` event if the current webpage allows the context menu to appear; that is, if the `AreDefaultContextMenusEnabled` property is `true`.
 
-
-**Information sent about the selected context menu command:**
-
-<!-- todo: which wording is correct? -->
-When the user selects a custom menu item on a context menu, the WebView2 control sends the following information to your host app:
-<!-- When your host app indicates to WebView2 that a user selected a menu item on a context menu, WebView2 sends the following items to your app: -->
+The [CoreWebView2ContextMenuRequestedEventArgs](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs) contains the following information: 
 
 *  An ordered list of `ContextMenuItem` objects to populate the custom context menu.  The ordered list includes the following:
    *  The internal name of the menu item.
@@ -677,6 +672,10 @@ When the user selects a custom menu item on a context menu, the WebView2 control
 *  The coordinates where the context menu was requested, so your app can detect which UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.
 
 *  A selection object that will include the kind of context selected<!--such as?--> and the appropriate context menu parameter data.<!--what sort of param data - which piece of info that's sent, tells which menu item, from the ordered list of menu items, the user selected?-->
+
+When the user selects a custom menu item on a context menu, the WebView2 control fires a `CustomItemSelected` event.
+
+When your host app indicates to WebView2 that a user selected a menu item on a context menu, WebView2 then runs the selected command.
 
 
 # [C#](#tab/csharp)
@@ -704,15 +703,11 @@ When the user selects a custom menu item on a context menu, the WebView2 control
 <!-- ====================================================================== -->
 ## Detecting when the user selects a custom menu item
 
-Your app can handle the user-selected menu item, or your app can return the menu item to the WebView2 control to handle the user-selected menu item.
+Your host app can handle the user-selected menu item, or your app can return the menu item to the WebView2 control to handle the user-selected menu item.
 
-Enumerate the menu item IDs and text.  (for what task?  check example code)
-
-Raised when the user selects a custom menu item on a default or custom context menu.
+Your host app should listen for the `CustomItemSelected` event, which is raised when the user selects a custom menu item on a default or custom context menu.
 
 The WebView2 control raises this event to indicate that the user selected a custom menu item that your app added to a context menu.
-
-Listen for the `CustomItemSelected` event.
 
 If the user selects a custom menu item, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
 
@@ -724,7 +719,7 @@ If the user selects a custom menu item, the `CustomMenuItemSelected` event is ra
 <!-- ====================================================================== -->
 ## Reporting a selected command menu item to WebView2
 
-When the user selects a WebView2 context menu command, the host app can optionally report that selection to WebView2 for WebView2 handling the command, rather than your host app handling the menu item.
+When the user selects a WebView2 context menu command (a default menu item that's in a custom context menu), the host app can optionally report that selection to WebView2 so that WebView2 will invoke the command.
 
 
 # [C#](#tab/csharp)
@@ -755,18 +750,16 @@ If your host app reports a custom menu item as the selected menu item, then the 
 
 
 <!-- ====================================================================== -->
-## Enabling the default context menu
+## Disabling context menus
 
-To enable the default context menu to be opened, set the `AreDefaultContextMenusEnabled` property.
+The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.  If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables context menus, and the `ContextMenuRequested` event won't be raised, such as when the user right-clicks.
 
-<!-- todo: confirm what api items are used to do this, state why this h2 is asymm w/ next h2 -->
-
+The following APIs are used to disable context menus, in the example in the next section.
 
 # [C#](#tab/csharp)
 
 * **[CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)**
    * [AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
-
 
 # [C++](#tab/cpp)
 
@@ -778,29 +771,7 @@ To enable the default context menu to be opened, set the `AreDefaultContextMenus
 
 
 <!-- ====================================================================== -->
-## Disabling all context menus
-
-The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.  If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables the default context menu, and the `ContextMenuRequested` event won't be raised, such as when the user right-clicks.
-
-The following APIs are used to disable all context menus, in the example in the next section.
-
-
-# [C#](#tab/csharp)
-
-* **[CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)**
-   * [AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
-
-
-# [C++](#tab/cpp)
-
-* **[ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)**
-   * [get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
-   * [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
-
----
-
-<!-- ====================================================================== -->
-## Example: Disabling all context menus
+## Example: Disabling context menus
 
 
 # [C#](#tab/csharp)
@@ -986,3 +957,6 @@ else
 Spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ContextMenuRequested.md
 PR: https://github.com/MicrosoftDocs/edge-developer/pull/1740
 -->
+
+
+<!-- Enumerate the menu item IDs and text. -->
