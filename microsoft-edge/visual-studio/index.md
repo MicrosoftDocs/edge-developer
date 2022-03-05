@@ -161,7 +161,7 @@ The **Network** tool is also open by default:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools.](media/devtools-extension-visual-studio-network.png)
 
-The **Inspect tool** (![Inspect tool icon.](media/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon.](media/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon.](media/more-tools-v-s-icon.png)) menu offers the [Issues](../devtools-guide-chromium/issues/index.md), [Network conditions](../devtools-guide-chromium/network-conditions/network-conditions-tool.md), and [Network request blocking](../microsoft-edge/devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md) tools:
+The **Inspect tool** (![Inspect tool icon.](media/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon.](media/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon.](media/more-tools-v-s-icon.png)) menu offers the [Issues](../devtools-guide-chromium/issues/index.md), [Network conditions](../devtools-guide-chromium/network-conditions/network-conditions-tool.md), and [Network request blocking](../devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md) tools:
 
 ![The Edge DevTools window of Visual Studio, undocked.](media/edge-devtools-v-s-window-undocked.png)
 
@@ -174,7 +174,6 @@ The **Inspect tool** (![Inspect tool icon.](media/v-s-edge-devtools-inspect-tool
 <!--
 * [Microsoft Edge DevTools extension for Visual Studio](../devtools-guide-chromium/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
 -->
-
 
 
 <!-- ====================================================================== -->

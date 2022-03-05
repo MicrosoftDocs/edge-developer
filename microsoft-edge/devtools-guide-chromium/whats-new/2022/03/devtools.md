@@ -94,15 +94,19 @@ Starting in Microsoft Edge version 99, you can unminify a call stack in a perfor
 
 The **Unminify** button will use source maps, provided that they are hosted side-by-side with your production code, to unminify the call stack in the **Performance** tool.
 
+The minified call stack in the **Performance** tool shows function names as **b**, **O**, **Xt**, and **bn**:
+
 ![The minified call stack in the Performance tool.](../../media/2022/03/minified-call-stack-performance-tool.png)
 <!-- Image 1: Minified call stack in Performance tool
 Navigate to: https://outlook-sdf.office.com/mail/
 Open DevTools > Performance
 Record a performance profile while scrolling through your inbox
-Select a small section of the profile and look at the call stack
+Select a small section of the profile and look at the call stack       1380ms-1400ms
 Draw red highlights around function names like n, O, i, Xt, Bn, Yn. It won't be these exactly in your screenshot but you can see these are minified function names
 Remember the section of the profile that you are looking at
 -->
+
+The unminified call stack in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**:
 
 ![The unminified call stack in the Performance tool.](../../media/2022/03/unminified-call-stack-performance-tool.png)
 <!-- Image 2: Unminified call stack
@@ -129,7 +133,7 @@ See also:
 <!-- Title: Improvements for using assistive technology with DevTools -->
 <!-- Subtitle: Screen readers now announce better information in the Network Console and 3D View tools. -->
 
-In previous versions of Microsoft Edge, assistive technology would announce incorrect information when providing a custom bearer token in the Network Console tool.  In Microsoft Edge version 99, this issue has been fixed.  When selecting the textbox for providing a custom bearer token, assistive technology will now announce "Token edit text Request View group".
+In previous versions of Microsoft Edge, assistive technology announced incorrect information when providing a custom bearer token in the Network Console tool.  In Microsoft Edge version 99, this issue has been fixed.  When selecting the text box for providing a custom bearer token, assistive technology now announces "Token edit text Request View group".
 
 ![The Network Console tool.](../../media/2022/03/network-console-tool.png)
 <!--
