@@ -43,7 +43,11 @@ See [Securely debug original code by publishing source maps to the Azure Artifac
 
 Following up on the success of the Visual Studio Code integration, you can now also embed the Microsoft Edge Developer Tools in Microsoft Visual Studio to debug your ASP.NET projects live.  Download the [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs) and try it out. 
 
-To use the extension, make sure Visual Studio 2022 and the ASP.NET workload are installed.  Set up Web Live Preview as the default Web Forms Designer, as described in the above page.  In an ASP.NET project, open a webpage of the project in the **Design** window.  In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon.](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) button:
+To try this feature:
+1. Make sure Visual Studio 2022 and the ASP.NET workload are installed.
+1. Set up Web Live Preview as the default Web Forms Designer, as described at [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs).
+1. In an ASP.NET project, open a webpage of the project in the **Design** window.
+1. In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon.](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) button:
 
 ![An ASP.NET project, opening Edge DevTools.](../../media/2022/03/devtools-extension-v-s-web-forms-designer.png)
 
@@ -147,7 +151,7 @@ In previous versions of Microsoft Edge, assistive technology announced incorrect
 8. If you can't see the "Token" edit textbox, drag the slider above "Hit 'Send' to issue the request" down to the bottom.
 -->
 
-In previous versions of Microsoft Edge, assistive technology would only announce the radio button text in the 3D View tool, without announcing the group name that the button belongs to.  In Microsoft Edge version 99, this has been fixed.  For example, when focus is on the **Use screen texture** radio button, assistive technology will now announce: "Color Type radio group, Use screen texture, radio button, unselected".
+In previous versions of Microsoft Edge, assistive technology would only announce the radio button text in the 3D View tool, without announcing the group name that the button belongs to.  In Microsoft Edge version 99, this has been fixed.  For example, when focus is on the **Use screen texture** radio button, assistive technology will now announce: "Color type radio group, Use screen texture, radio button, unselected".
 
 ![The 3D View tool.](../../media/2022/03/3d-view-tool.png)
 <!--
