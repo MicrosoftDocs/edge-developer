@@ -43,17 +43,19 @@ See [Securely debug original code by publishing source maps to the Azure Artifac
 
 Following up on the success of the Visual Studio Code integration, you can now also embed the Microsoft Edge Developer Tools in Microsoft Visual Studio to debug your ASP.NET projects live.  Download the [Microsoft Edge Developer Tools for Visual Studio](https://aka.ms/edgetools-for-vs) and try it out. 
 
-The undocked Edge DevTools window for Visual Studio, showing the **More Tools** menu:
+To use the extension, make sure Visual Studio 2022 and the ASP.NET workload are installed.  Set up Web Live Preview as the default Web Forms Designer, as described in the above page.  In an ASP.NET project, open a webpage of the project in the **Design** window.  In the upper left of the **Design** window, click the **Open Edge DevTools** (![Open Edge DevTools icon.](../../media/2022/03/open-edge-dev-tools-v-s-icon.png)) button:
 
-![The Edge DevTools window of Visual Studio, undocked.](../../media/2022/03/edge-devtools-v-s-window-undocked.png)
+![An ASP.NET project, opening Edge DevTools.](../../media/2022/03/devtools-extension-v-s-web-forms-designer.png)
 
-The **Elements** tool:
+Edge DevTools for Visual Studio opens, with the **Elements** tool selected:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools.](../../media/2022/03/devtools-extension-visual-studio-elements.png)
 
-The **Network** tool:
+The **Network** tool is also open by default:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools.](../../media/2022/03/devtools-extension-visual-studio-network.png)
+
+The **Inspect tool** (![Inspect tool icon.](../../media/2022/03/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon.](../../media/2022/03/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon.](../../media/2022/03/more-tools-v-s-icon.png)) menu offers the [Issues](../../../issues/index.md), [Network conditions](../../../network-conditions/network-conditions-tool.md), and [Network request blocking](../../../network-request-blocking/network-request-blocking-tool.md) tools.
 
 See also:
 
@@ -114,8 +116,11 @@ bn => runReactions
 i => finalDispatch
  -->
 
-See [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
-<!-- See [PR forthcoming to add a temp link to rendered page](). -->
+See also:
+
+* [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
+* [Unminify performance profiles (temp. PR link)](https://review.docs.microsoft.com/microsoft-edge/devtools-guide-chromium/evaluate-performance/unminify?branch=pr-en-us-1784).
+<!-- todo: update from review.dmc to live url -->
 
 
 <!-- ====================================================================== -->

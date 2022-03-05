@@ -153,22 +153,23 @@ To use the extension:
 
 ![An ASP.NET project, opening Edge DevTools.](media/devtools-extension-v-s-web-forms-designer.png)
 
-The undocked Edge DevTools window for Visual Studio, showing the **More Tools** (![More Tools icon.](media/more-tools-v-s-icon.png)) menu:
-
-![The Edge DevTools window of Visual Studio, undocked.](media/edge-devtools-v-s-window-undocked.png)
-
-The **Elements** tool:
+Edge DevTools for Visual Studio opens, with the **Elements** tool selected:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools.](media/devtools-extension-visual-studio-elements.png)
 
-The **Network** tool:
+The **Network** tool is also open by default:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools.](media/devtools-extension-visual-studio-network.png)
+
+The **Inspect tool** (![Inspect tool icon.](media/v-s-edge-devtools-inspect-tool-icon.png)) and **Toggle screencast** (![Toggle screencast icon.](media/v-s-edge-devtools-toggle-screencast-icon.png)) are available, and the **More Tools** (![More Tools icon.](media/more-tools-v-s-icon.png)) menu offers the [Issues](../devtools-guide-chromium/issues/index.md), [Network conditions](../devtools-guide-chromium/network-conditions/network-conditions-tool.md), and [Network request blocking](../microsoft-edge/devtools-guide-chromium/network-request-blocking/network-request-blocking-tool.md) tools:
+
+![The Edge DevTools window of Visual Studio, undocked.](media/edge-devtools-v-s-window-undocked.png)
 
 
 **See also:**
 
-* [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
+<!-- todo: update url from preview to release: -->
+* [Edge Developer Tools for Visual Studio](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
 
 <!--
 * [Microsoft Edge DevTools extension for Visual Studio](../devtools-guide-chromium/whats-new/2022/03/devtools.md#microsoft-edge-devtools-extension-for-visual-studio) in _What's New in DevTools (Microsoft Edge 99)_.
