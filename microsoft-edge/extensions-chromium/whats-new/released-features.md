@@ -17,12 +17,32 @@ This article describes features launched on [Partner Center](https://partner.mic
 For more information about updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
 
 <!-- ====================================================================== -->
-## Extensions Analytics Dashboard on Microsoft Partner Center
+## Edge extensions developer portal
+
+The new edition of the developer portal contains all relevant resources and documentations for Edge extensions. You can check it [here](https://aka.ms/MSEADeveloper).
+
+*Released January 2022*
+
+<!-- ====================================================================== -->
+## Extension Analytics Dashboard on Microsoft Partner Center
 
 The Extensions Analytics Dashboard enables extension developers to view their extension's usage, adoption, and in-market performance.  Developers can also track active user installs, weekly users, total downloads, and usage distribution over a period from [Partner Center](https://partner.microsoft.com/dashboard/home).
 
 *Released September 2021*
 
+<!-- ====================================================================== -->
+## Add team members to your Partner Center account
+
+Developers can add members from their organization and manage the settings on their Partner Center Account. You can read more [here](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/aad-account).
+
+*Released August 2021*
+
+<!-- ====================================================================== -->
+## Sign into Microsoft Partner Center usinhg your GitHub account
+
+Developers can use their personal GitHub account credentials to sign into Microsoft Partner Center to submit your Edge Extension. You can read more [here](https://aka.ms/EdgeDevSignInGitHub).
+
+*Released August 2021*
 
 <!-- ====================================================================== -->
 ## Manage your extension submissions on Partner Center
@@ -38,6 +58,19 @@ Microsoft Edge Add-ons now support extensions with Manifest V3. Check out [the b
 
 *Released April 2021*
 
+<!-- ====================================================================== -->
+## Request to get your extension featured
+
+Developers can request the Collection on which the extension should be featured on the Microsoft Edge Add-ons store. You can submit your request [here](https://aka.ms/MSEACollections).
+
+*Released April 2021*
+
+<!-- ====================================================================== -->
+## Extension store listing localization
+
+Developers can choose a subset of languages instead of manually entering each language in the listing details on Partner Center & the ability to use the same marketing assets across all marketplaces. Check out [the blog](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981) for more details.
+
+*Released February 2021*
 
 <!-- ====================================================================== -->
 ## Extension certification report link
