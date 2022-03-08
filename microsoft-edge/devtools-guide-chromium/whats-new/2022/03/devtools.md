@@ -20,8 +20,6 @@ If you are on Windows, Linux, or macOS, consider using the Canary preview channe
 <!-- Title: Debug JavaScript with source maps more easily -->
 <!-- Subtitle: Publish your source maps to Azure Artifacts Symbol Server and connect DevTools to it for an easier debugging experience. -->
 
-<!-- todo: sequentially introduce "why source maps" and "why secure source maps" -->
-
 Azure Artifacts Symbol Server now supports storing the source maps that your build process produces when compiling, minifying, and bundling your code.  Instead of hosting source maps on your public server, you can now publish your source maps to the secure Azure Artifacts Symbol Server.  Then, connect DevTools to Symbol Server to have DevTools automatically fetch your source maps. 
 
 By using source maps, you can see and debug your original source code in DevTools, rather than having to work with the compiled, minified, and bundled production code that's returned by your server.  Hosting your source maps on the Azure Artifacts Symbol Server allows you to see and work with your source code securely and privately, instead of placing your source maps on your server and revealing your original code publicly.
@@ -32,8 +30,11 @@ To try this feature:
 
 ![The 'Symbol Server' page in DevTools Settings, where you enter your Azure DevOps personal access token.](../../media/2022/03/ado-pat-devtools.png)
 
-See [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md).
- 
+See also:
+*  [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
+*  [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
+*  [Securely debug original code by using Azure Artifacts symbol server source maps](/javascript/consume-source-maps-from-azure.md)
+
 
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools extension for Visual Studio
@@ -64,7 +65,7 @@ The **Inspect tool** (![Inspect tool icon.](../../media/2022/03/v-s-edge-devtool
 See also:
 
 * [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
-* [Edge DevTools extension for Visual Studio](../../../../visual-studio/index.md#edge-devtools-extension-for-visual-studio) in _Visual Studio for web development_.
+* [Edge DevTools extension for Visual Studio](../../../../visual-studio/index.md#edge-devtools-extension-for-visual-studio).
 
 
 <!-- ====================================================================== -->
@@ -73,9 +74,7 @@ See also:
 <!-- Title: Layers in 3D View -->
 <!-- Subtitle: The Layers tool isn't going away - find it in the 3D View tool today. -->
 
-We previously added an improved version of Layers in the **3D View** tool, and we're removing the stand-alone version (the **Layers** tool) after users have enough time to make the transition. The **Layers** tool will display a link that redirects you to the **Composited Layers** view within the **3D View** tool.  You can find all the functionality from the **Layers** tool there.
-
-In the following image, the **Focus Mode** UI is shown.  **Focus Mode** has a **Quick View** area at the bottom, in place of the **Drawer**.  The **Layers** tool, which is shown open in **Quick View**, contains only a link, to open the **3D View** tool above it:
+Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in-3d-view), the **3D View** tool has provided an improved version of the **Layers** tool.  Now, in Microsoft Edge 99, the standalone **Layers** tool has been removed, and contains a link that redirects you to the **Composited Layers** view within the **3D View** tool.  You can find all the functionality from the **Layers** tool in the **3D View** tool.
 
 ![The Layers tool now links to the 3D View tool with the Composited Layers view open.](../../media/2022/03/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->
@@ -140,27 +139,10 @@ See also:
 In previous versions of Microsoft Edge, assistive technology announced incorrect information when providing a custom bearer token in the Network Console tool.  In Microsoft Edge version 99, this issue has been fixed.  When selecting the text box for providing a custom bearer token, assistive technology now announces "Token edit text Request View group".
 
 ![The Network Console tool.](../../media/2022/03/network-console-tool.png)
-<!--
-1. Open DevTools.
-2. Press Ctrl+Shift+P and enter "Network Console".
-3. Open the Network Console tool.
-4. Select "Create a request".
-5. Select "Auth".
-6. Select "Bearer Token".
-7. Draw a red highlight around the "Token" edit textbox.
-8. If you can't see the "Token" edit textbox, drag the slider above "Hit 'Send' to issue the request" down to the bottom.
--->
 
-In previous versions of Microsoft Edge, assistive technology would only announce the radio button text in the 3D View tool, without announcing the group name that the button belongs to.  In Microsoft Edge version 99, this has been fixed.  For example, when focus is on the **Use screen texture** radio button, assistive technology will now announce: "Color type radio group, Use screen texture, radio button, unselected".
+In previous versions of Microsoft Edge, assistive technology would only announce the radio button text in the 3D View tool, without announcing the group name that the button belongs to.  In Microsoft Edge version 99, this has been fixed.  For example, when focus is on the **Use screen texture** radio button, assistive technology will now announce: "Color type radio group, Use screen texture, radio button, selected".
 
 ![The 3D View tool.](../../media/2022/03/3d-view-tool.png)
-<!--
-1. Open DevTools.
-2. Press Ctrl+Shift+P and enter "3D View".
-3. Open the 3D View tool.
-4. Select "DOM".
-5. Draw a red highlight around the "Color type" section and all the radio buttons in that section.
--->
 
 To learn more about how using assistive technology with DevTools, read [Navigate DevTools with assistive technology](../../../accessibility/navigation.md).
 
@@ -168,7 +150,7 @@ To learn more about how using assistive technology with DevTools, read [Navigate
 <!-- ====================================================================== -->
 ## Improved source folder tree in the Sources panel
 
-In the **Page** tab of the **Sources** tool, the tree of source folders is now improved, with less clutter in the naming and outline of folders.  Unneeded path prefixes such as "../" and "./" have been removed.  The tree structure has been simplified by merging equivalent duplicate folders.  This was done by normalizing the absolute source URLs in the source maps.
+In the **Page** tab of the **Sources** tool, the tree of source folders is now improved, with less clutter in the naming and outline of folders.  Unneeded path prefixes such as `../` and `./` have been removed.  The tree structure has been simplified by merging equivalent duplicate folders.
 
 ![Cleaner folder outline in the Page tab of the Sources tool.](../../media/2022/03/folders-page-tab-sources-tool.png)
 
