@@ -15,15 +15,15 @@ Send your feedback to help improve Microsoft Edge DevTools.  Contact the Microso
 There are several ways to get in touch with the Microsoft Edge DevTools team:
 
 * Using the **Send feedback** window to quickly report bugs while using DevTools.
-* Using the DevTools repo to submit feature requests, bugs, questions, and have conversations with the team.
-* Using The Web We Want initiative to submit cross-browser suggestions.
-* Using the edge-developer repo to submit documentation issues.
+* Using the **DevTools** repo to submit feature requests, questions, and have longer conversations with the team.
+* Using **The Web We Want** initiative to submit cross-browser suggestions.
+* Using the **edge-developer** repo to submit documentation issues.
 
 
 <!-- ====================================================================== -->
 ## Use the Send feedback window
 
-To report a bug while using DevTools or to request a new feature, [open DevTools](index.md#open-devtools) and then click the **Send feedback** icon.  Or, in DevTools, press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
+To report a bug or a feature request while you are using DevTools, click the **Send feedback** icon or press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
 
 ![Screenshot of Microsoft Edge, with DevTools open, and the Send feedback icon in DevTools' toolbar](media/devtools-send-feedback.png)
 
@@ -35,7 +35,7 @@ Clicking the **Send feedback** icon opens a **Send feedback** window which you c
 <!-- ====================================================================== -->
 ## Use the DevTools repo
 
-To have discussions with the DevTools team and DevTools community about bugs or features, use the DevTools repository on GitHub.
+To have longer discussions with the DevTools team and community about bugs or features, use the DevTools repository on GitHub.
 
 You can [create a new issue](https://github.com/MicrosoftEdge/DevTools/issues/new/choose) on the repo or [search for existing issues](https://github.com/MicrosoftEdge/DevTools/issues) and join conversations.
 
