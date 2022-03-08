@@ -9,12 +9,6 @@ ms.date: 03/08/2022
 ---
 # Display original function names in performance profiles
 
-<!-- todo: review all mentions of "source mapping" in this article - what is the relation between these 3 features/technologies?
-*  source mapping and its UX/benefits
-*  unminification and its UX/benefits
-*  ADO secure server (for source maps) and its UX/benefits
--->
-
 If your build process compiles and minifies your code and combines it into a single file, the names of the functions displayed in a performance profile might be hard to understand.  Source maps map your compiled, minified code to your original source code files.  The **Performance** tool can use source maps to map minified function names after a recording has been made, back to their original names found in your original code.
    
 To learn more about how DevTools uses source maps, see [Map the processed code to your original source code, for debugging](../javascript/source-maps.md).
@@ -42,14 +36,7 @@ To unminify a performance profile, so that some more meaningful function names a
 <!-- ====================================================================== -->
 ## Step 1 - Set up source maps
 
-*  Set up source maps, to host your source maps in addition to your production code.  Host your source maps where the **Performance** tool can find them.
-<!-- todo: explain where to host source maps-->
-<!-- todo: describe the folder structure:
-```
-x
-  x
-```
--->
+Set up source maps, to host your source maps in addition to your production code.  Host your source maps where the **Performance** tool can find them.
 
 For details, see [Map the processed code to your original source code, for debugging](/microsoft-edge/devtools-guide-chromium/javascript/source-maps).
 
@@ -91,7 +78,7 @@ For details, see [Map the processed code to your original source code, for debug
 
    ![Load Profile.](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png)
 
-1.  In the **Open** dialog box, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
+1. In the **Open** dialog box, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
 
 1. Select the same section (timestamp range) of the profile you looked at in the first image.
 
