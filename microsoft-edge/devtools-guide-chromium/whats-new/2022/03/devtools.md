@@ -84,44 +84,29 @@ See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/
 
 <!-- ====================================================================== -->
 ## Use your source maps to unminify performance profiles
+<!--
+## Use your source maps to display original function names in performance profile flame charts
+-->
 
 <!-- Title: The Performance tool can now display unminified call stacks -->
 <!-- Subtitle: Use the new Unminify button in the Performance tool to download an unminified version of the performance profile you recorded. -->
 
-In previous versions of Microsoft Edge, recording a performance profile in the Performance tool would produce a minified call stack. The call stack was not using source maps, even if you hosted them on your server, to unminify the call stack.
+Recording a performance profile in the **Performance** tool produces a minified call stack.  In previous versions of Microsoft Edge, the call stack (flame chart) didn't use source maps to display your original function names, even if you hosted the source maps on your server.
 
-Starting in Microsoft Edge version 99, you can unminify a call stack in a performance profile, as follows:
-1. After recording a profile, in the **Performance** tool, click the new **Unminify** button.
-1. Download the unminified performance profile.<!--how?-->
-1. Import the unminified performance profile into the **Performance** tool.<!--how?-->
+Starting in Microsoft Edge version 99, you can display your original function names in performance profile flame charts, as follows:
+1. Record a profile, in the **Performance** tool.
+1. Click the new **Unminify** (![The Unminify icon.](../../media/2022/03/unminify-icon.png)) button to create and download the unminified performance profile.
+1. Load (import) (![The Load profile icon.](../../media/2022/03/load-profile-icon.png)) the unminified performance profile into the **Performance** tool.
 
 The **Unminify** button will use source maps, provided that they are hosted side-by-side with your production code, to unminify the call stack in the **Performance** tool.
 
-The minified call stack in the **Performance** tool shows function names as **b**, **O**, **Xt**, and **bn**:
+The minified call stack in the **Performance** tool initially shows function names as **b**, **O**, **Xt**, and **bn**, taken from the production code returned by the web server:
 
 ![The minified call stack in the Performance tool.](../../media/2022/03/minified-call-stack-performance-tool.png)
-<!-- Image 1: Minified call stack in Performance tool
-Navigate to: https://outlook-sdf.office.com/mail/
-Open DevTools > Performance
-Record a performance profile while scrolling through your inbox
-Select a small section of the profile and look at the call stack       1380ms-1400ms
-Draw red highlights around function names like n, O, i, Xt, Bn, Yn. It won't be these exactly in your screenshot but you can see these are minified function names
-Remember the section of the profile that you are looking at
--->
 
-The unminified call stack in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**:
+After clicking **Unminify** (![Unminify icon.](../../media/2022/03/unminify-icon.png)) and then **Load profile** (![Load profile icon.](../../media/2022/03/load-profile-icon.png)), the unminified call stack in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, and **runReactions (bn)**, retrieved from your source maps:
 
 ![The unminified call stack in the Performance tool.](../../media/2022/03/unminified-call-stack-performance-tool.png)
-<!-- Image 2: Unminified call stack
-Select the Unminify button
-Save the unminified profile (it'll be in the .json file format) to your Downloads folder
-Select Load profile and load the unminified perf profile you just downloaded
-Select the same section of the profile you looked at in the first image
-Draw red highlights around function names that should now be unminified. In my demo, 
-Xt => endBatch
-bn => runReactions
-i => finalDispatch
- -->
 
 See also:
 
