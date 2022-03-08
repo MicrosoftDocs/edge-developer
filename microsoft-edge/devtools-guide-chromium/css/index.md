@@ -40,7 +40,7 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 
 1. In the `Inspect Me!` element, find the value of the `data-message` attribute and copy it.
 
-1. On the page, in the **Value of `data-message`:** textbox, enter the value.
+1. On the page, in the **Value of `data-message`:** text box, enter the value.
 
 1. Right-click the `Inspect Me!` text, and then select **Inspect**.
 
@@ -52,7 +52,7 @@ Follow these interactive tutorial sections to learn the basics of viewing and ch
 
    :::image type="content" source="../media/css-elements-inspect-me-styles.msft.png" alt-text="CSS classes is applied to the inspected element are highlighted in the Styles panel." lightbox="../media/css-elements-inspect-me-styles.msft.png":::
 
-1. On the page, in the **Value of `padding`:** textbox, enter the value.
+1. On the page, in the **Value of `padding`:** text box, enter the value.
 
 
 <!-- ====================================================================== -->

@@ -34,7 +34,7 @@ To enable the File Handling feature:
 <!-- ====================================================================== -->
 ## Define which files your app handles
 
-The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](./web-app-manifests.md), using the `file_handlers` array member.
+The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](web-app-manifests.md), using the `file_handlers` array member.
 
 Each entry in the `file_handlers` array needs to have two properties:
 

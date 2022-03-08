@@ -1,5 +1,5 @@
 ---
-title: Manage WebView2 applications
+title: Enterprise management of WebView2 Runtimes
 description: How IT admins can manage WebView2 applications and the WebView2 Runtime.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,8 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 11/12/2021
 ---
-# Manage WebView2 applications
+# Enterprise management of WebView2 Runtimes
+<!-- old title: # Manage WebView2 applications -->
 
 [WebView2](../index.md) is a component that developers use to build their applications, and the developers can deploy a self-updating Evergreen WebView2 Runtime onto user devices to power their applications.  This article discusses how IT admins can manage WebView2 applications and the WebView2 Runtime.  
 
@@ -52,6 +53,7 @@ Applying browser policies on WebView2 would have unintended consequences.  For e
 WebView2 options in Configuration Manager exist under the Microsoft Edge Management node. For more information, visit [Update Microsoft Edge](/mem/configmgr/apps/deploy-use/deploy-edge).
 
 
+<!-- ====================================================================== -->
 ## See also
 
-*  [Distribute a WebView2 app and the WebView2 Runtime](./distribution.md) - About the Evergreen, self-updating WebView2 Runtime.
+* [Distribute your app and the WebView2 Runtime](distribution.md) - About the Evergreen, self-updating WebView2 Runtime.

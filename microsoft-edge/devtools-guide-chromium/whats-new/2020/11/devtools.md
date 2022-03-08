@@ -144,7 +144,7 @@ Debug network requests that run through service workers.  You can also open netw
 
 In previous versions of Microsoft Edge, the level of depth in the call stack was limited to the JavaScript code in your service worker.  In Microsoft Edge 88, the call stack now displays the initiator of requests that run through your service worker.
 
-To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures starts with the JavaScript code in your service worker and displays a reference to the original webpage request as `(index):157`.  In the second figure, the reference is chosen and opened the initiator that made the request.  The initiator in the second figure is the webpage.
+To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures starts with the JavaScript code in your service worker and displays a reference to the original webpage request as `(index):157`.  In the second figure, the reference is selected, and has opened the initiator that made the request.  The initiator in the second figure is the webpage.
 
 The `service-worker.js` file and call stack highlighting the request originator:
 
@@ -166,7 +166,7 @@ In the **Network** tool, copy the property value of a network request using the 
 *  Highlight the entire text and copy it.
 *  Store the value as global variable, as applicable, and copy it from the DevTools [Console](../../../console/index.md).
 
-To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard).  To review the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
+To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard).  For the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
 
 Copying a property value in DevTools:
 
@@ -272,7 +272,7 @@ The details are displayed about which frame caused the opening of another `Windo
 1. Click an opened window to open the `Window` details.
 1. Click the **Opener Frame** link.
 
-To review the history of this feature in the Chromium open-source project, see Issue [1107766](https://crbug.com/1107766).
+For the history of this feature in the Chromium open-source project, see Issue [1107766](https://crbug.com/1107766).
 
 :::image type="content" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="Opened frame details." lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
 
@@ -280,7 +280,7 @@ To review the history of this feature in the Chromium open-source project, see I
 
 To copy the stacktrace to your clipboard, right-click the stacktrace, and then select **Copy** > **Copy stacktrace**.
 
-To review the history of this feature in the Chromium open-source project, see Issue [1139615](https://crbug.com/1139615).
+For the history of this feature in the Chromium open-source project, see Issue [1139615](https://crbug.com/1139615).
 
 :::image type="content" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="Copy stacktrace." lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
 
@@ -297,7 +297,7 @@ DevTools now consistently use `kB` for displaying sizes of files and memory.  Pr
 *  `kB` or kilobyte (10^3 or 1000 bytes)
 *  `KiB` or kibibyte (2^10 or 1024 bytes)
 
-For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.  To review the history of this feature in the Chromium open-source project, see Issue [1035309](https://crbug.com/1035309).
+For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.  For the history of this feature in the Chromium open-source project, see Issue [1035309](https://crbug.com/1035309).
 
 
 <!-- ====================================================================== -->

@@ -1,5 +1,5 @@
 ---
-title: Statically link the WebView2 loader library
+title: Distribute a WebView2 app as a single executable file
 description: How to statically link the WebView2 loader library.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,7 +8,8 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 05/06/2021
 ---
-# Statically link the WebView2 loader library
+# Distribute a WebView2 app as a single executable file
+<!-- old title: Statically link the WebView2 loader library -->
 
 You may want to distribute your application with a single executable file, instead of a package of many files.  To create a single executable file, or to reduce the size of your package, you should statically link the WebView2Loader files.  The WebView2 SDK contains a header file, `WebView2Loader.dll`, and the `IDL` file. `WebView2Loader.dll` is a small component that helps apps locate the WebView2 Runtime, or Microsoft Edge preview channels, on the device.
 

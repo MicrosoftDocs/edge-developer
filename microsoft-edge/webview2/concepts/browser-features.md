@@ -1,5 +1,5 @@
 ---
-title: Feature differences between Microsoft Edge and WebView2
+title: Differences between Microsoft Edge and WebView2
 description: Feature differences between Microsoft Edge and WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -9,7 +9,8 @@ ms.technology: webview
 no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
 ms.date: 09/21/2021
 ---
-# Feature differences between Microsoft Edge and WebView2
+# Differences between Microsoft Edge and WebView2
+<!-- old title: # Differences between Microsoft Edge and WebView2 -->
 
 WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.
 

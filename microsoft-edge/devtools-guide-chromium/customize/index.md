@@ -80,7 +80,7 @@ To close a tool, select the **Close** (![Close Tool.](../media/close-tab-icon.pn
 <!-- ====================================================================== -->
 ## Change DevTools placement
 
-See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](./placement.md).
+See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
 
 :::image type="content" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools." lightbox="../media/customize-dev-tools-dock-side.msft.png":::
 
@@ -88,7 +88,7 @@ See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](./placeme
 <!-- ====================================================================== -->
 ## Color themes
 
-See [Apply a color theme to DevTools](./theme.md).
+See [Apply a color theme to DevTools](theme.md).
 
 :::image type="content" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme." lightbox="./media/customize-theme-setting.png":::
 

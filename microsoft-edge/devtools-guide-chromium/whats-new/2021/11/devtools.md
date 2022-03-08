@@ -99,7 +99,7 @@ From the infobar, you can learn more about the issue by selecting the **Open in 
 
 :::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="Screenshot of the Issues tool in the Drawer, displaying the issue as 'Source map not found', along with information on how to resolve this issue.":::
 
-To prevent the infobar about sourcemaps from cluttering the **Sources** tool, select the **Don't show again** button.  To prevent issues related to sourcemaps from cluttering the **Issues** tool, clear the **Include third-party issues** checkbox in the **Issues** tool.  To learn more about how DevTools fetches and parses sourcemaps, see [Map preprocessed code to source code](../../../javascript/source-maps.md).
+To prevent the infobar about sourcemaps from cluttering the **Sources** tool, select the **Don't show again** button.  To prevent issues related to sourcemaps from cluttering the **Issues** tool, clear the **Include third-party issues** checkbox in the **Issues** tool.  To learn more about how DevTools fetches and parses sourcemaps, see [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md).
 
 
 <!-- ====================================================================== -->
@@ -146,7 +146,7 @@ In Microsoft Edge version 96, this issue has been fixed.  Selecting the triangle
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page for announcements from the Chromium project is [What's New In DevTools (Chrome 96)](https://developer.chrome.com/blog/new-in-devtools-96) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
+> The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 96)](https://developer.chrome.com/blog/new-in-devtools-96) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
 
 [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

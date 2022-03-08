@@ -36,7 +36,7 @@ To check the demo page for accessibility issues by using a keyboard rather than 
 
    :::image type="content" source="../media/a11y-testing-lack-of-focus-style.msft.png" alt-text="A lack of focus style makes it impossible to know where you currently are in the document. The only hint is the display of the link target in the bottom left corner of the screen." lightbox="../media/a11y-testing-lack-of-focus-style.msft.png":::
 
-1. Press `Tab` again, to get to the entry field in the donation form.  However, you can't reach the buttons above the textbox by selecting `Tab`. You can't use the keyboard to put focus on the **50**, **100**, or **200** buttons and then select them.  Also, selecting `Enter` doesn't submit the donation form.
+1. Press `Tab` again, to get to the entry field in the donation form.  However, you can't reach the buttons above the text box by selecting `Tab`. You can't use the keyboard to put focus on the **50**, **100**, or **200** buttons and then select them.  Also, selecting `Enter` doesn't submit the donation form.
 
    :::image type="content" source="../media/a11y-testing-form-field-with-outline.msft.png" alt-text="The only keyboard-accessible element in the donation form is the text entry field." lightbox="../media/a11y-testing-form-field-with-outline.msft.png":::
 

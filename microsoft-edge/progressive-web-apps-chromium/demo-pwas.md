@@ -21,9 +21,9 @@ An intelligent whiteboarding app.
 
 Features:
 
-*  [Shortcuts](./how-to/shortcuts.md)
-*  [Web Share](./how-to/share.md#sharing-content)
-*  [Share Target](./how-to/share.md#receiving-shared-content)
+*  [Shortcuts](how-to/shortcuts.md)
+*  [Web Share](how-to/share.md#sharing-content)
+*  [Share Target](how-to/share.md#receiving-shared-content)
 
 :::image type="content" source="./media/webboard.png" alt-text="Webboard is a Progressive Web App for drawing and intelligent whiteboarding.":::
 
@@ -37,11 +37,11 @@ Displays a list of tips and tricks for DevTools.
 
 Features:
 
-*  [Web Share](./how-to/share.md#sharing-content)
-*  [URL handling](./how-to/handle-urls.md)
-*  [Background sync](./how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
-*  [Periodic background sync](./how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
-*  [Notifications](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
+*  [Web Share](how-to/share.md#sharing-content)
+*  [URL handling](how-to/handle-urls.md)
+*  [Background sync](how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
+*  [Periodic background sync](how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
+*  [Notifications](how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
 :::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips Progressive Web App displays a list of tips and tricks for DevTools.":::
 
@@ -55,10 +55,10 @@ A Progressive Web App for visualizing GPS tracks.
 
 Features:
 
-*  [Window Controls Overlay](./how-to/window-controls-overlay.md)
-*  [Protocol handling](./how-to/handle-protocols.md)
-*  [Shortcuts](./how-to/shortcuts.md)
-*  [File handling](./how-to/handle-files.md)
+*  [Window Controls Overlay](how-to/window-controls-overlay.md)
+*  [Protocol handling](how-to/handle-protocols.md)
+*  [Shortcuts](how-to/shortcuts.md)
+*  [File handling](how-to/handle-files.md)
 
 :::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app.":::
 
@@ -72,8 +72,8 @@ A Progressive Web App to search and store movies.
 
 Features:
 
-*  [Background sync](./how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
-*  [Notifications](./how-to/notifications-badges.md#display-notifications-in-the-action-center)
+*  [Background sync](how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
+*  [Notifications](how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
 :::image type="content" source="./media/my-movies.png" alt-text="The My Movies app.":::
 
@@ -87,11 +87,11 @@ A real-time beats-per-minute (BPM) counter.
 
 Features:
 
-*  [Shortcuts](./how-to/shortcuts.md)
-*  [URL handling](./how-to/handle-urls.md)
-*  [File handling](./how-to/handle-files.md)
-*  [Protocol handling](./how-to/handle-protocols.md)
-*  [Share Target](./how-to/share.md#receiving-shared-content)
+*  [Shortcuts](how-to/shortcuts.md)
+*  [URL handling](how-to/handle-urls.md)
+*  [File handling](how-to/handle-files.md)
+*  [Protocol handling](how-to/handle-protocols.md)
+*  [Share Target](how-to/share.md#receiving-shared-content)
 
 :::image type="content" source="./media/bpm-techno.png" alt-text="The BPM Techno app.":::
 
@@ -105,6 +105,6 @@ A CSS playground.
 
 Features:
 
-*  [Window Controls Overlay](./how-to/window-controls-overlay.md)
+*  [Window Controls Overlay](how-to/window-controls-overlay.md)
 
 :::image type="content" source="./media/1div-demo.png" alt-text="The 1DIV app.":::
