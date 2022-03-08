@@ -488,7 +488,11 @@ Use the WinRT [CoreWebView2Environment.UserDataFolder Property](https://docs.mic
 **Sample code:**
 
 ```csharp
-// todo: Dev to provide now - doesn't exist in sample repo at this time
+private void OnGetUDFClick(object sender, RoutedEventArgs e)
+{
+    // This property can be used after WebView2 creation to find the actual location of the User Data Folder
+    UserDataFolder.Text = WebView2.CoreWebView2.Environment.UserDataFolder;
+}
 ```
 
 For examples of reading the `UserDataFolder` property, see the WinUI 2 (UWP) samples in the [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp).
@@ -505,7 +509,11 @@ Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.micr
 **Sample code:**
 
 ```csharp
-// todo: Dev to provide now - doesn't exist in sample repo at this time
+private void OnGetUDFClick(object sender, RoutedEventArgs e)
+{
+    // This property can be used after WebView2 creation to find the actual location of the User Data Folder
+    UserDataFolder.Text = WebView2.CoreWebView2.Environment.UserDataFolder;
+}
 ```
 
 For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2_WinUI3_Sample).
