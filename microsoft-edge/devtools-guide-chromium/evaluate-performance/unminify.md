@@ -65,7 +65,7 @@ For details, see [Map the processed code to your original source code, for debug
 
 1. In the **Performance** tool, click in the main area (the flame chart), and use the mouse wheel to zoom in.  Click and drag left and right.  Look at the function names in the flame chart.  Select a small section of the profile and look at the flame chart.  Note the timestamp range.
 
-   The minified flame chart in the **Performance** tool shows terse function names, such as **b**, **O**, **Xt**, **bn**, **n**, **i**, or **Yn**:
+   The minified flame chart in the **Performance** tool shows terse function names, such as **XI**, **Gi**, **d**, **o**, **an**, **c**, **co**, and **a**:
 
    ![The minified flame chart in the performance profile.](images/minified-perf-profile.msft.png)
 
@@ -89,13 +89,13 @@ For details, see [Map the processed code to your original source code, for debug
 
 1. In the **Performance** tool, click the **Load profile** (![The 'Load profile` icon button in the Performance tool.](images/load-profile-icon.png)) icon button.  Or, right-click a blank area of the **Performance** tool, and then select **Load profile**.
 
-1.  In the **Open** dialog box, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
-
    ![Load Profile.](../media/evaluate-performance-performance-refreshed-disable-javascript-samples-checkbox-off-load-profile.msft.png)
+
+1.  In the **Open** dialog box, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
 
 1. Select the same section (timestamp range) of the profile you looked at in the first image.
 
-   Some function names are now unminified.  The unminified flame chart in the **Performance** tool now shows those functions labeled with meaningful names: **invokeFunc (b)**, **executeAction (O)**, **endBatch (Xt)**, **runReactions (bn)**, or **finalDispatch (i)**.  For example, compare the minified flame chart and the unminified flame chart of a recorded performance profile in the following images.  Some of the production function names have been replaced with (prepended by) source-mapped function names:
+   Some function names are now unminified.  The unminified flame chart in the **Performance** tool now shows those functions labeled with more meaningful names taken from your source maps, such as **gg (XI)**, **oh (Gi)**, **useObserver (d)**, **useQueuedForceUpdateBlock (o)**, **trackDerivedFunction (an)**, **initializeIconColorMap (c)**, **getExtraToolControls (co)**, and **isToggleEnabled (a)**.  For example, compare the minified flame chart and the unminified flame chart of a recorded performance profile in the following images.  Some of the production function names have been replaced with (prepended by) source-mapped function names:
 
    ![The unminified flame chart in the performance profile.](images/unminified-perf-profile.msft.png)
 
