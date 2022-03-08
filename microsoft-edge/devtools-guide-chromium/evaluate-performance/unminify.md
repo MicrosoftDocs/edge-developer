@@ -36,13 +36,11 @@ When recording a performance profile in the **Performance** tool, the **Main** s
 Ideally, in this flame chart view, you want to see the meaningful function names that are shown in your original source code.  However, if your production code is compiled, minified, or bundled, the **Performance** tool initially displays the function names that are extracted from your transformed, _production_ code.  These production function names might be obscure and might not easily map to function names in your original source code.
 
 
-<!-- ====================================================================== -->
-## How to display original function names in a performance profile
-
 To unminify a performance profile, so that some more meaningful function names are shown in addition to the minified identifiers, follow the steps below.
 
 
-### Step 1 - Set up source maps
+<!-- ====================================================================== -->
+## Step 1 - Set up source maps
 
 *  Set up source maps, to host your source maps in addition to your production code.  Host your source maps where the **Performance** tool can find them.
 <!-- todo: explain where to host source maps-->
@@ -56,7 +54,8 @@ x
 For details, see [Map the processed code to your original source code, for debugging](/microsoft-edge/devtools-guide-chromium/javascript/source-maps).
 
 
-### Step 2 - Record a performance profile
+<!-- ====================================================================== -->
+## Step 2 - Record a performance profile
 
 1. In the **Performance** tool, click the **Record** button, to record a performance profile for the page you want to analyze.  For details, see [Record runtime performance](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference).
 
@@ -71,7 +70,8 @@ For details, see [Map the processed code to your original source code, for debug
    ![The minified flame chart in the performance profile.](images/minified-perf-profile.msft.png)
 
 
-### Step 3 - Unminify the code
+<!-- ====================================================================== -->
+## Step 3 - Unminify the code
 
 1. Click the **Unminify** (![The Unminify button icon.](images/unminify-icon.png)) button:
 
@@ -84,7 +84,8 @@ For details, see [Map the processed code to your original source code, for debug
    The **Performance** tool creates a new version of the recorded performance profile, with some function names from the flame chart replaced by more meaningful function names by using your source maps.  Some of the minified production names might still appear, because source maps don't always provide the necessary information for the **Performance** tool to map all function names.
 
 
-### Step 4 - Load the unminified profile
+<!-- ====================================================================== -->
+## Step 4 - Load the unminified profile
 
 1. In the **Performance** tool, click the **Load profile** (![The 'Load profile` icon button in the Performance tool.](images/load-profile-icon.png)) icon button.  Or, right-click a blank area of the **Performance** tool, and then select **Load profile**.
 
