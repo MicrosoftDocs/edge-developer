@@ -470,6 +470,11 @@
                 - name: Timeline event reference
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
+
+                - name: Display original function names in performance profiles
+                  href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
@@ -1195,6 +1200,8 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+            - name: Contact the Microsoft Edge Driver team
+              href: webdriver-chromium/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
