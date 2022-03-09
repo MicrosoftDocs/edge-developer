@@ -17,9 +17,9 @@ This article describes features launched on [Partner Center](https://partner.mic
 For more information about updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
 
 <!-- ====================================================================== -->
-## Edge extensions developer portal
+## Microsoft Edge extensions developer portal
 
-The new edition of the developer portal contains all relevant resources and documentations for Edge extensions. You can check it [here](https://aka.ms/MSEADeveloper).
+The new edition of the developer portal contains all relevant resources and documentations for Microsoft Edge extensions. You can check [Microsoft Edge Add-ons Developer](https://aka.ms/MSEADeveloper).
 
 *Released January 2022*
 
@@ -33,14 +33,14 @@ The Extensions Analytics Dashboard enables extension developers to view their ex
 <!-- ====================================================================== -->
 ## Add team members to your Partner Center account
 
-Developers can add members from their organization and manage the settings on their Partner Center Account. You can read more [here](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/aad-account).
+Developers can add members from their organization and manage the settings on their Partner Center Account. You can read more at [Add users to the Microsoft Edge program](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/publish/aad-account).
 
 *Released August 2021*
 
 <!-- ====================================================================== -->
 ## Sign into Microsoft Partner Center usinhg your GitHub account
 
-Developers can use their personal GitHub account credentials to sign into Microsoft Partner Center to submit your Edge Extension. You can read more [here](https://aka.ms/EdgeDevSignInGitHub).
+Developers can use their personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension. You can read more at [Publish Microsoft Edge extensions by using a GitHub account](https://aka.ms/EdgeDevSignInGitHub).
 
 *Released August 2021*
 
@@ -68,7 +68,7 @@ Developers can request the Collection on which the extension should be featured 
 <!-- ====================================================================== -->
 ## Extension store listing localization
 
-Developers can choose a subset of languages instead of manually entering each language in the listing details on Partner Center & the ability to use the same marketing assets across all marketplaces. Check out [the blog](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981) for more details.
+Developers can choose a subset of languages instead of manually entering each language in the listing details on Microsoft Partner Center and the ability to use the same marketing assets across all marketplaces. Check out the blog [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981) for more details.
 
 *Released February 2021*
 
