@@ -1200,6 +1200,8 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+            - name: Contact the Microsoft Edge Driver team
+              href: webdriver-chromium/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
