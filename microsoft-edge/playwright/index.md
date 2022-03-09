@@ -66,7 +66,7 @@ For more information about running tests, see [Playwright > Getting started](htt
 <!-- ====================================================================== -->
 ## Run tests in Microsoft Edge
 
-To run your tests in Microsoft Edge, you need to create a config file for Playwright Test, such as `playwright.config.ts`.  Inside the config file, create one project, using the Beta channel of Microsoft Edge. (Currently, there isn't a Stable channel of Microsoft Edge for Linux.)
+To run your tests in Microsoft Edge, you need to create a config file for Playwright Test, such as `playwright.config.ts`.  Inside the config file, create one project, using Microsoft Edge.
 
 ```typescript
 // playwright.config.ts
@@ -78,7 +78,7 @@ const config: PlaywrightTestConfig = {
       name: 'Microsoft Edge',
       use: {
         // Supported Microsoft Edge channels are: msedge, msedge-beta, msedge-dev, msedge-canary
-        channel: 'msedge-beta',
+        channel: 'msedge',
       },
     },
   ],
@@ -87,10 +87,10 @@ const config: PlaywrightTestConfig = {
 export default config
 ```
 
-If Microsoft Edge Beta isn't already installed on your system, install it through Playwright, as follows:
+If Microsoft Edge isn't already installed on your system, install it through Playwright, as follows:
 
 ```console
-npx playwright install msedge-beta
+npx playwright install msedge
 ```
 
 When using the above `playwright.config.ts` file, Playwright Test uses Microsoft Edge to run your tests, as follows:
@@ -111,7 +111,7 @@ const playwright = require('playwright');
 
 (async () => {
   const browser = await playwright.chromium.launch({
-    channel: 'msedge-beta',
+    channel: 'msedge',
   });
   const context = await browser.newContext();
   const page = await context.newPage();

@@ -474,6 +474,11 @@
                 - name: Timeline event reference
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
+
+                - name: Display original function names in performance profiles
+                  href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
@@ -1012,9 +1017,9 @@
                   href: webview2/how-to/javascript.md
                   displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-                # - name: Call native-side code from web-side code
-                #   href: webview2/how-to/add-host-object-to-script.md
-                #   displayName: AddHostObjectToScript API
+                - name: Call native-side code from web-side code
+                  href: webview2/how-to/hostobject.md
+                  displayName: AddHostObjectToScript, host objects
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
@@ -1199,6 +1204,8 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+            - name: Contact the Microsoft Edge Driver team
+              href: webdriver-chromium/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
