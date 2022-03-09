@@ -48,7 +48,7 @@ To generate a PAT in Azure DevOps:
 
    ![The 'Create a new personal access token' dialog box, with 'Read' scope for Symbols selected.](images/ado-pat-config-read.png)
 
-1. In the **Name** text box, enter a name for the PAT, such as **DevTools source maps**.
+1. In the **Name** text box, enter a name for the PAT, such as "devtool source maps".
 
 1. In the **Expiration** section, enter an expiration date for the PAT.
 
