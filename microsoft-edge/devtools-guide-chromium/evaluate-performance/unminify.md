@@ -81,7 +81,7 @@ For details, see [Map the processed code to your original source code, for debug
 1. In the **Open** dialog box, select the unminified performance profile `.json` file that you just downloaded.  If needed, for details, see [Load a recording](/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference#load-a-recording) in _Performance features reference_, and then continue below.
 
 
-   Some function names are now unminified.  The unminified flame chart in the **Performance** tool now shows those functions labeled with more meaningful names taken from your source maps, such as **gg (XI)**, **oh (Gi)**, **useObserver (d)**, **useQueuedForceUpdateBlock (o)**, **trackDerivedFunction (an)**, **initializeIconColorMap (c)**, **getExtraToolControls (co)**, and **isToggleEnabled (a)**.
+   Some function names are now unminified.  The unminified flame chart in the **Performance** tool now shows those functions labeled with more meaningful names taken from your source maps, such as **useObserver (d)**, **useQueuedForceUpdateBlock (o)**, **trackDerivedFunction (an)**, **initializeIconColorMap (c)**, **getExtraToolControls (co)**, and **isToggleEnabled (a)**.
 
    For example, compare the minified flame chart and the unminified flame chart of a recorded performance profile in the following images.  Some of the production function names have been replaced with (prepended by) source-mapped function names:
 
