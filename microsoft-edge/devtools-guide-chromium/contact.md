@@ -14,22 +14,22 @@ Send your feedback to help improve Microsoft Edge DevTools.  Contact the Microso
 
 There are several ways to get in touch with the Microsoft Edge DevTools team:
 
-* Using the **Send feedback** window to quickly report bugs while using DevTools.
-* Using the **DevTools** repo to submit feature requests, questions, and have longer conversations with the team.
-* Using **The Web We Want** initiative to submit cross-browser suggestions.
-* Using the **edge-developer** repo to submit documentation issues.
+* To quickly report bugs from DevTools, use the **Send feedback** window.
+* To submit feature requests, questions, and have longer conversations with the team, use the **DevTools** repo.
+* To submit cross-browser suggestions, use **The Web Web Want** initiative.
+* To submit documentation issues, use the **edge-developer** repo.
 
 
 <!-- ====================================================================== -->
 ## Use the Send feedback window
 
-To report a bug or a feature request while you are using DevTools, click the **Send feedback** icon or press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS).  This approach creates a tracked issue for the Microsoft Edge development team.
+To report a bug or request a feature while you are using DevTools:
 
-![Screenshot of Microsoft Edge, with DevTools open, and the Send feedback icon in DevTools' toolbar](media/devtools-send-feedback.png)
+1. Click the **Send feedback** icon (or press `Alt`+`Shift`+`I` on Windows and Linux or `Option`+`Shift`+`I` on macOS) to open the **Send feedback** window.
+1. In the **Send feedback** window, describe your bug or feature request. You can also attach a screenshot to help the team understand the problem better and add your email address so we can follow-up with you.
+1. Press **Send** to create a tracked issue for the Microsoft Edge development team.
 
-Clicking the **Send feedback** icon opens a **Send feedback** window which you can use to describe the bug you found or the feature request you have.
-
-![Screenshot of the Send feedback window, which appeared above Microsoft Edge](media/devtools-send-feedback-window.png)
+![Screenshot of the Send feedback button and Send feedback window in Microsoft Edge DevTools](media/devtools-send-feedback-window.png)
 
 
 <!-- ====================================================================== -->
@@ -39,7 +39,7 @@ To have longer discussions with the DevTools team and community about bugs or fe
 
 You can [create a new issue](https://github.com/MicrosoftEdge/DevTools/issues/new/choose) on the repo or [search for existing issues](https://github.com/MicrosoftEdge/DevTools/issues) and join conversations.
 
-Using the DevTools repo is useful to have longer conversations, especially when you need more than report a bug. On the repo, you can share ideas and tips with others, explain your workflows and use cases in details with the team, and generally have more meaningful interactions with the community.
+Using the DevTools repo is useful to have longer conversations, especially when you need to do more than report a bug. In the repo, you can share ideas and tips with others, explain your workflows and use cases in detail with the team, and generally have more meaningful interactions with the community.
 
 
 <!-- ====================================================================== -->
