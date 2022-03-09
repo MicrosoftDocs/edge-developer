@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/24/2021
+ms.date: 3/9/2022
 ---
 # Microsoft Edge Add-ons released features
 
@@ -19,7 +19,7 @@ For more information about updates and feature releases, see [Microsoft Edge Add
 <!-- ====================================================================== -->
 ## Microsoft Edge extensions developer portal
 
-The new edition of the developer portal contains all relevant resources and documentations for Microsoft Edge extensions. You can check [Microsoft Edge Add-ons Developer](https://aka.ms/MSEADeveloper).
+The new edition of the developer portal contains all relevant resources and documentations for Microsoft Edge extensions. Check out the latest changes at [Microsoft Edge Add-ons Developer](https://aka.ms/MSEADeveloper).
 
 *Released January 2022*
 
@@ -61,7 +61,7 @@ Microsoft Edge Add-ons now support extensions with Manifest V3. Check out [the b
 <!-- ====================================================================== -->
 ## Request to get your extension featured
 
-Developers can request the Collection on which the extension should be featured on the Microsoft Edge Add-ons store. You can submit your request [here](https://aka.ms/MSEACollections).
+Developers can request the Collection on which the extension should be featured on the Microsoft Edge Add-ons store. You can submit your request at [Submit a request to add an extension to the collections on the Microsoft Edge Add-ons home page](https://aka.ms/MSEACollections).
 
 *Released April 2021*
 
