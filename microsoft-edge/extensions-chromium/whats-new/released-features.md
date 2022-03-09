@@ -19,7 +19,7 @@ For more information about updates and feature releases, see [Microsoft Edge Add
 <!-- ====================================================================== -->
 ## Microsoft Edge extensions developer portal
 
-The new edition of the developer portal contains all relevant resources and documentations for Microsoft Edge extensions. Check out the latest changes at [Microsoft Edge Add-ons Developer](https://aka.ms/MSEADeveloper).
+The new edition of the developer portal contains all relevant resources and documentation for Microsoft Edge extensions. Check out the latest changes at [Microsoft Edge Add-ons Developer](https://aka.ms/MSEADeveloper).
 
 *Released January 2022*
 
@@ -38,7 +38,7 @@ Developers can add members from their organization and manage the settings on th
 *Released August 2021*
 
 <!-- ====================================================================== -->
-## Sign into Microsoft Partner Center usinhg your GitHub account
+## Sign into Microsoft Partner Center using your GitHub account
 
 Developers can use their personal GitHub account credentials to sign into Microsoft Partner Center to submit your Microsoft Edge Extension. You can read more at [Publish Microsoft Edge extensions by using a GitHub account](https://aka.ms/EdgeDevSignInGitHub).
 
