@@ -5,13 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/04/2022
+ms.date: 03/09/2022
 ---
 # What's New in DevTools (Microsoft Edge 99)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of DevTools and the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
+The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, read these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
 
 If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
+
+To report a problem with DevTools or ask for a new feature, file an issue at the new [Microsoft Edge DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools).
 
 
 <!-- ====================================================================== -->
@@ -25,7 +27,7 @@ Azure Artifacts Symbol Server now supports storing the source maps that your bui
 By using source maps, you can see and debug your original source code in DevTools, rather than having to work with the compiled, minified, and bundled production code that's returned by your server.  Hosting your source maps on the Azure Artifacts Symbol Server allows you to see and work with your source code securely and privately, instead of placing your source maps on your server and revealing your original code publicly.
 
 To try this feature:
-1. Publish your source maps to Azure Artifacts Symbol Server.
+1. [Publish your source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md).
 1. Open DevTools > **Settings** > **Symbol Server** and connect DevTools to Azure Artifacts Symbol Server, by entering your Azure DevOps organization and personal access token.
 
 ![The 'Symbol Server' page in DevTools Settings, where you enter your Azure DevOps personal access token.](../../media/2022/03/ado-pat-devtools.png)
@@ -56,7 +58,7 @@ Edge DevTools for Visual Studio opens, with the **Elements** tool selected:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Elements tool of DevTools.](../../media/2022/03/devtools-extension-visual-studio-elements.png)
 
-The **Network** tool is also open by default:
+The **Network** tool is also available by default:
 
 ![Microsoft Edge Developer Tools for Visual Studio: Network tool of DevTools.](../../media/2022/03/devtools-extension-visual-studio-network.png)
 
