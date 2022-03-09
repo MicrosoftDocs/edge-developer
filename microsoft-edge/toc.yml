@@ -990,6 +990,10 @@
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
+            - name: Basic authentication
+              href: webview2/concepts/basic-authentication.md
+              displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
+
             - name: Web and native interop
               items:
                 - name: Interop of native-side and web-side code
@@ -1007,10 +1011,6 @@
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
-
-            - name: Basic authentication
-              href: webview2/concepts/basic-authentication.md
-              displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
 
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md

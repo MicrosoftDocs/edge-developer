@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 ---
 # Basic authentication for WebView2 apps
 
@@ -50,6 +50,8 @@ The basic authentication event happens in the middle of the sequence of events:
 1. `BasicAuthenticationRequested`
 1. `DOMContentLoaded`
 1. `NavigationCompleted` - navigation event
+
+For more information, see [Navigation events for WebView2 apps](navigation-events.md).
 
 
 <!-- ====================================================================== -->
