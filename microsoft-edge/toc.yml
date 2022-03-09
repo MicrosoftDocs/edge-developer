@@ -470,6 +470,11 @@
                 - name: Timeline event reference
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
+
+                - name: Display original function names in performance profiles
+                  href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
