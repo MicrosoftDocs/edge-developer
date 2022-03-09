@@ -39,7 +39,7 @@ To have longer discussions with the DevTools team and community about bugs or fe
 
 You can [create a new issue](https://github.com/MicrosoftEdge/DevTools/issues/new/choose) on the repo or [search for existing issues](https://github.com/MicrosoftEdge/DevTools/issues) and join conversations.
 
-Using the DevTools repo is useful to have longer conversations, especially when you need to do more than report a bug. In the repo, you can share ideas and tips with others, explain your workflows and use cases in detail with the team, and generally have more meaningful interactions with the community.
+Use the DevTools repo to have longer conversations, especially when you need to do more than report a bug. In the repo, you can share ideas and tips with others, explain your workflows and use cases in detail with the team, and generally have more meaningful interactions with the community.
 
 
 <!-- ====================================================================== -->
