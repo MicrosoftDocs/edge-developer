@@ -16,7 +16,7 @@ There are several ways to get in touch with the Microsoft Edge DevTools team:
 
 * To quickly report bugs from DevTools, use the **Send feedback** window.
 * To submit feature requests, questions, and have longer conversations with the team, use the **DevTools** repo.
-* To submit cross-browser suggestions, use **The Web Web Want** initiative.
+* To submit cross-browser suggestions, use the **Web Web Want** initiative.
 * To submit documentation issues, use the **edge-developer** repo.
 
 
