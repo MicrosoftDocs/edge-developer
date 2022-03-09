@@ -36,7 +36,7 @@ To unminify a performance profile, so that some more meaningful function names a
 <!-- ====================================================================== -->
 ## Step 1 - Set up source maps
 
-Set up source maps, to host your source maps in addition to your production code.  Host your source maps where the **Performance** tool can find them.
+Host your source maps side-by-side with your production code. When unminifying, the **Performance** tool expects to find your source maps along with your production code.
 
 For details, see [Map the processed code to your original source code, for debugging](/microsoft-edge/devtools-guide-chromium/javascript/source-maps).
 
