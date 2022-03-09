@@ -50,7 +50,7 @@ For details, see [Map the processed code to your original source code, for debug
 
    A performance profile is recorded, in the **Performance** tool.
 
-1. In the **Performance** tool, click in the main area (the flame chart), and use the mouse wheel to zoom in.  Click and drag left and right.  Look at the function names in the flame chart.  Select a small section of the profile and look at the flame chart.  Note the timestamp range.
+1. In the **Performance** tool, click in the main area (the flame chart), and use the mouse wheel to zoom in.  Click and drag left and right.  Look at the function names in the flame chart.
 
    The minified flame chart in the **Performance** tool shows terse function names, such as **XI**, **Gi**, **d**, **o**, **an**, **c**, **co**, and **a**:
 
