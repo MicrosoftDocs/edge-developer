@@ -85,17 +85,14 @@ See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/
 
 
 <!-- ====================================================================== -->
-## Use your source maps to unminify performance profiles
-<!--
-## Use your source maps to display original function names in performance profile flame charts
--->
+## Use your source maps to display original function names in performance profiles
 
 <!-- Title: The Performance tool can now display unminified function names in the flame chart -->
 <!-- Subtitle: Use the new Unminify button in the Performance tool to download an unminified version of the performance profile you recorded. -->
 
-Recording a performance profile in the **Performance** tool produces minified function names in the flame chart.  In previous versions of Microsoft Edge, the flame chart didn't use source maps to display your original function names, even if you hosted the source maps on your server.
+Recording a performance profile in the Performance tool produces a minified flame chart.  In previous versions of Microsoft Edge, the flame chart didn't use source maps to display your original function names, even if you hosted the source maps on your server.
 
-Starting in Microsoft Edge version 99, you can display your original function names in performance profile flame charts, as follows:
+Starting in Microsoft Edge version 99, you can display your original function names in a performance profile, as follows:
 1. Record a profile, in the **Performance** tool.
 1. Click the new **Unminify** (![The Unminify icon.](../../media/2022/03/unminify-icon.png)) button to create and download the unminified performance profile.
 1. Load (import) (![The Load profile icon.](../../media/2022/03/load-profile-icon.png)) the unminified performance profile into the **Performance** tool.
