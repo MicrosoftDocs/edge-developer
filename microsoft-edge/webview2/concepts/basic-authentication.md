@@ -71,7 +71,13 @@ For more information, see [Navigation events for WebView2 apps](navigation-event
 
 The following diagram shows the flow of navigation events for basic authentication for WebView2 apps:
 
-![The flow of navigation events for basic authentication for WebView2 apps.](../media/navigation-auth-graph.png)
+<!-- ![The flow of navigation events for basic authentication for WebView2 apps.](../media/navigation-auth-graph.png) -->
+
+![Flow of navigation events for basic authentication for WebView2 apps.](basic-authentication-images/basic-auth-page-nav-flow.png)
+<!-- initial Visio filename: https://microsoft-my.sharepoint.com/ ... "Basic Auth in Page Nav Flow.vsd"
+later, check:  Teams > Team > channel > Files > dir > filename -->
+
+
 <!-- see "Image maintenance notes" below -->
 
 <!-- protect the numbering of steps to match the diagram -->
