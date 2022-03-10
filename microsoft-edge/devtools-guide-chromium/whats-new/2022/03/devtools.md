@@ -76,9 +76,9 @@ See also:
 <!-- Title: Layers in 3D View -->
 <!-- Subtitle: The Layers tool isn't going away - find it in the 3D View tool today. -->
 
-Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in-3d-view), the **3D View** tool has provided an improved version of the **Layers** tool.  Now, in Microsoft Edge 99, the standalone **Layers** tool has been removed, and contains a link that redirects you to the **Composited Layers** view within the **3D View** tool.  You can find all the functionality from the **Layers** tool in the **3D View** tool.
+Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in-3d-view), the **3D View** tool has provided an improved version of the **Layers** tool.  Now, in Microsoft Edge 99, the functionality in the **Layers** tool has been removed, and the **Layers** tool instead contains a link that redirects you to the Composited Layers view within the **3D View** tool.  You can find all the features that were previously in the **Layers** tool, and more, in the **3D View** tool.
 
-![The Layers tool now links to the 3D View tool with the Composited Layers view open.](../../media/2022/03/layers-3d-view-tool.png)
+![The Layers tool now links to the 3D View tool.](../../media/2022/03/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->
 
 See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
