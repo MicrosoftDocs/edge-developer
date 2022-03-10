@@ -31,8 +31,6 @@ Instead of using the default context menu, your host app can draw its own contex
 
 When the user selects a command from your custom context menu, your app needs to tell the WebView2 control which command the user selected, by using the `SelectedCommandId` property.
 
-The following APIs are used to add a custom context menu in the example in the next section.
-
 
 # [C#](#tab/csharp)
 
@@ -343,18 +341,28 @@ void ContextMenu::AddMenuItems(
 <!-- ====================================================================== -->
 ## Adding menu items to a context menu
 
+You can:
+*  Add default menu items to a custom context menu.
+*  Add custom menu items to a default context menu, as shown in an example code listing below.
 
 <!-- -------------------------------------------------- -->
 ### Adding default menu items to a custom context menu
 
-Each menu item is of a specific kind.
+To add default menu items to a custom context menu, use the following API items.
 
+<!-- ------------------------------ -->
 
 # [C#](#tab/csharp)
 
 On a `CoreWebView2.ContextMenuRequested` event, add an event listener that has a `CoreWebView2ContextMenuRequestedEventArgs`.
 
-Iterate through an `IList` of `CoreWebView2ContextMenuItem` items, adding a `CoreWebView2ContextMenuItem` for each menu item.  Test the `.Kind` of each menu item, such as `Separator` or `Command`.
+The `MenuItems` property of `CoreWebView2ContextMenuRequestedEventArgs` provides the tree of the WebView2's context menu items for the right-clicked context.  To include WebView2 context menu items in your app's context menu, iterate through the `IList<CoreWebView2ContextMenuItem>`, adding a `CoreWebView2ContextMenuItem` for each menu item.  Test the `.Kind` of each menu item, such as `Separator` or `Command`.
+
+* **[CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)**
+   * [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
+
+* **[CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)**
+   * [MenuItems Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.menuitems)
 
 * **[CoreWebView2ContextMenuItem Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)**
    * [Kind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.kind)
@@ -363,6 +371,7 @@ Iterate through an `IList` of `CoreWebView2ContextMenuItem` items, adding a `Cor
    * `CoreWebView2ContextMenuItemKind.Command`
    * `CoreWebView2ContextMenuItemKind.Separator`
 
+<!-- ------------------------------ -->
 
 # [C++](#tab/cpp)
 
@@ -387,8 +396,6 @@ Iterate through a list of `ICoreWebView2ContextMenuItem` items, adding an `ICore
 ### Adding custom menu items to a default context menu
 
 To add custom menu items to the default context menu, use the following API items.
-
-The following APIs are used to add custom menu items to a default context menu, in the example in the next section.
 
 
 # [C#](#tab/csharp)
@@ -521,8 +528,6 @@ webview2_4->add_ContextMenuRequested(
 ## Removing menu items from a default context menu
 
 You can remove default or custom menu items from the default context menu.
-
-The following APIs are used to remove menu items from a default context menu, in the example in the next section.
 
 
 # [C#](#tab/csharp)
@@ -770,6 +775,8 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 
 <!-- C# API Ref -->
 
+<!-- ~~ -->
+
 # [C#](#tab/csharp)
 
 * **[WebView2 Class](/dotnet/api/microsoft.web.webview2.wpf.webview2)**
@@ -828,6 +835,8 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 
 <!-- ---------------------------------------------------------------------- -->
 <!-- C++ API Ref -->
+
+<!-- ~~ -->
 
 # [C++](#tab/cpp)
 
