@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ---
 # Customize context menus in WebView2
 
@@ -31,10 +31,16 @@ Instead of using the default context menu, your host app can draw its own contex
 
 When the user selects a command from your custom context menu, your app needs to tell the WebView2 control which command the user selected, by using the `SelectedCommandId` property.
 
+You can add default menu items and/or custom menu items to a custom context menu.
+
 
 # [C#](#tab/csharp)
 
-To display a custom context menu that contains your desired menu items, use the data provided in the `EventArgs` of the `CoreWebView2` [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested).  For this case, you specify `Handled` to be `true`, and request a deferral. 
+To display a custom context menu that contains your desired menu items, use the data provided in the `CoreWebView2ContextMenuRequestedEventArgs` of the `CoreWebView2` [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested).  For this case, you specify `Handled` to be `true`, and request a deferral. 
+
+On a `CoreWebView2.ContextMenuRequested` event, add an event listener that has a `CoreWebView2ContextMenuRequestedEventArgs`.
+
+The `MenuItems` property of `CoreWebView2ContextMenuRequestedEventArgs` provides the tree of the WebView2's context menu items for the right-clicked context.  To include WebView2 context menu items in your app's context menu, iterate through the `IList<CoreWebView2ContextMenuItem>`, adding a `CoreWebView2ContextMenuItem` for each menu item.  Test the `.Kind` of each menu item, such as `Command` or `Separator`.
 
 * **[CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)**
    * [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
@@ -56,6 +62,8 @@ To display a custom context menu that contains your desired menu items, use the 
    * [GetDeferral Method](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.getdeferral)
 
 * **[CoreWebView2ContextMenuItemKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)**
+   * `CoreWebView2ContextMenuItemKind.Command`
+   * `CoreWebView2ContextMenuItemKind.Separator`
 
 * **[CoreWebView2ContextMenuTargetKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenutargetkind)**
 
@@ -73,8 +81,13 @@ To display a custom context menu that contains your desired menu items, use the 
 
 To display a custom context menu that contains your desired menu items, use the data provided in [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs).  For this case, you specify `Handled` to be `true`, and request a deferral. 
 
+On a `ContextMenuRequested` event, add an event listener that has an `ICoreWebView2ContextMenuRequestedEventArgs`.
+
+Iterate through a list of `ICoreWebView2ContextMenuItem` items, adding an `ICoreWebView2ContextMenuItem` for each menu item.  Test the `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND` of each menu item, such as `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR` or `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`.
+
 * **[ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)** (ICoreWebView2Experimental6)
    * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
+   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested)
 
 * **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`)
    * [get_Children](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
@@ -342,56 +355,11 @@ void ContextMenu::AddMenuItems(
 ## Adding menu items to a context menu
 
 You can:
-*  Add default menu items to a custom context menu.
-*  Add custom menu items to a default context menu, as shown in an example code listing below.
 
-<!-- -------------------------------------------------- -->
-### Adding default menu items to a custom context menu
+*  Add default menu items to a custom context menu, as shown above in "Adding a custom context menu".
 
-To add default menu items to a custom context menu, use the following API items.
+*  Add custom menu items to a default context menu, as shown below in "Adding custom menu items to a default context menu".
 
-<!-- ------------------------------ -->
-
-# [C#](#tab/csharp)
-
-On a `CoreWebView2.ContextMenuRequested` event, add an event listener that has a `CoreWebView2ContextMenuRequestedEventArgs`.
-
-The `MenuItems` property of `CoreWebView2ContextMenuRequestedEventArgs` provides the tree of the WebView2's context menu items for the right-clicked context.  To include WebView2 context menu items in your app's context menu, iterate through the `IList<CoreWebView2ContextMenuItem>`, adding a `CoreWebView2ContextMenuItem` for each menu item.  Test the `.Kind` of each menu item, such as `Separator` or `Command`.
-
-* **[CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)**
-   * [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
-
-* **[CoreWebView2ContextMenuRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs)**
-   * [MenuItems Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenurequestedeventargs.menuitems)
-
-* **[CoreWebView2ContextMenuItem Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem)**
-   * [Kind Property](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitem.kind)
-
-* [CoreWebView2ContextMenuItemKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2contextmenuitemkind)
-   * `CoreWebView2ContextMenuItemKind.Command`
-   * `CoreWebView2ContextMenuItemKind.Separator`
-
-<!-- ------------------------------ -->
-
-# [C++](#tab/cpp)
-
-On a `ContextMenuRequested` event, add an event listener that has an `ICoreWebView2ContextMenuRequestedEventArgs`.
-
-Iterate through a list of `ICoreWebView2ContextMenuItem` items, adding an `ICoreWebView2ContextMenuItem` for each menu item.  Test the `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND` of each menu item, such as `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR` or `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`.
-
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`)
-
-* **[ICoreWebView2Experimental6](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)**
-   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
-   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested)
-
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`)
-   * [get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
-
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
-
-
----
 
 ### Adding custom menu items to a default context menu
 
@@ -775,8 +743,6 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 
 <!-- C# API Ref -->
 
-<!-- ~~ -->
-
 # [C#](#tab/csharp)
 
 * **[WebView2 Class](/dotnet/api/microsoft.web.webview2.wpf.webview2)**
@@ -835,8 +801,6 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 
 <!-- ---------------------------------------------------------------------- -->
 <!-- C++ API Ref -->
-
-<!-- ~~ -->
 
 # [C++](#tab/cpp)
 
