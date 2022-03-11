@@ -70,7 +70,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental Features
   
-*	Added [ContextMenuRequested API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease) to enable host app to create or modify own context menu.
+*	Added [ContextMenuRequested API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease) to enable host app to create or modify their own context menu.
 
 
 #### Promotions
