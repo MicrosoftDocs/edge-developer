@@ -36,77 +36,81 @@
               displayName: Experimental features, settings
 
 # What's New pages ------------------------------------------------------------
+            - name: Microsoft Edge 99
+              href: devtools-guide-chromium/whats-new/2022/03/devtools.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 98
               href: devtools-guide-chromium/whats-new/2022/02/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 97
               href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 96
               href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 95
               href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 93
               href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
 # TOOLS =======================================================================
         - name: Tools
@@ -470,6 +474,11 @@
                 - name: Timeline event reference
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
+
+                - name: Display original function names in performance profiles
+                  href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
@@ -1008,9 +1017,9 @@
                   href: webview2/how-to/javascript.md
                   displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-                # - name: Call native-side code from web-side code
-                #   href: webview2/how-to/add-host-object-to-script.md
-                #   displayName: AddHostObjectToScript API
+                - name: Call native-side code from web-side code
+                  href: webview2/how-to/hostobject.md
+                  displayName: AddHostObjectToScript, host objects
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
@@ -1205,6 +1214,8 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+            - name: Contact the Microsoft Edge Driver team
+              href: webdriver-chromium/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
