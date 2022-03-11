@@ -1094,6 +1094,16 @@
 #             href: webview2/concepts/basic-authentication.md
 #             displayName: 
 
+            # - name: Customize the UI   # not needed?  flatten
+            #   items:
+            #     - name: Customize the UI of WebView2 apps
+            #       href: webview2/how-to/customize-ui.md
+            #       displayName: context menu, right-click menu
+
+            - name: Customize context menus
+              href: webview2/how-to/context-menus.md
+              displayName: right-click menu, Customize context menus in WebView2  # top of page title
+
             - name: Use the Chrome DevTools Protocol
               href: webview2/how-to/chromium-devtools-protocol.md
               displayName: Use the Chrome DevTools Protocol in WebView2  # old title
