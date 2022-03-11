@@ -416,6 +416,8 @@ To add custom menu items to the default context menu, use the following API item
 <!-- ====================================================================== -->
 ## Example: Adding custom menu items to a default context menu
 
+The following example adds a **Display Page Uri** command to the WebView2 context menu.
+
 
 # [C#](#tab/csharp)
 
@@ -542,7 +544,7 @@ You can remove default or custom menu items from the default context menu.
 <!-- ====================================================================== -->
 ## Example: Removing menu items from a default context menu
 
-You can add or remove entries to the default WebView context menu.  For this case, you specify `Handled` to be false.  You can add or remove items from the collection of context menu items.
+The following example removes the **Save image as** command from the WebView2 context menu.
 
 
 # [C#](#tab/csharp)
