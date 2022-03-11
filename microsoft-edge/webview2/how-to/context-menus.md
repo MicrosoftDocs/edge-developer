@@ -6,9 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/10/2022
+ms.date: 03/11/2022
 ---
 # Customize context menus in WebView2
+
+<!-- 
+todo: 
+*  Make all intros to sections sufficient.
+*  Add comments to code listings.
+*  Add code or pointers to code for the last 4 - 5 sections.
+*  In Intro, describe the UX that results, what does the menu look like?  
+-->
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
 
@@ -723,6 +731,27 @@ If your host app reports a custom menu item as the selected menu item, then the 
 
 The `AreDefaultContextMenusEnabled` property controls whether any context menu can be opened.  If the WebView2 `AreDefaultContextMenusEnabled` setting is set to `False`, that disables context menus, and the `ContextMenuRequested` event won't be raised, such as when the user right-clicks.
 
+<!-- 
+todo: 
+Add link to planned h2 section, See [disable after nav](https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/javascript) in _Call web-side code from native-side code_.
+
+per Issue https://github.com/MicrosoftDocs/edge-developer/issues/1794 - 
+
+Disabling the context menu (or disabling drag and drop), needs to be done after navigation is completed, to work.  Disable the context menu (or drag and drop) in the `NavigationCompleted` event handler:
+
+private async void webView_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
+{
+    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
+
+    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
+
+    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('drop',function(e){" +
+    "e.preventDefault();" +
+    "console.log(e.dataTransfer);" +
+    "console.log(e.dataTransfer.files[0])" +
+    "}, false);");
+}
+-->
 
 # [C#](#tab/csharp)
 
