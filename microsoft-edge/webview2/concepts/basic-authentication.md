@@ -13,9 +13,6 @@ ms.date: 03/09/2022
 <!-- todo:
 Write a strong intro by pulling content from the first three sections.
 
-Change diagram to a swimlane diagram with callouts for each step, and use a decision diamond for step 8.
-OK to use Visio?
-
 The numbered steps under the diagram feel disconnected from the diagram, and there are some interesting points in the sections after that that should be added to the numbered steps.
 
 Terminology:
@@ -71,8 +68,6 @@ For more information, see [Navigation events for WebView2 apps](navigation-event
 
 The following diagram shows the flow of navigation events for basic authentication for WebView2 apps:
 
-<!-- ![The flow of navigation events for basic authentication for WebView2 apps.](../media/navigation-auth-graph.png) -->
-
 ![Flow of navigation events for basic authentication for WebView2 apps.](basic-authentication-images/basic-auth-page-nav-flow.png)
 <!-- initial Visio filename: https://microsoft-my.sharepoint.com/ ... "Basic Auth in Page Nav Flow.vsd"
 later, check:  Teams > Team > channel > Files > dir > filename -->
@@ -82,13 +77,13 @@ later, check:  Teams > Team > channel > Files > dir > filename -->
 
 <!-- protect the numbering of steps to match the diagram -->
 
-1. The host app tells the WebView2 control to navigate to a URL.
+1. The host app tells the WebView2 control to navigate to a URI.
    <!-- "1" next to box or label "WebView2 navigates to URI requiring basic authentication" -->
 
-1. The WebView2 control talks to the HTTP server requesting to get the document at a specified URL.
+1. The WebView2 control talks to the HTTP server requesting to get the document at a specified URI.
    <!-- "2" next to box or label "ContentLoading event" -->
 
-1. The HTTP server replies to the WebView2 control, saying "You can't get that URL (document) without authentication."
+1. The HTTP server replies to the WebView2 control, saying "You can't get that URI (document) without authentication."
    <!-- "3" next to box or label "Server requests authentication" -->
 
 1. The WebView2 control tells the host app "Authentication is needed" (which is the `BasicAuthenticationRequested` event).
@@ -97,16 +92,19 @@ later, check:  Teams > Team > channel > Files > dir > filename -->
 1. The host app responds to that event by providing the username and password to the WebView2 control.
    <!-- "5" next to box or label "BasicAuthenticationRequested event" -->
 
-1. The WebView2 control again requests the URL from the HTTP server, but this time with the authentication (username and password).
+1. The WebView2 control again requests the URI from the HTTP server, but this time with the authentication (username and password).
    <!-- "6" next to box or label "WebView2 navigates to same URI with BasicAuthenticationRequested result" -->
 
-1. The HTTP server might reject the username and password; it might tell the WebView2 control "You're not permitted to get that URL/document".
+1. The HTTP server evaluates the credentials (username and password).
+   <!-- decision diamond -->
+
+1. The HTTP server might reject the username and password; it might tell the WebView2 control "You're not permitted to get that URI/document".
    <!-- "7" next to box or label "Server denies authentication with error page" -->
 
 1. The WebView2 control renders the error page that's returned by the HTTP server.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
    <!-- "8" next to box or label "NavigationCompleted event (rendered server document)" -->
    
-1. The HTTP server accepts the authentication credentials and returns the requested document.  Or, the HTTP server denies the authentication and returns an error page document.
+1. The HTTP server might accept the authentication credentials and return the requested document.
    <!-- "9" next to box or label "Server accepts authentication with document" -->
 
 1. The WebView2 control renders the returned document.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
@@ -438,9 +436,9 @@ Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` 
 
 
 <!-- ====================================================================== -->
-<!-- Image maintenance notes (keep)
-todo: Add callouts (numbers) to each arrow to help communicate the sequence.
-todo in a later PR: re-create the below image in Visio, and store the .vsd file in Teams > Files, and describe the .vsd location here.
+<!-- Old image's maintenance notes (keep)
+
+![The flow of navigation events for basic authentication for WebView2 apps.](../media/navigation-auth-graph.png)
 
 Source location for the image:
 reliable approach: paste the following code listing into https://edotor.net:
@@ -495,6 +493,7 @@ https://edotor.net/?engine=dot#digraph%20g%20%7B%0A%20%20%20%20fontname%3D%22Hel
 ## API Reference overview
 
 <!-- ------------------------------ -->
+
 # [C#](#tab/csharp)
 
 * [CoreWebView2BasicAuthenticationRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
@@ -502,6 +501,7 @@ https://edotor.net/?engine=dot#digraph%20g%20%7B%0A%20%20%20%20fontname%3D%22Hel
 * [CoreWebView2Deferral Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
 
 <!-- ------------------------------ -->
+
 # [C++](#tab/cpp)
 
 * [ICoreWebView2BasicAuthenticationRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)
@@ -510,6 +510,7 @@ https://edotor.net/?engine=dot#digraph%20g%20%7B%0A%20%20%20%20fontname%3D%22Hel
 * [ICoreWebView2BasicAuthenticationRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventhandler)
 
 ---
+
 <!-- end of tab-set -->
 
 
