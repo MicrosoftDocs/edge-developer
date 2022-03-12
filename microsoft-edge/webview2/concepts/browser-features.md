@@ -7,10 +7,9 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
-ms.date: 09/21/2021
+ms.date: 03/11/2022
 ---
 # Differences between Microsoft Edge and WebView2
-<!-- old title: # Differences between Microsoft Edge and WebView2 -->
 
 WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.
 
@@ -129,8 +128,8 @@ The following shortcuts are always turned off in WebView2.  An asterisk (`*`) in
 | Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
-| Focus Next Pane `*` | `F6` |
-| Focus Previous Pane `*` | `Shift`+`F6` |
+| Focus Next Pane | `F6` |
+| Focus Previous Pane | `Shift`+`F6` |
 | Reading View `*` | `F9` |
 | Focus Menu Bar | `F10` |
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |
