@@ -42,7 +42,7 @@ Release Date: March 10, 2022
   
 [NuGet package for WebView2 SDK 1.0.1150.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.1150.38 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.0.1150.38 or higher.  
 
 ### General
 
@@ -50,12 +50,11 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
   
 *  Fixed a bug where WebView2 app gets stuck occasionally with UWP.
 
-
 #### Promotions
   
 The following items are now stable:
 
-*	The [BasicAuthentication API] (https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38) that enables developers to handle Basic HTTP Authentication request and response.
+*	The [BasicAuthentication API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38) that enables developers to handle Basic HTTP Authentication request and response.
   
 
 ## 1.0.1189-prerelease
