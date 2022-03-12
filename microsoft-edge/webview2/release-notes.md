@@ -89,9 +89,9 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 #### Bug Fixes
   
-*   Fixed a bug where focus is not returned to the application after closing find bar for windowed mode.  
-*   Fixed bug where DocumentTitleChanged event was not getting raised for back/forward navigation in single-page apps.  
-*   Fixed bug where HistoryChanged event was not getting raised for iframe navigations.  
+*   Fixed a bug where focus is not returned to the application after closing the **Find** bar for windowed mode.  
+*   Fixed bug in which the `DocumentTitleChanged` event was not being raised for backward/forward navigation in single-page apps.  
+*   Fixed bug in which the `HistoryChanged` event was not being raised for Iframe navigation.  
 
 ## 1.0.1108.44
 
