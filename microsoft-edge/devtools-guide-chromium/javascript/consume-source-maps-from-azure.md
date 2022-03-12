@@ -30,6 +30,8 @@ To learn about how to publish source maps, see [Securely debug original code by 
 
 To obtain source maps from the Azure Artifacts symbol server, DevTools uses the fetch protocol to talk to Azure DevOps, which requires a valid Personal Access Token (PAT).
 
+You need to generate a PAT even if you already generated one to publish source maps to the symbol server in [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](publish-source-maps-to-azure.md).
+
 To generate a PAT in Azure DevOps:
 
 1. Sign in to your Azure DevOps organization by going to `https://dev.azure.com/{yourorganization}`.
@@ -46,7 +48,7 @@ To generate a PAT in Azure DevOps:
 
    ![The 'Create a new personal access token' dialog box, with 'Read' scope for Symbols selected.](images/ado-pat-config-read.png)
 
-1. In the **Name** text box, enter a name for the PAT, such as **DevTools source maps**.
+1. In the **Name** text box, enter a name for the PAT, such as "devtool source maps".
 
 1. In the **Expiration** section, enter an expiration date for the PAT.
 
