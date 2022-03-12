@@ -72,43 +72,40 @@ The following diagram shows the flow of navigation events for basic authenticati
 <!-- initial Visio filename: https://microsoft-my.sharepoint.com/ ... "Basic Auth in Page Nav Flow.vsd"
 later, check:  Teams > Team > channel > Files > dir > filename -->
 
-
-<!-- see "Image maintenance notes" below -->
-
-<!-- protect the numbering of steps to match the diagram -->
+<!-- diagram labels in comments: -->
 
 1. The host app tells the WebView2 control to navigate to a URI.
-   <!-- "1" next to box or label "WebView2 navigates to URI requiring basic authentication" -->
+   <!-- "1. Tells the WebView2 control to navigate to a URI" -->
 
 1. The WebView2 control talks to the HTTP server requesting to get the document at a specified URI.
-   <!-- "2" next to box or label "ContentLoading event" -->
+   <!-- "2. Requests the document at a specified URI (NavigationStarting, ContentLoading)" -->
 
 1. The HTTP server replies to the WebView2 control, saying "You can't get that URI (document) without authentication."
-   <!-- "3" next to box or label "Server requests authentication" -->
+   <!-- "3. Replies "Authentication is needed" (BasicAuthenticationRequested)" -->
 
 1. The WebView2 control tells the host app "Authentication is needed" (which is the `BasicAuthenticationRequested` event).
-   <!-- "4" next to box or label "BasicAuthenticationRequested event" -->
+   <!-- "4. Tells host app "Authentication is needed" (BasicAuthenticationRequested)" -->
 
 1. The host app responds to that event by providing the username and password to the WebView2 control.
-   <!-- "5" next to box or label "BasicAuthenticationRequested event" -->
+   <!-- "5. Responds to BasicAuthenticationRequested event by providing the username and password" -->
 
 1. The WebView2 control again requests the URI from the HTTP server, but this time with the authentication (username and password).
-   <!-- "6" next to box or label "WebView2 navigates to same URI with BasicAuthenticationRequested result" -->
+   <!-- "6. Requests the URI again, providing username & password as a BasicAuthenticationRequested result (NavigationStarting, ContentLoading)" -->
 
 1. The HTTP server evaluates the credentials (username and password).
-   <!-- decision diamond -->
+   <!-- "7. Tests the credentials" -->
 
 1. The HTTP server might reject the username and password; it might tell the WebView2 control "You're not permitted to get that URI/document".
-   <!-- "7" next to box or label "Server denies authentication with error page" -->
+   <!-- "8. Denies authentication and returns an error page" -->
 
 1. The WebView2 control renders the error page that's returned by the HTTP server.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
-   <!-- "8" next to box or label "NavigationCompleted event (rendered server document)" -->
+   <!-- "9. Renders the error page (DOMContentLoaded, NavigationCompleted)" -->
    
 1. The HTTP server might accept the authentication credentials and return the requested document.
-   <!-- "9" next to box or label "Server accepts authentication with document" -->
+   <!-- "10. Accepts authentication and returns the requested document" -->
 
 1. The WebView2 control renders the returned document.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
-   <!-- "10" next to box or label "NavigationCompleted event (rendered server document)" -->
+   <!-- "11. Renders the requested document (DOMContentLoaded, NavigationCompleted)" -->
 
 
 <!-- ====================================================================== -->
