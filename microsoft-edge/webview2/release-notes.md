@@ -50,7 +50,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
   
 The following items are now stable:
 
-*	The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38) that enables developers to handle Basic HTTP Authentication request and response.
+*   The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) that enables developers to handle Basic HTTP Authentication request and response.
   
 
 ## 1.0.1189-prerelease
@@ -67,7 +67,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental Features
   
-*	Added [ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease) to enable host app to create or modify their own context menu.
+*   Added [ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true) to enable host app to create or modify their own context menu.
 
 
 #### Promotions
@@ -75,14 +75,14 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
   
 The following APIs are promoted to stable in this prerelease SDK:  
 
-* 	The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
-*	The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease):
-	* 	add_StatusBarTextChanged
-	*  get_StatusBarText
-	*  remove_StatusBarTextChanged
-*	The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease) that supports enable/disable external drop.
-* 	The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease) is available to customize the PDF toolbar items.
-*  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease) that provides control availability of other processes can create WebView2 with the same user data folder.
+*    The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
+*   The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true):
+   *    add_StatusBarTextChanged
+   *  get_StatusBarText
+   *  remove_StatusBarTextChanged
+*   The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) that supports enable/disable external drop.
+*    The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize the PDF toolbar items.
+*  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) that provides control availability of other processes can create WebView2 with the same user data folder.
   
 
 #### Bug Fixes
