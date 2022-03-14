@@ -131,8 +131,8 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
-| Focus Next Pane `*` | `F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shift-f6). |
-| Focus Previous Pane `*` | `Shift`+`F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shift-f6). |
+| Focus Next Pane `*` | `F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shiftf6). |
+| Focus Previous Pane `*` | `Shift`+`F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shiftf6). |
 | Reading View `*` | `F9` |
 | Focus Menu Bar | `F10` |
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |
