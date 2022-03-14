@@ -114,7 +114,7 @@ To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceler
 
 The following shortcuts are always turned off in WebView2, or are effectively turned off.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.
 
-| Action | Windows |
+| Action | Shortcut |
 |:--- |:--- |
 | Add to Favorites | `Ctrl`+`D` |
 | Add All Tabs to Favorites | `Ctrl`+`Shift`+`D` |
@@ -131,8 +131,8 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
-| Focus Next Pane `*` | `F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shiftf6). |
-| Focus Previous Pane `*` | `Shift`+`F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shiftf6). |
+| Focus Next Pane `*` | `F6`.  Supported in windowed hosting mode, but not in visual hosting mode. |
+| Focus Previous Pane `*` | `Shift`+`F6`.  Supported in windowed hosting mode, but not in visual hosting mode. |
 | Reading View `*` | `F9` |
 | Focus Menu Bar | `F10` |
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |
@@ -157,16 +157,11 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Show Collections `*` | `Ctrl`+`Shift`+`Y` |
 
 
-### Support for F6 and Shift+F6
-
-`F6` and `Shift`+`F6` are supported in windowed hosting mode, but not in visual hosting mode.  
-
-
 ### Shortcuts turned off except when event not handled
 
 The following keyboard shortcuts are always turned off, except in windows that display when the `NewWindowRequested` event isn't handled:
 
-| Action | Windows |
+| Action | Shortcut |
 |:--- |:--- |
 | Close Tab | `Ctrl`+`W, Ctrl`+`F4` |
 | Close Window | `Ctrl`+`Shift`+`W` |
@@ -177,7 +172,7 @@ The following keyboard shortcuts are always turned off, except in windows that d
 
 If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off:
 
-| Action | Windows |
+| Action | Shortcut |
 |:--- |:--- |
 | Stop | `Escape` |
 | Find on Page | `Ctrl`+`F` |
