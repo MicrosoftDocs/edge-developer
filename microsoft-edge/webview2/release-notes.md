@@ -42,13 +42,9 @@ Release Date: March 10, 2022
   
 [NuGet package for WebView2 SDK 1.0.1150.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.0. 1150.38 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.0.1150.38 or higher.  
 
 ### General
-
-#### Bug Fixes
-  
-*  Fixed a bug where WebView2 app gets stuck occasionally with UWP.
 
 #### Promotions
   
@@ -60,10 +56,12 @@ The following items are now stable:
 ## 1.0.1189-prerelease
   
 Release Date: March 10, 2022  
+
+*  Fixed a bug where WebView2 app gets stuck occasionally with UWP.
+
+*  [NuGet package for WebView2 SDK 1.0.1189](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
   
-[NuGet package for WebView2 SDK 1.0.1189](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
-  
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 101.0.1189.0 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 1.0.1189.0 or higher. 
 
 ### General
 
