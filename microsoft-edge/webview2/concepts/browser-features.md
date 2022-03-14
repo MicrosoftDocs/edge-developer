@@ -109,7 +109,10 @@ Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.
 
 To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.
 
-The following shortcuts are always turned off in WebView2.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.
+
+### Shortcuts that are turned off
+
+The following shortcuts are always turned off in WebView2, or are effectively turned off.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.
 
 | Action | Windows |
 |:--- |:--- |
@@ -128,8 +131,8 @@ The following shortcuts are always turned off in WebView2.  An asterisk (`*`) in
 | Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
-| Focus Next Pane | `F6` |
-| Focus Previous Pane | `Shift`+`F6` |
+| Focus Next Pane `*` | `F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shift-f6). |
+| Focus Previous Pane `*` | `Shift`+`F6`.  See [Support for F6 and Shift+F6](#support-for-f6-and-shift-f6). |
 | Reading View `*` | `F9` |
 | Focus Menu Bar | `F10` |
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |
@@ -153,6 +156,14 @@ The following shortcuts are always turned off in WebView2.  An asterisk (`*`) in
 | Show Reading Mode Bar `*` | `Shift`+`Alt`+`R` |
 | Show Collections `*` | `Ctrl`+`Shift`+`Y` |
 
+
+### Support for F6 and Shift+F6
+
+`F6` and `Shift`+`F6` are supported in windowed hosting mode, but not in visual hosting mode.  
+
+
+### Shortcuts turned off except when event not handled
+
 The following keyboard shortcuts are always turned off, except in windows that display when the `NewWindowRequested` event isn't handled:
 
 | Action | Windows |
@@ -160,6 +171,9 @@ The following keyboard shortcuts are always turned off, except in windows that d
 | Close Tab | `Ctrl`+`W, Ctrl`+`F4` |
 | Close Window | `Ctrl`+`Shift`+`W` |
 | Fullscreen | `F11` |
+
+
+### Shortcuts turned off if AcceleratorEnabled is False
 
 If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off:
 
@@ -184,5 +198,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open DevTools Console | `Ctrl`+`Shift`+`J` |
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |
 
-> [!Note]
-> To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
+
+### Customizing an individual key
+
+To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
