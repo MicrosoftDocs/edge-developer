@@ -128,11 +128,7 @@ You can filter the experimental features by text included in the title.
 <!-- ====================================================================== -->
 ## Providing feedback about the experiments
 
-We're eager to hear your feedback about experimental features.
-
-* Send us your feedback by tweeting [@EdgeDevTools](https://twitter.com/edgedevtools).
-
-* [Contact the Microsoft Edge DevTools team](../contact.md).
+We're eager to hear your feedback about experimental features. [Contact the Microsoft Edge DevTools team](../contact.md) to share feedback with us.
 
 * With the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode.](../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
 
