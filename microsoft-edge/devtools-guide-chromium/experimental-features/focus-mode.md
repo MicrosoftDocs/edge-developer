@@ -40,7 +40,7 @@ To check if you have Focus Mode enabled already, or to enable or disable it:
 
    If the checkbox is selected, Focus Mode is already enabled. Select or clear it to enable or disable Focus Mode.
 
-    ![Screenshot of the Settings page in DevTools, showing the Experiments tab, scrolled down to the Focus Mode checkbox](../media/focus-mode-pref.png)
+    ![Screenshot of the Settings page in DevTools, showing the Experiments tab, scrolled down to the Focus Mode checkbox](media/focus-mode-pref.png)
 
 1. Close the **Settings** page. If you changed the Focus Mode experiment state, click the **Reload DevTools** button for the change to take effect.
 
@@ -56,7 +56,7 @@ Here are the main differences between the default user interface of DevTools and
 
   It replaces the main toolbar from the default user interface.
 
-  ![Screenshot of the activity bar in Focus Mode](../media/focus-mode-activity-bar.png)
+  ![Screenshot of the activity bar in Focus Mode](media/focus-mode-activity-bar.png)
 
 * **Quick View**
 
@@ -64,7 +64,7 @@ Here are the main differences between the default user interface of DevTools and
 
   **Quick View** replaces the drawer toolbar from the default user interface.
 
-  ![Screenshot of the quick view list in Focus Mode with a tool selected and opened in the bottom pane](../media/focus-mode-quick-view.png)
+  ![Screenshot of the quick view list in Focus Mode with a tool selected and opened in the bottom pane](media/focus-mode-quick-view.png)
 
 * DevTools customization and settings
 
@@ -76,13 +76,13 @@ Here are the main differences between the default user interface of DevTools and
   * **Settings** provides access to the DevTools settings.
   * **Keyboard shortcuts** allows to review and change keyboard shortcuts.
 
-  ![Screenshot of the menu in Focus Mode](../media/focus-mode-menu.png)
+  ![Screenshot of the menu in Focus Mode](media/focus-mode-menu.png)
 
 * Help links
 
   The **Help** menu contains links to the DevTools documentation and release notes and a button to send feedback to the team. These links and buttons were previously nested under **Customize and control DevTools** > **Help** in the default user interface.
 
-  ![Screenshot of the help menu in Focus Mode](../media/focus-mode-help.png)
+  ![Screenshot of the help menu in Focus Mode](media/focus-mode-help.png)
 
 
 <!-- ====================================================================== -->
@@ -95,19 +95,19 @@ By default, the **Activity Bar** contains the following tools:
    *  **Device Emulation** (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.
 
 * Tool tabs:
-   *  **Welcome** tool (![Welcome tool icon.](../media/focus-mode-welcome.png)).
-   *  **Elements** tool (![Elements tool icon.](../media/focus-mode-elements.png)).
-   *  **Console** tool (![Console tool icon.](../media/focus-mode-console.png)).
-   *  **Sources** tool (![Sources tool icon.](../media/focus-mode-sources.png)).
-   *  **Network** tool (![Network tool icon.](../media/focus-mode-network.png)).
-   *  **Issues** tool (![Issues tool icon.](../media/focus-mode-issues.png)).
-   *  **Performance** tool (![Performance tool icon.](../media/focus-mode-performance.png)).
-   *  **Memory** tool (![Memory tool icon.](../media/focus-mode-memory.png)).
-   *  **Application** tool (![Application tool icon.](../media/focus-mode-application.png)).
+   *  **Welcome** tool (![Welcome tool icon.](media/focus-mode-welcome.png)).
+   *  **Elements** tool (![Elements tool icon.](media/focus-mode-elements.png)).
+   *  **Console** tool (![Console tool icon.](media/focus-mode-console.png)).
+   *  **Sources** tool (![Sources tool icon.](media/focus-mode-sources.png)).
+   *  **Network** tool (![Network tool icon.](media/focus-mode-network.png)).
+   *  **Issues** tool (![Issues tool icon.](media/focus-mode-issues.png)).
+   *  **Performance** tool (![Performance tool icon.](media/focus-mode-performance.png)).
+   *  **Memory** tool (![Memory tool icon.](media/focus-mode-memory.png)).
+   *  **Application** tool (![Application tool icon.](media/focus-mode-application.png)).
 
 Click one of the icons in the **Activity Bar** to open the corresponding tool.
 
-![Screenshot of the Elements tool in Focus Mode](../media/focus-mode-elements-tool.png)
+![Screenshot of the Elements tool in Focus Mode](media/focus-mode-elements-tool.png)
 
 
 <!-- ====================================================================== -->
@@ -115,15 +115,15 @@ Click one of the icons in the **Activity Bar** to open the corresponding tool.
 
 If the tool you want to open does not appear in the **Activity Bar** by default, click **More tools** (**+**) to list all the available tools.
 
-![Screenshot of the More tools menu in Focus Mode](../media/focus-mode-more-tools.png)
+![Screenshot of the More tools menu in Focus Mode](media/focus-mode-more-tools.png)
 
 Opening a new tool from the **More tools** menu adds its icon to the **Activity Bar**. If there isn't enough space in the **Activity Bar** to display the new icons, the icons appear in the **More tools** menu.
 
-![Screenshot of the More tools menu in Focus Mode when the window is shorter, causing some of the icons to be displayed in the menu rather than the activity bar](../media/focus-mode-overflow-tools.png)
+![Screenshot of the More tools menu in Focus Mode when the window is shorter, causing some of the icons to be displayed in the menu rather than the activity bar](media/focus-mode-overflow-tools.png)
 
 To remove icons from the **Activity Bar** right-click the icon and click **Remove from activity bar**.
 
-![Screenshot of the contextual menu to remove tools from the Activity bar](../media/focus-mode-remove-tool.png)
+![Screenshot of the contextual menu to remove tools from the Activity bar](media/focus-mode-remove-tool.png)
 
 The following tools are permanent and can't be removed from the **Activity Bar**:
 
@@ -143,9 +143,9 @@ Use the **Quick View** list to open a second tool alongside the one already sele
 
 The following screenshot shows the **Network** tool and the **Console** tool side by side.
 
-![Screenshot of Focus Mode with the Network tool at the top, and the Console tool at the bottom](../media/focus-mode-quick-view-tool.png)
+![Screenshot of Focus Mode with the Network tool at the top, and the Console tool at the bottom](media/focus-mode-quick-view-tool.png)
 
-When you are done using the second tool, you can close the **Quick View** by clicking the chevron icon (![Quick view chevron toggle icon](../media/focus-mode-chevron.png)) in the **Quick View** toolbar.
+When you are done using the second tool, you can close the **Quick View** by clicking the chevron icon (![Quick view chevron toggle icon](media/focus-mode-chevron.png)) in the **Quick View** toolbar.
 
 
 <!-- ====================================================================== -->
@@ -170,7 +170,7 @@ When the **Activity Bar** is horizontal, tool names appear next to tool icons if
 
 The following screenshot shows DevTools undocked in its own window, with the horizontal **Activity Bar** showing some tabs with tool icons and names, and some with icons only.
 
-![Screenshot of Focus Mode with the horizontal Activity bar](../media/focus-mode-horizontal.png)
+![Screenshot of Focus Mode with the horizontal Activity bar](media/focus-mode-horizontal.png)
 
 
 <!-- ====================================================================== -->
