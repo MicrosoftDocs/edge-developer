@@ -136,8 +136,8 @@ The following shortcuts are always turned off in WebView2, or are effectively tu
 | Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
-| Focus Next Pane `*` | `F6`.  Supported in windowed hosting mode, but not in visual hosting mode. |
-| Focus Previous Pane `*` | `Shift`+`F6`.  Supported in windowed hosting mode, but not in visual hosting mode. |
+| Focus Next Pane `*` | `F6`.  Supported in windowed hosting mode, but not in visual hosting mode.  Visual hosting mode is used for [WinUI 2 (UWP) apps](../samples/webview2_sample_uwp.md), and for [Win32 C++ apps with Visual Composition](../samples/webview2samplewincomp.md). |
+| Focus Previous Pane `*` | `Shift`+`F6`.  Same as `F6` support, above. |
 | Reading View `*` | `F9` |
 | Focus Menu Bar | `F10` |
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |
