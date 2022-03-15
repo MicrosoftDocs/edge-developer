@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
-ms.date: 03/11/2022
+ms.date: 03/14/2022
 ---
 # Differences between Microsoft Edge and WebView2
 
@@ -40,7 +40,7 @@ The following table displays the WebView2 features that differ from the Microsof
 *  **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
 
 > [!NOTE]
-> This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, see [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
+> This article doesn't cover modifying features by using command-line switches.  For more information about turning on and off features by using command-line switches, see [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
 
 | Feature | Default state | Configurable | Details |
 | --- | --- | --- | --- |
@@ -105,7 +105,12 @@ The following Microsoft Edge and Google Chrome settings webpages aren't availabl
 <!-- ====================================================================== -->
 ## Additional keyboard shortcuts information
 
-Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.  When Microsoft Edge is updated, the default key bindings might change.  Furthermore, a keyboard shortcut that is turned off by default might instead be turned on, if the feature is now supported in WebView2.
+Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.
+
+
+### Preventing shortcuts from changing during update
+
+When Microsoft Edge is updated, the default key bindings might change.  Furthermore, a keyboard shortcut that is turned off by default might instead be turned on, if the feature is now supported in WebView2.
 
 To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.
 
