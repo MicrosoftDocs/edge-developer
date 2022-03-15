@@ -22,9 +22,9 @@ ms.date: 03/15/2022
 
 **Request:**
 
-* [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext?view=webview2-dotnet-1.0.1108.44) - Specifies the web resource request contexts.
+* [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext) - Specifies the web resource request contexts.
 
-* [CoreWebView2WebResourceRequest Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest?view=webview2-dotnet-1.0.1108.44) - An HTTP request used with the `WebResourceRequested` event.
+* [CoreWebView2WebResourceRequest Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest) - An HTTP request used with the `WebResourceRequested` event.
    * `Content` - Gets or sets the HTTP request message body as stream.
    * `Headers` - Gets the mutable HTTP request headers.
    * `Method` - Gets or sets the HTTP request method.
