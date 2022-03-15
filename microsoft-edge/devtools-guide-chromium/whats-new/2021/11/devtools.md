@@ -31,8 +31,8 @@ This UI is still in development and may change in future versions of Microsoft E
 :::image type="content" source="../../media/2021/11/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
 
 See also:
-*  [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_.
-*  [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
+*  [Reduce the complexity of DevTools with Focus Mode](../../../experimental-features/focus-mode.md).
+*  [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
 
 
 <!-- ====================================================================== -->

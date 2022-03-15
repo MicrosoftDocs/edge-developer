@@ -71,6 +71,8 @@ When using Focus Mode, all the same tools and [custom themes](../../../customize
 
 ![The Focus Mode UI.](../../media/2022/01/focus-mode.png)
 
+See [Reduce the complexity of DevTools with Focus Mode](../../../experimental-features/focus-mode.md).
+
 
 <!-- ====================================================================== -->
 ## 3D View tool supports changing color themes in DevTools
