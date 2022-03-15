@@ -53,6 +53,7 @@ The following items are now stable:
 *   The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) that enables developers to handle Basic HTTP Authentication request and response.
   
 
+<!-- ====================================================================== -->
 ## 1.0.1189-prerelease
   
 Release Date: March 10, 2022  
@@ -62,8 +63,6 @@ Release Date: March 10, 2022
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 101.0.1189.0 or higher. 
 
 ### General
-
-*  Fixed a bug where WebView2 app gets stuck occasionally with UWP.
 
 #### Experimental Features
   
@@ -87,6 +86,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 #### Bug Fixes
   
+*   Fixed a bug where WebView2 app gets stuck occasionally with UWP.
 *   Fixed a bug where focus is not returned to the application after closing the **Find** bar for windowed mode.  
 *   Fixed bug in which the `DocumentTitleChanged` event was not being raised for backward/forward navigation in single-page apps.  
 *   Fixed bug in which the `HistoryChanged` event was not being raised for Iframe navigation.  
