@@ -1029,6 +1029,10 @@
                   href: webview2/how-to/hostobject.md
                   displayName: AddHostObjectToScript, host objects
 
+                - name: Web Resource Requested
+                  href: webview2/how-to/webresourcerequested.md
+                  displayName: WebResourceRequested
+
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
