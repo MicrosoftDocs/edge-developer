@@ -22,7 +22,7 @@ Focus Mode provides an **Activity Bar**, which is a compact horizontal or vertic
 
 Focus Mode also provides a **Quick View** list to open a second tool alongside the tool already selected in the **Activity Bar**.
 
-![Focus Mode, including the Activity Bar.](media/experimental-features/focus-mode.png)
+![Focus Mode, including the Activity Bar.](media/focus-mode.png)
 
 Focus Mode does not change how the tools work and what they look like. Focus Mode only changes the way tools and other customization features of DevTools can be accessed.
 
