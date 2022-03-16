@@ -66,10 +66,6 @@ Within each category of issues, first the errors are listed, then warnings, and 
 
 :::image type="content" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays Performance issues sorted by severity." lightbox="../media/issues-ordered-by-severity.msft.png":::
 
-### Include third-party issues
-
-To include issues that are caused by third-party sites, at the top of the **Issues** tool, select the **Include third-party issues** checkbox.
-
 
 <!-- ====================================================================== -->
 ## Expand entries in the Issues tool
@@ -135,6 +131,49 @@ To display an issue for elements with wavy underlines in the DOM tree:
 1. Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
 
    :::image type="content" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues on a wavy-underlined element in the DOM tree." lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+
+
+<!-- ====================================================================== -->
+## Filter issues
+
+To reduce the number of issues displayed in the **Issues** tool, you can filter the list by severity, browser, and origin.
+
+### Filter by severity
+
+By default, only errors and warnings are displayed. To display issues with other severity levels:
+
+* Click **Default levels**.
+* Select any number of severity levels: **Tips**, **Info**, **Warnings**, **Errors**.
+* Select **Default** to revert back to just warnings and errors.
+
+![Screenshot of the Issues panel with the Severity drop-down expanding, showing the different levels that can be selected](media/severity-filter.png)
+
+### Filter by browser
+
+Issues that belong to the **Compatibility** category can also be filtered by browser. By default, the following browsers are tested:
+
+* Edge
+* Chrome
+* Firefox
+* Safari
+* Safari iOS
+* Chrome for Android
+* Firefox for Android
+
+To change the list of browsers that are tested for compatibility issues:
+
+* Click **Top browsers**.
+* Select any of the browser category sets: **Top browsers**, **Desktop browsers**, **Mobile browsers**.
+* Or select any number of individual browsers from the list.
+* Click **Regenerate issues** to update the compatibility issues based on the selected browsers.
+
+![Screenshot of the Issues panel with the Browser drop-down expanding, showing the different browsers that can be selected](media/browser-filter.png)
+
+### Filter by origin
+
+By default, the **Issues** tool only lists issues that pertain to the current web page's code. To include issues that are caused by third-party libraries or frameworks loaded by the web page too, select the **Include third-party issues** checkbox.
+
+![Screenshot of the Issues panel with the Include third-party issues checkbox](media/third-party-checkbox.png)
 
 
 <!-- ====================================================================== -->
