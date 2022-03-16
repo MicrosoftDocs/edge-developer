@@ -6,25 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/09/2022
+ms.date: 03/16/2022
 ---
 # Basic authentication for WebView2 apps
 
-<!-- todo:
-Write a strong intro by pulling content from the first three sections.
-
-The numbered steps under the diagram feel disconnected from the diagram, and there are some interesting points in the sections after that that should be added to the numbered steps.
-
-Terminology:
-
-| Term | Definition |
-|---|---|
-| _navigation event args_ | |
-| _navigations_, a _navigation_ | |
-| _basic authentication_ | A specific technical phrase.  See [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN. |
--->
-
-_Basic authentication_ is an authentication approach that's part of the HTTP protocol.
+_Basic authentication_ is an [authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) approach that's part of the HTTP protocol.
 
 Basic authentication for WebView2 apps includes a sequence of authentication and navigation steps to retrieve a webpage from an HTTP server.  The WebView2 control acts as an intermediary for communication between the host app and the HTTP server.
 
@@ -111,13 +97,14 @@ later, check:  Teams > Team > channel > Files > dir > filename -->
 <!-- ====================================================================== -->
 ## Example code: App providing credentials that are known ahead of time
 
-This example shows the host app providing credentials (user name and password) that are known ahead of time.
+The following simplified example shows the host app providing credentials (user name and password) that are known ahead of time.  This example is a slightly modified version of the code that's in [WebView2Samples repo > WebView2APISample > ScenarioAuthentication.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/d78d86f1646b6c652908f1e4bc2b64950f05ca0a/SampleApps/WebView2APISample/ScenarioAuthentication.cpp).
 
-The following sample was created by expanding the sample [WebView2Samples repo > WebView2APISample > ScenarioAuthentication.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/d78d86f1646b6c652908f1e4bc2b64950f05ca0a/SampleApps/WebView2APISample/ScenarioAuthentication.cpp), from the WebView2Samples repo.
+This example isn't realistic, because:
 
-The following code is for demonstration purposes to show the main API that's used.  The code in the subsequent section is more useful for your scenario.
+*  In practice, you'd prompt the user for the username and password rather than hardcoding them like `"user"` and `"pass"`.
+*  This code is synchronous, but you'd probably use asynchronous code instead.
 
-That sample includes the following relevant code:
+For more realistic code, see the subsequent section.
 
 <!-- ------------------------------ -->
 
@@ -184,18 +171,13 @@ else
 
 ---
 
-The above code isn't realistic, because:
-
-*  In practice, you'd prompt the user for the username and password rather than hardcoding them like `"user"` and `"pass"` in the listing above.
-*  The above code is synchronous, but you'd probably use asynchronous code instead, as shown below.
-
 
 <!-- ====================================================================== -->
 ## Example code: Prompting user for credentials
 
-This example shows the host app prompting the user for credentials (user name and password), and uses async code.
+This example demonstrates a host app prompting the user for credentials (user name and password), and uses async code.
 
-The following code adds to the above sample, by adding the following features, using the `BasicAuthenticationRequested` event.
+This example builds upon the above sample, by adding the following features:
 *  Displays a dialog box to prompt the user for their username and password.
 *  Calls the `GetDeferral` method on the `event` argument.
 
@@ -433,60 +415,6 @@ Navigation `event args` has a property: the `NavigationId`.  The `NavigationId` 
 
 
 <!-- ====================================================================== -->
-<!-- Old image's maintenance notes (keep)
-
-![The flow of navigation events for basic authentication for WebView2 apps.](../media/navigation-auth-graph.png)
-
-Source location for the image:
-reliable approach: paste the following code listing into https://edotor.net:
-
-Paste this code into site, see if the resulting diagram matches the diagram in this article:
-
-```edotor
-# https://edotor.net/
-digraph g {
-    fontname="Helvetica";
-    labeljust=l;
-    node [shape="box", fontname="Sans-Serif"]
-    edge [fontname="Arial"]
-    {
-        rank = same;
-        Start [label="WebView2 navigates to\nURI requiring basic\nauthentication"]
-        Retry [label="WebView2 navigates to\nsame URI with\nBasicAuthentication-\nRequested result"]
-    }
-    NavigationStarting0 [label="NavigationStarting\nevent"];
-    ContentLoading0 [label="ContentLoading\nevent"];
-    BasicAuthenticationRequested0 [label="BasicAuthentication-\nRequested event"];
-    {
-        rank = same;
-        DOMContentLoaded0 [label="DOMContentLoaded\nevent"];
-        DOMContentLoaded1 [label="DOMContentLoaded\nevent"];
-    }
-    NavigationCompleted0 [label="NavigationCompleted\nevent\n(blank page)"];
-    NavigationCompleted1 [label="NavigationCompleted\nevent\n(rendered server\ndocument)"];
-    NavigationStarting0 -> ContentLoading0;
-    ContentLoading0 -> BasicAuthenticationRequested0 [label="Server requests\nauthentication"];
-    ContentLoading0 -> DOMContentLoaded1 [label="Server accepts\nauthentication\nwith document"];
-    ContentLoading0 -> DOMContentLoaded1 [label="Server denies\nauthentication\nwith error page"];
-    DOMContentLoaded1 -> NavigationCompleted1;
-    BasicAuthenticationRequested0 -> DOMContentLoaded0 -> NavigationCompleted0;
-    BasicAuthenticationRequested0;
-    Start -> NavigationStarting0;
-    NavigationStarting0 -> Retry [style=invis];
-    NavigationCompleted0 -> Retry;
-    Retry -> NavigationStarting0;
-}
-```
-
-Beware of clicking this link: it might become too long and be invalid.
-Try this URL, compare to the .png diagram:
-If possible, it's the URL that attempts to express the above code listing; it's the resulting URL from the above image-definition code:
-https://edotor.net/?
-https://edotor.net/?engine=dot#digraph%20g%20%7B%0A%20%20%20%20fontname%3D%22Helvetica%22%3B%0A%20%20%20%20labeljust%3Dl%3B%0A%20%20%20%20node%20%5Bshape%3D%22box%22%2C%20fontname%3D%22Sans-Serif%22%5D%0A%20%20%20%20edge%20%5Bfontname%3D%22Arial%22%5D%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20rank%20%3D%20same%3B%0A%20%20%20%20%20%20%20%20Start%20%5Blabel%3D%22WebView2%20navigates%20to%5CnURI%20requiring%20basic%5Cnauthentication%22%5D%0A%20%20%20%20%20%20%20%20Retry%20%5Blabel%3D%22WebView2%20navigates%20to%5Cnsame%20URI%20with%5CnBasicAuthentication-%5CnRequested%20result%22%5D%0A%20%20%20%20%7D%0A%20%20%20%20NavigationStarting0%20%5Blabel%3D%22NavigationStarting%5Cnevent%22%5D%3B%0A%20%20%20%20ContentLoading0%20%5Blabel%3D%22ContentLoading%5Cnevent%22%5D%3B%0A%20%20%20%20BasicAuthenticationRequested0%20%5Blabel%3D%22BasicAuthentication-%5CnRequested%20event%22%5D%3B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20rank%20%3D%20same%3B%0A%20%20%20%20%20%20%20%20DOMContentLoaded0%20%5Blabel%3D%22DOMContentLoaded%5Cnevent%22%5D%3B%0A%20%20%20%20%20%20%20%20DOMContentLoaded1%20%5Blabel%3D%22DOMContentLoaded%5Cnevent%22%5D%3B%0A%20%20%20%20%7D%0A%20%20%20%20NavigationCompleted0%20%5Blabel%3D%22NavigationCompleted%5Cnevent%5Cn(blank%20page)%22%5D%3B%0A%20%20%20%20NavigationCompleted1%20%5Blabel%3D%22NavigationCompleted%5Cnevent%5Cn(rendered%20server%5Cndocument)%22%5D%3B%0A%20%20%20%20NavigationStarting0%20-%3E%20ContentLoading0%3B%0A%20%20%20%20ContentLoading0%20-%3E%20BasicAuthenticationRequested0%20%5Blabel%3D%22Server%20requests%5Cnauthentication%22%5D%3B%0A%20%20%20%20ContentLoading0%20-%3E%20DOMContentLoaded1%20%5Blabel%3D%22Server%20accepts%5Cnauthentication%5Cnwith%20document%22%5D%3B%0A%20%20%20%20ContentLoading0%20-%3E%20DOMContentLoaded1%20%5Blabel%3D%22Server%20denies%5Cnauthentication%5Cnwith%20error%20page%22%5D%3B%0A%20%20%20%20DOMContentLoaded1%20-%3E%20NavigationCompleted1%3B%0A%20%20%20%20BasicAuthenticationRequested0%20-%3E%20DOMContentLoaded0%20-%3E%20NavigationCompleted0%3B%0A%20%20%20%20BasicAuthenticationRequested0%3B%0A%20%20%20%20Start%20-%3E%20NavigationStarting0%3B%0A%20%20%20%20NavigationStarting0%20-%3E%20Retry%20%5Bstyle%3Dinvis%5D%3B%0A%20%20%20%20NavigationCompleted0%20-%3E%20Retry%3B%0A%20%20%20%20Retry%20-%3E%20NavigationStarting0%3B%0A%7D%0A
--->
-
-
-<!-- ====================================================================== -->
 ## API Reference overview
 
 <!-- ------------------------------ -->
@@ -508,10 +436,17 @@ https://edotor.net/?engine=dot#digraph%20g%20%7B%0A%20%20%20%20fontname%3D%22Hel
 
 ---
 
-<!-- end of tab-set -->
-
 
 <!-- ====================================================================== -->
 ## See also
 
 *  [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN.
+
+<!--
+Terminology:
+| Term | Definition |
+|---|---|
+| _navigation event args_ | |
+| _navigations_, a _navigation_ | |
+| _basic authentication_ | A specific technical phrase.  See [HTTP authentication](https://developer.mozilla.org/docs/Web/HTTP/Authentication) at MDN. |
+-->
