@@ -1029,9 +1029,9 @@
                   href: webview2/how-to/hostobject.md
                   displayName: AddHostObjectToScript, host objects
 
-                - name: Web Resource Requested
+                - name: Navigating with web resource request and response events
                   href: webview2/how-to/webresourcerequested.md
-                  displayName: WebResourceRequested
+                  displayName: WebResourceRequested, WebResourceResponseReceived
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md

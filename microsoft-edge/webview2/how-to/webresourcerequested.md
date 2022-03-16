@@ -1,36 +1,22 @@
 ---
-title: Web Resource Requested
-description: Web Resource Requested for WebView2 apps.
+title: Navigating with web resource request and response events
+description: Using the WebResourceRequested event and the WebResourceResponseReceived event in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/15/2022
+ms.date: 03/16/2022
 ---
-# Web Resource Requested
+# Navigating with web resource request and response events
 
-Covers the following API or event specs:
-
-**Request:**
-
-*  WebResourceRequested
-*  WebResourceRequest - includes `ICoreWebView2WebResourceRequest` (Win32/C++).
-*  NavigateWithWebResourceRequest
-   *  CreateWebResourceRequest
-
-* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md)
-
-
-**Response:**
-
-*  WebResourceResponseReceived
-
-* [WebResourceResponseReceived spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md)
+During navigation among URIs, use the `WebResourceRequested` event and the `WebResourceResponseReceived` event.
 
 
 <!-- ====================================================================== -->
-## Example of CreateWebResourceRequest and NavigateWithWebResourceRequest
+## Example of web resource request
+
+ <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 
 <!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md#examples -->
 
@@ -85,7 +71,7 @@ CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()))
 
 
 <!-- ====================================================================== -->
-## Example of WebResourceResponseReceived event
+## Example of web resource response
 
 The following code demonstrates how the `WebResourceResponseReceived` event can be used.
 
@@ -210,43 +196,43 @@ m_webview->add_WebResourceResponseReceived(
 
 * [CoreWebView2.NavigateWithWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
 
-* [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext) - Specifies the web resource request contexts.
+* [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)
 
-* [CoreWebView2Environment.CreateWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourcerequest) - Creates a new `CoreWebView2WebResourceRequest` object.
+* [CoreWebView2Environment.CreateWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourcerequest)
 
-* [CoreWebView2WebResourceRequest Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest) - An HTTP request used with the `WebResourceRequested` event.
-   * `Content` - Gets or sets the HTTP request message body as stream.
-   * `Headers` - Gets the mutable HTTP request headers.
-   * `Method` - Gets or sets the HTTP request method.
-   * `Uri` - Gets or sets the request URI.
+* [CoreWebView2WebResourceRequest Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
+   * `Content`
+   * `Headers`
+   * `Method`
+   * `Uri`
 
-* [CoreWebView2.WebResourceRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested) - Raised when the WebView is performing a URL request to a matching URL and resource context filter that was added with `AddWebResourceRequestedFilter`.
+* [CoreWebView2.WebResourceRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
    * [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
    * [CoreWebView2WebResourceRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
-      * `Request` - Gets the web resource request.
-      * `ResourceContext` - Gets the web resource request context.
-      * `Response` - Gets or sets the `CoreWebView2WebResourceResponse` object.
-      * `GetDeferral` - Gets a `CoreWebView2Deferral` object and put the event into a deferred state.
+      * `Request`
+      * `ResourceContext`
+      * `Response`
+      * `GetDeferral`
 
 
 **Response:**
 
-* [CoreWebView2WebResourceResponse Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse) - An HTTP response used with the `WebResourceRequested` event.
-   * `Content` - Gets HTTP response content as stream.
-   * `Headers` - Gets the overridden HTTP response headers.
-   * `ReasonPhrase` - Gets or sets the HTTP response reason phrase.
-   * `StatusCode` - Gets or sets the HTTP response status code.
+* [CoreWebView2WebResourceResponse Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse)
+   * `Content`
+   * `Headers`
+   * `ReasonPhrase`
+   * `StatusCode`
 
 * [CoreWebView2.WebResourceResponseReceived Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
-   * [CoreWebView2WebResourceResponseReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs) - Event args for the `WebResourceResponseReceived` event.
-      * `Request` - Gets the request object for the web resource, as committed.
-      * `Response` - Gets view of the response object received for the web resource.
+   * [CoreWebView2WebResourceResponseReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
+      * `Request`
+      * `Response`
 
-* [CoreWebView2WebResourceResponseView Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview) - View of the HTTP representation for a web resource response.
-   * `Headers` - Gets the HTTP response headers as received.
-   * `ReasonPhrase` - Gets the HTTP response reason phrase.
-   * `StatusCode` - Gets the HTTP response status code.
-   * `GetContentAsync` - Gets the response content stream asynchronously.
+* [CoreWebView2WebResourceResponseView Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview)
+   * `Headers`
+   * `ReasonPhrase`
+   * `StatusCode`
+   * `GetContentAsync`
 
 <!-- -------------------------------------------------- -->
 
@@ -254,46 +240,46 @@ m_webview->add_WebResourceResponseReceived(
 
 **Request:**
 
-* [ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest) - Navigates using a constructed `WebResourceRequest` object.
+* [ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
 
-* [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest) - An HTTP request used with the `WebResourceRequested` event.
-   * `get_Content` - The HTTP request message body as stream.
-   * `get_Headers` - The mutable HTTP request headers.
-   * `get_Method` - The HTTP request method.
-   * `get_Uri` - The request URI.
-   * `put_Content` - Sets the `Content` property.
-   * `put_Method` - Sets the `Method` property.
-   * `put_Uri` - Sets the `Uri` property.
+* [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
+   * `get_Content`
+   * `get_Headers`
+   * `get_Method`
+   * `get_Uri`
+   * `put_Content`
+   * `put_Method`
+   * `put_Uri`
 
-* [ICoreWebView2WebResourceRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs) - Event args for the `WebResourceRequested` event.
-   * `get_Request` - The Web resource request.
-   * `get_ResourceContext` - The web resource request context.
-   * `get_Response` - A placeholder for the web resource response object.
-   * `GetDeferral` - Obtain an `ICoreWebView2Deferral` object and put the event into a deferred state.
-   * `put_Response` - Sets the `Response` property.
+* [ICoreWebView2WebResourceRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
+   * `get_Request`
+   * `get_ResourceContext`
+   * `get_Response`
+   * `GetDeferral`
+   * `put_Response`
 
-* [ICoreWebView2WebResourceRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventhandler) - Runs when a URL request (through network, file, and so on) is made in the webview for a Web resource matching resource context filter and URL specified in `AddWebResourceRequestedFilter`.
-   * `Invoke` - Provides the event args for the corresponding event.
+* [ICoreWebView2WebResourceRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventhandler)
+   * `Invoke`
 
 
 **Response:**
 
-* [ICoreWebView2_2::add_WebResourceResponseReceived](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived) - Adds an event handler for the `WebResourceResponseReceived` event.
+* [ICoreWebView2_2::add_WebResourceResponseReceived](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
 
-* [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse) - An HTTP response used with the `WebResourceRequested` event.
-   * `get_Content` - HTTP response content as stream.
-   * `get_Headers` - Overridden HTTP response headers.
-   * `get_ReasonPhrase` - The HTTP response reason phrase.
-   * `get_StatusCode` - The HTTP response status code.
-   * `put_Content` - Sets the `Content` property.
-   * `put_ReasonPhrase` - Sets the `ReasonPhrase` property.
-   * `put_StatusCode` - Sets the `StatusCode` property.
+* [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse)
+   * `get_Content`
+   * `get_Headers`
+   * `get_ReasonPhrase`
+   * `get_StatusCode`
+   * `put_Content`
+   * `put_ReasonPhrase`
+   * `put_StatusCode`
 
-* [ICoreWebView2WebResourceResponseReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs) - Event args for the `WebResourceResponseReceived` event.
+* [ICoreWebView2WebResourceResponseReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
 
 * [ICoreWebView2WebResourceResponseReceivedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventhandler)
 
-* [ICoreWebView2WebResourceResponseView](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview) - View of the HTTP representation for a web resource response.
+* [ICoreWebView2WebResourceResponseView](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview)
 
 * [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler)
 
