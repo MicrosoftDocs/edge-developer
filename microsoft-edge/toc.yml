@@ -1015,6 +1015,10 @@
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
+            - name: Basic authentication
+              href: webview2/concepts/basic-authentication.md
+              displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
+
             - name: Web and native interop
               items:
                 - name: Interop of native-side and web-side code
@@ -1097,10 +1101,6 @@
             - name: Develop secure WebView2 apps
               href: webview2/concepts/security.md
               displayName: 
-
-#           - name: Basic authentication for WebView2 apps  # forthcoming
-#             href: webview2/concepts/basic-authentication.md
-#             displayName: 
 
             # - name: Customize the UI   # not needed?  flatten
             #   items:
