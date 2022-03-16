@@ -49,7 +49,7 @@ Feedback in the **Issues** tool is provided by several sources, including the Ch
 
 1. Select the **Issues counter**.  The **Issues** tool opens with issues grouped into different categories.
 
-   :::image type="content" source="../media/issues-tool-categories.msft.png" alt-text="Categories of issues in the Issues tool on the demo page." lightbox="../media/issues-tool-categories.msft.png":::
+   ![Categories of issues in the Issues tool on the demo page](media/categories.png)
 
 
 ### Other ways to open the Issues tool
@@ -64,7 +64,7 @@ There are several additional ways to open the **Issues** tool:
 
 Within each category of issues, first the errors are listed, then warnings, and then tips.
 
-:::image type="content" source="../media/issues-ordered-by-severity.msft.png" alt-text="The Issues tool displays Performance issues sorted by severity." lightbox="../media/issues-ordered-by-severity.msft.png":::
+![The Issues tool displays Performance issues sorted by severity](media/ordered-by-severity.png)
 
 
 <!-- ====================================================================== -->
@@ -78,7 +78,7 @@ The **Issues** tool presents additional documentation and recommended fixes to a
 
 1. Select an issue, to expand the issue.
 
-   :::image type="content" source="../media/issues-tool-initial-view-accessibility-page.msft.png" alt-text="The Issues tool, displaying additional information on how to fix the issue." lightbox="../media/issues-tool-initial-view-accessibility-page.msft.png":::
+   ![The Issues tool, displaying additional information on how to fix the issue](media/initial-view-accessibility-page.png)
 
 Each displayed issue has the following components:
 
@@ -102,11 +102,11 @@ To open a linked tool from the **Issues** tool:
 
 1. In **AFFECTED RESOURCES** > **Open in**, select the tool name.  The affected resource is displayed in the selected tool:
 
-   :::image type="content" source="../media/issues-tool-affected-resource-opens-elements-tool.msft.png" alt-text="Select a tool, to open an affected resource from within the Issues tool." lightbox="../media/issues-tool-affected-resource-opens-elements-tool.msft.png":::
+   ![Select a tool, to open an affected resource from within the Issues tool](media/affected-resource-opens-elements-tool.png)
 
     An expanded issue may have a **Network** link, to display the affected resource in the **Network** tool:
 
-   :::image type="content" source="../media/issues-tab-view-issue.msft.png" alt-text="The Network tool opens when you select a Network resource link." lightbox="../media/issues-tab-view-issue.msft.png":::
+   ![The Network tool opens when you select a Network resource link](media/view-issue-in-network.png)
 
 
 <!-- ====================================================================== -->
@@ -124,13 +124,13 @@ To display an issue for elements with wavy underlines in the DOM tree:
 
 1. In the DOM tree, expand `<body>` > `<header>` > `<form>`.  Notice that the `<input>` element has a wavy underline.
 
-   :::image type="content" source="../media/issues-wavy-underlines-dom-tree.msft.png" alt-text="Wavy-underlined issues in the DOM tree in the Elements tool." lightbox="../media/issues-wavy-underlines-dom-tree.msft.png":::
+   ![Wavy-underlined issues in the DOM tree in the Elements tool](media/wavy-underlines-dom-tree.png)
 
 1. Hover over the `<input>` element.  A tooltip displays information about the issue.
 
 1. Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
 
-   :::image type="content" source="../media/issues-opened-from-dom-tree-wavy-underline.msft.png" alt-text="Details about issues on a wavy-underlined element in the DOM tree." lightbox="../media/issues-opened-from-dom-tree-wavy-underline.msft.png":::
+   ![Details about issues on a wavy-underlined element in the DOM tree](media/opened-from-dom-tree-wavy-underline.png)
 
 
 <!-- ====================================================================== -->
