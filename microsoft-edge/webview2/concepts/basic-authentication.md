@@ -81,17 +81,20 @@ later, check:  Teams > Team > channel > Files > dir > filename -->
 1. The HTTP server evaluates the credentials (username and password).
    <!-- "7. Tests the credentials" -->
 
+1. The HTTP server might deny the credentials and request new credentials.
+   <!-- "8. Denies credentials and requests new credentials" -->
+
 1. The HTTP server might reject the username and password; it might tell the WebView2 control "You're not permitted to get that URI/document".
-   <!-- "8. Denies authentication and returns an error page" -->
+   <!-- "9. Denies authentication and returns an error page" -->
 
 1. The WebView2 control renders the error page that's returned by the HTTP server.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
-   <!-- "9. Renders the error page (DOMContentLoaded, NavigationCompleted)" -->
+   <!-- "10. Renders the error page (DOMContentLoaded, NavigationCompleted)" -->
    
 1. The HTTP server might accept the authentication credentials and return the requested document.
-   <!-- "10. Accepts authentication and returns the requested document" -->
+   <!-- "11. Accepts authentication and returns the requested document" -->
 
 1. The WebView2 control renders the returned document.  The rendering occurs between the `ContentLoading` event and `DOMContentLoaded` event.
-   <!-- "11. Renders the requested document (DOMContentLoaded, NavigationCompleted)" -->
+   <!-- "12. Renders the requested document (DOMContentLoaded, NavigationCompleted)" -->
 
 
 <!-- ====================================================================== -->
