@@ -254,7 +254,7 @@ m_webview->add_WebResourceResponseReceived(
 
 **Request:**
 
-* [ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest) - Navigates using a constructed WebResourceRequest object.
+* [ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest) - Navigates using a constructed `WebResourceRequest` object.
 
 * [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest) - An HTTP request used with the `WebResourceRequested` event.
    * `get_Content` - The HTTP request message body as stream.
@@ -265,19 +265,20 @@ m_webview->add_WebResourceResponseReceived(
    * `put_Method` - Sets the `Method` property.
    * `put_Uri` - Sets the `Uri` property.
 
-* [ICoreWebView2WebResourceRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
+* [ICoreWebView2WebResourceRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs) - Event args for the `WebResourceRequested` event.
    * `get_Request` - The Web resource request.
    * `get_ResourceContext` - The web resource request context.
    * `get_Response` - A placeholder for the web resource response object.
    * `GetDeferral` - Obtain an `ICoreWebView2Deferral` object and put the event into a deferred state.
    * `put_Response` - Sets the `Response` property.
 
-* [ICoreWebView2WebResourceRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventhandler)
+* [ICoreWebView2WebResourceRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventhandler) - Runs when a URL request (through network, file, and so on) is made in the webview for a Web resource matching resource context filter and URL specified in `AddWebResourceRequestedFilter`.
+   * `Invoke` - Provides the event args for the corresponding event.
 
 
 **Response:**
 
-* [ICoreWebView2_2::add_WebResourceResponseReceived](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)
+* [ICoreWebView2_2::add_WebResourceResponseReceived](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived) - Adds an event handler for the `WebResourceResponseReceived` event.
 
 * [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse) - An HTTP response used with the `WebResourceRequested` event.
    * `get_Content` - HTTP response content as stream.
@@ -287,8 +288,6 @@ m_webview->add_WebResourceResponseReceived(
    * `put_Content` - Sets the `Content` property.
    * `put_ReasonPhrase` - Sets the `ReasonPhrase` property.
    * `put_StatusCode` - Sets the `StatusCode` property.
-
-* [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse)
 
 * [ICoreWebView2WebResourceResponseReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs) - Event args for the `WebResourceResponseReceived` event.
 
