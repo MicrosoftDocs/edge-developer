@@ -36,77 +36,81 @@
               displayName: Experimental features, settings
 
 # What's New pages ------------------------------------------------------------
+            - name: Microsoft Edge 99
+              href: devtools-guide-chromium/whats-new/2022/03/devtools.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 98
               href: devtools-guide-chromium/whats-new/2022/02/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 97
               href: devtools-guide-chromium/whats-new/2022/01/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 96
               href: devtools-guide-chromium/whats-new/2021/11/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 95
               href: devtools-guide-chromium/whats-new/2021/10/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 94
               href: devtools-guide-chromium/whats-new/2021/09/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 93
               href: devtools-guide-chromium/whats-new/2021/07/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 92
               href: devtools-guide-chromium/whats-new/2021/05/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 91
               href: devtools-guide-chromium/whats-new/2021/04/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 90
               href: devtools-guide-chromium/whats-new/2021/02/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 89
               href: devtools-guide-chromium/whats-new/2021/01/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 88
               href: devtools-guide-chromium/whats-new/2020/11/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 87
               href: devtools-guide-chromium/whats-new/2020/10/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 86
               href: devtools-guide-chromium/whats-new/2020/08/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 85
               href: devtools-guide-chromium/whats-new/2020/06/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 84
               href: devtools-guide-chromium/whats-new/2020/05/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 83
               href: devtools-guide-chromium/whats-new/2020/03/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 81
               href: devtools-guide-chromium/whats-new/2020/01/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
-              displayName: what's new
+              displayName: what's new, announcements
 
 # TOOLS =======================================================================
         - name: Tools
@@ -254,9 +258,17 @@
                   href: devtools-guide-chromium/javascript/disable.md
                   displayName: Sources tool
 
-                - name: Map preprocessed code to source code
+                - name: Map the processed code to your original source code, for debugging
                   href: devtools-guide-chromium/javascript/source-maps.md
-                  displayName: Sources tool
+                  displayName: Sources tool, source maps
+
+                - name: Securely debug original code by publishing source maps to the Azure Artifacts symbol server
+                  href: devtools-guide-chromium/javascript/publish-source-maps-to-azure.md
+                  displayName: Sources tool, source maps, Azure Artifacts symbol server
+
+                - name: Securely debug original code by using Azure Artifacts symbol server source maps
+                  href: devtools-guide-chromium/javascript/consume-source-maps-from-azure.md
+                  displayName: Sources tool, source maps, Azure Artifacts symbol server
 # Optional tool tabs ==========================================================
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
@@ -462,6 +474,11 @@
                 - name: Timeline event reference
                   href: devtools-guide-chromium/evaluate-performance/performance-reference.md
                   displayName: Performance tool
+
+                - name: Display original function names in performance profiles
+                  href: devtools-guide-chromium/evaluate-performance/unminify.md
+                  displayName: Performance tool
+
 # Performance monitor tool ----------------------------------------------------
             - name: Performance monitor tool
               items:
@@ -508,9 +525,9 @@
                   href: devtools-guide-chromium/device-mode/orientation.md
                   displayName: Sensors tool, Device Emulation
 # Source maps monitor tool ----------------------------------------------------
-            - name: Source maps monitor tool
+            - name: Source Maps Monitor tool
               items:
-                - name: Source maps monitor tool  # no article yet
+                - name: Source Maps Monitor tool  # no article yet
                   href: devtools-guide-chromium/source-maps-monitor/source-maps-monitor-tool.md
                   displayName: Source maps monitor tool
 # WebAudio tool ---------------------------------------------------------------
@@ -744,9 +761,6 @@
             - name: Create an extension tutorial, part 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
 
-            - name: Manifest file format for extensions
-              href: extensions-chromium/getting-started/manifest-format.md
-
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md
 
@@ -761,14 +775,25 @@
             - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
 
-            - name: Migrate an extension from Manifest V2 to V3
-              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
-
             - name: Alternate methods of distributing extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
 
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
+
+        - name: Manifest
+          items:
+            - name: Overview of Manifest V3
+              href: extensions-chromium/developer-guide/manifest-v3.md
+              displayName: 
+
+            - name: Migrate an extension from Manifest V2 to V3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+              displayName: 
+
+            - name: Manifest file format for extensions
+              href: extensions-chromium/getting-started/manifest-format.md
+              displayName: 
 
         - name: Publish to the Add-ons website
           items:
@@ -990,6 +1015,10 @@
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
 
+            - name: Basic authentication
+              href: webview2/concepts/basic-authentication.md
+              displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
+
             - name: Web and native interop
               items:
                 - name: Interop of native-side and web-side code
@@ -1000,9 +1029,9 @@
                   href: webview2/how-to/javascript.md
                   displayName: ExecuteScriptAsync API, Use JavaScript in WebView for extended scenarios  # old title
 
-                # - name: Call native-side code from web-side code
-                #   href: webview2/how-to/add-host-object-to-script.md
-                #   displayName: AddHostObjectToScript API
+                - name: Call native-side code from web-side code
+                  href: webview2/how-to/hostobject.md
+                  displayName: AddHostObjectToScript, host objects
 
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
@@ -1073,9 +1102,15 @@
               href: webview2/concepts/security.md
               displayName: 
 
-#           - name: Basic authentication for WebView2 apps  # forthcoming
-#             href: webview2/concepts/basic-authentication.md
-#             displayName: 
+            # - name: Customize the UI   # not needed?  flatten
+            #   items:
+            #     - name: Customize the UI of WebView2 apps
+            #       href: webview2/how-to/customize-ui.md
+            #       displayName: context menu, right-click menu
+
+            - name: Customize context menus
+              href: webview2/how-to/context-menus.md
+              displayName: right-click menu, Customize context menus in WebView2  # top of page title
 
             - name: Use the Chrome DevTools Protocol
               href: webview2/how-to/chromium-devtools-protocol.md
@@ -1187,6 +1222,8 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
+            - name: Contact the Microsoft Edge Driver team
+              href: webdriver-chromium/contact.md
 
         - name: webhint extension for Visual Studio Code
           href: test-and-automation/webhint.md
