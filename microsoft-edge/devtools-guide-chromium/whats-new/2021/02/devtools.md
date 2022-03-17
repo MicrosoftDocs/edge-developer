@@ -38,7 +38,7 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 
 :::image type="content" source="../../media/2021/02/focus-mode.msft.png" alt-text="Display the Activity Bar." lightbox="../../media/2021/02/focus-mode.msft.png":::
 
-See [Reduce the complexity of DevTools with Focus Mode](../../../experimental-features/focus-mode.md).
+See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
 
 
 <!-- ====================================================================== -->

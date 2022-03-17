@@ -1,5 +1,5 @@
 ---
-title: Reduce the complexity of DevTools with Focus Mode
+title: Simplify DevTools using Focus Mode
 description: Learn to use the new Focus Mode experimental user interface to reduce the complexity of DevTools, make it more compact, and easier to open and close tools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 03/15/2022
 ---
-# Reduce the complexity of DevTools with Focus Mode
+# Simplify DevTools using Focus Mode
 
 DevTools has over 30 different tools and many toolbar icons. The current DevTools user interface consists of:
 
-* A main toolbar containing icons such as the **Inspect** and **Device Emulation** tools, and a set of tabbed tools including the **Elements** and **Sources** tools.
+* A main toolbar containing icons such as the **Inspect** and **Device Emulation** modes, and a set of tabbed tools including the **Elements** and **Sources** tools.
 
 * A drawer toolbar containing more tabbed tools and icons.
 
@@ -89,11 +89,11 @@ Here are the main differences between the DevTools default user interface and Fo
 <!-- ====================================================================== -->
 ## Open tools from the Activity Bar
 
-By default, the **Activity Bar** contains the following tools:
+By default, the **Activity Bar** contains the following modes and tools:
 
-* Icon tools:
-   *  **Inspect** tool (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) toggle button.
-   *  **Device Emulation** (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.
+* Icons:
+   *  **Inspect** mode (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) toggle button.
+   *  **Device Emulation** mode (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.
 
 * Tool tabs:
    *  **Welcome** tool (![Welcome tool icon.](media/focus-mode-welcome.png)).
