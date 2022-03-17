@@ -1,6 +1,6 @@
 ---
 title: Track changes to files using the Changes tool
-description: The Changes tool tracks any changes you have made to CSS or JavaScript in DevTools.
+description: The Changes tool tracks any changes you've made to CSS or JavaScript in Microsoft Edge DevTools.  It shows you what changes to make to your actual source files after you've successfully used DevTools to modify your webpage files sent from the server.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,7 +9,9 @@ ms.date: 10/28/2021
 ---
 # Track changes to files using the Changes tool
 
-The **Changes tool** tracks any changes you have made to CSS or JavaScript in DevTools.  Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).  The **Changes** tool shows you what changes to make to your actual source files after you've successfully used DevTools to investigate and fix a problem.
+The **Changes tool** tracks any changes you've made to CSS or JavaScript in DevTools.  It shows you what changes to make to your actual source files after you've successfully used DevTools to modify your webpage files sent from the server.
+
+Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).
 
 :::image type="content" source="../media/changes-tool/changes-tool-open-reduced.msft.png" alt-text="Developer tools with the Changes tool open in the drawer showing three files that have been modified and the modifications of the selected file." lightbox="../media/changes-tool/changes-tool-open.msft.png":::
 
@@ -45,7 +47,7 @@ Click **Customize and control DevTools** (`...`), point to **More tools**, and t
 <!-- ====================================================================== -->
 ## Open the Changes tool by using the Command Menu
 
-Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on Mac, and then type `changes`.  The **Show Changes** command is highlighted; press `Enter`.
+Open the [Command Menu](../command-menu/index.md) by pressing `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on Mac, and then type **changes**.  The **Show Changes** command is highlighted; press `Enter`.
 
 :::image type="content" source="../media/changes-tool/changes-tool-command-menu-reduced.msft.png" alt-text="In the Command Menu, start typing 'changes', and then select the 'Show Changes' command." lightbox="../media/changes-tool/changes-tool-command-menu.msft.png":::
 

@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Edge documentation
-summary: Explore Microsoft Edge documentation.  Learn to use Microsoft Edge by browsing documentation, tutorials, and samples for developers, administrators, and users.
+summary: Learn to use Microsoft Edge by browsing documentation, tutorials, and samples.  Includes information for users, developers, and administrators.
 brand: m365
 metadata:
   title: Microsoft Edge documentation
@@ -139,24 +139,42 @@ conceptualContent:
         # Card
         - title: Microsoft Edge DevTools
           links:
-            - url: /microsoft-edge/devtools-guide-chromium
+            - text: Microsoft Edge Developer documentation  # Edge landing page
+              url: /microsoft-edge/developer/index
               itemType: overview
-              text: DevTools overview
-            - url: /microsoft-edge/devtools-guide-chromium/beginners/html
+
+            - text: Develop for the web with Microsoft Edge  # topmost article
+              url: /microsoft-edge/develop-web-microsoft-edge
               itemType: overview
-              text: DevTools for beginners
-            - url: /microsoft-edge/devtools-guide-chromium/command-menu/index
+
+            - text: Microsoft Edge DevTools documentation  # DevTools landing page
+              url: /microsoft-edge/devtools-guide-chromium/landing/index
+              itemType: overview
+
+            - text: Overview of DevTools  # renamed from index.md
+              url: /microsoft-edge/devtools-guide-chromium/overview
+              itemType: overview
+
+            - text: What's new in Microsoft Edge DevTools
+              url: /microsoft-edge/devtools-guide-chromium/whats-new/whats-new
+              itemType: whats-new
+
+            - text: DevTools for beginners
+              url: /microsoft-edge/devtools-guide-chromium/beginners/html
+              itemType: overview
+
+            - text: Command Menu
+              url: /microsoft-edge/devtools-guide-chromium/command-menu/index
               itemType: how-to-guide
-              text: Command Menu
-            - url: /microsoft-edge/devtools-guide-chromium/open
+
+            - text: View and change CSS
+              url: /microsoft-edge/devtools-guide-chromium/css/index
               itemType: how-to-guide
-              text: Open DevTools
-            - url: /microsoft-edge/devtools-guide-chromium/css/index
-              itemType: how-to-guide
-              text: View and change CSS
-            - url: /microsoft-edge/devtools-guide-chromium/shortcuts
+
+            - text: Keyboard shortcuts
+              url: /microsoft-edge/devtools-guide-chromium/shortcuts
               itemType: reference
-              text: Keyboard shortcuts
+
         # Card
         - title: Microsoft Edge extensions
           links:
@@ -187,24 +205,31 @@ conceptualContent:
             - url: /microsoft-edge/progressive-web-apps-chromium/index
               itemType: overview
               text: Progressive Web Apps overview
+
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/index
               itemType: overview
               text: Get started with Progressive Web Apps
+
             - url: /microsoft-edge/devtools-guide-chromium/progressive-web-apps
               itemType: overview
               text: Debug Progressive Web Apps
+
             - url: /microsoft-edge/progressive-web-apps-chromium/whats-new/pwa
-              itemType: overview
+              itemType: whats-new
               text: What's New in Progressive Web Apps
+
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/offline
               itemType: concept
               text: Offline scenarios
+
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/service-workers
               itemType: concept
               text: Service Workers
+
             - url: /microsoft-edge/progressive-web-apps-chromium/how-to/web-app-manifests
               itemType: concept
               text: Web App Manifests
+
         # Card
         - title: WebView2
           links:
@@ -212,11 +237,11 @@ conceptualContent:
               url: /microsoft-edge/webview2/index
               itemType: overview
 
-            - text: Feature differences between Microsoft Edge and WebView2
+            - text: Differences between Microsoft Edge and WebView2
               url: /microsoft-edge/webview2/concepts/browser-features
               itemType: concept
 
-            - text: WebView2 development best practices
+            - text: Development best practices
               url: /microsoft-edge/webview2/concepts/developer-guide
               itemType: concept
 
@@ -224,20 +249,23 @@ conceptualContent:
               url: /microsoft-edge/webview2/get-started/get-started
               itemType: get-started
 
-            - text: WebView2 sample code
+            - text: Sample Code
               url: /microsoft-edge/webview2/code-samples-links
               itemType: download
 
-            - text: Release notes for WebView2 SDK
+            - text: Release Notes for the WebView2 SDK
               url: /microsoft-edge/webview2/release-notes
               itemType: whats-new
 
-            - text: Microsoft Edge WebView2 API Reference
+            - text: WebView2 API Reference
               url: /microsoft-edge/webview2/webview2-api-reference
               itemType: reference
         # Card
         - title: Test and automation
           links:
+            - url: /microsoft-edge/test-and-automation/test-and-automation
+              itemType: overview
+              text: Test and automation in Microsoft Edge  # new firstchild article
             - url: /microsoft-edge/devtools-protocol-chromium
               itemType: how-to-guide
               text: DevTools Protocol
@@ -259,15 +287,27 @@ conceptualContent:
         # Card
         - title: Web platform
           links:
-            - url: /microsoft-edge/web-platform/user-agent-guidance
+            - text: Web platform overview
+              url: /microsoft-edge/web-platform/web-platform  # new firstchild article
+              itemType: overview
+
+            - text: Site compatibility-impacting changes
+              url: /microsoft-edge/web-platform/site-impacting-changes
               itemType: how-to-guide
-              text: Detecting Microsoft Edge from your website
-            - url: /microsoft-edge/web-platform/site-impacting-changes
+
+            - text: Detect Microsoft Edge from your website
+              url: /microsoft-edge/web-platform/user-agent-guidance
               itemType: how-to-guide
-              text: Site compatibility-impacting changes
+
+            - text: Detect Windows 11 using User-Agent Client Hints
+              url: /microsoft-edge/web-platform/how-to-detect-win11
+              itemType: how-to-guide
         # Card
         - title: Microsoft Edge IDE integration
           links:
+            - url: /microsoft-edge/visual-studio-code/ide-integration
+              text: Microsoft Edge IDE integration  # new firstchild article
+              itemType: overview
             - url: /microsoft-edge/visual-studio/
               itemType: overview
               text: Visual Studio
@@ -305,7 +345,7 @@ additionalContent:
       # summary: sectionsummary # < 160 chars (optional)
       items:
         # Card
-        - summary: Get advice and answers from community experts on Microsoft Q&A
+        - summary: Get advice and answers from community experts.
           title: Community Support on Microsoft Q&A
           url: /answers/topics/ms-edge.html
         # Card

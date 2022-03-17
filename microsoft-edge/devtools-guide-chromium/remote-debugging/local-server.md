@@ -42,7 +42,7 @@ Traffic between the ports travel through the USB connection between your Android
 
 To enable port forwarding:
 
-1. Set up [remote debugging](./index.md) between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
+1. Set up [remote debugging](index.md) between your development machine and your Android device.  When you are finished, your Android device should be displayed in the left-hand menu of the **Inspect Devices** dialog and a **Connected** status indicator.
 
 1. In the **Inspect Devices** dialog in DevTools, enable **Port forwarding**.
 
@@ -50,9 +50,9 @@ To enable port forwarding:
 
    :::image type="content" source="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png" alt-text="Adding a port forwarding rule." lightbox="../media/remote-debugging-remote-devices-devices-port-forwarding-add-rule.msft.png":::
 
-1. In the **Device port** textbox on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.
+1. In the **Device port** text box on the left, enter the `localhost` port number from which you want to be able to access the site on your Android device.  For example, if you wanted to access the site from `localhost:5000` enter `5000`.
 
-1. In the **Local address** textbox on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.
+1. In the **Local address** text box on the right, enter the IP address or hostname on which your site is hosted on the web server running in your development machine, followed by the port number.  For example, if your site is running on `localhost:7331` enter `localhost:7331`.
 
 1. Click **Add**.
 

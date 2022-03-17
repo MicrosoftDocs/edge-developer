@@ -1,18 +1,18 @@
 ---
-title: Using the Microsoft Edge Add-ons API (is currently in bea)
-description: REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
+title: Using the Microsoft Edge Add-ons API (Beta)
+description: Using REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/19/2021
+ms.date: 03/17/2022
 ---
-# Using the Microsoft Edge Add-ons API (is currently in beta)
+# Using the Microsoft Edge Add-ons API (Beta)
 
 > [!NOTE]
-> The Microsoft Edge Add-ons API is currently in beta.  The **Publish API** page is present at Partner Center.  The Microsoft Edge Add-ons API is under active development, and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive, and are subject to change.
+> The Microsoft Edge Add-ons API is currently in beta.  The **Publish API** page is present at Partner Center.  The Microsoft Edge Add-ons API is under active development, and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive and are subject to change.
 
-This article, along with the [Microsoft Edge Add-ons API Reference](addons-api-reference.md), provides an overview of the proposed Microsoft Edge Add-ons API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback as an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
+This article, along with the [Microsoft Edge Add-ons API Reference (Beta)](addons-api-reference.md), provides an overview of the proposed Microsoft Edge Add-ons API.  We look forward to your suggestions and feedback on the proposed API contracts.  Please submit your feedback as an [Issue about the Add-ons API](https://github.com/MicrosoftDocs/edge-developer/issues/new?title=[Add-ons%20API]).
 
 The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatically publishing updates to add-ons submitted to the Microsoft Edge Add-ons website.  You can use these REST endpoints to automate the process of uploading and publishing add-ons into the Microsoft Edge Add-ons website.
 
@@ -227,4 +227,4 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ### See also
 
-*  API Reference: [Check the publishing status](addons-api-reference.md#check-the-publishing-status)
+*  [Using the Microsoft Edge Add-ons API (Beta): Check the publishing status](addons-api-reference.md#check-the-publishing-status)

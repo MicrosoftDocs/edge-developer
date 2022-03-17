@@ -87,7 +87,7 @@ The client or debugger machine is the device you want to debug from.  This devic
 
 1. Go to the `edge://inspect` page in Microsoft Edge.  By default, you should be on the **Devices** section.
 
-1. Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host (debuggee) machine in the textbox following this pattern: http://`IP address`:`connection port`.
+1. Under **Connect to a remote Windows device**, enter the IP address and the connection port of the host (debuggee) machine in the text box following this pattern: http://`IP address`:`connection port`.
 
 1. Click **Connect to Device**.
 

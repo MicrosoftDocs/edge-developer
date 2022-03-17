@@ -21,7 +21,7 @@ The qualities of a PWA combine **the best of the web and compiled apps**. PWAs r
 *  PWAs can access hardware features.
 
 When installed, PWAs are **just like other apps on Windows**.  For example:
-*  A PWA can be added to the Start Menu.
+*  A PWA can be added to the Start menu.
 *  A PWA can be pinned to the Taskbar.
 *  PWAs can handle files.
 *  PWAs can run when the user signs in.
@@ -43,7 +43,7 @@ A fully capable Progressive Web App provides the following advantages to the use
 | Characteristic | Description |
 | --- | --- |
 | [Discoverable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Discoverable) | The app is discoverable from web search results and supporting app stores. |
-| [Installable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable) | Pin and launch the app from the home screen, Start Menu, and Taskbar. |
+| [Installable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Installable) | Pin and launch the app from the home screen, Start menu, and Taskbar. |
 | [Re-engageable](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Re-engageable) | The app can receive push notifications, even when the app isn't active. |
 | [Network-independent](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Network_independent) | The app works offline and in low-network conditions. |
 | [Progressive](https://developer.mozilla.org/docs/Web/Apps/Progressive/Advantages#Progressive) | The user experience of the app scales up or down with device capabilities. |

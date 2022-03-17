@@ -1,6 +1,6 @@
 ---
-title: Inspect animations
-description: Inspect and modify animations with the Animations tool in Microsoft Edge DevTools.
+title: Inspect and modify CSS animation effects
+description: Inspect and modify CSS animation effects by using the Animation Inspector in the Animations tool.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -20,9 +20,10 @@ ms.date: 05/11/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Inspect animations
+# Inspect and modify CSS animation effects
+<!-- orig title: # Inspect animations -->
 
-Inspect and modify animations with the **Animations** tool in Microsoft Edge DevTools.  The **Animations** tool contains the _Animation Inspector_; they are synonymous.
+Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool.
 
 :::image type="content" source="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png" alt-text="The Animations tool." lightbox="../media/inspect-styles-elements-styles-drawer-animations-completed.msft.png":::
 

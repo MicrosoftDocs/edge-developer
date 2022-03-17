@@ -9,6 +9,7 @@ ms.technology: webview
 ms.date: 12/01/2021
 ---
 # Automate and test WebView2 apps with Microsoft Edge Driver
+<!-- old title: # Automate and test WebView2 apps with Microsoft Edge Driver -->
 
 This article explains how to automate and test your WebView2 app with Microsoft Edge Driver, by using the Selenium framework for browser test automation.
 
@@ -24,7 +25,7 @@ For the relationship between the WebDriver protocol, Microsoft Edge Driver as an
 <!-- ====================================================================== -->
 ## Step 1: Download the WebView2API Sample
 
-If you don't have an existing WebView2 project, download the [WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample), which is a comprehensive sample of the latest WebView2 SDK.  Make sure you've satisfied the [prerequisites for the WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites).
+If you don't have an existing WebView2 project, clone the WebView2Samples repo in order to download the [WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample).  That particular sample within the larger repo a comprehensive sample of the latest WebView2 SDK.  Make sure you've satisfied the [prerequisites for the WebView2API Sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample#prerequisites).
 
 Once you've cloned the repo, build the project in Visual Studio.  It should look like the following figure.
 
@@ -38,7 +39,7 @@ Follow the instructions to install [Microsoft Edge Driver](../../webdriver-chrom
 
 Make sure the version of Microsoft Edge Driver matches the version of the WebView2 Runtime that your app uses.  For the WebView2API Sample to work, make sure your version of the WebView2 Runtime is greater than or equal to the supported version of the latest WebView2 SDK release.
 
-*  To locate the latest WebView2 SDK release, see [Release notes for WebView2 SDK](../release-notes.md).
+*  To locate the latest WebView2 SDK release, see [Release Notes for the WebView2 SDK](../release-notes.md).
 
 *  To find out which version of the WebView2 Runtime you currently have, go to `edge://settings/help`.
 
@@ -108,7 +109,7 @@ Microsoft Edge Driver launches your WebView2 app and automatically attaches to t
 
 If you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch, then you can use the "launch" approach; use [Step 4a: Letting Microsoft Edge Driver launch your WebView2 app](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app).
 
-In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.
+In this scenario, there's one WebView2 instance, and it's available upon launch, without needing to navigate through any native UI.
 
 ### Approach 2: Attaching Microsoft Edge Driver to a running WebView2 app
 <!-- preferred phrase -->
@@ -130,7 +131,7 @@ Once you've completed these initial steps to either launch an app or attach to a
 ## Step 4a: Letting Microsoft Edge Driver launch your WebView2 app
 <!-- old title: Drive WebView2 with Selenium and Microsoft Edge Driver -->
 
-Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it is available upon launch without needing to navigate through any native UI.
+Use this "launch" approach if you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch.  In this scenario, there's one WebView2 instance, and it's available upon launch, without needing to navigate through any native UI.
 
 To drive WebView2 with Selenium and Microsoft Edge Driver:
 

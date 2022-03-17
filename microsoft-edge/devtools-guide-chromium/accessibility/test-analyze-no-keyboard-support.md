@@ -27,7 +27,7 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
 
    :::image type="content" source="../media/a11y-testing-donation-button-info.msft.png" alt-text="Inspecting the buttons of the form shows that they aren't keyboard-accessible." lightbox="../media/a11y-testing-donation-button-info.msft.png":::
 
-1. When the **Inspect** tool is active, on the webpage, select the **Other** input textbox, above the **Donate** button.  The **Elements** tool opens, showing the DOM tree for the webpage.  The element `<input id="freedonation" class="smallinput">` is selected.
+1. When the **Inspect** tool is active, on the webpage, select the **Other** input text box, above the **Donate** button.  The **Elements** tool opens, showing the DOM tree for the webpage.  The element `<input id="freedonation" class="smallinput">` is selected.
 
    ```html
    <div class="donationrow">
@@ -44,7 +44,7 @@ To use the Inspect tool and Event Listeners tab to analyze the lack of keyboard 
    </div>
    ```
 
-   The use of the `label` and `input` elements on the **Other** textbox is valid, which means that the **Other** label is correctly linked with the input textbox.  The `input` textbox is also keyboard-accessible.  The rest of the form's markup are `div` elements, which are easy to style, but have no semantic meaning.
+   The use of the `label` and `input` elements on the **Other** text box is valid, which means that the **Other** label is correctly linked with the input text box.  The `input` text box is also keyboard-accessible.  The rest of the form's markup are `div` elements, which are easy to style, but have no semantic meaning.
 
    <!-- 2. Elements tool: Event Listeners tab -->
 

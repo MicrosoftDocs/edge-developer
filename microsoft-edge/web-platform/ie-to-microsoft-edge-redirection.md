@@ -9,9 +9,7 @@ ms.date: 2/8/2022
 ---
 # Move users to Microsoft Edge from Internet Explorer
 
-Many modern websites have designs that are incompatible with Internet Explorer.
-
-When an Internet Explorer user visits an incompatible public website, the user may be instructed by the website that the website is incompatible with Internet Explorer, and that the user must switch to a more modern browser in order to use the website.
+Many modern websites have designs that are incompatible with Internet Explorer.  When an Internet Explorer user visits an incompatible public website, the user may be instructed by the website that the website is incompatible with Internet Explorer, and that the user must switch to a more modern browser in order to use the website.
 
 To minimize disruptions, Microsoft Edge supports a new capability that automatically redirects users.  When an Internet Explorer user goes to a website that's incompatible with Internet Explorer, Windows can automatically redirect the user to Microsoft Edge.  Only websites that are part of the [Need Microsoft Edge list](https://edge.microsoft.com/neededge/v1) are redirected.
 
@@ -74,7 +72,7 @@ Email the following information to [ietoedge@microsoft.com](mailto:ietoedge@micr
 *   Street address
 *   Website address
 
-The Internet Explorer compatibility list is updated within a week.
+The Internet Explorer compatibility list is usually updated within a week. If you experience wait times greater than one week, we may be working through an outage.
 
 > [!NOTE]
 > The Internet Explorer compatibility list is designed to work with public sites only.
