@@ -107,14 +107,14 @@ Microsoft Edge WebDriver launches your WebView2 app and automatically attaches t
 ### Approach 1: Letting Microsoft Edge WebDriver launch your WebView2 app
 <!-- preferred phrase -->
 
-If you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch, then you can use the "launch" approach; use [Step 4a: Letting Microsoft Edge WebDriver launch your WebView2 app](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app).
+If you have a simple app that creates a single WebView2 instance and that instance is active immediately upon launch, then you can use the "launch" approach; use [Step 4a: Letting Microsoft Edge WebDriver launch your WebView2 app](#step-4a-letting-microsoft-edge-webdriver-launch-your-webview2-app).
 
 In this scenario, there's one WebView2 instance, and it's available upon launch, without needing to navigate through any native UI.
 
 ### Approach 2: Attaching Microsoft Edge WebDriver to a running WebView2 app
 <!-- preferred phrase -->
 
-If you have any situation that doesn't fit the "launch" scenario above, you should attach Microsoft Edge WebDriver to a running WebView2 instance (instead of letting Microsoft Edge WebDriver handle the WebView2 launch); use [Step 4b: Attaching Microsoft Edge WebDriver to a running WebView2 app](#step-4b-attaching-microsoft-edge-driver-to-a-running-webview2-app).
+If you have any situation that doesn't fit the "launch" scenario above, you should attach Microsoft Edge WebDriver to a running WebView2 instance (instead of letting Microsoft Edge WebDriver handle the WebView2 launch); use [Step 4b: Attaching Microsoft Edge WebDriver to a running WebView2 app](#step-4b-attaching-microsoft-edge-webdriver-to-a-running-webview2-app).
 
 Some examples of scenarios that don't fit the "launch" scenario are:
 *  You need to navigate through some native UI before the WebView2 instance is created.
@@ -198,7 +198,7 @@ Microsoft Edge WebDriver doesn't handle native UI automation, but here are some 
 
 *  Using Microsoft Native UI automation directly.  The [Microsoft UI Automation](/windows/win32/winauto/entry-uiauto-win32) framework allows automated test scripts to interact with the UI.  Microsoft UI Automation enables Windows applications to provide and consume programmatic information about user interfaces (UIs).  It provides programmatic access to most UI elements on the desktop.  It enables assistive technology products, such as screen readers, to provide information about the UI to end users and to manipulate the UI by standard input and by means other than standard input. <!-- condense that; 1st para -->
 
-* Use a flag such as a command-line parameter or an environment variable to tell your app to launch directly to the WebView2 instance, to avoid the need for navigating native UI.  Depending on your scenario, this might make it possible to use the "launch" approach described in [Step 4a: Letting Microsoft Edge WebDriver launch your WebView2 app](#step-4a-letting-microsoft-edge-driver-launch-your-webview2-app).  <!-- create a special test mode that displays x. -->
+* Use a flag such as a command-line parameter or an environment variable to tell your app to launch directly to the WebView2 instance, to avoid the need for navigating native UI.  Depending on your scenario, this might make it possible to use the "launch" approach described in [Step 4a: Letting Microsoft Edge WebDriver launch your WebView2 app](#step-4a-letting-microsoft-edge-webdriver-launch-your-webview2-app).  <!-- create a special test mode that displays x. -->
 
 In addition to ensuring the WebView2 instance is activated, you need to set its `--remote-debugging-port` command-line parameter.  We'll do this in the steps below.  Microsoft Edge WebDriver will use this remote debugging port to connect to your WebView2 instance.
 
