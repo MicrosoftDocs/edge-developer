@@ -68,7 +68,7 @@ Here are the main differences between the default user interface of DevTools and
 
 * DevTools customization and settings
 
-  Several customization features as well as the DevTools settings are now grouped together under a single menu available from the **...** button in the **Activity Bar**. These features and settings appear in multiple locations in the default user interface.
+  Several customization features as well as the DevTools settings are now grouped together under a single menu available from the **Customize and control DevTools** (**...**) button in the **Activity Bar**. These features and settings appear in multiple locations in the default user interface.
 
   * **Dock location** allows to change the placement of DevTools in the browser window.
   * **Activity Bar location** allows to change the placement of the **Activity Bar** within DevTools.
@@ -145,17 +145,17 @@ The following screenshot shows the **Network** tool and the **Console** tool sid
 
 ![Screenshot of Focus Mode with the Network tool at the top, and the Console tool at the bottom](media/focus-mode-quick-view-tool.png)
 
-When you are done using the second tool, you can close the **Quick View** by clicking the chevron icon (![Quick view chevron toggle icon](media/focus-mode-chevron.png)) in the **Quick View** toolbar.
+When you are done using the second tool, close **Quick View** by clicking **Collapse Quick View** (![Quick view chevron toggle icon](media/focus-mode-chevron.png)).
 
 
 <!-- ====================================================================== -->
 ## Customize Focus Mode
 
-Focus Mode allows to customize the placement of the **Activity Bar**.
-
 The **Activity Bar** can be displayed vertically, or horizontally, or automatically depending on where DevTools is docked.
 
-To change the placement of the **Activity Bar** click the **...** menu button, then **Activity bar location**, and then choose one of the placements.
+To change the placement of the **Activity Bar** click **Customize and control DevTools**, then **Activity bar location**, and then choose one of the placements.
+
+![Screenshot of the Activity bar location menu in Focus Mode](media/focus-mode-activity-bar-location.png)
 
 * **Adapt to dock location**: The **Activity Bar** will automatically be placed depending on where DevTools is docked.
 
