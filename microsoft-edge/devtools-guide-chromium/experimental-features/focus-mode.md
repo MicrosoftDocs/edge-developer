@@ -9,16 +9,17 @@ ms.date: 03/15/2022
 ---
 # Reduce the complexity of DevTools with Focus Mode
 
-The current user interface of DevTools consists of:
+DevTools has over 30 different tools and many toolbar icons. The current DevTools user interface consists of:
 
-* A main toolbar which contains icons (e.g. the **Inspect** and **Device Emulation** tools), and a set of tabbed tools (e.g. the **Elements** or **Sources** tools).
-* A drawer toolbar which contains additional tabbed tools and icons.
+* A main toolbar containing icons such as the **Inspect** and **Device Emulation** tools, and a set of tabbed tools including the **Elements** and **Sources** tools.
 
-The overall experience can be visually and conceptually overwhelming. DevTools has over 30 different tools and many toolbar icons.
+* A drawer toolbar containing more tabbed tools and icons.
 
-Focus Mode is a new experimental user interface for DevTools which lowers the learning curve for new users and reduces the complexity of DevTools without compromising its feature set.
+The overall experience can be visually and conceptually overwhelming.
 
-Focus Mode provides an **Activity Bar**, which is a compact horizontal or vertical toolbar, that contains small icons and replaces the main toolbar. The **Activity Bar** makes it possible to open tools, change user settings, and access additional features.
+Focus Mode is a new experimental user interface for DevTools. It is designed to lower the learning curve for new users and reduce the complexity of DevTools without compromising its feature set.
+
+Focus Mode replaces the main toolbar with an **Activity Bar**, which is a compact horizontal or vertical toolbar. The **Activity Bar** contains small icons and corresponding tooltips. The **Activity Bar** makes it possible to open tools, change user settings, and access additional features from one location.
 
 Focus Mode also provides a **Quick View** list to open a second tool alongside the tool already selected in the **Activity Bar**.
 
@@ -46,39 +47,39 @@ To check if you have Focus Mode enabled already, or to enable or disable it:
 
 
 <!-- ====================================================================== -->
-## Main differences with the default user interface
+## Main differences from the default user interface
 
-Here are the main differences between the default user interface of DevTools and Focus Mode.
+Here are the main differences between the DevTools default user interface and Focus Mode.
 
-* **Activity Bar**
+### Activity Bar
 
-  The **Activity Bar** is the most visible difference with the default user interface. Initially, it appears as a vertical sidebar to the left of the DevTools window. The **Activity Bar** contains icons used to open tools and access help and settings.
+  The **Activity Bar** is the most visible difference from the default user interface. Initially, it appears as a vertical sidebar to the left of the DevTools window. The **Activity Bar** contains icons used to open tools and access help and settings.
 
   It replaces the main toolbar from the default user interface.
 
   ![Screenshot of the activity bar in Focus Mode](media/focus-mode-activity-bar.png)
 
-* **Quick View**
+### Quick View
 
-  The **Quick View** list contains all tools, and is used to display a tool alongside the one already selected from the **Activity Bar**.
+  The **Quick View** list contains all tools and can be used to display a tool alongside the one already selected from the **Activity Bar**.
 
   **Quick View** replaces the drawer toolbar from the default user interface.
 
   ![Screenshot of the quick view list in Focus Mode with a tool selected and opened in the bottom pane](media/focus-mode-quick-view.png)
 
-* DevTools customization and settings
+### DevTools customization and settings
 
-  Several customization features as well as the DevTools settings are now grouped together under a single menu available from the **Customize and control DevTools** (**...**) button in the **Activity Bar**. These features and settings appear in multiple locations in the default user interface.
+  Several customization features and the DevTools settings are now grouped together under a single menu available from the **Customize and control DevTools** (**...**) button in the **Activity Bar**. These features and settings appear in multiple locations in the default user interface.
 
-  * **Dock location** allows to change the placement of DevTools in the browser window.
-  * **Activity Bar location** allows to change the placement of the **Activity Bar** within DevTools.
-  * **Themes** allows to change the color theme.
+  * **Dock location** lets you change the placement of DevTools in the browser window.
+  * **Activity Bar location** lets you change the placement of the **Activity Bar** within DevTools.
+  * **Themes** lets you change the color theme.
   * **Settings** provides access to the DevTools settings.
-  * **Keyboard shortcuts** allows to review and change keyboard shortcuts.
+  * **Keyboard shortcuts** lets you review and change keyboard shortcuts.
 
   ![Screenshot of the menu in Focus Mode](media/focus-mode-menu.png)
 
-* Help links
+### Help links
 
   The **Help** menu contains links to the DevTools documentation and release notes and a button to send feedback to the team. These links and buttons were previously nested under **Customize and control DevTools** > **Help** in the default user interface.
 
@@ -91,7 +92,7 @@ Here are the main differences between the default user interface of DevTools and
 By default, the **Activity Bar** contains the following tools:
 
 * Icon tools:
-   *  **Inspect tool** (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) toggle button.
+   *  **Inspect** tool (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) toggle button.
    *  **Device Emulation** (![Device Emulation icon.](../media/device-emulation-icon-light-theme.png)) button.
 
 * Tool tabs:
@@ -135,7 +136,7 @@ The following tools are permanent and can't be removed from the **Activity Bar**
 <!-- ====================================================================== -->
 ## Open tools from Quick View
 
-Use the **Quick View** list to open a second tool alongside the one already selected from the **Activity Bar**.
+Use the **Quick View** list to open a second tool next to the one already selected from the **Activity Bar**.
 
 1. Choose a tool from the **Activity Bar**.
 
@@ -145,7 +146,7 @@ The following screenshot shows the **Network** tool and the **Console** tool sid
 
 ![Screenshot of Focus Mode with the Network tool at the top, and the Console tool at the bottom](media/focus-mode-quick-view-tool.png)
 
-When you are done using the second tool, close **Quick View** by clicking **Collapse Quick View** (![Quick view chevron toggle icon](media/focus-mode-chevron.png)).
+When you finish using the second tool, close **Quick View** by clicking **Collapse Quick View** (![Quick view chevron toggle icon](media/focus-mode-chevron.png)).
 
 
 <!-- ====================================================================== -->
@@ -153,7 +154,7 @@ When you are done using the second tool, close **Quick View** by clicking **Coll
 
 The **Activity Bar** can be displayed vertically, or horizontally, or automatically depending on where DevTools is docked.
 
-To change the placement of the **Activity Bar** click **Customize and control DevTools**, then **Activity bar location**, and then choose one of the placements.
+To change the location of the **Activity Bar** click **Customize and control DevTools**, then **Activity bar location**, and then choose one of the locations.
 
 ![Screenshot of the Activity bar location menu in Focus Mode](media/focus-mode-activity-bar-location.png)
 
@@ -176,4 +177,4 @@ The following screenshot shows DevTools undocked in its own window, with the hor
 <!-- ====================================================================== -->
 ## See also
 
-* [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md) - initial explainer for this experimental feature, in the DevTools repo.
+* [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md) is the initial explainer for this experimental feature, in the Microsoft Edge DevTools repo.
