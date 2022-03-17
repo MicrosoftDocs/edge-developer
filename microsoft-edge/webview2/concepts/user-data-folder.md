@@ -26,13 +26,13 @@ The user data folder (UDF) is a folder stored on the user's machine, that contai
 
 WebView2 creates the UDF in the default location for the platform, or in the custom UDF location that your host app explicitly specifies.
 
-By default, WebView2 creates a user data folder in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a different location.  Make sure that user data folder location has appropriate Read/Write permissions for the WebView2 app runtime.
+By default, WebView2 creates a UDF in the default location for the particular platform.  This works well on some platforms, but not others.  If your app has specific needs, you can specify a custom UDF location.  Make sure that the custom UDF location that you specify has appropriate Read/Write permissions for the WebView2 app runtime.
 
 
 <!-- ====================================================================== -->
 ## What kind of data is stored in the UDF
 
-WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
+WebView2 apps use user data folders (UDFs) to store browser data, such as cookies, permissions, and cached resources.
 
 | Type of data | Description |
 |---|---|
@@ -58,7 +58,7 @@ The above types of data are listed as enum members in the [CoreWebView2BrowsingD
 <!-- ====================================================================== -->
 ## How and when the UDF is created
 
-The user data folder is created for your WebView2 host app by the WebView2 control.
+The user data folder (UDF) is created for your WebView2 host app by the WebView2 control.
 
 The UDF is created in the default UDF location for the platform, or if your host app specifies a custom UDF location, the UDF is created in the custom UDF location.
 
@@ -68,7 +68,7 @@ The UDF is created on startup of the WebView2 host app, if the UDF doesn't exist
 <!-- ====================================================================== -->
 ## How many UDFs are created?
 
-Each instance of a WebView2 control is associated with a UDF.
+Each instance of a WebView2 control is associated with a user data folder (UDF).
 
 Each WebView2 session must have a UDF.  There's only 1 active UDF per WebView2 session.
 
@@ -82,7 +82,7 @@ If the host app is installed per-user, each UDF is unique to a user, if not othe
 <!-- ====================================================================== -->
 ## How to move the UDF
 
-To move a UDF:
+To move a user data folder (UDF):
 
 1. Shut down all WebView2 sessions.
 
@@ -91,6 +91,8 @@ To move a UDF:
 
 <!-- ====================================================================== -->
 ## The default UDF location
+
+The default user data folder (UDF) location varies per platform.
 
 
 <!-- ====================================================================== -->
@@ -236,6 +238,8 @@ WinUI 3 is a "packaged" platform; it runs in the sandbox and is packaged to run 
 
 <!-- ====================================================================== -->
 ## Specifying a custom UDF location
+
+How to specify a custom user data folder (UDF) location varies per platform.
 
 
 <!-- ====================================================================== -->
@@ -420,13 +424,13 @@ After creation of the session and UDF, browser data from your WebView2 control i
 <!-- ====================================================================== -->
 ## Retrieving the UDF location
 
-To find out what the user data folder location was set to, use the `UserDataFolder` property.  This read-only property returns the user data folder location for the WebView2 app.
+To find out what the user data folder (UDF) location was set to, use the `UserDataFolder` property.  This read-only property returns the UDF location for the WebView2 app.
 
 Reasons you might want to read the UDF location:
 
 *  If you want to clear browsing data from the UDF folder, such as at the end of a session.
 
-*  If you want to delete the user data folder.
+*  If you want to delete the UDF.
 
 
 <!-- ====================================================================== -->
@@ -535,7 +539,7 @@ For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView
 <!-- ====================================================================== -->
 ## Clearing space in the UDF
 
-Instead of deleting the user data folder, clear browsing data from the user data folder.  For example, clear user data and history when a user signs out.
+Instead of deleting the user data folder (UDF), clear browsing data from the UDF.  For example, clear user data and history when a user signs out.
 
 See [Clear browsing data from the user data folder](clear-browsing-data.md).
 
@@ -543,7 +547,7 @@ See [Clear browsing data from the user data folder](clear-browsing-data.md).
 <!-- ====================================================================== -->
 ## Handling error messages
 
-If the user data folder doesn't have Write permissions, the following error message strings may be returned:
+If the user data folder (UDF) doesn't have Write permissions, the following error message strings may be returned:
 * `User data folder cannot be created because a file with the same name already exists.`
 * `Unable to create user data folder, Access Denied.`
 
@@ -561,7 +565,7 @@ Error message strings are displayed in a dialog box.
 <!-- ====================================================================== -->
 ## Whether to persist user data folders in various scenarios
 
-Your host app controls the lifetime of the user data folder.  If your app re-uses user data from app sessions, consider saving the user data folders.<!--HOW? by virtue of not deleting them?  State explicitly how to accomplish/carry out this advice.-->
+Your host app controls the lifetime of the user data folder (UDF).  If your app re-uses user data from app sessions, consider saving (that is, not deleting) the UDFs.
 
 If your app doesn't reuse user data from app sessions, you can delete the UDF.  However, while a session is running, it's better to call the _clear browsing data_ methods instead of deleting the UDF.
 
@@ -569,15 +573,15 @@ If your app doesn't reuse user data from app sessions, you can delete the UDF.  
 <!-- ====================================================================== -->
 ## Persisting user data folders if same user uses your app repeatedly, and the web content of the app relies on the user's data
 
-In this scenario, don't explicitly delete the user data folder; persist the data.
+In this scenario, don't explicitly delete the user data folder (UDF); persist the data.
 
 
 <!-- ====================================================================== -->
 ## Persisting user data folders if multiple users use your app repeatedly
 
-If multiple users use your app repeatedly, you should create a new user data folder for each new user, and save the user data folder of each user.
+If multiple users use your app repeatedly, you should create a new user data folder (UDF) for each new user, and save the UDF of each user.
 
-The WebView2 control creates a new user data folder for each new user.  The WebView2 control creates one UDF per session.  If there are multiple WebView2 sessions, the WebView2 control creates multiple UDFs.  Usually if the host app has more than one WebView2 control instance, the host app should point all instances of WebView2 to the same UDF.
+The WebView2 control creates a new UDF for each new user.  The WebView2 control creates one UDF per session.  If there are multiple WebView2 sessions, the WebView2 control creates multiple UDFs.  Usually if the host app has more than one WebView2 control instance, the host app should point all instances of WebView2 to the same UDF.
 
 Each host app that has a WebView2 control instance will have its own UDF.  Your host app can have each UDF point to the same place.  
 
@@ -611,15 +615,15 @@ In ClickOnce apps, it installs in a single location, and when the session ends, 
 <!-- ====================================================================== -->
 ## Persisting user data folders if your app doesn't have repeat users
 
-In this scenario, create a new user data folder for each user, and delete the previous user data folder.
+In this scenario, create a new user data folder (UDF) for each user, and delete the previous UDF.
 
 
 <!-- ====================================================================== -->
 ## Deleting user data folders
 
-Your host app or the uninstaller can delete the UDF.  You might need to delete user data folders, for any of the following reasons:
+Your host app or the uninstaller can delete the user data folder (UDF).  You might need to delete UDFs for any of the following reasons:
 
-*  If you want to uninstall a packaged Windows Store app.  In this case, Windows deletes user data folders automatically.
+*  If you want to uninstall a packaged Windows Store app.  In this case, Windows deletes UDFs automatically.
 
 *  If you want to clean up all browsing data history.  However, see the _clear browsing data_ methods first, as an easier, more flexible approach.
 
@@ -632,39 +636,39 @@ Your host app or the uninstaller can delete the UDF.  You might need to delete u
 
 ### End the WebView2 session before deleting the UDF
 
-To delete a UDF, you must first end the WebView2 session.  You cannot delete a UDF if the WebView2 session is currently active.
+To delete a user data folder (UDF), you must first end the WebView2 session.  You cannot delete a UDF if the WebView2 session is currently active.
 
 <!-- write a separate article about writing a WebView2 uninstaller -->
 
 
 ### Wait for browser processes to exit before deleting the UDF
 
-If files are still in use after your WebView2 host app closes, wait for browser processes to exit before deleting the user data folder.
+If files are still in use after your WebView2 host app closes, wait for browser processes to exit before deleting the user data folder (UDF).
 
-Files in user data folders might still be in use after the WebView2 app is closed.  In this situation, wait for the browser process and all child processes to exit before deleting the user data folder.  To monitor processes to wait for them to exit, retrieve the process ID of the browser process by using the `BrowserProcessId` property of the WebView2 app instance.
+Files in UDFs might still be in use after the WebView2 app is closed.  In this situation, wait for the browser process and all child processes to exit before deleting the UDF.  To monitor processes to wait for them to exit, retrieve the process ID of the browser process by using the `BrowserProcessId` property of the WebView2 app instance.
 
 
 <!-- ====================================================================== -->
 ## Sharing user data folders
 
-WebView2 control instances can share the same user data folders, to do the following:
+WebView2 control instances can share the same user data folders (UDFs), to do the following:
 
 *  Optimize system resources by running in one browser process.  See [Process model for WebView2 apps](../concepts/process-model.md).
 
 *  Share browser history and cached resources.
 
 
-Consider the following when sharing user data folders:
+Consider the following when sharing UDFs:
 
-*  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) event handlers or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, your host app must ensure that browser processes exit and close any WebView2 controls that share the same user data folder.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
+*  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) event handlers or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, your host app must ensure that browser processes exit and close any WebView2 controls that share the same UDF.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
 
 
 <!-- ====================================================================== -->
 ## Avoid running too many folders at once
 
-To isolate different parts of your app, or when sharing data between WebView2 controls isn't needed, you can use different user data folders.  For example, an app can consist of two WebView2 controls, one for displaying an advertisement and the other for displaying app content.  You can use different user data folders for each WebView2 control.
+To isolate different parts of your app, or when sharing data between WebView2 controls isn't needed, you can use different user data folders (UDFs).  For example, an app can consist of two WebView2 controls, one for displaying an advertisement and the other for displaying app content.  You can use different UDFs for each WebView2 control.
 
-Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different user data folders at the same time.
+Each WebView2 browser process consumes additional memory and disk space.  Therefore, avoid running a WebView2 control with too many different UDFs at the same time.
 
 
 <!-- ====================================================================== -->
