@@ -213,7 +213,7 @@ On desktop operating systems, Microsoft Edge is commonly identified by the `Edg`
 | Legacy Edge* | `Edge`|
 
 > [!NOTE]
-> *The legacy Edge browser does not support User Agent Client Hints. It can only be differentiated from Chromium-based Microsoft Edge using the User Agent String.
+> \* Legacy Edge browser does not support User Agent Client Hints. It can only be differentiated from Chromium-based Microsoft Edge using the User Agent String.
 
 
 
