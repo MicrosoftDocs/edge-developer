@@ -24,9 +24,9 @@ To update your extension on the store:
 
 1.  Update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version in the manifest file.
 
-1.  After you make the changes, select **Save** > **Publish** to update your extension listing, and start the certification process.
+2.  After you make the changes, select **Publish** to update your extension listing, and start the certification process.
 
-1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
+3.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
 
 After your extension has been initially created, you will be able to update it programmatically [Using the Microsoft Edge Add-ons API (Beta)](api/using-addons-api.md).
 
@@ -47,7 +47,7 @@ To edit your submission:
 
 1.  Move to other sections and update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version in the manifest file to match changes since the previous package version.
 
-1.  After making changes, select **Save** > **Publish**.
+2.  After making changes, select **Publish**.
 
 > [!IMPORTANT]
 > The process stops and removes your current submission from the Microsoft Edge extensions certification pipeline and a new review starts with the latest submission.
@@ -64,7 +64,7 @@ To edit your extension:
 
 1.  Update either the extension package or the metadata incorporating the feedback received from the certification process.  If you update the extension package, make sure that you increase the version in the manifest file.
 
-1.  After making changes, select **Save** > **Publish**.
+2.  After making changes, select **Publish**.
 
 
 <!-- ====================================================================== -->

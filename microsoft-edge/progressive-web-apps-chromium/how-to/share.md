@@ -74,7 +74,7 @@ On Windows, the above code will trigger the share dialog, allowing the user to p
 
 :::image type="content" source="../media/windows-share-dialog.png" alt-text="The share dialog on Windows.":::
 
-Once the user has chosen an app to receive the shared content, it is up to this app to handle it any way it chooses.  For example, an email app might use the `title` as the email subject, and use the `text` as the email body.
+Once the user has selected an app to receive the shared content, it is up to this app to handle it any way it chooses.  For example, an email app might use the `title` as the email subject, and use the `text` as the email body.
 
 
 ### Sharing files
@@ -239,7 +239,7 @@ In the above code:
 
 1. Uses the data in some way (such as to store the content locally).
 
-1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](./background-syncs.md)).
+1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](background-syncs.md)).
 
 ### Handle shared files
 

@@ -9,7 +9,7 @@ ms.date: 03/25/2021
 ---
 # Remotely debug Surface Duo emulators
 
-In this article, you walk through the process of remotely debugging your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on a [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) emulator from a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge).  For information on debugging on a Surface Duo device, follow our guide for [remote debugging Android devices](./index.md).
+In this article, you walk through the process of remotely debugging your web content in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on a [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) emulator from a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge).  For information on debugging on a Surface Duo device, follow our guide for [remote debugging Android devices](index.md).
 
 
 <!-- ====================================================================== -->
@@ -21,9 +21,10 @@ In this article, you walk through the process of remotely debugging your web con
 <!-- ====================================================================== -->
 ## Step 1: Go to edge://inspect
 
-*  Open a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge), and go to `edge://inspect`.
+*  Open a desktop instance of [Microsoft Edge](https://www.microsoft.com/edge), and go to `edge://inspect`:
 
-:::image type="content" source="../media/remote-debugging-surface-duo-inspect-page.msft.png" alt-text="The edge://inspect page in Microsoft Edge on the desktop" lightbox="../media/remote-debugging-surface-duo-inspect-page.msft.png":::
+> [!div class="mx-imgBorder"]
+> ![The edge://inspect page in Microsoft Edge on the desktop.](../media/remote-debugging-surface-duo-inspect-page.msft.png)
 
 If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-screen/android/use-emulator), restart the emulator.
 
@@ -31,9 +32,9 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 <!-- ====================================================================== -->
 ## Step 2: Launch the Surface Duo emulator
 
-*  Launch the [Surface Duo emulator](/dual-screen/android/use-emulator).  The emulator displays two different screens running on the emulator.
+*  Launch the [Surface Duo emulator](/dual-screen/android/use-emulator).  The emulator displays two different screens running on the emulator:
 
-:::image type="content" source="../media/remote-debugging-surface-duo-emulator.msft.png" alt-text="The Surface Duo emulator." lightbox="../media/remote-debugging-surface-duo-emulator.msft.png":::
+![The Surface Duo emulator.](../media/remote-debugging-surface-duo-emulator.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -41,9 +42,9 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 
 1. On either screen, swipe up on the Favorites Tray of the [Surface Duo emulator](/dual-screen/android/use-emulator) to display the Apps Drawer.
 
-1. Click **Edge** to launch the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx).
+1. Click **Edge** to launch the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx):
 
-   :::image type="content" source="../media/remote-debugging-surface-duo-emulator-edge.msft.png" alt-text="The Microsoft Edge app on the Surface Duo emulator." lightbox="../media/remote-debugging-surface-duo-emulator-edge.msft.png":::
+   ![The Microsoft Edge app on the Surface Duo emulator.](../media/remote-debugging-surface-duo-emulator-edge.msft.png)
 
 1. In the Microsoft Edge app, go to the website or app that you want to debug.
 
@@ -53,23 +54,24 @@ If the `edge://inspect` page doesn't recognize the [Surface Duo emulator](/dual-
 
 1. Switch back to the desktop instance of [Microsoft Edge](https://www.microsoft.com/edge).
 
-   The `edge://inspect` page now shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../progressive-web-apps-chromium/index.md) that are running on the [Surface Duo emulator](/dual-screen/android/use-emulator).
+   The `edge://inspect` page now shows the **SurfaceDuoEmulator** with a list of the open tabs or [PWAs](../../progressive-web-apps-chromium/index.md) that are running on the [Surface Duo emulator](/dual-screen/android/use-emulator):
 
-   :::image type="content" source="../media/remote-debugging-surface-duo-inspect-page-with-targets.msft.png" alt-text="The edge://inspect page displays a list of the open tabs in the Microsoft Edge app running on the emulator." lightbox="../media/remote-debugging-surface-duo-inspect-page-with-targets.msft.png":::
+   ![The edge://inspect page shows a list of the open tabs in the Microsoft Edge app running on the emulator.](../media/remote-debugging-surface-duo-inspect-page-with-targets.msft.png)
 
 1. From the list of open tabs running on the emulator, click **inspect** on the tab that has the web content to be debugged.  [DevTools](../index.md) opens in a new window.
 
 1. Click **Toggle Screencast** (![Toggle Screencast.](../media/toggle-screencast-icon.msft.png)) to view the web content from your [Surface Duo emulator](/dual-screen/android/use-emulator) in the DevTools window.
 
-You can now use the Microsoft Edge DevTools to debug your web content on the [Surface Duo emulator](/dual-screen/android/use-emulator).
+You can now use the Microsoft Edge DevTools to debug your web content on the [Surface Duo emulator](/dual-screen/android/use-emulator):
 
-:::image type="content" source="../media/remote-debugging-surface-duo-devtools.msft.png" alt-text="Using the Microsoft Edge DevTools to debug Bing in the Microsoft Edge app on the Surface Duo emulator." lightbox="../media/remote-debugging-surface-duo-devtools.msft.png":::
+![Using the Microsoft Edge DevTools to debug Bing in the Microsoft Edge app on the Surface Duo emulator.](../media/remote-debugging-surface-duo-devtools.msft.png)
+
 
 ### Troubleshooting
 
 If **SurfaceDuoEmulator** isn't displayed on the `edge://inspect` page, try opening or closing tabs in the [Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on the [Surface Duo Emulator](/dual-screen/android/use-emulator).
 
-For additional troubleshooting steps, see [troubleshooting section for Android devices](./index.md#troubleshooting-devtools-isnt-detecting-the-android-device).
+For additional troubleshooting steps, see [troubleshooting section for Android devices](index.md#troubleshooting-devtools-isnt-detecting-the-android-device).
 
 ### How the hinge impacts the layout of your web content
 

@@ -21,7 +21,7 @@ ms.date: 05/04/2021
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# What's New In DevTools (Microsoft Edge 89)
+# What's New in DevTools (Microsoft Edge 89)
 
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
@@ -58,7 +58,7 @@ The **Font Editor** helps you to:
 *  Convert units.
 *  Generate accurate CSS code.
 
-To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments** and select the checkbox next to **Enable new Font Editor tools within Styles pane**.  See [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).  To review the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
+To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments** and select the checkbox next to **Enable new Font Editor tools within Styles pane**.  See [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).  For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
 :::image type="content" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="The visual Font editor in the Styles pane." lightbox="../../media/2021/01/visual-font-editor.msft.png":::
 
@@ -155,7 +155,7 @@ Turn on **Experimental Web Platform features** to access the new [CSS media scre
 * [Spanning](../../../device-mode/dual-screen-and-foldables.md#test-on-foldable-and-dual-screen-devices), which is when your website (or app) appears across both screens.
 * [Rendering the seam](/dual-screen/introduction#how-to-work-with-the-seam), which is the space between the two screens.
 
-To review the history of this feature in the Chromium open-source project, see Issue [1054281](https://crbug.com/1054281).
+For the history of this feature in the Chromium open-source project, see Issue [1054281](https://crbug.com/1054281).
 
 :::image type="content" source="../../media/2021/01/emulate-surface-device-surface-duo.msft.png" alt-text="Emulate dual-screen." lightbox="../../media/2021/01/emulate-surface-device-surface-duo.msft.png":::
 
@@ -180,7 +180,7 @@ You can file issues and contribute to the extension on the [vscode-edge-devtools
 
 ### Capture node screenshot beyond viewport
 
-In Microsoft Edge version 89, node screenshots are more accurate, capturing the full node even if content from the node isn't visible in the viewport.  In the **Elements** tool, right-click an element, and then select **Capture node screenshot**.  To review the history of this feature in the Chromium open-source project, see Issue [1003629](https://crbug.com/1003629).
+In Microsoft Edge version 89, node screenshots are more accurate, capturing the full node even if content from the node isn't visible in the viewport.  In the **Elements** tool, right-click an element, and then select **Capture node screenshot**.  For the history of this feature in the Chromium open-source project, see Issue [1003629](https://crbug.com/1003629).
 
 :::image type="content" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Capture node screenshot highlighted on the context menu in the Elements tool." lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
 
@@ -206,7 +206,7 @@ Use the new **Duplicate element** shortcut to clone an element.  In the **Elemen
 
 #### Color pickers for custom CSS properties
 
-The **Styles** pane now displays color pickers for custom CSS properties.  To cycle through the RGBA, HSLA, and Hex formats of the color value, press and hold `Shift` and then click the color picker.  To review the history of this feature in the Chromium open-source project, see Issue [1147016](https://crbug.com/1147016).
+The **Styles** pane now displays color pickers for custom CSS properties.  To cycle through the RGBA, HSLA, and Hex formats of the color value, press and hold `Shift` and then click the color picker.  For the history of this feature in the Chromium open-source project, see Issue [1147016](https://crbug.com/1147016).
 
 :::image type="content" source="../../media/2021/01/elements-styles-change-color-format.msft.png" alt-text="Color pickers for custom CSS properties." lightbox="../../media/2021/01/elements-styles-change-color-format.msft.png":::
 
@@ -234,19 +234,21 @@ Copy options for a CSS property in the right-click menu:
 
 :::image type="content" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="Copy options for a CSS property in the right-click menu." lightbox="../../media/2021/01/copy-css-property.msft.png":::
 
-To review the history of this feature in the Chromium open-source project, see Issue [1152391](https://crbug.com/1152391).
+For the history of this feature in the Chromium open-source project, see Issue [1152391](https://crbug.com/1152391).
 
 ### Cookies updates
 
 #### New option to display URL-decoded cookies
 
-You can now display the URL-decoded cookies value in the **Cookies** pane.  To display the decoded cookie, select **Application** > **Cookies**, click any cookie on the list, and then select the checkbox next to **Show URL decoded**.  To view the history of this feature in the Chromium open-source project, see Issue [997625](https://crbug.com/997625).
+You can now display the URL-decoded cookies value in the **Cookies** pane.  To display the decoded cookie, select **Application** > **Cookies**, click any cookie on the list, and then select the checkbox next to **Show URL decoded**.  For the history of this feature in the Chromium open-source project, see Issue [997625](https://crbug.com/997625).
 
 :::image type="content" source="../../media/2021/01/application-cookies-show-url-decoded.msft.png" alt-text="Option to display URL-decoded cookies." lightbox="../../media/2021/01/application-cookies-show-url-decoded.msft.png":::
 
 #### Filter and clear visible cookies
 
-In Microsoft Edge version 88 or earlier, the **Application** tool only provided a way to clear all cookies with the **Clear all cookies** button.  In Microsoft Edge version 89, you can now select **Clear filtered cookies** to delete only the filtered cookies.  To filter cookies, select **Application** > **Cookies**, and then type in the **Filter** textbox.  To delete the displayed cookies, click the **Clear filtered cookies** button.  To display all other cookies, clear the filter text.  To review the history of this feature in the Chromium open-source project, see Issue [978059](https://crbug.com/978059).
+In Microsoft Edge version 88 or earlier, the **Application** tool only provided a way to clear all cookies with the **Clear all cookies** button.  In Microsoft Edge version 89, you can now select **Clear filtered cookies** to delete only the filtered cookies.
+
+To filter cookies, select **Application** > **Cookies**, and then type in the **Filter** text box.  To delete the displayed cookies, click the **Clear filtered cookies** button.  To display all other cookies, clear the filter text.  For the history of this feature in the Chromium open-source project, see Issue [978059](https://crbug.com/978059).
 
 :::image type="content" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="Clear only visible cookies." lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
 
@@ -256,7 +258,7 @@ DevTools now clears only first-party cookies by default.  To clear website data 
 
 To clear website data and all cookies, select **Application** > **Storage**.  Select the checkbox next to **including third-party cookies**, and then click **Clear site data**.
 
-To review the history of this feature in the Chromium open-source project, see Issue [1012337](https://crbug.com/1012337).
+For the history of this feature in the Chromium open-source project, see Issue [1012337](https://crbug.com/1012337).
 
 :::image type="content" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="Option to clear third-party cookies." lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
 
@@ -264,13 +266,13 @@ To review the history of this feature in the Chromium open-source project, see I
 
 #### Persist Record network log setting
 
-In Microsoft Edge version 88 or earlier, DevTools reset the **Record network log** setting when a webpage refreshes.  In Microsoft Edge version 89, DevTools now persist the **Record network log** setting.  To review the history of this feature in the Chromium open-source project, see Issue [1122580](https://crbug.com/1122580).
+In Microsoft Edge version 88 or earlier, DevTools reset the **Record network log** setting when a webpage refreshes.  In Microsoft Edge version 89, DevTools now persist the **Record network log** setting.  For the history of this feature in the Chromium open-source project, see Issue [1122580](https://crbug.com/1122580).
 
 :::image type="content" source="../../media/2021/01/network-log.msft.png" alt-text="Record network log." lightbox="../../media/2021/01/network-log.msft.png":::
 
 #### Online option is now No throttling option
 
-The network emulation option **Online** is now renamed to **No Throttling**.  To review the history of this feature in the Chromium open-source project, see Issue [1028078](https://crbug.com/1028078).
+The network emulation option **Online** is now renamed to **No Throttling**.  For the history of this feature in the Chromium open-source project, see Issue [1028078](https://crbug.com/1028078).
 
 :::image type="content" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="No throttling option." lightbox="../../media/2021/01/network-no-throttling.msft.png":::
 
@@ -278,7 +280,7 @@ The network emulation option **Online** is now renamed to **No Throttling**.  To
 
 #### Copy object in the Console and Sources tool
 
-You can now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects.  To review the history of this feature in the Chromium open-source project, see Issues [1148353](https://crbug.com/1148353) and [1149859](https://crbug.com/1149859).
+You can now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects.  For the history of this feature in the Chromium open-source project, see Issues [1148353](https://crbug.com/1148353) and [1149859](https://crbug.com/1149859).
 
 In the **Console** tool, right-click an object, and then select **Copy object**.
 
@@ -290,7 +292,7 @@ In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** 
 
 #### Copy file name in the Sources tool and Styles pane
 
-You can now copy a file name using the right-click menu.  To review the history of this feature in the Chromium open-source project, see Issues [1155120](https://crbug.com/1155120).
+You can now copy a file name using the right-click menu.  For the history of this feature in the Chromium open-source project, see Issues [1155120](https://crbug.com/1155120).
 
 In the **Sources** tool, right-click a file name, and then select **Copy file name**.
 
@@ -304,19 +306,19 @@ In the **Elements** tool > **Styles** pane, right-click a file name, and then se
 
 #### Service Workers information in Frame details
 
-DevTools now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.  To review the history of this feature in the Chromium open-source project, see Issue [1122507](https://crbug.com/1122507).
+DevTools now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.  For the history of this feature in the Chromium open-source project, see Issue [1122507](https://crbug.com/1122507).
 
 :::image type="content" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="Service Workers information in the Frames details." lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
 
 #### Measure Memory information in Frame details
 
-The `performance.measureMemory()` API status is now displayed under the **API availability** section.  The new `performance.measureMemory()` API estimates the memory usage of the entire webpage.  To review the history of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
+The `performance.measureMemory()` API status is now displayed under the **API availability** section.  The new `performance.measureMemory()` API estimates the memory usage of the entire webpage.  For the history of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
 
 :::image type="content" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="Measure Memory." lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
 
 ### Dropped frames in the Performance tool
 
-When you [analyze load performance in the Performance tool](../../../evaluate-performance/reference.md#record-load-performance), the **Frames** section now marks dropped frames as red.  To display the frame rate, hover on a dropped frame.  To review the history of this feature in the Chromium open-source project, see Issue [1075865](https://crbug.com/1075865).
+When you [analyze load performance in the Performance tool](../../../evaluate-performance/reference.md#record-load-performance), the **Frames** section now marks dropped frames as red.  To display the frame rate, hover on a dropped frame.  For the history of this feature in the Chromium open-source project, see Issue [1075865](https://crbug.com/1075865).
 
 :::image type="content" source="../../media/2021/01/performance-frames-dropped-frames-red.msft.png" alt-text="Dropped frames." lightbox="../../media/2021/01/performance-frames-dropped-frames-red.msft.png":::
 

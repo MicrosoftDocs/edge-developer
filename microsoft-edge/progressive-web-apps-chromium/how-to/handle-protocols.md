@@ -22,7 +22,7 @@ To learn more about other existing protocols, see [List of URI schemes](https://
 <!-- ====================================================================== -->
 ## Register protocols to handle
 
-To use Protocol Handling, declare which protocols your app handles. This is done in your app [manifest file](./web-app-manifests.md), by using the `protocol_handlers` array member.
+To use Protocol Handling, declare which protocols your app handles. This is done in your app [manifest file](web-app-manifests.md), by using the `protocol_handlers` array member.
 
 Each entry in the `protocol_handlers` array contains a `protocol` string and a `url` string:
 

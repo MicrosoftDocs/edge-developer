@@ -1,5 +1,5 @@
 ---
-title: Navigation events for WebView2
+title: Navigation events for WebView2 apps
 description: "Navigation events for WebView2: NavigationStarting, SourceChanged, ContentLoading, HistoryChanged, DOMContentLoaded, and NavigationCompleted."
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,25 +8,40 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 10/28/2021
 ---
-# Navigation events for WebView2
+# Navigation events for WebView2 apps
+<!-- old title: # Navigation events for WebView2 -->
+
+<!--
+maintenance links (keep)
+This, main page:
+* [Navigation events for WebView2 apps](../concepts/navigation-events.md) - main copy; update it and then propagate/copy to these h2 sections:
+Derivative copies of this page's content, or links to this page:
+* [Get started with WebView2 in Win32 apps](../get-started/win32.md#step-12---navigation-events)
+* [Get started with WebView2 in WinForms apps](../get-started/winforms.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md#step-7---navigation-events)
+* [Get started with WebView2 in WinUI 3 (Windows App SDK) apps](../get-started/winui.md#step-7---navigation-events)
+* [Get started with WebView2 in WPF apps](../get-started/wpf.md#step-6---navigation-events)
+-->
 
 Supported platforms: Win32, Windows Forms, WinUi, WPF.
 
-Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.  For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
+This article covers navigation events for WebView2 apps.  Navigation events run when specific asynchronous actions occur to the content that's displayed in a WebView2 instance.  For example, when a WebView2 user navigates to a new website, the native content listens for the change by listening for the `NavigationStarting` event.  When the navigation action completes, `NavigationCompleted` runs.
 
-<!--todo: Move the relevant information out of the get started guide to better focus the content and leave the most concise elements in the get started guide. -->
+For an example of navigation events, see [Get started with WebView2](../get-started/get-started.md).
 
 The normal sequence of navigation events is:
 1. `NavigationStarting`
 1. `SourceChanged`
 1. `ContentLoading`
 1. `HistoryChanged`
+1. `BasicAuthenticationRequested`
 1. `DOMContentLoaded`
 1. `NavigationCompleted`
 
+
 The following events describe the state of WebView2 during each navigation action:
 
-:::image type="content" source="../media/navigation-graph.png" alt-text="WebView2 Navigation Events." lightbox="../media/navigation-graph.png":::
+![WebView2 Navigation Events.](../media/navigation-graph.png)
 
 | Sequence | Event name | Details |
 | --- | --- | --- |
