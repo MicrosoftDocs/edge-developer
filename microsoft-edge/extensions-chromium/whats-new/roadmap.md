@@ -12,7 +12,7 @@ ms.date: 03/17/2021
 This article describes the latest updates about new Partner Center features for Microsoft Edge extensions.
 
 > [!NOTE]
-> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/home) change often. Partner Center continues to evolve based on market changes and customer feedback.  The features described in this article are also subject to change.
+> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often. Partner Center continues to evolve based on market changes and customer feedback.  The features described in this article are also subject to change.
 
 
 <!-- ====================================================================== -->
