@@ -210,6 +210,10 @@ On desktop operating systems, Microsoft Edge is commonly identified by the `Edg`
 | Desktop (Windows/Mac/Linux) | `Edg` |
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet) | `EdgA`|
+| Legacy Edge* | `Edge`|
+
+> [!NOTE]
+> *Since legacy Edge does not support User Agent Client Hints, it can only be differentiated from Chromium-based Edge using the User Agent String.
 
 
 <!-- ====================================================================== -->
