@@ -53,7 +53,7 @@ Here are the main differences between the DevTools default user interface and Fo
 
 ### Activity Bar
 
-  The **Activity Bar** is the most visible difference from the default user interface. Initially, it appears as a vertical sidebar to the left of the DevTools window. The **Activity Bar** contains icons used to open tools and access help and settings.
+  The **Activity Bar** is the most visible difference from the default user interface. It contains icons used to open tools and access help and settings. The **Activity Bar** uses *adapt to dock location*, so its location depends on where the DevTools window is currently docked.
 
   It replaces the main toolbar from the default user interface.
 
