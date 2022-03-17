@@ -203,18 +203,17 @@ Platform identifiers change based on the operating system, and version numbers i
 <!-- ====================================================================== -->
 ## Identifiers for Microsoft Edge on various platforms
 
-On desktop operating systems, Microsoft Edge is commonly identified by the `Edg` token in the User-Agent string.  However, a different token for Microsoft Edge is used on some device platforms, as follows:
+On desktop operating systems, Microsoft Edge is commonly identified by the `Edg` token in the User Agent string.  However, a different token for Microsoft Edge is used on some device platforms, as follows:
 
 | Platform | Identifier token |
 |:--- |:--- |
 | Desktop (Windows/Mac/Linux) | `Edg` |
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet) | `EdgA`|
-| Legacy Edge* | `Edge`|
+| Microsoft Edge Legacy \* | `Edge`|
 
 > [!NOTE]
-> \* Legacy Edge browser does not support User Agent Client Hints. It can only be differentiated from Chromium-based Microsoft Edge using the User Agent String.
-
+> \* The Microsoft Edge Legacy browser does not support User Agent Client Hints. It can only be differentiated from Chromium-based Microsoft Edge using the User Agent string.
 
 
 <!-- ====================================================================== -->
