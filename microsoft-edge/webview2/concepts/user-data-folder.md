@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/03/2022
+ms.date: 03/17/2022
 ---
 # Manage user data folders
 <!-- # old title: Manage the user data folder -->
@@ -52,7 +52,7 @@ WebView2 apps use user data folders to store browser data, such as cookies, perm
 | `Settings` | Settings data. |
 | `WebSql` | Data stored by the Web SQL database DOM API. |
 
-The above types of data are listed as enum members in the [CoreWebView2BrowsingDataKinds Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds#fields).
+The above types of data are listed as enum members in the [CoreWebView2BrowsingDataKinds Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2browsingdatakinds#fields).
 
 
 <!-- ====================================================================== -->
@@ -253,7 +253,7 @@ You should specify the same folder where all other app data is stored.
 
 **How to specify a custom UDF location:**
 
-Use [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment) and the `userDataFolder` parameter.  But use the code below, which is from the `WebView2Samples` repo.<!-- this api ref contains incorrect content but use the code listing below -->
+Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment) and the `userDataFolder` parameter.  But use the code below, which is from the `WebView2Samples` repo.<!-- this api ref contains incorrect content but use the code listing below -->
 
 
 **Example code:**
@@ -302,7 +302,7 @@ On this platform, in most cases, you should specify a custom UDF location, rathe
 
 You should specify the same folder where all other app data is stored.
 
-Use the [CoreWebView2Environment.CreateAsync method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
+Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
 
 
 **Example code:**
@@ -345,7 +345,7 @@ If you specify a custom UDF location, make sure that user data folder location h
 
 **How to specify a custom UDF location:**
 
-Use the [CoreWebView2Environment.CreateAsync method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
+Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
 
 You should specify the same folder where all other app data is stored.
 
@@ -434,7 +434,7 @@ Reasons you might want to read the UDF location:
 
 # [Win32](#tab/win32)
 
-Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder property getter](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
+Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder property getter](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
 
 
 **Example code:**
@@ -454,7 +454,7 @@ For examples of reading the `UserDataFolder` property, see the Win32 samples in 
 
 # [.NET (WPF/WinForms)](#tab/dotnet)
 
-Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
 <!-- dev: add example code to https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 
@@ -473,7 +473,7 @@ For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForm
 
 # [ClickOnce](#tab/clickonce)
 
-Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
 
 **Example code:**
@@ -490,7 +490,7 @@ For examples of reading the `UserDataFolder` property, see [WebView2Samples repo
 
 # [WinUI 2 (UWP)](#tab/uwp)
 
-Use the WinRT [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder).
+Use the WinRT [CoreWebView2Environment.UserDataFolder Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder).
 
 
 **Example code:**
@@ -511,7 +511,7 @@ For examples of reading the `UserDataFolder` property, see the WinUI 2 (UWP) sam
 
 # [WinUI 3](#tab/winui3)
 
-Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
+Use the .NET [CoreWebView2Environment.UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
 
 **Example code:**
@@ -656,7 +656,7 @@ WebView2 control instances can share the same user data folders, to do the follo
 
 Consider the following when sharing user data folders:
 
-*  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) event handlers or [NewBrowserVersionAvailable](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, your host app must ensure that browser processes exit and close any WebView2 controls that share the same user data folder.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
+*  When re-creating WebView2 controls to update browser versions using [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable) (Win32) event handlers or [NewBrowserVersionAvailable](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable) (.NET) events, your host app must ensure that browser processes exit and close any WebView2 controls that share the same user data folder.  To retrieve the process ID of the browser process, use the `BrowserProcessId` property of the WebView2 control.
 
 
 <!-- ====================================================================== -->
@@ -671,8 +671,8 @@ Each WebView2 browser process consumes additional memory and disk space.  Theref
 ## See also
 
 * [Clear browsing data from the user data folder](clear-browsing-data.md)
-* [Package and deploy](https://docs.microsoft.com/windows/apps/package-and-deploy/) in _Windows App Development_ docs (Build desktop apps for Windows).
-* [ClickOnce security and deployment](https://docs.microsoft.com/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio deployment documentation.
-* [Understand the ClickOnce and DirectInvoke features in Microsoft Edge](https://docs.microsoft.com/deployedge/edge-learn-more-co-di) - in Microsoft Edge Enterprise documentation.
+* [Package and deploy](/windows/apps/package-and-deploy/) in _Windows App Development_ docs (Build desktop apps for Windows).
+* [ClickOnce security and deployment](/visualstudio/deployment/clickonce-security-and-deployment) - Visual Studio deployment documentation.
+* [Understand the ClickOnce and DirectInvoke features in Microsoft Edge](/deployedge/edge-learn-more-co-di) - in Microsoft Edge Enterprise documentation.
 
 <!-- clickable: https://docs.microsoft.com/windows/apps/package-and-deploy/ -->
