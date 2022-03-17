@@ -10,11 +10,78 @@ ms.date: 03/16/2022
 ---
 # Navigating with web resource request and response events
 
+Use this technology to do X.
+
+What UX feature does this provide for your app?
+
+What is "request", what is a "web resource request", what is a "web resource", & "response", when use them?
+
 During navigation among URIs, use the `WebResourceRequested` event and the `WebResourceResponseReceived` event.
 
 
+**Terminology:**
+
+| Term | Definition |
+|---|---|
+| request | x |
+| web resource request | x |
+| web resource | x |
+| response | x |
+| `WebResourceRequested` event | Fired when a web resource is requested by the WebView2 control.  The WebView2 control fires this event.  Your host app listens for this event and then handles this event to do X. |
+| `WebResourceResponseReceived` event | Fired when a web resource response is received by the WebView2 control.  The WebView2 control fires this event.  Your host app listens for this event and then handles this event to do Y. |
+
+
+## Scenario/use cases
+
+This article covers accomplishing A, B, and C for the UX of your host app.
+
+
 <!-- ====================================================================== -->
-## Example of web resource request
+## Setting up component 1
+
+Set up X, as follows:
+
+1. x
+1. x
+
+<!-- ====================================================================== -->
+## Setting up component 2
+
+Set up Y, as follows:
+
+1. x
+1. x
+
+
+<!-- ====================================================================== -->
+## Step 1/Phase 1 - Do X
+
+First, you need to accomplish X, as follows:
+
+1. x
+1. x
+
+
+<!-- ====================================================================== -->
+## Step 2/Phase 2
+
+Next, you need to accomplish Y, as follows:
+
+1. x
+1. x
+
+
+<!-- ====================================================================== -->
+## Step 3/Phase 3
+
+Finally, you need to accomplish Z, as follows:
+
+1. x
+1. x
+
+
+<!-- ====================================================================== -->
+## Example of a web resource request
 
  <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 
@@ -71,7 +138,7 @@ CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()))
 
 
 <!-- ====================================================================== -->
-## Example of web resource response
+## Example of a web resource response
 
 The following code demonstrates how the `WebResourceResponseReceived` event can be used.
 
@@ -197,48 +264,37 @@ m_webview->add_WebResourceResponseReceived(
 * [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
 * [CoreWebView2.NavigateWithWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
 * [CoreWebView2.RemoveWebResourceRequestedFilter Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter)
-    
 * [CoreWebView2.WebResourceRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
-
 * [CoreWebView2Environment.CreateWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourcerequest)
-
 * [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)
-
 * [CoreWebView2WebResourceRequest Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
    * `Content`
    * `Headers`
    * `Method`
    * `Uri`
-
 * [CoreWebView2WebResourceRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
-      * `Request`
-      * `ResourceContext`
-      * `Response`
-      * `GetDeferral`
-
+   * `Request`
+   * `ResourceContext`
+   * `Response`
+   * `GetDeferral`
 
 **Response:**
 
 * [CoreWebView2.WebResourceResponseReceived Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
-
 * [CoreWebView2Environment.CreateWebResourceResponse Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourceresponse)
-
 * [CoreWebView2WebResourceResponse Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse)
    * `Content`
    * `Headers`
    * `ReasonPhrase`
    * `StatusCode`
-
 * [CoreWebView2WebResourceResponseReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
       * `Request`
       * `Response`
-
 * [CoreWebView2WebResourceResponseView Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview)
    * `Headers`
    * `ReasonPhrase`
    * `StatusCode`
    * `GetContentAsync`
-
 
 <!-- -------------------------------------------------- -->
 
@@ -250,7 +306,6 @@ m_webview->add_WebResourceResponseReceived(
    * `add_WebResourceResponseReceived`
    * `NavigateWithWebResourceRequest`
    * `remove_WebResourceResponseReceived`
-
 * [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
    * `get_Content`
    * `get_Headers`
@@ -259,17 +314,14 @@ m_webview->add_WebResourceResponseReceived(
    * `put_Content`
    * `put_Method`
    * `put_Uri`
-
 * [ICoreWebView2WebResourceRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
    * `get_Request`
    * `get_ResourceContext`
    * `get_Response`
    * `GetDeferral`
    * `put_Response`
-
 * [ICoreWebView2WebResourceRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventhandler)
    * `Invoke`
-
 
 **Response:**
 
@@ -277,7 +329,6 @@ m_webview->add_WebResourceResponseReceived(
    * `add_WebResourceResponseReceived`
    * `NavigateWithWebResourceRequest`
    * `remove_WebResourceResponseReceived`
-
 * [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse)
    * `get_Content`
    * `get_Headers`
@@ -286,20 +337,16 @@ m_webview->add_WebResourceResponseReceived(
    * `put_Content`
    * `put_ReasonPhrase`
    * `put_StatusCode`
-
 * [ICoreWebView2WebResourceResponseReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
    * `get_Request`
    * `get_Response`
-
 * [ICoreWebView2WebResourceResponseReceivedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventhandler)
    * `Invoke`
-
 * [ICoreWebView2WebResourceResponseView](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview)
    * `get_Headers`
    * `get_ReasonPhrase`
    * `get_StatusCode`
    * `GetContent`
-
 * [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler)
    * `Invoke`
 
