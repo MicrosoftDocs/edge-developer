@@ -103,7 +103,7 @@ To move a UDF:
 -->
 On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
 
-For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
+For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 
 
 **Should you use default or custom UDF location?**
@@ -124,7 +124,9 @@ Win32 MSIX packaging is a standalone `.exe`.
 <!--
 **What is the default UDF location?**
 -->
-On this platform, the default UDF location is: TBD.<!--todo-->
+On this platform, the default UDF location is the directory that the app executable (`.exe`) is running in.  The default UDF is the executable (`exe`) path of your app + `.WebView2`.  The filename of the UDF is the executable (`exe`) path of your app + `.WebView2`.
+
+For example, if you ran `D:\WebView2App\WebView2.exe`, a UDF folder would be created: `D:\WebView2App\WebView2.exe.WebView2\`.  As another example: `WebView2APISample.exe.WebView2\`.
 
 
 **Should you use default or custom UDF location?**
@@ -184,7 +186,7 @@ On this platform, the default UDF location is the `ApplicationData\LocalFolder` 
 
 **Should you use default or custom UDF location?**
 
-Use the default UDF location.
+On this platform, use the default UDF location.
 
 
 **Why the default location is writeable:**
@@ -220,11 +222,7 @@ On this platform, the default UDF location is the `ApplicationData\LocalFolder` 
 
 **Should you use default or custom UDF location?**
 
-In most cases, you should use the default UDF location.
-
-OR:<!--todo: Dev to investigate which is the case -->
-
-In most cases, you should specify a custom UDF location, rather than using the default UDF location.  This ensures that the WebView2 control has Write access so that the WebView2 control is able to create the UDF and then write to it.  See the section "Specifying a custom UDF location" below.
+On this platform, use the default UDF location.
 
 
 **Packaging:**
@@ -257,7 +255,8 @@ You should specify the same folder where all other app data is stored.
 
 Use [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment) and the `userDataFolder` parameter.  But use the code below, which is from the `WebView2Samples` repo.<!-- this api ref contains incorrect content but use the code listing below -->
 
-**Sample code:**
+
+**Example code:**
 
 ```cpp
 std::wstring m_userDataFolder;
@@ -306,7 +305,7 @@ You should specify the same folder where all other app data is stored.
 Use the [CoreWebView2Environment.CreateAsync method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createasync), passing a `userDataFolder` parameter.
 
 
-**Sample code:**
+**Example code:**
 
 ```csharp
 string UserDataFolder;
@@ -351,7 +350,7 @@ Use the [CoreWebView2Environment.CreateAsync method](https://docs.microsoft.com/
 You should specify the same folder where all other app data is stored.
 
 
-**Sample code:**
+**Example code:**
 
 ```csharp
 string UserDataFolder;
@@ -385,6 +384,9 @@ On this platform, use the default UDF location.
 
 After creation of the session and UDF, browser data from your WebView2 control is stored in a subfolder of `userDataFolder`.
 
+
+**Example code:**
+
 For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp).
 
 
@@ -398,6 +400,9 @@ For example code, see the WinUI 2 (UWP) `.cs` file, at [WebView2Samples repo > w
 **Should you use default or custom UDF location?**
 -->
 On this platform, use the default UDF location.
+
+
+**Example code:**
 
 For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2_WinUI3_Sample).
 
@@ -431,7 +436,8 @@ Reasons you might want to read the UDF location:
 
 Use the Win32 [ICoreWebView2Environment7.get_UserDataFolder property getter](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder).  That API Reference page contains example code showing how to read the `UserDataFolder` property.
 
-**Sample code:**
+
+**Example code:**
 
 ```cpp
 auto environment7 = m_webViewEnvironment.try_query<ICoreWebView2Environment7>();
@@ -452,11 +458,12 @@ Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.micr
 
 <!-- dev: add example code to https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder showing how to read the `UserDataFolder` property, copy that from the below code block: -->
 
-**Sample code:**
 
-```csharp
-// todo: Dev to provide now - doesn't exist in sample repo at this time
-```
+**Example code:**
+
+<!-- ```csharp -->
+<!-- // ADO work item "[wv2] Update .NET (WPF/WinForms) sample to add code to retrieve UDF location" - then copy lines to here
+<!-- ``` -->
 
 For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForms) samples in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
@@ -468,11 +475,12 @@ For examples of reading the `UserDataFolder` property, see the .NET (WPF/WinForm
 
 Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
-**Sample code:**
 
-```csharp
-// todo: Dev to provide now - doesn't exist in sample repo at this time
-```
+**Example code:**
+
+<!-- ```csharp -->
+<!-- // ADO work item "[wv2] Update ClickOnce sample to add code to retrieve UDF location" - then copy lines to here
+<!-- ``` -->
 
 For examples of reading the `UserDataFolder` property, see [WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp).
 
@@ -485,7 +493,7 @@ For examples of reading the `UserDataFolder` property, see [WebView2Samples repo
 Use the WinRT [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2environment#userdatafolder).
 
 
-**Sample code:**
+**Example code:**
 
 ```csharp
 private void OnGetUDFClick(object sender, RoutedEventArgs e)
@@ -506,7 +514,7 @@ For examples of reading the `UserDataFolder` property, see the WinUI 2 (UWP) sam
 Use the .NET [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder).
 
 
-**Sample code:**
+**Example code:**
 
 ```csharp
 private void OnGetUDFClick(object sender, RoutedEventArgs e)
