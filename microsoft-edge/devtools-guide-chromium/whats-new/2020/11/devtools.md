@@ -27,14 +27,14 @@ ms.date: 05/04/2021
 
 
 <!-- ====================================================================== -->
-## Microsoft Edge and Microsoft Edge Driver now available on Linux
+## Microsoft Edge and Microsoft Edge WebDriver now available on Linux
 
-<!-- Title: Microsoft Edge and Microsoft Edge Driver on Linux  -->
-<!-- Subtitle: Get Microsoft Edge Dev on Ubuntu, Debian, Fedora, and openSUSE distributions and start automating in CI/CD environments with Microsoft Edge Driver. -->
+<!-- Title: Microsoft Edge and Microsoft Edge WebDriver on Linux  -->
+<!-- Subtitle: Get Microsoft Edge Dev on Ubuntu, Debian, Fedora, and openSUSE distributions and start automating in CI/CD environments with Microsoft Edge WebDriver. -->
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site](https://www.microsoftedgeinsider.com/download?platform=linux) or use the standard package management tools of your Linux distribution.
 
-If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge Driver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge Driver, see [Microsoft Edge Driver Downloads page](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads).  For help with automating Microsoft Edge Dev along with Microsoft Edge Driver, see [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
+If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge Dev with Microsoft Edge WebDriver, see [Microsoft Edge WebDriver Downloads page](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads).  For help with automating Microsoft Edge Dev along with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
 
 :::image type="content" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux." lightbox="../../media/2020/11/edge-on-linux.msft.png":::
 
