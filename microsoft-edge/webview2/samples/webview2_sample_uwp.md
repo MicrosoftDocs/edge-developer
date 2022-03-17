@@ -1,5 +1,5 @@
 ---
-title: "WebView2 sample: UWP WinUI 2 browser app"
+title: "WebView2 sample: WinUI 2 (UWP) browser app"
 description: This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a UWP WinUI 2 app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,9 +8,12 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 02/18/2022
 ---
+# WebView2 sample: WinUI 2 (UWP) browser app
+<!-- old title:
 # WebView2 sample: UWP WinUI 2 browser app
+-->
 
-This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a UWP WinUI 2 app.
+This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to implement a web browser in a WinUI 2 (UWP) app.
 
 Directory &amp; .sln: **webview2_sample_uwp/webview2_sample_uwp.sln**.
 
