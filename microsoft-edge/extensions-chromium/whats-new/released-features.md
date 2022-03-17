@@ -36,7 +36,7 @@ The Extensions Analytics Dashboard enables extension developers to view their ex
 <!-- ====================================================================== -->
 ## Add team members to your Partner Center account
 
-Developers can add members from their organization and manage the settings on their Partner Center Account. You can read more at [Add users to the Microsoft Edge program](microsoft-edge/extensions-chromium/publish/aad-account).
+Developers can add members from their organization and manage the settings on their Partner Center Account. You can read more at [Add users to the Microsoft Edge program](/microsoft-edge/extensions-chromium/publish/aad-account).
 
 *Released August 2021*
 
