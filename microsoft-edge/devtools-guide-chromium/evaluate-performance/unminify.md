@@ -83,8 +83,6 @@ For details, see [Map the processed code to your original source code, for debug
 
    Some function names are now unminified.  The unminified flame chart in the **Performance** tool now shows those functions labeled with more meaningful names taken from your source maps, such as **useObserver (d)**, **useQueuedForceUpdateBlock (o)**, **trackDerivedFunction (an)**, **initializeIconColorMap (c)**, **getExtraToolControls (co)**, and **isToggleEnabled (a)**.
 
-   For example, compare the minified flame chart and the unminified flame chart of a recorded performance profile in the following images.  Some of the production function names have been replaced with (prepended by) source-mapped function names:
-
    ![The unminified flame chart in the performance profile.](images/unminified-perf-profile.msft.png)
 
 
