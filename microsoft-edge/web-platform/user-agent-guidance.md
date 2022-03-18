@@ -211,14 +211,7 @@ On desktop operating systems, Microsoft Edge is commonly identified by the `Edg`
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet) | `EdgA`|
 
-### Microsoft Edge Legacy identifier
-
-The Microsoft Edge Legacy browser does not support User Agent Client Hints. It can only be differentiated from Chromium-based Microsoft Edge using the User-Agent string.
-
-| Platform | Identifier token |
-|:--- |:--- |
-| Microsoft Edge Legacy | `Edge`|
-
+Microsoft Edge Legacy is no longer supported. See the [Microsoft Edge Legacy](#microsoft-edge-legacy) section for details.
 
 <!-- ====================================================================== -->
 ## Map the User-Agent string to an expanded browser name
@@ -254,3 +247,25 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```
+
+
+<!-- ====================================================================== -->
+## Microsoft Edge Legacy
+
+Legacy browser considerations:
+
+*  The Microsoft Edge Legacy browser is no longer supported. See the blog post [New Microsoft Edge to replace Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224).
+
+*  Microsoft Edge Legacy was only available on Windows 10.
+
+*  Of all the User-Agent mechanisms described in this article, the only supported browser-specific mechanism for Microsoft Edge Legacy is User-Agent string.
+
+*  The User-Agent string for Microsoft Edge Legacy includes the `Edge` token.
+
+    A fully formed example of a Microsoft Edge Legacy User-Agent string: `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582`
+
+
+<!-- ====================================================================== -->
+## See also
+
+[Detect Windows 11 using User-Agent Client Hints](/microsoft-edge/web-platform/how-to-detect-win11)
