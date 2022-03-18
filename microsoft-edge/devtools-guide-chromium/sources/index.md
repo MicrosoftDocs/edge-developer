@@ -28,11 +28,11 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 **Detailed contents:**
 
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
-* [Using the Navigator pane to select files](#using-the-Navigator-pane-to-select-files)
+* [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
       * [Icons in the Page tab](#icons-in-the-page-tab)
       * [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
-   * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-Workspace)
+   * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
    * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
    * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
    * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
@@ -50,7 +50,7 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Editing an HTML file](#editing-an-html-file)
    * [Going to a line number or function](#going-to-a-line-number-or-function)
    * [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
-* [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-JavaScript-code)
+* [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-javascript-code)
    * [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
    * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
    * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
