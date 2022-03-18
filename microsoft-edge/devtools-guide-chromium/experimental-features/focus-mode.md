@@ -9,14 +9,6 @@ ms.date: 03/15/2022
 ---
 # Simplify DevTools using Focus Mode
 
-DevTools has over 30 different tools and many toolbar icons. The current DevTools user interface consists of:
-
-* A main toolbar containing icons such as the **Inspect** and **Device Emulation** modes, and a set of tabbed tools including the **Elements** and **Sources** tools.
-
-* A drawer toolbar containing more tabbed tools and icons.
-
-The overall experience can be visually and conceptually overwhelming.
-
 Focus Mode is a new experimental user interface for DevTools. It is designed to lower the learning curve for new users and reduce the complexity of DevTools without compromising its feature set.
 
 Focus Mode replaces the main toolbar with an **Activity Bar**, which is a compact horizontal or vertical toolbar. The **Activity Bar** contains small icons and corresponding tooltips. The **Activity Bar** makes it possible to open tools, change user settings, and access additional features from one location.
