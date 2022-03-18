@@ -842,10 +842,9 @@
 
             - name: Microsoft Edge Add-ons API
               items:
-                - name: Using the Microsoft Edge Add-ons API (in private preview)
+                - name: Using the Microsoft Edge Add-ons API (Beta)
                   href: extensions-chromium/publish/api/using-addons-api.md
-
-                - name: Microsoft Edge Add-ons API Reference (in private preview)
+                - name: Microsoft Edge Add-ons API Reference (Beta)
                   href: extensions-chromium/publish/api/addons-api-reference.md
         - name: Extensions for enterprise
           items:
@@ -942,10 +941,10 @@
               href: webview2/code-samples-links.md
               displayName: Sample Code for WebView2  # top-of-page title
 
-# comprehensive API samples, in alpha order of downloaded repo directories
+# in alpha order of downloaded repo directories
             - name: WebView2 control and API samples
               items:
-                - name: UWP WinUI 2 browser app
+                - name: WinUI 2 (UWP) browser app
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
 

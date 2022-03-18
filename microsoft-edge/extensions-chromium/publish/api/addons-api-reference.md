@@ -1,20 +1,20 @@
 ---
-title: Microsoft Edge Add-ons API Reference (in private preview)
+title: Microsoft Edge Add-ons API Reference (Beta)
 description: The Add-ons API Reference, for REST endpoints to automate publishing updates to add-ons that are submitted to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 08/19/2021
+ms.date: 03/17/2022
 ---
-# Microsoft Edge Add-ons API Reference (in private preview)
+# Microsoft Edge Add-ons API Reference (Beta)
 
 > [!NOTE]
-> The Microsoft Edge Add-ons API is currently in private preview.  The **Publish API** page is present at Partner Center only for participants of the private preview.  The Microsoft Edge Add-ons API is under active development, and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive, and are subject to change.
+> The Microsoft Edge Add-ons API is currently in beta.  The Microsoft Edge Add-ons API is under active development, and the roadmap continues to evolve based on market changes and customer feedback.  The plans outlined here aren't exhaustive and are subject to change.
 
 This is the REST endpoint reference for the Microsoft Edge Add-ons API.  This API automates publishing updates to add-ons that have been submitted to the Microsoft Edge Add-ons website.
 
-For an overview, see [Using the Microsoft Edge Add-ons API (in private preview)](using-addons-api.md).
+For an overview, see [Using the Microsoft Edge Add-ons API (Beta)](using-addons-api.md).
 
 <!-- ====================================================================== -->
 ## Upload a package to update an existing submission
@@ -397,4 +397,4 @@ Here are a list of common error codes and possible reasons.  For a full list, se
 <!-- ====================================================================== -->
 ## See also
 
-*  [Using the Microsoft Edge Add-ons API (in private preview)](using-addons-api.md)
+*  [Using the Microsoft Edge Add-ons API (Beta)](using-addons-api.md)
