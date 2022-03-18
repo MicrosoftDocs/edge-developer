@@ -30,8 +30,6 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
 * [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
 * [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
    * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
-      * [Icons in the Page tab](#icons-in-the-page-tab)
-      * [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
    * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
    * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
    * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
@@ -39,10 +37,6 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
 * [Using the Editor pane to view or edit files](#using-the-editor-pane-to-view-or-edit-files)
    * [Editing a JavaScript file](#editing-a-javascript-file)
-      * [Save and Undo](#save-and-undo)
-      * [Find and Replace](#find-and-replace)
-      * [Showing the changes you made](#showing-the-changes-you-made)
-      * [Changes inside a function take effect](#changes-inside-a-function-take-effect)
    * [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
    * [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
    * [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
@@ -55,6 +49,15 @@ Use the **Sources** tool to view, modify, and debug front-end JavaScript code, a
    * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
    * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
    * [Articles about debugging](#articles-about-debugging)
+
+<!-- omit h4s
+      * [Icons in the Page tab](#icons-in-the-page-tab)
+      * [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
+
+      * [Save and Undo](#save-and-undo)
+      * [Find and Replace](#find-and-replace)
+      * [Showing the changes you made](#showing-the-changes-you-made)
+      * [Changes inside a function take effect](#changes-inside-a-function-take-effect) -->
 
 
 ## The Navigator, Editor, and Debugger panes
