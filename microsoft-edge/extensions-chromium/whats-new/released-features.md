@@ -20,7 +20,7 @@ For more information about upcoming updates and feature releases, see [Microsoft
 <!-- ====================================================================== -->
 ## Microsoft Edge extensions developer portal
 
-The new edition of the developer portal contains all relevant resources and documentations for Microsoft Edge extensions. You can check [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/en-us/microsoft-edge/extensions/).
+The new edition of the developer portal contains all relevant resources and documentations for Microsoft Edge extensions. You can check [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions/).
 
 *Released January 2022*
 
