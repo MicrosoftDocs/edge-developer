@@ -36,6 +36,10 @@
               displayName: Experimental features, settings
 
 # What's New pages ------------------------------------------------------------
+            - name: Microsoft Edge 100
+              href: devtools-guide-chromium/whats-new/2022/04/devtools.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 99
               href: devtools-guide-chromium/whats-new/2022/03/devtools.md
               displayName: what's new, announcements, release notes
