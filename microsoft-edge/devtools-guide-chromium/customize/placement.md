@@ -21,7 +21,7 @@ To change where DevTools is placed within the browser window:
 
 ![the Dock side menu in DevTools.](../media/devtools-intro-docking-menu.msft.png)
 
-**Dock to left** or **Dock to right** keeps DevTools side-by-side with your web product, and is excellent when you [Emulate mobile devices (Device Emulation)](../device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
+**Dock to left** or **Dock to right** keeps DevTools side-by-side with your webpage, and is excellent when you [Emulate mobile devices (Device Emulation)](../device-mode/index.md).  The **Dock to left** and **Dock to right** options work best with high-resolution displays.
 
 
 <!-- ====================================================================== -->
