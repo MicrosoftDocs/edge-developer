@@ -1,6 +1,6 @@
 ---
-title: Overview of Manifest V3
-description: Migrating from Manifest V2 to V3 will help reduce fragmentation of the web for developers and enhance privacy, security, and performance for end users.
+title: Overview and timelines for migrating to Manifest V3
+description: Migrating from Manifest V2 to V3 will help reduce fragmentation of the web for developers and enhance privacy, security, and performance for end users. This article covers the overview and timelines for migration from Manifest V2 to V3.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
