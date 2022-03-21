@@ -150,7 +150,7 @@ Use the **Box Model** interactive diagram in the **Styles** panel to change the 
 <!-- ====================================================================== -->
 ## Debugging Media Queries
 
-[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your web product react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.
+[Media Queries](https://developer.mozilla.org/docs/Web/CSS/Media_Queries/Using_media_queries) are a way to make your website react to changes in the configuration settings for each user.  The most significant use case is to provide your product a different CSS layout depending on the dimensions of the viewport.
 
 Using separate layouts allows for a one-column layout for mobile devices and multi-column layouts when there is more screen estate available.
 
