@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/18/2022
+ms.date: 03/21/2022
 ---
 # Simplify DevTools using Focus Mode
 
@@ -15,8 +15,7 @@ Focus Mode replaces the main row of tabs with an **Activity Bar**, a compact too
 
 Focus Mode also provides a **Quick View** list to open a second tool alongside the tool already selected in the **Activity Bar**.
 
-> [!div class="mx-imgBorder"]
-> ![Focus Mode, including the Activity Bar.](media/focus-mode.png)
+![Screenshot of DevTools, undocked in its own window, with the Focus Mode experiment](media/focus-mode.png)
 
 
 <!-- ====================================================================== -->
@@ -50,25 +49,21 @@ By default, the position of the **Activity Bar** adapts to the location of the D
 
 Focus Mode with top aligned **Activity Bar** in DevTools docked.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Focus Mode top aligned Activity Bar with DevTools docked](media/focus-mode-docked.png)
+![Screenshot of the Focus Mode top aligned Activity Bar with DevTools docked](media/focus-mode-docked.png)
 
 Focus Mode with top aligned **Activity Bar** in DevTools pop out window.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Focus Mode top aligned Activity Bar with DevTools pop out window](media/focus-mode-undocked.png)
+![Screenshot of the Focus Mode top aligned Activity Bar with DevTools pop out window](media/focus-mode-undocked.png)
 
 ### Warning and error indicators
 
 In the default DevTools user interface, a counter appears in the main toolbar showing the number of messages such as **Issues** recommendations and **Console** warnings. The counter could grow large when many messages ae generated, taking up valuable space in DevTools.
 
-> [!div class="mx-imgBorder"]
-> ![Default DevTools toolbar Issues and Console message indicators](media/devtools-toolbar-message-indicator.png)
+![Default DevTools toolbar Issues and Console message indicators](media/devtools-toolbar-message-indicator.png)
 
 In Focus Mode, this counter has been removed. Instead, small indicators overlay **Issues** and **Console** to display whether messages have been reported by the respective tools.
 
-> [!div class="mx-imgBorder"]
-> ![Focus Mode message overlays in Issues and Console](media/focus-mode-message-indicator.png)
+![Focus Mode message overlays in Issues and Console](media/focus-mode-message-indicator.png)
 
 ### Quick View
 
