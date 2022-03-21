@@ -57,7 +57,7 @@ Microsoft Edge Enterprise add-ons with Manifest V2 will not be functional on Mic
 <!-- ====================================================================== -->
 ## See also
 
-To check the recently released features for Partner Center, see [Microsoft Edge Add-ons Released Features](released-features.md).
+For more information about recently released features for Partner Center, see [Microsoft Edge Add-ons Released Features](released-features.md).
 
 To view the consumer roadmap, go to [Microsoft Edge Insider Roadmap](https://www.microsoftedgeinsider.com/whats-next) and scroll down to the **Feature Roadmap** section. 
 
