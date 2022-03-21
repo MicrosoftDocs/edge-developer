@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/18/2021
+ms.date: 03/22/2021
 ---
 # Microsoft Edge Add-ons released features
 
@@ -52,7 +52,7 @@ Developers can use their personal GitHub account credentials to sign into Micros
 <!-- ====================================================================== -->
 ## Manage your extension submissions on Partner Center
 
-This feature allows extension developers to view their extension submission from the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) dashboard and overview pages.  Developers can more easily track their extension submission review status, view past updates, view the status of submissions, and manage extensions on Partner Center.
+This feature allows extension developers to view their extension submission from the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) dashboard and overview pages.  Developers can easily track their extension submission review status, view past updates, view the status of submissions, and manage extensions on Partner Center.
 
 *Released May 2021*
 
@@ -60,7 +60,7 @@ This feature allows extension developers to view their extension submission from
 <!-- ====================================================================== -->
 ## Support for Manifest V3 extensions
 
-Microsoft Edge Add-ons now support extensions with Manifest V3. Check out the blog post [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) for more details.
+Microsoft Edge Add-ons now support extensions with Manifest V3. Check out the blog [Manifest V3 changes are now available in Microsoft Edge](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254) for more details.
 
 *Released April 2021*
 
@@ -76,7 +76,7 @@ Developers can request the Collection where their extension should be featured o
 <!-- ====================================================================== -->
 ## Extension store listing localization
 
-Developers can choose a subset of languages instead of manually entering each language in the listing details on Microsoft Partner Center and the ability to use the same marketing assets across all marketplaces. Check out the blog [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981) for more details.
+Developers can choose a subset of languages instead of manually entering each language in the listing details on Microsoft Partner Center. Developers can also elect to use the same marketing assets across all marketplaces. Check out the blog [Partner Center improvements related to Microsoft Edge extensions store listing and certification](https://techcommunity.microsoft.com/t5/articles/partner-center-improvements-related-to-microsoft-edge-extensions/m-p/2118981) for more details.
 
 *Released February 2021*
 
