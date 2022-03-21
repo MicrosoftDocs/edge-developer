@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: extensions
 ms.date: 3/11/2022
 ---
-# Overview of Manifest V3
+# Overview and timelines for migrating to Manifest V3
 
 A manifest file is the blueprint of an extension. It includes information such as the version number of the extension, the title of the extension, and permissions needed to run the extension. Migrating from Manifest V2 to V3 will bring several structural changes to how extensions are handled by the browser.
 

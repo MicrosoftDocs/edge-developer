@@ -783,7 +783,7 @@
 
         - name: Manifest
           items:
-            - name: Overview of Manifest V3
+            - name: Overview and timelines for migrating to Manifest V3
               href: extensions-chromium/developer-guide/manifest-v3.md
               displayName: 
 
