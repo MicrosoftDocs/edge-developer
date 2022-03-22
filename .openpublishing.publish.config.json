@@ -36,6 +36,12 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "microsoft-edge/webview2/code/",
+      "url": "https://github.com/MicrosoftEdge/WebView2Samples",
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
