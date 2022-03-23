@@ -88,13 +88,15 @@ You can use these environment variables to position and size your app's title ba
 
 ```css
 #title-bar {
-    position: absolute;
+    position: fixed;
     left: env(titlebar-area-x);
     top: env(titlebar-area-y);
     height: env(titlebar-area-height);
     width: env(titlebar-area-width);
 }
 ```
+
+Using `position:fixed;` makes sure your title bar does not scroll with the rest of the content and instead stays aligned with the window controls overlay.
 
 Knowing where the overlay is and how big it is is important.  The overlay might not always be on the same side of the window; on macOS, the overlay is on the left side, but on Windows, the overlay is on the right side.  Also, the overlay might not always be the same size.
 
