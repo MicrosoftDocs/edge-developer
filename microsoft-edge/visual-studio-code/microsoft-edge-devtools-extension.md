@@ -345,7 +345,17 @@ JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome
 <!-- ====================================================================== -->
 ## Console integration
 
-If you launch the extension from the Run and Debug workflow, the [Debug Console of Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) gives you all the functions of the DevTools [Console](/microsoft-edge/devtools-guide-chromium/console/).  You have direct access to the Window object of the instance of Edge and can use all the [Console Utilities](/microsoft-edge/devtools-guide-chromium/console/utilities):
+The [Console](/microsoft-edge/devtools-guide-chromium/console/) tool is available inside the extension and you can do everything you are used to when using DevTools inside the browser. 
+
+![The DevTools Console inside the extension as an own tab.](media/edge-devtools-for-vscode-console-full.png)
+
+You can see your [log messages](/microsoft-edge/devtools-guide-chromium/console-log), access the `window` object and use the [DOM interaction convenience methods](/microsoft-edge/devtools-guide-chromium/console-dom-interaction). You can also [filter the Console](/microsoft-edge/devtools-guide-chromium/console-filters) and set [live expressions](/microsoft-edge/devtools-guide-chromium/live-expressions). 
+
+You can also use the Console alongside the Elements tool if you open it in the lower panel:
+
+![The DevTools Console inside the extension alongside the elements tool.](media/edge-devtools-for-vscode-console-in-elements.png)
+
+If you launch the extension from the Run and Debug workflow, the [Debug Console of Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) gives you most of the functionality of the DevTools [Console](/microsoft-edge/devtools-guide-chromium/console/) inside the but no filtering options and a more basic results display:
 
 ![The DevTools Console is available when the extension is launched from a Run and Debug workflow.](media/edge-devtools-for-vscode-console-integration.png)
 
