@@ -38,7 +38,7 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "microsoft-edge/webview2/code/",
+      "path_to_root": "microsoft-edge/webview2/code/sample/",
       "url": "https://github.com/MicrosoftEdge/WebView2Samples",
       "branch": "master",
       "branch_mapping": {}
