@@ -611,8 +611,6 @@ The shopping service is turned on by default for all users.  To change the shopp
 
 **InPrivate** browsing uses the shopping setting of the profile that launched the **InPrivate** session.
 
-InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.
-
 
 <!-- ====================================================================== -->
 ## Sign in and Identity
