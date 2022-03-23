@@ -1,6 +1,6 @@
 ---
-title: Overview of Manifest V3
-description: Migrating from Manifest V2 to V3 will help reduce fragmentation of the web for developers and enhance privacy, security, and performance for end users.
+title: Overview and timelines for migrating to Manifest V3
+description: Migrating from Manifest V2 to V3 will help reduce fragmentation of the web for developers and enhance privacy, security, and performance for end users. This article covers the overview and timelines for migration from Manifest V2 to V3.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: extensions
 ms.date: 3/11/2022
 ---
-# Overview of Manifest V3
+# Overview and timelines for migrating to Manifest V3
 
 A manifest file is the blueprint of an extension. It includes information such as the version number of the extension, the title of the extension, and permissions needed to run the extension. Migrating from Manifest V2 to V3 will bring several structural changes to how extensions are handled by the browser.
 
