@@ -15,7 +15,7 @@ Check these articles for the latest What's New announcements, features, fixes, a
 * [Experimental features](../experimental-features/index.md)
 
 **What's new:**
-* [What's New in DevTools (Microsoft Edge 100)](2022/04/devtools.md)
+* [What's New in DevTools (Microsoft Edge 100)](2022/03/devtools-100.md)
 * [What's New in DevTools (Microsoft Edge 99)](2022/03/devtools.md)
 * [What's New in DevTools (Microsoft Edge 98)](2022/02/devtools.md)
 * [What's New in DevTools (Microsoft Edge 97)](2022/01/devtools.md)
