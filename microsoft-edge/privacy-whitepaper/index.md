@@ -385,9 +385,9 @@ Kids Mode does not collect data for personalization of the news feed or other Mi
 
 
 <!-- ====================================================================== -->
-## Microsoft Edge Driver
+## Microsoft Edge WebDriver
 
-Microsoft Edge Driver allows developers to drive the Microsoft Edge browser using the [WebDriver protocol](https://www.w3.org/TR/webdriver2/).  The Microsoft Edge Driver is an executable file `msedgedriver.exe` separate from Microsoft Edge. Developers can call the driver from  client code, such as a test script.  By default, Microsoft Edge Driver sends diagnostic data such as the status of the [New Session WebDriver command](https://www.w3.org/TR/webdriver2/#new-session) to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge Driver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about Microsoft Edge Driver, see [Use WebDriver to automate Microsoft Edge automation](/microsoft-edge/webdriver-chromium).
+Microsoft Edge WebDriver allows developers to drive the Microsoft Edge browser using the [WebDriver protocol](https://www.w3.org/TR/webdriver2/).  The Microsoft Edge WebDriver is an executable file `msedgedriver.exe` separate from Microsoft Edge. Developers can call the driver from  client code, such as a test script.  By default, Microsoft Edge WebDriver sends diagnostic data such as the status of the [New Session WebDriver command](https://www.w3.org/TR/webdriver2/#new-session) to Microsoft.  To turn off the diagnostic data collection for Microsoft Edge WebDriver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about Microsoft Edge WebDriver, see [Use WebDriver to automate Microsoft Edge automation](/microsoft-edge/webdriver-chromium).
 
 
 <!-- ====================================================================== -->
@@ -610,8 +610,6 @@ The shopping service is turned on by default for all users.  To change the shopp
 1.  Turn off the **Save time and money with Shopping in Microsoft Edge** setting.
 
 **InPrivate** browsing uses the shopping setting of the profile that launched the **InPrivate** session.
-
-InPrivate browsing uses the shopping setting of the profile that launched the InPrivate session.
 
 
 <!-- ====================================================================== -->
