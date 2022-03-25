@@ -25,10 +25,6 @@ To report a problem with DevTools or ask for a new feature, file an issue at the
 We're excited to announce the new [MicrosoftEdge/DevTools: Feedback and discussions about Microsoft Edge Developer Tools (github.com)](https://github.com/MicrosoftEdge/DevTools) repo on GitHub!  This new repo is a place for our community of developers to send us ideas, feedback, suggestions, and tips to improve DevTools. We're eager to discuss with you how DevTools can better serve your needs and meet the challenges you face every day in building great web experiences.
 
 ![The DevTools feedback repo.](devtools-100-images/devtools-feedback-repo.png)
-<!-- Instructions for screenshot
-1. Go to MicrosoftEdge/DevTools: Feedback and discussions about Microsoft Edge Developer Tools (github.com)
-2. Take a screenshot.
--->
 
 Head to [our repo on GitHub](https://github.com/MicrosoftEdge/DevTools) to become a part of the Edge DevTools community.
 
@@ -37,32 +33,13 @@ Head to [our repo on GitHub](https://github.com/MicrosoftEdge/DevTools) to becom
 ## Filter heap snapshots summary by node type
 
 <!-- Title: Use new filters to focus on specific parts of a heap snapshot -->
-<!-- Subtitle: You can now filter by node type if, for example, you're only interested in the strings or arrays from the heap. -->
+<!-- Subtitle: You can now filter by node type if, for example, you're only interested in the arrays or strings from the heap. -->
 
-<!-- Announcement Text -->
-When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Now in Microsoft Edge 100, you can use the new **Node Types** filter when looking at a heap snapshot to focus on only specific types of nodes.  For example, if you only wanted to see only the string objects and Arrays that are in the heap, select the **String** and **Array** entries in the **Node Types** filter.
+When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Now in Microsoft Edge 100, you can use the new **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter.
 
 ![Node Types in a heap snapshot in the Memory tool.](devtools-100-images/node-types-heap-snapshot.png)
-<!-- 
-1. Go to edge://version and ensure you're on version 100+.
-2. Go to https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/landing/
-3. Open DevTools > Memory.
-4. Take a heap snapshot.
-5. In the Node Types filter, clear all entries except for String and Array.
-6. Expand the (string) dropdown.
-7. Open the Node Types dropdown.
-8. Take a screenshot.
-9. Draw red highlights around the checked String and Array entries in the Node Types filter.
-10. Draw red highlights around the (array) and (string) groupings in the heap snapshot.
--->
 
-<!-- 
-Video recording of feature in action:
-*  See wiki.
-*  See attachment.
--->
-
-To learn more about taking a heap snapshot and analyzing the heap in DevTools, see [Look up color coding](../../../memory-problems/heap-snapshots.md#look-up-color-coding) in _Record heap snapshots using the Memory tool_.
+To learn more about taking a heap snapshot and analyzing the heap in DevTools, see [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md).
 
 
 <!-- ====================================================================== -->
@@ -74,10 +51,6 @@ To learn more about taking a heap snapshot and analyzing the heap in DevTools, s
 Customizing and simplifying the developer experience includes making our tools available to everyone, regardless of their preferred language.  We've added two new languages, Czech and Vietnamese, to our list of supported languages, and will keep adding more.  If your preferred language isn't supported in DevTools, let us know!
 
 ![DevTools in Czech and Vietnamese.](devtools-100-images/czech-vietnamese.png)
-<!-- 
-1. F12 > Settings > Preferences > Appearance
-2. Select the Language drop-down menu (Czech and Vietnamese have been added to this drop-down)
--->
 
 For more information, see [Change DevTools language settings](../../../customize/localization.md).
 
@@ -92,16 +65,8 @@ In Microsoft Edge 100, the **Network** tool supports a new, **Fulfilled by** col
 
 ![The Fulfilled By column in the request log of the Network tool.](devtools-100-images/fulfilled-by-request-log.png)
 <!--
-1. Go to edge://version and make sure you're on version 100+.
-2. Go to PWABuilder.
-3. Open DevTools > Network tool.
-4. Some of the requests should be fulfilled by the service worker and you should see that in the **Fulfilled by** column.
-5. If you don't have the **Fulfilled by** column, right-click the table headers in the request log and make sure **Fulfilled by** is checked.
+If you don't have the **Fulfilled by** column, right-click the table headers in the request log and make sure **Fulfilled by** is checked.
 -->
-
-<!-- Video recording of feature in action
-(we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
-See attachment -->
 
 To learn more about the request log in the Network tool, see [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.  For more information about service workers, see [Service Worker improvements](../../../service-workers/index.md).
 
@@ -114,28 +79,11 @@ For the history of this feature, see [Outlook: Add column in the Network activit
 <!-- Title: Use sourcemaps from Azure Artifacts symbol server to better debug performance issues -->
 <!-- Subtitle: Links from an imported performance profile now map to your original code because of source maps. -->
 
-When recording a performance profile, the flame chart in the Performance tool displays links from each event on the main thread to the corresponding JavaScript function in the Sources tool.  However, these links are broken when you export and import a performance profile.
+When recording a performance profile, the flame chart in the **Performance** tool displays links from each event on the main thread to the corresponding JavaScript function in the **Sources** tool.  However, these links are broken when you export and import a performance profile.
 
 In Microsoft Edge 100, the links from an imported performance profile now use source maps from Azure Artifacts symbol server to map back to your familiar, original source code.
 
 ![Links from imported performance profile use source maps go to your familiar, original source code.](devtools-100-images/links-perf-profile-orig-source-code.png)
-<!-- 
-1. In Edge Beta, go to edge://version and ensure you're on version 100 (we encountered an issue with Canary so fair warning that these steps might not work in Canary)
-go to edge://surf
-Open DevTools > Settings > Symbol Server
-For Azure DevOps organization, enter "microsoft"
-For Azure DevOps personal access token, ping Zoher for his or use your own from: Securely debug original code by using Azure Artifacts symbol server source maps - Microsoft Edge Development | Microsoft Docs
-Now reload DevTools
-Load the attached performance profile
-Zoom in on the 1761-1766ms portion of the profile
-Select the changeGameState function
-In the Summary pane, draw red highlight box around game.ts:53:3
-You can repeat the steps in Edge Stable (ensure you're on version 99) to see that the link instead can't be clicked and points to edge://surf/surf.bundle.js which is a lot less helpful. -->
-
-<!--
-Video recording of feature in action
-Refer to the attachments
--->
 
 To learn more about using source maps in DevTools, see [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md).
 
@@ -152,20 +100,13 @@ To get started with storing your source maps in Azure Artifacts symbol server an
 
 In previous versions of Microsoft Edge, the **Waterfall** view of requests in the **Network** tool didn't match the themes from Visual Studio Code that apply to the rest of DevTools.  In Microsoft Edge 100, this issue has been fixed.
 
-![Waterfall view of requests in the Network tool.](devtools-100-images/waterfall-view-requests-network.png)
-<!--
-1. In Microsoft Edge Stable, go to edge://version and ensure you are on version 99.
-2. Go to Microsoft Edge DevTools documentation.
-3. Open DevTools > Settings > Theme, and then select either Solarized Light or Quiet Light themes.
-4. Note, if DevTools disappears and you get a blank box where DevTools would normally be, use the keyboard to close DevTools and then re-open them and they should be in the theme you set in Step 3.
-5. Open the Network tool.
-6. Refresh the page.
-7. Take a screenshot and draw a red highlight box specifically around the Waterfall view.
-Repeat the above steps in Microsoft Edge Dev (ensure you are on version 100+). There are also screenshots in the PR that you can use for reference: Pull request 6942401: Fix VS Code themes on Network Waterfall View.
--->
+The selected theme wasn't applied in the Waterfall view:
 
-<!-- Video recording of feature in action
-See attachments -->
+![The selected theme wasn't applied in the Waterfall view.](devtools-100-images/waterfall-view-requests-network-no-theme.png)
+
+The selected theme is now applied to the Waterfall view of requests in the Network tool:
+
+![The selected theme is now applied to the Waterfall view of requests in the Network tool.](devtools-100-images/waterfall-view-requests-network.png)
 
 For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).  For more information about the Waterfall view for requests in the Network tool, see [Network features reference](../../../network/reference.md#display-the-timing-relationship-of-requests).
 
