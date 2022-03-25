@@ -98,8 +98,8 @@ The following image shows Impressions per Language over the past 90 days.
 ![Language distribution for your extension](../media/extensions-analytics-filter-language.png)
 
 The Analytics Dashboard helps you better understand and engage with your extension users. For information about other 
-features launched on Partner Center, see [Microsoft Edge Add-ons released features - Microsoft Edge Development | Microsoft Docs](https://docs.microsoft.com/microsoft-edge/extensions-chromium/whats-new/released-features).
+features launched on Partner Center, see [Microsoft Edge Add-ons released features - Microsoft Edge Development | Microsoft Docs](/microsoft-edge/extensions-chromium/whats-new/released-features).
 
-Share your feedback, concerns, and suggestions on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or with [Microsoft Edge extensions support](https://docs.microsoft.com/microsoft-edge/extensions-chromium/publish/contact-extensions-team) directly by emailing [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
+Share your feedback, concerns, and suggestions on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or with [Microsoft Edge extensions support](/microsoft-edge/extensions-chromium/publish/contact-extensions-team) directly by emailing [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
 
 Share your questions, comments, and concerns with the team on Twitter  or via the [Microsoft Edge Insider forums on TechCommunity](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
