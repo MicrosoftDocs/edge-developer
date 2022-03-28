@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 09/21/2021
+ms.date: 03/29/2022
 ---
 # Process model for WebView2 apps
 <!-- old title: # The WebView2 process model -->
@@ -63,7 +63,7 @@ To react to crashes and hangs in the browser and renderer processes, use the `Pr
 
 To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.
 
-To open the **Browser Task Manager** window from the **DevTools** window of a WebView2 instance, right-click the DevTools window title bar, and then select `Browser task manager`.  Or, press `Shift`+`Escape`.
+To open the **Browser Task Manager** call the [OpenTaskManagerWindow](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow) function.
 
 All processes that are associated with the browser process of your WebView2 are displayed, including their associated purposes.
 
