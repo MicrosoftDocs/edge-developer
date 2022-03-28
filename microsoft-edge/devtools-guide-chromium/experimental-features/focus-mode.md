@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/21/2022
+ms.date: 03/28/2022
 ---
 # Simplify DevTools using Focus Mode
 
@@ -45,7 +45,7 @@ Here are the main differences between the DevTools default user interface and Fo
 
 The **Activity Bar** is the most visible difference from the default user interface. Use it to open tools, help features, and settings.
 
-By default, the position of the **Activity Bar** adapts to the location of the DevTools window. If DevTools is undocked or docked to the bottom of the browser, the **Activity Bar** will be horizontal. If DevTools is docked to the side of the browser, the **Activity Bar** will be vertical, and tool names will not be visible. This enables quicker tool access when screen width is limited. You can change the **Activity Bar** position in the **Customize and control DevTools** (**...**) menu as follows.
+By default, the position of the **Activity Bar** adapts to the location of the DevTools window. If DevTools is undocked or docked to the bottom of the browser, the **Activity Bar** will be horizontal. If DevTools is docked to the side of the browser, the **Activity Bar** will be vertical, and tool names will not be visible. This enables quicker tool access when screen width is limited.
 
 Focus Mode with top aligned **Activity Bar** in DevTools docked.
 
