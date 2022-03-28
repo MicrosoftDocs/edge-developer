@@ -761,9 +761,6 @@
             - name: Create an extension tutorial, part 2
               href: extensions-chromium/getting-started/part2-content-scripts.md
 
-            - name: Manifest file format for extensions
-              href: extensions-chromium/getting-started/manifest-format.md
-
             - name: Sideload an extension
               href: extensions-chromium/getting-started/extension-sideloading.md
 
@@ -778,14 +775,25 @@
             - name: Port a Chrome extension to Microsoft Edge
               href: extensions-chromium/developer-guide/port-chrome-extension.md
 
-            - name: Migrate an extension from Manifest V2 to V3
-              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
-
             - name: Alternate methods of distributing extensions
               href: extensions-chromium/developer-guide/alternate-distribution-options.md
 
             - name: Native messaging
               href: extensions-chromium/developer-guide/native-messaging.md
+
+        - name: Manifest
+          items:
+            - name: Overview and timelines for migrating to Manifest V3
+              href: extensions-chromium/developer-guide/manifest-v3.md
+              displayName: 
+
+            - name: Migrate an extension from Manifest V2 to V3
+              href: extensions-chromium/developer-guide/migrate-your-extension-from-manifest-v2-to-v3.md
+              displayName: 
+
+            - name: Manifest file format for extensions
+              href: extensions-chromium/getting-started/manifest-format.md
+              displayName: 
 
         - name: Publish to the Add-ons website
           items:
@@ -827,10 +835,9 @@
 
             - name: Microsoft Edge Add-ons API
               items:
-                - name: Using the Microsoft Edge Add-ons API (in private preview)
+                - name: Using the Microsoft Edge Add-ons API (Beta)
                   href: extensions-chromium/publish/api/using-addons-api.md
-
-                - name: Microsoft Edge Add-ons API Reference (in private preview)
+                - name: Microsoft Edge Add-ons API Reference (Beta)
                   href: extensions-chromium/publish/api/addons-api-reference.md
         - name: Extensions for enterprise
           items:
@@ -927,10 +934,10 @@
               href: webview2/code-samples-links.md
               displayName: Sample Code for WebView2  # top-of-page title
 
-# comprehensive API samples, in alpha order of downloaded repo directories
+# in alpha order of downloaded repo directories
             - name: WebView2 control and API samples
               items:
-                - name: UWP WinUI 2 browser app
+                - name: WinUI 2 (UWP) browser app
                   href: webview2/samples/webview2_sample_uwp.md
                   displayName: webview2_sample_uwp  # repo dir name
 
@@ -1006,6 +1013,10 @@
             - name: Navigation events
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title
+
+            - name: Basic authentication
+              href: webview2/concepts/basic-authentication.md
+              displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
 
             - name: Web and native interop
               items:
@@ -1090,10 +1101,6 @@
               href: webview2/concepts/security.md
               displayName: 
 
-#           - name: Basic authentication for WebView2 apps  # forthcoming
-#             href: webview2/concepts/basic-authentication.md
-#             displayName: 
-
             # - name: Customize the UI   # not needed?  flatten
             #   items:
             #     - name: Customize the UI of WebView2 apps
@@ -1108,9 +1115,9 @@
               href: webview2/how-to/chromium-devtools-protocol.md
               displayName: Use the Chrome DevTools Protocol in WebView2  # old title
 
-            - name: Automate and test with Microsoft Edge Driver
+            - name: Automate and test with Microsoft Edge WebDriver
               href: webview2/how-to/webdriver.md
-              displayName: Automate and test WebView2 apps with Microsoft Edge Driver  # top-of-page title
+              displayName: Automate and test WebView2 apps with Microsoft Edge WebDriver  # top-of-page title
 
 # -----------------------------------------------------------------------------
         - name: Deployment and distribution
@@ -1214,7 +1221,7 @@
 
             - name: Capabilities and EdgeOptions
               href: webdriver-chromium/capabilities-edge-options.md
-            - name: Contact the Microsoft Edge Driver team
+            - name: Contact the Microsoft Edge WebDriver team
               href: webdriver-chromium/contact.md
 
         - name: webhint extension for Visual Studio Code

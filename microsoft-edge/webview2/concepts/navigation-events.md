@@ -34,8 +34,10 @@ The normal sequence of navigation events is:
 1. `SourceChanged`
 1. `ContentLoading`
 1. `HistoryChanged`
+1. `BasicAuthenticationRequested`
 1. `DOMContentLoaded`
 1. `NavigationCompleted`
+
 
 The following events describe the state of WebView2 during each navigation action:
 
