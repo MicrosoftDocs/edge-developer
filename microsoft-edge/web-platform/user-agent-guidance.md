@@ -203,7 +203,7 @@ Platform identifiers change based on the operating system, and version numbers i
 
 ### Microsoft Edge version increment change
 
-> Microsoft Edge's major version number will soon be incrementing from two digits, such as `Edg/99`, to three digits as in `Edg/100`. Site owners should make sure their User-Agent parsing logic is robust and works as expected.
+Microsoft Edge's major version number will soon be incrementing from two digits, such as `Edg/99`, to three digits as in `Edg/100`. Site owners should make sure their User-Agent parsing logic is robust and works as expected.
 
 
 <!-- ====================================================================== -->
