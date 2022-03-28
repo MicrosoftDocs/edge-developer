@@ -201,6 +201,8 @@ The response value from `navigator.userAgent` method uses the following format:
 
 Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer) used for iOS and Android.
 
+> [!NOTE]
+> Edge's major version number will soon be incrementing from two digits (e.g. Edg/99) to three digits (e.g. Edg/100). Site owners should ensure their User-Agent parsing logic is robust and works as expected.
 
 <!-- ====================================================================== -->
 ## Identifiers for Microsoft Edge on various platforms
