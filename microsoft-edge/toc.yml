@@ -30,11 +30,6 @@
               href: devtools-guide-chromium/whats-new/whats-new.md
               displayName: 
 
-# Experimental features
-            - name: Experimental features
-              href: devtools-guide-chromium/experimental-features/index.md
-              displayName: Experimental features, settings
-
 # What's New pages ------------------------------------------------------------
             - name: Microsoft Edge 99
               href: devtools-guide-chromium/whats-new/2022/03/devtools.md
@@ -111,6 +106,18 @@
             - name: Microsoft Edge 80
               href: devtools-guide-chromium/whats-new/2019/12/devtools.md
               displayName: what's new, announcements
+
+# Experimental features ------------------------------------------------------------------
+        - name: Experimental features
+          items:
+
+            - name: Experimental features overview
+              href: devtools-guide-chromium/experimental-features/index.md
+              displayName: Experimental features, settings
+
+            - name: Simplify DevTools using Focus Mode
+              href: devtools-guide-chromium/experimental-features/focus-mode.md
+              displayName: Experimental features, Focus Mode
 
 # TOOLS =======================================================================
         - name: Tools
