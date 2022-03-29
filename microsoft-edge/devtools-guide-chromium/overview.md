@@ -156,6 +156,30 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 
 
 <!-- ====================================================================== -->
+## Zooming DevTools or the rendered page
+
+The DevTools UI is implemented using HTML and CSS, and you can zoom it in and out like any other web page.  The zoom level for the DevTools portion of the browser is independent from the zoom level for the rendered webpage portion of the browser.
+
+There are 17 zoom levels: 8 zoom-out levels + 1 standard level (100%) + 8 zoom-in levels.  When you zoom the rendered page, the zoom percentage level is briefly displayed.
+
+
+To zoom the rendered page:
+
+1. If focus isn't already on the rendered page, click somewhere in the rendered page.
+1. Press `Ctrl`+`+` or `Ctrl`+`-` (Windows or Linux).  Or, press `Command`+`+` or `Command`+`-` (macOS).
+
+![Browser zoomed out, DevTools zoomed in.](overview-images/zoom-rendered-page.png)
+
+
+To zoom the DevTools portion of the browser:
+
+1. If focus isn't already on DevTools, click somewhere in DevTools.
+1. Press `Ctrl`+`+` or `Ctrl`+`-` (Windows or Linux).  Or, press `Command`+`+` or `Command`+`-` (macOS).
+
+![Browser zoomed in, DevTools zoomed out.](overview-images/zoom-devtools.png)
+
+
+<!-- ====================================================================== -->
 ## Features of the main toolbar
 
 DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
