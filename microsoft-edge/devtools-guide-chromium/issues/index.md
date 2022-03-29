@@ -122,11 +122,11 @@ To display an issue for elements with wavy underlines in the DOM tree:
 
 1. In DevTools, select the **Elements** tab.
 
-1. In the DOM tree, expand `<body>` > `<header>` > `<form>`.  Notice that the `<input>` element has a wavy underline.
+1. In the DOM tree, expand `<body>` > `<section>` > `<main>` > `<article id="cats">`.  Notice that the `<img>` element has a wavy underline.
 
    ![Wavy-underlined issues in the DOM tree in the Elements tool](media/wavy-underlines-dom-tree.png)
 
-1. Hover over the `<input>` element.  A tooltip displays information about the issue.
+1. Hover over the `<img>` element.  A tooltip displays information about the issue.
 
 1. Open the context menu on the element with the wavy underline, and then select **View issues**.  The **Issues** tool opens and displays the issue that's associated with that element.
 
