@@ -6,9 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/16/2022
+ms.date: 03/28/2022
 ---
 # Navigating with web resource request and response events
+
+<!-- 
+Todo:
+*  Finalize the list of h2 & h3 headings.
+*  Add Sentence 1.
+*  Add Paragraph 1.
+*  Add terms in Terminology table.
+-->
 
 Use this technology to do X.
 
