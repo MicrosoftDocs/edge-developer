@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 1/5/2022
+ms.date: 3/30/2022
 ---
 # Call web-side code from native-side code
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
@@ -89,35 +89,40 @@ To solve the problem, create a separate JavaScript file with your code, and then
 
 
 <!-- ====================================================================== -->
-## Scenario: Removing drag-and-drop functionality
+## Scenario: Removing drag-and-drop function
 
-In this section, you use JavaScript to remove the drag-and-drop functionality from your WebView2 control.
+In this section, you use JavaScript to remove the drag-and-drop function from your WebView2 control.
 
-To begin, explore the current drag-and-drop functionality:
+To begin, explore the current drag-and-drop function:
 
 1. Create a `.txt` file in order to drag-and-drop.  For example, create a file named `contoso.txt` and add text to it.
 
-1. Run your project.
+1. Press **F5** to build and run the project.
 
-1. Drag-and-drop the `contoso.txt` file onto the WebView control.  A new window opens, which is the result of the code in your sample project:
+1. Drag-and-drop the `contoso.txt` file into the WebView control.  A new window opens, which is the result of the code in your sample project:
 
    :::image type="content" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt." lightbox="./media/drag-text.png":::
 
-1. Next, add code to remove the drag-and-drop functionality from the WebView2 control.  Paste the following code into `InitializeAsync()` in `MainWindow.xaml.cs`:
+1. Next, add code to remove the drag-and-drop function from the WebView2 control.  Paste the following code into `InitializeAsync()` in `MainWindow.xaml.cs`:
 
    ```csharp
-   await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
-
-   await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('drop',function(e){" +
-   "e.preventDefault();" +
-   "console.log(e.dataTransfer);" +
-   "console.log(e.dataTransfer.files[0])" +
-   "}, false);");
+    private async void webView_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
+    {
+        await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
+    
+        await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
+    
+        await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('drop',function(e){" +
+        "e.preventDefault();" +
+        "console.log(e.dataTransfer);" +
+        "console.log(e.dataTransfer.files[0])" +
+        "}, false);");
+    }
    ```
 
-1. Run your project.
+1. Press **F5** to build and run the project.
 
-1. Try to drag and drop `contoso.txt`.  Confirm that you can't drag and drop.
+1. Try to drag and drop `contoso.txt` into the WebView control.  Confirm that you can't drag and drop.
 
 
 <!-- ====================================================================== -->
@@ -125,15 +130,15 @@ To begin, explore the current drag-and-drop functionality:
 
 In this section, you remove the right-click menu from your WebView2 control.
 
-To begin, explore the current functionality of the right-click menu:
+To begin, explore the current function of the right-click menu:
 
-1. Run your project.
+1. Press **F5** to build and run the project.
 
 1. Right-click anywhere on the WebView2 control.  The context menu displays the default right-click menu commands:
 
    :::image type="content" source="./media/context-menu.png" alt-text="The right-click menu, showing the default commands." lightbox="./media/context-menu.png":::
 
-   Next, add code to remove the right-click menu functionality from the WebView2 control.
+   Next, add code to remove the right-click menu function from the WebView2 control.
 
 1. Paste the following code into `InitializeAsync()` in `MainWindow.xaml.cs`:
 
@@ -141,7 +146,7 @@ To begin, explore the current functionality of the right-click menu:
    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
    ```
 
-1. Run the code again.  Confirm that you can't open a right-click menu.
+1. Press **F5** to build and run the project.  Confirm that you can't open a right-click menu.
 
 
 <!-- ====================================================================== -->
