@@ -24,7 +24,7 @@ With DevTools, you can do the following:
 
 *  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
 
-*  Emulate how your web product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
+*  Emulate how your website behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
 
 *  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
@@ -158,7 +158,7 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 <!-- ====================================================================== -->
 ## Features of the main toolbar
 
-DevTools gives you an amazing amount of power to inspect, debug, and change the web product currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
+DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
 
 
 ### Tabbed tool panels containing tabs and pages
@@ -223,7 +223,7 @@ When you click the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-ic
 
 ### Device Emulation
 
-Click the **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button to display the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
+Click the **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button to display the current website in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
 ![DevTools display of this article in an emulated mobile phone.](media/devtools-intro-device-emulation.msft.png)
 
@@ -412,7 +412,7 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 <!-- ====================================================================== -->
 ## Power tip: Use the Command Menu
 
-DevTools provides lots of features and functionality to use with your web product.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
+DevTools provides lots of features and functionality to use with your website.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
 
 ![the Command Menu in DevTools.](media/devtools-intro-command-menu.msft.png)
 

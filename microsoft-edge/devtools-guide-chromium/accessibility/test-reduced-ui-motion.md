@@ -45,7 +45,7 @@ To check whether the page is usable with animations turned off:
 
 1. In the **Rendering** tool, below **Emulate CSS media feature prefers-reduced-motion**, select **No emulation** to remove this setting.
 
-Notice that the demo webpage still runs the following animations, even with the above media query and emulation settings. When building your web product, make sure you fix all similar animations:
+Notice that the demo webpage still runs the following animations, even with the above media query and emulation settings. When building your website, make sure you fix all similar animations:
 *  Animation of the blue menu items when you hover over them.
 *  Animation of the circles on the **More** links when you hover over them.
 

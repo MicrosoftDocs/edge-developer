@@ -9,6 +9,7 @@
         "exclude": [
           "**/obj/**",
           "microsoft-edge/**",
+          "microsoft-edge/webview2/code/**",
           "**/includes/**"
         ]
       }
