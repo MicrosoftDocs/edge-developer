@@ -179,6 +179,12 @@ To zoom the DevTools portion of the browser:
 ![Browser zoomed in, DevTools zoomed out.](overview-images/zoom-devtools.png)
 
 
+To restore zoom to 100%:
+
+1. Make sure focus is on the desired part of the browser, either the rendered page or DevTools.
+1. Press `Ctrl`+`0` (Windows or Linux) or `Command`+`0` (macOS).
+
+
 <!-- ====================================================================== -->
 ## Features of the main toolbar
 
