@@ -27,7 +27,7 @@ With DevTools, you can do the following:
 
 *  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
 
-*  Emulate how your web product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
+*  Emulate how your webpage behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
 
 *  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 

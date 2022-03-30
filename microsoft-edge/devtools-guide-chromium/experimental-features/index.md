@@ -128,11 +128,7 @@ You can filter the experimental features by text included in the title.
 <!-- ====================================================================== -->
 ## Providing feedback about the experiments
 
-We're eager to hear your feedback about experimental features.
-
-* Send us your feedback by tweeting [@EdgeDevTools](https://twitter.com/edgedevtools).
-
-* [Contact the Microsoft Edge DevTools team](../contact.md).
+We're eager to hear your feedback about experimental features. [Contact the Microsoft Edge DevTools team](../contact.md) to share feedback with us.
 
 * With the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode.](../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
 
@@ -494,40 +490,7 @@ See [Compose and send web API requests using the Network Console tool](../networ
 <!-- ====================================================================== -->
 ## Focus Mode
 
-The Focus Mode experiment provides an **Activity Bar**, which is a compact horizontal or vertical toolbar that works well in a smaller window.  The activity bar contains small icons instead of tabs with text labels, and it replaces the main toolbar.
-
-*  The **Activity Bar** is a compact replacement for the main toolbar.
-*  The **Quick View** list is a replacement for the tabs on the Drawer toolbar.
-
-![Focus Mode, including the Activity Bar.](../media/experimental-features/focus-mode.png)
-
-To add a tool to the activity bar, open the tool.
-
-To remove a tool from the Activity Bar:
-
-*  Right-click its icon and then select **Remove from activity bar**.
-
-The following tools are always present on the **Activity Bar**, and cannot be removed:
-
-*  The **Inspect** tool and Device Emulation.
-*  The **Elements**, **Console**, and **Sources** tools.
-
-To switch to Focus Mode to show the Activity Bar instead of the main toolbar:
-
-1. In DevTools, select **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) > **Experiments**.
-
-1. Select the **Focus Mode** checkbox.
-
-1. Click the **Close** (**X**) button in the upper right, and then click the **Reload DevTools** button.
-
-   The Activity Bar appears on the left.  The main toolbar goes away.
-
-   The Drawer toolbar is replaced by a **Quick View** list of the tools, instead of tabs.  All of the tab tools are available in the **Quick View** list (including **Elements**, **Console**, and **Sources**).  Drag the Drawer up to expand it.
-
-See also:
-
-* [About the list of tools](../about-tools.md).
-* [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/DevTools/FocusMode/explainer.md) - draft documentation of this experimental feature, in the Explainers repo.
+See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
 
 *  This checkbox is present in Microsoft Edge Stable v98.
 *  This checkbox is present in Microsoft Edge Canary v100.

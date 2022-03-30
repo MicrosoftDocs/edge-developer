@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/29/2021
+ms.date: 03/14/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -42,26 +42,22 @@ Release Date: March 10, 2022
   
 [NuGet package for WebView2 SDK 1.0.1150.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.1150.38 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.0.1150.38 or higher.  
 
 ### General
-
-#### Bug Fixes
-  
-*  Fixed a bug where WebView2 app gets stuck occasionally with UWP.
-
 
 #### Promotions
   
 The following items are now stable:
 
-*	The [BasicAuthentication API] (https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38) that enables developers to handle Basic HTTP Authentication request and response.
+*   The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) that enables developers to handle Basic HTTP Authentication request and response.
   
 
+<!-- ====================================================================== -->
 ## 1.0.1189-prerelease
   
 Release Date: March 10, 2022  
-  
+
 [NuGet package for WebView2 SDK 1.0.1189](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
   
 For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 100.0.1189.0 or higher.  
@@ -70,7 +66,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental Features
   
-*	Added [ContextMenuRequested API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease) to enable host app to create or modify own context menu.
+*   Added [ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true) to enable host app to create or modify their own context menu.
 
 
 #### Promotions
@@ -78,21 +74,21 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
   
 The following APIs are promoted to stable in this prerelease SDK:  
 
-* 	The [CallDevToolsProtocolMethodForSession API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
-*	The [StatusBarText API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease):
-	* 	add_StatusBarTextChanged
-	*  get_StatusBarText
-	*  remove_StatusBarTextChanged
-*	The [AllowExternalDrop API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease) that supports enable/disable external drop.
-* 	The [HiddenPdfToolbarItems API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease) is available to customize the PDF toolbar items.
-*  The [ExclusiveUserDataFolderAccess API](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease) that provides control availability of other processes can create WebView2 with the same user data folder.
-  
+*    The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
+*   The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true):
+    *  `add_StatusBarTextChanged`
+    *  `get_StatusBarText`
+    *  `remove_StatusBarTextChanged`
+*   The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) that supports enable/disable external drop.
+*    The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize the PDF toolbar items.
+*  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 using the same user data folder.
 
 #### Bug Fixes
   
-*   Fixed a bug where focus is not returned to the application after closing find bar for windowed mode.  
-*   Fixed bug where DocumentTitleChanged event was not getting raised for back/forward navigation in single-page apps.  
-*   Fixed bug where HistoryChanged event was not getting raised for iframe navigations.  
+*   Fixed a bug where WebView2 app gets stuck occasionally with UWP.
+*   Fixed a bug where focus is not returned to the application after closing the **Find** bar for windowed mode.  
+*   Fixed bug in which the `DocumentTitleChanged` event was not being raised for backward/forward navigation in single-page apps.  
+*   Fixed bug in which the `HistoryChanged` event was not being raised for Iframe navigation.  
 
 ## 1.0.1108.44
 
