@@ -63,7 +63,7 @@ To react to crashes and hangs in the browser and renderer processes, use the `Pr
 
 To safely shut down associated browser and renderer processes, use the `Close` method of `CoreWebView2Controller`.
 
-To open the **Browser Task Manager** call the [OpenTaskManagerWindow](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow) function.
+To open the **Browser Task Manager**, call the [OpenTaskManagerWindow](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow) method.
 
 All processes that are associated with the browser process of your WebView2 are displayed, including their associated purposes.
 
