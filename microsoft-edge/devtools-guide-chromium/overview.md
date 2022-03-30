@@ -163,7 +163,7 @@ The DevTools UI is implemented using HTML and CSS, and you can zoom it in and ou
 There are 17 zoom levels: 8 zoom-out levels + 1 standard level (100%) + 8 zoom-in levels.  When you zoom the rendered page, the zoom percentage level is briefly displayed.
 
 
-To zoom the rendered page:
+**To zoom the rendered page:**
 
 1. If focus isn't already on the rendered page, click somewhere in the rendered page.
 1. Press `Ctrl`+`+` or `Ctrl`+`-` (Windows or Linux).  Or, press `Command`+`+` or `Command`+`-` (macOS).
@@ -171,7 +171,7 @@ To zoom the rendered page:
 ![Browser zoomed out, DevTools zoomed in.](overview-images/zoom-rendered-page.png)
 
 
-To zoom the DevTools portion of the browser:
+**To zoom the DevTools portion of the browser:**
 
 1. If focus isn't already on DevTools, click somewhere in DevTools.
 1. Press `Ctrl`+`+` or `Ctrl`+`-` (Windows or Linux).  Or, press `Command`+`+` or `Command`+`-` (macOS).
@@ -179,7 +179,7 @@ To zoom the DevTools portion of the browser:
 ![Browser zoomed in, DevTools zoomed out.](overview-images/zoom-devtools.png)
 
 
-To restore zoom to 100%:
+**To restore zoom to 100%:**
 
 1. Make sure focus is on the desired part of the browser, either the rendered page or DevTools.
 1. Press `Ctrl`+`0` (Windows or Linux) or `Command`+`0` (macOS).
