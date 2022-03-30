@@ -22,7 +22,7 @@ To report a problem with DevTools or ask for a new feature, file an issue at the
 <!-- Title: Head to the new DevTools repo on GitHub to send ideas, feedback, suggestions, and bugs -->
 <!-- Subtitle: You can file feedback, ask questions, and have discussions about DevTools in our GitHub repo. -->
 
-We're excited to announce the new [MicrosoftEdge/DevTools: Feedback and discussions about Microsoft Edge Developer Tools (github.com)](https://github.com/MicrosoftEdge/DevTools) repo on GitHub!  This new repo is a place for our community of developers to send us ideas, feedback, suggestions, and tips to improve DevTools. We're eager to discuss with you how DevTools can better serve your needs and meet the challenges you face every day in building great web experiences.
+We're excited to announce the new [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo on GitHub!  This new repo is a place for our community of developers to send us ideas, feedback, suggestions, and tips to improve DevTools. We're eager to discuss with you how DevTools can better serve your needs and meet the challenges you face every day in building great web experiences.
 
 ![The DevTools feedback repo.](devtools-100-images/devtools-feedback-repo.png)
 
@@ -61,7 +61,7 @@ For more information, see [Change DevTools language settings](../../../customize
 <!-- Title: You no longer have to wonder if a request was fulfilled by your service worker or cache -->
 <!-- Subtitle: The "Fulfilled by" column in the Network tool tells you how a request was fulfilled. -->
 
-In Microsoft Edge 100, the **Network** tool supports a new, **Fulfilled by** column in the request log.  The **Fulfilled by** column shows how a request was fulfilled.  If the request was fulfilled by your service worker or from the cache, that information is now tracked in the **Fulfilled by** column.  When exporting or importing the request log as a HAR file, the information in the **Fulfilled by** column is also included.
+In Microsoft Edge 100, the **Network** tool supports a new **Fulfilled by** column in the request log.  If the request was fulfilled by your service worker or from the cache, that information is now tracked in the **Fulfilled by** column.  When exporting or importing the request log as a `HAR` file, the information in the **Fulfilled by** column is also included.
 
 ![The Fulfilled By column in the request log of the Network tool.](devtools-100-images/fulfilled-by-request-log.png)
 <!--
@@ -70,7 +70,7 @@ If you don't have the **Fulfilled by** column, right-click the table headers in 
 
 To learn more about the request log in the Network tool, see [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.  For more information about service workers, see [Service Worker improvements](../../../service-workers/index.md).
 
-For the history of this feature, see [Outlook: Add column in the Network activity log to track why resources are not loaded from DiskCache when ServiceWorker is present · Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
+For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
 
 
 <!-- ====================================================================== -->
@@ -81,7 +81,7 @@ For the history of this feature, see [Outlook: Add column in the Network activit
 
 When recording a performance profile, the flame chart in the **Performance** tool displays links from each event on the main thread to the corresponding JavaScript function in the **Sources** tool.  However, these links are broken when you export and import a performance profile.
 
-In Microsoft Edge 100, the links from an imported performance profile now use source maps from Azure Artifacts symbol server to map back to your familiar, original source code.
+In Microsoft Edge 100, the links from an imported performance profile now use source maps from Azure Artifacts symbol server to map back to your familiar, original source code.  The performance profile must have been exported in Microsoft Edge 100 (or greater), so that the profile includes the information that's needed to resolve source maps in the exported performance trace.
 
 ![Links from imported performance profile use source maps go to your familiar, original source code.](devtools-100-images/links-perf-profile-orig-source-code.png)
 
@@ -100,11 +100,11 @@ To get started with storing your source maps in Azure Artifacts symbol server an
 
 In previous versions of Microsoft Edge, the **Waterfall** view of requests in the **Network** tool didn't match the themes from Visual Studio Code that apply to the rest of DevTools.  In Microsoft Edge 100, this issue has been fixed.
 
-The selected theme wasn't applied in the Waterfall view:
+Before Microsoft Edge 100, the selected theme wasn't applied in the Waterfall view:
 
 ![The selected theme wasn't applied in the Waterfall view.](devtools-100-images/waterfall-view-requests-network-no-theme.png)
 
-The selected theme is now applied to the Waterfall view of requests in the Network tool:
+Now in Microsoft Edge 100, the selected theme is applied to the Waterfall view of requests in the Network tool:
 
 ![The selected theme is now applied to the Waterfall view of requests in the Network tool.](devtools-100-images/waterfall-view-requests-network.png)
 

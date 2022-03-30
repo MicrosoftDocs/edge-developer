@@ -9,19 +9,22 @@ ms.date: 03/30/2021
 ---
 # Change DevTools language settings
 
-Your Developer Tools matches your browser language by default, if it is one of the ten languages currently supported (in addition to English):
+Your Developer Tools matches your browser language by default, if it is one of the supported languages:
 
-* Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
-* Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
+<!-- same order as UI, for ease of maint and matching what user sees: -->
+* Czech - Čeština
+* German - Deutsch
+* English - English
+* Spanish - espa&#241;ol
 * French – fran&#231;ais
-* German - deutsch
 * Italian - italiano
 * Japanese - &#26085;&#26412;&#35486;
 * Korean - &#54620;&#44397;&#50612;
 * Portuguese - portugu&#234;s
 * Russian – &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
-* Spanish - espa&#241;ol
-
+* Vietnamese - Tiếng Việt
+* Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+* Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
 
 The DevTools UI in Chinese:
 
