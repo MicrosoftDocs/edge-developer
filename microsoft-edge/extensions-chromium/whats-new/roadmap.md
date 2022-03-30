@@ -20,10 +20,6 @@ This article describes the latest updates about new Partner Center features for 
 
 The following features are actively being developed by our engineers.
 
-### Publish and update extensions to Microsoft Edge Add-ons using APIs
-
-Once this feature is available, you can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline.  You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center.
-
 ### Developers can respond to user reviews on their Microsoft Edge add-on
 
 Developers can reply to the reviews and feedback received for their extension, on their Microsoft Edge add-on product page via Partner Center.

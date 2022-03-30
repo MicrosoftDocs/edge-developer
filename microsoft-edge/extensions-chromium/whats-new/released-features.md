@@ -18,6 +18,14 @@ For more information about upcoming updates and feature releases, see [Microsoft
 
 
 <!-- ====================================================================== -->
+## Publish and update extensions to Microsoft Edge Add-ons using APIs
+
+You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. The Microsoft Edge Add-ons Publish API is currently in beta.
+
+*Released March 2022*
+
+
+<!-- ====================================================================== -->
 ## Microsoft Edge extensions developer portal
 
 The new edition of the developer portal contains relevant resources and documentation for Microsoft Edge extensions. For more information, see [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions/).
