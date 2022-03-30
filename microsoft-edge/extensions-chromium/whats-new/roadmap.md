@@ -32,6 +32,10 @@ Microsoft Partner Center will no longer accept new Manifest V2 Microsoft Edge ex
 
 Developers can view the navigation bar / tree path while using Partner Center to track the exact Partner Center path users are visiting. Developers can maintain awareness of their location within Microsoft Partner Center.
 
+<br/>
+
+---
+
 
 <!-- ====================================================================== -->
 ## Features in backlog
