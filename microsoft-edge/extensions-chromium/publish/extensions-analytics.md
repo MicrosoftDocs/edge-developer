@@ -36,7 +36,7 @@ The following image shows the **Weekly users** from the date the extension was p
 
 ![Weekly users from the date the extension was published until today](../media/extensions-analytics-weekly-users.png)
 
-### Enabled vs Disable
+#### Enabled vs Disabled
 
 The **Enabled vs Disabled** report shows the number of instances of the extension which are enabled or disabled per user.
 
@@ -46,9 +46,7 @@ The following image shows the **Weekly users** who have enabled and disabled the
 
 
 <!-- ====================================================================== -->
-## Filter Weekly users
 
-Use the filters to view Weekly users by Installs or Impressions over different time periods.
 
 ### Installs
 
@@ -85,17 +83,17 @@ The following image shows total user visits.
 
 The OS (operating system) filter highlights the OS usage distribution of all the install requests for your extension.
 
-The following image shows Impressions by Operating System over the past 90 days.
+The following image shows Weekly Users by Operating System over the past 30 days.
 
-![Operation System usage distribution for your extension](../media/extensions-analytics-filter-os.png)
+![Operation System usage distribution for your extension](../media/extension-analytics-weekly-users-filter-os-30-days.png)
 
 ### Language
 
 The Language filter shows the language distribution for users of your extension.
 
-The following image shows Impressions per Language over the past 90 days.
+The following image shows Installs per Language over the past 6 months.
 
-![Language distribution for your extension](../media/extensions-analytics-filter-language.png)
+![Language distribution for your extension](../media/extension-analytics-installs-filter-language-6-months.png)
 
 The Analytics Dashboard helps you better understand and engage with your extension users. For information about other 
 features launched on Partner Center, see [Microsoft Edge Add-ons released features - Microsoft Edge Development | Microsoft Docs](/microsoft-edge/extensions-chromium/whats-new/released-features).
