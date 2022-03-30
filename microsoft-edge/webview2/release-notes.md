@@ -64,7 +64,7 @@ Release Date: March 10, 2022
   
 [NuGet package for WebView2 SDK 1.0.1189](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
   
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 101.0.1189.0 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 100.0.1189.0 or higher.  
 
 ### General
 
