@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: extensions
-ms.date: 3/29/2022
+ms.date: 3/30/2022
 ---
 # View Microsoft Edge extensions analytics dashboard
 
@@ -42,7 +42,8 @@ The **Enabled vs Disabled** report shows the number of instances of the extensio
 
 The following image shows the **Weekly users** who have enabled and disabled the extension over the same time period. You can choose from **Select all** / **Unselect all**, **Disabled**, and **Enabled** views.
 
-![Weekly users who have enabled and disabled the extension over the selected time period](../media/extensions-analytics-enabled-disabled.png)
+> [!div class="mx-imgBorder"]
+> ![Weekly users who have enabled and disabled the extension over the selected time period](../media/extensions-analytics-enabled-disabled.png)
 
 
 <!-- ====================================================================== -->
@@ -85,7 +86,8 @@ The OS (operating system) filter highlights the OS usage distribution of all the
 
 The following image shows Weekly Users by Operating System over the past 30 days.
 
-![Operation System usage distribution for your extension](../media/extension-analytics-weekly-users-filter-os-30-days.png)
+> [!div class="mx-imgBorder"]
+> ![Operation System usage distribution for your extension](../media/extension-analytics-weekly-users-filter-os-30-days.png)
 
 ### Language
 
@@ -93,11 +95,10 @@ The Language filter shows the language distribution for users of your extension.
 
 The following image shows Installs per Language over the past 6 months.
 
-![Language distribution for your extension](../media/extension-analytics-installs-filter-language-6-months.png)
+> [!div class="mx-imgBorder"]
+> ![Language distribution for your extension](../media/extension-analytics-installs-filter-language-6-months.png)
 
 The Analytics Dashboard helps you better understand and engage with your extension users. For information about other 
 features launched on Partner Center, see [Microsoft Edge Add-ons released features - Microsoft Edge Development | Microsoft Docs](/microsoft-edge/extensions-chromium/whats-new/released-features).
 
-Share your feedback, concerns, and suggestions on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or with [Microsoft Edge extensions support](/microsoft-edge/extensions-chromium/publish/contact-extensions-team) directly by emailing [ext_dev_support@microsoft.com](mailto:ext_dev_support@microsoft.com).
-
-Share your questions, comments, and concerns with the team on Twitter  or via the [Microsoft Edge Insider forums on TechCommunity](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
+Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via the [Microsoft Edge Insider forums on TechCommunity](https://techcommunity.microsoft.com/t5/articles/manifest-v3-changes-are-now-available-in-microsoft-edge/m-p/1780254).
