@@ -310,10 +310,19 @@ m_webview->add_WebResourceResponseReceived(
 
 **Request:**
 
+* [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
+   * `Add_WebResourceRequested`
+   * `AddWebResourceRequedtedFilter`
+   * `Remove_WebResourceRequested`
+   * `RemoveWebResourceRequestedFilter`
 * [ICoreWebView2_2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2)
    * `add_WebResourceResponseReceived`
    * `NavigateWithWebResourceRequest`
    * `remove_WebResourceResponseReceived`
+* [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+   * `CreateWebResourceResponse`
+* [ICoreWebView2Environment2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment2)
+   * `CreateWebResourceRequest`   
 * [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
    * `get_Content`
    * `get_Headers`
