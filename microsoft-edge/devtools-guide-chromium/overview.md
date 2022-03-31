@@ -156,6 +156,34 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 
 
 <!-- ====================================================================== -->
+## Zoom DevTools in or out
+
+The DevTools UI is implemented using HTML and CSS, like web pages, so you can zoom in and out by using the standard keyboard shortcuts.  The zoom levels for DevTools and the rendered page are independent.
+
+**To zoom the DevTools portion of the browser:**
+
+1. If focus isn't already on DevTools, click somewhere in DevTools.
+1. Press `Ctrl`+`+` or `Ctrl`+`-` (Windows or Linux).  Or, press `Command`+`+` or `Command`+`-` (macOS).
+
+![DevTools zoomed out.](overview-images/zoom-devtools.png)
+
+<!-- ![DevTools zoomed in.](overview-images/zoom-rendered-page.png) -->
+
+To zoom the rendered page, click the page, and then use the same keyboard shortcuts as above.
+
+**To restore zoom to 100%:**
+
+1. Make sure focus is on the desired part of the browser, either DevTools or the rendered page.
+1. Press `Ctrl`+`0` (Windows or Linux) or `Command`+`0` (macOS).
+
+**To zoom DevTools Settings:**
+
+1. In DevTools **Settings**, click **Close** (**x**) in the upper right.
+1. Change the zoom level of DevTools, as described above.
+1. Click the **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button.
+
+
+<!-- ====================================================================== -->
 ## Features of the main toolbar
 
 DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
