@@ -178,6 +178,12 @@ To zoom the rendered page, click somewhere in the rendered page and use the same
 1. Make sure focus is on the desired part of the browser, either DevTools or the rendered page.
 1. Press `Ctrl`+`0` (Windows or Linux) or `Command`+`0` (macOS).
 
+**To zoom DevTools Settings:**
+
+1. In DevTools **Settings**, click **Close** (**x**) in the upper right.
+1. Change the zoom level of DevTools, as described above.
+1. Click the **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button.
+
 
 <!-- ====================================================================== -->
 ## Features of the main toolbar
