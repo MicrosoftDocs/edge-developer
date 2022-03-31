@@ -160,8 +160,6 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 
 The DevTools UI is implemented using HTML and CSS, like web pages, so you can zoom in and out by using the standard keyboard shortcuts.  The zoom levels for DevTools and the rendered page are independent.
 
-There are 17 zoom levels: 8 zoom-out levels + 1 standard level (100%) + 8 zoom-in levels.
-
 **To zoom the DevTools portion of the browser:**
 
 1. If focus isn't already on DevTools, click somewhere in DevTools.
@@ -171,7 +169,7 @@ There are 17 zoom levels: 8 zoom-out levels + 1 standard level (100%) + 8 zoom-i
 
 <!-- ![DevTools zoomed in.](overview-images/zoom-rendered-page.png) -->
 
-To zoom the rendered page, click somewhere in the rendered page and use the same keyboard shortcuts.  When you zoom the rendered page, the zoom percentage level is briefly displayed.
+To zoom the rendered page, click the page, and then use the same keyboard shortcuts as above.
 
 **To restore zoom to 100%:**
 
