@@ -9,6 +9,7 @@ ms.technology: webview
 ms.date: 03/28/2022
 ---
 # Navigating with web resource request and response events
+# Managing network requests
 
 <!-- 
 Todo:
@@ -17,6 +18,7 @@ Todo:
 *  Add Paragraph 1.
 *  Add terms in Terminology table.
 -->
+The Microsoft Edge WebView2 control lets you interact with and modify network requests. You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. 
 
 Use this technology to do X.
 
@@ -38,6 +40,35 @@ During navigation among URIs, use the `WebResourceRequested` event and the `WebR
 | `WebResourceRequested` event | Fired when a web resource is requested by the WebView2 control.  The WebView2 control fires this event.  Your host app listens for this event and then handles this event to do X. |
 | `WebResourceResponseReceived` event | Fired when a web resource response is received by the WebView2 control.  The WebView2 control fires this event.  Your host app listens for this event and then handles this event to do Y. |
 
+
+## Requesting responses
+<!--
+* Discuss adding/modifying/customizing headers
+* Discuss importance + implications of parameters (url, headers, content)
+-->
+
+## Sending responses
+
+## When to use 
+When to use `webResourceRequested` and `webResourceResponseReceived` events vs. when to use other options
+<!--
+* insert table
+-->
+
+## Navigating with webResourceRequested
+
+## Scenario/use cases
+
+## Example: NavigateWithWebResourceRequested example from sample app
+
+## Example: Header modification when making a request
+
+## Example: Block images in a webpage 
+
+## Example: Send a local file
+
+
+<!-- ====================================================================== -->
 
 ## Scenario/use cases
 
