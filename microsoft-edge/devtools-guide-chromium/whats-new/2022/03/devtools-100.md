@@ -5,15 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/24/2022
+ms.date: 03/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 100)
 
 The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, see these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
 
-If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
+If you're on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels of Microsoft Edge (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.
 
-To report a problem with DevTools or ask for a new feature, file an issue at the new [Microsoft Edge DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools).
+To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->
@@ -22,11 +22,11 @@ To report a problem with DevTools or ask for a new feature, file an issue at the
 <!-- Title: Head to the new DevTools repo on GitHub to send ideas, feedback, suggestions, and bugs -->
 <!-- Subtitle: You can file feedback, ask questions, and have discussions about DevTools in our GitHub repo. -->
 
-We're excited to announce the new [MicrosoftEdge/DevTools](https://github.com/MicrosoftEdge/DevTools) repo on GitHub!  This new repo is a place for our community of developers to send us ideas, feedback, suggestions, and tips to improve DevTools. We're eager to discuss with you how DevTools can better serve your needs and meet the challenges you face every day in building great web experiences.
+We're excited to announce the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo on GitHub!  This new repo is a place for our community of developers to send us ideas, feedback, suggestions, and tips to improve DevTools.  We're eager to discuss with you how DevTools can better serve your needs and meet the challenges you face every day in building great web experiences.
 
 ![The DevTools feedback repo.](devtools-100-images/devtools-feedback-repo.png)
 
-Head to [our repo on GitHub](https://github.com/MicrosoftEdge/DevTools) to become a part of the Edge DevTools community.
+Head to our DevTools repo at GitHub to become a part of the Edge DevTools community.
 
 
 <!-- ====================================================================== -->
