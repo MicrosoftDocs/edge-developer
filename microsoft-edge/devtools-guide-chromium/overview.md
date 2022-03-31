@@ -156,7 +156,7 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 
 
 <!-- ====================================================================== -->
-## Zooming DevTools or the rendered page
+## Zoom DevTools in or out
 
 The DevTools UI is implemented using HTML and CSS, like web pages, so you can zoom in and out by using the standard keyboard shortcuts.  The zoom levels for DevTools and the rendered page are independent.
 
