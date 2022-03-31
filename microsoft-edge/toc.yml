@@ -1029,7 +1029,7 @@
                   href: webview2/how-to/hostobject.md
                   displayName: AddHostObjectToScript, host objects
 
-                - name: Navigating with web resource request and response events
+                - name: Managing network requests
                   href: webview2/how-to/webresourcerequested.md
                   displayName: WebResourceRequested, WebResourceResponseReceived
 

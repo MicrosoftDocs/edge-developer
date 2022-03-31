@@ -1,15 +1,17 @@
 ---
-title: Navigating with web resource request and response events
+title: Managing network requests in WebView2
 description: Using the WebResourceRequested event and the WebResourceResponseReceived event in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ---
+# Managing network requests in WebView2
+<!-- 
 # Navigating with web resource request and response events
-# Managing network requests
+-->
 
 <!-- 
 Todo:
@@ -18,9 +20,24 @@ Todo:
 *  Add Paragraph 1.
 *  Add terms in Terminology table.
 -->
-The Microsoft Edge WebView2 control lets you interact with and modify network requests. You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. 
 
-Use this technology to do X.
+<!--
+Actors:
+*  your host app
+   *  your local code/your disk (your code which sends the response instead of the ususal way of the server sending the response) - is this code part of your host app?
+*  the server
+
+Basic Auth, the actors are:
+*  the HTTP server
+*  the WebView2 control
+*  your host app
+-->
+
+
+
+The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. 
+
+Use this technology to do X.  When you want do extra beyond Basic Authentication.
 
 What UX feature does this provide for your app?
 
@@ -41,90 +58,61 @@ During navigation among URIs, use the `WebResourceRequested` event and the `WebR
 | `WebResourceResponseReceived` event | Fired when a web resource response is received by the WebView2 control.  The WebView2 control fires this event.  Your host app listens for this event and then handles this event to do Y. |
 
 
-## Requesting responses
+<!-- ====================================================================== -->
+## Sending requests to the web server
 <!--
 * Discuss adding/modifying/customizing headers
 * Discuss importance + implications of parameters (url, headers, content)
 -->
 
+
+<!-- ====================================================================== -->
 ## Sending responses
 
-## When to use 
-When to use `webResourceRequested` and `webResourceResponseReceived` events vs. when to use other options
+<!-- from where?  from local code rather than from the server -->
+
+
+<!-- ====================================================================== -->
+## When to use this approach vs. Basic Auth
+
+## When to use
+
+When to use `webResourceRequested` and `webResourceResponseReceived` events vs. when to use other options (such as Basic Authentication).
 <!--
 * insert table
+
+| Option | Description |
+|---|---|
+| Basic Auth | x |
+| Cookies | x |
+| General navigation | x |
+| x | x |
+
 -->
 
+
+<!-- ====================================================================== -->
 ## Navigating with webResourceRequested
 
+
+<!-- ====================================================================== -->
 ## Scenario/use cases
 
+
+<!-- ====================================================================== -->
 ## Example: NavigateWithWebResourceRequested example from sample app
 
-## Example: Header modification when making a request
-
-## Example: Block images in a webpage 
-
-## Example: Send a local file
+This is an existing example in the Win32 sample app.
 
 
-<!-- ====================================================================== -->
 
-## Scenario/use cases
-
-This article covers accomplishing A, B, and C for the UX of your host app.
-
-
-<!-- ====================================================================== -->
-## Setting up component 1
-
-Set up X, as follows:
-
-1. x
-1. x
-
-<!-- ====================================================================== -->
-## Setting up component 2
-
-Set up Y, as follows:
-
-1. x
-1. x
-
-
-<!-- ====================================================================== -->
-## Step 1/Phase 1 - Do X
-
-First, you need to accomplish X, as follows:
-
-1. x
-1. x
-
-
-<!-- ====================================================================== -->
-## Step 2/Phase 2
-
-Next, you need to accomplish Y, as follows:
-
-1. x
-1. x
-
-
-<!-- ====================================================================== -->
-## Step 3/Phase 3
-
-Finally, you need to accomplish Z, as follows:
-
-1. x
-1. x
-
-
-<!-- ====================================================================== -->
-## Example of a web resource request
+<!-- -------------------------------------------------- -->
+### Example of a web resource request
 
  <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 
-<!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md#examples -->
+<!-- the code listings below were not copied from the sample app; they were copied from the spec.  ok?
+from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md#examples -->
 
 
 <!-- -------------------------------------------------- -->
@@ -177,7 +165,33 @@ CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()))
 
 
 <!-- ====================================================================== -->
+## Example: Header modification when making a request
+
+<!-- Dev to provide sample -->
+
+
+<!-- ====================================================================== -->
+## Example: Block images in a webpage 
+
+This is an existing example in the Win32 sample app.
+
+
+<!-- ====================================================================== -->
+## Example: Replace a web resource with local resource
+<!-- ## Example: Replace a requested file with a local file -->
+
+Your code <!--your substitution code in place of the server --> sends a response from your local machine to your host app.
+
+You can replace an image that's requested by your own local image file instead.  
+
+This is an existing example in the Win32 sample app.
+
+
+
+<!-- ====================================================================== -->
 ## Example of a web resource response
+
+<!-- todo: should this section/listing be moved into one of the four "Example:" sections above? (as we did with the Request section/example listing) -->
 
 The following code demonstrates how the `WebResourceResponseReceived` event can be used.
 
