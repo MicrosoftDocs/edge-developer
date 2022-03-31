@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 100)
-description: New, DevTools repo on GitHub, to send feedback. Use filters to focus on parts of a heap snapshot. Czech and Vietnamese UI. Network tool displays how a request was fulfilled. Links in a performance profile map to your original code. Network tool's Waterfall view matches Visual Studio Code themes.
+description: New DevTools repo at GitHub, to send feedback. Use filters to focus on parts of a heap snapshot. Czech and Vietnamese UI. Network tool displays how a request was fulfilled. Links in a performance profile map to your original code. Network tool's Waterfall view matches Visual Studio Code themes.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -17,12 +17,12 @@ To report a problem with DevTools or ask for a new feature, check out the new [M
 
 
 <!-- ====================================================================== -->
-## Join the Microsoft Edge DevTools community on GitHub
+## Join the Microsoft Edge DevTools community at GitHub
 
-<!-- Title: Head to the new DevTools repo on GitHub to send ideas, feedback, suggestions, and bugs -->
-<!-- Subtitle: You can file feedback, ask questions, and have discussions about DevTools in our GitHub repo. -->
+<!-- Title: Head to the new DevTools repo at GitHub to send ideas, feedback, suggestions, and bugs -->
+<!-- Subtitle: You can file feedback, ask questions, and have discussions about DevTools at our GitHub repo. -->
 
-We're excited to announce the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo on GitHub!  This new repo is a place for our community of developers to send us ideas, feedback, suggestions, and tips to improve DevTools.  We're eager to discuss with you how DevTools can better serve your needs and meet the challenges you face every day in building great web experiences.
+We're excited to announce the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo at GitHub!  This new repo is a place for our community of developers to send us ideas, feedback, suggestions, and tips to improve DevTools.  We're eager to discuss with you how DevTools can better serve your needs and meet the challenges you face every day in building great web experiences.
 
 ![The DevTools feedback repo.](devtools-100-images/devtools-feedback-repo.png)
 
