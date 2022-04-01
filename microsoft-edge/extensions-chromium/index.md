@@ -29,7 +29,7 @@ To work directly with part of the browser, such as a window or tab, you must sen
 <!-- ====================================================================== -->
 ## Basic guidance
 
-Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge.  Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  The following table isn't definitive, and is just a starting point.
+Some of the most popular browsers to build extensions for include Safari, Firefox, Chrome, Opera, Brave, and Microsoft Edge.  Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  The following table isn't exhaustive or definitive. It is just a starting point for your research.
 
 | Web browser | Chromium-based? | Extension development webpage |
 |:--- |:--- |:--- |
@@ -47,9 +47,9 @@ Some of the most popular browsers to build extensions for include Safari, Firefo
 <!-- ====================================================================== -->
 ## Why Chromium?
 
-If your goal is to publish your extension in the extensions store for each browser, your extension must be modified for each version to target and run in each distinct browser environment.  For example, [Safari extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) can use both web and native code to communicate with counterpart native applications.  The last four browsers in the previous table use the same code package, and minimizes the requirement to maintain parallel versions.  These browsers are based on the [Chromium open-source project](https://www.chromium.org/Home).
+If your goal is to publish your extension in the extensions store for each browser, your extension must be modified for each version to target and run in each distinct browser environment.  For example, [Safari extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) can use both web and native code to communicate with counterpart native applications.  The last four browsers in the previous table use the same code package and minimize the need to maintain parallel versions.  These browsers are based on the [Chromium open-source project](https://www.chromium.org/Home).
 
-Create a Chromium extension to write the least amount of code.  It also targets the maximum number of extension stores and ultimately the maximum number of users who find and acquire your extension.
+Benefits of creating a Chromium extension include writing the fewest lines of code.  It also targets the maximum number of extension stores and ultimately the maximum number of users who can find and acquire your extension.
 
 The following content focuses mostly on Chromium extensions.
 
@@ -84,7 +84,7 @@ Users might need to install your extension in different browsers. In this scenar
 
 ### Migrate an existing extension to Microsoft Edge
 
-If you've already developed an extension for another Chromium-based browser, you can submit it to the Microsoft Edge Add-ons website. You don't need to rewrite your extension, and must verify it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, make sure the same APIs or alternatives are available for your target browser.
+If you've already developed an extension for another Chromium-based browser, you can submit it to the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home). You don't need to rewrite your extension or verify that it works in Microsoft Edge.  When you migrate an existing Chromium extension to other Chromium browsers, make sure the same APIs or alternatives are available for your target browser.
 
 For more information on porting your Chrome extension to Microsoft Edge, see [Port Chrome extensions to Microsoft Edge](developer-guide/port-chrome-extension.md). After you port your extension to the target browser, the next step is to publish it.
 
@@ -102,7 +102,7 @@ To submit your extension to the store, you need to provide the following items:
 > [!NOTE]
 > Different stores might have different submission requirements.  The above list summarizes the [requirements](publish/publish-extension.md) to publish an extension for Microsoft Edge.
 
-After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners aren'tified of the outcome and given next steps as required.  If you submit an extension update to the store, a new review process is started.
+After you've successfully submitted your extension, your extension undergoes a review process and either passes or fails the certification process.  Owners are notified of the outcome and given next steps as required.  If you submit an extension update to the store, it begins a new review process.
 
 
 <!-- ====================================================================== -->
