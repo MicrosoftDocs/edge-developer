@@ -14,7 +14,7 @@ ms.date: 04/01/2022
 -->
 
 <!-- 
-Todo:
+TODO:
 *  Finalize the list of h2 & h3 headings.
 *  Add Sentence 1.
 *  Add Paragraph 1.
@@ -22,18 +22,21 @@ Todo:
 -->
 
 <!--
+TODO: confirm list of actors:
 Actors:
 *  your host app
-   *  your local code/your disk (your code which sends the response instead of the ususal way of the server sending the response) - is this code part of your host app?
+   *  your local code/your disk (your code which sends the response instead of the usual way of the server sending the response) - is this code part of your host app?
 *  the server
 
-Basic Auth, the actors are:
+For Basic Auth, the actors are:
 *  the HTTP server
 *  the WebView2 control
 *  your host app
 -->
 
 
+<!-- ====================================================================== -->
+## Introduction
 
 The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. 
 
@@ -44,6 +47,37 @@ What UX feature does this provide for your app?
 What is "request", what is a "web resource request", what is a "web resource", & "response", when use them?
 
 During navigation among URIs, use the `WebResourceRequested` event and the `WebResourceResponseReceived` event.
+
+
+*  There are 3 main APIs involved:
+   *  Add
+   *  Remove
+   *  navigate
+
+*   Lets you customize network request handling of sending requests and responses.
+
+You can add/provide your own custom response.
+
+*   `NavigateWithWebResourceRequest` is special cases advanced, beyond Basic Auth, to modify the headers to be able to better/custom interact with the network.
+
+*   Can also use this to manage navigation
+*   Why/when is this API useful?
+    o   Can run WebView2 offline.
+    o   Allows host app to change/provide response to request.
+    o   Instead of going through network, can go through the app.
+    o   A core piece of API that lets you do almost anything (need specific examples) with WebView2.
+    o   Allows developer to provide content that it gets from WV2 <!--TODO: clarify-->
+        *   Local content.
+        *   Service worker is being worked on currently.
+    o   Providing content.
+
+*  If you don't use this API, you won't be able to fine-tune requests.
+    o   This API lets you support custom authentication scenarios.
+    o   Use this API for anything network related that you need to fine tune.
+
+*   Image replacing example.
+
+<!-- TODO: add cleaned up detailed notes equivalent to the above -->
 
 
 **Terminology:**
@@ -69,7 +103,7 @@ During navigation among URIs, use the `WebResourceRequested` event and the `WebR
 <!-- ====================================================================== -->
 ## Sending responses
 
-<!-- from where?  from local code rather than from the server -->
+<!-- TODO: from where?  from local code rather than from the server -->
 
 
 <!-- ====================================================================== -->
@@ -105,9 +139,7 @@ When to use `webResourceRequested` and `webResourceResponseReceived` events vs. 
 This is an existing example in the Win32 sample app.
 
 
-
 <!-- -------------------------------------------------- -->
-### Example of a web resource request
 
  <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 
@@ -178,9 +210,12 @@ This is an existing example in the Win32 sample app.
 
 <!-- ====================================================================== -->
 ## Example: Replace a web resource with local resource
-<!-- ## Example: Replace a requested file with a local file -->
+<!--
+TODO: clarify heading
+## Example: Replace a requested file with a local file
+-->
 
-Your code <!--your substitution code in place of the server --> sends a response from your local machine to your host app.
+Your code <!-- TODO: your substitution code in place of the server --> sends a response from your local machine to your host app.
 
 You can replace an image that's requested by your own local image file instead.  
 
@@ -191,7 +226,7 @@ This is an existing example in the Win32 sample app.
 <!-- ====================================================================== -->
 ## Example of a web resource response
 
-<!-- todo: should this section/listing be moved into one of the four "Example:" sections above? (as we did with the Request section/example listing) -->
+<!-- TODO: should this section/listing be moved into one of the four "Example:" sections above? (as we did with the Request section/example listing) -->
 
 The following code demonstrates how the `WebResourceResponseReceived` event can be used.
 
