@@ -826,6 +826,9 @@
             - name: Submission states
               href: extensions-chromium/publish/submission-states.md
 
+            - name: View extensions analytics dashboard
+              href: extensions-chromium/publish/extensions-analytics.md
+
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
 
