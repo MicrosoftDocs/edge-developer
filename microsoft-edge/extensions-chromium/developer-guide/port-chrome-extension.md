@@ -32,7 +32,7 @@ To port your Chrome extension:
 <!-- ====================================================================== -->
 ## Setting allowed_origins for a native app
 
-If your extension exchanges messages with a native app using `chrome.runtime.connectNative`, make sure that you set `allowed_origins` to `extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file.  The setting allows the app to identify your extension.
+If your extension exchanges messages with a native app by using `chrome.runtime.connectNative`, make sure that you set `allowed_origins` to `chrome-extension://[Microsoft-Catalog-extensionID]` in your native messaging host manifest file.  The setting allows the app to identify your extension.
 
 
 <!-- ====================================================================== -->
