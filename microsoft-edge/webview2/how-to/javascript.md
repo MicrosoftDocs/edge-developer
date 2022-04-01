@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: how-to
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 1/5/2022
+ms.date: 4/1/2022
 ---
 # Call web-side code from native-side code
 <!-- old title: Use JavaScript in WebView for extended scenarios -->
@@ -27,8 +27,8 @@ Use the following functions to begin embedding JavaScript in your WebView app.
 
 | API | Description |
 | --- | --- |
-| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control.  See [Get started with WebView2](../get-started/get-started.md). |
-| [OnDocumentCreatedAsync](/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated) | Runs when the Document Object Model (DOM) is created. |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control. Call this method after the page [Document Object Model (DOM) content](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded) is loaded or the [navigation is completed](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted). See [Get started with WebView2](../get-started/get-started.md). |
+| [AddScriptToExecuteOnDocumentCreatedAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) | Runs on every page when the DOM is created. Call this method after the CoreWebView2 is initialized. |
 
 
 <!-- ====================================================================== -->
@@ -75,7 +75,7 @@ To solve the problem, create a separate JavaScript file with your code, and then
 
 1. Create a `.js` file in your project, and add the JavaScript code that you want to run.  For example, create a file called `script.js`.
 
-1. Convert the JavaScript file to a string that is passed to `ExecuteScriptAsync`, by pasting the following code into `MainWindow.xaml.cs`:
+1. Convert the JavaScript file to a string that is passed to `ExecuteScriptAsync`, by pasting the following code after the page is done navigating:
 
    ```csharp
    string text = System.IO.File.ReadAllText(@"C:\PATH_TO_YOUR_FILE\script.js");
@@ -97,27 +97,27 @@ To begin, explore the current drag-and-drop functionality:
 
 1. Create a `.txt` file in order to drag-and-drop.  For example, create a file named `contoso.txt` and add text to it.
 
-1. Run your project.
+1. Press **F5** to build and run the project.
 
-1. Drag-and-drop the `contoso.txt` file onto the WebView control.  A new window opens, which is the result of the code in your sample project:
+1. Drag-and-drop the `contoso.txt` file into the WebView control.  A new window opens, which is the result of the code in your sample project:
 
    :::image type="content" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt." lightbox="./media/drag-text.png":::
 
-1. Next, add code to remove the drag-and-drop functionality from the WebView2 control.  Paste the following code into `InitializeAsync()` in `MainWindow.xaml.cs`:
+1. Next, add code to remove the drag-and-drop functionality from the WebView2 control.  Paste the following code after the CoreWebView2 object is initialized in your code:
 
    ```csharp
-   await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('dragover',function(e){e.preventDefault();},false);");
-
-   await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('drop',function(e){" +
-   "e.preventDefault();" +
-   "console.log(e.dataTransfer);" +
-   "console.log(e.dataTransfer.files[0])" +
-   "}, false);");
+   await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
+      "window.addEventListener('dragover',function(e){e.preventDefault();},false);" +
+      "window.addEventListener('drop',function(e){" +
+         "e.preventDefault();" +
+         "console.log(e.dataTransfer);" +
+         "console.log(e.dataTransfer.files[0])" +
+      "}, false);");
    ```
 
-1. Run your project.
+1. Press **F5** to build and run the project.
 
-1. Try to drag and drop `contoso.txt`.  Confirm that you can't drag and drop.
+1. Try to drag and drop `contoso.txt` into the WebView control.  Confirm that you can't drag and drop.
 
 
 <!-- ====================================================================== -->
@@ -127,7 +127,7 @@ In this section, you remove the right-click menu from your WebView2 control.
 
 To begin, explore the current functionality of the right-click menu:
 
-1. Run your project.
+1. Press **F5** to build and run the project.
 
 1. Right-click anywhere on the WebView2 control.  The context menu displays the default right-click menu commands:
 
@@ -135,13 +135,13 @@ To begin, explore the current functionality of the right-click menu:
 
    Next, add code to remove the right-click menu functionality from the WebView2 control.
 
-1. Paste the following code into `InitializeAsync()` in `MainWindow.xaml.cs`:
+1. Paste the following code after the CoreWebView2 object is initialized in your code:
 
    ```csharp
    await webView.CoreWebView2.ExecuteScriptAsync("window.addEventListener('contextmenu', window => {window.preventDefault();});");
    ```
 
-1. Run the code again.  Confirm that you can't open a right-click menu.
+1. Press **F5** to build and run the project.  Confirm that you can't open a right-click menu.
 
 
 <!-- ====================================================================== -->
