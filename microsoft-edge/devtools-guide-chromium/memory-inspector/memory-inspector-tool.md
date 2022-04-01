@@ -6,9 +6,10 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/15/2022
+ms.date: 04/08/2022
 ---
-<!-- Copyright Kayce Basques
+
+<!-- Copyright Kim-Anh Tran
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -21,16 +22,25 @@ ms.date: 02/15/2022
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Inspect a JavaScript ArrayBuffer with the Memory Inspector tool
+
+# Inspect a JavaScript ArrayBuffer using Memory Inspector
+
+Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuffer `WebAssembly.Memory`.<!-- OR should it say: WASM resizable ArrayBuffer. ? --> You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
+
+## Open the test 
 
 
-<!-- this page's content so far is the entry from
-https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
--->
+<!-- ====================================================================== -->
+## Open Memory Inspector from the DevTools menu
+
+1. To open DevTools select `F12` or `Ctrl`+`Shift`+`I`.
+
+1. 
 
 
+<!-- ====================================================================== -->
+## Open Memory Inspector while debugging
 
-Use the new **Memory Inspector** tool to inspect an `ArrayBuffer` in JavaScript and Wasm memory.
 
 1. Open the demo webpage [Inspect ArrayBuffers in JS (Memory in JS)](https://memory-inspector.glitch.me/demo-js.html) in a new window or tab.
 
