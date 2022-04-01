@@ -27,8 +27,11 @@ ms.date: 04/08/2022
 
 Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuffer `WebAssembly.Memory`.<!-- OR should it say: WASM resizable ArrayBuffer. ? --> You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
 
-## Open the test 
+## Open the test site in Microsoft Edge
 
+1. Start Microsoft Edge.
+
+1. Open the test site [https://microsoftedge.github.io/Demos/devtools-a11y-testing/](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).
 
 <!-- ====================================================================== -->
 ## Open Memory Inspector from the DevTools menu
