@@ -89,11 +89,11 @@ To solve the problem, create a separate JavaScript file with your code, and then
 
 
 <!-- ====================================================================== -->
-## Scenario: Removing drag-and-drop function
+## Scenario: Removing drag-and-drop functionality
 
-In this section, you use JavaScript to remove the drag-and-drop function from your WebView2 control.
+In this section, you use JavaScript to remove the drag-and-drop functionality from your WebView2 control.
 
-To begin, explore the current drag-and-drop function:
+To begin, explore the current drag-and-drop functionality:
 
 1. Create a `.txt` file in order to drag-and-drop.  For example, create a file named `contoso.txt` and add text to it.
 
@@ -103,7 +103,7 @@ To begin, explore the current drag-and-drop function:
 
    :::image type="content" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt." lightbox="./media/drag-text.png":::
 
-1. Next, add code to remove the drag-and-drop function from the WebView2 control.  Paste the following code after the CoreWebView2 object is initialized in your code:
+1. Next, add code to remove the drag-and-drop functionality from the WebView2 control.  Paste the following code after the CoreWebView2 object is initialized in your code:
 
    ```csharp
    await webView.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
@@ -125,7 +125,7 @@ To begin, explore the current drag-and-drop function:
 
 In this section, you remove the right-click menu from your WebView2 control.
 
-To begin, explore the current function of the right-click menu:
+To begin, explore the current functionality of the right-click menu:
 
 1. Press **F5** to build and run the project.
 
@@ -133,7 +133,7 @@ To begin, explore the current function of the right-click menu:
 
    :::image type="content" source="./media/context-menu.png" alt-text="The right-click menu, showing the default commands." lightbox="./media/context-menu.png":::
 
-   Next, add code to remove the right-click menu function from the WebView2 control.
+   Next, add code to remove the right-click menu functionality from the WebView2 control.
 
 1. Paste the following code after the CoreWebView2 object is initialized in your code:
 
