@@ -117,9 +117,13 @@ For more information about using themes from Visual Studio Code in DevTools, see
 <!-- Title: Filter issues in the Issues tool -->
 <!-- Subtitle: New controls in the Issues tool allow you to filter messages by severity and browser target to help you focus on the most relevant feedback. -->
 
-In the **Issues** tool, the new **Severity** and **Browser** drop-down lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.
+In the **Issues** tool, the new **Severity** and **Browser** drop-down lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.  You can select or clear the options in each drop-down list.
 
-You can manually add or remove selections from each dropdown.  To see all relevant messages, you might need to refresh the page, reload Issues in DevTools, if prompted, or close and reopen DevTools.
+To see all relevant messages, you might need to refresh the page.  If prompted, in the **Issues** tool, click the **Regenerate issues** button.
+<!--
+The top-of-panel message after you change checkmarks on the drop down lists:
+"One or more settings have changed which require a panel reload to take effect.  [Regenerate issues]"
+-->
 
 By default, the **Severity** filter is set to show only warnings and errors:
 
@@ -131,7 +135,7 @@ By default, the **Issues** list includes messages about Firefox:
 
 ![Messages about Firefox browser not filtered out.](devtools-100-images/browser-filters-not-filtered.png)
 
-In the following example, messages about the Firefox browser are filtered out:
+In the following example, messages about Firefox and Firefox for Android are filtered out:
 
 ![Messages about Firefox browser filtered out (removed).](devtools-100-images/browser-filters-filtered-out.png)
 
