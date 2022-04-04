@@ -9,6 +9,8 @@ ms.technology: webview
 ms.date: 04/01/2022
 ---
 # Managing network requests in WebView2
+
+
 <!-- 
 # Navigating with web resource request and response events
 -->
