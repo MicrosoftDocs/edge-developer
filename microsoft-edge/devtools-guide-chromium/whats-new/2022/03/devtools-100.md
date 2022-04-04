@@ -122,12 +122,6 @@ New controls in the **Issues** tool allow you to filter messages by severity and
 By default, the Severity filter is set to show only warnings and errors. 
 
 ![Severity filter.](devtools-100-images/severity-filter.png)
-<!--
-Instructions for screenshot:
-To demonstrate the Severity filter (screenshot A):
-1. Open Issues tool and click Severity dropdown. 
-2. By default, "Default levels" will be shown in dropdown, and, when expanded, Warning and Error are automatically selected, but Tip and Info are not.
--->
 
 The Browser filter only applies to browser compatibility feedback shown in the Compatibility section.  By default, the filter shows top browsers as defined by [Browserslist](https://github.com/browserslist/browserslist#queries), but you can manually add or remove selections from each dropdown.  To see all relevant messages, you might need to refresh the page and reload Issues, if prompted.
 
@@ -148,7 +142,7 @@ Change value of Browser dropdown to exclude Firefox and Firefox for Android. Ref
 It may be most illustrative to show the before and after.
 -->
 
-For more information, see [Find and fix problems using the Issues tool](../../../issues/index.md).
+For more information, see [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
