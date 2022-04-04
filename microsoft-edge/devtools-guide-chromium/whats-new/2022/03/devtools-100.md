@@ -119,7 +119,7 @@ For more information about using themes from Visual Studio Code in DevTools, see
 
 In the **Issues** tool, the new **Severity** and **Browser** drop-down lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.
 
-You can manually add or remove selections from each dropdown.  To see all relevant messages, you might need to refresh the page and also reload Issues in DevTools, if prompted.
+You can manually add or remove selections from each dropdown.  To see all relevant messages, you might need to refresh the page, reload Issues in DevTools, if prompted, or close and reopen DevTools.
 
 By default, the **Severity** filter is set to show only warnings and errors:
 
