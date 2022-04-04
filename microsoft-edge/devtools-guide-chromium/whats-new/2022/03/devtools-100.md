@@ -129,11 +129,9 @@ By default, the **Severity** filter is set to show only warnings and errors:
 
 ![Severity filter.](devtools-100-images/severity-filter.png)
 
-The **Browser** filter only applies to browser compatibility feedback shown in the Compatibility section.  By default, the **Browser** filter shows messages for the top browsers, as defined by [Browserslist](https://github.com/browserslist/browserslist#queries).
+The **Browser** filter only applies to browser compatibility feedback shown in the Compatibility section.  By default, the **Browser** filter shows messages for the top browsers, as defined by [Browserslist](https://github.com/browserslist/browserslist#queries):
 
-By default, the **Issues** list includes messages about Firefox:
-
-![Messages about Firefox browser not filtered out.](devtools-100-images/browser-filters-not-filtered.png)
+![The Browsers drop-down list, with "Top browsers" selected.](devtools-100-images/browser-filters-not-filtered.png)
 
 In the following example, messages about Firefox and Firefox for Android are filtered out:
 
