@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/20/2021
+ms.date: 03/18/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,7 +22,47 @@ ms.date: 04/20/2021
    limitations under the License.  -->
 # Sources tool overview
 
-Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and to inspect the resources that make up the current webpage.  The **Sources** tool has three panes:
+Use the **Sources** tool to view, modify, and debug front-end JavaScript code, and to inspect the resources that make up the current webpage.
+
+
+**Detailed contents:**
+
+* [The Navigator, Editor, and Debugger panes](#the-navigator-editor-and-debugger-panes)
+* [Using the Navigator pane to select files](#using-the-navigator-pane-to-select-files)
+   * [Using the Page tab to explore resources that construct the current webpage](#using-the-page-tab-to-explore-resources-that-construct-the-current-webpage)
+   * [Using the Filesystem tab to define a local Workspace](#using-the-filesystem-tab-to-define-a-local-workspace)
+   * [Using the Overrides tab to override server files with local files](#using-the-overrides-tab-to-override-server-files-with-local-files)
+   * [Using the Content scripts tab for Microsoft Edge extensions](#using-the-content-scripts-tab-for-microsoft-edge-extensions)
+   * [Using the Snippets tab to run JavaScript code snippets on any webpage](#using-the-snippets-tab-to-run-javascript-code-snippets-on-any-webpage)
+   * [Using the Command Menu to open files](#using-the-command-menu-to-open-files)
+* [Using the Editor pane to view or edit files](#using-the-editor-pane-to-view-or-edit-files)
+   * [Editing a JavaScript file](#editing-a-javascript-file)
+   * [Reformatting a minified JavaScript file with pretty-print](#reformatting-a-minified-javascript-file-with-pretty-print)
+   * [Mapping minified code to your source code to show readable code](#mapping-minified-code-to-your-source-code-to-show-readable-code)
+   * [Transformations from source code to compiled front-end code](#transformations-from-source-code-to-compiled-front-end-code)
+   * [Editing a CSS file](#editing-a-css-file)
+   * [Editing an HTML file](#editing-an-html-file)
+   * [Going to a line number or function](#going-to-a-line-number-or-function)
+   * [Displaying source files when using a different tool](#displaying-source-files-when-using-a-different-tool)
+* [Using the Debugger pane to debug JavaScript code](#using-the-debugger-pane-to-debug-javascript-code)
+   * [The basic approach to using a debugger](#the-basic-approach-to-using-a-debugger)
+   * [Advantages of the debugger's Watch and Scope over console.log](#advantages-of-the-debuggers-watch-and-scope-over-consolelog)
+   * [Debug from Visual Studio Code directly](#debug-from-visual-studio-code-directly)
+   * [Articles about debugging](#articles-about-debugging)
+
+<!-- omit h4s
+      * [Icons in the Page tab](#icons-in-the-page-tab)
+      * [Group files by folder or as a flat list](#group-files-by-folder-or-as-a-flat-list)
+
+      * [Save and Undo](#save-and-undo)
+      * [Find and Replace](#find-and-replace)
+      * [Showing the changes you made](#showing-the-changes-you-made)
+      * [Changes inside a function take effect](#changes-inside-a-function-take-effect) -->
+
+
+## The Navigator, Editor, and Debugger panes
+
+The **Sources** tool has three panes:
 
 | Pane | Actions |
 |---|---|
