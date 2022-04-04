@@ -117,30 +117,23 @@ For more information about using themes from Visual Studio Code in DevTools, see
 <!-- Title: Filter issues in the Issues tool -->
 <!-- Subtitle: New controls in the Issues tool allow you to filter messages by severity and browser target to help you focus on the most relevant feedback. -->
 
-New controls in the **Issues** tool allow you to filter messages by severity and browser target to help you focus on the most relevant feedback. 
+In the **Issues** tool, the new **Severity** and **Browser** drop-down lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.
 
-By default, the Severity filter is set to show only warnings and errors. 
+You can manually add or remove selections from each dropdown.  To see all relevant messages, you might need to refresh the page and also reload Issues in DevTools, if prompted.
+
+By default, the **Severity** filter is set to show only warnings and errors:
 
 ![Severity filter.](devtools-100-images/severity-filter.png)
 
-The Browser filter only applies to browser compatibility feedback shown in the Compatibility section.  By default, the filter shows top browsers as defined by [Browserslist](https://github.com/browserslist/browserslist#queries), but you can manually add or remove selections from each dropdown.  To see all relevant messages, you might need to refresh the page and reload Issues, if prompted.
+The **Browser** filter only applies to browser compatibility feedback shown in the Compatibility section.  By default, the **Browser** filter shows messages for the top browsers, as defined by [Browserslist](https://github.com/browserslist/browserslist#queries).
 
-Messages about Firefox browser not filtered out:
+By default, the **Issues** list includes messages about Firefox:
 
 ![Messages about Firefox browser not filtered out.](devtools-100-images/browser-filters-not-filtered.png)
 
-Messages about Firefox browser filtered out (removed):
+In the following example, messages about the Firefox browser are filtered out:
 
 ![Messages about Firefox browser filtered out (removed).](devtools-100-images/browser-filters-filtered-out.png)
-<!--
-To demonstrate effect of the browser filters:
-1. Go to www.nobadmemories.com and undock DevTools so as to not show webpage.  Make sure URL is not visible.
-2. Open Issues tool.  Default settings should show Severity set to "Default levels" and Browser set to "Top browsers."
-3. Notice that the end of the Compatibility section includes feedback specific to Firefox and Firefox for Android:
-Image
-Change value of Browser dropdown to exclude Firefox and Firefox for Android. Refresh the page. These three pieces of feedback should now be filtered out.
-It may be most illustrative to show the before and after.
--->
 
 For more information, see [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_.
 
