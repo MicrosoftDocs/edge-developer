@@ -227,4 +227,4 @@ https://api.addons.microsoftedge.microsoft.com/v1/products/$productID/submission
 
 ### See also
 
-*  [Using the Microsoft Edge Add-ons API : Check the publishing status](addons-api-reference.md#check-the-publishing-status)
+*  [Using the Microsoft Edge Add-ons API: Check the publishing status](addons-api-reference.md#check-the-publishing-status)

@@ -849,9 +849,9 @@
 
             - name: Microsoft Edge Add-ons API
               items:
-                - name: Using the Microsoft Edge Add-ons API (Beta)
+                - name: Using the Microsoft Edge Add-ons API
                   href: extensions-chromium/publish/api/using-addons-api.md
-                - name: Microsoft Edge Add-ons API Reference (Beta)
+                - name: Microsoft Edge Add-ons API Reference
                   href: extensions-chromium/publish/api/addons-api-reference.md
         - name: Extensions for enterprise
           items:
