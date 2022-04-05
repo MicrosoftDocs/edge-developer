@@ -1,5 +1,5 @@
 ---
-title: Managing network requests in WebView2
+title: Custom management of network requests
 description: Using the WebResourceRequested event and the WebResourceResponseReceived event in WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,31 +8,16 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 04/05/2022
 ---
+# Custom management of network requests
+<!--
+# Custom management of network requests and responses in WebView2
 # Managing network requests in WebView2
+-->
+
+To intercept requests and responses and replace them by your own custom requests and responses, use the `NavigateWithWebResourceRequest` method and associated API items.  Use this API if you need custom processing of network requests or responses.  If you are using Basic Authentication, you don't need to use this advanced approach.
 
 <!-- 
 # Navigating with web resource request and response events
--->
-
-<!-- 
-TODO:
-*  Finalize the list of h2 & h3 headings.
-*  Add Sentence 1.
-*  Add Paragraph 1.
-*  Add terms in Terminology table.
--->
-
-<!--
-TODO: confirm list of actors:
-Actors:
-*  your host app
-   *  your local code/your disk (your code which sends the response instead of the usual way of the server sending the response) - is this code part of your host app?
-*  the server
-
-For Basic Auth, the actors are:
-*  the HTTP server
-*  the WebView2 control
-*  your/the host app
 -->
 
 
@@ -45,15 +30,23 @@ Use this technology to do X.  When you want do extra beyond Basic Authentication
 
 What UX feature does this provide for your app?
 
-What is "request", what is a "web resource request", what is a "web resource", & "response", when use them?
 
 During navigation among URIs, use the `WebResourceRequested` event and the `WebResourceResponseReceived` event.
 
 
-*  There are 3 main APIs involved:
-   *  Add
-   *  Remove
-   *  navigate
+### How your host app, the WebView2 control, and the HTTP server interact
+
+What is a "request", what is a "web resource request", what is a "web resource", & "response", when are they used?
+
+The WebView2 control sits in between your host app and the HTTP server.  Your host app sends a request to the WebView2 control, which sends the request to the HTTP server.  The HTTP server sends a response to the WebView2 control, which sends the response to your host app.  The 
+
+
+There are 3 main APIs involved:<!--true? what are the 3? what kind are they (differs between plats/langs?) -->  <!-- list the actual specific C# then C++ method names-->
+*  Add
+   * [ICoreWebView2::add_WebResourceRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested) - Adds an event handler for the WebResourceRequested event.
+*  Remove
+   * [ICoreWebView2::remove_WebResourceRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested) - Removes an event handler.
+*  Navigate <!-- Not a navigation event -->
 
 *   Lets you customize network request handling of sending requests and responses.
 
@@ -78,7 +71,20 @@ You can add/provide your own custom response.
 
 *   Image replacing example.
 
-<!-- TODO: add cleaned up detailed notes equivalent to the above -->
+
+### The NavigateWithWebResourceRequest method
+
+The `NavigateWithWebResourceRequest` method, together with the `` event and the `` event, allows your host app to intercept and interact with network requests sent to and from the WebView2 control, while the WebView2 control interacts with the HTTP server.  This API enables your host app to  either intercept a response that's sent by the HTTP server and substitute a custom response to your host app's code, or intercept a request that's sent from the WebView2 control to the HTTP server, and substitute your own custom request instead.
+
+# [.NET](#tab/dotnet)
+
+* [CoreWebView2.NavigateWithWebResourceRequest(CoreWebView2WebResourceRequest) Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
+
+# [Win32](#tab/win32)
+
+* [interface ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
+
+---
 
 
 **Terminology:**
@@ -482,9 +488,9 @@ m_webview->add_WebResourceResponseReceived(
 **Request:**
 
 * [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
-   * `Add_WebResourceRequested`
-   * `AddWebResourceRequedtedFilter`
-   * `Remove_WebResourceRequested`
+   * `add_WebResourceRequested`
+   * `AddWebResourceRequestedFilter`
+   * `remove_WebResourceRequested`
    * `RemoveWebResourceRequestedFilter`
 * [ICoreWebView2Environment2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment2)
    * `CreateWebResourceRequest`   
