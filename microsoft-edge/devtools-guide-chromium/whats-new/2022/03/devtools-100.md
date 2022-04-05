@@ -74,6 +74,35 @@ For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdg
 
 
 <!-- ====================================================================== -->
+## Filter messages in the Issues tool by severity and browser target
+
+<!-- Title: Filter issues in the Issues tool -->
+<!-- Subtitle: New controls in the Issues tool allow you to filter messages by severity and browser target to help you focus on the most relevant feedback. -->
+
+In the **Issues** tool, the new **Severity** and **Browser** drop-down lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.  You can select or clear the options in each drop-down list.
+
+To see all relevant messages, you might need to refresh the page.  If prompted, in the **Issues** tool, click the **Regenerate issues** button.
+<!--
+The top-of-panel message after you change checkmarks on the drop down lists:
+"One or more settings have changed which require a panel reload to take effect.  [Regenerate issues]"
+-->
+
+By default, the **Severity** filter is set to show only warnings and errors:
+
+![Severity filter.](devtools-100-images/severity-filter.png)
+
+The **Browser** filter only applies to browser compatibility feedback, which is shown in the **Compatibility** section of the **Issues** list.  By default, the **Browser** filter shows messages for the top browsers, as defined by [Browserslist](https://github.com/browserslist/browserslist#queries):
+
+![The Browsers drop-down list, with "Top browsers" selected.](devtools-100-images/browser-filters-not-filtered.png)
+
+In the following example, messages about Firefox and Firefox for Android are filtered out:
+
+![Messages about Firefox browser filtered out (removed).](devtools-100-images/browser-filters-filtered-out.png)
+
+For more information, see [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_.
+
+
+<!-- ====================================================================== -->
 ## When importing a performance profile, links now map to your original code
 
 <!-- Title: Use sourcemaps from Azure Artifacts symbol server to better debug performance issues -->
@@ -109,35 +138,6 @@ Now in Microsoft Edge 100, the selected theme is applied to the Waterfall view o
 ![The selected theme is now applied to the Waterfall view of requests in the Network tool.](devtools-100-images/waterfall-view-requests-network.png)
 
 For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).  For more information about the Waterfall view for requests in the Network tool, see [Network features reference](../../../network/reference.md#display-the-timing-relationship-of-requests).
-
-
-<!-- ====================================================================== -->
-## Filter messages in the Issues tool by severity and browser target
-
-<!-- Title: Filter issues in the Issues tool -->
-<!-- Subtitle: New controls in the Issues tool allow you to filter messages by severity and browser target to help you focus on the most relevant feedback. -->
-
-In the **Issues** tool, the new **Severity** and **Browser** drop-down lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.  You can select or clear the options in each drop-down list.
-
-To see all relevant messages, you might need to refresh the page.  If prompted, in the **Issues** tool, click the **Regenerate issues** button.
-<!--
-The top-of-panel message after you change checkmarks on the drop down lists:
-"One or more settings have changed which require a panel reload to take effect.  [Regenerate issues]"
--->
-
-By default, the **Severity** filter is set to show only warnings and errors:
-
-![Severity filter.](devtools-100-images/severity-filter.png)
-
-The **Browser** filter only applies to browser compatibility feedback, which is shown in the **Compatibility** section of the **Issues** list.  By default, the **Browser** filter shows messages for the top browsers, as defined by [Browserslist](https://github.com/browserslist/browserslist#queries):
-
-![The Browsers drop-down list, with "Top browsers" selected.](devtools-100-images/browser-filters-not-filtered.png)
-
-In the following example, messages about Firefox and Firefox for Android are filtered out:
-
-![Messages about Firefox browser filtered out (removed).](devtools-100-images/browser-filters-filtered-out.png)
-
-For more information, see [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
