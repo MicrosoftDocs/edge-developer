@@ -25,27 +25,46 @@ ms.date: 04/08/2022
 
 # Inspect a JavaScript ArrayBuffer using Memory Inspector
 
-Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuffer `WebAssembly.Memory`.<!-- OR should it say: WASM resizable ArrayBuffer. ? --> You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
+Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuffer `WebAssembly.Memory`.<!-- OR should it say: WASM resizable `ArrayBuffer`. ? --> You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
 
+
+<!-- ====================================================================== -->
 ## Open the test site in Microsoft Edge
 
 1. Start Microsoft Edge.
 
 1. Open the test site [https://microsoftedge.github.io/Demos/devtools-a11y-testing/](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).
 
+
 <!-- ====================================================================== -->
 ## Open Memory Inspector from the DevTools menu
 
-1. To open DevTools select `F12` or `Ctrl`+`Shift`+`I`.
+1. To open DevTools press `F12` or `Ctrl`+`Shift`+`I`.
 
-1. 
+1. To open Memory Inspector select **More Tools** (**+**) > Memory Inspector
 
+    ![Welcome to Microsoft Edge DevTools](../media/memory-inspector-devtools-more-tools.png)
 
 <!-- ====================================================================== -->
 ## Open Memory Inspector while debugging
 
+1. Open the demo webpage [Inspect ArrayBuffers in JS (Memory in JS)](https://memory-inspector.glitch.me/demo-js.html). <!-- We need a microsoftedge.github.io with a JavaScript ArrayBuffer comparable to memory-inspector.glitch.me/demo-js.html -->
 
-1. Open the demo webpage [Inspect ArrayBuffers in JS (Memory in JS)](https://memory-inspector.glitch.me/demo-js.html) in a new window or tab.
+1.	Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I`..
+
+1.	Click **Sources** and open the `demo-js.js` file.
+
+1. Set a breakpoint at line **18** as shown in the following image.
+
+    ![Memory Inspector set breakpoint in a JavaScript file](../media/memory-inspector-set-breakpoint.png)
+
+1.	Refresh the webpage.
+5.	In the right Debugger pane, click Scope.
+6.	Open the Memory inspector using one of the following methods:
+o	From the icon. Clicking on the icon next to the buffer property, or
+o	From the context menu. Right click on the buffer property and select Reveal in Memory Inspector panel.
+
+
 
    The following list of steps is derived from the instructions on that webpage.
 
