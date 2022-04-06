@@ -182,6 +182,14 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 1. Change the zoom level of DevTools, as described above.
 1. Click the **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button.
 
+**To zoom DevTools by using the Command Menu:**
+
+1. Click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**.
+1. In the **Command Menu**, start typing **zoom**, and then select a zoom command:
+   *  **Reset zoom level**
+   *  **Zoom in**
+   *  **Zoom out**
+
 
 <!-- ====================================================================== -->
 ## Features of the main toolbar
