@@ -38,7 +38,7 @@ Microsoft Edge DevTools may log background service events for 3 days, even when 
 <!-- ====================================================================== -->
 ## Background Fetch
 
-The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch events for 3 days, even when DevTools isn't open:
+The **Background Fetch API** enables the **service worker** of a Progressive Web App to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch events for 3 days, even when DevTools isn't open:
 
 1. Open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
@@ -61,7 +61,7 @@ The **Background Fetch API** enables a **service worker** to reliably download l
 <!-- ====================================================================== -->
 ## Background Sync
 
-The **Background Sync API** enables an offline **service worker** to send data to a server once it has re-established a reliable internet connection.  To log Background Sync events for 3 days, even when DevTools isn't open:
+The **Background Sync API** enables the offline **service worker** of a Progressive Web App to send data to a server once it has re-established a reliable internet connection.  To log Background Sync events for 3 days, even when DevTools isn't open:
 
 1. Open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
@@ -105,7 +105,7 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 <!-- ====================================================================== -->
 ## Periodic Background Sync
 
-The **Periodic Background Sync API** enables a **service worker** to retrieve data from a server, periodically, even when the website isn't opened. To learn more about the **Periodic Background Sync API**, see [Use the Periodic Background Sync API to regularly get fresh content](/microsoft-edge/progressive-web-apps-chromium/how-to/background-syncs#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
+The **Periodic Background Sync API** enables the **service worker** of a Progressive Web App to retrieve data from a server, periodically, even when the website isn't opened. To learn more about the **Periodic Background Sync API**, see [Use the Periodic Background Sync API to regularly get fresh content](/microsoft-edge/progressive-web-apps-chromium/how-to/background-syncs#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
 
 To log Periodic Background Sync events for 3 days, even when DevTools isn't open:
 
@@ -125,7 +125,7 @@ To log Periodic Background Sync events for 3 days, even when DevTools isn't open
 <!-- ====================================================================== -->
 ## Push Messages
 
-To display a push notification to a user, a **service worker** must first use the [Push Message API](https://developer.mozilla.org/docs/Web/API/Push_API) to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).  To log Push Messages for 3 days, even when DevTools isn't open:
+To display a push notification to a user, the **service worker** of a Progressive Web App must first use the [Push Message API](https://developer.mozilla.org/docs/Web/API/Push_API) to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).  To log Push Messages for 3 days, even when DevTools isn't open:
 
 1. Open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
