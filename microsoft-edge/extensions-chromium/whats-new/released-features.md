@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/22/2021
+ms.date: 04/07/2021
 ---
 # Microsoft Edge Add-ons released features
 
@@ -20,7 +20,7 @@ For more information about upcoming updates and feature releases, see [Microsoft
 <!-- ====================================================================== -->
 ## Publish and update extensions to Microsoft Edge Add-ons using APIs
 
-You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. The Microsoft Edge Add-ons Publish API is currently in beta.
+You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the Microsoft Edge Add-ons API](/microsoft-edge/extensions-chromium/publish/api/using-addons-api)
 
 *Released March 2022*
 
