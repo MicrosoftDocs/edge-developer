@@ -59,11 +59,11 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 
 <!-- ====================================================================== -->
-## Targeted WebView debugging
+## Targeted WebView2 debugging
 
 In some WebView2 apps, you might use more than one WebView2 control.  To pick which WebView2 control to debug in this situation, you can use targeted WebView2 debugging.
 
-Open `launch.json` and complete the following actions to use targeted Webview debugging.
+Open `launch.json` and complete the following actions to use targeted WebView2 debugging.
 
 1. Confirm that the `useWebview` parameter is set to `true`.
 

@@ -23,11 +23,11 @@ This article assumes that you already have a working project. If you don't have 
 <!-- ====================================================================== -->
 ## Basic WebView2 functions
 
-Use the following functions to begin embedding JavaScript in your WebView app.
+Use the following functions to begin embedding JavaScript in your WebView2 app.
 
 | API | Description |
 | --- | --- |
-| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView control. Call this method after the page [Document Object Model (DOM) content](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded) is loaded or the [navigation is completed](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted). See [Get started with WebView2](../get-started/get-started.md). |
+| [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.wpf.webview2.executescriptasync) | Run JavaScript in a WebView2 control. Call this method after the page [Document Object Model (DOM) content](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded) is loaded or the [navigation is completed](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted). See [Get started with WebView2](../get-started/get-started.md). |
 | [AddScriptToExecuteOnDocumentCreatedAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync) | Runs on every page when the DOM is created. Call this method after the CoreWebView2 is initialized. |
 
 
@@ -99,7 +99,7 @@ To begin, explore the current drag-and-drop functionality:
 
 1. Press **F5** to build and run the project.
 
-1. Drag-and-drop the `contoso.txt` file into the WebView control.  A new window opens, which is the result of the code in your sample project:
+1. Drag-and-drop the `contoso.txt` file into the WebView2 control.  A new window opens, which is the result of the code in your sample project:
 
    :::image type="content" source="./media/drag-text.png" alt-text="Result of dragging and dropping contoso.txt." lightbox="./media/drag-text.png":::
 
@@ -117,7 +117,7 @@ To begin, explore the current drag-and-drop functionality:
 
 1. Press **F5** to build and run the project.
 
-1. Try to drag and drop `contoso.txt` into the WebView control.  Confirm that you can't drag and drop.
+1. Try to drag and drop `contoso.txt` into the WebView2 control.  Confirm that you can't drag and drop.
 
 
 <!-- ====================================================================== -->

@@ -173,11 +173,11 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
 1. Close the **Form1** window.
 
-You've added the WebView2 SDK to the project, but haven't added any WebView code to the project yet.
+You've added the WebView2 SDK to the project, but haven't added any WebView2 code to the project yet.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Create a single WebView
+## Step 7 - Create a single WebView2 control
 
 Now that the WebView2 SDK is installed for the WinForms project, add a WebView2 control to the app, as follows:
 
@@ -199,7 +199,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
 1. Select **View** > **Toolbox**.
 
-   Here's where you add WebView-specific content to the app:
+   Here's where you add WebView2-specific content to the app:
 
 1. In the **Toolbox**, click **WebView2 Windows Forms Control** to expand the options.
 

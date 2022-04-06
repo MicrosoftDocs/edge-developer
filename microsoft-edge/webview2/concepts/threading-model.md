@@ -28,7 +28,7 @@ Object properties are single-threaded.  For example, calling `CoreWebView2Cookie
 <!-- ====================================================================== -->
 ## Reentrancy
 
-Callbacks, including event handlers and completion handlers, run serially.  After you run an event handler and begin a message loop, an event handler or completion callback cannot be run in a re-entrant manner.  If a WebView2 app tries to create a nested message loop or modal UI synchronously within a WebView event handler, this approach leads to attempted reentrancy.  Such reentrancy isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
+Callbacks, including event handlers and completion handlers, run serially.  After you run an event handler and begin a message loop, an event handler or completion callback cannot be run in a re-entrant manner.  If a WebView2 app tries to create a nested message loop or modal UI synchronously within a WebView2 event handler, this approach leads to attempted reentrancy.  Such reentrancy isn't supported in WebView2 and would leave the event handler in the stack indefinitely.
 
 For example, the following coding approach isn't supported:
 
@@ -44,8 +44,8 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
    string msg = e.TryGetWebMessageAsString();
    if (msg == "Open Dialog")
    {
-      Form1 form = new Form1(); // Create a new form that contains a new WebView when web message is received.
-      form.ShowDialog(); // This will cause a reentrancy issue and cause the newly created WebView inside the modal dialog to hang.
+      Form1 form = new Form1(); // Create a new form that contains a new WebView2 instance when web message is received.
+      form.ShowDialog(); // This will cause a reentrancy issue and cause the newly created WebView2 inside the modal dialog to hang.
    }
 }
 ```
