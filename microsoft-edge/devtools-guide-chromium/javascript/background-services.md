@@ -22,7 +22,7 @@ ms.date: 04/06/2022
    limitations under the License.  -->
 # Debug background services
 
-The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the JavaScript APIs that enable your website to send and receive updates even when a user doesn't have your website open.  A background service is functionally similar to a [background process](https://en.wikipedia.org/wiki/Background_process).
+The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the Web APIs that enable your website to send and receive data even when a user doesn't use your website, and enable the browser to report production problems to your server.
 
 Microsoft Edge DevTools considers each of the following APIs to be a background service:
 
@@ -31,8 +31,10 @@ Microsoft Edge DevTools considers each of the following APIs to be a background 
 *  [Notifications](#notifications)
 *  [Periodic Background Sync](#periodic-background-sync)
 *  [Push Messages](#push-messages)
+*  [Reporting API](#reporting-api)
+<!-- TODO: add a section about Payment Handler -->
 
-Microsoft Edge DevTools may log background service events for 3 days, even when DevTools isn't open.  The background service events log can help you make sure that events are being sent and received as expected.  You can also inspect the details of each event.
+The **Background Services** section logs API events, even when you're not using DevTools, to help you make sure that events are being sent and received as expected.
 
 
 <!-- ====================================================================== -->
@@ -142,6 +144,34 @@ To display a push notification to a user, the **service worker** of a Progressiv
 1. Click an event to view the details in the space below the table.
 
    ![View the details of an event in the Push Messaging pane](./images/application-push-messaging-details.png)
+
+
+<!-- ====================================================================== -->
+## Reporting API
+
+The **Reporting API** enables web developers to receive reports of security violations, deprecated API calls, and others, from their production websites.
+
+To see reports that have been sent by the browser using the **Reporting API**:
+
+1. Open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. On the left, in the **Background Services** section, select **Reporting API**.  The **Reporting API** page opens.
+
+   ![Open the Reporting API pane.](./images/application-reporting-api.png)
+
+1. The **Reporting API** page displays the reports sent in the table at the top.
+
+   ![List of reports in the Reporting API pane](./images/application-reporting-api-reports.png)
+
+1. Click a report to view the details in the space below the table.
+
+   ![View the details of a report in the Reporting API pane](./images/application-reporting-api-details.png)
+
+1. The **Reporting API** page also displays the list of reporting endpoints configured via the `Reporting-Endpoints` HTTP header in the table at the bottom.
+
+   ![View the list of reporting endpoints in the Reporting API pane](./images/application-reporting-api-endpoints.png)
 
 
 <!-- ====================================================================== -->
