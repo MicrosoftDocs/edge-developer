@@ -61,6 +61,16 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 
 
 <!-- ====================================================================== -->
+## Legacy version: Microsoft WebDriver, for Microsoft Edge (EdgeHTML)
+
+Microsoft WebDriver is older than Microsoft Edge WebDriver.
+*  Microsoft WebDriver is the previous, browser-specific driver for Microsoft Edge (EdgeHTML), which is also known as Microsoft Edge Legacy.
+*  Microsoft Edge WebDriver is the current, browser-specific driver for Microsoft Edge (Chromium).
+
+For more info about automating Microsoft Edge Legacy, see [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/).
+
+
+<!-- ====================================================================== -->
 ## Choose a WebDriver testing framework
 
 After downloading Edge WebDriver, the last component you must download is a WebDriver testing framework.  Test authors use WebDriver testing frameworks to write end-to-end tests and automate browsers.  A WebDriver testing framework provides a language-specific interface that translates your code into commands that Edge WebDriver runs in Microsoft Edge.  WebDriver testing frameworks exist for all major platforms and languages, such as Python, Java, C#, Ruby, and JavaScript.
