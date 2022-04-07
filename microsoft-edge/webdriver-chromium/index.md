@@ -60,14 +60,9 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
 
-<!-- ====================================================================== -->
-## Legacy version: Microsoft WebDriver, for Microsoft Edge (EdgeHTML)
+**The difference between Microsoft Edge WebDriver and Microsoft WebDriver:**
 
-Microsoft WebDriver is older than Microsoft Edge WebDriver.
-*  Microsoft WebDriver is the previous, browser-specific driver for Microsoft Edge (EdgeHTML), which is also known as Microsoft Edge Legacy.
-*  Microsoft Edge WebDriver is the current, browser-specific driver for Microsoft Edge (Chromium).
-
-For more info about automating Microsoft Edge Legacy, see [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/).
+Microsoft WebDriver is the previous, browser-specific driver for Microsoft Edge (EdgeHTML), which is also known as Microsoft Edge Legacy.  Microsoft Edge WebDriver is the current, browser-specific driver for Microsoft Edge (Chromium).  To automate Microsoft Edge Legacy, see [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/).
 
 
 <!-- ====================================================================== -->
