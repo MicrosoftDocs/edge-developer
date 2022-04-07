@@ -50,16 +50,17 @@ Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuf
 
 1. Open the demo webpage [Inspect ArrayBuffers in JS (Memory in JS)](https://memory-inspector.glitch.me/demo-js.html). <!-- We need a microsoftedge.github.io with a JavaScript ArrayBuffer comparable to memory-inspector.glitch.me/demo-js.html -->
 
-1.	Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I`..
+1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I`.
 
-1.	Click **Sources** and open the `demo-js.js` file.
+1. Click **Sources** and open the `demo-js.js` file.
 
 1. Set a breakpoint at line **18** as shown in the following image.
 
     ![Memory Inspector set breakpoint in a JavaScript file](../media/memory-inspector-set-breakpoint.png)
 
-1.	Refresh the webpage.
-5.	In the right Debugger pane, click Scope.
+1.	Refresh the webpage. It fails to display because the JavaScript stops processing at the breakpoint.
+
+1.	In the right Debugger pane, click Scope.
 6.	Open the Memory inspector using one of the following methods:
 o	From the icon. Clicking on the icon next to the buffer property, or
 o	From the context menu. Right click on the buffer property and select Reveal in Memory Inspector panel.
