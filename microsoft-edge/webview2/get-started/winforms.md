@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
+ms.date: 04/08/2022
 ---
 # Get started with WebView2 in WinForms apps
 
@@ -266,9 +266,9 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 1. In the **Properties** panel, in the bolded **Appearance** section (about 15 properties down), change the **Text** property (probably from **button1**) to **Go!**
 
 
-   **Align the text box and button, as follows:**
+   **Align the text box and the existing button, as follows:**
 
-1. Arrange the text box to the left of the button, aligned next to the text box, as shown below:
+1. Position the text box on the left side of the form, vertically aligned with the button, as shown below:
 
    ![WinForms designer.](media/winforms-designer.png)
 
