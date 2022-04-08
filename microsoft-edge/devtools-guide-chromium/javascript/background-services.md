@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 04/06/2022
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,67 +22,64 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # Debug background services
 
-The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the JavaScript APIs that enables your website to send and receive updates even when a user doesn't have your website open.  A background service is functionally similar to a [background process](https://en.wikipedia.org/wiki/Background_process).
+The **Background Services** section of Microsoft Edge DevTools is a collection of tools for the Web APIs that enable your website to send and receive data even when a user doesn't use your website, and enable the browser to report production problems to your server.
 
 Microsoft Edge DevTools considers each of the following APIs to be a background service:
 
 *  [Background Fetch](#background-fetch)
 *  [Background Sync](#background-sync)
 *  [Notifications](#notifications)
+*  [Periodic Background Sync](#periodic-background-sync)
 *  [Push Messages](#push-messages)
+*  [Reporting API](#reporting-api)
+<!-- TODO: add a section about Payment Handler -->
 
-Microsoft Edge DevTools may log background service events for 3 days, even when DevTools isn't open.  The background service events log can help you make sure that events are being sent and received as expected.  You can also inspect the details of each event.
-
-:::image type="content" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="The Push Messaging pane." lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+The **Background Services** section logs API events, even when you're not using DevTools, to help you make sure that events are being sent and received as expected.
 
 
 <!-- ====================================================================== -->
 ## Background Fetch
 
-The **Background Fetch API** enables a **service worker** to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch event for 3 days, even when DevTools isn't open:
+The **Background Fetch API** enables the **service worker** of a Progressive Web App to reliably download large resources, like movies or podcasts, as a background service.  To log Background Fetch events for 3 days, even when DevTools isn't open:
 
-<!--Todo: add background fetch api section when available -->
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Background Fetch**.  The **Background Fetch** page opens.
 
-   :::image type="content" source="../media/javascript-application-background-services-background-fetch-empty.msft.png" alt-text="The Background Fetch panel." lightbox="../media/javascript-application-background-services-background-fetch-empty.msft.png":::
+   ![The Background Fetch panel.](./images/application-background-fetch-empty.png)
 
 1. Click **Record** (![Record.](../media/record-icon.msft.png)).
    After triggering some Background Fetch activity, DevTools logs the events to the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-background-fetch.msft.png" alt-text="A log of events in the Background Fetch panel." lightbox="../media/javascript-application-background-services-background-fetch.msft.png":::
+   ![A log of events in the Background Fetch panel.](./images/application-background-fetch-events.png)
 
 1. Click an event to view its details in the space below the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-background-fetch-details.msft.png" alt-text="View the details of an event in the Background Fetch pane." lightbox="../media/javascript-application-background-services-background-fetch-details.msft.png":::
+   ![View the details of an event in the Background Fetch pane.](./images/application-background-fetch-details.png)
 
 
 <!-- ====================================================================== -->
 ## Background Sync
 
-The **Background Sync API** enables an offline **service worker** to send data to a server once it has re-established a reliable internet connection.  To log Background Sync events for 3 days, even when DevTools isn't open:
+The **Background Sync API** enables the offline **service worker** of a Progressive Web App to send data to a server once it has re-established a reliable internet connection.  To log Background Sync events for 3 days, even when DevTools isn't open:
 
-<!--Todo: add background sync api section when available -->
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Background Sync**.  The **Background Sync** page opens.
 
-   :::image type="content" source="../media/javascript-application-background-services-background-sync-empty.msft.png" alt-text="The Background Sync pane." lightbox="../media/javascript-application-background-services-background-sync-empty.msft.png":::
+   ![The Background Sync pane.](./images/application-background-sync-empty.png)
 
 1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Background Sync activity, DevTools logs the events to the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-background-sync.msft.png" alt-text="A log of events in the Background Sync pane." lightbox="../media/javascript-application-background-services-background-sync.msft.png":::
+   ![A log of events in the Background Sync pane.](./images/application-background-sync-events.png)
 
 1. Select an event to view its details in the space below the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-background-sync-details.msft.png" alt-text="View the details of an event in the Background Sync pane." lightbox="../media/javascript-application-background-services-background-sync-details.msft.png":::
+   ![View the details of an event in the Background Sync pane.](./images/application-background-sync-details.png)
 
 
 <!-- ====================================================================== -->
@@ -90,43 +87,91 @@ The **Background Sync API** enables an offline **service worker** to send data t
 
 After a **service worker** has received a [Push Message](https://developer.mozilla.org/docs/Web/API/Push_API) from a server, the service worker uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API) to display the data to a user.  To log Notifications for 3 days, even when DevTools isn't open:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Notifications**.  The **Notifications** page opens.
 
-   :::image type="content" source="../media/javascript-application-background-services-notifications-empty.msft.png" alt-text="The Notifications pane." lightbox="../media/javascript-application-background-services-notifications-empty.msft.png":::
+   ![The Notifications pane.](./images/application-notifications-empty.png)
 
 1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Notifications activity, DevTools logs the events to the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-notifications.msft.png" alt-text="A log of events in the Notifications pane." lightbox="../media/javascript-application-background-services-notifications.msft.png":::
+   ![A log of events in the Notifications pane.](./images/application-notifications-events.png)
 
 1. Click an event to view its details in the space below the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-notifications-details.msft.png" alt-text="View the details of an event in the Notifications pane." lightbox="../media/javascript-application-background-services-notifications-details.msft.png":::
+   ![View the details of an event in the Notifications pane.](./images/application-notifications-details.png)
+
+
+<!-- ====================================================================== -->
+## Periodic Background Sync
+
+The **Periodic Background Sync API** enables the **service worker** of a Progressive Web App to retrieve data from a server, periodically, even when the website isn't opened. To learn more about the **Periodic Background Sync API**, see [Use the Periodic Background Sync API to regularly get fresh content](/microsoft-edge/progressive-web-apps-chromium/how-to/background-syncs#use-the-periodic-background-sync-api-to-regularly-get-fresh-content).
+
+To log Periodic Background Sync events for 3 days, even when DevTools isn't open:
+
+1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. On the left, in the **Background Services** section, select **Periodic Background Sync**.  The **Periodic Background Sync** page opens.
+
+   ![The Periodic Background Sync pane.](./images/application-periodic-background-sync-empty.png)
+
+1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Periodic Background Sync activity, DevTools logs the events to the table.
+
+   ![A log of events in the Periodic Background Sync pane.](./images/application-periodic-background-sync-events.png)
 
 
 <!-- ====================================================================== -->
 ## Push Messages
 
-To display a push notification to a user, a **service worker** must first use the [Push Message API](https://developer.mozilla.org/docs/Web/API/Push_API) to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).  To log Push Messages for 3 days, even when DevTools isn't open:
+To display a push notification to a user, the **service worker** of a Progressive Web App must first use the [Push Message API](https://developer.mozilla.org/docs/Web/API/Push_API) to receive data from a server.  When the service worker is ready to display the notification, it uses the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).  To log Push Messages for 3 days, even when DevTools isn't open:
 
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
 1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
 1. On the left, in the **Background Services** section, select **Push Messaging**.  The **Push Messaging** page opens.
 
-   :::image type="content" source="../media/javascript-application-background-services-push-messaging-empty.msft.png" alt-text="Open the Push Messaging pane." lightbox="../media/javascript-application-background-services-push-messaging-empty.msft.png":::
+   ![Open the Push Messaging pane.](./images/application-push-messaging-empty.png)
 
 1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some Push Message activity, DevTools logs the events to the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-push-messaging.msft.png" alt-text="A log of events in the Push Messaging pane." lightbox="../media/javascript-application-background-services-push-messaging.msft.png":::
+   ![A log of events in the Push Messaging pane.](./images/application-push-messaging-events.png)
 
 1. Click an event to view the details in the space below the table.
 
-   :::image type="content" source="../media/javascript-application-background-services-push-messaging-details.msft.png" alt-text="View the details of an event in the Push Messaging pane." lightbox="../media/javascript-application-background-services-push-messaging-details.msft.png":::
+   ![View the details of an event in the Push Messaging pane](./images/application-push-messaging-details.png)
+
+
+<!-- ====================================================================== -->
+## Reporting API
+
+The **Reporting API** enables web developers to receive reports of security violations, deprecated API calls, and others, from their production websites.
+
+To see reports that have been sent by the browser using the **Reporting API**:
+
+1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. On the left, in the **Background Services** section, select **Reporting API**.  The **Reporting API** page opens.
+
+   ![Open the Reporting API pane.](./images/application-reporting-api.png)
+
+1. The **Reporting API** page displays the reports sent in the table at the top.
+
+   ![List of reports in the Reporting API pane](./images/application-reporting-api-reports.png)
+
+1. Click a report to view the details in the space below the table.
+
+   ![View the details of a report in the Reporting API pane](./images/application-reporting-api-details.png)
+
+1. The **Reporting API** page also displays the list of reporting endpoints configured via the `Reporting-Endpoints` HTTP header in the table at the bottom.
+
+   ![View the list of reporting endpoints in the Reporting API pane](./images/application-reporting-api-endpoints.png)
 
 
 <!-- ====================================================================== -->
