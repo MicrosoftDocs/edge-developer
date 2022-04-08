@@ -43,8 +43,8 @@ If you use screen readers or the keyboard to navigate around the DevTools, send 
 Chromium issue [#963183](https://crbug.com/963183)
 
 See also:
-* [Accessibility-testing features](../../../accessibility/reference)
-* [Navigate DevTools with assistive technology](../../../accessibility/navigation)
+* [Accessibility-testing features](../../../accessibility/reference.md)
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
 <!-- ====================================================================== -->
@@ -82,7 +82,7 @@ If you want to use the DevTools in a different language than the ones that are a
 Chromium issue [#941561](https://crbug.com/941561)
 
 See also:
-* [Change DevTools language settings](../../../customize/localization)
+* [Change DevTools language settings](../../../customize/localization.md)
 
 
 <!-- ====================================================================== -->
@@ -95,7 +95,7 @@ The webhint Microsoft Edge extension allows you to easily scan your web page and
 [Try the webhint browser extension in Microsoft Edge](https://aka.ms/webhint/edge-extension).  Once you install the extension, open DevTools and then select the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io](https://aka.ms/webhint/browser-extension) to learn more.
 
 See also:
-* [webhint extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/test-and-automation/webhint)
+* [webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
 
 
 <!-- ====================================================================== -->
@@ -112,7 +112,7 @@ We're working on the UI and adding more functionality to the 3D View so please s
 Chromium issue [#987787](https://crbug.com/987787)
 
 See also:
-* [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/)
+* [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)
 
 
 <!-- ====================================================================== -->
@@ -145,8 +145,8 @@ The [webhint](https://aka.ms/webhint4code) Visual Studio Code extension uses `we
 [Learn more about the Visual Studio Code webhint extension](https://aka.ms/webhint/code-extension).
 
 See also:
-* [Visual Studio Code for web development](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/)
-* [The webhint extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/webhint)
+* [Visual Studio Code for web development](../../../../visual-studio-code/index.md)
+* [The webhint extension for Visual Studio Code](../../../../visual-studio-code/webhint.md)
 
 
 <!-- ====================================================================== -->
@@ -159,7 +159,7 @@ In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to d
 [Read our blog post to learn how to debug Microsoft Edge from Visual Studio](https://aka.ms/vs/debug-edge).
 
 See also:
-* [Visual Studio for web development](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio/)
+* [Visual Studio for web development](../../../../visual-studio/index.md)
 
 
 <!-- ====================================================================== -->
@@ -172,8 +172,8 @@ Tracking prevention is a unique feature in Microsoft Edge that blocks you from b
 [Read more about tracking prevention and the balance between privacy and web compatibility](https://aka.ms/microsoftedge/tracking-prevention-blog).
 
 See also:
-* [Tracking prevention in Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/tracking-prevention)
-* [Console overview](../../../console/)
+* [Tracking prevention in Microsoft Edge](../../../../web-platform/tracking-prevention.md)
+* [Console overview](../../../console/index.md)
 
 
 <!-- ====================================================================== -->
@@ -201,8 +201,8 @@ Now, the Console allows the redeclaration:
 Chromium issue [#1004193](https://crbug.com/1004193)
 
 See also:
-* [Console overview](../../../console/)
-* [Run JavaScript in the Console](../../../console/console-javascript)
+* [Console overview](../../../console/index.md)
+* [Run JavaScript in the Console](../../../console/console-javascript.md)
 
 
 <!-- ====================================================================== -->
@@ -219,8 +219,8 @@ DevTools has started to support the DWARF Debugging Standard, which means increa
 -->
 
 See also:
-* [Filter Wasm resource type in the Network tool](../../../whats-new/2021/05/devtools#filter-wasm-resource-type-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 92)_.
-* [WebAssembly Debugging: Enable DWARF support](../../../experimental-features/#webassembly-debugging-enable-dwarf-support) in _Experimental features_.
+* [Filter Wasm resource type in the Network tool](../../../whats-new/2021/05/devtools.md#filter-wasm-resource-type-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 92)_.
+* [WebAssembly Debugging: Enable DWARF support](../../../experimental-features/index.md#webassembly-debugging-enable-dwarf-support) in _Experimental features_.
 
 
 <!-- ====================================================================== -->
@@ -286,8 +286,8 @@ To access **Network Conditions**, [open the Command Menu](../../../command-menu/
 Chromium issue [#1029031](https://crbug.com/1029031)
 
 See also:
-* [Network conditions tool](../../../network-conditions/network-conditions-tool)
-* [Override the user agent string](../../../device-mode/override-user-agent)
+* [Network conditions tool](../../../network-conditions/network-conditions-tool.md)
+* [Override the user agent string](../../../device-mode/override-user-agent.md)
 
 
 <!-- ====================================================================== -->
@@ -302,7 +302,7 @@ The configuration UI has a new, responsive design, and the throttling configurat
 ![The new configuration UI.](../../images/2019/12/start.msft.png)
 
 See also:
-* [Lighthouse tool](../../../lighthouse/lighthouse-tool)
+* [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -324,7 +324,7 @@ Toggling code coverage without a page refresh has been removed because the cover
 Chromium issue [#1004203](https://crbug.com/1004203)
 
 See also:
-* [Find unused JavaScript and CSS code with the Coverage tool](../../../coverage/)
+* [Find unused JavaScript and CSS code with the Coverage tool](../../../coverage/index.md)
 
 
 <!-- ====================================================================== -->
