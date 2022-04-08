@@ -38,7 +38,7 @@ The functional relationship between these components is as follows:
 | Microsoft Edge WebDriver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge.  Test authors write tests that use WebDriver commands that Microsoft Edge WebDriver receives.  Edge WebDriver is then responsible for communicating that command to the browser. |
 | A WebDriver testing framework | Test authors use a testing framework to write end-to-end tests and automate browsers.  Provides a language-specific interface that translates your code into commands that are sent to Edge WebDriver.  WebDriver testing frameworks exist for all major platforms and languages.  One such framework is Selenium. |
 | Internet Explorer Driver | An open-source implementation of the WebDriver protocol specifically for Internet Explorer.  To run legacy end-to-end tests for Internet Explorer Mode, we recommend using Internet Explorer Driver. |
-| Microsoft WebDriver | The previous, browser-specific driver for Microsoft Edge (EdgeHTML), which is also known as Microsoft Edge Legacy. |
+| Microsoft WebDriver (legacy) | The previous, browser-specific driver for Microsoft Edge (EdgeHTML), which is also known as Microsoft Edge Legacy. |
 
 The following sections describe how to get started with WebDriver for Microsoft Edge.
 
