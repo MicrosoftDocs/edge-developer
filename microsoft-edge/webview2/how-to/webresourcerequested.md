@@ -94,7 +94,7 @@ You can add/provide your own custom response.
 
 ### The NavigateWithWebResourceRequest method
 
-The `NavigateWithWebResourceRequest` method, together with the `` event and the `` event, allows your host app to intercept and interact with network requests sent to and from the WebView2 control, while the WebView2 control interacts with the HTTP server.  This API enables your host app to  either intercept a response that's sent by the HTTP server and substitute a custom response to your host app's code, or intercept a request that's sent from the WebView2 control to the HTTP server, and substitute your own custom request instead.
+The `NavigateWithWebResourceRequest` method, together with the `WebResourceRequest` event and the `WebResponseRecieved` event, allows your host app to intercept and interact with network requests sent to and from the WebView2 control, while the WebView2 control interacts with the HTTP server.  This API enables your host app to  either intercept a response that's sent by the HTTP server and substitute a custom response to your host app's code, or intercept a request that's sent from the WebView2 control to the HTTP server, and substitute your own custom request instead.
 
 # [.NET](#tab/dotnet)
 
@@ -259,8 +259,8 @@ Instead of using this API, you can use these other approaches:
 <!-- try using a simple list of links to articles; can add notes off to the right, like:
 * [Basic Authentication] - a few words for clarification here.
 -->
-* [Basic Authentication]
-* [Cookies]
+* [Basic Authentication](x) - asfjkl
+* [Cookies](x) - adfkl
 * [General navigation]
 * [x]
 
