@@ -41,9 +41,9 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
   
 Release Date: April 11, 2022  
   
-[NuGet package for WebView2 SDK 1.0.1185.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.38)  
+[NuGet package for WebView2 SDK 1.0.1185.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.1185.38 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.1185.39 or higher.  
 
 ### General
 
@@ -59,7 +59,7 @@ The following items are now stable:
 *   The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) that supports enable/disable external drop.
 *   The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize the PDF toolbar items.
 *  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 using the same user data folder.
-*  The [permission requested support for iframes](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1158-prerelease&preserve-view=true): 
+*  The [permission requested support for iframes](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1189-prerelease&preserve-view=true): 
    * `add_PermissionRequested`
    * `remove_PermissionRequested`
 
@@ -69,87 +69,24 @@ The following items are now stable:
   
 Release Date: April 11, 2022  
   
-[NuGet package for WebView2 SDK 1.0.1220](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1220-prerelease)  
+[NuGet package for WebView2 SDK 1.0.1222](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.0.1220.0 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.0.1222.0 or higher.  
 
 ### General
 
 #### Experimental Features
   
-*   [Server Certificate API]()
-*   Support for [Favicon]()
-
-ICoreWebView2ExperimentalCertificate 
-(ADDED)
-        get_Subject
-        get_Issuer
-        get_ValidFrom
-        get_ValidTo
-        get_DerEncodedSerialNumber
-        get_DisplayName
-        ToPemEncoding
-        get_PemEncodedIssuerCertificateChain
-
-ICoreWebView2Experimental15 (ADDED)
-        add_ServerCertificateErrorDetected
-        remove_ServerCertificateErrorDetected
-        ClearServerCertificateErrorActions
-
-ICoreWebView2ExperimentalFaviconChangedEventHandler (ADDED)
-ICoreWebView2ExperimentalGetFaviconCompletedHandler (ADDED)
-ICoreWebView2Experimental12 (ADDED)
-        add_FaviconChanged
-        remove_FaviconChanged
-        get_FaviconUri
-        GetFavicon
-        Invoke
-
-ICoreWebView2ExperimentalServerCertificateErrorDetectedEventArgs (ADDED)
-ICoreWebView2ExperimentalClearServerCertificateErrorActionsCompletedHandler (ADDED)
-
-ICoreWebView2ExperimentalNavigationCompletedEventArgs (ADDED)
+*   Added the Server Certificate API which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about the TLS error or can cancel the request. 
+*   Added the Favicon API which provides a way to get the fav icon when it changes or is set in a website.
 
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:  
 
-* [Multiple user profiles in WebView2]().
-* [Theming API]().
-* [Custom default Download location API]().
-
-ICoreWebView2Environment10 (ADDED)
-        CreateCoreWebView2ControllerOptions
-        CreateCoreWebView2ControllerWithOptions
-        CreateCoreWebView2CompositionControllerWithOptions
-        get_Kind
-        get_IsEditable
-        get_IsRequestedForMainFrame
-        get_PageUri
-        get_FrameUri
-        get_HasLinkUri
-        get_LinkUri
-        get_HasLinkText
-        get_LinkText
-        get_HasSourceUri
-        get_SourceUri
-        get_HasSelection
-        get_SelectionText
-
-ICoreWebView2ControllerOptions (ADDED)
-        get_ProfileName
-        put_ProfileName
-        get_IsInPrivateModeEnabled
-        put_IsInPrivateModeEnabled
-
-ICoreWebView2Profile (ADDED)
-        get_ProfileName
-        get_IsInPrivateModeEnabled
-        get_ProfilePath
-        get_DefaultDownloadFolderPath
-        put_DefaultDownloadFolderPath
-        get_PreferredColorScheme
-        put_PreferredColorScheme
+* Suppoer for multiple user profiles in WebView2.
+* Theming API wich provides a way to customize color scheme (light, dark, system) of WebView2. 
+* Download API which provides a way to customize the default download location.
 
 #### Bug Fixes
   
@@ -162,6 +99,7 @@ ZoomFactor will be correctly returned as 5 instead of 6.
 assigned.  
 *   Made a runtime change to fix a bug in WinUI2 where owned windows were not showing up.  
 *   Fixed ICoreWebVeiw2Frame::PostWebMessage functionality after source update.  
+
 
 <!-- ====================================================================== -->
 
