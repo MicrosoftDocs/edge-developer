@@ -43,13 +43,9 @@ Release Date: April 11, 2022
   
 [NuGet package for WebView2 SDK 1.0.1185.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.38)  
   
-For full API compatibility, 100.1185.38 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.1185.38 or higher.  
 
 ### General
-
-#### Bug Fixes
-
-* Include P0 bug fix here. :)
 
 #### Promotions
 
@@ -63,18 +59,9 @@ The following items are now stable:
 *   The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) that supports enable/disable external drop.
 *   The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize the PDF toolbar items.
 *  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 using the same user data folder.
-
-
-ICoreWebView2Frame3 (ADDED)
-        add_PermissionRequested
-        remove_PermissionRequested
-
-ICoreWebView2FramePermissionRequestedEventHandler (ADDED)
-
-ICoreWebView2PermissionRequestedEventArgs2 (ADDED)
-        CreatePrintSettings
-        get_UIAProvider
-        GetProviderForHwnd
+*  The [permission requested support for iframes](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1158-prerelease&preserve-view=true): 
+   * `add_PermissionRequested`
+   * `remove_PermissionRequested`
 
 <!-- ====================================================================== -->
 
@@ -84,14 +71,14 @@ Release Date: April 11, 2022
   
 [NuGet package for WebView2 SDK 1.0.1220](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1220-prerelease)  
   
-For full API compatibility, 102.0.1220.0 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.0.1220.0 or higher.  
 
 ### General
 
 #### Experimental Features
   
-*   Server Certificate API.
-*   Favicon API.
+*   [Server Certificate API]()
+*   Support for [Favicon]()
 
 ICoreWebView2ExperimentalCertificate 
 (ADDED)
@@ -111,7 +98,6 @@ ICoreWebView2Experimental15 (ADDED)
 
 ICoreWebView2ExperimentalFaviconChangedEventHandler (ADDED)
 ICoreWebView2ExperimentalGetFaviconCompletedHandler (ADDED)
-
 ICoreWebView2Experimental12 (ADDED)
         add_FaviconChanged
         remove_FaviconChanged
@@ -128,10 +114,9 @@ ICoreWebView2ExperimentalNavigationCompletedEventArgs (ADDED)
 
 The following APIs are promoted to stable in this prerelease SDK:  
 
-* Profile in WebView2.
-* Renamed Client Certificate & ICoreWebView2ClientCertificateCollection. 
-* Theming API.
-* Default Download API.
+* [Multiple user profiles in WebView2]().
+* [Theming API]().
+* [Custom default Download location API]().
 
 ICoreWebView2Environment10 (ADDED)
         CreateCoreWebView2ControllerOptions
@@ -170,13 +155,13 @@ ICoreWebView2Profile (ADDED)
   
 *   Starting with runtime v102, if you set ZoomFactor to the maximum of 5, then set it higher like 6, the value of 
 ZoomFactor will be correctly returned as 5 instead of 6.  
-*   Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling  
+*   Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling. 
 *   Fixed a bug where MouseEvent.movementX and MouseEvenont.movementY always be 0 in visual hosting mode.  
-*   Fixed issue with logging in caused by a password regression in WebView2  
+*   Fixed issue with logging in caused by a password regression in WebView2.  
 *   Fixed a crash happened when user opens a new app window and the web page has not yet had a navigation entry 
 assigned.  
 *   Made a runtime change to fix a bug in WinUI2 where owned windows were not showing up.  
-*   Fixed ICoreWebVeiw2Frame::PostWebMessage functionality after source update  
+*   Fixed ICoreWebVeiw2Frame::PostWebMessage functionality after source update.  
 
 <!-- ====================================================================== -->
 
