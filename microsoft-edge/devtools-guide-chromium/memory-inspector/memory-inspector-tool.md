@@ -58,22 +58,25 @@ Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuf
 
     ![Memory Inspector set breakpoint in a JavaScript file](../media/memory-inspector-set-breakpoint.png)
 
-1.	Refresh the webpage. It fails to display because the JavaScript stops processing at the breakpoint.
+1. Refresh the webpage. It fails to display because the JavaScript stops processing at the breakpoint.
 
-1.	In the right Debugger pane, click Scope.
-6.	Open the Memory inspector using one of the following methods:
-o	From the icon. Clicking on the icon next to the buffer property, or
-o	From the context menu. Right click on the buffer property and select Reveal in Memory Inspector panel.
+1. In the right Debugger pane, click Scope.
+
+1. Open Memory Inspector panel using one of the following methods:
+
+    * From the icon. Click on the icon next to the buffer property (IMG), or
+
+    * From the context menu. Right click on the buffer property and select **Reveal in Memory Inspector panel**.
 
 
-
+<!-- 
    The following list of steps is derived from the instructions on that webpage.
 
 1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
 1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-1. In the **Page** tab on the left, select the file `demo-js.js`. <!-- `memory-write-wasm`-->
+1. In the **Page** tab on the left, select the file `demo-js.js`. ??? `memory-write-wasm` ???
 
 1. Set a breakpoint at line 18 in the loop body.
 
@@ -89,13 +92,13 @@ o	From the context menu. Right click on the buffer property and select Reveal in
 
 1. The **Memory Inspector** tool opens in the Drawer.  In the **Memory Inspector** tool, examine the **buffer**.
 
-1. To inspect **Uint8Array b2**, <!-- expand that node to see the buffer, and then select the **Memory** icon (or-->right-click **b2**, and then select **Reveal in Memory Inspector panel**.
+1. To inspect **Uint8Array b2**, expand that node to see the buffer, and then select the **Memory** icon, or right-click **b2**, and then select **Reveal in Memory Inspector panel**.
 
-1. To inspect **Uint8Array b1**, <!-- expand that node to see the buffer, and then select the **Memory** icon (or-->right-click **b1**, and then select **Reveal in Memory Inspector panel**.  That re-focuses on the **Memory** tab of the first buffer.
+1. To inspect **Uint8Array b1**, expand that node to see the buffer, and then select the **Memory** icon, or right-click **b1**, and then select **Reveal in Memory Inspector panel**.  That re-focuses on the **Memory** tab of the first buffer.
 
 1. In the debugger, step, and see updates to buffers in the **Memory Inspector** tool.
 
-
+-->
 
 
 <!-- ====================================================================== -->
