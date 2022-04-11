@@ -43,7 +43,7 @@ Release Date: April 11, 2022
   
 [NuGet package for WebView2 SDK 1.0.1185.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.1185.39 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.0.1185.39 or higher.  
 
 ### General
 
@@ -74,31 +74,30 @@ Release Date: April 11, 2022
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.0.1222.0 or higher.  
 
 ### General
+* Renamed `ICoreWebView2Certificate` to `ICoreWebview2ClientCertificate`.
 
 #### Experimental Features
   
-*   Added the Server Certificate API which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about the TLS error or can cancel the request. 
-*   Added the Favicon API which provides a way to get the fav icon when it changes or is set in a website.
+*   Added the Favicon API which provides a way to get the favicon when it changes or is set in a website.
 
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:  
 
-* Suppoer for multiple user profiles in WebView2.
+* Support for multiple user profiles in WebView2.
 * Theming API wich provides a way to customize color scheme (light, dark, system) of WebView2. 
-* Download API which provides a way to customize the default download location.
+* Default download API which provides a way to customize the default download location.
 
 #### Bug Fixes
   
-*   Starting with runtime v102, if you set ZoomFactor to the maximum of 5, then set it higher like 6, the value of 
-ZoomFactor will be correctly returned as 5 instead of 6.  
+*   Fixed ZoomFactor issue that incorrectly sets ZoomFactor value to the maximum value when it is out of bounds.
 *   Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling. 
-*   Fixed a bug where MouseEvent.movementX and MouseEvenont.movementY always be 0 in visual hosting mode.  
-*   Fixed issue with logging in caused by a password regression in WebView2.  
-*   Fixed a crash happened when user opens a new app window and the web page has not yet had a navigation entry 
+*   Fixed a bug where MouseEvent.movementX and MouseEvent.movementY will always be 0 in visual hosting mode.  
+*   Fixed issue with log in caused by a password regression bug in WebView2.  
+*   Fixed a crash that happened when a user opens a new app window and the web page has not yet had a navigation entry 
 assigned.  
 *   Made a runtime change to fix a bug in WinUI2 where owned windows were not showing up.  
-*   Fixed ICoreWebVeiw2Frame::PostWebMessage functionality after source update.  
+*   Fixed ICoreWebView2Frame::PostWebMessage functionality after source update.  
 
 
 <!-- ====================================================================== -->
