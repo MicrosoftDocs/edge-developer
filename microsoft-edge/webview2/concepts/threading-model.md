@@ -45,7 +45,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
    if (msg == "Open Dialog")
    {
       Form1 form = new Form1(); // Create a new form that contains a new WebView2 instance when web message is received.
-      form.ShowDialog(); // This will cause a reentrancy issue and cause the newly created WebView2 inside the modal dialog to hang.
+      form.ShowDialog(); // This will cause a reentrancy issue and cause the newly created WebView2 control inside the modal dialog to hang.
    }
 }
 ```
