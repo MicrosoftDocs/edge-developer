@@ -19,7 +19,9 @@ Emulate the devices and toggle between the following postures.
 *  Single-screen or folded posture
 *  Dual-screen or unfolded posture
 
-[Turn on experimental Web Platform APIs](#turn-on-experimental-apis) and use the [CSS media screen-spanning feature](/dual-screen/web/css-media-spanning) and [JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments) to enhance your website (or app) for dual-screen and foldable devices.
+The APIs are available in Microsoft Edge 97 and later. If you are not on Microsoft Edge 97 or later, you will need to turn on experimental web platform features to use the APIs.
+
+[Turn on experimental Web Platform APIs](#turn-on-experimental-apis) and use the [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) and [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments) to enhance your website (or app) for dual-screen and foldable devices.
 
 :::image type="content" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="Emulating Surface Duo in Microsoft Edge." lightbox="../media/experiments-surface-duo-emulation.msft.png":::
 
@@ -27,7 +29,7 @@ Emulate the devices and toggle between the following postures.
 <!-- ====================================================================== -->
 ## Turn on experimental APIs
 
-To use the [CSS media screen-spanning feature](/dual-screen/web/css-media-spanning) and [JavaScript getWindowSegments API](/dual-screen/web/javascript-getwindowsegments), turn on the `Experimental Web Platform features` flag in Microsoft Edge, as follows:
+To use the [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) and [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments), turn on the `Experimental Web Platform features` flag in Microsoft Edge, as follows:
 
 1. Go to `edge://flags`.
 
@@ -40,7 +42,7 @@ To use the [CSS media screen-spanning feature](/dual-screen/web/css-media-spanni
 
 ### Surface Duo
 
-If you are using [CSS media queries](/dual-screen/web/css-media-spanning) or the [JavaScript Windows Segment Enumeration API](/dual-screen/web/javascript-getwindowsegments) to enhance your website or app for the [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo), you must also turn on the **Experimental Web Platform features** flag in the [Android Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on your [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) device.
+If you are using [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) or the [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments) to enhance your website or app for the [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo), you must also turn on the **Experimental Web Platform features** flag in the [Android Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on your [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) device.
 
 #### Matching the flags match across Android and desktop Microsoft Edge
 
