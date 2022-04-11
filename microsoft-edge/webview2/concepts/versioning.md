@@ -93,7 +93,7 @@ For full support of experimental APIs, use a Microsoft Edge preview channel, not
 
 The WebView2 team is seeking feedback on experimental WebView2 APIs that might be promoted to Stable in future releases.  The experimental APIs are indicated as "experimental" in the WebView2 SDK Reference documentation.
 
-To help you evaluate the experimental APIs and share your feedback, use the [WebView feedback repo](https://github.com/MicrosoftEdge/WebViewFeedback).
+To help you evaluate the experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
 Avoid using the experimental APIs in production apps.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.  After the release of an API as stable and public, the experimental version of that API is supported for two releases in a deprecated state.
 

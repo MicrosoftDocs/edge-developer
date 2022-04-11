@@ -120,7 +120,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Create a single WebView
+## Step 5 - Create a single WebView2 control
 
 Add a WebView2 control to your app.
 
@@ -175,7 +175,7 @@ Add a WebView2 control to your app.
 
 Enable users to change the URL that the WebView2 control displays, by adding an address bar to the app.
 
-1. In the `MainWindow.xaml` file, add an address bar by copying and pasting the following code inside the `<DockPanel>` that contains the WebView.  Keep the existing code below the new snippet.
+1. In the `MainWindow.xaml` file, add an address bar by copying and pasting the following code inside the `<DockPanel>` that contains the WebView2 control.  Keep the existing code below the new snippet.
 
    ```xml
    <DockPanel DockPanel.Dock="Top">

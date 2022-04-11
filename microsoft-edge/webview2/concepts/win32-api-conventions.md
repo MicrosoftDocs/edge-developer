@@ -53,7 +53,7 @@ void ScriptComponent::InjectScript()
         m_appWindow->GetMainWindow(),
         L"Inject Script",
         L"Enter script code:",
-        L"Enter the JavaScript code to run in the webview.",
+        L"Enter the JavaScript code to run in the WebView2 control.",
         L"window.getComputedStyle(document.body).backgroundColor");
     if (dialog.confirmed)
     {
@@ -115,7 +115,7 @@ CHECK_FAILURE(m_webView->add_NavigationCompleted(
                 if (webErrorStatus == COREWEBVIEW2_WEB_ERROR_STATUS_DISCONNECTED)
                 {
                     // Do something here if you want to handle a specific error case.
-                    // In most cases it is not necessary, because the WebView
+                    // In most cases it is not necessary, because the WebView2 control
                     // displays an error page automatically.
                 }
             }
@@ -143,7 +143,7 @@ Various methods provide or accept URIs and JSON as strings.  Use your preferred 
 
 If WinRT is available for your app, you can use the `RuntimeClass_Windows_Data_Json_JsonObject` and `IJsonObjectStatics` methods to parse or produce JSON strings, or `RuntimeClass_Windows_Foundation_Uri` and `IUriRuntimeClassFactory` methods to parse and produce URIs.  Both of these approaches work in Win32 apps.
 
-If you use `IUri` and `CreateUri` to parse URIs, you may want to use the following URI creation flags, to have `CreateUri` behavior more closely match the URI parsing in the WebView:
+If you use `IUri` and `CreateUri` to parse URIs, you may want to use the following URI creation flags, to have `CreateUri` behavior more closely match the URI parsing in the WebView2 control:
 
 ```json
 Uri_CREATE_ALLOW_IMPLICIT_FILE_SCHEME | Uri_CREATE_NO_DECODE_EXTRA_INFO

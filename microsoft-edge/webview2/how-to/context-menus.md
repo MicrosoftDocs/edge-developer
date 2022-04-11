@@ -680,7 +680,7 @@ The WebView2 control raises this event to indicate that the user selected a cust
 
 If the user selects a custom menu item, the `CustomMenuItemSelected` event is raised on the context menu item object that was selected, in these cases:
 
-*  The app adds custom menu items, but defers the context menu UI to the WebView platform.
+*  The app adds custom menu items, but defers the context menu UI to the WebView2 platform.
 
 *  The app adds custom menu items, shows custom UI, and sets the `SelectedCommandId` property to the ID of the custom menu item.
 
