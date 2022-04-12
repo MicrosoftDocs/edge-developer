@@ -81,9 +81,10 @@ Release Date: April 11, 2022
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.0.1222.0 or higher.  
 
 ### General
+* Renamed `ICoreWebView2Certificate` to `ICoreWebview2ClientCertificate`.
 
 #### Experimental Features
-  
+
 * Added the Favicon API which provides a way to get the favicon when it changes or is set at a website.
 
 #### Promotions
