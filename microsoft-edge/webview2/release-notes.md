@@ -81,23 +81,22 @@ Release Date: April 11, 2022
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.0.1222.0 or higher.  
 
 ### General
-* Renamed `ICoreWebView2Certificate` to `ICoreWebview2ClientCertificate`.
 
 #### Experimental Features
 
-* Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcertificate?view=webview2-1.0.1222-prerelease) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or can cancel the web request.
+* Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcertificate?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
-* Added the [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease) which provides a way to get the favicon when it changes or is set at a website.
+* Added the [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides a way to get the favicon when it changes or is set at a website.
 
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:  
 
-* Support for [multiple user profiles](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease) in WebView2.
+* Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) in WebView2.
 
-* [Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
+* [Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
 
-*[Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39) which provides a way to customize the default download location.
+* [Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) which provides a way to customize the default download location.
 
 #### Bug Fixes
   
