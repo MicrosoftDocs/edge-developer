@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/14/2022
+ms.date: 04/11/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -37,35 +37,42 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 <!-- ====================================================================== -->
 
-## 1.0.1185.38
+## 1.0.1185.39
   
 Release Date: April 11, 2022  
   
 [NuGet package for WebView2 SDK 1.0.1185.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.1185.39 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.0.1185.39 or higher.  
 
 ### General
+
+* Renamed `ICoreWebView2Certificate` to `ICoreWebview2ClientCertificate`.
 
 #### Promotions
 
 The following items are now stable:
 
-*   The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
-*   The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true):
+* The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports `sessionId` for CDP method calls.
+
+* The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true):
     *  `add_StatusBarTextChanged`
     *  `get_StatusBarText`
     *  `remove_StatusBarTextChanged`
-*   The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) that supports enable/disable external drop.
-*   The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize the PDF toolbar items.
-*  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 using the same user data folder.
-*  The [permission requested support for iframes](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1189-prerelease&preserve-view=true): 
-   * `add_PermissionRequested`
-   * `remove_PermissionRequested`
+
+* The [AllowExternalDrop API](/microsoft-edge/webview2/reference/win32/icorewebview2controller4?view=webview2-1.0.1189-prerelease&preserve-view=true) that supports enable/disable for external drop operations.
+
+* The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize PDF toolbar items.
+
+* The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 from `WebView2Environment` created with the same user data folder and therefore sharing the same WebView browser process instance.
+
+* The [permission requested support for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1189-prerelease&preserve-view=true): 
+    * `add_PermissionRequested`
+    * `remove_PermissionRequested`
 
 <!-- ====================================================================== -->
 
-## 1.0.1220-prerelease
+## 1.0.1222-prerelease
   
 Release Date: April 11, 2022  
   
@@ -77,28 +84,33 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 #### Experimental Features
   
-*   Added the Server Certificate API which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about the TLS error or can cancel the request. 
-*   Added the Favicon API which provides a way to get the fav icon when it changes or is set in a website.
+* Added the Favicon API which provides a way to get the favicon when it changes or is set at a website.
 
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:  
 
-* Suppoer for multiple user profiles in WebView2.
-* Theming API wich provides a way to customize color scheme (light, dark, system) of WebView2. 
-* Download API which provides a way to customize the default download location.
+* Support for multiple user profiles in WebView2.
+
+* Theming API which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
+
+* Default Download API which provides a way to customize the default download location.
 
 #### Bug Fixes
   
-*   Starting with runtime v102, if you set ZoomFactor to the maximum of 5, then set it higher like 6, the value of 
-ZoomFactor will be correctly returned as 5 instead of 6.  
-*   Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling. 
-*   Fixed a bug where MouseEvent.movementX and MouseEvenont.movementY always be 0 in visual hosting mode.  
-*   Fixed issue with logging in caused by a password regression in WebView2.  
-*   Fixed a crash happened when user opens a new app window and the web page has not yet had a navigation entry 
-assigned.  
-*   Made a runtime change to fix a bug in WinUI2 where owned windows were not showing up.  
-*   Fixed ICoreWebVeiw2Frame::PostWebMessage functionality after source update.  
+* Fixed `ZoomFactor` issue that incorrectly sets `ZoomFactor` value to the maximum value when it is out of bounds.
+
+* Fixed an issue in which WebView2 content can become blurry when moving between monitors with different scaling.
+
+* Fixed a bug where `MouseEvent.movementX` and `MouseEvent.movementY` will always be **0** in visual hosting mode.
+
+* Fixed log in issue caused by a password regression in WebView2.
+
+* Fixed a failure caused when a user opens a new app window and the web page does not have a navigation entry assigned.
+
+* Made a runtime change to fix a bug in WinUI 2 (UWP) in which owned windows were not showing up.
+ 
+* Fixed `ICoreWebView2Frame::PostWebMessage` functionality after source update.
 
 
 <!-- ====================================================================== -->
