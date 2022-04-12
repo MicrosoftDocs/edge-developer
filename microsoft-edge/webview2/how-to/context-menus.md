@@ -457,10 +457,11 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
                                     CoreWebView2ContextMenuRequestedEventArgs args)
 {
     // create a new menu item
-    CoreWebView2ContextMenuItem newItem = webView.CoreWebView2.Environment.CreateContextMenuItem(
-                                             "Display Page Uri",                   // label
-                                             null,                                 // icon stream
-                                             CoreWebView2ContextMenuItemKind.Command); // kind
+    CoreWebView2ContextMenuItem newItem = 
+                                 webView.CoreWebView2.Environment.CreateContextMenuItem(
+                                       "Display Page Uri",                // label
+                                       null,                              // icon stream
+                                       CoreWebView2ContextMenuItemKind.Command); // kind
         // code to run when menu item selected
         newItem.CustomItemSelected += delegate (object send, Object ex)
         {
@@ -494,7 +495,8 @@ webview2_4->add_ContextMenuRequested(
             CHECK_FAILURE(args->get_MenuItems(&items));
             UINT32 itemsCount;
             CHECK_FAILURE(items->get_Count(&itemsCount));
-            // Adding a custom context menu item for the page that will display the page's URI.
+            // Adding a custom context menu item for the page that will display the 
+            // page's URI.
             wil::com_ptr<ICoreWebView2Environment5> webviewEnvironment;
             CHECK_FAILURE(m_appWindow->GetWebViewEnvironment()->QueryInterface(
                 IID_PPV_ARGS(&webviewEnvironment)));
@@ -638,7 +640,8 @@ webview2_4->add_ContextMenuRequested(
             CHECK_FAILURE(target->get_Kind(&context_kind));
             UINT32 itemsCount;
             CHECK_FAILURE(items->get_Count(&itemsCount));
-            // Removing the 'Save image as' context menu item for image context selections.
+            // Removing the 'Save image as' context menu item for image context 
+            // selections.
             if (context_kind == COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE)
             {
                 wil::com_ptr<ICoreWebView2ContextMenuItem> current;
