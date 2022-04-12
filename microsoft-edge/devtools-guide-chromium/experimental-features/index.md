@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab", "3D View", "Turn on support to move tabs between panels", "Match keyboard shortcuts in DevTools to Microsoft Visual Studio Code", "Edit keyboard shortcuts for any action in DevTools", "Turn on new CSS grid debugging features", "Emulation: Support dual screen mode"]
-ms.date: 04/04/2022
+ms.date: 04/12/2022
 ---
 # Experimental features
 
@@ -270,6 +270,8 @@ Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debu
 <!-- ====================================================================== -->
 ## Console: Resolve variable names in expressions using source maps
 
+Uses source maps to automatically map original variable names to minified variable names when evaluating expressions in the Console.
+
 See [Map the processed code to your original source code, for debugging](../javascript/source-maps.md).
 
 *  This checkbox is present in Microsoft Edge Stable v100.
@@ -385,12 +387,16 @@ Whether to use local overrides for response headers.
 <!-- ====================================================================== -->
 ## Use Lighthouse panel with timespan and snapshot modes
 
+Adds a selector to the Lighthouse tool to switch between different reporting modes.  At the moment, the Navigation and Snapshot modes are supported.
+
 *  This checkbox is present in Microsoft Edge Stable v100.
 *  This checkbox is present in Microsoft Edge Canary v102.
 
 
 <!-- ====================================================================== -->
 ## Tooling for CSS layers in the Styles pane
+
+Adds increased support for the `@layer` CSS rule in the **Styles** pane.  CSS rules in the **Styles** pane are grouped by the layers they belong to.  A layer overview widget is displayed, which shows the layer tree for the currently inspected element.
 
 *  This checkbox is not present in Microsoft Edge Stable v100.
 *  This checkbox is present in Microsoft Edge Canary v102.
