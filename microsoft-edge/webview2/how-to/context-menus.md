@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/11/2022
+ms.date: 04/11/2022
 ---
 # Customize context menus in WebView2
 
@@ -15,12 +15,11 @@ todo:
 *  Make all intros to sections sufficient.
 *  Add comments to code listings.
 *  Add code or pointers to code for the last 4 - 5 sections.
-*  In Intro, describe the UX that results, what does the menu look like?  
+*  In Intro, describe the UX that results, what does the menu look like?
+*  Add screenshot of resulting menu, for each example code listing.
 -->
 
 Use the **ContextMenuRequested** API to customize the context-menus (right-click menus) of a WebView2 app.
-
-The WebView2 control provides a default context menu.
 
 
 **Terminology:**
@@ -34,6 +33,8 @@ The WebView2 control provides a default context menu.
 
 <!-- ====================================================================== -->
 ## Adding a custom context menu
+
+The WebView2 control provides a default context menu.
 
 Instead of using the default context menu, your host app can draw its own context menu by using the information that's sent from the WebView2 context menu.  Your app handles the `ContextMenuRequested` event.  You can use the data provided in the Event arguments of `ContextMenuRequested` to display a custom context menu with entries of your choice.  For this case, you handle the event and request a deferral.
 
@@ -131,12 +132,22 @@ Iterate through a list of `ICoreWebView2ContextMenuItem` items, adding an `ICore
 
 
 <!-- ====================================================================== -->
-## Example: Adding a custom context menu
+## ... Example: Adding a custom context menu
 
 The following sample presents the WebView2 context menu in the Win32/WPF context menu format.
 
+The host app uses the data provided in the `CoreWebView2ContextMenuRequestedEventArgs` to display a custom context menu with entries of your choice.
+
+The host app specifies `args.Handled` to be `true`, and requests a deferral.
+
+The host app should complete the deferral of this event either:
+*  When the user selects a context menu item.  The host app either handles this case, or returns the selected option to the WebView2 control to handle this case.
+*  When the end user dismisses the context menu, such as by clicking outside of the context menu.
+
 
 # [C#](#tab/csharp)
+
+<!-- spec listing 4 of 4 -->
 
 ```csharp
 webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
@@ -192,6 +203,8 @@ IList<CoreWebView2ContextMenuItem> menuList, ItemsControl cm)
 ```
 
 # [C++](#tab/cpp)
+
+<!-- spec listing 2 of 4 -->
 
 ```cpp
 m_webView2_4 = m_webView.try_query<ICoreWebView2_4>();
@@ -421,36 +434,53 @@ To add custom menu items to the default context menu, use the following API item
 
 ---
 
-<!-- ====================================================================== -->
-## Example: Adding custom menu items to a default context menu
 
-The following example adds a **Display Page Uri** command to the WebView2 context menu.
+<!-- ====================================================================== -->
+## ... Example: Adding custom menu items to a default context menu
+
+The following example adds a **Display Page Uri** command (a custom menu item) to the WebView2 context menu.
+The host app adds the custom menu item to the collection of context menu items for the default WebView2 context menu.
+<!-- The host app specifies Handled to be false.  (the spec says that, but that's not found in the "add item" or "remove item" code) -->
+
+<!-- spec listings 3 of 4 & 1 of 4 combines the "adding" code & the "removing" code.
+The code from the spec is here split into two distinct listings (the "adding" code is present section; the "removing" code is a below section) -->
+
 
 
 # [C#](#tab/csharp)
 
+<!-- the "adding" part of spec listing 3 of 4 -->
+
 ```csharp
+// when the context menu is requested, run the following code
 webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
                                     CoreWebView2ContextMenuRequestedEventArgs args)
 {
-    // add new item to end of collection
-    CoreWebView2ContextMenuItem newItem = 
-                        webView.CoreWebView2.Environment.CreateContextMenuItem(
-        "Display Page Uri", null, CoreWebView2ContextMenuItemKind.Command);
+    // create a new menu item
+    CoreWebView2ContextMenuItem newItem = webView.CoreWebView2.Environment.CreateContextMenuItem(
+                                             "Display Page Uri",                   // label
+                                             null,                                 // icon stream
+                                             CoreWebView2ContextMenuItemKind.Command); // kind
+        // code to run when menu item selected
         newItem.CustomItemSelected += delegate (object send, Object ex)
         {
+            // get the URI of the current page
             string pageUri = args.ContextMenuTarget.PageUri;
             System.Threading.SynchronizationContext.Current.Post((_) =>
             {
+                // show the URI in a message box
                 MessageBox.Show(pageUri, "Page Uri", MessageBoxButton.OK);
             }, null);
         }
+    // insert the new menu item at the end of the collection
     menuList.Insert(menuList.Count, newItem);
 };
 ``` 
 
 
 # [C++](#tab/cpp)
+
+<!-- the "adding" part of spec listing 1 of 4 -->
 
 ```cpp
 m_webView2_4 = m_webView.try_query<ICoreWebView2_4>();
@@ -549,13 +579,23 @@ You can remove default or custom menu items from the default context menu.
 
 ---
 
-<!-- ====================================================================== -->
-## Example: Removing menu items from a default context menu
 
-The following example removes the **Save image as** command from the WebView2 context menu.
+<!-- ====================================================================== -->
+## ... Example: Removing menu items from a default context menu
+
+The following example removes the **Save image as** command (a default menu item) from the WebView2 context menu.
+
+The host app removes the custom menu item from the collection of context menu items for the default WebView2 context menu.
+<!-- The host app specifies Handled to be false.  (the spec says that, but that's not found in the "add item" or "remove item" code) -->
+
+
+<!-- spec listings 3 of 4 & 1 of 4 combines the "adding" code & the "removing" code.
+The code from the spec is here split into two distinct listings (the "adding" code is an above section; the "removing" code is present section) -->
 
 
 # [C#](#tab/csharp)
+
+<!-- the "removing" part of spec listing 3 of 4 -->
 
 ```csharp
 webView.CoreWebView2.ContextMenuRequested += delegate (object sender, 
@@ -579,6 +619,8 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
 
 
 # [C++](#tab/cpp)
+
+<!-- the "removing" part of spec listing 1 of 4 -->
 
 ```cpp
 m_webView2_4 = m_webView.try_query<ICoreWebView2_4>();
@@ -678,6 +720,25 @@ When your host app indicates to WebView2 that a user selected a menu item on a c
 
 
 <!-- ====================================================================== -->
+## ... Example: Detecting when the user requests a context menu (TBD)
+
+
+# [C#](#tab/csharp)
+
+```csharp
+// TODO
+```
+
+# [C++](#tab/cpp)
+
+```cpp
+// TODO
+```
+
+---
+
+
+<!-- ====================================================================== -->
 ## Detecting when the user selects a custom menu item
 
 Your host app can handle the user-selected menu item, or your app can return the menu item to the WebView2 control to handle the user-selected menu item.
@@ -691,6 +752,26 @@ If the user selects a custom menu item, the `CustomMenuItemSelected` event is ra
 *  The app adds custom menu items, but defers the context menu UI to the WebView platform.
 
 *  The app adds custom menu items, shows custom UI, and sets the `SelectedCommandId` property to the ID of the custom menu item.
+
+
+<!-- ====================================================================== -->
+## ... Example: Detecting when the user selects a custom menu item (TBD)
+
+
+# [C#](#tab/csharp)
+
+```csharp
+// TODO
+```
+
+# [C++](#tab/cpp)
+
+```cpp
+// TODO
+```
+
+---
+
 
 
 <!-- ====================================================================== -->
@@ -724,6 +805,27 @@ When the user selects a WebView2 context menu command (a default menu item that'
 ### Custom menu items
 
 If your host app reports a custom menu item as the selected menu item, then the `CustomMenuItemSelected` event will be fired for the custom menu item.
+
+
+<!-- ====================================================================== -->
+## ... Example: Reporting a selected command menu item to WebView2 (TBD)
+
+
+# [C#](#tab/csharp)
+
+```csharp
+// TODO
+```
+
+# [C++](#tab/cpp)
+
+```cpp
+// TODO
+```
+
+---
+
+
 
 
 <!-- ====================================================================== -->
@@ -764,6 +866,24 @@ private async void webView_NavigationCompleted(object sender, CoreWebView2Naviga
 * **[ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)**
    * [get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
    * [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
+
+---
+
+
+<!-- ====================================================================== -->
+## ... Example: Disabling context menus (TBD)
+
+# [C#](#tab/csharp)
+
+```csharp
+// TODO
+```
+
+# [C++](#tab/cpp)
+
+```cpp
+// TODO
+```
 
 ---
 
