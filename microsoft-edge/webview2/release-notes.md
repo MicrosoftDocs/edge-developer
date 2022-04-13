@@ -84,7 +84,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Experimental Features
 
-* Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcertificate?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
+* Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental15?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
 * Added the [Favicon API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental12?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides a way to get the favicon when it changes or is set at a website.
 
@@ -104,15 +104,15 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 * Fixed an issue in which WebView2 content can become blurry when moving between monitors with different scaling.
 
-* Fixed a bug where `MouseEvent.movementX` and `MouseEvent.movementY` will always be **0** in visual hosting mode.
+* Fixed a bug where `MouseEvent.movementX` and `MouseEvent.movementY` will always be **0** in visual hosting mode. ([Issue #2220](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2220))
 
-* Fixed log in issue caused by a password regression in WebView2.
+* Fixed log in issue caused by a password regression in WebView2. ([Issue #2291](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2291))
 
 * Fixed a failure caused when a user opens a new app window and the web page does not have a navigation entry assigned.
 
 * Made a runtime change to fix a bug in WinUI 2 (UWP) in which owned windows were not showing up.
  
-* Fixed `ICoreWebView2Frame::PostWebMessage` functionality after source update.
+* Fixed `ICoreWebView2Frame::PostWebMessage` functionality after source update. ([Issue #2267](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2267))
 
 
 <!-- ====================================================================== -->
