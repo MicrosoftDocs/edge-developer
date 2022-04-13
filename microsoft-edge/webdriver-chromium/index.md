@@ -38,7 +38,7 @@ The functional relationship between these components is as follows:
 | Microsoft Edge WebDriver | Microsoft's implementation of the WebDriver protocol specifically for Microsoft Edge.  Test authors write tests that use WebDriver commands that Microsoft Edge WebDriver receives.  Edge WebDriver is then responsible for communicating that command to the browser. |
 | A WebDriver testing framework | Test authors use a testing framework to write end-to-end tests and automate browsers.  Provides a language-specific interface that translates your code into commands that are sent to Edge WebDriver.  WebDriver testing frameworks exist for all major platforms and languages.  One such framework is Selenium. |
 | Internet Explorer Driver | An open-source implementation of the WebDriver protocol specifically for Internet Explorer.  To run legacy end-to-end tests for Internet Explorer Mode, we recommend using Internet Explorer Driver. |
-| Microsoft WebDriver | The previous, browser-specific driver for Microsoft Edge (EdgeHTML), which is also known as Microsoft Edge Legacy.  See [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/). |
+| Microsoft WebDriver (legacy) | The previous, browser-specific driver for Microsoft Edge (EdgeHTML), which is also known as Microsoft Edge Legacy. |
 
 The following sections describe how to get started with WebDriver for Microsoft Edge.
 
@@ -397,6 +397,14 @@ For more information about Application Guard, see:
 ## Opt out of diagnostic data collection
 
 By default, Edge WebDriver sends diagnostic data such as the status of the [New Session WebDriver command](https://www.w3.org/TR/webdriver2/#new-session) to Microsoft.  To turn off diagnostic data collection for Edge WebDriver, set the `MSEDGEDRIVER_TELEMETRY_OPTOUT` environment variable to `1`.  For more information about the data that Edge WebDriver collects, see the [Microsoft Edge Privacy Whitepaper](/microsoft-edge/privacy-whitepaper#microsoft-edge-webdriver).
+
+
+<!-- ====================================================================== -->
+## Legacy Microsoft WebDriver for EdgeHTML
+
+Microsoft WebDriver is the legacy WebDriver implementation for EdgeHTML-based Microsoft Edge.  Microsoft WebDriver was distributed as an optional Windows component, because legacy Microsoft Edge (EdgeHTML) was updated with the OS.  Microsoft WebDriver isn't compatible with the latest, Chromium-based versions of Microsoft Edge.  Microsoft WebDriver is still made available for developers who have written WebDriver-based tests for UWP apps, because these rely on EdgeHTML, but Microsoft WebDriver is no longer recommended.
+
+See [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/).
 
 
 <!-- ====================================================================== -->
