@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/11/2022
+ms.date: 04/12/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -39,7 +39,7 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 ## 1.0.1185.39
   
-Release Date: April 11, 2022  
+Release Date: April 12, 2022  
   
 [NuGet package for WebView2 SDK 1.0.1185.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)  
   
@@ -74,7 +74,7 @@ The following items are now stable:
 
 ## 1.0.1222-prerelease
   
-Release Date: April 11, 2022  
+Release Date: April 12, 2022  
   
 [NuGet package for WebView2 SDK 1.0.1222-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)  
   
