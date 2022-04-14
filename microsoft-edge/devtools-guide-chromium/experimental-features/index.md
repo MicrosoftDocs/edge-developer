@@ -198,10 +198,9 @@ To monitor the messages sent and received by DevTools to debug the inspected pag
 <!-- ====================================================================== -->
 ## Show CSP Violations view
 
-Shows Content Security Policy (CSP) violations.
-<!-- needs content, 0 hits in fts in this repo - retry "csp" Find. -->
+Adds the **CSP Violations** tool, which displays any Content Security Policy (CSP) violations that are detected on the inspected webpage.
 
-See [Content Security Policy (CSP)](../../extensions-chromium/store-policies/csp.md).
+![The CSP Violations tool.](index-images/csp-violations-tool.png)
 
 *  This checkbox is present in Microsoft Edge Stable v100.
 *  This checkbox is present in Microsoft Edge Canary v102.
@@ -291,8 +290,7 @@ Enables the new Advanced Perceptual Contrast Algorithm (APCA), replacing previou
 <!-- ====================================================================== -->
 ## Enable full accessibility tree view in the Elements panel
 
-Enables the full accessibility tree view in the **Elements** tool.
-<!-- Needs content. -->
+Adds a button in the **Elements** tool which toggles between the DOM tree and the accessibility tree.
 
 *  This checkbox is present in Microsoft Edge Stable v100.
 *  This checkbox is present in Microsoft Edge Canary v102.

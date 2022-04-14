@@ -71,6 +71,11 @@ Microsoft Edge DevTools includes the following tools.
 | **WebAuthn** tool | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
 | **Welcome** tool | The **Welcome** tool opens when you first open DevTools.  It displays links to developer docs, latest features, Release Notes, and an option to contact the Microsoft Edge DevTools team. | [Welcome tool](welcome/welcome-tool.md) |
 
+<!-- when no longer experimental, move into table:
+| **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [CSP Violations tool](csp-violations/csp-violations-tool.md) |
+https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+-->
+
 
 <!-- ====================================================================== -->
 ## The More Tools menus
