@@ -156,11 +156,9 @@ For more information about using themes from Visual Studio Code in DevTools, see
 <!-- Title: Help icons for Experiments checkboxes -->
 <!-- Subtitle: In Settings > Experiments page, each experimental feature's checkbox has a Help (?) icon next to it for more information. -->
 
-In the **Settings** > **Experiments** page, checkboxes now have a **Help** (![Help icon for Settings > Experiments checkboxes.](devtools-101-images/settings-experiments-help-icon.png)) icon:
+In the **Settings** > **Experiments** page, checkboxes now have a **Help** (![Help icon for Settings > Experiments checkboxes.](devtools-101-images/settings-experiments-help-icon.png)) icon.  Click a **Help** icon to get more information about an experimental feature.  The **Help** icon opens the relevant section in [Experimental features](../../../experimental-features/index.md).
 
 ![Help icons for Settings > Experiments checkboxes.](devtools-101-images/settings-experiments-help-icons.png)
-
-Click a **Help** icon to get more information about an experimental feature.  The **Help** icon opens the relevant section in [Experimental features](../../../experimental-features/index.md).
 
 
 <!-- ====================================================================== -->
