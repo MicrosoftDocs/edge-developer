@@ -5,15 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ---
 # Simplify DevTools using Focus Mode
 
-Focus Mode is a new user interface for DevTools. It is designed to reduce the clutter and complexity of DevTools without compromising its feature set.
+Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
 
-Focus Mode replaces the main row of tabs with an **Activity Bar**, a compact toolbar with distinctive icons. The **Activity Bar** makes it possible to pin, rearrange, and open favorite tools for quick access. It also allows access to user settings, help, and other features.
+Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
 
-Focus Mode also provides a **Quick View** list to open a second tool alongside the tool already selected in the **Activity Bar**.
+Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
 
 ![Screenshot of DevTools, undocked in its own window, with the Focus Mode experiment](media/focus-mode.png)
 
