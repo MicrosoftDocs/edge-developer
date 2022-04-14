@@ -60,13 +60,19 @@ Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuf
 
 1. Refresh the webpage. It fails to display because the JavaScript stops processing at the breakpoint.
 
-1. In the right Debugger pane, click Scope.
+1. In the right Debugger pane under **Scope**, find the `buffer` line.
 
-1. Open Memory Inspector panel using one of the following methods:
+1. From the `buffer` line you can open Memory Inspector using one of the following methods:
 
-    * From the icon. Click on the icon next to the buffer property (IMG), or
-
+    * Click on the icon at the end of the `buffer` property line (![Open Memory Inspector from the buffer property line icon](../media/memory-inspector-open-from-buffer-icon.png)), or
+ 
     * From the context menu. Right click on the buffer property and select **Reveal in Memory Inspector panel**.
+
+    ![Open Memory Inspector from the buffer property line context menu](../media/memory-inspector-open-from-buffer.png)
+
+
+<!-- ====================================================================== -->
+## Open Memory Inspector
 
 
 <!-- 
