@@ -156,7 +156,7 @@ Use the following online deployment workflow or offline deployment workflow to e
 
 If you have an online-only deployment scenario where users are assumed to have internet access, use the following workflow.
 
-1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a suitable WebView2 Runtime is already installed](#detect-if-a-suitable-webview2-runtime-is-already-installed)
+1. During your app setup, run a test to make sure that the WebView2 Runtime is already installed. See [Detect if a suitable WebView2 Runtime is already installed](#detect-if-a-suitable-webview2-runtime-is-already-installed).
 
 1. If the Runtime isn't installed, in your app setup process, use the link (from the **Get the Link** button on the download page) to programmatically download the WebView2 Runtime Bootstrapper.
 
