@@ -126,6 +126,7 @@ module.exports = class PrepareSourceMapsForSymbolServerPlugin {
           sourceMapAsset,
         };
       });
+    });
   }
 };
 ```
