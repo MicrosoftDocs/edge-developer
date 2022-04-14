@@ -118,9 +118,9 @@ As another supported scenario, your host app can send some content as part of a 
 *  What's a "response", and when are they used?
 *  There are three main APIs involved
 *  Add
-   * [ICoreWebView2::add_WebResourceRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested) - Adds an event handler for the WebResourceRequested event.
+   * [ICoreWebView2::add_WebResourceRequested](microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested) - Adds an event handler for the WebResourceRequested event.
 *  Remove
-   * [ICoreWebView2::remove_WebResourceRequested](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested) - Removes an event handler.
+   * [ICoreWebView2::remove_WebResourceRequested](microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested) - Removes an event handler.
 *   Lets you customize network request handling of sending requests and responses.
 *  You can add/provide your own custom response.
 *  Navigate (Not a navigation event) `NavigateWithWebResourceRequest` is special cases advanced, beyond Basic Auth, to modify the headers to be able to better/custom interact with the network.
@@ -234,7 +234,7 @@ Instead of using WebResoruceRequested APIs, you can use these other approaches:
 * [Basic Authentication] - a few words for clarification here.
 -->
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
-* [General navigation](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/navigation-events)
+* [General navigation](/microsoft-edge/webview2/concepts/navigation-events)
 * [Cookies](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39) - Managing cookies in WebView2
 
 <!-- if a more heavyweight description sentence is needed, can use table instead of the above annotated list of links: -->
