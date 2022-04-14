@@ -204,7 +204,7 @@ If you have an offline deployment scenario, where app deployment has to work ent
 
 #### Detect if a suitable WebView2 Runtime is already installed
 
-To verify that a WebView2 Runtime is installed, use either of the following approaches:
+To verify that a WebView2 Runtime is installed, use one of the following approaches:
 
    *  Approach 1: Inspect the `pv (REG_SZ)` regkey for the WebView2 Runtime at both of the following registry locations.  The `HKEY_LOCAL_MACHINE` regkey is used for _per-machine_ install.  The `HKEY_CURRENT_USER` regkey is used for _per-user_ install.
 
