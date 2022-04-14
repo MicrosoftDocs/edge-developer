@@ -47,7 +47,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 ### General
 
-* Renamed `ICoreWebView2Certificate` to `ICoreWebview2ClientCertificate`.
+* Renamed `ICoreWebView2Certificate` to `ICoreWebView2ClientCertificate`.
 
 #### Promotions
 
