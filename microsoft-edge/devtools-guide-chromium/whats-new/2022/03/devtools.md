@@ -16,6 +16,7 @@ If you are on Windows, Linux, or macOS, consider using the Canary preview channe
 To report a problem with DevTools or ask for a new feature, file an issue at the new [Microsoft Edge DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools).
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Securely debug your production code with source maps from Azure Artifacts Symbol Server
 
@@ -37,7 +38,14 @@ See also:
 *  [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 *  [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools extension for Visual Studio
 
@@ -69,7 +77,14 @@ See also:
 * [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
 * [Edge DevTools extension for Visual Studio](../../../../visual-studio/index.md#edge-devtools-extension-for-visual-studio).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Layers in 3D View
 
@@ -83,7 +98,14 @@ Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in
 
 See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Use your source maps to display original function names in performance profiles
 
@@ -112,7 +134,14 @@ See also:
 * [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
 * [Display original function names in performance profiles](../../../evaluate-performance/unminify.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved accessibility for Network Console and 3D View
 
@@ -129,7 +158,14 @@ In previous versions of Microsoft Edge, assistive technology would only announce
 
 To learn more about how using assistive technology with DevTools, read [Navigate DevTools with assistive technology](../../../accessibility/navigation.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved source folder tree in the Sources panel
 
@@ -140,6 +176,12 @@ In the **Page** tab of the **Sources** tool, the tree of source folders is now i
 For the history of this feature in the Chromium open-source project, see Issue [1284737](https://crbug.com/1284737).
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-99/#source-tree -->
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

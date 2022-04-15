@@ -12,6 +12,7 @@ ms.date: 09/03/2021
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Search for Console errors on the web
 
@@ -22,9 +23,16 @@ Search the web for your **Console** errors, from within DevTools.  In the **Cons
 
 See [Look up error messages on the web from the Console](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console).
 
-:::image type="content" source="../../media/2021/09/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error in the **Console**" lightbox="../../media/2021/09/search-console-icon.msft.png":::
+![The 'Search for this message on the Web' button on an error in the Console.](../../media/2021/09/search-console-icon.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links
 
@@ -40,13 +48,20 @@ In the latest version of the Microsoft Edge DevTools extension for Visual Studio
 
 See [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
-:::image type="content" source="../../media/2021/09/devtools-extension-dark-theme.msft.png" alt-text="The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new Helpful Links sidebar" lightbox="../../media/2021/09/devtools-extension-dark-theme.msft.png":::
+![The extension running inside Visual Studio Code, matching the dark theme of Visual Studio Code, and a new Helpful Links sidebar.](../../media/2021/09/devtools-extension-dark-theme.msft.png)
 
 Light themes from Visual Studio Code are also supported.
 
-:::image type="content" source="../../media/2021/09/devtools-extension-light-theme.msft.png" alt-text="The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new Helpful Links sidebar" lightbox="../../media/2021/09/devtools-extension-light-theme.msft.png":::
+![The extension running inside Visual Studio Code, matching the light theme of Visual Studio Code, and a new Helpful Links sidebar.](../../media/2021/09/devtools-extension-light-theme.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Breakpoint icons are now displayed when using Visual Studio Code themes
 
@@ -59,9 +74,16 @@ Previously, when using a theme from Visual Studio Code in DevTools, breakpoint i
 
 To learn more about using breakpoints for debugging JavaScript code, see [Pause your code with breakpoints](../../../javascript/breakpoints.md).
 
-:::image type="content" source="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png" alt-text="Breakpoint icons are now displayed when using Visual Studio Code themes." lightbox="../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png":::
+![Breakpoint icons are now displayed when using Visual Studio Code themes.](../../media/2021/09/breakpoint-icons-displayed-in-vs-code-themes.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Navigate to the More Tools button with the keyboard
 
@@ -74,7 +96,13 @@ Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the
 
 To learn more about how to navigate DevTools with a keyboard, see [Keyboard shortcuts](../../../shortcuts/index.md).
 
-:::image type="content" source="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png" alt-text="Using the arrow keys to put focus on the **More tabs** or **More Tools** button" lightbox="../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png":::
+![Using the arrow keys to put focus on the More Tabs or More Tools button.](../../media/2021/09/nav-to-more-tools-button-with-keyboard.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

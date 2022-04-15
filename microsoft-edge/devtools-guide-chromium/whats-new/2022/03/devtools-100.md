@@ -16,6 +16,7 @@ If you're on Windows, Linux, or macOS, consider using the Canary preview channel
 To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Join the Microsoft Edge DevTools community at GitHub
 
@@ -28,7 +29,14 @@ We're excited to announce the new [MicrosoftEdge > DevTools](https://github.com/
 
 Head to our DevTools repo at GitHub to become a part of the Edge DevTools community.
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Filter heap snapshots summary by node type
 
@@ -41,7 +49,14 @@ When looking at all the objects in a heap snapshot in the **Memory** tool, it ca
 
 To learn more about taking a heap snapshot and analyzing the heap in DevTools, see [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Use DevTools in Czech and Vietnamese
 
@@ -54,7 +69,14 @@ Customizing and simplifying the developer experience includes making our tools a
 
 For more information, see [Change DevTools language settings](../../../customize/localization.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## The Network tool now displays how a request was fulfilled
 
@@ -72,14 +94,21 @@ To learn more about the request log in the Network tool, see [Filter requests by
 
 For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Filter messages in the Issues tool by severity and browser target
 
 <!-- Title: Filter issues in the Issues tool -->
 <!-- Subtitle: New controls in the Issues tool allow you to filter messages by severity and browser target to help you focus on the most relevant feedback. -->
 
-In the **Issues** tool, the new **Severity** and **Browser** drop-down lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.  You can select or clear the options in each drop-down list.
+In the **Issues** tool, the new **Severity** and **Browser** dropdown lists allow you to filter messages by severity and browser target, to help you focus on the most relevant feedback.  You can select or clear the options in each dropdown list.
 
 To see all relevant messages, you might need to refresh the page.  If prompted, in the **Issues** tool, click the **Regenerate issues** button.
 <!--
@@ -93,7 +122,7 @@ By default, the **Severity** filter is set to show only warnings and errors:
 
 The **Browser** filter only applies to browser compatibility feedback, which is shown in the **Compatibility** section of the **Issues** list.  By default, the **Browser** filter shows messages for the top browsers, as defined by [Browserslist](https://github.com/browserslist/browserslist#queries):
 
-![The Browsers drop-down list, with "Top browsers" selected.](devtools-100-images/browser-filters-not-filtered.png)
+![The Browsers dropdown list, with "Top browsers" selected.](devtools-100-images/browser-filters-not-filtered.png)
 
 In the following example, messages about Firefox and Firefox for Android are filtered out:
 
@@ -101,7 +130,14 @@ In the following example, messages about Firefox and Firefox for Android are fil
 
 For more information, see [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_.
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## When importing a performance profile, links now map to your original code
 
@@ -120,7 +156,14 @@ To get started with storing your source maps in Azure Artifacts symbol server an
 *  [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md).
 *  [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Fix: The Waterfall view in the Network tool now matches Visual Studio Code themes
 
@@ -138,6 +181,12 @@ Now in Microsoft Edge 100, the selected theme is applied to the Waterfall view o
 ![The selected theme is now applied to the Waterfall view of requests in the Network tool.](devtools-100-images/waterfall-view-requests-network.png)
 
 For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).  For more information about the Waterfall view for requests in the Network tool, see [Network features reference](../../../network/reference.md#display-the-timing-relationship-of-requests).
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

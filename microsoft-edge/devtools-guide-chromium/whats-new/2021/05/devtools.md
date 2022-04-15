@@ -17,6 +17,7 @@ ms.date: 06/02/2021
 > [Microsoft Edge | State of the Platform](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10 or later.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## The Close button is no longer hidden when DevTools is narrow
 
@@ -25,9 +26,16 @@ ms.date: 06/02/2021
 
 In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools isn't displayed when the DevTools viewport is narrow.  In Microsoft Edge version 92, the **Close** button in the DevTools is always present, regardless of the DevTools viewport width.
 
-:::image type="content" source="../../media/2021/05/close-devtools-button-always-displayed.msft.png" alt-text="The Close DevTools button is now present even when the viewport is narrow." lightbox="../../media/2021/05/close-devtools-button-always-displayed.msft.png":::
+![The 'Close DevTools' button is now present even when the viewport is narrow.](../../media/2021/05/close-devtools-button-always-displayed.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Add tools quickly with the new More Tools button
 
@@ -40,11 +48,18 @@ To reorder the tabs on either toolbar, select and drag the tabs.
 
 The **More Tools** menu was available as an experiment in Microsoft Edge version 89, and is now always present.
 
-:::image type="content" source="../../media/2021/05/more-tools-button.msft.png" alt-text="The More Tools button on the upper toolbar and drawer toolbar." lightbox="../../media/2021/05/more-tools-button.msft.png":::
+![The More Tools button on the upper toolbar and drawer toolbar.](../../media/2021/05/more-tools-button.msft.png)
 
-:::image type="content" source="../../media/2021/05/more-tools-menu.msft.png" alt-text="The More Tools menu." lightbox="../../media/2021/05/more-tools-menu.msft.png":::
+![The More Tools menu.](../../media/2021/05/more-tools-menu.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improvements for hovering, selecting, and closing tools
 
@@ -62,19 +77,26 @@ For example, when you are in the **Performance** tool and you hover over the **N
 
 Tabs before reformatting:
 
-:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-before.msft.png" alt-text="Tabs before reformatting." lightbox="../../media/2021/05/hovering-on-tool-tab-before.msft.png":::
+![Tabs before reformatting.](../../media/2021/05/hovering-on-tool-tab-before.msft.png)
 
 Tabs after reformatting:
 
-:::image type="content" source="../../media/2021/05/hovering-on-tool-tab-after.msft.png" alt-text="Tabs after reformatting." lightbox="../../media/2021/05/hovering-on-tool-tab-after.msft.png":::
+![Tabs after reformatting.](../../media/2021/05/hovering-on-tool-tab-after.msft.png)
 
 These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close.
 
-:::image type="content" source="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png" alt-text="Localized DevTools with narrow tabs." lightbox="../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png":::
+![Localized DevTools with narrow tabs.](../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png)
 
 We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Better support for screen readers in the Console
 
@@ -85,13 +107,20 @@ Prior to Microsoft Edge version 92, in the **Console**, assistive technologies s
 
 In the **Console**, screen readers now announce the currently selected autocomplete suggestion:
 
-:::image type="content" source="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png" alt-text="In the Console, screen readers now announce the currently selected autocomplete suggestion" lightbox="../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png":::
+![In the Console, screen readers now announce the currently selected autocomplete suggestion.](../../media/2021/05/screen-reader-support-in-console-autocomplete.msft.png)
 
 In the **Console**, screen readers now announce the result of an evaluated expression:
 
-:::image type="content" source="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png" alt-text="In the Console, screen readers now announce the result of an evaluated expression" lightbox="../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png":::
+![In the Console, screen readers now announce the result of an evaluated expression.](../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Source Order Viewer
 
@@ -102,13 +131,20 @@ You can now view the order of source elements overlaid on the rendered webpage, 
 
 The order of content in an HTML document is important for search engine optimization and accessibility.  CSS allows developers to create content that looks different in its on-screen order than the order in the HTML source document.  This is an accessibility problem, because screen-reader users could get a confusing experience.
 
-:::image type="content" source="../../media/2021/05/source-order-viewer.msft.png" alt-text="Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page." lightbox="../../media/2021/05/source-order-viewer.msft.png":::
+![Activating the Source Order Viewer shows the order of the elements in the source as overlays on the page.](../../media/2021/05/source-order-viewer.msft.png)
 
 See [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
 
 For the history of this feature in the Chromium open-source project, see Issue [1094406](https://crbug.com/1094406).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## User-Agent Client Hints for devices in the Network conditions tab
 
@@ -117,13 +153,20 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 User-Agent Client Hints are now applied for devices in the **User agent** field in the **Network conditions** tool.  User-Agent Client Hints are a new expansion to the Client Hints API that enables you to access information about a user's browser in an ergonomic way that preserves privacy.
 
-:::image type="content" source="../../media/2021/05/user-agent.msft.png" alt-text="User agent." lightbox="../../media/2021/05/user-agent.msft.png":::
+![User agent.](../../media/2021/05/user-agent.msft.png)
 
 See [User-Agent Client Hints](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
 For the history of this feature in the Chromium open-source project, see Issue [1174299](https://crbug.com/1174299).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
 
@@ -131,6 +174,15 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### In-context documentation and UI to make it easier to use the DevTools extension
 
 <!-- Title: In-context documentation and UI make it easier to get started using the Developer Tools extension -->
@@ -146,6 +198,12 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code](htt
 
 See [Using the tools](https://microsoft.github.io/vscode-edge-devtools/using.html).
 
+<!--
+See also:
+* []()
+* []()
+-->
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
@@ -153,19 +211,29 @@ See [Using the tools](https://microsoft.github.io/vscode-edge-devtools/using.htm
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### CSS Grid editor
 
 You can now preview and author CSS Grid layouts, using the new CSS Grid editor.
 
 When an HTML element on your page has `display: grid` or `display: inline-grid` applied to it, a grid icon is displayed next to it in the **Styles** tab. Click the grid icon to display or hide the CSS grid editor. In the CSS grid editor, select any of the icons (such as `justify-content: space-around`) to preview the layout in the rendered page.  Flex layout works similarly.
 
-:::image type="content" source="../../media/2021/05/css-grid-editor.msft.png" alt-text="CSS Grid editor." lightbox="../../media/2021/05/css-grid-editor.msft.png":::
+![CSS Grid editor.](../../media/2021/05/css-grid-editor.msft.png)
 
 <!-- screenshot uses https://jec.fyi -->
 
 For the history of this feature in the Chromium open-source project, see Issue [1203241](https://crbug.com/1203241).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Support for const redeclarations in the Console
 
 The Console now supports redeclaration of `const` variables across separate REPL scripts (such as when you run a statement in the Console), in addition to the existing `let` and `class` redeclarations.  This support allows you to experiment with different declarations for `const` variables without refreshing the page.  Previously, DevTools threw a syntax error if you redeclared a `const` binding.
@@ -175,44 +243,68 @@ Refer to the example below. `const` redeclaration is supported across separate R
 *  `const` redeclaration of page scripts isn't allowed in REPL scripts.
 *  `const` redeclaration within the same REPL script isn't allowed (refer to variable `b`).
 
-:::image type="content" source="../../media/2021/05/support-for-const-redeclaration.msft.png" alt-text="Redeclaring a const variable is allowed in the console." lightbox="../../media/2021/05/support-for-const-redeclaration.msft.png":::
+![Redeclaring a const variable is allowed in the console.](../../media/2021/05/support-for-const-redeclaration.msft.png)
 
 To learn how to run a single REPL script or a multi-line REPL script, see [Run JavaScript in the Console](../../../console/console-javascript.md).
 
 For the history of this feature in the Chromium open-source project, see Issue [1076427](https://crbug.com/1076427).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### New shortcut to view iframe details
 
 To quickly view `iframe` details, you can now right-click an `iframe` element in the **Elements** tool, and then select **Show iframe details**.
 
-:::image type="content" source="../../media/2021/05/show-iframe-details.msft.png" alt-text="iframe details view." lightbox="../../media/2021/05/show-iframe-details.msft.png":::
+![The iframe details view.](../../media/2021/05/show-iframe-details.msft.png)
 
 This displays the details about the `iframe` in the **Application** tool.  In the **Application** tool, you can examine document details, security and isolation status, permissions policy, and more, to debug potential issues.
 
-:::image type="content" source="../../media/2021/05/show-iframe-details-application-tool.msft.png" alt-text="Frame details in the Application tool." lightbox="../../media/2021/05/show-iframe-details-application-tool.msft.png":::
+![Frame details in the Application tool.](../../media/2021/05/show-iframe-details-application-tool.msft.png)
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
 For the history of this feature in the Chromium open-source project, see Issue [1192084](https://crbug.com/1192084).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Enhanced CORS debugging support
 
 Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tab.  There are various potential causes of CORS errors.  Click to expand each issue to understand the potential causes and solutions.
 
-:::image type="content" source="../../media/2021/05/cors-debugging-support.msft.png" alt-text="CORS issues in the Issues tab." lightbox="../../media/2021/05/cors-debugging-support.msft.png":::
+![CORS issues in the Issues tab.](../../media/2021/05/cors-debugging-support.msft.png)
 
 <!-- screenshot uses http://cors-errors.glitch.me -->
 
 For the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Renamed XHR filter to Fetch\/XHR
 
 In the **Network** tool, the **XHR** filter is now renamed to **Fetch/XHR**. This change makes it clearer that this filter includes both `XMLHttpRequest` and `Fetch` API network requests.
 
-:::image type="content" source="../../media/2021/05/fetch-xhr.msft.png" alt-text="The Network tool now shows Fetch/XHR instead of XHR." lightbox="../../media/2021/05/fetch-xhr.msft.png":::
+![The Network tool now shows Fetch/XHR instead of XHR.](../../media/2021/05/fetch-xhr.msft.png)
 
 See:
 *  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
@@ -220,27 +312,49 @@ See:
 
 For the history of this feature in the Chromium open-source project, see Issue [1201398](https://crbug.com/1201398).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Filter Wasm resource type in the Network tool
 
 In the **Network** tool, you can now select the new **Wasm** filter to filter the WebAssembly network requests.
 
-:::image type="content" source="../../media/2021/05/wasm-network-requests.msft.png" alt-text="Filter by Wasm." lightbox="../../media/2021/05/wasm-network-requests.msft.png":::
+![Filter by Wasm.](../../media/2021/05/wasm-network-requests.msft.png)
 
 <!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
 For the history of this feature in the Chromium open-source project, see Issue [1103638](https://crbug.com/1103638).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Compute Intersections are now included in the Performance tool
 
 In the **Performance** tool, DevTools now displays **Compute Intersections** in the flame chart. These changes help you identify intersection observers events and debug the potential performance overhead of intersection observers.
 
-:::image type="content" source="../../media/2021/05/compute-intersections-in-perf-tool.msft.png" alt-text="Compute Intersections in the Performance tool." lightbox="../../media/2021/05/compute-intersections-in-perf-tool.msft.png":::
+![Compute Intersections in the Performance tool.](../../media/2021/05/compute-intersections-in-perf-tool.msft.png)
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
 For more about intersection observers, see [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2).  For information about using the flame chart, see [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording).  For the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

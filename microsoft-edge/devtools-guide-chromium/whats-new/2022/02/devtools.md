@@ -14,10 +14,11 @@ The following sections list the announcements from the Microsoft Edge DevTools t
 If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Catch up on the latest and greatest features in Microsoft Edge
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Year-in-review: Microsoft Edge for developers -->
 <!-- Subtitle: Catch up on the latest in developer tooling from Microsoft Edge. -->
@@ -28,22 +29,36 @@ Catch up on all of this news and more in our year-in-review blog post, [Looking 
 
 [![Screenshot of the blog post: Looking back at Microsoft Edge for developers in 2021.](../../media/2022/02/blog-post-edge-devs-2021.png)](https://blogs.windows.com/msedgedev/2022/01/19/looking-back-at-microsoft-edge-for-developers-in-2021/)
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Automate IE mode with Internet Explorer Driver
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: New support for automating IE mode -->
 <!-- Subtitle: Test your legacy websites and apps by automating IE mode with Internet Explorer Driver. -->
 
 Starting June 15, 2022, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. IE mode is a feature of Microsoft Edge for organizations that still need Internet Explorer 11 for compatibility with legacy websites or apps. To support testing of those legacy websites and apps, you can now automate IE mode with Selenium 4 and Internet Explorer Driver. To get started, see [Use Internet Explorer Driver to automate IE mode in Microsoft Edge](../../../../webdriver-chromium/ie-mode.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Emulate forced-colors mode
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Emulation of forced colors in the Rendering tool -->
 <!-- Subtitle: You can now do a spot check of what your product will look like on a device running in forced-colors mode, without having to change your operating system settings. -->
@@ -60,11 +75,18 @@ With forced-colors emulation turned on in the **Rendering** tool, the webpage ch
 
 ![A webpage with forced-colors emulation turned on in the Rendering tool.  Text changed to black text on a white background.](../../media/2022/02/emulate-forced-colors-applied.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Activity icons in the Event Log of the Performance tool now have tooltips
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
 <!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
@@ -75,11 +97,18 @@ In previous versions of Microsoft Edge, the **Event Log** tab in the **Performan
 
 For more information on recording a performance profile, see [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Shallow sizes in the Memory tool are now represented as decimal values
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Better understand shallow sizes in the Memory tool -->
 <!-- Subtitle: The Memory tool has been updated to report shallow size in decimal values as a percentage of the heap. -->
@@ -90,11 +119,18 @@ In previous versions of Microsoft Edge, the shallow size in a heap snapshot in t
 
 To learn more about heap snapshots in the Memory tool, see [Record heap snapshots](../../../memory-problems/heap-snapshots.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Fix: The Search text box in the Network tool can now be resized
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Fix: Resize the Search text box in the Network tool -->
 <!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search text box, so that the Refresh and Clear buttons remain visible. -->
@@ -105,11 +141,18 @@ In previous versions of Microsoft Edge, in the **Network** tool, the **Search** 
 
 To learn about the **Search** pane in the **Network** tool, see [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Fix: Icons for service workers and script tags in the Elements tool are now aligned
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
@@ -123,6 +166,12 @@ Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../
 ![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned.](../../media/2022/02/elements-script-tag-expand-icons-aligned.png)
 
 To learn more about debugging service workers in DevTools, see [Service workers](../../../progressive-web-apps/index.md#service-workers).  To learn more about `<script>` tags in the **Elements** tool, see [Get started with HTML and the DOM](../../../beginners/html.md).
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

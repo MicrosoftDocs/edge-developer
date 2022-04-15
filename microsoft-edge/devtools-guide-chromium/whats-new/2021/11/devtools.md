@@ -14,6 +14,7 @@ The following sections list the announcements from the Microsoft Edge DevTools t
 If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## New DevTools UI available (in preview)
 
@@ -28,13 +29,20 @@ Starting with Microsoft Edge version 96, the experiment's checkbox is labeled **
 
 This UI is still in development and may change in future versions of Microsoft Edge.  We're eager to hear your feedback about this new DevTools UI.  Send us your feedback by tweeting [@EdgeDevTools](https://twitter.com/edgedevtools).  Or, with the **Focus Mode** experiment turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode.](../../../media/help-icon-of-focus-mode.png)) > **Feedback**, to show the **Send feedback** window.
 
-:::image type="content" source="../../media/2021/11/focus-mode.png" alt-text="Focus Mode, including the Activity Bar.":::
+![Focus Mode, including the Activity Bar.](../../media/2021/11/focus-mode.png)
 
 See also:
 *  [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
 *  [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md) in the `MSEdgeExplainers` repo.
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Console can once again appear in the top and bottom panels
 
@@ -45,15 +53,22 @@ Since [Microsoft Edge version 87](../../2020/10/devtools.md#move-tools-between-t
 
 The **Console** can be opened in the bottom panel (the **Drawer**) while another tool is open:
 
-:::image type="content" source="../../media/2021/11/console-displayed-when-elements-tab-selected.png" alt-text="When a tool other than the Console is selected in the main toolbar, the Drawer opens and shows the Console.":::
+![When a tool other than the Console is selected in the main toolbar, the Drawer opens and shows the Console.](../../media/2021/11/console-displayed-when-elements-tab-selected.png)
 
 When **Console** is selected in the top panel, the bottom panel is automatically minimized, if the bottom panel was displaying the **Console**:
 
-:::image type="content" source="../../media/2021/11/console-hidden-when-console-tab-selected.png" alt-text="When Console is selected in the main toolbar, the Drawer is automatically minimized, if the Drawer was displaying the Console.":::
+![When Console is selected in the main toolbar, the Drawer is automatically minimized, if the Drawer was displaying the Console.](../../media/2021/11/console-hidden-when-console-tab-selected.png)
 
 If you want to only allow the Console tool to open in a single place, you can configure the behavior of the Console.  In the main toolbar or the **Drawer** toolbar, right-click the **Console** tab, and then select **Configure console**.  The **Settings** > **Preferences** page is displayed.  In the **Console** section, clear the checkbox **Show Console tab in main panel and drawer**, then click **Close** (**x**).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools Visual Studio Code extension
 
@@ -66,11 +81,11 @@ For general information about this extension, see [Microsoft Edge DevTools exten
 
 The Microsoft Edge DevTools for Visual Studio Code extension now features a dockable screencast and device emulation:
 
-:::image type="content" source="../../media/2021/11/edge-devtools-for-vscode-toggle-screencast.png" alt-text="Click the screencast icon to view the browser inside of Visual Studio Code.":::
+![Click the screencast icon to view the browser inside of Visual Studio Code.](../../media/2021/11/edge-devtools-for-vscode-toggle-screencast.png)
 
 You can see your web project in a dedicated tab inside of Visual Studio Code, and also simulate various devices:
 
-:::image type="content" source="../../media/2021/11/edge-devtools-for-vscode-simulated-iphone-red-boxes.png" alt-text="The screencast showing the current document in an emulated iPhone 5 in the correct size and with an emulated touchscreen interface.":::
+![The screencast showing the current document in an emulated iPhone 5 in the correct size and with an emulated touchscreen interface.](../../media/2021/11/edge-devtools-for-vscode-simulated-iphone-red-boxes.png)
 
 For details about device emulation, see [Device emulation in the screencast](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-emulation-in-the-screencast).
 
@@ -78,11 +93,18 @@ For details about device emulation, see [Device emulation in the screencast](../
 
 The extension also now features live, inline issue reporting.  Instead of finding out about issues in a separate tool, Visual Studio Code highlights the issues in your source code and reports them live while you enter your code:
 
-:::image type="content" source="../../media/2021/11/edge-devtools-for-vscode-inline-issue-reporting-addl-red.png" alt-text="An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information.":::
+![An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information.](../../media/2021/11/edge-devtools-for-vscode-inline-issue-reporting-addl-red.png)
 
 For details, see [Inline and live issue analysis](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#inline-and-live-issue-analysis).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Sources tool now notifies you when sourcemaps can't be loaded
 
@@ -93,15 +115,22 @@ In Microsoft Edge version 96, the **Sources** tool now provides several indicati
 
 Selecting a file with the warning icon opens the file in the Sources tool with an infobar indicating that DevTools either couldn't fetch the sourcemap correctly from the server or couldn't parse the sourcemap correctly:
 
-:::image type="content" source="../../media/2021/11/source-map-not-found-buttons.png" alt-text="Screenshot of the Sources tool displaying an issue that reads 'DevTools failed to load source map'.":::
+![The Sources tool displaying an issue that reads 'DevTools failed to load source map'.](../../media/2021/11/source-map-not-found-buttons.png)
 
 From the infobar, you can learn more about the issue by selecting the **Open in Issues** button.  The **Issues** tool then opens in the **Drawer** and provides information about how to resolve the issue and get your sourcemap loaded correctly in DevTools:
 
-:::image type="content" source="../../media/2021/11/source-map-not-found.png" alt-text="Screenshot of the Issues tool in the Drawer, displaying the issue as 'Source map not found', along with information on how to resolve this issue.":::
+![The Issues tool in the Drawer, displaying the issue as 'Source map not found', along with information on how to resolve this issue.](../../media/2021/11/source-map-not-found.png)
 
 To prevent the infobar about sourcemaps from cluttering the **Sources** tool, select the **Don't show again** button.  To prevent issues related to sourcemaps from cluttering the **Issues** tool, clear the **Include third-party issues** checkbox in the **Issues** tool.  To learn more about how DevTools fetches and parses sourcemaps, see [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Opening source files in Visual Studio Code now integrates better with the Sources tool
 
@@ -114,13 +143,20 @@ In Microsoft Edge version 96, the **Open source files in Visual Studio Code** ex
 
 *  If the **Sources** tool is open and you then turn on the **Open source files in Visual Studio Code** experiment, setting breakpoints or opening files now opens the **Sources** tool, rather than directing you to Visual Studio Code or to documentation to configure the experiment correctly.
 
-   :::image type="content" source="../../media/2021/11/sources-tool-versus-open-in-vs-code.png" alt-text="If the Sources tool is open, setting breakpoints or opening files opens the Sources tool, even if you then turn on the 'Open source files in Visual Studio Code' experiment.":::
+   ![If the Sources tool is open, setting breakpoints or opening files opens the Sources tool, even if you then turn on the 'Open source files in Visual Studio Code' experiment.](../../media/2021/11/sources-tool-versus-open-in-vs-code.png)
 
 *  As with earlier versions of Microsoft Edge, if the **Sources** tool isn't open in DevTools and you then turn on the **Open source files in Visual Studio Code** experiment, setting breakpoints or opening files from tools other than the **Sources** tool opens the file in Visual Studio Code.
 
 To learn more about how DevTools integrates with Visual Studio Code, see [Opening source files in Visual Studio Code](../../../sources/opening-sources-in-vscode.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Selecting the dropdown triangle icon in the DevTools UI now opens the menu
 
@@ -129,11 +165,11 @@ To learn more about how DevTools integrates with Visual Studio Code, see [Openin
 
 In earlier versions of Microsoft Edge DevTools, selecting the triangle icon next to a dropdown menu didn't display the dropdown menu.  To open the dropdown menu, you had to click the currently selected menu item to the left of the triangle icon, such as **No throttling**:
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-didnt-open-dropdown.png" alt-text="Clicking a dropdown menu's triangle icon didn't open the dropdown menu.":::
+![Clicking a dropdown menu's triangle icon didn't open the dropdown menu.](../../media/2021/11/clicking-triangle-didnt-open-dropdown.png)
 
 In Microsoft Edge version 96, this issue has been fixed.  Selecting the triangle icon for any dropdown menu in DevTools now opens the dropdown menu:
 
-:::image type="content" source="../../media/2021/11/clicking-triangle-opens-dropdown.png" alt-text="Clicking the triangle icon now opens the dropdown menu.":::
+![Clicking the triangle icon now opens the dropdown menu.](../../media/2021/11/clicking-triangle-opens-dropdown.png)
 
 <!-- This fix applies to various tools, including:
 * Performance
@@ -141,6 +177,12 @@ In Microsoft Edge version 96, this issue has been fixed.  Selecting the triangle
 * Network
 * Console
 * Device Emulation. -->
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

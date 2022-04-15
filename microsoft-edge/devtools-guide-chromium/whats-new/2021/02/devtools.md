@@ -26,6 +26,7 @@ ms.date: 05/04/2021
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Group tools together in Focus Mode
 
@@ -36,11 +37,18 @@ Focus Mode is an experimental interface that allows you to group different tools
 
 To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.  For more information about this feature or to comment with questions and ideas, see [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md).
 
-:::image type="content" source="../../media/2021/02/focus-mode.msft.png" alt-text="Display the Activity Bar." lightbox="../../media/2021/02/focus-mode.msft.png":::
+![Display the Activity Bar..](../../media/2021/02/focus-mode.msft.png)
 
 See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
 
@@ -51,9 +59,16 @@ The DevTools Tooltips feature helps you learn about all the different tools and 
 
 For more information about this feature, or to comment with questions and ideas, see [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md).
 
-:::image type="content" source="../../media/2021/02/focus-mode-and-tooltips-help.msft.png" alt-text="Click the Help (?) icon in the Activity Bar to display tooltips" lightbox="../../media/2021/02/focus-mode-and-tooltips-help.msft.png":::
+![Click the Help (?) icon in the Activity Bar to display tooltips.](../../media/2021/02/focus-mode-and-tooltips-help.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Customize keyboard shortcuts in Settings
 
@@ -77,9 +92,16 @@ To edit a keyboard shortcut:
 
 For more information about customizing and editing shortcuts, see [Customize keyboard shortcuts in DevTools](../../../customize/shortcuts.md).  For real-time updates on this feature in the Chromium open-source project, see Issue [174309](https://crbug.com/174309).
 
-:::image type="content" source="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png" alt-text="Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode." lightbox="../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png":::
+![Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode.](../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools for Visual Studio Code extension update 1.1.4
 
@@ -90,13 +112,20 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 
 The following figure displays messages from an example webpage logged in the **Console** tool in Microsoft Edge:
 
-:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png" alt-text="Displaying a message in Console in Microsoft Edge DevTools." lightbox="../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png":::
+![Displaying a message in Console in Microsoft Edge DevTools.](../../media/2021/02/visual-studio-code-extension-log-microsoft-edge.msft.png)
 
 The following figure displays the same messages from the example webpage logged in the **DevTools Console** under **Output** of Microsoft Visual Studio Code:
 
-:::image type="content" source="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png" alt-text="Displaying the same message in the DevTools Console under Output of Microsoft Visual Studio Code." lightbox="../../media/2021/02/visual-studio-code-extension-log-editor.msft.png":::
+![Displaying the same message in the DevTools Console under Output of Microsoft Visual Studio Code.](../../media/2021/02/visual-studio-code-extension-log-editor.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved CSS flexbox editing with visual flexbox editor and multiple overlays
 
@@ -107,13 +136,20 @@ DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` 
 
 To open the **Flexbox** editor, go to the **Styles** pane and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.
 
-:::image type="content" source="../../media/2021/02/elements-styles-display-flex-window.msft.png" alt-text="CSS flexbox debugging tools." lightbox="../../media/2021/02/elements-styles-display-flex-window.msft.png":::
+![CSS flexbox debugging tools.](../../media/2021/02/elements-styles-display-flex-window.msft.png)
 
 In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You can toggle the overlay of each element.
 
-:::image type="content" source="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png" alt-text="Flexbox section in the Layout pane." lightbox="../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png":::
+![Flexbox section in the Layout pane.](../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Keyboard navigation improvements for network requests
 
@@ -126,13 +162,20 @@ In Microsoft Edge version 90, you can expand or collapse the chain of requests u
 
 Click a Network request and then click the **Initiator** pane:
 
-:::image type="content" source="../../media/2021/02/network-request-initiator-chain.msft.png" alt-text="Click a Network request and then click the Initiator pane." lightbox="../../media/2021/02/network-request-initiator-chain.msft.png":::
+![Click a Network request and then click the Initiator pane.](../../media/2021/02/network-request-initiator-chain.msft.png)
 
 Expand or collapse the request initiator chain and follow the highlighted row:
 
-:::image type="content" source="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png" alt-text="Expand or collapse the request initiator chain and follow the highlighted row." lightbox="../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png":::
+![Expand or collapse the request initiator chain and follow the highlighted row.](../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Filtering in the Console is more consistent
 
@@ -143,11 +186,17 @@ While you filter with the [Console Sidebar](../../../console/reference.md#open-t
 
 Previously, if you open the **Console sidebar** and hover on **Default levels**, it was highlighted:
 
-:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-old.msft.png" alt-text="Previously, if you open the Console sidebar and hover on Default levels it was highlighted." lightbox="../../media/2021/02/console-sidebar-default-levels-old.msft.png":::
+![Previously, if you open the Console sidebar and hover on Default levels, it was highlighted.](../../media/2021/02/console-sidebar-default-levels-old.msft.png)
 
 Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on **Default levels**, it doesn't highlight:
 
-:::image type="content" source="../../media/2021/02/console-sidebar-default-levels-new.msft.png" alt-text="Starting in Microsoft Edge 90, if you click the Console sidebar and hover on Default levels, it doesn't highlight." lightbox="../../media/2021/02/console-sidebar-default-levels-new.msft.png":::
+![Starting in Microsoft Edge 90, if you click the Console sidebar and hover on Default levels, it doesn't highlight.](../../media/2021/02/console-sidebar-default-levels-new.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -155,12 +204,24 @@ Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### The Console now escapes double quote characters
 
 Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote (`"`) characters.  For the history of this feature in the Chromium open-source project, see Issue [1178530](https://crbug.com/1178530).
 
-:::image type="content" source="../../media/2021/02/console-string-formatted-double-quotes.msft.png" alt-text="The Console outputs JavaScript strings using escaped double quote (&#0022;) characters." lightbox="../../media/2021/02/console-string-formatted-double-quotes.msft.png":::
+![The Console outputs JavaScript strings using escaped double quote (&#0022;) characters.](../../media/2021/02/console-string-formatted-double-quotes.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Emulate the CSS color-gamut media feature
 
 The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media query emulates the approximate range of colors that are supported by the browser and device that you're testing.  The dropdown list under **Emulate CSS media feature color-gamut** contains color spaces that DevTools can emulate.  For example, to trigger a `color-gamut: p3` media query, select **color-gamut: p3** from the dropdown list.
@@ -174,24 +235,60 @@ To emulate the CSS color-gamut media feature:
 
 To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).  For the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
 
-:::image type="content" source="../../media/2021/02/rendering-css-color-gamut.msft.png" alt-text="Emulate the CSS color-gamut media feature." lightbox="../../media/2021/02/rendering-css-color-gamut.msft.png":::
+![Emulate the CSS color-gamut media feature.](../../media/2021/02/rendering-css-color-gamut.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Improved Progressive Web Apps tooling
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### PWA installability warning in the Console
 
 The **Console** now displays a more detailed [Progressive Web Apps (PWA)](../../../../progressive-web-apps-chromium/index.md) installability warning message with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).
 
-:::image type="content" source="../../media/2021/02/console-pwa-installability.msft.png" alt-text="PWA installability warning in Console tool." lightbox="../../media/2021/02/console-pwa-installability.msft.png":::
+![PWA installability warning in Console tool.](../../media/2021/02/console-pwa-installability.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### PWA description length warning in the Manifest pane
 
 The **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters.
 
-:::image type="content" source="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png" alt-text="PWA description truncate warning." lightbox="../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png":::
+![PWA description truncate warning.](../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issues [965802](https://crbug.com/965802), [1146450](https://crbug.com/1146450), and [1169689](https://crbug.com/1169689).
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### New Remote Address Space column in the Network tool
 
 <!-- doesn't work in canary 90.0.813.0 -->
@@ -207,33 +304,69 @@ The Requests table now displays a new column with the header named **Remote Addr
 
 Right-click and then select **Remote Address Space**:
 
-:::image type="content" source="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png" alt-text="In the right-click menu, select Remote Address Space" lightbox="../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png":::
+![In the right-click menu, select Remote Address Space.](../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png)
 
 The Requests table now displays the **Remote Address Space** column:
 
-:::image type="content" source="../../media/2021/02/network-requests-remote-address-space.msft.png" alt-text="The Requests table now displays the Remote Address Space column." lightbox="../../media/2021/02/network-requests-remote-address-space.msft.png":::
+![The Requests table now displays the Remote Address Space column.](../../media/2021/02/network-requests-remote-address-space.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Display allowed and disallowed features in the Frame details view
 
 The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md).  Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.  For the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
 
-:::image type="content" source="../../media/2021/02/application-frames-permissions-policy.msft.png" alt-text="Allowed and disallowed features based on the Permission Policy." lightbox="../../media/2021/02/application-frames-permissions-policy.msft.png":::
+![Allowed and disallowed features based on the Permission Policy.](../../media/2021/02/application-frames-permissions-policy.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### New SameParty column in the Cookies pane
 
 The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie.  The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets).  For the history of this feature in the Chromium open-source project, see Issue [1161427](https://crbug.com/1161427).
 
-:::image type="content" source="../../media/2021/02/application-storage-cookies-sameparty.msft.png" alt-text="SameParty column in the Cookies pane." lightbox="../../media/2021/02/application-storage-cookies-sameparty.msft.png":::
+![SameParty column in the Cookies pane.](../../media/2021/02/application-storage-cookies-sameparty.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### fn.displayName property in the Console tool is now deprecated
 
 Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  Use the standard `Object.defineProperty` method to define the `fn.name` property.  To learn more about `fn.name`, see [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name).  For the history of this feature in the Chromium open-source project, see Issue [1177685](https://crbug.com/1177685).
 
-:::image type="content" source="../../media/2021/02/console-display-name-name.msft.png" alt-text="An example of the fn.name property to control debug names for functions." lightbox="../../media/2021/02/console-display-name-name.msft.png":::
+![An example of the fn.name property to control debug names for functions.](../../media/2021/02/console-display-name-name.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Full accessibility tree view in the Elements tool
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility](../../../accessibility/accessibility-tab.md) pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.
 After you turn on this experiment and reload the DevTools, click one of the following buttons to switch the display in the Elements tool for all elements on the webpage.
@@ -245,11 +378,17 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 
 Displaying the **DOM Tree view**:
 
-:::image type="content" source="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png" alt-text="Displaying the DOM Tree view." lightbox="../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png":::
+![Displaying the DOM Tree view.](../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png)
 
 Displaying the **Full Accessibility Tree view**:
 
-:::image type="content" source="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png" alt-text="Displaying the full accessibility tree view." lightbox="../../media/2021/02/elements-switch-to-dom-tree-view.msft.png":::
+![Displaying the full accessibility tree view.](../../media/2021/02/elements-switch-to-dom-tree-view.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

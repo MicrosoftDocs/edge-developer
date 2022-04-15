@@ -14,6 +14,7 @@ The top of this page lists announcements from the Microsoft Edge DevTools team, 
 To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  Whether you are on Windows, Linux, or macOS, consider using one of the preview channels of Microsoft Edge as your default development browser.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Sync live changes from the Styles tool in the Visual Studio Code extension
 
@@ -26,9 +27,16 @@ For more information, see [Syncing live changes from the Styles tool by using CS
 
 To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Microsoft Edge Tools**, and then in the **CSS Mirror Editing** section, click the **leaving feedback here** link.
 
-:::image type="content" source="../../media/2021/10/css-mirror-editing-button.msft.png" alt-text="Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code." lightbox="../../media/2021/10/css-mirror-editing-button.msft.png":::
+![Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.](../../media/2021/10/css-mirror-editing-button.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## All error and warning messages in the Console now have a Search Web icon
 
@@ -39,9 +47,16 @@ The **Search for this message on the Web** icon is now available for all errors 
 
 For more information, see [Search for Console errors on the web](../09/devtools.md#search-for-console-errors-on-the-web).
 
-:::image type="content" source="../../media/2021/10/console-message-search-web-button.png" alt-text="All error and warning messages in the Console now have a Search Web icon." lightbox="../../media/2021/10/console-message-search-web-button.png":::
+![All error and warning messages in the Console now have a Search Web icon.](../../media/2021/10/console-message-search-web-button.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved keyboard access for defining User-Agent Client Hints
 
@@ -59,11 +74,18 @@ In Microsoft Edge version 95, this issue has been fixed.  Selecting the **User a
 
 To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from your website](../../../../web-platform/user-agent-guidance.md#user-agent-client-hints).
 
-:::image type="content" source="../../media/2021/10/keyboard-define-ua-client-hints.png" alt-text="Description." lightbox="../../media/2021/10/keyboard-define-ua-client-hints.png":::
+![Settings > Devices > Setting User-Agent Client Hints.](../../media/2021/10/keyboard-define-ua-client-hints.png)
 
 To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Console filters now display grouped messages if the filter matches the group title
 
@@ -78,13 +100,19 @@ To learn more about the `group()` API for the Console in DevTools, see [group](.
 
 When the filter string matches a group label, the group and its members are displayed:
 
-:::image type="content" source="../../media/2021/10/filter-matches-group-label.png" alt-text="When the filter string matches a group label, the group and its members are displayed." lightbox="../../media/2021/10/filter-matches-group-label.png":::
+![When the filter string matches a group label, the group and its members are displayed.](../../media/2021/10/filter-matches-group-label.png)
 
 When the filter string doesn't match a group label, neither the group nor its members are displayed:
 
-:::image type="content" source="../../media/2021/10/filter-matches-group-label-asdf.png" alt-text="When the filter string doesn't match a group label, neither the group nor its members are displayed." lightbox="../../media/2021/10/filter-matches-group-label-asdf.png":::
+![When the filter string doesn't match a group label, neither the group nor its members are displayed.](../../media/2021/10/filter-matches-group-label-asdf.png)
 
 To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -93,6 +121,7 @@ To view the history of this feature in the Chromium open-source project, see [Is
 The following are some of the additional features that are available in Microsoft Edge version 95 that were contributed to the open-source Chromium project.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved the display of properties
 
@@ -113,15 +142,22 @@ link.search = `?access=${link.access}`;
 
 After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (such as `URL`) that have many inherited properties.
 
-:::image type="content" source="../../media/2021/10/improved-display-properties.png" alt-text="Own properties are bold and sorted first.":::
+![Own properties are bold and sorted first.](../../media/2021/10/improved-display-properties.png)
 
 In the **Properties** pane, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction).
 
-:::image type="content" source="../../media/2021/10/flattened-list-of-properties.png" alt-text="Flattened list of properties.":::
+![Flattened list of properties.](../../media/2021/10/flattened-list-of-properties.png)
 
 For the history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Snippets are now sorted in the Sources panel
 
@@ -129,11 +165,18 @@ For the history of this feature, see Chromium issues [1076820](https://crbug.com
 
 Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphabetically.  Previously, the snippets weren't sorted.
 
-:::image type="content" source="../../media/2021/10/snippets-sorted-alphbetically.png" alt-text="Sorted snippets in the Sources panel.":::
+![Sorted snippets in the Sources panel.](../../media/2021/10/snippets-sorted-alphbetically.png)
 
 For more information about snippets, see [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved UI for DevTools command menu
 
@@ -141,9 +184,15 @@ For more information about snippets, see [Run snippets of JavaScript on any webp
 
 The [Command Menu](../../../command-menu/index.md) has been enhanced to make it easier to search for a file.  When you press `Ctrl`+`P` in Windows and Linux or `Command+P` in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type.
 
-:::image type="content" source="../../media/2021/10/command-menu-filenames-bold-icons.png" alt-text="Command Menu showing filenames in bold with an icon indicating the file type.":::
+![Command Menu showing filenames in bold with an icon indicating the file type.](../../media/2021/10/command-menu-filenames-bold-icons.png)
 
 For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

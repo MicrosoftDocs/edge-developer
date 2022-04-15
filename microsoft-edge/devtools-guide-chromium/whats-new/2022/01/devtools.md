@@ -14,6 +14,7 @@ The following sections list the announcements from the Microsoft Edge DevTools t
 If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Introducing the Detached Elements tool
 
@@ -29,18 +30,34 @@ The **Detached Elements** tool was initially available as an experiment in [Micr
 <!-- ![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png) -->
 <!-- image too wide to be crisp inline; solution would be undock devtools then 1 or 2 images in series (DevTools then browser).  right-click works, but reverting to lightbox for now -->
 
-:::image type="content" source="../../media/2022/01/detached-elements-tool.png" alt-text="The Detached Elements tool." lightbox="../../media/2022/01/detached-elements-tool.png":::
+![The Detached Elements tool.](../../media/2022/01/detached-elements-tool.png)
 
 See also:
 * [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool - YouTube](https://www.youtube.com/watch?v=v2iy17ptmBk&ab_channel=MicrosoftEdge)
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools extension for Visual Studio Code
 
 For general information about this extension, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Screencast enhancements, deprecation warnings, and new launch options for Microsoft Edge
 
 <!-- Title: Screeencast improvements and launch options for Microsoft Edge in the Visual Studio Code extension -->
@@ -58,7 +75,14 @@ The current version of the Microsoft Edge DevTools extension for Visual Studio C
 
 ![Extension settings to specify launch arguments for Microsoft Edge.](../../media/2022/01/extension-settings-launch-arguments.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improvements and bug fixes for Focus Mode
 
@@ -73,7 +97,14 @@ When using Focus Mode, all the same tools and [custom themes](../../../customize
 
 See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## 3D View tool supports changing color themes in DevTools
 
@@ -84,7 +115,14 @@ In previous versions of Microsoft Edge, changing the theme in DevTools and then 
 
 ![The 3D View tool now supports changing color themes.](../../media/2022/01/3d-view-with-color-theme.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 

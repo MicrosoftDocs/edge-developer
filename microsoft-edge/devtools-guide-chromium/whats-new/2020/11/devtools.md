@@ -36,9 +36,16 @@ Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE dist
 
 If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge with Microsoft Edge WebDriver, see [Microsoft Edge WebDriver Downloads page](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads).  For help with automating Microsoft Edge with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
 
-:::image type="content" source="../../media/2020/11/edge-on-linux.msft.png" alt-text="DevTools in Microsoft Edge on Linux." lightbox="../../media/2020/11/edge-on-linux.msft.png":::
+![DevTools in Microsoft Edge on Linux.](../../media/2020/11/edge-on-linux.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved webhint and platform tips in the Issues tool
 
@@ -62,22 +69,36 @@ To help you review issues revealed by [webhint](https://webhint.io), the **Issue
 *  Links to other relevant panels.
 *  Links to documentation to help you fix problems in your website.
 
-:::image type="content" source="../../media/2020/11/issues-webhints.msft.png" alt-text="Issues tool." lightbox="../../media/2020/11/issues-webhints.msft.png":::
+![Issues tool.](../../media/2020/11/issues-webhints.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Composited Layers are now in 3D View
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->
 <!-- Subtitle: Composited Layers are now in 3D View.  -->
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature](../../media/2020/06/experimental-tag-14px.msft.png)
 
 You can now visualize **Layers** content alongside z-index values and the Document Object Model (DOM).  This feature helps you debug without switching between the [3D view](../../../3d-view/index.md) and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined](../../../3d-view/index.md).
 
-:::image type="content" source="../../media/2020/11/experiments-layers.msft.png" alt-text="Composited Layers pane." lightbox="../../media/2020/11/experiments-layers.msft.png":::
+![Composited Layers pane.](../../media/2020/11/experiments-layers.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## CSS variable definitions in Styles pane
 
@@ -91,13 +112,20 @@ In the **Styles** pane, [CSS variables](https://developer.mozilla.org/docs/Web/C
 
 A CSS variable linked to the style:
 
-:::image type="content" source="../../media/2020/11/css-variable-support.msft.png" alt-text="A CSS variable linked to the style." lightbox="../../media/2020/11/css-variable-support.msft.png":::
+![A CSS variable linked to the style.](../../media/2020/11/css-variable-support.msft.png)
 
 A CSS variable linked to a style target:
 
-:::image type="content" source="../../media/2020/11/css-variable-support-target.msft.png" alt-text="A CSS variable linked to a style target." lightbox="../../media/2020/11/css-variable-support-target.msft.png":::
+![A CSS variable linked to a style target.](../../media/2020/11/css-variable-support-target.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Service worker debugging improvements
 
@@ -108,6 +136,15 @@ The following new features in the [Network](#network-tool), [Application](#appli
 
 Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to display if something is wrong with the `startup` or `fetch` event.
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Application tool
 
 <!-- Title: Open Network tool from the Service Workers pane  -->
@@ -119,16 +156,25 @@ View all service worker request routing information with the new **Network reque
 
 1. Select **Network requests**.
 
-   :::image type="content" source="../../media/2020/11/service-worker-application-network-requests.msft.png" alt-text="Opening the Network tool from the Service Workers pane." lightbox="../../media/2020/11/service-worker-application-network-requests.msft.png":::
+   ![Opening the Network tool from the Service Workers pane.](../../media/2020/11/service-worker-application-network-requests.msft.png)
 
 1. The **Network** tool opens in the **drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`.
 
-   :::image type="content" source="../../media/2020/11/service-worker-application-network-drawer.msft.png" alt-text="The Network tool in the Drawer." lightbox="../../media/2020/11/service-worker-application-network-drawer.msft.png":::
+   ![The Network tool in the Drawer.](../../media/2020/11/service-worker-application-network-drawer.msft.png)
 
 1. To return the **Network** tool to the top panel, close the **Drawer**.
 
-   :::image type="content" source="../../media/2020/11/service-worker-application-network-return.msft.png" alt-text="Close the Drawer to return the Network tool to the main toolbar." lightbox="../../media/2020/11/service-worker-application-network-return.msft.png":::
+   ![Close the Drawer to return the Network tool to the main toolbar.](../../media/2020/11/service-worker-application-network-return.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Network tool
 
 Debug network requests that run through service workers.  You can also open network requests from the **Application** tool.  For each request, DevTools display the following information in the [Timing](../../../network/reference.md#display-the-timing-breakdown-of-a-request) pane.
@@ -138,8 +184,17 @@ Debug network requests that run through service workers.  You can also open netw
 *  The runtime of a `fetch` event handler.
 *  The runtime of all `fetch` events for loading a client.
 
-:::image type="content" source="../../media/2020/11/network-timing-service-worker.msft.png" alt-text="Timing pane." lightbox="../../media/2020/11/network-timing-service-worker.msft.png":::
+![Timing pane.](../../media/2020/11/network-timing-service-worker.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Sources tool
 
 In previous versions of Microsoft Edge, the level of depth in the call stack was limited to the JavaScript code in your service worker.  In Microsoft Edge 88, the call stack now displays the initiator of requests that run through your service worker.
@@ -148,13 +203,20 @@ To locate the initiator of the request, use the call stack of your JavaScript co
 
 The `service-worker.js` file and call stack highlighting the request originator:
 
-:::image type="content" source="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png" alt-text="The service-worker.js file and call stack highlighting the request originator." lightbox="../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png":::
+![The service-worker.js file and call stack highlighting the request originator.](../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png)
 
 The `(index)` webpage is the request initiator:
 
-:::image type="content" source="../../media/2020/11/service-worker-sources-call-stack-target.msft.png" alt-text="The (index) webpage is the request initiator" lightbox="../../media/2020/11/service-worker-sources-call-stack-target.msft.png":::
+![The (index) webpage is the request initiator.](../../media/2020/11/service-worker-sources-call-stack-target.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Copy property value of a network request
 
@@ -170,34 +232,54 @@ To copy the property value to your clipboard, see [Copy formatted response JSON 
 
 Copying a property value in DevTools:
 
-:::image type="content" source="../../media/2020/11/copy-property-value.msft.png" alt-text="Copying a property value in DevTools." lightbox="../../media/2020/11/copy-property-value.msft.png":::
+![Copying a property value in DevTools.](../../media/2020/11/copy-property-value.msft.png)
 
 Pasting a property value in Microsoft Visual Studio Code:
 
-:::image type="content" source="../../media/2020/11/paste-property-value.msft.png" alt-text="Pasting a property value in Microsoft Visual Studio Code." lightbox="../../media/2020/11/paste-property-value.msft.png":::
+![Pasting a property value in Microsoft Visual Studio Code.](../../media/2020/11/paste-property-value.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Customize multi-press keyboard shortcuts
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature](../../media/2020/06/experimental-tag-14px.msft.png)
 
 [Since Microsoft Edge version 87](../10/devtools.md#customize-keyboard-shortcuts-in-settings), you can customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you can now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, see [Settings](../../../customize/index.md#settings) > **Experiments**  and select the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, see [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
 
 For example, the red highlight displays a multi-press keyboard shortcut customized for the **Start recording events** action.  For real-time updates on this feature in the Chromium open-source project, see [Issue #174309](https://crbug.com/174309).
 
-:::image type="content" source="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png" alt-text="Chords keyboard shortcuts." lightbox="../../media/2020/11/multi-press-keyboard-shortcuts.msft.png":::
+![Chords keyboard shortcuts.](../../media/2020/11/multi-press-keyboard-shortcuts.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## DevTools now match browser language
 
 In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings](../../../customize/index.md#settings), DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  For more information about the **Match browser language** DevTools Setting, see [Change DevTools language settings](../../../customize/localization.md).
 
-:::image type="content" source="../../media/2020/11/startpage-devtools-settings-japanese.msft.png" alt-text="Match browser language DevTools setting in Japanese." lightbox="../../media/2020/11/startpage-devtools-settings-japanese.msft.png":::
+![Match browser language DevTools setting in Japanese.](../../media/2020/11/startpage-devtools-settings-japanese.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->
@@ -205,6 +287,9 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
 
 [!INCLUDE [Chromium What's New note](../../includes/chromium-whats-new-note.md)]
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### New CSS angle visualization tools
 
 DevTools now has better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, click the clock icon.  To change the angle, click anywhere in the clock, drag the needle, or use mouse and keyboard shortcuts.  To learn more, see [Change angle value with the Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock).  For updates on this feature in the Chromium open-source project, see Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
@@ -215,8 +300,17 @@ The following CSS angle is used for the example:
 background: linear-gradient(100deg, lightblue, pink);
 ```
 
-:::image type="content" source="../../media/2020/11/css-angle.msft.png" alt-text="CSS angle." lightbox="../../media/2020/11/css-angle.msft.png":::
+![CSS angle.](../../media/2020/11/css-angle.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Simulate storage quota size in the Storage pane
 
 You can now override storage quota size in the **Storage** pane.  This feature allows you to simulate different devices and test the behavior of your website or app in low disk availability scenarios.  To simulate the storage quota:
@@ -227,22 +321,52 @@ You can now override storage quota size in the **Storage** pane.  This feature a
 
 For more information about how to emulate mobile devices, and about other DevTools features, see [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md).  To see updates on this feature in the Chromium open-source project, see Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
-:::image type="content" source="../../media/2020/11/storage-quota.msft.png" alt-text="Simulate storage quota size." lightbox="../../media/2020/11/storage-quota.msft.png":::
+![Simulate storage quota size.](../../media/2020/11/storage-quota.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Report CORS errors in the Network tool
 
 Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.  For real-time updates on this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
-:::image type="content" source="../../media/2020/11/cors-err.msft.png" alt-text="CORS errors." lightbox="../../media/2020/11/cors-err.msft.png":::
+![CORS errors.](../../media/2020/11/cors-err.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Frame details view updates
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Cross-origin isolation information in the Frame details view
 
 The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers can be shared using `postMessage()`.  A deprecation warning appears if the SAB and `postMessage()` is currently available, but the context isn't cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, see [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).  To review real-time updates of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
 
-:::image type="content" source="../../media/2020/11/frame-cross-origin-isolated-api.msft.png" alt-text="Cross-origin information." lightbox="../../media/2020/11/frame-cross-origin-isolated-api.msft.png":::
+![Cross-origin information.](../../media/2020/11/frame-cross-origin-isolated-api.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### New Web Workers information in the Frame details view
 
 DevTools now organizes web workers under the relevant parent frame.  For example, if the `someName` frame creates `worker.js`, then `worker.js` appears under `someName` in the **Frames** list.  To view the details of the web worker:
@@ -254,8 +378,17 @@ DevTools now organizes web workers under the relevant parent frame.  For example
 
 For real-time updates on this feature in the Chromium open-source project, see Issues [1122507](https://crbug.com/1122507) and [1051466](https://crbug.com/1051466).
 
-:::image type="content" source="../../media/2020/11/application-frames-service-workers.msft.png" alt-text="Web workers information." lightbox="../../media/2020/11/application-frames-service-workers.msft.png":::
+![Web workers information.](../../media/2020/11/application-frames-service-workers.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Display opener frame details for opened windows
 
 DevTools now organizes opened [Windows](https://developer.mozilla.org/docs/Web/API/Window#Constructors) under the relevant parent [frame](https://developer.mozilla.org/docs/Web/API/Window/frames).  For example, if the `top` frame opens a `Window` to `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the `Window` appears under `top` in the **Frames** list.
@@ -274,22 +407,49 @@ The details are displayed about which frame caused the opening of another `Windo
 
 For the history of this feature in the Chromium open-source project, see Issue [1107766](https://crbug.com/1107766).
 
-:::image type="content" source="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png" alt-text="Opened frame details." lightbox="../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png":::
+![Opened frame details.](../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Copy stacktrace for network initiator
 
 To copy the stacktrace to your clipboard, right-click the stacktrace, and then select **Copy** > **Copy stacktrace**.
 
 For the history of this feature in the Chromium open-source project, see Issue [1139615](https://crbug.com/1139615).
 
-:::image type="content" source="../../media/2020/11/copy-stacktrace.msft.png" alt-text="Copy stacktrace." lightbox="../../media/2020/11/copy-stacktrace.msft.png":::
+![Copy stacktrace.](../../media/2020/11/copy-stacktrace.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Preview Wasm variable value on mouseover
 
 Use this feature to review the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
 
-:::image type="content" source="../../media/2020/11/wasm-mouseover.msft.png" alt-text="Preview Wasm variable on mouseover." lightbox="../../media/2020/11/wasm-mouseover.msft.png":::
+![Preview Wasm variable on mouseover.](../../media/2020/11/wasm-mouseover.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Consistent units of measurement for sizes of files and memory
 
 DevTools now consistently use `kB` for displaying sizes of files and memory.  Previously DevTools mixed `kB` and `KiB`.
@@ -298,6 +458,12 @@ DevTools now consistently use `kB` for displaying sizes of files and memory.  Pr
 *  `KiB` or kibibyte (2^10 or 1024 bytes)
 
 For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.  For the history of this feature in the Chromium open-source project, see Issue [1035309](https://crbug.com/1035309).
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

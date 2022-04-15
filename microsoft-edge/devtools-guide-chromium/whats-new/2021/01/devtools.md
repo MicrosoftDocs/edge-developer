@@ -26,28 +26,36 @@ ms.date: 05/04/2021
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## What's New is now Welcome
 
 <!--  Title: What's New is now Welcome  -->
 <!--  Subtitle: The What's New tool now has a new appearance and a new name:  Welcome -->
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 The **What's New** tool in the Microsoft Edge DevTools now has a new appearance and a new name:  **Welcome**.  The **Welcome** tool still displays the latest DevTools news and updates.  It now also includes links to Microsoft Edge DevTools documentation, ways to submit feedback, and more.  To display the **Welcome** tool after each update to Microsoft Edge, select the checkbox next to **Open tab after each update** under the title.
 
 To close the **Welcome** tool, click the **X** on the right-side of the tab title.  If you prefer the original **What's New** tool, select [Settings](../../../customize/index.md#settings) > **Experiments** and then clear the checkbox next to **Enable Welcome tab**.
 
-:::image type="content" source="../../media/2021/01/welcome-tool-whats-new-88.msft.png" alt-text="The Welcome tool is highlighted." lightbox="../../media/2021/01/welcome-tool-whats-new-88.msft.png":::
+![The Welcome tool is highlighted.](../../media/2021/01/welcome-tool-whats-new-88.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Visual Font Editor in the Styles pane
 
 <!--  Title: Visual font editor in the Styles pane  -->
 <!--  Subtitle: Visual font editor in the Styles pane -->
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 When you work with fonts in CSS, use the new visual [Font Editor](../../../inspect-styles/edit-fonts.md).  You can define fallback fonts, and use sliders to define font weight, size, line-height, and spacing.
 
@@ -60,9 +68,16 @@ The **Font Editor** helps you to:
 
 To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments** and select the checkbox next to **Enable new Font Editor tools within Styles pane**.  See [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).  For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
-:::image type="content" source="../../media/2021/01/visual-font-editor.msft.png" alt-text="The visual Font editor in the Styles pane." lightbox="../../media/2021/01/visual-font-editor.msft.png":::
+![The visual Font editor in the Styles pane.](../../media/2021/01/visual-font-editor.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## CSS Flexbox debugging tools
 
@@ -73,7 +88,7 @@ Flexbox debugging features are in active development.  To turn on the experiment
 <!--  Title: Display Flexbox containers with Flexbox (flex) icon  -->
 <!--  Subtitle: New Flexbox (flex) icon in the Elements tool help you identify Flexbox containers in your code.  When toggled, the adorner displays and hides outlines of the flex container to help you debug the layout -->
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 In the **Elements** tool, the new **Flexbox** (flex) icon helps you identify Flexbox containers in your code.  Click the **Flexbox** (flex) icon to turn on or off the overlay effect that outlines a Flexbox container.  You can customize the color of the overlay in the **Layout** pane, which is located next to **Styles** and **Computed**.
 
@@ -83,18 +98,27 @@ You can customize the color of the overlay in the **Layout** pane next to **Styl
 
 The **Flexbox** (`flex`) icon and webpage highlighted:
 
-:::image type="content" source="../../media/2021/01/elements-flex-container.msft.png" alt-text="The Flexbox (flex) icon and webpage highlighted" lightbox="../../media/2021/01/elements-flex-container.msft.png":::
+![The Flexbox (flex) icon and webpage highlighted.](../../media/2021/01/elements-flex-container.msft.png)
 
 The **Flexbox overlays** highlighted in the **Layout** pane:
 
-:::image type="content" source="../../media/2021/01/elements-layout-flex-container.msft.png" alt-text="The Flexbox overlays highlighted in the Layout pane." lightbox="../../media/2021/01/elements-layout-flex-container.msft.png":::
+![The Flexbox overlays highlighted in the Layout pane.](../../media/2021/01/elements-layout-flex-container.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Display alignment icons and visual guides when Flexbox layouts change using CSS properties
 
 <!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** pane now displays helpful icons next to relevant Flexbox properties.  To try this new feature, open the **Elements** tool and select a flex container.  Then add or change a property on that container in the **Styles** pane.
 
@@ -104,26 +128,40 @@ Additionally, DevTools now displays a guiding line to help you better review the
 
 Autocomplete menu highlighted for CSS properties that start with `align-`:
 
-:::image type="content" source="../../media/2021/01/elements-flex-container-align.msft.png" alt-text="Autocomplete menu highlighted for CSS properties that start with align-." lightbox="../../media/2021/01/elements-flex-container-align.msft.png":::
+![Autocomplete menu highlighted for CSS properties that start with 'align-'.](../../media/2021/01/elements-flex-container-align.msft.png)
 
 Flexbox `gap` in CSS properties and webpage highlighted:
 
-:::image type="content" source="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png" alt-text="Flexbox gap in CSS properties and webpage highlighted." lightbox="../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png":::
+![Flexbox gap in CSS properties and webpage highlighted.](../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Add tools quickly with new More Tools button
 
 <!--  Title: Add tools quickly with new More Tools button  -->
 <!--  Subtitle: A convenient way to open new tools in Microsoft Edge DevTools -->
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 You now have a new way to open more tools in the Microsoft Edge DevTools.  After you turn on this experiment, the **More Tools** icon appears, as a plus sign (`+`) to the right of the main panel.  To show a list of other tools that you can add to the main panel, click the **More Tools** (`+`) icon.  To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments**, and then select the checkbox next to **Enable + button tab menus to open more tools**.
 
-:::image type="content" source="../../media/2021/01/more-tools.msft.png" alt-text="More Tools highlighted in DevTools." lightbox="../../media/2021/01/more-tools.msft.png":::
+![More Tools highlighted in DevTools.](../../media/2021/01/more-tools.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Assistive technologies now announce position and count of CSS suggestions
 
@@ -136,9 +174,16 @@ In Microsoft Edge version 89, a user of assistive technology now hears the posit
 
 To view a video that displays and reads aloud several suggestions with this experiment turned on, see [Voiceover announcing devtools options](https://youtu.be/9TcUpleEwwA) on YouTube.
 
-:::image type="content" source="../../media/2021/01/announce-css-suggestion.msft.png" alt-text="The suggestion highlighted in the Styles pane." lightbox="../../media/2021/01/announce-css-suggestion.msft.png":::
+![The suggestion highlighted in the Styles pane.](../../media/2021/01/announce-css-suggestion.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Emulate Surface Duo and Samsung Galaxy Fold
 
@@ -157,9 +202,16 @@ Turn on **Experimental Web Platform features** to access the new [CSS media scre
 
 For the history of this feature in the Chromium open-source project, see Issue [1054281](https://crbug.com/1054281).
 
-:::image type="content" source="../../media/2021/01/emulate-surface-device-surface-duo.msft.png" alt-text="Emulate dual-screen." lightbox="../../media/2021/01/emulate-surface-device-surface-duo.msft.png":::
+![Emulate dual-screen.](../../media/2021/01/emulate-surface-device-surface-duo.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.2
 
@@ -172,44 +224,93 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
+<!--
+See also:
+* []()
+* []()
+-->
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Capture node screenshot beyond viewport
 
 In Microsoft Edge version 89, node screenshots are more accurate, capturing the full node even if content from the node isn't visible in the viewport.  In the **Elements** tool, right-click an element, and then select **Capture node screenshot**.  For the history of this feature in the Chromium open-source project, see Issue [1003629](https://crbug.com/1003629).
 
-:::image type="content" source="../../media/2021/01/capture-node-screenshot.msft.png" alt-text="Capture node screenshot highlighted on the context menu in the Elements tool." lightbox="../../media/2021/01/capture-node-screenshot.msft.png":::
+![Capture node screenshot highlighted on the context menu in the Elements tool.](../../media/2021/01/capture-node-screenshot.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Elements tool updates
 
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Support forcing the :target CSS state
 
 You can now use DevTools to force the [:target](https://developer.mozilla.org/docs/web/css/:target) CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/#section-1).  For the history of this feature in the Chromium open-source project, navigate to Issue [1156628](https://crbug.com/1156628).
 
 Webpage highlighted with no forced CSS:
 
-:::image type="content" source="../../media/2021/01/elements-styles-none-forced.msft.png" alt-text="The webpage highlighted with no forced CSS." lightbox="../../media/2021/01/elements-styles-none-forced.msft.png":::
+![The webpage highlighted with no forced CSS.](../../media/2021/01/elements-styles-none-forced.msft.png)
 
 `:target` CSS forced and webpage highlighted:
 
-:::image type="content" source="../../media/2021/01/elements-styles-target-forced.msft.png" alt-text=":target CSS forced and webpage highlighted" lightbox="../../media/2021/01/elements-styles-target-forced.msft.png":::
+![:target CSS forced and webpage highlighted.](../../media/2021/01/elements-styles-target-forced.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Use Duplicate elements to copy elements
 
 Use the new **Duplicate element** shortcut to clone an element.  In the **Elements** tool, right-click an element, and then select **Duplicate element**.  A new element is created under the selected element.  To duplicate the element by using the keyboard, press `Shift`+`Alt`+`Down Arrow` (Windows/Linux) or `Shift`+`Option`+`Down Arrow` (macOS).  For the history of this feature in the Chromium open-source project, see Issue [1150797](https://crbug.com/1150797).
 
-:::image type="content" source="../../media/2021/01/elements-duplicate-element.msft.png" alt-text="The Duplicate element is highlighted in the context menu on an element in the Elements tool." lightbox="../../media/2021/01/elements-duplicate-element.msft.png":::
+![The Duplicate element is highlighted in the context menu on an element in the Elements tool.](../../media/2021/01/elements-duplicate-element.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Color pickers for custom CSS properties
 
 The **Styles** pane now displays color pickers for custom CSS properties.  To cycle through the RGBA, HSLA, and Hex formats of the color value, press and hold `Shift` and then click the color picker.  For the history of this feature in the Chromium open-source project, see Issue [1147016](https://crbug.com/1147016).
 
-:::image type="content" source="../../media/2021/01/elements-styles-change-color-format.msft.png" alt-text="Color pickers for custom CSS properties." lightbox="../../media/2021/01/elements-styles-change-color-format.msft.png":::
+![Color pickers for custom CSS properties.](../../media/2021/01/elements-styles-change-color-format.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Copy CSS classes and properties
 
 You can now copy CSS properties quicker with a few new options in the right-click menu.  In the **Elements** tool, select an element.  To copy the value, in the **Styles** pane, right-click a CSS class or a CSS property, and then select a copy option.
@@ -222,7 +323,7 @@ Copy options for a CSS class in the right-click menu:
 | **Copy rule** | Copy the rule of the current selector. |
 | **Copy all declarations** | Copy all declarations under the current rule, including non-valid and prefixed properties. |
 
-:::image type="content" source="../../media/2021/01/copy-css-class.msft.png" alt-text="Copy options for a CSS class in the right-click menu." lightbox="../../media/2021/01/copy-css-class.msft.png":::
+![Copy options for a CSS class in the right-click menu.](../../media/2021/01/copy-css-class.msft.png)
 
 Copy options for a CSS property in the right-click menu:
 
@@ -232,26 +333,62 @@ Copy options for a CSS property in the right-click menu:
 | **Copy property** | Copy the property of the current line. |
 | **Copy value** | Copy the value of the current line. |
 
-:::image type="content" source="../../media/2021/01/copy-css-property-cropped.msft.png" alt-text="Copy options for a CSS property in the right-click menu." lightbox="../../media/2021/01/copy-css-property.msft.png":::
+![Copy options for a CSS property in the right-click menu.](../../media/2021/01/copy-css-property-cropped.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1152391](https://crbug.com/1152391).
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Cookies updates
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### New option to display URL-decoded cookies
 
 You can now display the URL-decoded cookies value in the **Cookies** pane.  To display the decoded cookie, select **Application** > **Cookies**, click any cookie on the list, and then select the checkbox next to **Show URL decoded**.  For the history of this feature in the Chromium open-source project, see Issue [997625](https://crbug.com/997625).
 
-:::image type="content" source="../../media/2021/01/application-cookies-show-url-decoded.msft.png" alt-text="Option to display URL-decoded cookies." lightbox="../../media/2021/01/application-cookies-show-url-decoded.msft.png":::
+![Option to display URL-decoded cookies.](../../media/2021/01/application-cookies-show-url-decoded.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Filter and clear visible cookies
 
 In Microsoft Edge version 88 or earlier, the **Application** tool only provided a way to clear all cookies with the **Clear all cookies** button.  In Microsoft Edge version 89, you can now select **Clear filtered cookies** to delete only the filtered cookies.
 
 To filter cookies, select **Application** > **Cookies**, and then type in the **Filter** text box.  To delete the displayed cookies, click the **Clear filtered cookies** button.  To display all other cookies, clear the filter text.  For the history of this feature in the Chromium open-source project, see Issue [978059](https://crbug.com/978059).
 
-:::image type="content" source="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png" alt-text="Clear only visible cookies." lightbox="../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png":::
+![Clear only visible cookies.](../../media/2021/01/application-cookies-clear-filtered-cookies.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### New option to clear third-party cookies in the Storage pane
 
 DevTools now clears only first-party cookies by default.  To clear website data and first-party cookies only, in the **Application** tool, in the **Application** section in the upper left, click **Storage**, and then click the **Clear site data** button.
@@ -260,71 +397,170 @@ To clear website data and all cookies, select **Application** > **Storage**.  Se
 
 For the history of this feature in the Chromium open-source project, see Issue [1012337](https://crbug.com/1012337).
 
-:::image type="content" source="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png" alt-text="Option to clear third-party cookies." lightbox="../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png":::
+![Option to clear third-party cookies.](../../media/2021/01/application-storage-clear-site-data-including-third-party-cookies.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Network tool updates
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Persist Record network log setting
 
 In Microsoft Edge version 88 or earlier, DevTools reset the **Record network log** setting when a webpage refreshes.  In Microsoft Edge version 89, DevTools now persist the **Record network log** setting.  For the history of this feature in the Chromium open-source project, see Issue [1122580](https://crbug.com/1122580).
 
-:::image type="content" source="../../media/2021/01/network-log.msft.png" alt-text="Record network log." lightbox="../../media/2021/01/network-log.msft.png":::
+![Record network log.](../../media/2021/01/network-log.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Online option is now No throttling option
 
 The network emulation option **Online** is now renamed to **No Throttling**.  For the history of this feature in the Chromium open-source project, see Issue [1028078](https://crbug.com/1028078).
 
-:::image type="content" source="../../media/2021/01/network-no-throttling.msft.png" alt-text="No throttling option." lightbox="../../media/2021/01/network-no-throttling.msft.png":::
+![No throttling option.](../../media/2021/01/network-no-throttling.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### New copy options in the Console tool, Sources tool, and Styles pane
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Copy object in the Console and Sources tool
 
 You can now copy object values in the **Console** and **Sources** tools.  The ability to copy object values is useful when working with large objects.  For the history of this feature in the Chromium open-source project, see Issues [1148353](https://crbug.com/1148353) and [1149859](https://crbug.com/1149859).
 
 In the **Console** tool, right-click an object, and then select **Copy object**.
 
-:::image type="content" source="../../media/2021/01/console-copy-object.msft.png" alt-text="Copy object in the Console." lightbox="../../media/2021/01/console-copy-object.msft.png":::
+![Copy object in the Console.](../../media/2021/01/console-copy-object.msft.png)
 
 In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** popup window, right-click an object, and then select **Copy object**.
 
-:::image type="content" source="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png" alt-text="Copy object in Sources." lightbox="../../media/2021/01/sources-breakpoint-object-copy-object.msft.png":::
+![Copy object in Sources.](../../media/2021/01/sources-breakpoint-object-copy-object.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Copy file name in the Sources tool and Styles pane
 
 You can now copy a file name using the right-click menu.  For the history of this feature in the Chromium open-source project, see Issues [1155120](https://crbug.com/1155120).
 
 In the **Sources** tool, right-click a file name, and then select **Copy file name**.
 
-:::image type="content" source="../../media/2021/01/sources-copy-file-name.msft.png" alt-text="Copy file name in Sources." lightbox="../../media/2021/01/sources-copy-file-name.msft.png":::
+![Copy file name in Sources.](../../media/2021/01/sources-copy-file-name.msft.png)
 
 In the **Elements** tool > **Styles** pane, right-click a file name, and then select **Copy file name**.
 
-:::image type="content" source="../../media/2021/01/elements-styles-copy-file-name.msft.png" alt-text="Copy file name in Styles pane." lightbox="../../media/2021/01/elements-styles-copy-file-name.msft.png":::
+![Copy file name in Styles pane.](../../media/2021/01/elements-styles-copy-file-name.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Updates to Frame details
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Service Workers information in Frame details
 
 DevTools now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.  For the history of this feature in the Chromium open-source project, see Issue [1122507](https://crbug.com/1122507).
 
-:::image type="content" source="../../media/2021/01/application-frames-service-workers-details.msft.png" alt-text="Service Workers information in the Frames details." lightbox="../../media/2021/01/application-frames-service-workers-details.msft.png":::
+![Service Workers information in the Frames details.](../../media/2021/01/application-frames-service-workers-details.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### Measure Memory information in Frame details
 
 The `performance.measureMemory()` API status is now displayed under the **API availability** section.  The new `performance.measureMemory()` API estimates the memory usage of the entire webpage.  For the history of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
 
-:::image type="content" source="../../media/2021/01/application-frames-measure-memory.msft.png" alt-text="Measure Memory." lightbox="../../media/2021/01/application-frames-measure-memory.msft.png":::
+![Measure Memory.](../../media/2021/01/application-frames-measure-memory.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 ### Dropped frames in the Performance tool
 
 When you [analyze load performance in the Performance tool](../../../evaluate-performance/reference.md#record-load-performance), the **Frames** section now marks dropped frames as red.  To display the frame rate, hover on a dropped frame.  For the history of this feature in the Chromium open-source project, see Issue [1075865](https://crbug.com/1075865).
 
-:::image type="content" source="../../media/2021/01/performance-frames-dropped-frames-red.msft.png" alt-text="Dropped frames." lightbox="../../media/2021/01/performance-frames-dropped-frames-red.msft.png":::
+![Dropped frames.](../../media/2021/01/performance-frames-dropped-frames-red.msft.png)
 
+<!--
+See also:
+* []()
+* []()
+-->
+
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
 #### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
 
-:::image type="icon" source="../../media/2020/06/experimental-tag-14px.msft.png":::
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html) replaces the [AA](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/[AAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) guidelines contrast ratio in the [Color Picker](../../../accessibility/color-picker.md).  APCA is a new way to compute contrast.  It is based on modern research on color perception.  Compared to AA/AAA guidelines, APCA is more context-dependent.  The contrast is calculated based on the following spatial properties of the text, color, and context.
 
@@ -334,7 +570,13 @@ The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver
 
 To turn on this experiment, select **Settings** > **Experiments** and then select the checkbox next to **Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines**.  To view the history of this feature in the Chromium open-source project, see Issue [1121900](https://crbug.com/1121900).
 
-:::image type="content" source="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png" alt-text="APCA in the Color Picker." lightbox="../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png":::
+![APCA in the Color Picker.](../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png)
+
+<!--
+See also:
+* []()
+* []()
+-->
 
 
 <!-- ====================================================================== -->

@@ -107,9 +107,9 @@ To test whether .NET Framework 4.6.2 Developer Pack is installed:
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** dropdown list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 
@@ -161,9 +161,9 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** dropdown list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 

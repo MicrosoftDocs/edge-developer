@@ -25,7 +25,7 @@ To test a URL:
 
 1. In the **Untitled Request** text box, enter a URL to test.
 
-1. In the **GET** drop-down list, select a REST method: **GET**, **HEAD**, **POST**, **PUT**, or **PATCH**.
+1. In the **GET** dropdown list, select a REST method: **GET**, **HEAD**, **POST**, **PUT**, or **PATCH**.
 
 1. Optionally, in the **Query** section, click the **Key** and **Value** text boxes and enter key/value pairs:
 

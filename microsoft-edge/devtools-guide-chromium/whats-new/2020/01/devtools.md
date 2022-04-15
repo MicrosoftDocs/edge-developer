@@ -28,11 +28,16 @@ ms.date: 05/04/2021
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow us on Twitter](https://twitter.com/EdgeDevTools).
 
+
+<!-- ====================================================================== -->
 ### Accessibility improvements to the DevTools
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- dup entries: 2019/12, 2020/01 -->
 
 The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.
 
-:::image type="content" source="../../images/2020/01/a11y-performance-tool.msft.gif" alt-text="The Performance tool in the DevTools with the keyboard navigation and screen reader improvements." lightbox="../../images/2020/01/a11y-performance-tool.msft.gif":::
+![The Performance tool in the DevTools with the keyboard navigation and screen reader improvements.](../../images/2020/01/a11y-performance-tool.msft.gif)
 
 Want to learn how to make your web page accessible to all of your users?  Download the [Accessibility Insights](https://accessibilityinsights.io) and [webhint](https://webhint.io/docs/user-guide/extensions/extension-browser) extensions for Microsoft Edge to get started.
 
@@ -40,7 +45,16 @@ If you use screen readers or the keyboard to navigate around the DevTools, send 
 
 Chromium issue [#963183](https://crbug.com/963183)
 
+See also:
+* [Accessibility-testing features](../../../accessibility/reference.md)
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
+
+
+<!-- ====================================================================== -->
 ### Using the DevTools in other languages
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- dup entries: 2019/12, 2020/01 -->
 
 Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
 
@@ -69,7 +83,7 @@ The DevTools automatically match the language you use for Microsoft Edge in `edg
 
 If you want Microsoft Edge to be in one language and your DevTools to remain in English, select `F1` in the DevTools to open [Settings](../../../customize/index.md#settings) and disable **Match browser language**.
 
-:::image type="content" source="../../images/2020/01/localized-devtools.msft.png" alt-text="The DevTools in German." lightbox="../../images/2020/01/localized-devtools.msft.png":::
+![The DevTools in German.](../../images/2020/01/localized-devtools.msft.png)
 
 **Console** messages aren't localized.  Only the strings used in the DevTools UI are displayed in the language you use for Microsoft Edge.
 
@@ -77,19 +91,35 @@ If you want to use the DevTools in a different language than the ones that are a
 
 Chromium issue [#941561](https://crbug.com/941561)
 
+See also:
+* [Change DevTools language settings](../../../customize/localization.md)
+
+
+<!-- ====================================================================== -->
 ### webhint Microsoft Edge extension
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- dup entries: 2019/12, 2020/01 -->
 
 The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://webhint.io).
 
-:::image type="content" source="../../images/2020/01/webhint-browser-extension.msft.png" alt-text="The Hints tool in the DevTools when the webhint browser extension is installed." lightbox="../../images/2020/01/webhint-browser-extension.msft.png":::
+![The Hints tool in the DevTools when the webhint browser extension is installed.](../../images/2020/01/webhint-browser-extension.msft.png)
 
 [Try the webhint browser extension in Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/webhint/mlgfbihcfnkaenjpdcngdnhcpkdmcdee).  Once you install the extension, open the DevTools and select the **Hints** tool.  From here, run a customizable site scan.  Head over to [webhint.io](https://webhint.io/docs/user-guide/extensions/extension-browser) to learn more.
 
+See also:
+* [The webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
+
+
+<!-- ====================================================================== -->
 ### 3D View
+
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- dup entries: 2019/12, 2020/01 -->
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.
 
-:::image type="content" source="../../images/2020/01/3dview.msft.png" alt-text="The 3D View in the DevTools." lightbox="../../images/2020/01/3dview.msft.png":::
+![The 3D View in the DevTools.](../../images/2020/01/3dview.msft.png)
 
 To access the 3D View, press `Ctrl`+`Shift`+`P` to open the Command Menu, start typing `3d view`, and then select **Show 3D View**.
 
@@ -97,49 +127,88 @@ The Microsoft Edge team is working with the Chromium team on the UI and adding m
 
 Chromium issue [#987787](https://crbug.com/987787)
 
+See also:
+* [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)
+
+
+<!-- ====================================================================== -->
 ### Visual Studio Code extensions
 
 The DevTools team has also released some extensions for [Visual Studio Code](https://code.visualstudio.com) that let you use the power of the DevTools directly from your text editor! Check out the extensions below:
 
+See also:
+* [Visual Studio Code for web development](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/)
+* [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+
+
+<!-- ====================================================================== -->
 #### Elements for Microsoft Edge
+
+<!-- dup entries: 2019/12, 2020/01 -->
 
 Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) Visual Studio Code extension.
 
-:::image type="content" source="../../images/2020/01/elements-for-edge.msft.png" alt-text="The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension." lightbox="../../images/2020/01/elements-for-edge.msft.png":::
+![The Elements tool in Visual Studio Code using the Elements for Microsoft Edge extension.](../../images/2020/01/elements-for-edge.msft.png)
 
-For more information, check out [Elements for Microsoft Edge Visual Studio Code extension](../../../../visual-studio-code/elements-for-edge.md).
+Update: As of 2022, the **Elements for Microsoft Edge** extension is now the **Microsoft Edge DevTools extension for Visual Studio Code**.
 
+For more information, check out [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension).
+
+
+<!-- ====================================================================== -->
 #### Debugger for Microsoft Edge
+
+<!-- dup entries: 2019/12, 2020/01 -->
 
 With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
 
-:::image type="content" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="The Debugger for Microsoft Edge Extension in Visual Studio Code." lightbox="../../images/2020/01/vscode-debugger.msft.png":::
+![The Debugger for Microsoft Edge Extension in Visual Studio Code.](../../images/2020/01/vscode-debugger.msft.png)
 
-For more information, check out [how to debug Microsoft Edge from Visual Studio Code](../../../../visual-studio-code/debugger-for-edge.md).
+Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.  See [Debug Microsoft Edge in Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/debugger-for-edge).
 
+
+<!-- ====================================================================== -->
 #### webhint
+
+<!-- dup entries: 2019/12, 2020/01 -->
 
 The [webhint](https://marketplace.visualstudio.com/items?itemName=webhint.vscode-webhint) Visual Studio Code extension uses `webhint` to improve your web page while you are writing it.  This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.
 
-:::image type="content" source="../../images/2020/01/webhint-vscode-extension.msft.png" alt-text="The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code." lightbox="../../images/2020/01/webhint-vscode-extension.msft.png":::
+![The webhint Visual Studio Code extension analyzing a .tsx file in Visual Studio Code.](../../images/2020/01/webhint-vscode-extension.msft.png)
 
 [Learn more about the Visual Studio Code webhint extension](https://webhint.io/docs/user-guide/extensions/vscode-webhint).
 
+See also:
+* [Visual Studio Code for web development](../../../../visual-studio-code/index.md)
+* [The webhint extension for Visual Studio Code](../../../../visual-studio-code/webhint.md)
+
+
+<!-- ====================================================================== -->
 ### Visual Studio integration
+
+<!-- dup entries: 2019/12, 2020/01 -->
 
 In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019](https://visualstudio.microsoft.com/downloads) to try this feature out!
 
-:::image type="content" source="../../images/2020/01/vs.msft.png" alt-text="Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta" lightbox="../../images/2020/01/vs.msft.png":::
+![Visual Studio with the option to launch your web app in Microsoft Edge Canary, Dev, or Beta.](../../images/2020/01/vs.msft.png)
 
-[Learn more about debugging Microsoft Edge from Visual Studio](../../../../visual-studio/index.md).
+To learn more about debugging Microsoft Edge from Visual Studio, see [Visual Studio for web development](../../../../visual-studio/index.md).
 
+
+<!-- ====================================================================== -->
 ### Tracking prevention Console messages
+
+<!-- dup entries: 2019/12, 2020/01 -->
 
 Tracking prevention is a unique feature in Microsoft Edge that protects you from being tracked by websites you have not visited before.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, warning messages were added in the **Console** when a tracker is blocked.
 
-:::image type="content" source="../../images/2020/01/tracking-prevention.msft.png" alt-text="Messages in the Console when tracking prevention blocks access to storage for a tracker." lightbox="../../images/2020/01/tracking-prevention.msft.png":::
+![Messages in the Console when tracking prevention blocks access to storage for a tracker.](../../images/2020/01/tracking-prevention.msft.png)
 
 [Read more about tracking prevention and the balance between privacy and web compatibility](https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79).
+
+See also:
+* [Tracking prevention in Microsoft Edge](../../../../web-platform/tracking-prevention.md)
+* [Console overview](../../../console/index.md)
 
 
 <!-- ====================================================================== -->
@@ -147,15 +216,17 @@ Tracking prevention is a unique feature in Microsoft Edge that protects you from
 
 The following sections announce additional features available in Microsoft Edge 81 that were contributed to the open source Chromium project.
 
+
+<!-- ====================================================================== -->
 ### Moto G4 support in Device Mode
 
 After [enabling the Device Toolbar](../../../device-mode/index.md#simulate-a-mobile-viewport), simulate the dimensions of a Moto G4 viewport from the **Device** list.
 
-:::image type="content" source="../../images/2020/01/motog4.msft.png" alt-text="Simulating a Moto G4 viewport." lightbox="../../images/2020/01/motog4.msft.png":::
+![Simulating a Moto G4 viewport.](../../images/2020/01/motog4.msft.png)
 
 Click [Show Device Frame](../../../device-mode/index.md#show-device-frame) to show the Moto G4 hardware around the viewport.
 
-:::image type="content" source="../../images/2020/01/motog4frame.msft.png" alt-text="Showing the Moto G4 hardware." lightbox="../../images/2020/01/motog4frame.msft.png":::
+![Showing the Moto G4 hardware.](../../images/2020/01/motog4frame.msft.png)
 
 Related features:
 
@@ -164,72 +235,106 @@ Related features:
 
 Chromium issue [#924693](https://crbug.com/924693)
 
+
+<!-- ====================================================================== -->
 ### Cookie-related updates
 
+See also:
+* [View, edit, and delete cookies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies)
+* [Display cookies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-cookies) in _Network features reference_
+
+
+<!-- ====================================================================== -->
 #### Blocked cookies in the Cookies pane
 
-The Cookies pane in the Application panel now displays blocked cookies with a yellow background.
+The **Cookies** pane in the **Application** panel now displays blocked cookies with a yellow background.
 
-:::image type="content" source="../../images/2020/01/blockedcookies.msft.png" alt-text="Blocked cookies in the Cookies pane of the Application panel." lightbox="../../images/2020/01/blockedcookies.msft.png":::
+![Blocked cookies in the Cookies pane of the Application panel.](../../images/2020/01/blockedcookies.msft.png)
 
 Chromium issue [#1030258](https://crbug.com/1030258)  <!-- inaccessible  -->
 
+
+<!-- ====================================================================== -->
 #### Cookie priority in the Cookie pane
 
 The Cookies tables in the **Network** and **Application** tools now include a **Priority** column.
 
-> [!CAUTION]
-> Chromium-based browsers, like Microsoft Edge, are the only browsers that support cookie priority.
+Caution: Chromium-based browsers, like Microsoft Edge, are the only browsers that support cookie priority.
 
 Chromium issue [#1026879](https://crbug.com/1026879)
 
+
+<!-- ====================================================================== -->
 #### Edit all cookie values
 
-All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  For an explanation of each column, see [Fields](../../../storage/cookies.md#fields).
+All cells in the Cookie tables are editable now, except cells in the **Size** column because that column represents the network size of the cookie, in bytes.  For an explanation of each column, see [Fields](../../../storage/cookies.md#fields)in _View, edit, and delete cookies_.
 
-:::image type="content" source="../../images/2020/01/editcookie.msft.png" alt-text="Editing a cookie value." lightbox="../../images/2020/01/editcookie.msft.png":::
+![Editing a cookie value.](../../images/2020/01/editcookie.msft.png)
 
+
+<!-- ====================================================================== -->
 #### Copy as Node.js fetch to include cookie data
 
 To get a `fetch` expression that includes cookie data, right-click a network request, and then select **Copy** > **Copy as Node.js fetch**.
 
-:::image type="content" source="../../images/2020/01/fetchcookies.msft.png" alt-text="Copy as Node.js fetch." lightbox="../../images/2020/01/fetchcookies.msft.png":::
+![Copy as Node.js fetch.](../../images/2020/01/fetchcookies.msft.png)
 
 Chromium issue [#1029826](https://crbug.com/1029826)
 
+
+<!-- ====================================================================== -->
 ### More accurate web app manifest icons
 
-Previously, the Manifest pane in the Application panel sent its own requests in order to display web app manifest icons.  DevTools now shows the exact same manifest icon that Microsoft Edge uses.
+Previously, the **Manifest** pane in the **Application** panel sent its own requests in order to display web app manifest icons.  DevTools now shows the exact same manifest icon that Microsoft Edge uses.
 
-:::image type="content" source="../../images/2020/01/manifesticons.msft.png" alt-text="Icons in the Manifest pane." lightbox="../../images/2020/01/manifesticons.msft.png":::
+![Icons in the Manifest pane.](../../images/2020/01/manifesticons.msft.png)
 
 Chromium issue [#985402](https://crbug.com/985402)
 
+See also:
+* [Open the Cookies pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane) in _View, edit, and delete cookies_
+
+
+<!-- ====================================================================== -->
 ### Hover on CSS content properties to display unescaped values
 
-Hover on the value of a `content` property to display the unescaped version of the value.
+In the **Styles** pane of the **Elements** tool, to display the unescaped version of a value of a `content` property, hover on the value.
 
 For example, in this [demo](https://mathiasbynens.github.io/css-dbg-stories/css-escapes.html) when you inspect the `p::after` pseudo-element an escaped string is displayed in the **Styles** pane:
 
-:::image type="content" source="../../images/2020/01/escapedstring.msft.png" alt-text="The escaped string." lightbox="../../images/2020/01/escapedstring.msft.png":::
+![The escaped string.](../../images/2020/01/escapedstring.msft.png)
 
 When you hover on the `content` value, the unescaped value is displayed.
 
-:::image type="content" source="../../images/2020/01/unescapedstring.msft.png" alt-text="The unescaped value." lightbox="../../images/2020/01/unescapedstring.msft.png":::
+![The unescaped value.](../../images/2020/01/unescapedstring.msft.png)
 
+See also:
+* [CSS features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference)
+
+
+<!-- ====================================================================== -->
 ### More detailed source map errors in the Console
 
 The Console now provides more detail on why a source map failed to load or parse.  Previously it just provided an error without explaining what went wrong.
 
-:::image type="content" source="../../images/2020/01/sourcemap.msft.png" alt-text="A source map loading error in the Console." lightbox="../../images/2020/01/sourcemap.msft.png":::
+![A source map loading error in the Console.](../../images/2020/01/sourcemap.msft.png)
 
+See also:
+* [Console overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
+* [Map the processed code to your original source code, for debugging](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/source-maps)
+
+
+<!-- ====================================================================== -->
 ### Setting for disabling scrolling past the end of a file
 
-Open [Settings](../../../customize/index.md#settings) and then disable **Preferences** > **Sources** > **Allow scrolling past end of file** to disable the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel.
+To prevent the default UI behavior that allows you to scroll well past the end of a file in the **Sources** panel, open [Settings](../../../customize/index.md#settings) and then clear the checkbox **Preferences** > **Sources** > **Allow scrolling past end of file**.
 
-:::image type="content" source="../../images/2020/01/settings.msft.png" alt-text="Disabling Allow scrolling past end of file." lightbox="../../images/2020/01/settings.msft.png":::
+![Disabling Allow scrolling past end of file.](../../images/2020/01/settings.msft.png)
 
-:::image type="content" source="../../images/2020/01/scrollingsources.msft.png" alt-text="Scrolling past the end of a file is now disabled in the Sources panel." lightbox="../../images/2020/01/scrollingsources.msft.png":::
+![Scrolling past the end of a file is now disabled in the Sources panel.](../../images/2020/01/scrollingsources.msft.png)
+
+See also:
+* [Using the Editor pane to view or edit files](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->

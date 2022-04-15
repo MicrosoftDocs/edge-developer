@@ -88,9 +88,9 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 8 - Build the project
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** dropdown list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WV2CDPExtensionWPFSample** project, and then select **Build**.
 
