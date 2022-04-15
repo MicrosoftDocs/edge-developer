@@ -16,7 +16,6 @@ If you are on Windows, Linux, or macOS, consider using the Canary preview channe
 To report a problem with DevTools or ask for a new feature, file an issue at the new [Microsoft Edge DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools).
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Securely debug your production code with source maps from Azure Artifacts Symbol Server
 
@@ -45,7 +44,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools extension for Visual Studio
 
@@ -84,7 +82,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Layers in 3D View
 
@@ -105,7 +102,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Use your source maps to display original function names in performance profiles
 
@@ -141,7 +137,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved accessibility for Network Console and 3D View
 
@@ -165,7 +160,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved source folder tree in the Sources panel
 

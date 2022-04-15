@@ -29,7 +29,6 @@ ms.date: 05/04/2021
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download/) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### CSS grid debugging features
 
@@ -49,7 +48,6 @@ See also:
 * [Inspect CSS Grid](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/grid)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Edit and Replay requests with the Network Console
 
@@ -72,7 +70,6 @@ To enable the experiment, see [Turning an experiment on or off](../../../experim
 Chromium issue [#1093687](https://crbug.com/1093687)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Service worker respondWith events in the Timing tab
 
@@ -91,7 +88,6 @@ See also:
 * [Display the timing breakdown of a request](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-the-timing-breakdown-of-a-request) in _Network features reference_.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### webhint feedback in the Issues panel
 
@@ -110,9 +106,10 @@ See also:
 * [Enable webhint](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#enable-webhint) in _Experimental features_
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Move tools between panels
+
+Update: No longer experimental, as of v100.
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -120,8 +117,7 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 ![Move tools between panels.](../../media/2020/06/experiments-move-panels.msft.png)
 
-> [!NOTE]
-> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**.
+Note: To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**.
 
 Chromium issue [#897944](https://crbug.com/897944)
 
@@ -129,7 +125,6 @@ See also:
 * [About Panel and Drawer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#about-panel-and-drawer-tools) in _Overview of DevTools_.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Improved Initiator tooltip in the Network panel
 
@@ -149,14 +144,7 @@ Chromium issue [#1069404](https://crbug.com/1069404)
 
 The following sections announce additional features available in Microsoft Edge 85 that were contributed to the open source Chromium project.
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Style editing for CSS-in-JS frameworks
 
@@ -172,14 +160,7 @@ Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/z
 
 Chromium issue [#946975](https://crbug.com/946975)
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Lighthouse 6 in the Lighthouse panel
 
@@ -191,6 +172,10 @@ The performance score formula has also been reweighted to better reflect the loa
 
 Chromium issue [#772558](https://crbug.com/772558)
 
+See also:
+* [Lighthouse tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool)
+
+
 #### First Meaningful Paint deprecation
 
 First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been removed from the **Performance** panel.  **Largest Contentful Paint** is the recommended replacement for FMP.  <!--For an explanation of why it was deprecated, see [First Meaningful Paint](https://web.dev/first-meaningful-paint).  -->
@@ -200,14 +185,10 @@ First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been
 
 Chromium issue [#1096008](https://crbug.com/1096008)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Lighthouse tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Support for new JavaScript features
 
@@ -221,22 +202,19 @@ DevTools now has better support for some of the latest JavaScript language featu
 
 Chromium issues [#1073903](https://crbug.com/1073903), [#1083214](https://crbug.com/1083214), [#1083797](https://crbug.com/1083797)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Run JavaScript in the Console](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/console-javascript)
+* [JavaScript debugging features](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/reference)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New app shortcut warnings in the Manifest pane
 
-**App shortcuts** help users quickly start common or recommended tasks within a web app.
+In the **Application** tool, **App shortcuts** help users quickly start common or recommended tasks within a web app.
 
 <!--todo: add App shortcuts when section is live  -->
 
-The **Manifest** pane now shows warnings for the following conditions.
+In the **Application** tool, the **Manifest** pane now shows warnings for the following conditions:
 
 *  When the app shortcut icons are smaller than 96x96 pixels.
 *  When the app shortcut icons and manifest icons aren't square (since the icons are ignored).
@@ -245,14 +223,10 @@ The **Manifest** pane now shows warnings for the following conditions.
 
 Chromium issue [#955497](https://crbug.com/955497)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Consistent display of the Computed pane
 
@@ -262,29 +236,22 @@ The **Computed** pane in the **Elements** tool is now displayed consistently as 
 
 Chromium issue [#1073899](https://crbug.com/1073899)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [View only the CSS that is actually applied to an element](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Bytecode offsets for WebAssembly files
 
-DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.  The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.
+<!-- todo: in what tool? -->DevTools now uses bytecode offsets for displaying line numbers of Wasm disassembly.  The line numbers make it clearer that you are looking at binary data, and is more consistent with how the Wasm runtime references locations.
 
 Chromium issue [#1071432](https://crbug.com/1071432)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-inspector/memory-inspector-tool)
+<!-- todo: correct tool? -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Line-wise copy and cut in Sources Panel
 
@@ -294,14 +261,7 @@ When performing copy or cut with no selection in the [Sources panel editor](../.
 
 Chromium issue [#800028](https://crbug.com/800028)
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Console Settings updates
 
@@ -317,14 +277,10 @@ Give this feature a try with a [sample that sends duplicate messages to the Cons
 
 Chromium issue [#1082963](https://crbug.com/1082963)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Turn off message grouping](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/reference#turn-off-message-grouping) in _Console features reference_
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Persisting Selected context only settings
 
@@ -334,14 +290,10 @@ The **Selected context only** settings in Console Settings is now persisted.  Pr
 
 Chromium issue [#1055875](https://crbug.com/1055875)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Filter out messages from different contexts](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/reference#filter-out-messages-from-different-contexts) - in _Console features reference_
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Performance panel updates
 
@@ -353,17 +305,14 @@ See also:
 
 Chromium issue [#912581](https://crbug.com/912581)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
 <!-- ====================================================================== -->
 #### Navigation timing alignment in the Performance panel
 
-The **Performance** panel used to show times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates, where DevTools now shows ruler times relative to the navigation instead.
+Previously, the **Performance** panel showed times in the rulers based on when the recording started.  The timing has now changed for recordings where the user navigates.  DevTools now shows ruler times relative to the navigation, instead of when the recording started.
 
 ![Align navigation timing in Performance tool.](../../media/2020/06/nav-timing.msft.png)
 
@@ -371,30 +320,26 @@ The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Large
 
 Chromium issue [#974550](https://crbug.com/974550)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
 <!-- ====================================================================== -->
 ### New icons for breakpoints, conditional breakpoints, and logpoints
 
+Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead of a red circle.
+
 The **Sources** panel has new designs for breakpoints, conditional breakpoints, and logpoints.  Breakpoints are represented by a red circle, just like [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio](https://visualstudio.microsoft.com/).  Icons are added to differentiate conditional breakpoints and logpoints.
 
+<!-- todo: update capture -->
 ![Breakpoints.](../../media/2020/06/breakpoints.msft.png)
 
 Chromium issue [#1041830](https://crbug.com/1041830)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Pause code with breakpoints](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/breakpoints)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Download the Microsoft Edge preview channels
 

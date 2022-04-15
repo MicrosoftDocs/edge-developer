@@ -17,7 +17,6 @@ ms.date: 06/02/2021
 > [Microsoft Edge | State of the Platform](https://www.youtube.com/watch?v=sU0WRZ0kkNo) - Microsoft Edge brings a compelling and consistent platform with tools for developers.  As our legacy browsers phase out of support, Edge will soon be the only supported browser from Microsoft on Windows 10 or later.  Join us to learn about the latest across the Edge platform, tools, and web apps.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## The Close button is no longer hidden when DevTools is narrow
 
@@ -35,7 +34,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Add tools quickly with the new More Tools button
 
@@ -59,7 +57,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improvements for hovering, selecting, and closing tools
 
@@ -96,7 +93,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Better support for screen readers in the Console
 
@@ -120,7 +116,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Source Order Viewer
 
@@ -144,7 +139,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## User-Agent Client Hints for devices in the Network conditions tab
 
@@ -166,7 +160,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
 
@@ -181,7 +174,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### In-context documentation and UI to make it easier to use the DevTools extension
 
@@ -211,7 +203,6 @@ See also:
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### CSS Grid editor
 
@@ -232,7 +223,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Support for const redeclarations in the Console
 
@@ -256,7 +246,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New shortcut to view iframe details
 
@@ -279,7 +268,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Enhanced CORS debugging support
 
@@ -298,7 +286,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Renamed XHR filter to Fetch\/XHR
 
@@ -319,7 +306,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Filter Wasm resource type in the Network tool
 
@@ -338,7 +324,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Compute Intersections are now included in the Performance tool
 

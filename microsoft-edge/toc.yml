@@ -115,7 +115,7 @@
         - name: Experimental features
           items:
 
-            - name: Experimental features overview
+            - name: Experimental features
               href: devtools-guide-chromium/experimental-features/index.md
               displayName: Experimental features, settings
 
@@ -296,6 +296,10 @@
 # Application tool ------------------------------------------------------------
             - name: Application tool, for storage
               items:
+                - name: Application tool, to manage storage
+                  href: devtools-guide-chromium/storage/application-tool.md
+                  displayName: Application tool
+
                 - name: View, edit, and delete cookies
                   href: devtools-guide-chromium/storage/cookies.md
                   displayName: Application tool

@@ -32,7 +32,6 @@ The following sections are a list of announcements you may have missed from the 
 <!-- ====================================================================== -->
 ### Accessibility improvements to the DevTools
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.
@@ -53,7 +52,6 @@ See also:
 <!-- ====================================================================== -->
 ### Using the DevTools in other languages
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you can now use in one of 10 languages besides English:
@@ -98,7 +96,6 @@ See also:
 <!-- ====================================================================== -->
 ### webhint Microsoft Edge extension
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://webhint.io).
@@ -114,7 +111,6 @@ See also:
 <!-- ====================================================================== -->
 ### 3D View
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.

@@ -14,7 +14,6 @@ The following sections list the announcements from the Microsoft Edge DevTools t
 If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## New DevTools UI available (in preview)
 
@@ -42,7 +41,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Console can once again appear in the top and bottom panels
 
@@ -68,7 +66,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools Visual Studio Code extension
 
@@ -104,7 +101,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Sources tool now notifies you when sourcemaps can't be loaded
 
@@ -130,7 +126,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Opening source files in Visual Studio Code now integrates better with the Sources tool
 
@@ -156,7 +151,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Selecting the dropdown triangle icon in the DevTools UI now opens the menu
 

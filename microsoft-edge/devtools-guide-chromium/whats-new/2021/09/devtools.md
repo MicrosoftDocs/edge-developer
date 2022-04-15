@@ -12,7 +12,6 @@ ms.date: 09/03/2021
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Search for Console errors on the web
 
@@ -32,7 +31,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## DevTools extension for Visual Studio Code includes the latest tools, theme support, and helpful links
 
@@ -61,7 +59,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Breakpoint icons are now displayed when using Visual Studio Code themes
 
@@ -83,7 +80,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Navigate to the More Tools button with the keyboard
 

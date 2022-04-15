@@ -26,7 +26,6 @@ ms.date: 05/04/2021
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Group tools together in Focus Mode
 
@@ -48,7 +47,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
 
@@ -68,7 +66,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Customize keyboard shortcuts in Settings
 
@@ -101,7 +98,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools for Visual Studio Code extension update 1.1.4
 
@@ -125,7 +121,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved CSS flexbox editing with visual flexbox editor and multiple overlays
 
@@ -149,7 +144,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Keyboard navigation improvements for network requests
 
@@ -175,7 +169,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Filtering in the Console is more consistent
 
@@ -205,7 +198,6 @@ See also:
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### The Console now escapes double quote characters
 
@@ -220,7 +212,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Emulate the CSS color-gamut media feature
 
@@ -244,7 +235,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Improved Progressive Web Apps tooling
 
@@ -255,7 +245,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### PWA installability warning in the Console
 
@@ -270,7 +259,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### PWA description length warning in the Manifest pane
 
@@ -287,7 +275,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New Remote Address Space column in the Network tool
 
@@ -317,7 +304,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Display allowed and disallowed features in the Frame details view
 
@@ -332,7 +318,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New SameParty column in the Cookies pane
 
@@ -347,7 +332,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### fn.displayName property in the Console tool is now deprecated
 
@@ -362,7 +346,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Full accessibility tree view in the Elements tool
 

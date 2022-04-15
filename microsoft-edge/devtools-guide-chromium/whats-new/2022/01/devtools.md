@@ -14,7 +14,6 @@ The following sections list the announcements from the Microsoft Edge DevTools t
 If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Introducing the Detached Elements tool
 
@@ -43,7 +42,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools extension for Visual Studio Code
 
@@ -56,7 +54,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Screencast enhancements, deprecation warnings, and new launch options for Microsoft Edge
 
@@ -82,7 +79,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improvements and bug fixes for Focus Mode
 
@@ -104,7 +100,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## 3D View tool supports changing color themes in DevTools
 
@@ -122,7 +117,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 

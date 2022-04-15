@@ -38,21 +38,17 @@ If you are using a Linux environment in your continuous integration and delivery
 
 ![DevTools in Microsoft Edge on Linux.](../../media/2020/11/edge-on-linux.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Use WebDriver to automate Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved webhint and platform tips in the Issues tool
 
 <!-- Title: Improvements to Issues tool and webhint integration  -->
 <!-- Subtitle: Categories and third-party filtering make it easier to survey issues in the Issues tool.  Issues surfaced by webhint now have improved code snippets and documentation links to help you fix problems in your website.  -->
 
-An open-source tool, [webhint](https://webhint.io), provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85](../06/devtools.md#webhint-feedback-in-the-issues-panel), review webhint feedback in the [Issues](../../../issues/index.md) tool.  Issues that appear in the **Issues** tool are now easier to review with the addition of the following categories.
+[webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  Starting with [Microsoft Edge version 85](../06/devtools.md#webhint-feedback-in-the-issues-panel), see webhint feedback in the [Issues](../../../issues/index.md) tool.  Issues that appear in the **Issues** tool are now easier to see with the addition of the following categories.
 
 * [Accessibility](https://webhint.io/docs/user-guide/hints/accessibility)
 * [Compatibility](https://webhint.io/docs/user-guide/hints/compatibility)
@@ -63,7 +59,7 @@ An open-source tool, [webhint](https://webhint.io), provides real-time feedback 
 
 You can now filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.
 
-To help you review issues revealed by [webhint](https://webhint.io), the **Issues** tool now displays the following information:
+To help you see issues that are found by [webhint](https://webhint.io), the **Issues** tool now displays the following information:
 
 *  Improved code snippets.
 *  Links to other relevant panels.
@@ -71,19 +67,18 @@ To help you review issues revealed by [webhint](https://webhint.io), the **Issue
 
 ![Issues tool.](../../media/2020/11/issues-webhints.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Find and fix problems using the Issues tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/issues/)
+* [The webhint extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/webhint)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Composited Layers are now in 3D View
 
 <!-- Title: 3D View is now integrated with Composited Layers  -->
 <!-- Subtitle: Composited Layers are now in 3D View.  -->
+
+Update: This feature has been released and is no longer experimental.  See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
 
 ![Experimental feature](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -91,14 +86,7 @@ You can now visualize **Layers** content alongside z-index values and the Docume
 
 ![Composited Layers pane.](../../media/2020/11/experiments-layers.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## CSS variable definitions in Styles pane
 
@@ -125,7 +113,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Service worker debugging improvements
 
@@ -143,7 +130,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Application tool
 
@@ -173,7 +159,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Network tool
 
@@ -193,7 +178,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Sources tool
 
@@ -216,7 +200,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Copy property value of a network request
 
@@ -245,7 +228,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Customize multi-press keyboard shortcuts
 
@@ -267,7 +249,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## DevTools now match browser language
 
@@ -288,7 +269,6 @@ See also:
 [!INCLUDE [Chromium What's New note](../../includes/chromium-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New CSS angle visualization tools
 
@@ -309,7 +289,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Simulate storage quota size in the Storage pane
 
@@ -330,7 +309,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Report CORS errors in the Network tool
 
@@ -345,34 +323,39 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Frame details view updates
 
+In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.  
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
+See also:
+* [Application tool, to manage storage](../../../storage/application-tool.md)
+
+
 <!-- ====================================================================== -->
 #### Cross-origin isolation information in the Frame details view
 
-The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers can be shared using `postMessage()`.  A deprecation warning appears if the SAB and `postMessage()` is currently available, but the context isn't cross-origin isolated.  For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, see [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).  To review real-time updates of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
+In the **Application** tool, there's a **Frames** section that provides a detailed view for each frame.  When you select a frame, the frame detail page appears, including the **Security & Isolation** section.
+
+The cross-origin isolated status is now displayed under the **Security & Isolation** section.  The new **API availability** section displays the availability of `SharedArrayBuffer`s (SAB) and whether the buffers can be shared using `postMessage()`.  A deprecation warning appears if the SAB and `postMessage()` is currently available, but the context isn't cross-origin isolated.
 
 ![Cross-origin information.](../../media/2020/11/frame-cross-origin-isolated-api.msft.png)
 
-<!--
+For more information about cross-origin isolation and why it is required for features like `SharedArrayBuffers`, see [WindowOrWorkerGlobalScope.crossOriginIsolated](https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/crossOriginIsolated).
+
+For real-time updates of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
+
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### New Web Workers information in the Frame details view
 
 DevTools now organizes web workers under the relevant parent frame.  For example, if the `someName` frame creates `worker.js`, then `worker.js` appears under `someName` in the **Frames** list.  To view the details of the web worker:
 
-1. Open **Application** tool.
-1. Expand a frame that contains web workers.
+1. Open the **Application** tool.
+1. In the list on the left, in the **Frames** section, expand a frame that contains web workers.
 1. Expand the **Workers** tree.
 1. Click a worker.
 
@@ -380,28 +363,26 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 ![Web workers information.](../../media/2020/11/application-frames-service-workers.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Display opener frame details for opened windows
 
 DevTools now organizes opened [Windows](https://developer.mozilla.org/docs/Web/API/Window#Constructors) under the relevant parent [frame](https://developer.mozilla.org/docs/Web/API/Window/frames).  For example, if the `top` frame opens a `Window` to `https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium`, then the `Window` appears under `top` in the **Frames** list.
 
-To reveal the frame responsible for opening another Window in the **Elements** tool:
+To reveal the frame that's responsible for opening another Window, and see that frame in the **Elements** tool:
 
-1. Open the **Frames** tree.
+1. Open the **Application** tool.
+1. On the left, in the **Frames** section at the bottom, expand a frame.
 1. Expand **Opened Windows** and click the `Window` for the parent frame you want to know about.
 1. Click the **Opener Frame** link.
 
 The details are displayed about which frame caused the opening of another `Window`.  To reveal the opener in the **Elements** tool:
 
-1. Open the **Frames** tree.
+1. Open the **Application** tool.
+1. On the left, in the **Frames** section at the bottom, expand a frame.
 1. Click an opened window to open the `Window` details.
 1. Click the **Opener Frame** link.
 
@@ -409,35 +390,27 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 ![Opened frame details.](../../media/2020/11/application-frames-opened-windows-security-opener-frame.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Copy stacktrace for network initiator
 
-To copy the stacktrace to your clipboard, right-click the stacktrace, and then select **Copy** > **Copy stacktrace**.
-
-For the history of this feature in the Chromium open-source project, see Issue [1139615](https://crbug.com/1139615).
+In the **Network** tool, to copy the stacktrace to your clipboard, right-click the stacktrace, and then select **Copy** > **Copy stacktrace**:
 
 ![Copy stacktrace.](../../media/2020/11/copy-stacktrace.msft.png)
 
-<!--
+For the history of this feature in the Chromium open-source project, see Issue [1139615](https://crbug.com/1139615).
+
 See also:
-* []()
-* []()
--->
+* [Display the stack trace that caused a request](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-the-stack-trace-that-caused-a-request) in _Network features reference_
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Preview Wasm variable value on mouseover
 
-Use this feature to review the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
+In the **Sources** tool, use this feature to see the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
 
 ![Preview Wasm variable on mouseover.](../../media/2020/11/wasm-mouseover.msft.png)
 
@@ -448,7 +421,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Consistent units of measurement for sizes of files and memory
 

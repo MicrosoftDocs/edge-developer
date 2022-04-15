@@ -14,11 +14,9 @@ The following sections list the announcements from the Microsoft Edge DevTools t
 If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Catch up on the latest and greatest features in Microsoft Edge
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Year-in-review: Microsoft Edge for developers -->
 <!-- Subtitle: Catch up on the latest in developer tooling from Microsoft Edge. -->
@@ -36,11 +34,9 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Automate IE mode with Internet Explorer Driver
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: New support for automating IE mode -->
 <!-- Subtitle: Test your legacy websites and apps by automating IE mode with Internet Explorer Driver. -->
@@ -54,11 +50,9 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Emulate forced-colors mode
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Emulation of forced colors in the Rendering tool -->
 <!-- Subtitle: You can now do a spot check of what your product will look like on a device running in forced-colors mode, without having to change your operating system settings. -->
@@ -82,11 +76,9 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Activity icons in the Event Log of the Performance tool now have tooltips
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
 <!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
@@ -104,11 +96,9 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Shallow sizes in the Memory tool are now represented as decimal values
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Better understand shallow sizes in the Memory tool -->
 <!-- Subtitle: The Memory tool has been updated to report shallow size in decimal values as a percentage of the heap. -->
@@ -126,11 +116,9 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Fix: The Search text box in the Network tool can now be resized
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Fix: Resize the Search text box in the Network tool -->
 <!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search text box, so that the Refresh and Clear buttons remain visible. -->
@@ -148,11 +136,9 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Fix: Icons for service workers and script tags in the Elements tool are now aligned
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->

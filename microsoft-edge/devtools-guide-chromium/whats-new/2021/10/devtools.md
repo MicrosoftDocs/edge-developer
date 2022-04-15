@@ -14,7 +14,6 @@ The top of this page lists announcements from the Microsoft Edge DevTools team, 
 To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  Whether you are on Windows, Linux, or macOS, consider using one of the preview channels of Microsoft Edge as your default development browser.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Sync live changes from the Styles tool in the Visual Studio Code extension
 
@@ -36,7 +35,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## All error and warning messages in the Console now have a Search Web icon
 
@@ -56,7 +54,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved keyboard access for defining User-Agent Client Hints
 
@@ -85,7 +82,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Console filters now display grouped messages if the filter matches the group title
 
@@ -121,7 +117,6 @@ See also:
 The following are some of the additional features that are available in Microsoft Edge version 95 that were contributed to the open-source Chromium project.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved the display of properties
 
@@ -157,7 +152,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Snippets are now sorted in the Sources panel
 
@@ -176,7 +170,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Improved UI for DevTools command menu
 

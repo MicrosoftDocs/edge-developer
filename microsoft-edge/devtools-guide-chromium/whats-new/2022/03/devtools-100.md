@@ -16,7 +16,6 @@ If you're on Windows, Linux, or macOS, consider using the Canary preview channel
 To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Join the Microsoft Edge DevTools community at GitHub
 
@@ -36,7 +35,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Filter heap snapshots summary by node type
 
@@ -56,7 +54,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Use DevTools in Czech and Vietnamese
 
@@ -76,7 +73,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## The Network tool now displays how a request was fulfilled
 
@@ -101,7 +97,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Filter messages in the Issues tool by severity and browser target
 
@@ -137,7 +132,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## When importing a performance profile, links now map to your original code
 
@@ -163,7 +157,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Fix: The Waterfall view in the Network tool now matches Visual Studio Code themes
 

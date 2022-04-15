@@ -67,6 +67,28 @@ To use the **Network Console** starting from the **Network** tool:
 
 
 <!-- ====================================================================== -->
+## Save and export Collections, Environments, and environment variables
+
+You can:
+*  Save and export Collections.
+*  Save and export Environments.
+*  Edit and export sets of environment variables.
+
+Entering a name for the new environment:
+
+![Entering a name for the new environment.](images/network-console-environments-new-name.msft.png)
+
+Selecting the format for the new environment:
+
+![Selecting the format for the new environment.](images/network-console-environments-new-format.msft.png)
+
+The **Network Console** tool is compatible with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.
+
+See also:
+* [Save and export using the Network Console](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#save-and-export-using-the-network-console) in _What's New in DevTools (Microsoft Edge 87)_
+
+
+<!-- ====================================================================== -->
 <!-- ## See also -->
 
 <!-- * [edge-devtools-network-console repo](https://github.com/microsoft/edge-devtools-network-console) -->

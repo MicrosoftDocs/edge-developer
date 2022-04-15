@@ -29,7 +29,6 @@ ms.date: 12/13/2021
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://aka.ms/microsoftedge) and [follow us on Twitter](https://aka.ms/twitter/edgedevtools).
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Use the DevTools in Windows high contrast mode
 
@@ -48,7 +47,6 @@ See also:
 * [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Match keyboard shortcuts in the DevTools to Visual Studio Code
 
@@ -80,7 +78,6 @@ See also:
 * [Customize keyboard shortcuts](../../../customize/shortcuts.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Remote debug Surface Duo emulators
 
@@ -97,7 +94,6 @@ The `edge://inspect` page in a desktop instance of Microsoft Edge shows the **Su
 Click **inspect** for the tab or PWA that you want to debug, to open DevTools.  Follow the step-by-step guide to remotely debug your web content on the Surface Duo emulator: [Remotely debug Surface Duo emulators](../../../remote-debugging/surface-duo-emulator.md).
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Resize the DevTools drawer more easily
 
@@ -112,7 +108,6 @@ Starting with Microsoft Edge 84, you can resize the drawer by hovering over the 
 Chromium issue [#1076112](https://crbug.com/1076112)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Screencasting navigation buttons display focus
 
@@ -125,7 +120,6 @@ In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.
 Chromium issue [#1081486](https://crbug.com/1081486)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Network panel Details pane is now accessible
 
@@ -143,7 +137,6 @@ Chromium issue [#963183](https://crbug.com/963183)
 The following sections announce additional features available in Microsoft Edge 84 that were contributed to the open source Chromium project.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Fix site issues with the new Issues tool in the DevTools Drawer
 
@@ -158,7 +151,6 @@ To get started, see [Find and fix problems using the Issues tool](../../../issue
 Chromium issue [#1068116](https://crbug.com/1068116)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### View accessibility information in the Inspect Mode tooltip
 
@@ -177,7 +169,6 @@ See also:
 * [Analyze pages using the Inspect tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/inspect)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Performance panel updates
 
@@ -185,7 +176,6 @@ See also:
 * [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### View Total Blocking Time information in the footer
 
@@ -209,7 +199,6 @@ See also:
 * [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Layout Shift events in the new Experience section
 
@@ -226,7 +215,6 @@ See also:
 * [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### More accurate promise terminology in the Console
 
@@ -244,7 +232,6 @@ See also:
 * [Console overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Styles pane updates
 
@@ -252,7 +239,6 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Support for the revert keyword
 
@@ -266,7 +252,6 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Image previews
 
@@ -280,7 +265,6 @@ See also:
 * [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Color Picker now uses space-separated functional color notation
 
@@ -300,7 +284,6 @@ The space-separated argument syntax has been supported in most browsers for a wh
 Chromium issue [#1072952](https://crbug.com/1072952)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Deprecation of the Properties pane in the Elements panel
 
@@ -314,7 +297,6 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 * [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### App shortcuts support in the Manifest pane
 

@@ -32,7 +32,6 @@ The following sections are a list of announcements you may have missed from the 
 <!-- ====================================================================== -->
 ### Accessibility improvements to the DevTools
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 The DevTools team has contributed 170 changes to Chromium to address high-impact color contrast, keyboard, and screen reader issues in the DevTools.  Every developer building the web should be able to use the DevTools.
@@ -53,7 +52,6 @@ See also:
 <!-- ====================================================================== -->
 ### Using the DevTools in other languages
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you can now use in one of 10 languages besides English:
@@ -94,7 +92,6 @@ See also:
 <!-- ====================================================================== -->
 ### webhint Microsoft Edge extension
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 The webhint Microsoft Edge extension allows you to easily scan your web page and get feedback on accessibility, browser compatibility, security, performance, and more within the DevTools.  Read more at [https://webhint.io](https://aka.ms/webhint).
@@ -110,7 +107,6 @@ See also:
 <!-- ====================================================================== -->
 ### 3D View
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 Use the **3D View** to debug your web application by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.
@@ -134,7 +130,6 @@ The DevTools team has also released some extensions for [Visual Studio Code](htt
 
 #### Elements for Microsoft Edge
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 Use the Elements tool from within Visual Studio Code by adding the [Elements for Microsoft Edge ](https://aka.ms/elements4code) Visual Studio Code extension.
@@ -148,7 +143,6 @@ For more information, check out [Microsoft Edge DevTools extension for Visual St
 
 #### Debugger for Microsoft Edge
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 With the [Debugger for Microsoft Edge](https://aka.ms/debugger4code) Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
@@ -160,7 +154,6 @@ Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extensi
 
 #### webhint
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 The [webhint](https://aka.ms/webhint4code) Visual Studio Code extension uses `webhint` to improve your web page while you're writing it! This extension runs and reports diagnostics on your workspace files based on `webhint` analysis.
@@ -177,7 +170,6 @@ See also:
 <!-- ====================================================================== -->
 ### Visual Studio integration
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 In Visual Studio 2019 version 16.2 or later, use the Visual Studio debugger to debug JavaScript running in Microsoft Edge.  [Download Visual Studio 2019](https://aka.ms/vs/download) to try this feature out.
@@ -193,7 +185,6 @@ To learn more about debugging Microsoft Edge from Visual Studio, see [Visual Stu
 <!-- ====================================================================== -->
 ### Tracking prevention Console messages
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
 Tracking prevention is a unique feature in Microsoft Edge that blocks you from being tracked by a website before you visited it.  The default tracking prevention setting is Balanced mode, which blocks 3rd party trackers and known malicious trackers for an experience that balances privacy and web compatibility.  To give you more insight into the compatibility of your web page when certain trackers are blocked, The Microsoft Edge team added warning messages in the **Console** when a tracker is blocked.

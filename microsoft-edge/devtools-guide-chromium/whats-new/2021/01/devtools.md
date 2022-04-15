@@ -26,7 +26,6 @@ ms.date: 05/04/2021
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## What's New is now Welcome
 
@@ -48,7 +47,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Visual Font Editor in the Styles pane
 
@@ -77,7 +75,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## CSS Flexbox debugging tools
 
@@ -111,12 +108,11 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Display alignment icons and visual guides when Flexbox layouts change using CSS properties
 
-<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties  -->
-<!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you review the effect a property has on your Flexbox layout -->
+<!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties -->
+<!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you see the effect a property has on your Flexbox layout. -->
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -124,7 +120,7 @@ When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** p
 
 The autocomplete menu now displays icons that indicate the effect of alignment properties such as `align-content` and `align-items`.
 
-Additionally, DevTools now displays a guiding line to help you better review the `align-items` CSS property.  The `gap` CSS property is supported as well.  In the following figure, the `gap` CSS property is set to `gap: 12px;` and the hatching pattern for each gap is displayed.
+Additionally, DevTools now displays a guiding line to help you better see the `align-items` CSS property.  The `gap` CSS property is supported as well.  In the following figure, the `gap` CSS property is set to `gap: 12px;` and the hatching pattern for each gap is displayed.
 
 Autocomplete menu highlighted for CSS properties that start with `align-`:
 
@@ -141,7 +137,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Add tools quickly with new More Tools button
 
@@ -161,7 +156,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Assistive technologies now announce position and count of CSS suggestions
 
@@ -183,7 +177,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Emulate Surface Duo and Samsung Galaxy Fold
 
@@ -211,7 +204,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.2
 
@@ -231,14 +223,12 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Capture node screenshot beyond viewport
 
@@ -246,23 +236,18 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 
 ![Capture node screenshot highlighted on the context menu in the Elements tool.](../../media/2021/01/capture-node-screenshot.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Capture node screenshots using the Elements tool context menu](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's new in DevTools (Microsoft Edge 86)_
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Elements tool updates
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Support forcing the :target CSS state
 
-You can now use DevTools to force the [:target](https://developer.mozilla.org/docs/web/css/:target) CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, navigate to [CSS :target demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/#section-1).  For the history of this feature in the Chromium open-source project, navigate to Issue [1156628](https://crbug.com/1156628).
+In the **Elements** tool, you can now force the [:target](https://developer.mozilla.org/docs/web/css/:target) CSS pseudo-class.  The `:target` pseudo-class is triggered when a unique element (the target element) has an `id` that matches a fragment of the URL.  For example, the `http://www.example.com/index.html#section1` URL triggers the `:target` pseudo-class on an HTML element with `id="section1"`.  To try a demo with section 1 highlighted, see [CSS :target demo](https://microsoftedge.github.io/Demos/devtools-target-pseudo/#section-1).
 
 Webpage highlighted with no forced CSS:
 
@@ -272,6 +257,8 @@ Webpage highlighted with no forced CSS:
 
 ![:target CSS forced and webpage highlighted.](../../media/2021/01/elements-styles-target-forced.msft.png)
 
+For the history of this feature in the Chromium open-source project, see Issue [1156628](https://crbug.com/1156628).
+
 <!--
 See also:
 * []()
@@ -279,7 +266,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Use Duplicate elements to copy elements
 
@@ -294,7 +280,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Color pickers for custom CSS properties
 
@@ -309,7 +294,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Copy CSS classes and properties
 
@@ -344,7 +328,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Cookies updates
 
@@ -355,7 +338,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### New option to display URL-decoded cookies
 
@@ -370,7 +352,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Filter and clear visible cookies
 
@@ -387,7 +368,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### New option to clear third-party cookies in the Storage pane
 
@@ -406,7 +386,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Network tool updates
 
@@ -417,7 +396,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Persist Record network log setting
 
@@ -432,7 +410,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Online option is now No throttling option
 
@@ -447,7 +424,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New copy options in the Console tool, Sources tool, and Styles pane
 
@@ -458,7 +434,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Copy object in the Console and Sources tool
 
@@ -479,7 +454,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Copy file name in the Sources tool and Styles pane
 
@@ -500,7 +474,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Updates to Frame details
 
@@ -511,7 +484,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Service Workers information in Frame details
 
@@ -526,7 +498,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Measure Memory information in Frame details
 
@@ -541,7 +512,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Dropped frames in the Performance tool
 
@@ -556,7 +526,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
 

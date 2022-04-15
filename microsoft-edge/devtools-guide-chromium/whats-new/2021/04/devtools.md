@@ -25,14 +25,13 @@ ms.date: 05/06/2021
 [!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Wavy underlines highlight code issues and improvements in Elements tool
 
 <!--  Title: Get code hints in Elements tool  -->
 <!--  Subtitle: Wavy underlines like the ones you see in Visual Studio Code now display in the Elements tool.  Underlines alert you to code issues related to accessibility, compatibility, security, performance, and  so on.  -->
 
-In most modern IDEs, wavy underlines under text indicate syntax errors.   In Microsoft Edge version 91 or later, wavy underlines display under HTML in the **DOM** view of the **Elements** tool.  The wavy underlines indicate code issues and suggestions related to accessibility, compatibility, performance, and so on.  For more information about how to review and edit issues, see [Find and fix problems using the Issues tool](../../../issues/index.md).
+In most modern IDEs, wavy underlines under text indicate syntax errors.   In Microsoft Edge version 91 or later, wavy underlines display under HTML in the **DOM** view of the **Elements** tool.  The wavy underlines indicate code issues and suggestions related to accessibility, compatibility, performance, and so on.  For more information about how to view and edit issues, see [Find and fix problems using the Issues tool](../../../issues/index.md).
 
 To open the **Issues** tool and learn more about the issue and how to fix it:
 
@@ -55,7 +54,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
 
@@ -83,7 +81,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Service worker update timeline
 
@@ -109,7 +106,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Progressive Web Apps no longer display warnings for non-square icons
 
@@ -130,7 +126,7 @@ In Microsoft Edge version 91 or later, no error is displayed when you provide at
 
 ![In Microsoft Edge version 91 or later, no error is displayed when you provide at least one square icon.](../../media/2021/04/edge91-application-manifest-errors-and-warnings.msft.png)
 
-To review errors and warnings in your Web App Manifest, select **Application** tool > **Application** section > **Manifest**.  Errors and warnings are listed under the **Errors and Warnings** heading.  For more information about the Web App Manifest, see [Use the Web App Manifest to integrate your Progressive Web App into the Operating System](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md).  To create icons to include in your Web App Manifest, go to the [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator).  For real-time updates on this feature in the Chromium open-source project, see Issue [1185945](https://crbug.com/1185945).
+To view errors and warnings in your Web App Manifest, select **Application** tool > **Application** section > **Manifest**.  Errors and warnings are listed under the **Errors and Warnings** heading.  For more information about the Web App Manifest, see [Use the Web App Manifest to integrate your Progressive Web App into the Operating System](../../../../progressive-web-apps-chromium/how-to/web-app-manifests.md).  To create icons to include in your Web App Manifest, go to the [PWABuilder Image Generator](https://www.pwabuilder.com/imageGenerator).  For real-time updates on this feature in the Chromium open-source project, see Issue [1185945](https://crbug.com/1185945).
 
 <!--
 See also:
@@ -139,7 +135,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Localized DevTools now supported in Chromium-based browsers
 
@@ -157,7 +152,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Use the keyboard to navigate to CSS variables
 
@@ -175,16 +169,17 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Issues are automatically sorted by severity
 
 <!-- Title: Display Issues in severity order  -->
 <!-- Subtitle: Entries in the Issues tool now display in severity order and allow you to focus your updates on the most important issues. -->
 
-The **Issues** tool displays recommendations to improve your website, including accessibility, performance, security, and so on. Based on your feedback, issues are now automatically sorted by severity.  In each feedback category, each issue marked as an **Error** appears first, followed each issue marked as a **Warning**, then each issue marked as a **Tip**.  To help you refine your issues, extra filter options are planned for a future update.  For more information about how to review issues, see [Find and fix problems using the Issues tool](../../../issues/index.md).
+The **Issues** tool displays recommendations to improve your website, including accessibility, performance, security, and so on. Based on your feedback, issues are now automatically sorted by severity.  In each feedback category, each issue marked as an **Error** appears first, followed each issue marked as a **Warning**, then each issue marked as a **Tip**.  To help you refine your issues, extra filter options are planned for a future update.
 
 ![The Issues tool displays issues sorted by severity.](../../media/2021/04/elements-issues-ordered-issues.msft.png)
+
+For more information, see [Find and fix problems using the Issues tool](../../../issues/index.md).
 
 <!--
 See also:
@@ -193,7 +188,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.7
 
@@ -225,7 +219,6 @@ See also:
 [!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Visualize CSS scroll-snap
 
@@ -246,7 +239,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New Memory Inspector tool
 
@@ -256,14 +248,10 @@ To learn more about debugging in the **Sources** tool, see [Using the Debugger p
 
 ![The Memory Inspector tool.](../../media/2021/04/sources-memory-write-wasm-breakpoint-scope-reveal-in-memory-inspector-panel.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-inspector/memory-inspector-tool)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New Badge settings pane in the Elements tool
 
@@ -284,7 +272,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Enhanced image preview with aspect ratio information
 
@@ -315,7 +302,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New options to configure Content-Encodings in the Network conditions tool
 
@@ -338,7 +324,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Styles pane enhancements
 
@@ -349,7 +334,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### New shortcut to display computed value in the Styles pane
 
@@ -368,7 +352,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Support for the accent-color keyword
 
@@ -383,7 +366,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Display details about blocked features in the Frame details view
 
@@ -391,12 +373,12 @@ Permissions Policy is a web platform API that gives a website the ability to all
  See [Permissions Policy Explainer](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md).  To display the details on why a feature is blocked:
 
 1. Go to [OOPIF Permissions Policy](http://permission-policy-demo.glitch.me).
-1. Navigate to the **Application** tool.
+1. Open the **Application** tool.
 1. Click a frame.
-1. Navigate to the **Permissions Policy** section.
-1. Navigate to the **Disabled Features** property.
+1. Go to the **Permissions Policy** section.
+1. Locate the **Disabled Features** property.
 1. Click **Show details**.
-1. Click the icon next to each policy to navigate to the `iframe` or network request that blocked the feature.
+1. Click the icon next to each policy to go to the `iframe` or network request that blocked the feature.
 
 To view the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
 
@@ -409,7 +391,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Filter experiments in the Experiments setting
 
@@ -428,7 +409,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New Vary Header column in the Cache storage pane
 
@@ -443,7 +423,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Sources tool improvements
 
@@ -454,14 +433,13 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Support for new JavaScript features
 
 DevTools now support the new [Private brand checks a.k.a. #foo in obj](https://v8.dev/features/private-brand-checks) JavaScript language feature.  The private brand checks feature extends the [in operator](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/in) to support [Private class fields](https://v8.dev/features/class-fields#private-class-fields) on a specific object.  Try it in the **Console** and **Sources** tools.  Also, to inspect the private fields:
 
-1. Navigate to **debugger** pane.
-1. Navigate to the **Scope** section.
+1. Go to the **debugger** pane.
+1. Locate the **Scope** section.
 
 For the history of this feature in the Chromium open-source project, see Issue [11374](https://crbug.com/v8/11374).
 
@@ -474,7 +452,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Enhanced support for breakpoints debugging
 
@@ -487,7 +464,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Support hover preview with bracket notation
 
@@ -502,7 +478,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Improved outline of HTML files
 
@@ -517,7 +492,6 @@ See also:
 -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Proper error stack traces for Wasm debugging
 

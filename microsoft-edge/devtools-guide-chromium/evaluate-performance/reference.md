@@ -529,6 +529,27 @@ To view scroll performance issues:
 
 
 <!-- ====================================================================== -->
+## Disable local fonts
+
+In **Rendering** tool, use the **Disable local fonts** checkbox to emulate missing `local()` sources in `@font-face` rules.
+
+For example, when the `Rubik` font is installed on your device and the `@font-face src` rule uses it as a `local()` font, Microsoft Edge uses the local font file from your device.
+
+When **Disable local fonts** is selected, DevTools ignores the `local()` fonts and fetches each font from the network:
+
+![Emulate missing local fonts.](../../media/2020/08/disable-font.msft.png)
+
+This feature is useful if you use two different copies of the same font during development, such as:
+*  A local font for your design tools.
+*  A web font for your code.
+
+Use **Disable local fonts** to make it easier to:
+*  Debug and measure loading performance and optimization of web fonts.
+*  Verify accuracy of your CSS `@font-face` rules.
+*  Discover differences between local versions installed on your device and a web font.
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/reference) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).

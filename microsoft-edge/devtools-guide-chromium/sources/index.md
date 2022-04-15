@@ -470,7 +470,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 1. In the **Navigator** pane (on the left), select the **Page** tab, and then select the JavaScript file, such as `get-started.js`.
 
-1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.
+1. In the **Editor** pane, select a line number near a suspect line of code, to set a breakpoint on that line.  In the figure below, a breakpoint is set on the line `var sum = addend1 + addend2;`.  (Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead of a red circle.)
 
 1. In the webpage, enter values and submit the form.  For example, enter numbers, such as `5` and `1`, then select the button **Add Number 1 and Number 2**.
 

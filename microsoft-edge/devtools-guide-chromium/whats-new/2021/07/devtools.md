@@ -12,14 +12,13 @@ ms.date: 07/30/2021
 [!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Apply themes from Visual Studio Code to DevTools
 
 <!-- Title: Apply themes from Visual Studio Code to DevTools -->
 <!-- Subtitle: You can now use some of the most popular color themes from Visual Studio Code, such as Monokai and Solarized Dark, in Microsoft Edge DevTools. -->
 
-In addition to the existing light and dark themes, Microsoft Edge DevTools now supports some of the most popular color themes from Visual Studio Code.  To select a color theme, navigate to **Settings** and then select a theme from the **Theme** dropdown list.
+In addition to the existing light and dark themes, Microsoft Edge DevTools now supports some of the most popular color themes from Visual Studio Code.  To select a color theme, click the DevTools **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button, and then select a theme from the **Theme** dropdown list.
 
 ![Color themes for DevTools.](../../media/2021/07/all-devtools-themes.msft.png)
 
@@ -40,16 +39,11 @@ Dark themes:
 
 See [Apply color themes to DevTools](../../../customize/theme.md).
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Debug DOM node memory leaks with the new Detached Elements tool
+
+Update: This feature has been released and is no longer experimental.  See [Debug DOM memory leaks with the Detached Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks).
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -64,17 +58,7 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 
 To turn on this experiment, navigate to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**.
 
-<!-- See [Detached elements](../../../experimental-features/index.md#detached-elements). -->
-<!-- todo: link directly to the subheading in the page, when available; test the subheading link -->
 
-<!--
-See also:
-* []()
-* []()
--->
-
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## The Visual Studio Code debugger now integrates with the DevTools extension
 
@@ -100,14 +84,7 @@ For more information, see [Browser debugging with Microsoft Edge DevTools integr
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## New Fluent UI icons for DevTools
 
@@ -118,14 +95,7 @@ Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/
 
 ![DevTools implemented with Fluent UI design.](../../media/2021/07/fluent-ui.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Change the DevTools display language directly from Settings
 
@@ -138,14 +108,7 @@ Previously, to change the display language in DevTools, you had to change the br
 
 By default, DevTools matches your browser's display language.  See [Change DevTools language settings](../../../customize/localization.md).  For the history of this feature in the Chromium open-source project, see Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756).
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Copy a declaration in the Styles pane for CSS-in-JS libraries
 
@@ -166,14 +129,7 @@ Now in Microsoft Edge version 93, you can copy a single CSS declaration or all t
 
 To learn more about viewing and changing CSS, see [CSS features reference](../../../css/reference.md).
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Easier customization of User-Agent Client Hints
 
@@ -194,14 +150,7 @@ You can also override User-Agent Client Hints for the current page by using the 
 
 For more information about defining hints in the **Network conditions** tool, see [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).  For the history of this feature in the Chromium open-source project, see Issue [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299).
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Screen readers now announce errors, warnings, and issues in toolbar and Console
 
@@ -218,14 +167,7 @@ Now in Microsoft Edge version 93, screen readers correctly announce the type and
 
 For information about debugging Console errors, see [Fixing JavaScript errors that are reported in the Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, see [Find and fix problems using the Issues tool](../../../issues/index.md).  For the history of this feature in the Chromium open-source project, see Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208).
 
-<!--
-See also:
-* []()
-* []()
--->
 
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ## Copy as PowerShell in the Network tool now includes cookies
 
@@ -239,12 +181,6 @@ Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option
 ![The Copy as PowerShell command.](../../media/2021/07/copy-as-powershell.msft.png)
 
 For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).  For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->

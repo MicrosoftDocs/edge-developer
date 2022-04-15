@@ -33,7 +33,6 @@ Here are the new features available in DevTools in Microsoft Edge 83.
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow us on Twitter](https://twitter.com/EdgeDevTools).
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Remotely debug Microsoft Edge on Windows 10 or later Devices
 
@@ -46,7 +45,6 @@ Read our guide for setting up your Windows 10 device and your development machin
 Let us know about your remote debugging experience by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or clicking the [Send Feedback](../../../contact.md) icon.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New ways to access Settings
 
@@ -64,7 +62,6 @@ See also:
 * [DevTools customization and settings](../../../experimental-features/focus-mode.md#devtools-customization-and-settings) in _Simplify DevTools using Focus Mode_
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New and improved infobars
 
@@ -77,7 +74,6 @@ Chromium issue [#1056348](https://crbug.com/1056348)
 <!-- no link to regular docs, since this is a cross-feature UI -->
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Navigate the Color Picker with your keyboard
 
@@ -93,7 +89,6 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Properties tab now populates after a page refresh
 
@@ -111,7 +106,6 @@ See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Use the arrow keys to scroll in the Changes tool
 
@@ -138,7 +132,6 @@ See also:
 The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Emulate vision deficiencies
 
@@ -169,7 +162,6 @@ See also:
 * [Types of Colour Blindness](http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness), at Colourblindawareness.org.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Emulate locales
 
@@ -193,7 +185,6 @@ See also:
 * [Override geolocation with the Sensors tool](../../../device-mode/geolocation.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Cross-Origin Embedder Policy (COEP) debugging
 
@@ -215,9 +206,10 @@ See also:
 * [Block requests](../../../network/index.md#block-requests) in _Inspect network activity_.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New icons for breakpoints, conditional breakpoints, and logpoints
+
+Update: As of 2022, breakpoints are now indicated by a blue rectangle, instead of a red circle.
 
 The **Sources** panel has new icons for breakpoints, conditional breakpoints, and logpoints:
 
@@ -233,7 +225,6 @@ See also:
 * [Pause code with breakpoints](../../../javascript/breakpoints.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### View network requests that set a specific cookie path
 
@@ -242,7 +233,6 @@ Use the new `cookie-path` filter keyword in the **Network** tool to focus on the
 To discover more keywords like `cookie-path`, see [Filter requests by properties](../../../network/reference.md#filter-requests-by-properties) in _Network features reference_.
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Dock to left from the Command Menu
 
@@ -258,7 +248,6 @@ See also:
 * [Change DevTools placement (Undock, Dock to bottom, Dock to left)](../../../customize/placement.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### The Audits panel is now the Lighthouse panel
 
@@ -272,7 +261,6 @@ See also:
 * [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Delete all Local Overrides in a folder
 
@@ -288,7 +276,6 @@ See also:
 * [Override webpage resources with local copies (Overrides tab)](../../../javascript/overrides.md)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Updated Long tasks UI
 
@@ -303,7 +290,6 @@ Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevT
 Chromium issue [#1054447](https://crbug.com/1054447)
 
 
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Maskable icon support in the Manifest pane
 
