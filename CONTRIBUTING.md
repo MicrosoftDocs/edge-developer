@@ -26,7 +26,7 @@ To suggest a change to the docs:
 
 1.  When you are done, commit your changes and open a pull request.
 
-After you create the pull request, the Microsoft Edge Developer Docs team reviews it.  If your pull request is approved, updates are published to [Microsoft Edge Developer documentation](https://docs.microsoft.com/en-us/microsoft-edge/developer/).
+After you create the pull request, the Microsoft Edge Developer Docs team reviews it.  If your pull request is approved, updates are published to [Microsoft Edge Developer documentation](https://docs.microsoft.com/microsoft-edge/developer/).
 
 
 <!-- ====================================================================== -->
@@ -125,5 +125,5 @@ Be sure to include the topic title and the URL for the page.
 ## See also
 
 *  [Getting started with writing and formatting on GitHub](https://help.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
-*  [Docs Contributor Guide](https://docs.microsoft.com/en-us/contribute/)
+*  [Docs Contributor Guide](https://docs.microsoft.com/contribute/)
 *  [README](README.md)

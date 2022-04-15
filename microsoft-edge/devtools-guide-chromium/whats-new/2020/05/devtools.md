@@ -45,8 +45,8 @@ Note: DevTools currently supports high-contrast mode on Windows, but not on macO
 Chromium issue [#1048378](https://crbug.com/1048378)
 
 See also:
-* [Apply a color theme to DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/theme)
-* [Check for contrast issues with dark theme and light theme](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/test-dark-mode)
+* [Apply a color theme to DevTools](../../../customize/theme.md)
+* [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -79,7 +79,7 @@ The feature is currently available in Microsoft Edge 84 as an experiment, so ple
 Chromium issue [#174309](https://crbug.com/174309)
 
 See also:
-* [Customize keyboard shortcuts](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/shortcuts)
+* [Customize keyboard shortcuts](../../../customize/shortcuts.md)
 
 
 <!-- ====================================================================== -->

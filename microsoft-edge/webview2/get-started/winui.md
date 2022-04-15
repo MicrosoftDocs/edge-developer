@@ -22,7 +22,7 @@ This article covers how to set up your development tools and create an initial W
 Even if you have Visual Studio installed, read the following page and possibly update your software.
 
 1. In a new window or tab, open the page [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment) and then follow the steps on that page, to install Microsoft Visual Studio, such as Visual Studio 2022.
-<!-- clickable: https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment -->
+<!-- clickable: https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment -->
 
 1. If needed, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.
 

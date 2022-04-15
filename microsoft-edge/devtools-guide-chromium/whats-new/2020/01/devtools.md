@@ -137,8 +137,8 @@ See also:
 The DevTools team has also released some extensions for [Visual Studio Code](https://code.visualstudio.com) that let you use the power of the DevTools directly from your text editor! Check out the extensions below:
 
 See also:
-* [Visual Studio Code for web development](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/)
-* [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+* [Visual Studio Code for web development](../../../../visual-studio-code/index.md)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
 <!-- ====================================================================== -->
@@ -152,7 +152,7 @@ Use the Elements tool from within Visual Studio Code by adding the [Elements for
 
 Update: As of 2022, the **Elements for Microsoft Edge** extension is now the **Microsoft Edge DevTools extension for Visual Studio Code**.
 
-For more information, check out [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension).
+For more information, check out [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 
 <!-- ====================================================================== -->
@@ -164,7 +164,7 @@ With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/item
 
 ![The Debugger for Microsoft Edge Extension in Visual Studio Code.](../../images/2020/01/vscode-debugger.msft.png)
 
-Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.  See [Debug Microsoft Edge in Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/debugger-for-edge).
+Update: As of 2022, the **Debugger for Microsoft Edge Visual Studio Code extension** has been replaced by a built-in debugger for Microsoft Edge in Visual Studio Code.  See [Debug Microsoft Edge in Visual Studio Code](../../../../visual-studio-code/debugger-for-edge.md).
 
 
 <!-- ====================================================================== -->
@@ -240,8 +240,8 @@ Chromium issue [#924693](https://crbug.com/924693)
 ### Cookie-related updates
 
 See also:
-* [View, edit, and delete cookies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies)
-* [Display cookies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-cookies) in _Network features reference_
+* [View, edit, and delete cookies](../../../../devtools-guide-chromium/storage/cookies.md)
+* [Display cookies](../../../../devtools-guide-chromium/network/reference.md#display-cookies) in _Network features reference_
 
 
 <!-- ====================================================================== -->
@@ -292,7 +292,7 @@ Previously, the **Manifest** pane in the **Application** panel sent its own requ
 Chromium issue [#985402](https://crbug.com/985402)
 
 See also:
-* [Open the Cookies pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies#open-the-cookies-pane) in _View, edit, and delete cookies_
+* [Open the Cookies pane](../../../../devtools-guide-chromium/storage/cookies.md#open-the-cookies-pane) in _View, edit, and delete cookies_
 
 
 <!-- ====================================================================== -->
@@ -309,7 +309,7 @@ When you hover on the `content` value, the unescaped value is displayed.
 ![The unescaped value.](../../images/2020/01/unescapedstring.msft.png)
 
 See also:
-* [CSS features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference)
+* [CSS features reference](../../../../devtools-guide-chromium/css/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -320,8 +320,8 @@ The Console now provides more detail on why a source map failed to load or parse
 ![A source map loading error in the Console.](../../images/2020/01/sourcemap.msft.png)
 
 See also:
-* [Console overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
-* [Map the processed code to your original source code, for debugging](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/source-maps)
+* [Console overview](../../../../devtools-guide-chromium/console/index.md)
+* [Map the processed code to your original source code, for debugging](../../../../devtools-guide-chromium/javascript/source-maps.md)
 
 
 <!-- ====================================================================== -->
@@ -334,7 +334,7 @@ To prevent the default UI behavior that allows you to scroll well past the end o
 ![Scrolling past the end of a file is now disabled in the Sources panel.](../../images/2020/01/scrollingsources.msft.png)
 
 See also:
-* [Using the Editor pane to view or edit files](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_.
+* [Using the Editor pane to view or edit files](../../../../devtools-guide-chromium/sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->

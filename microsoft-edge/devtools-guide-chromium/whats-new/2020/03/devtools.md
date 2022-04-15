@@ -33,10 +33,9 @@ Here are the new features available in DevTools in Microsoft Edge 83.
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow us on Twitter](https://twitter.com/EdgeDevTools).
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Remotely debug Microsoft Edge on Windows 10 or later Devices
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) app is now available in the [Microsoft Store](https://www.microsoft.com/store/apps/windows). This app extends the [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal).  You can connect from Microsoft Edge running on your development machine to a remote Windows 10 or later device and display a list of targets.  This list of targets includes all tabs in Microsoft Edge and [PWAs](../../../../progressive-web-apps-chromium/index.md) open on the Windows device.  Use DevTools on your development machine against a target running on the remote Windows device.
 
@@ -47,10 +46,9 @@ Read our guide for setting up your Windows 10 device and your development machin
 Let us know about your remote debugging experience by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevTools) or clicking the [Send Feedback](../../../contact.md) icon.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New ways to access Settings
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 There are tons of settings for DevTools that you can customize to make DevTools look, feel, and work the way you need. In Microsoft Edge 83, accessing [Settings](../../../customize/index.md#settings) in DevTools is now much easier.  Open **Settings** by clicking the gear icon next to Console alerts and the main menu.
 
@@ -63,13 +61,12 @@ You can also open **Settings** from the **Main Menu** under **More tools**.
 Chromium issue [#1050855](https://crbug.com/1050855)
 
 See also:
-* [DevTools customization and settings](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode#devtools-customization-and-settings) in _Simplify DevTools using Focus Mode_
+* [DevTools customization and settings](../../../experimental-features/focus-mode.md#devtools-customization-and-settings) in _Simplify DevTools using Focus Mode_
 
-
-<!-- ====================================================================== -->
-### New and improved infobars
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
+<!-- ====================================================================== -->
+### New and improved infobars
 
 Informational notification bars (infobars) in DevTools now have an improved look and more functionality. In Microsoft Edge 83, infobars are easier to read and provide buttons so you can take the relevant action right away.
 
@@ -80,6 +77,7 @@ Chromium issue [#1056348](https://crbug.com/1056348)
 <!-- no link to regular docs, since this is a cross-feature UI -->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Navigate the Color Picker with your keyboard
 
@@ -92,9 +90,10 @@ The Color Picker is a GUI in the **Elements** panel for changing `color` and `ba
 Chromium issue [#963183](https://crbug.com/963183)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Properties tab now populates after a page refresh
 
@@ -109,9 +108,10 @@ In Microsoft Edge 83, you can now display the properties of the currently select
 Chromium issue [#1050999](https://crbug.com/1050999)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Use the arrow keys to scroll in the Changes tool
 
@@ -128,7 +128,7 @@ If you use screen readers or the keyboard to navigate around DevTools, send us y
 Chromium issue [#963183](https://crbug.com/963183)
 
 See also:
-* [Track changes to files using the Changes tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/changes/changes-tool)
+* [Track changes to files using the Changes tool](../../../changes/changes-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -138,6 +138,7 @@ See also:
 The following sections announce additional features available in Microsoft Edge 83 that were contributed to the open source Chromium project.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Emulate vision deficiencies
 
@@ -163,11 +164,12 @@ Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevT
 Chromium issue [#1003700](https://crbug.com/1003700)
 
 See also:
-* [Emulate vision deficiencies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/emulate-vision-deficiencies)
+* [Emulate vision deficiencies](../../../accessibility/emulate-vision-deficiencies.md)
 * [Analyze rendering performance with the Rendering tool](../../../evaluate-performance/reference.md#analyze-rendering-performance-with-the-rendering-tool) in _Performance features reference_
 * [Types of Colour Blindness](http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness), at Colourblindawareness.org.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Emulate locales
 
@@ -188,9 +190,10 @@ To try a demo, see [Locale-dependent code example](https://mathiasbynens.be/demo
 Chromium issue [#1051822](https://crbug.com/1051822)
 
 See also:
-* [Override geolocation with the Sensors tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/geolocation)
+* [Override geolocation with the Sensors tool](../../../device-mode/geolocation.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Cross-Origin Embedder Policy (COEP) debugging
 
@@ -209,9 +212,10 @@ Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevT
 Chromium issue [#1051466](https://crbug.com/1051466)
 
 See also:
-* [Block requests](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/#block-requests) in _Inspect network activity_.
+* [Block requests](../../../network/index.md#block-requests) in _Inspect network activity_.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### New icons for breakpoints, conditional breakpoints, and logpoints
 
@@ -226,9 +230,10 @@ The motivation for the new icons was to make the UI more consistent with other G
 Chromium issue [#1041830](https://crbug.com/1041830)
 
 See also:
-* [Pause code with breakpoints](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/breakpoints)
+* [Pause code with breakpoints](../../../javascript/breakpoints.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### View network requests that set a specific cookie path
 
@@ -237,6 +242,7 @@ Use the new `cookie-path` filter keyword in the **Network** tool to focus on the
 To discover more keywords like `cookie-path`, see [Filter requests by properties](../../../network/reference.md#filter-requests-by-properties) in _Network features reference_.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Dock to left from the Command Menu
 
@@ -252,6 +258,7 @@ See also:
 * [Change DevTools placement (Undock, Dock to bottom, Dock to left)](../../../customize/placement.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### The Audits panel is now the Lighthouse panel
 
@@ -262,9 +269,10 @@ The DevTools team frequently got feedback from web developers that while it was 
 Note: The **Lighthouse** panel provides links to content hosted on third-party websites.  Microsoft is not responsible for and has no control over the content of these sites and any data they may collect.
 
 See also:
-* [Lighthouse tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool)
+* [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Delete all Local Overrides in a folder
 
@@ -277,9 +285,10 @@ Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevT
 Chromium issue [#1016501](https://crbug.com/1016501)
 
 See also:
-* [Override webpage resources with local copies (Overrides tab)](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/overrides)
+* [Override webpage resources with local copies (Overrides tab)](../../../javascript/overrides.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Updated Long tasks UI
 
@@ -294,6 +303,7 @@ Send your feedback by [tweeting](https://twitter.com/intent/tweet?text=@EdgeDevT
 Chromium issue [#1054447](https://crbug.com/1054447)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Maskable icon support in the Manifest pane
 
@@ -310,7 +320,7 @@ To check that your maskable icon looks good on Android Oreo devices, in the **Ma
 This feature launched in Microsoft Edge 81.  The updates covered here in Microsoft Edge 83 weren't covered in [What's New in DevTools (Microsoft Edge 81)](../01/devtools.md).
 
 See also:
-* [View, edit, and delete cookies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies) - Articles about the **Application** tool.
+* [View, edit, and delete cookies](../../../storage/cookies.md) - Articles about the **Application** tool.
 
 
 <!-- ====================================================================== -->

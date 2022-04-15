@@ -25,7 +25,7 @@ ms.date: 02/15/2022
 
 
 <!-- this page's content so far is the entry from
-https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
 -->
 
 
