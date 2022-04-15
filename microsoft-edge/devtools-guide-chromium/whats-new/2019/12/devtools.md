@@ -56,7 +56,7 @@ See also:
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- dup entries: 2019/12, 2020/01 -->
 
-Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you are now able to use in one of 10 languages besides English:
+Many developers use other developer tools, like StackOverflow and Visual Studio Code, in their native language, not just in English.  We're excited to announce localization for the DevTools, which you can now use in one of 10 languages besides English:
 
 * Chinese (Simplified) - &#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
 * Chinese (Traditional) - &#20013;&#25991;&#65288;&#32321;&#39636;&#65289;
@@ -259,7 +259,7 @@ See also:
 
 #### Request Initiator Chains in the Initiator panel
 
-You are now able to view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource (such as a script) caused.
+You can now view the initiators and dependencies of a network request as a nested list.  This may help you understand why a resource was requested, or what network activity a certain resource (such as a script) caused.
 
 ![A Request Initiator Chain in the Initiator panel.](../../images/2019/12/initiators.msft.png)
 

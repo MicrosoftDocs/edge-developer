@@ -130,7 +130,7 @@ See also:
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-You are now able to customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you can choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts](../../../customize/shortcuts.md).  Starting in Microsoft Edge version 87, you can turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
+You can now customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you can choose between **Visual Studio Code** and **DevTools (default)** presets for [keyboard shortcuts](../../../customize/shortcuts.md).  Starting in Microsoft Edge version 87, you can turn on the **Enable keyboard shortcut editor** experiment to further [customize keyboard shortcuts](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
 
 To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, see [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).  For real-time updates on this feature in the Chromium open-source project, see Issue [#174309](https://crbug.com/174309).
 

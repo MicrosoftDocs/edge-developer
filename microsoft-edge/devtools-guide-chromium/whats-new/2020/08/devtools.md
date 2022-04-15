@@ -62,7 +62,7 @@ See also:
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-You are now able to test the look and feel of your website or app on two new devices:  [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
+You can now test the look and feel of your website or app on two new devices:  [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
 
 To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device](../../../device-mode/index.md):
 
@@ -332,7 +332,7 @@ See also:
 <!-- ====================================================================== -->
 ### Emulate inactive users
 
-The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You are now able to use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
+The [Idle Detection API](https://web.dev/idle-detection) allows developers to detect inactive users and react on idle state changes.  You can now use DevTools to emulate idle state changes in the **Sensors** tool for both the user state and the screen state instead of waiting for the actual idle state to change.  You can open the **Sensors** tool from the [Drawer](../../../customize/index.md#drawer).
 
 ![Emulate inactive users.](../../media/2020/08/emulate-idle.msft.png)
 

@@ -61,7 +61,7 @@ An open-source tool, [webhint](https://webhint.io), provides real-time feedback 
 * [PWA](https://webhint.io/docs/user-guide/hints/pwa)
 * [Security](https://webhint.io/docs/user-guide/hints/security)
 
-You are now able to filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.
+You can now filter out third-party issues using a new checkbox.  The filter functionality helps you hide issues related to code from third-party libraries or other sources.
 
 To help you review issues revealed by [webhint](https://webhint.io), the **Issues** tool now displays the following information:
 

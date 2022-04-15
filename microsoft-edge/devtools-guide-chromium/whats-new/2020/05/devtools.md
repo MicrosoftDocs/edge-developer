@@ -157,12 +157,6 @@ To get started, see [Find and fix problems using the Issues tool](../../../issue
 
 Chromium issue [#1068116](https://crbug.com/1068116)
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
@@ -179,22 +173,16 @@ The **Inspect Mode** tooltip now indicates whether the element has an accessible
 
 Chromium issue [#1040025](https://crbug.com/1040025)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Analyze pages using the Inspect tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/inspect)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Performance panel updates
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -217,11 +205,8 @@ If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did 
 
 Chromium issue [#1054381](https://crbug.com/1054381)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -237,11 +222,8 @@ Click the **Layout Shift** event to display the details of the layout shift in t
 
 ![The details of a layout shift.](../../media/2020/05/cls.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -258,22 +240,16 @@ The **Console** now uses the term `fulfilled`, which aligns with the `Promise` s
 
 V8 issue [#6751](https://bugs.chromium.org/p/v8/issues/detail?id=6751)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Console overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Styles pane updates
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -286,11 +262,8 @@ The autocomplete UI of the **Styles** pane now detects the [revert](https://deve
 
 Chromium issue [#1075437](https://crbug.com/1075437)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -303,11 +276,8 @@ Hover on a `background-image` value in the **Styles** pane to display a preview 
 
 Chromium issue [#1040019](https://crbug.com/1040019)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -329,12 +299,6 @@ The space-separated argument syntax has been supported in most browsers for a wh
 
 Chromium issue [#1072952](https://crbug.com/1072952)
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
@@ -344,35 +308,27 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 
 ![The deprecated Properties pane.](../../media/2020/05/properties.msft.png)
 
-#### References
+#### Reference
 
 * [console.dir()](../../../console/api.md#dir)
 * [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### App shortcuts support in the Manifest pane
 
-App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for [Progressive Web Apps](../../../../progressive-web-apps-chromium/index.md) that are installed on the user's desktop or mobile device.
+In the **Application** tool, the **Manifest** page now shows app shortcuts.  App shortcuts help users quickly start common or recommended tasks within a web app.  The app shortcuts menu is shown only for Progressive Web Apps that are installed on the user's desktop or mobile device.
 
 <!-- For more information, see [Get things done quickly with app shortcuts](https://alphabet-dev/app-shortcuts). -->
 
 <!--todo: add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
 
-![App shortcuts in the Manifest pane.](../../media/2020/05/app-shortcuts.msft.png)
+![App shortcuts in the Manifest pane of the Application tool.](../../media/2020/05/app-shortcuts.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Overview of Progressive Web Apps (PWAs)](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/)
+* [Debug Progressive Web Apps (PWAs)](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/progressive-web-apps/)
 
 
 <!-- ====================================================================== -->

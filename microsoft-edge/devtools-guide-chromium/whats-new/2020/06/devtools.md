@@ -28,35 +28,25 @@ ms.date: 05/04/2021
 
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download/) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### CSS grid debugging features
 
+<!-- todo: indicate no longer experimental? -->
+
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  You are now able to display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  You can now display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.
 
 ![CSS grid debugging features.](../../media/2020/06/experiments-grid.msft.png)
 
-> [!NOTE]
-> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**.
->
-> To try out the experiment with a sample, see [CSS Grid planner example](https://codepen.io/hxlnt/full/YzwBzKM).
+To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example](https://codepen.io/hxlnt/full/YzwBzKM).
 
 Chromium issue [#1047356](https://crbug.com/1047356)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Inspect CSS Grid](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/grid)
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -65,7 +55,7 @@ See also:
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-You are now able to use **Edit and Replay** on requests in the [Network Log](../../../network/index.md#log-network-activity) using the **Network Console**.
+You can now use **Edit and Replay** on requests in the [Network Log](../../../network/index.md#log-network-activity) using the **Network Console**.
 
 ![Edit and Replay a request in the NetworkLog with the Network Console.](../../media/2020/06/experiments-network-console-edit-and-replay.msft.png)
 
@@ -75,21 +65,11 @@ You can also use the **Network Console** to create and send HTTP requests direct
 
 ![The Network Console panel.](../../media/2020/06/experiments-network-console.msft.png)
 
-> [!TIP]
-> To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), see [moving tools between panels](#move-tools-between-panels).
+Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), see [moving tools between panels](#move-tools-between-panels).
 
-> [!NOTE]
-> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**.
->
-> Open the [Network Log](../../../network/index.md#log-network-activity), right-click, and then select **Edit and Replay**.
+To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**.  Open the [Network Log](../../../network/index.md#log-network-activity), right-click, and then select **Edit and Replay**.
 
 Chromium issue [#1093687](https://crbug.com/1093687)
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -106,11 +86,9 @@ Expand **Response received** to display additional information from the `fetch` 
 
 Chromium issue [#1066579](https://crbug.com/1066579)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Display the timing relationship of requests](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-the-timing-relationship-of-requests) in _Network features reference_.
+* [Display the timing breakdown of a request](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-the-timing-breakdown-of-a-request) in _Network features reference_.
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -119,22 +97,17 @@ See also:
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-[webhint](https://webhint.io) is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  To review webhint feedback in the [Issues](../../../issues/index.md) panel.
+[webhint](https://webhint.io) is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You can view webhint feedback in the [Issues](../../../issues/index.md) panel.
 
 ![webhint feedback in the Issues panel.](../../media/2020/06/experiments-webhint.msft.png)
 
-> [!NOTE]
-> To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable webhint**.
->
-> Open the [Issues](../../../issues/index.md) panel to display feedback from webhint.
+To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable webhint**.  Open the [Issues](../../../issues/index.md) panel to display feedback from webhint.
 
 Chromium issue [#1070378](https://crbug.com/1070378)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [The webhint extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/webhint)
+* [Enable webhint](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#enable-webhint) in _Experimental features_
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -143,7 +116,7 @@ See also:
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-Normally, tools such as **Elements** and **Network** may only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer (bottom) panel of DevTools.  You are now able to customize your DevTools layout by moving tools between the top and bottom panels.
+Normally, tools such as **Elements** and **Network** may only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer (bottom) panel of DevTools.  You can now customize your DevTools layout by moving tools between the top and bottom panels.
 
 ![Move tools between panels.](../../media/2020/06/experiments-move-panels.msft.png)
 
@@ -152,11 +125,8 @@ Normally, tools such as **Elements** and **Network** may only be opened in the m
 
 Chromium issue [#897944](https://crbug.com/897944)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [About Panel and Drawer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#about-panel-and-drawer-tools) in _Overview of DevTools_.
 
 
 <!-- careful changing heading wording: Welcome tool potentially links to it -->
@@ -167,7 +137,7 @@ In Microsoft Edge 83 and 84, tooltips for the Initiator column, which shows the 
 
 ![The Initiator tooltip in Microsoft Edge 84.](../../media/2020/06/initiator-tooltip-84.msft.png)
 
-Starting with Microsoft Edge 85, you are now able to display the Initiator call stack in the tooltip without scrolling horizontally.
+Starting with Microsoft Edge 85, you can now display the Initiator call stack in the tooltip without scrolling horizontally.
 
 ![The Initiator tooltip in Microsoft Edge 85.](../../media/2020/06/initiator-tooltip-85.msft.png)
 
@@ -192,7 +162,7 @@ See also:
 
 The **Styles** pane now has better support for editing styles that were created with the [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom) APIs.  Many CSS-in-JS frameworks and libraries use the CSSOM APIs under the hood to construct styles.
 
-You are now able to edit styles added in JavaScript using [Constructable Stylesheets](https://wicg.github.io/construct-stylesheets/).  Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
+You can now edit styles added in JavaScript using [Constructable Stylesheets](https://wicg.github.io/construct-stylesheets/).  Constructable Stylesheets are a new way to create and distribute reusable styles when using [Shadow DOM](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
 
 For example, the `h1` styles added with `CSSStyleSheet` (CSSOM APIs) were not editable previously.  The styles are editable now in the **Styles** panel.
 
