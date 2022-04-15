@@ -22,9 +22,9 @@ ms.date: 04/15/2022
 The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`. This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.  <!-- TODO last sentence is weird but want a sentence to explain high level what this API lets you do -->
 
 Some common use cases include: 
-* ---
-* ---
-* ---
+* case
+* case
+* case
 
 <!-- Use this technology to do X.  When you want do extra beyond Basic Authentication.
 
@@ -101,8 +101,16 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 *  You want offline functionality in the app so you redirect <!-- TODO: something --> to a local file path when no internet connection is detected.
 *  You want to upload local file content to your app so you change the HTTP URL to a local file <!-- TODO: validate this -->
 
-### Reccomendations
-Although changing the header lets you perform powerful enables you to do things like write cookies, basic authentication, we provide separate APIs to do these things and it is reccomended that you do not use the `WebResrouceRequest` API for those scenarios.
+
+<!-- ====================================================================== -->
+## Example: Intercepting a request (to monitor or modify it)
+<!-- ## Example: Header modification when making a request -->
+
+<!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
+In the following example, the host app _intercepts_ (receives) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then sends the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
+
+<!-- Dev to provide sample -->
+
 
 <!-- Notes -->
 <!-- If you want to read or modify cookies, don't use this API or article; a separate API covers that scenario.
@@ -172,7 +180,7 @@ By default the HTTP server sends responses to the WebView2 control. Your host ap
 * can change the URL to the file URL and then the WebView will read the content itself or you could override the response which means the app reads the file and then just provides the response to the WebView. That's the difference. In sample app do the latter one. We override the response to read locally 
 * if you intercept request, directing WV2 to local file. if intercepting response you're providing the response with the local file.
 * in the response case: give the WebView a content stream which is the response and so basically you read the local file to a stream and then you just pass it to WV2 control and then WV control has 
-* modifying URL is easier -- less code than reading the content and passing it as a response. But the latter is more correct b/c when you change URL you can also be changing the origin and that matters. cannot have cross origin resoruces in the same document. and normally the document, like the resources are in the same origin and if you change URL might cuase those two reources to become cross origin.
+* modifying URL is easier -- less code than reading the content and passing it as a response. But the latter is more correct b/c when you change URL you can also be changing the origin and that matters. cannot have cross origin resources in the same document. and normally the document, like the resources are in the same origin and if you change URL might cuase those two reources to become cross origin.
 * for basic scenarios like reading from disk modifying URL is file but if you want to construct more complex responses, app needs to construct them. e.g. app wants to construct a dynamic (time or day) response e.g. providing a dynamic key or something to a XHR request from the WV2 control. You want app to provide this becuase cannot be done by modifying URL. if response is dynamic (not on disk adn needs to be generated dynamically) do custom response.
 * Changing URL is simpler but constructing response provides more fine control
 * tradeoff: do it the simpler way which gives you less control and less flexibility or you can do it the more complicated way which is harder to do but gives you more flexibility and control
@@ -180,20 +188,29 @@ By default the HTTP server sends responses to the WebView2 control. Your host ap
 * intercepting: you're the guy in the middle: there's a request sent and you're in teh middle. you take it and then you change it or you read it and let it pass across
 * overriding: you throw it away. you override before you get the actual response. event doesn't get until actual response comes -->
 
+
+<!-- ====================================================================== -->
+## Recommendations and best practices
+
 ### The recommended way of overriding for request vs. response
+
+<!-- note that this applies to both the Request & Response h2 scenarios above. -->
+
 <!--TODO: Follow up with Cagri, clarify what we are trying to call out here -->
+
 * A simple scenario that's supported is reading from a local file.  Your host app can modify the resource URI to instead be a file URI that points to a local resource.
 * Dynamic content (proactively ignoring and overriding the response).  For example, suppose a resource needs user input; the request gets constructed as soon as it gets user input.
 * simple cases: Simple cases of reading form local file, can modify request url to be a file url (pointing to this resource). entails offline file serving from file -- use the request. change the URL to request.
-* compilcaeted: dynamic content you override response. resource needs user input, request gets constructed once it gets user input
+* complicated: dynamic content you override response. resource needs user input, request gets constructed once it gets user input
+
+
 <!-- ====================================================================== -->
 ## Constructing a custom request and navigating using that request
+<!-- the emphasis of this h2 is the Nav'ing use-case, rather the Overriding or Intercepting use-cases -->
 <!-- ## Constructing a custom request and navigating the WebView2 control using that request -->
 <!-- ## Navigating with custom requests  -->
 
-### The NavigateWithWebResourceRequest method
-
-The `NavigateWithWebResourceRequest` method, together with the `WebResourceRequest` event and the `WebResponseRecieved` event, allows your host app to intercept and interact with network requests sent to and from the WebView2 control, while the WebView2 control interacts with the HTTP server.  This API enables your host app to  either intercept a response that's sent by the HTTP server and substitute a custom response to your host app's code, or intercept a request that's sent from the WebView2 control to the HTTP server, and substitute your own custom request instead.
+The `NavigateWithWebResourceRequest` method, together with the `WebResourceRequest` event and the `WebResponseReceived` event, allows your host app to intercept and interact with network requests sent to and from the WebView2 control, while the WebView2 control interacts with the HTTP server.  This API enables your host app to  either intercept a response that's sent by the HTTP server and substitute a custom response to your host app's code, or intercept a request that's sent from the WebView2 control to the HTTP server, and substitute your own custom request instead.
 
 # [.NET](#tab/dotnet)
 
@@ -206,61 +223,12 @@ The `NavigateWithWebResourceRequest` method, together with the `WebResourceReque
 ---
 
 
-<!-- ====================================================================== -->
-## Monitoring the actual (resulting) custom requests and responses
-
-<!-- probably disentangle reading requests vs. reading responses, as two separate headings/sections -->
-
-### Monitoring the resulting custom requests
-The request in the `WebResourceRequested` event is preliminary; the WebView2 network stack and the host app can add more headers before they are sent (for example, cookie header), but the `WebResourceResponseReceived` event has the actual request that was sent and the actual response that was received. After the `WebResourceRequested` event is sent the request object is not finalized until the `WebResourceResponseReceived` event is fired. 
-
-### Monitoring the resulting custom responses
-<!-- TODO: Fill in how monitoring works for custom responses -->
-
-
-<!-- Notes -->
-<!-- The `WebResourceRequested` event lets your host app change the request.  In this case, the request object isn't finalized yet, so your host app can or the network stack can add [headers]
-.  After the request is sent, ... received.  Then we know at that time what the actual request that's sent is.
-*  The `WebResourceRequested` event is fired before the actual request is sent.
-*  The `WebResourceResponseReceived` event is fired after the response is received.
-*  The headers are not finalized, so the app can change the headers, when the response event is fired.
-*  The response event is fired by the the WebView2 control.
-*  You can use this opportunity to provide custom ... to see the finalized headers.  
-*  The authorization header is one of the headers that gets set by the network stack after the `webResourceRequested` event fires.
- -->
 
 <!-- ====================================================================== -->
-## When to use this approach vs. other approaches
-
-The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools that allow you to light up various scenarios. <!--TODO: Something about it being hard? --> For some common scenarios we provide APIs catered towards those specific scenarios which are easier to use and we reccomend we use those rather than the APIs discussed in this article.
-
-Instead of using WebResoruceRequested APIs, you can use these other approaches:
-
-<!-- try using a simple list of links to articles; can add notes off to the right, like:
-* [Basic Authentication] - a few words for clarification here.
--->
-* [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
-* [General navigation](/microsoft-edge/webview2/concepts/navigation-events)
-* [Cookies](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39) - Managing cookies in WebView2
-
-<!-- if a more heavyweight description sentence is needed, can use table instead of the above annotated list of links: -->
-<!--
-| Option | Description | Article |
-|---|---|---|
-| Basic Authentication | x | link |
-| Cookies | x | link |
-| General navigation | x | link |
-|User agent | x | link |
-| x | x | link |
--->
-
+## Constructing a custom request and navigating using that request
 
 <!-- ====================================================================== -->
-## Scenario/use cases
-
-
-<!-- ====================================================================== -->
-## Example: Navigating with WebResourceRequested
+## ... Example: Constructing a custom request and navigating using that request
 
 <!-- the h2 above has wording: ## Constructing a custom request and navigating using that request -->
 <!-- Move example to under that heading -->
@@ -325,9 +293,54 @@ CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()))
 
 
 <!-- ====================================================================== -->
-## Example: Header modification when making a request
+## Monitoring the actual (resulting) custom requests and responses
 
-<!-- Dev to provide sample -->
+<!-- todo: define "actual request" in terms of early/late & the 3 actors (host app, wv2 ctrl, httpserver) - here it means the request which is finally received by the __ HTTP server or the host app (confirm) -->
+
+<!-- probably disentangle reading requests vs. reading responses, as two separate headings/sections -->
+
+### Monitoring the resulting custom requests
+The request in the `WebResourceRequested` event is preliminary; the WebView2 network stack and the host app can add more headers before they are sent (for example, cookie header), but the `WebResourceResponseReceived` event has the actual request that was sent and the actual response that was received. After the `WebResourceRequested` event is sent the request object is not finalized until the `WebResourceResponseReceived` event is fired. 
+
+### Monitoring the resulting custom responses
+<!-- TODO: Fill in how monitoring works for custom responses -->
+
+
+<!-- Notes -->
+<!-- The `WebResourceRequested` event lets your host app change the request.  In this case, the request object isn't finalized yet, so your host app can or the network stack can add [headers]
+.  After the request is sent, ... received.  Then we know at that time what the actual request that's sent is.
+*  The `WebResourceRequested` event is fired before the actual request is sent.
+*  The `WebResourceResponseReceived` event is fired after the response is received.
+*  The headers are not finalized, so the app can change the headers, when the response event is fired.
+*  The response event is fired by the the WebView2 control.
+*  You can use this opportunity to provide custom ... to see the finalized headers.  
+*  The authorization header is one of the headers that gets set by the network stack after the `webResourceRequested` event fires.
+ -->
+
+<!-- ====================================================================== -->
+## When to use custom network requests vs. using other provided wrapper APIs
+
+The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools that allow you to light up various scenarios. <!--TODO: Something about it being hard? --> For some common scenarios we provide APIs catered towards those specific scenarios which are easier to use and we recommend we use those rather than the APIs discussed in this article.
+
+Instead of using WebResourceRequested APIs, you can use these other approaches:
+
+<!-- try using a simple list of links to articles; can add notes off to the right, like:
+* [Basic Authentication] - a few words for clarification here.
+-->
+* [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
+* [General navigation](/microsoft-edge/webview2/concepts/navigation-events)
+* [Cookies](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39) - Managing cookies in WebView2
+
+<!-- if a more heavyweight description sentence is needed, can use table instead of the above annotated list of links: -->
+<!--
+| Option | Description | Article |
+|---|---|---|
+| Basic Authentication | x | link |
+| Cookies | x | link |
+| General navigation | x | link |
+|User agent | x | link |
+| x | x | link |
+-->
 
 
 <!-- ====================================================================== -->
