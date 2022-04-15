@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/05/2022
+ms.date: 04/15/2022
 ---
 # Custom management of network requests
 <!--
@@ -71,6 +71,9 @@ The host app can change the properties of a request by using this API:
 
 * [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
 
+---
+
+
 ### What you can do with headers
 
 <!-- TODO: Are we allowed to link this page/use sentences from it? -->
@@ -118,9 +121,9 @@ As another supported scenario, your host app can send some content as part of a 
 *  What's a "response", and when are they used?
 *  There are three main APIs involved
 *  Add
-   * [ICoreWebView2::add_WebResourceRequested](microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested) - Adds an event handler for the WebResourceRequested event.
+   * [ICoreWebView2::add_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested) - Adds an event handler for the WebResourceRequested event.
 *  Remove
-   * [ICoreWebView2::remove_WebResourceRequested](microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested) - Removes an event handler.
+   * [ICoreWebView2::remove_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested) - Removes an event handler.
 *   Lets you customize network request handling of sending requests and responses.
 *  You can add/provide your own custom response.
 *  Navigate (Not a navigation event) `NavigateWithWebResourceRequest` is special cases advanced, beyond Basic Auth, to modify the headers to be able to better/custom interact with the network.
@@ -199,6 +202,9 @@ The `NavigateWithWebResourceRequest` method, together with the `WebResourceReque
 # [Win32](#tab/win32)
 
 * [interface ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
+
+---
+
 
 <!-- ====================================================================== -->
 ## Monitoring the actual (resulting) custom requests and responses
@@ -584,5 +590,3 @@ m_webview->add_WebResourceResponseReceived(
 * [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md)
 * [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md)
 * [Call native-side code from web-side code](hostobject.md)
-
-
