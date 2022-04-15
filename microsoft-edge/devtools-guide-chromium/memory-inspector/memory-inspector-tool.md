@@ -27,6 +27,8 @@ ms.date: 04/08/2022
 
 Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuffer `WebAssembly.Memory`.<!-- OR should it say: WASM resizable `ArrayBuffer`. ? --> You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
 
+<!-- add more scenario type info, ask Zoher -->
+
 
 <!-- ====================================================================== -->
 ## Open the test site in Microsoft Edge
@@ -64,7 +66,7 @@ Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuf
 
 1. From the `buffer` line you can open Memory Inspector using one of the following methods:
 
-    * Click on the icon at the end of the `buffer` property line (![Open Memory Inspector from the buffer property line icon](../media/memory-inspector-open-from-buffer-icon.png)), or
+    * Click on the **Reveal in Memory Inspector panel** icon at the end of the `buffer` property line (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)), or
  
     * From the context menu. Right click on the `buffer` property and select **Reveal in Memory Inspector panel**.
 
@@ -85,17 +87,17 @@ A new tab opens next to the first tab in Memory Inspector.
 ![Two ArrayBuffer tabs open in the Memory Inspector panel](../media/memory-inspector-panel-two.png)
 
 <!-- ====================================================================== -->
-## Using Memory Inspector
-
-<!-- Analyzing? Viewing? Understanding? Is there a better term than "Using" ? -->
+## Navigating in Memory Inspector
 
 The Memory Inspector panel includes 3 types of content:
 
 * [Navigation bar](#navigation-bar)
 * [Memory buffer](#memory-buffer)
-* [Value Inspector](#value-inspector)
+* [Value inspector](#value-inspector)
 
 ### Navigation bar
+
+![Memory Inspector panel Navigation bar](../media/memory-inspector-panel-navigation-bar.png)
  
 * The address input shows the current byte address in hex format. You can change the value to jump to a new location in the memory buffer. Click in the text box and change the value to 0x00000008. Notice that the Memory buffer immediately jumps to that byte address.
 
@@ -106,6 +108,8 @@ The Memory Inspector panel includes 3 types of content:
 * If the Memory buffer does not automatically update when stepping through values, click Refresh.
 
 ### Memory buffer
+
+![Memory Inspector panel Memory buffer](../media/memory-inspector-panel-memory-buffer.png)
  
 * From the left, the address is displayed in hex format.
 
@@ -114,6 +118,8 @@ The Memory Inspector panel includes 3 types of content:
 * An ASCII representation of the memory is shown on the right side. A highlight shows the corresponding value to the selected bits on the byte. Similar to memory, you can click on the byte or navigate with keyboard (left, right, up, down).
 
 ### Value inspector
+
+![Memory Inspector panel Value inspector](../media/memory-inspector-panel-value-inspector.png)
  
 * Click the current Endian to switch between Big endian and Little endian and to open the settings.
 
@@ -121,7 +127,7 @@ The Memory Inspector panel includes 3 types of content:
 
 * The main area shows each value interpretation per the settings. By default, all are shown.
 
-* The encoding is clickable. You can switch between dec, hex, oct for integer and sci, dec for floats. ???poorly explained???
+* You can change the encoding view using the drop-down list. For integers you can choose from decimal `dec`, hexadecimal `hex`, and octal `oct`. For floats you can choose from scientific notation `sci` or decimal notation `dec`.
 
 
 <!-- ====================================================================== -->
