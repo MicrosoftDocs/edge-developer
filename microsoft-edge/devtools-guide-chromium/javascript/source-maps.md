@@ -28,7 +28,6 @@ Source mapping keeps your client-side code readable and debuggable, even after y
 
 To use this source mapping technique, you must use pre-processors that can produce source maps.  Make sure your web server can serve source maps.
 
-
 <!--
 no longer in original file:
 todo: add link to preprocessors capable of producing source maps when section is available
@@ -88,7 +87,7 @@ To make sure that source maps are enabled:
 
 1. In the **Preferences** page, in the **Sources** section, make sure the **Enable JavaScript source maps** checkbox and the **Enable CSS source maps** checkbox are selected:
 
-![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected.](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
+   ![The Preferences page's Sources section with the 'Enable source maps' checkboxes selected.](../media/javascript-settings-preferences-sources-enable-javascript-source-maps.msft.png)
 
 1. In the upper right of **Settings**, click the **Close** (**x**) button.
 
