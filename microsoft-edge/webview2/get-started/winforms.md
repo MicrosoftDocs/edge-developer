@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
+ms.date: 04/08/2022
 ---
 # Get started with WebView2 in WinForms apps
 
@@ -173,11 +173,11 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
 1. Close the **Form1** window.
 
-You've added the WebView2 SDK to the project, but haven't added any WebView code to the project yet.
+You've added the WebView2 SDK to the project, but haven't added any WebView2 code to the project yet.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Create a single WebView
+## Step 7 - Create a single WebView2 control
 
 Now that the WebView2 SDK is installed for the WinForms project, add a WebView2 control to the app, as follows:
 
@@ -199,7 +199,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
 1. Select **View** > **Toolbox**.
 
-   Here's where you add WebView-specific content to the app:
+   Here's where you add WebView2-specific content to the app:
 
 1. In the **Toolbox**, click **WebView2 Windows Forms Control** to expand the options.
 
@@ -266,9 +266,9 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 1. In the **Properties** panel, in the bolded **Appearance** section (about 15 properties down), change the **Text** property (probably from **button1**) to **Go!**
 
 
-   **Align the text box and button, as follows:**
+   **Align the text box and the existing button, as follows:**
 
-1. Arrange the text box to the left of the button, aligned next to the text box, as shown below:
+1. Position the text box on the left side of the form, vertically aligned with the button, as shown below:
 
    ![WinForms designer.](media/winforms-designer.png)
 

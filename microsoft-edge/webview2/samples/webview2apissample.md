@@ -12,9 +12,9 @@ ms.date: 02/18/2022
 
 This WebView2 sample demonstrates how to use the WebView2 control and WebView2 APIs to add features to a Win32 C++ app.
 
-The WebView2APISample is an example of an application that embeds a WebView within a Win32 native application. It is built as a Win32 Visual Studio project and makes use of both C++ and HTML/CSS/JavaScript in the WebView2 environment.
+The WebView2APISample is an example of an application that embeds a WebView2 control within a Win32 native application. It is built as a Win32 Visual Studio project and makes use of both C++ and HTML/CSS/JavaScript in the WebView2 environment.
 
-The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView and vice versa.
+The API Sample showcases a selection of WebView2's event handlers and API methods that allow a native Win32 application to directly interact with a WebView2 control and vice versa.
 
 Directory &amp; .sln: **WebView2APISample / WebView2Samples.sln (in parent dir)**.
 

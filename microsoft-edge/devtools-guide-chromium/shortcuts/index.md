@@ -51,7 +51,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Show **Settings** | `?` or `F1` | `?` or `Function`+`F1` |
 | Focus the next panel | `Ctrl`+`]` | `Command`+`]` |
 | Focus the previous panel | `Ctrl`+`[` | `Command`+`[` |
-| Switch back to whatever [docking position](../customize/index.md#change-devtools-placement) you last used.  If DevTools have been in the default position for the entire session, then this shortcut undocks DevTools into a separate window | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |
+| Switch back to whatever [docking position](../customize/placement.md) you last used.  If DevTools has been in the default position for the entire session, then this shortcut undocks DevTools into a separate window. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |
 | Toggle [Device emulation](../device-mode/index.md) | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |
 | Toggle **Inspect Element Mode** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |
 | Open the [Command Menu](../command-menu/index.md) | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |

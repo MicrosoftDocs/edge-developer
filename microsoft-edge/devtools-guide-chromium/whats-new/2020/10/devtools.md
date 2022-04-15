@@ -73,7 +73,9 @@ See also:
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-The **Network Console** tool now has improved compatibility with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.  To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**.  For more information about the **Network Console**, see [Enable Network Console Experimental feature](../../../experimental-features/index.md#enable-network-console).
+The **Network Console** tool now has improved compatibility with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.  To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**.
+
+For more information about the **Network Console**, see [Compose and send web API requests using the Network Console tool](../../../network-console/network-console-tool.md).
 
 This experiment now supports the following actions:
 

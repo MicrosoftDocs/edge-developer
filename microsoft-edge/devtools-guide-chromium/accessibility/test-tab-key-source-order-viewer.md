@@ -37,7 +37,7 @@ The reason for the confusing `Tab` key order is that the order experienced when 
 
 In the source code of the document, the sidebar navigation menu appears after the main content of the webpage.  CSS was used to position the sidebar navigation menu above most of the main content of the webpage.
 
-You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.  The **Source Order Viewer** is an experimental feature. See [Source Order Viewer](../experimental-features/index.md#source-order-viewer).
+You can test the order of page elements by using the **Source Order Viewer** in the **Accessibility** tab.
 
 
 ### Turning on the Source Order Viewer

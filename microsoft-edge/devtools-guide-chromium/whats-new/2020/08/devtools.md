@@ -160,7 +160,7 @@ This feature makes it easier to test the way screen reader and keyboard users ex
 
 To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Source Order Viewer**.
 
-For more information about this experiment, see [Source Order Viewer](../../../experimental-features/index.md#source-order-viewer).
+See [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
 
 Chromium issue: [#1094406](https://crbug.com/1094406)
 

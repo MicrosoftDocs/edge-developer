@@ -26,6 +26,9 @@ Debug Android WebViews in your native Android apps using Microsoft Edge Develope
 
 On Android 4.4 (KitKat) or later, use DevTools to debug WebView content in native Android apps.
 
+Android WebView is not related to [Microsoft Edge WebView2](../../webview2/index.md).
+
+
 ### Summary
 
 *  Turn on Android WebView debugging in your native Android app; debug Android WebViews in Microsoft Edge DevTools.
