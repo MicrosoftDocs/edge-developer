@@ -29,10 +29,9 @@ ms.date: 12/13/2021
 The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://aka.ms/microsoftedge) and [follow us on Twitter](https://aka.ms/twitter/edgedevtools).
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Use the DevTools in Windows high contrast mode
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 The Microsoft Edge DevTools is now displayed in high-contrast mode when Windows is in high-contrast mode.
 
@@ -49,10 +48,9 @@ See also:
 * [Check for contrast issues with dark theme and light theme](../../../accessibility/test-dark-mode.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Match keyboard shortcuts in the DevTools to Visual Studio Code
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 From your [feedback](../../../contact.md) and the [Chromium public issue tracker](https://bugs.chromium.org/p/chromium/issues/list), the Microsoft Edge DevTools team learned that you wanted to be able to customize keyboard shortcuts in DevTools.  In Microsoft Edge 84, you can now match keyboard shortcuts in DevTools to [Visual Studio Code](https://code.visualstudio.com/), which is just one of the features the team is working on for shortcut customization.
 
@@ -82,10 +80,9 @@ See also:
 * [Customize keyboard shortcuts](../../../customize/shortcuts.md)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Remote debug Surface Duo emulators
-
-<!-- careful changing heading wording: Welcome tool potentially links to it -->
 
 You can now remotely debug your web content that's running in the [Surface Duo emulator](/dual-screen/android/use-emulator) using the full power of Microsoft Edge DevTools.
 
@@ -100,6 +97,7 @@ The `edge://inspect` page in a desktop instance of Microsoft Edge shows the **Su
 Click **inspect** for the tab or PWA that you want to debug, to open DevTools.  Follow the step-by-step guide to remotely debug your web content on the Surface Duo emulator: [Remotely debug Surface Duo emulators](../../../remote-debugging/surface-duo-emulator.md).
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Resize the DevTools drawer more easily
 
@@ -114,6 +112,7 @@ Starting with Microsoft Edge 84, you can resize the drawer by hovering over the 
 Chromium issue [#1076112](https://crbug.com/1076112)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Screencasting navigation buttons display focus
 
@@ -126,6 +125,7 @@ In Microsoft Edge 84, these navigation buttons are now also keyboard-accessible.
 Chromium issue [#1081486](https://crbug.com/1081486)
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Network panel Details pane is now accessible
 
@@ -143,9 +143,9 @@ Chromium issue [#963183](https://crbug.com/963183)
 The following sections announce additional features available in Microsoft Edge 84 that were contributed to the open source Chromium project.
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Fix site issues with the new Issues tool in the DevTools Drawer
-<!--  -->
 
 The new **Issues** tool in the Drawer at the bottom of DevTools reduces the notification fatigue and clutter of the **Console**.  Currently, the **Console** is the central place for website developers, libraries, frameworks, and Microsoft Edge to log messages, warnings, and errors.  The **Issues** tool aggregates warnings from the browser in a structured, aggregated, and actionable way.  The **Issues** tool links to affected resources within DevTools, and provides guidance on how to fix the issues.
 
@@ -157,11 +157,14 @@ To get started, see [Find and fix problems using the Issues tool](../../../issue
 
 Chromium issue [#1068116](https://crbug.com/1068116)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### View accessibility information in the Inspect Mode tooltip
 
@@ -176,19 +179,25 @@ The **Inspect Mode** tooltip now indicates whether the element has an accessible
 
 Chromium issue [#1040025](https://crbug.com/1040025)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Performance panel updates
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### View Total Blocking Time information in the footer
 
@@ -208,11 +217,14 @@ If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did 
 
 Chromium issue [#1054381](https://crbug.com/1054381)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Layout Shift events in the new Experience section
 
@@ -225,11 +237,14 @@ Click the **Layout Shift** event to display the details of the layout shift in t
 
 ![The details of a layout shift.](../../media/2020/05/cls.msft.png)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### More accurate promise terminology in the Console
 
@@ -243,19 +258,25 @@ The **Console** now uses the term `fulfilled`, which aligns with the `Promise` s
 
 V8 issue [#6751](https://bugs.chromium.org/p/v8/issues/detail?id=6751)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Styles pane updates
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Support for the revert keyword
 
@@ -265,11 +286,14 @@ The autocomplete UI of the **Styles** pane now detects the [revert](https://deve
 
 Chromium issue [#1075437](https://crbug.com/1075437)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Image previews
 
@@ -279,11 +303,14 @@ Hover on a `background-image` value in the **Styles** pane to display a preview 
 
 Chromium issue [#1040019](https://crbug.com/1040019)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 #### Color Picker now uses space-separated functional color notation
 
@@ -302,11 +329,14 @@ The space-separated argument syntax has been supported in most browsers for a wh
 
 Chromium issue [#1072952](https://crbug.com/1072952)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### Deprecation of the Properties pane in the Elements panel
 
@@ -319,11 +349,14 @@ The **Properties** pane in the **Elements** tool is deprecated.  Run `console.di
 * [console.dir()](../../../console/api.md#dir)
 * [$0](../../../console/utilities.md#recently-selected-element-or-javascript-object)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
+<!-- careful changing heading wording: Welcome tool potentially links to it -->
 <!-- ====================================================================== -->
 ### App shortcuts support in the Manifest pane
 
@@ -331,13 +364,15 @@ App shortcuts help users quickly start common or recommended tasks within a web 
 
 <!-- For more information, see [Get things done quickly with app shortcuts](https://alphabet-dev/app-shortcuts). -->
 
-<!--todo:  add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
+<!--todo: add link Get things done quickly with app shortcuts (WebdevAppShortcuts) when section is live -->
 
 ![App shortcuts in the Manifest pane.](../../media/2020/05/app-shortcuts.msft.png)
 
+<!--
 See also:
 * []()
 * []()
+-->
 
 
 <!-- ====================================================================== -->
