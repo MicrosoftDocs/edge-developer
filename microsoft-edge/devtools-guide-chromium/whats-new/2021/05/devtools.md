@@ -271,7 +271,7 @@ See also:
 <!-- ====================================================================== -->
 ### Enhanced CORS debugging support
 
-Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tab.  There are various potential causes of CORS errors.  Click to expand each issue to understand the potential causes and solutions.
+Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** tool.  There are various potential causes of CORS errors.  Click each issue to expand it and see potential causes and solutions.
 
 ![CORS issues in the Issues tab.](../../media/2021/05/cors-debugging-support.msft.png)
 
@@ -279,11 +279,9 @@ Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** t
 
 For the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Report CORS errors in the Network tool](../../2020/11/devtools.md#report-cors-errors-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 88)_
+* [Find and fix problems using the Issues tool](../../../issues/index.md)
 
 
 <!-- ====================================================================== -->

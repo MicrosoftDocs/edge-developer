@@ -93,24 +93,21 @@ You can now visualize **Layers** content alongside z-index values and the Docume
 <!-- Title: Jump to CSS variable definitions  -->
 <!-- Subtitle: Click any CSS variable to navigate directly to the definition in the Styles tool. -->
 
-In the **Styles** pane, [CSS variables](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) now link directly to each definition.  Click the variable to easily view or change the CSS variable definition.  In the example, DevTools displays the CSS attributes for the `body` element.  To display the variable definition for the `--theme-body-background` CSS variable:
+In the **Styles** pane of the **Elements** tool, [CSS variables](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) now link directly to each definition.  Click the variable to easily view or change the CSS variable definition.  In the example, DevTools displays the CSS attributes for the `body` element.
 
-1. In the **Styles** pane, click `var(--theme-body-background)`.
-1. The **Styles** pane now displays the definition of the `--theme-body-background` CSS variable.
+For example, to display the variable definition for the `--theme-body-background` CSS variable:
 
-A CSS variable linked to the style:
+1. In the **Styles** pane of the **Elements** tool, hover over the style `--theme-body-background` of the CSS variable `var(--theme-body-background)`.  The tooltip appears, **Jump to definition**:
 
 ![A CSS variable linked to the style.](../../media/2020/11/css-variable-support.msft.png)
 
-A CSS variable linked to a style target:
+1. Click the style `--theme-body-background`.  The **Styles** pane displays the definition of the style:
 
-![A CSS variable linked to a style target.](../../media/2020/11/css-variable-support-target.msft.png)
+![Viewing the definition of a CSS style that's used by a CSS variable.](../../media/2020/11/css-variable-support-target.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
+* [CSS features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference)
 
 
 <!-- ====================================================================== -->
@@ -119,9 +116,9 @@ See also:
 <!-- Title:  Service worker debugging improvements in the Network, Application, and Sources tools  -->
 <!-- Subtitle:  Making service workers easier to debug for progressive web applications and more.  -->
 
-The following new features in the [Network](#network-tool), [Application](#application-tool), and [Sources](#sources-tool) tools help you build your [PWA](../../../../progressive-web-apps-chromium/index.md).  Use the following features when you have difficulty debugging your service worker.
+The following new features in the **Network** tool, **Application** tool, and **Sources** tool help you build your [PWA](../../../../progressive-web-apps-chromium/index.md).  Use the following features when you have difficulty debugging your service worker.
 
-Request routing displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to display if something is wrong with the `startup` or `fetch` event.
+The routing of a request displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
 
 <!--
 See also:
@@ -136,46 +133,42 @@ See also:
 <!-- Title: Open Network tool from the Service Workers pane  -->
 <!-- Subtitle: Display additional context when debugging a service worker.  -->
 
-View all service worker request routing information with the new **Network requests** link.  To display additional context when debugging the service worker:
+In the **Application** tool, view all service worker request routing information by using the new **Network requests** link.
 
-1. Navigate to **Application** > **Service Workers**.
+To display additional context when debugging a service worker:
 
-1. Select **Network requests**.
+1. In the **Application** tool, on the left, select **Service Workers**.
+
+1. Click the **Network requests** link:
 
    ![Opening the Network tool from the Service Workers pane.](../../media/2020/11/service-worker-application-network-requests.msft.png)
 
-1. The **Network** tool opens in the **drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`.
+   The **Network** tool opens in the **Drawer** and displays all service worker-related network requests.  The network requests are filtered using `is:service-worker-intercepted`:
 
    ![The Network tool in the Drawer.](../../media/2020/11/service-worker-application-network-drawer.msft.png)
 
-1. To return the **Network** tool to the top panel, close the **Drawer**.
+1. To move the **Network** tool to the top panel, close the **Drawer**:
 
-   ![Close the Drawer to return the Network tool to the main toolbar.](../../media/2020/11/service-worker-application-network-return.msft.png)
+   ![Close the Drawer to move the Network tool to the main toolbar.](../../media/2020/11/service-worker-application-network-return.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
 <!-- ====================================================================== -->
 ### Network tool
 
-Debug network requests that run through service workers.  You can also open network requests from the **Application** tool.  For each request, DevTools display the following information in the [Timing](../../../network/reference.md#display-the-timing-breakdown-of-a-request) pane.
+In the **Network** tool, you can debug network requests that are run by service workers.  (You can also open network requests from within the **Application** tool, instead of the **Network** tool.)  In the **Timing** pane of the **Network** tool, for each request, DevTools displays the following information:
 
 *  The start of a request and duration of the bootstrap.
 *  Changes to service worker registration.
 *  The runtime of a `fetch` event handler.
 *  The runtime of all `fetch` events for loading a client.
 
-![Timing pane.](../../media/2020/11/network-timing-service-worker.msft.png)
+![Timing pane of the Network tool.](../../media/2020/11/network-timing-service-worker.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
@@ -183,21 +176,17 @@ See also:
 
 In previous versions of Microsoft Edge, the level of depth in the call stack was limited to the JavaScript code in your service worker.  In Microsoft Edge 88, the call stack now displays the initiator of requests that run through your service worker.
 
-To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figures starts with the JavaScript code in your service worker and displays a reference to the original webpage request as `(index):157`.  In the second figure, the reference is selected, and has opened the initiator that made the request.  The initiator in the second figure is the webpage.
-
-The `service-worker.js` file and call stack highlighting the request originator:
+To locate the initiator of the request, use the call stack of your JavaScript code in the service worker.  The call stack in the following figure starts with the JavaScript code in your service worker (`service-worker.js`), and displays a reference to the original webpage request as `(index):157`.  The `service-worker.js` file is shown, and the call stack highlights the request originator, `(index):157`:<!--"request initiator?"-->
 
 ![The service-worker.js file and call stack highlighting the request originator.](../../media/2020/11/service-worker-sources-stopped-at-breakpoint.msft.png)
 
-The `(index)` webpage is the request initiator:
+In the following figure, the reference is selected, and has opened the initiator that made the request.  The `(index)` webpage is the request initiator:<!--"request originator?" is there a reason for changing the terminology, in the alt-text?-->
 
 ![The (index) webpage is the request initiator.](../../media/2020/11/service-worker-sources-call-stack-target.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [View the call stack](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/reference#view-the-call-stack) in _JavaScript debugging features_
+* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
 
 
 <!-- ====================================================================== -->
@@ -206,12 +195,12 @@ See also:
 <!-- Title: Copy response JSON in Network tool using the right-click menu  -->
 <!-- Subtitle:  The Network tool now has a more consistent UX.  Easily copy the JSON response using the right-click menu.  -->
 
-In the **Network** tool, copy the property value of a network request using the new **Copy value** option.  The property value is copied as a decoded JSON value.  In previous versions of Microsoft Edge, you had to copy a value using one of the following actions.
+In the **Network** tool, copy the property value of a network request using the new **Copy value** option.  The property value is copied as a decoded JSON value.  In previous versions of Microsoft Edge, you had to copy a value using one of the following actions:
 
 *  Highlight the entire text and copy it.
-*  Store the value as global variable, as applicable, and copy it from the DevTools [Console](../../../console/index.md).
+*  Store the value as global variable, as applicable, and copy it from the DevTools **Console**.
 
-To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard).  For the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
+To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard) in _Network features reference_.  For the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
 
 Copying a property value in DevTools:
 
@@ -221,11 +210,8 @@ Pasting a property value in Microsoft Visual Studio Code:
 
 ![Pasting a property value in Microsoft Visual Studio Code.](../../media/2020/11/paste-property-value.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Console overview](../../../console/index.md)
 
 
 <!-- ====================================================================== -->
@@ -233,6 +219,8 @@ See also:
 
 <!-- Title: Customize multi-press keyboard shortcuts  -->
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->
+
+Update: This feature has been released and is no longer experimental.  See [Edit the keyboard shortcut for a DevTools action](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) in _Customize keyboard shortcuts_.
 
 ![Experimental feature](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -242,25 +230,13 @@ For example, the red highlight displays a multi-press keyboard shortcut customiz
 
 ![Chords keyboard shortcuts.](../../media/2020/11/multi-press-keyboard-shortcuts.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
-## DevTools now match browser language
+## The DevTools UI now matches the browser language
 
-In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings](../../../customize/index.md#settings), DevTools did not match the browser language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  For more information about the **Match browser language** DevTools Setting, see [Change DevTools language settings](../../../customize/localization.md).
+In Microsoft Edge version 87, if you turned on the **Match browser language** setting in [DevTools Settings](../../../customize/index.md#settings), the DevTools UI language didn't match the browser UI language.  In Microsoft Edge version 88, DevTools now matches the browser language if you turn on the **Match browser language** setting.  See [Change DevTools language settings](../../../customize/localization.md).
 
 ![Match browser language DevTools setting in Japanese.](../../media/2020/11/startpage-devtools-settings-japanese.msft.png)
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -272,7 +248,7 @@ See also:
 <!-- ====================================================================== -->
 ### New CSS angle visualization tools
 
-DevTools now has better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, click the clock icon.  To change the angle, click anywhere in the clock, drag the needle, or use mouse and keyboard shortcuts.  To learn more, see [Change angle value with the Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock).  For updates on this feature in the Chromium open-source project, see Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
+DevTools now has better support for CSS angle debugging.  When an HTML element on your page has CSS angle applied to it, a clock icon is displayed next to the angle in the **Styles** tool.  To toggle the clock overlay, click the clock icon.  To change the angle, click anywhere in the clock, drag the needle, or use mouse and keyboard shortcuts.
 
 The following CSS angle is used for the example:
 
@@ -282,11 +258,9 @@ background: linear-gradient(100deg, lightblue, pink);
 
 ![CSS angle.](../../media/2020/11/css-angle.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
+For more information, see [Change angle value with the Angle Clock](../../../css/reference.md#change-angle-value-with-the-angle-clock) in _CSS features reference_.
+
+For updates on this feature in the Chromium open-source project, see Issues [1126178](https://crbug.com/1126178) and [1138633](https://crbug.com/1138633).
 
 
 <!-- ====================================================================== -->
@@ -295,32 +269,26 @@ See also:
 You can now override storage quota size in the **Storage** pane.  This feature allows you to simulate different devices and test the behavior of your website or app in low disk availability scenarios.  To simulate the storage quota:
 
 1. Navigate to **Application** > **Storage**.
-1. Turn on the **Simulate custom storage quota** checkbox.
+1. Select the **Simulate custom storage quota** checkbox.
 1. Enter a valid number.
-
-For more information about how to emulate mobile devices, and about other DevTools features, see [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md).  To see updates on this feature in the Chromium open-source project, see Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
 ![Simulate storage quota size.](../../media/2020/11/storage-quota.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
+For more information, see [Emulate mobile devices (Device Emulation)](../../../device-mode/index.md).  To see updates on this feature in the Chromium open-source project, see Issues [945786](https://crbug.com/945786) and [1146985](https://crbug.com/1146985).
 
 
 <!-- ====================================================================== -->
 ### Report CORS errors in the Network tool
 
-Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.  For real-time updates on this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
+Try out this feature by navigating to [CORS error demo](https://cors-errors.glitch.me).  Open the **Network** tool, refresh the page, and observe the failed CORS network request.  The status column displays the **CORS error**.  When you hover on the error, the tooltip now displays the error code.  In Microsoft Edge version 87 and earlier, DevTools only displayed generic **(failed)** status for CORS errors.
 
 ![CORS errors.](../../media/2020/11/cors-err.msft.png)
 
-<!--
+For real-time updates on this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
+
 See also:
-* []()
-* []()
--->
+* [Enhanced CORS debugging support](../../2021/05/devtools.md#enhanced-cors-debugging-support) in _What's New in DevTools (Microsoft Edge 92)_
+* [Network features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference)
 
 
 <!-- ====================================================================== -->

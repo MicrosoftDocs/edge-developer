@@ -32,7 +32,7 @@ See also [Inspect network activity](index.md), which is a step-by-step tutorial 
 
 By default, DevTools records all network requests in the **Network** tool, so long as DevTools is open.
 
-:::image type="content" source="../media/network-network-panel.msft.png" alt-text="The Network panel." lightbox="../media/network-network-panel.msft.png":::
+![The Network panel.](../media/network-network-panel.msft.png)
 
 ### Stop recording network requests
 
@@ -46,13 +46,13 @@ To stop recording requests:
 
 Click the **Clear** (![Clear.](../media/clear-requests-icon.msft.png)) button on the **Network** tool to clear all requests from the Requests table.
 
-:::image type="content" source="../media/network-network-clear-button.msft.png" alt-text="The Clear button." lightbox="../media/network-network-clear-button.msft.png":::
+![The Clear button.](../media/network-network-clear-button.msft.png)
 
 ### Save requests across page loads
 
 To save requests across page loads, on the **Network** tool, select the **Preserve log** checkbox:
 
-:::image type="content" source="../media/network-network-preserve-log.msft.png" alt-text="The Preserve Log checkbox." lightbox="../media/network-network-preserve-log.msft.png":::
+![The Preserve Log checkbox.](../media/network-network-preserve-log.msft.png)
 
 DevTools saves all requests until you disable **Preserve log**.
 
@@ -68,7 +68,7 @@ To enable screenshots:
 
 1. Select the **Capture screenshots** checkbox:
 
-:::image type="content" source="../media/network-network-screenshot-box.msft.png" alt-text="Enabling 'Capture screenshots'." lightbox="../media/network-network-screenshot-box.msft.png":::
+![Enabling 'Capture screenshots'.](../media/network-network-screenshot-box.msft.png)
 
 To capture a screenshot:
 
@@ -78,7 +78,7 @@ To capture a screenshot:
 
 1. Hover over a screenshot to display the point at which that screenshot was captured.  A yellow vertical line is displayed on the **Overview** chart pane.
 
-   :::image type="content" source="../media/network-network-screenshot-hover.msft.png" alt-text="Hovering on a screenshot." lightbox="../media/network-network-screenshot-hover.msft.png":::
+   ![Hovering on a screenshot.](../media/network-network-screenshot-hover.msft.png)
 
 1. Click the thumbnail of a screenshot to filter out any requests that occurred after the screenshot was captured.
 
@@ -91,7 +91,7 @@ To capture a screenshot:
 <!--  To replay an XHR request, right-click the request in the Requests table, and then click **Replay XHR**.  -->
 
 <!--
-:::image type="content" source="../media/network-replay-xhr.msft.png" alt-text="Click Replay XHR." lightbox="../media/network-replay-xhr.msft.png":::
+![Click Replay XHR.](../media/network-replay-xhr.msft.png)
 -->
 
 
@@ -104,7 +104,7 @@ To emulate how a first-time user experiences your site, turn on the **Disable ca
 
 The **Disable Cache** checkbox:
 
-:::image type="content" source="../media/network-network-disable-cache-checkbox.msft.png" alt-text="The Disable Cache checkbox." lightbox="../media/network-network-disable-cache-checkbox.msft.png":::
+![The Disable Cache checkbox.](../media/network-network-disable-cache-checkbox.msft.png)
 
 #### Disable the browser cache from the Network Conditions drawer
 
@@ -122,7 +122,7 @@ To manually clear the browser cache at any time, right-click anywhere in the Req
 
 Selecting **Clear Browser Cache**:
 
-:::image type="content" source="../media/network-network-clear-browser-cache.msft.png" alt-text="Selecting Clear Browser Cache." lightbox="../media/network-network-clear-browser-cache.msft.png":::
+![Selecting Clear Browser Cache.](../media/network-network-clear-browser-cache.msft.png)
 
 ### Emulate offline
 
@@ -132,7 +132,7 @@ To simulate an offline network experience, select the **No throttling** dropdown
 
 The **Offline** dropdown menu:
 
-:::image type="content" source="../media/network-network-offline-dropdown.msft.png" alt-text="The Offline dropdown menu." lightbox="../media/network-network-offline-dropdown.msft.png":::
+![The Offline dropdown menu.](../media/network-network-offline-dropdown.msft.png)
 
 ### Emulate slow network connections
 
@@ -140,7 +140,7 @@ Emulate Slow 3G, Fast 3G, and other connection speeds from the **No throttling**
 
 The **Throttling** dropdown menu:
 
-:::image type="content" source="../media/network-network-throttling-menu.msft.png" alt-text="The Throttling dropdown menu." lightbox="../media/network-network-throttling-menu.msft.png":::
+![The Throttling dropdown menu.](../media/network-network-throttling-menu.msft.png)
 
 You can choose from different presets, such as Slow 3G or Fast 3G.  To add your own custom presets, open the Throttling menu, and select **Custom** > **Add**.
 
@@ -160,7 +160,7 @@ If you want to throttle the network connection while working in other DevTools p
 
 To manually clear browser cookies at any time, right-click anywhere in the Requests table, and then select **Clear Browser Cookies**.
 
-:::image type="content" source="../media/network-network-clear-browser-cookies.msft.png" alt-text="Selecting 'Clear Browser Cookies'." lightbox="../media/network-network-clear-browser-cookies.msft.png":::
+![Selecting 'Clear Browser Cookies'.](../media/network-network-clear-browser-cookies.msft.png)
 
 ### Override the user agent
 
@@ -184,7 +184,7 @@ If your site employs [user agent client hints](../../web-platform/user-agent-gui
 
 1. In the User agent panel clear the **Use browser default** checkbox, then select **User agent client hints**.
 
-   :::image type="content" source="images/network-conditions-user-agent-client-hints.msft.png" alt-text="Setting user agent client hints." lightbox="images/network-conditions-user-agent-client-hints.msft.png":::
+   ![Setting user agent client hints.](images/network-conditions-user-agent-client-hints.msft.png)
 
 1. Accept the default value of **Custom...**, or select a predefined browser and device from the dropdown list.
 
@@ -219,7 +219,7 @@ For more information, see [Hide the Filters pane](#hide-the-filters-pane).
 
 The **Filter** text box:
 
-:::image type="content" source="../media/network-network-filters-textbox.msft.png" alt-text="The Filter text box." lightbox="../media/network-network-filters-textbox.msft.png":::
+![The Filter text box.](../media/network-network-filters-textbox.msft.png)
 
 You can use multiple properties simultaneously by separating each property with a space.  For example, `mime-type:image/png larger-than:1K` displays all PNGs that are larger than 1 kilobyte.  The multi-property filters are equivalent to `AND` operations.  `OR` operations are currently not supported.
 
@@ -260,7 +260,7 @@ To enable multiple type filters simultaneously, press and hold `Control` (Window
 
 Use the **Type** filters to display JS, CSS, and Document resources:
 
-:::image type="content" source="../media/network-network-type-filters.msft.png" alt-text="Using the Type filters to display JS, CSS, and Document resources." lightbox="../media/network-network-type-filters.msft.png":::
+![Using the Type filters to display JS, CSS, and Document resources.](../media/network-network-type-filters.msft.png)
 
 ### Filter requests by time
 
@@ -268,7 +268,7 @@ Click and drag left or right on the **Overview** pane to only display requests t
 
 Filtering out any requests that were inactive around 300 ms:
 
-:::image type="content" source="../media/network-network-overview-filter.msft.png" alt-text="Filtering out any requests that were inactive around 300 ms." lightbox="../media/network-network-overview-filter.msft.png":::
+![Filtering out any requests that were inactive around 300 ms.](../media/network-network-overview-filter.msft.png)
 
 ### Hide data URLs
 
@@ -276,7 +276,7 @@ Filtering out any requests that were inactive around 300 ms:
 
 To hide the requests, turn off the **Hide data URLs** checkbox:
 
-:::image type="content" source="../media/network-network-hide-data-urls.msft.png" alt-text="The Hide Data URLs checkbox." lightbox="../media/network-network-hide-data-urls.msft.png":::
+![The Hide Data URLs checkbox.](../media/network-network-hide-data-urls.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -308,7 +308,7 @@ These descriptions assume that each respective option is ranked from shortest to
 
 The following shows sorting the Waterfall by total duration.  The lighter portion of each bar is time spent waiting and the darker portion is time spent downloading bytes:
 
-:::image type="content" source="../media/network-network-waterfall-total-duration.msft.png" alt-text="Sorting the Waterfall by total duration." lightbox="../media/network-network-waterfall-total-duration.msft.png":::
+![Sorting the Waterfall by total duration.](../media/network-network-waterfall-total-duration.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -320,7 +320,7 @@ So long as DevTools are open, it logs all requests in the **Network** tool.  Use
 
 Use the **Requests** table to display a log of all requests made while DevTools have been open.  To reveal more information about each item, click or hover on requests.
 
-:::image type="content" source="../media/network-network-requests-table.msft.png" alt-text="The Requests table." lightbox="../media/network-network-requests-table.msft.png":::
+![The Requests table.](../media/network-network-requests-table.msft.png)
 
 The Requests table displays the following columns by default:
 
@@ -340,13 +340,13 @@ The Requests table displays the following columns by default:
 
 Right-click the header of the Requests table and select an option to hide or show it.  Currently displayed options have checkmarks next to them.
 
-:::image type="content" source="../media/network-network-requests-add-column.msft.png" alt-text="Adding a column to the Requests table." lightbox="../media/network-network-requests-add-column.msft.png":::
+![Adding a column to the Requests table.](../media/network-network-requests-add-column.msft.png)
 
 #### Add custom columns
 
 To add a custom column to the Requests table, right-click the header of the Requests table and then select **Response Headers** > **Manage Header Columns**.
 
-:::image type="content" source="../media/network-network-requests-add-custom.msft.png" alt-text="Adding a custom column to the Requests table." lightbox="../media/network-network-requests-add-custom.msft.png":::
+![Adding a custom column to the Requests table.](../media/network-network-requests-add-custom.msft.png)
 
 ### Display the timing relationship of requests
 
@@ -356,7 +356,7 @@ To see the different ways that you can sort the Waterfall, go to [Sort by activi
 
 The Waterfall column of the **Requests** pane:
 
-:::image type="content" source="../media/network-network-requests-waterfall.msft.png" alt-text="The Waterfall column of the Requests pane." lightbox="../media/network-network-requests-waterfall.msft.png":::
+![The Waterfall column of the Requests pane.](../media/network-network-requests-waterfall.msft.png)
 
 <!-- ### Analyze the frames of a WebSocket Connection  -->
 
@@ -368,7 +368,7 @@ The Waterfall column of the **Requests** pane:
 To refresh the table, re-select the name of the WebSocket connection under the **Name** column of the Requests table.  -->
 
 <!--
-:::image type="content" source="../media/network-frames.msft.png" alt-text="The Frames panel." lightbox="../media/network-frames.msft.png":::
+![The Frames panel.](../media/network-frames.msft.png)
 -->
 
 <!--The table contains the following three columns.
@@ -393,7 +393,7 @@ To display a preview of a response body, use the following steps.
 
 The Preview tab is mostly useful to display images.
 
-:::image type="content" source="../media/network-network-resources-preview.msft.png" alt-text="The Preview panel." lightbox="../media/network-network-resources-preview.msft.png":::
+![The Preview panel.](../media/network-network-resources-preview.msft.png)
 
 ### Display a response body
 
@@ -402,7 +402,7 @@ To display the response body to a request, use the following steps.
 1. Click the URL of the request, under the **Name** column of the Requests table.
 1. Click the **Response** tab.
 
-:::image type="content" source="../media/network-network-resources-response.msft.png" alt-text="The Response panel." lightbox="../media/network-network-resources-response.msft.png":::
+![The Response panel.](../media/network-network-resources-response.msft.png)
 
 ### Display HTTP headers
 
@@ -412,7 +412,7 @@ To display HTTP header data about a request, use the following steps.
 
 1. Click the **Headers** tab.
 
-:::image type="content" source="../media/network-resources-headers.msft.png" alt-text="The Headers panel." lightbox="../media/network-resources-headers.msft.png":::
+![The Headers panel.](../media/network-resources-headers.msft.png)
 
 #### Display HTTP header source
 
@@ -430,7 +430,7 @@ To display the query string parameters of a URL in a human-readable format, use 
 
 1. Navigate to the **Query String Parameters** section.
 
-:::image type="content" source="../media/network-network-resources-headers-query-string-parameters.msft.png" alt-text="The Query String Parameters section." lightbox="../media/network-network-resources-headers-query-string-parameters.msft.png":::
+![The Query String Parameters section.](../media/network-network-resources-headers-query-string-parameters.msft.png)
 
 #### Display query string parameters source
 
@@ -457,7 +457,7 @@ To display the cookies sent in the HTTP header of a request, use the following s
 
 <!--For more information about each of the columns, see [Fields](manage-data/cookies#fields).  TODO: add link when section is available -->
 
-:::image type="content" source="../media/network-network-resources-cookies.msft.png" alt-text="The Cookies panel." lightbox="../media/network-network-resources-cookies.msft.png":::
+![The Cookies panel.](../media/network-network-resources-cookies.msft.png)
 
 ### Display the timing breakdown of a request
 
@@ -466,13 +466,13 @@ To display the timing breakdown of a request, use the following steps.
 1. Click the URL of the request, under the **Name** column of the Requests table.
 1. Click the **Timing** tab.
 
-For a faster way to access the data, see [Preview a timing breakdown](#preview-a-timing-breakdown).
+For a faster way to access the data, see [Preview a timing breakdown](#preview-a-timing-breakdown), in the present article.
 
-For more information about each of the phases that may be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained).
+For more information about each of the phases that may be displayed in the **Timing** panel, see [Timing breakdown phases explained](#timing-breakdown-phases-explained), in the present article.
 
 The **Timing** panel:
 
-:::image type="content" source="../media/network-network-resources-timing.msft.png" alt-text="The Timing panel." lightbox="../media/network-network-resources-timing.msft.png":::
+![The Timing panel.](../media/network-network-resources-timing.msft.png)
 
 More information about each of the phases.
 
@@ -482,11 +482,11 @@ For more information about accessing the display, see [Display timing breakdown]
 
 To display a preview of the timing breakdown of a request, in the **Waterfall** column of the Requests table, hover on the entry for the request.
 
-For more information about how to access the data without hovering, see [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).
-
 Previewing the timing breakdown of a request:
 
-:::image type="content" source="../media/network-network-resources-waterfall-hover.msft.png" alt-text="Previewing the timing breakdown of a request." lightbox="../media/network-network-resources-waterfall-hover.msft.png":::
+![Previewing the timing breakdown of a request.](../media/network-network-resources-waterfall-hover.msft.png)
+
+To view the data without hovering, see the top of the present section, [Display the timing breakdown of a request](#display-the-timing-breakdown-of-a-request).
 
 #### Timing breakdown phases explained
 
@@ -529,7 +529,7 @@ DevTools colors:
 
 Displaying the initiators and dependencies of a request:
 
-:::image type="content" source="../media/network-network-resources-initiators-dependencies.msft.png" alt-text="Displaying the initiators and dependencies of a request." lightbox="../media/network-network-resources-initiators-dependencies.msft.png":::
+![Displaying the initiators and dependencies of a request.](../media/network-network-resources-initiators-dependencies.msft.png)
 
 When the Requests table is ordered chronologically, if you hover on a line, the line preceding it displays a green request.  The green request is the initiator of the dependency.  If another green request is displayed on the line before that, that higher request is the initiator of the initiator.  And so on.
 
@@ -539,7 +539,7 @@ DevTools displays the timing of the `DOMContentLoaded` and `load` events in mult
 
 The locations of the `DOMContentLoaded` and `load` events on the **Network** tool:
 
-:::image type="content" source="../media/network-network-requests-load-events.msft.png" alt-text="The locations of the DOMContentLoaded and load events on the Network panel." lightbox="../media/network-network-requests-load-events.msft.png":::
+![The locations of the DOMContentLoaded and load events on the Network panel.](../media/network-network-requests-load-events.msft.png)
 
 ### Display the total number of requests
 
@@ -550,7 +550,7 @@ The total number of requests is listed in the **Summary** pane, at the bottom of
 
 The total number of requests since DevTools were opened
 
-:::image type="content" source="../media/network-network-total-requests.msft.png" alt-text="The total number of requests since DevTools were opened." lightbox="../media/network-network-total-requests.msft.png":::
+![The total number of requests since DevTools were opened.](../media/network-network-total-requests.msft.png)
 
 ### Display the total download size
 
@@ -561,7 +561,7 @@ The total download size of requests is listed in the **Summary** pane, at the bo
 
 The total download size of requests:
 
-:::image type="content" source="../media/network-network-total-download-size.msft.png" alt-text="The total download size of requests." lightbox="../media/network-network-total-download-size.msft.png":::
+![The total download size of requests.](../media/network-network-total-download-size.msft.png)
 
 To verify how large resources are after the browser uncompresses each item, see [display the uncompressed size of a resource](#display-the-uncompressed-size-of-a-resource).
 
@@ -587,7 +587,7 @@ init();
 
 The stack trace leading up to a resource request:
 
-:::image type="content" source="../media/network-network-requests-initiator-stack.msft.png" alt-text="The stack trace leading up to a resource request." lightbox="../media/network-network-requests-initiator-stack.msft.png":::
+![The stack trace leading up to a resource request.](../media/network-network-requests-initiator-stack.msft.png)
 
 ### Display the uncompressed size of a resource
 
@@ -595,7 +595,7 @@ Turn on the **Use large request rows** checkbox and then examine the bottom valu
 
 The following is an example of uncompressed resources.  The compressed size of the `jquery-3.3.1.min.js` file that was sent over the network was `29.9 KB`, whereas the uncompressed size was `84.9 KB`:
 
-:::image type="content" source="../media/network-network-requests-uncompressed-compare.msft.png" alt-text="An example of uncompressed resources." lightbox="../media/network-network-requests-uncompressed-compare.msft.png":::
+![An example of uncompressed resources.](../media/network-network-requests-uncompressed-compare.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -612,7 +612,7 @@ Once you save a HAR file, you can import it back into DevTools for analysis.  Dr
 
 Selecting **Save as HAR with Content**:
 
-:::image type="content" source="../media/network-network-requests-save-har-content.msft.png" alt-text="Selecting 'Save as HAR with Content'." lightbox="../media/network-network-requests-save-har-content.msft.png":::
+![Selecting 'Save as HAR with Content'.](../media/network-network-requests-save-har-content.msft.png)
 
 ### Copy one or more requests to the clipboard
 
@@ -630,17 +630,17 @@ Under the **Name** column of the Requests table, right-click a request, hover ov
 
 Select **Copy Response**:
 
-:::image type="content" source="../media/network-network-requests-copy-response.msft.png" alt-text="Selecting 'Copy Response'." lightbox="../media/network-network-requests-copy-response.msft.png":::
+![Selecting 'Copy Response'.](../media/network-network-requests-copy-response.msft.png)
 
 ### Copy formatted response JSON to the clipboard
 
 Select a network request and then navigate to the **Headers** pane.  To copy the JSON value of a response, navigate to **Request payload**, right-click the JSON response content and then select **Copy Value**.
 
-:::image type="content" source="../media/network-header-copy-property-value.msft.png" alt-text="The Copy Value right-click command." lightbox="../media/network-header-copy-property-value.msft.png":::
+![The Copy Value right-click command.](../media/network-header-copy-property-value.msft.png)
 
 Pasting the formatted response JSON in Microsoft Visual Studio Code:
 
-:::image type="content" source="../media/network-header-paste-property-value.msft.png" alt-text="Microsoft Visual Studio Code with formatted response JSON." lightbox="../media/network-header-paste-property-value.msft.png":::
+![Microsoft Visual Studio Code with formatted response JSON.](../media/network-header-paste-property-value.msft.png)
 
 ### Copy property values from network requests to your clipboard
 
@@ -667,7 +667,7 @@ You can expand or collapse sections of the **Network** tool UI to focus importan
 
 By default, DevTools shows the **Filters** pane.  To hide the **Filters** pane, select **Filter** (![Filter.](../media/filter-icon.msft.png)).
 
-:::image type="content" source="../media/network-network-resources-hide-filters-button.msft.png" alt-text="The Hide Filters button." lightbox="../media/network-network-resources-hide-filters-button.msft.png":::
+![The Hide Filters button.](../media/network-network-resources-hide-filters-button.msft.png)
 
 ### Use large request rows
 
@@ -675,13 +675,13 @@ Use large rows when you want more whitespace in your network requests table.  So
 
 To enable large rows, select the **Use large request rows** checkbox.  An example of large request rows in the **Requests** pane:
 
-:::image type="content" source="../media/network-network-requests-large-request-rows.msft.png" alt-text="An example of large request rows in the Requests pane." lightbox="../media/network-network-requests-large-request-rows.msft.png":::
+![An example of large request rows in the Requests pane.](../media/network-network-requests-large-request-rows.msft.png)
 
 ### Hide the Overview pane
 
 By default, DevTools displays the **Overview** pane.  To hide the **Overview** pane, clear the **Show Overview** checkbox.
 
-:::image type="content" source="../media/network-network-requests-show-overview-off.msft.png" alt-text="The Show Overview checkbox." lightbox="../media/network-network-requests-show-overview-off.msft.png":::
+![The Show Overview checkbox.](../media/network-network-requests-show-overview-off.msft.png)
 
 
 <!-- ====================================================================== -->
