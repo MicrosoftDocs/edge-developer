@@ -1155,6 +1155,10 @@
               href: webview2/how-to/static.md
               displayName: Statically link the WebView2 loader library, single-file app  # old title
 
+            - name: Publish a UWP WebView2 app to the Microsoft Store
+              href: webview2/how-to/publish-uwp-app-store.md
+              displayName: Partner Center, Microsoft Store
+
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
           displayName: 
