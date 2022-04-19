@@ -161,7 +161,9 @@ Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphab
 
 ![Sorted snippets in the Sources panel.](../../media/2021/10/snippets-sorted-alphbetically.png)
 
-For more information about snippets, see [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).  For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
+For more information about snippets, see [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).
+
+For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
 
 <!--
 See also:

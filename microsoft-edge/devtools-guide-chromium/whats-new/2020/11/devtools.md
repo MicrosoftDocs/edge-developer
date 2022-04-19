@@ -120,11 +120,8 @@ The following new features in the **Network** tool, **Application** tool, and **
 
 The routing of a request displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
 
 
 <!-- ====================================================================== -->
@@ -153,6 +150,7 @@ To display additional context when debugging a service worker:
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
+* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
 
 
 <!-- ====================================================================== -->
@@ -169,6 +167,7 @@ In the **Network** tool, you can debug network requests that are run by service 
 
 See also:
 * [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
+* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
 
 
 <!-- ====================================================================== -->
@@ -200,7 +199,7 @@ In the **Network** tool, copy the property value of a network request using the 
 *  Highlight the entire text and copy it.
 *  Store the value as global variable, as applicable, and copy it from the DevTools **Console**.
 
-To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard) in _Network features reference_.  For the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
+To copy the property value to your clipboard, see [Copy formatted response JSON to the clipboard](../../../network/reference.md#copy-formatted-response-json-to-the-clipboard) in _Network features reference_.
 
 Copying a property value in DevTools:
 
@@ -209,6 +208,8 @@ Copying a property value in DevTools:
 Pasting a property value in Microsoft Visual Studio Code:
 
 ![Pasting a property value in Microsoft Visual Studio Code.](../../media/2020/11/paste-property-value.msft.png)
+
+For the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
 
 See also:
 * [Console overview](../../../console/index.md)
@@ -378,32 +379,27 @@ See also:
 <!-- ====================================================================== -->
 ### Preview Wasm variable value on mouseover
 
-In the **Sources** tool, use this feature to see the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable.  For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
+In the **Sources** tool, use this feature to see the value of a WebAssembly (Wasm) variable when your code is paused.  To display the current value of a variable, hover on a variable:
 
 ![Preview Wasm variable on mouseover.](../../media/2020/11/wasm-mouseover.msft.png)
 
-<!--
+For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
+
 See also:
-* []()
-* []()
--->
+* [Using the Debugger pane to debug JavaScript code](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/#using-the-debugger-pane-to-debug-javascript-code) in _Sources tool overview_
 
 
 <!-- ====================================================================== -->
 ### Consistent units of measurement for sizes of files and memory
 
-DevTools now consistently use `kB` for displaying sizes of files and memory.  Previously DevTools mixed `kB` and `KiB`.
+DevTools now consistently uses `kB` for displaying sizes of files and memory.  Previously, DevTools mixed `kB` and `KiB`.
 
 *  `kB` or kilobyte (10^3 or 1000 bytes)
 *  `KiB` or kibibyte (2^10 or 1024 bytes)
 
-For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.  For the history of this feature in the Chromium open-source project, see Issue [1035309](https://crbug.com/1035309).
+For example, the **Network** tool previously used `kB` in the labels, but used `KiB` in calculations.  Your feedback showed that this inconsistency caused confusion.
 
-<!--
-See also:
-* []()
-* []()
--->
+For the history of this feature in the Chromium open-source project, see Issue [1035309](https://crbug.com/1035309).
 
 
 <!-- ====================================================================== -->

@@ -74,7 +74,7 @@ The **Styles** panel shows you all of the rules that apply to an element, includ
 
 1. To display all inherited values, select the **Show All** checkbox.
 
-   In the following figure, the **Computed** panel shows the CSS properties being applied to the currently-selected `h1` element:
+   In the following figure, the **Computed** panel shows the CSS properties being applied to the currently selected `h1` element:
 
    :::image type="content" source="../media/css-elements-computed-h1.msft.png" alt-text="The Computed panel." lightbox="../media/css-elements-computed-h1.msft.png":::
 
@@ -475,6 +475,9 @@ To change the selected color to some other color on the page:
    In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.  The specific color changes to the version of black that is currently highlighted in the viewport after you clicked it.
 
    :::image type="content" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Using the Eyedropper." lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+
+See also:
+* [Test text-color contrast using the Color Picker](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/color-picker)
 
 
 <!-- ====================================================================== -->

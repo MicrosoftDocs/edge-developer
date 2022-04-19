@@ -331,7 +331,9 @@ In the **Performance** tool, DevTools now displays **Compute Intersections** in 
 
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-For more about intersection observers, see [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2).  For information about using the flame chart, see [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording).  For the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
+For more about intersection observers, see [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2).  For information about using the flame chart, see [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording).
+
+For the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
 
 <!--
 See also:

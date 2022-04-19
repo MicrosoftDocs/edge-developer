@@ -184,7 +184,7 @@ The **DOM Breakpoints** and **Properties** tabs aren't keyboard-accessible.
 
 The **Styles** pane has controls to filter styles, toggle element states (such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)), toggle classes, and add new classes.  There's also a powerful style inspection tool to explore and modify styles currently applied to the element that has focus in the **DOM Tree**.
 
-The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you're done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently selected node in the **DOM Tree**.  For example, suppose you're done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.
 
 You might find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node (such as a link within the footer), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you're interested.
 
@@ -216,17 +216,17 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 1. Go to the **Styles** pane and press `Tab` until the **Toggle Element State** button has focus.
 
-1. Press `Enter` to expand the collection of element states.  The element states are presented as a group of checkboxes.
+1. Press `Enter` to display the **Force element state** section, which contains checkboxes.
 
 1. Press `Tab` until the first state, `:active`, has focus.
 
-1. Press `Spacebar` to enable it.  If the currently-selected element in the DOM Tree has an `:active` style, it is now applied.
+1. Press `Spacebar` to enable it.  If the currently selected element in the DOM Tree has an `:active` style, it is now applied.
 
 1. Hold `Tab` to explore all of the available states.
 
 #### Add an existing class
 
-Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, press `Tab` and then press `Enter`.  Focus moves into an edit text field labeled **Add new class**.
+The **Element Classes** button is next to the **Toggle Element State** button.  To move the focus to the **Element Classes** button, press `Tab` and then press `Enter`.  Focus moves into an edit text field labeled **Add new class**.
 
 The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can press `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and press `Enter` to apply it.
 

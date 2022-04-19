@@ -106,7 +106,9 @@ Previously, to change the display language in DevTools, you had to change the br
 
 ![Changing the DevTools display language directly from the DevTools Settings page.](../../media/2021/07/settings-browser-ui-language.msft.png)
 
-By default, DevTools matches your browser's display language.  See [Change DevTools language settings](../../../customize/localization.md).  For the history of this feature in the Chromium open-source project, see Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756).
+By default, DevTools matches your browser's display language.  See [Change DevTools language settings](../../../customize/localization.md).
+
+For the history of this feature in the Chromium open-source project, see Issue [2882756](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/2882756).
 
 
 <!-- ====================================================================== -->
@@ -148,7 +150,9 @@ You can also override User-Agent Client Hints for the current page by using the 
 
 ![Defining User-Agent Client Hints for a custom device in the Network conditions tool.](../../media/2021/07/ua-client-hints-in-network-conditions.msft.png)
 
-For more information about defining hints in the **Network conditions** tool, see [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).  For the history of this feature in the Chromium open-source project, see Issue [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299).
+For more information about defining hints in the **Network conditions** tool, see [Set user agent client hints](../../../network/reference.md#set-user-agent-client-hints).
+
+For the history of this feature in the Chromium open-source project, see Issue [1174299](https://bugs.chromium.org/p/chromium/issues/detail?id=1174299).
 
 
 <!-- ====================================================================== -->
@@ -165,7 +169,9 @@ Now in Microsoft Edge version 93, screen readers correctly announce the type and
 
 <!-- It'd be good to have a video of this a11y fix where the text that the screen reader announces is displayed -->
 
-For information about debugging Console errors, see [Fixing JavaScript errors that are reported in the Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, see [Find and fix problems using the Issues tool](../../../issues/index.md).  For the history of this feature in the Chromium open-source project, see Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208).
+For information about debugging Console errors, see [Fixing JavaScript errors that are reported in the Console](../../../console/console-debug-javascript.md).  For information about issues found by DevTools and improvements you can make to a webpage, see [Find and fix problems using the Issues tool](../../../issues/index.md).
+
+For the history of this feature in the Chromium open-source project, see Issue [1223208](https://bugs.chromium.org/p/chromium/issues/detail?id=1223208).
 
 
 <!-- ====================================================================== -->
@@ -180,7 +186,9 @@ Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option
 
 ![The Copy as PowerShell command.](../../media/2021/07/copy-as-powershell.msft.png)
 
-For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).  For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
+For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).
+
+For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
 
 
 <!-- ====================================================================== -->

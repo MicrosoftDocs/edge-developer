@@ -693,7 +693,7 @@
 
                 - name: Verify accessibility of all states of elements  # added article
                   href: devtools-guide-chromium/accessibility/test-inspect-states.md
-                  displayName: Elements tool, Styles tab, hov Toggle Element State
+                  displayName: Elements tool, Styles tab, hov, Toggle Element State, Force element state
 
                 - name: Check for contrast issues with dark theme and light theme  # added article
                   href: devtools-guide-chromium/accessibility/test-dark-mode.md
@@ -1299,16 +1299,16 @@
               href: visual-studio-code/index.md
               displayName: 
 
+            - name: Microsoft Edge DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+              displayName: 
+
             - name: Open source files in Visual Studio Code
               href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
               displayName: 
 
             - name: Debugger for Edge
               href: visual-studio-code/debugger-for-edge.md
-              displayName: 
-
-            - name: Microsoft Edge DevTools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
               displayName: 
 
             - name: webhint

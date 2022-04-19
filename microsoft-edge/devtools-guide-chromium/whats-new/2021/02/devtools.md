@@ -127,15 +127,17 @@ See also:
 <!-- Title: Try different CSS flexbox layouts with the visual flexbox editor  -->
 <!-- Subtitle: In the Styles pane, click the icon that appears next to display: flex to try different layout properties for flex containers.  -->
 
-DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon appears next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the `flex` icon.  For the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
+DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon appears next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the `flex` icon.
 
-To open the **Flexbox** editor, go to the **Styles** pane and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties.
+To open the **Flexbox** editor, go to the **Styles** pane and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties:
 
 ![CSS flexbox debugging tools.](../../media/2021/02/elements-styles-display-flex-window.msft.png)
 
-In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You can toggle the overlay of each element.
+In addition, the **Flexbox** section in the **Layout** pane displays all of the flexbox elements on the webpage.  You can toggle the overlay of each element:
 
 ![Flexbox section in the Layout pane.](../../media/2021/02/elements-layout-flexbox-flexbox-overlays.msft.png)
+
+For the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
 
 <!--
 See also:
@@ -152,7 +154,7 @@ See also:
 
 Previously, you were not able to expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane, unlike the DOM in the **Elements** tool.  When a network request is selected in the **Network** tool, the **Initiator** pane displays the chain of requests that initiated the currently selected request.
 
-In Microsoft Edge version 90, you can expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.  To learn more about initiators in the **Network** tool, see [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).  For the history of this feature in the Chromium open-source project, see Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
+In Microsoft Edge version 90, you can expand or collapse the chain of requests using the arrow keys on the keyboard in the **Initiator** pane.  The focused network request in the chain is also now highlighted.
 
 Click a Network request and then click the **Initiator** pane:
 
@@ -161,6 +163,10 @@ Click a Network request and then click the **Initiator** pane:
 Expand or collapse the request initiator chain and follow the highlighted row:
 
 ![Expand or collapse the request initiator chain and follow the highlighted row.](../../media/2021/02/network-request-initiator-chain-right-arrow-down-twice-down-arrow-thrice.msft.png)
+
+To learn more about initiators in the **Network** tool, see [Display initiators and dependencies](../../../network/reference.md#display-initiators-and-dependencies).
+
+For the history of this feature in the Chromium open-source project, see Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
 
 <!--
 See also:
@@ -201,9 +207,11 @@ See also:
 <!-- ====================================================================== -->
 ### The Console now escapes double quote characters
 
-Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double quote (`"`) characters.  For the history of this feature in the Chromium open-source project, see Issue [1178530](https://crbug.com/1178530).
+Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double-quote (`"`) characters:
 
 ![The Console outputs JavaScript strings using escaped double quote (&#0022;) characters.](../../media/2021/02/console-string-formatted-double-quotes.msft.png)
+
+For the history of this feature in the Chromium open-source project, see Issue [1178530](https://crbug.com/1178530).
 
 <!--
 See also:
@@ -222,11 +230,13 @@ To emulate the CSS color-gamut media feature:
 1. Open the [Command Menu](../../../command-menu/index.md).
 1. Type `Rendering`.
 1. Run the **Show Rendering** command.
-1. Go to **Emulate CSS media feature color-gamut** and then click an option.
-
-To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).  For the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
+1. Go to **Emulate CSS media feature color-gamut** and then click an option:
 
 ![Emulate the CSS color-gamut media feature.](../../media/2021/02/rendering-css-color-gamut.msft.png)
+
+To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).
+
+For the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
 
 <!--
 See also:
@@ -307,9 +317,13 @@ See also:
 <!-- ====================================================================== -->
 ### Display allowed and disallowed features in the Frame details view
 
-The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md).  Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.  For the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
+The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md):
 
 ![Allowed and disallowed features based on the Permission Policy.](../../media/2021/02/application-frames-permissions-policy.msft.png)
+
+Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.
+
+For the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
 
 <!--
 See also:
@@ -321,9 +335,13 @@ See also:
 <!-- ====================================================================== -->
 ### New SameParty column in the Cookies pane
 
-The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie.  The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets).  For the history of this feature in the Chromium open-source project, see Issue [1161427](https://crbug.com/1161427).
+The **Cookies** pane in the **Application** tool now displays the `SameParty` attribute for each cookie:
 
 ![SameParty column in the Cookies pane.](../../media/2021/02/application-storage-cookies-sameparty.msft.png)
+
+The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets)
+
+For the history of this feature in the Chromium open-source project, see Issue [1161427](https://crbug.com/1161427).
 
 <!--
 See also:
@@ -335,9 +353,13 @@ See also:
 <!-- ====================================================================== -->
 ### fn.displayName property in the Console tool is now deprecated
 
-Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property.  Use the standard `Object.defineProperty` method to define the `fn.name` property.  To learn more about `fn.name`, see [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name).  For the history of this feature in the Chromium open-source project, see Issue [1177685](https://crbug.com/1177685).
+Previously, the `fn.displayName` property allowed you to control debug names for functions to display in `error.stack` and in DevTools stack traces.  Starting in Microsoft Edge version 90, the `fn.displayName` property is now deprecated, and replaced by the `fn.name` property:
 
 ![An example of the fn.name property to control debug names for functions.](../../media/2021/02/console-display-name-name.msft.png)
+
+Use the standard `Object.defineProperty` method to define the `fn.name` property.  To learn more about `fn.name`, see [Function.name](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/name).
+
+For the history of this feature in the Chromium open-source project, see Issue [1177685](https://crbug.com/1177685).
 
 <!--
 See also:
@@ -357,7 +379,7 @@ After you turn on this experiment and reload the DevTools, click one of the foll
 *  To display the full accessibility tree view, click the **Switch to Accessibility Tree view** button.
 *  To display the DOM tree view, click the **Switch to DOM Tree view** button.
 
-To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable full accessibility tree view in Elements pane**.  For the history of this feature in the Chromium open-source project, see Issue [887173](https://crbug.com/887173).
+To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable full accessibility tree view in Elements pane**.
 
 Displaying the **DOM Tree view**:
 
@@ -366,6 +388,8 @@ Displaying the **DOM Tree view**:
 Displaying the **Full Accessibility Tree view**:
 
 ![Displaying the full accessibility tree view.](../../media/2021/02/elements-switch-to-dom-tree-view.msft.png)
+
+For the history of this feature in the Chromium open-source project, see Issue [887173](https://crbug.com/887173).
 
 <!--
 See also:

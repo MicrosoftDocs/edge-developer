@@ -98,7 +98,7 @@ In Microsoft Edge 81 and earlier, the **Properties tab** in the **Elements** pan
 
 In Microsoft Edge 83, you can now display the properties of the currently selected element after a page refresh in the **Properties tab**:
 
-![In Microsoft Edge 83, the Properties tab displays the properties of the currently-selected element after a page refresh.](../../media/2020/03/properties-in-82.msft.png)
+![In Microsoft Edge 83, the Properties tab displays the properties of the currently selected element after a page refresh.](../../media/2020/03/properties-in-82.msft.png)
 
 Chromium issue [#1050999](https://crbug.com/1050999)
 

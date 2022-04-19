@@ -109,9 +109,11 @@ The Microsoft Edge DevTools now support the following features for inspecting, v
 
 *  The new **Layout** tool allows you to easily toggle grid overlays and configure the appearance and the content for each.
 
-The features are turned on by default.  For the history of this feature in the Chromium open-source project, see Issue [#1047356](https://crbug.com/1047356).  Additionally, the Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  For updates on flexbox tooling in the Chromium open-source project, see Issue [#1136394](https://crbug.com/1136394).
+The features are turned on by default.
 
 ![Layout tool with grids.](../../media/2020/10/grid-layout-pane.msft.png)
+
+For the history of this feature in the Chromium open-source project, see Issue [#1047356](https://crbug.com/1047356).  Additionally, the Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  For updates on flexbox tooling in the Chromium open-source project, see Issue [#1136394](https://crbug.com/1136394).
 
 
 <!-- ====================================================================== -->

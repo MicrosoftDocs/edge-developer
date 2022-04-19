@@ -124,6 +124,7 @@ Selecting **Clear Browser Cache**:
 
 ![Selecting Clear Browser Cache.](../media/network-network-clear-browser-cache.msft.png)
 
+
 ### Emulate offline
 
 A new class of web apps, named [Progressive Web Apps](../progressive-web-apps/index.md), functions offline with the help of **service workers**.<!-- [service workers](/web/fundamentals/getting-started/primers/service-workers) --> You may find it useful to quickly simulate a device that has no data connection, when you are building this type of app.
@@ -133,6 +134,7 @@ To simulate an offline network experience, select the **No throttling** dropdown
 The **Offline** dropdown menu:
 
 ![The Offline dropdown menu.](../media/network-network-offline-dropdown.msft.png)
+
 
 ### Emulate slow network connections
 
@@ -146,6 +148,9 @@ You can choose from different presets, such as Slow 3G or Fast 3G.  To add your 
 
 DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.
 
+See also [Simulate a slower network connection](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/#simulate-a-slower-network-connection) in _Inspect network activity_.
+
+
 #### Emulate slow network connections from the Network Conditions drawer
 
 If you want to throttle the network connection while working in other DevTools panels, use the **Network Conditions** drawer tool:
@@ -155,6 +160,7 @@ If you want to throttle the network connection while working in other DevTools p
 1. Select your connection speed from the **Throttling** menu.
 
 <!--todo: add network condition section when available -->
+
 
 ### Manually clear browser cookies
 

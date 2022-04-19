@@ -125,11 +125,11 @@ To set a DOM change breakpoint:
 
 ### Types of DOM change breakpoints
 
-*  **Subtree modifications**.  Triggered when a child of the currently-selected node is removed or added, or the contents of a child are changed.  Not triggered on child node attribute changes, or on any changes to the currently-selected node.
+*  **Subtree modifications**.  Triggered when a child of the currently selected node is removed or added, or the contents of a child are changed.  Not triggered on child node attribute changes, or on any changes to the currently selected node.
 
-*  **Attributes modifications**: Triggered when an attribute is added or removed on the currently-selected node, or when an attribute value changes.
+*  **Attributes modifications**: Triggered when an attribute is added or removed on the currently selected node, or when an attribute value changes.
 
-*  **Node Removal**: Triggered when the currently-selected node is removed.
+*  **Node Removal**: Triggered when the currently selected node is removed.
 
 
 <!-- ====================================================================== -->
