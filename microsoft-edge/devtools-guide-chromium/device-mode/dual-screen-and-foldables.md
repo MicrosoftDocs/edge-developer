@@ -19,7 +19,7 @@ Emulate the devices and toggle between the following postures.
 *  Single-screen or folded posture
 *  Dual-screen or unfolded posture
 
-The APIs are available in Microsoft Edge 97 and later. If you are not on Microsoft Edge 97 or later, you will need to turn on experimental web platform features to use the APIs.
+The APIs are available in Microsoft Edge 97 and later. If you are not using Microsoft Edge 97 or later, you need to turn on experimental web platform features to use the APIs.
 
 [Turn on experimental Web Platform APIs](#turn-on-experimental-apis) and use the [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) and [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments) to enhance your website (or app) for dual-screen and foldable devices.
 
