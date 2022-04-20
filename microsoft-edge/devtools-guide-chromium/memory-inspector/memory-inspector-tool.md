@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 04/08/2022
+ms.date: 04/22/2022
 ---
 
 <!-- Copyright Kim-Anh Tran
@@ -25,7 +25,7 @@ ms.date: 04/08/2022
 
 # Inspect a JavaScript ArrayBuffer using Memory Inspector
 
-Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuffer `WebAssembly.Memory`.<!-- OR should it say: WASM resizable `ArrayBuffer`. ? --> You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
+Use Memory Inspector to view a JavaScript ArrayBuffers in and the WebAssembly (WASM) resizable ArrayBuffer `WebAssembly.Memory`. You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
 
 <!-- add more scenario type info, ask Zoher -->
 
@@ -35,7 +35,7 @@ Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuf
 
 1. Start Microsoft Edge.
 
-1. Open the test site [https://microsoftedge.github.io/Demos/devtools-a11y-testing/](https://microsoftedge.github.io/Demos/devtools-a11y-testing/).
+1. Open the test site [http://memory-inspector.glitch.me/demo-js.html](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there-->
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ Use Memory Inspector to view a JavaScript ArrayBuffer and the resizable ArrayBuf
 
 1. Set a breakpoint at line **18** as shown in the following image.
 
-    ![Memory Inspector set breakpoint in a JavaScript file](../media/memory-inspector-set-breakpoint.png)
+    ![Memory Inspector set breakpoint in JavaScript file](../media/memory-inspector-set-breakpoint.png)
 
 1. Refresh the webpage. It fails to display because the JavaScript stops processing at the breakpoint.
 
@@ -99,107 +99,87 @@ The Memory Inspector panel includes 3 types of content:
 
 ![Memory Inspector panel Navigation bar](../media/memory-inspector-panel-navigation-bar.png)
  
-* The address input shows the current byte address in hex format. You can change the value to jump to a new location in the memory buffer. Click in the text box and change the value to 0x00000008. Notice that the Memory buffer immediately jumps to that byte address.
+* The address input shows the current byte address in hex format. You can change the value to jump to a new location in the memory buffer. Click in the text box and change the value to `0x00000008`. The Memory buffer immediately jumps to that byte address.
 
-* Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate Previous page and Next page, respectively. If there is only one page of memory buffer data the arrows take you to the beginning and ending of the page.
+* Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate Previous page and Next page, respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
 
-* Use the far left history arrows to Go back in address history and Go forward in address history.
+* Use the far-left history arrows to **Go back in address history** and **Go forward in address history**.
 
-* If the Memory buffer does not automatically update when stepping through values, click Refresh.
+* If the Memory buffer does not automatically update when stepping through values, click **Refresh**.
 
 ### Memory buffer
 
 ![Memory Inspector panel Memory buffer](../media/memory-inspector-panel-memory-buffer.png)
  
-* From the left, the address is displayed in hex format.
+* Reading from the left side of the panel, the address is displayed in hex format.
 
-* The memory is also shown in hex format, each byte separated by a space. The currently selected byte is highlighted. You can click on the byte or navigate with keyboard (left, right, up, down).
+* The memory is also shown in hex format, each byte separated by a space. The currently selected byte is highlighted. You can click on any byte or navigate using the arrow keys (left, right, up, and down).
 
-* An ASCII representation of the memory is shown on the right side. A highlight shows the corresponding value to the selected bits on the byte. Similar to memory, you can click on the byte or navigate with keyboard (left, right, up, down).
+* An ASCII representation of the memory is shown on the right side of the panel. The highlighted character corresponds to the selected byte. You can click on any character or navigate using the arrow keys (left, right, up, and down).
 
 ### Value inspector
 
 ![Memory Inspector panel Value inspector](../media/memory-inspector-panel-value-inspector.png)
  
-* Click the current Endian to switch between Big endian and Little endian and to open the settings.
+* Click the current Endian to switch between **Big endian** and **Little endian**.
 
-* Open Settings (gear icon) to select which value types to see by default in the inspector.
+* The main area shows each value and interpretation based on the settings. By default, all are shown.
 
-* The main area shows each value interpretation per the settings. By default, all are shown.
+* Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle.png)) to select which value types to see by default in the inspector.
 
-* You can change the encoding view using the drop-down list. For integers you can choose from decimal `dec`, hexadecimal `hex`, and octal `oct`. For floats you can choose from scientific notation `sci` or decimal notation `dec`.
+    ![Value type settings](../media/memory-inspector-panel-value-type-settings.png)
+
+* You can change the encoding view using the drop-down list. For integers you can choose from decimal `dec`, hexadecimal `hex`, and octal `oct`. For floats you can choose between decimal notation `dec` and scientific notation `sci`.
 
 
 <!-- ====================================================================== -->
 ## Inspecting memory
 
-Complete the following steps to start debugging in Memory Inspector.
+Complete the following steps to debug a webpage in Memory Inspector.
 
 1. In the **Navigation bar** change the address to `0x00000027`.
 
-1. Observe the ASCII representation and the value interpretations. All values are empty at the moment.
+1. View the ASCII representation and the value interpretations. All values should be zero or empty.
 
-1. Notice the blue Jump to address button next to Pointer 32-bit and Pointer 64-bit. You can click on it to jump to the address. The buttons are grayed out and not clickable if the addresses are not valid.  
+1. Click the **Jump to address** button (![Jump to address button](../media/memory-inspector-jump-to-address.png)) for **Pointer 32-bit** or **Pointer 64-bit** to jump to the next active memory address. If next memory address is not available, the button is turned off (![Address out of memory range](../media/memory-inspector-address-out-of-range.png)) with the tooltip **Address out of memory range**.
 
-1. Click on Resume script execution to step through the code.  
+1. Click on the **Sources** tab.
 
-    Notice the ASCII representation is now updated. All the value interpretations are updated as well.  
+1. Click **Resume script execution** (![Resume script execution](../media/memory-inspector-resume-script-execution.png)) or press **F8** or **Ctrl +\\** to step through the code.
 
-1. Customize the Value inspector to show only floating point. Click on the settings button and check only Float 32-bit and Float 64-bit.  
+    The ASCII representation and the value interpretations are updated.  
 
-1. Change the encoding from dec to sci. Notice the value representations are updated accordingly.  
+1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating-point** values.  
 
-1. Try to navigate the memory buffer with your keyboard or using the navigation bar. Repeat step 4 to observe values changes.
+1. Change the encoding from `dec` to `sci`. The value representations are updated.  
+
+1. Explore the memory buffer using the keyboard or navigation bar.
+
+1. Repeat step **3** to observe values changes.
 
 
 <!-- ====================================================================== -->
 ## WebAssembly memory inspection
 
-For Wasm memory inspection, the process is similar to the JavaScript one.
+For WebAssembly (Wasm) memory inspection, the process is similar to inspecting JavaScript memory.
 
-1. Open this demo page.
+1. Open the Wasm test site [http://memory-inspector.glitch.me/demo-wasm.html](http://memory-inspector.glitch.me/demo-wasm.html). 
 
-1. In the Sources panel, open memory-write.wasm and set a breakpoint at line 5.
+1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+
+1. Click **Sources** and open the `memory-write.wasm` file.
+
+1. Set a breakpoint at the first line in the loop, hexadecimal value **0x03c**.
 
 1. Refresh the page.
 
-1. In the debugger pane, expand the Scope.
+1. In the debugger pane under **Scope**, expand the **Module**.
 
-1. In the Scope section, expand the Module.
+    ![Memory Inspector set breakpoint in Wasm file](../media/memory-inspector-wasm-breakpoint.png)
 
-1. Click on the icon next to the $imports.memory property to reveal the Memory inspector. 
+1. Click on the **Reveal in Memory Inspector panel** icon at the end of the `$imports.memory` property line (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)). 
 
-
-<!-- 
-   The following list of steps is derived from the instructions on that webpage.
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
-
-1. In DevTools, on the main toolbar, select the **Sources** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
-
-1. In the **Page** tab on the left, select the file `demo-js.js`. ??? `memory-write-wasm` ???
-
-1. Set a breakpoint at line 18 in the loop body.
-
-1. Refresh the webpage.
-
-1. In the debugger, in the **Scope** section, expand **Local**.
-
-   ![The Memory Inspector tool.](../media/memory-inspector-tool.png)
-
-1. Expand the **buffer** to reveal the **Module Scope**.
-
-1. To the right of the **buffer** name, click the **Reveal in Memory Inspector panel** (!['Reveal in Memory Inspector panel' icon.](../media/reveal-in-memory-inspector-panel-icon.png)) icon.  Or, right-click the buffer, and then select **Reveal in Memory Inspector panel**.
-
-1. The **Memory Inspector** tool opens in the Drawer.  In the **Memory Inspector** tool, examine the **buffer**.
-
-1. To inspect **Uint8Array b2**, expand that node to see the buffer, and then select the **Memory** icon, or right-click **b2**, and then select **Reveal in Memory Inspector panel**.
-
-1. To inspect **Uint8Array b1**, expand that node to see the buffer, and then select the **Memory** icon, or right-click **b1**, and then select **Reveal in Memory Inspector panel**.  That re-focuses on the **Memory** tab of the first buffer.
-
-1. In the debugger, step, and see updates to buffers in the **Memory Inspector** tool.
-
--->
+    ![Memory Inspector panel Wasm](../media/memory-inspector-panel-wasm.png)
 
 
 <!-- ====================================================================== -->
