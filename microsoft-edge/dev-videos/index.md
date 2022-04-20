@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge web developer videos
+title: Videos about developing for the web with Microsoft Edge
 description: Watch announcement and demo videos about Microsoft Edge web development technologies such as DevTools, Progressive Web App, Web platform features, WebView2, and more.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 04/20/2022
 ---
-# Microsoft Edge web developer videos
+# Videos about developing for the web with Microsoft Edge
 
 Discover, and learn about new Microsoft Edge web development technologies and products such as DevTools, web platform APIs and features, Progressive Web Apps, and WebView2.
 
@@ -29,9 +29,9 @@ Click on a thumbnail from the list below to watch the corresponding video on You
 
 _Published on 9 Dec 2021._
 
-We’re very excited to announce the new Detached Elements tool in Microsoft Edge DevTools which will help you investigate and resolve DOM memory leaks.
+We're very excited to announce the new Detached Elements tool in Microsoft Edge DevTools which will help you investigate and resolve DOM memory leaks.
 
-Memory leaks occur when the JavaScript code of an application retains more and more objects in memory that it doesn’t need any longer instead of releasing them for the browser to garbage collect.
+Memory leaks occur when the JavaScript code of an application retains more and more objects in memory that it doesn't need any longer instead of releasing them for the browser to garbage collect.
 We built this tool with our friends at Microsoft Teams, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
 You can find [documentation about the tool here](../devtools-guide-chromium/memory-problems/dom-leaks.md), and read our [announcement blog post here](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/).
