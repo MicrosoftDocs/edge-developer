@@ -21,19 +21,17 @@ To report a problem with DevTools or ask for a new feature, check out the new [M
 <!-- 1 -->
 
 <!-- Title: Visual Studio Code extension now with Console tool -->
-<!-- Subtitle: See log messages, run JavaScript, and use Console APIs right next to your code in VS Code. -->
+<!-- Subtitle: See log messages, run JavaScript, and use Console APIs right next to your code in Visual Studio Code. -->
 
-Using the Console is one of the biggest use cases of DevTools. That's why we made it easier for you to access the Console tool by turning it on in the Microsoft Edge Developer Tools for VS Code extension. This allows you to see your log messages right next to your code. You can also try out some JavaScript, access the window object and use the Console API to access the DOM. You can use the Console as the main tool or together with Elements or Network.
+Using the Console is one of the biggest use-cases of DevTools.  That's why we made it easier for you to access the Console tool by turning it on in the Microsoft Edge Developer Tools extension for Visual Studio Code.  This allows you to see your log messages right next to your code.  You can also try out some JavaScript,<!--enter JavaScript code,--> access the window object, and use the Console API to access the DOM.  You can use the Console as the main tool, or use it together with the **Elements** and **Network** tools.
 
-![The Console tool in Visual Studio Code.](devtools-101-images/console-tool-vsc.png)
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Image
+The Console tool in the main toolbar of the Edge DevTools extension for Visual Studio Code:
 
-Image
+![The Console tool in the main toolbar of the Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-1.png)
 
-Video recording of feature in action
-Attached -->
+The Console tool in the Drawer of the Edge DevTools extension for Visual Studio Code:
+
+![The Console tool in the Drawer of the Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-2.png)
 
 For more information, see [Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#console-integration) in _Microsoft Edge DevTools extension for Visual Studio Code_.
 
@@ -47,31 +45,15 @@ For more information, see [Console integration](../../../../visual-studio-code/m
 
 In previous versions of Microsoft Edge, if you were hosting large sourcemap files on your server or in [Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md), DevTools would fetch these sourcemaps every time the page refreshed.  Fetching these sourcemaps repeatedly created additional network requests for the DevTools and slowed down debugging time.
 
-In Microsoft Edge 101, DevTools caches sourcemaps by using IndexedDB.  Upon refreshing the page, sourcemaps are now served from the IndexedDB cache instead of being requested again from your server or Azure Artifacts symbol server. Use the Load status column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) to verify that sourcemaps are being loaded from the cache. To clear the IndexedDB cache and force DevTools to reload sourcemaps, run the **Clear source maps cache** command in the [Command Menu](../../../command-menu/index.md).
+In Microsoft Edge 101, DevTools caches sourcemaps by using IndexedDB.  Upon refreshing the page, sourcemaps are now served from the IndexedDB cache instead of being requested again from your server or Azure Artifacts symbol server.  Use the **Load status** column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) to verify that sourcemaps are being loaded from the cache.  To clear the IndexedDB cache and force DevTools to reload sourcemaps, run the **Clear source maps cache** command in the [Command Menu](../../../command-menu/index.md).
 
-Source Maps Monitor tool, upon first load:
+When you first load the webpage, the **Source Maps Monitor** tool shows that the sourcemaps aren't cached yet:
 
 ![Source Maps Monitor tool, upon first load.](devtools-101-images/source-maps-indexeddb-first-load.png)
 
-Source Maps Monitor tool, upon second load:
+When you reload the webpage, the **Source Maps Monitor** tool shows that the cached sourcemaps are used:
 
-![Source Maps Monitor tool, upon second load.](devtools-101-images/source-maps-indexeddb-first-load.png)
-
-<!-- use 2 images, like Pull request 7032031: Adds support for IndexedDB caching to source maps. - Repos (azure.com) where we show the behavior on first load and then again on second load.
-
-First load:
-Navigate to edge://version and ensure you're on version 101+
-Now navigate to: https://outlook-sdf.office.com/mail/
-Undock DevTools and when taking screenshots, crop the titlebar so the URL isn't shown. We are using Outlook Web App here specifically but we don't need to be so explicit about it
-In DevTools, open the Source Maps Monitor tool in the drawer
-Press Ctrl+Shift+P and run the **Clear source maps cache** command
-Now refresh Outlook and take a screenshot of the Source Maps Monitor tool (the Load status column will show that some sourcemaps were fetched via the Sourcemap URL)
-
-Second load:
-Refresh Outlook and take a screenshot of the Source Maps Monitor tool (the Load status column will show that sourcemaps were loaded from the cache)
-
-Video recording of feature in action
-Refer to the attachments. Both of these videos could probably be cropped/sped up. -->
+![Source Maps Monitor tool, upon second load.](devtools-101-images/source-maps-indexeddb-second-load.png)
 
 
 <!-- ====================================================================== -->
@@ -86,18 +68,6 @@ In Microsoft Edge 101, the new **Status text** column has been added to the **Ne
 In addition, a new setting has been added to the Network tool: **Include pending requests in HAR file**.  If you need to record **Pending** network requests when exporting a HAR file in the Network tool, turn on the **Include pending requests in HAR file** setting.  The **Status text** column will now include the **(pending)** state for any pending network requests.
 
 ![The "Status text" column in the Network tool.](devtools-101-images/status-text-column-network-tool.png)
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Go to edge://version and ensure you're on version 101+
-Open DevTools. Undock them (it doesn't matter what website you're inspecting)
-In the Network tool, toggle off the recording and clear any recorded requests
-Now import the attached pending_import.har
-Right-click the headers in the table and turn on the **Status text** column
-Open settings in the Network tool with the gear icon
-Draw red highlight boxes around the **Status text** column, one of the 200 entries in the **Status** column, the corresponding **OK** entry in the **Status text** column, and the **Include pending requests in HAR file** setting
-
-Video recording of feature in action
-Refer to .mov attachment -->
 
 To learn more about the available columns in the request log in the **Network** tool, see [Add or remove columns](../../../network/reference.md#add-or-remove-columns) in _Network features reference_.
 
