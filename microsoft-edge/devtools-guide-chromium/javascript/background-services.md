@@ -29,6 +29,7 @@ Microsoft Edge DevTools considers each of the following APIs to be a background 
 *  [Background Fetch](#background-fetch)
 *  [Background Sync](#background-sync)
 *  [Notifications](#notifications)
+*  [Payment Handler](#payment-handler)
 *  [Periodic Background Sync](#periodic-background-sync)
 *  [Push Messages](#push-messages)
 *  [Reporting API](#reporting-api)
@@ -102,6 +103,28 @@ After a **service worker** has received a [Push Message](https://developer.mozil
 1. Click an event to view its details in the space below the table.
 
    ![View the details of an event in the Notifications pane.](./images/application-notifications-details.png)
+
+
+<!-- ====================================================================== -->
+## Payment Handler
+
+The [Payment Handler API](https://web.dev/web-based-payment-apps-overview/) allows web applications to handle payment requests on behalf of users. To log the payment request and response events for 3 days, even when DevTools isn't open:
+
+1. Open DevTools by right-clicking the webpage and selecting **Inspect**.  Or by pressing `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
+
+1. In DevTools, on the main toolbar, select the **Application** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. On the left, in the **Background Services** section, select **Payment Handler**.  The **Payment Handler** page opens.
+
+   ![The Payment Handler pane.](./images/application-payment-handler-empty.png)
+
+1. Click **Record** (![Record.](../media/record-icon.msft.png)).  After triggering some payment requests, DevTools logs the events to the table.
+
+   ![A log of events in the Payment Handler pane.](./images/application-payment-handler-events.png)
+
+1. Click an event to view its details in the space below the table.
+
+   ![View the details of an event in the Payment Handler pane.](./images/application-payment-handler-details.png)
 
 
 <!-- ====================================================================== -->
