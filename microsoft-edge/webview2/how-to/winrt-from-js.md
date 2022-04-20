@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 042/19/2022
+ms.date: 04/19/2022
 ---
 # Call native-side WinRT code from web-side code
 
