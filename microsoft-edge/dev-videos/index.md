@@ -9,7 +9,13 @@ ms.date: 04/20/2022
 ---
 # Microsoft Edge web developer videos
 
-Watch announcements and demo videos about Microsoft Edge web development technologies such as DevTools, Progressive Web App, Web platform features, or WebView2.
+Discover, and learn about new Microsoft Edge web development technologies and products such as DevTools, web platform APIs and features, Progressive Web Apps, and WebView2.
+
+This page contains short and entertaining videos, each focused on just one feature and including a demo.
+
+We publish new videos on a regular basis on the [Microsoft Edge YouTube channel](https://www.youtube.com/channel/UCIGx7oT8p6-jUpOfg98yelA), and they are also listed below.
+
+Click on a thumbnail from the list below to watch the corresponding video on YouTube.
 
 <!-- To add a new video:
 - Prepare the YouTube URL, thumbnail image, and description.
