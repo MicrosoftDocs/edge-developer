@@ -35,7 +35,7 @@ Use Memory Inspector to view a JavaScript ArrayBuffers in and the WebAssembly (W
 
 1. Start Microsoft Edge.
 
-1. Open the test site [http://memory-inspector.glitch.me/demo-js.html](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there-->
+1. Open the test site [http://memory-inspector.glitch.me/demo-js.html](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
 
 <!-- ====================================================================== -->
@@ -50,7 +50,7 @@ Use Memory Inspector to view a JavaScript ArrayBuffers in and the WebAssembly (W
 <!-- ====================================================================== -->
 ## Open Memory Inspector while debugging
 
-1. Open the demo webpage [Inspect ArrayBuffers in JS (Memory in JS)](https://memory-inspector.glitch.me/demo-js.html). <!-- We need a microsoftedge.github.io with a JavaScript ArrayBuffer comparable to memory-inspector.glitch.me/demo-js.html -->
+1. Open the demo webpage [Inspect ArrayBuffers in JS (Memory in JS)](https://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
 1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
@@ -163,7 +163,7 @@ Complete the following steps to debug a webpage in Memory Inspector.
 
 For WebAssembly (Wasm) memory inspection, the process is similar to inspecting JavaScript memory.
 
-1. Open the Wasm test site [http://memory-inspector.glitch.me/demo-wasm.html](http://memory-inspector.glitch.me/demo-wasm.html). 
+1. Open the Wasm test site [http://memory-inspector.glitch.me/demo-wasm.html](http://memory-inspector.glitch.me/demo-wasm.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
 1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
