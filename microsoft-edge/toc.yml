@@ -1341,7 +1341,7 @@
 
 # =============================================================================
 # bottom leaf nodes
-    - name: Videos about developing for the web with Microsoft Edge
+    - name: Videos about web development with Microsoft Edge
       href: dev-videos/index.md
       displayName: youtube
 

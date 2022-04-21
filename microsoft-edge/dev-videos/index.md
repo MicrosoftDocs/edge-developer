@@ -17,13 +17,16 @@ We publish new videos on a regular basis on the [Microsoft Edge YouTube channel]
 
 Click on a thumbnail from the list below to watch the corresponding video on YouTube.
 
-<!-- To add a new video:
-- Prepare the YouTube URL, thumbnail image, and description.
-- Add a new H2 heading below this comment, with the name of the video.
+<!--
+To add a new video:
+- Create a thumbnail image for the video: 300px wide, no faces of people, big blue play button.
+- Place the video thumbnail image in the ./images folder next to this page.
+- Prepare the YouTube URL, title, and description.
+- Add a new H2 heading below this comment, with the title of the video.
 - Add the publish date next (same as the one on YouTube).
+- Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
-- Place the video thumbnail image in the ./images folder.
-- Add a markdown image below the description, with the thumbnail you added before, and link this image tag to the YouTube video. -->
+-->
 
 ## Debug memory leaks with the Microsoft Edge Detached Elements tool
 
