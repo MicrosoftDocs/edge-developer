@@ -26,21 +26,25 @@ Then continue with the steps below.
 <!-- ====================================================================== -->
 ## Step 2: Test the non-packaged app
 
+<!-- Why test these particular aspects?  What other aspects?  What's the focus here? -->
+
 *  Make sure the app runs correctly on startup, and works correctly during shutdown sleep.
 
 
 <!-- ====================================================================== -->
 ## Step 3: Package the app
 
-Package your app, as follows:
+<!-- Why do we need to package the app? -->
+
+Package your app:
 
 1. Update the `package.appxmanifest` with all needed content, such as Visual Assets, Packaging name, and Application information.  If you don't do this, the Microsoft Store validation step will fail.  For reference, see [Validate your app package](/windows/msix/package/packaging-uwp-apps#validate-your-app-package), in _Package a desktop or UWP app in Visual Studio_.  Then continue with the steps below.
 
 1. At [Partner Center](https://partner.microsoft.com), select **Project** > **Publish** and then reserve an application name.
 
-1. Associate the application with the reserved name, as follows: **Project** > **Publish** > **Associate App with the Store**.
+1. Associate the application with the reserved name, by selecting **Project** > **Publish** > **Associate App with the Store**.
 
-1. Create the app package: **Project** > **Publish** > **Create App Packages**.  Select the target configurations.  Only 64-bit versions of the WebView2 Runtime will work in UWP:
+1. Create the app package, by selecting **Project** > **Publish** > **Create App Packages**.  Select the target configurations.  Only 64-bit versions of the WebView2 Runtime will work in UWP:
 
    ![Package Selection](publish-uwp-app-store-images/package-selection.png)
 
@@ -52,7 +56,9 @@ Package your app, as follows:
 <!-- ====================================================================== -->
 ## Step 4: Test the package
 
-Test your packaged app, as follows:
+<!-- Why do we need to test the package/ packaged app? -->
+
+Test your packaged app:
 
 1. Note where the bundle was placed (also in the build window) and **Cancel** this dialog box.
 
@@ -64,7 +70,7 @@ Test your packaged app, as follows:
 <!-- ====================================================================== -->
 ## Step 5: Run Windows App Certification Kit (WACK)
 
-Once you're satisfied that your packaged app works, run the Windows App Certification Kit (WACK), as follows:
+Once you're satisfied that your packaged app works, run the Windows App Certification Kit (WACK):
 
 1. Generate the app package again, as above.  That's the easiest way to get to the Windows App Certification Kit (WACK) process.
 
@@ -77,44 +83,51 @@ Once you're satisfied that your packaged app works, run the Windows App Certific
 1. Once complete, the Windows App Certification Kit (WACK) will show a results page.  If the app failed, click the link to review the results.
 
 
-### Resolving failed tests
+### Resolving tests
+
+The results page of the Windows App Certification Kit (WACK) app shows any tests that need to be resolved.
 
 
 #### Restricted name-space
 
-If your app failed the **restricted name-space** check, edit your `package.appxmanifest` file and remove the `restrictedcapabilities` line and any capabilities that use `rescap`.
+If your app failed the **Restricted name-space** check, edit the `package.appxmanifest` file and remove the `restrictedcapabilities` line and any capabilities that use `rescap`.
 
-WebView2 shouldn't require any restricted capabilities, to operate.  **Note:** If your app needs restricted capabilities, you'll need to either ask for a store exception through [Partner Center](https://partner.microsoft.com), or only distribute the app through non-Store avenues.
+WebView2 shouldn't require any restricted capabilities, to operate.  If your app needs restricted capabilities, you'll need to either ask for a store exception through [Partner Center](https://partner.microsoft.com), or only distribute the app through non-Store avenues.
 
 
 #### Branding
 
-If your app failed **branding** checks, you need to update all the Visual Assets in the manifest as mentioned above.
+If your app failed the **Branding** checks, update all the Visual Assets in the manifest as described above.
 
 
 #### App Capabilities
 
-If your app failed **App Capabilities** tests, turn off any unneeded capabilities.  If you need a special use capability you will need to get Microsoft Store approval or use non-Store distribution methods.
+If your app failed the **App Capabilities** tests, turn off any unneeded capabilities.  If you need a special use capability you will need to get Microsoft Store approval or use non-Store distribution methods.
 
 
-#### General meta data correctness
+#### General metadata correctness
 
-If your app failed **General meta data correctness** tests with an error in `IPopup4`, you need to update your **microsoft.UI.xaml** NuGet package to a downloaded **Microsoft.UI.Xaml.2.8.0-prerelease.220118001** or higher.  There was a bug in the manifests, prior to that version.
+If your app failed the **General meta data correctness** tests with an error in `IPopup4`, update the **microsoft.UI.xaml** NuGet package to version **Microsoft.UI.Xaml.2.8.0-prerelease.220118001** or higher.  There was a bug in the manifests, prior to that version.
 
 
 #### Supported API
 
-If your app failed the **Supported API** test, you need to update your SDK to 22000 or higher to get the latest version of the allowed-APIs list.  There should be no blocking APIs for WebView2 in the current SDK.
+<!--
+which APIs/which SDK is being tested?
+This check tests whether the XYZ APIs that are used by your app are supported by ABC.
+-->
+
+If your app failed the **Supported API** test, update the <!--which SDK, XAML? WebView2?-->SDK to version 22000 <!--correct specific full number?--> or higher, to get the latest version of the allowed-APIs list.  There should be no blocking APIs for WebView2 in the current <!-- which SDK? -->SDK.
 
 
 <!-- ====================================================================== -->
 ## Step 6: Upload the app package
 
-*  After all of the Windows App Certification Kit (WACK) tests have passed, upload your app package, by using either of the following approaches:
+*  After all of the Windows App Certification Kit (WACK) tests have passed, upload your app package to the Windows Store, by using either of the following approaches:
 
    *  Approach 1: In Windows App Certification Kit (WACK), select **Project** > **Publish** > **Upload App Packages**.
 
-   *  Approach 2: Go to Partner Center and upload your app package through Partner Center. 
+   *  Approach 2: Go to Partner Center and upload your app package to the Windows Store through Partner Center. 
 
 
 <!-- ====================================================================== -->
