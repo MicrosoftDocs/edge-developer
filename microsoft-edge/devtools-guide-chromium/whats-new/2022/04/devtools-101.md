@@ -100,7 +100,7 @@ For more information about using themes from Visual Studio Code in DevTools, see
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-Microsoft Edge version 101 also includes the following updates from the Chromium project:
+Microsoft Edge 101 also includes the following updates from the Chromium project:
 
 * [View cascade layers in the Styles pane](https://developer.chrome.com/blog/new-in-devtools-101/#layer)<!-- checking -->
 * [Support for the hwb() color function](https://developer.chrome.com/blog/new-in-devtools-101/#hwb)
