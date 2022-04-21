@@ -9,6 +9,8 @@ ms.date: 08/24/2021
 ---
 # The webhint extension for Visual Studio Code
 
+**Note:** As of April 21, 2022, this webhint extension isn't being maintained.  Instead, use the DevTools **Issues** tool.  See [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md).
+
 Use webhint, a customizable linting tool, to improve the functionality of your site, including:
 
 *   Accessibility.
