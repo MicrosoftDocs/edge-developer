@@ -1304,10 +1304,6 @@
               href: visual-studio-code/debugger-for-edge.md
               displayName: 
 
-            - name: webhint
-              href: visual-studio-code/webhint.md
-              displayName: 
-
         - name: Visual Studio for web development
           href: visual-studio/index.md
           displayName: 
