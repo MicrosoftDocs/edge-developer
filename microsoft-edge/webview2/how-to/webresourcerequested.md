@@ -77,7 +77,7 @@ Instead of using WebResourceRequested APIs, you can use these other approaches:
 ## 1. Intercepting a request (to monitor or modify it)
 
 Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
-<!-- TODO: is the sending request to local code publicly supported yet? -->
+<!-- DEV TODO: is the sending request to local code publicly supported yet? -->
 
 <!-- Notes -->
 <!-- To intercept requests and responses and replace them by your own custom requests and responses, use the `NavigateWithWebResourceRequest` method and associated API items.  Use this API if you need custom processing of network requests or responses.  If you are using Basic Authentication, you don't need to use this advanced approach. -->
@@ -103,7 +103,7 @@ The host app can change the properties of a request by using this API:
 ### What you can do with headers
 
 <!-- TODO: Are we allowed to link this page/use sentences from it? -->
-<!-- TODO: Should we explain how our developers might be able to change headers? -->
+<!-- DEV TODO: Should we explain how our developers might be able to change headers? -->
 A HTTP header provides important information and metadata about a request or response. Changing [headers](https://developer.mozilla.org/en-US/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. A [request header](https://developer.mozilla.org/en-US/docs/Glossary/Request_header) can be used to indicate the format of the response (e.g. the Accept-* headers), set authentication tokens, read adn write cookies (sensitive information), modify the user agent, etc.  A [response header](https://developer.mozilla.org/en-US/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
 
 <!-- Notes -->
@@ -121,11 +121,11 @@ The WebView2 control sits in between your host app and the HTTP server.  When yo
 
 ### Why would you want to intercept requests that are sent from WebView2?  
 
-<!-- TODO: Add more examples here -->
+<!-- DEV TODO: Add more examples here -->
 Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some sceanrios include:
 *  You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
 *  You want offline functionality in the app so you redirect <!-- TODO: something --> to a local file path when no internet connection is detected.
-*  You want to upload local file content to your app so you change the HTTP URL to a local file <!-- TODO: validate this -->
+*  You want to upload local file content to your app so you change the HTTP URL to a local file <!-- DEV TODO: validate this -->
 
 
 <!-- ====================================================================== -->
@@ -135,7 +135,8 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 <!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
 In the following example, the host app _intercepts_ (receives) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then sends the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
 
-<!-- Dev to provide sample -->
+
+<!-- DEV TODO: provide sample -->
 
 
 <!-- Notes -->
@@ -180,13 +181,13 @@ As another supported scenario, your host app can send some content as part of a 
 ## 2. Overriding a request (to proactively replace it)
 
 Your host app can _override_ (ignore) a request that's sent from the WebView2 control to the HTTP server, and send a custom request to the HTTP server instead of the original request.
-<!--TODO: Explain how and insert example here-->
+<!--DEV TODO: Explain how and insert example here-->
 
 <!-- ====================================================================== -->
 ## 3. Intercepting a response (to monitor or modify it)
 
 Your host app can _intercept_ (receive) a response that's sent from the HTTP server to the WebView2 control, read or modify the response, and then send a custom response to the WebView2 control instead of the original response.
-<!--TODO: Explain how and insert example here-->
+<!--DEV TODO: Explain how and insert example here-->
 
 <!-- ====================================================================== -->
 ## 4. Overriding a response (to proactively replace it)
@@ -194,7 +195,7 @@ Your host app can _intercept_ (receive) a response that's sent from the HTTP ser
 <!-- ## Overriding the response and providing a different, custom response to the WebView2 control -->
 
 By default the HTTP server sends responses to the WebView2 control. Your host app can _override_ (ignore) a response that's sent from the HTTP server to the WebView2 control, and send a custom response to the WebView2 control instead of the original response.
-<!-- TODO: identify the technical difference between overriding a request vs. a response; when to override a request vs. response -->
+<!-- DEV TODO: identify the technical difference between overriding a request vs. a response; when to override a request vs. response -->
 
 <!-- Notes
 
@@ -239,7 +240,7 @@ By default the HTTP server sends responses to the WebView2 control. Your host ap
 
 <!-- applies to both the Request & Response h2 scenarios above -->
 
-<!--TODO: Follow up with Dev: clarify what we are trying to call out here -->
+<!--DEV TODO: clarify what we are trying to call out here -->
 
 * A simple scenario that's supported is reading from a local file.  Your host app can modify the resource URI to instead be a file URI that points to a local resource.
 
@@ -332,14 +333,14 @@ CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()))
 <!-- ====================================================================== -->
 ## Monitoring the actual (resulting) custom requests and responses
 
-<!-- todo: define what "actual request" means, in terms of early/late & the 3 actors (host app, wv2 ctrl, http server) - here it means the request which is finally received by the HTTP server or the host app (confirm) -->
+<!-- DEV TODO: define what "actual request" means, in terms of early/late & the 3 actors (host app, wv2 ctrl, http server) - here it means the request which is finally received by the HTTP server or the host app (confirm) -->
 
 
 ### Monitoring the resulting custom requests
 The request in the `WebResourceRequested` event is preliminary; the WebView2 network stack and the host app can add more headers before they are sent (for example, cookie header), but the `WebResourceResponseReceived` event has the actual request that was sent and the actual response that was received. After the `WebResourceRequested` event is sent the request object is not finalized until the `WebResourceResponseReceived` event is fired. 
 
 ### Monitoring the resulting custom responses
-<!-- TODO: Fill in how monitoring works for custom responses -->
+<!-- DEV TODO: Fill in how monitoring works for custom responses -->
 
 
 <!-- Notes -->
