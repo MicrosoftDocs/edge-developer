@@ -18,7 +18,6 @@ To report a problem with DevTools or ask for a new feature, check out the new [M
 
 <!-- ====================================================================== -->
 ## The Console tool is now available in Visual Studio Code
-<!-- 1 -->
 
 <!-- Title: Visual Studio Code extension now with Console tool -->
 <!-- Subtitle: See log messages, run JavaScript, and use Console APIs right next to your code in Visual Studio Code. -->
@@ -38,12 +37,11 @@ For more information, see [Console integration](../../../../visual-studio-code/m
 
 <!-- ====================================================================== -->
 ## Source maps are now cached with IndexedDB
-<!-- 2 -->
 
 <!-- Title: Speed up debugging with cached sourcemaps -->
 <!-- Subtitle: DevTools now caches sourcemaps with IndexedDB, reducing the need to fetch sourcemaps on refresh. -->
 
-In previous versions of Microsoft Edge, if you were hosting large sourcemap files on your server or in [Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md), DevTools would fetch these sourcemaps every time the page refreshed.  Fetching these sourcemaps repeatedly created additional network requests for the DevTools and slowed down debugging time.
+In previous versions of Microsoft Edge, if you were hosting large sourcemap files on your server or in [Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md), DevTools would fetch these sourcemaps every time the page refreshed.  Fetching these sourcemaps repeatedly created additional network requests for DevTools and slowed down debugging time.
 
 In Microsoft Edge 101, DevTools caches sourcemaps by using IndexedDB.  Upon refreshing the page, sourcemaps are now served from the IndexedDB cache instead of being requested again from your server or Azure Artifacts symbol server.  Use the **Load status** column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) to verify that sourcemaps are being loaded from the cache.  To clear the IndexedDB cache and force DevTools to reload sourcemaps, run the **Clear source maps cache** command in the [Command Menu](../../../command-menu/index.md).
 
@@ -58,7 +56,6 @@ When you reload the webpage, the **Source Maps Monitor** tool shows that the cac
 
 <!-- ====================================================================== -->
 ## Tracking pending network requests when exporting HAR files
-<!-- 3 -->
 
 <!-- Title: Exporting HAR files from the Network tool now includes pending requests -->
 <!-- Subtitle: Use the new "Status text" column and "Include pending requests in HAR files" option in the Network tool. -->
@@ -74,47 +71,28 @@ To learn more about the available columns in the request log in the **Network** 
 
 <!-- ====================================================================== -->
 ## Updated UI and camera controls in 3D View
-<!-- 4 -->
 
 <!-- Title: Improvements to the 3D View tool -->
 <!-- Subtitle: Check out 3D View for updates to the UI and smoother camera controls. -->
 
-You asked and we answered!  For ease of use, there are now two buttons that you can use to switch between panning around the canvas or rotating the canvas.  Just select a mode, and you can drag in the desired direction with your mouse or arrow keys.  We also cleaned up the UI for a more uniform and intuitive experience by organizing the panes more clearly and fixing accessibility issues.
+You asked and we answered!  For ease of use, there are now two buttons, **Pan view** (![The 'Pan view' icon.](devtools-101-images/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon.](devtools-101-images/rotate-view-icon.png)), that you can use to switch between panning around the canvas or rotating the canvas.  Just select a mode, and you can drag in the desired direction with your mouse or arrow keys.
+
+We also cleaned up the UI for a more uniform and intuitive experience by organizing the panes more clearly and fixing accessibility issues.
 
 ![Updated UI and camera controls in 3D View.](devtools-101-images/3d-view-ui-camera-ctrls.png)
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Navigate to DevTools (F12) > 3D View > Z-Index
-AND/OR
-Navigate to DevTools (F12) > 3D View > DOM -->
-
-<!-- Video recording of feature in action
-(see comments) -->
 
 See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
-<!-- see comments -->
 
 
 <!-- ====================================================================== -->
 ## Switching themes no longer requires reloading DevTools
-<!-- 5 -->
 
-<!-- Title: Switching themes in the DevTools no longer requires reloading -->
-<!-- Subtitle: Try out themes from VS Code in the DevTools. -->
+<!-- Title: Switching themes in DevTools no longer requires reloading -->
+<!-- Subtitle: Quickly try out themes from Visual Studio Code in DevTools. -->
 
-In previous versions of Microsoft Edge, switching themes in the DevTools required reloading the DevTools to apply the new theme.  In Microsoft Edge 101, you can quickly try different themes without having to reload the DevTools.
+In previous versions of Microsoft Edge, switching themes in DevTools required reloading DevTools to apply the new theme.  In Microsoft Edge 101, you can quickly try different themes without having to reload DevTools.
 
 ![Switching themes without reloading DevTools.](devtools-101-images/switching-theme.png)
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-lmk if you need other way to describe setting up the capture.
-Go to edge://version and make sure you're on version 101+.
-Open DevTools > Settings.
-Under Theme, select a different theme than the one currently applied.
-Take a screenshot.  Note that the theme has changed without having to close Settings or reload DevTools. -->
-
-<!-- Video recording of feature in action
-Refer to attached .mov -->
 
 For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).
 
