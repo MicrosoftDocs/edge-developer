@@ -29,23 +29,23 @@ Click on a thumbnail from the list below to watch the corresponding video on You
 
 _Published on 9 Dec 2021._
 
+[![Thumbnail image for the Detached Elements video](./images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
+
 We're very excited to announce the new Detached Elements tool in Microsoft Edge DevTools which will help you investigate and resolve DOM memory leaks.
 
 Memory leaks occur when the JavaScript code of an application retains more and more objects in memory that it doesn't need any longer instead of releasing them for the browser to garbage collect.
 We built this tool with our friends at Microsoft Teams, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
 You can find [documentation about the tool here](../devtools-guide-chromium/memory-problems/dom-leaks.md), and read our [announcement blog post here](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/).
-
-[![Thumbnail image for the Detached Elements video, showing the video title and a screenshot of the tool](./images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
  
 ## The EyeDropper API
 
 _Published on 22 Nov 2021._
+
+[![Thumbnail image for the Eye Dropper API video](./images/eye-dropper.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
 
 The Microsoft Edge team specified and implemented the new EyeDropper API in collaboration with the Chromium open-source project, and we'd love your [feedback about it here](https://github.com/WICG/eyedropper-api/issues).
 
 Many creative applications allow users to pick colors from parts of the app window or even from the entire screen, typically using an eyedropper metaphor. This new  API enables authors to use a browser-supplied eyedropper in the construction of custom color pickers on the web.
 
 Learn more about it on [web.dev](https://web.dev/eyedropper/) and [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API).
-
-[![Thumbnail image for the Eye Dropper API video, showing an eyedropper drawing and Patrick Brosset's face](./images/eye-dropper.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
