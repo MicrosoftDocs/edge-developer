@@ -25,7 +25,7 @@ ms.date: 04/22/2022
 
 # Inspect a JavaScript ArrayBuffer using Memory Inspector
 
-Use Memory Inspector to view a JavaScript ArrayBuffers in and the WebAssembly (WASM) resizable ArrayBuffer `WebAssembly.Memory`. You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
+Use Memory Inspector to view JavaScript ArrayBuffers and the WebAssembly (WASM) resizable ArrayBuffer `WebAssembly.Memory`. You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
 
 <!-- add more scenario type info, ask Zoher -->
 
@@ -72,7 +72,7 @@ Use Memory Inspector to view a JavaScript ArrayBuffers in and the WebAssembly (W
 
     ![Open Memory Inspector from the buffer property line context menu](../media/memory-inspector-open-from-buffer.png)
 
-    The ArrayBuffer opens in Memory Inspector.
+    The JavaScript ArrayBuffer opens in Memory Inspector.
 
     ![ArrayBuffer open in the Memory Inspector panel](../media/memory-inspector-panel.png)
 
@@ -137,9 +137,11 @@ The Memory Inspector panel includes 3 types of content:
 
 Complete the following steps to debug a webpage in Memory Inspector.
 
-1. In the **Navigation bar** change the address to `0x00000027`.
+1. In the **Navigation bar** change the address to `0x00000028`.
 
 1. View the ASCII representation and the value interpretations. All values should be zero or empty.
+
+    ![Memory Inspector address change](../media/memory-inspector-address-change.png)
 
 1. Click the **Jump to address** button (![Jump to address button](../media/memory-inspector-jump-to-address.png)) for **Pointer 32-bit** or **Pointer 64-bit** to jump to the next active memory address. If next memory address is not available, the button is turned off (![Address out of memory range](../media/memory-inspector-address-out-of-range.png)) with the tooltip **Address out of memory range**.
 
@@ -147,15 +149,23 @@ Complete the following steps to debug a webpage in Memory Inspector.
 
 1. Click **Resume script execution** (![Resume script execution](../media/memory-inspector-resume-script-execution.png)) or press **F8** or **Ctrl +\\** to step through the code.
 
-    The ASCII representation and the value interpretations are updated.  
+    The ASCII representation and the value interpretations are updated.
+    
+    ![Memory Inspector address values updated](../media/memory-inspector-address-values-updated.png)
 
-1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating-point** values.  
+1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating-point** values.
+    
+    ![Value type settings float](../media/memory-inspector-panel-value-type-settings-float.png)
 
-1. Change the encoding from `dec` to `sci`. The value representations are updated.  
+1. Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle-back.png)) to close the value type settings.
 
+1. Use the drop-down menus to change the encoding from `dec` to `sci`. The value representations are updated.
+    
+    ![Memory Inspector address values updated](../media/memory-inspector-address-values-updated-sci.png)
+    
 1. Explore the memory buffer using the keyboard or navigation bar.
 
-1. Repeat step **3** to observe values changes.
+1. Repeat step **3** to observe value changes.
 
 
 <!-- ====================================================================== -->
@@ -179,6 +189,8 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 
 1. Click on the **Reveal in Memory Inspector panel** icon at the end of the `$imports.memory` property line (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)). 
 
+    The Wasm ArrayBuffer opens in Memory Inspector.
+    
     ![Memory Inspector panel Wasm](../media/memory-inspector-panel-wasm.png)
 
 
