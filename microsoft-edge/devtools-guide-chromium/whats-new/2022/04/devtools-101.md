@@ -22,7 +22,13 @@ To report a problem with DevTools or ask for a new feature, check out the new [M
 <!-- Title: Visual Studio Code extension now with Console tool -->
 <!-- Subtitle: See log messages, run JavaScript, and use Console APIs right next to your code in Visual Studio Code. -->
 
-Using the Console is one of the biggest use-cases of DevTools.  That's why we made it easier for you to access the Console tool by turning it on in the Microsoft Edge Developer Tools extension for Visual Studio Code.  This allows you to see your log messages right next to your code.  You can also try out some JavaScript,<!--enter JavaScript code,--> access the window object, and use the Console API to access the DOM.  You can use the Console as the main tool, or use it together with the **Elements** and **Network** tools.
+The Console is one of the most popular tools in DevTools.  You can now access the Console tool in the Microsoft Edge Developer Tools extension for Visual Studio Code.  This allows you to see your log messages right next to your code.  Using the Console, you can also:
+*  Try out some JavaScript statements.
+*  Access the window object.
+*  Call the methods of the `Console` object, as described in [Console object API Reference](../../../console/api.md).
+*  Use the [Console tool utility functions and selectors](../../../console/utilities.md) to access the DOM.
+
+You can use the Console as the main tool, or use it together with the **Elements** and **Network** tools.
 
 The Console tool in the main toolbar of the Edge DevTools extension for Visual Studio Code:
 
@@ -43,7 +49,7 @@ For more information, see [Console integration](../../../../visual-studio-code/m
 
 In previous versions of Microsoft Edge, if you were hosting large sourcemap files on your server or in [Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md), DevTools would fetch these sourcemaps every time the page refreshed.  Fetching these sourcemaps repeatedly created additional network requests for DevTools and slowed down debugging time.
 
-In Microsoft Edge 101, DevTools caches sourcemaps by using IndexedDB.  Upon refreshing the page, sourcemaps are now served from the IndexedDB cache instead of being requested again from your server or Azure Artifacts symbol server.  Use the **Load status** column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) to verify that sourcemaps are being loaded from the cache.  To clear the IndexedDB cache and force DevTools to reload sourcemaps, run the **Clear source maps cache** command in the [Command Menu](../../../command-menu/index.md).
+In Microsoft Edge 101, DevTools caches sourcemaps by using IndexedDB.  Upon refreshing the page, sourcemaps are now served from the [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) cache, instead of being requested again from your server or Azure Artifacts symbol server.  Use the **Load status** column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) to verify that sourcemaps are being loaded from the cache.  To clear the IndexedDB cache and force DevTools to reload sourcemaps, run the **Clear source maps cache** command in the [Command Menu](../../../command-menu/index.md).
 
 When you first load the webpage, the **Source Maps Monitor** tool shows that the sourcemaps aren't cached yet:
 
@@ -75,9 +81,9 @@ To learn more about the available columns in the request log in the **Network** 
 <!-- Title: Improvements to the 3D View tool -->
 <!-- Subtitle: Check out 3D View for updates to the UI and smoother camera controls. -->
 
-You asked and we answered!  For ease of use, there are now two buttons, **Pan view** (![The 'Pan view' icon.](devtools-101-images/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon.](devtools-101-images/rotate-view-icon.png)), that you can use to switch between panning around the canvas or rotating the canvas.  Just select a mode, and you can drag in the desired direction with your mouse or arrow keys.
+In Microsoft Edge 101, the **3D View** tool has two new buttons: **Pan view** (![The 'Pan view' icon.](devtools-101-images/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon.](devtools-101-images/rotate-view-icon.png)).  Use these buttons to switch between panning around the canvas or rotating the canvas.  Click the **Pan view** or **Rotate view** button, and then drag in the desired direction with your mouse, or use the arrow keys.
 
-We also cleaned up the UI for a more uniform and intuitive experience by organizing the panes more clearly and fixing accessibility issues.
+Also, the UI now provides a more uniform and intuitive experience, by organizing the panes more clearly and fixing accessibility issues.
 
 ![Updated UI and camera controls in 3D View.](devtools-101-images/3d-view-ui-camera-ctrls.png)
 
