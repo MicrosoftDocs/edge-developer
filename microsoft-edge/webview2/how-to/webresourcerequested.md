@@ -99,7 +99,6 @@ The host app can change the properties of a request by using this API:
 
 ---
 
-
 ### What you can do with headers
 
 <!-- TODO: Are we allowed to link this page/use sentences from it? -->
@@ -138,7 +137,74 @@ In the following example, the host app _intercepts_ (receives) a request that is
 
 <!-- DEV TODO: provide sample -->
 
+<!-- ====================================================================== -->
+## Example: Serve a web resource request locally
+<!-- 
+TODO: clarify heading
+## Example: Replace a requested file with a local file
+## Example: Serve a web resource request locally (offline)
+## Example: Provide a web resource request locally
+## Example: Replace a remote resource with local resource -->
 
+Your host app can intercept requests for images sent from the WebView2 control to the HTTP server and replace the images with local image files instead. 
+ 
+This code sample is from SettingsComponent.cpp in the [WebView2APISample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample)
+
+```cpp
+
+// Turn on or off image replacing by adding or removing a WebResourceRequested handler
+// which selectively intercepts requests for images. It will replace all images with another
+// image.
+void SettingsComponent::SetReplaceImages(bool replaceImages)
+{
+    if (replaceImages != m_replaceImages)
+    {
+        m_replaceImages = replaceImages;
+        //! [WebResourceRequested1]
+        if (m_replaceImages)
+        {
+            m_webView->AddWebResourceRequestedFilter(
+                L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
+            CHECK_FAILURE(m_webView->add_WebResourceRequested(
+                Callback<ICoreWebView2WebResourceRequestedEventHandler>(
+                    [this](
+                        ICoreWebView2* sender,
+                        ICoreWebView2WebResourceRequestedEventArgs* args) {
+                        COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
+                        CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
+                        // Ensure that the type is image
+                        if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
+                        {
+                            return E_INVALIDARG;
+                        }
+                        // Override the response with an another image.
+                        // If put_Response is not called, the request will continue as normal.
+                        wil::com_ptr<IStream> stream;
+                        CHECK_FAILURE(SHCreateStreamOnFileEx(
+                            L"assets/EdgeWebView2-80.jpg", STGM_READ, FILE_ATTRIBUTE_NORMAL,
+                            FALSE, nullptr, &stream));
+                        wil::com_ptr<ICoreWebView2WebResourceResponse> response;
+                        wil::com_ptr<ICoreWebView2Environment> environment;
+                        wil::com_ptr<ICoreWebView2_2> webview2;
+                        CHECK_FAILURE(m_webView->QueryInterface(IID_PPV_ARGS(&webview2)));
+                        CHECK_FAILURE(webview2->get_Environment(&environment));
+                        CHECK_FAILURE(environment->CreateWebResourceResponse(
+                            stream.get(), 200, L"OK", L"Content-Type: image/jpeg", &response));
+                        CHECK_FAILURE(args->put_Response(response.get()));
+                        return S_OK;
+                    })
+                    .Get(),
+                &m_webResourceRequestedTokenForImageReplacing));
+        }
+        else
+        {
+            CHECK_FAILURE(m_webView->remove_WebResourceRequested(
+                m_webResourceRequestedTokenForImageReplacing));
+        }
+        //! [WebResourceRequested1]
+    }
+}
+```
 <!-- Notes -->
 <!-- If you want to read or modify cookies, don't use this API or article; a separate API covers that scenario.
 As another supported scenario, your host app can send some content as part of a request that the WebView2 control doesn't have on its own.   -->
@@ -326,9 +392,6 @@ CHECK_FAILURE(webviewEnvironment->CreateWebResourceRequest(
 CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()));
 ```
 
----
-
-
 <!-- ====================================================================== -->
 ## Monitoring the actual (resulting) custom requests and responses
 
@@ -357,28 +420,59 @@ The `WebResourceRequested` event lets your host app change the request.  In this
 <!-- ====================================================================== -->
 ## Example: Block images in a webpage 
 
-This is an existing example in the Win32 sample app.
+SettingsComponent.cpp in the [WebView2APISample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample)
 
+```cpp
+// Turn on or off image blocking by adding or removing a WebResourceRequested handler
+// which selectively intercepts requests for images.
+void SettingsComponent::SetBlockImages(bool blockImages)
+{
+    if (blockImages != m_blockImages)
+    {
+        m_blockImages = blockImages;
 
-<!-- ====================================================================== -->
-## Example: Serve a web resource request locally
-<!-- 
-## Example: Serve a web resource request locally (offline)
-## Example: Provide a web resource request locally
-## Example: Replace a remote resource with local resource -->
-
-
-<!--
-TODO: clarify heading
-## Example: Replace a requested file with a local file
--->
-
-Your code <!-- TODO: your substitution code in place of the server --> sends a response from your local machine to your host app.
-
-You can replace an image that's requested by your own local image file instead.  
-
-This is an existing example in the Win32 sample app.
-
+        //! [WebResourceRequested0]
+        if (m_blockImages)
+        {
+            m_webView->AddWebResourceRequestedFilter(
+                L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
+            CHECK_FAILURE(m_webView->add_WebResourceRequested(
+                Callback<ICoreWebView2WebResourceRequestedEventHandler>(
+                    [this](
+                        ICoreWebView2* sender,
+                        ICoreWebView2WebResourceRequestedEventArgs* args) {
+                        COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
+                        CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
+                        // Ensure that the type is image
+                        if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
+                        {
+                            return E_INVALIDARG;
+                        }
+                        // Override the response with an empty one to block the image.
+                        // If put_Response is not called, the request will continue as normal.
+                        wil::com_ptr<ICoreWebView2WebResourceResponse> response;
+                        wil::com_ptr<ICoreWebView2Environment> environment;
+                        wil::com_ptr<ICoreWebView2_2> webview2;
+                        CHECK_FAILURE(m_webView->QueryInterface(IID_PPV_ARGS(&webview2)));
+                        CHECK_FAILURE(webview2->get_Environment(&environment));
+                        CHECK_FAILURE(environment->CreateWebResourceResponse(
+                            nullptr, 403 /*NoContent*/, L"Blocked", L"Content-Type: image/jpeg",
+                            &response));
+                        CHECK_FAILURE(args->put_Response(response.get()));
+                        return S_OK;
+                    })
+                    .Get(),
+                &m_webResourceRequestedTokenForImageBlocking));
+        }
+        else
+        {
+            CHECK_FAILURE(m_webView->remove_WebResourceRequested(
+                m_webResourceRequestedTokenForImageBlocking));
+        }
+        //! [WebResourceRequested0]
+    }
+}
+```
 
 <!-- ====================================================================== -->
 ## Example of WebResourceResponseReceived event: Reading the authorization header value
