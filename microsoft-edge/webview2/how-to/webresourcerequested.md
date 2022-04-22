@@ -128,7 +128,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 
 
 <!-- ====================================================================== -->
-## Example: Intercepting a request (to monitor or modify it)
+### Example: Intercepting a request (to monitor or modify it)
 <!-- ## Example: Header modification when making a request -->
 
 <!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
@@ -138,7 +138,7 @@ In the following example, the host app _intercepts_ (receives) a request that is
 <!-- DEV TODO: provide sample -->
 
 <!-- ====================================================================== -->
-## Example: Serve a web resource request locally
+### Example: Serve a web resource request locally
 <!-- 
 TODO: clarify heading
 ## Example: Replace a requested file with a local file
