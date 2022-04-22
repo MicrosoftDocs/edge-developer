@@ -121,11 +121,11 @@ The WebView2 control sits in between your host app and the HTTP server.  When yo
 
 ### Why would you want to intercept requests that are sent from WebView2?  
 
-<!-- DEV TODO: Add more examples here -->
-Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some sceanrios include:
+<!-- DEV TODO: Add more examples here , I think this is good-->
+Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some scenarios include:
 *  You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
-*  You want offline functionality in the app so you redirect <!-- TODO: something --> to a local file path when no internet connection is detected.
-*  You want to upload local file content to your app so you change the HTTP URL to a local file <!-- DEV TODO: validate this -->
+*  You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
+*  You want to upload local file content to the request server via a POST request <!-- DEV TODO: validate this -->
 
 
 <!-- ====================================================================== -->
@@ -133,11 +133,51 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 <!-- ## Example: Header modification when making a request -->
 
 <!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
-In the following example, the host app _intercepts_ (receives) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then sends the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
+In the following example, the host app _intercepts_ (receives) the document request that is sent from the WebView2 control to the http://www.example.com HTTP server, adds a custom header value and sends the request. Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
 
 
 <!-- DEV TODO: provide sample -->
+```cpp
+m_webView->AddWebResourceRequestedFilter(
+      L"http://www.example.com/*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_ALL);
+m_webView->add_WebResourceRequested(
+      Callback<ICoreWebView2WebResourceRequestedEventHandler>(
+         [this](
+            ICoreWebView2* sender,
+            ICoreWebView2WebResourceRequestedEventArgs* args) {
+            COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
+            CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
+            // Ensure that the type is image
+            if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_DOCUMENT)
+            {
+               return S_OK;
+            }
+            // Override the response with an empty one to block the image.
+            // If put_Response is not called, the request will continue as normal.
+            wil::com_ptr<ICoreWebView2WebResourceRequest> request;
+            CHECK_FAILURE(args->get_Request(&request));
+            request->get_Headers(&headers);
+            headers->SetHeaderValue(L"Custom", L"Value");
+            return S_OK;
+         })
+         .Get(),
+      &m_webResourceRequestedToken);
+```  
 
+```csharp
+webView.CoreWebView2.AddWebResourceRequestedFilter(
+      "http://www.example.com/*", CoreWebView2WebResourceContext.All);
+webView.CoreWebView.WebResourceRequested += delegate (
+   CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs args) {
+   CoreWebView2WebResourceContext resourceContext = args.ResourceContext;
+   if (resourceContext != CoreWebView2WebResourceContext.Document)
+   {
+      return;
+   }
+   CoreWebView2HttpRequestHeaders requestHeaders = args.Request.Headers;
+   requestHeaders.SetHeader("Custom", "Value");
+}
+```
 
 <!-- Notes -->
 <!-- If you want to read or modify cookies, don't use this API or article; a separate API covers that scenario.
@@ -178,10 +218,53 @@ As another supported scenario, your host app can send some content as part of a 
 *   Image replacing example. -->
 
 <!-- ====================================================================== -->
-## 2. Overriding a request (to proactively replace it)
+## 2. Overriding a response (to proactively replace it)
 
-Your host app can _override_ (ignore) a request that's sent from the WebView2 control to the HTTP server, and send a custom request to the HTTP server instead of the original request.
-<!--DEV TODO: Explain how and insert example here-->
+Your host app can _override_ (ignore) a request that's sent from the WebView2 control to the HTTP server, and send a custom response to the WebView2.
+The following example replaces images in the WebView2 content.
+
+```cpp
+m_webView->AddWebResourceRequestedFilter(
+                L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
+m_webView->add_WebResourceRequested(
+   Callback<ICoreWebView2WebResourceRequestedEventHandler>(
+      [this](
+         ICoreWebView2* sender,
+         ICoreWebView2WebResourceRequestedEventArgs* args) {
+         COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
+         args->get_ResourceContext(&resourceContext);
+
+         // Override the response with an another image.
+         // If put_Response is not called, the request will continue as normal.
+         wil::com_ptr<IStream> stream;
+         SHCreateStreamOnFileEx(
+               customImagePath, STGM_READ, FILE_ATTRIBUTE_NORMAL,
+               FALSE, nullptr, &stream);
+         wil::com_ptr<ICoreWebView2WebResourceResponse> response;
+         wil::com_ptr<ICoreWebView2Environment> environment;
+         wil::com_ptr<ICoreWebView2_2> webview2;
+         m_webView->QueryInterface(IID_PPV_ARGS(&webview2)));
+         webview2->get_Environment(&environment);
+         environment->CreateWebResourceResponse(
+               stream.get(), 200, L"OK", L"Content-Type: image/jpeg", &response));
+         CHECK_FAILURE(args->put_Response(response.get());
+         return S_OK;
+      })
+      .Get(),
+   &m_webResourceRequestedToken));
+```
+
+```csharp
+webView.CoreWebView2.AddWebResourceRequestedFilter(
+      "http://www.example.com/*", CoreWebView2WebResourceContext.Image);
+webView.CoreWebView2.WebResourceRequested += delegate (
+   CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs args) {
+    
+   FileStream fs = File.Open(customImagePath, FileMode.Open);
+   CoreWebView2WebResourceResponse response = webView.CoreWebView2.Environment.CreateWebResourceResponse(fs, 200, "OK", "Content-Type: image/jpeg");
+   args.Response = response;
+};
+```
 
 <!-- ====================================================================== -->
 ## 3. Intercepting a response (to monitor or modify it)
