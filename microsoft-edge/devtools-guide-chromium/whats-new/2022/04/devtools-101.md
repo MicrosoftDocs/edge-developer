@@ -38,24 +38,24 @@ The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visu
 
 ![The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-2.png)
 
-For more information, see [Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#console-integration) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+For more information, see [Microsoft Edge DevTools extension for Visual Studio Code > Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#console-integration).
 
 
 <!-- ====================================================================== -->
 ## Source maps are now cached with IndexedDB
 
-<!-- Title: Speed up debugging with cached sourcemaps -->
-<!-- Subtitle: DevTools now caches sourcemaps with IndexedDB, reducing the need to fetch sourcemaps on refresh. -->
+<!-- Title: Speed up debugging with cached source maps -->
+<!-- Subtitle: DevTools now caches source maps with IndexedDB, reducing the need to fetch source maps on refresh. -->
 
-In previous versions of Microsoft Edge, if you were hosting large sourcemap files on your server or in [Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md), DevTools would fetch these sourcemaps every time the page refreshed.  Fetching these sourcemaps repeatedly created additional network requests for DevTools and slowed down debugging time.
+In previous versions of Microsoft Edge, if you were hosting large source map files on your server or in [Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md), DevTools would fetch these source maps every time the page refreshed.  Fetching these source maps repeatedly created more network requests for DevTools, and slowed down debugging.
 
-In Microsoft Edge 101, DevTools caches sourcemaps by using IndexedDB.  Upon refreshing the page, sourcemaps are now served from the [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) cache, instead of being requested again from your server or Azure Artifacts symbol server.  Use the **Load status** column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) to verify that sourcemaps are being loaded from the cache.  To clear the IndexedDB cache and force DevTools to reload sourcemaps, run the **Clear source maps cache** command in the [Command Menu](../../../command-menu/index.md).
+In Microsoft Edge 101, DevTools caches source maps by using IndexedDB.  When you refresh the page, source maps are now served from the [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) cache, instead of being requested again from your server or the Azure Artifacts symbol server.  Use the **Load status** column in the [Source Maps Monitor tool](../../../source-maps-monitor/source-maps-monitor-tool.md) to verify that source maps are being loaded from the cache.  To clear the IndexedDB cache and force DevTools to reload source maps, run the **Clear source maps cache** command in the [Command Menu](../../../command-menu/index.md).
 
-When you first load the webpage, the **Source Maps Monitor** tool shows that the sourcemaps aren't cached yet:
+When you first load the webpage, the **Source Maps Monitor** tool shows that the source maps aren't cached yet:
 
 ![Source Maps Monitor tool, upon first load.](devtools-101-images/source-maps-indexeddb-first-load.png)
 
-When you reload the webpage, the **Source Maps Monitor** tool shows that the cached sourcemaps are used:
+When you reload the webpage, the **Source Maps Monitor** tool shows that the cached source maps are used:
 
 ![Source Maps Monitor tool, upon second load.](devtools-101-images/source-maps-indexeddb-second-load.png)
 
@@ -72,7 +72,7 @@ In addition, a new setting has been added to the Network tool: **Include pending
 
 ![The "Status text" column in the Network tool.](devtools-101-images/status-text-column-network-tool.png)
 
-To learn more about the available columns in the request log in the **Network** tool, see [Add or remove columns](../../../network/reference.md#add-or-remove-columns) in _Network features reference_.
+To learn more about the available columns in the request log, see [Network features reference > Add or remove columns](../../../network/reference.md#add-or-remove-columns).
 
 
 <!-- ====================================================================== -->
@@ -83,7 +83,7 @@ To learn more about the available columns in the request log in the **Network** 
 
 In Microsoft Edge 101, the **3D View** tool has two new buttons: **Pan view** (![The 'Pan view' icon.](devtools-101-images/pan-view-icon.png)) and **Rotate view** (![The 'Rotate view' icon.](devtools-101-images/rotate-view-icon.png)).  Use these buttons to switch between panning around the canvas or rotating the canvas.  Click the **Pan view** or **Rotate view** button, and then drag in the desired direction with your mouse, or use the arrow keys.
 
-Also, the UI now provides a more uniform and intuitive experience, by organizing the panes more clearly and fixing accessibility issues.
+The UI now provides a more uniform and intuitive experience.  The panes are organized more clearly, and accessibility issues have been fixed.
 
 ![Updated UI and camera controls in 3D View.](devtools-101-images/3d-view-ui-camera-ctrls.png)
 
