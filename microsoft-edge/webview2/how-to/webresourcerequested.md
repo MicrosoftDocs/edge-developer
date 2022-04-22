@@ -138,6 +138,7 @@ The host app can change the properties of a request by using this API:
 
 ---
 
+
 ### What you can do with headers
 
 <!-- TODO: Are we allowed to link this page/use sentences from it? -->
@@ -212,6 +213,9 @@ webView.CoreWebView.WebResourceRequested += delegate (
    requestHeaders.SetHeader("Custom", "Value");
 }
 ```
+
+---
+
 
 <!-- ====================================================================== -->
 ### Example: Serve a web resource request locally
@@ -487,6 +491,7 @@ CHECK_FAILURE(webviewEnvironment->CreateWebResourceRequest(
 CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()));
 ```
 
+---
 
 ### Filtering the WebResourceRequested event based on URL and resource type
 
