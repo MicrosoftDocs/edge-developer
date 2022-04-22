@@ -9,11 +9,11 @@ ms.date: 04/28/2022
 ---
 # What's New in DevTools (Microsoft Edge 101)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, see these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
+The following sections list the announcements from the Microsoft Edge DevTools team.  Read these announcements, to try the latest features of Microsoft Edge DevTools and the Microsoft Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code.
 
-If you're on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels of Microsoft Edge (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.
+To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).  The preview channels of Microsoft Edge (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.  If you're on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.
 
-To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->
@@ -22,21 +22,21 @@ To report a problem with DevTools or ask for a new feature, check out the new [M
 <!-- Title: Visual Studio Code extension now with Console tool -->
 <!-- Subtitle: See log messages, run JavaScript, and use Console APIs right next to your code in Visual Studio Code. -->
 
-The Console is one of the most popular tools in DevTools.  You can now access the Console tool in the Microsoft Edge Developer Tools extension for Visual Studio Code.  This allows you to see your log messages right next to your code.  Using the Console, you can also:
+The Console is one of the most popular tools in DevTools.  You can now access the Console tool in the Microsoft Edge Developer Tools extension for Visual Studio Code.  This integrated DevTools Console allows you to see your log messages right next to your code.  Using the Console, you can also:
 *  Try out some JavaScript statements.
 *  Access the window object.
 *  Call the methods of the `Console` object, as described in [Console object API Reference](../../../console/api.md).
-*  Use the [Console tool utility functions and selectors](../../../console/utilities.md) to access the DOM.
+*  Use the Console utilities to access the DOM, as described in [Console tool utility functions and selectors](../../../console/utilities.md).
 
 You can use the Console as the main tool, or use it together with the **Elements** and **Network** tools.
 
-The Console tool in the main toolbar of the Edge DevTools extension for Visual Studio Code:
+The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code:
 
-![The Console tool in the main toolbar of the Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-1.png)
+![The Console tool in the main toolbar of the Microsoft Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-1.png)
 
-The Console tool in the Drawer of the Edge DevTools extension for Visual Studio Code:
+The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code:
 
-![The Console tool in the Drawer of the Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-2.png)
+![The Console tool in the Drawer of the Microsoft Edge DevTools extension for Visual Studio Code.](devtools-101-images/console-tool-vsc-2.png)
 
 For more information, see [Console integration](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#console-integration) in _Microsoft Edge DevTools extension for Visual Studio Code_.
 
