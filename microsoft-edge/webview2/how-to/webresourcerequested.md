@@ -21,9 +21,9 @@ ms.date: 04/15/2022
 The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`. This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.  <!-- TODO last sentence is weird but want a sentence to explain high level what this API lets you do -->
 
 Some common use cases include: 
-* use-case: 
-* use-case: 
-* use-case: 
+* use-case: Uploading local file content to your app to add support for offline functionality.
+* use-case: Blocking content in a webpage, like images.
+* use-case: Fine tune authentication to pages. 
 
 <!-- During navigation among URIs, use the `WebResourceRequested` event and the `WebResourceResponseReceived` event. -->
 
@@ -104,7 +104,7 @@ The host app can change the properties of a request by using this API:
 
 <!-- TODO: Are we allowed to link this page/use sentences from it? -->
 <!-- DEV TODO: Should we explain how our developers might be able to change headers? -->
-A HTTP header provides important information and metadata about a request or response. Changing [headers](https://developer.mozilla.org/en-US/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. A [request header](https://developer.mozilla.org/en-US/docs/Glossary/Request_header) can be used to indicate the format of the response (e.g. the Accept-* headers), set authentication tokens, read adn write cookies (sensitive information), modify the user agent, etc.  A [response header](https://developer.mozilla.org/en-US/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
+A HTTP header provides important information and metadata about a request or response. Changing [headers](https://developer.mozilla.org/en-US/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. A [request header](https://developer.mozilla.org/en-US/docs/Glossary/Request_header) can be used to indicate the format of the response (e.g. the Accept-* headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, etc.  A [response header](https://developer.mozilla.org/en-US/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
 
 <!-- Notes -->
 <!-- * [HTTP header](https://developer.mozilla.org/en-US/docs/Glossary/HTTP_header) - 
@@ -198,7 +198,6 @@ By default the HTTP server sends responses to the WebView2 control. Your host ap
 <!-- DEV TODO: identify the technical difference between overriding a request vs. a response; when to override a request vs. response -->
 
 <!-- Notes
-
 *  Your host app can override a response and and provide a new response to the WebView2 control.
 
 *  By default, the HTTP server sends a response to the WebView2 control.
