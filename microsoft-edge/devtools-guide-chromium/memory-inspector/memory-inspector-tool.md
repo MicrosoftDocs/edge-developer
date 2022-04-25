@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 04/22/2022
+ms.date: 04/24/2022
 ---
 
 <!-- Copyright Kim-Anh Tran
@@ -60,7 +60,7 @@ Use Memory Inspector to view JavaScript ArrayBuffers and the WebAssembly (WASM) 
 
     ![Memory Inspector set breakpoint in JavaScript file](../media/memory-inspector-set-breakpoint.png)
 
-1. Refresh the webpage. It fails to display because the JavaScript stops processing at the breakpoint.
+1. Refresh the webpage. It fails to display because JavaScript stops processing at the breakpoint.
 
 1. In the right Debugger pane under **Scope**, find the `buffer` line.
 
@@ -89,7 +89,7 @@ A new tab opens next to the first tab in Memory Inspector.
 <!-- ====================================================================== -->
 ## Navigating in Memory Inspector
 
-The Memory Inspector panel includes 3 types of content:
+The Memory Inspector panel includes three types of content:
 
 * [Navigation bar](#navigation-bar)
 * [Memory buffer](#memory-buffer)
@@ -153,15 +153,15 @@ Complete the following steps to debug a webpage in Memory Inspector.
     
     ![Memory Inspector address values updated](../media/memory-inspector-address-values-updated.png)
 
-1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating-point** values.
+1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings gray](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating-point** values.
     
     ![Value type settings float](../media/memory-inspector-panel-value-type-settings-float.png)
 
-1. Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle-back.png)) to close the value type settings.
+1. Click **Toggle value type settings** (![Toggle value type settings blue](../media/memory-inspector-value-type-settings-toggle-back.png)) to close the value type settings.
 
 1. Use the drop-down menus to change the encoding from `dec` to `sci`. The value representations are updated.
     
-    ![Memory Inspector address values updated](../media/memory-inspector-address-values-updated-sci.png)
+    ![Memory Inspector address values updated view](../media/memory-inspector-address-values-updated-sci.png)
     
 1. Explore the memory buffer using the keyboard or navigation bar.
 
