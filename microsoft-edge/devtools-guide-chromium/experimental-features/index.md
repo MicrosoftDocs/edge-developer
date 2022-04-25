@@ -456,7 +456,7 @@ To use **Composited Layers**:
 
    ![Composited Layers pane.](../media/experiments-layers.msft.png)
 
-See also [Navigate z-index, DOM, and layers using the 3D View tool](../3d-view/index.md).
+See also [Navigate webpage layers, z-index, and DOM using the 3D View tool](../3d-view/index.md).
 
 *  This checkbox is present in Microsoft Edge Stable v98.
 *  This checkbox is not present in Microsoft Edge Canary v100.

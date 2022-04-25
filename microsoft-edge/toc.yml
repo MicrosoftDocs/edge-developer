@@ -288,9 +288,9 @@
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
               items:
-                - name: Navigate z-index, DOM, and layers using the 3D View tool  # added article
+                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
                   href: devtools-guide-chromium/3d-view/index.md
-                  displayName: 3D View tool, Layers tool
+                  displayName: 3D View tool, Layers tool, composited layers
 # Animations tool -------------------------------------------------------------
             - name: Animations tool
               items:

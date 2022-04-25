@@ -87,7 +87,7 @@ The UI now provides a more uniform and intuitive experience.  The panes are orga
 
 ![Updated UI and camera controls in 3D View.](devtools-101-images/3d-view-ui-camera-ctrls.png)
 
-See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
+See [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md).
 
 
 <!-- ====================================================================== -->

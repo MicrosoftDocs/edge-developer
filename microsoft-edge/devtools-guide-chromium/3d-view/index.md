@@ -1,33 +1,55 @@
 ---
-title: Navigate z-index, DOM, and layers using the 3D View tool
-description: How to use 3D View, including navigating the canvas, Z-index, 3D DOM, and composited layers.
+title: Navigate webpage layers, z-index, and DOM using the 3D View tool
+description: How to use the 3D View tool, including navigating the 3D canvas and using the Composited Layers tab, Z-index tab, and DOM tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/03/2020
+ms.date: 04/25/2022
 ---
-# Navigate z-index, DOM, and layers using the 3D View tool
+# Navigate webpage layers, z-index, and DOM using the 3D View tool
 
-Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.  Use **3D View** to do the following:
-* [Explore the web page translated into a 3D perspective](#3d-dom).
-* [Debug based on z-index stacking context](#z-index).
-* [Access the Layers tool functionality from 3D View with composited layers](#composited-layers).
+Use the **3D View** tool to debug your web app by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.
+
+Use the **3D View** tool to do the following:
+
+<!-- DOM tab -->
+* Explore the web page translated into a 3D perspective, by using the **DOM** tab.  See [DOM](#3d-dom), below.
+
+<!-- Z-index tab -->
+* Debug based on z-index stacking context.  See [Z-index](#z-index), below.
+
+<!-- Composited layers -->
+* Access the Layers tool functionality from the 3D View tool by using the **Composited layers** view.  See [Composited layers](#composited-layers), below.
+
+
+
 * [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration).
+
 * [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type).
 
 On the left side, there are three panes that you can use for your debugging experience:
+<!-- Z-index tab -->
 *  The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.
+<!-- DOM tab -->
 *  The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements easily accessible.  To access the pane, select the **DOM** pane next to the **Z-index** pane.
+<!-- Composited layers -->
 *  The [Composited Layers](#composited-layers) pane.  Add another 3D element to create a more comprehensive experience from a layers perspective.  To access the pane, select the **Composited Layers** pane next to the **DOM** pane.
 
 On the right side, the canvas displays your selections from the [Z-index](#z-index), [3D DOM](#3d-dom), or [Composited Layers](#composited-layers).
 
 
-<!-- ====================================================================== -->
-## Opening the 3D View panel
 
-To open the **3D View** panel, in DevTools, do either of the following:
+Use the **Pan view** (![The 'Pan view' icon.](devtools-101-images/pan-view-icon.png)) button 
+
+Use the **Rotate view** (![The 'Rotate view' icon.](devtools-101-images/rotate-view-icon.png)).  Use these buttons to switch between panning around the canvas or rotating the canvas.  Click the **Pan view** or **Rotate view** button, and then drag in the desired direction with your mouse, or use the arrow keys.
+
+
+
+<!-- ====================================================================== -->
+## Opening the 3D View tool
+
+To open the **3D View** tool, in DevTools, do either of the following:
 
 * Click **More Tools** (+) on the main toolbar and then select **3D View**.
 
@@ -37,8 +59,7 @@ To open the **3D View** panel, in DevTools, do either of the following:
 <!-- ====================================================================== -->
 ## Navigating the canvas
 
-> [!div class="mx-imgBorder"]
-> ![Canvas of 3D View.](../media/3d-view-canvas.msft.png)
+![Canvas of 3D View.](../media/3d-view-canvas.msft.png)
 
 
 ### Keyboard shortcuts
@@ -46,6 +67,7 @@ To open the **3D View** panel, in DevTools, do either of the following:
 To rotate the DOM horizontally, select the `left-arrow` and `right-arrow` keys.  To rotate vertically, select the `up-arrow` and `down-arrow` keys.
 
 To navigate the DOM to move through the adjacent elements, select an element and then use the `up-arrow` and `down-arrow` keys.
+
 
 ### Mouse controls
 
@@ -55,10 +77,10 @@ To pan around the DOM, right-click and drag in the direction you want the DOM to
 
 To zoom, drag two fingers across the touchpad or use the scroll wheel on your mouse.
 
+
 ### On-screen controls
 
-> [!div class="mx-imgBorder"]
-> ![On-screen controls.](../media/3d-view-controls-small.msft.png)
+![On-screen controls.](../media/3d-view-controls-small.msft.png)
 
 To reset the canvas view to the original view, select the **Reset camera** button, or select the **Reset elements in view and re-center camera** (sideways refresh icon) button.
 
@@ -68,16 +90,26 @@ To refresh the canvas, such as when the browser changed or you switched to a [De
 
 
 <!-- ====================================================================== -->
-## Z-index
+## 1. The Composited Layers tab
 
-> [!div class="mx-imgBorder"]
-> ![Z-index view.](../media/3d-view-z-index-view-box.msft.png)
+![Composited layers pane.](../media/experiments-layers.msft.png)
 
-While the **Z-index** pane has shared features with the **3D DOM** pane, the panes still have elements that are unique to the pane.
+The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  You can still access the details of each of the layers and have the **Slow scroll rects** and **Paint**.
+
+
+
+<!-- ====================================================================== -->
+## 2. The Z-index tab
+
+![Z-index view.](../media/3d-view-z-index-view-box.msft.png)
+
+The **Z-index** tab contains some of the same features as the **DOM** tab.
+
 
 ### Highlight elements with stacking context
 
-The **Highlight elements with stacking context** setting allows you to turn on or off the z-index tags for the elements on the canvas.  By default, the checkbox is selected.
+Select the **Highlight elements with stacking context** setting allows you to turn on or off the z-index tags for the elements on the canvas.  By default, the checkbox is selected.
+
 
 ### Change the scope of your exploration
 
@@ -97,6 +129,7 @@ At the bottom of the **3D DOM** pane, locate the **Hide elements with the same p
 
 The options reduce the clutter that complex web pages create in your canvas.
 
+
 ### Z-index color type
 
 The are the different visualizations you can use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, DevTools provides different colorways and a **Use background color** option.  The **Z-index** pane shares the **Purple to White** and **Background Color** with the **3D DOM** pane.  Given the added visual element of the z-index labels, your feedback that led to a reduction in the number of color options.
@@ -105,12 +138,12 @@ This approach improves the z-index debugging experience.  The radio buttons allo
 
 
 <!-- ====================================================================== -->
-## 3D DOM
+## 3. Work with a 3D view of the DOM by using the DOM tab
 
-> [!div class="mx-imgBorder"]
-> ![DOM view.](../media/3d-view-dom-purple-box.msft.png)
+![DOM view.](../media/3d-view-dom-purple-box.msft.png)
 
 If you want to take more of a general debugging view, rather than the z-index experience, the **3D DOM** gives an overall look of the DOM.  Since the z-index context is removed, the DOM is stacked more closely and cleanly.  The **3D DOM** pane has similar functionality, but there are a few nuances.
+
 
 ### Changing your view
 
@@ -121,6 +154,7 @@ To display the selected element and the parents of the element, turn off the **I
 If you turn on the **Include children** setting and turn off the **Include parents** setting and then select the **Isolate selected element** button, the canvas displays the element and any children.  If you turn off both settings and then select the **Isolate selected element** button, the canvas only displays the element you previously selected.
 
 A slider on the control pane named **Nesting level for page** with a number next to it.  The number indicates the number of layers for the document.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to `1`, which displays only the furthest-back element in the DOM.  To remove some of the clutter, drag the slider.  It helps you get a closer look at what is happening in the lower levels.
+
 
 ### DOM color type
 
@@ -133,12 +167,3 @@ The **3D DOM** pane has the following options:
 *  **Use screen texture**
 
 The **Use screen texture** option adds context to your debugging experience.  It directly displays the content from the webpage onto the elements.
-
-
-<!-- ====================================================================== -->
-## Composited layers
-
-> [!div class="mx-imgBorder"]
-> ![Composited layers pane.](../media/experiments-layers.msft.png)
-
-The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  You can still access the details of each of the layers and have the **Slow scroll rects** and **Paint**.
