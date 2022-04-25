@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/15/2022
+ms.date: 04/25/2022
 ---
 # Custom management of network requests
 <!--
@@ -19,17 +19,20 @@ ms.date: 04/15/2022
 <!-- ====================================================================== -->
 ## Introduction
 
-The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`. This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.  <!-- TODO last sentence is weird but want a sentence to explain high level what this API lets you do -->
+The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`. This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.  <!-- TODO clarify last sentence, which explains what this high-level API lets you do -->
 
 Some common use cases include: 
 * use-case: Uploading local file content to your app to add support for offline functionality.
 * use-case: Blocking content in a webpage, like images.
 * use-case: Fine tune authentication to pages. 
 
-### Sequence for modifying request and responses
-<!-- TODO: diagram -->
 
-1. A request is needed, for some resource that's needed.
+### Sequence for modifying request and responses
+
+<!-- wiki page that points to Visio source file: Documentation > "Notes about specific image files" -->
+![Diagram of sequence for modifying requests and responses.](webresourcerequested-images/modifying-requests-responses.png)
+
+1. The host app makes a request for a resource that's needed for the webpage.
 1. The WebView2 control creates a request, and fires a `WebResourceRequested` event to the host app.
 1. The host app can modify headers at this point.  The host app can also defer the `WebResourceRequested` event, which means that the host app asks for more time to decide what to do.
 1. The WebView2 network stack can add more headers (for example, can add cookies and add authorization headers).
