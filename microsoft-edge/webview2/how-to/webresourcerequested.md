@@ -68,8 +68,8 @@ The `webResourceRequested` and `webResourceResponseReceived` events are powerful
 
 Instead of using WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
-* [General navigation](/microsoft-edge/webview2/concepts/navigation-events)
-* [Cookies](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39) - Managing cookies in WebView2
+* [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
+* [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39)
 
 <!-- ====================================================================== -->
 ## 1. Intercepting a request (to monitor or modify it)
@@ -112,7 +112,6 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 *  You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
 *  You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
 *  You want to upload local file content to the request server via a POST request <!-- DEV TODO: validate this -->
-
 
 <!-- ====================================================================== -->
 ### Example: Intercepting a request (to monitor or modify it)
