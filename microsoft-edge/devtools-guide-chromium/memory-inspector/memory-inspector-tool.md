@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 04/25/2022
+ms.date: 04/26/2022
 ---
 
 <!-- Copyright Kim-Anh Tran
@@ -25,19 +25,14 @@ ms.date: 04/25/2022
 
 # Inspect a JavaScript ArrayBuffer using Memory Inspector
 
-Use Memory Inspector to view and interact with the following types of objects:
+Use **Memory Inspector** to view and interact with the following types of objects:
 
 * [ArrayBuffers](https://developer.mozilla.org/docs/web/javascript/reference/global_objects/arraybuffer)
-
 * [TypedArray](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
-
 * [DataView](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+* [WebAssembly (Wasm) memory](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
 
-* [WebAssembly (WASM) memory](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
-
-You can open Memory Inspector from the DevTools menu or [while debugging](#open-memory-inspector-while-debugging).
-
-In contrast to the Memory Inspector tool, the Sources tool provides a limited ability to inspect `ArrayBuffers` when debugging. The **Scope** view in the Sources tool displays a list of single values within the array buffer, which makes it difficult to see all the data. Additionally, navigating to a certain range within the buffer requires you to scroll to a specific index and the values are always displayed as a single byte, even if you wanted to see them in another format, such as 32-bit integers.
+The **Memory Inspector** tool provides greater ability than the **Sources** tool to inspect `ArrayBuffers` when debugging. The **Scope** view in the Sources tool displays a list of single values within the array buffer, which makes it difficult to see all the data. Additionally, navigating to a certain range within the buffer requires you to scroll to a specific index and the values are always displayed as a single byte, even if you wanted to see them in another format, such as 32-bit integers.
 
 ![Sources tool scope panel provides limited ability to inspect memory](../media/memory-inspector-sources-scope-limited-ability.png)
 
@@ -63,7 +58,7 @@ In contrast to the Memory Inspector tool, the Sources tool provides a limited ab
 
 1. From the `buffer` line you can open Memory Inspector using one of the following methods:
 
-    * Click on the **Reveal in Memory Inspector panel** icon at the end of the `buffer` property line (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)), or
+    * Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)) at the end of the `buffer` property line, or
  
     * From the context menu. Right click on the `buffer` property and select **Reveal in Memory Inspector panel**.
 
@@ -77,7 +72,7 @@ In contrast to the Memory Inspector tool, the Sources tool provides a limited ab
 
 You can inspect multiple objects at the same time such as DataView and TypedArray.
 
-With the demo webpage paused at the breakpoint, object `b2` in the **Scopes** view is a TypedArray. Right click on the `b2` object and select **Reveal in Memory Inspector panel**
+With the demo webpage paused at the breakpoint, object `b2` in the **Scope** view is a TypedArray. Right click on the `b2` object and select **Reveal in Memory Inspector panel**
 
 A new tab for the `b2` object opens next to the first tab, which represents the `buffer` object in Memory Inspector.
 
@@ -98,7 +93,7 @@ The Memory Inspector panel includes three types of content:
  
 * The address input shows the current byte address in hex format. You can change the value to jump to a new location in the memory buffer. Click in the text box and change the value to `0x00000008`. The Memory buffer immediately jumps to that byte address.
 
-* Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate Previous page and Next page, respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
+* Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate **Previous page** (**<**) and **Next page** (**>**), respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
 
 * Use the far-left history arrows to **Go back in address history** (![Go back in address history](../media/memory-inspector-go-back-address-history.png)) and **Go forward in address history** (![Go forward in address history](../media/memory-inspector-go-forward-address-history.png)).
 
@@ -184,7 +179,7 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 
     ![Memory Inspector set breakpoint in Wasm file](../media/memory-inspector-wasm-breakpoint.png)
 
-1. Click on the **Reveal in Memory Inspector panel** icon at the end of the `$imports.memory` property line (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)). 
+1. Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line. 
 
     The Wasm ArrayBuffer opens in Memory Inspector.
     
