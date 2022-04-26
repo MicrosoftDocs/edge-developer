@@ -79,7 +79,7 @@ You can inspect multiple objects at the same time such as DataView and TypedArra
 
 With the demo webpage paused at the breakpoint, object `b2` in the **Scopes** view is a TypedArray. Right click on the `b2` object and select **Reveal in Memory Inspector panel**
 
-A new tab for the `b2` object opens next to the first tab, which represents the `buffer object` in Memory Inspector.
+A new tab for the `b2` object opens next to the first tab, which represents the `buffer` object in Memory Inspector.
 
 ![Two ArrayBuffer tabs open in the Memory Inspector panel](../media/memory-inspector-panel-two.png)
 
