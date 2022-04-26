@@ -35,7 +35,7 @@ Use Memory Inspector to view and interact with the following types of objects:
 
 * [WebAssembly (WASM) memory](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
 
-You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
+You can open Memory Inspector from the DevTools menu or [while debugging](#open-memory-inspector-while-debugging).
 
 In contract to the Memory Inspector tool, the Sources tool provides a limited ability to inspect `ArrayBuffers` when debugging. The **Scope** view in the Sources tool displays a list of single values within the array buffer, which makes it difficult to see all the data. Additionally, navigating to a certain range within the buffer requires you to scroll to a specific index and the values are always displayed as a single byte, even if you wanted to see them in another format, such as 32-bit integers.
 
@@ -108,7 +108,7 @@ The Memory Inspector panel includes three types of content:
 
 * Use the far-left history arrows to **Go back in address history** (![Go back in address history](../media/memory-inspector-go-back-address-history.png)) and **Go forward in address history** (![Go forward in address history](../media/memory-inspector-go-forward-address-history.png)).
 
-* If the Memory buffer does not automatically update when stepping through values, click **Refresh** (![Go back in address history](../media/memory-inspector-refresh.png)).
+* If the Memory buffer does not automatically update when stepping through values, click **Refresh** (![Memory buffer refresh](../media/memory-inspector-refresh.png)).
 
 ### Memory buffer
 
