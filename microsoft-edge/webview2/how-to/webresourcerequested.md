@@ -22,9 +22,9 @@ ms.date: 04/25/2022
 The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`. This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.  <!-- TODO clarify last sentence, which explains what this high-level API lets you do -->
 
 Some common use cases include: 
-* use-case: Uploading local file content to your app to add support for offline functionality.
-* use-case: Blocking content in a webpage, like images.
-* use-case: Fine tune authentication to pages. 
+* Uploading local file content to your app to add support for offline functionality.
+* Blocking content in a webpage, like images.
+* Fine tune authentication to pages. 
 
 
 ### Sequence for modifying request and responses
@@ -64,10 +64,7 @@ the HTTP server sends a response
 <!-- ## When not to use custom management of network requests
 ## When to use custom network requests vs. using other provided wrapper APIs. -->
 
-<!-- TODO: clean up -->
-<!-- This is a low-level optional API that gives more control, but requires more coding, and doesn't guard rails and is complicated to use.  Only use this specialized API if you have a specialized scenario.  various specialized apis to support _ scenarios.  we don't recommend that you use the `wrr` event unless _.   Use standard __ whenever possible, instead. -->
-
-The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools that allow you to light up various scenarios. This is a low-level API that gives more control but requires more coding and is complicated to use. For some common scenarios we provide APIs catered towards those specific scenarios which are easier to use and we recommend we use those rather than the APIs discussed in this article.
+The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools that allow you to light up various scenarios. This is a low-level API that gives more control but requires more coding and is complicated to use. For some common scenarios we provide APIs catered towards those specific scenarios which are easier to use and we recommend you use those rather than the APIs discussed in this article.
 
 Instead of using WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
