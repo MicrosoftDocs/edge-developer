@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 04/24/2022
+ms.date: 04/25/2022
 ---
 
 <!-- Copyright Kim-Anh Tran
@@ -25,9 +25,21 @@ ms.date: 04/24/2022
 
 # Inspect a JavaScript ArrayBuffer using Memory Inspector
 
-Use Memory Inspector to view JavaScript ArrayBuffers and the WebAssembly (WASM) resizable ArrayBuffer `WebAssembly.Memory`. You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
+Use Memory Inspector to view and interact with the following types of objects:
 
-<!-- add more scenario type info, ask Zoher -->
+* [ArrayBuffers](https://developer.mozilla.org/docs/web/javascript/reference/global_objects/arraybuffer)
+
+* [TypedArray](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
+
+* [DataView](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView)
+
+* [WebAssembly (WASM) memory](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
+
+You can open Memory Inspector from the [DevTools menu](#open-memory-inspector-from-the-devtools-menu) or [while debugging](#open-memory-inspector-while-debugging).
+
+In contract to the Memory Inspector tool, the Sources tool provides a limited ability to inspect `ArrayBuffers` when debugging. The **Scope** view in the Sources tool displays a list of single values within the array buffer, which makes it difficult to see all the data. Additionally, navigating to a certain range within the buffer requires you to scroll to a specific index and the values are always displayed as a single byte, even if you wanted to see them in another format, such as 32-bit integers.
+
+![Sources tool scope panel provides limited ability to inspect memory](../media/memory-inspector-sources-scope-limited-ability.png)
 
 
 <!-- ====================================================================== -->
@@ -37,15 +49,6 @@ Use Memory Inspector to view JavaScript ArrayBuffers and the WebAssembly (WASM) 
 
 1. Open the test site [http://memory-inspector.glitch.me/demo-js.html](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
-
-<!-- ====================================================================== -->
-## Open Memory Inspector from the DevTools menu
-
-1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
-
-1. To open Memory Inspector select **More Tools** (**+**) > Memory Inspector
-
-    ![Welcome to Microsoft Edge DevTools](../media/memory-inspector-devtools-more-tools.png)
 
 <!-- ====================================================================== -->
 ## Open Memory Inspector while debugging
@@ -60,7 +63,7 @@ Use Memory Inspector to view JavaScript ArrayBuffers and the WebAssembly (WASM) 
 
     ![Memory Inspector set breakpoint in JavaScript file](../media/memory-inspector-set-breakpoint.png)
 
-1. Refresh the webpage. It fails to display because JavaScript stops processing at the breakpoint.
+1. Refresh the webpage. It fails to display because the JavaScript pauses at the breakpoint.
 
 1. In the right Debugger pane under **Scope**, find the `buffer` line.
 
@@ -80,9 +83,9 @@ Use Memory Inspector to view JavaScript ArrayBuffers and the WebAssembly (WASM) 
 
 You can inspect multiple objects at the same time such as DataView and TypedArray.
 
-In the demo webpage line `b2` is a TypedArray. Right click on the `b2` property and select **Reveal in Memory Inspector panel**.
+With the demo webpage paused at the breakpoint, object `b2` in the **Scopes** view is a TypedArray. Right click on the `b2` object and select **Reveal in Memory Inspector panel**
 
-A new tab opens next to the first tab in Memory Inspector.
+A new tab for the `b2` object opens next to the first tab, which represents the `buffer object` in Memory Inspector.
 
 ![Two ArrayBuffer tabs open in the Memory Inspector panel](../media/memory-inspector-panel-two.png)
 
@@ -103,9 +106,9 @@ The Memory Inspector panel includes three types of content:
 
 * Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate Previous page and Next page, respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
 
-* Use the far-left history arrows to **Go back in address history** and **Go forward in address history**.
+* Use the far-left history arrows to **Go back in address history** (![Go back in address history](../media/memory-inspector-go-back-address-history.png)) and **Go forward in address history** (![Go forward in address history](../media/memory-inspector-go-forward-address-history.png)).
 
-* If the Memory buffer does not automatically update when stepping through values, click **Refresh**.
+* If the Memory buffer does not automatically update when stepping through values, click **Refresh** (![Go back in address history](../media/memory-inspector-refresh.png)).
 
 ### Memory buffer
 
@@ -197,7 +200,7 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/blog/memory-inspector/) and is authored by [Kim-Anh Tran](https://developer.chrome.com/authors/kimanh/) (Chrome DevTools).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/memory-inspector/) and is authored by [Kim-Anh Tran](https://developer.chrome.com/authors/kimanh/) (Chrome DevTools).
 
 [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
