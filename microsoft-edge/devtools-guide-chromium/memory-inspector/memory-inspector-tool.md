@@ -37,23 +37,17 @@ Use Memory Inspector to view and interact with the following types of objects:
 
 You can open Memory Inspector from the DevTools menu or [while debugging](#open-memory-inspector-while-debugging).
 
-In contract to the Memory Inspector tool, the Sources tool provides a limited ability to inspect `ArrayBuffers` when debugging. The **Scope** view in the Sources tool displays a list of single values within the array buffer, which makes it difficult to see all the data. Additionally, navigating to a certain range within the buffer requires you to scroll to a specific index and the values are always displayed as a single byte, even if you wanted to see them in another format, such as 32-bit integers.
+In contrast to the Memory Inspector tool, the Sources tool provides a limited ability to inspect `ArrayBuffers` when debugging. The **Scope** view in the Sources tool displays a list of single values within the array buffer, which makes it difficult to see all the data. Additionally, navigating to a certain range within the buffer requires you to scroll to a specific index and the values are always displayed as a single byte, even if you wanted to see them in another format, such as 32-bit integers.
 
 ![Sources tool scope panel provides limited ability to inspect memory](../media/memory-inspector-sources-scope-limited-ability.png)
 
 
 <!-- ====================================================================== -->
-## Open the test site in Microsoft Edge
+## Open Memory Inspector while debugging
 
 1. Start Microsoft Edge.
 
-1. Open the test site [http://memory-inspector.glitch.me/demo-js.html](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
-
-
-<!-- ====================================================================== -->
-## Open Memory Inspector while debugging
-
-1. Open the demo webpage [Inspect ArrayBuffers in JS (Memory in JS)](https://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
+1. Open the test site [Inspect ArrayBuffers in JS (Memory in JS)](http://memory-inspector.glitch.me/demo-js.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
 1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
@@ -176,7 +170,7 @@ Complete the following steps to debug a webpage in Memory Inspector.
 
 For WebAssembly (Wasm) memory inspection, the process is similar to inspecting JavaScript memory.
 
-1. Open the Wasm test site [http://memory-inspector.glitch.me/demo-wasm.html](http://memory-inspector.glitch.me/demo-wasm.html). <!-- To do item: copy to Microsoft Repo and reference there -->
+1. Open the Wasm test site [Inspect Wasm memories (Memory in Wasm)](http://memory-inspector.glitch.me/demo-wasm.html). <!-- To do item: copy to Microsoft Repo and reference there -->
 
 1. Open DevTools by pressing `F12` or `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).
 
