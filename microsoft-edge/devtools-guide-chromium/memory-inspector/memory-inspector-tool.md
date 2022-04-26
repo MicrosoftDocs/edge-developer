@@ -27,7 +27,7 @@ ms.date: 04/26/2022
 
 Use **Memory Inspector** to view and interact with the following types of objects:
 
-* [ArrayBuffers](https://developer.mozilla.org/docs/web/javascript/reference/global_objects/arraybuffer)
+* [ArrayBuffer](https://developer.mozilla.org/docs/web/javascript/reference/global_objects/arraybuffer)
 * [TypedArray](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
 * [DataView](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView)
 * [WebAssembly (Wasm) memory](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
