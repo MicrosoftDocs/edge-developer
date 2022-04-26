@@ -26,6 +26,9 @@ Some common use cases include:
 * Blocking content in a webpage, like images.
 * Fine tune authentication to pages. 
 
+### How your host app, the WebView2 control, and the HTTP server interact
+
+The WebView2 control sits in between your host app and the HTTP server.  When your host app navigates to a URI, the WebView2 control sends a request to the HTTP server.  The HTTP server then sends a response to the WebView2 control.
 
 ### Sequence for modifying request and responses
 
@@ -39,11 +42,7 @@ Some common use cases include:
 1. The WebView2 control sends the request to the HTTP server.
 1. The HTTP server sends the response to the WebView2 control.
 1. The WebView2 control fires the `WebResourceResponseReceived` event.
-
-
-### How your host app, the WebView2 control, and the HTTP server interact
-
-The WebView2 control sits in between your host app and the HTTP server.  When your host app navigates to a URI, the WebView2 control sends a request to the HTTP server.  The HTTP server then sends a response to the WebView2 control. 
+ 
 
 <!-- 
 The 3 actors are:
