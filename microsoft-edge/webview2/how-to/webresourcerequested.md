@@ -99,7 +99,7 @@ A HTTP header provides important information and metadata about a request or res
 
 In a `WebResourceRequested` event, you can specify a filter for the requests that the app is interested in based on URL and resource type.  If the host app uses a filter, the filter must be added before a `WebResourceRequested` event is fired.
 
-For example, say a host app is trying to replace images, in which case the host app is only interested in web resource requested events for images. The app would only get events for images by specifing the filter for images. Another example is if the host app is only interested in all requests that are under a domain name like https://example.com, then the app would use the URL filter to get events associated with that site. 
+For example, say a host app is trying to replace images, in which case the host app is only interested in web resource requested events for images. The app would only get events for images by specifing the filter for images. Another example is if the host app is only interested in all requests that are under a domain name like https://example.com, then the app can use the URL filter to get events associated with that site. 
 
 See [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1185.39).
 
