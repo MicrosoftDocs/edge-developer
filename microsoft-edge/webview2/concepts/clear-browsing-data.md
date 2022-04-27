@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/09/2022
+ms.date: 04/27/2022
 ---
 # Clear browsing data from the user data folder
 
@@ -229,4 +229,4 @@ void ClearAutofillData()
 ## See also
 
 * [Manage the user data folder](user-data-folder.md)
-* [Spec for Clear Browsing Data API](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ClearBrowsingData.md)
+* [Spec for Clear Browsing Data API](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/ClearBrowsingData.md)
