@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/08/2022
+ms.date: 04/27/2022
 ---
 # Get started with WebView2 in WinForms apps
 
@@ -23,11 +23,11 @@ This article covers how to set up your development tools and create an initial W
 
 Do either of the following:
 
-*  Create a new project in Visual Studio, using the steps below.  If you want to see the completed project, you can see the [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) directory in the `WebView2Samples` repo.
+*  Create a new project in Visual Studio, using the steps below.  If you want to see the completed project, you can see the [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) directory in the `WebView2Samples` repo.
 
 *  Download or clone the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.
 
-The corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) (no readme file).
+The corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) (no readme file).
 
 
 <!-- ====================================================================== -->
@@ -97,7 +97,7 @@ Start with a basic desktop project that contains a single main window.
 
    ![In the 'Create a new project' panel, select 'C# > Windows Forms App (.NET Framework)'.](media/winforms-new-project.png)
 
-1. In the **Project name** text box, enter a project name.  This tutorial article uses the name **WinForms_GettingStarted**, like the [repo's directory name](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) for the completed project.
+1. In the **Project name** text box, enter a project name.  This tutorial article uses the name **WinForms_GettingStarted**, like the [repo's directory name](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) for the completed project.
 
 1. In the **Location** text box, enter a path, such as "C:\Users\username\Documents\MyWebView2Projects\".
 
