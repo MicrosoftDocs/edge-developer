@@ -68,7 +68,7 @@ To make sure that all required content files are present in the package, and to 
 <!-- ====================================================================== -->
 ## Step 5: Run Windows App Certification Kit (WACK)
 
-<!-- * [Windows App Certification Kit](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/windows-app-certification-kit) -->
+<!-- * [Windows App Certification Kit](https://docs.microsoft.com/windows/uwp/debug-test-perf/windows-app-certification-kit) -->
 
 Windows App Certification Kit (WACK) is an app that's a certification tool.  This tool evaluates your host app against the Microsoft Store's requirements.
 
@@ -134,5 +134,5 @@ If your app failed the **Supported API** test, update the Windows SDK to version
 
 * [Get registered](https://developer.microsoft.com/microsoft-store/register/) - Creating a developer account for the Microsoft Store.
 * [Publish Windows apps and games](/windows/uwp/publish/), at Windows App Development documentation > UWP.  General background information about publishing to the Windows Store.
-* [Windows App Certification Kit](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/windows-app-certification-kit)
+* [Windows App Certification Kit](/windows/uwp/debug-test-perf/windows-app-certification-kit)
 * [Partner Center (partner.microsoft.com)](https://partner.microsoft.com).
