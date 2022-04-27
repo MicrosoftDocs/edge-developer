@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 2/28/2022
+ms.date: 04/27/2022
 ---
 # Call native-side code from web-side code
 
@@ -24,11 +24,11 @@ Scenarios that may benefit from using host objects in script:
 
   * JavaScript is sandboxed, limiting its ability on the native side. For example, if you need to access a file on the native side, you must use the native file system. If you have a native object exposed to JavaScript via `AddHostObjectToScript`, you can use it to manipulate files on the native file system.
 
-This article uses the [WebView2 Win32 sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) to demonstrate some practical applications of `AddHostObjectToScript`. For more information about how to embed web content into native applications, see [Embed web content into native applications](/microsoft-edge/webview2/how-to/communicate-btwn-web-native).
+This article uses the [WebView2 Win32 sample app](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) to demonstrate some practical applications of `AddHostObjectToScript`. For more information about how to embed web content into native applications, see [Embed web content into native applications](/microsoft-edge/webview2/how-to/communicate-btwn-web-native).
 
 **Preview of the major steps in this article:**
 
-1. Install Visual Studio, install git, clone the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample), and open the solution.
+1. Install Visual Studio, install git, clone the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample), and open the solution.
 
 1. Define the host object and implement `IDispatch` so that WebView2 can project/add it to the web side.
 

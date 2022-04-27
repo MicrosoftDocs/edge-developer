@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 08/03/2021
+ms.date: 04/27/2022
 ---
 # Test upcoming APIs and features
 <!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
@@ -80,7 +80,7 @@ If you want to make your application use a specific runtime by calling a functio
 
 ### Win32\/C++
 
-We'll use the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample) to demonstrate this procedure.
+We'll use the [WebView2APISample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2APISample) to demonstrate this procedure.
 
 1. On your development machine, find the path containing the Microsoft Edge preview channel.  For example:
 
