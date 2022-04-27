@@ -54,7 +54,7 @@ The Microsoft Store requires submitting a packaged app.  Package your app as fol
 
 1. In the dialog, note where the package bundle was placed.  This information is also shown in the build window.
 
-1. Click the **Cancel** button.
+1. Click the **Close** button.
  
 
 <!-- ====================================================================== -->
