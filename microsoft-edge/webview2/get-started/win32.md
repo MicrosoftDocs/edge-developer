@@ -45,7 +45,7 @@ Then continue below.
 
 The code that you add in this tutorial's steps, has already been added to the sample repo, for you.  An optional step below allows you to delete the WebView2 code from `HelloWebView.cpp`, so that you can add it yourself, if you want.
 
-To keep this tutorial focused on WebView-specific coding, we start from an existing Microsoft Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  We'll add WebView2 features - actually, the features have already been added, but follow along in the setup and explanation steps.
+To keep this tutorial focused on WebView2-specific coding, we start from an existing Microsoft Visual Studio project (`WebView2GettingStarted`) that's stored in the `WebView2Samples` GitHub repo.  We'll add WebView2 features - actually, the features have already been added, but follow along in the setup and explanation steps.
 
 The existing Visual Studio project we'll start with is part of the sample code from a standard C++ Win32 desktop application.  For information about the underlying, standard Win32 app sample, in a new window or tab, see [Walkthrough: Create a traditional Windows Desktop application (C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp).
 
@@ -193,8 +193,6 @@ Continue with the steps below.
 -->
 <!-- ====================================================================== -->
 ## Step 8 - Install the WebView2 SDK
-
-<!-- todo: is WebView SDK already installed into the project at the repo? -->
 
 Next, you'll install the WebView2 SDK.  The WebView2 SDK includes the WebView2 control, which is powered by Microsoft Edge, and enables you to embed web technologies (HTML, CSS, and JavaScript) in your native applications.
 
@@ -437,7 +435,7 @@ Upon completion of the `CreateCoreWebView2Environment` method, you'll:
 
 *  Run the `ICoreWebView2Environment::CreateCoreWebView2Controller` method inside the `ICoreWebView2CreateCoreWebView2EnvironmentCompletedHandler` callback.
 
-*  Run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView.
+*  Run the `ICoreWebView2Controller::get_CoreWebView2` method to get the associated WebView2 control.
 
 Now to do the above, in the callback, you'll:
 *  Set a few more settings.
@@ -628,7 +626,7 @@ The host and the web content can also communicate with each other through the `p
 
 Similarly, the host can message the web content through the `ICoreWebView2::PostWebMessageAsString` or `ICoreWebView2::PostWebMessageAsJSON` method, and the message is caught by handlers that are added from the `window.chrome.webview.addEventListener` listener.  This communication mechanism allows the web content to use native capabilities by passing messages to ask the host to run native APIs.
 
-As an example to understand the mechanism, the following steps occur when you try to output the document URL in WebView:
+As an example to understand the mechanism, the following steps occur when you try to output the document URL in WebView2:
 
 1. The host registers a handler to return received message back to the web content.
 

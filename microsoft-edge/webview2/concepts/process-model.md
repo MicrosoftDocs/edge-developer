@@ -26,7 +26,7 @@ A _WebView2 process group_ is a collection of WebView2 Runtime processes.  A Web
 
 :::image type="content" source="../media/process-model-1.png" alt-text="Process 1." lightbox="../media/process-model-1.png":::
 
-The number and presence of processes in a WebView2 process group can change as a WebView2 application makes use of WebView2 features.  (However, there's only a single, specific browser process in a WebView2 process group.)  For example, creating a new WebView from the same `CoreWebView2Environment`, but with a different domain in the `Source` property, will usually start a new renderer process.
+The number and presence of processes in a WebView2 process group can change as a WebView2 application makes use of WebView2 features.  (However, there's only a single, specific browser process in a WebView2 process group.)  For example, creating a new WebView2 instance from the same `CoreWebView2Environment`, but with a different domain in the `Source` property, will usually start a new renderer process.
 
 The number of renderer processes can vary based on the following conditions:
 

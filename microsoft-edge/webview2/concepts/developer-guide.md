@@ -20,9 +20,6 @@ We generally recommend using the Evergreen WebView2 Runtime.  Fixed Version runt
 
 If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  See [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
 
-If you use the Evergreen runtime, before running your WebView2 app, test whether the Evergreen WebView2 Runtime is installed on the client.  see [Deploying the Evergreen WebView2 Runtime](../concepts/distribution.md#deploying-the-evergreen-webview2-runtime).
-
-
 <!-- ====================================================================== -->
 ## Run compatibility tests regularly when using the Evergreen Runtime
 
