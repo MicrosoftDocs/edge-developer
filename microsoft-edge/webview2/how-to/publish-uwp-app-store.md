@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/18/2022
+ms.date: 04/27/2022
 ---
 # Publish a UWP WebView2 app to the Microsoft Store
 
@@ -24,21 +24,21 @@ Then continue with the steps below.
 
 
 <!-- ====================================================================== -->
-## Step 2: Test the non-packaged app
+## Step 2: Test the non-packaged host app
 
-<!-- Why test these particular aspects?  What other aspects?  What's the focus here? -->
+Test for these common basic issues before submitting your app to the Microsoft Store.  This will help prevent Store certification failures, which would delay your app from becoming available.
 
-*  Make sure the app runs correctly on startup, and works correctly during shutdown sleep.
+1. Make sure the app runs correctly on startup.
+
+1. Make sure the app works correctly during shutdown sleep.
 
 
 <!-- ====================================================================== -->
-## Step 3: Package the app
+## Step 3: Package the host app
 
-<!-- Why do we need to package the app? -->
+The Microsoft Store requires submitting a packaged app.  Package your app as follows:
 
-Package your app:
-
-1. Update the `package.appxmanifest` with all needed content, such as Visual Assets, Packaging name, and Application information.  If you don't do this, the Microsoft Store validation step will fail.  For reference, see [Validate your app package](/windows/msix/package/packaging-uwp-apps#validate-your-app-package), in _Package a desktop or UWP app in Visual Studio_.  Then continue with the steps below.
+1. Update the `package.appxmanifest` with all needed content, such as Visual Assets, Packaging name, and Application information.  If you don't do this, the Microsoft Store validation step will fail.  Then continue with the steps below.
 
 1. At [Partner Center](https://partner.microsoft.com), select **Project** > **Publish** and then reserve an application name.
 
@@ -56,9 +56,7 @@ Package your app:
 <!-- ====================================================================== -->
 ## Step 4: Test the package
 
-<!-- Why do we need to test the package/ packaged app? -->
-
-Test your packaged app:
+To make sure that all required content files are present in the package, and to make sure the files have correct permissions, test your packaged app, as follows:
 
 1. Note where the bundle was placed (also in the build window) and **Cancel** this dialog box.
 
@@ -69,6 +67,10 @@ Test your packaged app:
 
 <!-- ====================================================================== -->
 ## Step 5: Run Windows App Certification Kit (WACK)
+
+<!-- * [Windows App Certification Kit](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/windows-app-certification-kit) -->
+
+Windows App Certification Kit (WACK) is an app that's a certification tool.  This tool evaluates your host app against the Microsoft Store's requirements.
 
 Once you're satisfied that your packaged app works, run the Windows App Certification Kit (WACK):
 
@@ -107,17 +109,14 @@ If your app failed the **App Capabilities** tests, turn off any unneeded capabil
 
 #### General metadata correctness
 
-If your app failed the **General meta data correctness** tests with an error in `IPopup4`, update the **microsoft.UI.xaml** NuGet package to version **Microsoft.UI.Xaml.2.8.0-prerelease.220118001** or higher.  There was a bug in the manifests, prior to that version.
+If your app failed the **General metadata correctness** tests with an error in `IPopup4`, update the **microsoft.UI.xaml** NuGet package to version **Microsoft.UI.Xaml.2.8.0-prerelease.220118001** or higher.  There was a bug in the manifests, prior to that version.
 
 
 #### Supported API
 
-<!--
-which APIs/which SDK is being tested?
-This check tests whether the XYZ APIs that are used by your app are supported by ABC.
--->
+In this test, WACK checks the Windows APIs that your host app is calling, to make sure they're supported.
 
-If your app failed the **Supported API** test, update the <!--which SDK, XAML? WebView2?-->SDK to version 22000 <!--correct specific full number?--> or higher, to get the latest version of the allowed-APIs list.  There should be no blocking APIs for WebView2 in the current <!-- which SDK? -->SDK.
+If your app failed the **Supported API** test, update the Windows SDK to version 22000 or higher, to get the latest version of the allowed-APIs list.  There should be no blocking APIs for WebView2 in the current Windows SDK.
 
 
 <!-- ====================================================================== -->
@@ -135,5 +134,5 @@ If your app failed the **Supported API** test, update the <!--which SDK, XAML? W
 
 * [Get registered](https://developer.microsoft.com/microsoft-store/register/) - Creating a developer account for the Microsoft Store.
 * [Publish Windows apps and games](/windows/uwp/publish/), at Windows App Development documentation > UWP.  General background information about publishing to the Windows Store.
-* [Validate your app package](/windows/msix/package/packaging-uwp-apps#validate-your-app-package), in _Package a desktop or UWP app in Visual Studio_.
+* [Windows App Certification Kit](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/windows-app-certification-kit)
 * [Partner Center (partner.microsoft.com)](https://partner.microsoft.com).
