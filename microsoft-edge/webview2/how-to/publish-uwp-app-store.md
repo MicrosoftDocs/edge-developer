@@ -18,9 +18,9 @@ For general background information about publishing to the Windows Store, see [P
 <!-- ====================================================================== -->
 ## Step 1: Configure a Microsoft Store account in Visual Studio
 
-*  Make sure you have a Microsoft Store account configured in Microsoft Visual Studio.  See [Get registered](https://developer.microsoft.com/microsoft-store/register/), about developer accounts for the Microsoft Store.
+*  Make sure you have a Microsoft Store account configured in Microsoft Visual Studio.
 
-Then continue with the steps below.
+   If needed, see [Get registered](https://developer.microsoft.com/microsoft-store/register/), about developer accounts for the Microsoft Store.  Then continue with the steps below.
 
 
 <!-- ====================================================================== -->
@@ -48,17 +48,19 @@ The Microsoft Store requires submitting a packaged app.  Package your app as fol
 
    ![Package Selection](publish-uwp-app-store-images/package-selection.png)
 
-1. Once the app package has been created for your configurations, you'll be presented with a dialog of information and have the option to run Windows App Certification Kit (WACK):
+1. Once the app package has been created for your configurations, the **Create App Packages** window displays the **Finished creating package** dialog:
 
    ![Windows App Certification Kit](publish-uwp-app-store-images/win-app-cert-kit.png)
 
+1. In the dialog, note where the package bundle was placed.  This information is also shown in the build window.
+
+1. Click the **Cancel** button.
+ 
 
 <!-- ====================================================================== -->
 ## Step 4: Test the package
 
 To make sure that all required content files are present in the package, and to make sure the files have correct permissions, test your packaged app, as follows:
-
-1. Note where the bundle was placed (also in the build window) and **Cancel** this dialog box.
 
 1. Use the generated app package to install the app on your machine.  Look for any oddities regarding required packages and functionality.
 
@@ -80,9 +82,9 @@ Once you're satisfied that your packaged app works, run the Windows App Certific
 
 1. You must approve the User Access Control (UAC) dialog, for the Windows App Certification Kit (WACK) to run correctly.
 
-1. Select **All** for the test suite, and then click **Next**.  The validation will take a few minutes.
+1. Select **All** for the test suite, and then click **Next**.
 
-1. Once complete, the Windows App Certification Kit (WACK) will show a results page.  If the app failed, click the link to review the results.
+1. After a few minutes, the Windows App Certification Kit (WACK) shows a results page.  If the app failed, click the link to review the results.
 
 
 ### Resolving tests
