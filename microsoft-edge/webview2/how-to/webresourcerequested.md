@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/25/2022
+ms.date: 04/26/2022
 ---
 # Custom management of network requests
 <!--
@@ -19,56 +19,37 @@ ms.date: 04/25/2022
 <!-- ====================================================================== -->
 ## Introduction
 
-The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events. There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`. This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.  <!-- TODO clarify last sentence, which explains what this high-level API lets you do -->
+The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events.  There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`.
 
-Some common use cases include: 
-* Uploading local file content to your app to add support for offline functionality.
-* Blocking content in a webpage, like images.
-* Fine tune authentication to pages. 
+This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.
+<!-- TODO clarify sentence, which explains what this high-level API lets you do -->
 
-### How your host app, the WebView2 control, and the HTTP server interact
-
-The WebView2 control sits in between your host app and the HTTP server.  When your host app navigates to a URI, the WebView2 control sends a request to the HTTP server.  The HTTP server then sends a response to the WebView2 control.
-
-### Sequence for modifying request and responses
-
-<!-- wiki page that points to Visio source file: Documentation > "Notes about specific image files" -->
-![Diagram of sequence for modifying requests and responses.](webresourcerequested-images/modifying-requests-responses.png)
-
-1. The host app makes a request for a resource that's needed for the webpage.
-1. The WebView2 control creates a request, and fires a `WebResourceRequested` event to the host app.
-1. The host app can modify headers at this point.  The host app can also defer the `WebResourceRequested` event, which means that the host app asks for more time to decide what to do.
-1. The WebView2 network stack can add more headers (for example, can add cookies and add authorization headers).
-1. The WebView2 control sends the request to the HTTP server.
-1. The HTTP server sends the response to the WebView2 control.
-1. The WebView2 control fires the `WebResourceResponseReceived` event.
- 
-
-<!-- 
-The 3 actors are:
-the HTTP server
-the WebView2 control
-the host app
--->
-
-<!-- 
-the WebView2 control fires an event
-the WebView2 sends a request
-the HTTP server sends a response
--->
+Use this API and approach to:
+* Upload local file content to your app to add support for offline functionality.
+* Block content in a webpage, such as specific images.
+* Fine-tune authentication for specific pages.
 
 
-<!-- ====================================================================== -->
-## When to use other approaches
-<!-- ## When not to use custom management of network requests
-## When to use custom network requests vs. using other provided wrapper APIs. -->
+### When to use other approaches
 
-The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools that allow you to light up various scenarios. This is a low-level API that gives more control but requires more coding and is complicated to use. For some common scenarios we provide APIs catered towards those specific scenarios which are easier to use and we recommend you use those rather than the APIs discussed in this article.
+The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools that allow you to light up various scenarios. This is a low-level API that gives more control, but requires more coding and is complicated to use.  For some common scenarios, we provide APIs that are easier to use and are optimized for those specific scenarios, and we recommend you use those rather than the APIs discussed in this article.
 
 Instead of using WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
 * [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
 * [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39)
+
+
+### How your host app, the WebView2 control, and the HTTP server interact
+
+The WebView2 control sits in between your host app and the HTTP server.  When your host app navigates to a URI, the WebView2 control sends a request to the HTTP server.  The HTTP server then sends a response to the WebView2 control.
+
+<!-- lexicon for the 3 actors:
+the HTTP server
+the WebView2 control
+the host app
+-->
+
 
 <!-- ====================================================================== -->
 ## 1. Intercepting a request (to monitor or modify it)
@@ -99,11 +80,21 @@ A HTTP header provides important information and metadata about a request or res
 
 In a `WebResourceRequested` event, you can specify a filter for the requests that the app is interested in based on URL and resource type.  If the host app uses a filter, the filter must be added before a `WebResourceRequested` event is fired.
 
-For example, say a host app is trying to replace images, in which case the host app is only interested in web resource requested events for images. The app would only get events for images by specifing the filter for images. Another example is if the host app is only interested in all requests that are under a domain name like https://example.com, then the app can use the URL filter to get events associated with that site. 
+For example, say a host app is trying to replace images, in which case the host app is only interested in web resource requested events for images. The app would only get events for images by specifying the filter for images. Another example is if the host app is only interested in all requests that are under a domain name like https://example.com, then the app can use the URL filter to get events associated with that site. 
 
-See [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1185.39).
+# [.NET](#tab/dotnet)
+
+* [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1185.39)
+
+# [Win32](#tab/win32)
+
+* [AddWebResourceRequestedFilter method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39#addwebresourcerequestedfilter)
+
+---
+
 
 For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequestedFilter Method > Remarks](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1185.39#remarks)
+
 
 ### Why would you want to intercept requests that are sent from WebView2?  
 
@@ -112,39 +103,36 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 *  You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
 *  You want to upload local file content to the request server via a POST request <!-- DEV TODO: validate this -->
 
+
+### Sequence for modifying requests
+
+<!-- wiki page that points to the Visio source file: Documentation > "Notes about specific image files" -->
+![Diagram of sequence for modifying requests.](webresourcerequested-images/sequence-for-modifying-requests.png)
+
+1. The host app sets up a `WebResourceRequested` filter.
+1. The host app defines the event handlers for `WebResourceRequested` and `WebResourceResponseReceived`.
+1. The host app navigates the WebView2 control to a webpage.
+1. The WebView2 control creates a request for a resource that's needed for the webpage.
+1. The WebView2 control fires a `WebResourceRequested` event to the host app.
+1. The host app listens for and handles the `WebResourceRequested` event.
+1. The host app can modify headers at this point.  The host app can also defer the `WebResourceRequested` event, which means that the host app asks for more time to decide what to do.
+1. The WebView2 network stack can add more headers (for example, can add cookies and authorization headers).
+1. The WebView2 control sends the request to the HTTP server.
+1. The HTTP server sends the response to the WebView2 control.
+1. The WebView2 control fires the `WebResourceResponseReceived` event.
+1. The host app listens for the `WebResourceResponseReceived` event and handles it.  <!-- todo: arrow: "The WebView2 control creates a request for a resource that's needed for the webpage." -->
+
+
 <!-- ====================================================================== -->
 ### Example: Intercepting a request (to monitor or modify it)
 <!-- ## Example: Header modification when making a request -->
 
-<!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
-In the following example, the host app _intercepts_ (receives) the document request that is sent from the WebView2 control to the http://www.example.com HTTP server, adds a custom header value and sends the request. Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
+<!-- this example doesn't exist in the sample repo -->
 
-```cpp
-m_webView->AddWebResourceRequestedFilter(
-      L"http://www.example.com/*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_ALL);
-m_webView->add_WebResourceRequested(
-      Callback<ICoreWebView2WebResourceRequestedEventHandler>(
-         [this](
-            ICoreWebView2* sender,
-            ICoreWebView2WebResourceRequestedEventArgs* args) {
-            COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
-            CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
-            // Ensure that the type is image
-            if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_DOCUMENT)
-            {
-               return S_OK;
-            }
-            // Override the response with an empty one to block the image.
-            // If put_Response is not called, the request will continue as normal.
-            wil::com_ptr<ICoreWebView2WebResourceRequest> request;
-            CHECK_FAILURE(args->get_Request(&request));
-            request->get_Headers(&headers);
-            headers->SetHeaderValue(L"Custom", L"Value");
-            return S_OK;
-         })
-         .Get(),
-      &m_webResourceRequestedToken);
-```  
+<!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
+In the following example, the host app _intercepts_ (receives) the document request that is sent from the WebView2 control to the http://www.example.com HTTP server, adds a custom header value and sends the request.  
+
+# [.NET](#tab/dotnet)
 
 ```csharp
 webView.CoreWebView2.AddWebResourceRequestedFilter(
@@ -161,127 +149,36 @@ webView.CoreWebView.WebResourceRequested += delegate (
 }
 ```
 
+# [Win32](#tab/win32)
+
+```cpp
+// Add a filter to select all resource types under http://example.com
+m_webView->AddWebResourceRequestedFilter(
+      L"http://www.example.com/*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_ALL);
+m_webView->add_WebResourceRequested(
+      Callback<ICoreWebView2WebResourceRequestedEventHandler>(
+         [this](
+            ICoreWebView2* sender,
+            ICoreWebView2WebResourceRequestedEventArgs* args) {
+            COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
+            CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
+            // Ensure that the type is document
+            if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_DOCUMENT)
+            {
+               return S_OK;
+            }
+            wil::com_ptr<ICoreWebView2WebResourceRequest> request;
+            CHECK_FAILURE(args->get_Request(&request));
+            request->get_Headers(&headers);
+            headers->SetHeaderValue(L"Custom", L"Value"); // DEV TODO: define 'headers' & compile code
+            return S_OK;
+         })
+         .Get(),
+      &m_webResourceRequestedToken);
+```  
+
 ---
 
-<!-- ====================================================================== -->
-### Example: Serve a web resource request locally
-<!-- 
-TODO: clarify heading
-## Example: Replace a requested file with a local file
-## Example: Serve a web resource request locally (offline)
-## Example: Provide a web resource request locally
-## Example: Replace a remote resource with local resource -->
-
-Your host app can intercept requests for images sent from the WebView2 control to the HTTP server and replace the images with local image files instead. 
- 
-This code sample is from SettingsComponent.cpp in the [WebView2APISample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample)
-
-```cpp
-// Turn on or off image replacing by adding or removing a WebResourceRequested handler
-// which selectively intercepts requests for images. It will replace all images with another
-// image.
-void SettingsComponent::SetReplaceImages(bool replaceImages)
-{
-    if (replaceImages != m_replaceImages)
-    {
-        m_replaceImages = replaceImages;
-        if (m_replaceImages)
-        {
-            m_webView->AddWebResourceRequestedFilter(
-                L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
-            CHECK_FAILURE(m_webView->add_WebResourceRequested(
-                Callback<ICoreWebView2WebResourceRequestedEventHandler>(
-                    [this](
-                        ICoreWebView2* sender,
-                        ICoreWebView2WebResourceRequestedEventArgs* args) {
-                        COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
-                        CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
-                        // Ensure that the type is image
-                        if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
-                        {
-                            return E_INVALIDARG;
-                        }
-                        // Override the response with an another image.
-                        // If put_Response is not called, the request will continue as normal.
-                        wil::com_ptr<IStream> stream;
-                        CHECK_FAILURE(SHCreateStreamOnFileEx(
-                            L"assets/EdgeWebView2-80.jpg", STGM_READ, FILE_ATTRIBUTE_NORMAL,
-                            FALSE, nullptr, &stream));
-                        wil::com_ptr<ICoreWebView2WebResourceResponse> response;
-                        wil::com_ptr<ICoreWebView2Environment> environment;
-                        wil::com_ptr<ICoreWebView2_2> webview2;
-                        CHECK_FAILURE(m_webView->QueryInterface(IID_PPV_ARGS(&webview2)));
-                        CHECK_FAILURE(webview2->get_Environment(&environment));
-                        CHECK_FAILURE(environment->CreateWebResourceResponse(
-                            stream.get(), 200, L"OK", L"Content-Type: image/jpeg", &response));
-                        CHECK_FAILURE(args->put_Response(response.get()));
-                        return S_OK;
-                    })
-                    .Get(),
-                &m_webResourceRequestedTokenForImageReplacing));
-        }
-        else
-        {
-            CHECK_FAILURE(m_webView->remove_WebResourceRequested(
-                m_webResourceRequestedTokenForImageReplacing));
-        }
-    }
-}
-```
-
-<!-- ====================================================================== -->
-### Example: Block images in a webpage 
-
-SettingsComponent.cpp in the [WebView2APISample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2APISample)
-
-```cpp
-// Turn on or off image blocking by adding or removing a WebResourceRequested handler
-// which selectively intercepts requests for images.
-void SettingsComponent::SetBlockImages(bool blockImages)
-{
-    if (blockImages != m_blockImages)
-    {
-        m_blockImages = blockImages;
-        if (m_blockImages)
-        {
-            m_webView->AddWebResourceRequestedFilter(
-                L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
-            CHECK_FAILURE(m_webView->add_WebResourceRequested(
-                Callback<ICoreWebView2WebResourceRequestedEventHandler>(
-                    [this](
-                        ICoreWebView2* sender,
-                        ICoreWebView2WebResourceRequestedEventArgs* args) {
-                        COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
-                        CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
-                        // Ensure that the type is image
-                        if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE)
-                        {
-                            return E_INVALIDARG;
-                        }
-                        // Override the response with an empty one to block the image.
-                        // If put_Response is not called, the request will continue as normal.
-                        wil::com_ptr<ICoreWebView2WebResourceResponse> response;
-                        wil::com_ptr<ICoreWebView2Environment> environment;
-                        wil::com_ptr<ICoreWebView2_2> webview2;
-                        CHECK_FAILURE(m_webView->QueryInterface(IID_PPV_ARGS(&webview2)));
-                        CHECK_FAILURE(webview2->get_Environment(&environment));
-                        CHECK_FAILURE(environment->CreateWebResourceResponse(
-                            nullptr, 403 /*NoContent*/, L"Blocked", L"Content-Type: image/jpeg",
-                            &response));
-                        CHECK_FAILURE(args->put_Response(response.get()));
-                        return S_OK;
-                    })
-                    .Get(),
-                &m_webResourceRequestedTokenForImageBlocking));
-        }
-        else
-        {
-            CHECK_FAILURE(m_webView->remove_WebResourceRequested(
-                m_webResourceRequestedTokenForImageBlocking));
-        }
-    }
-}
-```
 
 <!-- ====================================================================== -->
 ## 2. Overriding a response (to proactively replace it)
@@ -291,12 +188,28 @@ void SettingsComponent::SetBlockImages(bool blockImages)
 By default the HTTP server sends responses to the WebView2 control. Your host app can _override_ (ignore) a response that's sent from the HTTP server to the WebView2 control, and send a custom response to the WebView2 control instead of the original response.
 <!-- DEV TODO: identify the technical difference between overriding a request vs. a response; when to override a request vs. response -->
 
-<!-- What is this example showing? -->
-### Example: 
+
+### Sequence for overriding responses
+
+<!-- wiki page that points to the Visio source file: Documentation > "Notes about specific image files" -->
+![Diagram of sequence for overriding responses.](webresourcerequested-images/sequence-for-overriding-responses.png)
+
+1. The host app sets up a `WebResourceRequested` filter.
+1. The host app defines the event handlers for `WebResourceRequested` and `WebResourceResponseReceived`.
+1. The host app navigates the WebView2 control to a webpage.
+1. The WebView2 control creates a request for a resource that's needed for the webpage.
+1. The WebView2 control fires a `WebResourceRequested` event to the host app.
+1. The host app listens for and handles the `WebResourceRequested` event.
+1. The host app sets a response to the `WebResourceRequested` event handler.  The host app can also defer the `WebResourceRequested` event, which means that the host app asks for more time to decide what to do.
+1. The WebView2 control then renders the response as the resource.
+
+
+### Example: Overriding a response (to proactively replace it)
 
 # [.NET](#tab/dotnet)
 
 ```csharp
+// DEV TODO: add comments
 webView.CoreWebView2.AddWebResourceRequestedFilter(
       "http://www.example.com/*", CoreWebView2WebResourceContext.Image);
 webView.CoreWebView2.WebResourceRequested += delegate (
@@ -308,10 +221,10 @@ webView.CoreWebView2.WebResourceRequested += delegate (
 };
 ```
 
-
 # [Win32](#tab/win32)
 
 ```cpp
+// DEV TODO: add comments
 m_webView->AddWebResourceRequestedFilter(
                 L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
 m_webView->add_WebResourceRequested(
@@ -366,7 +279,7 @@ The `NavigateWithWebResourceRequest` method, together with the `WebResourceReque
 <!-- ====================================================================== -->
 ### Example: Constructing a custom request and navigating using that request
 
-This is an existing example in the Win32 sample app.
+<!-- This is an existing example in the Win32 sample app. -->
 
 <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 
@@ -379,6 +292,7 @@ from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/Navigat
 # [.NET](#tab/dotnet)
 
 ```csharp
+// DEV TODO comments
 UTF8Encoding utfEncoding = new UTF8Encoding();
 byte[] postData = utfEncoding.GetBytes("input=Hello");
 
@@ -424,37 +338,16 @@ CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()))
 
 
 <!-- ====================================================================== -->
-## Recommendations and best practices
-<!-- TODO: Do we need this section? -->
+## 4. Monitoring the requests and responses via the WebResourceResponseReceived event
 
-### The recommended way of overriding for request vs. response
+You can monitor the requests and responses via the `WebResourceResponseReceived` event, to read any header value.
 
-<!-- applies to both the Request & Response h2 scenarios above -->
+### Example: Monitoring the requests and responses via the WebResourceResponseReceived event
 
-<!--DEV TODO: clarify what we are trying to call out here -->
-
-* A simple scenario that's supported is reading from a local file.  Your host app can modify the resource URI to instead be a file URI that points to a local resource.
-
-* Dynamic content (proactively ignoring and overriding the response).  For example, suppose a resource needs user input; the request gets constructed as soon as it gets user input.
-
-* Simple cases: Simple cases of reading form local file, can modify request url to be a file URL (pointing to this resource). Entails offline file serving from file -- use the request. change the URL to request.
-
-* Complicated cases: Dynamic content you override response.  Resource needs user input, request gets constructed once it gets user input.
-
-
-<!-- ====================================================================== -->
-## Example of WebResourceResponseReceived event: Reading the authorization header value
-
-<!-- TODO: should this section/listing be moved into one of the four "Example:" sections above? (as we did with the Request section/example listing) -->
-
-<!-- we have a framework set up that if you update code in Win32 sample in repo, the API Ref doc for Win32/C++ (but not for .NET/C#? at least not for the WPF app - TODO: confirm latter) -->
+This example shows how to read the authorization header value by monitoring the requests and responses via the `WebResourceResponseReceived` event.
 
 The following code demonstrates how the `WebResourceResponseReceived` event can be used.
-
 <!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md#examples -->
-
-
-<!-- Note that the following code is less useful, because ___.   -->
 
 
 <!-- -------------------------------------------------- -->
