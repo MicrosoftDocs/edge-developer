@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/26/2022
+ms.date: 04/27/2022
 ---
 # Navigate webpage layers, z-index, and DOM using the 3D View tool
 
@@ -25,17 +25,32 @@ On the right, the 3D canvas represents the webpage according to which tab and op
 <!-- ====================================================================== -->
 ## Zoom, pan, and rotate the 3D canvas
 
+
+### Zoom the page in or out
+
 To zoom the webpage in or out on the 3D canvas, use the mouse scroll wheel, or use the slider in the lower right.
 
-Use the mouse to pan (shift) the webpage on the 3D canvas up, down, left, and right.
 
-Use the mouse or keyboard to rotate the webpage on the 3D canvas around the horizontal or vertical axis.
+<!-- instance 1 of this section, keep synd'c -->
+### Pan view (button)
 
-To only show part of the page when the **Composited Layers** tab is selected:
-*  In the expander tree in the tab, select a DOM element.
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon.](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
 
-To only show part of the page when the **Z-layer** or **DOM** tab is elected:
-*  Select an element in the **Elements** tool, and then click the **Retake snapshot** button.
+<!-- no right-click
+To pan around the DOM, right-click and drag in the direction you want the DOM to move.
+-->
+
+
+<!-- instance 1 of this section, keep synd'c -->
+### Rotate view (button)
+
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon.](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
+
+To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
+*  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
+*  To rotate the page vertically, press the `up arrow` and `down arrow` keys.
+
+The keys rotate the page, regardless of whether the **Pan view** or **Rotate view** button is selected in the toolbar.
 
 For more information, see these other sections in this page:
 *  [Toolbar above the 3D canvas](#toolbar-above-the-3d-canvas)
@@ -45,7 +60,9 @@ For more information, see these other sections in this page:
 <!-- ====================================================================== -->
 ## The Composited Layers tab
 
-In the Composited Layers view, the 3D canvas displays the rendered webpage, including colors and images.  In the tab's pane on the left, you can select each layer and view details about the layer.
+In the Composited Layers view, the 3D canvas displays the rendered webpage, including colors and images.
+
+On the 3D canvas on the right, select an element of the webpage.  In the **Composited Layers** tab, the layers tree expands automatically, and the **Details** tab below the layers tree shows information about the selected layer.
 
 ![The Composited Layers tab.](index-images/composited-layers-tab.png)
 
@@ -82,15 +99,15 @@ Reasons for the layer-compositing of the selected DOM element, if any compositin
 
 The memory consumed for the selected DOM element and its children.  For example: "116 MB".
 
-#### Paint count
+<!-- #### Paint count -->
 
 <!-- need desc -->
 
-#### Slow scroll regions
+<!-- #### Slow scroll regions -->
 
 <!-- need desc -->
 
-#### Sticky position constraint
+<!-- #### Sticky position constraint -->
 
 <!-- need desc -->
 
@@ -124,8 +141,7 @@ In the **Z-index** tab, you can choose from the following color schemes to visua
 
 *  **Use background color** radio button - The 3D canvas shows elements rendered using the background color that's defined for each element.
 
-The z-index labels add visual information on the 3D canvas, so per user feedback, there are fewer color options in the **Z-index** tab than in the **DOM** tab.
-These radio buttons allow you to toggle through the options and pick the color type.  The color type is either most appropriate for your project or one that you like the most.
+These radio buttons allow you to toggle through the options and pick the color type.  The color type is either most appropriate for your project or one that you like the most.  The z-index labels add visual information on the 3D canvas, so per user feedback, there are fewer color options in the **Z-index** tab than in the **DOM** tab.
 
 
 <!-- ====================================================================== -->
@@ -177,18 +193,20 @@ When the **Composited Layers** tab is selected, this button is omitted, because 
 Click the **Reset view** button (![The 'Reset view' icon.](index-images/reset-view-icon.png)) to reset the panning and rotation of the page.
 
 
+<!-- instance 2 of this section, keep synd'c -->
 ### Pan view (button)
 
-To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon.](index-images/pan-view-icon.png)) button and then drag in the desired direction with your mouse.
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon.](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
 
 <!-- no right-click
 To pan around the DOM, right-click and drag in the direction you want the DOM to move.
 -->
 
 
+<!-- instance 2 of this section, keep synd'c -->
 ### Rotate view (button)
 
-To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon.](index-images/rotate-view-icon.png)) button and then drag in the desired direction with your mouse.
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon.](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
 To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
 *  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
@@ -201,9 +219,9 @@ The keys rotate the page, regardless of whether the **Pan view** or **Rotate vie
 
 Instead of showing all the page's DOM elements in the 3D canvas, you can focus on just displaying a portion of the DOM.
 
-First, select an element in the **Elements** tool.  Then, click the **Isolate selected element** button.  The 3D canvas displays the selected element and the element's parents or children, without displaying the rest of the page elements.
+Select an element of the webpage in the 3D canvas, and then click the **Isolate selected element** button.  The 3D canvas displays the selected element and the element's parents or children, without displaying the rest of the page elements.
 
-Use this button and these checkboxes to display the element that you selected on the 3D canvas, while reducing the clutter that complex web pages can create in the 3D canvas.
+Use this button to display the element that you selected on the 3D canvas, while reducing the clutter that complex web pages can create in the 3D canvas.
 
 
 #### Include parents (checkbox)
