@@ -50,6 +50,8 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
 
 1. Set a breakpoint at line **18** as shown in the following image.
 
+    ![Memory Inspector set breakpoint in JavaScript file](../media/memory-inspector-set-breakpoint-old.png)
+
     ![Memory Inspector set breakpoint in JavaScript file](../media/memory-inspector-set-breakpoint.png)
 
 1. Refresh the webpage. It fails to display because the JavaScript pauses at the breakpoint.
@@ -62,9 +64,13 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
  
     * From the context menu. Right click on the `buffer` property and select **Reveal in Memory Inspector panel**.
 
+    ![Open Memory Inspector from the buffer property line context menu](../media/memory-inspector-open-from-buffer-old.png)
+
     ![Open Memory Inspector from the buffer property line context menu](../media/memory-inspector-open-from-buffer.png)
 
     The JavaScript ArrayBuffer opens in Memory Inspector.
+
+    ![ArrayBuffer open in the Memory Inspector panel](../media/memory-inspector-panel-old.png)
 
     ![ArrayBuffer open in the Memory Inspector panel](../media/memory-inspector-panel.png)
 
@@ -91,37 +97,37 @@ The Memory Inspector panel includes three types of content:
 
 ![Memory Inspector panel Navigation bar](../media/memory-inspector-panel-navigation-bar.png)
  
-* The address input shows the current byte address in hex format. You can change the value to jump to a new location in the memory buffer. Click in the text box and change the value to `0x00000008`. The Memory buffer immediately jumps to that byte address.
+The **Enter address** text box shows the current byte address in hex format. You can change the value to jump to a new location in the memory buffer. Click in the text box and change the value to `0x00000008`. The Memory buffer immediately jumps to that byte address.
 
-* Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate **Previous page** (**<**) and **Next page** (**>**), respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
+Memory buffers may be longer than one page. Use the left and right arrow buttons to navigate **Previous page** (**<**) and **Next page** (**>**), respectively. If there is only one page of memory buffer data, the arrows take you to the beginning and ending of the page.
 
-* Use the far-left history arrows to **Go back in address history** (![Go back in address history](../media/memory-inspector-go-back-address-history.png)) and **Go forward in address history** (![Go forward in address history](../media/memory-inspector-go-forward-address-history.png)).
+Use the far-left history arrows to **Go back in address history** (![Go back in address history](../media/memory-inspector-go-back-address-history.png)) and **Go forward in address history** (![Go forward in address history](../media/memory-inspector-go-forward-address-history.png)).
 
-* If the Memory buffer does not automatically update when stepping through values, click **Refresh** (![Memory buffer refresh](../media/memory-inspector-refresh.png)).
+If the Memory buffer does not automatically update when stepping through values, click **Refresh** (![Memory buffer refresh](../media/memory-inspector-refresh.png)).
 
 ### Memory buffer
 
 ![Memory Inspector panel Memory buffer](../media/memory-inspector-panel-memory-buffer.png)
  
-* Reading from the left side of the panel, the address is displayed in hex format.
+Reading from the left side of the panel, the **address** is displayed in hex format. The currently selected address is bold.
 
-* The memory is also shown in hex format, each byte separated by a space. The currently selected byte is highlighted. You can click on any byte or navigate using the arrow keys (left, right, up, and down).
+The **memory** is also shown in hex format, each byte separated by a space. The currently selected byte is highlighted. You can click on any byte or navigate using the arrow keys (left, right, up, and down).
 
-* An ASCII representation of the memory is shown on the right side of the panel. The highlighted character corresponds to the selected byte. You can click on any character or navigate using the arrow keys (left, right, up, and down).
+The **ASCII representation** of the memory is shown on the right side of the panel. The highlighted character corresponds to the selected byte. You can click on any character or navigate using the arrow keys (left, right, up, and down).
 
 ### Value inspector
 
 ![Memory Inspector panel Value inspector](../media/memory-inspector-panel-value-inspector.png)
  
-* Click the current Endian to switch between **Big endian** and **Little endian**.
+Click the current Endian type to switch between **Big endian** and **Little endian**.
 
-* The main area shows each value and interpretation based on the settings. By default, all are shown.
+The main area shows each value and interpretation based on the settings. By default, all values are shown.
 
-* Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle.png)) to select which value types to see by default in the inspector.
+Click **Toggle value type settings** (![Toggle value type settings](../media/memory-inspector-value-type-settings-toggle.png)) to select which value types to see in the inspector. This becomes the new default value type setting.
 
-    ![Value type settings](../media/memory-inspector-panel-value-type-settings.png)
+![Value type settings](../media/memory-inspector-panel-value-type-settings.png)
 
-* You can change the encoding view using the drop-down list. For integers you can choose from decimal `dec`, hexadecimal `hex`, and octal `oct`. For floats you can choose between decimal notation `dec` and scientific notation `sci`.
+You can change the encoding view using the drop-down list. For integers you can choose from decimal `dec`, hexadecimal `hex`, and octal `oct`. For floats you can choose between decimal notation `dec` and scientific notation `sci`.
 
 
 <!-- ====================================================================== -->
