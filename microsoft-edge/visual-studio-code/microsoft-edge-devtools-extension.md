@@ -223,7 +223,7 @@ All changes that are saved in this folder now trigger a browser refresh.
 
 The Styles tool in Microsoft Edge DevTools is excellent for debugging and tweaking CSS property styles.  One problem is that although these changes show up live in the browser, they aren't reflected in your source files.  This means that at the end of your CSS debugging session, you need to copy and paste what you changed back into your source files.
 
-CSS Mirror Editing is an feature of the Microsoft Edge DevTools extension that works around that problem.  When you turn on Mirror Editing, any change that's made in the Styles tool of DevTools also changes the file that's in your workspace.
+CSS Mirror Editing is a feature of the Microsoft Edge DevTools extension that works around that problem.  When you turn on Mirror Editing, any change made in the Styles tool of DevTools also changes the file in your workspace.
 
 In the following example, we have `index.html` currently open in Visual Studio Code, and the Microsoft Edge DevTools extension is open.  When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to `column`, we not only see the change in the browser and in DevTools, but Visual Studio Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code:
 
@@ -235,7 +235,7 @@ Changing the CSS setting created a new line of code in the correct CSS source fi
 
 You can edit any selector or create new ones in the Styles tool and all changes will get mirrored in the right CSS source file. The extension only changes the file, it doesn't automatically save the changes back to your hard drive. This is a security measure to make sure you don't accidentally overwrite any of your code.
 
-You can enable and disable CSS Mirror Editing by checking and unchecking the box in the `Styles` panel of the `Elements` tool, or by using the Command Menu and looking for `mirror`:
+You can enable and disable CSS Mirror Editing by checking and unchecking the box in the **Styles** panel of the **Elements** tool, or by using the Command Menu and searching for `mirror`:
 
 ![You can check or uncheck a box in the Styles panel of the Elements tool to enable or disable CSS mirroring](media/css-mirror-editing-checkbox.msft.png)
 
