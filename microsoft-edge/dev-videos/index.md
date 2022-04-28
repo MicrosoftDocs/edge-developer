@@ -9,13 +9,13 @@ ms.date: 04/20/2022
 ---
 # Videos about web development with Microsoft Edge
 
-Discover, and learn about new Microsoft Edge web development technologies and products such as DevTools, web platform APIs and features, Progressive Web Apps, and WebView2.
+Discover and learn about new Microsoft Edge web development technologies and products including DevTools, web platform APIs and features, Progressive Web Apps, and WebView2.
 
-This page contains short and entertaining videos, each focused on just one feature and including a demo.
+This page contains links to short videos, each focused on just one feature and including a demo.
 
-We publish new videos on a regular basis on the [Microsoft Edge YouTube channel](https://www.youtube.com/channel/UCIGx7oT8p6-jUpOfg98yelA), and they are also listed below.
+Microsoft publishes new videos on a regular basis on the [Microsoft Edge YouTube channel](https://www.youtube.com/channel/UCIGx7oT8p6-jUpOfg98yelA), and they are also listed below.
 
-Click on a thumbnail from the list below to watch the corresponding video on YouTube.
+Click on a thumbnail from the following list to watch the corresponding video on YouTube.
 
 <!--
 To add a new video:
@@ -34,12 +34,12 @@ _Published on 9 Dec 2021._
 
 [![Thumbnail image for the Detached Elements video](./images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
 
-We're very excited to announce the new Detached Elements tool in Microsoft Edge DevTools which will help you investigate and resolve DOM memory leaks.
+We're excited to announce the new Detached Elements tool in Microsoft Edge DevTools which helps you investigate and resolve DOM memory leaks.
 
-Memory leaks occur when the JavaScript code of an application retains more and more objects in memory that it doesn't need any longer instead of releasing them for the browser to garbage collect.
-We built this tool with our friends at Microsoft Teams, and it has already helped us find and fix memory leaks across many of our own websites and apps.
+Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage collect.
+We built this tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
-You can find [documentation about the tool here](../devtools-guide-chromium/memory-problems/dom-leaks.md), and read our [announcement blog post here](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/).
+For more information see [Debug DOM memory leaks with the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md), and read the corresponding blog post [Debug memory leaks with the Microsoft Edge Detached Elements tool](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/).
  
 ## The EyeDropper API
 
@@ -47,8 +47,8 @@ _Published on 22 Nov 2021._
 
 [![Thumbnail image for the Eye Dropper API video](./images/eye-dropper.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
 
-The Microsoft Edge team specified and implemented the new EyeDropper API in collaboration with the Chromium open-source project, and we'd love your [feedback about it here](https://github.com/WICG/eyedropper-api/issues).
+The Microsoft Edge team specified and implemented the new EyeDropper API in collaboration with the Chromium open-source project. Provide feedback at [Issues - WICG/eyedropper | github.com](https://github.com/WICG/eyedropper-api/issues).
 
-Many creative applications allow users to pick colors from parts of the app window or even from the entire screen, typically using an eyedropper metaphor. This new  API enables authors to use a browser-supplied eyedropper in the construction of custom color pickers on the web.
+Many creative applications enable users to pick colors from parts of an app window or even from the entire screen, typically using an eyedropper metaphor. The EyeDropper API enables authors to use a browser-supplied eyedropper in the construction of custom color pickers on the web.
 
-Learn more about it on [web.dev](https://web.dev/eyedropper/) and [MDN](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API).
+For more information see [Picking colors of any pixel on the screen with the EyeDropper API | web.dev](https://web.dev/eyedropper/) and [EyeDropper API - Web APIs | MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API).
