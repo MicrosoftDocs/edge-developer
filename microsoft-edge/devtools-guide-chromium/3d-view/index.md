@@ -75,7 +75,7 @@ On the 3D canvas on the right, select an element of the webpage.  In the **Compo
 
 ### Paints (checkbox)
 
-<!-- need desc -->
+Renders the content from the webpage (color or image file) onto the elements.
 
 
 <!-- ===== -->
@@ -171,7 +171,7 @@ In the **DOM** tab, You can choose from the following color schemes visualize th
 
 *  **Rainbow** radio button - The 3D canvas shows elements as purple, blue, green, yellow, orange, and red.
 
-*  **Use screen texture** radio button - displays the content from the webpage (color or image file) onto the elements.
+*  **Use screen texture** radio button - Renders the content from the webpage (color or image file) onto the elements.
 
 *  **Use background color** radio button - The 3D canvas shows elements rendered using the background color that's defined for each element.
 
