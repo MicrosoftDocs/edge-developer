@@ -122,16 +122,13 @@ First, add the WebView2 WinRT JS Projection tool:
 
    <!-- See [Get started with WebView2 in Win32 apps > Step 7 - Install the Windows Implementation Libraries (WIL)](../get-started/win32#step-7---install-the-windows-implementation-libraries-wil) -->
 
-   ![NuGet Package Manager, selecting WIL.](winrt-from-js-images/04.png)
+   ![NuGet Package Manager, selecting WV2.](winrt-from-js-images/06.png)
 
+   **Configure WV2 WinRT Tool**
 
-   ![Alt-text 05.](winrt-from-js-images/05.png)
+   Let's configure the WinRT tool now to take into account the WinRT class/object that you want to use.
 
-   ![Alt-text 06.](winrt-from-js-images/06.png)
-
-   <!-- resume here -->
-
-   Let's configure the WinRT tool now to take into account the WinRT class/object that you want to use. 
+1. To open up the configuration menu, right click the WV2WinRTAdapter project, and choose Properties. You will notice a window pop-up called WinRT Adapter property pages. Ensure you are in the drop down for Common Properties --> WebView2. 
 
    ![Alt-text 07.](winrt-from-js-images/07.png)
 
