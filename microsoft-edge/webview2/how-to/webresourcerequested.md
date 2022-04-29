@@ -26,10 +26,7 @@ writer: read through body content
 
 The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events.  There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`.
 
-This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.
-<!-- TODO clarify sentence, which explains what this high-level API lets you do -->
-
-Use this API and approach to:
+This article describes how you can modify network requests.  Use this API and approach to:
 * Upload local file content to your app to add support for offline functionality.
 * Block content in a webpage, such as specific images.
 * Fine-tune authentication for specific pages.
@@ -39,7 +36,7 @@ Use this API and approach to:
 
 The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools for various scenarios.  This is a low-level API that gives more control, but requires more coding and is complicated to use.  For some common scenarios, we provide APIs that are easier to use and are optimized for those specific scenarios, and we recommend you use those rather than the APIs discussed in this article.
 
-Instead of using the WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
+Instead of using the WebResourceRequested APIs, you can use these other approaches that are build on top of `WebResourceRequested` and related APIs:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
 * [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
 * [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
@@ -62,7 +59,9 @@ the host app
 <!-- ====================================================================== -->
 ## Intercepting a request (to monitor or modify it)
 
-Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
+Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). 
+
+Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control doesn't know about.
 
 The host app can change the properties of a request by using this API:
 
@@ -78,16 +77,15 @@ The host app can change the properties of a request by using this API:
 
 ### What you can do with headers
 
-<!-- DEV TODO: Should we explain how our developers might be able to change headers? -->
-A HTTP header provides important information and metadata about a request or response. Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (e.g. the Accept-* headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, etc.  A [response header](https://developer.mozilla.org/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
+A HTTP header provides important information and metadata about a request or response.  Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. 
+
+A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (such as the `Accept-*` headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, and so on.  A [response header](https://developer.mozilla.org/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
 
 ### Filtering the WebResourceRequested event based on URL and resource type
 
-<!-- TODO: find a good place for this section. -->
-
 In a `WebResourceRequested` event, you can specify a filter for the requests that the app is interested in based on URL and resource type.  If the host app uses a filter, the filter must be added before a `WebResourceRequested` event is fired.
 
-For example, say a host app is trying to replace images, in which case the host app is only interested in web resource requested events for images. The app would only get events for images by specifying the filter for images. Another example is if the host app is only interested in all requests that are under a domain name like https://example.com, then the app can use the URL filter to get events associated with that site. 
+For example, suppose the host app is trying to replace images.  In this case, the host app is only interested in web resource requested events for images.  The host app would only get events for images by specifying the filter for images.  Another example is if the host app is only interested in all requests that are under a domain name like `https://example.com`, then the app can use the URL filter to get events that are associated with that site.
 
 # [.NET](#tab/dotnet)
 
@@ -127,7 +125,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 1. The WebView2 control sends the request to the HTTP server.
 1. The HTTP server sends the response to the WebView2 control.
 1. The WebView2 control fires the `WebResourceResponseReceived` event.
-1. The host app listens for the `WebResourceResponseReceived` event and handles it.  <!-- todo: arrow: "The WebView2 control creates a request for a resource that's needed for the webpage." -->
+1. The host app listens for the `WebResourceResponseReceived` event and handles it.<!-- todo: arrow: "The WebView2 control creates a request for a resource that's needed for the webpage." -->
 
 
 <!-- ====================================================================== -->
@@ -137,7 +135,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 <!-- this example doesn't exist in the sample repo -->
 
 <!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
-In the following example, the host app _intercepts_ (receives) the document request that is sent from the WebView2 control to the http://www.example.com HTTP server, adds a custom header value and sends the request.  
+In the following example, the host app _intercepts_ (receives) the document request that is sent from the WebView2 control to the `http://www.example.com` HTTP server, adds a custom header value and sends the request.  
 
 # [.NET](#tab/dotnet)
 
@@ -190,7 +188,6 @@ m_webView->add_WebResourceRequested(
 ```  
 
 ---
-
 
 <!-- ====================================================================== -->
 ## Overriding a response (to proactively replace it)
@@ -567,18 +564,6 @@ m_webView->add_WebResourceResponseReceived(
    * `get_StatusCode`
    * `GetContent`
 * [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler)
-   * `Invoke`
-
----
-
-
-<!-- ====================================================================== -->
-## See also
-
-* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md)
-* [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md)
-* [Call native-side code from web-side code](hostobject.md)
-icrosoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler)
    * `Invoke`
 
 ---
