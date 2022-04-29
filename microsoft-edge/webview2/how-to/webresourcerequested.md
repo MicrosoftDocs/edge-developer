@@ -162,15 +162,18 @@ m_webView->add_WebResourceRequested(
             ICoreWebView2WebResourceRequestedEventArgs* args) {
             COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
             CHECK_FAILURE(args->get_ResourceContext(&resourceContext));
-            // Ensure that the type is document
+            // Only intercept the document resources
             if (resourceContext != COREWEBVIEW2_WEB_RESOURCE_CONTEXT_DOCUMENT)
             {
                return S_OK;
             }
             wil::com_ptr<ICoreWebView2WebResourceRequest> request;
             CHECK_FAILURE(args->get_Request(&request));
+
+            // Set a custom header to the document request.
+            wil::com_ptr<ICoreWebView2HttpRequestHeaders> headers;
             request->get_Headers(&headers);
-            headers->SetHeaderValue(L"Custom", L"Value"); // DEV TODO: define 'headers' & compile code
+            headers->SetHeaderValue(L"Custom", L"Value");
             return S_OK;
          })
          .Get(),
@@ -186,8 +189,6 @@ m_webView->add_WebResourceRequested(
 <!-- ## Overriding the response and providing a different, custom response to the WebView2 control -->
 
 By default the HTTP server sends responses to the WebView2 control. Your host app can _override_ (ignore) a response that's sent from the HTTP server to the WebView2 control, and send a custom response to the WebView2 control instead of the original response.
-<!-- DEV TODO: identify the technical difference between overriding a request vs. a response; when to override a request vs. response -->
-
 
 ### Sequence for overriding responses
 
@@ -209,14 +210,17 @@ By default the HTTP server sends responses to the WebView2 control. Your host ap
 # [.NET](#tab/dotnet)
 
 ```csharp
-// DEV TODO: add comments
+// Add a filter to select all image resources
 webView.CoreWebView2.AddWebResourceRequestedFilter(
-      "http://www.example.com/*", CoreWebView2WebResourceContext.Image);
+      "*", CoreWebView2WebResourceContext.Image);
 webView.CoreWebView2.WebResourceRequested += delegate (
    CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs args) {
     
+   // Replace the remote image resource with a local one.
+   // If response is not set, the request will continue as it is.
    FileStream fs = File.Open(customImagePath, FileMode.Open);
-   CoreWebView2WebResourceResponse response = webView.CoreWebView2.Environment.CreateWebResourceResponse(fs, 200, "OK", "Content-Type: image/jpeg");
+   CoreWebView2WebResourceResponse response = webView.CoreWebView2.Environment.CreateWebResourceResponse(
+                                                   fs, 200, "OK", "Content-Type: image/jpeg");
    args.Response = response;
 };
 ```
@@ -224,7 +228,7 @@ webView.CoreWebView2.WebResourceRequested += delegate (
 # [Win32](#tab/win32)
 
 ```cpp
-// DEV TODO: add comments
+// Add a filter to select all image resources
 m_webView->AddWebResourceRequestedFilter(
                 L"*", COREWEBVIEW2_WEB_RESOURCE_CONTEXT_IMAGE);
 m_webView->add_WebResourceRequested(
@@ -235,8 +239,8 @@ m_webView->add_WebResourceRequested(
          COREWEBVIEW2_WEB_RESOURCE_CONTEXT resourceContext;
          args->get_ResourceContext(&resourceContext);
 
-         // Override the response with an another image.
-         // If put_Response is not called, the request will continue as normal.
+         // Replace the remote image resource with a local one.
+         // If response is not set, the request will continue as it is.
          wil::com_ptr<IStream> stream;
          SHCreateStreamOnFileEx(
                customImagePath, STGM_READ, FILE_ATTRIBUTE_NORMAL,
@@ -244,15 +248,15 @@ m_webView->add_WebResourceRequested(
          wil::com_ptr<ICoreWebView2WebResourceResponse> response;
          wil::com_ptr<ICoreWebView2Environment> environment;
          wil::com_ptr<ICoreWebView2_2> webview2;
-         m_webView->QueryInterface(IID_PPV_ARGS(&webview2)));
+         m_webView->QueryInterface(IID_PPV_ARGS(&webview2));
          webview2->get_Environment(&environment);
          environment->CreateWebResourceResponse(
-               stream.get(), 200, L"OK", L"Content-Type: image/jpeg", &response));
-         CHECK_FAILURE(args->put_Response(response.get());
+               stream.get(), 200, L"OK", L"Content-Type: image/jpeg", &response);
+         args->put_Response(response.get());
          return S_OK;
       })
       .Get(),
-   &m_webResourceRequestedToken));
+   &m_webResourceRequestedToken);
 ```
 
 ---
