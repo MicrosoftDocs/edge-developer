@@ -34,6 +34,27 @@ To load WebView2, the minimum version of Microsoft Edge or the WebView2 Runtime 
 
 To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test upcoming APIs and features](how-to/set-preview-channel.md).
 
+<!-- ====================================================================== -->
+
+## 1.0.1210.30
+  
+Release Date: May 2, 2022  
+  
+[NuGet package for WebView2 SDK 1.0.1210.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.30)  
+  
+For full API compatibility, 101.1210.30 or higher.  
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*   Support for [multiple user profiles](#) in WebView2.
+
+*	[Theming API](#) which provides a way to customize the WebView2 color theme as light, dark, or system.
+
+*	[Default Download API](#) which provides a way to customize the default download location.
 
 <!-- ====================================================================== -->
 
