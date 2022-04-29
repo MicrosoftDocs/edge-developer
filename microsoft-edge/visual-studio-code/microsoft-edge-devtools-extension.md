@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/26/2021
+ms.date: 04/29/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
@@ -247,20 +247,23 @@ We're continuing to improve this feature and have set up a tracking issue on Git
 
 
 <!-- ====================================================================== -->
-## Device emulation in the screencast
+## Device and state emulation
 
-Device emulation is a feature of the screencast browser in the editor.  This allows you to emulate a device such as a phone or tablet.  This is useful for testing the layout of your website on different devices:
+The browser preview tab has a emulation toolbar on the bottom that allows you to simulate different environments. You can select from a dropdown of different devices. You can also use the form to change the dimensions and rotate the viewport. You also get two more buttons: one to emulate CSS media queries and the other to try the experience of the current web project with different visual deficiencies.
 
-![The Device dropdown list in the 'Edge DevTools: Screencast' tab.](media/edge-devtools-for-vscode-device-dropdown.msft.png)
+![Browser preview in the extension with emulation tool bar showing](media/edge-for-code-screencast-v2.msft.png)
 
-You can select from a list of different devices to emulate in the screencast next to the Address bar:
+You can select different devices, which will resize the viewport to the correct measurements and simulate touch interfaces. For example, an iPhone.
 
-![The list of devices that can be emulated open in the screencast of the extension.](media/edge-devtools-for-vscode-device-list.msft.png)
+![Browser preview in the extension showing the web product in an emulated phone layout](media/edge-for-code-screencast-v2-emulating.msft.png)
 
-The default device is a desktop computer.  If the device you choose to emulate is a touch device, the screencast automatically switches to the touchscreen mode. You can rotate the orientation of the simulated device by clicking the button next to the list:
+The CSS media feature emulation button allows you to try out how your product looks like in print mode, switch between dark and light mode and emulate forced colors.
 
-![The screencast showing the current document in an emulated iPhone 5 in the correct size and with emulated touch interface.](media/edge-devtools-for-vscode-simulated-iphone.msft.png)
+![Browser preview in the extension showing the web product in forced color mode](media/edge-for-code-forced-colours.msft.png)
 
+The visual deficiencies emulation button allows you to try your product in a blurred mode or in different color deficiencies.
+
+![Browser preview in the extension showing the web product in a blurred emulation](media/edge-for-code-blurred.msft.png)
 
 <!-- ====================================================================== -->
 ## Inline and live issue analysis
