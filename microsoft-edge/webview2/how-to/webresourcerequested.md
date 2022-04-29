@@ -43,10 +43,10 @@ The `webResourceRequested` and `webResourceResponseReceived` events are powerful
 Instead of using the WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
 * [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
-* [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39)
+* [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
 
 **Note:** If you are using virtually mapped URLs, using the `WebResourceRequested` event isn't supported.  This is because the `WebResourceRequested` event isn't fired for 
-the [SetVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.1185.39#setvirtualhostnametofoldermapping).<!-- ClearVirtualHostNameToFolderMapping -->
+the [SetVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping).<!-- ClearVirtualHostNameToFolderMapping -->
 
 
 ### How your host app, the WebView2 control, and the HTTP server interact
@@ -70,18 +70,18 @@ The host app can change the properties of a request by using this API:
 
 # [.NET](#tab/dotnet)
 
-* [CoreWebView2WebResourceRequest Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
+* [CoreWebView2WebResourceRequest Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
 
 # [Win32](#tab/win32)
 
-* [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
+* [ICoreWebView2WebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
 
 ---
 
 ### What you can do with headers
 
 <!-- DEV TODO: Should we explain how our developers might be able to change headers? -->
-A HTTP header provides important information and metadata about a request or response. Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (e.g. the Accept-* headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, etc.  A [response header](https://developer.mozilla.org/en-US/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
+A HTTP header provides important information and metadata about a request or response. Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (e.g. the Accept-* headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, etc.  A [response header](https://developer.mozilla.org/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
 
 ### Filtering the WebResourceRequested event based on URL and resource type
 
@@ -93,16 +93,16 @@ For example, say a host app is trying to replace images, in which case the host 
 
 # [.NET](#tab/dotnet)
 
-* [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1185.39)
+* [CoreWebView2.AddWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
 
 # [Win32](#tab/win32)
 
-* [AddWebResourceRequestedFilter method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39#addwebresourcerequestedfilter)
+* [AddWebResourceRequestedFilter method](/microsoft-edge/webview2/reference/win32/icorewebview2#addwebresourcerequestedfilter)
 
 ---
 
 
-For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequestedFilter Method > Remarks](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter?view=webview2-dotnet-1.0.1185.39#remarks)
+For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequestedFilter Method > Remarks](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter#remarks)
 
 
 ### Why would you want to intercept requests that are sent from WebView2?  
@@ -280,11 +280,11 @@ This API enables your host app to  either intercept a response that's sent by th
 
 # [.NET](#tab/dotnet)
 
-* [CoreWebView2.NavigateWithWebResourceRequest(CoreWebView2WebResourceRequest) Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
+* [CoreWebView2.NavigateWithWebResourceRequest(CoreWebView2WebResourceRequest) Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
 
 # [Win32](#tab/win32)
 
-* [interface ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
+* [interface ICoreWebView2_2::NavigateWithWebResourceRequest method](/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
 
 ---
 
@@ -479,18 +479,18 @@ m_webview->add_WebResourceResponseReceived(
 
 **Request:**
 
-* [CoreWebView2.AddWebResourceRequestedFilter Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
-* [CoreWebView2.NavigateWithWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
-* [CoreWebView2.RemoveWebResourceRequestedFilter Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter)
-* [CoreWebView2.WebResourceRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
-* [CoreWebView2Environment.CreateWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourcerequest)
-* [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)
-* [CoreWebView2WebResourceRequest Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
+* [CoreWebView2.AddWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
+* [CoreWebView2.NavigateWithWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
+* [CoreWebView2.RemoveWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter)
+* [CoreWebView2.WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
+* [CoreWebView2Environment.CreateWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourcerequest)
+* [CoreWebView2WebResourceContext Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)
+* [CoreWebView2WebResourceRequest Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
    * `Content`
    * `Headers`
    * `Method`
    * `Uri`
-* [CoreWebView2WebResourceRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
+* [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
    * `Request`
    * `ResourceContext`
    * `Response`
@@ -498,17 +498,17 @@ m_webview->add_WebResourceResponseReceived(
 
 **Response:**
 
-* [CoreWebView2.WebResourceResponseReceived Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
-* [CoreWebView2Environment.CreateWebResourceResponse Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourceresponse)
-* [CoreWebView2WebResourceResponse Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse)
+* [CoreWebView2.WebResourceResponseReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
+* [CoreWebView2Environment.CreateWebResourceResponse Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourceresponse)
+* [CoreWebView2WebResourceResponse Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse)
    * `Content`
    * `Headers`
    * `ReasonPhrase`
    * `StatusCode`
-* [CoreWebView2WebResourceResponseReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
+* [CoreWebView2WebResourceResponseReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
       * `Request`
       * `Response`
-* [CoreWebView2WebResourceResponseView Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview)
+* [CoreWebView2WebResourceResponseView Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview)
    * `Headers`
    * `ReasonPhrase`
    * `StatusCode`
@@ -520,14 +520,14 @@ m_webview->add_WebResourceResponseReceived(
 
 **Request:**
 
-* [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
    * `add_WebResourceRequested`
    * `AddWebResourceRequestedFilter`
    * `remove_WebResourceRequested`
    * `RemoveWebResourceRequestedFilter`
-* [ICoreWebView2Environment2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment2)
+* [ICoreWebView2Environment2](/microsoft-edge/webview2/reference/win32/icorewebview2environment2)
    * `CreateWebResourceRequest`   
-* [ICoreWebView2WebResourceRequest](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
+* [ICoreWebView2WebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)
    * `get_Content`
    * `get_Headers`
    * `get_Method`
@@ -535,24 +535,24 @@ m_webview->add_WebResourceResponseReceived(
    * `put_Content`
    * `put_Method`
    * `put_Uri`
-* [ICoreWebView2WebResourceRequestedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
+* [ICoreWebView2WebResourceRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)
    * `get_Request`
    * `get_ResourceContext`
    * `get_Response`
    * `GetDeferral`
    * `put_Response`
-* [ICoreWebView2WebResourceRequestedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventhandler)
+* [ICoreWebView2WebResourceRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventhandler)
    * `Invoke`
 
 **Response:**
 
-* [ICoreWebView2_2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2)
+* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)
    * `add_WebResourceResponseReceived`
    * `NavigateWithWebResourceRequest`
    * `remove_WebResourceResponseReceived`
-* [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment)
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)
    * `CreateWebResourceResponse`
-* [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse)
+* [ICoreWebView2WebResourceResponse](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse)
    * `get_Content`
    * `get_Headers`
    * `get_ReasonPhrase`
@@ -560,17 +560,17 @@ m_webview->add_WebResourceResponseReceived(
    * `put_Content`
    * `put_ReasonPhrase`
    * `put_StatusCode`
-* [ICoreWebView2WebResourceResponseReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
+* [ICoreWebView2WebResourceResponseReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
    * `get_Request`
    * `get_Response`
-* [ICoreWebView2WebResourceResponseReceivedEventHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventhandler)
+* [ICoreWebView2WebResourceResponseReceivedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventhandler)
    * `Invoke`
-* [ICoreWebView2WebResourceResponseView](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview)
+* [ICoreWebView2WebResourceResponseView](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview)
    * `get_Headers`
    * `get_ReasonPhrase`
    * `get_StatusCode`
    * `GetContent`
-* [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler)
+* [ICoreWebView2WebResourceResponseViewGetContentCompletedHandler](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseviewgetcontentcompletedhandler)
    * `Invoke`
 
 ---
