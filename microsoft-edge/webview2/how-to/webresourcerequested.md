@@ -27,10 +27,7 @@ dev: add comments in code listings
 
 The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events.  There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`.
 
-This article describes how you can modify network requests to change the UI content displayed in the WebView2 control.
-<!-- TODO clarify sentence, which explains what this high-level API lets you do -->
-
-Use this API and approach to:
+This article describes how you can modify network requests.  Use this API and approach to:
 * Upload local file content to your app to add support for offline functionality.
 * Block content in a webpage, such as specific images.
 * Fine-tune authentication for specific pages.
@@ -63,8 +60,9 @@ the host app
 <!-- ====================================================================== -->
 ## Intercepting a request (to monitor or modify it)
 
-Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
-<!-- DEV TODO: is the sending request to local code publicly supported yet? -->
+Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). 
+
+Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
 
 The host app can change the properties of a request by using this API:
 
@@ -80,12 +78,11 @@ The host app can change the properties of a request by using this API:
 
 ### What you can do with headers
 
-<!-- DEV TODO: Should we explain how our developers might be able to change headers? -->
-A HTTP header provides important information and metadata about a request or response. Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (e.g. the Accept-* headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, etc.  A [response header](https://developer.mozilla.org/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
+A HTTP header provides important information and metadata about a request or response.  Changing [headers](https://developer.mozilla.org/docs/Glossary/HTTP_header) enables you to perform powerful actions on the network. 
+
+A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) can be used to indicate the format of the response (such as the `Accept-*` headers), set authentication tokens, read and write cookies (sensitive information), modify the user agent, and so on.  A [response header](https://developer.mozilla.org/docs/Glossary/Response_header) can be used to provide more context of the message being sent. 
 
 ### Filtering the WebResourceRequested event based on URL and resource type
-
-<!-- TODO: find a good place for this section. -->
 
 In a `WebResourceRequested` event, you can specify a filter for the requests that the app is interested in based on URL and resource type.  If the host app uses a filter, the filter must be added before a `WebResourceRequested` event is fired.
 
@@ -110,7 +107,7 @@ For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequ
 Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some scenarios include:
 *  You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
 *  You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
-*  You want to upload local file content to the request server via a POST request <!-- DEV TODO: validate this -->
+*  You want to upload local file content to the request server via a POST request.
 
 
 ### Sequence for modifying requests
@@ -129,7 +126,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 1. The WebView2 control sends the request to the HTTP server.
 1. The HTTP server sends the response to the WebView2 control.
 1. The WebView2 control fires the `WebResourceResponseReceived` event.
-1. The host app listens for the `WebResourceResponseReceived` event and handles it.  <!-- todo: arrow: "The WebView2 control creates a request for a resource that's needed for the webpage." -->
+1. The host app listens for the `WebResourceResponseReceived` event and handles it.<!-- todo: arrow: "The WebView2 control creates a request for a resource that's needed for the webpage." -->
 
 
 <!-- ====================================================================== -->
@@ -195,7 +192,6 @@ m_webView->add_WebResourceRequested(
 <!-- ## Overriding the response and providing a different, custom response to the WebView2 control -->
 
 By default the HTTP server sends responses to the WebView2 control. Your host app can _override_ (ignore) a response that's sent from the HTTP server to the WebView2 control, and send a custom response to the WebView2 control instead of the original response.
-<!-- DEV TODO: identify the technical difference between overriding a request vs. a response; when to override a request vs. response -->
 
 
 ### Sequence for overriding responses
