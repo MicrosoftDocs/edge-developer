@@ -18,7 +18,6 @@ ms.date: 04/29/2022
 <!-- todo
 writer: add arrows to diagrams
 writer: read through body content
-dev: add comments in code listings
 -->
 
 
@@ -64,7 +63,6 @@ the host app
 ## Intercepting a request (to monitor or modify it)
 
 Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
-<!-- DEV TODO: is the sending request to local code publicly supported yet? -->
 
 The host app can change the properties of a request by using this API:
 
@@ -110,7 +108,7 @@ For details about how the URL filter works, see [CoreWebView2.AddWebResourceRequ
 Intercepting requests sent from WebView2 enables you to further configure your request. The host app might want to provide optional content as part of the request that the WebView2 control won't know on its own. Some scenarios include:
 *  You're logging into a page and the app has credentials so the app can provide authentication header without the user having to enter those credentials.  
 *  You want offline functionality in the app so you redirect the URL to a local file path when no internet connection is detected.
-*  You want to upload local file content to the request server via a POST request <!-- DEV TODO: validate this -->
+*  You want to upload local file content to the request server via a POST request.
 
 
 ### Sequence for modifying requests
@@ -144,11 +142,13 @@ In the following example, the host app _intercepts_ (receives) the document requ
 # [.NET](#tab/dotnet)
 
 ```csharp
+// Add a filter to select all resource types under http://example.com
 webView.CoreWebView2.AddWebResourceRequestedFilter(
       "http://www.example.com/*", CoreWebView2WebResourceContext.All);
-webView.CoreWebView.WebResourceRequested += delegate (
-   CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs args) {
+webView.CoreWebView2.WebResourceRequested += delegate (
+   object sender, CoreWebView2WebResourceRequestedEventArgs args) {
    CoreWebView2WebResourceContext resourceContext = args.ResourceContext;
+   // Only intercept the document resources
    if (resourceContext != CoreWebView2WebResourceContext.Document)
    {
       return;
@@ -180,8 +180,9 @@ m_webView->add_WebResourceRequested(
             // Set a custom header to the document request.
             wil::com_ptr<ICoreWebView2WebResourceRequest> request;
             CHECK_FAILURE(args->get_Request(&request));
+            wil::com_ptr<ICoreWebView2HttpRequestHeaders> headers;
             request->get_Headers(&headers);
-            headers->SetHeaderValue(L"Custom", L"Value"); // DEV TODO: define 'headers' & compile code
+            headers->SetHeader(L"Custom", L"Value");
             return S_OK;
          })
          .Get(),
@@ -224,7 +225,7 @@ By default the HTTP server sends responses to the WebView2 control. Your host ap
 webView.CoreWebView2.AddWebResourceRequestedFilter(
       "http://www.example.com/*", CoreWebView2WebResourceContext.Image);
 webView.CoreWebView2.WebResourceRequested += delegate (
-   CoreWebView2 sender, CoreWebView2WebResourceRequestedEventArgs args) {
+   object sender, CoreWebView2WebResourceRequestedEventArgs args) {
     
    // Replace the remote image resource with a local one.
    // If response is not set, the request will continue as it is.
@@ -307,13 +308,17 @@ from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/Navigat
 # [.NET](#tab/dotnet)
 
 ```csharp
-// DEV TODO comments
+// This code posts text input=Hello to the POST form page in W3Schools.
+
+// Need to convert post data to UTF-8 as required by the application/x-www-form-urlencoded Content-Type 
 UTF8Encoding utfEncoding = new UTF8Encoding();
 byte[] postData = utfEncoding.GetBytes("input=Hello");
 
 MemoryStream postDataStream = new MemoryStream(postData.Length);
 postDataStream.Write(postData, 0, postData.Length);
 postDataStream.Seek(0, SeekOrigin.Begin);
+
+// This acts as a HTML form submit to https://www.w3schools.com/action_page.php
 CoreWebView2WebResourceRequest webResourceRequest = 
 environment.CreateWebResourceRequest("https://www.w3schools.com/action_page.php",
                                      "POST",
@@ -327,6 +332,8 @@ webView.CoreWebView2.NavigateWithWebResourceRequest(webResourceRequest);
 # [Win32](#tab/win32)
 
 ```cpp
+// This code posts text input=Hello to the POST form page in W3Schools.
+
 // Need to convert post data to UTF-8 as required by the application/x-www-form-urlencoded Content-Type 
 std::wstring postData = std::wstring(L"input=Hello");
 int sizeNeededForMultiByte = WideCharToMultiByte(
@@ -343,10 +350,10 @@ wil::com_ptr<IStream> postDataStream = SHCreateMemStream(
       reinterpret_cast<const BYTE*>(postDataBytes.get()), sizeNeededForMultiByte);
 
 // This acts as a HTML form submit to https://www.w3schools.com/action_page.php
-CHECK_FAILURE(webviewEnvironment->CreateWebResourceRequest(
+webviewEnvironment->CreateWebResourceRequest(
    L"https://www.w3schools.com/action_page.php", L"POST", postDataStream.get(),
-   L"Content-Type: application/x-www-form-urlencoded", &webResourceRequest));
-CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()));
+   L"Content-Type: application/x-www-form-urlencoded", &webResourceRequest);
+webview->NavigateWithWebResourceRequest(webResourceRequest.get());
 ```
 
 ---
@@ -374,7 +381,7 @@ The following code demonstrates how the `WebResourceResponseReceived` event can 
 WebView.WebResourceResponseReceived += WebView_WebResourceResponseReceived;
 
 // Note: modifications made to request are set but have no effect on WebView processing it.
-private async void WebView_WebResourceResponseReceived(CoreWebView2 sender, CoreWebView2WebResourceResponseReceivedEventArgs e)
+private async void WebView_WebResourceResponseReceived(object sender, CoreWebView2WebResourceResponseReceivedEventArgs e)
 {
     // Actual headers sent with request
     foreach (var current in e.Request.Headers)
@@ -392,7 +399,6 @@ private async void WebView_WebResourceResponseReceived(CoreWebView2 sender, Core
     int status = e.Response.StatusCode;
     if (status == 200)
     {
-        // Handle
         Console.WriteLine("Request succeeded!");
 
         // Get response body
@@ -400,7 +406,7 @@ private async void WebView_WebResourceResponseReceived(CoreWebView2 sender, Core
         {
             System.IO.Stream content = await e.Response.GetContentAsync();
             // Null will be returned if no content was found for the response.
-            if (content)
+            if (content != null)
             {
                 DoSomethingWithResponseContent(content);
             }
@@ -422,16 +428,16 @@ COM example, uses `ICoreWebView2WebResourceRequest`.
 ```cpp
 EventRegistrationToken m_webResourceResponseReceivedToken = {};
 
-m_webview->add_WebResourceResponseReceived(
+m_webView->add_WebResourceResponseReceived(
     Callback<ICoreWebView2WebResourceResponseReceivedEventHandler>(
         [this](ICoreWebView2* webview, ICoreWebView2WebResourceResponseReceivedEventArgs* args)
             -> HRESULT {
             // The request object as committed
             wil::com_ptr<ICoreWebView2WebResourceRequest> webResourceRequest;
-            CHECK_FAILURE(args->get_Request(&webResourceRequest));
+            args->get_Request(&webResourceRequest);
             // The response object as received
             wil::com_ptr<ICoreWebView2WebResourceResponseView> webResourceResponse;
-            CHECK_FAILURE(args->get_Response(&webResourceResponse));
+            args->get_Response(&webResourceResponse);
             
             // Get body content for the response
             webResourceResponse->GetContent(
@@ -446,19 +452,6 @@ m_webview->add_WebResourceResponseReceived(
                             DoSomethingWithContent(content);
                         }
                         
-                        std::wstring message =
-                            L"{ \"kind\": \"event\", \"name\": "
-                            L"\"WebResourceResponseReceived\", \"args\": {"
-                            L"\"request\": " +
-                            RequestToJsonString(webResourceRequest.get()) +
-                            L", "
-                            L"\"response\": " +
-                            ResponseToJsonString(webResourceResponse.get(), content) + L"}";
-
-                        message +=
-                            WebViewPropertiesToJsonString(m_webview.get());
-                        message += L"}";
-                        PostEventMessage(message);
                         return S_OK;
                     })
                     .Get());
