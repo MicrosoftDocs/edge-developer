@@ -20,10 +20,6 @@ writer: add arrows to diagrams
 writer: read through body content
 -->
 
-
-<!-- ====================================================================== -->
-## Introduction
-
 The Microsoft Edge WebView2 control lets you interact with and modify network requests.  You can either provide a response or modify the network request using the `webResourceRequested` and `webResourceResponseReceived` events.  There is also special functionality that allows you to navigate with specific network requests using the `NavigateWithWebResourceRequest API`.
 
 This article describes how you can modify network requests.  Use this API and approach to:
@@ -31,8 +27,16 @@ This article describes how you can modify network requests.  Use this API and ap
 * Block content in a webpage, such as specific images.
 * Fine-tune authentication for specific pages.
 
+**Terminology:**
 
-### When to use other approaches
+| Term | Definition |
+|---|---|
+| intercept | Your host app can intercept (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). |
+| override | Your host app can override (ignore) a response that's sent from the HTTP server to the WebView2 control, and send a custom response to the WebView2 control instead of the original response. |
+
+
+<!-- ====================================================================== -->
+## When to use custom vs. basic approaches
 
 The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools for various scenarios.  This is a low-level API that gives more control, but requires more coding and is complicated to use.  For some common scenarios, we provide APIs that are easier to use and are optimized for those specific scenarios, and we recommend you use those rather than the APIs discussed in this article.
 
@@ -572,6 +576,7 @@ m_webView->add_WebResourceResponseReceived(
 <!-- ====================================================================== -->
 ## See also
 
-* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md)
-* [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md)
 * [Call native-side code from web-side code](hostobject.md)
+<!-- 
+* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md)
+* [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md) -->
