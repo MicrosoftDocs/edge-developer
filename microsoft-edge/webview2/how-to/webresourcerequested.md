@@ -6,13 +6,19 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/26/2022
+ms.date: 04/29/2022
 ---
 # Custom management of network requests
 <!--
 # Custom management of network requests and responses in WebView2
 # Managing network requests in WebView2
 # Navigating with web resource request and response events
+-->
+
+<!-- todo
+writer: add arrows to diagrams
+writer: read through body content
+dev: add comments in code listings
 -->
 
 
@@ -32,12 +38,15 @@ Use this API and approach to:
 
 ### When to use other approaches
 
-The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools that allow you to light up various scenarios. This is a low-level API that gives more control, but requires more coding and is complicated to use.  For some common scenarios, we provide APIs that are easier to use and are optimized for those specific scenarios, and we recommend you use those rather than the APIs discussed in this article.
+The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools for various scenarios.  This is a low-level API that gives more control, but requires more coding and is complicated to use.  For some common scenarios, we provide APIs that are easier to use and are optimized for those specific scenarios, and we recommend you use those rather than the APIs discussed in this article.
 
-Instead of using WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
+Instead of using the WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
 * [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
 * [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1185.39)
+
+**Note:** If you are using virtually mapped URLs, using the `WebResourceRequested` event isn't supported.  This is because the `WebResourceRequested` event isn't fired for 
+the [SetVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3?view=webview2-1.0.1185.39#setvirtualhostnametofoldermapping).<!-- ClearVirtualHostNameToFolderMapping -->
 
 
 ### How your host app, the WebView2 control, and the HTTP server interact
@@ -52,7 +61,7 @@ the host app
 
 
 <!-- ====================================================================== -->
-## 1. Intercepting a request (to monitor or modify it)
+## Intercepting a request (to monitor or modify it)
 
 Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
 <!-- DEV TODO: is the sending request to local code publicly supported yet? -->
@@ -181,7 +190,7 @@ m_webView->add_WebResourceRequested(
 
 
 <!-- ====================================================================== -->
-## 2. Overriding a response (to proactively replace it)
+## Overriding a response (to proactively replace it)
 <!-- Overriding and providing new responses to WebView2 -->
 <!-- ## Overriding the response and providing a different, custom response to the WebView2 control -->
 
@@ -201,7 +210,8 @@ By default the HTTP server sends responses to the WebView2 control. Your host ap
 1. The WebView2 control fires a `WebResourceRequested` event to the host app.
 1. The host app listens for and handles the `WebResourceRequested` event.
 1. The host app sets a response to the `WebResourceRequested` event handler.  The host app can also defer the `WebResourceRequested` event, which means that the host app asks for more time to decide what to do.
-1. The WebView2 control then renders the response as the resource.
+1. The WebView2 control renders the response as the resource.
+<!-- todo: remove "then" from diagram step 8 -->
 
 
 ### Example: Overriding a response (to proactively replace it)
@@ -259,12 +269,14 @@ m_webView->add_WebResourceRequested(
 
 
 <!-- ====================================================================== -->
-## 3. Constructing a custom request and navigating using that request
+## Constructing a custom request and navigating using that request
 <!-- ## Constructing a custom request and navigating the WebView2 control using that request -->
 <!-- ## Navigating with custom requests  -->
 <!-- use-case: Navigating (vs. Overriding or Intercepting) -->
 
-The `NavigateWithWebResourceRequest` method, together with the `WebResourceRequest` event and the `WebResponseReceived` event, allows your host app to intercept and interact with network requests sent to and from the WebView2 control, while the WebView2 control interacts with the HTTP server.  This API enables your host app to  either intercept a response that's sent by the HTTP server and substitute a custom response to your host app's code, or intercept a request that's sent from the WebView2 control to the HTTP server, and substitute your own custom request instead.
+The `NavigateWithWebResourceRequest` method, together with the `WebResourceRequest` event and the `WebResponseReceived` event, allows your host app to intercept and interact with network requests sent to and from the WebView2 control, while the WebView2 control interacts with the HTTP server.  
+
+This API enables your host app to  either intercept a response that's sent by the HTTP server and substitute a custom response to your host app's code, or intercept a request that's sent from the WebView2 control to the HTTP server, and substitute your own custom request instead.
 
 # [.NET](#tab/dotnet)
 
@@ -338,9 +350,10 @@ CHECK_FAILURE(webview->NavigateWithWebResourceRequest(webResourceRequest.get()))
 
 
 <!-- ====================================================================== -->
-## 4. Monitoring the requests and responses via the WebResourceResponseReceived event
+## Monitoring the requests and responses via the WebResourceResponseReceived event
 
 You can monitor the requests and responses via the `WebResourceResponseReceived` event, to read any header value.
+
 
 ### Example: Monitoring the requests and responses via the WebResourceResponseReceived event
 
