@@ -37,7 +37,7 @@ This article describes how you can modify network requests.  Use this API and ap
 
 The `webResourceRequested` and `webResourceResponseReceived` events are powerful tools for various scenarios.  This is a low-level API that gives more control, but requires more coding and is complicated to use.  For some common scenarios, we provide APIs that are easier to use and are optimized for those specific scenarios, and we recommend you use those rather than the APIs discussed in this article.
 
-Instead of using the WebResourceRequested APIs, you can use these other approaches that are build on top of WebResourceRequested and related APIs:
+Instead of using the WebResourceRequested APIs, you can use these other approaches that are build on top of `WebResourceRequested` and related APIs:
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
 * [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
 * [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
@@ -62,7 +62,7 @@ the host app
 
 Your host app can _intercept_ (receive) a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). 
 
-Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control does not know about.
+Intercepting the request allows you to customize the header content, URL, or the GET/POST method. The host app may want to intercept a request to provide optional content as part of the request that the WebView2 control doesn't know about.
 
 The host app can change the properties of a request by using this API:
 
@@ -86,7 +86,7 @@ A [request header](https://developer.mozilla.org/docs/Glossary/Request_header) c
 
 In a `WebResourceRequested` event, you can specify a filter for the requests that the app is interested in based on URL and resource type.  If the host app uses a filter, the filter must be added before a `WebResourceRequested` event is fired.
 
-For example, say a host app is trying to replace images, in which case the host app is only interested in web resource requested events for images. The app would only get events for images by specifying the filter for images. Another example is if the host app is only interested in all requests that are under a domain name like https://example.com, then the app can use the URL filter to get events associated with that site. 
+For example, suppose the host app is trying to replace images.  In this case, the host app is only interested in web resource requested events for images.  The host app would only get events for images by specifying the filter for images.  Another example is if the host app is only interested in all requests that are under a domain name like `https://example.com`, then the app can use the URL filter to get events that are associated with that site.
 
 # [.NET](#tab/dotnet)
 
@@ -136,7 +136,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 <!-- this example doesn't exist in the sample repo -->
 
 <!-- note: the below intro is based on copying the main h2's Sentence 1 from above: -->
-In the following example, the host app _intercepts_ (receives) the document request that is sent from the WebView2 control to the http://www.example.com HTTP server, adds a custom header value and sends the request.  
+In the following example, the host app _intercepts_ (receives) the document request that is sent from the WebView2 control to the `http://www.example.com` HTTP server, adds a custom header value and sends the request.  
 
 # [.NET](#tab/dotnet)
 
