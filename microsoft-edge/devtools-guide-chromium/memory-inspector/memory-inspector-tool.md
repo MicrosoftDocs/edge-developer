@@ -32,6 +32,10 @@ Use **Memory Inspector** to view and interact with the following types of object
 * [DataView](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView)
 * [WebAssembly (Wasm) memory](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
 
+Using Memory Inspector you can view the different types of memory objects, navigate, and select the types to be used to interpret the values. It shows the ASCII values directly next to the bytes, and lets you select different endianness.
+
+ ![Memory Inspector panel](../media/memory-inspector-panel.png)
+
 The **Memory Inspector** tool provides greater ability than the **Sources** tool to inspect `ArrayBuffers` when debugging. The **Scope** view in the Sources tool displays a list of single values within the array buffer, which makes it difficult to see all the data. Additionally, navigating to a certain range within the buffer requires you to scroll to a specific index and the values are always displayed as a single byte, even if you wanted to see them in another format, such as 32-bit integers.
 
 ![Sources tool scope panel provides limited ability to inspect memory](../media/memory-inspector-sources-scope-limited-ability.png)
@@ -50,8 +54,6 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
 
 1. Set a breakpoint at line **18** as shown in the following image.
 
-    ![Memory Inspector set breakpoint in JavaScript file](../media/memory-inspector-set-breakpoint-old.png)
-
     ![Memory Inspector set breakpoint in JavaScript file](../media/memory-inspector-set-breakpoint.png)
 
 1. Refresh the webpage. It fails to display because the JavaScript pauses at the breakpoint.
@@ -64,13 +66,9 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
  
     * From the context menu. Right click on the `buffer` property and select **Reveal in Memory Inspector panel**.
 
-    ![Open Memory Inspector from the buffer property line context menu](../media/memory-inspector-open-from-buffer-old.png)
-
     ![Open Memory Inspector from the buffer property line context menu](../media/memory-inspector-open-from-buffer.png)
 
     The JavaScript ArrayBuffer opens in Memory Inspector.
-
-    ![ArrayBuffer open in the Memory Inspector panel](../media/memory-inspector-panel-old.png)
 
     ![ArrayBuffer open in the Memory Inspector panel](../media/memory-inspector-panel.png)
 
@@ -141,17 +139,15 @@ Complete the following steps to debug a webpage in Memory Inspector.
 
     ![Memory Inspector address change](../media/memory-inspector-address-change.png)
 
-1. Click the **Jump to address** button (![Jump to address button](../media/memory-inspector-jump-to-address.png)) for **Pointer 32-bit** or **Pointer 64-bit** to jump to the next active memory address. If next memory address is not available, the button is turned off (![Address out of memory range](../media/memory-inspector-address-out-of-range.png)) with the tooltip **Address out of memory range**.
-
-1. Click on the **Sources** tab.
-
 1. Click **Resume script execution** (![Resume script execution](../media/memory-inspector-resume-script-execution.png)) or press **F8** or **Ctrl +\\** to step through the code.
 
     The ASCII representation and the value interpretations are updated.
     
     ![Memory Inspector address values updated](../media/memory-inspector-address-values-updated.png)
 
-1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings gray](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating-point** values.
+1. Click the **Jump to address** button (![Jump to address button](../media/memory-inspector-jump-to-address.png)) for **Pointer 32-bit** or **Pointer 64-bit** as needed to jump to the next active memory address. If next memory address is not available, the button is turned off (![Address out of memory range](../media/memory-inspector-address-out-of-range.png)) with the tooltip **Address out of memory range**.
+
+1. Customize the **Value inspector** to show only floating point values. Click **Toggle value type settings** (![Toggle value type settings gray](../media/memory-inspector-value-type-settings-toggle.png)) and clear all checkboxes except the two **Floating point** values.
     
     ![Value type settings float](../media/memory-inspector-panel-value-type-settings-float.png)
 
@@ -163,7 +159,7 @@ Complete the following steps to debug a webpage in Memory Inspector.
     
 1. Explore the memory buffer using the keyboard or navigation bar.
 
-1. Repeat step **3** to observe value changes.
+1. Repeat steps **3** and **4** to observe value changes.
 
 
 <!-- ====================================================================== -->
