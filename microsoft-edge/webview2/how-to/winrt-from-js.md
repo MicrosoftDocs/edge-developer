@@ -69,24 +69,26 @@ The `Language` class API allows getting information from the client's native OS.
    ![Adding a new project for the WebView2 WinRT JS Projection tool.](winrt-from-js-images/add-new-project-for-tool.png)
 
 In case you need more information, see detailed steps in these pages, and then continue below:
-* [WebView2 sample: WinUI 2 (UWP) browser app](https://docs.microsoft.com/en-us/microsoft-edge/webview2/samples/webview2_sample_uwp) - steps to open, compile, and run the sample app.
-* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](https://docs.microsoft.com/en-us/microsoft-edge/webview2/get-started/winui2) - setting up a basic WebView2 app.
+* [WebView2 sample: WinUI 2 (UWP) browser app](../samples/webview2_sample_uwp.md) - steps to open, compile, and run the sample app.
+* [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md) - setting up a basic WebView2 app.
 * [GitHub > WebView2Samples repo > webview2_sample_uwp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp)
-* [Set up your Dev environment for WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/machine-setup) - details about setting up prerequisites.
+* [Set up your Dev environment for WebView2](machine-setup.md) - details about setting up prerequisites.
 
 
 <!-- ====================================================================== -->
-## Step 2: Set up the WebView2 WinRT JS Projection tool
+Set up the WebView2 WinRT JS Projection tool
 <!-- aka the WebView2 WinRT tool -->
+
+The remaining major steps set up the WebView2 WinRT JS Projection tool.
 
 <!--why cover this?:-->
 **Note:** Alternative approach: If you don't add a project using the project template for **Windows Runtime Component (C++/WinRT)** as described in the numbered steps below, then you'll need to instead install the **Universal Windows Platform development** workload, by following the steps in [UWP applications > Introduction to C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt#visual-studio-support-for-cwinrt-xaml-the-vsix-extension-and-the-nuget-package).  That page reads: "From within the Visual Studio Installer, install the Universal Windows Platform development workload. In **Installation Details** > **Universal Windows Platform development**, check the **C++ (v14x) Universal Windows Platform tools** option(s), if you haven't already done so.  And, in **Windows Settings** > **Update & Security** > **For developers**, choose the **Developer mode** option rather than the **Sideload apps** option."
 
-The recommended, regular way to set up the WebView2 WinRT JS Projection tool is as follows:
+The recommended, regular way to set up the WebView2 WinRT JS Projection tool is as follows.
 
 
-   <!-- =============================================== -->
-   **Step 2A. Add a project for the WebView2 WinRT JS Projection tool:**
+<!-- =============================================== -->
+## Step 2. Add a project for the WebView2 WinRT JS Projection tool
 
 1. Right-click the solution, and then select **Add** > **New project**.  The **Add a new project** dialog box opens.
 
@@ -112,11 +114,11 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
 
    ![The newly created WinRTAdapter project.](winrt-from-js-images/fresh-winrtadapter-project.png)
 
-   The WebView2 WinRT JS Projection tool will run in this **WinRTAdapter** base project.  In a below step, you'll generate code for selected classes in this project.
+The WebView2 WinRT JS Projection tool will run in this **WinRTAdapter** base project.  In a below step, you'll generate code for selected classes in this project.
 
 
-   <!-- =============================================== -->
-   **Step 2B. Install the NuGet package for Windows Implementation Library (WIL), for the WinRTAdapter project:**
+<!-- =============================================== -->
+## Step 3. Install the NuGet package for Windows Implementation Library (WIL), for the WinRTAdapter project
 
    Next, manage NuGet packages for the WinRT `Adapter` class.  First, in the WinRTAdapter project, install the NuGet package for Windows Implementation Library (WIL), as follows:
 
@@ -128,41 +130,55 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
 
 1. Click the **Install** button.
 
-   WIL is now installed for the **WinRTAdapter** project.
-
-   Windows Implementation Library (WIL) is a header-only C++ library to make using COM coding for Windows easier.  It provides readable, type-safe C++ interfaces for Windows COM coding patterns.
+   WIL is now installed for the **WinRTAdapter** project.  Windows Implementation Library (WIL) is a header-only C++ library to make using COM coding for Windows easier.  It provides readable, type-safe C++ interfaces for Windows COM coding patterns.
 
    <!-- See [Get started with WebView2 in Win32 apps > Step 7 - Install the Windows Implementation Libraries (WIL)](../get-started/win32#step-7---install-the-windows-implementation-libraries-wil) -->
 
 
-   <!-- =============================================== -->
-   **Step 2C. Install the NuGet package for WebView2 prerelease SDK, for the WinRTAdapter project:**
+<!-- =============================================== -->
+## Step 4. Install a WebView2 prerelease SDK, for the WinRTAdapter project
 
-1. Next, in **NugGet Package Manager**, download and install a prerelease version of the WebView2 SDK.  To do this, in the **Search** box, enter **WebView2**.
+1. In Solution Explorer, right-click the **WinRTAdapter** project, and then select **Manage NuGet Packages**.  The NuGet Package Manager window opens.
 
-   ![NuGet Package Manager, selecting the WebView2 SDK package.](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
+1. Select the **Include prerelease** checkbox.
 
-   The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
+1. In the **Search** box, enter **WebView2**.
 
+1. Click the **Microsoft.Web.WebView2** card.  Detailed info appears in the middle area of the window.
 
-   <!-- =============================================== -->
-   **Step 2D. Install the NuGet package for WebView2 prerelease SDK, for the WebView2 UWP project:**
+1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK.  Note which version number you select.
 
-1. In Solution Explorer, right-click the **webview2_sample_uwp** project, and then select **Manage NuGet Packages**.
+1. Click the **Install** button:
 
-1. In **NugGet Package Manager**, in the **Search** box, enter **WebView2**.
-
-   ![NuGet Package Manager, selecting the WebView2 SDK package, for the webview2_sample_uwp project.](winrt-from-js-images/pkg-mgr-wv2-sdk-for-uwp-project.png)
+   ![NuGet Package Manager, selecting the WebView2 SDK package, for the WinRTAdapter project.](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
 
    The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
 
 
-   <!-- =============================================== -->
-   **Step 2D. Configure the WebView2 WinRT JS Projection tool, to generate source code for selected API items:**
+<!-- =============================================== -->
+## Step 5. Install the same WebView2 prerelease SDK, for the WebView2 UWP project
 
-   Next, configure the WebView2 WinRT JS Projection tool, to incorporate the WinRT class that you want to use.  In the example steps below, we'll specify two `Windows` namespaces, and the tool will generate source code for only those namespaces.
+1. In Solution Explorer, right-click the **webview2_sample_uwp** project, and then select **Manage NuGet Packages**.  The NuGet Package Manager window opens.
 
-   **RESUME HERE**
+1. Select the **Include prerelease** checkbox.
+
+1. In the **Search** box, enter **WebView2**.
+
+1. Click the **Microsoft.Web.WebView2** card.  Detailed info appears in the middle area of the window.
+
+1. In the **Version** drop-down, select a **prerelease** version of the WebView2 SDK.  This needs to be the same version as for the **WinRTAdapter** project.
+
+1. Click the **Install** button.
+
+   <!-- ![NuGet Package Manager, selecting the WebView2 SDK package, for the webview2_sample_uwp project.](winrt-from-js-images/pkg-mgr-wv2-sdk-for-uwp-project.png) -->
+
+   The WebView2 prerelease SDK is now installed for the **webview2_sample_uwp** project.
+
+
+<!-- =============================================== -->
+## Step 6. Generate source code for selected host API items
+
+Next, configure the WebView2 WinRT JS Projection tool, to incorporate the WinRT class that you want to use.  In the example steps below, we'll specify two `Windows` namespaces, and the tool will generate source code for only those namespaces.  Later, when the sample app is running, you'll call these API items from the **Console** of DevTools, to demonstrate that these specified host-side API items can be called from web-side code.
 
 1. In Solution Explorer, right-click the **WinRTAdapter** project, and then select **Properties**.  The **WinRTAdapter Property Pages** window opens.
 
@@ -170,43 +186,58 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
 
    ![The 'WinRTAdapter Property Pages' window, with 'Common Properties > WebView2' expanded in the tree on the left.](winrt-from-js-images/adap-props-common-wv2.png)
 
-1. Set **Use the WV2WinRT tool** to **Yes**, and set **JavaScript Case** to **Yes**.
+1. Set **Use the WV2WinRT tool** to **Yes**.
 
-   <!-- ## Step 5. Generating source code for a filtered subset of classes -->
+1. Set **JavaScript Case** to **Yes**.
 
-   Next, specify filters, to generate source code for a filtered subset of classes.  This filtering will selectively generate the needed classes or namespaces.  This filtering specifies an include list or an exclude list.<!--see wiki page-->  You generate source files that need to be compiled, rather than adding a `#` include of entire header files.  To define filters, specify the full name of the namespaces or runtime classes that you want to generate source code for, to include in your project.
+   Next, in the same **WinRTAdapter Property Pages** window, in the **Include filters** row, you'll specify filters, to generate source code for a filtered subset of classes.  This filtering will selectively generate the needed classes or namespaces.  You generate source files that need to be compiled, rather than adding a `#` include of entire header files.  
 
-   For this example project, include the following two namespaces.  Enter them as follows, if you are in the Edit view / editor:<!--UI name?-->
+   To define filters, you'll specify the full name of the namespaces or runtime classes that you want to generate source code for, to include in your project.
 
-1. In the topmost text box of the **Include filters** dialog, enter: **Windows.System.UserProfile**
+   In the same text box, below the previous value you entered, you'll also add a reference for the tool itself, such as params: **Windows.Globalization.Language**.
 
-1. In the same text box, below the previous value you entered, add a reference for the tool itself, such as params: **Windows.Globalization.Language**
+1. In the **WinRTAdapter Property Pages** window, in the **Include filters** row, click the right column.
+
+1. Click **Edit**.  The **Include filters** dialog opens.
+
+1. For this example project, in the topmost text box, paste the following lines:
+
+   ```
+   Windows.System.UserProfile
+   Windows.Globalization.Language
+   ```
 
    ![Include filters dialog box.](winrt-from-js-images/include-filters.png)
 
+   Generating code for these API items will enable your web-side code to call these API items.  To demonstrate that ability, in a later step, you'll use the **Console** of DevTools to test calling these API items to retrieve the value of `Language`, such as `English (United States)`.
+
 1. Click the **OK** button to close the **Include filters** dialog box.
 
-1. Make sure that the **webview2_uwp_sample** has a reference to the **WinRTAdapter** project.  To do this, __.
+1. Click the **OK** button to close the **Property Pages** dialog box.
+
+1. Make sure that the **webview2_uwp_sample** has a reference to the **WinRTAdapter** project.  To do this, in Solution Explorer, expand the **webview2_uwp_sample** project, and then right-click **References**, and then select **Add Reference**.  The **Reference Manager** dialog opens.
 
    ![In Solution Explorer for the WebView2 UWP project, selecting 'Add Reference'.](winrt-from-js-images/sln-xpl-wv2-uwp-add-ref.png)
 
+1. In the tree on the left, select the **Projects** node, and then select the **WinRTAdapter** checkbox:
+
    ![Alt-text 10.](winrt-from-js-images/10.png)
 
-1. Make sure the box is checked to add the project as a reference.
+1. Click the **OK** button to close the dialog.
 
-   Build the **WinRTAdapter** project independently.
+1. Right-click the **WinRTAdapter** project, and then select **Build**.
 
-   Next, update the sample apps webview2's dependency to match the one as the tool.
+Source code is generated for the selected API items.
 
-1. In File Explorer, navigate to **MainPage.xaml.cs**. 
 
-1. Add the following code, to pass the WinRT object to the host app's web side:
+<!-- =============================================== -->
+## Step 7. Add the host object in the main project
+
+1. In Solution Explorer, expand the **webview2_sample_uwp** project, and then select **MainPage.xaml.cs**.
+
+1. Below the `MainPage` constructor, add the following method, to pass the WinRT object to the host app's web side:
 
    ```csharp
-      InitializeWebView2Async();
-      StatusUpdate("Ready");
-   }
-   
    private async void InitializeWebView2Async()
    {
       await WebView2.EnsureCoreWebView2Async();
@@ -215,15 +246,45 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
    }
    ```
     
-1. Run the sample app. The code should now have your host object on the web side.
+1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
 
-1. Confirm that your host app's web-side code can call the app's host object's methods.  To do this, call `Language.displayName`, as follows:
+   ```csharp
+   InitializeWebView2Async();
+   ```
 
-   `new chrome.webview.hostObjects.sync.Windows.Globalization.Language("en-US")).displayName`
+1. Right-click the webview2_sample_uwp project and then select **Set as startup project**.
+
+1. Press `Shift+Ctrl+S` to save all files.
+
+1. Press `F5` to run the sample app.
+
+The code now has your host object on the web side.
+
+
+<!-- =============================================== -->
+## Step 8. Call APIs of the host object from the web side
+
+Next, use DevTools to demonstrate that web-side code can potentially call the included, specified host-side API items.
+
+1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl+Shift+I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.  The Microsoft Edge DevTools window opens.
+
+1. If the Microsoft Edge DevTools window isn't visible, press `Alt+Tab` to display the DevTools window.
+
+1. Under the **Console** pane of DevTools, paste the following code to confirm that your host app's web-side code can call the app's host object's methods.  To do this, call `Language.displayName`, as follows:
+
+   ```javascript
+   (new chrome.webview.hostObjects.sync.Windows.Globalization.Language("en-US")).displayName
+   ```
+
+   The **Console** outputs `English (United States)`, or another language, demonstrating that your app's host-side code can be called from web-side code.
+
+   ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
+
+1. Close the UWP sample app.  The DevTools window also closes.
 
 
 <!-- ====================================================================== -->
-## Properties
+## WebView2 Properties available in the WinRTAdapter Property Pages
 
 ![Properties that are listed in the WinRTAdapter Property Pages.](winrt-from-js-images/winrtadapter-property-pages.png)
 
