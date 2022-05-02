@@ -34,13 +34,18 @@ To add a new video:
 
 _Published on 28 Apr 2022._
 
-[![Thumbnail image for the CSS Custom Highlight API video](./images/css-custom-highlight-api.png)](https://www.youtube.com/watch?v=1qldqyT324o)
-
-Styling ranges of text on the web is very useful, but has historically been a complicated thing to do.
-
-The new [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is the future of highlighting text ranges on the Web. It provides web developers with JavaScript and CSS features that make it easy and performant to style any range of text.
-
-For more information see [CSS Custom Highlight API: The Future of Highlighting Text Ranges on the Web](https://css-tricks.com/css-custom-highlight-api-early-loo/).
+:::row:::
+   :::column span="":::
+      [![Thumbnail image for the CSS Custom Highlight API video](./images/css-custom-highlight-api.png)](https://www.youtube.com/watch?v=1qldqyT324o)
+   :::column-end:::
+   :::column span="":::
+      Styling ranges of text on the web is very useful, but has historically been a complicated thing to do.
+      
+      The new [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is the future of highlighting text ranges on the Web. It provides web developers with JavaScript and CSS features that make it easy and performant to style any range of text.
+      
+      For more information see [CSS Custom Highlight API: The Future of Highlighting Text Ranges on the Web](https://css-tricks.com/css-custom-highlight-api-early-loo/).
+   :::column-end:::
+:::row-end:::
 
 
 <!-- ====================================================================== -->
@@ -48,14 +53,19 @@ For more information see [CSS Custom Highlight API: The Future of Highlighting T
 
 _Published on 9 Dec 2021._
 
-[![Thumbnail image for the Detached Elements video](./images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
-
-We're excited to announce the new Detached Elements tool in Microsoft Edge DevTools which helps you investigate and resolve DOM memory leaks.
-
-Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage collect.
-We built this tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
-
-For more information see [Debug DOM memory leaks with the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md), and read the corresponding blog post [Debug memory leaks with the Microsoft Edge Detached Elements tool](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/).
+:::row:::
+   :::column span="":::
+      [![Thumbnail image for the Detached Elements video](./images/detached-elements.png)](https://www.youtube.com/watch?v=v2iy17ptmBk)
+   :::column-end:::
+   :::column span="":::
+      We're excited to announce the new Detached Elements tool in Microsoft Edge DevTools which helps you investigate and resolve DOM memory leaks.
+      
+      Memory leaks occur when the JavaScript code of an application retains more and more objects in memory instead of releasing them for the browser to garbage collect.
+      We built this tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
+      
+      For more information see [Debug DOM memory leaks with the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md), and read the corresponding blog post [Debug memory leaks with the Microsoft Edge Detached Elements tool](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/).
+   :::column-end:::
+:::row-end:::
 
 
 <!-- ====================================================================== -->
@@ -63,10 +73,16 @@ For more information see [Debug DOM memory leaks with the Detached Elements tool
 
 _Published on 22 Nov 2021._
 
-[![Thumbnail image for the Eye Dropper API video](./images/eyedropper-api.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
-
-The Microsoft Edge team specified and implemented the new EyeDropper API in collaboration with the Chromium open-source project. Provide feedback at [Issues - WICG/eyedropper | github.com](https://github.com/WICG/eyedropper-api/issues).
-
-Many creative applications enable users to pick colors from parts of an app window or even from the entire screen, typically using an eyedropper metaphor. The EyeDropper API enables authors to use a browser-supplied eyedropper in the construction of custom color pickers on the web.
-
-For more information see [Picking colors of any pixel on the screen with the EyeDropper API | web.dev](https://web.dev/eyedropper/) and [EyeDropper API - Web APIs | MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API).
+:::row:::
+   :::column span="":::
+      [![Thumbnail image for the Eye Dropper API video](./images/eyedropper-api.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
+   :::column-end:::
+   :::column span="":::
+      The Microsoft Edge team specified and implemented the new EyeDropper API in collaboration with the Chromium open-source project. Provide feedback at [Issues - WICG/eyedropper | github.com](https://github.com/WICG/eyedropper-api/issues).
+      
+      Many creative applications enable users to pick colors from parts of an app window or even from the entire screen, typically using an eyedropper metaphor. The EyeDropper API enables authors to use a browser-supplied eyedropper in the construction of custom color pickers on the web.
+      
+      For more information see [Picking colors of any pixel on the screen with the EyeDropper API | web.dev](https://web.dev/eyedropper/) and [EyeDropper API - Web APIs | MDN developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/EyeDropper_API).
+      
+   :::column-end:::
+:::row-end:::
