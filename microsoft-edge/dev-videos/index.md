@@ -28,6 +28,22 @@ To add a new video:
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
 
+
+<!-- ====================================================================== -->
+## Highlight text on the web with the CSS Custom Highlight API
+
+_Published on 28 Apr 2022._
+
+[![Thumbnail image for the CSS Custom Highlight API video](./images/css-custom-highlight-api.png)](https://www.youtube.com/watch?v=1qldqyT324o)
+
+Styling ranges of text on the web is very useful, but has historically been a complicated thing to do.
+
+The new [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is the future of highlighting text ranges on the Web. It provides web developers with JavaScript and CSS features that make it easy and performant to style any range of text.
+
+For more information see [CSS Custom Highlight API: The Future of Highlighting Text Ranges on the Web](https://css-tricks.com/css-custom-highlight-api-early-loo/).
+
+
+<!-- ====================================================================== -->
 ## Debug memory leaks with the Microsoft Edge Detached Elements tool
 
 _Published on 9 Dec 2021._
@@ -40,7 +56,9 @@ Memory leaks occur when the JavaScript code of an application retains more and m
 We built this tool with the Microsoft Teams developers, and it has already helped us find and fix memory leaks across many of our own websites and apps.
 
 For more information see [Debug DOM memory leaks with the Detached Elements tool](../devtools-guide-chromium/memory-problems/dom-leaks.md), and read the corresponding blog post [Debug memory leaks with the Microsoft Edge Detached Elements tool](https://blogs.windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/).
- 
+
+
+<!-- ====================================================================== -->
 ## The EyeDropper API
 
 _Published on 22 Nov 2021._
