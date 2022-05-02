@@ -503,8 +503,8 @@ m_webView->add_WebResourceResponseReceived(
    * `ReasonPhrase`
    * `StatusCode`
 * [CoreWebView2WebResourceResponseReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponsereceivedeventargs)
-      * `Request`
-      * `Response`
+   * `Request`
+   * `Response`
 * [CoreWebView2WebResourceResponseView Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview)
    * `Headers`
    * `ReasonPhrase`
