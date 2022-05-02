@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
+ms.date: 04/27/2022
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 
@@ -17,7 +17,7 @@ In this tutorial, you:
 *  Learn about WebView2 concepts along the way.
 
 
-* Corresponding Get Started sample at GitHub: none; WinUI 3: [Getting Started with WebView2 in WinUI3 (WinUI_Sample/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
+* Corresponding Get Started sample at GitHub: none; WinUI 3: [Getting Started with WebView2 in WinUI3 (WinUI_Sample/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
 
 
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
@@ -335,7 +335,7 @@ Local pages:
 
 GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-* [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
+* [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
 
 WinRT API Reference for WinUI 2 (UWP):

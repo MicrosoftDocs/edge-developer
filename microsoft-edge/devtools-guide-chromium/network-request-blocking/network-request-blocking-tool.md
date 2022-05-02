@@ -29,7 +29,18 @@ To block a network request:
 
 1. Click the **Add pattern** (![Add pattern icon.](media/add-pattern-icon.png)) button.  The **Enable network request blocking** checkbox is automatically selected.
 
-1. In the **Text pattern to block network requests** text box, type the URL of a network request that you want to block.  You can either type the full URL, or replace parts of it with `*` for wildcard pattern matching.
+1. In the **Text pattern to block network requests** text box, type the URL of a network request that you want to block.  You can either type the full URL, just the domain name to block all requests from this domain, or replace parts of it with `*` for wildcard pattern matching.
+   
+   For example, `contoso.com` matches URLs like:
+
+   * `https://contoso.com`
+   * `https://subdomain.contoso.com`
+   * `https://subdomain.contoso.com/path/to/resource`
+
+   And `*.png` matches URLs like:
+   
+   * `https://www.contoso.com/resource.png`
+   * `http://third-party.com/6469272/163348534-b90ea1a3-c33cbeb1aed8.png`
 
 1. Click the **Add** button:
 
