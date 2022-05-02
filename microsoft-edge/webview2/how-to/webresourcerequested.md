@@ -44,7 +44,7 @@ Instead of using the WebResourceRequested APIs, it's preferable to use these oth
 * [Basic Authentication](/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
 * [General navigation](/microsoft-edge/webview2/concepts/navigation-events) 
 * [Managing cookies in WebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
-* [CoreWebView2Settings.UserAgent Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#useragent) - Sets the user agent string.
+* Setting the user agent string.  See [UserAgent Property](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2settings#useragent).
 
 **Note:** For URLs with virtual hostnames, using the `WebResourceRequested` event isn't supported.  This is because the `WebResourceRequested` event isn't fired for the [SetVirtualHostNameToFolderMapping method](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping).<!-- or ClearVirtualHostNameToFolderMapping. -->
 
