@@ -1043,6 +1043,10 @@
               href: webview2/concepts/basic-authentication.md
               displayName: auth, Basic authentication for WebView2 apps  # top-of-page title
 
+            - name: Custom management of network requests
+              href: webview2/how-to/webresourcerequested.md
+              displayName: WebResourceRequested, WebResourceResponseReceived
+
             - name: Web and native interop
               items:
                 - name: Interop of native-side and web-side code
