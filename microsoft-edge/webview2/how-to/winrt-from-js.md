@@ -46,8 +46,9 @@ First let's find a native object (class) that we're interested in.  For this exa
 
 The `Language` class API allows getting information from the client's native OS.  Your WebView2 host app can call methods and access properties of the `Language` object from the host app's web-side JavaScript code.
 
+
 <!-- ====================================================================== -->
-## Step 1: Install prerequisites, clone the repo and build webview2_sample_uwp
+## Step 1: Clone the repo and build the WebView2 UWP sample
 
 1. If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
@@ -85,7 +86,7 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
 
 
    <!-- =============================================== -->
-   **Step 2A. Add the WebView2 WinRT JS Projection tool:**
+   **Step 2A. Add a project for the WebView2 WinRT JS Projection tool:**
 
 1. Right-click the solution, and then select **Add** > **New project**.  The **Add a new project** dialog box opens.
 
@@ -103,7 +104,7 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
 
 1. Click the **Create** button.  The **New Universal Windows Platform Project** dialog opens:
 
-   ![The 'New UWP project' dialog.](winrt-from-js-images/03b-new-uwpp.png)
+   ![The 'New UWP project' dialog.](winrt-from-js-images/new-uwpp.png)
 
 1. Click the **OK** button.
 
@@ -115,37 +116,61 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
 
 
    <!-- =============================================== -->
-   **Step 2B. Install NuGet packages:**
+   **Step 2B. Install the NuGet package for Windows Implementation Library (WIL), for the WinRTAdapter project:**
 
-   Next, manage NuGet packages for the WinRT `Adapter` class:
+   Next, manage NuGet packages for the WinRT `Adapter` class.  First, in the WinRTAdapter project, install the NuGet package for Windows Implementation Library (WIL), as follows:
 
-1. In **Solution Explorer**, right-click the **WinRTAdapter** project, and then select **Manage nuget packages**.  
+1. In **Solution Explorer**, right-click the **WinRTAdapter** project, and then select **Manage NuGet Packages**.  The **NuGet Package Manager** window opens in Visual Studio.
 
-1. Download and install the Windows Implementation Library (WIL). to do this, enter **Windows Implementation Library** in the Search box, and then select the Windows Implementation Library card.
+1. In the **NuGet Package Manager** window, in the **Search** box, enter **Windows Implementation Library**, and then select the **Windows Implementation Library** card:
 
    ![NuGet Package Manager, selecting the 'Windows Implementation Library' package.](winrt-from-js-images/pkg-mgr-wil.png)
 
 1. Click the **Install** button.
 
-1. Next, in the NugGet Package Manager, download and install a prerelease version of the WebView2 SDK. to do this, enter **WebView2** in the **Search** box.
+   WIL is now installed for the **WinRTAdapter** project.
+
+   Windows Implementation Library (WIL) is a header-only C++ library to make using COM coding for Windows easier.  It provides readable, type-safe C++ interfaces for Windows COM coding patterns.
 
    <!-- See [Get started with WebView2 in Win32 apps > Step 7 - Install the Windows Implementation Libraries (WIL)](../get-started/win32#step-7---install-the-windows-implementation-libraries-wil) -->
 
+
+   <!-- =============================================== -->
+   **Step 2C. Install the NuGet package for WebView2 prerelease SDK, for the WinRTAdapter project:**
+
+1. Next, in **NugGet Package Manager**, download and install a prerelease version of the WebView2 SDK.  To do this, in the **Search** box, enter **WebView2**.
+
    ![NuGet Package Manager, selecting the WebView2 SDK package.](winrt-from-js-images/pkg-mgr-wv2-sdk.png)
+
+   The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
 
 
    <!-- =============================================== -->
-   **Step 2C. Configure the WebView2 WinRT JS Projection tool:**
+   **Step 2D. Install the NuGet package for WebView2 prerelease SDK, for the WebView2 UWP project:**
 
-   Let's configure the WebView2 WinRT JS Projection tool now, to incorporate the WinRT class that you want to use.
+1. In Solution Explorer, right-click the **webview2_sample_uwp** project, and then select **Manage NuGet Packages**.
 
-1. To open up the configuration menu, right click the **WinRTAdapter** project, and then select **Properties**.  The **WinRTAdapter Property Pages** window opens.
+1. In **NugGet Package Manager**, in the **Search** box, enter **WebView2**.
 
-1. On the left, expand the **Common Properties** > **WebView2** dropdown list.<!--confirm control type-->
+   ![NuGet Package Manager, selecting the WebView2 SDK package, for the webview2_sample_uwp project.](winrt-from-js-images/pkg-mgr-wv2-sdk-for-uwp-project.png)
+
+   The WebView2 prerelease SDK is now installed for the **WinRTAdapter** project.
+
+
+   <!-- =============================================== -->
+   **Step 2D. Configure the WebView2 WinRT JS Projection tool, to generate source code for selected API items:**
+
+   Next, configure the WebView2 WinRT JS Projection tool, to incorporate the WinRT class that you want to use.  In the example steps below, we'll specify two `Windows` namespaces, and the tool will generate source code for only those namespaces.
+
+   **RESUME HERE**
+
+1. In Solution Explorer, right-click the **WinRTAdapter** project, and then select **Properties**.  The **WinRTAdapter Property Pages** window opens.
+
+1. On the left, select **Common Properties** > **WebView2**.
 
    ![The 'WinRTAdapter Property Pages' window, with 'Common Properties > WebView2' expanded in the tree on the left.](winrt-from-js-images/adap-props-common-wv2.png)
 
-1. Set **Use WV2WinRT tool** to **Yes**, and set **JavaScript Case** to **Yes**.
+1. Set **Use the WV2WinRT tool** to **Yes**, and set **JavaScript Case** to **Yes**.
 
    <!-- ## Step 5. Generating source code for a filtered subset of classes -->
 
@@ -153,19 +178,17 @@ The recommended, regular way to set up the WebView2 WinRT JS Projection tool is 
 
    For this example project, include the following two namespaces.  Enter them as follows, if you are in the Edit view / editor:<!--UI name?-->
 
-   * **Windows.System.UserProfile**
+1. In the topmost text box of the **Include filters** dialog, enter: **Windows.System.UserProfile**
 
-1. Add a reference for the tool itself, such as params.
+1. In the same text box, below the previous value you entered, add a reference for the tool itself, such as params: **Windows.Globalization.Language**
 
-   **Windows.Globalization.Language**
+   ![Include filters dialog box.](winrt-from-js-images/include-filters.png)
 
-   ![Alt-text 08.](winrt-from-js-images/08.png)
+1. Click the **OK** button to close the **Include filters** dialog box.
 
-1. Click the **OK** button.
+1. Make sure that the **webview2_uwp_sample** has a reference to the **WinRTAdapter** project.  To do this, __.
 
-1. Make sure that the **webview2_uwp_sample** has a reference to the WinRT adapter project.
-
-   ![Alt-text 09.](winrt-from-js-images/09.png)
+   ![In Solution Explorer for the WebView2 UWP project, selecting 'Add Reference'.](winrt-from-js-images/sln-xpl-wv2-uwp-add-ref.png)
 
    ![Alt-text 10.](winrt-from-js-images/10.png)
 
