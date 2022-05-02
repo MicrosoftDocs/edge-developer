@@ -249,19 +249,23 @@ We're continuing to improve this feature and have set up a tracking issue on Git
 <!-- ====================================================================== -->
 ## Device and state emulation
 
-The browser preview tab has a emulation toolbar on the bottom that allows you to simulate different environments. You can select from a dropdown of different devices. You can also use the form to change the dimensions and rotate the viewport. You also get two more buttons: one to emulate CSS media queries and the other to try the experience of the current web project with different visual deficiencies.
+The browser preview tab has an emulation toolbar on the bottom that enables you to simulate different environments. You can select from a dropdown list of different devices. You can use the form to change the dimensions and rotate the viewport.
+
+The emulation toolbar also includes two buttons in the bottom right corner. Click ICON to emulate CSS media queries and the other to try the experience of the current web project with different visual deficiencies.
+
+<!-- Need light themed images for the CSS media query and visual deficiencies buttons and the precise UI names -->
 
 ![Browser preview in the extension with emulation tool bar showing](media/edge-for-code-screencast-v2.msft.png)
 
-You can select different devices, which will resize the viewport to the correct measurements and simulate touch interfaces. For example, an iPhone.
+You can select from a number of different devices. When selected, the viewport resizes to the correct measurements and simulates the touch interface. For example, an iPhone.
 
 ![Browser preview in the extension showing the web product in an emulated phone layout](media/edge-for-code-screencast-v2-emulating.msft.png)
 
-The CSS media feature emulation button allows you to try out how your product looks like in print mode, switch between dark and light mode and emulate forced colors.
+The CSS media feature emulation button enables you to test how your product looks like in print mode. You can switch between dark and light mode and emulate forced colors.
 
 ![Browser preview in the extension showing the web product in forced color mode](media/edge-for-code-forced-colours.msft.png)
 
-The visual deficiencies emulation button allows you to try your product in a blurred mode or in different color deficiencies.
+The visual deficiencies emulation button lets you test your product in a blurred mode or in different color deficiencies.
 
 ![Browser preview in the extension showing the web product in a blurred emulation](media/edge-for-code-blurred.msft.png)
 
