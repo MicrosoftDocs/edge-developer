@@ -57,6 +57,34 @@ The following items are now stable:
 *	[Default Download API](#) which provides a way to customize the default download location.
 
 <!-- ====================================================================== -->
+## 1.0.1243-prerelease
+  
+Release Date: May 2, 2022  
+  
+[NuGet package for WebView2 SDK 1.0.1243](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1243-prerelease)  
+  
+For full API compatibility, 102.0.1243.0 or higher.  
+
+### General
+
+#### Promotions
+
+*	Add [ServerCertificateErrorDetected API](#) which allows you to hanle the event when the WebView2 cannot verify server's digital certificate.
+* 	The [ClearBrowsingData API](#):
+	*  clearBrowsingDataInTimeRange
+	*  clearBrowsingDataAll
+
+#### Bug Fixes
+  
+*   Fixed an unavoidable crash that occurred in the WPF control's OnWindowPositionChanged event.  
+*   Fixed the issue with CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess isn't working properly in .NET SDK. 
+*   Fixed a runtime regression that caused some Office add-ins which use host objects to crash during operations that previously worked.  
+*   Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling. 
+*   Starting with runtime v102, if you set ZoomFactor to the maximum of 5, then set it higher like 6, the value of ZoomFactor will be correctly returned as 5 instead of 6.   
+*   Fixed a regression and ensure that WebView2 creation fails quickly with HRESULT_FROM_WIN32(ERROR_INVALID_STATE) instead of time out.  
+*   Fixed a bug where changes from Chromium broke WebView2 background color.   
+
+<!-- ====================================================================== -->
 
 ## 1.0.1185.39
   
