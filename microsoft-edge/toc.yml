@@ -31,6 +31,10 @@
               displayName: 
 
 # What's New pages ------------------------------------------------------------
+            - name: Microsoft Edge 101
+              href: devtools-guide-chromium/whats-new/2022/04/devtools-101.md
+              displayName: what's new, announcements, release notes
+
             - name: Microsoft Edge 100
               href: devtools-guide-chromium/whats-new/2022/03/devtools-100.md
               displayName: what's new, announcements, release notes
@@ -284,9 +288,9 @@
 # 3D View tool ----------------------------------------------------------------
             - name: 3D View tool
               items:
-                - name: Navigate z-index, DOM, and layers using the 3D View tool  # added article
+                - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
                   href: devtools-guide-chromium/3d-view/index.md
-                  displayName: 3D View tool, Layers tool
+                  displayName: 3D View tool, Layers tool, composited layers
 # Animations tool -------------------------------------------------------------
             - name: Animations tool
               items:
@@ -1159,6 +1163,10 @@
               href: webview2/how-to/static.md
               displayName: Statically link the WebView2 loader library, single-file app  # old title
 
+            - name: Publish a UWP WebView2 app to the Microsoft Store
+              href: webview2/how-to/publish-uwp-app-store.md
+              displayName: Partner Center, Microsoft Store
+
         - name: Release Notes for the WebView2 SDK
           href: webview2/release-notes.md
           displayName: 
@@ -1299,20 +1307,16 @@
               href: visual-studio-code/index.md
               displayName: 
 
+            - name: Microsoft Edge DevTools extension
+              href: visual-studio-code/microsoft-edge-devtools-extension.md
+              displayName: 
+
             - name: Open source files in Visual Studio Code
               href: devtools-guide-chromium/sources/opening-sources-in-vscode.md
               displayName: 
 
             - name: Debugger for Edge
               href: visual-studio-code/debugger-for-edge.md
-              displayName: 
-
-            - name: Microsoft Edge DevTools extension
-              href: visual-studio-code/microsoft-edge-devtools-extension.md
-              displayName: 
-
-            - name: webhint
-              href: visual-studio-code/webhint.md
               displayName: 
 
         - name: Visual Studio for web development

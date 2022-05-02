@@ -349,6 +349,7 @@ The [Console](/microsoft-edge/devtools-guide-chromium/console/) tool is availabl
 
 ![The DevTools Console inside the extension as an own tab.](media/edge-devtools-for-vscode-console-full.png)
 
+
 You can see your [log messages](/microsoft-edge/devtools-guide-chromium/console-log), access the `window` object and use the [DOM interaction convenience methods](/microsoft-edge/devtools-guide-chromium/console-dom-interaction). You can also [filter the Console](/microsoft-edge/devtools-guide-chromium/console-filters) and set [live expressions](/microsoft-edge/devtools-guide-chromium/live-expressions). 
 
 You can also use the Console alongside the Elements tool if you open it in the lower panel:
@@ -358,6 +359,20 @@ You can also use the Console alongside the Elements tool if you open it in the l
 If you launch the extension from the Run and Debug workflow, the [Debug Console of Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) gives you most of the functions of the DevTools [Console](/microsoft-edge/devtools-guide-chromium/console/) inside of Visual Studio Code, but no filtering options and a more basic results display:
 
 ![The DevTools Console is available when the extension is launched from a Run and Debug workflow.](media/edge-devtools-for-vscode-console-integration.png)
+
+
+**Turning on this preview feature:**
+
+<!-- todo: delete temp note: -->
+As of April 20, 2022, to make the **Console** tool visible, target the Canary version of Microsoft Edge.  To do this:
+
+1. In Visual Studio Code, in the Activity Bar on the left, click the **Microsoft Edge Tools** button.  The MICROSOFT EDGE TOOLS pane opens.
+
+1. Hover to the right of **TARGETS**, and then click **Open Settings** (**...**).
+
+1. In the **Vscode-edge-devtools: Browser Flavor** dropdown list, select **Canary**.  At a later date, you'll be able to select any version.
+
+1. Click **x** to close **Settings**.
 
 
 <!-- ====================================================================== -->
