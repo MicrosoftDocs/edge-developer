@@ -61,7 +61,7 @@ the host app
 
 
 <!-- ====================================================================== -->
-## Intercepting a request (to monitor or modify it)
+## Intercepting a request, to monitor or modify it
 
 Your host app can _intercept_ a request that is sent from the WebView2 control to the HTTP server, read or modify the request, and then send the unchanged or modified request to the HTTP server (or to local code instead of the HTTP server). 
 
@@ -135,7 +135,7 @@ Intercepting requests sent from WebView2 enables you to further configure your r
 
 
 <!-- ====================================================================== -->
-### Example: Intercepting a request (to monitor or modify it)
+### Example: Intercepting a request, to monitor or modify it
 <!-- ## Example: Header modification when making a request -->
 
 <!-- this example doesn't exist in the sample repo -->
@@ -196,7 +196,7 @@ m_webView->add_WebResourceRequested(
 ---
 
 <!-- ====================================================================== -->
-## Overriding a response (to proactively replace it)
+## Overriding a response, to proactively replace it
 <!-- Overriding and providing new responses to WebView2 -->
 <!-- ## Overriding the response and providing a different, custom response to the WebView2 control -->
 
@@ -219,7 +219,7 @@ By default, the HTTP server sends responses to the WebView2 control.  Your host 
 <!-- todo: remove "then" from diagram step 8 -->
 
 
-### Example: Overriding a response (to proactively replace it)
+### Example: Overriding a response, to proactively replace it
 
 # [.NET](#tab/dotnet)
 
