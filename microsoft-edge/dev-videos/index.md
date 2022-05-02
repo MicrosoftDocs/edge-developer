@@ -30,7 +30,7 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
-## Highlight text on the web with the CSS Custom Highlight API
+## Web Platform - Highlight text on the web with the CSS Custom Highlight API
 
 _Published on 28 Apr 2022._
 
@@ -44,7 +44,7 @@ For more information see [CSS Custom Highlight API: The Future of Highlighting T
 
 
 <!-- ====================================================================== -->
-## Debug memory leaks with the Microsoft Edge Detached Elements tool
+## DevTools - Debug memory leaks with the Microsoft Edge Detached Elements tool
 
 _Published on 9 Dec 2021._
 
@@ -59,7 +59,7 @@ For more information see [Debug DOM memory leaks with the Detached Elements tool
 
 
 <!-- ====================================================================== -->
-## The EyeDropper API
+## Web Platform - The EyeDropper API
 
 _Published on 22 Nov 2021._
 
