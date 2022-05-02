@@ -32,7 +32,7 @@ Use **Memory Inspector** to view and interact with the following types of object
 * [DataView](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView)
 * [WebAssembly (Wasm) memory](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)
 
-Using Memory Inspector you can view the different types of memory objects, navigate, and select the types to be used to interpret the values. It shows the ASCII values directly next to the bytes, and lets you select different endianness.
+Using **Memory Inspector** you can view the different types of memory objects, navigate, and select the types to be used to interpret the values. It shows the ASCII values directly next to the bytes, and lets you select different endianness.
 
  ![Memory Inspector panel](../media/memory-inspector-panel.png)
 
