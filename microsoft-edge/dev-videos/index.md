@@ -63,7 +63,7 @@ For more information see [Debug DOM memory leaks with the Detached Elements tool
 
 _Published on 22 Nov 2021._
 
-[![Thumbnail image for the Eye Dropper API video](./images/eye-dropper.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
+[![Thumbnail image for the Eye Dropper API video](./images/eyedropper-api.png)](https://www.youtube.com/watch?v=XZUEnUbI7dE)
 
 The Microsoft Edge team specified and implemented the new EyeDropper API in collaboration with the Chromium open-source project. Provide feedback at [Issues - WICG/eyedropper | github.com](https://github.com/WICG/eyedropper-api/issues).
 
