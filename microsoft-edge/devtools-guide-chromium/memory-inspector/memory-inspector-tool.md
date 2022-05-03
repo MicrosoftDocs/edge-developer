@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 04/26/2022
+ms.date: 05/04/2022
 ---
 
 <!-- Copyright Kim-Anh Tran
@@ -64,7 +64,7 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
 
     * Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)) at the end of the `buffer` property line, or
  
-    * From the context menu. Right click on the `buffer` property and select **Reveal in Memory Inspector panel**.
+    * From the context menu. Right click the `buffer` property and select **Reveal in Memory Inspector panel**.
 
     ![Open Memory Inspector from the buffer property line context menu](../media/memory-inspector-open-from-buffer.png)
 
@@ -76,7 +76,7 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
 
 You can inspect multiple objects at the same time such as DataView and TypedArray.
 
-With the demo webpage paused at the breakpoint, object `b2` in the **Scope** view is a TypedArray. Right click on the `b2` object and select **Reveal in Memory Inspector panel**
+With the demo webpage paused at the breakpoint, object `b2` in the **Scope** view is a TypedArray. Right click the `b2` object and select **Reveal in Memory Inspector panel**
 
 A new tab for the `b2` object opens next to the first tab, which represents the `buffer` object in Memory Inspector.
 
@@ -133,7 +133,7 @@ You can change the encoding view using the drop-down list. For integers you can 
 
 Complete the following steps to debug a webpage in Memory Inspector.
 
-1. In the **Navigation bar** change the address to `0x00000028`.
+1. In the **Navigation bar** change the address to `0x00000027`.
 
 1. View the ASCII representation and the value interpretations. All values should be zero or empty.
 
@@ -183,7 +183,7 @@ For WebAssembly (Wasm) memory inspection, the process is similar to inspecting J
 
 1. Click on the **Reveal in Memory Inspector panel** icon (![Reveal in Memory Inspector panel icon](../media/memory-inspector-open-from-buffer-icon.png)) at the end of the `$imports.memory` property line. 
 
-    The Wasm ArrayBuffer opens in Memory Inspector.
+    The Wasm ArrayBuffer opens in **Memory Inspector**.
     
     ![Memory Inspector panel Wasm](../media/memory-inspector-panel-wasm.png)
 
