@@ -244,6 +244,7 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 1. Make sure the **WinRTAdapter Property Pages** dialog looks like the following, for this walkthrough:
 
+   <!-- 1st use of png: -->
    ![The 'WinRTAdapter Property Pages' dialog, with 'Common Properties > WebView2' expanded.](winrt-from-js-images/winrtadapter-property-pages.png)
 
 1. Click the **OK** button to close the **Property Pages** dialog box.
@@ -331,7 +332,6 @@ Next, use the DevTools **Console** to demonstrate that web-side code can call th
 
 This section is for reference.
 
-<!-- 1st use of png: -->
 <!-- 2nd use of png: -->
 ![Properties that are listed in the WinRTAdapter Property Pages.](winrt-from-js-images/winrtadapter-property-pages.png)
 
