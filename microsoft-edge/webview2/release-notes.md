@@ -50,11 +50,11 @@ For full API compatibility, 101.1210.30 or higher.
 
 The following items are now stable:
 
-*   Support for [multiple user profiles](#) in WebView2.
+*   Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1210.30) in WebView2.
 
-*	[Theming API](#) which provides a way to customize the WebView2 color theme as light, dark, or system.
+*	[Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.30) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
 
-*	[Default Download API](#) which provides a way to customize the default download location.
+*	[Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.30) which provides a way to customize the default download location.
 
 <!-- ====================================================================== -->
 ## 1.0.1243-prerelease
@@ -69,8 +69,8 @@ For full API compatibility, 102.0.1243.0 or higher.
 
 #### Promotions
 
-*	Add [ServerCertificateErrorDetected API](#) which allows you to hanle the event when the WebView2 cannot verify server's digital certificate.
-* 	The [ClearBrowsingData API](#):
+*	Add [ServerCertificateErrorDetected API](/microsoft-edge/webview2/reference/win32/icorewebview2_13?view=webview2-1.0.1243-prerelease) which allows you to hanle the event when the WebView2 cannot verify server's digital certificate.
+* 	The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1243-prerelease):
 	*  clearBrowsingDataInTimeRange
 	*  clearBrowsingDataAll
 
