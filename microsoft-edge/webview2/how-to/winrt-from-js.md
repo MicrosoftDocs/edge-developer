@@ -33,7 +33,7 @@ This article walks you through the following main steps:
 <!-- ====================================================================== -->
 ## WinRT vs. .NET
 
-This article is for the WinRT WebView2 APIs, not for the .NET WebView2 APIs.  The C# code in this article will build, but not run, for the .NET WebView2 APIs.  If you were to call `AddHostObjectToScript` using this article's C# code for .NET WebView2 APIs, that would produce an error message.
+This article is for the WinRT WebView2 APIs, not for the .NET WebView2 APIs.  The C# code in this article will build, but not run, for the .NET WebView2 APIs.  If you were to call `AddHostObjectToScript` by using this article's C# code for .NET WebView2 APIs, that would produce an error message.
 
 The wv2winrt tool (the WebView2 WinRT JS Projection tool) is needed when projecting WinRT objects, because WinRT by default doesn't support `IDispatch`, which WebView2's Win32 and .NET platforms support.
 
@@ -73,9 +73,9 @@ Then in the main body of your code, calls to projected objects look like the fol
 <!-- ====================================================================== -->
 ## Step 1: Clone the repo and build the WebView2 UWP sample
 
-1. If Visual Studio 2015 or later is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+1. If Visual Studio 2015 or later isn't already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
-1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) is not already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+1. If a preview channel of Microsoft Edge (Beta, Dev, or Canary) isn't already installed, in a separate window or tab, see [Install a preview channel of Microsoft Edge](../how-to/machine-setup.md#install-a-preview-channel-of-microsoft-edge) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
    If you have your own app code base already, you can open that project in Visual Studio, instead of starting with the **webview2_sample_uwp** sample from the `WebView2Samples` repo.
 
@@ -223,9 +223,7 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 1. Set **Use the wv2winrt tool** to **Yes**.
 
-1. Set **JavaScript Case** to **Yes**.
-
-   ![The 'WinRTAdapter Property Pages' dialog, with 'Common Properties > WebView2' expanded.](winrt-from-js-images/adap-props-common-wv2.png)
+1. Set **Use JavaScript case** to **Yes**.
 
 1. In the **Include filters** row, click the right-hand column, and then click **Edit**.  The **Include filters** dialog opens.
 
@@ -243,6 +241,10 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
    You need to specify the full name of the namespaces or classes, as shown above.
 
 1. Click the **OK** button to close the **Include filters** dialog box.
+
+1. Make sure the **WinRTAdapter Property Pages** dialog looks like the following, for this walkthrough:
+
+   ![The 'WinRTAdapter Property Pages' dialog, with 'Common Properties > WebView2' expanded.](winrt-from-js-images/winrtadapter-property-pages.png)
 
 1. Click the **OK** button to close the **Property Pages** dialog box.
 
@@ -310,14 +312,14 @@ Next, use the DevTools **Console** to demonstrate that web-side code can call th
 
 1. If the Microsoft Edge DevTools window isn't visible, press `Alt+Tab` to display the DevTools window.  If needed, move the DevTools window.
 
-1. In the **Console** of DevTools, paste the following code:
+1. In the **Console** of DevTools, paste the following code, and then press `Enter`:
 
    ```javascript
    const Windows = chrome.webview.hostObjects.sync.Windows;
    (new Windows.Globalization.Language("en-US")).displayName;
    ```
 
-   The **Console** outputs `English (United States)`, or another language, demonstrating that your app's host-side code can be called from web-side code.
+   The **Console** outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side code can be called from web-side code.
 
    ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
@@ -329,6 +331,8 @@ Next, use the DevTools **Console** to demonstrate that web-side code can call th
 
 This section is for reference.
 
+<!-- 1st use of png: -->
+<!-- 2nd use of png: -->
 ![Properties that are listed in the WinRTAdapter Property Pages.](winrt-from-js-images/winrtadapter-property-pages.png)
 
 For help about a property, click a property row.  Help is shown at the bottom of the dialog.
@@ -338,8 +342,8 @@ Command-line help contains similar information for the parameters of `wv2winrt.e
 | Parameter | Description |
 |---|---|
 | `verbose` | List some content to standard out including which files have been created and information about the include and exclude rules. |
-| `include` | List as above will exclude namespaces and runtimeclasses by default except those listed. The include declarations may be either namespaces which include everything in that namespace, or runtimeclass names to include just that runtimeclass. (There's currently a bug that if you include a type that depends on an excluded type, you may end up with generated code that cannot compile.) |
-| `use-javascript-case` | Changes the generated code to produce methods names, property names, and so on that use the same casing style as Chakra JavaScript WinRT projection. The default is to produce names that match the winrt. |
+| `include` | List as above will exclude namespaces and runtimeclasses by default except those listed. The include declarations may be either namespaces which include everything in that namespace, or runtimeclass names to include just that runtimeclass. |
+| `use-javascript-case` | Changes the generated code to produce methods names, property names, and so on, that use the same casing style as Chakra JavaScript WinRT projection. The default is to produce names that match the winrt. |
 | `output-path` | Sets the path in which generated files will be written. |
 | `output-namespace` | Sets the namespace to use for the generated WinRT class (see the next section). |
 | `winmd-paths` | A space-delimited list of all the winmd files that should be examined for code generation. |
