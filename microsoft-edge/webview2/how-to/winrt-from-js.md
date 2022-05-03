@@ -36,7 +36,7 @@ For .NET, see [Call native-side code from web-side code](hostobject.md) instead 
 <!-- ====================================================================== -->
 ## Let's get started!
 
-First let's find a native object (class) that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Language Class](/uwp/api/windows.globalization.language?view=winrt-22000) enables getting information from the client's native OS.
+First let's find a native object (class) that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Language Class](/uwp/api/windows.globalization.language) enables getting information from the client's native OS.
 
 In the WebView2 host app, the web-side JavaScript code can then access properties and methods on the `Language` object that's in the native-side code.  At the end of this example walkthrough, you'll use the **Console** of Microsoft Edge DevTools to test reading the host's `displayName` property of the `Language` class:
 
