@@ -48,7 +48,7 @@ For .NET use of `AddHostObjectToScript`, see [Call native-side code from web-sid
 <!-- ====================================================================== -->
 ## Let's get started!
 
-First let's find a native object (class) that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Language Class](/uwp/api/windows.globalization.language) enables getting information from the client's native OS.
+First let's find WinRT APIs that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Language Class](/uwp/api/windows.globalization.language) enables getting language information from the client's native OS.
 
 In the WebView2 host app, the web-side JavaScript code can then access methods and properties on the `Language` object that's in the native-side code.  At the end of this example walkthrough, you'll use the **Console** of Microsoft Edge DevTools to test reading the host's `displayName` property of the `Language` class:
 
@@ -120,9 +120,7 @@ Add a project for the wv2winrt tool, as follows:
 
 1. In the **Search** textbox, enter **Windows Runtime Component (C++/WinRT)**.
 
-   <!-- delete paragraph? why would you want to do this? -->
-   **Note:** Alternative approach: If you don't add a project using the project template for **Windows Runtime Component (C++/WinRT)** as described in the numbered steps below, then you'll need to instead install the **Universal Windows Platform development** workload, by following the steps in [UWP applications > Introduction to C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt#visual-studio-support-for-cwinrt-xaml-the-vsix-extension-and-the-nuget-package).
-   <!--That page reads: "From within the Visual Studio Installer, install the Universal Windows Platform development workload. In **Installation Details** > **Universal Windows Platform development**, check the **C++ (v14x) Universal Windows Platform tools** option(s), if you haven't already done so.  And, in **Windows Settings** > **Update & Security** > **For developers**, choose the **Developer mode** option rather than the **Sideload apps** option."-->
+   **Alternative approach:** If you don't add a project using the project template for **Windows Runtime Component (C++/WinRT)** as described in the numbered steps below, then you'll need to instead install the **Universal Windows Platform development** workload, by following the steps in [UWP applications > Introduction to C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt#visual-studio-support-for-cwinrt-xaml-the-vsix-extension-and-the-nuget-package).
 
 1. Select the **Windows Runtime Component (C++/WinRT)** card, and then click the **Next** button:
 
@@ -208,15 +206,15 @@ The WebView2 prerelease SDK is now installed for the **webview2_sample_uwp** pro
 
 
 <!-- =============================================== -->
-## Step 6. Generate source code for selected host API items
+## Step 6. Generate source code for selected host APIs
 
-Next, configure the wv2winrt tool (the WebView2 WinRT JS Projection tool), to incorporate the WinRT classes that you want to use.  This generates source files that will then be compiled, rather than adding a `#` include of entire header files.  Generating code for these API items enables your web-side JavaScript code to call these API items.
+Next, configure the wv2winrt tool (the WebView2 WinRT JS Projection tool), to incorporate the WinRT classes that you want to use.  This generates source files that will then be compiled.  Generating code for these APIs enables your web-side JavaScript code to call these APIs.
 
-In the example steps below, we'll specify two `Windows` namespaces, and the wv2winrt tool will generate source code for only those namespaces:
+In the example steps below, we'll specify two `Windows` namespaces, and the wv2winrt tool will generate source code for only APIs under those namespaces:
 *  `Windows.System.UserProfile` <!-- why add Windows.System.UserProfile? -->
 *  `Windows.Globalization.Language`
 
-Later, when the sample app is running, you'll call these API items from the DevTools Console, to demonstrate that these specified host-side API items can be called from web-side code.
+Later, when the sample app is running, you'll call these APIs from the DevTools Console, to demonstrate that these specified host-side APIs can be called from web-side code.
 
 In this walkthrough, specify two `Windows` namespaces, as follows:
 
@@ -316,7 +314,7 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 <!-- =============================================== -->
 ## Step 9. Call methods and properties on the host object from web-side JavaScript
 
-Next, use the DevTools Console to demonstrate that web-side code can call the included, specified host-side API items.
+Next, use the DevTools Console to demonstrate that web-side code can call the included, specified host-side APIs.
 
 1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl+Shift+I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.  The Microsoft Edge DevTools window opens.
 
