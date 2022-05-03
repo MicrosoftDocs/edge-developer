@@ -27,7 +27,7 @@ This article walks you through the following main steps:
 
 1. Call `AddHostObjectToScript`, in the WinUI 2 (UWP) sample WebView2 browser app project (**webview2_sample_uwp**).
 
-1. Call methods and properties on the host object from your web-side JavaScript code (or from the DevTools **Console**).
+1. Call methods and properties on the host object from your web-side JavaScript code (or from the DevTools Console).
 
 
 <!-- ====================================================================== -->
@@ -35,7 +35,12 @@ This article walks you through the following main steps:
 
 This article is for WinRT WebView2 APIs, not for .NET WebView2 APIs.  The C# code in this article will build, but not run, for .NET WebView2 APIs.  Calling `AddHostObjectToScript` using this article's C# code for .NET WebView2 APIs would produce an error message.
 
-The wv2winrt tool (the WebView2 WinRT JS Projection tool) is needed when projecting WinRT objects, because WinRT by default doesn't support `IDispatch`, which WebView2's Win32 and .NET platforms support.
+The wv2winrt tool (the WebView2 WinRT JS Projection tool) is needed when projecting WinRT objects, because WinRT doesn't support `IDispatch` or any other mechanism to dynamically inspect and interact with WinRT objects, which WebView2's Win32 and .NET platforms support.
+<!--
+`IDispatch` is a way to:
+*  Dynamically inspect COM objects, to discover methods, properties, and events.
+*  Interact with COM objects, to call methods, get or set properties, and subscribe to and receive events.
+-->
 
 For .NET use of `AddHostObjectToScript`, see [Call native-side code from web-side code](hostobject.md) instead of this article.
 
@@ -52,11 +57,11 @@ const Windows = chrome.webview.hostObjects.sync.Windows;
 (new Windows.Globalization.Language("en-US")).displayName;
 ```
 
-The **Console** will then output `English (United States)`, or another language display name, demonstrating that you've called native-side WinRT code from web-side JavaScript code:
+The DevTools Console will then output `English (United States)`, or another language display name, demonstrating that you've called native-side WinRT code from web-side JavaScript code:
 
 ![Use the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
-Similarly, in actual code rather than in the DevTools **Console**, you access the host object first by setup code for the script:
+Similarly, in actual code rather than in the DevTools Console, you access the host object first by setup code for the script:
 
 ```javascript
 // early in setup code:
@@ -211,7 +216,7 @@ In the example steps below, we'll specify two `Windows` namespaces, and the wv2w
 *  `Windows.System.UserProfile` <!-- why add Windows.System.UserProfile? -->
 *  `Windows.Globalization.Language`
 
-Later, when the sample app is running, you'll call these API items from the **Console** of DevTools, to demonstrate that these specified host-side API items can be called from web-side code.
+Later, when the sample app is running, you'll call these API items from the DevTools Console, to demonstrate that these specified host-side API items can be called from web-side code.
 
 In this walkthrough, specify two `Windows` namespaces, as follows:
 
@@ -305,30 +310,73 @@ Next, pass the WinRT object from the native side of the host app to the web side
 
    ![The WebView2 WinUI 2 UWP Sample window.](winrt-from-js-images/webview2-winui-2-uwp-sample-app-window.png)
 
-The host app's web-side code, including DevTools **Console**, can now call methods and properties of the specified namespaces or classes of the host object.
+The host app's web-side code (and the DevTools Console) can now call methods and properties of the specified namespaces or classes of the host object.
 
 
 <!-- =============================================== -->
 ## Step 9. Call methods and properties on the host object from web-side JavaScript
 
-Next, use the DevTools **Console** to demonstrate that web-side code can call the included, specified host-side API items.
+Next, use the DevTools Console to demonstrate that web-side code can call the included, specified host-side API items.
 
 1. Click in the main part of the WebView2 sample app window to give it focus, and then press `Ctrl+Shift+I` to open Microsoft Edge DevTools.  Or, right-click the page, and then select **Inspect**.  The Microsoft Edge DevTools window opens.
 
 1. If the Microsoft Edge DevTools window isn't visible, press `Alt+Tab` to display the DevTools window.  If needed, move the DevTools window.
 
-1. In the **Console** of DevTools, paste the following code, and then press `Enter`:
+1. In the DevTools Console, paste the following code, and then press `Enter`:
 
    ```javascript
    const Windows = chrome.webview.hostObjects.sync.Windows;
    (new Windows.Globalization.Language("en-US")).displayName;
    ```
 
-   The **Console** outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side code can be called from web-side code.
+   The Console outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side code can be called from web-side code.
 
    ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
 1. Close the UWP sample app.  The DevTools window also closes.
+
+
+<!-- ====================================================================== -->
+## Make AddHostObjectToScript act like Chakra WinRT projection
+
+The `AddHostObjectToScript` feature defaults to using asynchronous and verbose proxies.  You can read more about that in the `AddHostObjectToScript` documentation; use the [See also](#see-also) links below.  To make `AddHostObjectToScript` act more like the Chakra WinRT projection, set the following properties:
+
+* `chrome.webview.hostObjects.option.defaultSyncProxy` - Proxies may either be asynchronous or synchronous.  Normally we know, when calling a method on a synchronous proxy, that the result should also be a synchronous proxy.  But in some cases, we lose that context, such as when providing a reference to a function to native code, and then native code later calling that function.  In these cases, the proxy will be asynchronous, unless this property is set.
+
+* `chrome.webview.hostObjects.options.forceAsyncMethodMatches` - This is an array of regular expressions.  If you call a method on a synchronous proxy, the method call will actually be performed asynchronously if the method name matches a string or regular expression that's in this array.  Setting this value to [/Async$/] will make any method that ends with `Async` be an asynchronous method call.  If an async method doesn't match here and isn't forced to be asynchronous, the method will be invoked synchronously, blocking execution of the calling JavaScript and then returning the resolution of the promise, rather than returning a promise.
+
+* `chrome.webview.hostObjects.options.ignoreMemberNotFoundError` - If you attempt to get the value of a property of a proxy, and the property doesn't exist on the corresponding native class, you'll get an exception - unless you set this property to `true`, in which case the behavior will match Chakra WinRT projection behavior (and general JavaScript behavior) and return `undefined` with no error.
+
+Chakra WinRT projection puts the WinRT namespaces directly on the root object.  In contrast:
+*  `AddHostObjectToScript` places async root proxies on `chrome.webview.hostObjects`.
+*  `AddHostObjectToScript` places sync root proxies on `chrome.webview.hostObjects.sync`.
+To access root proxies where Chakra WinRT projection code would expect, you can assign the root proxy WinRT namespace locations over to the root object. For example:
+
+```javascript
+window.Windows = chrome.webview.hostObjects.sync.Windows;
+```
+
+To ensure that the JavaScript that sets all this up is executed before anything else, you can either add the above statement to your JavaScript, or you can tell WebView2 to inject the above statement for you before running any other script, by using the `CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync` method.
+
+The following example demonstrates the above techniques:
+
+```javascript
+webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
+            LR"(
+                (() => {
+                    if (chrome && chrome.webview) {
+                        console.log('Setting up WinRT projection options');
+                        chrome.webview.hostObjects.options.defaultSyncProxy = true;
+                        chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/,/AsyncWithSpeller$/];
+                        chrome.webview.hostObjects.options.ignoreMemberNotFoundError = true;
+
+                        window.CortanaApp = chrome.webview.hostObjects.sync.CortanaApp;
+                        window.Cortana = chrome.webview.hostObjects.sync.Cortana;
+                        window.Windows = chrome.webview.hostObjects.sync.Windows;
+                    }
+                })();
+            )"));
+```
 
 
 <!-- ====================================================================== -->
