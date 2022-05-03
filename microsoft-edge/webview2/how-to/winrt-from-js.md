@@ -327,11 +327,11 @@ Next, use the DevTools Console to demonstrate that web-side code can call the in
    (new Windows.Globalization.Language("en-US")).displayName;
    ```
 
-   The Console outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side code can be called from web-side code.
+   The Console outputs a language name string, such as `English (United States)`, demonstrating that your app's host-side code can be called from web-side code:
 
    ![Using the DevTools Console to test calling native-side code from web-side code.](winrt-from-js-images/devtools-console-calling-native-side-code.png)
 
-1. Close the UWP sample app.  The DevTools window also closes.
+Congratulations!  You've finished the sample demonstration of calling WinRT code from JavaScript code.
 
 
 <!-- ====================================================================== -->
