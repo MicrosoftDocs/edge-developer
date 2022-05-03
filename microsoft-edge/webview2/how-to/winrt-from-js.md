@@ -126,7 +126,7 @@ Add a project for the wv2winrt tool, as follows:
    The **Configure your new project** window opens.
 
 1. In the **Project name** textbox, name the Project, specifically, **WinRTAdapter**.  **Note:** For now, you must use this specific project name:
- 
+
    ![In the 'Configure your new project' window, name the project 'WinRTAdapter'.](winrt-from-js-images/config-proj-name-winrtadapter.png)
 
 1. Click the **Create** button.  The **New Universal Windows Platform Project** dialog opens:
@@ -274,9 +274,11 @@ Source code is generated for namespaces or classes that you specified in the **I
 <!-- =============================================== -->
 ## Step 8. Add the host object in the webview2_sample_uwp project
 
+Next, pass the WinRT object from the native side of the host app to the web side of the host app.  To do this, add an `InitializeWebView2Async` method that calls `AddHostObjectToScript`, as follows:
+
 1. In Solution Explorer, expand the **webview2_sample_uwp** project, and then select **MainPage.xaml.cs**.
 
-1. Below the `MainPage` constructor, add the following method, to pass the WinRT object from the native side of the host app to the web side of the host app:
+1. Below the `MainPage` constructor, add the following `InitializeWebView2Async` method:
 
    ```csharp
    private async void InitializeWebView2Async()
@@ -286,7 +288,9 @@ Source code is generated for namespaces or classes that you specified in the **I
       WebView2.CoreWebView2.AddHostObjectToScript("Windows", dispatchAdapter.WrapNamedObject("Windows", dispatchAdapter));
    }
    ```
-    
+
+   This method calls `AddHostObjectToScript`.
+
 1. In the `MainPage` constructor, above the `StatusUpdate("Ready");` line, add the following code:
 
    ```csharp
