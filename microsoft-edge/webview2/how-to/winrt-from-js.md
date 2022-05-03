@@ -358,7 +358,24 @@ To ensure that the JavaScript that sets all this up is executed before anything 
 
 The following example demonstrates the above techniques:
 
-```javascript
+# [C#](#tab/csharp)
+
+```csharp
+webview.CoreWebView2.AddScriptToExecuteOnDocumentCreatedAsync(
+            "(() => {" +
+                    "if (chrome && chrome.webview) {" +
+                        "console.log('Setting up WinRT projection options');" +
+                        "chrome.webview.hostObjects.options.defaultSyncProxy = true;" +
+                        "chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/,/AsyncWithSpeller$/];" + 
+                        "chrome.webview.hostObjects.options.ignoreMemberNotFoundError = true;"  + 
+                        "window.Windows = chrome.webview.hostObjects.sync.Windows;" +
+                    "}" +
+                "})();");
+```
+
+# [C++](#tab/cpp)
+
+```cpp
 webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
             LR"(
                 (() => {
@@ -367,14 +384,13 @@ webView->CoreWebView2->AddScriptToExecuteOnDocumentCreatedAsync(
                         chrome.webview.hostObjects.options.defaultSyncProxy = true;
                         chrome.webview.hostObjects.options.forceAsyncMethodMatches = [/Async$/,/AsyncWithSpeller$/];
                         chrome.webview.hostObjects.options.ignoreMemberNotFoundError = true;
-
-                        window.CortanaApp = chrome.webview.hostObjects.sync.CortanaApp;
-                        window.Cortana = chrome.webview.hostObjects.sync.Cortana;
                         window.Windows = chrome.webview.hostObjects.sync.Windows;
                     }
                 })();
             )"));
 ```
+
+---
 
 
 <!-- ====================================================================== -->
