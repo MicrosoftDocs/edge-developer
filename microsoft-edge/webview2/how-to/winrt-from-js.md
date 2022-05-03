@@ -252,16 +252,11 @@ In this walkthrough, specify two `Windows` namespaces, as follows:
 
 1. Click the **OK** button to close the **Property Pages** dialog box.
 
+   **Add a reference:**
 
-<!-- =============================================== -->
-## Step 7. Add the host object in the webview2_sample_uwp project
-
-In the **webview2_uwp_sample** project, add a reference that points to the **WinRTAdapter** project, as follows:
+   In the **webview2_uwp_sample** project, add a reference that points to the **WinRTAdapter** project, as follows:
 
 1. In Solution Explorer, expand the **webview2_uwp_sample** project, right-click **References**, and then select **Add Reference**.  The **Reference Manager** dialog opens.
-
-<!-- dark mode, low res, not really needed (simple UI action easily specified & standard:) -->
-   <!-- ![In Solution Explorer for the WebView2 UWP project, selecting 'Add Reference'.](winrt-from-js-images/sln-xpl-wv2-uwp-add-ref.png) -->
 
 1. In the tree on the left, select **Projects**.  Select the **WinRTAdapter** checkbox:
 
@@ -269,13 +264,15 @@ In the **webview2_uwp_sample** project, add a reference that points to the **Win
 
 1. Click the **OK** button to close the **Reference Manager** dialog.
 
+   **Generate the API code:**
+
 1. Right-click the **WinRTAdapter** project, and then select **Build**.
 
 Source code is generated for namespaces or classes that you specified in the **Include filters** dialog.  That dialog populates the **Include filters** row of the **WinRTAdapter Property Pages** dialog for the **WinRTAdapter** project.
 
 
 <!-- =============================================== -->
-## Step 8. Add the host object in the webview2_sample_uwp project
+## Step 7. Add the host object in the webview2_sample_uwp project
 
 Next, pass the WinRT object from the native side of the host app to the web side of the host app.  To do this, add an `InitializeWebView2Async` method that calls `AddHostObjectToScript`, as follows:
 
@@ -312,7 +309,7 @@ The host app's web-side code (and the DevTools Console) can now call methods and
 
 
 <!-- =============================================== -->
-## Step 9. Call methods and properties on the host object from web-side JavaScript
+## Step 8. Call methods and properties on the host object from web-side JavaScript
 
 Next, use the DevTools Console to demonstrate that web-side code can call the included, specified host-side APIs.
 
