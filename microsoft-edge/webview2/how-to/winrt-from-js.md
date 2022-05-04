@@ -330,15 +330,14 @@ Congratulations!  You've finished the sample demonstration of calling WinRT code
 
 
 <!-- ====================================================================== -->
-## Make AddHostObjectToScript act like Chakra WinRT projection
+## Make AddHostObjectToScript act more like other JavaScript APIs
 
-<!-- What Chrakra is
+If you want to make the `AddHostObjectToScript` JavaScript proxies act more like other JavaScript APIs, use the following approach.
 
-Why you'd want WebView2 and the wv2winrt tool to behave like Chakra -->
+Or, if you are migrating a host app from JavaScript WinRT projection in JavaScript UWP apps, or from the EdgeHTML-based WebView, you may want to use the following approach, to better match that previous behavior.
+<!-- This section is most relevant if you are migrating an existing codebase (a WinRT WebView2 host app) from EdgeHTML XAML WinUI 2 WebView to WinUI 2 WebView2. -->
 
-This section is most relevant if you are migrating an existing codebase (a WinRT WebView2 host app) from EdgeHTML XAML WinUI 2 WebView to WinUI 2 WebView2.
-
-The `AddHostObjectToScript` feature defaults to using asynchronous and verbose proxies.  To read more about `AddHostObjectToScript` and its default behavior, use the [See also](#see-also) links below.
+The `AddHostObjectToScript` feature defaults to using asynchronous and verbose proxies.  To read more about `AddHostObjectToScript` and its default behavior, see [AddHostObjectToScript](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).
 
 To make `AddHostObjectToScript` act more like the Chakra WinRT projection, set the following properties:
 
@@ -430,7 +429,7 @@ Sample:
 * [Get started with WebView2 in WinUI 2 (UWP) apps (public preview)](../get-started/winui2.md) - Tutorial to download, compile, and run the sample.
 
 API Reference:
-* WinRT: [CoreWebView2.AddHostObjectToScript Method](https://docs.microsoft.com/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
+* WinRT: [CoreWebView2.AddHostObjectToScript Method](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript)
 * Win32: [ICoreWebView2::AddHostObjectToScript method](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)
 * .NET: [CoreWebView2.AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
 
