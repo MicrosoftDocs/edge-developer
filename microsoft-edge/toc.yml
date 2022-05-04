@@ -1181,6 +1181,10 @@
               href: webview2/webview2-api-reference.md
               displayName: functions, methods  # list relevant platforms
 
+            - name: WebView2 Experimental to Public API compatibility
+              href: webview2/public-api-compat.md
+              displayName: 
+
             - name: Win32 C++
               items:
                 - name: Win32 C++ WebView2 API conventions
