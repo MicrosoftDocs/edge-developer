@@ -330,16 +330,12 @@ Congratulations!  You've finished the sample demonstration of calling WinRT code
 
 
 <!-- ====================================================================== -->
-## Make AddHostObjectToScript act more like other JavaScript APIs
+## Make AddHostObjectToScript JavaScript proxies act more like other JavaScript APIs
 
-If you want to make the `AddHostObjectToScript` JavaScript proxies act more like other JavaScript APIs, use the following approach.
-
-Or, if you are migrating a host app from JavaScript WinRT projection in JavaScript UWP apps, or from the EdgeHTML-based WebView, you may want to use the following approach, to better match that previous behavior.
+`AddHostObjectToScript` defaults to using asynchronous and verbose proxies, but you can make the `AddHostObjectToScript` JavaScript proxies act more like other JavaScript APIs.  To read more about `AddHostObjectToScript` and its default behavior, see [AddHostObjectToScript](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).  Also, if you are migrating a host app from JavaScript WinRT projection in JavaScript UWP apps, or from the EdgeHTML-based WebView, you may want to use the following approach, to better match that previous behavior.
 <!-- This section is most relevant if you are migrating an existing codebase (a WinRT WebView2 host app) from EdgeHTML XAML WinUI 2 WebView to WinUI 2 WebView2. -->
 
-The `AddHostObjectToScript` feature defaults to using asynchronous and verbose proxies.  To read more about `AddHostObjectToScript` and its default behavior, see [AddHostObjectToScript](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2#addhostobjecttoscript).
-
-To make `AddHostObjectToScript` act more like the Chakra WinRT projection, set the following properties:
+To make the `AddHostObjectToScript` JavaScript proxies act more like other JavaScript APIs, set the following properties:
 
 * `chrome.webview.hostObjects.option.defaultSyncProxy` - Proxies may either be asynchronous or synchronous.  Normally we know, when calling a method on a synchronous proxy, that the result should also be a synchronous proxy.  But in some cases, we lose that context, such as when providing a reference to a function to native code, and then native code later calling that function.  In these cases, the proxy will be asynchronous, unless this property is set.
 
