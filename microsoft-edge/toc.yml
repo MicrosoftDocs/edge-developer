@@ -1182,7 +1182,7 @@
               displayName: functions, methods  # list relevant platforms
 
             - name: WebView2 Experimental to Public API compatibility
-              href: webview2/public-api-compat.md
+              href: webview2/how-to/public-api-compat.md
               displayName: 
 
             - name: Win32 C++
