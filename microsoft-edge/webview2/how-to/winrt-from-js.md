@@ -30,7 +30,7 @@ This article walks you through the following main steps:
 
 
 <!-- ====================================================================== -->
-## WinRT vs. .NET
+## Why WinRT and .NET use different approaches
 
 This article is for WinRT WebView2 APIs, not for .NET WebView2 APIs.  The C# code in this article will build, but not run, for .NET WebView2 APIs.  Calling `AddHostObjectToScript` using this article's C# code for .NET WebView2 APIs would produce an error message.
 
