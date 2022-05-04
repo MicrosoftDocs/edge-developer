@@ -19,9 +19,10 @@ The Microsoft Edge Add-ons API provides a set of REST endpoints for programmatic
 
 <!-- ====================================================================== -->
 ## Library Support
-| **Language** | **Package**                                                            | **Source code**                                              |
-|--------------|------------------------------------------------------------------------|--------------------------------------------------------------|
-| Node.js      | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [Github](https://github.com/plasmo-corp/edge-webstore-upload)|
+
+| Language | Package | Source code |
+|---|---|
+| Node.js | [Edge Webstore Upload](https://www.npmjs.com/package/@plasmo-corp/ewu) | [Github](https://github.com/plasmo-corp/edge-webstore-upload)|
 
 
 <!-- ====================================================================== -->
