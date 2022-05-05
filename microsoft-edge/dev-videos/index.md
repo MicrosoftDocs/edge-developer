@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/20/2022
+ms.date: 05/05/2022
 ---
 # Videos about web development with Microsoft Edge
 
@@ -36,9 +36,9 @@ _Published on 28 Apr 2022._
 
 [![Thumbnail image for the CSS Custom Highlight API video](./images/css-custom-highlight-api.png)](https://www.youtube.com/watch?v=1qldqyT324o)
 
-Styling ranges of text on the web is very useful, but has historically been a complicated thing to do.
+Styling ranges of text on the web is very useful but has historically been a complicated thing to do.
 
-The new [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is the future of highlighting text ranges on the Web. It provides web developers with JavaScript and CSS features that make it easy and performant to style any range of text.
+The new [CSS Custom Highlight API](https://www.w3.org/TR/css-highlight-api-1/) is the future of highlighting text ranges on the Web. It provides web developers with JavaScript and CSS features that make it easier and more efficient to style any range of text.
 
 For more information see [CSS Custom Highlight API: The Future of Highlighting Text Ranges on the Web](https://css-tricks.com/css-custom-highlight-api-early-loo/).
 
