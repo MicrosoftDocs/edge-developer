@@ -1349,6 +1349,10 @@
 
 # =============================================================================
 # bottom leaf nodes
+    - name: Videos about web development with Microsoft Edge
+      href: dev-videos/index.md
+      displayName: youtube
+
     - name: Privacy whitepaper
       href: privacy-whitepaper/index.md
       displayName: 
