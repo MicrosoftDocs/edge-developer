@@ -29,19 +29,16 @@ This article walks you through the following main steps:
 1. Call methods and properties on the host object from your web-side JavaScript code (or from the DevTools Console).
 
 
-<!-- ====================================================================== -->
-## Why WinRT and .NET use different approaches
+**Why WinRT and .NET use different approaches**
 
 This article is for WinRT WebView2 APIs, not for .NET WebView2 APIs.  The C# code in this article will build, but not run, for .NET WebView2 APIs.  Calling `AddHostObjectToScript` using this article's C# code for .NET WebView2 APIs would produce an error message.
 
-The wv2winrt tool (the WebView2 WinRT JS Projection tool) is needed when projecting WinRT objects, because WinRT doesn't support `IDispatch` or any other mechanism to dynamically inspect and interact with WinRT objects, which WebView2's Win32 and .NET platforms support.
+The wv2winrt tool (the WebView2 WinRT JS Projection tool) is needed when projecting WinRT objects, because WinRT doesn't support `IDispatch` or any other mechanism to dynamically inspect and interact with WinRT objects, which WebView2's Win32 and .NET platforms support.  For .NET use of `AddHostObjectToScript`, see [Call native-side code from web-side code](hostobject.md) instead of this article.
 <!--
 `IDispatch` is a way to:
 *  Dynamically inspect COM objects, to discover methods, properties, and events.
 *  Interact with COM objects, to call methods, get or set properties, and subscribe to and receive events.
 -->
-
-For .NET use of `AddHostObjectToScript`, see [Call native-side code from web-side code](hostobject.md) instead of this article.
 
 
 <!-- ====================================================================== -->
@@ -409,7 +406,7 @@ Command-line help contains similar information for the parameters of `wv2winrt.e
 | `include` | List as above will exclude namespaces and runtimeclasses by default except those listed. The include declarations may be either namespaces which include everything in that namespace, or runtimeclass names to include just that runtimeclass. |
 | `use-javascript-case` | Changes the generated code to produce methods names, property names, and so on, that use the same casing style as Chakra JavaScript WinRT projection. The default is to produce names that match the winrt. |
 | `output-path` | Sets the path in which generated files will be written. |
-| `output-namespace` | Sets the namespace to use for the generated WinRT class (see the next section). |
+| `output-namespace` | Sets the namespace to use for the generated WinRT class. |
 | `winmd-paths` | A space-delimited list of all the winmd files that should be examined for code generation. |
 
 
