@@ -111,7 +111,7 @@ For more information, check out [Elements for Microsoft Edge Visual Studio Code 
 
 #### Debugger for Microsoft Edge
 
-With the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
+With the [Microsoft Edge Tools for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) Visual Studio Code extension, debug JavaScript running in Microsoft Edge directly from Visual Studio Code.
 
 :::image type="content" source="../../images/2020/01/vscode-debugger.msft.png" alt-text="The Debugger for Microsoft Edge Extension in Visual Studio Code." lightbox="../../images/2020/01/vscode-debugger.msft.png":::
 
