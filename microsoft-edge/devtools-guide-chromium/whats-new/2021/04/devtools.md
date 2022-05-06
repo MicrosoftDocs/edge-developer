@@ -150,7 +150,7 @@ The **Issues** tool displays recommendations to improve your website, including 
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->
 <!-- Subtitle: Increased target closure reliability, automatically update the side panel, new right-click menu for settings and Changelog, and more. -->
 
-The [Microsoft Edge Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) version 1.1.7 provides the DevTools from [Microsoft Edge version 88](../../2020/11/devtools.md).  This extension now supports ARM devices and no longer depends on the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) extension.  Version 1.1.7 includes the following bug fixes and improvements.
+The [Microsoft Edge Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) version 1.1.7 provides the DevTools from [Microsoft Edge version 88](../../2020/11/devtools.md).  This extension now supports ARM devices and no longer depends on the Debugger for Microsoft Edge extension.  Version 1.1.7 includes the following bug fixes and improvements.
 
 *  Updated the reliability of target closure.
 
