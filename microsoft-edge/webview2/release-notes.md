@@ -36,13 +36,13 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 <!-- ====================================================================== -->
 
-## 1.0.1210.30
+## 1.0.1210.39
   
-Release Date: May 2, 2022  
+Release Date: May 6, 2022  
   
-[NuGet package for WebView2 SDK 1.0.1210.30](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.30)  
+[NuGet package for WebView2 SDK 1.0.1210.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)  
   
-For full API compatibility, 101.1210.30 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime 101.1210.39 or higher.  
 
 ### General
 
@@ -50,29 +50,29 @@ For full API compatibility, 101.1210.30 or higher.
 
 The following items are now stable:
 
-*   Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1210.30) in WebView2.
+*   Support for [multiple user profiles](#) in WebView2.
 
-*	[Theming API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.30) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
+*	[Theming API](#) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
 
-*	[Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1210.30) which provides a way to customize the default download location.
+*	[Default Download API](#) which provides a way to customize the default download location.
 
 <!-- ====================================================================== -->
-## 1.0.1243-prerelease
+## 1.0.1248-prerelease
   
-Release Date: May 2, 2022  
+Release Date: May 6, 2022  
   
-[NuGet package for WebView2 SDK 1.0.1243](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1243-prerelease)  
+[NuGet package for WebView2 SDK 1.0.1248-prelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1248-prerelease)  
   
-For full API compatibility, 102.0.1243.0 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 102.0.1248.0 or higher.  
 
 ### General
 
 #### Promotions
 
-*	Add [ServerCertificateErrorDetected API](/microsoft-edge/webview2/reference/win32/icorewebview2_13?view=webview2-1.0.1243-prerelease) which allows you to hanle the event when the WebView2 cannot verify server's digital certificate.
-* 	The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1243-prerelease):
-	*  clearBrowsingDataInTimeRange
-	*  clearBrowsingDataAll
+*	Add [ServerCertificateErrorDetected API](#) which allows you to handle the event when the WebView2 control cannot verify server's digital certificate.
+* 	The [ClearBrowsingData API](#):
+	*  `clearBrowsingDataInTimeRange`
+	*  `clearBrowsingDataAll`
 
 #### Bug Fixes
   
