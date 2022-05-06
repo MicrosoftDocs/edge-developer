@@ -343,6 +343,7 @@ To make the `AddHostObjectToScript` JavaScript proxies act more like other JavaS
 Chakra WinRT projection puts the WinRT namespaces directly on the root object.  In contrast:
 *  `AddHostObjectToScript` places async root proxies on `chrome.webview.hostObjects`.
 *  `AddHostObjectToScript` places sync root proxies on `chrome.webview.hostObjects.sync`.
+
 To access root proxies where Chakra WinRT projection code would expect, you can assign the root proxy WinRT namespace locations over to the root object. For example:
 
 ```javascript
