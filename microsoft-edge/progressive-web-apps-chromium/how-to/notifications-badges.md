@@ -192,7 +192,7 @@ self.addEventListener('notificationclick', event => {
 }, false);
 ```
 
-To learn more about notification actions, see [NotificationAction](https://developer.mozilla.org/docs/Web/API/notification/actions) at MDN.
+To learn more about notification actions, see [Notification.actions](https://developer.mozilla.org/docs/Web/API/notification/actions) at MDN.
 
 
 <!-- ====================================================================== -->
