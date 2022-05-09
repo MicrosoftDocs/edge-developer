@@ -84,7 +84,7 @@ You can see your web project in a dedicated tab inside of Visual Studio Code, an
 
 ![The screencast showing the current document in an emulated iPhone 5 in the correct size and with an emulated touchscreen interface.](../../media/2021/11/edge-devtools-for-vscode-simulated-iphone-red-boxes.png)
 
-For details about device emulation, see [Device emulation in the screencast](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-emulation-in-the-screencast).
+For details about device emulation, see [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation).
 
 ### Live, inline issue reporting
 

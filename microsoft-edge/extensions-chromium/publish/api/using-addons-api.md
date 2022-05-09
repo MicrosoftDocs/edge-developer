@@ -100,7 +100,7 @@ Once you have an access token, you can use the Microsoft Edge Add-ons API.  This
 > [!NOTE]
 > There is no API for creating a new product or updating a product's metadata, such as a description.  You must complete these tasks manually in Microsoft Partner Center.
 
-The API is available at the endpoint https://api.addons.microsoftedge.microsoft.com
+The API is available at the endpoint `https://api.addons.microsoftedge.microsoft.com`
 
 
 <!-- ====================================================================== -->

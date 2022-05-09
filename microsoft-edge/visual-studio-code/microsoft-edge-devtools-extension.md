@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 10/26/2021
+ms.date: 04/29/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
@@ -223,7 +223,7 @@ All changes that are saved in this folder now trigger a browser refresh.
 
 The Styles tool in Microsoft Edge DevTools is excellent for debugging and tweaking CSS property styles.  One problem is that although these changes show up live in the browser, they aren't reflected in your source files.  This means that at the end of your CSS debugging session, you need to copy and paste what you changed back into your source files.
 
-CSS Mirror Editing is an experimental feature of the Microsoft Edge DevTools extension that works around that problem.  When you turn on Mirror Editing, any change that's made in the Styles tool of DevTools also changes the file that's in your workspace.
+CSS Mirror Editing is a feature of the Microsoft Edge DevTools extension that works around that problem.  When you turn on Mirror Editing, any change made in the Styles tool of DevTools also changes the file in your workspace.
 
 In the following example, we have `index.html` currently open in Visual Studio Code, and the Microsoft Edge DevTools extension is open.  When we select the flexbox icon in the `.searchbar` CSS selector and change the `flex-direction` to `column`, we not only see the change in the browser and in DevTools, but Visual Studio Code also automatically navigates to the correct style sheet file and the appropriate line number, and inserts the `flex-direction: column` CSS code:
 
@@ -235,9 +235,9 @@ Changing the CSS setting created a new line of code in the correct CSS source fi
 
 You can edit any selector or create new ones in the Styles tool and all changes will get mirrored in the right CSS source file. The extension only changes the file, it doesn't automatically save the changes back to your hard drive. This is a security measure to make sure you don't accidentally overwrite any of your code.
 
-You can enable and disable CSS Mirror Editing by clicking the button in the **Targets** pane of the extension, or by using the Command Menu and looking for `mirror`:
+You can enable and disable CSS Mirror Editing by checking and unchecking the box in the **Styles** panel of the **Elements** tool, or by using the Command Menu and searching for `mirror`:
 
-![In the extension panel you can find a quick explanation of CSS mirror editing, the button to turn the functionality on and off and a link to provide us feedback.](media/css-mirror-editing-button.msft.png)
+![You can check or uncheck a box in the Styles panel of the Elements tool to enable or disable CSS mirroring](media/css-mirror-editing-checkbox.msft.png)
 
 Using the command menu to turn CSS Mirror Editing on or off:
 
@@ -247,20 +247,27 @@ We're continuing to improve this feature and have set up a tracking issue on Git
 
 
 <!-- ====================================================================== -->
-## Device emulation in the screencast
+## Device and state emulation
 
-Device emulation is a feature of the screencast browser in the editor.  This allows you to emulate a device such as a phone or tablet.  This is useful for testing the layout of your website on different devices:
+The browser preview tab has an emulation toolbar on the bottom that enables you to simulate different environments. You can select from a dropdown list of different devices. You can use the form to change the dimensions and rotate the viewport.
 
-![The Device dropdown list in the 'Edge DevTools: Screencast' tab.](media/edge-devtools-for-vscode-device-dropdown.msft.png)
+The emulation toolbar also includes two buttons in the bottom right corner. Click ICON to emulate CSS media queries and the other to try the experience of the current web project with different visual deficiencies.
 
-You can select from a list of different devices to emulate in the screencast next to the Address bar:
+<!-- Need light themed images for the CSS media query and visual deficiencies buttons and the precise UI names -->
 
-![The list of devices that can be emulated open in the screencast of the extension.](media/edge-devtools-for-vscode-device-list.msft.png)
+![Browser preview in the extension with emulation tool bar showing](media/edge-for-code-screencast-v2.msft.png)
 
-The default device is a desktop computer.  If the device you choose to emulate is a touch device, the screencast automatically switches to the touchscreen mode. You can rotate the orientation of the simulated device by clicking the button next to the list:
+You can select from a number of different devices. When selected, the viewport resizes to the correct measurements and simulates the touch interface. For example, an iPhone.
 
-![The screencast showing the current document in an emulated iPhone 5 in the correct size and with emulated touch interface.](media/edge-devtools-for-vscode-simulated-iphone.msft.png)
+![Browser preview in the extension showing the web product in an emulated phone layout](media/edge-for-code-screencast-v2-emulating.msft.png)
 
+The CSS media feature emulation button enables you to test how your product looks like in print mode. You can switch between dark and light mode and emulate forced colors.
+
+![Browser preview in the extension showing the web product in forced color mode](media/edge-for-code-forced-colours.msft.png)
+
+The visual deficiencies emulation button lets you test your product in a blurred mode or in different color deficiencies.
+
+![Browser preview in the extension showing the web product in a blurred emulation](media/edge-for-code-blurred.msft.png)
 
 <!-- ====================================================================== -->
 ## Inline and live issue analysis
@@ -349,6 +356,7 @@ The [Console](/microsoft-edge/devtools-guide-chromium/console/) tool is availabl
 
 ![The DevTools Console inside the extension as an own tab.](media/edge-devtools-for-vscode-console-full.png)
 
+
 You can see your [log messages](/microsoft-edge/devtools-guide-chromium/console-log), access the `window` object and use the [DOM interaction convenience methods](/microsoft-edge/devtools-guide-chromium/console-dom-interaction). You can also [filter the Console](/microsoft-edge/devtools-guide-chromium/console-filters) and set [live expressions](/microsoft-edge/devtools-guide-chromium/live-expressions). 
 
 You can also use the Console alongside the Elements tool if you open it in the lower panel:
@@ -358,6 +366,20 @@ You can also use the Console alongside the Elements tool if you open it in the l
 If you launch the extension from the Run and Debug workflow, the [Debug Console of Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) gives you most of the functions of the DevTools [Console](/microsoft-edge/devtools-guide-chromium/console/) inside of Visual Studio Code, but no filtering options and a more basic results display:
 
 ![The DevTools Console is available when the extension is launched from a Run and Debug workflow.](media/edge-devtools-for-vscode-console-integration.png)
+
+
+**Turning on this preview feature:**
+
+<!-- todo: delete temp note: -->
+As of April 20, 2022, to make the **Console** tool visible, target the Canary version of Microsoft Edge.  To do this:
+
+1. In Visual Studio Code, in the Activity Bar on the left, click the **Microsoft Edge Tools** button.  The MICROSOFT EDGE TOOLS pane opens.
+
+1. Hover to the right of **TARGETS**, and then click **Open Settings** (**...**).
+
+1. In the **Vscode-edge-devtools: Browser Flavor** dropdown list, select **Canary**.  At a later date, you'll be able to select any version.
+
+1. Click **x** to close **Settings**.
 
 
 <!-- ====================================================================== -->

@@ -93,7 +93,7 @@ Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in
 ![The Layers tool now links to the 3D View tool.](../../media/2022/03/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->
 
-See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
+See [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md).
 
 <!--
 See also:

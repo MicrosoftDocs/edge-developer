@@ -1057,6 +1057,11 @@
         "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
         "redirect_document_id": false
       },
+      {
+        "source_path": "microsoft-edge/visual-studio-code/webhint.md",
+        "redirect_url": "/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension",
+        "redirect_document_id": false
+      },
       /* redirect to web platform */
       {
         "source_path": "microsoft-edge/web-platform/user-agent-string.md",

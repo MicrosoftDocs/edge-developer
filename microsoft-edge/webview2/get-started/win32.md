@@ -6,20 +6,20 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/12/2022
+ms.date: 04/27/2022
 ---
 # Get started with WebView2 in Win32 apps
 
 In this article, you set up your development tools (if not done already), add WebView2 code to the Win32 app, and learn about WebView2 concepts along the way.
 
-The project uses the [Win32_GettingStarted / WebView2GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
+The project uses the [Win32_GettingStarted / WebView2GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) directory that's part of the `WebView2Samples` repo.  To use this article, you do the following:
 1. Download or clone the `WebView2Samples` repo to your local drive.
 1. Run the completed project.
 1. Optionally delete the WebView2 code from `HelloWebView.cpp`.
 1. Follow the remaining steps in this article about adding and understanding the WebView2 code.
 
 
-* Corresponding, completed, runnable Get Started sample at GitHub: [Getting Started with WebView2 for Win32 apps (Win32_GettingStarted/WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted#readme).
+* Corresponding, completed, runnable Get Started sample at GitHub: [Getting Started with WebView2 for Win32 apps (Win32_GettingStarted/WebView2GettingStarted.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted#readme).
 
 
 <!-- ====================================================================== -->
@@ -112,7 +112,7 @@ If the **WebView2GettingStarted** project isn't open in Visual Studio, open it i
 
 The above screenshot shows some WebView2 code (`#include "WebView2.h"`), that's already present in the file immediately after cloning (downloading) the repo.
 
-<!-- To confirm that the header lines are already already present in the repo: in a different window or tab, see [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp). -->
+<!-- To confirm that the header lines are already already present in the repo: in a different window or tab, see [WebView2Samples/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/Win32_GettingStarted/HelloWebView.cpp). -->
 
 
 ### Set the solution to use the Win10 SDK and Visual Studio toolset
@@ -701,8 +701,8 @@ Local pages:
 
 WebView2Samples repo:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-* [Win32 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
-* [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
+* [Win32 Sample Code](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/Win32_GettingStarted) - the code used in this tutorial.
+* [WebView2 API Sample](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2APISample/README.md) - a comprehensive example of WebView2 capabilities.
 * [WebView2Browser](https://github.com/MicrosoftEdge/WebView2Browser) - a WebView2 sample app.
 
 API Reference:

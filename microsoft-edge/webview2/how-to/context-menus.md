@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 03/10/2022
+ms.date: 04/27/2022
 ---
 # Customize context menus in WebView2
 
@@ -883,4 +883,4 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
 
-<!-- spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/ContextMenuRequested.md -->
+<!-- spec: https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/ContextMenuRequested.md -->
