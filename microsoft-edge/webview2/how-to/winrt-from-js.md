@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/03/2022
+ms.date: 05/09/2022
 ---
 # Call native-side WinRT code from web-side code
 
@@ -42,9 +42,9 @@ The wv2winrt tool (the WebView2 WinRT JS Projection tool) is needed when project
 
 
 <!-- ====================================================================== -->
-## Let's get started!
+## End goal of this example
 
-First let's find WinRT APIs that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Language Class](/uwp/api/windows.globalization.language) enables getting language information from the client's native OS.
+First, we'll pick some WinRT APIs that we're interested in calling from JavaScript code.  For this example, we'll use the WinRT `Language` class, which is in the `Windows.Globalization` namespace, for Windows UWP applications.  The [Language Class](/uwp/api/windows.globalization.language) enables getting language information from the client's native OS.
 
 In the WebView2 host app, the web-side JavaScript code can then access methods and properties on the `Language` object that's in the native-side code.  At the end of this example walkthrough, you'll use the **Console** of Microsoft Edge DevTools to test reading the host's `displayName` property of the `Language` class:
 
