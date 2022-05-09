@@ -6,11 +6,11 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 05/09/2022
 ---
 # Release Notes for the WebView2 SDK
 
-The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence.  This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
+The WebView2 team updates the [WebView2 SDK](https://www.nuget.org/packages/Microsoft.Web.WebView2) on a four-week cadence. This article contains the latest information on product announcements, additions, modifications, and breaking changes to the APIs.
 
 WebView2 bug fixes, such as the fixes listed below, are either Runtime-specific or SDK-specific.
 
@@ -20,9 +20,9 @@ WebView2 bug fixes, such as the fixes listed below, are either Runtime-specific 
 
 Make sure to re-compile your WebView2 app after updating the WebView2 SDK NuGet package.  The WebView2 team recommends the following:
 
-*  Use the Canary preview channel of Microsoft Edge when you develop using a prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
+* Use the Canary preview channel of Microsoft Edge when you develop using a prerelease version of the WebView2 SDK package.  Canary is the recommended preview channel, because it ships at the fastest cadence and has the newest APIs.
 
-*  Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
+* Use the Evergreen WebView2 Runtime when you use a release version of the WebView2 SDK package.
 
 For more information, see [Matching the Runtime version with the SDK version](concepts/versioning.md#matching-the-runtime-version-with-the-sdk-version).
 
@@ -42,7 +42,7 @@ Release Date: May 6, 2022
   
 [NuGet package for WebView2 SDK 1.0.1210.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)  
   
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime 101.1210.39 or higher.  
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 101.1210.39 or higher.
 
 ### General
 
@@ -50,11 +50,11 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 The following items are now stable:
 
-*   Support for [multiple user profiles](#) in WebView2.
+* Support for multiple user profiles in WebView2.
 
-*	[Theming API](#) which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
+* Theming API which provides a way to customize the WebView2 color theme as `light`, `dark`, or `system`.
 
-*	[Default Download API](#) which provides a way to customize the default download location.
+* Default Download API which provides a way to customize the default download location.
 
 <!-- ====================================================================== -->
 ## 1.0.1248-prerelease
@@ -69,20 +69,21 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Promotions
 
-*	Add [ServerCertificateErrorDetected API](#) which allows you to handle the event when the WebView2 control cannot verify server's digital certificate.
-* 	The [ClearBrowsingData API](#):
-	*  `clearBrowsingDataInTimeRange`
-	*  `clearBrowsingDataAll`
+* Added the ServerCertificateErrorDetected API which allows you to handle an event when the WebView2 control cannot verify the server's digital certificate.
+* The ClearBrowsingData API:
+	* `clearBrowsingDataInTimeRange`
+	* `clearBrowsingDataAll`
 
 #### Bug Fixes
   
-*   Fixed an unavoidable crash that occurred in the WPF control's OnWindowPositionChanged event.  
-*   Fixed the issue with CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess isn't working properly in .NET SDK. 
-*   Fixed a runtime regression that caused some Office add-ins which use host objects to crash during operations that previously worked.  
-*   Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling. 
-*   Starting with runtime v102, if you set ZoomFactor to the maximum of 5, then set it higher like 6, the value of ZoomFactor will be correctly returned as 5 instead of 6.   
-*   Fixed a regression and ensure that WebView2 creation fails quickly with HRESULT_FROM_WIN32(ERROR_INVALID_STATE) instead of time out.  
-*   Fixed a bug where changes from Chromium broke WebView2 background color.   
+* Fixed an unavoidable crash that occurred in the WPF control's `OnWindowPositionChanged` event.  
+* Fixed the issue with `CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess` isn't working properly in .NET SDK.
+* Fixed a runtime regression that caused some Office add-ins which use host objects to crash during operations that previously worked.
+* Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling.
+* Starting with runtime v102, if you set `ZoomFactor` to the maximum of 5, then set it higher like 6, the value of `ZoomFactor` will be correctly returned as 5 instead of 6.
+* Fixed a regression to make sure that WebView2 creation fails quickly with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` instead of time out.
+* Fixed a bug where changes from Chromium broke WebView2 background color.
+
 
 <!-- ====================================================================== -->
 
