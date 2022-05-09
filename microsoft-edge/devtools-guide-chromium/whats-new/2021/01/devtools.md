@@ -206,7 +206,9 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 
 *  Added a **Close instance** button to each item on the target list ([#248](https://github.com/microsoft/vscode-edge-devtools/pull/248))
 *  Bumped [Microsoft Edge DevTools](../../../index.md) version from 84.0.522.63 to [85.0.564.40](../../2020/06/devtools.md) ([#235](https://github.com/microsoft/vscode-edge-devtools/pull/235))
-*  Included [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) as a dependency  ([#233](https://github.com/microsoft/vscode-edge-devtools/pull/233))
+*  Included "Debugger for Microsoft Edge" as a dependency  ([#233](https://github.com/microsoft/vscode-edge-devtools/pull/233)).  
+<!-- todo: consult w SME on desired presentation here -->
+<!-- old url: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge -->
 *  Implemented settings option to change extension themes ([#229](https://github.com/microsoft/vscode-edge-devtools/pull/229))
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
@@ -398,12 +400,6 @@ See also:
 <!-- ====================================================================== -->
 ### New copy options in the Console tool, Sources tool, and Styles pane
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 #### Copy object in the Console and Sources tool
@@ -420,17 +416,16 @@ In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** 
 
 For the history of this feature in the Chromium open-source project, see Issues [1148353](https://crbug.com/1148353) and [1149859](https://crbug.com/1149859).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Console overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
+* [Sources tool overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/)
+<!-- 0 hits on "Copy object" -->
 
 
 <!-- ====================================================================== -->
 #### Copy file name in the Sources tool and Styles pane
 
-You can now copy a file name using the right-click menu.
+You can now copy a file name by using the right-click menu.
 
 In the **Sources** tool, right-click a file name, and then select **Copy file name**.
 
@@ -442,69 +437,55 @@ In the **Elements** tool > **Styles** pane, right-click a file name, and then se
 
 For the history of this feature in the Chromium open-source project, see Issues [1155120](https://crbug.com/1155120).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Sources tool overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+<!-- 0 hits on "Copy file name" -->
 
 
 <!-- ====================================================================== -->
 ### Updates to Frame details
 
-<!--
-See also:
-* []()
-* []()
--->
+In the **Application** tool, the **Frames** page has the following updates.
 
 
 <!-- ====================================================================== -->
 #### Service Workers information in Frame details
 
-DevTools now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.
+The **Application** tool now lists a dedicated service worker under the parent frame.  In the following figure, service worker details are displayed.  To display the service worker details, select **Application** > **Frames** > `top` > **Service Workers** and then click a service worker.
 
 ![Service Workers information in the Frames details.](../../media/2021/01/application-frames-service-workers-details.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1122507](https://crbug.com/1122507).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
 <!-- ====================================================================== -->
 #### Measure Memory information in Frame details
 
-The `performance.measureMemory()` API status is now displayed under the **API availability** section.  The new `performance.measureMemory()` API estimates the memory usage of the entire webpage.
+In the **Frames** page of the **Application** tool, the `performance.measureMemory()` API status is now displayed in the **API availability** section.  The new `performance.measureMemory()` API estimates the memory usage of the entire webpage.
 
 ![Measure Memory.](../../media/2021/01/application-frames-measure-memory.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1139899](https://crbug.com/1139899).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
 <!-- ====================================================================== -->
 ### Dropped frames in the Performance tool
 
-When you [analyze load performance in the Performance tool](../../../evaluate-performance/reference.md#record-load-performance), the **Frames** section now marks dropped frames as red.  To display the frame rate, hover on a dropped frame.
+When you analyze load performance in the Performance tool, the **Frames** section now marks dropped frames as red.  To display the frame rate, hover on a dropped frame:
 
 ![Dropped frames.](../../media/2021/01/performance-frames-dropped-frames-red.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1075865](https://crbug.com/1075865).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Record load performance](../../../evaluate-performance/reference.md#record-load-performance) in _Performance features reference_
 
 
 <!-- ====================================================================== -->
@@ -512,7 +493,9 @@ See also:
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
-The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html) replaces the [AA](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/[AAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) guidelines contrast ratio in the [Color Picker](../../../accessibility/color-picker.md).  APCA is a new way to compute contrast.  It is based on modern research on color perception.  Compared to AA/AAA guidelines, APCA is more context-dependent.  The contrast is calculated based on the following spatial properties of the text, color, and context.
+The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html) replaces the [AA](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/[AAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) guidelines contrast ratio in the Color Picker.  The Color Picker is used in the **Styles** tab in the **Elements** tool.
+
+APCA is a new way to compute contrast.  It is based on modern research on color perception.  Compared to AA/AAA guidelines, APCA is more context-dependent.  The contrast is calculated based on the following spatial properties of the text, color, and context.
 
 *  Spatial properties of text that include font weight and size.
 *  Spatial properties of color that include perceived contrast between text and background.
@@ -522,11 +505,11 @@ To turn on this experiment, select **Settings** > **Experiments** and then selec
 
 ![APCA in the Color Picker.](../../media/2021/01/advanced-perceptual-contrast-algorithm.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../../../experimental-features/index.md#enable-new-advanced-perceptual-contrast-algorithm-apca-replacing-previous-contrast-ratio-and-aaaaa-guidelines) in _Experimental features_.
+Edge 89)_.
+* [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
+* [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
 
 <!-- ====================================================================== -->

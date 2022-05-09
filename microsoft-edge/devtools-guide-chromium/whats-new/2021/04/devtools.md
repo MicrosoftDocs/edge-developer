@@ -57,27 +57,34 @@ See also:
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
 <!--  Title: Learn more about DevTools with DevTools Tooltips  -->
 <!--  Subtitle: Informative overlays are now available in the default DevTools interface.  -->
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes in DevTools.  To turn off Tooltips, press `Esc`.  To turn on Tooltips, do one of the following: 
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
+*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
 *  Press `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
 *  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
-*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
 
-Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**.
+Then hover over each outlined region of DevTools:
 
-To display more information about how to use the DevTools, turn on Tooltips, and then hover on each outlined region of the DevTools.
+![DevTools Tooltips mode.](../../media/2021/04/tooltips.png)
 
-![Hover on anywhere in the highlighted region of the Issues tool to display more details.](../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png)
+To turn off Tooltips, press `Esc`.
+
+Update: This feature has been released and is no longer experimental.
+
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
+
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in Focus Mode.
+<!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**. -->
+<!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details.](../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png) -->
+
+See also:
+* [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
 
 <!--
-See also:
-* []()
-* []()
+* [Learn about DevTools with informative tooltips](../02/devtools.md#learn-about-devtools-with-informative-tooltips) in _What's new in DevTools (Microsoft Edge 90)_.
 -->
 
 
@@ -194,7 +201,11 @@ See also:
 <!-- Title: Microsoft Edge DevTools for Visual Studio version 1.1.7  -->
 <!-- Subtitle: Increased target closure reliability, automatically update the side panel, new right-click menu for settings and Changelog, and more. -->
 
-The [Microsoft Edge Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) version 1.1.7 provides the DevTools from [Microsoft Edge version 88](../../2020/11/devtools.md).  This extension now supports ARM devices and no longer depends on the [Debugger for Microsoft Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge) extension.  Version 1.1.7 includes the following bug fixes and improvements.
+The [Microsoft Edge Tools for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) version 1.1.7 provides the DevTools from [Microsoft Edge version 88](../../2020/11/devtools.md).  This extension now supports ARM devices and no longer depends on the "Debugger for Microsoft Edge" extension.
+<!-- old url: https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge -->
+<!-- todo: consult w SME on desired presentation here -->
+
+Version 1.1.7 includes the following bug fixes and improvements.
 
 *  Updated the reliability of target closure.
 
@@ -206,11 +217,8 @@ The [Microsoft Edge Tools for Visual Studio Code extension](https://marketplace.
 
 To manually update to version 1.1.7, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
 
 
 <!-- ====================================================================== -->

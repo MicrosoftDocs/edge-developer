@@ -40,12 +40,6 @@ To turn on the experiment, see [Turning an experiment on or off](../../../experi
 
 See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## Learn about DevTools with informative tooltips
@@ -53,17 +47,39 @@ See also:
 <!-- Title: DevTools Tooltips  -->
 <!-- Subtitle: Learn more about how to use DevTools with informative DevTools tooltips.  -->
 
-The DevTools Tooltips feature helps you learn about all the different tools and panes.  Click the Help (`?`) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.  When tooltips are on, hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkboxes next to **Focus Mode and DevTools Tooltips** and **Enable + button tab menus to open more tools**.
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
+
+*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
+*  Press `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  [Open the Command Menu](../../../command-menu/index.md#open-the-command-menu) and then type `tooltips`.
+
+Then hover over each outlined region of DevTools:
+
+![DevTools Tooltips mode.](../../media/2021/02/tooltips.png)
+
+To turn off Tooltips, press `Esc`.  
+
+Update: This feature has been released and is no longer experimental.
+
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
+
+To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the following checkboxes:
+*  **Focus Mode**
+*  **DevTools Tooltips**
+*  **Enable + button tab menus to open more tools**
 
 For more information about this feature, or to comment with questions and ideas, see [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md).
 
-![Click the Help (?) icon in the Activity Bar to display tooltips.](../../media/2021/02/focus-mode-and-tooltips-help.msft.png)
-
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in Focus Mode.
+<!--Click the Help (`?`) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.-->
+<!-- ![Click the Help (?) icon in the Activity Bar to display tooltips.](../../media/2021/02/focus-mode-and-tooltips-help.msft.png) -->
 <!--
 See also:
-* []()
-* []()
+* [Focus Mode](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/?branch=pr-en-us-1881#focus-mode) in _Experimental features_.
 -->
+
+See also:
+* [Display DevTools Tooltips](../../../overview.md#display-devtools-tooltips) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -91,12 +107,6 @@ For more information about customizing and editing shortcuts, see [Customize key
 
 ![Customize keyboard shortcuts in the DevTools Settings on Shortcuts with a shortcut in edit mode.](../../media/2021/02/custom-shortcut-pause-script-checkmark.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools for Visual Studio Code extension update 1.1.4
@@ -114,11 +124,8 @@ The following figure displays the same messages from the example webpage logged 
 
 ![Displaying the same message in the DevTools Console under Output of Microsoft Visual Studio Code.](../../media/2021/02/visual-studio-code-extension-log-editor.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Microsoft Edge DevTools extension for Visual Studio Code](https://review.docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension?branch=pr-en-us-1910)
 
 
 <!-- ====================================================================== -->
@@ -129,7 +136,7 @@ See also:
 
 DevTools now has dedicated CSS flexbox debugging tools.  If the `display: flex` or `display: inline-flex` CSS style is applied to an HTML element, a `flex` icon appears next to that element in the **Elements** tool.  To display (or hide) a flex overlay on the webpage, click the `flex` icon.
 
-To open the **Flexbox** editor, go to the **Styles** pane and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties:
+To open the **Flexbox** editor, in the **Elements** tool, go to the **Styles** tab and then click the new icon next to the `display: flex` or `display: inline-flex` style.  The **Flexbox** editor provides a quick way to edit the flexbox properties:
 
 ![CSS flexbox debugging tools.](../../media/2021/02/elements-styles-display-flex-window.msft.png)
 
@@ -139,11 +146,10 @@ In addition, the **Flexbox** section in the **Layout** pane displays all of the 
 
 For the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Edit CSS font styles and settings in the Styles pane](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts?branch=pr-en-us-1910)
+* [Syncing live changes from the Styles tool by using CSS Mirror Editing](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing) in _Microsoft Edge DevTools extension for Visual Studio Code_.<!-- eg "flex-direction" is only mentioned in this extension article -->
+<!-- todo: copy section content to regular docs -->
 
 
 <!-- ====================================================================== -->
@@ -168,12 +174,6 @@ To learn more about initiators in the **Network** tool, see [Display initiators 
 
 For the history of this feature in the Chromium open-source project, see Issues [1158276](https://crbug.com/1158276) and [1160637](https://crbug.com/1160637).
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## Filtering in the Console is more consistent
@@ -181,7 +181,9 @@ See also:
 <!-- Title: Console improvements make filtering more consistent  -->
 <!-- Subtitle: The Log Levels dropdown list is more clearly disabled when using filters in the Console sidebar.  -->
 
-While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover over it while a filter from the **Console Sidebar** is selected.  To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages).
+While you filter with the [Console Sidebar](../../../console/reference.md#open-the-console-sidebar), the filters in the [Log Levels](../../../console/reference.md#filter-by-log-level) dropdown list aren't available.  Previously, the **Log Levels** dropdown list was highlighted when you hovered over it, even while a filter from the **Console Sidebar** was selected.  In Microsoft Edge version 90, the **Log Levels** dropdown list is no longer highlighted when you hover over it while a filter from the **Console Sidebar** is selected.
+
+To learn more about filtering in the **Console**, see [Filter Messages](../../../console/reference.md#filter-messages) in _Console features reference_.
 
 Previously, if you open the **Console sidebar** and hover on **Default levels**, it was highlighted:
 
@@ -191,11 +193,6 @@ Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on
 
 ![Starting in Microsoft Edge 90, if you click the Console sidebar and hover on Default levels, it doesn't highlight.](../../media/2021/02/console-sidebar-default-levels-new.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -205,19 +202,16 @@ See also:
 
 
 <!-- ====================================================================== -->
-### The Console now escapes double quote characters
+### The Console now escapes double-quote characters
 
-Previously, the **Console** did not output valid double quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double-quote (`"`) characters:
+Previously, the **Console** did not output valid double-quote (`"`) characters in JavaScript strings.  Starting in Microsoft Edge version 90, the **Console** outputs JavaScript strings using escaped double-quote (`"`) characters:
 
 ![The Console outputs JavaScript strings using escaped double quote (&#0022;) characters.](../../media/2021/02/console-string-formatted-double-quotes.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1178530](https://crbug.com/1178530).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Console features reference](../../../console/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -235,6 +229,7 @@ To emulate the CSS color-gamut media feature:
 ![Emulate the CSS color-gamut media feature.](../../media/2021/02/rendering-css-color-gamut.msft.png)
 
 To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).
+<!-- todo: poor link destination: file listing, doesn't lead to user docs -->
 
 For the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
 
