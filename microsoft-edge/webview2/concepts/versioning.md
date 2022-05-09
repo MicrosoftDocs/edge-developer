@@ -87,6 +87,10 @@ For full support for the latest APIs in a release version of the SDK, the Runtim
 <!-- ====================================================================== -->
 ## Experimental APIs
 
+<!-- todo: update/expand this section.-->
+
+### Developing with Experimental APIs & providing feedback
+
 The experimental APIs in a WebView2 SDK _prerelease_ package aren't guaranteed to be forward-compatible and might be removed in future Runtime updates.  When a _prerelease_ version of the WebView2 SDK is initially made available, that SDK only works with Microsoft Edge Canary.  Soon after that, the prerelease SDK also works with the Beta and Dev channels.  Use a prerelease SDK to try out new APIs early and provide feedback before the new APIs are promoted to become stable, forward-compatible APIs.
 
 For full support of experimental APIs, use a Microsoft Edge preview channel, not the WebView2 Evergreen Runtime.  Any experimental APIs that are in a prerelease SDK aren't guaranteed to be forward-compatible.  The APIs that are in an SDK _release_ version are forward-compatible.  For more information, see [Forward compatibility of APIs](#forward-compatibility-of-apis) above.
@@ -95,7 +99,28 @@ The WebView2 team is seeking feedback on experimental WebView2 APIs that might b
 
 To help you evaluate the experimental APIs and share your feedback, use the [WebView2Feedback](https://github.com/MicrosoftEdge/WebViewFeedback) repo.
 
-Avoid using the experimental APIs in production apps.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.  After the release of an API as stable and public, the experimental version of that API is supported for two releases in a deprecated state.
+
+### Moving Using stable APIs, migrating to stable APIs in Production
+
+Using experimental APIs is not recommended for production apps.
+
+If you're still experimenting with these APIs, but we have already shipped a stable API and we've deprecated the experimental API, here's a way that will make those APIs continue to work.
+
+Avoid using the experimental APIs in production apps.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.  After the release of an API as stable and public, the experimental version of that API is supported for <!--at least; guaranteed-->two releases in a deprecated state.
+
+Once an API has been moved from Experimental to Stable/Public APIs, you need to move your code to the Stable/Public API, because that will be supported w bug fixes, while the exp'l api will be deprecated.  
+
+In the next sdk, the deprecated experimental API isn't available.
+
+.NET does a fallback.  but winrt...
+
+This (what? auto-fallback'ing?) is only for prerelease SDKs...
+
+If you want to be able to maintain the mini'l rt version for you app, try to use stable, and if it doesn't exist in rt, fall back to exp'l.  the __ do it for u.  Only for .NET, only for APIs that match up exp'l...  you have to be using prerelease SDK.
+
+If you're using a new stable api, you should have a fallback plan.
+
+<!-- what guidance should we give?  use a stable aPI.  some % of users might not have the correct rt, so you should be -->
 
 
 <!-- ====================================================================== -->

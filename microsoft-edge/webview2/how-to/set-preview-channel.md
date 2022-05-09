@@ -11,6 +11,8 @@ ms.date: 04/27/2022
 # Test upcoming APIs and features
 <!-- old title: # Switch to a preview channel to test upcoming APIs and features -->
 
+<!-- todo: update behavior description -->
+
 To test upcoming APIs and features, you switch to a preview channel, as follows.
 
 Updates of the WebView2 Evergreen Runtime often include new APIs and features.  Some of these updates could potentially break your WebView2 app.  To test the experimental APIs ahead of time and ensure your app's forward-compatibility, you should perform compatibility testing using a preview channel of Microsoft Edge, along with a prerelease version of the WebView2 SDK.
