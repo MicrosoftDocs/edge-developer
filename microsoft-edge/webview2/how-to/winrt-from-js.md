@@ -70,6 +70,8 @@ Then in the main body of your code, calls to projected objects look like the fol
 (new Windows.Globalization.Language("en-US")).displayName;
 ```
 
+Let's get started!
+
 
 <!-- ====================================================================== -->
 ## Step 1: Clone the repo and build the WebView2 UWP sample
