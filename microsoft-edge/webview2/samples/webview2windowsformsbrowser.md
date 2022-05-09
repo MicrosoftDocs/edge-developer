@@ -117,7 +117,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    If you get error messages about missing .NET Framework 4.6.2 Developer Pack, follow the steps below.  Otherwise, skip to the next major section below.
 
-1. Go to https://dotnet.microsoft.com/en-us/download/dotnet-framework/, select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
+1. Go to [Download .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/), select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
 
    ![Downloading .NET Framework 4.6.2 Developer Pack](media/webview2windowsformsbrowser-dl-net-fwk.png)
 

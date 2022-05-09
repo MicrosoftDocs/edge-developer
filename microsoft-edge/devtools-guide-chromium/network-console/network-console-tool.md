@@ -85,7 +85,7 @@ Selecting the format for the new environment:
 The **Network Console** tool is compatible with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.
 
 See also:
-* [Save and export using the Network Console](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#save-and-export-using-the-network-console) in _What's New in DevTools (Microsoft Edge 87)_
+* [Save and export using the Network Console](../whats-new/2020/10/devtools.md#save-and-export-using-the-network-console) in _What's New in DevTools (Microsoft Edge 87)_
 
 
 <!-- ====================================================================== -->

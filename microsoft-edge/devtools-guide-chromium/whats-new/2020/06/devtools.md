@@ -45,7 +45,7 @@ To enable the experiment, see [Turning an experiment on or off](../../../experim
 Chromium issue [#1047356](https://crbug.com/1047356)
 
 See also:
-* [Inspect CSS Grid](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/grid)
+* [Inspect CSS Grid](../../../css/grid.md)
 
 
 <!-- ====================================================================== -->
@@ -84,8 +84,8 @@ Expand **Response received** to display additional information from the `fetch` 
 Chromium issue [#1066579](https://crbug.com/1066579)
 
 See also:
-* [Display the timing relationship of requests](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-the-timing-relationship-of-requests) in _Network features reference_.
-* [Display the timing breakdown of a request](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-the-timing-breakdown-of-a-request) in _Network features reference_.
+* [Display the timing relationship of requests](../../../network/reference.md#display-the-timing-relationship-of-requests) in _Network features reference_.
+* [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
@@ -102,8 +102,8 @@ To enable the experiment, see [Turning an experiment on or off](../../../experim
 Chromium issue [#1070378](https://crbug.com/1070378)
 
 See also:
-* [The webhint extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/webhint)
-* [Enable webhint](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#enable-webhint) in _Experimental features_
+* [webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
+* [Enable webhint](../../../experimental-features/index.md#enable-webhint) in _Experimental features_
 
 
 <!-- ====================================================================== -->
@@ -122,7 +122,7 @@ Note: To enable the experiment, see [Turning an experiment on or off](../../../e
 Chromium issue [#897944](https://crbug.com/897944)
 
 See also:
-* [About Panel and Drawer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#about-panel-and-drawer-tools) in _Overview of DevTools_.
+* [About Panel and Drawer tools](../../../overview.md#about-panel-and-drawer-tools) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -173,7 +173,7 @@ The performance score formula has also been reweighted to better reflect the loa
 Chromium issue [#772558](https://crbug.com/772558)
 
 See also:
-* [Lighthouse tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool)
+* [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
 #### First Meaningful Paint deprecation
@@ -186,7 +186,7 @@ First Meaningful Paint (FMP) is deprecated in Lighthouse 6.0.  FMP has also been
 Chromium issue [#1096008](https://crbug.com/1096008)
 
 See also:
-* [Lighthouse tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool)
+* [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -203,8 +203,8 @@ DevTools now has better support for some of the latest JavaScript language featu
 Chromium issues [#1073903](https://crbug.com/1073903), [#1083214](https://crbug.com/1083214), [#1083797](https://crbug.com/1083797)
 
 See also:
-* [Run JavaScript in the Console](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/console-javascript)
-* [JavaScript debugging features](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/reference)
+* [Run JavaScript in the Console](../../../console/console-javascript.md)
+* [JavaScript debugging features](../../../javascript/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -237,7 +237,7 @@ The **Computed** pane in the **Elements** tool is now displayed consistently as 
 Chromium issue [#1073899](https://crbug.com/1073899)
 
 See also:
-* [View only the CSS that is actually applied to an element](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
+* [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
 
 
 <!-- ====================================================================== -->
@@ -248,7 +248,7 @@ See also:
 Chromium issue [#1071432](https://crbug.com/1071432)
 
 See also:
-* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-inspector/memory-inspector-tool)
+* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](../../../memory-inspector/memory-inspector-tool.md)
 <!-- todo: correct tool? -->
 
 
@@ -278,7 +278,7 @@ Give this feature a try with a [sample that sends duplicate messages to the Cons
 Chromium issue [#1082963](https://crbug.com/1082963)
 
 See also:
-* [Turn off message grouping](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/reference#turn-off-message-grouping) in _Console features reference_
+* [Turn off message grouping](../../../console/reference.md#turn-off-message-grouping) in _Console features reference_
 
 
 <!-- ====================================================================== -->
@@ -291,7 +291,7 @@ The **Selected context only** settings in Console Settings is now persisted.  Pr
 Chromium issue [#1055875](https://crbug.com/1055875)
 
 See also:
-* [Filter out messages from different contexts](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/reference#filter-out-messages-from-different-contexts) - in _Console features reference_
+* [Filter out messages from different contexts](../../../console/reference.md#filter-out-messages-from-different-contexts) - in _Console features reference_
 
 
 <!-- ====================================================================== -->
@@ -306,7 +306,7 @@ See also:
 Chromium issue [#912581](https://crbug.com/912581)
 
 See also:
-* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
+* [Performance features reference](../../../evaluate-performance/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -321,7 +321,7 @@ The times for `DOMContentLoaded`, First Paint, First Contentful Paint, and Large
 Chromium issue [#974550](https://crbug.com/974550)
 
 See also:
-* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
+* [Performance features reference](../../../evaluate-performance/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -337,7 +337,7 @@ The **Sources** panel has new designs for breakpoints, conditional breakpoints, 
 Chromium issue [#1041830](https://crbug.com/1041830)
 
 See also:
-* [Pause code with breakpoints](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/breakpoints)
+* [Pause code with breakpoints](../../../javascript/breakpoints.md)
 
 
 <!-- ====================================================================== -->

@@ -109,7 +109,7 @@ In Microsoft Edge 86 or later, when you copy a table from the **Console**, the f
 Chromium issue: [#1115011](https://crbug.com/1115011)
 
 See also:
-* [Console features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/reference)
+* [Console features reference](../../../console/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -149,7 +149,7 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 The current effort to improve translation quality enables easier support for more languages in the future.
 
 See also:
-* [Change DevTools language settings](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/localization)
+* [Change DevTools language settings](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/customize/localization)
 -->
 
 
@@ -167,7 +167,7 @@ The issue is now fixed in all versions of Microsoft Edge.
 Chromium issue: [#1103316](https://crbug.com/1103316)
 
 See also:
-* [Search for nodes](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/dom/#search-for-nodes) in _Get started viewing and changing the DOM_
+* [Search for nodes](../../../dom/index.md#search-for-nodes) in _Get started viewing and changing the DOM_
 
 
 <!-- ====================================================================== -->
@@ -204,7 +204,7 @@ For example, to take a screenshot of the table of contents, right-click the elem
 Chromium issue: [#1100253](https://crbug.com/1100253)
 
 See also:
-* [Capture node screenshot beyond viewport](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2021/01/devtools#capture-node-screenshot-beyond-viewport) in _What's new in DevTools (Microsoft Edge 89)_
+* [Capture node screenshot beyond viewport](../../2021/01/devtools.md#capture-node-screenshot-beyond-viewport) in _What's new in DevTools (Microsoft Edge 89)_
 
 
 <!-- ====================================================================== -->
@@ -217,7 +217,7 @@ The Issues warning bar on the **Console** tool is now replaced with a regular me
 ![Issues in console message.](../../media/2020/08/issue-console-msg.msft.png)
 
 See also:
-* [Find and fix problems using the Issues tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/issues/)
+* [Find and fix problems using the Issues tool](../../../issues/index.md)
 
 #### Third-party issues
 
@@ -227,7 +227,7 @@ Third-party issues are now hidden by default in the **Issues** tool.  Select the
 
 Chromium issues: [1096481](https://crbug.com/1096481), [1068116](https://crbug.com/1068116), [1080589](https://crbug.com/1080589)
 
-For more information, see [Filter by origin](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/issues/#filter-by-origin) in _Find and fix problems using the Issues tool_.
+For more information, see [Filter by origin](../../../issues/index.md#filter-by-origin) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
@@ -269,7 +269,7 @@ The [Idle Detection API](https://web.dev/idle-detection) allows developers to de
 Chromium issue: [#1090802](https://crbug.com/1090802)
 
 See also:
-* [Override geolocation with the Sensors tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/geolocation)
+* [Override geolocation with the Sensors tool](../../../device-mode/geolocation.md)
 
 
 <!-- ====================================================================== -->
@@ -287,7 +287,7 @@ You can now use DevTools to emulate the `prefers-reduced-data` media query, in t
 Chromium issue: [#1096068](https://crbug.com/1096068)
 
 See also:
-* [Emulate dark or light schemes in the rendered page](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/preferred-color-scheme-simulation)
+* [Emulate dark or light schemes in the rendered page](../../../accessibility/preferred-color-scheme-simulation.md)
 
 
 <!-- ====================================================================== -->
@@ -303,8 +303,8 @@ DevTools now has better support for the following JavaScript language features:
 Chromium issues: [1086817](https://crbug.com/1086817), [1080569](https://crbug.com/1080569)
 
 See also:
-* [Run JavaScript in the Console](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/console-javascript)
-* [Using the Editor pane to view or edit files](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_
+* [Run JavaScript in the Console](../../../console/console-javascript.md)
+* [Using the Editor pane to view or edit files](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_
 
 
 <!-- ====================================================================== -->
@@ -314,7 +314,7 @@ The **Lighthouse** tool is now running Lighthouse 6.2.  For a full list of chang
 
 Chromium issue: [#772558](https://crbug.com/772558)
 
-For more information, see [Lighthouse tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool).
+For more information, see [Lighthouse tool](../../../lighthouse/lighthouse-tool.md).
 
 
 <!-- ====================================================================== -->
@@ -329,7 +329,7 @@ Previously DevTools displayed a list nested under the **Application** tool > **S
 Chromium issue: [#807440](https://crbug.com/807440)
 
 See also:
-* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
+* [Service Worker improvements](../../../service-workers/index.md)
 * [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
@@ -388,15 +388,15 @@ Chromium issue: [#1051466](https://crbug.com/1051466)
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-* [Understand security issues using the Security tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/security/)
+* [Understand security issues using the Security tool](../../../security/index.md)
 
 
 <!-- ====================================================================== -->
 ### Elements and Network panel updates
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
-* [Network features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Network features reference](../../../network/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -411,8 +411,8 @@ In the example below, `h1` has low-contrast text.  To fix the contrast, open the
 Chromium issue: [#1093227](https://crbug.com/1093227)
 
 See also:
-* [Change colors with the Color Picker](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference#change-colors-with-the-color-picker) in _CSS features reference_
-* [Test text-color contrast using the Color Picker](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/color-picker)
+* [Change colors with the Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_
+* [Test text-color contrast using the Color Picker](../../../accessibility/color-picker.md)
 
 
 <!-- ====================================================================== -->
@@ -425,7 +425,7 @@ In the **Elements** tool, the **Properties** pane is back.  The **Properties** p
 Chromium issue: <!-- [#1105205](https://crbug.com/1105205), --> [#1116085](https://crbug.com/1116085)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -441,7 +441,7 @@ The `X-Client-Data` HTTP header contains a list of experiment IDs and Microsoft 
 Chromium issue: [#1103854](https://crbug.com/1103854)
 
 See also:
-* [Network features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference)
+* [Network features reference](../../../network/reference.md)
 -->
 
 
@@ -457,8 +457,8 @@ For example, if `monospace` is a custom font installed on the local machine, it 
 Chromium issue: [#1106221](https://crbug.com/1106221)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
-* [CSS features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference)
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [CSS features reference](../../../css/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -473,7 +473,7 @@ Previously, DevTools sometimes changed the value in the **Type** column to **Oth
 Chromium issue: [#997694](https://crbug.com/997694)
 
 See also:
-* [Network features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference)
+* [Network features reference](../../../network/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -497,8 +497,8 @@ Click the **Clear** button to remove any inputted text.
 Chromium issue: [#1067184](https://crbug.com/1067184)
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
-* [Network features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+* [Network features reference](../../../network/reference.md)
 
 
 <!-- ====================================================================== -->

@@ -54,6 +54,7 @@ In the **Styles** pane, click the link next to a CSS rule to open the external s
 
 If the stylesheet is minified, click the **Format** (![Format.](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
+<!-- todo: delete /en-us ? 2x -->
 In the following figure, after you click `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.
 
 :::image type="content" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Viewing the stylesheet where a rule is defined." lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
@@ -477,7 +478,7 @@ To change the selected color to some other color on the page:
    :::image type="content" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Using the Eyedropper." lightbox="../media/css-color-picker-eye-dropper.msft.png":::
 
 See also:
-* [Test text-color contrast using the Color Picker](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/color-picker)
+* [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
 
 <!-- ====================================================================== -->

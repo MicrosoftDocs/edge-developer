@@ -145,7 +145,7 @@ On repeat visits, the browser usually serves some files from the [cache](https:/
 
 The **Empty cache and hard refresh** workflow is only available when DevTools is open.
 
-See also [Emulate slow network connections](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#emulate-slow-network-connections) in _Network features reference_.
+See also [Emulate slow network connections](../network/reference.md#emulate-slow-network-connections) in _Network features reference_.
 
 
 <!-- ====================================================================== -->

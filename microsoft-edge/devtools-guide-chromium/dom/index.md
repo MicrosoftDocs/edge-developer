@@ -22,7 +22,7 @@ ms.date: 06/29/2021
    limitations under the License.  -->
 # Get started viewing and changing the DOM
 
-Follow these interactive tutorial sections to learn the basics of viewing and changing the [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) of a page using Microsoft Edge DevTools.
+Follow these interactive tutorial sections to learn the basics of viewing and changing the [Document Object Model](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) (DOM) of a page using Microsoft Edge DevTools.
 
 To understand the difference between the DOM and HTML, see [Appendix: HTML versus the DOM](#appendix-html-versus-the-dom), below.
 

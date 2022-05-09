@@ -478,7 +478,7 @@ console.warn('warn');
 ## See also
 
 <!-- if an article's title is adequately descriptive, and the article is in the same TOC bucket as the present article, don't much need a link here: -->
-* [MDN Web Docs > `console` object Reference](https://developer.mozilla.org/en-US/docs/Web/API/Console) - Has a summary overview of the methods, and has one page per method, with additional syntax details.
+* [MDN Web Docs > `console` object Reference](https://developer.mozilla.org/docs/Web/API/Console) - Has a summary overview of the methods, and has one page per method, with additional syntax details.
 * [Log messages in the Console tool](console-log.md) - An interactive introduction.
 * [Console tool utility functions and selectors](utilities.md) - **Console**-only utility methods, such as `debug()` and `monitorEvents()`.
 

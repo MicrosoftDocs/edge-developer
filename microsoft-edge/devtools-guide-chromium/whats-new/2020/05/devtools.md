@@ -166,14 +166,14 @@ The **Inspect Mode** tooltip now indicates whether the element has an accessible
 Chromium issue [#1040025](https://crbug.com/1040025)
 
 See also:
-* [Analyze pages using the Inspect tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/inspect)
+* [Analyze pages using the Inspect tool](../../../css/inspect.md)
 
 
 <!-- ====================================================================== -->
 ### Performance panel updates
 
 See also:
-* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
+* [Performance features reference](../../../evaluate-performance/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -196,7 +196,7 @@ If `Total Blocking Time: Unavailable` is displayed, Microsoft Edge DevTools did 
 Chromium issue [#1054381](https://crbug.com/1054381)
 
 See also:
-* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
+* [Performance features reference](../../../evaluate-performance/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -212,7 +212,7 @@ Click the **Layout Shift** event to display the details of the layout shift in t
 ![The details of a layout shift.](../../media/2020/05/cls.msft.png)
 
 See also:
-* [Performance features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/evaluate-performance/reference)
+* [Performance features reference](../../../evaluate-performance/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -229,14 +229,14 @@ The **Console** now uses the term `fulfilled`, which aligns with the `Promise` s
 V8 issue [#6751](https://bugs.chromium.org/p/v8/issues/detail?id=6751)
 
 See also:
-* [Console overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
+* [Console overview](../../../console/index.md)
 
 
 <!-- ====================================================================== -->
 ### Styles pane updates
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
 
 
 <!-- ====================================================================== -->
@@ -249,7 +249,7 @@ The autocomplete UI of the **Styles** pane now detects the [revert](https://deve
 Chromium issue [#1075437](https://crbug.com/1075437)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
 
 
 <!-- ====================================================================== -->
@@ -262,7 +262,7 @@ Hover on a `background-image` value in the **Styles** pane to display a preview 
 Chromium issue [#1040019](https://crbug.com/1040019)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
 
 
 <!-- ====================================================================== -->
@@ -309,8 +309,8 @@ In the **Application** tool, the **Manifest** page now shows app shortcuts.  App
 ![App shortcuts in the Manifest pane of the Application tool.](../../media/2020/05/app-shortcuts.msft.png)
 
 See also:
-* [Overview of Progressive Web Apps (PWAs)](https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/)
-* [Debug Progressive Web Apps (PWAs)](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/progressive-web-apps/)
+* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
+* [Debug Progressive Web Apps (PWAs)](../../../progressive-web-apps/index.md)
 
 
 <!-- ====================================================================== -->

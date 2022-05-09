@@ -148,7 +148,7 @@ You can choose from different presets, such as Slow 3G or Fast 3G.  To add your 
 
 DevTools displays a warning icon next to the **Network** tool to remind you that throttling is enabled.
 
-See also [Simulate a slower network connection](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/#simulate-a-slower-network-connection) in _Inspect network activity_.
+See also [Simulate a slower network connection](../network/index.md#simulate-a-slower-network-connection) in _Inspect network activity_.
 
 
 #### Emulate slow network connections from the Network Conditions drawer
