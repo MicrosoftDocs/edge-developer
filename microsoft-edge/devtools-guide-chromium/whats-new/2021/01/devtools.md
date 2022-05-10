@@ -508,8 +508,8 @@ To turn on this experiment, select **Settings** > **Experiments** and then selec
 See also:
 * [Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines](../../../experimental-features/index.md#enable-new-advanced-perceptual-contrast-algorithm-apca-replacing-previous-contrast-ratio-and-aaaaa-guidelines) in _Experimental features_.
 Edge 89)_.
-* [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
-* [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
+* [Change colors with the Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
+* [Test text-color contrast using the Color Picker](../../../accessibility/color-picker.md)
 
 
 <!-- ====================================================================== -->

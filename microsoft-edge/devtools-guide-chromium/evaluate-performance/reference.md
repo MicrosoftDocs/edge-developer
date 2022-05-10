@@ -537,7 +537,8 @@ For example, when the `Rubik` font is installed on your device and the `@font-fa
 
 When **Disable local fonts** is selected, DevTools ignores the `local()` fonts and fetches each font from the network:
 
-![Emulate missing local fonts.](../../media/2020/08/disable-font.msft.png)
+![Emulate missing local fonts.](images/disable-local-fonts.png)
+<!-- copied from edge-developer\microsoft-edge\devtools-guide-chromium\whats-new\2020\08\devtools.md   ../../media/2020/08/disable-font.msft.png -->
 
 This feature is useful if you use two different copies of the same font during development, such as:
 *  A local font for your design tools.
