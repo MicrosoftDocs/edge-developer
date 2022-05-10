@@ -270,47 +270,39 @@ https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/storage/applic
 ### New Remote Address Space column in the Network tool
 
 <!-- doesn't work in canary 90.0.813.0 -->
-The new **Remote Address Space** column displays the network IP address space of each network resource.  To display the new Remote Address Space column:
+In the **Network** tool, the new **Remote Address Space** column displays the network IP address space of each network resource.  To display the new **Remote Address Space** column:
 
 1. In DevTools, open the **Network** tool.
 
-1. In the Requests table, right-click the header row.  To learn how to add or remove columns from the Requests table, see [Add or remove columns](../../../network/reference.md#add-or-remove-columns).
+1. In the Requests table (the main, lower part of the **Network** tool), right-click the header row, and then select **Remote Address Space**:
 
-1. Click **Remote Address Space**.
+   ![In the right-click menu, select Remote Address Space.](../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png)
 
-The Requests table now displays a new column with the header named **Remote Address Space**.  To view the history of this feature in the Chromium open-source project, see Issue [1128885](https://crbug.com/1128885).
+   The Requests table now displays the **Remote Address Space** column:
 
-Right-click and then select **Remote Address Space**:
+   ![The Requests table now displays the Remote Address Space column.](../../media/2021/02/network-requests-remote-address-space.msft.png)
 
-![In the right-click menu, select Remote Address Space.](../../media/2021/02/network-requests-contextual-menu-remote-address-space.msft.png)
+To view the history of this feature in the Chromium open-source project, see Issue [1128885](https://crbug.com/1128885).
 
-The Requests table now displays the **Remote Address Space** column:
-
-![The Requests table now displays the Remote Address Space column.](../../media/2021/02/network-requests-remote-address-space.msft.png)
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Add or remove columns](../../../network/reference.md#add-or-remove-columns), in _Network features reference_.
 
 
 <!-- ====================================================================== -->
 ### Display allowed and disallowed features in the Frame details view
 
-The Frame details view now displays a list of allowed and disallowed browser features controlled by the [Permissions Policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md):
+In the **Application** tool, the **Frames** node in the lower left opens the Frame details view.  The Frame details view now includes a **Permissions Policy** section, which displays a list of allowed and disallowed browser features:
 
 ![Allowed and disallowed features based on the Permission Policy.](../../media/2021/02/application-frames-permissions-policy.msft.png)
 
-Permissions Policy is a web platform API that allows (or blocks) a webpage the use of browser features in an individual frame or in iframes that it embeds.
+This list is controlled by the Permissions Policy web platform API, which allows a webpage to use, or blocks a webpage from using, specified browser features in an individual frame or in iframes that the frame embeds.
 
 For the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Permissions Policy Explainer](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
+* [Application tool, to manage storage](../../../storage/application-tool.md)
+<!-- todo: it seems like a new "Application > Webpage Frames" .md page is needed; many What's New items cover the Frame node/page in lower left of Application tool -->
 
 
 <!-- ====================================================================== -->
@@ -320,15 +312,12 @@ The **Cookies** pane in the **Application** tool now displays the `SameParty` at
 
 ![SameParty column in the Cookies pane.](../../media/2021/02/application-storage-cookies-sameparty.msft.png)
 
-The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets)
+The `SameParty` attribute is a new boolean attribute to indicate whether a cookie is included in requests to origins of the same [First-Party Sets](https://github.com/privacycg/first-party-sets).
 
 For the history of this feature in the Chromium open-source project, see Issue [1161427](https://crbug.com/1161427).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [View, edit, and delete cookies](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies?branch=pr-en-us-1881)
 
 
 <!-- ====================================================================== -->
