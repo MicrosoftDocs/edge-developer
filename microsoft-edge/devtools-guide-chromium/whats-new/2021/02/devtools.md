@@ -331,11 +331,10 @@ Use the standard `Object.defineProperty` method to define the `fn.name` property
 
 For the history of this feature in the Chromium open-source project, see Issue [1177685](https://crbug.com/1177685).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Console features reference](../../../console/reference.md)
+* [Console tool utility functions and selectors](../../../console/utilities.md)
+<!-- todo: is this function a partial overlap w/ devtools console & JS Ref?  do we have similar doc'n? -->
 
 
 <!-- ====================================================================== -->
