@@ -355,7 +355,7 @@ If you submit a promotional video in the listing, it should follow all the conte
 
 
 <!-- ====================================================================== -->
-## Certification Appeal Process
+## Edge Add-ons Certification Complaint and Appeal Process
 
 All the extensions should adhere to the store policies listed above. If your extension failed in the review process, please review the store policies to understand the reason for failure. After submitting your extension using Partner Center, to ask a question about the review or certification status of it, go to [New Support Request](https://support.microsoft.com/supportrequestform/e7a381be-9c9a-fafb-ed76-262bc93fd9e4) and complete the form.
 

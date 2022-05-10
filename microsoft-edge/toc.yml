@@ -1069,6 +1069,10 @@
                   href: webview2/how-to/hostobject.md
                   displayName: AddHostObjectToScript, host objects
 
+                - name: Call native-side WinRT code from web-side code
+                  href: webview2/how-to/winrt-from-js.md
+                  displayName: AddHostObjectToScript, host objects
+
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
