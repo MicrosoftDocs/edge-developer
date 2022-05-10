@@ -67,7 +67,7 @@ To turn on this experiment, see [Settings](../../../customize/index.md#settings)
 For the history of this feature in the Chromium open-source project, see Issue [1093229](https://crbug.com/1093229).
 
 See also:
-* [Enable the Font Editor tool within the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/#enable-the-font-editor-tool-within-the-styles-pane) in _Experimental features_.
+* [Enable the Font Editor tool within the Styles pane](../../../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane) in _Experimental features_.
 * [Edit CSS font styles and settings in the Styles pane in DevTools](../../../inspect-styles/edit-fonts.md).
 
 
@@ -86,9 +86,9 @@ Flexbox debugging features are in active development.  To turn on the experiment
 <!--  Subtitle: New Flexbox (flex) icon in the Elements tool help you identify Flexbox containers in your code.  When toggled, the adorner displays and hides outlines of the flex container to help you debug the layout -->
 
 Update: This feature has been released and is no longer experimental.  See:
-* [Getting element information from the Inspect overlay](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/inspect#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/test-inspect-tool#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
-* [Inspect CSS Grid](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/grid).
+* [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
+* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
+* [Inspect CSS Grid](../../../css/grid.md).
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -114,9 +114,9 @@ The **Flexbox overlays** highlighted in the **Layout** pane:
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you see the effect a property has on your Flexbox layout. -->
 
 Update: This feature has been released and is no longer experimental.  See:
-* [Getting element information from the Inspect overlay](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/inspect#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/test-inspect-tool#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
-* [Inspect CSS Grid](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/grid).
+* [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
+* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
+* [Inspect CSS Grid](../../../css/grid.md).
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -141,7 +141,7 @@ Flexbox `gap` in CSS properties and webpage highlighted:
 <!--  Title: Add tools quickly with new More Tools button  -->
 <!--  Subtitle: A convenient way to open new tools in Microsoft Edge DevTools -->
 
-Update: This feature has been released and is no longer experimental.  See [About the list of tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools).
+Update: This feature has been released and is no longer experimental.  See [About the list of tools](../../../about-tools.md).
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -165,8 +165,8 @@ To view a video that displays and reads aloud several suggestions with this expe
 ![The suggestion highlighted in the Styles pane.](../../media/2021/01/announce-css-suggestion.msft.png)
 
 See also:
-* [Navigate the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/navigation#navigate-the-styles-pane) in _Navigate DevTools with assistive technology_.
-* [CSS features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference)
+* [Navigate the Styles pane](../../../accessibility/navigation.md#navigate-the-styles-pane) in _Navigate DevTools with assistive technology_.
+* [CSS features reference](../../../css/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -214,7 +214,7 @@ The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
 See also:
-* [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
 <!-- ====================================================================== -->
@@ -233,7 +233,7 @@ In Microsoft Edge version 89, node screenshots are more accurate, capturing the 
 For the history of this feature in the Chromium open-source project, see Issue [1003629](https://crbug.com/1003629).
 
 See also:
-* [Capture node screenshots using the Elements tool context menu](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/08/devtools#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's new in DevTools (Microsoft Edge 86)_
+* [Capture node screenshots using the Elements tool context menu](../../2020/08/devtools.md#capture-node-screenshots-using-the-elements-tool-context-menu) in _What's new in DevTools (Microsoft Edge 86)_
 
 
 <!-- ====================================================================== -->
@@ -256,7 +256,7 @@ Webpage highlighted with no forced CSS:
 For the history of this feature in the Chromium open-source project, see Issue [1156628](https://crbug.com/1156628).
 
 See also:
-* [Use state simulation to simulate the hover state of an animated menu item](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/test-inspect-states#use-state-simulation-to-simulate-the-hover-state-of-an-animated-menu-item) in _Verify accessibility of all states of elements_.
+* [Use state simulation to simulate the hover state of an animated menu item](../../../accessibility/test-inspect-states.md#use-state-simulation-to-simulate-the-hover-state-of-an-animated-menu-item) in _Verify accessibility of all states of elements_.
 
 
 <!-- ====================================================================== -->
@@ -269,7 +269,7 @@ Use the new **Duplicate element** shortcut to clone an element.  In the **Elemen
 For the history of this feature in the Chromium open-source project, see Issue [1150797](https://crbug.com/1150797).
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -330,7 +330,7 @@ You can now display the URL-decoded cookies value in the **Cookies** pane.  To d
 For the history of this feature in the Chromium open-source project, see Issue [997625](https://crbug.com/997625).
 
 See also:
-* [View, edit, and delete cookies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies)
+* [View, edit, and delete cookies](../../../storage/cookies.md)
 
 
 <!-- ====================================================================== -->
@@ -345,7 +345,7 @@ To filter cookies, select **Application** > **Cookies**, and then type in the **
 For the history of this feature in the Chromium open-source project, see Issue [978059](https://crbug.com/978059).
 
 See also:
-* [View, edit, and delete cookies](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies)
+* [View, edit, and delete cookies](../../../storage/cookies.md)
 
 
 <!-- ====================================================================== -->
@@ -360,14 +360,14 @@ To clear website data and all cookies, select **Application** > **Storage**.  Se
 For the history of this feature in the Chromium open-source project, see Issue [1012337](https://crbug.com/1012337).
 
 See also:
-* [Application tool, to manage storage](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/application-tool?branch=pr-en-us-1881)
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 
 
 <!-- ====================================================================== -->
 ### Network tool updates
 
 See also:
-* [Network features reference](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference?branch=pr-en-us-1881)
+* [Network features reference](../../../network/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -380,7 +380,7 @@ In Microsoft Edge version 88 or earlier, DevTools reset the **Record network log
 For the history of this feature in the Chromium open-source project, see Issue [1122580](https://crbug.com/1122580).
 
 See also:
-* [Record network requests](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference?branch=pr-en-us-1881#record-network-requests) in _Network features reference_.
+* [Record network requests](../../../network/reference.md#record-network-requests) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
@@ -393,8 +393,8 @@ The network emulation option **Online** is now renamed to **No Throttling**.
 For the history of this feature in the Chromium open-source project, see Issue [1028078](https://crbug.com/1028078).
 
 See also:
-* [Simulate a slower network connection](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/#simulate-a-slower-network-connection) in _Inspect network activity_.
-* [Emulate slow network connections](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#emulate-slow-network-connections) in _Network features reference_.
+* [Simulate a slower network connection](../../../network/index.md#simulate-a-slower-network-connection) in _Inspect network activity_.
+* [Emulate slow network connections](../../../network/reference.md#emulate-slow-network-connections) in _Network features reference_.
 
 
 <!-- ====================================================================== -->
@@ -417,8 +417,8 @@ In the **Sources** tool, on a breakpoint, hover on an object, in the **Object** 
 For the history of this feature in the Chromium open-source project, see Issues [1148353](https://crbug.com/1148353) and [1149859](https://crbug.com/1149859).
 
 See also:
-* [Console overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/console/)
-* [Sources tool overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/)
+* [Console overview](../../../console/index.md)
+* [Sources tool overview](../../../sources/index.md)
 <!-- 0 hits on "Copy object" -->
 
 
@@ -438,8 +438,8 @@ In the **Elements** tool > **Styles** pane, right-click a file name, and then se
 For the history of this feature in the Chromium open-source project, see Issues [1155120](https://crbug.com/1155120).
 
 See also:
-* [Sources tool overview](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/)
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Sources tool overview](../../../sources/index.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 <!-- 0 hits on "Copy file name" -->
 
 

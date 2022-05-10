@@ -218,7 +218,7 @@ Version 1.1.7 includes the following bug fixes and improvements:
 To manually update to version 1.1.7, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).  You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
 
 See also:
-* [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
 <!-- ====================================================================== -->
@@ -259,7 +259,7 @@ To learn more about debugging in the **Sources** tool, see [Using the Debugger p
 For the history of this feature in the Chromium open-source project, see Issue [1166577](https://crbug.com/1166577).
 
 See also:
-* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-inspector/memory-inspector-tool)
+* [Inspect a JavaScript ArrayBuffer with the Memory Inspector tool](../../../memory-inspector/memory-inspector-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -409,7 +409,6 @@ See also:
 ### Filter experiments in the Experiments setting
 
 Find experiments quicker with the new experiment filter.  For example, to turn on new experiments for code issues:
-``
 
 1. Select **Settings** > **Experiments**.
 1. In the **Filter** text box, type `issues`.

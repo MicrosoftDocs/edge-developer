@@ -40,7 +40,7 @@ To meet your translation needs, the Microsoft Edge DevTools team is focused on i
 ![Network tool with non-localized filters.](../../media/2020/10/bing-network-japanese.msft.png)
 
 See also:
-* [Change DevTools language settings](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/localization)
+* [Change DevTools language settings](../../../customize/localization.md)
 
 
 <!-- ====================================================================== -->
@@ -59,7 +59,7 @@ To move any bottom tool to the top, right-click a tab and then select **Move to 
 For the history of this feature in the Chromium open-source project, see Issue [#1075732](https://crbug.com/1075732).
 
 See also:
-* [Panel tools vs. Drawer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#panel-tools-vs-drawer-tools) in _About the list of tools_
+* [Panel tools vs. Drawer tools](../../../about-tools.md#panel-tools-vs-drawer-tools) in _About the list of tools_
 
 
 <!-- ====================================================================== -->
@@ -149,7 +149,7 @@ Using the extension in headless mode:
 
 ![Using the extension in headless mode.](../../media/2020/10/microsoft-edge-tools-headless.msft.png)
 
-For more information, see [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension).
+For more information, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 
 <!-- ====================================================================== -->
@@ -184,7 +184,7 @@ For more information, see [Emulate authenticators and debug WebAuthn](../../../w
 ### Elements tool updates
 
 See also:
-* [Inspect, edit, and debug HTML and CSS with the Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/elements-tool/elements-tool)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -204,7 +204,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 <!-- lacks the new feature: -->
 See also:
-* [View only the CSS that is actually applied to an element](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
+* [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
 
 
 <!-- ====================================================================== -->
@@ -218,7 +218,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 <!-- probably lacks the new feature: -->
 See also:
-* [View only the CSS that is actually applied to an element](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
+* [View only the CSS that is actually applied to an element](../../../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_
 
 
 <!-- ====================================================================== -->
@@ -227,7 +227,7 @@ See also:
 The **Lighthouse** tool is now running Lighthouse 6.4.  For a full list of changes, see the [Lighthouse release notes](https://github.com/GoogleChrome/lighthouse/releases/v6.4.1).  For real-time updates on this feature in the Chromium open-source project, see Issue [#772558](https://crbug.com/772558).
 
 See also:
-* [Lighthouse tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/lighthouse/lighthouse-tool)
+* [Lighthouse tool](../../../lighthouse/lighthouse-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -280,7 +280,7 @@ In the **Security & Isolation** section of the frame detail page, view the Cross
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
 See also:
-* [Display opener frame details for opened windows](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
+* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 
@@ -296,7 +296,7 @@ The **Security & Isolation** section of the frame detail page now displays the `
 For real-time updates on this feature in the Chromium open-source project, see Issue [#1051466](https://crbug.com/1051466).
 
 See also:
-* [Display opener frame details for opened windows](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/11/devtools#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
+* [Display opener frame details for opened windows](../11/devtools.md#display-opener-frame-details-for-opened-windows) in _What's new in DevTools (Microsoft Edge 88)_
 * [The Application tool, to manage storage](../../../storage/application-tool.md)
 
 

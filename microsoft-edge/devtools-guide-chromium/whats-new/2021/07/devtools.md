@@ -43,7 +43,7 @@ See [Apply color themes to DevTools](../../../customize/theme.md).
 <!-- ====================================================================== -->
 ## Debug DOM node memory leaks with the new Detached Elements tool
 
-Update: This feature has been released and is no longer experimental.  See [Debug DOM memory leaks with the Detached Elements tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/memory-problems/dom-leaks).
+Update: This feature has been released and is no longer experimental.  See [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md).
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
@@ -91,7 +91,7 @@ You can file issues and contribute to the extension on the [vscode-edge-devtools
 <!-- Title: New look for buttons and menus in Microsoft Edge DevTools -->
 <!-- Subtitle: DevTools has adopted Fluent UI, giving it a more modern look that better aligns with the rest of the Microsoft Edge browser. -->
 
-Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/), giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
+Microsoft Edge DevTools has adopted [Fluent UI](https://developer.microsoft.com/fluentui), giving buttons and menus a more modern look that better aligns with the rest of the Microsoft Edge browser.
 
 ![DevTools implemented with Fluent UI design.](../../media/2021/07/fluent-ui.msft.png)
 

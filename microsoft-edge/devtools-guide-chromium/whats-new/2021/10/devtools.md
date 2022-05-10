@@ -28,12 +28,6 @@ To provide feedback, in Visual Studio Code, in the **Activity Bar**, click **Mic
 
 ![Changes in the CSS Styles editor now show up in your CSS files inside Visual Studio Code.](../../media/2021/10/css-mirror-editing-button.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## All error and warning messages in the Console now have a Search Web icon
@@ -44,14 +38,12 @@ See also:
 The **Search for this message on the Web** icon is now available for all errors and warnings in the **Console**.  Previously, this icon only appeared for some of the common errors and warnings.  Now the icon has been added on the remaining errors and warnings.  Click the **Search for this message on the Web** icon to search the web using the relevant error or warning string.
 
 For more information, see [Search for Console errors on the web](../09/devtools.md#search-for-console-errors-on-the-web).
+<!-- todo: cover in regular doc -->
 
 ![All error and warning messages in the Console now have a Search Web icon.](../../media/2021/10/console-message-search-web-button.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Look up error messages on the web from the Console](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console) in _Console overview_.
 
 
 <!-- ====================================================================== -->
@@ -74,12 +66,6 @@ To learn more about User-Agent Client Hints, see [Detecting Microsoft Edge from 
 ![Settings > Devices > Setting User-Agent Client Hints.](../../media/2021/10/keyboard-define-ua-client-hints.png)
 
 To view the history of this feature in the Chromium open-source project, see [Issue 1243827: User agent client hints form accessibility](https://bugs.chromium.org/p/chromium/issues/detail?id=1243827).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -135,7 +121,7 @@ link.access = 'admin';
 link.search = `?access=${link.access}`;
 ```
 
-After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) (such as `URL`) that have many inherited properties.
+After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/docs/Web/API) (such as `URL`) that have many inherited properties.
 
 ![Own properties are bold and sorted first.](../../media/2021/10/improved-display-properties.png)
 

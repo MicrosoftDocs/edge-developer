@@ -520,6 +520,10 @@
 # Rendering tool --------------------------------------------------------------
             - name: Rendering tool
               items:
+                - name: Rendering tool, to see what a webpage looks like with different display options or vision deficiencies
+                  href: devtools-guide-chromium/rendering-tools/rendering-tool.md
+                  displayName: Rendering tool
+
                 - name: Emulate dark or light schemes in the rendered page  # added article
                   href: devtools-guide-chromium/accessibility/preferred-color-scheme-simulation.md
                   displayName: Rendering tool

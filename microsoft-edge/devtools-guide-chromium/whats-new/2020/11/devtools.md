@@ -39,7 +39,7 @@ If you are using a Linux environment in your continuous integration and delivery
 ![DevTools in Microsoft Edge on Linux.](../../media/2020/11/edge-on-linux.msft.png)
 
 See also:
-* [Use WebDriver to automate Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/)
+* [Use WebDriver to automate Microsoft Edge](../../../../webdriver-chromium/index.md)
 
 
 <!-- ====================================================================== -->
@@ -68,8 +68,8 @@ To help you see issues that are found by [webhint](https://webhint.io), the **Is
 ![Issues tool.](../../media/2020/11/issues-webhints.msft.png)
 
 See also:
-* [Find and fix problems using the Issues tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/issues/)
-* [The webhint extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/webhint)
+* [Find and fix problems using the Issues tool](../../../issues/index.md)
+* [webhint extension for Visual Studio Code](../../../../test-and-automation/webhint.md)
 
 
 <!-- ====================================================================== -->
@@ -106,8 +106,8 @@ For example, to display the variable definition for the `--theme-body-background
 ![Viewing the definition of a CSS style that's used by a CSS variable.](../../media/2020/11/css-variable-support-target.msft.png)
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts)
-* [CSS features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference)
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [CSS features reference](../../../css/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -121,7 +121,7 @@ The following new features in the **Network** tool, **Application** tool, and **
 The routing of a request displays the `startup` and `fetch` events based on the network requests that run through service workers.  The timelines are accessed from either the **Application** or **Network** tool.  The timelines help when you are having trouble with service workers and want to see if something is wrong with the `startup` or `fetch` event.
 
 See also:
-* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
+* [Service Worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -150,7 +150,7 @@ To display additional context when debugging a service worker:
 
 See also:
 * [Application tool, to manage storage](../../../storage/application-tool.md)
-* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
+* [Service Worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -167,7 +167,7 @@ In the **Network** tool, you can debug network requests that are run by service 
 
 See also:
 * [Display the timing breakdown of a request](../../../network/reference.md#display-the-timing-breakdown-of-a-request) in _Network features reference_.
-* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
+* [Service Worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -184,8 +184,8 @@ In the following figure, the reference is selected, and has opened the initiator
 ![The (index) webpage is the request initiator.](../../media/2020/11/service-worker-sources-call-stack-target.msft.png)
 
 See also:
-* [View the call stack](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/javascript/reference#view-the-call-stack) in _JavaScript debugging features_
-* [Service Worker improvements](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/service-workers/)
+* [View the call stack](../../../javascript/reference.md#view-the-call-stack) in _JavaScript debugging features_
+* [Service Worker improvements](../../../service-workers/index.md)
 
 
 <!-- ====================================================================== -->
@@ -289,7 +289,7 @@ For real-time updates on this feature in the Chromium open-source project, see I
 
 See also:
 * [Enhanced CORS debugging support](../../2021/05/devtools.md#enhanced-cors-debugging-support) in _What's New in DevTools (Microsoft Edge 92)_
-* [Network features reference](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference)
+* [Network features reference](../../../network/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -373,7 +373,7 @@ In the **Network** tool, to copy the stacktrace to your clipboard, right-click t
 For the history of this feature in the Chromium open-source project, see Issue [1139615](https://crbug.com/1139615).
 
 See also:
-* [Display the stack trace that caused a request](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network/reference#display-the-stack-trace-that-caused-a-request) in _Network features reference_
+* [Display the stack trace that caused a request](../../../network/reference.md#display-the-stack-trace-that-caused-a-request) in _Network features reference_
 
 
 <!-- ====================================================================== -->
@@ -386,7 +386,7 @@ In the **Sources** tool, use this feature to see the value of a WebAssembly (Was
 For real-time updates on this feature in the Chromium open-source project, see Issues [1058836](https://crbug.com/1058836) and [1071432](https://crbug.com/1071432).
 
 See also:
-* [Using the Debugger pane to debug JavaScript code](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/sources/#using-the-debugger-pane-to-debug-javascript-code) in _Sources tool overview_
+* [Using the Debugger pane to debug JavaScript code](../../../sources/index.md#using-the-debugger-pane-to-debug-javascript-code) in _Sources tool overview_
 
 
 <!-- ====================================================================== -->

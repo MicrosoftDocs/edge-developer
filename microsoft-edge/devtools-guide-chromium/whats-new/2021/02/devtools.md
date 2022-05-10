@@ -75,7 +75,7 @@ Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that 
 <!-- ![Click the Help (?) icon in the Activity Bar to display tooltips.](../../media/2021/02/focus-mode-and-tooltips-help.msft.png) -->
 <!--
 See also:
-* [Focus Mode](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/?branch=pr-en-us-1881#focus-mode) in _Experimental features_.
+* [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_.
 -->
 
 See also:
@@ -125,7 +125,7 @@ The following figure displays the same messages from the example webpage logged 
 ![Displaying the same message in the DevTools Console under Output of Microsoft Visual Studio Code.](../../media/2021/02/visual-studio-code-extension-log-editor.msft.png)
 
 See also:
-* [Microsoft Edge DevTools extension for Visual Studio Code](https://review.docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension?branch=pr-en-us-1910)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
 <!-- ====================================================================== -->
@@ -147,8 +147,8 @@ In addition, the **Flexbox** section in the **Layout** pane displays all of the 
 For the history of this feature in the Chromium open-source project, see Issues [1166710](https://crbug.com/1166710) and [1175699](https://crbug.com/1175699).
 
 See also:
-* [Edit CSS font styles and settings in the Styles pane](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/inspect-styles/edit-fonts?branch=pr-en-us-1910)
-* [Syncing live changes from the Styles tool by using CSS Mirror Editing](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing) in _Microsoft Edge DevTools extension for Visual Studio Code_.<!-- eg "flex-direction" is only mentioned in this extension article -->
+* [Edit CSS font styles and settings in the Styles pane](../../../inspect-styles/edit-fonts.md)
+* [Syncing live changes from the Styles tool by using CSS Mirror Editing](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing) in _Microsoft Edge DevTools extension for Visual Studio Code_.<!-- eg "flex-direction" is only mentioned in this extension article -->
 <!-- todo: copy section content to regular docs -->
 
 
@@ -221,63 +221,49 @@ The [color-gamut](https://www.chromestatus.com/feature/5354410980933632) media q
 
 To emulate the CSS color-gamut media feature:
 
-1. Open the [Command Menu](../../../command-menu/index.md).
-1. Type `Rendering`.
-1. Run the **Show Rendering** command.
-1. Go to **Emulate CSS media feature color-gamut** and then click an option:
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+1. In DevTools, on the main toolbar, select the **Rendering** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.  The **Rendering** tool opens.
+1. In the **Emulate CSS media feature color-gamut** dropdown, select a **color-gamut** option:
 
 ![Emulate the CSS color-gamut media feature.](../../media/2021/02/rendering-css-color-gamut.msft.png)
 
 To learn more about the `color-gamut` feature, see [Color Display Quality: the 'color-gamut' feature](https://drafts.csswg.org/mediaqueries-4#color-gamut).
-<!-- todo: poor link destination: file listing, doesn't lead to user docs -->
+<!-- todo: add regular docs?  this link destination is a file listing, not user docs. -->
 
 For the history of this feature in the Chromium open-source project, see Issue [1073887](https://crbug.com/1073887).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering-tools/rendering-tool.md)
 
 
 <!-- ====================================================================== -->
-### Improved Progressive Web Apps tooling
-
-<!--
-See also:
-* []()
-* []()
--->
+### Improved tooling for Progressive Web Apps
 
 
 <!-- ====================================================================== -->
 #### PWA installability warning in the Console
 
-The **Console** now displays a more detailed [Progressive Web Apps (PWA)](../../../../progressive-web-apps-chromium/index.md) installability warning message with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).
+The **Console** now displays a more detailed installability warning message for Progressive Web Apps (PWAs), with a link to [Improving Progressive Web App offline support detection](https://developer.chrome.com/blog/improved-pwa-offline-detection).
 
 ![PWA installability warning in Console tool.](../../media/2021/02/console-pwa-installability.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
 
 
 <!-- ====================================================================== -->
 #### PWA description length warning in the Manifest pane
 
-The **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters.
+In the **Application** tool, the **Manifest** pane now displays a warning message if the manifest description exceeds 324 characters:
 
 ![PWA description truncate warning.](../../media/2021/02/application-manifest-errors-and-warnings-truncated.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issues [965802](https://crbug.com/965802), [1146450](https://crbug.com/1146450), and [1169689](https://crbug.com/1169689).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
+<!-- todo: the Application tool seems under-doc'd; contrast the TOC > Tools > Application tool vs. the left-side tree in the tool:
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/storage/application-tool -->
 
 
 <!-- ====================================================================== -->
