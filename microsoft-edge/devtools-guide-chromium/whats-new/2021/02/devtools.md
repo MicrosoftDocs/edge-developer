@@ -317,7 +317,7 @@ The `SameParty` attribute is a new boolean attribute to indicate whether a cooki
 For the history of this feature in the Chromium open-source project, see Issue [1161427](https://crbug.com/1161427).
 
 See also:
-* [View, edit, and delete cookies](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cookies?branch=pr-en-us-1881)
+* [View, edit, and delete cookies](../../../storage/cookies.md)
 
 
 <!-- ====================================================================== -->
@@ -341,30 +341,26 @@ See also:
 ### Full accessibility tree view in the Elements tool
 
 ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
+<!-- true as of 5/10/2022 -->
 
-This experiment provides a **full accessibility tree view** in the **Elements** tool.  The [Accessibility](../../../accessibility/accessibility-tab.md) pane provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.
-After you turn on this experiment and reload the DevTools, click one of the following buttons to switch the display in the Elements tool for all elements on the webpage.
+This experiment provides a **full accessibility tree view** in the **Elements** tool.  The **Accessibility** tab (grouped with the **Styles** tab) provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment and reload DevTools, click the button area at the top of the **Elements** panel to switch the display in the Elements tool for all elements on the webpage.
 
-*  To display the full accessibility tree view, click the **Switch to Accessibility Tree view** button.
-*  To display the DOM tree view, click the **Switch to DOM Tree view** button.
-
-To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable full accessibility tree view in Elements pane**.
-
-Displaying the **DOM Tree view**:
+To display the DOM tree view, click the **Switch to DOM Tree view** button area at the top:
 
 ![Displaying the DOM Tree view.](../../media/2021/02/elements-switch-to-accessibility-tree-view.msft.png)
 
-Displaying the **Full Accessibility Tree view**:
+To display the full accessibility tree, click the **Switch to Accessibility Tree view** button area at the top:
 
 ![Displaying the full accessibility tree view.](../../media/2021/02/elements-switch-to-dom-tree-view.msft.png)
+<!-- todo: redo capture showing Accessibility tab (instead of Styles tab) for comparison and to clarify its behavior -->
+
+To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable full accessibility tree view in the Elements panel**.
 
 For the history of this feature in the Chromium open-source project, see Issue [887173](https://crbug.com/887173).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Test accessibility using the Accessibility tab](../../../accessibility/accessibility-tab.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 
 
 <!-- ====================================================================== -->
