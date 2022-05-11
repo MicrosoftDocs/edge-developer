@@ -26,7 +26,9 @@ ms.date: 12/13/2021
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
 
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://aka.ms/microsoftedge) and [follow us on Twitter](https://aka.ms/twitter/edgedevtools).
+The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://aka.ms/microsoftedge).
+
+For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->

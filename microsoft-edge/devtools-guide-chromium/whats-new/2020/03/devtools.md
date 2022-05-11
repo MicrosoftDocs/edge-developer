@@ -24,6 +24,8 @@ ms.date: 05/04/2021
 
 Following the updated Chromium schedule, we are adjusting our schedule for upcoming Microsoft Edge releases and cancelling the Microsoft Edge 82 release. Check out our [blog post](https://blogs.windows.com/msedgedev/2020/03/20) for more info.
 
+For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+
 Here are the new features available in DevTools in Microsoft Edge 83.
 
 
