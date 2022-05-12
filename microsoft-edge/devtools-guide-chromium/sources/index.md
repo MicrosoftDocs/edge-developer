@@ -165,9 +165,9 @@ A file that overrides a file that is returned by the server is indicated by a pu
 
 #### See also
 
-*  [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
-*  [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
-
+* [Override webpage resources with local copies (Overrides tab)](../javascript/overrides.md)
+* [Map the processed code to your original source code, for debugging](../javascript/source-maps.md)
+* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 
 ### Using the Content scripts tab for Microsoft Edge extensions
 
@@ -369,8 +369,8 @@ CSS changes take effect immediately; you don't need to manually save the changes
 #### See also
 
 * [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md)
-
 * [DevTools for beginners: Get started with CSS](../beginners/css.md) - tutorial
+* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 
 
 ### Editing an HTML file
@@ -509,6 +509,7 @@ To use a debugger on a webpage, you typically set a breakpoint and then send a f
 
 #### See also
 
+* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 * [Get started debugging JavaScript](../javascript/index.md) - a tutorial using an existing, simple webpage that contains a few form controls.
 
 
@@ -549,6 +550,12 @@ The following articles cover the **Debugger** pane and breakpoints:
 * [JavaScript debugging features](../javascript/reference.md) - How to use the debugger to set breakpoints, step through code, view and modify variable values, watch JavaScript expressions, and view the call stack.
 
 * [Pause your code with breakpoints](../javascript/breakpoints.md) - How to set basic and specialized breakpoints in the debugger.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Sources tool keyboard shortcuts](../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
 
 
 <!-- ====================================================================== -->

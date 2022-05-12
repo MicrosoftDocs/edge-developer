@@ -11,7 +11,9 @@ ms.date: 10/20/2021
 
 The top of this page lists announcements from the Microsoft Edge DevTools team, and then the bottom of this page describes selected features from the Chromium project.  To try new features in Microsoft Edge DevTools and in the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.
 
-To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  Whether you are on Windows, Linux, or macOS, consider using one of the preview channels of Microsoft Edge as your default development browser.
+To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).  Whether you are on Windows, Linux, or macOS, consider using one of the preview channels of Microsoft Edge as your default development browser.
+
+For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->
@@ -78,8 +80,6 @@ You can use `console.group()` to label a group of messages and provide some orga
 
 In Microsoft Edge version 95, these problems have been fixed.  Filtering to a label now displays the group label and the individual messages inside of the group.  When the filter doesn't match the group label, the entire group is hidden.
 
-To learn more about the `group()` API for the Console in DevTools, see [group](../../../../devtools-guide-chromium/console/api.md#group) in _Console object API Reference_.
-
 When the filter string matches a group label, the group and its members are displayed:
 
 ![When the filter string matches a group label, the group and its members are displayed.](../../media/2021/10/filter-matches-group-label.png)
@@ -88,13 +88,10 @@ When the filter string doesn't match a group label, neither the group nor its me
 
 ![When the filter string doesn't match a group label, neither the group nor its members are displayed.](../../media/2021/10/filter-matches-group-label-asdf.png)
 
-To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [group](../../../../devtools-guide-chromium/console/api.md#group) in _Console object API Reference_.
+
+To view the history of this feature in the Chromium open-source project, see [Issue 363796: ☂ Console filter inappropriately hides grouped content and doesn't hide group titles](https://bugs.chromium.org/p/chromium/issues/detail?id=363796).
 
 
 <!-- ====================================================================== -->
@@ -109,10 +106,10 @@ The following are some of the additional features that are available in Microsof
 <!-- Chromium What's New entry: [Improved the display of properties](https://developer.chrome.com/blog/new-in-devtools-95/#properties) at _What's New in DevTools (Chrome 95)_. -->
 
 DevTools improves the display of properties by:
-*  Always bolding and sorting own properties first, in the **Console**, **Sources** panel, and **Properties** pane.  (An _own property_ is a property that's defined directly on the object.)
+*  Always bolding and sorting own properties first, in the **Console**, in the **Sources** tool, and in the **Properties** tab in the **Elements** tool.  (An _own property_ is a property that's defined directly on the object.)
 *  Flattening the properties display in the **Properties** pane.
 
-For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`.
+For example, the snippet below creates an [URL](https://developer.mozilla.org/docs/Web/API/URL) object `link` with two own properties: `user` and `access`, and then updates the value of an inherited property, `search`:
 
 ```javascript
 const link = new URL('https://blogs.windows.com/msedgedev/');
@@ -121,21 +118,19 @@ link.access = 'admin';
 link.search = `?access=${link.access}`;
 ```
 
-After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/docs/Web/API) (such as `URL`) that have many inherited properties.
+After entering the above code in the **Console**, try logging `link`.  Own properties are now bold and are first in the sort order.  These changes make it easier to spot custom properties, especially for [Web APIs](https://developer.mozilla.org/docs/Web/API) (such as `URL`) that have many inherited properties:
 
 ![Own properties are bold and sorted first.](../../media/2021/10/improved-display-properties.png)
 
-In the **Properties** pane, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction).
+In the **Properties** pane of the **Elements** tool, the list of properties is now flattened for a better experience when debugging DOM properties, especially for [Web components](https://www.webcomponents.org/introduction):
 
 ![Flattened list of properties.](../../media/2021/10/flattened-list-of-properties.png)
 
-For the history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+<!-- todo: link to an Elements > Properties ui doc'n?  try FTS repo **Properties** - not really found -->
+
+For the history of this feature, see Chromium issues [1076820](https://crbug.com/1076820) and [1119900](https://crbug.com/1119900).
 
 
 <!-- ====================================================================== -->
@@ -143,19 +138,15 @@ See also:
 
 <!-- Chromium What's New entry: [Sort snippets in the Sources panel](https://developer.chrome.com/blog/new-in-devtools-95/#snippets) at _What's New in DevTools (Chrome 95)_. -->
 
-Snippets in the **Snippets** pane in the **Sources** panel are now sorted alphabetically.  Previously, the snippets weren't sorted.
+In the **Snippets** tab of the **Sources** tool, previously, the snippets weren't sorted.  Snippets are now sorted alphabetically:
 
 ![Sorted snippets in the Sources panel.](../../media/2021/10/snippets-sorted-alphbetically.png)
 
-For more information about snippets, see [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md) and watch the video [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176).
+See also:
+* [Run snippets of JavaScript on any webpage](../../../javascript/snippets.md)
+* [Chrome 85 - What's New in DevTools](https://youtu.be/NOal2gTzftI?t=176) - video.
 
 For the history of this feature, see Chromium issue: [1243976](https://crbug.com/1243976).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -163,17 +154,14 @@ See also:
 
 <!-- Chromium What's New entry: [Improved UI for DevTools command menu](https://developer.chrome.com/blog/new-in-devtools-95/#command-menu) at _What's New in DevTools (Chrome 95)_. -->
 
-The [Command Menu](../../../command-menu/index.md) has been enhanced to make it easier to search for a file.  When you press `Ctrl`+`P` in Windows and Linux or `Command+P` in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type.
+The **Command Menu** has been enhanced to make it easier to search for a file.  When you press `Ctrl`+`P` in Windows and Linux or `Command+P` in macOS, the **Command Menu** now displays filenames in bold, along with an icon indicating the file type:
 
 ![Command Menu showing filenames in bold with an icon indicating the file type.](../../media/2021/10/command-menu-filenames-bold-icons.png)
 
-For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Command Menu](../../../command-menu/index.md)
+
+For the history of this feature, see Chromium issue [1201997](https://crbug.com/1201997). 
 
 
 <!-- ====================================================================== -->

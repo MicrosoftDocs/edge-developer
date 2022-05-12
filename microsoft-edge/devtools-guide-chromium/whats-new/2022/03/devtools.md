@@ -9,11 +9,11 @@ ms.date: 03/09/2022
 ---
 # What's New in DevTools (Microsoft Edge 99)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, read these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
+The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, read these announcements.
 
-If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
+To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).  If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
 
-To report a problem with DevTools or ask for a new feature, file an issue at the new [Microsoft Edge DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools).
+For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, file an issue at the new [Microsoft Edge DevTools feedback repo](https://github.com/MicrosoftEdge/DevTools).
 
 
 <!-- ====================================================================== -->
@@ -36,12 +36,6 @@ See also:
 *  [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
 *  [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
 *  [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -75,12 +69,6 @@ See also:
 * [Edge Developer Tools for Visual Studio (Preview)](https://devblogs.microsoft.com/visualstudio/?p=237066&preview=1&_ppp=7aa7aef54f), at Visual Studio DevBlogs.
 * [Edge DevTools extension for Visual Studio](../../../../visual-studio/index.md#edge-devtools-extension-for-visual-studio).
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## Layers in 3D View
@@ -93,13 +81,8 @@ Since [Microsoft Edge 88](../../2020/11/devtools.md#composited-layers-are-now-in
 ![The Layers tool now links to the 3D View tool.](../../media/2022/03/layers-3d-view-tool.png)
 <!-- work item > layersmove.gif -->
 
-See [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
 
 
 <!-- ====================================================================== -->
@@ -126,15 +109,8 @@ After clicking **Unminify** (![Unminify icon.](../../media/2022/03/unminify-icon
 ![Unminified function names in the flame chart in the Performance tool.](../../media/2022/03/unminified-call-stack-performance-tool.png)
 
 See also:
-
 * [Unminifying function names in DevTools performance profiles](https://blogs.windows.com/msedgedev/2022/02/03/unminifying-function-names-in-devtools-performance-profiles/) at the Microsoft Edge Blog.
 * [Display original function names in performance profiles](../../../evaluate-performance/unminify.md).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -151,13 +127,8 @@ In previous versions of Microsoft Edge, assistive technology would only announce
 
 ![The 3D View tool.](../../media/2022/03/3d-view-tool.png)
 
-To learn more about how using assistive technology with DevTools, read [Navigate DevTools with assistive technology](../../../accessibility/navigation.md).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
 <!-- ====================================================================== -->
@@ -171,11 +142,8 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 <!-- https://developer.chrome.com/blog/new-in-devtools-99/#source-tree -->
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Using the Page tab to explore resources that construct the current webpage]() in _Sources tool overview_.
 
 
 <!-- ====================================================================== -->
@@ -200,7 +168,6 @@ Microsoft Edge version 99 also includes the following updates from the Chromium 
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page for announcements from the Chromium project is [What's New in DevTools (Chrome 99)](https://developer.chrome.com/blog/new-in-devtools-99) and is authored by [Jecelyn Yeen](https://developers.google.com/web/resources/contributors#jecelynyeen) (Developer advocate working on Chrome DevTools at Google).
-
 
 
 <!-- ====================================================================== -->

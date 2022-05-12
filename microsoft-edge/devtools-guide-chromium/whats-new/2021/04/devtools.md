@@ -344,7 +344,7 @@ For more information about the status of the Chromium implementation, see [Featu
 For the history of this feature in the Chromium open-source project, see Issue [1092093](https://crbug.com/1092093).
 
 See also:
-* [CSS features reference](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/reference?branch=pr-en-us-1881)
+* [CSS features reference](../../../css/reference.md)
 <!-- todo: fts "accent-color": 0 hits; doc this? -->
 
 
@@ -366,7 +366,7 @@ To display the details on why a feature is blocked:
 
 See also:
 * [Permissions Policy Explainer](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md)
-* [Application tool, to manage storage](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/application-tool?branch=pr-en-us-1881)
+* [Application tool, to manage storage](../../../storage/application-tool.md)
 <!-- todo: doc in Application tool > Frame (bottom left) docs, link to that instead of Application tool page -->
 
 To view the history of this feature in the Chromium open-source project, see Issue [1158827](https://crbug.com/1158827).
@@ -384,7 +384,7 @@ Find experiments quicker with the new experiment filter.  For example, to turn o
 ![Filter experiments in the Experiments setting.](../../media/2021/04/settings-experiments-filter-by-issues.msft.png)
 
 See also:
-* [Experimental features](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/?branch=pr-en-us-1881)
+* [Experimental features](../../../experimental-features/index.md)
 
 
 <!-- ====================================================================== -->
@@ -398,7 +398,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 See also:
 * [Vary](https://httpwg.org/specs/rfc7231.html#header.vary) in _Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content_.
-* [View Cache data](https://review.docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/storage/cache?branch=pr-en-us-1881)
+* [View Cache data](../../../storage/cache.md)
 
 
 <!-- ====================================================================== -->
@@ -435,27 +435,22 @@ Modern JavaScript bundlers like [Webpack](https://webpack.js.org), and [Rollup](
 
 For the history of this feature in the Chromium open-source project, see Issues [1142705](https://crbug.com/1142705), [979000](https://crbug.com/979000), and [1180794](https://crbug.com/1180794).
 
-<!--
 See also:
-* []()
--->
+* [Pause code with breakpoints](../../../javascript/breakpoints.md)
 <!-- todo: document bundles in DevTools docs?  FTS finds "bundles" but not found -->
 
 
 <!-- ====================================================================== -->
 #### Support hover preview with bracket notation
 
-DevTools now support hover preview on JavaScript member expressions that use the `[]` notation in the **Sources** tool:
+The **Sources** tool now supports **hover preview** on JavaScript member expressions that use the `[]` notation:
 
 ![Support hover preview with [] notation.](../../media/2021/04/sources-page-pen.js-breakpoint-arr-i-a.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1178305](https://crbug.com/1178305).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [JavaScript debugging features](../../../javascript/reference.md)
 
 
 <!-- ====================================================================== -->
@@ -467,17 +462,15 @@ DevTools now has better outline support for `.html` files.  In the **Sources** t
 
 For the history of this feature in the Chromium open-source project, see Issues [761019](https://crbug.com/761019) and [1191465](https://crbug.com/1191465).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Sources tool keyboard shortcuts](../../../shortcuts/index.md#sources-tool-keyboard-shortcuts) in _Keyboard shortcuts_
+* [Using the Editor pane to view or edit files](../../../sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_
 
 
 <!-- ====================================================================== -->
 #### Proper error stack traces for Wasm debugging
 
-In Microsoft Edge version 90 or earlier, DevTools only displayed generic Wasm references in Error stack traces.  In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays the source location in Error stack traces for Wasm debugging.  To learn more about Error stack traces in the **Console**, see [error](../../../console/api.md#error).
+In Microsoft Edge version 90 or earlier, DevTools only displayed generic Wasm references in Error stack traces.  In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays the source location in Error stack traces for Wasm debugging.  To learn more about Error stack traces in the **Console**, see [error](../../../console/api.md#error) in _Console object API Reference_.
 
 In Microsoft Edge version 91 or later, DevTools resolves inline function requests and displays proper error stack traces for Wasm debugging.
 
@@ -490,12 +483,6 @@ In Microsoft Edge version 91 and later, the source location is displayed in the 
 ![Proper error stack traces for Wasm debugging.](../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1189161](https://crbug.com/1189161).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->

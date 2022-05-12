@@ -27,11 +27,7 @@ In Microsoft Edge version 91 or earlier, the **Close** button to close DevTools 
 
 ![The 'Close DevTools' button is now present even when the viewport is narrow.](../../media/2021/05/close-devtools-button-always-displayed.msft.png)
 
-<!--
-See also:
-* []()
-* []()
--->
+<!-- no cta link needed -->
 
 
 <!-- ====================================================================== -->
@@ -40,7 +36,7 @@ See also:
 <!-- Title: Add tools quickly with the new More Tools button -->
 <!-- Subtitle: Learn about a new convenient way to open tools in Microsoft Edge DevTools. -->
 
-There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu. The **More Tools** menu appears on the toolbar in the main panel and on the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
+There's a new way to open more tools in Microsoft Edge DevTools: the **More Tools** (`+`) menu.  The **More Tools** menu appears on the toolbar in the main panel and on the toolbar of the drawer. Selecting a tool from the **More Tools** menu adds the tool to the toolbar.
 
 To reorder the tabs on either toolbar, select and drag the tabs.
 
@@ -50,11 +46,8 @@ The **More Tools** menu was available as an experiment in Microsoft Edge version
 
 ![The More Tools menu.](../../media/2021/05/more-tools-menu.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [The More Tools menus](../../../about-tools.md#the-more-tools-menus) in _About the list of tools_
 
 
 <!-- ====================================================================== -->
@@ -80,17 +73,14 @@ Tabs after reformatting:
 
 ![Tabs after reformatting.](../../media/2021/05/hovering-on-tool-tab-after.msft.png)
 
-These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close.
+These improvements are especially relevant for users of localized DevTools, in which the tabs may be narrower and easier to accidentally close:
 
 ![Localized DevTools with narrow tabs.](../../media/2021/05/hovering-reduced-chance-of-closing-tab.msft.png)
 
 We also made it easier to re-add a tool that you closed by adding a [More Tools menu](#add-tools-quickly-with-the-new-more-tools-button) to the main toolbar and drawer toolbar.
 
-<!--
 See also:
-* []()
-* []()
--->
+* [About the list of tools](../../../about-tools.md#the-more-tools-menus)
 
 
 <!-- ====================================================================== -->
@@ -109,11 +99,8 @@ In the **Console**, screen readers now announce the result of an evaluated expre
 
 ![In the Console, screen readers now announce the result of an evaluated expression.](../../media/2021/05/screen-reader-support-in-console-evaluated-expression.msft.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
 <!-- ====================================================================== -->
@@ -132,12 +119,6 @@ See [Test keyboard support using the Source Order Viewer](../../../accessibility
 
 For the history of this feature in the Chromium open-source project, see Issue [1094406](https://crbug.com/1094406).
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## User-Agent Client Hints for devices in the Network conditions tab
@@ -153,12 +134,6 @@ See [User-Agent Client Hints](../../../../web-platform/user-agent-guidance.md#us
 
 For the history of this feature in the Chromium open-source project, see Issue [1174299](https://crbug.com/1174299).
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## Microsoft Edge Developer Tools for Visual Studio Code version 1.1.8
@@ -166,12 +141,6 @@ See also:
 The [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) extension version 1.1.8 for Microsoft Visual Studio Code has the following changes since the previous release.  Microsoft Visual Studio Code updates extensions automatically.  To manually update to version 1.1.8, see [Update an extension manually](https://code.visualstudio.com/docs/editor/extension-gallery#_update-an-extension-manually).
 
 You can file issues and contribute to the extension on the [vscode-edge-devtools GitHub repo](https://github.com/microsoft/vscode-edge-devtools).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -188,13 +157,8 @@ Version 1.1.8 of the [Microsoft Edge Developer Tools for Visual Studio Code](htt
 
 *  The **Microsoft Edge Tools: Targets** panel now has a **Generate launch.json** button and instructions, to help launch your project for debugging in Microsoft Edge.
 
-See [Using the tools](https://microsoft.github.io/vscode-edge-devtools/using.html).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 
 
 <!-- ====================================================================== -->
@@ -216,11 +180,8 @@ When an HTML element on your page has `display: grid` or `display: inline-grid` 
 
 For the history of this feature in the Chromium open-source project, see Issue [1203241](https://crbug.com/1203241).
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Inspect CSS Grid](../../../css/grid.md)
 
 
 <!-- ====================================================================== -->
@@ -239,12 +200,6 @@ To learn how to run a single REPL script or a multi-line REPL script, see [Run J
 
 For the history of this feature in the Chromium open-source project, see Issue [1076427](https://crbug.com/1076427).
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ### New shortcut to view iframe details
@@ -259,13 +214,11 @@ This displays the details about the `iframe` in the **Application** tool.  In th
 
 <!-- demo page: https://wolfib.github.io/web-demos/ esp https://wolfib.github.io/web-demos/jsIframe.html -->
 
-For the history of this feature in the Chromium open-source project, see Issue [1192084](https://crbug.com/1192084).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Application tool, to manage storage](../../../storage/application-tool.md)
+* [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
+
+For the history of this feature in the Chromium open-source project, see Issue [1192084](https://crbug.com/1192084).
 
 
 <!-- ====================================================================== -->
@@ -277,11 +230,11 @@ Cross-origin resource sharing (CORS) errors are now surfaced in the **Issues** t
 
 <!-- screenshot uses http://cors-errors.glitch.me -->
 
-For the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
-
 See also:
 * [Report CORS errors in the Network tool](../../2020/11/devtools.md#report-cors-errors-in-the-network-tool) in _What's New in DevTools (Microsoft Edge 88)_
 * [Find and fix problems using the Issues tool](../../../issues/index.md)
+
+For the history of this feature in the Chromium open-source project, see Issue [1141824](https://crbug.com/1141824).
 
 
 <!-- ====================================================================== -->
@@ -291,17 +244,12 @@ In the **Network** tool, the **XHR** filter is now renamed to **Fetch/XHR**. Thi
 
 ![The Network tool now shows Fetch/XHR instead of XHR.](../../media/2021/05/fetch-xhr.msft.png)
 
-See:
-*  [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
-*  [Fetch spec](https://fetch.spec.whatwg.org)
+See also:
+* [Inspect network activity](../../../network/index.md)
+* [XMLHttpRequest spec](https://xhr.spec.whatwg.org)
+* [Fetch spec](https://fetch.spec.whatwg.org)
 
 For the history of this feature in the Chromium open-source project, see Issue [1201398](https://crbug.com/1201398).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -310,16 +258,12 @@ See also:
 In the **Network** tool, you can now select the new **Wasm** filter to filter the WebAssembly network requests.
 
 ![Filter by Wasm.](../../media/2021/05/wasm-network-requests.msft.png)
-
 <!-- screenshot uses http://memory-inspector.glitch.me/demo-wasm.html -->
 
-For the history of this feature in the Chromium open-source project, see Issue [1103638](https://crbug.com/1103638).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Filter resources](../../../network/index.md#filter-resources) in _Inspect network activity_
+
+For the history of this feature in the Chromium open-source project, see Issue [1103638](https://crbug.com/1103638).
 
 
 <!-- ====================================================================== -->
@@ -328,18 +272,13 @@ See also:
 In the **Performance** tool, DevTools now displays **Compute Intersections** in the flame chart. These changes help you identify intersection observers events and debug the potential performance overhead of intersection observers.
 
 ![Compute Intersections in the Performance tool.](../../media/2021/05/compute-intersections-in-perf-tool.msft.png)
-
 <!-- screenshot uses https://googlechrome.github.io/samples/intersectionobserver -->
 
-For more about intersection observers, see [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2).  For information about using the flame chart, see [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording).
+See also:
+* [Trust is good, observation is better: Intersection Observer v2](https://web.dev/intersectionobserver-v2)
+* [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording)
 
 For the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->

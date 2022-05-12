@@ -9,9 +9,11 @@ ms.date: 01/14/2022
 ---
 # What's New in DevTools (Microsoft Edge 97)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of DevTools and the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
+The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of DevTools and the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.
 
-If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
+To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).  If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
+
+For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->
@@ -35,23 +37,11 @@ See also:
 * [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 * [Debug memory leaks with the Microsoft Edge Detached Elements tool - YouTube](https://www.youtube.com/watch?v=v2iy17ptmBk&ab_channel=MicrosoftEdge)
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## Microsoft Edge DevTools extension for Visual Studio Code
 
 For general information about this extension, see [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -72,11 +62,7 @@ The current version of the Microsoft Edge DevTools extension for Visual Studio C
 
 ![Extension settings to specify launch arguments for Microsoft Edge.](../../media/2022/01/extension-settings-launch-arguments.png)
 
-<!--
-See also:
-* []()
-* []()
--->
+<!-- no See also needed -->
 
 
 <!-- ====================================================================== -->
@@ -85,19 +71,16 @@ See also:
 <!-- Title: Have you tried Focus Mode? -->
 <!-- Subtitle: To de-clutter and simplify the DevTools interface to focus on debugging web apps, enable Focus Mode in DevTools settings. -->
 
-Thanks to your early feedback, we've continued to make improvements and bug fixes on the new Focus Mode interface for Microsoft Edge DevTools.  Focus Mode is a new UI option that allows you to dock tools at the top or side of the DevTools window, and removes clutter from the toolbar.
-
-When using Focus Mode, all the same tools and [custom themes](../../../customize/theme.md) are available as in the existing DevTools UI.  Learn more about the [Focus Mode UI](../../../experimental-features/index.md#focus-mode), or try it for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
+Thanks to your early feedback, we've continued to make improvements and bug fixes on the new Focus Mode interface for Microsoft Edge DevTools.  Focus Mode is a new UI option that allows you to dock tools at the top or side of the DevTools window, and removes clutter from the toolbar:
 
 ![The Focus Mode UI.](../../media/2022/01/focus-mode.png)
 
-See [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md).
+When using Focus Mode, all the same tools and custom themes are available as in the existing DevTools UI.  Try Focus Mode for yourself by enabling the **Focus Mode** experiment in DevTools **Settings** > **Experiments**.
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Focus Mode](../../../experimental-features/index.md#focus-mode) in _Experimental features_
+* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
+* [Apply a color theme to DevTools](../../../customize/theme.md)
 
 
 <!-- ====================================================================== -->
@@ -106,15 +89,13 @@ See also:
 <!-- Title: 3D View better integrates with different themes in DevTools -->
 <!-- Subtitle: The 3D View tool now works when you select a different color theme in DevTools. -->
 
-In previous versions of Microsoft Edge, changing the theme in DevTools and then opening the 3D View tool resulted in a blank panel.  This issue has now been fixed, in Microsoft Edge 97.  To learn more, see [Apply color themes to DevTools](../../../customize/theme.md) and [3D View](../../../3d-view/index.md).
+In previous versions of Microsoft Edge, changing the theme in DevTools and then opening the 3D View tool resulted in a blank panel.  This issue has now been fixed, in Microsoft Edge 97:
 
 ![The 3D View tool now supports changing color themes.](../../media/2022/01/3d-view-with-color-theme.png)
 
-<!--
 See also:
-* []()
-* []()
--->
+* [Apply a color theme to DevTools](../../../customize/theme.md)
+* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
 
 
 <!-- ====================================================================== -->

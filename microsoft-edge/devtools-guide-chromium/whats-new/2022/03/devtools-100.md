@@ -9,11 +9,11 @@ ms.date: 03/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 100)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, see these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
+The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, see these announcements.
 
-If you're on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels of Microsoft Edge (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.
+To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).  If you're on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels of Microsoft Edge (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.
 
-To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->
@@ -28,12 +28,6 @@ We're excited to announce the new [MicrosoftEdge > DevTools](https://github.com/
 
 Head to our DevTools repo at GitHub to become a part of the Edge DevTools community.
 
-<!--
-See also:
-* []()
-* []()
--->
-
 
 <!-- ====================================================================== -->
 ## Filter heap snapshots summary by node type
@@ -41,17 +35,12 @@ See also:
 <!-- Title: Use new filters to focus on specific parts of a heap snapshot -->
 <!-- Subtitle: You can now filter by node type if, for example, you're only interested in the arrays or strings from the heap. -->
 
-When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Now in Microsoft Edge 100, you can use the new **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter.
+When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Now in Microsoft Edge 100, you can use the new **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter:
 
 ![Node Types in a heap snapshot in the Memory tool.](devtools-100-images/node-types-heap-snapshot.png)
 
-To learn more about taking a heap snapshot and analyzing the heap in DevTools, see [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md) - taking a heap snapshot and analyzing the heap.
 
 
 <!-- ====================================================================== -->
@@ -64,13 +53,8 @@ Customizing and simplifying the developer experience includes making our tools a
 
 ![DevTools in Czech and Vietnamese.](devtools-100-images/czech-vietnamese.png)
 
-For more information, see [Change DevTools language settings](../../../customize/localization.md).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Change DevTools language settings](../../../customize/localization.md)
 
 
 <!-- ====================================================================== -->
@@ -86,15 +70,11 @@ In Microsoft Edge 100, the **Network** tool supports a new **Fulfilled by** colu
 If you don't have the **Fulfilled by** column, right-click the table headers in the request log and make sure **Fulfilled by** is checked.
 -->
 
-To learn more about the request log in the Network tool, see [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.  For more information about service workers, see [Service Worker improvements](../../../service-workers/index.md).
+See also:
+* [Filter requests by properties](../../../network/reference.md#display-a-log-of-requests) in _Network features reference_.
+* [Service Worker improvements](../../../service-workers/index.md).
 
 For the history of this feature, see [Issue #16](https://github.com/MicrosoftEdge/DevTools/issues/16).
-
-<!--
-See also:
-* []()
-* []()
--->
 
 
 <!-- ====================================================================== -->
@@ -123,13 +103,8 @@ In the following example, messages about Firefox and Firefox for Android are fil
 
 ![Messages about Firefox browser filtered out (removed).](devtools-100-images/browser-filters-filtered-out.png)
 
-For more information, see [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_.
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Filter issues](../../../issues/index.md#filter-issues) in _Find and fix problems using the Issues tool_.
 
 
 <!-- ====================================================================== -->
@@ -144,17 +119,10 @@ In Microsoft Edge 100, the links from an imported performance profile now use so
 
 ![Links from imported performance profile use source maps go to your familiar, original source code.](devtools-100-images/links-perf-profile-orig-source-code.png)
 
-To learn more about using source maps in DevTools, see [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md).
-
-To get started with storing your source maps in Azure Artifacts symbol server and connecting to them from DevTools, see:
-*  [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md).
-*  [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
+* [Securely debug original code by publishing source maps to the Azure Artifacts symbol server](../../../javascript/publish-source-maps-to-azure.md)
+* [Securely debug original code by using Azure Artifacts symbol server source maps](../../../javascript/consume-source-maps-from-azure.md)
 
 
 <!-- ====================================================================== -->
@@ -173,13 +141,9 @@ Now in Microsoft Edge 100, the selected theme is applied to the Waterfall view o
 
 ![The selected theme is now applied to the Waterfall view of requests in the Network tool.](devtools-100-images/waterfall-view-requests-network.png)
 
-For more information about using themes from Visual Studio Code in DevTools, see [Apply a color theme to DevTools](../../../customize/theme.md).  For more information about the Waterfall view for requests in the Network tool, see [Network features reference](../../../network/reference.md#display-the-timing-relationship-of-requests).
-
-<!--
 See also:
-* []()
-* []()
--->
+* [Apply a color theme to DevTools](../../../customize/theme.md) - using themes from Visual Studio Code in DevTools.
+* [Display the timing relationship of requests](../../../network/reference.md#display-the-timing-relationship-of-requests) in _Network features reference_ - the Waterfall view for requests in the Network tool.
 
 
 <!-- ====================================================================== -->
