@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: extensions
-ms.date: 3/11/2022
+ms.date: 5/09/2022
 ---
 # Overview and timelines for migrating to Manifest V3
 
@@ -34,7 +34,7 @@ This timeline is subject to change. This article will be updated to share exact 
 
 | Timeframe	| Microsoft Partner Center changes | Microsoft Edge changes |
 |--- |--- |--- |
-| June 2022	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
+| July 2022	| Microsoft Partner Center will no longer accept new Manifest V2 extensions with visibility set as `Hidden` or `Public`. | No change. |
 | January 2023 | Microsoft Partner Center will no longer accept updates to existing Manifest V2 extensions. Developers can submit updates for migrating a V2 extension to V3. | Microsoft Edge stops running Manifest V2 extensions. Enterprises can allow Manifest V2 extensions to run on Microsoft Edge using Enterprise policies. |
 | June 2023 | No change. | Manifest V2 extensions will no longer function in Microsoft Edge even with the use of Enterprise policy. |
 
