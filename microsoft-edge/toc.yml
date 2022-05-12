@@ -1061,19 +1061,14 @@
                   href: webview2/how-to/hostobject.md
                   displayName: AddHostObjectToScript, host objects
 
-            # update h2: Experimental APIs
+            # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
 
-            # update:
+            # update needed?
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
-              displayName: 
-
-            # starter page, keep?
-            - name: WebView2 Experimental to Public API compatibility
-              href: webview2/how-to/public-api-compat.md
               displayName: 
 
             - name: Distribute your app and the WebView2 Runtime
