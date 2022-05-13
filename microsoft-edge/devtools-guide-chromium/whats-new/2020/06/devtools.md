@@ -34,15 +34,13 @@ For the latest announcements, [follow the Microsoft Edge DevTools team on Twitte
 <!-- ====================================================================== -->
 ### CSS grid debugging features
 
-<!-- todo: indicate no longer experimental? -->
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
 The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new CSS grid debugging features to DevTools.  You can now display grid line numbers, grid gaps, and extended grid lines as an on-page overlay.  Plus, more improvements to the grid tools are coming soon.
 
 ![CSS grid debugging features.](../../media/2020/06/experiments-grid.msft.png)
 
-To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**.  To try out the experiment with a sample, see [CSS Grid planner example](https://codepen.io/hxlnt/full/YzwBzKM).
+Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features**. -->
+
+To try out the experiment with a sample, see [CSS Grid planner example](https://codepen.io/hxlnt/full/YzwBzKM).
 
 Chromium issue [#1047356](https://crbug.com/1047356)
 
@@ -53,9 +51,7 @@ See also:
 <!-- ====================================================================== -->
 ### Edit and Replay requests with the Network Console
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
-You can now use **Edit and Replay** on requests in the [Network Log](../../../network/index.md#log-network-activity) using the **Network Console**.
+You can now use **Edit and Replay** on requests in the [Network Log](../../../network/index.md#log-network-activity) using the **Network Console**.  Open the [Network Log](../../../network/index.md#log-network-activity), right-click, and then select **Edit and Replay**:
 
 ![Edit and Replay a request in the NetworkLog with the Network Console.](../../media/2020/06/experiments-network-console-edit-and-replay.msft.png)
 
@@ -67,7 +63,7 @@ You can also use the **Network Console** to create and send HTTP requests direct
 
 Tip: To display **Network Console** in the main (top) panel instead of the [DevTools Drawer](../../../customize/index.md#drawer), see [moving tools between panels](#move-tools-between-panels).
 
-To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**.  Open the [Network Log](../../../network/index.md#log-network-activity), right-click, and then select **Edit and Replay**.
+Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
 
 Chromium issue [#1093687](https://crbug.com/1093687)
 
@@ -93,7 +89,7 @@ See also:
 <!-- ====================================================================== -->
 ### webhint feedback in the Issues panel
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)<!-- valid 05/13/2022 -->
 
 [webhint](https://webhint.io) is an open-source tool that provides real-time feedback on the accessibility, cross-browser compatibility, security, performance, PWAs, and other common web development issues of websites.  You can view webhint feedback in the [Issues](../../../issues/index.md) panel.
 
@@ -111,15 +107,11 @@ See also:
 <!-- ====================================================================== -->
 ### Move tools between panels
 
-Update: No longer experimental, as of v100.
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
 Normally, tools such as **Elements** and **Network** may only be opened in the main (top) panel of DevTools.  Similarly, tools such as **3D View** and **Issues** may only be opened in the drawer (bottom) panel of DevTools.  You can now customize your DevTools layout by moving tools between the top and bottom panels.
 
 ![Move tools between panels.](../../media/2020/06/experiments-move-panels.msft.png)
 
-Note: To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**.
+Update: This feature has been released and is no longer experimental.<!-- Note: To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable support to move tabs between panels**. -->
 
 Chromium issue [#897944](https://crbug.com/897944)
 

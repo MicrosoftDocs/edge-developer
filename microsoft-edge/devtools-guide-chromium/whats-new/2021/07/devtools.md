@@ -43,10 +43,6 @@ See [Apply color themes to DevTools](../../../customize/theme.md).
 <!-- ====================================================================== -->
 ## Debug DOM node memory leaks with the new Detached Elements tool
 
-Update: This feature has been released and is no longer experimental.  See [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
 <!-- Title: Introducing the Detached Elements tool -->
 <!-- Subtitle: Use the Detached Elements tool to find and fix DOM node memory leaks. -->
 
@@ -56,7 +52,10 @@ The new **Detached Elements** tool finds all of the detached elements on your pa
 
 ![The Detached Elements tool.](../../media/2021/07/detached-elements-tool.msft.png)
 
-To turn on this experiment, navigate to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**.
+Update: This feature has been released and is no longer experimental.<!-- To turn on this experiment, go to **Settings** > **Experiments** and select the checkbox next to **Detached Elements**. -->
+
+See also:
+* [Debug DOM memory leaks with the Detached Elements tool](../../../memory-problems/dom-leaks.md)
 
 
 <!-- ====================================================================== -->

@@ -164,7 +164,7 @@ See also:
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
 <!-- ====================================================================== -->

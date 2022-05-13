@@ -32,15 +32,16 @@ ms.date: 05/04/2021
 <!--  Title: What's New is now Welcome  -->
 <!--  Subtitle: The What's New tool now has a new appearance and a new name:  Welcome -->
 
-Update: This feature has been released and is no longer experimental.  See [Welcome tool](../../../welcome/welcome-tool.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
 The **What's New** tool in the Microsoft Edge DevTools now has a new appearance and a new name:  **Welcome**.  The **Welcome** tool still displays the latest DevTools news and updates.  It now also includes links to Microsoft Edge DevTools documentation, ways to submit feedback, and more.  To display the **Welcome** tool after each update to Microsoft Edge, select the checkbox next to **Open tab after each update** under the title.
 
-To close the **Welcome** tool, click the **X** on the right-side of the tab title.  If you prefer the original **What's New** tool, select [Settings](../../../customize/index.md#settings) > **Experiments** and then clear the checkbox next to **Enable Welcome tab**.
+To close the **Welcome** tool, click the **X** on the right-side of the tab title.
 
 ![The Welcome tool is highlighted.](../../media/2021/01/welcome-tool-whats-new-88.msft.png)
+
+Update: This feature has been released and is no longer experimental.<!-- If you prefer the original **What's New** tool, select [Settings](../../../customize/index.md#settings) > **Experiments** and then clear the checkbox next to **Enable Welcome tab**. -->
+
+See also:
+* [Welcome tool](../../../welcome/welcome-tool.md)
 
 
 <!-- ====================================================================== -->
@@ -49,7 +50,7 @@ To close the **Welcome** tool, click the **X** on the right-side of the tab titl
 <!--  Title: Visual font editor in the Styles pane  -->
 <!--  Subtitle: Visual font editor in the Styles pane -->
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)<!-- valid 05/13/2022 -->
 
 When you work with fonts in CSS, use the new visual Font Editor.  You can define fallback fonts, and use sliders to define font weight, size, line-height, and spacing:
 
@@ -74,9 +75,26 @@ See also:
 <!-- ====================================================================== -->
 ## CSS Flexbox debugging tools
 
-Update: This feature has been released and is no longer experimental.
+DevTools now support Flexbox layout, as well as Grid layout.
 
-Flexbox debugging features are in active development.  To turn on the experiment for the following two features, select [Settings](../../../customize/index.md#settings) > **Experiments** and then select the checkbox next to **Enable new CSS Flexbox debugging features**.  To view the history of this feature in the Chromium open-source project, see Issues [1136394](https://crbug.com/1136394) and [1139949](https://crbug.com/1139949).
+Update: This feature has been released and is no longer experimental.<!-- To turn on the experiment for the following two features, select [Settings](../../../customize/index.md#settings) > **Experiments** and then select the checkbox next to **Enable new CSS Flexbox debugging features**. -->
+
+See also:
+* [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
+* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
+* [Using the Inspect tool to detect accessibility issues](../../../accessibility/accessibility-testing-in-devtools.md#using-the-inspect-tool-to-detect-accessibility-issues) in _Overview of accessibility testing using DevTools_.
+* [Syncing live changes from the Styles tool by using CSS Mirror Editing](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+
+Grid:
+* [CSS grids](../../../css/grid.md)
+* [Improved CSS Grid tooling](../../2020/10/devtools.md#improved-css-grid-tooling) in _What's new in DevTools (Microsoft Edge 87)_.
+<!-- todo: doc flexbox, probably next to grid.md -->
+
+MDN:
+* [CSS Flexible Box Layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout)
+* [CSS Grid Layout](https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout)
+
+For history, in the Chromium open-source project, see Issues [1136394](https://crbug.com/1136394) and [1139949](https://crbug.com/1139949).
 
 
 <!-- ====================================================================== -->
@@ -84,13 +102,6 @@ Flexbox debugging features are in active development.  To turn on the experiment
 
 <!--  Title: Display Flexbox containers with Flexbox (flex) icon  -->
 <!--  Subtitle: New Flexbox (flex) icon in the Elements tool help you identify Flexbox containers in your code.  When toggled, the adorner displays and hides outlines of the flex container to help you debug the layout -->
-
-Update: This feature has been released and is no longer experimental.  See:
-* [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
-* [Inspect CSS Grid](../../../css/grid.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 In the **Elements** tool, the new **Flexbox** (flex) icon helps you identify Flexbox containers in your code.  Click the **Flexbox** (flex) icon to turn on or off the overlay effect that outlines a Flexbox container.  You can customize the color of the overlay in the **Layout** pane, which is located next to **Styles** and **Computed**.
 
@@ -106,19 +117,19 @@ The **Flexbox overlays** highlighted in the **Layout** pane:
 
 ![The Flexbox overlays highlighted in the Layout pane.](../../media/2021/01/elements-layout-flex-container.msft.png)
 
+Update: This feature has been released and is no longer experimental.<!-- valid. -->
+
+See also:
+* [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
+* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
+* [Inspect CSS Grid](../../../css/grid.md).
+
 
 <!-- ====================================================================== -->
 ### Display alignment icons and visual guides when Flexbox layouts change using CSS properties
 
 <!--  Title: Display alignment icons and visual guides for changes to Flexbox layouts from CSS properties -->
 <!--  Subtitle:  CSS autocomplete in the Styles tool now displays icons next to Flexbox properties to help you see the effect a property has on your Flexbox layout. -->
-
-Update: This feature has been released and is no longer experimental.  See:
-* [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
-* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
-* [Inspect CSS Grid](../../../css/grid.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 When you edit CSS for your Flexbox layout, CSS autocompletes in the **Styles** pane now displays helpful icons next to relevant Flexbox properties.  To try this new feature, open the **Elements** tool and select a flex container.  Then add or change a property on that container in the **Styles** pane.
 
@@ -134,6 +145,13 @@ Flexbox `gap` in CSS properties and webpage highlighted:
 
 ![Flexbox gap in CSS properties and webpage highlighted.](../../media/2021/01/elements-flex-container-align-items-center-gap-12px.msft.png)
 
+Update: This feature has been released and is no longer experimental.<!-- valid. -->
+
+See also:
+* [Getting element information from the Inspect overlay](../../../css/inspect.md#getting-element-information-from-the-inspect-overlay) in _Analyze pages using the Inspect tool_.
+* [Identify nested regions using color highlighting](../../../accessibility/test-inspect-tool.md#identify-nested-regions-using-color-highlighting) in _Use the Inspect tool to detect accessibility issues by hovering over the webpage_.
+* [Inspect CSS Grid](../../../css/grid.md).
+
 
 <!-- ====================================================================== -->
 ## Add tools quickly with new More Tools button
@@ -141,13 +159,14 @@ Flexbox `gap` in CSS properties and webpage highlighted:
 <!--  Title: Add tools quickly with new More Tools button  -->
 <!--  Subtitle: A convenient way to open new tools in Microsoft Edge DevTools -->
 
-Update: This feature has been released and is no longer experimental.  See [About the list of tools](../../../about-tools.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
-You now have a new way to open more tools in the Microsoft Edge DevTools.  After you turn on this experiment, the **More Tools** icon appears, as a plus sign (`+`) to the right of the main panel.  To show a list of other tools that you can add to the main panel, click the **More Tools** (`+`) icon.  To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments**, and then select the checkbox next to **Enable + button tab menus to open more tools**.
+You now have a new way to open more tools in Microsoft Edge DevTools.  The **More Tools** icon is a plus sign (`+`) to the right of the main panel.  To show a list of other tools that you can add to the main panel, click the **More Tools** (`+`) icon:
 
 ![More Tools highlighted in DevTools.](../../media/2021/01/more-tools.msft.png)
+
+Update: This feature has been released and is no longer experimental.<!-- To turn on this experiment, see [Settings](../../../customize/index.md#settings) > **Experiments**, and then select the checkbox next to **Enable + button tab menus to open more tools**. -->
+
+See also:
+* [About the list of tools](../../../about-tools.md)
 
 
 <!-- ====================================================================== -->
@@ -220,7 +239,7 @@ See also:
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
 <!-- ====================================================================== -->
@@ -491,7 +510,7 @@ See also:
 <!-- ====================================================================== -->
 #### New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)<!-- valid 05/13/2022 -->
 
 The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html) replaces the [AA](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/[AAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) guidelines contrast ratio in the Color Picker.  The Color Picker is used in the **Styles** tab in the **Elements** tool.
 

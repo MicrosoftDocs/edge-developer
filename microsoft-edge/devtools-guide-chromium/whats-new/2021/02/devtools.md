@@ -59,18 +59,14 @@ Then hover over each outlined region of DevTools:
 
 To turn off Tooltips, press `Esc`.  
 
-Update: This feature has been released and is no longer experimental.
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
-To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the following checkboxes:
+Update: This feature has been released and is no longer experimental.<!-- valid. -->
+<!-- To turn on the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the following checkboxes:
 *  **Focus Mode**
 *  **DevTools Tooltips**
 *  **Enable + button tab menus to open more tools**
+-->
 
-For more information about this feature, or to comment with questions and ideas, see [DevTools: Focus Mode UI](https://github.com/MicrosoftEdge/DevTools/blob/main/explainers/FocusMode/explainer.md).
-
-Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in Focus Mode.
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
 <!--Click the Help (`?`) icon at the bottom of the **Activity Bar** to toggle tooltips in the DevTools.-->
 <!-- ![Click the Help (?) icon in the Activity Bar to display tooltips.](../../media/2021/02/focus-mode-and-tooltips-help.msft.png) -->
 <!--
@@ -194,11 +190,10 @@ Starting in Microsoft Edge 90, if you click the **Console sidebar** and hover on
 ![Starting in Microsoft Edge 90, if you click the Console sidebar and hover on Default levels, it doesn't highlight.](../../media/2021/02/console-sidebar-default-levels-new.msft.png)
 
 
-
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
 <!-- ====================================================================== -->
@@ -340,8 +335,7 @@ See also:
 <!-- ====================================================================== -->
 ### Full accessibility tree view in the Elements tool
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-<!-- true as of 5/10/2022 -->
+![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)<!-- valid 05/10/2022 -->
 
 This experiment provides a **full accessibility tree view** in the **Elements** tool.  The **Accessibility** tab (grouped with the **Styles** tab) provides a partial accessibility tree view, that displays the direct ancestor chain from the root node to the inspected node.  After you turn on this experiment and reload DevTools, click the button area at the top of the **Elements** panel to switch the display in the Elements tool for all elements on the webpage.
 

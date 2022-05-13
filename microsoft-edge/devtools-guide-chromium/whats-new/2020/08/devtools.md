@@ -46,10 +46,6 @@ Chromium issue [#174309](https://crbug.com/174309)
 <!-- ====================================================================== -->
 ### Emulate Surface Duo and Samsung Galaxy Fold
 
-Update: This feature has been released and is no longer experimental.  See [Emulate dual-screen and foldable devices in Microsoft Edge DevTools](../../../device-mode/dual-screen-and-foldables.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
 You can now test the look and feel of your website or app on two new devices: [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) and [Samsung Galaxy Fold](https://www.samsung.com/us/mobile/galaxy-fold) in Microsoft Edge.
 
 To help enhance your website or app for the dual-screen and foldable devices, use the following features when [emulating the device](../../../device-mode/index.md):
@@ -62,7 +58,10 @@ To help enhance your website or app for the dual-screen and foldable devices, us
 
 ![Device emulation for Surface Duo.](../../media/2020/08/surface-duo-device-emulation.msft.png)
 
-To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Emulation: Support dual screen mode**.
+Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Emulation: Support dual screen mode**. -->
+
+See also:
+*  [Emulate dual-screen and foldable devices in Microsoft Edge DevTools](../../../device-mode/dual-screen-and-foldables.md)
 
 Chromium issue: [#1054281](https://crbug.com/1054281)
 
@@ -70,15 +69,15 @@ Chromium issue: [#1054281](https://crbug.com/1054281)
 <!-- ====================================================================== -->
 ### CSS grid overlay improvements and new experimental grid features
 
-Update: This feature has been released and is no longer experimental.  See [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
+The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool:
 
 ![CSS grid overlay for article element.](../../media/2020/08/css-grid-overlay-article.msft.png)
 
-For more information about grid overlays, see [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features).
+Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**. -->
 
-The Microsoft Edge DevTools team and the Chrome DevTools team collaborate on additional features.  The new features include multiple overlays that are persistent and configurable from a new **Layout** pane on the **Elements** tool.
-
-To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable new CSS Grid debugging features (configuration options available in Layout sidebar pane in Elements after restart)**.
+See also:
+* [CSS grid debugging features](../06/devtools.md#css-grid-debugging-features) in _What's new in DevTools (Microsoft Edge 85)_.
+* [Inspect CSS Grid in Microsoft Edge DevTools](../../../css/grid.md).
 
 Chromium issue: [#1047356](https://crbug.com/1047356)
 
@@ -115,17 +114,16 @@ See also:
 <!-- ====================================================================== -->
 ### Source Order Viewer for easier accessibility testing
 
-Update: This feature has been released and is no longer experimental.  See [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
-The new accessibility helper displays the order in which elements reside in the source file.
+The new accessibility helper displays the order in which elements reside in the source file:
 
 ![Selecting the 'Show source order' checkbox.](../../media/2020/08/source-order-viewer.msft.png)
 
 This feature makes it easier to test the way screen reader and keyboard users experience your website or app.  Screen readers and keyboard navigation depend on content being placed in a particular order in the source code of your website or app, so that it matches the rendered page.  The Source Order Viewer displays potential differences in order between the rendered page and the source code.
 
-To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Source Order Viewer**.
+Update: This feature has been released and is no longer experimental.<!-- To turn on this experimental feature, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Source Order Viewer**. -->
+
+See also:
+* [Test keyboard support using the Source Order Viewer](../../../accessibility/test-tab-key-source-order-viewer.md)
 
 Chromium issue: [#1094406](https://crbug.com/1094406)
 
@@ -173,7 +171,7 @@ See also:
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
 <!-- ====================================================================== -->

@@ -78,13 +78,14 @@ See also:
 <!-- Title: 3D View is now integrated with Composited Layers  -->
 <!-- Subtitle: Composited Layers are now in 3D View.  -->
 
-Update: This feature has been released and is no longer experimental.  See [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md).
-
-![Experimental feature](../../media/2020/06/experimental-tag-14px.msft.png)
-
-You can now visualize **Layers** content alongside z-index values and the Document Object Model (DOM).  This feature helps you debug without switching between the [3D view](../../../3d-view/index.md) and **Layers** tools as often.  For a comprehensive visual debugging experience, the [3D View and Composited Layers are now combined](../../../3d-view/index.md).
+You can now visualize **Layers** content alongside z-index values and the Document Object Model (DOM).  This feature helps you debug without switching between the **3D View** tool and **Layers** tools as often.
 
 ![Composited Layers pane.](../../media/2020/11/experiments-layers.msft.png)
+
+Update: This feature has been released and is no longer experimental.  The **Layers** tool has been replaced by the **3D View** tool.
+
+See also:
+* [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)
 
 
 <!-- ====================================================================== -->
@@ -209,10 +210,10 @@ Pasting a property value in Microsoft Visual Studio Code:
 
 ![Pasting a property value in Microsoft Visual Studio Code.](../../media/2020/11/paste-property-value.msft.png)
 
-For the history of this feature in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
-
 See also:
 * [Console overview](../../../console/index.md)
+
+For history, in the Chromium open-source project, see Issue [1132084](https://crbug.com/1132084).
 
 
 <!-- ====================================================================== -->
@@ -221,15 +222,18 @@ See also:
 <!-- Title: Customize multi-press keyboard shortcuts  -->
 <!-- Subtitle: Create custom multi-press keyboard shortcuts in the shortcut editor.  -->
 
-Update: This feature has been released and is no longer experimental.  See [Edit the keyboard shortcut for a DevTools action](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) in _Customize keyboard shortcuts_.
+[Since Microsoft Edge version 87](../10/devtools.md#customize-keyboard-shortcuts-in-settings), you can customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you can now create multi-press keyboard shortcuts.
 
-![Experimental feature](../../media/2020/06/experimental-tag-14px.msft.png)
-
-[Since Microsoft Edge version 87](../10/devtools.md#customize-keyboard-shortcuts-in-settings), you can customize keyboard shortcuts for any action in DevTools.  In Microsoft Edge version 88, you can now create multi-press keyboard shortcuts.  To set a shortcut for an action in the DevTools, see [Settings](../../../customize/index.md#settings) > **Experiments**  and select the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, see [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).
-
-For example, the red highlight displays a multi-press keyboard shortcut customized for the **Start recording events** action.  For real-time updates on this feature in the Chromium open-source project, see [Issue #174309](https://crbug.com/174309).
+For example, the red highlight below shows a custom multi-press keyboard shortcut for the **Start recording events** action:
 
 ![Chords keyboard shortcuts.](../../media/2020/11/multi-press-keyboard-shortcuts.msft.png)
+
+Update: This feature has been released and is no longer experimental.<!-- To set a shortcut for an action in the DevTools, see [Settings](../../../customize/index.md#settings) > **Experiments**  and select the checkbox next to **Enable keyboard shortcut editor**. -->
+
+See also:
+* [Edit the keyboard shortcut for a DevTools action](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) in _Customize keyboard shortcuts_.
+
+For history, in the Chromium open-source project, see [Issue #174309](https://crbug.com/174309).
 
 
 <!-- ====================================================================== -->
@@ -243,7 +247,7 @@ In Microsoft Edge version 87, if you turned on the **Match browser language** se
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [Chromium What's New note](../../includes/chromium-whats-new-note.md)]
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
 <!-- ====================================================================== -->

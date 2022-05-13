@@ -67,18 +67,12 @@ See also:
 
 <!-- copied section to linked article -->
 
-Update: This feature has been released and is no longer experimental.  See [Compose and send web API requests using the Network Console tool](../../../network-console/network-console-tool.md).
+The **Network Console** tool now has improved compatibility with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.
 
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
-The **Network Console** tool now has improved compatibility with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.  To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**.
-
-This experiment now supports the following actions:
+The **Network Console** tool now supports the following actions:
 
 *  Save and export Collections and Environments.
 *  Edit and export sets of environment variables within the **Network Console** tool.
-
-For real-time updates on this feature in the Chromium open-source project, see Issue [#1093687](https://crbug.com/1093687).
 
 Entering a name for the new environment:
 
@@ -88,16 +82,16 @@ Selecting the format for the new environment:
 
 ![Selecting the format for the new environment.](../../media/2020/10/network-console-environments-new-format.msft.png)
 
+Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable Network Console**. -->
+
 See also:
-* [Save and export Collections, Environments, and environment variables](../../../network-console/network-console-tool.md#save-and-export-collections-environments-and-environment-variables)
+* [Save and export Collections, Environments, and environment variables](../../../network-console/network-console-tool.md#save-and-export-collections-environments-and-environment-variables) in _Compose and send web API requests using the Network Console tool_.
+
+For history, in the Chromium open-source project, see Issue [#1093687](https://crbug.com/1093687).
 
 
 <!-- ====================================================================== -->
 ## Improved CSS Grid tooling
-
-Update: This feature has been released and is no longer experimental.  See [CSS grids](../../../css/grid.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
 
 The Microsoft Edge DevTools now support the following features for inspecting, viewing, and debugging your CSS grids.
 
@@ -113,21 +107,29 @@ The features are turned on by default.
 
 ![Layout tool with grids.](../../media/2020/10/grid-layout-pane.msft.png)
 
-For the history of this feature in the Chromium open-source project, see Issue [#1047356](https://crbug.com/1047356).  Additionally, the Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  For updates on flexbox tooling in the Chromium open-source project, see Issue [#1136394](https://crbug.com/1136394).
+Update: This feature has been released and is no longer experimental.<!-- valid. -->
+
+See also:
+* [CSS grids](../../../css/grid.md)
+
+For history, in the Chromium open-source project, see Issue [#1047356](https://crbug.com/1047356).
+
+The Microsoft Edge DevTools team is collaborating with the Chrome DevTools team and Chromium community to add new flexbox tooling features to DevTools.  For updates on flexbox tooling in the Chromium open-source project, see Issue [#1136394](https://crbug.com/1136394).
 
 
 <!-- ====================================================================== -->
 ## Customize keyboard shortcuts in Settings
 
-Update: This feature has been released and is no longer experimental.  See [Customize keyboard shortcuts](../../../customize/shortcuts.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
-You can now customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you can choose between **Visual Studio Code** and **DevTools (default)** presets for keyboard shortcuts.  Starting in Microsoft Edge version 87, you can turn on the **Enable keyboard shortcut editor** experiment to further customize keyboard shortcuts.
-
-To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable keyboard shortcut editor**.  For more information about customizing and editing shortcuts, see [Edit keyboard shortcuts for any action in the DevTools](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action).  For real-time updates on this feature in the Chromium open-source project, see Issue [#174309](https://crbug.com/174309).
+You can now customize the keyboard shortcut for any action in the DevTools.  Since Microsoft Edge version 84, you can choose between **Visual Studio Code** and **DevTools (default)** presets for keyboard shortcuts.  Starting in Microsoft Edge version 87, you can further customize keyboard shortcuts.
 
 ![Custom shortcut for pausing a script.](../../media/2020/10/custom-shortcut-pause-script.msft.png)
+
+Update: This feature has been released and is no longer experimental.<!-- To enable the experiment, see [Turning an experiment on or off](../../../experimental-features/index.md#turning-an-experiment-on-or-off) and select the checkbox next to **Enable keyboard shortcut editor**. -->
+
+See also:
+* [Edit the keyboard shortcut for a DevTools action](../../../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action) in _Customize keyboard shortcuts_.
+
+For history, in the Chromium open-source project, see Issue [#174309](https://crbug.com/174309).
 
 
 <!-- ====================================================================== -->
@@ -155,7 +157,7 @@ For more information, see [Microsoft Edge DevTools extension for Visual Studio C
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
 <!-- ====================================================================== -->
@@ -303,15 +305,18 @@ See also:
 <!-- ====================================================================== -->
 ### View and fix color contrast issues in the CSS Overview tool
 
-Update: This feature has been released and is no longer experimental.  See [CSS Overview tool](../../../css/css-overview-tool.md).
-
-![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png)
-
 The **CSS Overview** tool now displays a list of elements on your page that have color contrast issues.  The [CSS Overview Accessible Colors Demo](https://css-overview-accessible-colors-demo.glitch.me) page has an example of a color contrast issue.
 
-To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox.  To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).  For real-time updates on this feature in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
+To view a list of elements that have a color contrast issue, on **Contrast issues**, click **Text**.  To open the element in the **Elements** tool, click an element in the list.  To help fix contrast issues, the Microsoft Edge DevTools [automatically provide color suggestions](../08/devtools.md#accessible-color-suggestion-in-the-styles-pane).
 
 ![Color contrast issues.](../../media/2020/10/css-overview.msft.png)
+
+Update: This feature has been released and is no longer experimental.<!-- To enable this experiment, under **Settings** > **Experiments**, select the **CSS Overview** checkbox. -->
+
+See also:
+* [CSS Overview tool](../../../css/css-overview-tool.md)
+
+For history, in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
 
 
 <!-- ====================================================================== -->

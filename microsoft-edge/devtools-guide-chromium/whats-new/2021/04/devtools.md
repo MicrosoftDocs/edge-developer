@@ -69,10 +69,9 @@ Then hover over each outlined region of DevTools:
 
 To turn off Tooltips, press `Esc`.
 
-Update: This feature has been released and is no longer experimental.
-<!-- ![Experimental feature.](../../media/2020/06/experimental-tag-14px.msft.png) -->
+Update: This feature has been released and is no longer experimental.<!-- valid. -->
 
-Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in Focus Mode.
+Note: As of May 2022, tooltips aren't supported from the **Activity Bar**; that is, in [Focus Mode](../../../experimental-features/focus-mode.md).
 <!-- Also, if you turn on the [Focus Mode and DevTools Tooltips](../02/devtools.md#group-tools-together-in-focus-mode) experiment, you can also click the **Toggle the DevTools Tooltips** (`?`) button at the bottom of the **Activity Bar**. -->
 <!-- ![Hover on anywhere in the highlighted region of the Issues tool to display more details.](../../media/2021/04/elements-issues-focus-mode-tooltips.msft.png) -->
 
@@ -212,7 +211,7 @@ See also:
 <!-- ====================================================================== -->
 ## Announcements from the Chromium project
 
-[!INCLUDE [contact DevTools team note](../../includes/chromium-whats-new-note.md)]
+The following sections announce additional features available in Microsoft Edge that were contributed to the open-source Chromium project.
 
 
 <!-- ====================================================================== -->
