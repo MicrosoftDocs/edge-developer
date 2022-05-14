@@ -10,7 +10,7 @@ ms.date: 06/02/2021
 ---
 # What's New in DevTools (Microsoft Edge 92)
 
-[!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 > [!TIP]
 > The **Microsoft Build 2021** conference was on May 25-27.  Here's a video from Build about the updates to DevTools:
@@ -279,12 +279,6 @@ See also:
 * [Analyze a performance recording](../../../evaluate-performance/reference.md#analyze-a-performance-recording)
 
 For the history of this feature in the Chromium open-source project, see Issue [1199137](https://crbug.com/1199137).
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

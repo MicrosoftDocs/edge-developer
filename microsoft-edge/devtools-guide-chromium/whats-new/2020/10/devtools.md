@@ -22,7 +22,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 87)
 
-[!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -317,12 +317,6 @@ See also:
 * [CSS Overview tool](../../../css/css-overview-tool.md)
 
 For history, in the Chromium open-source project, see Issue [#1120316](https://crbug.com/1120316).
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

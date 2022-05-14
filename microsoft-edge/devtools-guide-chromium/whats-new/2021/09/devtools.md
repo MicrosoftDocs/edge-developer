@@ -9,7 +9,7 @@ ms.date: 09/03/2021
 ---
 # What's New in DevTools (Microsoft Edge 94)
 
-[!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -80,12 +80,6 @@ Starting with Microsoft Edge version 93, the **More tabs** (`>>`) button and the
 
 See also:
 * [Keyboard shortcuts](../../../shortcuts/index.md)
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

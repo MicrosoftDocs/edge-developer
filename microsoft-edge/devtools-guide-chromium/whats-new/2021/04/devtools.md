@@ -22,7 +22,7 @@ ms.date: 05/06/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 91)
 
-[!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -482,12 +482,6 @@ In Microsoft Edge version 91 and later, the source location is displayed in the 
 ![Proper error stack traces for Wasm debugging.](../../media/2021/04/sources-page-inlining-dwarf-wasm-breakpoint-console-new-error.msft.png)
 
 For the history of this feature in the Chromium open-source project, see Issue [1189161](https://crbug.com/1189161).
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

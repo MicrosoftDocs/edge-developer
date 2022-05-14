@@ -22,19 +22,17 @@ ms.date: 12/13/2021
    limitations under the License.  -->
 # What's new in DevTools (Microsoft Edge 84)
 
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
-
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://aka.ms/microsoftedge).
-
-For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->
 ### Use the DevTools in Windows high contrast mode
 
-The Microsoft Edge DevTools is now displayed in high-contrast mode when Windows is in high-contrast mode.
+Microsoft Edge DevTools is now displayed in high-contrast mode when Windows is in high-contrast mode.
 
 ![The Microsoft Edge DevTools in high-contrast mode.](../../media/2020/05/high-contrast.msft.png)
 
@@ -313,12 +311,6 @@ In the **Application** tool, the **Manifest** page now shows app shortcuts.  App
 See also:
 * [Overview of Progressive Web Apps (PWAs)](../../../../progressive-web-apps-chromium/index.md)
 * [Debug Progressive Web Apps (PWAs)](../../../progressive-web-apps/index.md)
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels](https://aka.ms/microsoftedge) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

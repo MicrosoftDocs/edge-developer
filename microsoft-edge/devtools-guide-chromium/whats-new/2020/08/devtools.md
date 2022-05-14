@@ -22,11 +22,11 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 86)
 
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
-
-[!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -497,12 +497,6 @@ Chromium issue: [#1067184](https://crbug.com/1067184)
 See also:
 * [Inspect, edit, and debug HTML and CSS with the Elements tool](../../../elements-tool/elements-tool.md)
 * [Network features reference](../../../network/reference.md)
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you're on Windows or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

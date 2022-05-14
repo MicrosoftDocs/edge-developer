@@ -9,7 +9,7 @@ ms.date: 07/30/2021
 ---
 # What's New in DevTools (Microsoft Edge 93)
 
-[!INCLUDE [note about What's New announcements from the Microsoft Edge DevTools team](../../includes/edge-whats-new-note.md)]
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -188,12 +188,6 @@ Now in Microsoft Edge version 93, the **Copy as PowerShell** context menu option
 For more information about the Network Activity Log, see [Network features reference](../../../network/reference.md).
 
 For the history of this feature, see Issue [932971](https://bugs.chromium.org/p/chromium/issues/detail?id=932971).
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

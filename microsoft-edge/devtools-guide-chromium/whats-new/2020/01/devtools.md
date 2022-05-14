@@ -22,13 +22,11 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 81)
 
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
+
 
 <!-- ====================================================================== -->
 ## Announcements from the Microsoft Edge DevTools team
-
-The following sections are a list of announcements you may have missed from the Microsoft Edge DevTools team.  Check out the announcements to try new features in the DevTools, Microsoft Visual Studio Code extensions, and more.  To stay up to date on all the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).
-
-For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
 
 
 <!-- ====================================================================== -->
@@ -335,12 +333,6 @@ To prevent the default UI behavior that allows you to scroll well past the end o
 
 See also:
 * [Using the Editor pane to view or edit files](../../../../devtools-guide-chromium/sources/index.md#using-the-editor-pane-to-view-or-edit-files) in _Sources tool overview_.
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

@@ -9,11 +9,7 @@ ms.date: 03/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 100)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of Microsoft Edge DevTools and of the Edge DevTools extension for Microsoft Visual Studio and Visual Studio Code, see these announcements.
-
-To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).  If you're on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels of Microsoft Edge (Beta, Dev, and Canary) give you access to the latest features of Microsoft Edge DevTools.
-
-For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the new [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->

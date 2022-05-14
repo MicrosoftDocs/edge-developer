@@ -23,7 +23,7 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # What's New in DevTools (Microsoft Edge 89)
 
-[!INCLUDE [contact DevTools team note](../../includes/edge-whats-new-note.md)]
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
@@ -529,12 +529,6 @@ See also:
 Edge 89)_.
 * [Change colors with the Color Picker](../../../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
 * [Test text-color contrast using the Color Picker](../../../accessibility/color-picker.md)
-
-
-<!-- ====================================================================== -->
-## Download the Microsoft Edge preview channels
-
-If you are on Windows, Linux, or macOS, consider using the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) as your default development browser.  The preview channels give you access to the latest DevTools features.
 
 
 <!-- ====================================================================== -->

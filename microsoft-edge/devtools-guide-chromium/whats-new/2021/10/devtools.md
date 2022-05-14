@@ -9,11 +9,7 @@ ms.date: 10/20/2021
 ---
 # What's New in DevTools (Microsoft Edge 95)
 
-The top of this page lists announcements from the Microsoft Edge DevTools team, and then the bottom of this page describes selected features from the Chromium project.  To try new features in Microsoft Edge DevTools and in the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.
-
-To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download).  Whether you are on Windows, Linux, or macOS, consider using one of the preview channels of Microsoft Edge as your default development browser.
-
-For the latest announcements, [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).  To report a problem with DevTools or ask for a new feature, check out the [MicrosoftEdge > DevTools](https://github.com/MicrosoftEdge/DevTools) repo.
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
