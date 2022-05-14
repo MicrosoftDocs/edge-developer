@@ -11,7 +11,9 @@ ms.date: 06/07/2021
 
 <!-- 5. STYLES: TOGGLE STATE -->
 
-Check the accessibility of all states of elements, such as text color contrast during the `hover` state.  The **Inspect** tool reports accessibility issues for one state at a time.  To check accessibility of the various states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**), as described in this article. We first show why state simulation is necessary using the **Inspect** tool, and then we show how to use state simulation.
+Check the accessibility of all states of elements, such as text color contrast during the `hover` state.  The **Inspect** tool reports accessibility issues for one state at a time.  To check accessibility of the various states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**), as described in this article.
+
+We first show why state simulation is necessary using the **Inspect** tool, and then we show how to use state simulation.
 
 
 <!-- ====================================================================== -->
@@ -61,7 +63,7 @@ Checking for sufficient text contrast this way isn't enough, because the element
 <!-- ====================================================================== -->
 ## Use state simulation to simulate the hover state of an animated menu item
 
-<!-- Elements tool: Styles pane: Toggle Element State -->
+<!-- Elements tool: Styles pane: "Toggle Element State" icon tooltip; displays "Force element state" section -->
 
 When the **Inspect** tool is active, instead of hovering over an animated element, you need to simulate the state of the menu item.  To simulate the state of a menu item, use the state simulation in the **Styles** pane.  The **Styles** pane has a **\:hov** (**Toggle Element State**) button, which displays a group of checkboxes labeled **Force element state**.
 
@@ -81,7 +83,7 @@ To turn on the hover state while using the Inspect tool:
 
 1. In the **Styles** pane, to the right of the style rule `#sidebar nav li a`, select the `styles.css` link.  The **Sources** tool opens.  Then find the CSS pseudo-class rule `#sidebar nav li a:hover`.  This rule doesn't run when the **Inspect** tool is active.  We'll simulate running this state rule in the next steps.
 
-1. Select the **Elements** tool.  Then in the **Styles** pane, select the **:hov** (**Toggle Element State**) button.  The **Force element state** group of checkboxes is displayed.
+1. Select the **Elements** tool.  Then in the **Styles** pane, select the **:hov** (**Toggle Element State**) button.  The **Force element state** checkboxes section is displayed.
 
    :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="The state simulation tool showing all the options." lightbox="../media/a11y-testing-state-simulation.msft.png":::
 

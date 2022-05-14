@@ -71,7 +71,7 @@ First, you must set up the site so that you can make changes to it later.
 
    :::image type="content" source="../media/speed-glitch-tony-server-js-remix-project.msft.png" alt-text="The menu that appears after clicking 'tony'." lightbox="../media/speed-glitch-tony-server-js-remix-project.msft.png":::
 
-1. Click **Remix Project**.  The name of the project changes from **tony** to some randomly-generated name.  You now have your own editable copy of the code.  Later on, you can make changes to this code.
+1. Click **Remix Project**.  The name of the project changes from **tony** to a randomly generated name.  You now have your own editable copy of the code.  Later on, you can make changes to this code.
 
 1. Click **Show** and then select **In a New Window**.  The demo opens in a new tab.  This tab is be referred to as the **demo tab**.  It may take a while for the site to load.
 

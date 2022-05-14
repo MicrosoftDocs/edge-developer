@@ -192,6 +192,22 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 
 
 <!-- ====================================================================== -->
+## Display DevTools Tooltips
+
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
+
+*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
+*  Press `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  [Open the Command Menu](command-menu/index.md#open-the-command-menu) and then type `tooltips`.
+
+Then hover over each outlined region of DevTools:
+
+![DevTools Tooltips.](overview-images/tooltips.png)
+
+To turn off Tooltips, press `Esc`.  
+
+
+<!-- ====================================================================== -->
 ## Features of the main toolbar
 
 DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.

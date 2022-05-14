@@ -40,6 +40,10 @@ The **Memory Inspector** tool provides greater ability than the **Sources** tool
 
 ![Sources tool scope panel provides limited ability to inspect memory](../media/memory-inspector-sources-scope-limited-ability.png)
 
+<!-- this page's initial content was from
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2021/04/devtools#new-memory-inspector-tool
+-->
+
 
 <!-- ====================================================================== -->
 ## Open Memory Inspector while debugging

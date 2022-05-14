@@ -317,7 +317,7 @@ For detailed walkthrough steps, see [Test keyboard support using the Source Orde
 <!-- ====================================================================== -->
 ## Testing contrast of text colors in various states
 
-The **Inspect** tool reports accessibility issues for one state at a time.  First, we'll describe the limitation of using the Inspect tool to view only the static state of a page element.  Then we'll explain how to inspect other states of a page element, by clicking **\:hov (Toggle Element State)** on the **Styles** tab.
+The **Inspect** tool reports accessibility issues for one state at a time.  First, we'll describe the limitation of using the Inspect tool to view only the static state of a page element.  Then we'll explain how to inspect other states of a page element, by clicking **\:hov (Toggle Element State)** on the **Styles** tab, to show the section of checkboxes labeled **Force element state**.
 
 ### Checking text color contrast in the default state
 

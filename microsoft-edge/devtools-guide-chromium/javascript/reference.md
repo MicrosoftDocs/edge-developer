@@ -66,7 +66,9 @@ To set a line-of-code breakpoint:
 
 1. Open the file that contains the line of code.
 
-1. Click the area to the left of the line number for the line of code.  Or, right-click the line number and then select **Add breakpoint**.  A red circle then appears next to the line number, indicating a breakpoint.
+1. Click the area to the left of the line number for the line of code.  Or, right-click the line number and then select **Add breakpoint**.
+
+   A red circle (or more recently, a blue rectangle) then appears next to the line number, indicating a breakpoint.
 
    :::image type="content" source="../media/javascript-sources-page-js-breakpoint-30.msft.png" alt-text="A line-of-code breakpoint." lightbox="../media/javascript-sources-page-js-breakpoint-30.msft.png":::
 

@@ -86,7 +86,7 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 <!--  old link: <video src="animations/capture-animations.mp4" autoplay loop muted controls></video>  -->
 
-<!--  import the video to ACOM using https://review.docs.microsoft.com/en-us/help/contribute/contribute-video-publish?branch=master  -->
+<!--  import the video to ACOM using https://review.docs.microsoft.com/help/contribute/contribute-video-publish?branch=master  -->
 
 <!--  > [!VIDEO animations/capture-animations.mp4]  -->
 

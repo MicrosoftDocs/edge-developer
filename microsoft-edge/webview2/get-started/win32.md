@@ -714,5 +714,5 @@ Libraries:
 * [Windows Implementation Libraries (WIL)](https://github.com/Microsoft/wil) GitHub repo.
 
 <!--clickable full link:
-https://docs.microsoft.com/en-us/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
+https://docs.microsoft.com/cpp/cppcx/wrl/windows-runtime-cpp-template-library-wrl?view=msvc-170&preserve-view=true&viewFallbackFrom=vs-2019
 -->

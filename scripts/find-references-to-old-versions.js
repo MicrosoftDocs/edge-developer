@@ -12,7 +12,7 @@ const FILES_TO_IGNORE = [
     '../microsoft-edge/devtools-guide-chromium/experimental-features/index.md'
 ];
 // This script attempts to find the current edge release version by looking at this page and finding the first version header occurrence.
-const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel';
+const RELEASE_NOTES_PAGE = 'https://docs.microsoft.com/deployedge/microsoft-edge-relnote-stable-channel';
 
 // Parenthesis and g flag are important, please add them to all patterns.
 const PATTERNS_TO_LOOK_FOR = [

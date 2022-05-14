@@ -24,7 +24,7 @@ ms.date: 02/15/2022
 # CSS Overview tool
 
 <!-- the what's new entry is:
-https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#view-and-fix-color-contrast-issues-in-the-css-overview-tool
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/10/devtools#view-and-fix-color-contrast-issues-in-the-css-overview-tool
 # What's New in DevTools (Microsoft Edge 87)
 ### View and fix color contrast issues in the CSS Overview tool -->
 
