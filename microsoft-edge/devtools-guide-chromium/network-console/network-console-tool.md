@@ -25,7 +25,7 @@ To test a URL:
 
 1. In the **Untitled Request** text box, enter a URL to test.
 
-1. In the **GET** drop-down list, select a REST method: **GET**, **HEAD**, **POST**, **PUT**, or **PATCH**.
+1. In the **GET** dropdown list, select a REST method: **GET**, **HEAD**, **POST**, **PUT**, or **PATCH**.
 
 1. Optionally, in the **Query** section, click the **Key** and **Value** text boxes and enter key/value pairs:
 
@@ -64,6 +64,28 @@ To use the **Network Console** starting from the **Network** tool:
    <!-- Another screenshot (used by Experimental Features article)
 
    ![The Network Console tool in the main toolbar.](../media/network-network-console.msft.png) -->
+
+
+<!-- ====================================================================== -->
+## Save and export Collections, Environments, and environment variables
+
+You can:
+*  Save and export Collections.
+*  Save and export Environments.
+*  Edit and export sets of environment variables.
+
+Entering a name for the new environment:
+
+![Entering a name for the new environment.](images/network-console-environments-new-name.msft.png)
+
+Selecting the format for the new environment:
+
+![Selecting the format for the new environment.](images/network-console-environments-new-format.msft.png)
+
+The **Network Console** tool is compatible with the [Postman v2.1](https://schema.getpostman.com/json/collection/v2.1.0/docs/index.html) and [OpenAPI v2](https://swagger.io/specification/v2) schemas.
+
+See also:
+* [Save and export using the Network Console](../whats-new/2020/10/devtools.md#save-and-export-using-the-network-console) in _What's New in DevTools (Microsoft Edge 87)_
 
 
 <!-- ====================================================================== -->

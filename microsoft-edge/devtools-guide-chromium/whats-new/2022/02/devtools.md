@@ -9,15 +9,12 @@ ms.date: 02/02/2022
 ---
 # What's New in DevTools (Microsoft Edge 98)
 
-The following sections list the announcements from the Microsoft Edge DevTools team.  To try the latest features of DevTools and the Microsoft Edge DevTools extension for Visual Studio Code, read these announcements.  To stay up to date with the latest and greatest features in your developer tools, download the [Microsoft Edge preview channels](https://www.microsoftedgeinsider.com/download) and [follow the Microsoft Edge DevTools team on Twitter](https://twitter.com/EdgeDevTools).
-
-If you are on Windows, Linux, or macOS, consider using the Canary preview channel of Microsoft Edge as your default development browser.  The preview channels give you access to the latest features of Microsoft Edge DevTools.
+[!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
 <!-- ====================================================================== -->
 ## Catch up on the latest and greatest features in Microsoft Edge
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Year-in-review: Microsoft Edge for developers -->
 <!-- Subtitle: Catch up on the latest in developer tooling from Microsoft Edge. -->
@@ -32,18 +29,17 @@ Catch up on all of this news and more in our year-in-review blog post, [Looking 
 <!-- ====================================================================== -->
 ## Automate IE mode with Internet Explorer Driver
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
-
 <!-- Title: New support for automating IE mode -->
 <!-- Subtitle: Test your legacy websites and apps by automating IE mode with Internet Explorer Driver. -->
 
-Starting June 15, 2022, Internet Explorer 11 will no longer be supported on certain versions of Windows 10. IE mode is a feature of Microsoft Edge for organizations that still need Internet Explorer 11 for compatibility with legacy websites or apps. To support testing of those legacy websites and apps, you can now automate IE mode with Selenium 4 and Internet Explorer Driver. To get started, see [Use Internet Explorer Driver to automate IE mode in Microsoft Edge](../../../../webdriver-chromium/ie-mode.md).
+Starting June 15, 2022, Internet Explorer 11 will no longer be supported on certain versions of Windows 10.  IE mode is a feature of Microsoft Edge for organizations that still need Internet Explorer 11 for compatibility with legacy websites or apps.  To support testing of those legacy websites and apps, you can now automate IE mode with Selenium 4 and Internet Explorer Driver.
+
+See also:
+* [Use Internet Explorer Driver to automate IE mode in Microsoft Edge](../../../../webdriver-chromium/ie-mode.md)
 
 
 <!-- ====================================================================== -->
 ## Emulate forced-colors mode
-
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Emulation of forced colors in the Rendering tool -->
 <!-- Subtitle: You can now do a spot check of what your product will look like on a device running in forced-colors mode, without having to change your operating system settings. -->
@@ -60,11 +56,12 @@ With forced-colors emulation turned on in the **Rendering** tool, the webpage ch
 
 ![A webpage with forced-colors emulation turned on in the Rendering tool.  Text changed to black text on a white background.](../../media/2022/02/emulate-forced-colors-applied.png)
 
+See also:
+* [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](../../../rendering-tools/rendering-tool.md)
+
 
 <!-- ====================================================================== -->
 ## Activity icons in the Event Log of the Performance tool now have tooltips
-
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Analyze runtime performance better with the Event Log in the Performance tool -->
 <!-- Subtitle: Activity icons in the Event Log now have tooltips indicating the type of activity for each event, such as Scripting, Rendering, or Painting. -->
@@ -73,13 +70,12 @@ In previous versions of Microsoft Edge, the **Event Log** tab in the **Performan
 
 ![In the Event Log, the selected Activity event has a green box that represents a Painting event, and now a tooltip explicitly says "Painting".](../../media/2022/02/activity-event-tooltip.png)
 
-For more information on recording a performance profile, see [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance).
+See also:
+* [Record runtime performance](../../../evaluate-performance/reference.md#record-runtime-performance)
 
 
 <!-- ====================================================================== -->
 ## Shallow sizes in the Memory tool are now represented as decimal values
-
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Better understand shallow sizes in the Memory tool -->
 <!-- Subtitle: The Memory tool has been updated to report shallow size in decimal values as a percentage of the heap. -->
@@ -88,13 +84,12 @@ In previous versions of Microsoft Edge, the shallow size in a heap snapshot in t
 
 ![In a heap snapshot, the Shallow Size column values between 0% and 1% of the heap are now shown as decimal values with one or two decimal places.](../../media/2022/02/shallow-size-decimal-values.png)
 
-To learn more about heap snapshots in the Memory tool, see [Record heap snapshots](../../../memory-problems/heap-snapshots.md).
+See also:
+* [Record heap snapshots](../../../memory-problems/heap-snapshots.md)
 
 
 <!-- ====================================================================== -->
 ## Fix: The Search text box in the Network tool can now be resized
-
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
 
 <!-- Title: Fix: Resize the Search text box in the Network tool -->
 <!-- Subtitle: Now, resizing the Search pane in the Network tool also resizes the Search text box, so that the Refresh and Clear buttons remain visible. -->
@@ -103,26 +98,27 @@ In previous versions of Microsoft Edge, in the **Network** tool, the **Search** 
 
 ![In the Network tool, the Search text box now resizes to display the Refresh and Clear buttons, even when the pane is narrow.](../../media/2022/02/network-tool-search-text-box-resizes.png)
 
-To learn about the **Search** pane in the **Network** tool, see [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
+See also:
+* [Search network headers and responses](../../../network/index.md#search-network-headers-and-responses) in _Inspect network activity_.
 
 
 <!-- ====================================================================== -->
 ## Fix: Icons for service workers and script tags in the Elements tool are now aligned
 
-<!-- careful changing h2 wording: Welcome tool potentially links to it -->
-
 <!-- Title: Fix: Icons and tags in the DevTools are now aligned -->
 <!-- Subtitle: Icons for service workers and script tags in the Elements tool now appear as expected. -->
 
-In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon.](../../media/2022/02/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed.
+In previous versions of Microsoft Edge, the **Expand** (![The expand/collapse triangle icon.](../../media/2022/02/expand-collapse-triangle-icon.png)) icons in the **Service Workers** section of the **Application** tool were not aligned.  The version number in the **Update Cycle** table was cutting off the **Expand** icons.  In Microsoft Edge 98, this issue has been fixed:
 
 ![The icons in the Service Workers section of the Application tool are now aligned, so the Expand/Collapse icons are now fully visible.](../../media/2022/02/service-worker-icons-aligned-expand-icon-visible.png)
 
-Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../../media/2022/02/elements-dom-expand-icon-light-mode.png)) icon for `<script>` tags was misaligned.  In Microsoft Edge 98, this issue has been fixed.
+Also, in the **Elements** tool, the **Expand** (![The DOM tree Expand icon.](../../media/2022/02/elements-dom-expand-icon-light-mode.png)) icon for `<script>` tags was misaligned.  In Microsoft Edge 98, this issue has been fixed:
 
 ![In the Elements tool, the Expand icon for \<script\> tags is now correctly aligned.](../../media/2022/02/elements-script-tag-expand-icons-aligned.png)
 
-To learn more about debugging service workers in DevTools, see [Service workers](../../../progressive-web-apps/index.md#service-workers).  To learn more about `<script>` tags in the **Elements** tool, see [Get started with HTML and the DOM](../../../beginners/html.md).
+See also:
+* [Service workers](../../../progressive-web-apps/index.md#service-workers) in _Debug Progressive Web Apps (PWAs)_ - debugging service workers in DevTools.
+* [Get started with HTML and the DOM](../../../beginners/html.md) - `<script>` tags in the **Elements** tool.
 
 
 <!-- ====================================================================== -->

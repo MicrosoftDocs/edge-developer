@@ -73,6 +73,8 @@ You can now access the service worker timelines through the **Network** tool in 
 
 The **Network** tool displays the network requests that went through the service worker you are debugging.  The automatic filter is a way to narrow down your exploration.
 
+See also [Application tool, to manage storage](../storage/application-tool.md).
+
 
 <!-- ====================================================================== -->
 ## Sources

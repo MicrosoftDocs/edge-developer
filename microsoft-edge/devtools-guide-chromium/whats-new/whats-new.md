@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 03/04/2022
+ms.date: 05/10/2022
 ---
 # What's new in Microsoft Edge DevTools
 

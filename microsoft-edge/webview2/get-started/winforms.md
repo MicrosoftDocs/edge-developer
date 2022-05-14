@@ -575,7 +575,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    ![The application displays the URL in the address bar.](media/winforms-final-app.png)
 
-   * When the app starts, the default URL is `https://www.microsoft.com`, and the resulting displayed address shows the locale, such as `https://www.microsoft.com/en-us/`.
+   * When the app starts, the default URL is `https://www.microsoft.com`, and the resulting displayed address shows the locale, such as `https://www.microsoft.com/en-us/`.<!--keep /en-us here-->
 
    * If you enter `https://www.bing.com`, the resulting address is a variant, such as `https://www4.bing.com/?form=DCDN`.
 

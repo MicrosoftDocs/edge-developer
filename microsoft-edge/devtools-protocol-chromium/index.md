@@ -131,7 +131,7 @@ String("Target is closing")
 <!-- ====================================================================== -->
 ## Remote Tools for Microsoft Edge (Beta)
 
-You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
+You can install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
 
 To learn how to set up your Windows device and connect to it from your development machine, see [Get started with remote debugging Windows devices](../devtools-guide-chromium/remote-debugging/windows.md).
 
@@ -159,7 +159,7 @@ None.
     "id": "ED4FFDB4529723A0FAFCBDB9B45851BB",
     "title": "Get Started with Remote Debugging Windows Devices - Microsoft Edge Development | Microsoft Docs",
     "type": "page",
-    "url": "https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+    "url": "https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "ws://172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB",
     "browserProcessId": 7264
 }, ...  ]
@@ -191,7 +191,7 @@ None.
     "id": "ED4FFDB4529723A0FAFCBDB9B45851BB",
     "title": "Get Started with Remote Debugging Windows Devices - Microsoft Edge Development | Microsoft Docs",
     "type": "page",
-    "url": "https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+    "url": "https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "ws://172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB"
 }, ...  ]
 ```
