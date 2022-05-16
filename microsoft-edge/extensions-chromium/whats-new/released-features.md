@@ -18,6 +18,14 @@ For more information about upcoming updates and feature releases, see [Microsoft
 
 
 <!-- ====================================================================== -->
+### Developers can respond to user reviews on their Microsoft Edge add-on
+
+Developers can reply to the reviews and feedback received for their extension, on their Microsoft Edge add-on product page via Partner Center. For more information, see (Respond to user reviews received on your Microsoft Edge Add-ons product page)[].
+
+*Released May 2022*
+
+
+<!-- ====================================================================== -->
 ## Publish and update extensions to Microsoft Edge Add-ons using APIs
 
 You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. The Microsoft Edge Add-ons Publish API is currently in beta.
