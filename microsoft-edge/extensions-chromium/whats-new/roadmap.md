@@ -20,10 +20,6 @@ This article describes the latest updates about new Partner Center features for 
 
 The following features are actively being developed by our engineers.
 
-### Developers can respond to user reviews on their Microsoft Edge add-on
-
-Developers can reply to the reviews and feedback received for their extension, on their Microsoft Edge add-on product page via Partner Center.
-
 ### Retirement of submitting new Microsoft Edge add-ons with Manifest V2
 
 Microsoft Partner Center will no longer accept new Manifest V2 Microsoft Edge extension submissions, with visibility set as Hidden or Public.

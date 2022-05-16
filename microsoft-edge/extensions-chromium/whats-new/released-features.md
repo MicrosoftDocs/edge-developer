@@ -17,6 +17,15 @@ This article describes features launched on [Partner Center](https://partner.mic
 For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
 
 
+
+<!-- ====================================================================== -->
+### Developers can respond to user reviews on their Microsoft Edge add-on
+
+Developers can reply to the reviews and feedback received for their extension, on their Microsoft Edge add-on product page via Partner Center.
+
+*Released May 2022*
+
+
 <!-- ====================================================================== -->
 ## Publish and update extensions using the Microsoft Edge Add-ons API
 
