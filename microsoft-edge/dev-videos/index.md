@@ -30,6 +30,22 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## Web Platform - Create a scroll-linked animation without JavaScript
+
+_Published on 12 May 2022._
+
+[![Thumbnail image for the scroll-linked animation API video](./images/scroll-linked-animations.png)](https://www.youtube.com/watch?v=Q0nhiHVVnvI)
+
+Learn about the upcoming CSS scroll-linked animations feature and how it can be used to create a reading progress indicator on a web page without JavaScript.
+
+This feature is experimentally supported in Microsoft Edge and you can play with it by enabling the "Experimental Web Platform features" flag in `edge://flags`.
+
+You can also play with the demo application shown in the video [here](https://microsoftedge.github.io/Demos/reader/).
+
+And learn more about the feature on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline).
+
+
+<!-- ====================================================================== -->
 ## DevTools - Customizing Microsoft Edge Developer Tools and quick feature access
 
 _Published on 5 May 2022._
