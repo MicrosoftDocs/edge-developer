@@ -104,7 +104,7 @@ To help you evaluate the experimental APIs and share your feedback, use the [Web
 
 Using experimental APIs is not recommended for production apps.  Once an API has been moved from experimental to stable APIs, you need to move your app's code to the stable API.  Follow these practices when moving your app from using experimental APIs to using stable APIs:
 
-*  In your project in Visual Studio, update your WebView2 SDK package version.  See [Install the WebView2 SDK](https://review.docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/machine-setup?branch=pr-en-us-1936#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
+*  In your project in Visual Studio, update your WebView2 SDK package version.  See [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.
 
 *  Update your app's code to use stable APIs instead of experimental APIs (for COM).  The stable API will be supported with bug fixes, but the experimental API will be deprecated, and not available in the newer SDK.  After the release of an API as stable, the experimental version of that API is supported for two releases, in a deprecated state.  In subsequent versions of the SDK, experimental APIs might be modified, removed, or added.
 
