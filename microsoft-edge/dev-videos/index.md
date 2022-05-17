@@ -36,13 +36,13 @@ _Published on 12 May 2022._
 
 [![Thumbnail image for the scroll-linked animation API video](./images/scroll-linked-animations.png)](https://www.youtube.com/watch?v=Q0nhiHVVnvI)
 
-Learn about the upcoming CSS scroll-linked animations feature and how it can be used to create a reading progress indicator on a web page without JavaScript.
+Learn about the upcoming CSS scroll-linked animations feature and how it can be used to create a reading progress indicator on a webpage, without using JavaScript.
 
-This feature is experimentally supported in Microsoft Edge and you can play with it by enabling the "Experimental Web Platform features" flag in `edge://flags`.
+CSS scroll-linked animations is an experimental feature in Microsoft Edge.  To try this feature, go to `edge://flags` and then enable the **Experimental Web Platform features** setting.
 
-You can also play with the demo application shown in the video [here](https://microsoftedge.github.io/Demos/reader/).
+To play with the demo application that's shown in the video, see the rendered [reader demo](https://microsoftedge.github.io/Demos/reader/) and its [source code](https://github.com/MicrosoftEdge/Demos/tree/main/reader).
 
-And learn more about the feature on [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline).
+To learn more about the CSS scroll-linked animations feature, see [@scroll-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline) at MDN.
 
 
 <!-- ====================================================================== -->
