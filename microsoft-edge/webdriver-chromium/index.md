@@ -72,7 +72,7 @@ This article provides instructions for using the Selenium framework, but you can
 
 Selenium WebDriver is an open-source testing framework that can be used on any platform, and provides language bindings for Java, Python, C#, Ruby, and JavaScript.
 
-The Microsoft Edge team recommends [Selenium 4](https://www.nuget.org/packages/Selenium.WebDriver), because Selenium 4 has built-in support for Microsoft Edge (Chromium).  To install Selenium 4, see [Installing Selenium libraries](https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries).
+[Selenium 4](https://www.nuget.org/packages/Selenium.WebDriver) has built-in support for Microsoft Edge (Chromium).  To install Selenium 4, see [Installing Selenium libraries](https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries).
 
 ### Upgrading from Selenium 3
 
