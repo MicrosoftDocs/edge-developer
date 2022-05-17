@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 01/20/2022
+ms.date: 05/17/2022
 ---
 # Use WebDriver to automate Microsoft Edge
 
@@ -76,7 +76,9 @@ The Microsoft Edge team recommends [Selenium 4](https://www.nuget.org/packages/S
 
 ### Upgrading from Selenium 3
 
-The Microsoft Edge team recommends upgrading existing Selenium 3 tests to Selenium 4, because the Selenium project no longer maintains Selenium 3.  To learn more about upgrading to Selenium 4, see [Upgrade to Selenium 4](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/).
+To use WebDriver to automate Microsoft Edge, if you use Selenium, make sure you are using Selenium 4.  Selenium 3 is no longer supported.
+
+You must upgrade existing Selenium 3 tests to Selenium 4.  To learn more about upgrading to Selenium 4, see [Upgrade to Selenium 4](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/).
 
 If you're using [Selenium Tools for Microsoft Edge](https://github.com/microsoft/edge-selenium-tools) to add Microsoft Edge (Chromium) support to your Selenium 3 browser tests, update your tests as follows:
 
@@ -412,11 +414,14 @@ See [WebDriver (EdgeHTML)](/archive/microsoft-edge/legacy/developer/webdriver/).
 
 These are troubleshooting considerations when using WebDriver to automate Microsoft Edge.
 
+
 ### Developer Tools Availability policy
 
 If your IT admin has set the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy to `2`,  [Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver) is blocked from driving Microsoft Edge, because the driver uses [Microsoft Edge DevTools](../devtools-guide-chromium/overview.md).  To automate Microsoft Edge, make sure the [DeveloperToolsAvailability](/deployedge/microsoft-edge-policies#developertoolsavailability) policy is set to `0` or `1`.
 
 ### Upgrading from Selenium 3 to Selenium 4
+
+To use WebDriver to automate Microsoft Edge, if you use Selenium, make sure you are using Selenium 4.  Selenium 3 is no longer supported.
 
 If you use Selenium 4, you don't need to use Selenium Tools for Microsoft Edge.  Selenium Tools for Microsoft Edge are for Selenium 3 only.  If you try to use Selenium 4 with Selenium Tools for Microsoft Edge and try to create a new `EdgeDriver` instance, you get the following error: `System.MissingMethodException: 'Method not found: 'OpenQA.Selenium.Remote.DesiredCapabilities OpenQA.Selenium.DriverOptions.GenerateDesiredCapabilities(Boolean)'`.
 
