@@ -13,10 +13,37 @@ ms.date: 05/16/2022
 
 
 <!-- ====================================================================== -->
-## 1.
+## Improved Inspect tool accessibility
+<!--
+## The Inspect element tooltip now persists until you dismiss it
+-->
 
-<!-- Title:  -->
-<!-- Subtitle: . -->
+<!-- Title: Improving the Inspect element tooltip -->
+<!-- Subtitle: The Inspect element tooltip now persists until you dismiss it, improving accessibility and ease of use. -->
+
+Previously, in the **Elements** tool, the hover overlay for the node that you selected constantly changed when you used the **Select Element** feature.
+The previous design was difficult to use with a screen magnifier.
+
+When using the **Inspect** tool, to keep the node (and overlay) selected,<!--?--> there's now a `Ctrl`+`Alt` key modifier.
+Now, if you hold down `Ctrl`+`Alt`, when you move the mouse pointer over the rendered webpage, the existing tooltip and grid color overlay for the Inspect tool remains, as if locked.
+
+Also, you can now press `Ctrl`<!--?--> to hide the Inspect tool's tooltip overlay while you move the mouse pointer over the rendered webpage.
+
+![Inspect tool.](devtools-102-images/inspect.png)
+<!-- screenshot instructions:
+1. Set magnifier in windows settings to > 200%.
+2. Inspect the web page (microsoft.com is fine).
+3. Make sure the Elements tool tab is open.
+4. Click the Inspect element tool.
+5. Move to the content of the rendered webpage (not inside devtools).
+6. Try navigating without key modifiers.  You will start going through nodes/elements as soon as mouse starts moving.
+After the fix:
+Element keeps selected and you can move the mouse around (allowing you to navigate the screen and keep context)
+-->
+
+<!-- work item has GIF -->
+
+For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
 
 <!-- ====================================================================== -->
