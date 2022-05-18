@@ -19,9 +19,9 @@ For more information about upcoming updates and feature releases, see [Microsoft
 
 
 <!-- ====================================================================== -->
-### Developers can respond to user reviews on their Microsoft Edge add-on
+### Developers can respond to user reviews about their Microsoft Edge add-on
 
-Developers can reply to the reviews and feedback received for their extension, on their Microsoft Edge add-on product page via Partner Center.
+Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge add-on product page.
 
 *Released May 2022*
 
