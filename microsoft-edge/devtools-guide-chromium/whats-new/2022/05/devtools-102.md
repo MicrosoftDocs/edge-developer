@@ -47,7 +47,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 
 <!-- ====================================================================== -->
-## 2.
+<!-- ## 2. -->
 
 <!-- Title:  -->
 <!-- Subtitle: . -->
@@ -60,7 +60,7 @@ Microsoft Edge 102 also includes the following updates from the Chromium project
 
 * [Preview feature: New Performance insights panel](https://developer.chrome.com/blog/new-in-devtools-102/#perf)
 * [New shortcuts to emulate light and dark themes](https://developer.chrome.com/blog/new-in-devtools-102/#emulation)
-* [Improve security on the Network Preview tab](https://developer.chrome.com/blog/new-in-devtools-102/#network-preview)
+* [Improved security on the Network Preview tab](https://developer.chrome.com/blog/new-in-devtools-102/#network-preview)
 * [Improved reloading at breakpoint](https://developer.chrome.com/blog/new-in-devtools-102/#debugger)
 * [Console updates](https://developer.chrome.com/blog/new-in-devtools-102/#console)
    * [Handle script execution errors in the Console](https://developer.chrome.com/blog/new-in-devtools-102/#errors)
