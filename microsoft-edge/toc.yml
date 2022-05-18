@@ -1073,10 +1073,12 @@
                   href: webview2/how-to/winrt-from-js.md
                   displayName: AddHostObjectToScript, host objects
 
+            # updated h2: Experimental APIs, added a 2nd, new h3:
             - name: Understand the different WebView2 SDK versions
               href: webview2/concepts/versioning.md
               displayName: Understand WebView2 SDK versions  # old title
 
+            # update needed?
             - name: Test upcoming APIs and features
               href: webview2/how-to/set-preview-channel.md
               displayName: 
