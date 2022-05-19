@@ -45,14 +45,14 @@ DevTools gives detailed information about the error in the **Console**:
 
 Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass:
 
-![The 'Search for this message on the Web' button on an error message in the **Console**.](../media/search-console-icon.msft.png)
+![The 'Search for this message on the Web' button on an error message in the Console.](../media/search-console-icon.msft.png)
 <!-- to set up screenshot, went to 
 https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
 https://microsoftedge.github.io/Demos/devtools-console/error.html -->
 
 When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message:
 
-![New tab that opened from the Search Console Error feature.](../media/search-console-new-tab.msft.png)
+![The search results page in a new tab.](../media/search-console-new-tab.msft.png)
 
 
 <!-- ====================================================================== -->
