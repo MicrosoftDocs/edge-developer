@@ -28,7 +28,7 @@ You can integrate APIs directly into your Continuous Integration / Continuous De
 <!-- ====================================================================== -->
 ## Microsoft Edge extensions developer portal
 
-The new edition of the developer portal contains relevant resources and documentation for Microsoft Edge extensions. For more information, see [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions/).
+The new edition of the developer portal contains relevant resources and documentation for Microsoft Edge extensions. For more information, see [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/en-us/microsoft-edge/extensions/).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
 *Released January 2022*
 

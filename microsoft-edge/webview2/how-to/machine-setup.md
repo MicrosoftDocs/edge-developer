@@ -38,7 +38,7 @@ We recommend using the Canary channel.  The minimum required version is 82.0.488
 <!-- ====================================================================== -->
 ## Install the WebView2 Runtime
 
-1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
+1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
 If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
 
