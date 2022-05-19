@@ -41,7 +41,7 @@ For more information, see [Search for Console errors on the web](../09/devtools.
 ![All error and warning messages in the Console now have a Search Web icon.](../../media/2021/10/console-message-search-web-button.png)
 
 See also:
-* [Look up error messages on the web from the Console](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console) in _Console overview_.
+* [Search the web for a Console error message string](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console) in _Console overview_.
 
 
 <!-- ====================================================================== -->

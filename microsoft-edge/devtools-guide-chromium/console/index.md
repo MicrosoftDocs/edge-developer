@@ -41,7 +41,7 @@ DevTools gives detailed information about the error in the **Console**:
 
 
 <!-- ====================================================================== -->
-## Look up error messages on the web from the Console
+## Search the web for a Console error message string
 
 Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass:
 
