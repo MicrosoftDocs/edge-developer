@@ -313,7 +313,7 @@ Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.w
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
@@ -358,7 +358,7 @@ You should specify the same folder where all other app data is stored.
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
