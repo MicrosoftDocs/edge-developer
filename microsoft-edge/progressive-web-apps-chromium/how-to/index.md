@@ -183,7 +183,7 @@ To build a robust, real-world PWA, consider the following best practices for web
 
 ### Cross-browser compatibility
 
-Test your app for [cross-browser compatibility](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).  Make sure your PWA works, by testing it in different browsers and environments.  See [Tools](https://developer.microsoft.com/microsoft-edge/tools/remote) at _Microsoft Edge Developer_.
+Test your app for [cross-browser compatibility](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).  Make sure your PWA works, by testing it in different browsers and environments.  See [Tools](https://developer.microsoft.com/en-us/microsoft-edge/tools/)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> at _Microsoft Edge Developer_.
 
 ### Responsive design
 

@@ -690,8 +690,8 @@ Congratulations, you built your first WebView2 app!  Your development environmen
 <!-- ====================================================================== -->
 ## See also
 
-Developer.microsoft.com:
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+developer.microsoft.com:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
 * [WebView2 sample: Win32 C++ app](../samples/webview2apissample.md)

@@ -37,7 +37,7 @@ Return from that page and continue the steps below.
 <!-- ====================================================================== -->
 ## Step 2 - Install a preview channel of Microsoft Edge
 
-1. Install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2) or any [Microsoft Edge preview channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on Windows 10 version 1803 (build 17134) or later.
+1. Install the [WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> or any [Microsoft Edge preview channel](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary) installed on Windows 10 version 1803 (build 17134) or later.
 
 Return from that page and continue the steps below.
 
@@ -373,7 +373,8 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
+developer.microsoft.com:
+* [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
 * [Introduction to Microsoft Edge WebView2](../index.md) - overview of features.

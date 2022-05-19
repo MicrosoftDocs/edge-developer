@@ -26,7 +26,8 @@ This repo, `edge-developer`, is the repository for the source Markdown files for
 
 If you want to include new coverage or have feedback, consider [contributing](CONTRIBUTING.md).  You can edit the existing content, add new content, or report new [issues](https://github.com/MicrosoftDocs/edge-developer/issues).  The Microsoft Edge team reviews a look at your suggestions and works to incorporate the suggestions into the docs.
 
-Find the data for the [Status](https://developer.microsoft.com/microsoft-edge/status) webpage at: [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status).  The `Status` webpage provides the latest implementation status and future plans for web platform features in Microsoft Edge.
+For the latest implementation status and future plans for web platform features in Microsoft Edge, see [Microsoft Edge Platform Status](https://developer.microsoft.com/en-us/microsoft-edge/status).<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> For the data that's used to populate the above status site, see [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status).
+
 
 ### File names and directories
 
