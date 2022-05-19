@@ -41,7 +41,7 @@ To enable the Window Controls Overlay API:
 
 The Window Controls Overlay API is also available as an origin trials feature.  For your app's users to benefit from the Window Controls Overlay without having to enable it in Microsoft Edge, you can use an origin trial.
 
-For more information about Origin Trials, go to [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
+For more information about Origin Trials, go to [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
 
 
 <!-- ====================================================================== -->
