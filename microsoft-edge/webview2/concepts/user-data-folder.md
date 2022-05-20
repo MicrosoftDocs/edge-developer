@@ -264,7 +264,7 @@ Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icoreweb
 
 ```cpp
 std::wstring m_userDataFolder;
-m_userDataFolder = L"C:\MyAppUserDataFolder"
+m_userDataFolder = L"C:\\MyAppUserDataFolder"
 auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
 
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -313,7 +313,7 @@ Use the [CoreWebView2Environment.CreateAsync method](/dotnet/api/microsoft.web.w
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
@@ -358,7 +358,7 @@ You should specify the same folder where all other app data is stored.
 
 ```csharp
 string UserDataFolder;
-UserDataFolder = "C:\MyAppUserDataFolder";
+UserDataFolder = "C:\\MyAppUserDataFolder";
 _task = CoreWebView2Environment.CreateAsync(BrowserExecutableFolder, 
                                             UserDataFolder, 
                                             new CoreWebView2EnvironmentOptions(null, Language, null));
