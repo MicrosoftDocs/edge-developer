@@ -52,7 +52,7 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 
     ![The build number for Microsoft Edge on April 15, 2021.](media/microsoft-edge-version.msft.png)
 
-1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+1.  Go to [Microsoft Edge WebDriver](https://developer.microsoft.com/microsoft-edge/tools/webdriver).
 
 1.  In the **Get the latest version** section of the page, select a platform in the channel that matches your version number of Microsoft Edge.
 

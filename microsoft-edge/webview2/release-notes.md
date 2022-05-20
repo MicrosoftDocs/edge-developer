@@ -1076,7 +1076,7 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 > [!IMPORTANT]
 > **Announcement**:  Win32 C/C++ WebView2 is now Generally Available (GA).  Starting this release, Release SDKs are forward-compatible.  See [GA announcement blog post](https://blogs.windows.com/msedgedev/edge-webview2-general-availability).
 
-*  The Evergreen WebView2 Runtime and installer are GA.  The bootstrapper, the downlink link for the Bootstrapper, and the Standalone Installer for the Evergreen WebView2 Runtime are available on [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->  Sample code for the installation workflow is also available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
+*  The Evergreen WebView2 Runtime and installer are GA.  The bootstrapper, the downlink link for the Bootstrapper, and the Standalone Installer for the Evergreen WebView2 Runtime are available on [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/).  Sample code for the installation workflow is also available in the [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples).
 
 For more information about the Runtime, Evergreen distribution, and Fixed Version distribution, see [Distribute your app and the WebView2 Runtime](concepts/distribution.md).
 

@@ -100,7 +100,7 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    ![Visual Studio Installer working.](media/winui2-vs-installer-working.png)
 
-   This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> - an initial introduction to WebView2 features at developer.microsoft.com.
+   This can take several minutes.  In a new window or tab, you can check out a top-level overview at [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - an initial introduction to WebView2 features at developer.microsoft.com.
 
    When Visual Studio Installer is finished, return to this page and continue with the steps below.
 
