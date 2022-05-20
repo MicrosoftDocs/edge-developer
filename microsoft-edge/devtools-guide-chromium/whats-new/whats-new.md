@@ -11,6 +11,8 @@ ms.date: 05/16/2022
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](includes/edge-whats-new-note.md)]
 
+<!-- add new pages to toc too -->
+
 * [What's New in DevTools (Microsoft Edge 102)](2022/05/devtools-102.md)
 * [What's New in DevTools (Microsoft Edge 101)](2022/04/devtools-101.md)
 * [What's New in DevTools (Microsoft Edge 100)](2022/03/devtools-100.md)
