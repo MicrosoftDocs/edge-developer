@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/29/2022
+ms.date: 05/19/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
 
@@ -14,15 +14,24 @@ Microsoft Edge DevTools extension for Visual Studio Code
 Microsoft Edge DevTools extension
 -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code lets you use the browser's **Elements** tool and **Network** tool from within Visual Studio Code.  Without leaving Visual Studio Code, use Microsoft Edge DevTools to connect to an instance of Microsoft Edge with the following functionality:
+The Microsoft Edge DevTools extension for Visual Studio Code lets you use the **Elements** tool and **Network** tool of the Microsoft Edge browser from within Visual Studio Code.
+
+Without leaving Visual Studio Code, use Microsoft Edge DevTools to connect to an instance of Microsoft Edge and then:
 * View the runtime HTML structure.
 * Change the layout.
 * Change styles (CSS).
 * Read console messages.
 * View network requests.
 
-> [!NOTE]
-> The Microsoft Edge DevTools extension requires Microsoft Edge.  This extension is supported in Microsoft Edge versions 80.0.361.48 and later.
+For example, use the **Elements** tool to:
+*   Attach to an instance or launch an instance of Microsoft Edge.
+*   Display the runtime HTML structure.
+*   Update the layout.
+*   Fix styling issues.
+
+![The Microsoft Edge DevTools extension for Visual Studio Code.](media/microsoft-edge-tools-for-visual-studio-code.png)
+
+The Microsoft Edge DevTools extension requires Microsoft Edge.  This extension is supported in Microsoft Edge versions 80.0.361.48 and later.
 
 In Visual Studio Code, there are multiple ways to open the Microsoft Edge DevTools extension:
 * From the **Activity Bar**.
@@ -36,13 +45,23 @@ In Visual Studio Code, this extension is referred to by several variations:
 
 This article uses the name "the Microsoft Edge DevTools extension", except for UI text.
 
+The Visual Studio Marketplace provides more information about [Microsoft Edge Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).
+
 
 <!-- ====================================================================== -->
 ## Installing the Microsoft Edge DevTools extension
 
-To install the extension from within Visual Studio Code, see [The Microsoft Edge DevTools extension for Visual Studio Code](index.md#microsoft-edge-devtools-extension-for-visual-studio-code) in _Visual Studio Code for web development_.
+To install the Microsoft Edge DevTools extension from within Visual Studio Code:
 
-Or, you can [download the Microsoft Edge DevTools extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) from Visual Studio Marketplace.  You can view the [source code](https://github.com/microsoft/vscode-edge-devtools) at GitHub.
+1. In Visual Studio Code, navigate to **Extensions**.  To do this, you can press `Ctrl`+`Shift`+`X` on Windows/Linux or `Command`+`Shift`+`X` on macOS.
+
+1. Search the Marketplace for the extension **Microsoft Edge Tools for VS Code**, select the extension, and then select **Install**.
+
+  ![Installing the Microsoft Edge DevTools extension for Visual Studio Code.](media/vscode-edge-tools-install.png)
+
+
+Or, you can [download the Microsoft Edge DevTools extension](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools) from Visual Studio Marketplace.
+
 
 ### Updating the extension
 
@@ -269,6 +288,7 @@ The visual deficiencies emulation button lets you test your product in a blurred
 
 ![Browser preview in the extension showing the web product in a blurred emulation](media/edge-for-code-blurred.msft.png)
 
+
 <!-- ====================================================================== -->
 ## Inline and live issue analysis
 
@@ -388,3 +408,9 @@ As of April 20, 2022, to make the **Console** tool visible, target the Canary ve
 Send your feedback by [filing an issue](https://github.com/Microsoft/vscode-edge-devtools/issues/new) in the `vscode-edge-devtools` repo.
 
 Your contributions are welcome, to help make the Microsoft Edge DevTools extension better.  Find everything you need to get started in the [vscode-edge-devtools](https://github.com/Microsoft/vscode-edge-devtools) repo.
+
+
+<!-- ====================================================================== -->
+## See also
+
+*  [vscode-edge-devtools repo](https://github.com/microsoft/vscode-edge-devtools) - source code for the Microsoft Edge Developer Tools extension for Visual Studio Code, at GitHub.
