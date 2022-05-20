@@ -32,7 +32,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXCustomActionSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.sln` -->
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentWiXCustomActionSample/WV2DeploymentWiXCustomActionSample.sln` -->
 
 
 <!-- ====================================================================== -->

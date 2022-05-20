@@ -23,7 +23,7 @@ The goal for this tutorial is to build a Microsoft Edge extension, starting with
 <!-- ====================================================================== -->
 ## Before you begin
 
-To test out the completed extension that you are building in this tutorial, download the [source code](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1).
+To test out the completed extension that you are building in this tutorial, download the [source code](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1).<!-- changing master to main doesn't work 5/19/2022 -->
 
 
 <!-- ====================================================================== -->
