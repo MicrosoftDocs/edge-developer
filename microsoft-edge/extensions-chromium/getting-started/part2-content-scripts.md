@@ -9,7 +9,7 @@ ms.date: 01/07/2021
 ---
 # Create an extension tutorial, part 2
 
-[Completed extension package source for this part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)
+[Completed extension package source for this part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)<!-- changing master to main doesn't work 5/19/2022 -->
 
 
 <!-- ====================================================================== -->

@@ -319,7 +319,7 @@ In a later release, the **Audits** panel was renamed as the **Lighthouse** panel
 
 #### New configuration UI
 
-The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  For more information on the throttling UI changes, see [Audits Panel Throttling](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling).
+The configuration UI has a new, responsive design, and the throttling configuration options have been simplified.  For more information on the throttling UI changes, see [Audits Panel Throttling](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#devtools-audits-panel-throttling).<!-- changing master to main doesn't work 5/19/2022 -->
 
 ![The new configuration UI.](../../images/2019/12/start.msft.png)
 

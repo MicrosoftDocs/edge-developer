@@ -87,6 +87,6 @@ The web is a great platform for the new class of foldable and dual-screen device
 
 *  [Surface Duo developer documentation](/dual-screen/index) - Documentation for creating apps on dual-screen devices.
 
-*  [Web Platform Primitives for Enlightened Experiences on Foldable Devices](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Foldables/explainer.md) - Microsoft Edge web platform explainer for new APIs, to build web experiences on foldable and dual-screen devices.
+*  [Web Platform Primitives for Enlightened Experiences on Foldable Devices](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Foldables/explainer.md) - Microsoft Edge web platform explainer for new APIs, to build web experiences on foldable and dual-screen devices.
 
 *  [How to build dual-screen experiences for the website and web apps](https://youtu.be/DXrZWsqXPVc) - Recording of Microsoft 365 Developer Day session.

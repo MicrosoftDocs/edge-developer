@@ -36,7 +36,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/README.md`
 
 
 <!-- ====================================================================== -->
@@ -68,7 +68,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2Samples.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
 
 <!-- ====================================================================== -->
