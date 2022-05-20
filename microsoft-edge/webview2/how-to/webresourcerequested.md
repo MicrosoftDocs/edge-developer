@@ -301,7 +301,7 @@ The `NavigateWithWebResourceRequest` method allows your host app to navigate the
 <!-- CreateWebResourceRequest and NavigateWithWebResourceRequest -->
 
 <!-- the code listings below were not copied from the sample app; they were copied from the spec.  ok?
-from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md#examples -->
+from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md#examples -->
 
 
 <!-- -------------------------------------------------- -->
@@ -371,7 +371,7 @@ You can monitor the requests and responses via the `WebResourceResponseReceived`
 This example shows how to read the authorization header value by monitoring the requests and responses via the `WebResourceResponseReceived` event.
 
 The following code demonstrates how the `WebResourceResponseReceived` event can be used.
-<!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md#examples -->
+<!-- from https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md#examples -->
 
 
 <!-- -------------------------------------------------- -->
@@ -578,5 +578,5 @@ m_webView->add_WebResourceResponseReceived(
 
 * [Call native-side code from web-side code](hostobject.md)
 <!-- 
-* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/NavigateWithWebResourceRequest.md)
-* [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/master/specs/WebResourceResponseReceived.md) -->
+* [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md)
+* [WebResourceResponseReceived event spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/WebResourceResponseReceived.md) -->

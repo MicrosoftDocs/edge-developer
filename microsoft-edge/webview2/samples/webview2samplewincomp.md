@@ -39,7 +39,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/README.md`
 
 
 <!-- ====================================================================== -->
@@ -71,7 +71,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
    A **Review Solution Actions** dialog box might appear:
 

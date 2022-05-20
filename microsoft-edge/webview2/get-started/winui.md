@@ -325,7 +325,7 @@ In this section, you add code to import the WebView2 Core library.
 
 ### WinRT CoreWebView2 object availability
 
-The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) lists which of the APIs are available for WebView2.
+The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 --> lists which of the APIs are available for WebView2.
 
 
 <!-- ====================================================================== -->

@@ -35,7 +35,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/webview2_sample_uwp/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/README.md`
 
 
 <!-- ====================================================================== -->
@@ -67,7 +67,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/webview2_sample_uwp/webview2_sample_uwp.sln`
 
 
 <!-- ====================================================================== -->
