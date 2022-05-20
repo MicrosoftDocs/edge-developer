@@ -60,8 +60,6 @@ To begin writing automated tests, make sure the Edge WebDriver version you insta
 
 1.  After the download completes, extract the `msedgedriver` executable to your preferred location. Add the folder where the executable is located to your `PATH` environment variable.
 
-    The driver executable needs to be placed in the PATH; see [IE Driver Server](https://www.selenium.dev/documentation/ie_driver_server/).  The top of that page reads: "The standalone server executable must be downloaded from the Downloads page and placed in your PATH."  If the driver location isn't included in the PATH, you must set the driver location at `webdriver.ie.driver` or some other way.
-
 
 <!-- ====================================================================== -->
 ## Choose a WebDriver testing framework

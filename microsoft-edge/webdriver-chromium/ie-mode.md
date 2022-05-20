@@ -22,20 +22,28 @@ Starting **June 15, 2022**, Internet Explorer 11 will no longer be supported on 
 
 To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](https://www.selenium.dev/downloads/).  Make sure that the version of IEDriver that you download is `4.0.0.0` or greater.
 
-:::image type="content" source="./media/iedriver-install.msft.png" alt-text="The IEDriver section of the Downloads page for Selenium." lightbox="./media/iedriver-install.msft.png":::
+![The IEDriver section of the Downloads page for Selenium.](media/iedriver-install.msft.png)
 
 
+<!-- ====================================================================== -->
 ## Required Configuration
 
 To configure IEDriver, Windows, and Microsoft Edge correctly, complete the requirements for [Selenium's required configuration](https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration).  
+
+
+### Place the driver executable in the PATH
+
+The driver executable needs to be placed in the PATH; see [IE Driver Server](https://www.selenium.dev/documentation/ie_driver_server/).  The top of that page reads: "The standalone server executable must be downloaded from the Downloads page and placed in your PATH."
+
+If the driver location isn't included in the PATH, you must set the driver location at `webdriver.ie.driver` or some other way.
+
 
 <!-- ====================================================================== -->
 ## Automate IE mode in Microsoft Edge
 
 The following sections walk you through using Selenium to automate IE mode in Microsoft Edge.
 
-> [!NOTE]
-> This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using another framework, consult the documentation for your framework of choice.
+This article provides instructions for using the Selenium framework, but you can use any library, framework, and programming language that supports WebDriver.  To accomplish the same tasks using another framework, consult the documentation for your framework of choice.
 
 To launch Microsoft Edge in IE mode with IEDriver:
 
@@ -330,7 +338,10 @@ while (newHandles.length == initialHandleCount) {
 
 ### Creating and switching between tabs
 
-If your test code switches between multiple tabs in the same Microsoft Edge window, tabs that become inactive may not be included in the list of handles returned by [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles).  In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE, regardless of activation state.  When using Microsoft Edge in IE mode, if your test switches focus away from a certain tab and you would like to be able to switch back to that tab later, you must store a copy of the tab's window handle.
+If your test code switches between multiple tabs in the same Microsoft Edge window, tabs that become inactive may not be included in the list of handles returned by [Get Window Handles](https://www.w3.org/TR/webdriver2/#get-window-handles).  In the Internet Explorer 11 desktop application, IEDriver will return handles for all of the tabs in IE, regardless of activation state.
+
+When using Microsoft Edge in IE mode, if your test switches focus away from a certain tab and you would like to be able to switch back to that tab later, you must store a copy of the tab's window handle.
+
 
 <!-- ====================================================================== -->
 ## See also
