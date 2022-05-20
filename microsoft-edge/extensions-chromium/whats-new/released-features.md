@@ -19,7 +19,7 @@ For more information about upcoming updates and feature releases, see [Microsoft
 
 
 <!-- ====================================================================== -->
-### Developers can respond to user reviews about their Microsoft Edge add-on
+### Developers can respond to user reviews about their Microsoft Edge Add-on
 
 Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge Add-ons product page. 
 
