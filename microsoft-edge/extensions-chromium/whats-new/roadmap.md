@@ -20,11 +20,7 @@ This article describes the latest updates about new Partner Center features for 
 
 The following features are actively being developed by our engineers.
 
-### Developers can respond to user reviews on their Microsoft Edge add-on
-
-Developers can reply to the reviews and feedback received for their extension, on their Microsoft Edge add-on product page via Partner Center.
-
-### Retirement of submitting new Microsoft Edge add-ons with Manifest V2
+### Retirement of submitting new Microsoft Edge Add-ons with Manifest V2
 
 Microsoft Partner Center will no longer accept new Manifest V2 Microsoft Edge extension submissions, with visibility set as Hidden or Public.
 
@@ -46,12 +42,12 @@ The following features are currently in our backlog.
 
 For users to report extension specific issues through the extension webpage on the Microsoft Edge Add-ons website. Developer support information will be shown on the product page of an extension. This information will allow users to directly reach out to the extension developer for extension-specific support.
 
-### Manifest V2 Microsoft Edge add-ons deprecation
+### Manifest V2 Microsoft Edge Add-ons deprecation
 
-Microsoft Partner Center will not accept updates to existing Manifest V2 Microsoft Edge add-ons.  Microsoft Edge will no longer support or run Manifest V2 Microsoft Edge add-ons. Note that by using Microsoft Edge Enterprise Policies, Enterprise Accounts can allow Manifest V2 Microsoft Edge add-ons to run and operate on Microsoft Edge.
+Microsoft Partner Center will not accept updates to existing Manifest V2 Microsoft Edge Add-ons.  Microsoft Edge will no longer support or run Manifest V2 Microsoft Edge Add-ons. Note that by using Microsoft Edge Enterprise Policies, Enterprise Accounts can allow Manifest V2 Microsoft Edge Add-ons to run and operate on Microsoft Edge.
 
-### Manifest V2 Microsoft Edge Enterprise add-ons cease to function
-Microsoft Edge Enterprise add-ons with Manifest V2 will not be functional on Microsoft Edge.
+### Manifest V2 Microsoft Edge Enterprise Add-ons cease to function
+Microsoft Edge Enterprise Add-ons with Manifest V2 will not be functional on Microsoft Edge.
 
 
 <!-- ====================================================================== -->
