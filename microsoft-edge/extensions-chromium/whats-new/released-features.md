@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/07/2021
+ms.date: 05/20/2021
 ---
 # Microsoft Edge Add-ons released features
 
@@ -21,7 +21,7 @@ For more information about upcoming updates and feature releases, see [Microsoft
 <!-- ====================================================================== -->
 ### Developers can respond to user reviews about their Microsoft Edge add-on
 
-Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge Add-ons product page.
+Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge Add-ons product page. 
 
 *Released May 2022*
 
