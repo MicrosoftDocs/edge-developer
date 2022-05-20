@@ -33,12 +33,12 @@ Some of the most popular browsers to build extensions for include Safari, Firefo
 
 | Web browser | Chromium-based? | Extension development webpage |
 |:--- |:--- |:--- |
-| Safari | No | [developer.apple.com/documentation/safariservices/safari_app_extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) |
-| Firefox | No | [developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions) |
-| Chrome | Yes | [developer.chrome.com/extensions](https://developer.chrome.com/extensions) |
-| Opera | Yes | [dev.opera.com/extensions](https://dev.opera.com/extensions) |
+| Safari | No | [Safari App Extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions) |
+| Firefox | No | [Browser Extensions](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions) |
+| Chrome | Yes | [API Reference](https://developer.chrome.com/extensions) |
+| Opera | Yes | [Extensions Documentation](https://dev.opera.com/extensions) |
 | Brave | Yes | Uses [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) |
-| Microsoft Edge | Yes | [developer.microsoft.com/microsoft-edge/extensions](https://developer.microsoft.com/en-us/microsoft-edge/extensions)<!-- temp keep /en-us, delete it later when omitting it ends up at right url --> |
+| Microsoft Edge | Yes | [Microsoft Edge Add-ons Developer](https://developer.microsoft.com/microsoft-edge/extensions) |
 
 > [!IMPORTANT]
 > Many of the tutorials of the sites use browser-specific APIs that might not match the browser for which you develop.  In most cases, a Chromium extension works as-is in different Chromium browsers and the APIs work as expected.  Some less-common APIs might be browser-specific.  Links to the tutorials are in the [See also](#see-also) section, below.
