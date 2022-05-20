@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 04/07/2021
+ms.date: 05/20/2021
 ---
 # Microsoft Edge Add-ons released features
 
@@ -15,6 +15,15 @@ This article describes features launched on [Partner Center](https://partner.mic
 > Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often.  Partner Center continues to evolve based on market changes and customer feedback. The features described in this article are also subject to change.
 
 For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
+
+
+
+<!-- ====================================================================== -->
+### Developers can respond to user reviews about their Microsoft Edge Add-on
+
+Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge Add-ons product page. 
+
+*Released May 2022*
 
 
 <!-- ====================================================================== -->
