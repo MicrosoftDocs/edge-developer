@@ -34,7 +34,7 @@ To turn experimental features on or off:
 
 Microsoft Edge sometimes uses origin trials to test features for specific domains or websites. You may want to use an origin trial for your website to apply a specific feature. If you're a website owner, you can enroll in an origin trial. An origin trial provides features to a percentage of Microsoft Edge users who visit your website.
 
-For more information about Origin Trials, see [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/en-us/microsoft-edge/origin-trials).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+For more information about Origin Trials, see [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).
 
 
 <!-- ====================================================================== -->

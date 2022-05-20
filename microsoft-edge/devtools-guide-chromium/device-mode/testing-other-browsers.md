@@ -110,7 +110,7 @@ When you are done, learn how to work with the simulator through [Apple Developer
 
 :::image type="content" source="../media/device-mode-modern-ie-vm.msft.png" alt-text="modern.IE VM." lightbox="../media/device-mode-modern-ie-vm.msft.png":::
 
-Microsoft Edge (EdgeHTML) Virtual Machines (VMs) enable you to access different versions of EdgeHTML and Internet Explorer on your computer through VirtualBox (or VMWare).  Select a [virtual machine on the download page](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->
+Microsoft Edge (EdgeHTML) Virtual Machines (VMs) enable you to access different versions of EdgeHTML and Internet Explorer on your computer through VirtualBox (or VMWare).  Select a [virtual machine on the download page](https://developer.microsoft.com/microsoft-edge/tools/vms).
 
 
 <!-- ====================================================================== -->

@@ -34,7 +34,7 @@ ms.date: 05/04/2021
 
 Microsoft Edge Dev is now supported on Ubuntu, Debian, Fedora, and openSUSE distributions.  Download and install the Microsoft Edge Dev `.deb` or `.rpm` package directly from the [Microsoft Edge Insider site](https://www.microsoftedgeinsider.com/download?platform=linux) or use the standard package management tools of your Linux distribution.
 
-If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge with Microsoft Edge WebDriver, see [Microsoft Edge WebDriver Downloads page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver#downloads).<!-- temp keep /en-us, delete it later when omitting it ends up at right url -->  For help with automating Microsoft Edge with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
+If you are using a Linux environment in your continuous integration and delivery (CI/CD) solutions, Microsoft Edge WebDriver is also available on Linux.  To get started automating Microsoft Edge with Microsoft Edge WebDriver, see [Recent versions](https://developer.microsoft.com/microsoft-edge/tools/webdriver#downloads) at the Microsoft Edge WebDriver page.  For help with automating Microsoft Edge with Microsoft Edge WebDriver, see [Use WebDriver for test automation](../../../../webdriver-chromium/index.md).
 
 ![DevTools in Microsoft Edge on Linux.](../../media/2020/11/edge-on-linux.msft.png)
 
