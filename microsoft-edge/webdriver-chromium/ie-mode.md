@@ -35,7 +35,7 @@ To configure IEDriver, Windows, and Microsoft Edge correctly, complete the requi
 
 The driver executable needs to be placed in the PATH; see [IE Driver Server](https://www.selenium.dev/documentation/ie_driver_server/).  The top of that page reads: "The standalone server executable must be downloaded from the Downloads page and placed in your PATH."
 
-If the driver location isn't included in the PATH, you must set the driver location at `webdriver.ie.driver` or some other way.
+If the driver location isn't included in the PATH, you must set the driver location using the Java system property `webdriver.ie.driver` or some other way.
 
 
 <!-- ====================================================================== -->
