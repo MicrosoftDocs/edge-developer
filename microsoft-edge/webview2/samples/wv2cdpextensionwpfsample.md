@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
 # WebView2 sample: Chrome DevTools Protocol extension in a WPF app
 
@@ -20,11 +20,11 @@ Directory &amp; .sln: **WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln**.
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#prerequisites)
 
-   * [README > Build the WebView2 WPF Browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample#build-the-webview2-wpf-browser)
+   * [README > Build the WebView2 WPF Browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#build-the-webview2-wpf-browser)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -32,7 +32,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2CDPExtensionWPFSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2CDPExtensionWPFSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2CDPExtensionWPFSample/WV2CDPExtensionWPFSample.sln`
 
 
 <!-- ====================================================================== -->
@@ -88,9 +88,9 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 8 - Build the project
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** dropdown list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WV2CDPExtensionWPFSample** project, and then select **Build**.
 
@@ -106,7 +106,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    ![The WV2CDPExtensionWPFSample sample app.](media/wv2cdpextensionwpfsample-app-running.png)
 
-1. Use the sample app; see [README file for WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2CDPExtensionWPFSample#readme).
+1. Use the sample app; see [README file for WV2CDPExtensionWPFSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2CDPExtensionWPFSample#readme).
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

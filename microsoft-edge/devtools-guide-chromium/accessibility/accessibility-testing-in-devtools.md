@@ -83,7 +83,7 @@ For detailed walkthrough steps, see [Verify that text colors have enough contras
 
 <!-- corresponding how-to article: narrow.md -->
 
-An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there isn't much space left.  When there isn't enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
+An important part of accessibility is to make sure that your website works well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there isn't much space left.  When there isn't enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
 
 By making the browser window narrow and using the arrow keys to scroll the page, you can see that the top navigation bar of the demo page has some accessibility issues.  The top navigation bar overlaps the **Search** form, as shown in the previous image, and that issue needs to be fixed.
 
@@ -317,7 +317,7 @@ For detailed walkthrough steps, see [Test keyboard support using the Source Orde
 <!-- ====================================================================== -->
 ## Testing contrast of text colors in various states
 
-The **Inspect** tool reports accessibility issues for one state at a time.  First, we'll describe the limitation of using the Inspect tool to view only the static state of a page element.  Then we'll explain how to inspect other states of a page element, by clicking **\:hov (Toggle Element State)** on the **Styles** tab.
+The **Inspect** tool reports accessibility issues for one state at a time.  First, we'll describe the limitation of using the Inspect tool to view only the static state of a page element.  Then we'll explain how to inspect other states of a page element, by clicking **\:hov (Toggle Element State)** on the **Styles** tab, to show the section of checkboxes labeled **Force element state**.
 
 ### Checking text color contrast in the default state
 
@@ -432,6 +432,6 @@ None of these tools can replace a proper round of testing your products with peo
 * Testing with voice recognition.
 * Testing in high-contrast mode.
 
-Another way to find out what to do to improve your web product is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them:
+Another way to find out what to do to improve your webpage is to use the [webhint extension for Visual Studio Code](https://aka.ms/webhint4code).  This extension flags the readily detectable accessibility problems in your source code and gives insights on how to fix them:
 
 ![Webhint in Visual Studio Code, showing an accessibility issue by underlining the HTML element and showing an explanation of the problem.](../media/a11y-testing-webhint-in-vs-code.msft.png)

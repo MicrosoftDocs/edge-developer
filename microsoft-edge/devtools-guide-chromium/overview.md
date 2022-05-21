@@ -24,7 +24,7 @@ With DevTools, you can do the following:
 
 *  Inspect, tweak, and change the styles of elements in the webpage using live tools with a visual interface.  Inspect where the browser stored content to construct the webpage, including `.html`, `.css`, `.js`, and `.png` file formats.
 
-*  Emulate how your web product behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
+*  Emulate how your website behaves on different devices and simulate a mobile environment, complete with different network conditions.  Inspect the network traffic and see the location of the problems.
 
 *  Debug your JavaScript using breakpoint debugging and with the live console.  Find memory problems and rendering issues with your web apps.
 
@@ -66,32 +66,6 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
 
 <!-- /keep sync'd -->
-
-
-<!-- ====================================================================== -->
-<!-- ## Clipboard; keep
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
-
-1. In DevTools, on the main toolbar, select the **__** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
-
-
-don't need, if have the above step:
-1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select **(toolname)**.
-
-1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button.
-
-
-### Clipboard entry for opening a specific Settings page:
-
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
-
-1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
-
-1. On the left side of the **Settings** panel, select the **__** page.
-
--->
 
 <!--
 hit counts:
@@ -182,9 +156,61 @@ You can dock DevTools in the right, left, or bottom of the browser, or undock it
 
 
 <!-- ====================================================================== -->
+## Zoom DevTools in or out
+
+The DevTools UI is implemented using HTML and CSS, like web pages, so you can zoom in and out by using the standard keyboard shortcuts.  The zoom levels for DevTools and the rendered page are independent.
+
+**To zoom the DevTools portion of the browser:**
+
+1. If focus isn't already on DevTools, click somewhere in DevTools.
+1. Press `Ctrl`+`+` or `Ctrl`+`-` (Windows or Linux).  Or, press `Command`+`+` or `Command`+`-` (macOS).
+
+![DevTools zoomed out.](overview-images/zoom-devtools.png)
+
+<!-- ![DevTools zoomed in.](overview-images/zoom-rendered-page.png) -->
+
+To zoom the rendered page, click the page, and then use the same keyboard shortcuts as above.
+
+**To restore zoom to 100%:**
+
+1. Make sure focus is on the desired part of the browser, either DevTools or the rendered page.
+1. Press `Ctrl`+`0` (Windows or Linux) or `Command`+`0` (macOS).
+
+**To zoom DevTools Settings:**
+
+1. In DevTools **Settings**, click **Close** (**x**) in the upper right.
+1. Change the zoom level of DevTools, as described above.
+1. Click the **Settings** (![Settings icon.](media/settings-gear-icon-light-theme.png)) button.
+
+**To zoom DevTools by using the Command Menu:**
+
+1. Click the **Customize and control DevTools** (![Customize icon.](media/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**.
+1. In the **Command Menu**, start typing **zoom**, and then select a zoom command:
+   *  **Reset zoom level**
+   *  **Zoom in**
+   *  **Zoom out**
+
+
+<!-- ====================================================================== -->
+## Display DevTools Tooltips
+
+The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
+
+*  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
+*  Press `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  [Open the Command Menu](command-menu/index.md#open-the-command-menu) and then type `tooltips`.
+
+Then hover over each outlined region of DevTools:
+
+![DevTools Tooltips.](overview-images/tooltips.png)
+
+To turn off Tooltips, press `Esc`.  
+
+
+<!-- ====================================================================== -->
 ## Features of the main toolbar
 
-DevTools gives you an amazing amount of power to inspect, debug, and change the web product currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
+DevTools gives you an amazing amount of power to inspect, debug, and change the website currently displayed in the browser.  Most of the tools display the changes live.  Live updates make the tools incredibly useful to refine the appearance and navigation or functionality of a web project without the need to refresh or build it.
 
 
 ### Tabbed tool panels containing tabs and pages
@@ -249,7 +275,7 @@ When you click the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-ic
 
 ### Device Emulation
 
-Click the **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button to display the current web product in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
+Click the **Device Emulation** (![Device Emulation icon.](media/device-emulation-icon-light-theme.png)) button to display the current website in an emulated device mode.  The **Device Emulation** tool allows you to run and test how your product reacts when you resize the browser.  It also gives you an estimation of the layout and behavior on a mobile device.
 
 ![DevTools display of this article in an emulated mobile phone.](media/devtools-intro-device-emulation.msft.png)
 
@@ -438,7 +464,7 @@ In addition to Panel tools and Drawer tools, DevTools includes the following too
 <!-- ====================================================================== -->
 ## Power tip: Use the Command Menu
 
-DevTools provides lots of features and functionality to use with your web product.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
+DevTools provides lots of features and functionality to use with your website.  You can access the different parts of DevTools in many ways, but often a fast way is to use the Command Menu.
 
 ![the Command Menu in DevTools.](media/devtools-intro-command-menu.msft.png)
 
@@ -518,7 +544,33 @@ To preview the [latest features coming to DevTools](whats-new/2021/02/devtools.m
 
 
 <!-- ====================================================================== -->
-<!-- clipboard, keep:
+<!-- ## Clipboard: How to open DevTools and any specific tool tab
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **__** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+
+don't need, if have the above step:
+1. In DevTools, on the main toolbar, click the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button, and then select **(toolname)**.
+
+1. To the right of the **Styles** tab, click the **Accessibility** tab.  If the **Accessibility** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button.
+
+
+### Clipboard entry for opening a specific Settings page:
+
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+
+1. On the left side of the **Settings** panel, select the **__** page.
+-->
+
+
+<!-- ====================================================================== -->
+<!-- ## Clipboard: Mid-sentence icons
+
 icon tagging to maintain here & propagate:
 to paste these into articles, always need to add ../ prefix:
 click the **Inspect tool** (![Inspect tool icon.](media/inspect-tool-icon-light-theme.png)) button.

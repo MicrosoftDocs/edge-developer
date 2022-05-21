@@ -30,16 +30,16 @@ If you are building a UI that changes depending on where the user is located, yo
 
 1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-   :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="Screenshot of the Command Menu.":::
+   ![The Command Menu.](../media/device-mode-console-command-menu.msft.png)
 
 1. Type `sensors`, select **Panel: Show Sensors**, and then press `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
 
-1. Click the **Geolocation** list, and then:
+1. Click the **Location** dropdown list, and then:
    *  Select a city, such as `Tokyo`.
    *  Click **Other** to enter custom longitude and latitude coordinates.
    *  Click **Location unavailable** to see how your site behaves when the user's location isn't available.
 
-   :::image type="content" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Screenshot of selecting Tokyo from the Geolocation list.":::
+   ![Selecting Tokyo from the Location list.](../media/device-mode-console-sensors-geolocation-tokyo.msft.png)
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 

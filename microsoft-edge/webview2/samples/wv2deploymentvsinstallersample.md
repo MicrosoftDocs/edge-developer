@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
 # WebView2 sample: WebView2 Deployment Visual Studio installer
 
@@ -20,11 +20,11 @@ Directory: **WV2DeploymentVSInstallerSample** (no .sln)
 
 The steps on the present page are general-purpose.  See the sample-specific steps in the README sections, which may override the present page.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample#prerequisites)
 
-   * [README > Build steps](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#build-steps)
+   * [README > Build steps](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample#build-steps)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -32,7 +32,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentVSInstallerSample/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentVSInstallerSample/README.md`
 
 
 <!-- ====================================================================== -->
@@ -64,7 +64,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln` -->
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WV2DeploymentVSInstallerSample/WV2DeploymentVSInstallerSample.sln` -->
 
 
 <!-- ====================================================================== -->
@@ -90,7 +90,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
    <!-- The sample app window opens. -->
 
 
-<!-- 1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme). -->
+<!-- 1. In the sample app window, use the sample app.  In the Visual Studio code editor, inspect the code; see [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample#readme). -->
 
 <!-- 1. Close the sample app window. -->
 
@@ -98,4 +98,4 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## See also
 
-* [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WV2DeploymentVSInstallerSample#readme)
+* [README file for WV2DeploymentVSInstallerSample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WV2DeploymentVSInstallerSample#readme)

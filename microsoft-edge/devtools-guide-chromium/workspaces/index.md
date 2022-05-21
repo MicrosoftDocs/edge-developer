@@ -87,7 +87,7 @@ We'll set up the demo and then set up DevTools.
    python -m http.server # Python 3
    ```
 
-1. Open a tab in Microsoft Edge and navigate to the locally-hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
+1. Open a tab in Microsoft Edge and navigate to the locally hosted version of the site.  You should be able to access it using a URL like `localhost:8080` or `http://0.0.0.0:8080`.  The exact [port number](https://en.wikipedia.org/wiki/Port_(computer_networking)#Use_in_URLs) might be different.
 
    :::image type="content" source="../media/workspaces-workspaces-demo.msft.png" alt-text="The demo." lightbox="../media/workspaces-workspaces-demo.msft.png":::
 

@@ -13,7 +13,7 @@ ms.date: 11/12/2021
 
 The Microsoft Edge WebView2 control allows you to embed web technologies (HTML, CSS, and JavaScript) in your native apps.  The WebView2 control uses [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine to display the web content in native apps.
 
-With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView instance.
+With WebView2, you can embed web code in different parts of your native app, or build all of the native app within a single WebView2 instance.
 
 ![Diagram of an app with native UI areas in the left and top left, and WebView2 UI areas in the top right and bottom.](media/webview2/what-webview.png)
 
@@ -105,5 +105,5 @@ WebView2 apps can run on the following versions of Windows:
 * [Best practices for developing secure WebView2 apps](concepts/security.md)
 * [Manage user data folders](concepts/user-data-folder.md)
 * [How to Debug with WebView2](how-to/debug.md)
-* [Automating and testing WebView2 with Microsoft Edge Driver](how-to/webdriver.md)
+* [Automating and testing WebView2 with Microsoft Edge WebDriver](how-to/webdriver.md)
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples) - Samples that demonstrate WebView2 SDK features and API usage patterns, including recently added WebView2 features.

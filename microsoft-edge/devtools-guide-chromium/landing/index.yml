@@ -102,7 +102,7 @@ landingContent:
         links:
           - text: Find and fix problems using the Issues tool
             url: /microsoft-edge/devtools-guide-chromium/issues/index
-          - text: Navigate z-index, DOM, and layers using the 3D View tool
+          - text: Navigate webpage layers, z-index, and DOM using the 3D View tool
             url: /microsoft-edge/devtools-guide-chromium/3d-view/index
           - text: Inspect animations
             url: /microsoft-edge/devtools-guide-chromium/inspect-styles/animations

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
 # WebView2 sample: Win32 C++ app with Visual Composition
 
@@ -27,11 +27,11 @@ The steps on the present page are general-purpose.  See the sample-specific step
 <!-- ====================================================================== -->
 ## Step 1 - View the Readme
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#prerequisites)
 
-   * [README > Build the WebView2 Sample WinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#build-the-webview2-sample-wincomp)
+   * [README > Build the WebView2 Sample WinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#build-the-webview2-sample-wincomp)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -39,7 +39,7 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/README.md`
 
 
 <!-- ====================================================================== -->
@@ -71,7 +71,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
    A **Review Solution Actions** dialog box might appear:
 
@@ -116,9 +116,9 @@ _To zoom, right-click > **Open image in new tab**._
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **x86**, **x64**, or **ARM64**.
+1. In the **Solution Platforms** dropdown list, select **x86**, **x64**, or **ARM64**.
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
 
@@ -227,7 +227,7 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
    <!-- ![The WebView2SampleWinComp app window.](media/WebView2SampleWinComp-app-window.png) -->
    <!-- todo: create png -->
 
-1. Use the sample app; see [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2SampleWinComp#readme).
+1. Use the sample app; see [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#readme).
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 

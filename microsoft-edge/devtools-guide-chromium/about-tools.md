@@ -35,9 +35,9 @@ Microsoft Edge DevTools includes the following tools.
 
 | Tool | Purpose | Article |
 | --- | --- | --- |
-| **3D View** tool | Explore the web page translated into a 3D perspective.  Debug your webpage by navigating through the DOM or z-index stacking context. | [Navigate z-index, DOM, and layers using the 3D View tool](3d-view/index.md) |
+| **3D View** tool | Explore the web page translated into a 3D perspective.  Debug your webpage by navigating through the DOM or z-index stacking context. | [Navigate webpage layers, z-index, and DOM using the 3D View tool](3d-view/index.md) |
 | **Animations** tool | Inspect and modify CSS animation effects by using the **Animation Inspector** in the **Animations** tool. | [Inspect and modify CSS animation effects](inspect-styles/animations.md) |
-| **Application** tool | _HTTP cookies_ are used to manage user sessions, store user personalization preferences, and track user behavior.  Use the **Cookies** pane of the **Application** tool to view, edit, and delete the HTTP cookies for a webpage. | [View, edit, and delete cookies](storage/cookies.md) |
+| **Application** tool | Use the **Application** tool to manage storage for web app pages, including manifest, service workers, local storage, cookies, cache storage, and background services. | [The Application tool, to manage storage](storage/application-tool.md) |
 | **Changes** tool | Tracks any changes you've made to CSS or JavaScript in DevTools.  Shows you what changes to make to your actual source files after you use DevTools to modify your webpage files sent from the server. | [Track changes to files using the Changes tool](changes/changes-tool.md) |
 | **Console** tool | An intelligent, rich command line within DevTools.  A great companion tool to use with others tools.  Provides a powerful way to script functionality, inspect the current webpage, and manipulate the current webpage using JavaScript. | [Console overview](console/index.md) |
 | **Coverage** tool | Help you find unused JavaScript and CSS code, to speed up your page load and save your mobile users cellular data. | [Find unused JavaScript and CSS code with the Coverage tool](coverage/index.md) |
@@ -61,7 +61,7 @@ Microsoft Edge DevTools includes the following tools.
 | **Performance** tool | Analyze runtime performance, which is how your page performs when it's running, as opposed to loading. | [Get started analyzing runtime performance](evaluate-performance/index.md) |
 | **Performance monitor** tool | Provides a real-time view of the runtime performance of a webpage, to determine where performance problems come from, making a website run slowly.  Finds whether problems are from high memory or CPU usage, too-frequent layout and style calculations, or too many DOM nodes and event listeners. | [Measure runtime performance of a page using the Performance monitor tool](performance-monitor/performance-monitor-tool.md) |
 | **Quick source** tool | Use the **Quick source** tool to display or edit source files when using a tool other than the **Sources** tool. | [Display or edit source files using the Quick source tool](quick-source/quick-source-tool.md) |
-| **Rendering** tool | Use the **Rendering** tool to see what your webpage looks like with different display options or vision deficiencies. | [Emulate dark or light schemes in the rendered page](accessibility/preferred-color-scheme-simulation.md) |
+| **Rendering** tool | Use the **Rendering** tool to see what your webpage looks like with different display options or vision deficiencies. | [Rendering tool, to see what a webpage looks like with different display options or vision deficiencies](rendering-tools/rendering-tool.md) |
 | **Search** tool | Use the **Search** tool to find specific source files for a webpage, including HTML, CSS, JavaScript, and image files. | [Find source files for a page using the Search tool](search/search-tool.md) |
 | **Security** tool | Inspects the security of a page. | [Understand security issues using the Security tool](security/index.md) |
 | **Sensors** tool | Simulates different device orientations. | [Simulate device orientation with the Sensors tool](device-mode/orientation.md) |
@@ -70,6 +70,11 @@ Microsoft Edge DevTools includes the following tools.
 | **WebAudio** tool | Use the **WebAudio** tool to monitor WebAudio traffic.  The **WebAudio** tool uses the WebAudio API. | [WebAudio tool](webaudio/webaudio-tool.md) |
 | **WebAuthn** tool | Use the **WebAuthn** tool to create and interact with software-based virtual authenticators. | [Emulate authenticators and debug WebAuthn](webauthn/index.md) |
 | **Welcome** tool | The **Welcome** tool opens when you first open DevTools.  It displays links to developer docs, latest features, Release Notes, and an option to contact the Microsoft Edge DevTools team. | [Welcome tool](welcome/welcome-tool.md) |
+
+<!-- when no longer experimental, move into table:
+| **CSP Violations** tool | Displays any Content Security Policy (CSP) violations that are detected on the inspected webpage. | [CSP Violations tool](csp-violations/csp-violations-tool.md) |
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/experimental-features/#show-csp-violations-view
+-->
 
 
 <!-- ====================================================================== -->
@@ -133,4 +138,4 @@ To restore all of the default tabs on the main toolbar:
 ## See also
  
 * [Overview of DevTools](overview.md) - Similar to the present article, but broader coverage, with a top-level introduction of DevTools.
-* [Focus Mode](experimental-features/index.md#focus-mode), in _Experimental features_.  In **Focus Mode**, the **Activity Bar** is a compact replacement for the main toolbar, and the **Quick View** list is a replacement for the tabs on the Drawer toolbar.
+* [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md), in _Experimental features_.  In **Focus Mode**, the **Activity Bar** is a compact replacement for the main toolbar, and the **Quick View** list is a replacement for the tabs on the Drawer toolbar.

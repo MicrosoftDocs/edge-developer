@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
+ms.date: 04/27/2022
 ---
 # Get started with WebView2 in WinForms apps
 
@@ -23,11 +23,11 @@ This article covers how to set up your development tools and create an initial W
 
 Do either of the following:
 
-*  Create a new project in Visual Studio, using the steps below.  If you want to see the completed project, you can see the [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) directory in the `WebView2Samples` repo.
+*  Create a new project in Visual Studio, using the steps below.  If you want to see the completed project, you can see the [WinForms_GettingStarted](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) directory in the `WebView2Samples` repo.
 
 *  Download or clone the `WebView2Samples` repo, open the completed project in Visual Studio, and follow the steps in this article to understand creating the WinForms project and understand the added WebView2 code.
 
-The corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) (no readme file).
+The corresponding Get Started sample at GitHub: [WinForms_GettingStarted/WinForms_GettingStarted.sln](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) (no readme file).
 
 
 <!-- ====================================================================== -->
@@ -55,7 +55,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 4 - Install the WebView2 Runtime (optional)
 
-1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
+1. Optionally, install the WebView2 Runtime.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
    If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
   
@@ -97,7 +97,7 @@ Start with a basic desktop project that contains a single main window.
 
    ![In the 'Create a new project' panel, select 'C# > Windows Forms App (.NET Framework)'.](media/winforms-new-project.png)
 
-1. In the **Project name** text box, enter a project name.  This tutorial article uses the name **WinForms_GettingStarted**, like the [repo's directory name](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinForms_GettingStarted) for the completed project.
+1. In the **Project name** text box, enter a project name.  This tutorial article uses the name **WinForms_GettingStarted**, like the [repo's directory name](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinForms_GettingStarted) for the completed project.
 
 1. In the **Location** text box, enter a path, such as "C:\Users\username\Documents\MyWebView2Projects\".
 
@@ -173,11 +173,11 @@ Use NuGet to add the WebView2 SDK to the project, as follows:
 
 1. Close the **Form1** window.
 
-You've added the WebView2 SDK to the project, but haven't added any WebView code to the project yet.
+You've added the WebView2 SDK to the project, but haven't added any WebView2 code to the project yet.
 
 
 <!-- ====================================================================== -->
-## Step 7 - Create a single WebView
+## Step 7 - Create a single WebView2 control
 
 Now that the WebView2 SDK is installed for the WinForms project, add a WebView2 control to the app, as follows:
 
@@ -199,7 +199,7 @@ The starter project has a `Form1.cs` form already, but we'll add another, as `Fo
 
 1. Select **View** > **Toolbox**.
 
-   Here's where you add WebView-specific content to the app:
+   Here's where you add WebView2-specific content to the app:
 
 1. In the **Toolbox**, click **WebView2 Windows Forms Control** to expand the options.
 
@@ -266,9 +266,9 @@ Add more controls to your Windows Forms form from the toolbox, and then process 
 1. In the **Properties** panel, in the bolded **Appearance** section (about 15 properties down), change the **Text** property (probably from **button1**) to **Go!**
 
 
-   **Align the text box and button, as follows:**
+   **Align the text box and the existing button, as follows:**
 
-1. Arrange the text box to the left of the button, aligned next to the text box, as shown below:
+1. Position the text box on the left side of the form, vertically aligned with the button, as shown below:
 
    ![WinForms designer.](media/winforms-designer.png)
 
@@ -575,7 +575,7 @@ In your project, when the WebView2 control navigates to a URL, it displays the U
 
    ![The application displays the URL in the address bar.](media/winforms-final-app.png)
 
-   * When the app starts, the default URL is `https://www.microsoft.com`, and the resulting displayed address shows the locale, such as `https://www.microsoft.com/en-us/`.
+   * When the app starts, the default URL is `https://www.microsoft.com`, and the resulting displayed address shows the locale, such as `https://www.microsoft.com/en-us/`.<!--keep /en-us here-->
 
    * If you enter `https://www.bing.com`, the resulting address is a variant, such as `https://www4.bing.com/?form=DCDN`.
 
@@ -585,6 +585,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:

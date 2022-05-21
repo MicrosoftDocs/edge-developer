@@ -201,6 +201,10 @@ The response value from `navigator.userAgent` method uses the following format:
 
 Platform identifiers change based on the operating system, and version numbers increment over time. The format is the same as the Chromium user agent with the addition of a new `Edg` token at the end. Microsoft chose the `Edg` token to avoid compatibility issues caused by `Edge` string, which was previously used for the legacy Microsoft Edge browser based on EdgeHTML. The `Edg` token is also consistent with [existing tokens](https://blogs.windows.com/msedgedev/2017/10/05/microsoft-edge-ios-android-developer) used for iOS and Android.
 
+### Microsoft Edge version increment change
+
+Microsoft Edge's major version number will soon be incrementing from two digits, such as `Edg/99`, to three digits as in `Edg/100`. Site owners should make sure their User-Agent parsing logic is robust and works as expected.
+
 
 <!-- ====================================================================== -->
 ## Identifiers for Microsoft Edge on various platforms
@@ -213,6 +217,7 @@ On desktop operating systems, Microsoft Edge is commonly identified by the `Edg`
 | iPhone/iPad | `EdgiOS` |
 | Android (Mobile/tablet) | `EdgA`|
 
+Microsoft Edge Legacy is no longer supported. See the [Microsoft Edge Legacy](#microsoft-edge-legacy) section for details.
 
 <!-- ====================================================================== -->
 ## Map the User-Agent string to an expanded browser name
@@ -250,3 +255,25 @@ To turn off user agent overrides in the Microsoft Edge Beta or Stable channels:
     ```shell
     {path/to/microsoft/edge.ext} --disable-domain-action-user-agent-override
     ```
+
+
+<!-- ====================================================================== -->
+## Microsoft Edge Legacy
+
+Legacy browser considerations:
+
+*  The Microsoft Edge Legacy browser is no longer supported. See the blog post [New Microsoft Edge to replace Microsoft Edge Legacy](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-microsoft-edge-to-replace-microsoft-edge-legacy-with-april-s/ba-p/2114224).
+
+*  Microsoft Edge Legacy was only available on Windows 10.
+
+*  Of all the User-Agent mechanisms described in this article, the only supported browser-specific mechanism for Microsoft Edge Legacy is User-Agent string.
+
+*  The User-Agent string for Microsoft Edge Legacy includes the `Edge` token.
+
+    A fully formed example of a Microsoft Edge Legacy User-Agent string: `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582`
+
+
+<!-- ====================================================================== -->
+## See also
+
+[Detect Windows 11 using User-Agent Client Hints](/microsoft-edge/web-platform/how-to-detect-win11)

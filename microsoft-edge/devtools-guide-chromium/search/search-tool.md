@@ -74,7 +74,7 @@ To only find results that match a particular case (lowercase or uppercase charac
 <!-- ====================================================================== -->
 ## Search for regular expressions
 
-You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
+You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
 
 :::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="Searching for a regular expression.":::
 

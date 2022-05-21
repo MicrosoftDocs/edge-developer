@@ -78,11 +78,17 @@ To close a tool, select the **Close** (![Close Tool.](../media/close-tab-icon.pn
 
 
 <!-- ====================================================================== -->
-## Change DevTools placement
+## Change where DevTools is docked in the browser
 
 See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
 
 :::image type="content" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools." lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+
+
+<!-- ====================================================================== -->
+## Zoom DevTools in or out
+
+See [Zoom DevTools in or out](../overview.md#zoom-devtools-in-or-out) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->

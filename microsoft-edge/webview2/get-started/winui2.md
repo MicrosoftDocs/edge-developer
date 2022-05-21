@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
+ms.date: 04/27/2022
 ---
 # Get started with WebView2 in WinUI 2 (UWP) apps (public preview)
 
@@ -17,7 +17,7 @@ In this tutorial, you:
 *  Learn about WebView2 concepts along the way.
 
 
-* Corresponding Get Started sample at GitHub: none; WinUI 3: [Getting Started with WebView2 in WinUI3 (WinUI_Sample/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
+* Corresponding Get Started sample at GitHub: none; WinUI 3: [Getting Started with WebView2 in WinUI3 (WinUI_Sample/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
 
 
 The **Microsoft.UI.Xaml** (WinUI 2) package is part of the Windows UI Library.  This package provides Windows UI features, including:
@@ -148,9 +148,9 @@ Visual Studio 2019 version 16.9 or later is required, for this tutorial.  Visual
 
    Visual Studio displays the newly created solution and project:
 
-   ![Visual Studio, containing the newly created UWP project.](media/winui2-vs-after-new-project-created.png)
+   ![Visual Studio, containing the newly created WinUI 2 (UWP) project.](media/winui2-vs-after-new-project-created.png)
 
-Next, you set up this new UWP project to do WinUI 2 and WebView2 development.
+Next, you set up this new WinUI 2 (UWP) project to host the WebView2 control and use the WebView2 API.
 
 
 <!-- maintenance link; keep: main copy:
@@ -306,7 +306,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## Status of WebView2 functionality on WinUI 2 (UWP)
 
-The WebView2 WinUI 2 control is in development.  The following features haven't been implemented, or have issues:
+The WebView2 WinUI 2 (UWP) control is in development.  The following features haven't been implemented, or have issues:
 
 *  Download UI.
    *  Although the Download UI feature currently doesn't work, this feature might show up automatically in your app's UI after the issue is fixed.  To maintain compatibility, you should manually disable the Download UI feature by intercepting the [download starting event](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2downloadstartingeventargs).
@@ -327,7 +327,7 @@ Package summary:
 ## See also
 
 Local pages:
-* [WebView2 sample: UWP WinUI 2 browser app](../samples/webview2_sample_uwp.md)
+* [WebView2 sample: WinUI 2 (UWP) browser app](../samples/webview2_sample_uwp.md)
 * [Manage user data folders](../concepts/user-data-folder.md)
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
 * [Development best practices for WebView2 apps](../concepts/developer-guide.md)
@@ -335,11 +335,10 @@ Local pages:
 
 GitHub:
 * [WebView2Samples repo](https://github.com/MicrosoftEdge/WebView2Samples)
-* [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
+* [WebView2 UWP Sample App](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/webview2_sample_uwp) - a comprehensive example of WebView2 capabilities.
 * [Issues - microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
 
-API Reference:
-* WinRT API Reference for WinUI 2/UWP
+WinRT API Reference for WinUI 2 (UWP):
 * [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
 * [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
 * [WebView2 API Reference](../webview2-api-reference.md) - each platform's API Reference

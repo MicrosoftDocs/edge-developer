@@ -5,16 +5,15 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 02/14/2022
+ms.date: 05/10/2022
 ---
 # What's new in Microsoft Edge DevTools
 
 Check these articles for the latest What's New announcements, features, fixes, and updates about experimental features in Microsoft Edge DevTools.
 
-**Experimental features:**
-* [Experimental features](../experimental-features/index.md)
-
-**What's new:**
+* [What's New in DevTools (Microsoft Edge 101)](2022/04/devtools-101.md)
+* [What's New in DevTools (Microsoft Edge 100)](2022/03/devtools-100.md)
+* [What's New in DevTools (Microsoft Edge 99)](2022/03/devtools.md)
 * [What's New in DevTools (Microsoft Edge 98)](2022/02/devtools.md)
 * [What's New in DevTools (Microsoft Edge 97)](2022/01/devtools.md)
 * [What's New in DevTools (Microsoft Edge 96)](2021/11/devtools.md)

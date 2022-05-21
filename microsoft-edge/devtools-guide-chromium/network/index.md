@@ -145,6 +145,8 @@ On repeat visits, the browser usually serves some files from the [cache](https:/
 
 The **Empty cache and hard refresh** workflow is only available when DevTools is open.
 
+See also [Emulate slow network connections](../network/reference.md#emulate-slow-network-connections) in _Network features reference_.
+
 
 <!-- ====================================================================== -->
 ## Capture screenshots

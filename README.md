@@ -26,7 +26,8 @@ This repo, `edge-developer`, is the repository for the source Markdown files for
 
 If you want to include new coverage or have feedback, consider [contributing](CONTRIBUTING.md).  You can edit the existing content, add new content, or report new [issues](https://github.com/MicrosoftDocs/edge-developer/issues).  The Microsoft Edge team reviews a look at your suggestions and works to incorporate the suggestions into the docs.
 
-Find the data for the [Status](https://developer.microsoft.com/microsoft-edge/status) webpage at: [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status).  The `Status` webpage provides the latest implementation status and future plans for web platform features in Microsoft Edge.
+For the latest implementation status and future plans for web platform features in Microsoft Edge, see [Microsoft Edge Platform Status](https://developer.microsoft.com/microsoft-edge/status). For the data that's used to populate the above status site, see [https://github.com/MicrosoftEdge/Status](https://github.com/MicrosoftEdge/Status).
+
 
 ### File names and directories
 
@@ -60,12 +61,12 @@ These other text elements have styling available:
 1. Use regular western-style numbering.
 1. Should be used only when a list truly has order.
 
-See [Lists (Numbered, Bulleted, Checklist)](https://docs.microsoft.com/en-us/contribute/markdown-reference#lists-numbered-bulleted-checklist) in the _Docs Contributor Guide_.
+See [Lists (Numbered, Bulleted, Checklist)](https://docs.microsoft.com/contribute/markdown-reference#lists-numbered-bulleted-checklist) in the _Docs Contributor Guide_.
 
 
 ### Links
 
-See [Use links in documentation](https://docs.microsoft.com/en-us/contribute/how-to-write-links) in the _Docs Contributor Guide_.
+See [Use links in documentation](https://docs.microsoft.com/contribute/how-to-write-links) in the _Docs Contributor Guide_.
 
 
 ### Formatting code blocks
@@ -94,7 +95,7 @@ Valid coding languages, used for syntax coloring, include the following, and mor
 
 For example, type three backticks and then the "css" slug.
 
-See [How to include code in docs](https://docs.microsoft.com/en-us/contribute/code-in-docs) in the _Docs Contributor Guide_.
+See [How to include code in docs](https://docs.microsoft.com/contribute/code-in-docs) in the _Docs Contributor Guide_.
 
 
 ### Tables
@@ -104,7 +105,7 @@ See [How to include code in docs](https://docs.microsoft.com/en-us/contribute/co
 | Left-aligned | Unless a # | 456 |
 | Text value | More text | $0.00 |
 
-See [Tables](https://docs.microsoft.com/en-us/contribute/markdown-reference#tables) in the _Docs Contributor Guide_.
+See [Tables](https://docs.microsoft.com/contribute/markdown-reference#tables) in the _Docs Contributor Guide_.
 
 
 ### Notes (alerts)
@@ -150,7 +151,7 @@ For multi-line blockquote notes, use a greater-than (`>`) character in front of 
 > This is another line in a blockquote.
 ```
 
-See [Alerts (Note, Tip, Important, Caution, Warning)](https://docs.microsoft.com/en-us/contribute/markdown-reference#alerts-note-tip-important-caution-warning) in the _Docs Contributor Guide_.
+See [Alerts (Note, Tip, Important, Caution, Warning)](https://docs.microsoft.com/contribute/markdown-reference#alerts-note-tip-important-caution-warning) in the _Docs Contributor Guide_.
 
 
 ### Images
@@ -161,7 +162,7 @@ Images should be stored in a `media` directory.  Reference the image with a rela
 :::image type="content" source="./media/notes.png" alt-text="Describe what's shown in the image." lightbox="./media/notes.png":::
 ```
 
-See [Images](https://docs.microsoft.com/en-us/contribute/markdown-reference#images) in the _Docs Contributor Guide_.
+See [Images](https://docs.microsoft.com/contribute/markdown-reference#images) in the _Docs Contributor Guide_.
 
 
 ---

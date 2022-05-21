@@ -51,7 +51,7 @@ function shareSomeContent(title, text, url) {
 }
 ```
 
-In the above code, we first check whether the browser supports Web sharing, by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
+In the above code, we first check whether the browser supports Web sharing, by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
 
 Because a Promise is used here, the above code can be rewritten as an `async` function, as follows:
 

@@ -6,14 +6,14 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
+ms.date: 04/27/2022
 ---
 # Get started with WebView2 in WinUI 3 (Windows App SDK) apps
 
 This article covers how to set up your development tools and create an initial WebView2 app for WinUI 3 (Windows App SDK), and learn about WebView2 concepts along the way.
 
 
-* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WinUI3 (WinUI3_GettingStarted/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/blob/master/GettingStartedGuides/WinUI3_GettingStarted/README.md)
+* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WinUI3 (WinUI3_GettingStarted/WinUI_Sample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/GettingStartedGuides/WinUI3_GettingStarted/README.md)
 
 
 <!-- ====================================================================== -->
@@ -22,7 +22,7 @@ This article covers how to set up your development tools and create an initial W
 Even if you have Visual Studio installed, read the following page and possibly update your software.
 
 1. In a new window or tab, open the page [Install tools for the Windows App SDK](/windows/apps/windows-app-sdk/set-up-your-development-environment) and then follow the steps on that page, to install Microsoft Visual Studio, such as Visual Studio 2022.
-<!-- clickable: https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment -->
+<!-- clickable: https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment -->
 
 1. If needed, in a new window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.
 
@@ -325,7 +325,7 @@ In this section, you add code to import the WebView2 Core library.
 
 ### WinRT CoreWebView2 object availability
 
-The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) lists which of the APIs are available for WebView2.
+The WinRT `CoreWebView2` object might not be available with the release of the WebView2 API.  The [WebView2 Spec](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 --> lists which of the APIs are available for WebView2.
 
 
 <!-- ====================================================================== -->
@@ -373,6 +373,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:
@@ -383,8 +384,8 @@ Local pages:
 * [Development best practices for WebView2 appsDevelopment best practices](../concepts/developer-guide.md)
 
 GitHub:
-* [Getting Started with WebView2 in WinUI3](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WinUI3_GettingStarted#readme)
-* [Spec: The WebView2 Xaml control](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - the WinUI 3.0 version of the WebView control.
+* [Getting Started with WebView2 in WinUI3](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WinUI3_GettingStarted#readme)
+* [Spec: The WebView2 Xaml control](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md) - the WinUI 3.0 version of the WebView2 control.
 * [microsoft-ui-xaml repo > Issues](https://github.com/microsoft/microsoft-ui-xaml/issues) - to enter WinUI-specific feature requests or bugs.
 
 <!--

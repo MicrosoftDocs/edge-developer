@@ -9,7 +9,7 @@ ms.date: 10/19/2021
 ---
 # Verify that the webpage layout is usable when narrow
 
-An important part of accessibility is to make sure that your web products work well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there isn't much space left.
+An important part of accessibility is to make sure that your website works well on a narrow viewport. Many users need to zoom the page to be able to use it, and this means that there isn't much space left.
 
 When there isn't enough space, your multi-column layout should turn into a single-column layout, with content placed in an understandable order. This means placing the most important content at the top of the page, and placing additional content further down the page.
 

@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 11/05/2021
+ms.date: 04/27/2022
 ---
 # Get started with WebView2 in WPF apps
 
 This article covers how to set up your development tools and create an initial WebView2 app for Windows Presentation Foundation (WPF), and learn about WebView2 concepts along the way.
 
-* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WPF (WPF_GettingStarted/WPFSample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/GettingStartedGuides/WPF_GettingStarted#readme)
+* Corresponding Get Started sample at GitHub: [Getting Started with WebView2 in WPF (WPF_GettingStarted/WPFSample.sln)](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/GettingStartedGuides/WPF_GettingStarted#readme)
 
 
 <!-- ====================================================================== -->
@@ -33,8 +33,6 @@ This tutorial requires Microsoft Visual Studio, not Microsoft Visual Studio Code
    *  Windows 11
 
    We recommend using the Canary channel of Microsoft Edge.  The minimum required version is 82.0.488.0.
-
-<!-- Or, download the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/#download-section), or  -->
 
 
 <!-- ====================================================================== -->
@@ -120,7 +118,7 @@ Use NuGet to add the WebView2 SDK to the project.
 
 
 <!-- ====================================================================== -->
-## Step 5 - Create a single WebView
+## Step 5 - Create a single WebView2 control
 
 Add a WebView2 control to your app.
 
@@ -175,7 +173,7 @@ Add a WebView2 control to your app.
 
 Enable users to change the URL that the WebView2 control displays, by adding an address bar to the app.
 
-1. In the `MainWindow.xaml` file, add an address bar by copying and pasting the following code inside the `<DockPanel>` that contains the WebView.  Keep the existing code below the new snippet.
+1. In the `MainWindow.xaml` file, add an address bar by copying and pasting the following code inside the `<DockPanel>` that contains the WebView2 control.  Keep the existing code below the new snippet.
 
    ```xml
    <DockPanel DockPanel.Dock="Top">
@@ -455,6 +453,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:

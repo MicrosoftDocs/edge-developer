@@ -54,7 +54,10 @@ In the **Styles** pane, click the link next to a CSS rule to open the external s
 
 If the stylesheet is minified, click the **Format** (![Format.](../media/format-icon.msft.png)) button, at the bottom of the **Editor** pane.  For more information, see [Reformat a minified JavaScript file with pretty-print](../javascript/reference.md#reformat-a-minified-javascript-file-with-pretty-print).
 
-In the following figure, after you click `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2` you are taken to line 2 of `https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.
+<!-- todo: delete /en-us ? 2x -->
+In the following figure, after you click
+`https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css:2`<!-- :2 at end causes not to work. --> you are taken to line 2 of
+`https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/styles/b66bc881.site-ltr.css`, where the `.content h1:first-of-type` CSS rule is defined.<!-- master kind of works but all lines are concated.  changing master to main doesn't work -->
 
 :::image type="content" source="../media/css-elements-styles-h1-highlight.msft.png" alt-text="Viewing the stylesheet where a rule is defined." lightbox="../media/css-elements-styles-h1-highlight.msft.png":::
 
@@ -74,7 +77,7 @@ The **Styles** panel shows you all of the rules that apply to an element, includ
 
 1. To display all inherited values, select the **Show All** checkbox.
 
-   In the following figure, the **Computed** panel shows the CSS properties being applied to the currently-selected `h1` element:
+   In the following figure, the **Computed** panel shows the CSS properties being applied to the currently selected `h1` element:
 
    :::image type="content" source="../media/css-elements-computed-h1.msft.png" alt-text="The Computed panel." lightbox="../media/css-elements-computed-h1.msft.png":::
 
@@ -475,6 +478,9 @@ To change the selected color to some other color on the page:
    In the following figure, the **Color Picker** shows a current color value of `rgba(0,0,0,0.7)`, which is close to black.  The specific color changes to the version of black that is currently highlighted in the viewport after you clicked it.
 
    :::image type="content" source="../media/css-color-picker-eye-dropper.msft.png" alt-text="Using the Eyedropper." lightbox="../media/css-color-picker-eye-dropper.msft.png":::
+
+See also:
+* [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
 
 
 <!-- ====================================================================== -->

@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 02/18/2022
+ms.date: 04/27/2022
 ---
 # WebView2 sample: WinForms browser app
 
@@ -22,11 +22,11 @@ The steps on the present page are general-purpose.  See the sample-specific step
 
 To use this sample, follow the steps below in order.
 
-1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#readme).  Then return to this page and continue the steps below.
+1. In a separate window or tab, read the rendered README.md file for this project at GitHub: [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#readme).  Then return to this page and continue the steps below.
 
-   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#prerequisites)
+   * [README > Prerequisites](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#prerequisites)
 
-   * [README > Build the WebView2 Windows Forms Browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#build-the-webview2-windows-forms-browser)
+   * [README > Build the WebView2 Windows Forms Browser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#build-the-webview2-windows-forms-browser)
 
    You can also view the README.md source file (non-rendered) in Visual Studio.  In **File Manager** or Visual Studio > Solution Explorer, open the file:<!-- todo: is there a .md preview capability locally? -->
 
@@ -34,7 +34,7 @@ To use this sample, follow the steps below in order.
 
    or:
 
-   `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/README.md`
+   `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/README.md`
 
 
 <!-- ====================================================================== -->
@@ -66,7 +66,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 <!-- ====================================================================== -->
 ## Step 6 - Install workloads if prompted
@@ -107,9 +107,9 @@ To test whether .NET Framework 4.6.2 Developer Pack is installed:
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** dropdown list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 
@@ -117,7 +117,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    If you get error messages about missing .NET Framework 4.6.2 Developer Pack, follow the steps below.  Otherwise, skip to the next major section below.
 
-1. Go to https://dotnet.microsoft.com/en-us/download/dotnet-framework/, select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
+1. Go to [Download .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework/), select v4.6.2, and then click the **Download .NET Framework 4.6.2 Developer Pack** button:
 
    ![Downloading .NET Framework 4.6.2 Developer Pack](media/webview2windowsformsbrowser-dl-net-fwk.png)
 
@@ -157,13 +157,13 @@ Microsoft .NET Framework 4.6.2 Developer Pack is now installed on your machine.
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-master/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
+   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2WindowsFormsBrowser/WebView2WindowsFormsBrowser.sln`
 
 At the top of Visual Studio, set the build target, as follows:
 
-1. In the **Solution Configurations** drop-down list, select **Debug** or **Release**.
+1. In the **Solution Configurations** dropdown list, select **Debug** or **Release**.
 
-1. In the **Solution Platforms** drop-down list, select **Any CPU**.
+1. In the **Solution Platforms** dropdown list, select **Any CPU**.
 
 1. In **Solution Explorer**, right-click the **WebView2WindowsFormsBrowser** project, and then select **Build**.
 
@@ -179,7 +179,7 @@ At the top of Visual Studio, set the build target, as follows:
 
    ![The WebView2WindowsFormsBrowser app window.](media/webview2windowsformsbrowser-app-window.png)
 
-1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/master/SampleApps/WebView2WindowsFormsBrowser#readme).
+1. Use the sample app; see [README file for WebView2WindowsFormsBrowser](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2WindowsFormsBrowser#readme).
 
 1. In Visual Studio, select **Debug** > **Stop Debugging**.  Visual Studio closes the app.
 
