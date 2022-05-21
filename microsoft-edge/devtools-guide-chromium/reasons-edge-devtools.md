@@ -6,11 +6,9 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/14/2022
+ms.date: 05/20/2022
 ---
 # Reasons to use Microsoft Edge DevTools
-
-<!-- this article content was orig'ly drafted in a new file, in PR 1665, why-use-microsoft-edge-devtools.md, but then moved to PR 1763 and then content-swapped into this legacy index.md file / legacy URL , which was previously occupied by the "Overview of DevTools" article content, which in PR 1763 was moved into a new file, overview.md -->
 
 The Microsoft Edge DevTools team has added a lot of features based on feedback we received from the community to enhance the experience of Developers.  Here is a list of features that are unique to Microsoft Edge, available on Windows, Mac and Linux.
 
@@ -23,17 +21,15 @@ The developer tools in the browser grew organically over the years.  They can be
 
 ### Open and close tools easily
 
-By clicking the `+` button on the main toolbar or the Drawer toolbar, you can add tools without having to use the **Customize and control DevTools** `…` menu. You can activate the `x` button on any tool tab to remove the tool.  The **Elements**, **Sources** and **Console** tools are always open, and don't have an `x` on their tab.
+By clicking the **More Tools** (![More Tools icon.](reasons-edge-devtools-images/more-tools-icon.png)) button on the main toolbar or the Drawer toolbar, you can add tools without having to use the **Customize and control DevTools** `...` menu.  You can click the **x** button on any tool tab to remove the tool.  The **Elements**, **Sources** and **Console** tools are always open, and don't have an **x** on their tab.
 
-Adding a new tool to a menu bar by activating the + button and selecting it:
+Adding a new tool to a menu bar by clicking the **More Tools** (![More Tools icon.](reasons-edge-devtools-images/more-tools-icon.png)) button:
 
-![Adding a new tool to a menu bar by activating the + button and selecting it](media/more-tools-button-adds-tool-on-toolbar.png)
-<!-- new png for this article, dummy content; update the content -->
+![Clicking the + button to add a tool.](reasons-edge-devtools-images/more-tools-button-adds-tool-on-toolbar.png)
 
-Removing a tool by activating the x button on the tab of the tool:
+Removing a tool by clicking the **x** button on the tab of the tool:
 
-![Removing a tool by activating the x button on the tab of the tool](media/click-tab-x-button-to-remove-tool.png)
-<!-- new png for this article, dummy content; update the content -->
+![Removing a tool by activating the x button on the tab of the tool](reasons-edge-devtools-images/click-tab-x-button-to-remove-tool.png)
 
 
 ### Move tools around in the UI
@@ -42,13 +38,11 @@ By right-clicking any tab in the main toolbar or Drawer toolbar, you can move a 
 
 Moving a tool to the bottom drawer using the right-click menu:
 
-![Moving a tool to the bottom drawer using the right-click menu.](media/right-click-tool-tab-move-drawer-toolbar.png)
-<!-- new png for this article, dummy content; update the content -->
+![Moving a tool to the bottom drawer using the right-click menu.](reasons-edge-devtools-images/right-click-tool-tab-move-drawer-toolbar.png)
 
 The tool now appears on the bottom drawer:
 
-![The tool now appears on the bottom drawer.](media/tool-tab-moved-bottom-toolbar.png)
-<!-- new png for this article, dummy content; update the content -->
+![The tool now appears on the bottom drawer.](reasons-edge-devtools-images/tool-tab-moved-bottom-toolbar.png)
 
 
 ### Focus Mode with Activity Bar and Quick View tool menu
@@ -57,16 +51,14 @@ The tool now appears on the bottom drawer:
 
 Focus mode showing only tools related to Elements Debugging:
 
-![Focus mode showing only tools related to Elements Debugging.](media/focus-mode-with-only-elements-debugging-tools.png)
+![Focus mode showing only tools related to Elements Debugging.](reasons-edge-devtools-images/focus-mode-with-only-elements-debugging-tools.png)
 <!-- new png for this article, dummy content; update the content -->
 
 Focus mode showing only tools related to Source editing:
 
-![Focus mode showing only tools related to Source editing.](media/focus-mode-with-only-source-editing-tools.png)
+![Focus mode showing only tools related to Source editing.](reasons-edge-devtools-images/focus-mode-with-only-source-editing-tools.png)
 <!-- new png for this article, dummy content; update the content -->
 
-<!--
-uncomment later
 
 ### Tooltips Help Documentation mode
 
@@ -74,10 +66,8 @@ To learn about each tool, enable Tooltips mode, which is a Help mode with links 
 
 Tool explanations shown when Tooltips mode is enabled:
 
-![Tool explanations shown when Tooltips mode is enabled.](media/tool-explanations-in-tooltips-mode.png)
-the above is a new png for this article, dummy content; update the content
-
--->
+![Tool explanations shown when Tooltips mode is enabled.](reasons-edge-devtools-images/tool-explanations-in-tooltips-mode.png)
+<!-- the above is a new png for this article, dummy content; update the content -->
 
 
 <!-- ====================================================================== -->
@@ -90,12 +80,12 @@ You can choose a different User Interface language for Microsoft Edge DevTools. 
 
 Microsoft Edge Developer Tools displayed in German:
 
-![Microsoft Edge Developer Tools displayed in German.](media/microsoft-edge-devtools-with-german-ui.png)
+![Microsoft Edge Developer Tools displayed in German.](reasons-edge-devtools-images/microsoft-edge-devtools-with-german-ui.png)
 <!-- new png for this article, dummy content; update the content -->
 
 Microsoft Edge Developer Tools displayed in Japanese:
 
-![Microsoft Edge Developer Tools displayed in Japanese.](media/microsoft-edge-devtools-with-japanese-ui.png)
+![Microsoft Edge Developer Tools displayed in Japanese.](reasons-edge-devtools-images/microsoft-edge-devtools-with-japanese-ui.png)
 <!-- new png for this article, dummy content; update the content -->
 
 
@@ -105,12 +95,12 @@ You can choose a different color theme.  Themes can make your user experience mu
 
 Switching to a different theme in DevTools Settings:
 
-![Switching to a different theme in DevTools Settings.](media/switch-theme-devtools-settings.png)
+![Switching to a different theme in DevTools Settings.](reasons-edge-devtools-images/switch-theme-devtools-settings.png)
 <!-- new png for this article, dummy content; update the content -->
 
 Microsoft Edge DevTools displayed in the Monokai theme:
 
-![Microsoft Edge DevTools displayed in the Monokai theme.](media/devtools-monokai-theme.png)
+![Microsoft Edge DevTools displayed in the Monokai theme.](reasons-edge-devtools-images/devtools-monokai-theme.png)
 <!-- new png for this article, dummy content; update the content -->
 
 
@@ -126,23 +116,7 @@ The **Detached Elements** tool was built on feedback from a Microsoft team that 
 
 The **Detached Elements** tool, showing elements that need to be removed from memory:
 
-![The Detached Elements tool, showing elements that need to be removed from memory.](media/detached-elements-to-remove.png)
-<!-- png exists; the above png was created for this file by copying & renaming ![The Detached Elements tool.](whats-new/media/2022/01/detached-elements-tool.png) -->
-
-
-The following screenshot is from [Introducing the Detached Elements tool](whats-new/2022/01/devtools.md#introducing-the-detached-elements-tool) in _What's New in DevTools (Microsoft Edge 97)_:
-
-The **Detached Elements** tool:
-
-![The Detached Elements tool.](whats-new/media/2022/01/detached-elements-tool.png)
-<!-- png exists, in whatsnew dir; see paragraph above -->
-
-The following screenshot is from [Identify the JavaScript code that retains detached elements](memory-problems/dom-leaks.md#identify-the-javascript-code-that-retains-detached-elements) in _Debug DOM memory leaks with the Detached Elements tool_:
-
-Analyzing detached elements in the **Detached Elements** tool:
-
-![Analyzing detached elements in the Detached Elements tool.](memory-problems/images/analyze-detached-elements.msft.png)
-<!-- png exists, in mem probs dir; see paragraph above -->
+![The Detached Elements tool, showing elements that need to be removed from memory.](reasons-edge-devtools-images/detached-elements-to-remove.png)
 
 For information about the **Detached Elements** tool, see [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md).
 
@@ -153,29 +127,17 @@ In user studies we found that people often copy and paste error messages from th
 
 Console with highlighted search icon that would open a web search with the error message in a new browser tab:
 
-![Console with highlighted search icon that would open a web search with the error message in a new browser tab.](media/console-error-message-search-web-link.png)
+![Console with highlighted search icon that would open a web search with the error message in a new browser tab.](reasons-edge-devtools-images/console-error-message-search-web-link.png)
 <!-- new png for this article, dummy content; update the content -->
 
 
 ### 3D View
 
-The **3D View** tool displays either the DOM, the composited layers of a webpage, or the parts of a webpage page that have a z-index assigned to them, as a 3-dimensional representation in an interactive user interface.  This dynamic view allows you to gauge the complexity of your webpage products and find out about memory problems.
+The **3D View** tool displays either the DOM, the composited layers of a webpage, or the parts of a webpage page that have a z-index assigned to them, as a 3-dimensional representation in an interactive user interface.  This dynamic view allows you to gauge the complexity of your webpage and find out about memory problems.
 
-The present document displayed in the 3D View tool, showing the depth of the Document Object Model:
-
-![The present document displayed in the 3D View tool, showing the depth of the Document Object Model.](media/document-in-3d-view-tool-dom-tree-depth.png)
-<!-- the above png exists, was copied from ![The 3D View tool now supports changing color themes.](whats-new/media/2022/01/3d-view-with-color-theme.png) -->
-
-
-<!-- 
-image from
-[3D View tool supports changing color themes in DevTools](whats-new/2022/01/devtools.md#3d-view-tool-supports-changing-color-themes-in-devtools) in _What's New in DevTools (Microsoft Edge 97)_.
-![The 3D View tool now supports changing color themes.](whats-new/media/2022/01/3d-view-with-color-theme.png)
-png exists, used by the above article, remotely linked/borrowed here
--->
+![The 3D View tool.](reasons-edge-devtools-images/3d-tool.png)
 
 See [Navigate z-index, DOM, and layers using the 3D View tool](3d-view/index.md).
-
 
 
 ### Integration with webhint
@@ -184,7 +146,7 @@ The **Issues** tool automatically shows you all the things that need fixing in t
 
 Current problems of a webpage displayed in the Issues panel:
 
-![Current problems of a webpage displayed in the Issues panel.](media/webpage-problems-displayed-in-issues-panel.png)
+![Current problems of a webpage displayed in the Issues panel.](reasons-edge-devtools-images/webpage-problems-displayed-in-issues-panel.png)
 <!-- valid good new png content - 
 the above is a new png for the present article with fresh capture -->
 
@@ -199,12 +161,9 @@ Now, by using the Microsoft Edge DevTools extension for Visual Studio Code, you 
 
 Microsoft Edge DevTools integrated into Visual Studio Code:
 
-![Microsoft Edge DevTools integrated into Visual Studio Code.](media/devtools-integrated-into-visual-studio-code.png)
+![Microsoft Edge DevTools integrated into Visual Studio Code.](reasons-edge-devtools-images/devtools-integrated-into-visual-studio-code.png)
 <!-- new png for this article, dummy content; update the content -->
 
-
-<!--
-uncomment later
 
 ### Network Console
 
@@ -212,10 +171,8 @@ Inspecting the network traffic of your web product is already insightful, but of
 
 Network Console showing options for changing a network call:
 
-![Network Console showing options for changing a network call.](media/network-console-options-changing-network-call.png)
-the above is a created png for the present article with placeholder content
-
--->
+![Network Console showing options for changing a network call.](reasons-edge-devtools-images/network-console-options-changing-network-call.png)
+<!-- todo: put real content in png -->
 
 
 <!-- ====================================================================== -->
