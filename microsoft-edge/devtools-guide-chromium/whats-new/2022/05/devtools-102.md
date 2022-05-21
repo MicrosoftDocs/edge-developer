@@ -85,3 +85,44 @@ Microsoft Edge 102 also includes the following updates from the Chromium project
 
 <!-- [![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0). -->
+
+
+<!-- ====================================================================== -->
+<!-- ====================================================================== -->
+<!-- don't modify this template here - template for PMs to copy/paste to above, and THEN fill in, then tag it with Markdown, like [past devtools.md files](../04/devtools-101.md)
+
+
+Owner
+(The PM owner or the subject matter expert who should review this announcement)
+don't put that info here, only put it in the ADO copy of this template
+
+
+Title
+
+
+Welcome tool title and subtitle
+(This is the title and subtitle we'll use in the Welcome tool itself in the DevTools. It should be pithy, different from the title of the section in the doc, and draw customers in.)
+
+
+Announcement Text
+(3-5 sentences for your announcement)
+
+
+Instructions for screenshot
+(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
+
+
+Video recording of feature in action
+(we want to incorporate more multimedia assets into our What's New docs which drives engagement. Check out the wiki for instructions)
+don't put internal links or info here, only put it in the ADO copy of this template
+
+
+Call-to-action doc
+(we don't want announcements in What's New to get lost so you must provide a link from the announcement to a more permanent doc, ex. the Experimental Features doc)
+
+
+Pubic tracking links
+(if this feature is upstream, provide a link to the crbug for this announcement. If this feature came from a GitHub issue, provide a link to the issue.)
+
+
+-->
