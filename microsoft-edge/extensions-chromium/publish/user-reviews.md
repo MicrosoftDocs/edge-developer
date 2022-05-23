@@ -1,5 +1,5 @@
 ---
-title: Reply to user reviews on your extension
+title: Respond to user reviews about your extension
 description: Developers can view their Microsoft Edge extension’s reviews and ratings and respond to user reviews from the Partner Center dashboard.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/23/2021
 ---
-# Reply to user reviews on your Microsoft Edge extension
+# Respond to user reviews about your Microsoft Edge extension
 
 
 <!-- ====================================================================== -->
-Microsoft recently launched a new feature enabling you to respond to user reviews received on your Microsoft Edge Add-ons product page. For more information, see the blog [Microsoft Edge Add-ons | NEW Feature to manage user reviews on your extension](https://techcommunity.microsoft.com/t5/articles/microsoft-edge-add-ons-new-feature-to-manage-user-reviews-on/m-p/3372537).
+Microsoft recently launched a new feature enabling you to respond to user reviews received on the Microsoft Edge Add-ons product page. For more information, see the blog [Microsoft Edge Add-ons | NEW Feature to manage user reviews on your extension](https://techcommunity.microsoft.com/t5/articles/microsoft-edge-add-ons-new-feature-to-manage-user-reviews-on/m-p/3372537).
 
 
 <!-- ====================================================================== -->
@@ -50,8 +50,8 @@ From the Reviews page you can complete the following actions:
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> * The response you share cannot be empty or exceed 1000 characters.
-> * When a reply is posted via your Partner Center dashboard, it appears on your Microsoft Edge Add-on product page in 15 to 20 minutes.
+> * The response you share cannot be empty or exceed one thousand (1000) characters.
+> * When you post a response using the Partner Center dashboard, it appears on your Microsoft Edge Add-ons product page in 15 to 20 minutes.
 
 
 <!-- ====================================================================== -->
