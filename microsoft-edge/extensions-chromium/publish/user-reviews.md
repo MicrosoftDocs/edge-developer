@@ -15,7 +15,7 @@ Microsoft recently launched a new feature enabling you to respond to user review
 
 
 <!-- ====================================================================== -->
-You can view your extension’s reviews and ratings and engage with user reviews from your Partner Center dashboard.
+You can view your extension’s reviews and ratings and engage with user reviews from the Partner Center dashboard.
 
 
 <!-- ====================================================================== -->
@@ -23,7 +23,7 @@ Follow these steps to view your extension’s **Reviews** page:
 
 1. Navigate to your Partner Center account and select an extension.
 
-2. From the left panel, click **Extension overview** > **Reviews** to view your extension reviews or click on the star rating of an extension on the **Overview** page of **Home** > **Edge** breadcrumb trail.
+2. From the left panel, click **Extension overview** > **Reviews** to view your extension reviews, or click on the star rating of an extension on the **Overview** page of **Home** > **Edge** breadcrumb trail.
 
 
 <!-- ====================================================================== -->
@@ -35,17 +35,17 @@ Follow these steps to view your extension’s **Reviews** page:
 
 From the Reviews page you can complete the following actions:
 
-* View your extension’s Average Rating
+* View your extension’s Average Rating.
 
-* View the total number of ratings received for your extension
+* View the total number of ratings received for your extension.
 
-* Reply to reviews
+* Reply to reviews.
 
-* View the list of all reviews received for your extension and your responses
+* View the list of all reviews received for your extension and your responses.
 
-* Edit your previous responses
+* Edit your previous responses.
 
-* Apply filters to the reviews based on the extension rating and response status
+* Apply filters to the reviews based on the extension rating and response status.
 
 
 <!-- ====================================================================== -->
