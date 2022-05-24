@@ -290,7 +290,7 @@ To emulate CSS media queries, click the **Emulate CSS media features** (![Emulat
 ![Browser preview in the extension showing the web product in forced color mode](media/edge-for-code-forced-colours.msft.png)
 
 <!-- Toolbar item 6. Emulate vision deficiencies: -->
-Click the **Emulate vision deficiencies** (![The Emulate vision deficiencies button.](media/emulate-vision-deficiencies-button.png)) icon/button to try the experience of the current web project with different visual deficiencies.  This button lets you test your product in a blurred mode or in different color deficiencies:
+Click the **Emulate vision deficiencies** (![The Emulate vision deficiencies button.](media/emulate-vision-deficiencies-button.png)) button to try the experience of the current web project with different visual deficiencies.  This button lets you test your product in a blurred mode or in different color deficiencies:
 
 ![Browser preview in the extension showing the web product in a blurred emulation](media/edge-for-code-blurred.msft.png)
 

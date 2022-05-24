@@ -11,6 +11,11 @@ ms.date: 05/24/2022
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
+> [!TIP]
+> The **Microsoft Build 2022** conference was on May 24-26.  Learn more about new features for memory, performance, and production debugging in DevTools and new capabilities in the web platform for PWAs in the following videos:
+> * [Tips for debugging memory, performance, & production issues](https://www.youtube.com/watch?v=hdrR0QwXpuc)
+> * [Microsoft Edge | Build 2022: Enriching desktop experiences with the power and reach of the web](https://www.youtube.com/watch?v=ahO5nePl4BQ)
+
 
 <!-- ====================================================================== -->
 ## DevTools extension: New browser with device and mode emulation and sourcemap support
@@ -18,14 +23,17 @@ ms.date: 05/24/2022
 <!-- Title: New browser preview and sourcemap support in Visual Studio Code -->
 <!-- Subtitle: Emulate devices and different rendering modes and debug Sass/React. -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code now has a browser preview that allows you to emulate different devices.  You can also preview the current project in different modes, such as Dark, Light, Print, and High Contrast.  To make accessibility testing easier, you can also show a blurred version, or simulate different color deficiencies.
-
-Other new features include a simpler way to toggle CSS mirroring, which now also supports sourcemaps.  This means that you can debug and modify CSS created by Sass, React, and other abstractions live in the browser and see the changes in the source files.
+The Microsoft Edge DevTools extension for Visual Studio Code now has a browser preview that allows you to emulate different devices.  Click the new **Emulate CSS media features** (![Emulate CSS media features.](devtools-102-images/emulate-css-media-features-button.png)) button, to preview the current project in different modes, such as Dark, Light, Print, and High Contrast:
 
 ![DevTools extension: New browser with device and mode emulation and sourcemap support.](devtools-102-images/devtools-ext-new-browser.png)
 
+Click the new **Emulate vision deficiencies** (![The Emulate vision deficiencies button.](devtools-102-images/emulate-vision-deficiencies-button.png)) button to easily test accessibility, such as showing what the webpage looks like with blurred vision or color vision deficiencies.
+
+Other new features include a simpler way to toggle CSS mirroring, which now also supports sourcemaps.  This means that you can debug and modify CSS created by Sass, React, and other abstractions live in the browser and see the changes in the source files.
+
 See also:
 * [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+* [Map the processed code to your original source code, for debugging](../../../javascript/source-maps.md)
 * [CSS Mirror Editing with Sourcemaps: Known Issues and Feedback](https://github.com/microsoft/vscode-edge-devtools/issues/965).
 
 
@@ -78,20 +86,20 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Improved Inspect tool accessibility: The Inspect element tooltip now persists until you dismiss it
+## The Inspect element tooltip now persists until you dismiss it
 
 <!-- Title: Improving the Inspect element tooltip -->
 <!-- Subtitle: The Inspect element tooltip now persists until you dismiss it, improving accessibility and ease of use. -->
 
-Previously, in the **Elements** tool, the hover overlay for the node that you selected constantly changed when you used the **Inspect tool** (![Inspect tool icon.](../../../media/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier.
+Previously, in the **Elements** tool, the overlay for the node that you selected only displayed on hover when you used the **Inspect tool** (![Inspect tool icon.](../../../media/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier or other assistive technologies.
 
-When using the **Inspect** tool, to keep the node (and overlay) selected,<!--?--> there's now a `Ctrl`+`Alt` key modifier.
-Now, if you press and hold `Ctrl`+`Alt`, when you move the mouse pointer over the rendered webpage, the existing tooltip and grid color overlay for the Inspect tool remains, as if locked:
+In Microsoft Edge 102, use the `Ctrl`+`Alt` key modifier when using the **Inspect** tool to keep the node selected and overlay displayed.
+Now, if you press and hold `Ctrl`+`Alt`, when you move the mouse pointer over the rendered webpage, the existing tooltip and grid color overlay for the Inspect tool remains displayed:
 <!-- todo: macOS modifiers? -->
 
 ![Inspect element tooltip now persists.](devtools-102-images/inspect-element-tooltip-persists.png)
 
-Also, you can now press `Ctrl`<!--todo: macOS?--> to hide the Inspect tool's tooltip overlay while you move the mouse pointer over the rendered webpage.
+Also, you can now press `Ctrl`<!--todo: macOS?--> to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
 
 For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
@@ -127,6 +135,7 @@ Refer to the attachments -->
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
+* [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
 
 
 <!-- ====================================================================== -->
@@ -135,11 +144,11 @@ See also:
 <!-- Title: Help icons for Experiments checkboxes -->
 <!-- Subtitle: In Settings > Experiments page, each experimental feature's checkbox has a Help (?) icon next to it for more information.. -->
 
-In the **Settings** > **Experiments** page, checkboxes now have a **Help** (![Help icon for Settings > Experiments checkboxes.](devtools-102-images/settings-experiments-help-icon.png)) button:
+In the **Settings** > **Experiments** page, each experiment now has a **Help** (![Help icon](devtools-102-images/settings-experiments-help-icon.png)) button:
 
 ![Help icons for Settings > Experiments checkboxes.](devtools-102-images/settings-experiments-help-icons.png)
 
-To get more information about an experimental feature, click a **Help** (![Help icon for Settings > Experiments checkboxes.](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features](../../../experimental-features/index.md) article.
+To get more information about an experimental feature, click the corresponding **Help** (![Help icon.](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features](../../../experimental-features/index.md) article.
 
 
 <!-- ====================================================================== -->
