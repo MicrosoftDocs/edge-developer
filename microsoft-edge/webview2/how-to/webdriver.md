@@ -29,7 +29,7 @@ If you don't have an existing WebView2 project, clone the WebView2Samples repo i
 
 Once you've cloned the repo, build the project in Visual Studio.  It should look like the following figure.
 
-:::image type="content" source="../media/webdriver/sample-app.png" alt-text="WebView2API Sample app." lightbox="../media/webdriver/sample-app.png":::
+![WebView2API Sample app.](../media/webdriver/sample-app.png)
 
 
 <!-- ====================================================================== -->
@@ -51,21 +51,21 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1. Start by creating a new **C# .NET Framework** project in **Visual Studio**.  Select **Next** on the bottom right-hand corner to continue.
 
-   :::image type="content" source="../media/webdriver/new-project.png" alt-text="Create a new project." lightbox="../media/webdriver/new-project.png":::
+   ![Create a new project.](../media/webdriver/new-project.png)
 
 1. Give your project a **Project name**, save it to your preferred **Location**, and then select **Create**.
 
-   :::image type="content" source="../media/webdriver/app-create.png" alt-text="Configure your new project." lightbox="../media/webdriver/app-create.png":::
+   ![Configure your new project.](../media/webdriver/app-create.png)
 
    A new project is created, with all the code placed in the `Program.cs` file.
 
-   :::image type="content" source="../media/webdriver/start-app.png" alt-text="New project." lightbox="../media/webdriver/start-app.png":::
+   ![New project.](../media/webdriver/start-app.png)
 
 1. Next, add Selenium to the project; install Selenium by using the Selenium.WebDriver NuGet package as follows.  To download the Selenium.WebDriver NuGet package, in **Visual Studio**, select **Project** > **Manage NuGet Packages**.
 
 1. Select the **Browse** tab.  The following screen appears.
 
-   :::image type="content" source="../media/webdriver/download-nuget.png" alt-text="Download NuGet package." lightbox="../media/webdriver/download-nuget.png":::
+   ![Download NuGet package.](../media/webdriver/download-nuget.png)
 
 1. In the **Package source** dropdown list, select **nuget.org**.
 
@@ -75,7 +75,7 @@ By this point, you've installed the WebView2 Runtime, built a WebView2 project, 
 
 1. In the detail window on the right, make sure the **Version** is set to **4.0.0** or later, and then select **Install**.  NuGet downloads Selenium to your machine.
 
-   :::image type="content" source="../media/webdriver/nuget.png" alt-text="Manage NuGet package." lightbox="../media/webdriver/nuget.png":::
+   ![Manage NuGet package.](../media/webdriver/nuget.png)
 
    To learn more about the Selenium.WebDriver NuGet package, see [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver).
 
@@ -175,7 +175,7 @@ To drive WebView2 with Selenium and Microsoft Edge WebDriver:
    }
    ```
 
-   :::image type="content" source="../media/webdriver/microsoft.png" alt-text="Selenium running WebView2." lightbox="../media/webdriver/microsoft.png":::
+   ![Selenium running WebView2.](../media/webdriver/microsoft.png)
 
 Congratulations!  You've successfully automated a WebView2 project and driven WebView2 by using Selenium and Microsoft Edge WebDriver, per the "launch" approach.
 
