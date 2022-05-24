@@ -85,11 +85,11 @@ $_
 
 In the following figure, a simple expression (`2+2`) is evaluated.  The `$_` property is then evaluated, which contains the same value:
 
-:::image type="content" source="../media/console-arithmatic.msft.png" alt-text="$_ is the most recently evaluated expression." lightbox="../media/console-arithmatic.msft.png":::
+![$_ is the most recently evaluated expression.](../media/console-arithmatic.msft.png)
 
 In the following figure, the evaluated expression initially contains an array of names.  Evaluating `$_.length` to find the length of the array, the value stored in `$_` now becomes the latest evaluated expression, `4`:
 
-:::image type="content" source="../media/console-array-length.msft.png" alt-text="$_ changes when new commands are evaluated." lightbox="../media/console-array-length.msft.png":::
+![$_ changes when new commands are evaluated.](../media/console-array-length.msft.png)
 
 <br/><br/>
 
@@ -116,11 +116,11 @@ $0
 
 In the following figure, an `img` element is selected in the **Elements** tool.  In the **Console** drawer, `$0` has been evaluated and displays the same element:
 
-:::image type="content" source="../media/console-image-highlighted-$0.msft.png" alt-text="The $0 command." lightbox="../media/console-image-highlighted-$0.msft.png":::
+![The $0 command.](../media/console-image-highlighted-$0.msft.png)
 
 The following image shows a different element selected in the same webpage.  The `$0` now refers to the newly selected element, while `$1` returns the previously selected element:
 
-:::image type="content" source="../media/console-image-highlighted-$1.msft.png" alt-text="The $1 command." lightbox="../media/console-image-highlighted-$1.msft.png":::
+![The $1 command.](../media/console-image-highlighted-$1.msft.png)
 
 <br/><br/>
 
@@ -147,7 +147,7 @@ $(selector, [startNode])
 
 In the following figure, `$('img')` returns a reference to the first `<img>` element in the webpage:
 
-:::image type="content" source="../media/console-element-selector-image.msft.png" alt-text="$('img') returns a reference to the first <img> element in the webpage." lightbox="../media/console-element-selector-image.msft.png":::
+![$('img') returns a reference to the first <img> element in the webpage.](../media/console-element-selector-image.msft.png)
 
 Right-click the returned result and then select **Reveal in Elements Panel** to find it in the DOM, or **Scroll in to View** to show it on the page.
 
@@ -161,7 +161,7 @@ $('img').src
 
 Result:
 
-:::image type="content" source="../media/console-element-selector-image-source.msft.png" alt-text="The result of $('img').src." lightbox="../media/console-element-selector-image-source.msft.png":::
+![The result of $('img').src.](../media/console-element-selector-image-source.msft.png)
 
 This function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
@@ -173,7 +173,7 @@ $('img', document.querySelector('title--image')).src
 
 Result: the first `img` element after the `title--image` element is found, and the `src` property of the `img` element is returned:
 
-:::image type="content" source="../media/console-element-selector-image-filter-source.msft.png" alt-text="The result of $('img', document.querySelector('title--image')).src." lightbox="../media/console-element-selector-image-filter-source.msft.png":::
+![The result of $('img', document.querySelector('title--image')).src.](../media/console-element-selector-image-filter-source.msft.png)
 
 > [!NOTE]
 > If you are using a library such as jQuery that uses `$`, the functionality is overwritten, and `$` corresponds to the implementation from that library.
@@ -212,7 +212,7 @@ for (each in images) {
 
 Result:
 
-:::image type="content" source="../media/console-element-selector-image-all.msft.png" alt-text="Using $$() to select all images in the webpage and display the sources." lightbox="../media/console-element-selector-image-all.msft.png":::
+![Using $$() to select all images in the webpage and display the sources.](../media/console-element-selector-image-all.msft.png)
 
 This query selector function also supports a second parameter, `startNode`, that specifies an element or node from which to search for elements.  The default value of the parameter is `document`.
 
@@ -229,7 +229,7 @@ for (each in images) {
 
 Here's the result.  `$$()` selects all images that appear after the specified `<div>` element in the webpage, and displays the sources:
 
-:::image type="content" source="../media/console-element-selector-image-filter-all.msft.png" alt-text="Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources." lightbox="../media/console-element-selector-image-filter-all.msft.png":::
+![Using $$() to select all images that appear after the specified <div> element in the webpage and display the sources.](../media/console-element-selector-image-filter-all.msft.png)
 
 > [!NOTE]
 > Press `Shift`+`Enter` in the **Console** to start a new line without running the script.
@@ -264,7 +264,7 @@ $x("//p")
 
 Result:
 
-:::image type="content" source="../media/console-array-xpath.msft.png" alt-text="Using an XPath selector." lightbox="../media/console-array-xpath.msft.png":::
+![Using an XPath selector.](../media/console-array-xpath.msft.png)
 
 ### Example
 
@@ -276,11 +276,11 @@ $x("//p[a]")
 
 Result:
 
-:::image type="content" source="../media/console-array-xpath-sub-element.msft.png" alt-text="Using a more complicated XPath selector." lightbox="../media/console-array-xpath-sub-element.msft.png":::
+![Using a more complicated XPath selector.](../media/console-array-xpath-sub-element.msft.png)
 
 Similar to the other selector commands, `$x(path)` has an optional second parameter, `startNode`, that specifies an element or node from which to search for elements:
 
-:::image type="content" source="../media/console-array-xpath-startnode.msft.png" alt-text="Using an XPath selector with startNode." lightbox="../media/console-array-xpath-startnode.msft.png":::
+![Using an XPath selector with startNode.](../media/console-array-xpath-startnode.msft.png)
 
 <br/><br/>
 
@@ -364,7 +364,7 @@ debug("debug");
 
 Result:
 
-:::image type="content" source="../media/console-debug-text.msft.png" alt-text="Breaking inside a function with debug()." lightbox="../media/console-debug-text.msft.png":::
+![Breaking inside a function with debug().](../media/console-debug-text.msft.png)
 
 Use `undebug(function)` to stop breaking on the function, or use the UI to turn off all breakpoints.
 
@@ -403,7 +403,7 @@ dir(document.head);
 
 Result:
 
-:::image type="content" source="../media/console-dir-document-head-expanded.msft.png" alt-text="Logging 'document.head' with the 'dir()' function." lightbox="../media/console-dir-document-head-expanded.msft.png":::
+![Logging 'document.head' with the 'dir()' function.](../media/console-dir-document-head-expanded.msft.png)
 
 For more information, see [console.dir()](api.md#dir) in the Console API.
 
@@ -458,7 +458,7 @@ inspect(document.body);
 
 Result:
 
-:::image type="content" source="../media/console-inspect-document-body.msft.png" alt-text="Inspecting an element with inspect()." lightbox="../media/console-inspect-document-body.msft.png":::
+![Inspecting an element with inspect().](../media/console-inspect-document-body.msft.png)
 
 When passing a function to inspect, the function opens the webpage in the **Sources** tool for you to inspect.
 
@@ -492,15 +492,15 @@ getEventListeners(document);
 
 Result:
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png" alt-text="Output of using getEventListeners(document)." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png":::
+![Output of using getEventListeners(document).](../media/console-elements-event-listeners-console-get-event-listeners-document.msft.png)
 
 If more than one listener is registered on the specified object, then the array contains a member for each listener.  In the following figure, two event listeners are registered on the `document` element for the `click` event:
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png" alt-text="Multiple event listeners registered on the 'document' element for the 'click' event." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png":::
+![Multiple event listeners registered on the 'document' element for the 'click' event.](../media/console-elements-event-listeners-console-get-event-listeners-document-expanded-1.msft.png)
 
 You can further expand each of the following objects to explore their properties.  Here's an expanded view of the listener object:
 
-:::image type="content" source="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png" alt-text="Expanded view of listener object." lightbox="../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png":::
+![Expanded view of listener object.](../media/console-elements-event-listeners-console-get-event-listeners-document-2.msft.png)
 
 <br/><br/>
 
@@ -540,7 +540,7 @@ values(player1)
 
 Result:
 
-:::image type="content" source="../media/console-keys-values.msft.png" alt-text="The keys() and values() commands." lightbox="../media/console-keys-values.msft.png":::
+![The keys() and values() commands.](../media/console-keys-values.msft.png)
 
 <br/><br/>
 
@@ -572,7 +572,7 @@ monitor(sum);
 
 Result:
 
-:::image type="content" source="../media/console-function-monitor-sum.msft.png" alt-text="Result of the monitor() function." lightbox="../media/console-function-monitor-sum.msft.png":::
+![Result of the monitor() function.](../media/console-function-monitor-sum.msft.png)
 
 To end monitoring, use `unmonitor(function)`.
 
@@ -606,7 +606,7 @@ monitorEvents(window, "resize");
 
 Result:
 
-:::image type="content" source="../media/console-monitor-events-resize-window.msft.png" alt-text="Monitoring window resize events." lightbox="../media/console-monitor-events-resize-window.msft.png":::
+![Monitoring window resize events.](../media/console-monitor-events-resize-window.msft.png)
 
 ### Example
 
@@ -637,7 +637,7 @@ monitorEvents($0, "key");
 
 Here's the sample output after typing a character in the text field:
 
-:::image type="content" source="../media/console-monitor-events-type-t-y.msft.png" alt-text="Monitoring key events." lightbox="../media/console-monitor-events-type-t-y.msft.png":::
+![Monitoring key events.](../media/console-monitor-events-type-t-y.msft.png)
 
 <br/><br/>
 
@@ -680,7 +680,7 @@ profileEnd('B');
 
 The result is the same, regardless of the order.  The result appears as a Heap Snapshot in the **Memory** tool, with grouped profiles:
 
-:::image type="content" source="../media/console-memory-multiple-cpu-profiles.msft.png" alt-text="Grouped profiles." lightbox="../media/console-memory-multiple-cpu-profiles.msft.png":::
+![Grouped profiles.](../media/console-memory-multiple-cpu-profiles.msft.png)
 
 > [!NOTE]
 > Multiple CPU profiles can operate at the same time, and you aren't required to close-out each profile in creation order.
@@ -785,7 +785,7 @@ table(names);
 
 Result:
 
-:::image type="content" source="../media/console-table-display.msft.png" alt-text="The result of the table() function." lightbox="../media/console-table-display.msft.png":::
+![The result of the table() function.](../media/console-table-display.msft.png)
 
 <br/><br/>
 
