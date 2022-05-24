@@ -25,13 +25,13 @@ Other new features include a simpler way to toggle CSS mirroring, which now also
 ![DevTools extension: New browser with device and mode emulation and sourcemap support.](devtools-102-images/devtools-ext-new-browser.png)
 <!-- Instructions for screenshot
 For the new screencast/browser we have this in docs:
-https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#device-and-state-emulation -->
+[Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation) in _Microsoft Edge DevTools extension for Visual Studio Code_ -->
 
 <!-- Video recording of feature in action
 See work item -->
 
 See also:
-* [Device and state emulation](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension#device-and-state-emulation) in _Microsoft Edge DevTools extension for Visual Studio Code_.
+* [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation) in _Microsoft Edge DevTools extension for Visual Studio Code_.
 * [CSS Mirror Editing with Sourcemaps: Known Issues and Feedback](https://github.com/microsoft/vscode-edge-devtools/issues/965).
 
 
@@ -139,8 +139,8 @@ Element keeps selected and you can move the mouse around (allowing you to naviga
 For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
 See also:
-*  [Analyze pages using the Inspect tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/css/inspect)
-*  [Navigate DevTools with assistive technology](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/accessibility/navigation)
+*  [Analyze pages using the Inspect tool](../../../css/inspect.md)
+*  [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 
 
 <!-- ====================================================================== -->
