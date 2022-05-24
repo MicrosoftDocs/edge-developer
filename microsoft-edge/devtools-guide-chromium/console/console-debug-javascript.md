@@ -28,7 +28,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Click the **Open Console to view errors** button on the top right.  In DevTools, the **Console** gives you more information about the error:
 
-   :::image type="content" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console." lightbox="../media/console-debug-displays-error.msft.png":::
+   ![DevTools gives detailed information about the error in the Console.](../media/console-debug-displays-error.msft.png)
 
    Many error messages in the **Console** have a **Search for this message on the Web** button, shown as a magnifying glass.  This feature was introduced in Microsoft Edge version 94.  (For more information, see [Look up error messages on the web from the Console](index.md#look-up-error-messages-on-the-web-from-the-console).)
 
@@ -36,7 +36,7 @@ The first experience you have with the **Console** is likely to be errors in scr
 
 1. Click the `error.html:16` link on the right of the error message in the **Console**.  The **Sources** tool opens and highlights the line of code with the error:
 
-   :::image type="content" source="../media/console-debug-displays-in-sources.msft.png" alt-text="The Sources tool highlights the line of code that causes the error." lightbox="../media/console-debug-displays-in-sources.msft.png":::
+   ![The Sources tool highlights the line of code that causes the error.](../media/console-debug-displays-in-sources.msft.png)
 
    The script tries to get the first `h2` element in the document and paint a red border around it.  But no `h2` element exists, so the script fails.
 
@@ -53,7 +53,7 @@ The **Console** also reports network errors.
 
 1. Right-click anywhere in the webpage and then select **Inspect**.  Or, press `F12`.  DevTools opens next to the webpage.
 
-   :::image type="content" source="../media/console-debug-network-error.msft.png" alt-text="Console displays a Network and a JavaScript error." lightbox="../media/console-debug-network-error.msft.png":::
+   ![Console displays a Network and a JavaScript error.](../media/console-debug-network-error.msft.png)
 
    The table displays `loading`, but nothing changes on the webpage, because the data is never retrieved.  In the **Console**, the following two errors occurred:
 
@@ -63,13 +63,13 @@ The **Console** also reports network errors.
 
 1. Click the link to the webpage and line of code where the error occurs, to open the Sources tool.  That is, click the `network-error.html:40` link in the **Console**:
 
-   :::image type="content" source="../media/console-debug-network-error-code-line.msft.png" alt-text="Select the link to the webpage and line of code where the error occurs, to open the Sources tool." lightbox="../media/console-debug-network-error-code-line.msft.png":::
+   ![Select the link to the webpage and line of code where the error occurs, to open the Sources tool.](../media/console-debug-network-error-code-line.msft.png)
 
    The **Sources** tool opens.  The problematic line of code is highlighted and followed by an `error` (`x`) button.
 
 1. Click the **error** (`x`) button.  The message `Failed to load resource: the server responded with a status of 404 ()` appears.
 
-   :::image type="content" source="../media/console-debug-network-error-sources.msft.png" alt-text="To find the error in JavaScript, use the Sources tool." lightbox="../media/console-debug-network-error-sources.msft.png":::
+   ![To find the error in JavaScript, use the Sources tool.](../media/console-debug-network-error-sources.msft.png)
 
    This error informs you that the requested URL isn't found.
 
@@ -77,21 +77,21 @@ The **Console** also reports network errors.
 
    The Console displays an HTTP status code of the error after a resource isn't loaded:
 
-   :::image type="content" source="../media/console-debug-network-error-url.msft.png" alt-text="The Console displays an HTTP status code of the error after a resource isn't loaded." lightbox="../media/console-debug-network-error-url.msft.png":::
+   ![The Console displays an HTTP status code of the error after a resource isn't loaded.](../media/console-debug-network-error-url.msft.png)
 
    The **Network** tool displays more information about the failed request:
 
-   :::image type="content" source="../media/console-debug-network-error-network.msft.png" alt-text="The Network tool displays more information about the failed request." lightbox="../media/console-debug-network-error-network.msft.png":::
+   ![The Network tool displays more information about the failed request.](../media/console-debug-network-error-network.msft.png)
 
 1. Inspect the headers in the **Network** tool to get more insight:
 
-   :::image type="content" source="../media/console-debug-network-error-network-detail.msft.png" alt-text="Inspecting the headers in the Network tool may give more insight." lightbox="../media/console-debug-network-error-network-detail.msft.png":::
+   ![Inspecting the headers in the Network tool may give more insight.](../media/console-debug-network-error-network-detail.msft.png)
 
    What was the problem?  Two slash characters (`//`) occur in the requested URI after the word `repos`.
 
 1. Open the **Sources** tool and inspect line 26.  A trailing slash character (`/`) occurs at the end of the base URI.  The **Sources** tool displays the line of code with the error:
 
-   :::image type="content" source="../media/console-debug-network-error-code-error.msft.png" alt-text="The Sources tool displays the line of code with the error." lightbox="../media/console-debug-network-error-code-error.msft.png":::
+   ![The Sources tool displays the line of code with the error.](../media/console-debug-network-error-code-error.msft.png)
 
 
 ### Viewing the resulting page when there are no errors in the Console
@@ -105,7 +105,7 @@ Next, we'll look at the resulting page when there are no errors in the **Console
 
    The example without any errors loads information from GitHub and displays it:
 
-   :::image type="content" source="../media/console-debug-network-error-fixed.msft.png" alt-text="The example without any errors loads information from GitHub and displays it." lightbox="../media/console-debug-network-error-fixed.msft.png":::
+   ![The example without any errors loads information from GitHub and displays it.](../media/console-debug-network-error-fixed.msft.png)
 
 
 #### Demo page: Network error reporting in Console and UI
@@ -124,7 +124,7 @@ Use defensive coding techniques to avoid the previous user experiences.  Make su
 
    The example catches and reports errors:
 
-   :::image type="content" source="../media/console-debug-network-error-report.msft.png" alt-text="An example that catches and reports errors." lightbox="../media/console-debug-network-error-report.msft.png":::
+   ![An example that catches and reports errors.](../media/console-debug-network-error-report.msft.png)
 
    The following code in the demo catches and reports errors using the `handleErrors` method, specifically the `throw Error` line:
 
@@ -158,7 +158,7 @@ To display two created error messages in the **Console**:
 
    Error messages appear in the **Console**:
 
-   :::image type="content" source="../media/console-debug-error-assert.msft.png" alt-text="Error messages appear in the Console." lightbox="../media/console-debug-error-assert.msft.png":::
+   ![Error messages appear in the Console.](../media/console-debug-error-assert.msft.png)
 
    The demo page uses the following code:
 
@@ -236,7 +236,7 @@ To display the trace in the **Console**:
 
    Here's the trace that's produced, in the **Console**:
 
-   :::image type="content" source="../media/console-debug-trace.msft.png" alt-text="The trace, displayed in the Console." lightbox="../media/console-debug-trace.msft.png":::
+   ![The trace, displayed in the Console.](../media/console-debug-trace.msft.png)
 
 
 <!-- ====================================================================== -->
