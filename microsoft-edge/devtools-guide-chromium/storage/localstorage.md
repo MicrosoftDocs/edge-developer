@@ -30,19 +30,19 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane is shown by default.
 
-   :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest.msft.png":::
+   ![The Manifest pane.](../media/storage-application-manifest.msft.png)
 
 1. Expand the **Local Storage** menu.
 
-   :::image type="content" source="../media/storage-application-local-storage.msft.png" alt-text="The Local Storage menu." lightbox="../media/storage-application-local-storage.msft.png":::
+   ![The Local Storage menu.](../media/storage-application-local-storage.msft.png)
 
 1. Click a domain to view the key-value pairs.
 
-   :::image type="content" source="../media/storage-application-local-storage-view-key-value.msft.png" alt-text="The localStorage key-value pairs for the https://www.bing.com domain" lightbox="../media/storage-application-local-storage-view-key-value.msft.png":::
+   ![The localStorage key-value pairs for the https://www.bing.com domain](../media/storage-application-local-storage-view-key-value.msft.png)
 
 1. Click a row of the table to view the value in the viewer below the table.
 
-   :::image type="content" source="../media/storage-application-local-storage-view-key-value-selected.msft.png" alt-text="View the value of the eventLogQueue_Online key." lightbox="../media/storage-application-local-storage-view-key-value-selected.msft.png":::
+   ![View the value of the eventLogQueue_Online key.](../media/storage-application-local-storage-view-key-value-selected.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -52,7 +52,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Double-click the empty part of the table.  DevTools creates a new row and focuses your cursor in the **Key** column.
 
-   :::image type="content" source="../media/storage-application-local-storage-new-key-value.msft.png" alt-text="The empty part of the table to double-click in order to create a new key-value pair." lightbox="../media/storage-application-local-storage-new-key-value.msft.png":::
+   ![The empty part of the table to double-click in order to create a new key-value pair.](../media/storage-application-local-storage-new-key-value.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ To view, edit, and delete [localStorage](https://developer.mozilla.org/docs/Web/
 
 1. Double-click a cell in the **Key** or **Value** column to edit that key or value.
 
-   :::image type="content" source="../media/storage-application-local-storage-edit-key-value.msft.png" alt-text="Edit a localStorage key." lightbox="../media/storage-application-local-storage-edit-key-value.msft.png":::
+   ![Edit a localStorage key.](../media/storage-application-local-storage-edit-key-value.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -90,11 +90,11 @@ Since you can run JavaScript in the **Console**, and since the **Console** has a
 
 1. Use the **JavaScript contexts** menu to change the JavaScript context of the **Console** if you want to access the `localStorage` key-value pairs of a domain other than the page that is displayed.
 
-   :::image type="content" source="../media/storage-console-local-storage.msft.png" alt-text="Change the JavaScript context of the Console." lightbox="../media/storage-console-local-storage.msft.png":::
+   ![Change the JavaScript context of the Console.](../media/storage-console-local-storage.msft.png)
 
 1. Run your `localStorage` expressions in the Console, the same as you do in your JavaScript.
 
-:::image type="content" source="../media/storage-console-local-storage-interaction.msft.png" alt-text="Interact with localStorage from the Console." lightbox="../media/storage-console-local-storage-interaction.msft.png":::
+![Interact with localStorage from the Console.](../media/storage-console-local-storage-interaction.msft.png)
 
 
 <!-- ====================================================================== -->
