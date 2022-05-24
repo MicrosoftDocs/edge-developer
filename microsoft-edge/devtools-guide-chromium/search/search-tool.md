@@ -45,7 +45,7 @@ To open the **Search** tool from the **Command Menu**:
 
 1. Type `search`, and then press `Enter`.
 
-:::image type="content" source="../media/search-tool/open-search-tool.png" alt-text="The Command Menu with the Show Search item selected.":::
+![The Command Menu with the Show Search item selected.](../media/search-tool/open-search-tool.png)
 
 
 <!-- ====================================================================== -->
@@ -58,7 +58,7 @@ To search for text in the current webpage and its resource files:
 
 The **Search** tool shows the list of matching resources, and highlights the corresponding lines of text.  The number of matching files and lines is also indicated at the bottom of the tool.
 
-:::image type="content" source="../media/search-tool/search-tool-search-results.png" alt-text="Search results displayed in the search tool, with matching text highlighted in yellow.":::
+![Search results displayed in the search tool, with matching text highlighted in yellow.](../media/search-tool/search-tool-search-results.png)
 
 <!-- The search results are pretty-printed. -->
 
@@ -76,7 +76,7 @@ To only find results that match a particular case (lowercase or uppercase charac
 
 You can use regular expressions, including [JavaScript regular expressions](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions), to find matching results.  To use a regular expression, click the **Use Regular Expression** (`.*`) button in the toolbar and enter a valid regular expression in the search input field.
 
-:::image type="content" source="../media/search-tool/search-tool-regexp.png" alt-text="Searching for a regular expression.":::
+![Searching for a regular expression.](../media/search-tool/search-tool-regexp.png)
 
 
 <!-- ====================================================================== -->

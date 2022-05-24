@@ -25,7 +25,7 @@ Features:
 *  [Web Share](how-to/share.md#sharing-content)
 *  [Share Target](how-to/share.md#receiving-shared-content)
 
-:::image type="content" source="./media/webboard.png" alt-text="Webboard is a Progressive Web App for drawing and intelligent whiteboarding.":::
+![Webboard is a Progressive Web App for drawing and intelligent whiteboarding.](./media/webboard.png)
 
 
 <!-- ====================================================================== -->
@@ -43,7 +43,7 @@ Features:
 *  [Periodic background sync](how-to/background-syncs.md#use-the-periodic-background-sync-api-to-regularly-get-fresh-content)
 *  [Notifications](how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
-:::image type="content" source="./media/devtools-tips.png" alt-text="The devtools-tips Progressive Web App displays a list of tips and tricks for DevTools.":::
+![The devtools-tips Progressive Web App displays a list of tips and tricks for DevTools.](./media/devtools-tips.png)
 
 
 <!-- ====================================================================== -->
@@ -60,7 +60,7 @@ Features:
 *  [Shortcuts](how-to/shortcuts.md)
 *  [File handling](how-to/handle-files.md)
 
-:::image type="content" source="./media/my-tracks.png" alt-text="The My Tracks app.":::
+![The My Tracks app.](./media/my-tracks.png)
 
 
 <!-- ====================================================================== -->
@@ -75,7 +75,7 @@ Features:
 *  [Background sync](how-to/background-syncs.md#use-the-background-sync-api-to-synchronize-data-with-the-server)
 *  [Notifications](how-to/notifications-badges.md#display-notifications-in-the-action-center)
 
-:::image type="content" source="./media/my-movies.png" alt-text="The My Movies app.":::
+![The My Movies app.](./media/my-movies.png)
 
 
 <!-- ====================================================================== -->
@@ -93,7 +93,7 @@ Features:
 *  [Protocol handling](how-to/handle-protocols.md)
 *  [Share Target](how-to/share.md#receiving-shared-content)
 
-:::image type="content" source="./media/bpm-techno.png" alt-text="The BPM Techno app.":::
+![The BPM Techno app.](./media/bpm-techno.png)
 
 
 <!-- ====================================================================== -->
@@ -107,4 +107,4 @@ Features:
 
 *  [Window Controls Overlay](how-to/window-controls-overlay.md)
 
-:::image type="content" source="./media/1div-demo.png" alt-text="The 1DIV app.":::
+![The 1DIV app.](./media/1div-demo.png)
