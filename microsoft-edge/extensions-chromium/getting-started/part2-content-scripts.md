@@ -56,9 +56,7 @@ First, update your `popup.html` file with some straightforward markup that displ
 
 After updating and opening the extension, a pop-up opens with a display button.
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon.":::
-   popup.html display after selecting the Extension icon
-:::image-end:::
+:::image type="content" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon.":::
 
 <!--![popup.html display after selecting the Extension icon] -->
 
@@ -214,16 +212,12 @@ When an event is processed by the listener, the function that is the first param
 
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows.
 
-:::image type="complex" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon.":::
-   popup.html display after selecting the Extension icon
-:::image-end:::
+:::image type="content" source="./media/part2-popupdialog.png" alt-text="popup.html display after selecting the Extension icon.":::
 
 <!-- ![popup.html display after selecting the Extension icon] -->
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
-:::image type="complex" source="./media/part2-showingimage.png" alt-text="The image showing in browser.":::
-   The image showing in browser
-:::image-end:::
+:::image type="content" source="./media/part2-showingimage.png" alt-text="The image showing in browser.":::
 
 You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
