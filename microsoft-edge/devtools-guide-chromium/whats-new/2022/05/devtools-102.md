@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/23/2022
+ms.date: 05/24/2022
 ---
 # What's New in DevTools (Microsoft Edge 102)
 
@@ -35,30 +35,16 @@ See also:
 <!-- Title: Export string objects from a heap snapshot -->
 <!-- Subtitle: Use the new "Save all to file" button to save string objects to a JSON file. -->
 
-In Microsoft Edge 102, when taking a heap snapshot in the **Memory** tool, you can now export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the new **Save all to file** button next to the `(string)` entry.  The **Memory** tool exports a JSON file containing all of the string objects from the heap snapshot.
+In Microsoft Edge 102, when taking a heap snapshot in the **Memory** tool, you can now export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the new **Save all to file** button next to the `(string)` entry.
 
 ![Save all strings from a heap snapshot to JSON.](devtools-102-images/save-heap-snapshot-strings-json.png)
-<!-- Instructions for screenshot
 
-1. In Microsoft Edge Canary/Dev, navigate to edge://version and ensure you're on 102+.
-2. Navigate to a Word doc in Word online: Word (office.com) (doesn't have to be this website but you want something that'll produce (string) objects.
-3. Open DevTools > Memory.
-4. Take a heap snapshot.
-5. In the Constructor section, scroll to the (string) entry.
-6. Take a screenshot and highlight the "Save all to file" button.
-7. Optionally, you can save the downloaded JSON file and open it in VS Code and take a screenshot of that as well.
+The **Memory** tool exports a JSON file that contains all of the string objects from the heap snapshot:
 
--->
-
-<!-- Video recording of feature in action
-Refer to attachment -->
+![Strings from the heap snapshot, in the JSON file.](devtools-102-images/heap-snapshot-strings-json-file.png)
 
 See also:
-* [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
-<!-- todo: update regular docs:
-*  break out (string) specifically
-*  talk about the new "Save all to file" button
--->
+* [Save and export strings from a heap snapshot to JSON](../../../memory-problems/heap-snapshots.md#save-and-export-strings-from-a-heap-snapshot-to-json) in _Record heap snapshots using the Memory tool_.
 
 
 <!-- ====================================================================== -->

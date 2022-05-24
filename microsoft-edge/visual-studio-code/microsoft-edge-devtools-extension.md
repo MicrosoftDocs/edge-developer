@@ -266,13 +266,11 @@ Click the **Width** and **Height** dropdown menus to change the viewport dimensi
 Click the **Rotate** button (![The Rotate button.](media/rotate-button.png)) to rotate the viewport.
 
 <!-- Toolbar item 5. Emulate CSS media features: -->
-<!-- Need light themed images for the CSS media query and visual deficiencies buttons and the precise UI names -->
 To emulate CSS media queries, click the **Emulate CSS media features** (![Emulate CSS media features.](media/emulate-css-media-features-button.png)) button.  This button enables you to test how your product looks in print mode.  You can switch between dark and light mode, and emulate forced colors:
 
 ![Browser preview in the extension showing the web product in forced color mode](media/edge-for-code-forced-colours.msft.png)
 
 <!-- Toolbar item 6. Emulate vision deficiencies: -->
-<!-- Need light themed images for the CSS media query and visual deficiencies buttons and the precise UI names -->
 Click the **Emulate vision deficiencies** (![The Emulate vision deficiencies button.](media/emulate-vision-deficiencies-button.png)) icon/button to try the experience of the current web project with different visual deficiencies.  This button lets you test your product in a blurred mode or in different color deficiencies:
 
 ![Browser preview in the extension showing the web product in a blurred emulation](media/edge-for-code-blurred.msft.png)
