@@ -174,7 +174,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 **To restore zoom to 100%:**
 
 1. Make sure focus is on the desired part of the browser, either DevTools or the rendered page.
-1. Press `Ctrl`+`0` (Windows or Linux) or `Command`+`0` (macOS).
+1. Press `Ctrl`+`0` or `Ctrl`+`NumPad0` (Windows or Linux), or `Command`+`0` (macOS).
 
 **To zoom DevTools Settings:**
 

@@ -22,6 +22,11 @@ ms.date: 03/24/2022
    limitations under the License.  -->
 # Record heap snapshots using the Memory tool
 
+<!-- todo:
+*  break out (string) specifically 
+*  talk about the new "Save all to file" button
+-->
+
 Use the heap profiler in the **Memory** tool to do the following:
 *  Record JavaScript heap (JS heap) snapshots.
 *  Analyze memory graphs.
