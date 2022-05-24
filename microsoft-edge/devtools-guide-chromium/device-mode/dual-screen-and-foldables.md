@@ -23,7 +23,7 @@ The APIs are available in Microsoft Edge 97 and later. If you are not using Micr
 
 [Turn on experimental Web Platform APIs](#turn-on-experimental-apis) and use the [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) and [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments) to enhance your website (or app) for dual-screen and foldable devices.
 
-:::image type="content" source="../media/experiments-surface-duo-emulation.msft.png" alt-text="Emulating Surface Duo in Microsoft Edge." lightbox="../media/experiments-surface-duo-emulation.msft.png":::
+![Emulating Surface Duo in Microsoft Edge.](../media/experiments-surface-duo-emulation.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -60,7 +60,7 @@ The emulated display matches the way your website (or app) renders in the [Micro
 
 The [Device Toolbar](../device-mode/index.md#simulate-a-mobile-viewport) has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** (![Rotate.](../media/rotate-dark-icon.msft.png)) to rotate the viewport to landscape orientation. Combine the feature with **Span** (![Span.](../media/span-dark-icon.msft.png)) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, the features allow you to test your website or app in all four possible postures and orientations.
 
-:::image type="content" source="../media/experiments-dual-screen-emulation-rotate-span.msft.png" alt-text="Matrix of postures and orientations for dual-screen and foldable devices." lightbox="../media/experiments-dual-screen-emulation-rotate-span.msft.png":::
+![Matrix of postures and orientations for dual-screen and foldable devices.](../media/experiments-dual-screen-emulation-rotate-span.msft.png)
 
 The **Experimental Web Platform features** (![ExperimentalApis.](../media/experimental-apis-dark-icon.msft.png)) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon isn't highlighted.  To turn on (or off) the flag, either click the icon or go to `edge://flags` and toggle the flag.
 
