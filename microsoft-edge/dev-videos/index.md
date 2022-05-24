@@ -30,6 +30,18 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## Web Platform - Fully style the drop-down part of a `<select>` with the new `<selectmenu>` element
+
+_Published on 31 May 2022._
+
+[![Thumbnail image for the <selectmenu> video](./images/selectmenu.png)](https://www.youtube.com/watch?v=CHANGEWHENURLISAVAILABLE)
+
+Styling `<select>` elements has been difficult for a long time, but the experimental `<selectmenu>` element promises to overcome the remaining limitations in the future and let web developers style all parts of the element.
+
+To learn more about styling `<select>` elements and the new `<selectmenu>` element, see  on our blog [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/).
+
+
+<!-- ====================================================================== -->
 ## Web Platform - Create a scroll-linked animation without JavaScript
 
 _Published on 12 May 2022._
