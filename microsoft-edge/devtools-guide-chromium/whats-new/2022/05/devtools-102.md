@@ -72,12 +72,7 @@ See also:
 <!-- Subtitle: Use new filters in the Retainers section of a heap snapshot to simplify retainer paths. -->
 
 In previous versions of Microsoft Edge, cycles and internal nodes were displayed in the **Retainers** section of a heap snapshot.
-_Cycles_ refer to nodes that appear at least twice in a retainer path, with one of those appearances being later in the path than the other.
-In terms of freeing up memory, removing the first appearance is the most important.  The second and potentially subsequent appearances are still displayed in the Retainers section.
-Internal nodes are objects specific to V8, the JavaScript engine in Microsoft Edge, that are also displayed in the **Retainers** section.
-
-In Microsoft Edge 102, the Retainers section in the Memory tool now has new filters to hide cycles and hide internal nodes in the retainer path.
-Using these filters help simplify the retainer path.
+To help simplify the retainer path, in Microsoft Edge 102, the **Retainers** section in the **Memory** tool now has new filters to hide cycles and to hide internal nodes in the retainer path.
 
 ![New filters for retainers in the Memory tool.](devtools-102-images/filters-retainers-memory-tool.png)
 <!-- Instructions for screenshot
@@ -93,15 +88,22 @@ Take a screenshot before and after with the filter
 draw red boxes around what was there before (grayed out)
 -->
 
+_Cycles_ are nodes that appear at least twice in a retainer path.
+One appearance of a node is earlier in the retainer path, and other appearances of that node are later in the retainer path.
+To free up memory, it's most important to remove the occurrence of the node which appears first in the retainer path.
+The second and potentially subsequent appearances of the node are still displayed in the **Retainers** section.
+
+_Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).  Internal nodes are also displayed in the **Retainers** section.
+
+
 <!--
 Video recording of feature in action
 Refer to attachment
 -->
 
 See also:
-* [Memory terminology](../../../memory-problems/memory-101.md)
+* [Cycles](../../../memory-problems/memory-101.md#cycles) in _Memory terminology_.
 <!-- todo: update regular docs:
-*  Add instructions on what cycles are.
 *  Add how to use the filters to hide cycles.
 -->
 

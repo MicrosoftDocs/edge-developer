@@ -203,6 +203,45 @@ Each wrapper object holds a reference to the corresponding native object, for re
 
 
 <!-- ====================================================================== -->
+## Cycles
+
+_Cycles_ are nodes that appear at least twice in a retainer path.
+One appearance of a node is earlier in the retainer path, and other appearances of that node are later in the retainer path.
+
+To free up memory, it's most important to remove the occurrence of the node which appears first in the retainer path.
+The second and potentially subsequent appearances of the node are still displayed in the **Retainers** section.
+
+
+### Using filters to hide cycles
+
+<!-- todo -->
+
+Cycles are displayed in the **Retainers** section of a heap snapshot.
+To help simplify the retainer path, the **Retainers** section in the **Memory** tool has filters to hide cycles.
+
+
+
+<!-- ====================================================================== -->
+## Cycles
+
+_Cycles_ are nodes that appear at least twice in a retainer path.
+One appearance of a node is earlier in the retainer path, and other appearances of that node are later in the retainer path.
+
+To free up memory, it's most important to remove the occurrence of the node which appears first in the retainer path.
+The second and potentially subsequent appearances of the node are still displayed in the **Retainers** section.
+
+
+### Using filters to hide cycles
+
+Cycles are displayed in the **Retainers** section of a heap snapshot.
+To help simplify the retainer path, the **Retainers** section in the **Memory** tool has filters to hide cycles.
+<!-- todo -->
+
+You can also filter out the display of internal nodes so that they aren't displayed in the **Retainers** section.
+_Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
