@@ -217,7 +217,9 @@ The second and potentially subsequent appearances of the node are still displaye
 Cycles are displayed in the **Retainers** section of a heap snapshot.
 To help simplify the retainer path, the **Retainers** section in the **Memory** tool has filters to hide cycles.
 
-In the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (indicated by being grayed out) is displayed:
+In the **Retainers** section, a cycled node is indicated by being grayed out.
+
+In the following image, in the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (grayed out) is displayed:
 
 ![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected.](memory-101-images/filters-retainers-memory-tool-no-hide-cycled.png)
 

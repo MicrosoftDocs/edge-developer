@@ -56,11 +56,13 @@ See also:
 In previous versions of Microsoft Edge, cycles and internal nodes were displayed in the **Retainers** section of a heap snapshot.
 To help simplify the retainer path, in Microsoft Edge 102, the **Retainers** section in the **Memory** tool now has new filters to hide cycles and to hide internal nodes in the retainer path.
 
-In the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (indicated by being grayed out) is displayed:
+In the **Retainers** section, a cycled node is indicated by being grayed out.
+
+In the following image, in the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (grayed out) is displayed:
 
 ![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected.](devtools-102-images/filters-retainers-memory-tool-no-hide-cycled.png)
 
-In the **Filter edges** dropdown menu, **Hide cycled** is selected, so the cycled node is not displayed:
+In the following image, in the **Filter edges** dropdown menu, **Hide cycled** is selected, so the cycled node is not displayed:
 
 ![In the 'Filter edges' dropdown menu, 'Hide cycled' is selected.](devtools-102-images/filters-retainers-memory-tool-hide-cycled.png)
 
