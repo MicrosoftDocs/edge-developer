@@ -38,7 +38,7 @@ We recommend using the Canary channel.  The minimum required version is 82.0.488
 <!-- ====================================================================== -->
 ## Install the WebView2 Runtime
 
-1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
+1. Optionally, install the WebView2 Runtime.  To do that, go to [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
 If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
 
@@ -70,21 +70,21 @@ To download the repo (as a `.zip` file):
 
    In Microsoft Edge, if the **Download** pop-up isn't visible, click **Settings and more** (...) and then click **Downloads**.
 
-1. In the **Downloads** pop-up window, hover to the right of `WebView2Samples-master.zip` and then click the **Show in folder** (folder) icon.
+1. In the **Downloads** pop-up window, hover to the right of `WebView2Samples-main.zip` and then click the **Show in folder** (folder) icon.
 
    It is recommended that you don't click the **Open file** link, because that immediately unzips the file in your Downloads area, which could make it harder (and slower) to move to your desired location.
 
-1. Copy or cut the `WebView2Samples-master.zip` file from your Downloads directory to a regular directory, such as `Documents`.
+1. Copy or cut the `WebView2Samples-main.zip` file from your Downloads directory to a regular directory, such as `Documents`.
 
-1. Unzip the .`WebView2Samples-master.zip` file and note the location of the unzipped files.
+1. Unzip the .`WebView2Samples-main.zip` file and note the location of the unzipped files.
 
    ![The downloaded, unzipped WebView2Samples repo.](../media/downloaded-samples-repo-unzipped.png)
 
 1. Study the breakout of main directories.
 
-   `-master` is the name of the repo branch that this downloaded directory snapshot represents.  It is possible to switch to a different branch at GitHub and then download, for example, `WebView2Samples-smoketest-1.0.1054.27-prerelease-testing.zip`.  In that case, the downloaded `.zip` file is a snapshot of the `smoketest-1.0.1054.27-prerelease-testing` branch of the repo.  This documentation assumes that you downloaded the `master` branch of the repo.
+   `-main` is the name of the repo branch that this downloaded directory snapshot represents.  It is possible to switch to a different branch at GitHub and then download, for example, `WebView2Samples-smoketest-1.0.1054.27-prerelease-testing.zip`.  In that case, the downloaded `.zip` file is a snapshot of the `smoketest-1.0.1054.27-prerelease-testing` branch of the repo.  This documentation assumes that you downloaded the `main` branch of the repo.
 
-1. Recommended: Rename the root directory from `WebView2Samples-master` to `WebView2Samples`, to match the repo name and path.
+1. Recommended: Rename the root directory from `WebView2Samples-main` to `WebView2Samples`, to match the repo name and path.
 
 
 <!-- The h3 section [Download or clone the WebView2Samples repo](../get-started/win32.md#download-or-clone-the-webview2samples-repo) in _Get started with WebView2 in Win32 apps_ links to here -->
@@ -183,7 +183,7 @@ After you download or clone the `WebView2Samples` repo, open a `.sln` file in Vi
 
 1. Open a `.sln` file in Visual Studio.  For example, open your local copy of [WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln).  This repo's solution files require Visual Studio, not Visual Studio Code.
 
-1. Open one of the `.sln` files.  For example, open your local copy of the main Win32 solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following projects:
+1. Open one of the `.sln` files.  For example, open your local copy of the main Win32 solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-main/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following projects:
 
    ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects.](media/machine-setup-solution-file-webview2samples.png)
 
@@ -214,13 +214,13 @@ Install Visual Studio workloads if prompted.  When you open a `.sln` file from t
 
    ![Visual Studio installer, installing the .NET desktop development workload.](../media/visual-studio-installer-for-platform-workload.png).
 
-   A Migration Report log file page might open, such as at `file:///C:/Users/username/Documents/WebView2Samples-master/WebView2Samples-master/SampleApps/UpgradeLog.htm`:
+   A Migration Report log file page might open, such as at `file:///C:/Users/username/Documents/WebView2Samples-main/WebView2Samples-main/SampleApps/UpgradeLog.htm`:
 
    ![Visual Studio 2022 workload installer Migration Report for the multi-platform, comprehensive-API sample.](../media/migration-report-while-installing-workload.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
-   Above, the `-master` directory suffix is present for the downloaded `.zip` file of the repo, not if you cloned the repo.
+   Above, the `-main` directory suffix is present for the downloaded `.zip` file of the repo, not if you cloned the repo.
 
    Visual Studio opens the selected `.sln` file in Solution Explorer:
 

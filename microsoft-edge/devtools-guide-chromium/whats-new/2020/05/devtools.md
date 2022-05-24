@@ -222,7 +222,7 @@ When logging a `Promise`, the **Console** incorrectly provided `PromiseStatus` v
 
 ![An example of the Console using the old resolved terminology.](../../media/2020/05/resolved.msft.png)
 
-The **Console** now uses the term `fulfilled`, which aligns with the `Promise` specification.  For more information about the `Promise` specification, see [States and Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).
+The **Console** now uses the term `fulfilled`, which aligns with the `Promise` specification.  For more information about the `Promise` specification, see [States and Fates on GitHub](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md).<!-- changing master to main doesn't work 5/19/2022 -->
 
 ![An example of the Console using the new fulfilled terminology.](../../media/2020/05/fulfilled.msft.png)
 

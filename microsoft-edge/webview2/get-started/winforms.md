@@ -55,7 +55,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 4 - Install the WebView2 Runtime (optional)
 
-1. Optionally, install the [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2).
+1. Optionally, install the WebView2 Runtime.  See [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2).
 
    If unsure, skip this step; you can use the Microsoft Edge preview channel from the previous step instead.
   
@@ -585,6 +585,7 @@ Congratulations, you built your first WebView2 app!
 <!-- ====================================================================== -->
 ## See also
 
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:

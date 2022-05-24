@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/05/2022
+ms.date: 05/24/2022
 ---
 # Videos about web development with Microsoft Edge
 
@@ -27,6 +27,40 @@ To add a new video:
 - Add a markdown image below the date, with the thumbnail you added before, and link this image tag to the YouTube video.
 - Place the description below that, fixing any links that came from YouTube and that might have been shortened.
 -->
+
+
+<!-- ====================================================================== -->
+## DevTools - Advanced issues filtering in Edge DevTools and VSCode
+
+_Published on 20 May 2022._
+
+[![Thumbnail image for the DevTools issues filtering video](./images/advanced-issues-filtering.png)](https://www.youtube.com/watch?v=_dePgo89bq0)
+
+Every web product has issues. The Microsoft Edge DevTools **Issues** tool analyzes the current webpage and reports issues grouped by type including accessibility, compatibility, performance, and more.
+
+If you have VS Code, the Microsoft Edge DevTools extension for VS Code makes issues available in your source code directly.
+
+Released products can also have many issues. Based on your feedback, we added useful ways to filter issues. You can disable issues coming from third-party libraries for example, and choose which browsers to view issues about.
+
+To learn more about the Issues tool, see [Find and fix problems using the Issues tool](../devtools-guide-chromium/issues/index.md).
+
+To learn more about the Microsoft Edge DevTools extension for VS Code, see [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md).
+
+
+<!-- ====================================================================== -->
+## Web Platform - Create a scroll-linked animation without JavaScript
+
+_Published on 12 May 2022._
+
+[![Thumbnail image for the scroll-linked animation API video](./images/scroll-linked-animations.png)](https://www.youtube.com/watch?v=Q0nhiHVVnvI)
+
+Learn about the upcoming CSS scroll-linked animations feature and how it can be used to create a reading progress indicator on a webpage, without using JavaScript.
+
+CSS scroll-linked animations is an experimental feature in Microsoft Edge.  To try this feature, go to `edge://flags` and then enable the **Experimental Web Platform features** setting.
+
+To play with the demo application that's shown in the video, see the rendered [reader demo](https://microsoftedge.github.io/Demos/reader/) and its [source code](https://github.com/MicrosoftEdge/Demos/tree/main/reader).
+
+To learn more about the CSS scroll-linked animations feature, see [@scroll-timeline](https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline) at MDN.
 
 
 <!-- ====================================================================== -->

@@ -133,7 +133,7 @@ Service workers are defined in a special JavaScript file, described in [Using Se
 
 To build a service worker in your project, use the **Cache-first network** Service Worker recipe from PWA Builder, as follows.
 
-1. Copy the source files [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js) and [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js) to the `public` folder in your web app project.
+1. Copy the source files [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js)<!-- changing master to main doesn't work 5/19/2022 --> and [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js)<!-- changing master to main doesn't work 5/19/2022 --> to the `public` folder in your web app project.
 
 1.  In Visual Studio Code, open `/public/index.html`.
 
@@ -183,7 +183,7 @@ To build a robust, real-world PWA, consider the following best practices for web
 
 ### Cross-browser compatibility
 
-Test your app for [cross-browser compatibility](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).  Make sure your PWA works, by testing it in different browsers and environments.  See [Tools](https://developer.microsoft.com/microsoft-edge/tools/remote) at _Microsoft Edge Developer_.
+Test your app for [cross-browser compatibility](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).  Make sure your PWA works, by testing it in different browsers and environments.  See [Tools](https://developer.microsoft.com/microsoft-edge/tools/) at _Microsoft Edge Developer_.
 
 ### Responsive design
 

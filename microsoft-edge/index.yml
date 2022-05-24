@@ -368,8 +368,8 @@ additionalContent:
           links:
             - text: How to detect Microsoft Edge in your website
               url: /microsoft-edge/web-platform/user-agent-guidance
-            - text: Platform Status
-              url: https://developer.microsoft.com/microsoft-edge/platform/status
+            - text: Microsoft Edge Platform Status
+              url: https://developer.microsoft.com/microsoft-edge/status
             - text: Visual Studio Code
               url: /microsoft-edge/visual-studio-code/index
             - text: Privacy Whitepaper

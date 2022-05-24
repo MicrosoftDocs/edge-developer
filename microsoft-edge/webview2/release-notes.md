@@ -75,8 +75,8 @@ The following APIs are promoted to stable in this prerelease SDK:
 * The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
 * The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1248-prerelease&preserve-view=true) which allows developers to programmatically clear specific data types for a duration:
-	* `clearBrowsingDataInTimeRange`
-	* `clearBrowsingDataAll`
+   * `clearBrowsingDataInTimeRange`
+   * `clearBrowsingDataAll`
 
 #### Bug Fixes
   

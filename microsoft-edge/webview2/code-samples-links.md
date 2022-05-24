@@ -38,7 +38,7 @@ The `WebView2Samples` repo includes samples that demonstrate the WebView2 contro
 
 1. In your resulting, local copy of the repo directory structure, find `*.sln` files.
 
-1. Open one of the `.sln` files.  For example, open your local copy of the multi-platform solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-master/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
+1. Open one of the `.sln` files.  For example, open your local copy of the multi-platform solution file [WebView2Samples/SampleApps/WebView2Samples.sln](https://github.com/MicrosoftEdge/WebView2Samples/blob/main/SampleApps/WebView2Samples.sln) (downloaded as path `WebView2Samples-main/SampleApps/WebView2Samples.sln`) in Microsoft Visual Studio.  When you open that solution file in Visual Studio, **Solution Explorer** contains the following WebView2 samples, as projects:
 
    ![Solution Explorer for the WebView2Samples repo, showing the WebView2 samples as projects.](media/solution-file-webview2samples.png)
 
@@ -111,7 +111,7 @@ This section shows the path to every `.sln` and `README.md` file, resulting from
 
 The `WebView2Samples` repo contains multiple `README.md` files and `.sln` files, listed below.  When you download or clone the repo, you can then view any of these `README.md` files in Visual Studio.  Or, view them online at the GitHub repo.
 
-In the downloaded `.zip` file, the root directory is named `WebView2Samples-master` rather than `WebView2Samples`, representing the `master` branch of the repo.
+In the downloaded `.zip` file, the root directory is named `WebView2Samples-main` rather than `WebView2Samples`, representing the `main` branch of the repo.
 
 In the links below, the local directory path to the .sln or README.md is shown.  The link goes to the GitHub repo's directory level where you can see the `.sln` or `README.md` file in a directory listing.  At GitHub, the README is automatically appended to the webpage of the directory that contains the README file.
 <!--
@@ -181,13 +181,13 @@ These don't use `.sln` files.
 
 **Downloaded repo has longer root directory name**
 
-If you download the repo (as a `.zip` file), the root directory name has `-master` appended.  To match the name of the repo (`WebView2Samples`), you can rename the root directory.
+If you download the repo (as a `.zip` file), the root directory name has `-main` appended.  To match the name of the repo (`WebView2Samples`), you can rename the root directory.
 
 
 The Win32-specific solution in the `GettingStartedGuides` directory has the path:
 
 *  If you downloaded the repo: 
-   * `WebView2Samples-master/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
+   * `WebView2Samples-main/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
 
 *  If you cloned the repo: 
    * `WebView2Samples/GettingStartedGuides/Win32_GettingStarted/WebView2GettingStarted.sln`
@@ -196,7 +196,7 @@ The Win32-specific solution in the `GettingStartedGuides` directory has the path
 The main, multi-project Win32 solution in the `SampleApps` directory has the path:
 
 *  If you downloaded the repo: 
-   * `WebView2Samples-master/SampleApps/WebView2Samples.sln`
+   * `WebView2Samples-main/SampleApps/WebView2Samples.sln`
 
 *  If you cloned the repo: 
    * `WebView2Samples/SampleApps/WebView2Samples.sln`

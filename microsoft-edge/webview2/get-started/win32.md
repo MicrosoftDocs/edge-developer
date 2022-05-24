@@ -690,7 +690,7 @@ Congratulations, you built your first WebView2 app!  Your development environmen
 <!-- ====================================================================== -->
 ## See also
 
-Developer.microsoft.com:
+developer.microsoft.com:
 * [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2 features at developer.microsoft.com.
 
 Local pages:

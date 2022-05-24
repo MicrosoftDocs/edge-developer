@@ -22,5 +22,5 @@ These articles cover how to set up your development tools and create an initial 
 <!-- ====================================================================== -->
 ## See also
 
-* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2, at developer.microsoft.com.
+* [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2) - initial introduction to WebView2, at `developer.microsoft.com`.
 * [Sample Code for WebView2](../code-samples-links.md) - a guide to the `WebView2Samples` repo.
