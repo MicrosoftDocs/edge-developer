@@ -18,17 +18,11 @@ ms.date: 05/23/2022
 <!-- Title: New browser preview and sourcemap support in Visual Studio Code -->
 <!-- Subtitle: Emulate devices and different rendering modes and debug Sass/React. -->
 
-The Microsoft Edge DevTools extension for Visual Studio Code now has a new browser preview that allows you to enable<!--select?--> different devices.  You can also preview the current project in different modes like Dark, Light, Print, and High Contrast.  To make accessibility testing easier, you can also show a blurred version or simulate different color deficiencies.  
+The Microsoft Edge DevTools extension for Visual Studio Code now has a browser preview that allows you to emulate different devices.  You can also preview the current project in different modes, such as Dark, Light, Print, and High Contrast.  To make accessibility testing easier, you can also show a blurred version, or simulate different color deficiencies.
 
 Other new features include a simpler way to toggle CSS mirroring, which now also supports sourcemaps.  This means that you can debug and modify CSS created by Sass, React, and other abstractions live in the browser and see the changes in the source files.
 
 ![DevTools extension: New browser with device and mode emulation and sourcemap support.](devtools-102-images/devtools-ext-new-browser.png)
-<!-- Instructions for screenshot
-For the new screencast/browser we have this in docs:
-[Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation) in _Microsoft Edge DevTools extension for Visual Studio Code_ -->
-
-<!-- Video recording of feature in action
-See work item -->
 
 See also:
 * [Device and state emulation](../../../../visual-studio-code/microsoft-edge-devtools-extension.md#device-and-state-emulation) in _Microsoft Edge DevTools extension for Visual Studio Code_.
@@ -41,10 +35,11 @@ See also:
 <!-- Title: Export string objects from a heap snapshot -->
 <!-- Subtitle: Use the new "Save all to file" button to save string objects to a JSON file. -->
 
-In Microsoft Edge 102, when taking a heap snapshot in the Memory tool, you can now export all string objects from the snapshot to a JSON file. From the Memory tool, select the new **Save all to file** button next to the `(string)` entry in the Constructor section. The Memory tool will export a JSON file containing all of the string objects from the heap snapshot. 
+In Microsoft Edge 102, when taking a heap snapshot in the **Memory** tool, you can now export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the new **Save all to file** button next to the `(string)` entry.  The **Memory** tool exports a JSON file containing all of the string objects from the heap snapshot.
 
 ![Save all strings from a heap snapshot to JSON.](devtools-102-images/save-heap-snapshot-strings-json.png)
 <!-- Instructions for screenshot
+
 1. In Microsoft Edge Canary/Dev, navigate to edge://version and ensure you're on 102+.
 2. Navigate to a Word doc in Word online: Word (office.com) (doesn't have to be this website but you want something that'll produce (string) objects.
 3. Open DevTools > Memory.
@@ -52,6 +47,7 @@ In Microsoft Edge 102, when taking a heap snapshot in the Memory tool, you can n
 5. In the Constructor section, scroll to the (string) entry.
 6. Take a screenshot and highlight the "Save all to file" button.
 7. Optionally, you can save the downloaded JSON file and open it in VS Code and take a screenshot of that as well.
+
 -->
 
 <!-- Video recording of feature in action
@@ -60,7 +56,7 @@ Refer to attachment -->
 See also:
 * [Record heap snapshots using the Memory tool](../../../memory-problems/heap-snapshots.md)
 <!-- todo: update regular docs:
-*  break out (string) specifically 
+*  break out (string) specifically
 *  talk about the new "Save all to file" button
 -->
 
@@ -164,7 +160,7 @@ And the screenshots in: PR: [A11y] Various high contrast fixes
 To show the current behavior, put Windows in a contrast theme by opening **Windows settings** > **Accessibility** > **Contrast themes**.
 Open DevTools. Not in Focus Mode, take screenshots of the Detached Elements tool and the dropdown menus in the Issues tool. In Focus Mode, take screenshots of the Activity Bar.
 -->
- 
+
 <!-- Video recording of feature in action
 Refer to the attachments -->
 
@@ -212,7 +208,7 @@ Repeat Steps 2-3 in Microsoft Edge Stable (ensure you're on version 101) and you
 Refer to attachments -->
 
 See also:
-* [Capture screenshots during page load](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/network/reference#capture-screenshots-during-page-load) in _Network features reference_, about configurable settings of the Network tool.
+* [Capture screenshots during page load](../../../network/reference.md#capture-screenshots-during-page-load) in _Network features reference_, about configurable settings of the Network tool.
 
 
 <!-- ====================================================================== -->
