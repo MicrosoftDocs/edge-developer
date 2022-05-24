@@ -81,33 +81,21 @@ See also:
 <!-- Title: Improving the Inspect element tooltip -->
 <!-- Subtitle: The Inspect element tooltip now persists until you dismiss it, improving accessibility and ease of use. -->
 
-Previously, in the **Elements** tool, the hover overlay for the node that you selected constantly changed when you used the **Select Element** feature.
-The previous design was difficult to use with a screen magnifier.
+Previously, in the **Elements** tool, the hover overlay for the node that you selected constantly changed when you used the **Inspect tool** (![Inspect tool icon.](../../../media/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier.
 
 When using the **Inspect** tool, to keep the node (and overlay) selected,<!--?--> there's now a `Ctrl`+`Alt` key modifier.
-Now, if you hold down `Ctrl`+`Alt`, when you move the mouse pointer over the rendered webpage, the existing tooltip and grid color overlay for the Inspect tool remains, as if locked.
-
-Also, you can now press `Ctrl`<!--?--> to hide the Inspect tool's tooltip overlay while you move the mouse pointer over the rendered webpage.
+Now, if you press and hold `Ctrl`+`Alt`, when you move the mouse pointer over the rendered webpage, the existing tooltip and grid color overlay for the Inspect tool remains, as if locked:
+<!-- todo: macOS modifiers? -->
 
 ![Inspect element tooltip now persists.](devtools-102-images/inspect-element-tooltip-persists.png)
-<!-- screenshot instructions:
-1. Set magnifier in windows settings to > 200%.
-2. Inspect the web page (microsoft.com is fine).
-3. Make sure the Elements tool tab is open.
-4. Click the Inspect element tool.
-5. Move to the content of the rendered webpage (not inside devtools).
-6. Try navigating without key modifiers.  You will start going through nodes/elements as soon as mouse starts moving.
-After the fix:
-Element keeps selected and you can move the mouse around (allowing you to navigate the screen and keep context)
--->
 
-<!-- work item has GIF -->
+Also, you can now press `Ctrl`<!--todo: macOS?--> to hide the Inspect tool's tooltip overlay while you move the mouse pointer over the rendered webpage.
 
 For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
 See also:
-*  [Analyze pages using the Inspect tool](../../../css/inspect.md)
-*  [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
+*  [Persisting the Inspect tool's tooltip and grid color overlay](../../../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_.
+*  [Inspect an element on the page](../../../accessibility/navigation.md#inspect-an-element-on-the-page) in _Navigate DevTools with assistive technology_.
 
 
 <!-- ====================================================================== -->
@@ -145,16 +133,11 @@ See also:
 <!-- Title: Help icons for Experiments checkboxes -->
 <!-- Subtitle: In Settings > Experiments page, each experimental feature's checkbox has a Help (?) icon next to it for more information.. -->
 
-In the **Settings** > **Experiments** page, checkboxes now have a Help ![Help icon for Settings > Experiments checkboxes.](../04/devtools-101-images/settings-experiments-help-icon.png) icon:
+In the **Settings** > **Experiments** page, checkboxes now have a **Help** (![Help icon for Settings > Experiments checkboxes.](devtools-102-images/settings-experiments-help-icon.png)) button:
 
 ![Help icons for Settings > Experiments checkboxes.](devtools-102-images/settings-experiments-help-icons.png)
 
-Click a Help icon to get more information about an experimental feature.  The Help icon opens the relevant section in [Experimental features](../../../experimental-features/index.md).
-
-<!--
-Video recording of feature in action
-See attachment
--->
+To get more information about an experimental feature, click a **Help** (![Help icon for Settings > Experiments checkboxes.](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features](../../../experimental-features/index.md) article.
 
 
 <!-- ====================================================================== -->

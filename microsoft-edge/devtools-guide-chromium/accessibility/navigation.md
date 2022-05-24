@@ -129,6 +129,9 @@ Opening a tool this way puts focus in the content area of the tool.  In the case
 
 The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, see [Navigate the **DOM Tree** with a keyboard](../dom/index.md#navigate-the-dom-tree-with-a-keyboard).
 
+To lock the **Inspect** tool's tooltip and grid color overlay while you move the mouse over the rendered webpage, press and hold `Ctrl`+`Alt`.<!-- todo: macOS modifiers? -->  See [Persisting the Inspect tool's tooltip and grid color overlay](../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_.
+
+
 ### Copy the code for an element in the DOM Tree
 
 1. Right-click a node in the **DOM Tree**.
@@ -141,6 +144,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  **Copy outerHTML** often doesn't select the current node, but instead selects the parent node.  However, the contents of the element should still be in the copied `outerHTML`.
 
+
 ### Modify the attributes of an element in the DOM Tree
 
 *  With focus on a node in the **DOM Tree**, press `Enter` to make it editable.
@@ -152,6 +156,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 #### Known issues
 
 *  When you type into the text input, you get no feedback.  If you make a typo and use the arrow keys to explore your input, you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.
+
 
 ### Edit the HTML of an element in the DOM Tree
 
@@ -174,6 +179,7 @@ The **Elements** tool contains additional tabs for inspecting things like the CS
 *  Press `Right Arrow` to explore other available tabs.
 
 The **DOM Tree** turns elements with `href` attributes into focusable links, so you may need to press `Tab` more than once to reach the **Styles** pane.
+
 
 ### Known issues
 
