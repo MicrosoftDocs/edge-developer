@@ -85,7 +85,7 @@ Take a recording in the **Performance** tool.  Check the recording for large `Re
 
 Select a `Recalculate Style` event to view more information about it in the **Details** pane.  If the style changes are taking a long time, that is a performance hit.  If the style calculations are affecting a large number of elements, that is another area with room for improvement.
 
-:::image type="content" source="../media/rendering-tools-performance-recalculate-style-summary.msft.png" alt-text="Long recalculate style." lightbox="../media/rendering-tools-performance-recalculate-style-summary.msft.png":::
+![Long recalculate style.](../media/rendering-tools-performance-recalculate-style-summary.msft.png)
 
 To reduce the impact of `Recalculate Style` events:
 
@@ -132,7 +132,7 @@ As a general rule of thumb, if you ask for a geometric value back from the DOM b
 
 The **Performance** pane identifies when a page causes forced synchronous layouts.  These `Layout` events are marked with red bars.
 
-:::image type="content" source="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png" alt-text="Forced synchronous layout." lightbox="../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png":::
+![Forced synchronous layout.](../media/rendering-tools-jank-performance-recalculate-style-summary.msft.png)
 
 "Layout thrashing" is a repetition of forced synchronous layout conditions.  This occurs when JavaScript writes and reads from the DOM repeatedly, which forces the browser to recalculate the layout over and over.  To identify layout thrashing, look for a pattern of multiple forced synchronous layout warnings.  Review the previous figure.
 
@@ -162,7 +162,7 @@ Compositing is where the painted parts of the page are put together for displayi
 Want to know how long painting takes or how often painting occurs?  Check the [Enable advanced paint instrumentation](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation) setting in the **Performance** panel and then take a recording.  If most of your rendering time is spent painting, you have paint problems.
 
 <!--
-:::image type="content" source="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png" alt-text="Long paint times in timeline recording." lightbox="../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png":::
+![Long paint times in timeline recording.](../media/rendering-tools-jank-performance-advanced-paint-instrumentation-summary.msft.png)
 -->
 
 <!--
