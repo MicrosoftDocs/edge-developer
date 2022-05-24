@@ -47,13 +47,13 @@ The DevTools heap profiler shows memory distribution used by your page's JavaScr
 
 1. Click the **Take snapshot** button, and then click **Start**.  Or, press `Ctrl`+`E` (Windows, Linux) or `Cmd`+`E` (macOS).
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Selecting the 'Heap snapshot' profiling type in the Memory tool." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+![Selecting the 'Heap snapshot' profiling type in the Memory tool.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png)
 
 **Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click the snapshot icon to view it.
 
 After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](memory-101.md#object-sizes).
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Total size of reachable objects." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+![Total size of reachable objects.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png)
 
 > [!NOTE]
 > Only reachable objects are included in snapshots.  Also, taking a snapshot always starts with a garbage collection.
@@ -64,7 +64,7 @@ After the snapshot has been loaded into DevTools and has been parsed, the number
 
 Click the **Clear all profiles** icon to remove snapshots (both from DevTools and any memory associated with the renderer process).
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Remove snapshots." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+![Remove snapshots.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png)
 
 Closing the DevTools window doesn't delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
@@ -89,7 +89,7 @@ View snapshots from different perspectives for different tasks.
 
 To switch between views, use the selector at the top of the view.
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Switch views selector." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+![Switch views selector.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png)
 
 > [!NOTE]
 > Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code aren't captured.  Also, non-string values such as numbers aren't captured.
@@ -98,7 +98,7 @@ To switch between views, use the selector at the top of the view.
 
 Initially, a snapshot opens in the Summary view, displaying object totals, which can be expanded to show instances:
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Summary view." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+![Summary view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png)
 
 Top-level entries are "total" lines.
 
@@ -118,7 +118,7 @@ After expanding a total line in the upper view, all of the instances are display
 
 **What do the various constructor (group) entries in the Heap profiler correspond to?**
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Constructor groups." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+![Constructor groups.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png)
 
 | Constructor (group) entry | Description |
 |:--- |:--- |
@@ -147,7 +147,7 @@ To verify that a certain application operation doesn't create leaks:
 
 In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Comparison view." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+![Comparison view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png)
 
 <!--todo: add HeapProfilingComparison section when available  -->
 
@@ -161,7 +161,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 | **GC roots** | The actual GC roots used by the garbage of the VM.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
 | **Native objects** | Browser objects "pushed" inside the JavaScript virtual machine (JavaScript VM) to allow automation, for example, DOM nodes, CSS rules.  |
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Containment view." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+![Containment view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png)
 
 <!--todo: add heap profiling containment section when available  -->
 
@@ -204,7 +204,7 @@ You may also be interested in following up the above demo with this example that
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
-:::image type="content" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
+![Name functions to distinguish between closures.](../media/memory-problems-domleaks.msft.png)
 -->
 
 
@@ -265,7 +265,7 @@ leafRef = null;
 
 The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for garbage-collection (GC).
 
-:::image type="content" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM subtrees." lightbox="../media/memory-problems-tree-gc.msft.png":::
+![DOM subtrees.](../media/memory-problems-tree-gc.msft.png)
 
 
 ### Example: Leaking DOM nodes
