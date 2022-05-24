@@ -34,7 +34,7 @@ To add a new video:
 
 _Published on 31 May 2022._
 
-[![Thumbnail image for the <selectmenu> video](./images/selectmenu.png)](https://www.youtube.com/watch?v=CHANGEWHENURLISAVAILABLE)
+[![Thumbnail image for the selectmenu video](./images/selectmenu.png)](https://www.youtube.com/watch?v=CHANGEWHENURLISAVAILABLE)
 
 Styling `<select>` elements has been difficult for a long time, but the experimental `<selectmenu>` element promises to overcome the remaining limitations in the future and let web developers style all parts of the element.
 
