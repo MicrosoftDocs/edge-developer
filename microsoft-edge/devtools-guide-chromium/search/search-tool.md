@@ -84,7 +84,7 @@ You can use regular expressions, including [JavaScript regular expressions](http
 
 After doing a search, click a result line to open the corresponding file.  The **Sources** tool opens in the main panel and loads the resource file, scrolled to the matching line.
 
-:::image type="content" source="../media/search-tool/search-tool-open-in-sources.png" alt-text="Clicking on a search line opens the Sources tool and loads the corresponding resource." lightbox="../media/search-tool/search-tool-open-in-sources.png":::
+![Clicking on a search line opens the Sources tool and loads the corresponding resource.](../media/search-tool/search-tool-open-in-sources.png)
 
 
 <!-- ====================================================================== -->
