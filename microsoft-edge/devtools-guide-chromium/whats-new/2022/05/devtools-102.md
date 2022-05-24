@@ -56,19 +56,13 @@ See also:
 In previous versions of Microsoft Edge, cycles and internal nodes were displayed in the **Retainers** section of a heap snapshot.
 To help simplify the retainer path, in Microsoft Edge 102, the **Retainers** section in the **Memory** tool now has new filters to hide cycles and to hide internal nodes in the retainer path.
 
-![New filters for retainers in the Memory tool.](devtools-102-images/filters-retainers-memory-tool.png)
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-In Edge Canary/Dev, navigate to edge://verson and ensure you're on version 102+
-Open DevTools > Memory and take a heap snapshot
-In the Retainers section, set the "Filter edges" dropdown to not select "Hide internal" or "Hide cycled"
-Now expand the Retainers section until you find a grayed out entry (this indicates a cycle)
-Image
-5. Now in the "Filter edges" dropdown, select "Hide cycled". Those grayed out entries will no longer appear.
-Image
-Take a screenshot before and after with the filter
-draw red boxes around what was there before (grayed out)
--->
+In the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (indicated by being grayed out) is displayed:
+
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected.](devtools-102-images/filters-retainers-memory-tool-no-hide-cycled.png)
+
+In the **Filter edges** dropdown menu, **Hide cycled** is selected, so the cycled node is not displayed:
+
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is selected.](devtools-102-images/filters-retainers-memory-tool-hide-cycled.png)
 
 _Cycles_ are nodes that appear at least twice in a retainer path.
 One appearance of a node is earlier in the retainer path, and other appearances of that node are later in the retainer path.
@@ -77,17 +71,8 @@ The second and potentially subsequent appearances of the node are still displaye
 
 _Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).  Internal nodes are also displayed in the **Retainers** section.
 
-
-<!--
-Video recording of feature in action
-Refer to attachment
--->
-
 See also:
 * [Cycles](../../../memory-problems/memory-101.md#cycles) in _Memory terminology_.
-<!-- todo: update regular docs:
-*  Add how to use the filters to hide cycles.
--->
 
 
 <!-- ====================================================================== -->
