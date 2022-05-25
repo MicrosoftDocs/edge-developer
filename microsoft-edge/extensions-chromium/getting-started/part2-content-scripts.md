@@ -214,8 +214,6 @@ Now, when you browse to any page and select your **Extension** icon, the pop-up 
 
 ![popup.html display after selecting the Extension icon.](./media/part2-popupdialog.png)
 
-<!-- ![popup.html display after selecting the Extension icon] -->
-
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
 ![The image showing in browser.](./media/part2-showingimage.png)
