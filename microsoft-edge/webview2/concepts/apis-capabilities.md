@@ -25,8 +25,8 @@ This article categorizes all the Win32 C++<!-- todo: C#? --> interfaces, at a hi
 *  `ICoreWebView2Settings`
 
 
-Most of the APIs are also available wrapped for .NET/C#: see [WebView2 Class](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.wpf.webview2).
-<!-- C# api ref links - see https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/context-menus?tabs=csharp#api-reference-overview -->
+Most of the APIs are also available wrapped for .NET/C#: see [WebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.wpf.webview2).
+<!-- C# api ref links - see https://docs.microsoft.com/microsoft-edge/webview2/how-to/context-menus?tabs=csharp#api-reference-overview -->
 
 
 <!-- ====================================================================== -->
