@@ -121,21 +121,22 @@ In previous versions of Microsoft Edge, the following items didn't render correc
 
 In Microsoft Edge 102, these issues have been fixed.
 
-![Improving accessibility in high contrast mode.](devtools-102-images/accessibility-high-contrast-mode.png)
-<!-- Instructions for screenshot
-Refer to the GIFs in: PR: Fix high contrast colors in Issues dropdown menus
-And the screenshots in: PR: [A11y] Various high contrast fixes
+The **Issues** tool's menus are displayed correctly in high-contrast mode:
 
-To show the current behavior, put Windows in a contrast theme by opening **Windows settings** > **Accessibility** > **Contrast themes**.
-Open DevTools. Not in Focus Mode, take screenshots of the Detached Elements tool and the dropdown menus in the Issues tool. In Focus Mode, take screenshots of the Activity Bar.
--->
+![Issues tool's menus in high-contrast mode.](devtools-102-images/high-contrast-issues-menus.png)
 
-<!-- Video recording of feature in action
-Refer to the attachments -->
+The **Detached Elements** tool's UI is displayed correctly in high-contrast mode:
+
+![Detached Elements tool in high-contrast mode.](devtools-102-images/high-contrast-detached-elements.png)
+
+The **Activity Bar** and **Quick View** (of Focus Mode) are displayed correctly in high-contrast mode:
+
+![Activity Bar in Focus Mode.](devtools-102-images/high-contrast-activity-bar.png)
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
+* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -168,9 +169,6 @@ Switch to Network tool
 Open Network settings by selecting the gear icon in the Network tool
 Make the DevTools very narrow
 Repeat Steps 2-3 in Microsoft Edge Stable (ensure you're on version 101) and you should see that the settings overlap with each other. -->
-
-<!-- Video recording of feature in action
-Refer to attachments -->
 
 See also:
 * [Capture screenshots during page load](../../../network/reference.md#capture-screenshots-during-page-load) in _Network features reference_, about configurable settings of the Network tool.
