@@ -14,11 +14,11 @@ A PWA can define how it should be displayed on mobile platforms, by using the [d
 
 By default, the app area starts immediately below the reserved title bar area:
 
-:::image type="content" source="../media/my-tracks-titlebar.png" alt-text="The default Windows app title bar shown on the My Tracks demo app.":::
+![The default Windows app title bar shown on the My Tracks demo app.](../media/my-tracks-titlebar.png)
 
 Displaying content where the title bar normally is can help PWAs feel more native.  Many desktop applications, such as Visual Studio Code, Microsoft Teams, and Microsoft Edge already do this:
 
-:::image type="content" source="../media/vscode-titlebar.png" alt-text="Visual Studio Code displays content in the title bar area.":::
+![Visual Studio Code displays content in the title bar area.](../media/vscode-titlebar.png)
 
 The Window Controls Overlay API does the following:
 *  Allows you to display web content over the entire surface area of the app.
@@ -37,7 +37,7 @@ To enable the Window Controls Overlay API:
 1.  Select **Search flags** and then type "window controls overlay".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="content" source="../media/enable-window-controls-overlay-experiment.png" alt-text="Enable the Window Controls Overlay API experiment.":::
+    ![Enable the Window Controls Overlay API experiment.](../media/enable-window-controls-overlay-experiment.png)
 
 The Window Controls Overlay API is also available as an origin trials feature.  For your app's users to benefit from the Window Controls Overlay without having to enable it in Microsoft Edge, you can use an origin trial.
 
@@ -61,7 +61,7 @@ The first thing to do is to enable the Window Controls Overlay feature in your a
 
 When the Window Controls Overlay feature is enabled, the user can choose to have the title bar or not, by clicking the title bar toggle button:
 
-:::image type="content" source="../media/my-tracks-titlebar-toggle.png" alt-text="Select the title bar toggle button.":::
+![Select the title bar toggle button.](../media/my-tracks-titlebar-toggle.png)
 
 Your code can't assume that the window controls overlay is displayed, because:
 *  The user can choose whether to display the title bar.
@@ -169,7 +169,7 @@ My Tracks is a PWA demo app that uses the Window Controls Overlay feature.
 
    The app now displays content all the way to the top of the window frame, where the title bar used to be.  The top area of the map is a drag handler, to let the user move the window.
 
-   :::image type="content" source="../media/my-tracks-draggable-titlebar.png" alt-text="The top area of the map can be used to move the window.":::
+   ![The top area of the map can be used to move the window.](../media/my-tracks-draggable-titlebar.png)
 
 The source code for this app is in the [My Tracks](https://github.com/captainbrosset/mytracks) repo.
 

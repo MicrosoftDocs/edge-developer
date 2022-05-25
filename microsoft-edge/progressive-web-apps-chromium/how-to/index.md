@@ -51,7 +51,7 @@ npm start
 
 Now browse to `http://localhost:3000` to view your new web app.
 
-:::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="Running your new PWA on localhost.":::
+![Running your new PWA on localhost.](../media/visual-studio-nodejs-express-index.png)
 
 
 <!-- ====================================================================== -->
@@ -170,7 +170,7 @@ Confirm that your service worker runs, as follows:
 
 1.  Refresh your app.  It should display the offline mechanism for serving the resources of your app from the cache.
 
-    :::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="A PWA running offline.":::
+    ![A PWA running offline.](../media/visual-studio-nodejs-express-index.png)
 
 The app can now be installed.
 <!-- todo: Expand the ending of the article or section.  Show a breakdown of what the service worker does. -->

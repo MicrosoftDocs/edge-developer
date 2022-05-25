@@ -10,7 +10,7 @@ ms.date: 03/11/2021
 ---
 # Edit CSS font styles and settings in the Styles pane
 
-:::image type="icon" source="../media/experimental-tag-14px.msft.png":::
+![This feature is experimental](../media/experimental-tag-14px.msft.png)
 
 To make it easier when working with typography, a visual **Font Editor** is now available in the **Styles** pane.  Using the **Font Editor**, you can change your font settings, and the changes are rendered immediately in the browser - all without in-depth knowledge of CSS.  The **Elements** tool > **Styles** tab > **Font Editor** icon opens the **Font Editor**, which consists of two parts:
 

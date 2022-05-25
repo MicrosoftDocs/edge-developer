@@ -142,11 +142,11 @@ If the mobile device option that you need isn't included on the default list, yo
 
 If you need to measure screen dimensions, you can use rulers to measure the screen size in pixels.  Select **More options** > **Show rulers** to display rulers above and to the left of your viewport.
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png" alt-text="The Show Rulers menu item.":::
+![The Show Rulers menu item.](../media/device-mode-toggle-device-toolbar-options-show-rulers.msft.png)
 
 Rulers appear above and to the left of the viewport:
 
-:::image type="content" source="../media/device-mode-toggle-device-toolbar-rulers.msft.png" alt-text="Rulers above and to the left of the viewport.":::
+![Rulers above and to the left of the viewport.](../media/device-mode-toggle-device-toolbar-rulers.msft.png)
 
 ### Zoom the viewport
 
