@@ -181,16 +181,13 @@ See also:
 
 Microsoft Edge 102 also includes the following updates from the Chromium project:
 
-* [Preview feature: New Performance insights panel](https://developer.chrome.com/blog/new-in-devtools-102/#perf)
 * [New shortcuts to emulate light and dark themes](https://developer.chrome.com/blog/new-in-devtools-102/#emulation)
 * [Improved security on the Network Preview tab](https://developer.chrome.com/blog/new-in-devtools-102/#network-preview)
 * [Improved reloading at breakpoint](https://developer.chrome.com/blog/new-in-devtools-102/#debugger)
 * [Console updates](https://developer.chrome.com/blog/new-in-devtools-102/#console)
    * [Handle script execution errors in the Console](https://developer.chrome.com/blog/new-in-devtools-102/#errors)
    * [Commit live expression with Enter](https://developer.chrome.com/blog/new-in-devtools-102/#live-expression)
-* [Cancel user flow recording at the start](https://developer.chrome.com/blog/new-in-devtools-102/#recorder)
 * [Display inherited highlight pseudo-elements in the Styles pane](https://developer.chrome.com/blog/new-in-devtools-102/#pseudo)
-* [Miscellaneous highlights](https://developer.chrome.com/blog/new-in-devtools-102/#misc)
 * [[Experimental] Copy CSS changes](https://developer.chrome.com/blog/new-in-devtools-102/#copy)
 * [[Experimental] Picking color outside of browser](https://developer.chrome.com/blog/new-in-devtools-102/#color-picker)
 
