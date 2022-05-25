@@ -129,8 +129,6 @@ Opening a tool this way puts focus in the content area of the tool.  In the case
 
 The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, see [Navigate the **DOM Tree** with a keyboard](../dom/index.md#navigate-the-dom-tree-with-a-keyboard).
 
-To lock the **Inspect** tool's tooltip and grid color overlay while you move the mouse over the rendered webpage, press and hold `Ctrl`+`Alt`.<!-- todo: macOS modifiers? -->  See [Persisting the Inspect tool's tooltip and grid color overlay](../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_.
-
 
 ### Copy the code for an element in the DOM Tree
 
@@ -282,6 +280,18 @@ The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/
 
 *  The type of [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree) used by the **Accessibility** tab may not be properly exposed in Microsoft Edge for macOS screen readers like VoiceOver.  Subscribe to [Chromium issue #868480](https://bugs.chromium.org/p/chromium/issues/detail?id=868480) to be informed about progress on this issue.
 *  Each of the **ARIA Attributes** and **Computed Properties** sections are marked up as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree), but each section doesn't currently have focus management, and isn't keyboard-operable.
+
+
+<!-- ====================================================================== -->
+## Persisting the Inspect tool's tooltip and grid color overlay
+<!-- keep sync'd:
+* [Persisting the Inspect tool's tooltip and grid color overlay](../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_ -->
+
+When you click the **Inspect** tool button and move around in the rendered webpage, the Inspect tooltip changes.  To keep the current tooltip and grid color overlay displayed, press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.
+
+This technique can be helpful when using a screen magnifier or other assistive technologies.  If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you use the **Inspect tool** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)).
+
+See [Analyze pages using the Inspect tool](../css/inspect.md).
 
 
 <!-- ====================================================================== -->

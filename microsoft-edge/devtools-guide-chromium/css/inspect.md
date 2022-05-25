@@ -96,8 +96,8 @@ When you click an element in the rendered page:
 
 <!-- ====================================================================== -->
 ## Persisting the Inspect tool's tooltip and grid color overlay
-
-If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you used the **Inspect tool** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)).  This behavior can be difficult to use with a screen magnifier or other assistive technologies.
+<!-- keep sync'd:
+* [Persisting the Inspect tool's tooltip and grid color overlay](../accessibility/navigation.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Navigate DevTools with assistive technology_ -->
 
 When using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage.
 
@@ -105,7 +105,7 @@ When using the **Inspect** tool and moving around the rendered webpage, you can 
 <!-- ====================================================================== -->
 ## Temporarily hiding the Inspect element tooltip
 
-To hide the **Inspect** tool's overlay while you move the mouse pointer over the rendered webpage, press and hold `Ctrl`.<!--todo: macOS?-->
+To hide the **Inspect** tool's overlay while you move the mouse pointer over the rendered webpage, press and hold `Ctrl`.
 
 
 <!-- ====================================================================== -->
