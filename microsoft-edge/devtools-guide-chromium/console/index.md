@@ -41,21 +41,18 @@ DevTools gives detailed information about the error in the **Console**:
 
 
 <!-- ====================================================================== -->
-## Look up error messages on the web from the Console
+## Search the web for a Console error message string
 
-Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass.  When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message.
+Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass:
 
-The **Search for this message on the Web** button on an error message in the **Console**:
+![The 'Search for this message on the Web' button on an error message in the Console.](../media/search-console-icon.msft.png)
+<!-- to set up screenshot, went to 
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
+https://microsoftedge.github.io/Demos/devtools-console/error.html -->
 
-![The 'Search for this message on the Web' button on an error message in the **Console**.](../media/search-console-icon.msft.png)
+When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message:
 
-For a `Failed to load resource` error, the new tab contains web search results for the message "Failed to load resource" (without quotes).
-
-New tab that opened from the **Search Console Error** feature:
-
-![New tab that opened from the Search Console Error feature.](../media/search-console-new-tab.msft.png)
-
-This feature was introduced in Microsoft Edge version 94.
+![The search results page in a new tab.](../media/search-console-new-tab.msft.png)
 
 
 <!-- ====================================================================== -->

@@ -165,7 +165,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 }
 ```
 
-The section you added is `content_scripts`.  The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  You also added `libjquery.min.js`.  You're able to include that from the download mentioned at the top of the section.
+The section you added is `content_scripts`.  The `matches` attribute is set to `<all_urls>`, which means that all files in `content_scripts` are injected into all browser tab pages when each tab is loaded.  The allowed files types that can be injected are JavaScript and CSS.  You also added `lib\jquery.min.js`.  You're able to include that from the download mentioned at the top of the section.
 
 6. Add jQuery and understanding the associated thread
 
@@ -204,8 +204,8 @@ The first parameter of the `addListener` method is a function whose first parame
 
 When an event is processed by the listener, the function that is the first parameter is run.  The first parameter of that function is an object that has attributes as assigned by `sendMessage`.  That function simply processes the three jQuery script lines.
 
-*   The first script line dynamically inserts into the DOM header a **\<style\>** section that you must assign as a `slide-image` class to your `img` element.
-*   The second script line appends an `img` element right below the `body` of your browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.
+*   The first script line appends an `img` element right below the `body` of your browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.
+*   The second script line dynamically inserts into the DOM header a **\<style\>** section that you must assign as a `slide-image` class to your `img` element.
 *   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
 
 8. Add functionality to remove the displayed image when selected
@@ -213,8 +213,6 @@ When an event is processed by the listener, the function that is the first param
 Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows.
 
 ![popup.html display after selecting the Extension icon.](./media/part2-popupdialog.png)
-
-<!-- ![popup.html display after selecting the Extension icon] -->
 
 When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
 
