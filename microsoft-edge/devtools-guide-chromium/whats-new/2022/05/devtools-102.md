@@ -93,13 +93,11 @@ See also:
 
 Previously, in the **Elements** tool, the overlay for the node that you selected only displayed on hover when you used the **Inspect tool** (![Inspect tool icon.](../../../media/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier or other assistive technologies.
 
-In Microsoft Edge 102, use the `Ctrl`+`Alt` key modifier when using the **Inspect** tool to keep the node selected and overlay displayed.
-Now, if you press and hold `Ctrl`+`Alt`, when you move the mouse pointer over the rendered webpage, the existing tooltip and grid color overlay for the Inspect tool remains displayed:
-<!-- todo: macOS modifiers? -->
+In Microsoft Edge 102, when using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage:
 
 ![Inspect element tooltip now persists.](devtools-102-images/inspect-element-tooltip-persists.png)
 
-Also, you can now press `Ctrl`<!--todo: macOS?--> to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
+Also, you can now press `Ctrl` to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
 
 For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
@@ -110,6 +108,9 @@ See also:
 
 <!-- ====================================================================== -->
 ## Improving accessibility in high contrast mode
+<!-- todo: consider a more specific heading:
+## Controls are fully rendered in high-contrast mode
+-->
 
 <!-- Title: Accessibility improvements for high contrast mode -->
 <!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the activity bar in Focus Mode now display better in high contrast. -->

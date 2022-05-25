@@ -97,10 +97,9 @@ When you click an element in the rendered page:
 <!-- ====================================================================== -->
 ## Persisting the Inspect tool's tooltip and grid color overlay
 
-If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you used the **Inspect tool** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)).  This behavior can be difficult to use with a screen magnifier.
+If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you used the **Inspect tool** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)).  This behavior can be difficult to use with a screen magnifier or other assistive technologies.
 
-When using the **Inspect** tool, to keep the node (and overlay) selected, press and hold `Ctrl`+`Alt`.  When you press and hold `Ctrl`+`Alt`, when you move the mouse pointer over the rendered webpage, the existing tooltip and grid color overlay for the Inspect tool remains displayed.
-<!-- todo: macOS modifiers? -->
+When using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage.
 
 
 <!-- ====================================================================== -->

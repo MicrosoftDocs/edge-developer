@@ -63,7 +63,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Action | Resulting tool |
 |---|---|
 | Right-click any item on a webpage, and then select **Inspect**. | The **Elements** tool, with the DOM tree expanded to show the right-clicked page element. |
-| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
+| Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
 | Press `F12`. | The previously used tool, or the **Welcome** tool. |
 
 **Additional ways:**
