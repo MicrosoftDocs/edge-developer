@@ -158,17 +158,13 @@ To get more information about an experimental feature, click the corresponding *
 <!-- Title: Better support for the Network tool in narrow layouts -->
 <!-- Subtitle: The settings in the Network tool no longer overlap when the DevTools are narrow. -->
 
-In previous versions of Microsoft Edge, opening **Network settings** with the gear icon in the **Network** tool would overlap when the DevTools were very narrow.  In Microsoft Edge 102, this issue has been fixed.  The individual settings now display better in narrow layouts.
+In previous versions of Microsoft Edge, opening **Network settings** with the gear icon in the **Network** tool would overlap when the DevTools were very narrow:
 
-![Better layout of Network settings when narrow.](devtools-102-images/layout-network-settings-narrow.png)
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-In Microsoft Edge Canary/Dev, navigate to edge://version and ensure you're on 102+
-Open DevTools and undock them
-Switch to Network tool
-Open Network settings by selecting the gear icon in the Network tool
-Make the DevTools very narrow
-Repeat Steps 2-3 in Microsoft Edge Stable (ensure you're on version 101) and you should see that the settings overlap with each other. -->
+![Overlap of Network settings when narrow.](devtools-102-images/network-settings-narrow-overlap.png)
+
+In Microsoft Edge 102, this issue has been fixed.  The individual settings now display better in narrow layouts:
+
+![Better layout of Network settings when narrow.](devtools-102-images/network-settings-narrow-no-overlap.png)
 
 See also:
 * [Capture screenshots during page load](../../../network/reference.md#capture-screenshots-during-page-load) in _Network features reference_, about configurable settings of the Network tool.
