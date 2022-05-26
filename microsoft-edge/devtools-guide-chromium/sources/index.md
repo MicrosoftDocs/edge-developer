@@ -200,11 +200,11 @@ script.integrity = 'sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=';
 document.head.appendChild(script);
 ```
 
-Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press `Ctrl`+`S` (Windows/Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
+Instead, you can save this code in a **Snippet** and then easily run it whenever you need to.  When you press `Ctrl`+`S` (Windows, Linux) or `Command`+`S` (macOS), DevTools saves the **Snippet** to your file system.
 
 There are multiple ways to run a Snippet:
 *  In the **Navigator** pane, select the **Snippets** tab, and then select the snippets file to open it.  Then at the bottom of the Editor pane, select **Run** (![The Run button.](../media/run-snippet-icon.msft.png)).
-*  When DevTools has focus, press `Ctrl`+`P` (Windows/Linux) or `Command`+`P` (macOS) to open the [Command Menu](../command-menu/index.md), and then type `!`.
+*  When DevTools has focus, press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS) to open the [Command Menu](../command-menu/index.md), and then type `!`.
 
 Snippets are similar to bookmarklets.
 
