@@ -47,7 +47,7 @@ Use the following DevTools features to inspect text-color contrast.
 
 *  The **Issues** tool automatically reports any color-contrast issues for the entire webpage, when text and background color don't contrast enough.  This approach is described in [Verify that text colors have enough contrast](test-issues-tool.md#verify-that-text-colors-have-enough-contrast).
 
-*  Emulate a non-default state, such as the `hover` state.  To do this, click the **Toggle Element State** icon/button in the **Styles** pane, which displays the **Force element state** checkboxes section.  This feature is described in [Verify accessibility of all states of elements](test-inspect-states.md).
+*  Emulate a non-default state, such as the `hover` state.  To do this, click the **Toggle Element State** button in the **Styles** pane, which displays the **Force element state** checkboxes section.  This feature is described in [Verify accessibility of all states of elements](test-inspect-states.md).
 
 
 <!-- ====================================================================== -->
