@@ -10,15 +10,54 @@ ms.date: 05/25/2022
 ---
 # Survey of WebView2 APIs and their capabilities
 
+<!--
+purpose of this doc:
+
+Provide a high-level intro/summary of capabilities of WebView2 & what you can do with this technology.
+
+Doc-design strategy/positioning.
+
+Doc the features/func'y that's supported by the APIs, to:
+*  Survey/introduce different areas/features of the SDK.  
+*  Introduce what tasks (not which APIs) are supported.
+*  Introduce what functionality (not which APIs) is available.
+*  A high-level roadmap overview/introduction.
+
+Not an inventory of APIs as such.  
+Not an exhaustive list/inventory of all APIs.
+
+Where best in TOC?
+
+Title of this page?
+
+How many webpages/articles?  Answer: 1 article, high-level.
+
+List of considerations to design this doc:
+What's the story we want to tell?
+   How to tell that story?
+
+Scope of Detail of API Lists:
+    Should this be an extensive list of all the APIs? No.   What is the detail cutoff level?  interface names not sufficient.   
+    Groups of APIs enable devs to create these apps.  enable/toggle brow feats, call js apis in your native code, ...
+       Top 5 methods or props for the API area. 
+       Don't say "the Context Menu API".  focus on what you can do, not the "how" (not in terms of which "Big API set").
+    Maintainability: What do we do to update this article as we add APIs each month?   
+    Avoid promising that this will be a comprehensive list of "all" APIs.
+    
+-->
+
+
+
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
-*  Concepts about what you can do with the WebView2 APIs, which are listed at [Reference (WebView2 Win32 C++)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/).<!-- todo: C#? -->
+*  Concepts about what you can do with the WebView2 APIs, which are listed at [Reference (WebView2 Win32 C++)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/).<!-- TODO: C#? -->
 *  High-level description of WebView2 technology for app developers.
 *  Better fundamentals + understanding of WebView2 technology.
 
 Audience: App developers who are curious about the WebView2 technology and would like to know if WebView2 is for them.
 
-This article categorizes all the Win32 C++<!-- todo: C#? --> interfaces, at a high level, for WebView2.  This article also lists members of the following interfaces, because they have APIs that span across multiple categories in this article:
+
+This article categorizes all the Win32 C++<!-- TODO: C#? --> interfaces, at a high level, for WebView2.  This article also lists members of the following interfaces, because they have APIs that span across multiple categories in this article:
 *  `ICoreWebView2`
 *  `ICoreWebView2Controller`
 *  `ICoreWebView2Environment`
@@ -51,7 +90,7 @@ Communication between web code and native code.
    * `RemoveScriptToExecuteOnDocumentCreated`
    * `ExecuteScript`
    * `PostWebMessageAsJson`
-   * `PostWebMessgeAsString`
+   * `PostWebMessgeAsString`<!--TODO: check typo in API name/casing-->
    * `AreHostObjectsAllowed`
    * `COREWEBVIEW2_SCRIPT_DIALOG_KIND`
 
@@ -63,7 +102,7 @@ Communication between web code and native code.
 *  `ICoreWebView2Settings`
    * `AreDefaultScriptDialogsEnabled`
    * `IsScriptEnabled`
-   * Working with JavaScript in WebView2 - todo: link avail?
+   * Working with JavaScript in WebView2 - TODO: link avail?
 
 <!-- ====================================================================== -->
 ## Browser features
@@ -77,12 +116,12 @@ How to print the content in a WebView2 control.
 
 *  `ICoreWebView2`
    * `COREWEBVIEW2_PRINT_ORIENTATION`
-*  `ICoreWebVeiw2_7`
+*  `ICoreWebVeiw2_7`<!--TODO: check typo in API name/casing-->
    * `PrintToPdf`
 *  `ICoreWebView2PrintSettings`
 *  `ICoreWebview2Environment6`
    * `CreatePrintSettings`
-   * other? (empty item) todo
+   * other? (empty item) TODO
 
 
 ### Cookies
@@ -100,7 +139,7 @@ How to work with cookies in a WebView2 control.
 
 ### Image capture
 
-Capturing images using the key press combination Ctrl+Shift+S (todo: confirm)
+Capturing images using the key press combination `Ctrl`+`Shift`+`S` (TODO: confirm)
 
 *  `ICoreWebView2`
    * `CapturePreview`
@@ -117,12 +156,12 @@ How to work with downloaded files in a WebView2 control.
    * `COREWEBVIEW2_DOWNLOAD_STATE`
    * `COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND`
 *  `ICoreWebView2DownloadOperation`
-*  `ICoreWebView2DownloadStartingEevntArgs`
+*  `ICoreWebView2DownloadStartingEevntArgs`<!--TODO: check typo in API name/casing-->
 *  `ICoreWebView2_4`
    * `Add_DownloadStarting`
 *  `ICoreWebView2_9`
    * `Add_IsDefaultDownloadDialogOpenChanged`
-   * `ClsoeDefaultDownlaodDialog`
+   * `ClsoeDefaultDownlaodDialog`<!--TODO: check typo in API name/casing-->
    * `Get_defaultDownloadDialogCornerAlignment`
    * `Get_DefaultDownloadDialogMargin`
    * `Get_IsDefaultDownloadDialogOpen`
@@ -131,10 +170,10 @@ How to work with downloaded files in a WebView2 control.
 
 ### Permissions
 
-How to assign permissions to WebView2 controls to do _<!-- todo: confirm -->
+How to assign permissions to WebView2 controls to do _<!-- TODO: confirm -->
 
-*  `ICoreWebView2PermissionrequestedEventArgs`
-*  `IcoreWebView2`
+*  `ICoreWebView2PermissionrequestedEventArgs`<!--TODO: check typo in API name/casing-->
+*  `IcoreWebView2`<!--TODO: check typo in API name/casing-->
    * `Add_PermissionRequested`
    * `Remove_PermissionRequested`
    * `COREWEBVIEW2_PERMISSION_KIND`
@@ -178,7 +217,7 @@ Leverage the browsers autofill functionality in a WebView2 control.
 *  `ICoreWebView2Settings4`
    * `IsGeneralAutofillEnabled`
    * `IsPasswordAutosaveEnabled`
-   * `IsGeneralAutofillEnagled`
+   * `IsGeneralAutofillEnagled`<!--TODO: check typo in API name/casing-->
    * `IsPasswordAutosaveEnabled`
 
 
@@ -233,7 +272,7 @@ Learn how to manage page navigation in a WebView2.
    * `add_NavigationCompleted`
    * `remove_NavigationCompleted`
    * `add_NavigationStarting`
-   * `remve_NavigationStarting`
+   * `remve_NavigationStarting` <!--TODO: check typo in API name/casing-->
    * `Add_HistoryChanged`
    * `Add_SourceChanged`
    * `Remove_SourceChanged`
@@ -250,7 +289,7 @@ Learn how to manage page navigation in a WebView2.
 *  `ICoreWebView2_2`
    * `NavigateWithWebResourceRequest`
 *  `ICoreWebView2_3`
-   * `SetVirtuaHostNameToFolderMapping`
+   * `SetVirtuaHostNameToFolderMapping` <!--TODO: check typo in API name/casing-->
    * `ClearVirtualHostNameToFolderMapping`
 *  `ICoreWebView2NavigationCompletedEventArgs`
 *  `ICoreWebView2NavigationCompletedEventArgs`
@@ -276,7 +315,7 @@ Learn how to make an external call to a resource on the web.
    * `Remove_WebResourceResponseReceived`
    * `NavigateWithWebResourceRequest`
 *  `ICoreWebView2Environment`
-   * `CreateWebResoruceResponse`
+   * `CreateWebResoruceResponse` <!--TODO: check typo in API name/casing-->
 *  `ICoreWebView2Environment2`
    * `CreateWebResourceRequest`
 *  `ICoreWebView2WebResourceRequest`
@@ -289,7 +328,7 @@ Learn how to handle events when content is loaded in the WebView2.
 
 *  `ICoreWebView2ContentLoadingEventArgs`
 *  `ICoreWebView2.ContentLoading Event`
-*  `ICoreWebView2DOMContentLoadedEventArgsIcoreWebView2`
+*  `ICoreWebView2DOMContentLoadedEventArgsIcoreWebView2` <!--TODO: check typo in API name/casing-->
    * `Add_ContentLoading`
    * `Remove_ContentLoading`
 *  `ICoreWebView2_2`
@@ -308,7 +347,7 @@ Learn how to handle events when content is loaded in the WebView2.
 
 ### Server/Client Certificates
 
-Learn how to work with certificates in WebView2 controls (todo: confirm)
+Learn how to work with certificates in WebView2 controls (TODO: confirm)
 *  `ICoreWebView2`
    * `COREWEBVIEW2_CLIENT_CERTIFICATE_KIND`
 *  `ICoreWebView2ClientCertificate`
@@ -321,15 +360,15 @@ Learn how to work with certificates in WebView2 controls (todo: confirm)
 <!-- ====================================================================== -->
 ## Working with Chrome Developer Protocol (CDP)
 
-Learn how to automate tasks in the DevTools in a WebView2 control using CDP (todo: confirm)
-*  `ICoreWebView2DevToolsProtocolEventRecievedEventArgs`<!--todo: check typo in API name-->
-*  `ICoreWebView2DevToolsProtocolEventReciever`<!--todo: check typo in API name-->
+Learn how to automate tasks in the DevTools in a WebView2 control using CDP (TODO: confirm)
+*  `ICoreWebView2DevToolsProtocolEventRecievedEventArgs` <!--TODO: check typo in API name/casing-->
+*  `ICoreWebView2DevToolsProtocolEventReciever` <!--TODO: check typo in API name/casing-->
 *  `CallDevToolsProtocolMethodForSession` (WebView2 Win32 C++ IcoreWebView2_11)
 *  `ICoreWebView2Settings`
    * `AreDevToolsEnabled`
 *  `ICoreWebView2`
    * `CallDevToolsProtocolMethod`
-   * `GetDevToolsProtocolEventReciever`<!--todo: check typo in API name-->
+   * `GetDevToolsProtocolEventReciever` <!--TODO: check typo in API name/casing-->
    * `OpenDevToolsWindow`
 
 
@@ -350,11 +389,13 @@ Learn how to work with iFrames in content displayed in WebView2 controls
    * `Remove_frameNavigationStarting`
    * `Add_HistoryChanged`
    * `Remove_HistoryChanged`
-   * `IcoreWebView2_4Add_FrameCreated`
+   * `IcoreWebView2_4Add_FrameCreated` <!--TODO: check typo in API name/casing-->
 
 
 <!-- ====================================================================== -->
 ## Authentication
+
+<!-- selling point / value prop: easy configuration of wv2 apps - support user accounts -->
 
 Learn how to handle basic authentication in WebView2 controls.
 
@@ -364,7 +405,7 @@ Learn how to handle basic authentication in WebView2 controls.
 *  `ICoreWebView2HttpRequestHeaders`
 *  `ICoreWebView2HttpResponseHeaders`
 *  `ICoreWebView2`
-   * `Add_BasicAutheneticationRequested`<!--todo: check typo in API name-->
+   * `Add_BasicAutheneticationRequested` <!--TODO: check typo in API name/casing-->
 
 
 
@@ -373,10 +414,12 @@ Learn how to handle basic authentication in WebView2 controls.
 
 Learn how to specify settings before WebView2 controls are created.
 
+<!-- selling point / value prop: easy configuration of wv2 apps -->
+
 *  `ICoreWebView2Environment`
    * `Add_NewBrowserVersionAvailable`
    * `Get_browserVersionString`
-*  `ICoreWebView2EnvionmentOptions`<!--todo: check typo in API name-->
+*  `ICoreWebView2EnvionmentOptions` <!--TODO: check typo in API name/casing-->
 *  `ICore_WebView2_2`
    * `Get_Environment`
 
@@ -385,8 +428,6 @@ Learn how to specify settings before WebView2 controls are created.
 ## Rendering WebView2 in native apps (Hosting)
 
 These APIS are used to set up the WV2 rendering system in native apps.  For example, how wv2 renders output into the host app, how wv2 handles input, focus, accessibility (applies to C++ only)
-
-<!-- *Won't be able to do for hackathon -->
 
 *  `ICoreWebView2Controller` (Hosting-related settings for WebView) – app or wv2 elements host WebView
    * `Get_CoreWebView2`
@@ -402,7 +443,6 @@ These APIS are used to set up the WV2 rendering system in native apps.  For exam
 *  `ICoreWebView2Environment4`
    * `GetProviderForHwnd`
 
-<!-- *  ` -->
 
 ### WebView2 Properties (UI?)
 
@@ -428,8 +468,8 @@ These APIS are used to set up the WV2 rendering system in native apps.  For exam
 
 All tasks related to the management of a window.
 
-*  `IcoreWebView2NewWindowRequestedEventArgs`
-*  `IcoreWebView2WindowFeatures`
+*  `IcoreWebView2NewWindowRequestedEventArgs` <!--TODO: check typo in API name/casing-->
+*  `IcoreWebView2WindowFeatures` <!--TODO: check typo in API name/casing-->
 *  `IcoreWebView2`
    * `Add_WindowCloseRequested`
    * `Remove_WindowCloseRequested`
@@ -474,7 +514,7 @@ Learn how to handle key press events.
 *  `ICoreWebView2Controller`
    * `AcceleratorKeyPressed`
 *  `ICoreWebView2Settings3`
-   * `AreBrowswerAcceleratorKeysEnabled`
+   * `AreBrowswerAcceleratorKeysEnabled` <!--TODO: check typo in API name/casing-->
 
 
 ### Mouse input
@@ -512,7 +552,7 @@ Learn how to handle performance related events for WebView2 controls.
 *  `ICoreWebView2_6`
    * `OpenTaskManagerWindow`
 *  `ICoreWebView2Settings`
-   * `IsBuiltInErrorPageEnabled` <!--todo: clarify note: (probs for navigation and process)-->
+   * `IsBuiltInErrorPageEnabled` <!--TODO: clarify note: (probs for navigation and process)-->
 
 
 <!-- ====================================================================== -->
@@ -522,6 +562,7 @@ Learn how to handle performance related events for WebView2 controls.
 *  `ICoreWebView2StringCollection`
 *  `ICoreWebView2`
    * `get_Settings`
+   * x <!--TODO: check typo in API name/casing-->
 
 
 <!-- ====================================================================== -->
