@@ -86,7 +86,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## The Inspect element tooltip now persists until you dismiss it
+## The Inspect element tooltip can now be persisted until you dismiss it
 
 <!-- Title: Improving the Inspect element tooltip -->
 <!-- Subtitle: The Inspect element tooltip now persists until you dismiss it, improving accessibility and ease of use. -->
@@ -95,7 +95,7 @@ Previously, in the **Elements** tool, the overlay for the node that you selected
 
 In Microsoft Edge 102, when using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage:
 
-![Inspect element tooltip now persists.](devtools-102-images/inspect-element-tooltip-persists.png)
+![The Inspect element tooltip.](devtools-102-images/inspect-element-tooltip-persists.png)
 
 Also, you can now press `Ctrl` to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
 
@@ -103,7 +103,7 @@ For the history of this feature in the Chromium open-source project, see Issue [
 
 See also:
 *  [Persisting the Inspect tool's tooltip and grid color overlay](../../../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_.
-*  [Inspect an element on the page](../../../accessibility/navigation.md#inspect-an-element-on-the-page) in _Navigate DevTools with assistive technology_.
+*  [Persisting the Inspect tool's tooltip and grid color overlay](../../../accessibility/navigation.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Navigate DevTools with assistive technology_.
 
 
 <!-- ====================================================================== -->
