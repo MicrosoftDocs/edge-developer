@@ -553,6 +553,23 @@ Learn how to handle performance related events for WebView2 controls.
    * `OpenTaskManagerWindow`
 *  `ICoreWebView2Settings`
    * `IsBuiltInErrorPageEnabled` <!--TODO: clarify note: (probs for navigation and process)-->
+*  `MemoryUsageTargetLevel`
+
+
+# [C#](#tab/c-sharp)
+
+* [CoreWebView2.MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)<!-- read both .net & c++ remarks on "same" equiv prop -->
+* [CoreWebView2.TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
+* [CoreWebView2Controller.IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible#microsoft-web-webview2-core-corewebview2controller-isvisible)
+
+
+# [C++](#tab/cpp)
+
+* [ICoreWebView2Experimental5::put_MemoryUsageTargetLevel property](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)
+* [ICoreWebView2_3::TrySuspend method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
+* [ICoreWebView2Controller::put_IsVisible property](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)
+
+---
 
 
 <!-- ====================================================================== -->
