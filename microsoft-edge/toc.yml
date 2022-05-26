@@ -1150,6 +1150,10 @@
             #       href: webview2/how-to/customize-ui.md
             #       displayName: context menu, right-click menu
 
+            - name: Background memory best practices
+              href: webview2/concepts/background-memory.md
+              displayName: 
+
             - name: Customize context menus
               href: webview2/how-to/context-menus.md
               displayName: right-click menu, Customize context menus in WebView2  # top of page title
