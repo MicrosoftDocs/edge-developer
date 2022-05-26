@@ -107,7 +107,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Improved rendering of controls in high-contrast mode
+## Improved rendering of dropdown menus, buttons, and icons in high-contrast mode
 
 <!-- Title: Accessibility improvements for high contrast mode -->
 <!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the activity bar in Focus Mode now display better in high contrast. -->
