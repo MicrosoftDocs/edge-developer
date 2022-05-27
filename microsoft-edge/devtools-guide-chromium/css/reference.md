@@ -495,7 +495,6 @@ To open the **Angle Clock**:
 1. In the **Styles** tab, find the `transform` or `background` declaration that you want to change.  Click the **Angle Preview** box next to the angle value.
 
    In the following figure, the small clock to the left of `100deg` is a preview of the angle.
-   <!-- ![The Angle Clock.](../media/__.png) -->
 
 1. Click the preview to open the **Angle Clock**:
 
