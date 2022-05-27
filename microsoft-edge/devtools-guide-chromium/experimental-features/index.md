@@ -598,12 +598,11 @@ Controls whether to replay input events on the Timeline.
 <!-- ====================================================================== -->
 ## Enable instrumentation breakpoints
 
-Whether to halt at test breakpoints.
+Whether to halt at test breakpoints.  This experiment makes breakpoints more reliable.
 
 *  This checkbox is not present in Microsoft Edge Stable v101.
 *  This checkbox is present in Microsoft Edge Canary v104.
 
 See also:
-* [Overview of when to use each breakpoint type](../javascript/breakpoints.md#overview-of-when-to-use-each-breakpoint-type) in _Pause code with breakpoints_.
-* [Turn on advanced paint instrumentation](../evaluate-performance/reference.md#turn-on-advanced-paint-instrumentation) in _Performance features reference_.
-* [Use Allocation instrumentation on timeline](../memory-problems/allocation-profiler.md).
+* [Enable synchronization on instrumentation breakpoints](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/3470237)
+* [The first time source files are loaded, breakpoints might not trigger](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
