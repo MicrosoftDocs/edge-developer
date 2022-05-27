@@ -850,6 +850,7 @@
 
             - name: Respond to user reviews
               href: extensions-chromium/publish/reply-user-reviews.md
+              displayName: Reply to user reviews
 
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
