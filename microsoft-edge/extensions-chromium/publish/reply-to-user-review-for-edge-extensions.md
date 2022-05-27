@@ -11,7 +11,7 @@ ms.date: 05/23/2021
 
 
 <!-- ====================================================================== -->
-Microsoft recently launched a new feature enabling you to respond to user reviews received on the Microsoft Edge Add-ons product page. For more information, see the blog [Microsoft Edge Add-ons | NEW Feature to manage user reviews on your extension](https://techcommunity.microsoft.com/t5/articles/microsoft-edge-add-ons-new-feature-to-manage-user-reviews-on/m-p/3372537).
+Microsoft recently launched a new feature enabling you to respond to user reviews received on the Microsoft Edge Add-ons product page.
 
 
 <!-- ====================================================================== -->
@@ -54,7 +54,8 @@ From the Reviews page you can complete the following actions:
 > * When you post a response using the Partner Center dashboard, it appears on your Microsoft Edge Add-ons product page in 15 to 20 minutes.
 
 
-<!-- ====================================================================== -->
+For more information, see the blog [Microsoft Edge Add-ons | NEW Feature to manage user reviews on your extension](https://techcommunity.microsoft.com/t5/articles/microsoft-edge-add-ons-new-feature-to-manage-user-reviews-on/m-p/3372537).
+
 Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via our [GitHub community's Discussion topic](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18).
 
 
