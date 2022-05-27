@@ -32,7 +32,7 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 To open Settings, in DevTools, click the **Settings** icon (![Settings icon.](../media/settings-icon-dark.msft.png)).  Or, while DevTools has focus, press `F1`.
 
-:::image type="content" source="../media/customize-settings-preferences.msft.png" alt-text="Settings." lightbox="../media/customize-settings-preferences.msft.png":::
+![Settings.](../media/customize-settings-preferences.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -42,17 +42,17 @@ In the **Drawer** toolbar in the bottom of DevTools, you can select which tools 
 
 To open (or close) the **Drawer**, press `Escape`.
 
-:::image type="content" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer." lightbox="../media/customize-drawer-open.msft.png":::
+![The Drawer.](../media/customize-drawer-open.msft.png)
 
 You can move tools between the main panel and the drawer.
 
 *  To move a tool from the drawer to the main panel, right-click a tool, and then select **Move to top**.
 
-   :::image type="content" source="../media/move-from-drawer.msft.png" alt-text="Moving a tool from the Drawer to the main toolbar." lightbox="../media/move-from-drawer.msft.png":::
+   ![Moving a tool from the Drawer to the main toolbar.](../media/move-from-drawer.msft.png)
 
 *  To move a tool from the main panel to the drawer, right-click a tool, and then select **Move to bottom**.
 
-   :::image type="content" source="../media/move-to-drawer.msft.png" alt-text="Moving a tool from the main toolbar to the Drawer." lightbox="../media/move-to-drawer.msft.png":::
+   ![Moving a tool from the main toolbar to the Drawer.](../media/move-to-drawer.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -62,7 +62,7 @@ Click and drag a tool to change the ordering.  Your custom tool order persists a
 
 By default, the **Network** tool is usually the fifth tab on the main toolbar.  In the following figure, the **Network** tool is being moved to become the first tab in the main toolbar.
 
-:::image type="content" source="../media/customize-network-first-position.msft.png" alt-text="Custom order of DevTools in a toolbar." lightbox="../media/customize-network-first-position.msft.png":::
+![Custom order of DevTools in a toolbar.](../media/customize-network-first-position.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -70,11 +70,11 @@ By default, the **Network** tool is usually the fifth tab on the main toolbar.  
 
 To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the main panel or the **Drawer**, click the **More Tools** (![More Tools.](../media/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
 
-:::image type="content" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="The More Tools (+) button to open a new tool" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
+![The More Tools (+) button to open a new tool](../media/open-tool-in-main-panel-or-drawer.png)
 
 To close a tool, select the **Close** (![Close Tool.](../media/close-tab-icon.png)) button in the tool's tab.
 
-:::image type="content" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="The tab's Close button" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
+![The tab's Close button](../media/close-tool-in-main-panel-or-drawer.png)
 
 
 <!-- ====================================================================== -->
@@ -82,7 +82,7 @@ To close a tool, select the **Close** (![Close Tool.](../media/close-tab-icon.pn
 
 See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
 
-:::image type="content" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools." lightbox="../media/customize-dev-tools-dock-side.msft.png":::
+![Undocked DevTools.](../media/customize-dev-tools-dock-side.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -96,7 +96,7 @@ See [Zoom DevTools in or out](../overview.md#zoom-devtools-in-or-out) in _Overvi
 
 See [Apply a color theme to DevTools](theme.md).
 
-:::image type="content" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme." lightbox="./media/customize-theme-setting.png":::
+![Selecting a different color theme.](./media/customize-theme-setting.png)
 
 
 <!-- ====================================================================== -->
@@ -104,7 +104,7 @@ See [Apply a color theme to DevTools](theme.md).
 
 To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences** > **Restore defaults and refresh**.
 
-:::image type="content" source="../media/restore-default-settings.png" alt-text="Restoring default settings." lightbox="../media/restore-default-settings.png":::
+![Restoring default settings.](../media/restore-default-settings.png)
 
 
 <!-- ====================================================================== -->

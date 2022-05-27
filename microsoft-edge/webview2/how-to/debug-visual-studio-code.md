@@ -45,17 +45,17 @@ Visual Studio Code source path mapping now requires an URL, so your app now rece
 
 1. To set a breakpoint in your source code, click a line of code and then press `F9`:
 
-   :::image type="content" source="./media/breakpoint-vs.png" alt-text="A breakpoint that's set in Visual Studio Code." lightbox="./media/breakpoint-vs.png":::
+   ![A breakpoint that's set in Visual Studio Code.](./media/breakpoint-vs.png)
 
 1. On the **Run** tab, select the launch configuration from the dropdown menu.
 
 1. Click **Start Debugging**, which is the green triangle next to the launch configuration dropdown.
 
-   :::image type="content" source="./media/run-vs.png" alt-text="The Run tab in Visual Studio Code." lightbox="./media/run-vs.png":::
+   ![The Run tab in Visual Studio Code.](./media/run-vs.png)
 
 1. To view the debug output and errors, open **Debug Console**.
 
-   :::image type="content" source="./media/results-vs.png" alt-text="The Debug Console in Visual Studio Code." lightbox="./media/results-vs.png":::
+   ![The Debug Console in Visual Studio Code.](./media/results-vs.png)
 
 
 <!-- ====================================================================== -->
@@ -132,7 +132,7 @@ To enable debug tracing, add the `trace` parameter to `launch.json` , as follows
 
 Saving debug output to a log file:
 
-:::image type="content" source="./media/trace-log.png" alt-text=" Save debug output to a log file." lightbox="./media/trace-log.png":::
+![ Save debug output to a log file.](./media/trace-log.png)
       
 ```json
 ,"trace": "verbose"  // Turn on verbose tracing in the Debug Output pane.
@@ -140,7 +140,7 @@ Saving debug output to a log file:
 
 Visual Studio Code Debug Output with verbose tracing turned on:
 
-:::image type="content" source="./media/verbose.png" alt-text="Visual Studio Code Debug Output with verbose tracing turned on." lightbox="./media/verbose.png":::
+![Visual Studio Code Debug Output with verbose tracing turned on.](./media/verbose.png)
 
 
 <!-- ====================================================================== -->

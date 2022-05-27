@@ -42,7 +42,7 @@ To use the Microsoft Edge Add-ons API, you need to enable the API for your proje
 
 1. In the **Publish API** page, click the **Create API credentials** button.  This step may take a few minutes.
 
-   :::image type="content" source="../../media/create-api-credentials-button.png" alt-text="The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL." lightbox="../../media/create-api-credentials-button.png":::
+   ![The 'Publish API' page at Partner Center after clicking 'Create API credentials', now showing Client ID, Client Secret, and Auth Token URL.](../../media/create-api-credentials-button.png)
 
    The API credentials have now been created; you've enabled or renewed the API.  The **Client ID**, **Client secret**, **Expiry date**, and **Access token URL** are now displayed on the Publish APIs page.
 
