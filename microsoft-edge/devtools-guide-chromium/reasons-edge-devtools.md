@@ -12,6 +12,26 @@ ms.date: 05/20/2022
 
 The Microsoft Edge DevTools team has added a lot of features based on feedback we received from the community to enhance the experience of Developers.  Here is a list of features that are unique to Microsoft Edge, available on Windows, Mac and Linux.
 
+**Contents:**
+
+* [Ease of use](#ease-of-use)
+   * [Open and close tools easily](#open-and-close-tools-easily)
+   * [Move tools around in the UI](#move-tools-around-in-the-ui)
+   * [Focus Mode with Activity Bar and Quick View tool menu](#focus-mode-with-activity-bar-and-quick-view-tool-menu)
+   * [Tooltips Help Documentation mode](#tooltips-help-documentation-mode)
+
+* [Customization](#customization)
+   * [Change the UI language](#change-the-ui-language)
+   * [Change the color theme](#change-the-color-theme)
+
+* [Unique tools](#unique-tools)
+   * [Detached Elements tool](#detached-elements-tool)
+   * [Console error search](#console-error-search)
+   * [3D View](#3d-view)
+   * [Integration with webhint](#integration-with-webhint)
+   * [Integration of Microsoft Edge DevTools with Visual Studio Code](#integration-of-microsoft-edge-devtools-with-visual-studio-code)
+   * [Network Console](#network-console)
+
 
 <!-- ====================================================================== -->
 ## Ease of use
@@ -49,15 +69,13 @@ The tool now appears on the bottom drawer:
 
 **Focus Mode** makes the DevTools UI even easier to use.  The Microsoft Edge DevTools team learned through user interviews and feedback sessions that the number of tools displayed at a given time can be overwhelming.  This is why we introduced Focus Mode, which groups a large set of features for related tasks into various tool panels, and then allows you to show only the tools that you need for your current activity or work mode.
 
-Focus mode showing only tools related to Elements Debugging:
+Focus mode showing only tools related to Elements debugging:
 
-![Focus mode showing only tools related to Elements Debugging.](reasons-edge-devtools-images/focus-mode-with-only-elements-debugging-tools.png)
-<!-- new png for this article, dummy content; update the content -->
+![Focus mode showing only tools related to Elements debugging.](reasons-edge-devtools-images/focus-mode-with-only-elements-debugging-tools.png)
 
 Focus mode showing only tools related to Source editing:
 
 ![Focus mode showing only tools related to Source editing.](reasons-edge-devtools-images/focus-mode-with-only-source-editing-tools.png)
-<!-- new png for this article, dummy content; update the content -->
 
 
 ### Tooltips Help Documentation mode
@@ -67,7 +85,6 @@ To learn about each tool, enable Tooltips mode, which is a Help mode with links 
 Tool explanations shown when Tooltips mode is enabled:
 
 ![Tool explanations shown when Tooltips mode is enabled.](reasons-edge-devtools-images/tool-explanations-in-tooltips-mode.png)
-<!-- the above is a new png for this article, dummy content; update the content -->
 
 
 <!-- ====================================================================== -->
@@ -81,12 +98,10 @@ You can choose a different User Interface language for Microsoft Edge DevTools. 
 Microsoft Edge Developer Tools displayed in German:
 
 ![Microsoft Edge Developer Tools displayed in German.](reasons-edge-devtools-images/microsoft-edge-devtools-with-german-ui.png)
-<!-- new png for this article, dummy content; update the content -->
 
 Microsoft Edge Developer Tools displayed in Japanese:
 
 ![Microsoft Edge Developer Tools displayed in Japanese.](reasons-edge-devtools-images/microsoft-edge-devtools-with-japanese-ui.png)
-<!-- new png for this article, dummy content; update the content -->
 
 
 ### Change the color theme
