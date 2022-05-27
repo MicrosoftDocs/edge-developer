@@ -111,12 +111,10 @@ You can choose a different color theme.  Themes can make your user experience mu
 Switching to a different theme in DevTools Settings:
 
 ![Switching to a different theme in DevTools Settings.](reasons-edge-devtools-images/switch-theme-devtools-settings.png)
-<!-- new png for this article, dummy content; update the content -->
 
 Microsoft Edge DevTools displayed in the Monokai theme:
 
 ![Microsoft Edge DevTools displayed in the Monokai theme.](reasons-edge-devtools-images/devtools-monokai-theme.png)
-<!-- new png for this article, dummy content; update the content -->
 
 
 <!-- ====================================================================== -->
@@ -143,7 +141,10 @@ In user studies we found that people often copy and paste error messages from th
 Console with highlighted search icon that would open a web search with the error message in a new browser tab:
 
 ![Console with highlighted search icon that would open a web search with the error message in a new browser tab.](reasons-edge-devtools-images/console-error-message-search-web-link.png)
-<!-- new png for this article, dummy content; update the content -->
+<!-- todo: put real content in png -->
+
+See also:
+* [Search the web for a Console error message string](console/index.md#search-the-web-for-a-console-error-message-string) in _Console overview_.
 
 
 ### 3D View
@@ -162,8 +163,6 @@ The **Issues** tool automatically shows you all the things that need fixing in t
 Current problems of a webpage displayed in the Issues panel:
 
 ![Current problems of a webpage displayed in the Issues panel.](reasons-edge-devtools-images/webpage-problems-displayed-in-issues-panel.png)
-<!-- valid good new png content - 
-the above is a new png for the present article with fresh capture -->
 
 
 ### Integration of Microsoft Edge DevTools with Visual Studio Code
@@ -177,17 +176,15 @@ Now, by using the Microsoft Edge DevTools extension for Visual Studio Code, you 
 Microsoft Edge DevTools integrated into Visual Studio Code:
 
 ![Microsoft Edge DevTools integrated into Visual Studio Code.](reasons-edge-devtools-images/devtools-integrated-into-visual-studio-code.png)
-<!-- new png for this article, dummy content; update the content -->
 
 
 ### Network Console
 
-Inspecting the network traffic of your web product is already insightful, but often you need to make some changes to the requests to see why they fail.  Using the Network Console, you can change and replay any of the requests, and you can make detailed API calls.
+Inspecting the network traffic of your web product is already insightful, but often you need to make some changes to the requests to see why they fail.  Using the **Network Console**, you can change and replay any of the requests, and you can make detailed API calls.
 
-Network Console showing options for changing a network call:
+**Network Console** showing options for changing a network call:
 
 ![Network Console showing options for changing a network call.](reasons-edge-devtools-images/network-console-options-changing-network-call.png)
-<!-- todo: put real content in png -->
 
 
 <!-- ====================================================================== -->
