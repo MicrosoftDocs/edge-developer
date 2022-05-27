@@ -189,7 +189,7 @@ Microsoft Edge DevTools integrated into Visual Studio Code:
 
 ![Microsoft Edge DevTools integrated into Visual Studio Code.](reasons-edge-devtools-images/devtools-integrated-into-visual-studio-code.png)
 
-See [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension).
+See [Microsoft Edge DevTools extension for Visual Studio Code](../visual-studio-code/microsoft-edge-devtools-extension.md).
 
 
 ### Network Console
