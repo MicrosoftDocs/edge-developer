@@ -849,7 +849,7 @@
               href: extensions-chromium/publish/extensions-analytics.md
 
             - name: Respond to user reviews
-              href: extensions-chromium/publish/reply-to-user-review-for-edge-extensions.md
+              href: extensions-chromium/publish/reply-to-user-review.md
 
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md

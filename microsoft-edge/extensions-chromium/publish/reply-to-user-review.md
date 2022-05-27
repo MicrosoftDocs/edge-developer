@@ -5,28 +5,20 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/23/2021
+ms.date: 05/27/2021
 ---
 # Respond to user reviews about your Microsoft Edge extension
 
-
-<!-- ====================================================================== -->
 Microsoft recently launched a new feature enabling you to respond to user reviews received on the Microsoft Edge Add-ons product page.
 
-
-<!-- ====================================================================== -->
 You can view your extension’s reviews and ratings and engage with user reviews from the Partner Center dashboard.
 
-
-<!-- ====================================================================== -->
 Follow these steps to view your extension’s **Reviews** page:
 
 1. Navigate to your Partner Center account and select an extension.
 
 2. From the left panel, click **Extension overview** > **Reviews** to view your extension reviews, or click on the star rating of an extension on the **Overview** page of **Home** > **Edge** breadcrumb trail.
 
-
-<!-- ====================================================================== -->
 ![Microsoft Partner Center reviews feature](media\user-reviews.png) 
 
 
@@ -52,7 +44,6 @@ From the Reviews page you can complete the following actions:
 > [!NOTE]
 > * The response you share cannot be empty or exceed one thousand (1000) characters.
 > * When you post a response using the Partner Center dashboard, it appears on your Microsoft Edge Add-ons product page in 15 to 20 minutes.
-
 
 For more information, see the blog [Microsoft Edge Add-ons | NEW Feature to manage user reviews on your extension](https://techcommunity.microsoft.com/t5/articles/microsoft-edge-add-ons-new-feature-to-manage-user-reviews-on/m-p/3372537).
 
