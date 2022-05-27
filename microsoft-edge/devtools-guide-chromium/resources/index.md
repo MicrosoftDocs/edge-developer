@@ -40,11 +40,11 @@ When you know the name of the resource that you want to inspect, the **Command M
 
 1. Press `Ctrl`+`P` (Windows, Linux) or `Command`+`P` (macOS).  The **Open File** dialog opens.
 
-   :::image type="content" source="../media/resources-command-menu-empty.msft.png" alt-text="The Open File dialog." lightbox="../media/resources-command-menu-empty.msft.png":::
+   ![The Open File dialog.](../media/resources-command-menu-empty.msft.png)
 
 1. Select the file from the dropdown list, or start typing the filename and press `Enter` once the correct file is highlighted in the autocomplete box.
 
-   :::image type="content" source="../media/resources-command-menu-file-search.msft.png" alt-text="Type a filename in the Open File dialog." lightbox="../media/resources-command-menu-file-search.msft.png":::
+   ![Type a filename in the Open File dialog.](../media/resources-command-menu-file-search.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -55,13 +55,13 @@ See [Inspect the details of a resource](../network/index.md#inspect-the-details-
 
 <!-- need lead-in -->
 
-:::image type="content" source="../media/resources-network-response.msft.png" alt-text="Inspect a resource in the Network tool." lightbox="../media/resources-network-response.msft.png":::
+![Inspect a resource in the Network tool.](../media/resources-network-response.msft.png)
 
 ### Reveal resources in the Network tool from other panels
 
 The next section, [Browse resources in the Network panel](#browse-resources-in-the-network-panel), shows how to view resources from various parts of the DevTools UI.  To inspect a resource in the **Network** tool, right-click the resource and select **Reveal in Network panel**.
 
-:::image type="content" source="../media/resources-sources-page-reveal-in-network-panel.msft.png" alt-text="Revealing resources in the Network panel." lightbox="../media/resources-sources-page-reveal-in-network-panel.msft.png":::
+![Revealing resources in the Network panel.](../media/resources-sources-page-reveal-in-network-panel.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -78,7 +78,7 @@ The next section, [Browse resources in the Network panel](#browse-resources-in-t
 
 <!-- need lead-in -->
 
-:::image type="content" source="../media/resources-network-resources.msft.png" alt-text="Page resources in the Network Log." lightbox="../media/resources-network-resources.msft.png":::
+![Page resources in the Network Log.](../media/resources-network-resources.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -92,7 +92,7 @@ To view the resources of a webpage organized by directory:
 
 1. Click the **More options** (...) button to the right of the **Page** tab, and then select **Group by folder**.
 
-   :::image type="content" source="../media/resources-sources-page-empty.msft.png" alt-text="The Page tab in the Navigator pane of the Sources tool." lightbox="../media/resources-sources-page-empty.msft.png":::
+   ![The Page tab in the Navigator pane of the Sources tool.](../media/resources-sources-page-empty.msft.png)
 
     Here is a breakdown of the non-obvious items in the previous figure.
 
@@ -106,7 +106,7 @@ To view the resources of a webpage organized by directory:
 
 1. Select a resource to view it in the **Editor**.
 
-   :::image type="content" source="../media/resources-sources-page-resource.msft.png" alt-text="View a file in the Editor." lightbox="../media/resources-sources-page-resource.msft.png":::
+   ![View a file in the Editor.](../media/resources-sources-page-resource.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -120,11 +120,11 @@ By default, the **Page** tab groups resources by directory.  To display the reso
 
 1. Click **More options** `...` and then clear the **Group by folder** checkbox.
 
-   :::image type="content" source="../media/resources-sources-page-resource-group-by-folder.msft.png" alt-text="The Group by folder option." lightbox="../media/resources-sources-page-resource-group-by-folder.msft.png":::
+   ![The Group by folder option.](../media/resources-sources-page-resource-group-by-folder.msft.png)
 
     Resources are organized by file type.  Within each file type, the resources are organized alphabetically.
 
-   :::image type="content" source="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png" alt-text="The Page tab after clearing the Group by folder check mark." lightbox="../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png":::
+   ![The Page tab after clearing the Group by folder check mark.](../media/resources-sources-page-resources-empty-not-grouped-by-folder.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -134,17 +134,17 @@ To group resources together based on their file type:
 
 1. Select the **Application** tab.  The **Application** tool opens.  By default, the **Manifest** pane usually opens first.
 
-   :::image type="content" source="../media/resources-application-mainfest-airhorner.msft.png" alt-text="The Application tool." lightbox="../media/resources-application-mainfest-airhorner.msft.png":::
+   ![The Application tool.](../media/resources-application-mainfest-airhorner.msft.png)
 
 1. Scroll down to the **Frames** pane.
 
-   :::image type="content" source="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png" alt-text="The Frames pane." lightbox="../media/resources-application-mainfest-airhorner-frames-expanded.msft.png":::
+   ![The Frames pane.](../media/resources-application-mainfest-airhorner-frames-expanded.msft.png)
 
 1. Expand the sections you're interested in.
 
 1. Select a resource to view it.
 
-   :::image type="content" source="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png" alt-text="View a resource in the Application panel." lightbox="../media/resources-application-mainfest-airhorner-expanded-resources.msft.png":::
+   ![View a resource in the Application panel.](../media/resources-application-mainfest-airhorner-expanded-resources.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -152,7 +152,7 @@ To group resources together based on their file type:
 
 See [Filter by resource type](../network/index.md#filter-by-resource-type).
 
-:::image type="content" source="../media/resources-network-resources-filter-css.msft.png" alt-text="Filter for CSS in the Network Log." lightbox="../media/resources-network-resources-filter-css.msft.png":::
+![Filter for CSS in the Network Log.](../media/resources-network-resources-filter-css.msft.png)
 
 
 <!-- ====================================================================== -->

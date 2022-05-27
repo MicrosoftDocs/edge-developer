@@ -53,7 +53,7 @@ To try using the logging functions in the Console:
 
    The demo page has already sent the above log messages to the **Console**:
 
-   :::image type="content" source="../media/console-log-examples.msft.png" alt-text="The Console shows the messages from different log APIs." lightbox="../media/console-log-examples.msft.png":::
+   ![The Console shows the messages from different log APIs.](../media/console-log-examples.msft.png)
 
    The `log()` and `info()` methods seem to do the same thing.  Use `info()` and `log()` for different log tasks, because that allows you to [filter Console messages](console-filters.md), to display only a subset of log entries.
   
@@ -111,11 +111,11 @@ To use the `log` function to display different variable types:
 
    Logging variables of different types in the **Console**:
 
-   :::image type="content" source="../media/console-log-types.msft.png" alt-text="Log variables of different types in the console." lightbox="../media/console-log-types.msft.png":::
+   ![Log variables of different types in the console.](../media/console-log-types.msft.png)
 
    Logging variables of different types in the **Console** with expanded, extra information:
 
-   :::image type="content" source="../media/console-log-types-expanded.msft.png" alt-text="Log variables of different types in the console with expanded extra information." lightbox="../media/console-log-types-expanded.msft.png":::
+   ![Log variables of different types in the console with expanded extra information.](../media/console-log-types-expanded.msft.png)
 
 1. Copy and paste any of the examples into the **Console**, and then press `Enter`.
 
@@ -179,13 +179,13 @@ console.log('%cImportant message follows','color:red;font-size:40px')
 
    Specifiers are used to log, format, and convert values:
 
-   :::image type="content" source="../media/console-log-specifiers.msft.png" alt-text="Use specifiers to log and convert values." lightbox="../media/console-log-specifiers.msft.png":::
+   ![Use specifiers to log and convert values.](../media/console-log-specifiers.msft.png)
 
 1. In the **Console**, click triangles to expand the log results, to see the difference between the `%o` and `%O` specifiers.
 
    The body of the webpage is either displayed as an expandable DOM node, or as a full list of all JavaScript properties on the webpage body:
 
-   :::image type="content" source="../media/console-log-specifiers-expanded.msft.png" alt-text="Expand the results displays the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body." lightbox="../media/console-log-specifiers-expanded.msft.png":::
+   ![Expand the results displays the difference between the %O and %o specifier - the body is either displayed as an expandable DOM node or as a full list of all JavaScript properties on the webpage body.](../media/console-log-specifiers-expanded.msft.png)
 
 1. Copy and paste the above example code listing into the **Console**, and then press `Enter`.
 
@@ -239,11 +239,11 @@ In this example, the group names are optionally generated.
 
    Logging lots of values as groups:
 
-   :::image type="content" source="../media/console-log-groups.msft.png" alt-text="Log lots of values as groups." lightbox="../media/console-log-groups.msft.png":::
+   ![Log lots of values as groups.](../media/console-log-groups.msft.png)
 
 1. In the Console output, expand and collapse each of the sections:
 
-   :::image type="content" source="../media/console-log-groups-expanded.msft.png" alt-text="Each group can be expanded and collapsed." lightbox="../media/console-log-groups-expanded.msft.png":::
+   ![Each group can be expanded and collapsed.](../media/console-log-groups-expanded.msft.png)
 
 1. Copy and paste the above example code listing into the **Console**, and then press `Enter`.
 
@@ -295,7 +295,7 @@ To show complex data as tables:
 
 1. Click the expander triangles.  Displaying data with `console.table` makes the data easier to read:
 
-   :::image type="content" source="../media/console-log-table.msft.png" alt-text="Display data with console.table to make it easier to read." lightbox="../media/console-log-table.msft.png":::
+   ![Display data with console.table to make it easier to read.](../media/console-log-table.msft.png)
 
 1. Copy and paste the above code listing into the **Console**, and then press `Enter`.
 
@@ -326,7 +326,7 @@ This code filters the information that the `console.table()` method displays.
 
 The code provides an array of properties to display, as a second parameter:
 
-:::image type="content" source="../media/console-log-table-filtered.msft.png" alt-text="Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter." lightbox="../media/console-log-table-filtered.msft.png":::
+![Filtering information that 'console.table' displays, and providing an array of properties to display, as a second parameter.](../media/console-log-table-filtered.msft.png)
 
 1. Copy and paste the above code listing into the **Console**, and then press `Enter`.
 

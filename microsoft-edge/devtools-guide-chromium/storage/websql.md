@@ -33,15 +33,15 @@ This article shows how to use DevTools to inspect Web SQL data.
 
 1. In DevTools, open the **Application** tool.  The **Manifest** pane usually opens by default.
 
-   :::image type="content" source="../media/storage-application-manifest.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest.msft.png":::
+   ![The Manifest pane.](../media/storage-application-manifest.msft.png)
 
 1. Expand the **Web SQL** section to view databases and tables.  In the following figure, below **html5meetup** is a database and **rooms** is a table.
 
-   :::image type="content" source="../media/storage-application-storage-web-sql.msft.png" alt-text="The Web SQL pane." lightbox="../media/storage-application-storage-web-sql.msft.png":::
+   ![The Web SQL pane.](../media/storage-application-storage-web-sql.msft.png)
 
 1. Click a table to view the data for that table.
 
-:::image type="content" source="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png" alt-text="View the data of a Web SQL table." lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png":::
+![View the data of a Web SQL table.](../media/storage-application-storage-web-sql-html5meetup-rooms-1.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -57,7 +57,7 @@ You can't edit Web SQL data when viewing a Web SQL table, such as in the previou
 
 1. Type a Web SQL statement, then press `Enter` to run it.
 
-:::image type="content" source="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png" alt-text="Use the Web SQL Console to delete a row from a table." lightbox="../media/storage-application-storage-web-sql-html5meetup-commands.msft.png":::
+![Use the Web SQL Console to delete a row from a table.](../media/storage-application-storage-web-sql-html5meetup-commands.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -77,7 +77,7 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
 1. Use the **Visible columns** text box to specify what columns you want to show.  Provide the column names as a CSV list.
 
-   :::image type="content" source="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png" alt-text="Use the Visible Columns text box to reduce the number of columns shown." lightbox="../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png":::
+   ![Use the Visible Columns text box to reduce the number of columns shown.](../media/storage-application-storage-web-sql-html5meetup-rooms-2.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -87,11 +87,11 @@ DevTools doesn't update tables in real-time.  To update the data in a table:
 
 1. Make sure that the **Web SQL** checkbox is turned on.
 
-   :::image type="content" source="../media/storage-application-clear-storage-web-sql.msft.png" alt-text="The Web SQL checkbox." lightbox="../media/storage-application-clear-storage-web-sql.msft.png":::
+   ![The Web SQL checkbox.](../media/storage-application-clear-storage-web-sql.msft.png)
 
 1. Click **Clear site data**.
 
-   :::image type="content" source="../media/storage-application-clear-storage-clear-site-data-button.msft.png" alt-text="The Clear Site Data button." lightbox="../media/storage-application-clear-storage-clear-site-data-button.msft.png":::
+   ![The Clear Site Data button.](../media/storage-application-clear-storage-clear-site-data-button.msft.png)
 
 
 <!-- ====================================================================== -->

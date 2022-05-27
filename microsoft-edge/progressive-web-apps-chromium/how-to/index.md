@@ -155,17 +155,17 @@ Confirm that your service worker runs, as follows:
 
 1.  In Microsoft Edge, select `F12` to open DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker isn't displayed, refresh the page.
 
-    :::image type="content" source="../media/devtools-sw-overview.png" alt-text="DevTools Service Worker overview." lightbox="../media/devtools-sw-overview.png":::
+    ![DevTools Service Worker overview.](../media/devtools-sw-overview.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.
 
-    :::image type="content" source="../media/devtools-cache.png" alt-text="Service Worker cache in DevTools." lightbox="../media/devtools-cache.png":::
+    ![Service Worker cache in DevTools.](../media/devtools-cache.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  Try your PWA as an offline app, as follows.  In DevTools, select **Network**, and then change the status from **Online** to **Offline**.
 
-    :::image type="content" source="../media/devtools-offline.png" alt-text="Setting the app to offline mode in DevTools." lightbox="../media/devtools-offline.png":::
+    ![Setting the app to offline mode in DevTools.](../media/devtools-offline.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  Refresh your app.  It should display the offline mechanism for serving the resources of your app from the cache.
