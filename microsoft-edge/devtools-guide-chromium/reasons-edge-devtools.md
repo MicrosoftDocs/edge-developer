@@ -141,7 +141,6 @@ In user studies we found that people often copy and paste error messages from th
 Console with highlighted search icon that would open a web search with the error message in a new browser tab:
 
 ![Console with highlighted search icon that would open a web search with the error message in a new browser tab.](reasons-edge-devtools-images/console-error-message-search-web-link.png)
-<!-- todo: put real content in png -->
 
 See also:
 * [Search the web for a Console error message string](console/index.md#search-the-web-for-a-console-error-message-string) in _Console overview_.
@@ -193,8 +192,3 @@ Inspecting the network traffic of your web product is already insightful, but of
 As a demo tour of Microsoft Edge DevTools, open these demo webpages and follow the steps in the linked articles:
 
 * [Sample code for DevTools](sample-code/sample-code.md)
-
-<!--
-* [Demo tour of DevTools](demo-tour/demo-tour-of-microsoft-edge-devtools.md)
--->
-<!-- icon tagging & images: [Overview of DevTools](overview.md) -->
