@@ -85,7 +85,7 @@ There's also another way to test for lack of connections between elements:
 
    A focus-indicator box correctly appears on the input text box next to the **Other** label, because there are matching `for` and `id` attribute values.
 
-1. In the **Issues tool**, click the **Further reading** to learn more about the issue.  To open the link in a new tab, press `Ctrl` (Windows/Linux) or `Command` (macOS) while clicking the link.
+1. In the **Issues tool**, click the **Further reading** to learn more about the issue.  To open the link in a new tab, press `Ctrl` (Windows, Linux) or `Command` (macOS) while clicking the link.
 
    ![Link on the Issues tab pointing to more in-depth information about the issue.](../media/a11y-testing-more-information-links.msft.png)
 
