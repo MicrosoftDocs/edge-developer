@@ -52,7 +52,7 @@ In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any 
 | Action | Resulting tool |
 |---|---|
 | Right-click any item on a webpage, and then select **Inspect**. | The **Elements** tool, with the DOM tree expanded to show the right-clicked page element. |
-| Press `Ctrl`+`Shift`+`I` (Windows/Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
+| Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
 | Press `F12`. | The previously used tool, or the **Welcome** tool. |
 
 **Additional ways:**
@@ -174,7 +174,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 **To restore zoom to 100%:**
 
 1. Make sure focus is on the desired part of the browser, either DevTools or the rendered page.
-1. Press `Ctrl`+`0` (Windows or Linux) or `Command`+`0` (macOS).
+1. Press `Ctrl`+`0` or `Ctrl`+`NumPad0` (Windows or Linux), or `Command`+`0` (macOS).
 
 **To zoom DevTools Settings:**
 
@@ -197,7 +197,7 @@ To zoom the rendered page, click the page, and then use the same keyboard shortc
 The DevTools Tooltips feature helps you learn about all the different tools and panes.  Hover over each outlined region of DevTools to learn more about how to use the tool.  To turn on Tooltips, do one of the following: 
 
 *  Select **Customize and control DevTools** (`...`) > **Help** > **Toggle the DevTools Tooltips**.
-*  Press `Ctrl`+`Shift`+`H` (Windows/Linux) or `Cmd`+`Shift`+`H` (macOS).
+*  Press `Ctrl`+`Shift`+`H` (Windows, Linux) or `Cmd`+`Shift`+`H` (macOS).
 *  [Open the Command Menu](command-menu/index.md#open-the-command-menu) and then type `tooltips`.
 
 Then hover over each outlined region of DevTools:

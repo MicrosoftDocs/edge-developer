@@ -298,6 +298,18 @@ To read more about DOM leaks and memory analysis fundamentals, check out [Findin
 
 
 <!-- ====================================================================== -->
+## Save and export strings from a heap snapshot to JSON
+
+When taking a heap snapshot in the **Memory** tool, you can export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the **Save all to file** button next to the `(string)` entry:
+
+![Save all strings from a heap snapshot to JSON.](heap-snapshots-images/save-heap-snapshot-strings-json.png)
+
+The **Memory** tool exports a JSON file that contains all of the string objects from the heap snapshot:
+
+![Strings from the heap snapshot, in the JSON file.](heap-snapshots-images/heap-snapshot-strings-json-file.png)
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
