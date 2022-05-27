@@ -71,7 +71,14 @@ On the 3D canvas on the right, select an element of the webpage.  In the **Compo
 
 ### Slow scroll rects (checkbox)
 
-<!-- need desc -->
+The **Slow scroll rects** checkbox highlights sections of the page that cause slow scrolling.  This checkbox is helpful to investigate performance problems.  Certain webpages use JavaScript to detect scroll (or touch) on certain page elements in a way that may make scrolling through the webpage slower than it normally could be.
+
+This checkbox highlights (in pink) the boxes of the rendered webpage that may cause these performance issues.
+<!-- To try this checkbox, you can go to [YouTube](https://www.youtube.com). -->
+
+This checkbox is similar to the **Scrolling performance issues** checkbox in the **Rendering** tool, which highlights the slow rects on the page directly (in yellow).  See [Find scroll performance issues in realtime](../evaluate-performance\reference.md#find-scroll-performance-issues-in-realtime) in _Performance features reference_.  Both checkboxes are based on the same debugging info, but these two tools present this information differently.
+<!-- https://developer.chrome.com/docs/devtools/rendering/performance/#scrolling-performance-issues -->
+
 
 ### Paints (checkbox)
 
@@ -221,7 +228,7 @@ Instead of showing all the page's DOM elements in the 3D canvas, you can focus o
 
 Select an element of the webpage in the 3D canvas, and then click the **Isolate selected element** button.  The 3D canvas displays the selected element and the element's parents or children, without displaying the rest of the page elements.
 
-Use this button to display the element that you selected on the 3D canvas, while reducing the clutter that complex web pages can create in the 3D canvas.
+Use this button to display the element that you selected on the 3D canvas, while reducing the clutter that complex webpages can create in the 3D canvas.
 
 
 #### Include parents (checkbox)
