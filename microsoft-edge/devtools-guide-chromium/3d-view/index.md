@@ -75,7 +75,7 @@ The **Slow scroll rects** checkbox highlights sections of the page that cause sl
 
 Checking this box in the **3D View** tool highlights (in pink) the boxes of the rendered webpage that may cause these performance issues.
 
-To try this checkbox, you can go to [YouTube](youtube.com) and in the DevTools **3D View** tool, select the **Slow scroll rects** checkbox.  Some boxes in the webpage appear to be causing slow scrolling.
+To try this checkbox, you can go to [YouTube](https://www.youtube.com) and in the DevTools **3D View** tool, select the **Slow scroll rects** checkbox.  Some boxes in the webpage appear to be causing slow scrolling.
 
 This checkbox is similar to the **Scrolling performance issues** checkbox in the **Rendering** tool, which highlights the slow rects on the page directly (in yellow).  Both checkboxes are based on the same debugging info, but they present this information differently.
 <!-- https://developer.chrome.com/docs/devtools/rendering/performance/#scrolling-performance-issues -->
