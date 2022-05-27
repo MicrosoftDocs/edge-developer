@@ -328,7 +328,8 @@ Automatic updates are turned on by default for all Microsoft Edge users.  On all
 
 Microsoft Edge offers a simplified experience with the integration of Internet Explorer (IE).  Microsoft Edge only supports IE 11, and IE mode is only available on Windows.  The IE mode feature is available for organizations through group policies.  The administrator chooses to open certain sites in IE mode in Microsoft Edge.
 
-![IE mode.](./media/ie-mode.png)
+> [!div class="mx-imgBorder"]
+> ![IE mode.](./media/ie-mode.png)
 
 Microsoft Edge downloads the list of sites from a location defined by the administrator through a policy, and caches the file that determines which sites must be opened in IE mode.  Depending on your Windows or IE 11 settings, Microsoft Edge collects diagnostic data about the use of IE mode. Collected data includes which sites users visit, performance data, reliability data, and feature usage data.  On Windows 10 and later, the diagnostic data is collected according to your Windows Diagnostic data setting.  On Windows 8.1, website information is collected if the user has opted into the Flip Ahead or Suggested Sites feature in IE.  IE mode may not follow the same data collection settings in the Microsoft Edge Privacy settings.
 
