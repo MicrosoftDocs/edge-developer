@@ -51,7 +51,7 @@ Removing a tool by clicking the **x** button on the tab of the tool:
 
 ![Removing a tool by activating the x button on the tab of the tool](reasons-edge-devtools-images/click-tab-x-button-to-remove-tool.png)
 
-See [The More Tools menus](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#the-more-tools-menus) in _About the list of tools_.
+See [The More Tools menus](about-tools.md#the-more-tools-menus) in _About the list of tools_.
 
 
 ### Move tools around in the UI
@@ -66,7 +66,7 @@ The tool now appears on the bottom drawer:
 
 ![The tool now appears on the bottom drawer.](reasons-edge-devtools-images/tool-tab-moved-bottom-toolbar.png)
 
-See [Panel tools vs. Drawer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#panel-tools-vs-drawer-tools) in _About the list of tools_.
+See [Panel tools vs. Drawer tools](about-tools.md#panel-tools-vs-drawer-tools) in _About the list of tools_.
 
 
 ### Focus Mode with Activity Bar and Quick View tool menu
@@ -81,7 +81,7 @@ Focus mode showing only tools related to Source editing:
 
 ![Focus mode showing only tools related to Source editing.](reasons-edge-devtools-images/focus-mode-with-only-source-editing-tools.png)
 
-See [Simplify DevTools using Focus Mode](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode).
+See [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md).
 
 
 ### Tooltips Help Documentation mode
@@ -92,7 +92,7 @@ Tool explanations shown when Tooltips mode is enabled:
 
 ![Tool explanations shown when Tooltips mode is enabled.](reasons-edge-devtools-images/tool-explanations-in-tooltips-mode.png)
 
-See [Display DevTools Tooltips](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#display-devtools-tooltips) in _Overview of DevTools_.
+See [Display DevTools Tooltips](overview.md#display-devtools-tooltips) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -111,7 +111,7 @@ Microsoft Edge Developer Tools displayed in Japanese:
 
 ![Microsoft Edge Developer Tools displayed in Japanese.](reasons-edge-devtools-images/microsoft-edge-devtools-with-japanese-ui.png)
 
-See [Change DevTools language settings](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/localization).
+See [Change DevTools language settings](customize/localization.md).
 
 
 ### Change the color theme
@@ -126,7 +126,7 @@ Microsoft Edge DevTools displayed in the Monokai theme:
 
 ![Microsoft Edge DevTools displayed in the Monokai theme.](reasons-edge-devtools-images/devtools-monokai-theme.png)
 
-See [Apply a color theme to DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/theme).
+See [Apply a color theme to DevTools](customize/theme.md).
 
 
 <!-- ====================================================================== -->
@@ -174,7 +174,7 @@ Current problems of a webpage displayed in the Issues panel:
 
 ![Current problems of a webpage displayed in the Issues panel.](reasons-edge-devtools-images/webpage-problems-displayed-in-issues-panel.png)
 
-See [Find and fix problems using the Issues tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/issues/).
+See [Find and fix problems using the Issues tool](issues/index.md).
 
 
 ### Integration of Microsoft Edge DevTools with Visual Studio Code
@@ -200,12 +200,16 @@ Inspecting the network traffic of your web product is already insightful, but of
 
 ![Network Console showing options for changing a network call.](reasons-edge-devtools-images/network-console-options-changing-network-call.png)
 
-See [Compose and send web API requests using the Network Console tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool).
+See [Compose and send web API requests using the Network Console tool](network-console/network-console-tool.md).
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
+* [Sample code for DevTools](sample-code/sample-code.md)
+
+<!--
 As a demo tour of Microsoft Edge DevTools, open these demo webpages and follow the steps in the linked articles:
 
-* [Sample code for DevTools](sample-code/sample-code.md)
+* [Demo tour of DevTools](demo-tour/demo-tour-of-microsoft-edge-devtools.md)
+-->
