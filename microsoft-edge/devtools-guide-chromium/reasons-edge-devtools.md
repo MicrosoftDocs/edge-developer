@@ -51,6 +51,8 @@ Removing a tool by clicking the **x** button on the tab of the tool:
 
 ![Removing a tool by activating the x button on the tab of the tool](reasons-edge-devtools-images/click-tab-x-button-to-remove-tool.png)
 
+See [The More Tools menus](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#the-more-tools-menus) in _About the list of tools_.
+
 
 ### Move tools around in the UI
  
@@ -63,6 +65,8 @@ Moving a tool to the bottom drawer using the right-click menu:
 The tool now appears on the bottom drawer:
 
 ![The tool now appears on the bottom drawer.](reasons-edge-devtools-images/tool-tab-moved-bottom-toolbar.png)
+
+See [Panel tools vs. Drawer tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/about-tools#panel-tools-vs-drawer-tools) in _About the list of tools_.
 
 
 ### Focus Mode with Activity Bar and Quick View tool menu
@@ -77,6 +81,8 @@ Focus mode showing only tools related to Source editing:
 
 ![Focus mode showing only tools related to Source editing.](reasons-edge-devtools-images/focus-mode-with-only-source-editing-tools.png)
 
+See [Simplify DevTools using Focus Mode](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/experimental-features/focus-mode).
+
 
 ### Tooltips Help Documentation mode
 
@@ -85,6 +91,8 @@ To learn about each tool, enable Tooltips mode, which is a Help mode with links 
 Tool explanations shown when Tooltips mode is enabled:
 
 ![Tool explanations shown when Tooltips mode is enabled.](reasons-edge-devtools-images/tool-explanations-in-tooltips-mode.png)
+
+See [Display DevTools Tooltips](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/overview#display-devtools-tooltips) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
@@ -103,6 +111,8 @@ Microsoft Edge Developer Tools displayed in Japanese:
 
 ![Microsoft Edge Developer Tools displayed in Japanese.](reasons-edge-devtools-images/microsoft-edge-devtools-with-japanese-ui.png)
 
+See [Change DevTools language settings](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/localization).
+
 
 ### Change the color theme
 
@@ -115,6 +125,8 @@ Switching to a different theme in DevTools Settings:
 Microsoft Edge DevTools displayed in the Monokai theme:
 
 ![Microsoft Edge DevTools displayed in the Monokai theme.](reasons-edge-devtools-images/devtools-monokai-theme.png)
+
+See [Apply a color theme to DevTools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/theme).
 
 
 <!-- ====================================================================== -->
@@ -131,7 +143,7 @@ The **Detached Elements** tool, showing elements that need to be removed from me
 
 ![The Detached Elements tool, showing elements that need to be removed from memory.](reasons-edge-devtools-images/detached-elements-to-remove.png)
 
-For information about the **Detached Elements** tool, see [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md).
+See [Debug DOM memory leaks with the Detached Elements tool](memory-problems/dom-leaks.md).
 
 
 ### Console error search
@@ -142,8 +154,7 @@ Console with highlighted search icon that would open a web search with the error
 
 ![Console with highlighted search icon that would open a web search with the error message in a new browser tab.](reasons-edge-devtools-images/console-error-message-search-web-link.png)
 
-See also:
-* [Search the web for a Console error message string](console/index.md#search-the-web-for-a-console-error-message-string) in _Console overview_.
+See [Search the web for a Console error message string](console/index.md#search-the-web-for-a-console-error-message-string) in _Console overview_.
 
 
 ### 3D View
@@ -163,6 +174,8 @@ Current problems of a webpage displayed in the Issues panel:
 
 ![Current problems of a webpage displayed in the Issues panel.](reasons-edge-devtools-images/webpage-problems-displayed-in-issues-panel.png)
 
+See [Find and fix problems using the Issues tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/issues/).
+
 
 ### Integration of Microsoft Edge DevTools with Visual Studio Code
 
@@ -176,6 +189,8 @@ Microsoft Edge DevTools integrated into Visual Studio Code:
 
 ![Microsoft Edge DevTools integrated into Visual Studio Code.](reasons-edge-devtools-images/devtools-integrated-into-visual-studio-code.png)
 
+See [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension).
+
 
 ### Network Console
 
@@ -184,6 +199,8 @@ Inspecting the network traffic of your web product is already insightful, but of
 **Network Console** showing options for changing a network call:
 
 ![Network Console showing options for changing a network call.](reasons-edge-devtools-images/network-console-options-changing-network-call.png)
+
+See [Compose and send web API requests using the Network Console tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool).
 
 
 <!-- ====================================================================== -->
