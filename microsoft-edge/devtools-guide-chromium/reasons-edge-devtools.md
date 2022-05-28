@@ -71,15 +71,13 @@ See [Panel tools vs. Drawer tools](about-tools.md#panel-tools-vs-drawer-tools) i
 
 ### Focus Mode with Activity Bar and Quick View tool menu
 
-**Focus Mode** makes the DevTools UI even easier to use.  The Microsoft Edge DevTools team learned through user interviews and feedback sessions that the number of tools displayed at a given time can be overwhelming.  This is why we introduced Focus Mode, which groups a large set of features for related tasks into various tool panels, and then allows you to show only the tools that you need for your current activity or work mode.
+Focus Mode is a new user interface for DevTools.  Focus Mode simplifies and streamlines the DevTools UI.
 
-Focus mode showing only tools related to Elements debugging:
+Focus Mode replaces the DevTools toolbar and its tabs by an Activity Bar, which is a compact toolbar with distinctive icons.  You can keep the Activity Bar on the left, or move it to the top.  The Activity Bar makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The Activity Bar also provides access to user settings, help, and other features.
 
-![Focus mode showing only tools related to Elements debugging.](reasons-edge-devtools-images/focus-mode-with-only-elements-debugging-tools.png)
+Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the Activity Bar.
 
-Focus mode showing only tools related to Source editing:
-
-![Focus mode showing only tools related to Source editing.](reasons-edge-devtools-images/focus-mode-with-only-source-editing-tools.png)
+![Activity Bar and Quick View tool menu.](reasons-edge-devtools-images/activity-bar-quick-view.png)
 
 See [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md).
 
