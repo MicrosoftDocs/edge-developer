@@ -22,7 +22,7 @@ Search the web for your **Console** errors, from within DevTools.  In the **Cons
 
 ![The 'Search for this message on the Web' button on an error in the Console.](../../media/2021/09/search-console-icon.msft.png)
 
-See [Look up error messages on the web from the Console](../../../console/index.md#look-up-error-messages-on-the-web-from-the-console).
+See [Search the web for a Console error message string](../../../console/index.md#search-the-web-for-a-console-error-message-string).
 
 
 <!-- ====================================================================== -->

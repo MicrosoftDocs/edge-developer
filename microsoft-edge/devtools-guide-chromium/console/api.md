@@ -61,7 +61,7 @@ console.assert(x < y, {x, y, reason});
 
 #### Output
 
-:::image type="content" source="../media/console-demo-assert-button.msft.png" alt-text="The result of the console.assert() example" lightbox="../media/console-demo-assert-button.msft.png":::
+![The result of the console.assert() example](../media/console-demo-assert-button.msft.png)
 
 <br/><br/>
 
@@ -108,7 +108,7 @@ console.count();
 
 #### Output
 
-:::image type="content" source="../media/console-demo-count-button.msft.png" alt-text="The result of the console.count() example" lightbox="../media/console-demo-count-button.msft.png":::
+![The result of the console.count() example](../media/console-demo-count-button.msft.png)
 
 <br/><br/>
 
@@ -153,7 +153,7 @@ console.debug('debug');
 
 #### Output
 
-:::image type="content" source="../media/console-demo-debug-button.msft.png" alt-text="The result of the console.debug() example" lightbox="../media/console-demo-debug-button.msft.png":::
+![The result of the console.debug() example](../media/console-demo-debug-button.msft.png)
 
 <br/><br/>
 
@@ -178,7 +178,7 @@ console.dir(document.head);
 
 #### Output
 
-:::image type="content" source="../media/console-demo-dir-button.msft.png" alt-text="The result of the console.dir() example" lightbox="../media/console-demo-dir-button.msft.png":::
+![The result of the console.dir() example](../media/console-demo-dir-button.msft.png)
 
 <br/><br/>
 
@@ -203,7 +203,7 @@ console.dirxml(document);
 
 #### Output
 
-:::image type="content" source="../media/console-demo-dirxml-button.msft.png" alt-text="The result of the console.dirxml() example" lightbox="../media/console-demo-dirxml-button.msft.png":::
+![The result of the console.dirxml() example](../media/console-demo-dirxml-button.msft.png)
 
 <br/><br/>
 
@@ -228,7 +228,7 @@ console.error("I'm sorry, Dave.  I'm afraid I can't do that.");
 
 #### Output
 
-:::image type="content" source="../media/console-demo-error-button.msft.png" alt-text="The result of the console.error() example" lightbox="../media/console-demo-error-button.msft.png":::
+![The result of the console.error() example](../media/console-demo-error-button.msft.png)
 
 <br/><br/>
 
@@ -257,7 +257,7 @@ console.groupEnd(label);
 
 #### Output
 
-:::image type="content" source="../media/console-demo-group-button.msft.png" alt-text="The result of the console.group() example" lightbox="../media/console-demo-group-button.msft.png":::
+![The result of the console.group() example](../media/console-demo-group-button.msft.png)
 
 <br/><br/>
 
@@ -308,7 +308,7 @@ console.info('info');
 
 #### Output
 
-:::image type="content" source="../media/console-demo-info-button.msft.png" alt-text="The result of the console.info() example" lightbox="../media/console-demo-info-button.msft.png":::
+![The result of the console.info() example](../media/console-demo-info-button.msft.png)
 
 <br/><br/>
 
@@ -333,7 +333,7 @@ console.log('log');
 
 #### Output
 
-:::image type="content" source="../media/console-demo-log-button.msft.png" alt-text="The result of the console.log() example" lightbox="../media/console-demo-log-button.msft.png":::
+![The result of the console.log() example](../media/console-demo-log-button.msft.png)
 
 <br/><br/>
 
@@ -372,7 +372,7 @@ console.table([
 
 #### Output
 
-:::image type="content" source="../media/console-demo-table-button.msft.png" alt-text="The result of the console.table() example" lightbox="../media/console-demo-table-button.msft.png":::
+![The result of the console.table() example](../media/console-demo-table-button.msft.png)
 
 <br/><br/>
 
@@ -399,7 +399,7 @@ console.timeEnd();
 
 #### Output
 
-:::image type="content" source="../media/console-demo-time-button.msft.png" alt-text="The result of the console.time() example" lightbox="../media/console-demo-time-button.msft.png":::
+![The result of the console.time() example](../media/console-demo-time-button.msft.png)
 
 <br/><br/>
 
@@ -443,7 +443,7 @@ first();
 
 #### Output
 
-:::image type="content" source="../media/console-demo-trace-button.msft.png" alt-text="The result of the console.trace() example" lightbox="../media/console-demo-trace-button.msft.png":::
+![The result of the console.trace() example](../media/console-demo-trace-button.msft.png)
 
 <br/><br/>
 
@@ -468,7 +468,7 @@ console.warn('warn');
 
 #### Output
 
-:::image type="content" source="../media/console-demo-warn-button.msft.png" alt-text="The result of the console.warn() example" lightbox="../media/console-demo-warn-button.msft.png":::
+![The result of the console.warn() example](../media/console-demo-warn-button.msft.png)
 
 <br/><br/>
 

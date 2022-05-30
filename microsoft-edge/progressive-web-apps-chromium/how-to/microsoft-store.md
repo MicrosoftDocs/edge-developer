@@ -35,7 +35,7 @@ To create an app reservation:
         *   If **Windows & Xbox** is displayed, your app is already enrolled.
         *   If **Windows & Xbox** isn't displayed, select **Add program**.
 
-    :::image type="content" source="../media/windows-partner-center-add-program.msft.png" alt-text="Add a program in the Windows Partner Center dashboard.":::
+    ![Add a program in the Windows Partner Center dashboard.](../media/windows-partner-center-add-program.msft.png)
 
 1.  To enroll in the developer program:
     1.  Navigate to **Windows & Xbox**.
@@ -47,11 +47,11 @@ To create an app reservation:
     1.  Type the name of your app in the prompt.
     1.  Select `Reserve product name`.
 
-    :::image type="content" source="../media/windows-partner-center-create-app.msft.png" alt-text="Create an app reservation in Windows Partner Center.":::
+    ![Create an app reservation in Windows Partner Center.](../media/windows-partner-center-create-app.msft.png)
 
 1.  To display your publisher details for use in the [Package your PWA](#package-your-pwa-for-the-store) section, select **Product management** > **Product Identity**.
 
-    :::image type="content" source="../media/windows-partner-center-publisher-info.msft.png" alt-text="Copy your publisher information from Windows Partner Center." lightbox="../media/windows-partner-center-publisher-info.msft.png":::
+    ![Copy your publisher information from Windows Partner Center.](../media/windows-partner-center-publisher-info.msft.png)
     <!-- lightbox justified because large detailed image -->
 
 1.  Copy and save the following values.
@@ -76,7 +76,7 @@ To generate an app package:
     *   **Publisher ID**
     *   **Publisher Display Name**
 
-    :::image type="content" source="../media/pwabuilder-windows-package-options.png" alt-text="Paste publisher information into PWABuilder.":::
+    ![Paste publisher information into PWABuilder.](../media/pwabuilder-windows-package-options.png)
 
 1.  Select **Generate**.
 1.  To download your Windows app package, select **Download**.
@@ -92,7 +92,7 @@ To submit your app to the Microsoft Store:
 1.  Select your app.
 1.  Select **Start your Submission**.
 
-    :::image type="content" source="../media/windows-partner-center-start-submission.msft.png" alt-text="Start a new app submission on Windows Partner Center.":::
+    ![Start a new app submission on Windows Partner Center.](../media/windows-partner-center-start-submission.msft.png)
 
 1.  When you're prompted, provide information about your app, such as pricing and age rating.
 
@@ -122,7 +122,7 @@ By default, a PWA that's installed from the Microsoft Store displays an addition
 
 The following figure shows the UI that is introduced when a user moves outside the scope of a PWA. 
 
-:::image type="content" source="../media/locale-redirection-additional-ui.png" alt-text="The additional UI with URL and page title when the app is redirected to another domain.":::
+![The additional UI with URL and page title when the app is redirected to another domain.](../media/locale-redirection-additional-ui.png)
 
 ### Domain redirection with browser-installed PWAs
 

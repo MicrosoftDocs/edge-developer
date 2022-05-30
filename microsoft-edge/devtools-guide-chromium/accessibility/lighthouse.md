@@ -37,7 +37,7 @@ To audit a page using the Lighthouse tool:
 
 1. In DevTools, select the **Lighthouse** tool.  Configuration options are displayed:
 
-   :::image type="content" source="../media/accessibility-lighthouse.msft.png" alt-text="Lighthouse configuration options." lightbox="../media/accessibility-lighthouse.msft.png":::
+   ![Lighthouse configuration options.](../media/accessibility-lighthouse.msft.png)
 
 1. For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
 
@@ -45,15 +45,15 @@ To audit a page using the Lighthouse tool:
 
 1. Click **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page:
 
-   :::image type="content" source="../media/accessibility-lighthouse-result.msft.png" alt-text="A Lighthouse report for the Accessibility category." lightbox="../media/accessibility-lighthouse-result.msft.png":::
+   ![A Lighthouse report for the Accessibility category.](../media/accessibility-lighthouse-result.msft.png)
 
 1. Select an item in the report to learn more about it.
 
-   :::image type="content" source="../media/accessibility-lighthouse-result-issue-expanded.msft.png" alt-text="An expanded issue in a Lighthouse report." lightbox="../media/accessibility-lighthouse-result-issue-expanded.msft.png":::
+   ![An expanded issue in a Lighthouse report.](../media/accessibility-lighthouse-result-issue-expanded.msft.png)
 
 1. Click the **Learn more** link to view the documentation of the issue:
 
-   :::image type="content" source="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png" alt-text="View the documentation of an issue." lightbox="../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png":::
+   ![View the documentation of an issue.](../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png)
 
 1. To return to the configuration options, in DevTools, click **Perform an audit** (`+`).
 

@@ -160,17 +160,17 @@ If you want to make your application use a Microsoft Edge preview channel by usi
 
 1. Expand **Local Computer Policy**, then **Computer Configuration** or **User Configuration**.  Then expand **Administrative Templates** > **Microsoft Edge WebView2**.
 
-   :::image type="content" source="media/local-group-policy-editor.png" alt-text="Local Group Policy Editor dialog.":::
+   ![Local Group Policy Editor dialog.](media/local-group-policy-editor.png)
 
 1. Select **Browser Executable Folder**.  The following screenshots apply to setting the **Browser Executable Folder**.  Alternatively, select **Release Channel Preference**, which uses similar dialog boxes.
 
-   :::image type="content" source="media/browser-executable-folder.png" alt-text="Setting the Browser Executable Folder.":::
+   ![Setting the Browser Executable Folder.](media/browser-executable-folder.png)
 
 1. Select the **Show** button.
 
 1. Fill-in the **Show Contents** dialog box.  In the **Value name** column, enter an asterisk to apply to all WebView2 apps, or a `.exe` filename to only affect the specified WebView2 app.  In the **Value** column, enter the path to your WebView2 app's executable file.
 
-   :::image type="content" source="media/show-contents.png" alt-text="The Show Contents dialog box.":::
+   ![The Show Contents dialog box.](media/show-contents.png)
 
 1. Select **OK** to close the dialog boxes.
 
@@ -232,11 +232,11 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1. In the Windows search bar, enter "environment", and then select **Edit the system environment variables**.
 
-   :::image type="content" source="media/search-bar-edit-sys-env-vars.png" alt-text="Using the Windows search bar to find where to edit environment variables.":::
+   ![Using the Windows search bar to find where to edit environment variables.](media/search-bar-edit-sys-env-vars.png)
 
 1. In the **System Properties** dialog box, select the **Advanced** tab, and then select the **Environment Variables** button.
 
-   :::image type="content" source="media/system-properties-env-vars.png" alt-text="The Environment Variables button in the System Properties dialog box.":::
+   ![The Environment Variables button in the System Properties dialog box.](media/system-properties-env-vars.png)
 
 1. In the **User variables** section of the **Environment Variables** dialog box, select **New**.
 
@@ -246,7 +246,7 @@ To make your application use a Microsoft Edge preview channel by using an enviro
 
 1. Click **OK** to close the dialog boxes.
 
-   :::image type="content" source="media/env-vars-new-user-variable.png" alt-text="Adding a new environment variable, as a user variable.":::
+   ![Adding a new environment variable, as a user variable.](media/env-vars-new-user-variable.png)
 
 ### Which app is affected
 

@@ -28,7 +28,7 @@ When you use the **Sources** tool to step through code, sometimes you pause on c
 
 1. In the **Settings** > **Library Code** page, select the **Mark content scripts as Library Code** checkbox.
 
-   :::image type="content" source="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png" alt-text="Enabling the 'Mark content scripts as Library code' checkbox." lightbox="../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png":::
+   ![Enabling the 'Mark content scripts as Library code' checkbox.](../../media/javascript-settings-library-code-mark-content-scripts-library-code.msft.png)
 
 1. Click the **Close** DevTools (![Close DevTools icon.](../../media/close-devtools-icon-light-theme.png)) button.
 
