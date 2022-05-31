@@ -29,7 +29,7 @@ You can integrate APIs directly into your Continuous Integration / Continuous De
 
 
 <!-- ====================================================================== -->
-### Addition of breadcrumbs to Microsoft Partner Center
+## Addition of breadcrumbs to Microsoft Partner Center
 
 Developers can view the navigation bar / tree path while using Partner Center to track the exact Partner Center path users are visiting. Developers can maintain awareness of their location within Microsoft Partner Center.
 
