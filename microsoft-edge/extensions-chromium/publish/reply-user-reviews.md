@@ -1,5 +1,5 @@
 ---
-title: Respond to user reviews about your extension
+title: Reply to user reviews about your Microsoft Edge extension
 description: You can view your Microsoft Edge extension's reviews and ratings and reply to user reviews from the Partner Center dashboard.
 author: MSEdgeTeam
 ms.author: msedgedevrel

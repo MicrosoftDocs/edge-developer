@@ -5,11 +5,21 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/20/2021
+ms.date: 05/31/2021
 ---
 # Microsoft Edge Add-ons released features
+<!-- suggested new title:
+# Released features for Microsoft Edge Add-ons
+Would need to change at:
+*  # here
+* top of this file (title:) 
+* toc.yml
+* full-text search the repo to update link text that points to the present article
 
-This article describes features launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for extension developers.
+Consider same for Roadmap article.  But compare title pattern that's used for https://docs.microsoft.com/microsoft-edge/webview2/roadmap
+-->
+
+The following features have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for developers of Microsoft Edge extensions.
 
 
 <!-- ====================================================================== -->
@@ -109,4 +119,6 @@ By clicking the extension certification report link, an extension developer can 
 
 
 <!-- ====================================================================== -->
+## See also
+
 For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).

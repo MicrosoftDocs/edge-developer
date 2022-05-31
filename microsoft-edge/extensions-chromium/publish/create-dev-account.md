@@ -102,10 +102,8 @@ An individual account is appropriate for a developer not associated with a compa
 
 A company account is associated with an organization or business.  The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
-
 > [!IMPORTANT]
-> **As a company account, verifying your Microsoft Edge program information when you enroll into a new Partner Center program is crucial to publish extensions to the Microsoft Edge Add-ons store.** To learn more, view [Verify Microsoft Edge program information when you enrol in a new Partner Center program](verify-microsoft-edge-program.md).
-
+> As a company account, verifying your Microsoft Edge program information when you enroll into a new Partner Center program is crucial to publish extensions to the Microsoft Edge Add-ons store. See [Verify your Microsoft Edge Partner Center program information](verify-microsoft-edge-program.md).
 
 ### Publisher display name
 
