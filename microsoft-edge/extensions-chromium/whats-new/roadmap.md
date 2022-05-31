@@ -11,9 +11,6 @@ ms.date: 03/22/2021
 
 This article describes the latest updates about new Partner Center features for Microsoft Edge extensions.
 
-> [!NOTE]
-> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often. Partner Center continues to evolve based on market changes and customer feedback.  The features described in this article are also subject to change.
-
 
 <!-- ====================================================================== -->
 ## Features in development
@@ -24,9 +21,6 @@ The following features are actively being developed by our engineers.
 
 Microsoft Partner Center will no longer accept new Manifest V2 Microsoft Edge extension submissions, with visibility set as Hidden or Public.
 
-### Addition of breadcrumbs to Microsoft Partner Center
-
-Developers can view the navigation bar / tree path while using Partner Center to track the exact Partner Center path users are visiting. Developers can maintain awareness of their location within Microsoft Partner Center.
 
 <br/>
 
@@ -48,6 +42,10 @@ Microsoft Partner Center will not accept updates to existing Manifest V2 Microso
 
 ### Manifest V2 Microsoft Edge Enterprise Add-ons cease to function
 Microsoft Edge Enterprise Add-ons with Manifest V2 will not be functional on Microsoft Edge.
+
+
+> [!NOTE]
+> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often. Partner Center continues to evolve based on market changes and customer feedback.  The features described in this article are also subject to change.
 
 
 <!-- ====================================================================== -->

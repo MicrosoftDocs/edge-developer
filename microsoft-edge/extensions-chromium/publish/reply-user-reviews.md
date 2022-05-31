@@ -1,13 +1,13 @@
 ---
 title: Respond to user reviews about your extension
-description: You can view your Microsoft Edge extension's reviews and ratings and respond to user reviews from the Partner Center dashboard.
+description: You can view your Microsoft Edge extension's reviews and ratings and reply to user reviews from the Partner Center dashboard.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/27/2021
 ---
-# Respond to user reviews about your Microsoft Edge extension
+# Reply to user reviews about your Microsoft Edge extension
 
 Respond to user reviews that are posted on the Microsoft Edge Add-ons product page.  To view your extension's reviews and ratings and engage with user reviews, use the Partner Center dashboard.
 
@@ -49,7 +49,7 @@ To reply to a user review:
 
 1. On a review, click the **Reply** link.
 
-A reply must be between one and one thousand (1-1000) characters long.
+A response must be between one and one thousand (1-1000) characters long.
 
 When you post a reply using the Partner Center dashboard, your reply appears on your Microsoft Edge Add-ons product page within 15 to 20 minutes.
 

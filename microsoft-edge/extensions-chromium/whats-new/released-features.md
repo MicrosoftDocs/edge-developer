@@ -11,12 +11,6 @@ ms.date: 05/20/2021
 
 This article describes features launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for extension developers.
 
-> [!NOTE]
-> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often.  Partner Center continues to evolve based on market changes and customer feedback. The features described in this article are also subject to change.
-
-For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
-
-
 
 <!-- ====================================================================== -->
 ### Developers can respond to user reviews about their Microsoft Edge Add-on
@@ -30,6 +24,14 @@ Developers can reply via Partner Center to reviews and feedback received about t
 ## Publish and update extensions using the Microsoft Edge Add-ons API
 
 You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the Microsoft Edge Add-ons API](/microsoft-edge/extensions-chromium/publish/api/using-addons-api)
+
+*Released March 2022*
+
+
+<!-- ====================================================================== -->
+### Addition of breadcrumbs to Microsoft Partner Center
+
+Developers can view the navigation bar / tree path while using Partner Center to track the exact Partner Center path users are visiting. Developers can maintain awareness of their location within Microsoft Partner Center.
 
 *Released March 2022*
 
@@ -104,3 +106,9 @@ Developers can choose a subset of languages instead of manually entering each la
 By clicking the extension certification report link, an extension developer can view and download the extension certification report from their [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) dashboard.  The link to the extension certification report is displayed after the extension submission review is complete.  The certification report contains the result of the extension review and relevant details.
 
 *Released January 2021*
+
+
+> [!NOTE]
+> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often. Partner Center continues to evolve based on market changes and customer feedback. The features described in this article are also subject to change.
+
+For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
