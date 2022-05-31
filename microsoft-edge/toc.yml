@@ -831,7 +831,7 @@
               href: extensions-chromium/publish/create-dev-account.md
 
             - name: Verify your Microsoft Edge Partner Center program information
-              href: verify-microsoft-edge-program.md
+              href: extensions-chromium/publish/verify-microsoft-edge-program.md
 
             - name: Publish extensions using a GitHub account
               href: extensions-chromium/publish/github.md

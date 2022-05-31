@@ -8,6 +8,10 @@ ms.prod: microsoft-edge
 ms.date: 05/31/2022
 ---
 # Verify your Microsoft Edge Partner Center program information
+<!-- 
+or (would have to change 3-5 spots):
+# Verify your program information for Microsoft Edge Partner Center
+-->
 
 When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. Information can include your company name, company address, and primary contact details. During this process, Microsoft may send email to your primary contact to request verification.
 
