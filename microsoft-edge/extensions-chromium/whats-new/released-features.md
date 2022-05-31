@@ -108,7 +108,5 @@ By clicking the extension certification report link, an extension developer can 
 *Released January 2021*
 
 
-> [!NOTE]
-> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often. Partner Center continues to evolve based on market changes and customer feedback. The features described in this article are also subject to change.
-
+<!-- ====================================================================== -->
 For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
