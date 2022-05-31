@@ -1,5 +1,5 @@
 ---
-title: Verify Microsoft Edge program information when you enrol in a new Partner Center program
+title: Verify your Microsoft Edge Partner Center program information
 description: Learn how to verify your Microsoft Edge program information when your company enrolls in a new Partner Center program to publish extensions to the Microsoft Edge Add-ons store.
 author: MSEdgeTeam
 ms.author: msedgedevrel

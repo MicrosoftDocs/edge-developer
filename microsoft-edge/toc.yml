@@ -830,7 +830,7 @@
             - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
 
-            - name: Verify Microsoft Edge program information when you enrol in a new Partner Center program
+            - name: Verify your Microsoft Edge Partner Center program information
               href: verify-microsoft-edge-program.md
 
             - name: Publish extensions using a GitHub account
