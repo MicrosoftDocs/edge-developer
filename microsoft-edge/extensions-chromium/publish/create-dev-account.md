@@ -104,7 +104,7 @@ A company account is associated with an organization or business.  The account v
 
 
 > [!IMPORTANT]
-> As a company account, verifying your Microsoft Edge program information when you enroll into a new Partner Center program is crucial to publish extensions to the Microsoft Edge Add-ons store. To learn more, view [Verify Microsoft Edge program information when you enrol in a new Partner Center program](verify-microsoft-edge-program.md).
+> **As a company account, verifying your Microsoft Edge program information when you enroll into a new Partner Center program is crucial to publish extensions to the Microsoft Edge Add-ons store.** To learn more, view [Verify Microsoft Edge program information when you enrol in a new Partner Center program](verify-microsoft-edge-program.md).
 
 
 ### Publisher display name
