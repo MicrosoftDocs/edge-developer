@@ -10,7 +10,7 @@ ms.date: 05/20/2022
 ---
 # Reasons to use Microsoft Edge DevTools
 
-The Microsoft Edge DevTools team has added a lot of features based on feedback we received from the community to enhance the experience of Developers.  Here is a list of features that are unique to Microsoft Edge, available on Windows, Mac and Linux.
+The Microsoft Edge DevTools team has added many new features based on feedback we received from the developer community.  These features improve the developer experience and are unique to Microsoft Edge, which is available on Windows, Mac, and Linux.
 
 **Contents:**
 
@@ -135,7 +135,7 @@ These web development tools are only available in Microsoft Edge DevTools.
 
 ### Detached Elements tool
 
-The **Detached Elements** tool was built on feedback from a Microsoft team that needed to find out about memory leaks in one of our products.  You can find out what elements are using up memory, even though they aren't part of the Document Object Model (DOM) tree any longer.
+The **Detached Elements** tool was built on feedback from a Microsoft team that needed to find out about memory leaks in one of our products.  You can find out which elements are using up memory even though they're no longer part of the Document Object Model (DOM) tree.
 
 The **Detached Elements** tool, showing elements that need to be removed from memory:
 
