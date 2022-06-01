@@ -1006,6 +1006,26 @@
       },
       /* redirect to extensions */
       {
+        "source_path": "microsoft-edge/extensions-chromium/enterprise/declare-permissions.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/declare-permissions",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/enterprise/match-patterns.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/developer-guide/match-patterns",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/enterprise/hosting-and-updating.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/hosting-and-updating",
+        "redirect_document_id": false
+      },
+      {
+        "source_path": "microsoft-edge/extensions-chromium/enterprise/auto-update.md",
+        "redirect_url": "/microsoft-edge/extensions-chromium/publish/auto-update",
+        "redirect_document_id": false
+      },
+      {
         "source_path": "microsoft-edge/extensions-chromium/publish/contact-us.md",
         "redirect_url": "/microsoft-edge/extensions-chromium/publish/contact-extensions-team",
         "redirect_document_id": false

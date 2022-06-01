@@ -11,10 +11,6 @@ ms.date: 01/07/2021
 
 [Completed extension package source for this part](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2)<!-- changing master to main doesn't work 5/19/2022 -->
 
-
-<!-- ====================================================================== -->
-## Overview
-
 This tutorial covers the following extension technologies:
 *   Injecting JavaScript libraries into an extension.
 *   Exposing extension assets to browser tabs.
