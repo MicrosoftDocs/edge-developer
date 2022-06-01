@@ -18,7 +18,7 @@ The Microsoft Edge DevTools team has added a lot of features based on feedback w
    * [Open and close tools easily](#open-and-close-tools-easily)
    * [Move tools around in the UI](#move-tools-around-in-the-ui)
    * [Focus Mode with Activity Bar and Quick View tool menu](#focus-mode-with-activity-bar-and-quick-view-tool-menu)
-   * [Tooltips Help Documentation mode](#tooltips-help-documentation-mode)
+   * [DevTools Tooltips mode](#devtools-tooltips-mode)
 
 * [Customization](#customization)
    * [Change the UI language](#change-the-ui-language)
@@ -73,22 +73,22 @@ See [Panel tools vs. Drawer tools](about-tools.md#panel-tools-vs-drawer-tools) i
 
 Focus Mode is a new user interface for DevTools.  Focus Mode simplifies and streamlines the DevTools UI.
 
-Focus Mode replaces the DevTools toolbar and its tabs by an Activity Bar, which is a compact toolbar with distinctive icons.  You can keep the Activity Bar on the left, or move it to the top.  The Activity Bar makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The Activity Bar also provides access to user settings, help, and other features.
+Focus Mode replaces the DevTools toolbar and its tabs with an Activity Bar, which is a compact toolbar with distinctive icons.  You can keep the Activity Bar on the left or move it to the top.  The Activity Bar makes it possible to pin, rearrange, and open your favorite tools for quick access.  The Activity Bar also provides access to user settings, help, and other features.
 
-Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the Activity Bar.
+Focus Mode also provides a **Quick View** list to open a second tool alongside the tool that's already selected in the Activity Bar.
 
 ![Activity Bar and Quick View tool menu.](reasons-edge-devtools-images/activity-bar-quick-view.png)
 
 See [Simplify DevTools using Focus Mode](experimental-features/focus-mode.md).
 
 
-### Tooltips Help Documentation mode
+### DevTools Tooltips mode
 
-To learn about each tool, enable Tooltips mode, which is a Help mode with links to documentation.  In Focus Mode, you can turn on the Tooltips Mode, which allows you to learn more about the different tools by selecting the various tool tabs in DevTools.
-
-Tool explanations shown when Tooltips mode is enabled:
+When you turn on DevTools Tooltips, informational tips about tools and panels are shown as you hover over them:
 
 ![Tool explanations shown when Tooltips mode is enabled.](reasons-edge-devtools-images/tool-explanations-in-tooltips-mode.png)
+
+DevTools Tooltips are not yet supported in Focus Mode.
 
 See [Display DevTools Tooltips](overview.md#display-devtools-tooltips) in _Overview of DevTools_.
 
@@ -99,13 +99,13 @@ See [Display DevTools Tooltips](overview.md#display-devtools-tooltips) in _Overv
 
 ### Change the UI language
 
-You can choose a different User Interface language for Microsoft Edge DevTools.  Our usage data shows that users of DevTools come from all over the world, so it made sense to offer them in different languages.
+You can choose a different user interface language for Microsoft Edge DevTools.
 
-Microsoft Edge Developer Tools displayed in German:
+Microsoft Edge DevTools displayed in German:
 
-![Microsoft Edge Developer Tools displayed in German.](reasons-edge-devtools-images/microsoft-edge-devtools-with-german-ui.png)
+![Microsoft Edge DevTools displayed in German.](reasons-edge-devtools-images/microsoft-edge-devtools-with-german-ui.png)
 
-Microsoft Edge Developer Tools displayed in Japanese:
+Microsoft Edge DevTools displayed in Japanese:
 
 ![Microsoft Edge Developer Tools displayed in Japanese.](reasons-edge-devtools-images/microsoft-edge-devtools-with-japanese-ui.png)
 
@@ -114,7 +114,7 @@ See [Change DevTools language settings](customize/localization.md).
 
 ### Change the color theme
 
-You can choose a different color theme.  Themes can make your user experience much better, and you can change the look of DevTools to your needs.
+You can choose a different color theme to change the look of DevTools.  Several popular Visual Studio Code themes are available if you prefer to use the same theme and syntax highlighting across DevTools and Visual Studio Code.
 
 Switching to a different theme in DevTools Settings:
 
