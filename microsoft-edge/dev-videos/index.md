@@ -38,7 +38,7 @@ _Published on 31 May 2022._
 
 Styling `<select>` elements has been challenging. The experimental `<selectmenu>` element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
 
-To learn more about styling `<select>` elements and the new `<selectmenu>` element, see  on our blog [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/).
+To learn more about styling `<select>` elements and the new `<selectmenu>` element, see the blog post [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/).
 
 
 <!-- ====================================================================== -->
