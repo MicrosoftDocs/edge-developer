@@ -1,16 +1,18 @@
 ---
-title: Verify your Microsoft Edge Partner Center program information
-description: Learn how to verify your Microsoft Edge program information when your company enrolls in a new Partner Center program to publish extensions to the Microsoft Edge Add-ons store.
+title: Verify your account information
+description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/31/2022
 ---
-# Verify your Microsoft Edge Partner Center program information
+# Verify the account information associated with your Microsoft Partner Center account
 <!-- 
 or (would have to change 3-5 spots):
 # Verify your program information for Microsoft Edge Partner Center
+or [Added by Ashish]
+Verify the account information associated with the Microsoft Edge program of your Microsoft Partner Center account
 -->
 
 When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. Information can include your company name, company address, and primary contact details. During this process, Microsoft may send email to your primary contact to request verification.
