@@ -36,7 +36,7 @@ _Published on 31 May 2022._
 
 [![Thumbnail image for the selectmenu video](./images/selectmenu.png)](https://www.youtube.com/watch?v=Ts7jvRyQACY)
 
-Styling `<select>` elements has been difficult for a long time, but the experimental `<selectmenu>` element promises to overcome the remaining limitations in the future and let web developers style all parts of the element.
+Styling `<select>` elements has been challenging. The experimental `<selectmenu>` element promises to overcome the remaining limitations by enabling web developers to style all parts of the element.
 
 To learn more about styling `<select>` elements and the new `<selectmenu>` element, see  on our blog [Styling `<select>` elements for real](https://blogs.windows.com/msedgedev/2022/05/05/styling-select-elements-for-real/).
 
