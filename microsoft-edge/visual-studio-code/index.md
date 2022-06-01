@@ -51,6 +51,10 @@ See [Debug Microsoft Edge in Visual Studio Code](debugger-for-edge.md).
 <!-- what to do with this section?  present page is supposed to have h2 for each child page of TOC node, where h2 contains only 1 paragraph and link to child page -->
 <!-- ====================================================================== -->
 ## The webhint extension for Visual Studio Code
+<!-- keep in sync:
+[webhint extension for Visual Studio Code](../test-and-automation/webhint.md)
+[The webhint extension for Visual Studio Code]() in _Visual Studio Code for web development_.
+-->
 
 Use webhint, a customizable linting tool, to improve the functionality of your site, including:
 
@@ -65,7 +69,7 @@ webhint checks your code for best practices and common errors.  Identify and fix
 <!-- todo: don't have png files in this nav page.  delete png (only used here) -->
 <!-- ![The webhint extension for Visual Studio Code.](media/webhint-extension.png) -->
 
-Instead of webhint, see [Microsoft Edge DevTools extension for Visual Studio Code](microsoft-edge-devtools-extension.md).
+**Note:** As of April 2022, the webhint extension for Visual Studio Code is no longer being maintained.  See [Microsoft Edge DevTools extension for Visual Studio Code](microsoft-edge-devtools-extension.md).
 
 
 <!-- ====================================================================== -->
