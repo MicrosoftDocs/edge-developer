@@ -14,41 +14,12 @@ You can emulate the following dual-screen and foldable devices in Microsoft Edge
 * [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo)
 * [Samsung Galaxy Fold](https://www.samsung.com/global/galaxy/galaxy-fold)
 
-Emulate the devices and toggle between the following postures.
+Emulate the devices and toggle between the following postures:
 
-*  Single-screen or folded posture
-*  Dual-screen or unfolded posture
-
-The APIs are available in Microsoft Edge 97 and later. If you are not using Microsoft Edge 97 or later, you need to turn on experimental web platform features to use the APIs.
-
-[Turn on experimental Web Platform APIs](#turn-on-experimental-apis) and use the [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) and [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments) to enhance your website (or app) for dual-screen and foldable devices.
+*  Single-screen or folded posture.
+*  Dual-screen or unfolded posture.
 
 ![Emulating Surface Duo in Microsoft Edge.](../media/experiments-surface-duo-emulation.msft.png)
-
-
-<!-- ====================================================================== -->
-## Turn on experimental APIs
-
-To use the [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) and [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments), turn on the `Experimental Web Platform features` flag in Microsoft Edge, as follows:
-
-1. Go to `edge://flags`.
-
-1. In the **Search flags** text box, enter `Experimental Web Platform features`, select the **Experimental Web Platform features** flag, and change **Disabled** to **Enabled**.
-
-1. Restart Microsoft Edge.
-
-:::image type="content" source="../media/experiments-dual-screen-emulation-edge-flags.msft.png" alt-text="Turn on the Experimental Web Platform features flag." lightbox="../media/experiments-dual-screen-emulation.msft.png":::
-
-
-### Surface Duo
-
-If you are using [CSS viewport segments media feature](/dual-screen/web/css-viewport-segments) or the [JavaScript viewport segments](/dual-screen/web/javascript-viewport-segments) to enhance your website or app for the [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo), you must also turn on the **Experimental Web Platform features** flag in the [Android Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on your [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo) device.
-
-#### Matching the flags match across Android and desktop Microsoft Edge
-
-If the **Experimental Web Platform features** flag is turned on in [desktop Microsoft Edge](https://www.microsoft.com/edge), and is turned off in the [Android Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx), the behavior of your website or app in the Surface Duo emulator in desktop Microsoft Edge doesn't match with the [Android Microsoft Edge app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) on [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo).  
-
-Make sure that the flags match across Android and desktop Microsoft Edge, to successfully use the Surface Duo emulator in [desktop Microsoft Edge](https://www.microsoft.com/edge).
 
 
 <!-- ====================================================================== -->
