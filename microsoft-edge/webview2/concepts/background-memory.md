@@ -1,38 +1,138 @@
 ---
-title: Background memory best practices
+title: Optimize background memory usage
 description: Best practices for managing background memory for WebView2 host apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/26/2022
+ms.date: 06/02/2022
 ---
-# Background memory best practices
+# Optimize background memory usage
 
-Use these APIs to reduce the background memory usage by your WebView2 host app.
+Use these approaches and APIs to reduce the background memory usage by your WebView2 host app.
 
-Audience for this article: Hybrid app developers, Performance engineers.
+Audience: Developers working on a WebView2 app and focusing on optimizing performance.
+<!--
+hybrid app developers
+Performance engineers
+WebView2 app developers -->
 
 Best practices for managing background memory for WebView2 host apps.
 
 Background memory usage is a top concern for hybrid native/web apps.
 
-This article points you to key APIs.
-
-WebView2 Background Best Practices
+For an introduction, see also [blog post].
 
 
 <!-- ====================================================================== -->
 ## Deciding which approach to use
 
 You can do any one of the following approaches:
+* Approach 1: Change the visibility.<!--TODO: of _ -->
+* Approach 2: Use the `MemoryUsageTargetLevel` property.
+* Approach 3: Change the visibility and also call `TrySuspend`.
 
-* Approach 1: Change the visibility.  This approach has the lowest cost (difficulty) and the lowest benefit.  This approach is like having multiple tabs open in Microsoft Edge and the background tabs are suspended.
+These approaches are described below.
 
-* Approach 2: Use the `MemoryUsageTargetLevel` property.  This approach has medium cost (difficulty) and medium benefit.  This approach tells Microsoft Edge to garbage-collect the JavaScript heap; clean up after itself, act like you're in a _ environment.  If your code is going to be momentarily suspended, use this approach.
 
-* Approach 3: Change the visibility and also call `TrySuspend`.  This approach has highest benefit, and is most complex to implement.  You have to design-in this approach into your code, to handle this approach.  This approach is equivalent to the Sleeping Tabs feature of Microsoft Edge; this approach stops the webpage from doing anything, and puts the webpage into a low-memory suspended state; consuming almost no CPU usage.
+<!-- ====================================================================== -->
+## Approach 1: Change the visibility
+
+<!-- What is the approach? -->
+
+In this approach, you change the visibility.<!--TODO: of _ -->
+
+<!-- Why/when would you use this approach? -->
+
+This approach has the lowest cost (difficulty) and the lowest benefit.  This approach is like having multiple tabs open in Microsoft Edge and the background tabs are suspended.
+
+
+<!-- experiment: h3's: -->
+### APIs
+
+# [C#](#tab/c-sharp)
+
+# [C++](#tab/cpp)
+
+---
+
+
+### Example: Changing the visibility
+
+# [C#](#tab/c-sharp)
+
+# [C++](#tab/cpp)
+
+---
+
+
+link to WebView2Samples repo?
+
+
+<!-- ====================================================================== -->
+## Approach 2: Use the `MemoryUsageTargetLevel` property
+
+<!-- What is the approach? -->
+
+In this approach, you use the `MemoryUsageTargetLevel` property.
+
+<!-- Why/when would you use this approach? -->
+
+This approach has medium cost (difficulty) and medium benefit.  This approach tells Microsoft Edge to garbage-collect the JavaScript heap; clean up after itself, act like you're in a _ environment.  If your code is going to be momentarily suspended, use this approach.
+
+<!-- experiment: h4's: -->
+
+#### APIs
+
+# [C#](#tab/c-sharp)
+
+# [C++](#tab/cpp)
+
+---
+
+
+#### Example: 
+
+# [C#](#tab/c-sharp)
+
+# [C++](#tab/cpp)
+
+---
+
+
+<!-- ====================================================================== -->
+## Approach 3: Change the visibility and also call `TrySuspend`
+
+<!-- What is the approach? -->
+
+In this approach, you change the visibility of _, and also call `TrySuspend`.  
+
+<!-- Why/when would you use this approach? -->
+
+This approach has highest benefit, and is most complex to implement.  You have to design-in this approach into your code, to handle this approach.  This approach is equivalent to the Sleeping Tabs feature of Microsoft Edge; this approach stops the webpage from doing anything, and puts the webpage into a low-memory suspended state; consuming almost no CPU usage.
+
+
+<!-- experiment: h5's: -->
+##### APIs
+
+# [C#](#tab/c-sharp)
+
+# [C++](#tab/cpp)
+
+---
+
+
+##### Example: Changing the visibility and also calling `TrySuspend`
+
+# [C#](#tab/c-sharp)
+
+# [C++](#tab/cpp)
+
+---
+
+
+link to WebView2Samples repo?
 
 
 <!-- 
@@ -42,12 +142,6 @@ There will be a screencast/gif/demo
 -->
 
 This is a cross-browser feature and a cross-browser API.  This API leverages Edge's Sleeping Tabs.  At the Microsoft Edge Blog, see [Sleeping Tabs in Microsoft Edge: Delivering better browser performance](https://blogs.windows.com/msedgedev/2020/12/09/sleeping-tabs-beta-performance/).
-
-
-<!-- ====================================================================== -->
-## Example code
-
-A code sample is available in WebView2 API Samples.  [link]<!-- todo -->
 
 
 <!-- ====================================================================== -->
@@ -81,13 +175,11 @@ We want to bring the two API Ref pages paragraphs to be as identical as possible
 <!-- ====================================================================== -->
 ## API Reference overview
 
-
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2.MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)<!-- read both .net & c++ remarks on "same" equiv prop -->
 * [CoreWebView2.TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
 * [CoreWebView2Controller.IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible#microsoft-web-webview2-core-corewebview2controller-isvisible)
-
 
 # [C++](#tab/cpp)
 
@@ -96,6 +188,8 @@ We want to bring the two API Ref pages paragraphs to be as identical as possible
 * [ICoreWebView2Controller::put_IsVisible property](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)
 
 ---
+
+Tip: See remarks in the API Reference pages for both languages.
 
 
 <!-- ====================================================================== -->

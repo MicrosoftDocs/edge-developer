@@ -1150,7 +1150,7 @@
             #       href: webview2/how-to/customize-ui.md
             #       displayName: context menu, right-click menu
 
-            - name: Background memory best practices
+            - name: Optimize background memory usage
               href: webview2/concepts/background-memory.md
               displayName: 
 
