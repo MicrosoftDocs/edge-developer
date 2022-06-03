@@ -260,3 +260,23 @@ To follow along, we use the WebView2 Sample App.
 Congratulations! You have successfully created a host object in your app's native-side code, passed the host object to your app's web-side code, and then used the host object from the app's web-side code.
 
 Now let's see what other APIs there are in the host object ecosystem. For more information about host objects, see [WebView2 Win32 C++ ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1054.31#addhostobjecttoscript&preserve-view=true).
+
+
+<!-- ====================================================================== -->
+## API Reference overview
+
+The following are some of the key APIs for calling native-side code from web-side code.
+
+# [C#](#tab/c-sharp)
+
+
+# [C++](#tab/cpp)
+
+
+---
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [Web/Native Interop](../concepts/apis-capabilities.md#webnative-interop) in _Survey of WebView2 APIs and their capabilities_.
