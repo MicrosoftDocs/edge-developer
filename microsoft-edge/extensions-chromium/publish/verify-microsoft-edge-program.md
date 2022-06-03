@@ -50,11 +50,11 @@ You can check verification status at Partner Center in **[Account Settings | Leg
 
 There are three possible results when you check your verification status:
 
-*   **Accepted**: The information you submitted was verified, and you're notified of your acceptance into the program. No further action is required.
+*   **Authorized/Accepted**: The information you submitted was verified, and you're notified of your acceptance into the program. No further action is required.
 
 *   **Pending**: The verification process has started but isn't complete. No action is required. You can monitor verification status at Account Settings | Legal Info. Verification usually takes 3-5 business days.
 
-*   **Rejected**: The information you submitted couldn't be verified. The reason and instructions for [how to appeal](#appealing-a-rejected-application) appear in the Account Verification pane.
+*   **Action Required/Rejected**: The information you submitted couldn't be verified. The reason and instructions for [how to appeal](#appealing-a-rejected-application) appear in the Account Verification pane.
 
 
 <!-- ====================================================================== -->
