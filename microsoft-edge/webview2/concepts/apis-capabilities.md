@@ -71,7 +71,7 @@ Most of the APIs are also available wrapped for .NET/C#: see [WebView2 Class](ht
 <!-- ====================================================================== -->
 ## Web/Native Interop
 
-Communication between web code and native code.
+The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects. The following are some APIs that are important when communicating between web and native code. To learn more about this topic you can read these conceptual docs: [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native), [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/javascript), and [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject).
 
 *  `ICoreWebView2WebMessageReceivedEventArgs`
 *  `ICoreWebView2ResourceResponse`
@@ -90,13 +90,15 @@ Communication between web code and native code.
    * `RemoveScriptToExecuteOnDocumentCreated`
    * `ExecuteScript`
    * `PostWebMessageAsJson`
-   * `PostWebMessgeAsString`<!--TODO: check typo in API name/casing-->
+   * `PostWebMessageAsString`
    * `AreHostObjectsAllowed`
    * `COREWEBVIEW2_SCRIPT_DIALOG_KIND`
 
 
 <!-- ====================================================================== -->
 ## Working with JavaScript in WV2
+
+<!-- TODO: merge with the Web/Native interop section above. Follow up here. -->
 
 *  `ICoreWebView2ScriptDialogOpeningEventArgs`
 *  `ICoreWebView2Settings`
@@ -107,16 +109,16 @@ Communication between web code and native code.
 <!-- ====================================================================== -->
 ## Browser features
 
-This section covers features inherited from the browser and available in a WebView2 control.  These APIs allow developers the ability to change these inherited features.
+This section covers features inherited from the browser and available in a WebView2 control.  These APIs allow developers the ability to toggle and change these inherited features.
 
 
 ### Printing
 
-How to print the content in a WebView2 control.
+Printing content in a WebView2 control.
 
 *  `ICoreWebView2`
    * `COREWEBVIEW2_PRINT_ORIENTATION`
-*  `ICoreWebVeiw2_7`<!--TODO: check typo in API name/casing-->
+*  `ICoreWebView2_7`
    * `PrintToPdf`
 *  `ICoreWebView2PrintSettings`
 *  `ICoreWebview2Environment6`
@@ -126,7 +128,7 @@ How to print the content in a WebView2 control.
 
 ### Cookies
 
-How to work with cookies in a WebView2 control.
+Working with cookies in a WebView2 control.
 
 *  `ICoreWebView2`
    * `COREWEBVIEW2_COOKIE_SAME_SITE_KIND`
@@ -148,7 +150,7 @@ Capturing images using the key press combination `Ctrl`+`Shift`+`S` (TODO: confi
 
 ### Downloads
 
-How to work with downloaded files in a WebView2 control.
+Working with file downloads in a WebView2 control.
 
 *  `ICoreWebView2`
    * `COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT`
@@ -156,12 +158,12 @@ How to work with downloaded files in a WebView2 control.
    * `COREWEBVIEW2_DOWNLOAD_STATE`
    * `COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND`
 *  `ICoreWebView2DownloadOperation`
-*  `ICoreWebView2DownloadStartingEevntArgs`<!--TODO: check typo in API name/casing-->
+*  `ICoreWebView2DownloadStartingEventArgs`
 *  `ICoreWebView2_4`
    * `Add_DownloadStarting`
 *  `ICoreWebView2_9`
    * `Add_IsDefaultDownloadDialogOpenChanged`
-   * `ClsoeDefaultDownlaodDialog`<!--TODO: check typo in API name/casing-->
+   * `CloseDefaultDownlaodDialog`
    * `Get_defaultDownloadDialogCornerAlignment`
    * `Get_DefaultDownloadDialogMargin`
    * `Get_IsDefaultDownloadDialogOpen`
@@ -172,8 +174,8 @@ How to work with downloaded files in a WebView2 control.
 
 How to assign permissions to WebView2 controls to do _<!-- TODO: confirm -->
 
-*  `ICoreWebView2PermissionrequestedEventArgs`<!--TODO: check typo in API name/casing-->
-*  `IcoreWebView2`<!--TODO: check typo in API name/casing-->
+*  `ICoreWebView2PermissionRequestedEventArgs`
+*  `ICoreWebView2`
    * `Add_PermissionRequested`
    * `Remove_PermissionRequested`
    * `COREWEBVIEW2_PERMISSION_KIND`
@@ -217,7 +219,7 @@ Leverage the browsers autofill functionality in a WebView2 control.
 *  `ICoreWebView2Settings4`
    * `IsGeneralAutofillEnabled`
    * `IsPasswordAutosaveEnabled`
-   * `IsGeneralAutofillEnagled`<!--TODO: check typo in API name/casing-->
+   * `IsGeneralAutofillEnabled`
    * `IsPasswordAutosaveEnabled`
 
 
@@ -272,7 +274,7 @@ Learn how to manage page navigation in a WebView2.
    * `add_NavigationCompleted`
    * `remove_NavigationCompleted`
    * `add_NavigationStarting`
-   * `remve_NavigationStarting` <!--TODO: check typo in API name/casing-->
+   * `remove_NavigationStarting` 
    * `Add_HistoryChanged`
    * `Add_SourceChanged`
    * `Remove_SourceChanged`
@@ -315,7 +317,7 @@ Learn how to make an external call to a resource on the web.
    * `Remove_WebResourceResponseReceived`
    * `NavigateWithWebResourceRequest`
 *  `ICoreWebView2Environment`
-   * `CreateWebResoruceResponse` <!--TODO: check typo in API name/casing-->
+   * `CreateWebResourceResponse` 
 *  `ICoreWebView2Environment2`
    * `CreateWebResourceRequest`
 *  `ICoreWebView2WebResourceRequest`
@@ -328,7 +330,7 @@ Learn how to handle events when content is loaded in the WebView2.
 
 *  `ICoreWebView2ContentLoadingEventArgs`
 *  `ICoreWebView2.ContentLoading Event`
-*  `ICoreWebView2DOMContentLoadedEventArgsIcoreWebView2` <!--TODO: check typo in API name/casing-->
+*  `ICoreWebView2DOMContentLoadedEventArgsICoreWebView2` 
    * `Add_ContentLoading`
    * `Remove_ContentLoading`
 *  `ICoreWebView2_2`
@@ -361,14 +363,14 @@ Learn how to work with certificates in WebView2 controls (TODO: confirm)
 ## Working with Chrome Developer Protocol (CDP)
 
 Learn how to automate tasks in the DevTools in a WebView2 control using CDP (TODO: confirm)
-*  `ICoreWebView2DevToolsProtocolEventRecievedEventArgs` <!--TODO: check typo in API name/casing-->
-*  `ICoreWebView2DevToolsProtocolEventReciever` <!--TODO: check typo in API name/casing-->
+*  `ICoreWebView2DevToolsProtocolEventReceivedEventArgs` 
+*  `ICoreWebView2DevToolsProtocolEventReceiver` 
 *  `CallDevToolsProtocolMethodForSession` (WebView2 Win32 C++ IcoreWebView2_11)
 *  `ICoreWebView2Settings`
    * `AreDevToolsEnabled`
 *  `ICoreWebView2`
    * `CallDevToolsProtocolMethod`
-   * `GetDevToolsProtocolEventReciever` <!--TODO: check typo in API name/casing-->
+   * `GetDevToolsProtocolEventReceiver` 
    * `OpenDevToolsWindow`
 
 
