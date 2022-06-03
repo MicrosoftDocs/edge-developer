@@ -12,7 +12,7 @@ ms.date: 06/03/2022
 
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
-*  Concepts about what you can do with the WebView2 APIs, which are listed at [Reference (WebView2 Win32 C++)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/).<!-- TODO: C#? -->
+*  Concepts about what you can do with the WebView2 APIs.
 *  High-level description of WebView2 technology for app developers.
 *  Better fundamentals + understanding of WebView2 technology.
 
@@ -45,24 +45,23 @@ This article categorizes the WebView2 interfaces, at a high level, for WebView2.
 Cross-platform API implementation: Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
 <!-- link prefix: https://docs.microsoft.com -->
 
-See also:
-* []()
-
 
 <!-- ====================================================================== -->
 ## Web/Native Interop
 
-The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects. The following are some APIs that are important when communicating between web and native code.
+The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects. 
 
 Some common use cases include:
 *  Update the native host window title after navigating to a different website.
 *  Send a native camera object and use its methods from a web app.
 *  Run a dedicated JavaScript file on the web side of an application.
 
-See also:
+For more information, see:
 * [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md)
 * [Call web-side code from native-side code](../how-to/javascript.md)
 * [Call native-side code from web-side code](../how-to/hostobject.md)
+
+The following are some APIs that are important when communicating between web and native code.
 
 
 <!-- ------------------------------ -->
@@ -71,53 +70,69 @@ See also:
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
-   * [WebMessageReceived Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webmessagereceived?view=webview2-dotnet-1.0.1210.39)
-   * [AddHostObjectToScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript?view=webview2-dotnet-1.0.1210.39)
-<!-- add more per c++ - is this entire list ready to copy/paste from other article? -->
+   * [WebMessageReceived Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.webmessagereceived)
+   * [AddHostObjectToScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
+   * [RemoveHostObjectFromScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
+   * [ScriptDialogOpening Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening)
+   * [AddScriptToExecuteOnDocumentCreatedAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addscripttoexecuteondocumentcreatedasync)
+   * [RemoveScriptToExecuteOnDocumentCreated](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removescripttoexecuteondocumentcreated)
+   * [ExecuteScript](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptasync)
+   * [PostWebMessageAsJson](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson)
+   * [PostWebMessageAsString](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasstring)
+
+* [CoreWebView2ScriptDialogKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogkind)
+
+* [CoreWebView2Settings](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [AreHostObjectsAllowed Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
+   * [IsWebMessageEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.iswebmessageenabled?view=webview2-dotnet-1.0.1210.39#microsoft-web-webview2-core-corewebview2settings-iswebmessageenabled)
+
+* [CoreWebView2WebResourceResponse Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse)
+
+* [CoreWebView2.WebResourceResponseReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
+
+* [CoreWebView2WebResourceResponseView Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2WebMessageReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs?view=webview2-1.0.1210.39)
+* [ICoreWebView2WebMessageReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs)
+<!-- c# links to "WebMessageReceived Event" -->
 
-<!-- *  `ICoreWebView2ResourceResponse` not found; found instead: -->
-* [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse?view=webview2-1.0.1210.39)
+* [ICoreWebView2WebResourceResponse](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse)
+<!-- c# links to "CoreWebView2WebResourceResponse Class" -->
 
-<!-- * `ICoreWebView2ResponseReceivedEventArgs` not found; found instead: -->
-* [ICoreWebView2WebResourceResponseReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs?view=webview2-1.0.1210.39)
+* [ICoreWebView2WebResourceResponseReceivedEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)
+<!-- c# links to "CoreWebView2.WebResourceResponseReceived Event" -->
 
-* [ICoreWebView2WebResourceResponseView](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview?view=webview2-1.0.1210.39)
+* [ICoreWebView2WebResourceResponseView](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview)
+<!-- c# links to "CoreWebView2WebResourceResponseView Class" -->
+
+* [ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)
+   * [IsWebMessageEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iswebmessageenabled)
+<!-- c# links to "IsWebMessageEnabled Property" -->
+
+* [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)<!--c# links to "CoreWebView2 Class"-->
+   * [add_WebMessageReceived](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived)<!-- c# links to "WebMessageReceived Event" -->
+   * [remove_WebMessageReceived](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webmessagereceived)<!-- c# links to "WebMessageReceived Event" -->
+   * [AddHostObjectToScript](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)<!--c# links to same name-->
+   * [RemoveHostObjectFromScript](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#removehostobjectfromscript)<!--c# links to same name-->
+   * [add_ScriptDialogOpening](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_scriptdialogopening)<!--c# links to "ScriptDialogOpening Event"-->
+   * [remove_ScriptDialogOpening](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_scriptdialogopening)<!--c# links to "ScriptDialogOpening Event"-->
+   * [AddScriptToExecuteOnDocumentCreated](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#addscripttoexecuteondocumentcreated)<!--c# links to "AddScriptToExecuteOnDocumentCreatedAsync Method"-->
+   * [RemoveScriptToExecuteOnDocumentCreated](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#removescripttoexecuteondocumentcreated)<!--c# links to same name-->
+   * [ExecuteScript](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#executescript)<!--c# links to same name-->
+   * [PostWebMessageAsJson](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasjson)<!--c# links to same name-->
+   * [PostWebMessageAsString](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#postwebmessageasstring)<!--c# links to same name-->
+   * [COREWEBVIEW2_SCRIPT_DIALOG_KIND](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_script_dialog_kind)<!--c# links to CoreWebView2ScriptDialogKind Enum-->
 
 * `ICoreWebView2Settings`
-   * [IsWebMessageEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1210.39#get_iswebmessageenabled)
-
-* [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
-   * `add_WebMessageReceived`
-   * `remove_WebMessageReceived`
-   * `AddHostObjectToScript`
-   * `RemoveHostObjectFromScript`
-   * `add_ScriptDialogOpening`
-   * `remove_ScriptDialogOpening`
-   * `AddScriptToExecuteOnDocumentCreated`
-   * `RemoveScriptToExecuteOnDocumentCreated`
-   * `ExecuteScript`
-   * `PostWebMessageAsJson`
-   * `PostWebMessageAsString`
-   * `AreHostObjectsAllowed`
-   * `COREWEBVIEW2_SCRIPT_DIALOG_KIND`
+   * [get_AreHostObjectsAllowed](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed)
+<!-- c# links to "AreHostObjectsAllowed Property" -->
 
 ---
 
 See also:
-
-* [API Reference overview](../how-to/hostobject.md#api-reference-overview) in _Call native-side code from web-side code_.
-* [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md).
-
-* [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
-* [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/javascript)
-* [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject).
-
-
+* [API Reference overview](../how-to/webresourcerequested.md#api-reference-overview) in _Custom management of network requests_.  <!--The present link is theoretically exact dup - merge into that article and link to that API Ref section from here, what about WinRT version of article?-->
 
 
 <!-- ====================================================================== -->
@@ -127,18 +142,26 @@ See also:
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [ScriptDialogOpening Event](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening?view=webview2-dotnet-1.0.1210.39)
+
+* [CoreWebView2Settings](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled?view=webview2-dotnet-1.0.1210.39#microsoft-web-webview2-core-corewebview2settings-aredefaultcontextmenusenabled)
+   * [IsScriptEnabled Property](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isscriptenabled?view=webview2-dotnet-1.0.1210.39#microsoft-web-webview2-core-corewebview2settings-isscriptenabled)
 
 
 # [C++](#tab/cpp)
 
 * [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
+<!-- c# links to "CoreWebView2 Class" -->
 
-* [ICoreWebView2ScriptDialogOpeningEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2scriptdialogopeningeventargs?view=webview2-1.0.1210.39)
-* [ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1210.39)
-   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1210.39#get_aredefaultcontextmenusenabled)
-   * [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1210.39#put_aredefaultcontextmenusenabled)
-   * [put_IsScriptEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1210.39#put_isscriptenabled)
-   * [get_IsScriptEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings?view=webview2-1.0.1210.39#get_isscriptenabled)
+* [ICoreWebView2ScriptDialogOpeningEventArgs](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2scriptdialogopeningeventargs)
+<!-- c# links to "ScriptDialogOpening Event" -->
+
+* [ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)
+   * [get_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)<!-- c# links to "AreDefaultContextMenusEnabled Property" -->
+   * [put_AreDefaultContextMenusEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)<!-- c# links to "AreDefaultContextMenusEnabled Property" -->
+   * [put_IsScriptEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)<!-- c# links to "IsScriptEnabled Property" -->
+   * [get_IsScriptEnabled](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled)<!-- c# links to "IsScriptEnabled Property" -->
 
 ---
 
@@ -161,18 +184,19 @@ Printing content in a WebView2 control.
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2PrintOrientation Enum](https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2printorientation?view=webview2-dotnet-1.0.1210.39)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
+* `ICoreWebView2`
+   * [COREWEBVIEW2_PRINT_ORIENTATION](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1210.39#corewebview2_print_orientation)<!-- c# links to "CoreWebView2PrintOrientation Enum" -->
 
-*  `ICoreWebView2`
-   * `COREWEBVIEW2_PRINT_ORIENTATION`
 *  `ICoreWebView2_7`
-   * `PrintToPdf` ~= [interface ICoreWebView2ExperimentalPrintToPdfCompletedHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprinttopdfcompletedhandler?view=webview2-1.0.1010-prerelease&preserve-view=true) - prints the current page to PDF.  Has optional custom settings.
+   * `PrintToPdf` ~= [interface ICoreWebView2ExperimentalPrintToPdfCompletedHandler](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprinttopdfcompletedhandler) - prints the current page to PDF.  Has optional custom settings.
+
 *  `ICoreWebView2PrintSettings`
+
 *  `ICoreWebview2Environment6`
    * `CreatePrintSettings`
 
