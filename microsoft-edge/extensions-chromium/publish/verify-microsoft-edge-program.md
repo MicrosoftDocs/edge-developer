@@ -26,7 +26,7 @@ When account verification is complete, you can use your Partner Center dashboard
 
 
 <!-- ====================================================================== -->
-## What is verified and what is required?
+## What is verified and what is required for a company account?
 
 | Type of verification | What's verified | Suggestions |
 |---|---|---|
