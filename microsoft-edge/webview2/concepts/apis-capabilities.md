@@ -6,74 +6,9 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/02/2022
+ms.date: 06/03/2022
 ---
 # Survey of WebView2 APIs and their capabilities
-
-<!--
-Step 1: Cross-link with existing .md files.
-
-doc design strategy:
-
-
-## Where to put area intros
-Coord'g area summary w/ articles' intros: "bubble up & down" strategy:
-Develop an intro (a paragraph & a list) for top of these sections, copy that back & forth across here & the dedicated .md file/article.
-
-
-
-## Where to put API link lists
-Generally, due to the overarching nature of these root classes, it's a list of members (P/M/E's), not types (classes/ifaces).
-For any given section here:
-1. If there's a suitable separate article available, add an "API Reference overview" h2 section at bottom of that article, and link to there.  But this would mean not having the list of main API members here.
-2. If there's a suitable separate article available, temporarily can put API links here.  Then create a suitable article, then move the API links to there and link to there.
-
-
-
-Ordering of API links:
-Possibly by class/iface, but due to the overarching nature of these root classes, sorting by primacy might make sense.
-
-Whether to link to class or to member: due to the overarching nature of these root classes, linking to member probably is best re: UX.
-
--->
-
-<!--
-purpose of this doc:
-
-Provide a high-level intro/summary of capabilities of WebView2 & what you can do with this technology.
-
-Doc-design strategy/positioning.
-
-Doc the features/func'y that's supported by the APIs, to:
-*  Survey/introduce different areas/features of the SDK.  
-*  Introduce what tasks (not which APIs) are supported.
-*  Introduce what functionality (not which APIs) is available.
-*  A high-level roadmap overview/introduction.
-
-Not an inventory of APIs as such.  
-Not an exhaustive list/inventory of all APIs.
-
-Where best in TOC?
-
-Title of this page?
-
-How many webpages/articles?  Answer: 1 article, high-level.
-
-List of considerations to design this doc:
-What's the story we want to tell?
-   How to tell that story?
-
-Scope of Detail of API Lists:
-    Should this be an extensive list of all the APIs? No.   What is the detail cutoff level?  interface names not sufficient.   
-    Groups of APIs enable devs to create these apps.  enable/toggle brow feats, call js apis in your native code, ...
-       Top 5 methods or props for the API area. 
-       Don't say "the Context Menu API".  focus on what you can do, not the "how" (not in terms of which "Big API set").
-    Maintainability: What do we do to update this article as we add APIs each month?   
-    Avoid promising that this will be a comprehensive list of "all" APIs.
-
-Design ideas: see  https://docs.microsoft.com/en-us/office/dev/add-ins/reference/overview/excel-add-ins-reference-overview
-    
--->
 
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
@@ -117,12 +52,17 @@ See also:
 <!-- ====================================================================== -->
 ## Web/Native Interop
 
-The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects. The following are some APIs that are important when communicating between web and native code. To learn more about this topic you can read these conceptual docs: [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native), [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/javascript), and [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject).
+The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects. The following are some APIs that are important when communicating between web and native code.
 
 Some common use cases include:
 *  Update the native host window title after navigating to a different website.
 *  Send a native camera object and use its methods from a web app.
 *  Run a dedicated JavaScript file on the web side of an application.
+
+See also:
+* [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md)
+* [Call web-side code from native-side code](../how-to/javascript.md)
+* [Call native-side code from web-side code](../how-to/hostobject.md)
 
 
 <!-- ------------------------------ -->
@@ -172,6 +112,12 @@ See also:
 
 * [API Reference overview](../how-to/hostobject.md#api-reference-overview) in _Call native-side code from web-side code_.
 * [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md).
+
+* [Interop of native-side and web-side code](/microsoft-edge/webview2/how-to/communicate-btwn-web-native)
+* [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/javascript)
+* [Call native-side code from web-side code](/microsoft-edge/webview2/how-to/hostobject).
+
+
 
 
 <!-- ====================================================================== -->
@@ -234,6 +180,7 @@ Printing content in a WebView2 control.
 
 See also:
 * []()
+
 
 
 <!-- ------------------------------ -->
