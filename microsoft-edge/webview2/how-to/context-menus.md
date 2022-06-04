@@ -91,45 +91,45 @@ The `MenuItems` property of `CoreWebView2ContextMenuRequestedEventArgs` provides
 
 # [C++](#tab/cpp)
 
-To display a custom context menu that contains your desired menu items, use the data provided in [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs).  For this case, you specify `Handled` to be `true`, and request a deferral. 
+To display a custom context menu that contains your desired menu items, use the data provided in [ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs).  For this case, you specify `Handled` to be `true`, and request a deferral. 
 
 On a `ContextMenuRequested` event, add an event listener that has an `ICoreWebView2ContextMenuRequestedEventArgs`.
 
 Iterate through a list of `ICoreWebView2ContextMenuItem` items, adding an `ICoreWebView2ContextMenuItem` for each menu item.  Test the `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND` of each menu item, such as `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR` or `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`.
 
-* **[ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)** (ICoreWebView2Experimental6)
-   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
-   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested)
+* **[ICoreWebView2_11](/microsoft-edge/webview2/reference/win32/icorewebview2_11)**
+   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#add_contextmenurequested)
+   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#remove_contextmenurequested)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`)
-   * [get_Children](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
-   * [get_CommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid)
-   * [get_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_ischecked)
-   * [get_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_isenabled)
-   * [get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
-   * [get_Label](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_label)
-   * [get_ShortcutKeyDescription](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription)
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem)**
+   * [get_Children](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_children)
+   * [get_CommandId](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_commandid)
+   * [get_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_ischecked)
+   * [get_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_isenabled)
+   * [get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_kind)
+   * [get_Label](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_label)
+   * [get_ShortcutKeyDescription](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_shortcutkeydescription)
 
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`)
-   * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
-   * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection)**
+   * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#get_count)
+   * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#getvalueatindex)
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`)
-   * [put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled)
-   * [put_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
-   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
-   * [get_Location](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location)
-   * [GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#getdeferral)
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs)**
+   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_menuitems)
+   * [get_Location](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_location)
+   * [GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#getdeferral)
+   * [put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#put_handled)
+   * [put_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#put_selectedcommandid)
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`)
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventhandler)**
 
 * **[ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)**
 
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_item_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
    
-* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_target_kind)
 
 ---
 
@@ -402,25 +402,25 @@ To add custom menu items to the default context menu, use the following API item
 
 # [C++](#tab/cpp)
 
-* **[ICoreWebView2Experimental6](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)**
-   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
+* **[ICoreWebView2_11](/microsoft-edge/webview2/reference/win32/icorewebview2_11)**
+   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#add_contextmenurequested)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`)
-   * [add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem)**
+   * [add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#add_customitemselected)
 
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`)
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection)**
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`)
-   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs)**
+   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_menuitems)
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`)
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventhandler)**
 
-* **[ICoreWebView2CustomItemSelectedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)** (`ICoreWebView2ExperimentalCustomItemSelectedEventHandler`)
+* **[ICoreWebView2CustomItemSelectedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2customitemselectedeventhandler)**
 
 * **[ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)**
-   * [CreateContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem)
+   * [CreateContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2environment9#createcontextmenuitem)
 
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_item_kind)
    * COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND
 
 ---
@@ -529,29 +529,31 @@ You can remove default or custom menu items from the default context menu.
 
 # [C++](#tab/cpp)
 
-* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_target_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE`
 
 * **[ICoreWebView2_4](/microsoft-edge/webview2/reference/win32/icorewebview2_4)**
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`)
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventhandler)**
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`)
-   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
-   * [get_ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget)
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs)**
+   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_menuitems)
+   * [get_ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_contextmenutarget)
 
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`)
-   * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
-   * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
-   * [RemoveValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex)
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection)**
+   * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#get_count)
+   * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#getvalueatindex)
+   * [InsertValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#insertvalueatindex)
+   * [RemoveValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#removevalueatindex)
 
-* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** (`ICoreWebView2ExperimentalContextMenuTarget`)
-   * [get_kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget#get_kind)
+* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenutarget)**
+   * [get_kind](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenutarget#get_kind)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`)
-   * [get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem)**
+   * [get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_name)
 
 ---
+
 
 <!-- ====================================================================== -->
 ## Example: Removing menu items from a default context menu
@@ -670,9 +672,9 @@ When your host app indicates to WebView2 that a user selected a menu item on a c
 
 # [C++](#tab/cpp)
 
-* **[ICoreWebView2Experimental6](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)**
-   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
-   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested)
+* **[ICoreWebView2_11](/microsoft-edge/webview2/reference/win32/icorewebview2_11)**
+   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#add_contextmenurequested)
+   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#remove_contextmenurequested)
 
 * **[ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)**
    * [get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
@@ -715,7 +717,7 @@ When the user selects a WebView2 context menu command (a default menu item that'
 
 # [C++](#tab/cpp)
 
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_item_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_CHECK_BOX`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_RADIO`
@@ -820,67 +822,67 @@ The `AreDefaultContextMenusEnabled` property controls whether any context menu c
 
 * **[ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)**
 * **[ICoreWebView2_4](/microsoft-edge/webview2/reference/win32/icorewebview2_4)**
-* **[ICoreWebView2Experimental6](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6)**
-   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#add_contextmenurequested)
-   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2experimental6#remove_contextmenurequested)
+* **[ICoreWebView2_11](/microsoft-edge/webview2/reference/win32/icorewebview2_11)**
+   * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#add_contextmenurequested)
+   * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#remove_contextmenurequested)
 
-* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem)** (`ICoreWebView2ExperimentalContextMenuItem`)
-   * [add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#add_customitemselected)
-   * [get_Children](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_children)
-   * [get_CommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_commandid)
-   * [get_Icon](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_icon)
-   * [get_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_ischecked)
-   * [get_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_isenabled)
-   * [get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_kind)
-   * [get_Label](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_label)
-   * [get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_name)
-   * [get_ShortcutKeyDescription](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#get_shortcutkeydescription)
-   * [put_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#put_ischecked)
-   * [put_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#put_isenabled)
-   * [remove_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitem#remove_customitemselected)
+* **[ICoreWebView2ContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem)**
+   * [add_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#add_customitemselected)
+   * [get_Children](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_children)
+   * [get_CommandId](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_commandid)
+   * [get_Icon](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_icon)
+   * [get_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_ischecked)
+   * [get_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_isenabled)
+   * [get_Kind](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_kind)
+   * [get_Label](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_label)
+   * [get_Name](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_name)
+   * [get_ShortcutKeyDescription](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#get_shortcutkeydescription)
+   * [put_IsChecked](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#put_ischecked)
+   * [put_IsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#put_isenabled)
+   * [remove_CustomItemSelected](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitem#remove_customitemselected)
    
-* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection)** (`ICoreWebView2ExperimentalContextMenuItemCollection`)
-   * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#get_count)
-   * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#getvalueatindex)
-   * [InsertValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#insertvalueatindex)
-   * [RemoveValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenuitemcollection#removevalueatindex)
+* **[ICoreWebView2ContextMenuItemCollection](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection)**
+   * [get_Count](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#get_count)
+   * [GetValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#getvalueatindex)
+   * [InsertValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#insertvalueatindex)
+   * [RemoveValueAtIndex](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenuitemcollection#removevalueatindex)
 
-* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs)** (`ICoreWebView2ExperimentalContextMenuRequestedEventArgs`)
-   * [get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_handled)
-   * [get_Location](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_location)
-   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_menuitems)
-   * [get_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_selectedcommandid)
-   * [get_ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#get_contextmenutarget)
-   * [GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#getdeferral)
-   * [put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_handled)
-   * [put_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventargs#put_selectedcommandid)
+* **[ICoreWebView2ContextMenuRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs)**
+   * [get_ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_contextmenutarget)
+   * [get_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_handled)
+   * [get_Location](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_location)
+   * [get_MenuItems](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_menuitems)
+   * [get_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#get_selectedcommandid)
+   * [GetDeferral](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#getdeferral)
+   * [put_Handled](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#put_handled)
+   * [put_SelectedCommandId](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventargs#put_selectedcommandid)
 
-* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler)** (`ICoreWebView2ExperimentalContextMenuRequestedEventHandler`)
-   * [Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenurequestedeventhandler#invoke)
+* **[ICoreWebView2ContextMenuRequestedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventhandler)**
+   * [Invoke](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenurequestedeventhandler#invoke)
 
-* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget)** (`ICoreWebView2ExperimentalContextMenuTarget`)
-   * [get_kind](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcontextmenutarget#get_kind)
+* **[ICoreWebView2ContextMenuTarget](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenutarget)**
+   * [get_kind](/microsoft-edge/webview2/reference/win32/icorewebview2contextmenutarget#get_kind)
 
-* **[ICoreWebView2CustomItemSelectedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcustomitemselectedeventhandler)** (`ICoreWebView2ExperimentalCustomItemSelectedEventHandler`)
+* **[ICoreWebView2CustomItemSelectedEventHandler](/microsoft-edge/webview2/reference/win32/icorewebview2customitemselectedeventhandler)**
 
 * **[ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)**
    * [Complete](/microsoft-edge/webview2/reference/win32/icorewebview2deferral#complete)
 
-* **[ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)**
-   * [CreateContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalenvironment6#createcontextmenuitem)
+* **[ICoreWebView2Environment9](/microsoft-edge/webview2/reference/win32/icorewebview2environment9)**
+   * [CreateContextMenuItem](/microsoft-edge/webview2/reference/win32/icorewebview2environment9#createcontextmenuitem)
 
 * **[ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)**
    * [get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)
    * [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
    
-* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_item_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_item_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_COMMAND`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_CHECK_BOX`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_RADIO`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SEPARATOR`
    * `COREWEBVIEW2_CONTEXT_MENU_ITEM_KIND_SUBMENU`
 
-* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalcompositioncontroller4#corewebview2_context_menu_target_kind)
+* [COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND enum](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_context_menu_target_kind)
    * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_PAGE`
    * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_IMAGE`
    * `COREWEBVIEW2_CONTEXT_MENU_TARGET_KIND_SELECTED_TEXT`
