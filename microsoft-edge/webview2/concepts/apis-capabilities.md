@@ -47,7 +47,7 @@ Cross-platform API implementation: Most of the WebView2 APIs are initially devel
 
 
 <!-- ====================================================================== -->
-## Web/Native Interop
+## Web/native interop
 
 The Microsoft Edge WebView2 control lets you embed web content into native applications. You can communicate between native code and web code using simple messages, JavaScript code, and native objects. 
 
@@ -204,7 +204,6 @@ See also:
 <!--* []()-->
 
 
-
 <!-- ------------------------------ -->
 ### Cookies
 
@@ -242,7 +241,7 @@ Working with cookies in a WebView2 control.
 
 See also:
 * [View, edit, and delete cookies](/microsoft-edge/devtools-guide-chromium/storage/cookies)
-<!-- no wv2 page w cookie in title -->
+<!-- no WebView2 page with "cookie" in title -->
 
 
 <!-- ------------------------------ -->
@@ -390,9 +389,7 @@ The WebView2 control provides a default context menu, and you can create your ow
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
-<!--* []()-->
-<!--* []()-->
-<!--* []()-->
+
 
 # [C++](#tab/cpp)
 
@@ -401,9 +398,9 @@ The WebView2 control provides a default context menu, and you can create your ow
    * [CallDevToolsProtocolMethodForSession](/microsoft-edge/webview2/reference/win32/icorewebview2_11#calldevtoolsprotocolmethodforsession)<!-- c# links to "CallDevToolsProtocolMethodForSessionAsync Method" -->
    * [remove_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#remove_contextmenurequested)<!-- c# links to "ContextMenuRequested Event" -->
 
-* [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "" -->
-   * [get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)<!-- c# links to "" -->
-   * [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)<!-- c# links to "" -->
+* [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled)<!-- c# links to "AreDefaultContextMenusEnabled Property" -->
+   * [put_AreDefaultContextMenusEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)<!-- c# links to "AreDefaultContextMenusEnabled Property" -->
 
 ---
 
@@ -421,17 +418,23 @@ Learn how to monitor the browser's status bar for changes.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [StatusBarTextChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartextchanged)
+   * [StatusBarText Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartext)
+
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [IsStatusBarEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isstatusbarenabled)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2_12](/microsoft-edge/webview2/reference/win32/icorewebview2_12)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_StatusBarTextChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_12#add_statusbartextchanged)<!-- c# links to "StatusBarTextChanged Event" -->
+   * [get_StatusBarText](/microsoft-edge/webview2/reference/win32/icorewebview2_12#get_statusbartext)<!-- c# links to "StatusBarText Property" -->
+   * [remove_StatusBarTextChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_12#remove_statusbartextchanged)<!-- c# links to "StatusBarTextChanged Event" -->
 
-*  `add_StatusBarTextChanged`
-*  `get_StatusBarText`
-*  `remove_StatusBarTextChanged`
-*  `ICoreWebView2Settings`
-   * `IsStatusBarEnabled`
+* [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_IsStatusBarEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isstatusbarenabled)<!-- c# links to "IsStatusBarEnabled Property" -->
+   * [put_IsStatusBarEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isstatusbarenabled)<!-- c# links to "IsStatusBarEnabled Property" -->
 
 ---
 
@@ -446,15 +449,15 @@ Learn how to detect the user agent string in a WebView2 control.
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [UserAgent Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.useragent)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
-
-*  `ICoreWebView2Settings`
-   * `UserAgent`
+* [ICoreWebView2Settings2](/microsoft-edge/webview2/reference/win32/icorewebview2settings2)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_UserAgent](/microsoft-edge/webview2/reference/win32/icorewebview2settings2#get_useragent)<!-- c# links to "UserAgent Property" -->
+   * [put_UserAgent](/microsoft-edge/webview2/reference/win32/icorewebview2settings2#put_useragent)<!-- c# links to "UserAgent Property" -->
 
 ---
 
@@ -469,18 +472,18 @@ Leverage the browsers autofill functionality in a WebView2 control.
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isgeneralautofillenabled)
+   * [IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.ispasswordautosaveenabled)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
-
-*  `ICoreWebView2Settings4`
-   * `IsGeneralAutofillEnabled`
-   * `IsPasswordAutosaveEnabled`
-   * `IsGeneralAutofillEnabled`
-   * `IsPasswordAutosaveEnabled`
+* [ICoreWebView2Settings4](/microsoft-edge/webview2/reference/win32/icorewebview2settings4)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_isgeneralautofillenabled)<!-- c# links to "IsGeneralAutofillEnabled Property" -->
+   * [get_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_ispasswordautosaveenabled)<!-- c# links to "IsPasswordAutosaveEnabled Property" -->
+   * [put_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_isgeneralautofillenabled)<!-- c# links to "IsGeneralAutofillEnabled Property" -->
+   * [put_IsPasswordAutosaveEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#put_ispasswordautosaveenabled)<!-- c# links to "IsPasswordAutosaveEnabled Property" -->
 
 ---
 
@@ -496,17 +499,19 @@ Control audio settings in a WebView2 control.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [IsDocumentPlayingAudioChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.isdocumentplayingaudiochanged)
+   * [IsMutedChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.ismutedchanged)
+   * [IsDocumentPlayingAudio Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.isdocumentplayingaudio)
+   * [IsMuted Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.ismuted)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
-
-*  `ICoreWebView2_8`
-   * `Add_IsDocumentPlayingAudioChanged`
-   * `Add_IsMutedChanged`
-   * `Get_IsDocumentPlayingAudio`
-   * `Get_IsMuted`
+* [ICoreWebView2_8](/microsoft-edge/webview2/reference/win32/icorewebview2_8)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_IsDocumentPlayingAudioChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_isdocumentplayingaudiochanged)<!-- c# links to "IsDocumentPlayingAudioChanged Event" -->
+   * [add_IsMutedChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_ismutedchanged)<!-- c# links to "IsMutedChanged Event" -->
+   * [get_IsDocumentPlayingAudio](/microsoft-edge/webview2/reference/win32/icorewebview2_8#get_isdocumentplayingaudio)<!-- c# links to "IsDocumentPlayingAudio Property" -->
+   * [get_IsMuted](/microsoft-edge/webview2/reference/win32/icorewebview2_8#get_ismuted)<!-- c# links to "IsMuted Property" -->
 
 ---
 
@@ -515,40 +520,63 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Managing WV2 Processes
+## Managing WebView2 processes
 
 Learn how to work with the process that your WebView2 runs in on the host computer.
 
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [ProcessFailed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
+   * [BrowserProcessId Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.browserprocessid)
+
+* [CoreWebView2BrowserProcessExitedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs)
+
+* [CoreWebView2BrowserProcessExitKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitkind)
+
+* [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [BrowserProcessExited Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
+   * [GetProcessInfos Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessinfos)
+   * [ProcessInfosChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.processinfoschanged)
+
+* [CoreWebView2ProcessFailedKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
+
+* [CoreWebView2ProcessFailedReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason)
+
+* [CoreWebView2ProcessKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2processkind)
+
+* [CoreWebView2ProcessFailedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
+
+* [CoreWebView2ProcessInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processinfo)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_ProcessFailed](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)<!-- c# links to "ProcessFailed Event" -->
+   * [get_BrowserProcessId](/microsoft-edge/webview2/reference/win32/icorewebview2#get_browserprocessid)<!-- c# links to "BrowserProcessId Property" -->
+   * [remove_ProcessFailed](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)<!-- c# links to "ProcessFailed Event" -->
+   * [COREWEBVIEW2_PROCESS_FAILED_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_process_failed_kind)<!-- c# links to "CoreWebView2ProcessFailedKind Enum" -->
+   * [COREWEBVIEW2_PROCESS_FAILED_REASON](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_process_failed_reason)<!-- c# links to "CoreWebView2ProcessFailedReason Enum" -->
+   * [COREWEBVIEW2_PROCESS_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_process_kind)<!-- c# links to "CoreWebView2ProcessKind Enum" -->
+   * [COREWEBVIEW2_BROWSER_PROCESS_EXIT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_browser_process_exit_kind)<!-- c# links to "CoreWebView2BrowserProcessExitKind Enum" -->
 
-*  `ICoreWebView2`
-   * `COREWEBVIEW2_PROCESS_FAILED_KIND`
-   * `COREWEBVIEW2_PROCESS_FAILED_REASON`
-   * `COREWEBVIEW2_PROCESS_KIND`
-*  `ICoreWebView2BrowserProcessExitedEventArgs`
-*  `ICoreWebView2Environment.BrowserProcessExitedEventArgs`
-*  `ICoreWebView2ProcessFailedEventArgs`
-*  `ICoreWebView2ProcessInfo`
-*  `ICoreWebView2ProcessInfoCollection`
-*  `ICoreWebView2`
-   * `Add_ProcessFailed`
-   * `Remove_ProcessFailed`
-   * `get_BrowserProcessID`
-   * `COREWEBVIEW2_BROWSER_PROCESS_EXIT_KIND`
-*  `ICoreWebView2Environment5`
-   * `Add_BrowserProcessExited`
-   * `Remove_BrowserProcessExited`
-*  `ICoreWebView2Environment8`
-   * `Add_ProcessInfosChanged`
-   * `GetProcessInfos`
-   * `remove_ProcessInfosChanged`
+* [ICoreWebView2BrowserProcessExitedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)<!-- c# links to "CoreWebView2BrowserProcessExitedEventArgs Class" -->
+
+* [ICoreWebView2ProcessFailedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs)<!-- c# links to "CoreWebView2ProcessFailedEventArgs Class" -->
+
+* [ICoreWebView2ProcessInfo](/microsoft-edge/webview2/reference/win32/icorewebview2processinfo)<!-- c# links to "CoreWebView2ProcessInfo Class" -->
+
+* [ICoreWebView2ProcessInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2processinfocollection)<!-- c# links to n/a -->
+
+* [ICoreWebView2Environment5](/microsoft-edge/webview2/reference/win32/icorewebview2environment5)<!-- c# links to "CoreWebView2Environment" -->
+   * [add_BrowserProcessExited](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited)<!-- c# links to "BrowserProcessExited Event" -->
+   * [remove_BrowserProcessExited](/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)<!-- c# links to "BrowserProcessExited Event" -->
+
+* [ICoreWebView2Environment8](/microsoft-edge/webview2/reference/win32/icorewebview2environment8)<!-- c# links to "CoreWebView2Environment" -->
+   * [add_ProcessInfosChanged](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged)<!-- c# links to "ProcessInfosChanged Event" -->
+   * [GetProcessInfos](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#getprocessinfos)<!-- c# links to "GetProcessInfos Method" -->
+   * [remove_ProcessInfosChanged](/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)<!-- c# links to "ProcessInfosChanged Event" -->
 
 ---
 
@@ -608,7 +636,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Web Content
+## Web content
 
 
 <!-- ------------------------------ -->
@@ -783,7 +811,7 @@ See also:
 <!-- ====================================================================== -->
 ## Authentication
 
-<!-- selling point / value prop: easy configuration of wv2 apps - support user accounts -->
+<!-- selling point / value prop: easy configuration of WebView2 apps - support user accounts -->
 
 Learn how to handle basic authentication in WebView2 controls.
 
@@ -815,9 +843,9 @@ See also:
 
 Learn how to specify settings before WebView2 controls are created.
 
-<!-- selling point / value prop: easy configuration of wv2 apps
+<!-- selling point / value prop: easy configuration of WebView2 apps
 
-*  What is "envir setup" - of the control?  after I add the wv2 ctrl to the page?  What do we mean here by "envir"?
+*  What is "envir setup" - of the control?  after I add the WebView2 control to the page?  What do we mean here by "envir"?
 *  Why care about it
 
 -->
@@ -850,7 +878,7 @@ See also:
 <!-- ====================================================================== -->
 ## Rendering WebView2 in native apps (Hosting)
 
-These APIS are used to set up the WV2 rendering system in native apps.  For example, how wv2 renders output into the host app, how wv2 handles input, focus, accessibility (applies to C++ only)
+These APIS are used to set up the WebView2 rendering system in native apps.  For example, how WebView2 renders output into the host app, how WebView2 handles input, focus, accessibility (applies to C++ only).
 
 # [C#](#tab/c-sharp)
 
@@ -861,7 +889,7 @@ These APIS are used to set up the WV2 rendering system in native apps.  For exam
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
 
-*  `ICoreWebView2Controller` (Hosting-related settings for WebView) – app or wv2 elements host WebView
+*  `ICoreWebView2Controller` (Hosting-related settings for WebView) – app or WebView2 elements host WebView
    * `Get_CoreWebView2`
 *  `ICoreWebView2CompositionController`
 *  `ICoreWebView2Controller`
@@ -916,7 +944,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Window Management
+## Window management
 
 All tasks related to the management of a window.
 
@@ -956,7 +984,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## User Data
+## User data
 
 Learn how to work with the user data folder.
 
