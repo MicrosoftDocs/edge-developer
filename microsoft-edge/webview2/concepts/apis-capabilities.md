@@ -592,42 +592,71 @@ Learn how to manage page navigation in a WebView2.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [CanGoBack Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoback)
+   * [CanGoForward Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoforward)
+   * [ClearVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.clearvirtualhostnametofoldermapping)
+   * [FrameNavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
+   * [FrameNavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationstarting)
+   * [GoBack Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.goback)
+   * [GoForward Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.goforward)
+   * [HistoryChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.historychanged)
+   * [Navigate Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigate)
+   * [NavigateToString Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatetostring)
+   * [NavigateWithWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
+   * [NavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)
+   * [NavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationstarting)
+   * [SetVirtualHostNameToFolderMapping Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
+   * [Source Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.source)
+   * [SourceChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.sourcechanged)
+   * [Stop Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.stop)
+
+* [CoreWebView2NavigationCompletedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs)
+
+* [CoreWebView2NavigationStartingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2navigationstartingeventargs)
+
+* [CoreWebView2SourceChangedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2sourcechangedeventargs)
+
+* [CoreWebView2WebErrorStatus Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2weberrorstatus)
+
+* [CoreWebView2WebResourceContext Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted)<!-- c# links to "FrameNavigationCompleted Event" -->
+   * [add_FrameNavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting)<!-- c# links to "FrameNavigationStarting Event" -->
+   * [add_HistoryChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged)<!-- c# links to "HistoryChanged Event" -->
+   * [add_NavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationcompleted)<!-- c# links to "NavigationCompleted Event" -->
+   * [add_NavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationstarting)<!-- c# links to "NavigationStarting Event" -->
+   * [add_SourceChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_sourcechanged)<!-- c# links to "SourceChanged Event" -->
+   * [get_CanGoBack](/microsoft-edge/webview2/reference/win32/icorewebview2#get_cangoback)<!-- c# links to "CanGoBack Property" -->
+   * [get_CanGoFroward](/microsoft-edge/webview2/reference/win32/icorewebview2#get_cangoforward)<!-- c# links to "CanGoForward Property" -->
+   * [get_Source](/microsoft-edge/webview2/reference/win32/icorewebview2#get_source)<!-- c# links to "Source Property" -->
+   * [GoBack](/microsoft-edge/webview2/reference/win32/icorewebview2#goback)<!-- c# links to "GoBack Method" -->
+   * [GoForward](/microsoft-edge/webview2/reference/win32/icorewebview2#goforward)<!-- c# links to "GoForward Method" -->
+   * [Navigate](/microsoft-edge/webview2/reference/win32/icorewebview2#navigate)<!-- c# links to "Navigate Method" -->
+   * [NavigateToString](/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)<!-- c# links to "NavigateToString Method" -->
+   * [remove_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)<!-- c# links to "FrameNavigationCompleted Event" -->
+   * [remove_NavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationcompleted)<!-- c# links to "NavigationCompleted Event" -->
+   * [remove_NavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationstarting)<!-- c# links to "NavigationStarting Event" -->
+   * [remove_SourceChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_sourcechanged)<!-- c# links to "SourceChanged Event" -->
+   * [Stop](/microsoft-edge/webview2/reference/win32/icorewebview2#stop)<!-- c# links to "Stop Method" -->
+   * [COREWEBVIEW2_WEB_ERROR_STATUS](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_web_error_status)<!-- c# links to "CoreWebView2WebErrorStatus Enum" -->
+   * [COREWEBVIEW2_WEB_RESOURCE_CONTEXT](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_web_resource_context)<!-- c# links to "CoreWebView2WebResourceContext Enum" -->
 
-*  `ICoreWebView2`
-   * `Add_FrameNavigationCompleted`
-   * `add_FrameNavigationStarting`
-   * `remove_FrameNavigationCompleted`
-   * `add_NavigationCompleted`
-   * `remove_NavigationCompleted`
-   * `add_NavigationStarting`
-   * `remove_NavigationStarting` 
-   * `Add_HistoryChanged`
-   * `Add_SourceChanged`
-   * `Remove_SourceChanged`
-   * `Get_CanGoBack`
-   * `get_CanGoFroward`
-   * `get_Source`
-   * `GoBack`
-   * `GoForward`
-   * `Navigate`
-   * `NavigateToString`
-   * `Stop`
-   * `COREWEBVIEW2_WEB_ERRORS_STATUS`
-   * `COREWEBVIEW2_WEB_RESOURCE_CONTEXT`
-*  `ICoreWebView2_2`
-   * `NavigateWithWebResourceRequest`
-*  `ICoreWebView2_3`
-   * `SetVirtuaHostNameToFolderMapping` <!--TODO: check typo in API name/casing-->
-   * `ClearVirtualHostNameToFolderMapping`
-*  `ICoreWebView2NavigationCompletedEventArgs`
-*  `ICoreWebView2NavigationCompletedEventArgs`
-*  `ICoreWebView2NavigationStartingEventArgs`
-*  `ICoreWebView2SourceChangedEventArgs`
+* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)<!-- c# links to "CoreWebView2 Class" -->
+   * [NavigateWithWebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)<!-- c# links to "NavigateWithWebResourceRequest Method" -->
+
+* [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "CoreWebView2 Class" -->
+   * [ClearVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3#clearvirtualhostnametofoldermapping)<!-- c# links to "ClearVirtualHostNameToFolderMapping Method" -->
+   * [SetVirtualHostNameToFolderMapping](/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)<!-- c# links to "SetVirtualHostNameToFolderMapping Method" -->
+
+* [ICoreWebView2NavigationCompletedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs)<!-- c# links to "CoreWebView2NavigationCompletedEventArgs Class" -->
+
+* [ICoreWebView2NavigationStartingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs)<!-- c# links to "CoreWebView2NavigationStartingEventArgs Class" -->
+
+* [ICoreWebView2SourceChangedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2sourcechangedeventargs)<!-- c# links to "CoreWebView2SourceChangedEventArgs Class" -->
 
 ---
 
@@ -647,28 +676,45 @@ Learn how to make an external call to a resource on the web.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [AddWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
+   * [NavigateWithWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
+   * [Reload Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
+   * [RemoveWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.removewebresourcerequestedfilter)
+   * [WebResourceRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested)
+   * [WebResourceResponseReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
+
+* [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [CreateWebResourceRequest Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourcerequest)
+   * [CreateWebResourceResponse Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createwebresourceresponse)
+
+* [CoreWebView2WebResourceRequest Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequest)
+
+* [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)<!-- c# links to "WebResourceRequested Event" -->
+   * [AddWebResourceRequestedFilter](/microsoft-edge/webview2/reference/win32/icorewebview2#addwebresourcerequestedfilter)<!-- c# links to "AddWebResourceRequestedFilter Method" -->
+   * [Reload](/microsoft-edge/webview2/reference/win32/icorewebview2#reload)<!-- c# links to "Reload Method" -->
+   * [remove_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webresourcerequested)<!-- c# links to "WebResourceRequested Event" -->
+   * [RemoveWebResourceRequestedFilter](/microsoft-edge/webview2/reference/win32/icorewebview2#removewebresourcerequestedfilter)<!-- c# links to "RemoveWebResourceRequestedFilter Method" -->
 
-*  `ICoreWebView2`
-   * `Add_WebResourceRequested`
-   * `Remove_WebResourceRequested`
-   * `AddWebResourceRequestedFilter`
-   * `RemoveWebResourceRequestedFilter`
-   * `Reload`
-*  `ICoreWebView2_2`
-   * `Add_WebResourceResponseReceived`
-   * `Remove_WebResourceResponseReceived`
-   * `NavigateWithWebResourceRequest`
-*  `ICoreWebView2Environment`
-   * `CreateWebResourceResponse` 
-*  `ICoreWebView2Environment2`
-   * `CreateWebResourceRequest`
-*  `ICoreWebView2WebResourceRequest`
-*  `ICoreWebView2WebResourceRequestedEventArgs`
+* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_WebResourceResponseReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_webresourceresponsereceived)<!-- c# links to "WebResourceResponseReceived Event" -->
+   * [NavigateWithWebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)<!-- c# links to "NavigateWithWebResourceRequest Method" -->
+   * [remove_WebResourceResponseReceived](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_webresourceresponsereceived)<!-- c# links to "WebResourceResponseReceived Event" -->
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)<!-- c# links to "CoreWebView2Environment Class" -->
+   * [CreateWebResourceResponse](/microsoft-edge/webview2/reference/win32/icorewebview2environment#createwebresourceresponse)<!-- c# links to "CreateWebResourceResponse Method" --> 
+
+* [ICoreWebView2Environment2](/microsoft-edge/webview2/reference/win32/icorewebview2environment2)<!-- c# links to "CoreWebView2Environment Class" -->
+   * [CreateWebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2environment2#createwebresourcerequest)<!-- c# links to "CreateWebResourceRequest Method" -->
+
+* [ICoreWebView2WebResourceRequest](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequest)<!-- c# links to "CoreWebView2WebResourceRequest Class" -->
+
+* [ICoreWebView2WebResourceRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)<!-- c# links to "CoreWebView2WebResourceRequestedEventArgs Class" -->
 
 ---
 
@@ -677,7 +723,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-### DOM/Content Loaded
+### DOM/Content loaded
 
 Learn how to handle events when content is loaded in the WebView2.
 
