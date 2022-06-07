@@ -57,8 +57,8 @@ The following items are now stable:
    * `clearBrowsingDataInTimeRange`
    * `clearBrowsingDataAll`
 
-<!-- ====================================================================== -->
-## There is no prerelease package
+There is no corresponding prerelease package.
+
 
 #### Bug Fixes
   
