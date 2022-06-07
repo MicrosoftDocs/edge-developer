@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/03/2022
+ms.date: 06/06/2022
 ---
 # Survey of WebView2 APIs and their capabilities
 
@@ -730,29 +730,43 @@ Learn how to handle events when content is loaded in the WebView2.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [ContainsFullScreenElementChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelementchanged)
+   * [ContentLoading Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contentloading)
+   * [DocumentTitleChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
+   * [ContainsFullScreenElement Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelement)
+   * [DocumentTitle Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
+   * [DOMContentLoaded Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.domcontentloaded)
+
+* [CoreWebView2ContentLoadingEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2contentloadingeventargs)
+
+* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
+
+* [CoreWebView2DOMContentLoadedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2domcontentloadedeventargs)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_ContainsFullScreenElementChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_containsfullscreenelementchanged)<!-- c# links to "ContainsFullScreenElementChanged Event" -->
+   * [add_ContentLoading](/microsoft-edge/webview2/reference/win32/icorewebview2#add_contentloading)<!-- c# links to "ContentLoading Event" -->
+   * [add_DocumentTitleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged)<!-- c# links to "DocumentTitleChanged Event" -->
+   * [get_ContainsFullScreenElement](/microsoft-edge/webview2/reference/win32/icorewebview2#get_containsfullscreenelement)<!-- c# links to "ContainsFullScreenElement Property" -->
+   * [get_DocumentTitle](/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!-- c# links to "DocumentTitle Property" -->
+   * [remove_ContainsFullScreenElementChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_containsfullscreenelementchanged)<!-- c# links to "ContainsFullScreenElementChanged Event" -->
+   * [remove_ContentLoading](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_contentloading)<!-- c# links to "ContentLoading Event" -->
+   * [remove_DocumentTitleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)<!-- c# links to "DocumentTitleChanged Event" -->
 
-*  `ICoreWebView2ContentLoadingEventArgs`
-*  `ICoreWebView2.ContentLoading Event`
-*  `ICoreWebView2DOMContentLoadedEventArgsICoreWebView2` 
-   * `Add_ContentLoading`
-   * `Remove_ContentLoading`
-*  `ICoreWebView2_2`
-   * `Add_DOMContentLoaded`
-   * `Remove_DOMContentLoaded`
-*  `ICoreWebView2`
-   * `Add_ContainsFullScreenElementChanged`
-   * `get_ContainsFullScreenElement`
-   * `remove_ContainsFullScreenElementChanged`
-   * `Add_DocumentTitleChanged`
-   * `Remove_DocumentTitleChanged`
-   * `get_DocumentTitle`
-*  `ICoreWebView2Controller`
-   * `Close`
+* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_DOMContentLoaded](/microsoft-edge/webview2/reference/win32/icorewebview2_2#add_domcontentloaded)<!-- c# links to "DOMContentLoaded Event" -->
+   * [remove_DOMContentLoaded](/microsoft-edge/webview2/reference/win32/icorewebview2_2#remove_domcontentloaded)<!-- c# links to "DOMContentLoaded Event" -->
+
+* [ICoreWebView2ContentLoadingEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2contentloadingeventargs)<!-- c# links to "CoreWebView2ContentLoadingEventArgs Class" -->
+
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [Close](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)<!-- c# links to "Close Method" -->
+
+* [ICoreWebView2DOMContentLoadedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2domcontentloadedeventargs)<!-- c# links to "CoreWebView2DOMContentLoadedEventArgs Class" -->
 
 ---
 
@@ -768,19 +782,28 @@ Learn how to work with certificates in WebView2 controls (TODO: confirm)
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [ClientCertificateRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.clientcertificaterequested)
+
+* [CoreWebView2ClientCertificate Class](/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificate)
+
+* [CoreWebView2ClientCertificateKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificatekind)
+
+* [CoreWebView2ClientCertificateRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificaterequestedeventargs)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [COREWEBVIEW2_CLIENT_CERTIFICATE_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_client_certificate_kind)<!-- c# links to "CoreWebView2ClientCertificateKind Enum" -->
 
-*  `ICoreWebView2`
-   * `COREWEBVIEW2_CLIENT_CERTIFICATE_KIND`
-*  `ICoreWebView2ClientCertificate`
-*  `ICoreWebView2ClientCertificateCollection`
-*  `ICoreWebView2ClientCertificateRequestedEventArgs`
-*  `ICoreWebView2_5`
-   * `add_ClientCertificateRequested`
+* [ICoreWebView2ClientCertificate](/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate)<!-- c# links to "CoreWebView2ClientCertificate Class" -->
+
+* [ICoreWebView2ClientCertificateCollection](/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection)<!-- c# links to n/a -->
+
+* [ICoreWebView2ClientCertificateRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventargs)<!-- c# links to "CoreWebView2ClientCertificateRequestedEventArgs Class" -->
+
+* [ICoreWebView2_5](/microsoft-edge/webview2/reference/win32/icorewebview2_5)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_ClientCertificateRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_5#add_clientcertificaterequested)<!-- c# links to "ClientCertificateRequested Event" -->
 
 ---
 
@@ -797,21 +820,36 @@ Learn how to automate tasks in the DevTools in a WebView2 control using CDP (TOD
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [CallDevToolsProtocolMethodAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync)
+   * [CallDevToolsProtocolMethodForSessionAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodforsessionasync)
+   * [GetDevToolsProtocolEventReceiver Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver)
+   * [OpenDevToolsWindow Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.opendevtoolswindow)
+
+* [CoreWebView2DevToolsProtocolEventReceivedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs)
+
+* [CoreWebView2DevToolsProtocolEventReceiver Class](/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver)
+
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [AreDevToolsEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredevtoolsenabled)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod)<!-- c# links to "CallDevToolsProtocolMethodAsync Method" -->
+   * [GetDevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2#getdevtoolsprotocoleventreceiver)<!-- c# links to "GetDevToolsProtocolEventReceiver Method" -->
+   * [OpenDevToolsWindow](/microsoft-edge/webview2/reference/win32/icorewebview2#opendevtoolswindow)<!-- c# links to "OpenDevToolsWindow Method" -->
 
-*  `ICoreWebView2DevToolsProtocolEventReceivedEventArgs` 
-*  `ICoreWebView2DevToolsProtocolEventReceiver` 
-*  `CallDevToolsProtocolMethodForSession` <!--TODO: (WebView2 Win32 C++ ICoreWebView2_11)-->
-*  `ICoreWebView2Settings`
-   * `AreDevToolsEnabled`
-*  `ICoreWebView2`
-   * `CallDevToolsProtocolMethod`
-   * `GetDevToolsProtocolEventReceiver` 
-   * `OpenDevToolsWindow`
+* [ICoreWebView2DevToolsProtocolEventReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)<!-- c# links to "CoreWebView2DevToolsProtocolEventReceivedEventArgs Class" -->
+
+* [ICoreWebView2DevToolsProtocolEventReceiver](/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)<!-- c# links to "CoreWebView2DevToolsProtocolEventReceiver Class" -->
+
+* [ICoreWebView2_11](/microsoft-edge/webview2/reference/win32/icorewebview2_11)<!-- c# links to "CoreWebView2 Class" -->
+   * [CallDevToolsProtocolMethodForSession](/microsoft-edge/webview2/reference/win32/icorewebview2_11#calldevtoolspotocolmethodforsession)<!-- c# links to "CallDevToolsProtocolMethodForSessionAsync Method" -->
+
+* [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_AreDevToolsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredevtoolsenabled)<!-- c# links to "AreDevToolsEnabled Property" -->
+   * [put_AreDevToolsEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredevtoolsenabled)<!-- c# links to "AreDevToolsEnabled Property" -->
 
 ---
 
@@ -828,25 +866,32 @@ Learn how to work with iFrames in content displayed in WebView2 controls
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+<!-- TODO: C# links -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+<!-- sort members after c# -->
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
+   * [add_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted)<!-- c# links to "" -->
+   * [add_FrameNavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting)<!-- c# links to "" -->
+   * [remove_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)<!-- c# links to "" -->
+   * [add_HistoryChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged)<!-- c# links to "" -->
+   * [remove_FrameNavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)<!-- c# links to "" -->
+   * [remove_HistoryChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_historychanged)<!-- c# links to "" -->
 
-*  `ICoreWebView2Frame`
-*  `ICoreWebView2FrameCreatedEventArgs`
-*  `ICoreWebView2FrameInfo`
-*  `ICoreWebView2FrameInfoCollection`
-*  `ICoreWebView2FrameInfoCollectionIterator`
-*  `ICoreWebView2`
-   * `Add_FrameNavigationCompleted`
-   * `Remove_FrameNavigationCompleted`
-   * `Add_FrameNavigationStarting`
-   * `Remove_frameNavigationStarting`
-   * `Add_HistoryChanged`
-   * `Remove_HistoryChanged`
-   * `IcoreWebView2_4Add_FrameCreated` <!--TODO: check typo in API name/casing-->
+* [ICoreWebView2_4](/microsoft-edge/webview2/reference/win32/icorewebview2_4)<!-- c# links to "" -->
+   * [add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)<!-- c# links to "" -->
+
+* [ICoreWebView2Frame](/microsoft-edge/webview2/reference/win32/icorewebview2frame)<!-- c# links to "" -->
+
+* [ICoreWebView2FrameCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)<!-- c# links to "" -->
+
+* [ICoreWebView2FrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)<!-- c# links to "" -->
+
+* [ICoreWebView2FrameInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!-- c# links to "" -->
+
+* [ICoreWebView2FrameInfoCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!-- c# links to "" -->
 
 ---
 
@@ -864,19 +909,23 @@ Learn how to handle basic authentication in WebView2 controls.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+<!-- TODO: C# links -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10)<!-- c# links to "" -->
+   * [add_BasicAuthenticationRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)<!-- c# links to "" -->
 
-*  `ICoreWebView2BasicAuthenticationRequestedEventArgs`
-*  `ICoreWebView2BasicAuthenticationResponse`
-*  `ICoreWebView2HttpHeadersCollectionIterator`
-*  `ICoreWebView2HttpRequestHeaders`
-*  `ICoreWebView2HttpResponseHeaders`
-*  `ICoreWebView2`
-   * `Add_BasicAutheneticationRequested` <!--TODO: check typo in API name/casing-->
+* [ICoreWebView2BasicAuthenticationRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)<!-- c# links to "" -->
+
+* [ICoreWebView2BasicAuthenticationResponse](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationresponse)<!-- c# links to "" -->
+
+* [ICoreWebView2HttpHeadersCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator)<!-- c# links to "" -->
+
+* [ICoreWebView2HttpRequestHeaders](/microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders)<!-- c# links to "" -->
+
+* [ICoreWebView2HttpResponseHeaders](/microsoft-edge/webview2/reference/win32/icorewebview2httpresponseheaders)<!-- c# links to "" -->
 
 ---
 
@@ -902,18 +951,19 @@ Learn how to specify settings before WebView2 controls are created.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+<!-- TODO: C# links -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)<!-- c# links to "" -->
+   * [get_Environment](/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_environment)<!-- c# links to "" -->
 
-*  `ICoreWebView2Environment`
-   * `Add_NewBrowserVersionAvailable`
-   * `Get_browserVersionString`
-*  `ICoreWebView2EnvionmentOptions` <!--TODO: check typo in API name/casing-->
-*  `ICore_WebView2_2`
-   * `Get_Environment`
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)<!-- c# links to "" -->
+   * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)<!-- c# links to "" -->
+   * [get_BrowserVersionString](/microsoft-edge/webview2/reference/win32/icorewebview2environment#get_browserversionstring)<!-- c# links to "" -->
+
+* [ICoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions)<!-- c# links to "" -->
 
 ---
 
@@ -929,25 +979,30 @@ These APIS are used to set up the WebView2 rendering system in native apps.  For
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+<!-- TODO: C# links -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
+   * [add_NewWindowRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested)<!-- c# links to "" -->
+   * [remove_NewWindowRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)<!-- c# links to "" -->
 
-*  `ICoreWebView2Controller` (Hosting-related settings for WebView) – app or WebView2 elements host WebView
-   * `Get_CoreWebView2`
-*  `ICoreWebView2CompositionController`
-*  `ICoreWebView2Controller`
-*  `ICoreWebView2`
-   * `Add_NewWindowRequested`
-   * `Remove_NewWindowRequested`
-*  `ICoreWebView2Environment`
-   * `CreateCoreWebView2Controller`
-*  `ICoreWebView2Environment3`
-   * `CreateCoreWebview2CompositionController`
-*  `ICoreWebView2Environment4`
-   * `GetProviderForHwnd`
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" --> (Hosting-related settings for WebView) – app or WebView2 elements host WebView <!--TODO - move this comment, avoid text on API items here-->
+   * [get_CoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)<!-- c# links to "" -->
+
+* [ICoreWebView2CompositionController](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller)<!-- c# links to "" -->
+
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
+
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)<!-- c# links to "" -->
+   * [CreateCoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2environment#createcorewebview2controller)<!-- c# links to "" -->
+
+* [ICoreWebView2Environment3](/microsoft-edge/webview2/reference/win32/icorewebview2environment3)<!-- c# links to "" -->
+   * [CreateCoreWebview2CompositionController](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2compositioncontroller)<!-- c# links to "" -->
+
+* [ICoreWebView2Environment4](/microsoft-edge/webview2/reference/win32/icorewebview2environment4)<!-- c# links to "" -->
+   * [GetAutomationProviderForWindow](/microsoft-edge/webview2/reference/win32/icorewebview2environment4#getautomationproviderforwindow)<!-- c# links to "" -->
 
 ---
 
@@ -961,27 +1016,29 @@ See also:
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+<!-- TODO: C# links -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
+   * [COREWEBVIEW2_BOUNDS_MODE](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_bounds_mode)<!-- c# links to "" -->
+   * [COREWEBVIEW2_COLOR](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_color)<!-- c# links to "" -->
 
-*  `ICoreWebView2`
-   * `COREWEBVIEW2_BOUNDS_MODE`
-   * `COREWEBVIEW2_COLOR`
-*  `ICoreWebView2Controller`
-   * `Close`
-   * `Get_Bounds`
-   * `Get_IsVisible`
-   * `ZoomFactorChanged`
-   * `Get_ZoomFactor`
-   * `SetBoundsAndZoomFactor`
-*  `ICoreWebView2Controller2`
-   * `Get_DefaultBackgroundColor`
-   * `Put_DefaultBackgroundColor`
-*  `ICoreWebView2Controller3`
-   * `Get_BoundsMode`
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
+   * [Close](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)<!-- c# links to "" -->
+   * [get_Bounds](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds)<!-- c# links to "" -->
+   * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "" -->
+   * [add_ZoomFactorChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged)<!-- c# links to "" -->
+   * [get_ZoomFactor](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_zoomfactor)<!-- c# links to "" -->
+   * [SetBoundsAndZoomFactor](/microsoft-edge/webview2/reference/win32/icorewebview2controller#setboundsandzoomfactor)<!-- c# links to "" -->
+
+* [ICoreWebView2Controller2](/microsoft-edge/webview2/reference/win32/icorewebview2controller2)<!-- c# links to "" -->
+   * [get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)<!-- c# links to "" -->
+   * [put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)<!-- c# links to "" -->
+
+* [ICoreWebView2Controller3](/microsoft-edge/webview2/reference/win32/icorewebview2controller3)<!-- c# links to "" -->
+   * [get_BoundsMode](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)<!-- c# links to "" -->
 
 ---
 
@@ -997,31 +1054,35 @@ All tasks related to the management of a window.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+<!-- TODO: C# links -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
+   * [add_WindowCloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested)<!-- c# links to "" -->
+   * [remove_WindowCloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_windowcloserequested)<!-- c# links to "" -->
+   * [COREWEBVIEW2_MOVE_FOCUS_REASON](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_move_focus_reason)<!-- c# links to "" -->
 
-*  `IcoreWebView2NewWindowRequestedEventArgs` <!--TODO: check typo in API name/casing-->
-*  `IcoreWebView2WindowFeatures` <!--TODO: check typo in API name/casing-->
-*  `IcoreWebView2`
-   * `Add_WindowCloseRequested`
-   * `Remove_WindowCloseRequested`
-   * `COREWEBVIEW2_MOVE_FOCUS_REASON`
-*  `ICoreWebView2MoveFocusRequestedEventArgs`
-*  `ICoreWebview2Controller`
-   * `GotFocus`
-   * `LostFocus`
-   * `MoveFocusRequested`
-   * `MoveFocus`
-   * `Get_ParentWindow`
-   * `NotifyParentWindowPositionChanged`
-*  `ICoreWebView2Controller3`
-   * `Add_RasterizationScaleChanged`
-   * `Get_BoundsMode`
-   * `Get_ShouldDetectMonitorScaleChanges`
-   * `Remove_RasterizationScaleChanged`
+* [ICoreWebView2NewWindowRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs)<!-- c# links to "" -->
+
+* [ICoreWebView2WindowFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures)<!-- c# links to "" -->
+
+* [ICoreWebView2MoveFocusRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs)<!-- c# links to "" -->
+
+* [ICoreWebview2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
+   * [add_GotFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_gotfocus)<!-- c# links to "" -->
+   * [add_LostFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_lostfocus)<!-- c# links to "" -->
+   * [add_MoveFocusRequested](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested)<!-- c# links to "" -->
+   * [MoveFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#movefocus)<!-- c# links to "" -->
+   * [get_ParentWindow](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_parentwindow)<!-- c# links to "" -->
+   * [NotifyParentWindowPositionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller#notifyparentwindowpositionchanged)<!-- c# links to "" -->
+
+* [ICoreWebView2Controller3](/microsoft-edge/webview2/reference/win32/icorewebview2controller3)<!-- c# links to "" -->
+   * [add_RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#add_rasterizationscalechanged)<!-- c# links to "" -->
+   * [get_BoundsMode](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)<!-- c# links to "" -->
+   * [get_ShouldDetectMonitorScaleChanges](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_shoulddetectmonitorscalechanges)<!-- c# links to "" -->
+   * [remove_RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#remove_rasterizationscalechanged)<!-- c# links to "" -->
 
 ---
 
@@ -1036,20 +1097,19 @@ Learn how to work with the user data folder.
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
-
-*  `ICoreWebView2Environment7`
-   * `Get_UserDataFolder`
+* [ICoreWebView2Environment7](/microsoft-edge/webview2/reference/win32/icorewebview2environment7)<!-- c# links to "CoreWebView2Environment Class" -->
+   * [get_UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!-- c# links to "UserDataFolder Property" -->
 
 ---
 
 See also:
-<!--* []()-->
+* [Manage user data folders](user-data-folder.md)
 
 
 <!-- ====================================================================== -->
@@ -1063,23 +1123,40 @@ Handling key press events, so that your app has keyboard support.
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2AcceleratorKeyPressedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs)
+
+* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [AcceleratorKeyPressed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed)
+
+* [CoreWebView2KeyEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2keyeventkind)
+
+* [CoreWebView2MouseEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventkind)
+
+* [CoreWebView2MouseEventVirtualKeys Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventvirtualkeys)
+
+* [CoreWebView2PhysicalKeyStatus Struct](/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus)
+
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [AreBrowserAcceleratorKeysEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to n/a -->
+   * [COREWEBVIEW2_KEY_EVENT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_key_event_kind)<!-- c# links to "CoreWebView2KeyEventKind Enum" -->
+   * [COREWEBVIEW2_MOUSE_EVENT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_mouse_event_kind)<!-- c# links to "CoreWebView2MouseEventKind Enum" -->
+   * [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_mouse_event_virtual_keys)<!-- c# links to "CoreWebView2MouseEventVirtualKeys Enum" -->
+   * [COREWEBVIEW2_PHYSICAL_KEY_STATUS](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_physical_key_status)<!-- c# links to "CoreWebView2PhysicalKeyStatus Struct" -->
 
-*  `ICoreWebView2`
-   * `COREWEBVIEW2_KEY_EVENT_KIND`
-   * `COREWEBVIEW2_MOUSE_EVENT_KIND`
-   * `COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS`
-   * `COREWEBVIEW2_PHYSICAL_KEY_STATUS`
-*  `ICoreWebView2AcceleratorKeyPressedEventArgs`
-*  `ICoreWebView2Controller`
-   * `AcceleratorKeyPressed`
-*  `ICoreWebView2Settings3`
-   * `AreBrowswerAcceleratorKeysEnabled` <!--TODO: check typo in API name/casing-->
+* [ICoreWebView2AcceleratorKeyPressedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs)<!-- c# links to "CoreWebView2AcceleratorKeyPressedEventArgs Class" -->
+
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [add_AcceleratorKeyPressed](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_acceleratorkeypressed)<!-- c# links to "AcceleratorKeyPressed Event" -->
+   * [remove_AcceleratorKeyPressed](/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_acceleratorkeypressed)<!-- c# links to "AcceleratorKeyPressed Event" -->
+
+* [ICoreWebView2Settings3](/microsoft-edge/webview2/reference/win32/icorewebview2settings3)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_AreBrowserAcceleratorKeysEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#get_arebrowseracceleratorkeysenabled)<!-- c# links to "AreBrowserAcceleratorKeysEnabled Property" -->
+   * [put_AreBrowserAcceleratorKeysEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings3#put_arebrowseracceleratorkeysenabled)<!-- c# links to "AreBrowserAcceleratorKeysEnabled Property" -->
 
 ---
 
@@ -1095,19 +1172,40 @@ Learn how to work with the mouse for input on a WebView2 control.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+<!-- TODO: C# links -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
+   * [COREWEBVIEW2_POINTER_EVENT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_pointer_event_kind)<!-- c# links to "" -->
 
-*  `ICoreWebView2`
-   * `COREWEBVIEW2_POINTER_EVENT_KIND`
-*  `ICoreWebView2PointerInfo`
-*  `ICoreWebView2Environment3`
-   * `CreateCoreWebView2PointerInfo`
-*  `Touch inputICoreWebView2Settings6`
-   * `IsSwipeNavigationEnabled`
+* [ICoreWebView2PointerInfo](/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)<!-- c# links to "" -->
+
+* [ICoreWebView2Environment3](/microsoft-edge/webview2/reference/win32/icorewebview2environment3)<!-- c# links to "" -->
+   * [CreateCoreWebView2PointerInfo](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)<!-- c# links to "" -->
+
+---
+
+See also:
+<!--* []()-->
+
+
+<!-- ------------------------------ -->
+### Touch input
+<!-- TODO: stray heading in link in orig doc? should there be "Keyboard; Mouse; Touch input; Pinch zoom" sections? -->
+
+# [C#](#tab/c-sharp)
+
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [IsSwipeNavigationEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isswipenavigationenabled)
+
+
+# [C++](#tab/cpp)
+
+* [ICoreWebView2Settings6](/microsoft-edge/webview2/reference/win32/icorewebview2settings6)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_IsSwipeNavigationEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled)<!-- c# links to "IsSwipeNavigationEnabled Property" -->
+   * [put_IsSwipeNavigationEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)<!-- c# links to "IsSwipeNavigationEnabled Property" -->
 
 ---
 
@@ -1123,17 +1221,20 @@ Learn how to work with touch input in a WebView2 control.
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
+   * [IsPinchZoomEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.ispinchzoomenabled)
+   * [IsZoomControlEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.iszoomcontrolenabled)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
+* [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_IsZoomControlEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iszoomcontrolenabled)<!-- c# links to "IsZoomControlEnabled Property" -->
+   * [put_IsZoomControlEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iszoomcontrolenabled)<!-- c# links to "IsZoomControlEnabled Property" -->
 
-*  `ICoreWebView2Settings`
-   * `IsZoomControlEnabled`
-*  `ICoreWebView2Settings5`
-   * `IsPinchZoomEnabled`
+* [ICoreWebView2Settings5](/microsoft-edge/webview2/reference/win32/icorewebview2settings5)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_IsPinchZoomEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#get_ispinchzoomenabled)<!-- c# links to "IsPinchZoomEnabled Property" -->
+   * [put_IsPinchZoomEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings5#put_ispinchzoomenabled)<!-- c# links to "IsPinchZoomEnabled Property" -->
 
 ---
 
@@ -1149,43 +1250,40 @@ Learn how to handle performance related events for WebView2 controls.
 
 # [C#](#tab/c-sharp)
 
+<!-- TODO: member links & c# mapping comments in cpp section -->
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-   * Properties
-      * `IsSuspended`
-   * Methods
-      * `Resume`
-      * `TrySuspendAsync`
-      * `OpenTaskManagerWindow`
+   * [IsSuspended Property]()
+   * [Resume Method]()
+   * [TrySuspendAsync Method]()
+   * [OpenTaskManagerWindow Method]()
 
 * [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
-   * Properties
-      * `IsVisible`
+   * [IsVisible Property]()
 
-*  `CoreWebView2Settings`
-   * Properties
-      * [IsBuiltInErrorPageEnabled](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled) <!--TODO: clarify note: (probs for navigation and process)-->
+* [CoreWebView2Settings Class]()
+   * [IsBuiltInErrorPageEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled) <!--TODO: clarify note: (probs for navigation and process)-->
 
-<!-- *  `MemoryUsageTargetLevel` not found in C#--> -->
+<!-- TODO: MemoryUsageTargetLevel not found in C#--> -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)
-   * `get_IsSuspended`
-   * `Resume`
-   * `TrySuspend`
+* [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "" -->
+   * [get_IsSuspended](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "" -->
+   * [Resume](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)<!-- c# links to "" -->
+   * [TrySuspend](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)<!-- c# links to "" -->
 
-*  [ICoreWebView2_6](/microsoft-edge/webview2/reference/win32/icorewebview2_6)
-   * `OpenTaskManagerWindow`
+*  [ICoreWebView2_6](/microsoft-edge/webview2/reference/win32/icorewebview2_6)<!-- c# links to "" -->
+   * [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)<!-- c# links to "" -->
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)
-   * `put_IsVisible`
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
+   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "" -->
 
-* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)
-   * `put_MemoryUsageTargetLevel`
+* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)<!-- c# links to "" -->
+   * [put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)<!-- c# links to "" -->
 
-*  [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)
-   * `get_IsBuiltInErrorPageEnabled` <!--TODO: clarify note: (probs for navigation and process)-->
+*  [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "" -->
+   * [get_IsBuiltInErrorPageEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled)<!-- c# links to "" --> <!--TODO: clarify note: (probs for navigation and process)-->
 
 ---
 
@@ -1201,23 +1299,22 @@ See also:
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2.Settings Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.settings#microsoft-web-webview2-core-corewebview2-settings)
+* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [Settings Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.settings)
 
 * [CoreWebView2Deferral Class](/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
-
-<!-- * CoreWebView2StringCollection -->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [get_Settings](/microsoft-edge/webview2/reference/win32/icorewebview2#get_settings)<!-- c# links to "Settings Property" -->
 
-* [ICoreWebView2StringCollection](/microsoft-edge/webview2/reference/win32/icorewebview2stringcollection)
-   * `get_Count`
-   * `GetValueAtIndex`
+* [ICoreWebView2Deferral](/microsoft-edge/webview2/reference/win32/icorewebview2deferral)<!-- c# links to "CoreWebView2Deferral Class" -->
 
-* `ICoreWebView2`
-   * [get_Settings](/microsoft-edge/webview2/reference/win32/icorewebview2#get_settings)
+* [ICoreWebView2StringCollection](/microsoft-edge/webview2/reference/win32/icorewebview2stringcollection)<!-- c# links to n/a -->
+   * [get_Count]()<!-- c# links to n/a -->
+   * [GetValueAtIndex]()<!-- c# links to n/a -->
 
 ---
 
