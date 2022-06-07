@@ -866,32 +866,40 @@ Learn how to work with iFrames in content displayed in WebView2 controls
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-<!-- TODO: C# links -->
+   * [FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
+   * [FrameNavigationCompleted Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
+   * [FrameNavigationStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationstarting)
+   * [HistoryChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.historychanged)
+
+* [CoreWebView2Frame Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frame)
+
+* [CoreWebView2FrameCreatedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
+
+* [CoreWebView2FrameInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo)
 
 
 # [C++](#tab/cpp)
 
-<!-- sort members after c# -->
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
-   * [add_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted)<!-- c# links to "" -->
-   * [add_FrameNavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting)<!-- c# links to "" -->
-   * [remove_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)<!-- c# links to "" -->
-   * [add_HistoryChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged)<!-- c# links to "" -->
-   * [remove_FrameNavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)<!-- c# links to "" -->
-   * [remove_HistoryChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_historychanged)<!-- c# links to "" -->
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted)<!-- c# links to "FrameNavigationCompleted Event" -->
+   * [add_FrameNavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting)<!-- c# links to "FrameNavigationStarting Event" -->
+   * [add_HistoryChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_historychanged)<!-- c# links to "HistoryChanged Event" -->
+   * [remove_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)<!-- c# links to "FrameNavigationCompleted Event" -->
+   * [remove_FrameNavigationStarting](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)<!-- c# links to "FrameNavigationStarting Event" -->
+   * [remove_HistoryChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_historychanged)<!-- c# links to "HistoryChanged Event" -->
 
-* [ICoreWebView2_4](/microsoft-edge/webview2/reference/win32/icorewebview2_4)<!-- c# links to "" -->
-   * [add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)<!-- c# links to "" -->
+* [ICoreWebView2_4](/microsoft-edge/webview2/reference/win32/icorewebview2_4)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_FrameCreated](/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_framecreated)<!-- c# links to "FrameCreated Event" -->
 
-* [ICoreWebView2Frame](/microsoft-edge/webview2/reference/win32/icorewebview2frame)<!-- c# links to "" -->
+* [ICoreWebView2Frame](/microsoft-edge/webview2/reference/win32/icorewebview2frame)<!-- c# links to "CoreWebView2Frame Class" -->
 
-* [ICoreWebView2FrameCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)<!-- c# links to "" -->
+* [ICoreWebView2FrameCreatedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2framecreatedeventargs)<!-- c# links to "CoreWebView2FrameCreatedEventArgs Class" -->
 
-* [ICoreWebView2FrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)<!-- c# links to "" -->
+* [ICoreWebView2FrameInfo](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfo)<!-- c# links to "CoreWebView2FrameInfo Class" -->
 
-* [ICoreWebView2FrameInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!-- c# links to "" -->
+* [ICoreWebView2FrameInfoCollection](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollection)<!-- c# links to n/a -->
 
-* [ICoreWebView2FrameInfoCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!-- c# links to "" -->
+* [ICoreWebView2FrameInfoCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2frameinfocollectioniterator)<!-- c# links to n/a -->
 
 ---
 
@@ -909,23 +917,33 @@ Learn how to handle basic authentication in WebView2 controls.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-<!-- TODO: C# links -->
+   * [BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
+
+* [CoreWebView2BasicAuthenticationRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationrequestedeventargs)
+
+* [CoreWebView2BasicAuthenticationResponse Class](/dotnet/api/microsoft.web.webview2.core.corewebview2basicauthenticationresponse)
+
+* [CoreWebView2HttpHeadersCollectionIterator Class](/dotnet/api/microsoft.web.webview2.core.corewebview2httpheaderscollectioniterator)<!--TODO: why does this collectioniterator class exist in c#, usu not needed-->
+
+* [CoreWebView2HttpRequestHeaders Class](/dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders)
+
+* [CoreWebView2HttpResponseHeaders Class](/dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10)<!-- c# links to "" -->
-   * [add_BasicAuthenticationRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)<!-- c# links to "" -->
+* [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_BasicAuthenticationRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)<!-- c# links to "BasicAuthenticationRequested Event" -->
 
-* [ICoreWebView2BasicAuthenticationRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)<!-- c# links to "" -->
+* [ICoreWebView2BasicAuthenticationRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationrequestedeventargs)<!-- c# links to "CoreWebView2BasicAuthenticationRequestedEventArgs Class" -->
 
-* [ICoreWebView2BasicAuthenticationResponse](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationresponse)<!-- c# links to "" -->
+* [ICoreWebView2BasicAuthenticationResponse](/microsoft-edge/webview2/reference/win32/icorewebview2basicauthenticationresponse)<!-- c# links to "CoreWebView2BasicAuthenticationResponse Class" -->
 
-* [ICoreWebView2HttpHeadersCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator)<!-- c# links to "" -->
+* [ICoreWebView2HttpHeadersCollectionIterator](/microsoft-edge/webview2/reference/win32/icorewebview2httpheaderscollectioniterator)<!-- c# links to "CoreWebView2HttpHeadersCollectionIterator Class" -->
 
-* [ICoreWebView2HttpRequestHeaders](/microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders)<!-- c# links to "" -->
+* [ICoreWebView2HttpRequestHeaders](/microsoft-edge/webview2/reference/win32/icorewebview2httprequestheaders)<!-- c# links to "CoreWebView2HttpRequestHeaders Class" -->
 
-* [ICoreWebView2HttpResponseHeaders](/microsoft-edge/webview2/reference/win32/icorewebview2httpresponseheaders)<!-- c# links to "" -->
+* [ICoreWebView2HttpResponseHeaders](/microsoft-edge/webview2/reference/win32/icorewebview2httpresponseheaders)<!-- c# links to "CoreWebView2HttpResponseHeaders Class" -->
 
 ---
 
@@ -951,19 +969,25 @@ Learn how to specify settings before WebView2 controls are created.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-<!-- TODO: C# links -->
+   * [Environment Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.environment)
+
+* [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [BrowserVersionString Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserversionstring)
+   * [NewBrowserVersionAvailable Event](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
+
+* [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)<!-- c# links to "" -->
-   * [get_Environment](/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_environment)<!-- c# links to "" -->
+* [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)<!-- c# links to "CoreWebView2 Class" -->
+   * [get_Environment](/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_environment)<!-- c# links to "Environment Property" -->
 
-* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)<!-- c# links to "" -->
-   * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)<!-- c# links to "" -->
-   * [get_BrowserVersionString](/microsoft-edge/webview2/reference/win32/icorewebview2environment#get_browserversionstring)<!-- c# links to "" -->
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)<!-- c# links to "CoreWebView2Environment Class" -->
+   * [add_NewBrowserVersionAvailable](/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable)<!-- c# links to "NewBrowserVersionAvailable Event" -->
+   * [get_BrowserVersionString](/microsoft-edge/webview2/reference/win32/icorewebview2environment#get_browserversionstring)<!-- c# links to "BrowserVersionString Property" -->
 
-* [ICoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions)<!-- c# links to "" -->
+* [ICoreWebView2EnvironmentOptions](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions)<!-- c# links to "CoreWebView2EnvironmentOptions Class" -->
 
 ---
 
@@ -979,30 +1003,41 @@ These APIS are used to set up the WebView2 rendering system in native apps.  For
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-<!-- TODO: C# links -->
+   * [NewWindowRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested)
+   * [remove_NewWindowRequested]()
+
+* [CoreWebView2CompositionController Class](/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller)
+
+* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [CoreWebView2 Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.corewebview2)
+
+* [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [CreateCoreWebView2ControllerAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)<!--CAUTION: 2 overloads of this method-->
+   * [CreateCoreWebView2CompositionControllerAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync)<!--CAUTION: 2 overloads of this method-->
+<!-- 
+   * [GetAutomationProviderForWindow Method]()  TODO: no C# link, ok? 
+-->
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
-   * [add_NewWindowRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested)<!-- c# links to "" -->
-   * [remove_NewWindowRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)<!-- c# links to "" -->
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_NewWindowRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested)<!-- c# links to "NewWindowRequested Event" -->
+   * [remove_NewWindowRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)<!-- c# links to "NewWindowRequested Event" -->
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" --> (Hosting-related settings for WebView) – app or WebView2 elements host WebView <!--TODO - move this comment, avoid text on API items here-->
-   * [get_CoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)<!-- c# links to "" -->
+* [ICoreWebView2CompositionController](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller)<!-- c# links to "CoreWebView2CompositionController Class" -->
 
-* [ICoreWebView2CompositionController](/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller)<!-- c# links to "" -->
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" --> (Hosting-related settings for WebView) – app or WebView2 elements host WebView <!--TODO - move this comment, avoid text on API items here-->
+   * [get_CoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_corewebview2)<!-- c# links to "CoreWebView2 Property" -->
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
+* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)<!-- c# links to "CoreWebView2Environment Class" -->
+   * [CreateCoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2environment#createcorewebview2controller)<!-- c# links to "CreateCoreWebView2ControllerAsync Method" -->
 
-* [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icorewebview2environment)<!-- c# links to "" -->
-   * [CreateCoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2environment#createcorewebview2controller)<!-- c# links to "" -->
+* [ICoreWebView2Environment3](/microsoft-edge/webview2/reference/win32/icorewebview2environment3)<!-- c# links to "CoreWebView2Environment Class" -->
+   * [CreateCoreWebview2CompositionController](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2compositioncontroller)<!-- c# links to "CreateCoreWebView2CompositionControllerAsync Method" -->
 
-* [ICoreWebView2Environment3](/microsoft-edge/webview2/reference/win32/icorewebview2environment3)<!-- c# links to "" -->
-   * [CreateCoreWebview2CompositionController](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2compositioncontroller)<!-- c# links to "" -->
-
-* [ICoreWebView2Environment4](/microsoft-edge/webview2/reference/win32/icorewebview2environment4)<!-- c# links to "" -->
-   * [GetAutomationProviderForWindow](/microsoft-edge/webview2/reference/win32/icorewebview2environment4#getautomationproviderforwindow)<!-- c# links to "" -->
+* [ICoreWebView2Environment4](/microsoft-edge/webview2/reference/win32/icorewebview2environment4)<!-- c# links to n/a -->
+   * [GetAutomationProviderForWindow](/microsoft-edge/webview2/reference/win32/icorewebview2environment4#getautomationproviderforwindow)<!-- c# links to n/a -->
 
 ---
 
@@ -1013,32 +1048,44 @@ See also:
 <!-- ------------------------------ -->
 ### WebView2 Properties (UI?)
 
+
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-<!-- TODO: C# links -->
+* [CoreWebView2BoundsMode Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2boundsmode)
+
+* [CoreWebView2Color Struct](/dotnet/api/microsoft.web.webview2.core.corewebview2color)
+
+* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [Bounds Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.bounds)
+   * [BoundsMode Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.boundsmode)
+   * [Close Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
+   * [DefaultBackgroundColor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.defaultbackgroundcolor)
+   * [IsVisible Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
+   * [SetBoundsAndZoomFactor Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.setboundsandzoomfactor)
+   * [ZoomFactor Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactor)
+   * [ZoomFactorChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
-   * [COREWEBVIEW2_BOUNDS_MODE](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_bounds_mode)<!-- c# links to "" -->
-   * [COREWEBVIEW2_COLOR](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_color)<!-- c# links to "" -->
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to n/a -->
+   * [COREWEBVIEW2_BOUNDS_MODE](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_bounds_mode)<!-- c# links to "CoreWebView2BoundsMode Enum" -->
+   * [COREWEBVIEW2_COLOR](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_color)<!-- c# links to "CoreWebView2Color Struct" -->
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
-   * [Close](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)<!-- c# links to "" -->
-   * [get_Bounds](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds)<!-- c# links to "" -->
-   * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "" -->
-   * [add_ZoomFactorChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged)<!-- c# links to "" -->
-   * [get_ZoomFactor](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_zoomfactor)<!-- c# links to "" -->
-   * [SetBoundsAndZoomFactor](/microsoft-edge/webview2/reference/win32/icorewebview2controller#setboundsandzoomfactor)<!-- c# links to "" -->
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [add_ZoomFactorChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_zoomfactorchanged)<!-- c# links to "ZoomFactorChanged Event" -->
+   * [Close](/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)<!-- c# links to "Close Method" -->
+   * [get_Bounds](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_bounds)<!-- c# links to "Bounds Property" -->
+   * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" -->
+   * [get_ZoomFactor](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_zoomfactor)<!-- c# links to "ZoomFactor Property" -->
+   * [SetBoundsAndZoomFactor](/microsoft-edge/webview2/reference/win32/icorewebview2controller#setboundsandzoomfactor)<!-- c# links to "SetBoundsAndZoomFactor Method" -->
 
-* [ICoreWebView2Controller2](/microsoft-edge/webview2/reference/win32/icorewebview2controller2)<!-- c# links to "" -->
-   * [get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)<!-- c# links to "" -->
-   * [put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)<!-- c# links to "" -->
+* [ICoreWebView2Controller2](/microsoft-edge/webview2/reference/win32/icorewebview2controller2)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [get_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor)<!-- c# links to "DefaultBackgroundColor Property" -->
+   * [put_DefaultBackgroundColor](/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)<!-- c# links to "DefaultBackgroundColor Property" -->
 
-* [ICoreWebView2Controller3](/microsoft-edge/webview2/reference/win32/icorewebview2controller3)<!-- c# links to "" -->
-   * [get_BoundsMode](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)<!-- c# links to "" -->
+* [ICoreWebView2Controller3](/microsoft-edge/webview2/reference/win32/icorewebview2controller3)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [get_BoundsMode](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)<!-- c# links to "BoundsMode Property" -->
 
 ---
 
@@ -1054,35 +1101,54 @@ All tasks related to the management of a window.
 # [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-<!-- TODO: C# links -->
+   * [WindowCloseRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.windowcloserequested)
+
+* [CoreWebView2MoveFocusReason Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusreason)
+
+* [CoreWebView2NewWindowRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs)
+
+* [CoreWebView2WindowFeatures Class](/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures)
+
+* [CoreWebView2MoveFocusRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs)
+
+* [CoreWebview2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [BoundsMode Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.boundsmode)
+   * [GotFocus Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.gotfocus)
+   * [LostFocus Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.lostfocus)
+   * [MoveFocus Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocus)
+   * [MoveFocusRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocusrequested)
+   * [NotifyParentWindowPositionChanged Method](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.notifyparentwindowpositionchanged)
+   * [ParentWindow Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.parentwindow)
+   * [RasterizationScaleChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscalechanged)
+   * [ShouldDetectMonitorScaleChanges Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.shoulddetectmonitorscalechanges)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
-   * [add_WindowCloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested)<!-- c# links to "" -->
-   * [remove_WindowCloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_windowcloserequested)<!-- c# links to "" -->
-   * [COREWEBVIEW2_MOVE_FOCUS_REASON](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_move_focus_reason)<!-- c# links to "" -->
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
+   * [add_WindowCloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested)<!-- c# links to "WindowCloseRequested Event" -->
+   * [remove_WindowCloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_windowcloserequested)<!-- c# links to "WindowCloseRequested Event" -->
+   * [COREWEBVIEW2_MOVE_FOCUS_REASON](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_move_focus_reason)<!-- c# links to "CoreWebView2MoveFocusReason Enum" -->
 
-* [ICoreWebView2NewWindowRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs)<!-- c# links to "" -->
+* [ICoreWebView2NewWindowRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs)<!-- c# links to "CoreWebView2NewWindowRequestedEventArgs" -->
 
-* [ICoreWebView2WindowFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures)<!-- c# links to "" -->
+* [ICoreWebView2WindowFeatures](/microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures)<!-- c# links to "CoreWebView2WindowFeatures Class" -->
 
-* [ICoreWebView2MoveFocusRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs)<!-- c# links to "" -->
+* [ICoreWebView2MoveFocusRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs)<!-- c# links to "CoreWebView2MoveFocusRequestedEventArgs Class" -->
 
-* [ICoreWebview2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
-   * [add_GotFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_gotfocus)<!-- c# links to "" -->
-   * [add_LostFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_lostfocus)<!-- c# links to "" -->
-   * [add_MoveFocusRequested](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested)<!-- c# links to "" -->
-   * [MoveFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#movefocus)<!-- c# links to "" -->
-   * [get_ParentWindow](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_parentwindow)<!-- c# links to "" -->
-   * [NotifyParentWindowPositionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller#notifyparentwindowpositionchanged)<!-- c# links to "" -->
+* [ICoreWebview2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebview2Controller Class" -->
+   * [add_GotFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_gotfocus)<!-- c# links to "GotFocus Event" -->
+   * [add_LostFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_lostfocus)<!-- c# links to "LostFocus Event" -->
+   * [add_MoveFocusRequested](/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested)<!-- c# links to "MoveFocusRequested Event" -->
+   * [get_ParentWindow](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_parentwindow)<!-- c# links to "ParentWindow Property" -->
+   * [MoveFocus](/microsoft-edge/webview2/reference/win32/icorewebview2controller#movefocus)<!-- c# links to "MoveFocus Method" -->
+   * [NotifyParentWindowPositionChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller#notifyparentwindowpositionchanged)<!-- c# links to "NotifyParentWindowPositionChanged Method" -->
 
-* [ICoreWebView2Controller3](/microsoft-edge/webview2/reference/win32/icorewebview2controller3)<!-- c# links to "" -->
-   * [add_RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#add_rasterizationscalechanged)<!-- c# links to "" -->
-   * [get_BoundsMode](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)<!-- c# links to "" -->
-   * [get_ShouldDetectMonitorScaleChanges](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_shoulddetectmonitorscalechanges)<!-- c# links to "" -->
-   * [remove_RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#remove_rasterizationscalechanged)<!-- c# links to "" -->
+* [ICoreWebView2Controller3](/microsoft-edge/webview2/reference/win32/icorewebview2controller3)<!-- c# links to "CoreWebview2Controller Class" -->
+   * [add_RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#add_rasterizationscalechanged)<!-- c# links to "RasterizationScaleChanged Event" -->
+   * [get_BoundsMode](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode)<!-- c# links to "BoundsMode Property" -->
+   * [get_ShouldDetectMonitorScaleChanges](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_shoulddetectmonitorscalechanges)<!-- c# links to "ShouldDetectMonitorScaleChanges Property" -->
+   * [remove_RasterizationScaleChanged](/microsoft-edge/webview2/reference/win32/icorewebview2controller3#remove_rasterizationscalechanged)<!-- c# links to "RasterizationScaleChanged Event" -->
 
 ---
 
@@ -1169,21 +1235,26 @@ See also:
 
 Learn how to work with the mouse for input on a WebView2 control.
 
+
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-<!-- TODO: C# links -->
+* [CoreWebView2PointerEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2pointereventkind)
+
+* [CoreWebView2PointerInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo)
+
+* [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
+   * [CreateCoreWebView2PointerInfo Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "" -->
-   * [COREWEBVIEW2_POINTER_EVENT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_pointer_event_kind)<!-- c# links to "" -->
+* [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to n/a -->
+   * [COREWEBVIEW2_POINTER_EVENT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_pointer_event_kind)<!-- c# links to "CoreWebView2PointerEventKind Enum" -->
 
-* [ICoreWebView2PointerInfo](/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)<!-- c# links to "" -->
+* [ICoreWebView2PointerInfo](/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)<!-- c# links to "CoreWebView2PointerInfo Class" -->
 
-* [ICoreWebView2Environment3](/microsoft-edge/webview2/reference/win32/icorewebview2environment3)<!-- c# links to "" -->
-   * [CreateCoreWebView2PointerInfo](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)<!-- c# links to "" -->
+* [ICoreWebView2Environment3](/microsoft-edge/webview2/reference/win32/icorewebview2environment3)<!-- c# links to "CoreWebView2Environment Class" -->
+   * [CreateCoreWebView2PointerInfo](/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)<!-- c# links to "CreateCoreWebView2PointerInfo Method" -->
 
 ---
 
@@ -1250,17 +1321,16 @@ Learn how to handle performance related events for WebView2 controls.
 
 # [C#](#tab/c-sharp)
 
-<!-- TODO: member links & c# mapping comments in cpp section -->
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-   * [IsSuspended Property]()
-   * [Resume Method]()
-   * [TrySuspendAsync Method]()
-   * [OpenTaskManagerWindow Method]()
+   * [IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
+   * [Resume Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
+   * [TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
+   * [OpenTaskManagerWindow Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow)
 
 * [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
-   * [IsVisible Property]()
+   * [IsVisible Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
 
-* [CoreWebView2Settings Class]()
+* [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsBuiltInErrorPageEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled) <!--TODO: clarify note: (probs for navigation and process)-->
 
 <!-- TODO: MemoryUsageTargetLevel not found in C#--> -->
@@ -1268,22 +1338,24 @@ Learn how to handle performance related events for WebView2 controls.
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "" -->
-   * [get_IsSuspended](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "" -->
-   * [Resume](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)<!-- c# links to "" -->
-   * [TrySuspend](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)<!-- c# links to "" -->
+* [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "CoreWebView2 Class" -->
+   * [get_IsSuspended](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "IsSuspended Property" -->
+   * [Resume](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)<!-- c# links to "Resume Method" -->
+   * [TrySuspend](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)<!-- c# links to "TrySuspendAsync Method" -->
 
-*  [ICoreWebView2_6](/microsoft-edge/webview2/reference/win32/icorewebview2_6)<!-- c# links to "" -->
-   * [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)<!-- c# links to "" -->
+*  [ICoreWebView2_6](/microsoft-edge/webview2/reference/win32/icorewebview2_6)<!-- c# links to "CoreWebView2 Class" -->
+   * [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)<!-- c# links to "OpenTaskManagerWindow Method" -->
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "" -->
-   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "" -->
+* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
+   * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" -->
+<!-- TODO: linked to get as well as put, bc more info.  check docx, not there, added bc in article or per SME? -->
 
-* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)<!-- c# links to "" -->
-   * [put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)<!-- c# links to "" -->
+* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)<!-- c# links to "" - prop not found -->
+   * [put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)<!-- c# links to "" - not found -->
 
-*  [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "" -->
-   * [get_IsBuiltInErrorPageEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled)<!-- c# links to "" --> <!--TODO: clarify note: (probs for navigation and process)-->
+*  [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings Class" -->
+   * [get_IsBuiltInErrorPageEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled)<!-- c# links to "IsBuiltInErrorPageEnabled Property" --> <!--TODO: clarify note: (probs for navigation and process)-->
 
 ---
 
