@@ -60,7 +60,10 @@ For more information, see these other sections in this page:
 <!-- ====================================================================== -->
 ## The Composited Layers tab
 
-In the Composited Layers view, the 3D canvas displays the rendered webpage, including colors and images.
+
+In the Composited Layers view, the 3D canvas displays the list of layers created by the browser rendering engine for the webpage.
+
+Use the Composited Layers view to analyze how many layers are created by your CSS code, how big they are, and how often they change.
 
 On the 3D canvas on the right, select an element of the webpage.  In the **Composited Layers** tab, the layers tree expands automatically, and the **Details** tab below the layers tree shows information about the selected layer.
 
@@ -86,9 +89,9 @@ Renders the content from the webpage (color or image file) onto the elements.
 
 
 <!-- ===== -->
-### DOM expander tree
+### Layers expander tree
 
-Expand this tree to display DOM tree information about the selected DOM element.
+Expand this tree to display the list of composited layers. Click on a layer to review detailed information about it in the Details info pane.
 
 
 <!-- ===== -->
@@ -96,19 +99,19 @@ Expand this tree to display DOM tree information about the selected DOM element.
 
 #### Size
 
-The width and then the height of the selected DOM element, along with the location of the upper left of the element relative to the upper left of the page viewport.  For example, "1034 x 28055 (at 0, 0)".
+The width and then the height of the selected composited layer, along with the location of the upper left of the layer relative to the upper left of the page viewport.  For example, "1034 x 28055 (at 0, 0)".
 
 #### Compositing Reasons
 
-Reasons for the layer-compositing of the selected DOM element, if any compositing is done.  For example: "Secondary layer, to house contents that can be scrolled."
+Reasons why the browser rendering engine created the layer.  For example: "Secondary layer, to house contents that can be scrolled."
 
 #### Memory estimate
 
-The memory consumed for the selected DOM element and its children.  For example: "116 MB".
+The memory consumed for the selected layer.  For example: "116 MB".
 
-<!-- #### Paint count -->
+#### Paint count
 
-<!-- need desc -->
+How many times the selected layer was painted by the rendering engine.
 
 <!-- #### Slow scroll regions -->
 
