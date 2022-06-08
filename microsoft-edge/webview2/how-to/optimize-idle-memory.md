@@ -123,7 +123,10 @@ In contrast to memory usage target, suspension requires that your WebView2 be hi
 
 Suspension is a powerful feature to minimize the impact of your application, but there are some constraints on when it can be used and what web features are limited when web content is suspended.
 
-WebView2's suspension functionality is built on-top of Microsoft Edge's sleeping tabs feature.  You can see details on what might prevent an app from entering suspension in the Sleeping Tabs FAQ.
+WebView2's suspension functionality is built on-top of Microsoft Edge's sleeping tabs feature.  You can see details on what might prevent an app from entering suspension in the [Sleeping tabs FAQ](https://techcommunity.microsoft.com/t5/articles/sleeping-tabs-faq/m-p/1705434).
+
+`TrySuspend` is a cross-browser feature and a cross-browser API.  This API leverages Edge's Sleeping Tabs; see [Sleeping Tabs in Microsoft Edge: Delivering better browser performance](https://blogs.windows.com/msedgedev/2020/12/09/sleeping-tabs-beta-performance/).
+
 
 #### API Reference and sample code
 
@@ -151,11 +154,11 @@ WebView2's suspension functionality is built on-top of Microsoft Edge's sleeping
 
 ---
 
-This is a cross-browser feature and a cross-browser API.  This API leverages Edge's Sleeping Tabs.  At the Microsoft Edge Blog, see [Sleeping Tabs in Microsoft Edge: Delivering better browser performance](https://blogs.windows.com/msedgedev/2020/12/09/sleeping-tabs-beta-performance/).
-
 
 <!-- ====================================================================== -->
 ## API Reference overview
+
+The following APIs are mentioned in this article.
 
 # [C#](#tab/c-sharp)
 
@@ -163,7 +166,7 @@ This is a cross-browser feature and a cross-browser API.  This API leverages Edg
    * [IsSuspended Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
    * [Resume Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
    * [TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
-   * [MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)<!-- read both .net & c++ remarks on "same" equiv prop -->
+   * [MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)
 
 * [CoreWebView2Controller Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
    * [IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
@@ -184,7 +187,7 @@ This is a cross-browser feature and a cross-browser API.  This API leverages Edg
 
 ---
 
-Tip: See Remarks in the API Reference pages for both languages.
+Tip: See the API Reference for both languages.
 
 
 <!-- ====================================================================== -->
