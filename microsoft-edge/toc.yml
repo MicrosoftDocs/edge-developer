@@ -1150,8 +1150,8 @@
             #       href: webview2/how-to/customize-ui.md
             #       displayName: context menu, right-click menu
 
-            - name: Optimize background memory usage
-              href: webview2/concepts/background-memory.md
+            - name: Optimize idle memory usage
+              href: webview2/how-to/optimize-idle-memory.md
               displayName: 
 
             - name: Customize context menus
