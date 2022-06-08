@@ -132,6 +132,11 @@
               href: devtools-guide-chromium/experimental-features/focus-mode.md
               displayName: Experimental features, Focus Mode
 
+            # TODO: Change Toaster to its final name when we have it, and fine tune the page title
+            - name: Streamline your workflows with the Toaster
+              href: devtools-guide-chromium/experimental-features/toaster.md
+              displayName: Experimental features, Toaster
+
 # TOOLS =======================================================================
         - name: Tools
           items:
