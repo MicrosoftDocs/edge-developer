@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/19/2021
+ms.date: 06/07/2022
 ---
 # Get started with Progressive Web Apps
 
@@ -19,6 +19,9 @@ In this overview of PWA basics, you create a simple web app and extend it as a P
 
 > [!TIP]
 > You can use [PWABuilder](https://www.pwabuilder.com) to create a new PWA, enhance your existing PWA, or package your PWA for app stores.
+
+<!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
+To install or run a PWA on Windows, see [Installing a PWA](../ux.md#installing-a-pwa) in _The user experience of PWAs_.
 
 
 <!-- ====================================================================== -->
