@@ -48,14 +48,14 @@ Indicating the visibility state of your app as "not visible" might not be desira
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
-   * [IsVisible Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
+* [CoreWebView2Controller Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
-   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
-   * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" -->
+* [ICoreWebView2Controller](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [put_IsVisible](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
+   * [get_IsVisible](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" -->
 
 ---
 
@@ -91,13 +91,13 @@ A simple use-case for this might be to move to a low-memory state after your app
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-   * [MemoryUsageTargetLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)
+* [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)<!-- c# links to "" - prop not found -->
-   * [put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)<!-- c# links to "MemoryUsageTargetLevel Property" -->
+* [ICoreWebView2Experimental5](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)<!-- c# links to "" - prop not found -->
+   * [put_MemoryUsageTargetLevel](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)<!-- c# links to "MemoryUsageTargetLevel Property" -->
 
 ---
 
@@ -129,25 +129,25 @@ WebView2's suspension functionality is built on-top of Microsoft Edge's sleeping
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-   * [IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
-   * [Resume Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
-   * [TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
+* [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [IsSuspended Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
+   * [Resume Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
+   * [TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
 
-* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
-   * [IsVisible Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
+* [CoreWebView2Controller Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
 
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "CoreWebView2 Class" -->
-   * [get_IsSuspended](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "IsSuspended Property" -->
-   * [Resume](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)<!-- c# links to "Resume Method" -->
-   * [TrySuspend](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)<!-- c# links to "TrySuspendAsync Method" -->
+* [ICoreWebView2_3](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "CoreWebView2 Class" -->
+   * [get_IsSuspended](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "IsSuspended Property" -->
+   * [Resume](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)<!-- c# links to "Resume Method" -->
+   * [TrySuspend](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)<!-- c# links to "TrySuspendAsync Method" -->
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
-   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
-   * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" --><!-- more info than put -->
+* [ICoreWebView2Controller](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [put_IsVisible](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
+   * [get_IsVisible](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" --><!-- more info than put -->
 
 ---
 
@@ -159,28 +159,28 @@ This is a cross-browser feature and a cross-browser API.  This API leverages Edg
 
 # [C#](#tab/c-sharp)
 
-* [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-   * [IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
-   * [Resume Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
-   * [TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
-   * [MemoryUsageTargetLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)<!-- read both .net & c++ remarks on "same" equiv prop -->
+* [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
+   * [IsSuspended Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
+   * [Resume Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
+   * [TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
+   * [MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)<!-- read both .net & c++ remarks on "same" equiv prop -->
 
-* [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
-   * [IsVisible Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
+* [CoreWebView2Controller Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
+   * [IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
 
 # [C++](#tab/cpp)
 
-* [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "CoreWebView2 Class" -->
-   * [get_IsSuspended](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "IsSuspended Property" -->
-   * [Resume](/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)<!-- c# links to "Resume Method" -->
-   * [TrySuspend](/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)<!-- c# links to "TrySuspendAsync Method" -->
+* [ICoreWebView2_3](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "CoreWebView2 Class" -->
+   * [get_IsSuspended](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "IsSuspended Property" -->
+   * [Resume](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)<!-- c# links to "Resume Method" -->
+   * [TrySuspend](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)<!-- c# links to "TrySuspendAsync Method" -->
 
-* [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
-   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
-   * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" -->
+* [ICoreWebView2Controller](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
+   * [put_IsVisible](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
+   * [get_IsVisible](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" -->
 
-* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)
-    * [put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)
+* [ICoreWebView2Experimental5](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)
+    * [put_MemoryUsageTargetLevel](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)
 
 ---
 
