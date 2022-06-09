@@ -32,13 +32,13 @@ To add and manage users in the Microsoft Edge program to manage extensions, you 
 <!-- ====================================================================== -->
 ## Before you begin
 
-To submit an extension to the Microsoft Edge Add-ons website, you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at Partner Center.  To register for the Microsoft Edge program, you need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to log in to Partner Center - dialog boxes help you automatically create a Microsoft account (MSA).
+To submit an extension to the Microsoft Edge Add-ons website, you must be registered as a developer with the Microsoft Edge program.  You register for the Microsoft Edge program at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  To register for the Microsoft Edge program, you need a Microsoft account (MSA).  If you don't have a Microsoft account (MSA), create one.  One way to create a Microsoft account (MSA) is to use your existing GitHub account to log in to Partner Center. Follow the prompts displayed in the dialog boxes to automatically create a Microsoft account (MSA).
 
 > [!NOTE]
 > There is no registration fee for submitting extensions to the Microsoft Edge program.
 
 If you don't have a Partner Center account, or you have a Partner Center account but its Primary Owner isn't a Microsoft account (MSA), you must either:
-*  Use an existing Microsoft account (MSA)) to register with the Microsoft Edge program.
+*  Use an existing Microsoft account (MSA) to register with the Microsoft Edge program.
 *  Create a new Microsoft account (MSA).  A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account.
 
 To create a Microsoft account (MSA):
@@ -51,10 +51,9 @@ To create a Microsoft account (MSA):
 
 1. Complete the registration steps.
 
-If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that a Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
+If you have a Partner Center account for which the Primary Owner is a Microsoft account (MSA), use that Microsoft account (MSA) to sign into your Partner Center account.  Then enroll in the Microsoft Edge program.
 
-> [!NOTE]
-> The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
+Note that The Microsoft Edge program doesn't currently support registering with a work or school account.  You must register using a Microsoft account (MSA) and then link your Azure AD tenants with that account, to be able to manage extensions.
 
 
 <!-- ====================================================================== -->
@@ -82,7 +81,7 @@ Fill in the fields of the registration form as follows.
 
 ### Account country/region
 
-This field is either where you live or your business is located.
+This field is either where you live, or where your business is located.
 
 > [!IMPORTANT]
 > After enrollment, the value of this field is read-only.
@@ -96,18 +95,17 @@ The Microsoft Edge program in [Partner Center](https://partner.microsoft.com/das
 
 #### Individual account
 
-An individual account is appropriate for a developer not associated with a company.  The account verification process is shorter, and involves verifying that the publisher display name is available.
+An individual account is appropriate for a developer not associated with a company.  The account verification process is shorter and involves verifying that the publisher display name is available.
 
 #### Company account
 
-A company account is associated with an organization or business.  The account verification process is longer, and involves confirmation that you are authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
+A company account is associated with an organization or business.  The account verification process is longer and involves confirmation that you are authorized to create the account for your company.  The duration of the process can range from a few days to a few weeks.  Your company might receive phone calls from Microsoft verification partners.
 
-> [!IMPORTANT]
-> As a company account, verifying your Microsoft Edge program information when you enroll into a new Partner Center program is crucial to publish extensions to the Microsoft Edge Add-ons store. See [Verify your Microsoft Edge Partner Center program information](verify-microsoft-edge-program.md).
+For a company account, it is crucial to verify your Microsoft Edge program information when you enroll into a new Partner Center program. This is required to publish extensions to the Microsoft Edge Add-ons store. See [Verify your Microsoft Edge Partner Center program information](verify-microsoft-edge-program.md).
 
 ### Publisher display name
 
-This field contains the name that's displayed in the Microsoft Edge Add-ons website.  To use a particular name, that name must be available and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
+This field contains the name that's displayed in the Microsoft Edge Add-ons website.  To use a particular name, that name must be available, and you must have the rights to use it.  Company accounts must use the registered business name of your organization.
 
 The maximum length for this field is fifty (50) characters.
 

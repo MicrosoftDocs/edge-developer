@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/31/2022
+ms.date: 06/09/2022
 ---
 # Verify the company account information associated with your Microsoft Partner Center account
 <!-- 
@@ -21,18 +21,65 @@ You can go to [Legal info](https://partner.microsoft.com/dashboard/account/v3/or
 
 When account verification is complete, you can use your Partner Center dashboard to publish your extension to the Microsoft Edge Add-ons website.
 
-> [!NOTE]
-> Verification usually takes 3-5 business days. If more than five days have passed, you can contact support for assistance.
+Verification usually takes three to five business days. If more than five days have passed, you can contact [Microsoft Edge Extensions support](/microsoft-edge/extensions-chromium/publish/contact-extensions-team/) for assistance.
 
 
 <!-- ====================================================================== -->
 ## What is verified and what is required for a company account?
 
-| Type of verification | What's verified | Suggestions |
-|---|---|---|
-| Email ownership | Email ownership verifies that the primary contact (primary email) address is valid. <br> * The primary contact email address must be a work account that is monitored and can send/receive email. <br> * Avoid using a personal email address not associated with the company domain, or a tenant user credential not associated with email. (For example, jsmith@testcompany.onmicrosoft.com or abc@gmail.com). | Be sure to flag email from Microsoft.com as a **safe** domain, and check junk email folders. <br> <br> If you don't receive the email ownership verification email message within one business day, you can ask us to send the email again. On to your Partner Center account, go to **Home > Account settings**. On the **Account settings l My profile** page, select **Resend verification email**. |
-| Employment | Employment verification confirms that your primary contact is an employee of the enrolling company and that the domain entered in the registration form belongs to the enrolling company <br> * The company's public website has the same domain as entered in the registration form. <br> *   The contact has an active email address on an email domain owned by the company. |  For verification proof, you may submit a screenshot of the website showing name, address, contact information, and domain of the organization. <br> <br> If employment verification is rejected, or if the domain of the registered email is not the same as the employer's public domain, you must provide documentation ***confirming your email domain is under the ownership of your employer***. <br> <br> * Assignment letter from an authorized representative of the organization. <br> * Domain ownership records, such as [whois](https://www.whois.com/whois). <br> * Domain purchase invoices or registry confirmation records. |
-| Business | Business verification confirms that the enrolling company is a legitimate business entity and at the stated address. | Submit one of the following documents for business verification: <br> * Formation documents, such as articles of incorporation, partnership deed. <br> * Franchise or agency appointment letters. <br> * Government issued letter, license, business registration, or tax registration certificate. <br> * Lease or tenancy documents. <br> * Letter or statement from a financial institution or a utility company. <br> * Record on a Government registry website.The site/link must be displayed. <br> * Stock exchange filings or tax filing records. <br> * External company databases, such as Dun & Bradstreet (DUNS ID) or state registry. <br> * Receipt from the company's home country, municipality. <br> <br> **Note:** Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) have no spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external data sources: external company databases, such as Dun & Bradstreet (DUNS ID) or state registry. <br> <br> Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it is located at the address provided. For further assistance, go to your profile page to upload additional proofs through the [interactive vetting experience](#checking-your-verification-status) |
+This section describes the types of verification, what is verified, and suggestions for meeting verification requirements.
+
+### Verify Email ownership
+
+Email ownership verifies that the primary contact (primary email) address is valid.
+
+* The primary contact email address must be a work account that is monitored and can send/receive email.
+* Avoid using a personal email address not associated with the company domain, or a tenant user credential not associated with email. For example, jsmith@testcompany on microsoft.com, or abc@gmail.com.
+
+#### Suggestions
+
+Be sure to flag email from Microsoft.com as a **safe** domain, and check junk email folders.
+
+If you don't receive the email ownership verification email message within one business day, you can ask us to send the email again. On to your Partner Center account, go to **Home > Account settings**. On the **Account settings \| My profile** page, select **Resend verification email**.
+
+### Verify Employment
+
+Employment verification confirms that your primary contact is an employee of the enrolling company and that the domain entered in the registration form belongs to the enrolling company.
+
+* The company's public website has the same domain as entered in the registration form.
+* The contact has an active email address on an email domain owned by the company.
+
+#### Suggestions
+
+For verification proof, you may submit a screenshot of the website showing name, address, contact information, and domain of the organization.
+
+If employment verification is rejected, or if the domain of the registered email is not the same as the employer's public domain, you must provide documentation ***confirming your email domain is under the ownership of your employer***, in the form of:
+
+* Assignment letter from an authorized representative of the organization.
+* Domain ownership records, such as [whois](https://www.whois.com/whois).
+* Domain purchase invoices or registry confirmation records.
+
+### Verify Business
+
+Business verification confirms that the enrolling company is a legitimate business entity and at the stated address.
+
+#### Suggestions
+
+Submit one of the following documents for business verification:
+
+* Formation documents, such as articles of incorporation, partnership deed.
+* Franchise or agency appointment letters.
+* Government issued letter, license, business registration, or tax registration certificate.
+* Lease or tenancy documents.
+* Letter or statement from a financial institution or a utility company.
+* Record on a Government registry website. The site/link must be displayed.
+* Stock exchange filings or tax filing records.
+* External company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
+* Receipt from the company's home country, municipality.
+
+Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) have no spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
+
+Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it is located at the address provided. For further assistance, go to your profile page to upload additional proofs through the [interactive vetting experience](#checking-your-verification-status) |
 
 
 <!-- ====================================================================== -->
@@ -41,8 +88,10 @@ When account verification is complete, you can use your Partner Center dashboard
 You can check verification status at Partner Center in **[Account Settings | Legal Info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)**, where you can see:
 
 1. One or more tabs such as **Partner**, **Developer**, or **Reseller**, depending on the programs in which your organization is enrolled.
-1. Your verification status: **Pending**, **Accepted**, or **Rejected**, with a status icon.
+1. The **Developer** tab includes the **Account details** progress bar showing the stages of verification and any pending stages.
+1. Your verification status: **Pending**, **Authorized/Accepted**, or **Action Required/Rejected**, with a status icon.
 1. The **Legal business profile** progress bar with an information icon you can select to get more information.
+1. A **Fix now** button to begin resolving verification issues.
 
 
 <!-- ====================================================================== -->
@@ -52,9 +101,9 @@ There are three possible results when you check your verification status:
 
 *   **Authorized/Accepted**: The information you submitted was verified, and you're notified of your acceptance into the program. No further action is required.
 
-*   **Pending**: The verification process has started but isn't complete. No action is required. You can monitor verification status at Account Settings | Legal Info. Verification usually takes 3-5 business days.
+*   **Pending**: The verification process has started but isn't complete. If you have completed the email verification step, no additional action is required on your part. You can monitor verification status at Account Settings | Legal Info. Verification usually takes three to five business days.
 
-*   **Action Required/Rejected**: The information you submitted couldn't be verified. The reason and instructions for [how to appeal](#appealing-a-rejected-application) appear in the Account Verification pane.
+*   **Action Required/Rejected**: The information you submitted couldn't be verified. The reason, and instructions for how to appeal, appear in the **Account Verification** pane. See [Appealing a rejected application](#appealing-a-rejected-application), below.
 
 
 <!-- ====================================================================== -->
@@ -72,15 +121,14 @@ The amount of time required to review an appeal varies. You can return to **[Acc
 ![Account Settings | Legal Info](media/account-settings-legal-info-microsoft-edge-partner-center.png)
 
 
-<!-- ====================================================================== -->
 > [!NOTE]
-> Switching back to single account from an enterprise account is not possible. Refer to the documentations to make an informed decision.
+> Switching back to an individual account from an enterprise account is not possible. Refer to the documentation to make an informed decision.
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
-To display your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
+To view your verification status, go to [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and then select **Account settings**.  Continue to build, test, and prepare your submissions while you wait for the verification process to complete.
 
 *  [Publish an extension](publish-extension.md)
 
