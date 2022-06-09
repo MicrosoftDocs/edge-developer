@@ -25,7 +25,7 @@ Audience: App developers who are curious about the WebView2 technology and would
 This article categorizes the WebView2 interfaces, at a high level, for WebView2.  This article also lists selected members of interfaces.  These interfaces contain properties, methods, and events that span multiple categories in this article:
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
 * [CoreWebView2Controller Class](/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
@@ -33,7 +33,7 @@ This article categorizes the WebView2 interfaces, at a high level, for WebView2.
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
 * [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)
@@ -65,10 +65,12 @@ The following are the main APIs for communicating between web and native code.
 
 
 <!-- ------------------------------ -->
-
 ### Host / Web Object Sharing
 
-# [C#](#tab/c-sharp)
+<!-- define object sharing.  selected methods on a host platform can be called by web-side by sharing specified objects. -->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [AddHostObjectToScript Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
@@ -76,7 +78,8 @@ The following are the main APIs for communicating between web and native code.
 * [CoreWebView2Settings](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [AreHostObjectsAllowed Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
 
-# [C++](#tab/cpp)
+
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!--c# links to "CoreWebView2 Class"-->
    * [AddHostObjectToScript](/microsoft-edge/webview2/reference/win32/icorewebview2#addhostobjecttoscript)<!--c# links to same name-->
@@ -84,33 +87,54 @@ The following are the main APIs for communicating between web and native code.
 * [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings" -->
    * [get_AreHostObjectsAllowed](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_arehostobjectsallowed)<!-- c# links to "AreHostObjectsAllowed Property" -->
 
-<!-- ====================================================================== -->
+---
 
+
+<!-- ------------------------------ -->
 ### Script Execution
 
-# [C#](#tab/c-sharp)
+<!-- what kind of script, any JavaScript statements/objects/methods?  Where is the script executed?  what's this heading referring to? -->
+
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
-   * [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptasync?view=webview2-dotnet-1.0.1210.39#microsoft-web-webview2-core-corewebview2-executescriptasync(system-string))
+   * [ExecuteScriptAsync](/dotnet/api/microsoft.web.webview2.core.corewebview2.executescriptasync)
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsScriptEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isscriptenabled)
 
-# [C++](#tab/cpp)
+
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
-   * [ExecuteScript](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1210.39#executescript)
+   * [ExecuteScript](/microsoft-edge/webview2/reference/win32/icorewebview2#executescript)
 <!-- c# links to "CoreWebView2 Class" -->
 
 * [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)
    * [put_IsScriptEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)<!-- c# links to "IsScriptEnabled Property" -->
    * [get_IsScriptEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled)<!-- c# links to "IsScriptEnabled Property" -->
 
-<!-- ====================================================================== -->
+---
 
+
+<!-- ------------------------------ -->
 ### Web Messaging
 
-# [C#](#tab/c-sharp)
+<!-- what is "web messaging"?  sending messages from wv2 control to http server, then handling the response from the server.  the host app uses the wv2 ctrl to send msgs to http server.  why is messaging needed for a hybrid/web app?  what's involved, in summary? -->
+
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [PostWebMessageAsJson Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.postwebmessageasjson)
@@ -120,7 +144,8 @@ The following are the main APIs for communicating between web and native code.
 * [CoreWebView2Settings](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsWebMessageEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.iswebmessageenabled)
 
-# [C++](#tab/cpp)
+
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!--c# links to "CoreWebView2 Class"-->
    * [add_WebMessageReceived](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived)<!-- c# links to "WebMessageReceived Event" -->
@@ -133,23 +158,31 @@ The following are the main APIs for communicating between web and native code.
 
 * [ICoreWebView2WebMessageReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs)<!-- c# links to "WebMessageReceived Event" -->
 
-<!-- ====================================================================== -->
+---
 
+
+<!-- ------------------------------ -->
 ### Script Dialogs
-You can use this to manage different JavaScript dialogs to supress or replace them with custom dialogs.
 
-# [C#](#tab/c-sharp)
+You can use this to manage different JavaScript dialogs to suppress or replace them with custom dialogs.
+
+<!-- See also: -->
+For more information, see:
+* Script dialogs - TODO: link avail?
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [ScriptDialogOpening Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening)
    * [CoreWebView2ScriptDialogKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogkind)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
-   * [add_ScriptDialogOpening](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1210.39#add_scriptdialogopening)
-   * [remove_ScriptDialogOpening](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-1.0.1210.39#remove_scriptdialogopening)
+   * [add_ScriptDialogOpening](/microsoft-edge/webview2/reference/win32/icorewebview2#add_scriptdialogopening)
+   * [remove_ScriptDialogOpening](/microsoft-edge/webview2/reference/win32/icorewebview2#remove_scriptdialogopening)
    * [COREWEBVIEW2_SCRIPT_DIALOG_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_script_dialog_kind)<!--c# links to CoreWebView2ScriptDialogKind Enum-->
 <!-- c# links to "CoreWebView2 Class" -->
 
@@ -157,10 +190,6 @@ You can use this to manage different JavaScript dialogs to supress or replace th
 <!-- c# links to "ScriptDialogOpening Event" -->
 
 ---
-
-See also:
-<!--* []()-->
-* Script dialogs - TODO: link avail?
 
 
 <!-- ====================================================================== -->
@@ -174,7 +203,12 @@ This section covers features inherited from the browser and available in a WebVi
 
 You can configure custom print settings and print to PDF.  
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [PrintToPdfAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync)
@@ -186,8 +220,7 @@ You can configure custom print settings and print to PDF.
 
 * [CoreWebView2PrintSettings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
 
-
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)
    * [COREWEBVIEW2_PRINT_ORIENTATION](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_print_orientation)<!-- c# links to "CoreWebView2PrintOrientation Enum" -->
@@ -202,16 +235,18 @@ You can configure custom print settings and print to PDF.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Cookies
 
 You can use cookies in WebView2 to manage user sessions, store user personalization preferences, and track user behavior.
+<!-- what's cookies, what are they used for, what should your app do with them.  cookies are used for local storage of app state such as login, queries, ... to use cookies, your wv2 host app -->
 
-# [C#](#tab/c-sharp)
+See also:
+* [View, edit, and delete cookies](/microsoft-edge/devtools-guide-chromium/storage/cookies)
+<!-- no WebView2 page with "cookie" in title -->
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [CookieManager Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cookiemanager#microsoft-web-webview2-core-corewebview2-cookiemanager)
@@ -225,7 +260,7 @@ You can use cookies in WebView2 to manage user sessions, store user personalizat
 * [CoreWebView2CookieSameSiteKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2cookiesamesitekind)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 *  [ICoreWebView2Cookie](/microsoft-edge/webview2/reference/win32/icorewebview2cookie)<!-- c# links to "CoreWebView2Cookie Class" -->
 
@@ -241,27 +276,28 @@ You can use cookies in WebView2 to manage user sessions, store user personalizat
 
 ---
 
-See also:
-* [View, edit, and delete cookies](/microsoft-edge/devtools-guide-chromium/storage/cookies)
-<!-- no WebView2 page with "cookie" in title -->
-
 
 <!-- ------------------------------ -->
 ### Image capture
 
 You can configure capturing screenshots.
-<!-- Capturing images using the key press combination `Ctrl`+`Shift`+`S` (TODO: confirm)macOS too -->
+<!-- benefit?  why do this?  
+This way, when your wv2 app is running and the user presses Alt+PrtScn, XYZ will ... -->
+<!-- Capturing images using the key press combination `Ctrl`+`Shift`+`S` (TODO: confirm)  state macOS key combination too -->
 
+<!--
+See also:
+* []()
+-->
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [CapturePreviewAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.capturepreviewasync)
 
 * [CoreWebView2CapturePreviewImageFormat Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2capturepreviewimageformat)
 
-
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [CapturePreview](/microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview)<!-- c# links to "CapturePreviewAsync Method" -->
@@ -269,16 +305,19 @@ You can configure capturing screenshots.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Downloads
 
 You can manage the download experience in WebView2 and configure a custom download UI.
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [DownloadStarting Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.downloadstarting)
@@ -302,7 +341,7 @@ You can manage the download experience in WebView2 and configure a custom downlo
 * [CoreWebView2HostResourceAccessKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_default_download_dialog_corner_alignment)<!-- c# links to "CoreWebView2DefaultDownloadDialogCornerAlignment Enum" -->
@@ -327,16 +366,18 @@ You can manage the download experience in WebView2 and configure a custom downlo
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Permissions
 
 How to assign permissions to WebView2 controls to do _<!-- TODO: confirm -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [PermissionRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested)
@@ -347,8 +388,7 @@ How to assign permissions to WebView2 controls to do _<!-- TODO: confirm -->
 
 * [CoreWebView2PermissionState Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2permissionstate)
 
-
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_PermissionRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_permissionrequested)<!-- c# links to "PermissionRequested Event" -->
@@ -359,9 +399,6 @@ How to assign permissions to WebView2 controls to do _<!-- TODO: confirm -->
 * [ICoreWebView2PermissionRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs)<!-- c# links to "CoreWebView2PermissionRequestedEventArgs Class" -->
 
 ---
-
-See also:
-<!--* []()-->
 
 
 <!-- ------------------------------ -->
@@ -383,8 +420,12 @@ The WebView2 control provides a default context menu, and you can create your ow
 
 *  Disable context menus.
 
+<!-- get links from Context Menus article or link to there -->
+See also:
+* [Customize context menus in WebView2](../how-to/context-menus.md)
+   * [API Reference overview](../how-to/context-menus.md#api-reference-overview)
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [ContextMenuRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
@@ -393,8 +434,7 @@ The WebView2 control provides a default context menu, and you can create your ow
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [AreDefaultContextMenusEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
 
-
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2_11](/microsoft-edge/webview2/reference/win32/icorewebview2_11)<!-- c# links to "CoreWebView2 Class" -->
    * [add_ContextMenuRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_11#add_contextmenurequested)<!-- c# links to "ContextMenuRequested Event" -->
@@ -407,18 +447,19 @@ The WebView2 control provides a default context menu, and you can create your ow
 
 ---
 
-<!-- get links from Context Menus article or link to there -->
-See also:
-* [Customize context menus in WebView2](../how-to/context-menus.md)
-   * [API Reference overview](../how-to/context-menus.md#api-reference-overview)
-
 
 <!-- ------------------------------ -->
 ### Status Bar
 
 Learn how to monitor the browser's status bar for changes.
+<!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [StatusBarTextChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartextchanged)
@@ -427,8 +468,7 @@ Learn how to monitor the browser's status bar for changes.
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsStatusBarEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isstatusbarenabled)
 
-
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2_12](/microsoft-edge/webview2/reference/win32/icorewebview2_12)<!-- c# links to "CoreWebView2 Class" -->
    * [add_StatusBarTextChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_12#add_statusbartextchanged)<!-- c# links to "StatusBarTextChanged Event" -->
@@ -441,22 +481,26 @@ Learn how to monitor the browser's status bar for changes.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### User Agent
 
 Learn how to detect the user agent string in a WebView2 control.
+<!-- alt for "Learn how to" -->
+<!-- why would you do this, what is benefit for end user, what's involved?  Your app can detect which XYZ and then ABC so that the X is Y. -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [UserAgent Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.useragent)
 
-
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2Settings2](/microsoft-edge/webview2/reference/win32/icorewebview2settings2)<!-- c# links to "CoreWebView2Settings Class" -->
    * [get_UserAgent](/microsoft-edge/webview2/reference/win32/icorewebview2settings2#get_useragent)<!-- c# links to "UserAgent Property" -->
@@ -464,23 +508,27 @@ Learn how to detect the user agent string in a WebView2 control.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Autofill
 
 Leverage the browsers autofill functionality in a WebView2 control.
+<!-- what does "autofill functionality" mean?  how does this benefit end user? -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsGeneralAutofillEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isgeneralautofillenabled)
    * [IsPasswordAutosaveEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.ispasswordautosaveenabled)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2Settings4](/microsoft-edge/webview2/reference/win32/icorewebview2settings4)<!-- c# links to "CoreWebView2Settings Class" -->
    * [get_IsGeneralAutofillEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings4#get_isgeneralautofillenabled)<!-- c# links to "IsGeneralAutofillEnabled Property" -->
@@ -490,16 +538,20 @@ Leverage the browsers autofill functionality in a WebView2 control.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Audio
 
 Control audio settings in a WebView2 control.
+<!-- what kind of audio settings?  how does this enhance end-user UX? -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [IsDocumentPlayingAudioChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.isdocumentplayingaudiochanged)
@@ -508,7 +560,7 @@ Control audio settings in a WebView2 control.
    * [IsMuted Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.ismuted)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2_8](/microsoft-edge/webview2/reference/win32/icorewebview2_8)<!-- c# links to "CoreWebView2 Class" -->
    * [add_IsDocumentPlayingAudioChanged](/microsoft-edge/webview2/reference/win32/icorewebview2_8#add_isdocumentplayingaudiochanged)<!-- c# links to "IsDocumentPlayingAudioChanged Event" -->
@@ -518,16 +570,20 @@ Control audio settings in a WebView2 control.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Managing WebView2 processes
 
 Learn how to work with the process that your WebView2 runs in on the host computer.
+<!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [ProcessFailed Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
@@ -553,7 +609,7 @@ Learn how to work with the process that your WebView2 runs in on the host comput
 * [CoreWebView2ProcessInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2processinfo)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_ProcessFailed](/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed)<!-- c# links to "ProcessFailed Event" -->
@@ -583,16 +639,18 @@ Learn how to work with the process that your WebView2 runs in on the host comput
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Navigation
 
 Learn how to manage page navigation in a WebView2.
+<!-- what's page navn?  what does "navigation" mean here?  when does it occur?  is it automatic?  does host app handle aspects, and wv2 control handles other aspects? -->
 
-# [C#](#tab/c-sharp)
+See also:
+* [Navigation events for WebView2 apps](navigation-events.md)
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [CanGoBack Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.cangoback)
@@ -624,7 +682,7 @@ Learn how to manage page navigation in a WebView2.
 * [CoreWebView2WebResourceContext Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted)<!-- c# links to "FrameNavigationCompleted Event" -->
@@ -663,13 +721,14 @@ Learn how to manage page navigation in a WebView2.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Web content
 
+<!-- TODO: sentence or list of subsections here.  first fill in the h3 Paragraph 1's then summarize here. -->
+
+
+<!-- ------------------------------ -->
 ### Web Resource Request
 
 Use this along with web resource response to make custom network requests. You can use this approach to:
@@ -678,9 +737,9 @@ Use this along with web resource response to make custom network requests. You c
    * Fine-tune authentication for specific pages.
 
 For more information, see:
-   * [Custom management of network requests](/microsoft-edge/webview2/how-to/webresourcerequested?tabs=dotnet)
+* [Custom management of network requests](/microsoft-edge/webview2/how-to/webresourcerequested?tabs=dotnet)
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [AddWebResourceRequestedFilter Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter)
@@ -699,7 +758,7 @@ For more information, see:
 * [CoreWebView2WebResourceRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcerequestedeventargs)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_WebResourceRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_webresourcerequested)<!-- c# links to "WebResourceRequested Event" -->
@@ -723,27 +782,51 @@ For more information, see:
 
 * [ICoreWebView2WebResourceRequestedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourcerequestedeventargs)<!-- c# links to "CoreWebView2WebResourceRequestedEventArgs Class" -->
 
+---
+
+
+<!-- ------------------------------ -->
 ### Web Resource Response
 
-# [C#](#tab/c-sharp)
+<!-- what's a web resource response?  when does it happen?  when xyz occurs, the http server returns a response message to the wv2 ctrl -->
+
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [WebResourceResponseReceived Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourceresponsereceived)
 * [CoreWebView2WebResourceResponse Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponse)
 * [CoreWebView2WebResourceResponseView Class](/dotnet/api/microsoft.web.webview2.core.corewebview2webresourceresponseview)
 
-# [C++](#tab/cpp)
+
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2WebResourceResponse](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponse)<!-- c# links to "CoreWebView2WebResourceResponse Class" -->
 * [ICoreWebView2WebResourceResponseReceivedEventArgs](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponsereceivedeventargs)<!-- c# links to "CoreWebView2.WebResourceResponseReceived Event" -->
 * [ICoreWebView2WebResourceResponseView](/microsoft-edge/webview2/reference/win32/icorewebview2webresourceresponseview)<!-- c# links to "CoreWebView2WebResourceResponseView Class" -->
 
+---
+
+
 <!-- ------------------------------ -->
 ### DOM/Content loaded
 
 Learn how to handle events when content is loaded in the WebView2.
+<!-- alt pattern instead of "Learn how to": summarize how you use the tech:
+Your app can apply custom handling of events when content is loaded in the WebView2.  When a webpage is returned from the HTTP server to the wv2 control, the wv2 control renders the webpage.  One of the first things that happens during rendering is that the wv2 control or other web parser sends a ContentLoading event, then when X is finished, sends a DOM Loaded / Content Loaded event.  Your wv2 host app listens for this event and then handles the event such as doing XYZ updating the UI. -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [ContainsFullScreenElementChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelementchanged)
@@ -761,7 +844,7 @@ Learn how to handle events when content is loaded in the WebView2.
 * [CoreWebView2DOMContentLoadedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2domcontentloadedeventargs)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_ContainsFullScreenElementChanged](/microsoft-edge/webview2/reference/win32/icorewebview2#add_containsfullscreenelementchanged)<!-- c# links to "ContainsFullScreenElementChanged Event" -->
@@ -786,16 +869,21 @@ Learn how to handle events when content is loaded in the WebView2.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Server/Client Certificates
 
 Learn how to work with certificates in WebView2 controls (TODO: confirm)
+<!-- alt pattern instead of "Learn how to": provide a teaching & tech marketing moment.  Say something about how you (can) use certs, why would you do that?
+By handling certs, your app can provide features A/B/C.  Your host app does X, and then the server does Y. -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [ClientCertificateRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.clientcertificaterequested)
@@ -807,7 +895,7 @@ Learn how to work with certificates in WebView2 controls (TODO: confirm)
 * [CoreWebView2ClientCertificateRequestedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificaterequestedeventargs)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [COREWEBVIEW2_CLIENT_CERTIFICATE_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_client_certificate_kind)<!-- c# links to "CoreWebView2ClientCertificateKind Enum" -->
@@ -823,17 +911,21 @@ Learn how to work with certificates in WebView2 controls (TODO: confirm)
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Working with Chrome Developer Protocol (CDP)
 
 Learn how to automate tasks in the DevTools in a WebView2 control using CDP (TODO: confirm)
+<!-- alt pattern instead of "Learn how to":
+_Automating_ means X, Y, & Z.  By adding automation of X, your app provides features Y & Z.  You add automation in the X. -->
+
+<!--
+See also:
+* []()
+-->
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [CallDevToolsProtocolMethodAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync)
@@ -849,7 +941,7 @@ Learn how to automate tasks in the DevTools in a WebView2 control using CDP (TOD
    * [AreDevToolsEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredevtoolsenabled)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [CallDevToolsProtocolMethod](/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod)<!-- c# links to "CallDevToolsProtocolMethodAsync Method" -->
@@ -869,17 +961,16 @@ Learn how to automate tasks in the DevTools in a WebView2 control using CDP (TOD
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## iFrames
 
 Learn how to work with iFrames in content displayed in WebView2 controls
+<!-- alt pattern instead of "Learn how to": define what the heading refers to.
+An _iFrame_ is an X that Y & Z.  Your app can use iFrames to XYZ.[benefit; value-add]  [how; tech-usage summary gist:]To do this, in the X, you add code that does Y. -->
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [FrameCreated Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
@@ -894,7 +985,7 @@ Learn how to work with iFrames in content displayed in WebView2 controls
 * [CoreWebView2FrameInfo Class](/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_FrameNavigationCompleted](/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted)<!-- c# links to "FrameNavigationCompleted Event" -->
@@ -919,9 +1010,6 @@ Learn how to work with iFrames in content displayed in WebView2 controls
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Authentication
@@ -929,8 +1017,10 @@ See also:
 <!-- selling point / value prop: easy configuration of WebView2 apps - support user accounts -->
 
 Learn how to handle basic authentication in WebView2 controls.
+<!-- what's the benefit for end users?  how does it essentially work? what's involved? -->
 
-# [C#](#tab/c-sharp)
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [BasicAuthenticationRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.basicauthenticationrequested)
@@ -946,7 +1036,7 @@ Learn how to handle basic authentication in WebView2 controls.
 * [CoreWebView2HttpResponseHeaders Class](/dotnet/api/microsoft.web.webview2.core.corewebview2httpresponseheaders)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10)<!-- c# links to "CoreWebView2 Class" -->
    * [add_BasicAuthenticationRequested](/microsoft-edge/webview2/reference/win32/icorewebview2_10#add_basicauthenticationrequested)<!-- c# links to "BasicAuthenticationRequested Event" -->
@@ -963,14 +1053,12 @@ Learn how to handle basic authentication in WebView2 controls.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Environment setup
 
 Learn how to specify settings before WebView2 controls are created.
+<!-- what kind of settings?  why? -->
 
 <!-- selling point / value prop: easy configuration of WebView2 apps
 
@@ -980,9 +1068,13 @@ Learn how to specify settings before WebView2 controls are created.
 -->
 
 <!-- link to a doc about this if avail.  eg Auth has a doc to link to. -->
+<!--
+See also:
+* []()
+-->
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [Environment Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.environment)
@@ -994,7 +1086,7 @@ Learn how to specify settings before WebView2 controls are created.
 * [CoreWebView2EnvironmentOptions Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2_2](/microsoft-edge/webview2/reference/win32/icorewebview2_2)<!-- c# links to "CoreWebView2 Class" -->
    * [get_Environment](/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_environment)<!-- c# links to "Environment Property" -->
@@ -1007,16 +1099,19 @@ Learn how to specify settings before WebView2 controls are created.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Rendering WebView2 in native apps (Hosting)
 
-These APIS are used to set up the WebView2 rendering system in native apps.  For example, how WebView2 renders output into the host app, how WebView2 handles input, focus, accessibility (applies to C++ only).
+These APIS are used to set up the WebView2 rendering system in native apps.  For example, how WebView2 renders output into the host app, how WebView2 handles input, focus, accessibility (applies to C++ only).<!-- what specifically applies to C++ only? -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [NewWindowRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested)
@@ -1035,7 +1130,7 @@ These APIS are used to set up the WebView2 rendering system in native apps.  For
 -->
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_NewWindowRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested)<!-- c# links to "NewWindowRequested Event" -->
@@ -1057,15 +1152,19 @@ These APIS are used to set up the WebView2 rendering system in native apps.  For
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### WebView2 Properties (UI?)
 
+<!-- sentence 1; define what the heading refers to.  what are the end-user benefits & UX features enabled by these APIs? -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2BoundsMode Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2boundsmode)
 
@@ -1082,7 +1181,7 @@ See also:
    * [ZoomFactorChanged Event](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.zoomfactorchanged)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to n/a -->
    * [COREWEBVIEW2_BOUNDS_MODE](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_bounds_mode)<!-- c# links to "CoreWebView2BoundsMode Enum" -->
@@ -1105,16 +1204,20 @@ See also:
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Window management
 
 All tasks related to the management of a window.
+<!-- what does "window management" mean?  what does it involve?  What are top 3 things to know about window management? -->
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [WindowCloseRequested Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.windowcloserequested)
@@ -1139,7 +1242,7 @@ All tasks related to the management of a window.
    * [ShouldDetectMonitorScaleChanges Property](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.shoulddetectmonitorscalechanges)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [add_WindowCloseRequested](/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested)<!-- c# links to "WindowCloseRequested Event" -->
@@ -1168,30 +1271,28 @@ All tasks related to the management of a window.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## User data
 
 Learn how to work with the user data folder.
 
-# [C#](#tab/c-sharp)
+See also:
+* [Manage user data folders](user-data-folder.md)
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2Environment Class](/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
    * [UserDataFolder Property](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2Environment7](/microsoft-edge/webview2/reference/win32/icorewebview2environment7)<!-- c# links to "CoreWebView2Environment Class" -->
    * [get_UserDataFolder](/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!-- c# links to "UserDataFolder Property" -->
 
 ---
-
-See also:
-* [Manage user data folders](user-data-folder.md)
 
 
 <!-- ====================================================================== -->
@@ -1203,7 +1304,13 @@ See also:
 
 Handling key press events, so that your app has keyboard support.
 
-# [C#](#tab/c-sharp)
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2AcceleratorKeyPressedEventArgs Class](/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs)
 
@@ -1222,7 +1329,7 @@ Handling key press events, so that your app has keyboard support.
    * [AreBrowserAcceleratorKeysEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to n/a -->
    * [COREWEBVIEW2_KEY_EVENT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_key_event_kind)<!-- c# links to "CoreWebView2KeyEventKind Enum" -->
@@ -1242,17 +1349,23 @@ Handling key press events, so that your app has keyboard support.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Mouse input
 
 Learn how to work with the mouse for input on a WebView2 control.
+<!-- alt pattern for "Learn how to": teaching opportunity; summarize knowledge: 
+Your app can offer rich support UX mouse left click, scroll, rightclick, click & drag.
+Your wv2 host app can offer full mouse support by handling XYZ events.  The wv2 control sends xyz events.  Your app listens for these events and handles them.  In response, your app can then XYZ.
+-->
+
+<!--
+See also:
+* []()
+-->
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2PointerEventKind Enum](/dotnet/api/microsoft.web.webview2.core.corewebview2pointereventkind)
 
@@ -1262,7 +1375,7 @@ Learn how to work with the mouse for input on a WebView2 control.
    * [CreateCoreWebView2PointerInfo Method](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to n/a -->
    * [COREWEBVIEW2_POINTER_EVENT_KIND](/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_pointer_event_kind)<!-- c# links to "CoreWebView2PointerEventKind Enum" -->
@@ -1274,21 +1387,25 @@ Learn how to work with the mouse for input on a WebView2 control.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Touch input
-<!-- TODO: stray heading in link in orig doc? should there be "Keyboard; Mouse; Touch input; Pinch zoom" sections? -->
 
-# [C#](#tab/c-sharp)
+<!-- Your app can offer rich support UX touch, scroll, multitouch, drag, mobile devices.  [How this works is]: the X listens, sends events, then handles.  How wv2 & host app coordinate to offer X UX to end users on ABC devices that have a touchscreen. -->
+
+<!--
+See also:
+* []()
+-->
+
+
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsSwipeNavigationEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isswipenavigationenabled)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2Settings6](/microsoft-edge/webview2/reference/win32/icorewebview2settings6)<!-- c# links to "CoreWebView2Settings Class" -->
    * [get_IsSwipeNavigationEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled)<!-- c# links to "IsSwipeNavigationEnabled Property" -->
@@ -1296,24 +1413,27 @@ See also:
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ------------------------------ -->
 ### Pinch zoom
 
 Learn how to work with touch input in a WebView2 control.
+<!-- add support for touch screen mobile devices multitouch gestures.  Applies to devices that have X hardware that detects Y. -->
+
+<!--
+See also:
+* []()
+-->
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsPinchZoomEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.ispinchzoomenabled)
    * [IsZoomControlEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.iszoomcontrolenabled)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings Class" -->
    * [get_IsZoomControlEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iszoomcontrolenabled)<!-- c# links to "IsZoomControlEnabled Property" -->
@@ -1325,17 +1445,21 @@ Learn how to work with touch input in a WebView2 control.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Performance optimizations/tools and debugging
 
 Learn how to handle performance related events for WebView2 controls.
+<!-- alt pattern instead of "Learn how to".  Teach a little about this domain: Here's what to think of by the word "perf", "optimiz", tools, and debugging perf:
+Increasing perf for your app includes xyz.  Makes your app respond to user input actions quickly; prevents sluggish response.  Manage memory usage, responsiveness.  Tools help you analyze xyz & debug and test perf. -->
+
+<!--
+See also:
+* []()
+-->
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
@@ -1351,7 +1475,7 @@ Learn how to handle performance related events for WebView2 controls.
    * [IsBuiltInErrorPageEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled) <!--TODO: clarify note: (probs for navigation and process)-->
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2_3](/microsoft-edge/webview2/reference/win32/icorewebview2_3)<!-- c# links to "CoreWebView2 Class" -->
    * [get_IsSuspended](/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!-- c# links to "IsSuspended Property" -->
@@ -1373,17 +1497,19 @@ Learn how to handle performance related events for WebView2 controls.
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
 ## Misc.
 
-<!-- description -->
+<!-- description.  Addl opportunities for your app include xyz.  You'll also benefit from considering X. -->
+
+<!--
+See also:
+* []()
+-->
 
 
-# [C#](#tab/c-sharp)
+#### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [Settings Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.settings)
@@ -1391,7 +1517,7 @@ See also:
 * [CoreWebView2Deferral Class](/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
 
 
-# [C++](#tab/cpp)
+#### [C++](#tab/cpp)
 
 * [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2)<!-- c# links to "CoreWebView2 Class" -->
    * [get_Settings](/microsoft-edge/webview2/reference/win32/icorewebview2#get_settings)<!-- c# links to "Settings Property" -->
@@ -1404,11 +1530,11 @@ See also:
 
 ---
 
-See also:
-<!--* []()-->
-
 
 <!-- ====================================================================== -->
-## See also
+<!-- ## See also -->
 
-<!--* []()-->
+<!--
+* []()
+* []()
+-->
