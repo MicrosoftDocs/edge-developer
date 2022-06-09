@@ -1323,6 +1323,7 @@ Learn how to handle performance related events for WebView2 controls.
 
 * [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2)
    * [IsSuspended Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
+   * [MemoryUsageTargetLevel Property](/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)
    * [Resume Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
    * [TrySuspendAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
    * [OpenTaskManagerWindow Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow)
@@ -1332,8 +1333,6 @@ Learn how to handle performance related events for WebView2 controls.
 
 * [CoreWebView2Settings Class](/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
    * [IsBuiltInErrorPageEnabled Property](/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled) <!--TODO: clarify note: (probs for navigation and process)-->
-
-<!-- TODO: MemoryUsageTargetLevel not found in C#--> -->
 
 
 # [C++](#tab/cpp)
@@ -1347,12 +1346,11 @@ Learn how to handle performance related events for WebView2 controls.
    * [OpenTaskManagerWindow](/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)<!-- c# links to "OpenTaskManagerWindow Method" -->
 
 * [ICoreWebView2Controller](/microsoft-edge/webview2/reference/win32/icorewebview2controller)<!-- c# links to "CoreWebView2Controller Class" -->
-   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
    * [get_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible)<!-- c# links to "IsVisible Property" -->
-<!-- TODO: linked to get as well as put, bc more info.  check docx, not there, added bc in article or per SME? -->
+   * [put_IsVisible](/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)<!-- c# links to "IsVisible Property" -->
 
-* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)<!-- c# links to "" - prop not found -->
-   * [put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)<!-- c# links to "" - not found -->
+* [ICoreWebView2Experimental5](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5)<!-- c# links to "CoreWebView2 Class" -->
+   * [put_MemoryUsageTargetLevel](/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)<!-- c# links to "MemoryUsageTargetLevel Property" -->
 
 *  [ICoreWebView2Settings](/microsoft-edge/webview2/reference/win32/icorewebview2settings)<!-- c# links to "CoreWebView2Settings Class" -->
    * [get_IsBuiltInErrorPageEnabled](/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled)<!-- c# links to "IsBuiltInErrorPageEnabled Property" --> <!--TODO: clarify note: (probs for navigation and process)-->
