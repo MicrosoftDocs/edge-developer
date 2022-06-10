@@ -6,13 +6,13 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: devtools
-ms.date: 02/10/2021
+ms.date: 06/09/2022
 ---
 # Capabilities and EdgeOptions
 
 Capabilities are options that you can use to customize and configure an `EdgeDriver` session.  To learn about starting a new `EdgeDriver` session, see [Automating Microsoft Edge](index.md#automate-microsoft-edge).  This article describes all supported capabilities for Microsoft Edge and provides details about passing the capabilities to `EdgeDriver` sessions.
 
-Capabilities are passed to a WebDriver session as a JSON map.  A WebDriver testing framework provides a WebDriver language binding.  WebDriver language bindings typically provide type-safe convenience methods so you don't need to configure the JSON map yourself.  Different WebDriver language bindings use different mechanisms to configure capabilities.  [Selenium](https://www.selenium.dev) configures capabilities through the `EdgeOptions` class.
+Capabilities are passed to a WebDriver session as a JSON map but it is not necessary, or recommended to set them this way.  WebDriver testing frameworks (such as [Selenium](https://www.selenium.dev)) provide language bindings which typically have convenience methods so you don't need to configure the JSON map yourself.  For example Selenium configures capabilities through the `EdgeOptions` class.
 
 To learn more about how to configure capabilities, consult the documentation for your preferred WebDriver testing framework.  For more information, see [Choose a WebDriver testing framework](index.md#choose-a-webdriver-testing-framework).
 
