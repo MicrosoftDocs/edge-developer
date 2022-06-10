@@ -30,6 +30,30 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## DevTools - Use your preferred language in DevTools
+
+_Published on 9 June 2022._
+
+[![Thumbnail image for the DevTools localization video](./images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
+
+Microsoft Edge DevTools supports 13 different languages. In this video, the team shows how to choose the language that's most comfortable to you for coding and debugging.
+
+To learn more about changing DevTools language settings, check out [Change DevTools language settings](../devtools-guide-chromium/customize/localization.md).
+
+To report any translation errors, check out [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md).
+
+
+<!-- ====================================================================== -->
+## DevTools - What's new in DevTools 102
+
+_Published on 1 June 2022._
+
+[![Thumbnail image for the DevTools What's New in 102 video](./images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
+
+Learn more about our latest announcements from the Microsoft Edge DevTools team at [What's New in DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md).
+
+
+<!-- ====================================================================== -->
 ## Web Platform - Fully style the drop-down part of a `<select>` with the new `<selectmenu>` element
 
 _Published on 31 May 2022._
