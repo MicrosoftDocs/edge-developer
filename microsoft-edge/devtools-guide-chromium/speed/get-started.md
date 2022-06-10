@@ -278,7 +278,7 @@ For a small app, doing a one-off resize like this might be good enough.  But for
 
 *  Resize images during your build process.
 
-*  Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.  <!-- See [Relative-sized images](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images#relative_sized_images). -->
+*  Create multiple sizes of each image during the build process and then use `srcset` in your code.  At runtime, the browser takes care of choosing which size is best for the device.  <!-- See [Responsive images](https://web.dev/responsive-images/). -->
 
 *  Use an image CDN that lets you dynamically resize an image when you request it.
 

@@ -37,7 +37,7 @@ Simulate different device orientations from within DevTools.
 ![Selecting 'Portrait upside down' from the Orientation list.](../media/device-mode-console-sensors-orientation-portrait-upside-down.msft.png)
 
 If you select **Custom orientation**, the `alpha`, `beta`, and `gamma` rotational axis fields are enabled.
-<!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://developers.google.com/web/fundamentals/native-hardware/device-orientation#rotation_data). -->
+<!--To understand how each axis works, see [Device Orientation & Motion - Rotation data](https://web.dev/native-hardware-device-orientation/#rotation_data). -->
 <!-- todo: link to a local copy of that article section when available; see "original page" below -->
 You can also set a custom orientation by dragging the **Orientation Model**.  For example, to rotate along the `alpha` axis, press and hold `Shift` before dragging:
 
