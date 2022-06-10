@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge Add-ons released features
+title: Released features for Microsoft Edge Add-ons
 description: Microsoft Edge Add-ons released features provides information about features launched on Partner Center for extension developers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,25 +7,15 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.date: 05/31/2021
 ---
-# Microsoft Edge Add-ons released features
-<!-- suggested new title:
 # Released features for Microsoft Edge Add-ons
-Would need to change at:
-*  # here
-* top of this file (title:) 
-* toc.yml
-* full-text search the repo to update link text that points to the present article
-
-Consider same for Roadmap article.  But compare title pattern that's used for https://docs.microsoft.com/microsoft-edge/webview2/roadmap
--->
 
 The following features have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for developers of Microsoft Edge extensions.
 
 
 <!-- ====================================================================== -->
-### Developers can respond to user reviews about their Microsoft Edge Add-on
+## Developers can respond to user reviews about their Microsoft Edge Add-on
 
-Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge Add-ons product page. 
+Developers can reply via Partner Center to reviews and feedback received about their extension on the Microsoft Edge Add-ons product page. To share your feedback and comments, see [GitHub discussion topic - Reply to user reviews on your Microsoft Edge Add-on product page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18). 
 
 *Released May 2022*
 

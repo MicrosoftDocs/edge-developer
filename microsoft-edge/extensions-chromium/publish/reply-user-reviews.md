@@ -59,6 +59,6 @@ When you post a reply using the Partner Center dashboard, your reply appears on 
 
 * [Microsoft Edge Add-ons | NEW Feature to manage user reviews on your extension](https://techcommunity.microsoft.com/t5/articles/microsoft-edge-add-ons-new-feature-to-manage-user-reviews-on/m-p/3372537) - blog post.
 
-* [Microsoft Edge Add-ons Released Features](../whats-new/released-features.md) - recently released features at Partner Center.
+* [Released features for Microsoft Edge Add-ons](../whats-new/released-features.md) - recently released features at Partner Center.
 
 Share your feedback, questions, and comments with the team on Twitter [@MSEdgeDev](https://twitter.com/msedgedev/) or via our [GitHub community's Discussion topic](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18).

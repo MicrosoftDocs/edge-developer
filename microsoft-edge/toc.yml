@@ -774,7 +774,7 @@
 
         - name: What's new
           items:
-            - name: Microsoft Edge Add-ons released features
+            - name: Released features for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/released-features.md
 
             - name: Microsoft Edge Add-ons roadmap
@@ -830,7 +830,7 @@
             - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
 
-            - name: Verify your Microsoft Edge Partner Center program information
+            - name: Verify your company account information
               href: extensions-chromium/publish/verify-microsoft-edge-program.md
 
             - name: Publish extensions using a GitHub account

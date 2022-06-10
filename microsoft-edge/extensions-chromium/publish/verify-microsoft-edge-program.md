@@ -1,5 +1,5 @@
 ---
-title: Verify your company account information
+title: Verify the company account information associated with your Microsoft Partner Center account
 description: Learn how to verify your account information when your company enrolls in the Microsoft Edge program on Partner Center to publish extensions to the Microsoft Edge Add-ons website.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -8,12 +8,6 @@ ms.prod: microsoft-edge
 ms.date: 06/09/2022
 ---
 # Verify the company account information associated with your Microsoft Partner Center account
-<!-- 
-or (would have to change 3-5 spots):
-# Verify your program information for Microsoft Edge Partner Center
-or [Added by Ashish]
-Verify the account information associated with the Microsoft Edge program of your Microsoft Partner Center account
--->
 
 When you enroll in the Microsoft Edge program on Partner Center to publish extensions or change legal details in your profile, Microsoft verifies the information that you provide. Information can include your company name, company address, and primary contact details. During this process, Microsoft may send email to your primary contact to request verification.
 
@@ -40,7 +34,7 @@ Email ownership verifies that the primary contact (primary email) address is val
 
 Be sure to flag email from Microsoft.com as a **safe** domain, and check junk email folders.
 
-If you don't receive the email ownership verification email message within one business day, you can ask us to send the email again. On to your Partner Center account, go to **Home > Account settings**. On the **Account settings \| My profile** page, select **Resend verification email**.
+If you don't receive the email ownership verification email message within one business day, you can ask us to send the email again. On to your Partner Center account, go to **Home > Account settings**. On the **Account settings | My profile** page, select **Resend verification email**.
 
 ### Verify Employment
 
