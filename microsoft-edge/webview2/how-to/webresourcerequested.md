@@ -577,7 +577,7 @@ m_webView->add_WebResourceResponseReceived(
 ## See also
 
 * [Call native-side code from web-side code](hostobject.md)
-* [Web/Native Interop](../concepts/apis-capabilities.md#webnative-interop) in _Survey of WebView2 APIs and their capabilities_.
+* [Web/Native Interop](../concepts/apis-capabilities.md#webnative-interop) in _Overview of WebView2 APIs and their capabilities_.
 
 <!-- 
 * [NavigateWithWebResourceRequest spec](https://github.com/MicrosoftEdge/WebView2Feedback/blob/main/specs/NavigateWithWebResourceRequest.md)

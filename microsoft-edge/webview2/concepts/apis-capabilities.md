@@ -1,6 +1,6 @@
 ---
-title: Survey of WebView2 APIs and their capabilities
-description: Survey of WebView2 APIs and their capabilities.
+title: Overview of WebView2 APIs and their capabilities
+description: Overview of WebView2 APIs and their capabilities.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/09/2022
 ---
-# Survey of WebView2 APIs and their capabilities
+# Overview of WebView2 APIs and their capabilities
 
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
