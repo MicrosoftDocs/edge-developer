@@ -184,7 +184,7 @@ After you measured and verified that the animation isn't performing well, the ne
 
    The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--
-   > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid_forced_synchronous_layouts).
+   > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
 
 That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
@@ -195,7 +195,7 @@ That was a lot to learn.  You now have a solid foundation in the basic workflow 
 Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
 Even the optimized version isn't great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.
-<!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use_transform_and_opacity_changes_for_animations). todo: add rendering section when available -->
+<!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations). todo: add rendering section when available -->
 
 
 <!-- ====================================================================== -->
