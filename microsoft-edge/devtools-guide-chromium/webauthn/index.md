@@ -27,7 +27,7 @@ You can emulate authenticators and debug the [Web Authentication API](https://w3
 <!-- ====================================================================== -->
 ## Set up the WebAuthn tool
 
-1. Go to a webpage that uses WebAuthn.  For example, open the following demo website in a new browser window or tab: [webauthndemo.appspot.com](https://webauthndemo.appspot.com).
+1. Go to a webpage that uses WebAuthn.  For example, open the following demo website in a new browser window or tab: [try-webauthn.appspot.com](https://try-webauthn.appspot.com/).
 
 1. Sign into the website.
 

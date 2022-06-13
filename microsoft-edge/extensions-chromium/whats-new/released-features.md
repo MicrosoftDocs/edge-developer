@@ -1,27 +1,23 @@
 ---
-title: Microsoft Edge Add-ons released features
+title: Released features for Microsoft Edge Add-ons
 description: Microsoft Edge Add-ons released features provides information about features launched on Partner Center for extension developers.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/20/2021
+ms.date: 05/31/2021
 ---
-# Microsoft Edge Add-ons released features
+# Released features for Microsoft Edge Add-ons
 
-This article describes features launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for extension developers.
-
-> [!NOTE]
-> Released features for Microsoft [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) change often.  Partner Center continues to evolve based on market changes and customer feedback. The features described in this article are also subject to change.
-
-For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
-
+The following features have been launched on [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) for developers of Microsoft Edge extensions.
 
 
 <!-- ====================================================================== -->
-### You can respond to user reviews about your Microsoft Edge Add-on
+## You can respond to user reviews about your Microsoft Edge Add-on
 
 You can reply via Partner Center to reviews and feedback received about your extension on the Microsoft Edge Add-ons product page. 
+
+To share your feedback and comments about this feature, see [GitHub discussion topic - Reply to user reviews on your Microsoft Edge Add-on product page](https://github.com/microsoft/MicrosoftEdge-Extensions/discussions/18). 
 
 *Released May 2022*
 
@@ -30,6 +26,14 @@ You can reply via Partner Center to reviews and feedback received about your ext
 ## Publish and update extensions using the Microsoft Edge Add-ons API
 
 You can integrate APIs directly into your Continuous Integration / Continuous Delivery (CI/CD) pipeline. You can also publish extension package updates to the Microsoft Edge Add-ons website without using Partner Center. For more information, see [Using the Microsoft Edge Add-ons API](/microsoft-edge/extensions-chromium/publish/api/using-addons-api)
+
+*Released March 2022*
+
+
+<!-- ====================================================================== -->
+## Addition of breadcrumbs to Microsoft Partner Center
+
+Developers can view the navigation bar / tree path while using Partner Center to track the exact Partner Center path users are visiting. Developers can maintain awareness of their location within Microsoft Partner Center.
 
 *Released March 2022*
 
@@ -104,3 +108,9 @@ You can choose a subset of languages instead of manually entering each language 
 By clicking the extension certification report link, you can view and download the extension certification report from your [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/) dashboard.  The link to the extension certification report is displayed after the extension submission review is complete.  The certification report contains the result of the extension review and relevant details.
 
 *Released January 2021*
+
+
+<!-- ====================================================================== -->
+## See also
+
+For more information about upcoming updates and feature releases, see [Microsoft Edge Add-ons roadmap](roadmap.md).
