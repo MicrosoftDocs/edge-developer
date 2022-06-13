@@ -73,7 +73,7 @@ Submit one of the following documents for business verification:
 
 Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) have no spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
 
-Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it is located at the address provided. For further assistance, go to your profile page to upload additional proofs through the [interactive vetting experience](#checking-your-verification-status) |
+Microsoft uses this documentation to verify that the company is authorized to do business under that name, and that it is located at the address provided. For further assistance, go to your profile page to upload additional proofs through the interactive vetting experience; see the next section, [Checking your verification status](#checking-your-verification-status).
 
 
 <!-- ====================================================================== -->
