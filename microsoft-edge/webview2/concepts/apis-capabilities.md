@@ -322,6 +322,7 @@ Custom Download Experience:
 ### Permissions
 
 <!-- How to assign permissions to WebView2 controls to do _TODO: confirm -->
+<!-- TODO: does WV2 ever show the dialogs? What can you do with the dialogs? -->
 Different web pages may ask you for permissions to access some privileged resources (e.g. dialog to grant permission to access your location). In WebView2 you can find out what the web pages are asking permission for and what to do with the JavaScript dialogs.  
 
 <!--
@@ -384,11 +385,6 @@ See also:
 
 <!-- ------------------------------ -->
 ### Status Bar
-
-Learn how to monitor the browser's status bar for changes.
-Status bar is the thing you see in the bottom 
-the status message when you hover over a link and it in the bottom left
-you can hide it or control the text
 <!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
 
 <!--
@@ -413,11 +409,6 @@ See also:
 
 <!-- ------------------------------ -->
 ### User Agent
-
-Learn how to detect the user agent string in a WebView2 control.
-every browser has a user agent (I'm chrome, I'm edge, etc.)
-Websites can use this to say do x if using browser is foo
-App devs can make their own user agent
 <!-- alt for "Learn how to" -->
 <!-- why would you do this, what is benefit for end user, what's involved?  Your app can detect which XYZ and then ABC so that the X is Y. -->
 
@@ -493,15 +484,7 @@ See also:
 <!-- ====================================================================== -->
 ## Managing WebView2 processes
 
-Learn how to work with the process that your WebView2 runs in on the host computer.
-Process information 
-Can learn from API:
-process ID is used to get how much memory process is using
-how many total processes are running 
 
-When you want to understand perf characteristics of WV2 in their app, like memory usage, CPU, etc.
-
-Exited/Failed: when a processes crashes or exits
 <!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
 
 <!--
@@ -556,14 +539,6 @@ Failed:
 
 <!-- ====================================================================== -->
 ## Navigation
-
-Learn how to manage page navigation in a WebView2.
-Split into two sections: 
-Virtual folder belongs with WRR 
-Navigation starting/completed --> navigation updates
-1st 3 sections and soruce elt you change what you're seeing and nav starting/nav completed tell you about nagivation
-
-SetVirtualHostName... lets you say what WV2 can access (other ones let you modify what it does access)
 <!-- what's page navn?  what does "navigation" mean here?  when does it occur?  is it automatic?  does host app handle aspects, and wv2 control handles other aspects? -->
 
 See also:
