@@ -28,7 +28,8 @@ This section describes the types of verification, what is verified, and suggesti
 Email ownership verifies that the primary contact (primary email) address is valid.
 
 * The primary contact email address must be a work account that is monitored and can send/receive email.
-* Avoid using a personal email address not associated with the company domain, or a tenant user credential not associated with email. For example, jsmith@testcompany on microsoft.com, or abc@gmail.com.
+* Avoid using a personal email address not associated with the company domain, such as abc@gmail.com.
+* Avoid using a tenant user credential that's not associated with email, such asjsmith@testcompany on microsoft.com.
 
 #### Suggestions
 
