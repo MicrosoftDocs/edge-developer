@@ -323,7 +323,7 @@ Custom Download Experience:
 
 <!-- How to assign permissions to WebView2 controls to do _TODO: confirm -->
 <!-- TODO: does WV2 ever show the dialogs? What can you do with the dialogs? -->
-Different web pages may ask you for permissions to access some privileged resources (e.g. dialog to grant permission to access your location). In WebView2 you can find out what the web pages are asking permission for and what to do with the JavaScript dialogs.  
+Different web pages may ask you for permissions to access some privileged resources (such as a dialog to grant permission to access your location). In WebView2 you can find out what the web pages are asking permission for and what to do with the JavaScript dialogs.  
 
 <!--
 See also:
