@@ -39,7 +39,7 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 ## 1.0.1245.22
   
-Release Date: May 31, 2022  
+Release Date: June 15, 2022  
   
 [NuGet package for WebView2 SDK 1.0.1245.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)  
   
@@ -51,26 +51,27 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 The following items are now stable:
 
-* The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1248-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
+* The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
-*  The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1248-prerelease&preserve-view=true) which allows developers to programmatically clear specific data types for a duration:
+*  The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22) which allows developers to programmatically clear specific data types for a duration:
    * `clearBrowsingDataInTimeRange`
    * `clearBrowsingDataAll`
+
+*  The [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22) which provides the HTTP status code for navigation requests in NavigationCompleted events.
 
 There is no corresponding prerelease package.
 
 
 #### Bug Fixes
   
-*   Fixed issues with on-screen keyboard:  Keyboard does not reappear once it is closed by clicking X button, and 
-keyboard gets dismissed when users switch from one edit control to another within Webview2  
-*   When using a proxy from AddHostObjectToScript in script, if you call setHostProperty and it failed, you could have 
-received an internal error message structure rather than a JavaScript Error object. This has been fixed.  
-*   Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  
-*   Fixes a bug that caused increased memory usage with WebResourceRequested events with large data.  
-*   Support packaged apps using per user installed WebView2 Runtime in old Windows 10 versions.  
-*   Fixed StatusBarTextChanged regression. ICoreWebView2_12's APIs, the StatusBarText related APIs on CoreWebView2, were made compatible with previous versions again. See https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414 for more information.  
-*   Better support for apps running as admin 
+*   Fixed issues with on-screen keyboard where keyboard does not reappear once it is closed by clicking X button, and 
+keyboard gets dismissed when users switch from one edit control to another within WebView2.  ([Issue #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460))
+*  Fixed an issue where when using a proxy from `AddHostObjectToScript` in script, if you call `setHostProperty` and it failed, you could have 
+received an internal error message structure rather than a JavaScript Error object.  
+*   Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862)) 
+*   Fixes a bug that caused increased memory usage with `WebResourceRequested` events with large data. ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
+*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22) was made compatible with previous versions again. ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))   
+*   Better support for apps running as admin. ([Issue #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356)) 
 
 <!-- ====================================================================== -->
 
