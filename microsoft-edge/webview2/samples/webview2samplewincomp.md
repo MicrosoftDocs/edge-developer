@@ -14,7 +14,7 @@ This WebView2 sample demonstrates creating an application that embeds a WebView2
 
 It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and HTML/CSS/JavaScript in the WebView2 environment.
 
-It also uses Windows Runtime Composition APIs (also called the Visual layer) to take avantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
+It also uses Windows Runtime Composition APIs (also called the Visual layer) to take advantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
 
 Directory &amp; .sln: **WebView2SampleWinComp/WebView2SampleWinComp.sln**.
 
@@ -77,13 +77,21 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    ![The 'Review Solution Actions' dialog box.](webview2samplewincomp-images/review-solution-actions.png)
 
-1. If the **Windows SDK Version** dropdown list includes **10.0.20348.0** or **10.0.18362.0**, select one of those, click the **OK** button, and then skip to the next major **Step** section below. <!--19041 supported? ask dev, dependencies issues-->
+1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or **10.0.18362.0** (but not 10.0.19041.0), and then click the **OK** button.  If those versions aren't available, use the next section, otherwise, skip to the section below it.
 
-   If the Windows SDK Version dropdown list doesn't include one of the above versions, install one of those versions of the Windows SDK, as follows.
+
+<!-- ====================================================================== -->
+## Step 6 - Install the Windows SDK
+
+<!-- todo: rewrite in reaction to being prompted to retarget while opening .sln -->
+
+By default, this sample app uses the latest Window 10 SDK version you have installed.  There's an issue with Windows 10 SDK, version 2004 (10.0.**19041**.0) that will stop this sample app from building.  If you run into this issue, either install (and retarget this project to use) a later version, such as Windows 10 SDK version 2104 (10.0.**20348**.0), or an earlier version, such as 10.0.**18362**.1.  
+
+To install a Windows 10 SDK:
 
 1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
 
-1. On row **Windows 10 SDK version 2104 (10.0.20348.0)** or **Windows 10 SDK, version 1903 (10.0.18362.1)**, click the **Install SDK** link.<!--doing 18362 now-->  The **Windows SDK setup** window opens:
+1. On row **Windows 10 SDK version 2104 (10.0.20348.0)** or **Windows 10 SDK, version 1903 (10.0.18362.1)**, click the **Install SDK** link.  The **Windows SDK setup** window opens:
 
   ![Windows SDK setup.](webview2samplewincomp-images/windows-sdk-setup.png)
 
@@ -93,21 +101,15 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 1. Click the **Close** button.
 
-1. If the **Review Solution Actions** dialog box is still open: In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or **10.0.18362.0**, and then click the **OK** button:
-
-   ![The 'Review Solution Actions' dialog box.](webview2samplewincomp-images/review-solution-actions.png)
-
-   Or if Visual Studio is already open, in Solution Explorer, right-click the **WebView2SampleWinComp** project and then select **Retarget Projects**.
-
 
 <!-- ====================================================================== -->
-## Step 6 - Install workloads if prompted
+## Step 7 - Install workloads if prompted
 
 *  If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
-## Step 7 - View the opened project
+## Step 8 - View the opened project
 
 The project opens in Visual Studio, showing the **WebView2SampleWinComp** project in Solution Explorer:
 
@@ -143,7 +145,9 @@ and then right click the project and retarget it to which SDK I want to use
 
 
 <!-- ====================================================================== -->
-## Step 8 - Install or update the WebView2 prerelease SDK
+## Step 9 - Install or update the WebView2 prerelease SDK
+
+This step is optional.  The sample has preinstalled a version of the WebView2 prerelease SDK.
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not the Solution node), and then select **Manage NuGet Packages**.  The **NuGet Package Manager** tab opens.
 
@@ -159,9 +163,11 @@ _To zoom, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->
-## Step 8 - Install or update the Windows Implementation Libraries (WIL)
+## Step 10 - Install or update the Windows Implementation Libraries (WIL)
 
 <!-- resume here -->
+
+This step is optional.  The sample has preinstalled a version of the Windows Implementation Libraries (WIL).
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not the Solution node), and then select **Manage NuGet Packages**.  The **NuGet Package Manager** tab opens.
 
@@ -170,7 +176,7 @@ _To zoom, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->
-## Step 9 - Build the project
+## Step 11 - Build the project
 
 At the top of Visual Studio, set the build target, as follows:
 
@@ -184,59 +190,7 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Update the _ SDK
-
-1. In **Solution Explorer**, right-click the solution's project node (not the solution node) and then select **Manage NuGet Packages**.
-
-   The **NuGet Package Manager** tab opens in Visual Studio.
-
-1. In the **NuGet** window, click the **Browse** tab.
-
-1. On the right of the search bar, clear the **Include prerelease** checkbox (unless you know that you want a prerelease version of the SDK).
-
-1. In the search bar in the upper left, type **__**.
-
-1. Below the search bar, click the **__** card.
-
-1. In the right-hand pane, click the **Install** (or **Update**) button.  NuGet downloads the __ package to your machine, for use by this project.
-
-   ![Selecting the '__' package in NuGet Package Manager in Visual Studio.](webview2samplewincomp-images/manage-nuget-__.png)
-
-   _To zoom, right-click > **Open image in new tab**._
-
-
-
-_update the steps below:_
-
-   The **Preview Changes** dialog box opens:
-
-   ![The Preview Changes dialog box for the 'Microsoft.Windows.CppWinRT' package.](webview2samplewincomp-images/preview-changes-cppwinrt.png)
-
-1. Click the **OK** button.
-
-1. The `readme.txt` file opens for the CppWinRT package:
-
-   ![The readme.txt file for the CppWinRT' package.](webview2samplewincomp-images/cppwinrt-readme.png)
-
-The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue with the steps below.
-
-
-
-<!-- todo: delete unused png's -->
-
-
-<!-- ====================================================================== -->
-## Step 11 - Build the project again
-
-1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
-
-   This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.
-
-
-<!-- ====================================================================== -->
 ## Step 12 - Run (debug) the project
-
-<!-- retest: -->
 
 1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
 
