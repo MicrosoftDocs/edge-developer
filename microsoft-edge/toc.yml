@@ -773,7 +773,7 @@
 
         - name: What's new
           items:
-            - name: Microsoft Edge Add-ons released features
+            - name: Released features for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/released-features.md
 
             - name: Microsoft Edge Add-ons roadmap
@@ -829,6 +829,9 @@
             - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
 
+            - name: Verify your company account information
+              href: extensions-chromium/publish/verify-microsoft-edge-program.md
+
             - name: Publish extensions using a GitHub account
               href: extensions-chromium/publish/github.md
 
@@ -846,6 +849,10 @@
 
             - name: View extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
+
+            - name: Reply to user reviews
+              href: extensions-chromium/publish/reply-user-reviews.md
+              displayName: Respond to user reviews
 
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
