@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 04/27/2022
+ms.date: 06/14/2022
 ---
 # WebView2 sample: Win32 C++ app with Visual Composition
 
@@ -73,17 +73,15 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
-   A **Review Solution Actions** dialog box opens:
+   A **Review Solution Actions** dialog box might open, prompting you for which installed Windows SDK to retarget the project to:
 
    ![The 'Review Solution Actions' dialog box.](webview2samplewincomp-images/review-solution-actions.png)
 
-1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or **10.0.18362.0** (but not 10.0.19041.0), and then click the **OK** button.  If those versions aren't available, use the next section, otherwise, skip to the section below it.
+1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or **10.0.18362.0** (but not 10.0.19041.0), and then click the **OK** button.  If those versions aren't available, do the steps in the "Install the Windows SDK" section below.  Otherwise, skip to the section below that.
 
 
 <!-- ====================================================================== -->
 ## Step 6 - Install the Windows SDK
-
-<!-- todo: rewrite in reaction to being prompted to retarget while opening .sln -->
 
 By default, this sample app uses the latest Window 10 SDK version you have installed.  There's an issue with Windows 10 SDK, version 2004 (10.0.**19041**.0) that will stop this sample app from building.  If you run into this issue, either install (and retarget this project to use) a later version, such as Windows 10 SDK version 2104 (10.0.**20348**.0), or an earlier version, such as 10.0.**18362**.1.  
 
@@ -91,7 +89,7 @@ To install a Windows 10 SDK:
 
 1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
 
-1. On row **Windows 10 SDK version 2104 (10.0.20348.0)** or **Windows 10 SDK, version 1903 (10.0.18362.1)**, click the **Install SDK** link.  The **Windows SDK setup** window opens:
+1. On row **Windows 10 SDK version 2104 (10.0.20348.0)** or later, or **Windows 10 SDK, version 1903 (10.0.18362.1)**, click the **Install SDK** link.  The **Windows SDK setup** window opens:
 
   ![Windows SDK setup.](webview2samplewincomp-images/windows-sdk-setup.png)
 
@@ -100,6 +98,8 @@ To install a Windows 10 SDK:
   ![Welcome to the Windows SDK.](webview2samplewincomp-images/welcome-winsdk.png)
 
 1. Click the **Close** button.
+
+Do the previous step, "Open the Solution and set the Windows SDK target".
 
 
 <!-- ====================================================================== -->
@@ -115,33 +115,7 @@ The project opens in Visual Studio, showing the **WebView2SampleWinComp** projec
 
 ![The WebView2SampleWinComp project in Visual Studio.](webview2samplewincomp-images/project-in-sln-explorer.png)
 
-_To zoom, right-click > **Open image in new tab**._
-
-
-<!-- todo: test & note:
-
-June 9, 2022, after downloading the samples repo: 
-Does the project successfully build immediately?  No, it says WIL 1.0.200902.2 is missing. that contradicts Update tab, which offers to update from that version (supposedly installed).
-Initially, Update tab of NuGet Package Manager offers to update from that to 1.0.220201.1
-
-
-Which release version of WebView2 SDK is initially installed in the repo downloaded today?   1.0.1056-prerelease
-Updates tab shows possible update from that to 1.0.1248-prerelease
-
-
-In NuGet Package Manager, does it offer to update, to which version of release?
-
-
-
-
-for the windows SDK, I installed them from here Windows SDK and emulator archive | Microsoft Developer
-
-
-https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/
-
-and then right click the project and retarget it to which SDK I want to use
-
--->
+_To zoom the screenshot, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->
@@ -159,7 +133,7 @@ This step is optional.  The sample has preinstalled a version of the WebView2 pr
 
 ![The Updates tab of NuGet Package Manager after initially opening the WebView2SampleWinComp solution.](webview2samplewincomp-images/updates-tab-initial-state.png)
 
-_To zoom, right-click > **Open image in new tab**._
+_To zoom the screenshot, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->
@@ -192,24 +166,11 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## Step 12 - Run (debug) the project
 
-1. In Visual Studio, select **Debug** > **Start Debugging** (`F5`).
+1. In Visual Studio, after building the project, select **Debug** > **Start Debugging** (`F5`).
 
-   Troubleshooting: If you try to debug before building the project, a dialog box might appear: "There were build errors":
+   The sample app window opens:
 
-   ![The 'Build errors' dialog box.](webview2samplewincomp-images/build-errors-dialog-box.png)
-
-   Click the **Yes** button.  A dialog box appears: "Unable to start program: cannot find file":
-
-   ![The 'Unable to start program' dialog box.](webview2samplewincomp-images/unable-to-start-program.png)
-
-   To fix that issue, build the project before debugging it.
-   <!-- ------------------------------- -->
-
-   After resolving the build issue, and then entering debug mode, the sample app window opens.
-
-   <!-- The sample app window opens: -->
-   <!-- ![The WebView2SampleWinComp app window.](webview2samplewincomp-images/app-window.png) -->
-   <!-- todo: create png -->
+   ![The WebView2SampleWinComp app window.](webview2samplewincomp-images/app-window.png)
 
 1. Use the sample app; see [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#readme).
 
@@ -219,15 +180,9 @@ At the top of Visual Studio, set the build target, as follows:
 <!-- ====================================================================== -->
 ## Step 13 - Inspect the code
 
-1. In the Visual Studio code editor, inspect the code.
+1. In the Visual Studio code editor, inspect the code:
 
-   <!--
-   1. In the Visual Studio code editor, inspect the code:
-
-   ![The WebView2SampleWinComp project in Visual Studio](webview2samplewincomp-images/in-visual-studio.png)
-
-   _To zoom, right-click > **Open image in new tab**._
-   -->
+   ![The WebView2SampleWinComp project in Visual Studio](webview2samplewincomp-images/inspect-code-visual-studio.png)
 
 
 <!-- ====================================================================== -->
