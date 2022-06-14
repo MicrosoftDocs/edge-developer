@@ -63,7 +63,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 
 <!-- ====================================================================== -->
-## Step 5 - Open .sln in Visual Studio
+## Step 5 - Open the Solution and set the Windows SDK target
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
@@ -73,42 +73,100 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
-   A **Review Solution Actions** dialog box might appear:
+   A **Review Solution Actions** dialog box opens:
 
-   ![The 'Review Solution Actions' dialog box.](media/webview2samplewincomp-review-solution-actions.png)
+   ![The 'Review Solution Actions' dialog box.](webview2samplewincomp-images/review-solution-actions.png)
 
-1. Click the **OK** button.
+1. If the **Windows SDK Version** dropdown list includes **10.0.20348.0** or **10.0.18362.0**, select one of those, click the **OK** button, and then skip to the next major **Step** section below. <!--19041 supported? ask dev, dependencies issues-->
+
+   If the Windows SDK Version dropdown list doesn't include one of the above versions, install one of those versions of the Windows SDK, as follows.
+
+1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
+
+1. On row **Windows 10 SDK version 2104 (10.0.20348.0)** or **Windows 10 SDK, version 1903 (10.0.18362.1)**, click the **Install SDK** link.<!--doing 18362 now-->  The **Windows SDK setup** window opens:
+
+  ![Windows SDK setup.](webview2samplewincomp-images/windows-sdk-setup.png)
+
+1. Click the **Next** button and then follow the prompts.  You can accept the defaults.  At the end of installing, the Windows SDK Welcome screen for whichever version that you selected appears:
+
+  ![Welcome to the Windows SDK.](webview2samplewincomp-images/welcome-winsdk.png)
+
+1. Click the **Close** button.
+
+1. If the **Review Solution Actions** dialog box is still open: In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or **10.0.18362.0**, and then click the **OK** button:
+
+   ![The 'Review Solution Actions' dialog box.](webview2samplewincomp-images/review-solution-actions.png)
+
+   Or if Visual Studio is already open, in Solution Explorer, right-click the **WebView2SampleWinComp** project and then select **Retarget Projects**.
 
 
 <!-- ====================================================================== -->
 ## Step 6 - Install workloads if prompted
 
-1. If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
-
-   Solution Explorer shows the **WebView2SampleWinComp** project.
-
-   <!-- Solution Explorer shows the **WebView2SampleWinComp** project: -->
-
-   <!-- ![The WebView2SampleWinComp sample opened in Visual Studio in Solution Explorer.](media/webview2samplewincomp-in-solution-explorer.png) -->
-   <!--todo: create png-->
+*  If prompted, install any Visual Studio workloads that are requested.  In a separate window or tab, see [Install Visual Studio workloads](../how-to/machine-setup.md#install-visual-studio-workloads) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
 
 
 <!-- ====================================================================== -->
 ## Step 7 - View the opened project
 
-The project opens in Visual Studio:
+The project opens in Visual Studio, showing the **WebView2SampleWinComp** project in Solution Explorer:
 
-![The WebView2SampleWinComp project in Visual Studio.](media/webview2samplewincomp-project-in-sln-explorer.png)
+![The WebView2SampleWinComp project in Visual Studio.](webview2samplewincomp-images/project-in-sln-explorer.png)
+
+_To zoom, right-click > **Open image in new tab**._
+
+
+<!-- todo: test & note:
+
+June 9, 2022, after downloading the samples repo: 
+Does the project successfully build immediately?  No, it says WIL 1.0.200902.2 is missing. that contradicts Update tab, which offers to update from that version (supposedly installed).
+Initially, Update tab of NuGet Package Manager offers to update from that to 1.0.220201.1
+
+
+Which release version of WebView2 SDK is initially installed in the repo downloaded today?   1.0.1056-prerelease
+Updates tab shows possible update from that to 1.0.1248-prerelease
+
+
+In NuGet Package Manager, does it offer to update, to which version of release?
+
+
+
+
+for the windows SDK, I installed them from here Windows SDK and emulator archive | Microsoft Developer
+
+
+https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/
+
+and then right click the project and retarget it to which SDK I want to use
+
+-->
+
+
+<!-- ====================================================================== -->
+## Step 8 - Install or update the WebView2 prerelease SDK
+
+1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not the Solution node), and then select **Manage NuGet Packages**.  The **NuGet Package Manager** tab opens.
+
+1. Select the **Include prerelease** checkbox.
+
+1. Click the **Updates** tab.
+
+1. If a newer prerelease of the **Microsoft.Web.WebView2** SDK is listed, click the **Update** button.  A prerelease has a "-prerelease" suffix, such as **1.0.1248-prerelease**.  If you want to see details about this step, in a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
+![The Updates tab of NuGet Package Manager after initially opening the WebView2SampleWinComp solution.](webview2samplewincomp-images/updates-tab-initial-state.png)
 
 _To zoom, right-click > **Open image in new tab**._
 
 
 <!-- ====================================================================== -->
-## Step 8 - Install or update the WebView2 SDK
+## Step 8 - Install or update the Windows Implementation Libraries (WIL)
 
-<!-- comment on sample says: "Update apps to to 1.0.1056-prerelease (#110)"  Oct 28 2021 -->
+<!-- resume here -->
 
-1. Install or update the WebView2 SDK on the project node (not the solution node) in Solution Explorer.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not the Solution node), and then select **Manage NuGet Packages**.  The **NuGet Package Manager** tab opens.
+
+1. Install or update the Windows Implementation Libraries (WIL) on the project node (not the solution node) in Solution Explorer.  If the WebView2 prerelease SDK is already installed, and a newer prerelease is listed in the Update tab, update it.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
+
 
 
 <!-- ====================================================================== -->
@@ -126,27 +184,9 @@ At the top of Visual Studio, set the build target, as follows:
 
 
 <!-- ====================================================================== -->
-## Step 10 - Install or update the Microsoft.Windows.CppWinRT package
+## Step 10 - Update the _ SDK
 
-In the above step, the build might fail, as follows:
-
-   ```
-   Build started...
-   1>------ Build started: Project: WebView2SampleWinComp, Configuration: Debug x64 ------
-   1>AppWindow.cpp
-   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(983,26):
-   error C2039: 'wait_for': is not a member of 'winrt::impl'
-   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(103):
-   message : see declaration of 'winrt::impl'
-   1>C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\cppwinrt\winrt\impl\Windows.Foundation.0.h(985):
-   message : see reference to class template instantiation 'winrt::impl::consume_Windows_Foundation_IAsyncAction<D>' being compiled
-   ...
-   1>Generating Code...
-   1>Done building project "WebView2SampleWinComp.vcxproj" -- FAILED.
-   ========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
-   ```
-
-1. To fix the issue: In **Solution Explorer**, right-click the solution's project node (not the solution node) and then select **Manage NuGet Packages**.
+1. In **Solution Explorer**, right-click the solution's project node (not the solution node) and then select **Manage NuGet Packages**.
 
    The **NuGet Package Manager** tab opens in Visual Studio.
 
@@ -154,39 +194,35 @@ In the above step, the build might fail, as follows:
 
 1. On the right of the search bar, clear the **Include prerelease** checkbox (unless you know that you want a prerelease version of the SDK).
 
-1. In the search bar in the upper left, type **Microsoft.Windows.CppWinRT**.
+1. In the search bar in the upper left, type **__**.
 
-1. Below the search bar, click the **Microsoft.Windows.CppWinRT** card.
+1. Below the search bar, click the **__** card.
 
-1. In the right-hand pane, click the **Install** (or **Update**) button.  NuGet downloads the Microsoft.Windows.CppWinRT package to your machine, for use by this project.
+1. In the right-hand pane, click the **Install** (or **Update**) button.  NuGet downloads the __ package to your machine, for use by this project.
 
-   ![Selecting the 'Microsoft.Windows.CppWinRT' package in NuGet Package Manager in Visual Studio.](media/webview2samplewincomp-manage-nuget-cppwinrt.png)
+   ![Selecting the '__' package in NuGet Package Manager in Visual Studio.](webview2samplewincomp-images/manage-nuget-__.png)
 
    _To zoom, right-click > **Open image in new tab**._
 
+
+
+_update the steps below:_
+
    The **Preview Changes** dialog box opens:
 
-   ![The Preview Changes dialog box for the 'Microsoft.Windows.CppWinRT' package.](media/webview2samplewincomp-preview-changes-cppwinrt.png)
+   ![The Preview Changes dialog box for the 'Microsoft.Windows.CppWinRT' package.](webview2samplewincomp-images/preview-changes-cppwinrt.png)
 
 1. Click the **OK** button.
 
 1. The `readme.txt` file opens for the CppWinRT package:
 
-   ![The readme.txt file for the CppWinRT' package.](media/webview2samplewincomp-cppwinrt-readme.png)
+   ![The readme.txt file for the CppWinRT' package.](webview2samplewincomp-images/cppwinrt-readme.png)
 
 The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue with the steps below.
 
-### See also
 
-* [NuGet.org > Microsoft.Windows.CppWinRT NuGet package](https://www.nuget.org/packages/Microsoft.Windows.CppWinRT/)
 
-* [GitHub > microsoft/cppwinrt repo > Issues > error C2039: 'wait_for': is not a member of 'winrt::impl' #744](https://github.com/microsoft/cppwinrt/issues/744)
-
-   <!-- > `impl::wait_for` is defined later in `Windows.Foundation.h:2960`, but other foundation headers (via `2.h`, `1.h` and `0.h`) included earlier require it.
-   >
-   > The version of C++/WinRT that ships in the Windows SDK is rather old, and fails to compile with the stricter conformance expectations of more recent compilers. You can get a newer version of C++/WinRT here: https://aka.ms/cppwinrt/nuget
-   >
-   > I ended up running the `cppwinrt.exe` manually, since I couldn't get the `CMake VC_PROJECT_IMPORT` to work.  This works well for me; the headers are all generated in my build folder at generation time. -->
+<!-- todo: delete unused png's -->
 
 
 <!-- ====================================================================== -->
@@ -195,12 +231,6 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project, and then select **Build**.
 
    This builds the project file `SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.vcxproj`.
-
-   <!-- The build might fail:
-
-   ![Build fail: after installing the Microsoft.Windows.CppWinRT package.](media/webview2samplewincomp-build-fail-after-cppwinrt-pkg.png)
-
-   _To zoom, right-click > **Open image in new tab**._ -->
 
 
 <!-- ====================================================================== -->
@@ -212,11 +242,11 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
 
    Troubleshooting: If you try to debug before building the project, a dialog box might appear: "There were build errors":
 
-   ![The 'Build errors' dialog box.](media/webview2samplewincomp-build-errors-dialog-box.png)
+   ![The 'Build errors' dialog box.](webview2samplewincomp-images/build-errors-dialog-box.png)
 
    Click the **Yes** button.  A dialog box appears: "Unable to start program: cannot find file":
 
-   ![The 'Unable to start program' dialog box.](media/webview2samplewincomp-unable-to-start-program.png)
+   ![The 'Unable to start program' dialog box.](webview2samplewincomp-images/unable-to-start-program.png)
 
    To fix that issue, build the project before debugging it.
    <!-- ------------------------------- -->
@@ -224,7 +254,7 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
    After resolving the build issue, and then entering debug mode, the sample app window opens.
 
    <!-- The sample app window opens: -->
-   <!-- ![The WebView2SampleWinComp app window.](media/WebView2SampleWinComp-app-window.png) -->
+   <!-- ![The WebView2SampleWinComp app window.](webview2samplewincomp-images/app-window.png) -->
    <!-- todo: create png -->
 
 1. Use the sample app; see [README file for WebView2SampleWinComp](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2SampleWinComp#readme).
@@ -240,7 +270,7 @@ The Microsoft.Windows.CppWinRT package is now installed or updated.  Continue wi
    <!--
    1. In the Visual Studio code editor, inspect the code:
 
-   ![The WebView2SampleWinComp project in Visual Studio](media/WebView2SampleWinComp-in-visual-studio.png)
+   ![The WebView2SampleWinComp project in Visual Studio](webview2samplewincomp-images/in-visual-studio.png)
 
    _To zoom, right-click > **Open image in new tab**._
    -->
