@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/07/2021
+ms.date: 06/15/2022
 ---
 # Create an extension tutorial, part 2
 
@@ -93,7 +93,7 @@ if (sendMessageId) {
             chrome.tabs.sendMessage(
                 tabs[0].id,
                 {
-                    url: chrome.extension.getURL("images/stars.jpeg"),
+                    url: chrome.runtime.getURL("images/stars.jpeg"),
                     imageDivId: `${guidGenerator()}`,
                     tabId: tabs[0].id
                 },
@@ -126,8 +126,11 @@ Add another entry in the `manifest.json` file to declare that the image is avail
 
 ```json
 "web_accessible_resources": [
-    "images/*.jpeg"
-]
+    {
+      "resources": ["images/*.jpeg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 ```
 
 You've now written the code in your `popup.js` file to send a message to the content page that is embedded on the current active tab page, but you haven't created and injected that content page.  Do that now.
@@ -140,7 +143,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
@@ -148,7 +151,7 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
         "48": "icons/nasapod48x48.png",
         "128": "icons/nasapod128x128.png"
     },
-    "browser_action": {
+    "action": {
         "default_popup": "popup/popup.html"
     },
     "content_scripts": [
@@ -160,7 +163,10 @@ The updated `manifest.json` that includes the `content-scripts` and `web_accessi
         }
     ],
     "web_accessible_resources": [
-        "images/*.jpeg"
+        {
+            "resources": ["images/*.jpeg"],
+            "matches": ["<all_urls>"]
+        }
     ]
 }
 ```

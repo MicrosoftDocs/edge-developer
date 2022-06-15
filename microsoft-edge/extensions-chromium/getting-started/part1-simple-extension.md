@@ -135,7 +135,7 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
         "48": "icons/nasapod48x48.png",
         "128": "icons/nasapod128x128.png"
     },
-    "browser_action": {
+    "action": {
         "default_popup": "popup/popup.html"
     }
 }
