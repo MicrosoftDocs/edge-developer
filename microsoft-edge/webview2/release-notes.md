@@ -70,7 +70,7 @@ The following items are now stable:
 
 *  The [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true) which provides the HTTP status code for navigation requests in `NavigationCompleted` events.
 
-#### Bug Fixes
+#### Bug fixes
 
 *  Fixed an issue when using a proxy from `AddHostObjectToScript` in script.  If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.
 *  Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))
@@ -123,7 +123,7 @@ The following APIs are promoted to stable in this prerelease SDK:
    * `clearBrowsingDataInTimeRange`
    * `clearBrowsingDataAll`
 
-#### Bug Fixes
+#### Bug fixes
 
 * Fixed an unavoidable crash that occurred in the WPF control's `OnWindowPositionChanged` event. ([Issue #1531](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1531))
 
@@ -200,7 +200,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 
 * [Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) which provides a way to customize the default download location.
 
-#### Bug Fixes
+#### Bug fixes
 
 * Fixed `ZoomFactor` issue that incorrectly sets `ZoomFactor` value to the maximum value when it is out of bounds.
 
@@ -263,7 +263,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 *    The [HiddenPdfToolbarItems API](/microsoft-edge/webview2/reference/win32/icorewebview2settings7?view=webview2-1.0.1189-prerelease&preserve-view=true) is available to customize the PDF toolbar items.
 *  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 using the same user data folder.
 
-#### Bug Fixes
+#### Bug fixes
 
 *   Fixed a bug where WebView2 app gets stuck occasionally with UWP.
 *   Fixed a bug where focus is not returned to the application after closing the **Find** bar for windowed mode.
@@ -329,7 +329,7 @@ The following APIs are promoted to stable in this prerelease SDK:
    *  `add_PermissionRequested`
    *  `remove_PermissionRequested`
 
-#### Bug Fixes
+#### Bug fixes
 
 *  Fixed an issue causing erroneous warnings in the Visual Studio Error List window.  ([Issue #1722](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1722))
 *  Fixed a bug where NewWindowRequested was not getting raised when opening PDF downloads.
@@ -389,7 +389,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 *  The ProcessInfo APIs provides more information about WebView2 [processes](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfo?view=webview2-1.0.1133-prerelease&preserve-view=true) and [process collections](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprocessinfocollection?view=webview2-1.0.1133-prerelease&preserve-view=true).
 *  The [HTTP Authentication API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental10?view=webview2-1.0.1133-prerelease&preserve-view=true).
 
-#### Bug Fixes
+#### Bug fixes
 
 *  Fixed a bug that prevented `Set-Cookies` header from showing up in the `WebResourceResponseReceived` event.
 *  Resolved a bug where pop-ups and owned windows would jump to a different position before closing instead of closing
