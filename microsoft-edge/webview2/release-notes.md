@@ -38,7 +38,13 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 <!-- ====================================================================== -->
 ## Platforms and languages covered
 
-Generally, release notes apply to both Win32/C++ and .NET/C#.  In some cases, a release note specifies a particular platform that it applies to.  The [Win32/C++ API Reference](/microsoft-edge/webview2/reference/win32/icorewebview2) is parallel with the [.NET/C# API Reference](/dotnet/api/microsoft.web.webview2.core.corewebview2).
+Generally, release notes apply to Win32, .NET, and WinRT.  The APIs for the platforms are roughly parallel:
+
+* Win32 [ICoreWebView2](/microsoft-edge/webview2/reference/win32/icorewebview2) together with similarly named interfaces such as [ICoreWebView2_10](/microsoft-edge/webview2/reference/win32/icorewebview2_10).
+
+* .NET [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2).
+
+* WinRT [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2).
 
 
 <!-- ====================================================================== -->
