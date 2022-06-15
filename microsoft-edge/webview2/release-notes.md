@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 05/09/2022
+ms.date: 06/15/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -36,7 +36,6 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
-
 ## 1.0.1245.22
   
 Release Date: June 15, 2022  
@@ -44,6 +43,9 @@ Release Date: June 15, 2022
 [NuGet package for WebView2 SDK 1.0.1245.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)  
   
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.1245.22 or higher.
+
+There is no corresponding prerelease package.
+
 
 ### General
 
@@ -58,8 +60,6 @@ The following items are now stable:
    * `clearBrowsingDataAll`
 
 *  The [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true) which provides the HTTP status code for navigation requests in `NavigationCompleted` events.
-
-There is no corresponding prerelease package.
 
 
 #### Bug Fixes
