@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 01/07/2021
+ms.date: 06/15/2022
 ---
 # Create an extension tutorial, part 1
 
@@ -37,7 +37,7 @@ The following code snippet outlines the basic information needed in your `manife
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "An extension to display the NASA picture of the day."
 }
 ```
@@ -72,7 +72,7 @@ Next, add the icons to the `manifest.json` file. Update your `manifest.json` fil
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
@@ -127,7 +127,7 @@ Finally, ensure you register the pop-up in `manifest.json` under `browser_action
 {
     "name": "NASA picture of the day viewer",
     "version": "0.0.0.1",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "An extension to display the NASA picture of the day.",
     "icons": {
         "16": "icons/nasapod16x16.png",
