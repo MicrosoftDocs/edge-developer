@@ -18,7 +18,21 @@ ms.date: 06/15/2022
 
 
 <!-- ====================================================================== -->
-## 1
+## The 3D View tool responds better in narrow layouts
+
+<!-- Title: 3D View: Now with more responsive design -->
+<!-- Subtitle: The 3D View toolbar now wraps around in a narrower window. -->
+
+As folks use the **3D View** tool more, especially with the addition of Composited Layers (formerly known as **Layers**), we have found opportunities to improve the UI based on your feedback.  We've made the layout of the 3D View toolbar more responsive so that your development isn't hindered even when DevTools is narrow.  Keep the feedback coming as you check out 3D View!
+
+![Responsive layout of toolbar in 3D View tool.](devtools-103-images/3d-view-responsive-layout.png)
+
+See also:
+* [Navigate webpage layers, z-index, and DOM using the 3D View tool](../../../3d-view/index.md)
+
+
+<!-- ====================================================================== -->
+<!-- ## 2 -->
 
 <!-- Title:  -->
 <!-- Subtitle: . -->
@@ -32,21 +46,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## 2
-
-<!-- Title:  -->
-<!-- Subtitle: . -->
-
-<!-- ![alt text.](devtools-103-images/x.png) -->
-
-<!--
-See also:
-* []()
--->
-
-
-<!-- ====================================================================== -->
-## 3
+<!-- ## 3 -->
 
 <!-- Title:  -->
 <!-- Subtitle: . -->
