@@ -60,7 +60,7 @@ The Server Certificate API provides an option to trust the server's TLS certific
 
 #### [C#](#tab/c-sharp)
 
-* [CoreWebView2.ClearServerCertificateErrorActionsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.clearservercertificateerroractionsasync?view=webview2-dotnet-1.0.1245.22&preserve-view=true#microsoft-web-webview2-core-corewebview2-clearservercertificateerroractionsasync)
+* [CoreWebView2.ClearServerCertificateErrorActionsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.clearservercertificateerroractionsasync?view=webview2-dotnet-1.0.1245.22&preserve-view=true#microsoft-web-webview2-core-corewebview2-clearservercertificateerroractionsasync)<!--c#-->
 * [CoreWebView2.ServerCertificateErrorDetected Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.servercertificateerrordetected?view=webview2-dotnet-1.0.1245.22&preserve-view=true)
 
 #### [C++](#tab/cpp)
@@ -76,7 +76,7 @@ The ClearBrowsingData API allows you to programmatically clear specific data typ
 
 #### [C#](#tab/c-sharp)
 
-* [interface ICoreWebView2Profile2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true)
+* [interface ICoreWebView2Profile2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true)<!--c#-->
    * `clearBrowsingDataInTimeRange`
    * `clearBrowsingDataAll`
 
@@ -95,7 +95,7 @@ The HttpStatusCode API provides the HTTP status code for navigation requests in 
 
 #### [C#](#tab/c-sharp)
 
-* [CoreWebView2NavigationCompletedEventArgs.HttpStatusCode Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs.httpstatuscode?view=webview2-dotnet-1.0.1245.22&preserve-view=true#microsoft-web-webview2-core-corewebview2navigationcompletedeventargs-httpstatuscode)
+* [CoreWebView2NavigationCompletedEventArgs.HttpStatusCode Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs.httpstatuscode?view=webview2-dotnet-1.0.1245.22&preserve-view=true#microsoft-web-webview2-core-corewebview2navigationcompletedeventargs-httpstatuscode)<!--c#-->
 
 #### [C++](#tab/cpp)
 
@@ -110,7 +110,7 @@ The HttpStatusCode API provides the HTTP status code for navigation requests in 
 *  Fixed an issue when using a proxy from `AddHostObjectToScript` in script. If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.  
 *   Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862)) 
 *   Fixed a bug that caused increased memory usage with `WebResourceRequested` events using large data. ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
-*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) was made compatible with previous versions again. <!--TODO: was this an issue with C#, or only with C++?--> (C#: [CoreWebView2.StatusBarTextChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartextchanged?view=webview2-dotnet-1.0.1245.22&preserve-view=true), [CoreWebView2.StatusBarText Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartext?view=webview2-dotnet-1.0.1245.22&preserve-view=true).)  ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))
+*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) was made compatible with previous versions again. <!--TODO: was this an issue with C#, or only with C++?--> (C#: [CoreWebView2.StatusBarTextChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartextchanged?view=webview2-dotnet-1.0.1245.22&preserve-view=true), [CoreWebView2.StatusBarText Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartext?view=webview2-dotnet-1.0.1245.22&preserve-view=true).)<!--c#-->  ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))
 *   Better support for apps running as admin. ([Issue #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356)) 
 
 <!-- ====================================================================== -->
@@ -1072,11 +1072,11 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 
 *  Turned on WinForms designer in .NET Core 3.1+ and .NET 5.
 *  Improved .NET cookie management.  ([Issue #611](https://github.com/MicrosoftEdge/WebViewFeedback/issues/611)).
-*  Replaced `CoreWebView2Ready` with [CoreWebView2InitializationCompleted](/dotnet/api/microsoft.web.webview2.core.corewebview2initializationcompletedeventargs).
+*  Replaced `CoreWebView2Ready` with [CoreWebView2InitializationCompleted](/dotnet/api/microsoft.web.webview2.core.corewebview2initializationcompletedeventargs).<!--c#-->
 
 #### Bug fixes
 
-*  Added [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed) event to support `AcceleratorKey` select in WebView2.  ([Issue #288](https://github.com/MicrosoftEdge/WebViewFeedback/issues/288)).
+*  Added [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.wpf.webview2.acceleratorkeypressed) event to support `AcceleratorKey` select in WebView2.  ([Issue #288](https://github.com/MicrosoftEdge/WebViewFeedback/issues/288)).<!--c#-->
 *  Removed unnecessary files from being output to WebView2 folders.  ([Issue #461](https://github.com/MicrosoftEdge/WebViewFeedback/issues/461)).
 *  Improved host object API.  ([Issue #335](https://github.com/MicrosoftEdge/WebViewFeedback/issues/335) and [Issue #525](https://github.com/MicrosoftEdge/WebViewFeedback/issues/525)).
 
@@ -1128,9 +1128,9 @@ This prerelease version of the WebView2 SDK requires WebView2 Runtime version 86
 *  Added bug fixed for Input Method in Visual Hosting.
 *  Removed include requirement for `version.lib` when using WebView2 static library.
 
-### .NET
+### .NET<!--c#-->
 
-*  Updated [CoreWebView2](/dotnet/api/microsoft.web.webview2.core.corewebview2) class to expose the `CoreWebView2Environment` variable.
+*  Updated [CoreWebView2](/dotnet/api/microsoft.web.webview2.core.corewebview2) class to expose the `CoreWebView2Environment` variable.<!--c#-->
 *  Changed implementations of custom EventArgs classes in `Microsoft.Web.WebView2.Core` namespace to subclasses of [System.EventArgs](/dotnet/api/system.eventargs) or [System.ComponentModel.CancelEventArgs](/dotnet/api/system.componentmodel.canceleventargs).  ([Issue #250](https://github.com/MicrosoftEdge/WebViewFeedback/issues/250))
 *  Added support for [CoreWebView2CreationProperties](/dotnet/api/microsoft.web.webview2.winforms) in WinForms.  ([Issue #204](https://github.com/MicrosoftEdge/WebViewFeedback/issues/204)).
 *  Added [WebResourceRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested) .NET APIs.  ([Issue #219](https://github.com/MicrosoftEdge/WebViewFeedback/issues/219)).
@@ -1245,14 +1245,14 @@ This version of the WebView2 SDK requires Microsoft Edge version 85.0.538.0 or h
 
 *  Updated [AddHostObjectToScript](/microsoft-edge/webview2/reference/win32/icorewebview2?view=webview2-0.9.538&preserve-view=true#addhostobjecttoscript).  The original host object serializer markers are now set to the proxy objects.  Then host object serializer markers are serialized back as a host object when passed as a parameter in the JavaScript callback ([#148](https://github.com/MicrosoftEdge/WebViewFeedback/issues/148)).
 
-### .NET (0.9.538 prerelease)
+### .NET (0.9.538 prerelease)<!--c#-->
 
 *  Released WinForms and WPF WebView2API Samples, which are comprehensive guides of the WebView2 SDK.  See [Samples Repo](https://github.com/MicrosoftEdge/WebView2Samples).
 *  Added support for visual hosting and window features [experimental APIs](concepts/versioning.md#experimental-apis).
 *  > [!IMPORTANT]
-   > **Breaking Change**:  The following deferrals now implement IDisposable:  [ScriptDialogOpening](/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening), [NewWindowRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested), [WebResourceRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested), and [PermissionRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested).
+   > **Breaking Change**:  The following deferrals now implement IDisposable:  [ScriptDialogOpening](/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening), [NewWindowRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested), [WebResourceRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.webresourcerequested), and [PermissionRequested](/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested).<!--c#-->
 
-*  Added [GetAvailableBrowserVersionString](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getavailablebrowserversionstring) and [CompareBrowserVersions](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions) as [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) statics.
+*  Added [GetAvailableBrowserVersionString](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getavailablebrowserversionstring) and [CompareBrowserVersions](/dotnet/api/microsoft.web.webview2.core.corewebview2environment.comparebrowserversions) as [CoreWebView2Environment](/dotnet/api/microsoft.web.webview2.core.corewebview2environment) statics.<!--c#-->
 
 
 <!-- ====================================================================== -->
@@ -1265,9 +1265,9 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 84.0
 *  > [!IMPORTANT]
    > **Announcement**:  WebView2 now supports Windows Forms and WPF on .NET Framework 4.6.2 or later and .NET Core 3.0 or later in the **prerelease package**.
 
-*  For more information about building WPF apps, see [Get started with WebView2 in WPF apps](get-started/wpf.md) and the WebView2 [WPF Reference](/dotnet/api/microsoft.web.webview2.wpf) for WPF-specific APIs.
-*  For more information about building Windows Forms apps, see [Get started with WebView2 in WinForms apps](get-started/winforms.md) and the WebView2 [Windows Forms Reference](/dotnet/api/microsoft.web.webview2.winforms) for Windows Forms specific APIs.
-*  For more information about the CoreWebView2 APIs, see [.NET Reference](/dotnet/api/microsoft.web.webview2.core).
+*  For more information about building WPF apps, see [Get started with WebView2 in WPF apps](get-started/wpf.md) and the WebView2 [WPF Reference](/dotnet/api/microsoft.web.webview2.wpf) for WPF-specific APIs.<!--c#-->
+*  For more information about building Windows Forms apps, see [Get started with WebView2 in WinForms apps](get-started/winforms.md) and the WebView2 [Windows Forms Reference](/dotnet/api/microsoft.web.webview2.winforms) for Windows Forms specific APIs.<!--c#-->
+*  For more information about the CoreWebView2 APIs, see [.NET Reference](/dotnet/api/microsoft.web.webview2.core).<!--c#-->
 *  > [!CAUTION]
    > **Known Issues**:  The WebView2 team is aware of some issues in the prerelease that are being resolved in future releases.
    >
