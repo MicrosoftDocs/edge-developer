@@ -51,25 +51,23 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 
 The following items are now stable:
 
-* The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
+* The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level. It renders the page without prompting the user about TLS or providing the ability to cancel the web request.
 
-*  The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22) which allows developers to programmatically clear specific data types for a duration:
+*  The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true) which allows developers to programmatically clear specific data types for a duration:
    * `clearBrowsingDataInTimeRange`
    * `clearBrowsingDataAll`
 
-*  The [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22) which provides the HTTP status code for navigation requests in NavigationCompleted events.
+*  The [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true) which provides the HTTP status code for navigation requests in `NavigationCompleted` events.
 
 There is no corresponding prerelease package.
 
 
 #### Bug Fixes
   
-*   Fixed issues with on-screen keyboard where keyboard does not reappear once it is closed by clicking X button, and 
-keyboard gets dismissed when users switch from one edit control to another within WebView2.  ([Issue #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460))
-*  Fixed an issue where when using a proxy from `AddHostObjectToScript` in script, if you call `setHostProperty` and it failed, you could have 
-received an internal error message structure rather than a JavaScript Error object.  
+*   Fixed an issue with the on-screen keyboard in which the keyboard does not reappear once it is closed by clicking the **X** button. Also fixed an issue in which the keyboard gets dismissed when users switch from one edit control to another within WebView2. ([Issue #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460))
+*  Fixed an issue when using a proxy from `AddHostObjectToScript` in script. If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.  
 *   Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862)) 
-*   Fixes a bug that caused increased memory usage with `WebResourceRequested` events with large data. ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
+*   Fixed a bug that caused increased memory usage with `WebResourceRequested` events using large data. ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
 *   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22) was made compatible with previous versions again. ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))   
 *   Better support for apps running as admin. ([Issue #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356)) 
 
