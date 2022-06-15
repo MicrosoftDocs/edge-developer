@@ -36,6 +36,13 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
+## Platforms and languages covered
+
+Generally, release notes apply to both Win32/C++ and .NET/C#.  In some cases, a release note specifies a particular platform that it applies to.  Generally, the [Win32/C++ API Reference](/microsoft-edge/webview2/reference/win32/icorewebview2) is parallel with the [.NET/C# API Reference](/dotnet/api/microsoft.web.webview2.core.corewebview2) for WebView2.
+
+
+
+<!-- ====================================================================== -->
 ## 1.0.1245.22
   
 Release Date: June 15, 2022  
@@ -1066,7 +1073,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
    *  [DOMContentLoaded API](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#add_domcontentloaded)
    *  [Environment property](/microsoft-edge/webview2/reference/win32/icorewebview2_2?view=webview2-1.0.721-prerelease&preserve-view=true#get_environment)
 
-### .NET
+### .NET<!--c#-->
 
 #### Features
 
