@@ -68,7 +68,7 @@ There is no corresponding prerelease package.
 *  Fixed an issue when using a proxy from `AddHostObjectToScript` in script. If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.  
 *   Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862)) 
 *   Fixed a bug that caused increased memory usage with `WebResourceRequested` events using large data. ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
-*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22) was made compatible with previous versions again. ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))   
+*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) was made compatible with previous versions again. ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))   
 *   Better support for apps running as admin. ([Issue #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356)) 
 
 <!-- ====================================================================== -->
