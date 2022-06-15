@@ -51,15 +51,57 @@ There is no corresponding prerelease package.
 
 #### Promotions
 
-The following items are now stable:
+The following items are now stable.
 
-* The [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level. It renders the page without prompting the user about TLS or providing the ability to cancel the web request.
 
-*  The [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true) which allows developers to programmatically clear specific data types for a duration:
+##### Server Certificate API
+
+The Server Certificate API provides an option to trust the server's TLS certificate at the application level. It renders the page without prompting the user about TLS or providing the ability to cancel the web request.
+
+#### [C#](#tab/c-sharp)
+
+* [CoreWebView2.ClearServerCertificateErrorActionsAsync Method](/dotnet/api/microsoft.web.webview2.core.corewebview2.clearservercertificateerroractionsasync?view=webview2-dotnet-1.0.1245.22&preserve-view=true#microsoft-web-webview2-core-corewebview2-clearservercertificateerroractionsasync)
+* [CoreWebView2.ServerCertificateErrorDetected Event](/dotnet/api/microsoft.web.webview2.core.corewebview2.servercertificateerrordetected?view=webview2-dotnet-1.0.1245.22&preserve-view=true)
+
+#### [C++](#tab/cpp)
+
+* [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2_14?view=webview2-1.0.1245.22&preserve-view=true)
+
+---
+
+
+##### ClearBrowsingData API
+
+The ClearBrowsingData API allows you to programmatically clear specific data types for a duration.
+
+#### [C#](#tab/c-sharp)
+
+* [interface ICoreWebView2Profile2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true)
    * `clearBrowsingDataInTimeRange`
    * `clearBrowsingDataAll`
 
-*  The [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true) which provides the HTTP status code for navigation requests in `NavigationCompleted` events.
+#### [C++](#tab/cpp)
+
+* [ClearBrowsingData API](/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22&preserve-view=true)
+   * `clearBrowsingDataInTimeRange`
+   * `clearBrowsingDataAll`
+
+---
+
+
+##### HttpStatusCode API
+
+The HttpStatusCode API provides the HTTP status code for navigation requests in `NavigationCompleted` events.
+
+#### [C#](#tab/c-sharp)
+
+* [CoreWebView2NavigationCompletedEventArgs.HttpStatusCode Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs.httpstatuscode?view=webview2-dotnet-1.0.1245.22&preserve-view=true#microsoft-web-webview2-core-corewebview2navigationcompletedeventargs-httpstatuscode)
+
+#### [C++](#tab/cpp)
+
+* [ICoreWebView2NavigationCompletedEventArgs2.get_HttpStatusCode property](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true#get_httpstatuscode)
+
+---
 
 
 #### Bug Fixes
@@ -68,7 +110,7 @@ The following items are now stable:
 *  Fixed an issue when using a proxy from `AddHostObjectToScript` in script. If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.  
 *   Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862)) 
 *   Fixed a bug that caused increased memory usage with `WebResourceRequested` events using large data. ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
-*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) was made compatible with previous versions again. ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))   
+*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) was made compatible with previous versions again. <!--TODO: was this an issue with C#, or only with C++?--> (C#: [CoreWebView2.StatusBarTextChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartextchanged?view=webview2-dotnet-1.0.1245.22&preserve-view=true), [CoreWebView2.StatusBarText Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.statusbartext?view=webview2-dotnet-1.0.1245.22&preserve-view=true).)  ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))
 *   Better support for apps running as admin. ([Issue #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356)) 
 
 <!-- ====================================================================== -->
