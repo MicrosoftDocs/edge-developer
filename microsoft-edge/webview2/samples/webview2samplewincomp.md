@@ -79,6 +79,10 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or **10.0.18362.0** (but not 10.0.19041.0), and then click the **OK** button.  If those versions aren't available, do the steps in the "Install the Windows SDK" section below.  Otherwise, skip to the section below that.
 
+If the solution is already open, you can change the target as follows:
+
+* In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not solution), and then click **Retarget Projects**.
+
 
 <!-- ====================================================================== -->
 ## Step 6 - Install the Windows SDK
@@ -89,7 +93,15 @@ To install a Windows 10 SDK:
 
 1. Go to [Windows SDK and emulator archive](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
 
-1. On row **Windows 10 SDK version 2104 (10.0.20348.0)** or later, or **Windows 10 SDK, version 1903 (10.0.18362.1)**, click the **Install SDK** link.  The **Windows SDK setup** window opens:
+1. On one of the following rows, click the **Install SDK** link:
+   *  Windows 10 SDK version 2104 (10.0.20348.0) (or later)
+   *  Windows 10 SDK, version 1903 (10.0.18362.1)
+
+   A version-specific copy of `winsdksetup.exe` is downloaded to your `Downloads` directory.
+
+1. In your `Downloads` directory, open the copy of `winsdksetup.exe` that you just downloaded.
+
+1.   The **Windows SDK setup** window opens:
 
   ![Windows SDK setup.](webview2samplewincomp-images/windows-sdk-setup.png)
 
@@ -99,7 +111,7 @@ To install a Windows 10 SDK:
 
 1. Click the **Close** button.
 
-Do the previous step, "Open the Solution and set the Windows SDK target".
+Do the previous step, "Open the Solution and set the Windows SDK target".  Or, if the solution is already open, in **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not solution), and then click **Retarget Projects**.
 
 
 <!-- ====================================================================== -->
@@ -139,14 +151,11 @@ _To zoom the screenshot, right-click > **Open image in new tab**._
 <!-- ====================================================================== -->
 ## Step 10 - Install or update the Windows Implementation Libraries (WIL)
 
-<!-- resume here -->
-
 This step is optional.  The sample has preinstalled a version of the Windows Implementation Libraries (WIL).
 
 1. In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not the Solution node), and then select **Manage NuGet Packages**.  The **NuGet Package Manager** tab opens.
 
 1. Install or update the Windows Implementation Libraries (WIL) on the project node (not the solution node) in Solution Explorer.  If the WebView2 prerelease SDK is already installed, and a newer prerelease is listed in the Update tab, update it.  In a separate window or tab, see [Install the WebView2 SDK](../how-to/machine-setup.md#install-the-webview2-sdk) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue below.
-
 
 
 <!-- ====================================================================== -->
