@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/14/2022
+ms.date: 06/15/2022
 ---
 # Release Notes for the WebView2 SDK
 
@@ -36,16 +36,21 @@ To use a prerelease SDK along with a Microsoft Edge preview channel, see [Test u
 
 
 <!-- ====================================================================== -->
+## Platforms and languages covered
+
+Generally, release notes apply to both Win32/C++ and .NET/C#.  In some cases, a release note specifies a particular platform that it applies to.  The [Win32/C++ API Reference](/microsoft-edge/webview2/reference/win32/icorewebview2) is parallel with the [.NET/C# API Reference](/dotnet/api/microsoft.web.webview2.core.corewebview2).
+
+
+<!-- ====================================================================== -->
 ## 1.0.1245.22
-  
-Release Date: June 14, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1245.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)  
-  
+
+Release Date: June 14, 2022
+
+[NuGet package for WebView2 SDK 1.0.1245.22](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1245.22)
+
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 102.0.1245.22 or higher.
 
 There is no corresponding prerelease package.
-
 
 ### General
 
@@ -62,24 +67,22 @@ The following items are now stable:
 
 *  The [HttpStatusCode API](/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2?view=webview2-1.0.1245.22&preserve-view=true) which provides the HTTP status code for navigation requests in `NavigationCompleted` events.
 
-
 #### Bug Fixes
-  
-*   Fixed an issue with the on-screen keyboard in which the keyboard does not reappear once it is closed by clicking the **X** button. Also fixed an issue in which the keyboard gets dismissed when users switch from one edit control to another within WebView2. ([Issue #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460))
-*  Fixed an issue when using a proxy from `AddHostObjectToScript` in script. If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.  
-*   Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862)) 
-*   Fixed a bug that caused increased memory usage with `WebResourceRequested` events using large data. ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171)) 
-*   Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) was made compatible with previous versions again. ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))   
-*   Better support for apps running as admin. ([Issue #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356)) 
+
+*  Fixed an issue when using a proxy from `AddHostObjectToScript` in script.  If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.
+*  Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))
+*  Fixed a bug that caused increased memory usage with `WebResourceRequested` events using large data.  ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171))
+*  Fixed `StatusBarTextChanged` regression. The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1245.22&preserve-view=true) was made compatible with previous versions again. ([Issue #2414](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2414))
+*  Better support for apps running as admin. ([Issue #2356](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2356))
+
 
 <!-- ====================================================================== -->
-
 ## 1.0.1210.39
-  
-Release Date: May 9, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1210.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)  
-  
+
+Release Date: May 9, 2022
+
+[NuGet package for WebView2 SDK 1.0.1210.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1210.39)
+
 For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 101.0.1210.39 or higher.
 
 ### General
@@ -96,16 +99,17 @@ The following items are now stable:
 
 <!-- ====================================================================== -->
 ## 1.0.1248-prerelease
-  
-Release Date: May 9, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1248-prelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1248-prerelease)  
-  
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 102.0.1248.0 or higher.  
+
+Release Date: May 9, 2022
+
+[NuGet package for WebView2 SDK 1.0.1248-prelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1248-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 102.0.1248.0 or higher.
 
 ### General
 
 * Added support for WinRT Object projection into JavaScript by adding WinRT JS Projection tool (**wv2winrt**) in NuGet package. For instructions about using the WinRT JS Projection tool see [Call native-side WinRT code from web-side code](/microsoft-edge/webview2/how-to/winrt-from-js).
+
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:
@@ -117,7 +121,7 @@ The following APIs are promoted to stable in this prerelease SDK:
    * `clearBrowsingDataAll`
 
 #### Bug Fixes
-  
+
 * Fixed an unavoidable crash that occurred in the WPF control's `OnWindowPositionChanged` event. ([Issue #1531](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1531))
 
 * Fixed the issue with `CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess` not working properly in .NET SDK. ([Issue #2363](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2363))
@@ -125,21 +129,20 @@ The following APIs are promoted to stable in this prerelease SDK:
 * Fixed a runtime regression that caused some Office Add-ins which use host objects to crash during operations that previously worked. ([Issue #2337](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2337))
 
 * Fixed an issue where WebView2 content can become blurry when moving between monitors with different scaling.
- 
+
 * Fixed a regression to make sure that WebView2 creation fails quickly with `HRESULT_FROM_WIN32(ERROR_INVALID_STATE)` instead of time out.
- 
+
 * Fixed a bug where changes from Chromium broke WebView2 background color.
 
 
 <!-- ====================================================================== -->
-
 ## 1.0.1185.39
-  
-Release Date: April 12, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1185.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)  
-  
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.0.1185.39 or higher.  
+
+Release Date: April 12, 2022
+
+[NuGet package for WebView2 SDK 1.0.1185.39](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1185.39)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 100.0.1185.39 or higher.
 
 ### General
 
@@ -162,23 +165,23 @@ The following items are now stable:
 
 * The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1185.39&preserve-view=true) allows control of whether or not other processes can create WebView2 from `WebView2Environment` created with the same user data folder and therefore sharing the same WebView browser process instance.
 
-* The [permission requested support for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1185.39&preserve-view=true): 
+* The [permission requested support for iframes](/microsoft-edge/webview2/reference/win32/icorewebview2frame3?view=webview2-1.0.1185.39&preserve-view=true):
     * `add_PermissionRequested`
     * `remove_PermissionRequested`
 
-<!-- ====================================================================== -->
 
+<!-- ====================================================================== -->
 ## 1.0.1222-prerelease
-  
-Release Date: April 12, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1222-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)  
-  
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 102.0.1222.0 or higher.  
+
+Release Date: April 12, 2022
+
+[NuGet package for WebView2 SDK 1.0.1222-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1222-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 102.0.1222.0 or higher.
 
 ### General
 
-#### Experimental Features
+#### Experimental features
 
 * Added the [Server Certificate API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental15?view=webview2-1.0.1222-prerelease&preserve-view=true) which provides an option to trust the server's TLS certificate at the application level and render the page without prompting the user about TLS or providing the ability to cancel the web request.
 
@@ -186,7 +189,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 #### Promotions
 
-The following APIs are promoted to stable in this prerelease SDK:  
+The following APIs are promoted to stable in this prerelease SDK:
 
 * Support for [multiple user profiles](/microsoft-edge/webview2/reference/win32/icorewebview2environment10?view=webview2-1.0.1222-prerelease&preserve-view=true) in WebView2.
 
@@ -195,7 +198,7 @@ The following APIs are promoted to stable in this prerelease SDK:
 * [Default Download API](/microsoft-edge/webview2/reference/win32/icorewebview2profile?view=webview2-1.0.1222-prerelease&viewFallbackFrom=webview2-1.0.1185.39&preserve-view=true) which provides a way to customize the default download location.
 
 #### Bug Fixes
-  
+
 * Fixed `ZoomFactor` issue that incorrectly sets `ZoomFactor` value to the maximum value when it is out of bounds.
 
 * Fixed an issue in which WebView2 content can become blurry when moving between monitors with different scaling.
@@ -207,49 +210,46 @@ The following APIs are promoted to stable in this prerelease SDK:
 * Fixed a failure caused when a user opens a new app window and the web page does not have a navigation entry assigned.
 
 * Made a runtime change to fix a bug in WinUI 2 (UWP) in which owned windows were not showing up.
- 
+
 * Fixed `ICoreWebView2Frame::PostWebMessage` functionality after source update. ([Issue #2267](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2267))
 
 
 <!-- ====================================================================== -->
-
 ## 1.0.1150.38
-  
-Release Date: March 10, 2022  
-  
-[NuGet package for WebView2 SDK 1.0.1150.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)  
-  
-For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.0.1150.38 or higher.  
+
+Release Date: March 10, 2022
+
+[NuGet package for WebView2 SDK 1.0.1150.38](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1150.38)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 99.0.1150.38 or higher.
 
 ### General
 
 #### Promotions
-  
+
 The following items are now stable:
 
 *   The [BasicAuthentication API](/microsoft-edge/webview2/reference/win32/icorewebview2_10?view=webview2-1.0.1150.38&preserve-view=true) that enables developers to handle Basic HTTP Authentication request and response.
-  
+
 
 <!-- ====================================================================== -->
 ## 1.0.1189-prerelease
-  
-Release Date: March 10, 2022  
 
-[NuGet package for WebView2 SDK 1.0.1189-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)  
-  
-For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 100.0.1189.0 or higher.  
+Release Date: March 10, 2022
+
+[NuGet package for WebView2 SDK 1.0.1189-prerelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1189-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 100.0.1189.0 or higher.
 
 ### General
 
-#### Experimental Features
-  
+#### Experimental features
+
 *   Added [ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true) to enable host app to create or modify their own context menu.
 
-
 #### Promotions
-  
-  
-The following APIs are promoted to stable in this prerelease SDK:  
+
+The following APIs are promoted to stable in this prerelease SDK:
 
 *    The [CallDevToolsProtocolMethodForSession API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1189-prerelease&preserve-view=true#calldevtoolsprotocolmethodforsession) that supports sessionId for CDP method calls.
 *   The [StatusBarText API](/microsoft-edge/webview2/reference/win32/icorewebview2_12?view=webview2-1.0.1189-prerelease&preserve-view=true):
@@ -261,12 +261,14 @@ The following APIs are promoted to stable in this prerelease SDK:
 *  The [ExclusiveUserDataFolderAccess API](/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2?view=webview2-1.0.1189-prerelease&preserve-view=true) allows control of whether or not other processes can create WebView2 using the same user data folder.
 
 #### Bug Fixes
-  
-*   Fixed a bug where WebView2 app gets stuck occasionally with UWP.
-*   Fixed a bug where focus is not returned to the application after closing the **Find** bar for windowed mode.  
-*   Fixed bug in which the `DocumentTitleChanged` event was not being raised for backward/forward navigation in single-page apps.  
-*   Fixed bug in which the `HistoryChanged` event was not being raised for Iframe navigation.  
 
+*   Fixed a bug where WebView2 app gets stuck occasionally with UWP.
+*   Fixed a bug where focus is not returned to the application after closing the **Find** bar for windowed mode.
+*   Fixed bug in which the `DocumentTitleChanged` event was not being raised for backward/forward navigation in single-page apps.
+*   Fixed bug in which the `HistoryChanged` event was not being raised for Iframe navigation.
+
+
+<!-- ====================================================================== -->
 ## 1.0.1108.44
 
 Release Date: February 6, 2022
@@ -310,7 +312,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ### General
 
-#### Experimental Features
+#### Experimental features
 
 *  Added [Status bar API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental13?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide info when webiew is showing status message, URL, or empty string.
 *  Added [CDP API](/microsoft-edge/webview2/reference/win32/icorewebview2experimental14?view=webview2-1.0.1158-prerelease&preserve-view=true) to provide possibility for developers have multiple `DevToolsProtocol` targets in WebView2.
@@ -365,7 +367,7 @@ For full API compatibility, this version of the WebView2 SDK requires Microsoft 
 
 ### General
 
-#### Experimental Features
+#### Experimental features
 
 *  Added support for [theming](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile2?view=webview2-1.0.1133-prerelease&preserve-view=true) (overall color scheme - light, dark, system) of WebView2.
 *  Added a way to set [default download path](/microsoft-edge/webview2/reference/win32/icorewebview2experimentalprofile3?view=webview2-1.0.1133-prerelease&preserve-view=true).
@@ -508,6 +510,7 @@ For full API compatibility, this version of the WebView2 SDK requires WebView2 R
 The following items are now stable:
 *  [PrintToPdf API](/microsoft-edge/webview2/reference/win32/icorewebview2_7?view=webview2-1.0.1020.30&preserve-view=true#printtopdf).
 
+
 <!-- ====================================================================== -->
 ## 1.0.992.28
 
@@ -600,9 +603,9 @@ For full API compatibility, this prerelease version of the WebView2 SDK requires
 #### Promotions
 
 The following APIs are promoted to stable in this prerelease SDK:
-*  `IsSwipeNavigationEnabled`.
-*  `BrowserProcessExited`.
-*  `OpenBrowserTaskManager`.
+*  `IsSwipeNavigationEnabled`
+*  `BrowserProcessExited`
+*  `OpenBrowserTaskManager`
 
 
 <!-- ====================================================================== -->
@@ -1006,7 +1009,7 @@ This prerelease version of the WebView2 SDK requires Microsoft Edge version 86.0
 
 *  Added [WebView2 Group Policies](/deployedge/microsoft-edge-webview-policies).  For best practices, see [group policies for WebView2](concepts/enterprise.md#group-policies-for-webview2).
 *  > [!IMPORTANT]
-   > **Breaking Change**:  Deprecated the old registry location.
+   > **Breaking Change**: Deprecated the old registry location.
    >
    > ```text
    > {Root}\Software\Policies\Microsoft\EmbeddedBrowserWebView\LoaderOverride\{AppId}
@@ -1052,7 +1055,7 @@ This version of the WebView2 SDK requires WebView2 Runtime version 86.0.616.0 or
 ### General
 
 > [!IMPORTANT]
-> **Announcement**:  .NET WPF/WinForms WebView2 SDKs are now Generally Available (GA).  Starting with this release, Release SDKs are forward-compatible.  For more details, see [GA announcement blog post](https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method).
+> **Announcement**: .NET WPF/WinForms WebView2 SDKs are now Generally Available (GA).  Starting with this release, Release SDKs are forward-compatible.  For more details, see [GA announcement blog post](https://devblogs.microsoft.com/dotnet/announcing-general-availability-for-microsoft-edge-webview2-for-net-and-fixed-distribution-method).
 
 #### Features
 
