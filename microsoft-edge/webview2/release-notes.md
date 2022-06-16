@@ -72,6 +72,7 @@ The following items are now stable:
 
 #### Bug fixes
 
+*  Fixed an issue with the on-screen keyboard in which the keyboard doesn't reappear after it's closed by clicking the **X** button. Also fixed an issue in which the keyboard gets dismissed when users switch from one edit control to another within WebView2. ([Issue #460](https://github.com/MicrosoftEdge/WebView2Feedback/issues/460))
 *  Fixed an issue when using a proxy from `AddHostObjectToScript` in script.  If you call `setHostProperty` and it failed, you could have received an internal error message structure rather than a JavaScript Error object.
 *  Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible.  ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))
 *  Fixed a bug that caused increased memory usage with `WebResourceRequested` events using large data.  ([Issue #2171](https://github.com/MicrosoftEdge/WebView2Feedback/issues/2171))
