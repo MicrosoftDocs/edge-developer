@@ -44,6 +44,40 @@ Cross-platform API implementation: Most of the WebView2 APIs are initially devel
 <!-- link prefix: https://docs.microsoft.com -->
 
 
+### Overview of the top-level classes
+
+Overview of:
+* `CoreWebView2Environment`
+* `CoreWebView2`
+* `CoreWebView2Controller` vs. `WebView2` classes (UI framework-specific WebView2 element class like the WPF, WinForms, or WinUI `WebView2` classes).
+
+or, equivalently:
+* `ICoreWebView2Environment`
+* `ICoreWebView2`
+* `ICoreWebView2Controller`
+
+`CoreWebView2Environment` represents a group of WebView2 controls that all share the following:
+*  They share the same WebView2 browser process.
+*  They share the same user data folder.
+*  They potentially share WebView2 renderer and other WebView2 processes.
+
+From the `CoreWebView2Environment`, you create `CoreWebView2Controller` and `CoreWebView2` pairs.  They always come together as a `CoreWebView2Controller` and a corresponding `CoreWebView2`.
+*  The `CoreWebView2Controller` is responsible for all hosting-related functionality such as focus, visibility, size, and input.
+*  The `CoreWebView2` is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
+
+
+#### UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes
+
+It's different if you are using a UI framework-specific WebView2 element class like our WPF, WinForms, or WinUI WebView2 classes. 
+
+Then, the WebView2 class can optionally take a `CoreWebView2Environment` to use, and otherwise it will create a default `CoreWebView2Environment`.  Internally, the WebView2 class creates its `CoreWebView2Controller` and `CoreWebView2` from the `CoreWebView2Environment`.  The `WebView2` exposes its `CoreWebView2` as a `CoreWebView2` property, but the `CoreWebView2Controller` is kept private to the `WebView2` class.  This is because the `WebView2` class is responsible for connecting all of the `CoreWebView2Controller` functionality to the UI framework.
+
+
+See also:
+
+* [How the top-level classes work: CoreWebView2, Controller, Environment, and Settings](environment-controller-core.md)
+
+
 <!-- ====================================================================== -->
 ## Web/native interop
 
@@ -73,6 +107,8 @@ WebView2 enables objects defined in native code to be passed to the web. These a
 * [CoreWebView2.AddHostObjectToScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
 * [CoreWebView2.RemoveHostObjectFromScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
 * [CoreWebView2Settings.AreHostObjectsAllowed Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
+* [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)<!--todo: which of the above methods or properties use this enum? it's used by https://docs.microsoft.com/en-us/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping?view=webview2-dotnet-1.0.1210.39   Add enum to c++ list?-->
+
 
 #### [C++](#tab/cpp)
 
