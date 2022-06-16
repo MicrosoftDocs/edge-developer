@@ -63,9 +63,10 @@ The following are the main APIs for communicating between web and native code.
 
 
 <!-- ------------------------------ -->
-### Host / Web Object Sharing
+### Host/Web Object Sharing
 
 <!-- define object sharing.  selected methods on a host platform can be called by web-side by sharing specified objects. -->
+WebView2 enables objects defined in native code to be passed to the web. These are called host objects, which can be projected into JavaScript so that you can trigger the native object methods from web side code, or as a result of user interaction on the web-side of your app. By doing so, you can avoid re-implementing your native objects' methods in your web-side code. 
 
 #### [C#](#tab/c-sharp)
 
@@ -86,7 +87,7 @@ The following are the main APIs for communicating between web and native code.
 ### Script Execution
 
 <!-- what kind of script, any JavaScript statements/objects/methods?  Where is the script executed?  what's this heading referring to? -->
-
+You can use JavaScript in WebView2 controls to customize your native apps to meet your requriements.
 <!--
 See also:
 * []()
@@ -120,6 +121,7 @@ Clickable API Ref links:
 ### Web Messaging
 
 <!-- what is "web messaging"?  sending messages from wv2 control to http server, then handling the response from the server.  the host app uses the wv2 ctrl to send msgs to http server.  why is messaging needed for a hybrid/web app?  what's involved, in summary? -->
+You can send messages from the host app to WebView2 control and from WebView2 control to host app. 
 
 <!--
 See also:
@@ -261,7 +263,7 @@ See also:
 <!-- ------------------------------ -->
 ### Downloads
 
-You can manage the download experience in WebView2 and configure a custom download UI.
+You can manage the download experience in WebView2 by allowing/blocking downloads based on different metadata and changing the download location. You can also configure a custom download UI or customize the default UI. 
 
 <!--
 See also:
@@ -271,40 +273,39 @@ See also:
 
 #### [C#](#tab/c-sharp)
 
-Open/close:
+General:
+* [CoreWebView2.IsDefaultDownloadDialogOpenChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.isdefaultdownloaddialogopenchanged)
 * [CoreWebView2.IsDefaultDownloadDialogOpen Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.isdefaultdownloaddialogopen)
 * [CoreWebView2.OpenDefaultDownloadDialog Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.opendefaultdownloaddialog)
-* [CoreWebView2.IsDefaultDownloadDialogOpenChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.isdefaultdownloaddialogopenchanged)
 * [CoreWebView2.CloseDefaultDownloadDialog Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.closedefaultdownloaddialog)
 
-Formatting:
+Modify Default Experience:
 * [CoreWebView2.DefaultDownloadDialogCornerAlignment Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.defaultdownloaddialogcorneralignment)
    * [CoreWebView2DefaultDownloadDialogCornerAlignment Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2defaultdownloaddialogcorneralignment)
 * [CoreWebView2.DefaultDownloadDialogMargin Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.defaultdownloaddialogmargin)
 
-Operation:
+Custom Download Experience:
 * [CoreWebView2.DownloadStarting Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.downloadstarting)
    * [CoreWebView2DownloadStartingEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadstartingeventargs)
 * [CoreWebView2DownloadOperation Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadoperation)
 * [CoreWebView2DownloadInterruptReason Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadinterruptreason)<!--todo: which of the above methods or properties use this enum?-->
-* [CoreWebView2DownloadState Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadstate)<!--todo: which of the above methods or properties use this enum?-->
-* [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)<!--todo: which of the above methods or properties use this enum?-->
-
+* [CoreWebView2DownloadState Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadstate)
+* [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
 
 #### [C++](#tab/cpp)
 
-Open/close:
+General:
 * [ICoreWebView2_9::IsDefaultDownloadDialogOpen property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_isdefaultdownloaddialogopen)<!--no put-->
 * [ICoreWebView2_9::OpenDefaultDownloadDialog method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#opendefaultdownloaddialog)
 * [ICoreWebView2_9::IsDefaultDownloadDialogOpenChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#add_isdefaultdownloaddialogopenchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#remove_isdefaultdownloaddialogopenchanged)
 * [ICoreWebView2_9::CloseDefaultDownloadDialog method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#closedefaultdownloaddialog)
 
-Formatting:
+Modify Default Experience:
 * [ICoreWebView2_9::DefaultDownloadDialogCornerAlignment property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogcorneralignment), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogcorneralignment)
    * [COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_default_download_dialog_corner_alignment)
 * [ICoreWebView2_9::DefaultDownloadDialogMargin property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogmargin), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogmargin)
 
-Operation:
+Custom Download Experience:
 * [ICoreWebView2_4::DownloadStarting event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_downloadstarting), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_downloadstarting)
    * [ICoreWebView2DownloadStartingEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2downloadstartingeventargs)
 * [ICoreWebView2DownloadOperation interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2downloadoperation)
@@ -318,7 +319,8 @@ Operation:
 <!-- ------------------------------ -->
 ### Permissions
 
-How to assign permissions to WebView2 controls to do _<!-- TODO: confirm -->
+<!-- TODO: does WV2 ever show the dialogs? What can you do with the dialogs? -->
+Different web pages may ask you for permissions to access some privileged resources (e.g. dialog to grant permission to access your location). In WebView2 you can find out what the web pages are asking permission for and what to do with the JavaScript dialogs.  
 
 <!--
 See also:
@@ -380,8 +382,6 @@ See also:
 
 <!-- ------------------------------ -->
 ### Status Bar
-
-Learn how to monitor the browser's status bar for changes.
 <!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
 
 <!--
@@ -406,8 +406,6 @@ See also:
 
 <!-- ------------------------------ -->
 ### User Agent
-
-Learn how to detect the user agent string in a WebView2 control.
 <!-- alt for "Learn how to" -->
 <!-- why would you do this, what is benefit for end user, what's involved?  Your app can detect which XYZ and then ABC so that the X is Y. -->
 
@@ -454,7 +452,7 @@ See also:
 <!-- ------------------------------ -->
 ### Audio
 
-Control audio settings in a WebView2 control.
+WebView2 has methods to mute and unmute all audio and events to find out when there is audio playing.
 <!-- what kind of audio settings?  how does this enhance end-user UX? -->
 
 <!--
@@ -482,7 +480,7 @@ See also:
 <!-- ====================================================================== -->
 ## Managing WebView2 processes
 
-Learn how to work with the process that your WebView2 runs in on the host computer.
+
 <!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
 
 <!--
@@ -537,8 +535,6 @@ Failed:
 
 <!-- ====================================================================== -->
 ## Navigation
-
-Learn how to manage page navigation in a WebView2.
 <!-- what's page navn?  what does "navigation" mean here?  when does it occur?  is it automatic?  does host app handle aspects, and wv2 control handles other aspects? -->
 
 See also:
@@ -560,7 +556,6 @@ Navigate:
 * [CoreWebView2.NavigateToString Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatetostring)
 * [CoreWebView2.NavigateWithWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
    * [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)
-   * [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
 
 Navigation starting:
 * [CoreWebView2.NavigationStarting Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationstarting)
@@ -599,7 +594,6 @@ Navigate:
 * [ICoreWebView2::NavigateToString method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)
 * [ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
    * [COREWEBVIEW2_WEB_RESOURCE_CONTEXT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_web_resource_context)
-   * [COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_host_resource_access_kind)
 
 Navigation starting:
 * [ICoreWebView2::NavigationStarting event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationstarting), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationstarting)
