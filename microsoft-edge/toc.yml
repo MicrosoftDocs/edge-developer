@@ -1047,6 +1047,10 @@
               href: webview2/concepts/browser-features.md
               displayName: 
 
+            - name: "How the top-level classes work: CoreWebView2, Controller, Environment, and Settings"
+              href: webview2/concepts/environment-controller-core.md
+              displayName: 
+
             - name: Navigation events
               href: webview2/concepts/navigation-events.md
               displayName: Navigation events for WebView2 apps  # top-of-page title

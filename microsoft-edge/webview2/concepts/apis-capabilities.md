@@ -73,6 +73,11 @@ It's different if you are using a UI framework-specific WebView2 element class l
 Then, the WebView2 class can optionally take a `CoreWebView2Environment` to use, and otherwise it will create a default `CoreWebView2Environment`.  Internally, the WebView2 class creates its `CoreWebView2Controller` and `CoreWebView2` from the `CoreWebView2Environment`.  The `WebView2` exposes its `CoreWebView2` as a `CoreWebView2` property, but the `CoreWebView2Controller` is kept private to the `WebView2` class.  This is because the `WebView2` class is responsible for connecting all of the `CoreWebView2Controller` functionality to the UI framework.
 
 
+See also:
+
+* [How the top-level classes work: CoreWebView2, Controller, Environment, and Settings](environment-controller-core.md)
+
+
 <!-- ====================================================================== -->
 ## Web/native interop
 
