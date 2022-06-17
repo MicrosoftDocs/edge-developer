@@ -40,11 +40,19 @@ This article categorizes the WebView2 interfaces, at a high level, for WebView2.
 
 ---
 
-Cross-platform API implementation: Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
 <!-- link prefix: https://docs.microsoft.com -->
+
+Cross-platform API implementation: Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
 
 
 ### Overview of the top-level classes
+
+<!-- nutshell intro/summary block to keep sync'd:
+* topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
+* [Overview of the top-level classes](apis-capabilities.md#overview-of-the-top-level-classes) in _Overview of WebView2 APIs and their capabilities_.
+-->
+
+<!-- todo - derive / condense in context of APIs Overview .md - all this info is dup'd in environment-controller-core.md, so freely rework/condense here & then copy to top of there (aim to completely transform/reword/condense this block): -->
 
 Overview of:
 * `CoreWebView2Environment`
@@ -72,10 +80,11 @@ It's different if you are using a UI framework-specific WebView2 element class l
 
 Then, the WebView2 class can optionally take a `CoreWebView2Environment` to use, and otherwise it will create a default `CoreWebView2Environment`.  Internally, the WebView2 class creates its `CoreWebView2Controller` and `CoreWebView2` from the `CoreWebView2Environment`.  The `WebView2` exposes its `CoreWebView2` as a `CoreWebView2` property, but the `CoreWebView2Controller` is kept private to the `WebView2` class.  This is because the `WebView2` class is responsible for connecting all of the `CoreWebView2Controller` functionality to the UI framework.
 
+<!-- / end of nutshell intro/summary block to keep sync'd -->
 
 See also:
 
-* [How the top-level classes work: CoreWebView2, Controller, Environment, and Settings](environment-controller-core.md)
+* [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md)
 
 
 <!-- ====================================================================== -->

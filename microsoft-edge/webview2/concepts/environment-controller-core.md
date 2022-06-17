@@ -1,6 +1,6 @@
 ---
-title: "How the top-level classes work: CoreWebView2, Controller, Environment, and Settings"
-description: "Overview of how the top-level WebView2 classes work: CoreWebView2, Controller, Environment, and Settings."
+title: "How the top-level classes work: CoreWebView2, Controller, and Environment"
+description: "Overview of how the top-level WebView2 classes work: CoreWebView2, Controller, and Environment."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,7 +8,16 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/09/2022
 ---
-# How the top-level classes work: CoreWebView2, Controller, Environment, and Settings
+# How the top-level classes work: CoreWebView2, Controller, and Environment
+
+<!-- nutshell intro/summary block to keep sync'd:
+* topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
+* [Overview of the top-level classes](apis-capabilities.md#overview-of-the-top-level-classes) in _Overview of WebView2 APIs and their capabilities_.
+-->
+
+<!-- todo - derive / condense in context of APIs Overview .md -->
+
+<!-- / end of nutshell intro/summary block to keep synced -->
 
 The WebView2 `Controller` and `CoreWebView2` classes work as pairs.
 

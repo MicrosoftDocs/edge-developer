@@ -1047,7 +1047,7 @@
               href: webview2/concepts/browser-features.md
               displayName: 
 
-            - name: "How the top-level classes work: CoreWebView2, Controller, Environment, and Settings"
+            - name: "How the top-level classes work: CoreWebView2, Controller, and Environment"
               href: webview2/concepts/environment-controller-core.md
               displayName: 
 
