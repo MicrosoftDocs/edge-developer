@@ -1110,26 +1110,6 @@ Render:
 
 ---
 
-
-<!-- ====================================================================== -->
-## User data
-
-Learn how to work with the user data folder.
-
-See also:
-* [Manage user data folders](user-data-folder.md)
-
-#### [C#](#tab/c-sharp)
-
-* [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
-
-#### [C++](#tab/cpp)
-
-* [ICoreWebView2Environment7::UserDataFolder property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
-
----
-
-
 <!-- ====================================================================== -->
 ## Input
 
@@ -1250,6 +1230,23 @@ See also:
 
 ---
 
+<!-- ====================================================================== -->
+## User data
+
+Learn how to work with the user data folder.
+
+See also:
+* [Manage user data folders](user-data-folder.md)
+
+#### [C#](#tab/c-sharp)
+
+* [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
+
+#### [C++](#tab/cpp)
+
+* [ICoreWebView2Environment7::UserDataFolder property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
+
+---
 
 <!-- ====================================================================== -->
 ## Performance optimizations/tools and debugging
