@@ -78,7 +78,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 5 - Create a Visual Studio installer for the Evergreen WebView2 Runtime
 
-This section highlights [deployment workflows](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) to complete the following tasks:
+This section highlights [deployment workflows](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) to complete the following tasks:
 
 * Download the Evergreen WebView2 Runtime Bootstrapper using a link.
 * Package the Evergreen WebView2 Runtime Bootstrapper.
