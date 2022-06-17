@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/15/2022
+ms.date: 06/17/2022
 ---
 # What's New in DevTools (Microsoft Edge 103)
 
@@ -15,6 +15,85 @@ ms.date: 06/15/2022
 > The **Microsoft Build 2022** conference was on May 24-26.  Learn more about new features for memory, performance, and production debugging in DevTools and new capabilities in the web platform for PWAs in the following videos:
 > * [Tips for debugging memory, performance, & production issues](https://www.youtube.com/watch?v=hdrR0QwXpuc)
 > * [Microsoft Edge | Build 2022: Enriching desktop experiences with the power and reach of the web](https://www.youtube.com/watch?v=ahO5nePl4BQ)
+
+
+<!-- ====================================================================== -->
+## New node types in the Memory tool
+
+<!-- Title: New "object shape" and "BigInt" node types in the Memory tool -->
+<!-- Subtitle: When taking a heap snapshot, you can now filter to new node types representing hidden classes and descriptor arrays in V8, the JavaScript engine of Microsoft Edge. -->
+
+In Microsoft Edge 103, the Memory tool supports 2 new node types when taking a heap snapshot in the **Memory** tool:
+*  object shape - Refers to the hidden classes and descriptor arrays that V8, the JavaScript engine of Microsoft Edge, uses to understand and index the properties in objects. 
+*  `BigInt` - Used to represent and manipulate values that are too large to be represented by the "number" node type.
+
+![alt text.](devtools-103-images/memory-node-types.png)
+<!-- Instructions for screenshot
+1. In Edge Canary, navigate to edge://version and ensure you're on version 103+.
+2. Navigate to bing.com.
+3. Open DevTools > Memory.
+4. Take a heap snapshot.
+5. In the "Default" dropdown for node types, filter out everything except the "object shape" and "BigInt" entries.
+6. Expand the "object shape" entry in the heap snapshot.
+7. Select the first entry to see the retainers.
+see attachment  103-heap-snapshot-object-shape-node-type.png for a reference. -->
+
+<!-- Video recording of feature in action
+linked .mp4 attachment -->
+
+<!-- PR 2019 to update Memory tool docs with info on these 2 new node types: Updated list of node types in heap snapshot for What's New 103 -->
+
+For history, see [12769 - Improve categorization of objects in heap snapshots - v8 (chromium.org)](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
+
+See also:
+* [Fast properties in V8](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays)
+* [BigInt - JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
+
+
+<!-- ====================================================================== -->
+## DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool
+
+<!-- Title: DevTools for Visual Studio Code: Right-click to launch, and Application tool -->
+<!-- Subtitle: Use the context menu on any HTML document in Visual Studio Code to launch a new instance of the Microsoft Edge browser and DevTools. -->
+
+To make it easier to start a new embedded instance of Microsoft Edge from Visual Studio Code, there's now a context menuitem on any HTML document in the File Explorer.
+
+Additionally, you can now also use the Application tool to gain insights into the storage and service worker information of your project without leaving Visual Studio Code.
+
+<!-- ![alt text.](devtools-103-images/x.png) -->
+<!-- Instructions for screenshot
+Attached for context menu 
+ Image -->
+
+<!-- Video recording of feature in action
+linked -->
+
+See also:
+* [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+<!-- * [Microsoft Edge DevTools for Visual Studio Code](https://aka.ms/devtools-for-code) at Marketplace -->
+
+
+<!-- ====================================================================== -->
+## Bug fixes for Focus Mode UI
+
+<!-- Title: Bug fixes for Focus Mode UI -->
+<!-- Subtitle: Various bugs impacting DevTools controls and keyboard shortcuts were fixed in the new Focus Mode UI. -->
+
+A number of bugs impacting DevTools controls and keyboard shortcuts have been resolved for users of the new Focus Mode DevTools UI.  These updates include:
+*  Improved behavior of collapsible tabs in the **Elements** tool.
+*  Fixed some instances in which the name of an open tool was not visible.
+*  Improved reliability of **Quick View** controls.
+*  Improved behavior of opening DevTools by using keyboard shortcuts.
+*  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
+*  Restored the `Ctrl`+`Shift`+`F` shortcut to open **Search** in **Quick View**.<!-- todo: macOS keys? -->
+
+<!-- ![alt text.](devtools-103-images/x.png) -->
+<!-- Instructions for screenshot
+[Note: This screenshot corresponds with the last bullet point above.] With DevTools in Focus Mode, open the Elements tool. Then, press Ctrl-Shift-F to open Search in Quick View. Add a search term such as "async" or "index.html" in the box and press Enter to demonstrate results. Example:
+Image -->
+
+See also:
+* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -32,31 +111,43 @@ See also:
 
 
 <!-- ====================================================================== -->
-<!-- ## 2 -->
+## Fix: The Close button for DevTools is now accessible in high-contrast mode
 
-<!-- Title:  -->
-<!-- Subtitle: . -->
+<!-- Title: Fix: In high contrast mode, the Close button for DevTools is now accessible -->
+<!-- Subtitle: In previous versions of Microsoft Edge, the Close button was not visible in high contrast mode but this issue has been fixed in Microsoft Edge 103. -->
+
+In previous versions of Microsoft Edge, the Close button for DevTools didn't render correctly in high-contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** button for DevTools is displayed correctly in high-contrast mode.
 
 <!-- ![alt text.](devtools-103-images/x.png) -->
 
-<!--
+<!-- Instructions for screenshot
+(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
+Open Edge Stable and navigate to edge://version and ensure you're on version 102 or at least <103
+From Windows Settings, navigate to Accessibility > Contrast themes and select the Night sky theme to apply
+Open DevTools in Edge Stable. Note that the Close button won't be visible (you can still select it though).
+Refer to the attachment for reference
+Repeat the same steps in Edge Canary or Dev, just ensure the version is 103+. Refer to the attachment for reference. -->
+
+<!-- Video recording of feature in action
+.mp4 attachments -->
+
 See also:
-* []()
--->
+* [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
+* [Windows High contrast mode](/fluent-ui/web-components/design-system/high-contrast)
 
 
 <!-- ====================================================================== -->
-<!-- ## 3 -->
+## Welcome tool redesign
 
 <!-- Title:  -->
 <!-- Subtitle: . -->
 
-<!-- ![alt text.](devtools-103-images/x.png) -->
+The **Welcome** tool has been redesigned to make it easier to find content and easier to contact the DevTools team.
 
-<!--
+![Welcome tool.](devtools-103-images/welcome-tool.png)
+
 See also:
-* []()
--->
+* [Welcome tool](../../../welcome/welcome-tool.md)
 
 
 <!-- ====================================================================== -->
