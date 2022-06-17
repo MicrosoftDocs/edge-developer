@@ -466,7 +466,7 @@ See also:
 <!-- ------------------------------ -->
 ### Autofill
 
-You can leverage the browsers autofill functionality in a WebView2 control.
+You can leverage the browsers autofill functionality in a WebView2 control. You can enable/disable autofill for addresses and passwords. 
 <!-- what does "autofill functionality" mean?  how does this benefit end user? -->
 
 <!--
