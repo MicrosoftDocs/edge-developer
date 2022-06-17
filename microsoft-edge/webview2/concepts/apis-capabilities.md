@@ -46,6 +46,9 @@ Cross-platform API implementation: Most of the WebView2 APIs are initially devel
 
 
 ### Overview of the top-level classes
+<!-- change heading to more like:
+### How the top-level classes work: CoreWebView2, Controller, and Environment
+-->
 
 <!-- nutshell intro/summary block to keep sync'd:
 * topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
