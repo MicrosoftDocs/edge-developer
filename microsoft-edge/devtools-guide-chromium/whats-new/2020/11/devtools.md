@@ -82,7 +82,7 @@ You can now visualize **Layers** content alongside z-index values and the Docume
 
 ![Composited Layers pane.](../../media/2020/11/experiments-layers.msft.png)
 
-Update: This feature has been released and is no longer experimental.  The **Layers** tool has been replaced by the **3D View** tool.
+Update: This feature has been released and is no longer experimental.  The **Layers** tool has been removed and replaced by the **3D View** tool.
 
 See also:
 * [Navigate z-index, DOM, and layers using the 3D View tool](../../../3d-view/index.md)

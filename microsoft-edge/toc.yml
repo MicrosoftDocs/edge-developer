@@ -295,7 +295,7 @@
               items:
                 - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
                   href: devtools-guide-chromium/3d-view/index.md
-                  displayName: 3D View tool, Layers tool, composited layers
+                  displayName: 3D View tool, composited layers
 # Animations tool -------------------------------------------------------------
             - name: Animations tool
               items:
@@ -393,12 +393,6 @@
                 - name: JavaScript Profiler tool
                   href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
                   displayName: JavaScript Profiler tool
-# Layers tool -----------------------------------------------------------------
-            - name: Layers tool
-              items:
-                - name: Layers tool
-                  href: devtools-guide-chromium/layers/layers-tool.md
-                  displayName: Layers tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:
