@@ -15,11 +15,11 @@ This WebView2 sample demonstrates how to deploy a WebView2 app using the Visual 
 Directory: **WV2DeploymentVSInstallerSample** (no `.sln` file)
 
 <!-- ====================================================================== -->
-## Step 1 - Install Visual Studio and Installer Projects.
+## Step 1 - Install Visual Studio and Installer Projects
 
-Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not supported for this sample.
+Microsoft Visual Studio is required. Microsoft Visual Studio Code is not supported for this sample.
 
-1. If Visual Studio (minimum required version) is not already installed, in a separate window or tab, see [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
+1. If Visual Studio 2019 or higher is not already installed, in a separate window or tab, open [Install Visual Studio](../how-to/machine-setup.md#install-visual-studio) in _Set up your Dev environment for WebView2_.  Follow the steps in that section, and then return to this page and continue the steps below.
 
 1. Install the [Microsoft Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects). Follow the steps on that page, and then return to this page and continue the steps below.
 
@@ -78,7 +78,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 <!-- ====================================================================== -->
 ## Step 5 - Create a Visual Studio installer for the Evergreen WebView2 Runtime
 
-This section highlights [deployment workflows](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) to complete the following tasks:
+This section highlights deployment workflows included in [Distribute your app and the WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) _Deploying the Evergreen WebView2 Runtime_ to complete the following tasks:
 
 * Download the Evergreen WebView2 Runtime Bootstrapper using a link.
 * Package the Evergreen WebView2 Runtime Bootstrapper.
@@ -86,7 +86,9 @@ This section highlights [deployment workflows](/microsoft-edge/webview2/concepts
 
 ### Build Steps
 
-1. Start Visual Studio Code
+Complete these steps to edit and run the project.
+
+1. Start Visual Studio.
 
 1. Open the local copy of the `WebView2Samples` repo.
 
