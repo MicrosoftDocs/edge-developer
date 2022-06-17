@@ -273,7 +273,7 @@ See also:
 <!-- ------------------------------ -->
 ### Image capture
 
-You can configure capturing screenshots.
+In WebView2 you can capture screenshots and indicate the format to same the image as.
 <!-- benefit?  why do this?  
 This way, when your wv2 app is running and the user presses Alt+PrtScn, XYZ will ... -->
 <!-- Capturing images using the key press combination `Ctrl`+`Shift`+`S` (TODO: confirm)  state macOS key combination too -->
@@ -419,6 +419,7 @@ See also:
 <!-- ------------------------------ -->
 ### Status Bar
 <!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
+A status bar is located in the bottom left of the page and displays the state of the webpage being displayed. In WebView2 you can enable/disable the status bar, get the text in the status bar and find out when the status bar text has changed. 
 
 <!--
 See also:
@@ -444,6 +445,7 @@ See also:
 ### User Agent
 <!-- alt for "Learn how to" -->
 <!-- why would you do this, what is benefit for end user, what's involved?  Your app can detect which XYZ and then ABC so that the X is Y. -->
+The user agent is a string that represents the identity of the program on behalf of the user e.g. the browser name. In WebView2 you can set the user agent.
 
 <!--
 See also:
@@ -464,7 +466,7 @@ See also:
 <!-- ------------------------------ -->
 ### Autofill
 
-Leverage the browsers autofill functionality in a WebView2 control.
+You can leverage the browsers autofill functionality in a WebView2 control.
 <!-- what does "autofill functionality" mean?  how does this benefit end user? -->
 
 <!--
@@ -826,14 +828,11 @@ See also:
 <!-- ====================================================================== -->
 ## Working with Chrome Developer Protocol (CDP)
 
-Learn how to automate tasks in the DevTools in a WebView2 control using CDP (TODO: confirm)
-<!-- alt pattern instead of "Learn how to":
-_Automating_ means X, Y, & Z.  By adding automation of X, your app provides features Y & Z.  You add automation in the X. -->
+The [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol) provides APIs to instrument, inspect, debug, and profile Chromium-based browsers. The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools. Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
 
-<!--
 See also:
-* []()
--->
+* [https://docs.microsoft.com/en-us/microsoft-edge/webview2/how-to/chromium-devtools-protocol](Use the Chrome DevTools Protocol)
+
 
 #### [C#](#tab/c-sharp)
 
@@ -871,9 +870,7 @@ Receiver:
 <!-- ====================================================================== -->
 ## iFrames
 
-Learn how to work with iFrames in content displayed in WebView2 controls
-<!-- alt pattern instead of "Learn how to": define what the heading refers to.
-An _iFrame_ is an X that Y & Z.  Your app can use iFrames to XYZ.[benefit; value-add]  [how; tech-usage summary gist:]To do this, in the X, you add code that does Y. -->
+iFrames allow you to embed other webpages into your own webpage. In WebView2 you can find out when they are created, when they are navigating, and allow bypassing x-frame options.
 
 
 #### [C#](#tab/c-sharp)
