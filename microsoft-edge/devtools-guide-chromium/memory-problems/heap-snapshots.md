@@ -128,6 +128,8 @@ After expanding a total line in the upper view, all of the instances are display
 | **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression. |
 | **(compiled code)** | Everything related to compiled code.  Script is similar to a function, but corresponds to a `<script>` body.  SharedFunctionInfos (SFI) are objects standing between functions and compiled code.  Functions usually have a context, while SFIs do not. |
 | **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**, and so on.  | References to elements or document objects of a particular type referenced by your code. |
+| **(object shape)** | References to the hidden classes and descriptor arrays that V8, the JavaScript engine of MIcrosoft Edge, uses to understand and index the properties in objects.  To learn more about hidden classes and descriptor arrays, see [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays). |
+| **(BigInt)** | References to the **BigInt** object which is used to represent and manipulate values that are too large to be represented by the **Number** object. To learn more about **BigInt**, see [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt). |
 
 <!--todo: add heap profiling summary section when available -->
 
