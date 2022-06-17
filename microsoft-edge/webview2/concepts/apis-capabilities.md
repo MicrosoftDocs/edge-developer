@@ -285,7 +285,7 @@ See also:
 <!-- ------------------------------ -->
 ### Image capture
 
-In WebView2 you can capture screenshots and indicate the format to same the image as.
+In WebView2 you can capture screenshots and indicate the format to save the image as.
 <!-- benefit?  why do this?  
 This way, when your wv2 app is running and the user presses Alt+PrtScn, XYZ will ... -->
 <!-- Capturing images using the key press combination `Ctrl`+`Shift`+`S` (TODO: confirm)  state macOS key combination too -->
