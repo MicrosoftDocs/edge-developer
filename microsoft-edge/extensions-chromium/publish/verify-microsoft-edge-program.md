@@ -29,7 +29,7 @@ Email ownership verifies that the primary contact (primary email) address is val
 
 * The primary contact email address must be a work account that is monitored and can send and receive email.
 * Avoid using a personal email address not associated with the company domain, such as \<alias\>@contoso.com.
-* Avoid using a tenant user credential that's not associated with email, such \<alias\>@contoso on microsoft.com.
+* Avoid using a tenant user credential that's not associated with email, such as \<alias\>@contoso on microsoft.com.
 
 #### Suggestions
 
