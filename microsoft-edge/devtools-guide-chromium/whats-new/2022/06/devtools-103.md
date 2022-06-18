@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 103)
-description: What's new in DevTools (Microsoft Edge 103).
+description: "New node types in the Memory tool. DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool. Focus Mode bug fixes. 3D View tool responsive layout. Fix: The Close button for DevTools is now accessible in high-contrast mode. Welcome tool redesign. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -23,9 +23,9 @@ ms.date: 06/17/2022
 <!-- Title: New "object shape" and "BigInt" node types in the Memory tool -->
 <!-- Subtitle: When taking a heap snapshot, you can now filter to new node types representing hidden classes and descriptor arrays in V8, the JavaScript engine of Microsoft Edge. -->
 
-In Microsoft Edge 103, the Memory tool supports 2 new node types when taking a heap snapshot in the **Memory** tool:
-*  object shape - Refers to the hidden classes and descriptor arrays that V8, the JavaScript engine of Microsoft Edge, uses to understand and index the properties in objects. 
-*  `BigInt` - Used to represent and manipulate values that are too large to be represented by the "number" node type.
+In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there are two new node types:
+*  **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.
+*  **Object shape** - Refers to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties on objects. 
 
 ![alt text.](devtools-103-images/memory-node-types.png)
 <!-- Instructions for screenshot
@@ -56,14 +56,13 @@ See also:
 <!-- Title: DevTools for Visual Studio Code: Right-click to launch, and Application tool -->
 <!-- Subtitle: Use the context menu on any HTML document in Visual Studio Code to launch a new instance of the Microsoft Edge browser and DevTools. -->
 
-To make it easier to start a new embedded instance of Microsoft Edge from Visual Studio Code, there's now a context menuitem on any HTML document in the File Explorer.
+To make it easier to start a new embedded instance of Microsoft Edge from Visual Studio Code, when you right-click an HTML file in the **Explorer**, there's now an **Open with Edge** submenu that has the commands **Open Browser** and **Open with DevTools**:
 
-Additionally, you can now also use the Application tool to gain insights into the storage and service worker information of your project without leaving Visual Studio Code.
+![Right-click an HTML file to open a browser instance and the 'Edge DevTools' tab.](devtools-103-images/edge-devtools-rightclick-html-file.png)
 
-<!-- ![alt text.](devtools-103-images/x.png) -->
-<!-- Instructions for screenshot
-Attached for context menu 
- Image -->
+Also, you can now also use the **Application** tool to gain insights into the storage and service worker information of your project, without leaving Visual Studio Code:
+
+![The Application tool in the 'Edge DevTools' tab within Visual Studio Code.](devtools-103-images/edge-devtools-application-tool.png)
 
 <!-- Video recording of feature in action
 linked -->
@@ -79,7 +78,7 @@ See also:
 <!-- Title: Bug fixes for Focus Mode UI -->
 <!-- Subtitle: Various bugs impacting DevTools controls and keyboard shortcuts were fixed in the new Focus Mode UI. -->
 
-A number of bugs impacting DevTools controls and keyboard shortcuts have been resolved for users of the new Focus Mode DevTools UI.  These updates include:
+In the new **Focus Mode** DevTools UI, various bugs affecting controls and keyboard shortcuts for DevTools have been resolved:
 *  Improved behavior of collapsible tabs in the **Elements** tool.
 *  Fixed some instances in which the name of an open tool was not visible.
 *  Improved reliability of **Quick View** controls.
@@ -116,7 +115,7 @@ See also:
 <!-- Title: Fix: In high contrast mode, the Close button for DevTools is now accessible -->
 <!-- Subtitle: In previous versions of Microsoft Edge, the Close button was not visible in high contrast mode but this issue has been fixed in Microsoft Edge 103. -->
 
-In previous versions of Microsoft Edge, the Close button for DevTools didn't render correctly in high-contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** button for DevTools is displayed correctly in high-contrast mode.
+In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high-contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** button for DevTools is displayed correctly in high-contrast mode.
 
 <!-- ![alt text.](devtools-103-images/x.png) -->
 
@@ -142,9 +141,9 @@ See also:
 <!-- Title:  -->
 <!-- Subtitle: . -->
 
-The **Welcome** tool has been redesigned to make it easier to find content and easier to contact the DevTools team.
+The **Welcome** tool has been redesigned to make it easier to find content and easier to contact the DevTools team:
 
-![Welcome tool.](devtools-103-images/welcome-tool.png)
+![The redesigned Welcome tool.](devtools-103-images/welcome-tool.png)
 
 See also:
 * [Welcome tool](../../../welcome/welcome-tool.md)
