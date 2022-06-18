@@ -27,7 +27,7 @@ In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there
 *  **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.
 *  **Object shape** - Refers to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties on objects. 
 
-![alt text.](devtools-103-images/memory-node-types.png)
+![BigInt and Object Shape memory node types.](devtools-103-images/memory-node-types.png)
 <!-- Instructions for screenshot
 1. In Edge Canary, navigate to edge://version and ensure you're on version 103+.
 2. Navigate to bing.com.
@@ -68,7 +68,7 @@ Also, you can now also use the **Application** tool to gain insights into the st
 linked -->
 
 See also:
-* [Microsoft Edge DevTools extension for Visual Studio Code](https://docs.microsoft.com/en-us/microsoft-edge/visual-studio-code/microsoft-edge-devtools-extension)
+* [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 <!-- * [Microsoft Edge DevTools for Visual Studio Code](https://aka.ms/devtools-for-code) at Marketplace -->
 
 
@@ -84,12 +84,9 @@ In the new **Focus Mode** DevTools UI, various bugs affecting controls and keybo
 *  Improved reliability of **Quick View** controls.
 *  Improved behavior of opening DevTools by using keyboard shortcuts.
 *  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
-*  Restored the `Ctrl`+`Shift`+`F` shortcut to open **Search** in **Quick View**.<!-- todo: macOS keys? -->
+*  Restored the `Ctrl`+`Shift`+`F` shortcut to open **Search** in **Quick View**:<!-- todo: macOS keys? -->
 
-<!-- ![alt text.](devtools-103-images/x.png) -->
-<!-- Instructions for screenshot
-[Note: This screenshot corresponds with the last bullet point above.] With DevTools in Focus Mode, open the Elements tool. Then, press Ctrl-Shift-F to open Search in Quick View. Add a search term such as "async" or "index.html" in the box and press Enter to demonstrate results. Example:
-Image -->
+![The Search keyboard shortcut opens the Search tool in Quick View.](devtools-103-images/focus-mode-search-shortcut.png)
 
 See also:
 * [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
@@ -115,9 +112,9 @@ See also:
 <!-- Title: Fix: In high contrast mode, the Close button for DevTools is now accessible -->
 <!-- Subtitle: In previous versions of Microsoft Edge, the Close button was not visible in high contrast mode but this issue has been fixed in Microsoft Edge 103. -->
 
-In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high-contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** button for DevTools is displayed correctly in high-contrast mode.
+In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high-contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** (`X`) button for DevTools is displayed correctly in high-contrast mode:
 
-<!-- ![alt text.](devtools-103-images/x.png) -->
+![The Close DevTools (X) button in high-contrast mode.](devtools-103-images/close-button-high-contrast.png)
 
 <!-- Instructions for screenshot
 (how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
