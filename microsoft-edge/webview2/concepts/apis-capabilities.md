@@ -37,7 +37,7 @@ Top-level summary of APIs:
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
 | [Environment setup](#environment-setup) | Specify settings before WebView2 controls are created. |
-| [Rendering WebView2 in non-framework apps](#rendering-webview2-in-native-apps-hosting) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
+| [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
 | [Window management](#window-management) | Tasks related to the management of a window. |
 | [Input](#input) | The Input API handles keyboard events, so that your app has keyboard support.  Read mouse input on a WebView2 control.  Support touch input, such as pinch zoom, in a WebView2 control. |
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
@@ -1232,6 +1232,8 @@ WebView2 can specify a default background color.  This can be any opaque color o
 
 * [ICoreWebView2Controller2::DefaultBackgroundColor property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller2#get_defaultbackgroundcolor), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller2#put_defaultbackgroundcolor)
    * [COREWEBVIEW2_COLOR struct](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_color)
+
+---
 
 
 <!-- ====================================================================== -->
