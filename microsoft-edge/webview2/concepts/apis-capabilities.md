@@ -527,6 +527,29 @@ See also:
 ---
 
 
+<!-- ------------------------------ -->
+### Swipe gesture navigation
+
+In WebView2 you can enable/disable swiping gesture navigation on touch input enabled devices. This allows end users to:
+*  Swipe left/right (swipe horizontally) to navigate to previous/next page in navigation history.
+*  Pull to refresh (swipe vertically) the current page. (This feature is currently disabled by default in the browser, to enable in WebView2, set AdditionalBrowserArguments property with --pull-to-refresh switch).
+
+
+<!--
+See also:
+* []()
+-->
+
+#### [C#](#tab/c-sharp)
+
+* [CoreWebView2Settings.IsSwipeNavigationEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isswipenavigationenabled)
+
+#### [C++](#tab/cpp)
+
+* [ICoreWebView2Settings6::IsSwipeNavigationEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)
+
+---
+
 <!-- ====================================================================== -->
 ## Managing WebView2 processes
 
@@ -1194,27 +1217,6 @@ See also:
 * [ICoreWebView2Environment3::CreateCoreWebView2PointerInfo method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)
    * [ICoreWebView2PointerInfo interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)
 * [COREWEBVIEW2_POINTER_EVENT_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_pointer_event_kind)
-
----
-
-
-<!-- ------------------------------ -->
-### Touch input
-
-<!-- Your app can offer rich support UX touch, scroll, multitouch, drag, mobile devices.  [How this works is]: the X listens, sends events, then handles.  How wv2 & host app coordinate to offer X UX to end users on ABC devices that have a touchscreen. -->
-
-<!--
-See also:
-* []()
--->
-
-#### [C#](#tab/c-sharp)
-
-* [CoreWebView2Settings.IsSwipeNavigationEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isswipenavigationenabled)
-
-#### [C++](#tab/cpp)
-
-* [ICoreWebView2Settings6::IsSwipeNavigationEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)
 
 ---
 
