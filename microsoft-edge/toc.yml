@@ -299,7 +299,7 @@
               items:
                 - name: Navigate webpage layers, z-index, and DOM using the 3D View tool  # added article
                   href: devtools-guide-chromium/3d-view/index.md
-                  displayName: 3D View tool, Layers tool, composited layers
+                  displayName: 3D View tool, composited layers
 # Animations tool -------------------------------------------------------------
             - name: Animations tool
               items:
@@ -397,12 +397,6 @@
                 - name: JavaScript Profiler tool
                   href: devtools-guide-chromium/javascript-profiler/javascript-profiler-tool.md
                   displayName: JavaScript Profiler tool
-# Layers tool -----------------------------------------------------------------
-            - name: Layers tool
-              items:
-                - name: Layers tool
-                  href: devtools-guide-chromium/layers/layers-tool.md
-                  displayName: Layers tool
 # Lighthouse tool -------------------------------------------------------------
             - name: Lighthouse tool  # new jump page  # main article is in Accessibility
               items:
@@ -783,7 +777,7 @@
 
         - name: What's new
           items:
-            - name: Microsoft Edge Add-ons released features
+            - name: Released features for Microsoft Edge Add-ons
               href: extensions-chromium/whats-new/released-features.md
 
             - name: Microsoft Edge Add-ons roadmap
@@ -839,6 +833,9 @@
             - name: Register as an extension developer
               href: extensions-chromium/publish/create-dev-account.md
 
+            - name: Verify your company account information
+              href: extensions-chromium/publish/verify-microsoft-edge-program.md
+
             - name: Publish extensions using a GitHub account
               href: extensions-chromium/publish/github.md
 
@@ -856,6 +853,10 @@
 
             - name: View extensions analytics dashboard
               href: extensions-chromium/publish/extensions-analytics.md
+
+            - name: Reply to user reviews
+              href: extensions-chromium/publish/reply-user-reviews.md
+              displayName: Respond to user reviews
 
             - name: Manage account settings
               href: extensions-chromium/publish/manage-settings.md
