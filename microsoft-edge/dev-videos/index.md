@@ -30,6 +30,24 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## DevTools - Debug the web in 3D
+
+_Published on 21 June 2022._
+
+[![Thumbnail image for the DevTools 3D View tool video](./images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
+
+The 3D View tool in Microsoft Edge DevTools creates 3 dimensional representations of the inspected web page and can be used to debug common web development problems such as:
+
+* Deeply nested DOM nodes.
+* Out-of-document elements.
+* Unwanted scrollbars.
+* Z-index stacking issues.
+* Composited layers performance.
+
+To learn more about the 3D View tool, check out [Navigate webpage layers, z-index, and DOM using the 3D View tool](../devtools-guide-chromium/3d-view/index.md), or [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/).
+
+
+<!-- ====================================================================== -->
 ## DevTools - Use your preferred language in DevTools
 
 _Published on 9 June 2022._
