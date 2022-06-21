@@ -80,7 +80,7 @@ Microsoft Visual Studio is required. Microsoft Visual Studio Code is not support
 <!-- ====================================================================== -->
 ## Step 5 - Create a Visual Studio installer for the Evergreen WebView2 Runtime
 
-This section highlights deployment workflows included in [Distribute your app and the WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) _Deploying the Evergreen WebView2 Runtime_ to complete the following tasks:
+This section highlights deployment workflows included in [Deploying the Evergreen WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution#deploying-the-evergreen-webview2-runtime) in _Distribute your app and the WebView2 Runtime_ to complete the following tasks:
 
 * Download the Evergreen WebView2 Runtime Bootstrapper using a link.
 * Package the Evergreen WebView2 Runtime Bootstrapper.
@@ -98,22 +98,22 @@ Complete these steps to edit and run the project.
 
     * For "Package the Evergreen WebView2 Runtime Bootstrapper",
         * Within the `<PackageFiles CopyAllPackageFiles="false">` and `</PackageFiles>` section, un-comment the line `<PackageFile Name="MicrosoftEdgeWebview2Setup.exe" />` and comment out other lines.
-        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the VS installer is using the Bootstrapper.
+        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the Visual Studio installer is using the Bootstrapper.
 
     * For "Download the Evergreen WebView2 Runtime Bootstrapper through link",
         * Within the `<PackageFiles CopyAllPackageFiles="false">` and `</PackageFiles>` section, un-comment the line `<PackageFile Name="MicrosoftEdgeWebview2Setup.exe" HomeSite="WebViewRuntime" PublicKey="..."/>` and comment out other lines. Note that the `PublicKey` for the WebView2 Runtime Bootstrapper may change without notice and we are working on addressing this issue. For now, you may need to replace it with an updated `PublicKey`.
-        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the VS installer is using the Bootstrapper.
+        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebview2Setup.exe"` so that the Visual Studio installer is using the Bootstrapper.
 
     * For "Package the Evergreen WebView2 Runtime Standalone Installer",
         * Within the `<PackageFiles CopyAllPackageFiles="false">` and `</PackageFiles>` section, un-comment the line `<PackageFile Name="MicrosoftEdgeWebView2RuntimeInstallerX64.exe" />` and comment out other lines.
-        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebView2RuntimeInstallerX64.exe"` so that the VS installer is using the Standalone Installer.
+        * Within the `<Commands Reboot="Defer">` and `</Commands>` section, make sure `PackageFile` points to `"MicrosoftEdgeWebView2RuntimeInstallerX64.exe"` so that the Visual Studio installer is using the Standalone Installer.
         * If you're targeting non-X64 devices, edit the `MicrosoftEdgeWebView2RuntimeInstallerX64` filename to reflect the correct architecture.
 
 1. If you plan to package either the Bootstrapper or the Standalone Installer, download [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) Bootstrapper or the Standalone Installer and save it in the `WV2DeploymentVSInstallerSample` folder.
 
 1. Copy the `WV2DeploymentVSInstallerSample` folder, and paste it in either folder:
    1. `Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`, or,
-   1. `<VS Install Dir>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages\` (requires at least VS 2019 Update 7).
+   1. `<Visual Studio Install Dir>\MSBuild\Microsoft\VisualStudio\BootstrapperPackages\` (requires at least Visual Studio 2019 Update 7).
 
 1. Create a Setup Project in Visual Studio. 
    1. In Visual Studio, select **File** > **New** > **Project**. 
