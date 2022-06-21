@@ -45,6 +45,73 @@ Top-level summary of APIs:
 | [Misc.](#misc) | Read settings and handle deferral.<!--define/hints--> |
 
 
+page outline as of June 20 eod:
+
+* [High-level interfaces spanning multiple areas](#high-level-interfaces-spanning-multiple-areas)
+   * [Overview of the top-level classes](#overview-of-the-top-level-classes)
+      * [UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes](#ui-framework-specific-webview2-element-class-such-as-wpf-winforms-or-winui-webview2-classes)
+   
+* [Web/native interop](#webnative-interop)
+   * [Host/Web Object Sharing](#hostweb-object-sharing)
+   * [Script Execution](#script-execution)
+   * [Web Messaging](#web-messaging)
+   * [Script Dialogs](#script-dialogs)
+   
+* [Browser features](#browser-features)
+   * [Printing](#printing)
+   * [Cookies](#cookies)
+   * [Image capture](#image-capture)
+   * [Downloads](#downloads)
+   * [Permissions](#permissions)
+   * [Context menus](#context-menus)
+   * [Status Bar](#status-bar)
+   * [User Agent](#user-agent)
+   * [Autofill](#autofill)
+   * [Audio](#audio)
+   * [Swipe gesture navigation](#swipe-gesture-navigation)
+   
+* [Managing WebView2 processes](#managing-webview2-processes)
+
+* [Load and keep track of content (web/local/remote)](#load-and-keep-track-of-content-weblocalremote)
+   * [Manage page navigation](#manage-page-navigation)
+   * [DOM/Content loaded](#domcontent-loaded)
+
+* [Web content](#web-content)
+   * [Web Resource Request](#web-resource-request)
+   * [Web Resource Response](#web-resource-response)
+   * [Server/Client Certificates](#serverclient-certificates)
+
+* [Working with Chrome Developer Protocol (CDP)](#working-with-chrome-developer-protocol-cdp)
+
+* [iFrames](#iframes)
+
+* [Authentication](#authentication)
+
+* [Environment setup](#environment-setup)
+
+* [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps)
+
+* [Window Management](#window-management)
+   * [Sizing, positioning, and visibility](#sizing-positioning-and-visibility)
+   * [Zooming](#zooming)
+   * [Rasterization Scale](#rasterization-scale)
+   * [Focus & Tabbing](#focus--tabbing)
+   * [Parent Window](#parent-window)
+   * [Keyboard Accelerators](#keyboard-accelerators)
+   * [Default background color](#default-background-color)
+   
+* [Composition-based rendering](#composition-based-rendering)
+   * [Output](#output)
+   * [Input](#input)
+   * [Accessibility](#accessibility)
+   
+* [User data](#user-data)
+
+* [Performance optimizations/tools and debugging](#performance-optimizationstools-and-debugging)
+
+* [Misc.](#misc)
+
+
 <!-- ====================================================================== -->
 ## High-level interfaces spanning multiple areas
 
