@@ -36,7 +36,7 @@ _Published on 21 June 2022._
 
 [![Thumbnail image for the DevTools 3D View tool video](./images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
 
-The 3D View tool in Microsoft Edge DevTools creates 3 dimensional representations of the inspected web page and can be used to debug common web development problems such as:
+The **3D View** tool in Microsoft Edge DevTools provides a 3-dimensional representation of the webpage you're inspecting.  Use the **3D View** tool to debug common web development problems such as:
 
 * Deeply nested DOM nodes.
 * Out-of-document elements.
