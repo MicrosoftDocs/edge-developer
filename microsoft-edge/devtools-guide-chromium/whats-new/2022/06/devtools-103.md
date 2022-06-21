@@ -43,7 +43,7 @@ linked .mp4 attachment -->
 
 <!-- PR 2019 to update Memory tool docs with info on these 2 new node types: Updated list of node types in heap snapshot for What's New 103 -->
 
-For history, see [12769 - Improve categorization of objects in heap snapshots - v8 (chromium.org)](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
+For history, see [Issue 12769: Improve categorization of objects in heap snapshots](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
 
 See also:
 * [Fast properties in V8](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays)
@@ -56,7 +56,7 @@ See also:
 <!-- Title: DevTools for Visual Studio Code: Right-click to launch, and Application tool -->
 <!-- Subtitle: Use the context menu on any HTML document in Visual Studio Code to launch a new instance of the Microsoft Edge browser and DevTools. -->
 
-To make it easier to start a new embedded instance of Microsoft Edge from Visual Studio Code, when you right-click an HTML file in the **Explorer**, there's now an **Open with Edge** submenu that has the commands **Open Browser** and **Open with DevTools**:
+To make it easier to start a new embedded instance of Microsoft Edge from within Visual Studio Code, when you right-click an HTML file in the **Explorer**, there's now an **Open with Edge** submenu that has the commands **Open Browser** and **Open Browser with DevTools**:
 
 ![Right-click an HTML file to open a browser instance and the 'Edge DevTools' tab.](devtools-103-images/edge-devtools-rightclick-html-file.png)
 
