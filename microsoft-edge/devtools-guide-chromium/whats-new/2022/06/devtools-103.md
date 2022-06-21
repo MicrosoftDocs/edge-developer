@@ -135,17 +135,21 @@ See also:
 <!-- ====================================================================== -->
 ## Redesigned Welcome tool
 
+<!-- Title: Welcome tool has expanded content and videos -->
+<!-- Subtitle: The redesigned Welcome tool has expanded Learn and What's New sections, including a new video series. -->
+
 In Microsoft Edge 103, the **Welcome** tool has a new design with improved, expanded content.  It's easier than ever to find content and to contact the DevTools team.
 
 *  In the **Learn** section, use the links to quickly jump to documentation for some common tasks in DevTools.
 
-*  In the **What's New** section, find out about the latest changes, new features, and bug fixes in the DevTools with our _new video series_, or by using the links.
+*  In the **What's New** section, find out about the latest changes, new features, and bug fixes.
+
+*  In both sections, learn about existing and new web development features through our new video series, [Videos about web development with Microsoft Edge](../../../../dev-videos/index.md).
 
 ![The redesigned Welcome tool.](devtools-103-images/welcome-tool.png)
 
 See also:
 * [Welcome tool](../../../welcome/welcome-tool.md)
-* [Videos about web development with Microsoft Edge](../../../../dev-videos/index.md)
 
 
 <!-- ====================================================================== -->
