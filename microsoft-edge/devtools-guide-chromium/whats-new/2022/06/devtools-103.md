@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/17/2022
+ms.date: 06/21/2022
 ---
 # What's New in DevTools (Microsoft Edge 103)
 
@@ -133,17 +133,19 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Welcome tool redesign
+## Redesigned Welcome tool
 
-<!-- Title:  -->
-<!-- Subtitle: . -->
+In Microsoft Edge 103, the **Welcome** tool has a new design with improved, expanded content.  It's easier than ever to find content and to contact the DevTools team.
 
-The **Welcome** tool has been redesigned to make it easier to find content and easier to contact the DevTools team:
+*  In the **Learn** section, use the links to quickly jump to documentation for some common tasks in DevTools.
+
+*  In the **What's New** section, find out about the latest changes, new features, and bug fixes in the DevTools with our _new video series_, or by using the links.
 
 ![The redesigned Welcome tool.](devtools-103-images/welcome-tool.png)
 
 See also:
 * [Welcome tool](../../../welcome/welcome-tool.md)
+* [Videos about web development with Microsoft Edge](../../../../dev-videos/index.md)
 
 
 <!-- ====================================================================== -->
