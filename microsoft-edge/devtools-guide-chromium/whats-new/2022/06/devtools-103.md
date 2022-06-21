@@ -24,30 +24,20 @@ ms.date: 06/21/2022
 <!-- Subtitle: When taking a heap snapshot, you can now filter to new node types representing hidden classes and descriptor arrays in V8, the JavaScript engine of Microsoft Edge. -->
 
 In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there are two new node types:
-*  **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.
 *  **Object shape** - Refers to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties on objects. 
+*  **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.
 
 ![BigInt and Object Shape memory node types.](devtools-103-images/memory-node-types.png)
-<!-- Instructions for screenshot
-1. In Edge Canary, navigate to edge://version and ensure you're on version 103+.
-2. Navigate to bing.com.
-3. Open DevTools > Memory.
-4. Take a heap snapshot.
-5. In the "Default" dropdown for node types, filter out everything except the "object shape" and "BigInt" entries.
-6. Expand the "object shape" entry in the heap snapshot.
-7. Select the first entry to see the retainers.
-see attachment  103-heap-snapshot-object-shape-node-type.png for a reference. -->
 
 <!-- Video recording of feature in action
 linked .mp4 attachment -->
 
-<!-- PR 2019 to update Memory tool docs with info on these 2 new node types: Updated list of node types in heap snapshot for What's New 103 -->
-
 For history, see [Issue 12769: Improve categorization of objects in heap snapshots](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
 
 See also:
-* [Fast properties in V8](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays)
-* [BigInt - JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
+* [Constructor (group) entries in the heap profiler](../../../memory-problems/heap-snapshots.md#constructor-group-entries-in-the-heap-profiler) in _Record heap snapshots using the Memory tool_.
+* [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays) - Fast properties in V8.
+* [BigInt object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
 
 
 <!-- ====================================================================== -->
