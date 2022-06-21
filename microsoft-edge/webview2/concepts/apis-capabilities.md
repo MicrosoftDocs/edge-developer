@@ -10,11 +10,6 @@ ms.date: 06/20/2022
 ---
 # Overview of WebView2 APIs and their capabilities
 
-<!-- todo:
-*  pull in/merge in the Overview/Hosting doc
-*  condense overview of top 3 classes down to 1 paragraph copied to detailed page
--->
-
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
 *  Concepts about what you can do with the WebView2 APIs.
@@ -23,29 +18,11 @@ This article provides:
 
 Audience: App developers who are curious about the WebView2 technology and would like to know if WebView2 is for them.
 
-Top-level summary of APIs:
 
-| API | Purpose |
-|---|---|
-| [High-level interfaces spanning multiple areas](#high-level-interfaces-spanning-multiple-areas) | The top-level CoreWebView2, Controller, and Environment classes work together so your app can host a WebView2 browser control. |
-| [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
-| [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
-| [Managing WebView2 processes](#managing-webview2-processes) | TBD |
-| [Load and keep track of content (web/local/remote)](#load-and-keep-track-of-content-weblocalremote) | TBD |
-| [Web content](#web-content) | TBD |
-| [Working with Chrome Developer Protocol (CDP)](#working-with-chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
-| [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
-| [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
-| [Environment setup](#environment-setup) | Specify settings before WebView2 controls are created. |
-| [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
-| [Window management](#window-management) | Tasks related to the management of a window. |
-| [Input](#input) | The Input API handles keyboard events, so that your app has keyboard support.  Read mouse input on a WebView2 control.  Support touch input, such as pinch zoom, in a WebView2 control. |
-| [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
-| [Performance optimizations/tools and debugging](#performance-optimizationstools-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
-| [Misc.](#misc) | Read settings and handle deferral.<!--define/hints--> |
+**Contents:**
+<!-- page outline as of June 20 EOD: -->
 
-
-page outline as of June 20 eod:
+* [Summary of APIs](#summary-of-apis)
 
 * [High-level interfaces spanning multiple areas](#high-level-interfaces-spanning-multiple-areas)
    * [Overview of the top-level classes](#overview-of-the-top-level-classes)
@@ -110,6 +87,28 @@ page outline as of June 20 eod:
 * [Performance optimizations/tools and debugging](#performance-optimizationstools-and-debugging)
 
 * [Misc.](#misc)
+
+
+## Summary of APIs
+
+| API | Purpose |
+|---|---|
+| [High-level interfaces spanning multiple areas](#high-level-interfaces-spanning-multiple-areas) | The top-level CoreWebView2, Controller, and Environment classes work together so your app can host a WebView2 browser control. |
+| [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
+| [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
+| [Managing WebView2 processes](#managing-webview2-processes) | TBD |
+| [Load and keep track of content (web/local/remote)](#load-and-keep-track-of-content-weblocalremote) | TBD |
+| [Web content](#web-content) | TBD |
+| [Working with Chrome Developer Protocol (CDP)](#working-with-chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
+| [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
+| [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
+| [Environment setup](#environment-setup) | Specify settings before WebView2 controls are created. |
+| [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
+| [Window management](#window-management) | Tasks related to the management of a window. |
+| [Input](#input) | The Input API handles keyboard events, so that your app has keyboard support.  Read mouse input on a WebView2 control.  Support touch input, such as pinch zoom, in a WebView2 control. |
+| [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
+| [Performance optimizations/tools and debugging](#performance-optimizationstools-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
+| [Misc.](#misc) | Read settings and handle deferral.<!--define/hints--> |
 
 
 <!-- ====================================================================== -->
