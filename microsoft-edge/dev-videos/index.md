@@ -30,6 +30,48 @@ To add a new video:
 
 
 <!-- ====================================================================== -->
+## DevTools - Debug the web in 3D
+
+_Published on 21 June 2022._
+
+[![Thumbnail image for the DevTools 3D View tool video](./images/3d-view-tool.png)](https://www.youtube.com/watch?v=LVb1Xzzd72w)
+
+The **3D View** tool in Microsoft Edge DevTools provides a 3-dimensional representation of the webpage you're inspecting.  Use the **3D View** tool to debug common web development problems such as:
+
+* Deeply nested DOM nodes.
+* Out-of-document elements.
+* Unwanted scrollbars.
+* Z-index stacking issues.
+* Composited layers performance.
+
+To learn more about the 3D View tool, check out [Navigate webpage layers, z-index, and DOM using the 3D View tool](../devtools-guide-chromium/3d-view/index.md), or [Debug the web in 3D with the 3D View tool](https://blogs.windows.com/msedgedev/2022/06/21/debug-the-web-in-3d-with-the-3d-view-tool/).
+
+
+<!-- ====================================================================== -->
+## DevTools - Use your preferred language in DevTools
+
+_Published on 9 June 2022._
+
+[![Thumbnail image for the DevTools localization video](./images/devtools-localization.png)](https://www.youtube.com/watch?v=AeF0AvWpUO8)
+
+Microsoft Edge DevTools supports 13 different languages. In this video, the team shows how to choose the language that's most comfortable to you for coding and debugging.
+
+To learn more about changing DevTools language settings, check out [Change DevTools language settings](../devtools-guide-chromium/customize/localization.md).
+
+To report any translation errors, check out [Contact the Microsoft Edge DevTools team](../devtools-guide-chromium/contact.md).
+
+
+<!-- ====================================================================== -->
+## DevTools - What's new in DevTools 102
+
+_Published on 1 June 2022._
+
+[![Thumbnail image for the DevTools What's New in 102 video](./images/devtools-whatsnew-102.png)](https://www.youtube.com/watch?v=JY6DfhSdr_A)
+
+Learn more about our latest announcements from the Microsoft Edge DevTools team at [What's New in DevTools 102](../devtools-guide-chromium/whats-new/2022/05/devtools-102.md).
+
+
+<!-- ====================================================================== -->
 ## Web Platform - Fully style the drop-down part of a `<select>` with the new `<selectmenu>` element
 
 _Published on 31 May 2022._
