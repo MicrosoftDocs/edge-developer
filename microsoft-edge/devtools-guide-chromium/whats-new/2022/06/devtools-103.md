@@ -11,11 +11,6 @@ ms.date: 06/21/2022
 
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
-> [!TIP]
-> The **Microsoft Build 2022** conference was on May 24-26.  Learn more about new features for memory, performance, and production debugging in DevTools and new capabilities in the web platform for PWAs in the following videos:
-> * [Tips for debugging memory, performance, & production issues](https://www.youtube.com/watch?v=hdrR0QwXpuc)
-> * [Microsoft Edge | Build 2022: Enriching desktop experiences with the power and reach of the web](https://www.youtube.com/watch?v=ahO5nePl4BQ)
-
 
 <!-- ====================================================================== -->
 ## New node types in the Memory tool
@@ -38,7 +33,7 @@ See also:
 
 
 <!-- ====================================================================== -->
-## DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool
+## Launch the browser from an HTML file and use the Application tool within Visual Studio Code
 
 <!-- Title: DevTools for Visual Studio Code: Right-click to launch, and Application tool -->
 <!-- Subtitle: Use the context menu on any HTML document in Visual Studio Code to launch a new instance of the Microsoft Edge browser and DevTools. -->
@@ -47,7 +42,7 @@ To make it easier to start a new embedded instance of Microsoft Edge from within
 
 ![Right-click an HTML file to open a browser instance and the 'Edge DevTools' tab.](devtools-103-images/edge-devtools-rightclick-html-file.png)
 
-Also, you can now also use the **Application** tool to gain insights into the storage and service worker information of your project, without leaving Visual Studio Code:
+You can now also use the **Application** tool to gain insights into the storage and service worker information of your project, without leaving Visual Studio Code:
 
 ![The Application tool in the 'Edge DevTools' tab within Visual Studio Code.](devtools-103-images/edge-devtools-application-tool.png)
 
@@ -82,7 +77,7 @@ See also:
 <!-- Title: 3D View: Now with more responsive design -->
 <!-- Subtitle: The 3D View toolbar now wraps around in a narrower window. -->
 
-As folks use the **3D View** tool more, especially with the addition of Composited Layers (formerly known as **Layers**), we have found opportunities to improve the UI based on your feedback.  We've made the layout of the 3D View toolbar more responsive so that your development isn't hindered even when DevTools is narrow.  Keep the feedback coming as you check out 3D View!
+In previous versions of Microsoft Edge, the **3D View** tool didn't display correctly in narrow layouts.  The toolbar options were cut off when DevTools was narrow.  In Microsoft Edge 103, this issue has been fixed.  The toolbar options in **3D View** now stack when the width of the DevTools window is decreased:
 
 ![Responsive layout of toolbar in 3D View tool.](devtools-103-images/3d-view-responsive-layout.png)
 
@@ -111,7 +106,7 @@ See also:
 <!-- Title: Welcome tool has expanded content and videos -->
 <!-- Subtitle: The redesigned Welcome tool has expanded Learn and What's New sections, including a new video series. -->
 
-In Microsoft Edge 103, the **Welcome** tool has a new design with improved, expanded content.  It's easier than ever to find content and to contact the DevTools team.
+In Microsoft Edge 103, the **Welcome** tool has a new design with improved, expanded content.  It's easier than ever to find documentation, videos, and information about new features and bug fixes.
 
 *  In the **Learn** section, use the links to quickly jump to documentation for some common tasks in DevTools.
 
