@@ -46,9 +46,9 @@ To open Edge Command Palette:
 1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
 1. Start typing in the input box. For example:
-   * Press `>` to list the available DevTools commands.
    * Type **tabs** to display commands about tabs management.
-   * Type **bookmark** to display commands about bookmarks:
+   * Type **bookmark** to display commands about bookmarks (shown below).
+   * Press `>` to list the available DevTools commands.
 
    ![Edge Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
 
