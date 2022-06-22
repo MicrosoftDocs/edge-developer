@@ -73,9 +73,9 @@ To create a WebView2 app, start by creating a basic desktop project, to create a
 
 1. In **New Universal Windows Platform Project**, select the following values:
 
-   *  **Target version**:  **Windows 10, version 1903 (build 18362)** or later.
+   *  **Target version**:  **Windows 10, version 2004 (build 19041)** or later.
 
-   *  **Minimum version**:  **Windows 10, version 1803 (build 17134)**.
+   *  **Minimum version**:  **Windows 10, version 1809 (build 17763)**.
 
 1. Click **OK**.
 
