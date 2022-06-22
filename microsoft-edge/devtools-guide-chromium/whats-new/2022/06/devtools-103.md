@@ -105,21 +105,19 @@ See also:
 In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high-contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** (`X`) button for DevTools is displayed correctly in high-contrast mode:
 
 ![The Close DevTools (X) button in high-contrast mode.](devtools-103-images/close-button-high-contrast.png)
-
-<!-- Instructions for screenshot
-(how to configure the DevTools correctly, a website or CodePen that the writer can use, where to navigate in the DevTools UI for the screenshot, etc.)
-Open Edge Stable and navigate to edge://version and ensure you're on version 102 or at least <103
-From Windows Settings, navigate to Accessibility > Contrast themes and select the Night sky theme to apply
-Open DevTools in Edge Stable. Note that the Close button won't be visible (you can still select it though).
-Refer to the attachment for reference
-Repeat the same steps in Edge Canary or Dev, just ensure the version is 103+. Refer to the attachment for reference. -->
+<!--
+1. Open Edge Stable.
+2. Go to edge://version and ensure you're on version < 103.
+3. Windows Settings > Accessibility > Contrast themes, select the Night sky theme to apply.
+4. Open DevTools in Edge Stable.  Note that the Close button won't be visible (you can still select it though).  See attachment for reference.
+5. Repeat in Edge Canary or Dev, ensure version = 103+.  See attachment for reference. -->
 
 <!-- Video recording of feature in action
 .mp4 attachments -->
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
-* [Windows High contrast mode](/fluent-ui/web-components/design-system/high-contrast)
+* [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
 
 
 <!-- ====================================================================== -->
