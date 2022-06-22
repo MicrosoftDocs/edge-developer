@@ -91,7 +91,7 @@ When using many tabs in Microsoft Edge, several useful tab-related commands are 
 
 1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
-1. Type **tab**, and then use the Down and Up arrow keys to select a tab-related command; for example:
+1. Type **tab**, and then use the Down and Up arrow keys to select a tab-related command.  For example:
    *  **Open recently closed tab**
    *  **Bookmark all tabs**
    *  **Search tabs**
