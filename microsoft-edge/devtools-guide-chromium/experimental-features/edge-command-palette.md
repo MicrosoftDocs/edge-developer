@@ -52,7 +52,7 @@ To open Edge Command Palette:
 
    ![Edge Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
 
-1. Press the Up or Down arrow keys to select the command you want to execute, and then press `Enter`.
+1. Press `Down Arrow` or `Up Arrow` to select the command you want to execute, and then press `Enter`.
 
 Examples of several useful commands are shown below.
 
@@ -68,7 +68,7 @@ To open the DevTools Device Emulation tool by using Edge Command Palette:
 
 1. Press `>`.
 
-1. Type **device**, press the Down arrow key to select **Mobile: Toggle device emulation**, and then press `Enter`.
+1. Type **device**, press `Down Arrow` to select **Mobile: Toggle device emulation**, and then press `Enter`.
 
 
 <!-- ====================================================================== -->
@@ -82,20 +82,21 @@ To open the DevTools **Snippets** tab by using Edge Command Palette:
 
 1. Press `>`.
 
-1. Type **snippets**, press the Down arrow key to select **Sources: Show Snippets**, and then press `Enter`.
-  
+1. Type **snippets**, press `Down Arrow` to select **Sources: Show Snippets**, and then press `Enter`.
+
 
 <!-- ====================================================================== -->
 ## Manage browser tabs
 
-When using many tabs in Microsoft Edge, several useful tab-related commands are available in Edge Command Palette.
+Many useful tab-related commands are available in Edge Command Palette, such as:
+*  **Bookmark all tabs**
+*  **Move tab forward**
+*  **Open recently closed tab**
+*  **Search tabs**
 
 1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
-1. Type the word **tab**, press the Down and Up arrow keys to select a tab-related command, and then press `Enter`.  For example:
-   *  **Open recently closed tab**
-   *  **Bookmark all tabs**
-   *  **Search tabs**
+1. Type the word **tab**, press `Down Arrow` or `Up Arrow` to select a tab-related command, and then press `Enter`.
 
 
 <!-- ====================================================================== -->
