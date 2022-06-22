@@ -1,6 +1,6 @@
 ---
 title: Streamline your workflows with Edge Command Palette
-description: Learn to use the Edge Command Palette experimental feature to streamline your browser and DevTools workflows.
+description: Use the Edge Command Palette experimental feature to streamline your browser and DevTools workflows.  Quickly access browser commands and DevTools commands from the keyboard, from any webpage.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.date: 06/22/2022
 ---
 # Streamline your workflows with Edge Command Palette
 
-Edge Command Palette is a Microsoft Edge experiment that makes it possible to access helpful browser and DevTools commands from the keyboard.
+Edge Command Palette is a Microsoft Edge experiment that makes it possible to access helpful browser commands and DevTools commands from the keyboard.
 
 Using Edge Command Palette, it is easy to access productivity and developer features that normally require clicking through several menus or learning multiple keyboard shortcuts.
 
@@ -19,7 +19,7 @@ Using Edge Command Palette, it is easy to access productivity and developer feat
 <!-- ====================================================================== -->
 ## Enable Edge Command Palette
 
-Edge Command Palette is not enabled in Microsoft Edge by default. To enable Edge Command Palette:
+By default, Edge Command Palette isn't enabled. To enable Edge Command Palette:
 
 1. In Microsoft Edge, go to `edge://version`, and make sure you're using Microsoft Edge 105 or later.  If you want to get the latest preview channels of Microsoft Edge, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/).
 
@@ -32,7 +32,7 @@ Edge Command Palette is not enabled in Microsoft Edge by default. To enable Edge
 
    ![Enabling the Edge Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
-1. Click the **Restart** button.
+1. Click the **Restart** button which appears in the lower right.
 
 
 <!-- ====================================================================== -->
