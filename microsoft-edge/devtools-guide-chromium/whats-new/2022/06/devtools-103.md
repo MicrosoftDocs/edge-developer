@@ -19,8 +19,8 @@ ms.date: 06/21/2022
 <!-- Subtitle: When taking a heap snapshot, you can now filter to new node types representing hidden classes and descriptor arrays in V8, the JavaScript engine of Microsoft Edge. -->
 
 In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there are two new node types:
-*  **Object shape** - Refers to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties on objects. 
-*  **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.
+*  **BigInt** - Used to represent and manipulate values that are too large to be represented by the **Number** node type.  See [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
+*  **Object shape** - Refers to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties on objects.  See [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays) in _Fast properties in V8_.
 
 ![BigInt and Object Shape memory node types.](devtools-103-images/memory-node-types.png)
 
@@ -28,8 +28,6 @@ For history, see [Issue 12769: Improve categorization of objects in heap snapsho
 
 See also:
 * [Constructor (group) entries in the heap profiler](../../../memory-problems/heap-snapshots.md#constructor-group-entries-in-the-heap-profiler) in _Record heap snapshots using the Memory tool_.
-* [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays) - Fast properties in V8.
-* [BigInt object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt).
 
 
 <!-- ====================================================================== -->
