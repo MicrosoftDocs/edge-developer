@@ -53,7 +53,7 @@ Audience: App developers who are curious about the WebView2 technology and would
 
 PR 2026-related; Network & Navigation APIs:
 
-* [Load and keep track of content (web/local/remote)](#load-and-keep-track-of-content-weblocalremote)
+* [Manage content loaded in WebView2](#manage-content-loaded-in-webview2)
    * [Manage page navigation](#manage-page-navigation)
    * [DOM/Content loaded](#domcontent-loaded)
 
@@ -124,7 +124,7 @@ Web content
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
 | [Managing WebView2 processes](#managing-webview2-processes) | TBD |
-| [Load and keep track of content (web/local/remote)](#load-and-keep-track-of-content-weblocalremote) | TBD |
+| [Manage content loaded in WebView2](#manage-content-loaded-in-webview2) | TBD |
 | [Web content](#web-content) | TBD |
 | [Working with Chrome Developer Protocol (CDP)](#working-with-chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
