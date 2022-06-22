@@ -23,7 +23,7 @@ By default, Edge Command Palette isn't enabled. To enable the Edge Command Palet
 
 1. In Microsoft Edge, go to `edge://version`, and make sure you're using Microsoft Edge 105 or later.  To get the latest preview channels of Microsoft Edge, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/).
 
-1. In Microsoft Edge, go to `edge://flags`.
+1. Go to `edge://flags`.
 
 <!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
 1. In the **Search flags** text field, type **DevTools Toaster** or **Edge Command Palette**.
@@ -52,7 +52,7 @@ To open Edge Command Palette:
 
    ![Edge Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
 
-1. Press `Down Arrow` or `Up Arrow` to select the command you want to execute, and then press `Enter`.
+1. Press `Down Arrow` or `Up Arrow` to select a command, and then press `Enter`.
 
 Examples of several useful commands are shown below.
 
