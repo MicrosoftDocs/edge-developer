@@ -642,7 +642,7 @@ See also:
 Whether to enable editing keyboard shortcuts.
 
 See also:
-* [Customize keyboard shortcuts](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/customize/shortcuts)
+* [Customize keyboard shortcuts](../customize/shortcuts.md)
 
 *  This checkbox is not present in Microsoft Edge Stable v102.
 *  This checkbox is present in Microsoft Edge Canary v105.
