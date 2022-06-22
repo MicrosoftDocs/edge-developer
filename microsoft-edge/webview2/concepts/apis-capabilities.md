@@ -19,8 +19,9 @@ This article provides:
 Audience: App developers who are curious about the WebView2 technology and would like to know if WebView2 is for them.
 
 
+<!-- page outline as of June 20 EOD:
+
 **Contents:**
-<!-- page outline as of June 20 EOD: -->
 
 * [Summary of APIs](#summary-of-apis)
 
@@ -49,6 +50,9 @@ Audience: App developers who are curious about the WebView2 technology and would
    
 * [Managing WebView2 processes](#managing-webview2-processes)
 
+
+PR 2026-related; Network & Navigation APIs:
+
 * [Load and keep track of content (web/local/remote)](#load-and-keep-track-of-content-weblocalremote)
    * [Manage page navigation](#manage-page-navigation)
    * [DOM/Content loaded](#domcontent-loaded)
@@ -57,6 +61,28 @@ Audience: App developers who are curious about the WebView2 technology and would
    * [Web Resource Request](#web-resource-request)
    * [Web Resource Response](#web-resource-response)
    * [Server/Client Certificates](#serverclient-certificates)
+
+
+New implied heading outline that came in from PR 2026, when include Foo: headings in tab sets:
+
+Manage content loaded to WebView2
+   Map a local folder to a virtual hostname to load local content to WebView2
+   Keep track of WebView2's history
+   Block unwanted navigations
+   Keep track of navigations in WebView2
+
+missing heading
+   Title
+   Fullscreen
+   New window
+   Close
+
+Web content
+   Manage the network requests in WebView2 (formerly h3 "Web Resource Request")
+   Server/Client Certificates
+
+/ end of PR 2026-related; Network & Navigation APIs
+
 
 * [Working with Chrome Developer Protocol (CDP)](#working-with-chrome-developer-protocol-cdp)
 
@@ -87,6 +113,7 @@ Audience: App developers who are curious about the WebView2 technology and would
 * [Performance optimizations/tools and debugging](#performance-optimizationstools-and-debugging)
 
 * [Misc.](#misc)
+-->
 
 
 ## Summary of APIs
@@ -708,8 +735,6 @@ Failed:
 TBD
 <!-- what's page navn?  what does "navigation" mean here?  when does it occur?  is it automatic?  does host app handle aspects, and wv2 control handles other aspects? -->
 
-
-
 #### [C#](#tab/c-sharp)
 
 Manage content loaded to WebView2:
@@ -789,23 +814,26 @@ See also:
 
 ---
 
+
+<!-- ====================================================================== -->
+## Heading
+
 #### [C#](#tab/c-sharp)
 
-Title:
+Title:<!--TODO: goes in Browser Features -->
 * [CoreWebView2.DocumentTitle Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
 * [CoreWebView2.DocumentTitleChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
 
-Fullscreen:
+Fullscreen:<!--TODO: goes in Browser Features -->
 * [CoreWebView2.ContainsFullScreenElement Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelement)
 * [CoreWebView2.ContainsFullScreenElementChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelementchanged)
 
-New window: <!-- moved from Rendering section -->
+New window:<!--TODO: goes near Browser Features -->
 * [CoreWebView2.NewWindowRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested)
    * [CoreWebView2NewWindowRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs)
    * [CoreWebView2WindowFeatures Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures)
-<!-- /moved from Rendering section -->
 
-Close:
+Close:<!--TODO: goes near Browser Features, or Rendering WebView2 in non-framework apps -->
 * [CoreWebView2Controller.Close Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
 * [CoreWebView2.WindowCloseRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.windowcloserequested)
 
