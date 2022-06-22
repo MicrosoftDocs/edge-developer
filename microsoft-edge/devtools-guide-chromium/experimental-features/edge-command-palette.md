@@ -9,9 +9,9 @@ ms.date: 06/22/2022
 ---
 # Streamline your workflows with Edge Command Palette
 
-Edge Command Palette is a Microsoft Edge experiment that makes it possible to access helpful browser commands and DevTools commands from the keyboard.
+Use Edge Command Palette to quickly access various Microsoft Edge browser commands and DevTools commands from the keyboard.
 
-Using Edge Command Palette, it is easy to access productivity and developer features that normally require clicking through several menus or learning multiple keyboard shortcuts.
+Using Edge Command Palette, you can directly access productivity and developer features that normally require clicking through several menus or using a series of keyboard shortcuts.
 
 ![A Microsoft Edge window showing the Command Palette input box in the center](./media/command-palette.png)
 
@@ -19,16 +19,17 @@ Using Edge Command Palette, it is easy to access productivity and developer feat
 <!-- ====================================================================== -->
 ## Enable Edge Command Palette
 
-By default, Edge Command Palette isn't enabled. To enable Edge Command Palette:
+By default, Edge Command Palette isn't enabled. To enable the Edge Command Palette experiment:
 
 1. In Microsoft Edge, go to `edge://version`, and make sure you're using Microsoft Edge 105 or later.  To get the latest preview channels of Microsoft Edge, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/).
 
 1. In Microsoft Edge, go to `edge://flags`.
 
 <!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
-1. In the **Search flags** text field, type **DevTools Toaster**.
+1. In the **Search flags** text field, type **DevTools Toaster** or **Edge Command Palette**.
 
-1. In the **DevTools Toaster** dropdown menu, select **Enabled**:
+<!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
+1. In the **DevTools Toaster** or **Edge Command Palette** dropdown menu, select **Enabled**:
 
    ![Enabling the Edge Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
