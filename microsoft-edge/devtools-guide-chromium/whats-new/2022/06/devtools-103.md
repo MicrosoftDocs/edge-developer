@@ -1,6 +1,6 @@
 ---
 title: What's new in DevTools (Microsoft Edge 103)
-description: "New node types in the Memory tool. DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool. Focus Mode bug fixes. 3D View tool responsive layout. Fix: The Close button for DevTools is now accessible in high-contrast mode. Welcome tool redesign. And more."
+description: "New node types in the Memory tool. DevTools extension for Visual Studio Code: Right-click an HTML file to launch, and Application tool. Focus Mode bug fixes. 3D View tool responsive layout. Fix: The Close button for DevTools is now accessible in high contrast mode. Welcome tool redesign. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -29,9 +29,6 @@ In Microsoft Edge 103, when taking a heap snapshot in the **Memory** tool, there
 
 ![BigInt and Object Shape memory node types.](devtools-103-images/memory-node-types.png)
 
-<!-- Video recording of feature in action
-linked .mp4 attachment -->
-
 For history, see [Issue 12769: Improve categorization of objects in heap snapshots](https://bugs.chromium.org/p/v8/issues/detail?id=12769).
 
 See also:
@@ -54,9 +51,6 @@ Also, you can now also use the **Application** tool to gain insights into the st
 
 ![The Application tool in the 'Edge DevTools' tab within Visual Studio Code.](devtools-103-images/edge-devtools-application-tool.png)
 
-<!-- Video recording of feature in action
-linked -->
-
 See also:
 * [Microsoft Edge DevTools extension for Visual Studio Code](../../../../visual-studio-code/microsoft-edge-devtools-extension.md)
 <!-- * [Microsoft Edge DevTools for Visual Studio Code](https://aka.ms/devtools-for-code) at Marketplace -->
@@ -70,7 +64,7 @@ See also:
 
 In the new **Focus Mode** DevTools UI, various bugs affecting controls and keyboard shortcuts for DevTools have been resolved:
 *  Improved behavior of collapsible tabs in the **Elements** tool.
-*  Fixed some instances in which the name of an open tool was not visible.
+*  Fixed some instances in which the name of an open tool wasn't visible.
 *  Improved reliability of **Quick View** controls.
 *  Improved behavior of opening DevTools by using keyboard shortcuts.
 *  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
@@ -97,23 +91,20 @@ See also:
 
 
 <!-- ====================================================================== -->
-## Fix: The Close button for DevTools is now accessible in high-contrast mode
+## Fix: The Close button for DevTools is now accessible in high contrast mode
 
 <!-- Title: Fix: In high contrast mode, the Close button for DevTools is now accessible -->
-<!-- Subtitle: In previous versions of Microsoft Edge, the Close button was not visible in high contrast mode but this issue has been fixed in Microsoft Edge 103. -->
+<!-- Subtitle: In previous versions of Microsoft Edge, the Close button wasn't visible in high contrast mode, but this issue has been fixed in Microsoft Edge 103. -->
 
-In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high-contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** (`X`) button for DevTools is displayed correctly in high-contrast mode:
+In previous versions of Microsoft Edge, the **Close** button for DevTools didn't render correctly in high contrast mode.  In Microsoft Edge 103, this issue has been fixed.  The **Close** (`X`) button for DevTools is displayed correctly in high contrast mode:
 
-![The Close DevTools (X) button in high-contrast mode.](devtools-103-images/close-button-high-contrast.png)
+![The Close DevTools (X) button in high contrast mode.](devtools-103-images/close-button-high-contrast.png)
 <!--
 1. Open Edge Stable.
 2. Go to edge://version and ensure you're on version < 103.
 3. Windows Settings > Accessibility > Contrast themes, select the Night sky theme to apply.
 4. Open DevTools in Edge Stable.  Note that the Close button won't be visible (you can still select it though).  See attachment for reference.
 5. Repeat in Edge Canary or Dev, ensure version = 103+.  See attachment for reference. -->
-
-<!-- Video recording of feature in action
-.mp4 attachments -->
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
