@@ -21,7 +21,7 @@ Using Edge Command Palette, it is easy to access productivity and developer feat
 
 By default, Edge Command Palette isn't enabled. To enable Edge Command Palette:
 
-1. In Microsoft Edge, go to `edge://version`, and make sure you're using Microsoft Edge 105 or later.  If you want to get the latest preview channels of Microsoft Edge, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/).
+1. In Microsoft Edge, go to `edge://version`, and make sure you're using Microsoft Edge 105 or later.  To get the latest preview channels of Microsoft Edge, see [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/).
 
 1. In Microsoft Edge, go to `edge://flags`.
 
@@ -44,13 +44,16 @@ To open Edge Command Palette:
 
 1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
-1. Start typing in the input box. For example, type **tabs** to display commands about tabs management, or type **bookmark** to display commands about bookmarks (shown below).  Or, press `>` to list all DevTools commands that are available in Edge Command Palette.
+1. Start typing in the input box. For example:
+   * Press `>` to list the available DevTools commands.
+   * Type **tabs** to display commands about tabs management.
+   * Type **bookmark** to display commands about bookmarks:
 
    ![Edge Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
 
 1. Press the Up or Down arrow keys to select the command you want to execute, and then press `Enter`.
 
-Examples of several useful commands are below.
+Examples of several useful commands are shown below.
 
 
 <!-- ====================================================================== -->
