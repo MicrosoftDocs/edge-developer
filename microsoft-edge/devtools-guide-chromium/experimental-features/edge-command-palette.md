@@ -26,9 +26,9 @@ Edge Command Palette is not enabled in Microsoft Edge by default. To enable Edge
 1. In Microsoft Edge, go to `edge://flags`.
 
 <!-- DevTools Toaster is in the process of being changed in Edge to match the feature's name -->
-1. Type "DevTools Toaster" in the **Search flags** text field.
+1. In the **Search flags** text field, type **DevTools Toaster**.
 
-1. Click the **Default** button, and then select **Enabled**:
+1. In the **DevTools Toaster** dropdown menu, select **Enabled**:
 
    ![Enabling the Edge Command Palette flag in the edge://flags page](./media/command-palette-flag.png)
 
@@ -38,29 +38,29 @@ Edge Command Palette is not enabled in Microsoft Edge by default. To enable Edge
 <!-- ====================================================================== -->
 ## Open Edge Command Palette
 
+Edge Command Palette provides access to Microsoft Edge commands, including various DevTools commands. This means you can use DevTools features without having to open DevTools first.
+
 To open Edge Command Palette:
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.
+1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
-1. Start typing in the input box. For example, type **tabs** to display commands about tabs management, or type **bookmark** to display commands about bookmarks.
+1. Start typing in the input box. For example, type **tabs** to display commands about tabs management, or type **bookmark** to display commands about bookmarks (shown below).  Or, press `>` to list all DevTools commands that are available in Edge Command Palette.
+
+   ![Edge Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
 
 1. Press the Up or Down arrow keys to select the command you want to execute, and then press `Enter`.
-
-![The Edge Command Palette with the word "bookmark" typed in, and a list of related commands](./media/command-palette-bookmark.png)
-
-Edge Command Palette also provides access to several DevTools commands. This means you can use DevTools features without having to open DevTools first.
-
-To list all DevTools commands that are available in Edge Command Palette, press `>`.
 
 Examples of several useful commands are below.
 
 
 <!-- ====================================================================== -->
-## Enable the Device Emulation tool
+## Open the Device Emulation tool
 
-Use the DevTools [**Device Emulation**](../device-mode/index.md) tool to approximate how your page looks and responds on a mobile device:
+Use the DevTools [**Device Emulation**](../device-mode/index.md) tool to approximate how your page looks and responds on a mobile device.
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.
+To open the DevTools Device Emulation tool by using Edge Command Palette:
+
+1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
 1. Press `>`.
 
@@ -70,21 +70,23 @@ Use the DevTools [**Device Emulation**](../device-mode/index.md) tool to approxi
 <!-- ====================================================================== -->
 ## Create and access snippets
 
-The [**Snippets**](../javascript/snippets.md) panel allows you to save JavaScript code and execute it on any webpage. If you run code repeatedly on webpages, create a snippet for it and use Edge Command Palette to access it quickly.
+The DevTools [**Snippets**](../javascript/snippets.md) tool allows you to save JavaScript code and execute it on any webpage. If you run the same code repeatedly on webpages, create a snippet for that code, and then use Edge Command Palette to quickly access your code snippet.
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.
+To open the DevTools **Snippets** tab by using Edge Command Palette:
+
+1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
 1. Press `>`.
 
-1. Type **snippets**, press the Down arrow key to select **Sources: Shows Snippets**, and then press `Enter`.
+1. Type **snippets**, press the Down arrow key to select **Sources: Show Snippets**, and then press `Enter`.
   
 
 <!-- ====================================================================== -->
 ## Manage browser tabs
 
-When using many tabs in Microsoft Edge, several useful tab-related commands are available.
+When using many tabs in Microsoft Edge, several useful tab-related commands are available in Edge Command Palette.
 
-1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.
+1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
 1. Type **tab**, and then use the Down and Up arrow keys to select a tab-related command; for example:
    *  **Open recently closed tab**
