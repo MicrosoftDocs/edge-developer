@@ -96,7 +96,7 @@ Many useful tab-related commands are available in Edge Command Palette, such as:
 
 1. In Microsoft Edge, press `Ctrl`+`Shift`+`Space`.  Edge Command Palette opens.
 
-1. Type the word **tab**, press `Down Arrow` or `Up Arrow` to select a tab-related command, and then press `Enter`.
+1. Type the word **tab**, press `Down Arrow` or `Up Arrow` to select a command, and then press `Enter`.
 
 
 <!-- ====================================================================== -->
