@@ -17,7 +17,7 @@ The sample code that's used by the DevTools documentation is mainly in the [Micr
 <!-- ====================================================================== -->
 ## Demo webpage with accessibility issues
 
-This demo webpage is useful for exploring various DevTools features, such as the **Elements** tool.
+This demo webpage is useful for exploring various DevTools features.
 
 1. Open the [Demo webpage with accessibility issues](https://MicrosoftEdge.github.io/Demos/devtools-a11y-testing/) in a new window or tab.
 
