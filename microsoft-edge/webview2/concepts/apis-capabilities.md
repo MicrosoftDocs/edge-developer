@@ -703,16 +703,16 @@ Failed:
 
 
 <!-- ====================================================================== -->
-## Load content in WebView2
+## WebView2 Fundamental APIs
 
-Use the following APIs to manage the loaded remote and local content and keep track of the load state and history.
+These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2.
 
 
 
 #### [C#](#tab/c-sharp)
 
-### Manage content loaded to WebView2
-WebView2 provides fundamental APIs to load, stop loading and reload content to WebView2. The content loaded can be:
+### Load content to WebView2
+WebView2 provides APIs to load, stop loading and reload content to WebView2. The content loaded can be:
  -from a URL.
  -a string of HTML.
  -local content via virtual host name to local folder mapping.
