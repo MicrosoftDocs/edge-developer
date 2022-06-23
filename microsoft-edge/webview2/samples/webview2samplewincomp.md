@@ -16,7 +16,7 @@ It is built as a Win32 Visual Studio 2019 project and makes use of both C++ and 
 
 It also uses Windows Runtime Composition APIs (also called the Visual layer) to take advantage of the Windows UI features and create a better look, feel, and functionality in C++ Win32 applications.
 
-Directory &amp; .sln: **WebView2SampleWinComp/WebView2SampleWinComp.sln**.
+Directory &amp; `.sln`: **WebView2SampleWinComp/WebView2SampleWinComp.sln**.
 
 
 **To use this sample (general-purpose steps):**
@@ -67,11 +67,11 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 1. On your local drive, open the `.sln` file in Visual Studio, in the directory:
 
-   *  `<your-repos-directory>/WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   * `<your-repos-directory>/WebView2Samples/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
    or:
 
-   *  `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
+   * `<your-repos-directory>/WebView2Samples-main/SampleApps/WebView2SampleWinComp/WebView2SampleWinComp.sln`
 
    A **Review Solution Actions** dialog box might open, prompting you for which installed Windows SDK to retarget the project to:
 
@@ -81,7 +81,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
 If the solution is already open, you can change the target as follows:
 
-* In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not solution), and then click **Retarget Projects**.
+*  In **Solution Explorer**, right-click the **WebView2SampleWinComp** project (not solution), and then click **Retarget Projects**.
 
 
 <!-- ====================================================================== -->
@@ -101,13 +101,13 @@ To install a Windows 10 SDK:
 
 1. In your `Downloads` directory, open the copy of `winsdksetup.exe` that you just downloaded.
 
-1.   The **Windows SDK setup** window opens:
+1. The **Windows SDK setup** window opens:
 
-  ![Windows SDK setup.](webview2samplewincomp-images/windows-sdk-setup.png)
+   ![Windows SDK setup.](webview2samplewincomp-images/windows-sdk-setup.png)
 
 1. Click the **Next** button and then follow the prompts.  You can accept the defaults.  At the end of installing, the Windows SDK Welcome screen for whichever version that you selected appears:
 
-  ![Welcome to the Windows SDK.](webview2samplewincomp-images/welcome-winsdk.png)
+   ![Welcome to the Windows SDK.](webview2samplewincomp-images/welcome-winsdk.png)
 
 1. Click the **Close** button.
 
