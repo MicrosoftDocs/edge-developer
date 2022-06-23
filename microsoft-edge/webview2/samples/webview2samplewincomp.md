@@ -77,7 +77,7 @@ Microsoft Visual Studio is required.  Microsoft Visual Studio Code is not suppor
 
    ![The 'Review Solution Actions' dialog box.](webview2samplewincomp-images/review-solution-actions.png)
 
-1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or **10.0.18362.0** (but not 10.0.19041.0), and then click the **OK** button.  If those versions aren't available, do the steps in the "Install the Windows SDK" section below.  Otherwise, skip to the section below that.
+1. In the **Windows SDK Version** dropdown list, select **10.0.20348.0** or later, or **10.0.18362.0** or earlier; do not select **10.0.19041.0**.  Then click the **OK** button.  If those versions aren't available, do the steps in the "Install the Windows SDK" section below.  Otherwise, skip to the section below that.
 
 If the solution is already open, you can change the target as follows:
 
