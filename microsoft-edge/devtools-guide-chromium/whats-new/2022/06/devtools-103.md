@@ -123,11 +123,6 @@ See also:
 
 Microsoft Edge 103 also includes the following updates from the Chromium project:
 
-* [Capture double-click and right-click events in the Recorder panel](https://developer.chrome.com/blog/new-in-devtools-103/#recorder)
-* [New timespan and snapshot mode in the Lighthouse panel](https://developer.chrome.com/blog/new-in-devtools-103/#lighthouse)
-* [Performance Insights updates](https://developer.chrome.com/blog/new-in-devtools-103/#performance)
-   * [Improved zoom control in the Performance Insights panel](https://developer.chrome.com/blog/new-in-devtools-103/#zoom)
-   * [Confirm to delete a performance recording](https://developer.chrome.com/blog/new-in-devtools-103/#delete)
 * [Reorder panes in the Elements panel](https://developer.chrome.com/blog/new-in-devtools-103/#reorder-pane)
 * [Picking a color outside of the browser](https://developer.chrome.com/blog/new-in-devtools-103/#color)
 * [Improved inline value preview during debugging](https://developer.chrome.com/blog/new-in-devtools-103/#inline-preview)
