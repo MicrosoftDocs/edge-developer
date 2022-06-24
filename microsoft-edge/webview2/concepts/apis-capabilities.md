@@ -240,7 +240,7 @@ WebView2 enables objects defined in native code to be passed to the web. These a
 * [CoreWebView2.AddHostObjectToScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
 * [CoreWebView2.RemoveHostObjectFromScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
 * [CoreWebView2Settings.AreHostObjectsAllowed Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
-* [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)<!--todo: which of the above methods or properties use this enum? it's used by https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping   Add enum to c++ list?-->
+
 
 
 #### [C++](#tab/cpp)
@@ -256,7 +256,7 @@ WebView2 enables objects defined in native code to be passed to the web. These a
 ### Script Execution
 
 <!-- what kind of script, any JavaScript statements/objects/methods?  Where is the script executed?  what's this heading referring to? -->
-You can use JavaScript in WebView2 controls to customize your native apps to meet your requriements.
+Allows host app to add JavaScript in the web content within the WebView2 control. 
 <!--
 See also:
 * []()
@@ -290,7 +290,7 @@ Clickable API Ref links:
 ### Web Messaging
 
 <!-- what is "web messaging"?  sending messages from wv2 control to http server, then handling the response from the server.  the host app uses the wv2 ctrl to send msgs to http server.  why is messaging needed for a hybrid/web app?  what's involved, in summary? -->
-You can send messages from the host app to WebView2 control and from WebView2 control to host app. 
+You can send messages (string or JSON) from the host app to the web content within the WebView2 control and from the web content within the WebView2 control to the host app. 
 
 <!--
 See also:
@@ -459,7 +459,7 @@ Custom Download Experience:
 * [CoreWebView2DownloadOperation Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadoperation)
 * [CoreWebView2DownloadInterruptReason Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadinterruptreason)<!--todo: which of the above methods or properties use this enum?-->
 * [CoreWebView2DownloadState Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadstate)
-* [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
+
 
 #### [C++](#tab/cpp)
 
@@ -480,7 +480,6 @@ Custom Download Experience:
 * [ICoreWebView2DownloadOperation interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2downloadoperation)
 * [COREWEBVIEW2_DOWNLOAD_INTERRUPT_REASON enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_download_interrupt_reason)<!--todo: which of the above methods or properties use this enum?-->
 * [COREWEBVIEW2_DOWNLOAD_STATE enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_download_state)<!--todo: which of the above methods or properties use this enum?-->
-* [COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_host_resource_access_kind)<!--todo: which of the above methods or properties use this enum?-->
 
 ---
 
@@ -489,7 +488,7 @@ Custom Download Experience:
 ### Permissions
 
 <!-- TODO: does WV2 ever show the dialogs? What can you do with the dialogs? -->
-Different web pages may ask you for permissions to access some privileged resources (e.g. dialog to grant permission to access your location). In WebView2 you can find out what the web pages are asking permission for and what to do with the JavaScript dialogs.  
+Different web pages may ask you for permissions to access some privileged resources (e.g. geolocation, camera, microphone, etc.). Using the WebView2 permissions APIs, your host app can programmatically respond to permissions requests and/or replace the default permissions UI with its own UI. 
 
 <!--
 See also:
@@ -746,7 +745,10 @@ Manage content loaded to WebView2:
 
 Map a local folder to a virtual hostname to load local content to WebView2: 
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
+   * [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clearvirtualhostnametofoldermapping)
+
+<!-- TODO: Add correct indentation -->
 
 Keep track of WebView2's history:
 * [CoreWebView2.Source Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.source)
@@ -787,7 +789,10 @@ Manage content loaded to WebView2:
 
 Map a local folder to a virtual hostname to load local content to WebView2:
 * [ICoreWebView2_3::SetVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)
+   * [COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_host_resource_access_kind)<!--todo: which of the above methods or properties use this enum?-->
 * [ICoreWebView2_3::ClearVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#clearvirtualhostnametofoldermapping)
+
+<!-- TODO: add the correct indentation -->
 
 Keep track of WebView2's history:
 * [ICoreWebView2::Source property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_source)<!--no put-->
@@ -979,6 +984,8 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 #### [C#](#tab/c-sharp)
 
 * [CoreWebView2Frame Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame)
+<!-- TODO: Has APIs for posting messages adn some of the other interop sections
+      CONSIDER: breaking iFrame content into the other sections. Keep an iFrame section with just create + destroy to explain what iFrames do and move sub topics to other sections. -->
 * [CoreWebView2FrameInfo Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frameinfo)
 * [CoreWebView2.FrameCreated Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.framecreated)
    * [CoreWebView2FrameCreatedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2framecreatedeventargs)
