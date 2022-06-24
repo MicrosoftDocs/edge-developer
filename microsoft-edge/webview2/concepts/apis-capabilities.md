@@ -23,6 +23,75 @@ This article provides:
 
 <!-- Audience: Read this if you're an app developer who would like to know about the WebView2 technology and whether WebView2 is for you. -->
 
+**Contents:**
+
+*  Summary of APIs
+
+*  Top-level classes or interfaces
+   *  Overview of the top-level classes
+   *  UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes
+
+*  Web/native interop
+   *  Host/web object sharing
+   *  Script execution
+   *  Web messaging
+   *  Script dialogs
+
+*  Browser features
+   *  Printing
+   *  Cookies
+   *  Image capture
+   *  Downloads
+   *  Permissions
+   *  Context menus
+   *  Status bar
+   *  User Agent
+   *  Autofill
+   *  Audio
+   *  Swipe gesture navigation
+
+*  Browser features, additional
+
+*  Process management
+
+*  Navigate and load page content
+   *  Manage content loaded into WebView2
+   *  Navigation history
+   *  Block unwanted navigations
+   *  Navigation events
+   *  Manage the network requests in WebView2
+   *  Client certificates
+
+*  iFrames
+
+*  Authentication
+
+*  Environment setup
+
+*  Rendering WebView2 in non-framework apps
+
+*  Window management
+   *  Sizing, positioning, and visibility
+   *  Zooming
+   *  Rasterization scale
+   *  Focus and tabbing
+   *  Parent window
+   *  Keyboard accelerators
+   *  Default background color
+
+*  Composition-based rendering
+   *  Output
+   *  Input
+   *  Accessibility
+
+*  User data
+
+*  Performance and debugging
+
+*  Chrome Developer Protocol (CDP)
+
+*  Misc.
+
 
 <!-- ====================================================================== -->
 ## Summary of APIs
@@ -128,6 +197,12 @@ Some common use cases include:
 *  Update the native host window title after navigating to a different website.
 *  Send a native camera object and use its methods from a web app.
 *  Run a dedicated JavaScript file on the web side of an application.
+
+Sections below:
+*  Host/web object sharing
+*  Script execution
+*  Web messaging
+*  Script dialogs
 
 For more information, see:
 * [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md)
@@ -246,6 +321,19 @@ For more information, see:
 ## Browser features
 
 This section covers features inherited from the browser and available in a WebView2 control.  These APIs allow developers the ability to toggle and change these inherited features.
+
+Sections below:
+*  Printing
+*  Cookies
+*  Image capture
+*  Downloads
+*  Permissions
+*  Context menus
+*  Status bar
+*  User Agent
+*  Autofill
+*  Audio
+*  Swipe gesture navigation
 
 
 <!-- ------------------------------ -->
@@ -577,6 +665,14 @@ Browser features:<!-- moved from Rendering section -->
 <!-- ====================================================================== -->
 ## Browser features, additional
 
+<!-- TODO: dissolve this section -->
+
+Sections below:
+*  Title
+*  Fullscreen
+*  New window
+*  Close
+
 ##### [C#](#tab/c-sharp)
 
 Title:<!--TODO: goes in Browser Features -->
@@ -626,13 +722,19 @@ Get information about running WebView2 processes, exiting processes, and failed 
 
 <!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
 
+Sections below:
+*  Info
+*  Exited
+*  Failed
+
 <!--
 See also:
 * []()
 -->
 
-
 ##### [C#](#tab/c-sharp)
+
+<!-- TODO: convert to h3s? -->
 
 Info:
 * [CoreWebView2.BrowserProcessId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.browserprocessid)
@@ -680,7 +782,6 @@ Failed:
 ## Navigate and load page content
 
 These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2, including:
-
 *  Manage content loaded into WebView2.
 *  History API.
 *  Block unwanted navigations.
@@ -992,6 +1093,16 @@ If you're using a UI framework for your app, you should use the WebView2 element
 
 TBD
 
+Sections below:
+*  Sizing, positioning, and visibility
+*  Zooming
+*  Rasterization scale
+*  Focus and tabbing
+*  Parent window
+*  Keyboard accelerators
+*  Default background color
+
+
 <!-- ------------------------------ -->
 #### Sizing, positioning, and visibility
 
@@ -1152,6 +1263,12 @@ WebView2 can specify a default background color.  This can be any opaque color o
 ## Composition-based rendering
 
 For composition-based WebView2 rendering, use the CoreWebView2Environment to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition based rendering.
+
+Sections below:
+*  Output
+*  Input
+*  Accessibility
+
 
 ##### [C#](#tab/c-sharp)
 
