@@ -9,6 +9,11 @@ ms.technology: webview
 ms.date: 06/23/2022
 ---
 # Overview of WebView2 APIs and their capabilities
+<!-- 
+TODO: change title:
+# Overview of WebView2 APIs and features
+# Features supported by WebView2 APIs
+-->
 
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
@@ -16,19 +21,19 @@ This article provides:
 *  High-level description of WebView2 technology for app developers.
 *  Better fundamentals + understanding of WebView2 technology.
 
-Audience: App developers who are curious about the WebView2 technology and would like to know if WebView2 is for them.
+<!-- Audience: Read this if you're an app developer who would like to know about the WebView2 technology and whether WebView2 is for you. -->
 
 
+<!-- ====================================================================== -->
 ## Summary of APIs
 
 | API | Purpose |
 |---|---|
-| [High-level interfaces spanning multiple areas](#high-level-interfaces-spanning-multiple-areas) | The top-level CoreWebView2, Controller, and Environment classes work together so your app can host a WebView2 browser control. |
+| [Top-level classes or interfaces](#top-level-classes-or-interfaces) | The top-level CoreWebView2, Controller, and Environment classes work together so your app can host a WebView2 browser control. |
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
-| [Managing WebView2 processes](#managing-webview2-processes) | TBD |
-| [WebView2 fundamental APIs](#webview2-fundamental-apis) | These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2. |
-| [Working with Chrome Developer Protocol (CDP)](#working-with-chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
+| [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
+| [Navigate and load page content](#navigate-and-load-page-content) | These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2. |
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
 | [Environment setup](#environment-setup) | Specify settings before WebView2 controls are created. |
@@ -36,14 +41,15 @@ Audience: App developers who are curious about the WebView2 technology and would
 | [Window management](#window-management) | Tasks related to the management of a window. |
 | [Composition-based rendering](#composition-based-rendering) | For composition-based WebView2 rendering, use the CoreWebView2Environment to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition based rendering. |
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
-| [Performance optimizations/tools and debugging](#performance-optimizationstools-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
+| [Performance and debugging](#performance-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
+| [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 | [Misc.](#misc) | Read settings and handle deferral.<!--define/hints--> |
 
 
 <!-- ====================================================================== -->
-## High-level interfaces spanning multiple areas
+## Top-level classes or interfaces
 
-This article categorizes the WebView2 interfaces, at a high level, for WebView2.  This article also lists selected members of interfaces.  These interfaces contain properties, methods, and events that span multiple categories in this article:
+The following classes or interfaces are the main, topmost types for WebView2.  These large, top-level classes or interfaces contain properties, methods, and events that provide a variety of features for your apps, as outlined in this article.
 
 #### [C#](#tab/c-sharp)
 
@@ -132,7 +138,7 @@ The following are the main APIs for communicating between web and native code.
 
 
 <!-- ------------------------------ -->
-### Host/Web Object Sharing
+### Host/web object sharing
 
 <!-- define object sharing.  selected methods on a host platform can be called by web-side by sharing specified objects. -->
 WebView2 enables objects defined in native code to be passed to the web. These are called host objects, which can be projected into JavaScript so that you can trigger the native object methods from web side code, or as a result of user interaction on the web-side of your app. By doing so, you can avoid re-implementing your native objects' methods in your web-side code. 
@@ -155,7 +161,7 @@ WebView2 enables objects defined in native code to be passed to the web. These a
 
 
 <!-- ------------------------------ -->
-### Script Execution
+### Script execution
 
 <!-- what kind of script, any JavaScript statements/objects/methods?  Where is the script executed?  what's this heading referring to? -->
 You can use JavaScript in WebView2 controls to customize your native apps to meet your requriements.
@@ -178,18 +184,11 @@ See also:
 * [ICoreWebView2::RemoveScriptToExecuteOnDocumentCreated method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#removescripttoexecuteondocumentcreated)
 * [ICoreWebView2Settings::IsScriptEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)
 
-
 ---
-
-<!--
-Clickable API Ref links:
-* [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
-* [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
--->
 
 
 <!-- ------------------------------ -->
-### Web Messaging
+### Web messaging
 
 <!-- what is "web messaging"?  sending messages from wv2 control to http server, then handling the response from the server.  the host app uses the wv2 ctrl to send msgs to http server.  why is messaging needed for a hybrid/web app?  what's involved, in summary? -->
 You can send messages from the host app to WebView2 control and from WebView2 control to host app. 
@@ -220,7 +219,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-### Script Dialogs
+### Script dialogs
 
 You can use this to manage different JavaScript dialogs to suppress or replace them with custom dialogs.
 
@@ -452,7 +451,8 @@ See also:
 
 
 <!-- ------------------------------ -->
-### Status Bar
+### Status bar
+
 <!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
 A status bar is located in the bottom left of the page and displays the state of the webpage being displayed. In WebView2 you can enable/disable the status bar, get the text in the status bar and find out when the status bar text has changed. 
 
@@ -575,7 +575,7 @@ Browser features:<!-- moved from Rendering section -->
 ---
 
 <!-- ====================================================================== -->
-## Browser features (additional, move up)
+## Browser features, additional
 
 #### [C#](#tab/c-sharp)
 
@@ -620,9 +620,9 @@ Close:<!--TODO: goes near Browser Features, or Rendering WebView2 in non-framewo
 
 
 <!-- ====================================================================== -->
-## Managing WebView2 processes
+## Process management
 
-TBD
+Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly.
 
 <!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
 
@@ -677,18 +677,22 @@ Failed:
 
 
 <!-- ====================================================================== -->
-## WebView2 fundamental APIs
+## Navigate and load page content
 
-These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2.
+These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2, including:
+
+*  Manage content loaded into WebView2.
+*  History API.
+*  Block unwanted navigations.
+*  Navigation events.
+*  Manage the network requests in WebView2.
+*  Client certificates.
 
 
 <!-- ------------------------------ -->
-### Manage content loaded to WebView2
-<!-- 
-### Load content to WebView2
--->
+### Manage content loaded into WebView2
 
-WebView2 provides APIs to load, stop loading and reload content to WebView2. The content loaded can be:
+These APIs load, stop loading, and reload content to WebView2.  The content that's loaded can be:
 *  From a URL.
 *  A string of HTML.
 *  Local content via virtual host name to local folder mapping.
@@ -721,7 +725,7 @@ WebView2 provides APIs to load, stop loading and reload content to WebView2. The
 
 
 <!-- ------------------------------ -->
-### History API
+### Navigation history
 
 The history methods allow back and forward navigation in WebView2, and the history events provide information about the changes in history and in WebView2's current source.
 
@@ -827,10 +831,10 @@ See also:
 
 
 <!-- ------------------------------ -->
-### Server/Client Certificates
+### Client certificates
 
-Learn how to work with certificates in WebView2 controls (TODO: confirm)
-<!-- alt pattern instead of "Learn how to": provide a teaching & tech marketing moment.  Say something about how you (can) use certs, why would you do that?
+Use the WebView2 certificates APIs to manage certificates in WebView2 controls.<!--TODO: confirm-->
+<!-- say something about how you (can) use certs, why would you do that?  how does it basically work?0
 By handling certs, your app can provide features A/B/C.  Your host app does X, and then the server does Y. -->
 
 <!--
@@ -852,48 +856,6 @@ See also:
    * [ICoreWebView2ClientCertificateCollection interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection)<!--n/a for c#-->
 * [ICoreWebView2_5::ClientCertificateRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_5#add_clientcertificaterequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_5#remove_clientcertificaterequested)
    * [ICoreWebView2ClientCertificateRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventargs)
-
----
-
-
-<!-- ====================================================================== -->
-## Working with Chrome Developer Protocol (CDP)
-
-The [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol) provides APIs to instrument, inspect, debug, and profile Chromium-based browsers. The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools. Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
-
-See also:
-* [https://docs.microsoft.com/microsoft-edge/webview2/how-to/chromium-devtools-protocol](Use the Chrome DevTools Protocol)
-
-
-#### [C#](#tab/c-sharp)
-
-Open:
-* [CoreWebView2Settings.AreDevToolsEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredevtoolsenabled)
-* [CoreWebView2.OpenDevToolsWindow Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.opendevtoolswindow)
-
-Call:
-* [CoreWebView2.CallDevToolsProtocolMethodAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync)
-* [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodforsessionasync)
-
-Receiver:
-* [CoreWebView2.GetDevToolsProtocolEventReceiver Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver)
-   * [CoreWebView2DevToolsProtocolEventReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs)
-   * [CoreWebView2DevToolsProtocolEventReceiver Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver)
-
-#### [C++](#tab/cpp)
-
-Open:
-* [ICoreWebView2Settings::AreDevToolsEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredevtoolsenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredevtoolsenabled)
-* [ICoreWebView2::OpenDevToolsWindow method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#opendevtoolswindow)
-
-Call:
-* [ICoreWebView2::CallDevToolsProtocolMethod method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod)
-* [ICoreWebView2_11::CallDevToolsProtocolMethodForSession method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_11#calldevtoolspotocolmethodforsession)
-
-Receiver:
-* [ICoreWebView2::GetDevToolsProtocolEventReceiver method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#getdevtoolsprotocoleventreceiver)
-   * [ICoreWebView2DevToolsProtocolEventReceiver interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
-   * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
 
 ---
 
@@ -1026,7 +988,7 @@ If you're using a UI framework for your app, you should use the WebView2 element
 
 
 <!-- ====================================================================== -->
-## Window Management
+## Window management
 
 TBD
 
@@ -1077,7 +1039,7 @@ Browser/gesture/zoom features:<!-- moved from Rendering section - fits best in "
 
 
 <!-- ------------------------------ -->
-### Rasterization Scale
+### Rasterization scale
 
 The RasterizationScale API scales all WebView2 UI including context menus, tooltip, and popups.  The app can set whether the WebView2 should detect monitor scale changes and automatically update the RasterizationScale.  `BoundsMode` is used to configure whether the Bounds property is interpreted as raw pixels, or DIPs (which need to be scaled by `RasterizationScale`).
 
@@ -1101,7 +1063,7 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 
 
 <!-- ------------------------------ -->
-### Focus & Tabbing
+### Focus and tabbing
 
 WebView2 raises events to let the app know when it gains and loses focus. For tabbing, there is an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
 
@@ -1127,7 +1089,7 @@ WebView2 raises events to let the app know when it gains and loses focus. For ta
 
 
 <!-- ------------------------------ -->
-### Parent Window
+### Parent window
 
 WebView2 can be re-parented to a different parent HWND.  WebView2 also needs to be notified when the app's position on the screen has changed.
 
@@ -1145,7 +1107,7 @@ WebView2 can be re-parented to a different parent HWND.  WebView2 also needs to 
 
 
 <!-- ------------------------------ -->
-### Keyboard Accelerators
+### Keyboard accelerators
 
 When WebView2 has focus, it directly receives input from the user. An app may want to intercept and handle certain accelerator key combinations, or disable the normal browser accelerator key behaviors.
 
@@ -1299,9 +1261,9 @@ See also:
 ---
 
 <!-- ====================================================================== -->
-## Performance optimizations/tools and debugging
+## Performance and debugging
 
-Learn how to handle performance related events for WebView2 controls.
+Learn how to handle performance-related events for WebView2 controls.
 <!-- alt pattern instead of "Learn how to".  Teach a little about this domain: Here's what to think of by the word "perf", "optimiz", tools, and debugging perf:
 Increasing perf for your app includes xyz.  Makes your app respond to user input actions quickly; prevents sluggish response.  Manage memory usage, responsiveness.  Tools help you analyze xyz & debug and test perf. -->
 These APIs help you analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness.
@@ -1332,6 +1294,49 @@ See also:
    * [ICoreWebView2_3::Resume method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)
 * [ICoreWebView2_6::OpenTaskManagerWindow method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
 * [ICoreWebView2Settings::IsBuiltInErrorPageEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isbuiltinerrorpageenabled)
+
+---
+
+
+<!-- ====================================================================== -->
+## Chrome Developer Protocol (CDP)
+
+The Chrome DevTools Protocol provides APIs to instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform.
+
+See also:
+* [Use the Chrome DevTools Protocol in WebView2 apps](../how-to/chromium-devtools-protocol.md)
+* [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol)
+
+
+#### [C#](#tab/c-sharp)
+
+Open:
+* [CoreWebView2Settings.AreDevToolsEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredevtoolsenabled)
+* [CoreWebView2.OpenDevToolsWindow Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.opendevtoolswindow)
+
+Call:
+* [CoreWebView2.CallDevToolsProtocolMethodAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodasync)
+* [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodforsessionasync)
+
+Receiver:
+* [CoreWebView2.GetDevToolsProtocolEventReceiver Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.getdevtoolsprotocoleventreceiver)
+   * [CoreWebView2DevToolsProtocolEventReceivedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceivedeventargs)
+   * [CoreWebView2DevToolsProtocolEventReceiver Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2devtoolsprotocoleventreceiver)
+
+#### [C++](#tab/cpp)
+
+Open:
+* [ICoreWebView2Settings::AreDevToolsEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredevtoolsenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredevtoolsenabled)
+* [ICoreWebView2::OpenDevToolsWindow method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#opendevtoolswindow)
+
+Call:
+* [ICoreWebView2::CallDevToolsProtocolMethod method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#calldevtoolsprotocolmethod)
+* [ICoreWebView2_11::CallDevToolsProtocolMethodForSession method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_11#calldevtoolspotocolmethodforsession)
+
+Receiver:
+* [ICoreWebView2::GetDevToolsProtocolEventReceiver method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#getdevtoolsprotocoleventreceiver)
+   * [ICoreWebView2DevToolsProtocolEventReceiver interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceiver)
+   * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
 
 ---
 
