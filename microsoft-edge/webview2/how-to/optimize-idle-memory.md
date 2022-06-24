@@ -19,7 +19,7 @@ To minimize memory usage by your WebView2 app when it's idle, you can do any of 
 
 You can combine Approach 1 (`IsVisible`) with the other approaches, but Approach 2 (`TrySuspend`) and Approach 3 (`MemoryUsageTargetLevel`) are mutually exclusive.  Thus, you can do any of the following combinations of approaches:
 * Approach 1 (`IsVisible`).
-* TODO: can you do Approach 2 without also doing Approach 1?
+* TODO: can you do Approach 2 (`TrySuspend`) without also doing Approach 1 (`IsVisible`)?
 * Approach 1 (`IsVisible`) together with Approach 2 (`TrySuspend`).
 * Approach 3 (`MemoryUsageTargetLevel`).
 * Approach 1 (`IsVisible`) together with Approach 3 (`MemoryUsageTargetLevel`).
@@ -123,6 +123,8 @@ In this approach, you use the `MemoryUsageTargetLevel` property.  WebView2's `Me
 The `MemoryUsageTargetLevel` property tells WebView2 to behave as if it's in a low-memory environment.  The specific details may vary by OS version, but in every case WebView2 will run various garbage collection features and allow Windows to page out its memory more liberally. 
 
 Once your app is in use again, be sure to set the memory usage target back to normal (by calling the API again).  Otherwise, you may hit performance issues if your memory is being paged out while your app is in use.
+
+#### When not to use this approach
 
 TODO: List reasons when not to use this approach.
 
