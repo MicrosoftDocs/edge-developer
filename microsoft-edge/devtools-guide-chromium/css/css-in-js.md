@@ -81,7 +81,7 @@ Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/z
 <!-- ====================================================================== -->
 ## What is CSS-in-JS?
 
-This section is an excerpt from the blog post [CSS-in-JS support in DevTools](https://developers.google.com/web/updates/2021/02/css-in-js).
+This section is an excerpt from the blog post [CSS-in-JS support in DevTools](https://developer.chrome.com/blog/css-in-js/).
 
 Here's what we mean by _CSS-in-JS_, and how it's different from regular CSS.  The definition of _CSS-in-JS_ is somewhat vague.  In a broad sense, it's an approach for managing CSS code using JavaScript.  For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
 
