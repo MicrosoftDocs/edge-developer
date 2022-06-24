@@ -23,75 +23,6 @@ This article provides:
 
 <!-- Audience: Read this if you're an app developer who would like to know about the WebView2 technology and whether WebView2 is for you. -->
 
-**Contents:**
-
-*  Summary of APIs
-
-*  Top-level classes or interfaces
-   *  Overview of the top-level classes
-   *  UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes
-
-*  Web/native interop
-   *  Host/web object sharing
-   *  Script execution
-   *  Web messaging
-   *  Script dialogs
-
-*  Browser features
-   *  Printing
-   *  Cookies
-   *  Image capture
-   *  Downloads
-   *  Permissions
-   *  Context menus
-   *  Status bar
-   *  User Agent
-   *  Autofill
-   *  Audio
-   *  Swipe gesture navigation
-
-*  Browser features, additional
-
-*  Process management
-
-*  Navigate and load page content
-   *  Manage content loaded into WebView2
-   *  Navigation history
-   *  Block unwanted navigations
-   *  Navigation events
-   *  Manage the network requests in WebView2
-   *  Client certificates
-
-*  iFrames
-
-*  Authentication
-
-*  Environment setup
-
-*  Rendering WebView2 in non-framework apps
-
-*  Window management
-   *  Sizing, positioning, and visibility
-   *  Zooming
-   *  Rasterization scale
-   *  Focus and tabbing
-   *  Parent window
-   *  Keyboard accelerators
-   *  Default background color
-
-*  Composition-based rendering
-   *  Output
-   *  Input
-   *  Accessibility
-
-*  User data
-
-*  Performance and debugging
-
-*  Chrome Developer Protocol (CDP)
-
-*  Misc.
-
 
 <!-- ====================================================================== -->
 ## Summary of APIs
@@ -102,13 +33,13 @@ This article provides:
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
-| [Navigate and load page content](#navigate-and-load-page-content) | These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2. |
+| [Navigate to pages and load page content](#navigate-to-pages-and-load-page-content) | These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2. |
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
 | [Environment setup](#environment-setup) | Specify settings before WebView2 controls are created. |
 | [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
-| [Window management](#window-management) | Tasks related to the management of a window. |
-| [Composition-based rendering](#composition-based-rendering) | For composition-based WebView2 rendering, use the CoreWebView2Environment to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition based rendering. |
+| [Window management](#window-management) | Window-specific attributes, such as positioning, focus, and keyboard accelerators. |
+| [Composition-based rendering](#composition-based-rendering) | For composition-based WebView2 rendering, use the CoreWebView2Environment to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs that are specific to composition-based rendering. |
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
@@ -778,7 +709,7 @@ Failed:
 
 
 <!-- ====================================================================== -->
-## Navigate and load page content
+## Navigate to pages and load page content
 
 These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2, including:
 *  Manage content loaded into WebView2.
@@ -803,7 +734,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [CoreWebView2.Navigate Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigate)
 * [CoreWebView2.NavigateToString Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatetostring)
 * [CoreWebView2.NavigateWithWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
-   * [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)<!-- used by https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter and this is the type of CoreWebView2WebResourceRequestedEventArgs Class prop, TODO: move this to that event args?-->
+   * [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)<!-- used by https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter, and this is the type of CoreWebView2WebResourceRequestedEventArgs Class prop.  TODO: move this link to below that event args?-->
 * [CoreWebView2.Stop Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.stop)
 * [CoreWebView2.Reload Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
@@ -815,8 +746,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [ICoreWebView2::Navigate method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#navigate)
 * [ICoreWebView2::NavigateToString method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)
 * [ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
-   * [COREWEBVIEW2_WEB_RESOURCE_CONTEXT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_web_resource_context)
-<!-- TODO: move like c# CoreWebView2WebResourceContext enum?-->
+   * [COREWEBVIEW2_WEB_RESOURCE_CONTEXT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_web_resource_context)<!-- used by addwebresourcerequestedfilter, and this is the type of CoreWebView2WebResourceRequestedEventArgs Class prop.  TODO: move this link to below that event args?-->
 * [ICoreWebView2::Stop method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#stop)
 * [ICoreWebView2::Reload method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
 * [ICoreWebView2_3::SetVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)
@@ -1094,16 +1024,14 @@ If you're using a UI framework for your app, you should use the WebView2 element
 <!-- ====================================================================== -->
 ## Window management
 
-TBD
-
-Sections below:
-*  Sizing, positioning, and visibility
-*  Zooming
-*  Rasterization scale
-*  Focus and tabbing
-*  Parent window
-*  Keyboard accelerators
-*  Default background color
+Window-specific attributes, including:
+*  Sizing, positioning, and visibility.
+*  Zooming.
+*  Rasterization scale.
+*  Focus and tabbing.
+*  Parent window.
+*  Keyboard accelerators.
+*  Default background color.
 
 
 <!-- ------------------------------ -->
@@ -1265,7 +1193,7 @@ WebView2 can specify a default background color.  This can be any opaque color o
 <!-- ====================================================================== -->
 ## Composition-based rendering
 
-For composition-based WebView2 rendering, use the CoreWebView2Environment to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs specific to composition based rendering.
+For composition-based WebView2 rendering, use the CoreWebView2Environment to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs that are specific to composition-based rendering.
 
 Sections below:
 *  Output
