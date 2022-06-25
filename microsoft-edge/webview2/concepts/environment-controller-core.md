@@ -6,20 +6,22 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/09/2022
+ms.date: 06/24/2022
 ---
 # How the top-level classes work: CoreWebView2, Controller, and Environment
 
-<!-- nutshell intro/summary block to keep sync'd:
+<!-- keep sync'd:
 * topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
-* [Overview of the top-level classes](apis-capabilities.md#overview-of-the-top-level-classes) in _Overview of WebView2 APIs and their capabilities_.
+* [Overview of the top-level classes](overview-features-apis.md#overview-of-the-top-level-classes) in _Overview of WebView2 features and APIs_.
 -->
 
-<!-- todo - derive / condense in context of APIs Overview .md -->
+The three top-level `CoreWebView2`, `*Controller`, and `*Environment` classes (or interfaces) work together so your app can host a WebView2 browser control.  These large, top-level classes or interfaces contain properties, methods, and events that provide a variety of features for your apps.
 
-<!-- / end of nutshell intro/summary block to keep synced -->
+The `*Environment` class (or interface) represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From the `Environment` class (or interface), you create `CoreWebView2` and `*Controller` pairs.
+*  The `CoreWebView2` class (or interface) is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
+*  The `*Controller` class (or interface) is responsible for hosting-related functionality such as focus, visibility, size, and input, where your app hosts the WebView2 control.
 
-The WebView2 `Controller` and `CoreWebView2` classes work as pairs.
+<!-- / keep sync'd -->
 
 
 #### [C#](#tab/c-sharp)
@@ -37,7 +39,6 @@ The WebView2 `Controller` and `CoreWebView2` classes work as pairs.
 ---
 
 Cross-platform API implementation: Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
-<!-- link prefix: https://docs.microsoft.com -->
 
 
 ### Overview of the top-level classes

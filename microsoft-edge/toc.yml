@@ -956,8 +956,8 @@
           href: webview2/index.md
           displayName: 
 
-        - name: Overview of WebView2 APIs and their capabilities
-          href: webview2/concepts/apis-capabilities.md
+        - name: Overview of WebView2 features and APIs
+          href: webview2/concepts/overview-features-apis.md
           displayName: 
 
 # -----------------------------------------------------------------------------

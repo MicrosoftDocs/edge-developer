@@ -279,4 +279,4 @@ The following are some of the key APIs for calling native-side code from web-sid
 <!-- ====================================================================== -->
 ## See also
 
-* [Web/Native Interop](../concepts/apis-capabilities.md#webnative-interop) in _Overview of WebView2 APIs and their capabilities_.
+* [Web/Native Interop](../concepts/overview-features-apis.md#webnative-interop) in _Overview of WebView2 features and APIs_.

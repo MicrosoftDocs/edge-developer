@@ -1,19 +1,14 @@
 ---
-title: Overview of WebView2 APIs and their capabilities
-description: Overview of WebView2 APIs and their capabilities.
+title: Overview of WebView2 features and APIs
+description: Overview of WebView2 features and APIs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/23/2022
+ms.date: 06/24/2022
 ---
-# Overview of WebView2 APIs and their capabilities
-<!-- 
-TODO: change title:
-# Overview of WebView2 APIs and features
-# Features supported by WebView2 APIs
--->
+# Overview of WebView2 features and APIs
 
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
@@ -33,7 +28,7 @@ This article provides:
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
-| [Navigate to pages and load page content](#navigate-to-pages-and-load-page-content) | These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2. |
+| [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2. |
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
 | [Environment setup](#environment-setup) | Specify settings before WebView2 controls are created. |
@@ -49,74 +44,37 @@ This article provides:
 <!-- ====================================================================== -->
 ## Top-level classes or interfaces
 
-The following classes or interfaces are the main, topmost types for WebView2.  These large, top-level classes or interfaces contain properties, methods, and events that provide a variety of features for your apps, as outlined in this article.
+<!-- keep sync'd:
+* [Overview of the top-level classes](overview-features-apis.md#overview-of-the-top-level-classes) in _Overview of WebView2 features and APIs_.
+* topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
+-->
+
+The three top-level `CoreWebView2`, `*Controller`, and `*Environment` classes (or interfaces) work together so your app can host a WebView2 browser control.  These large, top-level classes or interfaces contain properties, methods, and events that provide a variety of features for your apps.
+
+The `*Environment` class (or interface) represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From the `Environment` class (or interface), you create `CoreWebView2` and `*Controller` pairs.
+*  The `CoreWebView2` class (or interface) is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
+*  The `*Controller` class (or interface) is responsible for hosting-related functionality such as focus, visibility, size, and input, where your app hosts the WebView2 control.
+
+<!-- / keep sync'd -->
+
+See also:
+
+* [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md)
+
 
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2 Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2)
 * [CoreWebView2Controller Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller)
 * [CoreWebView2Environment Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)
-* [CoreWebView2Settings Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings)
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2)
 * [ICoreWebView2Controller](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller)
 * [ICoreWebView2Environment](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment)
-* [ICoreWebView2Settings](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings)
 
 ---
-
-<!-- link prefix: https://docs.microsoft.com -->
-
-Cross-platform API implementation: Most of the WebView2 APIs are initially developed for C++, and then most of the C++ APIs are wrapped as C# APIs.  This way, there is a consistent parallelism and equivalence across platforms and programming languages.
-
-
-#### Overview of the top-level classes
-<!-- change heading to more like:
-#### How the top-level classes work: CoreWebView2, Controller, and Environment
--->
-
-The top-level CoreWebView2, Controller, and Environment classes work together so your app can host a WebView2 browser control.
-
-<!-- nutshell intro/summary block to keep sync'd:
-* topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
-* [Overview of the top-level classes](apis-capabilities.md#overview-of-the-top-level-classes) in _Overview of WebView2 APIs and their capabilities_.
--->
-
-<!-- todo - derive / condense in context of APIs Overview .md - all this info is dup'd in environment-controller-core.md, so freely rework/condense here & then copy to top of there (aim to completely transform/reword/condense this block): -->
-
-Overview of:
-* `CoreWebView2Environment`
-* `CoreWebView2`
-* `CoreWebView2Controller` vs. `WebView2` classes (UI framework-specific WebView2 element class like the WPF, WinForms, or WinUI `WebView2` classes).
-
-or, equivalently:
-* `ICoreWebView2Environment`
-* `ICoreWebView2`
-* `ICoreWebView2Controller`
-
-`CoreWebView2Environment` represents a group of WebView2 controls that all share the following:
-*  They share the same WebView2 browser process.
-*  They share the same user data folder.
-*  They potentially share WebView2 renderer and other WebView2 processes.
-
-From the `CoreWebView2Environment`, you create `CoreWebView2Controller` and `CoreWebView2` pairs.  They always come together as a `CoreWebView2Controller` and a corresponding `CoreWebView2`.
-*  The `CoreWebView2Controller` is responsible for all hosting-related functionality such as focus, visibility, size, and input.
-*  The `CoreWebView2` is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
-
-
-#### UI framework-specific WebView2 element class such as WPF, WinForms, or WinUI WebView2 classes
-
-It's different if you are using a UI framework-specific WebView2 element class like our WPF, WinForms, or WinUI WebView2 classes. 
-
-Then, the WebView2 class can optionally take a `CoreWebView2Environment` to use, and otherwise it will create a default `CoreWebView2Environment`.  Internally, the WebView2 class creates its `CoreWebView2Controller` and `CoreWebView2` from the `CoreWebView2Environment`.  The `WebView2` exposes its `CoreWebView2` as a `CoreWebView2` property, but the `CoreWebView2Controller` is kept private to the `WebView2` class.  This is because the `WebView2` class is responsible for connecting all of the `CoreWebView2Controller` functionality to the UI framework.
-
-<!-- / end of nutshell intro/summary block to keep sync'd -->
-
-See also:
-
-* [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md)
 
 
 <!-- ====================================================================== -->
@@ -128,12 +86,6 @@ Some common use cases include:
 *  Update the native host window title after navigating to a different website.
 *  Send a native camera object and use its methods from a web app.
 *  Run a dedicated JavaScript file on the web side of an application.
-
-Sections below:
-*  Host/web object sharing
-*  Script execution
-*  Web messaging
-*  Script dialogs
 
 For more information, see:
 * [Interop of native-side and web-side code](../how-to/communicate-btwn-web-native.md)
@@ -154,8 +106,6 @@ WebView2 enables objects defined in native code to be passed to the web. These a
 * [CoreWebView2.AddHostObjectToScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addhostobjecttoscript)
 * [CoreWebView2.RemoveHostObjectFromScript Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.removehostobjectfromscript)
 * [CoreWebView2Settings.AreHostObjectsAllowed Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arehostobjectsallowed)
-
-
 
 ##### [C++](#tab/cpp)
 
@@ -220,7 +170,6 @@ See also:
    * [ICoreWebView2WebMessageReceivedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs)
 * [ICoreWebView2Settings::IsWebMessageEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iswebmessageenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iswebmessageenabled)
 
-
 ---
 
 
@@ -244,27 +193,13 @@ For more information, see:
    * [ICoreWebView2ScriptDialogOpeningEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2scriptdialogopeningeventargs)
 * [COREWEBVIEW2_SCRIPT_DIALOG_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_script_dialog_kind)
 
-
 ---
 
 
 <!-- ====================================================================== -->
 ## Browser features
 
-This section covers features inherited from the browser and available in a WebView2 control.  These APIs allow developers the ability to toggle and change these inherited features.
-
-Sections below:
-*  Printing
-*  Cookies
-*  Image capture
-*  Downloads
-*  Permissions
-*  Context menus
-*  Status bar
-*  User Agent
-*  Autofill
-*  Audio
-*  Swipe gesture navigation
+The WebView2 control gives your host app access to many browser features, such as printing, cookies, and downloads.
 
 
 <!-- ------------------------------ -->
@@ -448,12 +383,12 @@ The WebView2 control provides a default context menu, and you can create your ow
 *  Remove default or custom menu items from the default context menu.
 *  Disable context menus.
 
-<!-- get links from Context Menus article or link to there -->
 See also:
 * [Customize context menus in WebView2](../how-to/context-menus.md)
-   * [API Reference overview](../how-to/context-menus.md#api-reference-overview)
 
 ##### [C#](#tab/c-sharp)
+
+<!-- TODO: copy more links from Context Menus article -->
 
 * [CoreWebView2.ContextMenuRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
 * [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodforsessionasync)
@@ -597,12 +532,6 @@ Browser features:<!-- moved from Rendering section -->
 
 <!-- TODO: dissolve this section -->
 
-Sections below:
-*  Title
-*  Fullscreen
-*  New window
-*  Close
-
 ##### [C#](#tab/c-sharp)
 
 Title:<!--TODO: goes in Browser Features -->
@@ -651,11 +580,6 @@ Close:<!--TODO: goes near Browser Features, or Rendering WebView2 in non-framewo
 Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly.
 
 <!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
-
-Sections below:
-*  Info
-*  Exited
-*  Failed
 
 <!--
 See also:
@@ -709,15 +633,9 @@ Failed:
 
 
 <!-- ====================================================================== -->
-## Navigate to pages and load page content
+## Navigate to pages and manage loaded content
 
-These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2, including:
-*  Manage content loaded into WebView2.
-*  History API.
-*  Block unwanted navigations.
-*  Navigation events.
-*  Manage the network requests in WebView2.
-*  Client certificates.
+These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2.
 
 
 <!-- ------------------------------ -->
@@ -1024,14 +942,7 @@ If you're using a UI framework for your app, you should use the WebView2 element
 <!-- ====================================================================== -->
 ## Window management
 
-Window-specific attributes, including:
-*  Sizing, positioning, and visibility.
-*  Zooming.
-*  Rasterization scale.
-*  Focus and tabbing.
-*  Parent window.
-*  Keyboard accelerators.
-*  Default background color.
+WebView2 gives your app access to window-specific attributes, such as positioning, focus, and keyboard accelerators.
 
 
 <!-- ------------------------------ -->
@@ -1055,7 +966,7 @@ Window-specific attributes, including:
 <!-- ------------------------------ -->
 #### Zooming
 
-WebView2 `ZoomFactor` is used to scale just the web content.  This is also update when the user zooms the content through `Ctrl`+Mouse Wheel.
+WebView2 `ZoomFactor` is used to scale just the web content.  This is also update when the user zooms the content by pressing `Ctrl` while rotating the mouse wheel.
 
 ##### [C#](#tab/c-sharp)
 
@@ -1195,12 +1106,6 @@ WebView2 can specify a default background color.  This can be any opaque color o
 
 For composition-based WebView2 rendering, use the CoreWebView2Environment to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs that are specific to composition-based rendering.
 
-Sections below:
-*  Output
-*  Input
-*  Accessibility
-
-
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2CompositionController Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller)
@@ -1311,8 +1216,8 @@ See also:
 <!-- ====================================================================== -->
 ## Performance and debugging
 
-Learn how to handle performance-related events for WebView2 controls.
-<!-- alt pattern instead of "Learn how to".  Teach a little about this domain: Here's what to think of by the word "perf", "optimiz", tools, and debugging perf:
+Use these WebView2 features to optimize your host app's performance and to debug performance issues.  Your app listens for performance-related events for WebView2 controls and then handles them.
+<!-- Teach a little about this domain: Here's what to think of by the word "perf", "optimiz", tools, and debugging perf:
 Increasing perf for your app includes xyz.  Makes your app respond to user input actions quickly; prevents sluggish response.  Manage memory usage, responsiveness.  Tools help you analyze xyz & debug and test perf. -->
 These APIs help you analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness.
 
@@ -1392,9 +1297,11 @@ Receiver:
 <!-- ====================================================================== -->
 ## Misc.
 
+<!-- TODO: dissolve section -->
+
 <!-- description.  Addl opportunities for your app include xyz.  You'll also benefit from considering X. -->
 
-Read settings and handle deferral.<!--define/hints-->
+Read settings and handle deferral.<!--TODO: define these phrases by including key words as hints-->
 
 <!--
 See also:
@@ -1417,9 +1324,6 @@ See also:
 
 
 <!-- ====================================================================== -->
-<!-- ## See also -->
+## See also
 
-<!--
-* []()
-* []()
--->
+* [Introduction to Microsoft Edge WebView2](../index.md)
