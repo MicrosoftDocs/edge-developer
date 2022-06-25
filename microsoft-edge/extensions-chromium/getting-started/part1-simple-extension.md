@@ -157,6 +157,7 @@ Ensure that you add the image file `images/stars.jpeg` to the images folder.  Th
 ```
 
 Finally, ensure you register the pop-up in `manifest.json` under `browser_action`, as shown in the following code snippet.
+Finally, ensure you register the pop-up in `manifest.json` under `browser_action` (in Manifest V2) or under `action` (in Manifest V3), as shown in the following code snippet.
 
 #### [Manifest V2](#tab/v2)
 
