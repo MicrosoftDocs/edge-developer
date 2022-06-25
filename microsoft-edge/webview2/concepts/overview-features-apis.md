@@ -20,9 +20,10 @@ This article provides:
 
 
 <!-- ====================================================================== -->
-## Summary of APIs
+## Summary of WebView2 features and APIs
+<!-- TODO: change to "feature areas?  add "API(s)"? -->
 
-| API | Purpose |
+| Feature | Purpose |
 |---|---|
 | [Top-level classes or interfaces](#top-level-classes-or-interfaces) | The top-level CoreWebView2, Controller, and Environment classes work together so your app can host a WebView2 browser control. |
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
@@ -43,6 +44,8 @@ This article provides:
 
 <!-- ====================================================================== -->
 ## Top-level classes or interfaces
+
+<!-- TODO: remove this section as out of scope, implementation-focused? -->
 
 <!-- keep sync'd:
 * [Overview of the top-level classes](overview-features-apis.md#overview-of-the-top-level-classes) in _Overview of WebView2 features and APIs_.
@@ -577,8 +580,7 @@ Close:<!--TODO: goes near Browser Features, or Rendering WebView2 in non-framewo
 <!-- ====================================================================== -->
 ## Process management
 
-Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly.
-
+Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
 <!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
 
 <!--
