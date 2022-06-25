@@ -6,7 +6,7 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 no-loc: ["Enable webhint"]
-ms.date: 06/21/2022
+ms.date: 06/24/2022
 ---
 # Experimental features
 
@@ -251,34 +251,11 @@ See also:
 
 <!-- ====================================================================== -->
 ## Source order viewer
-<!-- new in v105 (restored; removed around v99) -->
 
-<!-- restored checkbox in v105.  March 1 2022 archive says:
-This checkbox is present in Microsoft Edge Stable v 98.
-This checkbox is not present in Microsoft Edge Canary v 100.
-restored/modified tagging from Feb 14 2022 archive: -->
-
-**Source Order Viewer** is an experiment that displays the order of elements in the webpage source.  The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
-
-To use the **Source Order Viewer**:
-
-1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
-
-1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
-
-1. To the right of the **Styles** tab, click the **Accessibility** tab.
-
-1. Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
-
-1. Highlight any HTML element to display an overlay of the order in the webpage source.
-
-! [Source Order Viewer in the Accessibility pane.](../media/experiments-source-order-viewer.msft.png)
-<!-- todo: new screenshot? -->
+This checkbox is being removed.  The Source Order Viewer is not an experiment any longer.  Whether the checkbox is checked or unchecked makes no difference; the Source Order Viewer feature appears in DevTools either way.
 
 See also:
 * [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
-
-<!-- / restored tagging -->
 
 *  This checkbox is not present in Microsoft Edge Stable v102.
 *  This checkbox is present in Microsoft Edge Canary v105.
@@ -447,8 +424,9 @@ Whether to use local overrides for response headers.
 <!-- keep "etc." in heading, to match UI label -->
 <!-- new in v105 -->
 
-Whether to display CSS Authoring hints for inactive rules and deprecated properties.
-<!-- todo: need text -->
+Whether to enable CSS authoring hints in the **Styles** panel of the **Elements** tool to display information tooltips next to inactive or deprecated properties.
+
+In Canary v105, this checkbox has no effect.  When this feature is implemented, this feature will provide help when writing or inspecting CSS in the **Styles** panel.  Small information icons will appear next to CSS properties that are inactive (or deprecated).
 
 *  This checkbox is not present in Microsoft Edge Stable v102.
 *  This checkbox is present in Microsoft Edge Canary v105.
@@ -495,8 +473,9 @@ See also:
 ## Group sources into Authored and Deployed trees
 <!-- new in v105 -->
 
-Controls whether to group sources into **Authored** and **Deployed** trees.<!-- in the _ tab of the **Sources** tool. -->
-<!-- todo: need text -->
+Controls whether to group sources into **Authored** and **Deployed** trees in the **Page**, **Filesystem**, and **Overrides** tabs of the **Sources** tool.  This feature in the **Sources** tool allows you to group source files in two folders depending on whether these are:
+*  Original source files (authored, that is, files with your local edits).
+*  Production files (deployed files that are on the web server after compiling and bundling the source files).
 
 *  This checkbox is not present in Microsoft Edge Stable v102.
 *  This checkbox is present in Microsoft Edge Canary v105.
