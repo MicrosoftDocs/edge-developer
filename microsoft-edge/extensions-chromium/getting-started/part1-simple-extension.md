@@ -31,9 +31,10 @@ To test out the completed extension that you are building in this tutorial, down
 
 Every extension package must have a `manifest.json` file at the root.  The manifest provides details of your extension, the extension package version, the extension name and description, and so on.
 
-The following code snippet outlines the basic information needed in your `manifest.json` file.
+The following code outlines the basic information needed in your `manifest.json` file:
 
 #### [Manifest V2](#tab/v2)
+
 ```json
 {
     "name": "NASA picture of the day viewer",
@@ -68,7 +69,7 @@ For icons:
 *  We recommend using `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
 *  We recommend using images that are 128 x 128 px, which are resized by the browser if necessary.
 
-The directories of your project should be similar to the following structure.
+The directories of your project should be similar to the following structure:
 
 ```shell
 └── part1
@@ -80,7 +81,7 @@ The directories of your project should be similar to the following structure.
         └── nasapod128x128.png
 ```
 
-Next, add the icons to the `manifest.json` file. Update your `manifest.json` file with the icons information so that it matches the following code snippet. The `png` files listed in the following code are available in the download file mentioned earlier in this article.
+Next, add the icons to the `manifest.json` file. Update your `manifest.json` file with the icons information so that it matches the following code. The `png` files listed in the following code are available in the download file mentioned earlier in this article.
 
 #### [Manifest V2](#tab/v2)
 
@@ -124,7 +125,7 @@ Next, add the icons to the `manifest.json` file. Update your `manifest.json` fil
 
 Now, create a `HTML` file to run when the user launches your extension.  Create the HTML file named `popup.html` in a directory named `popup`.  When users select the icon to launch the extension, `popup/popup.html` is displayed as a modal dialog.
 
-Add the code from the following code snippet to `popup.html` to display the stars image.
+Add the code from the following listing to `popup.html` to display the stars image:
 
 ```html
 <html lang="en">
@@ -140,7 +141,7 @@ Add the code from the following code snippet to `popup.html` to display the star
 </html>
 ```
 
-Ensure that you add the image file `images/stars.jpeg` to the images folder.  The directories of your project should be similar to the following structure.
+Ensure that you add the image file `images/stars.jpeg` to the images folder.  The directories of your project should be similar to the following structure:
 
 ```shell
 └── part1
@@ -156,8 +157,7 @@ Ensure that you add the image file `images/stars.jpeg` to the images folder.  Th
         └── popup.html
 ```
 
-Finally, ensure you register the pop-up in `manifest.json` under `browser_action`, as shown in the following code snippet.
-Finally, ensure you register the pop-up in `manifest.json` under `browser_action` (in Manifest V2) or under `action` (in Manifest V3), as shown in the following code snippet.
+Finally, register the pop-up in `manifest.json` under `browser_action` (in Manifest V2) or under `action` (in Manifest V3), as shown in the following code:
 
 #### [Manifest V2](#tab/v2)
 
