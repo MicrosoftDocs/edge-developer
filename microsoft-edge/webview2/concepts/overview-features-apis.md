@@ -25,7 +25,7 @@ This article provides:
 
 | Feature | Purpose |
 |---|---|
-| [Top-level classes or interfaces](#top-level-classes-or-interfaces) | The top-level CoreWebView2, Controller, and Environment classes work together so your app can host a WebView2 browser control. |
+| [Top-level classes](#top-level-classes) | The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These large classes expose a wide range of APIs that your host app can access to provide the below categories of browser-related features for your users. |
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
@@ -43,27 +43,23 @@ This article provides:
 
 
 <!-- ====================================================================== -->
-## Top-level classes or interfaces
-
-<!-- TODO: remove this section as out of scope, implementation-focused? -->
+## Top-level classes
 
 <!-- keep sync'd:
 * [Overview of the top-level classes](overview-features-apis.md#overview-of-the-top-level-classes) in _Overview of WebView2 features and APIs_.
-* topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
+* topmost content in [The top-level classes: Environment, Controller, and CoreWebView2](environment-controller-core.md).
 -->
 
-The three top-level `CoreWebView2`, `*Controller`, and `*Environment` classes (or interfaces) work together so your app can host a WebView2 browser control.  These large, top-level classes or interfaces contain properties, methods, and events that provide a variety of features for your apps.
+The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide the below categories of browser-related features for your users.
 
-The `*Environment` class (or interface) represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From the `Environment` class (or interface), you create `CoreWebView2` and `*Controller` pairs.
-*  The `CoreWebView2` class (or interface) is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
-*  The `*Controller` class (or interface) is responsible for hosting-related functionality such as focus, visibility, size, and input, where your app hosts the WebView2 control.
+*  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+*  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+*  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
 <!-- / keep sync'd -->
 
 See also:
-
-* [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md)
-
+* [The top-level classes: Environment, Controller, and CoreWebView2](environment-controller-core.md)
 
 ##### [C#](#tab/c-sharp)
 

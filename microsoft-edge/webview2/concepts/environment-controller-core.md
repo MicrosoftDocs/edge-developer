@@ -1,6 +1,6 @@
 ---
-title: "How the top-level classes work: CoreWebView2, Controller, and Environment"
-description: "Overview of how the top-level WebView2 classes work: CoreWebView2, Controller, and Environment."
+title: "The top-level classes: Environment, Controller, and CoreWebView2"
+description: "Overview of how the top-level WebView2 classes work: Environment, Controller, and CoreWebView2."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -8,21 +8,20 @@ ms.prod: microsoft-edge
 ms.technology: webview
 ms.date: 06/24/2022
 ---
-# How the top-level classes work: CoreWebView2, Controller, and Environment
+# The top-level classes: Environment, Controller, and CoreWebView2
 
 <!-- keep sync'd:
-* topmost content in [How the top-level classes work: CoreWebView2, Controller, and Environment](environment-controller-core.md).
+* topmost content in [The top-level classes: Environment, Controller, and CoreWebView2](environment-controller-core.md).
 * [Overview of the top-level classes](overview-features-apis.md#overview-of-the-top-level-classes) in _Overview of WebView2 features and APIs_.
 -->
 
-The three top-level `CoreWebView2`, `*Controller`, and `*Environment` classes (or interfaces) work together so your app can host a WebView2 browser control.  These large, top-level classes or interfaces contain properties, methods, and events that provide a variety of features for your apps.
+The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide the below categories of browser-related features for your users.
 
-The `*Environment` class (or interface) represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From the `Environment` class (or interface), you create `CoreWebView2` and `*Controller` pairs.
-*  The `CoreWebView2` class (or interface) is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
-*  The `*Controller` class (or interface) is responsible for hosting-related functionality such as focus, visibility, size, and input, where your app hosts the WebView2 control.
+*  The `CoreWebView2Environment` class represents a group of WebView2 controls that share the same WebView2 browser process, user data folder, and renderer.  From this `CoreWebView2Environment` class, you create pairs of `CoreWebView2Controller` and `CoreWebView2` instances.
+*  The `CoreWebView2Controller` class is responsible for hosting-related functionality such as window focus, visibility, size, and input, where your app hosts the WebView2 control.
+*  The `CoreWebView2` class is for the web-specific parts of the WebView2 control, including networking, navigation, script, and parsing and rendering HTML.
 
 <!-- / keep sync'd -->
-
 
 #### [C#](#tab/c-sharp)
 
