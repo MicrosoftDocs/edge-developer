@@ -56,12 +56,12 @@ See also:
 <!-- Subtitle: Various bugs impacting DevTools controls and keyboard shortcuts were fixed in the new Focus Mode UI. -->
 
 In the new **Focus Mode** DevTools UI, various bugs affecting controls and keyboard shortcuts for DevTools have been resolved:
-*  Improved behavior of collapsible tabs in the **Elements** tool.
+*  Improved behavior of collapsible panes such as **Styles** in the **Elements** tool.
 *  Fixed some instances in which the name of an open tool wasn't visible.
 *  Improved reliability of **Quick View** controls.
 *  Improved behavior of opening DevTools by using keyboard shortcuts.
 *  Fixed an issue with navigating to a specific line of code in the **Sources** tool by using keyboard shortcuts.
-*  Restored the `Ctrl`+`Shift`+`F` shortcut to open **Search** in **Quick View**:<!-- todo: macOS keys? -->
+*  Restored the keyboard shortcut to open **Search** in **Quick View**, which is `Ctrl`+`Shift`+`F` (Windows, Linux) or `Command`+`Option`+`F` (macOS):
 
 ![The Search keyboard shortcut opens the Search tool in Quick View.](devtools-103-images/focus-mode-search-shortcut.png)
 
