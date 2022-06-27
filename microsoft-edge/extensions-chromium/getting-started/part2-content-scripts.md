@@ -68,7 +68,7 @@ Remember, each tab page runs in its own thread. Also, the extension uses a diffe
 
 3. Create the pop-up JavaScript to send a message
 
-First, create `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up display button.
+First, create `popup/popup.js` and add code to send a message to your not-yet-created content script that you must momentarily create and inject into your browser tab.  To do that, the following code adds an `onclick` event to your pop-up display button:
 
 ```javascript
 const sendMessageId = document.getElementById("sendmessageid");
@@ -83,7 +83,7 @@ In the `onclick` event, find the current browser tab.  Then, use the `chrome.tab
 
 In that message, you must include the URL to the image you want to display.  Also, send a unique ID to assign to the inserted image.  You could let the content insertion JavaScript generate that image ID, but for reasons that become apparent later, you'll generate that unique ID here in `popup.js`, and then pass that ID to the not-yet-created content script.
 
-The following code outlines the updated code in `popup/popup.js`.  You also pass in the current tab ID, which is used later in this article.
+The following code outlines the updated code in `popup/popup.js`.  You also pass in the current tab ID, which is used later in this article:
 
 #### [Manifest V2](#tab/v2)
 
@@ -147,7 +147,7 @@ if (sendMessageId) {
 
 4. Make your `stars.jpeg` available from any browser tab
 
-You're probably wondering why, when you pass the `images/stars.jpeg` must you use the `chrome.extension.getURL` chrome Extension API instead of just passing in the relative URL without the extra prefix like in the previous section.  By the way, that extra prefix, returned by `getUrl` with the image attached looks something like the following.
+You're probably wondering why, when you pass the `images/stars.jpeg` must you use the `chrome.runtime.getURL` (or `chrome.extension.getURL` while using Manifest V2) API instead of just passing in the relative URL without the extra prefix like in the previous section.  By the way, that extra prefix, returned by `getUrl` with the image attached looks something like the following:
 
 ```http
 extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
@@ -155,7 +155,7 @@ extension://inigobacliaghocjiapeaaoemkjifjhp/images/stars.jpeg
 
 The reason is that you're injecting the image using the `src` attribute of the `img` element into the content page.  The content page is running on a unique thread that isn't the same as the thread running the Extension.  You must expose the static image file as a web asset for it to work correctly.
 
-Add another entry in the `manifest.json` file to declare that the image is available to all browser tabs.  That entry is as follows (you should see it in the full `manifest.json` file below when you add the content script declaration coming up).
+Add another entry in the `manifest.json` file to declare that the image is available to all browser tabs.  That entry is as follows (you should see it in the full `manifest.json` file below when you add the content script declaration coming up):
 
 #### [Manifest V2](#tab/v2)
 
@@ -182,7 +182,7 @@ You've now written the code in your `popup.js` file to send a message to the con
 
 5.  Update your `manifest.json` for content and web access
 
-The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows.
+The updated `manifest.json` that includes the `content-scripts` and `web_accessible_resources` is as follows:
 
 #### [Manifest V2](#tab/v2)
 
@@ -261,7 +261,7 @@ Keep in mind that even if the browser tab has JavaScript running on it on the lo
 
 7. Add the content script message listener
 
-Here is that `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section.
+Here is that `content-scripts\content.js` file that gets injected into every browser tab page based on your `manifest.json` `content-scripts` section:
 
 ```javascript
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
@@ -291,17 +291,19 @@ The first parameter of the `addListener` method is a function whose first parame
 When an event is processed by the listener, the function that is the first parameter is run.  The first parameter of that function is an object that has attributes as assigned by `sendMessage`.  That function simply processes the three jQuery script lines.
 
 *   The first script line appends an `img` element right below the `body` of your browser tab that has the `slide-image` class assigned as well as the `imageDivId` as the ID of that image element.
+
 *   The second script line dynamically inserts into the DOM header a **\<style\>** section that you must assign as a `slide-image` class to your `img` element.
+
 *   The third script line adds a `click` event that covers the entire image allowing the user to select anywhere on the image and that image is removed from the page (along with it is event listener).
 
 8. Add functionality to remove the displayed image when selected
 
-Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows.
+Now, when you browse to any page and select your **Extension** icon, the pop-up menu is displayed as follows:
 
 ![popup.html display after selecting the Extension icon.](./media/part2-popupdialog.png)
 
-When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses back to what was originally displayed.
+When you select the `Display` button, you get what is below.  If you select anywhere on the `stars.jpeg` image, that image element is removed and tab pages collapses<!--todo: check "tab pages collapses"--> back to what was originally displayed:
 
 ![The image showing in browser.](./media/part2-showingimage.png)
 
-You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
+Congratulations!  You've created an Extension that successfully sends a message from the extension icon pop-up, and dynamically inserted JavaScript running as content on the browser tab.  The injected content sets the image element to display your static stars `.jpeg` file.
