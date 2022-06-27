@@ -1,12 +1,12 @@
 ---
 title: Optimize idle memory usage
-description: Managing idle memory (background memory) for WebView2 host apps.  Reduce the memory usage by your WebView2 host app when your app is open but not in use.
+description: Managing idle memory (background memory) for WebView2 host apps.  Reduce the memory usage by your WebView2 host app when your app is open but not in use.  Indicate app visibility via IsVisible.  Suspend via TrySuspend.  Instruct WebView2 to use less memory via MemoryUsageTargetLevel.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/24/2022
+ms.date: 06/27/2022
 ---
 # Optimize idle memory usage
 
@@ -43,11 +43,11 @@ Hiding your app's WebView2 control means indicating to Microsoft Edge that your 
 *  Purge some caches to reduce memory usage.
 *  Activate Windows 11 Efficiency Mode/EcoQoS.
 
+#### When to use this approach
+
+This approach has the lowest cost (difficulty) and the lowest benefit.  You can use this approach together with either Approach 2 (`TrySuspend`) or Approach 3 (`MemoryUsageTargetLevel`).
+
 #### When not to use this approach
-
-TODO: List reasons when not to use this approach.
-
-This approach has the lowest cost (difficulty) and the lowest benefit.
 
 Indicating the visibility state of your app as "not visible" might not be desirable for every case, such as when your app is showing a splash screen during initial load.  Therefore, your host app needs to explicitly inform the WebView2 control of the app's visibility, to get these Microsoft Edge throttling benefits when the app is minimized or hidden.
 
@@ -77,9 +77,11 @@ This approach is equivalent to the Sleeping Tabs feature of Microsoft Edge; this
 
 This approach works in conjunction with reporting the visibility of your app, as described above.
 
-#### When not to use this approach
+`TrySuspend` is a cross-browser feature and a cross-browser API.  This API leverages Edge's Sleeping Tabs; see [Sleeping Tabs in Microsoft Edge: Delivering better browser performance](https://blogs.windows.com/msedgedev/2020/12/09/sleeping-tabs-beta-performance/).
 
-TODO: List reasons when not to use this approach.
+#### When to use this approach
+
+Use this approach when you need the most optimization of idle memory usage.
 
 This approach has highest benefit, and is most complex to implement.  You have to design-in this approach into your code, to handle this approach.
 
@@ -87,12 +89,13 @@ The WebView2 `TrySuspend` API offers the biggest benefit to background performan
 
 In contrast to memory usage target, suspension requires that your WebView2 be hidden, and will automatically be resumed when the visibility is changed. 
 
+#### When not to use this approach
+
+Approach 2 (`TrySuspend`) and Approach 3 (`MemoryUsageTargetLevel`) are mutually exclusive.
+
 Suspension is a powerful feature to minimize the impact of your application, but there are some constraints on when it can be used and what web features are limited when web content is suspended.
 
 WebView2's suspension functionality is built on-top of Microsoft Edge's sleeping tabs feature.  You can see details on what might prevent an app from entering suspension in the [Sleeping tabs FAQ](https://techcommunity.microsoft.com/t5/articles/sleeping-tabs-faq/m-p/1705434).
-
-`TrySuspend` is a cross-browser feature and a cross-browser API.  This API leverages Edge's Sleeping Tabs; see [Sleeping Tabs in Microsoft Edge: Delivering better browser performance](https://blogs.windows.com/msedgedev/2020/12/09/sleeping-tabs-beta-performance/).
-
 
 #### API Reference and sample code
 
@@ -124,9 +127,7 @@ The `MemoryUsageTargetLevel` property tells WebView2 to behave as if it's in a l
 
 Once your app is in use again, be sure to set the memory usage target back to normal (by calling the API again).  Otherwise, you may hit performance issues if your memory is being paged out while your app is in use.
 
-#### When not to use this approach
-
-TODO: List reasons when not to use this approach.
+#### When to use this approach
 
 This approach has medium cost (difficulty) and medium benefit.  
 
@@ -135,6 +136,10 @@ If your code is going to be momentarily suspended, use this approach.
 This approach is useful for apps that are minimized to the system tray, or when you know that your app is going to be idle for a while.
 
 A simple use-case for this might be to move to a low-memory state after your app is hidden for some period of time.
+
+#### When not to use this approach
+
+Approach 2 (`TrySuspend`) and Approach 3 (`MemoryUsageTargetLevel`) are mutually exclusive.
 
 #### API Reference and sample code
 
@@ -179,5 +184,7 @@ Tip: See the API Reference for both languages.
 <!-- ====================================================================== -->
 ## See also
 
-* [blog post] about the use of these APIs.<!-- TODO: link text & URL -->
+<!-- TODO: link text & URL:
+* [blog post] about the use of these APIs.
+-->
 * [EcoQoS](https://devblogs.microsoft.com/performance-diagnostics/introducing-ecoqos/) - Windows 11 Efficiency Mode.
