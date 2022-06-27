@@ -11,8 +11,8 @@ ms.date: 06/24/2022
 # Main classes for WebView2: Environment, Controller, and Core
 
 <!-- keep sync'd:
-* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-for-webview2-environment-controller-and-core) in _Overview of WebView2 features and APIs_.
-* topmost content in [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md).
+* [Main classes: Environment, Controller, and Core](overview-features-apis.md#main-classes-environment-controller-and-core) in _Overview of WebView2 features and APIs_.
+* [Main classes for WebView2: Environment, Controller, and Core](environment-controller-core.md) - topmost content.
 -->
 
 The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These three large classes expose a wide range of APIs that your host app can access to provide many categories of browser-related features for your users.
