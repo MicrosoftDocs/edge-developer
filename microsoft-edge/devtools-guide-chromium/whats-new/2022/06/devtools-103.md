@@ -9,11 +9,6 @@ ms.date: 06/23/2022
 ---
 # What's New in DevTools (Microsoft Edge 103)
 
-<!-- todo:
-update welcome capture in both dirs
-Experiments 3.5 new checkboxes expls
--->
-
 [!INCLUDE [Microsoft Edge team note for top of What's New](../../includes/edge-whats-new-note.md)]
 
 
@@ -118,7 +113,6 @@ In Microsoft Edge 103, the **Welcome** tool has a new, modern design with improv
 *  In both sections, learn about existing and new web development features through our new video series, [Videos about web development with Microsoft Edge](../../../../dev-videos/index.md).
 
 ![The redesigned Welcome tool.](devtools-103-images/welcome-tool.png)
-<!-- todo: update -->
 
 See also:
 * [Welcome tool](../../../welcome/welcome-tool.md)
