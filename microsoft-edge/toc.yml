@@ -1047,7 +1047,7 @@
               href: webview2/concepts/browser-features.md
               displayName: 
 
-            - name: "The top-level classes: Environment, Controller, and CoreWebView2"
+            - name: "Main classes for WebView2: Environment, Controller, and Core"
               href: webview2/concepts/environment-controller-core.md
               displayName: 
 
