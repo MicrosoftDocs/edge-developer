@@ -17,14 +17,9 @@ To minimize memory usage by your WebView2 app when it's idle, you can do any of 
 * Approach 2: Suspend the WebView2 (via the `TrySuspend` method).
 * Approach 3: Instruct the WebView2 to use less memory (via the `MemoryUsageTargetLevel` property).
 
-You can combine Approach 1 (`IsVisible`) with the other approaches, but Approach 2 (`TrySuspend`) and Approach 3 (`MemoryUsageTargetLevel`) are mutually exclusive.  Thus, you can do any of the following combinations of approaches:
-* Approach 1 (`IsVisible`).
-* TODO: can you do Approach 2 (`TrySuspend`) without also doing Approach 1 (`IsVisible`)?
-* Approach 1 (`IsVisible`) together with Approach 2 (`TrySuspend`).
-* Approach 3 (`MemoryUsageTargetLevel`).
-* Approach 1 (`IsVisible`) together with Approach 3 (`MemoryUsageTargetLevel`).
+You can combine Approach 1 (`IsVisible`) with Approach 2 (`TrySuspend`) or Approach 3 (`MemoryUsageTargetLevel`).  Approach 2 (`TrySuspend`) and Approach 3 (`MemoryUsageTargetLevel`) are mutually exclusive.
 
-The three approaches, which can be combined in these ways, are described below.
+The three approaches are described below.
 
 
 <!-- ====================================================================== -->
@@ -156,7 +151,7 @@ Approach 2 (`TrySuspend`) and Approach 3 (`MemoryUsageTargetLevel`) are mutually
 
 <!-- ====================================================================== -->
 ## API Reference overview
-<!-- TODO: keep section? -->
+<!-- copy of all the above tab-set links -->
 
 The following APIs are mentioned in this article.
 
