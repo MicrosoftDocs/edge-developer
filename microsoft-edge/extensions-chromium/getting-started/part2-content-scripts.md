@@ -9,7 +9,7 @@ ms.date: 06/28/2022
 ---
 # Create an extension tutorial, part 2
 
-To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2). The source code has been updated from Manifest V2 to Manifest V3.
+To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).  The source code has been updated from Manifest V2 to Manifest V3.
 
 
 <!-- ====================================================================== -->
