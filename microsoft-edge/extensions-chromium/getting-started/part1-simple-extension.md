@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/16/2022
+ms.date: 06/28/2022
 ---
 # Create an extension tutorial, part 1
 
@@ -23,7 +23,7 @@ The goal for this tutorial is to build a Microsoft Edge extension, starting with
 <!-- ====================================================================== -->
 ## Before you begin
 
-To test out the completed extension that you are building in this tutorial, download the source code from the [MicrosoftEdge-Extensions-Demos repo > extension-getting-started-part1](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part1/part1).<!-- changing master to main doesn't work 5/19/2022 -->  The source code has been updated from Manifest V2 to Manifest V3.
+To test out the completed extension that you are building in this tutorial, download the source code from the [MicrosoftEdge-Extensions-Demos repo > extension-getting-started-part1](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part1/part1).  The source code has been updated from Manifest V2 to Manifest V3.
 
 
 <!-- ====================================================================== -->

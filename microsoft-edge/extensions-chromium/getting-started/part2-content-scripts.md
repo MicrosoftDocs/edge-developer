@@ -5,11 +5,11 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 06/16/2022
+ms.date: 06/28/2022
 ---
 # Create an extension tutorial, part 2
 
-To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions-Demos repo > extension-getting-started-part2](https://github.com/MicrosoftEdge/MicrosoftEdge-Extensions-Demos/tree/master/extension-getting-started-part2/extension-getting-started-part2).<!-- changing master to main doesn't work 5/19/2022 -->   The source code has been updated from Manifest V2 to Manifest V3.
+To see the completed extension package source for this part of the tutorial, go to [MicrosoftEdge-Extensions-Demos repo > extension-getting-started-part2](https://github.com/microsoft/MicrosoftEdge-Extensions/tree/main/Extension%20samples/extension-getting-started-part2/extension-getting-started-part2).  The source code has been updated from Manifest V2 to Manifest V3.
 
 
 <!-- ====================================================================== -->
