@@ -840,7 +840,7 @@
             - name: Publish a Microsoft Edge extension
               href: extensions-chromium/publish/publish-extension.md
 
-            - name: Publish and update extensions in the Microsoft Edge Add-ons website
+            - name: Extension hosting
               href: extensions-chromium/publish/hosting-and-updating.md  # moved from /enterprise/
 
             - name: Update a Microsoft Edge extension

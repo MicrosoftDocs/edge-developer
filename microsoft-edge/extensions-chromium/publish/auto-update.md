@@ -22,18 +22,16 @@ ms.date: 04/13/2021
    limitations under the License.  -->
 # Automatically update extensions in Microsoft Edge
 
-When you set your extension to automatically update, your extension shares the following benefits with Microsoft Edge when set to automatically update.
+> [!NOTE]
+> This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
+
+When you set your extension to automatically update on users' machines, your extension shares the following benefits with Microsoft Edge when set to automatically update:
 
 *   Incorporate bug and security fixes.
 *   Add new features or performance enhancements.
 *   Improve the user interface.
 
-Previously, non-store based extensions were supported.  Also, you updated the native binaries and the extension at the same time.
-
-Now, the Microsoft Edge Add-ons website hosts your extensions and you update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.  Be careful when you update extensions that have a dependency on native binaries.
-
-> [!NOTE]
-> This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
+Previously, non-store based extensions were supported.  Also, previously, you updated the native binaries and the extension at the same time.  Now, the Microsoft Edge Add-ons website hosts your extensions and you update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.  Be careful when you update extensions that have a dependency on native binaries.
 
 
 <!-- ====================================================================== -->
@@ -63,7 +61,7 @@ If you host your own extension or app, you must add the `update_url` field to yo
 <!-- ====================================================================== -->
 ## Update manifest
 
-The updated manifest returned by the server should be an XML document.  Review the following code snippet for an example of the updated manifest XML file.
+The updated manifest returned by the server should be an XML document; for example:
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -74,7 +72,7 @@ The updated manifest returned by the server should be an XML document.  Review t
 </gupdate>
 ```
 
-The following table describes attributes of the updated manifest XML file.
+The updated manifest XML file defines the following attributes:
 
 | Attribute | Details |
 |:--- |:--- |

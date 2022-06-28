@@ -11,8 +11,7 @@ ms.date: 02/17/2021
 
 You can update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons website at any time.
 
-> [!NOTE]
-> The certification process for an update to an extension can take from a few hours to a few days.
+The certification process for an update to an extension can take from a few hours to a few days.
 
 
 <!-- ====================================================================== -->
@@ -24,12 +23,11 @@ To update your extension on the store:
 
 1.  Update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version in the manifest file.
 
-2.  After you make the changes, select **Publish** to update your extension listing, and start the certification process.
+1.  After you make the changes, select **Publish** to update your extension listing, and start the certification process.
 
-3.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
+1.  After the `Status` column displays `In the store`, your extension update is available on the Microsoft Edge Add-ons website.
 
 After your extension has been initially created, you will be able to update it programmatically [Using the Microsoft Edge Add-ons API (Beta)](api/using-addons-api.md).
-
 
 
 <!-- ====================================================================== -->
@@ -41,13 +39,13 @@ To check the status of your extension, navigate to the dashboard associated with
 
 To edit your submission:
 
-1.  Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you wish to update.  The information you filled out during the previous submission is displayed.
+1. Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that you wish to update.  The information you filled out during the previous submission is displayed.
 
-1.  To open the **Extension overview** section, use the left navigation bar.  To cancel the current submission, select **Cancel submission**.
+1. To open the **Extension overview** section, use the left navigation bar.  To cancel the current submission, select **Cancel submission**.
 
-1.  Move to other sections and update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version in the manifest file to match changes since the previous package version.
+1. Move to other sections and update either the extension package or the metadata of the extension.  If you update the extension package, make sure that you increase the version in the manifest file to match changes since the previous package version.
 
-2.  After making changes, select **Publish**.
+1. After making changes, select **Publish**.
 
 > [!IMPORTANT]
 > The process stops and removes your current submission from the Microsoft Edge extensions certification pipeline and a new review starts with the latest submission.
@@ -60,11 +58,11 @@ After your extension failed the certification process, you need to update your e
 
 To edit your extension:
 
-1.  Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that failed the certification process.
+1. Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) and select the extension that failed the certification process.
 
-1.  Update either the extension package or the metadata incorporating the feedback received from the certification process.  If you update the extension package, make sure that you increase the version in the manifest file.
+1. Update either the extension package or the metadata incorporating the feedback received from the certification process.  If you update the extension package, make sure that you increase the version in the manifest file.
 
-2.  After making changes, select **Publish**.
+1. After making changes, select **Publish**.
 
 
 <!-- ====================================================================== -->
@@ -72,10 +70,10 @@ To edit your extension:
 
 To remove an extension from the Microsoft Edge Add-ons website:
 
-1.  Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  From the Dashboard page, select the listing to remove.
+1. Navigate to your [developer dashboard](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).  From the Dashboard page, select the listing to remove.
 
-1.  Select **Extension Overview** on your listing.
+1. Select **Extension Overview** on your listing.
 
-1.  Select **Unpublish** to remove the listing from the Microsoft Edge Add-ons website.
+1. Select **Unpublish** to remove the listing from the Microsoft Edge Add-ons website.
 
 The extension is now removed from the Microsoft Edge Add-ons website.  Users who already installed your extension can continue to use it, but new users don't find it.
