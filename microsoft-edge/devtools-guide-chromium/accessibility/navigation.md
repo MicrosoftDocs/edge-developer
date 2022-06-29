@@ -22,21 +22,25 @@ ms.date: 06/07/2021
    limitations under the License.  -->
 # Navigate DevTools with assistive technology
 
-This article helps users who primarily rely on assistive technology such as screen readers use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md).  DevTools is a suite of web developer tools built into the Microsoft Edge browser.
+This article helps you use DevTools through the keyboard and through assistive technology such as screen readers.  This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
+
+<!-- DevTools is a suite of web developer tools built into the Microsoft Edge browser. -->
 
 For DevTools features related to improving the accessibility of a web page, see [Accessibility-testing features](reference.md) and [Overview of accessibility testing using DevTools](accessibility-testing-in-devtools.md).
 
-This guide walks you through the tools and tabs which are the most accessible, and highlights issues you may encounter.
 
-DevTools is divided into a series of tools.  (Within the **Command Menu**, tools are referred to as _panels_.)  Tools are organized into an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist) on the main toolbar and on the drawer toolbar.
+### Tabbed tool panels containing tabs and pages
 
-The following are examples of tools:
+For the terminology of tabs, tools, and panels, see [Tabbed tool panels containing tabs and pages](../overview.md#tabbed-tool-panels-containing-tabs-and-pages) in _Overview of DevTools_.
+
+Technically, the tabs are an [ARIA tablist](https://www.w3.org/TR/wai-aria-1.1/#tablist).
+
+
+<!-- The following are examples of tools:
 
 *  The **Elements** tool lets you [view and change DOM nodes](../dom/index.md#navigate-the-dom-tree-with-a-keyboard) or [CSS](../css/index.md).
 
-*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md).
-
-Within each tool, there are one or more sets of tabs.  For example, the **Elements** tool contains a set of tabs including **Styles**, **Event Listeners**, and **Accessibility**.
+*  The **Console** tool lets you read JavaScript logs and live-edit objects.  For more information, see [Console overview](../console/index.md). -->
 
 
 <!-- ====================================================================== -->
@@ -47,8 +51,32 @@ For the default keyboard shortcuts for DevTools, see [Keyboard shortcuts](../sho
 
 <!-- ====================================================================== -->
 ## Open DevTools
+<!-- keep sync'd:
+[Open DevTools](../overview.md#open-devtools) in _Overview of DevTools_
+[Open DevTools](accessibility/navigation.md#open-devtools) in _Navigate DevTools with assistive technology_
+-->
 
-To get started, see [Open DevTools](../open/index.md).  There are a number of ways to open DevTools, either through keyboard shortcuts or menu items.
+In Microsoft Edge, you can open DevTools by using the mouse or keyboard, in any of the following ways.  Which tool is opened depends on how you open DevTools.
+
+**Main ways:**
+
+| Action | Resulting tool |
+|---|---|
+| Right-click any item on a webpage, and then select **Inspect**. | The **Elements** tool, with the DOM tree expanded to show the right-clicked page element. |
+| Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).| The previously used tool, or the **Welcome** tool. |
+| Press `F12`. | The previously used tool, or the **Welcome** tool. |
+
+**Additional ways:**
+
+| Action | Resulting tool |
+|---|---|
+| On the Microsoft Edge toolbar, select **Settings and more** (![The 'Settings and more' icon.](media/edge-settings-and-more-icon.png)) >  **More tools** >  **Developer tools**. | The previously used tool, or the **Welcome** tool. |
+| Press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS). | The **Console** tool. |
+| Press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Option`+`C` (macOS). | The **Elements** tool, with the DOM tree expanded to show the `<body>` element. |
+| Press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the `<html>` element. |
+| Press `Tab` and `Shift`+`Tab` to put focus on a page element.  Then press `Shift`+`F10` to open the right-click menu.  To select the **Inspect** command, press `Up Arrow` and then `Enter`. | The **Elements** tool, with the DOM tree expanded to show the focused page element. |
+
+<!-- /keep sync'd -->
 
 
 <!-- ====================================================================== -->
@@ -101,6 +129,7 @@ Opening a tool this way puts focus in the content area of the tool.  In the case
 
 The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.1/#tree).  For an example, see [Navigate the **DOM Tree** with a keyboard](../dom/index.md#navigate-the-dom-tree-with-a-keyboard).
 
+
 ### Copy the code for an element in the DOM Tree
 
 1. Right-click a node in the **DOM Tree**.
@@ -112,6 +141,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 #### Known issues
 
 *  **Copy outerHTML** often doesn't select the current node, but instead selects the parent node.  However, the contents of the element should still be in the copied `outerHTML`.
+
 
 ### Modify the attributes of an element in the DOM Tree
 
@@ -125,6 +155,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  When you type into the text input, you get no feedback.  If you make a typo and use the arrow keys to explore your input, you also get no feedback.  The easiest way to check your work is to accept the change, then listen for the entire element to be announced.
 
+
 ### Edit the HTML of an element in the DOM Tree
 
 *  With focus on a node in the **DOM Tree**, press `Enter` to make it editable.
@@ -133,7 +164,7 @@ The **DOM Tree** is laid out as an [ARIA tree](https://www.w3.org/TR/wai-aria-1.
 
 *  Press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS) to accept the change.
 
-For example, when you type `h3` and then press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
+For example, when you type **h3** and then press `Ctrl`+`Enter` (Windows, Linux) or `Command`+`Enter` (macOS), the start and end tags of the `h3` element change.
 
 
 <!-- ====================================================================== -->
@@ -147,6 +178,7 @@ The **Elements** tool contains additional tabs for inspecting things like the CS
 
 The **DOM Tree** turns elements with `href` attributes into focusable links, so you may need to press `Tab` more than once to reach the **Styles** pane.
 
+
 ### Known issues
 
 The **DOM Breakpoints** and **Properties** tabs aren't keyboard-accessible.
@@ -156,7 +188,7 @@ The **DOM Breakpoints** and **Properties** tabs aren't keyboard-accessible.
 
 The **Styles** pane has controls to filter styles, toggle element states (such as [:active](https://developer.mozilla.org/docs/Web/CSS/:active) and [:focus](https://developer.mozilla.org/docs/Web/CSS/:focus)), toggle classes, and add new classes.  There's also a powerful style inspection tool to explore and modify styles currently applied to the element that has focus in the **DOM Tree**.
 
-The key concept to understand about the **Styles** pane is that it only shows styles for the currently-selected node in the **DOM Tree**.  For example, suppose you're done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.
+The key concept to understand about the **Styles** pane is that it only shows styles for the currently selected node in the **DOM Tree**.  For example, suppose you're done inspecting the styles of a `<header>` node, and now you want to look at the styles for a `<footer>` node.  To do that, you first need to select the `<footer>` node in the **DOM Tree**.
 
 You might find it faster to use the [Inspect](#inspect-an-element-on-the-page) workflow to inspect a node that is in the general vicinity of the `footer` node (such as a link within the footer), which focuses the **DOM Tree**, and then use your keyboard to navigate to the exact node in which you're interested.
 
@@ -188,17 +220,17 @@ To toggle the state of an element, such as `:active` or `:focus`:
 
 1. Go to the **Styles** pane and press `Tab` until the **Toggle Element State** button has focus.
 
-1. Press `Enter` to expand the collection of element states.  The element states are presented as a group of checkboxes.
+1. Press `Enter` to display the **Force element state** section, which contains checkboxes.
 
 1. Press `Tab` until the first state, `:active`, has focus.
 
-1. Press `Spacebar` to enable it.  If the currently-selected element in the DOM Tree has an `:active` style, it is now applied.
+1. Press `Spacebar` to enable it.  If the currently selected element in the DOM Tree has an `:active` style, it is now applied.
 
 1. Hold `Tab` to explore all of the available states.
 
 #### Add an existing class
 
-Adjacent to the **Toggle Element State** button is the **Element Classes** button.  To move the focus to it, press `Tab` and then press `Enter`.  Focus moves into an edit text field labeled **Add new class**.
+The **Element Classes** button is next to the **Toggle Element State** button.  To move the focus to the **Element Classes** button, press `Tab` and then press `Enter`.  Focus moves into an edit text field labeled **Add new class**.
 
 The **Element Classes** button is primarily used for adding existing classes to an element.  For example, if your stylesheet contained a helper class named `.clearfix`, you can press `.` inside of the edit text field to display a suggestion list of classes and use the `Down Arrow` to find the `.clearfix` suggestion.  Or type the class name out yourself and press `Enter` to apply it.
 
@@ -251,6 +283,18 @@ The **Accessibility Tree** is presented as an [ARIA tree](https://www.w3.org/TR/
 
 
 <!-- ====================================================================== -->
+## Persisting the Inspect tool's tooltip and grid color overlay
+<!-- keep sync'd:
+* [Persisting the Inspect tool's tooltip and grid color overlay](../css/inspect.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Analyze pages using the Inspect tool_ -->
+
+When you click the **Inspect** tool button and move around in the rendered webpage, the Inspect tooltip changes.  To keep the current tooltip and grid color overlay displayed, press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.
+
+This technique can be helpful when using a screen magnifier or other assistive technologies.  If you don't make the Inspect tool's tooltip persist, the hover overlay constantly changes when you use the **Inspect tool** (![Inspect tool button.](../media/inspect-tool-icon-light-theme.png)).
+
+See [Analyze pages using the Inspect tool](../css/inspect.md).
+
+
+<!-- ====================================================================== -->
 ## The Lighthouse tool
 
 **Lighthouse** runs a series of tests against a site to check for common issues related to performance, accessibility, SEO, and a number of other categories.
@@ -278,9 +322,17 @@ To run a new audit, use `Shift`+`Tab` to exit the report and select the **Genera
 
 
 <!-- ====================================================================== -->
+## See also
+
+* [Keyboard shortcuts](../shortcuts/index.md)
+* [Customize keyboard shortcuts](../customize/shortcuts.md)
+* [Run commands in the Command Menu](../command-menu/index.md)
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/accessibility/navigation) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/accessibility/navigation/) and is authored by [Rob Dodson](https://developers.google.com/web/resources/contributors#rob-dodson) (Contributor, Google WebFundamentals).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

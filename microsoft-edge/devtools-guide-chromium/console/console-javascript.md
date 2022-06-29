@@ -18,7 +18,7 @@ The **Console**:
 1. Loops back to the first step.
 
 
-To enter JavaScript statements and expressions interactively in the Console:
+To enter JavaScript statements and expressions interactively in the **Console**:
 
 1. Right-click in a webpage and then select **Inspect**.  DevTools opens.  Or, press `Ctrl`+`Shift`+`J` \(Windows, Linux\) or `Command`+`Option`+`J` \(macOS\), to directly open the DevTools console.
 
@@ -28,11 +28,11 @@ To enter JavaScript statements and expressions interactively in the Console:
 
    The **Console** immediately displays the result `4` on the next line while you type.  The `Eager evaluation` feature helps you write valid JavaScript.  The **Console** displays the result while you type, regardless of whether your JavaScript is correct, and regardless of whether a valid result exists.
 
-   :::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="Console displays the result of the expression '2 + 2', interactively as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+   ![Console displays the result of the expression '2+2', interactively as you type it.](../media/console-javascript-eager-evaluation.msft.png)
 
 1. When you press `Enter`, the **Console** runs the JavaScript command (expression or statement), displays the result, and then moves the cursor down to allow you to enter the next JavaScript command.
 
-   :::image type="content" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several JavaScript expressions in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
+   ![Run several JavaScript expressions in succession.](../media/console-javascript-several-expressions.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -54,7 +54,7 @@ To try autocompletion while writing multi-part expressions:
 
 1. Type another `.` to get a large list of possible properties and methods available on the body of the current webpage.
 
-   :::image type="content" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions." lightbox="../media/console-javascript-autocomplete.msft.png":::
+   ![Console autocompletion of JavaScript expressions.](../media/console-javascript-autocomplete.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -62,11 +62,11 @@ To try autocompletion while writing multi-part expressions:
 
 As with many other command-line environments, a history of the commands that you entered is available for reuse.  Press `Up Arrow` to display the commands that you entered previously.  
 
-Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a textbox.
+Similarly, autocompletion keeps a history of the commands you previously typed.  You can type the first few letters of earlier commands, and your previous choices appear in a text box.
 
 Also, the **Console** also offers quite a few [utility methods](utilities.md) that make your life easier.  For example, `$_` always contains the result of the last expression you ran in the **Console**.
 
-:::image type="content" source="../media/console-javascript-console-history.msft.png" alt-text="The $_ expression in the Console always contains the last result." lightbox="../media/console-javascript-console-history.msft.png":::
+![The $_ expression in the Console always contains the last result.](../media/console-javascript-console-history.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -74,11 +74,11 @@ Also, the **Console** also offers quite a few [utility methods](utilities.md) th
 
 By default, the **Console** only gives you one line to write your JavaScript expression.  You code runs when you press `Enter`. The one line limitation may frustrate you.  To work around the 1-line limitation, press `Shift`+`Enter` instead of `Enter`.  In the following example, the value displayed is the result of all the lines (statements) run in order:
 
-:::image type="content" source="../media/console-javascript-multiline.msft.png" alt-text="Press Shift+Enter to write several lines of JavaScript.  The resulting value is output." lightbox="../media/console-javascript-multiline.msft.png":::
+![Press Shift+Enter to write several lines of JavaScript.  The resulting value is output.](../media/console-javascript-multiline.msft.png)
 
 If you start a multi-line statement in the **Console**, the code block is automatically recognized and indented.  For example, if you start a block statement, by entering a curly brace, the next line is automatically indented:
 
-:::image type="content" source="../media/console-javascript-automatic-lineindent.msft.png" alt-text="The Console recognizes multiline expressions using curly braces and indents." lightbox="../media/console-javascript-automatic-lineindent.msft.png":::
+![The Console recognizes multiline expressions using curly braces and indents.](../media/console-javascript-automatic-lineindent.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -98,13 +98,13 @@ To get the last 50 issues that were filed on the [Microsoft Edge Developer Tools
    )).json();
    ```
 
-   :::image type="content" source="../media/console-javascript-top-level-await.msft.png" alt-text="Console displays the result of a top-level async fetch request." lightbox="../media/console-javascript-top-level-await.msft.png":::
+   ![Console displays the result of a top-level async fetch request.](../media/console-javascript-top-level-await.msft.png)
 
    The 10 entries are hard to recognize, since a lot of information is displayed.
 
 1. Optionally, use the `console.table()` log method to only receive the information in which you're interested:
 
-   :::image type="content" source="../media/console-javascript-filtered-with-table.msft.png" alt-text="Displaying the last result in a human-readable format using 'console.table'." lightbox="../media/console-javascript-filtered-with-table.msft.png":::
+   ![Displaying the last result in a human-readable format using 'console.table'.](../media/console-javascript-filtered-with-table.msft.png)
 
    To reuse the data returned from an expression, use the `copy()` utility method of the **Console**.
 

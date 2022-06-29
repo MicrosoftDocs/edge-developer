@@ -28,13 +28,13 @@ To enable the File Handling feature:
 1.  Select **Search flags** and type "file handling API".
 1.  Select **Default** > **Enabled** > **Restart**.
 
-    :::image type="content" source="../media/enable-file-handling-experiment.png" alt-text="Enable the 'File Handling API' experiment.":::
+    ![Enable the 'File Handling API' experiment.](../media/enable-file-handling-experiment.png)
 
 
 <!-- ====================================================================== -->
 ## Define which files your app handles
 
-The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](./web-app-manifests.md), using the `file_handlers` array member.
+The first thing to do is to declare which types of files your app handles. This is done in your app [manifest file](web-app-manifests.md), using the `file_handlers` array member.
 
 Each entry in the `file_handlers` array needs to have two properties:
 
@@ -121,11 +121,11 @@ My Tracks is a PWA demo app that uses the File Handling feature to handle `.gpx`
 
 Notice that the app launches automatically and that Microsoft Edge requests your permission to handle this file.
 
-:::image type="content" source="../media/my-tracks-allow-file-handling.png" alt-text="The 'Open file?' permission request dialog.":::
+![The 'Open file?' permission request dialog.](../media/my-tracks-allow-file-handling.png)
 
 If you allow the app to handle the file, a new entry appears in the app's sidebar, and you can click the checkbox next to it to visualize the corresponding GPS track.
 
-:::image type="content" source="../media/my-tracks-new-file.png" alt-text="The new GPS track handled by the My Tracks app.":::
+![The new GPS track handled by the My Tracks app.](../media/my-tracks-new-file.png)
 
 The source code for this app can be accessed on the [My Tracks GitHub repository](https://github.com/captainbrosset/mytracks).
 

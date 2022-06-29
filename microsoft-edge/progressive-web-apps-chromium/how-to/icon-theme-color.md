@@ -72,8 +72,7 @@ The web content created by the PWA fills the entire surface area of the window, 
 
 The following image shows what a PWA's title bar looks like when not using a theme color, and when using a theme color that matches the main color of the app:
 
-:::image type="content" source="../media/app-theme-color-before-after.png" alt-text="The difference between not using and using a theme color." lightbox="../media/app-theme-color-before-after.png":::
-<!-- lightbox is justified here, to inspect parts of window -->
+![The difference between not using and using a theme color.](../media/app-theme-color-before-after.png)
 
 To define a theme color, use the `theme_color` web app manifest member:
 
@@ -86,7 +85,7 @@ To define a theme color, use the `theme_color` web app manifest member:
 Individual web pages can also define a theme color, by using the [`theme-color` meta tag](https://developer.mozilla.org/docs/Web/HTML/Element/meta/name/theme-color). When this meta tag is present on the page, its defined color overrides the color that's found in the web app manifest.
 
 > [!NOTE]
-> You can use the [Window Controls Overlay](./window-controls-overlay.md) feature to display your app content in the title bar area.
+> You can use the [Window Controls Overlay](window-controls-overlay.md) feature to display your app content in the title bar area.
 
 
 <!-- ====================================================================== -->

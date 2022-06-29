@@ -11,7 +11,9 @@ ms.date: 06/07/2021
 
 <!-- 5. STYLES: TOGGLE STATE -->
 
-Check the accessibility of all states of elements, such as text color contrast during the `hover` state.  The **Inspect** tool reports accessibility issues for one state at a time.  To check accessibility of the various states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**), as described in this article. We first show why state simulation is necessary using the **Inspect** tool, and then we show how to use state simulation.
+Check the accessibility of all states of elements, such as text color contrast during the `hover` state.  The **Inspect** tool reports accessibility issues for one state at a time.  To check accessibility of the various states of elements, in the **Styles** tab, select **\:hov** (**Toggle Element State**), as described in this article.
+
+We first show why state simulation is necessary using the **Inspect** tool, and then we show how to use state simulation.
 
 
 <!-- ====================================================================== -->
@@ -23,11 +25,11 @@ In addition to the automatic color-contrast tests in the **Issues** tool, you ca
 
 For example, the links in the sidebar navigation menu have enough contrast, as shown in the **Inspect** overlay:
 
-:::image type="content" source="../media/a11y-testing-enough-contrast.msft.png" alt-text="The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay." lightbox="../media/a11y-testing-enough-contrast.msft.png":::
+![The links in the sidebar navigation menu have enough contrast, as shown in the Inspect overlay.](../media/a11y-testing-enough-contrast.msft.png)
 
 The green **Dogs** list item in the **Donation status** section doesn't have enough contrast, and so is flagged by a warning in the **Inspect** overlay:
 
-:::image type="content" source="../media/a11y-testing-not-enough-contrast.msft.png" alt-text="An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay" lightbox="../media/a11y-testing-not-enough-contrast.msft.png":::
+![An element that doesn't have enough contrast is flagged by a warning in the Inspect overlay](../media/a11y-testing-not-enough-contrast.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -43,7 +45,7 @@ First, confirm that your animations run when not using the Inspect tool:
 
 1. In the rendered webpage, hover over the blue menu items in the sidebar navigation menu.  Notice that each item has an animation.
 
-   :::image type="content" source="../media/a11y-testing-hover.msft.png" alt-text="The menu item showing different colors when the mouse pointer is over it." lightbox="../media/a11y-testing-hover.msft.png":::
+   ![The menu item showing different colors when the mouse pointer is over it.](../media/a11y-testing-hover.msft.png)
 
 Next, confirm that your animations don't run when using the Inspect tool:
 
@@ -61,7 +63,7 @@ Checking for sufficient text contrast this way isn't enough, because the element
 <!-- ====================================================================== -->
 ## Use state simulation to simulate the hover state of an animated menu item
 
-<!-- Elements tool: Styles pane: Toggle Element State -->
+<!-- Elements tool: Styles pane: "Toggle Element State" icon tooltip; displays "Force element state" section -->
 
 When the **Inspect** tool is active, instead of hovering over an animated element, you need to simulate the state of the menu item.  To simulate the state of a menu item, use the state simulation in the **Styles** pane.  The **Styles** pane has a **\:hov** (**Toggle Element State**) button, which displays a group of checkboxes labeled **Force element state**.
 
@@ -75,19 +77,19 @@ To turn on the hover state while using the Inspect tool:
 
 1. In the rendered webpage, select the blue **Cats** link in the sidebar navigation menu.  The **Elements** tool opens, with the element `<a href="#cats">Cats</a>` selected.
 
-   :::image type="content" source="../media/a11y-testing-inspecting-link-to-hover.msft.png" alt-text="Inspecting the element that has a hover state in the Elements tool." lightbox="../media/a11y-testing-inspecting-link-to-hover.msft.png":::
+   ![Inspecting the element that has a hover state in the Elements tool.](../media/a11y-testing-inspecting-link-to-hover.msft.png)
 
 1. Select the **Styles** tab.  The selected `a` element has a `hover` state in the CSS that is applied to it, but that's not visible in the **Styles** pane.
 
 1. In the **Styles** pane, to the right of the style rule `#sidebar nav li a`, select the `styles.css` link.  The **Sources** tool opens.  Then find the CSS pseudo-class rule `#sidebar nav li a:hover`.  This rule doesn't run when the **Inspect** tool is active.  We'll simulate running this state rule in the next steps.
 
-1. Select the **Elements** tool.  Then in the **Styles** pane, select the **:hov** (**Toggle Element State**) button.  The **Force element state** group of checkboxes is displayed.
+1. Select the **Elements** tool.  Then in the **Styles** pane, select the **:hov** (**Toggle Element State**) button.  The **Force element state** checkboxes section is displayed.
 
-   :::image type="content" source="../media/a11y-testing-state-simulation.msft.png" alt-text="The state simulation tool showing all the options." lightbox="../media/a11y-testing-state-simulation.msft.png":::
+   ![The state simulation tool showing all the options.](../media/a11y-testing-state-simulation.msft.png)
 
 1. Click the **:hover** checkbox.  In the DOM, to the left of the element `<a href="#cats">Cats</a>`, a yellow dot appears, indicating that the element has a simulated state.  The **Cats** menu item now appears in the webpage as if the pointer were hovering over it.  The animation on the menu item might run.
 
-   :::image type="content" source="../media/a11y-testing-hover-simulated.msft.png" alt-text="DevTools simulating a hover state." lightbox="../media/a11y-testing-hover-simulated.msft.png":::
+   ![DevTools simulating a hover state.](../media/a11y-testing-hover-simulated.msft.png)
 
     After the simulated state is applied, you can use the **Inspect** tool again to check the contrast of the element when the user hovers over it, as follows.
 
@@ -95,7 +97,7 @@ To turn on the hover state while using the Inspect tool:
 
 1. Hover over the blue **Cats** link in the sidebar navigation menu.  The link is now light blue, because of the simulated hover animation.  The **Inspect** tool's information overlay appears, showing an orange exclamation point in the **Contrast** row, indicating that the contrast isn't high enough.
 
-   :::image type="content" source="../media/a11y-testing-hover-contrast-testing.msft.png" alt-text="Testing the contrast of an element in a simulated hover state." lightbox="../media/a11y-testing-hover-contrast-testing.msft.png":::
+   ![Testing the contrast of an element in a simulated hover state.](../media/a11y-testing-hover-contrast-testing.msft.png)
 
 State simulation is also a good way to check whether you considered different user needs, such as the needs of keyboard users.  By using the **Force element state** checkboxes, you can simulate the `:focus` state to discover that the UI remains unchanged when it has focus. This lack of an indicator when an element has focus is a problem.
 

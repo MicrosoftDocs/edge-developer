@@ -54,7 +54,7 @@ navigator.setAppBadge();
 navigator.setAppBadge(42);
 ```
 
-:::image type="content" source="../media/app-badge-in-taskbar.png" alt-text="A PWA icon in the Windows Taskbar, with a badge showing the number 42.":::
+![A PWA icon in the Windows Taskbar, with a badge showing the number 42.](../media/app-badge-in-taskbar.png)
 
 The `setAppBadge` function returns a Promise, which can be used to know when the badge was added, and to catch potential errors, as follows:
 
@@ -106,7 +106,7 @@ Requesting permission should only be done in response to a user action. This is 
 
 ```javascript
 button.addEventListener("click", () => {
-    Notifications.requestPermission().then(permission => {
+    Notification.requestPermission().then(permission => {
         if (permission === "granted") {
             console.log("The user accepted");
         }
@@ -130,7 +130,7 @@ Once you know that the API is supported and the user has accepted notifications,
 const notification = new Notification("Hello World!");
 ```
 
-:::image type="content" source="../media/notification-text-only.png" alt-text="A text-only notification.":::
+![A text-only notification.](../media/notification-text-only.png)
 
 The above code displays a text-only notification message, but you can also customize the message by including additional `body` and `icon` properties:
 
@@ -141,7 +141,7 @@ const notification = new Notification("Hello World!", {
 });
 ```
 
-:::image type="content" source="../media/notification-with-image.png" alt-text="A notification with some text and an image.":::
+![A notification with some text and an image.](../media/notification-with-image.png)
 
 You can also display notifications from your app's service worker. This is useful because the service worker may be doing work while your app isn't running. To send a notification from your service worker, use the `ServiceWorkerRegistration.showNotification` function:
 
@@ -172,7 +172,7 @@ self.registration.showNotification("Your content is ready", {
 });
 ```
 
-:::image type="content" source="../media/notification-with-actions.png" alt-text="A notification with some text, an image, and two actions.":::
+![A notification with some text, an image, and two actions.](../media/notification-with-actions.png)
 
 When the user clicks one of the action buttons, your PWA can handle the click by listening for the `notificationclick` event.  When a `notificationclick` event is received, close the notification and execute some code:
 
@@ -192,7 +192,7 @@ self.addEventListener('notificationclick', event => {
 }, false);
 ```
 
-To learn more about notification actions, see [NotificationAction](https://developer.mozilla.org/docs/Web/API/NotificationAction) at MDN.
+To learn more about notification actions, see [Notification.actions](https://developer.mozilla.org/docs/Web/API/notification/actions) at MDN.
 
 
 <!-- ====================================================================== -->
@@ -204,8 +204,6 @@ To create a PWA that supports push notifications:
 1.  Display a toast message when a message is received from the service, by using the [Notifications API](https://developer.mozilla.org/docs/Web/API/Notifications_API).
 
 Like Service Workers, the push notification APIs are standards-based APIs.  The push notification APIs work across browsers, so your code should work everywhere that PWAs are supported.  For more information about delivering push messages to different browsers on your server, see [Web-Push](https://www.npmjs.com/package/web-push).
-
-The following steps have been adapted from the Push Rich Demo in the [Service Worker Cookbook](https://serviceworke.rs/push-rich_demo.html) provided by Mozilla.  This Cookbook has many useful Web Push and Service Worker recipes.
 
 
 <!-- ====================================================================== -->
@@ -223,7 +221,7 @@ For information about VAPID and WebPush, see [Sending VAPID identified WebPush N
 
 Service workers handle push events and toast notification interactions in your PWA.  To subscribe the PWA to server push notifications:
 
-*   Make sure your PWA is installed, active, and registered.
+*   Make sure your service worker is installed, active, and registered.
 *   Make sure your code for completing the subscription task is on the main UI thread of the PWA.
 *   Make sure you have network connectivity.
 
@@ -325,17 +323,17 @@ To test push notifications for your PWA:
 
 1.  Go to your PWA at `http://localhost:3000`.  When your service worker activates and attempts to subscribe your PWA to push notifications, Microsoft Edge prompts you to allow your PWA to show notifications.  Select **Allow**.
 
-    :::image type="content" source="../media/notification-permission.png" alt-text="Permission dialog for enabling notifications.":::
+    ![Permission dialog for enabling notifications.](../media/notification-permission.png)
 
 1.  Simulate a server-side push notification, as follows.  With your PWA opened at `http://localhost:3000` in your browser, select `F12` to open DevTools.  Select **Application** > **Service Worker** > **Push** to send a test push notification to your PWA.
 
     The push notification is displayed near the taskbar.
 
-    :::image type="content" source="../media/devtools-push.png" alt-text="Push a notification from DevTools.":::
+    ![Push a notification from DevTools.](../media/devtools-push.png)
 
     If you don't select (or _activate_) a toast notification, the system automatically dismisses it after several seconds and queues it in your Windows Action Center.
 
-    :::image type="content" source="../media/windows-action-center.png" alt-text="Notifications in Windows Action Center.":::
+    ![Notifications in Windows Action Center.](../media/windows-action-center.png)
 
 
 <!-- ====================================================================== -->

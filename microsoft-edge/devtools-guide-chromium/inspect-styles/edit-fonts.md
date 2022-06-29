@@ -10,28 +10,30 @@ ms.date: 03/11/2021
 ---
 # Edit CSS font styles and settings in the Styles pane
 
-:::image type="icon" source="../media/experimental-tag-14px.msft.png":::
+![This feature is experimental](../media/experimental-tag-14px.msft.png)
 
 To make it easier when working with typography, a visual **Font Editor** is now available in the **Styles** pane.  Using the **Font Editor**, you can change your font settings, and the changes are rendered immediately in the browser - all without in-depth knowledge of CSS.  The **Elements** tool > **Styles** tab > **Font Editor** icon opens the **Font Editor**, which consists of two parts:
 
 *  The **Font Family** selector.
 *  The **CSS Properties** editor.
 
-Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.  For situations when specific fonts aren't available on a user device, you should provide fallback font options.
+Typography on the web is an important part of the user experience.  You want to ensure that fonts follow corporate brand guidelines, and that your content is displayed as expected on various devices.  Text must be easy to read using size and line-height.  Users can resize fonts to meet individual needs.
+
+For situations when specific fonts aren't available on a user device, you should provide fallback font options.
 
 CSS provides better support for typography in recent years.  Dozens of different CSS units are available to define the size of text.  Several CSS properties are available to control the font size, spacing, line height, and other typographical features.
 
-Currently the [Enable new Font Editor tool within the Styles pane](../experimental-features/index.md#enable-new-font-editor-tool-within-the-styles-pane) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
+Currently the [Enable new Font Editor tool within the Styles pane](../experimental-features/index.md#enable-the-font-editor-tool-within-the-styles-pane) feature is experimental, and you need to [turn it on for Microsoft Edge Developer Tools](../experimental-features/index.md#turning-an-experiment-on-or-off).
 
 Any CSS in the **Styles** pane, either font definitions or inline styles, has a **Font Editor** icon.  To open the visual **Font Editor**, click the **Font Editor** icon.
 
-:::image type="content" source="../media/font-editor-icon.msft.png" alt-text="The icon in the Styles pane to edit font settings." lightbox="../media/font-editor-icon.msft.png":::
+![The icon in the Styles pane to edit font settings.](../media/font-editor-icon.msft.png)
 
 The **Font Editor** opens on top of the **Styles** pane:
 
-:::image type="content" source="../media/font-editor-open.msft.png" alt-text="The Font Editor opens on top of the Styles pane." lightbox="../media/font-editor-open.msft.png":::
+![The Font Editor opens on top of the Styles pane.](../media/font-editor-open.msft.png)
 
-All fields in the visual **Font Editor** are populated from the values in the CSS in the **Styles** pane.  For example, the `line-height` definition is set to `160%` in the **Styles** pane, so the line height text field displays `160`, and the unit dropdown displays `%`.  Also, the slider is automatically set to match the values of the text field.
+All fields in the visual **Font Editor** are populated from the values in the CSS in the **Styles** pane.  For example, the `line-height` definition is set to `160%` in the **Styles** pane, so the line height text field displays `160`, and the unit dropdown list displays `%`.  Also, the slider is automatically set to match the values of the text field.
 
 
 <!-- ====================================================================== -->
@@ -41,9 +43,9 @@ The Font Family selector is the upper part of the visual **Font Editor**.  To se
 
 The **Font Editor** open on top of the **Styles** pane with the **Font Family** selector highlighted:
 
-:::image type="content" source="../media/font-editor-font-family.msft.png" alt-text="The Font Editor open on top of the Styles pane with the Font Family selector highlighted." lightbox="../media/font-editor-font-family.msft.png":::
+![The Font Editor open on top of the Styles pane with the Font Family selector highlighted.](../media/font-editor-font-family.msft.png)
 
-Use the **Font Family** dropdown to select a font.  Fonts are organized into four groups:
+Use the **Font Family** dropdown list to select a font.  Fonts are organized into four groups:
 
 *  **Computed fonts**, which are the fonts available in the stylesheet in the **Styles** pane.
 *  **System fonts**, which are the fonts that are available on the current operating system.
@@ -52,14 +54,14 @@ Use the **Font Family** dropdown to select a font.  Fonts are organized into fou
 
 The **Font Editor** open on top of the **Styles** pane with the **Font Family** selector highlighted:
 
-:::image type="content" source="../media/font-editor-font-family-list.msft.png" alt-text="The font editor open on top of the Styles pane with the Font Family selector highlighted." lightbox="../media/font-editor-font-family-list.msft.png":::
+![The font editor open on top of the Styles pane with the Font Family selector highlighted.](../media/font-editor-font-family-list.msft.png)
 
 After you select a font, another dropdown menu is displayed for you to select fallback fonts.  You can select up to eight fallback fonts.  To remove a font, click the **Delete Font Family** icon.
 
-<!--:::image type="content" source="../media/font-editor-defining-fonts.msft.png" alt-text="The font editor with a defined list of fonts and fallback fonts." lightbox="../media/font-editor-defining-fonts.msft.png":::-->
+<!--![The font editor with a defined list of fonts and fallback fonts.](../media/font-editor-defining-fonts.msft.png)-->
 
 > [!NOTE]
-> If you select a global value for font family, you don't get another dropdown, since there is no fallback for it in CSS.
+> If you select a global value for font family, you don't get another dropdown menu, since there is no fallback for it in CSS.
 
 
 <!-- ====================================================================== -->
@@ -69,22 +71,22 @@ You can change CSS font properties in the lower part of the visual **Font Editor
 
 The **Font Editor** opens on top of the **Styles** pane, with the CSS properties highlighted:
 
-:::image type="content" source="../media/font-editor-css-properties.msft.png" alt-text="The Font Editor opens on top of the Styles pane, with the CSS properties highlighted." lightbox="../media/font-editor-css-properties.msft.png":::
+![The Font Editor opens on top of the Styles pane, with the CSS properties highlighted.](../media/font-editor-css-properties.msft.png)
 
-You can also convert CSS units using the visual **Font Editor**.  For example, you can use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, use the unit dropdown and select the value `em`.  The `1 em` displayed is equal to `16 pixels`.
+You can also convert CSS units using the visual **Font Editor**.  For example, you can use the tool on a CSS rule where the **Font Size** slider is initially set to `16 pixels`.  Now, use the unit dropdown list and select the value `em`.  The `1 em` displayed is equal to `16 pixels`.
 
 Changing the font size to `16 pixels`:
 
-:::image type="content" source="../media/font-editor-setting-to-16px.msft.png" alt-text="Changing the font size to 16 pixels." lightbox="../media/font-editor-setting-to-16px.msft.png":::
+![Changing the font size to 16 pixels.](../media/font-editor-setting-to-16px.msft.png)
 
-Opening the unit dropdown to convert to `em`:
+Opening the unit dropdown list to convert to `em`:
 
-:::image type="content" source="../media/font-editor-converted-to-em.msft.png" alt-text="Opening the unit dropdown to convert to em." lightbox="../media/font-editor-converted-to-em.msft.png":::
+![Opening the unit dropdown list to convert to em.](../media/font-editor-converted-to-em.msft.png)
 
-The unit dropdown provides all the numeric CSS units that are available.  Font size, line height, font weight, and spacing all use different units.  When the text boxes have focus, you can press the `arrow up` and `arrow down` keys to fine-tune your settings.  To use the sliders with a keyboard, press the `arrow left` and `arrow down` keys.
+The unit dropdown list provides all the numeric CSS units that are available.  Font size, line height, font weight, and spacing all use different units.  When the text boxes have focus, you can press the `arrow up` and `arrow down` keys to fine-tune your settings.  To use the sliders with a keyboard, press the `arrow left` and `arrow down` keys.
 
-The CSS Properties editor also includes preset keywords.  To use the preset keywords, on the right-hand side, click the `Toggle Input Type` icon.  The UI changes, and a dropdown of preset keywords are displayed.  To return to the UI with the slider and other UI controls, click the `Toggle Input Type` icon again.
+The CSS Properties editor also includes preset keywords.  To use the preset keywords, on the right-hand side, click the `Toggle Input Type` icon.  The UI changes, and a dropdown list of preset keywords are displayed.  To return to the UI with the slider and other UI controls, click the `Toggle Input Type` icon again.
 
 Opening the preset keyword interface:
 
-:::image type="content" source="../media/font-editor-preset-font-sizes.msft.png" alt-text="Opening the preset keyword interface." lightbox="../media/font-editor-preset-font-sizes.msft.png":::
+![Opening the preset keyword interface.](../media/font-editor-preset-font-sizes.msft.png)

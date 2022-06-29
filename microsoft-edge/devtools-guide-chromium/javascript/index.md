@@ -40,7 +40,7 @@ The first step in debugging is to find a series of actions that consistently rep
 
 1. Click **Add Number 1 and Number 2**.  The label below the button says `5 + 1 = 51`.  The result should be `6`.  Next, fix the addition error that is the bug.
 
-   :::image type="content" source="../media/javascript-js-demo-bad.msft.png" alt-text="5 + 1 results in 51, but should be 6" lightbox="../media/javascript-js-demo-bad.msft.png":::
+   ![5 + 1 results in 51, but should be 6](../media/javascript-js-demo-bad.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -50,15 +50,15 @@ DevTools provides many different tools for different tasks.  Different tasks inc
 
 1. To open the **Console** tool in DevTools, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
-   :::image type="content" source="../media/javascript-console-empty.msft.png" alt-text="The Console tool." lightbox="../media/javascript-console-empty.msft.png":::
+   ![The Console tool.](../media/javascript-console-empty.msft.png)
 
 1. Select the **Sources** tool.
 
-   :::image type="content" source="../media/javascript-sources-sections.msft.png" alt-text="The Sources tool." lightbox="../media/javascript-sources-sections.msft.png":::
+   ![The Sources tool.](../media/javascript-sources-sections.msft.png)
 
 The **Sources** tool UI has three parts.
 
-:::image type="content" source="../media/javascript-sources-sections-annotated.msft.png" alt-text="The 3 parts of the Sources tool UI." lightbox="../media/javascript-sources-sections-annotated.msft.png":::
+![The 3 parts of the Sources tool UI.](../media/javascript-sources-sections-annotated.msft.png)
 
 *  The **Navigator** pane (in the upper left corner).  Every file that the webpage requests is listed here.
 
@@ -103,7 +103,7 @@ If you step back and think about how the app works, you might make an educated g
 
 1. Select the checkbox next to **click**.  DevTools is now set up to automatically pause when any `click` event listener runs.
 
-   :::image type="content" source="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png" alt-text="Select the checkbox next to click." lightbox="../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png":::
+   ![Select the checkbox next to click.](../media/javascript-sources-event-listener-breakpoint-mouse-click.msft.png)
 
 1. Back on the demo, click **Add Number 1 and Number 2** again.  DevTools pauses the demo and highlights a line of code in the **Sources** tool.  DevTools should pause on line 16 in `get-started.js`.
 
@@ -151,11 +151,11 @@ Line-of-code breakpoints are the most common type of breakpoint.  When you get t
     label.textContent = addend1 + ' + ' + addend2 + ' = ' + sum;
     ```
 
-1. On the left, the number of this particular line of code is displayed as **34**.  Click line **34**.  DevTools displays a red icon to the left of **34**.  The red icon indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
+1. On the left, the number of this particular line of code is displayed as **34**.  Click line **34**.  DevTools displays a red circle (or more recently, a blue rectangle) to the left of **34**.  The red circle (or blue rectangle) indicates that a line-of-code breakpoint is on this line.  DevTools always pauses before this line of code is run.
 
 1. Click **Resume script execution** (![Resume script execution.](../media/resume-script-run-icon.msft.png)).  The script continues to run until it reaches line 34.  On lines 31, 32, and 33, DevTools prints the values of `addend1`, `addend2`, and `sum` to the right of the semi-colon on each line.
 
-   :::image type="content" source="../media/javascript-sources-breakpoint-paused.msft.png" alt-text="DevTools pauses on the line-of-code breakpoint on line 34." lightbox="../media/javascript-sources-breakpoint-paused.msft.png":::
+   ![DevTools pauses on the line-of-code breakpoint on line 34.](../media/javascript-sources-breakpoint-paused.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -167,7 +167,7 @@ The values of `addend1`, `addend2`, and `sum` look suspicious.  The values are w
 
 If you pause on a line of code, the **Scope** pane displays the local and global variables that are currently defined, along with the value of each variable.  It also displays closure variables, as applicable.  Double-click a variable value to edit it.  If you don't pause on a line of code, the **Scope** pane is empty.
 
-:::image type="content" source="../media/javascript-sources-breakpoint-paused-scope.msft.png" alt-text="The Scope pane." lightbox="../media/javascript-sources-breakpoint-paused-scope.msft.png":::
+![The Scope pane.](../media/javascript-sources-breakpoint-paused-scope.msft.png)
 
 ### Method 2: Watch Expressions
 
@@ -184,7 +184,7 @@ The **Watch** pane allows you to monitor the values of variables (such as `sum`)
 > [!NOTE]
 > In the following figure, the `typeof sum` Watch Expression is displayed in the **Watch** pane.  If your DevTools window is wide, the **Watch** pane is displayed within the **Debugger** pane, which then appears on the right.
 
-:::image type="content" source="../media/javascript-sources-breakpoint-paused-watch.msft.png" alt-text="The Watch pane." lightbox="../media/javascript-sources-breakpoint-paused-watch.msft.png":::
+![The Watch pane.](../media/javascript-sources-breakpoint-paused-watch.msft.png)
 
 As suspected, `sum` is being evaluated as a string, when it should be a number.  You now confirmed value type is the cause of the bug.
 
@@ -198,7 +198,7 @@ The **Console** allows you to view `console.log()` output.  You can also use the
 
 1. Press `Enter`.  DevTools evaluates the statement and prints `6`, which is the result you expect the demo to produce.
 
-   :::image type="content" source="../media/javascript-sources-breakpoint-paused-console.msft.png" alt-text="The Console tool, after evaluating parseInt(addend1) + parseInt(addend2)" lightbox="../media/javascript-sources-breakpoint-paused-console.msft.png":::
+   ![The Console tool, after evaluating parseInt(addend1) + parseInt(addend2)](../media/javascript-sources-breakpoint-paused-console.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -231,22 +231,22 @@ This article showed two ways to set breakpoints.  DevTools also provides ways to
 *  Breakpoints on caught or uncaught exceptions.
 *  XHR breakpoints that are triggered when the requested URL matches a substring that you provide.
 
-For more information about when and how to use each type, see [Pause your code with breakpoints](./breakpoints.md).
+For more information about when and how to use each type, see [Pause your code with breakpoints](breakpoints.md).
 
-A couple of code stepping controls aren't explained in this article.  For more information, see [Step over line of code](./reference.md#step-through-code) in "JavaScript debugging features".
+A couple of code stepping controls aren't explained in this article.  For more information, see [Step over line of code](reference.md#step-through-code) in "JavaScript debugging features".
 
 
 <!-- ====================================================================== -->
 ## See also
 
-*  [JavaScript debugging features](./reference.md) - Using the UI of the debugger in the Sources tool.
+*  [JavaScript debugging features](reference.md) - Using the UI of the debugger in the Sources tool.
 *  [Sources tool overview](../sources/index.md) - Introduces the JavaScript debugger and code editor.
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/javascript/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/javascript/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

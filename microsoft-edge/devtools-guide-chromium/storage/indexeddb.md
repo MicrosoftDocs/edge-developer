@@ -22,24 +22,19 @@ ms.date: 05/04/2021
    limitations under the License.  -->
 # View and change IndexedDB data
 
-This guide shows you how to use [Microsoft Edge DevTools](../../devtools-guide-chromium/index.md) to view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) data.
-
-This article assumes you are familiar with:
-
-*  DevTools.
-*  IndexedDB.  See [Using IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API/Using_IndexedDB).
+To view and change [IndexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) data, use the **Application** tool.
 
 
 <!-- ====================================================================== -->
 ## View IndexedDB data
 
-1. Click the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
+1. In DevTools, click the **Application** tab to open the **Application** tool.  The **Manifest** pane usually opens by default.
 
-   :::image type="content" source="../media/storage-application-manifest-empty.msft.png" alt-text="The Manifest pane." lightbox="../media/storage-application-manifest-empty.msft.png":::
+   ![The Manifest pane.](../media/storage-application-manifest-empty.msft.png)
 
 1. Expand the **IndexedDB** menu to review which databases are available.
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb.msft.png" alt-text="The IndexedDB menu." lightbox="../media/storage-application-storage-indexeddb.msft.png":::
+   ![The IndexedDB menu.](../media/storage-application-storage-indexeddb.msft.png)
 
    * (![Database icon.](../media/database-icon.msft.png)) `notes - https://mdn.github.io` represents a database, where `notes` is the name of the database and `https://mdn.github.io` is the origin that accesses the database.
 
@@ -52,14 +47,14 @@ This article assumes you are familiar with:
 
 1. Select a database, to see the origin and version number.
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db.msft.png" alt-text="The notes database." lightbox="../media/storage-application-storage-indexeddb-notes_db.msft.png":::
+   ![The notes database.](../media/storage-application-storage-indexeddb-notes_db.msft.png)
 
 1. Click an object store, to see the key-value pairs.
 
    > [!NOTE]
    > IndexedDB data doesn't update in real-time.  See [Refresh IndexedDB data](#refresh-indexeddb-data).
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png" alt-text="The notes object store." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png":::
+   ![The notes object store.](../media/storage-application-storage-indexeddb-notes_db-notes_os.msft.png)
 
    *  **Total entries** is the total number of key-value pairs in the object store.
 
@@ -67,11 +62,11 @@ This article assumes you are familiar with:
 
 1. Click a cell in the **Value** column to expand the value.
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png" alt-text="View an IndexedDB value." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png":::
+   ![View an IndexedDB value.](../media/storage-application-storage-indexeddb-notes_db-notes_os-edge-chromium.msft.png)
 
 1. Click an index, such as **title** or **body** in the following figure, to sort the object store according to the values of that index.
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png" alt-text="Sort an object store by an index." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png":::
+   ![Sort an object store by an index.](../media/storage-application-storage-indexeddb-notes_db-notes_os-title.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -82,7 +77,7 @@ IndexedDB values in the **Application** tool don't update in real-time.
 *  To refresh the data, view an object store and then click **Refresh** (![Refresh.](../media/reload-icon.msft.png)).
 *  To refresh all data, view a database and click **Refresh database**.
 
-:::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png" alt-text="View a database." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png":::
+![View a database.](../media/storage-application-storage-indexeddb-notes_db-notes_os-refresh-database.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -94,7 +89,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 [Snippets](../javascript/snippets.md) are a way to store and run blocks of JavaScript code within DevTools.  When you run a Snippet, the result is logged to the **Console**.  You can use a Snippet to run JavaScript code to edit an IndexedDB database.
 
-:::image type="content" source="../media/storage-sources-snippets-indexeddb-output.msft.png" alt-text="Using a Snippet to interact with IndexedDB." lightbox="../media/storage-sources-snippets-indexeddb-output.msft.png":::
+![Using a Snippet to interact with IndexedDB.](../media/storage-sources-snippets-indexeddb-output.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -106,17 +101,17 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 1. Click the key-value pair that you want to delete.  DevTools highlights it to indicate that it is selected.
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png" alt-text="Click a key-value pair in order to delete it." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png":::
+   ![Click a key-value pair in order to delete it.](../media/storage-application-storage-indexeddb-notes_db-notes_os2.msft.png)
 
 1. Press `Delete` or click **Delete Selected** (![Delete Selected.](../media/delete-icon.msft.png)).
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png" alt-text="How the object store looks after the key-value pair has been deleted." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png":::
+   ![How the object store looks after the key-value pair has been deleted.](../media/storage-application-storage-indexeddb-notes_db-notes_os-delete-selected.msft.png)
 
 ### Delete all key-value pairs in an object store
 
 1. [View an IndexedDB object store](#view-indexeddb-data).
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png" alt-text="View an object store." lightbox="../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png":::
+   ![View an object store.](../media/storage-application-storage-indexeddb-notes_db-notes_os-clear-object-store.msft.png)
 
 1. Click **Clear object store** (![Clear object store.](../media/clear-icon.msft.png)).
 
@@ -126,7 +121,7 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 1. Click **Delete database**.
 
-   :::image type="content" source="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png" alt-text="The Delete database button." lightbox="../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png":::
+   ![The Delete database button.](../media/storage-application-storage-indexeddb-notes_db-delete-database.msft.png)
 
 ### Delete all IndexedDB storage
 
@@ -136,13 +131,13 @@ IndexedDB keys and values aren't editable from the **Application** tool.  Howeve
 
 1. Click **Clear site data**.
 
-   :::image type="content" source="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png" alt-text="The Clear storage pane." lightbox="../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png":::
+   ![The Clear storage pane.](../media/storage-application-clear-storage-indexeddb-clear-site-data.msft.png)
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/storage/indexeddb) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/storage/indexeddb/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

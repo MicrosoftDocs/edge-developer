@@ -9,17 +9,33 @@ ms.date: 12/16/2021
 ---
 # Analyze pages using the Inspect tool
 
-This article shows how to use the **Inspect** tool to preview information about an element, and how to select an element in the current document.  To try out the **Inspect** tool now, open the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page in a different tab or window while reading this article.
+Use the **Inspect** tool to see information about an item within a rendered webpage.
+
+* When the **Inspect** tool is active, you _hover_ over items in the webpage, and DevTools adds an information overlay information and grid highlighting on the webpage.
+
+* When you _click_ an item in the webpage, the DOM tree in the **Elements** tool is automatically updated to show the DOM element that corresponds to the clicked item in the rendered webpage, and its CSS styling in the **Styles** tab.
 
 
 <!-- ====================================================================== -->
 ## Activating the Inspect tool
 
-The **Inspect** tool button is in the upper-left corner of DevTools.  When you select the **Inspect** tool button, the button turns blue, indicating that the **Inspect** tool is active.
+To try out the **Inspect** tool:
 
-![The Inspect tool button in the upper left of DevTools.](images/inspect-tool-button.msft.png)
+1. Open the [Inspect Demo](https://microsoftedge.github.io/Demos/devtools-inspect) page in a new window or tab.
 
-Or, press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS), to activate the **Inspect** tool.
+1. Right-click anywhere in the demo webpage and then select **Inspect**, to open DevTools.
+
+1. In the upper left corner of DevTools, click the **Inspect tool** (![Inspect tool icon.](../media/inspect-tool-icon-light-theme.png)) button.  Or, when DevTools has focus, press `Ctrl`+`Shift`+`C` (Windows, Linux) or `Command`+`Shift`+`C` (macOS).
+
+   ![The Inspect tool button in the upper left of DevTools.](images/inspect-tool-button.msft.png)
+
+   The button icon turns blue (![The Inspect icon.](../media/inspect-tool-icon-blue-light-theme.png)), indicating that the **Inspect** tool is active.
+
+1. In the rendered webpage, hover over items and watch the information overlay and grid highlighting.
+
+1. Click an item in the rendered webpage.
+
+   The DOM tree in the **Elements** tool is automatically updated to show the DOM element that corresponds to the clicked item in the rendered webpage, and its CSS styling in the **Styles** tab.  Clicking in the webpage also turns off **Inspect** mode in the webpage.
 
 
 <!-- ====================================================================== -->
@@ -76,6 +92,20 @@ When you click an element in the rendered page:
 *  The **Styles** tool shows the CSS that's applied to the element.
 
 ![When you click an element in the rendered page, the Styles tool shows the styles that are applied to the element.](images/inspect-tool-highlighted-styles.msft.png)
+
+
+<!-- ====================================================================== -->
+## Persisting the Inspect tool's tooltip and grid color overlay
+<!-- keep sync'd:
+* [Persisting the Inspect tool's tooltip and grid color overlay](../accessibility/navigation.md#persisting-the-inspect-tools-tooltip-and-grid-color-overlay) in _Navigate DevTools with assistive technology_ -->
+
+When using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage.
+
+
+<!-- ====================================================================== -->
+## Temporarily hiding the Inspect element tooltip
+
+To hide the **Inspect** tool's overlay while you move the mouse pointer over the rendered webpage, press and hold `Ctrl`.
 
 
 <!-- ====================================================================== -->

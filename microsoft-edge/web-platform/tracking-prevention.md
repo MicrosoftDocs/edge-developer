@@ -9,11 +9,17 @@ ms.date: 01/07/2021
 ---
 # Tracking prevention in Microsoft Edge
 
-The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.  It is built to uphold the Microsoft Edge [browser privacy promise](https://microsoftedgewelcome.microsoft.com/privacy) while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.
+The tracking prevention feature in Microsoft Edge protects users from online tracking by restricting the ability of trackers to access browser-based storage as well as the network.
+
+The tracking prevention feature is built to uphold the Microsoft Edge [browser privacy promise](https://microsoftedgewelcome.microsoft.com/privacy), while also ensuring that there is no impact by default to website compatibility or the economic viability of the web.
+
+
+<!-- ====================================================================== -->
+## Levels of tracking prevention
 
 Microsoft Edge currently offers users three levels of tracking prevention, which are selected by navigating to `edge://settings/privacy`.
 
-![Three settings of tracking prevention.](./media/tracking-prevention-settings.png)
+![Three settings of tracking prevention.](media/tracking-prevention-settings.png)
 
 1. **Basic** - The least restrictive level of tracking prevention that is designed for users who enjoy personalized advertisements and who don't mind being tracked on the web.  Basic only protects users against malicious trackers such as fingerprinters and cryptominers.
 
@@ -65,7 +71,7 @@ To provide protection from tracking actions on the web, Microsoft Edge takes two
 
 A user may choose the page info flyout icon on the left side of the address bar to find out which trackers were blocked on a specific page:
 
-![Blocked trackers in the page info flyout.](./media/page-info-flyout.png)
+![Blocked trackers in the page info flyout.](media/page-info-flyout.png)
 
 How the enforcements are applied depends on what level of tracking prevention the user selected and the mitigations that may apply.
 
@@ -75,7 +81,7 @@ How the enforcements are applied depends on what level of tracking prevention th
 
 To ensure that web compatibility is preserved as much as possible, Microsoft Edge has three mitigations to help balance enforcements in specific situations.  These are the [Org Relationship mitigation](#org-relationship-mitigation), the [Org Engagement mitigation](#org-engagement-mitigation), and the [CompatExceptions List](#the-compatexceptions-list).
 
-Before diving into the mitigations, it is worth defining the concept of an "Organization" or "Org" for short.  [Disconnect](https://disconnect.me) also maintains a list called [entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json) that defines groups of URLs that are owned by the same parent organization/company.  The tracking prevention feature in Microsoft Edge uses this list in both the [Org Relationship mitigation](#org-relationship-mitigation) and the [Org Engagement mitigation](#org-engagement-mitigation) to minimize the occurrence of compatibility issues caused by tracking prevention affecting cross-organizational requests.
+Before diving into the mitigations, it is worth defining the concept of an "Organization" or "Org" for short.  [Disconnect](https://disconnect.me) also maintains a list called [entities.json](https://github.com/disconnectme/disconnect-tracking-protection/blob/master/entities.json)<!-- changing master to main doesn't work 5/19/2022 --> that defines groups of URLs that are owned by the same parent organization/company.  The tracking prevention feature in Microsoft Edge uses this list in both the [Org Relationship mitigation](#org-relationship-mitigation) and the [Org Engagement mitigation](#org-engagement-mitigation) to minimize the occurrence of compatibility issues caused by tracking prevention affecting cross-organizational requests.
 
 ### Org Relationship Mitigation
 

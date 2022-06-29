@@ -44,7 +44,7 @@ Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
 Users who have low vision need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall.  Users who are color blind need information to be conveyed in ways other than through color.
 
-Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, go to [Resources about building accessible websites](./build/index.md).
+Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, go to [Resources about building accessible websites](build/index.md).
 
 
 <!-- ====================================================================== -->

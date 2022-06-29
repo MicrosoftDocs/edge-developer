@@ -9,7 +9,7 @@ ms.date: 06/07/2021
 ---
 # Simulate reduced motion
 
-Animation in web products may be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.
+CSS animation can be an accessibility problem.  Operating systems deal with this problem by including an option to turn off animations to avoid user confusion and potential health-related problems, such as triggering seizures.
 
 On a webpage, you can use the [prefers-reduced-motion](https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion) CSS media query to detect whether the user prefers to display any animations.  Then wrap your animation code in a test, to conditionally run animations.
 
@@ -26,12 +26,12 @@ Then test your code, as follows.
 
 To simulate the operating system's reduced motion setting, without having to change your operating system setting:
 
-1. Type `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.
+1. Press `Ctrl`+`Shift`+`P` on Windows/Linux or `Command`+`Shift`+`P` on macOS to open the **Command Menu**.
     
     > [!div class="mx-imgBorder"]
     > ![Opening the command menu.](../media/reduced-motion-open-command-menu.png)
 
-1. Type `reduced`, to turn the simulation on and off.  Select the **Emulate CSS prefers-reduced-motion** option and press `Enter`.
+1. Type **reduced**, to turn the simulation on and off.  Select the **Emulate CSS prefers-reduced-motion** option, and then press `Enter`.
 
     > [!div class="mx-imgBorder"]
     > ![The Emulate CSS prefers-reduced-motion option in the Command menu.](../media/reduced-motion-command-menu-entry.png)

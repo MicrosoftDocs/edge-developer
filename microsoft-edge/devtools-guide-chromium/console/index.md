@@ -21,11 +21,11 @@ The **Console** tool helps with several tasks, which are covered in more detail 
 
 You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the main toolbar:
 
-:::image type="content" source="../media/console-intro-console-main.msft.png" alt-text="The Console tool open in the upper panel." lightbox="../media/console-intro-console-main.msft.png":::
+![The Console tool open in the upper panel.](../media/console-intro-console-main.msft.png)
 
 The **Console** is shown here in the lower part of DevTools (the **Drawer**), with the **Elements** tool open above it:
 
-:::image type="content" source="../media/console-intro-console-panel.msft.png" alt-text="The Console in the lower panel with the Elements tool open above it." lightbox="../media/console-intro-console-panel.msft.png":::
+![The Console in the lower panel with the Elements tool open above it.](../media/console-intro-console-panel.msft.png)
 
 The fastest way to directly open the **Console** is to press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
 
@@ -37,25 +37,22 @@ The **Console** is the default place where JavaScript and connectivity errors ar
 
 DevTools gives detailed information about the error in the **Console**:
 
-:::image type="content" source="../media/console-debug-displays-error.msft.png" alt-text="DevTools gives detailed information about the error in the Console." lightbox="../media/console-debug-displays-error.msft.png":::
+![DevTools gives detailed information about the error in the Console.](../media/console-debug-displays-error.msft.png)
 
 
 <!-- ====================================================================== -->
-## Look up error messages on the web from the Console
+## Search the web for a Console error message string
 
-Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass.  When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message.
+Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass:
 
-The **Search for this message on the Web** button on an error message in the **Console**:
+![The 'Search for this message on the Web' button on an error message in the Console.](../media/search-console-icon.msft.png)
+<!-- to set up screenshot, went to 
+https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
+https://microsoftedge.github.io/Demos/devtools-console/error.html -->
 
-:::image type="content" source="../media/search-console-icon.msft.png" alt-text="The 'Search for this message on the Web' button on an error message in the **Console**." lightbox="../media/search-console-icon.msft.png":::
+When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message:
 
-For a `Failed to load resource` error, the new tab contains web search results for the message "Failed to load resource" (without quotes).
-
-New tab that opened from the **Search Console Error** feature:
-
-:::image type="content" source="../media/search-console-new-tab.msft.png" alt-text="New tab that opened from the Search Console Error feature." lightbox="../media/search-console-new-tab.msft.png":::
-
-This feature was introduced in Microsoft Edge version 94.
+![The search results page in a new tab.](../media/search-console-new-tab.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -67,7 +64,7 @@ Issues are gradually being moved from the **Console** to the **Issues** tool.  H
 
 DevTools with a **Console** full of messages:
 
-:::image type="content" source="../media/console-intro-noise.msft.png" alt-text="DevTools with a Console full of messages." lightbox="../media/console-intro-noise.msft.png":::
+![DevTools with a Console full of messages.](../media/console-intro-noise.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -115,7 +112,7 @@ To log information to display in the Console:
 
    The **Console** displays the resulting messages that are caused by the demo code:
 
-   :::image type="content" source="../media/console-intro-logging.msft.png" alt-text="Console full of messages caused by demo code." lightbox="../media/console-intro-logging.msft.png":::
+   ![Console full of messages caused by demo code.](../media/console-intro-logging.msft.png)
 
 1. Paste the above code into the **Console**, and then press `Enter`.
 
@@ -140,11 +137,11 @@ To try running JavaScript in the Console:
 
 1. Open the **Console**.
 
-1. Type `2 + 2`.
+1. Type `2+2`.
 
-The **Console** displays the result of `2 + 2` live as you type it, displaying the result `4` on the following line:
+The **Console** displays the result of `2+2` live as you type it, displaying the result `4` on the following line:
 
-:::image type="content" source="../media/console-javascript-eager-evaluation.msft.png" alt-text="The Console displays the result of 2 + 2 live as you type it." lightbox="../media/console-javascript-eager-evaluation.msft.png":::
+![The Console displays the result of 2+2 live as you type it.](../media/console-javascript-eager-evaluation.msft.png)
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 
@@ -152,7 +149,7 @@ To run the JavaScript expression in the **Console** and optionally display a res
 
 Running several lines of JavaScript code in succession:
 
-:::image type="content" source="../media/console-javascript-several-expressions.msft.png" alt-text="Run several lines of JavaScript code in succession." lightbox="../media/console-javascript-several-expressions.msft.png":::
+![Run several lines of JavaScript code in succession.](../media/console-javascript-several-expressions.msft.png)
 
 By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press `Enter`.  To work around the single-line limitation, press `Shift`+`Enter` instead of `Enter`.
 
@@ -172,7 +169,7 @@ For more information about all the ways to work with **Console**, see [Console a
 
 Autocompletion of JavaScript expressions in the **Console**:
 
-:::image type="content" source="../media/console-javascript-autocomplete.msft.png" alt-text="Console autocompletion of JavaScript expressions." lightbox="../media/console-javascript-autocomplete.msft.png":::
+![Console autocompletion of JavaScript expressions.](../media/console-javascript-autocomplete.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -195,7 +192,7 @@ To use a JavaScript expression to read from the current page by reading a select
 
    This expression selects the first heading-level 1 from the DOM and then selects the HTML content that's contained between the `<h1>` start and end tags.  The **Console** displays the output of the expression, which is the text of the heading:
 
-   :::image type="content" source="../media/console-intro-reading-DOM.msft.png" alt-text="The Console displays the output of the expression, which is the text of the heading." lightbox="../media/console-intro-reading-DOM.msft.png":::
+   ![The Console displays the output of the expression, which is the text of the heading.](../media/console-intro-reading-DOM.msft.png)
 
 You have read from the DOM representation of the webpage, by entering a JavaScript expression in the **Console** and displaying the output in the **Console**.
 
@@ -216,7 +213,7 @@ To change the rendered webpage:
 
    The above JavaScript expression uses the `=` sign to assign a value to the selected DOM item.  The evaluated value of the expression is a string for a heading, in this example.  The expression's value (the heading string) is shown both in the **Console** and in the rendered webpage:
 
-   :::image type="content" source="../media/console-intro-wrtiting-DOM.msft.png" alt-text="Write text to the DOM in the Console." lightbox="../media/console-intro-wrtiting-DOM.msft.png":::
+   ![Write text to the DOM in the Console.](../media/console-intro-wrtiting-DOM.msft.png)
 
    You changed the main heading of the webpage to **Rocking the Console**.
 
@@ -237,7 +234,7 @@ For example, to add a green border around all the links in the current webpage:
 
    The `$$(selector)` console utility function is "Query selector all".  This DOM query selector function returns an array of all the elements that match the specified CSS selector, like the JavaScript function `document.querySelectorAll()`.  In this example, we select all the `<a>` hyperlink elements and then apply a green box around them:
 
-   :::image type="content" source="../media/console-intro-changing-styles.msft.png" alt-text="Manipulate a selection of elements using the Console." lightbox="../media/console-intro-changing-styles.msft.png":::
+   ![Manipulate a selection of elements using the Console.](../media/console-intro-changing-styles.msft.png)
 
 For more information, see [Console tool utility functions and selectors](utilities.md).
 

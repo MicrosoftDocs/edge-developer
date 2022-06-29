@@ -11,7 +11,7 @@ ms.date: 01/07/2021
 
 You can use Origin Trials to try out experimental APIs on live sites for a limited period of time.  When using Origin Trials, users of Microsoft Edge that visit your site may run code that uses experimental APIs.  To access the experimental APIs on each user machine, you don't need to go to `edge://flags` and turn on feature flags.
 
-For more information, see [experimental APIs](https://developer.microsoft.com/microsoft-edge/origin-trials).  You can also provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
+For more information, see [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).  You can also provide feedback on the design of the API, your use cases, or your experience using the APIs to browser engineers and the web standard community.
 
 
 <!-- ====================================================================== -->
@@ -52,7 +52,7 @@ To register for a trial of an experimental API:
 
 ### Apply your token
 
-A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials) page.  To begin using the trial on your website, use either of the following methods to apply the token to your page:
+A token is instantly generated and displayed on the [Microsoft Edge Origin Trials Developer Console](https://developer.microsoft.com/microsoft-edge/origin-trials).  To begin using the trial on your website, use either of the following methods to apply the token to your page:
 
 *  Add the `origin-trial` attribute value and your token to the `meta` tag on every page that uses the experimental API.
 

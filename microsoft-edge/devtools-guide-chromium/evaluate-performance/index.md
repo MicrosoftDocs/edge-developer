@@ -50,7 +50,7 @@ In the following tutorial, you open DevTools on a "Sluggish Animation" demo page
 
 1. Press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS) to open DevTools.
 
-   :::image type="content" source="../media/evaluate-performance-get-started-side-by-side.msft.png" alt-text="The demo on the left, and DevTools on the right" lightbox="../media/evaluate-performance-get-started-side-by-side.msft.png":::
+   ![The demo on the left, and DevTools on the right](../media/evaluate-performance-get-started-side-by-side.msft.png)
 
 For the rest of the screenshots below, DevTools is [undocked to a separate window](../customize/placement.md), to better focus on the contents.
 
@@ -67,7 +67,7 @@ Mobile devices have much less CPU power than desktops and laptops.  Whenever you
 
 1. For **CPU**, select **4x slowdown**.  DevTools throttles your CPU so that it is 4 times slower than usual.
 
-   :::image type="content" source="../media/evaluate-performance-performance-capture-settings.msft.png" alt-text="CPU throttle." lightbox="../media/evaluate-performance-performance-capture-settings.msft.png":::
+   ![CPU throttle.](../media/evaluate-performance-performance-capture-settings.msft.png)
 
    When testing other pages; if you want to ensure that each page works well on low-end mobile devices, set CPU Throttling to **6x slowdown**.  The demo doesn't work well with 6x slowdown, so it just uses 4x slowdown for instructional purposes.
 
@@ -91,13 +91,13 @@ When you ran the optimized version of the page, the blue icons move faster.  Why
 
 1. In DevTools, click **Record** (![Record.](../media/record-icon.msft.png)).  DevTools captures performance metrics as the page runs.
 
-   :::image type="content" source="../media/evaluate-performance-performance-profiling.msft.png" alt-text="Profile the page." lightbox="../media/evaluate-performance-performance-profiling.msft.png":::
+   ![Profile the page.](../media/evaluate-performance-performance-profiling.msft.png)
 
 1. Wait a few seconds.
 
 1. Click **Stop**.  DevTools stops recording, processes the data, then displays the results in the **Performance** tool.
 
-   :::image type="content" source="../media/evaluate-performance-performance-capture-results.msft.png" alt-text="The results of the profile." lightbox="../media/evaluate-performance-performance-capture-results.msft.png":::
+   ![The results of the profile.](../media/evaluate-performance-performance-capture-results.msft.png)
 
 That's an overwhelming amount of data, but it'll all make more sense shortly.
 
@@ -114,19 +114,19 @@ The main metric for measuring the performance of any animation is frames per sec
 
 1. Look at the **FPS** chart, shown below.  Whenever a red bar is displayed above **FPS**, it means that the framerate dropped so low that it's probably harming the user experience.  In general, the higher the green bar, the higher the FPS.
 
-   :::image type="content" source="../media/evaluate-performance-performance-fps-chart.msft.png" alt-text="The FPS chart." lightbox="../media/evaluate-performance-performance-fps-chart.msft.png":::
+   ![The FPS chart.](../media/evaluate-performance-performance-fps-chart.msft.png)
 
 1. Below the **FPS** chart, the **CPU** chart is displayed.  The colors in the **CPU** chart correspond to the colors in the **Summary** panel, at the bottom of the **Performance** tool.  The fact that the **CPU** chart is full of color means that the CPU was maxed out during the recording.  Whenever the CPU is maxed out for long periods, that's an indicator that you should find ways to do less work.
 
-   :::image type="content" source="../media/evaluate-performance-performance-cpu-chart.msft.png" alt-text="The CPU chart and Summary panel." lightbox="../media/evaluate-performance-performance-cpu-chart.msft.png":::
+   ![The CPU chart and Summary panel.](../media/evaluate-performance-performance-cpu-chart.msft.png)
 
 1. Hover over the **FPS**, **CPU**, or **NET** charts.  DevTools shows a screenshot of the page at that point in time.  Move your mouse left and right to replay the recording.  The action is called _scrubbing_, and it's useful for manually analyzing the progression of animations.
 
-   :::image type="content" source="../media/evaluate-performance-performance-screenshot-hover.msft.png" alt-text="View a screenshot of the page around the 2500ms mark of the recording." lightbox="../media/evaluate-performance-performance-screenshot-hover.msft.png":::
+   ![View a screenshot of the page around the 2500ms mark of the recording.](../media/evaluate-performance-performance-screenshot-hover.msft.png)
 
 1. In the **Frames** section, hover on one of the green squares.  DevTools shows you the FPS for that particular frame.  Each frame is probably well below the target of 60 FPS.
 
-   :::image type="content" source="../media/evaluate-performance-performance-frame-hover.msft.png" alt-text="Hover on a frame." lightbox="../media/evaluate-performance-performance-frame-hover.msft.png":::
+   ![Hover on a frame.](../media/evaluate-performance-performance-frame-hover.msft.png)
 
 The display indicates that the webpage isn't performing well.  In real scenarios, it may not be so clear whether the page is performing well, so having all of the tools to make measurements comes in handy.
 
@@ -141,7 +141,7 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
 
 1. In the **Rendering** tool, turn on **FPS Meter**.  A new overlay appears in the top-right of your viewport.
 
-   :::image type="content" source="../media/evaluate-performance-fps-meter-overlay.msft.png" alt-text="The FPS meter." lightbox="../media/evaluate-performance-fps-meter-overlay.msft.png":::
+   ![The FPS meter.](../media/evaluate-performance-fps-meter-overlay.msft.png)
 
 1. Turn off the **FPS Meter** and press `Escape` to close the **Rendering** tool.  You aren't using **FPS Meter** in this tutorial.
 
@@ -150,27 +150,27 @@ Another handy tool is the FPS meter, which provides real-time estimates for FPS 
 
 After you measured and verified that the animation isn't performing well, the next step is to answer the question "why?".
 
-1. When no events are chosen, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
+1. When no events are selected, the **Summary** panel shows you a breakdown of activity.  The page spent most of the time rendering.  Since performance is the art of doing less work, your goal is to reduce the amount of time spent doing rendering work.
 
-   :::image type="content" source="../media/evaluate-performance-performance-summary-tab.msft.png" alt-text="The Summary panel." lightbox="../media/evaluate-performance-performance-summary-tab.msft.png":::
+   ![The Summary panel.](../media/evaluate-performance-performance-summary-tab.msft.png)
 
 1. Expand the **Main** section.  DevTools shows you a flame chart of activity on the main thread, over time.  The x-axis represents the recording, over time.  Each bar represents an event.  A wider bar means that event took longer.  The y-axis represents the call stack.  When events are stacked on top of each other, it means the upper events caused the lower events.
 
-   :::image type="content" source="../media/evaluate-performance-performance-main.msft.png" alt-text="The Main section." lightbox="../media/evaluate-performance-performance-main.msft.png":::
+   ![The Main section.](../media/evaluate-performance-performance-main.msft.png)
 
 1. There's a lot of data in the recording.  To Zoom into a single event, click, hold, and drag your cursor over the **Overview**, which is the section that includes the **FPS**, **CPU**, and **NET** charts.  The **Main** section and **Summary** panel only display information for the selected portion of the recording.
 
-   :::image type="content" source="../media/evaluate-performance-performance-main-zoomed.msft.png" alt-text="Zoom into an event." lightbox="../media/evaluate-performance-performance-main-zoomed.msft.png":::
+   ![Zoom into an event.](../media/evaluate-performance-performance-main-zoomed.msft.png)
 
    Another way to zoom is to put focus on the **Main** section, click the background or an event, and press `W`, `A`, `S`, or `D`.
 
-1. Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever a red triangle is displayed, it is a warning that there may be an issue related to the event.
+1. Focus on the red triangle in the top-right of the **Animation Frame Fired** event.  Whenever a red triangle is displayed, it's a warning that there may be an issue related to the event.
 
    The **Animation Frame Fired** event occurs whenever a [requestAnimationFrame() callback](https://developer.mozilla.org/docs/Web/API/window/requestAnimationFrame) is run.
 
 1. Click the **Animation Frame Fired** event.  The **Summary** panel now shows you information about that event.  Note the **Reveal** link.  After you click it, DevTools highlights the event that initiated the **Animation Frame Fired** event.  Also, focus on the **app.js:95** link.  After you click it, the relevant line in the source code is displayed.
 
-   :::image type="content" source="../media/evaluate-performance-performance-animation-frame-fired.msft.png" alt-text="More information about the Animation Frame Fired event." lightbox="../media/evaluate-performance-performance-animation-frame-fired.msft.png":::
+   ![More information about the Animation Frame Fired event.](../media/evaluate-performance-performance-animation-frame-fired.msft.png)
 
    After clicking an event, use the arrow keys to select the events next to it.
 
@@ -180,11 +180,11 @@ After you measured and verified that the animation isn't performing well, the ne
 
 1. In the **Summary** panel, click the **app.js:71** link under **Layout Forced**.  DevTools takes you to the line of code that forced the layout.
 
-   :::image type="content" source="../media/evaluate-performance-sources-app-update.msft.png" alt-text="The line of code that caused the forced layout." lightbox="../media/evaluate-performance-sources-app-update.msft.png":::
+   ![The line of code that caused the forced layout.](../media/evaluate-performance-sources-app-update.msft.png)
 
    The problem with the code is that, in each animation frame, it changes the style for each icon, and then queries the position of each icon on the page.  Because the styles changed, the browser doesn't know if each icon position changed, so it has to re-layout the icon in order to compute the new position.
    <!--
-   > To learn more, see [Avoid forced synchronous layouts](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid_forced_synchronous_layouts).
+   > To learn more, see [Avoid forced synchronous layouts](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/#avoid-forced-synchronous-layouts).
    -->
 
 That was a lot to learn.  You now have a solid foundation in the basic workflow for analyzing runtime performance.  Good job.
@@ -195,37 +195,37 @@ That was a lot to learn.  You now have a solid foundation in the basic workflow 
 Using the workflows and tools that you just learned, click **Optimize** on the demo to turn on the optimized code, take another performance recording, and then analyze the results.  From the improved framerate to the reduction in events in the flame chart in the **Main** section, the optimized version of the app does much less work, resulting in better performance.
 
 Even the optimized version isn't great, because it manipulates the `top` property of every icon.  A better approach is to stick to properties that only affect compositing.
-<!--  > For more information, see [Use transform and opacity changes for animations](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#use_transform_and_opacity_changes_for_animations). todo: add rendering section when available -->
+<!--  > For more information, see [Use transform and opacity changes for animations](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/#use-transform-and-opacity-changes-for-animations). todo: add rendering section when available -->
 
 
 <!-- ====================================================================== -->
 ## Next steps
 
 <!--The foundation for understanding performance is the RAIL model.  The RAIL model teaches you the performance metrics that are most important to your users.
-To learn more, see [Measure Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail). -->
+To learn more, see [Measure Performance With The RAIL Model](https://web.dev/rail/). -->
 
 To get more comfortable with the **Performance** tool, practice makes perfect.  Try profiling your pages and analyzing the results.  If you have any questions about your results, use the **Send Feedback** icon, press `Alt`+`Shift`+`I` (Windows, Linux) or `Option`+`Shift`+`I` (macOS), or [tweet the DevTools team](https://twitter.com/intent/tweet?text=@EdgeDevTools).  Include screenshots or links to reproducible pages, if possible.
 
-:::image type="content" source="../media/evaluate-performance-feedback-icon.msft.png" alt-text="The **Feedback** icon in the Microsoft Edge DevTools" lightbox="../media/evaluate-performance-feedback-icon.msft.png":::
+![The **Feedback** icon in the Microsoft Edge DevTools](../media/evaluate-performance-feedback-icon.msft.png)
 
-<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance Overview](https://developers.google.com/web/fundamentals/performance/rendering).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
+<!-- To really become an expert in runtime performance, you must learn how the browser translates HTML, CSS, and JS into pixels on a screen.  The best place to start is the [Rendering Performance](https://web.dev/rendering-performance/).  [The Anatomy Of A Frame](https://aerotwist.com/blog/the-anatomy-of-a-frame/) dives into even more detail. -->
 
 Last, there are many ways to improve runtime performance.  This article focused on one particular animation bottleneck to give you a focused tour of the **Performance** tool, but it's only one of many bottlenecks you may encounter.  <!--  The rest of the Rendering Performance series has a lot of good tips for improving various aspects of runtime performance, such as:  -->
 
 <!--
-* [Optimizing JS Execution](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
-* [Reduce The Scope And Complexity Of Style Calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
-* [Avoid Large, Complex Layouts And Layout Thrashing](/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
-* [Simplify Paint Complexity And Reduce Paint Areas](/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas)
-* [Stick To Compositor-Only Properties And Manage Layer Count](/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count)
-* [Debounce Your Input Handlers](/web/fundamentals/performance/rendering/debounce-your-input-handlers)
+* [Optimize JavaScript execution](https://web.dev/optimize-javascript-execution/)
+* [Reduce the scope and complexity of style calculations](https://web.dev/reduce-the-scope-and-complexity-of-style-calculations/)
+* [Avoid large, complex layouts and layout thrashing](https://web.dev/avoid-large-complex-layouts-and-layout-thrashing/)
+* [Simplify paint complexity and reduce paint areas](https://web.dev/simplify-paint-complexity-and-reduce-paint-areas/)
+* [Stick to Compositor-Only Properties and Manage Layer Count](https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/)
+* [Debounce your input handlers](https://web.dev/debounce-your-input-handlers/)
 -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/index) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/evaluate-performance/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -1,5 +1,5 @@
 ---
-title: Feature differences between Microsoft Edge and WebView2
+title: Differences between Microsoft Edge and WebView2
 description: Feature differences between Microsoft Edge and WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
@@ -7,36 +7,40 @@ ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
 no-loc: ["Autofill for Addresses", "Autofill for Passwords", Autofill for Payments", Browser Extensions", "Browser Task Manager", "Collections", "Continue-where-I-left-off prompt", "Downloads", "Edge Shopping", "Family Safety", "Favorites", "Hotkeys", "IE Mode" ,"Immersive Reader", "Intrusive Ads", "Read Aloud", "Smart Screen", "Translate", "Tracking Prevention", "Profile and Identity", "Web Payment API", "Windows Defender Application Guard","edge:// URLs"]
-ms.date: 09/21/2021
+ms.date: 03/14/2022
 ---
-# Feature differences between Microsoft Edge and WebView2
+# Differences between Microsoft Edge and WebView2
 
-WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.  This article provides the following information.
+WebView2 is based on the Microsoft Edge browser.  You have the opportunity to extend features from the browser to WebView2-based apps, which is useful.  However, since WebView2 isn't limited to browser-like apps, there are some browser features that need to be modified or removed.
 
-*   The modified browser features and supporting information.
-*   The ability to turn on or off the feature.
-*   Guidance on keyboard shortcuts.
+This article covers:
+
+*  The modified browser features and supporting information.
+*  The ability to turn on or off the feature.
+*  Guidance on keyboard shortcuts.
 
 
 <!-- ====================================================================== -->
 ## Design guidelines
 
-In the context of WebView2, browser features adhere to the following design guidelines.
+In the context of WebView2, browser features adhere to the following design guidelines:
 
-*   Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off.
-*   WebView2 features don't include Microsoft Edge branding.
+*  Most features work the same in WebView2 and Microsoft Edge.  If a feature doesn't make sense in the context of WebView2 or for other reasons, the feature is modified or turned off.
+
+*  WebView2 features don't include Microsoft Edge branding.
 
 
 <!-- ====================================================================== -->
 ## Browser features
 
-The following table displays the WebView2 features that differ from the Microsoft Edge browser.
+The following table displays the WebView2 features that differ from the Microsoft Edge browser:
 
-*   **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.
-*   **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
+*  **Default state** indicates that the feature is part of the default experience on a new WebView2 instance.
+
+*  **Configurable** indicates that you can turn on or off the feature using WebView2 APIs or command-line switches.
 
 > [!NOTE]
-> This article doesn't cover modifying features using command-line switches.  For more information about turning on and off features with command-line switches, see [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
+> This article doesn't cover modifying features by using command-line switches.  For more information about turning on and off features by using command-line switches, see [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches).
 
 | Feature | Default state | Configurable | Details |
 | --- | --- | --- | --- |
@@ -68,7 +72,7 @@ The following table displays the WebView2 features that differ from the Microsof
 <!-- ====================================================================== -->
 ## Web platform features
 
-The following table displays the WebView2 platform features that are currently unavailable.
+The following WebView2 platform features are currently unavailable:
 
 | Feature | Details |
 |:--- | :--- |
@@ -79,33 +83,43 @@ The following table displays the WebView2 platform features that are currently u
 <!-- ====================================================================== -->
 ## Blocked internal URLs
 
-The following Microsoft Edge and Google Chrome settings webpages aren't available in WebView2.
+The following Microsoft Edge and Google Chrome settings webpages aren't available in WebView2:
 
-*   `chrome-search://local-ntp/local-ntp.html`
-*   `edge://application-guard-internals`
-*   `edge://apps`
-*   `edge://compat`
-*   `edge://extensions`
-*   `edge://favorites`
-*   `edge://help`
-*   `edge://management`
-*   `edge://network-error`
-*   `edge://new-tab-page`
-*   `edge://newtab`
-*   `edge://omnibox`
-*   `edge://settings`
-*   `edge://supervised-user-internals`
-*   `edge://version`
+*  `chrome-search://local-ntp/local-ntp.html`
+*  `edge://application-guard-internals`
+*  `edge://apps`
+*  `edge://compat`
+*  `edge://extensions`
+*  `edge://favorites`
+*  `edge://help`
+*  `edge://management`
+*  `edge://network-error`
+*  `edge://new-tab-page`
+*  `edge://newtab`
+*  `edge://omnibox`
+*  `edge://settings`
+*  `edge://supervised-user-internals`
+*  `edge://version`
 
 
 <!-- ====================================================================== -->
 ## Additional keyboard shortcuts information
 
-Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.  When Microsoft Edge is updated, the default key bindings might change.  Furthermore, a keyboard shortcut that is turned off by default might instead be turned on, if the feature is now supported in WebView2.  To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.
+Keyboard shortcuts or key bindings are supported in Microsoft Edge and WebView2.
 
-The following shortcuts are always turned off in WebView2.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.
 
-| Action | Windows |
+### Preventing shortcuts from changing during update
+
+When Microsoft Edge is updated, the default key bindings might change.  Furthermore, a keyboard shortcut that is turned off by default might instead be turned on, if the feature is now supported in WebView2.
+
+To avoid such changes to your keyboard shortcuts, you can set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, which turns off all keys that access browser features, but keeps all basic text-editing and movement shortcuts turned on.
+
+
+### Shortcuts that are turned off
+
+The following shortcuts are always turned off in WebView2, or are effectively turned off.  An asterisk (`*`) indicates that the shortcut isn't turned off, but the feature that it accesses is turned off, or the feature doesn't apply to WebView2.
+
+| Action | Shortcut |
 |:--- |:--- |
 | Add to Favorites | `Ctrl`+`D` |
 | Add All Tabs to Favorites | `Ctrl`+`Shift`+`D` |
@@ -122,8 +136,8 @@ The following shortcuts are always turned off in WebView2.  An asterisk (`*`) in
 | Select Tab (1 - 8) | `Ctrl`+`(1-8)` |
 | Show Favorites Bar `*` | `Ctrl`+`Shift`+`B` |
 | Help | `F1` |
-| Focus Next Pane `*` | `F6` |
-| Focus Previous Pane `*` | `Shift`+`F6` |
+| Focus Next Pane `*` | `F6`.  Supported in windowed hosting mode, but not in visual hosting mode.  Visual hosting mode is used for [WinUI 2 (UWP) apps](../samples/webview2_sample_uwp.md), and for [Win32 C++ apps with Visual Composition](../samples/webview2samplewincomp.md). |
+| Focus Previous Pane `*` | `Shift`+`F6`.  Same as `F6` support, above. |
 | Reading View `*` | `F9` |
 | Focus Menu Bar | `F10` |
 | Show Identity Menu `*` | `Ctrl`+`Shift`+`M` |
@@ -147,17 +161,23 @@ The following shortcuts are always turned off in WebView2.  An asterisk (`*`) in
 | Show Reading Mode Bar `*` | `Shift`+`Alt`+`R` |
 | Show Collections `*` | `Ctrl`+`Shift`+`Y` |
 
-The following keyboard shortcuts are always turned off, except in windows that display when the `NewWindowRequested` event isn't handled.
 
-| Action | Windows |
+### Shortcuts turned off except when event not handled
+
+The following keyboard shortcuts are always turned off, except in windows that display when the `NewWindowRequested` event isn't handled:
+
+| Action | Shortcut |
 |:--- |:--- |
 | Close Tab | `Ctrl`+`W, Ctrl`+`F4` |
 | Close Window | `Ctrl`+`Shift`+`W` |
 | Fullscreen | `F11` |
 
-If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off.
 
-| Action | Windows |
+### Shortcuts turned off if AcceleratorEnabled is False
+
+If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following additional keyboard shortcuts are turned off:
+
+| Action | Shortcut |
 |:--- |:--- |
 | Stop | `Escape` |
 | Find on Page | `Ctrl`+`F` |
@@ -178,5 +198,7 @@ If you set `AreBrowserAcceleratorKeysEnabled` to `FALSE`, the following addition
 | Open DevTools Console | `Ctrl`+`Shift`+`J` |
 | Open DevTools Inspect | `Ctrl`+`Shift`+`C` |
 
-> [!Note]
-> To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.
+
+### Customizing an individual key
+
+To customize any of the keys individually, use the [AcceleratorKeyPressed](/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed?view=webview2-dotnet-1.0.774.44&preserve-view=true) event.

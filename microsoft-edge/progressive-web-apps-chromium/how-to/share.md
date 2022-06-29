@@ -51,7 +51,7 @@ function shareSomeContent(title, text, url) {
 }
 ```
 
-In the above code, we first check whether the browser supports Web sharing, by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
+In the above code, we first check whether the browser supports Web sharing, by testing if `navigator.share` is defined.  The `navigator.share` function returns a [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) object that resolves when sharing is successful, and rejects when an error occurred.
 
 Because a Promise is used here, the above code can be rewritten as an `async` function, as follows:
 
@@ -72,9 +72,9 @@ async function shareSomeContent(title, text, url) {
 
 On Windows, the above code will trigger the share dialog, allowing the user to pick an app to receive the shared content.  The share dialog is shown below:
 
-:::image type="content" source="../media/windows-share-dialog.png" alt-text="The share dialog on Windows.":::
+![The share dialog on Windows.](../media/windows-share-dialog.png)
 
-Once the user has chosen an app to receive the shared content, it is up to this app to handle it any way it chooses.  For example, an email app might use the `title` as the email subject, and use the `text` as the email body.
+Once the user has selected an app to receive the shared content, it is up to this app to handle it any way it chooses.  For example, an email app might use the `title` as the email subject, and use the `text` as the email body.
 
 
 ### Sharing files
@@ -127,7 +127,7 @@ To test the feature:
 
 The Windows **Share** dialog is displayed.  The user picks an app in which to share the content:
 
-:::image type="content" source="../media/devtools-tips-share.png" alt-text="The Windows Share dialog allows the user to pick which app should receive the shared content.":::
+![The Windows Share dialog allows the user to pick which app should receive the shared content.](../media/devtools-tips-share.png)
 
 You can find the [source code on GitHub](https://github.com/captainbrosset/devtools-tips/).  The app uses the Web Share API in the [share.js](https://github.com/captainbrosset/devtools-tips/blob/main/src/assets/share.js#L38) source file.
 
@@ -239,7 +239,7 @@ In the above code:
 
 1. Uses the data in some way (such as to store the content locally).
 
-1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](./background-syncs.md)).
+1. Redirects the user to a success page.  This way, the app can work even if the network is down.  The app can choose to only store the content locally, or can send the content to the server later, when connectivity is restored (such as by using [Background Sync](background-syncs.md)).
 
 ### Handle shared files
 

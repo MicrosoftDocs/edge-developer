@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.date: 06/21/2022
 ---
 <!-- Copyright Meggin Kearney
 
@@ -28,7 +28,7 @@ Use the heap profiler in the **Memory** tool to do the following:
 *  Compare snapshots.
 *  Find memory leaks.
 
-The DevTools heap profiler shows memory distribution used by your page's JavaScript objects and related DOM nodes.  See also [Objects retaining tree](./memory-101.md#objects-retaining-tree)) in _Memory terminology_.
+The DevTools heap profiler shows memory distribution used by your page's JavaScript objects and related DOM nodes.  See also [Objects retaining tree](memory-101.md#objects-retaining-tree)) in _Memory terminology_.
 
 <!-- You can view the source files for the Heap Snapshots demo pages at the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder.
 
@@ -54,13 +54,13 @@ This article uses five demo webpages, all sourced at https://github.com/Microsof
 
 1. Click the **Take snapshot** button, and then click **Start**.  Or, press `Ctrl`+`E` (Windows, Linux) or `Cmd`+`E` (macOS).
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png" alt-text="Selecting the 'Heap snapshot' profiling type in the Memory tool." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png":::
+![Selecting the 'Heap snapshot' profiling type in the Memory tool.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots.msft.png)
 
 **Snapshots** are initially stored in the renderer process memory.  Snapshots are transferred to the DevTools on demand, when you click the snapshot icon to view it.
 
-After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](./memory-101.md#object-sizes).
+After the snapshot has been loaded into DevTools and has been parsed, the number below the snapshot title appears and shows the [total size of the reachable JavaScript objects](memory-101.md#object-sizes).
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png" alt-text="Total size of reachable objects." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png":::
+![Total size of reachable objects.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all.msft.png)
 
 > [!NOTE]
 > Only reachable objects are included in snapshots.  Also, taking a snapshot always starts with a garbage collection.
@@ -71,7 +71,7 @@ After the snapshot has been loaded into DevTools and has been parsed, the number
 
 Click the **Clear all profiles** icon to remove snapshots (both from DevTools and any memory associated with the renderer process).
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png" alt-text="Remove snapshots." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png":::
+![Remove snapshots.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-all-hover-clear-all-profiles.msft.png)
 
 Closing the DevTools window doesn't delete profiles from the memory associated with the renderer process.  When reopening DevTools, all previously taken snapshots reappear in the list of snapshots.
 
@@ -98,7 +98,7 @@ View snapshots from different perspectives for different tasks.
 
 To switch between views, use the selector at the top of the view.
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png" alt-text="Switch views selector." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png":::
+![Switch views selector.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-view-dropdown.msft.png)
 
 > [!NOTE]
 > Not all properties are stored on the JavaScript heap.  Properties implemented using getters that run native code aren't captured.  Also, non-string values such as numbers aren't captured.
@@ -107,7 +107,7 @@ To switch between views, use the selector at the top of the view.
 
 Initially, a snapshot opens in the Summary view, displaying object totals, which can be expanded to show instances:
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png" alt-text="Summary view." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png":::
+![Summary view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-retainers.msft.png)
 
 Top-level entries are "total" lines.
 
@@ -115,8 +115,8 @@ Top-level entries are "total" lines.
 |:--- |:--- |
 | **Constructor** | Represents all objects created using this constructor.  |
 | **Distance** | Displays the distance to the root using the shortest simple path of nodes.  |
-| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Object sizes](./memory-101.md#object-sizes).  |
-| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Object sizes](./memory-101.md#object-sizes).  |
+| **Shallow size** | Displays the sum of shallow sizes of all objects created by a certain constructor function.  The shallow size is the size of memory held by an object (generally, arrays and strings have larger shallow sizes).  See [Object sizes](memory-101.md#object-sizes).  |
+| **Retained size** | Displays the maximum retained size among the same set of objects.  The size of memory that you can free after an object is deleted (and the dependents are made no longer reachable) is called the retained size.  See [Object sizes](memory-101.md#object-sizes).  |
 
 <!--| **Number of object instances** | Displayed in the # column.  |  -->
 
@@ -125,9 +125,11 @@ After expanding a total line in the upper view, all of the instances are display
 * Yellow objects have JavaScript references.
 * Red objects are detached nodes.  A detached node is referenced from a node that has a yellow background.
 
-**What do the various constructor (group) entries in the Heap profiler correspond to?**
+### Constructor (group) entries in the heap profiler
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png" alt-text="Constructor groups." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png":::
+The various constructor (group) entries in the heap profiler correspond to the following types of objects.
+
+![Constructor groups.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-constructor-highlight.msft.png)
 
 | Constructor (group) entry | Description |
 |:--- |:--- |
@@ -137,8 +139,15 @@ After expanding a total line in the upper view, all of the instances are display
 | **(array, string, number, regexp)** | A list of object types with properties which reference an Array, String, Number, or regular expression. |
 | **(compiled code)** | Everything related to compiled code.  Script is similar to a function, but corresponds to a `<script>` body.  SharedFunctionInfos (SFI) are objects standing between functions and compiled code.  Functions usually have a context, while SFIs do not. |
 | **HTMLDivElement**, **HTMLAnchorElement**, **DocumentFragment**, and so on.  | References to elements or document objects of a particular type referenced by your code. |
+| **(object shape)** | References to the hidden classes and descriptor arrays that V8 (the JavaScript engine of Microsoft Edge) uses to understand and index the properties in objects.  See [HiddenClasses and DescriptorArrays](https://v8.dev/blog/fast-properties#hiddenclasses-and-descriptorarrays). |
+| **(BigInt)** | References to the **BigInt** object, which is used to represent and manipulate values that are too large to be represented by the **Number** object.  See [BigInt](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt). |
 
-<!--todo: add heap profiling summary section when available -->
+
+<!--
+### Heap profiling summary
+todo: add heap profiling summary section when available
+-->
+
 
 ### Comparison view
 
@@ -156,7 +165,7 @@ To verify that a certain application operation doesn't create leaks:
 
 In the **Comparison** view, the difference between two snapshots is displayed.  When expanding a total entry, added and deleted object instances are shown.
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png" alt-text="Comparison view." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png":::
+![Comparison view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-comparison-dropdown.msft.png)
 
 <!--todo: add HeapProfilingComparison section when available  -->
 
@@ -170,7 +179,7 @@ The **Containment** view is essentially a "bird's eye view" of the objects struc
 | **GC roots** | The actual GC roots used by the garbage of the VM.  GC roots are comprised of built-in object maps, symbol tables, VM thread stacks, compilation caches, handle scopes, and global handles.  |
 | **Native objects** | Browser objects "pushed" inside the JavaScript virtual machine (JavaScript VM) to allow automation, for example, DOM nodes, CSS rules.  |
 
-:::image type="content" source="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png" alt-text="Containment view." lightbox="../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png":::
+![Containment view.](../media/memory-problems-gh-nodejs-benchmarks-run-memory-heap-snapshots-containment-dropdown.msft.png)
 
 <!--todo: add heap profiling containment section when available  -->
 
@@ -213,8 +222,18 @@ You may also be interested in following up the above demo with this example that
 <!-- You can view the source files for the Heap Snapshots demo pages in the [MicrosoftEdge/Demos > devtools-memory-heap-snapshot](https://github.com/MicrosoftEdge/Demos/tree/main/devtools-memory-heap-snapshot) repo folder. -->
 
 <!--
-:::image type="content" source="../media/memory-problems-domleaks.msft.png" alt-text="Name functions to distinguish between closures." lightbox="../media/memory-problems-domleaks.msft.png":::
+![Name functions to distinguish between closures.](../media/memory-problems-domleaks.msft.png)
 -->
+
+
+<!-- ====================================================================== -->
+## Filter a heap snapshot by node type
+
+Use filters to focus on specific parts of a heap snapshot.  You can filter by node type if, for example, you're only interested in the strings or arrays from the heap.
+
+When looking at all the objects in a heap snapshot in the **Memory** tool, it can be difficult to focus on specific objects or retaining paths.  Use the **Node Types** filter when looking at a heap snapshot, to focus on only specific types of nodes.  For example, to see only the arrays and string objects that are in the heap, select the **Array** and **String** entries in the **Node Types** filter.
+
+![Node Types in a heap snapshot in the Memory tool.](heap-snapshots-images/node-types-heap-snapshot.png)
 
 
 <!-- ====================================================================== -->
@@ -264,7 +283,7 @@ leafRef = null;
 
 The `#leaf` maintains a reference to the relevant parent (parentNode) and recursively up to `#tree`, so only when `leafRef` is nullified is the WHOLE tree under `#tree` a candidate for garbage-collection (GC).
 
-:::image type="content" source="../media/memory-problems-tree-gc.msft.png" alt-text="DOM subtrees." lightbox="../media/memory-problems-tree-gc.msft.png":::
+![DOM subtrees.](../media/memory-problems-tree-gc.msft.png)
 
 
 ### Demo webpage: Example 6: Leaking DOM nodes
@@ -297,9 +316,21 @@ To read more about DOM leaks and memory analysis fundamentals, check out [Findin
 
 
 <!-- ====================================================================== -->
+## Save and export strings from a heap snapshot to JSON
+
+When taking a heap snapshot in the **Memory** tool, you can export all string objects from the snapshot to a JSON file.  In the **Memory** tool, in the **Constructor** section, click the **Save all to file** button next to the `(string)` entry:
+
+![Save all strings from a heap snapshot to JSON.](heap-snapshots-images/save-heap-snapshot-strings-json.png)
+
+The **Memory** tool exports a JSON file that contains all of the string objects from the heap snapshot:
+
+![Strings from the heap snapshot, in the JSON file.](heap-snapshots-images/heap-snapshot-strings-json-file.png)
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

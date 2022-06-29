@@ -27,9 +27,9 @@ When building extensions for the Microsoft Edge browser, you can use the followi
 | [desktopCapture](https://developer.chrome.com/extensions/desktopCapture) | Capture the content of a screen, individual windows, or tabs. |
 | [devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Interact with the inspected window.  For example, obtain the tab ID of pages, evaluate code, refresh pages, or obtain resources on a page. |
 | [devtools.network](https://developer.chrome.com/extensions/devtools_network) | Retrieve information about network requests displayed by the Developer Tools in the Network panel. |
-| [devtools.panels](https://developer.chrome.com/extensions/devtools.panels) | Integrate your extension into the Developer Tools window UI by creating your own panels, accessing existing panels, or adding sidebars. |
+| [devtools.panels](https://developer.chrome.com/docs/extensions/reference/devtools_panels/) | Integrate your extension into the Developer Tools window UI by creating your own panels, accessing existing panels, or adding sidebars. |
 | [downloads](https://developer.chrome.com/extensions/downloads) | Programmatically start, monitor, manipulate, and search for downloads. |
-| [enterprise.hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Get the manufacturer and model of the hardware platform where the browser runs. This API is only available to extensions installed by enterprise policy. |
+| [enterprise.hardwarePlatform](https://developer.chrome.com/docs/extensions/reference/enterprise_hardwarePlatform/) | Get the manufacturer and model of the hardware platform where the browser runs. This API is only available to extensions installed by enterprise policy. |
 | [events](https://developer.chrome.com/extensions/events) | Common types used by APIs that raise events to notify you when an interesting event occurs. |
 | [extension](https://developer.chrome.com/extensions/extension) | Any extension page can use the utilities of this API. It includes support for exchanging messages between extensions and content scripts, which is described in Message Passing. |
 | [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Contains type declarations for Microsoft Edge extensions. |
@@ -91,5 +91,5 @@ Microsoft Edge doesn't support the following Extension APIs:
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/apps/external_extensions).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

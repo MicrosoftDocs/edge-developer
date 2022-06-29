@@ -24,9 +24,9 @@ ms.date: 05/04/2021
 
 These are the default keyboard shortcuts for Microsoft Edge DevTools.
 
-Tooltips often show a keyboard shortcut.  Hover on a UI element of DevTools to display the tooltip.  If the element has a shortcut, the tooltip includes it.
+In DevTools, when you hover over an icon, often the tooltip shows a keyboard shortcut.
 
-See also [Customize keyboard shortcuts](../customize/shortcuts.md).
+See also [Navigate DevTools with assistive technology](../accessibility/navigation.md) and [Customize keyboard shortcuts](../customize/shortcuts.md).
 
 
 <!-- ====================================================================== -->
@@ -51,7 +51,7 @@ The following keyboard shortcuts are available in most DevTools panels.
 | Show **Settings** | `?` or `F1` | `?` or `Function`+`F1` |
 | Focus the next panel | `Ctrl`+`]` | `Command`+`]` |
 | Focus the previous panel | `Ctrl`+`[` | `Command`+`[` |
-| Switch back to whatever [docking position](../customize/index.md#change-devtools-placement) you last used.  If DevTools have been in the default position for the entire session, then this shortcut undocks DevTools into a separate window | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |
+| Switch back to whatever [docking position](../customize/placement.md) you last used.  If DevTools has been in the default position for the entire session, then this shortcut undocks DevTools into a separate window. | `Ctrl`+`Shift`+`D` | `Command`+`Shift`+`D` |
 | Toggle [Device emulation](../device-mode/index.md) | `Ctrl`+`Shift`+`M` | `Command`+`Shift`+`M` |
 | Toggle **Inspect Element Mode** | `Ctrl`+`Shift`+`C` | `Command`+`Shift`+`C` |
 | Open the [Command Menu](../command-menu/index.md) | `Ctrl`+`Shift`+`P` | `Command`+`Shift`+`P` |
@@ -168,9 +168,17 @@ The following keyboard shortcuts are available in most DevTools panels.
 
 
 <!-- ====================================================================== -->
+## See also
+
+* [Navigate DevTools with assistive technology](../accessibility/navigation.md)
+* [Customize keyboard shortcuts](../customize/shortcuts.md)
+* [Run commands in the Command Menu](../command-menu/index.md)
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/shortcuts) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/shortcuts/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

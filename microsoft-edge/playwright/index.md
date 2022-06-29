@@ -1,6 +1,6 @@
 ---
 title: Use Playwright to automate and test in Microsoft Edge
-description: Use Playwright to automate and test in Microsoft Edge.
+description: Use Playwright to automate and test in Microsoft Edge.  The Playwright library provides cross-browser automation through a single API.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
@@ -9,6 +9,8 @@ ms.technology: devtools
 ms.date: 11/24/2020
 ---
 # Use Playwright to automate and test in Microsoft Edge
+
+The Playwright library provides cross-browser automation through a single API.
 
 [Playwright](https://playwright.dev/docs/intro) is a [Node.js](https://nodejs.org) library to automate [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/firefox), and [WebKit](https://webkit.org) with a single API.  Playwright is built to enable cross-browser web automation that is evergreen, capable, reliable, and fast.  Because [Microsoft Edge is built on the open-source Chromium web platform](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration), Playwright is also able to automate Microsoft Edge.
 
@@ -64,7 +66,7 @@ For more information about running tests, see [Playwright > Getting started](htt
 <!-- ====================================================================== -->
 ## Run tests in Microsoft Edge
 
-To run your tests in Microsoft Edge, you need to create a config file for Playwright Test, such as `playwright.config.ts`.  Inside the config file, create one project, using the Beta channel of Microsoft Edge. (Currently, there isn't a Stable channel of Microsoft Edge for Linux.)
+To run your tests in Microsoft Edge, you need to create a config file for Playwright Test, such as `playwright.config.ts`.  Inside the config file, create one project, using Microsoft Edge.
 
 ```typescript
 // playwright.config.ts
@@ -76,7 +78,7 @@ const config: PlaywrightTestConfig = {
       name: 'Microsoft Edge',
       use: {
         // Supported Microsoft Edge channels are: msedge, msedge-beta, msedge-dev, msedge-canary
-        channel: 'msedge-beta',
+        channel: 'msedge',
       },
     },
   ],
@@ -85,10 +87,10 @@ const config: PlaywrightTestConfig = {
 export default config
 ```
 
-If Microsoft Edge Beta isn't already installed on your system, install it through Playwright, as follows:
+If Microsoft Edge isn't already installed on your system, install it through Playwright, as follows:
 
 ```console
-npx playwright install msedge-beta
+npx playwright install msedge
 ```
 
 When using the above `playwright.config.ts` file, Playwright Test uses Microsoft Edge to run your tests, as follows:
@@ -109,7 +111,7 @@ const playwright = require('playwright');
 
 (async () => {
   const browser = await playwright.chromium.launch({
-    channel: 'msedge-beta',
+    channel: 'msedge',
   });
   const context = await browser.newContext();
   const page = await context.newPage();
@@ -120,7 +122,7 @@ const playwright = require('playwright');
 })();
 ```
 
-:::image type="content" source="../media/playwright-example.png" alt-text="The example.png file produced by example.js." lightbox="../media/playwright-example.png":::
+![The example.png file produced by example.js.](../media/playwright-example.png)
 
 `example.js` is a simple demonstration of the automation and testing scenarios that are enabled by Playwright.  To take screenshots in other web browsers, change the above code from `await playwright.chromium.launch` to the following code:
 

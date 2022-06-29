@@ -5,7 +5,7 @@ author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 11/19/2021
+ms.date: 06/07/2022
 ---
 # Get started with Progressive Web Apps
 
@@ -19,6 +19,9 @@ In this overview of PWA basics, you create a simple web app and extend it as a P
 
 > [!TIP]
 > You can use [PWABuilder](https://www.pwabuilder.com) to create a new PWA, enhance your existing PWA, or package your PWA for app stores.
+
+<!-- link is placed here per https://github.com/MicrosoftDocs/edge-developer/issues/1974 -->
+To install or run a PWA on Windows, see [Installing a PWA](../ux.md#installing-a-pwa) in _The user experience of PWAs_.
 
 
 <!-- ====================================================================== -->
@@ -51,7 +54,7 @@ npm start
 
 Now browse to `http://localhost:3000` to view your new web app.
 
-:::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="Running your new PWA on localhost.":::
+![Running your new PWA on localhost.](../media/visual-studio-nodejs-express-index.png)
 
 
 <!-- ====================================================================== -->
@@ -133,7 +136,7 @@ Service workers are defined in a special JavaScript file, described in [Using Se
 
 To build a service worker in your project, use the **Cache-first network** Service Worker recipe from PWA Builder, as follows.
 
-1. Copy the source files [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js) and [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js) to the `public` folder in your web app project.
+1. Copy the source files [pwabuilder-sw-register.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw-register.js)<!-- changing master to main doesn't work 5/19/2022 --> and [pwabuilder-sw.js](https://github.com/pwa-builder/pwabuilder-serviceworkers/blob/master/serviceWorker6/pwabuilder-sw.js)<!-- changing master to main doesn't work 5/19/2022 --> to the `public` folder in your web app project.
 
 1.  In Visual Studio Code, open `/public/index.html`.
 
@@ -155,22 +158,22 @@ Confirm that your service worker runs, as follows:
 
 1.  In Microsoft Edge, select `F12` to open DevTools.  Select **Application**, then **Service Workers** to view the service workers.  If the service worker isn't displayed, refresh the page.
 
-    :::image type="content" source="../media/devtools-sw-overview.png" alt-text="DevTools Service Worker overview." lightbox="../media/devtools-sw-overview.png":::
+    ![DevTools Service Worker overview.](../media/devtools-sw-overview.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  View the service worker cache by expanding **Cache Storage** and select **pwabuilder-precache**.  All of the resources cached by the service worker should be displayed.  The resources cached by the service worker include the app icon, app manifest, CSS, and JavaScript files.
 
-    :::image type="content" source="../media/devtools-cache.png" alt-text="Service Worker cache in DevTools." lightbox="../media/devtools-cache.png":::
+    ![Service Worker cache in DevTools.](../media/devtools-cache.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  Try your PWA as an offline app, as follows.  In DevTools, select **Network**, and then change the status from **Online** to **Offline**.
 
-    :::image type="content" source="../media/devtools-offline.png" alt-text="Setting the app to offline mode in DevTools." lightbox="../media/devtools-offline.png":::
+    ![Setting the app to offline mode in DevTools.](../media/devtools-offline.png)
     <!-- lightbox justified because large, detailed image -->
 
 1.  Refresh your app.  It should display the offline mechanism for serving the resources of your app from the cache.
 
-    :::image type="content" source="../media/visual-studio-nodejs-express-index.png" alt-text="A PWA running offline.":::
+    ![A PWA running offline.](../media/visual-studio-nodejs-express-index.png)
 
 The app can now be installed.
 <!-- todo: Expand the ending of the article or section.  Show a breakdown of what the service worker does. -->
@@ -183,7 +186,7 @@ To build a robust, real-world PWA, consider the following best practices for web
 
 ### Cross-browser compatibility
 
-Test your app for [cross-browser compatibility](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).  Make sure your PWA works, by testing it in different browsers and environments.  See [Tools](https://developer.microsoft.com/microsoft-edge/tools/remote) at _Microsoft Edge Developer_.
+Test your app for [cross-browser compatibility](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Cross_browser_testing).  Make sure your PWA works, by testing it in different browsers and environments.  See [Tools](https://developer.microsoft.com/microsoft-edge/tools/) at _Microsoft Edge Developer_.
 
 ### Responsive design
 
@@ -202,7 +205,7 @@ Support [Deep linking](https://en.wikipedia.org/wiki/Deep_linking).  Route each 
 
 ### Provide a rich offline experience
 
-Provide a rich [Offline experience](./offline.md).  Make the app work even if the user's device is offline.  Provide a custom offline page rather than using the browser's default offline page.
+Provide a rich [Offline experience](offline.md).  Make the app work even if the user's device is offline.  Provide a custom offline page rather than using the browser's default offline page.
 
 ### Use validation and testing practices
 

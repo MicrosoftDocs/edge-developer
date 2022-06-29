@@ -24,7 +24,7 @@ ms.date: 12/13/2021
 
 This article describes common terms used in memory analysis, and is applicable to various memory profiling tools for different languages.
 
-The terms and notions described here refer to the [Memory panel](./heap-snapshots.md).  If you've ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
+The terms and notions described here refer to the [Memory panel](heap-snapshots.md).  If you've ever worked with either the Java, .NET, or some other memory profiler, then this article may be a refresher.
 
 
 <!-- ====================================================================== -->
@@ -32,7 +32,7 @@ The terms and notions described here refer to the [Memory panel](./heap-snapshot
 
 Think of memory as a graph with primitive types (like numbers and strings) and objects (associative arrays).  Memory can be visually represented as a graph with a number of interconnected points, as follows:
 
-:::image type="content" source="../media/memory-problems-thinkgraph.msft.png" alt-text="Visual representation of memory." lightbox="../media/memory-problems-thinkgraph.msft.png":::
+![Visual representation of memory.](../media/memory-problems-thinkgraph.msft.png)
 
 An object can hold memory in two ways:
 
@@ -40,11 +40,11 @@ An object can hold memory in two ways:
 
 *  Implicitly, by holding references to other objects.  An object holding references to other objects prevents those objects from being automatically disposed by a garbage collector (GC).
 
-The [Memory](./heap-snapshots.md) panel in DevTools is a tool for investigating memory issues.
+The [Memory](heap-snapshots.md) panel in DevTools is a tool for investigating memory issues.
 
 When working with the Memory panel, you will likely find yourself looking at a few different columns of information.  Two columns that stand out are **Shallow Size** and **Retained Size**:
 
-:::image type="content" source="../media/memory-problems-shallow-retained.msft.png" alt-text="Shallow and Retained Size." lightbox="../media/memory-problems-shallow-retained.msft.png":::
+![Shallow and Retained Size.](../media/memory-problems-shallow-retained.msft.png)
 
 ### Shallow size
 
@@ -73,11 +73,11 @@ There are many internal GC roots, most of which aren't interesting for the users
 *  Sometimes objects are retained by the debug context in the **Sources** tool and the **Console**, such as after Console evaluation.  Create heap snapshots with a cleared **Console** tool and no active breakpoints in the debugger in the **Sources** tool.
 
 >[!TIP]
-> Before taking a heap snapshot in the [Memory](./heap-snapshots.md) tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.
+> Before taking a heap snapshot in the [Memory](heap-snapshots.md) tool, clear the **Console** tool and deactivate breakpoints in the **Sources** tool.  To clear the **Console** tool, run the `clear()` method.
 
 The memory graph starts with a root, which may be the `window` object of the browser or the `Global` object of a Node.js module.  You don't control how the root object is garbage-collected.
 
-:::image type="content" source="../media/memory-problems-dontcontrol.msft.png" alt-text="You can't control how the root object is garbage-collected." lightbox="../media/memory-problems-dontcontrol.msft.png":::
+![You can't control how the root object is garbage-collected.](../media/memory-problems-dontcontrol.msft.png)
 
 Whatever isn't reachable from the root gets garbage-collected.
 
@@ -96,11 +96,11 @@ Nodes and edges in a graph are given labels as follows:
 
 *  _Edges_ are labelled using the names of _properties_.
 
-Learn [how to record a profile using the Heap Profiler](./heap-snapshots.md).  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory](./heap-snapshots.md) tool include **Distance**, which is the distance from the garbage-collection root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that's something worth investigating.
+Learn [how to record a profile using the Heap Profiler](heap-snapshots.md).  In the following figure, some of the notable things in the Heap Snapshot recording in the [Memory](heap-snapshots.md) tool include **Distance**, which is the distance from the garbage-collection root.  If almost all the objects of the same type are at the same distance, and a few are at a bigger distance, that's something worth investigating.
 
 Distance from root:
 
-:::image type="content" source="../media/memory-problems-root.msft.png" alt-text="Distance from root." lightbox="../media/memory-problems-root.msft.png":::
+![Distance from root.](../media/memory-problems-root.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -116,7 +116,7 @@ In the following figure:
 *  Node 5 dominates node 8.
 *  Node 6 dominates node 7.
 
-:::image type="content" source="../media/memory-problems-dominatorsspanning.msft.png" alt-text="Dominator tree structure." lightbox="../media/memory-problems-dominatorsspanning.msft.png":::
+![Dominator tree structure.](../media/memory-problems-dominatorsspanning.msft.png)
 
 In the following figure, node `#3` is the dominator of node `#10`.  But node `#7` also exists in every simple path from the garbage collection root **GC** to node `#10`. Therefore, an object `B` is a dominator of an object `A` if object `B` exists in every simple path from the root to the object `A`.
 
@@ -203,9 +203,41 @@ Each wrapper object holds a reference to the corresponding native object, for re
 
 
 <!-- ====================================================================== -->
+## Cycles
+
+_Cycles_ are nodes that appear at least twice in a retainer path.
+One appearance of a node is earlier in the retainer path, and other appearances of that node are later in the retainer path.
+
+To free up memory, it's most important to remove the occurrence of the node which appears first in the retainer path.
+The second and potentially subsequent appearances of the node are still displayed in the **Retainers** section.
+
+
+### Using filters to hide cycles
+
+Cycles are displayed in the **Retainers** section of a heap snapshot.
+To help simplify the retainer path, the **Retainers** section in the **Memory** tool has filters to hide cycles.
+
+In the **Retainers** section, a cycled node is indicated by being grayed out.
+
+In the following image, in the **Filter edges** dropdown menu, **Hide cycled** is not selected, so a cycled node (grayed out) is displayed:
+
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is not selected.](memory-101-images/filters-retainers-memory-tool-no-hide-cycled.png)
+
+In the **Filter edges** dropdown menu, **Hide cycled** is selected, so the cycled node is not displayed:
+
+![In the 'Filter edges' dropdown menu, 'Hide cycled' is selected.](memory-101-images/filters-retainers-memory-tool-hide-cycled.png)
+
+
+### Using filters to hide internal nodes
+
+To filter out the display of internal nodes so that they aren't displayed in the **Retainers** section, in the **Filter edges** dropdown menu, select **Hide internal**.
+_Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).
+
+
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/memory-problems/memory-101/) and is authored by [Meggin Kearney](https://developers.google.com/web/resources/contributors#meggin-kearney) (Technical Writer).
 
-[![Creative Commons License.](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

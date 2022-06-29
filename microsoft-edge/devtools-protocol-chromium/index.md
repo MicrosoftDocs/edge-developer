@@ -58,7 +58,7 @@ Provides information on the browser of the host machine and which version of the
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -81,7 +81,7 @@ Provides the entire protocol API surface serialized as JSON.
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -95,7 +95,7 @@ Provides a candidate list of page targets for debugging.
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -131,11 +131,11 @@ String("Target is closing")
 <!-- ====================================================================== -->
 ## Remote Tools for Microsoft Edge (Beta)
 
-You are now able to install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
+You can install the [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).  This app enables you to remotely debug Microsoft Edge running on a Windows 10 or later device from your development machine.
 
 To learn how to set up your Windows device and connect to it from your development machine, see [Get started with remote debugging Windows devices](../devtools-guide-chromium/remote-debugging/windows.md).
 
-The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as the [DevTools](../devtools-guide-chromium/index.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
+The [Remote Tools for Microsoft Edge (Beta)](https://www.microsoft.com/store/apps/9P6CMFV44ZLT) uses the same Microsoft Edge DevTools Protocol as [DevTools](../devtools-guide-chromium/overview.md) to communicate with Microsoft Edge running on the Windows 10 or later device you want to debug.  This app just prepends `/msedge/` and a process ID (`pid`) before each call to the protocol.  It supports the following HTTP endpoints.
 
 The following Reference sections are for Remote Tools for Microsoft Edge.
 
@@ -147,7 +147,7 @@ Provides a candidate list of all `msedge.exe` processes (including [PWAs](../pro
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -159,7 +159,7 @@ Provides a candidate list of all `msedge.exe` processes (including [PWAs](../pro
     "id": "ED4FFDB4529723A0FAFCBDB9B45851BB",
     "title": "Get Started with Remote Debugging Windows Devices - Microsoft Edge Development | Microsoft Docs",
     "type": "page",
-    "url": "https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+    "url": "https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "ws://172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB",
     "browserProcessId": 7264
 }, ...  ]
@@ -179,7 +179,7 @@ Provides a candidate list of page targets for the Microsoft Edge instance that m
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -191,7 +191,7 @@ Provides a candidate list of page targets for the Microsoft Edge instance that m
     "id": "ED4FFDB4529723A0FAFCBDB9B45851BB",
     "title": "Get Started with Remote Debugging Windows Devices - Microsoft Edge Development | Microsoft Docs",
     "type": "page",
-    "url": "https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
+    "url": "https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/remote-debugging/windows",
     "webSocketDebuggerUrl": "ws://172.17.75.195:80/msedge/7264/devtools/page/ED4FFDB4529723A0FAFCBDB9B45851BB"
 }, ...  ]
 ```
@@ -204,7 +204,7 @@ Provides information about the Microsoft Edge instance that matches the provided
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -227,7 +227,7 @@ Provides the entire protocol API surface serialized as JSON for the Microsoft Ed
 
 **Parameters**
 
-**None**
+None.
 
 **Return object**
 
@@ -237,4 +237,4 @@ JSON object which represents the available API surface for the version of the pr
 <!-- ====================================================================== -->
 ## See also
 
-*  [Use the Chrome DevTools Protocol in WebView2](../webview2/how-to/chromium-devtools-protocol.md)
+* [Use the Chrome DevTools Protocol in WebView2 apps](../webview2/how-to/chromium-devtools-protocol.md)

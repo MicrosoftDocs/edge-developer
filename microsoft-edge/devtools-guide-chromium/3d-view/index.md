@@ -1,136 +1,288 @@
 ---
-title: Navigate z-index, DOM, and layers using the 3D View tool
-description: How to use 3D View, including navigating the canvas, Z-index, 3D DOM, and composited layers.
+title: Navigate webpage layers, z-index, and DOM using the 3D View tool
+description: How to use the 3D View tool, including navigating the 3D canvas and using the Composited Layers tab, Z-index tab, and DOM tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
-ms.date: 12/03/2020
+ms.date: 04/27/2022
 ---
-# Navigate z-index, DOM, and layers using the 3D View tool
+# Navigate webpage layers, z-index, and DOM using the 3D View tool
 
-Use the **3D View** to debug your web app by navigating through the [Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model) or the [z-index](https://developer.mozilla.org/docs/Web/CSS/z-index) stacking context.  Use **3D View** to do the following:
-* [Explore the web page translated into a 3D perspective](#3d-dom).
-* [Debug based on z-index stacking context](#z-index).
-* [Access the Layers tool functionality from 3D View with composited layers](#composited-layers).
-* [Clear some of the clutter on the DOM pane](#changing-your-view) or the [z-index pane](#change-the-scope-of-your-exploration).
-* [Pick the color scheme to best debug your DOM problems](#dom-color-type) or [z-index problems](#z-index-color-type).
+Use the **3D View** tool to debug your web app by rotating your page in 3D space to get a perspective on your webpage, represented as layers.  3D visualization helps you understand the DOM hierarchy for your webpage in terms of z-index layers.
 
-On the left side, there are three panes that you can use for your debugging experience:
-*  The [Z-index](#z-index) pane.  Navigate through the different elements in the web app with the z-index context in mind.  The **Z-index** pane is the default pane.
-*  The [3D DOM](#3d-dom) pane.  Explore the DOM as a whole with all the elements easily accessible.  To access the pane, select the **DOM** pane next to the **Z-index** pane.
-*  The [Composited Layers](#composited-layers) pane.  Add another 3D element to create a more comprehensive experience from a layers perspective.  To access the pane, select the **Composited Layers** pane next to the **DOM** pane.
+![The 3D View tool.](index-images/composited-layers-tab-galaxy.png)
 
-On the right side, the canvas displays your selections from the [Z-index](#z-index), [3D DOM](#3d-dom), or [Composited Layers](#composited-layers).
+On the left, the **3D View** tool has 3 tabs:
+
+*  The **Composited Layers** tab shows a realistic rendering of the webpage, including images, for a comprehensive experience as you move the page around in 3D space.
+*  The **Z-index** tab.  Explore the elements of the webpage, with an emphasis on the z-index layer context.  Use this tab, or view, to debug the webpage based on the z-index stacking context.
+*  The **DOM** tab.  Explore the DOM as a whole, with all of the elements easily accessible.  Explore all the elements of the webpage, translated into a 3D perspective.
+
+On the right, the 3D canvas represents the webpage according to which tab and options you select.
 
 
 <!-- ====================================================================== -->
-## Opening the 3D View panel
-
-To open the **3D View** panel, in DevTools, do either of the following:
-
-* Click **More Tools** (+) on the main toolbar and then select **3D View**.
-
-* Or, press `Shift`+`Ctrl`+`P` to open the Command Menu, type "3d", and then select **3D View [Drawer]**.
+## Zoom, pan, and rotate the 3D canvas
 
 
-<!-- ====================================================================== -->
-## Navigating the canvas
+### Zoom the page in or out
 
-:::image type="content" source="../media/3d-view-canvas.msft.png" alt-text="Canvas of 3D View." lightbox="../media/3d-view-canvas.msft.png":::
+To zoom the webpage in or out on the 3D canvas, use the mouse scroll wheel, or use the slider in the lower right.
 
-### Keyboard shortcuts
 
-To rotate the DOM horizontally, select the `left-arrow` and `right-arrow` keys.  To rotate vertically, select the `up-arrow` and `down-arrow` keys.
+<!-- instance 1 of this section, keep synd'c -->
+### Pan view (button)
 
-To navigate the DOM to move through the adjacent elements, select an element and then use the `up-arrow` and `down-arrow` keys.
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon.](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
 
-### Mouse controls
-
-To rotate the DOM, select and drag around the canvas space.
-
+<!-- no right-click
 To pan around the DOM, right-click and drag in the direction you want the DOM to move.
-
-To zoom, drag two fingers across the touchpad or use the scroll wheel on your mouse.
-
-### On-screen controls
-
-:::image type="content" source="../media/3d-view-controls-small.msft.png" alt-text="On-screen controls." lightbox="../media/3d-view-controls-small.msft.png":::
-
-To reset the canvas view to the original view, select the **Reset camera** button, or select the **Reset elements in view and re-center camera** (sideways refresh icon) button.
-
-To refresh the canvas, such as when the browser changed or you switched to a device emulator view, select the **Retake snapshot** button or the **Take new snapshot** button (the refresh icon).
+-->
 
 
-<!-- ====================================================================== -->
-## Z-index
+<!-- instance 1 of this section, keep synd'c -->
+### Rotate view (button)
 
-:::image type="content" source="../media/3d-view-z-index-view-box.msft.png" alt-text="Z-index view." lightbox="../media/3d-view-z-index-view-box.msft.png":::
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon.](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
 
-While the **Z-index** pane has shared features with the **3D DOM** pane, the panes still have elements that are unique to the pane.
+To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
+*  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
+*  To rotate the page vertically, press the `up arrow` and `down arrow` keys.
 
-### Highlight elements with stacking context
+The keys rotate the page, regardless of whether the **Pan view** or **Rotate view** button is selected in the toolbar.
 
-The **Highlight elements with stacking context** setting allows you to turn on or off the z-index tags for the elements on the canvas.  By default, the checkbox is selected.
-
-### Change the scope of your exploration
-
-The **Show all elements** button is the quickest way to display all the elements of the DOM after changing the settings below it.
-
-The **Show only elements with stacking context** button removes elements without stacking context and flattens the DOM for easier navigation.
-
-The **Isolate selected element** button is essentially three buttons in one.  There are two checkboxes below the **Isolate selected element** button:  The **Show all parents** checkbox and **Keep only parents with new stacking context** checkbox.
-
-The **Show all parents** checkbox is turned on by default.  To display the element and any parents on the canvas, select an element and then select the **Isolate selected element** button.
-
-To display the element and the parents that have a new stacking context on the canvas, turn on the **Keep only parents with new stacking context** setting and then select the **Isolate selected element** button.
-
-To display the element you selected on the canvas, turn off both the settings and then select **Isolate selected element** button.
-
-At the bottom of the **3D DOM** pane, locate the **Hide elements with the same paint order as their parent** checkbox.  Selecting and clearing the checkbox refreshes the elements based on your choice.  When this checkbox is selected, elements that share paint order are flattened to the parent.
-
-The options reduce the clutter that complex web pages create in your canvas.
-
-### Z-index color type
-
-The are the different visualizations you can use for the DOM in your canvas.  Whether you use it for fun or because the visualizations help you visualize the DOM better, the DevTools have different colorways and a **Use background color** option.  The **Z-index** pane shares the **Purple to White** and **Background Color** with the **3D DOM** pane.  Given the added visual element of the z-index labels, your feedback that led to a reduction in the number of color options.
-
-This approach improves the z-index debugging experience.  The radio buttons allow you to toggle through the options and pick the color type.  The color type is either most appropriate for your project or one that you like the most.
+For more information, see these other sections in this page:
+*  [Toolbar above the 3D canvas](#toolbar-above-the-3d-canvas)
+*  [Movement controls in lower right](#movement-controls-in-lower-right)
 
 
 <!-- ====================================================================== -->
-## 3D DOM
+## The Composited Layers tab
 
-:::image type="content" source="../media/3d-view-dom-purple-box.msft.png" alt-text="DOM view." lightbox="../media/3d-view-dom-purple-box.msft.png":::
 
-If you want to take more of a general debugging view, rather than the z-index experience, the **3D DOM** gives an overall look of the DOM.  Since the z-index context is removed, the DOM is stacked more closely and cleanly.  The **3D DOM** pane has similar functionality, but there are a few nuances.
+In the Composited Layers view, the 3D canvas displays the list of layers created by the browser rendering engine for the webpage.
 
-### Changing your view
+Use the Composited Layers view to analyze how many layers are created by your CSS code, how big they are, and how often they change.
 
-On the **3D DOM** pane, the **Isolate selected element** button has **Include children** and **Include parents** checkboxes.  Both checkboxes are turned on by default.  That means if you select the **Isolate selected element** button after you select an element, the canvas displays the selected element, the parents of the element, and the children of the element.
+On the 3D canvas on the right, select an element of the webpage.  In the **Composited Layers** tab, the layers tree expands automatically, and the **Details** tab below the layers tree shows information about the selected layer.
 
-To display the selected element and the parents of the element, turn off the **Include children** setting and then select the **Isolate selected element** button again.
+![The Composited Layers tab.](index-images/composited-layers-tab.png)
 
-If you turn on the **Include children** setting and turn off the **Include parents** setting and then select the **Isolate selected element** button, the canvas displays the element and any children.  If you turn off both settings and then select the **Isolate selected element** button, the canvas only displays the element you previously selected.
 
-A slider on the control pane named **Nesting level for page** with a number next to it.  The number indicates the number of layers for the document.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to `1`, which displays only the furthest-back element in the DOM.  To remove some of the clutter, drag the slider.  It helps you get a closer look at what is happening in the lower levels.
+<!-- == checkboxes == -->
 
-### DOM color type
+### Slow scroll rects (checkbox)
 
-The **3D DOM** pane has the following options:
-*  Three different colorways:
-    *  **Heatmap - Purple to White**
-    *  **Heatmap - Blue to Yellow**
-    *  **Heatmap - Rainbow**
-*  **Use background color**
-*  **Use screen texture**
+The **Slow scroll rects** checkbox highlights sections of the page that cause slow scrolling.  This checkbox is helpful to investigate performance problems.  Certain webpages use JavaScript to detect scroll (or touch) on certain page elements in a way that may make scrolling through the webpage slower than it normally could be.
 
-The **Use screen texture** option adds context to your debugging experience.  It directly displays the content from the webpage onto the elements.
+This checkbox highlights (in pink) the boxes of the rendered webpage that may cause these performance issues.
+<!-- To try this checkbox, you can go to [YouTube](https://www.youtube.com). -->
+
+This checkbox is similar to the **Scrolling performance issues** checkbox in the **Rendering** tool, which highlights the slow rects on the page directly (in yellow).  See [Find scroll performance issues in realtime](../evaluate-performance/reference.md#find-scroll-performance-issues-in-realtime) in _Performance features reference_.  Both checkboxes are based on the same debugging info, but these two tools present this information differently.
+<!-- https://developer.chrome.com/docs/devtools/rendering/performance/#scrolling-performance-issues -->
+
+
+### Paints (checkbox)
+
+Renders the content from the webpage (color or image file) onto the elements.
+
+
+<!-- ===== -->
+### Layers expander tree
+
+Expand this tree to display the list of composited layers. Click on a layer to review detailed information about it in the Details info pane.
+
+
+<!-- ===== -->
+### Details info pane
+
+#### Size
+
+The width and then the height of the selected composited layer, along with the location of the upper left of the layer relative to the upper left of the page viewport.  For example, "1034 x 28055 (at 0, 0)".
+
+#### Compositing Reasons
+
+Reasons why the browser rendering engine created the layer.  For example: "Secondary layer, to house contents that can be scrolled."
+
+#### Memory estimate
+
+The memory consumed for the selected layer.  For example: "116 MB".
+
+#### Paint count
+
+How many times the selected layer was painted by the rendering engine.
+
+<!-- #### Slow scroll regions -->
+
+<!-- need desc -->
+
+<!-- #### Sticky position constraint -->
+
+<!-- need desc -->
 
 
 <!-- ====================================================================== -->
-## Composited layers
+## The Z-index tab
 
-:::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited layers pane." lightbox="../media/experiments-layers.msft.png":::
+The **Z-index** tab contains some of the same features as the **DOM** tab, but adds z-index labels on the 3D canvas.
 
-The **Composited Layers** pane opens the elements of the **Layers** tool without changing contexts.  You can still access the details of each of the layers and have the **Slow scroll rects** and **Paint**.
+![The Z-index tab.](index-images/z-index-tab.png)
+
+
+For background information, see [MDN > CSS Reference > z-index](https://developer.mozilla.org/docs/Web/CSS/z-index).
+
+### Show Elements type (section)
+
+The **Show Elements type** section in the **Z-index** tab controls which elements of the page are shown in the 3D canvas.
+
+*  The **Show all** radio button shows all elements of the page.  This view is the quickest way to display all the page elements after changing the other 3D display settings.
+
+*  The **Show only stacking contexts** radio button only shows the page elements which are relevant to z-index stacking.  This view removes elements that don't participate in a stacking context, and flattens the DOM to produce easier navigation in the 3D canvas.
+
+The **Show z-index labels** checkbox shows or hides the z-index labels in the 3D canvas.  By default, this checkbox is selected.
+
+
+### Color type (section)
+
+In the **Z-index** tab, you can choose from the following color schemes to visualize the DOM in the 3D canvas:
+
+*  **Purple to White** radio button - The 3D canvas shows elements ranging from purple to white.
+
+*  **Use background color** radio button - The 3D canvas shows elements rendered using the background color that's defined for each element.
+
+These radio buttons allow you to toggle through the options and pick the color type.  The color type is either most appropriate for your project or one that you like the most.  The z-index labels add visual information on the 3D canvas, so per user feedback, there are fewer color options in the **Z-index** tab than in the **DOM** tab.
+
+
+<!-- ====================================================================== -->
+## The DOM tab
+
+The **DOM** tab provides a general debugging view, rather than focusing on z-index.  The DOM is stacked more closely and cleanly than in the **Z-index** tab, because there aren't z-index context labels on the 3D canvas.
+
+![The DOM tab.](index-images/dom-tab.png)
+
+
+### Nesting level for page (slider)
+
+The number next to the slider indicates the number of layers for the document.  Dragging the slider to the left causes the outermost layers to peel away until you are left with a nesting level set to `1`, which displays only the furthest-back element in the DOM.  To remove some of the clutter, drag the slider.  It helps you get a closer look at what is happening in the lower levels.
+
+#### Reset button
+
+Resets the **Nesting level for page** slider to the default value for the page.
+
+
+### Color type (section)
+
+In the **DOM** tab, You can choose from the following color schemes visualize the DOM in the 3D canvas:
+
+*  **Purple to White** radio button - The 3D canvas shows elements ranging from purple to white.
+
+*  **Blue to Yellow** radio button - The 3D canvas shows elements ranging from blue to yellow.
+
+*  **Rainbow** radio button - The 3D canvas shows elements as purple, blue, green, yellow, orange, and red.
+
+*  **Use screen texture** radio button - Renders the content from the webpage (color or image file) onto the elements.
+
+*  **Use background color** radio button - The 3D canvas shows elements rendered using the background color that's defined for each element.
+
+
+
+<!-- ====================================================================== -->
+## Toolbar above the 3D canvas
+
+
+### Retake snapshot (button)
+
+Click the **Retake snapshot** (![The 'Retake snapshot' icon.](index-images/retake-snapshot-icon.png)) button to re-load the DOM to match the latest webpage viewport.  For example, after you make the viewport narrower or when you switch to a Device Emulation view, per [Emulate mobile devices (Device Emulation)](../device-mode/index.md).
+
+When the **Composited Layers** tab is selected, this button is omitted, because retaking the snapshot happens automatically when you resize the viewport.
+
+
+### Reset view (button)
+
+Click the **Reset view** button (![The 'Reset view' icon.](index-images/reset-view-icon.png)) to reset the panning and rotation of the page.
+
+
+<!-- instance 2 of this section, keep synd'c -->
+### Pan view (button)
+
+To shift the page left, right, up, or down, click the **Pan view** (![The 'Pan view' icon.](index-images/pan-view-icon.png)) button and then drag the page on the 3D canvas in the desired direction with your mouse.
+
+<!-- no right-click
+To pan around the DOM, right-click and drag in the direction you want the DOM to move.
+-->
+
+
+<!-- instance 2 of this section, keep synd'c -->
+### Rotate view (button)
+
+To rotate the page by using the mouse, click the **Rotate view** (![The 'Rotate view' icon.](index-images/rotate-view-icon.png)) button and then drag the page on the 3D canvas in the desired angle with your mouse.
+
+To rotate the page by using the keyboard, click in the 3D canvas to put focus on it so that a black border appears, and then press the arrow keys.
+*  To rotate the page horizontally, press the `left arrow` and `right arrow` keys.
+*  To rotate the page vertically, press the `up arrow` and `down arrow` keys.
+
+The keys rotate the page, regardless of whether the **Pan view** or **Rotate view** button is selected in the toolbar.
+
+
+### Isolate selected element (button and section)
+
+Instead of showing all the page's DOM elements in the 3D canvas, you can focus on just displaying a portion of the DOM.
+
+Select an element of the webpage in the 3D canvas, and then click the **Isolate selected element** button.  The 3D canvas displays the selected element and the element's parents or children, without displaying the rest of the page elements.
+
+Use this button to display the element that you selected on the 3D canvas, while reducing the clutter that complex webpages can create in the 3D canvas.
+
+
+#### Include parents (checkbox)
+
+The **Include parents** checkbox controls whether the parent elements of a selected page element are displayed in the 3D canvas.  The **Include parents** checkbox is turned on by default.  When this checkbox is selected, to display an element and any of its parent elements on the 3D canvas, select an element in the 3D canvas or in the **Elements** tool, and then click the **Isolate selected element** button.
+
+This checkbox is shown when the **Z-index** or **DOM** tab is selected.
+
+
+#### Include children (checkbox)
+
+The **Include children** checkbox is only shown when the **DOM** tab is selected.
+
+
+<!-- select select -->
+To display only the DOM element that you selected, along with and parents and children of the element:
+*  Select the **Include parents** and **Include children** checkboxes, and then click the **Isolate selected element** button.  This is the default.
+
+<!-- select clear -->
+To display only the DOM element that you selected, along with the element's parent elements, but not the element's child elements:
+*  Select the **Include parents** checkbox, clear the **Include children** checkbox, and then click the **Isolate selected element** button.
+
+<!-- clear select -->
+To display only the DOM element that you selected, along with the element's child elements, but not the element's parent elements:
+*  Clear the **Include parents** checkbox, select the **Include children** checkbox, and then click the **Isolate selected element** button.
+
+<!-- clear clear -->
+To display only the DOM element that you selected, without its parent or child elements:
+*  Clear the **Include parents** and the **Include children** checkbox, and then click the **Isolate selected element** button.
+
+
+<!-- ====================================================================== -->
+## Movement controls in lower right
+
+![Lower right controls.](index-images/lower-right-controls.png)
+
+The controls in the lower right of the 3D canvas work the same, regardless of which tab you select.
+
+*  Zoom slider - This zooms the page in or out, same as the mouse scroll wheel, or dragging two fingers across the touchpad.
+
+*  Up button - Moves the page up, relative to the page's coordinate system.
+
+*  Down button - Moves the page down, relative to the page's coordinate system.
+
+*  Left button - Moves the page right, relative to the page's coordinate system.
+
+*  Right button - Moves the page left, relative to the page's coordinate system.
+
+
+<!-- ====================================================================== -->
+## See also
+
+* [MDN > Web APIs > Document Object Model (DOM)](https://developer.mozilla.org/docs/Web/API/Document_Object_Model)
+* [MDN > CSS Reference > z-index](https://developer.mozilla.org/docs/Web/CSS/z-index)
