@@ -878,42 +878,6 @@ Learn how to handle basic authentication in WebView2 controls.
 
 
 <!-- ====================================================================== -->
-## Environment setup
-
-Learn how to specify settings before WebView2 controls are created.
-<!-- what kind of settings?  why? -->
-
-<!-- selling point / value prop: easy configuration of WebView2 apps
-
-*  What is "envir setup" - of the control?  after I add the WebView2 control to the page?  What do we mean here by "envir"?
-*  Why care about it
-
--->
-
-<!-- link to a doc about this if avail.  eg Auth has a doc to link to. -->
-<!--
-See also:
-* []()
--->
-
-##### [C#](#tab/c-sharp)
-
-* [CoreWebView2.Environment Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.environment)
-* [CoreWebView2Environment.BrowserVersionString Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserversionstring)
-* [CoreWebView2Environment.NewBrowserVersionAvailable Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.newbrowserversionavailable)
-* [CoreWebView2EnvironmentOptions Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions)
-
-##### [C++](#tab/cpp)
-
-* [ICoreWebView2_2::Environment property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_environment)<!--no put-->
-* [ICoreWebView2Environment::BrowserVersionString property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#get_browserversionstring)<!--no put-->
-* [ICoreWebView2Environment::NewBrowserVersionAvailable event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#add_newbrowserversionavailable), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment#remove_newbrowserversionavailable)
-* [ICoreWebView2EnvironmentOptions interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions)
-
----
-
-
-<!-- ====================================================================== -->
 ## Rendering WebView2 in non-framework apps
 
 <!-- keep old intro?:
