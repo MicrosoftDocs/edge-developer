@@ -175,7 +175,7 @@ See also:
 <!-- ------------------------------ -->
 #### Script dialogs
 
-You can use this to manage different JavaScript dialogs to suppress or replace them with custom dialogs.
+In WebView2 you can manage different JavaScript dialogs to suppress or replace them with custom dialogs.
 
 ##### [C#](#tab/c-sharp)
 
@@ -502,57 +502,83 @@ See also:
 
 ##### [C#](#tab/c-sharp)
 
-Browser features:<!-- moved from Rendering section -->
 * [CoreWebView2Settings.IsSwipeNavigationEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isswipenavigationenabled)
 
 ##### [C++](#tab/cpp)
 
-Browser features:<!-- moved from Rendering section -->
 * [ICoreWebView2Settings6::IsSwipeNavigationEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)
 
 ---
 
-<!-- ====================================================================== -->
-## Browser features, additional
 
-<!-- TODO: dissolve this section -->
+<!-- ------------------------------ -->
+#### Document title
+
+In WebView2 you can find out when the title for the current top-level document has changed.
 
 ##### [C#](#tab/c-sharp)
 
-Title:<!--TODO: goes in Browser Features -->
 * [CoreWebView2.DocumentTitle Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitle)
 * [CoreWebView2.DocumentTitleChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.documenttitlechanged)
 
-Fullscreen:<!--TODO: goes in Browser Features -->
+##### [C++](#tab/cpp)
+
+* [ICoreWebView2::DocumentTitle property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
+* [ICoreWebView2::DocumentTitleChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Fullscreen
+
+In WebView2 you can find out when when an HTML element enters or leaves fullscreen.
+
+##### [C#](#tab/c-sharp)
+
 * [CoreWebView2.ContainsFullScreenElement Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelement)
 * [CoreWebView2.ContainsFullScreenElementChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.containsfullscreenelementchanged)
 
-New window:<!--TODO: goes near Browser Features -->
+##### [C++](#tab/cpp)
+
+* [ICoreWebView2::ContainsFullScreenElement property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_containsfullscreenelement)<!--no put-->
+* [ICoreWebView2::ContainsFullScreenElementChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_containsfullscreenelementchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_containsfullscreenelementchanged)
+
+---
+
+
+<!-- ------------------------------ -->
+#### New window
+
+WebView2 provides functionality to handle the JavaScript function `window.open()`.
+
+##### [C#](#tab/c-sharp)
+
 * [CoreWebView2.NewWindowRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.newwindowrequested)
    * [CoreWebView2NewWindowRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2newwindowrequestedeventargs)
    * [CoreWebView2WindowFeatures Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2windowfeatures)
 
-Close:<!--TODO: goes near Browser Features, or Rendering WebView2 in non-framework apps -->
+##### [C++](#tab/cpp)
+
+* [ICoreWebView2::NewWindowRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)
+   * [ICoreWebView2NewWindowRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs)
+   * [ICoreWebView2WindowFeatures interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures)
+
+---
+
+
+<!-- ------------------------------ -->
+#### Close
+
+WebView2 provides functionality to handle the JavaScript function `window.close()`.
+
+##### [C#](#tab/c-sharp)
+
 * [CoreWebView2Controller.Close Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.close)
 * [CoreWebView2.WindowCloseRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.windowcloserequested)
 
 ##### [C++](#tab/cpp)
 
-Title:<!--TODO: goes in Browser Features -->
-* [ICoreWebView2::DocumentTitle property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_documenttitle)<!--no put-->
-* [ICoreWebView2::DocumentTitleChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_documenttitlechanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_documenttitlechanged)
-
-Fullscreen:<!--TODO: goes in Browser Features -->
-* [ICoreWebView2::ContainsFullScreenElement property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_containsfullscreenelement)<!--no put-->
-* [ICoreWebView2::ContainsFullScreenElementChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_containsfullscreenelementchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_containsfullscreenelementchanged)
-
-New window:<!--TODO: goes near Browser Features -->
-* [ICoreWebView2::NewWindowRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_newwindowrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_newwindowrequested)
-   * [ICoreWebView2NewWindowRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2newwindowrequestedeventargs)
-   * [ICoreWebView2WindowFeatures interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2windowfeatures)
-<!-- /moved from Rendering section -->
-
-Close:<!--TODO: goes near Browser Features, or Rendering WebView2 in non-framework apps -->
 * [ICoreWebView2Controller::Close method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#close)
 * [ICoreWebView2::WindowCloseRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_windowcloserequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_windowcloserequested)
 
