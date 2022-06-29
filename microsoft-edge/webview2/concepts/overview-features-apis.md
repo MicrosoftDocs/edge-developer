@@ -29,7 +29,7 @@ This article provides:
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
 | [Browser features](#browser-features) | Toggle and change these inherited features that are inherited from the browser and are available in a WebView2 control. |
 | [Process management](#process-management) | Get information about running WebView2 processes, exiting processes, and failed processes, so your app can take action accordingly. |
-| [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2. |
+| [Navigate to pages and manage loaded content](#navigate-to-pages-and-manage-loaded-content) | In the WebView2 control you can manage navigation to web pages and content loaded in the web pages. |
 | [iFrames](#iframes) | Embed other webpages into your own webpage.  Detect when embedded webpages are created, detect when embedded webpages are navigating, and optionally bypass x-frame options. |
 | [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
 | [Environment setup](#environment-setup) | Specify settings before WebView2 controls are created. |
