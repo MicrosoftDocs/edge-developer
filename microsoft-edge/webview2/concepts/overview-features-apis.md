@@ -568,7 +568,7 @@ WebView2 provides functionality to handle the JavaScript function `window.open()
 
 
 <!-- ------------------------------ -->
-#### Close
+#### Close window
 
 WebView2 provides functionality to handle the JavaScript function `window.close()`.
 
