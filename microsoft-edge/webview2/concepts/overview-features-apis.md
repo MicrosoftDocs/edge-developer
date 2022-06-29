@@ -6,17 +6,17 @@ ms.author: msedgedevrel
 ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-ms.date: 06/24/2022
+ms.date: 06/29/2022
 ---
 # Overview of WebView2 features and APIs
+
+When you add WebView2 to your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
 
 This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
 *  Concepts about what you can do with the WebView2 APIs.
 *  High-level description of WebView2 technology for app developers.
-*  Better fundamentals + understanding of WebView2 technology.
-
-<!-- Audience: Read this if you're an app developer who would like to know about the WebView2 technology and whether WebView2 is for you. -->
+*  Better fundamentals and understanding of WebView2 technology.
 
 
 <!-- ====================================================================== -->
@@ -181,13 +181,11 @@ In WebView2 you can manage different JavaScript dialogs to suppress or replace t
 
 * [CoreWebView2.ScriptDialogOpening Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening)
    * [CoreWebView2ScriptDialogOpeningEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogopeningeventargs)
-* [CoreWebView2ScriptDialogKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2scriptdialogkind)
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2::ScriptDialogOpening event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_scriptdialogopening), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_scriptdialogopening)
    * [ICoreWebView2ScriptDialogOpeningEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2scriptdialogopeningeventargs)
-* [COREWEBVIEW2_SCRIPT_DIALOG_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_script_dialog_kind)
 
 ---
 
@@ -213,14 +211,12 @@ See also:
 * [CoreWebView2.PrintToPdfAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync)
 * [CoreWebView2Environment.CreatePrintSettings Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createprintsettings)
 * [CoreWebView2PrintSettings Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2printsettings)
-   * [CoreWebView2PrintOrientation Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2printorientation)
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2_7::PrintToPdf method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_7#printtopdf)
 * [ICoreWebView2Environment6::CreatePrintSettings method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment6#createprintsettings)
 * [ICoreWebView2PrintSettings interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2printsettings)
-   * [COREWEBVIEW2_PRINT_ORIENTATION enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_print_orientation)
 
 ---
 
@@ -241,7 +237,6 @@ See also:
 * [CoreWebView2CookieList Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookielist)
 * [CoreWebView2.CookieManager Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.cookiemanager#microsoft-web-webview2-core-corewebview2-cookiemanager)
    * [CoreWebView2CookieManager Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookiemanager)
-* [CoreWebView2CookieSameSiteKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2cookiesamesitekind)
 
 ##### [C++](#tab/cpp)
 
@@ -249,7 +244,6 @@ See also:
 * [ICoreWebView2CookieList interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2cookielist)
 * [ICoreWebView2_2.CookieManager property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#get_cookiemanager)
    * [ICoreWebView2CookieManager interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2cookiemanager)
-* [COREWEBVIEW2_COOKIE_SAME_SITE_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_cookie_same_site_kind)
 
 ---
 
@@ -270,12 +264,10 @@ See also:
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2.CapturePreviewAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.capturepreviewasync)
-* [CoreWebView2CapturePreviewImageFormat Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2capturepreviewimageformat)
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2.CapturePreview method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#capturepreview)
-* [COREWEBVIEW2_CAPTURE_PREVIEW_IMAGE_FORMAT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_capture_preview_image_format)
 
 ---
 
@@ -301,15 +293,12 @@ General:
 
 Modify Default Experience:
 * [CoreWebView2.DefaultDownloadDialogCornerAlignment Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.defaultdownloaddialogcorneralignment)
-   * [CoreWebView2DefaultDownloadDialogCornerAlignment Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2defaultdownloaddialogcorneralignment)
 * [CoreWebView2.DefaultDownloadDialogMargin Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.defaultdownloaddialogmargin)
 
 Custom Download Experience:
 * [CoreWebView2.DownloadStarting Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.downloadstarting)
    * [CoreWebView2DownloadStartingEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadstartingeventargs)
 * [CoreWebView2DownloadOperation Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadoperation)
-* [CoreWebView2DownloadInterruptReason Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadinterruptreason)<!--todo: which of the above methods or properties use this enum?-->
-* [CoreWebView2DownloadState Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2downloadstate)
 
 
 ##### [C++](#tab/cpp)
@@ -322,15 +311,12 @@ General:
 
 Modify Default Experience:
 * [ICoreWebView2_9::DefaultDownloadDialogCornerAlignment property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogcorneralignment), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogcorneralignment)
-   * [COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_default_download_dialog_corner_alignment)
 * [ICoreWebView2_9::DefaultDownloadDialogMargin property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogmargin), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogmargin)
 
 Custom Download Experience:
 * [ICoreWebView2_4::DownloadStarting event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_downloadstarting), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_downloadstarting)
    * [ICoreWebView2DownloadStartingEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2downloadstartingeventargs)
 * [ICoreWebView2DownloadOperation interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2downloadoperation)
-* [COREWEBVIEW2_DOWNLOAD_INTERRUPT_REASON enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_download_interrupt_reason)<!--todo: which of the above methods or properties use this enum?-->
-* [COREWEBVIEW2_DOWNLOAD_STATE enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_download_state)<!--todo: which of the above methods or properties use this enum?-->
 
 ---
 
@@ -350,15 +336,11 @@ See also:
 
 * [CoreWebView2.PermissionRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.permissionrequested)
    * [CoreWebView2PermissionRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2permissionrequestedeventargs)
-* [CoreWebView2PermissionKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2permissionkind)
-* [CoreWebView2PermissionState Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2permissionstate)
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2::PermissionRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_permissionrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_permissionrequested)
    * [ICoreWebView2PermissionRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs)
-* [COREWEBVIEW2_PERMISSION_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_permission_kind)
-* [COREWEBVIEW2_PERMISSION_STATE enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_permission_state)
 
 ---
 
@@ -605,18 +587,14 @@ Info:
 * [CoreWebView2Environment.GetProcessInfos Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.getprocessinfos)
 * [CoreWebView2Environment.ProcessInfosChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.processinfoschanged)
 * [CoreWebView2ProcessInfo Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processinfo)
-   * [CoreWebView2ProcessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processkind)
 
 Exited:
 * [CoreWebView2Environment.BrowserProcessExited Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.browserprocessexited)
    * [CoreWebView2BrowserProcessExitedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitedeventargs)
-   * [CoreWebView2BrowserProcessExitKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2browserprocessexitkind)
 
 Failed:
 * [CoreWebView2.ProcessFailed Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.processfailed)
    * [CoreWebView2ProcessFailedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedeventargs)
-   * [CoreWebView2ProcessFailedKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedkind)
-   * [CoreWebView2ProcessFailedReason Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2processfailedreason)
 
 ##### [C++](#tab/cpp)
 
@@ -625,19 +603,15 @@ Info:
 * [ICoreWebView2Environment8::GetProcessInfos method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment8#getprocessinfos)
 * [ICoreWebView2Environment8::ProcessInfosChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment8#add_processinfoschanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment8#remove_processinfoschanged)
 * [ICoreWebView2ProcessInfo interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2processinfo)
-   * [COREWEBVIEW2_PROCESS_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_process_kind)
 * [ICoreWebView2ProcessInfoCollection interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2processinfocollection)
 
 Exited:
 * [ICoreWebView2Environment5::BrowserProcessExited event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#add_browserprocessexited), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment5#remove_browserprocessexited)
    * [ICoreWebView2BrowserProcessExitedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2browserprocessexitedeventargs)
-   * [COREWEBVIEW2_BROWSER_PROCESS_EXIT_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_browser_process_exit_kind)
 
 Failed:
 * [ICoreWebView2::ProcessFailed event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_processfailed), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_processfailed)
    * [ICoreWebView2ProcessFailedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2processfailedeventargs)
-   * [COREWEBVIEW2_PROCESS_FAILED_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_process_failed_kind)
-   * [COREWEBVIEW2_PROCESS_FAILED_REASON enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_process_failed_reason)
 
 ---
 
@@ -662,11 +636,9 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [CoreWebView2.Navigate Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigate)
 * [CoreWebView2.NavigateToString Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatetostring)
 * [CoreWebView2.NavigateWithWebResourceRequest Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigatewithwebresourcerequest)
-   * [CoreWebView2WebResourceContext Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2webresourcecontext)<!-- used by https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.addwebresourcerequestedfilter, and this is the type of CoreWebView2WebResourceRequestedEventArgs Class prop.  TODO: move this link to below that event args?-->
 * [CoreWebView2.Stop Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.stop)
 * [CoreWebView2.Reload Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
-   * [CoreWebView2HostResourceAccessKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2hostresourceaccesskind)
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clearvirtualhostnametofoldermapping)
 
 ##### [C++](#tab/cpp)
@@ -674,11 +646,9 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [ICoreWebView2::Navigate method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#navigate)
 * [ICoreWebView2::NavigateToString method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#navigatetostring)
 * [ICoreWebView2_2::NavigateWithWebResourceRequest method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_2#navigatewithwebresourcerequest)
-   * [COREWEBVIEW2_WEB_RESOURCE_CONTEXT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_web_resource_context)<!-- used by addwebresourcerequestedfilter, and this is the type of CoreWebView2WebResourceRequestedEventArgs Class prop.  TODO: move this link to below that event args?-->
 * [ICoreWebView2::Stop method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#stop)
 * [ICoreWebView2::Reload method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
 * [ICoreWebView2_3::SetVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)
-   * [COREWEBVIEW2_HOST_RESOURCE_ACCESS_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_host_resource_access_kind)
 * [ICoreWebView2_3::ClearVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#clearvirtualhostnametofoldermapping)
 
 ---
@@ -805,14 +775,12 @@ See also:
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2ClientCertificate Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificate)
-   * [CoreWebView2ClientCertificateKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificatekind)
 * [CoreWebView2.ClientCertificateRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clientcertificaterequested)
    * [CoreWebView2ClientCertificateRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2clientcertificaterequestedeventargs)
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2ClientCertificate interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificate)
-   * [COREWEBVIEW2_CLIENT_CERTIFICATE_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_client_certificate_kind)
    * [ICoreWebView2ClientCertificateCollection interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection)<!--n/a for c#-->
 * [ICoreWebView2_5::ClientCertificateRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_5#add_clientcertificaterequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_5#remove_clientcertificaterequested)
    * [ICoreWebView2ClientCertificateRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventargs)
@@ -961,7 +929,6 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2Controller.BoundsMode Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.boundsmode)
-   * [CoreWebView2BoundsMode Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2boundsmode)
 * [CoreWebView2Controller.RasterizationScale Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscale)
 * [CoreWebview2Controller.RasterizationScaleChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.rasterizationscalechanged)
 * [CoreWebview2Controller.ShouldDetectMonitorScaleChanges Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.shoulddetectmonitorscalechanges)
@@ -969,7 +936,6 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2Controller3::BoundsMode property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_boundsmode), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_boundsmode)
-   * [COREWEBVIEW2_BOUNDS_MODE enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_bounds_mode)
 * [ICoreWebView2Controller3::RasterizationScale property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_rasterizationscale), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_rasterizationscale)
 * [ICoreWebView2Controller3::RasterizationScaleChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#add_rasterizationscalechanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#remove_rasterizationscalechanged)
 * [ICoreWebView2Controller3::ShouldDetectMonitorScaleChanges property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#get_shoulddetectmonitorscalechanges), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller3#put_shoulddetectmonitorscalechanges)
@@ -985,7 +951,6 @@ WebView2 raises events to let the app know when it gains and loses focus. For ta
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebview2Controller.MoveFocus Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocus)
-   * [CoreWebView2MoveFocusReason Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusreason)
 * [CoreWebview2Controller.MoveFocusRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.movefocusrequested)
    * [CoreWebView2MoveFocusRequestedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2movefocusrequestedeventargs)
 * [CoreWebview2Controller.GotFocus Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.gotfocus)
@@ -994,7 +959,6 @@ WebView2 raises events to let the app know when it gains and loses focus. For ta
 ##### [C++](#tab/cpp)
 
 * [ICoreWebview2Controller::MoveFocus method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#movefocus)
-   * [COREWEBVIEW2_MOVE_FOCUS_REASON enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_move_focus_reason)
 * [ICoreWebview2Controller::MoveFocusRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_movefocusrequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_movefocusrequested)
    * [ICoreWebView2MoveFocusRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2movefocusrequestedeventargs)
 * [ICoreWebview2Controller::GotFocus event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_gotfocus), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_gotfocus)
@@ -1031,7 +995,6 @@ When WebView2 has focus, it directly receives input from the user. An app may wa
 * [CoreWebView2Settings.AreBrowserAcceleratorKeysEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.arebrowseracceleratorkeysenabled)
 * [CoreWebView2Controller.AcceleratorKeyPressed Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.acceleratorkeypressed)
    * [CoreWebView2AcceleratorKeyPressedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2acceleratorkeypressedeventargs)
-   * [CoreWebView2KeyEventKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2keyeventkind)
    * [CoreWebView2PhysicalKeyStatus Struct](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2physicalkeystatus)
 
 ##### [C++](#tab/cpp)
@@ -1039,7 +1002,6 @@ When WebView2 has focus, it directly receives input from the user. An app may wa
 * [ICoreWebView2Settings3::AreBrowserAcceleratorKeysEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings3#get_arebrowseracceleratorkeysenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings3#put_arebrowseracceleratorkeysenabled)
 * [ICoreWebView2Controller::AcceleratorKeyPressed event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#add_acceleratorkeypressed), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#remove_acceleratorkeypressed)
    * [ICoreWebView2AcceleratorKeyPressedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2acceleratorkeypressedeventargs)
-   * [COREWEBVIEW2_KEY_EVENT_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_key_event_kind)
    * [COREWEBVIEW2_PHYSICAL_KEY_STATUS struct](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_physical_key_status)
 
 ---
@@ -1113,10 +1075,7 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 * [CoreWebView2CompositionController.CursorChanged Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.cursorchanged)
 * [CoreWebView2CompositionController.SystemCursorId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.systemcursorid)
 * [CoreWebView2CompositionController.SendMouseInput Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendmouseinput)
-   * [CoreWebView2MouseEventKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventkind)
-   * [CoreWebView2MouseEventVirtualKeys Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2mouseeventvirtualkeys)
 * [CoreWebView2CompositionController.SendPointerInput Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2compositioncontroller.sendpointerinput)
-   * [CoreWebView2PointerEventKind Enum](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2pointereventkind)
 * [CoreWebView2Environment.CreateCoreWebView2PointerInfo Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2pointerinfo)
    * [CoreWebView2PointerInfo Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2pointerinfo)
 
@@ -1126,10 +1085,7 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 * [ICoreWebView2CompositionController::CursorChanged event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#add_cursorchanged), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#remove_cursorchanged)
 * [ICoreWebView2CompositionController::SystemCursorId property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#get_systemcursorid)<!--no put-->
 * [ICoreWebView2CompositionController::SendMouseInput method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendmouseinput)
-   * [COREWEBVIEW2_MOUSE_EVENT_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_mouse_event_kind)
-   * [COREWEBVIEW2_MOUSE_EVENT_VIRTUAL_KEYS enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_mouse_event_virtual_keys)
 * [ICoreWebView2CompositionController::SendPointerInput method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller#sendpointerinput)
-   * [COREWEBVIEW2_POINTER_EVENT_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_pointer_event_kind)
 * [ICoreWebView2Environment3::CreateCoreWebView2PointerInfo method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment3#createcorewebview2pointerinfo)
    * [ICoreWebView2PointerInfo interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2pointerinfo)
 
