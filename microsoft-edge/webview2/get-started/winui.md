@@ -125,7 +125,7 @@ Edit the `MainWindow.xaml` and `MainWindow.xaml.cs` files to a WebView2 control 
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     ```
     
-   Make sure your code in `MainWindow.xaml` is similar to the following:
+    Make sure your code in `MainWindow.xaml` is similar to the following:
 
     ```xml
     <Window
