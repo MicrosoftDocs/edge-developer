@@ -177,9 +177,6 @@ See also:
 
 You can use this to manage different JavaScript dialogs to suppress or replace them with custom dialogs.
 
-For more information, see:
-* Script dialogs<!--TODO: link avail?-->
-
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2.ScriptDialogOpening Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.scriptdialogopening)
