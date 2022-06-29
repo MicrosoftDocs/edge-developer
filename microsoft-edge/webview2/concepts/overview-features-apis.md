@@ -622,7 +622,7 @@ Failed:
 <!-- ====================================================================== -->
 ## Navigate to pages and manage loaded content
 
-These APIs support fundamental capabilities of WebView2 to manage loaded content in WebView2.
+In the WebView2 control you can manage navigation to web pages and content loaded in the web pages. 
 
 
 <!-- ------------------------------ -->
