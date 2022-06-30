@@ -91,7 +91,7 @@ There are various ways to start a new browser session in the extension:
 
 The extension will open a new browser as an embedded browser in Visual Studio Code. This `Devtools: Browser preview` tab can be moved anywhere within the editor. You can use it side by side with your source code or split the panes and have the browser preview below your code. 
 
-![Extension open in VS Code showing the browser preview below the source code and the DevTools to the right]()
+![Extension open in VS Code showing the browser preview below the source code and the DevTools to the right](media/browser-split-down.png)
 
 If you want to have an external browser window, you can change the default setting. Select **Settings** > **Headless mode** and uncheck the option to open the browser in headless mode.
 
