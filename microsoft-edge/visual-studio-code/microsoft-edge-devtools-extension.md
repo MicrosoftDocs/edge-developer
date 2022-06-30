@@ -16,6 +16,8 @@ Microsoft Edge DevTools extension
 
 The [Microsoft Edge DevTools extension for Visual Studio Code](https://aka.ms/devtools-for-code) lets you use the Microsoft Edge Browser and Developer Tools right from within Visual Studio Code.
 
+![Microsoft Edge Developer Tools and browser preview showing in VS Code](media/devtools-extension-v201.msft.png)
+
 Once installed, it allows you to: 
 
 * Get live analysis of problems in your source code.
@@ -72,9 +74,9 @@ You can use this extension in one of three modes:
 
 There are various ways to start a new browser session in the extension:
 
-1. You can open the context menu on any file in the file explorer and select `Open with Edge` and either choose `Open Browser` or `Open Browser with DevTools`.
+1. You can open the context menu on any html file in the file explorer and select `Open with Edge` and either choose `Open Browser` or `Open Browser with DevTools`.
     
-    ![Microsoft Edge DevTools for Visual Studio Code extension.](media/edge-devtools-for-vscode-extension-icon.png)
+    ![Opening the context menu on any html file in the file explorer shows options to open with Edge with or without DevTools](media/context-menu-open-in-code.msft.png)
 
 1. You can select the **Microsoft Edge Tools** icon in the **Activity Bar**.
     This lets you launch an instance of Edge or generate a `launch.json` file to automate the debugging workflow:
@@ -87,7 +89,11 @@ There are various ways to start a new browser session in the extension:
 
 1. You can open the browser as part of a [debugging session](#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)
 
-The extension will open a new browser as an embedded browser in Visual Studio Code. This `Devtools: Browser preview` tab can be moved anywhere within the editor. You can use it side by side with your source code or split the panes and have the browser preview below your code. If you want to have an external browser window, you can change the default setting. Select **Settings** > **Headless mode** and uncheck the option to open the browser in headless mode.
+The extension will open a new browser as an embedded browser in Visual Studio Code. This `Devtools: Browser preview` tab can be moved anywhere within the editor. You can use it side by side with your source code or split the panes and have the browser preview below your code. 
+
+![Extension open in VS Code showing the browser preview below the source code and the DevTools to the right]()
+
+If you want to have an external browser window, you can change the default setting. Select **Settings** > **Headless mode** and uncheck the option to open the browser in headless mode.
 
 ![To open a new browser window instead of using the embedded browser, select Settings > Headless mode.](media/edge-devtools-for-vscode-settings-headless.png)
 
