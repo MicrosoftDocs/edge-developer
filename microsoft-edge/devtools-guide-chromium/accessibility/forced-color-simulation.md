@@ -1,6 +1,6 @@
 ---
 description: Displaying the current webpage in high contrast mode (CSS Forced Color).
-title: High Contrast simulation
+title: Simulate High Contrast Mode
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.date: 10/26/2021
@@ -39,11 +39,11 @@ To simulate what your web product looks like in High Contrast mode:
 
 1.  Open the **Rendering** tool.  For example, click **Customize and control DevTools** (...), point to **More tools**, and then select **Rendering**.
 
-    :::image type="content" source="../media/getting-to-the-rendering-tools.msft.png" alt-text="Open the Rendering Tools." lightbox="../media/getting-to-the-rendering-tools.msft.png":::
+    ![Open the Rendering tool](../media/getting-to-the-rendering-tools.msft.png)
 
 1.  In **Rendering**, select the dropdown list in **Emulate CSS media feature forced-colors**.<!-- not found in v97 -->
 
-    :::image type="content" source="../media/accessibility-forced-colors-rendering-dropdown.msft.png" alt-text="The forced-colors menu on the Rendering drawer." lightbox="../media/accessibility-forced-colors-rendering-dropdown.msft.png":::
+    ![The forced-colors menu on the Rendering tool](../media/accessibility-forced-colors-rendering-dropdown.msft.png)
 
 1.  Choose either `No emulation` or `forced-colors: active`.
 
@@ -51,11 +51,11 @@ To simulate what your web product looks like in High Contrast mode:
 
 Displaying a web site without high-contrast simulation:
 
-:::image type="content" source="../media/accessibility-forced-colors-rendering-no-modification.msft.png" alt-text="Displaying a web site without high-contrast simulation." lightbox="../media/accessibility-forced-colors-rendering-no-modification.msft.png":::
+![Displaying a web site without high-contrast simulation](../media/accessibility-forced-colors-rendering-no-modification.msft.png)
 
 Displaying a web site with high-contrast simulation:
 
-:::image type="content" source="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png" alt-text="Displaying a web site with high-contrast simulation." lightbox="../media/accessibility-forced-colors-rendering-dropdown-active.msft.png":::
+![Displaying a web site with high-contrast simulation](../media/accessibility-forced-colors-rendering-dropdown-active.msft.png)
 
 
 <!-- ====================================================================== -->
@@ -65,12 +65,12 @@ Displaying a web site with high-contrast simulation:
 
 1.  Type `forced-c`, select either **Emulate CSS forced-colors: active** or **Do not emulate CSS forced-colors**  and then select `Enter`.<!-- "forced" not found in v97 -->
 
-Turning on high-contrast simulation by using the command menu:
+Turning on high-contrast simulation by using the Command Menu:
 
-:::image type="content" source="../media/accessibility-forced-colors-command-menu-emulate.msft.png" alt-text="Turning on high-contrast simulation by using the command menu." lightbox="../media/accessibility-forced-colors-command-menu-emulate.msft.png":::
+![Turning on high-contrast simulation by using the Command Menu](../media/accessibility-forced-colors-command-menu-emulate.msft.png)
 
-Turning off high-contrast simulation by using the command menu:
+Turning off high-contrast simulation by using the Command Menu:
 
-:::image type="content" source="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png" alt-text="Turning off high-contrast simulation by using the command menu." lightbox="../media/accessibility-forced-colors-command-menu-donotemulate.msft.png":::
+![Turning off high-contrast simulation by using the Command Menu](../media/accessibility-forced-colors-command-menu-donotemulate.msft.png)
 
-View and change your CSS like for any other web page.  For more information, see [Get Started With Viewing And Changing CSS](../css/index.md).
+View and change your CSS like for any other web page.  For more information, see [Get started viewing and changing CSS](../css/index.md).
