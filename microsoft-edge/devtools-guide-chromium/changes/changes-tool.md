@@ -13,7 +13,7 @@ The **Changes tool** tracks any changes you've made to CSS or JavaScript in DevT
 
 Use the **Changes** tool to quickly display all your changes in order to re-apply those changes to the actual source files in your editor (in your Integrated Development Environment; IDE).
 
-![Changes tool](changes-tool-images/changes-tool-open.png)
+![The Changes tool showing three files that have been modified, and the modifications of the selected file](changes-tool-images/changes-tool-open.png)
 
 In DevTools, use any of the following ways to open the **Changes** tool.  The **Changes tool** is a **Drawer** tool; by default, it opens in the **Drawer**.
 
@@ -41,7 +41,7 @@ The **Changes** tool appears in the main toolbar or in the **Drawer**, depending
 
 Click **Customize and control DevTools** (`...`), point to **More tools**, and then select **Changes**:
 
-![Opening the Changes tool](changes-tool-images/changes-tool-via-overflow-menu.png)
+![Opening the 'More tools' menu by clicking the 'Customize and control DevTools' button](changes-tool-images/changes-tool-via-overflow-menu.png)
 
 
 <!-- ====================================================================== -->
