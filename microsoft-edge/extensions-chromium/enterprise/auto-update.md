@@ -1,12 +1,11 @@
 ---
-description: Learn about automatic updates to extensions in Microsoft Edge
 title: Automatically update extensions in Microsoft Edge
+description: Learn about automatic updates to extensions in Microsoft Edge.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 04/13/2021
 ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, partner center, developer
+ms.date: 04/13/2021
 ---
 <!-- Copyright A. W. Fuchs
 
@@ -34,7 +33,7 @@ Previously, non-store based extensions were supported.  Also, you updated the na
 Now, the Microsoft Edge Add-ons website hosts your extensions and you update your extension using the same mechanism as Microsoft Edge.  You don't control the update mechanism.  Be careful when you update extensions that have a dependency on native binaries.
 
 > [!NOTE]
-> This article does not apply to extensions that you publish using the [Partner Center][MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd] dashboard.  You may use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, navigate to [Update a Microsoft Edge extension][ExtensionsPublishUpdateExtension].
+> This article doesn't apply to extensions that you publish using the [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) dashboard.  You can use the dashboard to release updated versions to your users and to the Microsoft Edge Add-ons website.  For more information, see [Update a Microsoft Edge extension](../publish/update-extension.md).
 
 
 <!-- ====================================================================== -->
@@ -43,7 +42,7 @@ Now, the Microsoft Edge Add-ons website hosts your extensions and you update you
 Every few hours, Microsoft Edge checks whether each installed extension or app has an update URL.  To specify an update URL for your extension, use the `update_url` field in the manifest.  The `update_url` field in the manifest points to a location to complete an update check.  For each `update_url`, it sends requests for updated manifest XML files.  If the update manifest XML file lists a newer version than that installed, Microsoft Edge downloads and installs the newer version.  The same process works for manual updates, where the new `.crx` file must be signed with the same private key as the currently installed version.
 
 > [!NOTE]
-> In order to maintain user privacy, Microsoft Edge does not send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.
+> In order to maintain user privacy, Microsoft Edge doesn't send any `Cookie` headers with auto-update manifest requests, and ignores any `Set-Cookie` headers in the responses to those requests.
 
 
 <!-- ====================================================================== -->
@@ -79,17 +78,17 @@ The following table describes attributes of the updated manifest XML file.
 
 | Attribute | Details |
 |:--- |:--- |
-| `appid` | The extension ID is generated based on a hash of the public key.  To find the ID of an extension, open Microsoft Edge and navigate to `edge://extensions`. |
+| `appid` | The extension ID is generated based on a hash of the public key.  To find the ID of an extension, open Microsoft Edge and see `edge://extensions`. |
 | `codebase` | A URL to the `.crx` file. |
 | `version` | This attribute value is used by Microsoft Edge to determine whether it should download the `.crx` file specified by `codebase`.  It should match the value of `version` in the `manifest.json` file of the `.crx` file. |
 
-The update manifest XML file may contain information about multiple extensions by including multiple elements.
+The update manifest XML file can contain information about multiple extensions, by including multiple `<app>` elements.
 
 
 <!-- ====================================================================== -->
 ## Testing
 
-The default update check frequency is several hours.  To force an update, navigate to `edge://extensions` and choose the **Update extensions now** button.
+The default update check frequency is several hours.  To force an update, see `edge://extensions` and choose the **Update extensions now** button.
 
 
 <!-- ====================================================================== -->
@@ -100,9 +99,9 @@ The basic mechanism is simple.  To automatically update your extension:
 1.  Upload your static XML file on your web server, such as Apache.
 1.  Update the XML file as you release new versions of your extensions.
 
-Take advantage of the fact that some parameters added to the update manifest request indicate the extension `ID` and `version`.  You may use the same `update URL` for all your extensions instead of a static XML file.  To use the same `update URL` for all your extensions, point to a URL that runs dynamic server-side code to test the parameters.
+Take advantage of the fact that some parameters added to the update manifest request indicate the extension `ID` and `version`.  You can use the same `update URL` for all your extensions, instead of a static XML file.  To use the same `update URL` for all your extensions, point to a URL that runs dynamic server-side code that tests the parameters.
 
-The following example demonstrates the format of the request parameters of update URL.
+The following example demonstrates the format of the request parameters of update URL:
 
 ```url
 ?x={extension_data}
@@ -136,7 +135,7 @@ http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 http://contoso.com/extension_updates.php?x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4
 ```
 
-You may also list multiple extensions in a single request for each unique update URL.  The following example merges the previous requests into a single request.
+You can also list multiple extensions in a single request for each unique update URL.  The following example merges the previous requests into a single request:
 
 ```https
 http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%26v%3D1.1&x=id%3Dbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb%26v%3D0.4
@@ -145,15 +144,17 @@ http://contoso.com/extension_updates.php?x=id%3Daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 If you send a single request and the number of installed extensions that use the same update URL is too long, the update check issues more `GET` requests.  A `GET` request URL is too long if it's approximately 2000 characters.
 
 > [!NOTE]
-> In the future, a single `POST` request may replace multiple `GET` requests.  The `POST` request may contain the request parameters in the `POST` body.
+> In the future, instead of issuing multiple `GET` requests, a single `POST` request might be issued, with the request parameters in the `POST` body.
 
 
 <!-- ====================================================================== -->
 ## Advanced usage: minimum browser version
 
-As new APIs release for the Microsoft Edge extensions system, you may release an updated version of your extension or app that only works with newer Microsoft Edge versions.  When Microsoft Edge is automatically updated, it may take a few days before most of your users update to that new release.
+As new APIs are released for the Microsoft Edge extensions system, you might want to release an updated version of your extension or app that only works with newer versions of Microsoft Edge.  When Microsoft Edge is automatically updated, it can take a few days before most of your users update to that new release.
 
-To make sure that a specific update applies only to Microsoft Edge versions that are current or newer than a specific version, add the `prodversionmin` attribute in your update manifest.  In the following code snippet, the `prodversionmin` attribute value of `3.0.193.0` specifies that your app automatically updated to version `2.0` only when the user is running Microsoft Edge `3.0.193.0` or newer.
+To ensure that a specific update applies only to Microsoft Edge versions that are current or newer than a specific version, add the `prodversionmin` attribute in your update manifest.  
+
+For example, in the following code, the `prodversionmin` attribute value of `3.0.193.0` specifies that your app is automatically updated to version `2.0` only when the user is running Microsoft Edge `3.0.193.0` or newer:
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
@@ -164,18 +165,11 @@ To make sure that a specific update applies only to Microsoft Edge versions that
 </gupdate>
 ```
 
-<!-- links -->
-[ExtensionsPublishUpdateExtension]: ../publish/update-extension.md "Update a Microsoft Edge extension | Microsoft Docs"
 
-[MicrosoftPartnerDashboardMicrosoftedgePublicLoginRefDd]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"
-
+<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/docs/apps/autoupdate).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

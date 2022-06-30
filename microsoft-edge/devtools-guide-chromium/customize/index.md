@@ -1,12 +1,11 @@
 ---
-description: A list of ways to customize Microsoft Edge DevTools
-title: Customize Microsoft Edge DevTools
+title: Customize DevTools
+description: A list of ways to customize Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -21,7 +20,7 @@ keywords: microsoft edge, web development, f12 tools, devtools
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.  -->
-# Customize Microsoft Edge DevTools
+# Customize DevTools
 
 This page lists the ways to customize Microsoft Edge DevTools.
 
@@ -31,89 +30,73 @@ This page lists the ways to customize Microsoft Edge DevTools.
 
 **Settings** > **Preferences** contains many options for customizing DevTools.
 
-There are two ways to open Settings.
+To open Settings, in DevTools, click the **Settings** icon (![Settings icon.](../media/settings-icon-dark.msft.png)).  Or, while DevTools has focus, press `F1`.
 
-*   Select the **Settings** icon (![Settings icon](../media/settings-icon-dark.msft.png)).
-*   While DevTools has focus, select `F1`.
-
-:::image type="complex" source="../media/customize-settings-preferences.msft.png" alt-text="Settings" lightbox="../media/customize-settings-preferences.msft.png":::
-   **Settings**
-:::image-end:::
+![Settings.](../media/customize-settings-preferences.msft.png)
 
 
 <!-- ====================================================================== -->
 ## Drawer
 
-The **Drawer** is a second panel where you can choose which tools to display.
+In the **Drawer** toolbar in the bottom of DevTools, you can select which tools to display.
 
-To open (or close) the **Drawer**, select `Escape`.
+To open (or close) the **Drawer**, press `Escape`.
 
-:::image type="complex" source="../media/customize-drawer-open.msft.png" alt-text="The Drawer" lightbox="../media/customize-drawer-open.msft.png":::
-   The **Drawer**
-:::image-end:::
+![The Drawer.](../media/customize-drawer-open.msft.png)
 
 You can move tools between the main panel and the drawer.
 
-*   To move a tool from the drawer to the main panel, hover on a tool, open the contextual menu (right-click) and select **Move to top**.
+*  To move a tool from the drawer to the main panel, right-click a tool, and then select **Move to top**.
 
-    :::image type="complex" source="../media/move-from-drawer.msft.png" alt-text="Move tool from the Drawer to the main panel" lightbox="../media/move-from-drawer.msft.png":::
-       Move tool from the **Drawer** to the main panel
-    :::image-end:::
+   ![Moving a tool from the Drawer to the main toolbar.](../media/move-from-drawer.msft.png)
 
-*   To move a tool from the main panel to the drawer, hover on a tool, open the contextual menu (right-click) and select **Move to bottom**.
+*  To move a tool from the main panel to the drawer, right-click a tool, and then select **Move to bottom**.
 
-    :::image type="complex" source="../media/move-to-drawer.msft.png" alt-text="Move tool from the main panel to the Drawer" lightbox="../media/move-to-drawer.msft.png":::
-       Move tool from the main panel to the **Drawer**
-    :::image-end:::
+   ![Moving a tool from the main toolbar to the Drawer.](../media/move-to-drawer.msft.png)
 
 
 <!-- ====================================================================== -->
 ## Reorder tools
 
-Select and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.
+Click and drag a tool to change the ordering.  Your custom tool order persists across DevTools sessions.
 
-> [!NOTE]
-> By default, the **Network** tool is usually the fifth tab on the main toolbar.  In the following figure, the **Network** tool is being moved to become the first tab in the main toolbar.
+By default, the **Network** tool is usually the fifth tab on the main toolbar.  In the following figure, the **Network** tool is being moved to become the first tab in the main toolbar.
 
-:::image type="complex" source="../media/customize-network-first-position.msft.png" alt-text="Custom order of Devtools in a panel" lightbox="../media/customize-network-first-position.msft.png":::
-   Custom order of Devtools in a panel
-:::image-end:::
+![Custom order of DevTools in a toolbar.](../media/customize-network-first-position.msft.png)
 
 
 <!-- ====================================================================== -->
 ## Open and close tools
 
-To keep the DevTools interface streamlined, many of the tools aren't opened by default. To open a tool in the main panel or the **Drawer**, select the **More Tools** (![More Tools](../media/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
+To keep the DevTools interface streamlined, many of the tools aren't opened by default.  To open a tool in the main panel or the **Drawer**, click the **More Tools** (![More Tools.](../media/open-tab-icon.png)) button to the right of the tabs, and then select a tool from the list.
 
-:::image type="complex" source="../media/open-tool-in-main-panel-or-drawer.png" alt-text="The More Tools (+) button to open a new tool" lightbox="../media/open-tool-in-main-panel-or-drawer.png":::
-   The **More Tools** (`+`) button to open a new tool
-:::image-end:::
+![The More Tools (+) button to open a new tool](../media/open-tool-in-main-panel-or-drawer.png)
 
-To close a tool, select the **Close** (![Close Tool](../media/close-tab-icon.png)) button in the tool's tab.
+To close a tool, select the **Close** (![Close Tool.](../media/close-tab-icon.png)) button in the tool's tab.
 
-:::image type="complex" source="../media/close-tool-in-main-panel-or-drawer.png" alt-text="The tab's Close button" lightbox="../media/close-tool-in-main-panel-or-drawer.png":::
-   The tab's **Close** button
-:::image-end:::
+![The tab's Close button](../media/close-tool-in-main-panel-or-drawer.png)
 
 
 <!-- ====================================================================== -->
-## Change DevTools placement
+## Change where DevTools is docked in the browser
 
-Navigate to [Change DevTools placement (Undock, Dock to bottom, Dock to left)][DevToolsPlacement].
+See [Change DevTools placement (Undock, Dock to bottom, Dock to left)](placement.md).
 
-:::image type="complex" source="../media/customize-dev-tools-dock-side.msft.png" alt-text="Undocked DevTools" lightbox="../media/customize-dev-tools-dock-side.msft.png":::
-   Undocked DevTools
-:::image-end:::
+![Undocked DevTools.](../media/customize-dev-tools-dock-side.msft.png)
+
+
+<!-- ====================================================================== -->
+## Zoom DevTools in or out
+
+See [Zoom DevTools in or out](../overview.md#zoom-devtools-in-or-out) in _Overview of DevTools_.
 
 
 <!-- ====================================================================== -->
 ## Color themes
 
-Navigate to [Apply color themes to DevTools][Theme].
+See [Apply a color theme to DevTools](theme.md).
 
-:::image type="complex" source="./media/customize-theme-setting.png" alt-text="Selecting a different color theme" lightbox="./media/customize-theme-setting.png":::
-   Selecting a different color theme
-:::image-end:::
+![Selecting a different color theme.](./media/customize-theme-setting.png)
 
 
 <!-- ====================================================================== -->
@@ -121,28 +104,19 @@ Navigate to [Apply color themes to DevTools][Theme].
 
 To restore the default theme, placement, tools order, and any other customized settings, select **Settings** > **Preferences** > **Restore defaults and refresh**.
 
-:::image type="complex" source="../media/restore-default-settings.png" alt-text="Restoring default settings" lightbox="../media/restore-default-settings.png":::
-   Restoring default settings
-:::image-end:::
+![Restoring default settings.](../media/restore-default-settings.png)
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DevToolsPlacement]: ./placement.md "Change Microsoft Edge DevTools placement | Microsoft Docs"
-[Theme]: ./theme.md "Apply color themes to DevTools | Microsoft Docs"
-<!-- image links -->
-[ImageMoreIcon]: ../media/more-icon.msft.png
+## Customize keyboard shortcuts
+
+See [Customize keyboard shortcuts](../customize/shortcuts.md).
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/customize/index) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/customize/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

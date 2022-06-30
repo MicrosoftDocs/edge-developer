@@ -1,37 +1,44 @@
 ---
-description: API Reference for Microsoft Edge WebView2 SDK
-title: Microsoft Edge WebView2 API Reference
+title: WebView2 API Reference
+description: API Reference for Microsoft Edge WebView2 SDK.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/16/2021
-ms.topic: reference
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.technology: webview
-keywords: IWebView2, IWebView2WebView, webview2, webview, win32 apps, win32, edge, ICoreWebView2, ICoreWebView2Controller, browser control
+ms.date: 01/25/2022
 ---
-# Microsoft Edge WebView2 API Reference
+# WebView2 API Reference
 
-The Microsoft Edge WebView2 control enables you to host web content in your application using Chromium-based [Microsoft Edge](https://www.microsoftedgeinsider.com) as the rendering engine.  For more information, navigate to [Overview of Microsoft Edge WebView2](./index.md) and [Get started with WebView2](./get-started/win32.md).
-<!-- linking to a parent node of the TOC ("Get started with WebView2") isn't supported, so the above link goes to the first child article, but with link text of the parent TOC node. -->
+The Microsoft Edge WebView2 control enables you to host web content in your application using Chromium-based Microsoft Edge as the rendering engine.
+
+To download the preview channels of Microsoft Edge (Beta, Dev, and Canary), go to [Microsoft Edge Insider](https://www.microsoftedgeinsider.com).
+
+For more information, see [Overview of Microsoft Edge WebView2](index.md) and [Get started with WebView2](get-started/get-started.md).
 
 
 <!-- ====================================================================== -->
 ## Languages and Frameworks
-WebView2 is available for the following languages and frameworks.
-*   [Win32 C++](/microsoft-edge/webview2/reference/win32/index)
-*   .NET
-    *   [Core][DotnetMicrosoftWebWebView2CoreNamespace]
-    *   [WPF][DotnetMicrosoftWebWebView2WpfNamespace]
-    *   [Windows Forms][DotnetMicrosoftWebWebView2WinformsNamespace]
-*   WinRT
-    *   [Core][WinrtMicrosoftWebWebview2CoreNamespace]
-    *   [COM Interop][WinrtComInteropInterfaces]
+
+WebView2 is available for the following languages and frameworks:
+
+* [Win32 C++](/microsoft-edge/webview2/reference/win32/index)
+
+* .NET
+   * [Core](/dotnet/api/microsoft.web.webview2.core)
+   * [WPF](/dotnet/api/microsoft.web.webview2.wpf)
+   * [Windows Forms](/dotnet/api/microsoft.web.webview2.winforms)
+
+* WinRT (for WinUI 2/UWP)
+   * [Core](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index)
+   * [COM Interop](/microsoft-edge/webview2/reference/winrt/interop/index)
+
+* WinUI 3 (for Windows App SDK)
+   * [API reference](https://github.com/microsoft/microsoft-ui-xaml-specs/blob/master/active/WebView2/WebView2_spec.md)<!-- changing master to main doesn't work 5/19/2022 -->
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[DotnetMicrosoftWebWebview2CoreNamespace]: /dotnet/api/microsoft.web.webview2.core "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
-[DotnetMicrosoftWebWebview2WpfNamespace]: /dotnet/api/microsoft.web.webview2.wpf "Microsoft.Web.WebView2.Wpf Namespace | Microsoft Docs"
-[DotnetMicrosoftWebWebview2WinformsNamespace]: /dotnet/api/microsoft.web.webview2.winforms "Microsoft.Web.WebView2.WinForms Namespace | Microsoft Docs"
-[WinrtMicrosoftWebWebview2CoreNamespace]: /microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/index "Microsoft.Web.WebView2.Core Namespace | Microsoft Docs"
-[WinrtComInteropInterfaces]: /microsoft-edge/webview2/reference/winrt/interop/index "WebView2 WinRT COM Interop Reference | Microsoft Docs"
+## See also
+
+* [Overview of Microsoft Edge WebView2](index.md)
+* [Get started with WebView2](get-started/get-started.md)

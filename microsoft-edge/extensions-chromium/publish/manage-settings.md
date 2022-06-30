@@ -1,22 +1,21 @@
 ---
-description: Managing a Partner Center account for the Microsoft Edge program.
 title: Manage account settings
+description: Managing a Partner Center account for the Microsoft Edge program.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 02/17/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, addons, partner center, developer
+ms.date: 02/17/2021
 ---
 # Manage account settings
 
-Manage your account settings and profile details for your Microsoft Edge Developer account at [Partner Center][MicrosoftPartnerCenter].
+Manage your account settings and profile details for your Microsoft Edge Developer account at [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd).
 
 
 <!-- ====================================================================== -->
 ## Account settings
 
-To display your account settings, select the gear icon in the upper right-hand corner of [Partner Center][MicrosoftPartnerCenter] > **Developer settings**.  In **Developer settings**, review and update the following information.
+To display your account settings, select the gear icon in the upper right-hand corner of [Partner Center](https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd) > **Developer settings**.  In **Developer settings**, review and update the following information.
 
 *   Review information about your account.
 *   Links to other pages to review information.
@@ -45,7 +44,3 @@ Review the following settings in the Account settings section.
 | Verification status | Review your verification status when your account is going through the verification process.  For example, your account is verified when you first create an account, or after you update your contact information. |
 | Programs | Review information about enrolled programs or other programs that might be of interest to you. |
 | Agreements | Review the agreements that your account accepted. |
-
-<!-- links -->
-
-[MicrosoftPartnerCenter]: https://partner.microsoft.com/dashboard/microsoftedge/public/login?ref=dd "Partner Center"

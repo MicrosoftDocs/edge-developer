@@ -1,13 +1,12 @@
 ---
-description: Resources for inclusive design tools and best practices.
 title: Designing accessible websites
+description: Resources for inclusive design tools and best practices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/27/2020
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
-keywords: accessibility, accessibility for developers, accessible websites, edge, web development, ARIA, developer, UIA, UI Automation
+ms.date: 10/27/2020
 ---
 # Designing accessible websites
 
@@ -39,7 +38,7 @@ Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
 Users who have low vision need a sufficient text contrast ratio for text content, and a good visual experience with high contrast themes overall.  Users who are color blind need information to be conveyed in ways other than through color.
 
-Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, go to [Resources about building accessible websites](./build/index.md).
+Many common accessibility issues on the web can be solved through good coding practice.  The [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20) documentation provides techniques and best practices to help you design more accessible dynamic web applications.  For more information, go to [Resources about building accessible websites](build/index.md).
 
 
 <!-- ====================================================================== -->

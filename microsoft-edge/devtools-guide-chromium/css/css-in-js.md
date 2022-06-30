@@ -1,12 +1,11 @@
 ---
-description: Copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.  Edit style rules that were initially defined by a CSSOM function.
 title: Style editing for CSS-in-JS frameworks
+description: Copy declarations for a style rule in a way that's formatted for JavaScript and ready to paste into a JavaScript file.  Edit style rules that were initially defined by a CSSOM function.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/25/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, css, css-in-js
+ms.date: 08/25/2021
 ---
 <!-- Copyright Alex Rudenko
 
@@ -35,27 +34,25 @@ When using CSS-in-JS libraries, you can copy CSS declarations (a CSS property an
 
 To copy a style rule as JavaScript:
 
-1. In the **Styles** pane of the **Elements** tool, open the contextual menu (right-click) on a declaration in a style rule.
+1. In DevTools, open the **Elements** tool, and then click the **Styles** tab.
 
-1. Select **Copy declaration as JS** or **Copy all declarations as JS**.
+1. Right-click a declaration in a style rule, and then select **Copy declaration as JS** or **Copy all declarations as JS**.
 
 1. Paste the copied CSS into a JavaScript file in your text editor, such as Visual Studio Code.  For example: `'--more-link': 'lime'`.
 
-:::image type="complex" source="images/copy-declaration-as-js.msft.png" alt-text="Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands" lightbox="images/copy-declaration-as-js.msft.png":::
-   Context menu for a style rule, including **Copy declaration as JS** and **Copy all declarations as JS** commands
-:::image-end:::
+   ![Context menu for a style rule, including 'Copy declaration as JS' and 'Copy all declarations as JS' commands.](images/copy-declaration-as-js.msft.png)
 
-This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, navigate to [CSS features reference][CssReference].
+This feature is available starting with Microsoft Edge version 93. <!-- delete statement sometime after September 2, 2021 --> To learn more about viewing and changing CSS, see [CSS features reference](reference.md).
 
 
 <!-- ====================================================================== -->
 ## Editing style rules that were initially defined by a CSSOM function
 
-<!-- from https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
+<!-- from https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/whats-new/2020/06/devtools#style-editing-for-css-in-js-frameworks -->
 
-The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)][CsswgDraftsCssom] APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
+The **Styles** pane supports editing styles that were created with the [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom) APIs.  Many CSS-in-JS frameworks and libraries use the CSS Object Model APIs under the hood to construct styles.
 
-You can edit styles added in JavaScript using [Constructable Stylesheets][WicgConstructStylesheet].  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM][MdnShadowDom].
+You can edit styles added in JavaScript using [Constructable Stylesheets](https://wicg.github.io/construct-stylesheets/).  Constructable Stylesheets are a way to create and distribute reusable styles when using [Shadow DOM](https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM).
 
 ### Example
 
@@ -76,21 +73,21 @@ function addStyle() {
 
 This sample demonstrates changing the `background` property of the `h1` styles that are added by the CSS Object Model function `insertRule()`.  The `background` color is initially set by calling a CSS Object Model function, and then can be changed from `pink` to `lightblue` by using the **Styles** pane.
 
-:::image type="complex" source="../media/css-in-js.msft.png" alt-text="Changing the background property of the h1 styles added with CSSStyleSheet from pink to lightblue" lightbox="../media/css-in-js.msft.png":::
-   Changing the `background` property of the `h1` styles added with `CSSStyleSheet` from `pink` to `lightblue`.
-:::image-end:::
+![Changing the background property of the h1 styles added with 'CSSStyleSheet' from 'pink' to 'lightblue'.](../media/css-in-js.msft.png)
 
-Give this feature a try with a [sample that uses CSS-in-JS][CodepenZoherghadyaliAbdgrpz].
+Give this feature a try with a [sample that uses CSS-in-JS](https://codepen.io/zoherghadyali/full/abdGrPZ).
 
 
 <!-- ====================================================================== -->
 ## What is CSS-in-JS?
 
-This section is an excerpt from the blog post [CSS-in-JS support in DevTools][BlogCssInJsInDevTools].
+This section is an excerpt from the blog post [CSS-in-JS support in DevTools](https://developer.chrome.com/blog/css-in-js/).
 
 Here's what we mean by _CSS-in-JS_, and how it's different from regular CSS.  The definition of _CSS-in-JS_ is somewhat vague.  In a broad sense, it's an approach for managing CSS code using JavaScript.  For example, it could mean that the CSS content is defined using JavaScript and the final CSS output is generated on-the-fly by the app.
 
-In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page by the CSS Object Model APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.  A special case here is that the content of a `<style>` element can be updated by using the CSS Object Model API, causing the source to become out of sync with the actual CSS stylesheet.
+In the context of DevTools, _CSS-in-JS_ means that the CSS content is injected into the page by the CSS Object Model APIs.  Regular CSS is injected using `<style>` or `<link>` elements, and it has a static source (such as a DOM node or a network resource).  In contrast, CSS-in-JS often doesn't have a static source.
+
+A special case here is that the content of a `<style>` element can be updated by using the CSS Object Model API, causing the source to become out of sync with the actual CSS stylesheet.
 
 If you use any CSS-in-JS library (such as styled-component, Emotion, or JSS), the library might inject styles using CSS Object Model APIs under the hood, depending on the mode of development and the browser.
 
@@ -128,25 +125,9 @@ The **Styles** pane supports CSS rules that you can modify by using the CSS Obje
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[CssReference]: reference.md "CSS features reference | Microsoft Docs"
-<!-- external links -->
-[BlogCssInJsInDevTools]: https://developers.google.com/web/updates/2021/02/css-in-js "CSS-in-JS support in DevTools | Google Blog "
-[CsswgDraftsCssom]: https://drafts.csswg.org/cssom "CSS Object Model (CSSOM) | W3C CSS Working Group Editor Drafts"
-[WicgConstructStylesheet]: https://wicg.github.io/construct-stylesheets/ "Constructable Stylesheet Objects | Web Incubator CG"
-[MdnShadowDom]: https://developer.mozilla.org/docs/Web/Web_Components/Using_shadow_DOM "Using shadow DOM | MDN"
-[CodepenZoherghadyaliAbdgrpz]: https://codepen.io/zoherghadyali/full/abdGrPZ "Style editing for CSS-in-JS frameworks | CodePen"
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[AlexRudenko]: https://developers.google.com/web/resources/contributors#alex-rudenko
-
-
-<!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko][AlexRudenko] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/blog/css-in-js/) and is authored by [Alex Rudenko](https://developers.google.com/web/resources/contributors#alex-rudenko) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -1,16 +1,15 @@
 ---
-description: List of supported APIs to use when building Microsoft Edge extensions.
 title: Supported APIs for Microsoft Edge extensions
+description: List of supported APIs to use when building Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 01/07/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: edge-chromium, extensions development, browser extensions, add-ons, extension api , developer, web development
+ms.date: 01/07/2021
 ---
 # Supported APIs for Microsoft Edge extensions
 
-The following table provides a list of APIs that you can use when building extensions for the Microsoft Edge browser.
+When building extensions for the Microsoft Edge browser, you can use the following APIs.
 
 | API                                   | Description
 |---------------------------------------|----------------------------------------------------------|
@@ -28,9 +27,9 @@ The following table provides a list of APIs that you can use when building exten
 | [desktopCapture](https://developer.chrome.com/extensions/desktopCapture) | Capture the content of a screen, individual windows, or tabs. |
 | [devtools.inspectedWindow](https://developer.chrome.com/extensions/devtools_inspectedWindow) | Interact with the inspected window.  For example, obtain the tab ID of pages, evaluate code, refresh pages, or obtain resources on a page. |
 | [devtools.network](https://developer.chrome.com/extensions/devtools_network) | Retrieve information about network requests displayed by the Developer Tools in the Network panel. |
-| [devtools.panels](https://developer.chrome.com/extensions/devtools.panels) | Integrate your extension into the Developer Tools window UI by creating your own panels, accessing existing panels, or adding sidebars. |
+| [devtools.panels](https://developer.chrome.com/docs/extensions/reference/devtools_panels/) | Integrate your extension into the Developer Tools window UI by creating your own panels, accessing existing panels, or adding sidebars. |
 | [downloads](https://developer.chrome.com/extensions/downloads) | Programmatically start, monitor, manipulate, and search for downloads. |
-| [enterprise.hardwarePlatform](https://developer.chrome.com/extensions/enterprise.hardwarePlatform) | Get the manufacturer and model of the hardware platform where the browser runs. This API is only available to extensions installed by enterprise policy. |
+| [enterprise.hardwarePlatform](https://developer.chrome.com/docs/extensions/reference/enterprise_hardwarePlatform/) | Get the manufacturer and model of the hardware platform where the browser runs. This API is only available to extensions installed by enterprise policy. |
 | [events](https://developer.chrome.com/extensions/events) | Common types used by APIs that raise events to notify you when an interesting event occurs. |
 | [extension](https://developer.chrome.com/extensions/extension) | Any extension page can use the utilities of this API. It includes support for exchanging messages between extensions and content scripts, which is described in Message Passing. |
 | [extensionTypes](https://developer.chrome.com/extensions/extensionTypes) | Contains type declarations for Microsoft Edge extensions. |
@@ -72,7 +71,7 @@ Microsoft Edge doesn't support the following Extension APIs:
 
 * `chrome.gcm`.
 * `chrome.identity.getAccounts`.
-* `chrome.identity.getAuthToken` - As an alternate, you may use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
+* `chrome.identity.getAuthToken` - As an alternate, you can use `launchWebAuthFlow` to fetch an OAuth2 token to authenticate users.
 * `chrome.instanceID`.
 
 
@@ -86,15 +85,11 @@ Microsoft Edge doesn't support the following Extension APIs:
 *  Microsoft Edge doesn't support extensions that use Chrome Web Store payments because it uses `identity.getAuthtoken` to request tokens for signed-in users.  These tokens are sent to the REST-based licensing API.
 
 
-<!-- links -->
+
 
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
 > The original page is found [here](https://developer.chrome.com/apps/external_extensions).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -1,272 +1,719 @@
 ---
-description: The latest experimental features in Microsoft Edge DevTools
 title: Experimental features
+description: The latest experimental features in Microsoft Edge DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 08/31/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools, experiment
-no-loc: ["Enable webhint", "Enable Network Console", "Source Order Viewer", "Enable Composited Layers in 3D View", "Enable new Font Editor tool within the Styles pane", "Enable new CSS Flexbox debugging features", "Enable + button tab menus to open more tools", "Enable Welcome tab", "3D View", "Turn on support to move tabs between panels", "Match keyboard shortcuts in the DevTools to Microsoft Visual Studio Code", "Edit keyboard shortcuts for any action in the DevTools", "Turn on new CSS grid debugging features", "Emulation: Support dual screen mode"]
+no-loc: ["Enable webhint"]
+ms.date: 06/24/2022
 ---
 # Experimental features
 
-Microsoft Edge DevTools provide access to experimental features that are still in development.  You can try out these features and [provide feedback][Contact] before each feature is released.
+<!-- 
+Policies to keep this page comprehensive and maintainable: 
+*  Include a visible h2 section for every checkbox that's in public-facing Microsoft Edge DevTools > Experiments page.  If no info, write a tautology as a starting point.  Add as needed, each month.
+*  Keep h2 sections in same order as DevTools > Settings > Experiments.
+*  In the heading and UI steps, keep the checkbox label UI string as it appears in the UI; do not revise or "fix" it.
+*  Don't change h2 text, that might break a link from UI.
+*  When a checkbox is removed from all the channels, delete its section.
 
-All channels of Microsoft Edge have experimental features.  You can get the latest experimental features by using the Microsoft Edge Canary channel.  This article only covers selected experimental features.  For the full list, see the **Settings** > **Experiments** page in DevTools.
+Steps to maintain this page monthly: For latest Stable, and for latest Canary:
+1. Go to edge://settings/help, update if needed.
+1. In DevTools, select Settings > Preferences > Restore Defaults > Reload DevTools.
+1. In DevTools, go to Settings > Experiments.
+1. In the "Experiments which are turned on by default" section below, update the Edge Stable & Edge Canary list at top.
+   *  In that section, link down to the h2; do not link to a different article.
+1. Make sure the article has an h2 for each checkbox.
+1. In each h2 section, update the presence or absence of "not", and update the version #:
+This checkbox is|is not present in Microsoft Edge Stable v123.
+This checkbox is|is not present in Microsoft Edge Canary v123.
+-->
+
+Microsoft Edge DevTools provide access to experimental features that are still in development.  This article lists and describes the experimental features which are in either:
+*  The latest version of the Canary preview channel of Microsoft Edge.
+*  The latest version of the Stable version of Microsoft Edge.
+
+All [channels of Microsoft Edge](/deployedge/microsoft-edge-channels) have experimental features. You can get the latest experimental features by using the [Microsoft Edge Canary channel](https://www.microsoftedgeinsider.com/welcome?channel=canary). To view the full list available in your version of Microsoft Edge, see the **Settings** > **Experiments** page in DevTools.
+
+<!-- no Warning formatting, because UI already contains red "WARNING" at top -->
+These experiments could be unstable or unreliable and may require you to restart DevTools.
 
 
 <!-- ====================================================================== -->
-## Experimental features which are turned on by default
+## Experiments which are turned on by default
 
-As of Microsoft Edge 94, the following experimental features are turned on by default.  This means that these features can be used right away, without you having to change any settings.  You can turn off these default experimental features, if needed.
+The following experimental features are turned on by default. You can use these features right away, without changing any settings. You can turn off these default experimental features, if needed.
 
-<!-- listed in this list in order per Settings > Experiments pane -->
-*  Source order viewer
-*  [Emulation: Support dual screen mode][DevtoolsDeviceModeDualScreenAndFoldables] is turned on by default starting with Microsoft Edge 90.
-*  Enable webhint
-*  Show issues in Elements
-*  Enable Composited Layers in 3D View
-*  DevTools Tooltips
-*  VS Code themes for the DevTools
-*  Enable keyboard shortcut editor - [Edit keyboard shortcuts for any action in the DevTools][DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools] is turned on by default starting with Microsoft Edge 89.
+<!-- listed in order of the Settings > Experiments pane -->
+
+**Turned on by default in Microsoft Edge Stable v102:**
+* [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel)
+* [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
+* [Tooling for CSS layers in the Styles pane](#tooling-for-css-layers-in-the-styles-pane)
+* [Enable webhint](#enable-webhint)
+* [Show issues in Elements](#show-issues-in-elements)
+* [Focus Mode](#focus-mode)
+* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+
+**Turned on by default in Microsoft Edge Canary v105:**
+* [Enable Reporting API panel in the Application panel](#enable-reporting-api-panel-in-the-application-panel)
+* [Display more precise changes in the Changes tab](#display-more-precise-changes-in-the-changes-tab)
+* [Use Lighthouse panel with timespan and snapshot modes](#use-lighthouse-panel-with-timespan-and-snapshot-modes)
+* [Tooling for CSS layers in the Styles pane](#tooling-for-css-layers-in-the-styles-pane)
+* [Enable color picking outside the browser window](#enable-color-picking-outside-the-browser-window)
+* [Enable webhint](#enable-webhint)
+* [Show issues in Elements](#show-issues-in-elements)
+* [Open source files in Visual Studio Code](#open-source-files-in-visual-studio-code)
+* [Enable keyboard shortcut editor](#enable-keyboard-shortcut-editor)
+
+<!-- don't place a comment line between list item lines, above; that would create a gap -->
 
 
 <!-- ====================================================================== -->
-## Turning on experimental features
+## Turning an experiment on or off
 
-To turn on (or off) experimental features in Microsoft Edge:
+Experimental features are constantly being updated and might cause performance issues.  This is one reason you might want to turn off an experiment.
 
-1.  [Open DevTools][DevtoolsOpenIndex].  To do this, in Microsoft Edge, select the **Settings and more** button, which is an ellipses (three dots).  Then hover over **More tools**, and then select **Developer tools**.
+To turn an experiment on or off in Microsoft Edge:
 
-1.  Open the [Settings][DevToolsCustomizeIndexSettings] pane of DevTools.  To do this, select the **Settings** (gear) icon.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1.  On the left side of the **Settings** pane, select the **Experiments** section.
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.
 
-    :::image type="content" source="../media/experiments-devtools.msft.png" alt-text="The Experiments page in Settings" lightbox="../media/experiments-devtools.msft.png":::
+1. On the left side of the **Settings** panel, select the **Experiments** page.
 
-1.  On the **Experiments** page, scroll through the list of all available experimental features and select the checkbox next to each feature that you want to test.  Some experiments are turned on by default.
+   ![The Experiments page in Settings.](../media/experiments-devtools.msft.png)
 
-1.  Select the **X** in the upper right to close **Settings**.
+1. On the **Experiments** page, select or clear the checkbox for an experiment. Some experiments are turned on (selected) by default.
 
-1.  Select the **Reload DevTools** button.
+1. Click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) in the upper right to close DevTools **Settings**.
 
-> [!NOTE]
-> Experimental features are constantly being updated and might cause performance issues.  To turn off an experimental feature, open the **Experiments** page and clear the checkbox of the experimental feature that you want to turn off.
+1. Click the **Reload DevTools** button.
 
 
-<!-- ordering for the h2 sections below: same order as in the Experiments page.  if change to a different ordering scheme, note that scheme here. -->
+<!-- ====================================================================== -->
+## Restoring defaults for which experiments are selected
+
+To restore the default settings for which experimental features are turned on:
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+
+1. At the bottom of the **Preferences** page, click the **Restore defaults and refresh** button, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)).
+
+<!-- For more information about customizing settings, see [Settings](../customize/index.md#settings) in _Customize Microsoft Edge DevTools_. -->
+
+
+<!-- ====================================================================== -->
+## Filtering the experiments
+
+You can filter the experimental features by text included in the title.
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+
+1. On the left side of the **Settings** panel, select the **Experiments** page.
+
+1. Click in the **Filter** text box and enter text, such as **timeline**.  As you type, only the matching checkboxes are shown in the **Experiments** page.
+
+1. To end filtering, clear the **Filter** text box.
+
+
+<!-- ====================================================================== -->
+## Providing feedback about the experiments
+
+We're eager to hear your feedback about experimental features.  To share feedback with us, [Contact the Microsoft Edge DevTools team](../contact.md).
+
+One of the UI experiments adds a new way to provide feedback: when the **Focus Mode** experiment is turned on, at the bottom of the **Activity Bar**, select **Help** (![the Help icon in the Activity Bar in Focus Mode.](../media/help-icon-of-focus-mode.png)) > **Feedback**.
+
+
+<!-- ====================================================================== -->
+## List of experiments
+
+Most of the experiments that appear in the latest version of the Canary preview channel of Microsoft Edge are listed below.
+
+
+<!-- ============================================================================================================================================ -->
+<!-- top of list of checkboxes -->
+<!-- ============================================================================================================================================ -->
+
+
+<!-- ====================================================================== -->
+## Allow extensions to load custom stylesheets
+
+Some Microsoft Edge Add-ons can define custom color themes for DevTools. If you install an add-on with a theme, you need to enable the **Allow extensions to load custom stylesheets** experiment to view the add-on themes.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Capture node creation stacks
+
+To capture JavaScript stack traces when DOM nodes are added to the DOM at runtime, enable this experiment. The captured stack traces are displayed in the **Stack Trace** pane of the **Elements** panel.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Protocol Monitor
+
+DevTools communicates with the inspected page using the DevTools protocol.
+
+To monitor the messages sent and received by DevTools to debug the inspected page:
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, click the **Settings** (![Settings icon.](../media/settings-gear-icon-light-theme.png)) button.  Or, press `Shift`+`?`.  The **Settings** panel opens, with the **Preferences** page selected.
+
+1. On the left side of the **Settings** panel, select the **Experiments** page.
+
+1. Select the **Protocol Monitor** checkbox, and then click **Close** (![The Close icon in DevTools > Settings.](../media/settings-close-icon-light-theme.png)) to close **Settings**.
+
+1. Open the **Command Menu** (`Ctrl`+`Shift`+`P`), and then type **protocol** in the text box.
+
+1. Select **Show Protocol monitor**.  The message appears: "One or more settings have changed which requires a reload to take effect."
+
+1. Click the **Reload DevTools** button that appears next to the message.
+
+1. The **Protocol monitor** tool is displayed in the **Drawer** at the bottom of DevTools.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Show CSP Violations view
+
+Adds the **CSP Violations** tool, which displays any Content Security Policy (CSP) violations that are detected on the inspected webpage.
+
+![The CSP Violations tool.](index-images/csp-violations-tool.png)
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Record coverage while performance tracing
+
+Records coverage while performance tracing.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Show option to take heap snapshot where globals are treated as root
+<!-- older checkbox -->
+
+Shows the option to take a heap snapshot where globals are treated as root.
+<!-- todo: need text, except going away -->
+
+See also:
+* [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is not present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Show back/forward cache blocking reasons in the frame tree structure view
+<!-- older checkbox -->
+
+Whether to show back/forward cache blocking reasons in the frame tree structure view.
+<!-- todo: need text, except going away -->
+
+See also:
+* [Application tool, to manage storage](../storage/application-tool.md)
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is not present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Show option to expose internals in heap snapshots
+<!-- new in v105 -->
+
+Whether to display a checkbox to expose internals in heap snapshots in the **Memory** tool.
+<!-- todo: need text -->
+
+See also:
+* [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
+
+Status:
+*  This checkbox is not present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
 
 <!-- ====================================================================== -->
 ## Source order viewer
-<!-- on by default in 94 -->
 
-**Source Order Viewer** is an experiment that displays the order of elements in the webpage source.  The on-screen display order can differ from the order of the source, which confuses screen reader and keyboard users.  Use the **Source Order Viewer** experiment to find the differences between on-screen display order and the order of the source.
+This checkbox is being removed.  The Source Order Viewer is not an experiment any longer.  Whether the checkbox is checked or unchecked makes no difference; the Source Order Viewer feature appears in DevTools either way.
 
-To use the **Source Order Viewer**:
-1.  Open the **Elements** tool.
-1.  To the right of the **Styles** tab, select the **Accessibility** tab.
-1.  Under the **Source Order Viewer** section, select the **Show Source Order** checkbox.
-1.  Highlight any HTML element to display an overlay that the order in the webpage source.
+See also:
+* [Test keyboard support using the Source Order Viewer](../accessibility/test-tab-key-source-order-viewer.md)
 
-:::image type="content" source="../media/experiments-source-order-viewer.msft.png" alt-text="Source Order Viewer in the Accessibility pane" lightbox="../media/experiments-source-order-viewer.msft.png":::
-
-This experiment is available starting with Microsoft Edge version 86 and is turned on by default.
+Status:
+*  This checkbox is not present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
 
 <!-- ====================================================================== -->
-## Enable new Font Editor tool within the Styles pane.
-<!-- keep the period per the ui string literal -->
-<!-- found in Experiments in 94 60% down main list -->
+## Timeline: event initiators
 
-You can now use the new visual [Font Editor][DevtoolsInspectStylesEditFonts] to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
+Whether to include event initiators in the Timeline.
+<!-- todo: need text -->
 
-*   Switch between units for different font properties
-*   Switch between keywords for different font properties
-*   Convert units
-*   Generate accurate CSS code
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
-To use the new visual **Font Editor**:
-1.  Open the **Elements** tool.
-1.  Open the **Styles** pane.
-1.  Select the **Font Editor** icon.
 
-For more information about the new visual **Font Editor**, navigate to [Edit CSS font styles and settings in the Styles pane in DevTools][DevtoolsInspectStylesEditFonts].
+<!-- ====================================================================== -->
+## Timeline: WebGL-based flamechart
 
-:::image type="complex" source="../media/font-editor-open.msft.png" alt-text="The visual Font Editor pane is highlighted" lightbox="../media/font-editor-open.msft.png":::
-   The visual **Font Editor** pane is highlighted
-:::image-end:::
+Whether to use a WebGL-based flamechart in the Timeline.
+<!-- todo: need text -->
 
-This experiment is available starting with Microsoft Edge version 89.
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## WebAssembly Debugging: Enable DWARF support
+
+Enables DWARF support for WebAssembly debugging.  See [Improved WebAssembly debugging](../whats-new/2019/12/devtools.md#improved-webassembly-debugging) in _What's new in DevTools (Microsoft Edge 80)_.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Console: Resolve variable names in expressions using source maps
+
+Uses source maps to automatically map original variable names to minified variable names when evaluating expressions in the Console.
+
+See [Map the processed code to your original source code, for debugging](../javascript/source-maps.md).
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable new Advanced Perceptual Contrast Algorithm (APCA) replacing previous contrast ratio and AA/AAA guidelines
+
+The [Advanced Perceptual Contrast Algorithm (APCA)](https://w3c.github.io/silver/guidelines/methods/Method-font-characteristic-contrast.html) replaces the [AA](https://www.w3.org/WAI/WCAG21/quickref#contrast-minimum)/[AAA](https://www.w3.org/WAI/WCAG21/quickref#contrast-enhanced) guidelines contrast ratio in the Color Picker.  The Color Picker is used in the **Styles** tab in the **Elements** tool.
+
+APCA is a new way to compute contrast.  It is based on modern research on color perception.  Compared to AA/AAA guidelines, APCA is more context-dependent.  The contrast is calculated based on the following spatial properties of the text, color, and context.
+
+*  Spatial properties of text that include font weight and size.
+*  Spatial properties of color that include perceived contrast between text and background.
+*  Spatial properties of context that include ambient light, surroundings, and intended purpose.
+
+See also:
+* [New color contrast calculation - Advanced Perceptual Contrast Algorithm (APCA)](../whats-new/2021/01/devtools.md#new-color-contrast-calculation---advanced-perceptual-contrast-algorithm-apca) in _What's New in DevTools (Microsoft Edge 89)_.
+* [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_.
+* [Test text-color contrast using the Color Picker](../accessibility/color-picker.md)
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable full accessibility tree view in the Elements panel
+
+Adds a button in the **Elements** tool which toggles between the DOM tree and the accessibility tree.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable the Font Editor tool within the Styles pane
+<!-- keep "Enable the" in heading, though check box label says "Enable new".
+omit period, even though checkbox label has period -->
+
+You can use the visual [Font Editor](../inspect-styles/edit-fonts.md) to edit fonts.  Use it define fonts and font characteristics.  The visual **Font Editor** helps you do the following:
+
+*  Switch between units for different font properties
+*  Switch between keywords for different font properties
+*  Convert units
+*  Generate accurate CSS code
+
+To use the visual **Font Editor**:
+
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
+
+1. In DevTools, on the main toolbar, select the **Elements** tab.  If the **Elements** tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
+
+1. In the **Styles** tab, select the **Font Editor** icon.
+
+   ![The visual Font Editor pane is highlighted.](../media/font-editor-open.msft.png)
+
+For more information about the visual **Font Editor**, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
+
+For more information, see [Edit CSS font styles and settings in the Styles pane](../inspect-styles/edit-fonts.md).
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable automatic contrast issue reporting via the Issues Panel
+
+Enables automatic contrast issue reporting in the **Issues** tool.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable experimental cookie features
+
+Enables experimental cookie features.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable Reporting API panel in the Application panel
+
+Use the Reporting API to catch certain errors such as security violations or deprecated API calls. These errors happen when users visit your site and are sent to a server endpoint. Enable this experiment to add the **Reporting API** section in the **Application** panel, which lists all of the reports sent to the endpoint.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Display more precise changes in the Changes tab
+
+See [More precise changes in the Changes tab](https://developer.chrome.com/blog/new-in-devtools-98/#changes).
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Sync CSS changes in the Styles pane
+
+Whether to sync CSS changes in the **Styles** tab in the **Elements** tool.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Local overrides for response headers
+
+Whether to use local overrides for response headers.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable CSS Authoring hints for inactive rules, deprecated properties, etc.
+<!-- keep "etc." in heading, to match UI label -->
+<!-- new in v105 -->
+
+Whether to enable CSS authoring hints in the **Styles** panel of the **Elements** tool to display information tooltips next to inactive or deprecated properties.
+
+In Canary v105, this checkbox has no effect.  When this feature is implemented, this feature will provide help when writing or inspecting CSS in the **Styles** panel.  Small information icons will appear next to CSS properties that are inactive (or deprecated).
+
+Status:
+*  This checkbox is not present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Use Lighthouse panel with timespan and snapshot modes
+
+Adds a selector to the Lighthouse tool to switch between different reporting modes.  At the moment, the Navigation and Snapshot modes are supported.
+
+See also:
+* [Lighthouse tool](../lighthouse/lighthouse-tool.md)
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Tooling for CSS layers in the Styles pane
+
+Adds increased support for the `@layer` CSS rule in the **Styles** pane.  CSS rules in the **Styles** pane are grouped by the layers they belong to.  A layer overview widget is displayed, which shows the layer tree for the currently inspected element.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable color picking outside the browser window
+
+Allows you to move the mouse cursor when it's an eyedropper tool, over anywhere on your screen, not just within the Microsoft Edge window.
+
+In the **Elements** tool, in the **Styles** tab, click on any color preview.  The Color Picker opens.  Click the **Toggle color picker** (![Eyedropper icon button.](index-images/eyedropper-color-picker-icon.png)) button.  The mouse cursor becomes an eyedropper.  Click anywhere on your monitor to select a color.
+
+<!-- https://developer.chrome.com/blog/new-in-devtools-102/#color-picker -->
+
+See also:
+* [Change colors with the Color Picker](../css/reference.md#change-colors-with-the-color-picker) in _CSS features reference_
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Group sources into Authored and Deployed trees
+<!-- new in v105 -->
+
+Controls whether to group sources into **Authored** and **Deployed** trees in the **Page**, **Filesystem**, and **Overrides** tabs of the **Sources** tool.  This feature in the **Sources** tool allows you to group source files in two folders depending on whether these are:
+*  Original source files (authored, that is, files with your local edits).
+*  Production files (deployed files that are on the web server after compiling and bundling the source files).
+
+Status:
+*  This checkbox is not present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Log DevTools uncaught exceptions to Console
+
+Controls whether to log DevTools uncaught exceptions in the **Console** tool.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
 
 <!-- ====================================================================== -->
 ## Enable webhint
-<!-- on by default in 94 -->
 
-[webhint][WebhintMain] is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint][WebhintMain] includes:
+[webhint](https://webhint.io) is an open-source tool that provides real-time feedback for websites and local webpages.  The type of feedback provided by [webhint](https://webhint.io) includes:
 
-*   Accessibility
-*   Cross-browser compatibility
-*   Security
-*   Performance
-*   Progressive Web Apps (PWAs)
-*   Other common web development issues
+*  Accessibility
+*  Cross-browser compatibility
+*  Security
+*  Performance
+*  Progressive Web Apps (PWAs)
+*  Other common web development issues
 
-The [webhint][WebhintMain] experiment displays the webhint feedback in the [Issues][DevtoolsIssuesIndex] panel.  Select an issue, to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
+The [webhint](https://webhint.io) experiment displays the webhint feedback in the [Issues](../issues/index.md) panel.  Select an issue to display documentation about the solution and a list of the affected resources on your website.  Select a resource link to open the relevant **Network**, **Sources**, or **Elements** pane in DevTools.
 
-:::image type="content" source="../media/experiments-webhint.msft.png" alt-text="webhint feedback in the Issues panel" lightbox="../media/experiments-webhint.msft.png":::
+![webhint feedback in the Issues panel.](../media/experiments-webhint.msft.png)
 
-This experiment is available starting with Microsoft Edge version 85 and is turned on by default.
-
-
-<!-- ====================================================================== -->
-## Enable Composited Layers in 3D View
-<!-- on by default in 94 -->
-
-You can visualize Layers alongside z-indexes and the Document Object Model (DOM).  This feature helps you debug without switching contexts as often.  You identified that reducing context-switching was a major pain point.  It is not always clear how the code you write affects your web app.  For a comprehensive visual debugging experience, the 3D View and Composited Layers are now combined.
-
-To use **Composited Layers**, complete the following steps.
-
-1.  On the **Drawer**, select the **3D View** tool.
-1.  Open the **Composited Layers** pane.
-1.  All of the painted layers of the app are displayed.  Try this feature with your own web apps.
-
-:::image type="content" source="../media/experiments-layers.msft.png" alt-text="Composited Layers pane" lightbox="../media/experiments-layers.msft.png":::
-
-This experiment is available starting with Microsoft Edge version 87 and is turned on by default.
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
 
 <!-- ====================================================================== -->
-## Enable Network Console
-<!-- in Experiments as of 94, near bottom of main list -->
+## Show issues in Elements
 
-**Network Console** is the working title of an experiment to make synthetic network requests over HTTP.  You can use the **Network Console** experiment to send web API requests.
+Enable this experiment to view syntax errors under HTML in the **DOM** view of the **Elements** tool. For more information, see [Wavy underlines highlight code issues and improvements in Elements tool](../whats-new/2021/04/devtools.md#wavy-underlines-highlight-code-issues-and-improvements-in-elements-tool).
 
-To use the **Network Console**, complete the following steps.
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
-1.  Open the **Network** pane.
-1.  Find the network request that you want to change and resend.
-1.  Open the contextual menu (right-click), and select **Edit and Replay**.
-1.  When the **Network Console** opens, edit the network request information.
-1.  Select **Send**.
 
-:::image type="content" source="../media/network-network-console.msft.png" alt-text="Network Console in the Console drawer" lightbox="../media/network-network-console.msft.png":::
+<!-- ====================================================================== -->
+## Focus Mode
 
-This experiment is available starting with Microsoft Edge version 85.
+Focus Mode is a new user interface for DevTools.  Focus Mode is designed to simplify and streamline the DevTools UI, without compromising its feature set.
+
+Focus Mode replaces the main row of tabs with an **Activity Bar**, which is a compact toolbar with distinctive icons.  The **Activity Bar** makes it possible to pin, rearrange, and open your favorite tools, for quick access.  The **Activity Bar** also provides access to user settings, help, and other features.
+
+Focus Mode also provides a **Quick View** list, to open a second tool alongside the tool that's already selected in the **Activity Bar**.
+
+See [Reduce the complexity of DevTools with Focus Mode](focus-mode.md).
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
 
 <!-- ====================================================================== -->
 ## Open source files in Visual Studio Code
-<!-- in Experiments as of 96, at end of main list -->
 
-The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files.  When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
+The **Open source files in Visual Studio Code** experiment replaces the code editor of the Sources tool with Visual Studio Code, for editing local files. When you turn on this experiment, Developer Tools detects when you edit a local file, and prompts you to select a folder to use as your Workspace.
 
-After you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code, rather than in the code editor of the Sources tool in DevTools.
+When you select a folder to use as your Workspace, selecting any link to a file in DevTools opens the file in Visual Studio Code.  In previous versions of Microsoft Edge, this action opened the file in the code editor of the Sources tool in DevTools.
 
-:::image type="content" source="../media/experiment-sources-in-code-editor-open.msft.png" alt-text="Selecting a file link in the Styles tool opens the file in Visual Studio Code" lightbox="../media/experiment-sources-in-code-editor-open.msft.png":::
+![Selecting a file link in the Styles tool opens the file in Visual Studio Code.](../media/experiment-sources-in-code-editor-open.msft.png)
 
-Any edits that you make in DevTools will now change the file on the hard drive and sync live with Visual Studio Code.  You can read about setting up your workspace in [Opening source files in Visual Studio Code][OpenSourcesInVSCode].
+Any edits that you make in DevTools now change the file on the hard drive and sync live with Visual Studio Code. You can read about setting up your workspace in [Opening source files in Visual Studio Code](../sources/opening-sources-in-vscode.md).
 
-This experiment is available starting with Microsoft Edge version 96.
-
-
-<!-- ====================================================================== -->
-## Previously Experimental features which are now regular features
-
-<!-- todo: in a later PR, move these items from here into regular articles -->
-
-These features have been promoted from Experimental to regular features, and have been removed from **Settings** > **Experiments**.
-
-*  [Turn on new CSS grid debugging features][DevtoolsCssGrid] - removed from Experimental status starting with Microsoft Edge 89.
-
-*  [Match keyboard shortcuts from Microsoft Visual Studio Code][DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode] - removed from Experimental status starting with Microsoft Edge 86.
-
-*  [Turn on support to move tabs between panels][DevtoolsCustomizeIndex] - removed from Experimental status starting with Microsoft Edge 85.
-
-*  [3D View][Devtools3dViewIndex] - removed from Experimental status starting with Microsoft Edge 83.
-
-*  The items in the following subsections.
-
-### Enable + button tab menus to open more tools
-<!-- not in Experiments 94 -->
-
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
-
-You can now open more tools using the new **More Tools** (`+`) icon.  After you turn on the **Enable + button tab menus to open more tools** experiment and reload DevTools, a plus sign (`+`) displays to the right of the tab group at the top of the DevTools.  To display a list of other tools that you can add to the tab bar, select the **More Tools** (`+`) icon.
-
-:::image type="content" source="../media/experiments-more-tools-button.msft.png" alt-text="More Tools in the top pane" lightbox="../media/experiments-more-tools-button.msft.png":::
-
-### Enable Welcome tab
-<!-- not in Experiments 94 -->
-
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
-
-This experiment replaces the **What's New** tool with the new **Welcome** tool.  It displays a refreshed design for the following content.
-
-*   Links to developer docs
-*   Latest features
-*   Release notes
-*   Option to contact the Microsoft Edge DevTools team
-
-The **Welcome** tool opens automatically after each update to Microsoft Edge.  To prevent the display of the **Welcome** tool after each update, clear the checkbox next to **Open tab after each update** under the **Welcome** tool title.
-
-If you prefer the original **What's New** tool, navigate to [Settings][DevtoolsCustomizeIndexSettings] > **Experiments** and remove the checkbox next to **Enable Welcome tab**.
-
-:::image type="content" source="../media/experiments-welcome.msft.png" alt-text="Welcome tool" lightbox="../media/experiments-welcome.msft.png":::
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
 
 <!-- ====================================================================== -->
-### Enable new CSS Flexbox debugging features
-<!-- not in Experiments page as of 94 -->
+## Automatically pretty print in the Microsoft Edge Sources Panel
 
-This was an Experiment starting with Microsoft Edge version 89, and is a regular feature as of version 94.<!-- which release changed this from Experimental?-->
+When this experiment is turned on, when you display a minified file in the Sources panel, the file is opened in a single tab in the Sources panel, pretty-printed.
 
-This feature provides many new visualizations to help you debug CSS Flexbox layouts.
+When this experiment is turned off, a UI prompt with a button asks you whether to pretty-print the file.  The file is opened in an additional tab which has an appended suffix of **:formatted**.
 
-#### Displaying persistent overlays on Flexbox layouts with the Inspect tool
+*  A _minified_ file is concatenated into a single long line.
+*  In contrast, _pretty print_ presents the contents of a file in an indented, more human-readable format.
 
-The **Inspect** tool provides a quick way to identify and visualize CSS Flexbox layouts in a website by hovering on them with the mouse.  Select the **Inspect** (![Inspect](../media/inspect-icon.msft.png)) icon in the top-left corner of DevTools.  Then, while debugging the website, hover on a flex container to display outlines around the flex container.
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
 
-:::image type="content" source="../media/flexbox-hover.msft.png" alt-text="Display Flexbox containers with the Inspect tool" lightbox="../media/flexbox-hover.msft.png":::
 
-#### Displaying persistent overlays on Flexbox layouts
-
-In Microsoft Edge version 89 or later, the CSS Flexbox feature offers the option to turn on persistent overlays on Flexbox layouts.  Persistent overlays provide the following benefits:
-*   Persistent overlays remain visible on the webpage as you scroll, move your mouse, and use other features of the DevTools.
-*   Multiple persistent overlays can be used at the same time, to allow you to review several Flexbox layouts at once.
-*   Persistent overlays offer color configuration options.
-
-To toggle persistent overlays on Flexbox layout, do either of the following:
-*   Select the **Flexbox** oval icon next to any Flexbox container displayed in the DOM tree of the **Elements** tool.
-*   Open the new **Layout** panel located in the **Elements** tool, and select the checkbox next to each Flexbox container you want to highlight.
-
-:::image type="content" source="../media/flexbox-overlay.msft.png" alt-text="Flex icons and Layout panel in DevTools" lightbox="../media/flexbox-overlay.msft.png":::
-
-#### Configuring persistent overlays
-
-To configure options for persistent overlays for CSS grids or Flexbox layouts, use the **Layout** pane.  The **Layout** pane is located in the **Elements** tool next to the **Styles** and **Computed** panes.
-
-:::image type="content" source="../media/flexbox-layout.msft.png" alt-text="Layout panel" lightbox="../media/flexbox-layout.msft.png":::
+<!-- ============================================================================================================================================ -->
+<!-- >> [!WARNING]
+> These experiments are particularly unstable. Enable at your own risk. -->
 
 
 <!-- ====================================================================== -->
-<!-- links -->
-[OpenSourcesInVSCode]: ../sources/opening-sources-in-vscode.md "Opening source files in Visual Studio Code"
-[Devtools3dViewIndex]: ../3d-view/index.md "3D View | Microsoft Docs"
-[DevtoolsCssGrid]: ../css/grid.md "Inspect CSS Grid in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeIndex]: ../customize/index.md "Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevToolsCustomizeIndexSettings]: ../customize/index.md#settings "Settings - Customize Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsCustomizeShortcutsEditKeyboardShortcutsForAnyActionDevtools]: ../customize/shortcuts.md#edit-the-keyboard-shortcut-for-a-devtools-action "Edit the keyboard shortcut for a DevTools action | Microsoft Docs"
-[DevtoolsCustomizeShortcutsMatchKeyboardShortcutsDevtoolsMicrosoftVisualStudioCode]: ../customize/shortcuts.md#match-keyboard-shortcuts-from-visual-studio-code "Match keyboard shortcuts from Microsoft Visual Studio Code | Microsoft Docs"
-[DevtoolsDeviceModeDualScreenAndFoldables]: ../device-mode/dual-screen-and-foldables.md "Emulate dual-screen and foldable devices in Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsDeviceModeIndexSimulateMobileViewport]: ../device-mode/index.md#simulate-a-mobile-viewport "Simulate Mobile Devices with Device Mode in Microsoft Edge DevTools | Microsoft Edge"
-[DevtoolsInspectStylesEditFonts]: ../inspect-styles/edit-fonts.md "Edit CSS font styles and settings in the Styles pane in DevTools | Microsoft Docs"
-[DevtoolsIssuesIndex]: ../issues/index.md "Find and fix problems using the Issues tool | Microsoft Docs"
-[DevtoolsOpenIndex]: ../open/index.md "Open Microsoft Edge DevTools | Microsoft Docs"
-[DevtoolsShortcutsIndex]: ../shortcuts/index.md "Microsoft Edge DevTools keyboard shortcuts | Microsoft Docs"
-<!-- external links: -->
-[MicrosoftEdgeMain]: https://www.microsoft.com/edge "Microsoft Edge"
-[TwitterEdgedevtools]: https://www.twitter.com/EdgeDevTools "Microsoft Edge DevTools | Twitter"
-[WebhintMain]: https://webhint.io "webhint"
+## Ignore List for JavaScript frames on Timeline
+
+Whether to include the Ignore list for JavaScript frames on the Timeline.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Input events on Timeline overview
+
+Controls whether to include Input events on the Timeline overview.
+<!-- todo: need text -->
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Live heap profile
+
+Controls whether to live-update the heap profile.
+<!-- todo: need text -->
+
+See also:
+* [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Sampling heap profiler timeline
+
+Controls whether to show the Sampling heap profiler timeline.
+<!-- todo: need text -->
+
+See also:
+* [Record heap snapshots using the Memory tool](../memory-problems/heap-snapshots.md)
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable keyboard shortcut editor
+
+Whether to enable editing keyboard shortcuts.
+
+See also:
+* [Customize keyboard shortcuts](../customize/shortcuts.md)
+
+Status:
+*  This checkbox is not present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Timeline: invalidation tracking
+
+Controls whether to show invalidation tracking on the Timeline.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Timeline: show all events
+
+Controls whether to show all events on the Timeline.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Timeline: V8 Runtime Call Stats on Timeline
+
+Controls whether to show v8 runtime call stats on the Timeline.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Timeline: Replay input events
+
+Controls whether to replay input events on the Timeline.
+
+Status:
+*  This checkbox is present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.
+
+
+<!-- ====================================================================== -->
+## Enable instrumentation breakpoints
+
+Whether to halt at test breakpoints.  This experiment makes breakpoints more reliable.
+
+See also:
+* [Enable synchronization on instrumentation breakpoints](https://chromium-review.googlesource.com/c/devtools/devtools-frontend/+/3470237)
+* [The first time source files are loaded, breakpoints might not trigger](https://bugs.chromium.org/p/chromium/issues/detail?id=1133307&q=%22instrumentation%20breakpoints%22&can=2)
+
+Status:
+*  This checkbox is not present in Microsoft Edge Stable v102.
+*  This checkbox is present in Microsoft Edge Canary v105.

@@ -1,16 +1,15 @@
 ---
-description: The Performance monitor tool provides real-time performance metrics to help investigate performance issues.
-title: Performance monitor
+title: Measure runtime performance of a page using the Performance monitor tool
+description: The Performance monitor tool in DevTools provides real-time performance metrics to help investigate performance issues.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 10/28/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 10/28/2021
 ---
-# Performance monitor
+# Measure runtime performance of a page using the Performance monitor tool
 
-Use the **Performance monitor** tool in Microsoft Edge DevTools to get a real-time view of the runtime performance of a webpage.
+Use the **Performance monitor** tool to get a real-time view of the runtime performance of a webpage.
 
 The **Performance monitor** tool helps determine where performance problems come from.  There are various reasons why a website might run slowly.  This tool provides clues to understand whether the problems are related to causes such as the following:
 *  High memory or CPU usage.
@@ -23,15 +22,15 @@ The **Performance monitor** tool helps determine where performance problems come
 
 To open the Performance monitor:
 
-1. [Open DevTools](../open/index.md), such as by pressing `F12`.
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press `Ctrl`+`Shift`+`I` (Windows, Linux) or `Command`+`Option`+`I` (macOS).  DevTools opens.
 
-1. Click **More Tools** (`+`), and then select **Performance monitor**.
+1. In DevTools, on the main toolbar, select the **Performance monitor** tab.  If that tab isn't visible, click the **More tabs** (![More tabs icon.](../media/more-tabs-icon-light-theme.png)) button, or else the **More Tools** (![More Tools icon.](../media/more-tools-icon-light-theme.png)) button.
 
-:::image type="content" source="../media/performance-monitor-tool/open-performance-monitor.png" alt-text="The More Tools menu, showing the Performance monitor menu command.":::
+![The More Tools menu, showing the Performance monitor menu command.](../media/performance-monitor-tool/open-performance-monitor.png)
 
 The Performance monitor shows graphs of various performance metrics that update in real time.
 
-:::image type="content" source="../media/performance-monitor-tool/performance-monitor-first-open.png" alt-text="What the Performance monitor tool looks like when it is first opened." lightbox="../media/performance-monitor-tool/performance-monitor-first-open.png":::
+![What the Performance monitor tool looks like when it is first opened.](../media/performance-monitor-tool/performance-monitor-first-open.png)
 
 
 <!-- ====================================================================== -->
@@ -52,4 +51,4 @@ The **Performance monitor** tool shows three performance metrics by default, and
 
 To enable or disable any of the available performance metrics, click the labels in the side bar.
 
-:::image type="content" source="../media/performance-monitor-tool/performance-monitor-metrics.png" alt-text="The Performance monitor sidebar, showing various metrics that can be toggled." lightbox="../media/performance-monitor-tool/performance-monitor-metrics.png":::
+![The Performance monitor sidebar, showing various metrics that can be toggled.](../media/performance-monitor-tool/performance-monitor-metrics.png)

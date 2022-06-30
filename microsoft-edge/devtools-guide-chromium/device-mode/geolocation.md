@@ -1,12 +1,11 @@
 ---
-description: Open the Sensors tool in DevTools and select coordinates from the Geolocation list.
 title: Override geolocation with the Sensors tool
+description: Open the Sensors tool in DevTools and select coordinates from the Geolocation list.
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 05/04/2021
-ms.topic: article
+ms.topic: conceptual
 ms.prod: microsoft-edge
-keywords: microsoft edge, web development, f12 tools, devtools
+ms.date: 05/04/2021
 ---
 <!-- Copyright Kayce Basques
 
@@ -27,29 +26,28 @@ Many websites take advantage of user location in order to provide a more relevan
 
 <!--todo: add link to user location section when available -->
 
-If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.  To override your geolocation in Microsoft Edge DevTools, complete the following actions.
+If you are building a UI that changes depending on where the user is located, you probably want to make sure that the site behaves correctly in different places around the world.  To override your geolocation in Microsoft Edge DevTools:
 
-1.  Select `Control`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
+1. Press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS) to open the **Command Menu**.
 
-    :::image type="content" source="../media/device-mode-console-command-menu.msft.png" alt-text="Screenshot of the Command Menu.":::
+   ![The Command Menu.](../media/device-mode-console-command-menu.msft.png)
 
-1.  Type `sensors`, select **Panel: Show Sensors**, and then select `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
-1.  From the **Geolocation** list select one of the preset cities, like `Tokyo`, or choose **Custom location** to enter custom longitude and latitude coordinates, or choose **Location unavailable** to display how your site behaves when the user's location is not available.
+1. Type `sensors`, select **Panel: Show Sensors**, and then press `Enter`.  The **Sensors** tool opens at the bottom of the DevTools window.
 
-    :::image type="content" source="../media/device-mode-console-sensors-geolocation-tokyo.msft.png" alt-text="Screenshot of selecting Tokyo from the Geolocation list.":::
+1. Click the **Location** dropdown list, and then:
+   *  Select a city, such as `Tokyo`.
+   *  Click **Other** to enter custom longitude and latitude coordinates.
+   *  Click **Location unavailable** to see how your site behaves when the user's location isn't available.
+
+   ![Selecting Tokyo from the Location list.](../media/device-mode-console-sensors-geolocation-tokyo.msft.png)
 
 <!-- /web/fundamentals/native-hardware/user-location/index -->
 
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google][GoogleSitePolicies] and used according to terms described in the [Creative Commons Attribution 4.0 International License][CCA4IL].
-> The original page is found [here](https://developers.google.com/web/tools/chrome-devtools/device-mode/geolocation) and is authored by [Kayce Basques][KayceBasques] (Technical Writer, Chrome DevTools \& Lighthouse).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
+> The original page is found [here](https://developer.chrome.com/docs/devtools/device-mode/geolocation/) and is authored by [Kayce Basques](https://developers.google.com/web/resources/contributors#kayce-basques) (Technical Writer, Chrome DevTools \& Lighthouse).
 
-[![Creative Commons License][CCby4Image]][CCA4IL]
-This work is licensed under a [Creative Commons Attribution 4.0 International License][CCA4IL].
-
-[CCA4IL]: https://creativecommons.org/licenses/by/4.0
-[CCby4Image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[GoogleSitePolicies]: https://developers.google.com/terms/site-policies
-[KayceBasques]: https://developers.google.com/web/resources/contributors#kayce-basques
+[![Creative Commons License.](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
