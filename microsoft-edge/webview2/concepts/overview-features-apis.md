@@ -97,7 +97,6 @@ The following are the main APIs for communicating between web and native code.
 <!-- ------------------------------ -->
 #### Host/web object sharing
 
-<!-- define object sharing.  selected methods on a host platform can be called by web-side by sharing specified objects. -->
 WebView2 enables objects defined in native code to be passed to the web. These are called host objects, which can be projected into JavaScript so that you can trigger the native object methods from web side code, or as a result of user interaction on the web-side of your app. By doing so, you can avoid re-implementing your native objects' methods in your web-side code. 
 
 ##### [C#](#tab/c-sharp)
@@ -118,12 +117,7 @@ WebView2 enables objects defined in native code to be passed to the web. These a
 <!-- ------------------------------ -->
 #### Script execution
 
-<!-- what kind of script, any JavaScript statements/objects/methods?  Where is the script executed?  what's this heading referring to? -->
 Allows host app to add JavaScript in the web content within the WebView2 control. 
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -138,6 +132,7 @@ See also:
 * [ICoreWebView2::ExecuteScript method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#executescript)
 * [ICoreWebView2::RemoveScriptToExecuteOnDocumentCreated method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#removescripttoexecuteondocumentcreated)
 * [ICoreWebView2Settings::IsScriptEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isscriptenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isscriptenabled)
+*  ICoreWebView2Frame2::ExecuteScript
 
 ---
 
@@ -145,13 +140,7 @@ See also:
 <!-- ------------------------------ -->
 #### Web messaging
 
-<!-- what is "web messaging"?  sending messages from wv2 control to http server, then handling the response from the server.  the host app uses the wv2 ctrl to send msgs to http server.  why is messaging needed for a hybrid/web app?  what's involved, in summary? -->
 You can send messages (string or JSON) from the host app to the web content within the WebView2 control and from the web content within the WebView2 control to the host app. 
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -168,6 +157,9 @@ See also:
 * [ICoreWebView2::WebMessageReceived event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_webmessagereceived), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_webmessagereceived)
    * [ICoreWebView2WebMessageReceivedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2webmessagereceivedeventargs)
 * [ICoreWebView2Settings::IsWebMessageEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_iswebmessageenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_iswebmessageenabled)
+*  ICoreWebView2Frame2::PostWebMessageAsJson
+*  ICoreWebView2Frame2::PostWebMessageAsString
+*  ICoreWebView2Frame2::add_WebMessageReceived/remove_WebMessageReceived
 
 ---
 
@@ -203,11 +195,6 @@ The WebView2 control gives your host app access to many browser features, such a
 
 You can configure custom print settings and print to PDF.  
 
-<!--
-See also:
-* []()
--->
-
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2.PrintToPdfAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.printtopdfasync)
@@ -229,11 +216,9 @@ See also:
 #### Cookies
 
 You can use cookies in WebView2 to manage user sessions, store user personalization preferences, and track user behavior.
-<!-- what's cookies, what are they used for, what should your app do with them.  cookies are used for local storage of app state such as login, queries, ... to use cookies, your wv2 host app -->
 
 See also:
 * [View, edit, and delete cookies](/microsoft-edge/devtools-guide-chromium/storage/cookies)
-<!-- no WebView2 page with "cookie" in title -->
 
 ##### [C#](#tab/c-sharp)
 
@@ -258,14 +243,6 @@ See also:
 #### Image capture
 
 In WebView2 you can capture screenshots and indicate the format to save the image as.
-<!-- benefit?  why do this?  
-This way, when your wv2 app is running and the user presses Alt+PrtScn, XYZ will ... -->
-<!-- Capturing images using the key press combination `Ctrl`+`Shift`+`S` (TODO: confirm)  state macOS key combination too -->
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -284,12 +261,6 @@ See also:
 #### Downloads
 
 You can manage the download experience in WebView2 by allowing/blocking downloads based on different metadata and changing the download location. You can also configure a custom download UI or customize the default UI. 
-
-<!--
-See also:
-* []()
--->
-
 
 ##### [C#](#tab/c-sharp)
 
@@ -324,6 +295,7 @@ Modify Default Experience:
 * [ICoreWebView2_9::DefaultDownloadDialogCornerAlignment property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogcorneralignment), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogcorneralignment)
    * [COREWEBVIEW2_DEFAULT_DOWNLOAD_DIALOG_CORNER_ALIGNMENT enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_default_download_dialog_corner_alignment)
 * [ICoreWebView2_9::DefaultDownloadDialogMargin property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#get_defaultdownloaddialogmargin), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_9#put_defaultdownloaddialogmargin)
+*  ICoreWebView2Profile::get_DefaultDownloadFolderPath/put_DefaultDownloadFolderPath
 
 Custom Download Experience:
 * [ICoreWebView2_4::DownloadStarting event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#add_downloadstarting), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_4#remove_downloadstarting)
@@ -338,13 +310,7 @@ Custom Download Experience:
 <!-- ------------------------------ -->
 #### Permissions
 
-<!-- TODO: does WV2 ever show the dialogs? What can you do with the dialogs? -->
 Different web pages may ask you for permissions to access some privileged resources (e.g. geolocation, camera, microphone, etc.). Using the WebView2 permissions APIs, your host app can programmatically respond to permissions requests and/or replace the default permissions UI with its own UI. 
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -359,6 +325,7 @@ See also:
    * [ICoreWebView2PermissionRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2permissionrequestedeventargs)
 * [COREWEBVIEW2_PERMISSION_KIND enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_permission_kind)
 * [COREWEBVIEW2_PERMISSION_STATE enum](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#corewebview2_permission_state)
+*  ICoreWebView2Frame3::add_PermissionRequested/remove_PermissionRequested
 
 ---
 
@@ -373,16 +340,17 @@ See also:
 
 ##### [C#](#tab/c-sharp)
 
-<!-- TODO: copy more links from Context Menus article -->
-
 * [CoreWebView2.ContextMenuRequested Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.contextmenurequested)
-* [CoreWebView2.CallDevToolsProtocolMethodForSessionAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.calldevtoolsprotocolmethodforsessionasync)
 * [CoreWebView2Settings.AreDefaultContextMenusEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.aredefaultcontextmenusenabled)
 
 ##### [C++](#tab/cpp)
 
+*  ICoreWebView2Environment9::CreateContextMenuItem
+*  ICoreWebView2ContextMenuItem
+*  ICoreWebView2ContextMenuItemCollection
+*  ICoreWebView2ContextMenuTarget
 * [ICoreWebView2_11::ContextMenuRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_11#add_contextmenurequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_11#remove_contextmenurequested)
-* [ICoreWebView2_11::CallDevToolsProtocolMethodForSession method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_11#calldevtoolsprotocolmethodforsession)
+   *  ICoreWebView2ContextMenuRequestedEventArgs
 * [ICoreWebView2Settings::AreDefaultContextMenusEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_aredefaultcontextmenusenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_aredefaultcontextmenusenabled)
 
 ---
@@ -464,12 +432,6 @@ See also:
 #### Audio
 
 WebView2 has methods to mute and unmute all audio and events to find out when there is audio playing.
-<!-- what kind of audio settings?  how does this enhance end-user UX? -->
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -494,11 +456,6 @@ See also:
 In WebView2 you can enable/disable swiping gesture navigation on touch input enabled devices. This allows end users to:
 *  Swipe left/right (swipe horizontally) to navigate to previous/next page in navigation history.
 *  Pull to refresh (swipe vertically) the current page. (This feature is currently disabled by default in the browser, to enable in WebView2, set AdditionalBrowserArguments property with --pull-to-refresh switch).
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -546,6 +503,50 @@ In WebView2 you can find out when when an HTML element enters or leaves fullscre
 
 ---
 
+<!-- ------------------------------ -->
+#### PDF toolbar
+
+In the browser PDF viewer there is a PDF specific toolbar along the top. In WebView2 you can hide some of the items in the PDF viewer toolbar.
+
+##### [C#](#tab/c-sharp)
+
+*  
+
+##### [C++](#tab/cpp)
+
+* ICoreWebView2Settings7::get_HiddenPdfToolbarItems/put_HiddenPdfToolbarItems
+
+---
+
+<!-- ------------------------------ -->
+#### Theming
+
+In WebView2 you can customize the color theme as light, dark, or system.
+
+##### [C#](#tab/c-sharp)
+
+*  
+
+##### [C++](#tab/cpp)
+
+* ICoreWebView2Profile::get_PreferredcolorScheme/put_PreferredColorScheme
+
+---
+
+<!-- ------------------------------ -->
+#### Language
+
+You can set the default display language for WebView2 which applies to browser UI (such as context menu and dialogs) and `accept-language` HTTP header which WebView2 sends to websites. 
+
+##### [C#](#tab/c-sharp)
+
+*  
+
+##### [C++](#tab/cpp)
+
+* ICoreWebView2EnvironmentOptions::get_Language/put_Language
+
+---
 
 <!-- ------------------------------ -->
 #### New window
@@ -589,12 +590,6 @@ WebView2 provides functionality to handle the JavaScript function `window.close(
 ## Process management
 
 Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
-<!-- why, what's the benefit?  what's involved, what kind of considerations & techniques/strategies? -->
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -729,7 +724,10 @@ The `NavigationStarting` event allows the app to cancel navigations in WebView2,
 
 * [ICoreWebView2::NavigationStarting event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationstarting), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationstarting)
    * [ICoreWebView2NavigationStartingEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationstartingeventargs)
+   *  ICoreWebView2NavigationStartingEventArgs2
 * [ICoreWebView2::FrameNavigationStarting event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationstarting), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationstarting)
+*  ICoreWebView2Frame2::add_NavigationStarting/remove_NavigationStarting
+   *  ICoreWebView2NavigationStartingEventArgs2
 
 ---
 
@@ -760,7 +758,11 @@ See also:
    * [ICoreWebView2DOMContentLoadedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2domcontentloadedeventargs)
 * [ICoreWebView2::NavigationCompleted event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationcompleted), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationcompleted)
    * [ICoreWebView2NavigationCompletedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs)
+   *  ICoreWebView2NavigationCompletedEventArgs2 interface
 * [ICoreWebView2::FrameNavigationCompleted event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)
+*  ICoreWebView2Frame2::add_ContentLoading/remove_ContentLoading
+*  ICoreWebView2Frame2::add_DOMContentLoaded/remove_DOMContentLoaded
+*  ICoreWebView2Frame2::add_NavigationCompleted/remove_NavigationCompleted
 
 ---
 
@@ -793,14 +795,9 @@ See also:
 <!-- ------------------------------ -->
 #### Client certificates
 
-Use the WebView2 certificates APIs to manage certificates in WebView2 controls.<!--TODO: confirm-->
-<!-- say something about how you (can) use certs, why would you do that?  how does it basically work?0
-By handling certs, your app can provide features A/B/C.  Your host app does X, and then the server does Y. -->
+In WebView2 you can use the Client Certificate API to trust the certificate at application level to render the page without prompting the user about the SSL errors or cancel the request. 
 
-<!--
-See also:
-* []()
--->
+
 
 ##### [C#](#tab/c-sharp)
 
@@ -816,6 +813,20 @@ See also:
    * [ICoreWebView2ClientCertificateCollection interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificatecollection)<!--n/a for c#-->
 * [ICoreWebView2_5::ClientCertificateRequested event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_5#add_clientcertificaterequested), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_5#remove_clientcertificaterequested)
    * [ICoreWebView2ClientCertificateRequestedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2clientcertificaterequestedeventargs)
+
+---
+
+<!-- ------------------------------ -->
+#### Server certificates
+
+In WebView2 you can use the Server Certificate API to trust the server's TLS certificate at the application level and render the page without prompting the user about the TLS error or cancel the request. 
+
+##### [C#](#tab/c-sharp)
+
+
+##### [C++](#tab/cpp)
+
+*  ICoreWebView2_14 interface
 
 ---
 
@@ -1172,7 +1183,9 @@ See also:
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2Environment7::UserDataFolder property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
-
+*  ICoreWebView2EnvironmentOptions2::get_ExclusiveUserDataFolderAccess/put_ExclusiveUserDataFolderAccess
+*  ICoreWebView2Profile2 interface
+*  ICoreWebView2Environment10 interface
 ---
 
 <!-- ====================================================================== -->
