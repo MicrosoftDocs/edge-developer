@@ -39,23 +39,23 @@ Visual vs. Windowed is about how the application works:
 
 
 <!-- ====================================================================== -->
-## h2
+## First major heading
 
 
-#### h3 (tagged as h4)
+#### Minor heading
 
 
-#### h3 (tagged as h4)
+#### Minor heading
 
 
 <!-- ====================================================================== -->
-## h2
+## Second major heading
 
 
-#### h3 (tagged as h4)
+#### Minor heading
 
 
-#### h3 (tagged as h4)
+#### Minor heading
 
 
 <!-- ====================================================================== -->
