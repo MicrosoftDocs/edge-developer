@@ -29,9 +29,6 @@ To quickly open the **Search** tool:
 
 The **Search** tool appears in the **Drawer**, with a search toolbar:
 
-<!-- todo: remove one -->
-![The Search tool, with the search toolbar](../media/search-tool/search-tool-first-open.png)
-
 ![The Search tool, with the search toolbar](../media/search-tool/search-tool-first-open-reduced.png)
 
 See also [Global keyboard shortcuts](../shortcuts/index.md#global-keyboard-shortcuts).

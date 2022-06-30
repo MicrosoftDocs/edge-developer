@@ -60,11 +60,8 @@ For example, to pause or continue running a script in Visual Studio Code, you se
 
 1. To save your new keyboard shortcut, select the checkmark (![CheckmarkKeyboardShortcut.](../media/checkmark-keyboard-shortcut-icon.msft.png)) icon.
 
-   <!-- todo: remove one -->
-   ![Select the checkmark icon to save your new keyboard shortcut](../media/experiments-custom-keyboard-shortcuts-enter-key.msft.png)
-   
    ![Select the checkmark icon to save your new keyboard shortcut](../media/experiments-custom-keyboard-shortcuts-save-shortcut.msft.png)
-   
+
 1. Select your new keyboard shortcut to trigger the action in DevTools.
 
 
