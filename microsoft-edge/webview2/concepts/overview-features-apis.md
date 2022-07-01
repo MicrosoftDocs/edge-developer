@@ -12,6 +12,8 @@ ms.date: 06/30/2022
 
 When you add WebView2 to your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
 
+Browser features that your app has access to by hosting the WebView2 control:
+
 | Feature area | Purpose |
 |---|---|
 | [Main classes: Environment, Controller, and Core](#main-classes-environment-controller-and-core) | The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These large classes expose a wide range of APIs that your host app can access to provide the below categories of browser-related features for your users. |
