@@ -12,7 +12,7 @@ ms.date: 06/30/2022
 
 When you add WebView2 to your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
 
-Browser features that your app has access to by hosting the WebView2 control:
+Browser features and APIs that your app has access to by hosting the WebView2 control:
 
 | Feature area | Purpose |
 |---|---|
