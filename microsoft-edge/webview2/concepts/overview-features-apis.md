@@ -12,16 +12,13 @@ ms.date: 06/30/2022
 
 When you add WebView2 to your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
 
-This article provides:
+<!-- This article provides:
 *  A high-level understanding of the capabilities of the WebView2 technology.
 *  Concepts about what you can do with the WebView2 APIs.
 *  High-level description of WebView2 technology for app developers.
-*  Better fundamentals and understanding of WebView2 technology.
+*  Better fundamentals and understanding of WebView2 technology. -->
 
-
-<!-- ====================================================================== -->
-## Summary of WebView2 features and APIs
-<!-- TODO: change to "feature areas?  add "API(s)"? -->
+<!-- #### Summary of WebView2 features and APIs -->
 
 | Feature | Purpose |
 |---|---|
