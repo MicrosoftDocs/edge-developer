@@ -29,7 +29,6 @@ Browser features and APIs that your app has access to by hosting the WebView2 co
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
-| [Misc.](#misc) | Read settings and handle deferral.<!--define/hints--> |
 
 
 <!-- ====================================================================== -->
@@ -724,9 +723,9 @@ See also:
 * [CoreWebView2.NavigationCompleted Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.navigationcompleted)
    * [CoreWebView2NavigationCompletedEventArgs Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2navigationcompletedeventargs)
 * [CoreWebView2.FrameNavigationCompleted Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.framenavigationcompleted)
-* [CoreWebView2Frame.ContentLoading Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.contentloading)<!--new-->
-* [CoreWebView2Frame.DOMContentLoaded Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded)<!--new-->
-* [CoreWebView2Frame.NavigationCompleted Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)<!--new-->
+* [CoreWebView2Frame.ContentLoading Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.contentloading)
+* [CoreWebView2Frame.DOMContentLoaded Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.domcontentloaded)
+* [CoreWebView2Frame.NavigationCompleted Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2frame.navigationcompleted)
 
 ##### [C++](#tab/cpp)
 
@@ -736,11 +735,11 @@ See also:
    * [ICoreWebView2DOMContentLoadedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2domcontentloadedeventargs)
 * [ICoreWebView2::NavigationCompleted event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_navigationcompleted), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_navigationcompleted)
    * [ICoreWebView2NavigationCompletedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs)
-   * [ICoreWebView2NavigationCompletedEventArgs2 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2)<!--new-->
+   * [ICoreWebView2NavigationCompletedEventArgs2 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2navigationcompletedeventargs2)
 * [ICoreWebView2::FrameNavigationCompleted event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#add_framenavigationcompleted), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#remove_framenavigationcompleted)
-* [ICoreWebView2Frame2::ContentLoading event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_contentloading), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_contentloading)<!--new-->
-* [ICoreWebView2Frame2::DOMContentLoaded event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_domcontentloaded), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_domcontentloaded)<!--new-->
-* [ICoreWebView2Frame2::NavigationCompleted event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationcompleted), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationcompleted)<!--new-->
+* [ICoreWebView2Frame2::ContentLoading event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_contentloading), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_contentloading)
+* [ICoreWebView2Frame2::DOMContentLoaded event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_domcontentloaded), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_domcontentloaded)
+* [ICoreWebView2Frame2::NavigationCompleted event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#add_navigationcompleted), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2frame2#remove_navigationcompleted)
 
 ---
 
@@ -797,13 +796,13 @@ In WebView2, you can use the Server Certificate API to trust the server's TLS ce
 
 ##### [C#](#tab/c-sharp)
 
-* [CoreWebView2.ServerCertificateErrorDetected Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.servercertificateerrordetected)<!--new-->
-* [CoreWebView2.ClearServerCertificateErrorActionsAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clearservercertificateerroractionsasync)<!--new-->
+* [CoreWebView2.ServerCertificateErrorDetected Event](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.servercertificateerrordetected)
+* [CoreWebView2.ClearServerCertificateErrorActionsAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clearservercertificateerroractionsasync)
 
 ##### [C++](#tab/cpp)
 
-* [ICoreWebView2_14::ServerCertificateErrorDetected event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#add_servercertificateerrordetected), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#remove_servercertificateerrordetected)<!--new-->
-* [ICoreWebView2_14::ClearServerCertificateErrorActions method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#clearservercertificateerroractions)<!--new-->
+* [ICoreWebView2_14::ServerCertificateErrorDetected event (add](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#add_servercertificateerrordetected), [remove)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#remove_servercertificateerrordetected)
+* [ICoreWebView2_14::ClearServerCertificateErrorActions method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_14#clearservercertificateerroractions)
 
 ---
 
@@ -1142,20 +1141,18 @@ See also:
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
-* [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.exclusiveuserdatafolderaccess)<!--new-->
-* [CoreWebView2Profile Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile)<!--new-->
-   * `ClearBrowsingDataAsync` Methods
-* [CoreWebView2Environment Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)<!--new-->
-   * [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
-* [CoreWebView2Environment interface](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)<!--new--><!--TODO: why is this link here, which members?-->
+* [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.exclusiveuserdatafolderaccess)
+* [CoreWebView2Profile.ClearBrowsingDataAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync)
+* [CoreWebView2Environment interface](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)<!--TODO: why is this link here, which members?-->
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2Environment7::UserDataFolder property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment7#get_userdatafolder)<!--no put-->
-* [ICoreWebView2EnvironmentOptions2::ExclusiveUserDataFolderAccess property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#get_exclusiveuserdatafolderaccess), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#put_exclusiveuserdatafolderaccess)<!--new-->
-* [ICoreWebView2Profile2 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2)<!--new-->
-   * `ClearBrowsingData` methods
-* [ICoreWebView2Environment10 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10)<!--new--><!--TODO: why is this link here, which members?-->
+* [ICoreWebView2EnvironmentOptions2::ExclusiveUserDataFolderAccess property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#get_exclusiveuserdatafolderaccess), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions2#put_exclusiveuserdatafolderaccess)
+* [ICoreWebView2Profile2::ClearBrowsingData method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22#clearbrowsingdata)
+* [ICoreWebView2Profile2::ClearBrowsingDataAll method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22#clearbrowsingdataall)
+* [ICoreWebView2Profile2::ClearBrowsingDataInTimeRange method](https://docs.microsoft.com/en-us/microsoft-edge/webview2/reference/win32/icorewebview2profile2?view=webview2-1.0.1245.22#clearbrowsingdataintimerange)
+* [ICoreWebView2Environment10 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10)<!--TODO: why is this link here, which members?-->
 
 ---
 
