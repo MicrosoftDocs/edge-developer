@@ -1163,20 +1163,11 @@ See also:
 ## Performance and debugging
 
 Use these WebView2 features to optimize your host app's performance and to debug performance issues.  Your app listens for performance-related events for WebView2 controls and then handles them.
-<!-- Teach a little about this domain: Here's what to think of by the word "perf", "optimiz", tools, and debugging perf:
-Increasing perf for your app includes xyz.  Makes your app respond to user input actions quickly; prevents sluggish response.  Manage memory usage, responsiveness.  Tools help you analyze xyz & debug and test perf. -->
-These APIs help you analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness.
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
 <!--TODO: clarify note on IsBuiltInErrorPageEnabled: (probs for navigation and process)-->
 
-* [CoreWebView2Controller.IsVisible Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2controller.isvisible)
 * [CoreWebView2.MemoryUsageTargetLevel Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.memoryusagetargetlevel)
 * [CoreWebView2.TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
    * [CoreWebView2.IsSuspended Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
@@ -1186,7 +1177,6 @@ See also:
 
 ##### [C++](#tab/cpp)
 
-* [ICoreWebView2Controller::IsVisible property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#get_isvisible), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2controller#put_isvisible)
 * [ICoreWebView2Experimental5::MemoryUsageTargetLevel property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#get_memoryusagetargetlevel), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2experimental5#put_memoryusagetargetlevel)
 * [ICoreWebView2_3::TrySuspend method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#trysuspend)
    * [ICoreWebView2_3::IsSuspended property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
@@ -1238,36 +1228,6 @@ Receiver:
    * [ICoreWebView2DevToolsProtocolEventReceivedEventArgs interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2devtoolsprotocoleventreceivedeventargs)
 
 ---
-
-
-<!-- ====================================================================== -->
-## Misc.
-
-<!-- TODO: dissolve section -->
-
-<!-- description.  Addl opportunities for your app include xyz.  You'll also benefit from considering X. -->
-
-Read settings and handle deferral.<!--TODO: define these phrases by including key words as hints-->
-
-<!--
-See also:
-* []()
--->
-
-##### [C#](#tab/c-sharp)
-
-* [CoreWebView2.Settings Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.settings)
-* [CoreWebView2Deferral Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2deferral)
-
-##### [C++](#tab/cpp)
-
-* [ICoreWebView2::Settings property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#get_settings)<!--no put-->
-   * [ICoreWebView2StringCollection::Count property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2stringcollection#get_count)<!--no put--><!--n/a c#-->
-   * [ICoreWebView2StringCollection::GetValueAtIndex method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2stringcollection#getvalueatindex)<!--n/a c#-->
-* [ICoreWebView2Deferral interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2deferral)
-
----
-
 
 <!-- ====================================================================== -->
 ## See also
