@@ -12,15 +12,7 @@ ms.date: 06/30/2022
 
 When you add WebView2 to your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
 
-<!-- This article provides:
-*  A high-level understanding of the capabilities of the WebView2 technology.
-*  Concepts about what you can do with the WebView2 APIs.
-*  High-level description of WebView2 technology for app developers.
-*  Better fundamentals and understanding of WebView2 technology. -->
-
-<!-- #### Summary of WebView2 features and APIs -->
-
-| Feature | Purpose |
+| Feature area | Purpose |
 |---|---|
 | [Main classes: Environment, Controller, and Core](#main-classes-environment-controller-and-core) | The `CoreWebView2Environment`, `CoreWebView2Controller`, and `CoreWebView2` classes (or equivalent interfaces) work together so your app can host a WebView2 browser control and access its browser features.  These large classes expose a wide range of APIs that your host app can access to provide the below categories of browser-related features for your users. |
 | [Web/native interop](#webnative-interop) | Embed web content into native applications.  Communicate between native code and web code using simple messages, JavaScript code, and native objects. |
