@@ -29,7 +29,6 @@ Browser features and APIs that your app has access to by hosting the WebView2 co
 | [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
-| [Misc.](#misc) | Read settings and handle deferral.<!--define/hints--> |
 
 
 <!-- ====================================================================== -->
@@ -179,7 +178,7 @@ In WebView2 you can manage different JavaScript dialogs to suppress or replace t
 <!-- ====================================================================== -->
 ## Browser features
 
-The WebView2 control gives your host app access to many browser features, such as printing, cookies, and downloads.
+The WebView2 control gives your host app access to many browser features. You can modify or turn off these features.
 
 
 <!-- ------------------------------ -->
@@ -342,7 +341,7 @@ See also:
 #### Status bar
 
 <!-- why is this desirable, what kinds of changes for example, does this mean programmatically monitor? -->
-A status bar is located in the bottom left of the page and displays the state of the webpage being displayed. In WebView2 you can enable/disable the status bar, get the text in the status bar and find out when the status bar text has changed. 
+A status bar is located in the bottom left of the page and displays the state of the webpage being displayed. In WebView2 you can enable/disable the status bar, get the text in the status bar, and find out when the status bar text has changed. 
 
 <!--
 See also:
@@ -390,12 +389,6 @@ See also:
 #### Autofill
 
 In WebView2 you can leverage the browser's autofill functionality. You can enable/disable autofill for general information as well as for passwords. These two settings can be controlled independently of one another and allow applications to control the autofill feature.  
-<!-- what does "autofill functionality" mean?  how does this benefit end user? -->
-
-<!--
-See also:
-* []()
--->
 
 ##### [C#](#tab/c-sharp)
 
@@ -503,7 +496,7 @@ In the browser PDF viewer, there's a PDF-specific toolbar along the top.  In Web
 <!-- ------------------------------ -->
 #### Theming
 
-In WebView2, you can customize the color theme as auto (system), light, or dark.
+In WebView2, you can customize the color theme as system, light, or dark.
 
 ##### [C#](#tab/c-sharp)
 
@@ -518,9 +511,7 @@ In WebView2, you can customize the color theme as auto (system), light, or dark.
 <!-- ------------------------------ -->
 #### Language
 
-You can set:
-*  The default display language for WebView2, which applies to the browser UI (such as context menus and dialogs).
-*  The `accept-language` HTTP header, which WebView2 sends to websites. 
+You can set the default display language for WebView2 which applies to the browser UI (such as context menus and dialogs) and the `accept-language` HTTP header which WebView2 sends to websites. 
 
 ##### [C#](#tab/c-sharp)
 
@@ -576,8 +567,6 @@ WebView2 provides functionality to handle the JavaScript function `window.close(
 Get information about running WebView2 processes, exiting processes, and failed processes, so that your app can take action accordingly.
 
 ##### [C#](#tab/c-sharp)
-
-<!-- TODO: convert to h3s? -->
 
 Info:
 * [CoreWebView2.BrowserProcessId Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.browserprocessid)
@@ -746,7 +735,7 @@ See also:
 
 
 <!-- ------------------------------ -->
-#### Manage the network requests in WebView2
+#### Manage network requests in WebView2
 
 The `WebResourceRequested` event allows the app to intercept and override all network requests in WebView2.  The `WebResourceResponseReceived` event allows the app to monitor the request sent to and the response received from the network.
 
@@ -773,7 +762,7 @@ See also:
 <!-- ------------------------------ -->
 #### Client certificates
 
-In WebView2, you can use the Client Certificate API to trust the certificate at the application level.  This way, your host app can render the page without prompting the user about the SSL errors, or your host app can automatically cancel the request.
+In WebView2, you can use the Client Certificate API to select the client certificate at the application level.  This API allows you to show UI if desired, replace the default client certificate dialog prompt, programmatically query the certificates, and select a certificate from the list to respond to the server when WebView2 is making a request to a HTTP server that needs a client certificate for HTTP authentication. 
 
 ##### [C#](#tab/c-sharp)
 
@@ -846,6 +835,9 @@ Embed other webpages into your own webpage.  Detect when embedded webpages are c
 Learn how to handle basic authentication in WebView2 controls.
 <!-- what's the benefit for end users?  how does it essentially work? what's involved? -->
 
+See also:
+* [Basic authentication](https://docs.microsoft.com/en-us/microsoft-edge/webview2/concepts/basic-authentication?tabs=csharp)
+
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2HttpRequestHeaders Class](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2httprequestheaders)
@@ -892,7 +884,7 @@ If you're using a UI framework for your app, you should use the WebView2 element
 
 
 <!-- ====================================================================== -->
-## Window management
+### Window management
 
 WebView2 gives your app access to window-specific attributes, such as positioning, focus, and keyboard accelerators.
 
@@ -1044,7 +1036,7 @@ WebView2 can specify a default background color.  This can be any opaque color o
 
 
 <!-- ====================================================================== -->
-## Composition-based rendering
+### Composition-based rendering
 
 For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs that are specific to composition-based rendering.
 
@@ -1079,12 +1071,6 @@ WebView2 can connect its composition tree to an [IDCompositionVisual](https://do
 <!-- ------------------------------ -->
 #### Input
 
-<!-- old intro draft:
-Work with the mouse for input on a WebView2 control.
-Your app can offer rich support UX mouse left click, scroll, rightclick, click & drag.
-Your wv2 host app can offer full mouse support by handling XYZ events.  The wv2 control sends xyz events.  Your app listens for these events and handles them.  In response, your app can then XYZ.
--->
-
 Spatial input (mouse, touch, pen) is received by the application and must be sent to WebView2.  WebView2 notifies the app when the cursor should be updated based on the mouse position.
 
 ##### [C#](#tab/c-sharp)
@@ -1114,22 +1100,12 @@ Spatial input (mouse, touch, pen) is received by the application and must be sen
 
 By default, WebView2 will show up in the accessibility tree as a child of the parent HWND, for Win32/C++ apps.  WebView2 provides API to better position the WebView2 content relative to other elements in the application.
 
-##### [C#](#tab/c-sharp)
-
-Not applicable for C#.
-
-<!-- 
-* [CoreWebView2CompositionController.AutomationProvider Property] TODO: no C# link, ok?
-* [CoreWebView2Environment.GetAutomationProviderForWindow Method] TODO: no C# link, ok?
--->
-
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2CompositionController2::AutomationProvider property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2compositioncontroller2#get_automationprovider)<!--no put-->
 * [ICoreWebView2Environment4::GetAutomationProviderForWindow method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment4#getautomationproviderforwindow)<!--not in c#-->
 
 ---
-
 
 <!-- ====================================================================== -->
 ## User data
