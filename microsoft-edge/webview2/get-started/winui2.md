@@ -320,10 +320,10 @@ Package summary:
 ## WinUI WebView2 special considerations
 
 ### SmartScreen
-WebView2 uses SmartScreen to ensure your webview2 apps stay secure. If you would like to disable this, you may do so via environment variable.
+WebView2 uses SmartScreen to ensure your WebView2 apps stay secure. If you would like to disable this, you may do so via environment variable.
 
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
-    *  Note this must be set prior to CWV2Environment creation (first time WV2.Source set or EnsureCoreWebView2Async() called).
+    *  Note this must be set prior to CoreWebView2Environment creation (first time WV2.Source set or EnsureCoreWebView2Async() called).
 
 ### API Limitations
 Please note that the following interfaces are not accessible in both WinUI2 and WinUI3:
