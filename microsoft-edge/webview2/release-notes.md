@@ -43,6 +43,49 @@ Generally, release notes apply across Win32, .NET, and WinRT.  The APIs for the 
 * .NET [CoreWebView2 Class](/dotnet/api/microsoft.web.webview2.core.corewebview2).
 * WinRT [CoreWebView2 Class](/microsoft-edge/webview2/reference/winrt/microsoft_web_webview2_core/corewebview2).
 
+<!-- ====================================================================== -->
+## 1.0.1264.42
+
+Release Date: July 4, 2022
+
+[NuGet package for WebView2 SDK 1.0.1264.42](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1264.42)
+
+For full API compatibility, this version of the WebView2 SDK requires WebView2 Runtime version 103.1264.42 or higher.
+
+### General
+
+#### Promotions
+
+The following items are now stable:
+
+*   Added [ContextMenuRequested API](/microsoft-edge/webview2/reference/win32/icorewebview2_11?view=webview2-1.0.1245.22&preserve-view=true) to enable host app to create or modify their own context menu.
+
+<!-- ====================================================================== -->
+## 1.0.1305-prerelease
+
+Release Date: July 4, 2022
+
+[NuGet package for WebView2 SDK 1.0.1305-prelease](https://www.nuget.org/packages/Microsoft.Web.WebView2/1.0.1305-prerelease)
+
+For full API compatibility, this version of the WebView2 SDK requires Microsoft Edge version 105.0.1305.0 or higher.
+
+### General
+
+#### Promotions
+
+The following APIs are promoted to stable in this prerelease SDK:
+
+* The [Favicon API](#):
+   * `add_FaviconChanged`
+   * `remove_FaviconChanged`
+   * `get_FaviconUri`
+
+#### Bug fixes
+
+* Fixed an issue that `PrintToPdfAsync` may hang for long time. ([Issue #1974](https://github.com/MicrosoftEdge/WebView2Feedback/issues/1974))
+
+* Fixed regression where WebView2 would steal focus from the app when the WebView2 was made visible. ([Issue #862](https://github.com/MicrosoftEdge/WebView2Feedback/issues/862))
+
 
 <!-- ====================================================================== -->
 ## 1.0.1245.22
