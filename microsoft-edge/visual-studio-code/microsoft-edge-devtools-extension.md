@@ -18,7 +18,7 @@ The [Microsoft Edge DevTools extension for Visual Studio Code](https://aka.ms/de
 
 ![Microsoft Edge Developer Tools and browser preview showing in VS Code](media/devtools-extension-v201.msft.png)
 
-Once installed, it allows you to: 
+The extension allows you to 
 
 * Get live analysis of problems in your source code.
 * Start a new browser instance with developer tools for your project.
@@ -28,6 +28,7 @@ Once installed, it allows you to:
 * Analyse site traffic using the **Network tool**.
 * Log information, try out JavaScript and accesss the Window/DOM using Use the **Console tool**.
 * Inspect storage and Service Workers using the **Application tool**.
+* Use the extension in the Visual Studio Code debugging workflow 
 
 <!-- ====================================================================== -->
 ## Installing the Microsoft Edge DevTools extension
@@ -163,6 +164,19 @@ Using the command menu to turn CSS Mirror Editing on or off:
 
 CSS Mirroring also supports abstractions like Sass or CSS-in-JS when you have set up your project to produce sourcemaps. We have a tracking issue on GitHub and welcome any feedback on how this could be improved: [CSS Mirror Editing with Sourcemaps: Known Issues and Feedback](https://github.com/microsoft/vscode-edge-devtools/issues/965).
 
+## Network Tool integration
+
+The **Network Tool** allows you to monitor network traffic and change network conditions of your application right inside Visual Studio Code. 
+
+![The Network tool inside the Edge DevTools for Visual Studio Code extension](media/css-mirror-editing-command.msft.png)
+
+You can:
+
+* Analyse the network traffic and find out why some resources aren't loaded
+* Simulate different network conditions like being offline or having a slow connection
+* Disable any caching that might make it hard to debug your application.
+* Simulate different user agents to see how your product appears to a search engine bot or a browser you can't test in.
+
 <!-- ====================================================================== -->
 ## Console integration
 
@@ -180,8 +194,44 @@ If you launch the extension from the Run and Debug workflow, the [Debug Console 
 
 ![The DevTools Console is available when the extension is launched from a Run and Debug workflow.](media/edge-devtools-for-vscode-console-integration.png)
 
+
 <!-- ====================================================================== -->
-## Automatically opening the browser and DevTools when debugging in Visual Studio Code
+## Application Tool integration
+
+The **Application Tool** allows you to inspect the various parts of your application. 
+
+![The Application tool inside the Edge DevTools for Visual Studio Code extension](media/css-mirror-editing-command.msft.png)
+
+You can:
+
+* Check different storage options like Cookies, LocalStorage, SessionStorage and IndexedDB.
+* Analyze the cache of your application.
+* Analyze services like Notification, Payment handler or background sync.
+
+<!-- ====================================================================== -->
+## Use the extension with the Visual Studio Code debugging workflow
+
+JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger.
+
+1. To start debugging, do either of the following:
+   *  Press **F5**, or on the menu bar select the **Debug** icon and then select **Run and debug**.
+   *  Open the Visual Studio Code command palette and then select **Debug: Open Link**.
+    
+   ![Start Microsoft Edge DevTools from the JavaScript debugger.](media/edge-devtools-for-vscode-start-session.png)
+
+1. Select **Edge**.  On the debug toolbar, notice the **Inspect** button:
+
+   ![The Inspect button on the debug toolbar.](media/edge-devtools-for-vscode-inspect-button.png)
+
+1. Select **Inspect** to open Microsoft Edge DevTools inside Visual Studio Code.
+
+   The first time you select **Inspect**, the editor prompts you to install the extension, [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).
+
+   After the Microsoft Edge DevTools extension is installed, when you select **Inspect**, Microsoft Edge DevTools opens inside of Visual Studio Code:
+
+   ![The Inspect button opens Microsoft Edge DevTools inside Visual Studio Code.](media/edge-devtools-for-vscode-tools-inside.png)
+
+### Automatically opening the browser and DevTools when debugging in Visual Studio Code
 
 To debug your project, you might want to change the default page that opens in Microsoft Edge in Visual Studio Code.  To change the default page to your project's website:
 
@@ -237,29 +287,6 @@ Some settings have a note that reads **(reload required after changing)**.  For 
 
 1. In the **Microsoft Edge Tools** > **Targets** pane, select the **Launch Instance** button.  Microsoft Edge opens, and the **Edge DevTools** tab is displayed.
 
-
-<!-- ====================================================================== -->
-## Browser debugging with Microsoft Edge DevTools integration in Visual Studio Code
-
-JavaScript debugging is built in to Visual Studio Code.  You can debug in Chrome, Microsoft Edge, or Node.js without installing any other extensions.  If you debug using Microsoft Edge, you can start Microsoft Edge DevTools from the JavaScript debugger.
-
-1. To start debugging, do either of the following:
-   *  Press **F5**, or on the menu bar select the **Debug** icon and then select **Run and debug**.
-   *  Open the Visual Studio Code command palette and then select **Debug: Open Link**.
-    
-   ![Start Microsoft Edge DevTools from the JavaScript debugger.](media/edge-devtools-for-vscode-start-session.png)
-
-1. Select **Edge**.  On the debug toolbar, notice the **Inspect** button:
-
-   ![The Inspect button on the debug toolbar.](media/edge-devtools-for-vscode-inspect-button.png)
-
-1. Select **Inspect** to open Microsoft Edge DevTools inside Visual Studio Code.
-
-   The first time you select **Inspect**, the editor prompts you to install the extension, [Microsoft Edge Developer Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-edgedevtools.vscode-edge-devtools).
-
-   After the Microsoft Edge DevTools extension is installed, when you select **Inspect**, Microsoft Edge DevTools opens inside of Visual Studio Code:
-
-   ![The Inspect button opens Microsoft Edge DevTools inside Visual Studio Code.](media/edge-devtools-for-vscode-tools-inside.png)
 
 <!-- ====================================================================== -->
 ## Getting in touch with the Microsoft Edge DevTools Extension team
