@@ -18,17 +18,17 @@ The [Microsoft Edge DevTools extension for Visual Studio Code](https://aka.ms/de
 
 ![Microsoft Edge Developer Tools and browser preview showing in VS Code](media/devtools-extension-v201.msft.png)
 
-The extension allows you to 
+The extension allows you to:
 
-* Get live analysis of problems in your source code.
-* Start a new browser instance with developer tools for your project.
-* Emulate different devices and see your project in different display modes.
-* View the runtime DOM structure and layout of your page using the **Elements tool**.
-* Analyse and change styles (CSS) of your project with live preview and live changes to your project's source files.
-* Analyse site traffic using the **Network tool**.
-* Log information, try out JavaScript and accesss the Window/DOM using Use the **Console tool**.
-* Inspect storage and Service Workers using the **Application tool**.
-* Use the extension in the Visual Studio Code debugging workflow 
+* [Get live analysis of problems in your source code](#inline-and-live-issue-analysis).
+* [Start a new browser instance with developer tools for your project](#opening-a-browser-instance-in-the-extension).
+* [Emulate different devices and see your project in different display modes](#device-and-state-emulation).
+* [View the runtime DOM structure and layout of your page using the **Elements tool**](#opening-source-files-from-the-elements-tool).
+* [Analyse and change styles (CSS) of your project with live preview and live changes to your project's source files](#syncing-live-changes-from-the-styles-tool-by-using-css-mirror-editing).
+* [Analyse site traffic using the **Network tool**](#network-tool-integration).
+* [Log information, try out JavaScript and accesss the Window/DOM using Use the **Console tool**](#console-integration).
+* [Inspect storage and Service Workers using the **Application tool**](#application-tool-integration).
+* [Use the extension in the Visual Studio Code debugging workflow](#automatically-opening-the-browser-and-devtools-when-debugging-in-visual-studio-code). 
 
 <!-- ====================================================================== -->
 ## Installing the Microsoft Edge DevTools extension
