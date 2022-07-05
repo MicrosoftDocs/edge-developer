@@ -317,7 +317,7 @@ Package summary:
 * [Overview of the NuGet package for Microsoft.UI.Xaml](https://www.nuget.org/packages/Microsoft.UI.Xaml/)
 
 
-## WinUI WebView2 special considerations
+## WinUI2 WebView2 special considerations
 
 ### SmartScreen
 WebView2 sends URLs navigated to in your application to the [SmartScreen](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) service to ensure your customers stay secure. If you would like to disable this, you may do so via environment variable.
