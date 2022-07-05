@@ -626,6 +626,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [CoreWebView2.Reload Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.reload)
 * [CoreWebView2.SetVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.setvirtualhostnametofoldermapping)
 * [CoreWebView2.ClearVirtualHostNameToFolderMapping Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.clearvirtualhostnametofoldermapping)
+* [CoreWebView2Settings.IsBuiltInErrorPageEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled)
 
 ##### [C++](#tab/cpp)
 
@@ -636,6 +637,7 @@ These APIs load, stop loading, and reload content to WebView2.  The content that
 * [ICoreWebView2::Reload method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2#reload)
 * [ICoreWebView2_3::SetVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#setvirtualhostnametofoldermapping)
 * [ICoreWebView2_3::ClearVirtualHostNameToFolderMapping method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#clearvirtualhostnametofoldermapping)
+* [ICoreWebView2Settings::IsBuiltInErrorPageEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isbuiltinerrorpageenabled)
 
 ---
 
@@ -1154,8 +1156,7 @@ Use these WebView2 features to optimize your host app's performance and to debug
 * [CoreWebView2.TrySuspendAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.trysuspendasync)
    * [CoreWebView2.IsSuspended Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.issuspended)
    * [CoreWebView2.Resume Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.resume)
-* [CoreWebView2.OpenTaskManagerWindow Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow)
-* [CoreWebView2Settings.IsBuiltInErrorPageEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isbuiltinerrorpageenabled#microsoft-web-webview2-core-corewebview2settings-isbuiltinerrorpageenabled) 
+* [CoreWebView2.OpenTaskManagerWindow Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2.opentaskmanagerwindow) 
 
 ##### [C++](#tab/cpp)
 
@@ -1164,7 +1165,6 @@ Use these WebView2 features to optimize your host app's performance and to debug
    * [ICoreWebView2_3::IsSuspended property (get)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#get_issuspended)<!--no put-->
    * [ICoreWebView2_3::Resume method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_3#resume)
 * [ICoreWebView2_6::OpenTaskManagerWindow method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2_6#opentaskmanagerwindow)
-* [ICoreWebView2Settings::IsBuiltInErrorPageEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#get_isbuiltinerrorpageenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings#put_isbuiltinerrorpageenabled)
 
 ---
 
