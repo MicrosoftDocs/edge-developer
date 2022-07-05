@@ -168,7 +168,7 @@ CSS Mirroring also supports abstractions like Sass or CSS-in-JS when you have se
 
 The **Network Tool** allows you to monitor network traffic and change network conditions of your application right inside Visual Studio Code. 
 
-![The Network tool inside the Edge DevTools for Visual Studio Code extension](media/css-mirror-editing-command.msft.png)
+![The Network tool inside the Edge DevTools for Visual Studio Code extension](media/vscode-extension-network.png)
 
 You can:
 
@@ -200,7 +200,7 @@ If you launch the extension from the Run and Debug workflow, the [Debug Console 
 
 The **Application Tool** allows you to inspect the various parts of your application. 
 
-![The Application tool inside the Edge DevTools for Visual Studio Code extension](media/css-mirror-editing-command.msft.png)
+![The Application tool inside the Edge DevTools for Visual Studio Code extension](media/edge-extension-application-tool.png)
 
 You can:
 
