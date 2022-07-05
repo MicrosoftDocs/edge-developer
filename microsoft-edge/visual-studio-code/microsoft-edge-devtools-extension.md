@@ -46,7 +46,7 @@ Or, you can [download the Microsoft Edge DevTools extension](https://marketplace
 <!-- ====================================================================== -->
 ## Inline and live issue analysis
 
-Issues in your source code are highlighted with wavy underline. You can inspect the issue and get detailed information about what the problem is, how to fix it, and where to find more information.  To inspect the issue, select the code that has the wavy underline:
+Issues in your source code are highlighted with wavy underlines. You can inspect the issue and get detailed information about what the problem is, how to fix it, and where to find more information.  To inspect the issue, select the code that has the wavy underline:
 
 ![An accessibility issue reported inside a piece of code showing how to fix the problem, and where to find more information.](media/edge-devtools-for-vscode-inline-issue-reporting.msft.png)
 
@@ -84,9 +84,9 @@ There are various ways to start a new browser session in the extension:
 
     ![Microsoft Edge DevTools for Visual Studio Code extension.](media/edge-devtools-for-vscode-extension-icon.png)
 
-    Selecting **Launch Instance** opens a browser window, and also opens the **Edge DevTools** tab in Visual Studio Code:
+    Selecting **Launch Instance** opens a browser preview and the **Edge DevTools** tab in Visual Studio Code:
 
-    ![Select Launch Instance to open the browser in Visual Studio Code.](media/edge-devtools-for-vscode-launch-instance.png)
+    ![Select Launch Instance to open the browser in Visual Studio Code.](media/devtools-extension-new-browser-instance.png)
 
 1. You can open the browser as part of a [debugging session](#browser-debugging-with-microsoft-edge-devtools-integration-in-visual-studio-code)
 
