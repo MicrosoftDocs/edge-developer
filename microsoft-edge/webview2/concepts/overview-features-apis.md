@@ -10,9 +10,9 @@ ms.date: 06/30/2022
 ---
 # Overview of WebView2 features and APIs
 
-When you add WebView2 to your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
+By including WebView2 in your app, your app can use various methods and properties provided by the WebView2 control to easily add many kinds of browser features.
 
-Browser features and APIs that your app has access to by hosting the WebView2 control:
+When hosting the WebView2 control, your app has access to the following browser features and APIs:
 
 | Feature area | Purpose |
 |---|---|
@@ -25,8 +25,8 @@ Browser features and APIs that your app has access to by hosting the WebView2 co
 | [Authentication](#authentication) | Handle basic authentication in WebView2 controls. |
 | [Rendering WebView2 in non-framework apps](#rendering-webview2-in-non-framework-apps) | Set up the WebView2 rendering system in non-framework apps, such as how the WebView2 control renders output into your host app, and how WebView2 handles input, focus, and accessibility. |
 | [Window management](#window-management) | Window-specific attributes, such as positioning, focus, and keyboard accelerators. |
-| [Composition-based rendering](#composition-based-rendering) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs that are specific to composition-based rendering. |
-| [User data](#user-data) | Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
+| [Composition-based rendering](#composition-based-rendering) | For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering. |
+| [User data](#user-data) | Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources. |
 | [Performance and debugging](#performance-and-debugging) | Analyze and debug performance and handle performance-related events for WebView2 controls.  Make your app respond to user input actions quickly and prevent sluggish response.  Manage memory usage and responsiveness. |
 | [Chrome Developer Protocol (CDP)](#chrome-developer-protocol-cdp) | Instrument, inspect, debug, and profile Chromium-based browsers.  The Chrome DevTools Protocol is the foundation for the Microsoft Edge DevTools.  Use the Chrome DevTools Protocol for features that aren't implemented in the WebView2 platform. |
 
@@ -86,7 +86,9 @@ The following are the main APIs for communicating between web and native code.
 <!-- ------------------------------ -->
 #### Host/web object sharing
 
-WebView2 enables objects defined in native code to be passed to the web. These are called host objects, which can be projected into JavaScript so that you can trigger the native object methods from web side code, or as a result of user interaction on the web-side of your app. By doing so, you can avoid re-implementing your native objects' methods in your web-side code. 
+WebView2 enables objects that are defined in native code to be passed to your app's web-side code.  _Host objects_ are any objects that are defined in native code that you choose to pass to your app's web-side code.
+
+Host objects can be projected into JavaScript, so that you can call native object methods (or other APIs) from your app's web-side code.  For example, your app can call such APIs as a result of user interaction on the web side of your app. This way, you don't need to reimplement your native objects' APIs, such as methods or properties, in your web-side code.
 
 ##### [C#](#tab/c-sharp)
 
@@ -130,7 +132,7 @@ Allows host app to add JavaScript in the web content within the WebView2 control
 <!-- ------------------------------ -->
 #### Web messaging
 
-You can send messages (string or JSON) from the host app to the web content within the WebView2 control and from the web content within the WebView2 control to the host app. 
+Your app can send messages to the web content that's within the WebView2 control, and receive messages from that web content.  Messages are sent as strings or JSON objects.
 
 ##### [C#](#tab/c-sharp)
 
@@ -160,7 +162,7 @@ You can send messages (string or JSON) from the host app to the web content with
 <!-- ------------------------------ -->
 #### Script dialogs
 
-In WebView2 you can manage different JavaScript dialogs to suppress or replace them with custom dialogs.
+When hosting WebView2, your app can manage different JavaScript dialogs, to suppress them or to replace them with custom dialogs.
 
 ##### [C#](#tab/c-sharp)
 
@@ -229,7 +231,7 @@ See also:
 <!-- ------------------------------ -->
 #### Image capture
 
-In WebView2 you can capture screenshots and indicate the format to save the image as.
+By hosting WebView2, your app can capture screenshots and indicate which format to use to save the image.
 
 ##### [C#](#tab/c-sharp)
 
@@ -245,7 +247,11 @@ In WebView2 you can capture screenshots and indicate the format to save the imag
 <!-- ------------------------------ -->
 #### Downloads
 
-You can manage the download experience in WebView2 by allowing/blocking downloads based on different metadata and changing the download location. You can also configure a custom download UI or customize the default UI. 
+Your app can manage the download experience in WebView2.  Your app can:
+*  Allow or block downloads based on different metadata.
+*  Change the download location.
+*  Configure a custom download UI.
+*  Customize the default UI.
 
 ##### [C#](#tab/c-sharp)
 
@@ -290,7 +296,7 @@ Custom Download Experience:
 <!-- ------------------------------ -->
 #### Permissions
 
-Different web pages may ask you for permissions to access some privileged resources, such as geolocation sensor, camera, and microphone.  Using the WebView2 permissions APIs, your host app can programmatically respond to permissions requests and/or replace the default permissions UI with its own UI. 
+Different web pages may ask you for permissions to access some privileged resources, such as geolocation sensor, camera, and microphone.  By using the WebView2 permissions APIs, your host app can programmatically respond to permissions requests and/or replace the default permissions UI with its own UI. 
 
 ##### [C#](#tab/c-sharp)
 
@@ -367,7 +373,7 @@ See also:
 #### User Agent
 <!-- alt for "Learn how to" -->
 <!-- why would you do this, what is benefit for end user, what's involved?  Your app can detect which XYZ and then ABC so that the X is Y. -->
-The user agent is a string that represents the identity of the program on behalf of the user e.g. the browser name. In WebView2 you can set the user agent.
+The user agent is a string that represents the identity of the program on behalf of the user, such as the browser name. In WebView2, you can set the user agent.
 
 <!--
 See also:
@@ -388,7 +394,7 @@ See also:
 <!-- ------------------------------ -->
 #### Autofill
 
-In WebView2 you can leverage the browser's autofill functionality. You can enable/disable autofill for general information as well as for passwords. These two settings can be controlled independently of one another and allow applications to control the autofill feature.  
+Your app can independently control whether the browser's autofill functionality is enabled for general information or for passwords.
 
 ##### [C#](#tab/c-sharp)
 
@@ -406,7 +412,7 @@ In WebView2 you can leverage the browser's autofill functionality. You can enabl
 <!-- ------------------------------ -->
 #### Audio
 
-WebView2 has methods to mute and unmute all audio and events to find out when there is audio playing.
+Your app can mute and unmute all audio, and find out when audio is playing.
 
 ##### [C#](#tab/c-sharp)
 
@@ -428,17 +434,21 @@ WebView2 has methods to mute and unmute all audio and events to find out when th
 <!-- ------------------------------ -->
 #### Swipe gesture navigation
 
-In WebView2 you can enable/disable swiping gesture navigation on touch input enabled devices. This allows end users to:
-*  Swipe left/right (swipe horizontally) to navigate to previous/next page in navigation history.
-*  Pull to refresh (swipe vertically) the current page. (This feature is currently disabled by default in the browser, to enable in WebView2, set AdditionalBrowserArguments property with --pull-to-refresh switch).
+By hosting the WebView2 control, your app can enable or disable swiping gesture navigation on touch input-enabled devices. This gesture allows end users to:
+*  Swipe left/right (swipe horizontally) to navigate to the previous or next page in the navigation history.
+*  Pull to refresh (swipe vertically) the current page.
+
+This feature is currently disabled by default in the browser.  To enable this feature in WebView2, set the `AdditionalBrowserArguments` property, specifying the `--pull-to-refresh` switch.
 
 ##### [C#](#tab/c-sharp)
 
 * [CoreWebView2Settings.IsSwipeNavigationEnabled Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2settings.isswipenavigationenabled)
+* [CoreWebView2EnvironmentOptions.AdditionalBrowserArguments Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.additionalbrowserarguments)
 
 ##### [C++](#tab/cpp)
 
 * [ICoreWebView2Settings6::IsSwipeNavigationEnabled property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#get_isswipenavigationenabled), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2settings6#put_isswipenavigationenabled)
+* [ICoreWebView2EnvironmentOptions::AdditionalBrowserArguments property (get](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#get_additionalbrowserarguments), [put)](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environmentoptions#put_additionalbrowserarguments)
 
 ---
 
@@ -446,7 +456,7 @@ In WebView2 you can enable/disable swiping gesture navigation on touch input ena
 <!-- ------------------------------ -->
 #### Document title
 
-In WebView2 you can find out when the title for the current top-level document has changed.
+Your app can detect when the title of the current top-level document has changed.
 
 ##### [C#](#tab/c-sharp)
 
@@ -464,7 +474,7 @@ In WebView2 you can find out when the title for the current top-level document h
 <!-- ------------------------------ -->
 #### Fullscreen
 
-In WebView2 you can find out when when an HTML element enters or leaves fullscreen.
+In WebView2, you can find out when an HTML element enters or leaves full-screen view.
 
 ##### [C#](#tab/c-sharp)
 
@@ -511,7 +521,7 @@ In WebView2, you can customize the color theme as system, light, or dark.
 <!-- ------------------------------ -->
 #### Language
 
-You can set the default display language for WebView2 which applies to the browser UI (such as context menus and dialogs) and the `accept-language` HTTP header which WebView2 sends to websites. 
+You can set the default display language for WebView2 that applies to the browser UI (such as context menus and dialogs), along with setting the `accept-language` HTTP header which WebView2 sends to websites.
 
 ##### [C#](#tab/c-sharp)
 
@@ -671,9 +681,9 @@ The history methods allow back and forward navigation in WebView2, and the histo
 
 
 <!-- ------------------------------ -->
-#### Block unwanted navigations
+#### Block unwanted navigating
 
-The `NavigationStarting` event allows the app to cancel navigations in WebView2, including for frames.
+The `NavigationStarting` event allows the app to cancel navigating to specified URLs in WebView2, including for frames.
 
 ##### [C#](#tab/c-sharp)
 
@@ -699,7 +709,7 @@ The `NavigationStarting` event allows the app to cancel navigations in WebView2,
 <!-- ------------------------------ -->
 #### Navigation events
 
-With `NavigationStarting` and the other navigation events, the app can be informed of the state of navigations<!--TODO: define 'navigations', a navigation--> in WebView2.
+With `NavigationStarting` and the other navigation events, the app can be informed of the state of navigational<!--TODO: define 'navigations', a navigation--> in WebView2.  A _navigation_ is the process for loading a new URL.
 
 See also:
 * [Navigation events for WebView2 apps](navigation-events.md)
@@ -766,7 +776,7 @@ In WebView2, you can use the Client Certificate API to select the client certifi
 *  Display a UI to the user, if desired.
 *  Replace the default client certificate dialog prompt.
 *  Programmatically query the certificates.
-*  Select a certificate from the list to respond to the server, when WebView2 is making a request to a HTTP server that needs a client certificate for HTTP authentication. 
+*  Select a certificate from the list to respond to the server, when WebView2 is making a request to an HTTP server that needs a client certificate for HTTP authentication. 
 
 ##### [C#](#tab/c-sharp)
 
@@ -914,7 +924,7 @@ WebView2 gives your app access to window-specific attributes, such as positionin
 <!-- ------------------------------ -->
 #### Zooming
 
-WebView2 `ZoomFactor` is used to scale just the web content.  This is also update when the user zooms the content by pressing `Ctrl` while rotating the mouse wheel.
+WebView2 `ZoomFactor` is used to scale just the web content of the window.  UI scaling is also updated when the user zooms the content by pressing `Ctrl` while rotating the mouse wheel.
 
 ##### [C#](#tab/c-sharp)
 
@@ -964,7 +974,7 @@ The RasterizationScale API scales all WebView2 UI including context menus, toolt
 <!-- ------------------------------ -->
 #### Focus and tabbing
 
-WebView2 raises events to let the app know when it gains and loses focus. For tabbing, there is an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.
+The WebView2 control raises events to let the app know when the control gains focus or loses focus. For tabbing, there's an API to move focus into WebView2 and an event for WebView2 to request the app to take focus back.<!--TODO: specify either user presses the Tab key, or browser tab is selected; disambiguate "tab"/"tabbing"-->
 
 ##### [C#](#tab/c-sharp)
 
@@ -988,7 +998,7 @@ WebView2 raises events to let the app know when it gains and loses focus. For ta
 <!-- ------------------------------ -->
 #### Parent window
 
-WebView2 can be re-parented to a different parent HWND.  WebView2 also needs to be notified when the app's position on the screen has changed.
+WebView2 can be reparented to a different parent window handle (`HWND`).  WebView2 also needs to be notified when the app's position on the screen has changed.
 
 ##### [C#](#tab/c-sharp)
 
@@ -1026,7 +1036,7 @@ When WebView2 has focus, it directly receives input from the user. An app may wa
 <!-- ------------------------------ -->
 #### Default background color
 
-WebView2 can specify a default background color.  This can be any opaque color or transparent.  This color will be used if the HTML page doesn't set its own background color.
+WebView2 can specify a default background color.  The color can be any opaque color, or transparent.  This color will be used if the HTML page doesn't set its own background color.
 
 ##### [C#](#tab/c-sharp)
 
@@ -1042,7 +1052,7 @@ WebView2 can specify a default background color.  This can be any opaque color o
 <!-- ====================================================================== -->
 ### Composition-based rendering
 
-For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but includes additional APIs that are specific to composition-based rendering.
+For composition-based WebView2 rendering, use `CoreWebView2Environment` to create a `CoreWebView2CompositionController`.  The `CoreWebView2CompositionController` also implements all the APIs as `CoreWebView2Controller`, but also includes APIs for composition-based rendering.
 
 ##### [C#](#tab/c-sharp)
 
@@ -1118,7 +1128,7 @@ Not applicable for C#.
 <!-- ====================================================================== -->
 ## User data
 
-Manage the user data folder (UDF), which is a folder stored on the user's machine, that contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
+Manage the user data folder (UDF), which is a folder on the user's machine.  The UDF contains data related to the host app and WebView2.  WebView2 apps use user data folders to store browser data, such as cookies, permissions, and cached resources.
 
 See also:
 * [Manage user data folders](user-data-folder.md)
@@ -1128,7 +1138,9 @@ See also:
 * [CoreWebView2Environment.UserDataFolder Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.userdatafolder)
 * [CoreWebView2EnvironmentOptions.ExclusiveUserDataFolderAccess Property](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environmentoptions.exclusiveuserdatafolderaccess)
 * [CoreWebView2Profile.ClearBrowsingDataAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2profile.clearbrowsingdataasync)
-* [CoreWebView2Environment interface](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment)<!--TODO: why is this link here, which members?-->
+* [CoreWebView2Environment.CreateCoreWebView2CompositionControllerAsync Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2compositioncontrollerasync)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerOptions Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controlleroptions)
+* [CoreWebView2Environment.CreateCoreWebView2ControllerWithOptions Method](https://docs.microsoft.com/dotnet/api/microsoft.web.webview2.core.corewebview2environment.createcorewebview2controllerasync)
 
 ##### [C++](#tab/cpp)
 
@@ -1137,7 +1149,9 @@ See also:
 * [ICoreWebView2Profile2::ClearBrowsingData method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdata)
 * [ICoreWebView2Profile2::ClearBrowsingDataAll method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataall)
 * [ICoreWebView2Profile2::ClearBrowsingDataInTimeRange method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2profile2#clearbrowsingdataintimerange)
-* [ICoreWebView2Environment10 interface](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10)<!--TODO: why is this link here, which members?-->
+* [ICoreWebView2Environment10::CreateCoreWebView2CompositionControllerWithOptions method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2compositioncontrollerwithoptions)<!-- c#: CreateCoreWebView2CompositionControllerAsync -->
+* [ICoreWebView2Environment10::CreateCoreWebView2ControllerOptions method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controlleroptions)
+* [ICoreWebView2Environment10::CreateCoreWebView2ControllerWithOptions method](https://docs.microsoft.com/microsoft-edge/webview2/reference/win32/icorewebview2environment10#createcorewebview2controllerwithoptions)
 
 ---
 
