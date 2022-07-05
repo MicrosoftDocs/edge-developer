@@ -323,7 +323,7 @@ Package summary:
 WebView2 sends URLs navigated to in your application to the SmartScreen service to ensure your customers stay secure. If you would like to disable this, you may do so via environment variable.
 
 * `Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--disable-features=msSmartScreenProtection");`
-    *  Note this must be set prior to CoreWebView2Environment creation (first time WV2.Source set or EnsureCoreWebView2Async() called).
+    *  Note this must be set prior to CoreWebView2 creation (first time WV2.Source set or EnsureCoreWebView2Async() called).
 
 ### API Limitations
 Please note that the following interfaces are not accessible in both WinUI 2 and WinUI 3:
