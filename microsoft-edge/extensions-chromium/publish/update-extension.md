@@ -11,8 +11,7 @@ ms.date: 02/17/2021
 
 You can update a submitted extension or remove a published extension listing from the Microsoft Edge Add-ons website at any time.
 
-> [!NOTE]
-> The certification process for an update to an extension can take up to 7 business days.
+The certification process for an update to an extension can take up to 7 business days.
 
 
 <!-- ====================================================================== -->
